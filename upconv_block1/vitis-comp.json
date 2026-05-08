@@ -1,0 +1,12 @@
+{
+  "name": "upconv_block1",
+  "type": "HLS",
+  "configuration": {
+    "componentType": "HLS",
+    "configFiles": [
+      "hls_config.cfg"
+    ],
+    "work_dir": "upconv_core_top_ucb1"
+  },
+  "template": "empty_hls_component"
+}

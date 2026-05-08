@@ -1,0 +1,1397 @@
+---
+MainSourceFile:  /home/hoinguyen/Documents/Vitis/UpConv_HLS/upconv_block0/upconv_block0/hls/.autopilot/db/upconv_core_top_ucb0.pp.0.cpp
+Diagnostics:     
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_676_1:  '
+    FileOffset:      676
+    FilePath:        /home/tools/Xilinx/Vitis/2024.2/common/technology/autopilot/etc/ap_int_ref.h
+    Replacements:    
+      - FilePath:        /home/hoinguyen/Documents/Vitis/UpConv_HLS/upconv_block0/upconv_block0/hls/.autopilot/db/upconv_core_top_ucb0.pp.0.cpp
+        Offset:          280514
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_676_1: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_690_1:  '
+    FileOffset:      690
+    FilePath:        /home/tools/Xilinx/Vitis/2024.2/common/technology/autopilot/etc/ap_int_ref.h
+    Replacements:    
+      - FilePath:        /home/hoinguyen/Documents/Vitis/UpConv_HLS/upconv_block0/upconv_block0/hls/.autopilot/db/upconv_core_top_ucb0.pp.0.cpp
+        Offset:          280980
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_690_1: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_704_1:  '
+    FileOffset:      704
+    FilePath:        /home/tools/Xilinx/Vitis/2024.2/common/technology/autopilot/etc/ap_int_ref.h
+    Replacements:    
+      - FilePath:        /home/hoinguyen/Documents/Vitis/UpConv_HLS/upconv_block0/upconv_block0/hls/.autopilot/db/upconv_core_top_ucb0.pp.0.cpp
+        Offset:          281447
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_704_1: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_1248_1:  '
+    FileOffset:      1248
+    FilePath:        /home/tools/Xilinx/Vitis/2024.2/common/technology/autopilot/etc/ap_fixed_base.h
+    Replacements:    
+      - FilePath:        /home/hoinguyen/Documents/Vitis/UpConv_HLS/upconv_block0/upconv_block0/hls/.autopilot/db/upconv_core_top_ucb0.pp.0.cpp
+        Offset:          565085
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_1248_1: '
+  - DiagnosticName:  clang-diagnostic-error
+    Message:         'Invalid Directive: for current device, ROM_1P + LUTRAM is invalid combination for BIND_STORAGE''s option ''type + impl'''
+    FileOffset:      91
+    FilePath:        /home/tools/Xilinx/Vitis/2024.2/common/technology/autopilot/etc/hls_hotbm_apfixed.h
+    Replacements:    
+  - DiagnosticName:  clang-diagnostic-error
+    Message:         'Invalid Directive: for current device, ROM_1P + LUTRAM is invalid combination for BIND_STORAGE''s option ''type + impl'''
+    FileOffset:      92
+    FilePath:        /home/tools/Xilinx/Vitis/2024.2/common/technology/autopilot/etc/hls_hotbm_apfixed.h
+    Replacements:    
+  - DiagnosticName:  clang-diagnostic-error
+    Message:         'Invalid Directive: for current device, ROM_1P + LUTRAM is invalid combination for BIND_STORAGE''s option ''type + impl'''
+    FileOffset:      93
+    FilePath:        /home/tools/Xilinx/Vitis/2024.2/common/technology/autopilot/etc/hls_hotbm_apfixed.h
+    Replacements:    
+  - DiagnosticName:  clang-diagnostic-error
+    Message:         'Invalid Directive: for current device, ROM_1P + LUTRAM is invalid combination for BIND_STORAGE''s option ''type + impl'''
+    FileOffset:      94
+    FilePath:        /home/tools/Xilinx/Vitis/2024.2/common/technology/autopilot/etc/hls_hotbm_apfixed.h
+    Replacements:    
+  - DiagnosticName:  clang-diagnostic-error
+    Message:         'Invalid Directive: for current device, ROM_1P + LUTRAM is invalid combination for BIND_STORAGE''s option ''type + impl'''
+    FileOffset:      95
+    FilePath:        /home/tools/Xilinx/Vitis/2024.2/common/technology/autopilot/etc/hls_hotbm_apfixed.h
+    Replacements:    
+  - DiagnosticName:  clang-diagnostic-error
+    Message:         'Invalid Directive: for current device, ROM_1P + LUTRAM is invalid combination for BIND_STORAGE''s option ''type + impl'''
+    FileOffset:      125
+    FilePath:        /home/tools/Xilinx/Vitis/2024.2/common/technology/autopilot/etc/hls_hotbm_apfixed.h
+    Replacements:    
+  - DiagnosticName:  clang-diagnostic-error
+    Message:         'Invalid Directive: for current device, ROM_1P + LUTRAM is invalid combination for BIND_STORAGE''s option ''type + impl'''
+    FileOffset:      126
+    FilePath:        /home/tools/Xilinx/Vitis/2024.2/common/technology/autopilot/etc/hls_hotbm_apfixed.h
+    Replacements:    
+  - DiagnosticName:  clang-diagnostic-error
+    Message:         'Invalid Directive: for current device, ROM_1P + LUTRAM is invalid combination for BIND_STORAGE''s option ''type + impl'''
+    FileOffset:      127
+    FilePath:        /home/tools/Xilinx/Vitis/2024.2/common/technology/autopilot/etc/hls_hotbm_apfixed.h
+    Replacements:    
+  - DiagnosticName:  clang-diagnostic-error
+    Message:         'Invalid Directive: for current device, ROM_1P + LUTRAM is invalid combination for BIND_STORAGE''s option ''type + impl'''
+    FileOffset:      128
+    FilePath:        /home/tools/Xilinx/Vitis/2024.2/common/technology/autopilot/etc/hls_hotbm_apfixed.h
+    Replacements:    
+  - DiagnosticName:  clang-diagnostic-error
+    Message:         'Invalid Directive: for current device, ROM_1P + LUTRAM is invalid combination for BIND_STORAGE''s option ''type + impl'''
+    FileOffset:      129
+    FilePath:        /home/tools/Xilinx/Vitis/2024.2/common/technology/autopilot/etc/hls_hotbm_apfixed.h
+    Replacements:    
+  - DiagnosticName:  clang-diagnostic-error
+    Message:         'Invalid Directive: for current device, ROM_1P + LUTRAM is invalid combination for BIND_STORAGE''s option ''type + impl'''
+    FileOffset:      130
+    FilePath:        /home/tools/Xilinx/Vitis/2024.2/common/technology/autopilot/etc/hls_hotbm_apfixed.h
+    Replacements:    
+  - DiagnosticName:  clang-diagnostic-error
+    Message:         'Invalid Directive: for current device, ROM_1P + LUTRAM is invalid combination for BIND_STORAGE''s option ''type + impl'''
+    FileOffset:      131
+    FilePath:        /home/tools/Xilinx/Vitis/2024.2/common/technology/autopilot/etc/hls_hotbm_apfixed.h
+    Replacements:    
+  - DiagnosticName:  clang-diagnostic-error
+    Message:         'Invalid Directive: for current device, ROM_1P + LUTRAM is invalid combination for BIND_STORAGE''s option ''type + impl'''
+    FileOffset:      132
+    FilePath:        /home/tools/Xilinx/Vitis/2024.2/common/technology/autopilot/etc/hls_hotbm_apfixed.h
+    Replacements:    
+  - DiagnosticName:  clang-diagnostic-error
+    Message:         'Invalid Directive: for current device, ROM_1P + LUTRAM is invalid combination for BIND_STORAGE''s option ''type + impl'''
+    FileOffset:      133
+    FilePath:        /home/tools/Xilinx/Vitis/2024.2/common/technology/autopilot/etc/hls_hotbm_apfixed.h
+    Replacements:    
+  - DiagnosticName:  clang-diagnostic-error
+    Message:         'Invalid Directive: for current device, ROM_1P + LUTRAM is invalid combination for BIND_STORAGE''s option ''type + impl'''
+    FileOffset:      134
+    FilePath:        /home/tools/Xilinx/Vitis/2024.2/common/technology/autopilot/etc/hls_hotbm_apfixed.h
+    Replacements:    
+  - DiagnosticName:  clang-diagnostic-error
+    Message:         'Invalid Directive: for current device, ROM_1P + LUTRAM is invalid combination for BIND_STORAGE''s option ''type + impl'''
+    FileOffset:      184
+    FilePath:        /home/tools/Xilinx/Vitis/2024.2/common/technology/autopilot/etc/hls_hotbm_apfixed.h
+    Replacements:    
+  - DiagnosticName:  clang-diagnostic-error
+    Message:         'Invalid Directive: for current device, ROM_1P + LUTRAM is invalid combination for BIND_STORAGE''s option ''type + impl'''
+    FileOffset:      185
+    FilePath:        /home/tools/Xilinx/Vitis/2024.2/common/technology/autopilot/etc/hls_hotbm_apfixed.h
+    Replacements:    
+  - DiagnosticName:  clang-diagnostic-error
+    Message:         'Invalid Directive: for current device, ROM_1P + LUTRAM is invalid combination for BIND_STORAGE''s option ''type + impl'''
+    FileOffset:      186
+    FilePath:        /home/tools/Xilinx/Vitis/2024.2/common/technology/autopilot/etc/hls_hotbm_apfixed.h
+    Replacements:    
+  - DiagnosticName:  clang-diagnostic-error
+    Message:         'Invalid Directive: for current device, ROM_1P + LUTRAM is invalid combination for BIND_STORAGE''s option ''type + impl'''
+    FileOffset:      213
+    FilePath:        /home/tools/Xilinx/Vitis/2024.2/common/technology/autopilot/etc/hls_hotbm_apfixed.h
+    Replacements:    
+  - DiagnosticName:  clang-diagnostic-error
+    Message:         'Invalid Directive: for current device, ROM_1P + LUTRAM is invalid combination for BIND_STORAGE''s option ''type + impl'''
+    FileOffset:      214
+    FilePath:        /home/tools/Xilinx/Vitis/2024.2/common/technology/autopilot/etc/hls_hotbm_apfixed.h
+    Replacements:    
+  - DiagnosticName:  clang-diagnostic-error
+    Message:         'Invalid Directive: for current device, ROM_1P + LUTRAM is invalid combination for BIND_STORAGE''s option ''type + impl'''
+    FileOffset:      215
+    FilePath:        /home/tools/Xilinx/Vitis/2024.2/common/technology/autopilot/etc/hls_hotbm_apfixed.h
+    Replacements:    
+  - DiagnosticName:  clang-diagnostic-error
+    Message:         'Invalid Directive: for current device, ROM_1P + LUTRAM is invalid combination for BIND_STORAGE''s option ''type + impl'''
+    FileOffset:      216
+    FilePath:        /home/tools/Xilinx/Vitis/2024.2/common/technology/autopilot/etc/hls_hotbm_apfixed.h
+    Replacements:    
+  - DiagnosticName:  clang-diagnostic-error
+    Message:         'Invalid Directive: for current device, ROM_1P + LUTRAM is invalid combination for BIND_STORAGE''s option ''type + impl'''
+    FileOffset:      217
+    FilePath:        /home/tools/Xilinx/Vitis/2024.2/common/technology/autopilot/etc/hls_hotbm_apfixed.h
+    Replacements:    
+  - DiagnosticName:  clang-diagnostic-error
+    Message:         'Invalid Directive: for current device, ROM_1P + LUTRAM is invalid combination for BIND_STORAGE''s option ''type + impl'''
+    FileOffset:      218
+    FilePath:        /home/tools/Xilinx/Vitis/2024.2/common/technology/autopilot/etc/hls_hotbm_apfixed.h
+    Replacements:    
+  - DiagnosticName:  clang-diagnostic-error
+    Message:         'Invalid Directive: for current device, ROM_1P + LUTRAM is invalid combination for BIND_STORAGE''s option ''type + impl'''
+    FileOffset:      254
+    FilePath:        /home/tools/Xilinx/Vitis/2024.2/common/technology/autopilot/etc/hls_hotbm_apfixed.h
+    Replacements:    
+  - DiagnosticName:  clang-diagnostic-error
+    Message:         'Invalid Directive: for current device, ROM_1P + LUTRAM is invalid combination for BIND_STORAGE''s option ''type + impl'''
+    FileOffset:      255
+    FilePath:        /home/tools/Xilinx/Vitis/2024.2/common/technology/autopilot/etc/hls_hotbm_apfixed.h
+    Replacements:    
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_61_1:  '
+    FileOffset:      61
+    FilePath:        /home/tools/Xilinx/Vitis/2024.2/common/technology/autopilot/etc/hls_cordic_apfixed.h
+    Replacements:    
+      - FilePath:        /home/hoinguyen/Documents/Vitis/UpConv_HLS/upconv_block0/upconv_block0/hls/.autopilot/db/upconv_core_top_ucb0.pp.0.cpp
+        Offset:          1233507
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_61_1: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_117_1:  '
+    FileOffset:      117
+    FilePath:        /home/tools/Xilinx/Vitis/2024.2/common/technology/autopilot/etc/hls_cordic_apfixed.h
+    Replacements:    
+      - FilePath:        /home/hoinguyen/Documents/Vitis/UpConv_HLS/upconv_block0/upconv_block0/hls/.autopilot/db/upconv_core_top_ucb0.pp.0.cpp
+        Offset:          1234326
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_117_1: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_289_1:  '
+    FileOffset:      289
+    FilePath:        /home/tools/Xilinx/Vitis/2024.2/common/technology/autopilot/etc/hls_cordic_apfixed.h
+    Replacements:    
+      - FilePath:        /home/hoinguyen/Documents/Vitis/UpConv_HLS/upconv_block0/upconv_block0/hls/.autopilot/db/upconv_core_top_ucb0.pp.0.cpp
+        Offset:          1236978
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_289_1: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_449_1:  '
+    FileOffset:      449
+    FilePath:        /home/tools/Xilinx/Vitis/2024.2/common/technology/autopilot/etc/hls_cordic_apfixed.h
+    Replacements:    
+      - FilePath:        /home/hoinguyen/Documents/Vitis/UpConv_HLS/upconv_block0/upconv_block0/hls/.autopilot/db/upconv_core_top_ucb0.pp.0.cpp
+        Offset:          1239706
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_449_1: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_629_1:  '
+    FileOffset:      629
+    FilePath:        /home/tools/Xilinx/Vitis/2024.2/common/technology/autopilot/etc/hls_cordic_apfixed.h
+    Replacements:    
+      - FilePath:        /home/hoinguyen/Documents/Vitis/UpConv_HLS/upconv_block0/upconv_block0/hls/.autopilot/db/upconv_core_top_ucb0.pp.0.cpp
+        Offset:          1242867
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_629_1: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_633_2:  '
+    FileOffset:      633
+    FilePath:        /home/tools/Xilinx/Vitis/2024.2/common/technology/autopilot/etc/hls_cordic_apfixed.h
+    Replacements:    
+      - FilePath:        /home/hoinguyen/Documents/Vitis/UpConv_HLS/upconv_block0/upconv_block0/hls/.autopilot/db/upconv_core_top_ucb0.pp.0.cpp
+        Offset:          1242948
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_633_2: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_743_1:  '
+    FileOffset:      743
+    FilePath:        /home/tools/Xilinx/Vitis/2024.2/common/technology/autopilot/etc/hls_cordic_apfixed.h
+    Replacements:    
+      - FilePath:        /home/hoinguyen/Documents/Vitis/UpConv_HLS/upconv_block0/upconv_block0/hls/.autopilot/db/upconv_core_top_ucb0.pp.0.cpp
+        Offset:          1245257
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_743_1: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_840_1:  '
+    FileOffset:      840
+    FilePath:        /home/tools/Xilinx/Vitis/2024.2/common/technology/autopilot/etc/hls_cordic_apfixed.h
+    Replacements:    
+      - FilePath:        /home/hoinguyen/Documents/Vitis/UpConv_HLS/upconv_block0/upconv_block0/hls/.autopilot/db/upconv_core_top_ucb0.pp.0.cpp
+        Offset:          1246756
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_840_1: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_859_2:  '
+    FileOffset:      859
+    FilePath:        /home/tools/Xilinx/Vitis/2024.2/common/technology/autopilot/etc/hls_cordic_apfixed.h
+    Replacements:    
+      - FilePath:        /home/hoinguyen/Documents/Vitis/UpConv_HLS/upconv_block0/upconv_block0/hls/.autopilot/db/upconv_core_top_ucb0.pp.0.cpp
+        Offset:          1246986
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_859_2: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_1173_1:  '
+    FileOffset:      1173
+    FilePath:        /home/tools/Xilinx/Vitis/2024.2/common/technology/autopilot/etc/hls_cordic_apfixed.h
+    Replacements:    
+      - FilePath:        /home/hoinguyen/Documents/Vitis/UpConv_HLS/upconv_block0/upconv_block0/hls/.autopilot/db/upconv_core_top_ucb0.pp.0.cpp
+        Offset:          1253178
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_1173_1: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_1256_1:  '
+    FileOffset:      1256
+    FilePath:        /home/tools/Xilinx/Vitis/2024.2/common/technology/autopilot/etc/hls_cordic_apfixed.h
+    Replacements:    
+      - FilePath:        /home/hoinguyen/Documents/Vitis/UpConv_HLS/upconv_block0/upconv_block0/hls/.autopilot/db/upconv_core_top_ucb0.pp.0.cpp
+        Offset:          1254781
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_1256_1: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_68_1:  '
+    FileOffset:      68
+    FilePath:        /home/tools/Xilinx/Vitis/2024.2/common/technology/autopilot/etc/hls_exp_apfixed.h
+    Replacements:    
+      - FilePath:        /home/hoinguyen/Documents/Vitis/UpConv_HLS/upconv_block0/upconv_block0/hls/.autopilot/db/upconv_core_top_ucb0.pp.0.cpp
+        Offset:          1262643
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_68_1: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_74_2:  '
+    FileOffset:      74
+    FilePath:        /home/tools/Xilinx/Vitis/2024.2/common/technology/autopilot/etc/hls_exp_apfixed.h
+    Replacements:    
+      - FilePath:        /home/hoinguyen/Documents/Vitis/UpConv_HLS/upconv_block0/upconv_block0/hls/.autopilot/db/upconv_core_top_ucb0.pp.0.cpp
+        Offset:          1262793
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_74_2: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_78_3:  '
+    FileOffset:      78
+    FilePath:        /home/tools/Xilinx/Vitis/2024.2/common/technology/autopilot/etc/hls_exp_apfixed.h
+    Replacements:    
+      - FilePath:        /home/hoinguyen/Documents/Vitis/UpConv_HLS/upconv_block0/upconv_block0/hls/.autopilot/db/upconv_core_top_ucb0.pp.0.cpp
+        Offset:          1262890
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_78_3: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_145_4:  '
+    FileOffset:      145
+    FilePath:        /home/tools/Xilinx/Vitis/2024.2/common/technology/autopilot/etc/hls_exp_apfixed.h
+    Replacements:    
+      - FilePath:        /home/hoinguyen/Documents/Vitis/UpConv_HLS/upconv_block0/upconv_block0/hls/.autopilot/db/upconv_core_top_ucb0.pp.0.cpp
+        Offset:          1264755
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_145_4: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_151_5:  '
+    FileOffset:      151
+    FilePath:        /home/tools/Xilinx/Vitis/2024.2/common/technology/autopilot/etc/hls_exp_apfixed.h
+    Replacements:    
+      - FilePath:        /home/hoinguyen/Documents/Vitis/UpConv_HLS/upconv_block0/upconv_block0/hls/.autopilot/db/upconv_core_top_ucb0.pp.0.cpp
+        Offset:          1264905
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_151_5: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_155_6:  '
+    FileOffset:      155
+    FilePath:        /home/tools/Xilinx/Vitis/2024.2/common/technology/autopilot/etc/hls_exp_apfixed.h
+    Replacements:    
+      - FilePath:        /home/hoinguyen/Documents/Vitis/UpConv_HLS/upconv_block0/upconv_block0/hls/.autopilot/db/upconv_core_top_ucb0.pp.0.cpp
+        Offset:          1265002
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_155_6: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_170_7:  '
+    FileOffset:      170
+    FilePath:        /home/tools/Xilinx/Vitis/2024.2/common/technology/autopilot/etc/hls_exp_apfixed.h
+    Replacements:    
+      - FilePath:        /home/hoinguyen/Documents/Vitis/UpConv_HLS/upconv_block0/upconv_block0/hls/.autopilot/db/upconv_core_top_ucb0.pp.0.cpp
+        Offset:          1265383
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_170_7: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_178_8:  '
+    FileOffset:      178
+    FilePath:        /home/tools/Xilinx/Vitis/2024.2/common/technology/autopilot/etc/hls_exp_apfixed.h
+    Replacements:    
+      - FilePath:        /home/hoinguyen/Documents/Vitis/UpConv_HLS/upconv_block0/upconv_block0/hls/.autopilot/db/upconv_core_top_ucb0.pp.0.cpp
+        Offset:          1265614
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_178_8: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_243_9:  '
+    FileOffset:      243
+    FilePath:        /home/tools/Xilinx/Vitis/2024.2/common/technology/autopilot/etc/hls_exp_apfixed.h
+    Replacements:    
+      - FilePath:        /home/hoinguyen/Documents/Vitis/UpConv_HLS/upconv_block0/upconv_block0/hls/.autopilot/db/upconv_core_top_ucb0.pp.0.cpp
+        Offset:          1269061
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_243_9: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_249_10:  '
+    FileOffset:      249
+    FilePath:        /home/tools/Xilinx/Vitis/2024.2/common/technology/autopilot/etc/hls_exp_apfixed.h
+    Replacements:    
+      - FilePath:        /home/hoinguyen/Documents/Vitis/UpConv_HLS/upconv_block0/upconv_block0/hls/.autopilot/db/upconv_core_top_ucb0.pp.0.cpp
+        Offset:          1269213
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_249_10: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_253_11:  '
+    FileOffset:      253
+    FilePath:        /home/tools/Xilinx/Vitis/2024.2/common/technology/autopilot/etc/hls_exp_apfixed.h
+    Replacements:    
+      - FilePath:        /home/hoinguyen/Documents/Vitis/UpConv_HLS/upconv_block0/upconv_block0/hls/.autopilot/db/upconv_core_top_ucb0.pp.0.cpp
+        Offset:          1269313
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_253_11: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_268_12:  '
+    FileOffset:      268
+    FilePath:        /home/tools/Xilinx/Vitis/2024.2/common/technology/autopilot/etc/hls_exp_apfixed.h
+    Replacements:    
+      - FilePath:        /home/hoinguyen/Documents/Vitis/UpConv_HLS/upconv_block0/upconv_block0/hls/.autopilot/db/upconv_core_top_ucb0.pp.0.cpp
+        Offset:          1269695
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_268_12: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_276_13:  '
+    FileOffset:      276
+    FilePath:        /home/tools/Xilinx/Vitis/2024.2/common/technology/autopilot/etc/hls_exp_apfixed.h
+    Replacements:    
+      - FilePath:        /home/hoinguyen/Documents/Vitis/UpConv_HLS/upconv_block0/upconv_block0/hls/.autopilot/db/upconv_core_top_ucb0.pp.0.cpp
+        Offset:          1269933
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_276_13: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_505_14:  '
+    FileOffset:      505
+    FilePath:        /home/tools/Xilinx/Vitis/2024.2/common/technology/autopilot/etc/hls_exp_apfixed.h
+    Replacements:    
+      - FilePath:        /home/hoinguyen/Documents/Vitis/UpConv_HLS/upconv_block0/upconv_block0/hls/.autopilot/db/upconv_core_top_ucb0.pp.0.cpp
+        Offset:          1285488
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_505_14: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_511_15:  '
+    FileOffset:      511
+    FilePath:        /home/tools/Xilinx/Vitis/2024.2/common/technology/autopilot/etc/hls_exp_apfixed.h
+    Replacements:    
+      - FilePath:        /home/hoinguyen/Documents/Vitis/UpConv_HLS/upconv_block0/upconv_block0/hls/.autopilot/db/upconv_core_top_ucb0.pp.0.cpp
+        Offset:          1285640
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_511_15: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_515_16:  '
+    FileOffset:      515
+    FilePath:        /home/tools/Xilinx/Vitis/2024.2/common/technology/autopilot/etc/hls_exp_apfixed.h
+    Replacements:    
+      - FilePath:        /home/hoinguyen/Documents/Vitis/UpConv_HLS/upconv_block0/upconv_block0/hls/.autopilot/db/upconv_core_top_ucb0.pp.0.cpp
+        Offset:          1285739
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_515_16: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_525_17:  '
+    FileOffset:      525
+    FilePath:        /home/tools/Xilinx/Vitis/2024.2/common/technology/autopilot/etc/hls_exp_apfixed.h
+    Replacements:    
+      - FilePath:        /home/hoinguyen/Documents/Vitis/UpConv_HLS/upconv_block0/upconv_block0/hls/.autopilot/db/upconv_core_top_ucb0.pp.0.cpp
+        Offset:          1285916
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_525_17: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_529_18:  '
+    FileOffset:      529
+    FilePath:        /home/tools/Xilinx/Vitis/2024.2/common/technology/autopilot/etc/hls_exp_apfixed.h
+    Replacements:    
+      - FilePath:        /home/hoinguyen/Documents/Vitis/UpConv_HLS/upconv_block0/upconv_block0/hls/.autopilot/db/upconv_core_top_ucb0.pp.0.cpp
+        Offset:          1286014
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_529_18: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_539_19:  '
+    FileOffset:      539
+    FilePath:        /home/tools/Xilinx/Vitis/2024.2/common/technology/autopilot/etc/hls_exp_apfixed.h
+    Replacements:    
+      - FilePath:        /home/hoinguyen/Documents/Vitis/UpConv_HLS/upconv_block0/upconv_block0/hls/.autopilot/db/upconv_core_top_ucb0.pp.0.cpp
+        Offset:          1286299
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_539_19: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_547_20:  '
+    FileOffset:      547
+    FilePath:        /home/tools/Xilinx/Vitis/2024.2/common/technology/autopilot/etc/hls_exp_apfixed.h
+    Replacements:    
+      - FilePath:        /home/hoinguyen/Documents/Vitis/UpConv_HLS/upconv_block0/upconv_block0/hls/.autopilot/db/upconv_core_top_ucb0.pp.0.cpp
+        Offset:          1286554
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_547_20: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_908_21:  '
+    FileOffset:      908
+    FilePath:        /home/tools/Xilinx/Vitis/2024.2/common/technology/autopilot/etc/hls_exp_apfixed.h
+    Replacements:    
+      - FilePath:        /home/hoinguyen/Documents/Vitis/UpConv_HLS/upconv_block0/upconv_block0/hls/.autopilot/db/upconv_core_top_ucb0.pp.0.cpp
+        Offset:          1318793
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_908_21: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_914_22:  '
+    FileOffset:      914
+    FilePath:        /home/tools/Xilinx/Vitis/2024.2/common/technology/autopilot/etc/hls_exp_apfixed.h
+    Replacements:    
+      - FilePath:        /home/hoinguyen/Documents/Vitis/UpConv_HLS/upconv_block0/upconv_block0/hls/.autopilot/db/upconv_core_top_ucb0.pp.0.cpp
+        Offset:          1318945
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_914_22: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_918_23:  '
+    FileOffset:      918
+    FilePath:        /home/tools/Xilinx/Vitis/2024.2/common/technology/autopilot/etc/hls_exp_apfixed.h
+    Replacements:    
+      - FilePath:        /home/hoinguyen/Documents/Vitis/UpConv_HLS/upconv_block0/upconv_block0/hls/.autopilot/db/upconv_core_top_ucb0.pp.0.cpp
+        Offset:          1319045
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_918_23: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_1034_1:  '
+    FileOffset:      1034
+    FilePath:        /home/tools/Xilinx/Vitis/2024.2/common/technology/autopilot/etc/hls_exp_apfixed.h
+    Replacements:    
+      - FilePath:        /home/hoinguyen/Documents/Vitis/UpConv_HLS/upconv_block0/upconv_block0/hls/.autopilot/db/upconv_core_top_ucb0.pp.0.cpp
+        Offset:          1321721
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_1034_1: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_1040_2:  '
+    FileOffset:      1040
+    FilePath:        /home/tools/Xilinx/Vitis/2024.2/common/technology/autopilot/etc/hls_exp_apfixed.h
+    Replacements:    
+      - FilePath:        /home/hoinguyen/Documents/Vitis/UpConv_HLS/upconv_block0/upconv_block0/hls/.autopilot/db/upconv_core_top_ucb0.pp.0.cpp
+        Offset:          1321871
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_1040_2: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_1044_3:  '
+    FileOffset:      1044
+    FilePath:        /home/tools/Xilinx/Vitis/2024.2/common/technology/autopilot/etc/hls_exp_apfixed.h
+    Replacements:    
+      - FilePath:        /home/hoinguyen/Documents/Vitis/UpConv_HLS/upconv_block0/upconv_block0/hls/.autopilot/db/upconv_core_top_ucb0.pp.0.cpp
+        Offset:          1321969
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_1044_3: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_1131_4:  '
+    FileOffset:      1131
+    FilePath:        /home/tools/Xilinx/Vitis/2024.2/common/technology/autopilot/etc/hls_exp_apfixed.h
+    Replacements:    
+      - FilePath:        /home/hoinguyen/Documents/Vitis/UpConv_HLS/upconv_block0/upconv_block0/hls/.autopilot/db/upconv_core_top_ucb0.pp.0.cpp
+        Offset:          1325439
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_1131_4: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_1137_5:  '
+    FileOffset:      1137
+    FilePath:        /home/tools/Xilinx/Vitis/2024.2/common/technology/autopilot/etc/hls_exp_apfixed.h
+    Replacements:    
+      - FilePath:        /home/hoinguyen/Documents/Vitis/UpConv_HLS/upconv_block0/upconv_block0/hls/.autopilot/db/upconv_core_top_ucb0.pp.0.cpp
+        Offset:          1325590
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_1137_5: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_1141_6:  '
+    FileOffset:      1141
+    FilePath:        /home/tools/Xilinx/Vitis/2024.2/common/technology/autopilot/etc/hls_exp_apfixed.h
+    Replacements:    
+      - FilePath:        /home/hoinguyen/Documents/Vitis/UpConv_HLS/upconv_block0/upconv_block0/hls/.autopilot/db/upconv_core_top_ucb0.pp.0.cpp
+        Offset:          1325689
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_1141_6: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_1160_7:  '
+    FileOffset:      1160
+    FilePath:        /home/tools/Xilinx/Vitis/2024.2/common/technology/autopilot/etc/hls_exp_apfixed.h
+    Replacements:    
+      - FilePath:        /home/hoinguyen/Documents/Vitis/UpConv_HLS/upconv_block0/upconv_block0/hls/.autopilot/db/upconv_core_top_ucb0.pp.0.cpp
+        Offset:          1326169
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_1160_7: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_1167_8:  '
+    FileOffset:      1167
+    FilePath:        /home/tools/Xilinx/Vitis/2024.2/common/technology/autopilot/etc/hls_exp_apfixed.h
+    Replacements:    
+      - FilePath:        /home/hoinguyen/Documents/Vitis/UpConv_HLS/upconv_block0/upconv_block0/hls/.autopilot/db/upconv_core_top_ucb0.pp.0.cpp
+        Offset:          1326411
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_1167_8: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_1283_9:  '
+    FileOffset:      1283
+    FilePath:        /home/tools/Xilinx/Vitis/2024.2/common/technology/autopilot/etc/hls_exp_apfixed.h
+    Replacements:    
+      - FilePath:        /home/hoinguyen/Documents/Vitis/UpConv_HLS/upconv_block0/upconv_block0/hls/.autopilot/db/upconv_core_top_ucb0.pp.0.cpp
+        Offset:          1331983
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_1283_9: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_1289_10:  '
+    FileOffset:      1289
+    FilePath:        /home/tools/Xilinx/Vitis/2024.2/common/technology/autopilot/etc/hls_exp_apfixed.h
+    Replacements:    
+      - FilePath:        /home/hoinguyen/Documents/Vitis/UpConv_HLS/upconv_block0/upconv_block0/hls/.autopilot/db/upconv_core_top_ucb0.pp.0.cpp
+        Offset:          1332135
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_1289_10: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_1293_11:  '
+    FileOffset:      1293
+    FilePath:        /home/tools/Xilinx/Vitis/2024.2/common/technology/autopilot/etc/hls_exp_apfixed.h
+    Replacements:    
+      - FilePath:        /home/hoinguyen/Documents/Vitis/UpConv_HLS/upconv_block0/upconv_block0/hls/.autopilot/db/upconv_core_top_ucb0.pp.0.cpp
+        Offset:          1332234
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_1293_11: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_1313_12:  '
+    FileOffset:      1313
+    FilePath:        /home/tools/Xilinx/Vitis/2024.2/common/technology/autopilot/etc/hls_exp_apfixed.h
+    Replacements:    
+      - FilePath:        /home/hoinguyen/Documents/Vitis/UpConv_HLS/upconv_block0/upconv_block0/hls/.autopilot/db/upconv_core_top_ucb0.pp.0.cpp
+        Offset:          1332743
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_1313_12: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_1320_13:  '
+    FileOffset:      1320
+    FilePath:        /home/tools/Xilinx/Vitis/2024.2/common/technology/autopilot/etc/hls_exp_apfixed.h
+    Replacements:    
+      - FilePath:        /home/hoinguyen/Documents/Vitis/UpConv_HLS/upconv_block0/upconv_block0/hls/.autopilot/db/upconv_core_top_ucb0.pp.0.cpp
+        Offset:          1332992
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_1320_13: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_1582_14:  '
+    FileOffset:      1582
+    FilePath:        /home/tools/Xilinx/Vitis/2024.2/common/technology/autopilot/etc/hls_exp_apfixed.h
+    Replacements:    
+      - FilePath:        /home/hoinguyen/Documents/Vitis/UpConv_HLS/upconv_block0/upconv_block0/hls/.autopilot/db/upconv_core_top_ucb0.pp.0.cpp
+        Offset:          1350349
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_1582_14: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_1588_15:  '
+    FileOffset:      1588
+    FilePath:        /home/tools/Xilinx/Vitis/2024.2/common/technology/autopilot/etc/hls_exp_apfixed.h
+    Replacements:    
+      - FilePath:        /home/hoinguyen/Documents/Vitis/UpConv_HLS/upconv_block0/upconv_block0/hls/.autopilot/db/upconv_core_top_ucb0.pp.0.cpp
+        Offset:          1350501
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_1588_15: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_1592_16:  '
+    FileOffset:      1592
+    FilePath:        /home/tools/Xilinx/Vitis/2024.2/common/technology/autopilot/etc/hls_exp_apfixed.h
+    Replacements:    
+      - FilePath:        /home/hoinguyen/Documents/Vitis/UpConv_HLS/upconv_block0/upconv_block0/hls/.autopilot/db/upconv_core_top_ucb0.pp.0.cpp
+        Offset:          1350601
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_1592_16: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_1616_17:  '
+    FileOffset:      1616
+    FilePath:        /home/tools/Xilinx/Vitis/2024.2/common/technology/autopilot/etc/hls_exp_apfixed.h
+    Replacements:    
+      - FilePath:        /home/hoinguyen/Documents/Vitis/UpConv_HLS/upconv_block0/upconv_block0/hls/.autopilot/db/upconv_core_top_ucb0.pp.0.cpp
+        Offset:          1351075
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_1616_17: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_1623_18:  '
+    FileOffset:      1623
+    FilePath:        /home/tools/Xilinx/Vitis/2024.2/common/technology/autopilot/etc/hls_exp_apfixed.h
+    Replacements:    
+      - FilePath:        /home/hoinguyen/Documents/Vitis/UpConv_HLS/upconv_block0/upconv_block0/hls/.autopilot/db/upconv_core_top_ucb0.pp.0.cpp
+        Offset:          1351342
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_1623_18: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_2053_19:  '
+    FileOffset:      2053
+    FilePath:        /home/tools/Xilinx/Vitis/2024.2/common/technology/autopilot/etc/hls_exp_apfixed.h
+    Replacements:    
+      - FilePath:        /home/hoinguyen/Documents/Vitis/UpConv_HLS/upconv_block0/upconv_block0/hls/.autopilot/db/upconv_core_top_ucb0.pp.0.cpp
+        Offset:          1389913
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_2053_19: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_2059_20:  '
+    FileOffset:      2059
+    FilePath:        /home/tools/Xilinx/Vitis/2024.2/common/technology/autopilot/etc/hls_exp_apfixed.h
+    Replacements:    
+      - FilePath:        /home/hoinguyen/Documents/Vitis/UpConv_HLS/upconv_block0/upconv_block0/hls/.autopilot/db/upconv_core_top_ucb0.pp.0.cpp
+        Offset:          1390065
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_2059_20: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_2063_21:  '
+    FileOffset:      2063
+    FilePath:        /home/tools/Xilinx/Vitis/2024.2/common/technology/autopilot/etc/hls_exp_apfixed.h
+    Replacements:    
+      - FilePath:        /home/hoinguyen/Documents/Vitis/UpConv_HLS/upconv_block0/upconv_block0/hls/.autopilot/db/upconv_core_top_ucb0.pp.0.cpp
+        Offset:          1390165
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_2063_21: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_2193_1:  '
+    FileOffset:      2193
+    FilePath:        /home/tools/Xilinx/Vitis/2024.2/common/technology/autopilot/etc/hls_exp_apfixed.h
+    Replacements:    
+      - FilePath:        /home/hoinguyen/Documents/Vitis/UpConv_HLS/upconv_block0/upconv_block0/hls/.autopilot/db/upconv_core_top_ucb0.pp.0.cpp
+        Offset:          1392785
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_2193_1: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_2200_2:  '
+    FileOffset:      2200
+    FilePath:        /home/tools/Xilinx/Vitis/2024.2/common/technology/autopilot/etc/hls_exp_apfixed.h
+    Replacements:    
+      - FilePath:        /home/hoinguyen/Documents/Vitis/UpConv_HLS/upconv_block0/upconv_block0/hls/.autopilot/db/upconv_core_top_ucb0.pp.0.cpp
+        Offset:          1392948
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_2200_2: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_2204_3:  '
+    FileOffset:      2204
+    FilePath:        /home/tools/Xilinx/Vitis/2024.2/common/technology/autopilot/etc/hls_exp_apfixed.h
+    Replacements:    
+      - FilePath:        /home/hoinguyen/Documents/Vitis/UpConv_HLS/upconv_block0/upconv_block0/hls/.autopilot/db/upconv_core_top_ucb0.pp.0.cpp
+        Offset:          1393040
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_2204_3: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_2251_4:  '
+    FileOffset:      2251
+    FilePath:        /home/tools/Xilinx/Vitis/2024.2/common/technology/autopilot/etc/hls_exp_apfixed.h
+    Replacements:    
+      - FilePath:        /home/hoinguyen/Documents/Vitis/UpConv_HLS/upconv_block0/upconv_block0/hls/.autopilot/db/upconv_core_top_ucb0.pp.0.cpp
+        Offset:          1394649
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_2251_4: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_2258_5:  '
+    FileOffset:      2258
+    FilePath:        /home/tools/Xilinx/Vitis/2024.2/common/technology/autopilot/etc/hls_exp_apfixed.h
+    Replacements:    
+      - FilePath:        /home/hoinguyen/Documents/Vitis/UpConv_HLS/upconv_block0/upconv_block0/hls/.autopilot/db/upconv_core_top_ucb0.pp.0.cpp
+        Offset:          1394811
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_2258_5: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_2262_6:  '
+    FileOffset:      2262
+    FilePath:        /home/tools/Xilinx/Vitis/2024.2/common/technology/autopilot/etc/hls_exp_apfixed.h
+    Replacements:    
+      - FilePath:        /home/hoinguyen/Documents/Vitis/UpConv_HLS/upconv_block0/upconv_block0/hls/.autopilot/db/upconv_core_top_ucb0.pp.0.cpp
+        Offset:          1394903
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_2262_6: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_2280_7:  '
+    FileOffset:      2280
+    FilePath:        /home/tools/Xilinx/Vitis/2024.2/common/technology/autopilot/etc/hls_exp_apfixed.h
+    Replacements:    
+      - FilePath:        /home/hoinguyen/Documents/Vitis/UpConv_HLS/upconv_block0/upconv_block0/hls/.autopilot/db/upconv_core_top_ucb0.pp.0.cpp
+        Offset:          1395276
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_2280_7: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_2335_8:  '
+    FileOffset:      2335
+    FilePath:        /home/tools/Xilinx/Vitis/2024.2/common/technology/autopilot/etc/hls_exp_apfixed.h
+    Replacements:    
+      - FilePath:        /home/hoinguyen/Documents/Vitis/UpConv_HLS/upconv_block0/upconv_block0/hls/.autopilot/db/upconv_core_top_ucb0.pp.0.cpp
+        Offset:          1397742
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_2335_8: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_2342_9:  '
+    FileOffset:      2342
+    FilePath:        /home/tools/Xilinx/Vitis/2024.2/common/technology/autopilot/etc/hls_exp_apfixed.h
+    Replacements:    
+      - FilePath:        /home/hoinguyen/Documents/Vitis/UpConv_HLS/upconv_block0/upconv_block0/hls/.autopilot/db/upconv_core_top_ucb0.pp.0.cpp
+        Offset:          1397909
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_2342_9: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_2346_10:  '
+    FileOffset:      2346
+    FilePath:        /home/tools/Xilinx/Vitis/2024.2/common/technology/autopilot/etc/hls_exp_apfixed.h
+    Replacements:    
+      - FilePath:        /home/hoinguyen/Documents/Vitis/UpConv_HLS/upconv_block0/upconv_block0/hls/.autopilot/db/upconv_core_top_ucb0.pp.0.cpp
+        Offset:          1398002
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_2346_10: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_2364_11:  '
+    FileOffset:      2364
+    FilePath:        /home/tools/Xilinx/Vitis/2024.2/common/technology/autopilot/etc/hls_exp_apfixed.h
+    Replacements:    
+      - FilePath:        /home/hoinguyen/Documents/Vitis/UpConv_HLS/upconv_block0/upconv_block0/hls/.autopilot/db/upconv_core_top_ucb0.pp.0.cpp
+        Offset:          1398383
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_2364_11: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_2453_12:  '
+    FileOffset:      2453
+    FilePath:        /home/tools/Xilinx/Vitis/2024.2/common/technology/autopilot/etc/hls_exp_apfixed.h
+    Replacements:    
+      - FilePath:        /home/hoinguyen/Documents/Vitis/UpConv_HLS/upconv_block0/upconv_block0/hls/.autopilot/db/upconv_core_top_ucb0.pp.0.cpp
+        Offset:          1403824
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_2453_12: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_2460_13:  '
+    FileOffset:      2460
+    FilePath:        /home/tools/Xilinx/Vitis/2024.2/common/technology/autopilot/etc/hls_exp_apfixed.h
+    Replacements:    
+      - FilePath:        /home/hoinguyen/Documents/Vitis/UpConv_HLS/upconv_block0/upconv_block0/hls/.autopilot/db/upconv_core_top_ucb0.pp.0.cpp
+        Offset:          1403992
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_2460_13: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_2464_14:  '
+    FileOffset:      2464
+    FilePath:        /home/tools/Xilinx/Vitis/2024.2/common/technology/autopilot/etc/hls_exp_apfixed.h
+    Replacements:    
+      - FilePath:        /home/hoinguyen/Documents/Vitis/UpConv_HLS/upconv_block0/upconv_block0/hls/.autopilot/db/upconv_core_top_ucb0.pp.0.cpp
+        Offset:          1404086
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_2464_14: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_2474_15:  '
+    FileOffset:      2474
+    FilePath:        /home/tools/Xilinx/Vitis/2024.2/common/technology/autopilot/etc/hls_exp_apfixed.h
+    Replacements:    
+      - FilePath:        /home/hoinguyen/Documents/Vitis/UpConv_HLS/upconv_block0/upconv_block0/hls/.autopilot/db/upconv_core_top_ucb0.pp.0.cpp
+        Offset:          1404257
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_2474_15: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_2478_16:  '
+    FileOffset:      2478
+    FilePath:        /home/tools/Xilinx/Vitis/2024.2/common/technology/autopilot/etc/hls_exp_apfixed.h
+    Replacements:    
+      - FilePath:        /home/hoinguyen/Documents/Vitis/UpConv_HLS/upconv_block0/upconv_block0/hls/.autopilot/db/upconv_core_top_ucb0.pp.0.cpp
+        Offset:          1404348
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_2478_16: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_2489_17:  '
+    FileOffset:      2489
+    FilePath:        /home/tools/Xilinx/Vitis/2024.2/common/technology/autopilot/etc/hls_exp_apfixed.h
+    Replacements:    
+      - FilePath:        /home/hoinguyen/Documents/Vitis/UpConv_HLS/upconv_block0/upconv_block0/hls/.autopilot/db/upconv_core_top_ucb0.pp.0.cpp
+        Offset:          1404630
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_2489_17: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_2497_18:  '
+    FileOffset:      2497
+    FilePath:        /home/tools/Xilinx/Vitis/2024.2/common/technology/autopilot/etc/hls_exp_apfixed.h
+    Replacements:    
+      - FilePath:        /home/hoinguyen/Documents/Vitis/UpConv_HLS/upconv_block0/upconv_block0/hls/.autopilot/db/upconv_core_top_ucb0.pp.0.cpp
+        Offset:          1404817
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_2497_18: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_2822_19:  '
+    FileOffset:      2822
+    FilePath:        /home/tools/Xilinx/Vitis/2024.2/common/technology/autopilot/etc/hls_exp_apfixed.h
+    Replacements:    
+      - FilePath:        /home/hoinguyen/Documents/Vitis/UpConv_HLS/upconv_block0/upconv_block0/hls/.autopilot/db/upconv_core_top_ucb0.pp.0.cpp
+        Offset:          1439287
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_2822_19: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_2829_20:  '
+    FileOffset:      2829
+    FilePath:        /home/tools/Xilinx/Vitis/2024.2/common/technology/autopilot/etc/hls_exp_apfixed.h
+    Replacements:    
+      - FilePath:        /home/hoinguyen/Documents/Vitis/UpConv_HLS/upconv_block0/upconv_block0/hls/.autopilot/db/upconv_core_top_ucb0.pp.0.cpp
+        Offset:          1439455
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_2829_20: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_2833_21:  '
+    FileOffset:      2833
+    FilePath:        /home/tools/Xilinx/Vitis/2024.2/common/technology/autopilot/etc/hls_exp_apfixed.h
+    Replacements:    
+      - FilePath:        /home/hoinguyen/Documents/Vitis/UpConv_HLS/upconv_block0/upconv_block0/hls/.autopilot/db/upconv_core_top_ucb0.pp.0.cpp
+        Offset:          1439549
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_2833_21: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_2921_1:  '
+    FileOffset:      2921
+    FilePath:        /home/tools/Xilinx/Vitis/2024.2/common/technology/autopilot/etc/hls_exp_apfixed.h
+    Replacements:    
+      - FilePath:        /home/hoinguyen/Documents/Vitis/UpConv_HLS/upconv_block0/upconv_block0/hls/.autopilot/db/upconv_core_top_ucb0.pp.0.cpp
+        Offset:          1441351
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_2921_1: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_2928_2:  '
+    FileOffset:      2928
+    FilePath:        /home/tools/Xilinx/Vitis/2024.2/common/technology/autopilot/etc/hls_exp_apfixed.h
+    Replacements:    
+      - FilePath:        /home/hoinguyen/Documents/Vitis/UpConv_HLS/upconv_block0/upconv_block0/hls/.autopilot/db/upconv_core_top_ucb0.pp.0.cpp
+        Offset:          1441459
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_2928_2: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_2932_3:  '
+    FileOffset:      2932
+    FilePath:        /home/tools/Xilinx/Vitis/2024.2/common/technology/autopilot/etc/hls_exp_apfixed.h
+    Replacements:    
+      - FilePath:        /home/hoinguyen/Documents/Vitis/UpConv_HLS/upconv_block0/upconv_block0/hls/.autopilot/db/upconv_core_top_ucb0.pp.0.cpp
+        Offset:          1441530
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_2932_3: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_2947_4:  '
+    FileOffset:      2947
+    FilePath:        /home/tools/Xilinx/Vitis/2024.2/common/technology/autopilot/etc/hls_exp_apfixed.h
+    Replacements:    
+      - FilePath:        /home/hoinguyen/Documents/Vitis/UpConv_HLS/upconv_block0/upconv_block0/hls/.autopilot/db/upconv_core_top_ucb0.pp.0.cpp
+        Offset:          1441818
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_2947_4: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_2979_5:  '
+    FileOffset:      2979
+    FilePath:        /home/tools/Xilinx/Vitis/2024.2/common/technology/autopilot/etc/hls_exp_apfixed.h
+    Replacements:    
+      - FilePath:        /home/hoinguyen/Documents/Vitis/UpConv_HLS/upconv_block0/upconv_block0/hls/.autopilot/db/upconv_core_top_ucb0.pp.0.cpp
+        Offset:          1443032
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_2979_5: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_2986_6:  '
+    FileOffset:      2986
+    FilePath:        /home/tools/Xilinx/Vitis/2024.2/common/technology/autopilot/etc/hls_exp_apfixed.h
+    Replacements:    
+      - FilePath:        /home/hoinguyen/Documents/Vitis/UpConv_HLS/upconv_block0/upconv_block0/hls/.autopilot/db/upconv_core_top_ucb0.pp.0.cpp
+        Offset:          1443143
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_2986_6: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_2990_7:  '
+    FileOffset:      2990
+    FilePath:        /home/tools/Xilinx/Vitis/2024.2/common/technology/autopilot/etc/hls_exp_apfixed.h
+    Replacements:    
+      - FilePath:        /home/hoinguyen/Documents/Vitis/UpConv_HLS/upconv_block0/upconv_block0/hls/.autopilot/db/upconv_core_top_ucb0.pp.0.cpp
+        Offset:          1443216
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_2990_7: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_3005_8:  '
+    FileOffset:      3005
+    FilePath:        /home/tools/Xilinx/Vitis/2024.2/common/technology/autopilot/etc/hls_exp_apfixed.h
+    Replacements:    
+      - FilePath:        /home/hoinguyen/Documents/Vitis/UpConv_HLS/upconv_block0/upconv_block0/hls/.autopilot/db/upconv_core_top_ucb0.pp.0.cpp
+        Offset:          1443511
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_3005_8: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_3055_9:  '
+    FileOffset:      3055
+    FilePath:        /home/tools/Xilinx/Vitis/2024.2/common/technology/autopilot/etc/hls_exp_apfixed.h
+    Replacements:    
+      - FilePath:        /home/hoinguyen/Documents/Vitis/UpConv_HLS/upconv_block0/upconv_block0/hls/.autopilot/db/upconv_core_top_ucb0.pp.0.cpp
+        Offset:          1446844
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_3055_9: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_3062_10:  '
+    FileOffset:      3062
+    FilePath:        /home/tools/Xilinx/Vitis/2024.2/common/technology/autopilot/etc/hls_exp_apfixed.h
+    Replacements:    
+      - FilePath:        /home/hoinguyen/Documents/Vitis/UpConv_HLS/upconv_block0/upconv_block0/hls/.autopilot/db/upconv_core_top_ucb0.pp.0.cpp
+        Offset:          1446955
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_3062_10: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_3066_11:  '
+    FileOffset:      3066
+    FilePath:        /home/tools/Xilinx/Vitis/2024.2/common/technology/autopilot/etc/hls_exp_apfixed.h
+    Replacements:    
+      - FilePath:        /home/hoinguyen/Documents/Vitis/UpConv_HLS/upconv_block0/upconv_block0/hls/.autopilot/db/upconv_core_top_ucb0.pp.0.cpp
+        Offset:          1447028
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_3066_11: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_3081_12:  '
+    FileOffset:      3081
+    FilePath:        /home/tools/Xilinx/Vitis/2024.2/common/technology/autopilot/etc/hls_exp_apfixed.h
+    Replacements:    
+      - FilePath:        /home/hoinguyen/Documents/Vitis/UpConv_HLS/upconv_block0/upconv_block0/hls/.autopilot/db/upconv_core_top_ucb0.pp.0.cpp
+        Offset:          1447324
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_3081_12: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_3218_13:  '
+    FileOffset:      3218
+    FilePath:        /home/tools/Xilinx/Vitis/2024.2/common/technology/autopilot/etc/hls_exp_apfixed.h
+    Replacements:    
+      - FilePath:        /home/hoinguyen/Documents/Vitis/UpConv_HLS/upconv_block0/upconv_block0/hls/.autopilot/db/upconv_core_top_ucb0.pp.0.cpp
+        Offset:          1466636
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_3218_13: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_3225_14:  '
+    FileOffset:      3225
+    FilePath:        /home/tools/Xilinx/Vitis/2024.2/common/technology/autopilot/etc/hls_exp_apfixed.h
+    Replacements:    
+      - FilePath:        /home/hoinguyen/Documents/Vitis/UpConv_HLS/upconv_block0/upconv_block0/hls/.autopilot/db/upconv_core_top_ucb0.pp.0.cpp
+        Offset:          1466750
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_3225_14: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_3229_15:  '
+    FileOffset:      3229
+    FilePath:        /home/tools/Xilinx/Vitis/2024.2/common/technology/autopilot/etc/hls_exp_apfixed.h
+    Replacements:    
+      - FilePath:        /home/hoinguyen/Documents/Vitis/UpConv_HLS/upconv_block0/upconv_block0/hls/.autopilot/db/upconv_core_top_ucb0.pp.0.cpp
+        Offset:          1466825
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_3229_15: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_3244_16:  '
+    FileOffset:      3244
+    FilePath:        /home/tools/Xilinx/Vitis/2024.2/common/technology/autopilot/etc/hls_exp_apfixed.h
+    Replacements:    
+      - FilePath:        /home/hoinguyen/Documents/Vitis/UpConv_HLS/upconv_block0/upconv_block0/hls/.autopilot/db/upconv_core_top_ucb0.pp.0.cpp
+        Offset:          1467112
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_3244_16: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_3404_17:  '
+    FileOffset:      3404
+    FilePath:        /home/tools/Xilinx/Vitis/2024.2/common/technology/autopilot/etc/hls_exp_apfixed.h
+    Replacements:    
+      - FilePath:        /home/hoinguyen/Documents/Vitis/UpConv_HLS/upconv_block0/upconv_block0/hls/.autopilot/db/upconv_core_top_ucb0.pp.0.cpp
+        Offset:          1492722
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_3404_17: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_3411_18:  '
+    FileOffset:      3411
+    FilePath:        /home/tools/Xilinx/Vitis/2024.2/common/technology/autopilot/etc/hls_exp_apfixed.h
+    Replacements:    
+      - FilePath:        /home/hoinguyen/Documents/Vitis/UpConv_HLS/upconv_block0/upconv_block0/hls/.autopilot/db/upconv_core_top_ucb0.pp.0.cpp
+        Offset:          1492836
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_3411_18: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_3415_19:  '
+    FileOffset:      3415
+    FilePath:        /home/tools/Xilinx/Vitis/2024.2/common/technology/autopilot/etc/hls_exp_apfixed.h
+    Replacements:    
+      - FilePath:        /home/hoinguyen/Documents/Vitis/UpConv_HLS/upconv_block0/upconv_block0/hls/.autopilot/db/upconv_core_top_ucb0.pp.0.cpp
+        Offset:          1492913
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_3415_19: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_703_1:  '
+    FileOffset:      703
+    FilePath:        /home/tools/Xilinx/Vitis/2024.2/common/technology/autopilot/etc/hls_log_apfixed.h
+    Replacements:    
+      - FilePath:        /home/hoinguyen/Documents/Vitis/UpConv_HLS/upconv_block0/upconv_block0/hls/.autopilot/db/upconv_core_top_ucb0.pp.0.cpp
+        Offset:          1527000
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_703_1: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_921_1:  '
+    FileOffset:      921
+    FilePath:        /home/tools/Xilinx/Vitis/2024.2/common/technology/autopilot/etc/hls_log_apfixed.h
+    Replacements:    
+      - FilePath:        /home/hoinguyen/Documents/Vitis/UpConv_HLS/upconv_block0/upconv_block0/hls/.autopilot/db/upconv_core_top_ucb0.pp.0.cpp
+        Offset:          1535389
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_921_1: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_1345_1:  '
+    FileOffset:      1345
+    FilePath:        /home/tools/Xilinx/Vitis/2024.2/common/technology/autopilot/etc/hls_log_apfixed.h
+    Replacements:    
+      - FilePath:        /home/hoinguyen/Documents/Vitis/UpConv_HLS/upconv_block0/upconv_block0/hls/.autopilot/db/upconv_core_top_ucb0.pp.0.cpp
+        Offset:          1554367
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_1345_1: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_240_1:  '
+    FileOffset:      240
+    FilePath:        /home/tools/Xilinx/Vitis/2024.2/common/technology/autopilot/etc/hls_sqrt_apfixed.h
+    Replacements:    
+      - FilePath:        /home/hoinguyen/Documents/Vitis/UpConv_HLS/upconv_block0/upconv_block0/hls/.autopilot/db/upconv_core_top_ucb0.pp.0.cpp
+        Offset:          1569246
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_240_1: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_268_2:  '
+    FileOffset:      268
+    FilePath:        /home/tools/Xilinx/Vitis/2024.2/common/technology/autopilot/etc/hls_sqrt_apfixed.h
+    Replacements:    
+      - FilePath:        /home/hoinguyen/Documents/Vitis/UpConv_HLS/upconv_block0/upconv_block0/hls/.autopilot/db/upconv_core_top_ucb0.pp.0.cpp
+        Offset:          1569767
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_268_2: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_48_1:  '
+    FileOffset:      48
+    FilePath:        /home/tools/Xilinx/Vitis/2024.2/common/technology/autopilot/etc/hls_pow_apfixed.h
+    Replacements:    
+      - FilePath:        /home/hoinguyen/Documents/Vitis/UpConv_HLS/upconv_block0/upconv_block0/hls/.autopilot/db/upconv_core_top_ucb0.pp.0.cpp
+        Offset:          1585723
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_48_1: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_109_2:  '
+    FileOffset:      109
+    FilePath:        /home/tools/Xilinx/Vitis/2024.2/common/technology/autopilot/etc/hls_pow_apfixed.h
+    Replacements:    
+      - FilePath:        /home/hoinguyen/Documents/Vitis/UpConv_HLS/upconv_block0/upconv_block0/hls/.autopilot/db/upconv_core_top_ucb0.pp.0.cpp
+        Offset:          1586878
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_109_2: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_123_3:  '
+    FileOffset:      123
+    FilePath:        /home/tools/Xilinx/Vitis/2024.2/common/technology/autopilot/etc/hls_pow_apfixed.h
+    Replacements:    
+      - FilePath:        /home/hoinguyen/Documents/Vitis/UpConv_HLS/upconv_block0/upconv_block0/hls/.autopilot/db/upconv_core_top_ucb0.pp.0.cpp
+        Offset:          1587187
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_123_3: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_153_4:  '
+    FileOffset:      153
+    FilePath:        /home/tools/Xilinx/Vitis/2024.2/common/technology/autopilot/etc/hls_pow_apfixed.h
+    Replacements:    
+      - FilePath:        /home/hoinguyen/Documents/Vitis/UpConv_HLS/upconv_block0/upconv_block0/hls/.autopilot/db/upconv_core_top_ucb0.pp.0.cpp
+        Offset:          1587697
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_153_4: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_281_1:  '
+    FileOffset:      281
+    FilePath:        /home/tools/Xilinx/Vitis/2024.2/common/technology/autopilot/etc/hls_pow_apfixed.h
+    Replacements:    
+      - FilePath:        /home/hoinguyen/Documents/Vitis/UpConv_HLS/upconv_block0/upconv_block0/hls/.autopilot/db/upconv_core_top_ucb0.pp.0.cpp
+        Offset:          1589621
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_281_1: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_301_2:  '
+    FileOffset:      301
+    FilePath:        /home/tools/Xilinx/Vitis/2024.2/common/technology/autopilot/etc/hls_pow_apfixed.h
+    Replacements:    
+      - FilePath:        /home/hoinguyen/Documents/Vitis/UpConv_HLS/upconv_block0/upconv_block0/hls/.autopilot/db/upconv_core_top_ucb0.pp.0.cpp
+        Offset:          1589986
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_301_2: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_315_3:  '
+    FileOffset:      315
+    FilePath:        /home/tools/Xilinx/Vitis/2024.2/common/technology/autopilot/etc/hls_pow_apfixed.h
+    Replacements:    
+      - FilePath:        /home/hoinguyen/Documents/Vitis/UpConv_HLS/upconv_block0/upconv_block0/hls/.autopilot/db/upconv_core_top_ucb0.pp.0.cpp
+        Offset:          1590294
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_315_3: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_433_1:  '
+    FileOffset:      433
+    FilePath:        /home/tools/Xilinx/Vitis/2024.2/common/technology/autopilot/etc/hls_pow_apfixed.h
+    Replacements:    
+      - FilePath:        /home/hoinguyen/Documents/Vitis/UpConv_HLS/upconv_block0/upconv_block0/hls/.autopilot/db/upconv_core_top_ucb0.pp.0.cpp
+        Offset:          1592127
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_433_1: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_447_2:  '
+    FileOffset:      447
+    FilePath:        /home/tools/Xilinx/Vitis/2024.2/common/technology/autopilot/etc/hls_pow_apfixed.h
+    Replacements:    
+      - FilePath:        /home/hoinguyen/Documents/Vitis/UpConv_HLS/upconv_block0/upconv_block0/hls/.autopilot/db/upconv_core_top_ucb0.pp.0.cpp
+        Offset:          1592452
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_447_2: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_33_1:  '
+    FileOffset:      33
+    FilePath:        /home/tools/Xilinx/Vitis/2024.2/common/technology/autopilot/etc/hls_diff_apfixed.h
+    Replacements:    
+      - FilePath:        /home/hoinguyen/Documents/Vitis/UpConv_HLS/upconv_block0/upconv_block0/hls/.autopilot/db/upconv_core_top_ucb0.pp.0.cpp
+        Offset:          1595128
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_33_1: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_183_1:  '
+    FileOffset:      183
+    FilePath:        /home/tools/Xilinx/Vitis/2024.2/common/technology/autopilot/etc/hls_diff_apfixed.h
+    Replacements:    
+      - FilePath:        /home/hoinguyen/Documents/Vitis/UpConv_HLS/upconv_block0/upconv_block0/hls/.autopilot/db/upconv_core_top_ucb0.pp.0.cpp
+        Offset:          1598035
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_183_1: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_248_1:  '
+    FileOffset:      248
+    FilePath:        /home/tools/Xilinx/Vitis/2024.2/common/technology/autopilot/etc/hls_diff_apfixed.h
+    Replacements:    
+      - FilePath:        /home/hoinguyen/Documents/Vitis/UpConv_HLS/upconv_block0/upconv_block0/hls/.autopilot/db/upconv_core_top_ucb0.pp.0.cpp
+        Offset:          1599327
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_248_1: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_16_1:  '
+    FileOffset:      16
+    FilePath:        /home/tools/Xilinx/Vitis/2024.2/common/technology/autopilot/etc/hls_all_any_apfixed.h
+    Replacements:    
+      - FilePath:        /home/hoinguyen/Documents/Vitis/UpConv_HLS/upconv_block0/upconv_block0/hls/.autopilot/db/upconv_core_top_ucb0.pp.0.cpp
+        Offset:          1610304
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_16_1: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_27_1:  '
+    FileOffset:      27
+    FilePath:        /home/tools/Xilinx/Vitis/2024.2/common/technology/autopilot/etc/hls_all_any_apfixed.h
+    Replacements:    
+      - FilePath:        /home/hoinguyen/Documents/Vitis/UpConv_HLS/upconv_block0/upconv_block0/hls/.autopilot/db/upconv_core_top_ucb0.pp.0.cpp
+        Offset:          1610479
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_27_1: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_38_1:  '
+    FileOffset:      38
+    FilePath:        /home/tools/Xilinx/Vitis/2024.2/common/technology/autopilot/etc/hls_all_any_apfixed.h
+    Replacements:    
+      - FilePath:        /home/hoinguyen/Documents/Vitis/UpConv_HLS/upconv_block0/upconv_block0/hls/.autopilot/db/upconv_core_top_ucb0.pp.0.cpp
+        Offset:          1610640
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_38_1: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_49_1:  '
+    FileOffset:      49
+    FilePath:        /home/tools/Xilinx/Vitis/2024.2/common/technology/autopilot/etc/hls_all_any_apfixed.h
+    Replacements:    
+      - FilePath:        /home/hoinguyen/Documents/Vitis/UpConv_HLS/upconv_block0/upconv_block0/hls/.autopilot/db/upconv_core_top_ucb0.pp.0.cpp
+        Offset:          1610802
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_49_1: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_60_1:  '
+    FileOffset:      60
+    FilePath:        /home/tools/Xilinx/Vitis/2024.2/common/technology/autopilot/etc/hls_all_any_apfixed.h
+    Replacements:    
+      - FilePath:        /home/hoinguyen/Documents/Vitis/UpConv_HLS/upconv_block0/upconv_block0/hls/.autopilot/db/upconv_core_top_ucb0.pp.0.cpp
+        Offset:          1610976
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_60_1: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_71_1:  '
+    FileOffset:      71
+    FilePath:        /home/tools/Xilinx/Vitis/2024.2/common/technology/autopilot/etc/hls_all_any_apfixed.h
+    Replacements:    
+      - FilePath:        /home/hoinguyen/Documents/Vitis/UpConv_HLS/upconv_block0/upconv_block0/hls/.autopilot/db/upconv_core_top_ucb0.pp.0.cpp
+        Offset:          1611151
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_71_1: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_82_1:  '
+    FileOffset:      82
+    FilePath:        /home/tools/Xilinx/Vitis/2024.2/common/technology/autopilot/etc/hls_all_any_apfixed.h
+    Replacements:    
+      - FilePath:        /home/hoinguyen/Documents/Vitis/UpConv_HLS/upconv_block0/upconv_block0/hls/.autopilot/db/upconv_core_top_ucb0.pp.0.cpp
+        Offset:          1611312
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_82_1: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_93_1:  '
+    FileOffset:      93
+    FilePath:        /home/tools/Xilinx/Vitis/2024.2/common/technology/autopilot/etc/hls_all_any_apfixed.h
+    Replacements:    
+      - FilePath:        /home/hoinguyen/Documents/Vitis/UpConv_HLS/upconv_block0/upconv_block0/hls/.autopilot/db/upconv_core_top_ucb0.pp.0.cpp
+        Offset:          1611474
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_93_1: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_26_1:  '
+    FileOffset:      26
+    FilePath:        /home/tools/Xilinx/Vitis/2024.2/common/technology/autopilot/etc/hls_mad_apfixed.h
+    Replacements:    
+      - FilePath:        /home/hoinguyen/Documents/Vitis/UpConv_HLS/upconv_block0/upconv_block0/hls/.autopilot/db/upconv_core_top_ucb0.pp.0.cpp
+        Offset:          1683207
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_26_1: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_40_1:  '
+    FileOffset:      40
+    FilePath:        /home/tools/Xilinx/Vitis/2024.2/common/technology/autopilot/etc/hls_cbrt_apfixed.h
+    Replacements:    
+      - FilePath:        /home/hoinguyen/Documents/Vitis/UpConv_HLS/upconv_block0/upconv_block0/hls/.autopilot/db/upconv_core_top_ucb0.pp.0.cpp
+        Offset:          1684965
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_40_1: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_49_1:  '
+    FileOffset:      49
+    FilePath:        /home/tools/Xilinx/Vitis/2024.2/common/technology/autopilot/etc/hls_hypot_apfixed.h
+    Replacements:    
+      - FilePath:        /home/hoinguyen/Documents/Vitis/UpConv_HLS/upconv_block0/upconv_block0/hls/.autopilot/db/upconv_core_top_ucb0.pp.0.cpp
+        Offset:          1689510
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_49_1: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_81_2:  '
+    FileOffset:      81
+    FilePath:        /home/tools/Xilinx/Vitis/2024.2/common/technology/autopilot/etc/hls_hypot_apfixed.h
+    Replacements:    
+      - FilePath:        /home/hoinguyen/Documents/Vitis/UpConv_HLS/upconv_block0/upconv_block0/hls/.autopilot/db/upconv_core_top_ucb0.pp.0.cpp
+        Offset:          1690246
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_81_2: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_169_3:  '
+    FileOffset:      169
+    FilePath:        /home/tools/Xilinx/Vitis/2024.2/common/technology/autopilot/etc/hls_hypot_apfixed.h
+    Replacements:    
+      - FilePath:        /home/hoinguyen/Documents/Vitis/UpConv_HLS/upconv_block0/upconv_block0/hls/.autopilot/db/upconv_core_top_ucb0.pp.0.cpp
+        Offset:          1691936
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_169_3: '
+  - DiagnosticName:  clang-diagnostic-error
+    Message:         'Invalid Directive: for current device, ram_t2p + uram is invalid combination for BIND_STORAGE''s option ''type + impl'''
+    FileOffset:      109
+    FilePath:        /home/hoinguyen/Documents/Vitis/UpConv_HLS/gen/Hls_Layers_UpConv.tpp
+    Replacements:    
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_119_1:  '
+    FileOffset:      119
+    FilePath:        /home/hoinguyen/Documents/Vitis/UpConv_HLS/gen/Hls_Layers_UpConv.tpp
+    Replacements:    
+      - FilePath:        /home/hoinguyen/Documents/Vitis/UpConv_HLS/upconv_block0/upconv_block0/hls/.autopilot/db/upconv_core_top_ucb0.pp.0.cpp
+        Offset:          1759542
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_119_1: '
+  - DiagnosticName:  clang-diagnostic-error
+    Message:         'Invalid Directive: for current device, ram_t2p + bram is invalid combination for BIND_STORAGE''s option ''type + impl'''
+    FileOffset:      129
+    FilePath:        /home/hoinguyen/Documents/Vitis/UpConv_HLS/gen/Hls_Layers_UpConv.tpp
+    Replacements:    
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_142_2:  '
+    FileOffset:      142
+    FilePath:        /home/hoinguyen/Documents/Vitis/UpConv_HLS/gen/Hls_Layers_UpConv.tpp
+    Replacements:    
+      - FilePath:        /home/hoinguyen/Documents/Vitis/UpConv_HLS/upconv_block0/upconv_block0/hls/.autopilot/db/upconv_core_top_ucb0.pp.0.cpp
+        Offset:          1760048
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_142_2: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_143_3:  '
+    FileOffset:      143
+    FilePath:        /home/hoinguyen/Documents/Vitis/UpConv_HLS/gen/Hls_Layers_UpConv.tpp
+    Replacements:    
+      - FilePath:        /home/hoinguyen/Documents/Vitis/UpConv_HLS/upconv_block0/upconv_block0/hls/.autopilot/db/upconv_core_top_ucb0.pp.0.cpp
+        Offset:          1760098
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_143_3: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_176_4:  '
+    FileOffset:      176
+    FilePath:        /home/hoinguyen/Documents/Vitis/UpConv_HLS/gen/Hls_Layers_UpConv.tpp
+    Replacements:    
+      - FilePath:        /home/hoinguyen/Documents/Vitis/UpConv_HLS/upconv_block0/upconv_block0/hls/.autopilot/db/upconv_core_top_ucb0.pp.0.cpp
+        Offset:          1761110
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_176_4: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_194_5:  '
+    FileOffset:      194
+    FilePath:        /home/hoinguyen/Documents/Vitis/UpConv_HLS/gen/Hls_Layers_UpConv.tpp
+    Replacements:    
+      - FilePath:        /home/hoinguyen/Documents/Vitis/UpConv_HLS/upconv_block0/upconv_block0/hls/.autopilot/db/upconv_core_top_ucb0.pp.0.cpp
+        Offset:          1761728
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_194_5: '
+  - DiagnosticName:  clang-diagnostic-error
+    Message:         'Invalid Directive: for current device, ram_t2p + bram is invalid combination for BIND_STORAGE''s option ''type + impl'''
+    FileOffset:      224
+    FilePath:        /home/hoinguyen/Documents/Vitis/UpConv_HLS/gen/Hls_Layers_UpConv.tpp
+    Replacements:    
+  - DiagnosticName:  clang-diagnostic-error
+    Message:         'Invalid Directive: for current device, ram_t2p + bram is invalid combination for BIND_STORAGE''s option ''type + impl'''
+    FileOffset:      225
+    FilePath:        /home/hoinguyen/Documents/Vitis/UpConv_HLS/gen/Hls_Layers_UpConv.tpp
+    Replacements:    
+  - DiagnosticName:  clang-diagnostic-error
+    Message:         'Invalid Directive: for current device, ram_t2p + bram is invalid combination for BIND_STORAGE''s option ''type + impl'''
+    FileOffset:      226
+    FilePath:        /home/hoinguyen/Documents/Vitis/UpConv_HLS/gen/Hls_Layers_UpConv.tpp
+    Replacements:    
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_260_6:  '
+    FileOffset:      260
+    FilePath:        /home/hoinguyen/Documents/Vitis/UpConv_HLS/gen/Hls_Layers_UpConv.tpp
+    Replacements:    
+      - FilePath:        /home/hoinguyen/Documents/Vitis/UpConv_HLS/upconv_block0/upconv_block0/hls/.autopilot/db/upconv_core_top_ucb0.pp.0.cpp
+        Offset:          1763774
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_260_6: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_296_1:  '
+    FileOffset:      296
+    FilePath:        /home/hoinguyen/Documents/Vitis/UpConv_HLS/gen/Hls_Layers_UpConv.tpp
+    Replacements:    
+      - FilePath:        /home/hoinguyen/Documents/Vitis/UpConv_HLS/upconv_block0/upconv_block0/hls/.autopilot/db/upconv_core_top_ucb0.pp.0.cpp
+        Offset:          1764854
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_296_1: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_307_2:  '
+    FileOffset:      307
+    FilePath:        /home/hoinguyen/Documents/Vitis/UpConv_HLS/gen/Hls_Layers_UpConv.tpp
+    Replacements:    
+      - FilePath:        /home/hoinguyen/Documents/Vitis/UpConv_HLS/upconv_block0/upconv_block0/hls/.autopilot/db/upconv_core_top_ucb0.pp.0.cpp
+        Offset:          1765239
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_307_2: '
+  - DiagnosticName:  clang-diagnostic-error
+    Message:         'Invalid Directive: for current device, ram_t2p + uram is invalid combination for BIND_STORAGE''s option ''type + impl'''
+    FileOffset:      37
+    FilePath:        /home/hoinguyen/Documents/Vitis/UpConv_HLS/gen/upconv_core_top_ucb0.cpp
+    Replacements:    
+...

@@ -1,0 +1,27 @@
+[
+  {
+    "directory": "/home/hoinguyen/Documents/Vitis/UpConv_HLS/upconv_block0",
+    "arguments": [
+      "/home/tools/Xilinx/Vitis/2024.2/vcxx/libexec/clang++",
+      "--gcc-toolchain=/home/tools/Xilinx/Vitis/2024.2/tps/lnx64/gcc-8.3.0",
+      "-fhls",
+      "-hls-syn-headers-dir=/home/tools/Xilinx/Vitis/2024.2/common/technology/autopilot",
+      "-fhlstoplevel=upconv_core_top_ucb0",
+      "-c",
+      "/home/hoinguyen/Documents/Vitis/UpConv_HLS/gen/upconv_core_top_ucb0.cpp"
+    ],
+    "file": "/home/hoinguyen/Documents/Vitis/UpConv_HLS/gen/upconv_core_top_ucb0.cpp"
+  },
+  {
+    "directory": "/home/hoinguyen/Documents/Vitis/UpConv_HLS/upconv_block0",
+    "arguments": [
+      "/home/tools/Xilinx/Vitis/2024.2/vcxx/libexec/clang++",
+      "--gcc-toolchain=/home/tools/Xilinx/Vitis/2024.2/tps/lnx64/gcc-8.3.0",
+      "-fhls-tb",
+      "-hls-sim-headers-dir=/home/tools/Xilinx/Vitis/2024.2/include",
+      "-c",
+      "/home/hoinguyen/Documents/Vitis/UpConv_HLS/test_ucb0.cpp"
+    ],
+    "file": "/home/hoinguyen/Documents/Vitis/UpConv_HLS/test_ucb0.cpp"
+  }
+]

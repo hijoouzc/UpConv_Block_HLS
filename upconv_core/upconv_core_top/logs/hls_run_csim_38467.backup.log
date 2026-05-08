@@ -1,0 +1,33 @@
+  **** HLS Build v2024.2 5238294
+INFO: [HLS 200-2005] Using work_dir /home/hoinguyen/Documents/Vitis/UpConv_HLS/upconv_core/upconv_core_top 
+INFO: [HLS 200-1505] Using default flow_target 'vivado'
+Resolution: For help on HLS 200-1505 see docs.xilinx.com/access/sources/dita/topic?Doc_Version=2024.2%20English&url=ug1448-hls-guidance&resourceid=200-1505.html
+INFO: [HLS 200-1465] Applying ini 'syn.file=/home/hoinguyen/Documents/Vitis/UpConv_HLS/gen/upconv_core_top.cpp' from /home/hoinguyen/Documents/Vitis/UpConv_HLS/upconv_core/hls_config.cfg(8)
+INFO: [HLS 200-10] Adding design file '/home/hoinguyen/Documents/Vitis/UpConv_HLS/gen/upconv_core_top.cpp' to the project
+INFO: [HLS 200-1465] Applying ini 'tb.file=/home/hoinguyen/Documents/Vitis/UpConv_HLS/test.cpp' from /home/hoinguyen/Documents/Vitis/UpConv_HLS/upconv_core/hls_config.cfg(9)
+INFO: [HLS 200-10] Adding test bench file '/home/hoinguyen/Documents/Vitis/UpConv_HLS/test.cpp' to the project
+INFO: [HLS 200-1465] Applying ini 'syn.top=upconv_core_top' from /home/hoinguyen/Documents/Vitis/UpConv_HLS/upconv_core/hls_config.cfg(7)
+INFO: [HLS 200-1465] Applying ini 'flow_target=vivado' from /home/hoinguyen/Documents/Vitis/UpConv_HLS/upconv_core/hls_config.cfg(4)
+INFO: [HLS 200-1505] Using flow_target 'vivado'
+Resolution: For help on HLS 200-1505 see docs.xilinx.com/access/sources/dita/topic?Doc_Version=2024.2%20English&url=ug1448-hls-guidance&resourceid=200-1505.html
+INFO: [HLS 200-1465] Applying ini 'part=xczu7ev-ffvc1156-2-e' from /home/hoinguyen/Documents/Vitis/UpConv_HLS/upconv_core/hls_config.cfg(1)
+INFO: [HLS 200-1611] Setting target device to 'xczu7ev-ffvc1156-2-e'
+INFO: [HLS 200-1465] Applying ini 'clock=300MHz' from /home/hoinguyen/Documents/Vitis/UpConv_HLS/upconv_core/hls_config.cfg(10)
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 3.333ns.
+INFO: [HLS 200-1465] Applying ini 'package.output.format=ip_catalog' from /home/hoinguyen/Documents/Vitis/UpConv_HLS/upconv_core/hls_config.cfg(5)
+INFO: [SIM 211-2] *************** CSIM start ***************
+INFO: [SIM 211-4] CSIM will launch CLANG as the compiler.
+INFO: [HLS 200-2036] Building debug C Simulation binaries
+   Compiling ../../../../../test.cpp in debug mode
+   Compiling ../../../../../gen/upconv_core_top.cpp in debug mode
+   Generating csim.exe
+====================================================
+   UPCONV CORE FULL DIMENSION VERIFICATION          
+====================================================
+
+--- Testing MINI_TEST (16x16x16 -> 32x32x16) ---
+  HLS Execution Time (CSIM): 0.434253 s
+  Output Sum: nan
+  MINI_TEST FAILED (Zero Output)
+
+--- Testing UPCONV_BLOCK_0 (16x16x960 -> 32x32x480) ---

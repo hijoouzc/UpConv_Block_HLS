@@ -1,0 +1,60 @@
+  **** HLS Build v2024.2 5238294
+INFO: [HLS 200-2005] Using work_dir /home/hoinguyen/Documents/Vitis/UpConv_HLS/upconv_block0/upconv_block0 
+INFO: [HLS 200-1505] Using default flow_target 'vivado'
+Resolution: For help on HLS 200-1505 see docs.xilinx.com/access/sources/dita/topic?Doc_Version=2024.2%20English&url=ug1448-hls-guidance&resourceid=200-1505.html
+INFO: [HLS 200-1465] Applying ini 'syn.file=/home/hoinguyen/Documents/Vitis/UpConv_HLS/gen/upconv_core_top_ucb0.cpp' from /home/hoinguyen/Documents/Vitis/UpConv_HLS/upconv_block0/hls_config.cfg(7)
+INFO: [HLS 200-10] Adding design file '/home/hoinguyen/Documents/Vitis/UpConv_HLS/gen/upconv_core_top_ucb0.cpp' to the project
+INFO: [HLS 200-1465] Applying ini 'tb.file=/home/hoinguyen/Documents/Vitis/UpConv_HLS/test_ucb0.cpp' from /home/hoinguyen/Documents/Vitis/UpConv_HLS/upconv_block0/hls_config.cfg(8)
+INFO: [HLS 200-10] Adding test bench file '/home/hoinguyen/Documents/Vitis/UpConv_HLS/test_ucb0.cpp' to the project
+INFO: [HLS 200-1465] Applying ini 'flow_target=vivado' from /home/hoinguyen/Documents/Vitis/UpConv_HLS/upconv_block0/hls_config.cfg(4)
+INFO: [HLS 200-1505] Using flow_target 'vivado'
+Resolution: For help on HLS 200-1505 see docs.xilinx.com/access/sources/dita/topic?Doc_Version=2024.2%20English&url=ug1448-hls-guidance&resourceid=200-1505.html
+INFO: [HLS 200-1465] Applying ini 'part=xczu7ev-ffvc1156-2-e' from /home/hoinguyen/Documents/Vitis/UpConv_HLS/upconv_block0/hls_config.cfg(1)
+INFO: [HLS 200-1611] Setting target device to 'xczu7ev-ffvc1156-2-e'
+INFO: [HLS 200-1465] Applying ini 'clock=300MHz' from /home/hoinguyen/Documents/Vitis/UpConv_HLS/upconv_block0/hls_config.cfg(9)
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 3.333ns.
+INFO: [HLS 200-1465] Applying ini 'package.output.format=ip_catalog' from /home/hoinguyen/Documents/Vitis/UpConv_HLS/upconv_block0/hls_config.cfg(5)
+INFO: [SIM 211-2] *************** CSIM start ***************
+INFO: [SIM 211-4] CSIM will launch CLANG as the compiler.
+INFO: [HLS 200-2036] Building debug C Simulation binaries
+   Compiling ../../../../../test_ucb0.cpp in debug mode
+   Compiling ../../../../../gen/upconv_core_top_ucb0.cpp in debug mode
+In file included from ../../../../../gen/upconv_core_top_ucb0.cpp:10:
+../../../../../gen/Hls_Layers_UpConv.tpp:98:15: error: expected unqualified-id
+    const int CI_WORDS    = (C_IN  + 15) / 16;
+              ^
+../../../../../gen/upconv_config.h:88:20: note: expanded from macro 'CI_WORDS'
+#define CI_WORDS ((MODEL_C_IN  + PACK_256 - 1) / PACK_256)
+                   ^
+../../../../../gen/upconv_config.h:39:31: note: expanded from macro 'MODEL_C_IN'
+        #define MODEL_C_IN    960
+                              ^
+In file included from ../../../../../gen/upconv_core_top_ucb0.cpp:10:
+../../../../../gen/Hls_Layers_UpConv.tpp:98:15: error: expected ')'
+../../../../../gen/upconv_config.h:88:20: note: expanded from macro 'CI_WORDS'
+#define CI_WORDS ((MODEL_C_IN  + PACK_256 - 1) / PACK_256)
+                   ^
+../../../../../gen/upconv_config.h:39:31: note: expanded from macro 'MODEL_C_IN'
+        #define MODEL_C_IN    960
+                              ^
+../../../../../gen/Hls_Layers_UpConv.tpp:98:15: note: to match this '('
+../../../../../gen/upconv_config.h:88:19: note: expanded from macro 'CI_WORDS'
+#define CI_WORDS ((MODEL_C_IN  + PACK_256 - 1) / PACK_256)
+                  ^
+In file included from ../../../../../gen/upconv_core_top_ucb0.cpp:10:
+../../../../../gen/Hls_Layers_UpConv.tpp:98:15: error: expected ')'
+    const int CI_WORDS    = (C_IN  + 15) / 16;
+              ^
+../../../../../gen/upconv_config.h:88:48: note: expanded from macro 'CI_WORDS'
+#define CI_WORDS ((MODEL_C_IN  + PACK_256 - 1) / PACK_256)
+                                               ^
+../../../../../gen/Hls_Layers_UpConv.tpp:98:15: note: to match this '('
+../../../../../gen/upconv_config.h:88:18: note: expanded from macro 'CI_WORDS'
+#define CI_WORDS ((MODEL_C_IN  + PACK_256 - 1) / PACK_256)
+                 ^
+3 errors generated.
+make: *** [csim.mk:94: obj/upconv_core_top_ucb0.o] Error 1
+ERROR: [SIM 211-100] 'csim_design' failed: compilation error(s).
+INFO: [SIM 211-3] *************** CSIM finish ***************
+ERROR: 4
+INFO: [HLS 200-112] Total CPU user time: 3.58 seconds. Total CPU system time: 0.38 seconds. Total elapsed time: 3.8 seconds; peak allocated memory: 325.184 MB.

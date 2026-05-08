@@ -1,0 +1,1485 @@
+
+
+================================================================
+== Vitis HLS Report for 'UpConv_Fused_Row_8_16_16_960_480_s'
+================================================================
+* Date:           Thu May  7 18:30:37 2026
+
+* Version:        2024.2 (Build 5238294 on Nov  8 2024)
+* Project:        upconv_block0
+* Solution:       hls (Vivado IP Flow Target)
+* Product family: zynquplus
+* Target device:  xczu7ev-ffvc1156-2-e
+
+
+================================================================
+== Performance Estimates
+================================================================
++ Timing: 
+    * Summary: 
+    +--------+---------+----------+------------+
+    |  Clock |  Target | Estimated| Uncertainty|
+    +--------+---------+----------+------------+
+    |ap_clk  |  3.33 ns|  2.719 ns|     0.90 ns|
+    +--------+---------+----------+------------+
+
++ Latency: 
+    * Summary: 
+    +---------+---------+----------+-----------+--------+---------+---------+
+    |  Latency (cycles) |  Latency (absolute)  |     Interval     | Pipeline|
+    |   min   |   max   |    min   |    max    |   min  |   max   |   Type  |
+    +---------+---------+----------+-----------+--------+---------+---------+
+    |   374214|  3433854|  1.247 ms|  11.445 ms|  374214|  3433854|       no|
+    +---------+---------+----------+-----------+--------+---------+---------+
+
+    + Detail: 
+        * Instance: 
+        N/A
+
+        * Loop: 
+        +--------------+---------+---------+----------+-----------+-----------+------+----------+
+        |              |  Latency (cycles) | Iteration|  Initiation Interval  | Trip |          |
+        |   Loop Name  |   min   |   max   |  Latency |  achieved |   target  | Count| Pipelined|
+        +--------------+---------+---------+----------+-----------+-----------+------+----------+
+        |- PIXEL_NORM  |   113792|   113792|      3556|          -|          -|    32|        no|
+        +--------------+---------+---------+----------+-----------+-----------+------+----------+
+
+============================================================
++ Verbose Summary: Synthesis Manager
+============================================================
+InlineROM: 1
+ExposeGlobal: 0
+============================================================
++ Verbose Summary: CDFG Model
+============================================================
+IsTopModel: 0
+ResetActiveHigh: 1
+IsCombinational: 0
+IsDatapathOnly: 0
+HasWiredReturn: 1
+HasMFsm: 0
+HasVarLatency: 1
+IsPipeline: 0
+IsRtlPipelined: 0
+IsInstanceOverlapped: 0
+IsDontTouch: 0
+HasImplIP: 0
+IsGatedGlobalClock: 0
+
+
+============================================================
++ Verbose Summary: Schedule
+============================================================
+* Number of FSM states : 141
+* Pipeline : 0
+* Dataflow Pipeline: 0
+
+* FSM state transitions: 
+1 --> 2 
+2 --> 3 
+3 --> 4 
+4 --> 5 
+5 --> 6 
+6 --> 7 
+7 --> 8 
+8 --> 9 
+9 --> 10 
+10 --> 11 
+11 --> 12 
+12 --> 13 
+13 --> 14 
+14 --> 15 137 
+15 --> 16 
+16 --> 17 
+17 --> 18 
+18 --> 19 
+19 --> 20 
+20 --> 21 
+21 --> 22 
+22 --> 23 
+23 --> 24 
+24 --> 25 
+25 --> 26 
+26 --> 27 
+27 --> 28 
+28 --> 29 
+29 --> 30 
+30 --> 31 
+31 --> 32 
+32 --> 33 
+33 --> 34 
+34 --> 35 
+35 --> 36 
+36 --> 37 
+37 --> 38 
+38 --> 39 
+39 --> 40 
+40 --> 41 
+41 --> 42 
+42 --> 43 
+43 --> 44 
+44 --> 45 
+45 --> 46 
+46 --> 47 
+47 --> 48 
+48 --> 49 
+49 --> 50 
+50 --> 51 
+51 --> 52 
+52 --> 53 
+53 --> 54 
+54 --> 55 
+55 --> 56 
+56 --> 57 
+57 --> 58 
+58 --> 59 
+59 --> 60 
+60 --> 61 
+61 --> 62 
+62 --> 63 
+63 --> 64 
+64 --> 65 
+65 --> 66 
+66 --> 67 
+67 --> 68 
+68 --> 69 
+69 --> 70 
+70 --> 71 
+71 --> 72 
+72 --> 73 
+73 --> 74 
+74 --> 75 
+75 --> 76 
+76 --> 77 
+77 --> 78 
+78 --> 79 
+79 --> 80 
+80 --> 81 
+81 --> 82 
+82 --> 83 
+83 --> 84 
+84 --> 85 
+85 --> 86 
+86 --> 87 
+87 --> 88 
+88 --> 89 
+89 --> 90 
+90 --> 91 
+91 --> 92 
+92 --> 93 
+93 --> 94 
+94 --> 95 
+95 --> 96 
+96 --> 97 
+97 --> 98 
+98 --> 99 
+99 --> 100 
+100 --> 101 
+101 --> 102 
+102 --> 103 
+103 --> 104 
+104 --> 105 
+105 --> 106 
+106 --> 107 
+107 --> 108 
+108 --> 109 
+109 --> 110 
+110 --> 111 
+111 --> 112 
+112 --> 113 
+113 --> 114 
+114 --> 115 
+115 --> 116 
+116 --> 117 
+117 --> 118 
+118 --> 119 
+119 --> 120 
+120 --> 121 
+121 --> 122 
+122 --> 123 
+123 --> 124 
+124 --> 125 
+125 --> 126 
+126 --> 127 
+127 --> 128 
+128 --> 129 
+129 --> 130 
+130 --> 131 
+131 --> 132 
+132 --> 133 
+133 --> 134 
+134 --> 135 
+135 --> 136 
+136 --> 14 
+137 --> 138 
+138 --> 139 
+139 --> 140 
+140 --> 141 
+141 --> 
+
+* FSM state operations: 
+
+State 1 <SV = 0> <Delay = 1.09>
+ST_1 : Operation 142 [1/1] (0.00ns)   --->   "%wo_1 = alloca i32 1" [../gen/Hls_Layers_UpConv.tpp:238]   --->   Operation 142 'alloca' 'wo_1' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 143 [1/1] (0.00ns)   --->   "%BE_ptr_read = read i64 @_ssdm_op_Read.ap_auto.i64, i64 %BE_ptr"   --->   Operation 143 'read' 'BE_ptr_read' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 144 [1/1] (0.00ns)   --->   "%G_ptr_read = read i64 @_ssdm_op_Read.ap_auto.i64, i64 %G_ptr"   --->   Operation 144 'read' 'G_ptr_read' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 145 [1/1] (0.00ns)   --->   "%B_ptr_read = read i64 @_ssdm_op_Read.ap_auto.i64, i64 %B_ptr"   --->   Operation 145 'read' 'B_ptr_read' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 146 [1/1] (0.00ns)   --->   "%sum_loc = alloca i64 1"   --->   Operation 146 'alloca' 'sum_loc' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 147 [1/1] (0.00ns)   --->   "%sumsq_loc = alloca i64 1"   --->   Operation 147 'alloca' 'sumsq_loc' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 148 [1/1] (0.00ns)   --->   "%b_buf = alloca i64 1" [../gen/Hls_Layers_UpConv.tpp:221]   --->   Operation 148 'alloca' 'b_buf' <Predicate = true> <Delay = 0.00> <CoreInst = "RAM_T2P_BRAM">   --->   Core 98 'RAM_T2P_BRAM' <Latency = 1> <II = 1> <Delay = 1.23> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 256> <Depth = 30> <RAM>
+ST_1 : Operation 149 [1/1] (0.00ns)   --->   "%g_buf = alloca i64 1" [../gen/Hls_Layers_UpConv.tpp:222]   --->   Operation 149 'alloca' 'g_buf' <Predicate = true> <Delay = 0.00> <CoreInst = "RAM_T2P_BRAM">   --->   Core 98 'RAM_T2P_BRAM' <Latency = 1> <II = 1> <Delay = 1.23> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 256> <Depth = 30> <RAM>
+ST_1 : Operation 150 [1/1] (0.00ns)   --->   "%be_buf = alloca i64 1" [../gen/Hls_Layers_UpConv.tpp:223]   --->   Operation 150 'alloca' 'be_buf' <Predicate = true> <Delay = 0.00> <CoreInst = "RAM_T2P_BRAM">   --->   Core 98 'RAM_T2P_BRAM' <Latency = 1> <II = 1> <Delay = 1.23> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 256> <Depth = 30> <RAM>
+ST_1 : Operation 151 [2/2] (0.00ns)   --->   "%call_ln0 = call void @UpConv_Fused_Row<8, 16, 16, 960, 480>_Pipeline_RESET_ROW_ACC, i16 %void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_9, i16 %void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_8, i16 %void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_7, i16 %void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_6, i16 %void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_5, i16 %void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_4, i16 %void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_3, i16 %void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_2, i16 %void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_1, i16 %void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u, i16 %p_ZZ16UpConv_Fused_RowILi8ELi16ELi16ELi960ELi480EEvP7ap_uintILi256EEPKS1_S4_S4_S4_5, i16 %p_ZZ16UpConv_Fused_RowILi8ELi16ELi16ELi960ELi480EEvP7ap_uintILi256EEPKS1_S4_S4_S4_4, i16 %p_ZZ16UpConv_Fused_RowILi8ELi16ELi16ELi960ELi480EEvP7ap_uintILi256EEPKS1_S4_S4_S4_3, i16 %p_ZZ16UpConv_Fused_RowILi8ELi16ELi16ELi960ELi480EEvP7ap_uintILi256EEPKS1_S4_S4_S4_2, i16 %p_ZZ16UpConv_Fused_RowILi8ELi16ELi16ELi960ELi480EEvP7ap_uintILi256EEPKS1_S4_S4_S4_1, i16 %p_ZZ16UpConv_Fused_RowILi8ELi16ELi16ELi960ELi480EEvP7ap_uintILi256EEPKS1_S4_S4_S4"   --->   Operation 151 'call' 'call_ln0' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Generic Core
+ST_1 : Operation 152 [1/1] (0.00ns)   --->   "%trunc_ln2 = partselect i59 @_ssdm_op_PartSelect.i59.i64.i32.i32, i64 %B_ptr_read, i32 5, i32 63" [../gen/Hls_Layers_UpConv.tpp:228]   --->   Operation 152 'partselect' 'trunc_ln2' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 153 [1/1] (0.00ns)   --->   "%trunc_ln228_1 = partselect i59 @_ssdm_op_PartSelect.i59.i64.i32.i32, i64 %G_ptr_read, i32 5, i32 63" [../gen/Hls_Layers_UpConv.tpp:228]   --->   Operation 153 'partselect' 'trunc_ln228_1' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 154 [1/1] (0.00ns)   --->   "%trunc_ln228_2 = partselect i59 @_ssdm_op_PartSelect.i59.i64.i32.i32, i64 %BE_ptr_read, i32 5, i32 63" [../gen/Hls_Layers_UpConv.tpp:228]   --->   Operation 154 'partselect' 'trunc_ln228_2' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 155 [2/2] (1.09ns)   --->   "%call_ln228 = call void @UpConv_Fused_Row<8, 16, 16, 960, 480>_Pipeline_LOAD_PARAMS, i256 %b_buf, i59 %trunc_ln2, i256 %gmem_param, i256 %g_buf, i59 %trunc_ln228_1, i256 %be_buf, i59 %trunc_ln228_2" [../gen/Hls_Layers_UpConv.tpp:228]   --->   Operation 155 'call' 'call_ln228' <Predicate = true> <Delay = 1.09> <CoreType = "Generic">   --->   Generic Core
+ST_1 : Operation 156 [1/1] (0.42ns)   --->   "%store_ln238 = store i6 0, i6 %wo_1" [../gen/Hls_Layers_UpConv.tpp:238]   --->   Operation 156 'store' 'store_ln238' <Predicate = true> <Delay = 0.42>
+
+State 2 <SV = 1> <Delay = 1.20>
+ST_2 : Operation 157 [1/2] (1.20ns)   --->   "%call_ln0 = call void @UpConv_Fused_Row<8, 16, 16, 960, 480>_Pipeline_RESET_ROW_ACC, i16 %void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_9, i16 %void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_8, i16 %void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_7, i16 %void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_6, i16 %void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_5, i16 %void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_4, i16 %void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_3, i16 %void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_2, i16 %void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_1, i16 %void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u, i16 %p_ZZ16UpConv_Fused_RowILi8ELi16ELi16ELi960ELi480EEvP7ap_uintILi256EEPKS1_S4_S4_S4_5, i16 %p_ZZ16UpConv_Fused_RowILi8ELi16ELi16ELi960ELi480EEvP7ap_uintILi256EEPKS1_S4_S4_S4_4, i16 %p_ZZ16UpConv_Fused_RowILi8ELi16ELi16ELi960ELi480EEvP7ap_uintILi256EEPKS1_S4_S4_S4_3, i16 %p_ZZ16UpConv_Fused_RowILi8ELi16ELi16ELi960ELi480EEvP7ap_uintILi256EEPKS1_S4_S4_S4_2, i16 %p_ZZ16UpConv_Fused_RowILi8ELi16ELi16ELi960ELi480EEvP7ap_uintILi256EEPKS1_S4_S4_S4_1, i16 %p_ZZ16UpConv_Fused_RowILi8ELi16ELi16ELi960ELi480EEvP7ap_uintILi256EEPKS1_S4_S4_S4"   --->   Operation 157 'call' 'call_ln0' <Predicate = true> <Delay = 1.20> <CoreType = "Generic">   --->   Generic Core
+ST_2 : Operation 158 [1/2] (0.00ns)   --->   "%call_ln228 = call void @UpConv_Fused_Row<8, 16, 16, 960, 480>_Pipeline_LOAD_PARAMS, i256 %b_buf, i59 %trunc_ln2, i256 %gmem_param, i256 %g_buf, i59 %trunc_ln228_1, i256 %be_buf, i59 %trunc_ln228_2" [../gen/Hls_Layers_UpConv.tpp:228]   --->   Operation 158 'call' 'call_ln228' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Generic Core
+
+State 3 <SV = 2> <Delay = 2.43>
+ST_3 : Operation 159 [1/1] (0.00ns)   --->   "%W_ptr_read = read i64 @_ssdm_op_Read.ap_auto.i64, i64 %W_ptr"   --->   Operation 159 'read' 'W_ptr_read' <Predicate = true> <Delay = 0.00>
+ST_3 : Operation 160 [1/1] (0.00ns)   --->   "%trunc_ln = partselect i59 @_ssdm_op_PartSelect.i59.i64.i32.i32, i64 %W_ptr_read, i32 5, i32 63" [../gen/Hls_Layers_UpConv.tpp:135]   --->   Operation 160 'partselect' 'trunc_ln' <Predicate = true> <Delay = 0.00>
+ST_3 : Operation 161 [1/1] (0.00ns)   --->   "%sext_ln135 = sext i59 %trunc_ln" [../gen/Hls_Layers_UpConv.tpp:135]   --->   Operation 161 'sext' 'sext_ln135' <Predicate = true> <Delay = 0.00>
+ST_3 : Operation 162 [1/1] (0.00ns)   --->   "%gmem_weight_addr = getelementptr i256 %gmem_weight, i64 %sext_ln135" [../gen/Hls_Layers_UpConv.tpp:135]   --->   Operation 162 'getelementptr' 'gmem_weight_addr' <Predicate = true> <Delay = 0.00>
+ST_3 : Operation 163 [8/8] (2.43ns)   --->   "%empty = readreq i1 @_ssdm_op_ReadReq.m_axi.p1i256, i256 %gmem_weight_addr, i64 259200" [../gen/Hls_Layers_UpConv.tpp:135]   --->   Operation 163 'readreq' 'empty' <Predicate = true> <Delay = 2.43> <CoreInst = "m_axi">   --->   Core 119 'm_axi' <Latency = 6> <II = 1> <Delay = 1.00> <Adapter> <Opcode : 'read' 'write' 'readreq' 'writereq' 'writeresp'>
+
+State 4 <SV = 3> <Delay = 2.43>
+ST_4 : Operation 164 [7/8] (2.43ns)   --->   "%empty = readreq i1 @_ssdm_op_ReadReq.m_axi.p1i256, i256 %gmem_weight_addr, i64 259200" [../gen/Hls_Layers_UpConv.tpp:135]   --->   Operation 164 'readreq' 'empty' <Predicate = true> <Delay = 2.43> <CoreInst = "m_axi">   --->   Core 119 'm_axi' <Latency = 6> <II = 1> <Delay = 1.00> <Adapter> <Opcode : 'read' 'write' 'readreq' 'writereq' 'writeresp'>
+
+State 5 <SV = 4> <Delay = 2.43>
+ST_5 : Operation 165 [6/8] (2.43ns)   --->   "%empty = readreq i1 @_ssdm_op_ReadReq.m_axi.p1i256, i256 %gmem_weight_addr, i64 259200" [../gen/Hls_Layers_UpConv.tpp:135]   --->   Operation 165 'readreq' 'empty' <Predicate = true> <Delay = 2.43> <CoreInst = "m_axi">   --->   Core 119 'm_axi' <Latency = 6> <II = 1> <Delay = 1.00> <Adapter> <Opcode : 'read' 'write' 'readreq' 'writereq' 'writeresp'>
+
+State 6 <SV = 5> <Delay = 2.43>
+ST_6 : Operation 166 [5/8] (2.43ns)   --->   "%empty = readreq i1 @_ssdm_op_ReadReq.m_axi.p1i256, i256 %gmem_weight_addr, i64 259200" [../gen/Hls_Layers_UpConv.tpp:135]   --->   Operation 166 'readreq' 'empty' <Predicate = true> <Delay = 2.43> <CoreInst = "m_axi">   --->   Core 119 'm_axi' <Latency = 6> <II = 1> <Delay = 1.00> <Adapter> <Opcode : 'read' 'write' 'readreq' 'writereq' 'writeresp'>
+
+State 7 <SV = 6> <Delay = 2.43>
+ST_7 : Operation 167 [4/8] (2.43ns)   --->   "%empty = readreq i1 @_ssdm_op_ReadReq.m_axi.p1i256, i256 %gmem_weight_addr, i64 259200" [../gen/Hls_Layers_UpConv.tpp:135]   --->   Operation 167 'readreq' 'empty' <Predicate = true> <Delay = 2.43> <CoreInst = "m_axi">   --->   Core 119 'm_axi' <Latency = 6> <II = 1> <Delay = 1.00> <Adapter> <Opcode : 'read' 'write' 'readreq' 'writereq' 'writeresp'>
+
+State 8 <SV = 7> <Delay = 2.43>
+ST_8 : Operation 168 [3/8] (2.43ns)   --->   "%empty = readreq i1 @_ssdm_op_ReadReq.m_axi.p1i256, i256 %gmem_weight_addr, i64 259200" [../gen/Hls_Layers_UpConv.tpp:135]   --->   Operation 168 'readreq' 'empty' <Predicate = true> <Delay = 2.43> <CoreInst = "m_axi">   --->   Core 119 'm_axi' <Latency = 6> <II = 1> <Delay = 1.00> <Adapter> <Opcode : 'read' 'write' 'readreq' 'writereq' 'writeresp'>
+
+State 9 <SV = 8> <Delay = 2.43>
+ST_9 : Operation 169 [2/8] (2.43ns)   --->   "%empty = readreq i1 @_ssdm_op_ReadReq.m_axi.p1i256, i256 %gmem_weight_addr, i64 259200" [../gen/Hls_Layers_UpConv.tpp:135]   --->   Operation 169 'readreq' 'empty' <Predicate = true> <Delay = 2.43> <CoreInst = "m_axi">   --->   Core 119 'm_axi' <Latency = 6> <II = 1> <Delay = 1.00> <Adapter> <Opcode : 'read' 'write' 'readreq' 'writereq' 'writeresp'>
+
+State 10 <SV = 9> <Delay = 2.43>
+ST_10 : Operation 170 [1/8] (2.43ns)   --->   "%empty = readreq i1 @_ssdm_op_ReadReq.m_axi.p1i256, i256 %gmem_weight_addr, i64 259200" [../gen/Hls_Layers_UpConv.tpp:135]   --->   Operation 170 'readreq' 'empty' <Predicate = true> <Delay = 2.43> <CoreInst = "m_axi">   --->   Core 119 'm_axi' <Latency = 6> <II = 1> <Delay = 1.00> <Adapter> <Opcode : 'read' 'write' 'readreq' 'writereq' 'writeresp'>
+
+State 11 <SV = 10> <Delay = 0.78>
+ST_11 : Operation 171 [1/1] (0.00ns)   --->   "%ho_read = read i5 @_ssdm_op_Read.ap_auto.i5, i5 %ho"   --->   Operation 171 'read' 'ho_read' <Predicate = true> <Delay = 0.00>
+ST_11 : Operation 172 [1/1] (0.00ns)   --->   "%ho_cast = zext i5 %ho_read"   --->   Operation 172 'zext' 'ho_cast' <Predicate = true> <Delay = 0.00>
+ST_11 : Operation 173 [1/1] (0.78ns)   --->   "%add52 = add i6 %ho_cast, i6 1"   --->   Operation 173 'add' 'add52' <Predicate = true> <Delay = 0.78> <CoreInst = "Adder">   --->   Core 1 'Adder' <Latency = 0> <II = 1> <Delay = 0.78> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_11 : Operation 174 [2/2] (0.00ns)   --->   "%call_ln135 = call void @UpConv_Fused_Row<8, 16, 16, 960, 480>_Outline_TILE_LOOP, i256 %gmem_weight, i59 %trunc_ln, i6 %add52, i16 %void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_9, i16 %void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_8, i16 %void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_7, i16 %void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_6, i16 %void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_5, i16 %void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_4, i16 %void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_3, i16 %void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_2, i256 %x_buf, i16 %void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_1, i16 %void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u, i16 %p_ZZ16UpConv_Fused_RowILi8ELi16ELi16ELi960ELi480EEvP7ap_uintILi256EEPKS1_S4_S4_S4_5, i16 %p_ZZ16UpConv_Fused_RowILi8ELi16ELi16ELi960ELi480EEvP7ap_uintILi256EEPKS1_S4_S4_S4_4, i16 %p_ZZ16UpConv_Fused_RowILi8ELi16ELi16ELi960ELi480EEvP7ap_uintILi256EEPKS1_S4_S4_S4_3, i16 %p_ZZ16UpConv_Fused_RowILi8ELi16ELi16ELi960ELi480EEvP7ap_uintILi256EEPKS1_S4_S4_S4_2, i16 %p_ZZ16UpConv_Fused_RowILi8ELi16ELi16ELi960ELi480EEvP7ap_uintILi256EEPKS1_S4_S4_S4_1, i16 %p_ZZ16UpConv_Fused_RowILi8ELi16ELi16ELi960ELi480EEvP7ap_uintILi256EEPKS1_S4_S4_S4" [../gen/Hls_Layers_UpConv.tpp:135]   --->   Operation 174 'call' 'call_ln135' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Generic Core
+
+State 12 <SV = 11> <Delay = 1.97>
+ST_12 : Operation 175 [1/1] (0.00ns)   --->   "%epsilon_read = read i16 @_ssdm_op_Read.ap_auto.half, i16 %epsilon"   --->   Operation 175 'read' 'epsilon_read' <Predicate = true> <Delay = 0.00>
+ST_12 : Operation 176 [1/1] (0.00ns)   --->   "%Y_read = read i64 @_ssdm_op_Read.ap_auto.i64, i64 %Y"   --->   Operation 176 'read' 'Y_read' <Predicate = true> <Delay = 0.00>
+ST_12 : Operation 177 [1/2] (0.78ns)   --->   "%call_ln135 = call void @UpConv_Fused_Row<8, 16, 16, 960, 480>_Outline_TILE_LOOP, i256 %gmem_weight, i59 %trunc_ln, i6 %add52, i16 %void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_9, i16 %void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_8, i16 %void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_7, i16 %void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_6, i16 %void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_5, i16 %void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_4, i16 %void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_3, i16 %void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_2, i256 %x_buf, i16 %void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_1, i16 %void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u, i16 %p_ZZ16UpConv_Fused_RowILi8ELi16ELi16ELi960ELi480EEvP7ap_uintILi256EEPKS1_S4_S4_S4_5, i16 %p_ZZ16UpConv_Fused_RowILi8ELi16ELi16ELi960ELi480EEvP7ap_uintILi256EEPKS1_S4_S4_S4_4, i16 %p_ZZ16UpConv_Fused_RowILi8ELi16ELi16ELi960ELi480EEvP7ap_uintILi256EEPKS1_S4_S4_S4_3, i16 %p_ZZ16UpConv_Fused_RowILi8ELi16ELi16ELi960ELi480EEvP7ap_uintILi256EEPKS1_S4_S4_S4_2, i16 %p_ZZ16UpConv_Fused_RowILi8ELi16ELi16ELi960ELi480EEvP7ap_uintILi256EEPKS1_S4_S4_S4_1, i16 %p_ZZ16UpConv_Fused_RowILi8ELi16ELi16ELi960ELi480EEvP7ap_uintILi256EEPKS1_S4_S4_S4" [../gen/Hls_Layers_UpConv.tpp:135]   --->   Operation 177 'call' 'call_ln135' <Predicate = true> <Delay = 0.78> <CoreType = "Generic">   --->   Generic Core
+ST_12 : Operation 178 [2/2] (1.53ns)   --->   "%conv1 = hptosp i16 %epsilon_read"   --->   Operation 178 'hptosp' 'conv1' <Predicate = true> <Delay = 1.53> <CoreInst = "Half2Float">   --->   Core 68 'Half2Float' <Latency = 1> <II = 1> <Delay = 1.53> <FuncUnit> <Opcode : 'hptosp'> <InPorts = 1> <OutPorts = 1>
+ST_12 : Operation 179 [1/1] (0.00ns)   --->   "%p_shl3 = bitconcatenate i20 @_ssdm_op_BitConcatenate.i20.i5.i15, i5 %ho_read, i15 0" [../gen/Hls_Layers_UpConv.tpp:238]   --->   Operation 179 'bitconcatenate' 'p_shl3' <Predicate = true> <Delay = 0.00>
+ST_12 : Operation 180 [1/1] (0.00ns)   --->   "%tmp_11 = bitconcatenate i16 @_ssdm_op_BitConcatenate.i16.i5.i11, i5 %ho_read, i11 0" [../gen/Hls_Layers_UpConv.tpp:238]   --->   Operation 180 'bitconcatenate' 'tmp_11' <Predicate = true> <Delay = 0.00>
+ST_12 : Operation 181 [1/1] (0.00ns)   --->   "%zext_ln238 = zext i16 %tmp_11" [../gen/Hls_Layers_UpConv.tpp:238]   --->   Operation 181 'zext' 'zext_ln238' <Predicate = true> <Delay = 0.00>
+ST_12 : Operation 182 [1/1] (0.89ns)   --->   "%sub_ln238 = sub i20 %p_shl3, i20 %zext_ln238" [../gen/Hls_Layers_UpConv.tpp:238]   --->   Operation 182 'sub' 'sub_ln238' <Predicate = true> <Delay = 0.89> <CoreInst = "Adder">   --->   Core 1 'Adder' <Latency = 0> <II = 1> <Delay = 0.89> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_12 : Operation 183 [1/1] (0.00ns)   --->   "%zext_ln238_1 = zext i20 %sub_ln238" [../gen/Hls_Layers_UpConv.tpp:238]   --->   Operation 183 'zext' 'zext_ln238_1' <Predicate = true> <Delay = 0.00>
+ST_12 : Operation 184 [1/1] (1.08ns)   --->   "%add_ln238 = add i64 %zext_ln238_1, i64 %Y_read" [../gen/Hls_Layers_UpConv.tpp:238]   --->   Operation 184 'add' 'add_ln238' <Predicate = true> <Delay = 1.08> <CoreInst = "Adder">   --->   Core 1 'Adder' <Latency = 0> <II = 1> <Delay = 1.08> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_12 : Operation 185 [1/1] (0.00ns)   --->   "%trunc_ln3 = partselect i59 @_ssdm_op_PartSelect.i59.i64.i32.i32, i64 %add_ln238, i32 5, i32 63" [../gen/Hls_Layers_UpConv.tpp:238]   --->   Operation 185 'partselect' 'trunc_ln3' <Predicate = true> <Delay = 0.00>
+
+State 13 <SV = 12> <Delay = 2.43>
+ST_13 : Operation 186 [1/1] (0.00ns)   --->   "%specmemcore_ln0 = specmemcore void @_ssdm_op_SpecMemCore, i256 %x_buf, i64 666, i64 31, i64 18446744073709551615"   --->   Operation 186 'specmemcore' 'specmemcore_ln0' <Predicate = true> <Delay = 0.00>
+ST_13 : Operation 187 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i256 %gmem_out, void @empty_19, i32 0, i32 0, void @empty_5, i32 0, i32 0, void @empty_21, void @empty_7, void @empty_5, i32 16, i32 16, i32 16, i32 64, void @empty_5, void @empty_5, i32 4294967295, i32 0, i32 0"   --->   Operation 187 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
+ST_13 : Operation 188 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i256 %gmem_param, void @empty_19, i32 0, i32 0, void @empty_5, i32 0, i32 0, void @empty_9, void @empty_7, void @empty_5, i32 16, i32 16, i32 64, i32 16, void @empty_5, void @empty_5, i32 4294967295, i32 0, i32 0"   --->   Operation 188 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
+ST_13 : Operation 189 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i256 %gmem_weight, void @empty_19, i32 0, i32 0, void @empty_5, i32 0, i32 0, void @empty_8, void @empty_7, void @empty_5, i32 16, i32 16, i32 64, i32 16, void @empty_5, void @empty_5, i32 4294967295, i32 0, i32 0"   --->   Operation 189 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
+ST_13 : Operation 190 [1/1] (0.00ns)   --->   "%specmemcore_ln109 = specmemcore void @_ssdm_op_SpecMemCore, i16 %p_ZZ16UpConv_Fused_RowILi8ELi16ELi16ELi960ELi480EEvP7ap_uintILi256EEPKS1_S4_S4_S4, i64 666, i64 31, i64 18446744073709551615" [../gen/Hls_Layers_UpConv.tpp:109]   --->   Operation 190 'specmemcore' 'specmemcore_ln109' <Predicate = true> <Delay = 0.00>
+ST_13 : Operation 191 [1/1] (0.00ns)   --->   "%specmemcore_ln109 = specmemcore void @_ssdm_op_SpecMemCore, i16 %p_ZZ16UpConv_Fused_RowILi8ELi16ELi16ELi960ELi480EEvP7ap_uintILi256EEPKS1_S4_S4_S4_1, i64 666, i64 31, i64 18446744073709551615" [../gen/Hls_Layers_UpConv.tpp:109]   --->   Operation 191 'specmemcore' 'specmemcore_ln109' <Predicate = true> <Delay = 0.00>
+ST_13 : Operation 192 [1/1] (0.00ns)   --->   "%specmemcore_ln109 = specmemcore void @_ssdm_op_SpecMemCore, i16 %p_ZZ16UpConv_Fused_RowILi8ELi16ELi16ELi960ELi480EEvP7ap_uintILi256EEPKS1_S4_S4_S4_2, i64 666, i64 31, i64 18446744073709551615" [../gen/Hls_Layers_UpConv.tpp:109]   --->   Operation 192 'specmemcore' 'specmemcore_ln109' <Predicate = true> <Delay = 0.00>
+ST_13 : Operation 193 [1/1] (0.00ns)   --->   "%specmemcore_ln109 = specmemcore void @_ssdm_op_SpecMemCore, i16 %p_ZZ16UpConv_Fused_RowILi8ELi16ELi16ELi960ELi480EEvP7ap_uintILi256EEPKS1_S4_S4_S4_3, i64 666, i64 31, i64 18446744073709551615" [../gen/Hls_Layers_UpConv.tpp:109]   --->   Operation 193 'specmemcore' 'specmemcore_ln109' <Predicate = true> <Delay = 0.00>
+ST_13 : Operation 194 [1/1] (0.00ns)   --->   "%specmemcore_ln109 = specmemcore void @_ssdm_op_SpecMemCore, i16 %p_ZZ16UpConv_Fused_RowILi8ELi16ELi16ELi960ELi480EEvP7ap_uintILi256EEPKS1_S4_S4_S4_4, i64 666, i64 31, i64 18446744073709551615" [../gen/Hls_Layers_UpConv.tpp:109]   --->   Operation 194 'specmemcore' 'specmemcore_ln109' <Predicate = true> <Delay = 0.00>
+ST_13 : Operation 195 [1/1] (0.00ns)   --->   "%specmemcore_ln109 = specmemcore void @_ssdm_op_SpecMemCore, i16 %p_ZZ16UpConv_Fused_RowILi8ELi16ELi16ELi960ELi480EEvP7ap_uintILi256EEPKS1_S4_S4_S4_5, i64 666, i64 31, i64 18446744073709551615" [../gen/Hls_Layers_UpConv.tpp:109]   --->   Operation 195 'specmemcore' 'specmemcore_ln109' <Predicate = true> <Delay = 0.00>
+ST_13 : Operation 196 [1/1] (0.00ns)   --->   "%specmemcore_ln109 = specmemcore void @_ssdm_op_SpecMemCore, i16 %void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u, i64 666, i64 31, i64 18446744073709551615" [../gen/Hls_Layers_UpConv.tpp:109]   --->   Operation 196 'specmemcore' 'specmemcore_ln109' <Predicate = true> <Delay = 0.00>
+ST_13 : Operation 197 [1/1] (0.00ns)   --->   "%specmemcore_ln109 = specmemcore void @_ssdm_op_SpecMemCore, i16 %void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_1, i64 666, i64 31, i64 18446744073709551615" [../gen/Hls_Layers_UpConv.tpp:109]   --->   Operation 197 'specmemcore' 'specmemcore_ln109' <Predicate = true> <Delay = 0.00>
+ST_13 : Operation 198 [1/1] (0.00ns)   --->   "%specmemcore_ln109 = specmemcore void @_ssdm_op_SpecMemCore, i16 %void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_2, i64 666, i64 31, i64 18446744073709551615" [../gen/Hls_Layers_UpConv.tpp:109]   --->   Operation 198 'specmemcore' 'specmemcore_ln109' <Predicate = true> <Delay = 0.00>
+ST_13 : Operation 199 [1/1] (0.00ns)   --->   "%specmemcore_ln109 = specmemcore void @_ssdm_op_SpecMemCore, i16 %void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_3, i64 666, i64 31, i64 18446744073709551615" [../gen/Hls_Layers_UpConv.tpp:109]   --->   Operation 199 'specmemcore' 'specmemcore_ln109' <Predicate = true> <Delay = 0.00>
+ST_13 : Operation 200 [1/1] (0.00ns)   --->   "%specmemcore_ln109 = specmemcore void @_ssdm_op_SpecMemCore, i16 %void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_4, i64 666, i64 31, i64 18446744073709551615" [../gen/Hls_Layers_UpConv.tpp:109]   --->   Operation 200 'specmemcore' 'specmemcore_ln109' <Predicate = true> <Delay = 0.00>
+ST_13 : Operation 201 [1/1] (0.00ns)   --->   "%specmemcore_ln109 = specmemcore void @_ssdm_op_SpecMemCore, i16 %void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_5, i64 666, i64 31, i64 18446744073709551615" [../gen/Hls_Layers_UpConv.tpp:109]   --->   Operation 201 'specmemcore' 'specmemcore_ln109' <Predicate = true> <Delay = 0.00>
+ST_13 : Operation 202 [1/1] (0.00ns)   --->   "%specmemcore_ln109 = specmemcore void @_ssdm_op_SpecMemCore, i16 %void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_6, i64 666, i64 31, i64 18446744073709551615" [../gen/Hls_Layers_UpConv.tpp:109]   --->   Operation 202 'specmemcore' 'specmemcore_ln109' <Predicate = true> <Delay = 0.00>
+ST_13 : Operation 203 [1/1] (0.00ns)   --->   "%specmemcore_ln109 = specmemcore void @_ssdm_op_SpecMemCore, i16 %void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_7, i64 666, i64 31, i64 18446744073709551615" [../gen/Hls_Layers_UpConv.tpp:109]   --->   Operation 203 'specmemcore' 'specmemcore_ln109' <Predicate = true> <Delay = 0.00>
+ST_13 : Operation 204 [1/1] (0.00ns)   --->   "%specmemcore_ln109 = specmemcore void @_ssdm_op_SpecMemCore, i16 %void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_8, i64 666, i64 31, i64 18446744073709551615" [../gen/Hls_Layers_UpConv.tpp:109]   --->   Operation 204 'specmemcore' 'specmemcore_ln109' <Predicate = true> <Delay = 0.00>
+ST_13 : Operation 205 [1/1] (0.00ns)   --->   "%specmemcore_ln109 = specmemcore void @_ssdm_op_SpecMemCore, i16 %void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_9, i64 666, i64 31, i64 18446744073709551615" [../gen/Hls_Layers_UpConv.tpp:109]   --->   Operation 205 'specmemcore' 'specmemcore_ln109' <Predicate = true> <Delay = 0.00>
+ST_13 : Operation 206 [1/1] (0.00ns)   --->   "%specmemcore_ln224 = specmemcore void @_ssdm_op_SpecMemCore, i256 %b_buf, i64 666, i64 30, i64 18446744073709551615" [../gen/Hls_Layers_UpConv.tpp:224]   --->   Operation 206 'specmemcore' 'specmemcore_ln224' <Predicate = true> <Delay = 0.00>
+ST_13 : Operation 207 [1/1] (0.00ns)   --->   "%specmemcore_ln225 = specmemcore void @_ssdm_op_SpecMemCore, i256 %g_buf, i64 666, i64 30, i64 18446744073709551615" [../gen/Hls_Layers_UpConv.tpp:225]   --->   Operation 207 'specmemcore' 'specmemcore_ln225' <Predicate = true> <Delay = 0.00>
+ST_13 : Operation 208 [1/1] (0.00ns)   --->   "%specmemcore_ln226 = specmemcore void @_ssdm_op_SpecMemCore, i256 %be_buf, i64 666, i64 30, i64 18446744073709551615" [../gen/Hls_Layers_UpConv.tpp:226]   --->   Operation 208 'specmemcore' 'specmemcore_ln226' <Predicate = true> <Delay = 0.00>
+ST_13 : Operation 209 [1/2] (1.53ns)   --->   "%conv1 = hptosp i16 %epsilon_read"   --->   Operation 209 'hptosp' 'conv1' <Predicate = true> <Delay = 1.53> <CoreInst = "Half2Float">   --->   Core 68 'Half2Float' <Latency = 1> <II = 1> <Delay = 1.53> <FuncUnit> <Opcode : 'hptosp'> <InPorts = 1> <OutPorts = 1>
+ST_13 : Operation 210 [1/1] (0.00ns)   --->   "%sext_ln238 = sext i59 %trunc_ln3" [../gen/Hls_Layers_UpConv.tpp:238]   --->   Operation 210 'sext' 'sext_ln238' <Predicate = true> <Delay = 0.00>
+ST_13 : Operation 211 [1/1] (0.00ns)   --->   "%gmem_out_addr = getelementptr i256 %gmem_out, i64 %sext_ln238" [../gen/Hls_Layers_UpConv.tpp:238]   --->   Operation 211 'getelementptr' 'gmem_out_addr' <Predicate = true> <Delay = 0.00>
+ST_13 : Operation 212 [1/1] (2.43ns)   --->   "%empty_184 = writereq i1 @_ssdm_op_WriteReq.m_axi.p1i256, i256 %gmem_out_addr, i64 960" [../gen/Hls_Layers_UpConv.tpp:238]   --->   Operation 212 'writereq' 'empty_184' <Predicate = true> <Delay = 2.43> <CoreInst = "m_axi">   --->   Core 119 'm_axi' <Latency = 9> <II = 1> <Delay = 1.00> <Adapter> <Opcode : 'read' 'write' 'readreq' 'writereq' 'writeresp'>
+ST_13 : Operation 213 [1/1] (0.00ns)   --->   "%br_ln238 = br void %BIAS_STATS" [../gen/Hls_Layers_UpConv.tpp:238]   --->   Operation 213 'br' 'br_ln238' <Predicate = true> <Delay = 0.00>
+
+State 14 <SV = 13> <Delay = 1.20>
+ST_14 : Operation 214 [1/1] (0.00ns)   --->   "%wo = load i6 %wo_1" [../gen/Hls_Layers_UpConv.tpp:246]   --->   Operation 214 'load' 'wo' <Predicate = true> <Delay = 0.00>
+ST_14 : Operation 215 [1/1] (0.78ns)   --->   "%icmp_ln238 = icmp_eq  i6 %wo, i6 32" [../gen/Hls_Layers_UpConv.tpp:238]   --->   Operation 215 'icmp' 'icmp_ln238' <Predicate = true> <Delay = 0.78> <CoreInst = "Cmp">   --->   Core 9 'Cmp' <Latency = 0> <II = 1> <Delay = 0.78> <FuncUnit> <Opcode : 'seteq' 'setne' 'setle' 'setge' 'setlt' 'setgt'> <InPorts = 2> <OutPorts = 1>
+ST_14 : Operation 216 [1/1] (0.78ns)   --->   "%add_ln238_1 = add i6 %wo, i6 1" [../gen/Hls_Layers_UpConv.tpp:238]   --->   Operation 216 'add' 'add_ln238_1' <Predicate = true> <Delay = 0.78> <CoreInst = "Adder">   --->   Core 1 'Adder' <Latency = 0> <II = 1> <Delay = 0.78> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_14 : Operation 217 [1/1] (0.00ns)   --->   "%br_ln238 = br i1 %icmp_ln238, void %BIAS_STATS.split, void %for.end350" [../gen/Hls_Layers_UpConv.tpp:238]   --->   Operation 217 'br' 'br_ln238' <Predicate = true> <Delay = 0.00>
+ST_14 : Operation 218 [1/1] (0.00ns)   --->   "%trunc_ln246 = trunc i6 %wo" [../gen/Hls_Layers_UpConv.tpp:246]   --->   Operation 218 'trunc' 'trunc_ln246' <Predicate = (!icmp_ln238)> <Delay = 0.00>
+ST_14 : Operation 219 [1/1] (0.00ns)   --->   "%p_shl = bitconcatenate i10 @_ssdm_op_BitConcatenate.i10.i5.i5, i5 %trunc_ln246, i5 0" [../gen/Hls_Layers_UpConv.tpp:246]   --->   Operation 219 'bitconcatenate' 'p_shl' <Predicate = (!icmp_ln238)> <Delay = 0.00>
+ST_14 : Operation 220 [1/1] (0.00ns)   --->   "%tmp_12 = bitconcatenate i7 @_ssdm_op_BitConcatenate.i7.i6.i1, i6 %wo, i1 0" [../gen/Hls_Layers_UpConv.tpp:246]   --->   Operation 220 'bitconcatenate' 'tmp_12' <Predicate = (!icmp_ln238)> <Delay = 0.00>
+ST_14 : Operation 221 [1/1] (0.00ns)   --->   "%zext_ln246 = zext i7 %tmp_12" [../gen/Hls_Layers_UpConv.tpp:246]   --->   Operation 221 'zext' 'zext_ln246' <Predicate = (!icmp_ln238)> <Delay = 0.00>
+ST_14 : Operation 222 [1/1] (0.78ns)   --->   "%sub_ln246 = sub i10 %p_shl, i10 %zext_ln246" [../gen/Hls_Layers_UpConv.tpp:246]   --->   Operation 222 'sub' 'sub_ln246' <Predicate = (!icmp_ln238)> <Delay = 0.78> <CoreInst = "Adder">   --->   Core 1 'Adder' <Latency = 0> <II = 1> <Delay = 0.78> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_14 : Operation 223 [1/1] (0.42ns)   --->   "%store_ln238 = store i6 %add_ln238_1, i6 %wo_1" [../gen/Hls_Layers_UpConv.tpp:238]   --->   Operation 223 'store' 'store_ln238' <Predicate = (!icmp_ln238)> <Delay = 0.42>
+
+State 15 <SV = 14> <Delay = 2.02>
+ST_15 : Operation 224 [2/2] (2.02ns)   --->   "%call_ln246 = call void @UpConv_Fused_Row<8, 16, 16, 960, 480>_Pipeline_BIAS_STATS, i10 %sub_ln246, i256 %b_buf, i32 %sumsq_loc, i32 %sum_loc, i16 %void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_9, i16 %void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_8, i16 %void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_7, i16 %void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_6, i16 %void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_5, i16 %void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_4, i16 %void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_3, i16 %void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_2, i16 %void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_1, i16 %void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u, i16 %p_ZZ16UpConv_Fused_RowILi8ELi16ELi16ELi960ELi480EEvP7ap_uintILi256EEPKS1_S4_S4_S4_5, i16 %p_ZZ16UpConv_Fused_RowILi8ELi16ELi16ELi960ELi480EEvP7ap_uintILi256EEPKS1_S4_S4_S4_4, i16 %p_ZZ16UpConv_Fused_RowILi8ELi16ELi16ELi960ELi480EEvP7ap_uintILi256EEPKS1_S4_S4_S4_3, i16 %p_ZZ16UpConv_Fused_RowILi8ELi16ELi16ELi960ELi480EEvP7ap_uintILi256EEPKS1_S4_S4_S4_2, i16 %p_ZZ16UpConv_Fused_RowILi8ELi16ELi16ELi960ELi480EEvP7ap_uintILi256EEPKS1_S4_S4_S4_1, i16 %p_ZZ16UpConv_Fused_RowILi8ELi16ELi16ELi960ELi480EEvP7ap_uintILi256EEPKS1_S4_S4_S4" [../gen/Hls_Layers_UpConv.tpp:246]   --->   Operation 224 'call' 'call_ln246' <Predicate = true> <Delay = 2.02> <CoreType = "Generic">   --->   Generic Core
+
+State 16 <SV = 15> <Delay = 0.00>
+ST_16 : Operation 225 [1/2] (0.00ns)   --->   "%call_ln246 = call void @UpConv_Fused_Row<8, 16, 16, 960, 480>_Pipeline_BIAS_STATS, i10 %sub_ln246, i256 %b_buf, i32 %sumsq_loc, i32 %sum_loc, i16 %void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_9, i16 %void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_8, i16 %void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_7, i16 %void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_6, i16 %void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_5, i16 %void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_4, i16 %void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_3, i16 %void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_2, i16 %void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_1, i16 %void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u, i16 %p_ZZ16UpConv_Fused_RowILi8ELi16ELi16ELi960ELi480EEvP7ap_uintILi256EEPKS1_S4_S4_S4_5, i16 %p_ZZ16UpConv_Fused_RowILi8ELi16ELi16ELi960ELi480EEvP7ap_uintILi256EEPKS1_S4_S4_S4_4, i16 %p_ZZ16UpConv_Fused_RowILi8ELi16ELi16ELi960ELi480EEvP7ap_uintILi256EEPKS1_S4_S4_S4_3, i16 %p_ZZ16UpConv_Fused_RowILi8ELi16ELi16ELi960ELi480EEvP7ap_uintILi256EEPKS1_S4_S4_S4_2, i16 %p_ZZ16UpConv_Fused_RowILi8ELi16ELi16ELi960ELi480EEvP7ap_uintILi256EEPKS1_S4_S4_S4_1, i16 %p_ZZ16UpConv_Fused_RowILi8ELi16ELi16ELi960ELi480EEvP7ap_uintILi256EEPKS1_S4_S4_S4" [../gen/Hls_Layers_UpConv.tpp:246]   --->   Operation 225 'call' 'call_ln246' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Generic Core
+
+State 17 <SV = 16> <Delay = 2.23>
+ST_17 : Operation 226 [1/1] (0.00ns)   --->   "%sum_loc_load = load i32 %sum_loc"   --->   Operation 226 'load' 'sum_loc_load' <Predicate = true> <Delay = 0.00>
+ST_17 : Operation 227 [30/30] (2.23ns)   --->   "%mean = fdiv i32 %sum_loc_load, i32 480" [../gen/Hls_Layers_UpConv.tpp:253]   --->   Operation 227 'fdiv' 'mean' <Predicate = true> <Delay = 2.23> <CoreInst = "FDiv">   --->   Core 20 'FDiv' <Latency = 29> <II = 1> <Delay = 2.23> <FuncUnit> <Opcode : 'fdiv' 'frem'> <InPorts = 2> <OutPorts = 1>
+
+State 18 <SV = 17> <Delay = 2.23>
+ST_18 : Operation 228 [29/30] (2.23ns)   --->   "%mean = fdiv i32 %sum_loc_load, i32 480" [../gen/Hls_Layers_UpConv.tpp:253]   --->   Operation 228 'fdiv' 'mean' <Predicate = true> <Delay = 2.23> <CoreInst = "FDiv">   --->   Core 20 'FDiv' <Latency = 29> <II = 1> <Delay = 2.23> <FuncUnit> <Opcode : 'fdiv' 'frem'> <InPorts = 2> <OutPorts = 1>
+
+State 19 <SV = 18> <Delay = 2.23>
+ST_19 : Operation 229 [28/30] (2.23ns)   --->   "%mean = fdiv i32 %sum_loc_load, i32 480" [../gen/Hls_Layers_UpConv.tpp:253]   --->   Operation 229 'fdiv' 'mean' <Predicate = true> <Delay = 2.23> <CoreInst = "FDiv">   --->   Core 20 'FDiv' <Latency = 29> <II = 1> <Delay = 2.23> <FuncUnit> <Opcode : 'fdiv' 'frem'> <InPorts = 2> <OutPorts = 1>
+
+State 20 <SV = 19> <Delay = 2.23>
+ST_20 : Operation 230 [27/30] (2.23ns)   --->   "%mean = fdiv i32 %sum_loc_load, i32 480" [../gen/Hls_Layers_UpConv.tpp:253]   --->   Operation 230 'fdiv' 'mean' <Predicate = true> <Delay = 2.23> <CoreInst = "FDiv">   --->   Core 20 'FDiv' <Latency = 29> <II = 1> <Delay = 2.23> <FuncUnit> <Opcode : 'fdiv' 'frem'> <InPorts = 2> <OutPorts = 1>
+
+State 21 <SV = 20> <Delay = 2.23>
+ST_21 : Operation 231 [26/30] (2.23ns)   --->   "%mean = fdiv i32 %sum_loc_load, i32 480" [../gen/Hls_Layers_UpConv.tpp:253]   --->   Operation 231 'fdiv' 'mean' <Predicate = true> <Delay = 2.23> <CoreInst = "FDiv">   --->   Core 20 'FDiv' <Latency = 29> <II = 1> <Delay = 2.23> <FuncUnit> <Opcode : 'fdiv' 'frem'> <InPorts = 2> <OutPorts = 1>
+
+State 22 <SV = 21> <Delay = 2.23>
+ST_22 : Operation 232 [25/30] (2.23ns)   --->   "%mean = fdiv i32 %sum_loc_load, i32 480" [../gen/Hls_Layers_UpConv.tpp:253]   --->   Operation 232 'fdiv' 'mean' <Predicate = true> <Delay = 2.23> <CoreInst = "FDiv">   --->   Core 20 'FDiv' <Latency = 29> <II = 1> <Delay = 2.23> <FuncUnit> <Opcode : 'fdiv' 'frem'> <InPorts = 2> <OutPorts = 1>
+
+State 23 <SV = 22> <Delay = 2.23>
+ST_23 : Operation 233 [24/30] (2.23ns)   --->   "%mean = fdiv i32 %sum_loc_load, i32 480" [../gen/Hls_Layers_UpConv.tpp:253]   --->   Operation 233 'fdiv' 'mean' <Predicate = true> <Delay = 2.23> <CoreInst = "FDiv">   --->   Core 20 'FDiv' <Latency = 29> <II = 1> <Delay = 2.23> <FuncUnit> <Opcode : 'fdiv' 'frem'> <InPorts = 2> <OutPorts = 1>
+
+State 24 <SV = 23> <Delay = 2.23>
+ST_24 : Operation 234 [1/1] (0.00ns)   --->   "%sumsq_loc_load = load i32 %sumsq_loc"   --->   Operation 234 'load' 'sumsq_loc_load' <Predicate = true> <Delay = 0.00>
+ST_24 : Operation 235 [23/30] (2.23ns)   --->   "%mean = fdiv i32 %sum_loc_load, i32 480" [../gen/Hls_Layers_UpConv.tpp:253]   --->   Operation 235 'fdiv' 'mean' <Predicate = true> <Delay = 2.23> <CoreInst = "FDiv">   --->   Core 20 'FDiv' <Latency = 29> <II = 1> <Delay = 2.23> <FuncUnit> <Opcode : 'fdiv' 'frem'> <InPorts = 2> <OutPorts = 1>
+ST_24 : Operation 236 [30/30] (2.23ns)   --->   "%div = fdiv i32 %sumsq_loc_load, i32 480" [../gen/Hls_Layers_UpConv.tpp:254]   --->   Operation 236 'fdiv' 'div' <Predicate = true> <Delay = 2.23> <CoreInst = "FDiv">   --->   Core 20 'FDiv' <Latency = 29> <II = 1> <Delay = 2.23> <FuncUnit> <Opcode : 'fdiv' 'frem'> <InPorts = 2> <OutPorts = 1>
+
+State 25 <SV = 24> <Delay = 2.23>
+ST_25 : Operation 237 [22/30] (2.23ns)   --->   "%mean = fdiv i32 %sum_loc_load, i32 480" [../gen/Hls_Layers_UpConv.tpp:253]   --->   Operation 237 'fdiv' 'mean' <Predicate = true> <Delay = 2.23> <CoreInst = "FDiv">   --->   Core 20 'FDiv' <Latency = 29> <II = 1> <Delay = 2.23> <FuncUnit> <Opcode : 'fdiv' 'frem'> <InPorts = 2> <OutPorts = 1>
+ST_25 : Operation 238 [29/30] (2.23ns)   --->   "%div = fdiv i32 %sumsq_loc_load, i32 480" [../gen/Hls_Layers_UpConv.tpp:254]   --->   Operation 238 'fdiv' 'div' <Predicate = true> <Delay = 2.23> <CoreInst = "FDiv">   --->   Core 20 'FDiv' <Latency = 29> <II = 1> <Delay = 2.23> <FuncUnit> <Opcode : 'fdiv' 'frem'> <InPorts = 2> <OutPorts = 1>
+
+State 26 <SV = 25> <Delay = 2.23>
+ST_26 : Operation 239 [21/30] (2.23ns)   --->   "%mean = fdiv i32 %sum_loc_load, i32 480" [../gen/Hls_Layers_UpConv.tpp:253]   --->   Operation 239 'fdiv' 'mean' <Predicate = true> <Delay = 2.23> <CoreInst = "FDiv">   --->   Core 20 'FDiv' <Latency = 29> <II = 1> <Delay = 2.23> <FuncUnit> <Opcode : 'fdiv' 'frem'> <InPorts = 2> <OutPorts = 1>
+ST_26 : Operation 240 [28/30] (2.23ns)   --->   "%div = fdiv i32 %sumsq_loc_load, i32 480" [../gen/Hls_Layers_UpConv.tpp:254]   --->   Operation 240 'fdiv' 'div' <Predicate = true> <Delay = 2.23> <CoreInst = "FDiv">   --->   Core 20 'FDiv' <Latency = 29> <II = 1> <Delay = 2.23> <FuncUnit> <Opcode : 'fdiv' 'frem'> <InPorts = 2> <OutPorts = 1>
+
+State 27 <SV = 26> <Delay = 2.23>
+ST_27 : Operation 241 [20/30] (2.23ns)   --->   "%mean = fdiv i32 %sum_loc_load, i32 480" [../gen/Hls_Layers_UpConv.tpp:253]   --->   Operation 241 'fdiv' 'mean' <Predicate = true> <Delay = 2.23> <CoreInst = "FDiv">   --->   Core 20 'FDiv' <Latency = 29> <II = 1> <Delay = 2.23> <FuncUnit> <Opcode : 'fdiv' 'frem'> <InPorts = 2> <OutPorts = 1>
+ST_27 : Operation 242 [27/30] (2.23ns)   --->   "%div = fdiv i32 %sumsq_loc_load, i32 480" [../gen/Hls_Layers_UpConv.tpp:254]   --->   Operation 242 'fdiv' 'div' <Predicate = true> <Delay = 2.23> <CoreInst = "FDiv">   --->   Core 20 'FDiv' <Latency = 29> <II = 1> <Delay = 2.23> <FuncUnit> <Opcode : 'fdiv' 'frem'> <InPorts = 2> <OutPorts = 1>
+
+State 28 <SV = 27> <Delay = 2.23>
+ST_28 : Operation 243 [19/30] (2.23ns)   --->   "%mean = fdiv i32 %sum_loc_load, i32 480" [../gen/Hls_Layers_UpConv.tpp:253]   --->   Operation 243 'fdiv' 'mean' <Predicate = true> <Delay = 2.23> <CoreInst = "FDiv">   --->   Core 20 'FDiv' <Latency = 29> <II = 1> <Delay = 2.23> <FuncUnit> <Opcode : 'fdiv' 'frem'> <InPorts = 2> <OutPorts = 1>
+ST_28 : Operation 244 [26/30] (2.23ns)   --->   "%div = fdiv i32 %sumsq_loc_load, i32 480" [../gen/Hls_Layers_UpConv.tpp:254]   --->   Operation 244 'fdiv' 'div' <Predicate = true> <Delay = 2.23> <CoreInst = "FDiv">   --->   Core 20 'FDiv' <Latency = 29> <II = 1> <Delay = 2.23> <FuncUnit> <Opcode : 'fdiv' 'frem'> <InPorts = 2> <OutPorts = 1>
+
+State 29 <SV = 28> <Delay = 2.23>
+ST_29 : Operation 245 [18/30] (2.23ns)   --->   "%mean = fdiv i32 %sum_loc_load, i32 480" [../gen/Hls_Layers_UpConv.tpp:253]   --->   Operation 245 'fdiv' 'mean' <Predicate = true> <Delay = 2.23> <CoreInst = "FDiv">   --->   Core 20 'FDiv' <Latency = 29> <II = 1> <Delay = 2.23> <FuncUnit> <Opcode : 'fdiv' 'frem'> <InPorts = 2> <OutPorts = 1>
+ST_29 : Operation 246 [25/30] (2.23ns)   --->   "%div = fdiv i32 %sumsq_loc_load, i32 480" [../gen/Hls_Layers_UpConv.tpp:254]   --->   Operation 246 'fdiv' 'div' <Predicate = true> <Delay = 2.23> <CoreInst = "FDiv">   --->   Core 20 'FDiv' <Latency = 29> <II = 1> <Delay = 2.23> <FuncUnit> <Opcode : 'fdiv' 'frem'> <InPorts = 2> <OutPorts = 1>
+
+State 30 <SV = 29> <Delay = 2.23>
+ST_30 : Operation 247 [17/30] (2.23ns)   --->   "%mean = fdiv i32 %sum_loc_load, i32 480" [../gen/Hls_Layers_UpConv.tpp:253]   --->   Operation 247 'fdiv' 'mean' <Predicate = true> <Delay = 2.23> <CoreInst = "FDiv">   --->   Core 20 'FDiv' <Latency = 29> <II = 1> <Delay = 2.23> <FuncUnit> <Opcode : 'fdiv' 'frem'> <InPorts = 2> <OutPorts = 1>
+ST_30 : Operation 248 [24/30] (2.23ns)   --->   "%div = fdiv i32 %sumsq_loc_load, i32 480" [../gen/Hls_Layers_UpConv.tpp:254]   --->   Operation 248 'fdiv' 'div' <Predicate = true> <Delay = 2.23> <CoreInst = "FDiv">   --->   Core 20 'FDiv' <Latency = 29> <II = 1> <Delay = 2.23> <FuncUnit> <Opcode : 'fdiv' 'frem'> <InPorts = 2> <OutPorts = 1>
+
+State 31 <SV = 30> <Delay = 2.23>
+ST_31 : Operation 249 [16/30] (2.23ns)   --->   "%mean = fdiv i32 %sum_loc_load, i32 480" [../gen/Hls_Layers_UpConv.tpp:253]   --->   Operation 249 'fdiv' 'mean' <Predicate = true> <Delay = 2.23> <CoreInst = "FDiv">   --->   Core 20 'FDiv' <Latency = 29> <II = 1> <Delay = 2.23> <FuncUnit> <Opcode : 'fdiv' 'frem'> <InPorts = 2> <OutPorts = 1>
+ST_31 : Operation 250 [23/30] (2.23ns)   --->   "%div = fdiv i32 %sumsq_loc_load, i32 480" [../gen/Hls_Layers_UpConv.tpp:254]   --->   Operation 250 'fdiv' 'div' <Predicate = true> <Delay = 2.23> <CoreInst = "FDiv">   --->   Core 20 'FDiv' <Latency = 29> <II = 1> <Delay = 2.23> <FuncUnit> <Opcode : 'fdiv' 'frem'> <InPorts = 2> <OutPorts = 1>
+
+State 32 <SV = 31> <Delay = 2.23>
+ST_32 : Operation 251 [15/30] (2.23ns)   --->   "%mean = fdiv i32 %sum_loc_load, i32 480" [../gen/Hls_Layers_UpConv.tpp:253]   --->   Operation 251 'fdiv' 'mean' <Predicate = true> <Delay = 2.23> <CoreInst = "FDiv">   --->   Core 20 'FDiv' <Latency = 29> <II = 1> <Delay = 2.23> <FuncUnit> <Opcode : 'fdiv' 'frem'> <InPorts = 2> <OutPorts = 1>
+ST_32 : Operation 252 [22/30] (2.23ns)   --->   "%div = fdiv i32 %sumsq_loc_load, i32 480" [../gen/Hls_Layers_UpConv.tpp:254]   --->   Operation 252 'fdiv' 'div' <Predicate = true> <Delay = 2.23> <CoreInst = "FDiv">   --->   Core 20 'FDiv' <Latency = 29> <II = 1> <Delay = 2.23> <FuncUnit> <Opcode : 'fdiv' 'frem'> <InPorts = 2> <OutPorts = 1>
+
+State 33 <SV = 32> <Delay = 2.23>
+ST_33 : Operation 253 [14/30] (2.23ns)   --->   "%mean = fdiv i32 %sum_loc_load, i32 480" [../gen/Hls_Layers_UpConv.tpp:253]   --->   Operation 253 'fdiv' 'mean' <Predicate = true> <Delay = 2.23> <CoreInst = "FDiv">   --->   Core 20 'FDiv' <Latency = 29> <II = 1> <Delay = 2.23> <FuncUnit> <Opcode : 'fdiv' 'frem'> <InPorts = 2> <OutPorts = 1>
+ST_33 : Operation 254 [21/30] (2.23ns)   --->   "%div = fdiv i32 %sumsq_loc_load, i32 480" [../gen/Hls_Layers_UpConv.tpp:254]   --->   Operation 254 'fdiv' 'div' <Predicate = true> <Delay = 2.23> <CoreInst = "FDiv">   --->   Core 20 'FDiv' <Latency = 29> <II = 1> <Delay = 2.23> <FuncUnit> <Opcode : 'fdiv' 'frem'> <InPorts = 2> <OutPorts = 1>
+
+State 34 <SV = 33> <Delay = 2.23>
+ST_34 : Operation 255 [13/30] (2.23ns)   --->   "%mean = fdiv i32 %sum_loc_load, i32 480" [../gen/Hls_Layers_UpConv.tpp:253]   --->   Operation 255 'fdiv' 'mean' <Predicate = true> <Delay = 2.23> <CoreInst = "FDiv">   --->   Core 20 'FDiv' <Latency = 29> <II = 1> <Delay = 2.23> <FuncUnit> <Opcode : 'fdiv' 'frem'> <InPorts = 2> <OutPorts = 1>
+ST_34 : Operation 256 [20/30] (2.23ns)   --->   "%div = fdiv i32 %sumsq_loc_load, i32 480" [../gen/Hls_Layers_UpConv.tpp:254]   --->   Operation 256 'fdiv' 'div' <Predicate = true> <Delay = 2.23> <CoreInst = "FDiv">   --->   Core 20 'FDiv' <Latency = 29> <II = 1> <Delay = 2.23> <FuncUnit> <Opcode : 'fdiv' 'frem'> <InPorts = 2> <OutPorts = 1>
+
+State 35 <SV = 34> <Delay = 2.23>
+ST_35 : Operation 257 [12/30] (2.23ns)   --->   "%mean = fdiv i32 %sum_loc_load, i32 480" [../gen/Hls_Layers_UpConv.tpp:253]   --->   Operation 257 'fdiv' 'mean' <Predicate = true> <Delay = 2.23> <CoreInst = "FDiv">   --->   Core 20 'FDiv' <Latency = 29> <II = 1> <Delay = 2.23> <FuncUnit> <Opcode : 'fdiv' 'frem'> <InPorts = 2> <OutPorts = 1>
+ST_35 : Operation 258 [19/30] (2.23ns)   --->   "%div = fdiv i32 %sumsq_loc_load, i32 480" [../gen/Hls_Layers_UpConv.tpp:254]   --->   Operation 258 'fdiv' 'div' <Predicate = true> <Delay = 2.23> <CoreInst = "FDiv">   --->   Core 20 'FDiv' <Latency = 29> <II = 1> <Delay = 2.23> <FuncUnit> <Opcode : 'fdiv' 'frem'> <InPorts = 2> <OutPorts = 1>
+
+State 36 <SV = 35> <Delay = 2.23>
+ST_36 : Operation 259 [11/30] (2.23ns)   --->   "%mean = fdiv i32 %sum_loc_load, i32 480" [../gen/Hls_Layers_UpConv.tpp:253]   --->   Operation 259 'fdiv' 'mean' <Predicate = true> <Delay = 2.23> <CoreInst = "FDiv">   --->   Core 20 'FDiv' <Latency = 29> <II = 1> <Delay = 2.23> <FuncUnit> <Opcode : 'fdiv' 'frem'> <InPorts = 2> <OutPorts = 1>
+ST_36 : Operation 260 [18/30] (2.23ns)   --->   "%div = fdiv i32 %sumsq_loc_load, i32 480" [../gen/Hls_Layers_UpConv.tpp:254]   --->   Operation 260 'fdiv' 'div' <Predicate = true> <Delay = 2.23> <CoreInst = "FDiv">   --->   Core 20 'FDiv' <Latency = 29> <II = 1> <Delay = 2.23> <FuncUnit> <Opcode : 'fdiv' 'frem'> <InPorts = 2> <OutPorts = 1>
+
+State 37 <SV = 36> <Delay = 2.23>
+ST_37 : Operation 261 [10/30] (2.23ns)   --->   "%mean = fdiv i32 %sum_loc_load, i32 480" [../gen/Hls_Layers_UpConv.tpp:253]   --->   Operation 261 'fdiv' 'mean' <Predicate = true> <Delay = 2.23> <CoreInst = "FDiv">   --->   Core 20 'FDiv' <Latency = 29> <II = 1> <Delay = 2.23> <FuncUnit> <Opcode : 'fdiv' 'frem'> <InPorts = 2> <OutPorts = 1>
+ST_37 : Operation 262 [17/30] (2.23ns)   --->   "%div = fdiv i32 %sumsq_loc_load, i32 480" [../gen/Hls_Layers_UpConv.tpp:254]   --->   Operation 262 'fdiv' 'div' <Predicate = true> <Delay = 2.23> <CoreInst = "FDiv">   --->   Core 20 'FDiv' <Latency = 29> <II = 1> <Delay = 2.23> <FuncUnit> <Opcode : 'fdiv' 'frem'> <InPorts = 2> <OutPorts = 1>
+
+State 38 <SV = 37> <Delay = 2.23>
+ST_38 : Operation 263 [9/30] (2.23ns)   --->   "%mean = fdiv i32 %sum_loc_load, i32 480" [../gen/Hls_Layers_UpConv.tpp:253]   --->   Operation 263 'fdiv' 'mean' <Predicate = true> <Delay = 2.23> <CoreInst = "FDiv">   --->   Core 20 'FDiv' <Latency = 29> <II = 1> <Delay = 2.23> <FuncUnit> <Opcode : 'fdiv' 'frem'> <InPorts = 2> <OutPorts = 1>
+ST_38 : Operation 264 [16/30] (2.23ns)   --->   "%div = fdiv i32 %sumsq_loc_load, i32 480" [../gen/Hls_Layers_UpConv.tpp:254]   --->   Operation 264 'fdiv' 'div' <Predicate = true> <Delay = 2.23> <CoreInst = "FDiv">   --->   Core 20 'FDiv' <Latency = 29> <II = 1> <Delay = 2.23> <FuncUnit> <Opcode : 'fdiv' 'frem'> <InPorts = 2> <OutPorts = 1>
+
+State 39 <SV = 38> <Delay = 2.23>
+ST_39 : Operation 265 [8/30] (2.23ns)   --->   "%mean = fdiv i32 %sum_loc_load, i32 480" [../gen/Hls_Layers_UpConv.tpp:253]   --->   Operation 265 'fdiv' 'mean' <Predicate = true> <Delay = 2.23> <CoreInst = "FDiv">   --->   Core 20 'FDiv' <Latency = 29> <II = 1> <Delay = 2.23> <FuncUnit> <Opcode : 'fdiv' 'frem'> <InPorts = 2> <OutPorts = 1>
+ST_39 : Operation 266 [15/30] (2.23ns)   --->   "%div = fdiv i32 %sumsq_loc_load, i32 480" [../gen/Hls_Layers_UpConv.tpp:254]   --->   Operation 266 'fdiv' 'div' <Predicate = true> <Delay = 2.23> <CoreInst = "FDiv">   --->   Core 20 'FDiv' <Latency = 29> <II = 1> <Delay = 2.23> <FuncUnit> <Opcode : 'fdiv' 'frem'> <InPorts = 2> <OutPorts = 1>
+
+State 40 <SV = 39> <Delay = 2.23>
+ST_40 : Operation 267 [7/30] (2.23ns)   --->   "%mean = fdiv i32 %sum_loc_load, i32 480" [../gen/Hls_Layers_UpConv.tpp:253]   --->   Operation 267 'fdiv' 'mean' <Predicate = true> <Delay = 2.23> <CoreInst = "FDiv">   --->   Core 20 'FDiv' <Latency = 29> <II = 1> <Delay = 2.23> <FuncUnit> <Opcode : 'fdiv' 'frem'> <InPorts = 2> <OutPorts = 1>
+ST_40 : Operation 268 [14/30] (2.23ns)   --->   "%div = fdiv i32 %sumsq_loc_load, i32 480" [../gen/Hls_Layers_UpConv.tpp:254]   --->   Operation 268 'fdiv' 'div' <Predicate = true> <Delay = 2.23> <CoreInst = "FDiv">   --->   Core 20 'FDiv' <Latency = 29> <II = 1> <Delay = 2.23> <FuncUnit> <Opcode : 'fdiv' 'frem'> <InPorts = 2> <OutPorts = 1>
+
+State 41 <SV = 40> <Delay = 2.23>
+ST_41 : Operation 269 [6/30] (2.23ns)   --->   "%mean = fdiv i32 %sum_loc_load, i32 480" [../gen/Hls_Layers_UpConv.tpp:253]   --->   Operation 269 'fdiv' 'mean' <Predicate = true> <Delay = 2.23> <CoreInst = "FDiv">   --->   Core 20 'FDiv' <Latency = 29> <II = 1> <Delay = 2.23> <FuncUnit> <Opcode : 'fdiv' 'frem'> <InPorts = 2> <OutPorts = 1>
+ST_41 : Operation 270 [13/30] (2.23ns)   --->   "%div = fdiv i32 %sumsq_loc_load, i32 480" [../gen/Hls_Layers_UpConv.tpp:254]   --->   Operation 270 'fdiv' 'div' <Predicate = true> <Delay = 2.23> <CoreInst = "FDiv">   --->   Core 20 'FDiv' <Latency = 29> <II = 1> <Delay = 2.23> <FuncUnit> <Opcode : 'fdiv' 'frem'> <InPorts = 2> <OutPorts = 1>
+
+State 42 <SV = 41> <Delay = 2.23>
+ST_42 : Operation 271 [5/30] (2.23ns)   --->   "%mean = fdiv i32 %sum_loc_load, i32 480" [../gen/Hls_Layers_UpConv.tpp:253]   --->   Operation 271 'fdiv' 'mean' <Predicate = true> <Delay = 2.23> <CoreInst = "FDiv">   --->   Core 20 'FDiv' <Latency = 29> <II = 1> <Delay = 2.23> <FuncUnit> <Opcode : 'fdiv' 'frem'> <InPorts = 2> <OutPorts = 1>
+ST_42 : Operation 272 [12/30] (2.23ns)   --->   "%div = fdiv i32 %sumsq_loc_load, i32 480" [../gen/Hls_Layers_UpConv.tpp:254]   --->   Operation 272 'fdiv' 'div' <Predicate = true> <Delay = 2.23> <CoreInst = "FDiv">   --->   Core 20 'FDiv' <Latency = 29> <II = 1> <Delay = 2.23> <FuncUnit> <Opcode : 'fdiv' 'frem'> <InPorts = 2> <OutPorts = 1>
+
+State 43 <SV = 42> <Delay = 2.23>
+ST_43 : Operation 273 [4/30] (2.23ns)   --->   "%mean = fdiv i32 %sum_loc_load, i32 480" [../gen/Hls_Layers_UpConv.tpp:253]   --->   Operation 273 'fdiv' 'mean' <Predicate = true> <Delay = 2.23> <CoreInst = "FDiv">   --->   Core 20 'FDiv' <Latency = 29> <II = 1> <Delay = 2.23> <FuncUnit> <Opcode : 'fdiv' 'frem'> <InPorts = 2> <OutPorts = 1>
+ST_43 : Operation 274 [11/30] (2.23ns)   --->   "%div = fdiv i32 %sumsq_loc_load, i32 480" [../gen/Hls_Layers_UpConv.tpp:254]   --->   Operation 274 'fdiv' 'div' <Predicate = true> <Delay = 2.23> <CoreInst = "FDiv">   --->   Core 20 'FDiv' <Latency = 29> <II = 1> <Delay = 2.23> <FuncUnit> <Opcode : 'fdiv' 'frem'> <InPorts = 2> <OutPorts = 1>
+
+State 44 <SV = 43> <Delay = 2.23>
+ST_44 : Operation 275 [3/30] (2.23ns)   --->   "%mean = fdiv i32 %sum_loc_load, i32 480" [../gen/Hls_Layers_UpConv.tpp:253]   --->   Operation 275 'fdiv' 'mean' <Predicate = true> <Delay = 2.23> <CoreInst = "FDiv">   --->   Core 20 'FDiv' <Latency = 29> <II = 1> <Delay = 2.23> <FuncUnit> <Opcode : 'fdiv' 'frem'> <InPorts = 2> <OutPorts = 1>
+ST_44 : Operation 276 [10/30] (2.23ns)   --->   "%div = fdiv i32 %sumsq_loc_load, i32 480" [../gen/Hls_Layers_UpConv.tpp:254]   --->   Operation 276 'fdiv' 'div' <Predicate = true> <Delay = 2.23> <CoreInst = "FDiv">   --->   Core 20 'FDiv' <Latency = 29> <II = 1> <Delay = 2.23> <FuncUnit> <Opcode : 'fdiv' 'frem'> <InPorts = 2> <OutPorts = 1>
+
+State 45 <SV = 44> <Delay = 2.23>
+ST_45 : Operation 277 [2/30] (2.23ns)   --->   "%mean = fdiv i32 %sum_loc_load, i32 480" [../gen/Hls_Layers_UpConv.tpp:253]   --->   Operation 277 'fdiv' 'mean' <Predicate = true> <Delay = 2.23> <CoreInst = "FDiv">   --->   Core 20 'FDiv' <Latency = 29> <II = 1> <Delay = 2.23> <FuncUnit> <Opcode : 'fdiv' 'frem'> <InPorts = 2> <OutPorts = 1>
+ST_45 : Operation 278 [9/30] (2.23ns)   --->   "%div = fdiv i32 %sumsq_loc_load, i32 480" [../gen/Hls_Layers_UpConv.tpp:254]   --->   Operation 278 'fdiv' 'div' <Predicate = true> <Delay = 2.23> <CoreInst = "FDiv">   --->   Core 20 'FDiv' <Latency = 29> <II = 1> <Delay = 2.23> <FuncUnit> <Opcode : 'fdiv' 'frem'> <InPorts = 2> <OutPorts = 1>
+
+State 46 <SV = 45> <Delay = 2.23>
+ST_46 : Operation 279 [1/30] (2.23ns)   --->   "%mean = fdiv i32 %sum_loc_load, i32 480" [../gen/Hls_Layers_UpConv.tpp:253]   --->   Operation 279 'fdiv' 'mean' <Predicate = true> <Delay = 2.23> <CoreInst = "FDiv">   --->   Core 20 'FDiv' <Latency = 29> <II = 1> <Delay = 2.23> <FuncUnit> <Opcode : 'fdiv' 'frem'> <InPorts = 2> <OutPorts = 1>
+ST_46 : Operation 280 [8/30] (2.23ns)   --->   "%div = fdiv i32 %sumsq_loc_load, i32 480" [../gen/Hls_Layers_UpConv.tpp:254]   --->   Operation 280 'fdiv' 'div' <Predicate = true> <Delay = 2.23> <CoreInst = "FDiv">   --->   Core 20 'FDiv' <Latency = 29> <II = 1> <Delay = 2.23> <FuncUnit> <Opcode : 'fdiv' 'frem'> <InPorts = 2> <OutPorts = 1>
+
+State 47 <SV = 46> <Delay = 2.41>
+ST_47 : Operation 281 [7/30] (2.23ns)   --->   "%div = fdiv i32 %sumsq_loc_load, i32 480" [../gen/Hls_Layers_UpConv.tpp:254]   --->   Operation 281 'fdiv' 'div' <Predicate = true> <Delay = 2.23> <CoreInst = "FDiv">   --->   Core 20 'FDiv' <Latency = 29> <II = 1> <Delay = 2.23> <FuncUnit> <Opcode : 'fdiv' 'frem'> <InPorts = 2> <OutPorts = 1>
+ST_47 : Operation 282 [7/7] (2.41ns)   --->   "%mul = fmul i32 %mean, i32 %mean" [../gen/Hls_Layers_UpConv.tpp:254]   --->   Operation 282 'fmul' 'mul' <Predicate = true> <Delay = 2.41> <CoreInst = "FMul_maxdsp">   --->   Core 30 'FMul_maxdsp' <Latency = 6> <II = 1> <Delay = 2.41> <FuncUnit> <Opcode : 'fmul'> <InPorts = 2> <OutPorts = 1>
+ST_47 : Operation 283 [2/2] (1.76ns)   --->   "%conv3 = sptohp i32 %mean" [../gen/Hls_Layers_UpConv.tpp:253]   --->   Operation 283 'sptohp' 'conv3' <Predicate = true> <Delay = 1.76> <CoreInst = "Float2Half">   --->   Core 69 'Float2Half' <Latency = 1> <II = 1> <Delay = 1.76> <FuncUnit> <Opcode : 'sptohp'> <InPorts = 1> <OutPorts = 1>
+
+State 48 <SV = 47> <Delay = 2.41>
+ST_48 : Operation 284 [6/30] (2.23ns)   --->   "%div = fdiv i32 %sumsq_loc_load, i32 480" [../gen/Hls_Layers_UpConv.tpp:254]   --->   Operation 284 'fdiv' 'div' <Predicate = true> <Delay = 2.23> <CoreInst = "FDiv">   --->   Core 20 'FDiv' <Latency = 29> <II = 1> <Delay = 2.23> <FuncUnit> <Opcode : 'fdiv' 'frem'> <InPorts = 2> <OutPorts = 1>
+ST_48 : Operation 285 [6/7] (2.41ns)   --->   "%mul = fmul i32 %mean, i32 %mean" [../gen/Hls_Layers_UpConv.tpp:254]   --->   Operation 285 'fmul' 'mul' <Predicate = true> <Delay = 2.41> <CoreInst = "FMul_maxdsp">   --->   Core 30 'FMul_maxdsp' <Latency = 6> <II = 1> <Delay = 2.41> <FuncUnit> <Opcode : 'fmul'> <InPorts = 2> <OutPorts = 1>
+ST_48 : Operation 286 [1/2] (1.76ns)   --->   "%conv3 = sptohp i32 %mean" [../gen/Hls_Layers_UpConv.tpp:253]   --->   Operation 286 'sptohp' 'conv3' <Predicate = true> <Delay = 1.76> <CoreInst = "Float2Half">   --->   Core 69 'Float2Half' <Latency = 1> <II = 1> <Delay = 1.76> <FuncUnit> <Opcode : 'sptohp'> <InPorts = 1> <OutPorts = 1>
+
+State 49 <SV = 48> <Delay = 2.41>
+ST_49 : Operation 287 [5/30] (2.23ns)   --->   "%div = fdiv i32 %sumsq_loc_load, i32 480" [../gen/Hls_Layers_UpConv.tpp:254]   --->   Operation 287 'fdiv' 'div' <Predicate = true> <Delay = 2.23> <CoreInst = "FDiv">   --->   Core 20 'FDiv' <Latency = 29> <II = 1> <Delay = 2.23> <FuncUnit> <Opcode : 'fdiv' 'frem'> <InPorts = 2> <OutPorts = 1>
+ST_49 : Operation 288 [5/7] (2.41ns)   --->   "%mul = fmul i32 %mean, i32 %mean" [../gen/Hls_Layers_UpConv.tpp:254]   --->   Operation 288 'fmul' 'mul' <Predicate = true> <Delay = 2.41> <CoreInst = "FMul_maxdsp">   --->   Core 30 'FMul_maxdsp' <Latency = 6> <II = 1> <Delay = 2.41> <FuncUnit> <Opcode : 'fmul'> <InPorts = 2> <OutPorts = 1>
+
+State 50 <SV = 49> <Delay = 2.41>
+ST_50 : Operation 289 [4/30] (2.23ns)   --->   "%div = fdiv i32 %sumsq_loc_load, i32 480" [../gen/Hls_Layers_UpConv.tpp:254]   --->   Operation 289 'fdiv' 'div' <Predicate = true> <Delay = 2.23> <CoreInst = "FDiv">   --->   Core 20 'FDiv' <Latency = 29> <II = 1> <Delay = 2.23> <FuncUnit> <Opcode : 'fdiv' 'frem'> <InPorts = 2> <OutPorts = 1>
+ST_50 : Operation 290 [4/7] (2.41ns)   --->   "%mul = fmul i32 %mean, i32 %mean" [../gen/Hls_Layers_UpConv.tpp:254]   --->   Operation 290 'fmul' 'mul' <Predicate = true> <Delay = 2.41> <CoreInst = "FMul_maxdsp">   --->   Core 30 'FMul_maxdsp' <Latency = 6> <II = 1> <Delay = 2.41> <FuncUnit> <Opcode : 'fmul'> <InPorts = 2> <OutPorts = 1>
+
+State 51 <SV = 50> <Delay = 2.41>
+ST_51 : Operation 291 [3/30] (2.23ns)   --->   "%div = fdiv i32 %sumsq_loc_load, i32 480" [../gen/Hls_Layers_UpConv.tpp:254]   --->   Operation 291 'fdiv' 'div' <Predicate = true> <Delay = 2.23> <CoreInst = "FDiv">   --->   Core 20 'FDiv' <Latency = 29> <II = 1> <Delay = 2.23> <FuncUnit> <Opcode : 'fdiv' 'frem'> <InPorts = 2> <OutPorts = 1>
+ST_51 : Operation 292 [3/7] (2.41ns)   --->   "%mul = fmul i32 %mean, i32 %mean" [../gen/Hls_Layers_UpConv.tpp:254]   --->   Operation 292 'fmul' 'mul' <Predicate = true> <Delay = 2.41> <CoreInst = "FMul_maxdsp">   --->   Core 30 'FMul_maxdsp' <Latency = 6> <II = 1> <Delay = 2.41> <FuncUnit> <Opcode : 'fmul'> <InPorts = 2> <OutPorts = 1>
+
+State 52 <SV = 51> <Delay = 2.41>
+ST_52 : Operation 293 [2/30] (2.23ns)   --->   "%div = fdiv i32 %sumsq_loc_load, i32 480" [../gen/Hls_Layers_UpConv.tpp:254]   --->   Operation 293 'fdiv' 'div' <Predicate = true> <Delay = 2.23> <CoreInst = "FDiv">   --->   Core 20 'FDiv' <Latency = 29> <II = 1> <Delay = 2.23> <FuncUnit> <Opcode : 'fdiv' 'frem'> <InPorts = 2> <OutPorts = 1>
+ST_52 : Operation 294 [2/7] (2.41ns)   --->   "%mul = fmul i32 %mean, i32 %mean" [../gen/Hls_Layers_UpConv.tpp:254]   --->   Operation 294 'fmul' 'mul' <Predicate = true> <Delay = 2.41> <CoreInst = "FMul_maxdsp">   --->   Core 30 'FMul_maxdsp' <Latency = 6> <II = 1> <Delay = 2.41> <FuncUnit> <Opcode : 'fmul'> <InPorts = 2> <OutPorts = 1>
+
+State 53 <SV = 52> <Delay = 2.41>
+ST_53 : Operation 295 [1/30] (2.23ns)   --->   "%div = fdiv i32 %sumsq_loc_load, i32 480" [../gen/Hls_Layers_UpConv.tpp:254]   --->   Operation 295 'fdiv' 'div' <Predicate = true> <Delay = 2.23> <CoreInst = "FDiv">   --->   Core 20 'FDiv' <Latency = 29> <II = 1> <Delay = 2.23> <FuncUnit> <Opcode : 'fdiv' 'frem'> <InPorts = 2> <OutPorts = 1>
+ST_53 : Operation 296 [1/7] (2.41ns)   --->   "%mul = fmul i32 %mean, i32 %mean" [../gen/Hls_Layers_UpConv.tpp:254]   --->   Operation 296 'fmul' 'mul' <Predicate = true> <Delay = 2.41> <CoreInst = "FMul_maxdsp">   --->   Core 30 'FMul_maxdsp' <Latency = 6> <II = 1> <Delay = 2.41> <FuncUnit> <Opcode : 'fmul'> <InPorts = 2> <OutPorts = 1>
+
+State 54 <SV = 53> <Delay = 2.26>
+ST_54 : Operation 297 [11/11] (2.26ns)   --->   "%var = fsub i32 %div, i32 %mul" [../gen/Hls_Layers_UpConv.tpp:254]   --->   Operation 297 'fsub' 'var' <Predicate = true> <Delay = 2.26> <CoreInst = "FAddSub_fulldsp">   --->   Core 18 'FAddSub_fulldsp' <Latency = 10> <II = 1> <Delay = 2.26> <FuncUnit> <Opcode : 'fadd' 'fsub'> <InPorts = 2> <OutPorts = 1>
+
+State 55 <SV = 54> <Delay = 2.26>
+ST_55 : Operation 298 [10/11] (2.26ns)   --->   "%var = fsub i32 %div, i32 %mul" [../gen/Hls_Layers_UpConv.tpp:254]   --->   Operation 298 'fsub' 'var' <Predicate = true> <Delay = 2.26> <CoreInst = "FAddSub_fulldsp">   --->   Core 18 'FAddSub_fulldsp' <Latency = 10> <II = 1> <Delay = 2.26> <FuncUnit> <Opcode : 'fadd' 'fsub'> <InPorts = 2> <OutPorts = 1>
+
+State 56 <SV = 55> <Delay = 2.26>
+ST_56 : Operation 299 [9/11] (2.26ns)   --->   "%var = fsub i32 %div, i32 %mul" [../gen/Hls_Layers_UpConv.tpp:254]   --->   Operation 299 'fsub' 'var' <Predicate = true> <Delay = 2.26> <CoreInst = "FAddSub_fulldsp">   --->   Core 18 'FAddSub_fulldsp' <Latency = 10> <II = 1> <Delay = 2.26> <FuncUnit> <Opcode : 'fadd' 'fsub'> <InPorts = 2> <OutPorts = 1>
+
+State 57 <SV = 56> <Delay = 2.26>
+ST_57 : Operation 300 [8/11] (2.26ns)   --->   "%var = fsub i32 %div, i32 %mul" [../gen/Hls_Layers_UpConv.tpp:254]   --->   Operation 300 'fsub' 'var' <Predicate = true> <Delay = 2.26> <CoreInst = "FAddSub_fulldsp">   --->   Core 18 'FAddSub_fulldsp' <Latency = 10> <II = 1> <Delay = 2.26> <FuncUnit> <Opcode : 'fadd' 'fsub'> <InPorts = 2> <OutPorts = 1>
+
+State 58 <SV = 57> <Delay = 2.26>
+ST_58 : Operation 301 [7/11] (2.26ns)   --->   "%var = fsub i32 %div, i32 %mul" [../gen/Hls_Layers_UpConv.tpp:254]   --->   Operation 301 'fsub' 'var' <Predicate = true> <Delay = 2.26> <CoreInst = "FAddSub_fulldsp">   --->   Core 18 'FAddSub_fulldsp' <Latency = 10> <II = 1> <Delay = 2.26> <FuncUnit> <Opcode : 'fadd' 'fsub'> <InPorts = 2> <OutPorts = 1>
+
+State 59 <SV = 58> <Delay = 2.26>
+ST_59 : Operation 302 [6/11] (2.26ns)   --->   "%var = fsub i32 %div, i32 %mul" [../gen/Hls_Layers_UpConv.tpp:254]   --->   Operation 302 'fsub' 'var' <Predicate = true> <Delay = 2.26> <CoreInst = "FAddSub_fulldsp">   --->   Core 18 'FAddSub_fulldsp' <Latency = 10> <II = 1> <Delay = 2.26> <FuncUnit> <Opcode : 'fadd' 'fsub'> <InPorts = 2> <OutPorts = 1>
+
+State 60 <SV = 59> <Delay = 2.26>
+ST_60 : Operation 303 [5/11] (2.26ns)   --->   "%var = fsub i32 %div, i32 %mul" [../gen/Hls_Layers_UpConv.tpp:254]   --->   Operation 303 'fsub' 'var' <Predicate = true> <Delay = 2.26> <CoreInst = "FAddSub_fulldsp">   --->   Core 18 'FAddSub_fulldsp' <Latency = 10> <II = 1> <Delay = 2.26> <FuncUnit> <Opcode : 'fadd' 'fsub'> <InPorts = 2> <OutPorts = 1>
+
+State 61 <SV = 60> <Delay = 2.26>
+ST_61 : Operation 304 [4/11] (2.26ns)   --->   "%var = fsub i32 %div, i32 %mul" [../gen/Hls_Layers_UpConv.tpp:254]   --->   Operation 304 'fsub' 'var' <Predicate = true> <Delay = 2.26> <CoreInst = "FAddSub_fulldsp">   --->   Core 18 'FAddSub_fulldsp' <Latency = 10> <II = 1> <Delay = 2.26> <FuncUnit> <Opcode : 'fadd' 'fsub'> <InPorts = 2> <OutPorts = 1>
+
+State 62 <SV = 61> <Delay = 2.26>
+ST_62 : Operation 305 [3/11] (2.26ns)   --->   "%var = fsub i32 %div, i32 %mul" [../gen/Hls_Layers_UpConv.tpp:254]   --->   Operation 305 'fsub' 'var' <Predicate = true> <Delay = 2.26> <CoreInst = "FAddSub_fulldsp">   --->   Core 18 'FAddSub_fulldsp' <Latency = 10> <II = 1> <Delay = 2.26> <FuncUnit> <Opcode : 'fadd' 'fsub'> <InPorts = 2> <OutPorts = 1>
+
+State 63 <SV = 62> <Delay = 2.26>
+ST_63 : Operation 306 [2/11] (2.26ns)   --->   "%var = fsub i32 %div, i32 %mul" [../gen/Hls_Layers_UpConv.tpp:254]   --->   Operation 306 'fsub' 'var' <Predicate = true> <Delay = 2.26> <CoreInst = "FAddSub_fulldsp">   --->   Core 18 'FAddSub_fulldsp' <Latency = 10> <II = 1> <Delay = 2.26> <FuncUnit> <Opcode : 'fadd' 'fsub'> <InPorts = 2> <OutPorts = 1>
+
+State 64 <SV = 63> <Delay = 2.26>
+ST_64 : Operation 307 [1/11] (2.26ns)   --->   "%var = fsub i32 %div, i32 %mul" [../gen/Hls_Layers_UpConv.tpp:254]   --->   Operation 307 'fsub' 'var' <Predicate = true> <Delay = 2.26> <CoreInst = "FAddSub_fulldsp">   --->   Core 18 'FAddSub_fulldsp' <Latency = 10> <II = 1> <Delay = 2.26> <FuncUnit> <Opcode : 'fadd' 'fsub'> <InPorts = 2> <OutPorts = 1>
+
+State 65 <SV = 64> <Delay = 2.26>
+ST_65 : Operation 308 [11/11] (2.26ns)   --->   "%x_assign = fadd i32 %var, i32 %conv1" [../gen/Hls_Layers_UpConv.tpp:255]   --->   Operation 308 'fadd' 'x_assign' <Predicate = true> <Delay = 2.26> <CoreInst = "FAddSub_fulldsp">   --->   Core 18 'FAddSub_fulldsp' <Latency = 10> <II = 1> <Delay = 2.26> <FuncUnit> <Opcode : 'fadd' 'fsub'> <InPorts = 2> <OutPorts = 1>
+
+State 66 <SV = 65> <Delay = 2.26>
+ST_66 : Operation 309 [10/11] (2.26ns)   --->   "%x_assign = fadd i32 %var, i32 %conv1" [../gen/Hls_Layers_UpConv.tpp:255]   --->   Operation 309 'fadd' 'x_assign' <Predicate = true> <Delay = 2.26> <CoreInst = "FAddSub_fulldsp">   --->   Core 18 'FAddSub_fulldsp' <Latency = 10> <II = 1> <Delay = 2.26> <FuncUnit> <Opcode : 'fadd' 'fsub'> <InPorts = 2> <OutPorts = 1>
+
+State 67 <SV = 66> <Delay = 2.26>
+ST_67 : Operation 310 [9/11] (2.26ns)   --->   "%x_assign = fadd i32 %var, i32 %conv1" [../gen/Hls_Layers_UpConv.tpp:255]   --->   Operation 310 'fadd' 'x_assign' <Predicate = true> <Delay = 2.26> <CoreInst = "FAddSub_fulldsp">   --->   Core 18 'FAddSub_fulldsp' <Latency = 10> <II = 1> <Delay = 2.26> <FuncUnit> <Opcode : 'fadd' 'fsub'> <InPorts = 2> <OutPorts = 1>
+
+State 68 <SV = 67> <Delay = 2.26>
+ST_68 : Operation 311 [8/11] (2.26ns)   --->   "%x_assign = fadd i32 %var, i32 %conv1" [../gen/Hls_Layers_UpConv.tpp:255]   --->   Operation 311 'fadd' 'x_assign' <Predicate = true> <Delay = 2.26> <CoreInst = "FAddSub_fulldsp">   --->   Core 18 'FAddSub_fulldsp' <Latency = 10> <II = 1> <Delay = 2.26> <FuncUnit> <Opcode : 'fadd' 'fsub'> <InPorts = 2> <OutPorts = 1>
+
+State 69 <SV = 68> <Delay = 2.26>
+ST_69 : Operation 312 [7/11] (2.26ns)   --->   "%x_assign = fadd i32 %var, i32 %conv1" [../gen/Hls_Layers_UpConv.tpp:255]   --->   Operation 312 'fadd' 'x_assign' <Predicate = true> <Delay = 2.26> <CoreInst = "FAddSub_fulldsp">   --->   Core 18 'FAddSub_fulldsp' <Latency = 10> <II = 1> <Delay = 2.26> <FuncUnit> <Opcode : 'fadd' 'fsub'> <InPorts = 2> <OutPorts = 1>
+
+State 70 <SV = 69> <Delay = 2.26>
+ST_70 : Operation 313 [6/11] (2.26ns)   --->   "%x_assign = fadd i32 %var, i32 %conv1" [../gen/Hls_Layers_UpConv.tpp:255]   --->   Operation 313 'fadd' 'x_assign' <Predicate = true> <Delay = 2.26> <CoreInst = "FAddSub_fulldsp">   --->   Core 18 'FAddSub_fulldsp' <Latency = 10> <II = 1> <Delay = 2.26> <FuncUnit> <Opcode : 'fadd' 'fsub'> <InPorts = 2> <OutPorts = 1>
+
+State 71 <SV = 70> <Delay = 2.26>
+ST_71 : Operation 314 [5/11] (2.26ns)   --->   "%x_assign = fadd i32 %var, i32 %conv1" [../gen/Hls_Layers_UpConv.tpp:255]   --->   Operation 314 'fadd' 'x_assign' <Predicate = true> <Delay = 2.26> <CoreInst = "FAddSub_fulldsp">   --->   Core 18 'FAddSub_fulldsp' <Latency = 10> <II = 1> <Delay = 2.26> <FuncUnit> <Opcode : 'fadd' 'fsub'> <InPorts = 2> <OutPorts = 1>
+
+State 72 <SV = 71> <Delay = 2.26>
+ST_72 : Operation 315 [4/11] (2.26ns)   --->   "%x_assign = fadd i32 %var, i32 %conv1" [../gen/Hls_Layers_UpConv.tpp:255]   --->   Operation 315 'fadd' 'x_assign' <Predicate = true> <Delay = 2.26> <CoreInst = "FAddSub_fulldsp">   --->   Core 18 'FAddSub_fulldsp' <Latency = 10> <II = 1> <Delay = 2.26> <FuncUnit> <Opcode : 'fadd' 'fsub'> <InPorts = 2> <OutPorts = 1>
+
+State 73 <SV = 72> <Delay = 2.26>
+ST_73 : Operation 316 [3/11] (2.26ns)   --->   "%x_assign = fadd i32 %var, i32 %conv1" [../gen/Hls_Layers_UpConv.tpp:255]   --->   Operation 316 'fadd' 'x_assign' <Predicate = true> <Delay = 2.26> <CoreInst = "FAddSub_fulldsp">   --->   Core 18 'FAddSub_fulldsp' <Latency = 10> <II = 1> <Delay = 2.26> <FuncUnit> <Opcode : 'fadd' 'fsub'> <InPorts = 2> <OutPorts = 1>
+
+State 74 <SV = 73> <Delay = 2.26>
+ST_74 : Operation 317 [2/11] (2.26ns)   --->   "%x_assign = fadd i32 %var, i32 %conv1" [../gen/Hls_Layers_UpConv.tpp:255]   --->   Operation 317 'fadd' 'x_assign' <Predicate = true> <Delay = 2.26> <CoreInst = "FAddSub_fulldsp">   --->   Core 18 'FAddSub_fulldsp' <Latency = 10> <II = 1> <Delay = 2.26> <FuncUnit> <Opcode : 'fadd' 'fsub'> <InPorts = 2> <OutPorts = 1>
+
+State 75 <SV = 74> <Delay = 2.26>
+ST_75 : Operation 318 [1/11] (2.26ns)   --->   "%x_assign = fadd i32 %var, i32 %conv1" [../gen/Hls_Layers_UpConv.tpp:255]   --->   Operation 318 'fadd' 'x_assign' <Predicate = true> <Delay = 2.26> <CoreInst = "FAddSub_fulldsp">   --->   Core 18 'FAddSub_fulldsp' <Latency = 10> <II = 1> <Delay = 2.26> <FuncUnit> <Opcode : 'fadd' 'fsub'> <InPorts = 2> <OutPorts = 1>
+
+State 76 <SV = 75> <Delay = 1.83>
+ST_76 : Operation 319 [28/28] (1.83ns)   --->   "%tmp = fsqrt i32 @llvm.sqrt.f32, i32 %x_assign" [/wrk/ci/prod/2024.2/hls_product/continuous/495/2024.2/src/shared/hls/clib/hlsmath/src/c++/sqrtfloat.cpp:13->../gen/Hls_Layers_UpConv.tpp:55->../gen/Hls_Layers_UpConv.tpp:255]   --->   Operation 319 'fsqrt' 'tmp' <Predicate = true> <Delay = 1.83> <CoreInst = "FSqrt">   --->   Core 35 'FSqrt' <Latency = 27> <II = 1> <Delay = 1.83> <FuncUnit> <Opcode : 'fsqrt'> <InPorts = 1> <OutPorts = 1>
+
+State 77 <SV = 76> <Delay = 1.83>
+ST_77 : Operation 320 [27/28] (1.83ns)   --->   "%tmp = fsqrt i32 @llvm.sqrt.f32, i32 %x_assign" [/wrk/ci/prod/2024.2/hls_product/continuous/495/2024.2/src/shared/hls/clib/hlsmath/src/c++/sqrtfloat.cpp:13->../gen/Hls_Layers_UpConv.tpp:55->../gen/Hls_Layers_UpConv.tpp:255]   --->   Operation 320 'fsqrt' 'tmp' <Predicate = true> <Delay = 1.83> <CoreInst = "FSqrt">   --->   Core 35 'FSqrt' <Latency = 27> <II = 1> <Delay = 1.83> <FuncUnit> <Opcode : 'fsqrt'> <InPorts = 1> <OutPorts = 1>
+
+State 78 <SV = 77> <Delay = 1.83>
+ST_78 : Operation 321 [26/28] (1.83ns)   --->   "%tmp = fsqrt i32 @llvm.sqrt.f32, i32 %x_assign" [/wrk/ci/prod/2024.2/hls_product/continuous/495/2024.2/src/shared/hls/clib/hlsmath/src/c++/sqrtfloat.cpp:13->../gen/Hls_Layers_UpConv.tpp:55->../gen/Hls_Layers_UpConv.tpp:255]   --->   Operation 321 'fsqrt' 'tmp' <Predicate = true> <Delay = 1.83> <CoreInst = "FSqrt">   --->   Core 35 'FSqrt' <Latency = 27> <II = 1> <Delay = 1.83> <FuncUnit> <Opcode : 'fsqrt'> <InPorts = 1> <OutPorts = 1>
+
+State 79 <SV = 78> <Delay = 1.83>
+ST_79 : Operation 322 [25/28] (1.83ns)   --->   "%tmp = fsqrt i32 @llvm.sqrt.f32, i32 %x_assign" [/wrk/ci/prod/2024.2/hls_product/continuous/495/2024.2/src/shared/hls/clib/hlsmath/src/c++/sqrtfloat.cpp:13->../gen/Hls_Layers_UpConv.tpp:55->../gen/Hls_Layers_UpConv.tpp:255]   --->   Operation 322 'fsqrt' 'tmp' <Predicate = true> <Delay = 1.83> <CoreInst = "FSqrt">   --->   Core 35 'FSqrt' <Latency = 27> <II = 1> <Delay = 1.83> <FuncUnit> <Opcode : 'fsqrt'> <InPorts = 1> <OutPorts = 1>
+
+State 80 <SV = 79> <Delay = 1.83>
+ST_80 : Operation 323 [24/28] (1.83ns)   --->   "%tmp = fsqrt i32 @llvm.sqrt.f32, i32 %x_assign" [/wrk/ci/prod/2024.2/hls_product/continuous/495/2024.2/src/shared/hls/clib/hlsmath/src/c++/sqrtfloat.cpp:13->../gen/Hls_Layers_UpConv.tpp:55->../gen/Hls_Layers_UpConv.tpp:255]   --->   Operation 323 'fsqrt' 'tmp' <Predicate = true> <Delay = 1.83> <CoreInst = "FSqrt">   --->   Core 35 'FSqrt' <Latency = 27> <II = 1> <Delay = 1.83> <FuncUnit> <Opcode : 'fsqrt'> <InPorts = 1> <OutPorts = 1>
+
+State 81 <SV = 80> <Delay = 1.83>
+ST_81 : Operation 324 [23/28] (1.83ns)   --->   "%tmp = fsqrt i32 @llvm.sqrt.f32, i32 %x_assign" [/wrk/ci/prod/2024.2/hls_product/continuous/495/2024.2/src/shared/hls/clib/hlsmath/src/c++/sqrtfloat.cpp:13->../gen/Hls_Layers_UpConv.tpp:55->../gen/Hls_Layers_UpConv.tpp:255]   --->   Operation 324 'fsqrt' 'tmp' <Predicate = true> <Delay = 1.83> <CoreInst = "FSqrt">   --->   Core 35 'FSqrt' <Latency = 27> <II = 1> <Delay = 1.83> <FuncUnit> <Opcode : 'fsqrt'> <InPorts = 1> <OutPorts = 1>
+
+State 82 <SV = 81> <Delay = 1.83>
+ST_82 : Operation 325 [22/28] (1.83ns)   --->   "%tmp = fsqrt i32 @llvm.sqrt.f32, i32 %x_assign" [/wrk/ci/prod/2024.2/hls_product/continuous/495/2024.2/src/shared/hls/clib/hlsmath/src/c++/sqrtfloat.cpp:13->../gen/Hls_Layers_UpConv.tpp:55->../gen/Hls_Layers_UpConv.tpp:255]   --->   Operation 325 'fsqrt' 'tmp' <Predicate = true> <Delay = 1.83> <CoreInst = "FSqrt">   --->   Core 35 'FSqrt' <Latency = 27> <II = 1> <Delay = 1.83> <FuncUnit> <Opcode : 'fsqrt'> <InPorts = 1> <OutPorts = 1>
+
+State 83 <SV = 82> <Delay = 1.83>
+ST_83 : Operation 326 [21/28] (1.83ns)   --->   "%tmp = fsqrt i32 @llvm.sqrt.f32, i32 %x_assign" [/wrk/ci/prod/2024.2/hls_product/continuous/495/2024.2/src/shared/hls/clib/hlsmath/src/c++/sqrtfloat.cpp:13->../gen/Hls_Layers_UpConv.tpp:55->../gen/Hls_Layers_UpConv.tpp:255]   --->   Operation 326 'fsqrt' 'tmp' <Predicate = true> <Delay = 1.83> <CoreInst = "FSqrt">   --->   Core 35 'FSqrt' <Latency = 27> <II = 1> <Delay = 1.83> <FuncUnit> <Opcode : 'fsqrt'> <InPorts = 1> <OutPorts = 1>
+
+State 84 <SV = 83> <Delay = 1.83>
+ST_84 : Operation 327 [20/28] (1.83ns)   --->   "%tmp = fsqrt i32 @llvm.sqrt.f32, i32 %x_assign" [/wrk/ci/prod/2024.2/hls_product/continuous/495/2024.2/src/shared/hls/clib/hlsmath/src/c++/sqrtfloat.cpp:13->../gen/Hls_Layers_UpConv.tpp:55->../gen/Hls_Layers_UpConv.tpp:255]   --->   Operation 327 'fsqrt' 'tmp' <Predicate = true> <Delay = 1.83> <CoreInst = "FSqrt">   --->   Core 35 'FSqrt' <Latency = 27> <II = 1> <Delay = 1.83> <FuncUnit> <Opcode : 'fsqrt'> <InPorts = 1> <OutPorts = 1>
+
+State 85 <SV = 84> <Delay = 1.83>
+ST_85 : Operation 328 [19/28] (1.83ns)   --->   "%tmp = fsqrt i32 @llvm.sqrt.f32, i32 %x_assign" [/wrk/ci/prod/2024.2/hls_product/continuous/495/2024.2/src/shared/hls/clib/hlsmath/src/c++/sqrtfloat.cpp:13->../gen/Hls_Layers_UpConv.tpp:55->../gen/Hls_Layers_UpConv.tpp:255]   --->   Operation 328 'fsqrt' 'tmp' <Predicate = true> <Delay = 1.83> <CoreInst = "FSqrt">   --->   Core 35 'FSqrt' <Latency = 27> <II = 1> <Delay = 1.83> <FuncUnit> <Opcode : 'fsqrt'> <InPorts = 1> <OutPorts = 1>
+
+State 86 <SV = 85> <Delay = 1.83>
+ST_86 : Operation 329 [18/28] (1.83ns)   --->   "%tmp = fsqrt i32 @llvm.sqrt.f32, i32 %x_assign" [/wrk/ci/prod/2024.2/hls_product/continuous/495/2024.2/src/shared/hls/clib/hlsmath/src/c++/sqrtfloat.cpp:13->../gen/Hls_Layers_UpConv.tpp:55->../gen/Hls_Layers_UpConv.tpp:255]   --->   Operation 329 'fsqrt' 'tmp' <Predicate = true> <Delay = 1.83> <CoreInst = "FSqrt">   --->   Core 35 'FSqrt' <Latency = 27> <II = 1> <Delay = 1.83> <FuncUnit> <Opcode : 'fsqrt'> <InPorts = 1> <OutPorts = 1>
+
+State 87 <SV = 86> <Delay = 1.83>
+ST_87 : Operation 330 [17/28] (1.83ns)   --->   "%tmp = fsqrt i32 @llvm.sqrt.f32, i32 %x_assign" [/wrk/ci/prod/2024.2/hls_product/continuous/495/2024.2/src/shared/hls/clib/hlsmath/src/c++/sqrtfloat.cpp:13->../gen/Hls_Layers_UpConv.tpp:55->../gen/Hls_Layers_UpConv.tpp:255]   --->   Operation 330 'fsqrt' 'tmp' <Predicate = true> <Delay = 1.83> <CoreInst = "FSqrt">   --->   Core 35 'FSqrt' <Latency = 27> <II = 1> <Delay = 1.83> <FuncUnit> <Opcode : 'fsqrt'> <InPorts = 1> <OutPorts = 1>
+
+State 88 <SV = 87> <Delay = 1.83>
+ST_88 : Operation 331 [16/28] (1.83ns)   --->   "%tmp = fsqrt i32 @llvm.sqrt.f32, i32 %x_assign" [/wrk/ci/prod/2024.2/hls_product/continuous/495/2024.2/src/shared/hls/clib/hlsmath/src/c++/sqrtfloat.cpp:13->../gen/Hls_Layers_UpConv.tpp:55->../gen/Hls_Layers_UpConv.tpp:255]   --->   Operation 331 'fsqrt' 'tmp' <Predicate = true> <Delay = 1.83> <CoreInst = "FSqrt">   --->   Core 35 'FSqrt' <Latency = 27> <II = 1> <Delay = 1.83> <FuncUnit> <Opcode : 'fsqrt'> <InPorts = 1> <OutPorts = 1>
+
+State 89 <SV = 88> <Delay = 1.83>
+ST_89 : Operation 332 [15/28] (1.83ns)   --->   "%tmp = fsqrt i32 @llvm.sqrt.f32, i32 %x_assign" [/wrk/ci/prod/2024.2/hls_product/continuous/495/2024.2/src/shared/hls/clib/hlsmath/src/c++/sqrtfloat.cpp:13->../gen/Hls_Layers_UpConv.tpp:55->../gen/Hls_Layers_UpConv.tpp:255]   --->   Operation 332 'fsqrt' 'tmp' <Predicate = true> <Delay = 1.83> <CoreInst = "FSqrt">   --->   Core 35 'FSqrt' <Latency = 27> <II = 1> <Delay = 1.83> <FuncUnit> <Opcode : 'fsqrt'> <InPorts = 1> <OutPorts = 1>
+
+State 90 <SV = 89> <Delay = 1.83>
+ST_90 : Operation 333 [14/28] (1.83ns)   --->   "%tmp = fsqrt i32 @llvm.sqrt.f32, i32 %x_assign" [/wrk/ci/prod/2024.2/hls_product/continuous/495/2024.2/src/shared/hls/clib/hlsmath/src/c++/sqrtfloat.cpp:13->../gen/Hls_Layers_UpConv.tpp:55->../gen/Hls_Layers_UpConv.tpp:255]   --->   Operation 333 'fsqrt' 'tmp' <Predicate = true> <Delay = 1.83> <CoreInst = "FSqrt">   --->   Core 35 'FSqrt' <Latency = 27> <II = 1> <Delay = 1.83> <FuncUnit> <Opcode : 'fsqrt'> <InPorts = 1> <OutPorts = 1>
+
+State 91 <SV = 90> <Delay = 1.83>
+ST_91 : Operation 334 [13/28] (1.83ns)   --->   "%tmp = fsqrt i32 @llvm.sqrt.f32, i32 %x_assign" [/wrk/ci/prod/2024.2/hls_product/continuous/495/2024.2/src/shared/hls/clib/hlsmath/src/c++/sqrtfloat.cpp:13->../gen/Hls_Layers_UpConv.tpp:55->../gen/Hls_Layers_UpConv.tpp:255]   --->   Operation 334 'fsqrt' 'tmp' <Predicate = true> <Delay = 1.83> <CoreInst = "FSqrt">   --->   Core 35 'FSqrt' <Latency = 27> <II = 1> <Delay = 1.83> <FuncUnit> <Opcode : 'fsqrt'> <InPorts = 1> <OutPorts = 1>
+
+State 92 <SV = 91> <Delay = 1.83>
+ST_92 : Operation 335 [12/28] (1.83ns)   --->   "%tmp = fsqrt i32 @llvm.sqrt.f32, i32 %x_assign" [/wrk/ci/prod/2024.2/hls_product/continuous/495/2024.2/src/shared/hls/clib/hlsmath/src/c++/sqrtfloat.cpp:13->../gen/Hls_Layers_UpConv.tpp:55->../gen/Hls_Layers_UpConv.tpp:255]   --->   Operation 335 'fsqrt' 'tmp' <Predicate = true> <Delay = 1.83> <CoreInst = "FSqrt">   --->   Core 35 'FSqrt' <Latency = 27> <II = 1> <Delay = 1.83> <FuncUnit> <Opcode : 'fsqrt'> <InPorts = 1> <OutPorts = 1>
+
+State 93 <SV = 92> <Delay = 1.83>
+ST_93 : Operation 336 [11/28] (1.83ns)   --->   "%tmp = fsqrt i32 @llvm.sqrt.f32, i32 %x_assign" [/wrk/ci/prod/2024.2/hls_product/continuous/495/2024.2/src/shared/hls/clib/hlsmath/src/c++/sqrtfloat.cpp:13->../gen/Hls_Layers_UpConv.tpp:55->../gen/Hls_Layers_UpConv.tpp:255]   --->   Operation 336 'fsqrt' 'tmp' <Predicate = true> <Delay = 1.83> <CoreInst = "FSqrt">   --->   Core 35 'FSqrt' <Latency = 27> <II = 1> <Delay = 1.83> <FuncUnit> <Opcode : 'fsqrt'> <InPorts = 1> <OutPorts = 1>
+
+State 94 <SV = 93> <Delay = 1.83>
+ST_94 : Operation 337 [10/28] (1.83ns)   --->   "%tmp = fsqrt i32 @llvm.sqrt.f32, i32 %x_assign" [/wrk/ci/prod/2024.2/hls_product/continuous/495/2024.2/src/shared/hls/clib/hlsmath/src/c++/sqrtfloat.cpp:13->../gen/Hls_Layers_UpConv.tpp:55->../gen/Hls_Layers_UpConv.tpp:255]   --->   Operation 337 'fsqrt' 'tmp' <Predicate = true> <Delay = 1.83> <CoreInst = "FSqrt">   --->   Core 35 'FSqrt' <Latency = 27> <II = 1> <Delay = 1.83> <FuncUnit> <Opcode : 'fsqrt'> <InPorts = 1> <OutPorts = 1>
+
+State 95 <SV = 94> <Delay = 1.83>
+ST_95 : Operation 338 [9/28] (1.83ns)   --->   "%tmp = fsqrt i32 @llvm.sqrt.f32, i32 %x_assign" [/wrk/ci/prod/2024.2/hls_product/continuous/495/2024.2/src/shared/hls/clib/hlsmath/src/c++/sqrtfloat.cpp:13->../gen/Hls_Layers_UpConv.tpp:55->../gen/Hls_Layers_UpConv.tpp:255]   --->   Operation 338 'fsqrt' 'tmp' <Predicate = true> <Delay = 1.83> <CoreInst = "FSqrt">   --->   Core 35 'FSqrt' <Latency = 27> <II = 1> <Delay = 1.83> <FuncUnit> <Opcode : 'fsqrt'> <InPorts = 1> <OutPorts = 1>
+
+State 96 <SV = 95> <Delay = 1.83>
+ST_96 : Operation 339 [8/28] (1.83ns)   --->   "%tmp = fsqrt i32 @llvm.sqrt.f32, i32 %x_assign" [/wrk/ci/prod/2024.2/hls_product/continuous/495/2024.2/src/shared/hls/clib/hlsmath/src/c++/sqrtfloat.cpp:13->../gen/Hls_Layers_UpConv.tpp:55->../gen/Hls_Layers_UpConv.tpp:255]   --->   Operation 339 'fsqrt' 'tmp' <Predicate = true> <Delay = 1.83> <CoreInst = "FSqrt">   --->   Core 35 'FSqrt' <Latency = 27> <II = 1> <Delay = 1.83> <FuncUnit> <Opcode : 'fsqrt'> <InPorts = 1> <OutPorts = 1>
+
+State 97 <SV = 96> <Delay = 1.83>
+ST_97 : Operation 340 [7/28] (1.83ns)   --->   "%tmp = fsqrt i32 @llvm.sqrt.f32, i32 %x_assign" [/wrk/ci/prod/2024.2/hls_product/continuous/495/2024.2/src/shared/hls/clib/hlsmath/src/c++/sqrtfloat.cpp:13->../gen/Hls_Layers_UpConv.tpp:55->../gen/Hls_Layers_UpConv.tpp:255]   --->   Operation 340 'fsqrt' 'tmp' <Predicate = true> <Delay = 1.83> <CoreInst = "FSqrt">   --->   Core 35 'FSqrt' <Latency = 27> <II = 1> <Delay = 1.83> <FuncUnit> <Opcode : 'fsqrt'> <InPorts = 1> <OutPorts = 1>
+
+State 98 <SV = 97> <Delay = 1.83>
+ST_98 : Operation 341 [6/28] (1.83ns)   --->   "%tmp = fsqrt i32 @llvm.sqrt.f32, i32 %x_assign" [/wrk/ci/prod/2024.2/hls_product/continuous/495/2024.2/src/shared/hls/clib/hlsmath/src/c++/sqrtfloat.cpp:13->../gen/Hls_Layers_UpConv.tpp:55->../gen/Hls_Layers_UpConv.tpp:255]   --->   Operation 341 'fsqrt' 'tmp' <Predicate = true> <Delay = 1.83> <CoreInst = "FSqrt">   --->   Core 35 'FSqrt' <Latency = 27> <II = 1> <Delay = 1.83> <FuncUnit> <Opcode : 'fsqrt'> <InPorts = 1> <OutPorts = 1>
+
+State 99 <SV = 98> <Delay = 1.83>
+ST_99 : Operation 342 [5/28] (1.83ns)   --->   "%tmp = fsqrt i32 @llvm.sqrt.f32, i32 %x_assign" [/wrk/ci/prod/2024.2/hls_product/continuous/495/2024.2/src/shared/hls/clib/hlsmath/src/c++/sqrtfloat.cpp:13->../gen/Hls_Layers_UpConv.tpp:55->../gen/Hls_Layers_UpConv.tpp:255]   --->   Operation 342 'fsqrt' 'tmp' <Predicate = true> <Delay = 1.83> <CoreInst = "FSqrt">   --->   Core 35 'FSqrt' <Latency = 27> <II = 1> <Delay = 1.83> <FuncUnit> <Opcode : 'fsqrt'> <InPorts = 1> <OutPorts = 1>
+
+State 100 <SV = 99> <Delay = 1.83>
+ST_100 : Operation 343 [4/28] (1.83ns)   --->   "%tmp = fsqrt i32 @llvm.sqrt.f32, i32 %x_assign" [/wrk/ci/prod/2024.2/hls_product/continuous/495/2024.2/src/shared/hls/clib/hlsmath/src/c++/sqrtfloat.cpp:13->../gen/Hls_Layers_UpConv.tpp:55->../gen/Hls_Layers_UpConv.tpp:255]   --->   Operation 343 'fsqrt' 'tmp' <Predicate = true> <Delay = 1.83> <CoreInst = "FSqrt">   --->   Core 35 'FSqrt' <Latency = 27> <II = 1> <Delay = 1.83> <FuncUnit> <Opcode : 'fsqrt'> <InPorts = 1> <OutPorts = 1>
+
+State 101 <SV = 100> <Delay = 1.83>
+ST_101 : Operation 344 [3/28] (1.83ns)   --->   "%tmp = fsqrt i32 @llvm.sqrt.f32, i32 %x_assign" [/wrk/ci/prod/2024.2/hls_product/continuous/495/2024.2/src/shared/hls/clib/hlsmath/src/c++/sqrtfloat.cpp:13->../gen/Hls_Layers_UpConv.tpp:55->../gen/Hls_Layers_UpConv.tpp:255]   --->   Operation 344 'fsqrt' 'tmp' <Predicate = true> <Delay = 1.83> <CoreInst = "FSqrt">   --->   Core 35 'FSqrt' <Latency = 27> <II = 1> <Delay = 1.83> <FuncUnit> <Opcode : 'fsqrt'> <InPorts = 1> <OutPorts = 1>
+
+State 102 <SV = 101> <Delay = 1.83>
+ST_102 : Operation 345 [2/28] (1.83ns)   --->   "%tmp = fsqrt i32 @llvm.sqrt.f32, i32 %x_assign" [/wrk/ci/prod/2024.2/hls_product/continuous/495/2024.2/src/shared/hls/clib/hlsmath/src/c++/sqrtfloat.cpp:13->../gen/Hls_Layers_UpConv.tpp:55->../gen/Hls_Layers_UpConv.tpp:255]   --->   Operation 345 'fsqrt' 'tmp' <Predicate = true> <Delay = 1.83> <CoreInst = "FSqrt">   --->   Core 35 'FSqrt' <Latency = 27> <II = 1> <Delay = 1.83> <FuncUnit> <Opcode : 'fsqrt'> <InPorts = 1> <OutPorts = 1>
+
+State 103 <SV = 102> <Delay = 1.83>
+ST_103 : Operation 346 [1/28] (1.83ns)   --->   "%tmp = fsqrt i32 @llvm.sqrt.f32, i32 %x_assign" [/wrk/ci/prod/2024.2/hls_product/continuous/495/2024.2/src/shared/hls/clib/hlsmath/src/c++/sqrtfloat.cpp:13->../gen/Hls_Layers_UpConv.tpp:55->../gen/Hls_Layers_UpConv.tpp:255]   --->   Operation 346 'fsqrt' 'tmp' <Predicate = true> <Delay = 1.83> <CoreInst = "FSqrt">   --->   Core 35 'FSqrt' <Latency = 27> <II = 1> <Delay = 1.83> <FuncUnit> <Opcode : 'fsqrt'> <InPorts = 1> <OutPorts = 1>
+
+State 104 <SV = 103> <Delay = 2.23>
+ST_104 : Operation 347 [30/30] (2.23ns)   --->   "%div1 = fdiv i32 1, i32 %tmp" [../gen/Hls_Layers_UpConv.tpp:255]   --->   Operation 347 'fdiv' 'div1' <Predicate = true> <Delay = 2.23> <CoreInst = "FDiv">   --->   Core 20 'FDiv' <Latency = 29> <II = 1> <Delay = 2.23> <FuncUnit> <Opcode : 'fdiv' 'frem'> <InPorts = 2> <OutPorts = 1>
+
+State 105 <SV = 104> <Delay = 2.23>
+ST_105 : Operation 348 [29/30] (2.23ns)   --->   "%div1 = fdiv i32 1, i32 %tmp" [../gen/Hls_Layers_UpConv.tpp:255]   --->   Operation 348 'fdiv' 'div1' <Predicate = true> <Delay = 2.23> <CoreInst = "FDiv">   --->   Core 20 'FDiv' <Latency = 29> <II = 1> <Delay = 2.23> <FuncUnit> <Opcode : 'fdiv' 'frem'> <InPorts = 2> <OutPorts = 1>
+
+State 106 <SV = 105> <Delay = 2.23>
+ST_106 : Operation 349 [28/30] (2.23ns)   --->   "%div1 = fdiv i32 1, i32 %tmp" [../gen/Hls_Layers_UpConv.tpp:255]   --->   Operation 349 'fdiv' 'div1' <Predicate = true> <Delay = 2.23> <CoreInst = "FDiv">   --->   Core 20 'FDiv' <Latency = 29> <II = 1> <Delay = 2.23> <FuncUnit> <Opcode : 'fdiv' 'frem'> <InPorts = 2> <OutPorts = 1>
+
+State 107 <SV = 106> <Delay = 2.23>
+ST_107 : Operation 350 [27/30] (2.23ns)   --->   "%div1 = fdiv i32 1, i32 %tmp" [../gen/Hls_Layers_UpConv.tpp:255]   --->   Operation 350 'fdiv' 'div1' <Predicate = true> <Delay = 2.23> <CoreInst = "FDiv">   --->   Core 20 'FDiv' <Latency = 29> <II = 1> <Delay = 2.23> <FuncUnit> <Opcode : 'fdiv' 'frem'> <InPorts = 2> <OutPorts = 1>
+
+State 108 <SV = 107> <Delay = 2.23>
+ST_108 : Operation 351 [26/30] (2.23ns)   --->   "%div1 = fdiv i32 1, i32 %tmp" [../gen/Hls_Layers_UpConv.tpp:255]   --->   Operation 351 'fdiv' 'div1' <Predicate = true> <Delay = 2.23> <CoreInst = "FDiv">   --->   Core 20 'FDiv' <Latency = 29> <II = 1> <Delay = 2.23> <FuncUnit> <Opcode : 'fdiv' 'frem'> <InPorts = 2> <OutPorts = 1>
+
+State 109 <SV = 108> <Delay = 2.23>
+ST_109 : Operation 352 [25/30] (2.23ns)   --->   "%div1 = fdiv i32 1, i32 %tmp" [../gen/Hls_Layers_UpConv.tpp:255]   --->   Operation 352 'fdiv' 'div1' <Predicate = true> <Delay = 2.23> <CoreInst = "FDiv">   --->   Core 20 'FDiv' <Latency = 29> <II = 1> <Delay = 2.23> <FuncUnit> <Opcode : 'fdiv' 'frem'> <InPorts = 2> <OutPorts = 1>
+
+State 110 <SV = 109> <Delay = 2.23>
+ST_110 : Operation 353 [24/30] (2.23ns)   --->   "%div1 = fdiv i32 1, i32 %tmp" [../gen/Hls_Layers_UpConv.tpp:255]   --->   Operation 353 'fdiv' 'div1' <Predicate = true> <Delay = 2.23> <CoreInst = "FDiv">   --->   Core 20 'FDiv' <Latency = 29> <II = 1> <Delay = 2.23> <FuncUnit> <Opcode : 'fdiv' 'frem'> <InPorts = 2> <OutPorts = 1>
+
+State 111 <SV = 110> <Delay = 2.23>
+ST_111 : Operation 354 [23/30] (2.23ns)   --->   "%div1 = fdiv i32 1, i32 %tmp" [../gen/Hls_Layers_UpConv.tpp:255]   --->   Operation 354 'fdiv' 'div1' <Predicate = true> <Delay = 2.23> <CoreInst = "FDiv">   --->   Core 20 'FDiv' <Latency = 29> <II = 1> <Delay = 2.23> <FuncUnit> <Opcode : 'fdiv' 'frem'> <InPorts = 2> <OutPorts = 1>
+
+State 112 <SV = 111> <Delay = 2.23>
+ST_112 : Operation 355 [22/30] (2.23ns)   --->   "%div1 = fdiv i32 1, i32 %tmp" [../gen/Hls_Layers_UpConv.tpp:255]   --->   Operation 355 'fdiv' 'div1' <Predicate = true> <Delay = 2.23> <CoreInst = "FDiv">   --->   Core 20 'FDiv' <Latency = 29> <II = 1> <Delay = 2.23> <FuncUnit> <Opcode : 'fdiv' 'frem'> <InPorts = 2> <OutPorts = 1>
+
+State 113 <SV = 112> <Delay = 2.23>
+ST_113 : Operation 356 [21/30] (2.23ns)   --->   "%div1 = fdiv i32 1, i32 %tmp" [../gen/Hls_Layers_UpConv.tpp:255]   --->   Operation 356 'fdiv' 'div1' <Predicate = true> <Delay = 2.23> <CoreInst = "FDiv">   --->   Core 20 'FDiv' <Latency = 29> <II = 1> <Delay = 2.23> <FuncUnit> <Opcode : 'fdiv' 'frem'> <InPorts = 2> <OutPorts = 1>
+
+State 114 <SV = 113> <Delay = 2.23>
+ST_114 : Operation 357 [20/30] (2.23ns)   --->   "%div1 = fdiv i32 1, i32 %tmp" [../gen/Hls_Layers_UpConv.tpp:255]   --->   Operation 357 'fdiv' 'div1' <Predicate = true> <Delay = 2.23> <CoreInst = "FDiv">   --->   Core 20 'FDiv' <Latency = 29> <II = 1> <Delay = 2.23> <FuncUnit> <Opcode : 'fdiv' 'frem'> <InPorts = 2> <OutPorts = 1>
+
+State 115 <SV = 114> <Delay = 2.23>
+ST_115 : Operation 358 [19/30] (2.23ns)   --->   "%div1 = fdiv i32 1, i32 %tmp" [../gen/Hls_Layers_UpConv.tpp:255]   --->   Operation 358 'fdiv' 'div1' <Predicate = true> <Delay = 2.23> <CoreInst = "FDiv">   --->   Core 20 'FDiv' <Latency = 29> <II = 1> <Delay = 2.23> <FuncUnit> <Opcode : 'fdiv' 'frem'> <InPorts = 2> <OutPorts = 1>
+
+State 116 <SV = 115> <Delay = 2.23>
+ST_116 : Operation 359 [18/30] (2.23ns)   --->   "%div1 = fdiv i32 1, i32 %tmp" [../gen/Hls_Layers_UpConv.tpp:255]   --->   Operation 359 'fdiv' 'div1' <Predicate = true> <Delay = 2.23> <CoreInst = "FDiv">   --->   Core 20 'FDiv' <Latency = 29> <II = 1> <Delay = 2.23> <FuncUnit> <Opcode : 'fdiv' 'frem'> <InPorts = 2> <OutPorts = 1>
+
+State 117 <SV = 116> <Delay = 2.23>
+ST_117 : Operation 360 [17/30] (2.23ns)   --->   "%div1 = fdiv i32 1, i32 %tmp" [../gen/Hls_Layers_UpConv.tpp:255]   --->   Operation 360 'fdiv' 'div1' <Predicate = true> <Delay = 2.23> <CoreInst = "FDiv">   --->   Core 20 'FDiv' <Latency = 29> <II = 1> <Delay = 2.23> <FuncUnit> <Opcode : 'fdiv' 'frem'> <InPorts = 2> <OutPorts = 1>
+
+State 118 <SV = 117> <Delay = 2.23>
+ST_118 : Operation 361 [16/30] (2.23ns)   --->   "%div1 = fdiv i32 1, i32 %tmp" [../gen/Hls_Layers_UpConv.tpp:255]   --->   Operation 361 'fdiv' 'div1' <Predicate = true> <Delay = 2.23> <CoreInst = "FDiv">   --->   Core 20 'FDiv' <Latency = 29> <II = 1> <Delay = 2.23> <FuncUnit> <Opcode : 'fdiv' 'frem'> <InPorts = 2> <OutPorts = 1>
+
+State 119 <SV = 118> <Delay = 2.23>
+ST_119 : Operation 362 [15/30] (2.23ns)   --->   "%div1 = fdiv i32 1, i32 %tmp" [../gen/Hls_Layers_UpConv.tpp:255]   --->   Operation 362 'fdiv' 'div1' <Predicate = true> <Delay = 2.23> <CoreInst = "FDiv">   --->   Core 20 'FDiv' <Latency = 29> <II = 1> <Delay = 2.23> <FuncUnit> <Opcode : 'fdiv' 'frem'> <InPorts = 2> <OutPorts = 1>
+
+State 120 <SV = 119> <Delay = 2.23>
+ST_120 : Operation 363 [14/30] (2.23ns)   --->   "%div1 = fdiv i32 1, i32 %tmp" [../gen/Hls_Layers_UpConv.tpp:255]   --->   Operation 363 'fdiv' 'div1' <Predicate = true> <Delay = 2.23> <CoreInst = "FDiv">   --->   Core 20 'FDiv' <Latency = 29> <II = 1> <Delay = 2.23> <FuncUnit> <Opcode : 'fdiv' 'frem'> <InPorts = 2> <OutPorts = 1>
+
+State 121 <SV = 120> <Delay = 2.23>
+ST_121 : Operation 364 [13/30] (2.23ns)   --->   "%div1 = fdiv i32 1, i32 %tmp" [../gen/Hls_Layers_UpConv.tpp:255]   --->   Operation 364 'fdiv' 'div1' <Predicate = true> <Delay = 2.23> <CoreInst = "FDiv">   --->   Core 20 'FDiv' <Latency = 29> <II = 1> <Delay = 2.23> <FuncUnit> <Opcode : 'fdiv' 'frem'> <InPorts = 2> <OutPorts = 1>
+
+State 122 <SV = 121> <Delay = 2.23>
+ST_122 : Operation 365 [12/30] (2.23ns)   --->   "%div1 = fdiv i32 1, i32 %tmp" [../gen/Hls_Layers_UpConv.tpp:255]   --->   Operation 365 'fdiv' 'div1' <Predicate = true> <Delay = 2.23> <CoreInst = "FDiv">   --->   Core 20 'FDiv' <Latency = 29> <II = 1> <Delay = 2.23> <FuncUnit> <Opcode : 'fdiv' 'frem'> <InPorts = 2> <OutPorts = 1>
+
+State 123 <SV = 122> <Delay = 2.23>
+ST_123 : Operation 366 [11/30] (2.23ns)   --->   "%div1 = fdiv i32 1, i32 %tmp" [../gen/Hls_Layers_UpConv.tpp:255]   --->   Operation 366 'fdiv' 'div1' <Predicate = true> <Delay = 2.23> <CoreInst = "FDiv">   --->   Core 20 'FDiv' <Latency = 29> <II = 1> <Delay = 2.23> <FuncUnit> <Opcode : 'fdiv' 'frem'> <InPorts = 2> <OutPorts = 1>
+
+State 124 <SV = 123> <Delay = 2.23>
+ST_124 : Operation 367 [10/30] (2.23ns)   --->   "%div1 = fdiv i32 1, i32 %tmp" [../gen/Hls_Layers_UpConv.tpp:255]   --->   Operation 367 'fdiv' 'div1' <Predicate = true> <Delay = 2.23> <CoreInst = "FDiv">   --->   Core 20 'FDiv' <Latency = 29> <II = 1> <Delay = 2.23> <FuncUnit> <Opcode : 'fdiv' 'frem'> <InPorts = 2> <OutPorts = 1>
+
+State 125 <SV = 124> <Delay = 2.23>
+ST_125 : Operation 368 [9/30] (2.23ns)   --->   "%div1 = fdiv i32 1, i32 %tmp" [../gen/Hls_Layers_UpConv.tpp:255]   --->   Operation 368 'fdiv' 'div1' <Predicate = true> <Delay = 2.23> <CoreInst = "FDiv">   --->   Core 20 'FDiv' <Latency = 29> <II = 1> <Delay = 2.23> <FuncUnit> <Opcode : 'fdiv' 'frem'> <InPorts = 2> <OutPorts = 1>
+
+State 126 <SV = 125> <Delay = 2.23>
+ST_126 : Operation 369 [8/30] (2.23ns)   --->   "%div1 = fdiv i32 1, i32 %tmp" [../gen/Hls_Layers_UpConv.tpp:255]   --->   Operation 369 'fdiv' 'div1' <Predicate = true> <Delay = 2.23> <CoreInst = "FDiv">   --->   Core 20 'FDiv' <Latency = 29> <II = 1> <Delay = 2.23> <FuncUnit> <Opcode : 'fdiv' 'frem'> <InPorts = 2> <OutPorts = 1>
+
+State 127 <SV = 126> <Delay = 2.23>
+ST_127 : Operation 370 [7/30] (2.23ns)   --->   "%div1 = fdiv i32 1, i32 %tmp" [../gen/Hls_Layers_UpConv.tpp:255]   --->   Operation 370 'fdiv' 'div1' <Predicate = true> <Delay = 2.23> <CoreInst = "FDiv">   --->   Core 20 'FDiv' <Latency = 29> <II = 1> <Delay = 2.23> <FuncUnit> <Opcode : 'fdiv' 'frem'> <InPorts = 2> <OutPorts = 1>
+
+State 128 <SV = 127> <Delay = 2.23>
+ST_128 : Operation 371 [6/30] (2.23ns)   --->   "%div1 = fdiv i32 1, i32 %tmp" [../gen/Hls_Layers_UpConv.tpp:255]   --->   Operation 371 'fdiv' 'div1' <Predicate = true> <Delay = 2.23> <CoreInst = "FDiv">   --->   Core 20 'FDiv' <Latency = 29> <II = 1> <Delay = 2.23> <FuncUnit> <Opcode : 'fdiv' 'frem'> <InPorts = 2> <OutPorts = 1>
+
+State 129 <SV = 128> <Delay = 2.23>
+ST_129 : Operation 372 [5/30] (2.23ns)   --->   "%div1 = fdiv i32 1, i32 %tmp" [../gen/Hls_Layers_UpConv.tpp:255]   --->   Operation 372 'fdiv' 'div1' <Predicate = true> <Delay = 2.23> <CoreInst = "FDiv">   --->   Core 20 'FDiv' <Latency = 29> <II = 1> <Delay = 2.23> <FuncUnit> <Opcode : 'fdiv' 'frem'> <InPorts = 2> <OutPorts = 1>
+
+State 130 <SV = 129> <Delay = 2.23>
+ST_130 : Operation 373 [4/30] (2.23ns)   --->   "%div1 = fdiv i32 1, i32 %tmp" [../gen/Hls_Layers_UpConv.tpp:255]   --->   Operation 373 'fdiv' 'div1' <Predicate = true> <Delay = 2.23> <CoreInst = "FDiv">   --->   Core 20 'FDiv' <Latency = 29> <II = 1> <Delay = 2.23> <FuncUnit> <Opcode : 'fdiv' 'frem'> <InPorts = 2> <OutPorts = 1>
+
+State 131 <SV = 130> <Delay = 2.23>
+ST_131 : Operation 374 [3/30] (2.23ns)   --->   "%div1 = fdiv i32 1, i32 %tmp" [../gen/Hls_Layers_UpConv.tpp:255]   --->   Operation 374 'fdiv' 'div1' <Predicate = true> <Delay = 2.23> <CoreInst = "FDiv">   --->   Core 20 'FDiv' <Latency = 29> <II = 1> <Delay = 2.23> <FuncUnit> <Opcode : 'fdiv' 'frem'> <InPorts = 2> <OutPorts = 1>
+
+State 132 <SV = 131> <Delay = 2.23>
+ST_132 : Operation 375 [2/30] (2.23ns)   --->   "%div1 = fdiv i32 1, i32 %tmp" [../gen/Hls_Layers_UpConv.tpp:255]   --->   Operation 375 'fdiv' 'div1' <Predicate = true> <Delay = 2.23> <CoreInst = "FDiv">   --->   Core 20 'FDiv' <Latency = 29> <II = 1> <Delay = 2.23> <FuncUnit> <Opcode : 'fdiv' 'frem'> <InPorts = 2> <OutPorts = 1>
+
+State 133 <SV = 132> <Delay = 2.23>
+ST_133 : Operation 376 [1/30] (2.23ns)   --->   "%div1 = fdiv i32 1, i32 %tmp" [../gen/Hls_Layers_UpConv.tpp:255]   --->   Operation 376 'fdiv' 'div1' <Predicate = true> <Delay = 2.23> <CoreInst = "FDiv">   --->   Core 20 'FDiv' <Latency = 29> <II = 1> <Delay = 2.23> <FuncUnit> <Opcode : 'fdiv' 'frem'> <InPorts = 2> <OutPorts = 1>
+
+State 134 <SV = 133> <Delay = 1.76>
+ST_134 : Operation 377 [2/2] (1.76ns)   --->   "%inv_std = sptohp i32 %div1" [../gen/Hls_Layers_UpConv.tpp:255]   --->   Operation 377 'sptohp' 'inv_std' <Predicate = true> <Delay = 1.76> <CoreInst = "Float2Half">   --->   Core 69 'Float2Half' <Latency = 1> <II = 1> <Delay = 1.76> <FuncUnit> <Opcode : 'sptohp'> <InPorts = 1> <OutPorts = 1>
+
+State 135 <SV = 134> <Delay = 1.76>
+ST_135 : Operation 378 [1/2] (1.76ns)   --->   "%inv_std = sptohp i32 %div1" [../gen/Hls_Layers_UpConv.tpp:255]   --->   Operation 378 'sptohp' 'inv_std' <Predicate = true> <Delay = 1.76> <CoreInst = "Float2Half">   --->   Core 69 'Float2Half' <Latency = 1> <II = 1> <Delay = 1.76> <FuncUnit> <Opcode : 'sptohp'> <InPorts = 1> <OutPorts = 1>
+ST_135 : Operation 379 [2/2] (0.00ns)   --->   "%call_ln238 = call void @UpConv_Fused_Row<8, 16, 16, 960, 480>_Pipeline_NORM_WRITE, i256 %gmem_out, i59 %trunc_ln3, i10 %sub_ln246, i256 %g_buf, i256 %be_buf, i16 %conv3, i16 %inv_std, i16 %void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_9, i16 %void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_8, i16 %void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_7, i16 %void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_6, i16 %void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_5, i16 %void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_4, i16 %void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_3, i16 %void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_2, i16 %void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_1, i16 %void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u, i16 %p_ZZ16UpConv_Fused_RowILi8ELi16ELi16ELi960ELi480EEvP7ap_uintILi256EEPKS1_S4_S4_S4_5, i16 %p_ZZ16UpConv_Fused_RowILi8ELi16ELi16ELi960ELi480EEvP7ap_uintILi256EEPKS1_S4_S4_S4_4, i16 %p_ZZ16UpConv_Fused_RowILi8ELi16ELi16ELi960ELi480EEvP7ap_uintILi256EEPKS1_S4_S4_S4_3, i16 %p_ZZ16UpConv_Fused_RowILi8ELi16ELi16ELi960ELi480EEvP7ap_uintILi256EEPKS1_S4_S4_S4_2, i16 %p_ZZ16UpConv_Fused_RowILi8ELi16ELi16ELi960ELi480EEvP7ap_uintILi256EEPKS1_S4_S4_S4_1, i16 %p_ZZ16UpConv_Fused_RowILi8ELi16ELi16ELi960ELi480EEvP7ap_uintILi256EEPKS1_S4_S4_S4" [../gen/Hls_Layers_UpConv.tpp:238]   --->   Operation 379 'call' 'call_ln238' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Generic Core
+
+State 136 <SV = 135> <Delay = 0.00>
+ST_136 : Operation 380 [1/1] (0.00ns)   --->   "%specpipeline_ln239 = specpipeline void @_ssdm_op_SpecPipeline, i32 0, i32 0, i32 1, i32 0, void @empty_5" [../gen/Hls_Layers_UpConv.tpp:239]   --->   Operation 380 'specpipeline' 'specpipeline_ln239' <Predicate = true> <Delay = 0.00>
+ST_136 : Operation 381 [1/1] (0.00ns)   --->   "%speclooptripcount_ln238 = speclooptripcount void @_ssdm_op_SpecLoopTripCount, i64 32, i64 32, i64 32" [../gen/Hls_Layers_UpConv.tpp:238]   --->   Operation 381 'speclooptripcount' 'speclooptripcount_ln238' <Predicate = true> <Delay = 0.00>
+ST_136 : Operation 382 [1/1] (0.00ns)   --->   "%specloopname_ln238 = specloopname void @_ssdm_op_SpecLoopName, void @empty_11" [../gen/Hls_Layers_UpConv.tpp:238]   --->   Operation 382 'specloopname' 'specloopname_ln238' <Predicate = true> <Delay = 0.00>
+ST_136 : Operation 383 [1/2] (0.00ns)   --->   "%call_ln238 = call void @UpConv_Fused_Row<8, 16, 16, 960, 480>_Pipeline_NORM_WRITE, i256 %gmem_out, i59 %trunc_ln3, i10 %sub_ln246, i256 %g_buf, i256 %be_buf, i16 %conv3, i16 %inv_std, i16 %void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_9, i16 %void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_8, i16 %void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_7, i16 %void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_6, i16 %void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_5, i16 %void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_4, i16 %void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_3, i16 %void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_2, i16 %void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_1, i16 %void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u, i16 %p_ZZ16UpConv_Fused_RowILi8ELi16ELi16ELi960ELi480EEvP7ap_uintILi256EEPKS1_S4_S4_S4_5, i16 %p_ZZ16UpConv_Fused_RowILi8ELi16ELi16ELi960ELi480EEvP7ap_uintILi256EEPKS1_S4_S4_S4_4, i16 %p_ZZ16UpConv_Fused_RowILi8ELi16ELi16ELi960ELi480EEvP7ap_uintILi256EEPKS1_S4_S4_S4_3, i16 %p_ZZ16UpConv_Fused_RowILi8ELi16ELi16ELi960ELi480EEvP7ap_uintILi256EEPKS1_S4_S4_S4_2, i16 %p_ZZ16UpConv_Fused_RowILi8ELi16ELi16ELi960ELi480EEvP7ap_uintILi256EEPKS1_S4_S4_S4_1, i16 %p_ZZ16UpConv_Fused_RowILi8ELi16ELi16ELi960ELi480EEvP7ap_uintILi256EEPKS1_S4_S4_S4" [../gen/Hls_Layers_UpConv.tpp:238]   --->   Operation 383 'call' 'call_ln238' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Generic Core
+ST_136 : Operation 384 [1/1] (0.00ns)   --->   "%br_ln238 = br void %BIAS_STATS" [../gen/Hls_Layers_UpConv.tpp:238]   --->   Operation 384 'br' 'br_ln238' <Predicate = true> <Delay = 0.00>
+
+State 137 <SV = 14> <Delay = 2.43>
+ST_137 : Operation 385 [5/5] (2.43ns)   --->   "%empty_185 = writeresp i1 @_ssdm_op_WriteResp.m_axi.p1i256, i256 %gmem_out_addr" [../gen/Hls_Layers_UpConv.tpp:275]   --->   Operation 385 'writeresp' 'empty_185' <Predicate = true> <Delay = 2.43> <CoreInst = "m_axi">   --->   Core 119 'm_axi' <Latency = 3> <II = 1> <Delay = 1.00> <Adapter> <Opcode : 'read' 'write' 'readreq' 'writereq' 'writeresp'>
+
+State 138 <SV = 15> <Delay = 2.43>
+ST_138 : Operation 386 [4/5] (2.43ns)   --->   "%empty_185 = writeresp i1 @_ssdm_op_WriteResp.m_axi.p1i256, i256 %gmem_out_addr" [../gen/Hls_Layers_UpConv.tpp:275]   --->   Operation 386 'writeresp' 'empty_185' <Predicate = true> <Delay = 2.43> <CoreInst = "m_axi">   --->   Core 119 'm_axi' <Latency = 3> <II = 1> <Delay = 1.00> <Adapter> <Opcode : 'read' 'write' 'readreq' 'writereq' 'writeresp'>
+
+State 139 <SV = 16> <Delay = 2.43>
+ST_139 : Operation 387 [3/5] (2.43ns)   --->   "%empty_185 = writeresp i1 @_ssdm_op_WriteResp.m_axi.p1i256, i256 %gmem_out_addr" [../gen/Hls_Layers_UpConv.tpp:275]   --->   Operation 387 'writeresp' 'empty_185' <Predicate = true> <Delay = 2.43> <CoreInst = "m_axi">   --->   Core 119 'm_axi' <Latency = 3> <II = 1> <Delay = 1.00> <Adapter> <Opcode : 'read' 'write' 'readreq' 'writereq' 'writeresp'>
+
+State 140 <SV = 17> <Delay = 2.43>
+ST_140 : Operation 388 [2/5] (2.43ns)   --->   "%empty_185 = writeresp i1 @_ssdm_op_WriteResp.m_axi.p1i256, i256 %gmem_out_addr" [../gen/Hls_Layers_UpConv.tpp:275]   --->   Operation 388 'writeresp' 'empty_185' <Predicate = true> <Delay = 2.43> <CoreInst = "m_axi">   --->   Core 119 'm_axi' <Latency = 3> <II = 1> <Delay = 1.00> <Adapter> <Opcode : 'read' 'write' 'readreq' 'writereq' 'writeresp'>
+
+State 141 <SV = 18> <Delay = 2.43>
+ST_141 : Operation 389 [1/5] (2.43ns)   --->   "%empty_185 = writeresp i1 @_ssdm_op_WriteResp.m_axi.p1i256, i256 %gmem_out_addr" [../gen/Hls_Layers_UpConv.tpp:275]   --->   Operation 389 'writeresp' 'empty_185' <Predicate = true> <Delay = 2.43> <CoreInst = "m_axi">   --->   Core 119 'm_axi' <Latency = 3> <II = 1> <Delay = 1.00> <Adapter> <Opcode : 'read' 'write' 'readreq' 'writereq' 'writeresp'>
+ST_141 : Operation 390 [1/1] (0.00ns)   --->   "%ret_ln275 = ret" [../gen/Hls_Layers_UpConv.tpp:275]   --->   Operation 390 'ret' 'ret_ln275' <Predicate = true> <Delay = 0.00>
+
+
+============================================================
++ Verbose Summary: Timing violations
+============================================================
+Target clock period: 3.333ns, clock uncertainty: 0.900ns.
+
+ <State 1>: 1.092ns
+The critical path consists of the following:
+	wire read operation ('BE_ptr_read') on port 'BE_ptr' [32]  (0.000 ns)
+	'call' operation 0 bit ('call_ln228', ../gen/Hls_Layers_UpConv.tpp:228) to 'UpConv_Fused_Row<8, 16, 16, 960, 480>_Pipeline_LOAD_PARAMS' [75]  (1.092 ns)
+
+ <State 2>: 1.208ns
+The critical path consists of the following:
+	'call' operation 0 bit ('call_ln0') to 'UpConv_Fused_Row<8, 16, 16, 960, 480>_Pipeline_RESET_ROW_ACC' [62]  (1.208 ns)
+
+ <State 3>: 2.433ns
+The critical path consists of the following:
+	wire read operation ('W_ptr_read') on port 'W_ptr' [35]  (0.000 ns)
+	'getelementptr' operation 256 bit ('gmem_weight_addr', ../gen/Hls_Layers_UpConv.tpp:135) [66]  (0.000 ns)
+	bus request operation ('empty', ../gen/Hls_Layers_UpConv.tpp:135) on port 'gmem_weight' (../gen/Hls_Layers_UpConv.tpp:135) [67]  (2.433 ns)
+
+ <State 4>: 2.433ns
+The critical path consists of the following:
+	bus request operation ('empty', ../gen/Hls_Layers_UpConv.tpp:135) on port 'gmem_weight' (../gen/Hls_Layers_UpConv.tpp:135) [67]  (2.433 ns)
+
+ <State 5>: 2.433ns
+The critical path consists of the following:
+	bus request operation ('empty', ../gen/Hls_Layers_UpConv.tpp:135) on port 'gmem_weight' (../gen/Hls_Layers_UpConv.tpp:135) [67]  (2.433 ns)
+
+ <State 6>: 2.433ns
+The critical path consists of the following:
+	bus request operation ('empty', ../gen/Hls_Layers_UpConv.tpp:135) on port 'gmem_weight' (../gen/Hls_Layers_UpConv.tpp:135) [67]  (2.433 ns)
+
+ <State 7>: 2.433ns
+The critical path consists of the following:
+	bus request operation ('empty', ../gen/Hls_Layers_UpConv.tpp:135) on port 'gmem_weight' (../gen/Hls_Layers_UpConv.tpp:135) [67]  (2.433 ns)
+
+ <State 8>: 2.433ns
+The critical path consists of the following:
+	bus request operation ('empty', ../gen/Hls_Layers_UpConv.tpp:135) on port 'gmem_weight' (../gen/Hls_Layers_UpConv.tpp:135) [67]  (2.433 ns)
+
+ <State 9>: 2.433ns
+The critical path consists of the following:
+	bus request operation ('empty', ../gen/Hls_Layers_UpConv.tpp:135) on port 'gmem_weight' (../gen/Hls_Layers_UpConv.tpp:135) [67]  (2.433 ns)
+
+ <State 10>: 2.433ns
+The critical path consists of the following:
+	bus request operation ('empty', ../gen/Hls_Layers_UpConv.tpp:135) on port 'gmem_weight' (../gen/Hls_Layers_UpConv.tpp:135) [67]  (2.433 ns)
+
+ <State 11>: 0.789ns
+The critical path consists of the following:
+	wire read operation ('ho_read') on port 'ho' [29]  (0.000 ns)
+	'add' operation 6 bit ('add52') [63]  (0.789 ns)
+
+ <State 12>: 1.979ns
+The critical path consists of the following:
+	'sub' operation 20 bit ('sub_ln238', ../gen/Hls_Layers_UpConv.tpp:238) [80]  (0.894 ns)
+	'add' operation 64 bit ('add_ln238', ../gen/Hls_Layers_UpConv.tpp:238) [82]  (1.085 ns)
+
+ <State 13>: 2.433ns
+The critical path consists of the following:
+	'getelementptr' operation 256 bit ('gmem_out_addr', ../gen/Hls_Layers_UpConv.tpp:238) [85]  (0.000 ns)
+	bus request operation ('empty_184', ../gen/Hls_Layers_UpConv.tpp:238) on port 'gmem_out' (../gen/Hls_Layers_UpConv.tpp:238) [86]  (2.433 ns)
+
+ <State 14>: 1.208ns
+The critical path consists of the following:
+	'load' operation 6 bit ('wo', ../gen/Hls_Layers_UpConv.tpp:246) on local variable 'wo', ../gen/Hls_Layers_UpConv.tpp:238 [90]  (0.000 ns)
+	'icmp' operation 1 bit ('icmp_ln238', ../gen/Hls_Layers_UpConv.tpp:238) [91]  (0.781 ns)
+	'store' operation 0 bit ('store_ln238', ../gen/Hls_Layers_UpConv.tpp:238) of variable 'add_ln238_1', ../gen/Hls_Layers_UpConv.tpp:238 on local variable 'wo', ../gen/Hls_Layers_UpConv.tpp:238 [116]  (0.427 ns)
+
+ <State 15>: 2.024ns
+The critical path consists of the following:
+	'call' operation 0 bit ('call_ln246', ../gen/Hls_Layers_UpConv.tpp:246) to 'UpConv_Fused_Row<8, 16, 16, 960, 480>_Pipeline_BIAS_STATS' [103]  (2.024 ns)
+
+ <State 16>: 0.000ns
+The critical path consists of the following:
+
+ <State 17>: 2.236ns
+The critical path consists of the following:
+	'load' operation 32 bit ('sum_loc_load') on local variable 'sum_loc' [105]  (0.000 ns)
+	'fdiv' operation 32 bit ('mean', ../gen/Hls_Layers_UpConv.tpp:253) [106]  (2.236 ns)
+
+ <State 18>: 2.236ns
+The critical path consists of the following:
+	'fdiv' operation 32 bit ('mean', ../gen/Hls_Layers_UpConv.tpp:253) [106]  (2.236 ns)
+
+ <State 19>: 2.236ns
+The critical path consists of the following:
+	'fdiv' operation 32 bit ('mean', ../gen/Hls_Layers_UpConv.tpp:253) [106]  (2.236 ns)
+
+ <State 20>: 2.236ns
+The critical path consists of the following:
+	'fdiv' operation 32 bit ('mean', ../gen/Hls_Layers_UpConv.tpp:253) [106]  (2.236 ns)
+
+ <State 21>: 2.236ns
+The critical path consists of the following:
+	'fdiv' operation 32 bit ('mean', ../gen/Hls_Layers_UpConv.tpp:253) [106]  (2.236 ns)
+
+ <State 22>: 2.236ns
+The critical path consists of the following:
+	'fdiv' operation 32 bit ('mean', ../gen/Hls_Layers_UpConv.tpp:253) [106]  (2.236 ns)
+
+ <State 23>: 2.236ns
+The critical path consists of the following:
+	'fdiv' operation 32 bit ('mean', ../gen/Hls_Layers_UpConv.tpp:253) [106]  (2.236 ns)
+
+ <State 24>: 2.236ns
+The critical path consists of the following:
+	'fdiv' operation 32 bit ('mean', ../gen/Hls_Layers_UpConv.tpp:253) [106]  (2.236 ns)
+
+ <State 25>: 2.236ns
+The critical path consists of the following:
+	'fdiv' operation 32 bit ('mean', ../gen/Hls_Layers_UpConv.tpp:253) [106]  (2.236 ns)
+
+ <State 26>: 2.236ns
+The critical path consists of the following:
+	'fdiv' operation 32 bit ('mean', ../gen/Hls_Layers_UpConv.tpp:253) [106]  (2.236 ns)
+
+ <State 27>: 2.236ns
+The critical path consists of the following:
+	'fdiv' operation 32 bit ('mean', ../gen/Hls_Layers_UpConv.tpp:253) [106]  (2.236 ns)
+
+ <State 28>: 2.236ns
+The critical path consists of the following:
+	'fdiv' operation 32 bit ('mean', ../gen/Hls_Layers_UpConv.tpp:253) [106]  (2.236 ns)
+
+ <State 29>: 2.236ns
+The critical path consists of the following:
+	'fdiv' operation 32 bit ('mean', ../gen/Hls_Layers_UpConv.tpp:253) [106]  (2.236 ns)
+
+ <State 30>: 2.236ns
+The critical path consists of the following:
+	'fdiv' operation 32 bit ('mean', ../gen/Hls_Layers_UpConv.tpp:253) [106]  (2.236 ns)
+
+ <State 31>: 2.236ns
+The critical path consists of the following:
+	'fdiv' operation 32 bit ('mean', ../gen/Hls_Layers_UpConv.tpp:253) [106]  (2.236 ns)
+
+ <State 32>: 2.236ns
+The critical path consists of the following:
+	'fdiv' operation 32 bit ('mean', ../gen/Hls_Layers_UpConv.tpp:253) [106]  (2.236 ns)
+
+ <State 33>: 2.236ns
+The critical path consists of the following:
+	'fdiv' operation 32 bit ('mean', ../gen/Hls_Layers_UpConv.tpp:253) [106]  (2.236 ns)
+
+ <State 34>: 2.236ns
+The critical path consists of the following:
+	'fdiv' operation 32 bit ('mean', ../gen/Hls_Layers_UpConv.tpp:253) [106]  (2.236 ns)
+
+ <State 35>: 2.236ns
+The critical path consists of the following:
+	'fdiv' operation 32 bit ('mean', ../gen/Hls_Layers_UpConv.tpp:253) [106]  (2.236 ns)
+
+ <State 36>: 2.236ns
+The critical path consists of the following:
+	'fdiv' operation 32 bit ('mean', ../gen/Hls_Layers_UpConv.tpp:253) [106]  (2.236 ns)
+
+ <State 37>: 2.236ns
+The critical path consists of the following:
+	'fdiv' operation 32 bit ('mean', ../gen/Hls_Layers_UpConv.tpp:253) [106]  (2.236 ns)
+
+ <State 38>: 2.236ns
+The critical path consists of the following:
+	'fdiv' operation 32 bit ('mean', ../gen/Hls_Layers_UpConv.tpp:253) [106]  (2.236 ns)
+
+ <State 39>: 2.236ns
+The critical path consists of the following:
+	'fdiv' operation 32 bit ('mean', ../gen/Hls_Layers_UpConv.tpp:253) [106]  (2.236 ns)
+
+ <State 40>: 2.236ns
+The critical path consists of the following:
+	'fdiv' operation 32 bit ('mean', ../gen/Hls_Layers_UpConv.tpp:253) [106]  (2.236 ns)
+
+ <State 41>: 2.236ns
+The critical path consists of the following:
+	'fdiv' operation 32 bit ('mean', ../gen/Hls_Layers_UpConv.tpp:253) [106]  (2.236 ns)
+
+ <State 42>: 2.236ns
+The critical path consists of the following:
+	'fdiv' operation 32 bit ('mean', ../gen/Hls_Layers_UpConv.tpp:253) [106]  (2.236 ns)
+
+ <State 43>: 2.236ns
+The critical path consists of the following:
+	'fdiv' operation 32 bit ('mean', ../gen/Hls_Layers_UpConv.tpp:253) [106]  (2.236 ns)
+
+ <State 44>: 2.236ns
+The critical path consists of the following:
+	'fdiv' operation 32 bit ('mean', ../gen/Hls_Layers_UpConv.tpp:253) [106]  (2.236 ns)
+
+ <State 45>: 2.236ns
+The critical path consists of the following:
+	'fdiv' operation 32 bit ('mean', ../gen/Hls_Layers_UpConv.tpp:253) [106]  (2.236 ns)
+
+ <State 46>: 2.236ns
+The critical path consists of the following:
+	'fdiv' operation 32 bit ('mean', ../gen/Hls_Layers_UpConv.tpp:253) [106]  (2.236 ns)
+
+ <State 47>: 2.416ns
+The critical path consists of the following:
+	'fmul' operation 32 bit ('mul', ../gen/Hls_Layers_UpConv.tpp:254) [108]  (2.416 ns)
+
+ <State 48>: 2.416ns
+The critical path consists of the following:
+	'fmul' operation 32 bit ('mul', ../gen/Hls_Layers_UpConv.tpp:254) [108]  (2.416 ns)
+
+ <State 49>: 2.416ns
+The critical path consists of the following:
+	'fmul' operation 32 bit ('mul', ../gen/Hls_Layers_UpConv.tpp:254) [108]  (2.416 ns)
+
+ <State 50>: 2.416ns
+The critical path consists of the following:
+	'fmul' operation 32 bit ('mul', ../gen/Hls_Layers_UpConv.tpp:254) [108]  (2.416 ns)
+
+ <State 51>: 2.416ns
+The critical path consists of the following:
+	'fmul' operation 32 bit ('mul', ../gen/Hls_Layers_UpConv.tpp:254) [108]  (2.416 ns)
+
+ <State 52>: 2.416ns
+The critical path consists of the following:
+	'fmul' operation 32 bit ('mul', ../gen/Hls_Layers_UpConv.tpp:254) [108]  (2.416 ns)
+
+ <State 53>: 2.416ns
+The critical path consists of the following:
+	'fmul' operation 32 bit ('mul', ../gen/Hls_Layers_UpConv.tpp:254) [108]  (2.416 ns)
+
+ <State 54>: 2.262ns
+The critical path consists of the following:
+	'fsub' operation 32 bit ('var', ../gen/Hls_Layers_UpConv.tpp:254) [109]  (2.262 ns)
+
+ <State 55>: 2.262ns
+The critical path consists of the following:
+	'fsub' operation 32 bit ('var', ../gen/Hls_Layers_UpConv.tpp:254) [109]  (2.262 ns)
+
+ <State 56>: 2.262ns
+The critical path consists of the following:
+	'fsub' operation 32 bit ('var', ../gen/Hls_Layers_UpConv.tpp:254) [109]  (2.262 ns)
+
+ <State 57>: 2.262ns
+The critical path consists of the following:
+	'fsub' operation 32 bit ('var', ../gen/Hls_Layers_UpConv.tpp:254) [109]  (2.262 ns)
+
+ <State 58>: 2.262ns
+The critical path consists of the following:
+	'fsub' operation 32 bit ('var', ../gen/Hls_Layers_UpConv.tpp:254) [109]  (2.262 ns)
+
+ <State 59>: 2.262ns
+The critical path consists of the following:
+	'fsub' operation 32 bit ('var', ../gen/Hls_Layers_UpConv.tpp:254) [109]  (2.262 ns)
+
+ <State 60>: 2.262ns
+The critical path consists of the following:
+	'fsub' operation 32 bit ('var', ../gen/Hls_Layers_UpConv.tpp:254) [109]  (2.262 ns)
+
+ <State 61>: 2.262ns
+The critical path consists of the following:
+	'fsub' operation 32 bit ('var', ../gen/Hls_Layers_UpConv.tpp:254) [109]  (2.262 ns)
+
+ <State 62>: 2.262ns
+The critical path consists of the following:
+	'fsub' operation 32 bit ('var', ../gen/Hls_Layers_UpConv.tpp:254) [109]  (2.262 ns)
+
+ <State 63>: 2.262ns
+The critical path consists of the following:
+	'fsub' operation 32 bit ('var', ../gen/Hls_Layers_UpConv.tpp:254) [109]  (2.262 ns)
+
+ <State 64>: 2.262ns
+The critical path consists of the following:
+	'fsub' operation 32 bit ('var', ../gen/Hls_Layers_UpConv.tpp:254) [109]  (2.262 ns)
+
+ <State 65>: 2.262ns
+The critical path consists of the following:
+	'fadd' operation 32 bit ('x', ../gen/Hls_Layers_UpConv.tpp:255) [110]  (2.262 ns)
+
+ <State 66>: 2.262ns
+The critical path consists of the following:
+	'fadd' operation 32 bit ('x', ../gen/Hls_Layers_UpConv.tpp:255) [110]  (2.262 ns)
+
+ <State 67>: 2.262ns
+The critical path consists of the following:
+	'fadd' operation 32 bit ('x', ../gen/Hls_Layers_UpConv.tpp:255) [110]  (2.262 ns)
+
+ <State 68>: 2.262ns
+The critical path consists of the following:
+	'fadd' operation 32 bit ('x', ../gen/Hls_Layers_UpConv.tpp:255) [110]  (2.262 ns)
+
+ <State 69>: 2.262ns
+The critical path consists of the following:
+	'fadd' operation 32 bit ('x', ../gen/Hls_Layers_UpConv.tpp:255) [110]  (2.262 ns)
+
+ <State 70>: 2.262ns
+The critical path consists of the following:
+	'fadd' operation 32 bit ('x', ../gen/Hls_Layers_UpConv.tpp:255) [110]  (2.262 ns)
+
+ <State 71>: 2.262ns
+The critical path consists of the following:
+	'fadd' operation 32 bit ('x', ../gen/Hls_Layers_UpConv.tpp:255) [110]  (2.262 ns)
+
+ <State 72>: 2.262ns
+The critical path consists of the following:
+	'fadd' operation 32 bit ('x', ../gen/Hls_Layers_UpConv.tpp:255) [110]  (2.262 ns)
+
+ <State 73>: 2.262ns
+The critical path consists of the following:
+	'fadd' operation 32 bit ('x', ../gen/Hls_Layers_UpConv.tpp:255) [110]  (2.262 ns)
+
+ <State 74>: 2.262ns
+The critical path consists of the following:
+	'fadd' operation 32 bit ('x', ../gen/Hls_Layers_UpConv.tpp:255) [110]  (2.262 ns)
+
+ <State 75>: 2.262ns
+The critical path consists of the following:
+	'fadd' operation 32 bit ('x', ../gen/Hls_Layers_UpConv.tpp:255) [110]  (2.262 ns)
+
+ <State 76>: 1.838ns
+The critical path consists of the following:
+	'fsqrt' operation 32 bit ('tmp', /wrk/ci/prod/2024.2/hls_product/continuous/495/2024.2/src/shared/hls/clib/hlsmath/src/c++/sqrtfloat.cpp:13->../gen/Hls_Layers_UpConv.tpp:55->../gen/Hls_Layers_UpConv.tpp:255) [111]  (1.838 ns)
+
+ <State 77>: 1.838ns
+The critical path consists of the following:
+	'fsqrt' operation 32 bit ('tmp', /wrk/ci/prod/2024.2/hls_product/continuous/495/2024.2/src/shared/hls/clib/hlsmath/src/c++/sqrtfloat.cpp:13->../gen/Hls_Layers_UpConv.tpp:55->../gen/Hls_Layers_UpConv.tpp:255) [111]  (1.838 ns)
+
+ <State 78>: 1.838ns
+The critical path consists of the following:
+	'fsqrt' operation 32 bit ('tmp', /wrk/ci/prod/2024.2/hls_product/continuous/495/2024.2/src/shared/hls/clib/hlsmath/src/c++/sqrtfloat.cpp:13->../gen/Hls_Layers_UpConv.tpp:55->../gen/Hls_Layers_UpConv.tpp:255) [111]  (1.838 ns)
+
+ <State 79>: 1.838ns
+The critical path consists of the following:
+	'fsqrt' operation 32 bit ('tmp', /wrk/ci/prod/2024.2/hls_product/continuous/495/2024.2/src/shared/hls/clib/hlsmath/src/c++/sqrtfloat.cpp:13->../gen/Hls_Layers_UpConv.tpp:55->../gen/Hls_Layers_UpConv.tpp:255) [111]  (1.838 ns)
+
+ <State 80>: 1.838ns
+The critical path consists of the following:
+	'fsqrt' operation 32 bit ('tmp', /wrk/ci/prod/2024.2/hls_product/continuous/495/2024.2/src/shared/hls/clib/hlsmath/src/c++/sqrtfloat.cpp:13->../gen/Hls_Layers_UpConv.tpp:55->../gen/Hls_Layers_UpConv.tpp:255) [111]  (1.838 ns)
+
+ <State 81>: 1.838ns
+The critical path consists of the following:
+	'fsqrt' operation 32 bit ('tmp', /wrk/ci/prod/2024.2/hls_product/continuous/495/2024.2/src/shared/hls/clib/hlsmath/src/c++/sqrtfloat.cpp:13->../gen/Hls_Layers_UpConv.tpp:55->../gen/Hls_Layers_UpConv.tpp:255) [111]  (1.838 ns)
+
+ <State 82>: 1.838ns
+The critical path consists of the following:
+	'fsqrt' operation 32 bit ('tmp', /wrk/ci/prod/2024.2/hls_product/continuous/495/2024.2/src/shared/hls/clib/hlsmath/src/c++/sqrtfloat.cpp:13->../gen/Hls_Layers_UpConv.tpp:55->../gen/Hls_Layers_UpConv.tpp:255) [111]  (1.838 ns)
+
+ <State 83>: 1.838ns
+The critical path consists of the following:
+	'fsqrt' operation 32 bit ('tmp', /wrk/ci/prod/2024.2/hls_product/continuous/495/2024.2/src/shared/hls/clib/hlsmath/src/c++/sqrtfloat.cpp:13->../gen/Hls_Layers_UpConv.tpp:55->../gen/Hls_Layers_UpConv.tpp:255) [111]  (1.838 ns)
+
+ <State 84>: 1.838ns
+The critical path consists of the following:
+	'fsqrt' operation 32 bit ('tmp', /wrk/ci/prod/2024.2/hls_product/continuous/495/2024.2/src/shared/hls/clib/hlsmath/src/c++/sqrtfloat.cpp:13->../gen/Hls_Layers_UpConv.tpp:55->../gen/Hls_Layers_UpConv.tpp:255) [111]  (1.838 ns)
+
+ <State 85>: 1.838ns
+The critical path consists of the following:
+	'fsqrt' operation 32 bit ('tmp', /wrk/ci/prod/2024.2/hls_product/continuous/495/2024.2/src/shared/hls/clib/hlsmath/src/c++/sqrtfloat.cpp:13->../gen/Hls_Layers_UpConv.tpp:55->../gen/Hls_Layers_UpConv.tpp:255) [111]  (1.838 ns)
+
+ <State 86>: 1.838ns
+The critical path consists of the following:
+	'fsqrt' operation 32 bit ('tmp', /wrk/ci/prod/2024.2/hls_product/continuous/495/2024.2/src/shared/hls/clib/hlsmath/src/c++/sqrtfloat.cpp:13->../gen/Hls_Layers_UpConv.tpp:55->../gen/Hls_Layers_UpConv.tpp:255) [111]  (1.838 ns)
+
+ <State 87>: 1.838ns
+The critical path consists of the following:
+	'fsqrt' operation 32 bit ('tmp', /wrk/ci/prod/2024.2/hls_product/continuous/495/2024.2/src/shared/hls/clib/hlsmath/src/c++/sqrtfloat.cpp:13->../gen/Hls_Layers_UpConv.tpp:55->../gen/Hls_Layers_UpConv.tpp:255) [111]  (1.838 ns)
+
+ <State 88>: 1.838ns
+The critical path consists of the following:
+	'fsqrt' operation 32 bit ('tmp', /wrk/ci/prod/2024.2/hls_product/continuous/495/2024.2/src/shared/hls/clib/hlsmath/src/c++/sqrtfloat.cpp:13->../gen/Hls_Layers_UpConv.tpp:55->../gen/Hls_Layers_UpConv.tpp:255) [111]  (1.838 ns)
+
+ <State 89>: 1.838ns
+The critical path consists of the following:
+	'fsqrt' operation 32 bit ('tmp', /wrk/ci/prod/2024.2/hls_product/continuous/495/2024.2/src/shared/hls/clib/hlsmath/src/c++/sqrtfloat.cpp:13->../gen/Hls_Layers_UpConv.tpp:55->../gen/Hls_Layers_UpConv.tpp:255) [111]  (1.838 ns)
+
+ <State 90>: 1.838ns
+The critical path consists of the following:
+	'fsqrt' operation 32 bit ('tmp', /wrk/ci/prod/2024.2/hls_product/continuous/495/2024.2/src/shared/hls/clib/hlsmath/src/c++/sqrtfloat.cpp:13->../gen/Hls_Layers_UpConv.tpp:55->../gen/Hls_Layers_UpConv.tpp:255) [111]  (1.838 ns)
+
+ <State 91>: 1.838ns
+The critical path consists of the following:
+	'fsqrt' operation 32 bit ('tmp', /wrk/ci/prod/2024.2/hls_product/continuous/495/2024.2/src/shared/hls/clib/hlsmath/src/c++/sqrtfloat.cpp:13->../gen/Hls_Layers_UpConv.tpp:55->../gen/Hls_Layers_UpConv.tpp:255) [111]  (1.838 ns)
+
+ <State 92>: 1.838ns
+The critical path consists of the following:
+	'fsqrt' operation 32 bit ('tmp', /wrk/ci/prod/2024.2/hls_product/continuous/495/2024.2/src/shared/hls/clib/hlsmath/src/c++/sqrtfloat.cpp:13->../gen/Hls_Layers_UpConv.tpp:55->../gen/Hls_Layers_UpConv.tpp:255) [111]  (1.838 ns)
+
+ <State 93>: 1.838ns
+The critical path consists of the following:
+	'fsqrt' operation 32 bit ('tmp', /wrk/ci/prod/2024.2/hls_product/continuous/495/2024.2/src/shared/hls/clib/hlsmath/src/c++/sqrtfloat.cpp:13->../gen/Hls_Layers_UpConv.tpp:55->../gen/Hls_Layers_UpConv.tpp:255) [111]  (1.838 ns)
+
+ <State 94>: 1.838ns
+The critical path consists of the following:
+	'fsqrt' operation 32 bit ('tmp', /wrk/ci/prod/2024.2/hls_product/continuous/495/2024.2/src/shared/hls/clib/hlsmath/src/c++/sqrtfloat.cpp:13->../gen/Hls_Layers_UpConv.tpp:55->../gen/Hls_Layers_UpConv.tpp:255) [111]  (1.838 ns)
+
+ <State 95>: 1.838ns
+The critical path consists of the following:
+	'fsqrt' operation 32 bit ('tmp', /wrk/ci/prod/2024.2/hls_product/continuous/495/2024.2/src/shared/hls/clib/hlsmath/src/c++/sqrtfloat.cpp:13->../gen/Hls_Layers_UpConv.tpp:55->../gen/Hls_Layers_UpConv.tpp:255) [111]  (1.838 ns)
+
+ <State 96>: 1.838ns
+The critical path consists of the following:
+	'fsqrt' operation 32 bit ('tmp', /wrk/ci/prod/2024.2/hls_product/continuous/495/2024.2/src/shared/hls/clib/hlsmath/src/c++/sqrtfloat.cpp:13->../gen/Hls_Layers_UpConv.tpp:55->../gen/Hls_Layers_UpConv.tpp:255) [111]  (1.838 ns)
+
+ <State 97>: 1.838ns
+The critical path consists of the following:
+	'fsqrt' operation 32 bit ('tmp', /wrk/ci/prod/2024.2/hls_product/continuous/495/2024.2/src/shared/hls/clib/hlsmath/src/c++/sqrtfloat.cpp:13->../gen/Hls_Layers_UpConv.tpp:55->../gen/Hls_Layers_UpConv.tpp:255) [111]  (1.838 ns)
+
+ <State 98>: 1.838ns
+The critical path consists of the following:
+	'fsqrt' operation 32 bit ('tmp', /wrk/ci/prod/2024.2/hls_product/continuous/495/2024.2/src/shared/hls/clib/hlsmath/src/c++/sqrtfloat.cpp:13->../gen/Hls_Layers_UpConv.tpp:55->../gen/Hls_Layers_UpConv.tpp:255) [111]  (1.838 ns)
+
+ <State 99>: 1.838ns
+The critical path consists of the following:
+	'fsqrt' operation 32 bit ('tmp', /wrk/ci/prod/2024.2/hls_product/continuous/495/2024.2/src/shared/hls/clib/hlsmath/src/c++/sqrtfloat.cpp:13->../gen/Hls_Layers_UpConv.tpp:55->../gen/Hls_Layers_UpConv.tpp:255) [111]  (1.838 ns)
+
+ <State 100>: 1.838ns
+The critical path consists of the following:
+	'fsqrt' operation 32 bit ('tmp', /wrk/ci/prod/2024.2/hls_product/continuous/495/2024.2/src/shared/hls/clib/hlsmath/src/c++/sqrtfloat.cpp:13->../gen/Hls_Layers_UpConv.tpp:55->../gen/Hls_Layers_UpConv.tpp:255) [111]  (1.838 ns)
+
+ <State 101>: 1.838ns
+The critical path consists of the following:
+	'fsqrt' operation 32 bit ('tmp', /wrk/ci/prod/2024.2/hls_product/continuous/495/2024.2/src/shared/hls/clib/hlsmath/src/c++/sqrtfloat.cpp:13->../gen/Hls_Layers_UpConv.tpp:55->../gen/Hls_Layers_UpConv.tpp:255) [111]  (1.838 ns)
+
+ <State 102>: 1.838ns
+The critical path consists of the following:
+	'fsqrt' operation 32 bit ('tmp', /wrk/ci/prod/2024.2/hls_product/continuous/495/2024.2/src/shared/hls/clib/hlsmath/src/c++/sqrtfloat.cpp:13->../gen/Hls_Layers_UpConv.tpp:55->../gen/Hls_Layers_UpConv.tpp:255) [111]  (1.838 ns)
+
+ <State 103>: 1.838ns
+The critical path consists of the following:
+	'fsqrt' operation 32 bit ('tmp', /wrk/ci/prod/2024.2/hls_product/continuous/495/2024.2/src/shared/hls/clib/hlsmath/src/c++/sqrtfloat.cpp:13->../gen/Hls_Layers_UpConv.tpp:55->../gen/Hls_Layers_UpConv.tpp:255) [111]  (1.838 ns)
+
+ <State 104>: 2.236ns
+The critical path consists of the following:
+	'fdiv' operation 32 bit ('div1', ../gen/Hls_Layers_UpConv.tpp:255) [112]  (2.236 ns)
+
+ <State 105>: 2.236ns
+The critical path consists of the following:
+	'fdiv' operation 32 bit ('div1', ../gen/Hls_Layers_UpConv.tpp:255) [112]  (2.236 ns)
+
+ <State 106>: 2.236ns
+The critical path consists of the following:
+	'fdiv' operation 32 bit ('div1', ../gen/Hls_Layers_UpConv.tpp:255) [112]  (2.236 ns)
+
+ <State 107>: 2.236ns
+The critical path consists of the following:
+	'fdiv' operation 32 bit ('div1', ../gen/Hls_Layers_UpConv.tpp:255) [112]  (2.236 ns)
+
+ <State 108>: 2.236ns
+The critical path consists of the following:
+	'fdiv' operation 32 bit ('div1', ../gen/Hls_Layers_UpConv.tpp:255) [112]  (2.236 ns)
+
+ <State 109>: 2.236ns
+The critical path consists of the following:
+	'fdiv' operation 32 bit ('div1', ../gen/Hls_Layers_UpConv.tpp:255) [112]  (2.236 ns)
+
+ <State 110>: 2.236ns
+The critical path consists of the following:
+	'fdiv' operation 32 bit ('div1', ../gen/Hls_Layers_UpConv.tpp:255) [112]  (2.236 ns)
+
+ <State 111>: 2.236ns
+The critical path consists of the following:
+	'fdiv' operation 32 bit ('div1', ../gen/Hls_Layers_UpConv.tpp:255) [112]  (2.236 ns)
+
+ <State 112>: 2.236ns
+The critical path consists of the following:
+	'fdiv' operation 32 bit ('div1', ../gen/Hls_Layers_UpConv.tpp:255) [112]  (2.236 ns)
+
+ <State 113>: 2.236ns
+The critical path consists of the following:
+	'fdiv' operation 32 bit ('div1', ../gen/Hls_Layers_UpConv.tpp:255) [112]  (2.236 ns)
+
+ <State 114>: 2.236ns
+The critical path consists of the following:
+	'fdiv' operation 32 bit ('div1', ../gen/Hls_Layers_UpConv.tpp:255) [112]  (2.236 ns)
+
+ <State 115>: 2.236ns
+The critical path consists of the following:
+	'fdiv' operation 32 bit ('div1', ../gen/Hls_Layers_UpConv.tpp:255) [112]  (2.236 ns)
+
+ <State 116>: 2.236ns
+The critical path consists of the following:
+	'fdiv' operation 32 bit ('div1', ../gen/Hls_Layers_UpConv.tpp:255) [112]  (2.236 ns)
+
+ <State 117>: 2.236ns
+The critical path consists of the following:
+	'fdiv' operation 32 bit ('div1', ../gen/Hls_Layers_UpConv.tpp:255) [112]  (2.236 ns)
+
+ <State 118>: 2.236ns
+The critical path consists of the following:
+	'fdiv' operation 32 bit ('div1', ../gen/Hls_Layers_UpConv.tpp:255) [112]  (2.236 ns)
+
+ <State 119>: 2.236ns
+The critical path consists of the following:
+	'fdiv' operation 32 bit ('div1', ../gen/Hls_Layers_UpConv.tpp:255) [112]  (2.236 ns)
+
+ <State 120>: 2.236ns
+The critical path consists of the following:
+	'fdiv' operation 32 bit ('div1', ../gen/Hls_Layers_UpConv.tpp:255) [112]  (2.236 ns)
+
+ <State 121>: 2.236ns
+The critical path consists of the following:
+	'fdiv' operation 32 bit ('div1', ../gen/Hls_Layers_UpConv.tpp:255) [112]  (2.236 ns)
+
+ <State 122>: 2.236ns
+The critical path consists of the following:
+	'fdiv' operation 32 bit ('div1', ../gen/Hls_Layers_UpConv.tpp:255) [112]  (2.236 ns)
+
+ <State 123>: 2.236ns
+The critical path consists of the following:
+	'fdiv' operation 32 bit ('div1', ../gen/Hls_Layers_UpConv.tpp:255) [112]  (2.236 ns)
+
+ <State 124>: 2.236ns
+The critical path consists of the following:
+	'fdiv' operation 32 bit ('div1', ../gen/Hls_Layers_UpConv.tpp:255) [112]  (2.236 ns)
+
+ <State 125>: 2.236ns
+The critical path consists of the following:
+	'fdiv' operation 32 bit ('div1', ../gen/Hls_Layers_UpConv.tpp:255) [112]  (2.236 ns)
+
+ <State 126>: 2.236ns
+The critical path consists of the following:
+	'fdiv' operation 32 bit ('div1', ../gen/Hls_Layers_UpConv.tpp:255) [112]  (2.236 ns)
+
+ <State 127>: 2.236ns
+The critical path consists of the following:
+	'fdiv' operation 32 bit ('div1', ../gen/Hls_Layers_UpConv.tpp:255) [112]  (2.236 ns)
+
+ <State 128>: 2.236ns
+The critical path consists of the following:
+	'fdiv' operation 32 bit ('div1', ../gen/Hls_Layers_UpConv.tpp:255) [112]  (2.236 ns)
+
+ <State 129>: 2.236ns
+The critical path consists of the following:
+	'fdiv' operation 32 bit ('div1', ../gen/Hls_Layers_UpConv.tpp:255) [112]  (2.236 ns)
+
+ <State 130>: 2.236ns
+The critical path consists of the following:
+	'fdiv' operation 32 bit ('div1', ../gen/Hls_Layers_UpConv.tpp:255) [112]  (2.236 ns)
+
+ <State 131>: 2.236ns
+The critical path consists of the following:
+	'fdiv' operation 32 bit ('div1', ../gen/Hls_Layers_UpConv.tpp:255) [112]  (2.236 ns)
+
+ <State 132>: 2.236ns
+The critical path consists of the following:
+	'fdiv' operation 32 bit ('div1', ../gen/Hls_Layers_UpConv.tpp:255) [112]  (2.236 ns)
+
+ <State 133>: 2.236ns
+The critical path consists of the following:
+	'fdiv' operation 32 bit ('div1', ../gen/Hls_Layers_UpConv.tpp:255) [112]  (2.236 ns)
+
+ <State 134>: 1.762ns
+The critical path consists of the following:
+	'sptohp' operation 16 bit ('inv_std', ../gen/Hls_Layers_UpConv.tpp:255) [113]  (1.762 ns)
+
+ <State 135>: 1.762ns
+The critical path consists of the following:
+	'sptohp' operation 16 bit ('inv_std', ../gen/Hls_Layers_UpConv.tpp:255) [113]  (1.762 ns)
+
+ <State 136>: 0.000ns
+The critical path consists of the following:
+
+ <State 137>: 2.433ns
+The critical path consists of the following:
+	bus response operation ('empty_185', ../gen/Hls_Layers_UpConv.tpp:275) on port 'gmem_out' (../gen/Hls_Layers_UpConv.tpp:275) [119]  (2.433 ns)
+
+ <State 138>: 2.433ns
+The critical path consists of the following:
+	bus response operation ('empty_185', ../gen/Hls_Layers_UpConv.tpp:275) on port 'gmem_out' (../gen/Hls_Layers_UpConv.tpp:275) [119]  (2.433 ns)
+
+ <State 139>: 2.433ns
+The critical path consists of the following:
+	bus response operation ('empty_185', ../gen/Hls_Layers_UpConv.tpp:275) on port 'gmem_out' (../gen/Hls_Layers_UpConv.tpp:275) [119]  (2.433 ns)
+
+ <State 140>: 2.433ns
+The critical path consists of the following:
+	bus response operation ('empty_185', ../gen/Hls_Layers_UpConv.tpp:275) on port 'gmem_out' (../gen/Hls_Layers_UpConv.tpp:275) [119]  (2.433 ns)
+
+ <State 141>: 2.433ns
+The critical path consists of the following:
+	bus response operation ('empty_185', ../gen/Hls_Layers_UpConv.tpp:275) on port 'gmem_out' (../gen/Hls_Layers_UpConv.tpp:275) [119]  (2.433 ns)
+
+
+============================================================
++ Verbose Summary: Binding
+============================================================
+N/A
+* FSMD analyzer results:
+  - Output states:
+ - Input state : 
+  - Chain level:
+	State 1
+	State 2
+	State 3
+	State 4
+	State 5
+	State 6
+	State 7
+	State 8
+	State 9
+	State 10
+	State 11
+	State 12
+	State 13
+	State 14
+	State 15
+	State 16
+	State 17
+	State 18
+	State 19
+	State 20
+	State 21
+	State 22
+	State 23
+	State 24
+	State 25
+	State 26
+	State 27
+	State 28
+	State 29
+	State 30
+	State 31
+	State 32
+	State 33
+	State 34
+	State 35
+	State 36
+	State 37
+	State 38
+	State 39
+	State 40
+	State 41
+	State 42
+	State 43
+	State 44
+	State 45
+	State 46
+	State 47
+	State 48
+	State 49
+	State 50
+	State 51
+	State 52
+	State 53
+	State 54
+	State 55
+	State 56
+	State 57
+	State 58
+	State 59
+	State 60
+	State 61
+	State 62
+	State 63
+	State 64
+	State 65
+	State 66
+	State 67
+	State 68
+	State 69
+	State 70
+	State 71
+	State 72
+	State 73
+	State 74
+	State 75
+	State 76
+	State 77
+	State 78
+	State 79
+	State 80
+	State 81
+	State 82
+	State 83
+	State 84
+	State 85
+	State 86
+	State 87
+	State 88
+	State 89
+	State 90
+	State 91
+	State 92
+	State 93
+	State 94
+	State 95
+	State 96
+	State 97
+	State 98
+	State 99
+	State 100
+	State 101
+	State 102
+	State 103
+	State 104
+	State 105
+	State 106
+	State 107
+	State 108
+	State 109
+	State 110
+	State 111
+	State 112
+	State 113
+	State 114
+	State 115
+	State 116
+	State 117
+	State 118
+	State 119
+	State 120
+	State 121
+	State 122
+	State 123
+	State 124
+	State 125
+	State 126
+	State 127
+	State 128
+	State 129
+	State 130
+	State 131
+	State 132
+	State 133
+	State 134
+	State 135
+	State 136
+	State 137
+	State 138
+	State 139
+	State 140
+	State 141
+
+
+============================================================
++ Verbose Summary: Datapath Resource usage 
+============================================================
+N/A

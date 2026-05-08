@@ -1,0 +1,30 @@
+INFO: [SIM 2] *************** CSIM start ***************
+INFO: [SIM 4] CSIM will launch CLANG as the compiler.
+   Compiling ../../../../../test_ucb0.cpp in debug mode
+   Generating csim.exe
+
+╔════════════════════════════════════════════════════════╗
+║              UPCONV BLOCK 0 TEST HARNESS               ║
+╚════════════════════════════════════════════════════════╝
+
+ Config: UCB_BLOCK_ID=0  ENABLE_MINI_TEST=1
+
+====================================================
+   UCB0 (16x16x960 -> 32x32x480)
+   16x16x16 -> 32x32x16
+====================================================
+Packing inputs...
+Running HLS kernel...
+HLS CSIM time: 0.379671 s
+Unpacking outputs...
+Running CPU golden reference...
+Golden CPU time: 0.00122321 s
+Output Sum: 7146.64
+Max Error : 0.00373875
+MSE       : 2.02827e-06
+====================================================
+UCB0 (16x16x960 -> 32x32x480): PASSED (Functional & Numerical)
+====================================================
+
+INFO: [SIM 1] CSim done with 0 errors.
+INFO: [SIM 3] *************** CSIM finish ***************
