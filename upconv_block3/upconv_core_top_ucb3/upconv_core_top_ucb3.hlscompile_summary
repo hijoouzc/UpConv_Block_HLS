@@ -1,0 +1,245 @@
+<ENTRY>
+{
+ "thisFile": "/home/hoinguyen/Documents/Vitis/UpConv_HLS/upconv_block3/upconv_core_top_ucb3/upconv_core_top_ucb3.hlscompile_summary",
+ "connectId": "",
+ "serverToken": "",
+ "timestamp": "0"
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_CmdStep",
+ "dateTimestamp": "Fri May  8 13:50:07 2026",
+ "timestampMillis": "1778223007015",
+ "buildStep": {
+  "cmdId": "83a823e9-32da-44ff-aaab-e8f4fec36996",
+  "name": "v++",
+  "logFile": "/home/hoinguyen/Documents/Vitis/UpConv_HLS/upconv_block3/upconv_core_top_ucb3/logs/upconv_core_top_ucb3.steps.log",
+  "commandLine": "/home/tools/Xilinx/Vitis/2024.2/bin/unwrapped/lnx64.o/v++  -c --mode hls --config /home/hoinguyen/Documents/Vitis/UpConv_HLS/upconv_block3/hls_config.cfg --work_dir upconv_core_top_ucb3 ",
+  "args": [
+   "-c",
+   "--mode",
+   "hls",
+   "--config",
+   "/home/hoinguyen/Documents/Vitis/UpConv_HLS/upconv_block3/hls_config.cfg",
+   "--work_dir",
+   "upconv_core_top_ucb3"
+  ],
+  "iniFiles": [
+   {
+    "path": "/home/hoinguyen/Documents/Vitis/UpConv_HLS/upconv_block3/hls_config.cfg",
+    "content": "part=xczu7ev-ffvc1156-2-e\n\n[hls]\nflow_target=vivado\npackage.output.format=ip_catalog\npackage.output.syn=false\nsyn.top=upconv_core_top_ucb3\nsyn.file=/home/hoinguyen/Documents/Vitis/UpConv_HLS/gen/upconv_core_top_ucb3.cpp\ntb.file=/home/hoinguyen/Documents/Vitis/UpConv_HLS/test_ucb3.cpp\nclock=300MHz"
+   }
+  ],
+  "cwd": "/home/hoinguyen/Documents/Vitis/UpConv_HLS/upconv_block3"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "Fri May  8 13:50:07 2026",
+ "timestampMillis": "1778223007016",
+ "status": {
+  "cmdId": "83a823e9-32da-44ff-aaab-e8f4fec36996",
+  "state": "CS_RUNNING"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_FlowMetaData",
+ "dateTimestamp": "Fri May  8 13:50:09 2026",
+ "timestampMillis": "1778223009679",
+ "buildSummary": {
+  "hardwarePlatform": "",
+  "hardwareDsa": "",
+  "platformDirectory": "",
+  "runtime": "",
+  "systemConfig": "",
+  "flow": "BF_COMPILE",
+  "target": "TT_HW",
+  "kernels": [
+   {
+    "base": {
+     "type": "KERNEL",
+     "name": "upconv_core_top_ucb3",
+     "file": "",
+     "reports": [],
+     "uuid": ""
+    },
+    "sources": [
+     "/home/hoinguyen/Documents/Vitis/UpConv_HLS/gen/upconv_core_top_ucb3.cpp"
+    ],
+    "psSources": [],
+    "cuNames": [],
+    "type": "HLS",
+    "frequency": 0,
+    "freqUnits": ""
+   }
+  ],
+  "toolVersion": "2024.2"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_SubCmdStep",
+ "dateTimestamp": "Fri May  8 13:50:09 2026",
+ "timestampMillis": "1778223009680",
+ "buildStep": {
+  "cmdId": "f041ec29-dfc8-45a0-ab1e-184e26041d8d",
+  "name": "",
+  "logFile": "/home/hoinguyen/Documents/Vitis/UpConv_HLS/upconv_block3/upconv_core_top_ucb3/hls/hls.log",
+  "commandLine": "",
+  "args": [],
+  "iniFiles": [],
+  "cwd": "/home/hoinguyen/Documents/Vitis/UpConv_HLS/upconv_block3"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "Fri May  8 13:50:09 2026",
+ "timestampMillis": "1778223009680",
+ "status": {
+  "cmdId": "f041ec29-dfc8-45a0-ab1e-184e26041d8d",
+  "state": "CS_RUNNING"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "Fri May  8 13:50:09 2026",
+ "timestampMillis": "1778223009680",
+ "report": {
+  "path": "/home/hoinguyen/Documents/Vitis/UpConv_HLS/upconv_block3/upconv_core_top_ucb3/hls/hls_data.json",
+  "name": "",
+  "fileType": "JSON",
+  "reportType": "HLS_SYNTHESIS",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "Fri May  8 13:50:09 2026",
+ "timestampMillis": "1778223009680",
+ "report": {
+  "path": "/home/hoinguyen/Documents/Vitis/UpConv_HLS/upconv_block3/upconv_core_top_ucb3/hls/syn/report/csynth.rpt",
+  "name": "",
+  "fileType": "TEXT",
+  "reportType": "HLS_SYNTHESIS",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "Fri May  8 13:50:09 2026",
+ "timestampMillis": "1778223009680",
+ "report": {
+  "path": "/home/hoinguyen/Documents/Vitis/UpConv_HLS/upconv_block3/upconv_core_top_ucb3/hls/syn/report/csynth.xml",
+  "name": "",
+  "fileType": "XML",
+  "reportType": "HLS_SYNTHESIS",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "Fri May  8 13:50:34 2026",
+ "timestampMillis": "1778223034112",
+ "report": {
+  "path": "/home/hoinguyen/Documents/Vitis/UpConv_HLS/upconv_block3/upconv_core_top_ucb3/hls",
+  "name": "",
+  "fileType": "DIR",
+  "reportType": "HLS_DATAFLOW",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "Fri May  8 13:50:34 2026",
+ "timestampMillis": "1778223034112",
+ "report": {
+  "path": "/home/hoinguyen/Documents/Vitis/UpConv_HLS/upconv_block3/upconv_core_top_ucb3/hls",
+  "name": "",
+  "fileType": "DIR",
+  "reportType": "HLS_FUNCTION_CALL_GRAPH",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "Fri May  8 13:50:34 2026",
+ "timestampMillis": "1778223034112",
+ "report": {
+  "path": "/home/hoinguyen/Documents/Vitis/UpConv_HLS/upconv_block3/upconv_core_top_ucb3/hls",
+  "name": "",
+  "fileType": "DIR",
+  "reportType": "HLS_SCHEDULE",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "Fri May  8 13:50:34 2026",
+ "timestampMillis": "1778223034112",
+ "status": {
+  "cmdId": "f041ec29-dfc8-45a0-ab1e-184e26041d8d",
+  "state": "CS_PASSED"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "Fri May  8 13:50:34 2026",
+ "timestampMillis": "1778223034277",
+ "status": {
+  "cmdId": "83a823e9-32da-44ff-aaab-e8f4fec36996",
+  "state": "CS_PASSED"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "Fri May  8 13:50:34 2026",
+ "timestampMillis": "1778223034294",
+ "report": {
+  "path": "/home/hoinguyen/Documents/Vitis/UpConv_HLS/upconv_block3/upconv_core_top_ucb3/reports/v++_compile_upconv_core_top_ucb3_guidance.html",
+  "name": "",
+  "fileType": "HTML",
+  "reportType": "GLOBAL_RULECHECK_GUIDANCE",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "Fri May  8 13:50:34 2026",
+ "timestampMillis": "1778223034295",
+ "report": {
+  "path": "/home/hoinguyen/Documents/Vitis/UpConv_HLS/upconv_block3/upconv_core_top_ucb3/reports/.db/v++_compile_upconv_core_top_ucb3_guidance.pb3",
+  "name": "",
+  "fileType": "BINARY_PROTOBUF",
+  "reportType": "GLOBAL_RULECHECK_GUIDANCE",
+  "cmdId": ""
+ }
+}
+</ENTRY>

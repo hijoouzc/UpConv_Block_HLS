@@ -3,7 +3,6 @@
 // =========================================================================
 #define UCB_BLOCK_ID 2
 #include "upconv_config.h"
-#include "upconv_core.h"
 #include "Hls_Layers_UpConv.tpp"
 
 extern "C" {

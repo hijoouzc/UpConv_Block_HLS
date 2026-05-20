@@ -1,7 +1,7 @@
 <profile>
 
 <section name = "Vitis HLS Report for 'UpConv_Fused_Row_8_16_16_960_480_Pipeline_BIAS_STATS'" level="0">
-<item name = "Date">Thu May  7 18:30:36 2026
+<item name = "Date">Tue May 19 20:00:39 2026
 </item>
 <item name = "Version">2024.2 (Build 5238294 on Nov  8 2024)</item>
 <item name = "Project">upconv_block0</item>

@@ -1,0 +1,60 @@
+<pragmas>
+<pragma file="" line="0" pragmaType="inline" parentfunction="get" off="0" region="0" recursive="0"/>
+<pragma file="" line="0" pragmaType="inline" parentfunction="ap_range_ref<256, false>::ap_range_ref(ap_int_base<256, false>*, int, int)" off="0" region="0" recursive="0"/>
+<pragma file="" line="0" pragmaType="inline" parentfunction="to_uint" off="0" region="0" recursive="0"/>
+<pragma file="" line="0" pragmaType="inline" parentfunction="ap_uint<16>::ap_uint(unsigned short)" off="0" region="0" recursive="0"/>
+<pragma file="" line="0" pragmaType="inline" parentfunction="ap_int_base<16, false>::ap_int_base(unsigned short)" off="0" region="0" recursive="0"/>
+<pragma file="/home/tools/Xilinx/Vitis/2024.2/common/technology/autopilot/etc/ap_common.h" line="523" pragmaType="inline" parentfunction="ssdm_int<16, false>::ssdm_int(unsigned short)" off="0" region="0" recursive="0"/>
+<pragma file="" line="0" pragmaType="inline" parentfunction="ap_int_base<16, false>::ap_int_base<256, false>(ap_range_ref<256, false> const&)" off="0" region="0" recursive="0"/>
+<pragma file="" line="0" pragmaType="inline" parentfunction="ap_int_base<256, false>::ap_int_base<16, false>(ap_int_base<16, false> const&)" off="0" region="0" recursive="0"/>
+<pragma file="/home/tools/Xilinx/Vitis/2024.2/common/technology/autopilot/etc/ap_common.h" line="523" pragmaType="inline" parentfunction="_ZN8ssdm_intILi256ELb0EEC2EDq256_j" off="0" region="0" recursive="0"/>
+<pragma file="../gen/Hls_Layers_UpConv.tpp" line="23" pragmaType="inline" parentfunction="half_to_bits" off="0" region="0" recursive="0"/>
+<pragma file="" line="0" pragmaType="inline" parentfunction="checkOverflowBaseC" off="0" region="0" recursive="0"/>
+<pragma file="" line="0" pragmaType="inline" parentfunction="range" off="0" region="0" recursive="0"/>
+<pragma file="" line="0" pragmaType="inline" parentfunction="ap_uint<16>::ap_uint<256, false>(ap_range_ref<256, false> const&)" off="0" region="0" recursive="0"/>
+<pragma file="../gen/Hls_Layers_UpConv.tpp" line="39" pragmaType="inline" parentfunction="bits_to_half" off="0" region="0" recursive="0"/>
+<pragma file="../gen/Hls_Layers_UpConv.tpp" line="291" pragmaType="inline" parentfunction="UpConv_Fused_Top" off="0" region="0" recursive="0"/>
+<pragma file="../gen/Hls_Layers_UpConv.tpp" line="308" pragmaType="pipeline" parentfunction="UpConv_Fused_Top" off="0" ii="1" rewind="0" style=""/>
+<pragma file="../gen/Hls_Layers_UpConv.tpp" line="297" pragmaType="pipeline" parentfunction="UpConv_Fused_Top" off="0" ii="1" rewind="0" style=""/>
+<pragma file="../gen/Hls_Layers_UpConv.tpp" line="89" pragmaType="inline" parentfunction="UpConv_Fused_Row" off="1" region="0" recursive="0"/>
+<pragma file="../gen/Hls_Layers_UpConv.tpp" line="239" pragmaType="pipeline" parentfunction="UpConv_Fused_Row" off="1" ii="0" rewind="0" style=""/>
+<pragma file="../gen/Hls_Layers_UpConv.tpp" line="243" pragmaType="pipeline" parentfunction="UpConv_Fused_Row" off="0" ii="1" rewind="0" style=""/>
+<pragma file="../gen/Hls_Layers_UpConv.tpp" line="258" pragmaType="pipeline" parentfunction="UpConv_Fused_Row" off="0" ii="1" rewind="0" style=""/>
+<pragma file="../gen/Hls_Layers_UpConv.tpp" line="261" pragmaType="unroll" parentfunction="UpConv_Fused_Row" factor="-1" skip_exit_check="0"/>
+<pragma file="../gen/Hls_Layers_UpConv.tpp" line="229" pragmaType="pipeline" parentfunction="UpConv_Fused_Row" off="0" ii="1" rewind="0" style=""/>
+<pragma file="../gen/Hls_Layers_UpConv.tpp" line="144" pragmaType="pipeline" parentfunction="UpConv_Fused_Row" off="0" ii="1" rewind="0" style=""/>
+<pragma file="../gen/Hls_Layers_UpConv.tpp" line="175" pragmaType="unroll" parentfunction="UpConv_Fused_Row" factor="-1" skip_exit_check="0"/>
+<pragma file="../gen/Hls_Layers_UpConv.tpp" line="183" pragmaType="pipeline" parentfunction="UpConv_Fused_Row" off="0" ii="1" rewind="0" style=""/>
+<pragma file="../gen/Hls_Layers_UpConv.tpp" line="206" pragmaType="unroll" parentfunction="UpConv_Fused_Row" factor="-1" skip_exit_check="0"/>
+<pragma file="../gen/Hls_Layers_UpConv.tpp" line="177" pragmaType="unroll" parentfunction="UpConv_Fused_Row" factor="-1" skip_exit_check="0"/>
+<pragma file="../gen/Hls_Layers_UpConv.tpp" line="190" pragmaType="unroll" parentfunction="UpConv_Fused_Row" factor="-1" skip_exit_check="0"/>
+<pragma file="../gen/Hls_Layers_UpConv.tpp" line="195" pragmaType="unroll" parentfunction="UpConv_Fused_Row" factor="-1" skip_exit_check="0"/>
+<pragma file="../gen/Hls_Layers_UpConv.tpp" line="118" pragmaType="pipeline" parentfunction="UpConv_Fused_Row" off="0" ii="1" rewind="0" style=""/>
+<pragma file="../gen/Hls_Layers_UpConv.tpp" line="120" pragmaType="unroll" parentfunction="UpConv_Fused_Row" factor="-1" skip_exit_check="0"/>
+<pragma file="../gen/Hls_Layers_UpConv.tpp" line="109" pragmaType="bind_storage" parentfunction="UpConv_Fused_Row" op="666" impl="31" latency="-1" variable="_ZZ16UpConv_Fused_RowILi8ELi64ELi64ELi240ELi120EEvP7ap_uintILi256EEPKS1_S4_S4_S4_S2_DhiE7row_acc"/>
+<pragma file="../gen/Hls_Layers_UpConv.tpp" line="110" pragmaType="array_partition" parentfunction="UpConv_Fused_Row" dim="2" factor="16" mode="cyclic" dynamic="0" variable="_ZZ16UpConv_Fused_RowILi8ELi64ELi64ELi240ELi120EEvP7ap_uintILi256EEPKS1_S4_S4_S4_S2_DhiE7row_acc"/>
+<pragma file="../gen/Hls_Layers_UpConv.tpp" line="129" pragmaType="bind_storage" parentfunction="UpConv_Fused_Row" op="666" impl="30" latency="-1" variable="w_local"/>
+<pragma file="../gen/Hls_Layers_UpConv.tpp" line="130" pragmaType="array_partition" parentfunction="UpConv_Fused_Row" dim="1" factor="0" mode="complete" dynamic="0" variable="w_local"/>
+<pragma file="../gen/Hls_Layers_UpConv.tpp" line="172" pragmaType="array_partition" parentfunction="UpConv_Fused_Row" dim="0" factor="0" mode="complete" dynamic="0" variable="psum"/>
+<pragma file="../gen/Hls_Layers_UpConv.tpp" line="184" pragmaType="dependence" parentfunction="UpConv_Fused_Row" class="" direction="NODIR" type="inter" distance="0" variable="psum"/>
+<pragma file="../gen/Hls_Layers_UpConv.tpp" line="224" pragmaType="bind_storage" parentfunction="UpConv_Fused_Row" op="666" impl="30" latency="-1" variable="b_buf"/>
+<pragma file="../gen/Hls_Layers_UpConv.tpp" line="225" pragmaType="bind_storage" parentfunction="UpConv_Fused_Row" op="666" impl="30" latency="-1" variable="g_buf"/>
+<pragma file="../gen/Hls_Layers_UpConv.tpp" line="226" pragmaType="bind_storage" parentfunction="UpConv_Fused_Row" op="666" impl="30" latency="-1" variable="be_buf"/>
+<pragma file="../gen/Hls_Layers_UpConv.tpp" line="53" pragmaType="inline" parentfunction="my_sqrt_f" off="0" region="0" recursive="0"/>
+<pragma file="../gen/upconv_core_top_ucb2.cpp" line="19" pragmaType="interface" parentfunction="upconv_core_top_ucb2" mode="m_axi" port="X" bundle="gmem_in" offset="slave" name="" depth="-1" num_read_outstanding="-1" num_write_outstanding="-1" max_burst_read_length="64" max_burst_write_length="-1" latency="-1" max_widen_bitwidth="-1" channel=""/>
+<pragma file="../gen/upconv_core_top_ucb2.cpp" line="20" pragmaType="interface" parentfunction="upconv_core_top_ucb2" mode="m_axi" port="W" bundle="gmem_weight" offset="slave" name="" depth="-1" num_read_outstanding="-1" num_write_outstanding="-1" max_burst_read_length="64" max_burst_write_length="-1" latency="-1" max_widen_bitwidth="-1" channel=""/>
+<pragma file="../gen/upconv_core_top_ucb2.cpp" line="21" pragmaType="interface" parentfunction="upconv_core_top_ucb2" mode="m_axi" port="B" bundle="gmem_param" offset="slave" name="" depth="-1" num_read_outstanding="-1" num_write_outstanding="-1" max_burst_read_length="64" max_burst_write_length="-1" latency="-1" max_widen_bitwidth="-1" channel=""/>
+<pragma file="../gen/upconv_core_top_ucb2.cpp" line="22" pragmaType="interface" parentfunction="upconv_core_top_ucb2" mode="m_axi" port="G" bundle="gmem_param" offset="slave" name="" depth="-1" num_read_outstanding="-1" num_write_outstanding="-1" max_burst_read_length="64" max_burst_write_length="-1" latency="-1" max_widen_bitwidth="-1" channel=""/>
+<pragma file="../gen/upconv_core_top_ucb2.cpp" line="23" pragmaType="interface" parentfunction="upconv_core_top_ucb2" mode="m_axi" port="BE" bundle="gmem_param" offset="slave" name="" depth="-1" num_read_outstanding="-1" num_write_outstanding="-1" max_burst_read_length="64" max_burst_write_length="-1" latency="-1" max_widen_bitwidth="-1" channel=""/>
+<pragma file="../gen/upconv_core_top_ucb2.cpp" line="24" pragmaType="interface" parentfunction="upconv_core_top_ucb2" mode="m_axi" port="Y" bundle="gmem_out" offset="slave" name="" depth="-1" num_read_outstanding="-1" num_write_outstanding="-1" max_burst_read_length="-1" max_burst_write_length="64" latency="-1" max_widen_bitwidth="-1" channel=""/>
+<pragma file="../gen/upconv_core_top_ucb2.cpp" line="26" pragmaType="interface" parentfunction="upconv_core_top_ucb2" mode="s_axilite" port="X" bundle="control" offset="-1" name="" clock="" impl="" register="0"/>
+<pragma file="../gen/upconv_core_top_ucb2.cpp" line="27" pragmaType="interface" parentfunction="upconv_core_top_ucb2" mode="s_axilite" port="W" bundle="control" offset="-1" name="" clock="" impl="" register="0"/>
+<pragma file="../gen/upconv_core_top_ucb2.cpp" line="28" pragmaType="interface" parentfunction="upconv_core_top_ucb2" mode="s_axilite" port="B" bundle="control" offset="-1" name="" clock="" impl="" register="0"/>
+<pragma file="../gen/upconv_core_top_ucb2.cpp" line="29" pragmaType="interface" parentfunction="upconv_core_top_ucb2" mode="s_axilite" port="G" bundle="control" offset="-1" name="" clock="" impl="" register="0"/>
+<pragma file="../gen/upconv_core_top_ucb2.cpp" line="30" pragmaType="interface" parentfunction="upconv_core_top_ucb2" mode="s_axilite" port="BE" bundle="control" offset="-1" name="" clock="" impl="" register="0"/>
+<pragma file="../gen/upconv_core_top_ucb2.cpp" line="31" pragmaType="interface" parentfunction="upconv_core_top_ucb2" mode="s_axilite" port="Y" bundle="control" offset="-1" name="" clock="" impl="" register="0"/>
+<pragma file="../gen/upconv_core_top_ucb2.cpp" line="32" pragmaType="interface" parentfunction="upconv_core_top_ucb2" mode="s_axilite" port="epsilon" bundle="control" offset="-1" name="" clock="" impl="" register="0"/>
+<pragma file="../gen/upconv_core_top_ucb2.cpp" line="33" pragmaType="interface" parentfunction="upconv_core_top_ucb2" mode="s_axilite" port="" bundle="control" offset="-1" name="" clock="" impl="" register="0"/>
+<pragma file="../gen/upconv_core_top_ucb2.cpp" line="37" pragmaType="bind_storage" parentfunction="upconv_core_top_ucb2" op="666" impl="31" latency="-1" variable="_ZZ20upconv_core_top_ucb2E5x_buf"/>
+<pragma file="" line="0" pragmaType="inline" parentfunction="ap_range_ref<256, false>& ap_range_ref<256, false>::operator=<16, false>(ap_int_base<16, false> const&)" off="0" region="0" recursive="0"/>
+</pragmas>

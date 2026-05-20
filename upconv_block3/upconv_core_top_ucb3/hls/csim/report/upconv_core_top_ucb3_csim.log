@@ -1,0 +1,31 @@
+INFO: [SIM 2] *************** CSIM start ***************
+INFO: [SIM 4] CSIM will launch CLANG as the compiler.
+   Compiling ../../../../../test_ucb3.cpp in debug mode
+   Compiling ../../../../../gen/upconv_core_top_ucb3.cpp in debug mode
+   Generating csim.exe
+
+╔════════════════════════════════════════════════════════╗
+║              UPCONV BLOCK 3 TEST HARNESS               ║
+╚════════════════════════════════════════════════════════╝
+
+ Config: UCB_BLOCK_ID=3  ENABLE_MINI_TEST=1
+
+====================================================
+   UCB3 FULL SIZE (128x128x120 -> 256x256x60)
+   16x16x16 -> 32x32x16
+====================================================
+Packing inputs...
+Running HLS kernel...
+HLS CSIM time: 0.356268 s
+Unpacking outputs...
+Running CPU golden reference...
+Golden CPU time: 0.00128644 s
+Output Sum: 7146.64
+Max Error : 0.00373875
+MSE       : 2.02827e-06
+====================================================
+UCB3 FULL SIZE (128x128x120 -> 256x256x60): PASSED (Functional & Numerical)
+====================================================
+
+INFO: [SIM 1] CSim done with 0 errors.
+INFO: [SIM 3] *************** CSIM finish ***************

@@ -33,16 +33,16 @@
             <header size="7" col0="Function" col1="Location" col2="Compile/Link" col3="Unroll/Inline" col4="Array/Struct" col5="Performance" col6="HW Transforms"/>
             <rows>
                 <row id="0" col0="upconv_core_top_ucb0" col1="upconv_core_top_ucb0.cpp:10" col2="3705" col3="8605" col4="10545" col5="10533" col6="10244">
-                    <row id="5" col0="UpConv_Fused_Top&lt;8, 16, 16, 960, 480&gt;" col1="Hls_Layers_UpConv.tpp:281" col2="3688" col3="" col4="" col5="" col6="">
-                        <row id="4" col0="UpConv_Fused_Row&lt;8, 16, 16, 960, 480&gt;" col1="Hls_Layers_UpConv.tpp:79" col2="3608" col2_disp="3,608 (4 calls)" col3="" col4="" col5="" col6="">
-                            <row id="3" col0="bits_to_half&lt;__fp16&gt;" col1="Hls_Layers_UpConv.tpp:38" col2="360" col2_disp=" 360 (20 calls)" col3="" col4="" col5="" col6=""/>
-                            <row id="6" col0="my_sqrt_f" col1="Hls_Layers_UpConv.tpp:52" col2="16" col2_disp="  16 (4 calls)" col3="" col4="" col5="" col6="">
-                                <row id="2" col0="sqrtf" col1="sqrtfloat.cpp:11" col2="8" col2_disp="   8 (4 calls)" col3="" col4="" col5="" col6=""/>
+                    <row id="2" col0="UpConv_Fused_Top&lt;8, 16, 16, 960, 480&gt;" col1="Hls_Layers_UpConv.tpp:281" col2="3688" col3="" col4="" col5="" col6="">
+                        <row id="3" col0="UpConv_Fused_Row&lt;8, 16, 16, 960, 480&gt;" col1="Hls_Layers_UpConv.tpp:79" col2="3608" col2_disp="3,608 (4 calls)" col3="" col4="" col5="" col6="">
+                            <row id="6" col0="bits_to_half&lt;__fp16&gt;" col1="Hls_Layers_UpConv.tpp:38" col2="360" col2_disp=" 360 (20 calls)" col3="" col4="" col5="" col6=""/>
+                            <row id="1" col0="my_sqrt_f" col1="Hls_Layers_UpConv.tpp:52" col2="16" col2_disp="  16 (4 calls)" col3="" col4="" col5="" col6="">
+                                <row id="5" col0="sqrtf" col1="sqrtfloat.cpp:11" col2="8" col2_disp="   8 (4 calls)" col3="" col4="" col5="" col6=""/>
                             </row>
-                            <row id="1" col0="half_to_bits&lt;__fp16&gt;" col1="Hls_Layers_UpConv.tpp:22" col2="104" col2_disp=" 104 (4 calls)" col3="" col4="" col5="" col6=""/>
+                            <row id="4" col0="half_to_bits&lt;__fp16&gt;" col1="Hls_Layers_UpConv.tpp:22" col2="104" col2_disp=" 104 (4 calls)" col3="" col4="" col5="" col6=""/>
                         </row>
                     </row>
-                    <row id="4" col0="UpConv_Fused_Row&lt;8, 16, 16, 960, 480&gt;" col1="Hls_Layers_UpConv.tpp:79" col2="" col3="8536" col3_disp="8,536 (4 calls)" col4="10472" col4_disp="10,472 (4 calls)" col5="10460" col5_disp="10,460 (4 calls)" col6="10140" col6_disp="10,140 (4 calls)"/>
+                    <row id="3" col0="UpConv_Fused_Row&lt;8, 16, 16, 960, 480&gt;" col1="Hls_Layers_UpConv.tpp:79" col2="" col3="8536" col3_disp="8,536 (4 calls)" col4="10472" col4_disp="10,472 (4 calls)" col5="10460" col5_disp="10,460 (4 calls)" col6="10140" col6_disp="10,140 (4 calls)"/>
                 </row>
             </rows>
             <notes/>

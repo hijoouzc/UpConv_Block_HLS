@@ -15,9 +15,9 @@ INFO: [HLS 200-1611] Setting target device to 'xczu7ev-ffvc1156-2-e'
 INFO: [HLS 200-1465] Applying ini 'clock=300MHz' from /home/hoinguyen/Documents/Vitis/UpConv_HLS/upconv_block0/hls_config.cfg(9)
 INFO: [SYN 201-201] Setting up clock 'default' with a period of 3.333ns.
 INFO: [HLS 200-1465] Applying ini 'package.output.format=ip_catalog' from /home/hoinguyen/Documents/Vitis/UpConv_HLS/upconv_block0/hls_config.cfg(5)
-INFO: [HLS 200-111] Finished File checks and directory preparation: CPU user time: 1.97 seconds. CPU system time: 0.19 seconds. Elapsed time: 2 seconds; current allocated memory: 324.879 MB.
+INFO: [HLS 200-111] Finished File checks and directory preparation: CPU user time: 1.76 seconds. CPU system time: 0.19 seconds. Elapsed time: 1.8 seconds; current allocated memory: 325.008 MB.
 INFO: [HLS 200-10] Analyzing design file '../gen/upconv_core_top_ucb0.cpp' ... 
-INFO: [HLS 200-111] Finished Source Code Analysis and Preprocessing: CPU user time: 12.38 seconds. CPU system time: 0.83 seconds. Elapsed time: 13.22 seconds; current allocated memory: 331.383 MB.
+INFO: [HLS 200-111] Finished Source Code Analysis and Preprocessing: CPU user time: 10.88 seconds. CPU system time: 0.8 seconds. Elapsed time: 11.75 seconds; current allocated memory: 331.512 MB.
 INFO: [HLS 200-777] Using interface defaults for 'Vivado' flow target.
 INFO: [HLS 200-1995] There were 3,705 instructions in the design after the 'Compile/Link' phase of compilation. See the Design Size Report for more details: /home/hoinguyen/Documents/Vitis/UpConv_HLS/upconv_block0/upconv_block0/hls/syn/report/csynth_design_size.rpt
 INFO: [HLS 200-1995] There were 11,073 instructions in the design after the 'Unroll/Inline (step 1)' phase of compilation. See the Design Size Report for more details: /home/hoinguyen/Documents/Vitis/UpConv_HLS/upconv_block0/upconv_block0/hls/syn/report/csynth_design_size.rpt
@@ -59,20 +59,20 @@ INFO: [HLS 214-437] Automatically disabling loop flattening for loop 'KW_LOOP'. 
 INFO: [HLS 214-115] Multiple burst reads of length 259200 and bit width 256 in loop 'TILE_LOOP'(../gen/Hls_Layers_UpConv.tpp:135:13) has been inferred on bundle 'gmem_weight'. These burst requests might be further partitioned into multiple requests during RTL generation, based on max_read_burst_length or max_write_burst_length settings. (../gen/Hls_Layers_UpConv.tpp:135:13)
 INFO: [HLS 214-115] Multiple burst writes of length 960 and bit width 256 in loop 'PIXEL_NORM'(../gen/Hls_Layers_UpConv.tpp:238:17) has been inferred on bundle 'gmem_out'. These burst requests might be further partitioned into multiple requests during RTL generation, based on max_read_burst_length or max_write_burst_length settings. (../gen/Hls_Layers_UpConv.tpp:238:17)
 INFO: [HLS 214-115] Multiple burst reads of length 960 and bit width 256 in loop 'LOAD_ROW0'(../gen/Hls_Layers_UpConv.tpp:295:16) has been inferred on bundle 'gmem_in'. These burst requests might be further partitioned into multiple requests during RTL generation, based on max_read_burst_length or max_write_burst_length settings. (../gen/Hls_Layers_UpConv.tpp:295:16)
-INFO: [HLS 200-111] Finished Compiling Optimization and Transform: CPU user time: 4.6 seconds. CPU system time: 0.31 seconds. Elapsed time: 7.03 seconds; current allocated memory: 332.398 MB.
-INFO: [HLS 200-111] Finished Checking Pragmas: CPU user time: 0.01 seconds. CPU system time: 0 seconds. Elapsed time: 0 seconds; current allocated memory: 332.398 MB.
+INFO: [HLS 200-111] Finished Compiling Optimization and Transform: CPU user time: 3.95 seconds. CPU system time: 0.33 seconds. Elapsed time: 6.78 seconds; current allocated memory: 332.527 MB.
+INFO: [HLS 200-111] Finished Checking Pragmas: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0 seconds; current allocated memory: 332.527 MB.
 INFO: [HLS 200-10] Starting code transformations ...
-INFO: [HLS 200-111] Finished Standard Transforms: CPU user time: 0.12 seconds. CPU system time: 0.01 seconds. Elapsed time: 0.13 seconds; current allocated memory: 336.965 MB.
+INFO: [HLS 200-111] Finished Standard Transforms: CPU user time: 0.12 seconds. CPU system time: 0 seconds. Elapsed time: 0.12 seconds; current allocated memory: 337.055 MB.
 INFO: [HLS 200-10] Checking synthesizability ...
 WARNING: [SYNCHK 200-23] ../gen/Hls_Layers_UpConv.tpp:245: variable-indexed range selection may cause suboptimal QoR.
 INFO: [SYNCHK 200-10] 0 error(s), 1 warning(s).
-INFO: [HLS 200-111] Finished Checking Synthesizability: CPU user time: 0.19 seconds. CPU system time: 0 seconds. Elapsed time: 0.19 seconds; current allocated memory: 338.980 MB.
+INFO: [HLS 200-111] Finished Checking Synthesizability: CPU user time: 0.16 seconds. CPU system time: 0 seconds. Elapsed time: 0.17 seconds; current allocated memory: 339.109 MB.
 WARNING: [XFORM 203-561] Updating loop lower bound from 0 to 32 for loop 'WO_LOOP' (../gen/Hls_Layers_UpConv.tpp:164:35) in function 'UpConv_Fused_Row<8, 16, 16, 960, 480>'.
 WARNING: [XFORM 203-561] Updating loop lower bound from 0 to 3 for loop 'KW_LOOP' (../gen/Hls_Layers_UpConv.tpp:161:31) in function 'UpConv_Fused_Row<8, 16, 16, 960, 480>'.
 WARNING: [XFORM 203-561] Updating loop lower bound from 0 to 3 for loop 'KH_LOOP' (../gen/Hls_Layers_UpConv.tpp:154:27) in function 'UpConv_Fused_Row<8, 16, 16, 960, 480>'.
 WARNING: [XFORM 203-561] Updating loop lower bound from 0 to 60 for loop 'TILE_LOOP' (../gen/Hls_Layers_UpConv.tpp:135:22) in function 'UpConv_Fused_Row<8, 16, 16, 960, 480>'.
 INFO: [XFORM 203-11] Balancing expressions in function 'upconv_core_top_ucb0' (../gen/Hls_Layers_UpConv.tpp:10:31)...3 expression(s) balanced.
-INFO: [HLS 200-111] Finished Loop, function and other optimizations: CPU user time: 0.49 seconds. CPU system time: 0.01 seconds. Elapsed time: 0.51 seconds; current allocated memory: 368.008 MB.
+INFO: [HLS 200-111] Finished Loop, function and other optimizations: CPU user time: 0.42 seconds. CPU system time: 0 seconds. Elapsed time: 0.42 seconds; current allocated memory: 368.148 MB.
 INFO: [HLS 200-2061] Successfully converted nested loops 'LOAD_ROW0'(../gen/Hls_Layers_UpConv.tpp:295:16) and 'VITIS_LOOP_296_1'(../gen/Hls_Layers_UpConv.tpp:296:27) in function 'upconv_core_top_ucb0' into perfectly nested loops.
 INFO: [HLS 200-2061] Successfully converted nested loops 'LOAD_ROW'(../gen/Hls_Layers_UpConv.tpp:306:19) and 'VITIS_LOOP_307_2'(../gen/Hls_Layers_UpConv.tpp:307:31) in function 'upconv_core_top_ucb0' into perfectly nested loops.
 INFO: [HLS 200-2061] Successfully converted nested loops 'VITIS_LOOP_142_2'(../gen/Hls_Layers_UpConv.tpp:142:35) and 'VITIS_LOOP_143_3'(../gen/Hls_Layers_UpConv.tpp:143:39) in function 'UpConv_Fused_Row<8, 16, 16, 960, 480>' into perfectly nested loops.
@@ -147,7 +147,7 @@ WARNING: [ANALYSIS 214-52] Found false inter dependency for variable 'psum.3' (.
 WARNING: [ANALYSIS 214-52] Found false inter dependency for variable 'psum.2' (../gen/Hls_Layers_UpConv.tpp:171).
 WARNING: [ANALYSIS 214-52] Found false inter dependency for variable 'psum.1' (../gen/Hls_Layers_UpConv.tpp:171).
 WARNING: [ANALYSIS 214-52] Found false inter dependency for variable 'psum' (../gen/Hls_Layers_UpConv.tpp:171).
-INFO: [HLS 200-111] Finished Architecture Synthesis: CPU user time: 0.64 seconds. CPU system time: 0.04 seconds. Elapsed time: 0.67 seconds; current allocated memory: 460.379 MB.
+INFO: [HLS 200-111] Finished Architecture Synthesis: CPU user time: 0.51 seconds. CPU system time: 0.03 seconds. Elapsed time: 0.57 seconds; current allocated memory: 460.508 MB.
 INFO: [HLS 200-10] Starting hardware synthesis ...
 INFO: [HLS 200-10] Synthesizing 'upconv_core_top_ucb0' ...
 WARNING: [SYN 201-103] Legalizing function name 'UpConv_Fused_Row<8, 16, 16, 960, 480>_Pipeline_RESET_ROW_ACC' to 'UpConv_Fused_Row_8_16_16_960_480_Pipeline_RESET_ROW_ACC'.
@@ -165,13 +165,13 @@ WARNING: [HLS 200-2042] Usage of URAM can potentially cause worse II as Vitis HL
 INFO: [SCHED 204-61] Pipelining loop 'LOAD_ROW0_VITIS_LOOP_296_1'.
 INFO: [HLS 200-1470] Pipelining result : Target II = 1, Final II = 1, Depth = 3, loop 'LOAD_ROW0_VITIS_LOOP_296_1'
 INFO: [SCHED 204-11] Finished scheduling.
-INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0.13 seconds. CPU system time: 0.02 seconds. Elapsed time: 0.15 seconds; current allocated memory: 460.379 MB.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0.13 seconds. CPU system time: 0.03 seconds. Elapsed time: 0.15 seconds; current allocated memory: 460.508 MB.
 INFO: [BIND 205-100] Starting micro-architecture generation ...
 INFO: [BIND 205-101] Performing variable lifetime analysis.
 INFO: [BIND 205-101] Exploring resource sharing.
 INFO: [BIND 205-101] Binding ...
 INFO: [BIND 205-100] Finished micro-architecture generation.
-INFO: [HLS 200-111] Finished Binding: CPU user time: 0.01 seconds. CPU system time: 0.01 seconds. Elapsed time: 0.01 seconds; current allocated memory: 460.379 MB.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0.01 seconds. CPU system time: 0 seconds. Elapsed time: 0.02 seconds; current allocated memory: 460.508 MB.
 INFO: [HLS 200-10] ----------------------------------------------------------------
 INFO: [HLS 200-42] -- Implementing module 'UpConv_Fused_Row_8_16_16_960_480_Pipeline_RESET_ROW_ACC' 
 INFO: [HLS 200-10] ----------------------------------------------------------------
@@ -673,13 +673,13 @@ WARNING: [HLS 200-885] The II Violation in module 'UpConv_Fused_Row_8_16_16_960_
 Resolution: For help on HLS 200-885 see docs.xilinx.com/access/sources/dita/topic?Doc_Version=2024.2%20English&url=ug1448-hls-guidance&resourceid=200-885.html
 INFO: [HLS 200-1470] Pipelining result : Target II = 1, Final II = 15, Depth = 16, loop 'RESET_ROW_ACC'
 INFO: [SCHED 204-11] Finished scheduling.
-INFO: [HLS 200-111] Finished Scheduling: CPU user time: 1.89 seconds. CPU system time: 0.11 seconds. Elapsed time: 2.02 seconds; current allocated memory: 467.273 MB.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 1.7 seconds. CPU system time: 0.06 seconds. Elapsed time: 1.77 seconds; current allocated memory: 467.645 MB.
 INFO: [BIND 205-100] Starting micro-architecture generation ...
 INFO: [BIND 205-101] Performing variable lifetime analysis.
 INFO: [BIND 205-101] Exploring resource sharing.
 INFO: [BIND 205-101] Binding ...
 INFO: [BIND 205-100] Finished micro-architecture generation.
-INFO: [HLS 200-111] Finished Binding: CPU user time: 0.08 seconds. CPU system time: 0 seconds. Elapsed time: 0.1 seconds; current allocated memory: 467.273 MB.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0.07 seconds. CPU system time: 0 seconds. Elapsed time: 0.08 seconds; current allocated memory: 467.645 MB.
 INFO: [HLS 200-10] ----------------------------------------------------------------
 INFO: [HLS 200-42] -- Implementing module 'UpConv_Fused_Row_Pipeline_PRELOAD_W_VITIS_LOOP_142_2_VITIS_LOOP_143_3' 
 INFO: [HLS 200-10] ----------------------------------------------------------------
@@ -699,13 +699,13 @@ WARNING: [HLS 200-1016] The critical path in module 'UpConv_Fused_Row_Pipeline_P
 
 Resolution: For help on HLS 200-1016 see docs.xilinx.com/access/sources/dita/topic?Doc_Version=2024.2%20English&url=ug1448-hls-guidance&resourceid=200-1016.html
 INFO: [SCHED 204-11] Finished scheduling.
-INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0.1 seconds. CPU system time: 0.01 seconds. Elapsed time: 0.12 seconds; current allocated memory: 467.516 MB.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0.09 seconds. CPU system time: 0.01 seconds. Elapsed time: 0.1 seconds; current allocated memory: 467.824 MB.
 INFO: [BIND 205-100] Starting micro-architecture generation ...
 INFO: [BIND 205-101] Performing variable lifetime analysis.
 INFO: [BIND 205-101] Exploring resource sharing.
 INFO: [BIND 205-101] Binding ...
 INFO: [BIND 205-100] Finished micro-architecture generation.
-INFO: [HLS 200-111] Finished Binding: CPU user time: 0.02 seconds. CPU system time: 0 seconds. Elapsed time: 0.03 seconds; current allocated memory: 467.516 MB.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0.02 seconds. CPU system time: 0 seconds. Elapsed time: 0.03 seconds; current allocated memory: 467.824 MB.
 INFO: [HLS 200-10] ----------------------------------------------------------------
 INFO: [HLS 200-42] -- Implementing module 'UpConv_Fused_Row_8_16_16_960_480_Pipeline_CI_LOOP' 
 INFO: [HLS 200-10] ----------------------------------------------------------------
@@ -714,13 +714,13 @@ WARNING: [HLS 200-2042] Usage of URAM can potentially cause worse II as Vitis HL
 INFO: [SCHED 204-61] Pipelining loop 'CI_LOOP'.
 INFO: [HLS 200-1470] Pipelining result : Target II = 1, Final II = 1, Depth = 93, loop 'CI_LOOP'
 INFO: [SCHED 204-11] Finished scheduling.
-INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0.3 seconds. CPU system time: 0.01 seconds. Elapsed time: 0.39 seconds; current allocated memory: 473.777 MB.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0.26 seconds. CPU system time: 0.01 seconds. Elapsed time: 0.27 seconds; current allocated memory: 473.906 MB.
 INFO: [BIND 205-100] Starting micro-architecture generation ...
 INFO: [BIND 205-101] Performing variable lifetime analysis.
 INFO: [BIND 205-101] Exploring resource sharing.
 INFO: [BIND 205-101] Binding ...
 INFO: [BIND 205-100] Finished micro-architecture generation.
-INFO: [HLS 200-111] Finished Binding: CPU user time: 0.11 seconds. CPU system time: 0.01 seconds. Elapsed time: 0.12 seconds; current allocated memory: 476.043 MB.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0.1 seconds. CPU system time: 0 seconds. Elapsed time: 0.1 seconds; current allocated memory: 476.180 MB.
 INFO: [HLS 200-10] ----------------------------------------------------------------
 INFO: [HLS 200-42] -- Implementing module 'UpConv_Fused_Row_8_16_16_960_480_Outline_TILE_LOOP' 
 INFO: [HLS 200-10] ----------------------------------------------------------------
@@ -758,13 +758,13 @@ WARNING: [HLS 200-2042] Usage of URAM can potentially cause worse II as Vitis HL
 WARNING: [HLS 200-2042] Usage of URAM can potentially cause worse II as Vitis HLS does not exploit read-first mode for URAMs. Consider using BRAMs instead.
 WARNING: [HLS 200-2042] Usage of URAM can potentially cause worse II as Vitis HLS does not exploit read-first mode for URAMs. Consider using BRAMs instead.
 INFO: [SCHED 204-11] Finished scheduling.
-INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0.27 seconds. CPU system time: 0.02 seconds. Elapsed time: 0.42 seconds; current allocated memory: 478.812 MB.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0.21 seconds. CPU system time: 0.01 seconds. Elapsed time: 0.22 seconds; current allocated memory: 478.945 MB.
 INFO: [BIND 205-100] Starting micro-architecture generation ...
 INFO: [BIND 205-101] Performing variable lifetime analysis.
 INFO: [BIND 205-101] Exploring resource sharing.
 INFO: [BIND 205-101] Binding ...
 INFO: [BIND 205-100] Finished micro-architecture generation.
-INFO: [HLS 200-111] Finished Binding: CPU user time: 0.05 seconds. CPU system time: 0 seconds. Elapsed time: 0.05 seconds; current allocated memory: 478.812 MB.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0.03 seconds. CPU system time: 0 seconds. Elapsed time: 0.04 seconds; current allocated memory: 478.945 MB.
 INFO: [HLS 200-10] ----------------------------------------------------------------
 INFO: [HLS 200-42] -- Implementing module 'UpConv_Fused_Row_8_16_16_960_480_Pipeline_LOAD_PARAMS' 
 INFO: [HLS 200-10] ----------------------------------------------------------------
@@ -776,13 +776,13 @@ WARNING: [HLS 200-885] The II Violation in module 'UpConv_Fused_Row_8_16_16_960_
 Resolution: For help on HLS 200-885 see docs.xilinx.com/access/sources/dita/topic?Doc_Version=2024.2%20English&url=ug1448-hls-guidance&resourceid=200-885.html
 INFO: [HLS 200-1470] Pipelining result : Target II = 1, Final II = 3, Depth = 13, loop 'LOAD_PARAMS'
 INFO: [SCHED 204-11] Finished scheduling.
-INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0.09 seconds. CPU system time: 0 seconds. Elapsed time: 0.09 seconds; current allocated memory: 479.504 MB.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0.07 seconds. CPU system time: 0 seconds. Elapsed time: 0.08 seconds; current allocated memory: 479.805 MB.
 INFO: [BIND 205-100] Starting micro-architecture generation ...
 INFO: [BIND 205-101] Performing variable lifetime analysis.
 INFO: [BIND 205-101] Exploring resource sharing.
 INFO: [BIND 205-101] Binding ...
 INFO: [BIND 205-100] Finished micro-architecture generation.
-INFO: [HLS 200-111] Finished Binding: CPU user time: 0.03 seconds. CPU system time: 0 seconds. Elapsed time: 0.02 seconds; current allocated memory: 479.562 MB.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0.02 seconds. CPU system time: 0 seconds. Elapsed time: 0.02 seconds; current allocated memory: 479.805 MB.
 INFO: [HLS 200-10] ----------------------------------------------------------------
 INFO: [HLS 200-42] -- Implementing module 'UpConv_Fused_Row_8_16_16_960_480_Pipeline_BIAS_STATS' 
 INFO: [HLS 200-10] ----------------------------------------------------------------
@@ -841,13 +841,13 @@ WARNING: [HLS 200-1016] The critical path in module 'UpConv_Fused_Row_8_16_16_96
 
 Resolution: For help on HLS 200-1016 see docs.xilinx.com/access/sources/dita/topic?Doc_Version=2024.2%20English&url=ug1448-hls-guidance&resourceid=200-1016.html
 INFO: [SCHED 204-11] Finished scheduling.
-INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0.23 seconds. CPU system time: 0.01 seconds. Elapsed time: 0.24 seconds; current allocated memory: 480.922 MB.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0.21 seconds. CPU system time: 0.02 seconds. Elapsed time: 0.22 seconds; current allocated memory: 481.078 MB.
 INFO: [BIND 205-100] Starting micro-architecture generation ...
 INFO: [BIND 205-101] Performing variable lifetime analysis.
 INFO: [BIND 205-101] Exploring resource sharing.
 INFO: [BIND 205-101] Binding ...
 INFO: [BIND 205-100] Finished micro-architecture generation.
-INFO: [HLS 200-111] Finished Binding: CPU user time: 0.03 seconds. CPU system time: 0.01 seconds. Elapsed time: 0.03 seconds; current allocated memory: 480.922 MB.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0.03 seconds. CPU system time: 0 seconds. Elapsed time: 0.03 seconds; current allocated memory: 481.078 MB.
 INFO: [HLS 200-10] ----------------------------------------------------------------
 INFO: [HLS 200-42] -- Implementing module 'UpConv_Fused_Row_8_16_16_960_480_Pipeline_NORM_WRITE' 
 INFO: [HLS 200-10] ----------------------------------------------------------------
@@ -871,25 +871,25 @@ WARNING: [HLS 200-2042] Usage of URAM can potentially cause worse II as Vitis HL
 INFO: [SCHED 204-61] Pipelining loop 'NORM_WRITE'.
 INFO: [HLS 200-1470] Pipelining result : Target II = 1, Final II = 1, Depth = 24, loop 'NORM_WRITE'
 INFO: [SCHED 204-11] Finished scheduling.
-INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0.17 seconds. CPU system time: 0 seconds. Elapsed time: 0.18 seconds; current allocated memory: 483.043 MB.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0.15 seconds. CPU system time: 0.01 seconds. Elapsed time: 0.16 seconds; current allocated memory: 483.176 MB.
 INFO: [BIND 205-100] Starting micro-architecture generation ...
 INFO: [BIND 205-101] Performing variable lifetime analysis.
 INFO: [BIND 205-101] Exploring resource sharing.
 INFO: [BIND 205-101] Binding ...
 INFO: [BIND 205-100] Finished micro-architecture generation.
-INFO: [HLS 200-111] Finished Binding: CPU user time: 0.04 seconds. CPU system time: 0.01 seconds. Elapsed time: 0.05 seconds; current allocated memory: 483.781 MB.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0.04 seconds. CPU system time: 0 seconds. Elapsed time: 0.04 seconds; current allocated memory: 483.914 MB.
 INFO: [HLS 200-10] ----------------------------------------------------------------
 INFO: [HLS 200-42] -- Implementing module 'UpConv_Fused_Row_8_16_16_960_480_s' 
 INFO: [HLS 200-10] ----------------------------------------------------------------
 INFO: [SCHED 204-11] Starting scheduling ...
 INFO: [SCHED 204-11] Finished scheduling.
-INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0.07 seconds. CPU system time: 0 seconds. Elapsed time: 0.07 seconds; current allocated memory: 484.852 MB.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0.06 seconds. CPU system time: 0 seconds. Elapsed time: 0.06 seconds; current allocated memory: 484.992 MB.
 INFO: [BIND 205-100] Starting micro-architecture generation ...
 INFO: [BIND 205-101] Performing variable lifetime analysis.
 INFO: [BIND 205-101] Exploring resource sharing.
 INFO: [BIND 205-101] Binding ...
 INFO: [BIND 205-100] Finished micro-architecture generation.
-INFO: [HLS 200-111] Finished Binding: CPU user time: 0.09 seconds. CPU system time: 0 seconds. Elapsed time: 0.09 seconds; current allocated memory: 485.891 MB.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0.05 seconds. CPU system time: 0 seconds. Elapsed time: 0.05 seconds; current allocated memory: 486.016 MB.
 INFO: [HLS 200-10] ----------------------------------------------------------------
 INFO: [HLS 200-42] -- Implementing module 'upconv_core_top_ucb0_Pipeline_LOAD_ROW_VITIS_LOOP_307_2' 
 INFO: [HLS 200-10] ----------------------------------------------------------------
@@ -898,25 +898,25 @@ WARNING: [HLS 200-2042] Usage of URAM can potentially cause worse II as Vitis HL
 INFO: [SCHED 204-61] Pipelining loop 'LOAD_ROW_VITIS_LOOP_307_2'.
 INFO: [HLS 200-1470] Pipelining result : Target II = 1, Final II = 1, Depth = 13, loop 'LOAD_ROW_VITIS_LOOP_307_2'
 INFO: [SCHED 204-11] Finished scheduling.
-INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0.1 seconds. CPU system time: 0 seconds. Elapsed time: 0.09 seconds; current allocated memory: 487.000 MB.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0.07 seconds. CPU system time: 0.01 seconds. Elapsed time: 0.07 seconds; current allocated memory: 487.133 MB.
 INFO: [BIND 205-100] Starting micro-architecture generation ...
 INFO: [BIND 205-101] Performing variable lifetime analysis.
 INFO: [BIND 205-101] Exploring resource sharing.
 INFO: [BIND 205-101] Binding ...
 INFO: [BIND 205-100] Finished micro-architecture generation.
-INFO: [HLS 200-111] Finished Binding: CPU user time: 0.03 seconds. CPU system time: 0.01 seconds. Elapsed time: 0.03 seconds; current allocated memory: 487.000 MB.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0.02 seconds. CPU system time: 0 seconds. Elapsed time: 0.03 seconds; current allocated memory: 487.133 MB.
 INFO: [HLS 200-10] ----------------------------------------------------------------
 INFO: [HLS 200-42] -- Implementing module 'upconv_core_top_ucb0' 
 INFO: [HLS 200-10] ----------------------------------------------------------------
 INFO: [SCHED 204-11] Starting scheduling ...
 INFO: [SCHED 204-11] Finished scheduling.
-INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0.04 seconds. CPU system time: 0 seconds. Elapsed time: 0.05 seconds; current allocated memory: 487.383 MB.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0.04 seconds. CPU system time: 0.01 seconds. Elapsed time: 0.04 seconds; current allocated memory: 487.512 MB.
 INFO: [BIND 205-100] Starting micro-architecture generation ...
 INFO: [BIND 205-101] Performing variable lifetime analysis.
 INFO: [BIND 205-101] Exploring resource sharing.
 INFO: [BIND 205-101] Binding ...
 INFO: [BIND 205-100] Finished micro-architecture generation.
-INFO: [HLS 200-111] Finished Binding: CPU user time: 0.04 seconds. CPU system time: 0 seconds. Elapsed time: 0.05 seconds; current allocated memory: 487.383 MB.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0.03 seconds. CPU system time: 0 seconds. Elapsed time: 0.03 seconds; current allocated memory: 487.512 MB.
 INFO: [HLS 200-10] ----------------------------------------------------------------
 INFO: [HLS 200-10] -- Generating RTL for module 'upconv_core_top_ucb0_Pipeline_LOAD_ROW0_VITIS_LOOP_296_1' 
 INFO: [HLS 200-10] ----------------------------------------------------------------
@@ -934,13 +934,13 @@ WARNING: [RTGEN 206-101] Setting dangling out port 'upconv_core_top_ucb0_Pipelin
 WARNING: [RTGEN 206-101] Setting dangling out port 'upconv_core_top_ucb0_Pipeline_LOAD_ROW0_VITIS_LOOP_296_1/m_axi_gmem_in_0_ARREGION' to 0.
 WARNING: [RTGEN 206-101] Setting dangling out port 'upconv_core_top_ucb0_Pipeline_LOAD_ROW0_VITIS_LOOP_296_1/m_axi_gmem_in_0_ARUSER' to 0.
 INFO: [RTGEN 206-100] Finished creating RTL model for 'upconv_core_top_ucb0_Pipeline_LOAD_ROW0_VITIS_LOOP_296_1'.
-INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0.13 seconds. CPU system time: 0.01 seconds. Elapsed time: 0.14 seconds; current allocated memory: 488.121 MB.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0.09 seconds. CPU system time: 0.01 seconds. Elapsed time: 0.1 seconds; current allocated memory: 488.258 MB.
 INFO: [HLS 200-10] ----------------------------------------------------------------
 INFO: [HLS 200-10] -- Generating RTL for module 'UpConv_Fused_Row_8_16_16_960_480_Pipeline_RESET_ROW_ACC' 
 INFO: [HLS 200-10] ----------------------------------------------------------------
 INFO: [HLS 200-1030] Apply Unified Pipeline Control on module 'UpConv_Fused_Row_8_16_16_960_480_Pipeline_RESET_ROW_ACC' pipeline 'RESET_ROW_ACC' pipeline type 'loop pipeline'
 INFO: [RTGEN 206-100] Finished creating RTL model for 'UpConv_Fused_Row_8_16_16_960_480_Pipeline_RESET_ROW_ACC'.
-INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0.18 seconds. CPU system time: 0.01 seconds. Elapsed time: 0.19 seconds; current allocated memory: 492.305 MB.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0.15 seconds. CPU system time: 0.01 seconds. Elapsed time: 0.16 seconds; current allocated memory: 492.434 MB.
 INFO: [HLS 200-10] ----------------------------------------------------------------
 INFO: [HLS 200-10] -- Generating RTL for module 'UpConv_Fused_Row_Pipeline_PRELOAD_W_VITIS_LOOP_142_2_VITIS_LOOP_143_3' 
 INFO: [HLS 200-10] ----------------------------------------------------------------
@@ -958,7 +958,7 @@ WARNING: [RTGEN 206-101] Setting dangling out port 'UpConv_Fused_Row_Pipeline_PR
 WARNING: [RTGEN 206-101] Setting dangling out port 'UpConv_Fused_Row_Pipeline_PRELOAD_W_VITIS_LOOP_142_2_VITIS_LOOP_143_3/m_axi_gmem_weight_0_ARREGION' to 0.
 WARNING: [RTGEN 206-101] Setting dangling out port 'UpConv_Fused_Row_Pipeline_PRELOAD_W_VITIS_LOOP_142_2_VITIS_LOOP_143_3/m_axi_gmem_weight_0_ARUSER' to 0.
 INFO: [RTGEN 206-100] Finished creating RTL model for 'UpConv_Fused_Row_Pipeline_PRELOAD_W_VITIS_LOOP_142_2_VITIS_LOOP_143_3'.
-INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0.29 seconds. CPU system time: 0.02 seconds. Elapsed time: 0.34 seconds; current allocated memory: 507.500 MB.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0.23 seconds. CPU system time: 0.01 seconds. Elapsed time: 0.26 seconds; current allocated memory: 507.633 MB.
 INFO: [HLS 200-10] ----------------------------------------------------------------
 INFO: [HLS 200-10] -- Generating RTL for module 'UpConv_Fused_Row_8_16_16_960_480_Pipeline_CI_LOOP' 
 INFO: [HLS 200-10] ----------------------------------------------------------------
@@ -968,7 +968,7 @@ INFO: [RTGEN 206-100] Generating core module 'hadd_16ns_16ns_16_5_full_dsp_1': 1
 INFO: [RTGEN 206-100] Generating core module 'hmul_16ns_16ns_16_4_max_dsp_1': 128 instance(s).
 INFO: [RTGEN 206-100] Generating core module 'sparsemux_9_2_16_1_1': 8 instance(s).
 INFO: [RTGEN 206-100] Finished creating RTL model for 'UpConv_Fused_Row_8_16_16_960_480_Pipeline_CI_LOOP'.
-INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0.6 seconds. CPU system time: 0.02 seconds. Elapsed time: 0.66 seconds; current allocated memory: 537.000 MB.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0.53 seconds. CPU system time: 0.02 seconds. Elapsed time: 0.58 seconds; current allocated memory: 537.129 MB.
 INFO: [HLS 200-10] ----------------------------------------------------------------
 INFO: [HLS 200-10] -- Generating RTL for module 'UpConv_Fused_Row_8_16_16_960_480_Outline_TILE_LOOP' 
 INFO: [HLS 200-10] ----------------------------------------------------------------
@@ -976,13 +976,13 @@ INFO: [RTGEN 206-100] Generating core module 'hadd_16ns_16ns_16_5_full_dsp_1': 1
 INFO: [RTGEN 206-100] Generating core module 'hmul_16ns_16ns_16_4_max_dsp_1': 32 instance(s).
 INFO: [RTGEN 206-100] Finished creating RTL model for 'UpConv_Fused_Row_8_16_16_960_480_Outline_TILE_LOOP'.
 INFO: [RTMG 210-278] Implementing memory 'upconv_core_top_ucb0_UpConv_Fused_Row_8_16_16_960_480_Outline_TILE_LOOP_w_local_7_RAM_T2P_BRAM_1R1W' using block RAMs.
-INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0.47 seconds. CPU system time: 0.03 seconds. Elapsed time: 0.5 seconds; current allocated memory: 553.246 MB.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0.44 seconds. CPU system time: 0.02 seconds. Elapsed time: 0.46 seconds; current allocated memory: 553.371 MB.
 INFO: [HLS 200-10] ----------------------------------------------------------------
 INFO: [HLS 200-10] -- Generating RTL for module 'UpConv_Fused_Row_8_16_16_960_480_Pipeline_LOAD_PARAMS' 
 INFO: [HLS 200-10] ----------------------------------------------------------------
 INFO: [HLS 200-1030] Apply Unified Pipeline Control on module 'UpConv_Fused_Row_8_16_16_960_480_Pipeline_LOAD_PARAMS' pipeline 'LOAD_PARAMS' pipeline type 'loop pipeline'
 INFO: [RTGEN 206-100] Finished creating RTL model for 'UpConv_Fused_Row_8_16_16_960_480_Pipeline_LOAD_PARAMS'.
-INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0.14 seconds. CPU system time: 0.01 seconds. Elapsed time: 0.15 seconds; current allocated memory: 558.410 MB.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0.13 seconds. CPU system time: 0.01 seconds. Elapsed time: 0.14 seconds; current allocated memory: 558.539 MB.
 INFO: [HLS 200-10] ----------------------------------------------------------------
 INFO: [HLS 200-10] -- Generating RTL for module 'UpConv_Fused_Row_8_16_16_960_480_Pipeline_BIAS_STATS' 
 INFO: [HLS 200-10] ----------------------------------------------------------------
@@ -994,7 +994,7 @@ INFO: [RTGEN 206-100] Generating core module 'hptosp_16ns_32_2_no_dsp_1': 1 inst
 INFO: [RTGEN 206-100] Generating core module 'partselect_16ns_256ns_32ns_16_1_1': 1 instance(s).
 INFO: [RTGEN 206-100] Generating core module 'sparsemux_33_4_16_1_1': 1 instance(s).
 INFO: [RTGEN 206-100] Finished creating RTL model for 'UpConv_Fused_Row_8_16_16_960_480_Pipeline_BIAS_STATS'.
-INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0.11 seconds. CPU system time: 0.01 seconds. Elapsed time: 0.12 seconds; current allocated memory: 561.113 MB.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0.09 seconds. CPU system time: 0.01 seconds. Elapsed time: 0.1 seconds; current allocated memory: 561.242 MB.
 INFO: [HLS 200-10] ----------------------------------------------------------------
 INFO: [HLS 200-10] -- Generating RTL for module 'UpConv_Fused_Row_8_16_16_960_480_Pipeline_NORM_WRITE' 
 INFO: [HLS 200-10] ----------------------------------------------------------------
@@ -1017,7 +1017,7 @@ INFO: [RTGEN 206-100] Generating core module 'hcmp_16ns_16ns_1_2_no_dsp_1': 16 i
 INFO: [RTGEN 206-100] Generating core module 'hmul_16ns_16ns_16_4_max_dsp_1': 32 instance(s).
 INFO: [RTGEN 206-100] Generating core module 'hsub_16ns_16ns_16_5_full_dsp_1': 16 instance(s).
 INFO: [RTGEN 206-100] Finished creating RTL model for 'UpConv_Fused_Row_8_16_16_960_480_Pipeline_NORM_WRITE'.
-INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0.25 seconds. CPU system time: 0.01 seconds. Elapsed time: 0.26 seconds; current allocated memory: 568.109 MB.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0.2 seconds. CPU system time: 0.01 seconds. Elapsed time: 0.21 seconds; current allocated memory: 568.234 MB.
 INFO: [HLS 200-10] ----------------------------------------------------------------
 INFO: [HLS 200-10] -- Generating RTL for module 'UpConv_Fused_Row_8_16_16_960_480_s' 
 INFO: [HLS 200-10] ----------------------------------------------------------------
@@ -1048,13 +1048,13 @@ INFO: [RTGEN 206-100] Generating core module 'sptohp_32ns_16_2_no_dsp_1': 1 inst
 INFO: [RTGEN 206-100] Finished creating RTL model for 'UpConv_Fused_Row_8_16_16_960_480_s'.
 INFO: [RTMG 210-278] Implementing memory 'upconv_core_top_ucb0_UpConv_Fused_Row_8_16_16_960_480_s_void_UpConv_Fused_Row_ap_uint_ap_uint_consbkb' using ultra RAMs.
 INFO: [RTMG 210-278] Implementing memory 'upconv_core_top_ucb0_UpConv_Fused_Row_8_16_16_960_480_s_b_buf_RAM_T2P_BRAM_1R1W' using block RAMs.
-INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0.34 seconds. CPU system time: 0.03 seconds. Elapsed time: 0.53 seconds; current allocated memory: 581.324 MB.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0.27 seconds. CPU system time: 0.03 seconds. Elapsed time: 0.3 seconds; current allocated memory: 581.453 MB.
 INFO: [HLS 200-10] ----------------------------------------------------------------
 INFO: [HLS 200-10] -- Generating RTL for module 'upconv_core_top_ucb0_Pipeline_LOAD_ROW_VITIS_LOOP_307_2' 
 INFO: [HLS 200-10] ----------------------------------------------------------------
 INFO: [HLS 200-1030] Apply Unified Pipeline Control on module 'upconv_core_top_ucb0_Pipeline_LOAD_ROW_VITIS_LOOP_307_2' pipeline 'LOAD_ROW_VITIS_LOOP_307_2' pipeline type 'loop pipeline'
 INFO: [RTGEN 206-100] Finished creating RTL model for 'upconv_core_top_ucb0_Pipeline_LOAD_ROW_VITIS_LOOP_307_2'.
-INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0.19 seconds. CPU system time: 0.01 seconds. Elapsed time: 0.2 seconds; current allocated memory: 585.316 MB.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0.15 seconds. CPU system time: 0.01 seconds. Elapsed time: 0.15 seconds; current allocated memory: 585.445 MB.
 INFO: [HLS 200-10] ----------------------------------------------------------------
 INFO: [HLS 200-10] -- Generating RTL for module 'upconv_core_top_ucb0' 
 INFO: [HLS 200-10] ----------------------------------------------------------------
@@ -1074,13 +1074,13 @@ INFO: [RTGEN 206-500] Setting interface mode on function 'upconv_core_top_ucb0' 
 INFO: [RTGEN 206-100] Bundling port 'X', 'W', 'B', 'G', 'BE', 'Y', 'epsilon' and 'return' to AXI-Lite port control.
 INFO: [RTGEN 206-100] Finished creating RTL model for 'upconv_core_top_ucb0'.
 INFO: [RTMG 210-278] Implementing memory 'upconv_core_top_ucb0_x_buf_RAM_T2P_URAM_1R1W' using ultra RAMs.
-INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0.15 seconds. CPU system time: 0.01 seconds. Elapsed time: 0.17 seconds; current allocated memory: 589.191 MB.
-INFO: [HLS 200-111] Finished Generating all RTL models: CPU user time: 0.34 seconds. CPU system time: 0.04 seconds. Elapsed time: 0.54 seconds; current allocated memory: 590.930 MB.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0.14 seconds. CPU system time: 0 seconds. Elapsed time: 0.14 seconds; current allocated memory: 589.324 MB.
+INFO: [HLS 200-111] Finished Generating all RTL models: CPU user time: 0.28 seconds. CPU system time: 0.02 seconds. Elapsed time: 0.3 seconds; current allocated memory: 591.059 MB.
 INFO: [HLS 200-1603] Design has inferred MAXI bursts and missed bursts, see Vitis HLS GUI synthesis summary report for detailed information.
-INFO: [HLS 200-111] Finished Updating report files: CPU user time: 1.05 seconds. CPU system time: 0.02 seconds. Elapsed time: 1.07 seconds; current allocated memory: 612.070 MB.
+INFO: [HLS 200-111] Finished Updating report files: CPU user time: 0.97 seconds. CPU system time: 0.02 seconds. Elapsed time: 0.98 seconds; current allocated memory: 612.199 MB.
 INFO: [VHDL 208-304] Generating VHDL RTL for upconv_core_top_ucb0.
 INFO: [VLOG 209-307] Generating Verilog RTL for upconv_core_top_ucb0.
 INFO: [HLS 200-790] **** Loop Constraint Status: All loop constraints were NOT satisfied.
 INFO: [HLS 200-789] **** Estimated Fmax: 367.78 MHz
-INFO: [HLS 200-112] Total CPU user time: 28.82 seconds. Total CPU system time: 1.86 seconds. Total elapsed time: 33.32 seconds; peak allocated memory: 612.402 MB.
-INFO: [v++ 60-791] Total elapsed time: 0h 0m 37s
+INFO: [HLS 200-112] Total CPU user time: 25.1 seconds. Total CPU system time: 1.72 seconds. Total elapsed time: 29.31 seconds; peak allocated memory: 612.535 MB.
+INFO: [v++ 60-791] Total elapsed time: 0h 0m 32s

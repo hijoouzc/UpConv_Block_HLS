@@ -3,7 +3,7 @@
 ================================================================
 == Vitis HLS Report for 'UpConv_Fused_Row_8_16_16_960_480_Pipeline_LOAD_PARAMS'
 ================================================================
-* Date:           Thu May  7 18:30:36 2026
+* Date:           Tue May 19 20:00:38 2026
 
 * Version:        2024.2 (Build 5238294 on Nov  8 2024)
 * Project:        upconv_block0
@@ -198,7 +198,7 @@ Target clock period: 3.333ns, clock uncertainty: 0.900ns.
 The critical path consists of the following:
 	'store' operation 0 bit ('store_ln228', ../gen/Hls_Layers_UpConv.tpp:228) of constant 0 on local variable 'i', ../gen/Hls_Layers_UpConv.tpp:228 [19]  (0.427 ns)
 	'load' operation 5 bit ('i', ../gen/Hls_Layers_UpConv.tpp:228) on local variable 'i', ../gen/Hls_Layers_UpConv.tpp:228 [22]  (0.000 ns)
-	'icmp' operation 1 bit ('icmp_ln228', ../gen/Hls_Layers_UpConv.tpp:228) [23]  (0.789 ns)
+	'add' operation 5 bit ('add_ln228', ../gen/Hls_Layers_UpConv.tpp:228) [24]  (0.789 ns)
 	'store' operation 0 bit ('store_ln228', ../gen/Hls_Layers_UpConv.tpp:228) of variable 'add_ln228', ../gen/Hls_Layers_UpConv.tpp:228 on local variable 'i', ../gen/Hls_Layers_UpConv.tpp:228 [53]  (0.427 ns)
 
  <State 2>: 2.433ns

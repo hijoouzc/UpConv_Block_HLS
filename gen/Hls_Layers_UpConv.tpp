@@ -77,7 +77,7 @@ static inline float my_sqrt_f(float x) {
 
 template<int PEs, int H_IN, int W_IN, int C_IN, int C_OUT>
 void UpConv_Fused_Row(
-    data_256_t*       x_buf,    // Ping-pong [2][W_IN][CI_WORDS]
+    data_256_t*       x_buf,    // Circular Line Buffer [2][W_IN][CI_WORDS]
     const data_256_t* W_ptr,
     const data_256_t* B_ptr,
     const data_256_t* G_ptr,
@@ -275,7 +275,7 @@ void UpConv_Fused_Row(
 }
 
 // ============================================================
-// UPCONV FUSED TOP — Shared Ping-Pong & Loading Logic
+// UPCONV FUSED TOP — Shared Circular Buffer & Loading Logic
 // ============================================================
 template<int PEs, int H_IN, int W_IN, int C_IN, int C_OUT>
 void UpConv_Fused_Top(

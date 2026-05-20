@@ -1,0 +1,34 @@
+{
+  "0": {
+    "basicblocks": 16,
+    "calls": "1 1 1 1",
+    "file": "upconv_core_top_ucb2.cpp",
+    "fileloc": 10,
+    "instructions": 104,
+    "loads": {
+      "T": 1
+    },
+    "name": "upconv_core_top_ucb2",
+    "stores": {
+      "G": 2
+    },
+    "total_instructions": 7864
+  },
+  "1": {
+    "basicblocks": 135,
+    "calls": "",
+    "file": "Hls_Layers_UpConv.tpp",
+    "fileloc": 79,
+    "instructions": 1940,
+    "loads": {
+      "G": 49,
+      "L": 78
+    },
+    "name": "UpConv_Fused_Row<8, 64, 64, 240, 120>",
+    "stores": {
+      "G": 160,
+      "L": 75
+    },
+    "total_instructions": 1940
+  }
+}

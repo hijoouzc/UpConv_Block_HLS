@@ -1,6 +1,7 @@
 INFO: [SIM 2] *************** CSIM start ***************
 INFO: [SIM 4] CSIM will launch CLANG as the compiler.
    Compiling ../../../../../test_ucb0.cpp in debug mode
+   Compiling ../../../../../gen/upconv_core_top_ucb0.cpp in debug mode
    Generating csim.exe
 
 ╔════════════════════════════════════════════════════════╗
@@ -15,10 +16,10 @@ INFO: [SIM 4] CSIM will launch CLANG as the compiler.
 ====================================================
 Packing inputs...
 Running HLS kernel...
-HLS CSIM time: 0.379671 s
+HLS CSIM time: 0.445904 s
 Unpacking outputs...
 Running CPU golden reference...
-Golden CPU time: 0.00122321 s
+Golden CPU time: 0.00120595 s
 Output Sum: 7146.64
 Max Error : 0.00373875
 MSE       : 2.02827e-06
