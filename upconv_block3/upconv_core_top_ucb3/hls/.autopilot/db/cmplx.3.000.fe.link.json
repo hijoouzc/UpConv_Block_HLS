@@ -6,59 +6,9 @@
     "fileloc": 11,
     "instructions": 17,
     "name": "upconv_core_top_ucb3",
-    "total_instructions": 3705
+    "total_instructions": 3965
   },
   "1": {
-    "basicblocks": 153,
-    "calls": "5 5 5 4 5 5 6",
-    "file": "Hls_Layers_UpConv.tpp",
-    "fileloc": 79,
-    "instructions": 526,
-    "loads": {
-      "G": 3,
-      "L": 12
-    },
-    "name": "UpConv_Fused_Row<8, 128, 128, 120, 60>",
-    "stores": {
-      "G": 3,
-      "L": 9
-    },
-    "total_instructions": 902
-  },
-  "2": {
-    "basicblocks": 1,
-    "calls": "",
-    "file": "sqrtfloat.cpp",
-    "fileloc": 11,
-    "instructions": 2,
-    "name": "sqrtf",
-    "total_instructions": 2
-  },
-  "3": {
-    "basicblocks": 31,
-    "calls": "1 1 1 1",
-    "file": "Hls_Layers_UpConv.tpp",
-    "fileloc": 281,
-    "instructions": 80,
-    "loads": {
-      "L": 2
-    },
-    "name": "UpConv_Fused_Top<8, 128, 128, 120, 60>",
-    "stores": {
-      "L": 2
-    },
-    "total_instructions": 3688
-  },
-  "4": {
-    "basicblocks": 1,
-    "calls": "2",
-    "file": "Hls_Layers_UpConv.tpp",
-    "fileloc": 52,
-    "instructions": 2,
-    "name": "my_sqrt_f",
-    "total_instructions": 4
-  },
-  "5": {
     "basicblocks": 1,
     "calls": "",
     "file": "Hls_Layers_UpConv.tpp",
@@ -73,7 +23,39 @@
     },
     "total_instructions": 18
   },
-  "6": {
+  "2": {
+    "basicblocks": 143,
+    "calls": "1 1 1 6 1 1 4",
+    "file": "Hls_Layers_UpConv.tpp",
+    "fileloc": 79,
+    "instructions": 591,
+    "loads": {
+      "G": 5,
+      "L": 16
+    },
+    "name": "UpConv_Fused_Row<8, 128, 128, 120, 60>",
+    "stores": {
+      "G": 5,
+      "L": 13
+    },
+    "total_instructions": 967
+  },
+  "3": {
+    "basicblocks": 31,
+    "calls": "2 2 2 2",
+    "file": "Hls_Layers_UpConv.tpp",
+    "fileloc": 302,
+    "instructions": 80,
+    "loads": {
+      "L": 2
+    },
+    "name": "UpConv_Fused_Top<8, 128, 128, 120, 60>",
+    "stores": {
+      "L": 2
+    },
+    "total_instructions": 3948
+  },
+  "4": {
     "basicblocks": 1,
     "calls": "",
     "file": "Hls_Layers_UpConv.tpp",
@@ -87,5 +69,23 @@
       "L": 1
     },
     "total_instructions": 26
+  },
+  "5": {
+    "basicblocks": 1,
+    "calls": "",
+    "file": "sqrtfloat.cpp",
+    "fileloc": 11,
+    "instructions": 2,
+    "name": "sqrtf",
+    "total_instructions": 2
+  },
+  "6": {
+    "basicblocks": 1,
+    "calls": "5",
+    "file": "Hls_Layers_UpConv.tpp",
+    "fileloc": 52,
+    "instructions": 2,
+    "name": "my_sqrt_f",
+    "total_instructions": 4
   }
 }

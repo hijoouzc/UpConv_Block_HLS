@@ -1,35 +1,5 @@
 # This script segment is generated automatically by AutoPilot
 
-set name upconv_core_top_ucb3_faddfsub_32ns_32ns_32_11_full_dsp_1
-if {${::AESL::PGuard_rtl_comp_handler}} {
-	::AP::rtl_comp_handler $name BINDTYPE {op} TYPE {fsub} IMPL {fulldsp} LATENCY 10 ALLOW_PRAGMA 1
-}
-
-
-set name upconv_core_top_ucb3_fmul_32ns_32ns_32_7_max_dsp_1
-if {${::AESL::PGuard_rtl_comp_handler}} {
-	::AP::rtl_comp_handler $name BINDTYPE {op} TYPE {fmul} IMPL {maxdsp} LATENCY 6 ALLOW_PRAGMA 1
-}
-
-
-set name upconv_core_top_ucb3_fdiv_32ns_32ns_32_30_no_dsp_1
-if {${::AESL::PGuard_rtl_comp_handler}} {
-	::AP::rtl_comp_handler $name BINDTYPE {op} TYPE {fdiv} IMPL {fabric} LATENCY 29 ALLOW_PRAGMA 1
-}
-
-
-set name upconv_core_top_ucb3_fsqrt_32ns_32ns_32_28_no_dsp_1
-if {${::AESL::PGuard_rtl_comp_handler}} {
-	::AP::rtl_comp_handler $name BINDTYPE {op} TYPE {fsqrt} IMPL {fabric} LATENCY 27 ALLOW_PRAGMA 1
-}
-
-
-set name upconv_core_top_ucb3_sptohp_32ns_16_2_no_dsp_1
-if {${::AESL::PGuard_rtl_comp_handler}} {
-	::AP::rtl_comp_handler $name BINDTYPE {op} TYPE {sptohp} IMPL {auto} LATENCY 1 ALLOW_PRAGMA 1
-}
-
-
 set name upconv_core_top_ucb3_hptosp_16ns_32_2_no_dsp_1
 if {${::AESL::PGuard_rtl_comp_handler}} {
 	::AP::rtl_comp_handler $name BINDTYPE {op} TYPE {hptosp} IMPL {auto} LATENCY 1 ALLOW_PRAGMA 1
@@ -228,8 +198,24 @@ if {${::AESL::PGuard_rtl_comp_handler}} {
 }
 
 
+set name upconv_core_top_ucb3_sptohp_32ns_16_2_no_dsp_1
+if {${::AESL::PGuard_rtl_comp_handler}} {
+	::AP::rtl_comp_handler $name BINDTYPE {op} TYPE {sptohp} IMPL {auto} LATENCY 1 ALLOW_PRAGMA 1
+}
+
+
 if {${::AESL::PGuard_rtl_comp_handler}} {
 	::AP::rtl_comp_handler upconv_core_top_ucb3_UpConv_Fused_Row_8_128_128_120_60_s_void_UpConv_Fused_Row_ap_uint_ap_uint_conbkb BINDTYPE {storage} TYPE {ram_t2p} IMPL {uram} LATENCY 2 ALLOW_PRAGMA 1
+}
+
+
+if {${::AESL::PGuard_rtl_comp_handler}} {
+	::AP::rtl_comp_handler upconv_core_top_ucb3_UpConv_Fused_Row_8_128_128_120_60_s_mean_buf_RAM_2P_LUTRAM_1R1W BINDTYPE {storage} TYPE {ram_2p} IMPL {lutram} LATENCY 2 ALLOW_PRAGMA 1
+}
+
+
+if {${::AESL::PGuard_rtl_comp_handler}} {
+	::AP::rtl_comp_handler upconv_core_top_ucb3_UpConv_Fused_Row_8_128_128_120_60_s_inv_buf_RAM_2P_LUTRAM_1R1W BINDTYPE {storage} TYPE {ram_2p} IMPL {lutram} LATENCY 2 ALLOW_PRAGMA 1
 }
 
 
@@ -249,7 +235,7 @@ if {${::AESL::PGuard_autoexp_gen}} {
 if {${::AESL::PGuard_autoexp_gen}} {
 if {[info proc ::AESL_LIB_XILADAPTER::xil_bram_gen] == "::AESL_LIB_XILADAPTER::xil_bram_gen"} {
 eval "::AESL_LIB_XILADAPTER::xil_bram_gen { \
-    id 663 \
+    id 710 \
     name x_buf \
     reset_level 1 \
     sync_rst true \
@@ -267,7 +253,7 @@ puts "@W \[IMPL-110\] Cannot find bus interface model in the library. Ignored ge
 # Direct connection:
 if {${::AESL::PGuard_autoexp_gen}} {
 eval "cg_default_interface_gen_dc { \
-    id 653 \
+    id 700 \
     name gmem_weight \
     type other \
     dir I \
@@ -282,7 +268,7 @@ eval "cg_default_interface_gen_dc { \
 # Direct connection:
 if {${::AESL::PGuard_autoexp_gen}} {
 eval "cg_default_interface_gen_dc { \
-    id 654 \
+    id 701 \
     name W_ptr \
     type other \
     dir I \
@@ -297,7 +283,7 @@ eval "cg_default_interface_gen_dc { \
 # Direct connection:
 if {${::AESL::PGuard_autoexp_gen}} {
 eval "cg_default_interface_gen_dc { \
-    id 655 \
+    id 702 \
     name gmem_param \
     type other \
     dir I \
@@ -312,7 +298,7 @@ eval "cg_default_interface_gen_dc { \
 # Direct connection:
 if {${::AESL::PGuard_autoexp_gen}} {
 eval "cg_default_interface_gen_dc { \
-    id 656 \
+    id 703 \
     name B_ptr \
     type other \
     dir I \
@@ -327,7 +313,7 @@ eval "cg_default_interface_gen_dc { \
 # Direct connection:
 if {${::AESL::PGuard_autoexp_gen}} {
 eval "cg_default_interface_gen_dc { \
-    id 657 \
+    id 704 \
     name G_ptr \
     type other \
     dir I \
@@ -342,7 +328,7 @@ eval "cg_default_interface_gen_dc { \
 # Direct connection:
 if {${::AESL::PGuard_autoexp_gen}} {
 eval "cg_default_interface_gen_dc { \
-    id 658 \
+    id 705 \
     name BE_ptr \
     type other \
     dir I \
@@ -357,7 +343,7 @@ eval "cg_default_interface_gen_dc { \
 # Direct connection:
 if {${::AESL::PGuard_autoexp_gen}} {
 eval "cg_default_interface_gen_dc { \
-    id 659 \
+    id 706 \
     name gmem_out \
     type other \
     dir O \
@@ -372,7 +358,7 @@ eval "cg_default_interface_gen_dc { \
 # Direct connection:
 if {${::AESL::PGuard_autoexp_gen}} {
 eval "cg_default_interface_gen_dc { \
-    id 660 \
+    id 707 \
     name Y \
     type other \
     dir I \
@@ -387,7 +373,7 @@ eval "cg_default_interface_gen_dc { \
 # Direct connection:
 if {${::AESL::PGuard_autoexp_gen}} {
 eval "cg_default_interface_gen_dc { \
-    id 661 \
+    id 708 \
     name epsilon \
     type other \
     dir I \
@@ -402,7 +388,7 @@ eval "cg_default_interface_gen_dc { \
 # Direct connection:
 if {${::AESL::PGuard_autoexp_gen}} {
 eval "cg_default_interface_gen_dc { \
-    id 662 \
+    id 709 \
     name ho \
     type other \
     dir I \

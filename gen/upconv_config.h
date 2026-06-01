@@ -4,7 +4,7 @@
 // =========================================================================
 // 1. RUN MODE CONFIGURATION
 // =========================================================================
-// Set ENABLE_MINI_TEST to 1 for mini test (16x16x16 channels)
+// Set ENABLE_MINI_TEST to 1 for mini test (16x16x64 channels)
 // Set ENABLE_MINI_TEST to 0 for full size
 // Can be pre-defined by the including .cpp (e.g. per-block kernels and testbenches)
 #ifndef ENABLE_MINI_TEST
@@ -24,7 +24,7 @@
 #if ENABLE_MINI_TEST
     #define MODEL_H_IN    16
     #define MODEL_W_IN    16
-    #define MODEL_C_IN    16
+    #define MODEL_C_IN    64
     #define MODEL_C_OUT   16
     
     #define MODEL_H_OUT   32

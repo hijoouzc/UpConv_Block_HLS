@@ -1,7 +1,7 @@
 <profile>
 
 <section name = "Vitis HLS Report for 'UpConv_Fused_Row_8_32_32_480_240_Pipeline_RESET_ROW_ACC'" level="0">
-<item name = "Date">Thu May  7 18:52:07 2026
+<item name = "Date">Mon Jun  1 23:46:39 2026
 </item>
 <item name = "Version">2024.2 (Build 5238294 on Nov  8 2024)</item>
 <item name = "Project">upconv_core_top</item>
@@ -15,7 +15,7 @@
 <section name = "" level="1">
 <item name = "Summary"><table name="" hasTotal="0">
 <keys size="4">Clock, Target, Estimated, Uncertainty</keys>
-<column name="ap_clk">3.33 ns, 2.024 ns, 0.90 ns</column>
+<column name="ap_clk">3.33 ns, 2.197 ns, 0.90 ns</column>
 </table>
 </item>
 </section>
@@ -24,7 +24,7 @@
 <section name = "" level="1">
 <item name = "Summary"><table name="" hasTotal="0">
 <keys size="8">, min, max, min, max, min, max, Type</keys>
-<column name="">514, 514, 1.713 us, 1.713 us, 513, 513, loop auto-rewind stp (delay=0 clock cycles(s))</column>
+<column name="">962, 962, 3.206 us, 3.206 us, 961, 961, loop auto-rewind stp (delay=0 clock cycles(s))</column>
 </table>
 </item>
 <item name = "Detail">
@@ -35,7 +35,7 @@
 </item>
 <item name = "Loop"><table name="" hasTotal="0">
 <keys size="8">Loop Name, min, max, Latency, achieved, target, Count, Pipelined</keys>
-<column name="- RESET_ROW_ACC">512, 512, 9, 8, 1, 64, yes</column>
+<column name="- RESET_ROW_ACC">960, 960, 2, 1, 1, 960, yes</column>
 </table>
 </item>
 </section>

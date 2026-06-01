@@ -104,7 +104,7 @@ dict set axilite_register_dict control $port_control
 if {${::AESL::PGuard_simmodel_gen}} {
 	if {[info proc ::AESL_LIB_XILADAPTER::s_axilite_gen] == "::AESL_LIB_XILADAPTER::s_axilite_gen"} {
 		eval "::AESL_LIB_XILADAPTER::s_axilite_gen { \
-			id 670 \
+			id 717 \
 			corename upconv_core_top_ucb3_control_axilite \
 			name upconv_core_top_ucb3_control_s_axi \
 			ports {$port_control} \

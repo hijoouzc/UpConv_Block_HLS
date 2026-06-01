@@ -46,13 +46,13 @@
 <SummaryOfViolations>
 <IssueType>-</IssueType>
 <ViolationType>-</ViolationType>
-<SourceLocation>../gen/Hls_Layers_UpConv.tpp:306~../gen/upconv_core_top.cpp:55</SourceLocation>
+<SourceLocation>../gen/Hls_Layers_UpConv.tpp:327~../gen/upconv_core_top.cpp:55</SourceLocation>
 <SummaryOfLoopViolations>
 <LOAD_ROW>
 <Name>LOAD_ROW</Name>
 <IssueType>-</IssueType>
 <ViolationType>-</ViolationType>
-<SourceLocation>../gen/Hls_Layers_UpConv.tpp:306~../gen/upconv_core_top.cpp:55</SourceLocation>
+<SourceLocation>../gen/Hls_Layers_UpConv.tpp:327~../gen/upconv_core_top.cpp:55</SourceLocation>
 </LOAD_ROW>
 </SummaryOfLoopViolations>
 </SummaryOfViolations>
@@ -660,8 +660,8 @@
 <Attribute>data</Attribute>
 </RtlPorts>
 <RtlPorts>
-<name>sext_ln304</name>
-<Object>sext_ln304</Object>
+<name>sext_ln325</name>
+<Object>sext_ln325</Object>
 <Type>scalar</Type>
 <Scope></Scope>
 <IOProtocol>ap_none</IOProtocol>
@@ -671,8 +671,8 @@
 <Attribute>data</Attribute>
 </RtlPorts>
 <RtlPorts>
-<name>zext_ln305</name>
-<Object>zext_ln305</Object>
+<name>zext_ln326</name>
+<Object>zext_ln326</Object>
 <Type>scalar</Type>
 <Scope></Scope>
 <IOProtocol>ap_none</IOProtocol>

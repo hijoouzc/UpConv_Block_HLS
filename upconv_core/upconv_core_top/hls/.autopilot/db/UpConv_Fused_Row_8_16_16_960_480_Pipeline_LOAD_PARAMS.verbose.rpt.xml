@@ -1,7 +1,7 @@
 <profile>
 
 <section name = "Vitis HLS Report for 'UpConv_Fused_Row_8_16_16_960_480_Pipeline_LOAD_PARAMS'" level="0">
-<item name = "Date">Thu May  7 18:52:36 2026
+<item name = "Date">Mon Jun  1 23:47:02 2026
 </item>
 <item name = "Version">2024.2 (Build 5238294 on Nov  8 2024)</item>
 <item name = "Project">upconv_core_top</item>
@@ -78,10 +78,10 @@
 </item>
 <item name = "Expression"><table name="" hasTotal="1">
 <keys size="7">Variable Name, Operation, DSP, FF, LUT, Bitwidth P0, Bitwidth P1</keys>
-<column name="add_ln228_fu_189_p2">+, 0, 0, 12, 5, 1</column>
-<column name="add_ln230_fu_199_p2">+, 0, 0, 67, 60, 60</column>
-<column name="add_ln231_fu_220_p2">+, 0, 0, 67, 60, 60</column>
-<column name="add_ln232_fu_224_p2">+, 0, 0, 67, 60, 60</column>
+<column name="add_ln221_fu_189_p2">+, 0, 0, 12, 5, 1</column>
+<column name="add_ln223_fu_199_p2">+, 0, 0, 67, 60, 60</column>
+<column name="add_ln224_fu_220_p2">+, 0, 0, 67, 60, 60</column>
+<column name="add_ln225_fu_224_p2">+, 0, 0, 67, 60, 60</column>
 <column name="ap_block_pp0_stage0_11001_grp3">and, 0, 0, 2, 1, 1</column>
 <column name="ap_block_pp0_stage0_11001_grp4">and, 0, 0, 2, 1, 1</column>
 <column name="ap_block_pp0_stage1_11001_grp1">and, 0, 0, 2, 1, 1</column>
@@ -89,7 +89,7 @@
 <column name="ap_block_pp0_stage2_11001_grp2">and, 0, 0, 2, 1, 1</column>
 <column name="ap_block_pp0_stage2_11001_grp6">and, 0, 0, 2, 1, 1</column>
 <column name="ap_block_state2_io_grp1">and, 0, 0, 2, 1, 1</column>
-<column name="icmp_ln228_fu_183_p2">icmp, 0, 0, 12, 5, 3</column>
+<column name="icmp_ln221_fu_183_p2">icmp, 0, 0, 12, 5, 3</column>
 <column name="ap_block_pp0_stage0_11001">or, 0, 0, 2, 1, 1</column>
 <column name="ap_block_pp0_stage1_subdone">or, 0, 0, 2, 1, 1</column>
 <column name="ap_block_pp0_stage2_11001">or, 0, 0, 2, 1, 1</column>
@@ -115,9 +115,9 @@
 </item>
 <item name = "Register"><table name="" hasTotal="1">
 <keys size="5">Name, FF, LUT, Bits, Const Bits</keys>
-<column name="add_ln230_reg_284">60, 0, 60, 0</column>
-<column name="add_ln231_reg_295">60, 0, 60, 0</column>
-<column name="add_ln232_reg_300">60, 0, 60, 0</column>
+<column name="add_ln223_reg_284">60, 0, 60, 0</column>
+<column name="add_ln224_reg_295">60, 0, 60, 0</column>
+<column name="add_ln225_reg_300">60, 0, 60, 0</column>
 <column name="ap_CS_fsm">3, 0, 3, 0</column>
 <column name="ap_block_pp0_stage0_subdone_grp0_done_reg">1, 0, 1, 0</column>
 <column name="ap_block_pp0_stage0_subdone_grp3_done_reg">1, 0, 1, 0</column>
@@ -142,13 +142,13 @@
 <column name="gmem_param_addr_read_reg_317">256, 0, 256, 0</column>
 <column name="i_3_reg_269">5, 0, 5, 0</column>
 <column name="i_fu_66">5, 0, 5, 0</column>
-<column name="icmp_ln228_reg_274">1, 0, 1, 0</column>
-<column name="sext_ln228_5_cast_reg_264">60, 0, 60, 0</column>
-<column name="sext_ln228_6_cast_reg_259">60, 0, 60, 0</column>
-<column name="zext_ln228_3_reg_278">5, 0, 60, 55</column>
-<column name="zext_ln228_reg_322">5, 0, 64, 59</column>
+<column name="icmp_ln221_reg_274">1, 0, 1, 0</column>
+<column name="sext_ln221_5_cast_reg_264">60, 0, 60, 0</column>
+<column name="sext_ln221_6_cast_reg_259">60, 0, 60, 0</column>
+<column name="zext_ln221_3_reg_278">5, 0, 60, 55</column>
+<column name="zext_ln221_reg_322">5, 0, 64, 59</column>
 <column name="i_3_reg_269">64, 32, 5, 0</column>
-<column name="icmp_ln228_reg_274">64, 32, 1, 0</column>
+<column name="icmp_ln221_reg_274">64, 32, 1, 0</column>
 </table>
 </item>
 </section>
@@ -214,17 +214,17 @@
 <column name="b_buf_ce0">out, 1, ap_memory, b_buf, array</column>
 <column name="b_buf_we0">out, 1, ap_memory, b_buf, array</column>
 <column name="b_buf_d0">out, 256, ap_memory, b_buf, array</column>
-<column name="sext_ln228">in, 59, ap_none, sext_ln228, scalar</column>
+<column name="sext_ln221">in, 59, ap_none, sext_ln221, scalar</column>
 <column name="g_buf_address0">out, 5, ap_memory, g_buf, array</column>
 <column name="g_buf_ce0">out, 1, ap_memory, g_buf, array</column>
 <column name="g_buf_we0">out, 1, ap_memory, g_buf, array</column>
 <column name="g_buf_d0">out, 256, ap_memory, g_buf, array</column>
-<column name="sext_ln228_5">in, 59, ap_none, sext_ln228_5, scalar</column>
+<column name="sext_ln221_5">in, 59, ap_none, sext_ln221_5, scalar</column>
 <column name="be_buf_address0">out, 5, ap_memory, be_buf, array</column>
 <column name="be_buf_ce0">out, 1, ap_memory, be_buf, array</column>
 <column name="be_buf_we0">out, 1, ap_memory, be_buf, array</column>
 <column name="be_buf_d0">out, 256, ap_memory, be_buf, array</column>
-<column name="sext_ln228_6">in, 59, ap_none, sext_ln228_6, scalar</column>
+<column name="sext_ln221_6">in, 59, ap_none, sext_ln221_6, scalar</column>
 </table>
 </item>
 </section>

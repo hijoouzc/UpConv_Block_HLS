@@ -1,7 +1,7 @@
 {
   "0": {
     "basicblocks": 56,
-    "calls": "2 2 2 2 5 5 5 5 3 3 3 3 4 4 4 4 1 1 1 1",
+    "calls": "2 2 2 2 3 3 3 3 1 1 1 1 5 5 5 5 4 4 4 4",
     "file": "upconv_core_top.cpp",
     "fileloc": 11,
     "instructions": 299,
@@ -9,91 +9,91 @@
     "stores": {
       "G": 10
     },
-    "total_instructions": 39747
+    "total_instructions": 39987
   },
   "1": {
-    "basicblocks": 54,
+    "basicblocks": 169,
     "calls": "",
     "file": "Hls_Layers_UpConv.tpp",
     "fileloc": 79,
-    "instructions": 1257,
+    "instructions": 2112,
     "loads": {
-      "G": 33,
-      "L": 11
-    },
-    "name": "UpConv_Fused_Row<8, 16, 16, 16, 16>",
-    "stores": {
-      "G": 48,
-      "L": 8
-    },
-    "total_instructions": 1257
-  },
-  "2": {
-    "basicblocks": 67,
-    "calls": "",
-    "file": "Hls_Layers_UpConv.tpp",
-    "fileloc": 79,
-    "instructions": 2616,
-    "loads": {
-      "G": 49,
-      "L": 75
-    },
-    "name": "UpConv_Fused_Row<8, 16, 16, 960, 480>",
-    "stores": {
-      "G": 512,
-      "L": 75
-    },
-    "total_instructions": 2616
-  },
-  "3": {
-    "basicblocks": 122,
-    "calls": "",
-    "file": "Hls_Layers_UpConv.tpp",
-    "fileloc": 79,
-    "instructions": 2015,
-    "loads": {
-      "G": 49,
-      "L": 75
+      "G": 51,
+      "L": 108
     },
     "name": "UpConv_Fused_Row<8, 64, 64, 240, 120>",
     "stores": {
-      "G": 160,
-      "L": 75
+      "G": 50,
+      "L": 68
     },
-    "total_instructions": 2015
+    "total_instructions": 2112
   },
-  "4": {
-    "basicblocks": 97,
+  "2": {
+    "basicblocks": 130,
     "calls": "",
     "file": "Hls_Layers_UpConv.tpp",
     "fileloc": 79,
-    "instructions": 1838,
+    "instructions": 2050,
     "loads": {
-      "G": 49,
-      "L": 75
+      "G": 51,
+      "L": 108
     },
-    "name": "UpConv_Fused_Row<8, 128, 128, 120, 60>",
+    "name": "UpConv_Fused_Row<8, 16, 16, 960, 480>",
     "stores": {
-      "G": 96,
-      "L": 75
+      "G": 50,
+      "L": 68
     },
-    "total_instructions": 1838
+    "total_instructions": 2050
   },
-  "5": {
-    "basicblocks": 67,
+  "3": {
+    "basicblocks": 130,
     "calls": "",
     "file": "Hls_Layers_UpConv.tpp",
     "fileloc": 79,
-    "instructions": 2136,
+    "instructions": 2050,
     "loads": {
-      "G": 49,
-      "L": 75
+      "G": 51,
+      "L": 108
     },
     "name": "UpConv_Fused_Row<8, 32, 32, 480, 240>",
     "stores": {
-      "G": 272,
-      "L": 75
+      "G": 50,
+      "L": 68
     },
-    "total_instructions": 2136
+    "total_instructions": 2050
+  },
+  "4": {
+    "basicblocks": 76,
+    "calls": "",
+    "file": "Hls_Layers_UpConv.tpp",
+    "fileloc": 79,
+    "instructions": 1629,
+    "loads": {
+      "G": 51,
+      "L": 44
+    },
+    "name": "UpConv_Fused_Row<8, 16, 16, 16, 16>",
+    "stores": {
+      "G": 50,
+      "L": 33
+    },
+    "total_instructions": 1629
+  },
+  "5": {
+    "basicblocks": 152,
+    "calls": "",
+    "file": "Hls_Layers_UpConv.tpp",
+    "fileloc": 79,
+    "instructions": 2081,
+    "loads": {
+      "G": 51,
+      "L": 108
+    },
+    "name": "UpConv_Fused_Row<8, 128, 128, 120, 60>",
+    "stores": {
+      "G": 50,
+      "L": 68
+    },
+    "total_instructions": 2081
   }
 }

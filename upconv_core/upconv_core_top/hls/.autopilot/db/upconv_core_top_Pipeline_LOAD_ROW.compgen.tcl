@@ -11,7 +11,7 @@ if {${::AESL::PGuard_autoexp_gen}} {
 if {${::AESL::PGuard_autoexp_gen}} {
 if {[info proc ::AESL_LIB_XILADAPTER::xil_bram_gen] == "::AESL_LIB_XILADAPTER::xil_bram_gen"} {
 eval "::AESL_LIB_XILADAPTER::xil_bram_gen { \
-    id 2906 \
+    id 3313 \
     name x_buf \
     reset_level 1 \
     sync_rst true \
@@ -29,7 +29,7 @@ puts "@W \[IMPL-110\] Cannot find bus interface model in the library. Ignored ge
 # Direct connection:
 if {${::AESL::PGuard_autoexp_gen}} {
 eval "cg_default_interface_gen_dc { \
-    id 2902 \
+    id 3309 \
     name gmem_in \
     type other \
     dir I \
@@ -44,7 +44,7 @@ eval "cg_default_interface_gen_dc { \
 # Direct connection:
 if {${::AESL::PGuard_autoexp_gen}} {
 eval "cg_default_interface_gen_dc { \
-    id 2903 \
+    id 3310 \
     name empty \
     type other \
     dir I \
@@ -59,30 +59,30 @@ eval "cg_default_interface_gen_dc { \
 # Direct connection:
 if {${::AESL::PGuard_autoexp_gen}} {
 eval "cg_default_interface_gen_dc { \
-    id 2904 \
-    name sext_ln304 \
+    id 3311 \
+    name sext_ln325 \
     type other \
     dir I \
     reset_level 1 \
     sync_rst true \
-    corename dc_sext_ln304 \
+    corename dc_sext_ln325 \
     op interface \
-    ports { sext_ln304 { I 59 vector } } \
+    ports { sext_ln325 { I 59 vector } } \
 } "
 }
 
 # Direct connection:
 if {${::AESL::PGuard_autoexp_gen}} {
 eval "cg_default_interface_gen_dc { \
-    id 2905 \
-    name zext_ln305 \
+    id 3312 \
+    name zext_ln326 \
     type other \
     dir I \
     reset_level 1 \
     sync_rst true \
-    corename dc_zext_ln305 \
+    corename dc_zext_ln326 \
     op interface \
-    ports { zext_ln305 { I 8 vector } } \
+    ports { zext_ln326 { I 8 vector } } \
 } "
 }
 

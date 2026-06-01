@@ -1,7 +1,7 @@
 <profile>
 
 <section name = "Vitis HLS Report for 'upconv_core_top'" level="0">
-<item name = "Date">Thu May  7 18:52:21 2026
+<item name = "Date">Mon Jun  1 23:46:49 2026
 </item>
 <item name = "Version">2024.2 (Build 5238294 on Nov  8 2024)</item>
 <item name = "Project">upconv_core_top</item>
@@ -15,7 +15,7 @@
 <section name = "" level="1">
 <item name = "Summary"><table name="" hasTotal="0">
 <keys size="4">Clock, Target, Estimated, Uncertainty</keys>
-<column name="ap_clk">3.33 ns, 2.904 ns, 0.90 ns</column>
+<column name="ap_clk">3.33 ns, 3.357 ns, 0.90 ns</column>
 </table>
 </item>
 </section>
@@ -24,37 +24,37 @@
 <section name = "" level="1">
 <item name = "Summary"><table name="" hasTotal="0">
 <keys size="8">, min, max, min, max, min, max, Type</keys>
-<column name="">126737, 1002942208, 0.422 ms, 3.343 sec, 126738, 1002942209, no</column>
+<column name="">32721, 26168943, 0.110 ms, 87.849 ms, 32722, 26168944, no</column>
 </table>
 </item>
 <item name = "Detail">
 <section name = "" level="1">
 <item name = "Instance"><table name="" hasTotal="0">
 <keys size="9">Instance, Module, min, max, min, max, min, max, Type</keys>
-<column name="grp_upconv_core_top_Pipeline_LOAD_ROW0_VITIS_LOOP_296_15_fu_479">upconv_core_top_Pipeline_LOAD_ROW0_VITIS_LOOP_296_15, 1027, 1027, 3.423 us, 3.423 us, 1025, 1025, loop auto-rewind stp (delay=0 clock cycles(s))</column>
-<column name="grp_upconv_core_top_Pipeline_LOAD_ROW0_VITIS_LOOP_296_13_fu_488">upconv_core_top_Pipeline_LOAD_ROW0_VITIS_LOOP_296_13, 963, 963, 3.210 us, 3.210 us, 961, 961, loop auto-rewind stp (delay=0 clock cycles(s))</column>
-<column name="grp_upconv_core_top_Pipeline_LOAD_ROW0_VITIS_LOOP_296_11_fu_497">upconv_core_top_Pipeline_LOAD_ROW0_VITIS_LOOP_296_11, 963, 963, 3.210 us, 3.210 us, 961, 961, loop auto-rewind stp (delay=0 clock cycles(s))</column>
-<column name="grp_upconv_core_top_Pipeline_LOAD_ROW0_VITIS_LOOP_296_1_fu_506">upconv_core_top_Pipeline_LOAD_ROW0_VITIS_LOOP_296_1, 963, 963, 3.210 us, 3.210 us, 961, 961, loop auto-rewind stp (delay=0 clock cycles(s))</column>
-<column name="grp_upconv_core_top_Pipeline_LOAD_ROW0_fu_515">upconv_core_top_Pipeline_LOAD_ROW0, 19, 19, 63.327 ns, 63.327 ns, 17, 17, loop auto-rewind stp (delay=0 clock cycles(s))</column>
-<column name="grp_UpConv_Fused_Row_8_128_128_120_60_s_fu_524">UpConv_Fused_Row_8_128_128_120_60_s, 151574, 3917222, 0.505 ms, 13.056 ms, 151574, 3917222, no</column>
-<column name="grp_UpConv_Fused_Row_8_64_64_240_120_s_fu_577">UpConv_Fused_Row_8_64_64_240_120_s, 130589, 5163197, 0.435 ms, 17.209 ms, 130589, 5163197, no</column>
-<column name="grp_UpConv_Fused_Row_8_32_32_480_240_s_fu_630">UpConv_Fused_Row_8_32_32_480_240_s, 184797, 2725497, 0.616 ms, 9.084 ms, 184797, 2725497, no</column>
-<column name="grp_UpConv_Fused_Row_8_16_16_960_480_s_fu_683">UpConv_Fused_Row_8_16_16_960_480_s, 374214, 3433854, 1.247 ms, 11.445 ms, 374214, 3433854, no</column>
-<column name="grp_UpConv_Fused_Row_8_16_16_16_16_s_fu_736">UpConv_Fused_Row_8_16_16_16_16_s, 3944, 5120, 13.145 us, 17.065 us, 3944, 5120, no</column>
-<column name="grp_upconv_core_top_Pipeline_LOAD_ROW_VITIS_LOOP_307_26_fu_789">upconv_core_top_Pipeline_LOAD_ROW_VITIS_LOOP_307_26, 1036, 1036, 3.453 us, 3.453 us, 1025, 1025, loop auto-rewind stp (delay=0 clock cycles(s))</column>
-<column name="grp_upconv_core_top_Pipeline_LOAD_ROW_VITIS_LOOP_307_24_fu_800">upconv_core_top_Pipeline_LOAD_ROW_VITIS_LOOP_307_24, 973, 973, 3.243 us, 3.243 us, 961, 961, loop auto-rewind stp (delay=0 clock cycles(s))</column>
-<column name="grp_upconv_core_top_Pipeline_LOAD_ROW_VITIS_LOOP_307_22_fu_811">upconv_core_top_Pipeline_LOAD_ROW_VITIS_LOOP_307_22, 973, 973, 3.243 us, 3.243 us, 961, 961, loop auto-rewind stp (delay=0 clock cycles(s))</column>
-<column name="grp_upconv_core_top_Pipeline_LOAD_ROW_VITIS_LOOP_307_2_fu_822">upconv_core_top_Pipeline_LOAD_ROW_VITIS_LOOP_307_2, 973, 973, 3.243 us, 3.243 us, 961, 961, loop auto-rewind stp (delay=0 clock cycles(s))</column>
-<column name="grp_upconv_core_top_Pipeline_LOAD_ROW_fu_833">upconv_core_top_Pipeline_LOAD_ROW, 27, 27, 89.991 ns, 89.991 ns, 17, 17, loop auto-rewind stp (delay=0 clock cycles(s))</column>
+<column name="grp_upconv_core_top_Pipeline_LOAD_ROW0_VITIS_LOOP_317_15_fu_499">upconv_core_top_Pipeline_LOAD_ROW0_VITIS_LOOP_317_15, 1027, 1027, 3.423 us, 3.423 us, 1025, 1025, loop auto-rewind stp (delay=0 clock cycles(s))</column>
+<column name="grp_upconv_core_top_Pipeline_LOAD_ROW0_VITIS_LOOP_317_13_fu_508">upconv_core_top_Pipeline_LOAD_ROW0_VITIS_LOOP_317_13, 963, 963, 3.210 us, 3.210 us, 961, 961, loop auto-rewind stp (delay=0 clock cycles(s))</column>
+<column name="grp_upconv_core_top_Pipeline_LOAD_ROW0_VITIS_LOOP_317_11_fu_517">upconv_core_top_Pipeline_LOAD_ROW0_VITIS_LOOP_317_11, 963, 963, 3.210 us, 3.210 us, 961, 961, loop auto-rewind stp (delay=0 clock cycles(s))</column>
+<column name="grp_upconv_core_top_Pipeline_LOAD_ROW0_VITIS_LOOP_317_1_fu_526">upconv_core_top_Pipeline_LOAD_ROW0_VITIS_LOOP_317_1, 963, 963, 3.210 us, 3.210 us, 961, 961, loop auto-rewind stp (delay=0 clock cycles(s))</column>
+<column name="grp_upconv_core_top_Pipeline_LOAD_ROW0_fu_535">upconv_core_top_Pipeline_LOAD_ROW0, 19, 19, 63.327 ns, 63.327 ns, 17, 17, loop auto-rewind stp (delay=0 clock cycles(s))</column>
+<column name="grp_UpConv_Fused_Row_8_128_128_120_60_s_fu_544">UpConv_Fused_Row_8_128_128_120_60_s, 17878, 99918, 59.587 us, 0.333 ms, 17878, 99918, no</column>
+<column name="grp_UpConv_Fused_Row_8_64_64_240_120_s_fu_601">UpConv_Fused_Row_8_64_64_240_120_s, 18078, 180878, 60.254 us, 0.603 ms, 18078, 180878, no</column>
+<column name="grp_UpConv_Fused_Row_8_32_32_480_240_s_fu_658">UpConv_Fused_Row_8_32_32_480_240_s, 82980, 352620, 0.279 ms, 1.184 ms, 82980, 352620, no</column>
+<column name="grp_UpConv_Fused_Row_8_16_16_960_480_s_fu_715">UpConv_Fused_Row_8_16_16_960_480_s, 278010, 817290, 0.933 ms, 2.744 ms, 278010, 817290, no</column>
+<column name="grp_UpConv_Fused_Row_8_16_16_16_16_s_fu_772">UpConv_Fused_Row_8_16_16_16_16_s, 1006, 1948, 3.353 us, 6.493 us, 1006, 1948, no</column>
+<column name="grp_upconv_core_top_Pipeline_LOAD_ROW_VITIS_LOOP_328_26_fu_829">upconv_core_top_Pipeline_LOAD_ROW_VITIS_LOOP_328_26, 1036, 1036, 3.453 us, 3.453 us, 1025, 1025, loop auto-rewind stp (delay=0 clock cycles(s))</column>
+<column name="grp_upconv_core_top_Pipeline_LOAD_ROW_VITIS_LOOP_328_24_fu_840">upconv_core_top_Pipeline_LOAD_ROW_VITIS_LOOP_328_24, 973, 973, 3.243 us, 3.243 us, 961, 961, loop auto-rewind stp (delay=0 clock cycles(s))</column>
+<column name="grp_upconv_core_top_Pipeline_LOAD_ROW_VITIS_LOOP_328_22_fu_851">upconv_core_top_Pipeline_LOAD_ROW_VITIS_LOOP_328_22, 973, 973, 3.243 us, 3.243 us, 961, 961, loop auto-rewind stp (delay=0 clock cycles(s))</column>
+<column name="grp_upconv_core_top_Pipeline_LOAD_ROW_VITIS_LOOP_328_2_fu_862">upconv_core_top_Pipeline_LOAD_ROW_VITIS_LOOP_328_2, 973, 973, 3.243 us, 3.243 us, 961, 961, loop auto-rewind stp (delay=0 clock cycles(s))</column>
+<column name="grp_upconv_core_top_Pipeline_LOAD_ROW_fu_873">upconv_core_top_Pipeline_LOAD_ROW, 27, 27, 89.991 ns, 89.991 ns, 17, 17, loop auto-rewind stp (delay=0 clock cycles(s))</column>
 </table>
 </item>
 <item name = "Loop"><table name="" hasTotal="0">
 <keys size="8">Loop Name, min, max, Latency, achieved, target, Count, Pipelined</keys>
-<column name="- ROW_LOOP">11241105, 103030305, 749407 ~ 6868687, -, -, 15, no</column>
-<column name="- ROW_LOOP">11487763, 169011163, 370573 ~ 5451973, -, -, 31, no</column>
-<column name="- ROW_LOOP">16515891, 650624499, 262157 ~ 10327373, -, -, 63, no</column>
-<column name="- ROW_LOOP">38632130, 995106722, 304190 ~ 7835486, -, -, 127, no</column>
-<column name="- ROW_LOOP">118815, 154095, 7921 ~ 10273, -, -, 15, no</column>
+<column name="- ROW_LOOP">8354985, 24533385, 556999 ~ 1635559, -, -, 15, no</column>
+<column name="- ROW_LOOP">5175109, 21892789, 166939 ~ 706219, -, -, 31, no</column>
+<column name="- ROW_LOOP">2339505, 22852305, 37135 ~ 362735, -, -, 63, no</column>
+<column name="- ROW_LOOP">4673346, 25511506, 36798 ~ 200878, -, -, 127, no</column>
+<column name="- ROW_LOOP">30675, 58935, 2045 ~ 3929, -, -, 15, no</column>
 </table>
 </item>
 </section>

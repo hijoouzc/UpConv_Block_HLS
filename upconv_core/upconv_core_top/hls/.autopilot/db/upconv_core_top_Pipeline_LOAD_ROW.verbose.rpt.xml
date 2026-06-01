@@ -1,7 +1,7 @@
 <profile>
 
 <section name = "Vitis HLS Report for 'upconv_core_top_Pipeline_LOAD_ROW'" level="0">
-<item name = "Date">Thu May  7 18:52:40 2026
+<item name = "Date">Mon Jun  1 23:47:07 2026
 </item>
 <item name = "Version">2024.2 (Build 5238294 on Nov  8 2024)</item>
 <item name = "Project">upconv_core_top</item>
@@ -78,11 +78,11 @@
 </item>
 <item name = "Expression"><table name="" hasTotal="1">
 <keys size="7">Variable Name, Operation, DSP, FF, LUT, Bitwidth P0, Bitwidth P1</keys>
-<column name="add_ln306_fu_139_p2">+, 0, 0, 12, 5, 1</column>
-<column name="add_ln309_2_fu_155_p2">+, 0, 0, 60, 60, 60</column>
-<column name="add_ln309_fu_161_p2">+, 0, 0, 60, 60, 60</column>
-<column name="empty_65_fu_149_p2">+, 0, 0, 12, 5, 5</column>
-<column name="icmp_ln306_fu_133_p2">icmp, 0, 0, 13, 5, 6</column>
+<column name="add_ln327_fu_139_p2">+, 0, 0, 12, 5, 1</column>
+<column name="add_ln330_2_fu_155_p2">+, 0, 0, 60, 60, 60</column>
+<column name="add_ln330_fu_161_p2">+, 0, 0, 60, 60, 60</column>
+<column name="empty_64_fu_149_p2">+, 0, 0, 12, 5, 5</column>
+<column name="icmp_ln327_fu_133_p2">icmp, 0, 0, 13, 5, 6</column>
 <column name="ap_block_pp0_stage0_11001">or, 0, 0, 2, 1, 1</column>
 <column name="ap_enable_pp0">xor, 0, 0, 2, 1, 2</column>
 </table>
@@ -99,7 +99,7 @@
 </item>
 <item name = "Register"><table name="" hasTotal="1">
 <keys size="5">Name, FF, LUT, Bits, Const Bits</keys>
-<column name="add_ln309_reg_202">60, 0, 60, 0</column>
+<column name="add_ln330_reg_202">60, 0, 60, 0</column>
 <column name="ap_CS_fsm">1, 0, 1, 0</column>
 <column name="ap_block_pp0_stage0_subdone_grp0_done_reg">1, 0, 1, 0</column>
 <column name="ap_done_reg">1, 0, 1, 0</column>
@@ -122,10 +122,10 @@
 <column name="ap_loop_exit_ready_pp0_iter7_reg">1, 0, 1, 0</column>
 <column name="ap_loop_exit_ready_pp0_iter8_reg">1, 0, 1, 0</column>
 <column name="ap_loop_exit_ready_pp0_iter9_reg">1, 0, 1, 0</column>
-<column name="empty_65_reg_197">5, 0, 5, 0</column>
+<column name="empty_64_reg_197">5, 0, 5, 0</column>
 <column name="gmem_in_addr_read_reg_213">256, 0, 256, 0</column>
 <column name="wi_fu_70">5, 0, 5, 0</column>
-<column name="empty_65_reg_197">64, 32, 5, 0</column>
+<column name="empty_64_reg_197">64, 32, 5, 0</column>
 </table>
 </item>
 </section>
@@ -188,8 +188,8 @@
 <column name="m_axi_gmem_in_0_BID">in, 1, m_axi, gmem_in, pointer</column>
 <column name="m_axi_gmem_in_0_BUSER">in, 1, m_axi, gmem_in, pointer</column>
 <column name="empty">in, 5, ap_none, empty, scalar</column>
-<column name="sext_ln304">in, 59, ap_none, sext_ln304, scalar</column>
-<column name="zext_ln305">in, 8, ap_none, zext_ln305, scalar</column>
+<column name="sext_ln325">in, 59, ap_none, sext_ln325, scalar</column>
+<column name="zext_ln326">in, 8, ap_none, zext_ln326, scalar</column>
 <column name="x_buf_address0">out, 11, ap_memory, x_buf, array</column>
 <column name="x_buf_ce0">out, 1, ap_memory, x_buf, array</column>
 <column name="x_buf_we0">out, 1, ap_memory, x_buf, array</column>

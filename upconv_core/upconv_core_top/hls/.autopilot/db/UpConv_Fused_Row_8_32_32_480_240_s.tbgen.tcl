@@ -13,7 +13,7 @@ set hasInterrupt 0
 set DLRegFirstOffset 0
 set DLRegItemOffset 0
 set svuvm_can_support 1
-set cdfgNum 49
+set cdfgNum 51
 set C_modelName {UpConv_Fused_Row<8, 32, 32, 480, 240>}
 set C_modelType { void 0 }
 set ap_memory_interface_dict [dict create]
@@ -361,13 +361,13 @@ set NewPortList {[
  	{ "name": "x_buf_q0", "direction": "in", "datatype": "sc_lv", "bitwidth":256, "type": "signal", "bundle":{"name": "x_buf", "role": "q0" }}  ]}
 
 set RtlHierarchyInfo {[
-	{"ID" : "0", "Level" : "0", "Path" : "`AUTOTB_DUT_INST", "Parent" : "", "Child" : ["1", "2", "3", "4", "5", "6", "7", "8", "9", "10", "11", "12", "13", "14", "15", "16", "17", "18", "19", "20", "22", "24", "261", "266", "300", "301", "302", "303", "304", "305", "306", "307", "308", "309", "310", "311", "312", "313", "314", "315", "316", "317", "318", "319", "320", "321", "322", "323", "324", "325", "326", "327", "328", "329", "330", "331", "332", "333", "334", "335", "336", "337", "338", "339", "340", "341", "342", "343", "344", "345", "346", "347", "348", "349", "350", "351", "352", "353"],
+	{"ID" : "0", "Level" : "0", "Path" : "`AUTOTB_DUT_INST", "Parent" : "", "Child" : ["1", "2", "3", "4", "5", "6", "7", "8", "9", "10", "11", "12", "13", "14", "15", "16", "17", "18", "19", "20", "21", "22", "24", "26", "295", "327", "361", "362", "363", "364", "365", "366", "367", "368", "369", "370", "371", "372", "373", "374", "375", "376", "377", "378", "379", "380", "381", "382", "383", "384", "385", "386", "387", "388", "389", "390", "391", "392", "393", "394", "395", "396", "397", "398", "399", "400", "401", "402", "403", "404", "405", "406", "407", "408", "409", "410"],
 		"CDFG" : "UpConv_Fused_Row_8_32_32_480_240_s",
 		"Protocol" : "ap_ctrl_hs",
 		"ControlExist" : "1", "ap_start" : "1", "ap_ready" : "1", "ap_done" : "1", "ap_continue" : "0", "ap_idle" : "1", "real_start" : "0",
 		"Pipeline" : "None", "UnalignedPipeline" : "0", "RewindPipeline" : "0", "ProcessNetwork" : "0",
 		"II" : "0",
-		"VariableLatency" : "1", "ExactLatency" : "-1", "EstimateLatencyMin" : "184797", "EstimateLatencyMax" : "2725497",
+		"VariableLatency" : "1", "ExactLatency" : "-1", "EstimateLatencyMin" : "82980", "EstimateLatencyMax" : "352620",
 		"Combinational" : "0",
 		"Datapath" : "0",
 		"ClockEnable" : "0",
@@ -377,128 +377,128 @@ set RtlHierarchyInfo {[
 		"IsBlackBox" : "0",
 		"Port" : [
 			{"Name" : "gmem_weight", "Type" : "MAXI", "Direction" : "I",
-				"BlockSignal" : [
-					{"Name" : "gmem_weight_blk_n_AR", "Type" : "RtlSignal"}],
 				"SubConnect" : [
-					{"ID" : "24", "SubInstance" : "grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_288", "Port" : "gmem_weight", "Inst_start_state" : "11", "Inst_end_state" : "12"}]},
+					{"ID" : "26", "SubInstance" : "grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_227", "Port" : "gmem_weight", "Inst_start_state" : "3", "Inst_end_state" : "4"}]},
 			{"Name" : "W_ptr", "Type" : "None", "Direction" : "I"},
 			{"Name" : "gmem_param", "Type" : "MAXI", "Direction" : "I",
 				"SubConnect" : [
-					{"ID" : "22", "SubInstance" : "grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_LOAD_PARAMS_fu_273", "Port" : "gmem_param", "Inst_start_state" : "1", "Inst_end_state" : "2"}]},
+					{"ID" : "24", "SubInstance" : "grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_LOAD_PARAMS_fu_212", "Port" : "gmem_param", "Inst_start_state" : "1", "Inst_end_state" : "2"}]},
 			{"Name" : "B_ptr", "Type" : "None", "Direction" : "I"},
 			{"Name" : "G_ptr", "Type" : "None", "Direction" : "I"},
 			{"Name" : "BE_ptr", "Type" : "None", "Direction" : "I"},
 			{"Name" : "gmem_out", "Type" : "MAXI", "Direction" : "O",
-				"BlockSignal" : [
-					{"Name" : "gmem_out_blk_n_AW", "Type" : "RtlSignal"},
-					{"Name" : "gmem_out_blk_n_B", "Type" : "RtlSignal"}],
 				"SubConnect" : [
-					{"ID" : "266", "SubInstance" : "grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_NORM_WRITE_fu_370", "Port" : "gmem_out", "Inst_start_state" : "135", "Inst_end_state" : "136"}]},
+					{"ID" : "327", "SubInstance" : "grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_PIXEL_NORM_fu_312", "Port" : "gmem_out", "Inst_start_state" : "7", "Inst_end_state" : "8"}]},
 			{"Name" : "Y", "Type" : "None", "Direction" : "I"},
 			{"Name" : "epsilon", "Type" : "None", "Direction" : "I"},
 			{"Name" : "ho", "Type" : "None", "Direction" : "I"},
 			{"Name" : "void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_19", "Type" : "Memory", "Direction" : "IO",
 				"SubConnect" : [
-					{"ID" : "20", "SubInstance" : "grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_RESET_ROW_ACC_fu_237", "Port" : "void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_19", "Inst_start_state" : "1", "Inst_end_state" : "2"},
-					{"ID" : "24", "SubInstance" : "grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_288", "Port" : "void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_19", "Inst_start_state" : "11", "Inst_end_state" : "12"},
-					{"ID" : "261", "SubInstance" : "grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_BIAS_STATS_fu_330", "Port" : "void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_19", "Inst_start_state" : "15", "Inst_end_state" : "16"},
-					{"ID" : "266", "SubInstance" : "grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_NORM_WRITE_fu_370", "Port" : "void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_19", "Inst_start_state" : "135", "Inst_end_state" : "136"}]},
+					{"ID" : "22", "SubInstance" : "grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_RESET_ROW_ACC_fu_176", "Port" : "void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_19", "Inst_start_state" : "1", "Inst_end_state" : "2"},
+					{"ID" : "26", "SubInstance" : "grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_227", "Port" : "void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_19", "Inst_start_state" : "3", "Inst_end_state" : "4"},
+					{"ID" : "295", "SubInstance" : "grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_PIXEL_STATS_fu_270", "Port" : "void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_19", "Inst_start_state" : "5", "Inst_end_state" : "6"},
+					{"ID" : "327", "SubInstance" : "grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_PIXEL_NORM_fu_312", "Port" : "void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_19", "Inst_start_state" : "7", "Inst_end_state" : "8"}]},
 			{"Name" : "void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_18", "Type" : "Memory", "Direction" : "IO",
 				"SubConnect" : [
-					{"ID" : "20", "SubInstance" : "grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_RESET_ROW_ACC_fu_237", "Port" : "void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_18", "Inst_start_state" : "1", "Inst_end_state" : "2"},
-					{"ID" : "24", "SubInstance" : "grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_288", "Port" : "void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_18", "Inst_start_state" : "11", "Inst_end_state" : "12"},
-					{"ID" : "261", "SubInstance" : "grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_BIAS_STATS_fu_330", "Port" : "void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_18", "Inst_start_state" : "15", "Inst_end_state" : "16"},
-					{"ID" : "266", "SubInstance" : "grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_NORM_WRITE_fu_370", "Port" : "void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_18", "Inst_start_state" : "135", "Inst_end_state" : "136"}]},
+					{"ID" : "22", "SubInstance" : "grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_RESET_ROW_ACC_fu_176", "Port" : "void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_18", "Inst_start_state" : "1", "Inst_end_state" : "2"},
+					{"ID" : "26", "SubInstance" : "grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_227", "Port" : "void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_18", "Inst_start_state" : "3", "Inst_end_state" : "4"},
+					{"ID" : "295", "SubInstance" : "grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_PIXEL_STATS_fu_270", "Port" : "void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_18", "Inst_start_state" : "5", "Inst_end_state" : "6"},
+					{"ID" : "327", "SubInstance" : "grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_PIXEL_NORM_fu_312", "Port" : "void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_18", "Inst_start_state" : "7", "Inst_end_state" : "8"}]},
 			{"Name" : "void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_17", "Type" : "Memory", "Direction" : "IO",
 				"SubConnect" : [
-					{"ID" : "20", "SubInstance" : "grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_RESET_ROW_ACC_fu_237", "Port" : "void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_17", "Inst_start_state" : "1", "Inst_end_state" : "2"},
-					{"ID" : "24", "SubInstance" : "grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_288", "Port" : "void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_17", "Inst_start_state" : "11", "Inst_end_state" : "12"},
-					{"ID" : "261", "SubInstance" : "grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_BIAS_STATS_fu_330", "Port" : "void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_17", "Inst_start_state" : "15", "Inst_end_state" : "16"},
-					{"ID" : "266", "SubInstance" : "grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_NORM_WRITE_fu_370", "Port" : "void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_17", "Inst_start_state" : "135", "Inst_end_state" : "136"}]},
+					{"ID" : "22", "SubInstance" : "grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_RESET_ROW_ACC_fu_176", "Port" : "void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_17", "Inst_start_state" : "1", "Inst_end_state" : "2"},
+					{"ID" : "26", "SubInstance" : "grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_227", "Port" : "void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_17", "Inst_start_state" : "3", "Inst_end_state" : "4"},
+					{"ID" : "295", "SubInstance" : "grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_PIXEL_STATS_fu_270", "Port" : "void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_17", "Inst_start_state" : "5", "Inst_end_state" : "6"},
+					{"ID" : "327", "SubInstance" : "grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_PIXEL_NORM_fu_312", "Port" : "void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_17", "Inst_start_state" : "7", "Inst_end_state" : "8"}]},
 			{"Name" : "void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_16", "Type" : "Memory", "Direction" : "IO",
 				"SubConnect" : [
-					{"ID" : "20", "SubInstance" : "grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_RESET_ROW_ACC_fu_237", "Port" : "void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_16", "Inst_start_state" : "1", "Inst_end_state" : "2"},
-					{"ID" : "24", "SubInstance" : "grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_288", "Port" : "void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_16", "Inst_start_state" : "11", "Inst_end_state" : "12"},
-					{"ID" : "261", "SubInstance" : "grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_BIAS_STATS_fu_330", "Port" : "void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_16", "Inst_start_state" : "15", "Inst_end_state" : "16"},
-					{"ID" : "266", "SubInstance" : "grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_NORM_WRITE_fu_370", "Port" : "void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_16", "Inst_start_state" : "135", "Inst_end_state" : "136"}]},
+					{"ID" : "22", "SubInstance" : "grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_RESET_ROW_ACC_fu_176", "Port" : "void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_16", "Inst_start_state" : "1", "Inst_end_state" : "2"},
+					{"ID" : "26", "SubInstance" : "grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_227", "Port" : "void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_16", "Inst_start_state" : "3", "Inst_end_state" : "4"},
+					{"ID" : "295", "SubInstance" : "grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_PIXEL_STATS_fu_270", "Port" : "void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_16", "Inst_start_state" : "5", "Inst_end_state" : "6"},
+					{"ID" : "327", "SubInstance" : "grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_PIXEL_NORM_fu_312", "Port" : "void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_16", "Inst_start_state" : "7", "Inst_end_state" : "8"}]},
 			{"Name" : "void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_15", "Type" : "Memory", "Direction" : "IO",
 				"SubConnect" : [
-					{"ID" : "20", "SubInstance" : "grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_RESET_ROW_ACC_fu_237", "Port" : "void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_15", "Inst_start_state" : "1", "Inst_end_state" : "2"},
-					{"ID" : "24", "SubInstance" : "grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_288", "Port" : "void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_15", "Inst_start_state" : "11", "Inst_end_state" : "12"},
-					{"ID" : "261", "SubInstance" : "grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_BIAS_STATS_fu_330", "Port" : "void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_15", "Inst_start_state" : "15", "Inst_end_state" : "16"},
-					{"ID" : "266", "SubInstance" : "grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_NORM_WRITE_fu_370", "Port" : "void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_15", "Inst_start_state" : "135", "Inst_end_state" : "136"}]},
+					{"ID" : "22", "SubInstance" : "grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_RESET_ROW_ACC_fu_176", "Port" : "void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_15", "Inst_start_state" : "1", "Inst_end_state" : "2"},
+					{"ID" : "26", "SubInstance" : "grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_227", "Port" : "void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_15", "Inst_start_state" : "3", "Inst_end_state" : "4"},
+					{"ID" : "295", "SubInstance" : "grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_PIXEL_STATS_fu_270", "Port" : "void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_15", "Inst_start_state" : "5", "Inst_end_state" : "6"},
+					{"ID" : "327", "SubInstance" : "grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_PIXEL_NORM_fu_312", "Port" : "void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_15", "Inst_start_state" : "7", "Inst_end_state" : "8"}]},
 			{"Name" : "void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_14", "Type" : "Memory", "Direction" : "IO",
 				"SubConnect" : [
-					{"ID" : "20", "SubInstance" : "grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_RESET_ROW_ACC_fu_237", "Port" : "void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_14", "Inst_start_state" : "1", "Inst_end_state" : "2"},
-					{"ID" : "24", "SubInstance" : "grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_288", "Port" : "void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_14", "Inst_start_state" : "11", "Inst_end_state" : "12"},
-					{"ID" : "261", "SubInstance" : "grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_BIAS_STATS_fu_330", "Port" : "void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_14", "Inst_start_state" : "15", "Inst_end_state" : "16"},
-					{"ID" : "266", "SubInstance" : "grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_NORM_WRITE_fu_370", "Port" : "void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_14", "Inst_start_state" : "135", "Inst_end_state" : "136"}]},
+					{"ID" : "22", "SubInstance" : "grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_RESET_ROW_ACC_fu_176", "Port" : "void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_14", "Inst_start_state" : "1", "Inst_end_state" : "2"},
+					{"ID" : "26", "SubInstance" : "grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_227", "Port" : "void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_14", "Inst_start_state" : "3", "Inst_end_state" : "4"},
+					{"ID" : "295", "SubInstance" : "grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_PIXEL_STATS_fu_270", "Port" : "void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_14", "Inst_start_state" : "5", "Inst_end_state" : "6"},
+					{"ID" : "327", "SubInstance" : "grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_PIXEL_NORM_fu_312", "Port" : "void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_14", "Inst_start_state" : "7", "Inst_end_state" : "8"}]},
 			{"Name" : "void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_13", "Type" : "Memory", "Direction" : "IO",
 				"SubConnect" : [
-					{"ID" : "20", "SubInstance" : "grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_RESET_ROW_ACC_fu_237", "Port" : "void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_13", "Inst_start_state" : "1", "Inst_end_state" : "2"},
-					{"ID" : "24", "SubInstance" : "grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_288", "Port" : "void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_13", "Inst_start_state" : "11", "Inst_end_state" : "12"},
-					{"ID" : "261", "SubInstance" : "grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_BIAS_STATS_fu_330", "Port" : "void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_13", "Inst_start_state" : "15", "Inst_end_state" : "16"},
-					{"ID" : "266", "SubInstance" : "grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_NORM_WRITE_fu_370", "Port" : "void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_13", "Inst_start_state" : "135", "Inst_end_state" : "136"}]},
+					{"ID" : "22", "SubInstance" : "grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_RESET_ROW_ACC_fu_176", "Port" : "void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_13", "Inst_start_state" : "1", "Inst_end_state" : "2"},
+					{"ID" : "26", "SubInstance" : "grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_227", "Port" : "void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_13", "Inst_start_state" : "3", "Inst_end_state" : "4"},
+					{"ID" : "295", "SubInstance" : "grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_PIXEL_STATS_fu_270", "Port" : "void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_13", "Inst_start_state" : "5", "Inst_end_state" : "6"},
+					{"ID" : "327", "SubInstance" : "grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_PIXEL_NORM_fu_312", "Port" : "void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_13", "Inst_start_state" : "7", "Inst_end_state" : "8"}]},
 			{"Name" : "void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_12", "Type" : "Memory", "Direction" : "IO",
 				"SubConnect" : [
-					{"ID" : "20", "SubInstance" : "grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_RESET_ROW_ACC_fu_237", "Port" : "void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_12", "Inst_start_state" : "1", "Inst_end_state" : "2"},
-					{"ID" : "24", "SubInstance" : "grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_288", "Port" : "void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_12", "Inst_start_state" : "11", "Inst_end_state" : "12"},
-					{"ID" : "261", "SubInstance" : "grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_BIAS_STATS_fu_330", "Port" : "void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_12", "Inst_start_state" : "15", "Inst_end_state" : "16"},
-					{"ID" : "266", "SubInstance" : "grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_NORM_WRITE_fu_370", "Port" : "void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_12", "Inst_start_state" : "135", "Inst_end_state" : "136"}]},
+					{"ID" : "22", "SubInstance" : "grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_RESET_ROW_ACC_fu_176", "Port" : "void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_12", "Inst_start_state" : "1", "Inst_end_state" : "2"},
+					{"ID" : "26", "SubInstance" : "grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_227", "Port" : "void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_12", "Inst_start_state" : "3", "Inst_end_state" : "4"},
+					{"ID" : "295", "SubInstance" : "grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_PIXEL_STATS_fu_270", "Port" : "void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_12", "Inst_start_state" : "5", "Inst_end_state" : "6"},
+					{"ID" : "327", "SubInstance" : "grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_PIXEL_NORM_fu_312", "Port" : "void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_12", "Inst_start_state" : "7", "Inst_end_state" : "8"}]},
 			{"Name" : "void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_11", "Type" : "Memory", "Direction" : "IO",
 				"SubConnect" : [
-					{"ID" : "20", "SubInstance" : "grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_RESET_ROW_ACC_fu_237", "Port" : "void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_11", "Inst_start_state" : "1", "Inst_end_state" : "2"},
-					{"ID" : "24", "SubInstance" : "grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_288", "Port" : "void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_11", "Inst_start_state" : "11", "Inst_end_state" : "12"},
-					{"ID" : "261", "SubInstance" : "grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_BIAS_STATS_fu_330", "Port" : "void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_11", "Inst_start_state" : "15", "Inst_end_state" : "16"},
-					{"ID" : "266", "SubInstance" : "grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_NORM_WRITE_fu_370", "Port" : "void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_11", "Inst_start_state" : "135", "Inst_end_state" : "136"}]},
+					{"ID" : "22", "SubInstance" : "grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_RESET_ROW_ACC_fu_176", "Port" : "void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_11", "Inst_start_state" : "1", "Inst_end_state" : "2"},
+					{"ID" : "26", "SubInstance" : "grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_227", "Port" : "void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_11", "Inst_start_state" : "3", "Inst_end_state" : "4"},
+					{"ID" : "295", "SubInstance" : "grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_PIXEL_STATS_fu_270", "Port" : "void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_11", "Inst_start_state" : "5", "Inst_end_state" : "6"},
+					{"ID" : "327", "SubInstance" : "grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_PIXEL_NORM_fu_312", "Port" : "void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_11", "Inst_start_state" : "7", "Inst_end_state" : "8"}]},
 			{"Name" : "void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_10", "Type" : "Memory", "Direction" : "IO",
 				"SubConnect" : [
-					{"ID" : "20", "SubInstance" : "grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_RESET_ROW_ACC_fu_237", "Port" : "void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_10", "Inst_start_state" : "1", "Inst_end_state" : "2"},
-					{"ID" : "24", "SubInstance" : "grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_288", "Port" : "void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_10", "Inst_start_state" : "11", "Inst_end_state" : "12"},
-					{"ID" : "261", "SubInstance" : "grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_BIAS_STATS_fu_330", "Port" : "void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_10", "Inst_start_state" : "15", "Inst_end_state" : "16"},
-					{"ID" : "266", "SubInstance" : "grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_NORM_WRITE_fu_370", "Port" : "void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_10", "Inst_start_state" : "135", "Inst_end_state" : "136"}]},
+					{"ID" : "22", "SubInstance" : "grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_RESET_ROW_ACC_fu_176", "Port" : "void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_10", "Inst_start_state" : "1", "Inst_end_state" : "2"},
+					{"ID" : "26", "SubInstance" : "grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_227", "Port" : "void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_10", "Inst_start_state" : "3", "Inst_end_state" : "4"},
+					{"ID" : "295", "SubInstance" : "grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_PIXEL_STATS_fu_270", "Port" : "void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_10", "Inst_start_state" : "5", "Inst_end_state" : "6"},
+					{"ID" : "327", "SubInstance" : "grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_PIXEL_NORM_fu_312", "Port" : "void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_10", "Inst_start_state" : "7", "Inst_end_state" : "8"}]},
 			{"Name" : "p_ZZ16UpConv_Fused_RowILi8ELi32ELi32ELi480ELi240EEvP7ap_uintILi256EEPKS1_S4_S4_S4_5", "Type" : "Memory", "Direction" : "IO",
 				"SubConnect" : [
-					{"ID" : "20", "SubInstance" : "grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_RESET_ROW_ACC_fu_237", "Port" : "p_ZZ16UpConv_Fused_RowILi8ELi32ELi32ELi480ELi240EEvP7ap_uintILi256EEPKS1_S4_S4_S4_5", "Inst_start_state" : "1", "Inst_end_state" : "2"},
-					{"ID" : "24", "SubInstance" : "grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_288", "Port" : "p_ZZ16UpConv_Fused_RowILi8ELi32ELi32ELi480ELi240EEvP7ap_uintILi256EEPKS1_S4_S4_S4_5", "Inst_start_state" : "11", "Inst_end_state" : "12"},
-					{"ID" : "261", "SubInstance" : "grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_BIAS_STATS_fu_330", "Port" : "p_ZZ16UpConv_Fused_RowILi8ELi32ELi32ELi480ELi240EEvP7ap_uintILi256EEPKS1_S4_S4_S4_5", "Inst_start_state" : "15", "Inst_end_state" : "16"},
-					{"ID" : "266", "SubInstance" : "grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_NORM_WRITE_fu_370", "Port" : "p_ZZ16UpConv_Fused_RowILi8ELi32ELi32ELi480ELi240EEvP7ap_uintILi256EEPKS1_S4_S4_S4_5", "Inst_start_state" : "135", "Inst_end_state" : "136"}]},
+					{"ID" : "22", "SubInstance" : "grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_RESET_ROW_ACC_fu_176", "Port" : "p_ZZ16UpConv_Fused_RowILi8ELi32ELi32ELi480ELi240EEvP7ap_uintILi256EEPKS1_S4_S4_S4_5", "Inst_start_state" : "1", "Inst_end_state" : "2"},
+					{"ID" : "26", "SubInstance" : "grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_227", "Port" : "p_ZZ16UpConv_Fused_RowILi8ELi32ELi32ELi480ELi240EEvP7ap_uintILi256EEPKS1_S4_S4_S4_5", "Inst_start_state" : "3", "Inst_end_state" : "4"},
+					{"ID" : "295", "SubInstance" : "grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_PIXEL_STATS_fu_270", "Port" : "p_ZZ16UpConv_Fused_RowILi8ELi32ELi32ELi480ELi240EEvP7ap_uintILi256EEPKS1_S4_S4_S4_5", "Inst_start_state" : "5", "Inst_end_state" : "6"},
+					{"ID" : "327", "SubInstance" : "grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_PIXEL_NORM_fu_312", "Port" : "p_ZZ16UpConv_Fused_RowILi8ELi32ELi32ELi480ELi240EEvP7ap_uintILi256EEPKS1_S4_S4_S4_5", "Inst_start_state" : "7", "Inst_end_state" : "8"}]},
 			{"Name" : "p_ZZ16UpConv_Fused_RowILi8ELi32ELi32ELi480ELi240EEvP7ap_uintILi256EEPKS1_S4_S4_S4_4", "Type" : "Memory", "Direction" : "IO",
 				"SubConnect" : [
-					{"ID" : "20", "SubInstance" : "grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_RESET_ROW_ACC_fu_237", "Port" : "p_ZZ16UpConv_Fused_RowILi8ELi32ELi32ELi480ELi240EEvP7ap_uintILi256EEPKS1_S4_S4_S4_4", "Inst_start_state" : "1", "Inst_end_state" : "2"},
-					{"ID" : "24", "SubInstance" : "grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_288", "Port" : "p_ZZ16UpConv_Fused_RowILi8ELi32ELi32ELi480ELi240EEvP7ap_uintILi256EEPKS1_S4_S4_S4_4", "Inst_start_state" : "11", "Inst_end_state" : "12"},
-					{"ID" : "261", "SubInstance" : "grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_BIAS_STATS_fu_330", "Port" : "p_ZZ16UpConv_Fused_RowILi8ELi32ELi32ELi480ELi240EEvP7ap_uintILi256EEPKS1_S4_S4_S4_4", "Inst_start_state" : "15", "Inst_end_state" : "16"},
-					{"ID" : "266", "SubInstance" : "grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_NORM_WRITE_fu_370", "Port" : "p_ZZ16UpConv_Fused_RowILi8ELi32ELi32ELi480ELi240EEvP7ap_uintILi256EEPKS1_S4_S4_S4_4", "Inst_start_state" : "135", "Inst_end_state" : "136"}]},
+					{"ID" : "22", "SubInstance" : "grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_RESET_ROW_ACC_fu_176", "Port" : "p_ZZ16UpConv_Fused_RowILi8ELi32ELi32ELi480ELi240EEvP7ap_uintILi256EEPKS1_S4_S4_S4_4", "Inst_start_state" : "1", "Inst_end_state" : "2"},
+					{"ID" : "26", "SubInstance" : "grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_227", "Port" : "p_ZZ16UpConv_Fused_RowILi8ELi32ELi32ELi480ELi240EEvP7ap_uintILi256EEPKS1_S4_S4_S4_4", "Inst_start_state" : "3", "Inst_end_state" : "4"},
+					{"ID" : "295", "SubInstance" : "grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_PIXEL_STATS_fu_270", "Port" : "p_ZZ16UpConv_Fused_RowILi8ELi32ELi32ELi480ELi240EEvP7ap_uintILi256EEPKS1_S4_S4_S4_4", "Inst_start_state" : "5", "Inst_end_state" : "6"},
+					{"ID" : "327", "SubInstance" : "grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_PIXEL_NORM_fu_312", "Port" : "p_ZZ16UpConv_Fused_RowILi8ELi32ELi32ELi480ELi240EEvP7ap_uintILi256EEPKS1_S4_S4_S4_4", "Inst_start_state" : "7", "Inst_end_state" : "8"}]},
 			{"Name" : "p_ZZ16UpConv_Fused_RowILi8ELi32ELi32ELi480ELi240EEvP7ap_uintILi256EEPKS1_S4_S4_S4_3", "Type" : "Memory", "Direction" : "IO",
 				"SubConnect" : [
-					{"ID" : "20", "SubInstance" : "grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_RESET_ROW_ACC_fu_237", "Port" : "p_ZZ16UpConv_Fused_RowILi8ELi32ELi32ELi480ELi240EEvP7ap_uintILi256EEPKS1_S4_S4_S4_3", "Inst_start_state" : "1", "Inst_end_state" : "2"},
-					{"ID" : "24", "SubInstance" : "grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_288", "Port" : "p_ZZ16UpConv_Fused_RowILi8ELi32ELi32ELi480ELi240EEvP7ap_uintILi256EEPKS1_S4_S4_S4_3", "Inst_start_state" : "11", "Inst_end_state" : "12"},
-					{"ID" : "261", "SubInstance" : "grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_BIAS_STATS_fu_330", "Port" : "p_ZZ16UpConv_Fused_RowILi8ELi32ELi32ELi480ELi240EEvP7ap_uintILi256EEPKS1_S4_S4_S4_3", "Inst_start_state" : "15", "Inst_end_state" : "16"},
-					{"ID" : "266", "SubInstance" : "grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_NORM_WRITE_fu_370", "Port" : "p_ZZ16UpConv_Fused_RowILi8ELi32ELi32ELi480ELi240EEvP7ap_uintILi256EEPKS1_S4_S4_S4_3", "Inst_start_state" : "135", "Inst_end_state" : "136"}]},
+					{"ID" : "22", "SubInstance" : "grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_RESET_ROW_ACC_fu_176", "Port" : "p_ZZ16UpConv_Fused_RowILi8ELi32ELi32ELi480ELi240EEvP7ap_uintILi256EEPKS1_S4_S4_S4_3", "Inst_start_state" : "1", "Inst_end_state" : "2"},
+					{"ID" : "26", "SubInstance" : "grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_227", "Port" : "p_ZZ16UpConv_Fused_RowILi8ELi32ELi32ELi480ELi240EEvP7ap_uintILi256EEPKS1_S4_S4_S4_3", "Inst_start_state" : "3", "Inst_end_state" : "4"},
+					{"ID" : "295", "SubInstance" : "grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_PIXEL_STATS_fu_270", "Port" : "p_ZZ16UpConv_Fused_RowILi8ELi32ELi32ELi480ELi240EEvP7ap_uintILi256EEPKS1_S4_S4_S4_3", "Inst_start_state" : "5", "Inst_end_state" : "6"},
+					{"ID" : "327", "SubInstance" : "grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_PIXEL_NORM_fu_312", "Port" : "p_ZZ16UpConv_Fused_RowILi8ELi32ELi32ELi480ELi240EEvP7ap_uintILi256EEPKS1_S4_S4_S4_3", "Inst_start_state" : "7", "Inst_end_state" : "8"}]},
 			{"Name" : "p_ZZ16UpConv_Fused_RowILi8ELi32ELi32ELi480ELi240EEvP7ap_uintILi256EEPKS1_S4_S4_S4_2", "Type" : "Memory", "Direction" : "IO",
 				"SubConnect" : [
-					{"ID" : "20", "SubInstance" : "grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_RESET_ROW_ACC_fu_237", "Port" : "p_ZZ16UpConv_Fused_RowILi8ELi32ELi32ELi480ELi240EEvP7ap_uintILi256EEPKS1_S4_S4_S4_2", "Inst_start_state" : "1", "Inst_end_state" : "2"},
-					{"ID" : "24", "SubInstance" : "grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_288", "Port" : "p_ZZ16UpConv_Fused_RowILi8ELi32ELi32ELi480ELi240EEvP7ap_uintILi256EEPKS1_S4_S4_S4_2", "Inst_start_state" : "11", "Inst_end_state" : "12"},
-					{"ID" : "261", "SubInstance" : "grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_BIAS_STATS_fu_330", "Port" : "p_ZZ16UpConv_Fused_RowILi8ELi32ELi32ELi480ELi240EEvP7ap_uintILi256EEPKS1_S4_S4_S4_2", "Inst_start_state" : "15", "Inst_end_state" : "16"},
-					{"ID" : "266", "SubInstance" : "grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_NORM_WRITE_fu_370", "Port" : "p_ZZ16UpConv_Fused_RowILi8ELi32ELi32ELi480ELi240EEvP7ap_uintILi256EEPKS1_S4_S4_S4_2", "Inst_start_state" : "135", "Inst_end_state" : "136"}]},
+					{"ID" : "22", "SubInstance" : "grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_RESET_ROW_ACC_fu_176", "Port" : "p_ZZ16UpConv_Fused_RowILi8ELi32ELi32ELi480ELi240EEvP7ap_uintILi256EEPKS1_S4_S4_S4_2", "Inst_start_state" : "1", "Inst_end_state" : "2"},
+					{"ID" : "26", "SubInstance" : "grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_227", "Port" : "p_ZZ16UpConv_Fused_RowILi8ELi32ELi32ELi480ELi240EEvP7ap_uintILi256EEPKS1_S4_S4_S4_2", "Inst_start_state" : "3", "Inst_end_state" : "4"},
+					{"ID" : "295", "SubInstance" : "grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_PIXEL_STATS_fu_270", "Port" : "p_ZZ16UpConv_Fused_RowILi8ELi32ELi32ELi480ELi240EEvP7ap_uintILi256EEPKS1_S4_S4_S4_2", "Inst_start_state" : "5", "Inst_end_state" : "6"},
+					{"ID" : "327", "SubInstance" : "grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_PIXEL_NORM_fu_312", "Port" : "p_ZZ16UpConv_Fused_RowILi8ELi32ELi32ELi480ELi240EEvP7ap_uintILi256EEPKS1_S4_S4_S4_2", "Inst_start_state" : "7", "Inst_end_state" : "8"}]},
 			{"Name" : "p_ZZ16UpConv_Fused_RowILi8ELi32ELi32ELi480ELi240EEvP7ap_uintILi256EEPKS1_S4_S4_S4_1", "Type" : "Memory", "Direction" : "IO",
 				"SubConnect" : [
-					{"ID" : "20", "SubInstance" : "grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_RESET_ROW_ACC_fu_237", "Port" : "p_ZZ16UpConv_Fused_RowILi8ELi32ELi32ELi480ELi240EEvP7ap_uintILi256EEPKS1_S4_S4_S4_1", "Inst_start_state" : "1", "Inst_end_state" : "2"},
-					{"ID" : "24", "SubInstance" : "grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_288", "Port" : "p_ZZ16UpConv_Fused_RowILi8ELi32ELi32ELi480ELi240EEvP7ap_uintILi256EEPKS1_S4_S4_S4_1", "Inst_start_state" : "11", "Inst_end_state" : "12"},
-					{"ID" : "261", "SubInstance" : "grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_BIAS_STATS_fu_330", "Port" : "p_ZZ16UpConv_Fused_RowILi8ELi32ELi32ELi480ELi240EEvP7ap_uintILi256EEPKS1_S4_S4_S4_1", "Inst_start_state" : "15", "Inst_end_state" : "16"},
-					{"ID" : "266", "SubInstance" : "grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_NORM_WRITE_fu_370", "Port" : "p_ZZ16UpConv_Fused_RowILi8ELi32ELi32ELi480ELi240EEvP7ap_uintILi256EEPKS1_S4_S4_S4_1", "Inst_start_state" : "135", "Inst_end_state" : "136"}]},
+					{"ID" : "22", "SubInstance" : "grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_RESET_ROW_ACC_fu_176", "Port" : "p_ZZ16UpConv_Fused_RowILi8ELi32ELi32ELi480ELi240EEvP7ap_uintILi256EEPKS1_S4_S4_S4_1", "Inst_start_state" : "1", "Inst_end_state" : "2"},
+					{"ID" : "26", "SubInstance" : "grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_227", "Port" : "p_ZZ16UpConv_Fused_RowILi8ELi32ELi32ELi480ELi240EEvP7ap_uintILi256EEPKS1_S4_S4_S4_1", "Inst_start_state" : "3", "Inst_end_state" : "4"},
+					{"ID" : "295", "SubInstance" : "grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_PIXEL_STATS_fu_270", "Port" : "p_ZZ16UpConv_Fused_RowILi8ELi32ELi32ELi480ELi240EEvP7ap_uintILi256EEPKS1_S4_S4_S4_1", "Inst_start_state" : "5", "Inst_end_state" : "6"},
+					{"ID" : "327", "SubInstance" : "grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_PIXEL_NORM_fu_312", "Port" : "p_ZZ16UpConv_Fused_RowILi8ELi32ELi32ELi480ELi240EEvP7ap_uintILi256EEPKS1_S4_S4_S4_1", "Inst_start_state" : "7", "Inst_end_state" : "8"}]},
 			{"Name" : "p_ZZ16UpConv_Fused_RowILi8ELi32ELi32ELi480ELi240EEvP7ap_uintILi256EEPKS1_S4_S4_S4", "Type" : "Memory", "Direction" : "IO",
 				"SubConnect" : [
-					{"ID" : "20", "SubInstance" : "grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_RESET_ROW_ACC_fu_237", "Port" : "p_ZZ16UpConv_Fused_RowILi8ELi32ELi32ELi480ELi240EEvP7ap_uintILi256EEPKS1_S4_S4_S4", "Inst_start_state" : "1", "Inst_end_state" : "2"},
-					{"ID" : "24", "SubInstance" : "grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_288", "Port" : "p_ZZ16UpConv_Fused_RowILi8ELi32ELi32ELi480ELi240EEvP7ap_uintILi256EEPKS1_S4_S4_S4", "Inst_start_state" : "11", "Inst_end_state" : "12"},
-					{"ID" : "261", "SubInstance" : "grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_BIAS_STATS_fu_330", "Port" : "p_ZZ16UpConv_Fused_RowILi8ELi32ELi32ELi480ELi240EEvP7ap_uintILi256EEPKS1_S4_S4_S4", "Inst_start_state" : "15", "Inst_end_state" : "16"},
-					{"ID" : "266", "SubInstance" : "grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_NORM_WRITE_fu_370", "Port" : "p_ZZ16UpConv_Fused_RowILi8ELi32ELi32ELi480ELi240EEvP7ap_uintILi256EEPKS1_S4_S4_S4", "Inst_start_state" : "135", "Inst_end_state" : "136"}]},
+					{"ID" : "22", "SubInstance" : "grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_RESET_ROW_ACC_fu_176", "Port" : "p_ZZ16UpConv_Fused_RowILi8ELi32ELi32ELi480ELi240EEvP7ap_uintILi256EEPKS1_S4_S4_S4", "Inst_start_state" : "1", "Inst_end_state" : "2"},
+					{"ID" : "26", "SubInstance" : "grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_227", "Port" : "p_ZZ16UpConv_Fused_RowILi8ELi32ELi32ELi480ELi240EEvP7ap_uintILi256EEPKS1_S4_S4_S4", "Inst_start_state" : "3", "Inst_end_state" : "4"},
+					{"ID" : "295", "SubInstance" : "grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_PIXEL_STATS_fu_270", "Port" : "p_ZZ16UpConv_Fused_RowILi8ELi32ELi32ELi480ELi240EEvP7ap_uintILi256EEPKS1_S4_S4_S4", "Inst_start_state" : "5", "Inst_end_state" : "6"},
+					{"ID" : "327", "SubInstance" : "grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_PIXEL_NORM_fu_312", "Port" : "p_ZZ16UpConv_Fused_RowILi8ELi32ELi32ELi480ELi240EEvP7ap_uintILi256EEPKS1_S4_S4_S4", "Inst_start_state" : "7", "Inst_end_state" : "8"}]},
 			{"Name" : "x_buf", "Type" : "Memory", "Direction" : "I",
 				"SubConnect" : [
-					{"ID" : "24", "SubInstance" : "grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_288", "Port" : "x_buf", "Inst_start_state" : "11", "Inst_end_state" : "12"}]}],
-		"Loop" : [
-			{"Name" : "PIXEL_NORM", "PipelineType" : "no",
-				"LoopDec" : {"FSMBitwidth" : "141", "FirstState" : "ap_ST_fsm_state14", "LastState" : ["ap_ST_fsm_state136"], "QuitState" : ["ap_ST_fsm_state14"], "PreState" : ["ap_ST_fsm_state13"], "PostState" : ["ap_ST_fsm_state137"], "OneDepthLoop" : "0", "OneStateBlock": ""}}]},
+					{"ID" : "26", "SubInstance" : "grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_227", "Port" : "x_buf", "Inst_start_state" : "3", "Inst_end_state" : "4"}]},
+			{"Name" : "mean_buf_1", "Type" : "Memory", "Direction" : "IO",
+				"SubConnect" : [
+					{"ID" : "295", "SubInstance" : "grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_PIXEL_STATS_fu_270", "Port" : "mean_buf_1", "Inst_start_state" : "5", "Inst_end_state" : "6"},
+					{"ID" : "327", "SubInstance" : "grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_PIXEL_NORM_fu_312", "Port" : "mean_buf_1", "Inst_start_state" : "7", "Inst_end_state" : "8"}]},
+			{"Name" : "inv_buf_1", "Type" : "Memory", "Direction" : "IO",
+				"SubConnect" : [
+					{"ID" : "295", "SubInstance" : "grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_PIXEL_STATS_fu_270", "Port" : "inv_buf_1", "Inst_start_state" : "5", "Inst_end_state" : "6"},
+					{"ID" : "327", "SubInstance" : "grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_PIXEL_NORM_fu_312", "Port" : "inv_buf_1", "Inst_start_state" : "7", "Inst_end_state" : "8"}]}]},
 	{"ID" : "1", "Level" : "1", "Path" : "`AUTOTB_DUT_INST.void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_19_U", "Parent" : "0"},
 	{"ID" : "2", "Level" : "1", "Path" : "`AUTOTB_DUT_INST.void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_18_U", "Parent" : "0"},
 	{"ID" : "3", "Level" : "1", "Path" : "`AUTOTB_DUT_INST.void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_17_U", "Parent" : "0"},
@@ -515,16 +515,18 @@ set RtlHierarchyInfo {[
 	{"ID" : "14", "Level" : "1", "Path" : "`AUTOTB_DUT_INST.p_ZZ16UpConv_Fused_RowILi8ELi32ELi32ELi480ELi240EEvP7ap_uintILi256EEPKS1_S4_S4_S4_2_U", "Parent" : "0"},
 	{"ID" : "15", "Level" : "1", "Path" : "`AUTOTB_DUT_INST.p_ZZ16UpConv_Fused_RowILi8ELi32ELi32ELi480ELi240EEvP7ap_uintILi256EEPKS1_S4_S4_S4_1_U", "Parent" : "0"},
 	{"ID" : "16", "Level" : "1", "Path" : "`AUTOTB_DUT_INST.p_ZZ16UpConv_Fused_RowILi8ELi32ELi32ELi480ELi240EEvP7ap_uintILi256EEPKS1_S4_S4_S4_U", "Parent" : "0"},
-	{"ID" : "17", "Level" : "1", "Path" : "`AUTOTB_DUT_INST.b_buf_U", "Parent" : "0"},
-	{"ID" : "18", "Level" : "1", "Path" : "`AUTOTB_DUT_INST.g_buf_U", "Parent" : "0"},
-	{"ID" : "19", "Level" : "1", "Path" : "`AUTOTB_DUT_INST.be_buf_U", "Parent" : "0"},
-	{"ID" : "20", "Level" : "1", "Path" : "`AUTOTB_DUT_INST.grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_RESET_ROW_ACC_fu_237", "Parent" : "0", "Child" : ["21"],
+	{"ID" : "17", "Level" : "1", "Path" : "`AUTOTB_DUT_INST.mean_buf_1_U", "Parent" : "0"},
+	{"ID" : "18", "Level" : "1", "Path" : "`AUTOTB_DUT_INST.inv_buf_1_U", "Parent" : "0"},
+	{"ID" : "19", "Level" : "1", "Path" : "`AUTOTB_DUT_INST.b_buf_U", "Parent" : "0"},
+	{"ID" : "20", "Level" : "1", "Path" : "`AUTOTB_DUT_INST.g_buf_U", "Parent" : "0"},
+	{"ID" : "21", "Level" : "1", "Path" : "`AUTOTB_DUT_INST.be_buf_U", "Parent" : "0"},
+	{"ID" : "22", "Level" : "1", "Path" : "`AUTOTB_DUT_INST.grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_RESET_ROW_ACC_fu_176", "Parent" : "0", "Child" : ["23"],
 		"CDFG" : "UpConv_Fused_Row_8_32_32_480_240_Pipeline_RESET_ROW_ACC",
 		"Protocol" : "ap_ctrl_hs",
 		"ControlExist" : "1", "ap_start" : "1", "ap_ready" : "1", "ap_done" : "1", "ap_continue" : "0", "ap_idle" : "1", "real_start" : "0",
 		"Pipeline" : "None", "UnalignedPipeline" : "0", "RewindPipeline" : "0", "ProcessNetwork" : "0",
 		"II" : "0",
-		"VariableLatency" : "1", "ExactLatency" : "-1", "EstimateLatencyMin" : "514", "EstimateLatencyMax" : "514",
+		"VariableLatency" : "1", "ExactLatency" : "-1", "EstimateLatencyMin" : "962", "EstimateLatencyMax" : "962",
 		"Combinational" : "0",
 		"Datapath" : "0",
 		"ClockEnable" : "0",
@@ -551,9 +553,9 @@ set RtlHierarchyInfo {[
 			{"Name" : "p_ZZ16UpConv_Fused_RowILi8ELi32ELi32ELi480ELi240EEvP7ap_uintILi256EEPKS1_S4_S4_S4", "Type" : "Memory", "Direction" : "O"}],
 		"Loop" : [
 			{"Name" : "RESET_ROW_ACC", "PipelineType" : "UPC",
-				"LoopDec" : {"FSMBitwidth" : "8", "FirstState" : "ap_ST_fsm_pp0_stage0", "FirstStateIter" : "ap_enable_reg_pp0_iter0", "FirstStateBlock" : "ap_block_pp0_stage0_subdone", "LastState" : "ap_ST_fsm_pp0_stage0", "LastStateIter" : "ap_enable_reg_pp0_iter1", "LastStateBlock" : "ap_block_pp0_stage0_subdone", "QuitState" : "ap_ST_fsm_pp0_stage0", "QuitStateIter" : "ap_enable_reg_pp0_iter1", "QuitStateBlock" : "ap_block_pp0_stage0_subdone", "OneDepthLoop" : "0", "has_ap_ctrl" : "1", "has_continue" : "0"}}]},
-	{"ID" : "21", "Level" : "2", "Path" : "`AUTOTB_DUT_INST.grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_RESET_ROW_ACC_fu_237.flow_control_loop_pipe_sequential_init_U", "Parent" : "20"},
-	{"ID" : "22", "Level" : "1", "Path" : "`AUTOTB_DUT_INST.grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_LOAD_PARAMS_fu_273", "Parent" : "0", "Child" : ["23"],
+				"LoopDec" : {"FSMBitwidth" : "1", "FirstState" : "ap_ST_fsm_pp0_stage0", "FirstStateIter" : "ap_enable_reg_pp0_iter0", "FirstStateBlock" : "ap_block_pp0_stage0_subdone", "LastState" : "ap_ST_fsm_pp0_stage0", "LastStateIter" : "ap_enable_reg_pp0_iter1", "LastStateBlock" : "ap_block_pp0_stage0_subdone", "QuitState" : "ap_ST_fsm_pp0_stage0", "QuitStateIter" : "ap_enable_reg_pp0_iter1", "QuitStateBlock" : "ap_block_pp0_stage0_subdone", "OneDepthLoop" : "0", "has_ap_ctrl" : "1", "has_continue" : "0"}}]},
+	{"ID" : "23", "Level" : "2", "Path" : "`AUTOTB_DUT_INST.grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_RESET_ROW_ACC_fu_176.flow_control_loop_pipe_sequential_init_U", "Parent" : "22"},
+	{"ID" : "24", "Level" : "1", "Path" : "`AUTOTB_DUT_INST.grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_LOAD_PARAMS_fu_212", "Parent" : "0", "Child" : ["25"],
 		"CDFG" : "UpConv_Fused_Row_8_32_32_480_240_Pipeline_LOAD_PARAMS",
 		"Protocol" : "ap_ctrl_hs",
 		"ControlExist" : "1", "ap_start" : "1", "ap_ready" : "1", "ap_done" : "1", "ap_continue" : "0", "ap_idle" : "1", "real_start" : "0",
@@ -569,26 +571,26 @@ set RtlHierarchyInfo {[
 		"IsBlackBox" : "0",
 		"Port" : [
 			{"Name" : "b_buf", "Type" : "Memory", "Direction" : "O"},
-			{"Name" : "sext_ln228", "Type" : "None", "Direction" : "I"},
+			{"Name" : "sext_ln221", "Type" : "None", "Direction" : "I"},
 			{"Name" : "gmem_param", "Type" : "MAXI", "Direction" : "I",
 				"BlockSignal" : [
 					{"Name" : "gmem_param_blk_n_AR", "Type" : "RtlSignal"},
 					{"Name" : "gmem_param_blk_n_R", "Type" : "RtlSignal"}]},
 			{"Name" : "g_buf", "Type" : "Memory", "Direction" : "O"},
-			{"Name" : "sext_ln228_3", "Type" : "None", "Direction" : "I"},
+			{"Name" : "sext_ln221_3", "Type" : "None", "Direction" : "I"},
 			{"Name" : "be_buf", "Type" : "Memory", "Direction" : "O"},
-			{"Name" : "sext_ln228_4", "Type" : "None", "Direction" : "I"}],
+			{"Name" : "sext_ln221_4", "Type" : "None", "Direction" : "I"}],
 		"Loop" : [
 			{"Name" : "LOAD_PARAMS", "PipelineType" : "UPC",
 				"LoopDec" : {"FSMBitwidth" : "3", "FirstState" : "ap_ST_fsm_pp0_stage0", "FirstStateIter" : "ap_enable_reg_pp0_iter0", "FirstStateBlock" : "ap_block_pp0_stage0_subdone", "LastState" : "ap_ST_fsm_pp0_stage0", "LastStateIter" : "ap_enable_reg_pp0_iter4", "LastStateBlock" : "ap_block_pp0_stage0_subdone", "QuitState" : "ap_ST_fsm_pp0_stage0", "QuitStateIter" : "ap_enable_reg_pp0_iter4", "QuitStateBlock" : "ap_block_pp0_stage0_subdone", "OneDepthLoop" : "0", "has_ap_ctrl" : "1", "has_continue" : "0"}}]},
-	{"ID" : "23", "Level" : "2", "Path" : "`AUTOTB_DUT_INST.grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_LOAD_PARAMS_fu_273.flow_control_loop_pipe_sequential_init_U", "Parent" : "22"},
-	{"ID" : "24", "Level" : "1", "Path" : "`AUTOTB_DUT_INST.grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_288", "Parent" : "0", "Child" : ["25", "26", "27", "28", "29", "30", "31", "32", "33", "35"],
+	{"ID" : "25", "Level" : "2", "Path" : "`AUTOTB_DUT_INST.grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_LOAD_PARAMS_fu_212.flow_control_loop_pipe_sequential_init_U", "Parent" : "24"},
+	{"ID" : "26", "Level" : "1", "Path" : "`AUTOTB_DUT_INST.grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_227", "Parent" : "0", "Child" : ["27", "28", "29", "30", "31", "32", "33", "34", "35", "37"],
 		"CDFG" : "UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP",
 		"Protocol" : "ap_ctrl_hs",
 		"ControlExist" : "1", "ap_start" : "1", "ap_ready" : "1", "ap_done" : "1", "ap_continue" : "0", "ap_idle" : "1", "real_start" : "0",
 		"Pipeline" : "None", "UnalignedPipeline" : "0", "RewindPipeline" : "0", "ProcessNetwork" : "0",
 		"II" : "0",
-		"VariableLatency" : "1", "ExactLatency" : "-1", "EstimateLatencyMin" : "65161", "EstimateLatencyMax" : "2605861",
+		"VariableLatency" : "1", "ExactLatency" : "-1", "EstimateLatencyMin" : "65431", "EstimateLatencyMax" : "335071",
 		"Combinational" : "0",
 		"Datapath" : "0",
 		"ClockEnable" : "0",
@@ -597,54 +599,82 @@ set RtlHierarchyInfo {[
 		"HasNonBlockingOperation" : "0",
 		"IsBlackBox" : "0",
 		"Port" : [
+			{"Name" : "W_ptr", "Type" : "None", "Direction" : "I"},
 			{"Name" : "gmem_weight", "Type" : "MAXI", "Direction" : "I",
 				"SubConnect" : [
-					{"ID" : "33", "SubInstance" : "grp_UpConv_Fused_Row_Pipeline_PRELOAD_W_VITIS_LOOP_142_2_VITIS_LOOP_143_3_fu_549", "Port" : "gmem_weight", "Inst_start_state" : "2", "Inst_end_state" : "3"}]},
-			{"Name" : "sext_ln135", "Type" : "None", "Direction" : "I"},
+					{"ID" : "35", "SubInstance" : "grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_PRELOAD_W_W_FLAT_fu_185", "Port" : "gmem_weight", "Inst_start_state" : "2", "Inst_end_state" : "3"}]},
 			{"Name" : "zext_ln135", "Type" : "None", "Direction" : "I"},
-			{"Name" : "void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_19", "Type" : "Memory", "Direction" : "IO"},
-			{"Name" : "void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_18", "Type" : "Memory", "Direction" : "IO"},
-			{"Name" : "void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_17", "Type" : "Memory", "Direction" : "IO"},
-			{"Name" : "void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_16", "Type" : "Memory", "Direction" : "IO"},
-			{"Name" : "void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_15", "Type" : "Memory", "Direction" : "IO"},
-			{"Name" : "void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_14", "Type" : "Memory", "Direction" : "IO"},
-			{"Name" : "void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_13", "Type" : "Memory", "Direction" : "IO"},
-			{"Name" : "void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_12", "Type" : "Memory", "Direction" : "IO"},
 			{"Name" : "x_buf", "Type" : "Memory", "Direction" : "I",
 				"SubConnect" : [
-					{"ID" : "35", "SubInstance" : "grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_CI_LOOP_fu_564", "Port" : "x_buf", "Inst_start_state" : "7", "Inst_end_state" : "8"}]},
-			{"Name" : "void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_11", "Type" : "Memory", "Direction" : "IO"},
-			{"Name" : "void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_10", "Type" : "Memory", "Direction" : "IO"},
-			{"Name" : "p_ZZ16UpConv_Fused_RowILi8ELi32ELi32ELi480ELi240EEvP7ap_uintILi256EEPKS1_S4_S4_S4_5", "Type" : "Memory", "Direction" : "IO"},
-			{"Name" : "p_ZZ16UpConv_Fused_RowILi8ELi32ELi32ELi480ELi240EEvP7ap_uintILi256EEPKS1_S4_S4_S4_4", "Type" : "Memory", "Direction" : "IO"},
-			{"Name" : "p_ZZ16UpConv_Fused_RowILi8ELi32ELi32ELi480ELi240EEvP7ap_uintILi256EEPKS1_S4_S4_S4_3", "Type" : "Memory", "Direction" : "IO"},
-			{"Name" : "p_ZZ16UpConv_Fused_RowILi8ELi32ELi32ELi480ELi240EEvP7ap_uintILi256EEPKS1_S4_S4_S4_2", "Type" : "Memory", "Direction" : "IO"},
-			{"Name" : "p_ZZ16UpConv_Fused_RowILi8ELi32ELi32ELi480ELi240EEvP7ap_uintILi256EEPKS1_S4_S4_S4_1", "Type" : "Memory", "Direction" : "IO"},
-			{"Name" : "p_ZZ16UpConv_Fused_RowILi8ELi32ELi32ELi480ELi240EEvP7ap_uintILi256EEPKS1_S4_S4_S4", "Type" : "Memory", "Direction" : "IO"}],
+					{"ID" : "37", "SubInstance" : "grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_KW_LOOP_FLAT_LOOP_fu_201", "Port" : "x_buf", "Inst_start_state" : "4", "Inst_end_state" : "5"}]},
+			{"Name" : "void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_19", "Type" : "Memory", "Direction" : "IO",
+				"SubConnect" : [
+					{"ID" : "37", "SubInstance" : "grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_KW_LOOP_FLAT_LOOP_fu_201", "Port" : "void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_19", "Inst_start_state" : "4", "Inst_end_state" : "5"}]},
+			{"Name" : "void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_18", "Type" : "Memory", "Direction" : "IO",
+				"SubConnect" : [
+					{"ID" : "37", "SubInstance" : "grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_KW_LOOP_FLAT_LOOP_fu_201", "Port" : "void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_18", "Inst_start_state" : "4", "Inst_end_state" : "5"}]},
+			{"Name" : "void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_17", "Type" : "Memory", "Direction" : "IO",
+				"SubConnect" : [
+					{"ID" : "37", "SubInstance" : "grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_KW_LOOP_FLAT_LOOP_fu_201", "Port" : "void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_17", "Inst_start_state" : "4", "Inst_end_state" : "5"}]},
+			{"Name" : "void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_16", "Type" : "Memory", "Direction" : "IO",
+				"SubConnect" : [
+					{"ID" : "37", "SubInstance" : "grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_KW_LOOP_FLAT_LOOP_fu_201", "Port" : "void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_16", "Inst_start_state" : "4", "Inst_end_state" : "5"}]},
+			{"Name" : "void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_15", "Type" : "Memory", "Direction" : "IO",
+				"SubConnect" : [
+					{"ID" : "37", "SubInstance" : "grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_KW_LOOP_FLAT_LOOP_fu_201", "Port" : "void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_15", "Inst_start_state" : "4", "Inst_end_state" : "5"}]},
+			{"Name" : "void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_14", "Type" : "Memory", "Direction" : "IO",
+				"SubConnect" : [
+					{"ID" : "37", "SubInstance" : "grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_KW_LOOP_FLAT_LOOP_fu_201", "Port" : "void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_14", "Inst_start_state" : "4", "Inst_end_state" : "5"}]},
+			{"Name" : "void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_13", "Type" : "Memory", "Direction" : "IO",
+				"SubConnect" : [
+					{"ID" : "37", "SubInstance" : "grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_KW_LOOP_FLAT_LOOP_fu_201", "Port" : "void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_13", "Inst_start_state" : "4", "Inst_end_state" : "5"}]},
+			{"Name" : "void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_12", "Type" : "Memory", "Direction" : "IO",
+				"SubConnect" : [
+					{"ID" : "37", "SubInstance" : "grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_KW_LOOP_FLAT_LOOP_fu_201", "Port" : "void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_12", "Inst_start_state" : "4", "Inst_end_state" : "5"}]},
+			{"Name" : "void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_11", "Type" : "Memory", "Direction" : "IO",
+				"SubConnect" : [
+					{"ID" : "37", "SubInstance" : "grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_KW_LOOP_FLAT_LOOP_fu_201", "Port" : "void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_11", "Inst_start_state" : "4", "Inst_end_state" : "5"}]},
+			{"Name" : "void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_10", "Type" : "Memory", "Direction" : "IO",
+				"SubConnect" : [
+					{"ID" : "37", "SubInstance" : "grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_KW_LOOP_FLAT_LOOP_fu_201", "Port" : "void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_10", "Inst_start_state" : "4", "Inst_end_state" : "5"}]},
+			{"Name" : "p_ZZ16UpConv_Fused_RowILi8ELi32ELi32ELi480ELi240EEvP7ap_uintILi256EEPKS1_S4_S4_S4_5", "Type" : "Memory", "Direction" : "IO",
+				"SubConnect" : [
+					{"ID" : "37", "SubInstance" : "grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_KW_LOOP_FLAT_LOOP_fu_201", "Port" : "p_ZZ16UpConv_Fused_RowILi8ELi32ELi32ELi480ELi240EEvP7ap_uintILi256EEPKS1_S4_S4_S4_5", "Inst_start_state" : "4", "Inst_end_state" : "5"}]},
+			{"Name" : "p_ZZ16UpConv_Fused_RowILi8ELi32ELi32ELi480ELi240EEvP7ap_uintILi256EEPKS1_S4_S4_S4_4", "Type" : "Memory", "Direction" : "IO",
+				"SubConnect" : [
+					{"ID" : "37", "SubInstance" : "grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_KW_LOOP_FLAT_LOOP_fu_201", "Port" : "p_ZZ16UpConv_Fused_RowILi8ELi32ELi32ELi480ELi240EEvP7ap_uintILi256EEPKS1_S4_S4_S4_4", "Inst_start_state" : "4", "Inst_end_state" : "5"}]},
+			{"Name" : "p_ZZ16UpConv_Fused_RowILi8ELi32ELi32ELi480ELi240EEvP7ap_uintILi256EEPKS1_S4_S4_S4_3", "Type" : "Memory", "Direction" : "IO",
+				"SubConnect" : [
+					{"ID" : "37", "SubInstance" : "grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_KW_LOOP_FLAT_LOOP_fu_201", "Port" : "p_ZZ16UpConv_Fused_RowILi8ELi32ELi32ELi480ELi240EEvP7ap_uintILi256EEPKS1_S4_S4_S4_3", "Inst_start_state" : "4", "Inst_end_state" : "5"}]},
+			{"Name" : "p_ZZ16UpConv_Fused_RowILi8ELi32ELi32ELi480ELi240EEvP7ap_uintILi256EEPKS1_S4_S4_S4_2", "Type" : "Memory", "Direction" : "IO",
+				"SubConnect" : [
+					{"ID" : "37", "SubInstance" : "grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_KW_LOOP_FLAT_LOOP_fu_201", "Port" : "p_ZZ16UpConv_Fused_RowILi8ELi32ELi32ELi480ELi240EEvP7ap_uintILi256EEPKS1_S4_S4_S4_2", "Inst_start_state" : "4", "Inst_end_state" : "5"}]},
+			{"Name" : "p_ZZ16UpConv_Fused_RowILi8ELi32ELi32ELi480ELi240EEvP7ap_uintILi256EEPKS1_S4_S4_S4_1", "Type" : "Memory", "Direction" : "IO",
+				"SubConnect" : [
+					{"ID" : "37", "SubInstance" : "grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_KW_LOOP_FLAT_LOOP_fu_201", "Port" : "p_ZZ16UpConv_Fused_RowILi8ELi32ELi32ELi480ELi240EEvP7ap_uintILi256EEPKS1_S4_S4_S4_1", "Inst_start_state" : "4", "Inst_end_state" : "5"}]},
+			{"Name" : "p_ZZ16UpConv_Fused_RowILi8ELi32ELi32ELi480ELi240EEvP7ap_uintILi256EEPKS1_S4_S4_S4", "Type" : "Memory", "Direction" : "IO",
+				"SubConnect" : [
+					{"ID" : "37", "SubInstance" : "grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_KW_LOOP_FLAT_LOOP_fu_201", "Port" : "p_ZZ16UpConv_Fused_RowILi8ELi32ELi32ELi480ELi240EEvP7ap_uintILi256EEPKS1_S4_S4_S4", "Inst_start_state" : "4", "Inst_end_state" : "5"}]}],
 		"Loop" : [
-			{"Name" : "WO_LOOP", "PipelineType" : "no",
-				"LoopDec" : {"FSMBitwidth" : "29", "FirstState" : "ap_ST_fsm_state6", "LastState" : ["ap_ST_fsm_state29"], "QuitState" : ["ap_ST_fsm_state6"], "PreState" : ["ap_ST_fsm_state5"], "PostState" : ["ap_ST_fsm_state5"], "OneDepthLoop" : "0", "OneStateBlock": ""}},
-			{"Name" : "KW_LOOP", "PipelineType" : "no",
-				"LoopDec" : {"FSMBitwidth" : "29", "FirstState" : "ap_ST_fsm_state5", "LastState" : ["ap_ST_fsm_state6"], "QuitState" : ["ap_ST_fsm_state5"], "PreState" : ["ap_ST_fsm_state4"], "PostState" : ["ap_ST_fsm_state4"], "OneDepthLoop" : "0", "OneStateBlock": ""}},
 			{"Name" : "KH_LOOP", "PipelineType" : "no",
-				"LoopDec" : {"FSMBitwidth" : "29", "FirstState" : "ap_ST_fsm_state4", "LastState" : ["ap_ST_fsm_state5"], "QuitState" : ["ap_ST_fsm_state4"], "PreState" : ["ap_ST_fsm_state3"], "PostState" : ["ap_ST_fsm_state2"], "OneDepthLoop" : "0", "OneStateBlock": ""}},
+				"LoopDec" : {"FSMBitwidth" : "5", "FirstState" : "ap_ST_fsm_state4", "LastState" : ["ap_ST_fsm_state5"], "QuitState" : ["ap_ST_fsm_state4"], "PreState" : ["ap_ST_fsm_state3"], "PostState" : ["ap_ST_fsm_state2"], "OneDepthLoop" : "0", "OneStateBlock": ""}},
 			{"Name" : "TILE_LOOP", "PipelineType" : "no",
-				"LoopDec" : {"FSMBitwidth" : "29", "FirstState" : "ap_ST_fsm_state2", "LastState" : ["ap_ST_fsm_state4"], "QuitState" : ["ap_ST_fsm_state2"], "PreState" : ["ap_ST_fsm_state1"], "PostState" : ["ap_ST_fsm_state1"], "OneDepthLoop" : "0", "OneStateBlock": ""}}]},
-	{"ID" : "25", "Level" : "2", "Path" : "`AUTOTB_DUT_INST.grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_288.w_local_7_U", "Parent" : "24"},
-	{"ID" : "26", "Level" : "2", "Path" : "`AUTOTB_DUT_INST.grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_288.w_local_6_U", "Parent" : "24"},
-	{"ID" : "27", "Level" : "2", "Path" : "`AUTOTB_DUT_INST.grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_288.w_local_5_U", "Parent" : "24"},
-	{"ID" : "28", "Level" : "2", "Path" : "`AUTOTB_DUT_INST.grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_288.w_local_4_U", "Parent" : "24"},
-	{"ID" : "29", "Level" : "2", "Path" : "`AUTOTB_DUT_INST.grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_288.w_local_3_U", "Parent" : "24"},
-	{"ID" : "30", "Level" : "2", "Path" : "`AUTOTB_DUT_INST.grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_288.w_local_2_U", "Parent" : "24"},
-	{"ID" : "31", "Level" : "2", "Path" : "`AUTOTB_DUT_INST.grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_288.w_local_1_U", "Parent" : "24"},
-	{"ID" : "32", "Level" : "2", "Path" : "`AUTOTB_DUT_INST.grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_288.w_local_U", "Parent" : "24"},
-	{"ID" : "33", "Level" : "2", "Path" : "`AUTOTB_DUT_INST.grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_288.grp_UpConv_Fused_Row_Pipeline_PRELOAD_W_VITIS_LOOP_142_2_VITIS_LOOP_143_3_fu_549", "Parent" : "24", "Child" : ["34"],
-		"CDFG" : "UpConv_Fused_Row_Pipeline_PRELOAD_W_VITIS_LOOP_142_2_VITIS_LOOP_143_3",
+				"LoopDec" : {"FSMBitwidth" : "5", "FirstState" : "ap_ST_fsm_state2", "LastState" : ["ap_ST_fsm_state4"], "QuitState" : ["ap_ST_fsm_state2"], "PreState" : ["ap_ST_fsm_state1"], "PostState" : ["ap_ST_fsm_state1"], "OneDepthLoop" : "0", "OneStateBlock": ""}}]},
+	{"ID" : "27", "Level" : "2", "Path" : "`AUTOTB_DUT_INST.grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_227.w_local_7_U", "Parent" : "26"},
+	{"ID" : "28", "Level" : "2", "Path" : "`AUTOTB_DUT_INST.grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_227.w_local_6_U", "Parent" : "26"},
+	{"ID" : "29", "Level" : "2", "Path" : "`AUTOTB_DUT_INST.grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_227.w_local_5_U", "Parent" : "26"},
+	{"ID" : "30", "Level" : "2", "Path" : "`AUTOTB_DUT_INST.grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_227.w_local_4_U", "Parent" : "26"},
+	{"ID" : "31", "Level" : "2", "Path" : "`AUTOTB_DUT_INST.grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_227.w_local_3_U", "Parent" : "26"},
+	{"ID" : "32", "Level" : "2", "Path" : "`AUTOTB_DUT_INST.grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_227.w_local_2_U", "Parent" : "26"},
+	{"ID" : "33", "Level" : "2", "Path" : "`AUTOTB_DUT_INST.grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_227.w_local_1_U", "Parent" : "26"},
+	{"ID" : "34", "Level" : "2", "Path" : "`AUTOTB_DUT_INST.grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_227.w_local_U", "Parent" : "26"},
+	{"ID" : "35", "Level" : "2", "Path" : "`AUTOTB_DUT_INST.grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_227.grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_PRELOAD_W_W_FLAT_fu_185", "Parent" : "26", "Child" : ["36"],
+		"CDFG" : "UpConv_Fused_Row_8_32_32_480_240_Pipeline_PRELOAD_W_W_FLAT",
 		"Protocol" : "ap_ctrl_hs",
 		"ControlExist" : "1", "ap_start" : "1", "ap_ready" : "1", "ap_done" : "1", "ap_continue" : "0", "ap_idle" : "1", "real_start" : "0",
 		"Pipeline" : "None", "UnalignedPipeline" : "0", "RewindPipeline" : "0", "ProcessNetwork" : "0",
 		"II" : "0",
-		"VariableLatency" : "1", "ExactLatency" : "-1", "EstimateLatencyMin" : "2163", "EstimateLatencyMax" : "2163",
+		"VariableLatency" : "1", "ExactLatency" : "-1", "EstimateLatencyMin" : "2172", "EstimateLatencyMax" : "2172",
 		"Combinational" : "0",
 		"Datapath" : "0",
 		"ClockEnable" : "0",
@@ -653,10 +683,7 @@ set RtlHierarchyInfo {[
 		"HasNonBlockingOperation" : "0",
 		"IsBlackBox" : "0",
 		"Port" : [
-			{"Name" : "gmem_weight", "Type" : "MAXI", "Direction" : "I",
-				"BlockSignal" : [
-					{"Name" : "gmem_weight_blk_n_R", "Type" : "RtlSignal"}]},
-			{"Name" : "sext_ln135", "Type" : "None", "Direction" : "I"},
+			{"Name" : "tile", "Type" : "None", "Direction" : "I"},
 			{"Name" : "w_local_7", "Type" : "Memory", "Direction" : "O"},
 			{"Name" : "w_local_6", "Type" : "Memory", "Direction" : "O"},
 			{"Name" : "w_local_5", "Type" : "Memory", "Direction" : "O"},
@@ -664,18 +691,23 @@ set RtlHierarchyInfo {[
 			{"Name" : "w_local_3", "Type" : "Memory", "Direction" : "O"},
 			{"Name" : "w_local_2", "Type" : "Memory", "Direction" : "O"},
 			{"Name" : "w_local_1", "Type" : "Memory", "Direction" : "O"},
-			{"Name" : "w_local", "Type" : "Memory", "Direction" : "O"}],
+			{"Name" : "w_local", "Type" : "Memory", "Direction" : "O"},
+			{"Name" : "W_ptr", "Type" : "None", "Direction" : "I"},
+			{"Name" : "gmem_weight", "Type" : "MAXI", "Direction" : "I",
+				"BlockSignal" : [
+					{"Name" : "gmem_weight_blk_n_AR", "Type" : "RtlSignal"},
+					{"Name" : "gmem_weight_blk_n_R", "Type" : "RtlSignal"}]}],
 		"Loop" : [
-			{"Name" : "PRELOAD_W_VITIS_LOOP_142_2_VITIS_LOOP_143_3", "PipelineType" : "UPC",
-				"LoopDec" : {"FSMBitwidth" : "1", "FirstState" : "ap_ST_fsm_pp0_stage0", "FirstStateIter" : "ap_enable_reg_pp0_iter0", "FirstStateBlock" : "ap_block_pp0_stage0_subdone", "LastState" : "ap_ST_fsm_pp0_stage0", "LastStateIter" : "ap_enable_reg_pp0_iter2", "LastStateBlock" : "ap_block_pp0_stage0_subdone", "QuitState" : "ap_ST_fsm_pp0_stage0", "QuitStateIter" : "ap_enable_reg_pp0_iter2", "QuitStateBlock" : "ap_block_pp0_stage0_subdone", "OneDepthLoop" : "0", "has_ap_ctrl" : "1", "has_continue" : "0"}}]},
-	{"ID" : "34", "Level" : "3", "Path" : "`AUTOTB_DUT_INST.grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_288.grp_UpConv_Fused_Row_Pipeline_PRELOAD_W_VITIS_LOOP_142_2_VITIS_LOOP_143_3_fu_549.flow_control_loop_pipe_sequential_init_U", "Parent" : "33"},
-	{"ID" : "35", "Level" : "2", "Path" : "`AUTOTB_DUT_INST.grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_288.grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_CI_LOOP_fu_564", "Parent" : "24", "Child" : ["36", "37", "38", "39", "40", "41", "42", "43", "44", "45", "46", "47", "48", "49", "50", "51", "52", "53", "54", "55", "56", "57", "58", "59", "60", "61", "62", "63", "64", "65", "66", "67", "68", "69", "70", "71", "72", "73", "74", "75", "76", "77", "78", "79", "80", "81", "82", "83", "84", "85", "86", "87", "88", "89", "90", "91", "92", "93", "94", "95", "96", "97", "98", "99", "100", "101", "102", "103", "104", "105", "106", "107", "108", "109", "110", "111", "112", "113", "114", "115", "116", "117", "118", "119", "120", "121", "122", "123", "124", "125", "126", "127", "128", "129", "130", "131", "132", "133", "134", "135", "136", "137", "138", "139", "140", "141", "142", "143", "144", "145", "146", "147", "148", "149", "150", "151", "152", "153", "154", "155", "156", "157", "158", "159", "160", "161", "162", "163", "164", "165", "166", "167", "168", "169", "170", "171", "172", "173", "174", "175", "176", "177", "178", "179", "180", "181", "182", "183", "184", "185", "186", "187", "188", "189", "190", "191", "192", "193", "194", "195", "196", "197", "198", "199", "200", "201", "202", "203", "204", "205", "206", "207", "208", "209", "210", "211", "212", "213", "214", "215", "216", "217", "218", "219", "220", "221", "222", "223", "224", "225", "226", "227", "228", "229", "230", "231", "232", "233", "234", "235", "236", "237", "238", "239", "240", "241", "242", "243", "244", "245", "246", "247", "248", "249", "250", "251", "252", "253", "254", "255", "256", "257", "258", "259", "260"],
-		"CDFG" : "UpConv_Fused_Row_8_32_32_480_240_Pipeline_CI_LOOP",
+			{"Name" : "PRELOAD_W_W_FLAT", "PipelineType" : "UPC",
+				"LoopDec" : {"FSMBitwidth" : "1", "FirstState" : "ap_ST_fsm_pp0_stage0", "FirstStateIter" : "ap_enable_reg_pp0_iter0", "FirstStateBlock" : "ap_block_pp0_stage0_subdone", "LastState" : "ap_ST_fsm_pp0_stage0", "LastStateIter" : "ap_enable_reg_pp0_iter11", "LastStateBlock" : "ap_block_pp0_stage0_subdone", "QuitState" : "ap_ST_fsm_pp0_stage0", "QuitStateIter" : "ap_enable_reg_pp0_iter11", "QuitStateBlock" : "ap_block_pp0_stage0_subdone", "OneDepthLoop" : "0", "has_ap_ctrl" : "1", "has_continue" : "0"}}]},
+	{"ID" : "36", "Level" : "3", "Path" : "`AUTOTB_DUT_INST.grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_227.grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_PRELOAD_W_W_FLAT_fu_185.flow_control_loop_pipe_sequential_init_U", "Parent" : "35"},
+	{"ID" : "37", "Level" : "2", "Path" : "`AUTOTB_DUT_INST.grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_227.grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_KW_LOOP_FLAT_LOOP_fu_201", "Parent" : "26", "Child" : ["38", "39", "40", "41", "42", "43", "44", "45", "46", "47", "48", "49", "50", "51", "52", "53", "54", "55", "56", "57", "58", "59", "60", "61", "62", "63", "64", "65", "66", "67", "68", "69", "70", "71", "72", "73", "74", "75", "76", "77", "78", "79", "80", "81", "82", "83", "84", "85", "86", "87", "88", "89", "90", "91", "92", "93", "94", "95", "96", "97", "98", "99", "100", "101", "102", "103", "104", "105", "106", "107", "108", "109", "110", "111", "112", "113", "114", "115", "116", "117", "118", "119", "120", "121", "122", "123", "124", "125", "126", "127", "128", "129", "130", "131", "132", "133", "134", "135", "136", "137", "138", "139", "140", "141", "142", "143", "144", "145", "146", "147", "148", "149", "150", "151", "152", "153", "154", "155", "156", "157", "158", "159", "160", "161", "162", "163", "164", "165", "166", "167", "168", "169", "170", "171", "172", "173", "174", "175", "176", "177", "178", "179", "180", "181", "182", "183", "184", "185", "186", "187", "188", "189", "190", "191", "192", "193", "194", "195", "196", "197", "198", "199", "200", "201", "202", "203", "204", "205", "206", "207", "208", "209", "210", "211", "212", "213", "214", "215", "216", "217", "218", "219", "220", "221", "222", "223", "224", "225", "226", "227", "228", "229", "230", "231", "232", "233", "234", "235", "236", "237", "238", "239", "240", "241", "242", "243", "244", "245", "246", "247", "248", "249", "250", "251", "252", "253", "254", "255", "256", "257", "258", "259", "260", "261", "262", "263", "264", "265", "266", "267", "268", "269", "270", "271", "272", "273", "274", "275", "276", "277", "278", "279", "280", "281", "282", "283", "284", "285", "286", "287", "288", "289", "290", "291", "292", "293", "294"],
+		"CDFG" : "UpConv_Fused_Row_8_32_32_480_240_Pipeline_KW_LOOP_FLAT_LOOP",
 		"Protocol" : "ap_ctrl_hs",
 		"ControlExist" : "1", "ap_start" : "1", "ap_ready" : "1", "ap_done" : "1", "ap_continue" : "0", "ap_idle" : "1", "real_start" : "0",
 		"Pipeline" : "None", "UnalignedPipeline" : "0", "RewindPipeline" : "0", "ProcessNetwork" : "0",
 		"II" : "0",
-		"VariableLatency" : "1", "ExactLatency" : "-1", "EstimateLatencyMin" : "123", "EstimateLatencyMax" : "123",
+		"VariableLatency" : "1", "ExactLatency" : "-1", "EstimateLatencyMin" : "2996", "EstimateLatencyMax" : "2996",
 		"Combinational" : "0",
 		"Datapath" : "0",
 		"ClockEnable" : "0",
@@ -684,8 +716,8 @@ set RtlHierarchyInfo {[
 		"HasNonBlockingOperation" : "0",
 		"IsBlackBox" : "0",
 		"Port" : [
-			{"Name" : "mul115", "Type" : "None", "Direction" : "I"},
-			{"Name" : "empty", "Type" : "None", "Direction" : "I"},
+			{"Name" : "mul72", "Type" : "None", "Direction" : "I"},
+			{"Name" : "x_base", "Type" : "None", "Direction" : "I"},
 			{"Name" : "w_local", "Type" : "Memory", "Direction" : "I"},
 			{"Name" : "w_local_1", "Type" : "Memory", "Direction" : "I"},
 			{"Name" : "w_local_2", "Type" : "Memory", "Direction" : "I"},
@@ -694,286 +726,9 @@ set RtlHierarchyInfo {[
 			{"Name" : "w_local_5", "Type" : "Memory", "Direction" : "I"},
 			{"Name" : "w_local_6", "Type" : "Memory", "Direction" : "I"},
 			{"Name" : "w_local_7", "Type" : "Memory", "Direction" : "I"},
-			{"Name" : "psum_70_load_out", "Type" : "Vld", "Direction" : "O"},
-			{"Name" : "psum_69_load_out", "Type" : "Vld", "Direction" : "O"},
-			{"Name" : "psum_68_load_out", "Type" : "Vld", "Direction" : "O"},
-			{"Name" : "psum_67_load_out", "Type" : "Vld", "Direction" : "O"},
-			{"Name" : "psum_66_load_out", "Type" : "Vld", "Direction" : "O"},
-			{"Name" : "psum_65_load_out", "Type" : "Vld", "Direction" : "O"},
-			{"Name" : "psum_64_load_out", "Type" : "Vld", "Direction" : "O"},
-			{"Name" : "psum_63_load_out", "Type" : "Vld", "Direction" : "O"},
-			{"Name" : "psum_62_load_out", "Type" : "Vld", "Direction" : "O"},
-			{"Name" : "psum_61_load_out", "Type" : "Vld", "Direction" : "O"},
-			{"Name" : "psum_60_load_out", "Type" : "Vld", "Direction" : "O"},
-			{"Name" : "psum_59_load_out", "Type" : "Vld", "Direction" : "O"},
-			{"Name" : "psum_58_load_out", "Type" : "Vld", "Direction" : "O"},
-			{"Name" : "psum_57_load_out", "Type" : "Vld", "Direction" : "O"},
-			{"Name" : "psum_56_load_out", "Type" : "Vld", "Direction" : "O"},
-			{"Name" : "psum_55_load_out", "Type" : "Vld", "Direction" : "O"},
-			{"Name" : "psum_54_load_out", "Type" : "Vld", "Direction" : "O"},
-			{"Name" : "psum_53_load_out", "Type" : "Vld", "Direction" : "O"},
-			{"Name" : "psum_52_load_out", "Type" : "Vld", "Direction" : "O"},
-			{"Name" : "psum_51_load_out", "Type" : "Vld", "Direction" : "O"},
-			{"Name" : "psum_50_load_out", "Type" : "Vld", "Direction" : "O"},
-			{"Name" : "psum_49_load_out", "Type" : "Vld", "Direction" : "O"},
-			{"Name" : "psum_48_load_out", "Type" : "Vld", "Direction" : "O"},
-			{"Name" : "psum_47_load_out", "Type" : "Vld", "Direction" : "O"},
-			{"Name" : "psum_46_load_out", "Type" : "Vld", "Direction" : "O"},
-			{"Name" : "psum_45_load_out", "Type" : "Vld", "Direction" : "O"},
-			{"Name" : "psum_44_load_out", "Type" : "Vld", "Direction" : "O"},
-			{"Name" : "psum_43_load_out", "Type" : "Vld", "Direction" : "O"},
-			{"Name" : "psum_42_load_out", "Type" : "Vld", "Direction" : "O"},
-			{"Name" : "psum_41_load_out", "Type" : "Vld", "Direction" : "O"},
-			{"Name" : "psum_40_load_out", "Type" : "Vld", "Direction" : "O"},
-			{"Name" : "psum_load_out", "Type" : "Vld", "Direction" : "O"},
-			{"Name" : "x_buf", "Type" : "Memory", "Direction" : "I"}],
-		"Loop" : [
-			{"Name" : "CI_LOOP", "PipelineType" : "UPC",
-				"LoopDec" : {"FSMBitwidth" : "1", "FirstState" : "ap_ST_fsm_pp0_stage0", "FirstStateIter" : "ap_enable_reg_pp0_iter0", "FirstStateBlock" : "ap_block_pp0_stage0_subdone", "LastState" : "ap_ST_fsm_pp0_stage0", "LastStateIter" : "ap_enable_reg_pp0_iter92", "LastStateBlock" : "ap_block_pp0_stage0_subdone", "QuitState" : "ap_ST_fsm_pp0_stage0", "QuitStateIter" : "ap_enable_reg_pp0_iter92", "QuitStateBlock" : "ap_block_pp0_stage0_subdone", "OneDepthLoop" : "0", "has_ap_ctrl" : "1", "has_continue" : "0"}}]},
-	{"ID" : "36", "Level" : "3", "Path" : "`AUTOTB_DUT_INST.grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_288.grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_CI_LOOP_fu_564.hadd_16ns_16ns_16_5_full_dsp_1_U1319", "Parent" : "35"},
-	{"ID" : "37", "Level" : "3", "Path" : "`AUTOTB_DUT_INST.grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_288.grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_CI_LOOP_fu_564.hadd_16ns_16ns_16_5_full_dsp_1_U1320", "Parent" : "35"},
-	{"ID" : "38", "Level" : "3", "Path" : "`AUTOTB_DUT_INST.grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_288.grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_CI_LOOP_fu_564.hadd_16ns_16ns_16_5_full_dsp_1_U1321", "Parent" : "35"},
-	{"ID" : "39", "Level" : "3", "Path" : "`AUTOTB_DUT_INST.grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_288.grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_CI_LOOP_fu_564.hadd_16ns_16ns_16_5_full_dsp_1_U1322", "Parent" : "35"},
-	{"ID" : "40", "Level" : "3", "Path" : "`AUTOTB_DUT_INST.grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_288.grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_CI_LOOP_fu_564.hadd_16ns_16ns_16_5_full_dsp_1_U1323", "Parent" : "35"},
-	{"ID" : "41", "Level" : "3", "Path" : "`AUTOTB_DUT_INST.grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_288.grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_CI_LOOP_fu_564.hadd_16ns_16ns_16_5_full_dsp_1_U1324", "Parent" : "35"},
-	{"ID" : "42", "Level" : "3", "Path" : "`AUTOTB_DUT_INST.grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_288.grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_CI_LOOP_fu_564.hadd_16ns_16ns_16_5_full_dsp_1_U1325", "Parent" : "35"},
-	{"ID" : "43", "Level" : "3", "Path" : "`AUTOTB_DUT_INST.grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_288.grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_CI_LOOP_fu_564.hadd_16ns_16ns_16_5_full_dsp_1_U1326", "Parent" : "35"},
-	{"ID" : "44", "Level" : "3", "Path" : "`AUTOTB_DUT_INST.grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_288.grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_CI_LOOP_fu_564.hadd_16ns_16ns_16_5_full_dsp_1_U1327", "Parent" : "35"},
-	{"ID" : "45", "Level" : "3", "Path" : "`AUTOTB_DUT_INST.grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_288.grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_CI_LOOP_fu_564.hadd_16ns_16ns_16_5_full_dsp_1_U1328", "Parent" : "35"},
-	{"ID" : "46", "Level" : "3", "Path" : "`AUTOTB_DUT_INST.grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_288.grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_CI_LOOP_fu_564.hadd_16ns_16ns_16_5_full_dsp_1_U1329", "Parent" : "35"},
-	{"ID" : "47", "Level" : "3", "Path" : "`AUTOTB_DUT_INST.grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_288.grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_CI_LOOP_fu_564.hadd_16ns_16ns_16_5_full_dsp_1_U1330", "Parent" : "35"},
-	{"ID" : "48", "Level" : "3", "Path" : "`AUTOTB_DUT_INST.grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_288.grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_CI_LOOP_fu_564.hadd_16ns_16ns_16_5_full_dsp_1_U1331", "Parent" : "35"},
-	{"ID" : "49", "Level" : "3", "Path" : "`AUTOTB_DUT_INST.grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_288.grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_CI_LOOP_fu_564.hadd_16ns_16ns_16_5_full_dsp_1_U1332", "Parent" : "35"},
-	{"ID" : "50", "Level" : "3", "Path" : "`AUTOTB_DUT_INST.grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_288.grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_CI_LOOP_fu_564.hadd_16ns_16ns_16_5_full_dsp_1_U1333", "Parent" : "35"},
-	{"ID" : "51", "Level" : "3", "Path" : "`AUTOTB_DUT_INST.grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_288.grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_CI_LOOP_fu_564.hadd_16ns_16ns_16_5_full_dsp_1_U1334", "Parent" : "35"},
-	{"ID" : "52", "Level" : "3", "Path" : "`AUTOTB_DUT_INST.grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_288.grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_CI_LOOP_fu_564.hadd_16ns_16ns_16_5_full_dsp_1_U1335", "Parent" : "35"},
-	{"ID" : "53", "Level" : "3", "Path" : "`AUTOTB_DUT_INST.grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_288.grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_CI_LOOP_fu_564.hadd_16ns_16ns_16_5_full_dsp_1_U1336", "Parent" : "35"},
-	{"ID" : "54", "Level" : "3", "Path" : "`AUTOTB_DUT_INST.grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_288.grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_CI_LOOP_fu_564.hadd_16ns_16ns_16_5_full_dsp_1_U1337", "Parent" : "35"},
-	{"ID" : "55", "Level" : "3", "Path" : "`AUTOTB_DUT_INST.grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_288.grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_CI_LOOP_fu_564.hadd_16ns_16ns_16_5_full_dsp_1_U1338", "Parent" : "35"},
-	{"ID" : "56", "Level" : "3", "Path" : "`AUTOTB_DUT_INST.grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_288.grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_CI_LOOP_fu_564.hadd_16ns_16ns_16_5_full_dsp_1_U1339", "Parent" : "35"},
-	{"ID" : "57", "Level" : "3", "Path" : "`AUTOTB_DUT_INST.grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_288.grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_CI_LOOP_fu_564.hadd_16ns_16ns_16_5_full_dsp_1_U1340", "Parent" : "35"},
-	{"ID" : "58", "Level" : "3", "Path" : "`AUTOTB_DUT_INST.grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_288.grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_CI_LOOP_fu_564.hadd_16ns_16ns_16_5_full_dsp_1_U1341", "Parent" : "35"},
-	{"ID" : "59", "Level" : "3", "Path" : "`AUTOTB_DUT_INST.grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_288.grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_CI_LOOP_fu_564.hadd_16ns_16ns_16_5_full_dsp_1_U1342", "Parent" : "35"},
-	{"ID" : "60", "Level" : "3", "Path" : "`AUTOTB_DUT_INST.grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_288.grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_CI_LOOP_fu_564.hadd_16ns_16ns_16_5_full_dsp_1_U1343", "Parent" : "35"},
-	{"ID" : "61", "Level" : "3", "Path" : "`AUTOTB_DUT_INST.grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_288.grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_CI_LOOP_fu_564.hadd_16ns_16ns_16_5_full_dsp_1_U1344", "Parent" : "35"},
-	{"ID" : "62", "Level" : "3", "Path" : "`AUTOTB_DUT_INST.grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_288.grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_CI_LOOP_fu_564.hadd_16ns_16ns_16_5_full_dsp_1_U1345", "Parent" : "35"},
-	{"ID" : "63", "Level" : "3", "Path" : "`AUTOTB_DUT_INST.grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_288.grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_CI_LOOP_fu_564.hadd_16ns_16ns_16_5_full_dsp_1_U1346", "Parent" : "35"},
-	{"ID" : "64", "Level" : "3", "Path" : "`AUTOTB_DUT_INST.grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_288.grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_CI_LOOP_fu_564.hadd_16ns_16ns_16_5_full_dsp_1_U1347", "Parent" : "35"},
-	{"ID" : "65", "Level" : "3", "Path" : "`AUTOTB_DUT_INST.grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_288.grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_CI_LOOP_fu_564.hadd_16ns_16ns_16_5_full_dsp_1_U1348", "Parent" : "35"},
-	{"ID" : "66", "Level" : "3", "Path" : "`AUTOTB_DUT_INST.grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_288.grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_CI_LOOP_fu_564.hadd_16ns_16ns_16_5_full_dsp_1_U1349", "Parent" : "35"},
-	{"ID" : "67", "Level" : "3", "Path" : "`AUTOTB_DUT_INST.grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_288.grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_CI_LOOP_fu_564.hadd_16ns_16ns_16_5_full_dsp_1_U1350", "Parent" : "35"},
-	{"ID" : "68", "Level" : "3", "Path" : "`AUTOTB_DUT_INST.grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_288.grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_CI_LOOP_fu_564.hadd_16ns_16ns_16_5_full_dsp_1_U1351", "Parent" : "35"},
-	{"ID" : "69", "Level" : "3", "Path" : "`AUTOTB_DUT_INST.grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_288.grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_CI_LOOP_fu_564.hadd_16ns_16ns_16_5_full_dsp_1_U1352", "Parent" : "35"},
-	{"ID" : "70", "Level" : "3", "Path" : "`AUTOTB_DUT_INST.grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_288.grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_CI_LOOP_fu_564.hadd_16ns_16ns_16_5_full_dsp_1_U1353", "Parent" : "35"},
-	{"ID" : "71", "Level" : "3", "Path" : "`AUTOTB_DUT_INST.grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_288.grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_CI_LOOP_fu_564.hadd_16ns_16ns_16_5_full_dsp_1_U1354", "Parent" : "35"},
-	{"ID" : "72", "Level" : "3", "Path" : "`AUTOTB_DUT_INST.grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_288.grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_CI_LOOP_fu_564.hadd_16ns_16ns_16_5_full_dsp_1_U1355", "Parent" : "35"},
-	{"ID" : "73", "Level" : "3", "Path" : "`AUTOTB_DUT_INST.grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_288.grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_CI_LOOP_fu_564.hadd_16ns_16ns_16_5_full_dsp_1_U1356", "Parent" : "35"},
-	{"ID" : "74", "Level" : "3", "Path" : "`AUTOTB_DUT_INST.grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_288.grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_CI_LOOP_fu_564.hadd_16ns_16ns_16_5_full_dsp_1_U1357", "Parent" : "35"},
-	{"ID" : "75", "Level" : "3", "Path" : "`AUTOTB_DUT_INST.grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_288.grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_CI_LOOP_fu_564.hadd_16ns_16ns_16_5_full_dsp_1_U1358", "Parent" : "35"},
-	{"ID" : "76", "Level" : "3", "Path" : "`AUTOTB_DUT_INST.grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_288.grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_CI_LOOP_fu_564.hadd_16ns_16ns_16_5_full_dsp_1_U1359", "Parent" : "35"},
-	{"ID" : "77", "Level" : "3", "Path" : "`AUTOTB_DUT_INST.grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_288.grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_CI_LOOP_fu_564.hadd_16ns_16ns_16_5_full_dsp_1_U1360", "Parent" : "35"},
-	{"ID" : "78", "Level" : "3", "Path" : "`AUTOTB_DUT_INST.grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_288.grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_CI_LOOP_fu_564.hadd_16ns_16ns_16_5_full_dsp_1_U1361", "Parent" : "35"},
-	{"ID" : "79", "Level" : "3", "Path" : "`AUTOTB_DUT_INST.grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_288.grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_CI_LOOP_fu_564.hadd_16ns_16ns_16_5_full_dsp_1_U1362", "Parent" : "35"},
-	{"ID" : "80", "Level" : "3", "Path" : "`AUTOTB_DUT_INST.grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_288.grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_CI_LOOP_fu_564.hadd_16ns_16ns_16_5_full_dsp_1_U1363", "Parent" : "35"},
-	{"ID" : "81", "Level" : "3", "Path" : "`AUTOTB_DUT_INST.grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_288.grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_CI_LOOP_fu_564.hadd_16ns_16ns_16_5_full_dsp_1_U1364", "Parent" : "35"},
-	{"ID" : "82", "Level" : "3", "Path" : "`AUTOTB_DUT_INST.grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_288.grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_CI_LOOP_fu_564.hadd_16ns_16ns_16_5_full_dsp_1_U1365", "Parent" : "35"},
-	{"ID" : "83", "Level" : "3", "Path" : "`AUTOTB_DUT_INST.grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_288.grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_CI_LOOP_fu_564.hadd_16ns_16ns_16_5_full_dsp_1_U1366", "Parent" : "35"},
-	{"ID" : "84", "Level" : "3", "Path" : "`AUTOTB_DUT_INST.grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_288.grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_CI_LOOP_fu_564.hadd_16ns_16ns_16_5_full_dsp_1_U1367", "Parent" : "35"},
-	{"ID" : "85", "Level" : "3", "Path" : "`AUTOTB_DUT_INST.grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_288.grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_CI_LOOP_fu_564.hadd_16ns_16ns_16_5_full_dsp_1_U1368", "Parent" : "35"},
-	{"ID" : "86", "Level" : "3", "Path" : "`AUTOTB_DUT_INST.grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_288.grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_CI_LOOP_fu_564.hadd_16ns_16ns_16_5_full_dsp_1_U1369", "Parent" : "35"},
-	{"ID" : "87", "Level" : "3", "Path" : "`AUTOTB_DUT_INST.grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_288.grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_CI_LOOP_fu_564.hadd_16ns_16ns_16_5_full_dsp_1_U1370", "Parent" : "35"},
-	{"ID" : "88", "Level" : "3", "Path" : "`AUTOTB_DUT_INST.grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_288.grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_CI_LOOP_fu_564.hadd_16ns_16ns_16_5_full_dsp_1_U1371", "Parent" : "35"},
-	{"ID" : "89", "Level" : "3", "Path" : "`AUTOTB_DUT_INST.grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_288.grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_CI_LOOP_fu_564.hadd_16ns_16ns_16_5_full_dsp_1_U1372", "Parent" : "35"},
-	{"ID" : "90", "Level" : "3", "Path" : "`AUTOTB_DUT_INST.grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_288.grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_CI_LOOP_fu_564.hadd_16ns_16ns_16_5_full_dsp_1_U1373", "Parent" : "35"},
-	{"ID" : "91", "Level" : "3", "Path" : "`AUTOTB_DUT_INST.grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_288.grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_CI_LOOP_fu_564.hadd_16ns_16ns_16_5_full_dsp_1_U1374", "Parent" : "35"},
-	{"ID" : "92", "Level" : "3", "Path" : "`AUTOTB_DUT_INST.grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_288.grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_CI_LOOP_fu_564.hadd_16ns_16ns_16_5_full_dsp_1_U1375", "Parent" : "35"},
-	{"ID" : "93", "Level" : "3", "Path" : "`AUTOTB_DUT_INST.grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_288.grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_CI_LOOP_fu_564.hadd_16ns_16ns_16_5_full_dsp_1_U1376", "Parent" : "35"},
-	{"ID" : "94", "Level" : "3", "Path" : "`AUTOTB_DUT_INST.grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_288.grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_CI_LOOP_fu_564.hadd_16ns_16ns_16_5_full_dsp_1_U1377", "Parent" : "35"},
-	{"ID" : "95", "Level" : "3", "Path" : "`AUTOTB_DUT_INST.grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_288.grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_CI_LOOP_fu_564.hadd_16ns_16ns_16_5_full_dsp_1_U1378", "Parent" : "35"},
-	{"ID" : "96", "Level" : "3", "Path" : "`AUTOTB_DUT_INST.grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_288.grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_CI_LOOP_fu_564.hadd_16ns_16ns_16_5_full_dsp_1_U1379", "Parent" : "35"},
-	{"ID" : "97", "Level" : "3", "Path" : "`AUTOTB_DUT_INST.grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_288.grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_CI_LOOP_fu_564.hadd_16ns_16ns_16_5_full_dsp_1_U1380", "Parent" : "35"},
-	{"ID" : "98", "Level" : "3", "Path" : "`AUTOTB_DUT_INST.grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_288.grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_CI_LOOP_fu_564.hadd_16ns_16ns_16_5_full_dsp_1_U1381", "Parent" : "35"},
-	{"ID" : "99", "Level" : "3", "Path" : "`AUTOTB_DUT_INST.grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_288.grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_CI_LOOP_fu_564.hadd_16ns_16ns_16_5_full_dsp_1_U1382", "Parent" : "35"},
-	{"ID" : "100", "Level" : "3", "Path" : "`AUTOTB_DUT_INST.grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_288.grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_CI_LOOP_fu_564.hadd_16ns_16ns_16_5_full_dsp_1_U1383", "Parent" : "35"},
-	{"ID" : "101", "Level" : "3", "Path" : "`AUTOTB_DUT_INST.grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_288.grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_CI_LOOP_fu_564.hadd_16ns_16ns_16_5_full_dsp_1_U1384", "Parent" : "35"},
-	{"ID" : "102", "Level" : "3", "Path" : "`AUTOTB_DUT_INST.grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_288.grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_CI_LOOP_fu_564.hadd_16ns_16ns_16_5_full_dsp_1_U1385", "Parent" : "35"},
-	{"ID" : "103", "Level" : "3", "Path" : "`AUTOTB_DUT_INST.grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_288.grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_CI_LOOP_fu_564.hadd_16ns_16ns_16_5_full_dsp_1_U1386", "Parent" : "35"},
-	{"ID" : "104", "Level" : "3", "Path" : "`AUTOTB_DUT_INST.grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_288.grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_CI_LOOP_fu_564.hadd_16ns_16ns_16_5_full_dsp_1_U1387", "Parent" : "35"},
-	{"ID" : "105", "Level" : "3", "Path" : "`AUTOTB_DUT_INST.grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_288.grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_CI_LOOP_fu_564.hadd_16ns_16ns_16_5_full_dsp_1_U1388", "Parent" : "35"},
-	{"ID" : "106", "Level" : "3", "Path" : "`AUTOTB_DUT_INST.grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_288.grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_CI_LOOP_fu_564.hadd_16ns_16ns_16_5_full_dsp_1_U1389", "Parent" : "35"},
-	{"ID" : "107", "Level" : "3", "Path" : "`AUTOTB_DUT_INST.grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_288.grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_CI_LOOP_fu_564.hadd_16ns_16ns_16_5_full_dsp_1_U1390", "Parent" : "35"},
-	{"ID" : "108", "Level" : "3", "Path" : "`AUTOTB_DUT_INST.grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_288.grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_CI_LOOP_fu_564.hadd_16ns_16ns_16_5_full_dsp_1_U1391", "Parent" : "35"},
-	{"ID" : "109", "Level" : "3", "Path" : "`AUTOTB_DUT_INST.grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_288.grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_CI_LOOP_fu_564.hadd_16ns_16ns_16_5_full_dsp_1_U1392", "Parent" : "35"},
-	{"ID" : "110", "Level" : "3", "Path" : "`AUTOTB_DUT_INST.grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_288.grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_CI_LOOP_fu_564.hadd_16ns_16ns_16_5_full_dsp_1_U1393", "Parent" : "35"},
-	{"ID" : "111", "Level" : "3", "Path" : "`AUTOTB_DUT_INST.grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_288.grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_CI_LOOP_fu_564.hadd_16ns_16ns_16_5_full_dsp_1_U1394", "Parent" : "35"},
-	{"ID" : "112", "Level" : "3", "Path" : "`AUTOTB_DUT_INST.grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_288.grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_CI_LOOP_fu_564.hadd_16ns_16ns_16_5_full_dsp_1_U1395", "Parent" : "35"},
-	{"ID" : "113", "Level" : "3", "Path" : "`AUTOTB_DUT_INST.grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_288.grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_CI_LOOP_fu_564.hadd_16ns_16ns_16_5_full_dsp_1_U1396", "Parent" : "35"},
-	{"ID" : "114", "Level" : "3", "Path" : "`AUTOTB_DUT_INST.grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_288.grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_CI_LOOP_fu_564.hadd_16ns_16ns_16_5_full_dsp_1_U1397", "Parent" : "35"},
-	{"ID" : "115", "Level" : "3", "Path" : "`AUTOTB_DUT_INST.grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_288.grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_CI_LOOP_fu_564.hadd_16ns_16ns_16_5_full_dsp_1_U1398", "Parent" : "35"},
-	{"ID" : "116", "Level" : "3", "Path" : "`AUTOTB_DUT_INST.grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_288.grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_CI_LOOP_fu_564.hadd_16ns_16ns_16_5_full_dsp_1_U1399", "Parent" : "35"},
-	{"ID" : "117", "Level" : "3", "Path" : "`AUTOTB_DUT_INST.grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_288.grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_CI_LOOP_fu_564.hadd_16ns_16ns_16_5_full_dsp_1_U1400", "Parent" : "35"},
-	{"ID" : "118", "Level" : "3", "Path" : "`AUTOTB_DUT_INST.grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_288.grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_CI_LOOP_fu_564.hadd_16ns_16ns_16_5_full_dsp_1_U1401", "Parent" : "35"},
-	{"ID" : "119", "Level" : "3", "Path" : "`AUTOTB_DUT_INST.grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_288.grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_CI_LOOP_fu_564.hadd_16ns_16ns_16_5_full_dsp_1_U1402", "Parent" : "35"},
-	{"ID" : "120", "Level" : "3", "Path" : "`AUTOTB_DUT_INST.grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_288.grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_CI_LOOP_fu_564.hadd_16ns_16ns_16_5_full_dsp_1_U1419", "Parent" : "35"},
-	{"ID" : "121", "Level" : "3", "Path" : "`AUTOTB_DUT_INST.grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_288.grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_CI_LOOP_fu_564.hadd_16ns_16ns_16_5_full_dsp_1_U1420", "Parent" : "35"},
-	{"ID" : "122", "Level" : "3", "Path" : "`AUTOTB_DUT_INST.grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_288.grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_CI_LOOP_fu_564.hadd_16ns_16ns_16_5_full_dsp_1_U1421", "Parent" : "35"},
-	{"ID" : "123", "Level" : "3", "Path" : "`AUTOTB_DUT_INST.grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_288.grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_CI_LOOP_fu_564.hadd_16ns_16ns_16_5_full_dsp_1_U1422", "Parent" : "35"},
-	{"ID" : "124", "Level" : "3", "Path" : "`AUTOTB_DUT_INST.grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_288.grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_CI_LOOP_fu_564.hadd_16ns_16ns_16_5_full_dsp_1_U1423", "Parent" : "35"},
-	{"ID" : "125", "Level" : "3", "Path" : "`AUTOTB_DUT_INST.grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_288.grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_CI_LOOP_fu_564.hadd_16ns_16ns_16_5_full_dsp_1_U1424", "Parent" : "35"},
-	{"ID" : "126", "Level" : "3", "Path" : "`AUTOTB_DUT_INST.grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_288.grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_CI_LOOP_fu_564.hadd_16ns_16ns_16_5_full_dsp_1_U1425", "Parent" : "35"},
-	{"ID" : "127", "Level" : "3", "Path" : "`AUTOTB_DUT_INST.grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_288.grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_CI_LOOP_fu_564.hadd_16ns_16ns_16_5_full_dsp_1_U1426", "Parent" : "35"},
-	{"ID" : "128", "Level" : "3", "Path" : "`AUTOTB_DUT_INST.grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_288.grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_CI_LOOP_fu_564.hadd_16ns_16ns_16_5_full_dsp_1_U1427", "Parent" : "35"},
-	{"ID" : "129", "Level" : "3", "Path" : "`AUTOTB_DUT_INST.grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_288.grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_CI_LOOP_fu_564.hadd_16ns_16ns_16_5_full_dsp_1_U1428", "Parent" : "35"},
-	{"ID" : "130", "Level" : "3", "Path" : "`AUTOTB_DUT_INST.grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_288.grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_CI_LOOP_fu_564.hadd_16ns_16ns_16_5_full_dsp_1_U1429", "Parent" : "35"},
-	{"ID" : "131", "Level" : "3", "Path" : "`AUTOTB_DUT_INST.grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_288.grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_CI_LOOP_fu_564.hadd_16ns_16ns_16_5_full_dsp_1_U1430", "Parent" : "35"},
-	{"ID" : "132", "Level" : "3", "Path" : "`AUTOTB_DUT_INST.grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_288.grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_CI_LOOP_fu_564.hadd_16ns_16ns_16_5_full_dsp_1_U1431", "Parent" : "35"},
-	{"ID" : "133", "Level" : "3", "Path" : "`AUTOTB_DUT_INST.grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_288.grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_CI_LOOP_fu_564.hadd_16ns_16ns_16_5_full_dsp_1_U1432", "Parent" : "35"},
-	{"ID" : "134", "Level" : "3", "Path" : "`AUTOTB_DUT_INST.grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_288.grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_CI_LOOP_fu_564.hadd_16ns_16ns_16_5_full_dsp_1_U1433", "Parent" : "35"},
-	{"ID" : "135", "Level" : "3", "Path" : "`AUTOTB_DUT_INST.grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_288.grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_CI_LOOP_fu_564.hadd_16ns_16ns_16_5_full_dsp_1_U1434", "Parent" : "35"},
-	{"ID" : "136", "Level" : "3", "Path" : "`AUTOTB_DUT_INST.grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_288.grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_CI_LOOP_fu_564.hadd_16ns_16ns_16_5_full_dsp_1_U1435", "Parent" : "35"},
-	{"ID" : "137", "Level" : "3", "Path" : "`AUTOTB_DUT_INST.grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_288.grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_CI_LOOP_fu_564.hadd_16ns_16ns_16_5_full_dsp_1_U1436", "Parent" : "35"},
-	{"ID" : "138", "Level" : "3", "Path" : "`AUTOTB_DUT_INST.grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_288.grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_CI_LOOP_fu_564.hadd_16ns_16ns_16_5_full_dsp_1_U1437", "Parent" : "35"},
-	{"ID" : "139", "Level" : "3", "Path" : "`AUTOTB_DUT_INST.grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_288.grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_CI_LOOP_fu_564.hadd_16ns_16ns_16_5_full_dsp_1_U1438", "Parent" : "35"},
-	{"ID" : "140", "Level" : "3", "Path" : "`AUTOTB_DUT_INST.grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_288.grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_CI_LOOP_fu_564.hadd_16ns_16ns_16_5_full_dsp_1_U1439", "Parent" : "35"},
-	{"ID" : "141", "Level" : "3", "Path" : "`AUTOTB_DUT_INST.grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_288.grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_CI_LOOP_fu_564.hadd_16ns_16ns_16_5_full_dsp_1_U1440", "Parent" : "35"},
-	{"ID" : "142", "Level" : "3", "Path" : "`AUTOTB_DUT_INST.grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_288.grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_CI_LOOP_fu_564.hadd_16ns_16ns_16_5_full_dsp_1_U1441", "Parent" : "35"},
-	{"ID" : "143", "Level" : "3", "Path" : "`AUTOTB_DUT_INST.grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_288.grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_CI_LOOP_fu_564.hadd_16ns_16ns_16_5_full_dsp_1_U1442", "Parent" : "35"},
-	{"ID" : "144", "Level" : "3", "Path" : "`AUTOTB_DUT_INST.grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_288.grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_CI_LOOP_fu_564.hadd_16ns_16ns_16_5_full_dsp_1_U1443", "Parent" : "35"},
-	{"ID" : "145", "Level" : "3", "Path" : "`AUTOTB_DUT_INST.grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_288.grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_CI_LOOP_fu_564.hadd_16ns_16ns_16_5_full_dsp_1_U1444", "Parent" : "35"},
-	{"ID" : "146", "Level" : "3", "Path" : "`AUTOTB_DUT_INST.grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_288.grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_CI_LOOP_fu_564.hadd_16ns_16ns_16_5_full_dsp_1_U1445", "Parent" : "35"},
-	{"ID" : "147", "Level" : "3", "Path" : "`AUTOTB_DUT_INST.grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_288.grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_CI_LOOP_fu_564.hadd_16ns_16ns_16_5_full_dsp_1_U1446", "Parent" : "35"},
-	{"ID" : "148", "Level" : "3", "Path" : "`AUTOTB_DUT_INST.grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_288.grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_CI_LOOP_fu_564.hadd_16ns_16ns_16_5_full_dsp_1_U1447", "Parent" : "35"},
-	{"ID" : "149", "Level" : "3", "Path" : "`AUTOTB_DUT_INST.grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_288.grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_CI_LOOP_fu_564.hadd_16ns_16ns_16_5_full_dsp_1_U1448", "Parent" : "35"},
-	{"ID" : "150", "Level" : "3", "Path" : "`AUTOTB_DUT_INST.grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_288.grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_CI_LOOP_fu_564.hadd_16ns_16ns_16_5_full_dsp_1_U1449", "Parent" : "35"},
-	{"ID" : "151", "Level" : "3", "Path" : "`AUTOTB_DUT_INST.grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_288.grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_CI_LOOP_fu_564.hadd_16ns_16ns_16_5_full_dsp_1_U1450", "Parent" : "35"},
-	{"ID" : "152", "Level" : "3", "Path" : "`AUTOTB_DUT_INST.grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_288.grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_CI_LOOP_fu_564.hadd_16ns_16ns_16_5_full_dsp_1_U1451", "Parent" : "35"},
-	{"ID" : "153", "Level" : "3", "Path" : "`AUTOTB_DUT_INST.grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_288.grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_CI_LOOP_fu_564.hadd_16ns_16ns_16_5_full_dsp_1_U1452", "Parent" : "35"},
-	{"ID" : "154", "Level" : "3", "Path" : "`AUTOTB_DUT_INST.grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_288.grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_CI_LOOP_fu_564.hadd_16ns_16ns_16_5_full_dsp_1_U1453", "Parent" : "35"},
-	{"ID" : "155", "Level" : "3", "Path" : "`AUTOTB_DUT_INST.grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_288.grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_CI_LOOP_fu_564.hadd_16ns_16ns_16_5_full_dsp_1_U1454", "Parent" : "35"},
-	{"ID" : "156", "Level" : "3", "Path" : "`AUTOTB_DUT_INST.grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_288.grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_CI_LOOP_fu_564.hmul_16ns_16ns_16_4_max_dsp_1_U1487", "Parent" : "35"},
-	{"ID" : "157", "Level" : "3", "Path" : "`AUTOTB_DUT_INST.grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_288.grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_CI_LOOP_fu_564.hmul_16ns_16ns_16_4_max_dsp_1_U1488", "Parent" : "35"},
-	{"ID" : "158", "Level" : "3", "Path" : "`AUTOTB_DUT_INST.grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_288.grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_CI_LOOP_fu_564.hmul_16ns_16ns_16_4_max_dsp_1_U1489", "Parent" : "35"},
-	{"ID" : "159", "Level" : "3", "Path" : "`AUTOTB_DUT_INST.grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_288.grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_CI_LOOP_fu_564.hmul_16ns_16ns_16_4_max_dsp_1_U1490", "Parent" : "35"},
-	{"ID" : "160", "Level" : "3", "Path" : "`AUTOTB_DUT_INST.grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_288.grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_CI_LOOP_fu_564.hmul_16ns_16ns_16_4_max_dsp_1_U1491", "Parent" : "35"},
-	{"ID" : "161", "Level" : "3", "Path" : "`AUTOTB_DUT_INST.grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_288.grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_CI_LOOP_fu_564.hmul_16ns_16ns_16_4_max_dsp_1_U1492", "Parent" : "35"},
-	{"ID" : "162", "Level" : "3", "Path" : "`AUTOTB_DUT_INST.grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_288.grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_CI_LOOP_fu_564.hmul_16ns_16ns_16_4_max_dsp_1_U1493", "Parent" : "35"},
-	{"ID" : "163", "Level" : "3", "Path" : "`AUTOTB_DUT_INST.grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_288.grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_CI_LOOP_fu_564.hmul_16ns_16ns_16_4_max_dsp_1_U1494", "Parent" : "35"},
-	{"ID" : "164", "Level" : "3", "Path" : "`AUTOTB_DUT_INST.grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_288.grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_CI_LOOP_fu_564.hmul_16ns_16ns_16_4_max_dsp_1_U1495", "Parent" : "35"},
-	{"ID" : "165", "Level" : "3", "Path" : "`AUTOTB_DUT_INST.grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_288.grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_CI_LOOP_fu_564.hmul_16ns_16ns_16_4_max_dsp_1_U1496", "Parent" : "35"},
-	{"ID" : "166", "Level" : "3", "Path" : "`AUTOTB_DUT_INST.grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_288.grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_CI_LOOP_fu_564.hmul_16ns_16ns_16_4_max_dsp_1_U1497", "Parent" : "35"},
-	{"ID" : "167", "Level" : "3", "Path" : "`AUTOTB_DUT_INST.grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_288.grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_CI_LOOP_fu_564.hmul_16ns_16ns_16_4_max_dsp_1_U1498", "Parent" : "35"},
-	{"ID" : "168", "Level" : "3", "Path" : "`AUTOTB_DUT_INST.grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_288.grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_CI_LOOP_fu_564.hmul_16ns_16ns_16_4_max_dsp_1_U1499", "Parent" : "35"},
-	{"ID" : "169", "Level" : "3", "Path" : "`AUTOTB_DUT_INST.grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_288.grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_CI_LOOP_fu_564.hmul_16ns_16ns_16_4_max_dsp_1_U1500", "Parent" : "35"},
-	{"ID" : "170", "Level" : "3", "Path" : "`AUTOTB_DUT_INST.grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_288.grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_CI_LOOP_fu_564.hmul_16ns_16ns_16_4_max_dsp_1_U1501", "Parent" : "35"},
-	{"ID" : "171", "Level" : "3", "Path" : "`AUTOTB_DUT_INST.grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_288.grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_CI_LOOP_fu_564.hmul_16ns_16ns_16_4_max_dsp_1_U1502", "Parent" : "35"},
-	{"ID" : "172", "Level" : "3", "Path" : "`AUTOTB_DUT_INST.grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_288.grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_CI_LOOP_fu_564.hmul_16ns_16ns_16_4_max_dsp_1_U1503", "Parent" : "35"},
-	{"ID" : "173", "Level" : "3", "Path" : "`AUTOTB_DUT_INST.grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_288.grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_CI_LOOP_fu_564.hmul_16ns_16ns_16_4_max_dsp_1_U1504", "Parent" : "35"},
-	{"ID" : "174", "Level" : "3", "Path" : "`AUTOTB_DUT_INST.grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_288.grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_CI_LOOP_fu_564.hmul_16ns_16ns_16_4_max_dsp_1_U1505", "Parent" : "35"},
-	{"ID" : "175", "Level" : "3", "Path" : "`AUTOTB_DUT_INST.grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_288.grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_CI_LOOP_fu_564.hmul_16ns_16ns_16_4_max_dsp_1_U1506", "Parent" : "35"},
-	{"ID" : "176", "Level" : "3", "Path" : "`AUTOTB_DUT_INST.grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_288.grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_CI_LOOP_fu_564.hmul_16ns_16ns_16_4_max_dsp_1_U1507", "Parent" : "35"},
-	{"ID" : "177", "Level" : "3", "Path" : "`AUTOTB_DUT_INST.grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_288.grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_CI_LOOP_fu_564.hmul_16ns_16ns_16_4_max_dsp_1_U1508", "Parent" : "35"},
-	{"ID" : "178", "Level" : "3", "Path" : "`AUTOTB_DUT_INST.grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_288.grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_CI_LOOP_fu_564.hmul_16ns_16ns_16_4_max_dsp_1_U1509", "Parent" : "35"},
-	{"ID" : "179", "Level" : "3", "Path" : "`AUTOTB_DUT_INST.grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_288.grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_CI_LOOP_fu_564.hmul_16ns_16ns_16_4_max_dsp_1_U1510", "Parent" : "35"},
-	{"ID" : "180", "Level" : "3", "Path" : "`AUTOTB_DUT_INST.grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_288.grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_CI_LOOP_fu_564.hmul_16ns_16ns_16_4_max_dsp_1_U1511", "Parent" : "35"},
-	{"ID" : "181", "Level" : "3", "Path" : "`AUTOTB_DUT_INST.grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_288.grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_CI_LOOP_fu_564.hmul_16ns_16ns_16_4_max_dsp_1_U1512", "Parent" : "35"},
-	{"ID" : "182", "Level" : "3", "Path" : "`AUTOTB_DUT_INST.grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_288.grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_CI_LOOP_fu_564.hmul_16ns_16ns_16_4_max_dsp_1_U1513", "Parent" : "35"},
-	{"ID" : "183", "Level" : "3", "Path" : "`AUTOTB_DUT_INST.grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_288.grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_CI_LOOP_fu_564.hmul_16ns_16ns_16_4_max_dsp_1_U1514", "Parent" : "35"},
-	{"ID" : "184", "Level" : "3", "Path" : "`AUTOTB_DUT_INST.grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_288.grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_CI_LOOP_fu_564.hmul_16ns_16ns_16_4_max_dsp_1_U1515", "Parent" : "35"},
-	{"ID" : "185", "Level" : "3", "Path" : "`AUTOTB_DUT_INST.grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_288.grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_CI_LOOP_fu_564.hmul_16ns_16ns_16_4_max_dsp_1_U1516", "Parent" : "35"},
-	{"ID" : "186", "Level" : "3", "Path" : "`AUTOTB_DUT_INST.grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_288.grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_CI_LOOP_fu_564.hmul_16ns_16ns_16_4_max_dsp_1_U1517", "Parent" : "35"},
-	{"ID" : "187", "Level" : "3", "Path" : "`AUTOTB_DUT_INST.grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_288.grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_CI_LOOP_fu_564.hmul_16ns_16ns_16_4_max_dsp_1_U1518", "Parent" : "35"},
-	{"ID" : "188", "Level" : "3", "Path" : "`AUTOTB_DUT_INST.grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_288.grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_CI_LOOP_fu_564.hmul_16ns_16ns_16_4_max_dsp_1_U1519", "Parent" : "35"},
-	{"ID" : "189", "Level" : "3", "Path" : "`AUTOTB_DUT_INST.grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_288.grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_CI_LOOP_fu_564.hmul_16ns_16ns_16_4_max_dsp_1_U1520", "Parent" : "35"},
-	{"ID" : "190", "Level" : "3", "Path" : "`AUTOTB_DUT_INST.grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_288.grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_CI_LOOP_fu_564.hmul_16ns_16ns_16_4_max_dsp_1_U1521", "Parent" : "35"},
-	{"ID" : "191", "Level" : "3", "Path" : "`AUTOTB_DUT_INST.grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_288.grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_CI_LOOP_fu_564.hmul_16ns_16ns_16_4_max_dsp_1_U1522", "Parent" : "35"},
-	{"ID" : "192", "Level" : "3", "Path" : "`AUTOTB_DUT_INST.grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_288.grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_CI_LOOP_fu_564.hmul_16ns_16ns_16_4_max_dsp_1_U1523", "Parent" : "35"},
-	{"ID" : "193", "Level" : "3", "Path" : "`AUTOTB_DUT_INST.grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_288.grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_CI_LOOP_fu_564.hmul_16ns_16ns_16_4_max_dsp_1_U1524", "Parent" : "35"},
-	{"ID" : "194", "Level" : "3", "Path" : "`AUTOTB_DUT_INST.grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_288.grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_CI_LOOP_fu_564.hmul_16ns_16ns_16_4_max_dsp_1_U1525", "Parent" : "35"},
-	{"ID" : "195", "Level" : "3", "Path" : "`AUTOTB_DUT_INST.grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_288.grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_CI_LOOP_fu_564.hmul_16ns_16ns_16_4_max_dsp_1_U1526", "Parent" : "35"},
-	{"ID" : "196", "Level" : "3", "Path" : "`AUTOTB_DUT_INST.grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_288.grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_CI_LOOP_fu_564.hmul_16ns_16ns_16_4_max_dsp_1_U1527", "Parent" : "35"},
-	{"ID" : "197", "Level" : "3", "Path" : "`AUTOTB_DUT_INST.grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_288.grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_CI_LOOP_fu_564.hmul_16ns_16ns_16_4_max_dsp_1_U1528", "Parent" : "35"},
-	{"ID" : "198", "Level" : "3", "Path" : "`AUTOTB_DUT_INST.grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_288.grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_CI_LOOP_fu_564.hmul_16ns_16ns_16_4_max_dsp_1_U1529", "Parent" : "35"},
-	{"ID" : "199", "Level" : "3", "Path" : "`AUTOTB_DUT_INST.grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_288.grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_CI_LOOP_fu_564.hmul_16ns_16ns_16_4_max_dsp_1_U1530", "Parent" : "35"},
-	{"ID" : "200", "Level" : "3", "Path" : "`AUTOTB_DUT_INST.grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_288.grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_CI_LOOP_fu_564.hmul_16ns_16ns_16_4_max_dsp_1_U1531", "Parent" : "35"},
-	{"ID" : "201", "Level" : "3", "Path" : "`AUTOTB_DUT_INST.grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_288.grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_CI_LOOP_fu_564.hmul_16ns_16ns_16_4_max_dsp_1_U1532", "Parent" : "35"},
-	{"ID" : "202", "Level" : "3", "Path" : "`AUTOTB_DUT_INST.grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_288.grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_CI_LOOP_fu_564.hmul_16ns_16ns_16_4_max_dsp_1_U1533", "Parent" : "35"},
-	{"ID" : "203", "Level" : "3", "Path" : "`AUTOTB_DUT_INST.grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_288.grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_CI_LOOP_fu_564.hmul_16ns_16ns_16_4_max_dsp_1_U1534", "Parent" : "35"},
-	{"ID" : "204", "Level" : "3", "Path" : "`AUTOTB_DUT_INST.grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_288.grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_CI_LOOP_fu_564.hmul_16ns_16ns_16_4_max_dsp_1_U1535", "Parent" : "35"},
-	{"ID" : "205", "Level" : "3", "Path" : "`AUTOTB_DUT_INST.grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_288.grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_CI_LOOP_fu_564.hmul_16ns_16ns_16_4_max_dsp_1_U1536", "Parent" : "35"},
-	{"ID" : "206", "Level" : "3", "Path" : "`AUTOTB_DUT_INST.grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_288.grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_CI_LOOP_fu_564.hmul_16ns_16ns_16_4_max_dsp_1_U1537", "Parent" : "35"},
-	{"ID" : "207", "Level" : "3", "Path" : "`AUTOTB_DUT_INST.grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_288.grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_CI_LOOP_fu_564.hmul_16ns_16ns_16_4_max_dsp_1_U1538", "Parent" : "35"},
-	{"ID" : "208", "Level" : "3", "Path" : "`AUTOTB_DUT_INST.grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_288.grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_CI_LOOP_fu_564.hmul_16ns_16ns_16_4_max_dsp_1_U1539", "Parent" : "35"},
-	{"ID" : "209", "Level" : "3", "Path" : "`AUTOTB_DUT_INST.grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_288.grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_CI_LOOP_fu_564.hmul_16ns_16ns_16_4_max_dsp_1_U1540", "Parent" : "35"},
-	{"ID" : "210", "Level" : "3", "Path" : "`AUTOTB_DUT_INST.grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_288.grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_CI_LOOP_fu_564.hmul_16ns_16ns_16_4_max_dsp_1_U1541", "Parent" : "35"},
-	{"ID" : "211", "Level" : "3", "Path" : "`AUTOTB_DUT_INST.grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_288.grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_CI_LOOP_fu_564.hmul_16ns_16ns_16_4_max_dsp_1_U1542", "Parent" : "35"},
-	{"ID" : "212", "Level" : "3", "Path" : "`AUTOTB_DUT_INST.grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_288.grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_CI_LOOP_fu_564.hmul_16ns_16ns_16_4_max_dsp_1_U1543", "Parent" : "35"},
-	{"ID" : "213", "Level" : "3", "Path" : "`AUTOTB_DUT_INST.grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_288.grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_CI_LOOP_fu_564.hmul_16ns_16ns_16_4_max_dsp_1_U1544", "Parent" : "35"},
-	{"ID" : "214", "Level" : "3", "Path" : "`AUTOTB_DUT_INST.grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_288.grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_CI_LOOP_fu_564.hmul_16ns_16ns_16_4_max_dsp_1_U1545", "Parent" : "35"},
-	{"ID" : "215", "Level" : "3", "Path" : "`AUTOTB_DUT_INST.grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_288.grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_CI_LOOP_fu_564.hmul_16ns_16ns_16_4_max_dsp_1_U1546", "Parent" : "35"},
-	{"ID" : "216", "Level" : "3", "Path" : "`AUTOTB_DUT_INST.grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_288.grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_CI_LOOP_fu_564.hmul_16ns_16ns_16_4_max_dsp_1_U1547", "Parent" : "35"},
-	{"ID" : "217", "Level" : "3", "Path" : "`AUTOTB_DUT_INST.grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_288.grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_CI_LOOP_fu_564.hmul_16ns_16ns_16_4_max_dsp_1_U1548", "Parent" : "35"},
-	{"ID" : "218", "Level" : "3", "Path" : "`AUTOTB_DUT_INST.grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_288.grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_CI_LOOP_fu_564.hmul_16ns_16ns_16_4_max_dsp_1_U1549", "Parent" : "35"},
-	{"ID" : "219", "Level" : "3", "Path" : "`AUTOTB_DUT_INST.grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_288.grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_CI_LOOP_fu_564.hmul_16ns_16ns_16_4_max_dsp_1_U1550", "Parent" : "35"},
-	{"ID" : "220", "Level" : "3", "Path" : "`AUTOTB_DUT_INST.grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_288.grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_CI_LOOP_fu_564.hmul_16ns_16ns_16_4_max_dsp_1_U1551", "Parent" : "35"},
-	{"ID" : "221", "Level" : "3", "Path" : "`AUTOTB_DUT_INST.grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_288.grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_CI_LOOP_fu_564.hmul_16ns_16ns_16_4_max_dsp_1_U1552", "Parent" : "35"},
-	{"ID" : "222", "Level" : "3", "Path" : "`AUTOTB_DUT_INST.grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_288.grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_CI_LOOP_fu_564.hmul_16ns_16ns_16_4_max_dsp_1_U1553", "Parent" : "35"},
-	{"ID" : "223", "Level" : "3", "Path" : "`AUTOTB_DUT_INST.grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_288.grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_CI_LOOP_fu_564.hmul_16ns_16ns_16_4_max_dsp_1_U1554", "Parent" : "35"},
-	{"ID" : "224", "Level" : "3", "Path" : "`AUTOTB_DUT_INST.grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_288.grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_CI_LOOP_fu_564.hmul_16ns_16ns_16_4_max_dsp_1_U1555", "Parent" : "35"},
-	{"ID" : "225", "Level" : "3", "Path" : "`AUTOTB_DUT_INST.grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_288.grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_CI_LOOP_fu_564.hmul_16ns_16ns_16_4_max_dsp_1_U1556", "Parent" : "35"},
-	{"ID" : "226", "Level" : "3", "Path" : "`AUTOTB_DUT_INST.grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_288.grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_CI_LOOP_fu_564.hmul_16ns_16ns_16_4_max_dsp_1_U1557", "Parent" : "35"},
-	{"ID" : "227", "Level" : "3", "Path" : "`AUTOTB_DUT_INST.grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_288.grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_CI_LOOP_fu_564.hmul_16ns_16ns_16_4_max_dsp_1_U1558", "Parent" : "35"},
-	{"ID" : "228", "Level" : "3", "Path" : "`AUTOTB_DUT_INST.grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_288.grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_CI_LOOP_fu_564.hmul_16ns_16ns_16_4_max_dsp_1_U1559", "Parent" : "35"},
-	{"ID" : "229", "Level" : "3", "Path" : "`AUTOTB_DUT_INST.grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_288.grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_CI_LOOP_fu_564.hmul_16ns_16ns_16_4_max_dsp_1_U1560", "Parent" : "35"},
-	{"ID" : "230", "Level" : "3", "Path" : "`AUTOTB_DUT_INST.grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_288.grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_CI_LOOP_fu_564.hmul_16ns_16ns_16_4_max_dsp_1_U1561", "Parent" : "35"},
-	{"ID" : "231", "Level" : "3", "Path" : "`AUTOTB_DUT_INST.grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_288.grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_CI_LOOP_fu_564.hmul_16ns_16ns_16_4_max_dsp_1_U1562", "Parent" : "35"},
-	{"ID" : "232", "Level" : "3", "Path" : "`AUTOTB_DUT_INST.grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_288.grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_CI_LOOP_fu_564.hmul_16ns_16ns_16_4_max_dsp_1_U1563", "Parent" : "35"},
-	{"ID" : "233", "Level" : "3", "Path" : "`AUTOTB_DUT_INST.grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_288.grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_CI_LOOP_fu_564.hmul_16ns_16ns_16_4_max_dsp_1_U1564", "Parent" : "35"},
-	{"ID" : "234", "Level" : "3", "Path" : "`AUTOTB_DUT_INST.grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_288.grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_CI_LOOP_fu_564.hmul_16ns_16ns_16_4_max_dsp_1_U1565", "Parent" : "35"},
-	{"ID" : "235", "Level" : "3", "Path" : "`AUTOTB_DUT_INST.grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_288.grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_CI_LOOP_fu_564.hmul_16ns_16ns_16_4_max_dsp_1_U1566", "Parent" : "35"},
-	{"ID" : "236", "Level" : "3", "Path" : "`AUTOTB_DUT_INST.grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_288.grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_CI_LOOP_fu_564.hmul_16ns_16ns_16_4_max_dsp_1_U1567", "Parent" : "35"},
-	{"ID" : "237", "Level" : "3", "Path" : "`AUTOTB_DUT_INST.grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_288.grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_CI_LOOP_fu_564.hmul_16ns_16ns_16_4_max_dsp_1_U1568", "Parent" : "35"},
-	{"ID" : "238", "Level" : "3", "Path" : "`AUTOTB_DUT_INST.grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_288.grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_CI_LOOP_fu_564.hmul_16ns_16ns_16_4_max_dsp_1_U1569", "Parent" : "35"},
-	{"ID" : "239", "Level" : "3", "Path" : "`AUTOTB_DUT_INST.grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_288.grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_CI_LOOP_fu_564.hmul_16ns_16ns_16_4_max_dsp_1_U1570", "Parent" : "35"},
-	{"ID" : "240", "Level" : "3", "Path" : "`AUTOTB_DUT_INST.grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_288.grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_CI_LOOP_fu_564.hmul_16ns_16ns_16_4_max_dsp_1_U1571", "Parent" : "35"},
-	{"ID" : "241", "Level" : "3", "Path" : "`AUTOTB_DUT_INST.grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_288.grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_CI_LOOP_fu_564.hmul_16ns_16ns_16_4_max_dsp_1_U1572", "Parent" : "35"},
-	{"ID" : "242", "Level" : "3", "Path" : "`AUTOTB_DUT_INST.grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_288.grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_CI_LOOP_fu_564.hmul_16ns_16ns_16_4_max_dsp_1_U1573", "Parent" : "35"},
-	{"ID" : "243", "Level" : "3", "Path" : "`AUTOTB_DUT_INST.grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_288.grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_CI_LOOP_fu_564.hmul_16ns_16ns_16_4_max_dsp_1_U1574", "Parent" : "35"},
-	{"ID" : "244", "Level" : "3", "Path" : "`AUTOTB_DUT_INST.grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_288.grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_CI_LOOP_fu_564.hmul_16ns_16ns_16_4_max_dsp_1_U1575", "Parent" : "35"},
-	{"ID" : "245", "Level" : "3", "Path" : "`AUTOTB_DUT_INST.grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_288.grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_CI_LOOP_fu_564.hmul_16ns_16ns_16_4_max_dsp_1_U1576", "Parent" : "35"},
-	{"ID" : "246", "Level" : "3", "Path" : "`AUTOTB_DUT_INST.grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_288.grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_CI_LOOP_fu_564.hmul_16ns_16ns_16_4_max_dsp_1_U1577", "Parent" : "35"},
-	{"ID" : "247", "Level" : "3", "Path" : "`AUTOTB_DUT_INST.grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_288.grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_CI_LOOP_fu_564.hmul_16ns_16ns_16_4_max_dsp_1_U1578", "Parent" : "35"},
-	{"ID" : "248", "Level" : "3", "Path" : "`AUTOTB_DUT_INST.grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_288.grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_CI_LOOP_fu_564.hmul_16ns_16ns_16_4_max_dsp_1_U1579", "Parent" : "35"},
-	{"ID" : "249", "Level" : "3", "Path" : "`AUTOTB_DUT_INST.grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_288.grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_CI_LOOP_fu_564.hmul_16ns_16ns_16_4_max_dsp_1_U1580", "Parent" : "35"},
-	{"ID" : "250", "Level" : "3", "Path" : "`AUTOTB_DUT_INST.grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_288.grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_CI_LOOP_fu_564.hmul_16ns_16ns_16_4_max_dsp_1_U1581", "Parent" : "35"},
-	{"ID" : "251", "Level" : "3", "Path" : "`AUTOTB_DUT_INST.grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_288.grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_CI_LOOP_fu_564.hmul_16ns_16ns_16_4_max_dsp_1_U1582", "Parent" : "35"},
-	{"ID" : "252", "Level" : "3", "Path" : "`AUTOTB_DUT_INST.grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_288.grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_CI_LOOP_fu_564.sparsemux_9_2_16_1_1_U1583", "Parent" : "35"},
-	{"ID" : "253", "Level" : "3", "Path" : "`AUTOTB_DUT_INST.grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_288.grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_CI_LOOP_fu_564.sparsemux_9_2_16_1_1_U1584", "Parent" : "35"},
-	{"ID" : "254", "Level" : "3", "Path" : "`AUTOTB_DUT_INST.grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_288.grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_CI_LOOP_fu_564.sparsemux_9_2_16_1_1_U1585", "Parent" : "35"},
-	{"ID" : "255", "Level" : "3", "Path" : "`AUTOTB_DUT_INST.grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_288.grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_CI_LOOP_fu_564.sparsemux_9_2_16_1_1_U1586", "Parent" : "35"},
-	{"ID" : "256", "Level" : "3", "Path" : "`AUTOTB_DUT_INST.grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_288.grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_CI_LOOP_fu_564.sparsemux_9_2_16_1_1_U1587", "Parent" : "35"},
-	{"ID" : "257", "Level" : "3", "Path" : "`AUTOTB_DUT_INST.grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_288.grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_CI_LOOP_fu_564.sparsemux_9_2_16_1_1_U1588", "Parent" : "35"},
-	{"ID" : "258", "Level" : "3", "Path" : "`AUTOTB_DUT_INST.grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_288.grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_CI_LOOP_fu_564.sparsemux_9_2_16_1_1_U1589", "Parent" : "35"},
-	{"ID" : "259", "Level" : "3", "Path" : "`AUTOTB_DUT_INST.grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_288.grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_CI_LOOP_fu_564.sparsemux_9_2_16_1_1_U1590", "Parent" : "35"},
-	{"ID" : "260", "Level" : "3", "Path" : "`AUTOTB_DUT_INST.grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_288.grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_CI_LOOP_fu_564.flow_control_loop_pipe_sequential_init_U", "Parent" : "35"},
-	{"ID" : "261", "Level" : "1", "Path" : "`AUTOTB_DUT_INST.grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_BIAS_STATS_fu_330", "Parent" : "0", "Child" : ["262", "263", "264", "265"],
-		"CDFG" : "UpConv_Fused_Row_8_32_32_480_240_Pipeline_BIAS_STATS",
-		"Protocol" : "ap_ctrl_hs",
-		"ControlExist" : "1", "ap_start" : "1", "ap_ready" : "1", "ap_done" : "1", "ap_continue" : "0", "ap_idle" : "1", "real_start" : "0",
-		"Pipeline" : "None", "UnalignedPipeline" : "0", "RewindPipeline" : "0", "ProcessNetwork" : "0",
-		"II" : "0",
-		"VariableLatency" : "1", "ExactLatency" : "-1", "EstimateLatencyMin" : "1699", "EstimateLatencyMax" : "1699",
-		"Combinational" : "0",
-		"Datapath" : "0",
-		"ClockEnable" : "0",
-		"HasSubDataflow" : "0",
-		"InDataflowNetwork" : "0",
-		"HasNonBlockingOperation" : "0",
-		"IsBlackBox" : "0",
-		"Port" : [
-			{"Name" : "mul_ln246", "Type" : "None", "Direction" : "I"},
-			{"Name" : "b_buf", "Type" : "Memory", "Direction" : "I"},
-			{"Name" : "sumsq_out", "Type" : "Vld", "Direction" : "O"},
-			{"Name" : "sum_out", "Type" : "Vld", "Direction" : "O"},
+			{"Name" : "zext_ln138", "Type" : "None", "Direction" : "I"},
+			{"Name" : "tile", "Type" : "None", "Direction" : "I"},
+			{"Name" : "x_buf", "Type" : "Memory", "Direction" : "I"},
 			{"Name" : "void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_19", "Type" : "Memory", "Direction" : "IO"},
 			{"Name" : "void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_18", "Type" : "Memory", "Direction" : "IO"},
 			{"Name" : "void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_17", "Type" : "Memory", "Direction" : "IO"},
@@ -991,19 +746,272 @@ set RtlHierarchyInfo {[
 			{"Name" : "p_ZZ16UpConv_Fused_RowILi8ELi32ELi32ELi480ELi240EEvP7ap_uintILi256EEPKS1_S4_S4_S4_1", "Type" : "Memory", "Direction" : "IO"},
 			{"Name" : "p_ZZ16UpConv_Fused_RowILi8ELi32ELi32ELi480ELi240EEvP7ap_uintILi256EEPKS1_S4_S4_S4", "Type" : "Memory", "Direction" : "IO"}],
 		"Loop" : [
-			{"Name" : "BIAS_STATS", "PipelineType" : "UPC",
-				"LoopDec" : {"FSMBitwidth" : "7", "FirstState" : "ap_ST_fsm_pp0_stage0", "FirstStateIter" : "ap_enable_reg_pp0_iter0", "FirstStateBlock" : "ap_block_pp0_stage0_subdone", "LastState" : "ap_ST_fsm_pp0_stage3", "LastStateIter" : "ap_enable_reg_pp0_iter3", "LastStateBlock" : "ap_block_pp0_stage3_subdone", "QuitState" : "ap_ST_fsm_pp0_stage3", "QuitStateIter" : "ap_enable_reg_pp0_iter3", "QuitStateBlock" : "ap_block_pp0_stage3_subdone", "OneDepthLoop" : "0", "has_ap_ctrl" : "1", "has_continue" : "0"}}]},
-	{"ID" : "262", "Level" : "2", "Path" : "`AUTOTB_DUT_INST.grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_BIAS_STATS_fu_330.fadd_32ns_32ns_32_8_no_dsp_1_U1710", "Parent" : "261"},
-	{"ID" : "263", "Level" : "2", "Path" : "`AUTOTB_DUT_INST.grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_BIAS_STATS_fu_330.partselect_16ns_256ns_32ns_16_1_1_U1714", "Parent" : "261"},
-	{"ID" : "264", "Level" : "2", "Path" : "`AUTOTB_DUT_INST.grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_BIAS_STATS_fu_330.sparsemux_33_4_16_1_1_U1715", "Parent" : "261"},
-	{"ID" : "265", "Level" : "2", "Path" : "`AUTOTB_DUT_INST.grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_BIAS_STATS_fu_330.flow_control_loop_pipe_sequential_init_U", "Parent" : "261"},
-	{"ID" : "266", "Level" : "1", "Path" : "`AUTOTB_DUT_INST.grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_NORM_WRITE_fu_370", "Parent" : "0", "Child" : ["267", "268", "269", "270", "271", "272", "273", "274", "275", "276", "277", "278", "279", "280", "281", "282", "283", "284", "285", "286", "287", "288", "289", "290", "291", "292", "293", "294", "295", "296", "297", "298", "299"],
-		"CDFG" : "UpConv_Fused_Row_8_32_32_480_240_Pipeline_NORM_WRITE",
+			{"Name" : "KW_LOOP_FLAT_LOOP", "PipelineType" : "UPC",
+				"LoopDec" : {"FSMBitwidth" : "1", "FirstState" : "ap_ST_fsm_pp0_stage0", "FirstStateIter" : "ap_enable_reg_pp0_iter0", "FirstStateBlock" : "ap_block_pp0_stage0_subdone", "LastState" : "ap_ST_fsm_pp0_stage0", "LastStateIter" : "ap_enable_reg_pp0_iter115", "LastStateBlock" : "ap_block_pp0_stage0_subdone", "QuitState" : "ap_ST_fsm_pp0_stage0", "QuitStateIter" : "ap_enable_reg_pp0_iter115", "QuitStateBlock" : "ap_block_pp0_stage0_subdone", "OneDepthLoop" : "0", "has_ap_ctrl" : "1", "has_continue" : "0"}}]},
+	{"ID" : "38", "Level" : "3", "Path" : "`AUTOTB_DUT_INST.grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_227.grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_KW_LOOP_FLAT_LOOP_fu_201.hadd_16ns_16ns_16_5_full_dsp_1_U1412", "Parent" : "37"},
+	{"ID" : "39", "Level" : "3", "Path" : "`AUTOTB_DUT_INST.grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_227.grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_KW_LOOP_FLAT_LOOP_fu_201.hadd_16ns_16ns_16_5_full_dsp_1_U1413", "Parent" : "37"},
+	{"ID" : "40", "Level" : "3", "Path" : "`AUTOTB_DUT_INST.grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_227.grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_KW_LOOP_FLAT_LOOP_fu_201.hadd_16ns_16ns_16_5_full_dsp_1_U1414", "Parent" : "37"},
+	{"ID" : "41", "Level" : "3", "Path" : "`AUTOTB_DUT_INST.grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_227.grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_KW_LOOP_FLAT_LOOP_fu_201.hadd_16ns_16ns_16_5_full_dsp_1_U1415", "Parent" : "37"},
+	{"ID" : "42", "Level" : "3", "Path" : "`AUTOTB_DUT_INST.grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_227.grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_KW_LOOP_FLAT_LOOP_fu_201.hadd_16ns_16ns_16_5_full_dsp_1_U1416", "Parent" : "37"},
+	{"ID" : "43", "Level" : "3", "Path" : "`AUTOTB_DUT_INST.grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_227.grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_KW_LOOP_FLAT_LOOP_fu_201.hadd_16ns_16ns_16_5_full_dsp_1_U1417", "Parent" : "37"},
+	{"ID" : "44", "Level" : "3", "Path" : "`AUTOTB_DUT_INST.grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_227.grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_KW_LOOP_FLAT_LOOP_fu_201.hadd_16ns_16ns_16_5_full_dsp_1_U1418", "Parent" : "37"},
+	{"ID" : "45", "Level" : "3", "Path" : "`AUTOTB_DUT_INST.grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_227.grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_KW_LOOP_FLAT_LOOP_fu_201.hadd_16ns_16ns_16_5_full_dsp_1_U1419", "Parent" : "37"},
+	{"ID" : "46", "Level" : "3", "Path" : "`AUTOTB_DUT_INST.grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_227.grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_KW_LOOP_FLAT_LOOP_fu_201.hadd_16ns_16ns_16_5_full_dsp_1_U1420", "Parent" : "37"},
+	{"ID" : "47", "Level" : "3", "Path" : "`AUTOTB_DUT_INST.grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_227.grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_KW_LOOP_FLAT_LOOP_fu_201.hadd_16ns_16ns_16_5_full_dsp_1_U1421", "Parent" : "37"},
+	{"ID" : "48", "Level" : "3", "Path" : "`AUTOTB_DUT_INST.grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_227.grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_KW_LOOP_FLAT_LOOP_fu_201.hadd_16ns_16ns_16_5_full_dsp_1_U1422", "Parent" : "37"},
+	{"ID" : "49", "Level" : "3", "Path" : "`AUTOTB_DUT_INST.grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_227.grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_KW_LOOP_FLAT_LOOP_fu_201.hadd_16ns_16ns_16_5_full_dsp_1_U1423", "Parent" : "37"},
+	{"ID" : "50", "Level" : "3", "Path" : "`AUTOTB_DUT_INST.grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_227.grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_KW_LOOP_FLAT_LOOP_fu_201.hadd_16ns_16ns_16_5_full_dsp_1_U1424", "Parent" : "37"},
+	{"ID" : "51", "Level" : "3", "Path" : "`AUTOTB_DUT_INST.grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_227.grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_KW_LOOP_FLAT_LOOP_fu_201.hadd_16ns_16ns_16_5_full_dsp_1_U1425", "Parent" : "37"},
+	{"ID" : "52", "Level" : "3", "Path" : "`AUTOTB_DUT_INST.grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_227.grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_KW_LOOP_FLAT_LOOP_fu_201.hadd_16ns_16ns_16_5_full_dsp_1_U1426", "Parent" : "37"},
+	{"ID" : "53", "Level" : "3", "Path" : "`AUTOTB_DUT_INST.grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_227.grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_KW_LOOP_FLAT_LOOP_fu_201.hadd_16ns_16ns_16_5_full_dsp_1_U1427", "Parent" : "37"},
+	{"ID" : "54", "Level" : "3", "Path" : "`AUTOTB_DUT_INST.grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_227.grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_KW_LOOP_FLAT_LOOP_fu_201.hadd_16ns_16ns_16_5_full_dsp_1_U1428", "Parent" : "37"},
+	{"ID" : "55", "Level" : "3", "Path" : "`AUTOTB_DUT_INST.grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_227.grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_KW_LOOP_FLAT_LOOP_fu_201.hadd_16ns_16ns_16_5_full_dsp_1_U1429", "Parent" : "37"},
+	{"ID" : "56", "Level" : "3", "Path" : "`AUTOTB_DUT_INST.grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_227.grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_KW_LOOP_FLAT_LOOP_fu_201.hadd_16ns_16ns_16_5_full_dsp_1_U1430", "Parent" : "37"},
+	{"ID" : "57", "Level" : "3", "Path" : "`AUTOTB_DUT_INST.grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_227.grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_KW_LOOP_FLAT_LOOP_fu_201.hadd_16ns_16ns_16_5_full_dsp_1_U1431", "Parent" : "37"},
+	{"ID" : "58", "Level" : "3", "Path" : "`AUTOTB_DUT_INST.grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_227.grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_KW_LOOP_FLAT_LOOP_fu_201.hadd_16ns_16ns_16_5_full_dsp_1_U1432", "Parent" : "37"},
+	{"ID" : "59", "Level" : "3", "Path" : "`AUTOTB_DUT_INST.grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_227.grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_KW_LOOP_FLAT_LOOP_fu_201.hadd_16ns_16ns_16_5_full_dsp_1_U1433", "Parent" : "37"},
+	{"ID" : "60", "Level" : "3", "Path" : "`AUTOTB_DUT_INST.grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_227.grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_KW_LOOP_FLAT_LOOP_fu_201.hadd_16ns_16ns_16_5_full_dsp_1_U1434", "Parent" : "37"},
+	{"ID" : "61", "Level" : "3", "Path" : "`AUTOTB_DUT_INST.grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_227.grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_KW_LOOP_FLAT_LOOP_fu_201.hadd_16ns_16ns_16_5_full_dsp_1_U1435", "Parent" : "37"},
+	{"ID" : "62", "Level" : "3", "Path" : "`AUTOTB_DUT_INST.grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_227.grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_KW_LOOP_FLAT_LOOP_fu_201.hadd_16ns_16ns_16_5_full_dsp_1_U1436", "Parent" : "37"},
+	{"ID" : "63", "Level" : "3", "Path" : "`AUTOTB_DUT_INST.grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_227.grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_KW_LOOP_FLAT_LOOP_fu_201.hadd_16ns_16ns_16_5_full_dsp_1_U1437", "Parent" : "37"},
+	{"ID" : "64", "Level" : "3", "Path" : "`AUTOTB_DUT_INST.grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_227.grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_KW_LOOP_FLAT_LOOP_fu_201.hadd_16ns_16ns_16_5_full_dsp_1_U1438", "Parent" : "37"},
+	{"ID" : "65", "Level" : "3", "Path" : "`AUTOTB_DUT_INST.grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_227.grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_KW_LOOP_FLAT_LOOP_fu_201.hadd_16ns_16ns_16_5_full_dsp_1_U1439", "Parent" : "37"},
+	{"ID" : "66", "Level" : "3", "Path" : "`AUTOTB_DUT_INST.grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_227.grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_KW_LOOP_FLAT_LOOP_fu_201.hadd_16ns_16ns_16_5_full_dsp_1_U1440", "Parent" : "37"},
+	{"ID" : "67", "Level" : "3", "Path" : "`AUTOTB_DUT_INST.grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_227.grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_KW_LOOP_FLAT_LOOP_fu_201.hadd_16ns_16ns_16_5_full_dsp_1_U1441", "Parent" : "37"},
+	{"ID" : "68", "Level" : "3", "Path" : "`AUTOTB_DUT_INST.grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_227.grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_KW_LOOP_FLAT_LOOP_fu_201.hadd_16ns_16ns_16_5_full_dsp_1_U1442", "Parent" : "37"},
+	{"ID" : "69", "Level" : "3", "Path" : "`AUTOTB_DUT_INST.grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_227.grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_KW_LOOP_FLAT_LOOP_fu_201.hadd_16ns_16ns_16_5_full_dsp_1_U1443", "Parent" : "37"},
+	{"ID" : "70", "Level" : "3", "Path" : "`AUTOTB_DUT_INST.grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_227.grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_KW_LOOP_FLAT_LOOP_fu_201.hadd_16ns_16ns_16_5_full_dsp_1_U1444", "Parent" : "37"},
+	{"ID" : "71", "Level" : "3", "Path" : "`AUTOTB_DUT_INST.grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_227.grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_KW_LOOP_FLAT_LOOP_fu_201.hadd_16ns_16ns_16_5_full_dsp_1_U1445", "Parent" : "37"},
+	{"ID" : "72", "Level" : "3", "Path" : "`AUTOTB_DUT_INST.grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_227.grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_KW_LOOP_FLAT_LOOP_fu_201.hadd_16ns_16ns_16_5_full_dsp_1_U1446", "Parent" : "37"},
+	{"ID" : "73", "Level" : "3", "Path" : "`AUTOTB_DUT_INST.grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_227.grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_KW_LOOP_FLAT_LOOP_fu_201.hadd_16ns_16ns_16_5_full_dsp_1_U1447", "Parent" : "37"},
+	{"ID" : "74", "Level" : "3", "Path" : "`AUTOTB_DUT_INST.grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_227.grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_KW_LOOP_FLAT_LOOP_fu_201.hadd_16ns_16ns_16_5_full_dsp_1_U1448", "Parent" : "37"},
+	{"ID" : "75", "Level" : "3", "Path" : "`AUTOTB_DUT_INST.grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_227.grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_KW_LOOP_FLAT_LOOP_fu_201.hadd_16ns_16ns_16_5_full_dsp_1_U1449", "Parent" : "37"},
+	{"ID" : "76", "Level" : "3", "Path" : "`AUTOTB_DUT_INST.grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_227.grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_KW_LOOP_FLAT_LOOP_fu_201.hadd_16ns_16ns_16_5_full_dsp_1_U1450", "Parent" : "37"},
+	{"ID" : "77", "Level" : "3", "Path" : "`AUTOTB_DUT_INST.grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_227.grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_KW_LOOP_FLAT_LOOP_fu_201.hadd_16ns_16ns_16_5_full_dsp_1_U1451", "Parent" : "37"},
+	{"ID" : "78", "Level" : "3", "Path" : "`AUTOTB_DUT_INST.grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_227.grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_KW_LOOP_FLAT_LOOP_fu_201.hadd_16ns_16ns_16_5_full_dsp_1_U1452", "Parent" : "37"},
+	{"ID" : "79", "Level" : "3", "Path" : "`AUTOTB_DUT_INST.grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_227.grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_KW_LOOP_FLAT_LOOP_fu_201.hadd_16ns_16ns_16_5_full_dsp_1_U1453", "Parent" : "37"},
+	{"ID" : "80", "Level" : "3", "Path" : "`AUTOTB_DUT_INST.grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_227.grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_KW_LOOP_FLAT_LOOP_fu_201.hadd_16ns_16ns_16_5_full_dsp_1_U1454", "Parent" : "37"},
+	{"ID" : "81", "Level" : "3", "Path" : "`AUTOTB_DUT_INST.grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_227.grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_KW_LOOP_FLAT_LOOP_fu_201.hadd_16ns_16ns_16_5_full_dsp_1_U1455", "Parent" : "37"},
+	{"ID" : "82", "Level" : "3", "Path" : "`AUTOTB_DUT_INST.grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_227.grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_KW_LOOP_FLAT_LOOP_fu_201.hadd_16ns_16ns_16_5_full_dsp_1_U1456", "Parent" : "37"},
+	{"ID" : "83", "Level" : "3", "Path" : "`AUTOTB_DUT_INST.grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_227.grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_KW_LOOP_FLAT_LOOP_fu_201.hadd_16ns_16ns_16_5_full_dsp_1_U1457", "Parent" : "37"},
+	{"ID" : "84", "Level" : "3", "Path" : "`AUTOTB_DUT_INST.grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_227.grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_KW_LOOP_FLAT_LOOP_fu_201.hadd_16ns_16ns_16_5_full_dsp_1_U1458", "Parent" : "37"},
+	{"ID" : "85", "Level" : "3", "Path" : "`AUTOTB_DUT_INST.grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_227.grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_KW_LOOP_FLAT_LOOP_fu_201.hadd_16ns_16ns_16_5_full_dsp_1_U1459", "Parent" : "37"},
+	{"ID" : "86", "Level" : "3", "Path" : "`AUTOTB_DUT_INST.grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_227.grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_KW_LOOP_FLAT_LOOP_fu_201.hadd_16ns_16ns_16_5_full_dsp_1_U1460", "Parent" : "37"},
+	{"ID" : "87", "Level" : "3", "Path" : "`AUTOTB_DUT_INST.grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_227.grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_KW_LOOP_FLAT_LOOP_fu_201.hadd_16ns_16ns_16_5_full_dsp_1_U1461", "Parent" : "37"},
+	{"ID" : "88", "Level" : "3", "Path" : "`AUTOTB_DUT_INST.grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_227.grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_KW_LOOP_FLAT_LOOP_fu_201.hadd_16ns_16ns_16_5_full_dsp_1_U1462", "Parent" : "37"},
+	{"ID" : "89", "Level" : "3", "Path" : "`AUTOTB_DUT_INST.grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_227.grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_KW_LOOP_FLAT_LOOP_fu_201.hadd_16ns_16ns_16_5_full_dsp_1_U1463", "Parent" : "37"},
+	{"ID" : "90", "Level" : "3", "Path" : "`AUTOTB_DUT_INST.grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_227.grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_KW_LOOP_FLAT_LOOP_fu_201.hadd_16ns_16ns_16_5_full_dsp_1_U1464", "Parent" : "37"},
+	{"ID" : "91", "Level" : "3", "Path" : "`AUTOTB_DUT_INST.grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_227.grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_KW_LOOP_FLAT_LOOP_fu_201.hadd_16ns_16ns_16_5_full_dsp_1_U1465", "Parent" : "37"},
+	{"ID" : "92", "Level" : "3", "Path" : "`AUTOTB_DUT_INST.grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_227.grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_KW_LOOP_FLAT_LOOP_fu_201.hadd_16ns_16ns_16_5_full_dsp_1_U1466", "Parent" : "37"},
+	{"ID" : "93", "Level" : "3", "Path" : "`AUTOTB_DUT_INST.grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_227.grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_KW_LOOP_FLAT_LOOP_fu_201.hadd_16ns_16ns_16_5_full_dsp_1_U1467", "Parent" : "37"},
+	{"ID" : "94", "Level" : "3", "Path" : "`AUTOTB_DUT_INST.grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_227.grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_KW_LOOP_FLAT_LOOP_fu_201.hadd_16ns_16ns_16_5_full_dsp_1_U1468", "Parent" : "37"},
+	{"ID" : "95", "Level" : "3", "Path" : "`AUTOTB_DUT_INST.grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_227.grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_KW_LOOP_FLAT_LOOP_fu_201.hadd_16ns_16ns_16_5_full_dsp_1_U1469", "Parent" : "37"},
+	{"ID" : "96", "Level" : "3", "Path" : "`AUTOTB_DUT_INST.grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_227.grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_KW_LOOP_FLAT_LOOP_fu_201.hadd_16ns_16ns_16_5_full_dsp_1_U1470", "Parent" : "37"},
+	{"ID" : "97", "Level" : "3", "Path" : "`AUTOTB_DUT_INST.grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_227.grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_KW_LOOP_FLAT_LOOP_fu_201.hadd_16ns_16ns_16_5_full_dsp_1_U1471", "Parent" : "37"},
+	{"ID" : "98", "Level" : "3", "Path" : "`AUTOTB_DUT_INST.grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_227.grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_KW_LOOP_FLAT_LOOP_fu_201.hadd_16ns_16ns_16_5_full_dsp_1_U1472", "Parent" : "37"},
+	{"ID" : "99", "Level" : "3", "Path" : "`AUTOTB_DUT_INST.grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_227.grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_KW_LOOP_FLAT_LOOP_fu_201.hadd_16ns_16ns_16_5_full_dsp_1_U1473", "Parent" : "37"},
+	{"ID" : "100", "Level" : "3", "Path" : "`AUTOTB_DUT_INST.grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_227.grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_KW_LOOP_FLAT_LOOP_fu_201.hadd_16ns_16ns_16_5_full_dsp_1_U1490", "Parent" : "37"},
+	{"ID" : "101", "Level" : "3", "Path" : "`AUTOTB_DUT_INST.grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_227.grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_KW_LOOP_FLAT_LOOP_fu_201.hadd_16ns_16ns_16_5_full_dsp_1_U1491", "Parent" : "37"},
+	{"ID" : "102", "Level" : "3", "Path" : "`AUTOTB_DUT_INST.grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_227.grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_KW_LOOP_FLAT_LOOP_fu_201.hadd_16ns_16ns_16_5_full_dsp_1_U1492", "Parent" : "37"},
+	{"ID" : "103", "Level" : "3", "Path" : "`AUTOTB_DUT_INST.grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_227.grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_KW_LOOP_FLAT_LOOP_fu_201.hadd_16ns_16ns_16_5_full_dsp_1_U1493", "Parent" : "37"},
+	{"ID" : "104", "Level" : "3", "Path" : "`AUTOTB_DUT_INST.grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_227.grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_KW_LOOP_FLAT_LOOP_fu_201.hadd_16ns_16ns_16_5_full_dsp_1_U1494", "Parent" : "37"},
+	{"ID" : "105", "Level" : "3", "Path" : "`AUTOTB_DUT_INST.grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_227.grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_KW_LOOP_FLAT_LOOP_fu_201.hadd_16ns_16ns_16_5_full_dsp_1_U1495", "Parent" : "37"},
+	{"ID" : "106", "Level" : "3", "Path" : "`AUTOTB_DUT_INST.grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_227.grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_KW_LOOP_FLAT_LOOP_fu_201.hadd_16ns_16ns_16_5_full_dsp_1_U1496", "Parent" : "37"},
+	{"ID" : "107", "Level" : "3", "Path" : "`AUTOTB_DUT_INST.grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_227.grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_KW_LOOP_FLAT_LOOP_fu_201.hadd_16ns_16ns_16_5_full_dsp_1_U1497", "Parent" : "37"},
+	{"ID" : "108", "Level" : "3", "Path" : "`AUTOTB_DUT_INST.grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_227.grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_KW_LOOP_FLAT_LOOP_fu_201.hadd_16ns_16ns_16_5_full_dsp_1_U1498", "Parent" : "37"},
+	{"ID" : "109", "Level" : "3", "Path" : "`AUTOTB_DUT_INST.grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_227.grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_KW_LOOP_FLAT_LOOP_fu_201.hadd_16ns_16ns_16_5_full_dsp_1_U1499", "Parent" : "37"},
+	{"ID" : "110", "Level" : "3", "Path" : "`AUTOTB_DUT_INST.grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_227.grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_KW_LOOP_FLAT_LOOP_fu_201.hadd_16ns_16ns_16_5_full_dsp_1_U1500", "Parent" : "37"},
+	{"ID" : "111", "Level" : "3", "Path" : "`AUTOTB_DUT_INST.grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_227.grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_KW_LOOP_FLAT_LOOP_fu_201.hadd_16ns_16ns_16_5_full_dsp_1_U1501", "Parent" : "37"},
+	{"ID" : "112", "Level" : "3", "Path" : "`AUTOTB_DUT_INST.grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_227.grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_KW_LOOP_FLAT_LOOP_fu_201.hadd_16ns_16ns_16_5_full_dsp_1_U1502", "Parent" : "37"},
+	{"ID" : "113", "Level" : "3", "Path" : "`AUTOTB_DUT_INST.grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_227.grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_KW_LOOP_FLAT_LOOP_fu_201.hadd_16ns_16ns_16_5_full_dsp_1_U1503", "Parent" : "37"},
+	{"ID" : "114", "Level" : "3", "Path" : "`AUTOTB_DUT_INST.grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_227.grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_KW_LOOP_FLAT_LOOP_fu_201.hadd_16ns_16ns_16_5_full_dsp_1_U1504", "Parent" : "37"},
+	{"ID" : "115", "Level" : "3", "Path" : "`AUTOTB_DUT_INST.grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_227.grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_KW_LOOP_FLAT_LOOP_fu_201.hadd_16ns_16ns_16_5_full_dsp_1_U1505", "Parent" : "37"},
+	{"ID" : "116", "Level" : "3", "Path" : "`AUTOTB_DUT_INST.grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_227.grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_KW_LOOP_FLAT_LOOP_fu_201.hadd_16ns_16ns_16_5_full_dsp_1_U1506", "Parent" : "37"},
+	{"ID" : "117", "Level" : "3", "Path" : "`AUTOTB_DUT_INST.grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_227.grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_KW_LOOP_FLAT_LOOP_fu_201.hadd_16ns_16ns_16_5_full_dsp_1_U1507", "Parent" : "37"},
+	{"ID" : "118", "Level" : "3", "Path" : "`AUTOTB_DUT_INST.grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_227.grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_KW_LOOP_FLAT_LOOP_fu_201.hadd_16ns_16ns_16_5_full_dsp_1_U1508", "Parent" : "37"},
+	{"ID" : "119", "Level" : "3", "Path" : "`AUTOTB_DUT_INST.grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_227.grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_KW_LOOP_FLAT_LOOP_fu_201.hadd_16ns_16ns_16_5_full_dsp_1_U1509", "Parent" : "37"},
+	{"ID" : "120", "Level" : "3", "Path" : "`AUTOTB_DUT_INST.grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_227.grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_KW_LOOP_FLAT_LOOP_fu_201.hadd_16ns_16ns_16_5_full_dsp_1_U1510", "Parent" : "37"},
+	{"ID" : "121", "Level" : "3", "Path" : "`AUTOTB_DUT_INST.grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_227.grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_KW_LOOP_FLAT_LOOP_fu_201.hadd_16ns_16ns_16_5_full_dsp_1_U1511", "Parent" : "37"},
+	{"ID" : "122", "Level" : "3", "Path" : "`AUTOTB_DUT_INST.grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_227.grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_KW_LOOP_FLAT_LOOP_fu_201.hadd_16ns_16ns_16_5_full_dsp_1_U1512", "Parent" : "37"},
+	{"ID" : "123", "Level" : "3", "Path" : "`AUTOTB_DUT_INST.grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_227.grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_KW_LOOP_FLAT_LOOP_fu_201.hadd_16ns_16ns_16_5_full_dsp_1_U1513", "Parent" : "37"},
+	{"ID" : "124", "Level" : "3", "Path" : "`AUTOTB_DUT_INST.grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_227.grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_KW_LOOP_FLAT_LOOP_fu_201.hadd_16ns_16ns_16_5_full_dsp_1_U1514", "Parent" : "37"},
+	{"ID" : "125", "Level" : "3", "Path" : "`AUTOTB_DUT_INST.grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_227.grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_KW_LOOP_FLAT_LOOP_fu_201.hadd_16ns_16ns_16_5_full_dsp_1_U1515", "Parent" : "37"},
+	{"ID" : "126", "Level" : "3", "Path" : "`AUTOTB_DUT_INST.grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_227.grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_KW_LOOP_FLAT_LOOP_fu_201.hadd_16ns_16ns_16_5_full_dsp_1_U1516", "Parent" : "37"},
+	{"ID" : "127", "Level" : "3", "Path" : "`AUTOTB_DUT_INST.grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_227.grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_KW_LOOP_FLAT_LOOP_fu_201.hadd_16ns_16ns_16_5_full_dsp_1_U1517", "Parent" : "37"},
+	{"ID" : "128", "Level" : "3", "Path" : "`AUTOTB_DUT_INST.grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_227.grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_KW_LOOP_FLAT_LOOP_fu_201.hadd_16ns_16ns_16_5_full_dsp_1_U1518", "Parent" : "37"},
+	{"ID" : "129", "Level" : "3", "Path" : "`AUTOTB_DUT_INST.grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_227.grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_KW_LOOP_FLAT_LOOP_fu_201.hadd_16ns_16ns_16_5_full_dsp_1_U1519", "Parent" : "37"},
+	{"ID" : "130", "Level" : "3", "Path" : "`AUTOTB_DUT_INST.grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_227.grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_KW_LOOP_FLAT_LOOP_fu_201.hadd_16ns_16ns_16_5_full_dsp_1_U1520", "Parent" : "37"},
+	{"ID" : "131", "Level" : "3", "Path" : "`AUTOTB_DUT_INST.grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_227.grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_KW_LOOP_FLAT_LOOP_fu_201.hadd_16ns_16ns_16_5_full_dsp_1_U1521", "Parent" : "37"},
+	{"ID" : "132", "Level" : "3", "Path" : "`AUTOTB_DUT_INST.grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_227.grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_KW_LOOP_FLAT_LOOP_fu_201.hadd_16ns_16ns_16_5_full_dsp_1_U1522", "Parent" : "37"},
+	{"ID" : "133", "Level" : "3", "Path" : "`AUTOTB_DUT_INST.grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_227.grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_KW_LOOP_FLAT_LOOP_fu_201.hadd_16ns_16ns_16_5_full_dsp_1_U1523", "Parent" : "37"},
+	{"ID" : "134", "Level" : "3", "Path" : "`AUTOTB_DUT_INST.grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_227.grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_KW_LOOP_FLAT_LOOP_fu_201.hadd_16ns_16ns_16_5_full_dsp_1_U1524", "Parent" : "37"},
+	{"ID" : "135", "Level" : "3", "Path" : "`AUTOTB_DUT_INST.grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_227.grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_KW_LOOP_FLAT_LOOP_fu_201.hadd_16ns_16ns_16_5_full_dsp_1_U1525", "Parent" : "37"},
+	{"ID" : "136", "Level" : "3", "Path" : "`AUTOTB_DUT_INST.grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_227.grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_KW_LOOP_FLAT_LOOP_fu_201.hadd_16ns_16ns_16_5_full_dsp_1_U1526", "Parent" : "37"},
+	{"ID" : "137", "Level" : "3", "Path" : "`AUTOTB_DUT_INST.grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_227.grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_KW_LOOP_FLAT_LOOP_fu_201.hadd_16ns_16ns_16_5_full_dsp_1_U1527", "Parent" : "37"},
+	{"ID" : "138", "Level" : "3", "Path" : "`AUTOTB_DUT_INST.grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_227.grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_KW_LOOP_FLAT_LOOP_fu_201.hadd_16ns_16ns_16_5_full_dsp_1_U1528", "Parent" : "37"},
+	{"ID" : "139", "Level" : "3", "Path" : "`AUTOTB_DUT_INST.grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_227.grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_KW_LOOP_FLAT_LOOP_fu_201.hadd_16ns_16ns_16_5_full_dsp_1_U1529", "Parent" : "37"},
+	{"ID" : "140", "Level" : "3", "Path" : "`AUTOTB_DUT_INST.grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_227.grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_KW_LOOP_FLAT_LOOP_fu_201.hadd_16ns_16ns_16_5_full_dsp_1_U1530", "Parent" : "37"},
+	{"ID" : "141", "Level" : "3", "Path" : "`AUTOTB_DUT_INST.grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_227.grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_KW_LOOP_FLAT_LOOP_fu_201.hadd_16ns_16ns_16_5_full_dsp_1_U1531", "Parent" : "37"},
+	{"ID" : "142", "Level" : "3", "Path" : "`AUTOTB_DUT_INST.grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_227.grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_KW_LOOP_FLAT_LOOP_fu_201.hadd_16ns_16ns_16_5_full_dsp_1_U1532", "Parent" : "37"},
+	{"ID" : "143", "Level" : "3", "Path" : "`AUTOTB_DUT_INST.grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_227.grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_KW_LOOP_FLAT_LOOP_fu_201.hadd_16ns_16ns_16_5_full_dsp_1_U1533", "Parent" : "37"},
+	{"ID" : "144", "Level" : "3", "Path" : "`AUTOTB_DUT_INST.grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_227.grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_KW_LOOP_FLAT_LOOP_fu_201.hadd_16ns_16ns_16_5_full_dsp_1_U1534", "Parent" : "37"},
+	{"ID" : "145", "Level" : "3", "Path" : "`AUTOTB_DUT_INST.grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_227.grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_KW_LOOP_FLAT_LOOP_fu_201.hadd_16ns_16ns_16_5_full_dsp_1_U1535", "Parent" : "37"},
+	{"ID" : "146", "Level" : "3", "Path" : "`AUTOTB_DUT_INST.grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_227.grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_KW_LOOP_FLAT_LOOP_fu_201.hadd_16ns_16ns_16_5_full_dsp_1_U1536", "Parent" : "37"},
+	{"ID" : "147", "Level" : "3", "Path" : "`AUTOTB_DUT_INST.grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_227.grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_KW_LOOP_FLAT_LOOP_fu_201.hadd_16ns_16ns_16_5_full_dsp_1_U1537", "Parent" : "37"},
+	{"ID" : "148", "Level" : "3", "Path" : "`AUTOTB_DUT_INST.grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_227.grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_KW_LOOP_FLAT_LOOP_fu_201.hadd_16ns_16ns_16_5_full_dsp_1_U1538", "Parent" : "37"},
+	{"ID" : "149", "Level" : "3", "Path" : "`AUTOTB_DUT_INST.grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_227.grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_KW_LOOP_FLAT_LOOP_fu_201.hadd_16ns_16ns_16_5_full_dsp_1_U1539", "Parent" : "37"},
+	{"ID" : "150", "Level" : "3", "Path" : "`AUTOTB_DUT_INST.grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_227.grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_KW_LOOP_FLAT_LOOP_fu_201.hadd_16ns_16ns_16_5_full_dsp_1_U1540", "Parent" : "37"},
+	{"ID" : "151", "Level" : "3", "Path" : "`AUTOTB_DUT_INST.grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_227.grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_KW_LOOP_FLAT_LOOP_fu_201.hadd_16ns_16ns_16_5_full_dsp_1_U1541", "Parent" : "37"},
+	{"ID" : "152", "Level" : "3", "Path" : "`AUTOTB_DUT_INST.grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_227.grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_KW_LOOP_FLAT_LOOP_fu_201.hadd_16ns_16ns_16_5_full_dsp_1_U1542", "Parent" : "37"},
+	{"ID" : "153", "Level" : "3", "Path" : "`AUTOTB_DUT_INST.grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_227.grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_KW_LOOP_FLAT_LOOP_fu_201.hadd_16ns_16ns_16_5_full_dsp_1_U1543", "Parent" : "37"},
+	{"ID" : "154", "Level" : "3", "Path" : "`AUTOTB_DUT_INST.grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_227.grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_KW_LOOP_FLAT_LOOP_fu_201.hadd_16ns_16ns_16_5_full_dsp_1_U1544", "Parent" : "37"},
+	{"ID" : "155", "Level" : "3", "Path" : "`AUTOTB_DUT_INST.grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_227.grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_KW_LOOP_FLAT_LOOP_fu_201.hadd_16ns_16ns_16_5_full_dsp_1_U1545", "Parent" : "37"},
+	{"ID" : "156", "Level" : "3", "Path" : "`AUTOTB_DUT_INST.grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_227.grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_KW_LOOP_FLAT_LOOP_fu_201.hadd_16ns_16ns_16_5_full_dsp_1_U1546", "Parent" : "37"},
+	{"ID" : "157", "Level" : "3", "Path" : "`AUTOTB_DUT_INST.grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_227.grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_KW_LOOP_FLAT_LOOP_fu_201.hadd_16ns_16ns_16_5_full_dsp_1_U1547", "Parent" : "37"},
+	{"ID" : "158", "Level" : "3", "Path" : "`AUTOTB_DUT_INST.grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_227.grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_KW_LOOP_FLAT_LOOP_fu_201.hadd_16ns_16ns_16_5_full_dsp_1_U1548", "Parent" : "37"},
+	{"ID" : "159", "Level" : "3", "Path" : "`AUTOTB_DUT_INST.grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_227.grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_KW_LOOP_FLAT_LOOP_fu_201.hadd_16ns_16ns_16_5_full_dsp_1_U1549", "Parent" : "37"},
+	{"ID" : "160", "Level" : "3", "Path" : "`AUTOTB_DUT_INST.grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_227.grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_KW_LOOP_FLAT_LOOP_fu_201.hadd_16ns_16ns_16_5_full_dsp_1_U1550", "Parent" : "37"},
+	{"ID" : "161", "Level" : "3", "Path" : "`AUTOTB_DUT_INST.grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_227.grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_KW_LOOP_FLAT_LOOP_fu_201.hadd_16ns_16ns_16_5_full_dsp_1_U1551", "Parent" : "37"},
+	{"ID" : "162", "Level" : "3", "Path" : "`AUTOTB_DUT_INST.grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_227.grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_KW_LOOP_FLAT_LOOP_fu_201.hadd_16ns_16ns_16_5_full_dsp_1_U1552", "Parent" : "37"},
+	{"ID" : "163", "Level" : "3", "Path" : "`AUTOTB_DUT_INST.grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_227.grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_KW_LOOP_FLAT_LOOP_fu_201.hadd_16ns_16ns_16_5_full_dsp_1_U1553", "Parent" : "37"},
+	{"ID" : "164", "Level" : "3", "Path" : "`AUTOTB_DUT_INST.grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_227.grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_KW_LOOP_FLAT_LOOP_fu_201.hadd_16ns_16ns_16_5_full_dsp_1_U1554", "Parent" : "37"},
+	{"ID" : "165", "Level" : "3", "Path" : "`AUTOTB_DUT_INST.grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_227.grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_KW_LOOP_FLAT_LOOP_fu_201.hadd_16ns_16ns_16_5_full_dsp_1_U1555", "Parent" : "37"},
+	{"ID" : "166", "Level" : "3", "Path" : "`AUTOTB_DUT_INST.grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_227.grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_KW_LOOP_FLAT_LOOP_fu_201.hadd_16ns_16ns_16_5_full_dsp_1_U1556", "Parent" : "37"},
+	{"ID" : "167", "Level" : "3", "Path" : "`AUTOTB_DUT_INST.grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_227.grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_KW_LOOP_FLAT_LOOP_fu_201.hadd_16ns_16ns_16_5_full_dsp_1_U1557", "Parent" : "37"},
+	{"ID" : "168", "Level" : "3", "Path" : "`AUTOTB_DUT_INST.grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_227.grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_KW_LOOP_FLAT_LOOP_fu_201.hadd_16ns_16ns_16_5_full_dsp_1_U1558", "Parent" : "37"},
+	{"ID" : "169", "Level" : "3", "Path" : "`AUTOTB_DUT_INST.grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_227.grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_KW_LOOP_FLAT_LOOP_fu_201.hadd_16ns_16ns_16_5_full_dsp_1_U1559", "Parent" : "37"},
+	{"ID" : "170", "Level" : "3", "Path" : "`AUTOTB_DUT_INST.grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_227.grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_KW_LOOP_FLAT_LOOP_fu_201.hadd_16ns_16ns_16_5_full_dsp_1_U1560", "Parent" : "37"},
+	{"ID" : "171", "Level" : "3", "Path" : "`AUTOTB_DUT_INST.grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_227.grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_KW_LOOP_FLAT_LOOP_fu_201.hadd_16ns_16ns_16_5_full_dsp_1_U1561", "Parent" : "37"},
+	{"ID" : "172", "Level" : "3", "Path" : "`AUTOTB_DUT_INST.grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_227.grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_KW_LOOP_FLAT_LOOP_fu_201.hadd_16ns_16ns_16_5_full_dsp_1_U1562", "Parent" : "37"},
+	{"ID" : "173", "Level" : "3", "Path" : "`AUTOTB_DUT_INST.grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_227.grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_KW_LOOP_FLAT_LOOP_fu_201.hadd_16ns_16ns_16_5_full_dsp_1_U1563", "Parent" : "37"},
+	{"ID" : "174", "Level" : "3", "Path" : "`AUTOTB_DUT_INST.grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_227.grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_KW_LOOP_FLAT_LOOP_fu_201.hadd_16ns_16ns_16_5_full_dsp_1_U1564", "Parent" : "37"},
+	{"ID" : "175", "Level" : "3", "Path" : "`AUTOTB_DUT_INST.grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_227.grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_KW_LOOP_FLAT_LOOP_fu_201.hadd_16ns_16ns_16_5_full_dsp_1_U1565", "Parent" : "37"},
+	{"ID" : "176", "Level" : "3", "Path" : "`AUTOTB_DUT_INST.grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_227.grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_KW_LOOP_FLAT_LOOP_fu_201.hadd_16ns_16ns_16_5_full_dsp_1_U1566", "Parent" : "37"},
+	{"ID" : "177", "Level" : "3", "Path" : "`AUTOTB_DUT_INST.grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_227.grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_KW_LOOP_FLAT_LOOP_fu_201.hadd_16ns_16ns_16_5_full_dsp_1_U1567", "Parent" : "37"},
+	{"ID" : "178", "Level" : "3", "Path" : "`AUTOTB_DUT_INST.grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_227.grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_KW_LOOP_FLAT_LOOP_fu_201.hadd_16ns_16ns_16_5_full_dsp_1_U1568", "Parent" : "37"},
+	{"ID" : "179", "Level" : "3", "Path" : "`AUTOTB_DUT_INST.grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_227.grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_KW_LOOP_FLAT_LOOP_fu_201.hadd_16ns_16ns_16_5_full_dsp_1_U1569", "Parent" : "37"},
+	{"ID" : "180", "Level" : "3", "Path" : "`AUTOTB_DUT_INST.grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_227.grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_KW_LOOP_FLAT_LOOP_fu_201.hadd_16ns_16ns_16_5_full_dsp_1_U1570", "Parent" : "37"},
+	{"ID" : "181", "Level" : "3", "Path" : "`AUTOTB_DUT_INST.grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_227.grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_KW_LOOP_FLAT_LOOP_fu_201.hadd_16ns_16ns_16_5_full_dsp_1_U1571", "Parent" : "37"},
+	{"ID" : "182", "Level" : "3", "Path" : "`AUTOTB_DUT_INST.grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_227.grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_KW_LOOP_FLAT_LOOP_fu_201.hadd_16ns_16ns_16_5_full_dsp_1_U1572", "Parent" : "37"},
+	{"ID" : "183", "Level" : "3", "Path" : "`AUTOTB_DUT_INST.grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_227.grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_KW_LOOP_FLAT_LOOP_fu_201.hadd_16ns_16ns_16_5_full_dsp_1_U1573", "Parent" : "37"},
+	{"ID" : "184", "Level" : "3", "Path" : "`AUTOTB_DUT_INST.grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_227.grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_KW_LOOP_FLAT_LOOP_fu_201.hadd_16ns_16ns_16_5_full_dsp_1_U1574", "Parent" : "37"},
+	{"ID" : "185", "Level" : "3", "Path" : "`AUTOTB_DUT_INST.grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_227.grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_KW_LOOP_FLAT_LOOP_fu_201.hadd_16ns_16ns_16_5_full_dsp_1_U1575", "Parent" : "37"},
+	{"ID" : "186", "Level" : "3", "Path" : "`AUTOTB_DUT_INST.grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_227.grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_KW_LOOP_FLAT_LOOP_fu_201.hadd_16ns_16ns_16_5_full_dsp_1_U1576", "Parent" : "37"},
+	{"ID" : "187", "Level" : "3", "Path" : "`AUTOTB_DUT_INST.grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_227.grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_KW_LOOP_FLAT_LOOP_fu_201.hadd_16ns_16ns_16_5_full_dsp_1_U1577", "Parent" : "37"},
+	{"ID" : "188", "Level" : "3", "Path" : "`AUTOTB_DUT_INST.grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_227.grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_KW_LOOP_FLAT_LOOP_fu_201.hadd_16ns_16ns_16_5_full_dsp_1_U1578", "Parent" : "37"},
+	{"ID" : "189", "Level" : "3", "Path" : "`AUTOTB_DUT_INST.grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_227.grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_KW_LOOP_FLAT_LOOP_fu_201.hadd_16ns_16ns_16_5_full_dsp_1_U1579", "Parent" : "37"},
+	{"ID" : "190", "Level" : "3", "Path" : "`AUTOTB_DUT_INST.grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_227.grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_KW_LOOP_FLAT_LOOP_fu_201.hmul_16ns_16ns_16_4_max_dsp_1_U1612", "Parent" : "37"},
+	{"ID" : "191", "Level" : "3", "Path" : "`AUTOTB_DUT_INST.grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_227.grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_KW_LOOP_FLAT_LOOP_fu_201.hmul_16ns_16ns_16_4_max_dsp_1_U1613", "Parent" : "37"},
+	{"ID" : "192", "Level" : "3", "Path" : "`AUTOTB_DUT_INST.grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_227.grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_KW_LOOP_FLAT_LOOP_fu_201.hmul_16ns_16ns_16_4_max_dsp_1_U1614", "Parent" : "37"},
+	{"ID" : "193", "Level" : "3", "Path" : "`AUTOTB_DUT_INST.grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_227.grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_KW_LOOP_FLAT_LOOP_fu_201.hmul_16ns_16ns_16_4_max_dsp_1_U1615", "Parent" : "37"},
+	{"ID" : "194", "Level" : "3", "Path" : "`AUTOTB_DUT_INST.grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_227.grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_KW_LOOP_FLAT_LOOP_fu_201.hmul_16ns_16ns_16_4_max_dsp_1_U1616", "Parent" : "37"},
+	{"ID" : "195", "Level" : "3", "Path" : "`AUTOTB_DUT_INST.grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_227.grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_KW_LOOP_FLAT_LOOP_fu_201.hmul_16ns_16ns_16_4_max_dsp_1_U1617", "Parent" : "37"},
+	{"ID" : "196", "Level" : "3", "Path" : "`AUTOTB_DUT_INST.grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_227.grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_KW_LOOP_FLAT_LOOP_fu_201.hmul_16ns_16ns_16_4_max_dsp_1_U1618", "Parent" : "37"},
+	{"ID" : "197", "Level" : "3", "Path" : "`AUTOTB_DUT_INST.grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_227.grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_KW_LOOP_FLAT_LOOP_fu_201.hmul_16ns_16ns_16_4_max_dsp_1_U1619", "Parent" : "37"},
+	{"ID" : "198", "Level" : "3", "Path" : "`AUTOTB_DUT_INST.grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_227.grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_KW_LOOP_FLAT_LOOP_fu_201.hmul_16ns_16ns_16_4_max_dsp_1_U1620", "Parent" : "37"},
+	{"ID" : "199", "Level" : "3", "Path" : "`AUTOTB_DUT_INST.grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_227.grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_KW_LOOP_FLAT_LOOP_fu_201.hmul_16ns_16ns_16_4_max_dsp_1_U1621", "Parent" : "37"},
+	{"ID" : "200", "Level" : "3", "Path" : "`AUTOTB_DUT_INST.grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_227.grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_KW_LOOP_FLAT_LOOP_fu_201.hmul_16ns_16ns_16_4_max_dsp_1_U1622", "Parent" : "37"},
+	{"ID" : "201", "Level" : "3", "Path" : "`AUTOTB_DUT_INST.grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_227.grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_KW_LOOP_FLAT_LOOP_fu_201.hmul_16ns_16ns_16_4_max_dsp_1_U1623", "Parent" : "37"},
+	{"ID" : "202", "Level" : "3", "Path" : "`AUTOTB_DUT_INST.grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_227.grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_KW_LOOP_FLAT_LOOP_fu_201.hmul_16ns_16ns_16_4_max_dsp_1_U1624", "Parent" : "37"},
+	{"ID" : "203", "Level" : "3", "Path" : "`AUTOTB_DUT_INST.grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_227.grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_KW_LOOP_FLAT_LOOP_fu_201.hmul_16ns_16ns_16_4_max_dsp_1_U1625", "Parent" : "37"},
+	{"ID" : "204", "Level" : "3", "Path" : "`AUTOTB_DUT_INST.grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_227.grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_KW_LOOP_FLAT_LOOP_fu_201.hmul_16ns_16ns_16_4_max_dsp_1_U1626", "Parent" : "37"},
+	{"ID" : "205", "Level" : "3", "Path" : "`AUTOTB_DUT_INST.grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_227.grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_KW_LOOP_FLAT_LOOP_fu_201.hmul_16ns_16ns_16_4_max_dsp_1_U1627", "Parent" : "37"},
+	{"ID" : "206", "Level" : "3", "Path" : "`AUTOTB_DUT_INST.grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_227.grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_KW_LOOP_FLAT_LOOP_fu_201.hmul_16ns_16ns_16_4_max_dsp_1_U1628", "Parent" : "37"},
+	{"ID" : "207", "Level" : "3", "Path" : "`AUTOTB_DUT_INST.grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_227.grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_KW_LOOP_FLAT_LOOP_fu_201.hmul_16ns_16ns_16_4_max_dsp_1_U1629", "Parent" : "37"},
+	{"ID" : "208", "Level" : "3", "Path" : "`AUTOTB_DUT_INST.grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_227.grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_KW_LOOP_FLAT_LOOP_fu_201.hmul_16ns_16ns_16_4_max_dsp_1_U1630", "Parent" : "37"},
+	{"ID" : "209", "Level" : "3", "Path" : "`AUTOTB_DUT_INST.grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_227.grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_KW_LOOP_FLAT_LOOP_fu_201.hmul_16ns_16ns_16_4_max_dsp_1_U1631", "Parent" : "37"},
+	{"ID" : "210", "Level" : "3", "Path" : "`AUTOTB_DUT_INST.grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_227.grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_KW_LOOP_FLAT_LOOP_fu_201.hmul_16ns_16ns_16_4_max_dsp_1_U1632", "Parent" : "37"},
+	{"ID" : "211", "Level" : "3", "Path" : "`AUTOTB_DUT_INST.grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_227.grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_KW_LOOP_FLAT_LOOP_fu_201.hmul_16ns_16ns_16_4_max_dsp_1_U1633", "Parent" : "37"},
+	{"ID" : "212", "Level" : "3", "Path" : "`AUTOTB_DUT_INST.grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_227.grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_KW_LOOP_FLAT_LOOP_fu_201.hmul_16ns_16ns_16_4_max_dsp_1_U1634", "Parent" : "37"},
+	{"ID" : "213", "Level" : "3", "Path" : "`AUTOTB_DUT_INST.grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_227.grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_KW_LOOP_FLAT_LOOP_fu_201.hmul_16ns_16ns_16_4_max_dsp_1_U1635", "Parent" : "37"},
+	{"ID" : "214", "Level" : "3", "Path" : "`AUTOTB_DUT_INST.grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_227.grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_KW_LOOP_FLAT_LOOP_fu_201.hmul_16ns_16ns_16_4_max_dsp_1_U1636", "Parent" : "37"},
+	{"ID" : "215", "Level" : "3", "Path" : "`AUTOTB_DUT_INST.grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_227.grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_KW_LOOP_FLAT_LOOP_fu_201.hmul_16ns_16ns_16_4_max_dsp_1_U1637", "Parent" : "37"},
+	{"ID" : "216", "Level" : "3", "Path" : "`AUTOTB_DUT_INST.grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_227.grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_KW_LOOP_FLAT_LOOP_fu_201.hmul_16ns_16ns_16_4_max_dsp_1_U1638", "Parent" : "37"},
+	{"ID" : "217", "Level" : "3", "Path" : "`AUTOTB_DUT_INST.grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_227.grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_KW_LOOP_FLAT_LOOP_fu_201.hmul_16ns_16ns_16_4_max_dsp_1_U1639", "Parent" : "37"},
+	{"ID" : "218", "Level" : "3", "Path" : "`AUTOTB_DUT_INST.grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_227.grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_KW_LOOP_FLAT_LOOP_fu_201.hmul_16ns_16ns_16_4_max_dsp_1_U1640", "Parent" : "37"},
+	{"ID" : "219", "Level" : "3", "Path" : "`AUTOTB_DUT_INST.grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_227.grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_KW_LOOP_FLAT_LOOP_fu_201.hmul_16ns_16ns_16_4_max_dsp_1_U1641", "Parent" : "37"},
+	{"ID" : "220", "Level" : "3", "Path" : "`AUTOTB_DUT_INST.grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_227.grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_KW_LOOP_FLAT_LOOP_fu_201.hmul_16ns_16ns_16_4_max_dsp_1_U1642", "Parent" : "37"},
+	{"ID" : "221", "Level" : "3", "Path" : "`AUTOTB_DUT_INST.grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_227.grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_KW_LOOP_FLAT_LOOP_fu_201.hmul_16ns_16ns_16_4_max_dsp_1_U1643", "Parent" : "37"},
+	{"ID" : "222", "Level" : "3", "Path" : "`AUTOTB_DUT_INST.grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_227.grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_KW_LOOP_FLAT_LOOP_fu_201.hmul_16ns_16ns_16_4_max_dsp_1_U1644", "Parent" : "37"},
+	{"ID" : "223", "Level" : "3", "Path" : "`AUTOTB_DUT_INST.grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_227.grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_KW_LOOP_FLAT_LOOP_fu_201.hmul_16ns_16ns_16_4_max_dsp_1_U1645", "Parent" : "37"},
+	{"ID" : "224", "Level" : "3", "Path" : "`AUTOTB_DUT_INST.grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_227.grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_KW_LOOP_FLAT_LOOP_fu_201.hmul_16ns_16ns_16_4_max_dsp_1_U1646", "Parent" : "37"},
+	{"ID" : "225", "Level" : "3", "Path" : "`AUTOTB_DUT_INST.grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_227.grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_KW_LOOP_FLAT_LOOP_fu_201.hmul_16ns_16ns_16_4_max_dsp_1_U1647", "Parent" : "37"},
+	{"ID" : "226", "Level" : "3", "Path" : "`AUTOTB_DUT_INST.grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_227.grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_KW_LOOP_FLAT_LOOP_fu_201.hmul_16ns_16ns_16_4_max_dsp_1_U1648", "Parent" : "37"},
+	{"ID" : "227", "Level" : "3", "Path" : "`AUTOTB_DUT_INST.grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_227.grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_KW_LOOP_FLAT_LOOP_fu_201.hmul_16ns_16ns_16_4_max_dsp_1_U1649", "Parent" : "37"},
+	{"ID" : "228", "Level" : "3", "Path" : "`AUTOTB_DUT_INST.grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_227.grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_KW_LOOP_FLAT_LOOP_fu_201.hmul_16ns_16ns_16_4_max_dsp_1_U1650", "Parent" : "37"},
+	{"ID" : "229", "Level" : "3", "Path" : "`AUTOTB_DUT_INST.grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_227.grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_KW_LOOP_FLAT_LOOP_fu_201.hmul_16ns_16ns_16_4_max_dsp_1_U1651", "Parent" : "37"},
+	{"ID" : "230", "Level" : "3", "Path" : "`AUTOTB_DUT_INST.grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_227.grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_KW_LOOP_FLAT_LOOP_fu_201.hmul_16ns_16ns_16_4_max_dsp_1_U1652", "Parent" : "37"},
+	{"ID" : "231", "Level" : "3", "Path" : "`AUTOTB_DUT_INST.grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_227.grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_KW_LOOP_FLAT_LOOP_fu_201.hmul_16ns_16ns_16_4_max_dsp_1_U1653", "Parent" : "37"},
+	{"ID" : "232", "Level" : "3", "Path" : "`AUTOTB_DUT_INST.grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_227.grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_KW_LOOP_FLAT_LOOP_fu_201.hmul_16ns_16ns_16_4_max_dsp_1_U1654", "Parent" : "37"},
+	{"ID" : "233", "Level" : "3", "Path" : "`AUTOTB_DUT_INST.grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_227.grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_KW_LOOP_FLAT_LOOP_fu_201.hmul_16ns_16ns_16_4_max_dsp_1_U1655", "Parent" : "37"},
+	{"ID" : "234", "Level" : "3", "Path" : "`AUTOTB_DUT_INST.grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_227.grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_KW_LOOP_FLAT_LOOP_fu_201.hmul_16ns_16ns_16_4_max_dsp_1_U1656", "Parent" : "37"},
+	{"ID" : "235", "Level" : "3", "Path" : "`AUTOTB_DUT_INST.grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_227.grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_KW_LOOP_FLAT_LOOP_fu_201.hmul_16ns_16ns_16_4_max_dsp_1_U1657", "Parent" : "37"},
+	{"ID" : "236", "Level" : "3", "Path" : "`AUTOTB_DUT_INST.grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_227.grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_KW_LOOP_FLAT_LOOP_fu_201.hmul_16ns_16ns_16_4_max_dsp_1_U1658", "Parent" : "37"},
+	{"ID" : "237", "Level" : "3", "Path" : "`AUTOTB_DUT_INST.grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_227.grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_KW_LOOP_FLAT_LOOP_fu_201.hmul_16ns_16ns_16_4_max_dsp_1_U1659", "Parent" : "37"},
+	{"ID" : "238", "Level" : "3", "Path" : "`AUTOTB_DUT_INST.grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_227.grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_KW_LOOP_FLAT_LOOP_fu_201.hmul_16ns_16ns_16_4_max_dsp_1_U1660", "Parent" : "37"},
+	{"ID" : "239", "Level" : "3", "Path" : "`AUTOTB_DUT_INST.grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_227.grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_KW_LOOP_FLAT_LOOP_fu_201.hmul_16ns_16ns_16_4_max_dsp_1_U1661", "Parent" : "37"},
+	{"ID" : "240", "Level" : "3", "Path" : "`AUTOTB_DUT_INST.grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_227.grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_KW_LOOP_FLAT_LOOP_fu_201.hmul_16ns_16ns_16_4_max_dsp_1_U1662", "Parent" : "37"},
+	{"ID" : "241", "Level" : "3", "Path" : "`AUTOTB_DUT_INST.grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_227.grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_KW_LOOP_FLAT_LOOP_fu_201.hmul_16ns_16ns_16_4_max_dsp_1_U1663", "Parent" : "37"},
+	{"ID" : "242", "Level" : "3", "Path" : "`AUTOTB_DUT_INST.grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_227.grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_KW_LOOP_FLAT_LOOP_fu_201.hmul_16ns_16ns_16_4_max_dsp_1_U1664", "Parent" : "37"},
+	{"ID" : "243", "Level" : "3", "Path" : "`AUTOTB_DUT_INST.grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_227.grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_KW_LOOP_FLAT_LOOP_fu_201.hmul_16ns_16ns_16_4_max_dsp_1_U1665", "Parent" : "37"},
+	{"ID" : "244", "Level" : "3", "Path" : "`AUTOTB_DUT_INST.grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_227.grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_KW_LOOP_FLAT_LOOP_fu_201.hmul_16ns_16ns_16_4_max_dsp_1_U1666", "Parent" : "37"},
+	{"ID" : "245", "Level" : "3", "Path" : "`AUTOTB_DUT_INST.grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_227.grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_KW_LOOP_FLAT_LOOP_fu_201.hmul_16ns_16ns_16_4_max_dsp_1_U1667", "Parent" : "37"},
+	{"ID" : "246", "Level" : "3", "Path" : "`AUTOTB_DUT_INST.grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_227.grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_KW_LOOP_FLAT_LOOP_fu_201.hmul_16ns_16ns_16_4_max_dsp_1_U1668", "Parent" : "37"},
+	{"ID" : "247", "Level" : "3", "Path" : "`AUTOTB_DUT_INST.grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_227.grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_KW_LOOP_FLAT_LOOP_fu_201.hmul_16ns_16ns_16_4_max_dsp_1_U1669", "Parent" : "37"},
+	{"ID" : "248", "Level" : "3", "Path" : "`AUTOTB_DUT_INST.grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_227.grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_KW_LOOP_FLAT_LOOP_fu_201.hmul_16ns_16ns_16_4_max_dsp_1_U1670", "Parent" : "37"},
+	{"ID" : "249", "Level" : "3", "Path" : "`AUTOTB_DUT_INST.grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_227.grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_KW_LOOP_FLAT_LOOP_fu_201.hmul_16ns_16ns_16_4_max_dsp_1_U1671", "Parent" : "37"},
+	{"ID" : "250", "Level" : "3", "Path" : "`AUTOTB_DUT_INST.grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_227.grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_KW_LOOP_FLAT_LOOP_fu_201.hmul_16ns_16ns_16_4_max_dsp_1_U1672", "Parent" : "37"},
+	{"ID" : "251", "Level" : "3", "Path" : "`AUTOTB_DUT_INST.grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_227.grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_KW_LOOP_FLAT_LOOP_fu_201.hmul_16ns_16ns_16_4_max_dsp_1_U1673", "Parent" : "37"},
+	{"ID" : "252", "Level" : "3", "Path" : "`AUTOTB_DUT_INST.grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_227.grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_KW_LOOP_FLAT_LOOP_fu_201.hmul_16ns_16ns_16_4_max_dsp_1_U1674", "Parent" : "37"},
+	{"ID" : "253", "Level" : "3", "Path" : "`AUTOTB_DUT_INST.grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_227.grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_KW_LOOP_FLAT_LOOP_fu_201.hmul_16ns_16ns_16_4_max_dsp_1_U1675", "Parent" : "37"},
+	{"ID" : "254", "Level" : "3", "Path" : "`AUTOTB_DUT_INST.grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_227.grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_KW_LOOP_FLAT_LOOP_fu_201.hmul_16ns_16ns_16_4_max_dsp_1_U1676", "Parent" : "37"},
+	{"ID" : "255", "Level" : "3", "Path" : "`AUTOTB_DUT_INST.grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_227.grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_KW_LOOP_FLAT_LOOP_fu_201.hmul_16ns_16ns_16_4_max_dsp_1_U1677", "Parent" : "37"},
+	{"ID" : "256", "Level" : "3", "Path" : "`AUTOTB_DUT_INST.grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_227.grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_KW_LOOP_FLAT_LOOP_fu_201.hmul_16ns_16ns_16_4_max_dsp_1_U1678", "Parent" : "37"},
+	{"ID" : "257", "Level" : "3", "Path" : "`AUTOTB_DUT_INST.grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_227.grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_KW_LOOP_FLAT_LOOP_fu_201.hmul_16ns_16ns_16_4_max_dsp_1_U1679", "Parent" : "37"},
+	{"ID" : "258", "Level" : "3", "Path" : "`AUTOTB_DUT_INST.grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_227.grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_KW_LOOP_FLAT_LOOP_fu_201.hmul_16ns_16ns_16_4_max_dsp_1_U1680", "Parent" : "37"},
+	{"ID" : "259", "Level" : "3", "Path" : "`AUTOTB_DUT_INST.grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_227.grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_KW_LOOP_FLAT_LOOP_fu_201.hmul_16ns_16ns_16_4_max_dsp_1_U1681", "Parent" : "37"},
+	{"ID" : "260", "Level" : "3", "Path" : "`AUTOTB_DUT_INST.grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_227.grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_KW_LOOP_FLAT_LOOP_fu_201.hmul_16ns_16ns_16_4_max_dsp_1_U1682", "Parent" : "37"},
+	{"ID" : "261", "Level" : "3", "Path" : "`AUTOTB_DUT_INST.grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_227.grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_KW_LOOP_FLAT_LOOP_fu_201.hmul_16ns_16ns_16_4_max_dsp_1_U1683", "Parent" : "37"},
+	{"ID" : "262", "Level" : "3", "Path" : "`AUTOTB_DUT_INST.grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_227.grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_KW_LOOP_FLAT_LOOP_fu_201.hmul_16ns_16ns_16_4_max_dsp_1_U1684", "Parent" : "37"},
+	{"ID" : "263", "Level" : "3", "Path" : "`AUTOTB_DUT_INST.grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_227.grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_KW_LOOP_FLAT_LOOP_fu_201.hmul_16ns_16ns_16_4_max_dsp_1_U1685", "Parent" : "37"},
+	{"ID" : "264", "Level" : "3", "Path" : "`AUTOTB_DUT_INST.grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_227.grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_KW_LOOP_FLAT_LOOP_fu_201.hmul_16ns_16ns_16_4_max_dsp_1_U1686", "Parent" : "37"},
+	{"ID" : "265", "Level" : "3", "Path" : "`AUTOTB_DUT_INST.grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_227.grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_KW_LOOP_FLAT_LOOP_fu_201.hmul_16ns_16ns_16_4_max_dsp_1_U1687", "Parent" : "37"},
+	{"ID" : "266", "Level" : "3", "Path" : "`AUTOTB_DUT_INST.grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_227.grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_KW_LOOP_FLAT_LOOP_fu_201.hmul_16ns_16ns_16_4_max_dsp_1_U1688", "Parent" : "37"},
+	{"ID" : "267", "Level" : "3", "Path" : "`AUTOTB_DUT_INST.grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_227.grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_KW_LOOP_FLAT_LOOP_fu_201.hmul_16ns_16ns_16_4_max_dsp_1_U1689", "Parent" : "37"},
+	{"ID" : "268", "Level" : "3", "Path" : "`AUTOTB_DUT_INST.grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_227.grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_KW_LOOP_FLAT_LOOP_fu_201.hmul_16ns_16ns_16_4_max_dsp_1_U1690", "Parent" : "37"},
+	{"ID" : "269", "Level" : "3", "Path" : "`AUTOTB_DUT_INST.grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_227.grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_KW_LOOP_FLAT_LOOP_fu_201.hmul_16ns_16ns_16_4_max_dsp_1_U1691", "Parent" : "37"},
+	{"ID" : "270", "Level" : "3", "Path" : "`AUTOTB_DUT_INST.grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_227.grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_KW_LOOP_FLAT_LOOP_fu_201.hmul_16ns_16ns_16_4_max_dsp_1_U1692", "Parent" : "37"},
+	{"ID" : "271", "Level" : "3", "Path" : "`AUTOTB_DUT_INST.grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_227.grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_KW_LOOP_FLAT_LOOP_fu_201.hmul_16ns_16ns_16_4_max_dsp_1_U1693", "Parent" : "37"},
+	{"ID" : "272", "Level" : "3", "Path" : "`AUTOTB_DUT_INST.grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_227.grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_KW_LOOP_FLAT_LOOP_fu_201.hmul_16ns_16ns_16_4_max_dsp_1_U1694", "Parent" : "37"},
+	{"ID" : "273", "Level" : "3", "Path" : "`AUTOTB_DUT_INST.grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_227.grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_KW_LOOP_FLAT_LOOP_fu_201.hmul_16ns_16ns_16_4_max_dsp_1_U1695", "Parent" : "37"},
+	{"ID" : "274", "Level" : "3", "Path" : "`AUTOTB_DUT_INST.grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_227.grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_KW_LOOP_FLAT_LOOP_fu_201.hmul_16ns_16ns_16_4_max_dsp_1_U1696", "Parent" : "37"},
+	{"ID" : "275", "Level" : "3", "Path" : "`AUTOTB_DUT_INST.grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_227.grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_KW_LOOP_FLAT_LOOP_fu_201.hmul_16ns_16ns_16_4_max_dsp_1_U1697", "Parent" : "37"},
+	{"ID" : "276", "Level" : "3", "Path" : "`AUTOTB_DUT_INST.grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_227.grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_KW_LOOP_FLAT_LOOP_fu_201.hmul_16ns_16ns_16_4_max_dsp_1_U1698", "Parent" : "37"},
+	{"ID" : "277", "Level" : "3", "Path" : "`AUTOTB_DUT_INST.grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_227.grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_KW_LOOP_FLAT_LOOP_fu_201.hmul_16ns_16ns_16_4_max_dsp_1_U1699", "Parent" : "37"},
+	{"ID" : "278", "Level" : "3", "Path" : "`AUTOTB_DUT_INST.grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_227.grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_KW_LOOP_FLAT_LOOP_fu_201.hmul_16ns_16ns_16_4_max_dsp_1_U1700", "Parent" : "37"},
+	{"ID" : "279", "Level" : "3", "Path" : "`AUTOTB_DUT_INST.grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_227.grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_KW_LOOP_FLAT_LOOP_fu_201.hmul_16ns_16ns_16_4_max_dsp_1_U1701", "Parent" : "37"},
+	{"ID" : "280", "Level" : "3", "Path" : "`AUTOTB_DUT_INST.grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_227.grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_KW_LOOP_FLAT_LOOP_fu_201.hmul_16ns_16ns_16_4_max_dsp_1_U1702", "Parent" : "37"},
+	{"ID" : "281", "Level" : "3", "Path" : "`AUTOTB_DUT_INST.grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_227.grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_KW_LOOP_FLAT_LOOP_fu_201.hmul_16ns_16ns_16_4_max_dsp_1_U1703", "Parent" : "37"},
+	{"ID" : "282", "Level" : "3", "Path" : "`AUTOTB_DUT_INST.grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_227.grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_KW_LOOP_FLAT_LOOP_fu_201.hmul_16ns_16ns_16_4_max_dsp_1_U1704", "Parent" : "37"},
+	{"ID" : "283", "Level" : "3", "Path" : "`AUTOTB_DUT_INST.grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_227.grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_KW_LOOP_FLAT_LOOP_fu_201.hmul_16ns_16ns_16_4_max_dsp_1_U1705", "Parent" : "37"},
+	{"ID" : "284", "Level" : "3", "Path" : "`AUTOTB_DUT_INST.grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_227.grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_KW_LOOP_FLAT_LOOP_fu_201.hmul_16ns_16ns_16_4_max_dsp_1_U1706", "Parent" : "37"},
+	{"ID" : "285", "Level" : "3", "Path" : "`AUTOTB_DUT_INST.grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_227.grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_KW_LOOP_FLAT_LOOP_fu_201.hmul_16ns_16ns_16_4_max_dsp_1_U1707", "Parent" : "37"},
+	{"ID" : "286", "Level" : "3", "Path" : "`AUTOTB_DUT_INST.grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_227.grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_KW_LOOP_FLAT_LOOP_fu_201.sparsemux_9_2_16_1_1_U1708", "Parent" : "37"},
+	{"ID" : "287", "Level" : "3", "Path" : "`AUTOTB_DUT_INST.grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_227.grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_KW_LOOP_FLAT_LOOP_fu_201.sparsemux_9_2_16_1_1_U1709", "Parent" : "37"},
+	{"ID" : "288", "Level" : "3", "Path" : "`AUTOTB_DUT_INST.grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_227.grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_KW_LOOP_FLAT_LOOP_fu_201.sparsemux_9_2_16_1_1_U1710", "Parent" : "37"},
+	{"ID" : "289", "Level" : "3", "Path" : "`AUTOTB_DUT_INST.grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_227.grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_KW_LOOP_FLAT_LOOP_fu_201.sparsemux_9_2_16_1_1_U1711", "Parent" : "37"},
+	{"ID" : "290", "Level" : "3", "Path" : "`AUTOTB_DUT_INST.grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_227.grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_KW_LOOP_FLAT_LOOP_fu_201.sparsemux_9_2_16_1_1_U1712", "Parent" : "37"},
+	{"ID" : "291", "Level" : "3", "Path" : "`AUTOTB_DUT_INST.grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_227.grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_KW_LOOP_FLAT_LOOP_fu_201.sparsemux_9_2_16_1_1_U1713", "Parent" : "37"},
+	{"ID" : "292", "Level" : "3", "Path" : "`AUTOTB_DUT_INST.grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_227.grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_KW_LOOP_FLAT_LOOP_fu_201.sparsemux_9_2_16_1_1_U1714", "Parent" : "37"},
+	{"ID" : "293", "Level" : "3", "Path" : "`AUTOTB_DUT_INST.grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_227.grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_KW_LOOP_FLAT_LOOP_fu_201.sparsemux_9_2_16_1_1_U1715", "Parent" : "37"},
+	{"ID" : "294", "Level" : "3", "Path" : "`AUTOTB_DUT_INST.grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_227.grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_KW_LOOP_FLAT_LOOP_fu_201.flow_control_loop_pipe_sequential_init_U", "Parent" : "37"},
+	{"ID" : "295", "Level" : "1", "Path" : "`AUTOTB_DUT_INST.grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_PIXEL_STATS_fu_270", "Parent" : "0", "Child" : ["296", "297", "298", "299", "300", "301", "302", "303", "304", "305", "306", "307", "308", "309", "310", "311", "312", "313", "314", "315", "316", "317", "318", "319", "320", "321", "322", "323", "324", "325", "326"],
+		"CDFG" : "UpConv_Fused_Row_8_32_32_480_240_Pipeline_PIXEL_STATS",
 		"Protocol" : "ap_ctrl_hs",
 		"ControlExist" : "1", "ap_start" : "1", "ap_ready" : "1", "ap_done" : "1", "ap_continue" : "0", "ap_idle" : "1", "real_start" : "0",
 		"Pipeline" : "None", "UnalignedPipeline" : "0", "RewindPipeline" : "0", "ProcessNetwork" : "0",
 		"II" : "0",
-		"VariableLatency" : "1", "ExactLatency" : "-1", "EstimateLatencyMin" : "39", "EstimateLatencyMax" : "39",
+		"VariableLatency" : "1", "ExactLatency" : "-1", "EstimateLatencyMin" : "15590", "EstimateLatencyMax" : "15590",
 		"Combinational" : "0",
 		"Datapath" : "0",
 		"ClockEnable" : "0",
@@ -1012,15 +1020,86 @@ set RtlHierarchyInfo {[
 		"HasNonBlockingOperation" : "0",
 		"IsBlackBox" : "0",
 		"Port" : [
-			{"Name" : "gmem_out", "Type" : "MAXI", "Direction" : "O",
-				"BlockSignal" : [
-					{"Name" : "gmem_out_blk_n_W", "Type" : "RtlSignal"}]},
-			{"Name" : "sext_ln238", "Type" : "None", "Direction" : "I"},
-			{"Name" : "mul_ln246", "Type" : "None", "Direction" : "I"},
+			{"Name" : "conv3", "Type" : "None", "Direction" : "I"},
+			{"Name" : "b_buf", "Type" : "Memory", "Direction" : "I"},
+			{"Name" : "mean_buf_1", "Type" : "Memory", "Direction" : "O"},
+			{"Name" : "inv_buf_1", "Type" : "Memory", "Direction" : "O"},
+			{"Name" : "void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_19", "Type" : "Memory", "Direction" : "IO"},
+			{"Name" : "void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_18", "Type" : "Memory", "Direction" : "IO"},
+			{"Name" : "void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_17", "Type" : "Memory", "Direction" : "IO"},
+			{"Name" : "void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_16", "Type" : "Memory", "Direction" : "IO"},
+			{"Name" : "void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_15", "Type" : "Memory", "Direction" : "IO"},
+			{"Name" : "void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_14", "Type" : "Memory", "Direction" : "IO"},
+			{"Name" : "void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_13", "Type" : "Memory", "Direction" : "IO"},
+			{"Name" : "void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_12", "Type" : "Memory", "Direction" : "IO"},
+			{"Name" : "void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_11", "Type" : "Memory", "Direction" : "IO"},
+			{"Name" : "void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_10", "Type" : "Memory", "Direction" : "IO"},
+			{"Name" : "p_ZZ16UpConv_Fused_RowILi8ELi32ELi32ELi480ELi240EEvP7ap_uintILi256EEPKS1_S4_S4_S4_5", "Type" : "Memory", "Direction" : "IO"},
+			{"Name" : "p_ZZ16UpConv_Fused_RowILi8ELi32ELi32ELi480ELi240EEvP7ap_uintILi256EEPKS1_S4_S4_S4_4", "Type" : "Memory", "Direction" : "IO"},
+			{"Name" : "p_ZZ16UpConv_Fused_RowILi8ELi32ELi32ELi480ELi240EEvP7ap_uintILi256EEPKS1_S4_S4_S4_3", "Type" : "Memory", "Direction" : "IO"},
+			{"Name" : "p_ZZ16UpConv_Fused_RowILi8ELi32ELi32ELi480ELi240EEvP7ap_uintILi256EEPKS1_S4_S4_S4_2", "Type" : "Memory", "Direction" : "IO"},
+			{"Name" : "p_ZZ16UpConv_Fused_RowILi8ELi32ELi32ELi480ELi240EEvP7ap_uintILi256EEPKS1_S4_S4_S4_1", "Type" : "Memory", "Direction" : "IO"},
+			{"Name" : "p_ZZ16UpConv_Fused_RowILi8ELi32ELi32ELi480ELi240EEvP7ap_uintILi256EEPKS1_S4_S4_S4", "Type" : "Memory", "Direction" : "IO"}],
+		"Loop" : [
+			{"Name" : "PIXEL_STATS", "PipelineType" : "UPC",
+				"LoopDec" : {"FSMBitwidth" : "1", "FirstState" : "ap_ST_fsm_pp0_stage0", "FirstStateIter" : "ap_enable_reg_pp0_iter0", "FirstStateBlock" : "ap_block_pp0_stage0_subdone", "LastState" : "ap_ST_fsm_pp0_stage0", "LastStateIter" : "ap_enable_reg_pp0_iter230", "LastStateBlock" : "ap_block_pp0_stage0_subdone", "QuitState" : "ap_ST_fsm_pp0_stage0", "QuitStateIter" : "ap_enable_reg_pp0_iter230", "QuitStateBlock" : "ap_block_pp0_stage0_subdone", "OneDepthLoop" : "0", "has_ap_ctrl" : "1", "has_continue" : "0"}}]},
+	{"ID" : "296", "Level" : "2", "Path" : "`AUTOTB_DUT_INST.grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_PIXEL_STATS_fu_270.fadd_32ns_32ns_32_11_full_dsp_1_U1821", "Parent" : "295"},
+	{"ID" : "297", "Level" : "2", "Path" : "`AUTOTB_DUT_INST.grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_PIXEL_STATS_fu_270.fadd_32ns_32ns_32_11_full_dsp_1_U1822", "Parent" : "295"},
+	{"ID" : "298", "Level" : "2", "Path" : "`AUTOTB_DUT_INST.grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_PIXEL_STATS_fu_270.fadd_32ns_32ns_32_11_full_dsp_1_U1823", "Parent" : "295"},
+	{"ID" : "299", "Level" : "2", "Path" : "`AUTOTB_DUT_INST.grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_PIXEL_STATS_fu_270.fadd_32ns_32ns_32_11_full_dsp_1_U1824", "Parent" : "295"},
+	{"ID" : "300", "Level" : "2", "Path" : "`AUTOTB_DUT_INST.grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_PIXEL_STATS_fu_270.fadd_32ns_32ns_32_11_full_dsp_1_U1825", "Parent" : "295"},
+	{"ID" : "301", "Level" : "2", "Path" : "`AUTOTB_DUT_INST.grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_PIXEL_STATS_fu_270.fadd_32ns_32ns_32_11_full_dsp_1_U1826", "Parent" : "295"},
+	{"ID" : "302", "Level" : "2", "Path" : "`AUTOTB_DUT_INST.grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_PIXEL_STATS_fu_270.fadd_32ns_32ns_32_11_full_dsp_1_U1827", "Parent" : "295"},
+	{"ID" : "303", "Level" : "2", "Path" : "`AUTOTB_DUT_INST.grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_PIXEL_STATS_fu_270.fadd_32ns_32ns_32_11_full_dsp_1_U1828", "Parent" : "295"},
+	{"ID" : "304", "Level" : "2", "Path" : "`AUTOTB_DUT_INST.grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_PIXEL_STATS_fu_270.fadd_32ns_32ns_32_11_full_dsp_1_U1829", "Parent" : "295"},
+	{"ID" : "305", "Level" : "2", "Path" : "`AUTOTB_DUT_INST.grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_PIXEL_STATS_fu_270.fadd_32ns_32ns_32_11_full_dsp_1_U1830", "Parent" : "295"},
+	{"ID" : "306", "Level" : "2", "Path" : "`AUTOTB_DUT_INST.grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_PIXEL_STATS_fu_270.fadd_32ns_32ns_32_11_full_dsp_1_U1831", "Parent" : "295"},
+	{"ID" : "307", "Level" : "2", "Path" : "`AUTOTB_DUT_INST.grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_PIXEL_STATS_fu_270.fadd_32ns_32ns_32_11_full_dsp_1_U1832", "Parent" : "295"},
+	{"ID" : "308", "Level" : "2", "Path" : "`AUTOTB_DUT_INST.grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_PIXEL_STATS_fu_270.fadd_32ns_32ns_32_11_full_dsp_1_U1833", "Parent" : "295"},
+	{"ID" : "309", "Level" : "2", "Path" : "`AUTOTB_DUT_INST.grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_PIXEL_STATS_fu_270.fadd_32ns_32ns_32_11_full_dsp_1_U1834", "Parent" : "295"},
+	{"ID" : "310", "Level" : "2", "Path" : "`AUTOTB_DUT_INST.grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_PIXEL_STATS_fu_270.fadd_32ns_32ns_32_11_full_dsp_1_U1835", "Parent" : "295"},
+	{"ID" : "311", "Level" : "2", "Path" : "`AUTOTB_DUT_INST.grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_PIXEL_STATS_fu_270.fadd_32ns_32ns_32_11_full_dsp_1_U1836", "Parent" : "295"},
+	{"ID" : "312", "Level" : "2", "Path" : "`AUTOTB_DUT_INST.grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_PIXEL_STATS_fu_270.fadd_32ns_32ns_32_11_full_dsp_1_U1837", "Parent" : "295"},
+	{"ID" : "313", "Level" : "2", "Path" : "`AUTOTB_DUT_INST.grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_PIXEL_STATS_fu_270.fadd_32ns_32ns_32_11_full_dsp_1_U1838", "Parent" : "295"},
+	{"ID" : "314", "Level" : "2", "Path" : "`AUTOTB_DUT_INST.grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_PIXEL_STATS_fu_270.fsub_32ns_32ns_32_11_full_dsp_1_U1839", "Parent" : "295"},
+	{"ID" : "315", "Level" : "2", "Path" : "`AUTOTB_DUT_INST.grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_PIXEL_STATS_fu_270.fadd_32ns_32ns_32_11_full_dsp_1_U1840", "Parent" : "295"},
+	{"ID" : "316", "Level" : "2", "Path" : "`AUTOTB_DUT_INST.grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_PIXEL_STATS_fu_270.fmul_32ns_32ns_32_7_max_dsp_1_U1841", "Parent" : "295"},
+	{"ID" : "317", "Level" : "2", "Path" : "`AUTOTB_DUT_INST.grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_PIXEL_STATS_fu_270.fmul_32ns_32ns_32_7_max_dsp_1_U1842", "Parent" : "295"},
+	{"ID" : "318", "Level" : "2", "Path" : "`AUTOTB_DUT_INST.grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_PIXEL_STATS_fu_270.fdiv_32ns_32ns_32_30_no_dsp_1_U1843", "Parent" : "295"},
+	{"ID" : "319", "Level" : "2", "Path" : "`AUTOTB_DUT_INST.grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_PIXEL_STATS_fu_270.fdiv_32ns_32ns_32_30_no_dsp_1_U1844", "Parent" : "295"},
+	{"ID" : "320", "Level" : "2", "Path" : "`AUTOTB_DUT_INST.grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_PIXEL_STATS_fu_270.fdiv_32ns_32ns_32_30_no_dsp_1_U1845", "Parent" : "295"},
+	{"ID" : "321", "Level" : "2", "Path" : "`AUTOTB_DUT_INST.grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_PIXEL_STATS_fu_270.fsqrt_32ns_32ns_32_28_no_dsp_1_U1846", "Parent" : "295"},
+	{"ID" : "322", "Level" : "2", "Path" : "`AUTOTB_DUT_INST.grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_PIXEL_STATS_fu_270.partselect_16ns_256ns_32s_16_1_1_U1850", "Parent" : "295"},
+	{"ID" : "323", "Level" : "2", "Path" : "`AUTOTB_DUT_INST.grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_PIXEL_STATS_fu_270.sparsemux_33_4_16_1_1_U1851", "Parent" : "295"},
+	{"ID" : "324", "Level" : "2", "Path" : "`AUTOTB_DUT_INST.grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_PIXEL_STATS_fu_270.sparsemux_17_3_32_1_1_U1852", "Parent" : "295"},
+	{"ID" : "325", "Level" : "2", "Path" : "`AUTOTB_DUT_INST.grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_PIXEL_STATS_fu_270.sparsemux_17_3_32_1_1_U1853", "Parent" : "295"},
+	{"ID" : "326", "Level" : "2", "Path" : "`AUTOTB_DUT_INST.grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_PIXEL_STATS_fu_270.flow_control_loop_pipe_sequential_init_U", "Parent" : "295"},
+	{"ID" : "327", "Level" : "1", "Path" : "`AUTOTB_DUT_INST.grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_PIXEL_NORM_fu_312", "Parent" : "0", "Child" : ["328", "329", "330", "331", "332", "333", "334", "335", "336", "337", "338", "339", "340", "341", "342", "343", "344", "345", "346", "347", "348", "349", "350", "351", "352", "353", "354", "355", "356", "357", "358", "359", "360"],
+		"CDFG" : "UpConv_Fused_Row_8_32_32_480_240_Pipeline_PIXEL_NORM",
+		"Protocol" : "ap_ctrl_hs",
+		"ControlExist" : "1", "ap_start" : "1", "ap_ready" : "1", "ap_done" : "1", "ap_continue" : "0", "ap_idle" : "1", "real_start" : "0",
+		"Pipeline" : "None", "UnalignedPipeline" : "0", "RewindPipeline" : "0", "ProcessNetwork" : "0",
+		"II" : "0",
+		"VariableLatency" : "1", "ExactLatency" : "-1", "EstimateLatencyMin" : "990", "EstimateLatencyMax" : "990",
+		"Combinational" : "0",
+		"Datapath" : "0",
+		"ClockEnable" : "0",
+		"HasSubDataflow" : "0",
+		"InDataflowNetwork" : "0",
+		"HasNonBlockingOperation" : "0",
+		"IsBlackBox" : "0",
+		"Port" : [
 			{"Name" : "g_buf", "Type" : "Memory", "Direction" : "I"},
 			{"Name" : "be_buf", "Type" : "Memory", "Direction" : "I"},
-			{"Name" : "conv6", "Type" : "None", "Direction" : "I"},
-			{"Name" : "inv_std", "Type" : "None", "Direction" : "I"},
+			{"Name" : "zext_ln278", "Type" : "None", "Direction" : "I"},
+			{"Name" : "Y", "Type" : "None", "Direction" : "I"},
+			{"Name" : "gmem_out", "Type" : "MAXI", "Direction" : "O",
+				"BlockSignal" : [
+					{"Name" : "gmem_out_blk_n_AW", "Type" : "RtlSignal"},
+					{"Name" : "gmem_out_blk_n_W", "Type" : "RtlSignal"},
+					{"Name" : "gmem_out_blk_n_B", "Type" : "RtlSignal"}]},
+			{"Name" : "mean_buf_1", "Type" : "Memory", "Direction" : "I"},
+			{"Name" : "inv_buf_1", "Type" : "Memory", "Direction" : "I"},
 			{"Name" : "void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_19", "Type" : "Memory", "Direction" : "I"},
 			{"Name" : "void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_18", "Type" : "Memory", "Direction" : "I"},
 			{"Name" : "void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_17", "Type" : "Memory", "Direction" : "I"},
@@ -1038,109 +1117,105 @@ set RtlHierarchyInfo {[
 			{"Name" : "p_ZZ16UpConv_Fused_RowILi8ELi32ELi32ELi480ELi240EEvP7ap_uintILi256EEPKS1_S4_S4_S4_1", "Type" : "Memory", "Direction" : "I"},
 			{"Name" : "p_ZZ16UpConv_Fused_RowILi8ELi32ELi32ELi480ELi240EEvP7ap_uintILi256EEPKS1_S4_S4_S4", "Type" : "Memory", "Direction" : "I"}],
 		"Loop" : [
-			{"Name" : "NORM_WRITE", "PipelineType" : "UPC",
-				"LoopDec" : {"FSMBitwidth" : "1", "FirstState" : "ap_ST_fsm_pp0_stage0", "FirstStateIter" : "ap_enable_reg_pp0_iter0", "FirstStateBlock" : "ap_block_pp0_stage0_subdone", "LastState" : "ap_ST_fsm_pp0_stage0", "LastStateIter" : "ap_enable_reg_pp0_iter23", "LastStateBlock" : "ap_block_pp0_stage0_subdone", "QuitState" : "ap_ST_fsm_pp0_stage0", "QuitStateIter" : "ap_enable_reg_pp0_iter23", "QuitStateBlock" : "ap_block_pp0_stage0_subdone", "OneDepthLoop" : "0", "has_ap_ctrl" : "1", "has_continue" : "0"}}]},
-	{"ID" : "267", "Level" : "2", "Path" : "`AUTOTB_DUT_INST.grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_NORM_WRITE_fu_370.hsub_16ns_16ns_16_5_full_dsp_1_U1752", "Parent" : "266"},
-	{"ID" : "268", "Level" : "2", "Path" : "`AUTOTB_DUT_INST.grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_NORM_WRITE_fu_370.hsub_16ns_16ns_16_5_full_dsp_1_U1753", "Parent" : "266"},
-	{"ID" : "269", "Level" : "2", "Path" : "`AUTOTB_DUT_INST.grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_NORM_WRITE_fu_370.hsub_16ns_16ns_16_5_full_dsp_1_U1754", "Parent" : "266"},
-	{"ID" : "270", "Level" : "2", "Path" : "`AUTOTB_DUT_INST.grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_NORM_WRITE_fu_370.hsub_16ns_16ns_16_5_full_dsp_1_U1755", "Parent" : "266"},
-	{"ID" : "271", "Level" : "2", "Path" : "`AUTOTB_DUT_INST.grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_NORM_WRITE_fu_370.hsub_16ns_16ns_16_5_full_dsp_1_U1756", "Parent" : "266"},
-	{"ID" : "272", "Level" : "2", "Path" : "`AUTOTB_DUT_INST.grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_NORM_WRITE_fu_370.hsub_16ns_16ns_16_5_full_dsp_1_U1757", "Parent" : "266"},
-	{"ID" : "273", "Level" : "2", "Path" : "`AUTOTB_DUT_INST.grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_NORM_WRITE_fu_370.hsub_16ns_16ns_16_5_full_dsp_1_U1758", "Parent" : "266"},
-	{"ID" : "274", "Level" : "2", "Path" : "`AUTOTB_DUT_INST.grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_NORM_WRITE_fu_370.hsub_16ns_16ns_16_5_full_dsp_1_U1759", "Parent" : "266"},
-	{"ID" : "275", "Level" : "2", "Path" : "`AUTOTB_DUT_INST.grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_NORM_WRITE_fu_370.hsub_16ns_16ns_16_5_full_dsp_1_U1760", "Parent" : "266"},
-	{"ID" : "276", "Level" : "2", "Path" : "`AUTOTB_DUT_INST.grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_NORM_WRITE_fu_370.hsub_16ns_16ns_16_5_full_dsp_1_U1761", "Parent" : "266"},
-	{"ID" : "277", "Level" : "2", "Path" : "`AUTOTB_DUT_INST.grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_NORM_WRITE_fu_370.hsub_16ns_16ns_16_5_full_dsp_1_U1762", "Parent" : "266"},
-	{"ID" : "278", "Level" : "2", "Path" : "`AUTOTB_DUT_INST.grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_NORM_WRITE_fu_370.hsub_16ns_16ns_16_5_full_dsp_1_U1763", "Parent" : "266"},
-	{"ID" : "279", "Level" : "2", "Path" : "`AUTOTB_DUT_INST.grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_NORM_WRITE_fu_370.hsub_16ns_16ns_16_5_full_dsp_1_U1764", "Parent" : "266"},
-	{"ID" : "280", "Level" : "2", "Path" : "`AUTOTB_DUT_INST.grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_NORM_WRITE_fu_370.hsub_16ns_16ns_16_5_full_dsp_1_U1765", "Parent" : "266"},
-	{"ID" : "281", "Level" : "2", "Path" : "`AUTOTB_DUT_INST.grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_NORM_WRITE_fu_370.hsub_16ns_16ns_16_5_full_dsp_1_U1766", "Parent" : "266"},
-	{"ID" : "282", "Level" : "2", "Path" : "`AUTOTB_DUT_INST.grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_NORM_WRITE_fu_370.hsub_16ns_16ns_16_5_full_dsp_1_U1767", "Parent" : "266"},
-	{"ID" : "283", "Level" : "2", "Path" : "`AUTOTB_DUT_INST.grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_NORM_WRITE_fu_370.hcmp_16ns_16ns_1_2_no_dsp_1_U1800", "Parent" : "266"},
-	{"ID" : "284", "Level" : "2", "Path" : "`AUTOTB_DUT_INST.grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_NORM_WRITE_fu_370.hcmp_16ns_16ns_1_2_no_dsp_1_U1801", "Parent" : "266"},
-	{"ID" : "285", "Level" : "2", "Path" : "`AUTOTB_DUT_INST.grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_NORM_WRITE_fu_370.hcmp_16ns_16ns_1_2_no_dsp_1_U1802", "Parent" : "266"},
-	{"ID" : "286", "Level" : "2", "Path" : "`AUTOTB_DUT_INST.grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_NORM_WRITE_fu_370.hcmp_16ns_16ns_1_2_no_dsp_1_U1803", "Parent" : "266"},
-	{"ID" : "287", "Level" : "2", "Path" : "`AUTOTB_DUT_INST.grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_NORM_WRITE_fu_370.hcmp_16ns_16ns_1_2_no_dsp_1_U1804", "Parent" : "266"},
-	{"ID" : "288", "Level" : "2", "Path" : "`AUTOTB_DUT_INST.grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_NORM_WRITE_fu_370.hcmp_16ns_16ns_1_2_no_dsp_1_U1805", "Parent" : "266"},
-	{"ID" : "289", "Level" : "2", "Path" : "`AUTOTB_DUT_INST.grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_NORM_WRITE_fu_370.hcmp_16ns_16ns_1_2_no_dsp_1_U1806", "Parent" : "266"},
-	{"ID" : "290", "Level" : "2", "Path" : "`AUTOTB_DUT_INST.grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_NORM_WRITE_fu_370.hcmp_16ns_16ns_1_2_no_dsp_1_U1807", "Parent" : "266"},
-	{"ID" : "291", "Level" : "2", "Path" : "`AUTOTB_DUT_INST.grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_NORM_WRITE_fu_370.hcmp_16ns_16ns_1_2_no_dsp_1_U1808", "Parent" : "266"},
-	{"ID" : "292", "Level" : "2", "Path" : "`AUTOTB_DUT_INST.grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_NORM_WRITE_fu_370.hcmp_16ns_16ns_1_2_no_dsp_1_U1809", "Parent" : "266"},
-	{"ID" : "293", "Level" : "2", "Path" : "`AUTOTB_DUT_INST.grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_NORM_WRITE_fu_370.hcmp_16ns_16ns_1_2_no_dsp_1_U1810", "Parent" : "266"},
-	{"ID" : "294", "Level" : "2", "Path" : "`AUTOTB_DUT_INST.grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_NORM_WRITE_fu_370.hcmp_16ns_16ns_1_2_no_dsp_1_U1811", "Parent" : "266"},
-	{"ID" : "295", "Level" : "2", "Path" : "`AUTOTB_DUT_INST.grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_NORM_WRITE_fu_370.hcmp_16ns_16ns_1_2_no_dsp_1_U1812", "Parent" : "266"},
-	{"ID" : "296", "Level" : "2", "Path" : "`AUTOTB_DUT_INST.grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_NORM_WRITE_fu_370.hcmp_16ns_16ns_1_2_no_dsp_1_U1813", "Parent" : "266"},
-	{"ID" : "297", "Level" : "2", "Path" : "`AUTOTB_DUT_INST.grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_NORM_WRITE_fu_370.hcmp_16ns_16ns_1_2_no_dsp_1_U1814", "Parent" : "266"},
-	{"ID" : "298", "Level" : "2", "Path" : "`AUTOTB_DUT_INST.grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_NORM_WRITE_fu_370.hcmp_16ns_16ns_1_2_no_dsp_1_U1815", "Parent" : "266"},
-	{"ID" : "299", "Level" : "2", "Path" : "`AUTOTB_DUT_INST.grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_NORM_WRITE_fu_370.flow_control_loop_pipe_sequential_init_U", "Parent" : "266"},
-	{"ID" : "300", "Level" : "1", "Path" : "`AUTOTB_DUT_INST.faddfsub_32ns_32ns_32_11_full_dsp_1_U1839", "Parent" : "0"},
-	{"ID" : "301", "Level" : "1", "Path" : "`AUTOTB_DUT_INST.fmul_32ns_32ns_32_7_max_dsp_1_U1840", "Parent" : "0"},
-	{"ID" : "302", "Level" : "1", "Path" : "`AUTOTB_DUT_INST.fdiv_32ns_32ns_32_30_no_dsp_1_U1841", "Parent" : "0"},
-	{"ID" : "303", "Level" : "1", "Path" : "`AUTOTB_DUT_INST.fsqrt_32ns_32ns_32_28_no_dsp_1_U1842", "Parent" : "0"},
-	{"ID" : "304", "Level" : "1", "Path" : "`AUTOTB_DUT_INST.sptohp_32ns_16_2_no_dsp_1_U1843", "Parent" : "0"},
-	{"ID" : "305", "Level" : "1", "Path" : "`AUTOTB_DUT_INST.hptosp_16ns_32_2_no_dsp_1_U1844", "Parent" : "0"},
-	{"ID" : "306", "Level" : "1", "Path" : "`AUTOTB_DUT_INST.hadd_16ns_16ns_16_5_full_dsp_1_U1845", "Parent" : "0"},
-	{"ID" : "307", "Level" : "1", "Path" : "`AUTOTB_DUT_INST.hadd_16ns_16ns_16_5_full_dsp_1_U1846", "Parent" : "0"},
-	{"ID" : "308", "Level" : "1", "Path" : "`AUTOTB_DUT_INST.hadd_16ns_16ns_16_5_full_dsp_1_U1847", "Parent" : "0"},
-	{"ID" : "309", "Level" : "1", "Path" : "`AUTOTB_DUT_INST.hadd_16ns_16ns_16_5_full_dsp_1_U1848", "Parent" : "0"},
-	{"ID" : "310", "Level" : "1", "Path" : "`AUTOTB_DUT_INST.hadd_16ns_16ns_16_5_full_dsp_1_U1849", "Parent" : "0"},
-	{"ID" : "311", "Level" : "1", "Path" : "`AUTOTB_DUT_INST.hadd_16ns_16ns_16_5_full_dsp_1_U1850", "Parent" : "0"},
-	{"ID" : "312", "Level" : "1", "Path" : "`AUTOTB_DUT_INST.hadd_16ns_16ns_16_5_full_dsp_1_U1851", "Parent" : "0"},
-	{"ID" : "313", "Level" : "1", "Path" : "`AUTOTB_DUT_INST.hadd_16ns_16ns_16_5_full_dsp_1_U1852", "Parent" : "0"},
-	{"ID" : "314", "Level" : "1", "Path" : "`AUTOTB_DUT_INST.hmul_16ns_16ns_16_4_max_dsp_1_U1853", "Parent" : "0"},
-	{"ID" : "315", "Level" : "1", "Path" : "`AUTOTB_DUT_INST.hmul_16ns_16ns_16_4_max_dsp_1_U1854", "Parent" : "0"},
-	{"ID" : "316", "Level" : "1", "Path" : "`AUTOTB_DUT_INST.hmul_16ns_16ns_16_4_max_dsp_1_U1855", "Parent" : "0"},
-	{"ID" : "317", "Level" : "1", "Path" : "`AUTOTB_DUT_INST.hmul_16ns_16ns_16_4_max_dsp_1_U1856", "Parent" : "0"},
-	{"ID" : "318", "Level" : "1", "Path" : "`AUTOTB_DUT_INST.hmul_16ns_16ns_16_4_max_dsp_1_U1857", "Parent" : "0"},
-	{"ID" : "319", "Level" : "1", "Path" : "`AUTOTB_DUT_INST.hmul_16ns_16ns_16_4_max_dsp_1_U1858", "Parent" : "0"},
-	{"ID" : "320", "Level" : "1", "Path" : "`AUTOTB_DUT_INST.hmul_16ns_16ns_16_4_max_dsp_1_U1859", "Parent" : "0"},
-	{"ID" : "321", "Level" : "1", "Path" : "`AUTOTB_DUT_INST.hmul_16ns_16ns_16_4_max_dsp_1_U1860", "Parent" : "0"},
-	{"ID" : "322", "Level" : "1", "Path" : "`AUTOTB_DUT_INST.hmul_16ns_16ns_16_4_max_dsp_1_U1861", "Parent" : "0"},
-	{"ID" : "323", "Level" : "1", "Path" : "`AUTOTB_DUT_INST.hmul_16ns_16ns_16_4_max_dsp_1_U1862", "Parent" : "0"},
-	{"ID" : "324", "Level" : "1", "Path" : "`AUTOTB_DUT_INST.hmul_16ns_16ns_16_4_max_dsp_1_U1863", "Parent" : "0"},
-	{"ID" : "325", "Level" : "1", "Path" : "`AUTOTB_DUT_INST.hmul_16ns_16ns_16_4_max_dsp_1_U1864", "Parent" : "0"},
-	{"ID" : "326", "Level" : "1", "Path" : "`AUTOTB_DUT_INST.hmul_16ns_16ns_16_4_max_dsp_1_U1865", "Parent" : "0"},
-	{"ID" : "327", "Level" : "1", "Path" : "`AUTOTB_DUT_INST.hmul_16ns_16ns_16_4_max_dsp_1_U1866", "Parent" : "0"},
-	{"ID" : "328", "Level" : "1", "Path" : "`AUTOTB_DUT_INST.hmul_16ns_16ns_16_4_max_dsp_1_U1867", "Parent" : "0"},
-	{"ID" : "329", "Level" : "1", "Path" : "`AUTOTB_DUT_INST.hmul_16ns_16ns_16_4_max_dsp_1_U1868", "Parent" : "0"},
-	{"ID" : "330", "Level" : "1", "Path" : "`AUTOTB_DUT_INST.hmul_16ns_16ns_16_4_max_dsp_1_U1869", "Parent" : "0"},
-	{"ID" : "331", "Level" : "1", "Path" : "`AUTOTB_DUT_INST.hmul_16ns_16ns_16_4_max_dsp_1_U1870", "Parent" : "0"},
-	{"ID" : "332", "Level" : "1", "Path" : "`AUTOTB_DUT_INST.hmul_16ns_16ns_16_4_max_dsp_1_U1871", "Parent" : "0"},
-	{"ID" : "333", "Level" : "1", "Path" : "`AUTOTB_DUT_INST.hmul_16ns_16ns_16_4_max_dsp_1_U1872", "Parent" : "0"},
-	{"ID" : "334", "Level" : "1", "Path" : "`AUTOTB_DUT_INST.hmul_16ns_16ns_16_4_max_dsp_1_U1873", "Parent" : "0"},
-	{"ID" : "335", "Level" : "1", "Path" : "`AUTOTB_DUT_INST.hmul_16ns_16ns_16_4_max_dsp_1_U1874", "Parent" : "0"},
-	{"ID" : "336", "Level" : "1", "Path" : "`AUTOTB_DUT_INST.hmul_16ns_16ns_16_4_max_dsp_1_U1875", "Parent" : "0"},
-	{"ID" : "337", "Level" : "1", "Path" : "`AUTOTB_DUT_INST.hmul_16ns_16ns_16_4_max_dsp_1_U1876", "Parent" : "0"},
-	{"ID" : "338", "Level" : "1", "Path" : "`AUTOTB_DUT_INST.hmul_16ns_16ns_16_4_max_dsp_1_U1877", "Parent" : "0"},
-	{"ID" : "339", "Level" : "1", "Path" : "`AUTOTB_DUT_INST.hmul_16ns_16ns_16_4_max_dsp_1_U1878", "Parent" : "0"},
-	{"ID" : "340", "Level" : "1", "Path" : "`AUTOTB_DUT_INST.hmul_16ns_16ns_16_4_max_dsp_1_U1879", "Parent" : "0"},
-	{"ID" : "341", "Level" : "1", "Path" : "`AUTOTB_DUT_INST.hmul_16ns_16ns_16_4_max_dsp_1_U1880", "Parent" : "0"},
-	{"ID" : "342", "Level" : "1", "Path" : "`AUTOTB_DUT_INST.hmul_16ns_16ns_16_4_max_dsp_1_U1881", "Parent" : "0"},
-	{"ID" : "343", "Level" : "1", "Path" : "`AUTOTB_DUT_INST.hmul_16ns_16ns_16_4_max_dsp_1_U1882", "Parent" : "0"},
-	{"ID" : "344", "Level" : "1", "Path" : "`AUTOTB_DUT_INST.hmul_16ns_16ns_16_4_max_dsp_1_U1883", "Parent" : "0"},
-	{"ID" : "345", "Level" : "1", "Path" : "`AUTOTB_DUT_INST.hmul_16ns_16ns_16_4_max_dsp_1_U1884", "Parent" : "0"},
-	{"ID" : "346", "Level" : "1", "Path" : "`AUTOTB_DUT_INST.hadd_16ns_16ns_16_5_full_dsp_1_U1885", "Parent" : "0"},
-	{"ID" : "347", "Level" : "1", "Path" : "`AUTOTB_DUT_INST.hadd_16ns_16ns_16_5_full_dsp_1_U1886", "Parent" : "0"},
-	{"ID" : "348", "Level" : "1", "Path" : "`AUTOTB_DUT_INST.hadd_16ns_16ns_16_5_full_dsp_1_U1887", "Parent" : "0"},
-	{"ID" : "349", "Level" : "1", "Path" : "`AUTOTB_DUT_INST.hadd_16ns_16ns_16_5_full_dsp_1_U1888", "Parent" : "0"},
-	{"ID" : "350", "Level" : "1", "Path" : "`AUTOTB_DUT_INST.hadd_16ns_16ns_16_5_full_dsp_1_U1889", "Parent" : "0"},
-	{"ID" : "351", "Level" : "1", "Path" : "`AUTOTB_DUT_INST.hadd_16ns_16ns_16_5_full_dsp_1_U1890", "Parent" : "0"},
-	{"ID" : "352", "Level" : "1", "Path" : "`AUTOTB_DUT_INST.hadd_16ns_16ns_16_5_full_dsp_1_U1891", "Parent" : "0"},
-	{"ID" : "353", "Level" : "1", "Path" : "`AUTOTB_DUT_INST.hadd_16ns_16ns_16_5_full_dsp_1_U1892", "Parent" : "0"}]}
+			{"Name" : "PIXEL_NORM", "PipelineType" : "UPC",
+				"LoopDec" : {"FSMBitwidth" : "1", "FirstState" : "ap_ST_fsm_pp0_stage0", "FirstStateIter" : "ap_enable_reg_pp0_iter0", "FirstStateBlock" : "ap_block_pp0_stage0_subdone", "LastState" : "ap_ST_fsm_pp0_stage0", "LastStateIter" : "ap_enable_reg_pp0_iter30", "LastStateBlock" : "ap_block_pp0_stage0_subdone", "QuitState" : "ap_ST_fsm_pp0_stage0", "QuitStateIter" : "ap_enable_reg_pp0_iter30", "QuitStateBlock" : "ap_block_pp0_stage0_subdone", "OneDepthLoop" : "0", "has_ap_ctrl" : "1", "has_continue" : "0"}}]},
+	{"ID" : "328", "Level" : "2", "Path" : "`AUTOTB_DUT_INST.grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_PIXEL_NORM_fu_312.hsub_16ns_16ns_16_5_full_dsp_1_U1891", "Parent" : "327"},
+	{"ID" : "329", "Level" : "2", "Path" : "`AUTOTB_DUT_INST.grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_PIXEL_NORM_fu_312.hsub_16ns_16ns_16_5_full_dsp_1_U1892", "Parent" : "327"},
+	{"ID" : "330", "Level" : "2", "Path" : "`AUTOTB_DUT_INST.grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_PIXEL_NORM_fu_312.hsub_16ns_16ns_16_5_full_dsp_1_U1893", "Parent" : "327"},
+	{"ID" : "331", "Level" : "2", "Path" : "`AUTOTB_DUT_INST.grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_PIXEL_NORM_fu_312.hsub_16ns_16ns_16_5_full_dsp_1_U1894", "Parent" : "327"},
+	{"ID" : "332", "Level" : "2", "Path" : "`AUTOTB_DUT_INST.grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_PIXEL_NORM_fu_312.hsub_16ns_16ns_16_5_full_dsp_1_U1895", "Parent" : "327"},
+	{"ID" : "333", "Level" : "2", "Path" : "`AUTOTB_DUT_INST.grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_PIXEL_NORM_fu_312.hsub_16ns_16ns_16_5_full_dsp_1_U1896", "Parent" : "327"},
+	{"ID" : "334", "Level" : "2", "Path" : "`AUTOTB_DUT_INST.grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_PIXEL_NORM_fu_312.hsub_16ns_16ns_16_5_full_dsp_1_U1897", "Parent" : "327"},
+	{"ID" : "335", "Level" : "2", "Path" : "`AUTOTB_DUT_INST.grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_PIXEL_NORM_fu_312.hsub_16ns_16ns_16_5_full_dsp_1_U1898", "Parent" : "327"},
+	{"ID" : "336", "Level" : "2", "Path" : "`AUTOTB_DUT_INST.grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_PIXEL_NORM_fu_312.hsub_16ns_16ns_16_5_full_dsp_1_U1899", "Parent" : "327"},
+	{"ID" : "337", "Level" : "2", "Path" : "`AUTOTB_DUT_INST.grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_PIXEL_NORM_fu_312.hsub_16ns_16ns_16_5_full_dsp_1_U1900", "Parent" : "327"},
+	{"ID" : "338", "Level" : "2", "Path" : "`AUTOTB_DUT_INST.grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_PIXEL_NORM_fu_312.hsub_16ns_16ns_16_5_full_dsp_1_U1901", "Parent" : "327"},
+	{"ID" : "339", "Level" : "2", "Path" : "`AUTOTB_DUT_INST.grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_PIXEL_NORM_fu_312.hsub_16ns_16ns_16_5_full_dsp_1_U1902", "Parent" : "327"},
+	{"ID" : "340", "Level" : "2", "Path" : "`AUTOTB_DUT_INST.grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_PIXEL_NORM_fu_312.hsub_16ns_16ns_16_5_full_dsp_1_U1903", "Parent" : "327"},
+	{"ID" : "341", "Level" : "2", "Path" : "`AUTOTB_DUT_INST.grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_PIXEL_NORM_fu_312.hsub_16ns_16ns_16_5_full_dsp_1_U1904", "Parent" : "327"},
+	{"ID" : "342", "Level" : "2", "Path" : "`AUTOTB_DUT_INST.grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_PIXEL_NORM_fu_312.hsub_16ns_16ns_16_5_full_dsp_1_U1905", "Parent" : "327"},
+	{"ID" : "343", "Level" : "2", "Path" : "`AUTOTB_DUT_INST.grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_PIXEL_NORM_fu_312.hsub_16ns_16ns_16_5_full_dsp_1_U1906", "Parent" : "327"},
+	{"ID" : "344", "Level" : "2", "Path" : "`AUTOTB_DUT_INST.grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_PIXEL_NORM_fu_312.hcmp_16ns_16ns_1_2_no_dsp_1_U1939", "Parent" : "327"},
+	{"ID" : "345", "Level" : "2", "Path" : "`AUTOTB_DUT_INST.grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_PIXEL_NORM_fu_312.hcmp_16ns_16ns_1_2_no_dsp_1_U1940", "Parent" : "327"},
+	{"ID" : "346", "Level" : "2", "Path" : "`AUTOTB_DUT_INST.grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_PIXEL_NORM_fu_312.hcmp_16ns_16ns_1_2_no_dsp_1_U1941", "Parent" : "327"},
+	{"ID" : "347", "Level" : "2", "Path" : "`AUTOTB_DUT_INST.grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_PIXEL_NORM_fu_312.hcmp_16ns_16ns_1_2_no_dsp_1_U1942", "Parent" : "327"},
+	{"ID" : "348", "Level" : "2", "Path" : "`AUTOTB_DUT_INST.grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_PIXEL_NORM_fu_312.hcmp_16ns_16ns_1_2_no_dsp_1_U1943", "Parent" : "327"},
+	{"ID" : "349", "Level" : "2", "Path" : "`AUTOTB_DUT_INST.grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_PIXEL_NORM_fu_312.hcmp_16ns_16ns_1_2_no_dsp_1_U1944", "Parent" : "327"},
+	{"ID" : "350", "Level" : "2", "Path" : "`AUTOTB_DUT_INST.grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_PIXEL_NORM_fu_312.hcmp_16ns_16ns_1_2_no_dsp_1_U1945", "Parent" : "327"},
+	{"ID" : "351", "Level" : "2", "Path" : "`AUTOTB_DUT_INST.grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_PIXEL_NORM_fu_312.hcmp_16ns_16ns_1_2_no_dsp_1_U1946", "Parent" : "327"},
+	{"ID" : "352", "Level" : "2", "Path" : "`AUTOTB_DUT_INST.grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_PIXEL_NORM_fu_312.hcmp_16ns_16ns_1_2_no_dsp_1_U1947", "Parent" : "327"},
+	{"ID" : "353", "Level" : "2", "Path" : "`AUTOTB_DUT_INST.grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_PIXEL_NORM_fu_312.hcmp_16ns_16ns_1_2_no_dsp_1_U1948", "Parent" : "327"},
+	{"ID" : "354", "Level" : "2", "Path" : "`AUTOTB_DUT_INST.grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_PIXEL_NORM_fu_312.hcmp_16ns_16ns_1_2_no_dsp_1_U1949", "Parent" : "327"},
+	{"ID" : "355", "Level" : "2", "Path" : "`AUTOTB_DUT_INST.grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_PIXEL_NORM_fu_312.hcmp_16ns_16ns_1_2_no_dsp_1_U1950", "Parent" : "327"},
+	{"ID" : "356", "Level" : "2", "Path" : "`AUTOTB_DUT_INST.grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_PIXEL_NORM_fu_312.hcmp_16ns_16ns_1_2_no_dsp_1_U1951", "Parent" : "327"},
+	{"ID" : "357", "Level" : "2", "Path" : "`AUTOTB_DUT_INST.grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_PIXEL_NORM_fu_312.hcmp_16ns_16ns_1_2_no_dsp_1_U1952", "Parent" : "327"},
+	{"ID" : "358", "Level" : "2", "Path" : "`AUTOTB_DUT_INST.grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_PIXEL_NORM_fu_312.hcmp_16ns_16ns_1_2_no_dsp_1_U1953", "Parent" : "327"},
+	{"ID" : "359", "Level" : "2", "Path" : "`AUTOTB_DUT_INST.grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_PIXEL_NORM_fu_312.hcmp_16ns_16ns_1_2_no_dsp_1_U1954", "Parent" : "327"},
+	{"ID" : "360", "Level" : "2", "Path" : "`AUTOTB_DUT_INST.grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_PIXEL_NORM_fu_312.flow_control_loop_pipe_sequential_init_U", "Parent" : "327"},
+	{"ID" : "361", "Level" : "1", "Path" : "`AUTOTB_DUT_INST.hptosp_16ns_32_2_no_dsp_1_U1978", "Parent" : "0"},
+	{"ID" : "362", "Level" : "1", "Path" : "`AUTOTB_DUT_INST.hadd_16ns_16ns_16_5_full_dsp_1_U1979", "Parent" : "0"},
+	{"ID" : "363", "Level" : "1", "Path" : "`AUTOTB_DUT_INST.hadd_16ns_16ns_16_5_full_dsp_1_U1980", "Parent" : "0"},
+	{"ID" : "364", "Level" : "1", "Path" : "`AUTOTB_DUT_INST.hadd_16ns_16ns_16_5_full_dsp_1_U1981", "Parent" : "0"},
+	{"ID" : "365", "Level" : "1", "Path" : "`AUTOTB_DUT_INST.hadd_16ns_16ns_16_5_full_dsp_1_U1982", "Parent" : "0"},
+	{"ID" : "366", "Level" : "1", "Path" : "`AUTOTB_DUT_INST.hadd_16ns_16ns_16_5_full_dsp_1_U1983", "Parent" : "0"},
+	{"ID" : "367", "Level" : "1", "Path" : "`AUTOTB_DUT_INST.hadd_16ns_16ns_16_5_full_dsp_1_U1984", "Parent" : "0"},
+	{"ID" : "368", "Level" : "1", "Path" : "`AUTOTB_DUT_INST.hadd_16ns_16ns_16_5_full_dsp_1_U1985", "Parent" : "0"},
+	{"ID" : "369", "Level" : "1", "Path" : "`AUTOTB_DUT_INST.hadd_16ns_16ns_16_5_full_dsp_1_U1986", "Parent" : "0"},
+	{"ID" : "370", "Level" : "1", "Path" : "`AUTOTB_DUT_INST.hadd_16ns_16ns_16_5_full_dsp_1_U1987", "Parent" : "0"},
+	{"ID" : "371", "Level" : "1", "Path" : "`AUTOTB_DUT_INST.hadd_16ns_16ns_16_5_full_dsp_1_U1988", "Parent" : "0"},
+	{"ID" : "372", "Level" : "1", "Path" : "`AUTOTB_DUT_INST.hadd_16ns_16ns_16_5_full_dsp_1_U1989", "Parent" : "0"},
+	{"ID" : "373", "Level" : "1", "Path" : "`AUTOTB_DUT_INST.hadd_16ns_16ns_16_5_full_dsp_1_U1990", "Parent" : "0"},
+	{"ID" : "374", "Level" : "1", "Path" : "`AUTOTB_DUT_INST.hadd_16ns_16ns_16_5_full_dsp_1_U1991", "Parent" : "0"},
+	{"ID" : "375", "Level" : "1", "Path" : "`AUTOTB_DUT_INST.hadd_16ns_16ns_16_5_full_dsp_1_U1992", "Parent" : "0"},
+	{"ID" : "376", "Level" : "1", "Path" : "`AUTOTB_DUT_INST.hadd_16ns_16ns_16_5_full_dsp_1_U1993", "Parent" : "0"},
+	{"ID" : "377", "Level" : "1", "Path" : "`AUTOTB_DUT_INST.hadd_16ns_16ns_16_5_full_dsp_1_U1994", "Parent" : "0"},
+	{"ID" : "378", "Level" : "1", "Path" : "`AUTOTB_DUT_INST.hmul_16ns_16ns_16_4_max_dsp_1_U1995", "Parent" : "0"},
+	{"ID" : "379", "Level" : "1", "Path" : "`AUTOTB_DUT_INST.hmul_16ns_16ns_16_4_max_dsp_1_U1996", "Parent" : "0"},
+	{"ID" : "380", "Level" : "1", "Path" : "`AUTOTB_DUT_INST.hmul_16ns_16ns_16_4_max_dsp_1_U1997", "Parent" : "0"},
+	{"ID" : "381", "Level" : "1", "Path" : "`AUTOTB_DUT_INST.hmul_16ns_16ns_16_4_max_dsp_1_U1998", "Parent" : "0"},
+	{"ID" : "382", "Level" : "1", "Path" : "`AUTOTB_DUT_INST.hmul_16ns_16ns_16_4_max_dsp_1_U1999", "Parent" : "0"},
+	{"ID" : "383", "Level" : "1", "Path" : "`AUTOTB_DUT_INST.hmul_16ns_16ns_16_4_max_dsp_1_U2000", "Parent" : "0"},
+	{"ID" : "384", "Level" : "1", "Path" : "`AUTOTB_DUT_INST.hmul_16ns_16ns_16_4_max_dsp_1_U2001", "Parent" : "0"},
+	{"ID" : "385", "Level" : "1", "Path" : "`AUTOTB_DUT_INST.hmul_16ns_16ns_16_4_max_dsp_1_U2002", "Parent" : "0"},
+	{"ID" : "386", "Level" : "1", "Path" : "`AUTOTB_DUT_INST.hmul_16ns_16ns_16_4_max_dsp_1_U2003", "Parent" : "0"},
+	{"ID" : "387", "Level" : "1", "Path" : "`AUTOTB_DUT_INST.hmul_16ns_16ns_16_4_max_dsp_1_U2004", "Parent" : "0"},
+	{"ID" : "388", "Level" : "1", "Path" : "`AUTOTB_DUT_INST.hmul_16ns_16ns_16_4_max_dsp_1_U2005", "Parent" : "0"},
+	{"ID" : "389", "Level" : "1", "Path" : "`AUTOTB_DUT_INST.hmul_16ns_16ns_16_4_max_dsp_1_U2006", "Parent" : "0"},
+	{"ID" : "390", "Level" : "1", "Path" : "`AUTOTB_DUT_INST.hmul_16ns_16ns_16_4_max_dsp_1_U2007", "Parent" : "0"},
+	{"ID" : "391", "Level" : "1", "Path" : "`AUTOTB_DUT_INST.hmul_16ns_16ns_16_4_max_dsp_1_U2008", "Parent" : "0"},
+	{"ID" : "392", "Level" : "1", "Path" : "`AUTOTB_DUT_INST.hmul_16ns_16ns_16_4_max_dsp_1_U2009", "Parent" : "0"},
+	{"ID" : "393", "Level" : "1", "Path" : "`AUTOTB_DUT_INST.hmul_16ns_16ns_16_4_max_dsp_1_U2010", "Parent" : "0"},
+	{"ID" : "394", "Level" : "1", "Path" : "`AUTOTB_DUT_INST.hmul_16ns_16ns_16_4_max_dsp_1_U2011", "Parent" : "0"},
+	{"ID" : "395", "Level" : "1", "Path" : "`AUTOTB_DUT_INST.hmul_16ns_16ns_16_4_max_dsp_1_U2012", "Parent" : "0"},
+	{"ID" : "396", "Level" : "1", "Path" : "`AUTOTB_DUT_INST.hmul_16ns_16ns_16_4_max_dsp_1_U2013", "Parent" : "0"},
+	{"ID" : "397", "Level" : "1", "Path" : "`AUTOTB_DUT_INST.hmul_16ns_16ns_16_4_max_dsp_1_U2014", "Parent" : "0"},
+	{"ID" : "398", "Level" : "1", "Path" : "`AUTOTB_DUT_INST.hmul_16ns_16ns_16_4_max_dsp_1_U2015", "Parent" : "0"},
+	{"ID" : "399", "Level" : "1", "Path" : "`AUTOTB_DUT_INST.hmul_16ns_16ns_16_4_max_dsp_1_U2016", "Parent" : "0"},
+	{"ID" : "400", "Level" : "1", "Path" : "`AUTOTB_DUT_INST.hmul_16ns_16ns_16_4_max_dsp_1_U2017", "Parent" : "0"},
+	{"ID" : "401", "Level" : "1", "Path" : "`AUTOTB_DUT_INST.hmul_16ns_16ns_16_4_max_dsp_1_U2018", "Parent" : "0"},
+	{"ID" : "402", "Level" : "1", "Path" : "`AUTOTB_DUT_INST.hmul_16ns_16ns_16_4_max_dsp_1_U2019", "Parent" : "0"},
+	{"ID" : "403", "Level" : "1", "Path" : "`AUTOTB_DUT_INST.hmul_16ns_16ns_16_4_max_dsp_1_U2020", "Parent" : "0"},
+	{"ID" : "404", "Level" : "1", "Path" : "`AUTOTB_DUT_INST.hmul_16ns_16ns_16_4_max_dsp_1_U2021", "Parent" : "0"},
+	{"ID" : "405", "Level" : "1", "Path" : "`AUTOTB_DUT_INST.hmul_16ns_16ns_16_4_max_dsp_1_U2022", "Parent" : "0"},
+	{"ID" : "406", "Level" : "1", "Path" : "`AUTOTB_DUT_INST.hmul_16ns_16ns_16_4_max_dsp_1_U2023", "Parent" : "0"},
+	{"ID" : "407", "Level" : "1", "Path" : "`AUTOTB_DUT_INST.hmul_16ns_16ns_16_4_max_dsp_1_U2024", "Parent" : "0"},
+	{"ID" : "408", "Level" : "1", "Path" : "`AUTOTB_DUT_INST.hmul_16ns_16ns_16_4_max_dsp_1_U2025", "Parent" : "0"},
+	{"ID" : "409", "Level" : "1", "Path" : "`AUTOTB_DUT_INST.hmul_16ns_16ns_16_4_max_dsp_1_U2026", "Parent" : "0"},
+	{"ID" : "410", "Level" : "1", "Path" : "`AUTOTB_DUT_INST.sptohp_32ns_16_2_no_dsp_1_U2027", "Parent" : "0"}]}
 
 
 set ArgLastReadFirstWriteLatency {
 	UpConv_Fused_Row_8_32_32_480_240_s {
-		gmem_weight {Type I LastRead 2 FirstWrite -1}
+		gmem_weight {Type I LastRead 10 FirstWrite -1}
 		W_ptr {Type I LastRead 2 FirstWrite -1}
 		gmem_param {Type I LastRead 11 FirstWrite -1}
 		B_ptr {Type I LastRead 0 FirstWrite -1}
 		G_ptr {Type I LastRead 0 FirstWrite -1}
 		BE_ptr {Type I LastRead 0 FirstWrite -1}
-		gmem_out {Type O LastRead 14 FirstWrite 23}
-		Y {Type I LastRead 11 FirstWrite -1}
-		epsilon {Type I LastRead 11 FirstWrite -1}
-		ho {Type I LastRead 10 FirstWrite -1}
+		gmem_out {Type O LastRead 26 FirstWrite 25}
+		Y {Type I LastRead 6 FirstWrite -1}
+		epsilon {Type I LastRead 2 FirstWrite -1}
+		ho {Type I LastRead 2 FirstWrite -1}
 		void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_19 {Type IO LastRead -1 FirstWrite -1}
 		void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_18 {Type IO LastRead -1 FirstWrite -1}
 		void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_17 {Type IO LastRead -1 FirstWrite -1}
@@ -1157,7 +1232,9 @@ set ArgLastReadFirstWriteLatency {
 		p_ZZ16UpConv_Fused_RowILi8ELi32ELi32ELi480ELi240EEvP7ap_uintILi256EEPKS1_S4_S4_S4_2 {Type IO LastRead -1 FirstWrite -1}
 		p_ZZ16UpConv_Fused_RowILi8ELi32ELi32ELi480ELi240EEvP7ap_uintILi256EEPKS1_S4_S4_S4_1 {Type IO LastRead -1 FirstWrite -1}
 		p_ZZ16UpConv_Fused_RowILi8ELi32ELi32ELi480ELi240EEvP7ap_uintILi256EEPKS1_S4_S4_S4 {Type IO LastRead -1 FirstWrite -1}
-		x_buf {Type I LastRead 1 FirstWrite -1}}
+		x_buf {Type I LastRead 3 FirstWrite -1}
+		mean_buf_1 {Type IO LastRead -1 FirstWrite -1}
+		inv_buf_1 {Type IO LastRead -1 FirstWrite -1}}
 	UpConv_Fused_Row_8_32_32_480_240_Pipeline_RESET_ROW_ACC {
 		void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_19 {Type O LastRead -1 FirstWrite 1}
 		void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_18 {Type O LastRead -1 FirstWrite 1}
@@ -1177,139 +1254,126 @@ set ArgLastReadFirstWriteLatency {
 		p_ZZ16UpConv_Fused_RowILi8ELi32ELi32ELi480ELi240EEvP7ap_uintILi256EEPKS1_S4_S4_S4 {Type O LastRead -1 FirstWrite 1}}
 	UpConv_Fused_Row_8_32_32_480_240_Pipeline_LOAD_PARAMS {
 		b_buf {Type O LastRead -1 FirstWrite 10}
-		sext_ln228 {Type I LastRead 0 FirstWrite -1}
+		sext_ln221 {Type I LastRead 0 FirstWrite -1}
 		gmem_param {Type I LastRead 11 FirstWrite -1}
 		g_buf {Type O LastRead -1 FirstWrite 11}
-		sext_ln228_3 {Type I LastRead 0 FirstWrite -1}
+		sext_ln221_3 {Type I LastRead 0 FirstWrite -1}
 		be_buf {Type O LastRead -1 FirstWrite 12}
-		sext_ln228_4 {Type I LastRead 0 FirstWrite -1}}
+		sext_ln221_4 {Type I LastRead 0 FirstWrite -1}}
 	UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP {
-		gmem_weight {Type I LastRead 1 FirstWrite -1}
-		sext_ln135 {Type I LastRead 0 FirstWrite -1}
+		W_ptr {Type I LastRead 0 FirstWrite -1}
+		gmem_weight {Type I LastRead 10 FirstWrite -1}
 		zext_ln135 {Type I LastRead 0 FirstWrite -1}
-		void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_19 {Type IO LastRead 21 FirstWrite 28}
-		void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_18 {Type IO LastRead 21 FirstWrite 28}
-		void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_17 {Type IO LastRead 21 FirstWrite 28}
-		void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_16 {Type IO LastRead 21 FirstWrite 28}
-		void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_15 {Type IO LastRead 21 FirstWrite 28}
-		void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_14 {Type IO LastRead 21 FirstWrite 28}
-		void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_13 {Type IO LastRead 21 FirstWrite 28}
-		void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_12 {Type IO LastRead 21 FirstWrite 28}
-		x_buf {Type I LastRead 1 FirstWrite -1}
-		void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_11 {Type IO LastRead 21 FirstWrite 28}
-		void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_10 {Type IO LastRead 21 FirstWrite 28}
-		p_ZZ16UpConv_Fused_RowILi8ELi32ELi32ELi480ELi240EEvP7ap_uintILi256EEPKS1_S4_S4_S4_5 {Type IO LastRead 21 FirstWrite 28}
-		p_ZZ16UpConv_Fused_RowILi8ELi32ELi32ELi480ELi240EEvP7ap_uintILi256EEPKS1_S4_S4_S4_4 {Type IO LastRead 21 FirstWrite 28}
-		p_ZZ16UpConv_Fused_RowILi8ELi32ELi32ELi480ELi240EEvP7ap_uintILi256EEPKS1_S4_S4_S4_3 {Type IO LastRead 21 FirstWrite 28}
-		p_ZZ16UpConv_Fused_RowILi8ELi32ELi32ELi480ELi240EEvP7ap_uintILi256EEPKS1_S4_S4_S4_2 {Type IO LastRead 21 FirstWrite 28}
-		p_ZZ16UpConv_Fused_RowILi8ELi32ELi32ELi480ELi240EEvP7ap_uintILi256EEPKS1_S4_S4_S4_1 {Type IO LastRead 21 FirstWrite 28}
-		p_ZZ16UpConv_Fused_RowILi8ELi32ELi32ELi480ELi240EEvP7ap_uintILi256EEPKS1_S4_S4_S4 {Type IO LastRead 21 FirstWrite 28}}
-	UpConv_Fused_Row_Pipeline_PRELOAD_W_VITIS_LOOP_142_2_VITIS_LOOP_143_3 {
-		gmem_weight {Type I LastRead 1 FirstWrite -1}
-		sext_ln135 {Type I LastRead 0 FirstWrite -1}
-		w_local_7 {Type O LastRead -1 FirstWrite 2}
-		w_local_6 {Type O LastRead -1 FirstWrite 2}
-		w_local_5 {Type O LastRead -1 FirstWrite 2}
-		w_local_4 {Type O LastRead -1 FirstWrite 2}
-		w_local_3 {Type O LastRead -1 FirstWrite 2}
-		w_local_2 {Type O LastRead -1 FirstWrite 2}
-		w_local_1 {Type O LastRead -1 FirstWrite 2}
-		w_local {Type O LastRead -1 FirstWrite 2}}
-	UpConv_Fused_Row_8_32_32_480_240_Pipeline_CI_LOOP {
-		mul115 {Type I LastRead 0 FirstWrite -1}
-		empty {Type I LastRead 0 FirstWrite -1}
-		w_local {Type I LastRead 1 FirstWrite -1}
-		w_local_1 {Type I LastRead 1 FirstWrite -1}
-		w_local_2 {Type I LastRead 1 FirstWrite -1}
-		w_local_3 {Type I LastRead 1 FirstWrite -1}
-		w_local_4 {Type I LastRead 1 FirstWrite -1}
-		w_local_5 {Type I LastRead 1 FirstWrite -1}
-		w_local_6 {Type I LastRead 1 FirstWrite -1}
-		w_local_7 {Type I LastRead 1 FirstWrite -1}
-		psum_70_load_out {Type O LastRead -1 FirstWrite 91}
-		psum_69_load_out {Type O LastRead -1 FirstWrite 91}
-		psum_68_load_out {Type O LastRead -1 FirstWrite 91}
-		psum_67_load_out {Type O LastRead -1 FirstWrite 91}
-		psum_66_load_out {Type O LastRead -1 FirstWrite 91}
-		psum_65_load_out {Type O LastRead -1 FirstWrite 91}
-		psum_64_load_out {Type O LastRead -1 FirstWrite 91}
-		psum_63_load_out {Type O LastRead -1 FirstWrite 91}
-		psum_62_load_out {Type O LastRead -1 FirstWrite 91}
-		psum_61_load_out {Type O LastRead -1 FirstWrite 91}
-		psum_60_load_out {Type O LastRead -1 FirstWrite 91}
-		psum_59_load_out {Type O LastRead -1 FirstWrite 91}
-		psum_58_load_out {Type O LastRead -1 FirstWrite 91}
-		psum_57_load_out {Type O LastRead -1 FirstWrite 91}
-		psum_56_load_out {Type O LastRead -1 FirstWrite 91}
-		psum_55_load_out {Type O LastRead -1 FirstWrite 91}
-		psum_54_load_out {Type O LastRead -1 FirstWrite 91}
-		psum_53_load_out {Type O LastRead -1 FirstWrite 91}
-		psum_52_load_out {Type O LastRead -1 FirstWrite 91}
-		psum_51_load_out {Type O LastRead -1 FirstWrite 91}
-		psum_50_load_out {Type O LastRead -1 FirstWrite 91}
-		psum_49_load_out {Type O LastRead -1 FirstWrite 91}
-		psum_48_load_out {Type O LastRead -1 FirstWrite 91}
-		psum_47_load_out {Type O LastRead -1 FirstWrite 91}
-		psum_46_load_out {Type O LastRead -1 FirstWrite 91}
-		psum_45_load_out {Type O LastRead -1 FirstWrite 91}
-		psum_44_load_out {Type O LastRead -1 FirstWrite 91}
-		psum_43_load_out {Type O LastRead -1 FirstWrite 91}
-		psum_42_load_out {Type O LastRead -1 FirstWrite 91}
-		psum_41_load_out {Type O LastRead -1 FirstWrite 91}
-		psum_40_load_out {Type O LastRead -1 FirstWrite 91}
-		psum_load_out {Type O LastRead -1 FirstWrite 91}
-		x_buf {Type I LastRead 1 FirstWrite -1}}
-	UpConv_Fused_Row_8_32_32_480_240_Pipeline_BIAS_STATS {
-		mul_ln246 {Type I LastRead 0 FirstWrite -1}
-		b_buf {Type I LastRead 0 FirstWrite -1}
-		sumsq_out {Type O LastRead -1 FirstWrite 17}
-		sum_out {Type O LastRead -1 FirstWrite 17}
-		void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_19 {Type IO LastRead 0 FirstWrite 7}
-		void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_18 {Type IO LastRead 0 FirstWrite 7}
-		void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_17 {Type IO LastRead 0 FirstWrite 7}
-		void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_16 {Type IO LastRead 0 FirstWrite 7}
-		void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_15 {Type IO LastRead 0 FirstWrite 7}
-		void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_14 {Type IO LastRead 0 FirstWrite 7}
-		void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_13 {Type IO LastRead 0 FirstWrite 7}
-		void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_12 {Type IO LastRead 0 FirstWrite 7}
-		void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_11 {Type IO LastRead 0 FirstWrite 7}
-		void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_10 {Type IO LastRead 0 FirstWrite 7}
-		p_ZZ16UpConv_Fused_RowILi8ELi32ELi32ELi480ELi240EEvP7ap_uintILi256EEPKS1_S4_S4_S4_5 {Type IO LastRead 0 FirstWrite 7}
-		p_ZZ16UpConv_Fused_RowILi8ELi32ELi32ELi480ELi240EEvP7ap_uintILi256EEPKS1_S4_S4_S4_4 {Type IO LastRead 0 FirstWrite 7}
-		p_ZZ16UpConv_Fused_RowILi8ELi32ELi32ELi480ELi240EEvP7ap_uintILi256EEPKS1_S4_S4_S4_3 {Type IO LastRead 0 FirstWrite 7}
-		p_ZZ16UpConv_Fused_RowILi8ELi32ELi32ELi480ELi240EEvP7ap_uintILi256EEPKS1_S4_S4_S4_2 {Type IO LastRead 0 FirstWrite 7}
-		p_ZZ16UpConv_Fused_RowILi8ELi32ELi32ELi480ELi240EEvP7ap_uintILi256EEPKS1_S4_S4_S4_1 {Type IO LastRead 0 FirstWrite 7}
-		p_ZZ16UpConv_Fused_RowILi8ELi32ELi32ELi480ELi240EEvP7ap_uintILi256EEPKS1_S4_S4_S4 {Type IO LastRead 0 FirstWrite 7}}
-	UpConv_Fused_Row_8_32_32_480_240_Pipeline_NORM_WRITE {
-		gmem_out {Type O LastRead -1 FirstWrite 23}
-		sext_ln238 {Type I LastRead 0 FirstWrite -1}
-		mul_ln246 {Type I LastRead 0 FirstWrite -1}
-		g_buf {Type I LastRead 10 FirstWrite -1}
-		be_buf {Type I LastRead 14 FirstWrite -1}
-		conv6 {Type I LastRead 0 FirstWrite -1}
-		inv_std {Type I LastRead 0 FirstWrite -1}
-		void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_19 {Type I LastRead 1 FirstWrite -1}
-		void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_18 {Type I LastRead 1 FirstWrite -1}
-		void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_17 {Type I LastRead 1 FirstWrite -1}
-		void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_16 {Type I LastRead 1 FirstWrite -1}
-		void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_15 {Type I LastRead 1 FirstWrite -1}
-		void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_14 {Type I LastRead 1 FirstWrite -1}
-		void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_13 {Type I LastRead 1 FirstWrite -1}
-		void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_12 {Type I LastRead 1 FirstWrite -1}
-		void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_11 {Type I LastRead 1 FirstWrite -1}
-		void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_10 {Type I LastRead 1 FirstWrite -1}
-		p_ZZ16UpConv_Fused_RowILi8ELi32ELi32ELi480ELi240EEvP7ap_uintILi256EEPKS1_S4_S4_S4_5 {Type I LastRead 1 FirstWrite -1}
-		p_ZZ16UpConv_Fused_RowILi8ELi32ELi32ELi480ELi240EEvP7ap_uintILi256EEPKS1_S4_S4_S4_4 {Type I LastRead 1 FirstWrite -1}
-		p_ZZ16UpConv_Fused_RowILi8ELi32ELi32ELi480ELi240EEvP7ap_uintILi256EEPKS1_S4_S4_S4_3 {Type I LastRead 1 FirstWrite -1}
-		p_ZZ16UpConv_Fused_RowILi8ELi32ELi32ELi480ELi240EEvP7ap_uintILi256EEPKS1_S4_S4_S4_2 {Type I LastRead 1 FirstWrite -1}
-		p_ZZ16UpConv_Fused_RowILi8ELi32ELi32ELi480ELi240EEvP7ap_uintILi256EEPKS1_S4_S4_S4_1 {Type I LastRead 1 FirstWrite -1}
-		p_ZZ16UpConv_Fused_RowILi8ELi32ELi32ELi480ELi240EEvP7ap_uintILi256EEPKS1_S4_S4_S4 {Type I LastRead 1 FirstWrite -1}}}
+		x_buf {Type I LastRead 3 FirstWrite -1}
+		void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_19 {Type IO LastRead 108 FirstWrite 115}
+		void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_18 {Type IO LastRead 108 FirstWrite 115}
+		void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_17 {Type IO LastRead 108 FirstWrite 115}
+		void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_16 {Type IO LastRead 108 FirstWrite 115}
+		void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_15 {Type IO LastRead 108 FirstWrite 115}
+		void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_14 {Type IO LastRead 108 FirstWrite 115}
+		void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_13 {Type IO LastRead 108 FirstWrite 115}
+		void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_12 {Type IO LastRead 108 FirstWrite 115}
+		void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_11 {Type IO LastRead 108 FirstWrite 115}
+		void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_10 {Type IO LastRead 108 FirstWrite 115}
+		p_ZZ16UpConv_Fused_RowILi8ELi32ELi32ELi480ELi240EEvP7ap_uintILi256EEPKS1_S4_S4_S4_5 {Type IO LastRead 108 FirstWrite 115}
+		p_ZZ16UpConv_Fused_RowILi8ELi32ELi32ELi480ELi240EEvP7ap_uintILi256EEPKS1_S4_S4_S4_4 {Type IO LastRead 108 FirstWrite 115}
+		p_ZZ16UpConv_Fused_RowILi8ELi32ELi32ELi480ELi240EEvP7ap_uintILi256EEPKS1_S4_S4_S4_3 {Type IO LastRead 108 FirstWrite 115}
+		p_ZZ16UpConv_Fused_RowILi8ELi32ELi32ELi480ELi240EEvP7ap_uintILi256EEPKS1_S4_S4_S4_2 {Type IO LastRead 108 FirstWrite 115}
+		p_ZZ16UpConv_Fused_RowILi8ELi32ELi32ELi480ELi240EEvP7ap_uintILi256EEPKS1_S4_S4_S4_1 {Type IO LastRead 108 FirstWrite 115}
+		p_ZZ16UpConv_Fused_RowILi8ELi32ELi32ELi480ELi240EEvP7ap_uintILi256EEPKS1_S4_S4_S4 {Type IO LastRead 108 FirstWrite 115}}
+	UpConv_Fused_Row_8_32_32_480_240_Pipeline_PRELOAD_W_W_FLAT {
+		tile {Type I LastRead 0 FirstWrite -1}
+		w_local_7 {Type O LastRead -1 FirstWrite 11}
+		w_local_6 {Type O LastRead -1 FirstWrite 11}
+		w_local_5 {Type O LastRead -1 FirstWrite 11}
+		w_local_4 {Type O LastRead -1 FirstWrite 11}
+		w_local_3 {Type O LastRead -1 FirstWrite 11}
+		w_local_2 {Type O LastRead -1 FirstWrite 11}
+		w_local_1 {Type O LastRead -1 FirstWrite 11}
+		w_local {Type O LastRead -1 FirstWrite 11}
+		W_ptr {Type I LastRead 0 FirstWrite -1}
+		gmem_weight {Type I LastRead 10 FirstWrite -1}}
+	UpConv_Fused_Row_8_32_32_480_240_Pipeline_KW_LOOP_FLAT_LOOP {
+		mul72 {Type I LastRead 0 FirstWrite -1}
+		x_base {Type I LastRead 0 FirstWrite -1}
+		w_local {Type I LastRead 3 FirstWrite -1}
+		w_local_1 {Type I LastRead 3 FirstWrite -1}
+		w_local_2 {Type I LastRead 3 FirstWrite -1}
+		w_local_3 {Type I LastRead 3 FirstWrite -1}
+		w_local_4 {Type I LastRead 3 FirstWrite -1}
+		w_local_5 {Type I LastRead 3 FirstWrite -1}
+		w_local_6 {Type I LastRead 3 FirstWrite -1}
+		w_local_7 {Type I LastRead 3 FirstWrite -1}
+		zext_ln138 {Type I LastRead 0 FirstWrite -1}
+		tile {Type I LastRead 0 FirstWrite -1}
+		x_buf {Type I LastRead 3 FirstWrite -1}
+		void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_19 {Type IO LastRead 108 FirstWrite 115}
+		void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_18 {Type IO LastRead 108 FirstWrite 115}
+		void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_17 {Type IO LastRead 108 FirstWrite 115}
+		void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_16 {Type IO LastRead 108 FirstWrite 115}
+		void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_15 {Type IO LastRead 108 FirstWrite 115}
+		void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_14 {Type IO LastRead 108 FirstWrite 115}
+		void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_13 {Type IO LastRead 108 FirstWrite 115}
+		void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_12 {Type IO LastRead 108 FirstWrite 115}
+		void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_11 {Type IO LastRead 108 FirstWrite 115}
+		void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_10 {Type IO LastRead 108 FirstWrite 115}
+		p_ZZ16UpConv_Fused_RowILi8ELi32ELi32ELi480ELi240EEvP7ap_uintILi256EEPKS1_S4_S4_S4_5 {Type IO LastRead 108 FirstWrite 115}
+		p_ZZ16UpConv_Fused_RowILi8ELi32ELi32ELi480ELi240EEvP7ap_uintILi256EEPKS1_S4_S4_S4_4 {Type IO LastRead 108 FirstWrite 115}
+		p_ZZ16UpConv_Fused_RowILi8ELi32ELi32ELi480ELi240EEvP7ap_uintILi256EEPKS1_S4_S4_S4_3 {Type IO LastRead 108 FirstWrite 115}
+		p_ZZ16UpConv_Fused_RowILi8ELi32ELi32ELi480ELi240EEvP7ap_uintILi256EEPKS1_S4_S4_S4_2 {Type IO LastRead 108 FirstWrite 115}
+		p_ZZ16UpConv_Fused_RowILi8ELi32ELi32ELi480ELi240EEvP7ap_uintILi256EEPKS1_S4_S4_S4_1 {Type IO LastRead 108 FirstWrite 115}
+		p_ZZ16UpConv_Fused_RowILi8ELi32ELi32ELi480ELi240EEvP7ap_uintILi256EEPKS1_S4_S4_S4 {Type IO LastRead 108 FirstWrite 115}}
+	UpConv_Fused_Row_8_32_32_480_240_Pipeline_PIXEL_STATS {
+		conv3 {Type I LastRead 0 FirstWrite -1}
+		b_buf {Type I LastRead 2 FirstWrite -1}
+		mean_buf_1 {Type O LastRead -1 FirstWrite 141}
+		inv_buf_1 {Type O LastRead -1 FirstWrite 230}
+		void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_19 {Type IO LastRead 2 FirstWrite 9}
+		void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_18 {Type IO LastRead 2 FirstWrite 9}
+		void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_17 {Type IO LastRead 2 FirstWrite 9}
+		void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_16 {Type IO LastRead 2 FirstWrite 9}
+		void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_15 {Type IO LastRead 2 FirstWrite 9}
+		void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_14 {Type IO LastRead 2 FirstWrite 9}
+		void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_13 {Type IO LastRead 2 FirstWrite 9}
+		void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_12 {Type IO LastRead 2 FirstWrite 9}
+		void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_11 {Type IO LastRead 2 FirstWrite 9}
+		void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_10 {Type IO LastRead 2 FirstWrite 9}
+		p_ZZ16UpConv_Fused_RowILi8ELi32ELi32ELi480ELi240EEvP7ap_uintILi256EEPKS1_S4_S4_S4_5 {Type IO LastRead 2 FirstWrite 9}
+		p_ZZ16UpConv_Fused_RowILi8ELi32ELi32ELi480ELi240EEvP7ap_uintILi256EEPKS1_S4_S4_S4_4 {Type IO LastRead 2 FirstWrite 9}
+		p_ZZ16UpConv_Fused_RowILi8ELi32ELi32ELi480ELi240EEvP7ap_uintILi256EEPKS1_S4_S4_S4_3 {Type IO LastRead 2 FirstWrite 9}
+		p_ZZ16UpConv_Fused_RowILi8ELi32ELi32ELi480ELi240EEvP7ap_uintILi256EEPKS1_S4_S4_S4_2 {Type IO LastRead 2 FirstWrite 9}
+		p_ZZ16UpConv_Fused_RowILi8ELi32ELi32ELi480ELi240EEvP7ap_uintILi256EEPKS1_S4_S4_S4_1 {Type IO LastRead 2 FirstWrite 9}
+		p_ZZ16UpConv_Fused_RowILi8ELi32ELi32ELi480ELi240EEvP7ap_uintILi256EEPKS1_S4_S4_S4 {Type IO LastRead 2 FirstWrite 9}}
+	UpConv_Fused_Row_8_32_32_480_240_Pipeline_PIXEL_NORM {
+		g_buf {Type I LastRead 12 FirstWrite -1}
+		be_buf {Type I LastRead 16 FirstWrite -1}
+		zext_ln278 {Type I LastRead 0 FirstWrite -1}
+		Y {Type I LastRead 0 FirstWrite -1}
+		gmem_out {Type O LastRead 26 FirstWrite 25}
+		mean_buf_1 {Type I LastRead 1 FirstWrite -1}
+		inv_buf_1 {Type I LastRead 8 FirstWrite -1}
+		void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_19 {Type I LastRead 3 FirstWrite -1}
+		void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_18 {Type I LastRead 3 FirstWrite -1}
+		void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_17 {Type I LastRead 3 FirstWrite -1}
+		void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_16 {Type I LastRead 3 FirstWrite -1}
+		void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_15 {Type I LastRead 3 FirstWrite -1}
+		void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_14 {Type I LastRead 3 FirstWrite -1}
+		void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_13 {Type I LastRead 3 FirstWrite -1}
+		void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_12 {Type I LastRead 3 FirstWrite -1}
+		void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_11 {Type I LastRead 3 FirstWrite -1}
+		void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_10 {Type I LastRead 3 FirstWrite -1}
+		p_ZZ16UpConv_Fused_RowILi8ELi32ELi32ELi480ELi240EEvP7ap_uintILi256EEPKS1_S4_S4_S4_5 {Type I LastRead 3 FirstWrite -1}
+		p_ZZ16UpConv_Fused_RowILi8ELi32ELi32ELi480ELi240EEvP7ap_uintILi256EEPKS1_S4_S4_S4_4 {Type I LastRead 3 FirstWrite -1}
+		p_ZZ16UpConv_Fused_RowILi8ELi32ELi32ELi480ELi240EEvP7ap_uintILi256EEPKS1_S4_S4_S4_3 {Type I LastRead 3 FirstWrite -1}
+		p_ZZ16UpConv_Fused_RowILi8ELi32ELi32ELi480ELi240EEvP7ap_uintILi256EEPKS1_S4_S4_S4_2 {Type I LastRead 3 FirstWrite -1}
+		p_ZZ16UpConv_Fused_RowILi8ELi32ELi32ELi480ELi240EEvP7ap_uintILi256EEPKS1_S4_S4_S4_1 {Type I LastRead 3 FirstWrite -1}
+		p_ZZ16UpConv_Fused_RowILi8ELi32ELi32ELi480ELi240EEvP7ap_uintILi256EEPKS1_S4_S4_S4 {Type I LastRead 3 FirstWrite -1}}}
 
 set hasDtUnsupportedChannel 0
 
 set PerformanceInfo {[
-	{"Name" : "Latency", "Min" : "184797", "Max" : "2725497"}
-	, {"Name" : "Interval", "Min" : "184797", "Max" : "2725497"}
+	{"Name" : "Latency", "Min" : "82980", "Max" : "352620"}
+	, {"Name" : "Interval", "Min" : "82980", "Max" : "352620"}
 ]}
 
 set PipelineEnableSignalInfo {[

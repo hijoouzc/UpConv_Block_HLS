@@ -1,7 +1,7 @@
 <profile>
 
 <section name = "Vitis HLS Report for 'upconv_core_top'" level="0">
-<item name = "Date">Thu May  7 18:52:21 2026
+<item name = "Date">Mon Jun  1 23:46:48 2026
 </item>
 <item name = "Version">2024.2 (Build 5238294 on Nov  8 2024)</item>
 <item name = "Project">upconv_core_top</item>
@@ -15,7 +15,7 @@
 <section name = "" level="1">
 <item name = "Summary"><table name="" hasTotal="0">
 <keys size="4">Clock, Target, Estimated, Uncertainty</keys>
-<column name="ap_clk">3.33 ns, 2.904 ns, 0.90 ns</column>
+<column name="ap_clk">3.33 ns, 3.357 ns, 0.90 ns</column>
 </table>
 </item>
 </section>
@@ -24,7 +24,7 @@
 <section name = "" level="1">
 <item name = "Summary"><table name="" hasTotal="0">
 <keys size="8">, min, max, min, max, min, max, Type</keys>
-<column name="">126737, 1002942208, 0.422 ms, 3.343 sec, 126738, 1002942209, no</column>
+<column name="">32721, 26168943, 0.110 ms, 87.849 ms, 32722, 26168944, no</column>
 </table>
 </item>
 <item name = "Detail">
@@ -35,11 +35,11 @@
 </item>
 <item name = "Loop"><table name="" hasTotal="0">
 <keys size="8">Loop Name, min, max, Latency, achieved, target, Count, Pipelined</keys>
-<column name="- ROW_LOOP">11241105, 103030305, 749407 ~ 6868687, -, -, 15, no</column>
-<column name="- ROW_LOOP">11487763, 169011163, 370573 ~ 5451973, -, -, 31, no</column>
-<column name="- ROW_LOOP">16515891, 650624499, 262157 ~ 10327373, -, -, 63, no</column>
-<column name="- ROW_LOOP">38632130, 995106722, 304190 ~ 7835486, -, -, 127, no</column>
-<column name="- ROW_LOOP">118815, 154095, 7921 ~ 10273, -, -, 15, no</column>
+<column name="- ROW_LOOP">8354985, 24533385, 556999 ~ 1635559, -, -, 15, no</column>
+<column name="- ROW_LOOP">5175109, 21892789, 166939 ~ 706219, -, -, 31, no</column>
+<column name="- ROW_LOOP">2339505, 22852305, 37135 ~ 362735, -, -, 63, no</column>
+<column name="- ROW_LOOP">4673346, 25511506, 36798 ~ 200878, -, -, 127, no</column>
+<column name="- ROW_LOOP">30675, 58935, 2045 ~ 3929, -, -, 15, no</column>
 </table>
 </item>
 </section>

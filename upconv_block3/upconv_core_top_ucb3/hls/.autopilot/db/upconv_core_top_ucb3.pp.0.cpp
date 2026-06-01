@@ -30092,8 +30092,6 @@ void UpConv_Fused_Row(
 
 
 
-
-
     static data_t row_acc[W_OUT][C_OUT_PAD];
 #pragma HLS BIND_STORAGE variable=row_acc type=ram_t2p impl=uram
 #pragma HLS ARRAY_PARTITION variable=row_acc cyclic factor=16 dim=2
@@ -30103,12 +30101,14 @@ void UpConv_Fused_Row(
 
 
 
- RESET_ROW_ACC: for (int wo = 0; wo < W_OUT; wo++) {
+ int rw = 0, rcw = 0;
+    RESET_ROW_ACC: for (int m = 0; m < W_OUT * C_WORDS_OUT; m++) {
 #pragma HLS PIPELINE II=1
- VITIS_LOOP_119_1: for (int c = 0; c < C_OUT_PAD; c++) {
+ VITIS_LOOP_118_1: for (int l = 0; l < 16; l++) {
 #pragma HLS UNROLL
- row_acc[wo][c] = (data_t)0;
+ row_acc[rw][rcw * 16 + l] = (data_t)0;
         }
+        if (rcw == C_WORDS_OUT - 1) { rcw = 0; rw++; } else { rcw++; }
     }
 
 
@@ -30124,21 +30124,18 @@ void UpConv_Fused_Row(
  TILE_LOOP: for (int tile = 0; tile < N_TILES; tile++) {
         int co_base = tile * PEs;
 
-
         PRELOAD_W: for (int tc = 0; tc < PEs; tc++) {
             int co = co_base + tc;
             if (co < C_OUT) {
-                VITIS_LOOP_142_2: for (int k = 0; k < 9; k++) {
-                    VITIS_LOOP_143_3: for (int ci_w = 0; ci_w < CI_WORDS; ci_w++) {
+                int k_cnt = 0, ci_cnt = 0;
+                W_FLAT: for (int kci = 0; kci < 9 * CI_WORDS; kci++) {
 #pragma HLS PIPELINE II=1
-
- w_local[tc][k * CI_WORDS + ci_w] =
-                            W_ptr[(co * 9 + k) * CI_WORDS + ci_w];
-                    }
+ w_local[tc][k_cnt * CI_WORDS + ci_cnt] = W_ptr[(co * 9 + k_cnt) * CI_WORDS + ci_cnt];
+                    ci_cnt++;
+                    if (ci_cnt >= CI_WORDS) { ci_cnt = 0; k_cnt++; }
                 }
             }
         }
-
 
         KH_LOOP: for (int kh = 0; kh < 3; kh++) {
             int hpk = ho + PAD - kh;
@@ -30150,54 +30147,50 @@ void UpConv_Fused_Row(
             KW_LOOP: for (int kw = 0; kw < 3; kw++) {
                 int k = kh * 3 + kw;
 
-                WO_LOOP: for (int wo = 0; wo < W_OUT; wo++) {
-                    int wpk = wo + PAD - kw;
-                    if (wpk < 0 || wpk % S != 0) continue;
-                    int wi = wpk / S;
-                    if (wi < 0 || wi >= W_IN) continue;
 
+                const int M_TOTAL = W_IN * CI_WORDS;
+                const int x_base = x_row * W_IN * CI_WORDS;
+                const int w_off = k * CI_WORDS;
 
-                    data_t psum[PEs][4];
+                data_t psum[PEs][4];
 #pragma HLS ARRAY_PARTITION variable=psum complete dim=0
 
- RESET_PSUM: for (int tc = 0; tc < PEs; tc++) {
-#pragma HLS UNROLL
- VITIS_LOOP_176_4: for (int r = 0; r < 4; r++) {
-#pragma HLS UNROLL
- psum[tc][r] = (data_t)0;
-                        }
-                    }
-
-                    CI_LOOP: for (int ci_w = 0; ci_w < CI_WORDS; ci_w++) {
+ int wi = 0, ci_w = 0;
+                FLAT_LOOP: for (int m = 0; m < M_TOTAL; m++) {
 #pragma HLS PIPELINE II=1
 #pragma HLS DEPENDENCE variable=psum type=inter false
-
+#pragma HLS DEPENDENCE variable=row_acc type=inter false
  int acc_idx = ci_w & 3;
-                        data_256_t x_word = x_buf[(x_row * W_IN + wi) * CI_WORDS + ci_w];
+                    data_256_t x_word = x_buf[x_base + m];
 
-                        TC_MAC: for (int tc = 0; tc < PEs; tc++) {
+                    TC_MAC: for (int tc = 0; tc < PEs; tc++) {
 #pragma HLS UNROLL
-
- data_256_t w_word = w_local[tc][k * CI_WORDS + ci_w];
-                            data_t dot = (data_t)0;
-                            VITIS_LOOP_194_5: for (int l = 0; l < 16; l++) {
+ data_256_t w_word = w_local[tc][w_off + ci_w];
+                        data_t dot = (data_t)0;
+                        VITIS_LOOP_181_2: for (int l = 0; l < 16; l++) {
 #pragma HLS UNROLL
  data_t xv = bits_to_half<data_t>(x_word.range(16*l+15, 16*l));
-                                data_t wv = bits_to_half<data_t>(w_word.range(16*l+15, 16*l));
-                                dot += xv * wv;
-                            }
-                            psum[tc][acc_idx] += dot;
+                            data_t wv = bits_to_half<data_t>(w_word.range(16*l+15, 16*l));
+                            dot += xv * wv;
                         }
+                        if (ci_w < 4) psum[tc][acc_idx] = dot;
+                        else psum[tc][acc_idx] += dot;
                     }
 
-
-                    ACC_WRITE: for (int tc = 0; tc < PEs; tc++) {
+                    if (ci_w == CI_WORDS - 1) {
+                        int wo = wi * S + kw - PAD;
+                        if (wo >= 0 && wo < W_OUT) {
+                            ACC_WRITE: for (int tc = 0; tc < PEs; tc++) {
 #pragma HLS UNROLL
  if (co_base + tc < C_OUT) {
-                            data_t total = psum[tc][0] + psum[tc][1]
-                                         + psum[tc][2] + psum[tc][3];
-                            row_acc[wo][co_base + tc] += total;
+                                    data_t total = psum[tc][0] + psum[tc][1] + psum[tc][2] + psum[tc][3];
+                                    row_acc[wo][co_base + tc] += total;
+                                }
+                            }
                         }
+                        ci_w = 0; wi++;
+                    } else {
+                        ci_w++;
                     }
                 }
             }
@@ -30224,42 +30217,70 @@ void UpConv_Fused_Row(
 
 
 
-    PIXEL_NORM: for (int wo = 0; wo < W_OUT; wo++) {
-#pragma HLS PIPELINE off
- float sum = 0.0f, sumsq = 0.0f;
+    static float mean_buf[W_OUT];
+    static data_t inv_buf [W_OUT];
+#pragma HLS BIND_STORAGE variable=mean_buf type=ram_2p impl=lutram
+#pragma HLS BIND_STORAGE variable=inv_buf type=ram_2p impl=lutram
 
-        BIAS_STATS: for (int c = 0; c < C_OUT; c++) {
+ float sum_rot[8], sumsq_rot[8];
+#pragma HLS ARRAY_PARTITION variable=sum_rot complete
+#pragma HLS ARRAY_PARTITION variable=sumsq_rot complete
+
+ int ws = 0, cs = 0;
+    PIXEL_STATS: for (int m = 0; m < W_OUT * C_OUT; m++) {
 #pragma HLS PIPELINE II=1
- data_t bias = bits_to_half<data_t>(
-                b_buf[c / 16].range(16*(c%16)+15, 16*(c%16)));
-            data_t val = row_acc[wo][c] + bias;
-            row_acc[wo][c] = val;
-            float fv = (float)val;
-            sum += fv;
-            sumsq += fv * fv;
+#pragma HLS DEPENDENCE variable=sum_rot type=inter false
+#pragma HLS DEPENDENCE variable=sumsq_rot type=inter false
+#pragma HLS DEPENDENCE variable=row_acc type=inter false
+ int acc_idx = cs & 7;
+        data_t bias = bits_to_half<data_t>(b_buf[cs/16].range(16*(cs%16)+15, 16*(cs%16)));
+        data_t val = row_acc[ws][cs] + bias;
+        row_acc[ws][cs] = val;
+        float fv = (float)val;
+
+        if (cs < 8) {
+            sum_rot[acc_idx] = fv;
+            sumsq_rot[acc_idx] = fv * fv;
+        } else {
+            sum_rot[acc_idx] += fv;
+            sumsq_rot[acc_idx] += fv * fv;
         }
 
-        float mean = sum / (float)C_OUT;
-        float var = sumsq / (float)C_OUT - mean * mean;
-        data_t inv_std = (data_t)(1.0f / my_sqrt_f(var + (float)epsilon));
-
-        NORM_WRITE: for (int cw = 0; cw < C_WORDS_OUT; cw++) {
-#pragma HLS PIPELINE II=1
- data_256_t out_word;
-            VITIS_LOOP_260_6: for (int l = 0; l < 16; l++) {
+        if (cs == C_OUT - 1) {
+            float sum = 0, sumsq = 0;
+            VITIS_LOOP_262_3: for (int r = 0; r < 8; r++) {
 #pragma HLS UNROLL
- int c = cw * 16 + l;
-                data_t val = (c < C_OUT) ? row_acc[wo][c] : (data_t)0;
-                data_t g = bits_to_half<data_t>(g_buf[cw].range(16*l+15, 16*l));
-                data_t be = bits_to_half<data_t>(be_buf[cw].range(16*l+15, 16*l));
-                data_t norm = (c < C_OUT)
-                            ? ((val - (data_t)mean) * inv_std * g + be)
-                            : (data_t)0;
-                data_t relu = (norm < (data_t)0) ? (data_t)0 : norm;
-                out_word.range(16*l+15, 16*l) = half_to_bits(relu);
+ sum += sum_rot[r];
+                sumsq += sumsq_rot[r];
             }
-            Y[(ho * W_OUT + wo) * C_WORDS_OUT + cw] = out_word;
+            float mean = sum / (float)C_OUT;
+            float var = sumsq / (float)C_OUT - mean * mean;
+            mean_buf[ws] = mean;
+            inv_buf[ws] = (data_t)(1.0f / my_sqrt_f(var + (float)epsilon));
+            cs = 0; ws++;
+        } else {
+            cs++;
         }
+    }
+
+    int wn = 0, cwn = 0;
+    PIXEL_NORM: for (int m = 0; m < W_OUT * C_WORDS_OUT; m++) {
+#pragma HLS PIPELINE II=1
+ data_t mean_w = (data_t)mean_buf[wn];
+        data_t inv_w = inv_buf[wn];
+        data_256_t out_word;
+        VITIS_LOOP_283_4: for (int l = 0; l < 16; l++) {
+#pragma HLS UNROLL
+ int c = cwn * 16 + l;
+            data_t val = (c < C_OUT) ? row_acc[wn][c] : (data_t)0;
+            data_t g = bits_to_half<data_t>(g_buf[cwn].range(16*l+15, 16*l));
+            data_t be = bits_to_half<data_t>(be_buf[cwn].range(16*l+15, 16*l));
+            data_t norm = (c < C_OUT) ? ((val - mean_w) * inv_w * g + be) : (data_t)0;
+            data_t relu = (norm < (data_t)0) ? (data_t)0 : norm;
+            out_word.range(16*l+15, 16*l) = half_to_bits(relu);
+        }
+        Y[(ho * W_OUT + wn) * C_WORDS_OUT + cwn] = out_word;
+        if (cwn == C_WORDS_OUT - 1) { cwn = 0; wn++; } else { cwn++; }
     }
 }
 
@@ -30282,7 +30303,7 @@ void UpConv_Fused_Top(
 
 
     LOAD_ROW0: for (int wi = 0; wi < W_IN; wi++) {
-        VITIS_LOOP_296_1: for (int ciw = 0; ciw < CI_W; ciw++) {
+        VITIS_LOOP_317_1: for (int ciw = 0; ciw < CI_W; ciw++) {
 #pragma HLS PIPELINE II=1
  x_buf[(0 * W_IN + wi) * CI_W + ciw] = X[(0 * W_IN + wi) * CI_W + ciw];
         }
@@ -30293,7 +30314,7 @@ void UpConv_Fused_Top(
     ROW_LOOP: for (int hi = 1; hi < H_IN; hi++) {
         int slot = hi % 2;
         LOAD_ROW: for (int wi = 0; wi < W_IN; wi++) {
-            VITIS_LOOP_307_2: for (int ciw = 0; ciw < CI_W; ciw++) {
+            VITIS_LOOP_328_2: for (int ciw = 0; ciw < CI_W; ciw++) {
 #pragma HLS PIPELINE II=1
  x_buf[(slot * W_IN + wi) * CI_W + ciw] = X[(hi * W_IN + wi) * CI_W + ciw];
             }

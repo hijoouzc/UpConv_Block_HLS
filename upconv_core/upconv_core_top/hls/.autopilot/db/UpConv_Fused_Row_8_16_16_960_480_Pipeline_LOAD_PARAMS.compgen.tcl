@@ -11,7 +11,7 @@ if {${::AESL::PGuard_autoexp_gen}} {
 if {${::AESL::PGuard_autoexp_gen}} {
 if {[info proc ::AESL_LIB_XILADAPTER::xil_bram_gen] == "::AESL_LIB_XILADAPTER::xil_bram_gen"} {
 eval "::AESL_LIB_XILADAPTER::xil_bram_gen { \
-    id 2324 \
+    id 2480 \
     name b_buf \
     reset_level 1 \
     sync_rst true \
@@ -30,7 +30,7 @@ puts "@W \[IMPL-110\] Cannot find bus interface model in the library. Ignored ge
 if {${::AESL::PGuard_autoexp_gen}} {
 if {[info proc ::AESL_LIB_XILADAPTER::xil_bram_gen] == "::AESL_LIB_XILADAPTER::xil_bram_gen"} {
 eval "::AESL_LIB_XILADAPTER::xil_bram_gen { \
-    id 2327 \
+    id 2483 \
     name g_buf \
     reset_level 1 \
     sync_rst true \
@@ -49,7 +49,7 @@ puts "@W \[IMPL-110\] Cannot find bus interface model in the library. Ignored ge
 if {${::AESL::PGuard_autoexp_gen}} {
 if {[info proc ::AESL_LIB_XILADAPTER::xil_bram_gen] == "::AESL_LIB_XILADAPTER::xil_bram_gen"} {
 eval "::AESL_LIB_XILADAPTER::xil_bram_gen { \
-    id 2329 \
+    id 2485 \
     name be_buf \
     reset_level 1 \
     sync_rst true \
@@ -67,22 +67,22 @@ puts "@W \[IMPL-110\] Cannot find bus interface model in the library. Ignored ge
 # Direct connection:
 if {${::AESL::PGuard_autoexp_gen}} {
 eval "cg_default_interface_gen_dc { \
-    id 2325 \
-    name sext_ln228 \
+    id 2481 \
+    name sext_ln221 \
     type other \
     dir I \
     reset_level 1 \
     sync_rst true \
-    corename dc_sext_ln228 \
+    corename dc_sext_ln221 \
     op interface \
-    ports { sext_ln228 { I 59 vector } } \
+    ports { sext_ln221 { I 59 vector } } \
 } "
 }
 
 # Direct connection:
 if {${::AESL::PGuard_autoexp_gen}} {
 eval "cg_default_interface_gen_dc { \
-    id 2326 \
+    id 2482 \
     name gmem_param \
     type other \
     dir I \
@@ -97,30 +97,30 @@ eval "cg_default_interface_gen_dc { \
 # Direct connection:
 if {${::AESL::PGuard_autoexp_gen}} {
 eval "cg_default_interface_gen_dc { \
-    id 2328 \
-    name sext_ln228_5 \
+    id 2484 \
+    name sext_ln221_5 \
     type other \
     dir I \
     reset_level 1 \
     sync_rst true \
-    corename dc_sext_ln228_5 \
+    corename dc_sext_ln221_5 \
     op interface \
-    ports { sext_ln228_5 { I 59 vector } } \
+    ports { sext_ln221_5 { I 59 vector } } \
 } "
 }
 
 # Direct connection:
 if {${::AESL::PGuard_autoexp_gen}} {
 eval "cg_default_interface_gen_dc { \
-    id 2330 \
-    name sext_ln228_6 \
+    id 2486 \
+    name sext_ln221_6 \
     type other \
     dir I \
     reset_level 1 \
     sync_rst true \
-    corename dc_sext_ln228_6 \
+    corename dc_sext_ln221_6 \
     op interface \
-    ports { sext_ln228_6 { I 59 vector } } \
+    ports { sext_ln221_6 { I 59 vector } } \
 } "
 }
 

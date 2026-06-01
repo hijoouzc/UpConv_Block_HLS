@@ -1,7 +1,7 @@
 <profile>
 
 <section name = "Vitis HLS Report for 'UpConv_Fused_Row_8_16_16_16_16_s'" level="0">
-<item name = "Date">Thu May  7 18:52:21 2026
+<item name = "Date">Mon Jun  1 23:46:48 2026
 </item>
 <item name = "Version">2024.2 (Build 5238294 on Nov  8 2024)</item>
 <item name = "Project">upconv_core_top</item>
@@ -15,7 +15,7 @@
 <section name = "" level="1">
 <item name = "Summary"><table name="" hasTotal="0">
 <keys size="4">Clock, Target, Estimated, Uncertainty</keys>
-<column name="ap_clk">3.33 ns, 2.741 ns, 0.90 ns</column>
+<column name="ap_clk">3.33 ns, 2.433 ns, 0.90 ns</column>
 </table>
 </item>
 </section>
@@ -24,23 +24,24 @@
 <section name = "" level="1">
 <item name = "Summary"><table name="" hasTotal="0">
 <keys size="8">, min, max, min, max, min, max, Type</keys>
-<column name="">3944, 5120, 13.145 us, 17.065 us, 3944, 5120, no</column>
+<column name="">1006, 1948, 3.353 us, 6.493 us, 1006, 1948, no</column>
 </table>
 </item>
 <item name = "Detail">
 <section name = "" level="1">
 <item name = "Instance"><table name="" hasTotal="0">
 <keys size="9">Instance, Module, min, max, min, max, min, max, Type</keys>
-<column name="grp_UpConv_Fused_Row_8_16_16_16_16_Pipeline_RESET_ROW_ACC_fu_1244">UpConv_Fused_Row_8_16_16_16_16_Pipeline_RESET_ROW_ACC, 34, 34, 0.113 us, 0.113 us, 33, 33, loop auto-rewind stp (delay=0 clock cycles(s))</column>
-<column name="grp_UpConv_Fused_Row_8_16_16_16_16_Pipeline_PRELOAD_W_VITIS_LOOP_142_2_fu_1280">UpConv_Fused_Row_8_16_16_16_16_Pipeline_PRELOAD_W_VITIS_LOOP_142_2, 75, 75, 0.250 us, 0.250 us, 73, 73, loop auto-rewind stp (delay=0 clock cycles(s))</column>
-<column name="grp_UpConv_Fused_Row_8_16_16_16_16_Pipeline_KW_LOOP_WO_LOOP_fu_1295">UpConv_Fused_Row_8_16_16_16_16_Pipeline_KW_LOOP_WO_LOOP, 196, 196, 0.653 us, 0.653 us, 97, 97, loop auto-rewind stp (delay=0 clock cycles(s))</column>
+<column name="grp_UpConv_Fused_Row_8_16_16_16_16_Pipeline_RESET_ROW_ACC_fu_357">UpConv_Fused_Row_8_16_16_16_16_Pipeline_RESET_ROW_ACC, 34, 34, 0.113 us, 0.113 us, 33, 33, loop auto-rewind stp (delay=0 clock cycles(s))</column>
+<column name="grp_UpConv_Fused_Row_8_16_16_16_16_Pipeline_PRELOAD_W_W_FLAT_fu_393">UpConv_Fused_Row_8_16_16_16_16_Pipeline_PRELOAD_W_W_FLAT, 75, 75, 0.250 us, 0.250 us, 73, 73, loop auto-rewind stp (delay=0 clock cycles(s))</column>
+<column name="grp_UpConv_Fused_Row_8_16_16_16_16_Pipeline_KW_LOOP_FLAT_LOOP_fu_408">UpConv_Fused_Row_8_16_16_16_16_Pipeline_KW_LOOP_FLAT_LOOP, 157, 157, 0.523 us, 0.523 us, 49, 49, loop auto-rewind stp (delay=0 clock cycles(s))</column>
+<column name="grp_UpConv_Fused_Row_8_16_16_16_16_Pipeline_PIXEL_STATS_fu_457">UpConv_Fused_Row_8_16_16_16_16_Pipeline_PIXEL_STATS, 718, 718, 2.393 us, 2.393 us, 513, 513, loop auto-rewind stp (delay=0 clock cycles(s))</column>
+<column name="grp_UpConv_Fused_Row_8_16_16_16_16_Pipeline_PIXEL_NORM_fu_499">UpConv_Fused_Row_8_16_16_16_16_Pipeline_PIXEL_NORM, 57, 57, 0.190 us, 0.190 us, 33, 33, loop auto-rewind stp (delay=0 clock cycles(s))</column>
 </table>
 </item>
 <item name = "Loop"><table name="" hasTotal="0">
 <keys size="8">Loop Name, min, max, Latency, achieved, target, Count, Pipelined</keys>
-<column name="- TILE_LOOP">168, 1344, 84 ~ 672, -, -, 2, no</column>
-<column name=" + KH_LOOP">6, 594, 2 ~ 198, -, -, 3, no</column>
-<column name="- PIXEL_NORM_BIAS_STATS">3715, 3715, 139, 7, 1, 512, yes</column>
+<column name="- TILE_LOOP">168, 1110, 84 ~ 555, -, -, 2, no</column>
+<column name=" + KH_LOOP">6, 477, 2 ~ 159, -, -, 3, no</column>
 </table>
 </item>
 </section>

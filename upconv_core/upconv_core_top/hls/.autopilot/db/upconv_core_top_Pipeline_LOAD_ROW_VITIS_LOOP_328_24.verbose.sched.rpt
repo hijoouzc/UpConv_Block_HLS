@@ -1,0 +1,283 @@
+
+
+================================================================
+== Vitis HLS Report for 'upconv_core_top_Pipeline_LOAD_ROW_VITIS_LOOP_328_24'
+================================================================
+* Date:           Mon Jun  1 23:46:39 2026
+
+* Version:        2024.2 (Build 5238294 on Nov  8 2024)
+* Project:        upconv_core_top
+* Solution:       hls (Vivado IP Flow Target)
+* Product family: zynquplus
+* Target device:  xczu7ev-ffvc1156-2-e
+
+
+================================================================
+== Performance Estimates
+================================================================
++ Timing: 
+    * Summary: 
+    +--------+---------+----------+------------+
+    |  Clock |  Target | Estimated| Uncertainty|
+    +--------+---------+----------+------------+
+    |ap_clk  |  3.33 ns|  2.433 ns|     0.90 ns|
+    +--------+---------+----------+------------+
+
++ Latency: 
+    * Summary: 
+    +---------+---------+----------+----------+-----+-----+------------------------------------------------+
+    |  Latency (cycles) |  Latency (absolute) |  Interval |                    Pipeline                    |
+    |   min   |   max   |    min   |    max   | min | max |                      Type                      |
+    +---------+---------+----------+----------+-----+-----+------------------------------------------------+
+    |      973|      973|  3.243 us|  3.243 us|  961|  961|  loop auto-rewind stp (delay=0 clock cycles(s))|
+    +---------+---------+----------+----------+-----+-----+------------------------------------------------+
+
+    + Detail: 
+        * Instance: 
+        N/A
+
+        * Loop: 
+        +-----------------------------+---------+---------+----------+-----------+-----------+------+----------+
+        |                             |  Latency (cycles) | Iteration|  Initiation Interval  | Trip |          |
+        |          Loop Name          |   min   |   max   |  Latency |  achieved |   target  | Count| Pipelined|
+        +-----------------------------+---------+---------+----------+-----------+-----------+------+----------+
+        |- LOAD_ROW_VITIS_LOOP_328_2  |      971|      971|        13|          1|          1|   960|       yes|
+        +-----------------------------+---------+---------+----------+-----------+-----------+------+----------+
+
+============================================================
++ Verbose Summary: Synthesis Manager
+============================================================
+InlineROM: 1
+ExposeGlobal: 0
+============================================================
++ Verbose Summary: CDFG Model
+============================================================
+IsTopModel: 0
+ResetActiveHigh: 1
+IsCombinational: 0
+IsDatapathOnly: 0
+HasWiredReturn: 1
+HasMFsm: 2
+HasVarLatency: 1
+IsPipeline: 0
+IsRtlPipelined: 0
+IsInstanceOverlapped: 0
+IsDontTouch: 0
+HasImplIP: 0
+IsGatedGlobalClock: 0
+
++ Individual pipeline summary: 
+  * Pipeline-0: initiation interval (II) = 1, depth = 13
+
+
+============================================================
++ Verbose Summary: Schedule
+============================================================
+* Number of FSM states : 13
+* Pipeline : 1
+  Pipeline-0 : II = 1, D = 13, States = { 1 2 3 4 5 6 7 8 9 10 11 12 13 }
+* Dataflow Pipeline: 0
+
+* FSM state transitions: 
+1 --> 2 
+2 --> 3 
+3 --> 4 
+4 --> 5 
+5 --> 6 
+6 --> 7 
+7 --> 8 
+8 --> 9 
+9 --> 10 
+10 --> 11 
+11 --> 12 
+12 --> 13 
+13 --> 
+
+* FSM state operations: 
+
+State 1 <SV = 0> <Delay = 1.64>
+ST_1 : Operation 16 [1/1] (0.00ns)   --->   "%ciw = alloca i32 1" [../gen/Hls_Layers_UpConv.tpp:328->../gen/upconv_core_top.cpp:50]   --->   Operation 16 'alloca' 'ciw' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 17 [1/1] (0.00ns)   --->   "%wi = alloca i32 1" [../gen/Hls_Layers_UpConv.tpp:327->../gen/upconv_core_top.cpp:50]   --->   Operation 17 'alloca' 'wi' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 18 [1/1] (0.00ns)   --->   "%indvar_flatten34 = alloca i32 1"   --->   Operation 18 'alloca' 'indvar_flatten34' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 19 [1/1] (0.00ns)   --->   "%sext_ln325_3_read = read i59 @_ssdm_op_Read.ap_auto.i59, i59 %sext_ln325_3"   --->   Operation 19 'read' 'sext_ln325_3_read' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 20 [1/1] (0.00ns)   --->   "%mul_ln326_2_read = read i16 @_ssdm_op_Read.ap_auto.i16, i16 %mul_ln326_2"   --->   Operation 20 'read' 'mul_ln326_2_read' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 21 [1/1] (0.00ns)   --->   "%tmp = read i7 @_ssdm_op_Read.ap_auto.i7, i7 %empty"   --->   Operation 21 'read' 'tmp' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 22 [1/1] (0.00ns)   --->   "%sext_ln325_3_cast = sext i59 %sext_ln325_3_read"   --->   Operation 22 'sext' 'sext_ln325_3_cast' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 23 [1/1] (0.00ns)   --->   "%specmemcore_ln0 = specmemcore void @_ssdm_op_SpecMemCore, i256 %x_buf, i64 666, i64 31, i64 18446744073709551615"   --->   Operation 23 'specmemcore' 'specmemcore_ln0' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 24 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i256 %gmem_in, void @empty_3, i32 0, i32 0, void @empty_15, i32 0, i32 0, void @empty_28, void @empty_14, void @empty_15, i32 16, i32 16, i32 64, i32 16, void @empty_15, void @empty_15, i32 4294967295, i32 0, i32 0"   --->   Operation 24 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 25 [1/1] (0.42ns)   --->   "%store_ln0 = store i10 0, i10 %indvar_flatten34"   --->   Operation 25 'store' 'store_ln0' <Predicate = true> <Delay = 0.42>
+ST_1 : Operation 26 [1/1] (0.42ns)   --->   "%store_ln327 = store i7 0, i7 %wi" [../gen/Hls_Layers_UpConv.tpp:327->../gen/upconv_core_top.cpp:50]   --->   Operation 26 'store' 'store_ln327' <Predicate = true> <Delay = 0.42>
+ST_1 : Operation 27 [1/1] (0.42ns)   --->   "%store_ln328 = store i4 0, i4 %ciw" [../gen/Hls_Layers_UpConv.tpp:328->../gen/upconv_core_top.cpp:50]   --->   Operation 27 'store' 'store_ln328' <Predicate = true> <Delay = 0.42>
+ST_1 : Operation 28 [1/1] (0.00ns)   --->   "%br_ln0 = br void %for.body27.i100"   --->   Operation 28 'br' 'br_ln0' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 29 [1/1] (0.00ns)   --->   "%indvar_flatten34_load = load i10 %indvar_flatten34" [../gen/Hls_Layers_UpConv.tpp:327->../gen/upconv_core_top.cpp:50]   --->   Operation 29 'load' 'indvar_flatten34_load' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 30 [1/1] (0.00ns)   --->   "%specbitsmap_ln0 = specbitsmap void @_ssdm_op_SpecBitsMap, i256 %gmem_in"   --->   Operation 30 'specbitsmap' 'specbitsmap_ln0' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 31 [1/1] (0.78ns)   --->   "%icmp_ln327 = icmp_eq  i10 %indvar_flatten34_load, i10 960" [../gen/Hls_Layers_UpConv.tpp:327->../gen/upconv_core_top.cpp:50]   --->   Operation 31 'icmp' 'icmp_ln327' <Predicate = true> <Delay = 0.78> <CoreInst = "Cmp">   --->   Core 9 'Cmp' <Latency = 0> <II = 1> <Delay = 0.78> <FuncUnit> <Opcode : 'seteq' 'setne' 'setle' 'setge' 'setlt' 'setgt'> <InPorts = 2> <OutPorts = 1>
+ST_1 : Operation 32 [1/1] (0.78ns)   --->   "%add_ln327 = add i10 %indvar_flatten34_load, i10 1" [../gen/Hls_Layers_UpConv.tpp:327->../gen/upconv_core_top.cpp:50]   --->   Operation 32 'add' 'add_ln327' <Predicate = true> <Delay = 0.78> <CoreInst = "Adder">   --->   Core 1 'Adder' <Latency = 0> <II = 1> <Delay = 0.78> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_1 : Operation 33 [1/1] (0.00ns)   --->   "%br_ln327 = br i1 %icmp_ln327, void %for.cond.cleanup26.i87, void %for.cond.cleanup21.i82.exitStub" [../gen/Hls_Layers_UpConv.tpp:327->../gen/upconv_core_top.cpp:50]   --->   Operation 33 'br' 'br_ln327' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 34 [1/1] (0.42ns)   --->   "%store_ln327 = store i10 %add_ln327, i10 %indvar_flatten34" [../gen/Hls_Layers_UpConv.tpp:327->../gen/upconv_core_top.cpp:50]   --->   Operation 34 'store' 'store_ln327' <Predicate = (!icmp_ln327)> <Delay = 0.42>
+
+State 2 <SV = 1> <Delay = 2.41>
+ST_2 : Operation 35 [1/1] (0.00ns)   --->   "%ciw_load = load i4 %ciw" [../gen/Hls_Layers_UpConv.tpp:328->../gen/upconv_core_top.cpp:50]   --->   Operation 35 'load' 'ciw_load' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 36 [1/1] (0.00ns)   --->   "%wi_load = load i7 %wi" [../gen/Hls_Layers_UpConv.tpp:327->../gen/upconv_core_top.cpp:50]   --->   Operation 36 'load' 'wi_load' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 37 [1/1] (0.77ns)   --->   "%add_ln327_2 = add i7 %wi_load, i7 1" [../gen/Hls_Layers_UpConv.tpp:327->../gen/upconv_core_top.cpp:50]   --->   Operation 37 'add' 'add_ln327_2' <Predicate = true> <Delay = 0.77> <CoreInst = "Adder">   --->   Core 1 'Adder' <Latency = 0> <II = 1> <Delay = 0.77> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_2 : Operation 38 [1/1] (0.79ns)   --->   "%icmp_ln328 = icmp_eq  i4 %ciw_load, i4 15" [../gen/Hls_Layers_UpConv.tpp:328->../gen/upconv_core_top.cpp:50]   --->   Operation 38 'icmp' 'icmp_ln328' <Predicate = true> <Delay = 0.79> <CoreInst = "Cmp">   --->   Core 9 'Cmp' <Latency = 0> <II = 1> <Delay = 0.79> <FuncUnit> <Opcode : 'seteq' 'setne' 'setle' 'setge' 'setlt' 'setgt'> <InPorts = 2> <OutPorts = 1>
+ST_2 : Operation 39 [1/1] (0.39ns)   --->   "%select_ln327 = select i1 %icmp_ln328, i4 0, i4 %ciw_load" [../gen/Hls_Layers_UpConv.tpp:327->../gen/upconv_core_top.cpp:50]   --->   Operation 39 'select' 'select_ln327' <Predicate = true> <Delay = 0.39> <CoreInst = "Sel">   --->   Core 73 'Sel' <Latency = 0> <II = 1> <Delay = 0.39> <FuncUnit> <Opcode : 'select'> <InPorts = 3> <OutPorts = 1>
+ST_2 : Operation 40 [1/1] (0.36ns)   --->   "%select_ln327_2 = select i1 %icmp_ln328, i7 %add_ln327_2, i7 %wi_load" [../gen/Hls_Layers_UpConv.tpp:327->../gen/upconv_core_top.cpp:50]   --->   Operation 40 'select' 'select_ln327_2' <Predicate = true> <Delay = 0.36> <CoreInst = "Sel">   --->   Core 73 'Sel' <Latency = 0> <II = 1> <Delay = 0.36> <FuncUnit> <Opcode : 'select'> <InPorts = 3> <OutPorts = 1>
+ST_2 : Operation 41 [1/1] (0.00ns)   --->   "%zext_ln327 = zext i7 %select_ln327_2" [../gen/Hls_Layers_UpConv.tpp:327->../gen/upconv_core_top.cpp:50]   --->   Operation 41 'zext' 'zext_ln327' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 42 [1/1] (0.00ns)   --->   "%p_shl4 = bitconcatenate i11 @_ssdm_op_BitConcatenate.i11.i7.i4, i7 %select_ln327_2, i4 0" [../gen/Hls_Layers_UpConv.tpp:327->../gen/upconv_core_top.cpp:50]   --->   Operation 42 'bitconcatenate' 'p_shl4' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 43 [1/1] (0.79ns)   --->   "%empty_55 = sub i11 %p_shl4, i11 %zext_ln327" [../gen/Hls_Layers_UpConv.tpp:327->../gen/upconv_core_top.cpp:50]   --->   Operation 43 'sub' 'empty_55' <Predicate = true> <Delay = 0.79> <CoreInst = "Adder">   --->   Core 1 'Adder' <Latency = 0> <II = 1> <Delay = 0.79> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_2 : Operation 44 [1/1] (0.77ns)   --->   "%empty_56 = add i7 %select_ln327_2, i7 %tmp" [../gen/Hls_Layers_UpConv.tpp:327->../gen/upconv_core_top.cpp:50]   --->   Operation 44 'add' 'empty_56' <Predicate = true> <Delay = 0.77> <CoreInst = "Adder">   --->   Core 1 'Adder' <Latency = 0> <II = 1> <Delay = 0.77> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_2 : Operation 45 [1/1] (0.79ns)   --->   "%add_ln328 = add i4 %select_ln327, i4 1" [../gen/Hls_Layers_UpConv.tpp:328->../gen/upconv_core_top.cpp:50]   --->   Operation 45 'add' 'add_ln328' <Predicate = true> <Delay = 0.79> <CoreInst = "Adder">   --->   Core 1 'Adder' <Latency = 0> <II = 1> <Delay = 0.79> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_2 : Operation 46 [1/1] (0.42ns)   --->   "%store_ln327 = store i7 %select_ln327_2, i7 %wi" [../gen/Hls_Layers_UpConv.tpp:327->../gen/upconv_core_top.cpp:50]   --->   Operation 46 'store' 'store_ln327' <Predicate = true> <Delay = 0.42>
+ST_2 : Operation 47 [1/1] (0.42ns)   --->   "%store_ln328 = store i4 %add_ln328, i4 %ciw" [../gen/Hls_Layers_UpConv.tpp:328->../gen/upconv_core_top.cpp:50]   --->   Operation 47 'store' 'store_ln328' <Predicate = true> <Delay = 0.42>
+
+State 3 <SV = 2> <Delay = 1.65>
+ST_3 : Operation 48 [1/1] (0.00ns)   --->   "%p_cast18 = zext i11 %empty_55" [../gen/Hls_Layers_UpConv.tpp:327->../gen/upconv_core_top.cpp:50]   --->   Operation 48 'zext' 'p_cast18' <Predicate = true> <Delay = 0.00>
+ST_3 : Operation 49 [1/1] (0.00ns)   --->   "%zext_ln328 = zext i4 %select_ln327" [../gen/Hls_Layers_UpConv.tpp:328->../gen/upconv_core_top.cpp:50]   --->   Operation 49 'zext' 'zext_ln328' <Predicate = true> <Delay = 0.00>
+ST_3 : Operation 50 [1/1] (0.85ns)   --->   "%add_ln330_3 = add i16 %mul_ln326_2_read, i16 %p_cast18" [../gen/Hls_Layers_UpConv.tpp:330->../gen/upconv_core_top.cpp:50]   --->   Operation 50 'add' 'add_ln330_3' <Predicate = true> <Delay = 0.85> <CoreInst = "Adder">   --->   Core 1 'Adder' <Latency = 0> <II = 1> <Delay = 0.85> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_3 : Operation 51 [1/1] (0.00ns)   --->   "%zext_ln330_2 = zext i16 %add_ln330_3" [../gen/Hls_Layers_UpConv.tpp:330->../gen/upconv_core_top.cpp:50]   --->   Operation 51 'zext' 'zext_ln330_2' <Predicate = true> <Delay = 0.00>
+ST_3 : Operation 52 [1/1] (0.00ns) (grouped into TernaryAdder)   --->   "%add_ln330_4 = add i60 %zext_ln328, i60 %sext_ln325_3_cast" [../gen/Hls_Layers_UpConv.tpp:330->../gen/upconv_core_top.cpp:50]   --->   Operation 52 'add' 'add_ln330_4' <Predicate = true> <Delay = 0.00> <CoreInst = "TAddSub">   --->   Core 10 'TAddSub' <Latency = 0> <II = 1> <Delay = 0.40> <IPBlock> <Opcode : '' 'add' 'sub'> <InPorts = 3> <OutPorts = 1> <Sync> <CReg>
+ST_3 : Operation 53 [1/1] (0.80ns) (root node of TernaryAdder)   --->   "%add_ln330_5 = add i60 %add_ln330_4, i60 %zext_ln330_2" [../gen/Hls_Layers_UpConv.tpp:330->../gen/upconv_core_top.cpp:50]   --->   Operation 53 'add' 'add_ln330_5' <Predicate = true> <Delay = 0.80> <CoreInst = "TAddSub">   --->   Core 10 'TAddSub' <Latency = 0> <II = 1> <Delay = 0.40> <IPBlock> <Opcode : '' 'add' 'sub'> <InPorts = 3> <OutPorts = 1> <Sync> <CReg>
+
+State 4 <SV = 3> <Delay = 2.43>
+ST_4 : Operation 54 [1/1] (0.00ns)   --->   "%sext_ln330 = sext i60 %add_ln330_5" [../gen/Hls_Layers_UpConv.tpp:330->../gen/upconv_core_top.cpp:50]   --->   Operation 54 'sext' 'sext_ln330' <Predicate = true> <Delay = 0.00>
+ST_4 : Operation 55 [1/1] (0.00ns)   --->   "%gmem_in_addr = getelementptr i256 %gmem_in, i64 %sext_ln330" [../gen/Hls_Layers_UpConv.tpp:330->../gen/upconv_core_top.cpp:50]   --->   Operation 55 'getelementptr' 'gmem_in_addr' <Predicate = true> <Delay = 0.00>
+ST_4 : Operation 56 [8/8] (2.43ns)   --->   "%gmem_in_load_3_req = readreq i1 @_ssdm_op_ReadReq.m_axi.i256P1A, i256 %gmem_in_addr, i64 1" [../gen/Hls_Layers_UpConv.tpp:330->../gen/upconv_core_top.cpp:50]   --->   Operation 56 'readreq' 'gmem_in_load_3_req' <Predicate = true> <Delay = 2.43> <CoreInst = "m_axi">   --->   Core 119 'm_axi' <Latency = 6> <II = 1> <Delay = 1.00> <Adapter> <Opcode : 'read' 'write' 'readreq' 'writereq' 'writeresp'>
+
+State 5 <SV = 4> <Delay = 2.43>
+ST_5 : Operation 57 [7/8] (2.43ns)   --->   "%gmem_in_load_3_req = readreq i1 @_ssdm_op_ReadReq.m_axi.i256P1A, i256 %gmem_in_addr, i64 1" [../gen/Hls_Layers_UpConv.tpp:330->../gen/upconv_core_top.cpp:50]   --->   Operation 57 'readreq' 'gmem_in_load_3_req' <Predicate = true> <Delay = 2.43> <CoreInst = "m_axi">   --->   Core 119 'm_axi' <Latency = 6> <II = 1> <Delay = 1.00> <Adapter> <Opcode : 'read' 'write' 'readreq' 'writereq' 'writeresp'>
+
+State 6 <SV = 5> <Delay = 2.43>
+ST_6 : Operation 58 [6/8] (2.43ns)   --->   "%gmem_in_load_3_req = readreq i1 @_ssdm_op_ReadReq.m_axi.i256P1A, i256 %gmem_in_addr, i64 1" [../gen/Hls_Layers_UpConv.tpp:330->../gen/upconv_core_top.cpp:50]   --->   Operation 58 'readreq' 'gmem_in_load_3_req' <Predicate = true> <Delay = 2.43> <CoreInst = "m_axi">   --->   Core 119 'm_axi' <Latency = 6> <II = 1> <Delay = 1.00> <Adapter> <Opcode : 'read' 'write' 'readreq' 'writereq' 'writeresp'>
+
+State 7 <SV = 6> <Delay = 2.43>
+ST_7 : Operation 59 [5/8] (2.43ns)   --->   "%gmem_in_load_3_req = readreq i1 @_ssdm_op_ReadReq.m_axi.i256P1A, i256 %gmem_in_addr, i64 1" [../gen/Hls_Layers_UpConv.tpp:330->../gen/upconv_core_top.cpp:50]   --->   Operation 59 'readreq' 'gmem_in_load_3_req' <Predicate = true> <Delay = 2.43> <CoreInst = "m_axi">   --->   Core 119 'm_axi' <Latency = 6> <II = 1> <Delay = 1.00> <Adapter> <Opcode : 'read' 'write' 'readreq' 'writereq' 'writeresp'>
+
+State 8 <SV = 7> <Delay = 2.43>
+ST_8 : Operation 60 [4/8] (2.43ns)   --->   "%gmem_in_load_3_req = readreq i1 @_ssdm_op_ReadReq.m_axi.i256P1A, i256 %gmem_in_addr, i64 1" [../gen/Hls_Layers_UpConv.tpp:330->../gen/upconv_core_top.cpp:50]   --->   Operation 60 'readreq' 'gmem_in_load_3_req' <Predicate = true> <Delay = 2.43> <CoreInst = "m_axi">   --->   Core 119 'm_axi' <Latency = 6> <II = 1> <Delay = 1.00> <Adapter> <Opcode : 'read' 'write' 'readreq' 'writereq' 'writeresp'>
+
+State 9 <SV = 8> <Delay = 2.43>
+ST_9 : Operation 61 [3/8] (2.43ns)   --->   "%gmem_in_load_3_req = readreq i1 @_ssdm_op_ReadReq.m_axi.i256P1A, i256 %gmem_in_addr, i64 1" [../gen/Hls_Layers_UpConv.tpp:330->../gen/upconv_core_top.cpp:50]   --->   Operation 61 'readreq' 'gmem_in_load_3_req' <Predicate = true> <Delay = 2.43> <CoreInst = "m_axi">   --->   Core 119 'm_axi' <Latency = 6> <II = 1> <Delay = 1.00> <Adapter> <Opcode : 'read' 'write' 'readreq' 'writereq' 'writeresp'>
+
+State 10 <SV = 9> <Delay = 2.43>
+ST_10 : Operation 62 [2/8] (2.43ns)   --->   "%gmem_in_load_3_req = readreq i1 @_ssdm_op_ReadReq.m_axi.i256P1A, i256 %gmem_in_addr, i64 1" [../gen/Hls_Layers_UpConv.tpp:330->../gen/upconv_core_top.cpp:50]   --->   Operation 62 'readreq' 'gmem_in_load_3_req' <Predicate = true> <Delay = 2.43> <CoreInst = "m_axi">   --->   Core 119 'm_axi' <Latency = 6> <II = 1> <Delay = 1.00> <Adapter> <Opcode : 'read' 'write' 'readreq' 'writereq' 'writeresp'>
+
+State 11 <SV = 10> <Delay = 2.43>
+ST_11 : Operation 63 [1/8] (2.43ns)   --->   "%gmem_in_load_3_req = readreq i1 @_ssdm_op_ReadReq.m_axi.i256P1A, i256 %gmem_in_addr, i64 1" [../gen/Hls_Layers_UpConv.tpp:330->../gen/upconv_core_top.cpp:50]   --->   Operation 63 'readreq' 'gmem_in_load_3_req' <Predicate = true> <Delay = 2.43> <CoreInst = "m_axi">   --->   Core 119 'm_axi' <Latency = 6> <II = 1> <Delay = 1.00> <Adapter> <Opcode : 'read' 'write' 'readreq' 'writereq' 'writeresp'>
+
+State 12 <SV = 11> <Delay = 2.43>
+ST_12 : Operation 64 [1/1] (2.43ns)   --->   "%gmem_in_addr_read = read i256 @_ssdm_op_Read.m_axi.i256P1A, i256 %gmem_in_addr" [../gen/Hls_Layers_UpConv.tpp:330->../gen/upconv_core_top.cpp:50]   --->   Operation 64 'read' 'gmem_in_addr_read' <Predicate = true> <Delay = 2.43> <CoreInst = "m_axi">   --->   Core 119 'm_axi' <Latency = 3> <II = 1> <Delay = 1.00> <Adapter> <Opcode : 'read' 'write' 'readreq' 'writereq' 'writeresp'>
+ST_12 : Operation 77 [1/1] (0.42ns)   --->   "%ret_ln0 = ret"   --->   Operation 77 'ret' 'ret_ln0' <Predicate = (icmp_ln327)> <Delay = 0.42>
+
+State 13 <SV = 12> <Delay = 2.15>
+ST_13 : Operation 65 [1/1] (0.00ns)   --->   "%specloopname_ln0 = specloopname void @_ssdm_op_SpecLoopName, void @LOAD_ROW_VITIS_LOOP_328_2_str"   --->   Operation 65 'specloopname' 'specloopname_ln0' <Predicate = true> <Delay = 0.00>
+ST_13 : Operation 66 [1/1] (0.00ns)   --->   "%speclooptripcount_ln0 = speclooptripcount void @_ssdm_op_SpecLoopTripCount, i64 960, i64 960, i64 960"   --->   Operation 66 'speclooptripcount' 'speclooptripcount_ln0' <Predicate = true> <Delay = 0.00>
+ST_13 : Operation 67 [1/1] (0.00ns)   --->   "%p_cast13 = zext i7 %empty_56" [../gen/Hls_Layers_UpConv.tpp:327->../gen/upconv_core_top.cpp:50]   --->   Operation 67 'zext' 'p_cast13' <Predicate = true> <Delay = 0.00>
+ST_13 : Operation 68 [1/1] (0.00ns)   --->   "%p_shl = bitconcatenate i11 @_ssdm_op_BitConcatenate.i11.i7.i4, i7 %empty_56, i4 0" [../gen/Hls_Layers_UpConv.tpp:327->../gen/upconv_core_top.cpp:50]   --->   Operation 68 'bitconcatenate' 'p_shl' <Predicate = true> <Delay = 0.00>
+ST_13 : Operation 69 [1/1] (0.00ns) (grouped into TernaryAdder)   --->   "%empty_57 = sub i11 %p_shl, i11 %p_cast13" [../gen/Hls_Layers_UpConv.tpp:327->../gen/upconv_core_top.cpp:50]   --->   Operation 69 'sub' 'empty_57' <Predicate = true> <Delay = 0.00> <CoreInst = "TAddSub">   --->   Core 10 'TAddSub' <Latency = 0> <II = 1> <Delay = 0.40> <IPBlock> <Opcode : '' 'add' 'sub'> <InPorts = 3> <OutPorts = 1> <Sync> <CReg>
+ST_13 : Operation 70 [1/1] (0.00ns)   --->   "%zext_ln328_2 = zext i4 %select_ln327" [../gen/Hls_Layers_UpConv.tpp:328->../gen/upconv_core_top.cpp:50]   --->   Operation 70 'zext' 'zext_ln328_2' <Predicate = true> <Delay = 0.00>
+ST_13 : Operation 71 [1/1] (0.00ns)   --->   "%specpipeline_ln329 = specpipeline void @_ssdm_op_SpecPipeline, i32 1, i32 0, i32 0, i32 0, void @empty_15" [../gen/Hls_Layers_UpConv.tpp:329->../gen/upconv_core_top.cpp:50]   --->   Operation 71 'specpipeline' 'specpipeline_ln329' <Predicate = true> <Delay = 0.00>
+ST_13 : Operation 72 [1/1] (0.91ns) (root node of TernaryAdder)   --->   "%add_ln330 = add i11 %zext_ln328_2, i11 %empty_57" [../gen/Hls_Layers_UpConv.tpp:330->../gen/upconv_core_top.cpp:50]   --->   Operation 72 'add' 'add_ln330' <Predicate = true> <Delay = 0.91> <CoreInst = "TAddSub">   --->   Core 10 'TAddSub' <Latency = 0> <II = 1> <Delay = 0.40> <IPBlock> <Opcode : '' 'add' 'sub'> <InPorts = 3> <OutPorts = 1> <Sync> <CReg>
+ST_13 : Operation 73 [1/1] (0.00ns)   --->   "%zext_ln330 = zext i11 %add_ln330" [../gen/Hls_Layers_UpConv.tpp:330->../gen/upconv_core_top.cpp:50]   --->   Operation 73 'zext' 'zext_ln330' <Predicate = true> <Delay = 0.00>
+ST_13 : Operation 74 [1/1] (0.00ns)   --->   "%x_buf_addr = getelementptr i256 %x_buf, i64 0, i64 %zext_ln330" [../gen/Hls_Layers_UpConv.tpp:330->../gen/upconv_core_top.cpp:50]   --->   Operation 74 'getelementptr' 'x_buf_addr' <Predicate = true> <Delay = 0.00>
+ST_13 : Operation 75 [1/1] ( I:1.23ns O:1.23ns )   --->   "%store_ln330 = store i256 %gmem_in_addr_read, i11 %x_buf_addr" [../gen/Hls_Layers_UpConv.tpp:330->../gen/upconv_core_top.cpp:50]   --->   Operation 75 'store' 'store_ln330' <Predicate = true> <Delay = 1.23> <CoreInst = "RAM_T2P_URAM">   --->   Core 99 'RAM_T2P_URAM' <Latency = 1> <II = 1> <Delay = 1.23> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 256> <Depth = 2048> <RAM>
+ST_13 : Operation 76 [1/1] (0.00ns)   --->   "%br_ln328 = br void %for.body27.i100" [../gen/Hls_Layers_UpConv.tpp:328->../gen/upconv_core_top.cpp:50]   --->   Operation 76 'br' 'br_ln328' <Predicate = true> <Delay = 0.00>
+
+
+============================================================
++ Verbose Summary: Timing violations
+============================================================
+Target clock period: 3.333ns, clock uncertainty: 0.900ns.
+
+ <State 1>: 1.641ns
+The critical path consists of the following:
+	'store' operation 0 bit ('store_ln0') of constant 0 on local variable 'indvar_flatten34' [15]  (0.427 ns)
+	'load' operation 10 bit ('indvar_flatten34_load', ../gen/Hls_Layers_UpConv.tpp:327->../gen/upconv_core_top.cpp:50) on local variable 'indvar_flatten34' [20]  (0.000 ns)
+	'add' operation 10 bit ('add_ln327', ../gen/Hls_Layers_UpConv.tpp:327->../gen/upconv_core_top.cpp:50) [23]  (0.787 ns)
+	'store' operation 0 bit ('store_ln327', ../gen/Hls_Layers_UpConv.tpp:327->../gen/upconv_core_top.cpp:50) of variable 'add_ln327', ../gen/Hls_Layers_UpConv.tpp:327->../gen/upconv_core_top.cpp:50 on local variable 'indvar_flatten34' [58]  (0.427 ns)
+
+ <State 2>: 2.412ns
+The critical path consists of the following:
+	'load' operation 4 bit ('ciw_load', ../gen/Hls_Layers_UpConv.tpp:328->../gen/upconv_core_top.cpp:50) on local variable 'ciw', ../gen/Hls_Layers_UpConv.tpp:328->../gen/upconv_core_top.cpp:50 [26]  (0.000 ns)
+	'icmp' operation 1 bit ('icmp_ln328', ../gen/Hls_Layers_UpConv.tpp:328->../gen/upconv_core_top.cpp:50) [31]  (0.797 ns)
+	'select' operation 4 bit ('select_ln327', ../gen/Hls_Layers_UpConv.tpp:327->../gen/upconv_core_top.cpp:50) [32]  (0.391 ns)
+	'add' operation 4 bit ('add_ln328', ../gen/Hls_Layers_UpConv.tpp:328->../gen/upconv_core_top.cpp:50) [57]  (0.797 ns)
+	'store' operation 0 bit ('store_ln328', ../gen/Hls_Layers_UpConv.tpp:328->../gen/upconv_core_top.cpp:50) of variable 'add_ln328', ../gen/Hls_Layers_UpConv.tpp:328->../gen/upconv_core_top.cpp:50 on local variable 'ciw', ../gen/Hls_Layers_UpConv.tpp:328->../gen/upconv_core_top.cpp:50 [60]  (0.427 ns)
+
+ <State 3>: 1.659ns
+The critical path consists of the following:
+	'add' operation 16 bit ('add_ln330_3', ../gen/Hls_Layers_UpConv.tpp:330->../gen/upconv_core_top.cpp:50) [48]  (0.853 ns)
+	'add' operation 60 bit ('add_ln330_5', ../gen/Hls_Layers_UpConv.tpp:330->../gen/upconv_core_top.cpp:50) [51]  (0.806 ns)
+
+ <State 4>: 2.433ns
+The critical path consists of the following:
+	'getelementptr' operation 256 bit ('gmem_in_addr', ../gen/Hls_Layers_UpConv.tpp:330->../gen/upconv_core_top.cpp:50) [53]  (0.000 ns)
+	bus request operation ('gmem_in_load_3_req', ../gen/Hls_Layers_UpConv.tpp:330->../gen/upconv_core_top.cpp:50) on port 'gmem_in' (../gen/Hls_Layers_UpConv.tpp:330->../gen/upconv_core_top.cpp:50) [54]  (2.433 ns)
+
+ <State 5>: 2.433ns
+The critical path consists of the following:
+	bus request operation ('gmem_in_load_3_req', ../gen/Hls_Layers_UpConv.tpp:330->../gen/upconv_core_top.cpp:50) on port 'gmem_in' (../gen/Hls_Layers_UpConv.tpp:330->../gen/upconv_core_top.cpp:50) [54]  (2.433 ns)
+
+ <State 6>: 2.433ns
+The critical path consists of the following:
+	bus request operation ('gmem_in_load_3_req', ../gen/Hls_Layers_UpConv.tpp:330->../gen/upconv_core_top.cpp:50) on port 'gmem_in' (../gen/Hls_Layers_UpConv.tpp:330->../gen/upconv_core_top.cpp:50) [54]  (2.433 ns)
+
+ <State 7>: 2.433ns
+The critical path consists of the following:
+	bus request operation ('gmem_in_load_3_req', ../gen/Hls_Layers_UpConv.tpp:330->../gen/upconv_core_top.cpp:50) on port 'gmem_in' (../gen/Hls_Layers_UpConv.tpp:330->../gen/upconv_core_top.cpp:50) [54]  (2.433 ns)
+
+ <State 8>: 2.433ns
+The critical path consists of the following:
+	bus request operation ('gmem_in_load_3_req', ../gen/Hls_Layers_UpConv.tpp:330->../gen/upconv_core_top.cpp:50) on port 'gmem_in' (../gen/Hls_Layers_UpConv.tpp:330->../gen/upconv_core_top.cpp:50) [54]  (2.433 ns)
+
+ <State 9>: 2.433ns
+The critical path consists of the following:
+	bus request operation ('gmem_in_load_3_req', ../gen/Hls_Layers_UpConv.tpp:330->../gen/upconv_core_top.cpp:50) on port 'gmem_in' (../gen/Hls_Layers_UpConv.tpp:330->../gen/upconv_core_top.cpp:50) [54]  (2.433 ns)
+
+ <State 10>: 2.433ns
+The critical path consists of the following:
+	bus request operation ('gmem_in_load_3_req', ../gen/Hls_Layers_UpConv.tpp:330->../gen/upconv_core_top.cpp:50) on port 'gmem_in' (../gen/Hls_Layers_UpConv.tpp:330->../gen/upconv_core_top.cpp:50) [54]  (2.433 ns)
+
+ <State 11>: 2.433ns
+The critical path consists of the following:
+	bus request operation ('gmem_in_load_3_req', ../gen/Hls_Layers_UpConv.tpp:330->../gen/upconv_core_top.cpp:50) on port 'gmem_in' (../gen/Hls_Layers_UpConv.tpp:330->../gen/upconv_core_top.cpp:50) [54]  (2.433 ns)
+
+ <State 12>: 2.433ns
+The critical path consists of the following:
+	bus read operation ('gmem_in_addr_read', ../gen/Hls_Layers_UpConv.tpp:330->../gen/upconv_core_top.cpp:50) on port 'gmem_in' (../gen/Hls_Layers_UpConv.tpp:330->../gen/upconv_core_top.cpp:50) [55]  (2.433 ns)
+
+ <State 13>: 2.151ns
+The critical path consists of the following:
+	'sub' operation 11 bit ('empty_57', ../gen/Hls_Layers_UpConv.tpp:327->../gen/upconv_core_top.cpp:50) [41]  (0.000 ns)
+	'add' operation 11 bit ('add_ln330', ../gen/Hls_Layers_UpConv.tpp:330->../gen/upconv_core_top.cpp:50) [45]  (0.914 ns)
+	'getelementptr' operation 11 bit ('x_buf_addr', ../gen/Hls_Layers_UpConv.tpp:330->../gen/upconv_core_top.cpp:50) [47]  (0.000 ns)
+	'store' operation 0 bit ('store_ln330', ../gen/Hls_Layers_UpConv.tpp:330->../gen/upconv_core_top.cpp:50) of variable 'gmem_in_addr_read', ../gen/Hls_Layers_UpConv.tpp:330->../gen/upconv_core_top.cpp:50 on array 'x_buf' [56]  (1.237 ns)
+
+
+============================================================
++ Verbose Summary: Binding
+============================================================
+N/A
+* FSMD analyzer results:
+  - Output states:
+ - Input state : 
+  - Chain level:
+	State 1
+	State 2
+	State 3
+	State 4
+	State 5
+	State 6
+	State 7
+	State 8
+	State 9
+	State 10
+	State 11
+	State 12
+	State 13
+
+
+============================================================
++ Verbose Summary: Datapath Resource usage 
+============================================================
+N/A

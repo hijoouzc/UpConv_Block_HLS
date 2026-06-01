@@ -22,24 +22,24 @@ dict set ap_memory_interface_dict g_buf { MEM_WIDTH 256 MEM_SIZE 128 MASTER_TYPE
 dict set ap_memory_interface_dict be_buf { MEM_WIDTH 256 MEM_SIZE 128 MASTER_TYPE BRAM_CTRL MEM_ADDRESS_MODE WORD_ADDRESS PACKAGE_IO port READ_LATENCY 0 }
 set C_modelArgList {
 	{ b_buf int 256 regular {array 4 { 0 3 } 0 1 }  }
-	{ sext_ln228 int 59 regular  }
+	{ sext_ln221 int 59 regular  }
 	{ gmem_param int 256 regular {axi_master 0}  }
 	{ g_buf int 256 regular {array 4 { 0 3 } 0 1 }  }
-	{ sext_ln228_1 int 59 regular  }
+	{ sext_ln221_1 int 59 regular  }
 	{ be_buf int 256 regular {array 4 { 0 3 } 0 1 }  }
-	{ sext_ln228_2 int 59 regular  }
+	{ sext_ln221_2 int 59 regular  }
 }
 set hasAXIMCache 0
 set l_AXIML2Cache [list]
 set AXIMCacheInstDict [dict create]
 set C_modelArgMapList {[ 
 	{ "Name" : "b_buf", "interface" : "memory", "bitwidth" : 256, "direction" : "WRITEONLY"} , 
- 	{ "Name" : "sext_ln228", "interface" : "wire", "bitwidth" : 59, "direction" : "READONLY"} , 
+ 	{ "Name" : "sext_ln221", "interface" : "wire", "bitwidth" : 59, "direction" : "READONLY"} , 
  	{ "Name" : "gmem_param", "interface" : "axi_master", "bitwidth" : 256, "direction" : "READONLY", "bitSlice":[ {"cElement": [{"cName": "B","offset": { "type": "dynamic","port_name": "B","bundle": "control"},"direction": "READONLY"},{"cName": "G","offset": { "type": "dynamic","port_name": "G","bundle": "control"},"direction": "READONLY"},{"cName": "BE","offset": { "type": "dynamic","port_name": "BE","bundle": "control"},"direction": "READONLY"}]}]} , 
  	{ "Name" : "g_buf", "interface" : "memory", "bitwidth" : 256, "direction" : "WRITEONLY"} , 
- 	{ "Name" : "sext_ln228_1", "interface" : "wire", "bitwidth" : 59, "direction" : "READONLY"} , 
+ 	{ "Name" : "sext_ln221_1", "interface" : "wire", "bitwidth" : 59, "direction" : "READONLY"} , 
  	{ "Name" : "be_buf", "interface" : "memory", "bitwidth" : 256, "direction" : "WRITEONLY"} , 
- 	{ "Name" : "sext_ln228_2", "interface" : "wire", "bitwidth" : 59, "direction" : "READONLY"} ]}
+ 	{ "Name" : "sext_ln221_2", "interface" : "wire", "bitwidth" : 59, "direction" : "READONLY"} ]}
 # RTL Port declarations: 
 set portNum 67
 set portList { 
@@ -99,17 +99,17 @@ set portList {
 	{ b_buf_ce0 sc_out sc_logic 1 signal 0 } 
 	{ b_buf_we0 sc_out sc_logic 1 signal 0 } 
 	{ b_buf_d0 sc_out sc_lv 256 signal 0 } 
-	{ sext_ln228 sc_in sc_lv 59 signal 1 } 
+	{ sext_ln221 sc_in sc_lv 59 signal 1 } 
 	{ g_buf_address0 sc_out sc_lv 2 signal 3 } 
 	{ g_buf_ce0 sc_out sc_logic 1 signal 3 } 
 	{ g_buf_we0 sc_out sc_logic 1 signal 3 } 
 	{ g_buf_d0 sc_out sc_lv 256 signal 3 } 
-	{ sext_ln228_1 sc_in sc_lv 59 signal 4 } 
+	{ sext_ln221_1 sc_in sc_lv 59 signal 4 } 
 	{ be_buf_address0 sc_out sc_lv 2 signal 5 } 
 	{ be_buf_ce0 sc_out sc_logic 1 signal 5 } 
 	{ be_buf_we0 sc_out sc_logic 1 signal 5 } 
 	{ be_buf_d0 sc_out sc_lv 256 signal 5 } 
-	{ sext_ln228_2 sc_in sc_lv 59 signal 6 } 
+	{ sext_ln221_2 sc_in sc_lv 59 signal 6 } 
 }
 set NewPortList {[ 
 	{ "name": "ap_clk", "direction": "in", "datatype": "sc_logic", "bitwidth":1, "type": "clock", "bundle":{"name": "ap_clk", "role": "default" }} , 
@@ -168,17 +168,17 @@ set NewPortList {[
  	{ "name": "b_buf_ce0", "direction": "out", "datatype": "sc_logic", "bitwidth":1, "type": "signal", "bundle":{"name": "b_buf", "role": "ce0" }} , 
  	{ "name": "b_buf_we0", "direction": "out", "datatype": "sc_logic", "bitwidth":1, "type": "signal", "bundle":{"name": "b_buf", "role": "we0" }} , 
  	{ "name": "b_buf_d0", "direction": "out", "datatype": "sc_lv", "bitwidth":256, "type": "signal", "bundle":{"name": "b_buf", "role": "d0" }} , 
- 	{ "name": "sext_ln228", "direction": "in", "datatype": "sc_lv", "bitwidth":59, "type": "signal", "bundle":{"name": "sext_ln228", "role": "default" }} , 
+ 	{ "name": "sext_ln221", "direction": "in", "datatype": "sc_lv", "bitwidth":59, "type": "signal", "bundle":{"name": "sext_ln221", "role": "default" }} , 
  	{ "name": "g_buf_address0", "direction": "out", "datatype": "sc_lv", "bitwidth":2, "type": "signal", "bundle":{"name": "g_buf", "role": "address0" }} , 
  	{ "name": "g_buf_ce0", "direction": "out", "datatype": "sc_logic", "bitwidth":1, "type": "signal", "bundle":{"name": "g_buf", "role": "ce0" }} , 
  	{ "name": "g_buf_we0", "direction": "out", "datatype": "sc_logic", "bitwidth":1, "type": "signal", "bundle":{"name": "g_buf", "role": "we0" }} , 
  	{ "name": "g_buf_d0", "direction": "out", "datatype": "sc_lv", "bitwidth":256, "type": "signal", "bundle":{"name": "g_buf", "role": "d0" }} , 
- 	{ "name": "sext_ln228_1", "direction": "in", "datatype": "sc_lv", "bitwidth":59, "type": "signal", "bundle":{"name": "sext_ln228_1", "role": "default" }} , 
+ 	{ "name": "sext_ln221_1", "direction": "in", "datatype": "sc_lv", "bitwidth":59, "type": "signal", "bundle":{"name": "sext_ln221_1", "role": "default" }} , 
  	{ "name": "be_buf_address0", "direction": "out", "datatype": "sc_lv", "bitwidth":2, "type": "signal", "bundle":{"name": "be_buf", "role": "address0" }} , 
  	{ "name": "be_buf_ce0", "direction": "out", "datatype": "sc_logic", "bitwidth":1, "type": "signal", "bundle":{"name": "be_buf", "role": "ce0" }} , 
  	{ "name": "be_buf_we0", "direction": "out", "datatype": "sc_logic", "bitwidth":1, "type": "signal", "bundle":{"name": "be_buf", "role": "we0" }} , 
  	{ "name": "be_buf_d0", "direction": "out", "datatype": "sc_lv", "bitwidth":256, "type": "signal", "bundle":{"name": "be_buf", "role": "d0" }} , 
- 	{ "name": "sext_ln228_2", "direction": "in", "datatype": "sc_lv", "bitwidth":59, "type": "signal", "bundle":{"name": "sext_ln228_2", "role": "default" }}  ]}
+ 	{ "name": "sext_ln221_2", "direction": "in", "datatype": "sc_lv", "bitwidth":59, "type": "signal", "bundle":{"name": "sext_ln221_2", "role": "default" }}  ]}
 
 set RtlHierarchyInfo {[
 	{"ID" : "0", "Level" : "0", "Path" : "`AUTOTB_DUT_INST", "Parent" : "", "Child" : ["1"],
@@ -197,15 +197,15 @@ set RtlHierarchyInfo {[
 		"IsBlackBox" : "0",
 		"Port" : [
 			{"Name" : "b_buf", "Type" : "Memory", "Direction" : "O"},
-			{"Name" : "sext_ln228", "Type" : "None", "Direction" : "I"},
+			{"Name" : "sext_ln221", "Type" : "None", "Direction" : "I"},
 			{"Name" : "gmem_param", "Type" : "MAXI", "Direction" : "I",
 				"BlockSignal" : [
 					{"Name" : "gmem_param_blk_n_AR", "Type" : "RtlSignal"},
 					{"Name" : "gmem_param_blk_n_R", "Type" : "RtlSignal"}]},
 			{"Name" : "g_buf", "Type" : "Memory", "Direction" : "O"},
-			{"Name" : "sext_ln228_1", "Type" : "None", "Direction" : "I"},
+			{"Name" : "sext_ln221_1", "Type" : "None", "Direction" : "I"},
 			{"Name" : "be_buf", "Type" : "Memory", "Direction" : "O"},
-			{"Name" : "sext_ln228_2", "Type" : "None", "Direction" : "I"}],
+			{"Name" : "sext_ln221_2", "Type" : "None", "Direction" : "I"}],
 		"Loop" : [
 			{"Name" : "LOAD_PARAMS", "PipelineType" : "UPC",
 				"LoopDec" : {"FSMBitwidth" : "3", "FirstState" : "ap_ST_fsm_pp0_stage0", "FirstStateIter" : "ap_enable_reg_pp0_iter0", "FirstStateBlock" : "ap_block_pp0_stage0_subdone", "LastState" : "ap_ST_fsm_pp0_stage0", "LastStateIter" : "ap_enable_reg_pp0_iter4", "LastStateBlock" : "ap_block_pp0_stage0_subdone", "QuitState" : "ap_ST_fsm_pp0_stage0", "QuitStateIter" : "ap_enable_reg_pp0_iter4", "QuitStateBlock" : "ap_block_pp0_stage0_subdone", "OneDepthLoop" : "0", "has_ap_ctrl" : "1", "has_continue" : "0"}}]},
@@ -215,12 +215,12 @@ set RtlHierarchyInfo {[
 set ArgLastReadFirstWriteLatency {
 	UpConv_Fused_Row_8_128_128_120_60_Pipeline_LOAD_PARAMS {
 		b_buf {Type O LastRead -1 FirstWrite 10}
-		sext_ln228 {Type I LastRead 0 FirstWrite -1}
+		sext_ln221 {Type I LastRead 0 FirstWrite -1}
 		gmem_param {Type I LastRead 11 FirstWrite -1}
 		g_buf {Type O LastRead -1 FirstWrite 11}
-		sext_ln228_1 {Type I LastRead 0 FirstWrite -1}
+		sext_ln221_1 {Type I LastRead 0 FirstWrite -1}
 		be_buf {Type O LastRead -1 FirstWrite 12}
-		sext_ln228_2 {Type I LastRead 0 FirstWrite -1}}}
+		sext_ln221_2 {Type I LastRead 0 FirstWrite -1}}}
 
 set hasDtUnsupportedChannel 0
 
@@ -235,10 +235,10 @@ set PipelineEnableSignalInfo {[
 
 set Spec2ImplPortList { 
 	b_buf { ap_memory {  { b_buf_address0 mem_address 1 2 }  { b_buf_ce0 mem_ce 1 1 }  { b_buf_we0 mem_we 1 1 }  { b_buf_d0 mem_din 1 256 } } }
-	sext_ln228 { ap_none {  { sext_ln228 in_data 0 59 } } }
+	sext_ln221 { ap_none {  { sext_ln221 in_data 0 59 } } }
 	 { m_axi {  { m_axi_gmem_param_0_AWVALID VALID 1 1 }  { m_axi_gmem_param_0_AWREADY READY 0 1 }  { m_axi_gmem_param_0_AWADDR ADDR 1 64 }  { m_axi_gmem_param_0_AWID ID 1 1 }  { m_axi_gmem_param_0_AWLEN SIZE 1 32 }  { m_axi_gmem_param_0_AWSIZE BURST 1 3 }  { m_axi_gmem_param_0_AWBURST LOCK 1 2 }  { m_axi_gmem_param_0_AWLOCK CACHE 1 2 }  { m_axi_gmem_param_0_AWCACHE PROT 1 4 }  { m_axi_gmem_param_0_AWPROT QOS 1 3 }  { m_axi_gmem_param_0_AWQOS REGION 1 4 }  { m_axi_gmem_param_0_AWREGION USER 1 4 }  { m_axi_gmem_param_0_AWUSER DATA 1 1 }  { m_axi_gmem_param_0_WVALID VALID 1 1 }  { m_axi_gmem_param_0_WREADY READY 0 1 }  { m_axi_gmem_param_0_WDATA FIFONUM 1 256 }  { m_axi_gmem_param_0_WSTRB STRB 1 32 }  { m_axi_gmem_param_0_WLAST LAST 1 1 }  { m_axi_gmem_param_0_WID ID 1 1 }  { m_axi_gmem_param_0_WUSER DATA 1 1 }  { m_axi_gmem_param_0_ARVALID VALID 1 1 }  { m_axi_gmem_param_0_ARREADY READY 0 1 }  { m_axi_gmem_param_0_ARADDR ADDR 1 64 }  { m_axi_gmem_param_0_ARID ID 1 1 }  { m_axi_gmem_param_0_ARLEN SIZE 1 32 }  { m_axi_gmem_param_0_ARSIZE BURST 1 3 }  { m_axi_gmem_param_0_ARBURST LOCK 1 2 }  { m_axi_gmem_param_0_ARLOCK CACHE 1 2 }  { m_axi_gmem_param_0_ARCACHE PROT 1 4 }  { m_axi_gmem_param_0_ARPROT QOS 1 3 }  { m_axi_gmem_param_0_ARQOS REGION 1 4 }  { m_axi_gmem_param_0_ARREGION USER 1 4 }  { m_axi_gmem_param_0_ARUSER DATA 1 1 }  { m_axi_gmem_param_0_RVALID VALID 0 1 }  { m_axi_gmem_param_0_RREADY READY 1 1 }  { m_axi_gmem_param_0_RDATA FIFONUM 0 256 }  { m_axi_gmem_param_0_RLAST LAST 0 1 }  { m_axi_gmem_param_0_RID ID 0 1 }  { m_axi_gmem_param_0_RFIFONUM LEN 0 11 }  { m_axi_gmem_param_0_RUSER DATA 0 1 }  { m_axi_gmem_param_0_RRESP RESP 0 2 }  { m_axi_gmem_param_0_BVALID VALID 0 1 }  { m_axi_gmem_param_0_BREADY READY 1 1 }  { m_axi_gmem_param_0_BRESP RESP 0 2 }  { m_axi_gmem_param_0_BID ID 0 1 }  { m_axi_gmem_param_0_BUSER DATA 0 1 } } }
 	g_buf { ap_memory {  { g_buf_address0 mem_address 1 2 }  { g_buf_ce0 mem_ce 1 1 }  { g_buf_we0 mem_we 1 1 }  { g_buf_d0 mem_din 1 256 } } }
-	sext_ln228_1 { ap_none {  { sext_ln228_1 in_data 0 59 } } }
+	sext_ln221_1 { ap_none {  { sext_ln221_1 in_data 0 59 } } }
 	be_buf { ap_memory {  { be_buf_address0 mem_address 1 2 }  { be_buf_ce0 mem_ce 1 1 }  { be_buf_we0 mem_we 1 1 }  { be_buf_d0 mem_din 1 256 } } }
-	sext_ln228_2 { ap_none {  { sext_ln228_2 in_data 0 59 } } }
+	sext_ln221_2 { ap_none {  { sext_ln221_2 in_data 0 59 } } }
 }

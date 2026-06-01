@@ -1,37 +1,37 @@
 {
     "1": {
-        "name": "UpConv_Fused_Row<8, 32, 32, 480, 240>_Pipeline_BIAS_STATS",
+        "name": "UpConv_Fused_Row<8, 64, 64, 240, 120>_Pipeline_PIXEL_STATS",
         "file": "..\/gen\/Hls_Layers_UpConv.tpp",
-        "fileloc": "240",
-        "instructions": "126",
-        "total_instructions": "126",
+        "fileloc": "236",
+        "instructions": "282",
+        "total_instructions": "282",
         "calls": "",
-        "basicblocks": "21",
+        "basicblocks": "54",
         "loads": {
             "G": "16",
-            "L": "6"
+            "L": "37"
         },
         "stores": {
-            "G": "16",
-            "L": "6"
+            "G": "18",
+            "L": "31"
         },
         "loops": {
             "L": "1"
         }
     },
     "2": {
-        "name": "upconv_core_top_Pipeline_LOAD_ROW_VITIS_LOOP_307_26",
-        "file": "..\/gen\/upconv_core_top.cpp",
-        "fileloc": "52",
-        "instructions": "49",
-        "total_instructions": "49",
+        "name": "UpConv_Fused_Row<8, 32, 32, 480, 240>_Pipeline_RESET_ROW_ACC",
+        "file": "..\/gen\/Hls_Layers_UpConv.tpp",
+        "fileloc": "115",
+        "instructions": "81",
+        "total_instructions": "81",
         "calls": "",
         "basicblocks": "4",
         "loads": {
             "L": "3"
         },
         "stores": {
-            "G": "1",
+            "G": "16",
             "L": "6"
         },
         "loops": {
@@ -42,136 +42,52 @@
         "name": "UpConv_Fused_Row<8, 64, 64, 240, 120>",
         "file": "Hls_Layers_UpConv.tpp",
         "fileloc": "79",
-        "instructions": "80",
-        "total_instructions": "2040",
-        "calls": "45 31 46 5 43",
-        "basicblocks": "4",
-        "loads": {
-            "L": "3"
-        },
-        "stores": {
-            "L": "2"
-        },
-        "loops": {
-            "L": "1"
-        }
+        "instructions": "47",
+        "total_instructions": "1908",
+        "calls": "34 36 16 1 46",
+        "basicblocks": "1"
     },
     "4": {
-        "name": "UpConv_Fused_Row<8, 128, 128, 120, 60>_Pipeline_NORM_WRITE",
-        "file": "..\/gen\/Hls_Layers_UpConv.tpp",
-        "fileloc": "238",
-        "instructions": "263",
-        "total_instructions": "263",
+        "name": "upconv_core_top_Pipeline_LOAD_ROW0_VITIS_LOOP_317_1",
+        "file": "..\/gen\/upconv_core_top.cpp",
+        "fileloc": "46",
+        "instructions": "43",
+        "total_instructions": "43",
         "calls": "",
         "basicblocks": "4",
         "loads": {
-            "G": "16",
             "L": "3"
         },
         "stores": {
-            "L": "2"
+            "G": "1",
+            "L": "6"
         },
         "loops": {
             "L": "1"
         }
     },
     "5": {
-        "name": "UpConv_Fused_Row<8, 64, 64, 240, 120>_Pipeline_BIAS_STATS",
+        "name": "UpConv_Fused_Row<8, 16, 16, 960, 480>_Pipeline_PIXEL_STATS",
         "file": "..\/gen\/Hls_Layers_UpConv.tpp",
-        "fileloc": "240",
-        "instructions": "125",
-        "total_instructions": "125",
+        "fileloc": "236",
+        "instructions": "285",
+        "total_instructions": "285",
         "calls": "",
-        "basicblocks": "21",
+        "basicblocks": "54",
         "loads": {
             "G": "16",
-            "L": "6"
+            "L": "37"
         },
         "stores": {
-            "G": "16",
-            "L": "6"
+            "G": "18",
+            "L": "31"
         },
         "loops": {
             "L": "1"
         }
     },
     "6": {
-        "name": "upconv_core_top_Pipeline_LOAD_ROW_VITIS_LOOP_307_22",
-        "file": "..\/gen\/upconv_core_top.cpp",
-        "fileloc": "48",
-        "instructions": "57",
-        "total_instructions": "57",
-        "calls": "",
-        "basicblocks": "4",
-        "loads": {
-            "L": "3"
-        },
-        "stores": {
-            "G": "1",
-            "L": "6"
-        },
-        "loops": {
-            "L": "1"
-        }
-    },
-    "7": {
-        "name": "upconv_core_top_Pipeline_LOAD_ROW0_VITIS_LOOP_296_15",
-        "file": "..\/gen\/upconv_core_top.cpp",
-        "fileloc": "46",
-        "instructions": "40",
-        "total_instructions": "40",
-        "calls": "",
-        "basicblocks": "4",
-        "loads": {
-            "L": "3"
-        },
-        "stores": {
-            "G": "1",
-            "L": "6"
-        },
-        "loops": {
-            "L": "1"
-        }
-    },
-    "8": {
-        "name": "UpConv_Fused_Row<8, 32, 32, 480, 240>",
-        "file": "Hls_Layers_UpConv.tpp",
-        "fileloc": "79",
-        "instructions": "89",
-        "total_instructions": "2232",
-        "calls": "34 11 32 1 14",
-        "basicblocks": "4",
-        "loads": {
-            "L": "3"
-        },
-        "stores": {
-            "L": "2"
-        },
-        "loops": {
-            "L": "1"
-        }
-    },
-    "9": {
-        "name": "upconv_core_top_Pipeline_LOAD_ROW0",
-        "file": "..\/gen\/upconv_core_top.cpp",
-        "fileloc": "46",
-        "instructions": "23",
-        "total_instructions": "23",
-        "calls": "",
-        "basicblocks": "4",
-        "loads": {
-            "L": "1"
-        },
-        "stores": {
-            "G": "1",
-            "L": "2"
-        },
-        "loops": {
-            "L": "1"
-        }
-    },
-    "10": {
-        "name": "UpConv_Fused_Row<8, 16, 16, 16, 16>_Pipeline_PRELOAD_W_VITIS_LOOP_142_2",
+        "name": "UpConv_Fused_Row<8, 16, 16, 16, 16>_Pipeline_PRELOAD_W_W_FLAT",
         "file": "..\/gen\/Hls_Layers_UpConv.tpp",
         "fileloc": "135",
         "instructions": "66",
@@ -188,200 +104,10 @@
             "L": "1"
         }
     },
-    "11": {
-        "name": "UpConv_Fused_Row<8, 32, 32, 480, 240>_Outline_TILE_LOOP",
+    "7": {
+        "name": "UpConv_Fused_Row<8, 16, 16, 960, 480>_Pipeline_LOAD_PARAMS",
         "file": "..\/gen\/Hls_Layers_UpConv.tpp",
-        "fileloc": "128",
-        "instructions": "277",
-        "total_instructions": "1173",
-        "calls": "37 35",
-        "basicblocks": "21",
-        "loads": {
-            "G": "16",
-            "L": "33"
-        },
-        "stores": {
-            "G": "16",
-            "L": "2"
-        },
-        "loops": {
-            "L": "1",
-            "N": "3"
-        }
-    },
-    "12": {
-        "name": "UpConv_Fused_Row_Pipeline_VITIS_LOOP_142_2_VITIS_LOOP_143_3",
-        "file": "..\/gen\/Hls_Layers_UpConv.tpp",
-        "fileloc": "142",
-        "instructions": "69",
-        "total_instructions": "69",
-        "calls": "",
-        "basicblocks": "13",
-        "loads": {
-            "L": "3"
-        },
-        "stores": {
-            "L": "14"
-        },
-        "loops": {
-            "L": "1"
-        }
-    },
-    "13": {
-        "name": "UpConv_Fused_Row<8, 64, 64, 240, 120>_Pipeline_CI_LOOP",
-        "file": "..\/gen\/Hls_Layers_UpConv.tpp",
-        "fileloc": "171",
-        "instructions": "807",
-        "total_instructions": "807",
-        "calls": "",
-        "basicblocks": "9",
-        "loads": {
-            "G": "1",
-            "L": "73"
-        },
-        "stores": {
-            "L": "66"
-        },
-        "loops": {
-            "L": "1"
-        }
-    },
-    "14": {
-        "name": "UpConv_Fused_Row<8, 32, 32, 480, 240>_Pipeline_NORM_WRITE",
-        "file": "..\/gen\/Hls_Layers_UpConv.tpp",
-        "fileloc": "238",
-        "instructions": "256",
-        "total_instructions": "256",
-        "calls": "",
-        "basicblocks": "4",
-        "loads": {
-            "G": "16",
-            "L": "3"
-        },
-        "stores": {
-            "L": "2"
-        },
-        "loops": {
-            "L": "1"
-        }
-    },
-    "15": {
-        "name": "UpConv_Fused_Row<8, 16, 16, 960, 480>",
-        "file": "Hls_Layers_UpConv.tpp",
-        "fileloc": "79",
-        "instructions": "90",
-        "total_instructions": "2746",
-        "calls": "38 27 40 23 22",
-        "basicblocks": "4",
-        "loads": {
-            "L": "3"
-        },
-        "stores": {
-            "L": "2"
-        },
-        "loops": {
-            "L": "1"
-        }
-    },
-    "16": {
-        "name": "UpConv_Fused_Row<8, 16, 16, 960, 480>_Pipeline_CI_LOOP",
-        "file": "..\/gen\/Hls_Layers_UpConv.tpp",
-        "fileloc": "171",
-        "instructions": "807",
-        "total_instructions": "807",
-        "calls": "",
-        "basicblocks": "9",
-        "loads": {
-            "G": "1",
-            "L": "73"
-        },
-        "stores": {
-            "L": "66"
-        },
-        "loops": {
-            "L": "1"
-        }
-    },
-    "17": {
-        "name": "UpConv_Fused_Row_Pipeline_PRELOAD_W_VITIS_LOOP_142_2_VITIS_LOOP_143_3.1",
-        "file": "..\/gen\/Hls_Layers_UpConv.tpp",
-        "fileloc": "135",
-        "instructions": "89",
-        "total_instructions": "89",
-        "calls": "",
-        "basicblocks": "13",
-        "loads": {
-            "L": "5"
-        },
-        "stores": {
-            "L": "18"
-        },
-        "loops": {
-            "L": "1"
-        }
-    },
-    "18": {
-        "name": "upconv_core_top_Pipeline_LOAD_ROW0_VITIS_LOOP_296_1",
-        "file": "..\/gen\/upconv_core_top.cpp",
-        "fileloc": "46",
-        "instructions": "43",
-        "total_instructions": "43",
-        "calls": "",
-        "basicblocks": "4",
-        "loads": {
-            "L": "3"
-        },
-        "stores": {
-            "G": "1",
-            "L": "6"
-        },
-        "loops": {
-            "L": "1"
-        }
-    },
-    "19": {
-        "name": "UpConv_Fused_Row<8, 16, 16, 16, 16>_Pipeline_RESET_ROW_ACC",
-        "file": "..\/gen\/Hls_Layers_UpConv.tpp",
-        "fileloc": "117",
-        "instructions": "62",
-        "total_instructions": "62",
-        "calls": "",
-        "basicblocks": "4",
-        "loads": {
-            "L": "1"
-        },
-        "stores": {
-            "G": "16",
-            "L": "2"
-        },
-        "loops": {
-            "L": "1"
-        }
-    },
-    "20": {
-        "name": "UpConv_Fused_Row<8, 16, 16, 16, 16>_Pipeline_KW_LOOP_WO_LOOP",
-        "file": "..\/gen\/Hls_Layers_UpConv.tpp",
-        "fileloc": "161",
-        "instructions": "710",
-        "total_instructions": "710",
-        "calls": "",
-        "basicblocks": "10",
-        "loads": {
-            "G": "17",
-            "L": "11"
-        },
-        "stores": {
-            "G": "16",
-            "L": "6"
-        },
-        "loops": {
-            "L": "1"
-        }
-    },
-    "21": {
-        "name": "UpConv_Fused_Row<8, 128, 128, 120, 60>_Pipeline_LOAD_PARAMS",
-        "file": "..\/gen\/Hls_Layers_UpConv.tpp",
-        "fileloc": "228",
+        "fileloc": "221",
         "instructions": "46",
         "total_instructions": "46",
         "calls": "",
@@ -396,164 +122,7 @@
             "L": "1"
         }
     },
-    "22": {
-        "name": "UpConv_Fused_Row<8, 16, 16, 960, 480>_Pipeline_NORM_WRITE",
-        "file": "..\/gen\/Hls_Layers_UpConv.tpp",
-        "fileloc": "238",
-        "instructions": "256",
-        "total_instructions": "256",
-        "calls": "",
-        "basicblocks": "4",
-        "loads": {
-            "G": "16",
-            "L": "3"
-        },
-        "stores": {
-            "L": "2"
-        },
-        "loops": {
-            "L": "1"
-        }
-    },
-    "23": {
-        "name": "UpConv_Fused_Row<8, 16, 16, 960, 480>_Pipeline_BIAS_STATS",
-        "file": "..\/gen\/Hls_Layers_UpConv.tpp",
-        "fileloc": "240",
-        "instructions": "126",
-        "total_instructions": "126",
-        "calls": "",
-        "basicblocks": "21",
-        "loads": {
-            "G": "16",
-            "L": "6"
-        },
-        "stores": {
-            "G": "16",
-            "L": "6"
-        },
-        "loops": {
-            "L": "1"
-        }
-    },
-    "24": {
-        "name": "upconv_core_top_Pipeline_LOAD_ROW0_VITIS_LOOP_296_11",
-        "file": "..\/gen\/upconv_core_top.cpp",
-        "fileloc": "46",
-        "instructions": "43",
-        "total_instructions": "43",
-        "calls": "",
-        "basicblocks": "4",
-        "loads": {
-            "L": "3"
-        },
-        "stores": {
-            "G": "1",
-            "L": "6"
-        },
-        "loops": {
-            "L": "1"
-        }
-    },
-    "25": {
-        "name": "upconv_core_top_Pipeline_LOAD_ROW_VITIS_LOOP_307_24",
-        "file": "..\/gen\/upconv_core_top.cpp",
-        "fileloc": "50",
-        "instructions": "55",
-        "total_instructions": "55",
-        "calls": "",
-        "basicblocks": "4",
-        "loads": {
-            "L": "3"
-        },
-        "stores": {
-            "G": "1",
-            "L": "6"
-        },
-        "loops": {
-            "L": "1"
-        }
-    },
-    "26": {
-        "name": "UpConv_Fused_Row<8, 128, 128, 120, 60>_Pipeline_RESET_ROW_ACC",
-        "file": "..\/gen\/Hls_Layers_UpConv.tpp",
-        "fileloc": "117",
-        "instructions": "166",
-        "total_instructions": "166",
-        "calls": "",
-        "basicblocks": "4",
-        "loads": {
-            "L": "1"
-        },
-        "stores": {
-            "G": "64",
-            "L": "2"
-        },
-        "loops": {
-            "L": "1"
-        }
-    },
-    "27": {
-        "name": "UpConv_Fused_Row<8, 16, 16, 960, 480>_Outline_TILE_LOOP",
-        "file": "..\/gen\/Hls_Layers_UpConv.tpp",
-        "fileloc": "128",
-        "instructions": "278",
-        "total_instructions": "1174",
-        "calls": "17 16",
-        "basicblocks": "21",
-        "loads": {
-            "G": "16",
-            "L": "33"
-        },
-        "stores": {
-            "G": "16",
-            "L": "2"
-        },
-        "loops": {
-            "L": "1",
-            "N": "3"
-        }
-    },
-    "28": {
-        "name": "UpConv_Fused_Row<8, 128, 128, 120, 60>_Pipeline_CI_LOOP",
-        "file": "..\/gen\/Hls_Layers_UpConv.tpp",
-        "fileloc": "171",
-        "instructions": "806",
-        "total_instructions": "806",
-        "calls": "",
-        "basicblocks": "9",
-        "loads": {
-            "G": "1",
-            "L": "73"
-        },
-        "stores": {
-            "L": "66"
-        },
-        "loops": {
-            "L": "1"
-        }
-    },
-    "29": {
-        "name": "UpConv_Fused_Row<8, 16, 16, 16, 16>",
-        "file": "Hls_Layers_UpConv.tpp",
-        "fileloc": "79",
-        "instructions": "435",
-        "total_instructions": "1273",
-        "calls": "19 10 20",
-        "basicblocks": "31",
-        "loads": {
-            "G": "16",
-            "L": "6"
-        },
-        "stores": {
-            "G": "16",
-            "L": "12"
-        },
-        "loops": {
-            "L": "2",
-            "N": "1"
-        }
-    },
-    "30": {
+    "8": {
         "name": "upconv_core_top_Pipeline_LOAD_ROW",
         "file": "..\/gen\/upconv_core_top.cpp",
         "fileloc": "55",
@@ -572,31 +141,59 @@
             "L": "1"
         }
     },
-    "31": {
-        "name": "UpConv_Fused_Row<8, 64, 64, 240, 120>_Outline_TILE_LOOP",
+    "9": {
+        "name": "UpConv_Fused_Row<8, 16, 16, 960, 480>",
+        "file": "Hls_Layers_UpConv.tpp",
+        "fileloc": "79",
+        "instructions": "48",
+        "total_instructions": "1886",
+        "calls": "27 21 7 5 14",
+        "basicblocks": "1"
+    },
+    "10": {
+        "name": "UpConv_Fused_Row<8, 16, 16, 16, 16>_Pipeline_KW_LOOP_FLAT_LOOP",
         "file": "..\/gen\/Hls_Layers_UpConv.tpp",
-        "fileloc": "128",
-        "instructions": "342",
-        "total_instructions": "1220",
-        "calls": "41 13",
-        "basicblocks": "63",
+        "fileloc": "158",
+        "instructions": "722",
+        "total_instructions": "722",
+        "calls": "",
+        "basicblocks": "9",
         "loads": {
-            "G": "16",
-            "L": "34"
+            "G": "17",
+            "L": "11"
         },
         "stores": {
             "G": "16",
-            "L": "4"
+            "L": "6"
         },
         "loops": {
-            "L": "1",
-            "N": "4"
+            "L": "1"
         }
     },
-    "32": {
+    "11": {
+        "name": "UpConv_Fused_Row<8, 128, 128, 120, 60>_Pipeline_KW_LOOP_FLAT_LOOP",
+        "file": "..\/gen\/Hls_Layers_UpConv.tpp",
+        "fileloc": "158",
+        "instructions": "929",
+        "total_instructions": "929",
+        "calls": "",
+        "basicblocks": "37",
+        "loads": {
+            "G": "17",
+            "L": "77"
+        },
+        "stores": {
+            "G": "16",
+            "L": "44"
+        },
+        "loops": {
+            "L": "1"
+        }
+    },
+    "12": {
         "name": "UpConv_Fused_Row<8, 32, 32, 480, 240>_Pipeline_LOAD_PARAMS",
         "file": "..\/gen\/Hls_Layers_UpConv.tpp",
-        "fileloc": "228",
+        "fileloc": "221",
         "instructions": "46",
         "total_instructions": "46",
         "calls": "",
@@ -611,67 +208,8 @@
             "L": "1"
         }
     },
-    "33": {
-        "name": "UpConv_Fused_Row<8, 128, 128, 120, 60>_Outline_TILE_LOOP",
-        "file": "..\/gen\/Hls_Layers_UpConv.tpp",
-        "fileloc": "128",
-        "instructions": "321",
-        "total_instructions": "1196",
-        "calls": "12 28",
-        "basicblocks": "46",
-        "loads": {
-            "G": "16",
-            "L": "33"
-        },
-        "stores": {
-            "G": "16",
-            "L": "2"
-        },
-        "loops": {
-            "L": "1",
-            "N": "4"
-        }
-    },
-    "34": {
-        "name": "UpConv_Fused_Row<8, 32, 32, 480, 240>_Pipeline_RESET_ROW_ACC",
-        "file": "..\/gen\/Hls_Layers_UpConv.tpp",
-        "fileloc": "117",
-        "instructions": "542",
-        "total_instructions": "542",
-        "calls": "",
-        "basicblocks": "4",
-        "loads": {
-            "L": "1"
-        },
-        "stores": {
-            "G": "240",
-            "L": "2"
-        },
-        "loops": {
-            "L": "1"
-        }
-    },
-    "35": {
-        "name": "UpConv_Fused_Row<8, 32, 32, 480, 240>_Pipeline_CI_LOOP",
-        "file": "..\/gen\/Hls_Layers_UpConv.tpp",
-        "fileloc": "171",
-        "instructions": "807",
-        "total_instructions": "807",
-        "calls": "",
-        "basicblocks": "9",
-        "loads": {
-            "G": "1",
-            "L": "73"
-        },
-        "stores": {
-            "L": "66"
-        },
-        "loops": {
-            "L": "1"
-        }
-    },
-    "36": {
-        "name": "upconv_core_top_Pipeline_LOAD_ROW0_VITIS_LOOP_296_13",
+    "13": {
+        "name": "upconv_core_top_Pipeline_LOAD_ROW0_VITIS_LOOP_317_13",
         "file": "..\/gen\/upconv_core_top.cpp",
         "fileloc": "46",
         "instructions": "42",
@@ -689,67 +227,48 @@
             "L": "1"
         }
     },
-    "37": {
-        "name": "UpConv_Fused_Row_Pipeline_PRELOAD_W_VITIS_LOOP_142_2_VITIS_LOOP_143_3",
+    "14": {
+        "name": "UpConv_Fused_Row<8, 16, 16, 960, 480>_Pipeline_PIXEL_NORM",
         "file": "..\/gen\/Hls_Layers_UpConv.tpp",
-        "fileloc": "135",
-        "instructions": "89",
-        "total_instructions": "89",
+        "fileloc": "277",
+        "instructions": "341",
+        "total_instructions": "341",
         "calls": "",
-        "basicblocks": "13",
+        "basicblocks": "4",
         "loads": {
+            "G": "18",
             "L": "5"
         },
         "stores": {
-            "L": "18"
+            "L": "6"
         },
         "loops": {
             "L": "1"
         }
     },
-    "38": {
-        "name": "UpConv_Fused_Row<8, 16, 16, 960, 480>_Pipeline_RESET_ROW_ACC",
+    "15": {
+        "name": "UpConv_Fused_Row<8, 16, 16, 16, 16>_Pipeline_PIXEL_NORM",
         "file": "..\/gen\/Hls_Layers_UpConv.tpp",
-        "fileloc": "117",
-        "instructions": "1054",
-        "total_instructions": "1054",
+        "fileloc": "277",
+        "instructions": "219",
+        "total_instructions": "219",
         "calls": "",
         "basicblocks": "4",
         "loads": {
+            "G": "18",
             "L": "1"
         },
         "stores": {
-            "G": "480",
             "L": "2"
         },
         "loops": {
             "L": "1"
         }
     },
-    "39": {
-        "name": "UpConv_Fused_Row<8, 128, 128, 120, 60>_Pipeline_BIAS_STATS",
+    "16": {
+        "name": "UpConv_Fused_Row<8, 64, 64, 240, 120>_Pipeline_LOAD_PARAMS",
         "file": "..\/gen\/Hls_Layers_UpConv.tpp",
-        "fileloc": "240",
-        "instructions": "125",
-        "total_instructions": "125",
-        "calls": "",
-        "basicblocks": "21",
-        "loads": {
-            "G": "16",
-            "L": "6"
-        },
-        "stores": {
-            "G": "16",
-            "L": "6"
-        },
-        "loops": {
-            "L": "1"
-        }
-    },
-    "40": {
-        "name": "UpConv_Fused_Row<8, 16, 16, 960, 480>_Pipeline_LOAD_PARAMS",
-        "file": "..\/gen\/Hls_Layers_UpConv.tpp",
-        "fileloc": "228",
+        "fileloc": "221",
         "instructions": "46",
         "total_instructions": "46",
         "calls": "",
@@ -764,34 +283,188 @@
             "L": "1"
         }
     },
-    "0": {
-        "name": "upconv_core_top",
-        "file": "upconv_core_top.cpp",
-        "fileloc": "11",
-        "instructions": "203",
-        "total_instructions": "41312",
-        "calls": "18 15 44 15 15 15 24 8 6 8 8 8 36 3 25 3 3 3 7 42 2 42 42 42 9 29 30 29 29 29",
-        "basicblocks": "25",
+    "17": {
+        "name": "UpConv_Fused_Row<8, 128, 128, 120, 60>_Outline_TILE_LOOP",
+        "file": "..\/gen\/Hls_Layers_UpConv.tpp",
+        "fileloc": "128",
+        "instructions": "82",
+        "total_instructions": "1095",
+        "calls": "26 11",
+        "basicblocks": "14",
         "loads": {
-            "L": "10"
+            "L": "1"
         },
         "stores": {
-            "L": "20"
+            "L": "2"
         },
         "loops": {
-            "L": "5"
+            "L": "1",
+            "N": "2"
         }
     },
-    "41": {
-        "name": "UpConv_Fused_Row<8, 64, 64, 240, 120>_Pipeline_VITIS_LOOP_142_2_VITIS_LOOP_143_3",
+    "18": {
+        "name": "UpConv_Fused_Row<8, 16, 16, 960, 480>_Pipeline_KW_LOOP_FLAT_LOOP",
         "file": "..\/gen\/Hls_Layers_UpConv.tpp",
-        "fileloc": "142",
-        "instructions": "71",
-        "total_instructions": "71",
+        "fileloc": "158",
+        "instructions": "915",
+        "total_instructions": "915",
+        "calls": "",
+        "basicblocks": "17",
+        "loads": {
+            "G": "17",
+            "L": "77"
+        },
+        "stores": {
+            "G": "16",
+            "L": "44"
+        },
+        "loops": {
+            "L": "1"
+        }
+    },
+    "19": {
+        "name": "UpConv_Fused_Row<8, 128, 128, 120, 60>_Pipeline_PIXEL_NORM",
+        "file": "..\/gen\/Hls_Layers_UpConv.tpp",
+        "fileloc": "277",
+        "instructions": "338",
+        "total_instructions": "338",
+        "calls": "",
+        "basicblocks": "4",
+        "loads": {
+            "G": "18",
+            "L": "5"
+        },
+        "stores": {
+            "L": "6"
+        },
+        "loops": {
+            "L": "1"
+        }
+    },
+    "20": {
+        "name": "UpConv_Fused_Row<8, 128, 128, 120, 60>_Pipeline_PIXEL_STATS",
+        "file": "..\/gen\/Hls_Layers_UpConv.tpp",
+        "fileloc": "236",
+        "instructions": "282",
+        "total_instructions": "282",
+        "calls": "",
+        "basicblocks": "54",
+        "loads": {
+            "G": "16",
+            "L": "37"
+        },
+        "stores": {
+            "G": "18",
+            "L": "31"
+        },
+        "loops": {
+            "L": "1"
+        }
+    },
+    "21": {
+        "name": "UpConv_Fused_Row<8, 16, 16, 960, 480>_Outline_TILE_LOOP",
+        "file": "..\/gen\/Hls_Layers_UpConv.tpp",
+        "fileloc": "128",
+        "instructions": "64",
+        "total_instructions": "1084",
+        "calls": "23 18",
+        "basicblocks": "9",
+        "loads": {
+            "L": "1"
+        },
+        "stores": {
+            "L": "2"
+        },
+        "loops": {
+            "L": "1",
+            "N": "1"
+        }
+    },
+    "22": {
+        "name": "UpConv_Fused_Row<8, 32, 32, 480, 240>_Pipeline_PIXEL_STATS",
+        "file": "..\/gen\/Hls_Layers_UpConv.tpp",
+        "fileloc": "236",
+        "instructions": "284",
+        "total_instructions": "284",
+        "calls": "",
+        "basicblocks": "54",
+        "loads": {
+            "G": "16",
+            "L": "37"
+        },
+        "stores": {
+            "G": "18",
+            "L": "31"
+        },
+        "loops": {
+            "L": "1"
+        }
+    },
+    "23": {
+        "name": "UpConv_Fused_Row<8, 16, 16, 960, 480>_Pipeline_PRELOAD_W_W_FLAT",
+        "file": "..\/gen\/Hls_Layers_UpConv.tpp",
+        "fileloc": "138",
+        "instructions": "105",
+        "total_instructions": "105",
         "calls": "",
         "basicblocks": "13",
         "loads": {
+            "L": "5"
+        },
+        "stores": {
+            "L": "18"
+        },
+        "loops": {
+            "L": "1"
+        }
+    },
+    "24": {
+        "name": "UpConv_Fused_Row<8, 128, 128, 120, 60>_Pipeline_RESET_ROW_ACC",
+        "file": "..\/gen\/Hls_Layers_UpConv.tpp",
+        "fileloc": "115",
+        "instructions": "79",
+        "total_instructions": "79",
+        "calls": "",
+        "basicblocks": "4",
+        "loads": {
             "L": "3"
+        },
+        "stores": {
+            "G": "16",
+            "L": "6"
+        },
+        "loops": {
+            "L": "1"
+        }
+    },
+    "25": {
+        "name": "UpConv_Fused_Row<8, 32, 32, 480, 240>_Pipeline_PRELOAD_W_W_FLAT",
+        "file": "..\/gen\/Hls_Layers_UpConv.tpp",
+        "fileloc": "138",
+        "instructions": "105",
+        "total_instructions": "105",
+        "calls": "",
+        "basicblocks": "13",
+        "loads": {
+            "L": "5"
+        },
+        "stores": {
+            "L": "18"
+        },
+        "loops": {
+            "L": "1"
+        }
+    },
+    "26": {
+        "name": "UpConv_Fused_Row<8, 128, 128, 120, 60>_Pipeline_W_FLAT",
+        "file": "..\/gen\/Hls_Layers_UpConv.tpp",
+        "fileloc": "141",
+        "instructions": "84",
+        "total_instructions": "84",
+        "calls": "",
+        "basicblocks": "13",
+        "loads": {
+            "L": "5"
         },
         "stores": {
             "L": "14"
@@ -800,45 +473,83 @@
             "L": "1"
         }
     },
-    "42": {
-        "name": "UpConv_Fused_Row<8, 128, 128, 120, 60>",
-        "file": "Hls_Layers_UpConv.tpp",
-        "fileloc": "79",
-        "instructions": "80",
-        "total_instructions": "1876",
-        "calls": "26 33 21 39 4",
-        "basicblocks": "4",
-        "loads": {
-            "L": "3"
-        },
-        "stores": {
-            "L": "2"
-        },
-        "loops": {
-            "L": "1"
-        }
-    },
-    "43": {
-        "name": "UpConv_Fused_Row<8, 64, 64, 240, 120>_Pipeline_NORM_WRITE",
+    "27": {
+        "name": "UpConv_Fused_Row<8, 16, 16, 960, 480>_Pipeline_RESET_ROW_ACC",
         "file": "..\/gen\/Hls_Layers_UpConv.tpp",
-        "fileloc": "238",
-        "instructions": "267",
-        "total_instructions": "267",
+        "fileloc": "115",
+        "instructions": "82",
+        "total_instructions": "82",
         "calls": "",
         "basicblocks": "4",
         "loads": {
-            "G": "16",
             "L": "3"
         },
         "stores": {
-            "L": "2"
+            "G": "16",
+            "L": "6"
         },
         "loops": {
             "L": "1"
         }
     },
-    "44": {
-        "name": "upconv_core_top_Pipeline_LOAD_ROW_VITIS_LOOP_307_2",
+    "28": {
+        "name": "upconv_core_top_Pipeline_LOAD_ROW_VITIS_LOOP_328_24",
+        "file": "..\/gen\/upconv_core_top.cpp",
+        "fileloc": "50",
+        "instructions": "55",
+        "total_instructions": "55",
+        "calls": "",
+        "basicblocks": "4",
+        "loads": {
+            "L": "3"
+        },
+        "stores": {
+            "G": "1",
+            "L": "6"
+        },
+        "loops": {
+            "L": "1"
+        }
+    },
+    "29": {
+        "name": "upconv_core_top_Pipeline_LOAD_ROW0_VITIS_LOOP_317_11",
+        "file": "..\/gen\/upconv_core_top.cpp",
+        "fileloc": "46",
+        "instructions": "43",
+        "total_instructions": "43",
+        "calls": "",
+        "basicblocks": "4",
+        "loads": {
+            "L": "3"
+        },
+        "stores": {
+            "G": "1",
+            "L": "6"
+        },
+        "loops": {
+            "L": "1"
+        }
+    },
+    "30": {
+        "name": "UpConv_Fused_Row<8, 128, 128, 120, 60>_Pipeline_LOAD_PARAMS",
+        "file": "..\/gen\/Hls_Layers_UpConv.tpp",
+        "fileloc": "221",
+        "instructions": "46",
+        "total_instructions": "46",
+        "calls": "",
+        "basicblocks": "4",
+        "loads": {
+            "L": "1"
+        },
+        "stores": {
+            "L": "5"
+        },
+        "loops": {
+            "L": "1"
+        }
+    },
+    "31": {
+        "name": "upconv_core_top_Pipeline_LOAD_ROW_VITIS_LOOP_328_2",
         "file": "..\/gen\/upconv_core_top.cpp",
         "fileloc": "46",
         "instructions": "57",
@@ -856,41 +567,327 @@
             "L": "1"
         }
     },
-    "45": {
+    "32": {
+        "name": "UpConv_Fused_Row<8, 32, 32, 480, 240>",
+        "file": "Hls_Layers_UpConv.tpp",
+        "fileloc": "79",
+        "instructions": "48",
+        "total_instructions": "1881",
+        "calls": "2 48 12 22 38",
+        "basicblocks": "1"
+    },
+    "33": {
+        "name": "UpConv_Fused_Row<8, 16, 16, 16, 16>",
+        "file": "Hls_Layers_UpConv.tpp",
+        "fileloc": "79",
+        "instructions": "186",
+        "total_instructions": "1506",
+        "calls": "37 6 10 43 15",
+        "basicblocks": "9",
+        "loads": {
+            "L": "1"
+        },
+        "stores": {
+            "L": "3"
+        },
+        "loops": {
+            "L": "1",
+            "N": "1"
+        }
+    },
+    "34": {
         "name": "UpConv_Fused_Row<8, 64, 64, 240, 120>_Pipeline_RESET_ROW_ACC",
         "file": "..\/gen\/Hls_Layers_UpConv.tpp",
-        "fileloc": "117",
-        "instructions": "302",
-        "total_instructions": "302",
+        "fileloc": "115",
+        "instructions": "79",
+        "total_instructions": "79",
+        "calls": "",
+        "basicblocks": "4",
+        "loads": {
+            "L": "3"
+        },
+        "stores": {
+            "G": "16",
+            "L": "6"
+        },
+        "loops": {
+            "L": "1"
+        }
+    },
+    "35": {
+        "name": "UpConv_Fused_Row<8, 128, 128, 120, 60>",
+        "file": "Hls_Layers_UpConv.tpp",
+        "fileloc": "79",
+        "instructions": "47",
+        "total_instructions": "1887",
+        "calls": "24 17 30 20 19",
+        "basicblocks": "1"
+    },
+    "36": {
+        "name": "UpConv_Fused_Row<8, 64, 64, 240, 120>_Outline_TILE_LOOP",
+        "file": "..\/gen\/Hls_Layers_UpConv.tpp",
+        "fileloc": "128",
+        "instructions": "83",
+        "total_instructions": "1116",
+        "calls": "39 40",
+        "basicblocks": "14",
+        "loads": {
+            "L": "1"
+        },
+        "stores": {
+            "L": "2"
+        },
+        "loops": {
+            "L": "1",
+            "N": "2"
+        }
+    },
+    "37": {
+        "name": "UpConv_Fused_Row<8, 16, 16, 16, 16>_Pipeline_RESET_ROW_ACC",
+        "file": "..\/gen\/Hls_Layers_UpConv.tpp",
+        "fileloc": "115",
+        "instructions": "62",
+        "total_instructions": "62",
         "calls": "",
         "basicblocks": "4",
         "loads": {
             "L": "1"
         },
         "stores": {
-            "G": "128",
+            "G": "16",
             "L": "2"
         },
         "loops": {
             "L": "1"
         }
     },
-    "46": {
-        "name": "UpConv_Fused_Row<8, 64, 64, 240, 120>_Pipeline_LOAD_PARAMS",
+    "38": {
+        "name": "UpConv_Fused_Row<8, 32, 32, 480, 240>_Pipeline_PIXEL_NORM",
         "file": "..\/gen\/Hls_Layers_UpConv.tpp",
-        "fileloc": "228",
-        "instructions": "46",
-        "total_instructions": "46",
+        "fileloc": "277",
+        "instructions": "339",
+        "total_instructions": "339",
+        "calls": "",
+        "basicblocks": "4",
+        "loads": {
+            "G": "18",
+            "L": "5"
+        },
+        "stores": {
+            "L": "6"
+        },
+        "loops": {
+            "L": "1"
+        }
+    },
+    "39": {
+        "name": "UpConv_Fused_Row<8, 64, 64, 240, 120>_Pipeline_W_FLAT",
+        "file": "..\/gen\/Hls_Layers_UpConv.tpp",
+        "fileloc": "141",
+        "instructions": "85",
+        "total_instructions": "85",
+        "calls": "",
+        "basicblocks": "13",
+        "loads": {
+            "L": "5"
+        },
+        "stores": {
+            "L": "14"
+        },
+        "loops": {
+            "L": "1"
+        }
+    },
+    "40": {
+        "name": "UpConv_Fused_Row<8, 64, 64, 240, 120>_Pipeline_KW_LOOP_FLAT_LOOP",
+        "file": "..\/gen\/Hls_Layers_UpConv.tpp",
+        "fileloc": "135",
+        "instructions": "948",
+        "total_instructions": "948",
+        "calls": "",
+        "basicblocks": "54",
+        "loads": {
+            "G": "17",
+            "L": "77"
+        },
+        "stores": {
+            "G": "16",
+            "L": "44"
+        },
+        "loops": {
+            "L": "1"
+        }
+    },
+    "41": {
+        "name": "UpConv_Fused_Row<8, 32, 32, 480, 240>_Pipeline_KW_LOOP_FLAT_LOOP",
+        "file": "..\/gen\/Hls_Layers_UpConv.tpp",
+        "fileloc": "158",
+        "instructions": "914",
+        "total_instructions": "914",
+        "calls": "",
+        "basicblocks": "17",
+        "loads": {
+            "G": "17",
+            "L": "77"
+        },
+        "stores": {
+            "G": "16",
+            "L": "44"
+        },
+        "loops": {
+            "L": "1"
+        }
+    },
+    "42": {
+        "name": "upconv_core_top_Pipeline_LOAD_ROW0",
+        "file": "..\/gen\/upconv_core_top.cpp",
+        "fileloc": "46",
+        "instructions": "23",
+        "total_instructions": "23",
         "calls": "",
         "basicblocks": "4",
         "loads": {
             "L": "1"
         },
         "stores": {
-            "L": "5"
+            "G": "1",
+            "L": "2"
         },
         "loops": {
             "L": "1"
+        }
+    },
+    "43": {
+        "name": "UpConv_Fused_Row<8, 16, 16, 16, 16>_Pipeline_PIXEL_STATS",
+        "file": "..\/gen\/Hls_Layers_UpConv.tpp",
+        "fileloc": "236",
+        "instructions": "251",
+        "total_instructions": "251",
+        "calls": "",
+        "basicblocks": "44",
+        "loads": {
+            "G": "16",
+            "L": "37"
+        },
+        "stores": {
+            "G": "18",
+            "L": "31"
+        },
+        "loops": {
+            "L": "1"
+        }
+    },
+    "44": {
+        "name": "upconv_core_top_Pipeline_LOAD_ROW_VITIS_LOOP_328_26",
+        "file": "..\/gen\/upconv_core_top.cpp",
+        "fileloc": "52",
+        "instructions": "49",
+        "total_instructions": "49",
+        "calls": "",
+        "basicblocks": "4",
+        "loads": {
+            "L": "3"
+        },
+        "stores": {
+            "G": "1",
+            "L": "6"
+        },
+        "loops": {
+            "L": "1"
+        }
+    },
+    "45": {
+        "name": "upconv_core_top_Pipeline_LOAD_ROW0_VITIS_LOOP_317_15",
+        "file": "..\/gen\/upconv_core_top.cpp",
+        "fileloc": "46",
+        "instructions": "40",
+        "total_instructions": "40",
+        "calls": "",
+        "basicblocks": "4",
+        "loads": {
+            "L": "3"
+        },
+        "stores": {
+            "G": "1",
+            "L": "6"
+        },
+        "loops": {
+            "L": "1"
+        }
+    },
+    "46": {
+        "name": "UpConv_Fused_Row<8, 64, 64, 240, 120>_Pipeline_PIXEL_NORM",
+        "file": "..\/gen\/Hls_Layers_UpConv.tpp",
+        "fileloc": "277",
+        "instructions": "338",
+        "total_instructions": "338",
+        "calls": "",
+        "basicblocks": "4",
+        "loads": {
+            "G": "18",
+            "L": "5"
+        },
+        "stores": {
+            "L": "6"
+        },
+        "loops": {
+            "L": "1"
+        }
+    },
+    "47": {
+        "name": "upconv_core_top_Pipeline_LOAD_ROW_VITIS_LOOP_328_22",
+        "file": "..\/gen\/upconv_core_top.cpp",
+        "fileloc": "48",
+        "instructions": "57",
+        "total_instructions": "57",
+        "calls": "",
+        "basicblocks": "4",
+        "loads": {
+            "L": "3"
+        },
+        "stores": {
+            "G": "1",
+            "L": "6"
+        },
+        "loops": {
+            "L": "1"
+        }
+    },
+    "48": {
+        "name": "UpConv_Fused_Row<8, 32, 32, 480, 240>_Outline_TILE_LOOP",
+        "file": "..\/gen\/Hls_Layers_UpConv.tpp",
+        "fileloc": "128",
+        "instructions": "64",
+        "total_instructions": "1083",
+        "calls": "25 41",
+        "basicblocks": "9",
+        "loads": {
+            "L": "1"
+        },
+        "stores": {
+            "L": "2"
+        },
+        "loops": {
+            "L": "1",
+            "N": "1"
+        }
+    },
+    "0": {
+        "name": "upconv_core_top",
+        "file": "upconv_core_top.cpp",
+        "fileloc": "11",
+        "instructions": "203",
+        "total_instructions": "36916",
+        "calls": "4 9 31 9 9 9 29 32 47 32 32 32 13 3 28 3 3 3 45 35 44 35 35 35 42 33 8 33 33 33",
+        "basicblocks": "25",
+        "loads": {
+            "L": "10"
+        },
+        "stores": {
+            "L": "20"
+        },
+        "loops": {
+            "L": "5"
         }
     }
 }

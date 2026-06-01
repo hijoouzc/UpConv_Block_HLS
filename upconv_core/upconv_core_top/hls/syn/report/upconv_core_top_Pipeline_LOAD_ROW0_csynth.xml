@@ -46,13 +46,13 @@
 <SummaryOfViolations>
 <IssueType>-</IssueType>
 <ViolationType>-</ViolationType>
-<SourceLocation>../gen/Hls_Layers_UpConv.tpp:295~../gen/upconv_core_top.cpp:55</SourceLocation>
+<SourceLocation>../gen/Hls_Layers_UpConv.tpp:316~../gen/upconv_core_top.cpp:55</SourceLocation>
 <SummaryOfLoopViolations>
 <LOAD_ROW0>
 <Name>LOAD_ROW0</Name>
 <IssueType>-</IssueType>
 <ViolationType>-</ViolationType>
-<SourceLocation>../gen/Hls_Layers_UpConv.tpp:295~../gen/upconv_core_top.cpp:55</SourceLocation>
+<SourceLocation>../gen/Hls_Layers_UpConv.tpp:316~../gen/upconv_core_top.cpp:55</SourceLocation>
 </LOAD_ROW0>
 </SummaryOfLoopViolations>
 </SummaryOfViolations>
@@ -649,8 +649,8 @@
 <Attribute>unknown</Attribute>
 </RtlPorts>
 <RtlPorts>
-<name>sext_ln295</name>
-<Object>sext_ln295</Object>
+<name>sext_ln316</name>
+<Object>sext_ln316</Object>
 <Type>scalar</Type>
 <Scope></Scope>
 <IOProtocol>ap_none</IOProtocol>

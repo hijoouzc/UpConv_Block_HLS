@@ -1,0 +1,679 @@
+
+
+================================================================
+== Vitis HLS Report for 'UpConv_Fused_Row_8_16_16_960_480_Pipeline_NORM_WRITE'
+================================================================
+* Date:           Tue May 19 20:00:41 2026
+
+* Version:        2024.2 (Build 5238294 on Nov  8 2024)
+* Project:        upconv_block0
+* Solution:       hls (Vivado IP Flow Target)
+* Product family: zynquplus
+* Target device:  xczu7ev-ffvc1156-2-e
+
+
+================================================================
+== Performance Estimates
+================================================================
++ Timing: 
+    * Summary: 
+    +--------+---------+----------+------------+
+    |  Clock |  Target | Estimated| Uncertainty|
+    +--------+---------+----------+------------+
+    |ap_clk  |  3.33 ns|  2.433 ns|     0.90 ns|
+    +--------+---------+----------+------------+
+
++ Latency: 
+    * Summary: 
+    +---------+---------+----------+----------+-----+-----+------------------------------------------------+
+    |  Latency (cycles) |  Latency (absolute) |  Interval |                    Pipeline                    |
+    |   min   |   max   |    min   |    max   | min | max |                      Type                      |
+    +---------+---------+----------+----------+-----+-----+------------------------------------------------+
+    |       54|       54|  0.180 us|  0.180 us|   31|   31|  loop auto-rewind stp (delay=0 clock cycles(s))|
+    +---------+---------+----------+----------+-----+-----+------------------------------------------------+
+
+    + Detail: 
+        * Instance: 
+        N/A
+
+        * Loop: 
+        +--------------+---------+---------+----------+-----------+-----------+------+----------+
+        |              |  Latency (cycles) | Iteration|  Initiation Interval  | Trip |          |
+        |   Loop Name  |   min   |   max   |  Latency |  achieved |   target  | Count| Pipelined|
+        +--------------+---------+---------+----------+-----------+-----------+------+----------+
+        |- NORM_WRITE  |       52|       52|        24|          1|          1|    30|       yes|
+        +--------------+---------+---------+----------+-----------+-----------+------+----------+
+
+
+
+================================================================
+== Utilization Estimates
+================================================================
+* Summary: 
++-----------------+---------+------+--------+--------+-----+
+|       Name      | BRAM_18K|  DSP |   FF   |   LUT  | URAM|
++-----------------+---------+------+--------+--------+-----+
+|DSP              |        -|     -|       -|       -|    -|
+|Expression       |        -|     -|       0|     301|    -|
+|FIFO             |        -|     -|       -|       -|    -|
+|Instance         |        -|    32|    1744|    1808|    -|
+|Memory           |        -|     -|       -|       -|    -|
+|Multiplexer      |        -|     -|       0|      45|    -|
+|Register         |        -|     -|    2494|      64|    -|
++-----------------+---------+------+--------+--------+-----+
+|Total            |        0|    32|    4238|    2218|    0|
++-----------------+---------+------+--------+--------+-----+
+|Available        |      624|  1728|  460800|  230400|   96|
++-----------------+---------+------+--------+--------+-----+
+|Utilization (%)  |        0|     1|      ~0|      ~0|    0|
++-----------------+---------+------+--------+--------+-----+
+
++ Detail: 
+    * Instance: 
+    +-------------------------------------+--------------------------------+---------+----+-----+-----+-----+
+    |               Instance              |             Module             | BRAM_18K| DSP|  FF | LUT | URAM|
+    +-------------------------------------+--------------------------------+---------+----+-----+-----+-----+
+    |hcmp_16ns_16ns_1_2_no_dsp_1_U517     |hcmp_16ns_16ns_1_2_no_dsp_1     |        0|   0|    0|    0|    0|
+    |hcmp_16ns_16ns_1_2_no_dsp_1_U518     |hcmp_16ns_16ns_1_2_no_dsp_1     |        0|   0|    0|    0|    0|
+    |hcmp_16ns_16ns_1_2_no_dsp_1_U519     |hcmp_16ns_16ns_1_2_no_dsp_1     |        0|   0|    0|    0|    0|
+    |hcmp_16ns_16ns_1_2_no_dsp_1_U520     |hcmp_16ns_16ns_1_2_no_dsp_1     |        0|   0|    0|    0|    0|
+    |hcmp_16ns_16ns_1_2_no_dsp_1_U521     |hcmp_16ns_16ns_1_2_no_dsp_1     |        0|   0|    0|    0|    0|
+    |hcmp_16ns_16ns_1_2_no_dsp_1_U522     |hcmp_16ns_16ns_1_2_no_dsp_1     |        0|   0|    0|    0|    0|
+    |hcmp_16ns_16ns_1_2_no_dsp_1_U523     |hcmp_16ns_16ns_1_2_no_dsp_1     |        0|   0|    0|    0|    0|
+    |hcmp_16ns_16ns_1_2_no_dsp_1_U524     |hcmp_16ns_16ns_1_2_no_dsp_1     |        0|   0|    0|    0|    0|
+    |hcmp_16ns_16ns_1_2_no_dsp_1_U525     |hcmp_16ns_16ns_1_2_no_dsp_1     |        0|   0|    0|    0|    0|
+    |hcmp_16ns_16ns_1_2_no_dsp_1_U526     |hcmp_16ns_16ns_1_2_no_dsp_1     |        0|   0|    0|    0|    0|
+    |hcmp_16ns_16ns_1_2_no_dsp_1_U527     |hcmp_16ns_16ns_1_2_no_dsp_1     |        0|   0|    0|    0|    0|
+    |hcmp_16ns_16ns_1_2_no_dsp_1_U528     |hcmp_16ns_16ns_1_2_no_dsp_1     |        0|   0|    0|    0|    0|
+    |hcmp_16ns_16ns_1_2_no_dsp_1_U529     |hcmp_16ns_16ns_1_2_no_dsp_1     |        0|   0|    0|    0|    0|
+    |hcmp_16ns_16ns_1_2_no_dsp_1_U530     |hcmp_16ns_16ns_1_2_no_dsp_1     |        0|   0|    0|    0|    0|
+    |hcmp_16ns_16ns_1_2_no_dsp_1_U531     |hcmp_16ns_16ns_1_2_no_dsp_1     |        0|   0|    0|    0|    0|
+    |hcmp_16ns_16ns_1_2_no_dsp_1_U532     |hcmp_16ns_16ns_1_2_no_dsp_1     |        0|   0|    0|    0|    0|
+    |hsub_16ns_16ns_16_5_full_dsp_1_U469  |hsub_16ns_16ns_16_5_full_dsp_1  |        0|   2|  109|  113|    0|
+    |hsub_16ns_16ns_16_5_full_dsp_1_U470  |hsub_16ns_16ns_16_5_full_dsp_1  |        0|   2|  109|  113|    0|
+    |hsub_16ns_16ns_16_5_full_dsp_1_U471  |hsub_16ns_16ns_16_5_full_dsp_1  |        0|   2|  109|  113|    0|
+    |hsub_16ns_16ns_16_5_full_dsp_1_U472  |hsub_16ns_16ns_16_5_full_dsp_1  |        0|   2|  109|  113|    0|
+    |hsub_16ns_16ns_16_5_full_dsp_1_U473  |hsub_16ns_16ns_16_5_full_dsp_1  |        0|   2|  109|  113|    0|
+    |hsub_16ns_16ns_16_5_full_dsp_1_U474  |hsub_16ns_16ns_16_5_full_dsp_1  |        0|   2|  109|  113|    0|
+    |hsub_16ns_16ns_16_5_full_dsp_1_U475  |hsub_16ns_16ns_16_5_full_dsp_1  |        0|   2|  109|  113|    0|
+    |hsub_16ns_16ns_16_5_full_dsp_1_U476  |hsub_16ns_16ns_16_5_full_dsp_1  |        0|   2|  109|  113|    0|
+    |hsub_16ns_16ns_16_5_full_dsp_1_U477  |hsub_16ns_16ns_16_5_full_dsp_1  |        0|   2|  109|  113|    0|
+    |hsub_16ns_16ns_16_5_full_dsp_1_U478  |hsub_16ns_16ns_16_5_full_dsp_1  |        0|   2|  109|  113|    0|
+    |hsub_16ns_16ns_16_5_full_dsp_1_U479  |hsub_16ns_16ns_16_5_full_dsp_1  |        0|   2|  109|  113|    0|
+    |hsub_16ns_16ns_16_5_full_dsp_1_U480  |hsub_16ns_16ns_16_5_full_dsp_1  |        0|   2|  109|  113|    0|
+    |hsub_16ns_16ns_16_5_full_dsp_1_U481  |hsub_16ns_16ns_16_5_full_dsp_1  |        0|   2|  109|  113|    0|
+    |hsub_16ns_16ns_16_5_full_dsp_1_U482  |hsub_16ns_16ns_16_5_full_dsp_1  |        0|   2|  109|  113|    0|
+    |hsub_16ns_16ns_16_5_full_dsp_1_U483  |hsub_16ns_16ns_16_5_full_dsp_1  |        0|   2|  109|  113|    0|
+    |hsub_16ns_16ns_16_5_full_dsp_1_U484  |hsub_16ns_16ns_16_5_full_dsp_1  |        0|   2|  109|  113|    0|
+    +-------------------------------------+--------------------------------+---------+----+-----+-----+-----+
+    |Total                                |                                |        0|  32| 1744| 1808|    0|
+    +-------------------------------------+--------------------------------+---------+----+-----+-----+-----+
+
+    * DSP: 
+    N/A
+
+    * Memory: 
+    N/A
+
+    * FIFO: 
+    N/A
+
+    * Expression: 
+    +---------------------------+----------+----+---+----+------------+------------+
+    |       Variable Name       | Operation| DSP| FF| LUT| Bitwidth P0| Bitwidth P1|
+    +---------------------------+----------+----+---+----+------------+------------+
+    |add_ln257_fu_758_p2        |         +|   0|  0|  12|           5|           1|
+    |add_ln263_fu_772_p2        |         +|   0|  0|  17|          10|          10|
+    |ap_block_pp0_stage0_11001  |       and|   0|  0|   2|           1|           1|
+    |icmp_ln257_fu_752_p2       |      icmp|   0|  0|  12|           5|           3|
+    |select_ln27_10_fu_1290_p3  |    select|   0|  0|  16|           1|           1|
+    |select_ln27_11_fu_1301_p3  |    select|   0|  0|  16|           1|           1|
+    |select_ln27_12_fu_1312_p3  |    select|   0|  0|  16|           1|           1|
+    |select_ln27_13_fu_1323_p3  |    select|   0|  0|  16|           1|           1|
+    |select_ln27_14_fu_1334_p3  |    select|   0|  0|  16|           1|           1|
+    |select_ln27_15_fu_1345_p3  |    select|   0|  0|  16|           1|           1|
+    |select_ln27_1_fu_1191_p3   |    select|   0|  0|  16|           1|           1|
+    |select_ln27_2_fu_1202_p3   |    select|   0|  0|  16|           1|           1|
+    |select_ln27_3_fu_1213_p3   |    select|   0|  0|  16|           1|           1|
+    |select_ln27_4_fu_1224_p3   |    select|   0|  0|  16|           1|           1|
+    |select_ln27_5_fu_1235_p3   |    select|   0|  0|  16|           1|           1|
+    |select_ln27_6_fu_1246_p3   |    select|   0|  0|  16|           1|           1|
+    |select_ln27_7_fu_1257_p3   |    select|   0|  0|  16|           1|           1|
+    |select_ln27_8_fu_1268_p3   |    select|   0|  0|  16|           1|           1|
+    |select_ln27_9_fu_1279_p3   |    select|   0|  0|  16|           1|           1|
+    |select_ln27_fu_1180_p3     |    select|   0|  0|  16|           1|           1|
+    |ap_enable_pp0              |       xor|   0|  0|   2|           1|           2|
+    +---------------------------+----------+----+---+----+------------+------------+
+    |Total                      |          |   0|  0| 301|          38|          33|
+    +---------------------------+----------+----+---+----+------------+------------+
+
+    * Multiplexer: 
+    +-------------------------+----+-----------+-----+-----------+
+    |           Name          | LUT| Input Size| Bits| Total Bits|
+    +-------------------------+----+-----------+-----+-----------+
+    |ap_done_int              |   9|          2|    1|          2|
+    |ap_enable_reg_pp0_iter1  |   9|          2|    1|          2|
+    |ap_sig_allocacmp_cw_1    |   9|          2|    5|         10|
+    |cw_fu_134                |   9|          2|    5|         10|
+    |gmem_out_blk_n_W         |   9|          2|    1|          2|
+    +-------------------------+----+-----------+-----+-----------+
+    |Total                    |  45|         10|   13|         26|
+    +-------------------------+----+-----------+-----+-----------+
+
+    * Register: 
+    +-----------------------------------+----+----+-----+-----------+
+    |                Name               | FF | LUT| Bits| Const Bits|
+    +-----------------------------------+----+----+-----+-----------+
+    |ap_CS_fsm                          |   1|   0|    1|          0|
+    |ap_done_reg                        |   1|   0|    1|          0|
+    |ap_enable_reg_pp0_iter1            |   1|   0|    1|          0|
+    |ap_enable_reg_pp0_iter10           |   1|   0|    1|          0|
+    |ap_enable_reg_pp0_iter11           |   1|   0|    1|          0|
+    |ap_enable_reg_pp0_iter12           |   1|   0|    1|          0|
+    |ap_enable_reg_pp0_iter13           |   1|   0|    1|          0|
+    |ap_enable_reg_pp0_iter14           |   1|   0|    1|          0|
+    |ap_enable_reg_pp0_iter15           |   1|   0|    1|          0|
+    |ap_enable_reg_pp0_iter16           |   1|   0|    1|          0|
+    |ap_enable_reg_pp0_iter17           |   1|   0|    1|          0|
+    |ap_enable_reg_pp0_iter18           |   1|   0|    1|          0|
+    |ap_enable_reg_pp0_iter19           |   1|   0|    1|          0|
+    |ap_enable_reg_pp0_iter2            |   1|   0|    1|          0|
+    |ap_enable_reg_pp0_iter20           |   1|   0|    1|          0|
+    |ap_enable_reg_pp0_iter21           |   1|   0|    1|          0|
+    |ap_enable_reg_pp0_iter22           |   1|   0|    1|          0|
+    |ap_enable_reg_pp0_iter23           |   1|   0|    1|          0|
+    |ap_enable_reg_pp0_iter3            |   1|   0|    1|          0|
+    |ap_enable_reg_pp0_iter4            |   1|   0|    1|          0|
+    |ap_enable_reg_pp0_iter5            |   1|   0|    1|          0|
+    |ap_enable_reg_pp0_iter6            |   1|   0|    1|          0|
+    |ap_enable_reg_pp0_iter7            |   1|   0|    1|          0|
+    |ap_enable_reg_pp0_iter8            |   1|   0|    1|          0|
+    |ap_enable_reg_pp0_iter9            |   1|   0|    1|          0|
+    |ap_loop_exit_ready_pp0_iter10_reg  |   1|   0|    1|          0|
+    |ap_loop_exit_ready_pp0_iter11_reg  |   1|   0|    1|          0|
+    |ap_loop_exit_ready_pp0_iter12_reg  |   1|   0|    1|          0|
+    |ap_loop_exit_ready_pp0_iter13_reg  |   1|   0|    1|          0|
+    |ap_loop_exit_ready_pp0_iter14_reg  |   1|   0|    1|          0|
+    |ap_loop_exit_ready_pp0_iter15_reg  |   1|   0|    1|          0|
+    |ap_loop_exit_ready_pp0_iter16_reg  |   1|   0|    1|          0|
+    |ap_loop_exit_ready_pp0_iter17_reg  |   1|   0|    1|          0|
+    |ap_loop_exit_ready_pp0_iter18_reg  |   1|   0|    1|          0|
+    |ap_loop_exit_ready_pp0_iter19_reg  |   1|   0|    1|          0|
+    |ap_loop_exit_ready_pp0_iter1_reg   |   1|   0|    1|          0|
+    |ap_loop_exit_ready_pp0_iter20_reg  |   1|   0|    1|          0|
+    |ap_loop_exit_ready_pp0_iter21_reg  |   1|   0|    1|          0|
+    |ap_loop_exit_ready_pp0_iter22_reg  |   1|   0|    1|          0|
+    |ap_loop_exit_ready_pp0_iter2_reg   |   1|   0|    1|          0|
+    |ap_loop_exit_ready_pp0_iter3_reg   |   1|   0|    1|          0|
+    |ap_loop_exit_ready_pp0_iter4_reg   |   1|   0|    1|          0|
+    |ap_loop_exit_ready_pp0_iter5_reg   |   1|   0|    1|          0|
+    |ap_loop_exit_ready_pp0_iter6_reg   |   1|   0|    1|          0|
+    |ap_loop_exit_ready_pp0_iter7_reg   |   1|   0|    1|          0|
+    |ap_loop_exit_ready_pp0_iter8_reg   |   1|   0|    1|          0|
+    |ap_loop_exit_ready_pp0_iter9_reg   |   1|   0|    1|          0|
+    |cw_1_reg_1437                      |   5|   0|    5|          0|
+    |cw_fu_134                          |   5|   0|    5|          0|
+    |mul1_reg_1702                      |  16|   0|   16|          0|
+    |mul2_reg_1947                      |  16|   0|   16|          0|
+    |mul317_10_reg_1812                 |  16|   0|   16|          0|
+    |mul317_11_reg_1822                 |  16|   0|   16|          0|
+    |mul317_12_reg_1832                 |  16|   0|   16|          0|
+    |mul317_13_reg_1842                 |  16|   0|   16|          0|
+    |mul317_14_reg_1852                 |  16|   0|   16|          0|
+    |mul317_1_reg_1712                  |  16|   0|   16|          0|
+    |mul317_2_reg_1722                  |  16|   0|   16|          0|
+    |mul317_3_reg_1732                  |  16|   0|   16|          0|
+    |mul317_4_reg_1742                  |  16|   0|   16|          0|
+    |mul317_5_reg_1752                  |  16|   0|   16|          0|
+    |mul317_6_reg_1762                  |  16|   0|   16|          0|
+    |mul317_7_reg_1772                  |  16|   0|   16|          0|
+    |mul317_8_reg_1782                  |  16|   0|   16|          0|
+    |mul317_9_reg_1792                  |  16|   0|   16|          0|
+    |mul317_s_reg_1802                  |  16|   0|   16|          0|
+    |mul318_10_reg_2057                 |  16|   0|   16|          0|
+    |mul318_11_reg_2067                 |  16|   0|   16|          0|
+    |mul318_12_reg_2077                 |  16|   0|   16|          0|
+    |mul318_13_reg_2087                 |  16|   0|   16|          0|
+    |mul318_14_reg_2097                 |  16|   0|   16|          0|
+    |mul318_1_reg_1957                  |  16|   0|   16|          0|
+    |mul318_2_reg_1967                  |  16|   0|   16|          0|
+    |mul318_3_reg_1977                  |  16|   0|   16|          0|
+    |mul318_4_reg_1987                  |  16|   0|   16|          0|
+    |mul318_5_reg_1997                  |  16|   0|   16|          0|
+    |mul318_6_reg_2007                  |  16|   0|   16|          0|
+    |mul318_7_reg_2017                  |  16|   0|   16|          0|
+    |mul318_8_reg_2027                  |  16|   0|   16|          0|
+    |mul318_9_reg_2037                  |  16|   0|   16|          0|
+    |mul318_s_reg_2047                  |  16|   0|   16|          0|
+    |norm_10_reg_2242                   |  16|   0|   16|          0|
+    |norm_10_reg_2242_pp0_iter21_reg    |  16|   0|   16|          0|
+    |norm_11_reg_2248                   |  16|   0|   16|          0|
+    |norm_11_reg_2248_pp0_iter21_reg    |  16|   0|   16|          0|
+    |norm_12_reg_2254                   |  16|   0|   16|          0|
+    |norm_12_reg_2254_pp0_iter21_reg    |  16|   0|   16|          0|
+    |norm_13_reg_2260                   |  16|   0|   16|          0|
+    |norm_13_reg_2260_pp0_iter21_reg    |  16|   0|   16|          0|
+    |norm_14_reg_2266                   |  16|   0|   16|          0|
+    |norm_14_reg_2266_pp0_iter21_reg    |  16|   0|   16|          0|
+    |norm_15_reg_2272                   |  16|   0|   16|          0|
+    |norm_15_reg_2272_pp0_iter21_reg    |  16|   0|   16|          0|
+    |norm_1_reg_2188                    |  16|   0|   16|          0|
+    |norm_1_reg_2188_pp0_iter21_reg     |  16|   0|   16|          0|
+    |norm_2_reg_2194                    |  16|   0|   16|          0|
+    |norm_2_reg_2194_pp0_iter21_reg     |  16|   0|   16|          0|
+    |norm_3_reg_2200                    |  16|   0|   16|          0|
+    |norm_3_reg_2200_pp0_iter21_reg     |  16|   0|   16|          0|
+    |norm_4_reg_2206                    |  16|   0|   16|          0|
+    |norm_4_reg_2206_pp0_iter21_reg     |  16|   0|   16|          0|
+    |norm_5_reg_2212                    |  16|   0|   16|          0|
+    |norm_5_reg_2212_pp0_iter21_reg     |  16|   0|   16|          0|
+    |norm_6_reg_2218                    |  16|   0|   16|          0|
+    |norm_6_reg_2218_pp0_iter21_reg     |  16|   0|   16|          0|
+    |norm_7_reg_2224                    |  16|   0|   16|          0|
+    |norm_7_reg_2224_pp0_iter21_reg     |  16|   0|   16|          0|
+    |norm_8_reg_2230                    |  16|   0|   16|          0|
+    |norm_8_reg_2230_pp0_iter21_reg     |  16|   0|   16|          0|
+    |norm_9_reg_2236                    |  16|   0|   16|          0|
+    |norm_9_reg_2236_pp0_iter21_reg     |  16|   0|   16|          0|
+    |norm_reg_2182                      |  16|   0|   16|          0|
+    |norm_reg_2182_pp0_iter21_reg       |  16|   0|   16|          0|
+    |select_ln27_10_reg_2328            |  16|   0|   16|          0|
+    |select_ln27_11_reg_2333            |  16|   0|   16|          0|
+    |select_ln27_12_reg_2338            |  16|   0|   16|          0|
+    |select_ln27_13_reg_2343            |  16|   0|   16|          0|
+    |select_ln27_14_reg_2348            |  16|   0|   16|          0|
+    |select_ln27_15_reg_2353            |  16|   0|   16|          0|
+    |select_ln27_1_reg_2283             |  16|   0|   16|          0|
+    |select_ln27_2_reg_2288             |  16|   0|   16|          0|
+    |select_ln27_3_reg_2293             |  16|   0|   16|          0|
+    |select_ln27_4_reg_2298             |  16|   0|   16|          0|
+    |select_ln27_5_reg_2303             |  16|   0|   16|          0|
+    |select_ln27_6_reg_2308             |  16|   0|   16|          0|
+    |select_ln27_7_reg_2313             |  16|   0|   16|          0|
+    |select_ln27_8_reg_2318             |  16|   0|   16|          0|
+    |select_ln27_9_reg_2323             |  16|   0|   16|          0|
+    |select_ln27_reg_2278               |  16|   0|   16|          0|
+    |sub316_10_reg_1662                 |  16|   0|   16|          0|
+    |sub316_11_reg_1667                 |  16|   0|   16|          0|
+    |sub316_12_reg_1672                 |  16|   0|   16|          0|
+    |sub316_13_reg_1677                 |  16|   0|   16|          0|
+    |sub316_14_reg_1682                 |  16|   0|   16|          0|
+    |sub316_1_reg_1612                  |  16|   0|   16|          0|
+    |sub316_2_reg_1617                  |  16|   0|   16|          0|
+    |sub316_3_reg_1622                  |  16|   0|   16|          0|
+    |sub316_4_reg_1627                  |  16|   0|   16|          0|
+    |sub316_5_reg_1632                  |  16|   0|   16|          0|
+    |sub316_6_reg_1637                  |  16|   0|   16|          0|
+    |sub316_7_reg_1642                  |  16|   0|   16|          0|
+    |sub316_8_reg_1647                  |  16|   0|   16|          0|
+    |sub316_9_reg_1652                  |  16|   0|   16|          0|
+    |sub316_s_reg_1657                  |  16|   0|   16|          0|
+    |sub_reg_1607                       |  16|   0|   16|          0|
+    |u_10_reg_1747                      |  16|   0|   16|          0|
+    |u_11_reg_1992                      |  16|   0|   16|          0|
+    |u_12_reg_1757                      |  16|   0|   16|          0|
+    |u_13_reg_2002                      |  16|   0|   16|          0|
+    |u_14_reg_1767                      |  16|   0|   16|          0|
+    |u_15_reg_2012                      |  16|   0|   16|          0|
+    |u_16_reg_1777                      |  16|   0|   16|          0|
+    |u_17_reg_2022                      |  16|   0|   16|          0|
+    |u_18_reg_1787                      |  16|   0|   16|          0|
+    |u_19_reg_2032                      |  16|   0|   16|          0|
+    |u_1_reg_1942                       |  16|   0|   16|          0|
+    |u_20_reg_1797                      |  16|   0|   16|          0|
+    |u_21_reg_2042                      |  16|   0|   16|          0|
+    |u_22_reg_1807                      |  16|   0|   16|          0|
+    |u_23_reg_2052                      |  16|   0|   16|          0|
+    |u_24_reg_1817                      |  16|   0|   16|          0|
+    |u_25_reg_2062                      |  16|   0|   16|          0|
+    |u_26_reg_1827                      |  16|   0|   16|          0|
+    |u_27_reg_2072                      |  16|   0|   16|          0|
+    |u_28_reg_1837                      |  16|   0|   16|          0|
+    |u_29_reg_2082                      |  16|   0|   16|          0|
+    |u_2_reg_1707                       |  16|   0|   16|          0|
+    |u_30_reg_1847                      |  16|   0|   16|          0|
+    |u_31_reg_2092                      |  16|   0|   16|          0|
+    |u_3_reg_1952                       |  16|   0|   16|          0|
+    |u_4_reg_1717                       |  16|   0|   16|          0|
+    |u_5_reg_1962                       |  16|   0|   16|          0|
+    |u_6_reg_1727                       |  16|   0|   16|          0|
+    |u_7_reg_1972                       |  16|   0|   16|          0|
+    |u_8_reg_1737                       |  16|   0|   16|          0|
+    |u_9_reg_1982                       |  16|   0|   16|          0|
+    |u_reg_1697                         |  16|   0|   16|          0|
+    |val_10_reg_1577                    |  16|   0|   16|          0|
+    |val_11_reg_1582                    |  16|   0|   16|          0|
+    |val_12_reg_1587                    |  16|   0|   16|          0|
+    |val_13_reg_1592                    |  16|   0|   16|          0|
+    |val_14_reg_1597                    |  16|   0|   16|          0|
+    |val_15_reg_1602                    |  16|   0|   16|          0|
+    |val_1_reg_1532                     |  16|   0|   16|          0|
+    |val_2_reg_1537                     |  16|   0|   16|          0|
+    |val_3_reg_1542                     |  16|   0|   16|          0|
+    |val_4_reg_1547                     |  16|   0|   16|          0|
+    |val_5_reg_1552                     |  16|   0|   16|          0|
+    |val_6_reg_1557                     |  16|   0|   16|          0|
+    |val_7_reg_1562                     |  16|   0|   16|          0|
+    |val_8_reg_1567                     |  16|   0|   16|          0|
+    |val_9_reg_1572                     |  16|   0|   16|          0|
+    |val_reg_1527                       |  16|   0|   16|          0|
+    |zext_ln257_reg_1687                |   5|   0|   64|         59|
+    |cw_1_reg_1437                      |  64|  32|    5|          0|
+    |zext_ln257_reg_1687                |  64|  32|   64|         59|
+    +-----------------------------------+----+----+-----+-----------+
+    |Total                              |2494|  64| 2494|        118|
+    +-----------------------------------+----+----+-----+-----------+
+
+
+
+================================================================
+== Interface
+================================================================
+* Summary: 
++----------------------------------------------------------------------------------------------+-----+-----+------------+-------------------------------------------------------------------------------------+--------------+
+|                                           RTL Ports                                          | Dir | Bits|  Protocol  |                                    Source Object                                    |    C Type    |
++----------------------------------------------------------------------------------------------+-----+-----+------------+-------------------------------------------------------------------------------------+--------------+
+|ap_clk                                                                                        |   in|    1|  ap_ctrl_hs|                            UpConv_Fused_Row<8, 16, 16, 960, 480>_Pipeline_NORM_WRITE|  return value|
+|ap_rst                                                                                        |   in|    1|  ap_ctrl_hs|                            UpConv_Fused_Row<8, 16, 16, 960, 480>_Pipeline_NORM_WRITE|  return value|
+|ap_start                                                                                      |   in|    1|  ap_ctrl_hs|                            UpConv_Fused_Row<8, 16, 16, 960, 480>_Pipeline_NORM_WRITE|  return value|
+|ap_done                                                                                       |  out|    1|  ap_ctrl_hs|                            UpConv_Fused_Row<8, 16, 16, 960, 480>_Pipeline_NORM_WRITE|  return value|
+|ap_idle                                                                                       |  out|    1|  ap_ctrl_hs|                            UpConv_Fused_Row<8, 16, 16, 960, 480>_Pipeline_NORM_WRITE|  return value|
+|ap_ready                                                                                      |  out|    1|  ap_ctrl_hs|                            UpConv_Fused_Row<8, 16, 16, 960, 480>_Pipeline_NORM_WRITE|  return value|
+|grp_fu_912_p_din0                                                                             |  out|   16|  ap_ctrl_hs|                            UpConv_Fused_Row<8, 16, 16, 960, 480>_Pipeline_NORM_WRITE|  return value|
+|grp_fu_912_p_din1                                                                             |  out|   16|  ap_ctrl_hs|                            UpConv_Fused_Row<8, 16, 16, 960, 480>_Pipeline_NORM_WRITE|  return value|
+|grp_fu_912_p_dout0                                                                            |   in|   16|  ap_ctrl_hs|                            UpConv_Fused_Row<8, 16, 16, 960, 480>_Pipeline_NORM_WRITE|  return value|
+|grp_fu_912_p_ce                                                                               |  out|    1|  ap_ctrl_hs|                            UpConv_Fused_Row<8, 16, 16, 960, 480>_Pipeline_NORM_WRITE|  return value|
+|grp_fu_916_p_din0                                                                             |  out|   16|  ap_ctrl_hs|                            UpConv_Fused_Row<8, 16, 16, 960, 480>_Pipeline_NORM_WRITE|  return value|
+|grp_fu_916_p_din1                                                                             |  out|   16|  ap_ctrl_hs|                            UpConv_Fused_Row<8, 16, 16, 960, 480>_Pipeline_NORM_WRITE|  return value|
+|grp_fu_916_p_dout0                                                                            |   in|   16|  ap_ctrl_hs|                            UpConv_Fused_Row<8, 16, 16, 960, 480>_Pipeline_NORM_WRITE|  return value|
+|grp_fu_916_p_ce                                                                               |  out|    1|  ap_ctrl_hs|                            UpConv_Fused_Row<8, 16, 16, 960, 480>_Pipeline_NORM_WRITE|  return value|
+|grp_fu_920_p_din0                                                                             |  out|   16|  ap_ctrl_hs|                            UpConv_Fused_Row<8, 16, 16, 960, 480>_Pipeline_NORM_WRITE|  return value|
+|grp_fu_920_p_din1                                                                             |  out|   16|  ap_ctrl_hs|                            UpConv_Fused_Row<8, 16, 16, 960, 480>_Pipeline_NORM_WRITE|  return value|
+|grp_fu_920_p_dout0                                                                            |   in|   16|  ap_ctrl_hs|                            UpConv_Fused_Row<8, 16, 16, 960, 480>_Pipeline_NORM_WRITE|  return value|
+|grp_fu_920_p_ce                                                                               |  out|    1|  ap_ctrl_hs|                            UpConv_Fused_Row<8, 16, 16, 960, 480>_Pipeline_NORM_WRITE|  return value|
+|grp_fu_924_p_din0                                                                             |  out|   16|  ap_ctrl_hs|                            UpConv_Fused_Row<8, 16, 16, 960, 480>_Pipeline_NORM_WRITE|  return value|
+|grp_fu_924_p_din1                                                                             |  out|   16|  ap_ctrl_hs|                            UpConv_Fused_Row<8, 16, 16, 960, 480>_Pipeline_NORM_WRITE|  return value|
+|grp_fu_924_p_dout0                                                                            |   in|   16|  ap_ctrl_hs|                            UpConv_Fused_Row<8, 16, 16, 960, 480>_Pipeline_NORM_WRITE|  return value|
+|grp_fu_924_p_ce                                                                               |  out|    1|  ap_ctrl_hs|                            UpConv_Fused_Row<8, 16, 16, 960, 480>_Pipeline_NORM_WRITE|  return value|
+|grp_fu_928_p_din0                                                                             |  out|   16|  ap_ctrl_hs|                            UpConv_Fused_Row<8, 16, 16, 960, 480>_Pipeline_NORM_WRITE|  return value|
+|grp_fu_928_p_din1                                                                             |  out|   16|  ap_ctrl_hs|                            UpConv_Fused_Row<8, 16, 16, 960, 480>_Pipeline_NORM_WRITE|  return value|
+|grp_fu_928_p_dout0                                                                            |   in|   16|  ap_ctrl_hs|                            UpConv_Fused_Row<8, 16, 16, 960, 480>_Pipeline_NORM_WRITE|  return value|
+|grp_fu_928_p_ce                                                                               |  out|    1|  ap_ctrl_hs|                            UpConv_Fused_Row<8, 16, 16, 960, 480>_Pipeline_NORM_WRITE|  return value|
+|grp_fu_932_p_din0                                                                             |  out|   16|  ap_ctrl_hs|                            UpConv_Fused_Row<8, 16, 16, 960, 480>_Pipeline_NORM_WRITE|  return value|
+|grp_fu_932_p_din1                                                                             |  out|   16|  ap_ctrl_hs|                            UpConv_Fused_Row<8, 16, 16, 960, 480>_Pipeline_NORM_WRITE|  return value|
+|grp_fu_932_p_dout0                                                                            |   in|   16|  ap_ctrl_hs|                            UpConv_Fused_Row<8, 16, 16, 960, 480>_Pipeline_NORM_WRITE|  return value|
+|grp_fu_932_p_ce                                                                               |  out|    1|  ap_ctrl_hs|                            UpConv_Fused_Row<8, 16, 16, 960, 480>_Pipeline_NORM_WRITE|  return value|
+|grp_fu_936_p_din0                                                                             |  out|   16|  ap_ctrl_hs|                            UpConv_Fused_Row<8, 16, 16, 960, 480>_Pipeline_NORM_WRITE|  return value|
+|grp_fu_936_p_din1                                                                             |  out|   16|  ap_ctrl_hs|                            UpConv_Fused_Row<8, 16, 16, 960, 480>_Pipeline_NORM_WRITE|  return value|
+|grp_fu_936_p_dout0                                                                            |   in|   16|  ap_ctrl_hs|                            UpConv_Fused_Row<8, 16, 16, 960, 480>_Pipeline_NORM_WRITE|  return value|
+|grp_fu_936_p_ce                                                                               |  out|    1|  ap_ctrl_hs|                            UpConv_Fused_Row<8, 16, 16, 960, 480>_Pipeline_NORM_WRITE|  return value|
+|grp_fu_940_p_din0                                                                             |  out|   16|  ap_ctrl_hs|                            UpConv_Fused_Row<8, 16, 16, 960, 480>_Pipeline_NORM_WRITE|  return value|
+|grp_fu_940_p_din1                                                                             |  out|   16|  ap_ctrl_hs|                            UpConv_Fused_Row<8, 16, 16, 960, 480>_Pipeline_NORM_WRITE|  return value|
+|grp_fu_940_p_dout0                                                                            |   in|   16|  ap_ctrl_hs|                            UpConv_Fused_Row<8, 16, 16, 960, 480>_Pipeline_NORM_WRITE|  return value|
+|grp_fu_940_p_ce                                                                               |  out|    1|  ap_ctrl_hs|                            UpConv_Fused_Row<8, 16, 16, 960, 480>_Pipeline_NORM_WRITE|  return value|
+|grp_fu_752_p_din0                                                                             |  out|   16|  ap_ctrl_hs|                            UpConv_Fused_Row<8, 16, 16, 960, 480>_Pipeline_NORM_WRITE|  return value|
+|grp_fu_752_p_din1                                                                             |  out|   16|  ap_ctrl_hs|                            UpConv_Fused_Row<8, 16, 16, 960, 480>_Pipeline_NORM_WRITE|  return value|
+|grp_fu_752_p_dout0                                                                            |   in|   16|  ap_ctrl_hs|                            UpConv_Fused_Row<8, 16, 16, 960, 480>_Pipeline_NORM_WRITE|  return value|
+|grp_fu_752_p_ce                                                                               |  out|    1|  ap_ctrl_hs|                            UpConv_Fused_Row<8, 16, 16, 960, 480>_Pipeline_NORM_WRITE|  return value|
+|grp_fu_756_p_din0                                                                             |  out|   16|  ap_ctrl_hs|                            UpConv_Fused_Row<8, 16, 16, 960, 480>_Pipeline_NORM_WRITE|  return value|
+|grp_fu_756_p_din1                                                                             |  out|   16|  ap_ctrl_hs|                            UpConv_Fused_Row<8, 16, 16, 960, 480>_Pipeline_NORM_WRITE|  return value|
+|grp_fu_756_p_dout0                                                                            |   in|   16|  ap_ctrl_hs|                            UpConv_Fused_Row<8, 16, 16, 960, 480>_Pipeline_NORM_WRITE|  return value|
+|grp_fu_756_p_ce                                                                               |  out|    1|  ap_ctrl_hs|                            UpConv_Fused_Row<8, 16, 16, 960, 480>_Pipeline_NORM_WRITE|  return value|
+|grp_fu_760_p_din0                                                                             |  out|   16|  ap_ctrl_hs|                            UpConv_Fused_Row<8, 16, 16, 960, 480>_Pipeline_NORM_WRITE|  return value|
+|grp_fu_760_p_din1                                                                             |  out|   16|  ap_ctrl_hs|                            UpConv_Fused_Row<8, 16, 16, 960, 480>_Pipeline_NORM_WRITE|  return value|
+|grp_fu_760_p_dout0                                                                            |   in|   16|  ap_ctrl_hs|                            UpConv_Fused_Row<8, 16, 16, 960, 480>_Pipeline_NORM_WRITE|  return value|
+|grp_fu_760_p_ce                                                                               |  out|    1|  ap_ctrl_hs|                            UpConv_Fused_Row<8, 16, 16, 960, 480>_Pipeline_NORM_WRITE|  return value|
+|grp_fu_764_p_din0                                                                             |  out|   16|  ap_ctrl_hs|                            UpConv_Fused_Row<8, 16, 16, 960, 480>_Pipeline_NORM_WRITE|  return value|
+|grp_fu_764_p_din1                                                                             |  out|   16|  ap_ctrl_hs|                            UpConv_Fused_Row<8, 16, 16, 960, 480>_Pipeline_NORM_WRITE|  return value|
+|grp_fu_764_p_dout0                                                                            |   in|   16|  ap_ctrl_hs|                            UpConv_Fused_Row<8, 16, 16, 960, 480>_Pipeline_NORM_WRITE|  return value|
+|grp_fu_764_p_ce                                                                               |  out|    1|  ap_ctrl_hs|                            UpConv_Fused_Row<8, 16, 16, 960, 480>_Pipeline_NORM_WRITE|  return value|
+|grp_fu_768_p_din0                                                                             |  out|   16|  ap_ctrl_hs|                            UpConv_Fused_Row<8, 16, 16, 960, 480>_Pipeline_NORM_WRITE|  return value|
+|grp_fu_768_p_din1                                                                             |  out|   16|  ap_ctrl_hs|                            UpConv_Fused_Row<8, 16, 16, 960, 480>_Pipeline_NORM_WRITE|  return value|
+|grp_fu_768_p_dout0                                                                            |   in|   16|  ap_ctrl_hs|                            UpConv_Fused_Row<8, 16, 16, 960, 480>_Pipeline_NORM_WRITE|  return value|
+|grp_fu_768_p_ce                                                                               |  out|    1|  ap_ctrl_hs|                            UpConv_Fused_Row<8, 16, 16, 960, 480>_Pipeline_NORM_WRITE|  return value|
+|grp_fu_772_p_din0                                                                             |  out|   16|  ap_ctrl_hs|                            UpConv_Fused_Row<8, 16, 16, 960, 480>_Pipeline_NORM_WRITE|  return value|
+|grp_fu_772_p_din1                                                                             |  out|   16|  ap_ctrl_hs|                            UpConv_Fused_Row<8, 16, 16, 960, 480>_Pipeline_NORM_WRITE|  return value|
+|grp_fu_772_p_dout0                                                                            |   in|   16|  ap_ctrl_hs|                            UpConv_Fused_Row<8, 16, 16, 960, 480>_Pipeline_NORM_WRITE|  return value|
+|grp_fu_772_p_ce                                                                               |  out|    1|  ap_ctrl_hs|                            UpConv_Fused_Row<8, 16, 16, 960, 480>_Pipeline_NORM_WRITE|  return value|
+|grp_fu_776_p_din0                                                                             |  out|   16|  ap_ctrl_hs|                            UpConv_Fused_Row<8, 16, 16, 960, 480>_Pipeline_NORM_WRITE|  return value|
+|grp_fu_776_p_din1                                                                             |  out|   16|  ap_ctrl_hs|                            UpConv_Fused_Row<8, 16, 16, 960, 480>_Pipeline_NORM_WRITE|  return value|
+|grp_fu_776_p_dout0                                                                            |   in|   16|  ap_ctrl_hs|                            UpConv_Fused_Row<8, 16, 16, 960, 480>_Pipeline_NORM_WRITE|  return value|
+|grp_fu_776_p_ce                                                                               |  out|    1|  ap_ctrl_hs|                            UpConv_Fused_Row<8, 16, 16, 960, 480>_Pipeline_NORM_WRITE|  return value|
+|grp_fu_780_p_din0                                                                             |  out|   16|  ap_ctrl_hs|                            UpConv_Fused_Row<8, 16, 16, 960, 480>_Pipeline_NORM_WRITE|  return value|
+|grp_fu_780_p_din1                                                                             |  out|   16|  ap_ctrl_hs|                            UpConv_Fused_Row<8, 16, 16, 960, 480>_Pipeline_NORM_WRITE|  return value|
+|grp_fu_780_p_dout0                                                                            |   in|   16|  ap_ctrl_hs|                            UpConv_Fused_Row<8, 16, 16, 960, 480>_Pipeline_NORM_WRITE|  return value|
+|grp_fu_780_p_ce                                                                               |  out|    1|  ap_ctrl_hs|                            UpConv_Fused_Row<8, 16, 16, 960, 480>_Pipeline_NORM_WRITE|  return value|
+|grp_fu_784_p_din0                                                                             |  out|   16|  ap_ctrl_hs|                            UpConv_Fused_Row<8, 16, 16, 960, 480>_Pipeline_NORM_WRITE|  return value|
+|grp_fu_784_p_din1                                                                             |  out|   16|  ap_ctrl_hs|                            UpConv_Fused_Row<8, 16, 16, 960, 480>_Pipeline_NORM_WRITE|  return value|
+|grp_fu_784_p_dout0                                                                            |   in|   16|  ap_ctrl_hs|                            UpConv_Fused_Row<8, 16, 16, 960, 480>_Pipeline_NORM_WRITE|  return value|
+|grp_fu_784_p_ce                                                                               |  out|    1|  ap_ctrl_hs|                            UpConv_Fused_Row<8, 16, 16, 960, 480>_Pipeline_NORM_WRITE|  return value|
+|grp_fu_788_p_din0                                                                             |  out|   16|  ap_ctrl_hs|                            UpConv_Fused_Row<8, 16, 16, 960, 480>_Pipeline_NORM_WRITE|  return value|
+|grp_fu_788_p_din1                                                                             |  out|   16|  ap_ctrl_hs|                            UpConv_Fused_Row<8, 16, 16, 960, 480>_Pipeline_NORM_WRITE|  return value|
+|grp_fu_788_p_dout0                                                                            |   in|   16|  ap_ctrl_hs|                            UpConv_Fused_Row<8, 16, 16, 960, 480>_Pipeline_NORM_WRITE|  return value|
+|grp_fu_788_p_ce                                                                               |  out|    1|  ap_ctrl_hs|                            UpConv_Fused_Row<8, 16, 16, 960, 480>_Pipeline_NORM_WRITE|  return value|
+|grp_fu_792_p_din0                                                                             |  out|   16|  ap_ctrl_hs|                            UpConv_Fused_Row<8, 16, 16, 960, 480>_Pipeline_NORM_WRITE|  return value|
+|grp_fu_792_p_din1                                                                             |  out|   16|  ap_ctrl_hs|                            UpConv_Fused_Row<8, 16, 16, 960, 480>_Pipeline_NORM_WRITE|  return value|
+|grp_fu_792_p_dout0                                                                            |   in|   16|  ap_ctrl_hs|                            UpConv_Fused_Row<8, 16, 16, 960, 480>_Pipeline_NORM_WRITE|  return value|
+|grp_fu_792_p_ce                                                                               |  out|    1|  ap_ctrl_hs|                            UpConv_Fused_Row<8, 16, 16, 960, 480>_Pipeline_NORM_WRITE|  return value|
+|grp_fu_796_p_din0                                                                             |  out|   16|  ap_ctrl_hs|                            UpConv_Fused_Row<8, 16, 16, 960, 480>_Pipeline_NORM_WRITE|  return value|
+|grp_fu_796_p_din1                                                                             |  out|   16|  ap_ctrl_hs|                            UpConv_Fused_Row<8, 16, 16, 960, 480>_Pipeline_NORM_WRITE|  return value|
+|grp_fu_796_p_dout0                                                                            |   in|   16|  ap_ctrl_hs|                            UpConv_Fused_Row<8, 16, 16, 960, 480>_Pipeline_NORM_WRITE|  return value|
+|grp_fu_796_p_ce                                                                               |  out|    1|  ap_ctrl_hs|                            UpConv_Fused_Row<8, 16, 16, 960, 480>_Pipeline_NORM_WRITE|  return value|
+|grp_fu_800_p_din0                                                                             |  out|   16|  ap_ctrl_hs|                            UpConv_Fused_Row<8, 16, 16, 960, 480>_Pipeline_NORM_WRITE|  return value|
+|grp_fu_800_p_din1                                                                             |  out|   16|  ap_ctrl_hs|                            UpConv_Fused_Row<8, 16, 16, 960, 480>_Pipeline_NORM_WRITE|  return value|
+|grp_fu_800_p_dout0                                                                            |   in|   16|  ap_ctrl_hs|                            UpConv_Fused_Row<8, 16, 16, 960, 480>_Pipeline_NORM_WRITE|  return value|
+|grp_fu_800_p_ce                                                                               |  out|    1|  ap_ctrl_hs|                            UpConv_Fused_Row<8, 16, 16, 960, 480>_Pipeline_NORM_WRITE|  return value|
+|grp_fu_804_p_din0                                                                             |  out|   16|  ap_ctrl_hs|                            UpConv_Fused_Row<8, 16, 16, 960, 480>_Pipeline_NORM_WRITE|  return value|
+|grp_fu_804_p_din1                                                                             |  out|   16|  ap_ctrl_hs|                            UpConv_Fused_Row<8, 16, 16, 960, 480>_Pipeline_NORM_WRITE|  return value|
+|grp_fu_804_p_dout0                                                                            |   in|   16|  ap_ctrl_hs|                            UpConv_Fused_Row<8, 16, 16, 960, 480>_Pipeline_NORM_WRITE|  return value|
+|grp_fu_804_p_ce                                                                               |  out|    1|  ap_ctrl_hs|                            UpConv_Fused_Row<8, 16, 16, 960, 480>_Pipeline_NORM_WRITE|  return value|
+|grp_fu_808_p_din0                                                                             |  out|   16|  ap_ctrl_hs|                            UpConv_Fused_Row<8, 16, 16, 960, 480>_Pipeline_NORM_WRITE|  return value|
+|grp_fu_808_p_din1                                                                             |  out|   16|  ap_ctrl_hs|                            UpConv_Fused_Row<8, 16, 16, 960, 480>_Pipeline_NORM_WRITE|  return value|
+|grp_fu_808_p_dout0                                                                            |   in|   16|  ap_ctrl_hs|                            UpConv_Fused_Row<8, 16, 16, 960, 480>_Pipeline_NORM_WRITE|  return value|
+|grp_fu_808_p_ce                                                                               |  out|    1|  ap_ctrl_hs|                            UpConv_Fused_Row<8, 16, 16, 960, 480>_Pipeline_NORM_WRITE|  return value|
+|grp_fu_812_p_din0                                                                             |  out|   16|  ap_ctrl_hs|                            UpConv_Fused_Row<8, 16, 16, 960, 480>_Pipeline_NORM_WRITE|  return value|
+|grp_fu_812_p_din1                                                                             |  out|   16|  ap_ctrl_hs|                            UpConv_Fused_Row<8, 16, 16, 960, 480>_Pipeline_NORM_WRITE|  return value|
+|grp_fu_812_p_dout0                                                                            |   in|   16|  ap_ctrl_hs|                            UpConv_Fused_Row<8, 16, 16, 960, 480>_Pipeline_NORM_WRITE|  return value|
+|grp_fu_812_p_ce                                                                               |  out|    1|  ap_ctrl_hs|                            UpConv_Fused_Row<8, 16, 16, 960, 480>_Pipeline_NORM_WRITE|  return value|
+|grp_fu_816_p_din0                                                                             |  out|   16|  ap_ctrl_hs|                            UpConv_Fused_Row<8, 16, 16, 960, 480>_Pipeline_NORM_WRITE|  return value|
+|grp_fu_816_p_din1                                                                             |  out|   16|  ap_ctrl_hs|                            UpConv_Fused_Row<8, 16, 16, 960, 480>_Pipeline_NORM_WRITE|  return value|
+|grp_fu_816_p_dout0                                                                            |   in|   16|  ap_ctrl_hs|                            UpConv_Fused_Row<8, 16, 16, 960, 480>_Pipeline_NORM_WRITE|  return value|
+|grp_fu_816_p_ce                                                                               |  out|    1|  ap_ctrl_hs|                            UpConv_Fused_Row<8, 16, 16, 960, 480>_Pipeline_NORM_WRITE|  return value|
+|grp_fu_820_p_din0                                                                             |  out|   16|  ap_ctrl_hs|                            UpConv_Fused_Row<8, 16, 16, 960, 480>_Pipeline_NORM_WRITE|  return value|
+|grp_fu_820_p_din1                                                                             |  out|   16|  ap_ctrl_hs|                            UpConv_Fused_Row<8, 16, 16, 960, 480>_Pipeline_NORM_WRITE|  return value|
+|grp_fu_820_p_dout0                                                                            |   in|   16|  ap_ctrl_hs|                            UpConv_Fused_Row<8, 16, 16, 960, 480>_Pipeline_NORM_WRITE|  return value|
+|grp_fu_820_p_ce                                                                               |  out|    1|  ap_ctrl_hs|                            UpConv_Fused_Row<8, 16, 16, 960, 480>_Pipeline_NORM_WRITE|  return value|
+|grp_fu_824_p_din0                                                                             |  out|   16|  ap_ctrl_hs|                            UpConv_Fused_Row<8, 16, 16, 960, 480>_Pipeline_NORM_WRITE|  return value|
+|grp_fu_824_p_din1                                                                             |  out|   16|  ap_ctrl_hs|                            UpConv_Fused_Row<8, 16, 16, 960, 480>_Pipeline_NORM_WRITE|  return value|
+|grp_fu_824_p_dout0                                                                            |   in|   16|  ap_ctrl_hs|                            UpConv_Fused_Row<8, 16, 16, 960, 480>_Pipeline_NORM_WRITE|  return value|
+|grp_fu_824_p_ce                                                                               |  out|    1|  ap_ctrl_hs|                            UpConv_Fused_Row<8, 16, 16, 960, 480>_Pipeline_NORM_WRITE|  return value|
+|grp_fu_828_p_din0                                                                             |  out|   16|  ap_ctrl_hs|                            UpConv_Fused_Row<8, 16, 16, 960, 480>_Pipeline_NORM_WRITE|  return value|
+|grp_fu_828_p_din1                                                                             |  out|   16|  ap_ctrl_hs|                            UpConv_Fused_Row<8, 16, 16, 960, 480>_Pipeline_NORM_WRITE|  return value|
+|grp_fu_828_p_dout0                                                                            |   in|   16|  ap_ctrl_hs|                            UpConv_Fused_Row<8, 16, 16, 960, 480>_Pipeline_NORM_WRITE|  return value|
+|grp_fu_828_p_ce                                                                               |  out|    1|  ap_ctrl_hs|                            UpConv_Fused_Row<8, 16, 16, 960, 480>_Pipeline_NORM_WRITE|  return value|
+|grp_fu_832_p_din0                                                                             |  out|   16|  ap_ctrl_hs|                            UpConv_Fused_Row<8, 16, 16, 960, 480>_Pipeline_NORM_WRITE|  return value|
+|grp_fu_832_p_din1                                                                             |  out|   16|  ap_ctrl_hs|                            UpConv_Fused_Row<8, 16, 16, 960, 480>_Pipeline_NORM_WRITE|  return value|
+|grp_fu_832_p_dout0                                                                            |   in|   16|  ap_ctrl_hs|                            UpConv_Fused_Row<8, 16, 16, 960, 480>_Pipeline_NORM_WRITE|  return value|
+|grp_fu_832_p_ce                                                                               |  out|    1|  ap_ctrl_hs|                            UpConv_Fused_Row<8, 16, 16, 960, 480>_Pipeline_NORM_WRITE|  return value|
+|grp_fu_836_p_din0                                                                             |  out|   16|  ap_ctrl_hs|                            UpConv_Fused_Row<8, 16, 16, 960, 480>_Pipeline_NORM_WRITE|  return value|
+|grp_fu_836_p_din1                                                                             |  out|   16|  ap_ctrl_hs|                            UpConv_Fused_Row<8, 16, 16, 960, 480>_Pipeline_NORM_WRITE|  return value|
+|grp_fu_836_p_dout0                                                                            |   in|   16|  ap_ctrl_hs|                            UpConv_Fused_Row<8, 16, 16, 960, 480>_Pipeline_NORM_WRITE|  return value|
+|grp_fu_836_p_ce                                                                               |  out|    1|  ap_ctrl_hs|                            UpConv_Fused_Row<8, 16, 16, 960, 480>_Pipeline_NORM_WRITE|  return value|
+|grp_fu_840_p_din0                                                                             |  out|   16|  ap_ctrl_hs|                            UpConv_Fused_Row<8, 16, 16, 960, 480>_Pipeline_NORM_WRITE|  return value|
+|grp_fu_840_p_din1                                                                             |  out|   16|  ap_ctrl_hs|                            UpConv_Fused_Row<8, 16, 16, 960, 480>_Pipeline_NORM_WRITE|  return value|
+|grp_fu_840_p_dout0                                                                            |   in|   16|  ap_ctrl_hs|                            UpConv_Fused_Row<8, 16, 16, 960, 480>_Pipeline_NORM_WRITE|  return value|
+|grp_fu_840_p_ce                                                                               |  out|    1|  ap_ctrl_hs|                            UpConv_Fused_Row<8, 16, 16, 960, 480>_Pipeline_NORM_WRITE|  return value|
+|grp_fu_844_p_din0                                                                             |  out|   16|  ap_ctrl_hs|                            UpConv_Fused_Row<8, 16, 16, 960, 480>_Pipeline_NORM_WRITE|  return value|
+|grp_fu_844_p_din1                                                                             |  out|   16|  ap_ctrl_hs|                            UpConv_Fused_Row<8, 16, 16, 960, 480>_Pipeline_NORM_WRITE|  return value|
+|grp_fu_844_p_dout0                                                                            |   in|   16|  ap_ctrl_hs|                            UpConv_Fused_Row<8, 16, 16, 960, 480>_Pipeline_NORM_WRITE|  return value|
+|grp_fu_844_p_ce                                                                               |  out|    1|  ap_ctrl_hs|                            UpConv_Fused_Row<8, 16, 16, 960, 480>_Pipeline_NORM_WRITE|  return value|
+|grp_fu_848_p_din0                                                                             |  out|   16|  ap_ctrl_hs|                            UpConv_Fused_Row<8, 16, 16, 960, 480>_Pipeline_NORM_WRITE|  return value|
+|grp_fu_848_p_din1                                                                             |  out|   16|  ap_ctrl_hs|                            UpConv_Fused_Row<8, 16, 16, 960, 480>_Pipeline_NORM_WRITE|  return value|
+|grp_fu_848_p_dout0                                                                            |   in|   16|  ap_ctrl_hs|                            UpConv_Fused_Row<8, 16, 16, 960, 480>_Pipeline_NORM_WRITE|  return value|
+|grp_fu_848_p_ce                                                                               |  out|    1|  ap_ctrl_hs|                            UpConv_Fused_Row<8, 16, 16, 960, 480>_Pipeline_NORM_WRITE|  return value|
+|grp_fu_852_p_din0                                                                             |  out|   16|  ap_ctrl_hs|                            UpConv_Fused_Row<8, 16, 16, 960, 480>_Pipeline_NORM_WRITE|  return value|
+|grp_fu_852_p_din1                                                                             |  out|   16|  ap_ctrl_hs|                            UpConv_Fused_Row<8, 16, 16, 960, 480>_Pipeline_NORM_WRITE|  return value|
+|grp_fu_852_p_dout0                                                                            |   in|   16|  ap_ctrl_hs|                            UpConv_Fused_Row<8, 16, 16, 960, 480>_Pipeline_NORM_WRITE|  return value|
+|grp_fu_852_p_ce                                                                               |  out|    1|  ap_ctrl_hs|                            UpConv_Fused_Row<8, 16, 16, 960, 480>_Pipeline_NORM_WRITE|  return value|
+|grp_fu_856_p_din0                                                                             |  out|   16|  ap_ctrl_hs|                            UpConv_Fused_Row<8, 16, 16, 960, 480>_Pipeline_NORM_WRITE|  return value|
+|grp_fu_856_p_din1                                                                             |  out|   16|  ap_ctrl_hs|                            UpConv_Fused_Row<8, 16, 16, 960, 480>_Pipeline_NORM_WRITE|  return value|
+|grp_fu_856_p_dout0                                                                            |   in|   16|  ap_ctrl_hs|                            UpConv_Fused_Row<8, 16, 16, 960, 480>_Pipeline_NORM_WRITE|  return value|
+|grp_fu_856_p_ce                                                                               |  out|    1|  ap_ctrl_hs|                            UpConv_Fused_Row<8, 16, 16, 960, 480>_Pipeline_NORM_WRITE|  return value|
+|grp_fu_860_p_din0                                                                             |  out|   16|  ap_ctrl_hs|                            UpConv_Fused_Row<8, 16, 16, 960, 480>_Pipeline_NORM_WRITE|  return value|
+|grp_fu_860_p_din1                                                                             |  out|   16|  ap_ctrl_hs|                            UpConv_Fused_Row<8, 16, 16, 960, 480>_Pipeline_NORM_WRITE|  return value|
+|grp_fu_860_p_dout0                                                                            |   in|   16|  ap_ctrl_hs|                            UpConv_Fused_Row<8, 16, 16, 960, 480>_Pipeline_NORM_WRITE|  return value|
+|grp_fu_860_p_ce                                                                               |  out|    1|  ap_ctrl_hs|                            UpConv_Fused_Row<8, 16, 16, 960, 480>_Pipeline_NORM_WRITE|  return value|
+|grp_fu_864_p_din0                                                                             |  out|   16|  ap_ctrl_hs|                            UpConv_Fused_Row<8, 16, 16, 960, 480>_Pipeline_NORM_WRITE|  return value|
+|grp_fu_864_p_din1                                                                             |  out|   16|  ap_ctrl_hs|                            UpConv_Fused_Row<8, 16, 16, 960, 480>_Pipeline_NORM_WRITE|  return value|
+|grp_fu_864_p_dout0                                                                            |   in|   16|  ap_ctrl_hs|                            UpConv_Fused_Row<8, 16, 16, 960, 480>_Pipeline_NORM_WRITE|  return value|
+|grp_fu_864_p_ce                                                                               |  out|    1|  ap_ctrl_hs|                            UpConv_Fused_Row<8, 16, 16, 960, 480>_Pipeline_NORM_WRITE|  return value|
+|grp_fu_868_p_din0                                                                             |  out|   16|  ap_ctrl_hs|                            UpConv_Fused_Row<8, 16, 16, 960, 480>_Pipeline_NORM_WRITE|  return value|
+|grp_fu_868_p_din1                                                                             |  out|   16|  ap_ctrl_hs|                            UpConv_Fused_Row<8, 16, 16, 960, 480>_Pipeline_NORM_WRITE|  return value|
+|grp_fu_868_p_dout0                                                                            |   in|   16|  ap_ctrl_hs|                            UpConv_Fused_Row<8, 16, 16, 960, 480>_Pipeline_NORM_WRITE|  return value|
+|grp_fu_868_p_ce                                                                               |  out|    1|  ap_ctrl_hs|                            UpConv_Fused_Row<8, 16, 16, 960, 480>_Pipeline_NORM_WRITE|  return value|
+|grp_fu_872_p_din0                                                                             |  out|   16|  ap_ctrl_hs|                            UpConv_Fused_Row<8, 16, 16, 960, 480>_Pipeline_NORM_WRITE|  return value|
+|grp_fu_872_p_din1                                                                             |  out|   16|  ap_ctrl_hs|                            UpConv_Fused_Row<8, 16, 16, 960, 480>_Pipeline_NORM_WRITE|  return value|
+|grp_fu_872_p_dout0                                                                            |   in|   16|  ap_ctrl_hs|                            UpConv_Fused_Row<8, 16, 16, 960, 480>_Pipeline_NORM_WRITE|  return value|
+|grp_fu_872_p_ce                                                                               |  out|    1|  ap_ctrl_hs|                            UpConv_Fused_Row<8, 16, 16, 960, 480>_Pipeline_NORM_WRITE|  return value|
+|grp_fu_876_p_din0                                                                             |  out|   16|  ap_ctrl_hs|                            UpConv_Fused_Row<8, 16, 16, 960, 480>_Pipeline_NORM_WRITE|  return value|
+|grp_fu_876_p_din1                                                                             |  out|   16|  ap_ctrl_hs|                            UpConv_Fused_Row<8, 16, 16, 960, 480>_Pipeline_NORM_WRITE|  return value|
+|grp_fu_876_p_dout0                                                                            |   in|   16|  ap_ctrl_hs|                            UpConv_Fused_Row<8, 16, 16, 960, 480>_Pipeline_NORM_WRITE|  return value|
+|grp_fu_876_p_ce                                                                               |  out|    1|  ap_ctrl_hs|                            UpConv_Fused_Row<8, 16, 16, 960, 480>_Pipeline_NORM_WRITE|  return value|
+|grp_fu_880_p_din0                                                                             |  out|   16|  ap_ctrl_hs|                            UpConv_Fused_Row<8, 16, 16, 960, 480>_Pipeline_NORM_WRITE|  return value|
+|grp_fu_880_p_din1                                                                             |  out|   16|  ap_ctrl_hs|                            UpConv_Fused_Row<8, 16, 16, 960, 480>_Pipeline_NORM_WRITE|  return value|
+|grp_fu_880_p_dout0                                                                            |   in|   16|  ap_ctrl_hs|                            UpConv_Fused_Row<8, 16, 16, 960, 480>_Pipeline_NORM_WRITE|  return value|
+|grp_fu_880_p_ce                                                                               |  out|    1|  ap_ctrl_hs|                            UpConv_Fused_Row<8, 16, 16, 960, 480>_Pipeline_NORM_WRITE|  return value|
+|grp_fu_884_p_din0                                                                             |  out|   16|  ap_ctrl_hs|                            UpConv_Fused_Row<8, 16, 16, 960, 480>_Pipeline_NORM_WRITE|  return value|
+|grp_fu_884_p_din1                                                                             |  out|   16|  ap_ctrl_hs|                            UpConv_Fused_Row<8, 16, 16, 960, 480>_Pipeline_NORM_WRITE|  return value|
+|grp_fu_884_p_dout0                                                                            |   in|   16|  ap_ctrl_hs|                            UpConv_Fused_Row<8, 16, 16, 960, 480>_Pipeline_NORM_WRITE|  return value|
+|grp_fu_884_p_ce                                                                               |  out|    1|  ap_ctrl_hs|                            UpConv_Fused_Row<8, 16, 16, 960, 480>_Pipeline_NORM_WRITE|  return value|
+|grp_fu_888_p_din0                                                                             |  out|   16|  ap_ctrl_hs|                            UpConv_Fused_Row<8, 16, 16, 960, 480>_Pipeline_NORM_WRITE|  return value|
+|grp_fu_888_p_din1                                                                             |  out|   16|  ap_ctrl_hs|                            UpConv_Fused_Row<8, 16, 16, 960, 480>_Pipeline_NORM_WRITE|  return value|
+|grp_fu_888_p_dout0                                                                            |   in|   16|  ap_ctrl_hs|                            UpConv_Fused_Row<8, 16, 16, 960, 480>_Pipeline_NORM_WRITE|  return value|
+|grp_fu_888_p_ce                                                                               |  out|    1|  ap_ctrl_hs|                            UpConv_Fused_Row<8, 16, 16, 960, 480>_Pipeline_NORM_WRITE|  return value|
+|grp_fu_892_p_din0                                                                             |  out|   16|  ap_ctrl_hs|                            UpConv_Fused_Row<8, 16, 16, 960, 480>_Pipeline_NORM_WRITE|  return value|
+|grp_fu_892_p_din1                                                                             |  out|   16|  ap_ctrl_hs|                            UpConv_Fused_Row<8, 16, 16, 960, 480>_Pipeline_NORM_WRITE|  return value|
+|grp_fu_892_p_dout0                                                                            |   in|   16|  ap_ctrl_hs|                            UpConv_Fused_Row<8, 16, 16, 960, 480>_Pipeline_NORM_WRITE|  return value|
+|grp_fu_892_p_ce                                                                               |  out|    1|  ap_ctrl_hs|                            UpConv_Fused_Row<8, 16, 16, 960, 480>_Pipeline_NORM_WRITE|  return value|
+|grp_fu_896_p_din0                                                                             |  out|   16|  ap_ctrl_hs|                            UpConv_Fused_Row<8, 16, 16, 960, 480>_Pipeline_NORM_WRITE|  return value|
+|grp_fu_896_p_din1                                                                             |  out|   16|  ap_ctrl_hs|                            UpConv_Fused_Row<8, 16, 16, 960, 480>_Pipeline_NORM_WRITE|  return value|
+|grp_fu_896_p_dout0                                                                            |   in|   16|  ap_ctrl_hs|                            UpConv_Fused_Row<8, 16, 16, 960, 480>_Pipeline_NORM_WRITE|  return value|
+|grp_fu_896_p_ce                                                                               |  out|    1|  ap_ctrl_hs|                            UpConv_Fused_Row<8, 16, 16, 960, 480>_Pipeline_NORM_WRITE|  return value|
+|grp_fu_900_p_din0                                                                             |  out|   16|  ap_ctrl_hs|                            UpConv_Fused_Row<8, 16, 16, 960, 480>_Pipeline_NORM_WRITE|  return value|
+|grp_fu_900_p_din1                                                                             |  out|   16|  ap_ctrl_hs|                            UpConv_Fused_Row<8, 16, 16, 960, 480>_Pipeline_NORM_WRITE|  return value|
+|grp_fu_900_p_dout0                                                                            |   in|   16|  ap_ctrl_hs|                            UpConv_Fused_Row<8, 16, 16, 960, 480>_Pipeline_NORM_WRITE|  return value|
+|grp_fu_900_p_ce                                                                               |  out|    1|  ap_ctrl_hs|                            UpConv_Fused_Row<8, 16, 16, 960, 480>_Pipeline_NORM_WRITE|  return value|
+|grp_fu_904_p_din0                                                                             |  out|   16|  ap_ctrl_hs|                            UpConv_Fused_Row<8, 16, 16, 960, 480>_Pipeline_NORM_WRITE|  return value|
+|grp_fu_904_p_din1                                                                             |  out|   16|  ap_ctrl_hs|                            UpConv_Fused_Row<8, 16, 16, 960, 480>_Pipeline_NORM_WRITE|  return value|
+|grp_fu_904_p_dout0                                                                            |   in|   16|  ap_ctrl_hs|                            UpConv_Fused_Row<8, 16, 16, 960, 480>_Pipeline_NORM_WRITE|  return value|
+|grp_fu_904_p_ce                                                                               |  out|    1|  ap_ctrl_hs|                            UpConv_Fused_Row<8, 16, 16, 960, 480>_Pipeline_NORM_WRITE|  return value|
+|grp_fu_908_p_din0                                                                             |  out|   16|  ap_ctrl_hs|                            UpConv_Fused_Row<8, 16, 16, 960, 480>_Pipeline_NORM_WRITE|  return value|
+|grp_fu_908_p_din1                                                                             |  out|   16|  ap_ctrl_hs|                            UpConv_Fused_Row<8, 16, 16, 960, 480>_Pipeline_NORM_WRITE|  return value|
+|grp_fu_908_p_dout0                                                                            |   in|   16|  ap_ctrl_hs|                            UpConv_Fused_Row<8, 16, 16, 960, 480>_Pipeline_NORM_WRITE|  return value|
+|grp_fu_908_p_ce                                                                               |  out|    1|  ap_ctrl_hs|                            UpConv_Fused_Row<8, 16, 16, 960, 480>_Pipeline_NORM_WRITE|  return value|
+|m_axi_gmem_out_0_AWVALID                                                                      |  out|    1|       m_axi|                                                                             gmem_out|       pointer|
+|m_axi_gmem_out_0_AWREADY                                                                      |   in|    1|       m_axi|                                                                             gmem_out|       pointer|
+|m_axi_gmem_out_0_AWADDR                                                                       |  out|   64|       m_axi|                                                                             gmem_out|       pointer|
+|m_axi_gmem_out_0_AWID                                                                         |  out|    1|       m_axi|                                                                             gmem_out|       pointer|
+|m_axi_gmem_out_0_AWLEN                                                                        |  out|   32|       m_axi|                                                                             gmem_out|       pointer|
+|m_axi_gmem_out_0_AWSIZE                                                                       |  out|    3|       m_axi|                                                                             gmem_out|       pointer|
+|m_axi_gmem_out_0_AWBURST                                                                      |  out|    2|       m_axi|                                                                             gmem_out|       pointer|
+|m_axi_gmem_out_0_AWLOCK                                                                       |  out|    2|       m_axi|                                                                             gmem_out|       pointer|
+|m_axi_gmem_out_0_AWCACHE                                                                      |  out|    4|       m_axi|                                                                             gmem_out|       pointer|
+|m_axi_gmem_out_0_AWPROT                                                                       |  out|    3|       m_axi|                                                                             gmem_out|       pointer|
+|m_axi_gmem_out_0_AWQOS                                                                        |  out|    4|       m_axi|                                                                             gmem_out|       pointer|
+|m_axi_gmem_out_0_AWREGION                                                                     |  out|    4|       m_axi|                                                                             gmem_out|       pointer|
+|m_axi_gmem_out_0_AWUSER                                                                       |  out|    1|       m_axi|                                                                             gmem_out|       pointer|
+|m_axi_gmem_out_0_WVALID                                                                       |  out|    1|       m_axi|                                                                             gmem_out|       pointer|
+|m_axi_gmem_out_0_WREADY                                                                       |   in|    1|       m_axi|                                                                             gmem_out|       pointer|
+|m_axi_gmem_out_0_WDATA                                                                        |  out|  256|       m_axi|                                                                             gmem_out|       pointer|
+|m_axi_gmem_out_0_WSTRB                                                                        |  out|   32|       m_axi|                                                                             gmem_out|       pointer|
+|m_axi_gmem_out_0_WLAST                                                                        |  out|    1|       m_axi|                                                                             gmem_out|       pointer|
+|m_axi_gmem_out_0_WID                                                                          |  out|    1|       m_axi|                                                                             gmem_out|       pointer|
+|m_axi_gmem_out_0_WUSER                                                                        |  out|    1|       m_axi|                                                                             gmem_out|       pointer|
+|m_axi_gmem_out_0_ARVALID                                                                      |  out|    1|       m_axi|                                                                             gmem_out|       pointer|
+|m_axi_gmem_out_0_ARREADY                                                                      |   in|    1|       m_axi|                                                                             gmem_out|       pointer|
+|m_axi_gmem_out_0_ARADDR                                                                       |  out|   64|       m_axi|                                                                             gmem_out|       pointer|
+|m_axi_gmem_out_0_ARID                                                                         |  out|    1|       m_axi|                                                                             gmem_out|       pointer|
+|m_axi_gmem_out_0_ARLEN                                                                        |  out|   32|       m_axi|                                                                             gmem_out|       pointer|
+|m_axi_gmem_out_0_ARSIZE                                                                       |  out|    3|       m_axi|                                                                             gmem_out|       pointer|
+|m_axi_gmem_out_0_ARBURST                                                                      |  out|    2|       m_axi|                                                                             gmem_out|       pointer|
+|m_axi_gmem_out_0_ARLOCK                                                                       |  out|    2|       m_axi|                                                                             gmem_out|       pointer|
+|m_axi_gmem_out_0_ARCACHE                                                                      |  out|    4|       m_axi|                                                                             gmem_out|       pointer|
+|m_axi_gmem_out_0_ARPROT                                                                       |  out|    3|       m_axi|                                                                             gmem_out|       pointer|
+|m_axi_gmem_out_0_ARQOS                                                                        |  out|    4|       m_axi|                                                                             gmem_out|       pointer|
+|m_axi_gmem_out_0_ARREGION                                                                     |  out|    4|       m_axi|                                                                             gmem_out|       pointer|
+|m_axi_gmem_out_0_ARUSER                                                                       |  out|    1|       m_axi|                                                                             gmem_out|       pointer|
+|m_axi_gmem_out_0_RVALID                                                                       |   in|    1|       m_axi|                                                                             gmem_out|       pointer|
+|m_axi_gmem_out_0_RREADY                                                                       |  out|    1|       m_axi|                                                                             gmem_out|       pointer|
+|m_axi_gmem_out_0_RDATA                                                                        |   in|  256|       m_axi|                                                                             gmem_out|       pointer|
+|m_axi_gmem_out_0_RLAST                                                                        |   in|    1|       m_axi|                                                                             gmem_out|       pointer|
+|m_axi_gmem_out_0_RID                                                                          |   in|    1|       m_axi|                                                                             gmem_out|       pointer|
+|m_axi_gmem_out_0_RFIFONUM                                                                     |   in|    9|       m_axi|                                                                             gmem_out|       pointer|
+|m_axi_gmem_out_0_RUSER                                                                        |   in|    1|       m_axi|                                                                             gmem_out|       pointer|
+|m_axi_gmem_out_0_RRESP                                                                        |   in|    2|       m_axi|                                                                             gmem_out|       pointer|
+|m_axi_gmem_out_0_BVALID                                                                       |   in|    1|       m_axi|                                                                             gmem_out|       pointer|
+|m_axi_gmem_out_0_BREADY                                                                       |  out|    1|       m_axi|                                                                             gmem_out|       pointer|
+|m_axi_gmem_out_0_BRESP                                                                        |   in|    2|       m_axi|                                                                             gmem_out|       pointer|
+|m_axi_gmem_out_0_BID                                                                          |   in|    1|       m_axi|                                                                             gmem_out|       pointer|
+|m_axi_gmem_out_0_BUSER                                                                        |   in|    1|       m_axi|                                                                             gmem_out|       pointer|
+|sext_ln238                                                                                    |   in|   59|     ap_none|                                                                           sext_ln238|        scalar|
+|mul_ln246                                                                                     |   in|   10|     ap_none|                                                                            mul_ln246|        scalar|
+|g_buf_address0                                                                                |  out|    5|   ap_memory|                                                                                g_buf|         array|
+|g_buf_ce0                                                                                     |  out|    1|   ap_memory|                                                                                g_buf|         array|
+|g_buf_q0                                                                                      |   in|  256|   ap_memory|                                                                                g_buf|         array|
+|be_buf_address0                                                                               |  out|    5|   ap_memory|                                                                               be_buf|         array|
+|be_buf_ce0                                                                                    |  out|    1|   ap_memory|                                                                               be_buf|         array|
+|be_buf_q0                                                                                     |   in|  256|   ap_memory|                                                                               be_buf|         array|
+|conv3                                                                                         |   in|   16|     ap_none|                                                                                conv3|        scalar|
+|inv_std                                                                                       |   in|   16|     ap_none|                                                                              inv_std|        scalar|
+|void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_9_address0       |  out|   10|   ap_memory|       void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_9|         array|
+|void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_9_ce0            |  out|    1|   ap_memory|       void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_9|         array|
+|void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_9_q0             |   in|   16|   ap_memory|       void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_9|         array|
+|void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_8_address0       |  out|   10|   ap_memory|       void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_8|         array|
+|void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_8_ce0            |  out|    1|   ap_memory|       void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_8|         array|
+|void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_8_q0             |   in|   16|   ap_memory|       void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_8|         array|
+|void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_7_address0       |  out|   10|   ap_memory|       void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_7|         array|
+|void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_7_ce0            |  out|    1|   ap_memory|       void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_7|         array|
+|void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_7_q0             |   in|   16|   ap_memory|       void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_7|         array|
+|void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_6_address0       |  out|   10|   ap_memory|       void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_6|         array|
+|void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_6_ce0            |  out|    1|   ap_memory|       void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_6|         array|
+|void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_6_q0             |   in|   16|   ap_memory|       void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_6|         array|
+|void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_5_address0       |  out|   10|   ap_memory|       void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_5|         array|
+|void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_5_ce0            |  out|    1|   ap_memory|       void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_5|         array|
+|void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_5_q0             |   in|   16|   ap_memory|       void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_5|         array|
+|void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_4_address0       |  out|   10|   ap_memory|       void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_4|         array|
+|void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_4_ce0            |  out|    1|   ap_memory|       void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_4|         array|
+|void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_4_q0             |   in|   16|   ap_memory|       void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_4|         array|
+|void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_3_address0       |  out|   10|   ap_memory|       void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_3|         array|
+|void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_3_ce0            |  out|    1|   ap_memory|       void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_3|         array|
+|void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_3_q0             |   in|   16|   ap_memory|       void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_3|         array|
+|void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_2_address0       |  out|   10|   ap_memory|       void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_2|         array|
+|void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_2_ce0            |  out|    1|   ap_memory|       void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_2|         array|
+|void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_2_q0             |   in|   16|   ap_memory|       void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_2|         array|
+|void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_1_address0       |  out|   10|   ap_memory|       void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_1|         array|
+|void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_1_ce0            |  out|    1|   ap_memory|       void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_1|         array|
+|void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_1_q0             |   in|   16|   ap_memory|       void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_1|         array|
+|void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_address0         |  out|   10|   ap_memory|         void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u|         array|
+|void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_ce0              |  out|    1|   ap_memory|         void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u|         array|
+|void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_q0               |   in|   16|   ap_memory|         void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u|         array|
+|p_ZZ16UpConv_Fused_RowILi8ELi16ELi16ELi960ELi480EEvP7ap_uintILi256EEPKS1_S4_S4_S4_5_address0  |  out|   10|   ap_memory|  p_ZZ16UpConv_Fused_RowILi8ELi16ELi16ELi960ELi480EEvP7ap_uintILi256EEPKS1_S4_S4_S4_5|         array|
+|p_ZZ16UpConv_Fused_RowILi8ELi16ELi16ELi960ELi480EEvP7ap_uintILi256EEPKS1_S4_S4_S4_5_ce0       |  out|    1|   ap_memory|  p_ZZ16UpConv_Fused_RowILi8ELi16ELi16ELi960ELi480EEvP7ap_uintILi256EEPKS1_S4_S4_S4_5|         array|
+|p_ZZ16UpConv_Fused_RowILi8ELi16ELi16ELi960ELi480EEvP7ap_uintILi256EEPKS1_S4_S4_S4_5_q0        |   in|   16|   ap_memory|  p_ZZ16UpConv_Fused_RowILi8ELi16ELi16ELi960ELi480EEvP7ap_uintILi256EEPKS1_S4_S4_S4_5|         array|
+|p_ZZ16UpConv_Fused_RowILi8ELi16ELi16ELi960ELi480EEvP7ap_uintILi256EEPKS1_S4_S4_S4_4_address0  |  out|   10|   ap_memory|  p_ZZ16UpConv_Fused_RowILi8ELi16ELi16ELi960ELi480EEvP7ap_uintILi256EEPKS1_S4_S4_S4_4|         array|
+|p_ZZ16UpConv_Fused_RowILi8ELi16ELi16ELi960ELi480EEvP7ap_uintILi256EEPKS1_S4_S4_S4_4_ce0       |  out|    1|   ap_memory|  p_ZZ16UpConv_Fused_RowILi8ELi16ELi16ELi960ELi480EEvP7ap_uintILi256EEPKS1_S4_S4_S4_4|         array|
+|p_ZZ16UpConv_Fused_RowILi8ELi16ELi16ELi960ELi480EEvP7ap_uintILi256EEPKS1_S4_S4_S4_4_q0        |   in|   16|   ap_memory|  p_ZZ16UpConv_Fused_RowILi8ELi16ELi16ELi960ELi480EEvP7ap_uintILi256EEPKS1_S4_S4_S4_4|         array|
+|p_ZZ16UpConv_Fused_RowILi8ELi16ELi16ELi960ELi480EEvP7ap_uintILi256EEPKS1_S4_S4_S4_3_address0  |  out|   10|   ap_memory|  p_ZZ16UpConv_Fused_RowILi8ELi16ELi16ELi960ELi480EEvP7ap_uintILi256EEPKS1_S4_S4_S4_3|         array|
+|p_ZZ16UpConv_Fused_RowILi8ELi16ELi16ELi960ELi480EEvP7ap_uintILi256EEPKS1_S4_S4_S4_3_ce0       |  out|    1|   ap_memory|  p_ZZ16UpConv_Fused_RowILi8ELi16ELi16ELi960ELi480EEvP7ap_uintILi256EEPKS1_S4_S4_S4_3|         array|
+|p_ZZ16UpConv_Fused_RowILi8ELi16ELi16ELi960ELi480EEvP7ap_uintILi256EEPKS1_S4_S4_S4_3_q0        |   in|   16|   ap_memory|  p_ZZ16UpConv_Fused_RowILi8ELi16ELi16ELi960ELi480EEvP7ap_uintILi256EEPKS1_S4_S4_S4_3|         array|
+|p_ZZ16UpConv_Fused_RowILi8ELi16ELi16ELi960ELi480EEvP7ap_uintILi256EEPKS1_S4_S4_S4_2_address0  |  out|   10|   ap_memory|  p_ZZ16UpConv_Fused_RowILi8ELi16ELi16ELi960ELi480EEvP7ap_uintILi256EEPKS1_S4_S4_S4_2|         array|
+|p_ZZ16UpConv_Fused_RowILi8ELi16ELi16ELi960ELi480EEvP7ap_uintILi256EEPKS1_S4_S4_S4_2_ce0       |  out|    1|   ap_memory|  p_ZZ16UpConv_Fused_RowILi8ELi16ELi16ELi960ELi480EEvP7ap_uintILi256EEPKS1_S4_S4_S4_2|         array|
+|p_ZZ16UpConv_Fused_RowILi8ELi16ELi16ELi960ELi480EEvP7ap_uintILi256EEPKS1_S4_S4_S4_2_q0        |   in|   16|   ap_memory|  p_ZZ16UpConv_Fused_RowILi8ELi16ELi16ELi960ELi480EEvP7ap_uintILi256EEPKS1_S4_S4_S4_2|         array|
+|p_ZZ16UpConv_Fused_RowILi8ELi16ELi16ELi960ELi480EEvP7ap_uintILi256EEPKS1_S4_S4_S4_1_address0  |  out|   10|   ap_memory|  p_ZZ16UpConv_Fused_RowILi8ELi16ELi16ELi960ELi480EEvP7ap_uintILi256EEPKS1_S4_S4_S4_1|         array|
+|p_ZZ16UpConv_Fused_RowILi8ELi16ELi16ELi960ELi480EEvP7ap_uintILi256EEPKS1_S4_S4_S4_1_ce0       |  out|    1|   ap_memory|  p_ZZ16UpConv_Fused_RowILi8ELi16ELi16ELi960ELi480EEvP7ap_uintILi256EEPKS1_S4_S4_S4_1|         array|
+|p_ZZ16UpConv_Fused_RowILi8ELi16ELi16ELi960ELi480EEvP7ap_uintILi256EEPKS1_S4_S4_S4_1_q0        |   in|   16|   ap_memory|  p_ZZ16UpConv_Fused_RowILi8ELi16ELi16ELi960ELi480EEvP7ap_uintILi256EEPKS1_S4_S4_S4_1|         array|
+|p_ZZ16UpConv_Fused_RowILi8ELi16ELi16ELi960ELi480EEvP7ap_uintILi256EEPKS1_S4_S4_S4_address0    |  out|   10|   ap_memory|    p_ZZ16UpConv_Fused_RowILi8ELi16ELi16ELi960ELi480EEvP7ap_uintILi256EEPKS1_S4_S4_S4|         array|
+|p_ZZ16UpConv_Fused_RowILi8ELi16ELi16ELi960ELi480EEvP7ap_uintILi256EEPKS1_S4_S4_S4_ce0         |  out|    1|   ap_memory|    p_ZZ16UpConv_Fused_RowILi8ELi16ELi16ELi960ELi480EEvP7ap_uintILi256EEPKS1_S4_S4_S4|         array|
+|p_ZZ16UpConv_Fused_RowILi8ELi16ELi16ELi960ELi480EEvP7ap_uintILi256EEPKS1_S4_S4_S4_q0          |   in|   16|   ap_memory|    p_ZZ16UpConv_Fused_RowILi8ELi16ELi16ELi960ELi480EEvP7ap_uintILi256EEPKS1_S4_S4_S4|         array|
++----------------------------------------------------------------------------------------------+-----+-----+------------+-------------------------------------------------------------------------------------+--------------+
+

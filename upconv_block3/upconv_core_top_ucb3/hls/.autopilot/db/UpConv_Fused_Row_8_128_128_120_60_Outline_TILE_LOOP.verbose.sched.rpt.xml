@@ -1,7 +1,7 @@
 <profile>
 
 <section name = "Vitis HLS Report for 'UpConv_Fused_Row_8_128_128_120_60_Outline_TILE_LOOP'" level="0">
-<item name = "Date">Fri May  8 13:50:30 2026
+<item name = "Date">Mon Jun  1 23:47:11 2026
 </item>
 <item name = "Version">2024.2 (Build 5238294 on Nov  8 2024)</item>
 <item name = "Project">upconv_core_top_ucb3</item>
@@ -15,7 +15,7 @@
 <section name = "" level="1">
 <item name = "Summary"><table name="" hasTotal="0">
 <keys size="4">Clock, Target, Estimated, Uncertainty</keys>
-<column name="ap_clk">3.33 ns, 2.433 ns, 0.90 ns</column>
+<column name="ap_clk">3.33 ns, 2.877 ns, 0.90 ns</column>
 </table>
 </item>
 </section>
@@ -24,7 +24,7 @@
 <section name = "" level="1">
 <item name = "Summary"><table name="" hasTotal="0">
 <keys size="8">, min, max, min, max, min, max, Type</keys>
-<column name="">265, 3765913, 0.883 us, 12.552 ms, 265, 3765913, no</column>
+<column name="">201, 82241, 0.670 us, 0.274 ms, 201, 82241, no</column>
 </table>
 </item>
 <item name = "Detail">
@@ -35,11 +35,9 @@
 </item>
 <item name = "Loop"><table name="" hasTotal="0">
 <keys size="8">Loop Name, min, max, Latency, achieved, target, Count, Pipelined</keys>
-<column name="- TILE_LOOP">264, 3765912, 33 ~ 470739, -, -, 8, no</column>
-<column name=" + PRELOAD_W">24, 696, 3 ~ 87, -, -, 8, no</column>
-<column name=" + KH_LOOP">6, 470040, 2 ~ 156680, -, -, 3, no</column>
-<column name="  ++ KW_LOOP">1542, 156678, 514 ~ 52226, -, -, 3, no</column>
-<column name="   +++ WO_LOOP">512, 52224, 2 ~ 204, -, -, 256, no</column>
+<column name="- TILE_LOOP">200, 82240, 25 ~ 10280, -, -, 8, no</column>
+<column name=" + PRELOAD_W">16, 704, 2 ~ 88, -, -, 8, no</column>
+<column name=" + KH_LOOP">6, 9573, 2 ~ 3191, -, -, 3, no</column>
 </table>
 </item>
 </section>

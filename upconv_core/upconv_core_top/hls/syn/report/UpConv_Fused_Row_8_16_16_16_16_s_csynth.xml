@@ -18,18 +18,18 @@
 <PipelineType>no</PipelineType>
 <SummaryOfTimingAnalysis>
 <unit>ns</unit>
-<EstimatedClockPeriod>2.741</EstimatedClockPeriod>
+<EstimatedClockPeriod>2.433</EstimatedClockPeriod>
 </SummaryOfTimingAnalysis>
 <SummaryOfOverallLatency>
 <unit>clock cycles</unit>
-<Best-caseLatency>3944</Best-caseLatency>
-<Average-caseLatency>4532</Average-caseLatency>
-<Worst-caseLatency>5120</Worst-caseLatency>
-<Best-caseRealTimeLatency>13.145 us</Best-caseRealTimeLatency>
-<Average-caseRealTimeLatency>15.105 us</Average-caseRealTimeLatency>
-<Worst-caseRealTimeLatency>17.065 us</Worst-caseRealTimeLatency>
-<Interval-min>3944</Interval-min>
-<Interval-max>5120</Interval-max>
+<Best-caseLatency>1006</Best-caseLatency>
+<Average-caseLatency>1480</Average-caseLatency>
+<Worst-caseLatency>1948</Worst-caseLatency>
+<Best-caseRealTimeLatency>3.353 us</Best-caseRealTimeLatency>
+<Average-caseRealTimeLatency>4.933 us</Average-caseRealTimeLatency>
+<Worst-caseRealTimeLatency>6.493 us</Worst-caseRealTimeLatency>
+<Interval-min>1006</Interval-min>
+<Interval-max>1948</Interval-max>
 </SummaryOfOverallLatency>
 <SummaryOfLoopLatency>
 <TILE_LOOP>
@@ -38,19 +38,19 @@
 <Latency>
 <range>
 <min>168</min>
-<max>1344</max>
+<max>1110</max>
 </range>
 </Latency>
 <AbsoluteTimeLatency>
 <range>
 <min>559</min>
-<max>4479</max>
+<max>3699</max>
 </range>
 </AbsoluteTimeLatency>
 <IterationLatency>
 <range>
 <min>84</min>
-<max>672</max>
+<max>555</max>
 </range>
 </IterationLatency>
 <InstanceList>
@@ -61,38 +61,28 @@
 <Latency>
 <range>
 <min>6</min>
-<max>594</max>
+<max>477</max>
 </range>
 </Latency>
 <AbsoluteTimeLatency>
 <range>
 <min>19</min>
-<max>1979</max>
+<max>1589</max>
 </range>
 </AbsoluteTimeLatency>
 <IterationLatency>
 <range>
 <min>2</min>
-<max>198</max>
+<max>159</max>
 </range>
 </IterationLatency>
 <InstanceList>
 </InstanceList>
 </KH_LOOP>
 </TILE_LOOP>
-<PIXEL_NORM_BIAS_STATS>
-<Slack>2.43</Slack>
-<TripCount>512</TripCount>
-<Latency>3715</Latency>
-<AbsoluteTimeLatency>12382</AbsoluteTimeLatency>
-<PipelineII>7</PipelineII>
-<PipelineDepth>139</PipelineDepth>
-<InstanceList>
-</InstanceList>
-</PIXEL_NORM_BIAS_STATS>
 </SummaryOfLoopLatency>
 <SummaryOfViolations>
-<IssueType>Timing Violation</IssueType>
+<IssueType>-</IssueType>
 <ViolationType>-</ViolationType>
 <SourceLocation>../gen/Hls_Layers_UpConv.tpp:135</SourceLocation>
 <SummaryOfLoopViolations>
@@ -105,26 +95,19 @@
 <Name>KH_LOOP</Name>
 <IssueType>-</IssueType>
 <ViolationType>-</ViolationType>
-<SourceLocation>../gen/Hls_Layers_UpConv.tpp:154</SourceLocation>
+<SourceLocation>../gen/Hls_Layers_UpConv.tpp:151</SourceLocation>
 </KH_LOOP>
 </TILE_LOOP>
-<PIXEL_NORM_BIAS_STATS>
-<Name>PIXEL_NORM_BIAS_STATS</Name>
-<IssueType>II Violation</IssueType>
-<ViolationType>Memory Dependency</ViolationType>
-<IterationDistance>1</IterationDistance>
-<SourceLocation>../gen/Hls_Layers_UpConv.tpp:238</SourceLocation>
-</PIXEL_NORM_BIAS_STATS>
 </SummaryOfLoopViolations>
 </SummaryOfViolations>
 </PerformanceEstimates>
 
 <AreaEstimates>
 <Resources>
-<BRAM_18K>64</BRAM_18K>
-<DSP>559</DSP>
-<FF>51534</FF>
-<LUT>32210</LUT>
+<BRAM_18K>72</BRAM_18K>
+<DSP>660</DSP>
+<FF>63316</FF>
+<LUT>41000</LUT>
 <URAM>16</URAM>
 </Resources>
 <AvailableResources>

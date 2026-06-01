@@ -3407,7 +3407,7 @@ window.onload = function () { addSorting(); }
 <center><h1>Design Guidance Report</h1></center><center><table class="header" border="0">
 <tr><td><b>Copyright</b></td><td>Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.</td></tr>
 <tr><td><b>Tool Version</b></td><td>xcd v.2024.2 (lin64) Build 0 </td></tr>
-<tr><td><b>Date</b></td><td>Thu May  7 18:52:45 2026</td></tr>
+<tr><td><b>Date</b></td><td>Mon Jun  1 23:47:12 2026</td></tr>
 <tr><td><b>Host</b></td><td>hoinguyen-G5-MF running 64-bit Ubuntu 24.04.4 LTS</td></tr>
 <tr><td><b>Command</b></td><td>/home/tools/Xilinx/Vitis/2024.2/bin/unwrapped/lnx64.o/v++  -c --mode hls --config /home/hoinguyen/Documents/Vitis/UpConv_HLS/upconv_core/hls_config.cfg --work_dir upconv_core_top </td></tr>
 </table></center><br>
@@ -3416,7 +3416,7 @@ window.onload = function () { addSorting(); }
 <tr><td><a href="#VIOLATION DETAILS">2 VIOLATION DETAILS</a></tr></td>
 </table>
 <a name="REPORT SUMMARY"></a><h1>1 REPORT SUMMARY</h1>
-<pre>Violations found: 127
+<pre>Violations found: 70
 </pre>
 <pre>Rule Specs Violated: 4
 </pre>
@@ -3434,1140 +3434,13 @@ window.onload = function () { addSorting(); }
 <th align="left" width="380">Resolution</th>
 </tr>
 <tr>
-<td align="left">100</td>
-<td align="left">Throughput</td>
-<td align="left">WARNING</td>
-<td align="left"><undefined></td>
-<td align="left">HLS Throughput Related</td>
-<td align="left">Accelerator.upconv_core_top.Throughput</td>
-<td align="left">The II Violation in module 'UpConv_Fused_Row_8_16_16_960_480_Pipeline_BIAS_STATS' (loop 'BIAS_STATS'): Unable to enforce a carried dependence constraint (II = 1, distance = 1, offset = 0) between 'store' operation 0 bit ('sum_write_ln240', ../gen/Hls_Layers_UpConv.tpp:240) of variable 'sum', ../gen/Hls_Layers_UpConv.tpp:249 on local variable 'sum', ../gen/Hls_Layers_UpConv.tpp:240 and 'load' operation 32 bit ('sum_load', ../gen/Hls_Layers_UpConv.tpp:249) on local variable 'sum', ../gen/Hls_Layers_UpConv.tpp:240.
-</td>
-<td align="left"><a href="http:///docs.xilinx.com/access/sources/dita/map?Doc_Version=2024.2%20English&url=ug1399-vitis-hls">Vitis HLS User Guide (UG1399)</a></td>
-</tr>
-<tr>
-<td align="left">35</td>
-<td align="left">Kernel</td>
-<td align="left">WARNING</td>
-<td align="left"><undefined></td>
-<td align="left">HLS Kernel Related</td>
-<td align="left">Accelerator.upconv_core_top.Kernel</td>
-<td align="left">The critical path in module 'UpConv_Fused_Row_8_128_128_120_60_Pipeline_BIAS_STATS' consists of the following:
-	'fadd' operation 32 bit ('sum', ../gen/Hls_Layers_UpConv.tpp:249) [153]  (2.292 ns)
-	'store' operation 0 bit ('sum_03_write_ln240', ../gen/Hls_Layers_UpConv.tpp:240) of variable 'sum', ../gen/Hls_Layers_UpConv.tpp:249 on local variable 'sum', ../gen/Hls_Layers_UpConv.tpp:240 [158]  (0.427 ns)
-
-</td>
-<td align="left"><a href="http:///docs.xilinx.com/access/sources/dita/map?Doc_Version=2024.2%20English&url=ug1399-vitis-hls">Vitis HLS User Guide (UG1399)</a></td>
-</tr>
-<tr>
-<td align="left">76</td>
-<td align="left">Throughput</td>
-<td align="left">WARNING</td>
-<td align="left"><undefined></td>
-<td align="left">HLS Throughput Related</td>
-<td align="left">Accelerator.upconv_core_top.Throughput</td>
-<td align="left">The II Violation in module 'UpConv_Fused_Row_8_32_32_480_240_Pipeline_BIAS_STATS' (loop 'BIAS_STATS'): Unable to enforce a carried dependence constraint (II = 4, distance = 1, offset = 0) between 'store' operation 0 bit ('sum_write_ln240', ../gen/Hls_Layers_UpConv.tpp:240) of variable 'sum', ../gen/Hls_Layers_UpConv.tpp:249 on local variable 'sum', ../gen/Hls_Layers_UpConv.tpp:240 and 'load' operation 32 bit ('sum_load', ../gen/Hls_Layers_UpConv.tpp:249) on local variable 'sum', ../gen/Hls_Layers_UpConv.tpp:240.
-</td>
-<td align="left"><a href="http:///docs.xilinx.com/access/sources/dita/map?Doc_Version=2024.2%20English&url=ug1399-vitis-hls">Vitis HLS User Guide (UG1399)</a></td>
-</tr>
-<tr>
-<td align="left">11</td>
-<td align="left">Interface</td>
-<td align="left">ADVISORY</td>
-<td align="left"><undefined></td>
-<td align="left">HLS Interface Related</td>
-<td align="left">Accelerator.upconv_core_top.Interface</td>
-<td align="left">Multiple burst reads of length 16 and bit width 256 in loop 'LOAD_ROW0'(../gen/Hls_Layers_UpConv.tpp:295:16) has been inferred on bundle 'gmem_in'. These burst requests might be further partitioned into multiple requests during RTL generation, based on max_read_burst_length or max_write_burst_length settings. (../gen/Hls_Layers_UpConv.tpp:295:16)
-</td>
-<td align="left"><a href="http:///docs.xilinx.com/access/sources/dita/map?Doc_Version=2024.2%20English&url=ug1399-vitis-hls">Vitis HLS User Guide (UG1399)</a></td>
-</tr>
-<tr>
-<td align="left">105</td>
-<td align="left">Throughput</td>
-<td align="left">WARNING</td>
-<td align="left"><undefined></td>
-<td align="left">HLS Throughput Related</td>
-<td align="left">Accelerator.upconv_core_top.Throughput</td>
-<td align="left">The II Violation in module 'UpConv_Fused_Row_8_16_16_960_480_Pipeline_BIAS_STATS' (loop 'BIAS_STATS'): Unable to enforce a carried dependence constraint (II = 6, distance = 1, offset = 0) between 'store' operation 0 bit ('sum_write_ln240', ../gen/Hls_Layers_UpConv.tpp:240) of variable 'sum', ../gen/Hls_Layers_UpConv.tpp:249 on local variable 'sum', ../gen/Hls_Layers_UpConv.tpp:240 and 'load' operation 32 bit ('sum_load', ../gen/Hls_Layers_UpConv.tpp:249) on local variable 'sum', ../gen/Hls_Layers_UpConv.tpp:240.
-</td>
-<td align="left"><a href="http:///docs.xilinx.com/access/sources/dita/map?Doc_Version=2024.2%20English&url=ug1399-vitis-hls">Vitis HLS User Guide (UG1399)</a></td>
-</tr>
-<tr>
-<td align="left">20</td>
-<td align="left">Kernel</td>
-<td align="left">WARNING</td>
-<td align="left"><undefined></td>
-<td align="left">HLS Kernel Related</td>
-<td align="left">Accelerator.upconv_core_top.Kernel</td>
-<td align="left">The II Violation in module 'UpConv_Fused_Row_8_128_128_120_60_Pipeline_RESET_ROW_ACC' (loop 'RESET_ROW_ACC'): Unable to schedule 'store' operation 0 bit ('void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_783_write_ln121', ../gen/Hls_Layers_UpConv.tpp:121) of constant 0 on array 'void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_49' due to limited memory ports (II = 1). Please consider using a memory core with more ports or partitioning the array 'void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_49'.
-</td>
-<td align="left"><a href="http:///docs.xilinx.com/access/sources/dita/map?Doc_Version=2024.2%20English&url=ug1399-vitis-hls">Vitis HLS User Guide (UG1399)</a></td>
-</tr>
-<tr>
-<td align="left">49</td>
-<td align="left">Throughput</td>
-<td align="left">WARNING</td>
-<td align="left"><undefined></td>
-<td align="left">HLS Throughput Related</td>
-<td align="left">Accelerator.upconv_core_top.Throughput</td>
-<td align="left">The II Violation in module 'UpConv_Fused_Row_8_64_64_240_120_Pipeline_BIAS_STATS' (loop 'BIAS_STATS'): Unable to enforce a carried dependence constraint (II = 2, distance = 1, offset = 0) between 'store' operation 0 bit ('sum_write_ln240', ../gen/Hls_Layers_UpConv.tpp:240) of variable 'sum', ../gen/Hls_Layers_UpConv.tpp:249 on local variable 'sum', ../gen/Hls_Layers_UpConv.tpp:240 and 'load' operation 32 bit ('sum_load', ../gen/Hls_Layers_UpConv.tpp:249) on local variable 'sum', ../gen/Hls_Layers_UpConv.tpp:240.
-</td>
-<td align="left"><a href="http:///docs.xilinx.com/access/sources/dita/map?Doc_Version=2024.2%20English&url=ug1399-vitis-hls">Vitis HLS User Guide (UG1399)</a></td>
-</tr>
-<tr>
-<td align="left">82</td>
-<td align="left">Throughput</td>
-<td align="left">ADVISORY</td>
-<td align="left"><undefined></td>
-<td align="left">HLS Throughput Related</td>
-<td align="left">Accelerator.upconv_core_top.Throughput</td>
-<td align="left">Pipelining result : Target II = 1, Final II = 1, Depth = 24, loop 'NORM_WRITE'
-</td>
-<td align="left"><a href="http:///docs.xilinx.com/access/sources/dita/map?Doc_Version=2024.2%20English&url=ug1399-vitis-hls">Vitis HLS User Guide (UG1399)</a></td>
-</tr>
-<tr>
-<td align="left">25</td>
-<td align="left">Kernel</td>
-<td align="left">WARNING</td>
-<td align="left"><undefined></td>
-<td align="left">HLS Kernel Related</td>
-<td align="left">Accelerator.upconv_core_top.Kernel</td>
-<td align="left">The II Violation in module 'UpConv_Fused_Row_8_128_128_120_60_Pipeline_LOAD_PARAMS' (loop 'LOAD_PARAMS'): Unable to schedule bus request operation ('gmem_param_load_10_req', ../gen/Hls_Layers_UpConv.tpp:232) on port 'gmem_param' (../gen/Hls_Layers_UpConv.tpp:232) due to limited memory ports (II = 2). Please consider using a memory core with more ports or partitioning the array.
-</td>
-<td align="left"><a href="http:///docs.xilinx.com/access/sources/dita/map?Doc_Version=2024.2%20English&url=ug1399-vitis-hls">Vitis HLS User Guide (UG1399)</a></td>
-</tr>
-<tr>
-<td align="left">127</td>
-<td align="left">Kernel</td>
-<td align="left">ADVISORY</td>
-<td align="left"><undefined></td>
-<td align="left">HLS Kernel Related</td>
-<td align="left">Accelerator.upconv_core_top.Kernel</td>
-<td align="left">**** Estimated Fmax: 344.33 MHz
-</td>
-<td align="left"><a href="http:///docs.xilinx.com/access/sources/dita/map?Doc_Version=2024.2%20English&url=ug1399-vitis-hls">Vitis HLS User Guide (UG1399)</a></td>
-</tr>
-<tr>
-<td align="left">58</td>
-<td align="left">Throughput</td>
-<td align="left">ADVISORY</td>
-<td align="left"><undefined></td>
-<td align="left">HLS Throughput Related</td>
-<td align="left">Accelerator.upconv_core_top.Throughput</td>
-<td align="left">Pipelining result : Target II = 1, Final II = 1, Depth = 13, loop 'LOAD_ROW_VITIS_LOOP_307_2'
-</td>
-<td align="left"><a href="http:///docs.xilinx.com/access/sources/dita/map?Doc_Version=2024.2%20English&url=ug1399-vitis-hls">Vitis HLS User Guide (UG1399)</a></td>
-</tr>
-<tr>
-<td align="left">71</td>
-<td align="left">Kernel</td>
-<td align="left">WARNING</td>
-<td align="left"><undefined></td>
-<td align="left">HLS Kernel Related</td>
-<td align="left">Accelerator.upconv_core_top.Kernel</td>
-<td align="left">The II Violation in module 'UpConv_Fused_Row_8_32_32_480_240_Pipeline_LOAD_PARAMS' (loop 'LOAD_PARAMS'): Unable to schedule bus request operation ('gmem_param_load_4_req', ../gen/Hls_Layers_UpConv.tpp:232) on port 'gmem_param' (../gen/Hls_Layers_UpConv.tpp:232) due to limited memory ports (II = 2). Please consider using a memory core with more ports or partitioning the array.
-</td>
-<td align="left"><a href="http:///docs.xilinx.com/access/sources/dita/map?Doc_Version=2024.2%20English&url=ug1399-vitis-hls">Vitis HLS User Guide (UG1399)</a></td>
-</tr>
-<tr>
-<td align="left">2</td>
-<td align="left">Interface</td>
-<td align="left">ADVISORY</td>
-<td align="left"><undefined></td>
-<td align="left">HLS Interface Related</td>
-<td align="left">Accelerator.upconv_core_top.Interface</td>
-<td align="left">Multiple burst writes of length 960 and bit width 256 in loop 'PIXEL_NORM'(../gen/Hls_Layers_UpConv.tpp:238:17) has been inferred on bundle 'gmem_out'. These burst requests might be further partitioned into multiple requests during RTL generation, based on max_read_burst_length or max_write_burst_length settings. (../gen/Hls_Layers_UpConv.tpp:238:17)
-</td>
-<td align="left"><a href="http:///docs.xilinx.com/access/sources/dita/map?Doc_Version=2024.2%20English&url=ug1399-vitis-hls">Vitis HLS User Guide (UG1399)</a></td>
-</tr>
-<tr>
-<td align="left">96</td>
-<td align="left">Throughput</td>
-<td align="left">ADVISORY</td>
-<td align="left"><undefined></td>
-<td align="left">HLS Throughput Related</td>
-<td align="left">Accelerator.upconv_core_top.Throughput</td>
-<td align="left">Pipelining result : Target II = 1, Final II = 1, Depth = 93, loop 'CI_LOOP'
-</td>
-<td align="left"><a href="http:///docs.xilinx.com/access/sources/dita/map?Doc_Version=2024.2%20English&url=ug1399-vitis-hls">Vitis HLS User Guide (UG1399)</a></td>
-</tr>
-<tr>
 <td align="left">47</td>
 <td align="left">Throughput</td>
 <td align="left">ADVISORY</td>
 <td align="left"><undefined></td>
 <td align="left">HLS Throughput Related</td>
 <td align="left">Accelerator.upconv_core_top.Throughput</td>
-<td align="left">Pipelining result : Target II = 1, Final II = 3, Depth = 13, loop 'LOAD_PARAMS'
-</td>
-<td align="left"><a href="http:///docs.xilinx.com/access/sources/dita/map?Doc_Version=2024.2%20English&url=ug1399-vitis-hls">Vitis HLS User Guide (UG1399)</a></td>
-</tr>
-<tr>
-<td align="left">72</td>
-<td align="left">Throughput</td>
-<td align="left">ADVISORY</td>
-<td align="left"><undefined></td>
-<td align="left">HLS Throughput Related</td>
-<td align="left">Accelerator.upconv_core_top.Throughput</td>
-<td align="left">Pipelining result : Target II = 1, Final II = 3, Depth = 13, loop 'LOAD_PARAMS'
-</td>
-<td align="left"><a href="http:///docs.xilinx.com/access/sources/dita/map?Doc_Version=2024.2%20English&url=ug1399-vitis-hls">Vitis HLS User Guide (UG1399)</a></td>
-</tr>
-<tr>
-<td align="left">16</td>
-<td align="left">Latency</td>
-<td align="left">WARNING</td>
-<td align="left"><undefined></td>
-<td align="left">HLS Latency Related</td>
-<td align="left">Accelerator.upconv_core_top.Latency</td>
-<td align="left">Cannot flatten loop 'KH_LOOP' (../gen/Hls_Layers_UpConv.tpp:154:18) in function 'UpConv_Fused_Row<8, 16, 16, 16, 16>' the outer loop is not a perfect loop because there is nontrivial logic before entering the inner loop.
-</td>
-<td align="left"><a href="http:///docs.xilinx.com/access/sources/dita/map?Doc_Version=2024.2%20English&url=ug1399-vitis-hls">Vitis HLS User Guide (UG1399)</a></td>
-</tr>
-<tr>
-<td align="left">85</td>
-<td align="left">Kernel</td>
-<td align="left">WARNING</td>
-<td align="left"><undefined></td>
-<td align="left">HLS Kernel Related</td>
-<td align="left">Accelerator.upconv_core_top.Kernel</td>
-<td align="left">The II Violation in module 'UpConv_Fused_Row_8_16_16_960_480_Pipeline_RESET_ROW_ACC' (loop 'RESET_ROW_ACC'): Unable to schedule 'store' operation 0 bit ('void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_383_write_ln121', ../gen/Hls_Layers_UpConv.tpp:121) of constant 0 on array 'void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_29' due to limited memory ports (II = 1). Please consider using a memory core with more ports or partitioning the array 'void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_29'.
-</td>
-<td align="left"><a href="http:///docs.xilinx.com/access/sources/dita/map?Doc_Version=2024.2%20English&url=ug1399-vitis-hls">Vitis HLS User Guide (UG1399)</a></td>
-</tr>
-<tr>
-<td align="left">118</td>
-<td align="left">Throughput</td>
-<td align="left">WARNING</td>
-<td align="left"><undefined></td>
-<td align="left">HLS Throughput Related</td>
-<td align="left">Accelerator.upconv_core_top.Throughput</td>
-<td align="left">The II Violation in module 'UpConv_Fused_Row_8_16_16_16_16_s' (loop 'PIXEL_NORM_BIAS_STATS'): Unable to enforce a carried dependence constraint (II = 4, distance = 1, offset = 1) between 'store' operation 0 bit ('p_ZZ16UpConv_Fused_RowILi8ELi16ELi16ELi16ELi16EEvP7ap_uintILi256EEPKS1_S4_S4_S4_S_29_write_ln247', ../gen/Hls_Layers_UpConv.tpp:247) of variable 'val', ../gen/Hls_Layers_UpConv.tpp:246 on array 'p_ZZ16UpConv_Fused_RowILi8ELi16ELi16ELi16ELi16EEvP7ap_uintILi256EEPKS1_S4_S4_S4_S' and 'load' operation 16 bit ('p_ZZ16UpConv_Fused_RowILi8ELi16ELi16ELi16ELi16EEvP7ap_uintILi256EEPKS1_S4_S4_S4_S_35', ../gen/Hls_Layers_UpConv.tpp:246) on array 'p_ZZ16UpConv_Fused_RowILi8ELi16ELi16ELi16ELi16EEvP7ap_uintILi256EEPKS1_S4_S4_S4_S'.
-</td>
-<td align="left"><a href="http:///docs.xilinx.com/access/sources/dita/map?Doc_Version=2024.2%20English&url=ug1399-vitis-hls">Vitis HLS User Guide (UG1399)</a></td>
-</tr>
-<tr>
-<td align="left">61</td>
-<td align="left">Kernel</td>
-<td align="left">WARNING</td>
-<td align="left"><undefined></td>
-<td align="left">HLS Kernel Related</td>
-<td align="left">Accelerator.upconv_core_top.Kernel</td>
-<td align="left">The II Violation in module 'UpConv_Fused_Row_8_32_32_480_240_Pipeline_RESET_ROW_ACC' (loop 'RESET_ROW_ACC'): Unable to schedule 'store' operation 0 bit ('void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_185_write_ln121', ../gen/Hls_Layers_UpConv.tpp:121) of constant 0 on array 'void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_19' due to limited memory ports (II = 2). Please consider using a memory core with more ports or partitioning the array 'void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_19'.
-</td>
-<td align="left"><a href="http:///docs.xilinx.com/access/sources/dita/map?Doc_Version=2024.2%20English&url=ug1399-vitis-hls">Vitis HLS User Guide (UG1399)</a></td>
-</tr>
-<tr>
-<td align="left">94</td>
-<td align="left">Kernel</td>
-<td align="left">WARNING</td>
-<td align="left"><undefined></td>
-<td align="left">HLS Kernel Related</td>
-<td align="left">Accelerator.upconv_core_top.Kernel</td>
-<td align="left">Estimated clock period (2.660 ns) exceeds the target (target clock period: 3.333 ns, clock uncertainty: 0.900 ns, effective delay budget: 2.433 ns).
-</td>
-<td align="left"><a href="http:///docs.xilinx.com/access/sources/dita/map?Doc_Version=2024.2%20English&url=ug1399-vitis-hls">Vitis HLS User Guide (UG1399)</a></td>
-</tr>
-<tr>
-<td align="left">5</td>
-<td align="left">Interface</td>
-<td align="left">ADVISORY</td>
-<td align="left"><undefined></td>
-<td align="left">HLS Interface Related</td>
-<td align="left">Accelerator.upconv_core_top.Interface</td>
-<td align="left">Multiple burst writes of length 1024 and bit width 256 in loop 'PIXEL_NORM'(../gen/Hls_Layers_UpConv.tpp:238:17) has been inferred on bundle 'gmem_out'. These burst requests might be further partitioned into multiple requests during RTL generation, based on max_read_burst_length or max_write_burst_length settings. (../gen/Hls_Layers_UpConv.tpp:238:17)
-</td>
-<td align="left"><a href="http:///docs.xilinx.com/access/sources/dita/map?Doc_Version=2024.2%20English&url=ug1399-vitis-hls">Vitis HLS User Guide (UG1399)</a></td>
-</tr>
-<tr>
-<td align="left">123</td>
-<td align="left">Kernel</td>
-<td align="left">WARNING</td>
-<td align="left"><undefined></td>
-<td align="left">HLS Kernel Related</td>
-<td align="left">Accelerator.upconv_core_top.Kernel</td>
-<td align="left">The critical path in module 'UpConv_Fused_Row_8_16_16_16_16_s' consists of the following:
-	'load' operation 32 bit ('sum_03_load', ../gen/Hls_Layers_UpConv.tpp:239) on local variable 'sum', ../gen/Hls_Layers_UpConv.tpp:240 [230]  (0.000 ns)
-	'select' operation 32 bit ('select_ln239_2', ../gen/Hls_Layers_UpConv.tpp:239) [241]  (0.449 ns)
-	'fadd' operation 32 bit ('sum', ../gen/Hls_Layers_UpConv.tpp:249) [352]  (2.292 ns)
-
-</td>
-<td align="left"><a href="http:///docs.xilinx.com/access/sources/dita/map?Doc_Version=2024.2%20English&url=ug1399-vitis-hls">Vitis HLS User Guide (UG1399)</a></td>
-</tr>
-<tr>
-<td align="left">38</td>
-<td align="left">Throughput</td>
-<td align="left">ADVISORY</td>
-<td align="left"><undefined></td>
-<td align="left">HLS Throughput Related</td>
-<td align="left">Accelerator.upconv_core_top.Throughput</td>
-<td align="left">Pipelining result : Target II = 1, Final II = 1, Depth = 3, loop 'LOAD_ROW0_VITIS_LOOP_296_1'
-</td>
-<td align="left"><a href="http:///docs.xilinx.com/access/sources/dita/map?Doc_Version=2024.2%20English&url=ug1399-vitis-hls">Vitis HLS User Guide (UG1399)</a></td>
-</tr>
-<tr>
-<td align="left">67</td>
-<td align="left">Kernel</td>
-<td align="left">WARNING</td>
-<td align="left"><undefined></td>
-<td align="left">HLS Kernel Related</td>
-<td align="left">Accelerator.upconv_core_top.Kernel</td>
-<td align="left">Estimated clock period (2.706 ns) exceeds the target (target clock period: 3.333 ns, clock uncertainty: 0.900 ns, effective delay budget: 2.433 ns).
-</td>
-<td align="left"><a href="http:///docs.xilinx.com/access/sources/dita/map?Doc_Version=2024.2%20English&url=ug1399-vitis-hls">Vitis HLS User Guide (UG1399)</a></td>
-</tr>
-<tr>
-<td align="left">14</td>
-<td align="left">Latency</td>
-<td align="left">WARNING</td>
-<td align="left"><undefined></td>
-<td align="left">HLS Latency Related</td>
-<td align="left">Accelerator.upconv_core_top.Latency</td>
-<td align="left">Cannot flatten loop 'WO_LOOP' (../gen/Hls_Layers_UpConv.tpp:164:26) in function 'UpConv_Fused_Row<8, 32, 32, 480, 240>' the outer loop is not a perfect loop because there is nontrivial logic before entering the inner loop.
-</td>
-<td align="left"><a href="http:///docs.xilinx.com/access/sources/dita/map?Doc_Version=2024.2%20English&url=ug1399-vitis-hls">Vitis HLS User Guide (UG1399)</a></td>
-</tr>
-<tr>
-<td align="left">108</td>
-<td align="left">Kernel</td>
-<td align="left">WARNING</td>
-<td align="left"><undefined></td>
-<td align="left">HLS Kernel Related</td>
-<td align="left">Accelerator.upconv_core_top.Kernel</td>
-<td align="left">The critical path in module 'UpConv_Fused_Row_8_16_16_960_480_Pipeline_BIAS_STATS' consists of the following:
-	'fadd' operation 32 bit ('sum', ../gen/Hls_Layers_UpConv.tpp:249) [154]  (2.292 ns)
-	'store' operation 0 bit ('sum_write_ln240', ../gen/Hls_Layers_UpConv.tpp:240) of variable 'sum', ../gen/Hls_Layers_UpConv.tpp:249 on local variable 'sum', ../gen/Hls_Layers_UpConv.tpp:240 [159]  (0.427 ns)
-
-</td>
-<td align="left"><a href="http:///docs.xilinx.com/access/sources/dita/map?Doc_Version=2024.2%20English&url=ug1399-vitis-hls">Vitis HLS User Guide (UG1399)</a></td>
-</tr>
-<tr>
-<td align="left">43</td>
-<td align="left">Throughput</td>
-<td align="left">ADVISORY</td>
-<td align="left"><undefined></td>
-<td align="left">HLS Throughput Related</td>
-<td align="left">Accelerator.upconv_core_top.Throughput</td>
-<td align="left">Pipelining result : Target II = 1, Final II = 1, Depth = 3, loop 'VITIS_LOOP_142_2_VITIS_LOOP_143_3'
-</td>
-<td align="left"><a href="http:///docs.xilinx.com/access/sources/dita/map?Doc_Version=2024.2%20English&url=ug1399-vitis-hls">Vitis HLS User Guide (UG1399)</a></td>
-</tr>
-<tr>
-<td align="left">52</td>
-<td align="left">Throughput</td>
-<td align="left">WARNING</td>
-<td align="left"><undefined></td>
-<td align="left">HLS Throughput Related</td>
-<td align="left">Accelerator.upconv_core_top.Throughput</td>
-<td align="left">The II Violation in module 'UpConv_Fused_Row_8_64_64_240_120_Pipeline_BIAS_STATS' (loop 'BIAS_STATS'): Unable to enforce a carried dependence constraint (II = 5, distance = 1, offset = 0) between 'store' operation 0 bit ('sum_write_ln240', ../gen/Hls_Layers_UpConv.tpp:240) of variable 'sum', ../gen/Hls_Layers_UpConv.tpp:249 on local variable 'sum', ../gen/Hls_Layers_UpConv.tpp:240 and 'load' operation 32 bit ('sum_load', ../gen/Hls_Layers_UpConv.tpp:249) on local variable 'sum', ../gen/Hls_Layers_UpConv.tpp:240.
-</td>
-<td align="left"><a href="http:///docs.xilinx.com/access/sources/dita/map?Doc_Version=2024.2%20English&url=ug1399-vitis-hls">Vitis HLS User Guide (UG1399)</a></td>
-</tr>
-<tr>
-<td align="left">28</td>
-<td align="left">Throughput</td>
-<td align="left">WARNING</td>
-<td align="left"><undefined></td>
-<td align="left">HLS Throughput Related</td>
-<td align="left">Accelerator.upconv_core_top.Throughput</td>
-<td align="left">The II Violation in module 'UpConv_Fused_Row_8_128_128_120_60_Pipeline_BIAS_STATS' (loop 'BIAS_STATS'): Unable to enforce a carried dependence constraint (II = 2, distance = 1, offset = 0) between 'store' operation 0 bit ('sum_03_write_ln240', ../gen/Hls_Layers_UpConv.tpp:240) of variable 'sum', ../gen/Hls_Layers_UpConv.tpp:249 on local variable 'sum', ../gen/Hls_Layers_UpConv.tpp:240 and 'load' operation 32 bit ('sum_03_load', ../gen/Hls_Layers_UpConv.tpp:249) on local variable 'sum', ../gen/Hls_Layers_UpConv.tpp:240.
-</td>
-<td align="left"><a href="http:///docs.xilinx.com/access/sources/dita/map?Doc_Version=2024.2%20English&url=ug1399-vitis-hls">Vitis HLS User Guide (UG1399)</a></td>
-</tr>
-<tr>
-<td align="left">81</td>
-<td align="left">Kernel</td>
-<td align="left">WARNING</td>
-<td align="left"><undefined></td>
-<td align="left">HLS Kernel Related</td>
-<td align="left">Accelerator.upconv_core_top.Kernel</td>
-<td align="left">The critical path in module 'UpConv_Fused_Row_8_32_32_480_240_Pipeline_BIAS_STATS' consists of the following:
-	'fadd' operation 32 bit ('sum', ../gen/Hls_Layers_UpConv.tpp:249) [154]  (2.292 ns)
-	'store' operation 0 bit ('sum_write_ln240', ../gen/Hls_Layers_UpConv.tpp:240) of variable 'sum', ../gen/Hls_Layers_UpConv.tpp:249 on local variable 'sum', ../gen/Hls_Layers_UpConv.tpp:240 [159]  (0.427 ns)
-
-</td>
-<td align="left"><a href="http:///docs.xilinx.com/access/sources/dita/map?Doc_Version=2024.2%20English&url=ug1399-vitis-hls">Vitis HLS User Guide (UG1399)</a></td>
-</tr>
-<tr>
-<td align="left">114</td>
-<td align="left">Throughput</td>
-<td align="left">ADVISORY</td>
-<td align="left"><undefined></td>
-<td align="left">HLS Throughput Related</td>
-<td align="left">Accelerator.upconv_core_top.Throughput</td>
-<td align="left">Pipelining result : Target II = NA, Final II = 1, Depth = 100, loop 'KW_LOOP_WO_LOOP'
-</td>
-<td align="left"><a href="http:///docs.xilinx.com/access/sources/dita/map?Doc_Version=2024.2%20English&url=ug1399-vitis-hls">Vitis HLS User Guide (UG1399)</a></td>
-</tr>
-<tr>
-<td align="left">57</td>
-<td align="left">Throughput</td>
-<td align="left">ADVISORY</td>
-<td align="left"><undefined></td>
-<td align="left">HLS Throughput Related</td>
-<td align="left">Accelerator.upconv_core_top.Throughput</td>
-<td align="left">Pipelining result : Target II = 1, Final II = 1, Depth = 24, loop 'NORM_WRITE'
-</td>
-<td align="left"><a href="http:///docs.xilinx.com/access/sources/dita/map?Doc_Version=2024.2%20English&url=ug1399-vitis-hls">Vitis HLS User Guide (UG1399)</a></td>
-</tr>
-<tr>
-<td align="left">90</td>
-<td align="left">Kernel</td>
-<td align="left">WARNING</td>
-<td align="left"><undefined></td>
-<td align="left">HLS Kernel Related</td>
-<td align="left">Accelerator.upconv_core_top.Kernel</td>
-<td align="left">The II Violation in module 'UpConv_Fused_Row_8_16_16_960_480_Pipeline_RESET_ROW_ACC' (loop 'RESET_ROW_ACC'): Unable to schedule 'store' operation 0 bit ('void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_407_write_ln121', ../gen/Hls_Layers_UpConv.tpp:121) of constant 0 on array 'void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_29' due to limited memory ports (II = 13). Please consider using a memory core with more ports or partitioning the array 'void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_29'.
-</td>
-<td align="left"><a href="http:///docs.xilinx.com/access/sources/dita/map?Doc_Version=2024.2%20English&url=ug1399-vitis-hls">Vitis HLS User Guide (UG1399)</a></td>
-</tr>
-<tr>
-<td align="left">1</td>
-<td align="left">Interface</td>
-<td align="left">ADVISORY</td>
-<td align="left"><undefined></td>
-<td align="left">HLS Interface Related</td>
-<td align="left">Accelerator.upconv_core_top.Interface</td>
-<td align="left">Multiple burst reads of length 259200 and bit width 256 in loop 'TILE_LOOP'(../gen/Hls_Layers_UpConv.tpp:135:13) has been inferred on bundle 'gmem_weight'. These burst requests might be further partitioned into multiple requests during RTL generation, based on max_read_burst_length or max_write_burst_length settings. (../gen/Hls_Layers_UpConv.tpp:135:13)
-</td>
-<td align="left"><a href="http:///docs.xilinx.com/access/sources/dita/map?Doc_Version=2024.2%20English&url=ug1399-vitis-hls">Vitis HLS User Guide (UG1399)</a></td>
-</tr>
-<tr>
-<td align="left">103</td>
-<td align="left">Throughput</td>
-<td align="left">WARNING</td>
-<td align="left"><undefined></td>
-<td align="left">HLS Throughput Related</td>
-<td align="left">Accelerator.upconv_core_top.Throughput</td>
-<td align="left">The II Violation in module 'UpConv_Fused_Row_8_16_16_960_480_Pipeline_BIAS_STATS' (loop 'BIAS_STATS'): Unable to enforce a carried dependence constraint (II = 4, distance = 1, offset = 0) between 'store' operation 0 bit ('sum_write_ln240', ../gen/Hls_Layers_UpConv.tpp:240) of variable 'sum', ../gen/Hls_Layers_UpConv.tpp:249 on local variable 'sum', ../gen/Hls_Layers_UpConv.tpp:240 and 'load' operation 32 bit ('sum_load', ../gen/Hls_Layers_UpConv.tpp:249) on local variable 'sum', ../gen/Hls_Layers_UpConv.tpp:240.
-</td>
-<td align="left"><a href="http:///docs.xilinx.com/access/sources/dita/map?Doc_Version=2024.2%20English&url=ug1399-vitis-hls">Vitis HLS User Guide (UG1399)</a></td>
-</tr>
-<tr>
-<td align="left">34</td>
-<td align="left">Kernel</td>
-<td align="left">WARNING</td>
-<td align="left"><undefined></td>
-<td align="left">HLS Kernel Related</td>
-<td align="left">Accelerator.upconv_core_top.Kernel</td>
-<td align="left">Estimated clock period (2.719 ns) exceeds the target (target clock period: 3.333 ns, clock uncertainty: 0.900 ns, effective delay budget: 2.433 ns).
-</td>
-<td align="left"><a href="http:///docs.xilinx.com/access/sources/dita/map?Doc_Version=2024.2%20English&url=ug1399-vitis-hls">Vitis HLS User Guide (UG1399)</a></td>
-</tr>
-<tr>
-<td align="left">79</td>
-<td align="left">Throughput</td>
-<td align="left">ADVISORY</td>
-<td align="left"><undefined></td>
-<td align="left">HLS Throughput Related</td>
-<td align="left">Accelerator.upconv_core_top.Throughput</td>
-<td align="left">Pipelining result : Target II = 1, Final II = 7, Depth = 25, loop 'BIAS_STATS'
-</td>
-<td align="left"><a href="http:///docs.xilinx.com/access/sources/dita/map?Doc_Version=2024.2%20English&url=ug1399-vitis-hls">Vitis HLS User Guide (UG1399)</a></td>
-</tr>
-<tr>
-<td align="left">10</td>
-<td align="left">Interface</td>
-<td align="left">ADVISORY</td>
-<td align="left"><undefined></td>
-<td align="left">HLS Interface Related</td>
-<td align="left">Accelerator.upconv_core_top.Interface</td>
-<td align="left">Multiple burst reads of length 1024 and bit width 256 in loop 'LOAD_ROW0'(../gen/Hls_Layers_UpConv.tpp:295:16) has been inferred on bundle 'gmem_in'. These burst requests might be further partitioned into multiple requests during RTL generation, based on max_read_burst_length or max_write_burst_length settings. (../gen/Hls_Layers_UpConv.tpp:295:16)
-</td>
-<td align="left"><a href="http:///docs.xilinx.com/access/sources/dita/map?Doc_Version=2024.2%20English&url=ug1399-vitis-hls">Vitis HLS User Guide (UG1399)</a></td>
-</tr>
-<tr>
-<td align="left">104</td>
-<td align="left">Throughput</td>
-<td align="left">WARNING</td>
-<td align="left"><undefined></td>
-<td align="left">HLS Throughput Related</td>
-<td align="left">Accelerator.upconv_core_top.Throughput</td>
-<td align="left">The II Violation in module 'UpConv_Fused_Row_8_16_16_960_480_Pipeline_BIAS_STATS' (loop 'BIAS_STATS'): Unable to enforce a carried dependence constraint (II = 5, distance = 1, offset = 0) between 'store' operation 0 bit ('sum_write_ln240', ../gen/Hls_Layers_UpConv.tpp:240) of variable 'sum', ../gen/Hls_Layers_UpConv.tpp:249 on local variable 'sum', ../gen/Hls_Layers_UpConv.tpp:240 and 'load' operation 32 bit ('sum_load', ../gen/Hls_Layers_UpConv.tpp:249) on local variable 'sum', ../gen/Hls_Layers_UpConv.tpp:240.
-</td>
-<td align="left"><a href="http:///docs.xilinx.com/access/sources/dita/map?Doc_Version=2024.2%20English&url=ug1399-vitis-hls">Vitis HLS User Guide (UG1399)</a></td>
-</tr>
-<tr>
-<td align="left">23</td>
-<td align="left">Throughput</td>
-<td align="left">ADVISORY</td>
-<td align="left"><undefined></td>
-<td align="left">HLS Throughput Related</td>
-<td align="left">Accelerator.upconv_core_top.Throughput</td>
-<td align="left">Pipelining result : Target II = 1, Final II = 1, Depth = 93, loop 'CI_LOOP'
-</td>
-<td align="left"><a href="http:///docs.xilinx.com/access/sources/dita/map?Doc_Version=2024.2%20English&url=ug1399-vitis-hls">Vitis HLS User Guide (UG1399)</a></td>
-</tr>
-<tr>
-<td align="left">117</td>
-<td align="left">Throughput</td>
-<td align="left">WARNING</td>
-<td align="left"><undefined></td>
-<td align="left">HLS Throughput Related</td>
-<td align="left">Accelerator.upconv_core_top.Throughput</td>
-<td align="left">The II Violation in module 'UpConv_Fused_Row_8_16_16_16_16_s' (loop 'PIXEL_NORM_BIAS_STATS'): Unable to enforce a carried dependence constraint (II = 3, distance = 1, offset = 1) between 'store' operation 0 bit ('p_ZZ16UpConv_Fused_RowILi8ELi16ELi16ELi16ELi16EEvP7ap_uintILi256EEPKS1_S4_S4_S4_S_29_write_ln247', ../gen/Hls_Layers_UpConv.tpp:247) of variable 'val', ../gen/Hls_Layers_UpConv.tpp:246 on array 'p_ZZ16UpConv_Fused_RowILi8ELi16ELi16ELi16ELi16EEvP7ap_uintILi256EEPKS1_S4_S4_S4_S' and 'load' operation 16 bit ('p_ZZ16UpConv_Fused_RowILi8ELi16ELi16ELi16ELi16EEvP7ap_uintILi256EEPKS1_S4_S4_S4_S_35', ../gen/Hls_Layers_UpConv.tpp:246) on array 'p_ZZ16UpConv_Fused_RowILi8ELi16ELi16ELi16ELi16EEvP7ap_uintILi256EEPKS1_S4_S4_S4_S'.
-</td>
-<td align="left"><a href="http:///docs.xilinx.com/access/sources/dita/map?Doc_Version=2024.2%20English&url=ug1399-vitis-hls">Vitis HLS User Guide (UG1399)</a></td>
-</tr>
-<tr>
-<td align="left">48</td>
-<td align="left">Throughput</td>
-<td align="left">WARNING</td>
-<td align="left"><undefined></td>
-<td align="left">HLS Throughput Related</td>
-<td align="left">Accelerator.upconv_core_top.Throughput</td>
-<td align="left">The II Violation in module 'UpConv_Fused_Row_8_64_64_240_120_Pipeline_BIAS_STATS' (loop 'BIAS_STATS'): Unable to enforce a carried dependence constraint (II = 1, distance = 1, offset = 0) between 'store' operation 0 bit ('sum_write_ln240', ../gen/Hls_Layers_UpConv.tpp:240) of variable 'sum', ../gen/Hls_Layers_UpConv.tpp:249 on local variable 'sum', ../gen/Hls_Layers_UpConv.tpp:240 and 'load' operation 32 bit ('sum_load', ../gen/Hls_Layers_UpConv.tpp:249) on local variable 'sum', ../gen/Hls_Layers_UpConv.tpp:240.
-</td>
-<td align="left"><a href="http:///docs.xilinx.com/access/sources/dita/map?Doc_Version=2024.2%20English&url=ug1399-vitis-hls">Vitis HLS User Guide (UG1399)</a></td>
-</tr>
-<tr>
-<td align="left">24</td>
-<td align="left">Kernel</td>
-<td align="left">WARNING</td>
-<td align="left"><undefined></td>
-<td align="left">HLS Kernel Related</td>
-<td align="left">Accelerator.upconv_core_top.Kernel</td>
-<td align="left">The II Violation in module 'UpConv_Fused_Row_8_128_128_120_60_Pipeline_LOAD_PARAMS' (loop 'LOAD_PARAMS'): Unable to schedule bus request operation ('gmem_param_load_9_req', ../gen/Hls_Layers_UpConv.tpp:231) on port 'gmem_param' (../gen/Hls_Layers_UpConv.tpp:231) due to limited memory ports (II = 1). Please consider using a memory core with more ports or partitioning the array.
-</td>
-<td align="left"><a href="http:///docs.xilinx.com/access/sources/dita/map?Doc_Version=2024.2%20English&url=ug1399-vitis-hls">Vitis HLS User Guide (UG1399)</a></td>
-</tr>
-<tr>
-<td align="left">93</td>
-<td align="left">Throughput</td>
-<td align="left">ADVISORY</td>
-<td align="left"><undefined></td>
-<td align="left">HLS Throughput Related</td>
-<td align="left">Accelerator.upconv_core_top.Throughput</td>
-<td align="left">Pipelining result : Target II = 1, Final II = 1, Depth = 3, loop 'PRELOAD_W_VITIS_LOOP_142_2_VITIS_LOOP_143_3'
-</td>
-<td align="left"><a href="http:///docs.xilinx.com/access/sources/dita/map?Doc_Version=2024.2%20English&url=ug1399-vitis-hls">Vitis HLS User Guide (UG1399)</a></td>
-</tr>
-<tr>
-<td align="left">126</td>
-<td align="left">Kernel</td>
-<td align="left">ADVISORY</td>
-<td align="left"><undefined></td>
-<td align="left">HLS Kernel Related</td>
-<td align="left">Accelerator.upconv_core_top.Kernel</td>
-<td align="left">**** Loop Constraint Status: All loop constraints were NOT satisfied.
-</td>
-<td align="left"><a href="http:///docs.xilinx.com/access/sources/dita/map?Doc_Version=2024.2%20English&url=ug1399-vitis-hls">Vitis HLS User Guide (UG1399)</a></td>
-</tr>
-<tr>
-<td align="left">37</td>
-<td align="left">Throughput</td>
-<td align="left">ADVISORY</td>
-<td align="left"><undefined></td>
-<td align="left">HLS Throughput Related</td>
-<td align="left">Accelerator.upconv_core_top.Throughput</td>
-<td align="left">Pipelining result : Target II = 1, Final II = 1, Depth = 12, loop 'LOAD_ROW_VITIS_LOOP_307_2'
-</td>
-<td align="left"><a href="http:///docs.xilinx.com/access/sources/dita/map?Doc_Version=2024.2%20English&url=ug1399-vitis-hls">Vitis HLS User Guide (UG1399)</a></td>
-</tr>
-<tr>
-<td align="left">70</td>
-<td align="left">Kernel</td>
-<td align="left">WARNING</td>
-<td align="left"><undefined></td>
-<td align="left">HLS Kernel Related</td>
-<td align="left">Accelerator.upconv_core_top.Kernel</td>
-<td align="left">The II Violation in module 'UpConv_Fused_Row_8_32_32_480_240_Pipeline_LOAD_PARAMS' (loop 'LOAD_PARAMS'): Unable to schedule bus request operation ('gmem_param_load_3_req', ../gen/Hls_Layers_UpConv.tpp:231) on port 'gmem_param' (../gen/Hls_Layers_UpConv.tpp:231) due to limited memory ports (II = 1). Please consider using a memory core with more ports or partitioning the array.
-</td>
-<td align="left"><a href="http:///docs.xilinx.com/access/sources/dita/map?Doc_Version=2024.2%20English&url=ug1399-vitis-hls">Vitis HLS User Guide (UG1399)</a></td>
-</tr>
-<tr>
-<td align="left">13</td>
-<td align="left">Latency</td>
-<td align="left">WARNING</td>
-<td align="left"><undefined></td>
-<td align="left">HLS Latency Related</td>
-<td align="left">Accelerator.upconv_core_top.Latency</td>
-<td align="left">Cannot flatten loop 'WO_LOOP' (../gen/Hls_Layers_UpConv.tpp:164:26) in function 'UpConv_Fused_Row<8, 64, 64, 240, 120>' the outer loop is not a perfect loop because there is nontrivial logic before entering the inner loop.
-</td>
-<td align="left"><a href="http:///docs.xilinx.com/access/sources/dita/map?Doc_Version=2024.2%20English&url=ug1399-vitis-hls">Vitis HLS User Guide (UG1399)</a></td>
-</tr>
-<tr>
-<td align="left">99</td>
-<td align="left">Throughput</td>
-<td align="left">ADVISORY</td>
-<td align="left"><undefined></td>
-<td align="left">HLS Throughput Related</td>
-<td align="left">Accelerator.upconv_core_top.Throughput</td>
-<td align="left">Pipelining result : Target II = 1, Final II = 3, Depth = 13, loop 'LOAD_PARAMS'
-</td>
-<td align="left"><a href="http:///docs.xilinx.com/access/sources/dita/map?Doc_Version=2024.2%20English&url=ug1399-vitis-hls">Vitis HLS User Guide (UG1399)</a></td>
-</tr>
-<tr>
-<td align="left">46</td>
-<td align="left">Kernel</td>
-<td align="left">WARNING</td>
-<td align="left"><undefined></td>
-<td align="left">HLS Kernel Related</td>
-<td align="left">Accelerator.upconv_core_top.Kernel</td>
-<td align="left">The II Violation in module 'UpConv_Fused_Row_8_64_64_240_120_Pipeline_LOAD_PARAMS' (loop 'LOAD_PARAMS'): Unable to schedule bus request operation ('gmem_param_load_2_req', ../gen/Hls_Layers_UpConv.tpp:232) on port 'gmem_param' (../gen/Hls_Layers_UpConv.tpp:232) due to limited memory ports (II = 2). Please consider using a memory core with more ports or partitioning the array.
-</td>
-<td align="left"><a href="http:///docs.xilinx.com/access/sources/dita/map?Doc_Version=2024.2%20English&url=ug1399-vitis-hls">Vitis HLS User Guide (UG1399)</a></td>
-</tr>
-<tr>
-<td align="left">75</td>
-<td align="left">Throughput</td>
-<td align="left">WARNING</td>
-<td align="left"><undefined></td>
-<td align="left">HLS Throughput Related</td>
-<td align="left">Accelerator.upconv_core_top.Throughput</td>
-<td align="left">The II Violation in module 'UpConv_Fused_Row_8_32_32_480_240_Pipeline_BIAS_STATS' (loop 'BIAS_STATS'): Unable to enforce a carried dependence constraint (II = 3, distance = 1, offset = 0) between 'store' operation 0 bit ('sum_write_ln240', ../gen/Hls_Layers_UpConv.tpp:240) of variable 'sum', ../gen/Hls_Layers_UpConv.tpp:249 on local variable 'sum', ../gen/Hls_Layers_UpConv.tpp:240 and 'load' operation 32 bit ('sum_load', ../gen/Hls_Layers_UpConv.tpp:249) on local variable 'sum', ../gen/Hls_Layers_UpConv.tpp:240.
-</td>
-<td align="left"><a href="http:///docs.xilinx.com/access/sources/dita/map?Doc_Version=2024.2%20English&url=ug1399-vitis-hls">Vitis HLS User Guide (UG1399)</a></td>
-</tr>
-<tr>
-<td align="left">84</td>
-<td align="left">Throughput</td>
-<td align="left">ADVISORY</td>
-<td align="left"><undefined></td>
-<td align="left">HLS Throughput Related</td>
-<td align="left">Accelerator.upconv_core_top.Throughput</td>
-<td align="left">Pipelining result : Target II = 1, Final II = 1, Depth = 3, loop 'LOAD_ROW0_VITIS_LOOP_296_1'
-</td>
-<td align="left"><a href="http:///docs.xilinx.com/access/sources/dita/map?Doc_Version=2024.2%20English&url=ug1399-vitis-hls">Vitis HLS User Guide (UG1399)</a></td>
-</tr>
-<tr>
-<td align="left">19</td>
-<td align="left">Throughput</td>
-<td align="left">ADVISORY</td>
-<td align="left"><undefined></td>
-<td align="left">HLS Throughput Related</td>
-<td align="left">Accelerator.upconv_core_top.Throughput</td>
-<td align="left">Pipelining result : Target II = 1, Final II = 1, Depth = 3, loop 'LOAD_ROW0_VITIS_LOOP_296_1'
-</td>
-<td align="left"><a href="http:///docs.xilinx.com/access/sources/dita/map?Doc_Version=2024.2%20English&url=ug1399-vitis-hls">Vitis HLS User Guide (UG1399)</a></td>
-</tr>
-<tr>
-<td align="left">113</td>
-<td align="left">Throughput</td>
-<td align="left">ADVISORY</td>
-<td align="left"><undefined></td>
-<td align="left">HLS Throughput Related</td>
-<td align="left">Accelerator.upconv_core_top.Throughput</td>
-<td align="left">Pipelining result : Target II = NA, Final II = 1, Depth = 3, loop 'PRELOAD_W_VITIS_LOOP_142_2'
-</td>
-<td align="left"><a href="http:///docs.xilinx.com/access/sources/dita/map?Doc_Version=2024.2%20English&url=ug1399-vitis-hls">Vitis HLS User Guide (UG1399)</a></td>
-</tr>
-<tr>
-<td align="left">60</td>
-<td align="left">Kernel</td>
-<td align="left">WARNING</td>
-<td align="left"><undefined></td>
-<td align="left">HLS Kernel Related</td>
-<td align="left">Accelerator.upconv_core_top.Kernel</td>
-<td align="left">The II Violation in module 'UpConv_Fused_Row_8_32_32_480_240_Pipeline_RESET_ROW_ACC' (loop 'RESET_ROW_ACC'): Unable to schedule 'store' operation 0 bit ('void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_183_write_ln121', ../gen/Hls_Layers_UpConv.tpp:121) of constant 0 on array 'void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_19' due to limited memory ports (II = 1). Please consider using a memory core with more ports or partitioning the array 'void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_19'.
-</td>
-<td align="left"><a href="http:///docs.xilinx.com/access/sources/dita/map?Doc_Version=2024.2%20English&url=ug1399-vitis-hls">Vitis HLS User Guide (UG1399)</a></td>
-</tr>
-<tr>
-<td align="left">4</td>
-<td align="left">Interface</td>
-<td align="left">ADVISORY</td>
-<td align="left"><undefined></td>
-<td align="left">HLS Interface Related</td>
-<td align="left">Accelerator.upconv_core_top.Interface</td>
-<td align="left">Multiple burst reads of length 135 and bit width 256 in loop 'VITIS_LOOP_142_2'(../gen/Hls_Layers_UpConv.tpp:142:35) has been inferred on bundle 'gmem_weight'. These burst requests might be further partitioned into multiple requests during RTL generation, based on max_read_burst_length or max_write_burst_length settings. (../gen/Hls_Layers_UpConv.tpp:142:35)
-</td>
-<td align="left"><a href="http:///docs.xilinx.com/access/sources/dita/map?Doc_Version=2024.2%20English&url=ug1399-vitis-hls">Vitis HLS User Guide (UG1399)</a></td>
-</tr>
-<tr>
-<td align="left">89</td>
-<td align="left">Kernel</td>
-<td align="left">WARNING</td>
-<td align="left"><undefined></td>
-<td align="left">HLS Kernel Related</td>
-<td align="left">Accelerator.upconv_core_top.Kernel</td>
-<td align="left">The II Violation in module 'UpConv_Fused_Row_8_16_16_960_480_Pipeline_RESET_ROW_ACC' (loop 'RESET_ROW_ACC'): Unable to schedule 'store' operation 0 bit ('void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_403_write_ln121', ../gen/Hls_Layers_UpConv.tpp:121) of constant 0 on array 'void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_29' due to limited memory ports (II = 11). Please consider using a memory core with more ports or partitioning the array 'void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_29'.
-</td>
-<td align="left"><a href="http:///docs.xilinx.com/access/sources/dita/map?Doc_Version=2024.2%20English&url=ug1399-vitis-hls">Vitis HLS User Guide (UG1399)</a></td>
-</tr>
-<tr>
-<td align="left">122</td>
-<td align="left">Kernel</td>
-<td align="left">WARNING</td>
-<td align="left"><undefined></td>
-<td align="left">HLS Kernel Related</td>
-<td align="left">Accelerator.upconv_core_top.Kernel</td>
-<td align="left">Estimated clock period (2.741 ns) exceeds the target (target clock period: 3.333 ns, clock uncertainty: 0.900 ns, effective delay budget: 2.433 ns).
-</td>
-<td align="left"><a href="http:///docs.xilinx.com/access/sources/dita/map?Doc_Version=2024.2%20English&url=ug1399-vitis-hls">Vitis HLS User Guide (UG1399)</a></td>
-</tr>
-<tr>
-<td align="left">33</td>
-<td align="left">Throughput</td>
-<td align="left">ADVISORY</td>
-<td align="left"><undefined></td>
-<td align="left">HLS Throughput Related</td>
-<td align="left">Accelerator.upconv_core_top.Throughput</td>
-<td align="left">Pipelining result : Target II = 1, Final II = 7, Depth = 25, loop 'BIAS_STATS'
-</td>
-<td align="left"><a href="http:///docs.xilinx.com/access/sources/dita/map?Doc_Version=2024.2%20English&url=ug1399-vitis-hls">Vitis HLS User Guide (UG1399)</a></td>
-</tr>
-<tr>
-<td align="left">66</td>
-<td align="left">Throughput</td>
-<td align="left">ADVISORY</td>
-<td align="left"><undefined></td>
-<td align="left">HLS Throughput Related</td>
-<td align="left">Accelerator.upconv_core_top.Throughput</td>
-<td align="left">Pipelining result : Target II = 1, Final II = 1, Depth = 3, loop 'PRELOAD_W_VITIS_LOOP_142_2_VITIS_LOOP_143_3'
-</td>
-<td align="left"><a href="http:///docs.xilinx.com/access/sources/dita/map?Doc_Version=2024.2%20English&url=ug1399-vitis-hls">Vitis HLS User Guide (UG1399)</a></td>
-</tr>
-<tr>
-<td align="left">9</td>
-<td align="left">Interface</td>
-<td align="left">ADVISORY</td>
-<td align="left"><undefined></td>
-<td align="left">HLS Interface Related</td>
-<td align="left">Accelerator.upconv_core_top.Interface</td>
-<td align="left">Multiple burst reads of length 960 and bit width 256 in loop 'LOAD_ROW0'(../gen/Hls_Layers_UpConv.tpp:295:16) has been inferred on bundle 'gmem_in'. These burst requests might be further partitioned into multiple requests during RTL generation, based on max_read_burst_length or max_write_burst_length settings. (../gen/Hls_Layers_UpConv.tpp:295:16)
-</td>
-<td align="left"><a href="http:///docs.xilinx.com/access/sources/dita/map?Doc_Version=2024.2%20English&url=ug1399-vitis-hls">Vitis HLS User Guide (UG1399)</a></td>
-</tr>
-<tr>
-<td align="left">111</td>
-<td align="left">Throughput</td>
-<td align="left">ADVISORY</td>
-<td align="left"><undefined></td>
-<td align="left">HLS Throughput Related</td>
-<td align="left">Accelerator.upconv_core_top.Throughput</td>
-<td align="left">Pipelining result : Target II = NA, Final II = 1, Depth = 3, loop 'LOAD_ROW0'
-</td>
-<td align="left"><a href="http:///docs.xilinx.com/access/sources/dita/map?Doc_Version=2024.2%20English&url=ug1399-vitis-hls">Vitis HLS User Guide (UG1399)</a></td>
-</tr>
-<tr>
-<td align="left">42</td>
-<td align="left">Throughput</td>
-<td align="left">ADVISORY</td>
-<td align="left"><undefined></td>
-<td align="left">HLS Throughput Related</td>
-<td align="left">Accelerator.upconv_core_top.Throughput</td>
-<td align="left">Pipelining result : Target II = 1, Final II = 4, Depth = 4, loop 'RESET_ROW_ACC'
-</td>
-<td align="left"><a href="http:///docs.xilinx.com/access/sources/dita/map?Doc_Version=2024.2%20English&url=ug1399-vitis-hls">Vitis HLS User Guide (UG1399)</a></td>
-</tr>
-<tr>
-<td align="left">55</td>
-<td align="left">Kernel</td>
-<td align="left">WARNING</td>
-<td align="left"><undefined></td>
-<td align="left">HLS Kernel Related</td>
-<td align="left">Accelerator.upconv_core_top.Kernel</td>
-<td align="left">Estimated clock period (2.719 ns) exceeds the target (target clock period: 3.333 ns, clock uncertainty: 0.900 ns, effective delay budget: 2.433 ns).
-</td>
-<td align="left"><a href="http:///docs.xilinx.com/access/sources/dita/map?Doc_Version=2024.2%20English&url=ug1399-vitis-hls">Vitis HLS User Guide (UG1399)</a></td>
-</tr>
-<tr>
-<td align="left">80</td>
-<td align="left">Kernel</td>
-<td align="left">WARNING</td>
-<td align="left"><undefined></td>
-<td align="left">HLS Kernel Related</td>
-<td align="left">Accelerator.upconv_core_top.Kernel</td>
-<td align="left">Estimated clock period (2.719 ns) exceeds the target (target clock period: 3.333 ns, clock uncertainty: 0.900 ns, effective delay budget: 2.433 ns).
-</td>
-<td align="left"><a href="http:///docs.xilinx.com/access/sources/dita/map?Doc_Version=2024.2%20English&url=ug1399-vitis-hls">Vitis HLS User Guide (UG1399)</a></td>
-</tr>
-<tr>
-<td align="left">31</td>
-<td align="left">Throughput</td>
-<td align="left">WARNING</td>
-<td align="left"><undefined></td>
-<td align="left">HLS Throughput Related</td>
-<td align="left">Accelerator.upconv_core_top.Throughput</td>
-<td align="left">The II Violation in module 'UpConv_Fused_Row_8_128_128_120_60_Pipeline_BIAS_STATS' (loop 'BIAS_STATS'): Unable to enforce a carried dependence constraint (II = 5, distance = 1, offset = 0) between 'store' operation 0 bit ('sum_03_write_ln240', ../gen/Hls_Layers_UpConv.tpp:240) of variable 'sum', ../gen/Hls_Layers_UpConv.tpp:249 on local variable 'sum', ../gen/Hls_Layers_UpConv.tpp:240 and 'load' operation 32 bit ('sum_03_load', ../gen/Hls_Layers_UpConv.tpp:249) on local variable 'sum', ../gen/Hls_Layers_UpConv.tpp:240.
-</td>
-<td align="left"><a href="http:///docs.xilinx.com/access/sources/dita/map?Doc_Version=2024.2%20English&url=ug1399-vitis-hls">Vitis HLS User Guide (UG1399)</a></td>
-</tr>
-<tr>
-<td align="left">125</td>
-<td align="left">Interface</td>
-<td align="left">ADVISORY</td>
-<td align="left"><undefined></td>
-<td align="left">HLS Interface Related</td>
-<td align="left">Accelerator.upconv_core_top.Interface</td>
-<td align="left">Design has inferred MAXI bursts and missed bursts, see Vitis HLS GUI synthesis summary report for detailed information.
-</td>
-<td align="left"><a href="http:///docs.xilinx.com/access/sources/dita/map?Doc_Version=2024.2%20English&url=ug1399-vitis-hls">Vitis HLS User Guide (UG1399)</a></td>
-</tr>
-<tr>
-<td align="left">56</td>
-<td align="left">Kernel</td>
-<td align="left">WARNING</td>
-<td align="left"><undefined></td>
-<td align="left">HLS Kernel Related</td>
-<td align="left">Accelerator.upconv_core_top.Kernel</td>
-<td align="left">The critical path in module 'UpConv_Fused_Row_8_64_64_240_120_Pipeline_BIAS_STATS' consists of the following:
-	'fadd' operation 32 bit ('sum', ../gen/Hls_Layers_UpConv.tpp:249) [153]  (2.292 ns)
-	'store' operation 0 bit ('sum_write_ln240', ../gen/Hls_Layers_UpConv.tpp:240) of variable 'sum', ../gen/Hls_Layers_UpConv.tpp:249 on local variable 'sum', ../gen/Hls_Layers_UpConv.tpp:240 [158]  (0.427 ns)
-
-</td>
-<td align="left"><a href="http:///docs.xilinx.com/access/sources/dita/map?Doc_Version=2024.2%20English&url=ug1399-vitis-hls">Vitis HLS User Guide (UG1399)</a></td>
-</tr>
-<tr>
-<td align="left">69</td>
-<td align="left">Throughput</td>
-<td align="left">ADVISORY</td>
-<td align="left"><undefined></td>
-<td align="left">HLS Throughput Related</td>
-<td align="left">Accelerator.upconv_core_top.Throughput</td>
-<td align="left">Pipelining result : Target II = 1, Final II = 1, Depth = 93, loop 'CI_LOOP'
-</td>
-<td align="left"><a href="http:///docs.xilinx.com/access/sources/dita/map?Doc_Version=2024.2%20English&url=ug1399-vitis-hls">Vitis HLS User Guide (UG1399)</a></td>
-</tr>
-<tr>
-<td align="left">102</td>
-<td align="left">Throughput</td>
-<td align="left">WARNING</td>
-<td align="left"><undefined></td>
-<td align="left">HLS Throughput Related</td>
-<td align="left">Accelerator.upconv_core_top.Throughput</td>
-<td align="left">The II Violation in module 'UpConv_Fused_Row_8_16_16_960_480_Pipeline_BIAS_STATS' (loop 'BIAS_STATS'): Unable to enforce a carried dependence constraint (II = 3, distance = 1, offset = 0) between 'store' operation 0 bit ('sum_write_ln240', ../gen/Hls_Layers_UpConv.tpp:240) of variable 'sum', ../gen/Hls_Layers_UpConv.tpp:249 on local variable 'sum', ../gen/Hls_Layers_UpConv.tpp:240 and 'load' operation 32 bit ('sum_load', ../gen/Hls_Layers_UpConv.tpp:249) on local variable 'sum', ../gen/Hls_Layers_UpConv.tpp:240.
-</td>
-<td align="left"><a href="http:///docs.xilinx.com/access/sources/dita/map?Doc_Version=2024.2%20English&url=ug1399-vitis-hls">Vitis HLS User Guide (UG1399)</a></td>
-</tr>
-<tr>
-<td align="left">45</td>
-<td align="left">Kernel</td>
-<td align="left">WARNING</td>
-<td align="left"><undefined></td>
-<td align="left">HLS Kernel Related</td>
-<td align="left">Accelerator.upconv_core_top.Kernel</td>
-<td align="left">The II Violation in module 'UpConv_Fused_Row_8_64_64_240_120_Pipeline_LOAD_PARAMS' (loop 'LOAD_PARAMS'): Unable to schedule bus request operation ('gmem_param_load_1_req', ../gen/Hls_Layers_UpConv.tpp:231) on port 'gmem_param' (../gen/Hls_Layers_UpConv.tpp:231) due to limited memory ports (II = 1). Please consider using a memory core with more ports or partitioning the array.
-</td>
-<td align="left"><a href="http:///docs.xilinx.com/access/sources/dita/map?Doc_Version=2024.2%20English&url=ug1399-vitis-hls">Vitis HLS User Guide (UG1399)</a></td>
-</tr>
-<tr>
-<td align="left">78</td>
-<td align="left">Throughput</td>
-<td align="left">WARNING</td>
-<td align="left"><undefined></td>
-<td align="left">HLS Throughput Related</td>
-<td align="left">Accelerator.upconv_core_top.Throughput</td>
-<td align="left">The II Violation in module 'UpConv_Fused_Row_8_32_32_480_240_Pipeline_BIAS_STATS' (loop 'BIAS_STATS'): Unable to enforce a carried dependence constraint (II = 6, distance = 1, offset = 0) between 'store' operation 0 bit ('sum_write_ln240', ../gen/Hls_Layers_UpConv.tpp:240) of variable 'sum', ../gen/Hls_Layers_UpConv.tpp:249 on local variable 'sum', ../gen/Hls_Layers_UpConv.tpp:240 and 'load' operation 32 bit ('sum_load', ../gen/Hls_Layers_UpConv.tpp:249) on local variable 'sum', ../gen/Hls_Layers_UpConv.tpp:240.
-</td>
-<td align="left"><a href="http:///docs.xilinx.com/access/sources/dita/map?Doc_Version=2024.2%20English&url=ug1399-vitis-hls">Vitis HLS User Guide (UG1399)</a></td>
-</tr>
-<tr>
-<td align="left">107</td>
-<td align="left">Kernel</td>
-<td align="left">WARNING</td>
-<td align="left"><undefined></td>
-<td align="left">HLS Kernel Related</td>
-<td align="left">Accelerator.upconv_core_top.Kernel</td>
-<td align="left">Estimated clock period (2.719 ns) exceeds the target (target clock period: 3.333 ns, clock uncertainty: 0.900 ns, effective delay budget: 2.433 ns).
-</td>
-<td align="left"><a href="http:///docs.xilinx.com/access/sources/dita/map?Doc_Version=2024.2%20English&url=ug1399-vitis-hls">Vitis HLS User Guide (UG1399)</a></td>
-</tr>
-<tr>
-<td align="left">22</td>
-<td align="left">Throughput</td>
-<td align="left">ADVISORY</td>
-<td align="left"><undefined></td>
-<td align="left">HLS Throughput Related</td>
-<td align="left">Accelerator.upconv_core_top.Throughput</td>
-<td align="left">Pipelining result : Target II = 1, Final II = 1, Depth = 3, loop 'VITIS_LOOP_142_2_VITIS_LOOP_143_3'
-</td>
-<td align="left"><a href="http:///docs.xilinx.com/access/sources/dita/map?Doc_Version=2024.2%20English&url=ug1399-vitis-hls">Vitis HLS User Guide (UG1399)</a></td>
-</tr>
-<tr>
-<td align="left">116</td>
-<td align="left">Throughput</td>
-<td align="left">WARNING</td>
-<td align="left"><undefined></td>
-<td align="left">HLS Throughput Related</td>
-<td align="left">Accelerator.upconv_core_top.Throughput</td>
-<td align="left">The II Violation in module 'UpConv_Fused_Row_8_16_16_16_16_s' (loop 'PIXEL_NORM_BIAS_STATS'): Unable to enforce a carried dependence constraint (II = 2, distance = 1, offset = 1) between 'store' operation 0 bit ('p_ZZ16UpConv_Fused_RowILi8ELi16ELi16ELi16ELi16EEvP7ap_uintILi256EEPKS1_S4_S4_S4_S_29_write_ln247', ../gen/Hls_Layers_UpConv.tpp:247) of variable 'val', ../gen/Hls_Layers_UpConv.tpp:246 on array 'p_ZZ16UpConv_Fused_RowILi8ELi16ELi16ELi16ELi16EEvP7ap_uintILi256EEPKS1_S4_S4_S4_S' and 'load' operation 16 bit ('p_ZZ16UpConv_Fused_RowILi8ELi16ELi16ELi16ELi16EEvP7ap_uintILi256EEPKS1_S4_S4_S4_S_35', ../gen/Hls_Layers_UpConv.tpp:246) on array 'p_ZZ16UpConv_Fused_RowILi8ELi16ELi16ELi16ELi16EEvP7ap_uintILi256EEPKS1_S4_S4_S4_S'.
-</td>
-<td align="left"><a href="http:///docs.xilinx.com/access/sources/dita/map?Doc_Version=2024.2%20English&url=ug1399-vitis-hls">Vitis HLS User Guide (UG1399)</a></td>
-</tr>
-<tr>
-<td align="left">51</td>
-<td align="left">Throughput</td>
-<td align="left">WARNING</td>
-<td align="left"><undefined></td>
-<td align="left">HLS Throughput Related</td>
-<td align="left">Accelerator.upconv_core_top.Throughput</td>
-<td align="left">The II Violation in module 'UpConv_Fused_Row_8_64_64_240_120_Pipeline_BIAS_STATS' (loop 'BIAS_STATS'): Unable to enforce a carried dependence constraint (II = 4, distance = 1, offset = 0) between 'store' operation 0 bit ('sum_write_ln240', ../gen/Hls_Layers_UpConv.tpp:240) of variable 'sum', ../gen/Hls_Layers_UpConv.tpp:249 on local variable 'sum', ../gen/Hls_Layers_UpConv.tpp:240 and 'load' operation 32 bit ('sum_load', ../gen/Hls_Layers_UpConv.tpp:249) on local variable 'sum', ../gen/Hls_Layers_UpConv.tpp:240.
-</td>
-<td align="left"><a href="http:///docs.xilinx.com/access/sources/dita/map?Doc_Version=2024.2%20English&url=ug1399-vitis-hls">Vitis HLS User Guide (UG1399)</a></td>
-</tr>
-<tr>
-<td align="left">92</td>
-<td align="left">Throughput</td>
-<td align="left">ADVISORY</td>
-<td align="left"><undefined></td>
-<td align="left">HLS Throughput Related</td>
-<td align="left">Accelerator.upconv_core_top.Throughput</td>
-<td align="left">Pipelining result : Target II = 1, Final II = 15, Depth = 16, loop 'RESET_ROW_ACC'
-</td>
-<td align="left"><a href="http:///docs.xilinx.com/access/sources/dita/map?Doc_Version=2024.2%20English&url=ug1399-vitis-hls">Vitis HLS User Guide (UG1399)</a></td>
-</tr>
-<tr>
-<td align="left">27</td>
-<td align="left">Throughput</td>
-<td align="left">WARNING</td>
-<td align="left"><undefined></td>
-<td align="left">HLS Throughput Related</td>
-<td align="left">Accelerator.upconv_core_top.Throughput</td>
-<td align="left">The II Violation in module 'UpConv_Fused_Row_8_128_128_120_60_Pipeline_BIAS_STATS' (loop 'BIAS_STATS'): Unable to enforce a carried dependence constraint (II = 1, distance = 1, offset = 0) between 'store' operation 0 bit ('sum_03_write_ln240', ../gen/Hls_Layers_UpConv.tpp:240) of variable 'sum', ../gen/Hls_Layers_UpConv.tpp:249 on local variable 'sum', ../gen/Hls_Layers_UpConv.tpp:240 and 'load' operation 32 bit ('sum_03_load', ../gen/Hls_Layers_UpConv.tpp:249) on local variable 'sum', ../gen/Hls_Layers_UpConv.tpp:240.
-</td>
-<td align="left"><a href="http:///docs.xilinx.com/access/sources/dita/map?Doc_Version=2024.2%20English&url=ug1399-vitis-hls">Vitis HLS User Guide (UG1399)</a></td>
-</tr>
-<tr>
-<td align="left">121</td>
-<td align="left">Throughput</td>
-<td align="left">ADVISORY</td>
-<td align="left"><undefined></td>
-<td align="left">HLS Throughput Related</td>
-<td align="left">Accelerator.upconv_core_top.Throughput</td>
-<td align="left">Pipelining result : Target II = 1, Final II = 7, Depth = 139, loop 'PIXEL_NORM_BIAS_STATS'
-</td>
-<td align="left"><a href="http:///docs.xilinx.com/access/sources/dita/map?Doc_Version=2024.2%20English&url=ug1399-vitis-hls">Vitis HLS User Guide (UG1399)</a></td>
-</tr>
-<tr>
-<td align="left">36</td>
-<td align="left">Throughput</td>
-<td align="left">ADVISORY</td>
-<td align="left"><undefined></td>
-<td align="left">HLS Throughput Related</td>
-<td align="left">Accelerator.upconv_core_top.Throughput</td>
-<td align="left">Pipelining result : Target II = 1, Final II = 1, Depth = 24, loop 'NORM_WRITE'
-</td>
-<td align="left"><a href="http:///docs.xilinx.com/access/sources/dita/map?Doc_Version=2024.2%20English&url=ug1399-vitis-hls">Vitis HLS User Guide (UG1399)</a></td>
-</tr>
-<tr>
-<td align="left">65</td>
-<td align="left">Throughput</td>
-<td align="left">ADVISORY</td>
-<td align="left"><undefined></td>
-<td align="left">HLS Throughput Related</td>
-<td align="left">Accelerator.upconv_core_top.Throughput</td>
-<td align="left">Pipelining result : Target II = 1, Final II = 8, Depth = 9, loop 'RESET_ROW_ACC'
-</td>
-<td align="left"><a href="http:///docs.xilinx.com/access/sources/dita/map?Doc_Version=2024.2%20English&url=ug1399-vitis-hls">Vitis HLS User Guide (UG1399)</a></td>
-</tr>
-<tr>
-<td align="left">12</td>
-<td align="left">Latency</td>
-<td align="left">WARNING</td>
-<td align="left"><undefined></td>
-<td align="left">HLS Latency Related</td>
-<td align="left">Accelerator.upconv_core_top.Latency</td>
-<td align="left">Cannot flatten loop 'PRELOAD_W' (../gen/Hls_Layers_UpConv.tpp:139:20) in function 'UpConv_Fused_Row<8, 64, 64, 240, 120>' the outer loop is not a perfect loop because there is nontrivial logic before entering the inner loop.
-</td>
-<td align="left"><a href="http:///docs.xilinx.com/access/sources/dita/map?Doc_Version=2024.2%20English&url=ug1399-vitis-hls">Vitis HLS User Guide (UG1399)</a></td>
-</tr>
-<tr>
-<td align="left">98</td>
-<td align="left">Kernel</td>
-<td align="left">WARNING</td>
-<td align="left"><undefined></td>
-<td align="left">HLS Kernel Related</td>
-<td align="left">Accelerator.upconv_core_top.Kernel</td>
-<td align="left">The II Violation in module 'UpConv_Fused_Row_8_16_16_960_480_Pipeline_LOAD_PARAMS' (loop 'LOAD_PARAMS'): Unable to schedule bus request operation ('gmem_param_load_6_req', ../gen/Hls_Layers_UpConv.tpp:232) on port 'gmem_param' (../gen/Hls_Layers_UpConv.tpp:232) due to limited memory ports (II = 2). Please consider using a memory core with more ports or partitioning the array.
-</td>
-<td align="left"><a href="http:///docs.xilinx.com/access/sources/dita/map?Doc_Version=2024.2%20English&url=ug1399-vitis-hls">Vitis HLS User Guide (UG1399)</a></td>
-</tr>
-<tr>
-<td align="left">41</td>
-<td align="left">Kernel</td>
-<td align="left">WARNING</td>
-<td align="left"><undefined></td>
-<td align="left">HLS Kernel Related</td>
-<td align="left">Accelerator.upconv_core_top.Kernel</td>
-<td align="left">The II Violation in module 'UpConv_Fused_Row_8_64_64_240_120_Pipeline_RESET_ROW_ACC' (loop 'RESET_ROW_ACC'): Unable to schedule 'store' operation 0 bit ('void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_55_write_ln121', ../gen/Hls_Layers_UpConv.tpp:121) of constant 0 on array 'void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_9' due to limited memory ports (II = 3). Please consider using a memory core with more ports or partitioning the array 'void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_9'.
-</td>
-<td align="left"><a href="http:///docs.xilinx.com/access/sources/dita/map?Doc_Version=2024.2%20English&url=ug1399-vitis-hls">Vitis HLS User Guide (UG1399)</a></td>
-</tr>
-<tr>
-<td align="left">74</td>
-<td align="left">Throughput</td>
-<td align="left">WARNING</td>
-<td align="left"><undefined></td>
-<td align="left">HLS Throughput Related</td>
-<td align="left">Accelerator.upconv_core_top.Throughput</td>
-<td align="left">The II Violation in module 'UpConv_Fused_Row_8_32_32_480_240_Pipeline_BIAS_STATS' (loop 'BIAS_STATS'): Unable to enforce a carried dependence constraint (II = 2, distance = 1, offset = 0) between 'store' operation 0 bit ('sum_write_ln240', ../gen/Hls_Layers_UpConv.tpp:240) of variable 'sum', ../gen/Hls_Layers_UpConv.tpp:249 on local variable 'sum', ../gen/Hls_Layers_UpConv.tpp:240 and 'load' operation 32 bit ('sum_load', ../gen/Hls_Layers_UpConv.tpp:249) on local variable 'sum', ../gen/Hls_Layers_UpConv.tpp:240.
-</td>
-<td align="left"><a href="http:///docs.xilinx.com/access/sources/dita/map?Doc_Version=2024.2%20English&url=ug1399-vitis-hls">Vitis HLS User Guide (UG1399)</a></td>
-</tr>
-<tr>
-<td align="left">18</td>
-<td align="left">Latency</td>
-<td align="left">WARNING</td>
-<td align="left"><undefined></td>
-<td align="left">HLS Latency Related</td>
-<td align="left">Accelerator.upconv_core_top.Latency</td>
-<td align="left">Cannot flatten loop 'WO_LOOP' (../gen/Hls_Layers_UpConv.tpp:164:26) in function 'UpConv_Fused_Row<8, 128, 128, 120, 60>' the outer loop is not a perfect loop because there is nontrivial logic before entering the inner loop.
-</td>
-<td align="left"><a href="http:///docs.xilinx.com/access/sources/dita/map?Doc_Version=2024.2%20English&url=ug1399-vitis-hls">Vitis HLS User Guide (UG1399)</a></td>
-</tr>
-<tr>
-<td align="left">87</td>
-<td align="left">Kernel</td>
-<td align="left">WARNING</td>
-<td align="left"><undefined></td>
-<td align="left">HLS Kernel Related</td>
-<td align="left">Accelerator.upconv_core_top.Kernel</td>
-<td align="left">The II Violation in module 'UpConv_Fused_Row_8_16_16_960_480_Pipeline_RESET_ROW_ACC' (loop 'RESET_ROW_ACC'): Unable to schedule 'store' operation 0 bit ('void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_387_write_ln121', ../gen/Hls_Layers_UpConv.tpp:121) of constant 0 on array 'void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_29' due to limited memory ports (II = 3). Please consider using a memory core with more ports or partitioning the array 'void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_29'.
-</td>
-<td align="left"><a href="http:///docs.xilinx.com/access/sources/dita/map?Doc_Version=2024.2%20English&url=ug1399-vitis-hls">Vitis HLS User Guide (UG1399)</a></td>
-</tr>
-<tr>
-<td align="left">112</td>
-<td align="left">Throughput</td>
-<td align="left">ADVISORY</td>
-<td align="left"><undefined></td>
-<td align="left">HLS Throughput Related</td>
-<td align="left">Accelerator.upconv_core_top.Throughput</td>
-<td align="left">Pipelining result : Target II = 1, Final II = 1, Depth = 2, loop 'RESET_ROW_ACC'
-</td>
-<td align="left"><a href="http:///docs.xilinx.com/access/sources/dita/map?Doc_Version=2024.2%20English&url=ug1399-vitis-hls">Vitis HLS User Guide (UG1399)</a></td>
-</tr>
-<tr>
-<td align="left">63</td>
-<td align="left">Kernel</td>
-<td align="left">WARNING</td>
-<td align="left"><undefined></td>
-<td align="left">HLS Kernel Related</td>
-<td align="left">Accelerator.upconv_core_top.Kernel</td>
-<td align="left">The II Violation in module 'UpConv_Fused_Row_8_32_32_480_240_Pipeline_RESET_ROW_ACC' (loop 'RESET_ROW_ACC'): Unable to schedule 'store' operation 0 bit ('void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_189_write_ln121', ../gen/Hls_Layers_UpConv.tpp:121) of constant 0 on array 'void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_19' due to limited memory ports (II = 4). Please consider using a memory core with more ports or partitioning the array 'void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_19'.
-</td>
-<td align="left"><a href="http:///docs.xilinx.com/access/sources/dita/map?Doc_Version=2024.2%20English&url=ug1399-vitis-hls">Vitis HLS User Guide (UG1399)</a></td>
-</tr>
-<tr>
-<td align="left">88</td>
-<td align="left">Kernel</td>
-<td align="left">WARNING</td>
-<td align="left"><undefined></td>
-<td align="left">HLS Kernel Related</td>
-<td align="left">Accelerator.upconv_core_top.Kernel</td>
-<td align="left">The II Violation in module 'UpConv_Fused_Row_8_16_16_960_480_Pipeline_RESET_ROW_ACC' (loop 'RESET_ROW_ACC'): Unable to schedule 'store' operation 0 bit ('void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_389_write_ln121', ../gen/Hls_Layers_UpConv.tpp:121) of constant 0 on array 'void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_29' due to limited memory ports (II = 4). Please consider using a memory core with more ports or partitioning the array 'void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_29'.
-</td>
-<td align="left"><a href="http:///docs.xilinx.com/access/sources/dita/map?Doc_Version=2024.2%20English&url=ug1399-vitis-hls">Vitis HLS User Guide (UG1399)</a></td>
-</tr>
-<tr>
-<td align="left">7</td>
-<td align="left">Interface</td>
-<td align="left">ADVISORY</td>
-<td align="left"><undefined></td>
-<td align="left">HLS Interface Related</td>
-<td align="left">Accelerator.upconv_core_top.Interface</td>
-<td align="left">Multiple burst reads of length 144 and bit width 256 in loop 'TILE_LOOP'(../gen/Hls_Layers_UpConv.tpp:135:13) has been inferred on bundle 'gmem_weight'. These burst requests might be further partitioned into multiple requests during RTL generation, based on max_read_burst_length or max_write_burst_length settings. (../gen/Hls_Layers_UpConv.tpp:135:13)
-</td>
-<td align="left"><a href="http:///docs.xilinx.com/access/sources/dita/map?Doc_Version=2024.2%20English&url=ug1399-vitis-hls">Vitis HLS User Guide (UG1399)</a></td>
-</tr>
-<tr>
-<td align="left">101</td>
-<td align="left">Throughput</td>
-<td align="left">WARNING</td>
-<td align="left"><undefined></td>
-<td align="left">HLS Throughput Related</td>
-<td align="left">Accelerator.upconv_core_top.Throughput</td>
-<td align="left">The II Violation in module 'UpConv_Fused_Row_8_16_16_960_480_Pipeline_BIAS_STATS' (loop 'BIAS_STATS'): Unable to enforce a carried dependence constraint (II = 2, distance = 1, offset = 0) between 'store' operation 0 bit ('sum_write_ln240', ../gen/Hls_Layers_UpConv.tpp:240) of variable 'sum', ../gen/Hls_Layers_UpConv.tpp:249 on local variable 'sum', ../gen/Hls_Layers_UpConv.tpp:240 and 'load' operation 32 bit ('sum_load', ../gen/Hls_Layers_UpConv.tpp:249) on local variable 'sum', ../gen/Hls_Layers_UpConv.tpp:240.
-</td>
-<td align="left"><a href="http:///docs.xilinx.com/access/sources/dita/map?Doc_Version=2024.2%20English&url=ug1399-vitis-hls">Vitis HLS User Guide (UG1399)</a></td>
-</tr>
-<tr>
-<td align="left">32</td>
-<td align="left">Throughput</td>
-<td align="left">WARNING</td>
-<td align="left"><undefined></td>
-<td align="left">HLS Throughput Related</td>
-<td align="left">Accelerator.upconv_core_top.Throughput</td>
-<td align="left">The II Violation in module 'UpConv_Fused_Row_8_128_128_120_60_Pipeline_BIAS_STATS' (loop 'BIAS_STATS'): Unable to enforce a carried dependence constraint (II = 6, distance = 1, offset = 0) between 'store' operation 0 bit ('sum_03_write_ln240', ../gen/Hls_Layers_UpConv.tpp:240) of variable 'sum', ../gen/Hls_Layers_UpConv.tpp:249 on local variable 'sum', ../gen/Hls_Layers_UpConv.tpp:240 and 'load' operation 32 bit ('sum_03_load', ../gen/Hls_Layers_UpConv.tpp:249) on local variable 'sum', ../gen/Hls_Layers_UpConv.tpp:240.
-</td>
-<td align="left"><a href="http:///docs.xilinx.com/access/sources/dita/map?Doc_Version=2024.2%20English&url=ug1399-vitis-hls">Vitis HLS User Guide (UG1399)</a></td>
-</tr>
-<tr>
-<td align="left">77</td>
-<td align="left">Throughput</td>
-<td align="left">WARNING</td>
-<td align="left"><undefined></td>
-<td align="left">HLS Throughput Related</td>
-<td align="left">Accelerator.upconv_core_top.Throughput</td>
-<td align="left">The II Violation in module 'UpConv_Fused_Row_8_32_32_480_240_Pipeline_BIAS_STATS' (loop 'BIAS_STATS'): Unable to enforce a carried dependence constraint (II = 5, distance = 1, offset = 0) between 'store' operation 0 bit ('sum_write_ln240', ../gen/Hls_Layers_UpConv.tpp:240) of variable 'sum', ../gen/Hls_Layers_UpConv.tpp:249 on local variable 'sum', ../gen/Hls_Layers_UpConv.tpp:240 and 'load' operation 32 bit ('sum_load', ../gen/Hls_Layers_UpConv.tpp:249) on local variable 'sum', ../gen/Hls_Layers_UpConv.tpp:240.
-</td>
-<td align="left"><a href="http:///docs.xilinx.com/access/sources/dita/map?Doc_Version=2024.2%20English&url=ug1399-vitis-hls">Vitis HLS User Guide (UG1399)</a></td>
-</tr>
-<tr>
-<td align="left">8</td>
-<td align="left">Interface</td>
-<td align="left">ADVISORY</td>
-<td align="left"><undefined></td>
-<td align="left">HLS Interface Related</td>
-<td align="left">Accelerator.upconv_core_top.Interface</td>
-<td align="left">Multiple burst writes of length 32 and bit width 256 in loop 'PIXEL_NORM'(../gen/Hls_Layers_UpConv.tpp:238:17) has been inferred on bundle 'gmem_out'. These burst requests might be further partitioned into multiple requests during RTL generation, based on max_read_burst_length or max_write_burst_length settings. (../gen/Hls_Layers_UpConv.tpp:238:17)
-</td>
-<td align="left"><a href="http:///docs.xilinx.com/access/sources/dita/map?Doc_Version=2024.2%20English&url=ug1399-vitis-hls">Vitis HLS User Guide (UG1399)</a></td>
-</tr>
-<tr>
-<td align="left">110</td>
-<td align="left">Throughput</td>
-<td align="left">ADVISORY</td>
-<td align="left"><undefined></td>
-<td align="left">HLS Throughput Related</td>
-<td align="left">Accelerator.upconv_core_top.Throughput</td>
-<td align="left">Pipelining result : Target II = 1, Final II = 1, Depth = 13, loop 'LOAD_ROW_VITIS_LOOP_307_2'
-</td>
-<td align="left"><a href="http:///docs.xilinx.com/access/sources/dita/map?Doc_Version=2024.2%20English&url=ug1399-vitis-hls">Vitis HLS User Guide (UG1399)</a></td>
-</tr>
-<tr>
-<td align="left">21</td>
-<td align="left">Throughput</td>
-<td align="left">ADVISORY</td>
-<td align="left"><undefined></td>
-<td align="left">HLS Throughput Related</td>
-<td align="left">Accelerator.upconv_core_top.Throughput</td>
-<td align="left">Pipelining result : Target II = 1, Final II = 2, Depth = 3, loop 'RESET_ROW_ACC'
-</td>
-<td align="left"><a href="http:///docs.xilinx.com/access/sources/dita/map?Doc_Version=2024.2%20English&url=ug1399-vitis-hls">Vitis HLS User Guide (UG1399)</a></td>
-</tr>
-<tr>
-<td align="left">54</td>
-<td align="left">Throughput</td>
-<td align="left">ADVISORY</td>
-<td align="left"><undefined></td>
-<td align="left">HLS Throughput Related</td>
-<td align="left">Accelerator.upconv_core_top.Throughput</td>
-<td align="left">Pipelining result : Target II = 1, Final II = 7, Depth = 25, loop 'BIAS_STATS'
-</td>
-<td align="left"><a href="http:///docs.xilinx.com/access/sources/dita/map?Doc_Version=2024.2%20English&url=ug1399-vitis-hls">Vitis HLS User Guide (UG1399)</a></td>
-</tr>
-<tr>
-<td align="left">30</td>
-<td align="left">Throughput</td>
-<td align="left">WARNING</td>
-<td align="left"><undefined></td>
-<td align="left">HLS Throughput Related</td>
-<td align="left">Accelerator.upconv_core_top.Throughput</td>
-<td align="left">The II Violation in module 'UpConv_Fused_Row_8_128_128_120_60_Pipeline_BIAS_STATS' (loop 'BIAS_STATS'): Unable to enforce a carried dependence constraint (II = 4, distance = 1, offset = 0) between 'store' operation 0 bit ('sum_03_write_ln240', ../gen/Hls_Layers_UpConv.tpp:240) of variable 'sum', ../gen/Hls_Layers_UpConv.tpp:249 on local variable 'sum', ../gen/Hls_Layers_UpConv.tpp:240 and 'load' operation 32 bit ('sum_03_load', ../gen/Hls_Layers_UpConv.tpp:249) on local variable 'sum', ../gen/Hls_Layers_UpConv.tpp:240.
-</td>
-<td align="left"><a href="http:///docs.xilinx.com/access/sources/dita/map?Doc_Version=2024.2%20English&url=ug1399-vitis-hls">Vitis HLS User Guide (UG1399)</a></td>
-</tr>
-<tr>
-<td align="left">83</td>
-<td align="left">Throughput</td>
-<td align="left">ADVISORY</td>
-<td align="left"><undefined></td>
-<td align="left">HLS Throughput Related</td>
-<td align="left">Accelerator.upconv_core_top.Throughput</td>
-<td align="left">Pipelining result : Target II = 1, Final II = 1, Depth = 13, loop 'LOAD_ROW_VITIS_LOOP_307_2'
-</td>
-<td align="left"><a href="http:///docs.xilinx.com/access/sources/dita/map?Doc_Version=2024.2%20English&url=ug1399-vitis-hls">Vitis HLS User Guide (UG1399)</a></td>
-</tr>
-<tr>
-<td align="left">124</td>
-<td align="left">Throughput</td>
-<td align="left">ADVISORY</td>
-<td align="left"><undefined></td>
-<td align="left">HLS Throughput Related</td>
-<td align="left">Accelerator.upconv_core_top.Throughput</td>
-<td align="left">Pipelining result : Target II = NA, Final II = 1, Depth = 11, loop 'LOAD_ROW'
+<td align="left">Pipelining result : Target II = 1, Final II = 1, Depth = 31, loop 'PIXEL_NORM'
 </td>
 <td align="left"><a href="http:///docs.xilinx.com/access/sources/dita/map?Doc_Version=2024.2%20English&url=ug1399-vitis-hls">Vitis HLS User Guide (UG1399)</a></td>
 </tr>
@@ -4578,114 +3451,62 @@ window.onload = function () { addSorting(); }
 <td align="left"><undefined></td>
 <td align="left">HLS Throughput Related</td>
 <td align="left">Accelerator.upconv_core_top.Throughput</td>
-<td align="left">Pipelining result : Target II = 1, Final II = 1, Depth = 3, loop 'LOAD_ROW0_VITIS_LOOP_296_1'
+<td align="left">Pipelining result : Target II = 1, Final II = 1, Depth = 31, loop 'PIXEL_NORM'
 </td>
 <td align="left"><a href="http:///docs.xilinx.com/access/sources/dita/map?Doc_Version=2024.2%20English&url=ug1399-vitis-hls">Vitis HLS User Guide (UG1399)</a></td>
 </tr>
 <tr>
-<td align="left">68</td>
-<td align="left">Kernel</td>
-<td align="left">WARNING</td>
-<td align="left"><undefined></td>
-<td align="left">HLS Kernel Related</td>
-<td align="left">Accelerator.upconv_core_top.Kernel</td>
-<td align="left">The critical path in module 'UpConv_Fused_Row_Pipeline_PRELOAD_W_VITIS_LOOP_142_2_VITIS_LOOP_143_3' consists of the following:
-	'load' operation 5 bit ('ci_w_load', ../gen/Hls_Layers_UpConv.tpp:143) on local variable 'ci_w', ../gen/Hls_Layers_UpConv.tpp:143 [40]  (0.000 ns)
-	'icmp' operation 1 bit ('icmp_ln143', ../gen/Hls_Layers_UpConv.tpp:143) [50]  (0.789 ns)
-	'and' operation 1 bit ('and_ln139', ../gen/Hls_Layers_UpConv.tpp:139) [51]  (0.287 ns)
-	'or' operation 1 bit ('empty', ../gen/Hls_Layers_UpConv.tpp:139) [54]  (0.000 ns)
-	'select' operation 5 bit ('ci_w_mid2', ../gen/Hls_Layers_UpConv.tpp:139) [55]  (0.414 ns)
-	'add' operation 5 bit ('add_ln143', ../gen/Hls_Layers_UpConv.tpp:143) [101]  (0.789 ns)
-	'store' operation 0 bit ('ci_w_write_ln143', ../gen/Hls_Layers_UpConv.tpp:143) of variable 'add_ln143', ../gen/Hls_Layers_UpConv.tpp:143 on local variable 'ci_w', ../gen/Hls_Layers_UpConv.tpp:143 [108]  (0.427 ns)
-
-</td>
-<td align="left"><a href="http:///docs.xilinx.com/access/sources/dita/map?Doc_Version=2024.2%20English&url=ug1399-vitis-hls">Vitis HLS User Guide (UG1399)</a></td>
-</tr>
-<tr>
-<td align="left">3</td>
-<td align="left">Interface</td>
-<td align="left">ADVISORY</td>
-<td align="left"><undefined></td>
-<td align="left">HLS Interface Related</td>
-<td align="left">Accelerator.upconv_core_top.Interface</td>
-<td align="left">Multiple burst reads of length 64800 and bit width 256 in loop 'TILE_LOOP'(../gen/Hls_Layers_UpConv.tpp:135:13) has been inferred on bundle 'gmem_weight'. These burst requests might be further partitioned into multiple requests during RTL generation, based on max_read_burst_length or max_write_burst_length settings. (../gen/Hls_Layers_UpConv.tpp:135:13)
-</td>
-<td align="left"><a href="http:///docs.xilinx.com/access/sources/dita/map?Doc_Version=2024.2%20English&url=ug1399-vitis-hls">Vitis HLS User Guide (UG1399)</a></td>
-</tr>
-<tr>
-<td align="left">97</td>
-<td align="left">Kernel</td>
-<td align="left">WARNING</td>
-<td align="left"><undefined></td>
-<td align="left">HLS Kernel Related</td>
-<td align="left">Accelerator.upconv_core_top.Kernel</td>
-<td align="left">The II Violation in module 'UpConv_Fused_Row_8_16_16_960_480_Pipeline_LOAD_PARAMS' (loop 'LOAD_PARAMS'): Unable to schedule bus request operation ('gmem_param_load_5_req', ../gen/Hls_Layers_UpConv.tpp:231) on port 'gmem_param' (../gen/Hls_Layers_UpConv.tpp:231) due to limited memory ports (II = 1). Please consider using a memory core with more ports or partitioning the array.
-</td>
-<td align="left"><a href="http:///docs.xilinx.com/access/sources/dita/map?Doc_Version=2024.2%20English&url=ug1399-vitis-hls">Vitis HLS User Guide (UG1399)</a></td>
-</tr>
-<tr>
-<td align="left">44</td>
+<td align="left">23</td>
 <td align="left">Throughput</td>
 <td align="left">ADVISORY</td>
 <td align="left"><undefined></td>
 <td align="left">HLS Throughput Related</td>
 <td align="left">Accelerator.upconv_core_top.Throughput</td>
-<td align="left">Pipelining result : Target II = 1, Final II = 1, Depth = 93, loop 'CI_LOOP'
+<td align="left">Pipelining result : Target II = 1, Final II = 1, Depth = 31, loop 'PIXEL_NORM'
 </td>
 <td align="left"><a href="http:///docs.xilinx.com/access/sources/dita/map?Doc_Version=2024.2%20English&url=ug1399-vitis-hls">Vitis HLS User Guide (UG1399)</a></td>
 </tr>
 <tr>
-<td align="left">73</td>
-<td align="left">Throughput</td>
-<td align="left">WARNING</td>
-<td align="left"><undefined></td>
-<td align="left">HLS Throughput Related</td>
-<td align="left">Accelerator.upconv_core_top.Throughput</td>
-<td align="left">The II Violation in module 'UpConv_Fused_Row_8_32_32_480_240_Pipeline_BIAS_STATS' (loop 'BIAS_STATS'): Unable to enforce a carried dependence constraint (II = 1, distance = 1, offset = 0) between 'store' operation 0 bit ('sum_write_ln240', ../gen/Hls_Layers_UpConv.tpp:240) of variable 'sum', ../gen/Hls_Layers_UpConv.tpp:249 on local variable 'sum', ../gen/Hls_Layers_UpConv.tpp:240 and 'load' operation 32 bit ('sum_load', ../gen/Hls_Layers_UpConv.tpp:249) on local variable 'sum', ../gen/Hls_Layers_UpConv.tpp:240.
-</td>
-<td align="left"><a href="http:///docs.xilinx.com/access/sources/dita/map?Doc_Version=2024.2%20English&url=ug1399-vitis-hls">Vitis HLS User Guide (UG1399)</a></td>
-</tr>
-<tr>
-<td align="left">106</td>
+<td align="left">38</td>
 <td align="left">Throughput</td>
 <td align="left">ADVISORY</td>
 <td align="left"><undefined></td>
 <td align="left">HLS Throughput Related</td>
 <td align="left">Accelerator.upconv_core_top.Throughput</td>
-<td align="left">Pipelining result : Target II = 1, Final II = 7, Depth = 25, loop 'BIAS_STATS'
-</td>
-<td align="left"><a href="http:///docs.xilinx.com/access/sources/dita/map?Doc_Version=2024.2%20English&url=ug1399-vitis-hls">Vitis HLS User Guide (UG1399)</a></td>
-</tr>
-<tr>
-<td align="left">17</td>
-<td align="left">Latency</td>
-<td align="left">WARNING</td>
-<td align="left"><undefined></td>
-<td align="left">HLS Latency Related</td>
-<td align="left">Accelerator.upconv_core_top.Latency</td>
-<td align="left">Cannot flatten loop 'PRELOAD_W' (../gen/Hls_Layers_UpConv.tpp:139:20) in function 'UpConv_Fused_Row<8, 128, 128, 120, 60>' the outer loop is not a perfect loop because there is nontrivial logic before entering the inner loop.
-</td>
-<td align="left"><a href="http:///docs.xilinx.com/access/sources/dita/map?Doc_Version=2024.2%20English&url=ug1399-vitis-hls">Vitis HLS User Guide (UG1399)</a></td>
-</tr>
-<tr>
-<td align="left">119</td>
-<td align="left">Throughput</td>
-<td align="left">WARNING</td>
-<td align="left"><undefined></td>
-<td align="left">HLS Throughput Related</td>
-<td align="left">Accelerator.upconv_core_top.Throughput</td>
-<td align="left">The II Violation in module 'UpConv_Fused_Row_8_16_16_16_16_s' (loop 'PIXEL_NORM_BIAS_STATS'): Unable to enforce a carried dependence constraint (II = 5, distance = 1, offset = 0) between 'store' operation 0 bit ('sum_03_write_ln240', ../gen/Hls_Layers_UpConv.tpp:240) of variable 'sum', ../gen/Hls_Layers_UpConv.tpp:249 on local variable 'sum', ../gen/Hls_Layers_UpConv.tpp:240 and 'load' operation 32 bit ('sum_03_load', ../gen/Hls_Layers_UpConv.tpp:239) on local variable 'sum', ../gen/Hls_Layers_UpConv.tpp:240.
+<td align="left">Pipelining result : Target II = 1, Final II = 1, Depth = 2, loop 'RESET_ROW_ACC'
 </td>
 <td align="left"><a href="http:///docs.xilinx.com/access/sources/dita/map?Doc_Version=2024.2%20English&url=ug1399-vitis-hls">Vitis HLS User Guide (UG1399)</a></td>
 </tr>
 <tr>
 <td align="left">50</td>
 <td align="left">Throughput</td>
-<td align="left">WARNING</td>
+<td align="left">ADVISORY</td>
 <td align="left"><undefined></td>
 <td align="left">HLS Throughput Related</td>
 <td align="left">Accelerator.upconv_core_top.Throughput</td>
-<td align="left">The II Violation in module 'UpConv_Fused_Row_8_64_64_240_120_Pipeline_BIAS_STATS' (loop 'BIAS_STATS'): Unable to enforce a carried dependence constraint (II = 3, distance = 1, offset = 0) between 'store' operation 0 bit ('sum_write_ln240', ../gen/Hls_Layers_UpConv.tpp:240) of variable 'sum', ../gen/Hls_Layers_UpConv.tpp:249 on local variable 'sum', ../gen/Hls_Layers_UpConv.tpp:240 and 'load' operation 32 bit ('sum_load', ../gen/Hls_Layers_UpConv.tpp:249) on local variable 'sum', ../gen/Hls_Layers_UpConv.tpp:240.
+<td align="left">Pipelining result : Target II = 1, Final II = 1, Depth = 2, loop 'RESET_ROW_ACC'
+</td>
+<td align="left"><a href="http:///docs.xilinx.com/access/sources/dita/map?Doc_Version=2024.2%20English&url=ug1399-vitis-hls">Vitis HLS User Guide (UG1399)</a></td>
+</tr>
+<tr>
+<td align="left">69</td>
+<td align="left">Kernel</td>
+<td align="left">ADVISORY</td>
+<td align="left"><undefined></td>
+<td align="left">HLS Kernel Related</td>
+<td align="left">Accelerator.upconv_core_top.Kernel</td>
+<td align="left">**** Loop Constraint Status: All loop constraints were satisfied.
+</td>
+<td align="left"><a href="http:///docs.xilinx.com/access/sources/dita/map?Doc_Version=2024.2%20English&url=ug1399-vitis-hls">Vitis HLS User Guide (UG1399)</a></td>
+</tr>
+<tr>
+<td align="left">14</td>
+<td align="left">Throughput</td>
+<td align="left">ADVISORY</td>
+<td align="left"><undefined></td>
+<td align="left">HLS Throughput Related</td>
+<td align="left">Accelerator.upconv_core_top.Throughput</td>
+<td align="left">Pipelining result : Target II = 1, Final II = 1, Depth = 2, loop 'RESET_ROW_ACC'
 </td>
 <td align="left"><a href="http:///docs.xilinx.com/access/sources/dita/map?Doc_Version=2024.2%20English&url=ug1399-vitis-hls">Vitis HLS User Guide (UG1399)</a></td>
 </tr>
@@ -4696,81 +3517,561 @@ window.onload = function () { addSorting(); }
 <td align="left"><undefined></td>
 <td align="left">HLS Throughput Related</td>
 <td align="left">Accelerator.upconv_core_top.Throughput</td>
-<td align="left">Pipelining result : Target II = 1, Final II = 3, Depth = 13, loop 'LOAD_PARAMS'
+<td align="left">Pipelining result : Target II = 1, Final II = 1, Depth = 2, loop 'RESET_ROW_ACC'
 </td>
 <td align="left"><a href="http:///docs.xilinx.com/access/sources/dita/map?Doc_Version=2024.2%20English&url=ug1399-vitis-hls">Vitis HLS User Guide (UG1399)</a></td>
 </tr>
 <tr>
-<td align="left">95</td>
-<td align="left">Kernel</td>
-<td align="left">WARNING</td>
-<td align="left"><undefined></td>
-<td align="left">HLS Kernel Related</td>
-<td align="left">Accelerator.upconv_core_top.Kernel</td>
-<td align="left">The critical path in module 'UpConv_Fused_Row_Pipeline_PRELOAD_W_VITIS_LOOP_142_2_VITIS_LOOP_143_3_1' consists of the following:
-	'load' operation 6 bit ('ci_w_load', ../gen/Hls_Layers_UpConv.tpp:143) on local variable 'ci_w', ../gen/Hls_Layers_UpConv.tpp:143 [40]  (0.000 ns)
-	'icmp' operation 1 bit ('icmp_ln143', ../gen/Hls_Layers_UpConv.tpp:143) [50]  (0.781 ns)
-	'and' operation 1 bit ('and_ln139', ../gen/Hls_Layers_UpConv.tpp:139) [51]  (0.287 ns)
-	'or' operation 1 bit ('empty', ../gen/Hls_Layers_UpConv.tpp:139) [54]  (0.000 ns)
-	'select' operation 6 bit ('ci_w_mid2', ../gen/Hls_Layers_UpConv.tpp:139) [55]  (0.384 ns)
-	'add' operation 6 bit ('add_ln143', ../gen/Hls_Layers_UpConv.tpp:143) [101]  (0.781 ns)
-	'store' operation 0 bit ('ci_w_write_ln143', ../gen/Hls_Layers_UpConv.tpp:143) of variable 'add_ln143', ../gen/Hls_Layers_UpConv.tpp:143 on local variable 'ci_w', ../gen/Hls_Layers_UpConv.tpp:143 [108]  (0.427 ns)
-
-</td>
-<td align="left"><a href="http:///docs.xilinx.com/access/sources/dita/map?Doc_Version=2024.2%20English&url=ug1399-vitis-hls">Vitis HLS User Guide (UG1399)</a></td>
-</tr>
-<tr>
-<td align="left">120</td>
-<td align="left">Throughput</td>
-<td align="left">WARNING</td>
-<td align="left"><undefined></td>
-<td align="left">HLS Throughput Related</td>
-<td align="left">Accelerator.upconv_core_top.Throughput</td>
-<td align="left">The II Violation in module 'UpConv_Fused_Row_8_16_16_16_16_s' (loop 'PIXEL_NORM_BIAS_STATS'): Unable to enforce a carried dependence constraint (II = 6, distance = 1, offset = 0) between 'store' operation 0 bit ('sum_03_write_ln240', ../gen/Hls_Layers_UpConv.tpp:240) of variable 'sum', ../gen/Hls_Layers_UpConv.tpp:249 on local variable 'sum', ../gen/Hls_Layers_UpConv.tpp:240 and 'load' operation 32 bit ('sum_03_load', ../gen/Hls_Layers_UpConv.tpp:239) on local variable 'sum', ../gen/Hls_Layers_UpConv.tpp:240.
-</td>
-<td align="left"><a href="http:///docs.xilinx.com/access/sources/dita/map?Doc_Version=2024.2%20English&url=ug1399-vitis-hls">Vitis HLS User Guide (UG1399)</a></td>
-</tr>
-<tr>
-<td align="left">39</td>
-<td align="left">Kernel</td>
-<td align="left">WARNING</td>
-<td align="left"><undefined></td>
-<td align="left">HLS Kernel Related</td>
-<td align="left">Accelerator.upconv_core_top.Kernel</td>
-<td align="left">The II Violation in module 'UpConv_Fused_Row_8_64_64_240_120_Pipeline_RESET_ROW_ACC' (loop 'RESET_ROW_ACC'): Unable to schedule 'store' operation 0 bit ('void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_51_write_ln121', ../gen/Hls_Layers_UpConv.tpp:121) of constant 0 on array 'void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_9' due to limited memory ports (II = 1). Please consider using a memory core with more ports or partitioning the array 'void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_9'.
-</td>
-<td align="left"><a href="http:///docs.xilinx.com/access/sources/dita/map?Doc_Version=2024.2%20English&url=ug1399-vitis-hls">Vitis HLS User Guide (UG1399)</a></td>
-</tr>
-<tr>
-<td align="left">64</td>
-<td align="left">Kernel</td>
-<td align="left">WARNING</td>
-<td align="left"><undefined></td>
-<td align="left">HLS Kernel Related</td>
-<td align="left">Accelerator.upconv_core_top.Kernel</td>
-<td align="left">The II Violation in module 'UpConv_Fused_Row_8_32_32_480_240_Pipeline_RESET_ROW_ACC' (loop 'RESET_ROW_ACC'): Unable to schedule 'store' operation 0 bit ('void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_195_write_ln121', ../gen/Hls_Layers_UpConv.tpp:121) of constant 0 on array 'void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_19' due to limited memory ports (II = 7). Please consider using a memory core with more ports or partitioning the array 'void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_19'.
-</td>
-<td align="left"><a href="http:///docs.xilinx.com/access/sources/dita/map?Doc_Version=2024.2%20English&url=ug1399-vitis-hls">Vitis HLS User Guide (UG1399)</a></td>
-</tr>
-<tr>
-<td align="left">15</td>
-<td align="left">Latency</td>
-<td align="left">WARNING</td>
-<td align="left"><undefined></td>
-<td align="left">HLS Latency Related</td>
-<td align="left">Accelerator.upconv_core_top.Latency</td>
-<td align="left">Cannot flatten loop 'WO_LOOP' (../gen/Hls_Layers_UpConv.tpp:164:26) in function 'UpConv_Fused_Row<8, 16, 16, 960, 480>' the outer loop is not a perfect loop because there is nontrivial logic before entering the inner loop.
-</td>
-<td align="left"><a href="http:///docs.xilinx.com/access/sources/dita/map?Doc_Version=2024.2%20English&url=ug1399-vitis-hls">Vitis HLS User Guide (UG1399)</a></td>
-</tr>
-<tr>
-<td align="left">109</td>
+<td align="left">45</td>
 <td align="left">Throughput</td>
 <td align="left">ADVISORY</td>
 <td align="left"><undefined></td>
 <td align="left">HLS Throughput Related</td>
 <td align="left">Accelerator.upconv_core_top.Throughput</td>
-<td align="left">Pipelining result : Target II = 1, Final II = 1, Depth = 24, loop 'NORM_WRITE'
+<td align="left">Pipelining result : Target II = 1, Final II = 3, Depth = 13, loop 'LOAD_PARAMS'
+</td>
+<td align="left"><a href="http:///docs.xilinx.com/access/sources/dita/map?Doc_Version=2024.2%20English&url=ug1399-vitis-hls">Vitis HLS User Guide (UG1399)</a></td>
+</tr>
+<tr>
+<td align="left">57</td>
+<td align="left">Throughput</td>
+<td align="left">ADVISORY</td>
+<td align="left"><undefined></td>
+<td align="left">HLS Throughput Related</td>
+<td align="left">Accelerator.upconv_core_top.Throughput</td>
+<td align="left">Pipelining result : Target II = 1, Final II = 3, Depth = 13, loop 'LOAD_PARAMS'
+</td>
+<td align="left"><a href="http:///docs.xilinx.com/access/sources/dita/map?Doc_Version=2024.2%20English&url=ug1399-vitis-hls">Vitis HLS User Guide (UG1399)</a></td>
+</tr>
+<tr>
+<td align="left">21</td>
+<td align="left">Throughput</td>
+<td align="left">ADVISORY</td>
+<td align="left"><undefined></td>
+<td align="left">HLS Throughput Related</td>
+<td align="left">Accelerator.upconv_core_top.Throughput</td>
+<td align="left">Pipelining result : Target II = 1, Final II = 3, Depth = 13, loop 'LOAD_PARAMS'
+</td>
+<td align="left"><a href="http:///docs.xilinx.com/access/sources/dita/map?Doc_Version=2024.2%20English&url=ug1399-vitis-hls">Vitis HLS User Guide (UG1399)</a></td>
+</tr>
+<tr>
+<td align="left">36</td>
+<td align="left">Throughput</td>
+<td align="left">ADVISORY</td>
+<td align="left"><undefined></td>
+<td align="left">HLS Throughput Related</td>
+<td align="left">Accelerator.upconv_core_top.Throughput</td>
+<td align="left">Pipelining result : Target II = 1, Final II = 1, Depth = 13, loop 'LOAD_ROW_VITIS_LOOP_328_2'
+</td>
+<td align="left"><a href="http:///docs.xilinx.com/access/sources/dita/map?Doc_Version=2024.2%20English&url=ug1399-vitis-hls">Vitis HLS User Guide (UG1399)</a></td>
+</tr>
+<tr>
+<td align="left">48</td>
+<td align="left">Throughput</td>
+<td align="left">ADVISORY</td>
+<td align="left"><undefined></td>
+<td align="left">HLS Throughput Related</td>
+<td align="left">Accelerator.upconv_core_top.Throughput</td>
+<td align="left">Pipelining result : Target II = 1, Final II = 1, Depth = 13, loop 'LOAD_ROW_VITIS_LOOP_328_2'
+</td>
+<td align="left"><a href="http:///docs.xilinx.com/access/sources/dita/map?Doc_Version=2024.2%20English&url=ug1399-vitis-hls">Vitis HLS User Guide (UG1399)</a></td>
+</tr>
+<tr>
+<td align="left">67</td>
+<td align="left">Throughput</td>
+<td align="left">ADVISORY</td>
+<td align="left"><undefined></td>
+<td align="left">HLS Throughput Related</td>
+<td align="left">Accelerator.upconv_core_top.Throughput</td>
+<td align="left">Pipelining result : Target II = NA, Final II = 1, Depth = 11, loop 'LOAD_ROW'
+</td>
+<td align="left"><a href="http:///docs.xilinx.com/access/sources/dita/map?Doc_Version=2024.2%20English&url=ug1399-vitis-hls">Vitis HLS User Guide (UG1399)</a></td>
+</tr>
+<tr>
+<td align="left">12</td>
+<td align="left">Latency</td>
+<td align="left">WARNING</td>
+<td align="left"><undefined></td>
+<td align="left">HLS Latency Related</td>
+<td align="left">Accelerator.upconv_core_top.Latency</td>
+<td align="left">Cannot flatten loop 'KH_LOOP' (../gen/Hls_Layers_UpConv.tpp:151:18) in function 'UpConv_Fused_Row<8, 128, 128, 120, 60>' the outer loop is not a perfect loop because there is nontrivial logic before entering the inner loop.
+</td>
+<td align="left"><a href="http:///docs.xilinx.com/access/sources/dita/map?Doc_Version=2024.2%20English&url=ug1399-vitis-hls">Vitis HLS User Guide (UG1399)</a></td>
+</tr>
+<tr>
+<td align="left">24</td>
+<td align="left">Throughput</td>
+<td align="left">ADVISORY</td>
+<td align="left"><undefined></td>
+<td align="left">HLS Throughput Related</td>
+<td align="left">Accelerator.upconv_core_top.Throughput</td>
+<td align="left">Pipelining result : Target II = 1, Final II = 1, Depth = 12, loop 'LOAD_ROW_VITIS_LOOP_328_2'
+</td>
+<td align="left"><a href="http:///docs.xilinx.com/access/sources/dita/map?Doc_Version=2024.2%20English&url=ug1399-vitis-hls">Vitis HLS User Guide (UG1399)</a></td>
+</tr>
+<tr>
+<td align="left">43</td>
+<td align="left">Kernel</td>
+<td align="left">WARNING</td>
+<td align="left"><undefined></td>
+<td align="left">HLS Kernel Related</td>
+<td align="left">Accelerator.upconv_core_top.Kernel</td>
+<td align="left">The II Violation in module 'UpConv_Fused_Row_8_32_32_480_240_Pipeline_LOAD_PARAMS' (loop 'LOAD_PARAMS'): Unable to schedule bus request operation ('gmem_param_load_3_req', ../gen/Hls_Layers_UpConv.tpp:224) on port 'gmem_param' (../gen/Hls_Layers_UpConv.tpp:224) due to limited memory ports (II = 1). Please consider using a memory core with more ports or partitioning the array.
+</td>
+<td align="left"><a href="http:///docs.xilinx.com/access/sources/dita/map?Doc_Version=2024.2%20English&url=ug1399-vitis-hls">Vitis HLS User Guide (UG1399)</a></td>
+</tr>
+<tr>
+<td align="left">7</td>
+<td align="left">Latency</td>
+<td align="left">WARNING</td>
+<td align="left"><undefined></td>
+<td align="left">HLS Latency Related</td>
+<td align="left">Accelerator.upconv_core_top.Latency</td>
+<td align="left">Cannot flatten loop 'KH_LOOP' (../gen/Hls_Layers_UpConv.tpp:151:18) in function 'UpConv_Fused_Row<8, 64, 64, 240, 120>' the outer loop is not a perfect loop because there is nontrivial logic before entering the inner loop.
+</td>
+<td align="left"><a href="http:///docs.xilinx.com/access/sources/dita/map?Doc_Version=2024.2%20English&url=ug1399-vitis-hls">Vitis HLS User Guide (UG1399)</a></td>
+</tr>
+<tr>
+<td align="left">19</td>
+<td align="left">Kernel</td>
+<td align="left">WARNING</td>
+<td align="left"><undefined></td>
+<td align="left">HLS Kernel Related</td>
+<td align="left">Accelerator.upconv_core_top.Kernel</td>
+<td align="left">The II Violation in module 'UpConv_Fused_Row_8_128_128_120_60_Pipeline_LOAD_PARAMS' (loop 'LOAD_PARAMS'): Unable to schedule bus request operation ('gmem_param_load_9_req', ../gen/Hls_Layers_UpConv.tpp:224) on port 'gmem_param' (../gen/Hls_Layers_UpConv.tpp:224) due to limited memory ports (II = 1). Please consider using a memory core with more ports or partitioning the array.
+</td>
+<td align="left"><a href="http:///docs.xilinx.com/access/sources/dita/map?Doc_Version=2024.2%20English&url=ug1399-vitis-hls">Vitis HLS User Guide (UG1399)</a></td>
+</tr>
+<tr>
+<td align="left">34</td>
+<td align="left">Throughput</td>
+<td align="left">ADVISORY</td>
+<td align="left"><undefined></td>
+<td align="left">HLS Throughput Related</td>
+<td align="left">Accelerator.upconv_core_top.Throughput</td>
+<td align="left">Pipelining result : Target II = 1, Final II = 1, Depth = 231, loop 'PIXEL_STATS'
+</td>
+<td align="left"><a href="http:///docs.xilinx.com/access/sources/dita/map?Doc_Version=2024.2%20English&url=ug1399-vitis-hls">Vitis HLS User Guide (UG1399)</a></td>
+</tr>
+<tr>
+<td align="left">62</td>
+<td align="left">Throughput</td>
+<td align="left">ADVISORY</td>
+<td align="left"><undefined></td>
+<td align="left">HLS Throughput Related</td>
+<td align="left">Accelerator.upconv_core_top.Throughput</td>
+<td align="left">Pipelining result : Target II = 1, Final II = 1, Depth = 2, loop 'RESET_ROW_ACC'
+</td>
+<td align="left"><a href="http:///docs.xilinx.com/access/sources/dita/map?Doc_Version=2024.2%20English&url=ug1399-vitis-hls">Vitis HLS User Guide (UG1399)</a></td>
+</tr>
+<tr>
+<td align="left">65</td>
+<td align="left">Throughput</td>
+<td align="left">ADVISORY</td>
+<td align="left"><undefined></td>
+<td align="left">HLS Throughput Related</td>
+<td align="left">Accelerator.upconv_core_top.Throughput</td>
+<td align="left">Pipelining result : Target II = 1, Final II = 1, Depth = 207, loop 'PIXEL_STATS'
+</td>
+<td align="left"><a href="http:///docs.xilinx.com/access/sources/dita/map?Doc_Version=2024.2%20English&url=ug1399-vitis-hls">Vitis HLS User Guide (UG1399)</a></td>
+</tr>
+<tr>
+<td align="left">10</td>
+<td align="left">Latency</td>
+<td align="left">WARNING</td>
+<td align="left"><undefined></td>
+<td align="left">HLS Latency Related</td>
+<td align="left">Accelerator.upconv_core_top.Latency</td>
+<td align="left">Cannot flatten loop 'KH_LOOP' (../gen/Hls_Layers_UpConv.tpp:151:18) in function 'UpConv_Fused_Row<8, 16, 16, 16, 16>' the outer loop is not a perfect loop because there is nontrivial logic before entering the inner loop.
+</td>
+<td align="left"><a href="http:///docs.xilinx.com/access/sources/dita/map?Doc_Version=2024.2%20English&url=ug1399-vitis-hls">Vitis HLS User Guide (UG1399)</a></td>
+</tr>
+<tr>
+<td align="left">41</td>
+<td align="left">Kernel</td>
+<td align="left">WARNING</td>
+<td align="left"><undefined></td>
+<td align="left">HLS Kernel Related</td>
+<td align="left">Accelerator.upconv_core_top.Kernel</td>
+<td align="left">The critical path in module 'UpConv_Fused_Row_8_32_32_480_240_Pipeline_PRELOAD_W_W_FLAT' consists of the following:
+	'load' operation 32 bit ('ci_cnt_load', ../gen/Hls_Layers_UpConv.tpp:138) on local variable 'ci_cnt', ../gen/Hls_Layers_UpConv.tpp:141 [41]  (0.000 ns)
+	'select' operation 32 bit ('select_ln138_1', ../gen/Hls_Layers_UpConv.tpp:138) [49]  (0.449 ns)
+	'add' operation 32 bit ('ci_cnt', ../gen/Hls_Layers_UpConv.tpp:145) [114]  (1.016 ns)
+	'icmp' operation 1 bit ('icmp_ln146', ../gen/Hls_Layers_UpConv.tpp:146) [115]  (1.016 ns)
+	'select' operation 32 bit ('k_cnt', ../gen/Hls_Layers_UpConv.tpp:146) [118]  (0.449 ns)
+	'store' operation 0 bit ('k_cnt_write_ln141', ../gen/Hls_Layers_UpConv.tpp:141) of variable 'k_cnt', ../gen/Hls_Layers_UpConv.tpp:146 on local variable 'k_cnt', ../gen/Hls_Layers_UpConv.tpp:141 [123]  (0.427 ns)
+
+</td>
+<td align="left"><a href="http:///docs.xilinx.com/access/sources/dita/map?Doc_Version=2024.2%20English&url=ug1399-vitis-hls">Vitis HLS User Guide (UG1399)</a></td>
+</tr>
+<tr>
+<td align="left">5</td>
+<td align="left">Interface</td>
+<td align="left">ADVISORY</td>
+<td align="left"><undefined></td>
+<td align="left">HLS Interface Related</td>
+<td align="left">Accelerator.upconv_core_top.Interface</td>
+<td align="left">Multiple burst reads of length 16 and bit width 256 in loop 'LOAD_ROW0'(../gen/Hls_Layers_UpConv.tpp:316:16) has been inferred on bundle 'gmem_in'. These burst requests might be further partitioned into multiple requests during RTL generation, based on max_read_burst_length or max_write_burst_length settings. (../gen/Hls_Layers_UpConv.tpp:316:16)
+</td>
+<td align="left"><a href="http:///docs.xilinx.com/access/sources/dita/map?Doc_Version=2024.2%20English&url=ug1399-vitis-hls">Vitis HLS User Guide (UG1399)</a></td>
+</tr>
+<tr>
+<td align="left">17</td>
+<td align="left">Kernel</td>
+<td align="left">WARNING</td>
+<td align="left"><undefined></td>
+<td align="left">HLS Kernel Related</td>
+<td align="left">Accelerator.upconv_core_top.Kernel</td>
+<td align="left">The critical path in module 'UpConv_Fused_Row_8_128_128_120_60_Pipeline_W_FLAT' consists of the following:
+	'load' operation 32 bit ('ci_cnt_load_2', ../gen/Hls_Layers_UpConv.tpp:145) on local variable 'ci_cnt', ../gen/Hls_Layers_UpConv.tpp:141 [95]  (0.000 ns)
+	'add' operation 32 bit ('ci_cnt', ../gen/Hls_Layers_UpConv.tpp:145) [97]  (1.016 ns)
+	'icmp' operation 1 bit ('icmp_ln146', ../gen/Hls_Layers_UpConv.tpp:146) [99]  (0.985 ns)
+	'select' operation 32 bit ('k_cnt', ../gen/Hls_Layers_UpConv.tpp:146) [102]  (0.449 ns)
+	'store' operation 0 bit ('k_cnt_write_ln141', ../gen/Hls_Layers_UpConv.tpp:141) of variable 'k_cnt', ../gen/Hls_Layers_UpConv.tpp:146 on local variable 'k_cnt', ../gen/Hls_Layers_UpConv.tpp:141 [103]  (0.427 ns)
+
+</td>
+<td align="left"><a href="http:///docs.xilinx.com/access/sources/dita/map?Doc_Version=2024.2%20English&url=ug1399-vitis-hls">Vitis HLS User Guide (UG1399)</a></td>
+</tr>
+<tr>
+<td align="left">32</td>
+<td align="left">Kernel</td>
+<td align="left">WARNING</td>
+<td align="left"><undefined></td>
+<td align="left">HLS Kernel Related</td>
+<td align="left">Accelerator.upconv_core_top.Kernel</td>
+<td align="left">The II Violation in module 'UpConv_Fused_Row_8_64_64_240_120_Pipeline_LOAD_PARAMS' (loop 'LOAD_PARAMS'): Unable to schedule bus request operation ('gmem_param_load_2_req', ../gen/Hls_Layers_UpConv.tpp:225) on port 'gmem_param' (../gen/Hls_Layers_UpConv.tpp:225) due to limited memory ports (II = 2). Please consider using a memory core with more ports or partitioning the array.
+</td>
+<td align="left"><a href="http:///docs.xilinx.com/access/sources/dita/map?Doc_Version=2024.2%20English&url=ug1399-vitis-hls">Vitis HLS User Guide (UG1399)</a></td>
+</tr>
+<tr>
+<td align="left">60</td>
+<td align="left">Throughput</td>
+<td align="left">ADVISORY</td>
+<td align="left"><undefined></td>
+<td align="left">HLS Throughput Related</td>
+<td align="left">Accelerator.upconv_core_top.Throughput</td>
+<td align="left">Pipelining result : Target II = 1, Final II = 1, Depth = 13, loop 'LOAD_ROW_VITIS_LOOP_328_2'
+</td>
+<td align="left"><a href="http:///docs.xilinx.com/access/sources/dita/map?Doc_Version=2024.2%20English&url=ug1399-vitis-hls">Vitis HLS User Guide (UG1399)</a></td>
+</tr>
+<tr>
+<td align="left">8</td>
+<td align="left">Latency</td>
+<td align="left">WARNING</td>
+<td align="left"><undefined></td>
+<td align="left">HLS Latency Related</td>
+<td align="left">Accelerator.upconv_core_top.Latency</td>
+<td align="left">Cannot flatten loop 'KH_LOOP' (../gen/Hls_Layers_UpConv.tpp:151:18) in function 'UpConv_Fused_Row<8, 32, 32, 480, 240>' the outer loop is not a perfect loop because there is nontrivial logic before entering the inner loop.
+</td>
+<td align="left"><a href="http:///docs.xilinx.com/access/sources/dita/map?Doc_Version=2024.2%20English&url=ug1399-vitis-hls">Vitis HLS User Guide (UG1399)</a></td>
+</tr>
+<tr>
+<td align="left">55</td>
+<td align="left">Kernel</td>
+<td align="left">WARNING</td>
+<td align="left"><undefined></td>
+<td align="left">HLS Kernel Related</td>
+<td align="left">Accelerator.upconv_core_top.Kernel</td>
+<td align="left">The II Violation in module 'UpConv_Fused_Row_8_16_16_960_480_Pipeline_LOAD_PARAMS' (loop 'LOAD_PARAMS'): Unable to schedule bus request operation ('gmem_param_load_5_req', ../gen/Hls_Layers_UpConv.tpp:224) on port 'gmem_param' (../gen/Hls_Layers_UpConv.tpp:224) due to limited memory ports (II = 1). Please consider using a memory core with more ports or partitioning the array.
+</td>
+<td align="left"><a href="http:///docs.xilinx.com/access/sources/dita/map?Doc_Version=2024.2%20English&url=ug1399-vitis-hls">Vitis HLS User Guide (UG1399)</a></td>
+</tr>
+<tr>
+<td align="left">70</td>
+<td align="left">Kernel</td>
+<td align="left">ADVISORY</td>
+<td align="left"><undefined></td>
+<td align="left">HLS Kernel Related</td>
+<td align="left">Accelerator.upconv_core_top.Kernel</td>
+<td align="left">**** Estimated Fmax: 297.89 MHz
+</td>
+<td align="left"><a href="http:///docs.xilinx.com/access/sources/dita/map?Doc_Version=2024.2%20English&url=ug1399-vitis-hls">Vitis HLS User Guide (UG1399)</a></td>
+</tr>
+<tr>
+<td align="left">3</td>
+<td align="left">Interface</td>
+<td align="left">ADVISORY</td>
+<td align="left"><undefined></td>
+<td align="left">HLS Interface Related</td>
+<td align="left">Accelerator.upconv_core_top.Interface</td>
+<td align="left">Multiple burst reads of length 960 and bit width 256 in loop 'LOAD_ROW0'(../gen/Hls_Layers_UpConv.tpp:316:16) has been inferred on bundle 'gmem_in'. These burst requests might be further partitioned into multiple requests during RTL generation, based on max_read_burst_length or max_write_burst_length settings. (../gen/Hls_Layers_UpConv.tpp:316:16)
+</td>
+<td align="left"><a href="http:///docs.xilinx.com/access/sources/dita/map?Doc_Version=2024.2%20English&url=ug1399-vitis-hls">Vitis HLS User Guide (UG1399)</a></td>
+</tr>
+<tr>
+<td align="left">31</td>
+<td align="left">Kernel</td>
+<td align="left">WARNING</td>
+<td align="left"><undefined></td>
+<td align="left">HLS Kernel Related</td>
+<td align="left">Accelerator.upconv_core_top.Kernel</td>
+<td align="left">The II Violation in module 'UpConv_Fused_Row_8_64_64_240_120_Pipeline_LOAD_PARAMS' (loop 'LOAD_PARAMS'): Unable to schedule bus request operation ('gmem_param_load_1_req', ../gen/Hls_Layers_UpConv.tpp:224) on port 'gmem_param' (../gen/Hls_Layers_UpConv.tpp:224) due to limited memory ports (II = 1). Please consider using a memory core with more ports or partitioning the array.
+</td>
+<td align="left"><a href="http:///docs.xilinx.com/access/sources/dita/map?Doc_Version=2024.2%20English&url=ug1399-vitis-hls">Vitis HLS User Guide (UG1399)</a></td>
+</tr>
+<tr>
+<td align="left">46</td>
+<td align="left">Throughput</td>
+<td align="left">ADVISORY</td>
+<td align="left"><undefined></td>
+<td align="left">HLS Throughput Related</td>
+<td align="left">Accelerator.upconv_core_top.Throughput</td>
+<td align="left">Pipelining result : Target II = 1, Final II = 1, Depth = 231, loop 'PIXEL_STATS'
+</td>
+<td align="left"><a href="http:///docs.xilinx.com/access/sources/dita/map?Doc_Version=2024.2%20English&url=ug1399-vitis-hls">Vitis HLS User Guide (UG1399)</a></td>
+</tr>
+<tr>
+<td align="left">58</td>
+<td align="left">Throughput</td>
+<td align="left">ADVISORY</td>
+<td align="left"><undefined></td>
+<td align="left">HLS Throughput Related</td>
+<td align="left">Accelerator.upconv_core_top.Throughput</td>
+<td align="left">Pipelining result : Target II = 1, Final II = 1, Depth = 231, loop 'PIXEL_STATS'
+</td>
+<td align="left"><a href="http:///docs.xilinx.com/access/sources/dita/map?Doc_Version=2024.2%20English&url=ug1399-vitis-hls">Vitis HLS User Guide (UG1399)</a></td>
+</tr>
+<tr>
+<td align="left">22</td>
+<td align="left">Throughput</td>
+<td align="left">ADVISORY</td>
+<td align="left"><undefined></td>
+<td align="left">HLS Throughput Related</td>
+<td align="left">Accelerator.upconv_core_top.Throughput</td>
+<td align="left">Pipelining result : Target II = 1, Final II = 1, Depth = 231, loop 'PIXEL_STATS'
+</td>
+<td align="left"><a href="http:///docs.xilinx.com/access/sources/dita/map?Doc_Version=2024.2%20English&url=ug1399-vitis-hls">Vitis HLS User Guide (UG1399)</a></td>
+</tr>
+<tr>
+<td align="left">53</td>
+<td align="left">Kernel</td>
+<td align="left">WARNING</td>
+<td align="left"><undefined></td>
+<td align="left">HLS Kernel Related</td>
+<td align="left">Accelerator.upconv_core_top.Kernel</td>
+<td align="left">The critical path in module 'UpConv_Fused_Row_8_16_16_960_480_Pipeline_PRELOAD_W_W_FLAT' consists of the following:
+	'load' operation 32 bit ('ci_cnt_load', ../gen/Hls_Layers_UpConv.tpp:138) on local variable 'ci_cnt', ../gen/Hls_Layers_UpConv.tpp:141 [41]  (0.000 ns)
+	'select' operation 32 bit ('select_ln138_3', ../gen/Hls_Layers_UpConv.tpp:138) [49]  (0.449 ns)
+	'add' operation 32 bit ('ci_cnt', ../gen/Hls_Layers_UpConv.tpp:145) [114]  (1.016 ns)
+	'icmp' operation 1 bit ('icmp_ln146', ../gen/Hls_Layers_UpConv.tpp:146) [115]  (1.016 ns)
+	'select' operation 32 bit ('k_cnt', ../gen/Hls_Layers_UpConv.tpp:146) [118]  (0.449 ns)
+	'store' operation 0 bit ('k_cnt_write_ln141', ../gen/Hls_Layers_UpConv.tpp:141) of variable 'k_cnt', ../gen/Hls_Layers_UpConv.tpp:146 on local variable 'k_cnt', ../gen/Hls_Layers_UpConv.tpp:141 [123]  (0.427 ns)
+
+</td>
+<td align="left"><a href="http:///docs.xilinx.com/access/sources/dita/map?Doc_Version=2024.2%20English&url=ug1399-vitis-hls">Vitis HLS User Guide (UG1399)</a></td>
+</tr>
+<tr>
+<td align="left">68</td>
+<td align="left">Interface</td>
+<td align="left">ADVISORY</td>
+<td align="left"><undefined></td>
+<td align="left">HLS Interface Related</td>
+<td align="left">Accelerator.upconv_core_top.Interface</td>
+<td align="left">Design has inferred MAXI bursts and missed bursts, see Vitis HLS GUI synthesis summary report for detailed information.
+</td>
+<td align="left"><a href="http:///docs.xilinx.com/access/sources/dita/map?Doc_Version=2024.2%20English&url=ug1399-vitis-hls">Vitis HLS User Guide (UG1399)</a></td>
+</tr>
+<tr>
+<td align="left">1</td>
+<td align="left">Interface</td>
+<td align="left">ADVISORY</td>
+<td align="left"><undefined></td>
+<td align="left">HLS Interface Related</td>
+<td align="left">Accelerator.upconv_core_top.Interface</td>
+<td align="left">Multiple burst reads of length 144 and bit width 256 in loop 'TILE_LOOP'(../gen/Hls_Layers_UpConv.tpp:135:13) has been inferred on bundle 'gmem_weight'. These burst requests might be further partitioned into multiple requests during RTL generation, based on max_read_burst_length or max_write_burst_length settings. (../gen/Hls_Layers_UpConv.tpp:135:13)
+</td>
+<td align="left"><a href="http:///docs.xilinx.com/access/sources/dita/map?Doc_Version=2024.2%20English&url=ug1399-vitis-hls">Vitis HLS User Guide (UG1399)</a></td>
+</tr>
+<tr>
+<td align="left">29</td>
+<td align="left">Kernel</td>
+<td align="left">WARNING</td>
+<td align="left"><undefined></td>
+<td align="left">HLS Kernel Related</td>
+<td align="left">Accelerator.upconv_core_top.Kernel</td>
+<td align="left">The critical path in module 'UpConv_Fused_Row_8_64_64_240_120_Pipeline_W_FLAT' consists of the following:
+	'load' operation 32 bit ('ci_cnt_load_1', ../gen/Hls_Layers_UpConv.tpp:145) on local variable 'ci_cnt', ../gen/Hls_Layers_UpConv.tpp:141 [97]  (0.000 ns)
+	'add' operation 32 bit ('ci_cnt', ../gen/Hls_Layers_UpConv.tpp:145) [99]  (1.016 ns)
+	'icmp' operation 1 bit ('icmp_ln146', ../gen/Hls_Layers_UpConv.tpp:146) [100]  (1.016 ns)
+	'select' operation 32 bit ('k_cnt', ../gen/Hls_Layers_UpConv.tpp:146) [103]  (0.449 ns)
+	'store' operation 0 bit ('k_cnt_write_ln141', ../gen/Hls_Layers_UpConv.tpp:141) of variable 'k_cnt', ../gen/Hls_Layers_UpConv.tpp:146 on local variable 'k_cnt', ../gen/Hls_Layers_UpConv.tpp:141 [104]  (0.427 ns)
+
+</td>
+<td align="left"><a href="http:///docs.xilinx.com/access/sources/dita/map?Doc_Version=2024.2%20English&url=ug1399-vitis-hls">Vitis HLS User Guide (UG1399)</a></td>
+</tr>
+<tr>
+<td align="left">44</td>
+<td align="left">Kernel</td>
+<td align="left">WARNING</td>
+<td align="left"><undefined></td>
+<td align="left">HLS Kernel Related</td>
+<td align="left">Accelerator.upconv_core_top.Kernel</td>
+<td align="left">The II Violation in module 'UpConv_Fused_Row_8_32_32_480_240_Pipeline_LOAD_PARAMS' (loop 'LOAD_PARAMS'): Unable to schedule bus request operation ('gmem_param_load_4_req', ../gen/Hls_Layers_UpConv.tpp:225) on port 'gmem_param' (../gen/Hls_Layers_UpConv.tpp:225) due to limited memory ports (II = 2). Please consider using a memory core with more ports or partitioning the array.
+</td>
+<td align="left"><a href="http:///docs.xilinx.com/access/sources/dita/map?Doc_Version=2024.2%20English&url=ug1399-vitis-hls">Vitis HLS User Guide (UG1399)</a></td>
+</tr>
+<tr>
+<td align="left">56</td>
+<td align="left">Kernel</td>
+<td align="left">WARNING</td>
+<td align="left"><undefined></td>
+<td align="left">HLS Kernel Related</td>
+<td align="left">Accelerator.upconv_core_top.Kernel</td>
+<td align="left">The II Violation in module 'UpConv_Fused_Row_8_16_16_960_480_Pipeline_LOAD_PARAMS' (loop 'LOAD_PARAMS'): Unable to schedule bus request operation ('gmem_param_load_6_req', ../gen/Hls_Layers_UpConv.tpp:225) on port 'gmem_param' (../gen/Hls_Layers_UpConv.tpp:225) due to limited memory ports (II = 2). Please consider using a memory core with more ports or partitioning the array.
+</td>
+<td align="left"><a href="http:///docs.xilinx.com/access/sources/dita/map?Doc_Version=2024.2%20English&url=ug1399-vitis-hls">Vitis HLS User Guide (UG1399)</a></td>
+</tr>
+<tr>
+<td align="left">20</td>
+<td align="left">Kernel</td>
+<td align="left">WARNING</td>
+<td align="left"><undefined></td>
+<td align="left">HLS Kernel Related</td>
+<td align="left">Accelerator.upconv_core_top.Kernel</td>
+<td align="left">The II Violation in module 'UpConv_Fused_Row_8_128_128_120_60_Pipeline_LOAD_PARAMS' (loop 'LOAD_PARAMS'): Unable to schedule bus request operation ('gmem_param_load_10_req', ../gen/Hls_Layers_UpConv.tpp:225) on port 'gmem_param' (../gen/Hls_Layers_UpConv.tpp:225) due to limited memory ports (II = 2). Please consider using a memory core with more ports or partitioning the array.
+</td>
+<td align="left"><a href="http:///docs.xilinx.com/access/sources/dita/map?Doc_Version=2024.2%20English&url=ug1399-vitis-hls">Vitis HLS User Guide (UG1399)</a></td>
+</tr>
+<tr>
+<td align="left">39</td>
+<td align="left">Throughput</td>
+<td align="left">ADVISORY</td>
+<td align="left"><undefined></td>
+<td align="left">HLS Throughput Related</td>
+<td align="left">Accelerator.upconv_core_top.Throughput</td>
+<td align="left">Pipelining result : Target II = 1, Final II = 1, Depth = 12, loop 'PRELOAD_W_W_FLAT'
+</td>
+<td align="left"><a href="http:///docs.xilinx.com/access/sources/dita/map?Doc_Version=2024.2%20English&url=ug1399-vitis-hls">Vitis HLS User Guide (UG1399)</a></td>
+</tr>
+<tr>
+<td align="left">51</td>
+<td align="left">Throughput</td>
+<td align="left">ADVISORY</td>
+<td align="left"><undefined></td>
+<td align="left">HLS Throughput Related</td>
+<td align="left">Accelerator.upconv_core_top.Throughput</td>
+<td align="left">Pipelining result : Target II = 1, Final II = 1, Depth = 12, loop 'PRELOAD_W_W_FLAT'
+</td>
+<td align="left"><a href="http:///docs.xilinx.com/access/sources/dita/map?Doc_Version=2024.2%20English&url=ug1399-vitis-hls">Vitis HLS User Guide (UG1399)</a></td>
+</tr>
+<tr>
+<td align="left">66</td>
+<td align="left">Throughput</td>
+<td align="left">ADVISORY</td>
+<td align="left"><undefined></td>
+<td align="left">HLS Throughput Related</td>
+<td align="left">Accelerator.upconv_core_top.Throughput</td>
+<td align="left">Pipelining result : Target II = 1, Final II = 1, Depth = 25, loop 'PIXEL_NORM'
+</td>
+<td align="left"><a href="http:///docs.xilinx.com/access/sources/dita/map?Doc_Version=2024.2%20English&url=ug1399-vitis-hls">Vitis HLS User Guide (UG1399)</a></td>
+</tr>
+<tr>
+<td align="left">15</td>
+<td align="left">Throughput</td>
+<td align="left">ADVISORY</td>
+<td align="left"><undefined></td>
+<td align="left">HLS Throughput Related</td>
+<td align="left">Accelerator.upconv_core_top.Throughput</td>
+<td align="left">Pipelining result : Target II = 1, Final II = 1, Depth = 13, loop 'W_FLAT'
+</td>
+<td align="left"><a href="http:///docs.xilinx.com/access/sources/dita/map?Doc_Version=2024.2%20English&url=ug1399-vitis-hls">Vitis HLS User Guide (UG1399)</a></td>
+</tr>
+<tr>
+<td align="left">27</td>
+<td align="left">Throughput</td>
+<td align="left">ADVISORY</td>
+<td align="left"><undefined></td>
+<td align="left">HLS Throughput Related</td>
+<td align="left">Accelerator.upconv_core_top.Throughput</td>
+<td align="left">Pipelining result : Target II = 1, Final II = 1, Depth = 12, loop 'W_FLAT'
+</td>
+<td align="left"><a href="http:///docs.xilinx.com/access/sources/dita/map?Doc_Version=2024.2%20English&url=ug1399-vitis-hls">Vitis HLS User Guide (UG1399)</a></td>
+</tr>
+<tr>
+<td align="left">42</td>
+<td align="left">Throughput</td>
+<td align="left">ADVISORY</td>
+<td align="left"><undefined></td>
+<td align="left">HLS Throughput Related</td>
+<td align="left">Accelerator.upconv_core_top.Throughput</td>
+<td align="left">Pipelining result : Target II = 1, Final II = 1, Depth = 116, loop 'KW_LOOP_FLAT_LOOP'
+</td>
+<td align="left"><a href="http:///docs.xilinx.com/access/sources/dita/map?Doc_Version=2024.2%20English&url=ug1399-vitis-hls">Vitis HLS User Guide (UG1399)</a></td>
+</tr>
+<tr>
+<td align="left">6</td>
+<td align="left">Latency</td>
+<td align="left">WARNING</td>
+<td align="left"><undefined></td>
+<td align="left">HLS Latency Related</td>
+<td align="left">Accelerator.upconv_core_top.Latency</td>
+<td align="left">Cannot flatten loop 'PRELOAD_W' (../gen/Hls_Layers_UpConv.tpp:138:20) in function 'UpConv_Fused_Row<8, 64, 64, 240, 120>' the outer loop is not a perfect loop because there is nontrivial logic before entering the inner loop.
+</td>
+<td align="left"><a href="http:///docs.xilinx.com/access/sources/dita/map?Doc_Version=2024.2%20English&url=ug1399-vitis-hls">Vitis HLS User Guide (UG1399)</a></td>
+</tr>
+<tr>
+<td align="left">18</td>
+<td align="left">Throughput</td>
+<td align="left">ADVISORY</td>
+<td align="left"><undefined></td>
+<td align="left">HLS Throughput Related</td>
+<td align="left">Accelerator.upconv_core_top.Throughput</td>
+<td align="left">Pipelining result : Target II = 1, Final II = 1, Depth = 116, loop 'KW_LOOP_FLAT_LOOP'
+</td>
+<td align="left"><a href="http:///docs.xilinx.com/access/sources/dita/map?Doc_Version=2024.2%20English&url=ug1399-vitis-hls">Vitis HLS User Guide (UG1399)</a></td>
+</tr>
+<tr>
+<td align="left">37</td>
+<td align="left">Throughput</td>
+<td align="left">ADVISORY</td>
+<td align="left"><undefined></td>
+<td align="left">HLS Throughput Related</td>
+<td align="left">Accelerator.upconv_core_top.Throughput</td>
+<td align="left">Pipelining result : Target II = 1, Final II = 1, Depth = 3, loop 'LOAD_ROW0_VITIS_LOOP_317_1'
+</td>
+<td align="left"><a href="http:///docs.xilinx.com/access/sources/dita/map?Doc_Version=2024.2%20English&url=ug1399-vitis-hls">Vitis HLS User Guide (UG1399)</a></td>
+</tr>
+<tr>
+<td align="left">49</td>
+<td align="left">Throughput</td>
+<td align="left">ADVISORY</td>
+<td align="left"><undefined></td>
+<td align="left">HLS Throughput Related</td>
+<td align="left">Accelerator.upconv_core_top.Throughput</td>
+<td align="left">Pipelining result : Target II = 1, Final II = 1, Depth = 3, loop 'LOAD_ROW0_VITIS_LOOP_317_1'
+</td>
+<td align="left"><a href="http:///docs.xilinx.com/access/sources/dita/map?Doc_Version=2024.2%20English&url=ug1399-vitis-hls">Vitis HLS User Guide (UG1399)</a></td>
+</tr>
+<tr>
+<td align="left">64</td>
+<td align="left">Throughput</td>
+<td align="left">ADVISORY</td>
+<td align="left"><undefined></td>
+<td align="left">HLS Throughput Related</td>
+<td align="left">Accelerator.upconv_core_top.Throughput</td>
+<td align="left">Pipelining result : Target II = 1, Final II = 1, Depth = 109, loop 'KW_LOOP_FLAT_LOOP'
+</td>
+<td align="left"><a href="http:///docs.xilinx.com/access/sources/dita/map?Doc_Version=2024.2%20English&url=ug1399-vitis-hls">Vitis HLS User Guide (UG1399)</a></td>
+</tr>
+<tr>
+<td align="left">13</td>
+<td align="left">Throughput</td>
+<td align="left">ADVISORY</td>
+<td align="left"><undefined></td>
+<td align="left">HLS Throughput Related</td>
+<td align="left">Accelerator.upconv_core_top.Throughput</td>
+<td align="left">Pipelining result : Target II = 1, Final II = 1, Depth = 3, loop 'LOAD_ROW0_VITIS_LOOP_317_1'
+</td>
+<td align="left"><a href="http:///docs.xilinx.com/access/sources/dita/map?Doc_Version=2024.2%20English&url=ug1399-vitis-hls">Vitis HLS User Guide (UG1399)</a></td>
+</tr>
+<tr>
+<td align="left">25</td>
+<td align="left">Throughput</td>
+<td align="left">ADVISORY</td>
+<td align="left"><undefined></td>
+<td align="left">HLS Throughput Related</td>
+<td align="left">Accelerator.upconv_core_top.Throughput</td>
+<td align="left">Pipelining result : Target II = 1, Final II = 1, Depth = 3, loop 'LOAD_ROW0_VITIS_LOOP_317_1'
 </td>
 <td align="left"><a href="http:///docs.xilinx.com/access/sources/dita/map?Doc_Version=2024.2%20English&url=ug1399-vitis-hls">Vitis HLS User Guide (UG1399)</a></td>
 </tr>
@@ -4781,84 +4082,150 @@ window.onload = function () { addSorting(); }
 <td align="left"><undefined></td>
 <td align="left">HLS Kernel Related</td>
 <td align="left">Accelerator.upconv_core_top.Kernel</td>
-<td align="left">The II Violation in module 'UpConv_Fused_Row_8_64_64_240_120_Pipeline_RESET_ROW_ACC' (loop 'RESET_ROW_ACC'): Unable to schedule 'store' operation 0 bit ('void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_53_write_ln121', ../gen/Hls_Layers_UpConv.tpp:121) of constant 0 on array 'void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_9' due to limited memory ports (II = 2). Please consider using a memory core with more ports or partitioning the array 'void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_9'.
+<td align="left">Estimated clock period (3.357 ns) exceeds the target (target clock period: 3.333 ns, clock uncertainty: 0.900 ns, effective delay budget: 2.433 ns).
 </td>
 <td align="left"><a href="http:///docs.xilinx.com/access/sources/dita/map?Doc_Version=2024.2%20English&url=ug1399-vitis-hls">Vitis HLS User Guide (UG1399)</a></td>
 </tr>
 <tr>
-<td align="left">53</td>
-<td align="left">Throughput</td>
-<td align="left">WARNING</td>
-<td align="left"><undefined></td>
-<td align="left">HLS Throughput Related</td>
-<td align="left">Accelerator.upconv_core_top.Throughput</td>
-<td align="left">The II Violation in module 'UpConv_Fused_Row_8_64_64_240_120_Pipeline_BIAS_STATS' (loop 'BIAS_STATS'): Unable to enforce a carried dependence constraint (II = 6, distance = 1, offset = 0) between 'store' operation 0 bit ('sum_write_ln240', ../gen/Hls_Layers_UpConv.tpp:240) of variable 'sum', ../gen/Hls_Layers_UpConv.tpp:249 on local variable 'sum', ../gen/Hls_Layers_UpConv.tpp:240 and 'load' operation 32 bit ('sum_load', ../gen/Hls_Layers_UpConv.tpp:249) on local variable 'sum', ../gen/Hls_Layers_UpConv.tpp:240.
-</td>
-<td align="left"><a href="http:///docs.xilinx.com/access/sources/dita/map?Doc_Version=2024.2%20English&url=ug1399-vitis-hls">Vitis HLS User Guide (UG1399)</a></td>
-</tr>
-<tr>
-<td align="left">86</td>
-<td align="left">Kernel</td>
-<td align="left">WARNING</td>
-<td align="left"><undefined></td>
-<td align="left">HLS Kernel Related</td>
-<td align="left">Accelerator.upconv_core_top.Kernel</td>
-<td align="left">The II Violation in module 'UpConv_Fused_Row_8_16_16_960_480_Pipeline_RESET_ROW_ACC' (loop 'RESET_ROW_ACC'): Unable to schedule 'store' operation 0 bit ('void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_385_write_ln121', ../gen/Hls_Layers_UpConv.tpp:121) of constant 0 on array 'void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_29' due to limited memory ports (II = 2). Please consider using a memory core with more ports or partitioning the array 'void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_29'.
-</td>
-<td align="left"><a href="http:///docs.xilinx.com/access/sources/dita/map?Doc_Version=2024.2%20English&url=ug1399-vitis-hls">Vitis HLS User Guide (UG1399)</a></td>
-</tr>
-<tr>
-<td align="left">29</td>
-<td align="left">Throughput</td>
-<td align="left">WARNING</td>
-<td align="left"><undefined></td>
-<td align="left">HLS Throughput Related</td>
-<td align="left">Accelerator.upconv_core_top.Throughput</td>
-<td align="left">The II Violation in module 'UpConv_Fused_Row_8_128_128_120_60_Pipeline_BIAS_STATS' (loop 'BIAS_STATS'): Unable to enforce a carried dependence constraint (II = 3, distance = 1, offset = 0) between 'store' operation 0 bit ('sum_03_write_ln240', ../gen/Hls_Layers_UpConv.tpp:240) of variable 'sum', ../gen/Hls_Layers_UpConv.tpp:249 on local variable 'sum', ../gen/Hls_Layers_UpConv.tpp:240 and 'load' operation 32 bit ('sum_03_load', ../gen/Hls_Layers_UpConv.tpp:249) on local variable 'sum', ../gen/Hls_Layers_UpConv.tpp:240.
-</td>
-<td align="left"><a href="http:///docs.xilinx.com/access/sources/dita/map?Doc_Version=2024.2%20English&url=ug1399-vitis-hls">Vitis HLS User Guide (UG1399)</a></td>
-</tr>
-<tr>
-<td align="left">115</td>
-<td align="left">Throughput</td>
-<td align="left">WARNING</td>
-<td align="left"><undefined></td>
-<td align="left">HLS Throughput Related</td>
-<td align="left">Accelerator.upconv_core_top.Throughput</td>
-<td align="left">The II Violation in module 'UpConv_Fused_Row_8_16_16_16_16_s' (loop 'PIXEL_NORM_BIAS_STATS'): Unable to enforce a carried dependence constraint (II = 1, distance = 1, offset = 1) between 'store' operation 0 bit ('p_ZZ16UpConv_Fused_RowILi8ELi16ELi16ELi16ELi16EEvP7ap_uintILi256EEPKS1_S4_S4_S4_S_29_write_ln247', ../gen/Hls_Layers_UpConv.tpp:247) of variable 'val', ../gen/Hls_Layers_UpConv.tpp:246 on array 'p_ZZ16UpConv_Fused_RowILi8ELi16ELi16ELi16ELi16EEvP7ap_uintILi256EEPKS1_S4_S4_S4_S' and 'load' operation 16 bit ('p_ZZ16UpConv_Fused_RowILi8ELi16ELi16ELi16ELi16EEvP7ap_uintILi256EEPKS1_S4_S4_S4_S_35', ../gen/Hls_Layers_UpConv.tpp:246) on array 'p_ZZ16UpConv_Fused_RowILi8ELi16ELi16ELi16ELi16EEvP7ap_uintILi256EEPKS1_S4_S4_S4_S'.
-</td>
-<td align="left"><a href="http:///docs.xilinx.com/access/sources/dita/map?Doc_Version=2024.2%20English&url=ug1399-vitis-hls">Vitis HLS User Guide (UG1399)</a></td>
-</tr>
-<tr>
-<td align="left">62</td>
-<td align="left">Kernel</td>
-<td align="left">WARNING</td>
-<td align="left"><undefined></td>
-<td align="left">HLS Kernel Related</td>
-<td align="left">Accelerator.upconv_core_top.Kernel</td>
-<td align="left">The II Violation in module 'UpConv_Fused_Row_8_32_32_480_240_Pipeline_RESET_ROW_ACC' (loop 'RESET_ROW_ACC'): Unable to schedule 'store' operation 0 bit ('void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_187_write_ln121', ../gen/Hls_Layers_UpConv.tpp:121) of constant 0 on array 'void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_19' due to limited memory ports (II = 3). Please consider using a memory core with more ports or partitioning the array 'void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_19'.
-</td>
-<td align="left"><a href="http:///docs.xilinx.com/access/sources/dita/map?Doc_Version=2024.2%20English&url=ug1399-vitis-hls">Vitis HLS User Guide (UG1399)</a></td>
-</tr>
-<tr>
-<td align="left">6</td>
+<td align="left">4</td>
 <td align="left">Interface</td>
 <td align="left">ADVISORY</td>
 <td align="left"><undefined></td>
 <td align="left">HLS Interface Related</td>
 <td align="left">Accelerator.upconv_core_top.Interface</td>
-<td align="left">Multiple burst reads of length 72 and bit width 256 in loop 'VITIS_LOOP_142_2'(../gen/Hls_Layers_UpConv.tpp:142:35) has been inferred on bundle 'gmem_weight'. These burst requests might be further partitioned into multiple requests during RTL generation, based on max_read_burst_length or max_write_burst_length settings. (../gen/Hls_Layers_UpConv.tpp:142:35)
+<td align="left">Multiple burst reads of length 1024 and bit width 256 in loop 'LOAD_ROW0'(../gen/Hls_Layers_UpConv.tpp:316:16) has been inferred on bundle 'gmem_in'. These burst requests might be further partitioned into multiple requests during RTL generation, based on max_read_burst_length or max_write_burst_length settings. (../gen/Hls_Layers_UpConv.tpp:316:16)
 </td>
 <td align="left"><a href="http:///docs.xilinx.com/access/sources/dita/map?Doc_Version=2024.2%20English&url=ug1399-vitis-hls">Vitis HLS User Guide (UG1399)</a></td>
 </tr>
 <tr>
-<td align="left">91</td>
+<td align="left">16</td>
 <td align="left">Kernel</td>
 <td align="left">WARNING</td>
 <td align="left"><undefined></td>
 <td align="left">HLS Kernel Related</td>
 <td align="left">Accelerator.upconv_core_top.Kernel</td>
-<td align="left">The II Violation in module 'UpConv_Fused_Row_8_16_16_960_480_Pipeline_RESET_ROW_ACC' (loop 'RESET_ROW_ACC'): Unable to schedule 'store' operation 0 bit ('void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_409_write_ln121', ../gen/Hls_Layers_UpConv.tpp:121) of constant 0 on array 'void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_29' due to limited memory ports (II = 14). Please consider using a memory core with more ports or partitioning the array 'void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_29'.
+<td align="left">Estimated clock period (2.877 ns) exceeds the target (target clock period: 3.333 ns, clock uncertainty: 0.900 ns, effective delay budget: 2.433 ns).
+</td>
+<td align="left"><a href="http:///docs.xilinx.com/access/sources/dita/map?Doc_Version=2024.2%20English&url=ug1399-vitis-hls">Vitis HLS User Guide (UG1399)</a></td>
+</tr>
+<tr>
+<td align="left">35</td>
+<td align="left">Throughput</td>
+<td align="left">ADVISORY</td>
+<td align="left"><undefined></td>
+<td align="left">HLS Throughput Related</td>
+<td align="left">Accelerator.upconv_core_top.Throughput</td>
+<td align="left">Pipelining result : Target II = 1, Final II = 1, Depth = 31, loop 'PIXEL_NORM'
+</td>
+<td align="left"><a href="http:///docs.xilinx.com/access/sources/dita/map?Doc_Version=2024.2%20English&url=ug1399-vitis-hls">Vitis HLS User Guide (UG1399)</a></td>
+</tr>
+<tr>
+<td align="left">63</td>
+<td align="left">Throughput</td>
+<td align="left">ADVISORY</td>
+<td align="left"><undefined></td>
+<td align="left">HLS Throughput Related</td>
+<td align="left">Accelerator.upconv_core_top.Throughput</td>
+<td align="left">Pipelining result : Target II = 1, Final II = 1, Depth = 3, loop 'PRELOAD_W_W_FLAT'
+</td>
+<td align="left"><a href="http:///docs.xilinx.com/access/sources/dita/map?Doc_Version=2024.2%20English&url=ug1399-vitis-hls">Vitis HLS User Guide (UG1399)</a></td>
+</tr>
+<tr>
+<td align="left">11</td>
+<td align="left">Latency</td>
+<td align="left">WARNING</td>
+<td align="left"><undefined></td>
+<td align="left">HLS Latency Related</td>
+<td align="left">Accelerator.upconv_core_top.Latency</td>
+<td align="left">Cannot flatten loop 'PRELOAD_W' (../gen/Hls_Layers_UpConv.tpp:138:20) in function 'UpConv_Fused_Row<8, 128, 128, 120, 60>' the outer loop is not a perfect loop because there is nontrivial logic before entering the inner loop.
+</td>
+<td align="left"><a href="http:///docs.xilinx.com/access/sources/dita/map?Doc_Version=2024.2%20English&url=ug1399-vitis-hls">Vitis HLS User Guide (UG1399)</a></td>
+</tr>
+<tr>
+<td align="left">54</td>
+<td align="left">Throughput</td>
+<td align="left">ADVISORY</td>
+<td align="left"><undefined></td>
+<td align="left">HLS Throughput Related</td>
+<td align="left">Accelerator.upconv_core_top.Throughput</td>
+<td align="left">Pipelining result : Target II = 1, Final II = 1, Depth = 116, loop 'KW_LOOP_FLAT_LOOP'
+</td>
+<td align="left"><a href="http:///docs.xilinx.com/access/sources/dita/map?Doc_Version=2024.2%20English&url=ug1399-vitis-hls">Vitis HLS User Guide (UG1399)</a></td>
+</tr>
+<tr>
+<td align="left">2</td>
+<td align="left">Interface</td>
+<td align="left">ADVISORY</td>
+<td align="left"><undefined></td>
+<td align="left">HLS Interface Related</td>
+<td align="left">Accelerator.upconv_core_top.Interface</td>
+<td align="left">Multiple burst writes of length 32 and bit width 256 in loop 'PIXEL_NORM'(../gen/Hls_Layers_UpConv.tpp:278:17) has been inferred on bundle 'gmem_out'. These burst requests might be further partitioned into multiple requests during RTL generation, based on max_read_burst_length or max_write_burst_length settings. (../gen/Hls_Layers_UpConv.tpp:278:17)
+</td>
+<td align="left"><a href="http:///docs.xilinx.com/access/sources/dita/map?Doc_Version=2024.2%20English&url=ug1399-vitis-hls">Vitis HLS User Guide (UG1399)</a></td>
+</tr>
+<tr>
+<td align="left">30</td>
+<td align="left">Throughput</td>
+<td align="left">ADVISORY</td>
+<td align="left"><undefined></td>
+<td align="left">HLS Throughput Related</td>
+<td align="left">Accelerator.upconv_core_top.Throughput</td>
+<td align="left">Pipelining result : Target II = 1, Final II = 1, Depth = 116, loop 'KW_LOOP_FLAT_LOOP'
+</td>
+<td align="left"><a href="http:///docs.xilinx.com/access/sources/dita/map?Doc_Version=2024.2%20English&url=ug1399-vitis-hls">Vitis HLS User Guide (UG1399)</a></td>
+</tr>
+<tr>
+<td align="left">33</td>
+<td align="left">Throughput</td>
+<td align="left">ADVISORY</td>
+<td align="left"><undefined></td>
+<td align="left">HLS Throughput Related</td>
+<td align="left">Accelerator.upconv_core_top.Throughput</td>
+<td align="left">Pipelining result : Target II = 1, Final II = 3, Depth = 13, loop 'LOAD_PARAMS'
+</td>
+<td align="left"><a href="http:///docs.xilinx.com/access/sources/dita/map?Doc_Version=2024.2%20English&url=ug1399-vitis-hls">Vitis HLS User Guide (UG1399)</a></td>
+</tr>
+<tr>
+<td align="left">61</td>
+<td align="left">Throughput</td>
+<td align="left">ADVISORY</td>
+<td align="left"><undefined></td>
+<td align="left">HLS Throughput Related</td>
+<td align="left">Accelerator.upconv_core_top.Throughput</td>
+<td align="left">Pipelining result : Target II = NA, Final II = 1, Depth = 3, loop 'LOAD_ROW0'
+</td>
+<td align="left"><a href="http:///docs.xilinx.com/access/sources/dita/map?Doc_Version=2024.2%20English&url=ug1399-vitis-hls">Vitis HLS User Guide (UG1399)</a></td>
+</tr>
+<tr>
+<td align="left">9</td>
+<td align="left">Latency</td>
+<td align="left">WARNING</td>
+<td align="left"><undefined></td>
+<td align="left">HLS Latency Related</td>
+<td align="left">Accelerator.upconv_core_top.Latency</td>
+<td align="left">Cannot flatten loop 'KH_LOOP' (../gen/Hls_Layers_UpConv.tpp:151:18) in function 'UpConv_Fused_Row<8, 16, 16, 960, 480>' the outer loop is not a perfect loop because there is nontrivial logic before entering the inner loop.
+</td>
+<td align="left"><a href="http:///docs.xilinx.com/access/sources/dita/map?Doc_Version=2024.2%20English&url=ug1399-vitis-hls">Vitis HLS User Guide (UG1399)</a></td>
+</tr>
+<tr>
+<td align="left">52</td>
+<td align="left">Kernel</td>
+<td align="left">WARNING</td>
+<td align="left"><undefined></td>
+<td align="left">HLS Kernel Related</td>
+<td align="left">Accelerator.upconv_core_top.Kernel</td>
+<td align="left">Estimated clock period (3.357 ns) exceeds the target (target clock period: 3.333 ns, clock uncertainty: 0.900 ns, effective delay budget: 2.433 ns).
+</td>
+<td align="left"><a href="http:///docs.xilinx.com/access/sources/dita/map?Doc_Version=2024.2%20English&url=ug1399-vitis-hls">Vitis HLS User Guide (UG1399)</a></td>
+</tr>
+<tr>
+<td align="left">28</td>
+<td align="left">Kernel</td>
+<td align="left">WARNING</td>
+<td align="left"><undefined></td>
+<td align="left">HLS Kernel Related</td>
+<td align="left">Accelerator.upconv_core_top.Kernel</td>
+<td align="left">Estimated clock period (2.908 ns) exceeds the target (target clock period: 3.333 ns, clock uncertainty: 0.900 ns, effective delay budget: 2.433 ns).
 </td>
 <td align="left"><a href="http:///docs.xilinx.com/access/sources/dita/map?Doc_Version=2024.2%20English&url=ug1399-vitis-hls">Vitis HLS User Guide (UG1399)</a></td>
 </tr>
