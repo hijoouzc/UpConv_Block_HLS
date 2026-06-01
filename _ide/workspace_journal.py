@@ -10,3 +10,5 @@ comp.run(operation="SYNTHESIS")
 comp = client.get_component(name="upconv_block3")
 comp.run(operation="SYNTHESIS")
 
+vitis.dispose()
+
