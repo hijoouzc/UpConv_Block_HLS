@@ -1,7 +1,7 @@
 <profile>
 
 <section name = "Vitis HLS Report for 'UpConv_Fused_Row_8_128_128_120_60_Pipeline_PIXEL_STATS'" level="0">
-<item name = "Date">Mon Jun  1 23:47:13 2026
+<item name = "Date">Tue Jun  2 22:29:45 2026
 </item>
 <item name = "Version">2024.2 (Build 5238294 on Nov  8 2024)</item>
 <item name = "Project">upconv_core_top_ucb3</item>
@@ -62,7 +62,6 @@
 <section name = "" level="1">
 <item name = "Instance"><table name="" hasTotal="1">
 <keys size="7">Instance, Module, BRAM_18K, DSP, FF, LUT, URAM</keys>
-<column name="fadd_32ns_32ns_32_11_full_dsp_1_U445">fadd_32ns_32ns_32_11_full_dsp_1, 0, 2, 369, 236, 0</column>
 <column name="fadd_32ns_32ns_32_11_full_dsp_1_U446">fadd_32ns_32ns_32_11_full_dsp_1, 0, 2, 369, 236, 0</column>
 <column name="fadd_32ns_32ns_32_11_full_dsp_1_U447">fadd_32ns_32ns_32_11_full_dsp_1, 0, 2, 369, 236, 0</column>
 <column name="fadd_32ns_32ns_32_11_full_dsp_1_U448">fadd_32ns_32ns_32_11_full_dsp_1, 0, 2, 369, 236, 0</column>
@@ -80,18 +79,19 @@
 <column name="fadd_32ns_32ns_32_11_full_dsp_1_U460">fadd_32ns_32ns_32_11_full_dsp_1, 0, 2, 369, 236, 0</column>
 <column name="fadd_32ns_32ns_32_11_full_dsp_1_U461">fadd_32ns_32ns_32_11_full_dsp_1, 0, 2, 369, 236, 0</column>
 <column name="fadd_32ns_32ns_32_11_full_dsp_1_U462">fadd_32ns_32ns_32_11_full_dsp_1, 0, 2, 369, 236, 0</column>
-<column name="fadd_32ns_32ns_32_11_full_dsp_1_U464">fadd_32ns_32ns_32_11_full_dsp_1, 0, 2, 369, 236, 0</column>
-<column name="fdiv_32ns_32ns_32_30_no_dsp_1_U467">fdiv_32ns_32ns_32_30_no_dsp_1, 0, 0, 0, 0, 0</column>
+<column name="fadd_32ns_32ns_32_11_full_dsp_1_U463">fadd_32ns_32ns_32_11_full_dsp_1, 0, 2, 369, 236, 0</column>
+<column name="fadd_32ns_32ns_32_11_full_dsp_1_U465">fadd_32ns_32ns_32_11_full_dsp_1, 0, 2, 369, 236, 0</column>
 <column name="fdiv_32ns_32ns_32_30_no_dsp_1_U468">fdiv_32ns_32ns_32_30_no_dsp_1, 0, 0, 0, 0, 0</column>
 <column name="fdiv_32ns_32ns_32_30_no_dsp_1_U469">fdiv_32ns_32ns_32_30_no_dsp_1, 0, 0, 0, 0, 0</column>
-<column name="fmul_32ns_32ns_32_7_max_dsp_1_U465">fmul_32ns_32ns_32_7_max_dsp_1, 0, 3, 197, 123, 0</column>
+<column name="fdiv_32ns_32ns_32_30_no_dsp_1_U470">fdiv_32ns_32ns_32_30_no_dsp_1, 0, 0, 0, 0, 0</column>
 <column name="fmul_32ns_32ns_32_7_max_dsp_1_U466">fmul_32ns_32ns_32_7_max_dsp_1, 0, 3, 197, 123, 0</column>
-<column name="fsqrt_32ns_32ns_32_28_no_dsp_1_U470">fsqrt_32ns_32ns_32_28_no_dsp_1, 0, 0, 0, 0, 0</column>
-<column name="fsub_32ns_32ns_32_11_full_dsp_1_U463">fsub_32ns_32ns_32_11_full_dsp_1, 0, 2, 369, 236, 0</column>
-<column name="partselect_16ns_256ns_32s_16_1_1_U474">partselect_16ns_256ns_32s_16_1_1, 0, 0, 0, 68, 0</column>
-<column name="sparsemux_17_3_32_1_1_U476">sparsemux_17_3_32_1_1, 0, 0, 0, 43, 0</column>
+<column name="fmul_32ns_32ns_32_7_max_dsp_1_U467">fmul_32ns_32ns_32_7_max_dsp_1, 0, 3, 197, 123, 0</column>
+<column name="fsqrt_32ns_32ns_32_28_no_dsp_1_U471">fsqrt_32ns_32ns_32_28_no_dsp_1, 0, 0, 0, 0, 0</column>
+<column name="fsub_32ns_32ns_32_11_full_dsp_1_U464">fsub_32ns_32ns_32_11_full_dsp_1, 0, 2, 369, 236, 0</column>
+<column name="partselect_16ns_256ns_32s_16_1_1_U475">partselect_16ns_256ns_32s_16_1_1, 0, 0, 0, 68, 0</column>
 <column name="sparsemux_17_3_32_1_1_U477">sparsemux_17_3_32_1_1, 0, 0, 0, 43, 0</column>
-<column name="sparsemux_33_4_16_1_1_U475">sparsemux_33_4_16_1_1, 0, 0, 0, 65, 0</column>
+<column name="sparsemux_17_3_32_1_1_U478">sparsemux_17_3_32_1_1, 0, 0, 0, 43, 0</column>
+<column name="sparsemux_33_4_16_1_1_U476">sparsemux_33_4_16_1_1, 0, 0, 0, 65, 0</column>
 </table>
 </item>
 <item name = "DSP"><table name="" hasTotal="0">
@@ -108,14 +108,14 @@
 </item>
 <item name = "Expression"><table name="" hasTotal="1">
 <keys size="7">Variable Name, Operation, DSP, FF, LUT, Bitwidth P0, Bitwidth P1</keys>
-<column name="add_ln248_fu_860_p2">+, 0, 0, 17, 10, 10</column>
-<column name="cs_2_fu_773_p2">+, 0, 0, 39, 32, 1</column>
+<column name="add_ln220_fu_860_p2">+, 0, 0, 17, 10, 10</column>
+<column name="cs_3_fu_773_p2">+, 0, 0, 39, 32, 1</column>
 <column name="m_3_fu_737_p2">+, 0, 0, 21, 14, 1</column>
 <column name="ws_1_fu_904_p2">+, 0, 0, 39, 32, 1</column>
-<column name="sub_ln247_1_fu_829_p2">-, 0, 0, 9, 1, 2</column>
-<column name="sub_ln247_2_fu_847_p2">-, 0, 0, 12, 1, 4</column>
-<column name="sub_ln247_3_fu_918_p2">-, 0, 0, 12, 1, 5</column>
-<column name="sub_ln247_fu_751_p2">-, 0, 0, 13, 1, 6</column>
+<column name="sub_ln219_1_fu_829_p2">-, 0, 0, 9, 1, 2</column>
+<column name="sub_ln219_2_fu_847_p2">-, 0, 0, 12, 1, 4</column>
+<column name="sub_ln219_3_fu_918_p2">-, 0, 0, 12, 1, 5</column>
+<column name="sub_ln219_fu_751_p2">-, 0, 0, 13, 1, 6</column>
 <column name="ap_block_pp0">and, 0, 0, 2, 1, 1</column>
 <column name="ap_condition_5635">and, 0, 0, 2, 1, 1</column>
 <column name="ap_condition_5639">and, 0, 0, 2, 1, 1</column>
@@ -168,11 +168,11 @@
 <column name="ap_predicate_op385_load_state4">and, 0, 0, 2, 1, 1</column>
 <column name="ap_predicate_op386_load_state4">and, 0, 0, 2, 1, 1</column>
 <column name="ap_predicate_op387_load_state4">and, 0, 0, 2, 1, 1</column>
-<column name="icmp_ln241_fu_731_p2">icmp, 0, 0, 21, 14, 12</column>
-<column name="icmp_ln252_fu_895_p2">icmp, 0, 0, 36, 29, 1</column>
-<column name="icmp_ln260_fu_767_p2">icmp, 0, 0, 39, 32, 6</column>
-<column name="select_ln247_1_fu_927_p3">select, 0, 0, 5, 1, 5</column>
-<column name="select_ln247_fu_834_p3">select, 0, 0, 2, 1, 2</column>
+<column name="icmp_ln213_fu_731_p2">icmp, 0, 0, 21, 14, 12</column>
+<column name="icmp_ln224_fu_895_p2">icmp, 0, 0, 36, 29, 1</column>
+<column name="icmp_ln232_fu_767_p2">icmp, 0, 0, 39, 32, 6</column>
+<column name="select_ln219_1_fu_927_p3">select, 0, 0, 5, 1, 5</column>
+<column name="select_ln219_fu_834_p3">select, 0, 0, 2, 1, 2</column>
 <column name="ap_enable_pp0">xor, 0, 0, 2, 1, 2</column>
 </table>
 </item>
@@ -198,7 +198,7 @@
 </item>
 <item name = "Register"><table name="" hasTotal="1">
 <keys size="5">Name, FF, LUT, Bits, Const Bits</keys>
-<column name="add2_reg_1714">32, 0, 32, 0</column>
+<column name="add24_i_reg_1714">32, 0, 32, 0</column>
 <column name="ap_CS_fsm">1, 0, 1, 0</column>
 <column name="ap_done_reg">1, 0, 1, 0</column>
 <column name="ap_enable_reg_pp0_iter1">1, 0, 1, 0</column>
@@ -688,25 +688,25 @@
 <column name="ap_phi_reg_pp0_iter7_sumsq_rot_8_reg_581">32, 0, 32, 0</column>
 <column name="ap_phi_reg_pp0_iter8_sumsq_rot_8_reg_581">32, 0, 32, 0</column>
 <column name="ap_phi_reg_pp0_iter9_sumsq_rot_8_reg_581">32, 0, 32, 0</column>
-<column name="conv_reg_1916">16, 0, 16, 0</column>
-<column name="cs_1_reg_1483">32, 0, 32, 0</column>
+<column name="conv46_i_reg_1916">16, 0, 16, 0</column>
+<column name="cs_2_reg_1483">32, 0, 32, 0</column>
 <column name="cs_fu_180">32, 0, 32, 0</column>
-<column name="div1_reg_1911">32, 0, 32, 0</column>
-<column name="div_reg_1886">32, 0, 32, 0</column>
-<column name="icmp_ln241_reg_1492">1, 0, 1, 0</column>
-<column name="icmp_ln252_reg_1634">1, 0, 1, 0</column>
-<column name="icmp_ln260_reg_1508">1, 0, 1, 0</column>
+<column name="div38_i_reg_1886">32, 0, 32, 0</column>
+<column name="div45_i_reg_1911">32, 0, 32, 0</column>
+<column name="icmp_ln213_reg_1492">1, 0, 1, 0</column>
+<column name="icmp_ln224_reg_1634">1, 0, 1, 0</column>
+<column name="icmp_ln232_reg_1508">1, 0, 1, 0</column>
 <column name="m_2_fu_184">14, 0, 14, 0</column>
 <column name="mean_reg_1874">32, 0, 32, 0</column>
-<column name="mul4_reg_1891">32, 0, 32, 0</column>
-<column name="mul_reg_1686">32, 0, 32, 0</column>
+<column name="mul15_i_reg_1686">32, 0, 32, 0</column>
+<column name="mul39_i_reg_1891">32, 0, 32, 0</column>
 <column name="p_ZZ16UpConv_Fused_RowILi8ELi128ELi128ELi120ELi60EEvP7ap_uintILi256EEPKS1_S4_S4_S_12_reg_1538">10, 0, 10, 0</column>
 <column name="p_ZZ16UpConv_Fused_RowILi8ELi128ELi128ELi120ELi60EEvP7ap_uintILi256EEPKS1_S4_S4_S_13_reg_1544">10, 0, 10, 0</column>
 <column name="p_ZZ16UpConv_Fused_RowILi8ELi128ELi128ELi120ELi60EEvP7ap_uintILi256EEPKS1_S4_S4_S_14_reg_1550">10, 0, 10, 0</column>
 <column name="p_ZZ16UpConv_Fused_RowILi8ELi128ELi128ELi120ELi60EEvP7ap_uintILi256EEPKS1_S4_S4_S_15_reg_1556">10, 0, 10, 0</column>
 <column name="p_ZZ16UpConv_Fused_RowILi8ELi128ELi128ELi120ELi60EEvP7ap_uintILi256EEPKS1_S4_S4_S_16_reg_1562">10, 0, 10, 0</column>
 <column name="p_ZZ16UpConv_Fused_RowILi8ELi128ELi128ELi120ELi60EEvP7ap_uintILi256EEPKS1_S4_S4_S_17_reg_1568">10, 0, 10, 0</column>
-<column name="sub_ln247_2_reg_1528">4, 0, 4, 0</column>
+<column name="sub_ln219_2_reg_1528">4, 0, 4, 0</column>
 <column name="sum_1_reg_1744">32, 0, 32, 0</column>
 <column name="sum_2_reg_1764">32, 0, 32, 0</column>
 <column name="sum_3_reg_1784">32, 0, 32, 0</column>
@@ -741,14 +741,14 @@
 <column name="sumsq_rot_6_fu_196">32, 0, 32, 0</column>
 <column name="sumsq_rot_7_fu_192">32, 0, 32, 0</column>
 <column name="sumsq_rot_fu_220">32, 0, 32, 0</column>
+<column name="tmp_1_reg_1906">32, 0, 32, 0</column>
 <column name="tmp_2_reg_1523">1, 0, 1, 0</column>
-<column name="tmp_4_reg_1906">32, 0, 32, 0</column>
-<column name="tmp_5_reg_1681">32, 0, 32, 0</column>
+<column name="tmp_8_reg_1681">32, 0, 32, 0</column>
+<column name="tmp_9_reg_1692">32, 0, 32, 0</column>
 <column name="tmp_reg_1643">16, 0, 16, 0</column>
-<column name="tmp_s_reg_1692">32, 0, 32, 0</column>
-<column name="trunc_ln241_2_reg_1517">3, 0, 3, 0</column>
-<column name="trunc_ln241_3_reg_1496">4, 0, 4, 0</column>
-<column name="trunc_ln247_1_reg_1503">2, 0, 2, 0</column>
+<column name="trunc_ln213_2_reg_1517">3, 0, 3, 0</column>
+<column name="trunc_ln213_3_reg_1496">4, 0, 4, 0</column>
+<column name="trunc_ln219_1_reg_1503">2, 0, 2, 0</column>
 <column name="u_reg_1638">16, 0, 16, 0</column>
 <column name="val_reg_1653">16, 0, 16, 0</column>
 <column name="var_reg_1896">32, 0, 32, 0</column>
@@ -765,18 +765,18 @@
 <column name="ws_fu_188">32, 0, 32, 0</column>
 <column name="ws_load_reg_1512">32, 0, 32, 0</column>
 <column name="x_assign_reg_1901">32, 0, 32, 0</column>
-<column name="zext_ln248_reg_1881">32, 0, 64, 32</column>
-<column name="icmp_ln241_reg_1492">64, 32, 1, 0</column>
-<column name="icmp_ln252_reg_1634">64, 32, 1, 0</column>
-<column name="icmp_ln260_reg_1508">64, 32, 1, 0</column>
+<column name="zext_ln220_reg_1881">32, 0, 64, 32</column>
+<column name="icmp_ln213_reg_1492">64, 32, 1, 0</column>
+<column name="icmp_ln224_reg_1634">64, 32, 1, 0</column>
+<column name="icmp_ln232_reg_1508">64, 32, 1, 0</column>
 <column name="p_ZZ16UpConv_Fused_RowILi8ELi128ELi128ELi120ELi60EEvP7ap_uintILi256EEPKS1_S4_S4_S_12_reg_1538">64, 32, 10, 0</column>
 <column name="p_ZZ16UpConv_Fused_RowILi8ELi128ELi128ELi120ELi60EEvP7ap_uintILi256EEPKS1_S4_S4_S_13_reg_1544">64, 32, 10, 0</column>
 <column name="p_ZZ16UpConv_Fused_RowILi8ELi128ELi128ELi120ELi60EEvP7ap_uintILi256EEPKS1_S4_S4_S_14_reg_1550">64, 32, 10, 0</column>
 <column name="p_ZZ16UpConv_Fused_RowILi8ELi128ELi128ELi120ELi60EEvP7ap_uintILi256EEPKS1_S4_S4_S_15_reg_1556">64, 32, 10, 0</column>
 <column name="p_ZZ16UpConv_Fused_RowILi8ELi128ELi128ELi120ELi60EEvP7ap_uintILi256EEPKS1_S4_S4_S_16_reg_1562">64, 32, 10, 0</column>
 <column name="p_ZZ16UpConv_Fused_RowILi8ELi128ELi128ELi120ELi60EEvP7ap_uintILi256EEPKS1_S4_S4_S_17_reg_1568">64, 32, 10, 0</column>
-<column name="trunc_ln241_2_reg_1517">64, 32, 3, 0</column>
-<column name="trunc_ln241_3_reg_1496">64, 32, 4, 0</column>
+<column name="trunc_ln213_2_reg_1517">64, 32, 3, 0</column>
+<column name="trunc_ln213_3_reg_1496">64, 32, 4, 0</column>
 <column name="void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_20_reg_1574">64, 32, 10, 0</column>
 <column name="void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_21_reg_1580">64, 32, 10, 0</column>
 <column name="void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_22_reg_1586">64, 32, 10, 0</column>
@@ -788,7 +788,7 @@
 <column name="void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_28_reg_1622">64, 32, 10, 0</column>
 <column name="void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_29_reg_1628">64, 32, 10, 0</column>
 <column name="ws_load_reg_1512">64, 32, 32, 0</column>
-<column name="zext_ln248_reg_1881">64, 32, 64, 32</column>
+<column name="zext_ln220_reg_1881">64, 32, 64, 32</column>
 </table>
 </item>
 </section>
@@ -804,17 +804,17 @@
 <column name="ap_done">out, 1, ap_ctrl_hs, UpConv_Fused_Row&lt;8, 128, 128, 120, 60&gt;_Pipeline_PIXEL_STATS, return value</column>
 <column name="ap_idle">out, 1, ap_ctrl_hs, UpConv_Fused_Row&lt;8, 128, 128, 120, 60&gt;_Pipeline_PIXEL_STATS, return value</column>
 <column name="ap_ready">out, 1, ap_ctrl_hs, UpConv_Fused_Row&lt;8, 128, 128, 120, 60&gt;_Pipeline_PIXEL_STATS, return value</column>
-<column name="grp_fu_640_p_din0">out, 32, ap_ctrl_hs, UpConv_Fused_Row&lt;8, 128, 128, 120, 60&gt;_Pipeline_PIXEL_STATS, return value</column>
-<column name="grp_fu_640_p_dout0">in, 16, ap_ctrl_hs, UpConv_Fused_Row&lt;8, 128, 128, 120, 60&gt;_Pipeline_PIXEL_STATS, return value</column>
-<column name="grp_fu_640_p_ce">out, 1, ap_ctrl_hs, UpConv_Fused_Row&lt;8, 128, 128, 120, 60&gt;_Pipeline_PIXEL_STATS, return value</column>
-<column name="grp_fu_355_p_din0">out, 16, ap_ctrl_hs, UpConv_Fused_Row&lt;8, 128, 128, 120, 60&gt;_Pipeline_PIXEL_STATS, return value</column>
-<column name="grp_fu_355_p_dout0">in, 32, ap_ctrl_hs, UpConv_Fused_Row&lt;8, 128, 128, 120, 60&gt;_Pipeline_PIXEL_STATS, return value</column>
-<column name="grp_fu_355_p_ce">out, 1, ap_ctrl_hs, UpConv_Fused_Row&lt;8, 128, 128, 120, 60&gt;_Pipeline_PIXEL_STATS, return value</column>
-<column name="grp_fu_448_p_din0">out, 16, ap_ctrl_hs, UpConv_Fused_Row&lt;8, 128, 128, 120, 60&gt;_Pipeline_PIXEL_STATS, return value</column>
-<column name="grp_fu_448_p_din1">out, 16, ap_ctrl_hs, UpConv_Fused_Row&lt;8, 128, 128, 120, 60&gt;_Pipeline_PIXEL_STATS, return value</column>
-<column name="grp_fu_448_p_dout0">in, 16, ap_ctrl_hs, UpConv_Fused_Row&lt;8, 128, 128, 120, 60&gt;_Pipeline_PIXEL_STATS, return value</column>
-<column name="grp_fu_448_p_ce">out, 1, ap_ctrl_hs, UpConv_Fused_Row&lt;8, 128, 128, 120, 60&gt;_Pipeline_PIXEL_STATS, return value</column>
-<column name="conv1">in, 32, ap_none, conv1, scalar</column>
+<column name="grp_fu_723_p_din0">out, 32, ap_ctrl_hs, UpConv_Fused_Row&lt;8, 128, 128, 120, 60&gt;_Pipeline_PIXEL_STATS, return value</column>
+<column name="grp_fu_723_p_dout0">in, 16, ap_ctrl_hs, UpConv_Fused_Row&lt;8, 128, 128, 120, 60&gt;_Pipeline_PIXEL_STATS, return value</column>
+<column name="grp_fu_723_p_ce">out, 1, ap_ctrl_hs, UpConv_Fused_Row&lt;8, 128, 128, 120, 60&gt;_Pipeline_PIXEL_STATS, return value</column>
+<column name="grp_fu_393_p_din0">out, 16, ap_ctrl_hs, UpConv_Fused_Row&lt;8, 128, 128, 120, 60&gt;_Pipeline_PIXEL_STATS, return value</column>
+<column name="grp_fu_393_p_dout0">in, 32, ap_ctrl_hs, UpConv_Fused_Row&lt;8, 128, 128, 120, 60&gt;_Pipeline_PIXEL_STATS, return value</column>
+<column name="grp_fu_393_p_ce">out, 1, ap_ctrl_hs, UpConv_Fused_Row&lt;8, 128, 128, 120, 60&gt;_Pipeline_PIXEL_STATS, return value</column>
+<column name="grp_fu_531_p_din0">out, 16, ap_ctrl_hs, UpConv_Fused_Row&lt;8, 128, 128, 120, 60&gt;_Pipeline_PIXEL_STATS, return value</column>
+<column name="grp_fu_531_p_din1">out, 16, ap_ctrl_hs, UpConv_Fused_Row&lt;8, 128, 128, 120, 60&gt;_Pipeline_PIXEL_STATS, return value</column>
+<column name="grp_fu_531_p_dout0">in, 16, ap_ctrl_hs, UpConv_Fused_Row&lt;8, 128, 128, 120, 60&gt;_Pipeline_PIXEL_STATS, return value</column>
+<column name="grp_fu_531_p_ce">out, 1, ap_ctrl_hs, UpConv_Fused_Row&lt;8, 128, 128, 120, 60&gt;_Pipeline_PIXEL_STATS, return value</column>
+<column name="conv42_i">in, 32, ap_none, conv42_i, scalar</column>
 <column name="b_buf_address0">out, 2, ap_memory, b_buf, array</column>
 <column name="b_buf_ce0">out, 1, ap_memory, b_buf, array</column>
 <column name="b_buf_q0">in, 256, ap_memory, b_buf, array</column>

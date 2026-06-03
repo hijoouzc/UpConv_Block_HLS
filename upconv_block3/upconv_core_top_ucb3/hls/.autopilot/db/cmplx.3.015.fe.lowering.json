@@ -9,14 +9,14 @@
     "stores": {
       "G": 2
     },
-    "total_instructions": 8455
+    "total_instructions": 8291
   },
   "1": {
-    "basicblocks": 150,
+    "basicblocks": 155,
     "calls": "",
     "file": "Hls_Layers_UpConv.tpp",
-    "fileloc": 79,
-    "instructions": 2091,
+    "fileloc": 298,
+    "instructions": 2050,
     "loads": {
       "G": 51,
       "L": 107
@@ -26,6 +26,6 @@
       "G": 50,
       "L": 67
     },
-    "total_instructions": 2091
+    "total_instructions": 2050
   }
 }

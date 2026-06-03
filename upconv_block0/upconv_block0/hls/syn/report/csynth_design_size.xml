@@ -2,47 +2,58 @@
     <item name="Total Instructions per Compilation Phase">
         <table>
             <keys size="4">Phase, Step, Instructions, Description</keys>
-            <column name="Compile/Link">,  3705, After all functions are compiled and linked into a single design</column>
+            <column name="Compile/Link">,  4041, After all functions are compiled and linked into a single design</column>
             <column name="">, , </column>
             <column name="Unroll/Inline">, , After user unroll and inline pragmas are applied</column>
-            <column name="">(1) unroll, 11073, user unroll pragmas are applied</column>
-            <column name="">(2) simplification,  9345, simplification of applied user unroll pragmas</column>
-            <column name="">(3) inline,  8606, user inline pragmas are applied</column>
-            <column name="">(4) simplification,  8605, simplification of applied user inline pragmas</column>
+            <column name="">(1) unroll,  7729, user unroll pragmas are applied</column>
+            <column name="">(2) simplification,  6205, simplification of applied user unroll pragmas</column>
+            <column name="">(3) inline,  5966, user inline pragmas are applied</column>
+            <column name="">(4) simplification,  5885, simplification of applied user inline pragmas</column>
             <column name="">, , </column>
             <column name="Array/Struct">, , After user array partition and struct aggregate/disaggregate pragmas are applied</column>
-            <column name="">(1) array partition, 42173, user array partition pragmas are applied</column>
-            <column name="">(2) simplification, 10564, simplification of applied user array partition &amp; struct aggregate/disaggregate pragmas</column>
-            <column name="">(3) aggregate/disaggregate , 10564, user struct aggregate/disaggregate pragmas are applied</column>
-            <column name="">(4) array reshape, 10564, apply array reshape pragmas</column>
-            <column name="">(5) access patterns, 10545, array access pattern optmizations</column>
+            <column name="">(1) array partition, 12509, user array partition pragmas are applied</column>
+            <column name="">(2) simplification,  8136, simplification of applied user array partition &amp; struct aggregate/disaggregate pragmas</column>
+            <column name="">(3) aggregate/disaggregate ,  8136, user struct aggregate/disaggregate pragmas are applied</column>
+            <column name="">(4) array reshape,  8132, apply array reshape pragmas</column>
+            <column name="">(5) access patterns,  8097, array access pattern optmizations</column>
             <column name="">, , </column>
             <column name="Performance">, , After transformations are applied to meet performance pragma targets</column>
-            <column name="">(1) loop simplification, 10545, loop and instruction simplification</column>
-            <column name="">(2) parallelization, 10537, loops are unrolled or pipelined to meet performance targets</column>
-            <column name="">(3) array partition, 10533, arrays are partitioned to meet performance targets</column>
-            <column name="">(4) simplification, 10533, simplification of design after performance transformations</column>
+            <column name="">(1) loop simplification,  8097, loop and instruction simplification</column>
+            <column name="">(2) parallelization,  8097, loops are unrolled or pipelined to meet performance targets</column>
+            <column name="">(3) array partition,  8093, arrays are partitioned to meet performance targets</column>
+            <column name="">(4) simplification,  8093, simplification of design after performance transformations</column>
             <column name="">, , </column>
             <column name="HW Transforms">, , After hardware transfomations</column>
-            <column name="">(1) lowering, 10591, initial conversion to HW specific instructions</column>
-            <column name="">(2) optimizations, 10244, high level synthesis optimizations</column>
+            <column name="">(1) lowering,  8151, initial conversion to HW specific instructions</column>
+            <column name="">(2) optimizations,  7744, high level synthesis optimizations</column>
         </table>
     </item>
     <item name="Instructions per Function for each Compilation Phase">
         <hiertable>
             <header size="7" col0="Function" col1="Location" col2="Compile/Link" col3="Unroll/Inline" col4="Array/Struct" col5="Performance" col6="HW Transforms"/>
             <rows>
-                <row id="0" col0="upconv_core_top_ucb0" col1="upconv_core_top_ucb0.cpp:10" col2="3705" col3="8605" col4="10545" col5="10533" col6="10244">
-                    <row id="2" col0="UpConv_Fused_Top&lt;8, 16, 16, 960, 480&gt;" col1="Hls_Layers_UpConv.tpp:281" col2="3688" col3="" col4="" col5="" col6="">
-                        <row id="3" col0="UpConv_Fused_Row&lt;8, 16, 16, 960, 480&gt;" col1="Hls_Layers_UpConv.tpp:79" col2="3608" col2_disp="3,608 (4 calls)" col3="" col4="" col5="" col6="">
-                            <row id="6" col0="bits_to_half&lt;__fp16&gt;" col1="Hls_Layers_UpConv.tpp:38" col2="360" col2_disp=" 360 (20 calls)" col3="" col4="" col5="" col6=""/>
-                            <row id="1" col0="my_sqrt_f" col1="Hls_Layers_UpConv.tpp:52" col2="16" col2_disp="  16 (4 calls)" col3="" col4="" col5="" col6="">
-                                <row id="5" col0="sqrtf" col1="sqrtfloat.cpp:11" col2="8" col2_disp="   8 (4 calls)" col3="" col4="" col5="" col6=""/>
+                <row id="0" col0="upconv_core_top_ucb0" col1="upconv_core_top_ucb0.cpp:10" col2="4041" col3="5885" col4="8097" col5="8093" col6="7744">
+                    <row id="9" col0="UpConv_Fused_Top&lt;8, 16, 16, 960, 480&gt;" col1="Hls_Layers_UpConv.tpp:371" col2="4024" col3="" col4="" col5="" col6="">
+                        <row id="3" col0="UpConv_Fused_Row&lt;8, 16, 16, 960, 480&gt;" col1="Hls_Layers_UpConv.tpp:298" col2="3944" col2_disp="3,944 (4 calls)" col3="" col4="" col5="" col6="">
+                            <row id="2" col0="Load_Norm_Params&lt;30&gt;" col1="Hls_Layers_UpConv.tpp:175" col2="184" col2_disp=" 184 (4 calls)" col3="" col4="" col5="" col6=""/>
+                            <row id="8" col0="Reset_Row_Buffer&lt;32, 30, 480&gt;" col1="Hls_Layers_UpConv.tpp:68" col2="144" col2_disp=" 144 (4 calls)" col3="" col4="" col5="" col6=""/>
+                            <row id="4" col0="Load_Weight_Tile&lt;8, 480, 60&gt;" col1="Hls_Layers_UpConv.tpp:82" col2="140" col2_disp=" 140 (4 calls)" col3="" col4="" col5="" col6=""/>
+                            <row id="12" col0="Compute_MAC_Tile&lt;8, 16, 16, 60, 32, 480, 480&gt;" col1="Hls_Layers_UpConv.tpp:102" col2="1300" col2_disp="1,300 (4 calls)" col3="" col4="" col5="" col6="">
+                                <row id="6" col0="bits_to_half&lt;__fp16&gt;" col1="Hls_Layers_UpConv.tpp:38" col2="144" col2_disp=" 144 (8 calls)" col3="" col4="" col5="" col6=""/>
                             </row>
-                            <row id="4" col0="half_to_bits&lt;__fp16&gt;" col1="Hls_Layers_UpConv.tpp:22" col2="104" col2_disp=" 104 (4 calls)" col3="" col4="" col5="" col6=""/>
+                            <row id="5" col0="Compute_Pixel_Stats&lt;32, 480, 30, 480&gt;" col1="Hls_Layers_UpConv.tpp:200" col2="740" col2_disp=" 740 (4 calls)" col3="" col4="" col5="" col6="">
+                                <row id="6" col0="bits_to_half&lt;__fp16&gt;" col1="Hls_Layers_UpConv.tpp:38" col2="72" col2_disp="  72 (4 calls)" col3="" col4="" col5="" col6=""/>
+                                <row id="10" col0="my_sqrt_f" col1="Hls_Layers_UpConv.tpp:52" col2="16" col2_disp="  16 (4 calls)" col3="" col4="" col5="" col6="">
+                                    <row id="1" col0="sqrtf" col1="sqrtfloat.cpp:11" col2="8" col2_disp="   8 (4 calls)" col3="" col4="" col5="" col6=""/>
+                                </row>
+                            </row>
+                            <row id="7" col0="Apply_Norm_And_Write&lt;32, 480, 30, 480&gt;" col1="Hls_Layers_UpConv.tpp:251" col2="1256" col2_disp="1,256 (4 calls)" col3="" col4="" col5="" col6="">
+                                <row id="6" col0="bits_to_half&lt;__fp16&gt;" col1="Hls_Layers_UpConv.tpp:38" col2="144" col2_disp=" 144 (8 calls)" col3="" col4="" col5="" col6=""/>
+                                <row id="11" col0="half_to_bits&lt;__fp16&gt;" col1="Hls_Layers_UpConv.tpp:22" col2="104" col2_disp=" 104 (4 calls)" col3="" col4="" col5="" col6=""/>
+                            </row>
                         </row>
                     </row>
-                    <row id="3" col0="UpConv_Fused_Row&lt;8, 16, 16, 960, 480&gt;" col1="Hls_Layers_UpConv.tpp:79" col2="" col3="8536" col3_disp="8,536 (4 calls)" col4="10472" col4_disp="10,472 (4 calls)" col5="10460" col5_disp="10,460 (4 calls)" col6="10140" col6_disp="10,140 (4 calls)"/>
+                    <row id="3" col0="UpConv_Fused_Row&lt;8, 16, 16, 960, 480&gt;" col1="Hls_Layers_UpConv.tpp:298" col2="" col3="5816" col3_disp="5,816 (4 calls)" col4="8024" col4_disp="8,024 (4 calls)" col5="8020" col5_disp="8,020 (4 calls)" col6="7640" col6_disp="7,640 (4 calls)"/>
                 </row>
             </rows>
             <notes/>

@@ -12,23 +12,23 @@
     "stores": {
       "G": 2
     },
-    "total_instructions": 8606
+    "total_instructions": 5966
   },
   "1": {
-    "basicblocks": 33,
+    "basicblocks": 127,
     "calls": "",
     "file": "Hls_Layers_UpConv.tpp",
-    "fileloc": 79,
-    "instructions": 2134,
+    "fileloc": 298,
+    "instructions": 1474,
     "loads": {
-      "G": 26,
-      "L": 55
+      "G": 28,
+      "L": 73
     },
     "name": "UpConv_Fused_Row<8, 16, 16, 960, 480>",
     "stores": {
-      "G": 489,
-      "L": 45
+      "G": 27,
+      "L": 25
     },
-    "total_instructions": 2134
+    "total_instructions": 1474
   }
 }

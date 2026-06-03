@@ -602,380 +602,326 @@
     <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="/home/tools/Xilinx/Vitis/2024.2/common/technology/autopilot/etc/hls_hypot_apfixed.h:170:9" msg_body="HLS pragma dump">
         <args ARG_PragmaFunction="hypot_fixed" ARG_PragmaIsValid="1" ARG_PragmaType="unroll" ClangWarningOption="dump-hls-pragmas"/>
     </msg>
-    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="../gen/Hls_Layers_UpConv.tpp:23:9" msg_body="HLS pragma dump">
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="../gen/UpConv_Unified.tpp:23:9" msg_body="HLS pragma dump">
         <args ARG_PragmaFunction="half_to_bits" ARG_PragmaIsValid="1" ARG_PragmaType="inline" ClangWarningOption="dump-hls-pragmas"/>
     </msg>
-    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="../gen/Hls_Layers_UpConv.tpp:39:9" msg_body="HLS pragma dump">
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="../gen/UpConv_Unified.tpp:39:9" msg_body="HLS pragma dump">
         <args ARG_PragmaFunction="bits_to_half" ARG_PragmaIsValid="1" ARG_PragmaType="inline" ClangWarningOption="dump-hls-pragmas"/>
     </msg>
-    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="../gen/Hls_Layers_UpConv.tpp:53:9" msg_body="HLS pragma dump">
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="../gen/UpConv_Unified.tpp:53:9" msg_body="HLS pragma dump">
         <args ARG_PragmaFunction="my_sqrt_f" ARG_PragmaIsValid="1" ARG_PragmaType="inline" ClangWarningOption="dump-hls-pragmas"/>
     </msg>
-    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="../gen/Hls_Layers_UpConv.tpp:89:9" msg_body="HLS pragma dump">
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="../gen/UpConv_Unified.tpp:68:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="Reset_Row_Buffer" ARG_PragmaIsValid="1" ARG_PragmaType="inline" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="../gen/UpConv_Unified.tpp:72:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="Reset_Row_Buffer" ARG_PragmaIsValid="1" ARG_PragmaOptions="II=1" ARG_PragmaType="pipeline" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="../gen/UpConv_Unified.tpp:73:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="Reset_Row_Buffer" ARG_PragmaIsValid="1" ARG_PragmaOptions="min=128 max=7680 avg=3840" ARG_PragmaType="loop_tripcount" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="../gen/UpConv_Unified.tpp:75:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="Reset_Row_Buffer" ARG_PragmaIsValid="1" ARG_PragmaType="unroll" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="../gen/UpConv_Unified.tpp:88:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="Load_Weight_Tile" ARG_PragmaIsValid="1" ARG_PragmaType="inline" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="../gen/UpConv_Unified.tpp:95:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="Load_Weight_Tile" ARG_PragmaIsValid="1" ARG_PragmaOptions="II=1" ARG_PragmaType="pipeline" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="../gen/UpConv_Unified.tpp:96:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="Load_Weight_Tile" ARG_PragmaIsValid="1" ARG_PragmaOptions="min=72 max=540 avg=252" ARG_PragmaType="loop_tripcount" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="../gen/UpConv_Unified.tpp:110:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="Compute_MAC_Tile" ARG_PragmaIsValid="1" ARG_PragmaType="inline" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="../gen/UpConv_Unified.tpp:117:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="Compute_MAC_Tile" ARG_PragmaIsValid="1" ARG_PragmaOptions="off" ARG_PragmaType="loop_flatten" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="../gen/UpConv_Unified.tpp:125:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="Compute_MAC_Tile" ARG_PragmaIsValid="1" ARG_PragmaOptions="off" ARG_PragmaType="loop_flatten" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="../gen/UpConv_Unified.tpp:133:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="Compute_MAC_Tile" ARG_PragmaIsValid="1" ARG_PragmaOptions="variable=psum complete dim=0" ARG_PragmaType="array_partition" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="../gen/UpConv_Unified.tpp:137:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="Compute_MAC_Tile" ARG_PragmaIsValid="1" ARG_PragmaOptions="II=1" ARG_PragmaType="pipeline" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="../gen/UpConv_Unified.tpp:138:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="Compute_MAC_Tile" ARG_PragmaIsValid="1" ARG_PragmaOptions="min=128 max=7680 avg=1680" ARG_PragmaType="loop_tripcount" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="../gen/UpConv_Unified.tpp:139:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="Compute_MAC_Tile" ARG_PragmaIsValid="1" ARG_PragmaOptions="variable=psum type=inter false" ARG_PragmaType="dependence" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="../gen/UpConv_Unified.tpp:140:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="Compute_MAC_Tile" ARG_PragmaIsValid="1" ARG_PragmaOptions="variable=row_acc type=inter false" ARG_PragmaType="dependence" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="../gen/UpConv_Unified.tpp:145:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="Compute_MAC_Tile" ARG_PragmaIsValid="1" ARG_PragmaType="unroll" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="../gen/UpConv_Unified.tpp:149:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="Compute_MAC_Tile" ARG_PragmaIsValid="1" ARG_PragmaType="unroll" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="../gen/UpConv_Unified.tpp:162:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="Compute_MAC_Tile" ARG_PragmaIsValid="1" ARG_PragmaType="unroll" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="../gen/UpConv_Unified.tpp:187:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="Load_Norm_Params" ARG_PragmaIsValid="1" ARG_PragmaType="inline" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="../gen/UpConv_Unified.tpp:189:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="Load_Norm_Params" ARG_PragmaIsValid="1" ARG_PragmaOptions="II=1" ARG_PragmaType="pipeline" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="../gen/UpConv_Unified.tpp:190:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="Load_Norm_Params" ARG_PragmaIsValid="1" ARG_PragmaOptions="min=4 max=30 avg=14" ARG_PragmaType="loop_tripcount" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="../gen/UpConv_Unified.tpp:194:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="Load_Norm_Params" ARG_PragmaIsValid="1" ARG_PragmaOptions="II=1" ARG_PragmaType="pipeline" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="../gen/UpConv_Unified.tpp:195:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="Load_Norm_Params" ARG_PragmaIsValid="1" ARG_PragmaOptions="min=4 max=30 avg=14" ARG_PragmaType="loop_tripcount" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="../gen/UpConv_Unified.tpp:199:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="Load_Norm_Params" ARG_PragmaIsValid="1" ARG_PragmaOptions="II=1" ARG_PragmaType="pipeline" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="../gen/UpConv_Unified.tpp:200:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="Load_Norm_Params" ARG_PragmaIsValid="1" ARG_PragmaOptions="min=4 max=30 avg=14" ARG_PragmaType="loop_tripcount" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="../gen/UpConv_Unified.tpp:214:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="Compute_Pixel_Stats" ARG_PragmaIsValid="1" ARG_PragmaType="inline" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="../gen/UpConv_Unified.tpp:216:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="Compute_Pixel_Stats" ARG_PragmaIsValid="1" ARG_PragmaOptions="variable=sum_rot complete" ARG_PragmaType="array_partition" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="../gen/UpConv_Unified.tpp:217:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="Compute_Pixel_Stats" ARG_PragmaIsValid="1" ARG_PragmaOptions="variable=sumsq_rot complete" ARG_PragmaType="array_partition" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="../gen/UpConv_Unified.tpp:222:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="Compute_Pixel_Stats" ARG_PragmaIsValid="1" ARG_PragmaOptions="II=1" ARG_PragmaType="pipeline" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="../gen/UpConv_Unified.tpp:223:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="Compute_Pixel_Stats" ARG_PragmaIsValid="1" ARG_PragmaOptions="min=1024 max=15360 avg=7680" ARG_PragmaType="loop_tripcount" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="../gen/UpConv_Unified.tpp:224:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="Compute_Pixel_Stats" ARG_PragmaIsValid="1" ARG_PragmaOptions="variable=sum_rot type=inter false" ARG_PragmaType="dependence" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="../gen/UpConv_Unified.tpp:225:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="Compute_Pixel_Stats" ARG_PragmaIsValid="1" ARG_PragmaOptions="variable=sumsq_rot type=inter false" ARG_PragmaType="dependence" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="../gen/UpConv_Unified.tpp:226:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="Compute_Pixel_Stats" ARG_PragmaIsValid="1" ARG_PragmaOptions="variable=row_acc type=inter false" ARG_PragmaType="dependence" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="../gen/UpConv_Unified.tpp:244:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="Compute_Pixel_Stats" ARG_PragmaIsValid="1" ARG_PragmaType="unroll" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="../gen/UpConv_Unified.tpp:268:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="Apply_Norm_And_Write" ARG_PragmaIsValid="1" ARG_PragmaType="inline" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="../gen/UpConv_Unified.tpp:272:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="Apply_Norm_And_Write" ARG_PragmaIsValid="1" ARG_PragmaOptions="II=1" ARG_PragmaType="pipeline" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="../gen/UpConv_Unified.tpp:273:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="Apply_Norm_And_Write" ARG_PragmaIsValid="1" ARG_PragmaOptions="min=128 max=7680 avg=3840" ARG_PragmaType="loop_tripcount" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="../gen/UpConv_Unified.tpp:278:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="Apply_Norm_And_Write" ARG_PragmaIsValid="1" ARG_PragmaType="unroll" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="../gen/UpConv_Unified.tpp:309:9" msg_body="HLS pragma dump">
         <args ARG_PragmaFunction="UpConv_Fused_Row" ARG_PragmaIsValid="1" ARG_PragmaOptions="off" ARG_PragmaType="inline" ClangWarningOption="dump-hls-pragmas"/>
     </msg>
-    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="../gen/Hls_Layers_UpConv.tpp:107:9" msg_body="HLS pragma dump">
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="../gen/UpConv_Unified.tpp:324:9" msg_body="HLS pragma dump">
         <args ARG_PragmaFunction="UpConv_Fused_Row" ARG_PragmaIsValid="1" ARG_PragmaOptions="variable=row_acc type=ram_t2p impl=uram" ARG_PragmaType="bind_storage" ClangWarningOption="dump-hls-pragmas"/>
     </msg>
-    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="../gen/Hls_Layers_UpConv.tpp:108:9" msg_body="HLS pragma dump">
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="../gen/UpConv_Unified.tpp:325:9" msg_body="HLS pragma dump">
         <args ARG_PragmaFunction="UpConv_Fused_Row" ARG_PragmaIsValid="1" ARG_PragmaOptions="variable=row_acc cyclic factor=16 dim=2" ARG_PragmaType="array_partition" ClangWarningOption="dump-hls-pragmas"/>
     </msg>
-    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="../gen/Hls_Layers_UpConv.tpp:117:9" msg_body="HLS pragma dump">
-        <args ARG_PragmaFunction="UpConv_Fused_Row" ARG_PragmaIsValid="1" ARG_PragmaOptions="II=1" ARG_PragmaType="pipeline" ClangWarningOption="dump-hls-pragmas"/>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="../gen/UpConv_Unified.tpp:332:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="UpConv_Fused_Row" ARG_PragmaIsValid="1" ARG_PragmaOptions="variable=w_local type=ram_t2p impl=bram latency=2" ARG_PragmaType="bind_storage" ClangWarningOption="dump-hls-pragmas"/>
     </msg>
-    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="../gen/Hls_Layers_UpConv.tpp:119:9" msg_body="HLS pragma dump">
-        <args ARG_PragmaFunction="UpConv_Fused_Row" ARG_PragmaIsValid="1" ARG_PragmaType="unroll" ClangWarningOption="dump-hls-pragmas"/>
-    </msg>
-    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="../gen/Hls_Layers_UpConv.tpp:129:9" msg_body="HLS pragma dump">
-        <args ARG_PragmaFunction="UpConv_Fused_Row" ARG_PragmaIsValid="1" ARG_PragmaOptions="variable=w_local type=ram_t2p impl=bram" ARG_PragmaType="bind_storage" ClangWarningOption="dump-hls-pragmas"/>
-    </msg>
-    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="../gen/Hls_Layers_UpConv.tpp:130:9" msg_body="HLS pragma dump">
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="../gen/UpConv_Unified.tpp:333:9" msg_body="HLS pragma dump">
         <args ARG_PragmaFunction="UpConv_Fused_Row" ARG_PragmaIsValid="1" ARG_PragmaOptions="variable=w_local complete dim=1" ARG_PragmaType="array_partition" ClangWarningOption="dump-hls-pragmas"/>
     </msg>
-    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="../gen/Hls_Layers_UpConv.tpp:143:9" msg_body="HLS pragma dump">
-        <args ARG_PragmaFunction="UpConv_Fused_Row" ARG_PragmaIsValid="1" ARG_PragmaOptions="II=1" ARG_PragmaType="pipeline" ClangWarningOption="dump-hls-pragmas"/>
-    </msg>
-    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="../gen/Hls_Layers_UpConv.tpp:167:9" msg_body="HLS pragma dump">
-        <args ARG_PragmaFunction="UpConv_Fused_Row" ARG_PragmaIsValid="1" ARG_PragmaOptions="variable=psum complete dim=0" ARG_PragmaType="array_partition" ClangWarningOption="dump-hls-pragmas"/>
-    </msg>
-    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="../gen/Hls_Layers_UpConv.tpp:171:9" msg_body="HLS pragma dump">
-        <args ARG_PragmaFunction="UpConv_Fused_Row" ARG_PragmaIsValid="1" ARG_PragmaOptions="II=1" ARG_PragmaType="pipeline" ClangWarningOption="dump-hls-pragmas"/>
-    </msg>
-    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="../gen/Hls_Layers_UpConv.tpp:172:9" msg_body="HLS pragma dump">
-        <args ARG_PragmaFunction="UpConv_Fused_Row" ARG_PragmaIsValid="1" ARG_PragmaOptions="variable=psum type=inter false" ARG_PragmaType="dependence" ClangWarningOption="dump-hls-pragmas"/>
-    </msg>
-    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="../gen/Hls_Layers_UpConv.tpp:173:9" msg_body="HLS pragma dump">
-        <args ARG_PragmaFunction="UpConv_Fused_Row" ARG_PragmaIsValid="1" ARG_PragmaOptions="variable=row_acc type=inter false" ARG_PragmaType="dependence" ClangWarningOption="dump-hls-pragmas"/>
-    </msg>
-    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="../gen/Hls_Layers_UpConv.tpp:178:9" msg_body="HLS pragma dump">
-        <args ARG_PragmaFunction="UpConv_Fused_Row" ARG_PragmaIsValid="1" ARG_PragmaType="unroll" ClangWarningOption="dump-hls-pragmas"/>
-    </msg>
-    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="../gen/Hls_Layers_UpConv.tpp:182:9" msg_body="HLS pragma dump">
-        <args ARG_PragmaFunction="UpConv_Fused_Row" ARG_PragmaIsValid="1" ARG_PragmaType="unroll" ClangWarningOption="dump-hls-pragmas"/>
-    </msg>
-    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="../gen/Hls_Layers_UpConv.tpp:195:9" msg_body="HLS pragma dump">
-        <args ARG_PragmaFunction="UpConv_Fused_Row" ARG_PragmaIsValid="1" ARG_PragmaType="unroll" ClangWarningOption="dump-hls-pragmas"/>
-    </msg>
-    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="../gen/Hls_Layers_UpConv.tpp:217:9" msg_body="HLS pragma dump">
-        <args ARG_PragmaFunction="UpConv_Fused_Row" ARG_PragmaIsValid="1" ARG_PragmaOptions="variable=b_buf type=ram_t2p impl=bram" ARG_PragmaType="bind_storage" ClangWarningOption="dump-hls-pragmas"/>
-    </msg>
-    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="../gen/Hls_Layers_UpConv.tpp:218:9" msg_body="HLS pragma dump">
-        <args ARG_PragmaFunction="UpConv_Fused_Row" ARG_PragmaIsValid="1" ARG_PragmaOptions="variable=g_buf type=ram_t2p impl=bram" ARG_PragmaType="bind_storage" ClangWarningOption="dump-hls-pragmas"/>
-    </msg>
-    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="../gen/Hls_Layers_UpConv.tpp:219:9" msg_body="HLS pragma dump">
-        <args ARG_PragmaFunction="UpConv_Fused_Row" ARG_PragmaIsValid="1" ARG_PragmaOptions="variable=be_buf type=ram_t2p impl=bram" ARG_PragmaType="bind_storage" ClangWarningOption="dump-hls-pragmas"/>
-    </msg>
-    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="../gen/Hls_Layers_UpConv.tpp:222:9" msg_body="HLS pragma dump">
-        <args ARG_PragmaFunction="UpConv_Fused_Row" ARG_PragmaIsValid="1" ARG_PragmaOptions="II=1" ARG_PragmaType="pipeline" ClangWarningOption="dump-hls-pragmas"/>
-    </msg>
-    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="../gen/Hls_Layers_UpConv.tpp:233:9" msg_body="HLS pragma dump">
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="../gen/UpConv_Unified.tpp:337:9" msg_body="HLS pragma dump">
         <args ARG_PragmaFunction="UpConv_Fused_Row" ARG_PragmaIsValid="1" ARG_PragmaOptions="variable=mean_buf type=ram_2p impl=lutram" ARG_PragmaType="bind_storage" ClangWarningOption="dump-hls-pragmas"/>
     </msg>
-    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="../gen/Hls_Layers_UpConv.tpp:234:9" msg_body="HLS pragma dump">
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="../gen/UpConv_Unified.tpp:338:9" msg_body="HLS pragma dump">
         <args ARG_PragmaFunction="UpConv_Fused_Row" ARG_PragmaIsValid="1" ARG_PragmaOptions="variable=inv_buf type=ram_2p impl=lutram" ARG_PragmaType="bind_storage" ClangWarningOption="dump-hls-pragmas"/>
     </msg>
-    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="../gen/Hls_Layers_UpConv.tpp:237:9" msg_body="HLS pragma dump">
-        <args ARG_PragmaFunction="UpConv_Fused_Row" ARG_PragmaIsValid="1" ARG_PragmaOptions="variable=sum_rot complete" ARG_PragmaType="array_partition" ClangWarningOption="dump-hls-pragmas"/>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="../gen/UpConv_Unified.tpp:347:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="UpConv_Fused_Row" ARG_PragmaIsValid="1" ARG_PragmaOptions="min=8 max=60 avg=29" ARG_PragmaType="loop_tripcount" ClangWarningOption="dump-hls-pragmas"/>
     </msg>
-    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="../gen/Hls_Layers_UpConv.tpp:238:9" msg_body="HLS pragma dump">
-        <args ARG_PragmaFunction="UpConv_Fused_Row" ARG_PragmaIsValid="1" ARG_PragmaOptions="variable=sumsq_rot complete" ARG_PragmaType="array_partition" ClangWarningOption="dump-hls-pragmas"/>
-    </msg>
-    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="../gen/Hls_Layers_UpConv.tpp:242:9" msg_body="HLS pragma dump">
-        <args ARG_PragmaFunction="UpConv_Fused_Row" ARG_PragmaIsValid="1" ARG_PragmaOptions="II=1" ARG_PragmaType="pipeline" ClangWarningOption="dump-hls-pragmas"/>
-    </msg>
-    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="../gen/Hls_Layers_UpConv.tpp:243:9" msg_body="HLS pragma dump">
-        <args ARG_PragmaFunction="UpConv_Fused_Row" ARG_PragmaIsValid="1" ARG_PragmaOptions="variable=sum_rot type=inter false" ARG_PragmaType="dependence" ClangWarningOption="dump-hls-pragmas"/>
-    </msg>
-    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="../gen/Hls_Layers_UpConv.tpp:244:9" msg_body="HLS pragma dump">
-        <args ARG_PragmaFunction="UpConv_Fused_Row" ARG_PragmaIsValid="1" ARG_PragmaOptions="variable=sumsq_rot type=inter false" ARG_PragmaType="dependence" ClangWarningOption="dump-hls-pragmas"/>
-    </msg>
-    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="../gen/Hls_Layers_UpConv.tpp:245:9" msg_body="HLS pragma dump">
-        <args ARG_PragmaFunction="UpConv_Fused_Row" ARG_PragmaIsValid="1" ARG_PragmaOptions="variable=row_acc type=inter false" ARG_PragmaType="dependence" ClangWarningOption="dump-hls-pragmas"/>
-    </msg>
-    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="../gen/Hls_Layers_UpConv.tpp:263:9" msg_body="HLS pragma dump">
-        <args ARG_PragmaFunction="UpConv_Fused_Row" ARG_PragmaIsValid="1" ARG_PragmaType="unroll" ClangWarningOption="dump-hls-pragmas"/>
-    </msg>
-    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="../gen/Hls_Layers_UpConv.tpp:279:9" msg_body="HLS pragma dump">
-        <args ARG_PragmaFunction="UpConv_Fused_Row" ARG_PragmaIsValid="1" ARG_PragmaOptions="II=1" ARG_PragmaType="pipeline" ClangWarningOption="dump-hls-pragmas"/>
-    </msg>
-    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="../gen/Hls_Layers_UpConv.tpp:284:9" msg_body="HLS pragma dump">
-        <args ARG_PragmaFunction="UpConv_Fused_Row" ARG_PragmaIsValid="1" ARG_PragmaType="unroll" ClangWarningOption="dump-hls-pragmas"/>
-    </msg>
-    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="../gen/Hls_Layers_UpConv.tpp:312:9" msg_body="HLS pragma dump">
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="../gen/UpConv_Unified.tpp:372:9" msg_body="HLS pragma dump">
         <args ARG_PragmaFunction="UpConv_Fused_Top" ARG_PragmaIsValid="1" ARG_PragmaType="inline" ClangWarningOption="dump-hls-pragmas"/>
     </msg>
-    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="../gen/Hls_Layers_UpConv.tpp:318:9" msg_body="HLS pragma dump">
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="../gen/UpConv_Unified.tpp:379:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="UpConv_Fused_Top" ARG_PragmaIsValid="1" ARG_PragmaOptions="variable=b_buf type=ram_t2p impl=bram" ARG_PragmaType="bind_storage" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="../gen/UpConv_Unified.tpp:380:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="UpConv_Fused_Top" ARG_PragmaIsValid="1" ARG_PragmaOptions="variable=g_buf type=ram_t2p impl=bram" ARG_PragmaType="bind_storage" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="../gen/UpConv_Unified.tpp:381:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="UpConv_Fused_Top" ARG_PragmaIsValid="1" ARG_PragmaOptions="variable=be_buf type=ram_t2p impl=bram" ARG_PragmaType="bind_storage" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="../gen/UpConv_Unified.tpp:388:9" msg_body="HLS pragma dump">
         <args ARG_PragmaFunction="UpConv_Fused_Top" ARG_PragmaIsValid="1" ARG_PragmaOptions="II=1" ARG_PragmaType="pipeline" ClangWarningOption="dump-hls-pragmas"/>
     </msg>
-    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="../gen/Hls_Layers_UpConv.tpp:329:9" msg_body="HLS pragma dump">
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="../gen/UpConv_Unified.tpp:389:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="UpConv_Fused_Top" ARG_PragmaIsValid="1" ARG_PragmaOptions="min=64 max=7680 avg=960" ARG_PragmaType="loop_tripcount" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="../gen/UpConv_Unified.tpp:396:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="UpConv_Fused_Top" ARG_PragmaIsValid="1" ARG_PragmaOptions="min=16 max=128 avg=64" ARG_PragmaType="loop_tripcount" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="../gen/UpConv_Unified.tpp:401:9" msg_body="HLS pragma dump">
         <args ARG_PragmaFunction="UpConv_Fused_Top" ARG_PragmaIsValid="1" ARG_PragmaOptions="II=1" ARG_PragmaType="pipeline" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="../gen/UpConv_Unified.tpp:402:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="UpConv_Fused_Top" ARG_PragmaIsValid="1" ARG_PragmaOptions="min=64 max=7680 avg=960" ARG_PragmaType="loop_tripcount" ClangWarningOption="dump-hls-pragmas"/>
     </msg>
     <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="directive:1:9" msg_body="HLS pragma dump">
         <args ARG_PragmaContext="directive" ARG_PragmaFunction="upconv_core_top" ARG_PragmaIsValid="1" ARG_PragmaOptions="name=upconv_core_top" ARG_PragmaType="top" ClangWarningOption="dump-hls-pragmas"/>
     </msg>
-    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="../gen/upconv_core_top.cpp:21:9" msg_body="HLS pragma dump">
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="../gen/upconv_core_top.cpp:20:9" msg_body="HLS pragma dump">
         <args ARG_PragmaFunction="upconv_core_top" ARG_PragmaIsValid="1" ARG_PragmaOptions="m_axi port=X offset=slave bundle=gmem_in max_read_burst_length=64" ARG_PragmaType="interface" ClangWarningOption="dump-hls-pragmas"/>
     </msg>
-    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="../gen/upconv_core_top.cpp:22:9" msg_body="HLS pragma dump">
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="../gen/upconv_core_top.cpp:21:9" msg_body="HLS pragma dump">
         <args ARG_PragmaFunction="upconv_core_top" ARG_PragmaIsValid="1" ARG_PragmaOptions="m_axi port=W offset=slave bundle=gmem_weight max_read_burst_length=64" ARG_PragmaType="interface" ClangWarningOption="dump-hls-pragmas"/>
     </msg>
-    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="../gen/upconv_core_top.cpp:23:9" msg_body="HLS pragma dump">
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="../gen/upconv_core_top.cpp:22:9" msg_body="HLS pragma dump">
         <args ARG_PragmaFunction="upconv_core_top" ARG_PragmaIsValid="1" ARG_PragmaOptions="m_axi port=B offset=slave bundle=gmem_param max_read_burst_length=64" ARG_PragmaType="interface" ClangWarningOption="dump-hls-pragmas"/>
     </msg>
-    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="../gen/upconv_core_top.cpp:24:9" msg_body="HLS pragma dump">
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="../gen/upconv_core_top.cpp:23:9" msg_body="HLS pragma dump">
         <args ARG_PragmaFunction="upconv_core_top" ARG_PragmaIsValid="1" ARG_PragmaOptions="m_axi port=G offset=slave bundle=gmem_param max_read_burst_length=64" ARG_PragmaType="interface" ClangWarningOption="dump-hls-pragmas"/>
     </msg>
-    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="../gen/upconv_core_top.cpp:25:9" msg_body="HLS pragma dump">
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="../gen/upconv_core_top.cpp:24:9" msg_body="HLS pragma dump">
         <args ARG_PragmaFunction="upconv_core_top" ARG_PragmaIsValid="1" ARG_PragmaOptions="m_axi port=BE offset=slave bundle=gmem_param max_read_burst_length=64" ARG_PragmaType="interface" ClangWarningOption="dump-hls-pragmas"/>
     </msg>
-    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="../gen/upconv_core_top.cpp:26:9" msg_body="HLS pragma dump">
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="../gen/upconv_core_top.cpp:25:9" msg_body="HLS pragma dump">
         <args ARG_PragmaFunction="upconv_core_top" ARG_PragmaIsValid="1" ARG_PragmaOptions="m_axi port=Y offset=slave bundle=gmem_out max_write_burst_length=64" ARG_PragmaType="interface" ClangWarningOption="dump-hls-pragmas"/>
     </msg>
-    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="../gen/upconv_core_top.cpp:28:9" msg_body="HLS pragma dump">
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="../gen/upconv_core_top.cpp:27:9" msg_body="HLS pragma dump">
         <args ARG_PragmaFunction="upconv_core_top" ARG_PragmaIsValid="1" ARG_PragmaOptions="s_axilite port=X bundle=control" ARG_PragmaType="interface" ClangWarningOption="dump-hls-pragmas"/>
     </msg>
-    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="../gen/upconv_core_top.cpp:29:9" msg_body="HLS pragma dump">
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="../gen/upconv_core_top.cpp:28:9" msg_body="HLS pragma dump">
         <args ARG_PragmaFunction="upconv_core_top" ARG_PragmaIsValid="1" ARG_PragmaOptions="s_axilite port=W bundle=control" ARG_PragmaType="interface" ClangWarningOption="dump-hls-pragmas"/>
     </msg>
-    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="../gen/upconv_core_top.cpp:30:9" msg_body="HLS pragma dump">
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="../gen/upconv_core_top.cpp:29:9" msg_body="HLS pragma dump">
         <args ARG_PragmaFunction="upconv_core_top" ARG_PragmaIsValid="1" ARG_PragmaOptions="s_axilite port=B bundle=control" ARG_PragmaType="interface" ClangWarningOption="dump-hls-pragmas"/>
     </msg>
-    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="../gen/upconv_core_top.cpp:31:9" msg_body="HLS pragma dump">
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="../gen/upconv_core_top.cpp:30:9" msg_body="HLS pragma dump">
         <args ARG_PragmaFunction="upconv_core_top" ARG_PragmaIsValid="1" ARG_PragmaOptions="s_axilite port=G bundle=control" ARG_PragmaType="interface" ClangWarningOption="dump-hls-pragmas"/>
     </msg>
-    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="../gen/upconv_core_top.cpp:32:9" msg_body="HLS pragma dump">
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="../gen/upconv_core_top.cpp:31:9" msg_body="HLS pragma dump">
         <args ARG_PragmaFunction="upconv_core_top" ARG_PragmaIsValid="1" ARG_PragmaOptions="s_axilite port=BE bundle=control" ARG_PragmaType="interface" ClangWarningOption="dump-hls-pragmas"/>
     </msg>
-    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="../gen/upconv_core_top.cpp:33:9" msg_body="HLS pragma dump">
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="../gen/upconv_core_top.cpp:32:9" msg_body="HLS pragma dump">
         <args ARG_PragmaFunction="upconv_core_top" ARG_PragmaIsValid="1" ARG_PragmaOptions="s_axilite port=Y bundle=control" ARG_PragmaType="interface" ClangWarningOption="dump-hls-pragmas"/>
     </msg>
-    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="../gen/upconv_core_top.cpp:34:9" msg_body="HLS pragma dump">
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="../gen/upconv_core_top.cpp:33:9" msg_body="HLS pragma dump">
         <args ARG_PragmaFunction="upconv_core_top" ARG_PragmaIsValid="1" ARG_PragmaOptions="s_axilite port=epsilon bundle=control" ARG_PragmaType="interface" ClangWarningOption="dump-hls-pragmas"/>
     </msg>
-    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="../gen/upconv_core_top.cpp:35:9" msg_body="HLS pragma dump">
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="../gen/upconv_core_top.cpp:34:9" msg_body="HLS pragma dump">
         <args ARG_PragmaFunction="upconv_core_top" ARG_PragmaIsValid="1" ARG_PragmaOptions="s_axilite port=mode bundle=control" ARG_PragmaType="interface" ClangWarningOption="dump-hls-pragmas"/>
     </msg>
-    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="../gen/upconv_core_top.cpp:36:9" msg_body="HLS pragma dump">
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="../gen/upconv_core_top.cpp:35:9" msg_body="HLS pragma dump">
         <args ARG_PragmaFunction="upconv_core_top" ARG_PragmaIsValid="1" ARG_PragmaOptions="s_axilite port=return bundle=control" ARG_PragmaType="interface" ClangWarningOption="dump-hls-pragmas"/>
     </msg>
-    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="../gen/upconv_core_top.cpp:42:9" msg_body="HLS pragma dump">
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="../gen/upconv_core_top.cpp:41:9" msg_body="HLS pragma dump">
         <args ARG_PragmaFunction="upconv_core_top" ARG_PragmaIsValid="1" ARG_PragmaOptions="variable=x_buf type=ram_t2p impl=uram" ARG_PragmaType="bind_storage" ClangWarningOption="dump-hls-pragmas"/>
     </msg>
-    <msg msg_groups="CODE_UNSUPPORTED" msg_id="214-131" msg_severity="INFO" msg_loc="../gen/Hls_Layers_UpConv.tpp:291:45" msg_body="Inlining function 'ap_uint&lt;16&gt; half_to_bits&lt;half&gt;(half)' into 'void UpConv_Fused_Row&lt;8, 16, 16, 960, 480&gt;(ap_uint&lt;256&gt;*, ap_uint&lt;256&gt; const*, ap_uint&lt;256&gt; const*, ap_uint&lt;256&gt; const*, ap_uint&lt;256&gt; const*, ap_uint&lt;256&gt;*, half, int)'">
-        <args Callee="ap_uint&lt;16&gt; half_to_bits&lt;half&gt;(half)" Callee-DebugLoc="File ../gen/Hls_Layers_UpConv.tpp Line 22 Column 0" Caller="void UpConv_Fused_Row&lt;8, 16, 16, 960, 480&gt;(ap_uint&lt;256&gt;*, ap_uint&lt;256&gt; const*, ap_uint&lt;256&gt; const*, ap_uint&lt;256&gt; const*, ap_uint&lt;256&gt; const*, ap_uint&lt;256&gt;*, half, int)" Caller-DebugLoc="File ../gen/Hls_Layers_UpConv.tpp Line 88 Column 0"/>
+    <msg msg_groups="CODE_UNSUPPORTED" msg_id="214-131" msg_severity="INFO" msg_loc="../gen/UpConv_Unified.tpp:151:37" msg_body="Inlining function 'half bits_to_half&lt;half&gt;(ap_uint&lt;16&gt;)' into 'void Compute_MAC_Tile&lt;8&gt;(ap_uint&lt;256&gt;*, ap_uint&lt;256&gt; const (&amp;) [8][540], half (&amp;) [256][480], int, int, int, int, int, int)'">
+        <args Callee="half bits_to_half&lt;half&gt;(ap_uint&lt;16&gt;)" Callee-DebugLoc="File ../gen/UpConv_Unified.tpp Line 38 Column 0" Caller="void Compute_MAC_Tile&lt;8&gt;(ap_uint&lt;256&gt;*, ap_uint&lt;256&gt; const (&amp;) [8][540], half (&amp;) [256][480], int, int, int, int, int, int)" Caller-DebugLoc="File ../gen/UpConv_Unified.tpp Line 109 Column 0"/>
     </msg>
-    <msg msg_groups="CODE_UNSUPPORTED" msg_id="214-131" msg_severity="INFO" msg_loc="../gen/Hls_Layers_UpConv.tpp:288:25" msg_body="Inlining function 'half bits_to_half&lt;half&gt;(ap_uint&lt;16&gt;)' into 'void UpConv_Fused_Row&lt;8, 16, 16, 960, 480&gt;(ap_uint&lt;256&gt;*, ap_uint&lt;256&gt; const*, ap_uint&lt;256&gt; const*, ap_uint&lt;256&gt; const*, ap_uint&lt;256&gt; const*, ap_uint&lt;256&gt;*, half, int)'">
-        <args Callee="half bits_to_half&lt;half&gt;(ap_uint&lt;16&gt;)" Callee-DebugLoc="File ../gen/Hls_Layers_UpConv.tpp Line 38 Column 0" Caller="void UpConv_Fused_Row&lt;8, 16, 16, 960, 480&gt;(ap_uint&lt;256&gt;*, ap_uint&lt;256&gt; const*, ap_uint&lt;256&gt; const*, ap_uint&lt;256&gt; const*, ap_uint&lt;256&gt; const*, ap_uint&lt;256&gt;*, half, int)" Caller-DebugLoc="File ../gen/Hls_Layers_UpConv.tpp Line 88 Column 0"/>
+    <msg msg_groups="CODE_UNSUPPORTED" msg_id="214-131" msg_severity="INFO" msg_loc="../gen/UpConv_Unified.tpp:251:43" msg_body="Inlining function 'my_sqrt_f(float)' into 'Compute_Pixel_Stats(half (&amp;) [256][480], ap_uint&lt;256&gt; const (&amp;) [30], float (&amp;) [256], half (&amp;) [256], half, float, int, int)'">
+        <args Callee="my_sqrt_f(float)" Callee-DebugLoc="File ../gen/UpConv_Unified.tpp Line 52 Column 0" Caller="Compute_Pixel_Stats(half (&amp;) [256][480], ap_uint&lt;256&gt; const (&amp;) [30], float (&amp;) [256], half (&amp;) [256], half, float, int, int)" Caller-DebugLoc="File ../gen/UpConv_Unified.tpp Line 213 Column 0"/>
     </msg>
-    <msg msg_groups="CODE_UNSUPPORTED" msg_id="214-131" msg_severity="INFO" msg_loc="../gen/Hls_Layers_UpConv.tpp:270:43" msg_body="Inlining function 'my_sqrt_f(float)' into 'void UpConv_Fused_Row&lt;8, 16, 16, 960, 480&gt;(ap_uint&lt;256&gt;*, ap_uint&lt;256&gt; const*, ap_uint&lt;256&gt; const*, ap_uint&lt;256&gt; const*, ap_uint&lt;256&gt; const*, ap_uint&lt;256&gt;*, half, int)'">
-        <args Callee="my_sqrt_f(float)" Callee-DebugLoc="File ../gen/Hls_Layers_UpConv.tpp Line 52 Column 0" Caller="void UpConv_Fused_Row&lt;8, 16, 16, 960, 480&gt;(ap_uint&lt;256&gt;*, ap_uint&lt;256&gt; const*, ap_uint&lt;256&gt; const*, ap_uint&lt;256&gt; const*, ap_uint&lt;256&gt; const*, ap_uint&lt;256&gt;*, half, int)" Caller-DebugLoc="File ../gen/Hls_Layers_UpConv.tpp Line 88 Column 0"/>
+    <msg msg_groups="CODE_UNSUPPORTED" msg_id="214-131" msg_severity="INFO" msg_loc="../gen/UpConv_Unified.tpp:228:23" msg_body="Inlining function 'half bits_to_half&lt;half&gt;(ap_uint&lt;16&gt;)' into 'Compute_Pixel_Stats(half (&amp;) [256][480], ap_uint&lt;256&gt; const (&amp;) [30], float (&amp;) [256], half (&amp;) [256], half, float, int, int)'">
+        <args Callee="half bits_to_half&lt;half&gt;(ap_uint&lt;16&gt;)" Callee-DebugLoc="File ../gen/UpConv_Unified.tpp Line 38 Column 0" Caller="Compute_Pixel_Stats(half (&amp;) [256][480], ap_uint&lt;256&gt; const (&amp;) [30], float (&amp;) [256], half (&amp;) [256], half, float, int, int)" Caller-DebugLoc="File ../gen/UpConv_Unified.tpp Line 213 Column 0"/>
     </msg>
-    <msg msg_groups="CODE_UNSUPPORTED" msg_id="214-131" msg_severity="INFO" msg_loc="../gen/Hls_Layers_UpConv.tpp:291:45" msg_body="Inlining function 'ap_uint&lt;16&gt; half_to_bits&lt;half&gt;(half)' into 'void UpConv_Fused_Row&lt;8, 32, 32, 480, 240&gt;(ap_uint&lt;256&gt;*, ap_uint&lt;256&gt; const*, ap_uint&lt;256&gt; const*, ap_uint&lt;256&gt; const*, ap_uint&lt;256&gt; const*, ap_uint&lt;256&gt;*, half, int)'">
-        <args Callee="ap_uint&lt;16&gt; half_to_bits&lt;half&gt;(half)" Callee-DebugLoc="File ../gen/Hls_Layers_UpConv.tpp Line 22 Column 0" Caller="void UpConv_Fused_Row&lt;8, 32, 32, 480, 240&gt;(ap_uint&lt;256&gt;*, ap_uint&lt;256&gt; const*, ap_uint&lt;256&gt; const*, ap_uint&lt;256&gt; const*, ap_uint&lt;256&gt; const*, ap_uint&lt;256&gt;*, half, int)" Caller-DebugLoc="File ../gen/Hls_Layers_UpConv.tpp Line 88 Column 0"/>
+    <msg msg_groups="CODE_UNSUPPORTED" msg_id="214-131" msg_severity="INFO" msg_loc="../gen/UpConv_Unified.tpp:285:45" msg_body="Inlining function 'ap_uint&lt;16&gt; half_to_bits&lt;half&gt;(half)' into 'Apply_Norm_And_Write(half const (&amp;) [256][480], ap_uint&lt;256&gt; const (&amp;) [30], ap_uint&lt;256&gt; const (&amp;) [30], float const (&amp;) [256], half const (&amp;) [256], ap_uint&lt;256&gt;*, int, int, int, int)'">
+        <args Callee="ap_uint&lt;16&gt; half_to_bits&lt;half&gt;(half)" Callee-DebugLoc="File ../gen/UpConv_Unified.tpp Line 22 Column 0" Caller="Apply_Norm_And_Write(half const (&amp;) [256][480], ap_uint&lt;256&gt; const (&amp;) [30], ap_uint&lt;256&gt; const (&amp;) [30], float const (&amp;) [256], half const (&amp;) [256], ap_uint&lt;256&gt;*, int, int, int, int)" Caller-DebugLoc="File ../gen/UpConv_Unified.tpp Line 267 Column 0"/>
     </msg>
-    <msg msg_groups="CODE_UNSUPPORTED" msg_id="214-131" msg_severity="INFO" msg_loc="../gen/Hls_Layers_UpConv.tpp:288:25" msg_body="Inlining function 'half bits_to_half&lt;half&gt;(ap_uint&lt;16&gt;)' into 'void UpConv_Fused_Row&lt;8, 32, 32, 480, 240&gt;(ap_uint&lt;256&gt;*, ap_uint&lt;256&gt; const*, ap_uint&lt;256&gt; const*, ap_uint&lt;256&gt; const*, ap_uint&lt;256&gt; const*, ap_uint&lt;256&gt;*, half, int)'">
-        <args Callee="half bits_to_half&lt;half&gt;(ap_uint&lt;16&gt;)" Callee-DebugLoc="File ../gen/Hls_Layers_UpConv.tpp Line 38 Column 0" Caller="void UpConv_Fused_Row&lt;8, 32, 32, 480, 240&gt;(ap_uint&lt;256&gt;*, ap_uint&lt;256&gt; const*, ap_uint&lt;256&gt; const*, ap_uint&lt;256&gt; const*, ap_uint&lt;256&gt; const*, ap_uint&lt;256&gt;*, half, int)" Caller-DebugLoc="File ../gen/Hls_Layers_UpConv.tpp Line 88 Column 0"/>
+    <msg msg_groups="CODE_UNSUPPORTED" msg_id="214-131" msg_severity="INFO" msg_loc="../gen/UpConv_Unified.tpp:282:25" msg_body="Inlining function 'half bits_to_half&lt;half&gt;(ap_uint&lt;16&gt;)' into 'Apply_Norm_And_Write(half const (&amp;) [256][480], ap_uint&lt;256&gt; const (&amp;) [30], ap_uint&lt;256&gt; const (&amp;) [30], float const (&amp;) [256], half const (&amp;) [256], ap_uint&lt;256&gt;*, int, int, int, int)'">
+        <args Callee="half bits_to_half&lt;half&gt;(ap_uint&lt;16&gt;)" Callee-DebugLoc="File ../gen/UpConv_Unified.tpp Line 38 Column 0" Caller="Apply_Norm_And_Write(half const (&amp;) [256][480], ap_uint&lt;256&gt; const (&amp;) [30], ap_uint&lt;256&gt; const (&amp;) [30], float const (&amp;) [256], half const (&amp;) [256], ap_uint&lt;256&gt;*, int, int, int, int)" Caller-DebugLoc="File ../gen/UpConv_Unified.tpp Line 267 Column 0"/>
     </msg>
-    <msg msg_groups="CODE_UNSUPPORTED" msg_id="214-131" msg_severity="INFO" msg_loc="../gen/Hls_Layers_UpConv.tpp:270:43" msg_body="Inlining function 'my_sqrt_f(float)' into 'void UpConv_Fused_Row&lt;8, 32, 32, 480, 240&gt;(ap_uint&lt;256&gt;*, ap_uint&lt;256&gt; const*, ap_uint&lt;256&gt; const*, ap_uint&lt;256&gt; const*, ap_uint&lt;256&gt; const*, ap_uint&lt;256&gt;*, half, int)'">
-        <args Callee="my_sqrt_f(float)" Callee-DebugLoc="File ../gen/Hls_Layers_UpConv.tpp Line 52 Column 0" Caller="void UpConv_Fused_Row&lt;8, 32, 32, 480, 240&gt;(ap_uint&lt;256&gt;*, ap_uint&lt;256&gt; const*, ap_uint&lt;256&gt; const*, ap_uint&lt;256&gt; const*, ap_uint&lt;256&gt; const*, ap_uint&lt;256&gt;*, half, int)" Caller-DebugLoc="File ../gen/Hls_Layers_UpConv.tpp Line 88 Column 0"/>
+    <msg msg_groups="CODE_UNSUPPORTED" msg_id="214-131" msg_severity="INFO" msg_loc="../gen/UpConv_Unified.tpp:344:2" msg_body="Inlining function 'Reset_Row_Buffer(half (&amp;) [256][480], int, int)' into 'void UpConv_Fused_Row&lt;8&gt;(ap_uint&lt;256&gt;*, ap_uint&lt;256&gt; const*, ap_uint&lt;256&gt; const (&amp;) [30], ap_uint&lt;256&gt; const (&amp;) [30], ap_uint&lt;256&gt; const (&amp;) [30], ap_uint&lt;256&gt;*, half, float, int, int, int, int, int)'">
+        <args Callee="Reset_Row_Buffer(half (&amp;) [256][480], int, int)" Callee-DebugLoc="File ../gen/UpConv_Unified.tpp Line 67 Column 0" Caller="void UpConv_Fused_Row&lt;8&gt;(ap_uint&lt;256&gt;*, ap_uint&lt;256&gt; const*, ap_uint&lt;256&gt; const (&amp;) [30], ap_uint&lt;256&gt; const (&amp;) [30], ap_uint&lt;256&gt; const (&amp;) [30], ap_uint&lt;256&gt;*, half, float, int, int, int, int, int)" Caller-DebugLoc="File ../gen/UpConv_Unified.tpp Line 308 Column 0"/>
     </msg>
-    <msg msg_groups="CODE_UNSUPPORTED" msg_id="214-131" msg_severity="INFO" msg_loc="../gen/Hls_Layers_UpConv.tpp:291:45" msg_body="Inlining function 'ap_uint&lt;16&gt; half_to_bits&lt;half&gt;(half)' into 'void UpConv_Fused_Row&lt;8, 64, 64, 240, 120&gt;(ap_uint&lt;256&gt;*, ap_uint&lt;256&gt; const*, ap_uint&lt;256&gt; const*, ap_uint&lt;256&gt; const*, ap_uint&lt;256&gt; const*, ap_uint&lt;256&gt;*, half, int)'">
-        <args Callee="ap_uint&lt;16&gt; half_to_bits&lt;half&gt;(half)" Callee-DebugLoc="File ../gen/Hls_Layers_UpConv.tpp Line 22 Column 0" Caller="void UpConv_Fused_Row&lt;8, 64, 64, 240, 120&gt;(ap_uint&lt;256&gt;*, ap_uint&lt;256&gt; const*, ap_uint&lt;256&gt; const*, ap_uint&lt;256&gt; const*, ap_uint&lt;256&gt; const*, ap_uint&lt;256&gt;*, half, int)" Caller-DebugLoc="File ../gen/Hls_Layers_UpConv.tpp Line 88 Column 0"/>
+    <msg msg_groups="CODE_UNSUPPORTED" msg_id="214-131" msg_severity="INFO" msg_loc="../gen/UpConv_Unified.tpp:353:5" msg_body="Inlining function 'Apply_Norm_And_Write(half const (&amp;) [256][480], ap_uint&lt;256&gt; const (&amp;) [30], ap_uint&lt;256&gt; const (&amp;) [30], float const (&amp;) [256], half const (&amp;) [256], ap_uint&lt;256&gt;*, int, int, int, int)' into 'void UpConv_Fused_Row&lt;8&gt;(ap_uint&lt;256&gt;*, ap_uint&lt;256&gt; const*, ap_uint&lt;256&gt; const (&amp;) [30], ap_uint&lt;256&gt; const (&amp;) [30], ap_uint&lt;256&gt; const (&amp;) [30], ap_uint&lt;256&gt;*, half, float, int, int, int, int, int)'">
+        <args Callee="Apply_Norm_And_Write(half const (&amp;) [256][480], ap_uint&lt;256&gt; const (&amp;) [30], ap_uint&lt;256&gt; const (&amp;) [30], float const (&amp;) [256], half const (&amp;) [256], ap_uint&lt;256&gt;*, int, int, int, int)" Callee-DebugLoc="File ../gen/UpConv_Unified.tpp Line 267 Column 0" Caller="void UpConv_Fused_Row&lt;8&gt;(ap_uint&lt;256&gt;*, ap_uint&lt;256&gt; const*, ap_uint&lt;256&gt; const (&amp;) [30], ap_uint&lt;256&gt; const (&amp;) [30], ap_uint&lt;256&gt; const (&amp;) [30], ap_uint&lt;256&gt;*, half, float, int, int, int, int, int)" Caller-DebugLoc="File ../gen/UpConv_Unified.tpp Line 308 Column 0"/>
     </msg>
-    <msg msg_groups="CODE_UNSUPPORTED" msg_id="214-131" msg_severity="INFO" msg_loc="../gen/Hls_Layers_UpConv.tpp:288:25" msg_body="Inlining function 'half bits_to_half&lt;half&gt;(ap_uint&lt;16&gt;)' into 'void UpConv_Fused_Row&lt;8, 64, 64, 240, 120&gt;(ap_uint&lt;256&gt;*, ap_uint&lt;256&gt; const*, ap_uint&lt;256&gt; const*, ap_uint&lt;256&gt; const*, ap_uint&lt;256&gt; const*, ap_uint&lt;256&gt;*, half, int)'">
-        <args Callee="half bits_to_half&lt;half&gt;(ap_uint&lt;16&gt;)" Callee-DebugLoc="File ../gen/Hls_Layers_UpConv.tpp Line 38 Column 0" Caller="void UpConv_Fused_Row&lt;8, 64, 64, 240, 120&gt;(ap_uint&lt;256&gt;*, ap_uint&lt;256&gt; const*, ap_uint&lt;256&gt; const*, ap_uint&lt;256&gt; const*, ap_uint&lt;256&gt; const*, ap_uint&lt;256&gt;*, half, int)" Caller-DebugLoc="File ../gen/Hls_Layers_UpConv.tpp Line 88 Column 0"/>
+    <msg msg_groups="CODE_UNSUPPORTED" msg_id="214-131" msg_severity="INFO" msg_loc="../gen/UpConv_Unified.tpp:352:5" msg_body="Inlining function 'Compute_Pixel_Stats(half (&amp;) [256][480], ap_uint&lt;256&gt; const (&amp;) [30], float (&amp;) [256], half (&amp;) [256], half, float, int, int)' into 'void UpConv_Fused_Row&lt;8&gt;(ap_uint&lt;256&gt;*, ap_uint&lt;256&gt; const*, ap_uint&lt;256&gt; const (&amp;) [30], ap_uint&lt;256&gt; const (&amp;) [30], ap_uint&lt;256&gt; const (&amp;) [30], ap_uint&lt;256&gt;*, half, float, int, int, int, int, int)'">
+        <args Callee="Compute_Pixel_Stats(half (&amp;) [256][480], ap_uint&lt;256&gt; const (&amp;) [30], float (&amp;) [256], half (&amp;) [256], half, float, int, int)" Callee-DebugLoc="File ../gen/UpConv_Unified.tpp Line 213 Column 0" Caller="void UpConv_Fused_Row&lt;8&gt;(ap_uint&lt;256&gt;*, ap_uint&lt;256&gt; const*, ap_uint&lt;256&gt; const (&amp;) [30], ap_uint&lt;256&gt; const (&amp;) [30], ap_uint&lt;256&gt; const (&amp;) [30], ap_uint&lt;256&gt;*, half, float, int, int, int, int, int)" Caller-DebugLoc="File ../gen/UpConv_Unified.tpp Line 308 Column 0"/>
     </msg>
-    <msg msg_groups="CODE_UNSUPPORTED" msg_id="214-131" msg_severity="INFO" msg_loc="../gen/Hls_Layers_UpConv.tpp:270:43" msg_body="Inlining function 'my_sqrt_f(float)' into 'void UpConv_Fused_Row&lt;8, 64, 64, 240, 120&gt;(ap_uint&lt;256&gt;*, ap_uint&lt;256&gt; const*, ap_uint&lt;256&gt; const*, ap_uint&lt;256&gt; const*, ap_uint&lt;256&gt; const*, ap_uint&lt;256&gt;*, half, int)'">
-        <args Callee="my_sqrt_f(float)" Callee-DebugLoc="File ../gen/Hls_Layers_UpConv.tpp Line 52 Column 0" Caller="void UpConv_Fused_Row&lt;8, 64, 64, 240, 120&gt;(ap_uint&lt;256&gt;*, ap_uint&lt;256&gt; const*, ap_uint&lt;256&gt; const*, ap_uint&lt;256&gt; const*, ap_uint&lt;256&gt; const*, ap_uint&lt;256&gt;*, half, int)" Caller-DebugLoc="File ../gen/Hls_Layers_UpConv.tpp Line 88 Column 0"/>
+    <msg msg_groups="CODE_UNSUPPORTED" msg_id="214-131" msg_severity="INFO" msg_loc="../gen/UpConv_Unified.tpp:348:2" msg_body="Inlining function 'void Load_Weight_Tile&lt;8&gt;(ap_uint&lt;256&gt; const*, ap_uint&lt;256&gt; (&amp;) [8][540], int, int, int)' into 'void UpConv_Fused_Row&lt;8&gt;(ap_uint&lt;256&gt;*, ap_uint&lt;256&gt; const*, ap_uint&lt;256&gt; const (&amp;) [30], ap_uint&lt;256&gt; const (&amp;) [30], ap_uint&lt;256&gt; const (&amp;) [30], ap_uint&lt;256&gt;*, half, float, int, int, int, int, int)'">
+        <args Callee="void Load_Weight_Tile&lt;8&gt;(ap_uint&lt;256&gt; const*, ap_uint&lt;256&gt; (&amp;) [8][540], int, int, int)" Callee-DebugLoc="File ../gen/UpConv_Unified.tpp Line 87 Column 0" Caller="void UpConv_Fused_Row&lt;8&gt;(ap_uint&lt;256&gt;*, ap_uint&lt;256&gt; const*, ap_uint&lt;256&gt; const (&amp;) [30], ap_uint&lt;256&gt; const (&amp;) [30], ap_uint&lt;256&gt; const (&amp;) [30], ap_uint&lt;256&gt;*, half, float, int, int, int, int, int)" Caller-DebugLoc="File ../gen/UpConv_Unified.tpp Line 308 Column 0"/>
     </msg>
-    <msg msg_groups="CODE_UNSUPPORTED" msg_id="214-131" msg_severity="INFO" msg_loc="../gen/Hls_Layers_UpConv.tpp:291:45" msg_body="Inlining function 'ap_uint&lt;16&gt; half_to_bits&lt;half&gt;(half)' into 'void UpConv_Fused_Row&lt;8, 128, 128, 120, 60&gt;(ap_uint&lt;256&gt;*, ap_uint&lt;256&gt; const*, ap_uint&lt;256&gt; const*, ap_uint&lt;256&gt; const*, ap_uint&lt;256&gt; const*, ap_uint&lt;256&gt;*, half, int)'">
-        <args Callee="ap_uint&lt;16&gt; half_to_bits&lt;half&gt;(half)" Callee-DebugLoc="File ../gen/Hls_Layers_UpConv.tpp Line 22 Column 0" Caller="void UpConv_Fused_Row&lt;8, 128, 128, 120, 60&gt;(ap_uint&lt;256&gt;*, ap_uint&lt;256&gt; const*, ap_uint&lt;256&gt; const*, ap_uint&lt;256&gt; const*, ap_uint&lt;256&gt; const*, ap_uint&lt;256&gt;*, half, int)" Caller-DebugLoc="File ../gen/Hls_Layers_UpConv.tpp Line 88 Column 0"/>
+    <msg msg_groups="CODE_UNSUPPORTED" msg_id="214-131" msg_severity="INFO" msg_loc="../gen/UpConv_Unified.tpp:349:9" msg_body="Inlining function 'void Compute_MAC_Tile&lt;8&gt;(ap_uint&lt;256&gt;*, ap_uint&lt;256&gt; const (&amp;) [8][540], half (&amp;) [256][480], int, int, int, int, int, int)' into 'void UpConv_Fused_Row&lt;8&gt;(ap_uint&lt;256&gt;*, ap_uint&lt;256&gt; const*, ap_uint&lt;256&gt; const (&amp;) [30], ap_uint&lt;256&gt; const (&amp;) [30], ap_uint&lt;256&gt; const (&amp;) [30], ap_uint&lt;256&gt;*, half, float, int, int, int, int, int)'">
+        <args Callee="void Compute_MAC_Tile&lt;8&gt;(ap_uint&lt;256&gt;*, ap_uint&lt;256&gt; const (&amp;) [8][540], half (&amp;) [256][480], int, int, int, int, int, int)" Callee-DebugLoc="File ../gen/UpConv_Unified.tpp Line 109 Column 0" Caller="void UpConv_Fused_Row&lt;8&gt;(ap_uint&lt;256&gt;*, ap_uint&lt;256&gt; const*, ap_uint&lt;256&gt; const (&amp;) [30], ap_uint&lt;256&gt; const (&amp;) [30], ap_uint&lt;256&gt; const (&amp;) [30], ap_uint&lt;256&gt;*, half, float, int, int, int, int, int)" Caller-DebugLoc="File ../gen/UpConv_Unified.tpp Line 308 Column 0"/>
     </msg>
-    <msg msg_groups="CODE_UNSUPPORTED" msg_id="214-131" msg_severity="INFO" msg_loc="../gen/Hls_Layers_UpConv.tpp:288:25" msg_body="Inlining function 'half bits_to_half&lt;half&gt;(ap_uint&lt;16&gt;)' into 'void UpConv_Fused_Row&lt;8, 128, 128, 120, 60&gt;(ap_uint&lt;256&gt;*, ap_uint&lt;256&gt; const*, ap_uint&lt;256&gt; const*, ap_uint&lt;256&gt; const*, ap_uint&lt;256&gt; const*, ap_uint&lt;256&gt;*, half, int)'">
-        <args Callee="half bits_to_half&lt;half&gt;(ap_uint&lt;16&gt;)" Callee-DebugLoc="File ../gen/Hls_Layers_UpConv.tpp Line 38 Column 0" Caller="void UpConv_Fused_Row&lt;8, 128, 128, 120, 60&gt;(ap_uint&lt;256&gt;*, ap_uint&lt;256&gt; const*, ap_uint&lt;256&gt; const*, ap_uint&lt;256&gt; const*, ap_uint&lt;256&gt; const*, ap_uint&lt;256&gt;*, half, int)" Caller-DebugLoc="File ../gen/Hls_Layers_UpConv.tpp Line 88 Column 0"/>
+    <msg msg_groups="CODE_UNSUPPORTED" msg_id="214-131" msg_severity="INFO" msg_loc="../gen/UpConv_Unified.tpp:383:2" msg_body="Inlining function 'Load_Norm_Params(ap_uint&lt;256&gt; const*, ap_uint&lt;256&gt; const*, ap_uint&lt;256&gt; const*, ap_uint&lt;256&gt; (&amp;) [30], ap_uint&lt;256&gt; (&amp;) [30], ap_uint&lt;256&gt; (&amp;) [30], int)' into 'void UpConv_Fused_Top&lt;8&gt;(ap_uint&lt;256&gt;*, ap_uint&lt;256&gt; const*, ap_uint&lt;256&gt; const*, ap_uint&lt;256&gt; const*, ap_uint&lt;256&gt; const*, ap_uint&lt;256&gt; const*, ap_uint&lt;256&gt;*, half, float, int, int, int, int)'">
+        <args Callee="Load_Norm_Params(ap_uint&lt;256&gt; const*, ap_uint&lt;256&gt; const*, ap_uint&lt;256&gt; const*, ap_uint&lt;256&gt; (&amp;) [30], ap_uint&lt;256&gt; (&amp;) [30], ap_uint&lt;256&gt; (&amp;) [30], int)" Callee-DebugLoc="File ../gen/UpConv_Unified.tpp Line 186 Column 0" Caller="void UpConv_Fused_Top&lt;8&gt;(ap_uint&lt;256&gt;*, ap_uint&lt;256&gt; const*, ap_uint&lt;256&gt; const*, ap_uint&lt;256&gt; const*, ap_uint&lt;256&gt; const*, ap_uint&lt;256&gt; const*, ap_uint&lt;256&gt;*, half, float, int, int, int, int)" Caller-DebugLoc="File ../gen/UpConv_Unified.tpp Line 371 Column 0"/>
     </msg>
-    <msg msg_groups="CODE_UNSUPPORTED" msg_id="214-131" msg_severity="INFO" msg_loc="../gen/Hls_Layers_UpConv.tpp:270:43" msg_body="Inlining function 'my_sqrt_f(float)' into 'void UpConv_Fused_Row&lt;8, 128, 128, 120, 60&gt;(ap_uint&lt;256&gt;*, ap_uint&lt;256&gt; const*, ap_uint&lt;256&gt; const*, ap_uint&lt;256&gt; const*, ap_uint&lt;256&gt; const*, ap_uint&lt;256&gt;*, half, int)'">
-        <args Callee="my_sqrt_f(float)" Callee-DebugLoc="File ../gen/Hls_Layers_UpConv.tpp Line 52 Column 0" Caller="void UpConv_Fused_Row&lt;8, 128, 128, 120, 60&gt;(ap_uint&lt;256&gt;*, ap_uint&lt;256&gt; const*, ap_uint&lt;256&gt; const*, ap_uint&lt;256&gt; const*, ap_uint&lt;256&gt; const*, ap_uint&lt;256&gt;*, half, int)" Caller-DebugLoc="File ../gen/Hls_Layers_UpConv.tpp Line 88 Column 0"/>
+    <msg msg_groups="CODE_UNSUPPORTED" msg_id="214-131" msg_severity="INFO" msg_loc="../gen/upconv_core_top.cpp:59:5" msg_body="Inlining function 'void UpConv_Fused_Top&lt;8&gt;(ap_uint&lt;256&gt;*, ap_uint&lt;256&gt; const*, ap_uint&lt;256&gt; const*, ap_uint&lt;256&gt; const*, ap_uint&lt;256&gt; const*, ap_uint&lt;256&gt; const*, ap_uint&lt;256&gt;*, half, float, int, int, int, int)' into 'upconv_core_top'">
+        <args Callee="void UpConv_Fused_Top&lt;8&gt;(ap_uint&lt;256&gt;*, ap_uint&lt;256&gt; const*, ap_uint&lt;256&gt; const*, ap_uint&lt;256&gt; const*, ap_uint&lt;256&gt; const*, ap_uint&lt;256&gt; const*, ap_uint&lt;256&gt;*, half, float, int, int, int, int)" Callee-DebugLoc="File ../gen/UpConv_Unified.tpp Line 371 Column 0" Caller="upconv_core_top" Caller-DebugLoc="File ../gen/upconv_core_top.cpp Line 19 Column 0"/>
     </msg>
-    <msg msg_groups="CODE_UNSUPPORTED" msg_id="214-131" msg_severity="INFO" msg_loc="../gen/Hls_Layers_UpConv.tpp:291:45" msg_body="Inlining function 'ap_uint&lt;16&gt; half_to_bits&lt;half&gt;(half)' into 'void UpConv_Fused_Row&lt;8, 16, 16, 16, 16&gt;(ap_uint&lt;256&gt;*, ap_uint&lt;256&gt; const*, ap_uint&lt;256&gt; const*, ap_uint&lt;256&gt; const*, ap_uint&lt;256&gt; const*, ap_uint&lt;256&gt;*, half, int)'">
-        <args Callee="ap_uint&lt;16&gt; half_to_bits&lt;half&gt;(half)" Callee-DebugLoc="File ../gen/Hls_Layers_UpConv.tpp Line 22 Column 0" Caller="void UpConv_Fused_Row&lt;8, 16, 16, 16, 16&gt;(ap_uint&lt;256&gt;*, ap_uint&lt;256&gt; const*, ap_uint&lt;256&gt; const*, ap_uint&lt;256&gt; const*, ap_uint&lt;256&gt; const*, ap_uint&lt;256&gt;*, half, int)" Caller-DebugLoc="File ../gen/Hls_Layers_UpConv.tpp Line 88 Column 0"/>
+    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-291" msg_severity="INFO" msg_loc="../gen/UpConv_Unified.tpp:277:27" msg_body="Loop 'VITIS_LOOP_277_1' is marked as complete unroll implied by the pipeline pragma">
+        <args LoopName="VITIS_LOOP_277_1"/>
     </msg>
-    <msg msg_groups="CODE_UNSUPPORTED" msg_id="214-131" msg_severity="INFO" msg_loc="../gen/Hls_Layers_UpConv.tpp:288:25" msg_body="Inlining function 'half bits_to_half&lt;half&gt;(ap_uint&lt;16&gt;)' into 'void UpConv_Fused_Row&lt;8, 16, 16, 16, 16&gt;(ap_uint&lt;256&gt;*, ap_uint&lt;256&gt; const*, ap_uint&lt;256&gt; const*, ap_uint&lt;256&gt; const*, ap_uint&lt;256&gt; const*, ap_uint&lt;256&gt;*, half, int)'">
-        <args Callee="half bits_to_half&lt;half&gt;(ap_uint&lt;16&gt;)" Callee-DebugLoc="File ../gen/Hls_Layers_UpConv.tpp Line 38 Column 0" Caller="void UpConv_Fused_Row&lt;8, 16, 16, 16, 16&gt;(ap_uint&lt;256&gt;*, ap_uint&lt;256&gt; const*, ap_uint&lt;256&gt; const*, ap_uint&lt;256&gt; const*, ap_uint&lt;256&gt; const*, ap_uint&lt;256&gt;*, half, int)" Caller-DebugLoc="File ../gen/Hls_Layers_UpConv.tpp Line 88 Column 0"/>
+    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-291" msg_severity="INFO" msg_loc="../gen/UpConv_Unified.tpp:243:31" msg_body="Loop 'VITIS_LOOP_243_1' is marked as complete unroll implied by the pipeline pragma">
+        <args LoopName="VITIS_LOOP_243_1"/>
     </msg>
-    <msg msg_groups="CODE_UNSUPPORTED" msg_id="214-131" msg_severity="INFO" msg_loc="../gen/Hls_Layers_UpConv.tpp:270:43" msg_body="Inlining function 'my_sqrt_f(float)' into 'void UpConv_Fused_Row&lt;8, 16, 16, 16, 16&gt;(ap_uint&lt;256&gt;*, ap_uint&lt;256&gt; const*, ap_uint&lt;256&gt; const*, ap_uint&lt;256&gt; const*, ap_uint&lt;256&gt; const*, ap_uint&lt;256&gt;*, half, int)'">
-        <args Callee="my_sqrt_f(float)" Callee-DebugLoc="File ../gen/Hls_Layers_UpConv.tpp Line 52 Column 0" Caller="void UpConv_Fused_Row&lt;8, 16, 16, 16, 16&gt;(ap_uint&lt;256&gt;*, ap_uint&lt;256&gt; const*, ap_uint&lt;256&gt; const*, ap_uint&lt;256&gt; const*, ap_uint&lt;256&gt; const*, ap_uint&lt;256&gt;*, half, int)" Caller-DebugLoc="File ../gen/Hls_Layers_UpConv.tpp Line 88 Column 0"/>
-    </msg>
-    <msg msg_groups="CODE_UNSUPPORTED" msg_id="214-131" msg_severity="INFO" msg_loc="../gen/upconv_core_top.cpp:46:9" msg_body="Inlining function 'void UpConv_Fused_Top&lt;8, 16, 16, 960, 480&gt;(ap_uint&lt;256&gt;*, ap_uint&lt;256&gt; const*, ap_uint&lt;256&gt; const*, ap_uint&lt;256&gt; const*, ap_uint&lt;256&gt; const*, ap_uint&lt;256&gt; const*, ap_uint&lt;256&gt;*, half)' into 'upconv_core_top'">
-        <args Callee="void UpConv_Fused_Top&lt;8, 16, 16, 960, 480&gt;(ap_uint&lt;256&gt;*, ap_uint&lt;256&gt; const*, ap_uint&lt;256&gt; const*, ap_uint&lt;256&gt; const*, ap_uint&lt;256&gt; const*, ap_uint&lt;256&gt; const*, ap_uint&lt;256&gt;*, half)" Callee-DebugLoc="File ../gen/Hls_Layers_UpConv.tpp Line 311 Column 0" Caller="upconv_core_top" Caller-DebugLoc="File ../gen/upconv_core_top.cpp Line 20 Column 0"/>
-    </msg>
-    <msg msg_groups="CODE_UNSUPPORTED" msg_id="214-131" msg_severity="INFO" msg_loc="../gen/upconv_core_top.cpp:48:9" msg_body="Inlining function 'void UpConv_Fused_Top&lt;8, 32, 32, 480, 240&gt;(ap_uint&lt;256&gt;*, ap_uint&lt;256&gt; const*, ap_uint&lt;256&gt; const*, ap_uint&lt;256&gt; const*, ap_uint&lt;256&gt; const*, ap_uint&lt;256&gt; const*, ap_uint&lt;256&gt;*, half)' into 'upconv_core_top'">
-        <args Callee="void UpConv_Fused_Top&lt;8, 32, 32, 480, 240&gt;(ap_uint&lt;256&gt;*, ap_uint&lt;256&gt; const*, ap_uint&lt;256&gt; const*, ap_uint&lt;256&gt; const*, ap_uint&lt;256&gt; const*, ap_uint&lt;256&gt; const*, ap_uint&lt;256&gt;*, half)" Callee-DebugLoc="File ../gen/Hls_Layers_UpConv.tpp Line 311 Column 0" Caller="upconv_core_top" Caller-DebugLoc="File ../gen/upconv_core_top.cpp Line 20 Column 0"/>
-    </msg>
-    <msg msg_groups="CODE_UNSUPPORTED" msg_id="214-131" msg_severity="INFO" msg_loc="../gen/upconv_core_top.cpp:50:9" msg_body="Inlining function 'void UpConv_Fused_Top&lt;8, 64, 64, 240, 120&gt;(ap_uint&lt;256&gt;*, ap_uint&lt;256&gt; const*, ap_uint&lt;256&gt; const*, ap_uint&lt;256&gt; const*, ap_uint&lt;256&gt; const*, ap_uint&lt;256&gt; const*, ap_uint&lt;256&gt;*, half)' into 'upconv_core_top'">
-        <args Callee="void UpConv_Fused_Top&lt;8, 64, 64, 240, 120&gt;(ap_uint&lt;256&gt;*, ap_uint&lt;256&gt; const*, ap_uint&lt;256&gt; const*, ap_uint&lt;256&gt; const*, ap_uint&lt;256&gt; const*, ap_uint&lt;256&gt; const*, ap_uint&lt;256&gt;*, half)" Callee-DebugLoc="File ../gen/Hls_Layers_UpConv.tpp Line 311 Column 0" Caller="upconv_core_top" Caller-DebugLoc="File ../gen/upconv_core_top.cpp Line 20 Column 0"/>
-    </msg>
-    <msg msg_groups="CODE_UNSUPPORTED" msg_id="214-131" msg_severity="INFO" msg_loc="../gen/upconv_core_top.cpp:52:9" msg_body="Inlining function 'void UpConv_Fused_Top&lt;8, 128, 128, 120, 60&gt;(ap_uint&lt;256&gt;*, ap_uint&lt;256&gt; const*, ap_uint&lt;256&gt; const*, ap_uint&lt;256&gt; const*, ap_uint&lt;256&gt; const*, ap_uint&lt;256&gt; const*, ap_uint&lt;256&gt;*, half)' into 'upconv_core_top'">
-        <args Callee="void UpConv_Fused_Top&lt;8, 128, 128, 120, 60&gt;(ap_uint&lt;256&gt;*, ap_uint&lt;256&gt; const*, ap_uint&lt;256&gt; const*, ap_uint&lt;256&gt; const*, ap_uint&lt;256&gt; const*, ap_uint&lt;256&gt; const*, ap_uint&lt;256&gt;*, half)" Callee-DebugLoc="File ../gen/Hls_Layers_UpConv.tpp Line 311 Column 0" Caller="upconv_core_top" Caller-DebugLoc="File ../gen/upconv_core_top.cpp Line 20 Column 0"/>
-    </msg>
-    <msg msg_groups="CODE_UNSUPPORTED" msg_id="214-131" msg_severity="INFO" msg_loc="../gen/upconv_core_top.cpp:55:9" msg_body="Inlining function 'void UpConv_Fused_Top&lt;8, 16, 16, 16, 16&gt;(ap_uint&lt;256&gt;*, ap_uint&lt;256&gt; const*, ap_uint&lt;256&gt; const*, ap_uint&lt;256&gt; const*, ap_uint&lt;256&gt; const*, ap_uint&lt;256&gt; const*, ap_uint&lt;256&gt;*, half)' into 'upconv_core_top'">
-        <args Callee="void UpConv_Fused_Top&lt;8, 16, 16, 16, 16&gt;(ap_uint&lt;256&gt;*, ap_uint&lt;256&gt; const*, ap_uint&lt;256&gt; const*, ap_uint&lt;256&gt; const*, ap_uint&lt;256&gt; const*, ap_uint&lt;256&gt; const*, ap_uint&lt;256&gt;*, half)" Callee-DebugLoc="File ../gen/Hls_Layers_UpConv.tpp Line 311 Column 0" Caller="upconv_core_top" Caller-DebugLoc="File ../gen/upconv_core_top.cpp Line 20 Column 0"/>
-    </msg>
-    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-291" msg_severity="INFO" msg_loc="../gen/Hls_Layers_UpConv.tpp:283:27" msg_body="Loop 'VITIS_LOOP_283_4' is marked as complete unroll implied by the pipeline pragma">
-        <args LoopName="VITIS_LOOP_283_4"/>
-    </msg>
-    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-291" msg_severity="INFO" msg_loc="../gen/Hls_Layers_UpConv.tpp:262:31" msg_body="Loop 'VITIS_LOOP_262_3' is marked as complete unroll implied by the pipeline pragma">
-        <args LoopName="VITIS_LOOP_262_3"/>
-    </msg>
-    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-291" msg_severity="INFO" msg_loc="../gen/Hls_Layers_UpConv.tpp:177:29" msg_body="Loop 'TC_MAC' is marked as complete unroll implied by the pipeline pragma">
+    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-291" msg_severity="INFO" msg_loc="../gen/UpConv_Unified.tpp:144:25" msg_body="Loop 'TC_MAC' is marked as complete unroll implied by the pipeline pragma">
         <args LoopName="TC_MAC"/>
     </msg>
-    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-291" msg_severity="INFO" msg_loc="../gen/Hls_Layers_UpConv.tpp:181:43" msg_body="Loop 'VITIS_LOOP_181_2' is marked as complete unroll implied by the pipeline pragma">
-        <args LoopName="VITIS_LOOP_181_2"/>
+    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-291" msg_severity="INFO" msg_loc="../gen/UpConv_Unified.tpp:148:39" msg_body="Loop 'VITIS_LOOP_148_1' is marked as complete unroll implied by the pipeline pragma">
+        <args LoopName="VITIS_LOOP_148_1"/>
     </msg>
-    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-291" msg_severity="INFO" msg_loc="../gen/Hls_Layers_UpConv.tpp:194:40" msg_body="Loop 'ACC_WRITE' is marked as complete unroll implied by the pipeline pragma">
+    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-291" msg_severity="INFO" msg_loc="../gen/UpConv_Unified.tpp:161:36" msg_body="Loop 'ACC_WRITE' is marked as complete unroll implied by the pipeline pragma">
         <args LoopName="ACC_WRITE"/>
     </msg>
-    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-291" msg_severity="INFO" msg_loc="../gen/Hls_Layers_UpConv.tpp:118:20" msg_body="Loop 'VITIS_LOOP_118_1' is marked as complete unroll implied by the pipeline pragma">
-        <args LoopName="VITIS_LOOP_118_1"/>
+    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-291" msg_severity="INFO" msg_loc="../gen/UpConv_Unified.tpp:74:19" msg_body="Loop 'VITIS_LOOP_74_1' is marked as complete unroll implied by the pipeline pragma">
+        <args LoopName="VITIS_LOOP_74_1"/>
     </msg>
-    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-186" msg_severity="INFO" msg_loc="../gen/Hls_Layers_UpConv.tpp:88:0" msg_body="Unrolling loop 'VITIS_LOOP_283_4' (../gen/Hls_Layers_UpConv.tpp:283:27) in function 'UpConv_Fused_Row&lt;8, 16, 16, 16, 16&gt;' completely with a factor of 16">
-        <args Factor="16" LoopLoc="../gen/Hls_Layers_UpConv.tpp:283:27" LoopName="VITIS_LOOP_283_4"/>
+    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-186" msg_severity="INFO" msg_loc="../gen/UpConv_Unified.tpp:308:0" msg_body="Unrolling loop 'VITIS_LOOP_277_1' (../gen/UpConv_Unified.tpp:277:27) in function 'UpConv_Fused_Row&lt;8&gt;' completely with a factor of 16">
+        <args Factor="16" LoopLoc="../gen/UpConv_Unified.tpp:277:27" LoopName="VITIS_LOOP_277_1"/>
     </msg>
-    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-186" msg_severity="INFO" msg_loc="../gen/Hls_Layers_UpConv.tpp:88:0" msg_body="Unrolling loop 'VITIS_LOOP_262_3' (../gen/Hls_Layers_UpConv.tpp:262:31) in function 'UpConv_Fused_Row&lt;8, 16, 16, 16, 16&gt;' completely with a factor of 8">
-        <args Factor="8" LoopLoc="../gen/Hls_Layers_UpConv.tpp:262:31" LoopName="VITIS_LOOP_262_3"/>
+    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-186" msg_severity="INFO" msg_loc="../gen/UpConv_Unified.tpp:308:0" msg_body="Unrolling loop 'VITIS_LOOP_243_1' (../gen/UpConv_Unified.tpp:243:31) in function 'UpConv_Fused_Row&lt;8&gt;' completely with a factor of 8">
+        <args Factor="8" LoopLoc="../gen/UpConv_Unified.tpp:243:31" LoopName="VITIS_LOOP_243_1"/>
     </msg>
-    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-186" msg_severity="INFO" msg_loc="../gen/Hls_Layers_UpConv.tpp:88:0" msg_body="Unrolling loop 'TC_MAC' (../gen/Hls_Layers_UpConv.tpp:177:29) in function 'UpConv_Fused_Row&lt;8, 16, 16, 16, 16&gt;' completely with a factor of 8">
-        <args Factor="8" LoopLoc="../gen/Hls_Layers_UpConv.tpp:177:29" LoopName="TC_MAC"/>
+    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-186" msg_severity="INFO" msg_loc="../gen/UpConv_Unified.tpp:308:0" msg_body="Unrolling loop 'TC_MAC' (../gen/UpConv_Unified.tpp:144:25) in function 'UpConv_Fused_Row&lt;8&gt;' completely with a factor of 8">
+        <args Factor="8" LoopLoc="../gen/UpConv_Unified.tpp:144:25" LoopName="TC_MAC"/>
     </msg>
-    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-186" msg_severity="INFO" msg_loc="../gen/Hls_Layers_UpConv.tpp:88:0" msg_body="Unrolling loop 'VITIS_LOOP_181_2' (../gen/Hls_Layers_UpConv.tpp:181:43) in function 'UpConv_Fused_Row&lt;8, 16, 16, 16, 16&gt;' completely with a factor of 16">
-        <args Factor="16" LoopLoc="../gen/Hls_Layers_UpConv.tpp:181:43" LoopName="VITIS_LOOP_181_2"/>
+    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-186" msg_severity="INFO" msg_loc="../gen/UpConv_Unified.tpp:308:0" msg_body="Unrolling loop 'VITIS_LOOP_148_1' (../gen/UpConv_Unified.tpp:148:39) in function 'UpConv_Fused_Row&lt;8&gt;' completely with a factor of 16">
+        <args Factor="16" LoopLoc="../gen/UpConv_Unified.tpp:148:39" LoopName="VITIS_LOOP_148_1"/>
     </msg>
-    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-186" msg_severity="INFO" msg_loc="../gen/Hls_Layers_UpConv.tpp:88:0" msg_body="Unrolling loop 'ACC_WRITE' (../gen/Hls_Layers_UpConv.tpp:194:40) in function 'UpConv_Fused_Row&lt;8, 16, 16, 16, 16&gt;' completely with a factor of 8">
-        <args Factor="8" LoopLoc="../gen/Hls_Layers_UpConv.tpp:194:40" LoopName="ACC_WRITE"/>
+    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-186" msg_severity="INFO" msg_loc="../gen/UpConv_Unified.tpp:308:0" msg_body="Unrolling loop 'ACC_WRITE' (../gen/UpConv_Unified.tpp:161:36) in function 'UpConv_Fused_Row&lt;8&gt;' completely with a factor of 8">
+        <args Factor="8" LoopLoc="../gen/UpConv_Unified.tpp:161:36" LoopName="ACC_WRITE"/>
     </msg>
-    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-186" msg_severity="INFO" msg_loc="../gen/Hls_Layers_UpConv.tpp:88:0" msg_body="Unrolling loop 'VITIS_LOOP_118_1' (../gen/Hls_Layers_UpConv.tpp:118:20) in function 'UpConv_Fused_Row&lt;8, 16, 16, 16, 16&gt;' completely with a factor of 16">
-        <args Factor="16" LoopLoc="../gen/Hls_Layers_UpConv.tpp:118:20" LoopName="VITIS_LOOP_118_1"/>
+    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-186" msg_severity="INFO" msg_loc="../gen/UpConv_Unified.tpp:308:0" msg_body="Unrolling loop 'VITIS_LOOP_74_1' (../gen/UpConv_Unified.tpp:74:19) in function 'UpConv_Fused_Row&lt;8&gt;' completely with a factor of 16">
+        <args Factor="16" LoopLoc="../gen/UpConv_Unified.tpp:74:19" LoopName="VITIS_LOOP_74_1"/>
     </msg>
-    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-186" msg_severity="INFO" msg_loc="../gen/Hls_Layers_UpConv.tpp:88:0" msg_body="Unrolling loop 'VITIS_LOOP_283_4' (../gen/Hls_Layers_UpConv.tpp:283:27) in function 'UpConv_Fused_Row&lt;8, 128, 128, 120, 60&gt;' completely with a factor of 16">
-        <args Factor="16" LoopLoc="../gen/Hls_Layers_UpConv.tpp:283:27" LoopName="VITIS_LOOP_283_4"/>
+    <msg msg_groups="PRAGMA_INLINE" msg_id="214-178" msg_severity="INFO" msg_loc="../gen/UpConv_Unified.tpp:308:0" msg_body="Inlining function 'hls::sqrtf(float)' into 'void UpConv_Fused_Row&lt;8&gt;(ap_uint&lt;256&gt;*, ap_uint&lt;256&gt; const*, ap_uint&lt;256&gt; const (&amp;) [30], ap_uint&lt;256&gt; const (&amp;) [30], ap_uint&lt;256&gt; const (&amp;) [30], ap_uint&lt;256&gt;*, half, float, int, int, int, int, int)'">
+        <args Callee="hls::sqrtf(float)" Callee-DebugLoc="File /wrk/ci/prod/2024.2/hls_product/continuous/495/2024.2/src/shared/hls/clib/hlsmath/src/c++/sqrtfloat.cpp Line 11 Column 0" Caller="void UpConv_Fused_Row&lt;8&gt;(ap_uint&lt;256&gt;*, ap_uint&lt;256&gt; const*, ap_uint&lt;256&gt; const (&amp;) [30], ap_uint&lt;256&gt; const (&amp;) [30], ap_uint&lt;256&gt; const (&amp;) [30], ap_uint&lt;256&gt;*, half, float, int, int, int, int, int)" Caller-DebugLoc="File ../gen/UpConv_Unified.tpp Line 308 Column 0"/>
     </msg>
-    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-186" msg_severity="INFO" msg_loc="../gen/Hls_Layers_UpConv.tpp:88:0" msg_body="Unrolling loop 'VITIS_LOOP_262_3' (../gen/Hls_Layers_UpConv.tpp:262:31) in function 'UpConv_Fused_Row&lt;8, 128, 128, 120, 60&gt;' completely with a factor of 8">
-        <args Factor="8" LoopLoc="../gen/Hls_Layers_UpConv.tpp:262:31" LoopName="VITIS_LOOP_262_3"/>
+    <msg msg_groups="PRAGMA_MISC" msg_id="214-248" msg_severity="INFO" msg_loc="../gen/UpConv_Unified.tpp:323:0" msg_body="Applying array_partition to '_ZZ16UpConv_Fused_RowILi8EEvP7ap_uintILi256EEPKS1_RA30_S3_S6_S6_S2_DhfiiiiiE7row_acc': Cyclic partitioning with factor 16 on dimension 2.">
+        <args Dim="2" Factor="16" Mode="Cyclic" UOName="_ZZ16UpConv_Fused_RowILi8EEvP7ap_uintILi256EEPKS1_RA30_S3_S6_S6_S2_DhfiiiiiE7row_acc"/>
     </msg>
-    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-186" msg_severity="INFO" msg_loc="../gen/Hls_Layers_UpConv.tpp:88:0" msg_body="Unrolling loop 'TC_MAC' (../gen/Hls_Layers_UpConv.tpp:177:29) in function 'UpConv_Fused_Row&lt;8, 128, 128, 120, 60&gt;' completely with a factor of 8">
-        <args Factor="8" LoopLoc="../gen/Hls_Layers_UpConv.tpp:177:29" LoopName="TC_MAC"/>
+    <msg msg_groups="PRAGMA_MISC" msg_id="214-248" msg_severity="INFO" msg_loc="../gen/UpConv_Unified.tpp:132:20" msg_body="Applying array_partition to 'psum.i': Complete partitioning on dimension 1. Complete partitioning on dimension 2.">
+        <args Dim="islist 1 2" Mode="islist Complete Complete" UOName="psum.i"/>
     </msg>
-    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-186" msg_severity="INFO" msg_loc="../gen/Hls_Layers_UpConv.tpp:88:0" msg_body="Unrolling loop 'VITIS_LOOP_181_2' (../gen/Hls_Layers_UpConv.tpp:181:43) in function 'UpConv_Fused_Row&lt;8, 128, 128, 120, 60&gt;' completely with a factor of 16">
-        <args Factor="16" LoopLoc="../gen/Hls_Layers_UpConv.tpp:181:43" LoopName="VITIS_LOOP_181_2"/>
+    <msg msg_groups="PRAGMA_MISC" msg_id="214-248" msg_severity="INFO" msg_loc="../gen/UpConv_Unified.tpp:215:8" msg_body="Applying array_partition to 'sum_rot.i': Complete partitioning on dimension 1.">
+        <args Dim="1" Mode="Complete" UOName="sum_rot.i"/>
     </msg>
-    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-186" msg_severity="INFO" msg_loc="../gen/Hls_Layers_UpConv.tpp:88:0" msg_body="Unrolling loop 'ACC_WRITE' (../gen/Hls_Layers_UpConv.tpp:194:40) in function 'UpConv_Fused_Row&lt;8, 128, 128, 120, 60&gt;' completely with a factor of 8">
-        <args Factor="8" LoopLoc="../gen/Hls_Layers_UpConv.tpp:194:40" LoopName="ACC_WRITE"/>
+    <msg msg_groups="PRAGMA_MISC" msg_id="214-248" msg_severity="INFO" msg_loc="../gen/UpConv_Unified.tpp:215:20" msg_body="Applying array_partition to 'sumsq_rot.i': Complete partitioning on dimension 1.">
+        <args Dim="1" Mode="Complete" UOName="sumsq_rot.i"/>
     </msg>
-    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-186" msg_severity="INFO" msg_loc="../gen/Hls_Layers_UpConv.tpp:88:0" msg_body="Unrolling loop 'VITIS_LOOP_118_1' (../gen/Hls_Layers_UpConv.tpp:118:20) in function 'UpConv_Fused_Row&lt;8, 128, 128, 120, 60&gt;' completely with a factor of 16">
-        <args Factor="16" LoopLoc="../gen/Hls_Layers_UpConv.tpp:118:20" LoopName="VITIS_LOOP_118_1"/>
-    </msg>
-    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-186" msg_severity="INFO" msg_loc="../gen/Hls_Layers_UpConv.tpp:88:0" msg_body="Unrolling loop 'VITIS_LOOP_283_4' (../gen/Hls_Layers_UpConv.tpp:283:27) in function 'UpConv_Fused_Row&lt;8, 64, 64, 240, 120&gt;' completely with a factor of 16">
-        <args Factor="16" LoopLoc="../gen/Hls_Layers_UpConv.tpp:283:27" LoopName="VITIS_LOOP_283_4"/>
-    </msg>
-    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-186" msg_severity="INFO" msg_loc="../gen/Hls_Layers_UpConv.tpp:88:0" msg_body="Unrolling loop 'VITIS_LOOP_262_3' (../gen/Hls_Layers_UpConv.tpp:262:31) in function 'UpConv_Fused_Row&lt;8, 64, 64, 240, 120&gt;' completely with a factor of 8">
-        <args Factor="8" LoopLoc="../gen/Hls_Layers_UpConv.tpp:262:31" LoopName="VITIS_LOOP_262_3"/>
-    </msg>
-    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-186" msg_severity="INFO" msg_loc="../gen/Hls_Layers_UpConv.tpp:88:0" msg_body="Unrolling loop 'TC_MAC' (../gen/Hls_Layers_UpConv.tpp:177:29) in function 'UpConv_Fused_Row&lt;8, 64, 64, 240, 120&gt;' completely with a factor of 8">
-        <args Factor="8" LoopLoc="../gen/Hls_Layers_UpConv.tpp:177:29" LoopName="TC_MAC"/>
-    </msg>
-    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-186" msg_severity="INFO" msg_loc="../gen/Hls_Layers_UpConv.tpp:88:0" msg_body="Unrolling loop 'VITIS_LOOP_181_2' (../gen/Hls_Layers_UpConv.tpp:181:43) in function 'UpConv_Fused_Row&lt;8, 64, 64, 240, 120&gt;' completely with a factor of 16">
-        <args Factor="16" LoopLoc="../gen/Hls_Layers_UpConv.tpp:181:43" LoopName="VITIS_LOOP_181_2"/>
-    </msg>
-    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-186" msg_severity="INFO" msg_loc="../gen/Hls_Layers_UpConv.tpp:88:0" msg_body="Unrolling loop 'ACC_WRITE' (../gen/Hls_Layers_UpConv.tpp:194:40) in function 'UpConv_Fused_Row&lt;8, 64, 64, 240, 120&gt;' completely with a factor of 8">
-        <args Factor="8" LoopLoc="../gen/Hls_Layers_UpConv.tpp:194:40" LoopName="ACC_WRITE"/>
-    </msg>
-    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-186" msg_severity="INFO" msg_loc="../gen/Hls_Layers_UpConv.tpp:88:0" msg_body="Unrolling loop 'VITIS_LOOP_118_1' (../gen/Hls_Layers_UpConv.tpp:118:20) in function 'UpConv_Fused_Row&lt;8, 64, 64, 240, 120&gt;' completely with a factor of 16">
-        <args Factor="16" LoopLoc="../gen/Hls_Layers_UpConv.tpp:118:20" LoopName="VITIS_LOOP_118_1"/>
-    </msg>
-    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-186" msg_severity="INFO" msg_loc="../gen/Hls_Layers_UpConv.tpp:88:0" msg_body="Unrolling loop 'VITIS_LOOP_283_4' (../gen/Hls_Layers_UpConv.tpp:283:27) in function 'UpConv_Fused_Row&lt;8, 32, 32, 480, 240&gt;' completely with a factor of 16">
-        <args Factor="16" LoopLoc="../gen/Hls_Layers_UpConv.tpp:283:27" LoopName="VITIS_LOOP_283_4"/>
-    </msg>
-    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-186" msg_severity="INFO" msg_loc="../gen/Hls_Layers_UpConv.tpp:88:0" msg_body="Unrolling loop 'VITIS_LOOP_262_3' (../gen/Hls_Layers_UpConv.tpp:262:31) in function 'UpConv_Fused_Row&lt;8, 32, 32, 480, 240&gt;' completely with a factor of 8">
-        <args Factor="8" LoopLoc="../gen/Hls_Layers_UpConv.tpp:262:31" LoopName="VITIS_LOOP_262_3"/>
-    </msg>
-    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-186" msg_severity="INFO" msg_loc="../gen/Hls_Layers_UpConv.tpp:88:0" msg_body="Unrolling loop 'TC_MAC' (../gen/Hls_Layers_UpConv.tpp:177:29) in function 'UpConv_Fused_Row&lt;8, 32, 32, 480, 240&gt;' completely with a factor of 8">
-        <args Factor="8" LoopLoc="../gen/Hls_Layers_UpConv.tpp:177:29" LoopName="TC_MAC"/>
-    </msg>
-    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-186" msg_severity="INFO" msg_loc="../gen/Hls_Layers_UpConv.tpp:88:0" msg_body="Unrolling loop 'VITIS_LOOP_181_2' (../gen/Hls_Layers_UpConv.tpp:181:43) in function 'UpConv_Fused_Row&lt;8, 32, 32, 480, 240&gt;' completely with a factor of 16">
-        <args Factor="16" LoopLoc="../gen/Hls_Layers_UpConv.tpp:181:43" LoopName="VITIS_LOOP_181_2"/>
-    </msg>
-    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-186" msg_severity="INFO" msg_loc="../gen/Hls_Layers_UpConv.tpp:88:0" msg_body="Unrolling loop 'ACC_WRITE' (../gen/Hls_Layers_UpConv.tpp:194:40) in function 'UpConv_Fused_Row&lt;8, 32, 32, 480, 240&gt;' completely with a factor of 8">
-        <args Factor="8" LoopLoc="../gen/Hls_Layers_UpConv.tpp:194:40" LoopName="ACC_WRITE"/>
-    </msg>
-    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-186" msg_severity="INFO" msg_loc="../gen/Hls_Layers_UpConv.tpp:88:0" msg_body="Unrolling loop 'VITIS_LOOP_118_1' (../gen/Hls_Layers_UpConv.tpp:118:20) in function 'UpConv_Fused_Row&lt;8, 32, 32, 480, 240&gt;' completely with a factor of 16">
-        <args Factor="16" LoopLoc="../gen/Hls_Layers_UpConv.tpp:118:20" LoopName="VITIS_LOOP_118_1"/>
-    </msg>
-    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-186" msg_severity="INFO" msg_loc="../gen/Hls_Layers_UpConv.tpp:88:0" msg_body="Unrolling loop 'VITIS_LOOP_283_4' (../gen/Hls_Layers_UpConv.tpp:283:27) in function 'UpConv_Fused_Row&lt;8, 16, 16, 960, 480&gt;' completely with a factor of 16">
-        <args Factor="16" LoopLoc="../gen/Hls_Layers_UpConv.tpp:283:27" LoopName="VITIS_LOOP_283_4"/>
-    </msg>
-    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-186" msg_severity="INFO" msg_loc="../gen/Hls_Layers_UpConv.tpp:88:0" msg_body="Unrolling loop 'VITIS_LOOP_262_3' (../gen/Hls_Layers_UpConv.tpp:262:31) in function 'UpConv_Fused_Row&lt;8, 16, 16, 960, 480&gt;' completely with a factor of 8">
-        <args Factor="8" LoopLoc="../gen/Hls_Layers_UpConv.tpp:262:31" LoopName="VITIS_LOOP_262_3"/>
-    </msg>
-    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-186" msg_severity="INFO" msg_loc="../gen/Hls_Layers_UpConv.tpp:88:0" msg_body="Unrolling loop 'TC_MAC' (../gen/Hls_Layers_UpConv.tpp:177:29) in function 'UpConv_Fused_Row&lt;8, 16, 16, 960, 480&gt;' completely with a factor of 8">
-        <args Factor="8" LoopLoc="../gen/Hls_Layers_UpConv.tpp:177:29" LoopName="TC_MAC"/>
-    </msg>
-    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-186" msg_severity="INFO" msg_loc="../gen/Hls_Layers_UpConv.tpp:88:0" msg_body="Unrolling loop 'VITIS_LOOP_181_2' (../gen/Hls_Layers_UpConv.tpp:181:43) in function 'UpConv_Fused_Row&lt;8, 16, 16, 960, 480&gt;' completely with a factor of 16">
-        <args Factor="16" LoopLoc="../gen/Hls_Layers_UpConv.tpp:181:43" LoopName="VITIS_LOOP_181_2"/>
-    </msg>
-    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-186" msg_severity="INFO" msg_loc="../gen/Hls_Layers_UpConv.tpp:88:0" msg_body="Unrolling loop 'ACC_WRITE' (../gen/Hls_Layers_UpConv.tpp:194:40) in function 'UpConv_Fused_Row&lt;8, 16, 16, 960, 480&gt;' completely with a factor of 8">
-        <args Factor="8" LoopLoc="../gen/Hls_Layers_UpConv.tpp:194:40" LoopName="ACC_WRITE"/>
-    </msg>
-    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-186" msg_severity="INFO" msg_loc="../gen/Hls_Layers_UpConv.tpp:88:0" msg_body="Unrolling loop 'VITIS_LOOP_118_1' (../gen/Hls_Layers_UpConv.tpp:118:20) in function 'UpConv_Fused_Row&lt;8, 16, 16, 960, 480&gt;' completely with a factor of 16">
-        <args Factor="16" LoopLoc="../gen/Hls_Layers_UpConv.tpp:118:20" LoopName="VITIS_LOOP_118_1"/>
-    </msg>
-    <msg msg_groups="PRAGMA_INLINE" msg_id="214-178" msg_severity="INFO" msg_loc="../gen/Hls_Layers_UpConv.tpp:88:0" msg_body="Inlining function 'hls::sqrtf(float)' into 'void UpConv_Fused_Row&lt;8, 16, 16, 960, 480&gt;(ap_uint&lt;256&gt;*, ap_uint&lt;256&gt; const*, ap_uint&lt;256&gt; const*, ap_uint&lt;256&gt; const*, ap_uint&lt;256&gt; const*, ap_uint&lt;256&gt;*, half, int)'">
-        <args Callee="hls::sqrtf(float)" Callee-DebugLoc="File /wrk/ci/prod/2024.2/hls_product/continuous/495/2024.2/src/shared/hls/clib/hlsmath/src/c++/sqrtfloat.cpp Line 11 Column 0" Caller="void UpConv_Fused_Row&lt;8, 16, 16, 960, 480&gt;(ap_uint&lt;256&gt;*, ap_uint&lt;256&gt; const*, ap_uint&lt;256&gt; const*, ap_uint&lt;256&gt; const*, ap_uint&lt;256&gt; const*, ap_uint&lt;256&gt;*, half, int)" Caller-DebugLoc="File ../gen/Hls_Layers_UpConv.tpp Line 88 Column 0"/>
-    </msg>
-    <msg msg_groups="PRAGMA_INLINE" msg_id="214-178" msg_severity="INFO" msg_loc="../gen/Hls_Layers_UpConv.tpp:88:0" msg_body="Inlining function 'hls::sqrtf(float)' into 'void UpConv_Fused_Row&lt;8, 32, 32, 480, 240&gt;(ap_uint&lt;256&gt;*, ap_uint&lt;256&gt; const*, ap_uint&lt;256&gt; const*, ap_uint&lt;256&gt; const*, ap_uint&lt;256&gt; const*, ap_uint&lt;256&gt;*, half, int)'">
-        <args Callee="hls::sqrtf(float)" Callee-DebugLoc="File /wrk/ci/prod/2024.2/hls_product/continuous/495/2024.2/src/shared/hls/clib/hlsmath/src/c++/sqrtfloat.cpp Line 11 Column 0" Caller="void UpConv_Fused_Row&lt;8, 32, 32, 480, 240&gt;(ap_uint&lt;256&gt;*, ap_uint&lt;256&gt; const*, ap_uint&lt;256&gt; const*, ap_uint&lt;256&gt; const*, ap_uint&lt;256&gt; const*, ap_uint&lt;256&gt;*, half, int)" Caller-DebugLoc="File ../gen/Hls_Layers_UpConv.tpp Line 88 Column 0"/>
-    </msg>
-    <msg msg_groups="PRAGMA_INLINE" msg_id="214-178" msg_severity="INFO" msg_loc="../gen/Hls_Layers_UpConv.tpp:88:0" msg_body="Inlining function 'hls::sqrtf(float)' into 'void UpConv_Fused_Row&lt;8, 64, 64, 240, 120&gt;(ap_uint&lt;256&gt;*, ap_uint&lt;256&gt; const*, ap_uint&lt;256&gt; const*, ap_uint&lt;256&gt; const*, ap_uint&lt;256&gt; const*, ap_uint&lt;256&gt;*, half, int)'">
-        <args Callee="hls::sqrtf(float)" Callee-DebugLoc="File /wrk/ci/prod/2024.2/hls_product/continuous/495/2024.2/src/shared/hls/clib/hlsmath/src/c++/sqrtfloat.cpp Line 11 Column 0" Caller="void UpConv_Fused_Row&lt;8, 64, 64, 240, 120&gt;(ap_uint&lt;256&gt;*, ap_uint&lt;256&gt; const*, ap_uint&lt;256&gt; const*, ap_uint&lt;256&gt; const*, ap_uint&lt;256&gt; const*, ap_uint&lt;256&gt;*, half, int)" Caller-DebugLoc="File ../gen/Hls_Layers_UpConv.tpp Line 88 Column 0"/>
-    </msg>
-    <msg msg_groups="PRAGMA_INLINE" msg_id="214-178" msg_severity="INFO" msg_loc="../gen/Hls_Layers_UpConv.tpp:88:0" msg_body="Inlining function 'hls::sqrtf(float)' into 'void UpConv_Fused_Row&lt;8, 128, 128, 120, 60&gt;(ap_uint&lt;256&gt;*, ap_uint&lt;256&gt; const*, ap_uint&lt;256&gt; const*, ap_uint&lt;256&gt; const*, ap_uint&lt;256&gt; const*, ap_uint&lt;256&gt;*, half, int)'">
-        <args Callee="hls::sqrtf(float)" Callee-DebugLoc="File /wrk/ci/prod/2024.2/hls_product/continuous/495/2024.2/src/shared/hls/clib/hlsmath/src/c++/sqrtfloat.cpp Line 11 Column 0" Caller="void UpConv_Fused_Row&lt;8, 128, 128, 120, 60&gt;(ap_uint&lt;256&gt;*, ap_uint&lt;256&gt; const*, ap_uint&lt;256&gt; const*, ap_uint&lt;256&gt; const*, ap_uint&lt;256&gt; const*, ap_uint&lt;256&gt;*, half, int)" Caller-DebugLoc="File ../gen/Hls_Layers_UpConv.tpp Line 88 Column 0"/>
-    </msg>
-    <msg msg_groups="PRAGMA_INLINE" msg_id="214-178" msg_severity="INFO" msg_loc="../gen/Hls_Layers_UpConv.tpp:88:0" msg_body="Inlining function 'hls::sqrtf(float)' into 'void UpConv_Fused_Row&lt;8, 16, 16, 16, 16&gt;(ap_uint&lt;256&gt;*, ap_uint&lt;256&gt; const*, ap_uint&lt;256&gt; const*, ap_uint&lt;256&gt; const*, ap_uint&lt;256&gt; const*, ap_uint&lt;256&gt;*, half, int)'">
-        <args Callee="hls::sqrtf(float)" Callee-DebugLoc="File /wrk/ci/prod/2024.2/hls_product/continuous/495/2024.2/src/shared/hls/clib/hlsmath/src/c++/sqrtfloat.cpp Line 11 Column 0" Caller="void UpConv_Fused_Row&lt;8, 16, 16, 16, 16&gt;(ap_uint&lt;256&gt;*, ap_uint&lt;256&gt; const*, ap_uint&lt;256&gt; const*, ap_uint&lt;256&gt; const*, ap_uint&lt;256&gt; const*, ap_uint&lt;256&gt;*, half, int)" Caller-DebugLoc="File ../gen/Hls_Layers_UpConv.tpp Line 88 Column 0"/>
-    </msg>
-    <msg msg_groups="PRAGMA_MISC" msg_id="214-248" msg_severity="INFO" msg_loc="../gen/Hls_Layers_UpConv.tpp:106:0" msg_body="Applying array_partition to '_ZZ16UpConv_Fused_RowILi8ELi16ELi16ELi16ELi16EEvP7ap_uintILi256EEPKS1_S4_S4_S4_S2_DhiE7row_acc': Complete partitioning on dimension 2.">
-        <args Dim="2" Mode="Complete" UOName="_ZZ16UpConv_Fused_RowILi8ELi16ELi16ELi16ELi16EEvP7ap_uintILi256EEPKS1_S4_S4_S4_S2_DhiE7row_acc"/>
-    </msg>
-    <msg msg_groups="PRAGMA_MISC" msg_id="214-248" msg_severity="INFO" msg_loc="../gen/Hls_Layers_UpConv.tpp:106:0" msg_body="Applying array_partition to '_ZZ16UpConv_Fused_RowILi8ELi128ELi128ELi120ELi60EEvP7ap_uintILi256EEPKS1_S4_S4_S4_S2_DhiE7row_acc': Cyclic partitioning with factor 16 on dimension 2.">
-        <args Dim="2" Factor="16" Mode="Cyclic" UOName="_ZZ16UpConv_Fused_RowILi8ELi128ELi128ELi120ELi60EEvP7ap_uintILi256EEPKS1_S4_S4_S4_S2_DhiE7row_acc"/>
-    </msg>
-    <msg msg_groups="PRAGMA_MISC" msg_id="214-248" msg_severity="INFO" msg_loc="../gen/Hls_Layers_UpConv.tpp:106:0" msg_body="Applying array_partition to '_ZZ16UpConv_Fused_RowILi8ELi64ELi64ELi240ELi120EEvP7ap_uintILi256EEPKS1_S4_S4_S4_S2_DhiE7row_acc': Cyclic partitioning with factor 16 on dimension 2.">
-        <args Dim="2" Factor="16" Mode="Cyclic" UOName="_ZZ16UpConv_Fused_RowILi8ELi64ELi64ELi240ELi120EEvP7ap_uintILi256EEPKS1_S4_S4_S4_S2_DhiE7row_acc"/>
-    </msg>
-    <msg msg_groups="PRAGMA_MISC" msg_id="214-248" msg_severity="INFO" msg_loc="../gen/Hls_Layers_UpConv.tpp:106:0" msg_body="Applying array_partition to '_ZZ16UpConv_Fused_RowILi8ELi32ELi32ELi480ELi240EEvP7ap_uintILi256EEPKS1_S4_S4_S4_S2_DhiE7row_acc': Cyclic partitioning with factor 16 on dimension 2.">
-        <args Dim="2" Factor="16" Mode="Cyclic" UOName="_ZZ16UpConv_Fused_RowILi8ELi32ELi32ELi480ELi240EEvP7ap_uintILi256EEPKS1_S4_S4_S4_S2_DhiE7row_acc"/>
-    </msg>
-    <msg msg_groups="PRAGMA_MISC" msg_id="214-248" msg_severity="INFO" msg_loc="../gen/Hls_Layers_UpConv.tpp:106:0" msg_body="Applying array_partition to '_ZZ16UpConv_Fused_RowILi8ELi16ELi16ELi960ELi480EEvP7ap_uintILi256EEPKS1_S4_S4_S4_S2_DhiE7row_acc': Cyclic partitioning with factor 16 on dimension 2.">
-        <args Dim="2" Factor="16" Mode="Cyclic" UOName="_ZZ16UpConv_Fused_RowILi8ELi16ELi16ELi960ELi480EEvP7ap_uintILi256EEPKS1_S4_S4_S4_S2_DhiE7row_acc"/>
-    </msg>
-    <msg msg_groups="PRAGMA_MISC" msg_id="214-248" msg_severity="INFO" msg_loc="../gen/Hls_Layers_UpConv.tpp:128:16" msg_body="Applying array_partition to 'w_local': Complete partitioning on dimension 1.">
+    <msg msg_groups="PRAGMA_MISC" msg_id="214-248" msg_severity="INFO" msg_loc="../gen/UpConv_Unified.tpp:331:13" msg_body="Applying array_partition to 'w_local': Complete partitioning on dimension 1.">
         <args Dim="1" Mode="Complete" UOName="w_local"/>
     </msg>
-    <msg msg_groups="PRAGMA_MISC" msg_id="214-248" msg_severity="INFO" msg_loc="../gen/Hls_Layers_UpConv.tpp:166:24" msg_body="Applying array_partition to 'psum': Complete partitioning on dimension 1. Complete partitioning on dimension 2.">
-        <args Dim="islist 1 2" Mode="islist Complete Complete" UOName="psum"/>
-    </msg>
-    <msg msg_groups="PRAGMA_MISC" msg_id="214-248" msg_severity="INFO" msg_loc="../gen/Hls_Layers_UpConv.tpp:236:8" msg_body="Applying array_partition to 'sum_rot': Complete partitioning on dimension 1.">
-        <args Dim="1" Mode="Complete" UOName="sum_rot"/>
-    </msg>
-    <msg msg_groups="PRAGMA_MISC" msg_id="214-248" msg_severity="INFO" msg_loc="../gen/Hls_Layers_UpConv.tpp:236:20" msg_body="Applying array_partition to 'sumsq_rot': Complete partitioning on dimension 1.">
-        <args Dim="1" Mode="Complete" UOName="sumsq_rot"/>
-    </msg>
-    <msg msg_groups="AUTOMATION PRAGMA_MISC" msg_id="214-437" msg_severity="INFO" msg_loc="../gen/Hls_Layers_UpConv.tpp:325:15" msg_body="Automatically disabling loop flattening for loop 'ROW_LOOP'.">
+    <msg msg_groups="AUTOMATION PRAGMA_MISC" msg_id="214-437" msg_severity="INFO" msg_loc="../gen/UpConv_Unified.tpp:395:15" msg_body="Automatically disabling loop flattening for loop 'ROW_LOOP'.">
         <args LoopName="ROW_LOOP"/>
     </msg>
-    <msg msg_groups="AUTOMATION_VERBOSE_PASSED" msg_id="214-335" msg_severity="INFO" msg_loc="../gen/Hls_Layers_UpConv.tpp:325:15" msg_body="loop_flatten 0 1 upconv_core_top ../gen/Hls_Layers_UpConv.tpp:325:15ROW_LOOP ../gen/Hls_Layers_UpConv.tpp:325:15">
-        <args LoopLoc="../gen/Hls_Layers_UpConv.tpp:325:15" LoopLoc-DebugLoc="File ../gen/Hls_Layers_UpConv.tpp Line 325 Column 15" LoopName="ROW_LOOP" PragmaFunction="upconv_core_top" PragmaIsAuto="1" PragmaOptions="0" PragmaSrcLoc="../gen/Hls_Layers_UpConv.tpp:325:15" PragmaSrcLoc-DebugLoc="File ../gen/Hls_Layers_UpConv.tpp Line 325 Column 15" PragmaType="loop_flatten"/>
+    <msg msg_groups="AUTOMATION_VERBOSE_PASSED" msg_id="214-335" msg_severity="INFO" msg_loc="../gen/UpConv_Unified.tpp:395:15" msg_body="loop_flatten 0 1 upconv_core_top ../gen/UpConv_Unified.tpp:395:15ROW_LOOP ../gen/UpConv_Unified.tpp:395:15">
+        <args LoopLoc="../gen/UpConv_Unified.tpp:395:15" LoopLoc-DebugLoc="File ../gen/UpConv_Unified.tpp Line 395 Column 15" LoopName="ROW_LOOP" PragmaFunction="upconv_core_top" PragmaIsAuto="1" PragmaOptions="0" PragmaSrcLoc="../gen/UpConv_Unified.tpp:395:15" PragmaSrcLoc-DebugLoc="File ../gen/UpConv_Unified.tpp Line 395 Column 15" PragmaType="loop_flatten"/>
     </msg>
 </xilinx:hls_fe_msgs>
 

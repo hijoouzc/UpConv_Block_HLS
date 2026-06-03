@@ -1,7 +1,7 @@
 <profile>
 
 <section name = "Vitis HLS Report for 'upconv_core_top_ucb0'" level="0">
-<item name = "Date">Tue May 19 20:00:39 2026
+<item name = "Date">Wed Jun  3 13:46:35 2026
 </item>
 <item name = "Version">2024.2 (Build 5238294 on Nov  8 2024)</item>
 <item name = "Project">upconv_block0</item>
@@ -15,7 +15,7 @@
 <section name = "" level="1">
 <item name = "Summary"><table name="" hasTotal="0">
 <keys size="4">Clock, Target, Estimated, Uncertainty</keys>
-<column name="ap_clk">3.33 ns, 2.719 ns, 0.90 ns</column>
+<column name="ap_clk">3.33 ns, 2.433 ns, 0.90 ns</column>
 </table>
 </item>
 </section>
@@ -24,7 +24,7 @@
 <section name = "" level="1">
 <item name = "Summary"><table name="" hasTotal="0">
 <keys size="8">, min, max, min, max, min, max, Type</keys>
-<column name="">11990511, 109898991, 39.964 ms, 0.366 sec, 11990512, 109898992, no</column>
+<column name="">8895471, 26152431, 29.649 ms, 87.166 ms, 8895472, 26152432, no</column>
 </table>
 </item>
 <item name = "Detail">
@@ -35,7 +35,7 @@
 </item>
 <item name = "Loop"><table name="" hasTotal="0">
 <keys size="8">Loop Name, min, max, Latency, achieved, target, Count, Pipelined</keys>
-<column name="- ROW_LOOP">11241105, 103030305, 749407 ~ 6868687, -, -, 15, no</column>
+<column name="- ROW_LOOP">8339505, 24517905, 555967 ~ 1634527, -, -, 15, no</column>
 </table>
 </item>
 </section>

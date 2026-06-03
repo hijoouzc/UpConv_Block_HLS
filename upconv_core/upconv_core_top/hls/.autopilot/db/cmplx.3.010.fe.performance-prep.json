@@ -1,98 +1,31 @@
 {
   "0": {
-    "basicblocks": 56,
-    "calls": "2 2 2 2 3 3 3 3 1 1 1 1 5 5 5 5 4 4 4 4",
+    "basicblocks": 22,
+    "calls": "1 1 1 1",
     "file": "upconv_core_top.cpp",
-    "fileloc": 11,
-    "instructions": 299,
+    "fileloc": 10,
+    "instructions": 138,
     "name": "upconv_core_top",
     "stores": {
-      "G": 10
+      "G": 2,
+      "L": 3
     },
-    "total_instructions": 39987
+    "total_instructions": 8462
   },
   "1": {
-    "basicblocks": 169,
+    "basicblocks": 179,
     "calls": "",
-    "file": "Hls_Layers_UpConv.tpp",
-    "fileloc": 79,
-    "instructions": 2112,
-    "loads": {
-      "G": 51,
-      "L": 108
-    },
-    "name": "UpConv_Fused_Row<8, 64, 64, 240, 120>",
-    "stores": {
-      "G": 50,
-      "L": 68
-    },
-    "total_instructions": 2112
-  },
-  "2": {
-    "basicblocks": 130,
-    "calls": "",
-    "file": "Hls_Layers_UpConv.tpp",
-    "fileloc": 79,
-    "instructions": 2050,
-    "loads": {
-      "G": 51,
-      "L": 108
-    },
-    "name": "UpConv_Fused_Row<8, 16, 16, 960, 480>",
-    "stores": {
-      "G": 50,
-      "L": 68
-    },
-    "total_instructions": 2050
-  },
-  "3": {
-    "basicblocks": 130,
-    "calls": "",
-    "file": "Hls_Layers_UpConv.tpp",
-    "fileloc": 79,
-    "instructions": 2050,
-    "loads": {
-      "G": 51,
-      "L": 108
-    },
-    "name": "UpConv_Fused_Row<8, 32, 32, 480, 240>",
-    "stores": {
-      "G": 50,
-      "L": 68
-    },
-    "total_instructions": 2050
-  },
-  "4": {
-    "basicblocks": 76,
-    "calls": "",
-    "file": "Hls_Layers_UpConv.tpp",
-    "fileloc": 79,
-    "instructions": 1629,
-    "loads": {
-      "G": 51,
-      "L": 44
-    },
-    "name": "UpConv_Fused_Row<8, 16, 16, 16, 16>",
-    "stores": {
-      "G": 50,
-      "L": 33
-    },
-    "total_instructions": 1629
-  },
-  "5": {
-    "basicblocks": 152,
-    "calls": "",
-    "file": "Hls_Layers_UpConv.tpp",
-    "fileloc": 79,
+    "file": "UpConv_Unified.tpp",
+    "fileloc": 297,
     "instructions": 2081,
     "loads": {
       "G": 51,
-      "L": 108
+      "L": 107
     },
-    "name": "UpConv_Fused_Row<8, 128, 128, 120, 60>",
+    "name": "UpConv_Fused_Row<8>",
     "stores": {
       "G": 50,
-      "L": 68
+      "L": 65
     },
     "total_instructions": 2081
   }

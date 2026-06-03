@@ -13,16 +13,17 @@ set hasInterrupt 0
 set DLRegFirstOffset 0
 set DLRegItemOffset 0
 set svuvm_can_support 1
-set cdfgNum 51
+set cdfgNum 14
 set C_modelName {upconv_core_top_Pipeline_LOAD_ROW}
 set C_modelType { void 0 }
 set ap_memory_interface_dict [dict create]
 dict set ap_memory_interface_dict x_buf { MEM_WIDTH 256 MEM_SIZE 65536 MASTER_TYPE BRAM_CTRL MEM_ADDRESS_MODE WORD_ADDRESS PACKAGE_IO port READ_LATENCY 0 }
 set C_modelArgList {
 	{ gmem_in int 256 regular {axi_master 0}  }
-	{ empty int 5 regular  }
-	{ sext_ln325 int 59 regular  }
-	{ zext_ln326 int 8 regular  }
+	{ empty int 13 regular  }
+	{ shl_ln1 int 25 regular  }
+	{ base_buf int 11 regular  }
+	{ sext_ln397 int 59 regular  }
 	{ x_buf int 256 regular {array 2048 { 0 3 } 0 1 } {global 1}  }
 }
 set hasAXIMCache 0
@@ -30,12 +31,13 @@ set l_AXIML2Cache [list]
 set AXIMCacheInstDict [dict create]
 set C_modelArgMapList {[ 
 	{ "Name" : "gmem_in", "interface" : "axi_master", "bitwidth" : 256, "direction" : "READONLY", "bitSlice":[ {"cElement": [{"cName": "X","offset": { "type": "dynamic","port_name": "X","bundle": "control"},"direction": "READONLY"}]}]} , 
- 	{ "Name" : "empty", "interface" : "wire", "bitwidth" : 5, "direction" : "READONLY"} , 
- 	{ "Name" : "sext_ln325", "interface" : "wire", "bitwidth" : 59, "direction" : "READONLY"} , 
- 	{ "Name" : "zext_ln326", "interface" : "wire", "bitwidth" : 8, "direction" : "READONLY"} , 
+ 	{ "Name" : "empty", "interface" : "wire", "bitwidth" : 13, "direction" : "READONLY"} , 
+ 	{ "Name" : "shl_ln1", "interface" : "wire", "bitwidth" : 25, "direction" : "READONLY"} , 
+ 	{ "Name" : "base_buf", "interface" : "wire", "bitwidth" : 11, "direction" : "READONLY"} , 
+ 	{ "Name" : "sext_ln397", "interface" : "wire", "bitwidth" : 59, "direction" : "READONLY"} , 
  	{ "Name" : "x_buf", "interface" : "memory", "bitwidth" : 256, "direction" : "WRITEONLY", "extern" : 0} ]}
 # RTL Port declarations: 
-set portNum 59
+set portNum 60
 set portList { 
 	{ ap_clk sc_in sc_logic 1 clock -1 } 
 	{ ap_rst sc_in sc_logic 1 reset -1 active_high_sync } 
@@ -89,13 +91,14 @@ set portList {
 	{ m_axi_gmem_in_0_BRESP sc_in sc_lv 2 signal 0 } 
 	{ m_axi_gmem_in_0_BID sc_in sc_lv 1 signal 0 } 
 	{ m_axi_gmem_in_0_BUSER sc_in sc_lv 1 signal 0 } 
-	{ empty sc_in sc_lv 5 signal 1 } 
-	{ sext_ln325 sc_in sc_lv 59 signal 2 } 
-	{ zext_ln326 sc_in sc_lv 8 signal 3 } 
-	{ x_buf_address0 sc_out sc_lv 11 signal 4 } 
-	{ x_buf_ce0 sc_out sc_logic 1 signal 4 } 
-	{ x_buf_we0 sc_out sc_logic 1 signal 4 } 
-	{ x_buf_d0 sc_out sc_lv 256 signal 4 } 
+	{ empty sc_in sc_lv 13 signal 1 } 
+	{ shl_ln1 sc_in sc_lv 25 signal 2 } 
+	{ base_buf sc_in sc_lv 11 signal 3 } 
+	{ sext_ln397 sc_in sc_lv 59 signal 4 } 
+	{ x_buf_address0 sc_out sc_lv 11 signal 5 } 
+	{ x_buf_ce0 sc_out sc_logic 1 signal 5 } 
+	{ x_buf_we0 sc_out sc_logic 1 signal 5 } 
+	{ x_buf_d0 sc_out sc_lv 256 signal 5 } 
 }
 set NewPortList {[ 
 	{ "name": "ap_clk", "direction": "in", "datatype": "sc_logic", "bitwidth":1, "type": "clock", "bundle":{"name": "ap_clk", "role": "default" }} , 
@@ -150,9 +153,10 @@ set NewPortList {[
  	{ "name": "m_axi_gmem_in_0_BRESP", "direction": "in", "datatype": "sc_lv", "bitwidth":2, "type": "signal", "bundle":{"name": "gmem_in", "role": "0_BRESP" }} , 
  	{ "name": "m_axi_gmem_in_0_BID", "direction": "in", "datatype": "sc_lv", "bitwidth":1, "type": "signal", "bundle":{"name": "gmem_in", "role": "0_BID" }} , 
  	{ "name": "m_axi_gmem_in_0_BUSER", "direction": "in", "datatype": "sc_lv", "bitwidth":1, "type": "signal", "bundle":{"name": "gmem_in", "role": "0_BUSER" }} , 
- 	{ "name": "empty", "direction": "in", "datatype": "sc_lv", "bitwidth":5, "type": "signal", "bundle":{"name": "empty", "role": "default" }} , 
- 	{ "name": "sext_ln325", "direction": "in", "datatype": "sc_lv", "bitwidth":59, "type": "signal", "bundle":{"name": "sext_ln325", "role": "default" }} , 
- 	{ "name": "zext_ln326", "direction": "in", "datatype": "sc_lv", "bitwidth":8, "type": "signal", "bundle":{"name": "zext_ln326", "role": "default" }} , 
+ 	{ "name": "empty", "direction": "in", "datatype": "sc_lv", "bitwidth":13, "type": "signal", "bundle":{"name": "empty", "role": "default" }} , 
+ 	{ "name": "shl_ln1", "direction": "in", "datatype": "sc_lv", "bitwidth":25, "type": "signal", "bundle":{"name": "shl_ln1", "role": "default" }} , 
+ 	{ "name": "base_buf", "direction": "in", "datatype": "sc_lv", "bitwidth":11, "type": "signal", "bundle":{"name": "base_buf", "role": "default" }} , 
+ 	{ "name": "sext_ln397", "direction": "in", "datatype": "sc_lv", "bitwidth":59, "type": "signal", "bundle":{"name": "sext_ln397", "role": "default" }} , 
  	{ "name": "x_buf_address0", "direction": "out", "datatype": "sc_lv", "bitwidth":11, "type": "signal", "bundle":{"name": "x_buf", "role": "address0" }} , 
  	{ "name": "x_buf_ce0", "direction": "out", "datatype": "sc_logic", "bitwidth":1, "type": "signal", "bundle":{"name": "x_buf", "role": "ce0" }} , 
  	{ "name": "x_buf_we0", "direction": "out", "datatype": "sc_logic", "bitwidth":1, "type": "signal", "bundle":{"name": "x_buf", "role": "we0" }} , 
@@ -165,7 +169,7 @@ set RtlHierarchyInfo {[
 		"ControlExist" : "1", "ap_start" : "1", "ap_ready" : "1", "ap_done" : "1", "ap_continue" : "0", "ap_idle" : "1", "real_start" : "0",
 		"Pipeline" : "None", "UnalignedPipeline" : "0", "RewindPipeline" : "0", "ProcessNetwork" : "0",
 		"II" : "0",
-		"VariableLatency" : "1", "ExactLatency" : "-1", "EstimateLatencyMin" : "27", "EstimateLatencyMax" : "27",
+		"VariableLatency" : "1", "ExactLatency" : "-1", "EstimateLatencyMin" : "76", "EstimateLatencyMax" : "2060",
 		"Combinational" : "0",
 		"Datapath" : "0",
 		"ClockEnable" : "0",
@@ -179,28 +183,30 @@ set RtlHierarchyInfo {[
 					{"Name" : "gmem_in_blk_n_AR", "Type" : "RtlSignal"},
 					{"Name" : "gmem_in_blk_n_R", "Type" : "RtlSignal"}]},
 			{"Name" : "empty", "Type" : "None", "Direction" : "I"},
-			{"Name" : "sext_ln325", "Type" : "None", "Direction" : "I"},
-			{"Name" : "zext_ln326", "Type" : "None", "Direction" : "I"},
+			{"Name" : "shl_ln1", "Type" : "None", "Direction" : "I"},
+			{"Name" : "base_buf", "Type" : "None", "Direction" : "I"},
+			{"Name" : "sext_ln397", "Type" : "None", "Direction" : "I"},
 			{"Name" : "x_buf", "Type" : "Memory", "Direction" : "O"}],
 		"Loop" : [
 			{"Name" : "LOAD_ROW", "PipelineType" : "UPC",
-				"LoopDec" : {"FSMBitwidth" : "1", "FirstState" : "ap_ST_fsm_pp0_stage0", "FirstStateIter" : "ap_enable_reg_pp0_iter0", "FirstStateBlock" : "ap_block_pp0_stage0_subdone", "LastState" : "ap_ST_fsm_pp0_stage0", "LastStateIter" : "ap_enable_reg_pp0_iter10", "LastStateBlock" : "ap_block_pp0_stage0_subdone", "QuitState" : "ap_ST_fsm_pp0_stage0", "QuitStateIter" : "ap_enable_reg_pp0_iter10", "QuitStateBlock" : "ap_block_pp0_stage0_subdone", "OneDepthLoop" : "0", "has_ap_ctrl" : "1", "has_continue" : "0"}}]},
+				"LoopDec" : {"FSMBitwidth" : "1", "FirstState" : "ap_ST_fsm_pp0_stage0", "FirstStateIter" : "ap_enable_reg_pp0_iter0", "FirstStateBlock" : "ap_block_pp0_stage0_subdone", "LastState" : "ap_ST_fsm_pp0_stage0", "LastStateIter" : "ap_enable_reg_pp0_iter11", "LastStateBlock" : "ap_block_pp0_stage0_subdone", "QuitState" : "ap_ST_fsm_pp0_stage0", "QuitStateIter" : "ap_enable_reg_pp0_iter11", "QuitStateBlock" : "ap_block_pp0_stage0_subdone", "OneDepthLoop" : "0", "has_ap_ctrl" : "1", "has_continue" : "0"}}]},
 	{"ID" : "1", "Level" : "1", "Path" : "`AUTOTB_DUT_INST.flow_control_loop_pipe_sequential_init_U", "Parent" : "0"}]}
 
 
 set ArgLastReadFirstWriteLatency {
 	upconv_core_top_Pipeline_LOAD_ROW {
-		gmem_in {Type I LastRead 9 FirstWrite -1}
+		gmem_in {Type I LastRead 10 FirstWrite -1}
 		empty {Type I LastRead 0 FirstWrite -1}
-		sext_ln325 {Type I LastRead 0 FirstWrite -1}
-		zext_ln326 {Type I LastRead 0 FirstWrite -1}
-		x_buf {Type O LastRead -1 FirstWrite 10}}}
+		shl_ln1 {Type I LastRead 0 FirstWrite -1}
+		base_buf {Type I LastRead 0 FirstWrite -1}
+		sext_ln397 {Type I LastRead 0 FirstWrite -1}
+		x_buf {Type O LastRead -1 FirstWrite 11}}}
 
 set hasDtUnsupportedChannel 0
 
 set PerformanceInfo {[
-	{"Name" : "Latency", "Min" : "27", "Max" : "27"}
-	, {"Name" : "Interval", "Min" : "27", "Max" : "27"}
+	{"Name" : "Latency", "Min" : "76", "Max" : "2060"}
+	, {"Name" : "Interval", "Min" : "76", "Max" : "2060"}
 ]}
 
 set PipelineEnableSignalInfo {[
@@ -209,8 +215,9 @@ set PipelineEnableSignalInfo {[
 
 set Spec2ImplPortList { 
 	 { m_axi {  { m_axi_gmem_in_0_AWVALID VALID 1 1 }  { m_axi_gmem_in_0_AWREADY READY 0 1 }  { m_axi_gmem_in_0_AWADDR ADDR 1 64 }  { m_axi_gmem_in_0_AWID ID 1 1 }  { m_axi_gmem_in_0_AWLEN SIZE 1 32 }  { m_axi_gmem_in_0_AWSIZE BURST 1 3 }  { m_axi_gmem_in_0_AWBURST LOCK 1 2 }  { m_axi_gmem_in_0_AWLOCK CACHE 1 2 }  { m_axi_gmem_in_0_AWCACHE PROT 1 4 }  { m_axi_gmem_in_0_AWPROT QOS 1 3 }  { m_axi_gmem_in_0_AWQOS REGION 1 4 }  { m_axi_gmem_in_0_AWREGION USER 1 4 }  { m_axi_gmem_in_0_AWUSER DATA 1 1 }  { m_axi_gmem_in_0_WVALID VALID 1 1 }  { m_axi_gmem_in_0_WREADY READY 0 1 }  { m_axi_gmem_in_0_WDATA FIFONUM 1 256 }  { m_axi_gmem_in_0_WSTRB STRB 1 32 }  { m_axi_gmem_in_0_WLAST LAST 1 1 }  { m_axi_gmem_in_0_WID ID 1 1 }  { m_axi_gmem_in_0_WUSER DATA 1 1 }  { m_axi_gmem_in_0_ARVALID VALID 1 1 }  { m_axi_gmem_in_0_ARREADY READY 0 1 }  { m_axi_gmem_in_0_ARADDR ADDR 1 64 }  { m_axi_gmem_in_0_ARID ID 1 1 }  { m_axi_gmem_in_0_ARLEN SIZE 1 32 }  { m_axi_gmem_in_0_ARSIZE BURST 1 3 }  { m_axi_gmem_in_0_ARBURST LOCK 1 2 }  { m_axi_gmem_in_0_ARLOCK CACHE 1 2 }  { m_axi_gmem_in_0_ARCACHE PROT 1 4 }  { m_axi_gmem_in_0_ARPROT QOS 1 3 }  { m_axi_gmem_in_0_ARQOS REGION 1 4 }  { m_axi_gmem_in_0_ARREGION USER 1 4 }  { m_axi_gmem_in_0_ARUSER DATA 1 1 }  { m_axi_gmem_in_0_RVALID VALID 0 1 }  { m_axi_gmem_in_0_RREADY READY 1 1 }  { m_axi_gmem_in_0_RDATA FIFONUM 0 256 }  { m_axi_gmem_in_0_RLAST LAST 0 1 }  { m_axi_gmem_in_0_RID ID 0 1 }  { m_axi_gmem_in_0_RFIFONUM LEN 0 11 }  { m_axi_gmem_in_0_RUSER DATA 0 1 }  { m_axi_gmem_in_0_RRESP RESP 0 2 }  { m_axi_gmem_in_0_BVALID VALID 0 1 }  { m_axi_gmem_in_0_BREADY READY 1 1 }  { m_axi_gmem_in_0_BRESP RESP 0 2 }  { m_axi_gmem_in_0_BID ID 0 1 }  { m_axi_gmem_in_0_BUSER DATA 0 1 } } }
-	empty { ap_none {  { empty in_data 0 5 } } }
-	sext_ln325 { ap_none {  { sext_ln325 in_data 0 59 } } }
-	zext_ln326 { ap_none {  { zext_ln326 in_data 0 8 } } }
+	empty { ap_none {  { empty in_data 0 13 } } }
+	shl_ln1 { ap_none {  { shl_ln1 in_data 0 25 } } }
+	base_buf { ap_none {  { base_buf in_data 0 11 } } }
+	sext_ln397 { ap_none {  { sext_ln397 in_data 0 59 } } }
 	x_buf { ap_memory {  { x_buf_address0 mem_address 1 11 }  { x_buf_ce0 mem_ce 1 1 }  { x_buf_we0 mem_we 1 1 }  { x_buf_d0 mem_din 1 256 } } }
 }

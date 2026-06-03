@@ -599,23 +599,30 @@
 						<name>m</name>
 						<fileName>../gen/Hls_Layers_UpConv.tpp</fileName>
 						<fileDirectory>/home/hoinguyen/Documents/Vitis/UpConv_HLS/upconv_block3</fileDirectory>
-						<lineNumber>116</lineNumber>
-						<contextFuncName>UpConv_Fused_Row&amp;lt;8, 128, 128, 120, 60&amp;gt;</contextFuncName>
-						<contextNormFuncName>UpConv_Fused_Row_8_128_128_120_60_s</contextNormFuncName>
+						<lineNumber>71</lineNumber>
+						<contextFuncName>Reset_Row_Buffer&amp;lt;256, 4, 64&amp;gt;</contextFuncName>
+						<contextNormFuncName>Reset_Row_Buffer_256_4_64_s</contextNormFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item class_id="10" tracking_level="0" version="0">
 								<first>/home/hoinguyen/Documents/Vitis/UpConv_HLS/upconv_block3</first>
 								<second class_id="11" tracking_level="0" version="0">
-									<count>1</count>
+									<count>2</count>
 									<item_version>0</item_version>
 									<item class_id="12" tracking_level="0" version="0">
 										<first class_id="13" tracking_level="0" version="0">
 											<first>../gen/Hls_Layers_UpConv.tpp</first>
+											<second>Reset_Row_Buffer&amp;lt;256, 4, 64&amp;gt;</second>
+										</first>
+										<second>71</second>
+									</item>
+									<item>
+										<first>
+											<first>../gen/Hls_Layers_UpConv.tpp</first>
 											<second>UpConv_Fused_Row&amp;lt;8, 128, 128, 120, 60&amp;gt;</second>
 										</first>
-										<second>116</second>
+										<second>354</second>
 									</item>
 								</second>
 							</item>
@@ -655,23 +662,30 @@
 						<name>rcw</name>
 						<fileName>../gen/Hls_Layers_UpConv.tpp</fileName>
 						<fileDirectory>/home/hoinguyen/Documents/Vitis/UpConv_HLS/upconv_block3</fileDirectory>
-						<lineNumber>115</lineNumber>
-						<contextFuncName>UpConv_Fused_Row&amp;lt;8, 128, 128, 120, 60&amp;gt;</contextFuncName>
-						<contextNormFuncName>UpConv_Fused_Row_8_128_128_120_60_s</contextNormFuncName>
+						<lineNumber>70</lineNumber>
+						<contextFuncName>Reset_Row_Buffer&amp;lt;256, 4, 64&amp;gt;</contextFuncName>
+						<contextNormFuncName>Reset_Row_Buffer_256_4_64_s</contextNormFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
 								<first>/home/hoinguyen/Documents/Vitis/UpConv_HLS/upconv_block3</first>
 								<second>
-									<count>1</count>
+									<count>2</count>
 									<item_version>0</item_version>
+									<item>
+										<first>
+											<first>../gen/Hls_Layers_UpConv.tpp</first>
+											<second>Reset_Row_Buffer&amp;lt;256, 4, 64&amp;gt;</second>
+										</first>
+										<second>70</second>
+									</item>
 									<item>
 										<first>
 											<first>../gen/Hls_Layers_UpConv.tpp</first>
 											<second>UpConv_Fused_Row&amp;lt;8, 128, 128, 120, 60&amp;gt;</second>
 										</first>
-										<second>115</second>
+										<second>354</second>
 									</item>
 								</second>
 							</item>
@@ -711,23 +725,30 @@
 						<name>rw</name>
 						<fileName>../gen/Hls_Layers_UpConv.tpp</fileName>
 						<fileDirectory>/home/hoinguyen/Documents/Vitis/UpConv_HLS/upconv_block3</fileDirectory>
-						<lineNumber>115</lineNumber>
-						<contextFuncName>UpConv_Fused_Row&amp;lt;8, 128, 128, 120, 60&amp;gt;</contextFuncName>
-						<contextNormFuncName>UpConv_Fused_Row_8_128_128_120_60_s</contextNormFuncName>
+						<lineNumber>70</lineNumber>
+						<contextFuncName>Reset_Row_Buffer&amp;lt;256, 4, 64&amp;gt;</contextFuncName>
+						<contextNormFuncName>Reset_Row_Buffer_256_4_64_s</contextNormFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
 								<first>/home/hoinguyen/Documents/Vitis/UpConv_HLS/upconv_block3</first>
 								<second>
-									<count>1</count>
+									<count>2</count>
 									<item_version>0</item_version>
+									<item>
+										<first>
+											<first>../gen/Hls_Layers_UpConv.tpp</first>
+											<second>Reset_Row_Buffer&amp;lt;256, 4, 64&amp;gt;</second>
+										</first>
+										<second>70</second>
+									</item>
 									<item>
 										<first>
 											<first>../gen/Hls_Layers_UpConv.tpp</first>
 											<second>UpConv_Fused_Row&amp;lt;8, 128, 128, 120, 60&amp;gt;</second>
 										</first>
-										<second>115</second>
+										<second>354</second>
 									</item>
 								</second>
 							</item>
@@ -764,26 +785,33 @@
 					<Obj>
 						<type>0</type>
 						<id>36</id>
-						<name>rw_write_ln115</name>
+						<name>rw_write_ln70</name>
 						<fileName>../gen/Hls_Layers_UpConv.tpp</fileName>
 						<fileDirectory>/home/hoinguyen/Documents/Vitis/UpConv_HLS/upconv_block3</fileDirectory>
-						<lineNumber>115</lineNumber>
-						<contextFuncName>UpConv_Fused_Row&amp;lt;8, 128, 128, 120, 60&amp;gt;</contextFuncName>
-						<contextNormFuncName>UpConv_Fused_Row_8_128_128_120_60_s</contextNormFuncName>
+						<lineNumber>70</lineNumber>
+						<contextFuncName>Reset_Row_Buffer&amp;lt;256, 4, 64&amp;gt;</contextFuncName>
+						<contextNormFuncName>Reset_Row_Buffer_256_4_64_s</contextNormFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
 								<first>/home/hoinguyen/Documents/Vitis/UpConv_HLS/upconv_block3</first>
 								<second>
-									<count>1</count>
+									<count>2</count>
 									<item_version>0</item_version>
+									<item>
+										<first>
+											<first>../gen/Hls_Layers_UpConv.tpp</first>
+											<second>Reset_Row_Buffer&amp;lt;256, 4, 64&amp;gt;</second>
+										</first>
+										<second>70</second>
+									</item>
 									<item>
 										<first>
 											<first>../gen/Hls_Layers_UpConv.tpp</first>
 											<second>UpConv_Fused_Row&amp;lt;8, 128, 128, 120, 60&amp;gt;</second>
 										</first>
-										<second>115</second>
+										<second>354</second>
 									</item>
 								</second>
 							</item>
@@ -821,26 +849,33 @@
 					<Obj>
 						<type>0</type>
 						<id>37</id>
-						<name>rcw_write_ln115</name>
+						<name>rcw_write_ln70</name>
 						<fileName>../gen/Hls_Layers_UpConv.tpp</fileName>
 						<fileDirectory>/home/hoinguyen/Documents/Vitis/UpConv_HLS/upconv_block3</fileDirectory>
-						<lineNumber>115</lineNumber>
-						<contextFuncName>UpConv_Fused_Row&amp;lt;8, 128, 128, 120, 60&amp;gt;</contextFuncName>
-						<contextNormFuncName>UpConv_Fused_Row_8_128_128_120_60_s</contextNormFuncName>
+						<lineNumber>70</lineNumber>
+						<contextFuncName>Reset_Row_Buffer&amp;lt;256, 4, 64&amp;gt;</contextFuncName>
+						<contextNormFuncName>Reset_Row_Buffer_256_4_64_s</contextNormFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
 								<first>/home/hoinguyen/Documents/Vitis/UpConv_HLS/upconv_block3</first>
 								<second>
-									<count>1</count>
+									<count>2</count>
 									<item_version>0</item_version>
+									<item>
+										<first>
+											<first>../gen/Hls_Layers_UpConv.tpp</first>
+											<second>Reset_Row_Buffer&amp;lt;256, 4, 64&amp;gt;</second>
+										</first>
+										<second>70</second>
+									</item>
 									<item>
 										<first>
 											<first>../gen/Hls_Layers_UpConv.tpp</first>
 											<second>UpConv_Fused_Row&amp;lt;8, 128, 128, 120, 60&amp;gt;</second>
 										</first>
-										<second>115</second>
+										<second>354</second>
 									</item>
 								</second>
 							</item>
@@ -878,26 +913,33 @@
 					<Obj>
 						<type>0</type>
 						<id>38</id>
-						<name>m_write_ln116</name>
+						<name>m_write_ln71</name>
 						<fileName>../gen/Hls_Layers_UpConv.tpp</fileName>
 						<fileDirectory>/home/hoinguyen/Documents/Vitis/UpConv_HLS/upconv_block3</fileDirectory>
-						<lineNumber>116</lineNumber>
-						<contextFuncName>UpConv_Fused_Row&amp;lt;8, 128, 128, 120, 60&amp;gt;</contextFuncName>
-						<contextNormFuncName>UpConv_Fused_Row_8_128_128_120_60_s</contextNormFuncName>
+						<lineNumber>71</lineNumber>
+						<contextFuncName>Reset_Row_Buffer&amp;lt;256, 4, 64&amp;gt;</contextFuncName>
+						<contextNormFuncName>Reset_Row_Buffer_256_4_64_s</contextNormFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
 								<first>/home/hoinguyen/Documents/Vitis/UpConv_HLS/upconv_block3</first>
 								<second>
-									<count>1</count>
+									<count>2</count>
 									<item_version>0</item_version>
+									<item>
+										<first>
+											<first>../gen/Hls_Layers_UpConv.tpp</first>
+											<second>Reset_Row_Buffer&amp;lt;256, 4, 64&amp;gt;</second>
+										</first>
+										<second>71</second>
+									</item>
 									<item>
 										<first>
 											<first>../gen/Hls_Layers_UpConv.tpp</first>
 											<second>UpConv_Fused_Row&amp;lt;8, 128, 128, 120, 60&amp;gt;</second>
 										</first>
-										<second>116</second>
+										<second>354</second>
 									</item>
 								</second>
 							</item>
@@ -980,23 +1022,30 @@
 						<name>m_1</name>
 						<fileName>../gen/Hls_Layers_UpConv.tpp</fileName>
 						<fileDirectory>/home/hoinguyen/Documents/Vitis/UpConv_HLS/upconv_block3</fileDirectory>
-						<lineNumber>116</lineNumber>
-						<contextFuncName>UpConv_Fused_Row&amp;lt;8, 128, 128, 120, 60&amp;gt;</contextFuncName>
-						<contextNormFuncName>UpConv_Fused_Row_8_128_128_120_60_s</contextNormFuncName>
+						<lineNumber>71</lineNumber>
+						<contextFuncName>Reset_Row_Buffer&amp;lt;256, 4, 64&amp;gt;</contextFuncName>
+						<contextNormFuncName>Reset_Row_Buffer_256_4_64_s</contextNormFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
 								<first>/home/hoinguyen/Documents/Vitis/UpConv_HLS/upconv_block3</first>
 								<second>
-									<count>1</count>
+									<count>2</count>
 									<item_version>0</item_version>
+									<item>
+										<first>
+											<first>../gen/Hls_Layers_UpConv.tpp</first>
+											<second>Reset_Row_Buffer&amp;lt;256, 4, 64&amp;gt;</second>
+										</first>
+										<second>71</second>
+									</item>
 									<item>
 										<first>
 											<first>../gen/Hls_Layers_UpConv.tpp</first>
 											<second>UpConv_Fused_Row&amp;lt;8, 128, 128, 120, 60&amp;gt;</second>
 										</first>
-										<second>116</second>
+										<second>354</second>
 									</item>
 								</second>
 							</item>
@@ -1034,26 +1083,33 @@
 					<Obj>
 						<type>0</type>
 						<id>42</id>
-						<name>icmp_ln116</name>
+						<name>icmp_ln71</name>
 						<fileName>../gen/Hls_Layers_UpConv.tpp</fileName>
 						<fileDirectory>/home/hoinguyen/Documents/Vitis/UpConv_HLS/upconv_block3</fileDirectory>
-						<lineNumber>116</lineNumber>
-						<contextFuncName>UpConv_Fused_Row&amp;lt;8, 128, 128, 120, 60&amp;gt;</contextFuncName>
-						<contextNormFuncName>UpConv_Fused_Row_8_128_128_120_60_s</contextNormFuncName>
+						<lineNumber>71</lineNumber>
+						<contextFuncName>Reset_Row_Buffer&amp;lt;256, 4, 64&amp;gt;</contextFuncName>
+						<contextNormFuncName>Reset_Row_Buffer_256_4_64_s</contextNormFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
 								<first>/home/hoinguyen/Documents/Vitis/UpConv_HLS/upconv_block3</first>
 								<second>
-									<count>1</count>
+									<count>2</count>
 									<item_version>0</item_version>
+									<item>
+										<first>
+											<first>../gen/Hls_Layers_UpConv.tpp</first>
+											<second>Reset_Row_Buffer&amp;lt;256, 4, 64&amp;gt;</second>
+										</first>
+										<second>71</second>
+									</item>
 									<item>
 										<first>
 											<first>../gen/Hls_Layers_UpConv.tpp</first>
 											<second>UpConv_Fused_Row&amp;lt;8, 128, 128, 120, 60&amp;gt;</second>
 										</first>
-										<second>116</second>
+										<second>354</second>
 									</item>
 								</second>
 							</item>
@@ -1094,23 +1150,30 @@
 						<name>m_2</name>
 						<fileName>../gen/Hls_Layers_UpConv.tpp</fileName>
 						<fileDirectory>/home/hoinguyen/Documents/Vitis/UpConv_HLS/upconv_block3</fileDirectory>
-						<lineNumber>116</lineNumber>
-						<contextFuncName>UpConv_Fused_Row&amp;lt;8, 128, 128, 120, 60&amp;gt;</contextFuncName>
-						<contextNormFuncName>UpConv_Fused_Row_8_128_128_120_60_s</contextNormFuncName>
+						<lineNumber>71</lineNumber>
+						<contextFuncName>Reset_Row_Buffer&amp;lt;256, 4, 64&amp;gt;</contextFuncName>
+						<contextNormFuncName>Reset_Row_Buffer_256_4_64_s</contextNormFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
 								<first>/home/hoinguyen/Documents/Vitis/UpConv_HLS/upconv_block3</first>
 								<second>
-									<count>1</count>
+									<count>2</count>
 									<item_version>0</item_version>
+									<item>
+										<first>
+											<first>../gen/Hls_Layers_UpConv.tpp</first>
+											<second>Reset_Row_Buffer&amp;lt;256, 4, 64&amp;gt;</second>
+										</first>
+										<second>71</second>
+									</item>
 									<item>
 										<first>
 											<first>../gen/Hls_Layers_UpConv.tpp</first>
 											<second>UpConv_Fused_Row&amp;lt;8, 128, 128, 120, 60&amp;gt;</second>
 										</first>
-										<second>116</second>
+										<second>354</second>
 									</item>
 								</second>
 							</item>
@@ -1148,26 +1211,33 @@
 					<Obj>
 						<type>0</type>
 						<id>44</id>
-						<name>br_ln116</name>
+						<name>br_ln71</name>
 						<fileName>../gen/Hls_Layers_UpConv.tpp</fileName>
 						<fileDirectory>/home/hoinguyen/Documents/Vitis/UpConv_HLS/upconv_block3</fileDirectory>
-						<lineNumber>116</lineNumber>
-						<contextFuncName>UpConv_Fused_Row&amp;lt;8, 128, 128, 120, 60&amp;gt;</contextFuncName>
-						<contextNormFuncName>UpConv_Fused_Row_8_128_128_120_60_s</contextNormFuncName>
+						<lineNumber>71</lineNumber>
+						<contextFuncName>Reset_Row_Buffer&amp;lt;256, 4, 64&amp;gt;</contextFuncName>
+						<contextNormFuncName>Reset_Row_Buffer_256_4_64_s</contextNormFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
 								<first>/home/hoinguyen/Documents/Vitis/UpConv_HLS/upconv_block3</first>
 								<second>
-									<count>1</count>
+									<count>2</count>
 									<item_version>0</item_version>
+									<item>
+										<first>
+											<first>../gen/Hls_Layers_UpConv.tpp</first>
+											<second>Reset_Row_Buffer&amp;lt;256, 4, 64&amp;gt;</second>
+										</first>
+										<second>71</second>
+									</item>
 									<item>
 										<first>
 											<first>../gen/Hls_Layers_UpConv.tpp</first>
 											<second>UpConv_Fused_Row&amp;lt;8, 128, 128, 120, 60&amp;gt;</second>
 										</first>
-										<second>116</second>
+										<second>354</second>
 									</item>
 								</second>
 							</item>
@@ -1209,23 +1279,30 @@
 						<name>rcw_load</name>
 						<fileName>../gen/Hls_Layers_UpConv.tpp</fileName>
 						<fileDirectory>/home/hoinguyen/Documents/Vitis/UpConv_HLS/upconv_block3</fileDirectory>
-						<lineNumber>116</lineNumber>
-						<contextFuncName>UpConv_Fused_Row&amp;lt;8, 128, 128, 120, 60&amp;gt;</contextFuncName>
-						<contextNormFuncName>UpConv_Fused_Row_8_128_128_120_60_s</contextNormFuncName>
+						<lineNumber>71</lineNumber>
+						<contextFuncName>Reset_Row_Buffer&amp;lt;256, 4, 64&amp;gt;</contextFuncName>
+						<contextNormFuncName>Reset_Row_Buffer_256_4_64_s</contextNormFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
 								<first>/home/hoinguyen/Documents/Vitis/UpConv_HLS/upconv_block3</first>
 								<second>
-									<count>1</count>
+									<count>2</count>
 									<item_version>0</item_version>
+									<item>
+										<first>
+											<first>../gen/Hls_Layers_UpConv.tpp</first>
+											<second>Reset_Row_Buffer&amp;lt;256, 4, 64&amp;gt;</second>
+										</first>
+										<second>71</second>
+									</item>
 									<item>
 										<first>
 											<first>../gen/Hls_Layers_UpConv.tpp</first>
 											<second>UpConv_Fused_Row&amp;lt;8, 128, 128, 120, 60&amp;gt;</second>
 										</first>
-										<second>116</second>
+										<second>354</second>
 									</item>
 								</second>
 							</item>
@@ -1266,23 +1343,30 @@
 						<name>rw_load</name>
 						<fileName>../gen/Hls_Layers_UpConv.tpp</fileName>
 						<fileDirectory>/home/hoinguyen/Documents/Vitis/UpConv_HLS/upconv_block3</fileDirectory>
-						<lineNumber>116</lineNumber>
-						<contextFuncName>UpConv_Fused_Row&amp;lt;8, 128, 128, 120, 60&amp;gt;</contextFuncName>
-						<contextNormFuncName>UpConv_Fused_Row_8_128_128_120_60_s</contextNormFuncName>
+						<lineNumber>71</lineNumber>
+						<contextFuncName>Reset_Row_Buffer&amp;lt;256, 4, 64&amp;gt;</contextFuncName>
+						<contextNormFuncName>Reset_Row_Buffer_256_4_64_s</contextNormFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
 								<first>/home/hoinguyen/Documents/Vitis/UpConv_HLS/upconv_block3</first>
 								<second>
-									<count>1</count>
+									<count>2</count>
 									<item_version>0</item_version>
+									<item>
+										<first>
+											<first>../gen/Hls_Layers_UpConv.tpp</first>
+											<second>Reset_Row_Buffer&amp;lt;256, 4, 64&amp;gt;</second>
+										</first>
+										<second>71</second>
+									</item>
 									<item>
 										<first>
 											<first>../gen/Hls_Layers_UpConv.tpp</first>
 											<second>UpConv_Fused_Row&amp;lt;8, 128, 128, 120, 60&amp;gt;</second>
 										</first>
-										<second>116</second>
+										<second>354</second>
 									</item>
 								</second>
 							</item>
@@ -1320,26 +1404,33 @@
 					<Obj>
 						<type>0</type>
 						<id>48</id>
-						<name>trunc_ln116</name>
+						<name>trunc_ln71</name>
 						<fileName>../gen/Hls_Layers_UpConv.tpp</fileName>
 						<fileDirectory>/home/hoinguyen/Documents/Vitis/UpConv_HLS/upconv_block3</fileDirectory>
-						<lineNumber>116</lineNumber>
-						<contextFuncName>UpConv_Fused_Row&amp;lt;8, 128, 128, 120, 60&amp;gt;</contextFuncName>
-						<contextNormFuncName>UpConv_Fused_Row_8_128_128_120_60_s</contextNormFuncName>
+						<lineNumber>71</lineNumber>
+						<contextFuncName>Reset_Row_Buffer&amp;lt;256, 4, 64&amp;gt;</contextFuncName>
+						<contextNormFuncName>Reset_Row_Buffer_256_4_64_s</contextNormFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
 								<first>/home/hoinguyen/Documents/Vitis/UpConv_HLS/upconv_block3</first>
 								<second>
-									<count>1</count>
+									<count>2</count>
 									<item_version>0</item_version>
+									<item>
+										<first>
+											<first>../gen/Hls_Layers_UpConv.tpp</first>
+											<second>Reset_Row_Buffer&amp;lt;256, 4, 64&amp;gt;</second>
+										</first>
+										<second>71</second>
+									</item>
 									<item>
 										<first>
 											<first>../gen/Hls_Layers_UpConv.tpp</first>
 											<second>UpConv_Fused_Row&amp;lt;8, 128, 128, 120, 60&amp;gt;</second>
 										</first>
-										<second>116</second>
+										<second>354</second>
 									</item>
 								</second>
 							</item>
@@ -1376,26 +1467,33 @@
 					<Obj>
 						<type>0</type>
 						<id>49</id>
-						<name>trunc_ln116_1</name>
+						<name>trunc_ln71_1</name>
 						<fileName>../gen/Hls_Layers_UpConv.tpp</fileName>
 						<fileDirectory>/home/hoinguyen/Documents/Vitis/UpConv_HLS/upconv_block3</fileDirectory>
-						<lineNumber>116</lineNumber>
-						<contextFuncName>UpConv_Fused_Row&amp;lt;8, 128, 128, 120, 60&amp;gt;</contextFuncName>
-						<contextNormFuncName>UpConv_Fused_Row_8_128_128_120_60_s</contextNormFuncName>
+						<lineNumber>71</lineNumber>
+						<contextFuncName>Reset_Row_Buffer&amp;lt;256, 4, 64&amp;gt;</contextFuncName>
+						<contextNormFuncName>Reset_Row_Buffer_256_4_64_s</contextNormFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
 								<first>/home/hoinguyen/Documents/Vitis/UpConv_HLS/upconv_block3</first>
 								<second>
-									<count>1</count>
+									<count>2</count>
 									<item_version>0</item_version>
+									<item>
+										<first>
+											<first>../gen/Hls_Layers_UpConv.tpp</first>
+											<second>Reset_Row_Buffer&amp;lt;256, 4, 64&amp;gt;</second>
+										</first>
+										<second>71</second>
+									</item>
 									<item>
 										<first>
 											<first>../gen/Hls_Layers_UpConv.tpp</first>
 											<second>UpConv_Fused_Row&amp;lt;8, 128, 128, 120, 60&amp;gt;</second>
 										</first>
-										<second>116</second>
+										<second>354</second>
 									</item>
 								</second>
 							</item>
@@ -1435,23 +1533,30 @@
 						<name>tmp_s</name>
 						<fileName>../gen/Hls_Layers_UpConv.tpp</fileName>
 						<fileDirectory>/home/hoinguyen/Documents/Vitis/UpConv_HLS/upconv_block3</fileDirectory>
-						<lineNumber>120</lineNumber>
-						<contextFuncName>UpConv_Fused_Row&amp;lt;8, 128, 128, 120, 60&amp;gt;</contextFuncName>
-						<contextNormFuncName>UpConv_Fused_Row_8_128_128_120_60_s</contextNormFuncName>
+						<lineNumber>75</lineNumber>
+						<contextFuncName>Reset_Row_Buffer&amp;lt;256, 4, 64&amp;gt;</contextFuncName>
+						<contextNormFuncName>Reset_Row_Buffer_256_4_64_s</contextNormFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
 								<first>/home/hoinguyen/Documents/Vitis/UpConv_HLS/upconv_block3</first>
 								<second>
-									<count>1</count>
+									<count>2</count>
 									<item_version>0</item_version>
+									<item>
+										<first>
+											<first>../gen/Hls_Layers_UpConv.tpp</first>
+											<second>Reset_Row_Buffer&amp;lt;256, 4, 64&amp;gt;</second>
+										</first>
+										<second>75</second>
+									</item>
 									<item>
 										<first>
 											<first>../gen/Hls_Layers_UpConv.tpp</first>
 											<second>UpConv_Fused_Row&amp;lt;8, 128, 128, 120, 60&amp;gt;</second>
 										</first>
-										<second>120</second>
+										<second>354</second>
 									</item>
 								</second>
 							</item>
@@ -1490,26 +1595,33 @@
 					<Obj>
 						<type>0</type>
 						<id>54</id>
-						<name>add_ln120</name>
+						<name>add_ln75</name>
 						<fileName>../gen/Hls_Layers_UpConv.tpp</fileName>
 						<fileDirectory>/home/hoinguyen/Documents/Vitis/UpConv_HLS/upconv_block3</fileDirectory>
-						<lineNumber>120</lineNumber>
-						<contextFuncName>UpConv_Fused_Row&amp;lt;8, 128, 128, 120, 60&amp;gt;</contextFuncName>
-						<contextNormFuncName>UpConv_Fused_Row_8_128_128_120_60_s</contextNormFuncName>
+						<lineNumber>75</lineNumber>
+						<contextFuncName>Reset_Row_Buffer&amp;lt;256, 4, 64&amp;gt;</contextFuncName>
+						<contextNormFuncName>Reset_Row_Buffer_256_4_64_s</contextNormFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
 								<first>/home/hoinguyen/Documents/Vitis/UpConv_HLS/upconv_block3</first>
 								<second>
-									<count>1</count>
+									<count>2</count>
 									<item_version>0</item_version>
+									<item>
+										<first>
+											<first>../gen/Hls_Layers_UpConv.tpp</first>
+											<second>Reset_Row_Buffer&amp;lt;256, 4, 64&amp;gt;</second>
+										</first>
+										<second>75</second>
+									</item>
 									<item>
 										<first>
 											<first>../gen/Hls_Layers_UpConv.tpp</first>
 											<second>UpConv_Fused_Row&amp;lt;8, 128, 128, 120, 60&amp;gt;</second>
 										</first>
-										<second>120</second>
+										<second>354</second>
 									</item>
 								</second>
 							</item>
@@ -1547,26 +1659,33 @@
 					<Obj>
 						<type>0</type>
 						<id>55</id>
-						<name>zext_ln120</name>
+						<name>zext_ln75</name>
 						<fileName>../gen/Hls_Layers_UpConv.tpp</fileName>
 						<fileDirectory>/home/hoinguyen/Documents/Vitis/UpConv_HLS/upconv_block3</fileDirectory>
-						<lineNumber>120</lineNumber>
-						<contextFuncName>UpConv_Fused_Row&amp;lt;8, 128, 128, 120, 60&amp;gt;</contextFuncName>
-						<contextNormFuncName>UpConv_Fused_Row_8_128_128_120_60_s</contextNormFuncName>
+						<lineNumber>75</lineNumber>
+						<contextFuncName>Reset_Row_Buffer&amp;lt;256, 4, 64&amp;gt;</contextFuncName>
+						<contextNormFuncName>Reset_Row_Buffer_256_4_64_s</contextNormFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
 								<first>/home/hoinguyen/Documents/Vitis/UpConv_HLS/upconv_block3</first>
 								<second>
-									<count>1</count>
+									<count>2</count>
 									<item_version>0</item_version>
+									<item>
+										<first>
+											<first>../gen/Hls_Layers_UpConv.tpp</first>
+											<second>Reset_Row_Buffer&amp;lt;256, 4, 64&amp;gt;</second>
+										</first>
+										<second>75</second>
+									</item>
 									<item>
 										<first>
 											<first>../gen/Hls_Layers_UpConv.tpp</first>
 											<second>UpConv_Fused_Row&amp;lt;8, 128, 128, 120, 60&amp;gt;</second>
 										</first>
-										<second>120</second>
+										<second>354</second>
 									</item>
 								</second>
 							</item>
@@ -1606,23 +1725,30 @@
 						<name>p_ZZ16UpConv_Fused_RowILi8ELi128ELi128ELi120ELi60EEvP7ap_uintILi256EEPKS1_S4_S4_S_6</name>
 						<fileName>../gen/Hls_Layers_UpConv.tpp</fileName>
 						<fileDirectory>/home/hoinguyen/Documents/Vitis/UpConv_HLS/upconv_block3</fileDirectory>
-						<lineNumber>120</lineNumber>
-						<contextFuncName>UpConv_Fused_Row&amp;lt;8, 128, 128, 120, 60&amp;gt;</contextFuncName>
-						<contextNormFuncName>UpConv_Fused_Row_8_128_128_120_60_s</contextNormFuncName>
+						<lineNumber>75</lineNumber>
+						<contextFuncName>Reset_Row_Buffer&amp;lt;256, 4, 64&amp;gt;</contextFuncName>
+						<contextNormFuncName>Reset_Row_Buffer_256_4_64_s</contextNormFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
 								<first>/home/hoinguyen/Documents/Vitis/UpConv_HLS/upconv_block3</first>
 								<second>
-									<count>1</count>
+									<count>2</count>
 									<item_version>0</item_version>
+									<item>
+										<first>
+											<first>../gen/Hls_Layers_UpConv.tpp</first>
+											<second>Reset_Row_Buffer&amp;lt;256, 4, 64&amp;gt;</second>
+										</first>
+										<second>75</second>
+									</item>
 									<item>
 										<first>
 											<first>../gen/Hls_Layers_UpConv.tpp</first>
 											<second>UpConv_Fused_Row&amp;lt;8, 128, 128, 120, 60&amp;gt;</second>
 										</first>
-										<second>120</second>
+										<second>354</second>
 									</item>
 								</second>
 							</item>
@@ -1664,23 +1790,30 @@
 						<name>p_ZZ16UpConv_Fused_RowILi8ELi128ELi128ELi120ELi60EEvP7ap_uintILi256EEPKS1_S4_S4_S_7</name>
 						<fileName>../gen/Hls_Layers_UpConv.tpp</fileName>
 						<fileDirectory>/home/hoinguyen/Documents/Vitis/UpConv_HLS/upconv_block3</fileDirectory>
-						<lineNumber>120</lineNumber>
-						<contextFuncName>UpConv_Fused_Row&amp;lt;8, 128, 128, 120, 60&amp;gt;</contextFuncName>
-						<contextNormFuncName>UpConv_Fused_Row_8_128_128_120_60_s</contextNormFuncName>
+						<lineNumber>75</lineNumber>
+						<contextFuncName>Reset_Row_Buffer&amp;lt;256, 4, 64&amp;gt;</contextFuncName>
+						<contextNormFuncName>Reset_Row_Buffer_256_4_64_s</contextNormFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
 								<first>/home/hoinguyen/Documents/Vitis/UpConv_HLS/upconv_block3</first>
 								<second>
-									<count>1</count>
+									<count>2</count>
 									<item_version>0</item_version>
+									<item>
+										<first>
+											<first>../gen/Hls_Layers_UpConv.tpp</first>
+											<second>Reset_Row_Buffer&amp;lt;256, 4, 64&amp;gt;</second>
+										</first>
+										<second>75</second>
+									</item>
 									<item>
 										<first>
 											<first>../gen/Hls_Layers_UpConv.tpp</first>
 											<second>UpConv_Fused_Row&amp;lt;8, 128, 128, 120, 60&amp;gt;</second>
 										</first>
-										<second>120</second>
+										<second>354</second>
 									</item>
 								</second>
 							</item>
@@ -1722,23 +1855,30 @@
 						<name>p_ZZ16UpConv_Fused_RowILi8ELi128ELi128ELi120ELi60EEvP7ap_uintILi256EEPKS1_S4_S4_S_8</name>
 						<fileName>../gen/Hls_Layers_UpConv.tpp</fileName>
 						<fileDirectory>/home/hoinguyen/Documents/Vitis/UpConv_HLS/upconv_block3</fileDirectory>
-						<lineNumber>120</lineNumber>
-						<contextFuncName>UpConv_Fused_Row&amp;lt;8, 128, 128, 120, 60&amp;gt;</contextFuncName>
-						<contextNormFuncName>UpConv_Fused_Row_8_128_128_120_60_s</contextNormFuncName>
+						<lineNumber>75</lineNumber>
+						<contextFuncName>Reset_Row_Buffer&amp;lt;256, 4, 64&amp;gt;</contextFuncName>
+						<contextNormFuncName>Reset_Row_Buffer_256_4_64_s</contextNormFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
 								<first>/home/hoinguyen/Documents/Vitis/UpConv_HLS/upconv_block3</first>
 								<second>
-									<count>1</count>
+									<count>2</count>
 									<item_version>0</item_version>
+									<item>
+										<first>
+											<first>../gen/Hls_Layers_UpConv.tpp</first>
+											<second>Reset_Row_Buffer&amp;lt;256, 4, 64&amp;gt;</second>
+										</first>
+										<second>75</second>
+									</item>
 									<item>
 										<first>
 											<first>../gen/Hls_Layers_UpConv.tpp</first>
 											<second>UpConv_Fused_Row&amp;lt;8, 128, 128, 120, 60&amp;gt;</second>
 										</first>
-										<second>120</second>
+										<second>354</second>
 									</item>
 								</second>
 							</item>
@@ -1780,23 +1920,30 @@
 						<name>p_ZZ16UpConv_Fused_RowILi8ELi128ELi128ELi120ELi60EEvP7ap_uintILi256EEPKS1_S4_S4_S_9</name>
 						<fileName>../gen/Hls_Layers_UpConv.tpp</fileName>
 						<fileDirectory>/home/hoinguyen/Documents/Vitis/UpConv_HLS/upconv_block3</fileDirectory>
-						<lineNumber>120</lineNumber>
-						<contextFuncName>UpConv_Fused_Row&amp;lt;8, 128, 128, 120, 60&amp;gt;</contextFuncName>
-						<contextNormFuncName>UpConv_Fused_Row_8_128_128_120_60_s</contextNormFuncName>
+						<lineNumber>75</lineNumber>
+						<contextFuncName>Reset_Row_Buffer&amp;lt;256, 4, 64&amp;gt;</contextFuncName>
+						<contextNormFuncName>Reset_Row_Buffer_256_4_64_s</contextNormFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
 								<first>/home/hoinguyen/Documents/Vitis/UpConv_HLS/upconv_block3</first>
 								<second>
-									<count>1</count>
+									<count>2</count>
 									<item_version>0</item_version>
+									<item>
+										<first>
+											<first>../gen/Hls_Layers_UpConv.tpp</first>
+											<second>Reset_Row_Buffer&amp;lt;256, 4, 64&amp;gt;</second>
+										</first>
+										<second>75</second>
+									</item>
 									<item>
 										<first>
 											<first>../gen/Hls_Layers_UpConv.tpp</first>
 											<second>UpConv_Fused_Row&amp;lt;8, 128, 128, 120, 60&amp;gt;</second>
 										</first>
-										<second>120</second>
+										<second>354</second>
 									</item>
 								</second>
 							</item>
@@ -1838,23 +1985,30 @@
 						<name>p_ZZ16UpConv_Fused_RowILi8ELi128ELi128ELi120ELi60EEvP7ap_uintILi256EEPKS1_S4_S4_S_10</name>
 						<fileName>../gen/Hls_Layers_UpConv.tpp</fileName>
 						<fileDirectory>/home/hoinguyen/Documents/Vitis/UpConv_HLS/upconv_block3</fileDirectory>
-						<lineNumber>120</lineNumber>
-						<contextFuncName>UpConv_Fused_Row&amp;lt;8, 128, 128, 120, 60&amp;gt;</contextFuncName>
-						<contextNormFuncName>UpConv_Fused_Row_8_128_128_120_60_s</contextNormFuncName>
+						<lineNumber>75</lineNumber>
+						<contextFuncName>Reset_Row_Buffer&amp;lt;256, 4, 64&amp;gt;</contextFuncName>
+						<contextNormFuncName>Reset_Row_Buffer_256_4_64_s</contextNormFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
 								<first>/home/hoinguyen/Documents/Vitis/UpConv_HLS/upconv_block3</first>
 								<second>
-									<count>1</count>
+									<count>2</count>
 									<item_version>0</item_version>
+									<item>
+										<first>
+											<first>../gen/Hls_Layers_UpConv.tpp</first>
+											<second>Reset_Row_Buffer&amp;lt;256, 4, 64&amp;gt;</second>
+										</first>
+										<second>75</second>
+									</item>
 									<item>
 										<first>
 											<first>../gen/Hls_Layers_UpConv.tpp</first>
 											<second>UpConv_Fused_Row&amp;lt;8, 128, 128, 120, 60&amp;gt;</second>
 										</first>
-										<second>120</second>
+										<second>354</second>
 									</item>
 								</second>
 							</item>
@@ -1896,23 +2050,30 @@
 						<name>p_ZZ16UpConv_Fused_RowILi8ELi128ELi128ELi120ELi60EEvP7ap_uintILi256EEPKS1_S4_S4_S_11</name>
 						<fileName>../gen/Hls_Layers_UpConv.tpp</fileName>
 						<fileDirectory>/home/hoinguyen/Documents/Vitis/UpConv_HLS/upconv_block3</fileDirectory>
-						<lineNumber>120</lineNumber>
-						<contextFuncName>UpConv_Fused_Row&amp;lt;8, 128, 128, 120, 60&amp;gt;</contextFuncName>
-						<contextNormFuncName>UpConv_Fused_Row_8_128_128_120_60_s</contextNormFuncName>
+						<lineNumber>75</lineNumber>
+						<contextFuncName>Reset_Row_Buffer&amp;lt;256, 4, 64&amp;gt;</contextFuncName>
+						<contextNormFuncName>Reset_Row_Buffer_256_4_64_s</contextNormFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
 								<first>/home/hoinguyen/Documents/Vitis/UpConv_HLS/upconv_block3</first>
 								<second>
-									<count>1</count>
+									<count>2</count>
 									<item_version>0</item_version>
+									<item>
+										<first>
+											<first>../gen/Hls_Layers_UpConv.tpp</first>
+											<second>Reset_Row_Buffer&amp;lt;256, 4, 64&amp;gt;</second>
+										</first>
+										<second>75</second>
+									</item>
 									<item>
 										<first>
 											<first>../gen/Hls_Layers_UpConv.tpp</first>
 											<second>UpConv_Fused_Row&amp;lt;8, 128, 128, 120, 60&amp;gt;</second>
 										</first>
-										<second>120</second>
+										<second>354</second>
 									</item>
 								</second>
 							</item>
@@ -1954,23 +2115,30 @@
 						<name>void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_10</name>
 						<fileName>../gen/Hls_Layers_UpConv.tpp</fileName>
 						<fileDirectory>/home/hoinguyen/Documents/Vitis/UpConv_HLS/upconv_block3</fileDirectory>
-						<lineNumber>120</lineNumber>
-						<contextFuncName>UpConv_Fused_Row&amp;lt;8, 128, 128, 120, 60&amp;gt;</contextFuncName>
-						<contextNormFuncName>UpConv_Fused_Row_8_128_128_120_60_s</contextNormFuncName>
+						<lineNumber>75</lineNumber>
+						<contextFuncName>Reset_Row_Buffer&amp;lt;256, 4, 64&amp;gt;</contextFuncName>
+						<contextNormFuncName>Reset_Row_Buffer_256_4_64_s</contextNormFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
 								<first>/home/hoinguyen/Documents/Vitis/UpConv_HLS/upconv_block3</first>
 								<second>
-									<count>1</count>
+									<count>2</count>
 									<item_version>0</item_version>
+									<item>
+										<first>
+											<first>../gen/Hls_Layers_UpConv.tpp</first>
+											<second>Reset_Row_Buffer&amp;lt;256, 4, 64&amp;gt;</second>
+										</first>
+										<second>75</second>
+									</item>
 									<item>
 										<first>
 											<first>../gen/Hls_Layers_UpConv.tpp</first>
 											<second>UpConv_Fused_Row&amp;lt;8, 128, 128, 120, 60&amp;gt;</second>
 										</first>
-										<second>120</second>
+										<second>354</second>
 									</item>
 								</second>
 							</item>
@@ -2012,23 +2180,30 @@
 						<name>void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_11</name>
 						<fileName>../gen/Hls_Layers_UpConv.tpp</fileName>
 						<fileDirectory>/home/hoinguyen/Documents/Vitis/UpConv_HLS/upconv_block3</fileDirectory>
-						<lineNumber>120</lineNumber>
-						<contextFuncName>UpConv_Fused_Row&amp;lt;8, 128, 128, 120, 60&amp;gt;</contextFuncName>
-						<contextNormFuncName>UpConv_Fused_Row_8_128_128_120_60_s</contextNormFuncName>
+						<lineNumber>75</lineNumber>
+						<contextFuncName>Reset_Row_Buffer&amp;lt;256, 4, 64&amp;gt;</contextFuncName>
+						<contextNormFuncName>Reset_Row_Buffer_256_4_64_s</contextNormFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
 								<first>/home/hoinguyen/Documents/Vitis/UpConv_HLS/upconv_block3</first>
 								<second>
-									<count>1</count>
+									<count>2</count>
 									<item_version>0</item_version>
+									<item>
+										<first>
+											<first>../gen/Hls_Layers_UpConv.tpp</first>
+											<second>Reset_Row_Buffer&amp;lt;256, 4, 64&amp;gt;</second>
+										</first>
+										<second>75</second>
+									</item>
 									<item>
 										<first>
 											<first>../gen/Hls_Layers_UpConv.tpp</first>
 											<second>UpConv_Fused_Row&amp;lt;8, 128, 128, 120, 60&amp;gt;</second>
 										</first>
-										<second>120</second>
+										<second>354</second>
 									</item>
 								</second>
 							</item>
@@ -2070,23 +2245,30 @@
 						<name>void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_12</name>
 						<fileName>../gen/Hls_Layers_UpConv.tpp</fileName>
 						<fileDirectory>/home/hoinguyen/Documents/Vitis/UpConv_HLS/upconv_block3</fileDirectory>
-						<lineNumber>120</lineNumber>
-						<contextFuncName>UpConv_Fused_Row&amp;lt;8, 128, 128, 120, 60&amp;gt;</contextFuncName>
-						<contextNormFuncName>UpConv_Fused_Row_8_128_128_120_60_s</contextNormFuncName>
+						<lineNumber>75</lineNumber>
+						<contextFuncName>Reset_Row_Buffer&amp;lt;256, 4, 64&amp;gt;</contextFuncName>
+						<contextNormFuncName>Reset_Row_Buffer_256_4_64_s</contextNormFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
 								<first>/home/hoinguyen/Documents/Vitis/UpConv_HLS/upconv_block3</first>
 								<second>
-									<count>1</count>
+									<count>2</count>
 									<item_version>0</item_version>
+									<item>
+										<first>
+											<first>../gen/Hls_Layers_UpConv.tpp</first>
+											<second>Reset_Row_Buffer&amp;lt;256, 4, 64&amp;gt;</second>
+										</first>
+										<second>75</second>
+									</item>
 									<item>
 										<first>
 											<first>../gen/Hls_Layers_UpConv.tpp</first>
 											<second>UpConv_Fused_Row&amp;lt;8, 128, 128, 120, 60&amp;gt;</second>
 										</first>
-										<second>120</second>
+										<second>354</second>
 									</item>
 								</second>
 							</item>
@@ -2128,23 +2310,30 @@
 						<name>void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_13</name>
 						<fileName>../gen/Hls_Layers_UpConv.tpp</fileName>
 						<fileDirectory>/home/hoinguyen/Documents/Vitis/UpConv_HLS/upconv_block3</fileDirectory>
-						<lineNumber>120</lineNumber>
-						<contextFuncName>UpConv_Fused_Row&amp;lt;8, 128, 128, 120, 60&amp;gt;</contextFuncName>
-						<contextNormFuncName>UpConv_Fused_Row_8_128_128_120_60_s</contextNormFuncName>
+						<lineNumber>75</lineNumber>
+						<contextFuncName>Reset_Row_Buffer&amp;lt;256, 4, 64&amp;gt;</contextFuncName>
+						<contextNormFuncName>Reset_Row_Buffer_256_4_64_s</contextNormFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
 								<first>/home/hoinguyen/Documents/Vitis/UpConv_HLS/upconv_block3</first>
 								<second>
-									<count>1</count>
+									<count>2</count>
 									<item_version>0</item_version>
+									<item>
+										<first>
+											<first>../gen/Hls_Layers_UpConv.tpp</first>
+											<second>Reset_Row_Buffer&amp;lt;256, 4, 64&amp;gt;</second>
+										</first>
+										<second>75</second>
+									</item>
 									<item>
 										<first>
 											<first>../gen/Hls_Layers_UpConv.tpp</first>
 											<second>UpConv_Fused_Row&amp;lt;8, 128, 128, 120, 60&amp;gt;</second>
 										</first>
-										<second>120</second>
+										<second>354</second>
 									</item>
 								</second>
 							</item>
@@ -2186,23 +2375,30 @@
 						<name>void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_14</name>
 						<fileName>../gen/Hls_Layers_UpConv.tpp</fileName>
 						<fileDirectory>/home/hoinguyen/Documents/Vitis/UpConv_HLS/upconv_block3</fileDirectory>
-						<lineNumber>120</lineNumber>
-						<contextFuncName>UpConv_Fused_Row&amp;lt;8, 128, 128, 120, 60&amp;gt;</contextFuncName>
-						<contextNormFuncName>UpConv_Fused_Row_8_128_128_120_60_s</contextNormFuncName>
+						<lineNumber>75</lineNumber>
+						<contextFuncName>Reset_Row_Buffer&amp;lt;256, 4, 64&amp;gt;</contextFuncName>
+						<contextNormFuncName>Reset_Row_Buffer_256_4_64_s</contextNormFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
 								<first>/home/hoinguyen/Documents/Vitis/UpConv_HLS/upconv_block3</first>
 								<second>
-									<count>1</count>
+									<count>2</count>
 									<item_version>0</item_version>
+									<item>
+										<first>
+											<first>../gen/Hls_Layers_UpConv.tpp</first>
+											<second>Reset_Row_Buffer&amp;lt;256, 4, 64&amp;gt;</second>
+										</first>
+										<second>75</second>
+									</item>
 									<item>
 										<first>
 											<first>../gen/Hls_Layers_UpConv.tpp</first>
 											<second>UpConv_Fused_Row&amp;lt;8, 128, 128, 120, 60&amp;gt;</second>
 										</first>
-										<second>120</second>
+										<second>354</second>
 									</item>
 								</second>
 							</item>
@@ -2244,23 +2440,30 @@
 						<name>void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_15</name>
 						<fileName>../gen/Hls_Layers_UpConv.tpp</fileName>
 						<fileDirectory>/home/hoinguyen/Documents/Vitis/UpConv_HLS/upconv_block3</fileDirectory>
-						<lineNumber>120</lineNumber>
-						<contextFuncName>UpConv_Fused_Row&amp;lt;8, 128, 128, 120, 60&amp;gt;</contextFuncName>
-						<contextNormFuncName>UpConv_Fused_Row_8_128_128_120_60_s</contextNormFuncName>
+						<lineNumber>75</lineNumber>
+						<contextFuncName>Reset_Row_Buffer&amp;lt;256, 4, 64&amp;gt;</contextFuncName>
+						<contextNormFuncName>Reset_Row_Buffer_256_4_64_s</contextNormFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
 								<first>/home/hoinguyen/Documents/Vitis/UpConv_HLS/upconv_block3</first>
 								<second>
-									<count>1</count>
+									<count>2</count>
 									<item_version>0</item_version>
+									<item>
+										<first>
+											<first>../gen/Hls_Layers_UpConv.tpp</first>
+											<second>Reset_Row_Buffer&amp;lt;256, 4, 64&amp;gt;</second>
+										</first>
+										<second>75</second>
+									</item>
 									<item>
 										<first>
 											<first>../gen/Hls_Layers_UpConv.tpp</first>
 											<second>UpConv_Fused_Row&amp;lt;8, 128, 128, 120, 60&amp;gt;</second>
 										</first>
-										<second>120</second>
+										<second>354</second>
 									</item>
 								</second>
 							</item>
@@ -2302,23 +2505,30 @@
 						<name>void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_16</name>
 						<fileName>../gen/Hls_Layers_UpConv.tpp</fileName>
 						<fileDirectory>/home/hoinguyen/Documents/Vitis/UpConv_HLS/upconv_block3</fileDirectory>
-						<lineNumber>120</lineNumber>
-						<contextFuncName>UpConv_Fused_Row&amp;lt;8, 128, 128, 120, 60&amp;gt;</contextFuncName>
-						<contextNormFuncName>UpConv_Fused_Row_8_128_128_120_60_s</contextNormFuncName>
+						<lineNumber>75</lineNumber>
+						<contextFuncName>Reset_Row_Buffer&amp;lt;256, 4, 64&amp;gt;</contextFuncName>
+						<contextNormFuncName>Reset_Row_Buffer_256_4_64_s</contextNormFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
 								<first>/home/hoinguyen/Documents/Vitis/UpConv_HLS/upconv_block3</first>
 								<second>
-									<count>1</count>
+									<count>2</count>
 									<item_version>0</item_version>
+									<item>
+										<first>
+											<first>../gen/Hls_Layers_UpConv.tpp</first>
+											<second>Reset_Row_Buffer&amp;lt;256, 4, 64&amp;gt;</second>
+										</first>
+										<second>75</second>
+									</item>
 									<item>
 										<first>
 											<first>../gen/Hls_Layers_UpConv.tpp</first>
 											<second>UpConv_Fused_Row&amp;lt;8, 128, 128, 120, 60&amp;gt;</second>
 										</first>
-										<second>120</second>
+										<second>354</second>
 									</item>
 								</second>
 							</item>
@@ -2360,23 +2570,30 @@
 						<name>void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_17</name>
 						<fileName>../gen/Hls_Layers_UpConv.tpp</fileName>
 						<fileDirectory>/home/hoinguyen/Documents/Vitis/UpConv_HLS/upconv_block3</fileDirectory>
-						<lineNumber>120</lineNumber>
-						<contextFuncName>UpConv_Fused_Row&amp;lt;8, 128, 128, 120, 60&amp;gt;</contextFuncName>
-						<contextNormFuncName>UpConv_Fused_Row_8_128_128_120_60_s</contextNormFuncName>
+						<lineNumber>75</lineNumber>
+						<contextFuncName>Reset_Row_Buffer&amp;lt;256, 4, 64&amp;gt;</contextFuncName>
+						<contextNormFuncName>Reset_Row_Buffer_256_4_64_s</contextNormFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
 								<first>/home/hoinguyen/Documents/Vitis/UpConv_HLS/upconv_block3</first>
 								<second>
-									<count>1</count>
+									<count>2</count>
 									<item_version>0</item_version>
+									<item>
+										<first>
+											<first>../gen/Hls_Layers_UpConv.tpp</first>
+											<second>Reset_Row_Buffer&amp;lt;256, 4, 64&amp;gt;</second>
+										</first>
+										<second>75</second>
+									</item>
 									<item>
 										<first>
 											<first>../gen/Hls_Layers_UpConv.tpp</first>
 											<second>UpConv_Fused_Row&amp;lt;8, 128, 128, 120, 60&amp;gt;</second>
 										</first>
-										<second>120</second>
+										<second>354</second>
 									</item>
 								</second>
 							</item>
@@ -2418,23 +2635,30 @@
 						<name>void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_18</name>
 						<fileName>../gen/Hls_Layers_UpConv.tpp</fileName>
 						<fileDirectory>/home/hoinguyen/Documents/Vitis/UpConv_HLS/upconv_block3</fileDirectory>
-						<lineNumber>120</lineNumber>
-						<contextFuncName>UpConv_Fused_Row&amp;lt;8, 128, 128, 120, 60&amp;gt;</contextFuncName>
-						<contextNormFuncName>UpConv_Fused_Row_8_128_128_120_60_s</contextNormFuncName>
+						<lineNumber>75</lineNumber>
+						<contextFuncName>Reset_Row_Buffer&amp;lt;256, 4, 64&amp;gt;</contextFuncName>
+						<contextNormFuncName>Reset_Row_Buffer_256_4_64_s</contextNormFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
 								<first>/home/hoinguyen/Documents/Vitis/UpConv_HLS/upconv_block3</first>
 								<second>
-									<count>1</count>
+									<count>2</count>
 									<item_version>0</item_version>
+									<item>
+										<first>
+											<first>../gen/Hls_Layers_UpConv.tpp</first>
+											<second>Reset_Row_Buffer&amp;lt;256, 4, 64&amp;gt;</second>
+										</first>
+										<second>75</second>
+									</item>
 									<item>
 										<first>
 											<first>../gen/Hls_Layers_UpConv.tpp</first>
 											<second>UpConv_Fused_Row&amp;lt;8, 128, 128, 120, 60&amp;gt;</second>
 										</first>
-										<second>120</second>
+										<second>354</second>
 									</item>
 								</second>
 							</item>
@@ -2476,23 +2700,30 @@
 						<name>void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_19</name>
 						<fileName>../gen/Hls_Layers_UpConv.tpp</fileName>
 						<fileDirectory>/home/hoinguyen/Documents/Vitis/UpConv_HLS/upconv_block3</fileDirectory>
-						<lineNumber>120</lineNumber>
-						<contextFuncName>UpConv_Fused_Row&amp;lt;8, 128, 128, 120, 60&amp;gt;</contextFuncName>
-						<contextNormFuncName>UpConv_Fused_Row_8_128_128_120_60_s</contextNormFuncName>
+						<lineNumber>75</lineNumber>
+						<contextFuncName>Reset_Row_Buffer&amp;lt;256, 4, 64&amp;gt;</contextFuncName>
+						<contextNormFuncName>Reset_Row_Buffer_256_4_64_s</contextNormFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
 								<first>/home/hoinguyen/Documents/Vitis/UpConv_HLS/upconv_block3</first>
 								<second>
-									<count>1</count>
+									<count>2</count>
 									<item_version>0</item_version>
+									<item>
+										<first>
+											<first>../gen/Hls_Layers_UpConv.tpp</first>
+											<second>Reset_Row_Buffer&amp;lt;256, 4, 64&amp;gt;</second>
+										</first>
+										<second>75</second>
+									</item>
 									<item>
 										<first>
 											<first>../gen/Hls_Layers_UpConv.tpp</first>
 											<second>UpConv_Fused_Row&amp;lt;8, 128, 128, 120, 60&amp;gt;</second>
 										</first>
-										<second>120</second>
+										<second>354</second>
 									</item>
 								</second>
 							</item>
@@ -2531,26 +2762,33 @@
 					<Obj>
 						<type>0</type>
 						<id>72</id>
-						<name>void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_10_write_ln120</name>
+						<name>void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_10_write_ln75</name>
 						<fileName>../gen/Hls_Layers_UpConv.tpp</fileName>
 						<fileDirectory>/home/hoinguyen/Documents/Vitis/UpConv_HLS/upconv_block3</fileDirectory>
-						<lineNumber>120</lineNumber>
-						<contextFuncName>UpConv_Fused_Row&amp;lt;8, 128, 128, 120, 60&amp;gt;</contextFuncName>
-						<contextNormFuncName>UpConv_Fused_Row_8_128_128_120_60_s</contextNormFuncName>
+						<lineNumber>75</lineNumber>
+						<contextFuncName>Reset_Row_Buffer&amp;lt;256, 4, 64&amp;gt;</contextFuncName>
+						<contextNormFuncName>Reset_Row_Buffer_256_4_64_s</contextNormFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
 								<first>/home/hoinguyen/Documents/Vitis/UpConv_HLS/upconv_block3</first>
 								<second>
-									<count>1</count>
+									<count>2</count>
 									<item_version>0</item_version>
+									<item>
+										<first>
+											<first>../gen/Hls_Layers_UpConv.tpp</first>
+											<second>Reset_Row_Buffer&amp;lt;256, 4, 64&amp;gt;</second>
+										</first>
+										<second>75</second>
+									</item>
 									<item>
 										<first>
 											<first>../gen/Hls_Layers_UpConv.tpp</first>
 											<second>UpConv_Fused_Row&amp;lt;8, 128, 128, 120, 60&amp;gt;</second>
 										</first>
-										<second>120</second>
+										<second>354</second>
 									</item>
 								</second>
 							</item>
@@ -2588,26 +2826,33 @@
 					<Obj>
 						<type>0</type>
 						<id>73</id>
-						<name>void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_11_write_ln120</name>
+						<name>void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_11_write_ln75</name>
 						<fileName>../gen/Hls_Layers_UpConv.tpp</fileName>
 						<fileDirectory>/home/hoinguyen/Documents/Vitis/UpConv_HLS/upconv_block3</fileDirectory>
-						<lineNumber>120</lineNumber>
-						<contextFuncName>UpConv_Fused_Row&amp;lt;8, 128, 128, 120, 60&amp;gt;</contextFuncName>
-						<contextNormFuncName>UpConv_Fused_Row_8_128_128_120_60_s</contextNormFuncName>
+						<lineNumber>75</lineNumber>
+						<contextFuncName>Reset_Row_Buffer&amp;lt;256, 4, 64&amp;gt;</contextFuncName>
+						<contextNormFuncName>Reset_Row_Buffer_256_4_64_s</contextNormFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
 								<first>/home/hoinguyen/Documents/Vitis/UpConv_HLS/upconv_block3</first>
 								<second>
-									<count>1</count>
+									<count>2</count>
 									<item_version>0</item_version>
+									<item>
+										<first>
+											<first>../gen/Hls_Layers_UpConv.tpp</first>
+											<second>Reset_Row_Buffer&amp;lt;256, 4, 64&amp;gt;</second>
+										</first>
+										<second>75</second>
+									</item>
 									<item>
 										<first>
 											<first>../gen/Hls_Layers_UpConv.tpp</first>
 											<second>UpConv_Fused_Row&amp;lt;8, 128, 128, 120, 60&amp;gt;</second>
 										</first>
-										<second>120</second>
+										<second>354</second>
 									</item>
 								</second>
 							</item>
@@ -2645,26 +2890,33 @@
 					<Obj>
 						<type>0</type>
 						<id>74</id>
-						<name>void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_12_write_ln120</name>
+						<name>void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_12_write_ln75</name>
 						<fileName>../gen/Hls_Layers_UpConv.tpp</fileName>
 						<fileDirectory>/home/hoinguyen/Documents/Vitis/UpConv_HLS/upconv_block3</fileDirectory>
-						<lineNumber>120</lineNumber>
-						<contextFuncName>UpConv_Fused_Row&amp;lt;8, 128, 128, 120, 60&amp;gt;</contextFuncName>
-						<contextNormFuncName>UpConv_Fused_Row_8_128_128_120_60_s</contextNormFuncName>
+						<lineNumber>75</lineNumber>
+						<contextFuncName>Reset_Row_Buffer&amp;lt;256, 4, 64&amp;gt;</contextFuncName>
+						<contextNormFuncName>Reset_Row_Buffer_256_4_64_s</contextNormFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
 								<first>/home/hoinguyen/Documents/Vitis/UpConv_HLS/upconv_block3</first>
 								<second>
-									<count>1</count>
+									<count>2</count>
 									<item_version>0</item_version>
+									<item>
+										<first>
+											<first>../gen/Hls_Layers_UpConv.tpp</first>
+											<second>Reset_Row_Buffer&amp;lt;256, 4, 64&amp;gt;</second>
+										</first>
+										<second>75</second>
+									</item>
 									<item>
 										<first>
 											<first>../gen/Hls_Layers_UpConv.tpp</first>
 											<second>UpConv_Fused_Row&amp;lt;8, 128, 128, 120, 60&amp;gt;</second>
 										</first>
-										<second>120</second>
+										<second>354</second>
 									</item>
 								</second>
 							</item>
@@ -2702,26 +2954,33 @@
 					<Obj>
 						<type>0</type>
 						<id>75</id>
-						<name>void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_13_write_ln120</name>
+						<name>void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_13_write_ln75</name>
 						<fileName>../gen/Hls_Layers_UpConv.tpp</fileName>
 						<fileDirectory>/home/hoinguyen/Documents/Vitis/UpConv_HLS/upconv_block3</fileDirectory>
-						<lineNumber>120</lineNumber>
-						<contextFuncName>UpConv_Fused_Row&amp;lt;8, 128, 128, 120, 60&amp;gt;</contextFuncName>
-						<contextNormFuncName>UpConv_Fused_Row_8_128_128_120_60_s</contextNormFuncName>
+						<lineNumber>75</lineNumber>
+						<contextFuncName>Reset_Row_Buffer&amp;lt;256, 4, 64&amp;gt;</contextFuncName>
+						<contextNormFuncName>Reset_Row_Buffer_256_4_64_s</contextNormFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
 								<first>/home/hoinguyen/Documents/Vitis/UpConv_HLS/upconv_block3</first>
 								<second>
-									<count>1</count>
+									<count>2</count>
 									<item_version>0</item_version>
+									<item>
+										<first>
+											<first>../gen/Hls_Layers_UpConv.tpp</first>
+											<second>Reset_Row_Buffer&amp;lt;256, 4, 64&amp;gt;</second>
+										</first>
+										<second>75</second>
+									</item>
 									<item>
 										<first>
 											<first>../gen/Hls_Layers_UpConv.tpp</first>
 											<second>UpConv_Fused_Row&amp;lt;8, 128, 128, 120, 60&amp;gt;</second>
 										</first>
-										<second>120</second>
+										<second>354</second>
 									</item>
 								</second>
 							</item>
@@ -2759,26 +3018,33 @@
 					<Obj>
 						<type>0</type>
 						<id>76</id>
-						<name>void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_14_write_ln120</name>
+						<name>void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_14_write_ln75</name>
 						<fileName>../gen/Hls_Layers_UpConv.tpp</fileName>
 						<fileDirectory>/home/hoinguyen/Documents/Vitis/UpConv_HLS/upconv_block3</fileDirectory>
-						<lineNumber>120</lineNumber>
-						<contextFuncName>UpConv_Fused_Row&amp;lt;8, 128, 128, 120, 60&amp;gt;</contextFuncName>
-						<contextNormFuncName>UpConv_Fused_Row_8_128_128_120_60_s</contextNormFuncName>
+						<lineNumber>75</lineNumber>
+						<contextFuncName>Reset_Row_Buffer&amp;lt;256, 4, 64&amp;gt;</contextFuncName>
+						<contextNormFuncName>Reset_Row_Buffer_256_4_64_s</contextNormFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
 								<first>/home/hoinguyen/Documents/Vitis/UpConv_HLS/upconv_block3</first>
 								<second>
-									<count>1</count>
+									<count>2</count>
 									<item_version>0</item_version>
+									<item>
+										<first>
+											<first>../gen/Hls_Layers_UpConv.tpp</first>
+											<second>Reset_Row_Buffer&amp;lt;256, 4, 64&amp;gt;</second>
+										</first>
+										<second>75</second>
+									</item>
 									<item>
 										<first>
 											<first>../gen/Hls_Layers_UpConv.tpp</first>
 											<second>UpConv_Fused_Row&amp;lt;8, 128, 128, 120, 60&amp;gt;</second>
 										</first>
-										<second>120</second>
+										<second>354</second>
 									</item>
 								</second>
 							</item>
@@ -2816,26 +3082,33 @@
 					<Obj>
 						<type>0</type>
 						<id>77</id>
-						<name>void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_15_write_ln120</name>
+						<name>void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_15_write_ln75</name>
 						<fileName>../gen/Hls_Layers_UpConv.tpp</fileName>
 						<fileDirectory>/home/hoinguyen/Documents/Vitis/UpConv_HLS/upconv_block3</fileDirectory>
-						<lineNumber>120</lineNumber>
-						<contextFuncName>UpConv_Fused_Row&amp;lt;8, 128, 128, 120, 60&amp;gt;</contextFuncName>
-						<contextNormFuncName>UpConv_Fused_Row_8_128_128_120_60_s</contextNormFuncName>
+						<lineNumber>75</lineNumber>
+						<contextFuncName>Reset_Row_Buffer&amp;lt;256, 4, 64&amp;gt;</contextFuncName>
+						<contextNormFuncName>Reset_Row_Buffer_256_4_64_s</contextNormFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
 								<first>/home/hoinguyen/Documents/Vitis/UpConv_HLS/upconv_block3</first>
 								<second>
-									<count>1</count>
+									<count>2</count>
 									<item_version>0</item_version>
+									<item>
+										<first>
+											<first>../gen/Hls_Layers_UpConv.tpp</first>
+											<second>Reset_Row_Buffer&amp;lt;256, 4, 64&amp;gt;</second>
+										</first>
+										<second>75</second>
+									</item>
 									<item>
 										<first>
 											<first>../gen/Hls_Layers_UpConv.tpp</first>
 											<second>UpConv_Fused_Row&amp;lt;8, 128, 128, 120, 60&amp;gt;</second>
 										</first>
-										<second>120</second>
+										<second>354</second>
 									</item>
 								</second>
 							</item>
@@ -2873,26 +3146,33 @@
 					<Obj>
 						<type>0</type>
 						<id>78</id>
-						<name>void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_16_write_ln120</name>
+						<name>void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_16_write_ln75</name>
 						<fileName>../gen/Hls_Layers_UpConv.tpp</fileName>
 						<fileDirectory>/home/hoinguyen/Documents/Vitis/UpConv_HLS/upconv_block3</fileDirectory>
-						<lineNumber>120</lineNumber>
-						<contextFuncName>UpConv_Fused_Row&amp;lt;8, 128, 128, 120, 60&amp;gt;</contextFuncName>
-						<contextNormFuncName>UpConv_Fused_Row_8_128_128_120_60_s</contextNormFuncName>
+						<lineNumber>75</lineNumber>
+						<contextFuncName>Reset_Row_Buffer&amp;lt;256, 4, 64&amp;gt;</contextFuncName>
+						<contextNormFuncName>Reset_Row_Buffer_256_4_64_s</contextNormFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
 								<first>/home/hoinguyen/Documents/Vitis/UpConv_HLS/upconv_block3</first>
 								<second>
-									<count>1</count>
+									<count>2</count>
 									<item_version>0</item_version>
+									<item>
+										<first>
+											<first>../gen/Hls_Layers_UpConv.tpp</first>
+											<second>Reset_Row_Buffer&amp;lt;256, 4, 64&amp;gt;</second>
+										</first>
+										<second>75</second>
+									</item>
 									<item>
 										<first>
 											<first>../gen/Hls_Layers_UpConv.tpp</first>
 											<second>UpConv_Fused_Row&amp;lt;8, 128, 128, 120, 60&amp;gt;</second>
 										</first>
-										<second>120</second>
+										<second>354</second>
 									</item>
 								</second>
 							</item>
@@ -2930,26 +3210,33 @@
 					<Obj>
 						<type>0</type>
 						<id>79</id>
-						<name>void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_17_write_ln120</name>
+						<name>void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_17_write_ln75</name>
 						<fileName>../gen/Hls_Layers_UpConv.tpp</fileName>
 						<fileDirectory>/home/hoinguyen/Documents/Vitis/UpConv_HLS/upconv_block3</fileDirectory>
-						<lineNumber>120</lineNumber>
-						<contextFuncName>UpConv_Fused_Row&amp;lt;8, 128, 128, 120, 60&amp;gt;</contextFuncName>
-						<contextNormFuncName>UpConv_Fused_Row_8_128_128_120_60_s</contextNormFuncName>
+						<lineNumber>75</lineNumber>
+						<contextFuncName>Reset_Row_Buffer&amp;lt;256, 4, 64&amp;gt;</contextFuncName>
+						<contextNormFuncName>Reset_Row_Buffer_256_4_64_s</contextNormFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
 								<first>/home/hoinguyen/Documents/Vitis/UpConv_HLS/upconv_block3</first>
 								<second>
-									<count>1</count>
+									<count>2</count>
 									<item_version>0</item_version>
+									<item>
+										<first>
+											<first>../gen/Hls_Layers_UpConv.tpp</first>
+											<second>Reset_Row_Buffer&amp;lt;256, 4, 64&amp;gt;</second>
+										</first>
+										<second>75</second>
+									</item>
 									<item>
 										<first>
 											<first>../gen/Hls_Layers_UpConv.tpp</first>
 											<second>UpConv_Fused_Row&amp;lt;8, 128, 128, 120, 60&amp;gt;</second>
 										</first>
-										<second>120</second>
+										<second>354</second>
 									</item>
 								</second>
 							</item>
@@ -2987,26 +3274,33 @@
 					<Obj>
 						<type>0</type>
 						<id>80</id>
-						<name>void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_18_write_ln120</name>
+						<name>void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_18_write_ln75</name>
 						<fileName>../gen/Hls_Layers_UpConv.tpp</fileName>
 						<fileDirectory>/home/hoinguyen/Documents/Vitis/UpConv_HLS/upconv_block3</fileDirectory>
-						<lineNumber>120</lineNumber>
-						<contextFuncName>UpConv_Fused_Row&amp;lt;8, 128, 128, 120, 60&amp;gt;</contextFuncName>
-						<contextNormFuncName>UpConv_Fused_Row_8_128_128_120_60_s</contextNormFuncName>
+						<lineNumber>75</lineNumber>
+						<contextFuncName>Reset_Row_Buffer&amp;lt;256, 4, 64&amp;gt;</contextFuncName>
+						<contextNormFuncName>Reset_Row_Buffer_256_4_64_s</contextNormFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
 								<first>/home/hoinguyen/Documents/Vitis/UpConv_HLS/upconv_block3</first>
 								<second>
-									<count>1</count>
+									<count>2</count>
 									<item_version>0</item_version>
+									<item>
+										<first>
+											<first>../gen/Hls_Layers_UpConv.tpp</first>
+											<second>Reset_Row_Buffer&amp;lt;256, 4, 64&amp;gt;</second>
+										</first>
+										<second>75</second>
+									</item>
 									<item>
 										<first>
 											<first>../gen/Hls_Layers_UpConv.tpp</first>
 											<second>UpConv_Fused_Row&amp;lt;8, 128, 128, 120, 60&amp;gt;</second>
 										</first>
-										<second>120</second>
+										<second>354</second>
 									</item>
 								</second>
 							</item>
@@ -3044,26 +3338,33 @@
 					<Obj>
 						<type>0</type>
 						<id>81</id>
-						<name>void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_19_write_ln120</name>
+						<name>void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_19_write_ln75</name>
 						<fileName>../gen/Hls_Layers_UpConv.tpp</fileName>
 						<fileDirectory>/home/hoinguyen/Documents/Vitis/UpConv_HLS/upconv_block3</fileDirectory>
-						<lineNumber>120</lineNumber>
-						<contextFuncName>UpConv_Fused_Row&amp;lt;8, 128, 128, 120, 60&amp;gt;</contextFuncName>
-						<contextNormFuncName>UpConv_Fused_Row_8_128_128_120_60_s</contextNormFuncName>
+						<lineNumber>75</lineNumber>
+						<contextFuncName>Reset_Row_Buffer&amp;lt;256, 4, 64&amp;gt;</contextFuncName>
+						<contextNormFuncName>Reset_Row_Buffer_256_4_64_s</contextNormFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
 								<first>/home/hoinguyen/Documents/Vitis/UpConv_HLS/upconv_block3</first>
 								<second>
-									<count>1</count>
+									<count>2</count>
 									<item_version>0</item_version>
+									<item>
+										<first>
+											<first>../gen/Hls_Layers_UpConv.tpp</first>
+											<second>Reset_Row_Buffer&amp;lt;256, 4, 64&amp;gt;</second>
+										</first>
+										<second>75</second>
+									</item>
 									<item>
 										<first>
 											<first>../gen/Hls_Layers_UpConv.tpp</first>
 											<second>UpConv_Fused_Row&amp;lt;8, 128, 128, 120, 60&amp;gt;</second>
 										</first>
-										<second>120</second>
+										<second>354</second>
 									</item>
 								</second>
 							</item>
@@ -3101,26 +3402,33 @@
 					<Obj>
 						<type>0</type>
 						<id>82</id>
-						<name>p_ZZ16UpConv_Fused_RowILi8ELi128ELi128ELi120ELi60EEvP7ap_uintILi256EEPKS1_S4_S4_S_6_write_ln120</name>
+						<name>p_ZZ16UpConv_Fused_RowILi8ELi128ELi128ELi120ELi60EEvP7ap_uintILi256EEPKS1_S4_S4_S_6_write_ln75</name>
 						<fileName>../gen/Hls_Layers_UpConv.tpp</fileName>
 						<fileDirectory>/home/hoinguyen/Documents/Vitis/UpConv_HLS/upconv_block3</fileDirectory>
-						<lineNumber>120</lineNumber>
-						<contextFuncName>UpConv_Fused_Row&amp;lt;8, 128, 128, 120, 60&amp;gt;</contextFuncName>
-						<contextNormFuncName>UpConv_Fused_Row_8_128_128_120_60_s</contextNormFuncName>
+						<lineNumber>75</lineNumber>
+						<contextFuncName>Reset_Row_Buffer&amp;lt;256, 4, 64&amp;gt;</contextFuncName>
+						<contextNormFuncName>Reset_Row_Buffer_256_4_64_s</contextNormFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
 								<first>/home/hoinguyen/Documents/Vitis/UpConv_HLS/upconv_block3</first>
 								<second>
-									<count>1</count>
+									<count>2</count>
 									<item_version>0</item_version>
+									<item>
+										<first>
+											<first>../gen/Hls_Layers_UpConv.tpp</first>
+											<second>Reset_Row_Buffer&amp;lt;256, 4, 64&amp;gt;</second>
+										</first>
+										<second>75</second>
+									</item>
 									<item>
 										<first>
 											<first>../gen/Hls_Layers_UpConv.tpp</first>
 											<second>UpConv_Fused_Row&amp;lt;8, 128, 128, 120, 60&amp;gt;</second>
 										</first>
-										<second>120</second>
+										<second>354</second>
 									</item>
 								</second>
 							</item>
@@ -3158,26 +3466,33 @@
 					<Obj>
 						<type>0</type>
 						<id>83</id>
-						<name>p_ZZ16UpConv_Fused_RowILi8ELi128ELi128ELi120ELi60EEvP7ap_uintILi256EEPKS1_S4_S4_S_7_write_ln120</name>
+						<name>p_ZZ16UpConv_Fused_RowILi8ELi128ELi128ELi120ELi60EEvP7ap_uintILi256EEPKS1_S4_S4_S_7_write_ln75</name>
 						<fileName>../gen/Hls_Layers_UpConv.tpp</fileName>
 						<fileDirectory>/home/hoinguyen/Documents/Vitis/UpConv_HLS/upconv_block3</fileDirectory>
-						<lineNumber>120</lineNumber>
-						<contextFuncName>UpConv_Fused_Row&amp;lt;8, 128, 128, 120, 60&amp;gt;</contextFuncName>
-						<contextNormFuncName>UpConv_Fused_Row_8_128_128_120_60_s</contextNormFuncName>
+						<lineNumber>75</lineNumber>
+						<contextFuncName>Reset_Row_Buffer&amp;lt;256, 4, 64&amp;gt;</contextFuncName>
+						<contextNormFuncName>Reset_Row_Buffer_256_4_64_s</contextNormFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
 								<first>/home/hoinguyen/Documents/Vitis/UpConv_HLS/upconv_block3</first>
 								<second>
-									<count>1</count>
+									<count>2</count>
 									<item_version>0</item_version>
+									<item>
+										<first>
+											<first>../gen/Hls_Layers_UpConv.tpp</first>
+											<second>Reset_Row_Buffer&amp;lt;256, 4, 64&amp;gt;</second>
+										</first>
+										<second>75</second>
+									</item>
 									<item>
 										<first>
 											<first>../gen/Hls_Layers_UpConv.tpp</first>
 											<second>UpConv_Fused_Row&amp;lt;8, 128, 128, 120, 60&amp;gt;</second>
 										</first>
-										<second>120</second>
+										<second>354</second>
 									</item>
 								</second>
 							</item>
@@ -3215,26 +3530,33 @@
 					<Obj>
 						<type>0</type>
 						<id>84</id>
-						<name>p_ZZ16UpConv_Fused_RowILi8ELi128ELi128ELi120ELi60EEvP7ap_uintILi256EEPKS1_S4_S4_S_8_write_ln120</name>
+						<name>p_ZZ16UpConv_Fused_RowILi8ELi128ELi128ELi120ELi60EEvP7ap_uintILi256EEPKS1_S4_S4_S_8_write_ln75</name>
 						<fileName>../gen/Hls_Layers_UpConv.tpp</fileName>
 						<fileDirectory>/home/hoinguyen/Documents/Vitis/UpConv_HLS/upconv_block3</fileDirectory>
-						<lineNumber>120</lineNumber>
-						<contextFuncName>UpConv_Fused_Row&amp;lt;8, 128, 128, 120, 60&amp;gt;</contextFuncName>
-						<contextNormFuncName>UpConv_Fused_Row_8_128_128_120_60_s</contextNormFuncName>
+						<lineNumber>75</lineNumber>
+						<contextFuncName>Reset_Row_Buffer&amp;lt;256, 4, 64&amp;gt;</contextFuncName>
+						<contextNormFuncName>Reset_Row_Buffer_256_4_64_s</contextNormFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
 								<first>/home/hoinguyen/Documents/Vitis/UpConv_HLS/upconv_block3</first>
 								<second>
-									<count>1</count>
+									<count>2</count>
 									<item_version>0</item_version>
+									<item>
+										<first>
+											<first>../gen/Hls_Layers_UpConv.tpp</first>
+											<second>Reset_Row_Buffer&amp;lt;256, 4, 64&amp;gt;</second>
+										</first>
+										<second>75</second>
+									</item>
 									<item>
 										<first>
 											<first>../gen/Hls_Layers_UpConv.tpp</first>
 											<second>UpConv_Fused_Row&amp;lt;8, 128, 128, 120, 60&amp;gt;</second>
 										</first>
-										<second>120</second>
+										<second>354</second>
 									</item>
 								</second>
 							</item>
@@ -3272,26 +3594,33 @@
 					<Obj>
 						<type>0</type>
 						<id>85</id>
-						<name>p_ZZ16UpConv_Fused_RowILi8ELi128ELi128ELi120ELi60EEvP7ap_uintILi256EEPKS1_S4_S4_S_9_write_ln120</name>
+						<name>p_ZZ16UpConv_Fused_RowILi8ELi128ELi128ELi120ELi60EEvP7ap_uintILi256EEPKS1_S4_S4_S_9_write_ln75</name>
 						<fileName>../gen/Hls_Layers_UpConv.tpp</fileName>
 						<fileDirectory>/home/hoinguyen/Documents/Vitis/UpConv_HLS/upconv_block3</fileDirectory>
-						<lineNumber>120</lineNumber>
-						<contextFuncName>UpConv_Fused_Row&amp;lt;8, 128, 128, 120, 60&amp;gt;</contextFuncName>
-						<contextNormFuncName>UpConv_Fused_Row_8_128_128_120_60_s</contextNormFuncName>
+						<lineNumber>75</lineNumber>
+						<contextFuncName>Reset_Row_Buffer&amp;lt;256, 4, 64&amp;gt;</contextFuncName>
+						<contextNormFuncName>Reset_Row_Buffer_256_4_64_s</contextNormFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
 								<first>/home/hoinguyen/Documents/Vitis/UpConv_HLS/upconv_block3</first>
 								<second>
-									<count>1</count>
+									<count>2</count>
 									<item_version>0</item_version>
+									<item>
+										<first>
+											<first>../gen/Hls_Layers_UpConv.tpp</first>
+											<second>Reset_Row_Buffer&amp;lt;256, 4, 64&amp;gt;</second>
+										</first>
+										<second>75</second>
+									</item>
 									<item>
 										<first>
 											<first>../gen/Hls_Layers_UpConv.tpp</first>
 											<second>UpConv_Fused_Row&amp;lt;8, 128, 128, 120, 60&amp;gt;</second>
 										</first>
-										<second>120</second>
+										<second>354</second>
 									</item>
 								</second>
 							</item>
@@ -3329,26 +3658,33 @@
 					<Obj>
 						<type>0</type>
 						<id>86</id>
-						<name>p_ZZ16UpConv_Fused_RowILi8ELi128ELi128ELi120ELi60EEvP7ap_uintILi256EEPKS1_S4_S4_S_10_write_ln120</name>
+						<name>p_ZZ16UpConv_Fused_RowILi8ELi128ELi128ELi120ELi60EEvP7ap_uintILi256EEPKS1_S4_S4_S_10_write_ln75</name>
 						<fileName>../gen/Hls_Layers_UpConv.tpp</fileName>
 						<fileDirectory>/home/hoinguyen/Documents/Vitis/UpConv_HLS/upconv_block3</fileDirectory>
-						<lineNumber>120</lineNumber>
-						<contextFuncName>UpConv_Fused_Row&amp;lt;8, 128, 128, 120, 60&amp;gt;</contextFuncName>
-						<contextNormFuncName>UpConv_Fused_Row_8_128_128_120_60_s</contextNormFuncName>
+						<lineNumber>75</lineNumber>
+						<contextFuncName>Reset_Row_Buffer&amp;lt;256, 4, 64&amp;gt;</contextFuncName>
+						<contextNormFuncName>Reset_Row_Buffer_256_4_64_s</contextNormFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
 								<first>/home/hoinguyen/Documents/Vitis/UpConv_HLS/upconv_block3</first>
 								<second>
-									<count>1</count>
+									<count>2</count>
 									<item_version>0</item_version>
+									<item>
+										<first>
+											<first>../gen/Hls_Layers_UpConv.tpp</first>
+											<second>Reset_Row_Buffer&amp;lt;256, 4, 64&amp;gt;</second>
+										</first>
+										<second>75</second>
+									</item>
 									<item>
 										<first>
 											<first>../gen/Hls_Layers_UpConv.tpp</first>
 											<second>UpConv_Fused_Row&amp;lt;8, 128, 128, 120, 60&amp;gt;</second>
 										</first>
-										<second>120</second>
+										<second>354</second>
 									</item>
 								</second>
 							</item>
@@ -3386,26 +3722,33 @@
 					<Obj>
 						<type>0</type>
 						<id>87</id>
-						<name>p_ZZ16UpConv_Fused_RowILi8ELi128ELi128ELi120ELi60EEvP7ap_uintILi256EEPKS1_S4_S4_S_11_write_ln120</name>
+						<name>p_ZZ16UpConv_Fused_RowILi8ELi128ELi128ELi120ELi60EEvP7ap_uintILi256EEPKS1_S4_S4_S_11_write_ln75</name>
 						<fileName>../gen/Hls_Layers_UpConv.tpp</fileName>
 						<fileDirectory>/home/hoinguyen/Documents/Vitis/UpConv_HLS/upconv_block3</fileDirectory>
-						<lineNumber>120</lineNumber>
-						<contextFuncName>UpConv_Fused_Row&amp;lt;8, 128, 128, 120, 60&amp;gt;</contextFuncName>
-						<contextNormFuncName>UpConv_Fused_Row_8_128_128_120_60_s</contextNormFuncName>
+						<lineNumber>75</lineNumber>
+						<contextFuncName>Reset_Row_Buffer&amp;lt;256, 4, 64&amp;gt;</contextFuncName>
+						<contextNormFuncName>Reset_Row_Buffer_256_4_64_s</contextNormFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
 								<first>/home/hoinguyen/Documents/Vitis/UpConv_HLS/upconv_block3</first>
 								<second>
-									<count>1</count>
+									<count>2</count>
 									<item_version>0</item_version>
+									<item>
+										<first>
+											<first>../gen/Hls_Layers_UpConv.tpp</first>
+											<second>Reset_Row_Buffer&amp;lt;256, 4, 64&amp;gt;</second>
+										</first>
+										<second>75</second>
+									</item>
 									<item>
 										<first>
 											<first>../gen/Hls_Layers_UpConv.tpp</first>
 											<second>UpConv_Fused_Row&amp;lt;8, 128, 128, 120, 60&amp;gt;</second>
 										</first>
-										<second>120</second>
+										<second>354</second>
 									</item>
 								</second>
 							</item>
@@ -3443,26 +3786,33 @@
 					<Obj>
 						<type>0</type>
 						<id>88</id>
-						<name>icmp_ln122</name>
+						<name>icmp_ln77</name>
 						<fileName>../gen/Hls_Layers_UpConv.tpp</fileName>
 						<fileDirectory>/home/hoinguyen/Documents/Vitis/UpConv_HLS/upconv_block3</fileDirectory>
-						<lineNumber>122</lineNumber>
-						<contextFuncName>UpConv_Fused_Row&amp;lt;8, 128, 128, 120, 60&amp;gt;</contextFuncName>
-						<contextNormFuncName>UpConv_Fused_Row_8_128_128_120_60_s</contextNormFuncName>
+						<lineNumber>77</lineNumber>
+						<contextFuncName>Reset_Row_Buffer&amp;lt;256, 4, 64&amp;gt;</contextFuncName>
+						<contextNormFuncName>Reset_Row_Buffer_256_4_64_s</contextNormFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
 								<first>/home/hoinguyen/Documents/Vitis/UpConv_HLS/upconv_block3</first>
 								<second>
-									<count>1</count>
+									<count>2</count>
 									<item_version>0</item_version>
+									<item>
+										<first>
+											<first>../gen/Hls_Layers_UpConv.tpp</first>
+											<second>Reset_Row_Buffer&amp;lt;256, 4, 64&amp;gt;</second>
+										</first>
+										<second>77</second>
+									</item>
 									<item>
 										<first>
 											<first>../gen/Hls_Layers_UpConv.tpp</first>
 											<second>UpConv_Fused_Row&amp;lt;8, 128, 128, 120, 60&amp;gt;</second>
 										</first>
-										<second>122</second>
+										<second>354</second>
 									</item>
 								</second>
 							</item>
@@ -3503,23 +3853,30 @@
 						<name>rw_1</name>
 						<fileName>../gen/Hls_Layers_UpConv.tpp</fileName>
 						<fileDirectory>/home/hoinguyen/Documents/Vitis/UpConv_HLS/upconv_block3</fileDirectory>
-						<lineNumber>122</lineNumber>
-						<contextFuncName>UpConv_Fused_Row&amp;lt;8, 128, 128, 120, 60&amp;gt;</contextFuncName>
-						<contextNormFuncName>UpConv_Fused_Row_8_128_128_120_60_s</contextNormFuncName>
+						<lineNumber>77</lineNumber>
+						<contextFuncName>Reset_Row_Buffer&amp;lt;256, 4, 64&amp;gt;</contextFuncName>
+						<contextNormFuncName>Reset_Row_Buffer_256_4_64_s</contextNormFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
 								<first>/home/hoinguyen/Documents/Vitis/UpConv_HLS/upconv_block3</first>
 								<second>
-									<count>1</count>
+									<count>2</count>
 									<item_version>0</item_version>
+									<item>
+										<first>
+											<first>../gen/Hls_Layers_UpConv.tpp</first>
+											<second>Reset_Row_Buffer&amp;lt;256, 4, 64&amp;gt;</second>
+										</first>
+										<second>77</second>
+									</item>
 									<item>
 										<first>
 											<first>../gen/Hls_Layers_UpConv.tpp</first>
 											<second>UpConv_Fused_Row&amp;lt;8, 128, 128, 120, 60&amp;gt;</second>
 										</first>
-										<second>122</second>
+										<second>354</second>
 									</item>
 								</second>
 							</item>
@@ -3560,23 +3917,30 @@
 						<name>rcw_1</name>
 						<fileName>../gen/Hls_Layers_UpConv.tpp</fileName>
 						<fileDirectory>/home/hoinguyen/Documents/Vitis/UpConv_HLS/upconv_block3</fileDirectory>
-						<lineNumber>122</lineNumber>
-						<contextFuncName>UpConv_Fused_Row&amp;lt;8, 128, 128, 120, 60&amp;gt;</contextFuncName>
-						<contextNormFuncName>UpConv_Fused_Row_8_128_128_120_60_s</contextNormFuncName>
+						<lineNumber>77</lineNumber>
+						<contextFuncName>Reset_Row_Buffer&amp;lt;256, 4, 64&amp;gt;</contextFuncName>
+						<contextNormFuncName>Reset_Row_Buffer_256_4_64_s</contextNormFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
 								<first>/home/hoinguyen/Documents/Vitis/UpConv_HLS/upconv_block3</first>
 								<second>
-									<count>1</count>
+									<count>2</count>
 									<item_version>0</item_version>
+									<item>
+										<first>
+											<first>../gen/Hls_Layers_UpConv.tpp</first>
+											<second>Reset_Row_Buffer&amp;lt;256, 4, 64&amp;gt;</second>
+										</first>
+										<second>77</second>
+									</item>
 									<item>
 										<first>
 											<first>../gen/Hls_Layers_UpConv.tpp</first>
 											<second>UpConv_Fused_Row&amp;lt;8, 128, 128, 120, 60&amp;gt;</second>
 										</first>
-										<second>122</second>
+										<second>354</second>
 									</item>
 								</second>
 							</item>
@@ -3617,23 +3981,30 @@
 						<name>rcw_2</name>
 						<fileName>../gen/Hls_Layers_UpConv.tpp</fileName>
 						<fileDirectory>/home/hoinguyen/Documents/Vitis/UpConv_HLS/upconv_block3</fileDirectory>
-						<lineNumber>122</lineNumber>
-						<contextFuncName>UpConv_Fused_Row&amp;lt;8, 128, 128, 120, 60&amp;gt;</contextFuncName>
-						<contextNormFuncName>UpConv_Fused_Row_8_128_128_120_60_s</contextNormFuncName>
+						<lineNumber>77</lineNumber>
+						<contextFuncName>Reset_Row_Buffer&amp;lt;256, 4, 64&amp;gt;</contextFuncName>
+						<contextNormFuncName>Reset_Row_Buffer_256_4_64_s</contextNormFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
 								<first>/home/hoinguyen/Documents/Vitis/UpConv_HLS/upconv_block3</first>
 								<second>
-									<count>1</count>
+									<count>2</count>
 									<item_version>0</item_version>
+									<item>
+										<first>
+											<first>../gen/Hls_Layers_UpConv.tpp</first>
+											<second>Reset_Row_Buffer&amp;lt;256, 4, 64&amp;gt;</second>
+										</first>
+										<second>77</second>
+									</item>
 									<item>
 										<first>
 											<first>../gen/Hls_Layers_UpConv.tpp</first>
 											<second>UpConv_Fused_Row&amp;lt;8, 128, 128, 120, 60&amp;gt;</second>
 										</first>
-										<second>122</second>
+										<second>354</second>
 									</item>
 								</second>
 							</item>
@@ -3675,23 +4046,30 @@
 						<name>rw_2</name>
 						<fileName>../gen/Hls_Layers_UpConv.tpp</fileName>
 						<fileDirectory>/home/hoinguyen/Documents/Vitis/UpConv_HLS/upconv_block3</fileDirectory>
-						<lineNumber>122</lineNumber>
-						<contextFuncName>UpConv_Fused_Row&amp;lt;8, 128, 128, 120, 60&amp;gt;</contextFuncName>
-						<contextNormFuncName>UpConv_Fused_Row_8_128_128_120_60_s</contextNormFuncName>
+						<lineNumber>77</lineNumber>
+						<contextFuncName>Reset_Row_Buffer&amp;lt;256, 4, 64&amp;gt;</contextFuncName>
+						<contextNormFuncName>Reset_Row_Buffer_256_4_64_s</contextNormFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
 								<first>/home/hoinguyen/Documents/Vitis/UpConv_HLS/upconv_block3</first>
 								<second>
-									<count>1</count>
+									<count>2</count>
 									<item_version>0</item_version>
+									<item>
+										<first>
+											<first>../gen/Hls_Layers_UpConv.tpp</first>
+											<second>Reset_Row_Buffer&amp;lt;256, 4, 64&amp;gt;</second>
+										</first>
+										<second>77</second>
+									</item>
 									<item>
 										<first>
 											<first>../gen/Hls_Layers_UpConv.tpp</first>
 											<second>UpConv_Fused_Row&amp;lt;8, 128, 128, 120, 60&amp;gt;</second>
 										</first>
-										<second>122</second>
+										<second>354</second>
 									</item>
 								</second>
 							</item>
@@ -3730,26 +4108,33 @@
 					<Obj>
 						<type>0</type>
 						<id>93</id>
-						<name>rw_write_ln115</name>
+						<name>rw_write_ln70</name>
 						<fileName>../gen/Hls_Layers_UpConv.tpp</fileName>
 						<fileDirectory>/home/hoinguyen/Documents/Vitis/UpConv_HLS/upconv_block3</fileDirectory>
-						<lineNumber>115</lineNumber>
-						<contextFuncName>UpConv_Fused_Row&amp;lt;8, 128, 128, 120, 60&amp;gt;</contextFuncName>
-						<contextNormFuncName>UpConv_Fused_Row_8_128_128_120_60_s</contextNormFuncName>
+						<lineNumber>70</lineNumber>
+						<contextFuncName>Reset_Row_Buffer&amp;lt;256, 4, 64&amp;gt;</contextFuncName>
+						<contextNormFuncName>Reset_Row_Buffer_256_4_64_s</contextNormFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
 								<first>/home/hoinguyen/Documents/Vitis/UpConv_HLS/upconv_block3</first>
 								<second>
-									<count>1</count>
+									<count>2</count>
 									<item_version>0</item_version>
+									<item>
+										<first>
+											<first>../gen/Hls_Layers_UpConv.tpp</first>
+											<second>Reset_Row_Buffer&amp;lt;256, 4, 64&amp;gt;</second>
+										</first>
+										<second>70</second>
+									</item>
 									<item>
 										<first>
 											<first>../gen/Hls_Layers_UpConv.tpp</first>
 											<second>UpConv_Fused_Row&amp;lt;8, 128, 128, 120, 60&amp;gt;</second>
 										</first>
-										<second>115</second>
+										<second>354</second>
 									</item>
 								</second>
 							</item>
@@ -3789,26 +4174,33 @@
 					<Obj>
 						<type>0</type>
 						<id>94</id>
-						<name>rcw_write_ln115</name>
+						<name>rcw_write_ln70</name>
 						<fileName>../gen/Hls_Layers_UpConv.tpp</fileName>
 						<fileDirectory>/home/hoinguyen/Documents/Vitis/UpConv_HLS/upconv_block3</fileDirectory>
-						<lineNumber>115</lineNumber>
-						<contextFuncName>UpConv_Fused_Row&amp;lt;8, 128, 128, 120, 60&amp;gt;</contextFuncName>
-						<contextNormFuncName>UpConv_Fused_Row_8_128_128_120_60_s</contextNormFuncName>
+						<lineNumber>70</lineNumber>
+						<contextFuncName>Reset_Row_Buffer&amp;lt;256, 4, 64&amp;gt;</contextFuncName>
+						<contextNormFuncName>Reset_Row_Buffer_256_4_64_s</contextNormFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
 								<first>/home/hoinguyen/Documents/Vitis/UpConv_HLS/upconv_block3</first>
 								<second>
-									<count>1</count>
+									<count>2</count>
 									<item_version>0</item_version>
+									<item>
+										<first>
+											<first>../gen/Hls_Layers_UpConv.tpp</first>
+											<second>Reset_Row_Buffer&amp;lt;256, 4, 64&amp;gt;</second>
+										</first>
+										<second>70</second>
+									</item>
 									<item>
 										<first>
 											<first>../gen/Hls_Layers_UpConv.tpp</first>
 											<second>UpConv_Fused_Row&amp;lt;8, 128, 128, 120, 60&amp;gt;</second>
 										</first>
-										<second>115</second>
+										<second>354</second>
 									</item>
 								</second>
 							</item>
@@ -3848,26 +4240,33 @@
 					<Obj>
 						<type>0</type>
 						<id>95</id>
-						<name>m_write_ln116</name>
+						<name>m_write_ln71</name>
 						<fileName>../gen/Hls_Layers_UpConv.tpp</fileName>
 						<fileDirectory>/home/hoinguyen/Documents/Vitis/UpConv_HLS/upconv_block3</fileDirectory>
-						<lineNumber>116</lineNumber>
-						<contextFuncName>UpConv_Fused_Row&amp;lt;8, 128, 128, 120, 60&amp;gt;</contextFuncName>
-						<contextNormFuncName>UpConv_Fused_Row_8_128_128_120_60_s</contextNormFuncName>
+						<lineNumber>71</lineNumber>
+						<contextFuncName>Reset_Row_Buffer&amp;lt;256, 4, 64&amp;gt;</contextFuncName>
+						<contextNormFuncName>Reset_Row_Buffer_256_4_64_s</contextNormFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
 								<first>/home/hoinguyen/Documents/Vitis/UpConv_HLS/upconv_block3</first>
 								<second>
-									<count>1</count>
+									<count>2</count>
 									<item_version>0</item_version>
+									<item>
+										<first>
+											<first>../gen/Hls_Layers_UpConv.tpp</first>
+											<second>Reset_Row_Buffer&amp;lt;256, 4, 64&amp;gt;</second>
+										</first>
+										<second>71</second>
+									</item>
 									<item>
 										<first>
 											<first>../gen/Hls_Layers_UpConv.tpp</first>
 											<second>UpConv_Fused_Row&amp;lt;8, 128, 128, 120, 60&amp;gt;</second>
 										</first>
-										<second>116</second>
+										<second>354</second>
 									</item>
 								</second>
 							</item>
@@ -3907,26 +4306,33 @@
 					<Obj>
 						<type>0</type>
 						<id>96</id>
-						<name>br_ln116</name>
+						<name>br_ln71</name>
 						<fileName>../gen/Hls_Layers_UpConv.tpp</fileName>
 						<fileDirectory>/home/hoinguyen/Documents/Vitis/UpConv_HLS/upconv_block3</fileDirectory>
-						<lineNumber>116</lineNumber>
-						<contextFuncName>UpConv_Fused_Row&amp;lt;8, 128, 128, 120, 60&amp;gt;</contextFuncName>
-						<contextNormFuncName>UpConv_Fused_Row_8_128_128_120_60_s</contextNormFuncName>
+						<lineNumber>71</lineNumber>
+						<contextFuncName>Reset_Row_Buffer&amp;lt;256, 4, 64&amp;gt;</contextFuncName>
+						<contextNormFuncName>Reset_Row_Buffer_256_4_64_s</contextNormFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
 								<first>/home/hoinguyen/Documents/Vitis/UpConv_HLS/upconv_block3</first>
 								<second>
-									<count>1</count>
+									<count>2</count>
 									<item_version>0</item_version>
+									<item>
+										<first>
+											<first>../gen/Hls_Layers_UpConv.tpp</first>
+											<second>Reset_Row_Buffer&amp;lt;256, 4, 64&amp;gt;</second>
+										</first>
+										<second>71</second>
+									</item>
 									<item>
 										<first>
 											<first>../gen/Hls_Layers_UpConv.tpp</first>
 											<second>UpConv_Fused_Row&amp;lt;8, 128, 128, 120, 60&amp;gt;</second>
 										</first>
-										<second>116</second>
+										<second>354</second>
 									</item>
 								</second>
 							</item>
@@ -4327,7 +4733,7 @@
 				<Obj>
 					<type>3</type>
 					<id>45</id>
-					<name>VITIS_LOOP_118_1</name>
+					<name>for.body.i</name>
 					<fileName></fileName>
 					<fileDirectory></fileDirectory>
 					<lineNumber>0</lineNumber>
@@ -4361,7 +4767,7 @@
 				<Obj>
 					<type>3</type>
 					<id>97</id>
-					<name>VITIS_LOOP_118_1.split</name>
+					<name>for.body.i.split</name>
 					<fileName></fileName>
 					<fileDirectory></fileDirectory>
 					<lineNumber>0</lineNumber>
@@ -4439,7 +4845,7 @@
 				<Obj>
 					<type>3</type>
 					<id>99</id>
-					<name>for.end12.exitStub</name>
+					<name>TILE_LOOP.exitStub</name>
 					<fileName></fileName>
 					<fileDirectory></fileDirectory>
 					<lineNumber>0</lineNumber>

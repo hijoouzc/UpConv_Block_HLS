@@ -1,0 +1,853 @@
+  **** HLS Build v2024.2 5238294
+INFO: [HLS 200-2005] Using work_dir /home/hoinguyen/Documents/Vitis/UpConv_HLS/upconv_core/upconv_core_top 
+INFO: [HLS 200-1505] Using default flow_target 'vivado'
+Resolution: For help on HLS 200-1505 see docs.xilinx.com/access/sources/dita/topic?Doc_Version=2024.2%20English&url=ug1448-hls-guidance&resourceid=200-1505.html
+INFO: [HLS 200-1465] Applying ini 'syn.file=/home/hoinguyen/Documents/Vitis/UpConv_HLS/gen/upconv_core_top.cpp' from /home/hoinguyen/Documents/Vitis/UpConv_HLS/upconv_core/hls_config.cfg(8)
+INFO: [HLS 200-10] Adding design file '/home/hoinguyen/Documents/Vitis/UpConv_HLS/gen/upconv_core_top.cpp' to the project
+INFO: [HLS 200-1465] Applying ini 'tb.file=/home/hoinguyen/Documents/Vitis/UpConv_HLS/test.cpp' from /home/hoinguyen/Documents/Vitis/UpConv_HLS/upconv_core/hls_config.cfg(9)
+INFO: [HLS 200-10] Adding test bench file '/home/hoinguyen/Documents/Vitis/UpConv_HLS/test.cpp' to the project
+INFO: [HLS 200-1465] Applying ini 'syn.top=upconv_core_top' from /home/hoinguyen/Documents/Vitis/UpConv_HLS/upconv_core/hls_config.cfg(7)
+INFO: [HLS 200-1465] Applying ini 'flow_target=vivado' from /home/hoinguyen/Documents/Vitis/UpConv_HLS/upconv_core/hls_config.cfg(4)
+INFO: [HLS 200-1505] Using flow_target 'vivado'
+Resolution: For help on HLS 200-1505 see docs.xilinx.com/access/sources/dita/topic?Doc_Version=2024.2%20English&url=ug1448-hls-guidance&resourceid=200-1505.html
+INFO: [HLS 200-1465] Applying ini 'part=xczu7ev-ffvc1156-2-e' from /home/hoinguyen/Documents/Vitis/UpConv_HLS/upconv_core/hls_config.cfg(1)
+INFO: [HLS 200-1611] Setting target device to 'xczu7ev-ffvc1156-2-e'
+INFO: [HLS 200-1465] Applying ini 'clock=300MHz' from /home/hoinguyen/Documents/Vitis/UpConv_HLS/upconv_core/hls_config.cfg(10)
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 3.333ns.
+INFO: [HLS 200-1465] Applying ini 'package.output.format=ip_catalog' from /home/hoinguyen/Documents/Vitis/UpConv_HLS/upconv_core/hls_config.cfg(5)
+INFO: [HLS 200-111] Finished File checks and directory preparation: CPU user time: 1.84 seconds. CPU system time: 0.17 seconds. Elapsed time: 1.86 seconds; current allocated memory: 324.918 MB.
+INFO: [HLS 200-10] Analyzing design file '../gen/upconv_core_top.cpp' ... 
+INFO: [HLS 200-111] Finished Source Code Analysis and Preprocessing: CPU user time: 11.55 seconds. CPU system time: 0.79 seconds. Elapsed time: 12.38 seconds; current allocated memory: 332.047 MB.
+INFO: [HLS 200-777] Using interface defaults for 'Vivado' flow target.
+INFO: [HLS 200-1995] There were 4,316 instructions in the design after the 'Compile/Link' phase of compilation. See the Design Size Report for more details: /home/hoinguyen/Documents/Vitis/UpConv_HLS/upconv_core/upconv_core_top/hls/syn/report/csynth_design_size.rpt
+INFO: [HLS 200-1995] There were 8,513 instructions in the design after the 'Unroll/Inline (step 1)' phase of compilation. See the Design Size Report for more details: /home/hoinguyen/Documents/Vitis/UpConv_HLS/upconv_core/upconv_core_top/hls/syn/report/csynth_design_size.rpt
+INFO: [HLS 200-1995] There were 6,785 instructions in the design after the 'Unroll/Inline (step 2)' phase of compilation. See the Design Size Report for more details: /home/hoinguyen/Documents/Vitis/UpConv_HLS/upconv_core/upconv_core_top/hls/syn/report/csynth_design_size.rpt
+INFO: [HLS 200-1995] There were 6,720 instructions in the design after the 'Unroll/Inline (step 3)' phase of compilation. See the Design Size Report for more details: /home/hoinguyen/Documents/Vitis/UpConv_HLS/upconv_core/upconv_core_top/hls/syn/report/csynth_design_size.rpt
+INFO: [HLS 200-1995] There were 6,639 instructions in the design after the 'Unroll/Inline (step 4)' phase of compilation. See the Design Size Report for more details: /home/hoinguyen/Documents/Vitis/UpConv_HLS/upconv_core/upconv_core_top/hls/syn/report/csynth_design_size.rpt
+INFO: [HLS 200-1995] There were 14,029 instructions in the design after the 'Array/Struct (step 1)' phase of compilation. See the Design Size Report for more details: /home/hoinguyen/Documents/Vitis/UpConv_HLS/upconv_core/upconv_core_top/hls/syn/report/csynth_design_size.rpt
+INFO: [HLS 200-1995] There were 8,588 instructions in the design after the 'Array/Struct (step 2)' phase of compilation. See the Design Size Report for more details: /home/hoinguyen/Documents/Vitis/UpConv_HLS/upconv_core/upconv_core_top/hls/syn/report/csynth_design_size.rpt
+INFO: [HLS 200-1995] There were 8,588 instructions in the design after the 'Array/Struct (step 3)' phase of compilation. See the Design Size Report for more details: /home/hoinguyen/Documents/Vitis/UpConv_HLS/upconv_core/upconv_core_top/hls/syn/report/csynth_design_size.rpt
+INFO: [HLS 200-1995] There were 8,584 instructions in the design after the 'Array/Struct (step 4)' phase of compilation. See the Design Size Report for more details: /home/hoinguyen/Documents/Vitis/UpConv_HLS/upconv_core/upconv_core_top/hls/syn/report/csynth_design_size.rpt
+INFO: [HLS 200-1995] There were 8,659 instructions in the design after the 'Array/Struct (step 5)' phase of compilation. See the Design Size Report for more details: /home/hoinguyen/Documents/Vitis/UpConv_HLS/upconv_core/upconv_core_top/hls/syn/report/csynth_design_size.rpt
+INFO: [HLS 200-1995] There were 8,659 instructions in the design after the 'Performance (step 1)' phase of compilation. See the Design Size Report for more details: /home/hoinguyen/Documents/Vitis/UpConv_HLS/upconv_core/upconv_core_top/hls/syn/report/csynth_design_size.rpt
+INFO: [HLS 200-1995] There were 8,659 instructions in the design after the 'Performance (step 2)' phase of compilation. See the Design Size Report for more details: /home/hoinguyen/Documents/Vitis/UpConv_HLS/upconv_core/upconv_core_top/hls/syn/report/csynth_design_size.rpt
+INFO: [HLS 200-1995] There were 8,633 instructions in the design after the 'Performance (step 3)' phase of compilation. See the Design Size Report for more details: /home/hoinguyen/Documents/Vitis/UpConv_HLS/upconv_core/upconv_core_top/hls/syn/report/csynth_design_size.rpt
+INFO: [HLS 200-1995] There were 8,633 instructions in the design after the 'Performance (step 4)' phase of compilation. See the Design Size Report for more details: /home/hoinguyen/Documents/Vitis/UpConv_HLS/upconv_core/upconv_core_top/hls/syn/report/csynth_design_size.rpt
+INFO: [HLS 200-1995] There were 8,698 instructions in the design after the 'HW Transforms (step 1)' phase of compilation. See the Design Size Report for more details: /home/hoinguyen/Documents/Vitis/UpConv_HLS/upconv_core/upconv_core_top/hls/syn/report/csynth_design_size.rpt
+INFO: [HLS 200-1995] There were 8,262 instructions in the design after the 'HW Transforms (step 2)' phase of compilation. See the Design Size Report for more details: /home/hoinguyen/Documents/Vitis/UpConv_HLS/upconv_core/upconv_core_top/hls/syn/report/csynth_design_size.rpt
+INFO: [HLS 214-131] Inlining function 'half bits_to_half<half>(ap_uint<16>)' into 'void Compute_MAC_Tile<8>(ap_uint<256>*, ap_uint<256> const (&) [8][540], half (&) [256][480], int, int, int, int, int, int)' (../gen/UpConv_Unified.tpp:159:37)
+INFO: [HLS 214-131] Inlining function 'my_sqrt_f(float)' into 'Compute_Pixel_Stats(half (&) [256][480], ap_uint<256> const (&) [30], float (&) [256], half (&) [256], half, int, int)' (../gen/UpConv_Unified.tpp:269:43)
+INFO: [HLS 214-131] Inlining function 'half bits_to_half<half>(ap_uint<16>)' into 'Compute_Pixel_Stats(half (&) [256][480], ap_uint<256> const (&) [30], float (&) [256], half (&) [256], half, int, int)' (../gen/UpConv_Unified.tpp:246:23)
+INFO: [HLS 214-131] Inlining function 'ap_uint<16> half_to_bits<half>(half)' into 'Apply_Norm_And_Write(half const (&) [256][480], ap_uint<256> const (&) [30], ap_uint<256> const (&) [30], float const (&) [256], half const (&) [256], ap_uint<256>*, int, int, int, int)' (../gen/UpConv_Unified.tpp:304:45)
+INFO: [HLS 214-131] Inlining function 'half bits_to_half<half>(ap_uint<16>)' into 'Apply_Norm_And_Write(half const (&) [256][480], ap_uint<256> const (&) [30], ap_uint<256> const (&) [30], float const (&) [256], half const (&) [256], ap_uint<256>*, int, int, int, int)' (../gen/UpConv_Unified.tpp:301:25)
+INFO: [HLS 214-131] Inlining function 'Reset_Row_Buffer(half (&) [256][480], int, int)' into 'void UpConv_Fused_Row<8>(ap_uint<256>*, ap_uint<256> const*, ap_uint<256> const*, ap_uint<256> const*, ap_uint<256> const*, ap_uint<256>*, half, int, int, int, int, int)' (../gen/UpConv_Unified.tpp:369:2)
+INFO: [HLS 214-131] Inlining function 'Apply_Norm_And_Write(half const (&) [256][480], ap_uint<256> const (&) [30], ap_uint<256> const (&) [30], float const (&) [256], half const (&) [256], ap_uint<256>*, int, int, int, int)' into 'void UpConv_Fused_Row<8>(ap_uint<256>*, ap_uint<256> const*, ap_uint<256> const*, ap_uint<256> const*, ap_uint<256> const*, ap_uint<256>*, half, int, int, int, int, int)' (../gen/UpConv_Unified.tpp:379:5)
+INFO: [HLS 214-131] Inlining function 'Compute_Pixel_Stats(half (&) [256][480], ap_uint<256> const (&) [30], float (&) [256], half (&) [256], half, int, int)' into 'void UpConv_Fused_Row<8>(ap_uint<256>*, ap_uint<256> const*, ap_uint<256> const*, ap_uint<256> const*, ap_uint<256> const*, ap_uint<256>*, half, int, int, int, int, int)' (../gen/UpConv_Unified.tpp:378:5)
+INFO: [HLS 214-131] Inlining function 'void Load_Weight_Tile<8>(ap_uint<256> const*, ap_uint<256> (&) [8][540], int, int, int)' into 'void UpConv_Fused_Row<8>(ap_uint<256>*, ap_uint<256> const*, ap_uint<256> const*, ap_uint<256> const*, ap_uint<256> const*, ap_uint<256>*, half, int, int, int, int, int)' (../gen/UpConv_Unified.tpp:373:2)
+INFO: [HLS 214-131] Inlining function 'Load_Norm_Params(ap_uint<256> const*, ap_uint<256> const*, ap_uint<256> const*, ap_uint<256> (&) [30], ap_uint<256> (&) [30], ap_uint<256> (&) [30], int)' into 'void UpConv_Fused_Row<8>(ap_uint<256>*, ap_uint<256> const*, ap_uint<256> const*, ap_uint<256> const*, ap_uint<256> const*, ap_uint<256>*, half, int, int, int, int, int)' (../gen/UpConv_Unified.tpp:377:5)
+INFO: [HLS 214-131] Inlining function 'void Compute_MAC_Tile<8>(ap_uint<256>*, ap_uint<256> const (&) [8][540], half (&) [256][480], int, int, int, int, int, int)' into 'void UpConv_Fused_Row<8>(ap_uint<256>*, ap_uint<256> const*, ap_uint<256> const*, ap_uint<256> const*, ap_uint<256> const*, ap_uint<256>*, half, int, int, int, int, int)' (../gen/UpConv_Unified.tpp:374:9)
+INFO: [HLS 214-131] Inlining function 'void UpConv_Fused_Top<8>(ap_uint<256>*, ap_uint<256> const*, ap_uint<256> const*, ap_uint<256> const*, ap_uint<256> const*, ap_uint<256> const*, ap_uint<256>*, half, int, int, int, int)' into 'upconv_core_top' (../gen/upconv_core_top.cpp:57:5)
+INFO: [HLS 214-291] Loop 'VITIS_LOOP_296_1' is marked as complete unroll implied by the pipeline pragma (../gen/UpConv_Unified.tpp:296:27)
+INFO: [HLS 214-291] Loop 'VITIS_LOOP_261_1' is marked as complete unroll implied by the pipeline pragma (../gen/UpConv_Unified.tpp:261:31)
+INFO: [HLS 214-291] Loop 'TC_MAC' is marked as complete unroll implied by the pipeline pragma (../gen/UpConv_Unified.tpp:152:25)
+INFO: [HLS 214-291] Loop 'VITIS_LOOP_156_2' is marked as complete unroll implied by the pipeline pragma (../gen/UpConv_Unified.tpp:156:39)
+INFO: [HLS 214-291] Loop 'ACC_WRITE' is marked as complete unroll implied by the pipeline pragma (../gen/UpConv_Unified.tpp:169:36)
+INFO: [HLS 214-291] Loop 'VITIS_LOOP_74_1' is marked as complete unroll implied by the pipeline pragma (../gen/UpConv_Unified.tpp:74:19)
+INFO: [HLS 214-186] Unrolling loop 'VITIS_LOOP_296_1' (../gen/UpConv_Unified.tpp:296:27) in function 'UpConv_Fused_Row<8>' completely with a factor of 16 (../gen/UpConv_Unified.tpp:326:0)
+INFO: [HLS 214-186] Unrolling loop 'VITIS_LOOP_261_1' (../gen/UpConv_Unified.tpp:261:31) in function 'UpConv_Fused_Row<8>' completely with a factor of 8 (../gen/UpConv_Unified.tpp:326:0)
+INFO: [HLS 214-186] Unrolling loop 'VITIS_LOOP_119_1' (../gen/UpConv_Unified.tpp:119:20) in function 'UpConv_Fused_Row<8>' completely with a factor of 8 (../gen/UpConv_Unified.tpp:326:0)
+INFO: [HLS 214-186] Unrolling loop 'TC_MAC' (../gen/UpConv_Unified.tpp:152:25) in function 'UpConv_Fused_Row<8>' completely with a factor of 8 (../gen/UpConv_Unified.tpp:326:0)
+INFO: [HLS 214-186] Unrolling loop 'VITIS_LOOP_156_2' (../gen/UpConv_Unified.tpp:156:39) in function 'UpConv_Fused_Row<8>' completely with a factor of 16 (../gen/UpConv_Unified.tpp:326:0)
+INFO: [HLS 214-186] Unrolling loop 'ACC_WRITE' (../gen/UpConv_Unified.tpp:169:36) in function 'UpConv_Fused_Row<8>' completely with a factor of 8 (../gen/UpConv_Unified.tpp:326:0)
+INFO: [HLS 214-186] Unrolling loop 'VITIS_LOOP_74_1' (../gen/UpConv_Unified.tpp:74:19) in function 'UpConv_Fused_Row<8>' completely with a factor of 16 (../gen/UpConv_Unified.tpp:326:0)
+INFO: [HLS 214-178] Inlining function 'hls::sqrtf(float)' into 'void UpConv_Fused_Row<8>(ap_uint<256>*, ap_uint<256> const*, ap_uint<256> const*, ap_uint<256> const*, ap_uint<256> const*, ap_uint<256>*, half, int, int, int, int, int)' (../gen/UpConv_Unified.tpp:326:0)
+INFO: [HLS 214-248] Applying array_partition to '_ZZ16UpConv_Fused_RowILi8EEvP7ap_uintILi256EEPKS1_S4_S4_S4_S2_DhiiiiiE7row_acc': Cyclic partitioning with factor 16 on dimension 2. (../gen/UpConv_Unified.tpp:341:0)
+INFO: [HLS 214-248] Applying array_partition to 'psum.i': Complete partitioning on dimension 1. Complete partitioning on dimension 2. (../gen/UpConv_Unified.tpp:140:20)
+INFO: [HLS 214-248] Applying array_partition to 'sum_rot.i': Complete partitioning on dimension 1. (../gen/UpConv_Unified.tpp:231:8)
+INFO: [HLS 214-248] Applying array_partition to 'sumsq_rot.i': Complete partitioning on dimension 1. (../gen/UpConv_Unified.tpp:231:20)
+INFO: [HLS 214-248] Applying array_partition to 'w_local': Complete partitioning on dimension 1. (../gen/UpConv_Unified.tpp:349:13)
+INFO: [HLS 214-437] Automatically disabling loop flattening for loop 'ROW_LOOP'. (../gen/UpConv_Unified.tpp:412:15)
+INFO: [HLS 214-115] Multiple burst reads of variable length and bit width 256 in loop 'W_FLAT'(../gen/UpConv_Unified.tpp:94:21) has been inferred on bundle 'gmem_weight'. These burst requests might be further partitioned into multiple requests during RTL generation, based on max_read_burst_length or max_write_burst_length settings. (../gen/UpConv_Unified.tpp:94:21)
+INFO: [HLS 214-115] Multiple burst reads of variable length and bit width 256 in loop 'LOAD_B'(../gen/UpConv_Unified.tpp:205:10) has been inferred on bundle 'gmem_param'. These burst requests might be further partitioned into multiple requests during RTL generation, based on max_read_burst_length or max_write_burst_length settings. (../gen/UpConv_Unified.tpp:205:10)
+INFO: [HLS 214-115] Multiple burst reads of variable length and bit width 256 in loop 'LOAD_G'(../gen/UpConv_Unified.tpp:210:13) has been inferred on bundle 'gmem_param'. These burst requests might be further partitioned into multiple requests during RTL generation, based on max_read_burst_length or max_write_burst_length settings. (../gen/UpConv_Unified.tpp:210:13)
+INFO: [HLS 214-115] Multiple burst reads of variable length and bit width 256 in loop 'LOAD_BE'(../gen/UpConv_Unified.tpp:215:14) has been inferred on bundle 'gmem_param'. These burst requests might be further partitioned into multiple requests during RTL generation, based on max_read_burst_length or max_write_burst_length settings. (../gen/UpConv_Unified.tpp:215:14)
+INFO: [HLS 214-115] Multiple burst reads of variable length and bit width 256 in loop 'VITIS_LOOP_403_1'(../gen/UpConv_Unified.tpp:403:20) has been inferred on bundle 'gmem_in'. These burst requests might be further partitioned into multiple requests during RTL generation, based on max_read_burst_length or max_write_burst_length settings. (../gen/UpConv_Unified.tpp:401:16)
+INFO: [HLS 214-115] Multiple burst reads of variable length and bit width 256 in loop 'VITIS_LOOP_417_2'(../gen/UpConv_Unified.tpp:417:20) has been inferred on bundle 'gmem_in'. These burst requests might be further partitioned into multiple requests during RTL generation, based on max_read_burst_length or max_write_burst_length settings. (../gen/UpConv_Unified.tpp:415:19)
+INFO: [HLS 200-111] Finished Compiling Optimization and Transform: CPU user time: 2.53 seconds. CPU system time: 0.31 seconds. Elapsed time: 6.92 seconds; current allocated memory: 333.367 MB.
+INFO: [HLS 200-111] Finished Checking Pragmas: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0 seconds; current allocated memory: 333.367 MB.
+INFO: [HLS 200-10] Starting code transformations ...
+INFO: [HLS 200-111] Finished Standard Transforms: CPU user time: 0.09 seconds. CPU system time: 0 seconds. Elapsed time: 0.09 seconds; current allocated memory: 337.812 MB.
+INFO: [HLS 200-10] Checking synthesizability ...
+WARNING: [SYNCHK 200-23] ../gen/UpConv_Unified.tpp:246: variable-indexed range selection may cause suboptimal QoR.
+INFO: [SYNCHK 200-10] 0 error(s), 1 warning(s).
+INFO: [HLS 200-111] Finished Checking Synthesizability: CPU user time: 0.09 seconds. CPU system time: 0.01 seconds. Elapsed time: 0.09 seconds; current allocated memory: 338.848 MB.
+WARNING: [XFORM 203-561] Updating loop lower bound from 0 to 3 for loop 'KH_LOOP' (../gen/UpConv_Unified.tpp:126:23) in function 'UpConv_Fused_Row<8>'.
+INFO: [XFORM 203-401] Performing if-conversion on hyperblock from (../gen/UpConv_Unified.tpp:145:9) in function 'UpConv_Fused_Row<8>'... converting 3 basic blocks.
+INFO: [XFORM 203-401] Performing if-conversion on hyperblock from (../gen/UpConv_Unified.tpp:291:9) to (../gen/UpConv_Unified.tpp:290:17) in function 'UpConv_Fused_Row<8>'... converting 33 basic blocks.
+INFO: [HLS 200-111] Finished Loop, function and other optimizations: CPU user time: 0.45 seconds. CPU system time: 0 seconds. Elapsed time: 0.46 seconds; current allocated memory: 369.000 MB.
+INFO: [HLS 200-2061] Successfully converted nested loops 'LOAD_ROW0'(../gen/UpConv_Unified.tpp:401:16) and 'VITIS_LOOP_403_1'(../gen/UpConv_Unified.tpp:403:20) in function 'upconv_core_top' into perfectly nested loops.
+INFO: [HLS 200-2061] Successfully converted nested loops 'LOAD_ROW'(../gen/UpConv_Unified.tpp:415:19) and 'VITIS_LOOP_417_2'(../gen/UpConv_Unified.tpp:417:20) in function 'upconv_core_top' into perfectly nested loops.
+INFO: [HLS 200-2061] Successfully converted nested loops 'KW_LOOP'(../gen/UpConv_Unified.tpp:133:18) and 'FLAT_LOOP'(../gen/UpConv_Unified.tpp:144:24) in function 'UpConv_Fused_Row<8>' into perfectly nested loops.
+INFO: [XFORM 203-541] Flattening a loop nest 'LOAD_ROW0' (../gen/UpConv_Unified.tpp:401:16) in function 'upconv_core_top'.
+INFO: [XFORM 203-541] Flattening a loop nest 'LOAD_ROW' (../gen/UpConv_Unified.tpp:415:19) in function 'upconv_core_top'.
+WARNING: [HLS 200-960] Cannot flatten loop 'PRELOAD_W' (../gen/UpConv_Unified.tpp:90:16) in function 'UpConv_Fused_Row<8>' the outer loop is not a perfect loop because there is nontrivial logic before entering the inner loop.
+Resolution: For help on HLS 200-960 see docs.xilinx.com/access/sources/dita/topic?Doc_Version=2024.2%20English&url=ug1448-hls-guidance&resourceid=200-960.html
+INFO: [XFORM 203-541] Flattening a loop nest 'KW_LOOP' (../gen/UpConv_Unified.tpp:133:18) in function 'UpConv_Fused_Row<8>'.
+WARNING: [HLS 200-1946] Dependence pragma (../gen/UpConv_Unified.tpp:147:9) in loop 'FLAT_LOOP' may become invalid because the loop was flattened with the outer loop 'KW_LOOP'.
+WARNING: [HLS 200-1946] Dependence pragma (../gen/UpConv_Unified.tpp:147:9) in loop 'FLAT_LOOP' may become invalid because the loop was flattened with the outer loop 'KW_LOOP'.
+WARNING: [HLS 200-1946] Dependence pragma (../gen/UpConv_Unified.tpp:147:9) in loop 'FLAT_LOOP' may become invalid because the loop was flattened with the outer loop 'KW_LOOP'.
+WARNING: [HLS 200-1946] Dependence pragma (../gen/UpConv_Unified.tpp:147:9) in loop 'FLAT_LOOP' may become invalid because the loop was flattened with the outer loop 'KW_LOOP'.
+WARNING: [HLS 200-1946] Dependence pragma (../gen/UpConv_Unified.tpp:147:9) in loop 'FLAT_LOOP' may become invalid because the loop was flattened with the outer loop 'KW_LOOP'.
+WARNING: [HLS 200-1946] Dependence pragma (../gen/UpConv_Unified.tpp:147:9) in loop 'FLAT_LOOP' may become invalid because the loop was flattened with the outer loop 'KW_LOOP'.
+WARNING: [HLS 200-1946] Dependence pragma (../gen/UpConv_Unified.tpp:147:9) in loop 'FLAT_LOOP' may become invalid because the loop was flattened with the outer loop 'KW_LOOP'.
+WARNING: [HLS 200-1946] Dependence pragma (../gen/UpConv_Unified.tpp:147:9) in loop 'FLAT_LOOP' may become invalid because the loop was flattened with the outer loop 'KW_LOOP'.
+WARNING: [HLS 200-1946] Dependence pragma (../gen/UpConv_Unified.tpp:147:9) in loop 'FLAT_LOOP' may become invalid because the loop was flattened with the outer loop 'KW_LOOP'.
+WARNING: [HLS 200-1946] Dependence pragma (../gen/UpConv_Unified.tpp:147:9) in loop 'FLAT_LOOP' may become invalid because the loop was flattened with the outer loop 'KW_LOOP'.
+WARNING: [HLS 200-1946] Dependence pragma (../gen/UpConv_Unified.tpp:147:9) in loop 'FLAT_LOOP' may become invalid because the loop was flattened with the outer loop 'KW_LOOP'.
+WARNING: [HLS 200-1946] Dependence pragma (../gen/UpConv_Unified.tpp:147:9) in loop 'FLAT_LOOP' may become invalid because the loop was flattened with the outer loop 'KW_LOOP'.
+WARNING: [HLS 200-1946] Dependence pragma (../gen/UpConv_Unified.tpp:147:9) in loop 'FLAT_LOOP' may become invalid because the loop was flattened with the outer loop 'KW_LOOP'.
+WARNING: [HLS 200-1946] Dependence pragma (../gen/UpConv_Unified.tpp:147:9) in loop 'FLAT_LOOP' may become invalid because the loop was flattened with the outer loop 'KW_LOOP'.
+WARNING: [HLS 200-1946] Dependence pragma (../gen/UpConv_Unified.tpp:147:9) in loop 'FLAT_LOOP' may become invalid because the loop was flattened with the outer loop 'KW_LOOP'.
+WARNING: [HLS 200-1946] Dependence pragma (../gen/UpConv_Unified.tpp:147:9) in loop 'FLAT_LOOP' may become invalid because the loop was flattened with the outer loop 'KW_LOOP'.
+WARNING: [HLS 200-1946] Dependence pragma (../gen/UpConv_Unified.tpp:147:9) in loop 'FLAT_LOOP' may become invalid because the loop was flattened with the outer loop 'KW_LOOP'.
+WARNING: [HLS 200-1946] Dependence pragma (../gen/UpConv_Unified.tpp:147:9) in loop 'FLAT_LOOP' may become invalid because the loop was flattened with the outer loop 'KW_LOOP'.
+WARNING: [HLS 200-1946] Dependence pragma (../gen/UpConv_Unified.tpp:147:9) in loop 'FLAT_LOOP' may become invalid because the loop was flattened with the outer loop 'KW_LOOP'.
+WARNING: [HLS 200-1946] Dependence pragma (../gen/UpConv_Unified.tpp:147:9) in loop 'FLAT_LOOP' may become invalid because the loop was flattened with the outer loop 'KW_LOOP'.
+WARNING: [HLS 200-1946] Dependence pragma (../gen/UpConv_Unified.tpp:147:9) in loop 'FLAT_LOOP' may become invalid because the loop was flattened with the outer loop 'KW_LOOP'.
+WARNING: [HLS 200-1946] Dependence pragma (../gen/UpConv_Unified.tpp:147:9) in loop 'FLAT_LOOP' may become invalid because the loop was flattened with the outer loop 'KW_LOOP'.
+WARNING: [HLS 200-1946] Dependence pragma (../gen/UpConv_Unified.tpp:147:9) in loop 'FLAT_LOOP' may become invalid because the loop was flattened with the outer loop 'KW_LOOP'.
+WARNING: [HLS 200-1946] Dependence pragma (../gen/UpConv_Unified.tpp:147:9) in loop 'FLAT_LOOP' may become invalid because the loop was flattened with the outer loop 'KW_LOOP'.
+WARNING: [HLS 200-1946] Dependence pragma (../gen/UpConv_Unified.tpp:147:9) in loop 'FLAT_LOOP' may become invalid because the loop was flattened with the outer loop 'KW_LOOP'.
+WARNING: [HLS 200-1946] Dependence pragma (../gen/UpConv_Unified.tpp:147:9) in loop 'FLAT_LOOP' may become invalid because the loop was flattened with the outer loop 'KW_LOOP'.
+WARNING: [HLS 200-1946] Dependence pragma (../gen/UpConv_Unified.tpp:147:9) in loop 'FLAT_LOOP' may become invalid because the loop was flattened with the outer loop 'KW_LOOP'.
+WARNING: [HLS 200-1946] Dependence pragma (../gen/UpConv_Unified.tpp:147:9) in loop 'FLAT_LOOP' may become invalid because the loop was flattened with the outer loop 'KW_LOOP'.
+WARNING: [HLS 200-1946] Dependence pragma (../gen/UpConv_Unified.tpp:147:9) in loop 'FLAT_LOOP' may become invalid because the loop was flattened with the outer loop 'KW_LOOP'.
+WARNING: [HLS 200-1946] Dependence pragma (../gen/UpConv_Unified.tpp:147:9) in loop 'FLAT_LOOP' may become invalid because the loop was flattened with the outer loop 'KW_LOOP'.
+WARNING: [HLS 200-1946] Dependence pragma (../gen/UpConv_Unified.tpp:147:9) in loop 'FLAT_LOOP' may become invalid because the loop was flattened with the outer loop 'KW_LOOP'.
+WARNING: [HLS 200-1946] Dependence pragma (../gen/UpConv_Unified.tpp:147:9) in loop 'FLAT_LOOP' may become invalid because the loop was flattened with the outer loop 'KW_LOOP'.
+WARNING: [HLS 200-1946] Dependence pragma (../gen/UpConv_Unified.tpp:148:9) in loop 'FLAT_LOOP' may become invalid because the loop was flattened with the outer loop 'KW_LOOP'.
+WARNING: [HLS 200-1946] Dependence pragma (../gen/UpConv_Unified.tpp:148:9) in loop 'FLAT_LOOP' may become invalid because the loop was flattened with the outer loop 'KW_LOOP'.
+WARNING: [HLS 200-1946] Dependence pragma (../gen/UpConv_Unified.tpp:148:9) in loop 'FLAT_LOOP' may become invalid because the loop was flattened with the outer loop 'KW_LOOP'.
+WARNING: [HLS 200-1946] Dependence pragma (../gen/UpConv_Unified.tpp:148:9) in loop 'FLAT_LOOP' may become invalid because the loop was flattened with the outer loop 'KW_LOOP'.
+WARNING: [HLS 200-1946] Dependence pragma (../gen/UpConv_Unified.tpp:148:9) in loop 'FLAT_LOOP' may become invalid because the loop was flattened with the outer loop 'KW_LOOP'.
+WARNING: [HLS 200-1946] Dependence pragma (../gen/UpConv_Unified.tpp:148:9) in loop 'FLAT_LOOP' may become invalid because the loop was flattened with the outer loop 'KW_LOOP'.
+WARNING: [HLS 200-1946] Dependence pragma (../gen/UpConv_Unified.tpp:148:9) in loop 'FLAT_LOOP' may become invalid because the loop was flattened with the outer loop 'KW_LOOP'.
+WARNING: [HLS 200-1946] Dependence pragma (../gen/UpConv_Unified.tpp:148:9) in loop 'FLAT_LOOP' may become invalid because the loop was flattened with the outer loop 'KW_LOOP'.
+WARNING: [HLS 200-1946] Dependence pragma (../gen/UpConv_Unified.tpp:148:9) in loop 'FLAT_LOOP' may become invalid because the loop was flattened with the outer loop 'KW_LOOP'.
+WARNING: [HLS 200-1946] Dependence pragma (../gen/UpConv_Unified.tpp:148:9) in loop 'FLAT_LOOP' may become invalid because the loop was flattened with the outer loop 'KW_LOOP'.
+WARNING: [HLS 200-1946] Dependence pragma (../gen/UpConv_Unified.tpp:148:9) in loop 'FLAT_LOOP' may become invalid because the loop was flattened with the outer loop 'KW_LOOP'.
+WARNING: [HLS 200-1946] Dependence pragma (../gen/UpConv_Unified.tpp:148:9) in loop 'FLAT_LOOP' may become invalid because the loop was flattened with the outer loop 'KW_LOOP'.
+WARNING: [HLS 200-1946] Dependence pragma (../gen/UpConv_Unified.tpp:148:9) in loop 'FLAT_LOOP' may become invalid because the loop was flattened with the outer loop 'KW_LOOP'.
+WARNING: [HLS 200-1946] Dependence pragma (../gen/UpConv_Unified.tpp:148:9) in loop 'FLAT_LOOP' may become invalid because the loop was flattened with the outer loop 'KW_LOOP'.
+WARNING: [HLS 200-1946] Dependence pragma (../gen/UpConv_Unified.tpp:148:9) in loop 'FLAT_LOOP' may become invalid because the loop was flattened with the outer loop 'KW_LOOP'.
+WARNING: [HLS 200-1946] Dependence pragma (../gen/UpConv_Unified.tpp:148:9) in loop 'FLAT_LOOP' may become invalid because the loop was flattened with the outer loop 'KW_LOOP'.
+WARNING: [HLS 200-960] Cannot flatten loop 'KH_LOOP' (../gen/UpConv_Unified.tpp:126:14) in function 'UpConv_Fused_Row<8>' the outer loop is not a perfect loop because there is nontrivial logic before entering the inner loop.
+Resolution: For help on HLS 200-960 see docs.xilinx.com/access/sources/dita/topic?Doc_Version=2024.2%20English&url=ug1448-hls-guidance&resourceid=200-960.html
+WARNING: [ANALYSIS 214-52] Found false inter dependency for variable 'psum.31' (../gen/UpConv_Unified.tpp:140).
+WARNING: [ANALYSIS 214-52] Found false inter dependency for variable 'psum.30' (../gen/UpConv_Unified.tpp:140).
+WARNING: [ANALYSIS 214-52] Found false inter dependency for variable 'psum.29' (../gen/UpConv_Unified.tpp:140).
+WARNING: [ANALYSIS 214-52] Found false inter dependency for variable 'psum.28' (../gen/UpConv_Unified.tpp:140).
+WARNING: [ANALYSIS 214-52] Found false inter dependency for variable 'psum.27' (../gen/UpConv_Unified.tpp:140).
+WARNING: [ANALYSIS 214-52] Found false inter dependency for variable 'psum.26' (../gen/UpConv_Unified.tpp:140).
+WARNING: [ANALYSIS 214-52] Found false inter dependency for variable 'psum.25' (../gen/UpConv_Unified.tpp:140).
+WARNING: [ANALYSIS 214-52] Found false inter dependency for variable 'psum.24' (../gen/UpConv_Unified.tpp:140).
+WARNING: [ANALYSIS 214-52] Found false inter dependency for variable 'psum.23' (../gen/UpConv_Unified.tpp:140).
+WARNING: [ANALYSIS 214-52] Found false inter dependency for variable 'psum.22' (../gen/UpConv_Unified.tpp:140).
+WARNING: [ANALYSIS 214-52] Found false inter dependency for variable 'psum.21' (../gen/UpConv_Unified.tpp:140).
+WARNING: [ANALYSIS 214-52] Found false inter dependency for variable 'psum.20' (../gen/UpConv_Unified.tpp:140).
+WARNING: [ANALYSIS 214-52] Found false inter dependency for variable 'psum.19' (../gen/UpConv_Unified.tpp:140).
+WARNING: [ANALYSIS 214-52] Found false inter dependency for variable 'psum.18' (../gen/UpConv_Unified.tpp:140).
+WARNING: [ANALYSIS 214-52] Found false inter dependency for variable 'psum.17' (../gen/UpConv_Unified.tpp:140).
+WARNING: [ANALYSIS 214-52] Found false inter dependency for variable 'psum.16' (../gen/UpConv_Unified.tpp:140).
+WARNING: [ANALYSIS 214-52] Found false inter dependency for variable 'psum.15' (../gen/UpConv_Unified.tpp:140).
+WARNING: [ANALYSIS 214-52] Found false inter dependency for variable 'psum.14' (../gen/UpConv_Unified.tpp:140).
+WARNING: [ANALYSIS 214-52] Found false inter dependency for variable 'psum.13' (../gen/UpConv_Unified.tpp:140).
+WARNING: [ANALYSIS 214-52] Found false inter dependency for variable 'psum.12' (../gen/UpConv_Unified.tpp:140).
+WARNING: [ANALYSIS 214-52] Found false inter dependency for variable 'psum.11' (../gen/UpConv_Unified.tpp:140).
+WARNING: [ANALYSIS 214-52] Found false inter dependency for variable 'psum.10' (../gen/UpConv_Unified.tpp:140).
+WARNING: [ANALYSIS 214-52] Found false inter dependency for variable 'psum.9' (../gen/UpConv_Unified.tpp:140).
+WARNING: [ANALYSIS 214-52] Found false inter dependency for variable 'psum.8' (../gen/UpConv_Unified.tpp:140).
+WARNING: [ANALYSIS 214-52] Found false inter dependency for variable 'psum.7' (../gen/UpConv_Unified.tpp:140).
+WARNING: [ANALYSIS 214-52] Found false inter dependency for variable 'psum.6' (../gen/UpConv_Unified.tpp:140).
+WARNING: [ANALYSIS 214-52] Found false inter dependency for variable 'psum.5' (../gen/UpConv_Unified.tpp:140).
+WARNING: [ANALYSIS 214-52] Found false inter dependency for variable 'psum.4' (../gen/UpConv_Unified.tpp:140).
+WARNING: [ANALYSIS 214-52] Found false inter dependency for variable 'psum.3' (../gen/UpConv_Unified.tpp:140).
+WARNING: [ANALYSIS 214-52] Found false inter dependency for variable 'psum.2' (../gen/UpConv_Unified.tpp:140).
+WARNING: [ANALYSIS 214-52] Found false inter dependency for variable 'psum.1' (../gen/UpConv_Unified.tpp:140).
+WARNING: [ANALYSIS 214-52] Found false inter dependency for variable 'psum' (../gen/UpConv_Unified.tpp:140).
+WARNING: [ANALYSIS 214-52] Found false inter dependency for variable '_ZZ16UpConv_Fused_RowILi8EEvP7ap_uintILi256EEPKS1_S4_S4_S4_S2_DhiiiiiE7row_acc_1'.
+WARNING: [ANALYSIS 214-52] Found false inter dependency for variable '_ZZ16UpConv_Fused_RowILi8EEvP7ap_uintILi256EEPKS1_S4_S4_S4_S2_DhiiiiiE7row_acc_1.1'.
+WARNING: [ANALYSIS 214-52] Found false inter dependency for variable '_ZZ16UpConv_Fused_RowILi8EEvP7ap_uintILi256EEPKS1_S4_S4_S4_S2_DhiiiiiE7row_acc_1.2'.
+WARNING: [ANALYSIS 214-52] Found false inter dependency for variable '_ZZ16UpConv_Fused_RowILi8EEvP7ap_uintILi256EEPKS1_S4_S4_S4_S2_DhiiiiiE7row_acc_1.3'.
+WARNING: [ANALYSIS 214-52] Found false inter dependency for variable '_ZZ16UpConv_Fused_RowILi8EEvP7ap_uintILi256EEPKS1_S4_S4_S4_S2_DhiiiiiE7row_acc_1.4'.
+WARNING: [ANALYSIS 214-52] Found false inter dependency for variable '_ZZ16UpConv_Fused_RowILi8EEvP7ap_uintILi256EEPKS1_S4_S4_S4_S2_DhiiiiiE7row_acc_1.5'.
+WARNING: [ANALYSIS 214-52] Found false inter dependency for variable 'void UpConv_Fused_Row(ap_uint*,ap_uint const*,ap_uint const*,ap_uint const*,ap_u'.
+WARNING: [ANALYSIS 214-52] Found false inter dependency for variable 'void UpConv_Fused_Row(ap_uint*,ap_uint const*,ap_uint const*,ap_uint const*,ap_u.1'.
+WARNING: [ANALYSIS 214-52] Found false inter dependency for variable 'void UpConv_Fused_Row(ap_uint*,ap_uint const*,ap_uint const*,ap_uint const*,ap_u.2'.
+WARNING: [ANALYSIS 214-52] Found false inter dependency for variable 'void UpConv_Fused_Row(ap_uint*,ap_uint const*,ap_uint const*,ap_uint const*,ap_u.3'.
+WARNING: [ANALYSIS 214-52] Found false inter dependency for variable 'void UpConv_Fused_Row(ap_uint*,ap_uint const*,ap_uint const*,ap_uint const*,ap_u.4'.
+WARNING: [ANALYSIS 214-52] Found false inter dependency for variable 'void UpConv_Fused_Row(ap_uint*,ap_uint const*,ap_uint const*,ap_uint const*,ap_u.5'.
+WARNING: [ANALYSIS 214-52] Found false inter dependency for variable 'void UpConv_Fused_Row(ap_uint*,ap_uint const*,ap_uint const*,ap_uint const*,ap_u.6'.
+WARNING: [ANALYSIS 214-52] Found false inter dependency for variable 'void UpConv_Fused_Row(ap_uint*,ap_uint const*,ap_uint const*,ap_uint const*,ap_u.7'.
+WARNING: [ANALYSIS 214-52] Found false inter dependency for variable 'void UpConv_Fused_Row(ap_uint*,ap_uint const*,ap_uint const*,ap_uint const*,ap_u.8'.
+WARNING: [ANALYSIS 214-52] Found false inter dependency for variable 'void UpConv_Fused_Row(ap_uint*,ap_uint const*,ap_uint const*,ap_uint const*,ap_u.9'.
+WARNING: [ANALYSIS 214-52] Found false inter dependency for variable 'sum_rot.7' (../gen/UpConv_Unified.tpp:231).
+WARNING: [ANALYSIS 214-52] Found false inter dependency for variable 'sum_rot.6' (../gen/UpConv_Unified.tpp:231).
+WARNING: [ANALYSIS 214-52] Found false inter dependency for variable 'sum_rot.5' (../gen/UpConv_Unified.tpp:231).
+WARNING: [ANALYSIS 214-52] Found false inter dependency for variable 'sum_rot.4' (../gen/UpConv_Unified.tpp:231).
+WARNING: [ANALYSIS 214-52] Found false inter dependency for variable 'sum_rot.3' (../gen/UpConv_Unified.tpp:231).
+WARNING: [ANALYSIS 214-52] Found false inter dependency for variable 'sum_rot.2' (../gen/UpConv_Unified.tpp:231).
+WARNING: [ANALYSIS 214-52] Found false inter dependency for variable 'sum_rot.1' (../gen/UpConv_Unified.tpp:231).
+WARNING: [ANALYSIS 214-52] Found false inter dependency for variable 'sum_rot' (../gen/UpConv_Unified.tpp:231).
+WARNING: [ANALYSIS 214-52] Found false inter dependency for variable 'sumsq_rot.7' (../gen/UpConv_Unified.tpp:231).
+WARNING: [ANALYSIS 214-52] Found false inter dependency for variable 'sumsq_rot.6' (../gen/UpConv_Unified.tpp:231).
+WARNING: [ANALYSIS 214-52] Found false inter dependency for variable 'sumsq_rot.5' (../gen/UpConv_Unified.tpp:231).
+WARNING: [ANALYSIS 214-52] Found false inter dependency for variable 'sumsq_rot.4' (../gen/UpConv_Unified.tpp:231).
+WARNING: [ANALYSIS 214-52] Found false inter dependency for variable 'sumsq_rot.3' (../gen/UpConv_Unified.tpp:231).
+WARNING: [ANALYSIS 214-52] Found false inter dependency for variable 'sumsq_rot.2' (../gen/UpConv_Unified.tpp:231).
+WARNING: [ANALYSIS 214-52] Found false inter dependency for variable 'sumsq_rot.1' (../gen/UpConv_Unified.tpp:231).
+WARNING: [ANALYSIS 214-52] Found false inter dependency for variable 'sumsq_rot' (../gen/UpConv_Unified.tpp:231).
+WARNING: [ANALYSIS 214-52] Found false inter dependency for variable '_ZZ16UpConv_Fused_RowILi8EEvP7ap_uintILi256EEPKS1_S4_S4_S4_S2_DhiiiiiE7row_acc_1'.
+WARNING: [ANALYSIS 214-52] Found false inter dependency for variable '_ZZ16UpConv_Fused_RowILi8EEvP7ap_uintILi256EEPKS1_S4_S4_S4_S2_DhiiiiiE7row_acc_1.1'.
+WARNING: [ANALYSIS 214-52] Found false inter dependency for variable '_ZZ16UpConv_Fused_RowILi8EEvP7ap_uintILi256EEPKS1_S4_S4_S4_S2_DhiiiiiE7row_acc_1.2'.
+WARNING: [ANALYSIS 214-52] Found false inter dependency for variable '_ZZ16UpConv_Fused_RowILi8EEvP7ap_uintILi256EEPKS1_S4_S4_S4_S2_DhiiiiiE7row_acc_1.3'.
+WARNING: [ANALYSIS 214-52] Found false inter dependency for variable '_ZZ16UpConv_Fused_RowILi8EEvP7ap_uintILi256EEPKS1_S4_S4_S4_S2_DhiiiiiE7row_acc_1.4'.
+WARNING: [ANALYSIS 214-52] Found false inter dependency for variable '_ZZ16UpConv_Fused_RowILi8EEvP7ap_uintILi256EEPKS1_S4_S4_S4_S2_DhiiiiiE7row_acc_1.5'.
+WARNING: [ANALYSIS 214-52] Found false inter dependency for variable 'void UpConv_Fused_Row(ap_uint*,ap_uint const*,ap_uint const*,ap_uint const*,ap_u'.
+WARNING: [ANALYSIS 214-52] Found false inter dependency for variable 'void UpConv_Fused_Row(ap_uint*,ap_uint const*,ap_uint const*,ap_uint const*,ap_u.1'.
+WARNING: [ANALYSIS 214-52] Found false inter dependency for variable 'void UpConv_Fused_Row(ap_uint*,ap_uint const*,ap_uint const*,ap_uint const*,ap_u.2'.
+WARNING: [ANALYSIS 214-52] Found false inter dependency for variable 'void UpConv_Fused_Row(ap_uint*,ap_uint const*,ap_uint const*,ap_uint const*,ap_u.3'.
+WARNING: [ANALYSIS 214-52] Found false inter dependency for variable 'void UpConv_Fused_Row(ap_uint*,ap_uint const*,ap_uint const*,ap_uint const*,ap_u.4'.
+WARNING: [ANALYSIS 214-52] Found false inter dependency for variable 'void UpConv_Fused_Row(ap_uint*,ap_uint const*,ap_uint const*,ap_uint const*,ap_u.5'.
+WARNING: [ANALYSIS 214-52] Found false inter dependency for variable 'void UpConv_Fused_Row(ap_uint*,ap_uint const*,ap_uint const*,ap_uint const*,ap_u.6'.
+WARNING: [ANALYSIS 214-52] Found false inter dependency for variable 'void UpConv_Fused_Row(ap_uint*,ap_uint const*,ap_uint const*,ap_uint const*,ap_u.7'.
+WARNING: [ANALYSIS 214-52] Found false inter dependency for variable 'void UpConv_Fused_Row(ap_uint*,ap_uint const*,ap_uint const*,ap_uint const*,ap_u.8'.
+WARNING: [ANALYSIS 214-52] Found false inter dependency for variable 'void UpConv_Fused_Row(ap_uint*,ap_uint const*,ap_uint const*,ap_uint const*,ap_u.9'.
+WARNING: [ANALYSIS 214-52] Found false inter dependency for variable 'psum.31' (../gen/UpConv_Unified.tpp:140).
+WARNING: [ANALYSIS 214-52] Found false inter dependency for variable 'psum.30' (../gen/UpConv_Unified.tpp:140).
+WARNING: [ANALYSIS 214-52] Found false inter dependency for variable 'psum.29' (../gen/UpConv_Unified.tpp:140).
+WARNING: [ANALYSIS 214-52] Found false inter dependency for variable 'psum.28' (../gen/UpConv_Unified.tpp:140).
+WARNING: [ANALYSIS 214-52] Found false inter dependency for variable 'psum.27' (../gen/UpConv_Unified.tpp:140).
+WARNING: [ANALYSIS 214-52] Found false inter dependency for variable 'psum.26' (../gen/UpConv_Unified.tpp:140).
+WARNING: [ANALYSIS 214-52] Found false inter dependency for variable 'psum.25' (../gen/UpConv_Unified.tpp:140).
+WARNING: [ANALYSIS 214-52] Found false inter dependency for variable 'psum.24' (../gen/UpConv_Unified.tpp:140).
+WARNING: [ANALYSIS 214-52] Found false inter dependency for variable 'psum.23' (../gen/UpConv_Unified.tpp:140).
+WARNING: [ANALYSIS 214-52] Found false inter dependency for variable 'psum.22' (../gen/UpConv_Unified.tpp:140).
+WARNING: [ANALYSIS 214-52] Found false inter dependency for variable 'psum.21' (../gen/UpConv_Unified.tpp:140).
+WARNING: [ANALYSIS 214-52] Found false inter dependency for variable 'psum.20' (../gen/UpConv_Unified.tpp:140).
+WARNING: [ANALYSIS 214-52] Found false inter dependency for variable 'psum.19' (../gen/UpConv_Unified.tpp:140).
+WARNING: [ANALYSIS 214-52] Found false inter dependency for variable 'psum.18' (../gen/UpConv_Unified.tpp:140).
+WARNING: [ANALYSIS 214-52] Found false inter dependency for variable 'psum.17' (../gen/UpConv_Unified.tpp:140).
+WARNING: [ANALYSIS 214-52] Found false inter dependency for variable 'psum.16' (../gen/UpConv_Unified.tpp:140).
+WARNING: [ANALYSIS 214-52] Found false inter dependency for variable 'psum.15' (../gen/UpConv_Unified.tpp:140).
+WARNING: [ANALYSIS 214-52] Found false inter dependency for variable 'psum.14' (../gen/UpConv_Unified.tpp:140).
+WARNING: [ANALYSIS 214-52] Found false inter dependency for variable 'psum.13' (../gen/UpConv_Unified.tpp:140).
+WARNING: [ANALYSIS 214-52] Found false inter dependency for variable 'psum.12' (../gen/UpConv_Unified.tpp:140).
+WARNING: [ANALYSIS 214-52] Found false inter dependency for variable 'psum.11' (../gen/UpConv_Unified.tpp:140).
+WARNING: [ANALYSIS 214-52] Found false inter dependency for variable 'psum.10' (../gen/UpConv_Unified.tpp:140).
+WARNING: [ANALYSIS 214-52] Found false inter dependency for variable 'psum.9' (../gen/UpConv_Unified.tpp:140).
+WARNING: [ANALYSIS 214-52] Found false inter dependency for variable 'psum.8' (../gen/UpConv_Unified.tpp:140).
+WARNING: [ANALYSIS 214-52] Found false inter dependency for variable 'psum.7' (../gen/UpConv_Unified.tpp:140).
+WARNING: [ANALYSIS 214-52] Found false inter dependency for variable 'psum.6' (../gen/UpConv_Unified.tpp:140).
+WARNING: [ANALYSIS 214-52] Found false inter dependency for variable 'psum.5' (../gen/UpConv_Unified.tpp:140).
+WARNING: [ANALYSIS 214-52] Found false inter dependency for variable 'psum.4' (../gen/UpConv_Unified.tpp:140).
+WARNING: [ANALYSIS 214-52] Found false inter dependency for variable 'psum.3' (../gen/UpConv_Unified.tpp:140).
+WARNING: [ANALYSIS 214-52] Found false inter dependency for variable 'psum.2' (../gen/UpConv_Unified.tpp:140).
+WARNING: [ANALYSIS 214-52] Found false inter dependency for variable 'psum.1' (../gen/UpConv_Unified.tpp:140).
+WARNING: [ANALYSIS 214-52] Found false inter dependency for variable 'psum' (../gen/UpConv_Unified.tpp:140).
+WARNING: [ANALYSIS 214-52] Found false inter dependency for variable '_ZZ16UpConv_Fused_RowILi8EEvP7ap_uintILi256EEPKS1_S4_S4_S4_S2_DhiiiiiE7row_acc_1'.
+WARNING: [ANALYSIS 214-52] Found false inter dependency for variable '_ZZ16UpConv_Fused_RowILi8EEvP7ap_uintILi256EEPKS1_S4_S4_S4_S2_DhiiiiiE7row_acc_1.1'.
+WARNING: [ANALYSIS 214-52] Found false inter dependency for variable '_ZZ16UpConv_Fused_RowILi8EEvP7ap_uintILi256EEPKS1_S4_S4_S4_S2_DhiiiiiE7row_acc_1.2'.
+WARNING: [ANALYSIS 214-52] Found false inter dependency for variable '_ZZ16UpConv_Fused_RowILi8EEvP7ap_uintILi256EEPKS1_S4_S4_S4_S2_DhiiiiiE7row_acc_1.3'.
+WARNING: [ANALYSIS 214-52] Found false inter dependency for variable '_ZZ16UpConv_Fused_RowILi8EEvP7ap_uintILi256EEPKS1_S4_S4_S4_S2_DhiiiiiE7row_acc_1.4'.
+WARNING: [ANALYSIS 214-52] Found false inter dependency for variable '_ZZ16UpConv_Fused_RowILi8EEvP7ap_uintILi256EEPKS1_S4_S4_S4_S2_DhiiiiiE7row_acc_1.5'.
+WARNING: [ANALYSIS 214-52] Found false inter dependency for variable 'void UpConv_Fused_Row(ap_uint*,ap_uint const*,ap_uint const*,ap_uint const*,ap_u'.
+WARNING: [ANALYSIS 214-52] Found false inter dependency for variable 'void UpConv_Fused_Row(ap_uint*,ap_uint const*,ap_uint const*,ap_uint const*,ap_u.1'.
+WARNING: [ANALYSIS 214-52] Found false inter dependency for variable 'void UpConv_Fused_Row(ap_uint*,ap_uint const*,ap_uint const*,ap_uint const*,ap_u.2'.
+WARNING: [ANALYSIS 214-52] Found false inter dependency for variable 'void UpConv_Fused_Row(ap_uint*,ap_uint const*,ap_uint const*,ap_uint const*,ap_u.3'.
+WARNING: [ANALYSIS 214-52] Found false inter dependency for variable 'void UpConv_Fused_Row(ap_uint*,ap_uint const*,ap_uint const*,ap_uint const*,ap_u.4'.
+WARNING: [ANALYSIS 214-52] Found false inter dependency for variable 'void UpConv_Fused_Row(ap_uint*,ap_uint const*,ap_uint const*,ap_uint const*,ap_u.5'.
+WARNING: [ANALYSIS 214-52] Found false inter dependency for variable 'void UpConv_Fused_Row(ap_uint*,ap_uint const*,ap_uint const*,ap_uint const*,ap_u.6'.
+WARNING: [ANALYSIS 214-52] Found false inter dependency for variable 'void UpConv_Fused_Row(ap_uint*,ap_uint const*,ap_uint const*,ap_uint const*,ap_u.7'.
+WARNING: [ANALYSIS 214-52] Found false inter dependency for variable 'void UpConv_Fused_Row(ap_uint*,ap_uint const*,ap_uint const*,ap_uint const*,ap_u.8'.
+WARNING: [ANALYSIS 214-52] Found false inter dependency for variable 'void UpConv_Fused_Row(ap_uint*,ap_uint const*,ap_uint const*,ap_uint const*,ap_u.9'.
+WARNING: [ANALYSIS 214-52] Found false inter dependency for variable 'sum_rot.7' (../gen/UpConv_Unified.tpp:231).
+WARNING: [ANALYSIS 214-52] Found false inter dependency for variable 'sum_rot.6' (../gen/UpConv_Unified.tpp:231).
+WARNING: [ANALYSIS 214-52] Found false inter dependency for variable 'sum_rot.5' (../gen/UpConv_Unified.tpp:231).
+WARNING: [ANALYSIS 214-52] Found false inter dependency for variable 'sum_rot.4' (../gen/UpConv_Unified.tpp:231).
+WARNING: [ANALYSIS 214-52] Found false inter dependency for variable 'sum_rot.3' (../gen/UpConv_Unified.tpp:231).
+WARNING: [ANALYSIS 214-52] Found false inter dependency for variable 'sum_rot.2' (../gen/UpConv_Unified.tpp:231).
+WARNING: [ANALYSIS 214-52] Found false inter dependency for variable 'sum_rot.1' (../gen/UpConv_Unified.tpp:231).
+WARNING: [ANALYSIS 214-52] Found false inter dependency for variable 'sum_rot' (../gen/UpConv_Unified.tpp:231).
+WARNING: [ANALYSIS 214-52] Found false inter dependency for variable 'sumsq_rot.7' (../gen/UpConv_Unified.tpp:231).
+WARNING: [ANALYSIS 214-52] Found false inter dependency for variable 'sumsq_rot.6' (../gen/UpConv_Unified.tpp:231).
+WARNING: [ANALYSIS 214-52] Found false inter dependency for variable 'sumsq_rot.5' (../gen/UpConv_Unified.tpp:231).
+WARNING: [ANALYSIS 214-52] Found false inter dependency for variable 'sumsq_rot.4' (../gen/UpConv_Unified.tpp:231).
+WARNING: [ANALYSIS 214-52] Found false inter dependency for variable 'sumsq_rot.3' (../gen/UpConv_Unified.tpp:231).
+WARNING: [ANALYSIS 214-52] Found false inter dependency for variable 'sumsq_rot.2' (../gen/UpConv_Unified.tpp:231).
+WARNING: [ANALYSIS 214-52] Found false inter dependency for variable 'sumsq_rot.1' (../gen/UpConv_Unified.tpp:231).
+WARNING: [ANALYSIS 214-52] Found false inter dependency for variable 'sumsq_rot' (../gen/UpConv_Unified.tpp:231).
+WARNING: [ANALYSIS 214-52] Found false inter dependency for variable '_ZZ16UpConv_Fused_RowILi8EEvP7ap_uintILi256EEPKS1_S4_S4_S4_S2_DhiiiiiE7row_acc_1'.
+WARNING: [ANALYSIS 214-52] Found false inter dependency for variable '_ZZ16UpConv_Fused_RowILi8EEvP7ap_uintILi256EEPKS1_S4_S4_S4_S2_DhiiiiiE7row_acc_1.1'.
+WARNING: [ANALYSIS 214-52] Found false inter dependency for variable '_ZZ16UpConv_Fused_RowILi8EEvP7ap_uintILi256EEPKS1_S4_S4_S4_S2_DhiiiiiE7row_acc_1.2'.
+WARNING: [ANALYSIS 214-52] Found false inter dependency for variable '_ZZ16UpConv_Fused_RowILi8EEvP7ap_uintILi256EEPKS1_S4_S4_S4_S2_DhiiiiiE7row_acc_1.3'.
+WARNING: [ANALYSIS 214-52] Found false inter dependency for variable '_ZZ16UpConv_Fused_RowILi8EEvP7ap_uintILi256EEPKS1_S4_S4_S4_S2_DhiiiiiE7row_acc_1.4'.
+WARNING: [ANALYSIS 214-52] Found false inter dependency for variable '_ZZ16UpConv_Fused_RowILi8EEvP7ap_uintILi256EEPKS1_S4_S4_S4_S2_DhiiiiiE7row_acc_1.5'.
+WARNING: [ANALYSIS 214-52] Found false inter dependency for variable 'void UpConv_Fused_Row(ap_uint*,ap_uint const*,ap_uint const*,ap_uint const*,ap_u'.
+WARNING: [ANALYSIS 214-52] Found false inter dependency for variable 'void UpConv_Fused_Row(ap_uint*,ap_uint const*,ap_uint const*,ap_uint const*,ap_u.1'.
+WARNING: [ANALYSIS 214-52] Found false inter dependency for variable 'void UpConv_Fused_Row(ap_uint*,ap_uint const*,ap_uint const*,ap_uint const*,ap_u.2'.
+WARNING: [ANALYSIS 214-52] Found false inter dependency for variable 'void UpConv_Fused_Row(ap_uint*,ap_uint const*,ap_uint const*,ap_uint const*,ap_u.3'.
+WARNING: [ANALYSIS 214-52] Found false inter dependency for variable 'void UpConv_Fused_Row(ap_uint*,ap_uint const*,ap_uint const*,ap_uint const*,ap_u.4'.
+WARNING: [ANALYSIS 214-52] Found false inter dependency for variable 'void UpConv_Fused_Row(ap_uint*,ap_uint const*,ap_uint const*,ap_uint const*,ap_u.5'.
+WARNING: [ANALYSIS 214-52] Found false inter dependency for variable 'void UpConv_Fused_Row(ap_uint*,ap_uint const*,ap_uint const*,ap_uint const*,ap_u.6'.
+WARNING: [ANALYSIS 214-52] Found false inter dependency for variable 'void UpConv_Fused_Row(ap_uint*,ap_uint const*,ap_uint const*,ap_uint const*,ap_u.7'.
+WARNING: [ANALYSIS 214-52] Found false inter dependency for variable 'void UpConv_Fused_Row(ap_uint*,ap_uint const*,ap_uint const*,ap_uint const*,ap_u.8'.
+WARNING: [ANALYSIS 214-52] Found false inter dependency for variable 'void UpConv_Fused_Row(ap_uint*,ap_uint const*,ap_uint const*,ap_uint const*,ap_u.9'.
+INFO: [HLS 200-111] Finished Architecture Synthesis: CPU user time: 0.54 seconds. CPU system time: 0.04 seconds. Elapsed time: 0.58 seconds; current allocated memory: 475.371 MB.
+INFO: [HLS 200-10] Starting hardware synthesis ...
+INFO: [HLS 200-10] Synthesizing 'upconv_core_top' ...
+WARNING: [SYN 201-103] Legalizing function name 'UpConv_Fused_Row<8>_Pipeline_RESET_ROW_ACC' to 'UpConv_Fused_Row_8_Pipeline_RESET_ROW_ACC'.
+WARNING: [SYN 201-103] Legalizing function name 'UpConv_Fused_Row<8>_Pipeline_W_FLAT' to 'UpConv_Fused_Row_8_Pipeline_W_FLAT'.
+WARNING: [SYN 201-103] Legalizing function name 'UpConv_Fused_Row<8>_Pipeline_KW_LOOP_FLAT_LOOP' to 'UpConv_Fused_Row_8_Pipeline_KW_LOOP_FLAT_LOOP'.
+WARNING: [SYN 201-103] Legalizing function name 'UpConv_Fused_Row<8>_Outline_TILE_LOOP' to 'UpConv_Fused_Row_8_Outline_TILE_LOOP'.
+WARNING: [SYN 201-103] Legalizing function name 'UpConv_Fused_Row<8>_Pipeline_LOAD_B' to 'UpConv_Fused_Row_8_Pipeline_LOAD_B'.
+WARNING: [SYN 201-103] Legalizing function name 'UpConv_Fused_Row<8>_Pipeline_LOAD_G' to 'UpConv_Fused_Row_8_Pipeline_LOAD_G'.
+WARNING: [SYN 201-103] Legalizing function name 'UpConv_Fused_Row<8>_Pipeline_LOAD_BE' to 'UpConv_Fused_Row_8_Pipeline_LOAD_BE'.
+WARNING: [SYN 201-103] Legalizing function name 'UpConv_Fused_Row<8>_Pipeline_PIXEL_STATS' to 'UpConv_Fused_Row_8_Pipeline_PIXEL_STATS'.
+WARNING: [SYN 201-103] Legalizing function name 'UpConv_Fused_Row<8>_Pipeline_PIXEL_NORM' to 'UpConv_Fused_Row_8_Pipeline_PIXEL_NORM'.
+WARNING: [SYN 201-103] Legalizing function name 'UpConv_Fused_Row<8>' to 'UpConv_Fused_Row_8_s'.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'upconv_core_top_Pipeline_LOAD_ROW0_VITIS_LOOP_403_1' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln406) to 3 in order to utilize available DSP registers.
+WARNING: [HLS 200-2042] Usage of URAM can potentially cause worse II as Vitis HLS does not exploit read-first mode for URAMs. Consider using BRAMs instead.
+INFO: [SCHED 204-61] Pipelining loop 'LOAD_ROW0_VITIS_LOOP_403_1'.
+INFO: [HLS 200-1470] Pipelining result : Target II = 1, Final II = 1, Depth = 5, loop 'LOAD_ROW0_VITIS_LOOP_403_1'
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0.08 seconds. CPU system time: 0.02 seconds. Elapsed time: 0.11 seconds; current allocated memory: 477.043 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0.02 seconds. CPU system time: 0 seconds. Elapsed time: 0.01 seconds; current allocated memory: 477.043 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'UpConv_Fused_Row_8_Pipeline_RESET_ROW_ACC' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+WARNING: [HLS 200-2042] Usage of URAM can potentially cause worse II as Vitis HLS does not exploit read-first mode for URAMs. Consider using BRAMs instead.
+WARNING: [HLS 200-2042] Usage of URAM can potentially cause worse II as Vitis HLS does not exploit read-first mode for URAMs. Consider using BRAMs instead.
+WARNING: [HLS 200-2042] Usage of URAM can potentially cause worse II as Vitis HLS does not exploit read-first mode for URAMs. Consider using BRAMs instead.
+WARNING: [HLS 200-2042] Usage of URAM can potentially cause worse II as Vitis HLS does not exploit read-first mode for URAMs. Consider using BRAMs instead.
+WARNING: [HLS 200-2042] Usage of URAM can potentially cause worse II as Vitis HLS does not exploit read-first mode for URAMs. Consider using BRAMs instead.
+WARNING: [HLS 200-2042] Usage of URAM can potentially cause worse II as Vitis HLS does not exploit read-first mode for URAMs. Consider using BRAMs instead.
+WARNING: [HLS 200-2042] Usage of URAM can potentially cause worse II as Vitis HLS does not exploit read-first mode for URAMs. Consider using BRAMs instead.
+WARNING: [HLS 200-2042] Usage of URAM can potentially cause worse II as Vitis HLS does not exploit read-first mode for URAMs. Consider using BRAMs instead.
+WARNING: [HLS 200-2042] Usage of URAM can potentially cause worse II as Vitis HLS does not exploit read-first mode for URAMs. Consider using BRAMs instead.
+WARNING: [HLS 200-2042] Usage of URAM can potentially cause worse II as Vitis HLS does not exploit read-first mode for URAMs. Consider using BRAMs instead.
+WARNING: [HLS 200-2042] Usage of URAM can potentially cause worse II as Vitis HLS does not exploit read-first mode for URAMs. Consider using BRAMs instead.
+WARNING: [HLS 200-2042] Usage of URAM can potentially cause worse II as Vitis HLS does not exploit read-first mode for URAMs. Consider using BRAMs instead.
+WARNING: [HLS 200-2042] Usage of URAM can potentially cause worse II as Vitis HLS does not exploit read-first mode for URAMs. Consider using BRAMs instead.
+WARNING: [HLS 200-2042] Usage of URAM can potentially cause worse II as Vitis HLS does not exploit read-first mode for URAMs. Consider using BRAMs instead.
+WARNING: [HLS 200-2042] Usage of URAM can potentially cause worse II as Vitis HLS does not exploit read-first mode for URAMs. Consider using BRAMs instead.
+WARNING: [HLS 200-2042] Usage of URAM can potentially cause worse II as Vitis HLS does not exploit read-first mode for URAMs. Consider using BRAMs instead.
+INFO: [SCHED 204-61] Pipelining loop 'RESET_ROW_ACC'.
+INFO: [HLS 200-1470] Pipelining result : Target II = 1, Final II = 1, Depth = 2, loop 'RESET_ROW_ACC'
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0.06 seconds. CPU system time: 0.01 seconds. Elapsed time: 0.07 seconds; current allocated memory: 477.613 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0.01 seconds. CPU system time: 0 seconds. Elapsed time: 0.02 seconds; current allocated memory: 477.613 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'UpConv_Fused_Row_8_Pipeline_W_FLAT' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-61] Pipelining loop 'W_FLAT'.
+INFO: [HLS 200-1470] Pipelining result : Target II = 1, Final II = 1, Depth = 3, loop 'W_FLAT'
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0.04 seconds. CPU system time: 0 seconds. Elapsed time: 0.04 seconds; current allocated memory: 478.246 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0.02 seconds. CPU system time: 0 seconds. Elapsed time: 0.02 seconds; current allocated memory: 478.246 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'UpConv_Fused_Row_8_Pipeline_KW_LOOP_FLAT_LOOP' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [HLS 200-486] Changing DSP latency (root=add41_i) to 3 in order to utilize available DSP registers.
+WARNING: [HLS 200-2042] Usage of URAM can potentially cause worse II as Vitis HLS does not exploit read-first mode for URAMs. Consider using BRAMs instead.
+WARNING: [HLS 200-2042] Usage of URAM can potentially cause worse II as Vitis HLS does not exploit read-first mode for URAMs. Consider using BRAMs instead.
+WARNING: [HLS 200-2042] Usage of URAM can potentially cause worse II as Vitis HLS does not exploit read-first mode for URAMs. Consider using BRAMs instead.
+WARNING: [HLS 200-2042] Usage of URAM can potentially cause worse II as Vitis HLS does not exploit read-first mode for URAMs. Consider using BRAMs instead.
+WARNING: [HLS 200-2042] Usage of URAM can potentially cause worse II as Vitis HLS does not exploit read-first mode for URAMs. Consider using BRAMs instead.
+WARNING: [HLS 200-2042] Usage of URAM can potentially cause worse II as Vitis HLS does not exploit read-first mode for URAMs. Consider using BRAMs instead.
+WARNING: [HLS 200-2042] Usage of URAM can potentially cause worse II as Vitis HLS does not exploit read-first mode for URAMs. Consider using BRAMs instead.
+WARNING: [HLS 200-2042] Usage of URAM can potentially cause worse II as Vitis HLS does not exploit read-first mode for URAMs. Consider using BRAMs instead.
+WARNING: [HLS 200-2042] Usage of URAM can potentially cause worse II as Vitis HLS does not exploit read-first mode for URAMs. Consider using BRAMs instead.
+WARNING: [HLS 200-2042] Usage of URAM can potentially cause worse II as Vitis HLS does not exploit read-first mode for URAMs. Consider using BRAMs instead.
+WARNING: [HLS 200-2042] Usage of URAM can potentially cause worse II as Vitis HLS does not exploit read-first mode for URAMs. Consider using BRAMs instead.
+WARNING: [HLS 200-2042] Usage of URAM can potentially cause worse II as Vitis HLS does not exploit read-first mode for URAMs. Consider using BRAMs instead.
+WARNING: [HLS 200-2042] Usage of URAM can potentially cause worse II as Vitis HLS does not exploit read-first mode for URAMs. Consider using BRAMs instead.
+WARNING: [HLS 200-2042] Usage of URAM can potentially cause worse II as Vitis HLS does not exploit read-first mode for URAMs. Consider using BRAMs instead.
+WARNING: [HLS 200-2042] Usage of URAM can potentially cause worse II as Vitis HLS does not exploit read-first mode for URAMs. Consider using BRAMs instead.
+WARNING: [HLS 200-2042] Usage of URAM can potentially cause worse II as Vitis HLS does not exploit read-first mode for URAMs. Consider using BRAMs instead.
+WARNING: [HLS 200-2042] Usage of URAM can potentially cause worse II as Vitis HLS does not exploit read-first mode for URAMs. Consider using BRAMs instead.
+WARNING: [HLS 200-2042] Usage of URAM can potentially cause worse II as Vitis HLS does not exploit read-first mode for URAMs. Consider using BRAMs instead.
+WARNING: [HLS 200-2042] Usage of URAM can potentially cause worse II as Vitis HLS does not exploit read-first mode for URAMs. Consider using BRAMs instead.
+WARNING: [HLS 200-2042] Usage of URAM can potentially cause worse II as Vitis HLS does not exploit read-first mode for URAMs. Consider using BRAMs instead.
+WARNING: [HLS 200-2042] Usage of URAM can potentially cause worse II as Vitis HLS does not exploit read-first mode for URAMs. Consider using BRAMs instead.
+WARNING: [HLS 200-2042] Usage of URAM can potentially cause worse II as Vitis HLS does not exploit read-first mode for URAMs. Consider using BRAMs instead.
+WARNING: [HLS 200-2042] Usage of URAM can potentially cause worse II as Vitis HLS does not exploit read-first mode for URAMs. Consider using BRAMs instead.
+WARNING: [HLS 200-2042] Usage of URAM can potentially cause worse II as Vitis HLS does not exploit read-first mode for URAMs. Consider using BRAMs instead.
+WARNING: [HLS 200-2042] Usage of URAM can potentially cause worse II as Vitis HLS does not exploit read-first mode for URAMs. Consider using BRAMs instead.
+WARNING: [HLS 200-2042] Usage of URAM can potentially cause worse II as Vitis HLS does not exploit read-first mode for URAMs. Consider using BRAMs instead.
+WARNING: [HLS 200-2042] Usage of URAM can potentially cause worse II as Vitis HLS does not exploit read-first mode for URAMs. Consider using BRAMs instead.
+WARNING: [HLS 200-2042] Usage of URAM can potentially cause worse II as Vitis HLS does not exploit read-first mode for URAMs. Consider using BRAMs instead.
+WARNING: [HLS 200-2042] Usage of URAM can potentially cause worse II as Vitis HLS does not exploit read-first mode for URAMs. Consider using BRAMs instead.
+WARNING: [HLS 200-2042] Usage of URAM can potentially cause worse II as Vitis HLS does not exploit read-first mode for URAMs. Consider using BRAMs instead.
+WARNING: [HLS 200-2042] Usage of URAM can potentially cause worse II as Vitis HLS does not exploit read-first mode for URAMs. Consider using BRAMs instead.
+WARNING: [HLS 200-2042] Usage of URAM can potentially cause worse II as Vitis HLS does not exploit read-first mode for URAMs. Consider using BRAMs instead.
+WARNING: [HLS 200-2042] Usage of URAM can potentially cause worse II as Vitis HLS does not exploit read-first mode for URAMs. Consider using BRAMs instead.
+INFO: [SCHED 204-61] Pipelining loop 'KW_LOOP_FLAT_LOOP'.
+INFO: [HLS 200-1470] Pipelining result : Target II = 1, Final II = 1, Depth = 119, loop 'KW_LOOP_FLAT_LOOP'
+WARNING: [HLS 200-871] Estimated clock period (2.692 ns) exceeds the target (target clock period: 3.333 ns, clock uncertainty: 0.900 ns, effective delay budget: 2.433 ns).
+Resolution: For help on HLS 200-871 see docs.xilinx.com/access/sources/dita/topic?Doc_Version=2024.2%20English&url=ug1448-hls-guidance&resourceid=200-871.html
+WARNING: [HLS 200-1016] The critical path in module 'UpConv_Fused_Row_8_Pipeline_KW_LOOP_FLAT_LOOP' consists of the following:
+	'add' operation 4 bit of DSP[174] ('k', ../gen/UpConv_Unified.tpp:134->../gen/UpConv_Unified.tpp:374) [163]  (1.696 ns)
+	'mul' operation 10 bit of DSP[174] ('w_off', ../gen/UpConv_Unified.tpp:138->../gen/UpConv_Unified.tpp:374) [165]  (0.996 ns)
+
+Resolution: For help on HLS 200-1016 see docs.xilinx.com/access/sources/dita/topic?Doc_Version=2024.2%20English&url=ug1448-hls-guidance&resourceid=200-1016.html
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0.43 seconds. CPU system time: 0.01 seconds. Elapsed time: 0.45 seconds; current allocated memory: 488.016 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0.16 seconds. CPU system time: 0.01 seconds. Elapsed time: 0.16 seconds; current allocated memory: 489.000 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'UpConv_Fused_Row_8_Outline_TILE_LOOP' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0.12 seconds. CPU system time: 0 seconds. Elapsed time: 0.12 seconds; current allocated memory: 490.812 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0.02 seconds. CPU system time: 0 seconds. Elapsed time: 0.03 seconds; current allocated memory: 490.812 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'UpConv_Fused_Row_8_Pipeline_LOAD_B' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-61] Pipelining loop 'LOAD_B'.
+INFO: [HLS 200-1470] Pipelining result : Target II = 1, Final II = 1, Depth = 3, loop 'LOAD_B'
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0.04 seconds. CPU system time: 0 seconds. Elapsed time: 0.05 seconds; current allocated memory: 491.582 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0.01 seconds. CPU system time: 0 seconds. Elapsed time: 0.02 seconds; current allocated memory: 491.582 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'UpConv_Fused_Row_8_Pipeline_LOAD_G' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-61] Pipelining loop 'LOAD_G'.
+INFO: [HLS 200-1470] Pipelining result : Target II = 1, Final II = 1, Depth = 3, loop 'LOAD_G'
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0.03 seconds. CPU system time: 0.01 seconds. Elapsed time: 0.03 seconds; current allocated memory: 491.781 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0.01 seconds. CPU system time: 0 seconds. Elapsed time: 0.01 seconds; current allocated memory: 491.781 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'UpConv_Fused_Row_8_Pipeline_LOAD_BE' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-61] Pipelining loop 'LOAD_BE'.
+INFO: [HLS 200-1470] Pipelining result : Target II = 1, Final II = 1, Depth = 3, loop 'LOAD_BE'
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0.02 seconds. CPU system time: 0 seconds. Elapsed time: 0.03 seconds; current allocated memory: 492.148 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0.01 seconds. CPU system time: 0 seconds. Elapsed time: 0.02 seconds; current allocated memory: 492.148 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'UpConv_Fused_Row_8_Pipeline_PIXEL_STATS' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+WARNING: [HLS 200-2042] Usage of URAM can potentially cause worse II as Vitis HLS does not exploit read-first mode for URAMs. Consider using BRAMs instead.
+WARNING: [HLS 200-2042] Usage of URAM can potentially cause worse II as Vitis HLS does not exploit read-first mode for URAMs. Consider using BRAMs instead.
+WARNING: [HLS 200-2042] Usage of URAM can potentially cause worse II as Vitis HLS does not exploit read-first mode for URAMs. Consider using BRAMs instead.
+WARNING: [HLS 200-2042] Usage of URAM can potentially cause worse II as Vitis HLS does not exploit read-first mode for URAMs. Consider using BRAMs instead.
+WARNING: [HLS 200-2042] Usage of URAM can potentially cause worse II as Vitis HLS does not exploit read-first mode for URAMs. Consider using BRAMs instead.
+WARNING: [HLS 200-2042] Usage of URAM can potentially cause worse II as Vitis HLS does not exploit read-first mode for URAMs. Consider using BRAMs instead.
+WARNING: [HLS 200-2042] Usage of URAM can potentially cause worse II as Vitis HLS does not exploit read-first mode for URAMs. Consider using BRAMs instead.
+WARNING: [HLS 200-2042] Usage of URAM can potentially cause worse II as Vitis HLS does not exploit read-first mode for URAMs. Consider using BRAMs instead.
+WARNING: [HLS 200-2042] Usage of URAM can potentially cause worse II as Vitis HLS does not exploit read-first mode for URAMs. Consider using BRAMs instead.
+WARNING: [HLS 200-2042] Usage of URAM can potentially cause worse II as Vitis HLS does not exploit read-first mode for URAMs. Consider using BRAMs instead.
+WARNING: [HLS 200-2042] Usage of URAM can potentially cause worse II as Vitis HLS does not exploit read-first mode for URAMs. Consider using BRAMs instead.
+WARNING: [HLS 200-2042] Usage of URAM can potentially cause worse II as Vitis HLS does not exploit read-first mode for URAMs. Consider using BRAMs instead.
+WARNING: [HLS 200-2042] Usage of URAM can potentially cause worse II as Vitis HLS does not exploit read-first mode for URAMs. Consider using BRAMs instead.
+WARNING: [HLS 200-2042] Usage of URAM can potentially cause worse II as Vitis HLS does not exploit read-first mode for URAMs. Consider using BRAMs instead.
+WARNING: [HLS 200-2042] Usage of URAM can potentially cause worse II as Vitis HLS does not exploit read-first mode for URAMs. Consider using BRAMs instead.
+WARNING: [HLS 200-2042] Usage of URAM can potentially cause worse II as Vitis HLS does not exploit read-first mode for URAMs. Consider using BRAMs instead.
+WARNING: [HLS 200-2042] Usage of URAM can potentially cause worse II as Vitis HLS does not exploit read-first mode for URAMs. Consider using BRAMs instead.
+WARNING: [HLS 200-2042] Usage of URAM can potentially cause worse II as Vitis HLS does not exploit read-first mode for URAMs. Consider using BRAMs instead.
+WARNING: [HLS 200-2042] Usage of URAM can potentially cause worse II as Vitis HLS does not exploit read-first mode for URAMs. Consider using BRAMs instead.
+WARNING: [HLS 200-2042] Usage of URAM can potentially cause worse II as Vitis HLS does not exploit read-first mode for URAMs. Consider using BRAMs instead.
+WARNING: [HLS 200-2042] Usage of URAM can potentially cause worse II as Vitis HLS does not exploit read-first mode for URAMs. Consider using BRAMs instead.
+WARNING: [HLS 200-2042] Usage of URAM can potentially cause worse II as Vitis HLS does not exploit read-first mode for URAMs. Consider using BRAMs instead.
+WARNING: [HLS 200-2042] Usage of URAM can potentially cause worse II as Vitis HLS does not exploit read-first mode for URAMs. Consider using BRAMs instead.
+WARNING: [HLS 200-2042] Usage of URAM can potentially cause worse II as Vitis HLS does not exploit read-first mode for URAMs. Consider using BRAMs instead.
+WARNING: [HLS 200-2042] Usage of URAM can potentially cause worse II as Vitis HLS does not exploit read-first mode for URAMs. Consider using BRAMs instead.
+WARNING: [HLS 200-2042] Usage of URAM can potentially cause worse II as Vitis HLS does not exploit read-first mode for URAMs. Consider using BRAMs instead.
+WARNING: [HLS 200-2042] Usage of URAM can potentially cause worse II as Vitis HLS does not exploit read-first mode for URAMs. Consider using BRAMs instead.
+WARNING: [HLS 200-2042] Usage of URAM can potentially cause worse II as Vitis HLS does not exploit read-first mode for URAMs. Consider using BRAMs instead.
+WARNING: [HLS 200-2042] Usage of URAM can potentially cause worse II as Vitis HLS does not exploit read-first mode for URAMs. Consider using BRAMs instead.
+WARNING: [HLS 200-2042] Usage of URAM can potentially cause worse II as Vitis HLS does not exploit read-first mode for URAMs. Consider using BRAMs instead.
+WARNING: [HLS 200-2042] Usage of URAM can potentially cause worse II as Vitis HLS does not exploit read-first mode for URAMs. Consider using BRAMs instead.
+WARNING: [HLS 200-2042] Usage of URAM can potentially cause worse II as Vitis HLS does not exploit read-first mode for URAMs. Consider using BRAMs instead.
+INFO: [SCHED 204-61] Pipelining loop 'PIXEL_STATS'.
+INFO: [HLS 200-1470] Pipelining result : Target II = 1, Final II = 1, Depth = 230, loop 'PIXEL_STATS'
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0.22 seconds. CPU system time: 0.01 seconds. Elapsed time: 0.23 seconds; current allocated memory: 495.727 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0.05 seconds. CPU system time: 0 seconds. Elapsed time: 0.05 seconds; current allocated memory: 495.820 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'UpConv_Fused_Row_8_Pipeline_PIXEL_NORM' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+WARNING: [HLS 200-2042] Usage of URAM can potentially cause worse II as Vitis HLS does not exploit read-first mode for URAMs. Consider using BRAMs instead.
+WARNING: [HLS 200-2042] Usage of URAM can potentially cause worse II as Vitis HLS does not exploit read-first mode for URAMs. Consider using BRAMs instead.
+WARNING: [HLS 200-2042] Usage of URAM can potentially cause worse II as Vitis HLS does not exploit read-first mode for URAMs. Consider using BRAMs instead.
+WARNING: [HLS 200-2042] Usage of URAM can potentially cause worse II as Vitis HLS does not exploit read-first mode for URAMs. Consider using BRAMs instead.
+WARNING: [HLS 200-2042] Usage of URAM can potentially cause worse II as Vitis HLS does not exploit read-first mode for URAMs. Consider using BRAMs instead.
+WARNING: [HLS 200-2042] Usage of URAM can potentially cause worse II as Vitis HLS does not exploit read-first mode for URAMs. Consider using BRAMs instead.
+WARNING: [HLS 200-2042] Usage of URAM can potentially cause worse II as Vitis HLS does not exploit read-first mode for URAMs. Consider using BRAMs instead.
+WARNING: [HLS 200-2042] Usage of URAM can potentially cause worse II as Vitis HLS does not exploit read-first mode for URAMs. Consider using BRAMs instead.
+WARNING: [HLS 200-2042] Usage of URAM can potentially cause worse II as Vitis HLS does not exploit read-first mode for URAMs. Consider using BRAMs instead.
+WARNING: [HLS 200-2042] Usage of URAM can potentially cause worse II as Vitis HLS does not exploit read-first mode for URAMs. Consider using BRAMs instead.
+WARNING: [HLS 200-2042] Usage of URAM can potentially cause worse II as Vitis HLS does not exploit read-first mode for URAMs. Consider using BRAMs instead.
+WARNING: [HLS 200-2042] Usage of URAM can potentially cause worse II as Vitis HLS does not exploit read-first mode for URAMs. Consider using BRAMs instead.
+WARNING: [HLS 200-2042] Usage of URAM can potentially cause worse II as Vitis HLS does not exploit read-first mode for URAMs. Consider using BRAMs instead.
+WARNING: [HLS 200-2042] Usage of URAM can potentially cause worse II as Vitis HLS does not exploit read-first mode for URAMs. Consider using BRAMs instead.
+WARNING: [HLS 200-2042] Usage of URAM can potentially cause worse II as Vitis HLS does not exploit read-first mode for URAMs. Consider using BRAMs instead.
+WARNING: [HLS 200-2042] Usage of URAM can potentially cause worse II as Vitis HLS does not exploit read-first mode for URAMs. Consider using BRAMs instead.
+INFO: [SCHED 204-61] Pipelining loop 'PIXEL_NORM'.
+INFO: [HLS 200-1470] Pipelining result : Target II = 1, Final II = 1, Depth = 31, loop 'PIXEL_NORM'
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0.22 seconds. CPU system time: 0.01 seconds. Elapsed time: 0.21 seconds; current allocated memory: 499.465 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0.04 seconds. CPU system time: 0 seconds. Elapsed time: 0.05 seconds; current allocated memory: 499.867 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'UpConv_Fused_Row_8_s' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+WARNING: [HLS 200-871] Estimated clock period (3.239 ns) exceeds the target (target clock period: 3.333 ns, clock uncertainty: 0.900 ns, effective delay budget: 2.433 ns).
+Resolution: For help on HLS 200-871 see docs.xilinx.com/access/sources/dita/topic?Doc_Version=2024.2%20English&url=ug1448-hls-guidance&resourceid=200-871.html
+WARNING: [HLS 200-1016] The critical path in module 'UpConv_Fused_Row_8_s' consists of the following:
+	'sitofp' operation 32 bit ('conv39_i') [122]  (3.239 ns)
+
+Resolution: For help on HLS 200-1016 see docs.xilinx.com/access/sources/dita/topic?Doc_Version=2024.2%20English&url=ug1448-hls-guidance&resourceid=200-1016.html
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0.06 seconds. CPU system time: 0.01 seconds. Elapsed time: 0.08 seconds; current allocated memory: 501.059 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0.04 seconds. CPU system time: 0 seconds. Elapsed time: 0.05 seconds; current allocated memory: 501.676 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'upconv_core_top_Pipeline_LOAD_ROW_VITIS_LOOP_417_2' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln420) to 3 in order to utilize available DSP registers.
+WARNING: [HLS 200-2042] Usage of URAM can potentially cause worse II as Vitis HLS does not exploit read-first mode for URAMs. Consider using BRAMs instead.
+INFO: [SCHED 204-61] Pipelining loop 'LOAD_ROW_VITIS_LOOP_417_2'.
+INFO: [HLS 200-1470] Pipelining result : Target II = 1, Final II = 1, Depth = 6, loop 'LOAD_ROW_VITIS_LOOP_417_2'
+WARNING: [HLS 200-871] Estimated clock period (2.692 ns) exceeds the target (target clock period: 3.333 ns, clock uncertainty: 0.900 ns, effective delay budget: 2.433 ns).
+Resolution: For help on HLS 200-871 see docs.xilinx.com/access/sources/dita/topic?Doc_Version=2024.2%20English&url=ug1448-hls-guidance&resourceid=200-871.html
+WARNING: [HLS 200-1016] The critical path in module 'upconv_core_top_Pipeline_LOAD_ROW_VITIS_LOOP_417_2' consists of the following:
+	'add' operation 8 bit of DSP[45] ('empty_53', ../gen/UpConv_Unified.tpp:415->../gen/upconv_core_top.cpp:57) [40]  (1.696 ns)
+	'mul' operation 11 bit of DSP[45] ('mul_ln417', ../gen/UpConv_Unified.tpp:417->../gen/upconv_core_top.cpp:57) [42]  (0.996 ns)
+
+Resolution: For help on HLS 200-1016 see docs.xilinx.com/access/sources/dita/topic?Doc_Version=2024.2%20English&url=ug1448-hls-guidance&resourceid=200-1016.html
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0.07 seconds. CPU system time: 0.01 seconds. Elapsed time: 0.08 seconds; current allocated memory: 502.695 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0.01 seconds. CPU system time: 0 seconds. Elapsed time: 0.02 seconds; current allocated memory: 502.695 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'upconv_core_top' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln414) to 3 in order to utilize available DSP registers.
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0.04 seconds. CPU system time: 0 seconds. Elapsed time: 0.04 seconds; current allocated memory: 503.129 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0.04 seconds. CPU system time: 0 seconds. Elapsed time: 0.04 seconds; current allocated memory: 503.461 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'upconv_core_top_Pipeline_LOAD_ROW0_VITIS_LOOP_403_1' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-1030] Apply Unified Pipeline Control on module 'upconv_core_top_Pipeline_LOAD_ROW0_VITIS_LOOP_403_1' pipeline 'LOAD_ROW0_VITIS_LOOP_403_1' pipeline type 'loop pipeline'
+WARNING: [RTGEN 206-101] Setting dangling out port 'upconv_core_top_Pipeline_LOAD_ROW0_VITIS_LOOP_403_1/m_axi_gmem_in_0_ARVALID' to 0.
+WARNING: [RTGEN 206-101] Setting dangling out port 'upconv_core_top_Pipeline_LOAD_ROW0_VITIS_LOOP_403_1/m_axi_gmem_in_0_ARADDR' to 0.
+WARNING: [RTGEN 206-101] Setting dangling out port 'upconv_core_top_Pipeline_LOAD_ROW0_VITIS_LOOP_403_1/m_axi_gmem_in_0_ARID' to 0.
+WARNING: [RTGEN 206-101] Setting dangling out port 'upconv_core_top_Pipeline_LOAD_ROW0_VITIS_LOOP_403_1/m_axi_gmem_in_0_ARLEN' to 0.
+WARNING: [RTGEN 206-101] Setting dangling out port 'upconv_core_top_Pipeline_LOAD_ROW0_VITIS_LOOP_403_1/m_axi_gmem_in_0_ARSIZE' to 0.
+WARNING: [RTGEN 206-101] Setting dangling out port 'upconv_core_top_Pipeline_LOAD_ROW0_VITIS_LOOP_403_1/m_axi_gmem_in_0_ARBURST' to 0.
+WARNING: [RTGEN 206-101] Setting dangling out port 'upconv_core_top_Pipeline_LOAD_ROW0_VITIS_LOOP_403_1/m_axi_gmem_in_0_ARLOCK' to 0.
+WARNING: [RTGEN 206-101] Setting dangling out port 'upconv_core_top_Pipeline_LOAD_ROW0_VITIS_LOOP_403_1/m_axi_gmem_in_0_ARCACHE' to 0.
+WARNING: [RTGEN 206-101] Setting dangling out port 'upconv_core_top_Pipeline_LOAD_ROW0_VITIS_LOOP_403_1/m_axi_gmem_in_0_ARPROT' to 0.
+WARNING: [RTGEN 206-101] Setting dangling out port 'upconv_core_top_Pipeline_LOAD_ROW0_VITIS_LOOP_403_1/m_axi_gmem_in_0_ARQOS' to 0.
+WARNING: [RTGEN 206-101] Setting dangling out port 'upconv_core_top_Pipeline_LOAD_ROW0_VITIS_LOOP_403_1/m_axi_gmem_in_0_ARREGION' to 0.
+WARNING: [RTGEN 206-101] Setting dangling out port 'upconv_core_top_Pipeline_LOAD_ROW0_VITIS_LOOP_403_1/m_axi_gmem_in_0_ARUSER' to 0.
+INFO: [RTGEN 206-100] Generating core module 'mac_muladd_8ns_6ns_6ns_11_4_1': 1 instance(s).
+INFO: [RTGEN 206-100] Finished creating RTL model for 'upconv_core_top_Pipeline_LOAD_ROW0_VITIS_LOOP_403_1'.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0.1 seconds. CPU system time: 0.01 seconds. Elapsed time: 0.11 seconds; current allocated memory: 504.312 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'UpConv_Fused_Row_8_Pipeline_RESET_ROW_ACC' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-1030] Apply Unified Pipeline Control on module 'UpConv_Fused_Row_8_Pipeline_RESET_ROW_ACC' pipeline 'RESET_ROW_ACC' pipeline type 'loop pipeline'
+INFO: [RTGEN 206-100] Finished creating RTL model for 'UpConv_Fused_Row_8_Pipeline_RESET_ROW_ACC'.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0.05 seconds. CPU system time: 0.01 seconds. Elapsed time: 0.06 seconds; current allocated memory: 505.965 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'UpConv_Fused_Row_8_Pipeline_W_FLAT' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-1030] Apply Unified Pipeline Control on module 'UpConv_Fused_Row_8_Pipeline_W_FLAT' pipeline 'W_FLAT' pipeline type 'loop pipeline'
+WARNING: [RTGEN 206-101] Setting dangling out port 'UpConv_Fused_Row_8_Pipeline_W_FLAT/m_axi_gmem_weight_0_ARVALID' to 0.
+WARNING: [RTGEN 206-101] Setting dangling out port 'UpConv_Fused_Row_8_Pipeline_W_FLAT/m_axi_gmem_weight_0_ARADDR' to 0.
+WARNING: [RTGEN 206-101] Setting dangling out port 'UpConv_Fused_Row_8_Pipeline_W_FLAT/m_axi_gmem_weight_0_ARID' to 0.
+WARNING: [RTGEN 206-101] Setting dangling out port 'UpConv_Fused_Row_8_Pipeline_W_FLAT/m_axi_gmem_weight_0_ARLEN' to 0.
+WARNING: [RTGEN 206-101] Setting dangling out port 'UpConv_Fused_Row_8_Pipeline_W_FLAT/m_axi_gmem_weight_0_ARSIZE' to 0.
+WARNING: [RTGEN 206-101] Setting dangling out port 'UpConv_Fused_Row_8_Pipeline_W_FLAT/m_axi_gmem_weight_0_ARBURST' to 0.
+WARNING: [RTGEN 206-101] Setting dangling out port 'UpConv_Fused_Row_8_Pipeline_W_FLAT/m_axi_gmem_weight_0_ARLOCK' to 0.
+WARNING: [RTGEN 206-101] Setting dangling out port 'UpConv_Fused_Row_8_Pipeline_W_FLAT/m_axi_gmem_weight_0_ARCACHE' to 0.
+WARNING: [RTGEN 206-101] Setting dangling out port 'UpConv_Fused_Row_8_Pipeline_W_FLAT/m_axi_gmem_weight_0_ARPROT' to 0.
+WARNING: [RTGEN 206-101] Setting dangling out port 'UpConv_Fused_Row_8_Pipeline_W_FLAT/m_axi_gmem_weight_0_ARQOS' to 0.
+WARNING: [RTGEN 206-101] Setting dangling out port 'UpConv_Fused_Row_8_Pipeline_W_FLAT/m_axi_gmem_weight_0_ARREGION' to 0.
+WARNING: [RTGEN 206-101] Setting dangling out port 'UpConv_Fused_Row_8_Pipeline_W_FLAT/m_axi_gmem_weight_0_ARUSER' to 0.
+INFO: [RTGEN 206-100] Finished creating RTL model for 'UpConv_Fused_Row_8_Pipeline_W_FLAT'.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0.09 seconds. CPU system time: 0 seconds. Elapsed time: 0.09 seconds; current allocated memory: 507.879 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'UpConv_Fused_Row_8_Pipeline_KW_LOOP_FLAT_LOOP' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-1030] Apply Unified Pipeline Control on module 'UpConv_Fused_Row_8_Pipeline_KW_LOOP_FLAT_LOOP' pipeline 'KW_LOOP_FLAT_LOOP' pipeline type 'loop pipeline'
+INFO: [RTGEN 206-104] Estimated max fanout for 'UpConv_Fused_Row_8_Pipeline_KW_LOOP_FLAT_LOOP' is 87026 from HDL expression: (1'b0 == ap_block_pp0_stage0_11001)
+INFO: [RTGEN 206-100] Generating core module 'ama_addmuladd_2ns_3ns_6ns_10ns_10_4_1': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'hadd_16ns_16ns_16_5_full_dsp_1': 168 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'hmul_16ns_16ns_16_4_max_dsp_1': 128 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'sparsemux_9_2_16_1_1': 8 instance(s).
+INFO: [RTGEN 206-100] Finished creating RTL model for 'UpConv_Fused_Row_8_Pipeline_KW_LOOP_FLAT_LOOP'.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0.59 seconds. CPU system time: 0.03 seconds. Elapsed time: 0.62 seconds; current allocated memory: 544.707 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'UpConv_Fused_Row_8_Outline_TILE_LOOP' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [RTGEN 206-100] Generating core module 'hadd_16ns_16ns_16_5_full_dsp_1': 16 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'hmul_16ns_16ns_16_4_max_dsp_1': 32 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'mul_13ns_6ns_18_1_1': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'mul_8ns_6ns_11_1_1': 1 instance(s).
+INFO: [RTGEN 206-100] Finished creating RTL model for 'UpConv_Fused_Row_8_Outline_TILE_LOOP'.
+INFO: [RTMG 210-278] Implementing memory 'upconv_core_top_UpConv_Fused_Row_8_Outline_TILE_LOOP_w_local_7_RAM_T2P_BRAM_2R1W' using block RAMs.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0.55 seconds. CPU system time: 0.02 seconds. Elapsed time: 0.57 seconds; current allocated memory: 563.105 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'UpConv_Fused_Row_8_Pipeline_LOAD_B' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-1030] Apply Unified Pipeline Control on module 'UpConv_Fused_Row_8_Pipeline_LOAD_B' pipeline 'LOAD_B' pipeline type 'loop pipeline'
+WARNING: [RTGEN 206-101] Setting dangling out port 'UpConv_Fused_Row_8_Pipeline_LOAD_B/m_axi_gmem_param_0_ARVALID' to 0.
+WARNING: [RTGEN 206-101] Setting dangling out port 'UpConv_Fused_Row_8_Pipeline_LOAD_B/m_axi_gmem_param_0_ARADDR' to 0.
+WARNING: [RTGEN 206-101] Setting dangling out port 'UpConv_Fused_Row_8_Pipeline_LOAD_B/m_axi_gmem_param_0_ARID' to 0.
+WARNING: [RTGEN 206-101] Setting dangling out port 'UpConv_Fused_Row_8_Pipeline_LOAD_B/m_axi_gmem_param_0_ARLEN' to 0.
+WARNING: [RTGEN 206-101] Setting dangling out port 'UpConv_Fused_Row_8_Pipeline_LOAD_B/m_axi_gmem_param_0_ARSIZE' to 0.
+WARNING: [RTGEN 206-101] Setting dangling out port 'UpConv_Fused_Row_8_Pipeline_LOAD_B/m_axi_gmem_param_0_ARBURST' to 0.
+WARNING: [RTGEN 206-101] Setting dangling out port 'UpConv_Fused_Row_8_Pipeline_LOAD_B/m_axi_gmem_param_0_ARLOCK' to 0.
+WARNING: [RTGEN 206-101] Setting dangling out port 'UpConv_Fused_Row_8_Pipeline_LOAD_B/m_axi_gmem_param_0_ARCACHE' to 0.
+WARNING: [RTGEN 206-101] Setting dangling out port 'UpConv_Fused_Row_8_Pipeline_LOAD_B/m_axi_gmem_param_0_ARPROT' to 0.
+WARNING: [RTGEN 206-101] Setting dangling out port 'UpConv_Fused_Row_8_Pipeline_LOAD_B/m_axi_gmem_param_0_ARQOS' to 0.
+WARNING: [RTGEN 206-101] Setting dangling out port 'UpConv_Fused_Row_8_Pipeline_LOAD_B/m_axi_gmem_param_0_ARREGION' to 0.
+WARNING: [RTGEN 206-101] Setting dangling out port 'UpConv_Fused_Row_8_Pipeline_LOAD_B/m_axi_gmem_param_0_ARUSER' to 0.
+INFO: [RTGEN 206-100] Finished creating RTL model for 'UpConv_Fused_Row_8_Pipeline_LOAD_B'.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0.14 seconds. CPU system time: 0 seconds. Elapsed time: 0.14 seconds; current allocated memory: 566.023 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'UpConv_Fused_Row_8_Pipeline_LOAD_G' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-1030] Apply Unified Pipeline Control on module 'UpConv_Fused_Row_8_Pipeline_LOAD_G' pipeline 'LOAD_G' pipeline type 'loop pipeline'
+WARNING: [RTGEN 206-101] Setting dangling out port 'UpConv_Fused_Row_8_Pipeline_LOAD_G/m_axi_gmem_param_0_ARVALID' to 0.
+WARNING: [RTGEN 206-101] Setting dangling out port 'UpConv_Fused_Row_8_Pipeline_LOAD_G/m_axi_gmem_param_0_ARADDR' to 0.
+WARNING: [RTGEN 206-101] Setting dangling out port 'UpConv_Fused_Row_8_Pipeline_LOAD_G/m_axi_gmem_param_0_ARID' to 0.
+WARNING: [RTGEN 206-101] Setting dangling out port 'UpConv_Fused_Row_8_Pipeline_LOAD_G/m_axi_gmem_param_0_ARLEN' to 0.
+WARNING: [RTGEN 206-101] Setting dangling out port 'UpConv_Fused_Row_8_Pipeline_LOAD_G/m_axi_gmem_param_0_ARSIZE' to 0.
+WARNING: [RTGEN 206-101] Setting dangling out port 'UpConv_Fused_Row_8_Pipeline_LOAD_G/m_axi_gmem_param_0_ARBURST' to 0.
+WARNING: [RTGEN 206-101] Setting dangling out port 'UpConv_Fused_Row_8_Pipeline_LOAD_G/m_axi_gmem_param_0_ARLOCK' to 0.
+WARNING: [RTGEN 206-101] Setting dangling out port 'UpConv_Fused_Row_8_Pipeline_LOAD_G/m_axi_gmem_param_0_ARCACHE' to 0.
+WARNING: [RTGEN 206-101] Setting dangling out port 'UpConv_Fused_Row_8_Pipeline_LOAD_G/m_axi_gmem_param_0_ARPROT' to 0.
+WARNING: [RTGEN 206-101] Setting dangling out port 'UpConv_Fused_Row_8_Pipeline_LOAD_G/m_axi_gmem_param_0_ARQOS' to 0.
+WARNING: [RTGEN 206-101] Setting dangling out port 'UpConv_Fused_Row_8_Pipeline_LOAD_G/m_axi_gmem_param_0_ARREGION' to 0.
+WARNING: [RTGEN 206-101] Setting dangling out port 'UpConv_Fused_Row_8_Pipeline_LOAD_G/m_axi_gmem_param_0_ARUSER' to 0.
+INFO: [RTGEN 206-100] Finished creating RTL model for 'UpConv_Fused_Row_8_Pipeline_LOAD_G'.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0.08 seconds. CPU system time: 0.01 seconds. Elapsed time: 0.09 seconds; current allocated memory: 566.953 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'UpConv_Fused_Row_8_Pipeline_LOAD_BE' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-1030] Apply Unified Pipeline Control on module 'UpConv_Fused_Row_8_Pipeline_LOAD_BE' pipeline 'LOAD_BE' pipeline type 'loop pipeline'
+WARNING: [RTGEN 206-101] Setting dangling out port 'UpConv_Fused_Row_8_Pipeline_LOAD_BE/m_axi_gmem_param_0_ARVALID' to 0.
+WARNING: [RTGEN 206-101] Setting dangling out port 'UpConv_Fused_Row_8_Pipeline_LOAD_BE/m_axi_gmem_param_0_ARADDR' to 0.
+WARNING: [RTGEN 206-101] Setting dangling out port 'UpConv_Fused_Row_8_Pipeline_LOAD_BE/m_axi_gmem_param_0_ARID' to 0.
+WARNING: [RTGEN 206-101] Setting dangling out port 'UpConv_Fused_Row_8_Pipeline_LOAD_BE/m_axi_gmem_param_0_ARLEN' to 0.
+WARNING: [RTGEN 206-101] Setting dangling out port 'UpConv_Fused_Row_8_Pipeline_LOAD_BE/m_axi_gmem_param_0_ARSIZE' to 0.
+WARNING: [RTGEN 206-101] Setting dangling out port 'UpConv_Fused_Row_8_Pipeline_LOAD_BE/m_axi_gmem_param_0_ARBURST' to 0.
+WARNING: [RTGEN 206-101] Setting dangling out port 'UpConv_Fused_Row_8_Pipeline_LOAD_BE/m_axi_gmem_param_0_ARLOCK' to 0.
+WARNING: [RTGEN 206-101] Setting dangling out port 'UpConv_Fused_Row_8_Pipeline_LOAD_BE/m_axi_gmem_param_0_ARCACHE' to 0.
+WARNING: [RTGEN 206-101] Setting dangling out port 'UpConv_Fused_Row_8_Pipeline_LOAD_BE/m_axi_gmem_param_0_ARPROT' to 0.
+WARNING: [RTGEN 206-101] Setting dangling out port 'UpConv_Fused_Row_8_Pipeline_LOAD_BE/m_axi_gmem_param_0_ARQOS' to 0.
+WARNING: [RTGEN 206-101] Setting dangling out port 'UpConv_Fused_Row_8_Pipeline_LOAD_BE/m_axi_gmem_param_0_ARREGION' to 0.
+WARNING: [RTGEN 206-101] Setting dangling out port 'UpConv_Fused_Row_8_Pipeline_LOAD_BE/m_axi_gmem_param_0_ARUSER' to 0.
+INFO: [RTGEN 206-100] Finished creating RTL model for 'UpConv_Fused_Row_8_Pipeline_LOAD_BE'.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0.07 seconds. CPU system time: 0.01 seconds. Elapsed time: 0.09 seconds; current allocated memory: 567.883 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'UpConv_Fused_Row_8_Pipeline_PIXEL_STATS' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-1030] Apply Unified Pipeline Control on module 'UpConv_Fused_Row_8_Pipeline_PIXEL_STATS' pipeline 'PIXEL_STATS' pipeline type 'loop pipeline'
+INFO: [RTGEN 206-104] Estimated max fanout for 'UpConv_Fused_Row_8_Pipeline_PIXEL_STATS' is 13215 from HDL expression: (1'b0 == ap_block_pp0_stage0_11001)
+INFO: [RTGEN 206-100] Generating core module 'fadd_32ns_32ns_32_11_full_dsp_1': 19 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'fdiv_32ns_32ns_32_30_no_dsp_1': 3 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'fmul_32ns_32ns_32_7_max_dsp_1': 2 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'fsqrt_32ns_32ns_32_28_no_dsp_1': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'fsub_32ns_32ns_32_11_full_dsp_1': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'hadd_16ns_16ns_16_5_full_dsp_1': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'hptosp_16ns_32_2_no_dsp_1': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'partselect_16ns_256ns_32ns_16_1_1': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'sparsemux_17_3_32_1_1': 2 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'sparsemux_33_4_16_1_1': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'sptohp_32ns_16_2_no_dsp_1': 1 instance(s).
+INFO: [RTGEN 206-100] Finished creating RTL model for 'UpConv_Fused_Row_8_Pipeline_PIXEL_STATS'.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0.27 seconds. CPU system time: 0.01 seconds. Elapsed time: 0.28 seconds; current allocated memory: 580.125 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'UpConv_Fused_Row_8_Pipeline_PIXEL_NORM' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-1030] Apply Unified Pipeline Control on module 'UpConv_Fused_Row_8_Pipeline_PIXEL_NORM' pipeline 'PIXEL_NORM' pipeline type 'loop pipeline'
+INFO: [RTGEN 206-100] Generating core module 'hadd_16ns_16ns_16_5_full_dsp_1': 16 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'hcmp_16ns_16ns_1_2_no_dsp_1': 16 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'hmul_16ns_16ns_16_4_max_dsp_1': 32 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'hsub_16ns_16ns_16_5_full_dsp_1': 16 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'mul_32s_5ns_32_2_1': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'sptohp_32ns_16_2_no_dsp_1': 1 instance(s).
+INFO: [RTGEN 206-100] Finished creating RTL model for 'UpConv_Fused_Row_8_Pipeline_PIXEL_NORM'.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0.29 seconds. CPU system time: 0.01 seconds. Elapsed time: 0.3 seconds; current allocated memory: 592.508 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'UpConv_Fused_Row_8_s' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SYN 201-210] Renamed object name 'UpConv_Fused_Row_8_s_void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_9_RAM_T2P_URAM_1R1W' to 'UpConv_Fused_Row_8_s_void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_consbkb' due to the length limit 80
+INFO: [SYN 201-210] Renamed object name 'UpConv_Fused_Row_8_s_void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_8_RAM_T2P_URAM_1R1W' to 'UpConv_Fused_Row_8_s_void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_conscud' due to the length limit 80
+INFO: [SYN 201-210] Renamed object name 'UpConv_Fused_Row_8_s_void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_7_RAM_T2P_URAM_1R1W' to 'UpConv_Fused_Row_8_s_void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_consdEe' due to the length limit 80
+INFO: [SYN 201-210] Renamed object name 'UpConv_Fused_Row_8_s_void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_6_RAM_T2P_URAM_1R1W' to 'UpConv_Fused_Row_8_s_void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_conseOg' due to the length limit 80
+INFO: [SYN 201-210] Renamed object name 'UpConv_Fused_Row_8_s_void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_5_RAM_T2P_URAM_1R1W' to 'UpConv_Fused_Row_8_s_void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_consfYi' due to the length limit 80
+INFO: [SYN 201-210] Renamed object name 'UpConv_Fused_Row_8_s_void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_4_RAM_T2P_URAM_1R1W' to 'UpConv_Fused_Row_8_s_void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_consg8j' due to the length limit 80
+INFO: [SYN 201-210] Renamed object name 'UpConv_Fused_Row_8_s_void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_3_RAM_T2P_URAM_1R1W' to 'UpConv_Fused_Row_8_s_void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_conshbi' due to the length limit 80
+INFO: [SYN 201-210] Renamed object name 'UpConv_Fused_Row_8_s_void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_2_RAM_T2P_URAM_1R1W' to 'UpConv_Fused_Row_8_s_void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_consibs' due to the length limit 80
+INFO: [SYN 201-210] Renamed object name 'UpConv_Fused_Row_8_s_void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_1_RAM_T2P_URAM_1R1W' to 'UpConv_Fused_Row_8_s_void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_consjbC' due to the length limit 80
+INFO: [SYN 201-210] Renamed object name 'UpConv_Fused_Row_8_s_void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_RAM_T2P_URAM_1R1W' to 'UpConv_Fused_Row_8_s_void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_conskbM' due to the length limit 80
+INFO: [SYN 201-210] Renamed object name 'UpConv_Fused_Row_8_s_void_UpConv_Fused_Row_8_ap_uint_256_ap_uint_256_const_ap_uint_256_const_ap_uint_256_const_ap_uint_256_const_ap_uint_256_decimal16_int_int_int_int_int_row_acc_RAM_T2P_URAM_1R1W' to 'UpConv_Fused_Row_8_s_void_UpConv_Fused_Row_8_ap_uint_256_ap_uint_256_const_aplbW' due to the length limit 80
+INFO: [SYN 201-210] Renamed object name 'UpConv_Fused_Row_8_s_void_UpConv_Fused_Row_8_ap_uint_256_ap_uint_256_const_ap_uint_256_const_ap_uint_256_const_ap_uint_256_const_ap_uint_256_decimal16_int_int_int_int_int_row_acc_0_RAM_T2P_URAM_1R1W' to 'UpConv_Fused_Row_8_s_void_UpConv_Fused_Row_8_ap_uint_256_ap_uint_256_const_apmb6' due to the length limit 80
+INFO: [SYN 201-210] Renamed object name 'UpConv_Fused_Row_8_s_void_UpConv_Fused_Row_8_ap_uint_256_ap_uint_256_const_ap_uint_256_const_ap_uint_256_const_ap_uint_256_const_ap_uint_256_decimal16_int_int_int_int_int_row_acc_1_RAM_T2P_URAM_1R1W' to 'UpConv_Fused_Row_8_s_void_UpConv_Fused_Row_8_ap_uint_256_ap_uint_256_const_apncg' due to the length limit 80
+INFO: [SYN 201-210] Renamed object name 'UpConv_Fused_Row_8_s_void_UpConv_Fused_Row_8_ap_uint_256_ap_uint_256_const_ap_uint_256_const_ap_uint_256_const_ap_uint_256_const_ap_uint_256_decimal16_int_int_int_int_int_row_acc_2_RAM_T2P_URAM_1R1W' to 'UpConv_Fused_Row_8_s_void_UpConv_Fused_Row_8_ap_uint_256_ap_uint_256_const_apocq' due to the length limit 80
+INFO: [SYN 201-210] Renamed object name 'UpConv_Fused_Row_8_s_void_UpConv_Fused_Row_8_ap_uint_256_ap_uint_256_const_ap_uint_256_const_ap_uint_256_const_ap_uint_256_const_ap_uint_256_decimal16_int_int_int_int_int_row_acc_3_RAM_T2P_URAM_1R1W' to 'UpConv_Fused_Row_8_s_void_UpConv_Fused_Row_8_ap_uint_256_ap_uint_256_const_appcA' due to the length limit 80
+INFO: [SYN 201-210] Renamed object name 'UpConv_Fused_Row_8_s_void_UpConv_Fused_Row_8_ap_uint_256_ap_uint_256_const_ap_uint_256_const_ap_uint_256_const_ap_uint_256_const_ap_uint_256_decimal16_int_int_int_int_int_row_acc_4_RAM_T2P_URAM_1R1W' to 'UpConv_Fused_Row_8_s_void_UpConv_Fused_Row_8_ap_uint_256_ap_uint_256_const_apqcK' due to the length limit 80
+INFO: [RTGEN 206-100] Generating core module 'hadd_16ns_16ns_16_5_full_dsp_1': 16 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'hmul_16ns_16ns_16_4_max_dsp_1': 32 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'hptosp_16ns_32_2_no_dsp_1': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'mul_6ns_8ns_13_1_1': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'mul_8ns_5ns_12_1_1': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'mul_8ns_8ns_15_1_1': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'mul_9ns_8ns_16_1_1': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'sitofp_32ns_32_7_no_dsp_1': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'sptohp_32ns_16_2_no_dsp_1': 1 instance(s).
+INFO: [RTGEN 206-100] Finished creating RTL model for 'UpConv_Fused_Row_8_s'.
+INFO: [RTMG 210-278] Implementing memory 'upconv_core_top_UpConv_Fused_Row_8_s_void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_consbkb' using ultra RAMs.
+INFO: [RTMG 210-278] Implementing memory 'upconv_core_top_UpConv_Fused_Row_8_s_mean_buf_RAM_2P_LUTRAM_1R1W' using distributed RAMs.
+INFO: [RTMG 210-278] Implementing memory 'upconv_core_top_UpConv_Fused_Row_8_s_inv_buf_RAM_2P_LUTRAM_1R1W' using distributed RAMs.
+INFO: [RTMG 210-278] Implementing memory 'upconv_core_top_UpConv_Fused_Row_8_s_b_buf_RAM_T2P_BRAM_1R1W' using block RAMs.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0.29 seconds. CPU system time: 0.03 seconds. Elapsed time: 0.31 seconds; current allocated memory: 606.918 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'upconv_core_top_Pipeline_LOAD_ROW_VITIS_LOOP_417_2' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-1030] Apply Unified Pipeline Control on module 'upconv_core_top_Pipeline_LOAD_ROW_VITIS_LOOP_417_2' pipeline 'LOAD_ROW_VITIS_LOOP_417_2' pipeline type 'loop pipeline'
+WARNING: [RTGEN 206-101] Setting dangling out port 'upconv_core_top_Pipeline_LOAD_ROW_VITIS_LOOP_417_2/m_axi_gmem_in_0_ARVALID' to 0.
+WARNING: [RTGEN 206-101] Setting dangling out port 'upconv_core_top_Pipeline_LOAD_ROW_VITIS_LOOP_417_2/m_axi_gmem_in_0_ARADDR' to 0.
+WARNING: [RTGEN 206-101] Setting dangling out port 'upconv_core_top_Pipeline_LOAD_ROW_VITIS_LOOP_417_2/m_axi_gmem_in_0_ARID' to 0.
+WARNING: [RTGEN 206-101] Setting dangling out port 'upconv_core_top_Pipeline_LOAD_ROW_VITIS_LOOP_417_2/m_axi_gmem_in_0_ARLEN' to 0.
+WARNING: [RTGEN 206-101] Setting dangling out port 'upconv_core_top_Pipeline_LOAD_ROW_VITIS_LOOP_417_2/m_axi_gmem_in_0_ARSIZE' to 0.
+WARNING: [RTGEN 206-101] Setting dangling out port 'upconv_core_top_Pipeline_LOAD_ROW_VITIS_LOOP_417_2/m_axi_gmem_in_0_ARBURST' to 0.
+WARNING: [RTGEN 206-101] Setting dangling out port 'upconv_core_top_Pipeline_LOAD_ROW_VITIS_LOOP_417_2/m_axi_gmem_in_0_ARLOCK' to 0.
+WARNING: [RTGEN 206-101] Setting dangling out port 'upconv_core_top_Pipeline_LOAD_ROW_VITIS_LOOP_417_2/m_axi_gmem_in_0_ARCACHE' to 0.
+WARNING: [RTGEN 206-101] Setting dangling out port 'upconv_core_top_Pipeline_LOAD_ROW_VITIS_LOOP_417_2/m_axi_gmem_in_0_ARPROT' to 0.
+WARNING: [RTGEN 206-101] Setting dangling out port 'upconv_core_top_Pipeline_LOAD_ROW_VITIS_LOOP_417_2/m_axi_gmem_in_0_ARQOS' to 0.
+WARNING: [RTGEN 206-101] Setting dangling out port 'upconv_core_top_Pipeline_LOAD_ROW_VITIS_LOOP_417_2/m_axi_gmem_in_0_ARREGION' to 0.
+WARNING: [RTGEN 206-101] Setting dangling out port 'upconv_core_top_Pipeline_LOAD_ROW_VITIS_LOOP_417_2/m_axi_gmem_in_0_ARUSER' to 0.
+INFO: [RTGEN 206-100] Generating core module 'ama_addmuladd_8ns_8ns_6ns_6ns_11_4_1': 1 instance(s).
+INFO: [RTGEN 206-100] Finished creating RTL model for 'upconv_core_top_Pipeline_LOAD_ROW_VITIS_LOOP_417_2'.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0.17 seconds. CPU system time: 0.01 seconds. Elapsed time: 0.19 seconds; current allocated memory: 610.621 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'upconv_core_top' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+WARNING: [RTGEN 206-101] Design contains AXI ports. Reset is fixed to synchronous and active low.
+INFO: [RTGEN 206-500] Setting interface mode on port 'upconv_core_top/gmem_in' to 'm_axi'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'upconv_core_top/gmem_weight' to 'm_axi'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'upconv_core_top/gmem_param' to 'm_axi'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'upconv_core_top/gmem_out' to 'm_axi'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'upconv_core_top/X' to 's_axilite & ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'upconv_core_top/W' to 's_axilite & ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'upconv_core_top/B' to 's_axilite & ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'upconv_core_top/G' to 's_axilite & ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'upconv_core_top/BE' to 's_axilite & ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'upconv_core_top/Y' to 's_axilite & ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'upconv_core_top/epsilon' to 's_axilite & ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'upconv_core_top/mode' to 's_axilite & ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on function 'upconv_core_top' to 's_axilite & ap_ctrl_hs'.
+INFO: [RTGEN 206-100] Bundling port 'X', 'W', 'B', 'G', 'BE', 'Y', 'epsilon', 'mode' and 'return' to AXI-Lite port control.
+INFO: [RTGEN 206-100] Generating core module 'mac_muladd_14ns_7ns_14ns_20_4_1': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'mul_6ns_8ns_14_1_1': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'sparsemux_9_32_10_1_1': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'sparsemux_9_32_8_1_1': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'sparsemux_9_32_9_1_1': 1 instance(s).
+INFO: [RTGEN 206-100] Finished creating RTL model for 'upconv_core_top'.
+INFO: [RTMG 210-278] Implementing memory 'upconv_core_top_x_buf_RAM_T2P_URAM_1R1W' using ultra RAMs.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0.14 seconds. CPU system time: 0 seconds. Elapsed time: 0.15 seconds; current allocated memory: 614.711 MB.
+INFO: [HLS 200-111] Finished Generating all RTL models: CPU user time: 0.31 seconds. CPU system time: 0.03 seconds. Elapsed time: 0.35 seconds; current allocated memory: 617.473 MB.
+INFO: [HLS 200-1603] Design has inferred MAXI bursts and missed bursts, see Vitis HLS GUI synthesis summary report for detailed information.
+INFO: [HLS 200-111] Finished Updating report files: CPU user time: 1.12 seconds. CPU system time: 0.03 seconds. Elapsed time: 1.14 seconds; current allocated memory: 640.297 MB.
+INFO: [VHDL 208-304] Generating VHDL RTL for upconv_core_top.
+INFO: [VLOG 209-307] Generating Verilog RTL for upconv_core_top.
+INFO: [HLS 200-790] **** Loop Constraint Status: All loop constraints were satisfied.
+INFO: [HLS 200-789] **** Estimated Fmax: 308.74 MHz
+INFO: [HLS 200-112] Total CPU user time: 23.43 seconds. Total CPU system time: 1.63 seconds. Total elapsed time: 29.08 seconds; peak allocated memory: 640.684 MB.
+INFO: [v++ 60-791] Total elapsed time: 0h 0m 32s

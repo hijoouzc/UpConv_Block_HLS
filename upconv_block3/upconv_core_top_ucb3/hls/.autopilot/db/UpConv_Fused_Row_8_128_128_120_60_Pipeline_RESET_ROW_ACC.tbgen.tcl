@@ -13,7 +13,7 @@ set hasInterrupt 0
 set DLRegFirstOffset 0
 set DLRegItemOffset 0
 set svuvm_can_support 1
-set cdfgNum 13
+set cdfgNum 15
 set C_modelName {UpConv_Fused_Row<8, 128, 128, 120, 60>_Pipeline_RESET_ROW_ACC}
 set C_modelType { void 0 }
 set ap_memory_interface_dict [dict create]

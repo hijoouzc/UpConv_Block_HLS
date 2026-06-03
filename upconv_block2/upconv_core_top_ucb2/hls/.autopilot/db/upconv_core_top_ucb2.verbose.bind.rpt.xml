@@ -1,7 +1,7 @@
 <profile>
 
 <section name = "Vitis HLS Report for 'upconv_core_top_ucb2'" level="0">
-<item name = "Date">Fri May  8 13:45:22 2026
+<item name = "Date">Tue Jun  2 22:29:40 2026
 </item>
 <item name = "Version">2024.2 (Build 5238294 on Nov  8 2024)</item>
 <item name = "Project">upconv_core_top_ucb2</item>
@@ -15,7 +15,7 @@
 <section name = "" level="1">
 <item name = "Summary"><table name="" hasTotal="0">
 <keys size="4">Clock, Target, Estimated, Uncertainty</keys>
-<column name="ap_clk">3.33 ns, 2.719 ns, 0.90 ns</column>
+<column name="ap_clk">3.33 ns, 2.433 ns, 0.90 ns</column>
 </table>
 </item>
 </section>
@@ -24,21 +24,21 @@
 <section name = "" level="1">
 <item name = "Summary"><table name="" hasTotal="0">
 <keys size="8">, min, max, min, max, min, max, Type</keys>
-<column name="">16778046, 660951870, 55.921 ms, 2.203 sec, 16778047, 660951871, no</column>
+<column name="">2383039, 23205055, 7.943 ms, 77.342 ms, 2383040, 23205056, no</column>
 </table>
 </item>
 <item name = "Detail">
 <section name = "" level="1">
 <item name = "Instance"><table name="" hasTotal="0">
 <keys size="9">Instance, Module, min, max, min, max, min, max, Type</keys>
-<column name="grp_upconv_core_top_ucb2_Pipeline_LOAD_ROW0_VITIS_LOOP_296_1_fu_227">upconv_core_top_ucb2_Pipeline_LOAD_ROW0_VITIS_LOOP_296_1, 963, 963, 3.210 us, 3.210 us, 961, 961, loop auto-rewind stp (delay=0 clock cycles(s))</column>
-<column name="grp_UpConv_Fused_Row_8_64_64_240_120_s_fu_236">UpConv_Fused_Row_8_64_64_240_120_s, 130589, 5163197, 0.435 ms, 17.209 ms, 130589, 5163197, no</column>
-<column name="grp_upconv_core_top_ucb2_Pipeline_LOAD_ROW_VITIS_LOOP_307_2_fu_289">upconv_core_top_ucb2_Pipeline_LOAD_ROW_VITIS_LOOP_307_2, 973, 973, 3.243 us, 3.243 us, 961, 961, loop auto-rewind stp (delay=0 clock cycles(s))</column>
+<column name="grp_upconv_core_top_ucb2_Pipeline_LOAD_ROW0_VITIS_LOOP_386_1_fu_231">upconv_core_top_ucb2_Pipeline_LOAD_ROW0_VITIS_LOOP_386_1, 963, 963, 3.210 us, 3.210 us, 961, 961, loop auto-rewind stp (delay=0 clock cycles(s))</column>
+<column name="grp_UpConv_Fused_Row_8_64_64_240_120_s_fu_240">UpConv_Fused_Row_8_64_64_240_120_s, 18128, 180800, 60.421 us, 0.603 ms, 18128, 180800, no</column>
+<column name="grp_upconv_core_top_ucb2_Pipeline_LOAD_ROW_VITIS_LOOP_397_2_fu_297">upconv_core_top_ucb2_Pipeline_LOAD_ROW_VITIS_LOOP_397_2, 973, 973, 3.243 us, 3.243 us, 961, 961, loop auto-rewind stp (delay=0 clock cycles(s))</column>
 </table>
 </item>
 <item name = "Loop"><table name="" hasTotal="0">
 <keys size="8">Loop Name, min, max, Latency, achieved, target, Count, Pipelined</keys>
-<column name="- ROW_LOOP">16515891, 650624499, 262157 ~ 10327373, -, -, 63, no</column>
+<column name="- ROW_LOOP">2345805, 22842477, 37235 ~ 362579, -, -, 63, no</column>
 </table>
 </item>
 </section>

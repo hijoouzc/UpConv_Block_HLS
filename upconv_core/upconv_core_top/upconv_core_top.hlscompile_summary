@@ -9,10 +9,10 @@
 <ENTRY>
 {
  "type": "ET_CmdStep",
- "dateTimestamp": "Mon Jun  1 23:46:04 2026",
- "timestampMillis": "1780332364250",
+ "dateTimestamp": "Wed Jun  3 12:31:51 2026",
+ "timestampMillis": "1780464711110",
  "buildStep": {
-  "cmdId": "5f439728-0545-43c7-9d8a-986733f54bab",
+  "cmdId": "03920e43-9751-4448-bb5b-409fca50c7b0",
   "name": "v++",
   "logFile": "/home/hoinguyen/Documents/Vitis/UpConv_HLS/upconv_core/upconv_core_top/logs/upconv_core_top.steps.log",
   "commandLine": "/home/tools/Xilinx/Vitis/2024.2/bin/unwrapped/lnx64.o/v++  -c --mode hls --config /home/hoinguyen/Documents/Vitis/UpConv_HLS/upconv_core/hls_config.cfg --work_dir upconv_core_top ",
@@ -38,10 +38,10 @@
 <ENTRY>
 {
  "type": "ET_Status",
- "dateTimestamp": "Mon Jun  1 23:46:04 2026",
- "timestampMillis": "1780332364250",
+ "dateTimestamp": "Wed Jun  3 12:31:51 2026",
+ "timestampMillis": "1780464711110",
  "status": {
-  "cmdId": "5f439728-0545-43c7-9d8a-986733f54bab",
+  "cmdId": "03920e43-9751-4448-bb5b-409fca50c7b0",
   "state": "CS_RUNNING"
  }
 }
@@ -49,8 +49,8 @@
 <ENTRY>
 {
  "type": "ET_FlowMetaData",
- "dateTimestamp": "Mon Jun  1 23:46:07 2026",
- "timestampMillis": "1780332367033",
+ "dateTimestamp": "Wed Jun  3 12:31:54 2026",
+ "timestampMillis": "1780464714537",
  "buildSummary": {
   "hardwarePlatform": "",
   "hardwareDsa": "",
@@ -85,10 +85,10 @@
 <ENTRY>
 {
  "type": "ET_SubCmdStep",
- "dateTimestamp": "Mon Jun  1 23:46:07 2026",
- "timestampMillis": "1780332367034",
+ "dateTimestamp": "Wed Jun  3 12:31:54 2026",
+ "timestampMillis": "1780464714538",
  "buildStep": {
-  "cmdId": "3152391f-921d-49fb-a189-c968aef7db91",
+  "cmdId": "83ea0640-8a5c-4724-8821-f854c76442e0",
   "name": "",
   "logFile": "/home/hoinguyen/Documents/Vitis/UpConv_HLS/upconv_core/upconv_core_top/hls/hls.log",
   "commandLine": "",
@@ -101,10 +101,10 @@
 <ENTRY>
 {
  "type": "ET_Status",
- "dateTimestamp": "Mon Jun  1 23:46:07 2026",
- "timestampMillis": "1780332367034",
+ "dateTimestamp": "Wed Jun  3 12:31:54 2026",
+ "timestampMillis": "1780464714538",
  "status": {
-  "cmdId": "3152391f-921d-49fb-a189-c968aef7db91",
+  "cmdId": "83ea0640-8a5c-4724-8821-f854c76442e0",
   "state": "CS_RUNNING"
  }
 }
@@ -112,8 +112,8 @@
 <ENTRY>
 {
  "type": "ET_Report",
- "dateTimestamp": "Mon Jun  1 23:46:07 2026",
- "timestampMillis": "1780332367034",
+ "dateTimestamp": "Wed Jun  3 12:31:54 2026",
+ "timestampMillis": "1780464714539",
  "report": {
   "path": "/home/hoinguyen/Documents/Vitis/UpConv_HLS/upconv_core/upconv_core_top/hls/hls_data.json",
   "name": "",
@@ -126,8 +126,8 @@
 <ENTRY>
 {
  "type": "ET_Report",
- "dateTimestamp": "Mon Jun  1 23:46:07 2026",
- "timestampMillis": "1780332367035",
+ "dateTimestamp": "Wed Jun  3 12:31:54 2026",
+ "timestampMillis": "1780464714539",
  "report": {
   "path": "/home/hoinguyen/Documents/Vitis/UpConv_HLS/upconv_core/upconv_core_top/hls/syn/report/csynth.rpt",
   "name": "",
@@ -140,8 +140,8 @@
 <ENTRY>
 {
  "type": "ET_Report",
- "dateTimestamp": "Mon Jun  1 23:46:07 2026",
- "timestampMillis": "1780332367035",
+ "dateTimestamp": "Wed Jun  3 12:31:54 2026",
+ "timestampMillis": "1780464714539",
  "report": {
   "path": "/home/hoinguyen/Documents/Vitis/UpConv_HLS/upconv_core/upconv_core_top/hls/syn/report/csynth.xml",
   "name": "",
@@ -154,8 +154,8 @@
 <ENTRY>
 {
  "type": "ET_Report",
- "dateTimestamp": "Mon Jun  1 23:47:11 2026",
- "timestampMillis": "1780332431883",
+ "dateTimestamp": "Wed Jun  3 12:32:26 2026",
+ "timestampMillis": "1780464746118",
  "report": {
   "path": "/home/hoinguyen/Documents/Vitis/UpConv_HLS/upconv_core/upconv_core_top/hls",
   "name": "",
@@ -168,8 +168,8 @@
 <ENTRY>
 {
  "type": "ET_Report",
- "dateTimestamp": "Mon Jun  1 23:47:11 2026",
- "timestampMillis": "1780332431883",
+ "dateTimestamp": "Wed Jun  3 12:32:26 2026",
+ "timestampMillis": "1780464746118",
  "report": {
   "path": "/home/hoinguyen/Documents/Vitis/UpConv_HLS/upconv_core/upconv_core_top/hls",
   "name": "",
@@ -182,8 +182,8 @@
 <ENTRY>
 {
  "type": "ET_Report",
- "dateTimestamp": "Mon Jun  1 23:47:11 2026",
- "timestampMillis": "1780332431883",
+ "dateTimestamp": "Wed Jun  3 12:32:26 2026",
+ "timestampMillis": "1780464746118",
  "report": {
   "path": "/home/hoinguyen/Documents/Vitis/UpConv_HLS/upconv_core/upconv_core_top/hls",
   "name": "",
@@ -196,10 +196,10 @@
 <ENTRY>
 {
  "type": "ET_Status",
- "dateTimestamp": "Mon Jun  1 23:47:11 2026",
- "timestampMillis": "1780332431884",
+ "dateTimestamp": "Wed Jun  3 12:32:26 2026",
+ "timestampMillis": "1780464746118",
  "status": {
-  "cmdId": "3152391f-921d-49fb-a189-c968aef7db91",
+  "cmdId": "83ea0640-8a5c-4724-8821-f854c76442e0",
   "state": "CS_PASSED"
  }
 }
@@ -207,10 +207,10 @@
 <ENTRY>
 {
  "type": "ET_Status",
- "dateTimestamp": "Mon Jun  1 23:47:12 2026",
- "timestampMillis": "1780332432401",
+ "dateTimestamp": "Wed Jun  3 12:32:26 2026",
+ "timestampMillis": "1780464746363",
  "status": {
-  "cmdId": "5f439728-0545-43c7-9d8a-986733f54bab",
+  "cmdId": "03920e43-9751-4448-bb5b-409fca50c7b0",
   "state": "CS_PASSED"
  }
 }
@@ -218,8 +218,8 @@
 <ENTRY>
 {
  "type": "ET_Report",
- "dateTimestamp": "Mon Jun  1 23:47:12 2026",
- "timestampMillis": "1780332432421",
+ "dateTimestamp": "Wed Jun  3 12:32:26 2026",
+ "timestampMillis": "1780464746385",
  "report": {
   "path": "/home/hoinguyen/Documents/Vitis/UpConv_HLS/upconv_core/upconv_core_top/reports/v++_compile_upconv_core_top_guidance.html",
   "name": "",
@@ -232,8 +232,8 @@
 <ENTRY>
 {
  "type": "ET_Report",
- "dateTimestamp": "Mon Jun  1 23:47:12 2026",
- "timestampMillis": "1780332432421",
+ "dateTimestamp": "Wed Jun  3 12:32:26 2026",
+ "timestampMillis": "1780464746386",
  "report": {
   "path": "/home/hoinguyen/Documents/Vitis/UpConv_HLS/upconv_core/upconv_core_top/reports/.db/v++_compile_upconv_core_top_guidance.pb3",
   "name": "",

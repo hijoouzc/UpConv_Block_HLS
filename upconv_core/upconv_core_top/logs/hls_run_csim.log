@@ -19,31 +19,32 @@ INFO: [SIM 211-2] *************** CSIM start ***************
 INFO: [SIM 211-4] CSIM will launch CLANG as the compiler.
 INFO: [HLS 200-2036] Building debug C Simulation binaries
    Compiling ../../../../../test.cpp in debug mode
+   Compiling ../../../../../gen/upconv_core_top.cpp in debug mode
    Generating csim.exe
 ====================================================
    UPCONV CORE FULL DIMENSION VERIFICATION          
 ====================================================
 
 ====================================================
-   MINI_TEST (16x16x16 -> 32x32x16)
-   16x16x16 -> 32x32x16
+   MINI_TEST
+   16x16x64 -> 32x32x32
 ====================================================
 Packing inputs...
 Running HLS kernel...
-HLS CSIM time: 0.394586 s
+HLS CSIM time: 2.96676 s
 Unpacking outputs...
 Running CPU golden reference...
-Golden CPU time: 0.00147179 s
-Output Sum: 7146.64
-Max Error : 0.00373793
-MSE       : 2.02862e-06
+Golden CPU time: 0.00802792 s
+Output Sum: 14292.7
+Max Error : 0.00373968
+MSE       : 2.43692e-06
 ====================================================
-MINI_TEST (16x16x16 -> 32x32x16): PASSED (Functional & Numerical)
+MINI_TEST: PASSED (Functional & Numerical)
 ====================================================
 
 
 ====================================================
 INFO: [SIM 211-1] CSim done with 0 errors.
 INFO: [SIM 211-3] *************** CSIM finish ***************
-INFO: [HLS 200-112] Total CPU user time: 3.34 seconds. Total CPU system time: 0.39 seconds. Total elapsed time: 3.55 seconds; peak allocated memory: 325.133 MB.
-INFO: [vitis-run 60-791] Total elapsed time: 0h 0m 7s
+INFO: [HLS 200-112] Total CPU user time: 7.18 seconds. Total CPU system time: 0.5 seconds. Total elapsed time: 7.51 seconds; peak allocated memory: 325.262 MB.
+INFO: [vitis-run 60-791] Total elapsed time: 0h 0m 11s

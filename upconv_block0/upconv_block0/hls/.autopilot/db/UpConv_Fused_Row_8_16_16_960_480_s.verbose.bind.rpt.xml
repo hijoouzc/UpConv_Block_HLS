@@ -1,7 +1,7 @@
 <profile>
 
 <section name = "Vitis HLS Report for 'UpConv_Fused_Row_8_16_16_960_480_s'" level="0">
-<item name = "Date">Tue May 19 20:00:39 2026
+<item name = "Date">Wed Jun  3 13:46:35 2026
 </item>
 <item name = "Version">2024.2 (Build 5238294 on Nov  8 2024)</item>
 <item name = "Project">upconv_block0</item>
@@ -15,7 +15,7 @@
 <section name = "" level="1">
 <item name = "Summary"><table name="" hasTotal="0">
 <keys size="4">Clock, Target, Estimated, Uncertainty</keys>
-<column name="ap_clk">3.33 ns, 2.719 ns, 0.90 ns</column>
+<column name="ap_clk">3.33 ns, 2.433 ns, 0.90 ns</column>
 </table>
 </item>
 </section>
@@ -24,23 +24,24 @@
 <section name = "" level="1">
 <item name = "Summary"><table name="" hasTotal="0">
 <keys size="8">, min, max, min, max, min, max, Type</keys>
-<column name="">374214, 3433854, 1.247 ms, 11.445 ms, 374214, 3433854, no</column>
+<column name="">277494, 816774, 0.925 ms, 2.722 ms, 277494, 816774, no</column>
 </table>
 </item>
 <item name = "Detail">
 <section name = "" level="1">
 <item name = "Instance"><table name="" hasTotal="0">
 <keys size="9">Instance, Module, min, max, min, max, min, max, Type</keys>
-<column name="grp_UpConv_Fused_Row_8_16_16_960_480_Pipeline_RESET_ROW_ACC_fu_241">UpConv_Fused_Row_8_16_16_960_480_Pipeline_RESET_ROW_ACC, 483, 483, 1.610 us, 1.610 us, 482, 482, loop auto-rewind stp (delay=0 clock cycles(s))</column>
-<column name="grp_UpConv_Fused_Row_8_16_16_960_480_Pipeline_LOAD_PARAMS_fu_277">UpConv_Fused_Row_8_16_16_960_480_Pipeline_LOAD_PARAMS, 101, 101, 0.337 us, 0.337 us, 93, 93, loop auto-rewind stp (delay=0 clock cycles(s))</column>
-<column name="grp_UpConv_Fused_Row_8_16_16_960_480_Outline_TILE_LOOP_fu_292">UpConv_Fused_Row_8_16_16_960_480_Outline_TILE_LOOP, 259921, 3319561, 0.866 ms, 11.064 ms, 259921, 3319561, no</column>
-<column name="grp_UpConv_Fused_Row_8_16_16_960_480_Pipeline_BIAS_STATS_fu_334">UpConv_Fused_Row_8_16_16_960_480_Pipeline_BIAS_STATS, 3379, 3379, 11.262 us, 11.262 us, 3367, 3367, loop auto-rewind stp (delay=0 clock cycles(s))</column>
-<column name="grp_UpConv_Fused_Row_8_16_16_960_480_Pipeline_NORM_WRITE_fu_374">UpConv_Fused_Row_8_16_16_960_480_Pipeline_NORM_WRITE, 54, 54, 0.180 us, 0.180 us, 31, 31, loop auto-rewind stp (delay=0 clock cycles(s))</column>
+<column name="grp_UpConv_Fused_Row_8_16_16_960_480_Pipeline_LOAD_B_fu_212">UpConv_Fused_Row_8_16_16_960_480_Pipeline_LOAD_B, 33, 33, 0.110 us, 0.110 us, 31, 31, loop auto-rewind stp (delay=0 clock cycles(s))</column>
+<column name="grp_UpConv_Fused_Row_8_16_16_960_480_Pipeline_RESET_ROW_ACC_fu_220">UpConv_Fused_Row_8_16_16_960_480_Pipeline_RESET_ROW_ACC, 962, 962, 3.206 us, 3.206 us, 961, 961, loop auto-rewind stp (delay=0 clock cycles(s))</column>
+<column name="grp_UpConv_Fused_Row_8_16_16_960_480_Pipeline_LOAD_G_fu_256">UpConv_Fused_Row_8_16_16_960_480_Pipeline_LOAD_G, 33, 33, 0.110 us, 0.110 us, 31, 31, loop auto-rewind stp (delay=0 clock cycles(s))</column>
+<column name="grp_UpConv_Fused_Row_8_16_16_960_480_Outline_TILE_LOOP_fu_264">UpConv_Fused_Row_8_16_16_960_480_Outline_TILE_LOOP, 259921, 799201, 0.866 ms, 2.664 ms, 259921, 799201, no</column>
+<column name="grp_UpConv_Fused_Row_8_16_16_960_480_Pipeline_LOAD_BE_fu_306">UpConv_Fused_Row_8_16_16_960_480_Pipeline_LOAD_BE, 33, 33, 0.110 us, 0.110 us, 31, 31, loop auto-rewind stp (delay=0 clock cycles(s))</column>
+<column name="grp_UpConv_Fused_Row_8_16_16_960_480_Pipeline_PIXEL_STATS_fu_314">UpConv_Fused_Row_8_16_16_960_480_Pipeline_PIXEL_STATS, 15590, 15590, 51.961 us, 51.961 us, 15361, 15361, loop auto-rewind stp (delay=0 clock cycles(s))</column>
+<column name="grp_UpConv_Fused_Row_8_16_16_960_480_Pipeline_PIXEL_NORM_fu_356">UpConv_Fused_Row_8_16_16_960_480_Pipeline_PIXEL_NORM, 990, 990, 3.300 us, 3.300 us, 961, 961, loop auto-rewind stp (delay=0 clock cycles(s))</column>
 </table>
 </item>
 <item name = "Loop"><table name="" hasTotal="0">
 <keys size="8">Loop Name, min, max, Latency, achieved, target, Count, Pipelined</keys>
-<column name="- PIXEL_NORM">113792, 113792, 3556, -, -, 32, no</column>
 </table>
 </item>
 </section>

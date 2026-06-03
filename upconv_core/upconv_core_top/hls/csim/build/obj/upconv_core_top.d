@@ -18,4 +18,5 @@ obj/upconv_core_top.o: ../../../../../gen/upconv_core_top.cpp \
   /home/tools/Xilinx/Vitis/2024.2/include/etc/ap_fixed_base.h \
   /home/tools/Xilinx/Vitis/2024.2/include/etc/ap_fixed_ref.h \
   /home/tools/Xilinx/Vitis/2024.2/include/etc/ap_fixed_special.h \
-  ../../../../../gen/Hls_Layers_UpConv.tpp
+  ../../../../../gen/UpConv_Unified.tpp \
+  ../../../../../gen/upconv_config.h

@@ -1,7 +1,7 @@
 {
   "0": {
     "basicblocks": 11,
-    "calls": "2 2 2 2",
+    "calls": "1 1 1 1",
     "file": "upconv_core_top_ucb3.cpp",
     "fileloc": 11,
     "instructions": 73,
@@ -12,23 +12,14 @@
     "stores": {
       "G": 2
     },
-    "total_instructions": 7829
+    "total_instructions": 7729
   },
   "1": {
-    "basicblocks": 1,
-    "calls": "",
-    "file": "sqrtfloat.cpp",
-    "fileloc": 11,
-    "instructions": 2,
-    "name": "sqrtf",
-    "total_instructions": 2
-  },
-  "2": {
-    "basicblocks": 261,
-    "calls": "1",
+    "basicblocks": 255,
+    "calls": "2",
     "file": "Hls_Layers_UpConv.tpp",
-    "fileloc": 79,
-    "instructions": 1937,
+    "fileloc": 298,
+    "instructions": 1912,
     "loads": {
       "G": 28,
       "L": 73
@@ -38,6 +29,15 @@
       "G": 27,
       "L": 25
     },
-    "total_instructions": 1939
+    "total_instructions": 1914
+  },
+  "2": {
+    "basicblocks": 1,
+    "calls": "",
+    "file": "sqrtfloat.cpp",
+    "fileloc": 11,
+    "instructions": 2,
+    "name": "sqrtf",
+    "total_instructions": 2
   }
 }

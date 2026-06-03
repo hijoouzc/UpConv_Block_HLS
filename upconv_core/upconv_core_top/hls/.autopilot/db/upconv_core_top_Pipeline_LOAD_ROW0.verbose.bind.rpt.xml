@@ -1,7 +1,7 @@
 <profile>
 
 <section name = "Vitis HLS Report for 'upconv_core_top_Pipeline_LOAD_ROW0'" level="0">
-<item name = "Date">Mon Jun  1 23:46:46 2026
+<item name = "Date">Wed Jun  3 12:32:18 2026
 </item>
 <item name = "Version">2024.2 (Build 5238294 on Nov  8 2024)</item>
 <item name = "Project">upconv_core_top</item>
@@ -24,7 +24,7 @@
 <section name = "" level="1">
 <item name = "Summary"><table name="" hasTotal="0">
 <keys size="8">, min, max, min, max, min, max, Type</keys>
-<column name="">19, 19, 63.327 ns, 63.327 ns, 17, 17, loop auto-rewind stp (delay=0 clock cycles(s))</column>
+<column name="">67, 7683, 0.223 us, 25.607 us, 65, 7681, loop auto-rewind stp (delay=0 clock cycles(s))</column>
 </table>
 </item>
 <item name = "Detail">
@@ -35,7 +35,7 @@
 </item>
 <item name = "Loop"><table name="" hasTotal="0">
 <keys size="8">Loop Name, min, max, Latency, achieved, target, Count, Pipelined</keys>
-<column name="- LOAD_ROW0">17, 17, 3, 1, 1, 16, yes</column>
+<column name="- LOAD_ROW0">65, 7681, 3, 1, 1, 64 ~ 7680, yes</column>
 </table>
 </item>
 </section>

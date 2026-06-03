@@ -1,7 +1,7 @@
 <profile>
 
 <section name = "Vitis HLS Report for 'UpConv_Fused_Row_8_128_128_120_60_Pipeline_KW_LOOP_FLAT_LOOP'" level="0">
-<item name = "Date">Mon Jun  1 23:47:11 2026
+<item name = "Date">Tue Jun  2 22:29:42 2026
 </item>
 <item name = "Version">2024.2 (Build 5238294 on Nov  8 2024)</item>
 <item name = "Project">upconv_core_top_ucb3</item>

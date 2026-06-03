@@ -1,31 +1,14 @@
 {
   "0": {
     "basicblocks": 1,
-    "calls": "3",
+    "calls": "7",
     "file": "upconv_core_top_ucb1.cpp",
     "fileloc": 11,
     "instructions": 17,
     "name": "upconv_core_top_ucb1",
-    "total_instructions": 3705
+    "total_instructions": 4041
   },
   "1": {
-    "basicblocks": 153,
-    "calls": "5 5 5 4 5 5 6",
-    "file": "Hls_Layers_UpConv.tpp",
-    "fileloc": 79,
-    "instructions": 526,
-    "loads": {
-      "G": 3,
-      "L": 12
-    },
-    "name": "UpConv_Fused_Row<8, 32, 32, 480, 240>",
-    "stores": {
-      "G": 3,
-      "L": 9
-    },
-    "total_instructions": 902
-  },
-  "2": {
     "basicblocks": 1,
     "calls": "",
     "file": "sqrtfloat.cpp",
@@ -34,31 +17,7 @@
     "name": "sqrtf",
     "total_instructions": 2
   },
-  "3": {
-    "basicblocks": 31,
-    "calls": "1 1 1 1",
-    "file": "Hls_Layers_UpConv.tpp",
-    "fileloc": 281,
-    "instructions": 80,
-    "loads": {
-      "L": 2
-    },
-    "name": "UpConv_Fused_Top<8, 32, 32, 480, 240>",
-    "stores": {
-      "L": 2
-    },
-    "total_instructions": 3688
-  },
-  "4": {
-    "basicblocks": 1,
-    "calls": "2",
-    "file": "Hls_Layers_UpConv.tpp",
-    "fileloc": 52,
-    "instructions": 2,
-    "name": "my_sqrt_f",
-    "total_instructions": 4
-  },
-  "5": {
+  "10": {
     "basicblocks": 1,
     "calls": "",
     "file": "Hls_Layers_UpConv.tpp",
@@ -72,6 +31,81 @@
       "L": 1
     },
     "total_instructions": 18
+  },
+  "11": {
+    "basicblocks": 15,
+    "calls": "",
+    "file": "Hls_Layers_UpConv.tpp",
+    "fileloc": 82,
+    "instructions": 35,
+    "loads": {
+      "L": 1
+    },
+    "name": "Load_Weight_Tile<8, 240, 30>",
+    "stores": {
+      "L": 1
+    },
+    "total_instructions": 35
+  },
+  "12": {
+    "basicblocks": 7,
+    "calls": "2 11 8 9 3 5",
+    "file": "Hls_Layers_UpConv.tpp",
+    "fileloc": 298,
+    "instructions": 45,
+    "name": "UpConv_Fused_Row<8, 32, 32, 480, 240>",
+    "total_instructions": 986
+  },
+  "2": {
+    "basicblocks": 16,
+    "calls": "",
+    "file": "Hls_Layers_UpConv.tpp",
+    "fileloc": 68,
+    "instructions": 36,
+    "name": "Reset_Row_Buffer<64, 15, 240>",
+    "stores": {
+      "L": 1
+    },
+    "total_instructions": 36
+  },
+  "3": {
+    "basicblocks": 19,
+    "calls": "10 4",
+    "file": "Hls_Layers_UpConv.tpp",
+    "fileloc": 200,
+    "instructions": 122,
+    "loads": {
+      "L": 5
+    },
+    "name": "Compute_Pixel_Stats<64, 240, 15, 240>",
+    "stores": {
+      "L": 7
+    },
+    "total_instructions": 185
+  },
+  "4": {
+    "basicblocks": 1,
+    "calls": "1",
+    "file": "Hls_Layers_UpConv.tpp",
+    "fileloc": 52,
+    "instructions": 2,
+    "name": "my_sqrt_f",
+    "total_instructions": 4
+  },
+  "5": {
+    "basicblocks": 25,
+    "calls": "10 10 6",
+    "file": "Hls_Layers_UpConv.tpp",
+    "fileloc": 251,
+    "instructions": 119,
+    "loads": {
+      "L": 4
+    },
+    "name": "Apply_Norm_And_Write<64, 240, 15, 240>",
+    "stores": {
+      "L": 1
+    },
+    "total_instructions": 314
   },
   "6": {
     "basicblocks": 1,
@@ -87,5 +121,50 @@
       "L": 1
     },
     "total_instructions": 26
+  },
+  "7": {
+    "basicblocks": 31,
+    "calls": "12 12 12 12",
+    "file": "Hls_Layers_UpConv.tpp",
+    "fileloc": 371,
+    "instructions": 80,
+    "loads": {
+      "L": 2
+    },
+    "name": "UpConv_Fused_Top<8, 32, 32, 480, 240>",
+    "stores": {
+      "L": 2
+    },
+    "total_instructions": 4024
+  },
+  "8": {
+    "basicblocks": 58,
+    "calls": "10 10",
+    "file": "Hls_Layers_UpConv.tpp",
+    "fileloc": 102,
+    "instructions": 207,
+    "loads": {
+      "L": 8
+    },
+    "name": "Compute_MAC_Tile<8, 32, 32, 30, 64, 240, 240>",
+    "stores": {
+      "L": 5
+    },
+    "total_instructions": 325
+  },
+  "9": {
+    "basicblocks": 19,
+    "calls": "",
+    "file": "Hls_Layers_UpConv.tpp",
+    "fileloc": 175,
+    "instructions": 46,
+    "loads": {
+      "L": 3
+    },
+    "name": "Load_Norm_Params<15>",
+    "stores": {
+      "L": 3
+    },
+    "total_instructions": 46
   }
 }

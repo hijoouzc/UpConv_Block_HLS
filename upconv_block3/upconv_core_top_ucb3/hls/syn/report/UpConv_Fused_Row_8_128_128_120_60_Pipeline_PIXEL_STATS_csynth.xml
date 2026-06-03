@@ -46,13 +46,13 @@
 <SummaryOfViolations>
 <IssueType>-</IssueType>
 <ViolationType>-</ViolationType>
-<SourceLocation>../gen/Hls_Layers_UpConv.tpp:240</SourceLocation>
+<SourceLocation>../gen/Hls_Layers_UpConv.tpp:212~../gen/Hls_Layers_UpConv.tpp:363</SourceLocation>
 <SummaryOfLoopViolations>
 <PIXEL_STATS>
 <Name>PIXEL_STATS</Name>
 <IssueType>-</IssueType>
 <ViolationType>-</ViolationType>
-<SourceLocation>../gen/Hls_Layers_UpConv.tpp:241</SourceLocation>
+<SourceLocation>../gen/Hls_Layers_UpConv.tpp:213~../gen/Hls_Layers_UpConv.tpp:363</SourceLocation>
 </PIXEL_STATS>
 </SummaryOfLoopViolations>
 </SummaryOfViolations>
@@ -143,7 +143,7 @@
 <Attribute>control</Attribute>
 </RtlPorts>
 <RtlPorts>
-<name>grp_fu_640_p_din0</name>
+<name>grp_fu_723_p_din0</name>
 <Object>UpConv_Fused_Row&lt;8, 128, 128, 120, 60&gt;_Pipeline_PIXEL_STATS</Object>
 <Type>return value</Type>
 <Scope></Scope>
@@ -154,7 +154,7 @@
 <Attribute>data</Attribute>
 </RtlPorts>
 <RtlPorts>
-<name>grp_fu_640_p_dout0</name>
+<name>grp_fu_723_p_dout0</name>
 <Object>UpConv_Fused_Row&lt;8, 128, 128, 120, 60&gt;_Pipeline_PIXEL_STATS</Object>
 <Type>return value</Type>
 <Scope></Scope>
@@ -165,7 +165,7 @@
 <Attribute>data</Attribute>
 </RtlPorts>
 <RtlPorts>
-<name>grp_fu_640_p_ce</name>
+<name>grp_fu_723_p_ce</name>
 <Object>UpConv_Fused_Row&lt;8, 128, 128, 120, 60&gt;_Pipeline_PIXEL_STATS</Object>
 <Type>return value</Type>
 <Scope></Scope>
@@ -176,7 +176,7 @@
 <Attribute>data</Attribute>
 </RtlPorts>
 <RtlPorts>
-<name>grp_fu_355_p_din0</name>
+<name>grp_fu_393_p_din0</name>
 <Object>UpConv_Fused_Row&lt;8, 128, 128, 120, 60&gt;_Pipeline_PIXEL_STATS</Object>
 <Type>return value</Type>
 <Scope></Scope>
@@ -187,7 +187,7 @@
 <Attribute>data</Attribute>
 </RtlPorts>
 <RtlPorts>
-<name>grp_fu_355_p_dout0</name>
+<name>grp_fu_393_p_dout0</name>
 <Object>UpConv_Fused_Row&lt;8, 128, 128, 120, 60&gt;_Pipeline_PIXEL_STATS</Object>
 <Type>return value</Type>
 <Scope></Scope>
@@ -198,7 +198,7 @@
 <Attribute>data</Attribute>
 </RtlPorts>
 <RtlPorts>
-<name>grp_fu_355_p_ce</name>
+<name>grp_fu_393_p_ce</name>
 <Object>UpConv_Fused_Row&lt;8, 128, 128, 120, 60&gt;_Pipeline_PIXEL_STATS</Object>
 <Type>return value</Type>
 <Scope></Scope>
@@ -209,7 +209,7 @@
 <Attribute>data</Attribute>
 </RtlPorts>
 <RtlPorts>
-<name>grp_fu_448_p_din0</name>
+<name>grp_fu_531_p_din0</name>
 <Object>UpConv_Fused_Row&lt;8, 128, 128, 120, 60&gt;_Pipeline_PIXEL_STATS</Object>
 <Type>return value</Type>
 <Scope></Scope>
@@ -220,7 +220,7 @@
 <Attribute>data</Attribute>
 </RtlPorts>
 <RtlPorts>
-<name>grp_fu_448_p_din1</name>
+<name>grp_fu_531_p_din1</name>
 <Object>UpConv_Fused_Row&lt;8, 128, 128, 120, 60&gt;_Pipeline_PIXEL_STATS</Object>
 <Type>return value</Type>
 <Scope></Scope>
@@ -231,7 +231,7 @@
 <Attribute>data</Attribute>
 </RtlPorts>
 <RtlPorts>
-<name>grp_fu_448_p_dout0</name>
+<name>grp_fu_531_p_dout0</name>
 <Object>UpConv_Fused_Row&lt;8, 128, 128, 120, 60&gt;_Pipeline_PIXEL_STATS</Object>
 <Type>return value</Type>
 <Scope></Scope>
@@ -242,7 +242,7 @@
 <Attribute>data</Attribute>
 </RtlPorts>
 <RtlPorts>
-<name>grp_fu_448_p_ce</name>
+<name>grp_fu_531_p_ce</name>
 <Object>UpConv_Fused_Row&lt;8, 128, 128, 120, 60&gt;_Pipeline_PIXEL_STATS</Object>
 <Type>return value</Type>
 <Scope></Scope>
@@ -253,8 +253,8 @@
 <Attribute>data</Attribute>
 </RtlPorts>
 <RtlPorts>
-<name>conv1</name>
-<Object>conv1</Object>
+<name>conv42_i</name>
+<Object>conv42_i</Object>
 <Type>scalar</Type>
 <Scope></Scope>
 <IOProtocol>ap_none</IOProtocol>

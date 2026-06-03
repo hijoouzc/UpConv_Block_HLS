@@ -1,3 +1,3 @@
-32 errors generated.
+34 errors generated.
 Error while processing /home/hoinguyen/Documents/Vitis/UpConv_HLS/upconv_block2/upconv_core_top_ucb2/hls/.autopilot/db/upconv_core_top_ucb2.pp.0.cpp.
-clang-tidy applied 137 of 137 suggested fixes.
+clang-tidy applied 135 of 135 suggested fixes.

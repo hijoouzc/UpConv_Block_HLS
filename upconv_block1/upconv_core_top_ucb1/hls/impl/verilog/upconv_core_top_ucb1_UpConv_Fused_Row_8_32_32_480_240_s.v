@@ -163,147 +163,50 @@ module upconv_core_top_ucb1_UpConv_Fused_Row_8_32_32_480_240_s (
         x_buf_q0
 );
 
-parameter    ap_ST_fsm_state1 = 141'd1;
-parameter    ap_ST_fsm_state2 = 141'd2;
-parameter    ap_ST_fsm_state3 = 141'd4;
-parameter    ap_ST_fsm_state4 = 141'd8;
-parameter    ap_ST_fsm_state5 = 141'd16;
-parameter    ap_ST_fsm_state6 = 141'd32;
-parameter    ap_ST_fsm_state7 = 141'd64;
-parameter    ap_ST_fsm_state8 = 141'd128;
-parameter    ap_ST_fsm_state9 = 141'd256;
-parameter    ap_ST_fsm_state10 = 141'd512;
-parameter    ap_ST_fsm_state11 = 141'd1024;
-parameter    ap_ST_fsm_state12 = 141'd2048;
-parameter    ap_ST_fsm_state13 = 141'd4096;
-parameter    ap_ST_fsm_state14 = 141'd8192;
-parameter    ap_ST_fsm_state15 = 141'd16384;
-parameter    ap_ST_fsm_state16 = 141'd32768;
-parameter    ap_ST_fsm_state17 = 141'd65536;
-parameter    ap_ST_fsm_state18 = 141'd131072;
-parameter    ap_ST_fsm_state19 = 141'd262144;
-parameter    ap_ST_fsm_state20 = 141'd524288;
-parameter    ap_ST_fsm_state21 = 141'd1048576;
-parameter    ap_ST_fsm_state22 = 141'd2097152;
-parameter    ap_ST_fsm_state23 = 141'd4194304;
-parameter    ap_ST_fsm_state24 = 141'd8388608;
-parameter    ap_ST_fsm_state25 = 141'd16777216;
-parameter    ap_ST_fsm_state26 = 141'd33554432;
-parameter    ap_ST_fsm_state27 = 141'd67108864;
-parameter    ap_ST_fsm_state28 = 141'd134217728;
-parameter    ap_ST_fsm_state29 = 141'd268435456;
-parameter    ap_ST_fsm_state30 = 141'd536870912;
-parameter    ap_ST_fsm_state31 = 141'd1073741824;
-parameter    ap_ST_fsm_state32 = 141'd2147483648;
-parameter    ap_ST_fsm_state33 = 141'd4294967296;
-parameter    ap_ST_fsm_state34 = 141'd8589934592;
-parameter    ap_ST_fsm_state35 = 141'd17179869184;
-parameter    ap_ST_fsm_state36 = 141'd34359738368;
-parameter    ap_ST_fsm_state37 = 141'd68719476736;
-parameter    ap_ST_fsm_state38 = 141'd137438953472;
-parameter    ap_ST_fsm_state39 = 141'd274877906944;
-parameter    ap_ST_fsm_state40 = 141'd549755813888;
-parameter    ap_ST_fsm_state41 = 141'd1099511627776;
-parameter    ap_ST_fsm_state42 = 141'd2199023255552;
-parameter    ap_ST_fsm_state43 = 141'd4398046511104;
-parameter    ap_ST_fsm_state44 = 141'd8796093022208;
-parameter    ap_ST_fsm_state45 = 141'd17592186044416;
-parameter    ap_ST_fsm_state46 = 141'd35184372088832;
-parameter    ap_ST_fsm_state47 = 141'd70368744177664;
-parameter    ap_ST_fsm_state48 = 141'd140737488355328;
-parameter    ap_ST_fsm_state49 = 141'd281474976710656;
-parameter    ap_ST_fsm_state50 = 141'd562949953421312;
-parameter    ap_ST_fsm_state51 = 141'd1125899906842624;
-parameter    ap_ST_fsm_state52 = 141'd2251799813685248;
-parameter    ap_ST_fsm_state53 = 141'd4503599627370496;
-parameter    ap_ST_fsm_state54 = 141'd9007199254740992;
-parameter    ap_ST_fsm_state55 = 141'd18014398509481984;
-parameter    ap_ST_fsm_state56 = 141'd36028797018963968;
-parameter    ap_ST_fsm_state57 = 141'd72057594037927936;
-parameter    ap_ST_fsm_state58 = 141'd144115188075855872;
-parameter    ap_ST_fsm_state59 = 141'd288230376151711744;
-parameter    ap_ST_fsm_state60 = 141'd576460752303423488;
-parameter    ap_ST_fsm_state61 = 141'd1152921504606846976;
-parameter    ap_ST_fsm_state62 = 141'd2305843009213693952;
-parameter    ap_ST_fsm_state63 = 141'd4611686018427387904;
-parameter    ap_ST_fsm_state64 = 141'd9223372036854775808;
-parameter    ap_ST_fsm_state65 = 141'd18446744073709551616;
-parameter    ap_ST_fsm_state66 = 141'd36893488147419103232;
-parameter    ap_ST_fsm_state67 = 141'd73786976294838206464;
-parameter    ap_ST_fsm_state68 = 141'd147573952589676412928;
-parameter    ap_ST_fsm_state69 = 141'd295147905179352825856;
-parameter    ap_ST_fsm_state70 = 141'd590295810358705651712;
-parameter    ap_ST_fsm_state71 = 141'd1180591620717411303424;
-parameter    ap_ST_fsm_state72 = 141'd2361183241434822606848;
-parameter    ap_ST_fsm_state73 = 141'd4722366482869645213696;
-parameter    ap_ST_fsm_state74 = 141'd9444732965739290427392;
-parameter    ap_ST_fsm_state75 = 141'd18889465931478580854784;
-parameter    ap_ST_fsm_state76 = 141'd37778931862957161709568;
-parameter    ap_ST_fsm_state77 = 141'd75557863725914323419136;
-parameter    ap_ST_fsm_state78 = 141'd151115727451828646838272;
-parameter    ap_ST_fsm_state79 = 141'd302231454903657293676544;
-parameter    ap_ST_fsm_state80 = 141'd604462909807314587353088;
-parameter    ap_ST_fsm_state81 = 141'd1208925819614629174706176;
-parameter    ap_ST_fsm_state82 = 141'd2417851639229258349412352;
-parameter    ap_ST_fsm_state83 = 141'd4835703278458516698824704;
-parameter    ap_ST_fsm_state84 = 141'd9671406556917033397649408;
-parameter    ap_ST_fsm_state85 = 141'd19342813113834066795298816;
-parameter    ap_ST_fsm_state86 = 141'd38685626227668133590597632;
-parameter    ap_ST_fsm_state87 = 141'd77371252455336267181195264;
-parameter    ap_ST_fsm_state88 = 141'd154742504910672534362390528;
-parameter    ap_ST_fsm_state89 = 141'd309485009821345068724781056;
-parameter    ap_ST_fsm_state90 = 141'd618970019642690137449562112;
-parameter    ap_ST_fsm_state91 = 141'd1237940039285380274899124224;
-parameter    ap_ST_fsm_state92 = 141'd2475880078570760549798248448;
-parameter    ap_ST_fsm_state93 = 141'd4951760157141521099596496896;
-parameter    ap_ST_fsm_state94 = 141'd9903520314283042199192993792;
-parameter    ap_ST_fsm_state95 = 141'd19807040628566084398385987584;
-parameter    ap_ST_fsm_state96 = 141'd39614081257132168796771975168;
-parameter    ap_ST_fsm_state97 = 141'd79228162514264337593543950336;
-parameter    ap_ST_fsm_state98 = 141'd158456325028528675187087900672;
-parameter    ap_ST_fsm_state99 = 141'd316912650057057350374175801344;
-parameter    ap_ST_fsm_state100 = 141'd633825300114114700748351602688;
-parameter    ap_ST_fsm_state101 = 141'd1267650600228229401496703205376;
-parameter    ap_ST_fsm_state102 = 141'd2535301200456458802993406410752;
-parameter    ap_ST_fsm_state103 = 141'd5070602400912917605986812821504;
-parameter    ap_ST_fsm_state104 = 141'd10141204801825835211973625643008;
-parameter    ap_ST_fsm_state105 = 141'd20282409603651670423947251286016;
-parameter    ap_ST_fsm_state106 = 141'd40564819207303340847894502572032;
-parameter    ap_ST_fsm_state107 = 141'd81129638414606681695789005144064;
-parameter    ap_ST_fsm_state108 = 141'd162259276829213363391578010288128;
-parameter    ap_ST_fsm_state109 = 141'd324518553658426726783156020576256;
-parameter    ap_ST_fsm_state110 = 141'd649037107316853453566312041152512;
-parameter    ap_ST_fsm_state111 = 141'd1298074214633706907132624082305024;
-parameter    ap_ST_fsm_state112 = 141'd2596148429267413814265248164610048;
-parameter    ap_ST_fsm_state113 = 141'd5192296858534827628530496329220096;
-parameter    ap_ST_fsm_state114 = 141'd10384593717069655257060992658440192;
-parameter    ap_ST_fsm_state115 = 141'd20769187434139310514121985316880384;
-parameter    ap_ST_fsm_state116 = 141'd41538374868278621028243970633760768;
-parameter    ap_ST_fsm_state117 = 141'd83076749736557242056487941267521536;
-parameter    ap_ST_fsm_state118 = 141'd166153499473114484112975882535043072;
-parameter    ap_ST_fsm_state119 = 141'd332306998946228968225951765070086144;
-parameter    ap_ST_fsm_state120 = 141'd664613997892457936451903530140172288;
-parameter    ap_ST_fsm_state121 = 141'd1329227995784915872903807060280344576;
-parameter    ap_ST_fsm_state122 = 141'd2658455991569831745807614120560689152;
-parameter    ap_ST_fsm_state123 = 141'd5316911983139663491615228241121378304;
-parameter    ap_ST_fsm_state124 = 141'd10633823966279326983230456482242756608;
-parameter    ap_ST_fsm_state125 = 141'd21267647932558653966460912964485513216;
-parameter    ap_ST_fsm_state126 = 141'd42535295865117307932921825928971026432;
-parameter    ap_ST_fsm_state127 = 141'd85070591730234615865843651857942052864;
-parameter    ap_ST_fsm_state128 = 141'd170141183460469231731687303715884105728;
-parameter    ap_ST_fsm_state129 = 141'd340282366920938463463374607431768211456;
-parameter    ap_ST_fsm_state130 = 141'd680564733841876926926749214863536422912;
-parameter    ap_ST_fsm_state131 = 141'd1361129467683753853853498429727072845824;
-parameter    ap_ST_fsm_state132 = 141'd2722258935367507707706996859454145691648;
-parameter    ap_ST_fsm_state133 = 141'd5444517870735015415413993718908291383296;
-parameter    ap_ST_fsm_state134 = 141'd10889035741470030830827987437816582766592;
-parameter    ap_ST_fsm_state135 = 141'd21778071482940061661655974875633165533184;
-parameter    ap_ST_fsm_state136 = 141'd43556142965880123323311949751266331066368;
-parameter    ap_ST_fsm_state137 = 141'd87112285931760246646623899502532662132736;
-parameter    ap_ST_fsm_state138 = 141'd174224571863520493293247799005065324265472;
-parameter    ap_ST_fsm_state139 = 141'd348449143727040986586495598010130648530944;
-parameter    ap_ST_fsm_state140 = 141'd696898287454081973172991196020261297061888;
-parameter    ap_ST_fsm_state141 = 141'd1393796574908163946345982392040522594123776;
+parameter    ap_ST_fsm_state1 = 44'd1;
+parameter    ap_ST_fsm_state2 = 44'd2;
+parameter    ap_ST_fsm_state3 = 44'd4;
+parameter    ap_ST_fsm_state4 = 44'd8;
+parameter    ap_ST_fsm_state5 = 44'd16;
+parameter    ap_ST_fsm_state6 = 44'd32;
+parameter    ap_ST_fsm_state7 = 44'd64;
+parameter    ap_ST_fsm_state8 = 44'd128;
+parameter    ap_ST_fsm_state9 = 44'd256;
+parameter    ap_ST_fsm_state10 = 44'd512;
+parameter    ap_ST_fsm_state11 = 44'd1024;
+parameter    ap_ST_fsm_state12 = 44'd2048;
+parameter    ap_ST_fsm_state13 = 44'd4096;
+parameter    ap_ST_fsm_state14 = 44'd8192;
+parameter    ap_ST_fsm_state15 = 44'd16384;
+parameter    ap_ST_fsm_state16 = 44'd32768;
+parameter    ap_ST_fsm_state17 = 44'd65536;
+parameter    ap_ST_fsm_state18 = 44'd131072;
+parameter    ap_ST_fsm_state19 = 44'd262144;
+parameter    ap_ST_fsm_state20 = 44'd524288;
+parameter    ap_ST_fsm_state21 = 44'd1048576;
+parameter    ap_ST_fsm_state22 = 44'd2097152;
+parameter    ap_ST_fsm_state23 = 44'd4194304;
+parameter    ap_ST_fsm_state24 = 44'd8388608;
+parameter    ap_ST_fsm_state25 = 44'd16777216;
+parameter    ap_ST_fsm_state26 = 44'd33554432;
+parameter    ap_ST_fsm_state27 = 44'd67108864;
+parameter    ap_ST_fsm_state28 = 44'd134217728;
+parameter    ap_ST_fsm_state29 = 44'd268435456;
+parameter    ap_ST_fsm_state30 = 44'd536870912;
+parameter    ap_ST_fsm_state31 = 44'd1073741824;
+parameter    ap_ST_fsm_state32 = 44'd2147483648;
+parameter    ap_ST_fsm_state33 = 44'd4294967296;
+parameter    ap_ST_fsm_state34 = 44'd8589934592;
+parameter    ap_ST_fsm_state35 = 44'd17179869184;
+parameter    ap_ST_fsm_state36 = 44'd34359738368;
+parameter    ap_ST_fsm_state37 = 44'd68719476736;
+parameter    ap_ST_fsm_state38 = 44'd137438953472;
+parameter    ap_ST_fsm_state39 = 44'd274877906944;
+parameter    ap_ST_fsm_state40 = 44'd549755813888;
+parameter    ap_ST_fsm_state41 = 44'd1099511627776;
+parameter    ap_ST_fsm_state42 = 44'd2199023255552;
+parameter    ap_ST_fsm_state43 = 44'd4398046511104;
+parameter    ap_ST_fsm_state44 = 44'd8796093022208;
 
 input   ap_clk;
 input   ap_rst;
@@ -476,22 +379,21 @@ reg[3:0] m_axi_gmem_weight_0_ARQOS;
 reg[3:0] m_axi_gmem_weight_0_ARREGION;
 reg[0:0] m_axi_gmem_weight_0_ARUSER;
 reg m_axi_gmem_weight_0_RREADY;
-reg m_axi_gmem_out_0_AWVALID;
-reg[63:0] m_axi_gmem_out_0_AWADDR;
-reg[0:0] m_axi_gmem_out_0_AWID;
-reg[31:0] m_axi_gmem_out_0_AWLEN;
-reg[2:0] m_axi_gmem_out_0_AWSIZE;
-reg[1:0] m_axi_gmem_out_0_AWBURST;
-reg[1:0] m_axi_gmem_out_0_AWLOCK;
-reg[3:0] m_axi_gmem_out_0_AWCACHE;
-reg[2:0] m_axi_gmem_out_0_AWPROT;
-reg[3:0] m_axi_gmem_out_0_AWQOS;
-reg[3:0] m_axi_gmem_out_0_AWREGION;
-reg[0:0] m_axi_gmem_out_0_AWUSER;
-reg m_axi_gmem_out_0_WVALID;
-reg m_axi_gmem_out_0_BREADY;
+reg m_axi_gmem_param_0_ARVALID;
+reg[63:0] m_axi_gmem_param_0_ARADDR;
+reg[0:0] m_axi_gmem_param_0_ARID;
+reg[31:0] m_axi_gmem_param_0_ARLEN;
+reg[2:0] m_axi_gmem_param_0_ARSIZE;
+reg[1:0] m_axi_gmem_param_0_ARBURST;
+reg[1:0] m_axi_gmem_param_0_ARLOCK;
+reg[3:0] m_axi_gmem_param_0_ARCACHE;
+reg[2:0] m_axi_gmem_param_0_ARPROT;
+reg[3:0] m_axi_gmem_param_0_ARQOS;
+reg[3:0] m_axi_gmem_param_0_ARREGION;
+reg[0:0] m_axi_gmem_param_0_ARUSER;
+reg m_axi_gmem_param_0_RREADY;
 
-(* fsm_encoding = "none" *) reg   [140:0] ap_CS_fsm;
+(* fsm_encoding = "none" *) reg   [43:0] ap_CS_fsm;
 wire    ap_CS_fsm_state1;
 reg   [9:0] void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_9_address0;
 reg    void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_9_ce0;
@@ -500,7 +402,6 @@ reg   [15:0] void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_c
 wire   [15:0] void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_9_q0;
 reg   [9:0] void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_9_address1;
 reg    void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_9_ce1;
-reg    void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_9_we1;
 wire   [15:0] void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_9_q1;
 reg   [9:0] void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_8_address0;
 reg    void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_8_ce0;
@@ -509,7 +410,6 @@ reg   [15:0] void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_c
 wire   [15:0] void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_8_q0;
 reg   [9:0] void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_8_address1;
 reg    void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_8_ce1;
-reg    void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_8_we1;
 wire   [15:0] void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_8_q1;
 reg   [9:0] void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_7_address0;
 reg    void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_7_ce0;
@@ -518,7 +418,6 @@ reg   [15:0] void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_c
 wire   [15:0] void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_7_q0;
 reg   [9:0] void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_7_address1;
 reg    void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_7_ce1;
-reg    void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_7_we1;
 wire   [15:0] void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_7_q1;
 reg   [9:0] void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_6_address0;
 reg    void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_6_ce0;
@@ -527,7 +426,6 @@ reg   [15:0] void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_c
 wire   [15:0] void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_6_q0;
 reg   [9:0] void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_6_address1;
 reg    void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_6_ce1;
-reg    void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_6_we1;
 wire   [15:0] void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_6_q1;
 reg   [9:0] void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_5_address0;
 reg    void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_5_ce0;
@@ -536,7 +434,6 @@ reg   [15:0] void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_c
 wire   [15:0] void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_5_q0;
 reg   [9:0] void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_5_address1;
 reg    void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_5_ce1;
-reg    void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_5_we1;
 wire   [15:0] void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_5_q1;
 reg   [9:0] void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_4_address0;
 reg    void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_4_ce0;
@@ -545,7 +442,6 @@ reg   [15:0] void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_c
 wire   [15:0] void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_4_q0;
 reg   [9:0] void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_4_address1;
 reg    void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_4_ce1;
-reg    void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_4_we1;
 wire   [15:0] void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_4_q1;
 reg   [9:0] void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_3_address0;
 reg    void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_3_ce0;
@@ -554,7 +450,6 @@ reg   [15:0] void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_c
 wire   [15:0] void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_3_q0;
 reg   [9:0] void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_3_address1;
 reg    void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_3_ce1;
-reg    void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_3_we1;
 wire   [15:0] void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_3_q1;
 reg   [9:0] void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_2_address0;
 reg    void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_2_ce0;
@@ -563,7 +458,6 @@ reg   [15:0] void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_c
 wire   [15:0] void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_2_q0;
 reg   [9:0] void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_2_address1;
 reg    void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_2_ce1;
-reg    void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_2_we1;
 wire   [15:0] void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_2_q1;
 reg   [9:0] void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_1_address0;
 reg    void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_1_ce0;
@@ -572,7 +466,6 @@ reg   [15:0] void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_c
 wire   [15:0] void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_1_q0;
 reg   [9:0] void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_1_address1;
 reg    void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_1_ce1;
-reg    void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_1_we1;
 wire   [15:0] void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_1_q1;
 reg   [9:0] void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_address0;
 reg    void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_ce0;
@@ -581,7 +474,6 @@ reg   [15:0] void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_c
 wire   [15:0] void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_q0;
 reg   [9:0] void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_address1;
 reg    void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_ce1;
-reg    void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_we1;
 wire   [15:0] void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_q1;
 reg   [9:0] p_ZZ16UpConv_Fused_RowILi8ELi32ELi32ELi480ELi240EEvP7ap_uintILi256EEPKS1_S4_S4_S4_5_address0;
 reg    p_ZZ16UpConv_Fused_RowILi8ELi32ELi32ELi480ELi240EEvP7ap_uintILi256EEPKS1_S4_S4_S4_5_ce0;
@@ -590,7 +482,6 @@ reg   [15:0] p_ZZ16UpConv_Fused_RowILi8ELi32ELi32ELi480ELi240EEvP7ap_uintILi256E
 wire   [15:0] p_ZZ16UpConv_Fused_RowILi8ELi32ELi32ELi480ELi240EEvP7ap_uintILi256EEPKS1_S4_S4_S4_5_q0;
 reg   [9:0] p_ZZ16UpConv_Fused_RowILi8ELi32ELi32ELi480ELi240EEvP7ap_uintILi256EEPKS1_S4_S4_S4_5_address1;
 reg    p_ZZ16UpConv_Fused_RowILi8ELi32ELi32ELi480ELi240EEvP7ap_uintILi256EEPKS1_S4_S4_S4_5_ce1;
-reg    p_ZZ16UpConv_Fused_RowILi8ELi32ELi32ELi480ELi240EEvP7ap_uintILi256EEPKS1_S4_S4_S4_5_we1;
 wire   [15:0] p_ZZ16UpConv_Fused_RowILi8ELi32ELi32ELi480ELi240EEvP7ap_uintILi256EEPKS1_S4_S4_S4_5_q1;
 reg   [9:0] p_ZZ16UpConv_Fused_RowILi8ELi32ELi32ELi480ELi240EEvP7ap_uintILi256EEPKS1_S4_S4_S4_4_address0;
 reg    p_ZZ16UpConv_Fused_RowILi8ELi32ELi32ELi480ELi240EEvP7ap_uintILi256EEPKS1_S4_S4_S4_4_ce0;
@@ -599,7 +490,6 @@ reg   [15:0] p_ZZ16UpConv_Fused_RowILi8ELi32ELi32ELi480ELi240EEvP7ap_uintILi256E
 wire   [15:0] p_ZZ16UpConv_Fused_RowILi8ELi32ELi32ELi480ELi240EEvP7ap_uintILi256EEPKS1_S4_S4_S4_4_q0;
 reg   [9:0] p_ZZ16UpConv_Fused_RowILi8ELi32ELi32ELi480ELi240EEvP7ap_uintILi256EEPKS1_S4_S4_S4_4_address1;
 reg    p_ZZ16UpConv_Fused_RowILi8ELi32ELi32ELi480ELi240EEvP7ap_uintILi256EEPKS1_S4_S4_S4_4_ce1;
-reg    p_ZZ16UpConv_Fused_RowILi8ELi32ELi32ELi480ELi240EEvP7ap_uintILi256EEPKS1_S4_S4_S4_4_we1;
 wire   [15:0] p_ZZ16UpConv_Fused_RowILi8ELi32ELi32ELi480ELi240EEvP7ap_uintILi256EEPKS1_S4_S4_S4_4_q1;
 reg   [9:0] p_ZZ16UpConv_Fused_RowILi8ELi32ELi32ELi480ELi240EEvP7ap_uintILi256EEPKS1_S4_S4_S4_3_address0;
 reg    p_ZZ16UpConv_Fused_RowILi8ELi32ELi32ELi480ELi240EEvP7ap_uintILi256EEPKS1_S4_S4_S4_3_ce0;
@@ -608,7 +498,6 @@ reg   [15:0] p_ZZ16UpConv_Fused_RowILi8ELi32ELi32ELi480ELi240EEvP7ap_uintILi256E
 wire   [15:0] p_ZZ16UpConv_Fused_RowILi8ELi32ELi32ELi480ELi240EEvP7ap_uintILi256EEPKS1_S4_S4_S4_3_q0;
 reg   [9:0] p_ZZ16UpConv_Fused_RowILi8ELi32ELi32ELi480ELi240EEvP7ap_uintILi256EEPKS1_S4_S4_S4_3_address1;
 reg    p_ZZ16UpConv_Fused_RowILi8ELi32ELi32ELi480ELi240EEvP7ap_uintILi256EEPKS1_S4_S4_S4_3_ce1;
-reg    p_ZZ16UpConv_Fused_RowILi8ELi32ELi32ELi480ELi240EEvP7ap_uintILi256EEPKS1_S4_S4_S4_3_we1;
 wire   [15:0] p_ZZ16UpConv_Fused_RowILi8ELi32ELi32ELi480ELi240EEvP7ap_uintILi256EEPKS1_S4_S4_S4_3_q1;
 reg   [9:0] p_ZZ16UpConv_Fused_RowILi8ELi32ELi32ELi480ELi240EEvP7ap_uintILi256EEPKS1_S4_S4_S4_2_address0;
 reg    p_ZZ16UpConv_Fused_RowILi8ELi32ELi32ELi480ELi240EEvP7ap_uintILi256EEPKS1_S4_S4_S4_2_ce0;
@@ -617,7 +506,6 @@ reg   [15:0] p_ZZ16UpConv_Fused_RowILi8ELi32ELi32ELi480ELi240EEvP7ap_uintILi256E
 wire   [15:0] p_ZZ16UpConv_Fused_RowILi8ELi32ELi32ELi480ELi240EEvP7ap_uintILi256EEPKS1_S4_S4_S4_2_q0;
 reg   [9:0] p_ZZ16UpConv_Fused_RowILi8ELi32ELi32ELi480ELi240EEvP7ap_uintILi256EEPKS1_S4_S4_S4_2_address1;
 reg    p_ZZ16UpConv_Fused_RowILi8ELi32ELi32ELi480ELi240EEvP7ap_uintILi256EEPKS1_S4_S4_S4_2_ce1;
-reg    p_ZZ16UpConv_Fused_RowILi8ELi32ELi32ELi480ELi240EEvP7ap_uintILi256EEPKS1_S4_S4_S4_2_we1;
 wire   [15:0] p_ZZ16UpConv_Fused_RowILi8ELi32ELi32ELi480ELi240EEvP7ap_uintILi256EEPKS1_S4_S4_S4_2_q1;
 reg   [9:0] p_ZZ16UpConv_Fused_RowILi8ELi32ELi32ELi480ELi240EEvP7ap_uintILi256EEPKS1_S4_S4_S4_1_address0;
 reg    p_ZZ16UpConv_Fused_RowILi8ELi32ELi32ELi480ELi240EEvP7ap_uintILi256EEPKS1_S4_S4_S4_1_ce0;
@@ -626,7 +514,6 @@ reg   [15:0] p_ZZ16UpConv_Fused_RowILi8ELi32ELi32ELi480ELi240EEvP7ap_uintILi256E
 wire   [15:0] p_ZZ16UpConv_Fused_RowILi8ELi32ELi32ELi480ELi240EEvP7ap_uintILi256EEPKS1_S4_S4_S4_1_q0;
 reg   [9:0] p_ZZ16UpConv_Fused_RowILi8ELi32ELi32ELi480ELi240EEvP7ap_uintILi256EEPKS1_S4_S4_S4_1_address1;
 reg    p_ZZ16UpConv_Fused_RowILi8ELi32ELi32ELi480ELi240EEvP7ap_uintILi256EEPKS1_S4_S4_S4_1_ce1;
-reg    p_ZZ16UpConv_Fused_RowILi8ELi32ELi32ELi480ELi240EEvP7ap_uintILi256EEPKS1_S4_S4_S4_1_we1;
 wire   [15:0] p_ZZ16UpConv_Fused_RowILi8ELi32ELi32ELi480ELi240EEvP7ap_uintILi256EEPKS1_S4_S4_S4_1_q1;
 reg   [9:0] p_ZZ16UpConv_Fused_RowILi8ELi32ELi32ELi480ELi240EEvP7ap_uintILi256EEPKS1_S4_S4_S4_address0;
 reg    p_ZZ16UpConv_Fused_RowILi8ELi32ELi32ELi480ELi240EEvP7ap_uintILi256EEPKS1_S4_S4_S4_ce0;
@@ -635,48 +522,39 @@ reg   [15:0] p_ZZ16UpConv_Fused_RowILi8ELi32ELi32ELi480ELi240EEvP7ap_uintILi256E
 wire   [15:0] p_ZZ16UpConv_Fused_RowILi8ELi32ELi32ELi480ELi240EEvP7ap_uintILi256EEPKS1_S4_S4_S4_q0;
 reg   [9:0] p_ZZ16UpConv_Fused_RowILi8ELi32ELi32ELi480ELi240EEvP7ap_uintILi256EEPKS1_S4_S4_S4_address1;
 reg    p_ZZ16UpConv_Fused_RowILi8ELi32ELi32ELi480ELi240EEvP7ap_uintILi256EEPKS1_S4_S4_S4_ce1;
-reg    p_ZZ16UpConv_Fused_RowILi8ELi32ELi32ELi480ELi240EEvP7ap_uintILi256EEPKS1_S4_S4_S4_we1;
 wire   [15:0] p_ZZ16UpConv_Fused_RowILi8ELi32ELi32ELi480ELi240EEvP7ap_uintILi256EEPKS1_S4_S4_S4_q1;
+reg    mean_buf_ce0;
+wire   [31:0] mean_buf_q0;
+reg    mean_buf_ce1;
+reg    mean_buf_we1;
+reg    inv_buf_ce0;
+wire   [15:0] inv_buf_q0;
+reg    inv_buf_ce1;
+reg    inv_buf_we1;
 reg    gmem_weight_blk_n_AR;
 wire    ap_CS_fsm_state3;
-reg    gmem_out_blk_n_AW;
+reg    gmem_param_blk_n_AR;
 wire    ap_CS_fsm_state13;
-reg    gmem_out_blk_n_B;
-wire    ap_CS_fsm_state141;
-wire   [31:0] grp_fu_422_p2;
-reg   [31:0] reg_441;
-wire    ap_CS_fsm_state46;
-wire    ap_CS_fsm_state53;
-wire    ap_CS_fsm_state133;
-wire   [31:0] grp_fu_414_p2;
-reg   [31:0] reg_449;
-wire    ap_CS_fsm_state64;
-wire    ap_CS_fsm_state75;
-reg   [58:0] trunc_ln2_reg_648;
-reg   [58:0] trunc_ln228_1_reg_653;
-reg   [58:0] trunc_ln228_2_reg_658;
-wire  signed [58:0] trunc_ln_fu_493_p4;
-reg   [58:0] trunc_ln_reg_663;
+wire    ap_CS_fsm_state23;
+wire    ap_CS_fsm_state33;
+wire  signed [58:0] trunc_ln_fu_409_p4;
+reg   [58:0] trunc_ln_reg_512;
 wire    ap_CS_fsm_state11;
-wire   [6:0] add52_fu_518_p2;
-reg   [6:0] add52_reg_679;
-wire    ap_CS_fsm_state12;
-reg   [58:0] trunc_ln3_reg_689;
-wire   [31:0] grp_fu_437_p1;
-reg   [31:0] conv1_reg_695;
-wire   [9:0] sub_ln246_fu_610_p2;
-reg   [9:0] sub_ln246_reg_708;
-wire    ap_CS_fsm_state14;
-wire   [15:0] grp_fu_433_p1;
-reg   [15:0] conv3_reg_720;
-wire    ap_CS_fsm_state48;
-wire   [31:0] grp_fu_418_p2;
-reg   [31:0] mul_reg_725;
-wire   [31:0] grp_fu_428_p2;
-reg   [31:0] tmp_reg_730;
-wire    ap_CS_fsm_state103;
-reg   [15:0] inv_std_reg_735;
-wire    ap_CS_fsm_state135;
+wire   [6:0] add_i90_fu_434_p2;
+reg   [6:0] add_i90_reg_527;
+wire  signed [58:0] trunc_ln3_fu_441_p4;
+reg   [58:0] trunc_ln3_reg_532;
+wire  signed [58:0] trunc_ln4_fu_462_p4;
+reg   [58:0] trunc_ln4_reg_542;
+wire    ap_CS_fsm_state29;
+wire   [31:0] grp_fu_405_p1;
+reg   [31:0] conv42_i_reg_557;
+wire    ap_CS_fsm_state30;
+wire  signed [58:0] trunc_ln6_fu_483_p4;
+reg   [58:0] trunc_ln6_reg_562;
+wire    ap_CS_fsm_state43;
+wire   [11:0] mul43_i_fu_504_p3;
+reg   [11:0] mul43_i_reg_577;
 reg   [3:0] b_buf_address0;
 reg    b_buf_ce0;
 reg    b_buf_we0;
@@ -689,999 +567,1032 @@ reg   [3:0] be_buf_address0;
 reg    be_buf_ce0;
 reg    be_buf_we0;
 wire   [255:0] be_buf_q0;
-wire    grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_RESET_ROW_ACC_fu_237_ap_start;
-wire    grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_RESET_ROW_ACC_fu_237_ap_done;
-wire    grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_RESET_ROW_ACC_fu_237_ap_idle;
-wire    grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_RESET_ROW_ACC_fu_237_ap_ready;
-wire   [9:0] grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_RESET_ROW_ACC_fu_237_void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_9_address0;
-wire    grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_RESET_ROW_ACC_fu_237_void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_9_ce0;
-wire    grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_RESET_ROW_ACC_fu_237_void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_9_we0;
-wire   [15:0] grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_RESET_ROW_ACC_fu_237_void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_9_d0;
-wire   [9:0] grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_RESET_ROW_ACC_fu_237_void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_9_address1;
-wire    grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_RESET_ROW_ACC_fu_237_void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_9_ce1;
-wire    grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_RESET_ROW_ACC_fu_237_void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_9_we1;
-wire   [15:0] grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_RESET_ROW_ACC_fu_237_void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_9_d1;
-wire   [9:0] grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_RESET_ROW_ACC_fu_237_void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_8_address0;
-wire    grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_RESET_ROW_ACC_fu_237_void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_8_ce0;
-wire    grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_RESET_ROW_ACC_fu_237_void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_8_we0;
-wire   [15:0] grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_RESET_ROW_ACC_fu_237_void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_8_d0;
-wire   [9:0] grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_RESET_ROW_ACC_fu_237_void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_8_address1;
-wire    grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_RESET_ROW_ACC_fu_237_void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_8_ce1;
-wire    grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_RESET_ROW_ACC_fu_237_void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_8_we1;
-wire   [15:0] grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_RESET_ROW_ACC_fu_237_void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_8_d1;
-wire   [9:0] grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_RESET_ROW_ACC_fu_237_void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_7_address0;
-wire    grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_RESET_ROW_ACC_fu_237_void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_7_ce0;
-wire    grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_RESET_ROW_ACC_fu_237_void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_7_we0;
-wire   [15:0] grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_RESET_ROW_ACC_fu_237_void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_7_d0;
-wire   [9:0] grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_RESET_ROW_ACC_fu_237_void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_7_address1;
-wire    grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_RESET_ROW_ACC_fu_237_void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_7_ce1;
-wire    grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_RESET_ROW_ACC_fu_237_void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_7_we1;
-wire   [15:0] grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_RESET_ROW_ACC_fu_237_void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_7_d1;
-wire   [9:0] grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_RESET_ROW_ACC_fu_237_void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_6_address0;
-wire    grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_RESET_ROW_ACC_fu_237_void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_6_ce0;
-wire    grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_RESET_ROW_ACC_fu_237_void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_6_we0;
-wire   [15:0] grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_RESET_ROW_ACC_fu_237_void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_6_d0;
-wire   [9:0] grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_RESET_ROW_ACC_fu_237_void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_6_address1;
-wire    grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_RESET_ROW_ACC_fu_237_void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_6_ce1;
-wire    grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_RESET_ROW_ACC_fu_237_void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_6_we1;
-wire   [15:0] grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_RESET_ROW_ACC_fu_237_void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_6_d1;
-wire   [9:0] grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_RESET_ROW_ACC_fu_237_void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_5_address0;
-wire    grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_RESET_ROW_ACC_fu_237_void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_5_ce0;
-wire    grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_RESET_ROW_ACC_fu_237_void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_5_we0;
-wire   [15:0] grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_RESET_ROW_ACC_fu_237_void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_5_d0;
-wire   [9:0] grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_RESET_ROW_ACC_fu_237_void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_5_address1;
-wire    grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_RESET_ROW_ACC_fu_237_void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_5_ce1;
-wire    grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_RESET_ROW_ACC_fu_237_void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_5_we1;
-wire   [15:0] grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_RESET_ROW_ACC_fu_237_void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_5_d1;
-wire   [9:0] grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_RESET_ROW_ACC_fu_237_void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_4_address0;
-wire    grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_RESET_ROW_ACC_fu_237_void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_4_ce0;
-wire    grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_RESET_ROW_ACC_fu_237_void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_4_we0;
-wire   [15:0] grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_RESET_ROW_ACC_fu_237_void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_4_d0;
-wire   [9:0] grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_RESET_ROW_ACC_fu_237_void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_4_address1;
-wire    grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_RESET_ROW_ACC_fu_237_void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_4_ce1;
-wire    grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_RESET_ROW_ACC_fu_237_void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_4_we1;
-wire   [15:0] grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_RESET_ROW_ACC_fu_237_void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_4_d1;
-wire   [9:0] grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_RESET_ROW_ACC_fu_237_void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_3_address0;
-wire    grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_RESET_ROW_ACC_fu_237_void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_3_ce0;
-wire    grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_RESET_ROW_ACC_fu_237_void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_3_we0;
-wire   [15:0] grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_RESET_ROW_ACC_fu_237_void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_3_d0;
-wire   [9:0] grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_RESET_ROW_ACC_fu_237_void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_3_address1;
-wire    grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_RESET_ROW_ACC_fu_237_void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_3_ce1;
-wire    grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_RESET_ROW_ACC_fu_237_void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_3_we1;
-wire   [15:0] grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_RESET_ROW_ACC_fu_237_void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_3_d1;
-wire   [9:0] grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_RESET_ROW_ACC_fu_237_void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_2_address0;
-wire    grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_RESET_ROW_ACC_fu_237_void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_2_ce0;
-wire    grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_RESET_ROW_ACC_fu_237_void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_2_we0;
-wire   [15:0] grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_RESET_ROW_ACC_fu_237_void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_2_d0;
-wire   [9:0] grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_RESET_ROW_ACC_fu_237_void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_2_address1;
-wire    grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_RESET_ROW_ACC_fu_237_void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_2_ce1;
-wire    grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_RESET_ROW_ACC_fu_237_void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_2_we1;
-wire   [15:0] grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_RESET_ROW_ACC_fu_237_void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_2_d1;
-wire   [9:0] grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_RESET_ROW_ACC_fu_237_void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_1_address0;
-wire    grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_RESET_ROW_ACC_fu_237_void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_1_ce0;
-wire    grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_RESET_ROW_ACC_fu_237_void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_1_we0;
-wire   [15:0] grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_RESET_ROW_ACC_fu_237_void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_1_d0;
-wire   [9:0] grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_RESET_ROW_ACC_fu_237_void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_1_address1;
-wire    grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_RESET_ROW_ACC_fu_237_void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_1_ce1;
-wire    grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_RESET_ROW_ACC_fu_237_void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_1_we1;
-wire   [15:0] grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_RESET_ROW_ACC_fu_237_void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_1_d1;
-wire   [9:0] grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_RESET_ROW_ACC_fu_237_void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_address0;
-wire    grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_RESET_ROW_ACC_fu_237_void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_ce0;
-wire    grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_RESET_ROW_ACC_fu_237_void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_we0;
-wire   [15:0] grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_RESET_ROW_ACC_fu_237_void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_d0;
-wire   [9:0] grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_RESET_ROW_ACC_fu_237_void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_address1;
-wire    grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_RESET_ROW_ACC_fu_237_void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_ce1;
-wire    grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_RESET_ROW_ACC_fu_237_void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_we1;
-wire   [15:0] grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_RESET_ROW_ACC_fu_237_void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_d1;
-wire   [9:0] grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_RESET_ROW_ACC_fu_237_p_ZZ16UpConv_Fused_RowILi8ELi32ELi32ELi480ELi240EEvP7ap_uintILi256EEPKS1_S4_S4_S4_5_address0;
-wire    grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_RESET_ROW_ACC_fu_237_p_ZZ16UpConv_Fused_RowILi8ELi32ELi32ELi480ELi240EEvP7ap_uintILi256EEPKS1_S4_S4_S4_5_ce0;
-wire    grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_RESET_ROW_ACC_fu_237_p_ZZ16UpConv_Fused_RowILi8ELi32ELi32ELi480ELi240EEvP7ap_uintILi256EEPKS1_S4_S4_S4_5_we0;
-wire   [15:0] grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_RESET_ROW_ACC_fu_237_p_ZZ16UpConv_Fused_RowILi8ELi32ELi32ELi480ELi240EEvP7ap_uintILi256EEPKS1_S4_S4_S4_5_d0;
-wire   [9:0] grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_RESET_ROW_ACC_fu_237_p_ZZ16UpConv_Fused_RowILi8ELi32ELi32ELi480ELi240EEvP7ap_uintILi256EEPKS1_S4_S4_S4_5_address1;
-wire    grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_RESET_ROW_ACC_fu_237_p_ZZ16UpConv_Fused_RowILi8ELi32ELi32ELi480ELi240EEvP7ap_uintILi256EEPKS1_S4_S4_S4_5_ce1;
-wire    grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_RESET_ROW_ACC_fu_237_p_ZZ16UpConv_Fused_RowILi8ELi32ELi32ELi480ELi240EEvP7ap_uintILi256EEPKS1_S4_S4_S4_5_we1;
-wire   [15:0] grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_RESET_ROW_ACC_fu_237_p_ZZ16UpConv_Fused_RowILi8ELi32ELi32ELi480ELi240EEvP7ap_uintILi256EEPKS1_S4_S4_S4_5_d1;
-wire   [9:0] grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_RESET_ROW_ACC_fu_237_p_ZZ16UpConv_Fused_RowILi8ELi32ELi32ELi480ELi240EEvP7ap_uintILi256EEPKS1_S4_S4_S4_4_address0;
-wire    grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_RESET_ROW_ACC_fu_237_p_ZZ16UpConv_Fused_RowILi8ELi32ELi32ELi480ELi240EEvP7ap_uintILi256EEPKS1_S4_S4_S4_4_ce0;
-wire    grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_RESET_ROW_ACC_fu_237_p_ZZ16UpConv_Fused_RowILi8ELi32ELi32ELi480ELi240EEvP7ap_uintILi256EEPKS1_S4_S4_S4_4_we0;
-wire   [15:0] grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_RESET_ROW_ACC_fu_237_p_ZZ16UpConv_Fused_RowILi8ELi32ELi32ELi480ELi240EEvP7ap_uintILi256EEPKS1_S4_S4_S4_4_d0;
-wire   [9:0] grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_RESET_ROW_ACC_fu_237_p_ZZ16UpConv_Fused_RowILi8ELi32ELi32ELi480ELi240EEvP7ap_uintILi256EEPKS1_S4_S4_S4_4_address1;
-wire    grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_RESET_ROW_ACC_fu_237_p_ZZ16UpConv_Fused_RowILi8ELi32ELi32ELi480ELi240EEvP7ap_uintILi256EEPKS1_S4_S4_S4_4_ce1;
-wire    grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_RESET_ROW_ACC_fu_237_p_ZZ16UpConv_Fused_RowILi8ELi32ELi32ELi480ELi240EEvP7ap_uintILi256EEPKS1_S4_S4_S4_4_we1;
-wire   [15:0] grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_RESET_ROW_ACC_fu_237_p_ZZ16UpConv_Fused_RowILi8ELi32ELi32ELi480ELi240EEvP7ap_uintILi256EEPKS1_S4_S4_S4_4_d1;
-wire   [9:0] grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_RESET_ROW_ACC_fu_237_p_ZZ16UpConv_Fused_RowILi8ELi32ELi32ELi480ELi240EEvP7ap_uintILi256EEPKS1_S4_S4_S4_3_address0;
-wire    grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_RESET_ROW_ACC_fu_237_p_ZZ16UpConv_Fused_RowILi8ELi32ELi32ELi480ELi240EEvP7ap_uintILi256EEPKS1_S4_S4_S4_3_ce0;
-wire    grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_RESET_ROW_ACC_fu_237_p_ZZ16UpConv_Fused_RowILi8ELi32ELi32ELi480ELi240EEvP7ap_uintILi256EEPKS1_S4_S4_S4_3_we0;
-wire   [15:0] grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_RESET_ROW_ACC_fu_237_p_ZZ16UpConv_Fused_RowILi8ELi32ELi32ELi480ELi240EEvP7ap_uintILi256EEPKS1_S4_S4_S4_3_d0;
-wire   [9:0] grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_RESET_ROW_ACC_fu_237_p_ZZ16UpConv_Fused_RowILi8ELi32ELi32ELi480ELi240EEvP7ap_uintILi256EEPKS1_S4_S4_S4_3_address1;
-wire    grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_RESET_ROW_ACC_fu_237_p_ZZ16UpConv_Fused_RowILi8ELi32ELi32ELi480ELi240EEvP7ap_uintILi256EEPKS1_S4_S4_S4_3_ce1;
-wire    grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_RESET_ROW_ACC_fu_237_p_ZZ16UpConv_Fused_RowILi8ELi32ELi32ELi480ELi240EEvP7ap_uintILi256EEPKS1_S4_S4_S4_3_we1;
-wire   [15:0] grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_RESET_ROW_ACC_fu_237_p_ZZ16UpConv_Fused_RowILi8ELi32ELi32ELi480ELi240EEvP7ap_uintILi256EEPKS1_S4_S4_S4_3_d1;
-wire   [9:0] grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_RESET_ROW_ACC_fu_237_p_ZZ16UpConv_Fused_RowILi8ELi32ELi32ELi480ELi240EEvP7ap_uintILi256EEPKS1_S4_S4_S4_2_address0;
-wire    grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_RESET_ROW_ACC_fu_237_p_ZZ16UpConv_Fused_RowILi8ELi32ELi32ELi480ELi240EEvP7ap_uintILi256EEPKS1_S4_S4_S4_2_ce0;
-wire    grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_RESET_ROW_ACC_fu_237_p_ZZ16UpConv_Fused_RowILi8ELi32ELi32ELi480ELi240EEvP7ap_uintILi256EEPKS1_S4_S4_S4_2_we0;
-wire   [15:0] grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_RESET_ROW_ACC_fu_237_p_ZZ16UpConv_Fused_RowILi8ELi32ELi32ELi480ELi240EEvP7ap_uintILi256EEPKS1_S4_S4_S4_2_d0;
-wire   [9:0] grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_RESET_ROW_ACC_fu_237_p_ZZ16UpConv_Fused_RowILi8ELi32ELi32ELi480ELi240EEvP7ap_uintILi256EEPKS1_S4_S4_S4_2_address1;
-wire    grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_RESET_ROW_ACC_fu_237_p_ZZ16UpConv_Fused_RowILi8ELi32ELi32ELi480ELi240EEvP7ap_uintILi256EEPKS1_S4_S4_S4_2_ce1;
-wire    grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_RESET_ROW_ACC_fu_237_p_ZZ16UpConv_Fused_RowILi8ELi32ELi32ELi480ELi240EEvP7ap_uintILi256EEPKS1_S4_S4_S4_2_we1;
-wire   [15:0] grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_RESET_ROW_ACC_fu_237_p_ZZ16UpConv_Fused_RowILi8ELi32ELi32ELi480ELi240EEvP7ap_uintILi256EEPKS1_S4_S4_S4_2_d1;
-wire   [9:0] grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_RESET_ROW_ACC_fu_237_p_ZZ16UpConv_Fused_RowILi8ELi32ELi32ELi480ELi240EEvP7ap_uintILi256EEPKS1_S4_S4_S4_1_address0;
-wire    grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_RESET_ROW_ACC_fu_237_p_ZZ16UpConv_Fused_RowILi8ELi32ELi32ELi480ELi240EEvP7ap_uintILi256EEPKS1_S4_S4_S4_1_ce0;
-wire    grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_RESET_ROW_ACC_fu_237_p_ZZ16UpConv_Fused_RowILi8ELi32ELi32ELi480ELi240EEvP7ap_uintILi256EEPKS1_S4_S4_S4_1_we0;
-wire   [15:0] grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_RESET_ROW_ACC_fu_237_p_ZZ16UpConv_Fused_RowILi8ELi32ELi32ELi480ELi240EEvP7ap_uintILi256EEPKS1_S4_S4_S4_1_d0;
-wire   [9:0] grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_RESET_ROW_ACC_fu_237_p_ZZ16UpConv_Fused_RowILi8ELi32ELi32ELi480ELi240EEvP7ap_uintILi256EEPKS1_S4_S4_S4_1_address1;
-wire    grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_RESET_ROW_ACC_fu_237_p_ZZ16UpConv_Fused_RowILi8ELi32ELi32ELi480ELi240EEvP7ap_uintILi256EEPKS1_S4_S4_S4_1_ce1;
-wire    grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_RESET_ROW_ACC_fu_237_p_ZZ16UpConv_Fused_RowILi8ELi32ELi32ELi480ELi240EEvP7ap_uintILi256EEPKS1_S4_S4_S4_1_we1;
-wire   [15:0] grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_RESET_ROW_ACC_fu_237_p_ZZ16UpConv_Fused_RowILi8ELi32ELi32ELi480ELi240EEvP7ap_uintILi256EEPKS1_S4_S4_S4_1_d1;
-wire   [9:0] grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_RESET_ROW_ACC_fu_237_p_ZZ16UpConv_Fused_RowILi8ELi32ELi32ELi480ELi240EEvP7ap_uintILi256EEPKS1_S4_S4_S4_address0;
-wire    grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_RESET_ROW_ACC_fu_237_p_ZZ16UpConv_Fused_RowILi8ELi32ELi32ELi480ELi240EEvP7ap_uintILi256EEPKS1_S4_S4_S4_ce0;
-wire    grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_RESET_ROW_ACC_fu_237_p_ZZ16UpConv_Fused_RowILi8ELi32ELi32ELi480ELi240EEvP7ap_uintILi256EEPKS1_S4_S4_S4_we0;
-wire   [15:0] grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_RESET_ROW_ACC_fu_237_p_ZZ16UpConv_Fused_RowILi8ELi32ELi32ELi480ELi240EEvP7ap_uintILi256EEPKS1_S4_S4_S4_d0;
-wire   [9:0] grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_RESET_ROW_ACC_fu_237_p_ZZ16UpConv_Fused_RowILi8ELi32ELi32ELi480ELi240EEvP7ap_uintILi256EEPKS1_S4_S4_S4_address1;
-wire    grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_RESET_ROW_ACC_fu_237_p_ZZ16UpConv_Fused_RowILi8ELi32ELi32ELi480ELi240EEvP7ap_uintILi256EEPKS1_S4_S4_S4_ce1;
-wire    grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_RESET_ROW_ACC_fu_237_p_ZZ16UpConv_Fused_RowILi8ELi32ELi32ELi480ELi240EEvP7ap_uintILi256EEPKS1_S4_S4_S4_we1;
-wire   [15:0] grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_RESET_ROW_ACC_fu_237_p_ZZ16UpConv_Fused_RowILi8ELi32ELi32ELi480ELi240EEvP7ap_uintILi256EEPKS1_S4_S4_S4_d1;
-wire    grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_LOAD_PARAMS_fu_273_ap_start;
-wire    grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_LOAD_PARAMS_fu_273_ap_done;
-wire    grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_LOAD_PARAMS_fu_273_ap_idle;
-wire    grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_LOAD_PARAMS_fu_273_ap_ready;
-wire    grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_LOAD_PARAMS_fu_273_m_axi_gmem_param_0_AWVALID;
-wire   [63:0] grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_LOAD_PARAMS_fu_273_m_axi_gmem_param_0_AWADDR;
-wire   [0:0] grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_LOAD_PARAMS_fu_273_m_axi_gmem_param_0_AWID;
-wire   [31:0] grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_LOAD_PARAMS_fu_273_m_axi_gmem_param_0_AWLEN;
-wire   [2:0] grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_LOAD_PARAMS_fu_273_m_axi_gmem_param_0_AWSIZE;
-wire   [1:0] grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_LOAD_PARAMS_fu_273_m_axi_gmem_param_0_AWBURST;
-wire   [1:0] grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_LOAD_PARAMS_fu_273_m_axi_gmem_param_0_AWLOCK;
-wire   [3:0] grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_LOAD_PARAMS_fu_273_m_axi_gmem_param_0_AWCACHE;
-wire   [2:0] grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_LOAD_PARAMS_fu_273_m_axi_gmem_param_0_AWPROT;
-wire   [3:0] grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_LOAD_PARAMS_fu_273_m_axi_gmem_param_0_AWQOS;
-wire   [3:0] grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_LOAD_PARAMS_fu_273_m_axi_gmem_param_0_AWREGION;
-wire   [0:0] grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_LOAD_PARAMS_fu_273_m_axi_gmem_param_0_AWUSER;
-wire    grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_LOAD_PARAMS_fu_273_m_axi_gmem_param_0_WVALID;
-wire   [255:0] grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_LOAD_PARAMS_fu_273_m_axi_gmem_param_0_WDATA;
-wire   [31:0] grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_LOAD_PARAMS_fu_273_m_axi_gmem_param_0_WSTRB;
-wire    grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_LOAD_PARAMS_fu_273_m_axi_gmem_param_0_WLAST;
-wire   [0:0] grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_LOAD_PARAMS_fu_273_m_axi_gmem_param_0_WID;
-wire   [0:0] grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_LOAD_PARAMS_fu_273_m_axi_gmem_param_0_WUSER;
-wire    grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_LOAD_PARAMS_fu_273_m_axi_gmem_param_0_ARVALID;
-wire   [63:0] grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_LOAD_PARAMS_fu_273_m_axi_gmem_param_0_ARADDR;
-wire   [0:0] grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_LOAD_PARAMS_fu_273_m_axi_gmem_param_0_ARID;
-wire   [31:0] grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_LOAD_PARAMS_fu_273_m_axi_gmem_param_0_ARLEN;
-wire   [2:0] grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_LOAD_PARAMS_fu_273_m_axi_gmem_param_0_ARSIZE;
-wire   [1:0] grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_LOAD_PARAMS_fu_273_m_axi_gmem_param_0_ARBURST;
-wire   [1:0] grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_LOAD_PARAMS_fu_273_m_axi_gmem_param_0_ARLOCK;
-wire   [3:0] grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_LOAD_PARAMS_fu_273_m_axi_gmem_param_0_ARCACHE;
-wire   [2:0] grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_LOAD_PARAMS_fu_273_m_axi_gmem_param_0_ARPROT;
-wire   [3:0] grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_LOAD_PARAMS_fu_273_m_axi_gmem_param_0_ARQOS;
-wire   [3:0] grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_LOAD_PARAMS_fu_273_m_axi_gmem_param_0_ARREGION;
-wire   [0:0] grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_LOAD_PARAMS_fu_273_m_axi_gmem_param_0_ARUSER;
-wire    grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_LOAD_PARAMS_fu_273_m_axi_gmem_param_0_RREADY;
-wire    grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_LOAD_PARAMS_fu_273_m_axi_gmem_param_0_BREADY;
-wire   [3:0] grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_LOAD_PARAMS_fu_273_b_buf_address0;
-wire    grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_LOAD_PARAMS_fu_273_b_buf_ce0;
-wire    grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_LOAD_PARAMS_fu_273_b_buf_we0;
-wire   [255:0] grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_LOAD_PARAMS_fu_273_b_buf_d0;
-wire   [3:0] grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_LOAD_PARAMS_fu_273_g_buf_address0;
-wire    grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_LOAD_PARAMS_fu_273_g_buf_ce0;
-wire    grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_LOAD_PARAMS_fu_273_g_buf_we0;
-wire   [255:0] grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_LOAD_PARAMS_fu_273_g_buf_d0;
-wire   [3:0] grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_LOAD_PARAMS_fu_273_be_buf_address0;
-wire    grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_LOAD_PARAMS_fu_273_be_buf_ce0;
-wire    grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_LOAD_PARAMS_fu_273_be_buf_we0;
-wire   [255:0] grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_LOAD_PARAMS_fu_273_be_buf_d0;
-wire    grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_288_ap_start;
-wire    grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_288_ap_done;
-wire    grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_288_ap_idle;
-wire    grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_288_ap_ready;
-wire    grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_288_m_axi_gmem_weight_0_AWVALID;
-wire   [63:0] grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_288_m_axi_gmem_weight_0_AWADDR;
-wire   [0:0] grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_288_m_axi_gmem_weight_0_AWID;
-wire   [31:0] grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_288_m_axi_gmem_weight_0_AWLEN;
-wire   [2:0] grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_288_m_axi_gmem_weight_0_AWSIZE;
-wire   [1:0] grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_288_m_axi_gmem_weight_0_AWBURST;
-wire   [1:0] grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_288_m_axi_gmem_weight_0_AWLOCK;
-wire   [3:0] grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_288_m_axi_gmem_weight_0_AWCACHE;
-wire   [2:0] grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_288_m_axi_gmem_weight_0_AWPROT;
-wire   [3:0] grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_288_m_axi_gmem_weight_0_AWQOS;
-wire   [3:0] grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_288_m_axi_gmem_weight_0_AWREGION;
-wire   [0:0] grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_288_m_axi_gmem_weight_0_AWUSER;
-wire    grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_288_m_axi_gmem_weight_0_WVALID;
-wire   [255:0] grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_288_m_axi_gmem_weight_0_WDATA;
-wire   [31:0] grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_288_m_axi_gmem_weight_0_WSTRB;
-wire    grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_288_m_axi_gmem_weight_0_WLAST;
-wire   [0:0] grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_288_m_axi_gmem_weight_0_WID;
-wire   [0:0] grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_288_m_axi_gmem_weight_0_WUSER;
-wire    grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_288_m_axi_gmem_weight_0_ARVALID;
-wire   [63:0] grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_288_m_axi_gmem_weight_0_ARADDR;
-wire   [0:0] grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_288_m_axi_gmem_weight_0_ARID;
-wire   [31:0] grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_288_m_axi_gmem_weight_0_ARLEN;
-wire   [2:0] grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_288_m_axi_gmem_weight_0_ARSIZE;
-wire   [1:0] grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_288_m_axi_gmem_weight_0_ARBURST;
-wire   [1:0] grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_288_m_axi_gmem_weight_0_ARLOCK;
-wire   [3:0] grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_288_m_axi_gmem_weight_0_ARCACHE;
-wire   [2:0] grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_288_m_axi_gmem_weight_0_ARPROT;
-wire   [3:0] grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_288_m_axi_gmem_weight_0_ARQOS;
-wire   [3:0] grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_288_m_axi_gmem_weight_0_ARREGION;
-wire   [0:0] grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_288_m_axi_gmem_weight_0_ARUSER;
-wire    grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_288_m_axi_gmem_weight_0_RREADY;
-wire    grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_288_m_axi_gmem_weight_0_BREADY;
-wire   [9:0] grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_288_void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_9_address0;
-wire    grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_288_void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_9_ce0;
-wire    grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_288_void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_9_we0;
-wire   [15:0] grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_288_void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_9_d0;
-wire   [9:0] grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_288_void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_8_address0;
-wire    grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_288_void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_8_ce0;
-wire    grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_288_void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_8_we0;
-wire   [15:0] grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_288_void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_8_d0;
-wire   [9:0] grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_288_void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_7_address0;
-wire    grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_288_void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_7_ce0;
-wire    grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_288_void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_7_we0;
-wire   [15:0] grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_288_void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_7_d0;
-wire   [9:0] grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_288_void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_6_address0;
-wire    grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_288_void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_6_ce0;
-wire    grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_288_void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_6_we0;
-wire   [15:0] grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_288_void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_6_d0;
-wire   [9:0] grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_288_void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_5_address0;
-wire    grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_288_void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_5_ce0;
-wire    grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_288_void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_5_we0;
-wire   [15:0] grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_288_void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_5_d0;
-wire   [9:0] grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_288_void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_4_address0;
-wire    grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_288_void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_4_ce0;
-wire    grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_288_void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_4_we0;
-wire   [15:0] grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_288_void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_4_d0;
-wire   [9:0] grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_288_void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_3_address0;
-wire    grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_288_void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_3_ce0;
-wire    grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_288_void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_3_we0;
-wire   [15:0] grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_288_void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_3_d0;
-wire   [9:0] grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_288_void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_2_address0;
-wire    grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_288_void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_2_ce0;
-wire    grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_288_void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_2_we0;
-wire   [15:0] grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_288_void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_2_d0;
-wire   [10:0] grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_288_x_buf_address0;
-wire    grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_288_x_buf_ce0;
-wire   [9:0] grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_288_void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_1_address0;
-wire    grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_288_void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_1_ce0;
-wire    grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_288_void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_1_we0;
-wire   [15:0] grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_288_void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_1_d0;
-wire   [9:0] grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_288_void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_address0;
-wire    grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_288_void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_ce0;
-wire    grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_288_void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_we0;
-wire   [15:0] grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_288_void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_d0;
-wire   [9:0] grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_288_p_ZZ16UpConv_Fused_RowILi8ELi32ELi32ELi480ELi240EEvP7ap_uintILi256EEPKS1_S4_S4_S4_5_address0;
-wire    grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_288_p_ZZ16UpConv_Fused_RowILi8ELi32ELi32ELi480ELi240EEvP7ap_uintILi256EEPKS1_S4_S4_S4_5_ce0;
-wire    grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_288_p_ZZ16UpConv_Fused_RowILi8ELi32ELi32ELi480ELi240EEvP7ap_uintILi256EEPKS1_S4_S4_S4_5_we0;
-wire   [15:0] grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_288_p_ZZ16UpConv_Fused_RowILi8ELi32ELi32ELi480ELi240EEvP7ap_uintILi256EEPKS1_S4_S4_S4_5_d0;
-wire   [9:0] grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_288_p_ZZ16UpConv_Fused_RowILi8ELi32ELi32ELi480ELi240EEvP7ap_uintILi256EEPKS1_S4_S4_S4_4_address0;
-wire    grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_288_p_ZZ16UpConv_Fused_RowILi8ELi32ELi32ELi480ELi240EEvP7ap_uintILi256EEPKS1_S4_S4_S4_4_ce0;
-wire    grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_288_p_ZZ16UpConv_Fused_RowILi8ELi32ELi32ELi480ELi240EEvP7ap_uintILi256EEPKS1_S4_S4_S4_4_we0;
-wire   [15:0] grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_288_p_ZZ16UpConv_Fused_RowILi8ELi32ELi32ELi480ELi240EEvP7ap_uintILi256EEPKS1_S4_S4_S4_4_d0;
-wire   [9:0] grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_288_p_ZZ16UpConv_Fused_RowILi8ELi32ELi32ELi480ELi240EEvP7ap_uintILi256EEPKS1_S4_S4_S4_3_address0;
-wire    grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_288_p_ZZ16UpConv_Fused_RowILi8ELi32ELi32ELi480ELi240EEvP7ap_uintILi256EEPKS1_S4_S4_S4_3_ce0;
-wire    grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_288_p_ZZ16UpConv_Fused_RowILi8ELi32ELi32ELi480ELi240EEvP7ap_uintILi256EEPKS1_S4_S4_S4_3_we0;
-wire   [15:0] grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_288_p_ZZ16UpConv_Fused_RowILi8ELi32ELi32ELi480ELi240EEvP7ap_uintILi256EEPKS1_S4_S4_S4_3_d0;
-wire   [9:0] grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_288_p_ZZ16UpConv_Fused_RowILi8ELi32ELi32ELi480ELi240EEvP7ap_uintILi256EEPKS1_S4_S4_S4_2_address0;
-wire    grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_288_p_ZZ16UpConv_Fused_RowILi8ELi32ELi32ELi480ELi240EEvP7ap_uintILi256EEPKS1_S4_S4_S4_2_ce0;
-wire    grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_288_p_ZZ16UpConv_Fused_RowILi8ELi32ELi32ELi480ELi240EEvP7ap_uintILi256EEPKS1_S4_S4_S4_2_we0;
-wire   [15:0] grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_288_p_ZZ16UpConv_Fused_RowILi8ELi32ELi32ELi480ELi240EEvP7ap_uintILi256EEPKS1_S4_S4_S4_2_d0;
-wire   [9:0] grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_288_p_ZZ16UpConv_Fused_RowILi8ELi32ELi32ELi480ELi240EEvP7ap_uintILi256EEPKS1_S4_S4_S4_1_address0;
-wire    grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_288_p_ZZ16UpConv_Fused_RowILi8ELi32ELi32ELi480ELi240EEvP7ap_uintILi256EEPKS1_S4_S4_S4_1_ce0;
-wire    grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_288_p_ZZ16UpConv_Fused_RowILi8ELi32ELi32ELi480ELi240EEvP7ap_uintILi256EEPKS1_S4_S4_S4_1_we0;
-wire   [15:0] grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_288_p_ZZ16UpConv_Fused_RowILi8ELi32ELi32ELi480ELi240EEvP7ap_uintILi256EEPKS1_S4_S4_S4_1_d0;
-wire   [9:0] grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_288_p_ZZ16UpConv_Fused_RowILi8ELi32ELi32ELi480ELi240EEvP7ap_uintILi256EEPKS1_S4_S4_S4_address0;
-wire    grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_288_p_ZZ16UpConv_Fused_RowILi8ELi32ELi32ELi480ELi240EEvP7ap_uintILi256EEPKS1_S4_S4_S4_ce0;
-wire    grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_288_p_ZZ16UpConv_Fused_RowILi8ELi32ELi32ELi480ELi240EEvP7ap_uintILi256EEPKS1_S4_S4_S4_we0;
-wire   [15:0] grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_288_p_ZZ16UpConv_Fused_RowILi8ELi32ELi32ELi480ELi240EEvP7ap_uintILi256EEPKS1_S4_S4_S4_d0;
-wire   [15:0] grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_288_grp_fu_740_p_din0;
-wire   [15:0] grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_288_grp_fu_740_p_din1;
-wire    grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_288_grp_fu_740_p_ce;
-wire   [15:0] grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_288_grp_fu_744_p_din0;
-wire   [15:0] grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_288_grp_fu_744_p_din1;
-wire    grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_288_grp_fu_744_p_ce;
-wire   [15:0] grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_288_grp_fu_748_p_din0;
-wire   [15:0] grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_288_grp_fu_748_p_din1;
-wire    grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_288_grp_fu_748_p_ce;
-wire   [15:0] grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_288_grp_fu_752_p_din0;
-wire   [15:0] grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_288_grp_fu_752_p_din1;
-wire    grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_288_grp_fu_752_p_ce;
-wire   [15:0] grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_288_grp_fu_756_p_din0;
-wire   [15:0] grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_288_grp_fu_756_p_din1;
-wire    grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_288_grp_fu_756_p_ce;
-wire   [15:0] grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_288_grp_fu_760_p_din0;
-wire   [15:0] grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_288_grp_fu_760_p_din1;
-wire    grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_288_grp_fu_760_p_ce;
-wire   [15:0] grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_288_grp_fu_764_p_din0;
-wire   [15:0] grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_288_grp_fu_764_p_din1;
-wire    grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_288_grp_fu_764_p_ce;
-wire   [15:0] grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_288_grp_fu_768_p_din0;
-wire   [15:0] grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_288_grp_fu_768_p_din1;
-wire    grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_288_grp_fu_768_p_ce;
-wire   [15:0] grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_288_grp_fu_772_p_din0;
-wire   [15:0] grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_288_grp_fu_772_p_din1;
-wire    grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_288_grp_fu_772_p_ce;
-wire   [15:0] grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_288_grp_fu_776_p_din0;
-wire   [15:0] grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_288_grp_fu_776_p_din1;
-wire    grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_288_grp_fu_776_p_ce;
-wire   [15:0] grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_288_grp_fu_780_p_din0;
-wire   [15:0] grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_288_grp_fu_780_p_din1;
-wire    grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_288_grp_fu_780_p_ce;
-wire   [15:0] grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_288_grp_fu_784_p_din0;
-wire   [15:0] grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_288_grp_fu_784_p_din1;
-wire    grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_288_grp_fu_784_p_ce;
-wire   [15:0] grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_288_grp_fu_788_p_din0;
-wire   [15:0] grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_288_grp_fu_788_p_din1;
-wire    grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_288_grp_fu_788_p_ce;
-wire   [15:0] grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_288_grp_fu_792_p_din0;
-wire   [15:0] grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_288_grp_fu_792_p_din1;
-wire    grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_288_grp_fu_792_p_ce;
-wire   [15:0] grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_288_grp_fu_796_p_din0;
-wire   [15:0] grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_288_grp_fu_796_p_din1;
-wire    grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_288_grp_fu_796_p_ce;
-wire   [15:0] grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_288_grp_fu_800_p_din0;
-wire   [15:0] grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_288_grp_fu_800_p_din1;
-wire    grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_288_grp_fu_800_p_ce;
-wire   [15:0] grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_288_grp_fu_804_p_din0;
-wire   [15:0] grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_288_grp_fu_804_p_din1;
-wire    grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_288_grp_fu_804_p_ce;
-wire   [15:0] grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_288_grp_fu_808_p_din0;
-wire   [15:0] grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_288_grp_fu_808_p_din1;
-wire    grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_288_grp_fu_808_p_ce;
-wire   [15:0] grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_288_grp_fu_812_p_din0;
-wire   [15:0] grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_288_grp_fu_812_p_din1;
-wire    grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_288_grp_fu_812_p_ce;
-wire   [15:0] grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_288_grp_fu_816_p_din0;
-wire   [15:0] grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_288_grp_fu_816_p_din1;
-wire    grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_288_grp_fu_816_p_ce;
-wire   [15:0] grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_288_grp_fu_820_p_din0;
-wire   [15:0] grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_288_grp_fu_820_p_din1;
-wire    grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_288_grp_fu_820_p_ce;
-wire   [15:0] grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_288_grp_fu_824_p_din0;
-wire   [15:0] grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_288_grp_fu_824_p_din1;
-wire    grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_288_grp_fu_824_p_ce;
-wire   [15:0] grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_288_grp_fu_828_p_din0;
-wire   [15:0] grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_288_grp_fu_828_p_din1;
-wire    grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_288_grp_fu_828_p_ce;
-wire   [15:0] grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_288_grp_fu_832_p_din0;
-wire   [15:0] grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_288_grp_fu_832_p_din1;
-wire    grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_288_grp_fu_832_p_ce;
-wire   [15:0] grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_288_grp_fu_836_p_din0;
-wire   [15:0] grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_288_grp_fu_836_p_din1;
-wire    grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_288_grp_fu_836_p_ce;
-wire   [15:0] grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_288_grp_fu_840_p_din0;
-wire   [15:0] grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_288_grp_fu_840_p_din1;
-wire    grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_288_grp_fu_840_p_ce;
-wire   [15:0] grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_288_grp_fu_844_p_din0;
-wire   [15:0] grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_288_grp_fu_844_p_din1;
-wire    grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_288_grp_fu_844_p_ce;
-wire   [15:0] grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_288_grp_fu_848_p_din0;
-wire   [15:0] grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_288_grp_fu_848_p_din1;
-wire    grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_288_grp_fu_848_p_ce;
-wire   [15:0] grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_288_grp_fu_852_p_din0;
-wire   [15:0] grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_288_grp_fu_852_p_din1;
-wire    grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_288_grp_fu_852_p_ce;
-wire   [15:0] grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_288_grp_fu_856_p_din0;
-wire   [15:0] grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_288_grp_fu_856_p_din1;
-wire    grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_288_grp_fu_856_p_ce;
-wire   [15:0] grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_288_grp_fu_860_p_din0;
-wire   [15:0] grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_288_grp_fu_860_p_din1;
-wire    grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_288_grp_fu_860_p_ce;
-wire   [15:0] grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_288_grp_fu_864_p_din0;
-wire   [15:0] grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_288_grp_fu_864_p_din1;
-wire    grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_288_grp_fu_864_p_ce;
-wire   [15:0] grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_288_grp_fu_868_p_din0;
-wire   [15:0] grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_288_grp_fu_868_p_din1;
-wire    grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_288_grp_fu_868_p_ce;
-wire   [15:0] grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_288_grp_fu_872_p_din0;
-wire   [15:0] grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_288_grp_fu_872_p_din1;
-wire    grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_288_grp_fu_872_p_ce;
-wire   [15:0] grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_288_grp_fu_876_p_din0;
-wire   [15:0] grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_288_grp_fu_876_p_din1;
-wire    grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_288_grp_fu_876_p_ce;
-wire   [15:0] grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_288_grp_fu_880_p_din0;
-wire   [15:0] grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_288_grp_fu_880_p_din1;
-wire    grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_288_grp_fu_880_p_ce;
-wire   [15:0] grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_288_grp_fu_884_p_din0;
-wire   [15:0] grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_288_grp_fu_884_p_din1;
-wire    grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_288_grp_fu_884_p_ce;
-wire   [15:0] grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_288_grp_fu_888_p_din0;
-wire   [15:0] grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_288_grp_fu_888_p_din1;
-wire    grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_288_grp_fu_888_p_ce;
-wire   [15:0] grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_288_grp_fu_892_p_din0;
-wire   [15:0] grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_288_grp_fu_892_p_din1;
-wire    grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_288_grp_fu_892_p_ce;
-wire   [15:0] grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_288_grp_fu_896_p_din0;
-wire   [15:0] grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_288_grp_fu_896_p_din1;
-wire    grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_288_grp_fu_896_p_ce;
-wire   [15:0] grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_288_grp_fu_900_p_din0;
-wire   [15:0] grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_288_grp_fu_900_p_din1;
-wire    grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_288_grp_fu_900_p_ce;
-wire   [15:0] grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_288_grp_fu_904_p_din0;
-wire   [15:0] grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_288_grp_fu_904_p_din1;
-wire    grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_288_grp_fu_904_p_ce;
-wire   [15:0] grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_288_grp_fu_908_p_din0;
-wire   [15:0] grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_288_grp_fu_908_p_din1;
-wire    grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_288_grp_fu_908_p_ce;
-wire   [15:0] grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_288_grp_fu_912_p_din0;
-wire   [15:0] grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_288_grp_fu_912_p_din1;
-wire    grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_288_grp_fu_912_p_ce;
-wire   [15:0] grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_288_grp_fu_916_p_din0;
-wire   [15:0] grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_288_grp_fu_916_p_din1;
-wire    grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_288_grp_fu_916_p_ce;
-wire   [15:0] grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_288_grp_fu_920_p_din0;
-wire   [15:0] grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_288_grp_fu_920_p_din1;
-wire    grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_288_grp_fu_920_p_ce;
-wire   [15:0] grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_288_grp_fu_924_p_din0;
-wire   [15:0] grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_288_grp_fu_924_p_din1;
-wire    grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_288_grp_fu_924_p_ce;
-wire   [15:0] grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_288_grp_fu_928_p_din0;
-wire   [15:0] grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_288_grp_fu_928_p_din1;
-wire    grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_288_grp_fu_928_p_ce;
-wire    grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_BIAS_STATS_fu_330_ap_start;
-wire    grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_BIAS_STATS_fu_330_ap_done;
-wire    grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_BIAS_STATS_fu_330_ap_idle;
-wire    grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_BIAS_STATS_fu_330_ap_ready;
-wire   [3:0] grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_BIAS_STATS_fu_330_b_buf_address0;
-wire    grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_BIAS_STATS_fu_330_b_buf_ce0;
-wire   [31:0] grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_BIAS_STATS_fu_330_sumsq_out;
-wire    grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_BIAS_STATS_fu_330_sumsq_out_ap_vld;
-wire   [31:0] grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_BIAS_STATS_fu_330_sum_out;
-wire    grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_BIAS_STATS_fu_330_sum_out_ap_vld;
-wire   [9:0] grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_BIAS_STATS_fu_330_void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_9_address0;
-wire    grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_BIAS_STATS_fu_330_void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_9_ce0;
-wire    grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_BIAS_STATS_fu_330_void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_9_we0;
-wire   [15:0] grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_BIAS_STATS_fu_330_void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_9_d0;
-wire   [9:0] grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_BIAS_STATS_fu_330_void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_9_address1;
-wire    grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_BIAS_STATS_fu_330_void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_9_ce1;
-wire   [9:0] grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_BIAS_STATS_fu_330_void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_8_address0;
-wire    grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_BIAS_STATS_fu_330_void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_8_ce0;
-wire    grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_BIAS_STATS_fu_330_void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_8_we0;
-wire   [15:0] grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_BIAS_STATS_fu_330_void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_8_d0;
-wire   [9:0] grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_BIAS_STATS_fu_330_void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_8_address1;
-wire    grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_BIAS_STATS_fu_330_void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_8_ce1;
-wire   [9:0] grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_BIAS_STATS_fu_330_void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_7_address0;
-wire    grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_BIAS_STATS_fu_330_void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_7_ce0;
-wire    grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_BIAS_STATS_fu_330_void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_7_we0;
-wire   [15:0] grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_BIAS_STATS_fu_330_void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_7_d0;
-wire   [9:0] grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_BIAS_STATS_fu_330_void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_7_address1;
-wire    grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_BIAS_STATS_fu_330_void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_7_ce1;
-wire   [9:0] grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_BIAS_STATS_fu_330_void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_6_address0;
-wire    grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_BIAS_STATS_fu_330_void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_6_ce0;
-wire    grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_BIAS_STATS_fu_330_void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_6_we0;
-wire   [15:0] grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_BIAS_STATS_fu_330_void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_6_d0;
-wire   [9:0] grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_BIAS_STATS_fu_330_void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_6_address1;
-wire    grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_BIAS_STATS_fu_330_void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_6_ce1;
-wire   [9:0] grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_BIAS_STATS_fu_330_void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_5_address0;
-wire    grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_BIAS_STATS_fu_330_void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_5_ce0;
-wire    grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_BIAS_STATS_fu_330_void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_5_we0;
-wire   [15:0] grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_BIAS_STATS_fu_330_void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_5_d0;
-wire   [9:0] grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_BIAS_STATS_fu_330_void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_5_address1;
-wire    grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_BIAS_STATS_fu_330_void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_5_ce1;
-wire   [9:0] grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_BIAS_STATS_fu_330_void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_4_address0;
-wire    grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_BIAS_STATS_fu_330_void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_4_ce0;
-wire    grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_BIAS_STATS_fu_330_void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_4_we0;
-wire   [15:0] grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_BIAS_STATS_fu_330_void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_4_d0;
-wire   [9:0] grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_BIAS_STATS_fu_330_void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_4_address1;
-wire    grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_BIAS_STATS_fu_330_void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_4_ce1;
-wire   [9:0] grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_BIAS_STATS_fu_330_void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_3_address0;
-wire    grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_BIAS_STATS_fu_330_void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_3_ce0;
-wire    grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_BIAS_STATS_fu_330_void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_3_we0;
-wire   [15:0] grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_BIAS_STATS_fu_330_void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_3_d0;
-wire   [9:0] grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_BIAS_STATS_fu_330_void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_3_address1;
-wire    grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_BIAS_STATS_fu_330_void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_3_ce1;
-wire   [9:0] grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_BIAS_STATS_fu_330_void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_2_address0;
-wire    grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_BIAS_STATS_fu_330_void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_2_ce0;
-wire    grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_BIAS_STATS_fu_330_void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_2_we0;
-wire   [15:0] grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_BIAS_STATS_fu_330_void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_2_d0;
-wire   [9:0] grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_BIAS_STATS_fu_330_void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_2_address1;
-wire    grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_BIAS_STATS_fu_330_void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_2_ce1;
-wire   [9:0] grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_BIAS_STATS_fu_330_void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_1_address0;
-wire    grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_BIAS_STATS_fu_330_void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_1_ce0;
-wire    grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_BIAS_STATS_fu_330_void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_1_we0;
-wire   [15:0] grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_BIAS_STATS_fu_330_void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_1_d0;
-wire   [9:0] grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_BIAS_STATS_fu_330_void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_1_address1;
-wire    grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_BIAS_STATS_fu_330_void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_1_ce1;
-wire   [9:0] grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_BIAS_STATS_fu_330_void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_address0;
-wire    grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_BIAS_STATS_fu_330_void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_ce0;
-wire    grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_BIAS_STATS_fu_330_void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_we0;
-wire   [15:0] grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_BIAS_STATS_fu_330_void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_d0;
-wire   [9:0] grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_BIAS_STATS_fu_330_void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_address1;
-wire    grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_BIAS_STATS_fu_330_void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_ce1;
-wire   [9:0] grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_BIAS_STATS_fu_330_p_ZZ16UpConv_Fused_RowILi8ELi32ELi32ELi480ELi240EEvP7ap_uintILi256EEPKS1_S4_S4_S4_5_address0;
-wire    grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_BIAS_STATS_fu_330_p_ZZ16UpConv_Fused_RowILi8ELi32ELi32ELi480ELi240EEvP7ap_uintILi256EEPKS1_S4_S4_S4_5_ce0;
-wire    grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_BIAS_STATS_fu_330_p_ZZ16UpConv_Fused_RowILi8ELi32ELi32ELi480ELi240EEvP7ap_uintILi256EEPKS1_S4_S4_S4_5_we0;
-wire   [15:0] grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_BIAS_STATS_fu_330_p_ZZ16UpConv_Fused_RowILi8ELi32ELi32ELi480ELi240EEvP7ap_uintILi256EEPKS1_S4_S4_S4_5_d0;
-wire   [9:0] grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_BIAS_STATS_fu_330_p_ZZ16UpConv_Fused_RowILi8ELi32ELi32ELi480ELi240EEvP7ap_uintILi256EEPKS1_S4_S4_S4_5_address1;
-wire    grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_BIAS_STATS_fu_330_p_ZZ16UpConv_Fused_RowILi8ELi32ELi32ELi480ELi240EEvP7ap_uintILi256EEPKS1_S4_S4_S4_5_ce1;
-wire   [9:0] grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_BIAS_STATS_fu_330_p_ZZ16UpConv_Fused_RowILi8ELi32ELi32ELi480ELi240EEvP7ap_uintILi256EEPKS1_S4_S4_S4_4_address0;
-wire    grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_BIAS_STATS_fu_330_p_ZZ16UpConv_Fused_RowILi8ELi32ELi32ELi480ELi240EEvP7ap_uintILi256EEPKS1_S4_S4_S4_4_ce0;
-wire    grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_BIAS_STATS_fu_330_p_ZZ16UpConv_Fused_RowILi8ELi32ELi32ELi480ELi240EEvP7ap_uintILi256EEPKS1_S4_S4_S4_4_we0;
-wire   [15:0] grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_BIAS_STATS_fu_330_p_ZZ16UpConv_Fused_RowILi8ELi32ELi32ELi480ELi240EEvP7ap_uintILi256EEPKS1_S4_S4_S4_4_d0;
-wire   [9:0] grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_BIAS_STATS_fu_330_p_ZZ16UpConv_Fused_RowILi8ELi32ELi32ELi480ELi240EEvP7ap_uintILi256EEPKS1_S4_S4_S4_4_address1;
-wire    grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_BIAS_STATS_fu_330_p_ZZ16UpConv_Fused_RowILi8ELi32ELi32ELi480ELi240EEvP7ap_uintILi256EEPKS1_S4_S4_S4_4_ce1;
-wire   [9:0] grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_BIAS_STATS_fu_330_p_ZZ16UpConv_Fused_RowILi8ELi32ELi32ELi480ELi240EEvP7ap_uintILi256EEPKS1_S4_S4_S4_3_address0;
-wire    grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_BIAS_STATS_fu_330_p_ZZ16UpConv_Fused_RowILi8ELi32ELi32ELi480ELi240EEvP7ap_uintILi256EEPKS1_S4_S4_S4_3_ce0;
-wire    grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_BIAS_STATS_fu_330_p_ZZ16UpConv_Fused_RowILi8ELi32ELi32ELi480ELi240EEvP7ap_uintILi256EEPKS1_S4_S4_S4_3_we0;
-wire   [15:0] grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_BIAS_STATS_fu_330_p_ZZ16UpConv_Fused_RowILi8ELi32ELi32ELi480ELi240EEvP7ap_uintILi256EEPKS1_S4_S4_S4_3_d0;
-wire   [9:0] grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_BIAS_STATS_fu_330_p_ZZ16UpConv_Fused_RowILi8ELi32ELi32ELi480ELi240EEvP7ap_uintILi256EEPKS1_S4_S4_S4_3_address1;
-wire    grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_BIAS_STATS_fu_330_p_ZZ16UpConv_Fused_RowILi8ELi32ELi32ELi480ELi240EEvP7ap_uintILi256EEPKS1_S4_S4_S4_3_ce1;
-wire   [9:0] grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_BIAS_STATS_fu_330_p_ZZ16UpConv_Fused_RowILi8ELi32ELi32ELi480ELi240EEvP7ap_uintILi256EEPKS1_S4_S4_S4_2_address0;
-wire    grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_BIAS_STATS_fu_330_p_ZZ16UpConv_Fused_RowILi8ELi32ELi32ELi480ELi240EEvP7ap_uintILi256EEPKS1_S4_S4_S4_2_ce0;
-wire    grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_BIAS_STATS_fu_330_p_ZZ16UpConv_Fused_RowILi8ELi32ELi32ELi480ELi240EEvP7ap_uintILi256EEPKS1_S4_S4_S4_2_we0;
-wire   [15:0] grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_BIAS_STATS_fu_330_p_ZZ16UpConv_Fused_RowILi8ELi32ELi32ELi480ELi240EEvP7ap_uintILi256EEPKS1_S4_S4_S4_2_d0;
-wire   [9:0] grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_BIAS_STATS_fu_330_p_ZZ16UpConv_Fused_RowILi8ELi32ELi32ELi480ELi240EEvP7ap_uintILi256EEPKS1_S4_S4_S4_2_address1;
-wire    grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_BIAS_STATS_fu_330_p_ZZ16UpConv_Fused_RowILi8ELi32ELi32ELi480ELi240EEvP7ap_uintILi256EEPKS1_S4_S4_S4_2_ce1;
-wire   [9:0] grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_BIAS_STATS_fu_330_p_ZZ16UpConv_Fused_RowILi8ELi32ELi32ELi480ELi240EEvP7ap_uintILi256EEPKS1_S4_S4_S4_1_address0;
-wire    grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_BIAS_STATS_fu_330_p_ZZ16UpConv_Fused_RowILi8ELi32ELi32ELi480ELi240EEvP7ap_uintILi256EEPKS1_S4_S4_S4_1_ce0;
-wire    grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_BIAS_STATS_fu_330_p_ZZ16UpConv_Fused_RowILi8ELi32ELi32ELi480ELi240EEvP7ap_uintILi256EEPKS1_S4_S4_S4_1_we0;
-wire   [15:0] grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_BIAS_STATS_fu_330_p_ZZ16UpConv_Fused_RowILi8ELi32ELi32ELi480ELi240EEvP7ap_uintILi256EEPKS1_S4_S4_S4_1_d0;
-wire   [9:0] grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_BIAS_STATS_fu_330_p_ZZ16UpConv_Fused_RowILi8ELi32ELi32ELi480ELi240EEvP7ap_uintILi256EEPKS1_S4_S4_S4_1_address1;
-wire    grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_BIAS_STATS_fu_330_p_ZZ16UpConv_Fused_RowILi8ELi32ELi32ELi480ELi240EEvP7ap_uintILi256EEPKS1_S4_S4_S4_1_ce1;
-wire   [9:0] grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_BIAS_STATS_fu_330_p_ZZ16UpConv_Fused_RowILi8ELi32ELi32ELi480ELi240EEvP7ap_uintILi256EEPKS1_S4_S4_S4_address0;
-wire    grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_BIAS_STATS_fu_330_p_ZZ16UpConv_Fused_RowILi8ELi32ELi32ELi480ELi240EEvP7ap_uintILi256EEPKS1_S4_S4_S4_ce0;
-wire    grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_BIAS_STATS_fu_330_p_ZZ16UpConv_Fused_RowILi8ELi32ELi32ELi480ELi240EEvP7ap_uintILi256EEPKS1_S4_S4_S4_we0;
-wire   [15:0] grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_BIAS_STATS_fu_330_p_ZZ16UpConv_Fused_RowILi8ELi32ELi32ELi480ELi240EEvP7ap_uintILi256EEPKS1_S4_S4_S4_d0;
-wire   [9:0] grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_BIAS_STATS_fu_330_p_ZZ16UpConv_Fused_RowILi8ELi32ELi32ELi480ELi240EEvP7ap_uintILi256EEPKS1_S4_S4_S4_address1;
-wire    grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_BIAS_STATS_fu_330_p_ZZ16UpConv_Fused_RowILi8ELi32ELi32ELi480ELi240EEvP7ap_uintILi256EEPKS1_S4_S4_S4_ce1;
-wire   [31:0] grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_BIAS_STATS_fu_330_grp_fu_418_p_din0;
-wire   [31:0] grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_BIAS_STATS_fu_330_grp_fu_418_p_din1;
-wire    grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_BIAS_STATS_fu_330_grp_fu_418_p_ce;
-wire   [15:0] grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_BIAS_STATS_fu_330_grp_fu_437_p_din0;
-wire    grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_BIAS_STATS_fu_330_grp_fu_437_p_ce;
-wire   [15:0] grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_BIAS_STATS_fu_330_grp_fu_900_p_din0;
-wire   [15:0] grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_BIAS_STATS_fu_330_grp_fu_900_p_din1;
-wire    grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_BIAS_STATS_fu_330_grp_fu_900_p_ce;
-wire    grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_NORM_WRITE_fu_370_ap_start;
-wire    grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_NORM_WRITE_fu_370_ap_done;
-wire    grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_NORM_WRITE_fu_370_ap_idle;
-wire    grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_NORM_WRITE_fu_370_ap_ready;
-wire    grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_NORM_WRITE_fu_370_m_axi_gmem_out_0_AWVALID;
-wire   [63:0] grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_NORM_WRITE_fu_370_m_axi_gmem_out_0_AWADDR;
-wire   [0:0] grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_NORM_WRITE_fu_370_m_axi_gmem_out_0_AWID;
-wire   [31:0] grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_NORM_WRITE_fu_370_m_axi_gmem_out_0_AWLEN;
-wire   [2:0] grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_NORM_WRITE_fu_370_m_axi_gmem_out_0_AWSIZE;
-wire   [1:0] grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_NORM_WRITE_fu_370_m_axi_gmem_out_0_AWBURST;
-wire   [1:0] grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_NORM_WRITE_fu_370_m_axi_gmem_out_0_AWLOCK;
-wire   [3:0] grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_NORM_WRITE_fu_370_m_axi_gmem_out_0_AWCACHE;
-wire   [2:0] grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_NORM_WRITE_fu_370_m_axi_gmem_out_0_AWPROT;
-wire   [3:0] grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_NORM_WRITE_fu_370_m_axi_gmem_out_0_AWQOS;
-wire   [3:0] grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_NORM_WRITE_fu_370_m_axi_gmem_out_0_AWREGION;
-wire   [0:0] grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_NORM_WRITE_fu_370_m_axi_gmem_out_0_AWUSER;
-wire    grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_NORM_WRITE_fu_370_m_axi_gmem_out_0_WVALID;
-wire   [255:0] grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_NORM_WRITE_fu_370_m_axi_gmem_out_0_WDATA;
-wire   [31:0] grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_NORM_WRITE_fu_370_m_axi_gmem_out_0_WSTRB;
-wire    grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_NORM_WRITE_fu_370_m_axi_gmem_out_0_WLAST;
-wire   [0:0] grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_NORM_WRITE_fu_370_m_axi_gmem_out_0_WID;
-wire   [0:0] grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_NORM_WRITE_fu_370_m_axi_gmem_out_0_WUSER;
-wire    grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_NORM_WRITE_fu_370_m_axi_gmem_out_0_ARVALID;
-wire   [63:0] grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_NORM_WRITE_fu_370_m_axi_gmem_out_0_ARADDR;
-wire   [0:0] grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_NORM_WRITE_fu_370_m_axi_gmem_out_0_ARID;
-wire   [31:0] grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_NORM_WRITE_fu_370_m_axi_gmem_out_0_ARLEN;
-wire   [2:0] grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_NORM_WRITE_fu_370_m_axi_gmem_out_0_ARSIZE;
-wire   [1:0] grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_NORM_WRITE_fu_370_m_axi_gmem_out_0_ARBURST;
-wire   [1:0] grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_NORM_WRITE_fu_370_m_axi_gmem_out_0_ARLOCK;
-wire   [3:0] grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_NORM_WRITE_fu_370_m_axi_gmem_out_0_ARCACHE;
-wire   [2:0] grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_NORM_WRITE_fu_370_m_axi_gmem_out_0_ARPROT;
-wire   [3:0] grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_NORM_WRITE_fu_370_m_axi_gmem_out_0_ARQOS;
-wire   [3:0] grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_NORM_WRITE_fu_370_m_axi_gmem_out_0_ARREGION;
-wire   [0:0] grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_NORM_WRITE_fu_370_m_axi_gmem_out_0_ARUSER;
-wire    grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_NORM_WRITE_fu_370_m_axi_gmem_out_0_RREADY;
-wire    grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_NORM_WRITE_fu_370_m_axi_gmem_out_0_BREADY;
-wire   [3:0] grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_NORM_WRITE_fu_370_g_buf_address0;
-wire    grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_NORM_WRITE_fu_370_g_buf_ce0;
-wire   [3:0] grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_NORM_WRITE_fu_370_be_buf_address0;
-wire    grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_NORM_WRITE_fu_370_be_buf_ce0;
-wire   [9:0] grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_NORM_WRITE_fu_370_void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_9_address0;
-wire    grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_NORM_WRITE_fu_370_void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_9_ce0;
-wire   [9:0] grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_NORM_WRITE_fu_370_void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_8_address0;
-wire    grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_NORM_WRITE_fu_370_void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_8_ce0;
-wire   [9:0] grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_NORM_WRITE_fu_370_void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_7_address0;
-wire    grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_NORM_WRITE_fu_370_void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_7_ce0;
-wire   [9:0] grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_NORM_WRITE_fu_370_void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_6_address0;
-wire    grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_NORM_WRITE_fu_370_void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_6_ce0;
-wire   [9:0] grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_NORM_WRITE_fu_370_void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_5_address0;
-wire    grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_NORM_WRITE_fu_370_void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_5_ce0;
-wire   [9:0] grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_NORM_WRITE_fu_370_void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_4_address0;
-wire    grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_NORM_WRITE_fu_370_void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_4_ce0;
-wire   [9:0] grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_NORM_WRITE_fu_370_void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_3_address0;
-wire    grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_NORM_WRITE_fu_370_void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_3_ce0;
-wire   [9:0] grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_NORM_WRITE_fu_370_void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_2_address0;
-wire    grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_NORM_WRITE_fu_370_void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_2_ce0;
-wire   [9:0] grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_NORM_WRITE_fu_370_void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_1_address0;
-wire    grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_NORM_WRITE_fu_370_void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_1_ce0;
-wire   [9:0] grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_NORM_WRITE_fu_370_void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_address0;
-wire    grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_NORM_WRITE_fu_370_void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_ce0;
-wire   [9:0] grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_NORM_WRITE_fu_370_p_ZZ16UpConv_Fused_RowILi8ELi32ELi32ELi480ELi240EEvP7ap_uintILi256EEPKS1_S4_S4_S4_5_address0;
-wire    grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_NORM_WRITE_fu_370_p_ZZ16UpConv_Fused_RowILi8ELi32ELi32ELi480ELi240EEvP7ap_uintILi256EEPKS1_S4_S4_S4_5_ce0;
-wire   [9:0] grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_NORM_WRITE_fu_370_p_ZZ16UpConv_Fused_RowILi8ELi32ELi32ELi480ELi240EEvP7ap_uintILi256EEPKS1_S4_S4_S4_4_address0;
-wire    grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_NORM_WRITE_fu_370_p_ZZ16UpConv_Fused_RowILi8ELi32ELi32ELi480ELi240EEvP7ap_uintILi256EEPKS1_S4_S4_S4_4_ce0;
-wire   [9:0] grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_NORM_WRITE_fu_370_p_ZZ16UpConv_Fused_RowILi8ELi32ELi32ELi480ELi240EEvP7ap_uintILi256EEPKS1_S4_S4_S4_3_address0;
-wire    grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_NORM_WRITE_fu_370_p_ZZ16UpConv_Fused_RowILi8ELi32ELi32ELi480ELi240EEvP7ap_uintILi256EEPKS1_S4_S4_S4_3_ce0;
-wire   [9:0] grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_NORM_WRITE_fu_370_p_ZZ16UpConv_Fused_RowILi8ELi32ELi32ELi480ELi240EEvP7ap_uintILi256EEPKS1_S4_S4_S4_2_address0;
-wire    grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_NORM_WRITE_fu_370_p_ZZ16UpConv_Fused_RowILi8ELi32ELi32ELi480ELi240EEvP7ap_uintILi256EEPKS1_S4_S4_S4_2_ce0;
-wire   [9:0] grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_NORM_WRITE_fu_370_p_ZZ16UpConv_Fused_RowILi8ELi32ELi32ELi480ELi240EEvP7ap_uintILi256EEPKS1_S4_S4_S4_1_address0;
-wire    grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_NORM_WRITE_fu_370_p_ZZ16UpConv_Fused_RowILi8ELi32ELi32ELi480ELi240EEvP7ap_uintILi256EEPKS1_S4_S4_S4_1_ce0;
-wire   [9:0] grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_NORM_WRITE_fu_370_p_ZZ16UpConv_Fused_RowILi8ELi32ELi32ELi480ELi240EEvP7ap_uintILi256EEPKS1_S4_S4_S4_address0;
-wire    grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_NORM_WRITE_fu_370_p_ZZ16UpConv_Fused_RowILi8ELi32ELi32ELi480ELi240EEvP7ap_uintILi256EEPKS1_S4_S4_S4_ce0;
-wire   [15:0] grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_NORM_WRITE_fu_370_grp_fu_900_p_din0;
-wire   [15:0] grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_NORM_WRITE_fu_370_grp_fu_900_p_din1;
-wire    grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_NORM_WRITE_fu_370_grp_fu_900_p_ce;
-wire   [15:0] grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_NORM_WRITE_fu_370_grp_fu_904_p_din0;
-wire   [15:0] grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_NORM_WRITE_fu_370_grp_fu_904_p_din1;
-wire    grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_NORM_WRITE_fu_370_grp_fu_904_p_ce;
-wire   [15:0] grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_NORM_WRITE_fu_370_grp_fu_908_p_din0;
-wire   [15:0] grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_NORM_WRITE_fu_370_grp_fu_908_p_din1;
-wire    grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_NORM_WRITE_fu_370_grp_fu_908_p_ce;
-wire   [15:0] grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_NORM_WRITE_fu_370_grp_fu_912_p_din0;
-wire   [15:0] grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_NORM_WRITE_fu_370_grp_fu_912_p_din1;
-wire    grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_NORM_WRITE_fu_370_grp_fu_912_p_ce;
-wire   [15:0] grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_NORM_WRITE_fu_370_grp_fu_916_p_din0;
-wire   [15:0] grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_NORM_WRITE_fu_370_grp_fu_916_p_din1;
-wire    grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_NORM_WRITE_fu_370_grp_fu_916_p_ce;
-wire   [15:0] grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_NORM_WRITE_fu_370_grp_fu_920_p_din0;
-wire   [15:0] grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_NORM_WRITE_fu_370_grp_fu_920_p_din1;
-wire    grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_NORM_WRITE_fu_370_grp_fu_920_p_ce;
-wire   [15:0] grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_NORM_WRITE_fu_370_grp_fu_924_p_din0;
-wire   [15:0] grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_NORM_WRITE_fu_370_grp_fu_924_p_din1;
-wire    grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_NORM_WRITE_fu_370_grp_fu_924_p_ce;
-wire   [15:0] grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_NORM_WRITE_fu_370_grp_fu_928_p_din0;
-wire   [15:0] grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_NORM_WRITE_fu_370_grp_fu_928_p_din1;
-wire    grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_NORM_WRITE_fu_370_grp_fu_928_p_ce;
-wire   [15:0] grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_NORM_WRITE_fu_370_grp_fu_740_p_din0;
-wire   [15:0] grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_NORM_WRITE_fu_370_grp_fu_740_p_din1;
-wire    grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_NORM_WRITE_fu_370_grp_fu_740_p_ce;
-wire   [15:0] grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_NORM_WRITE_fu_370_grp_fu_744_p_din0;
-wire   [15:0] grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_NORM_WRITE_fu_370_grp_fu_744_p_din1;
-wire    grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_NORM_WRITE_fu_370_grp_fu_744_p_ce;
-wire   [15:0] grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_NORM_WRITE_fu_370_grp_fu_748_p_din0;
-wire   [15:0] grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_NORM_WRITE_fu_370_grp_fu_748_p_din1;
-wire    grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_NORM_WRITE_fu_370_grp_fu_748_p_ce;
-wire   [15:0] grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_NORM_WRITE_fu_370_grp_fu_752_p_din0;
-wire   [15:0] grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_NORM_WRITE_fu_370_grp_fu_752_p_din1;
-wire    grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_NORM_WRITE_fu_370_grp_fu_752_p_ce;
-wire   [15:0] grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_NORM_WRITE_fu_370_grp_fu_756_p_din0;
-wire   [15:0] grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_NORM_WRITE_fu_370_grp_fu_756_p_din1;
-wire    grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_NORM_WRITE_fu_370_grp_fu_756_p_ce;
-wire   [15:0] grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_NORM_WRITE_fu_370_grp_fu_760_p_din0;
-wire   [15:0] grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_NORM_WRITE_fu_370_grp_fu_760_p_din1;
-wire    grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_NORM_WRITE_fu_370_grp_fu_760_p_ce;
-wire   [15:0] grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_NORM_WRITE_fu_370_grp_fu_764_p_din0;
-wire   [15:0] grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_NORM_WRITE_fu_370_grp_fu_764_p_din1;
-wire    grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_NORM_WRITE_fu_370_grp_fu_764_p_ce;
-wire   [15:0] grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_NORM_WRITE_fu_370_grp_fu_768_p_din0;
-wire   [15:0] grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_NORM_WRITE_fu_370_grp_fu_768_p_din1;
-wire    grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_NORM_WRITE_fu_370_grp_fu_768_p_ce;
-wire   [15:0] grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_NORM_WRITE_fu_370_grp_fu_772_p_din0;
-wire   [15:0] grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_NORM_WRITE_fu_370_grp_fu_772_p_din1;
-wire    grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_NORM_WRITE_fu_370_grp_fu_772_p_ce;
-wire   [15:0] grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_NORM_WRITE_fu_370_grp_fu_776_p_din0;
-wire   [15:0] grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_NORM_WRITE_fu_370_grp_fu_776_p_din1;
-wire    grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_NORM_WRITE_fu_370_grp_fu_776_p_ce;
-wire   [15:0] grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_NORM_WRITE_fu_370_grp_fu_780_p_din0;
-wire   [15:0] grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_NORM_WRITE_fu_370_grp_fu_780_p_din1;
-wire    grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_NORM_WRITE_fu_370_grp_fu_780_p_ce;
-wire   [15:0] grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_NORM_WRITE_fu_370_grp_fu_784_p_din0;
-wire   [15:0] grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_NORM_WRITE_fu_370_grp_fu_784_p_din1;
-wire    grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_NORM_WRITE_fu_370_grp_fu_784_p_ce;
-wire   [15:0] grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_NORM_WRITE_fu_370_grp_fu_788_p_din0;
-wire   [15:0] grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_NORM_WRITE_fu_370_grp_fu_788_p_din1;
-wire    grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_NORM_WRITE_fu_370_grp_fu_788_p_ce;
-wire   [15:0] grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_NORM_WRITE_fu_370_grp_fu_792_p_din0;
-wire   [15:0] grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_NORM_WRITE_fu_370_grp_fu_792_p_din1;
-wire    grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_NORM_WRITE_fu_370_grp_fu_792_p_ce;
-wire   [15:0] grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_NORM_WRITE_fu_370_grp_fu_796_p_din0;
-wire   [15:0] grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_NORM_WRITE_fu_370_grp_fu_796_p_din1;
-wire    grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_NORM_WRITE_fu_370_grp_fu_796_p_ce;
-wire   [15:0] grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_NORM_WRITE_fu_370_grp_fu_800_p_din0;
-wire   [15:0] grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_NORM_WRITE_fu_370_grp_fu_800_p_din1;
-wire    grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_NORM_WRITE_fu_370_grp_fu_800_p_ce;
-wire   [15:0] grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_NORM_WRITE_fu_370_grp_fu_804_p_din0;
-wire   [15:0] grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_NORM_WRITE_fu_370_grp_fu_804_p_din1;
-wire    grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_NORM_WRITE_fu_370_grp_fu_804_p_ce;
-wire   [15:0] grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_NORM_WRITE_fu_370_grp_fu_808_p_din0;
-wire   [15:0] grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_NORM_WRITE_fu_370_grp_fu_808_p_din1;
-wire    grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_NORM_WRITE_fu_370_grp_fu_808_p_ce;
-wire   [15:0] grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_NORM_WRITE_fu_370_grp_fu_812_p_din0;
-wire   [15:0] grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_NORM_WRITE_fu_370_grp_fu_812_p_din1;
-wire    grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_NORM_WRITE_fu_370_grp_fu_812_p_ce;
-wire   [15:0] grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_NORM_WRITE_fu_370_grp_fu_816_p_din0;
-wire   [15:0] grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_NORM_WRITE_fu_370_grp_fu_816_p_din1;
-wire    grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_NORM_WRITE_fu_370_grp_fu_816_p_ce;
-wire   [15:0] grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_NORM_WRITE_fu_370_grp_fu_820_p_din0;
-wire   [15:0] grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_NORM_WRITE_fu_370_grp_fu_820_p_din1;
-wire    grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_NORM_WRITE_fu_370_grp_fu_820_p_ce;
-wire   [15:0] grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_NORM_WRITE_fu_370_grp_fu_824_p_din0;
-wire   [15:0] grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_NORM_WRITE_fu_370_grp_fu_824_p_din1;
-wire    grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_NORM_WRITE_fu_370_grp_fu_824_p_ce;
-wire   [15:0] grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_NORM_WRITE_fu_370_grp_fu_828_p_din0;
-wire   [15:0] grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_NORM_WRITE_fu_370_grp_fu_828_p_din1;
-wire    grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_NORM_WRITE_fu_370_grp_fu_828_p_ce;
-wire   [15:0] grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_NORM_WRITE_fu_370_grp_fu_832_p_din0;
-wire   [15:0] grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_NORM_WRITE_fu_370_grp_fu_832_p_din1;
-wire    grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_NORM_WRITE_fu_370_grp_fu_832_p_ce;
-wire   [15:0] grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_NORM_WRITE_fu_370_grp_fu_836_p_din0;
-wire   [15:0] grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_NORM_WRITE_fu_370_grp_fu_836_p_din1;
-wire    grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_NORM_WRITE_fu_370_grp_fu_836_p_ce;
-wire   [15:0] grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_NORM_WRITE_fu_370_grp_fu_840_p_din0;
-wire   [15:0] grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_NORM_WRITE_fu_370_grp_fu_840_p_din1;
-wire    grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_NORM_WRITE_fu_370_grp_fu_840_p_ce;
-wire   [15:0] grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_NORM_WRITE_fu_370_grp_fu_844_p_din0;
-wire   [15:0] grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_NORM_WRITE_fu_370_grp_fu_844_p_din1;
-wire    grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_NORM_WRITE_fu_370_grp_fu_844_p_ce;
-wire   [15:0] grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_NORM_WRITE_fu_370_grp_fu_848_p_din0;
-wire   [15:0] grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_NORM_WRITE_fu_370_grp_fu_848_p_din1;
-wire    grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_NORM_WRITE_fu_370_grp_fu_848_p_ce;
-wire   [15:0] grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_NORM_WRITE_fu_370_grp_fu_852_p_din0;
-wire   [15:0] grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_NORM_WRITE_fu_370_grp_fu_852_p_din1;
-wire    grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_NORM_WRITE_fu_370_grp_fu_852_p_ce;
-wire   [15:0] grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_NORM_WRITE_fu_370_grp_fu_856_p_din0;
-wire   [15:0] grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_NORM_WRITE_fu_370_grp_fu_856_p_din1;
-wire    grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_NORM_WRITE_fu_370_grp_fu_856_p_ce;
-wire   [15:0] grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_NORM_WRITE_fu_370_grp_fu_860_p_din0;
-wire   [15:0] grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_NORM_WRITE_fu_370_grp_fu_860_p_din1;
-wire    grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_NORM_WRITE_fu_370_grp_fu_860_p_ce;
-wire   [15:0] grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_NORM_WRITE_fu_370_grp_fu_864_p_din0;
-wire   [15:0] grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_NORM_WRITE_fu_370_grp_fu_864_p_din1;
-wire    grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_NORM_WRITE_fu_370_grp_fu_864_p_ce;
-wire   [15:0] grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_NORM_WRITE_fu_370_grp_fu_868_p_din0;
-wire   [15:0] grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_NORM_WRITE_fu_370_grp_fu_868_p_din1;
-wire    grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_NORM_WRITE_fu_370_grp_fu_868_p_ce;
-wire   [15:0] grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_NORM_WRITE_fu_370_grp_fu_872_p_din0;
-wire   [15:0] grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_NORM_WRITE_fu_370_grp_fu_872_p_din1;
-wire    grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_NORM_WRITE_fu_370_grp_fu_872_p_ce;
-wire   [15:0] grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_NORM_WRITE_fu_370_grp_fu_876_p_din0;
-wire   [15:0] grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_NORM_WRITE_fu_370_grp_fu_876_p_din1;
-wire    grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_NORM_WRITE_fu_370_grp_fu_876_p_ce;
-wire   [15:0] grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_NORM_WRITE_fu_370_grp_fu_880_p_din0;
-wire   [15:0] grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_NORM_WRITE_fu_370_grp_fu_880_p_din1;
-wire    grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_NORM_WRITE_fu_370_grp_fu_880_p_ce;
-wire   [15:0] grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_NORM_WRITE_fu_370_grp_fu_884_p_din0;
-wire   [15:0] grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_NORM_WRITE_fu_370_grp_fu_884_p_din1;
-wire    grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_NORM_WRITE_fu_370_grp_fu_884_p_ce;
-wire   [15:0] grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_NORM_WRITE_fu_370_grp_fu_888_p_din0;
-wire   [15:0] grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_NORM_WRITE_fu_370_grp_fu_888_p_din1;
-wire    grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_NORM_WRITE_fu_370_grp_fu_888_p_ce;
-wire   [15:0] grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_NORM_WRITE_fu_370_grp_fu_892_p_din0;
-wire   [15:0] grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_NORM_WRITE_fu_370_grp_fu_892_p_din1;
-wire    grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_NORM_WRITE_fu_370_grp_fu_892_p_ce;
-wire   [15:0] grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_NORM_WRITE_fu_370_grp_fu_896_p_din0;
-wire   [15:0] grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_NORM_WRITE_fu_370_grp_fu_896_p_din1;
-wire    grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_NORM_WRITE_fu_370_grp_fu_896_p_ce;
-reg    grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_RESET_ROW_ACC_fu_237_ap_start_reg;
+wire    grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_RESET_ROW_ACC_fu_214_ap_start;
+wire    grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_RESET_ROW_ACC_fu_214_ap_done;
+wire    grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_RESET_ROW_ACC_fu_214_ap_idle;
+wire    grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_RESET_ROW_ACC_fu_214_ap_ready;
+wire   [9:0] grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_RESET_ROW_ACC_fu_214_void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_9_address0;
+wire    grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_RESET_ROW_ACC_fu_214_void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_9_ce0;
+wire    grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_RESET_ROW_ACC_fu_214_void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_9_we0;
+wire   [15:0] grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_RESET_ROW_ACC_fu_214_void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_9_d0;
+wire   [9:0] grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_RESET_ROW_ACC_fu_214_void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_8_address0;
+wire    grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_RESET_ROW_ACC_fu_214_void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_8_ce0;
+wire    grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_RESET_ROW_ACC_fu_214_void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_8_we0;
+wire   [15:0] grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_RESET_ROW_ACC_fu_214_void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_8_d0;
+wire   [9:0] grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_RESET_ROW_ACC_fu_214_void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_7_address0;
+wire    grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_RESET_ROW_ACC_fu_214_void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_7_ce0;
+wire    grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_RESET_ROW_ACC_fu_214_void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_7_we0;
+wire   [15:0] grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_RESET_ROW_ACC_fu_214_void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_7_d0;
+wire   [9:0] grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_RESET_ROW_ACC_fu_214_void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_6_address0;
+wire    grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_RESET_ROW_ACC_fu_214_void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_6_ce0;
+wire    grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_RESET_ROW_ACC_fu_214_void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_6_we0;
+wire   [15:0] grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_RESET_ROW_ACC_fu_214_void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_6_d0;
+wire   [9:0] grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_RESET_ROW_ACC_fu_214_void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_5_address0;
+wire    grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_RESET_ROW_ACC_fu_214_void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_5_ce0;
+wire    grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_RESET_ROW_ACC_fu_214_void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_5_we0;
+wire   [15:0] grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_RESET_ROW_ACC_fu_214_void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_5_d0;
+wire   [9:0] grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_RESET_ROW_ACC_fu_214_void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_4_address0;
+wire    grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_RESET_ROW_ACC_fu_214_void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_4_ce0;
+wire    grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_RESET_ROW_ACC_fu_214_void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_4_we0;
+wire   [15:0] grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_RESET_ROW_ACC_fu_214_void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_4_d0;
+wire   [9:0] grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_RESET_ROW_ACC_fu_214_void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_3_address0;
+wire    grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_RESET_ROW_ACC_fu_214_void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_3_ce0;
+wire    grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_RESET_ROW_ACC_fu_214_void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_3_we0;
+wire   [15:0] grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_RESET_ROW_ACC_fu_214_void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_3_d0;
+wire   [9:0] grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_RESET_ROW_ACC_fu_214_void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_2_address0;
+wire    grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_RESET_ROW_ACC_fu_214_void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_2_ce0;
+wire    grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_RESET_ROW_ACC_fu_214_void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_2_we0;
+wire   [15:0] grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_RESET_ROW_ACC_fu_214_void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_2_d0;
+wire   [9:0] grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_RESET_ROW_ACC_fu_214_void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_1_address0;
+wire    grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_RESET_ROW_ACC_fu_214_void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_1_ce0;
+wire    grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_RESET_ROW_ACC_fu_214_void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_1_we0;
+wire   [15:0] grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_RESET_ROW_ACC_fu_214_void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_1_d0;
+wire   [9:0] grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_RESET_ROW_ACC_fu_214_void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_address0;
+wire    grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_RESET_ROW_ACC_fu_214_void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_ce0;
+wire    grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_RESET_ROW_ACC_fu_214_void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_we0;
+wire   [15:0] grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_RESET_ROW_ACC_fu_214_void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_d0;
+wire   [9:0] grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_RESET_ROW_ACC_fu_214_p_ZZ16UpConv_Fused_RowILi8ELi32ELi32ELi480ELi240EEvP7ap_uintILi256EEPKS1_S4_S4_S4_5_address0;
+wire    grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_RESET_ROW_ACC_fu_214_p_ZZ16UpConv_Fused_RowILi8ELi32ELi32ELi480ELi240EEvP7ap_uintILi256EEPKS1_S4_S4_S4_5_ce0;
+wire    grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_RESET_ROW_ACC_fu_214_p_ZZ16UpConv_Fused_RowILi8ELi32ELi32ELi480ELi240EEvP7ap_uintILi256EEPKS1_S4_S4_S4_5_we0;
+wire   [15:0] grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_RESET_ROW_ACC_fu_214_p_ZZ16UpConv_Fused_RowILi8ELi32ELi32ELi480ELi240EEvP7ap_uintILi256EEPKS1_S4_S4_S4_5_d0;
+wire   [9:0] grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_RESET_ROW_ACC_fu_214_p_ZZ16UpConv_Fused_RowILi8ELi32ELi32ELi480ELi240EEvP7ap_uintILi256EEPKS1_S4_S4_S4_4_address0;
+wire    grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_RESET_ROW_ACC_fu_214_p_ZZ16UpConv_Fused_RowILi8ELi32ELi32ELi480ELi240EEvP7ap_uintILi256EEPKS1_S4_S4_S4_4_ce0;
+wire    grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_RESET_ROW_ACC_fu_214_p_ZZ16UpConv_Fused_RowILi8ELi32ELi32ELi480ELi240EEvP7ap_uintILi256EEPKS1_S4_S4_S4_4_we0;
+wire   [15:0] grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_RESET_ROW_ACC_fu_214_p_ZZ16UpConv_Fused_RowILi8ELi32ELi32ELi480ELi240EEvP7ap_uintILi256EEPKS1_S4_S4_S4_4_d0;
+wire   [9:0] grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_RESET_ROW_ACC_fu_214_p_ZZ16UpConv_Fused_RowILi8ELi32ELi32ELi480ELi240EEvP7ap_uintILi256EEPKS1_S4_S4_S4_3_address0;
+wire    grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_RESET_ROW_ACC_fu_214_p_ZZ16UpConv_Fused_RowILi8ELi32ELi32ELi480ELi240EEvP7ap_uintILi256EEPKS1_S4_S4_S4_3_ce0;
+wire    grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_RESET_ROW_ACC_fu_214_p_ZZ16UpConv_Fused_RowILi8ELi32ELi32ELi480ELi240EEvP7ap_uintILi256EEPKS1_S4_S4_S4_3_we0;
+wire   [15:0] grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_RESET_ROW_ACC_fu_214_p_ZZ16UpConv_Fused_RowILi8ELi32ELi32ELi480ELi240EEvP7ap_uintILi256EEPKS1_S4_S4_S4_3_d0;
+wire   [9:0] grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_RESET_ROW_ACC_fu_214_p_ZZ16UpConv_Fused_RowILi8ELi32ELi32ELi480ELi240EEvP7ap_uintILi256EEPKS1_S4_S4_S4_2_address0;
+wire    grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_RESET_ROW_ACC_fu_214_p_ZZ16UpConv_Fused_RowILi8ELi32ELi32ELi480ELi240EEvP7ap_uintILi256EEPKS1_S4_S4_S4_2_ce0;
+wire    grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_RESET_ROW_ACC_fu_214_p_ZZ16UpConv_Fused_RowILi8ELi32ELi32ELi480ELi240EEvP7ap_uintILi256EEPKS1_S4_S4_S4_2_we0;
+wire   [15:0] grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_RESET_ROW_ACC_fu_214_p_ZZ16UpConv_Fused_RowILi8ELi32ELi32ELi480ELi240EEvP7ap_uintILi256EEPKS1_S4_S4_S4_2_d0;
+wire   [9:0] grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_RESET_ROW_ACC_fu_214_p_ZZ16UpConv_Fused_RowILi8ELi32ELi32ELi480ELi240EEvP7ap_uintILi256EEPKS1_S4_S4_S4_1_address0;
+wire    grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_RESET_ROW_ACC_fu_214_p_ZZ16UpConv_Fused_RowILi8ELi32ELi32ELi480ELi240EEvP7ap_uintILi256EEPKS1_S4_S4_S4_1_ce0;
+wire    grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_RESET_ROW_ACC_fu_214_p_ZZ16UpConv_Fused_RowILi8ELi32ELi32ELi480ELi240EEvP7ap_uintILi256EEPKS1_S4_S4_S4_1_we0;
+wire   [15:0] grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_RESET_ROW_ACC_fu_214_p_ZZ16UpConv_Fused_RowILi8ELi32ELi32ELi480ELi240EEvP7ap_uintILi256EEPKS1_S4_S4_S4_1_d0;
+wire   [9:0] grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_RESET_ROW_ACC_fu_214_p_ZZ16UpConv_Fused_RowILi8ELi32ELi32ELi480ELi240EEvP7ap_uintILi256EEPKS1_S4_S4_S4_address0;
+wire    grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_RESET_ROW_ACC_fu_214_p_ZZ16UpConv_Fused_RowILi8ELi32ELi32ELi480ELi240EEvP7ap_uintILi256EEPKS1_S4_S4_S4_ce0;
+wire    grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_RESET_ROW_ACC_fu_214_p_ZZ16UpConv_Fused_RowILi8ELi32ELi32ELi480ELi240EEvP7ap_uintILi256EEPKS1_S4_S4_S4_we0;
+wire   [15:0] grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_RESET_ROW_ACC_fu_214_p_ZZ16UpConv_Fused_RowILi8ELi32ELi32ELi480ELi240EEvP7ap_uintILi256EEPKS1_S4_S4_S4_d0;
+wire    grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_250_ap_start;
+wire    grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_250_ap_done;
+wire    grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_250_ap_idle;
+wire    grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_250_ap_ready;
+wire    grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_250_m_axi_gmem_weight_0_AWVALID;
+wire   [63:0] grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_250_m_axi_gmem_weight_0_AWADDR;
+wire   [0:0] grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_250_m_axi_gmem_weight_0_AWID;
+wire   [31:0] grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_250_m_axi_gmem_weight_0_AWLEN;
+wire   [2:0] grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_250_m_axi_gmem_weight_0_AWSIZE;
+wire   [1:0] grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_250_m_axi_gmem_weight_0_AWBURST;
+wire   [1:0] grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_250_m_axi_gmem_weight_0_AWLOCK;
+wire   [3:0] grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_250_m_axi_gmem_weight_0_AWCACHE;
+wire   [2:0] grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_250_m_axi_gmem_weight_0_AWPROT;
+wire   [3:0] grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_250_m_axi_gmem_weight_0_AWQOS;
+wire   [3:0] grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_250_m_axi_gmem_weight_0_AWREGION;
+wire   [0:0] grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_250_m_axi_gmem_weight_0_AWUSER;
+wire    grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_250_m_axi_gmem_weight_0_WVALID;
+wire   [255:0] grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_250_m_axi_gmem_weight_0_WDATA;
+wire   [31:0] grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_250_m_axi_gmem_weight_0_WSTRB;
+wire    grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_250_m_axi_gmem_weight_0_WLAST;
+wire   [0:0] grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_250_m_axi_gmem_weight_0_WID;
+wire   [0:0] grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_250_m_axi_gmem_weight_0_WUSER;
+wire    grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_250_m_axi_gmem_weight_0_ARVALID;
+wire   [63:0] grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_250_m_axi_gmem_weight_0_ARADDR;
+wire   [0:0] grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_250_m_axi_gmem_weight_0_ARID;
+wire   [31:0] grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_250_m_axi_gmem_weight_0_ARLEN;
+wire   [2:0] grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_250_m_axi_gmem_weight_0_ARSIZE;
+wire   [1:0] grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_250_m_axi_gmem_weight_0_ARBURST;
+wire   [1:0] grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_250_m_axi_gmem_weight_0_ARLOCK;
+wire   [3:0] grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_250_m_axi_gmem_weight_0_ARCACHE;
+wire   [2:0] grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_250_m_axi_gmem_weight_0_ARPROT;
+wire   [3:0] grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_250_m_axi_gmem_weight_0_ARQOS;
+wire   [3:0] grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_250_m_axi_gmem_weight_0_ARREGION;
+wire   [0:0] grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_250_m_axi_gmem_weight_0_ARUSER;
+wire    grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_250_m_axi_gmem_weight_0_RREADY;
+wire    grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_250_m_axi_gmem_weight_0_BREADY;
+wire   [10:0] grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_250_x_buf_address0;
+wire    grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_250_x_buf_ce0;
+wire   [9:0] grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_250_void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_9_address0;
+wire    grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_250_void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_9_ce0;
+wire    grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_250_void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_9_we0;
+wire   [15:0] grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_250_void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_9_d0;
+wire   [9:0] grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_250_void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_9_address1;
+wire    grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_250_void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_9_ce1;
+wire   [9:0] grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_250_void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_8_address0;
+wire    grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_250_void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_8_ce0;
+wire    grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_250_void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_8_we0;
+wire   [15:0] grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_250_void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_8_d0;
+wire   [9:0] grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_250_void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_8_address1;
+wire    grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_250_void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_8_ce1;
+wire   [9:0] grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_250_void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_7_address0;
+wire    grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_250_void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_7_ce0;
+wire    grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_250_void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_7_we0;
+wire   [15:0] grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_250_void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_7_d0;
+wire   [9:0] grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_250_void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_7_address1;
+wire    grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_250_void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_7_ce1;
+wire   [9:0] grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_250_void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_6_address0;
+wire    grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_250_void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_6_ce0;
+wire    grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_250_void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_6_we0;
+wire   [15:0] grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_250_void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_6_d0;
+wire   [9:0] grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_250_void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_6_address1;
+wire    grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_250_void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_6_ce1;
+wire   [9:0] grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_250_void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_5_address0;
+wire    grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_250_void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_5_ce0;
+wire    grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_250_void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_5_we0;
+wire   [15:0] grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_250_void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_5_d0;
+wire   [9:0] grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_250_void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_5_address1;
+wire    grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_250_void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_5_ce1;
+wire   [9:0] grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_250_void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_4_address0;
+wire    grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_250_void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_4_ce0;
+wire    grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_250_void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_4_we0;
+wire   [15:0] grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_250_void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_4_d0;
+wire   [9:0] grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_250_void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_4_address1;
+wire    grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_250_void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_4_ce1;
+wire   [9:0] grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_250_void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_3_address0;
+wire    grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_250_void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_3_ce0;
+wire    grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_250_void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_3_we0;
+wire   [15:0] grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_250_void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_3_d0;
+wire   [9:0] grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_250_void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_3_address1;
+wire    grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_250_void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_3_ce1;
+wire   [9:0] grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_250_void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_2_address0;
+wire    grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_250_void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_2_ce0;
+wire    grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_250_void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_2_we0;
+wire   [15:0] grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_250_void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_2_d0;
+wire   [9:0] grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_250_void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_2_address1;
+wire    grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_250_void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_2_ce1;
+wire   [9:0] grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_250_void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_1_address0;
+wire    grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_250_void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_1_ce0;
+wire    grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_250_void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_1_we0;
+wire   [15:0] grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_250_void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_1_d0;
+wire   [9:0] grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_250_void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_1_address1;
+wire    grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_250_void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_1_ce1;
+wire   [9:0] grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_250_void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_address0;
+wire    grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_250_void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_ce0;
+wire    grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_250_void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_we0;
+wire   [15:0] grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_250_void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_d0;
+wire   [9:0] grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_250_void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_address1;
+wire    grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_250_void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_ce1;
+wire   [9:0] grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_250_p_ZZ16UpConv_Fused_RowILi8ELi32ELi32ELi480ELi240EEvP7ap_uintILi256EEPKS1_S4_S4_S4_5_address0;
+wire    grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_250_p_ZZ16UpConv_Fused_RowILi8ELi32ELi32ELi480ELi240EEvP7ap_uintILi256EEPKS1_S4_S4_S4_5_ce0;
+wire    grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_250_p_ZZ16UpConv_Fused_RowILi8ELi32ELi32ELi480ELi240EEvP7ap_uintILi256EEPKS1_S4_S4_S4_5_we0;
+wire   [15:0] grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_250_p_ZZ16UpConv_Fused_RowILi8ELi32ELi32ELi480ELi240EEvP7ap_uintILi256EEPKS1_S4_S4_S4_5_d0;
+wire   [9:0] grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_250_p_ZZ16UpConv_Fused_RowILi8ELi32ELi32ELi480ELi240EEvP7ap_uintILi256EEPKS1_S4_S4_S4_5_address1;
+wire    grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_250_p_ZZ16UpConv_Fused_RowILi8ELi32ELi32ELi480ELi240EEvP7ap_uintILi256EEPKS1_S4_S4_S4_5_ce1;
+wire   [9:0] grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_250_p_ZZ16UpConv_Fused_RowILi8ELi32ELi32ELi480ELi240EEvP7ap_uintILi256EEPKS1_S4_S4_S4_4_address0;
+wire    grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_250_p_ZZ16UpConv_Fused_RowILi8ELi32ELi32ELi480ELi240EEvP7ap_uintILi256EEPKS1_S4_S4_S4_4_ce0;
+wire    grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_250_p_ZZ16UpConv_Fused_RowILi8ELi32ELi32ELi480ELi240EEvP7ap_uintILi256EEPKS1_S4_S4_S4_4_we0;
+wire   [15:0] grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_250_p_ZZ16UpConv_Fused_RowILi8ELi32ELi32ELi480ELi240EEvP7ap_uintILi256EEPKS1_S4_S4_S4_4_d0;
+wire   [9:0] grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_250_p_ZZ16UpConv_Fused_RowILi8ELi32ELi32ELi480ELi240EEvP7ap_uintILi256EEPKS1_S4_S4_S4_4_address1;
+wire    grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_250_p_ZZ16UpConv_Fused_RowILi8ELi32ELi32ELi480ELi240EEvP7ap_uintILi256EEPKS1_S4_S4_S4_4_ce1;
+wire   [9:0] grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_250_p_ZZ16UpConv_Fused_RowILi8ELi32ELi32ELi480ELi240EEvP7ap_uintILi256EEPKS1_S4_S4_S4_3_address0;
+wire    grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_250_p_ZZ16UpConv_Fused_RowILi8ELi32ELi32ELi480ELi240EEvP7ap_uintILi256EEPKS1_S4_S4_S4_3_ce0;
+wire    grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_250_p_ZZ16UpConv_Fused_RowILi8ELi32ELi32ELi480ELi240EEvP7ap_uintILi256EEPKS1_S4_S4_S4_3_we0;
+wire   [15:0] grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_250_p_ZZ16UpConv_Fused_RowILi8ELi32ELi32ELi480ELi240EEvP7ap_uintILi256EEPKS1_S4_S4_S4_3_d0;
+wire   [9:0] grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_250_p_ZZ16UpConv_Fused_RowILi8ELi32ELi32ELi480ELi240EEvP7ap_uintILi256EEPKS1_S4_S4_S4_3_address1;
+wire    grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_250_p_ZZ16UpConv_Fused_RowILi8ELi32ELi32ELi480ELi240EEvP7ap_uintILi256EEPKS1_S4_S4_S4_3_ce1;
+wire   [9:0] grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_250_p_ZZ16UpConv_Fused_RowILi8ELi32ELi32ELi480ELi240EEvP7ap_uintILi256EEPKS1_S4_S4_S4_2_address0;
+wire    grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_250_p_ZZ16UpConv_Fused_RowILi8ELi32ELi32ELi480ELi240EEvP7ap_uintILi256EEPKS1_S4_S4_S4_2_ce0;
+wire    grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_250_p_ZZ16UpConv_Fused_RowILi8ELi32ELi32ELi480ELi240EEvP7ap_uintILi256EEPKS1_S4_S4_S4_2_we0;
+wire   [15:0] grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_250_p_ZZ16UpConv_Fused_RowILi8ELi32ELi32ELi480ELi240EEvP7ap_uintILi256EEPKS1_S4_S4_S4_2_d0;
+wire   [9:0] grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_250_p_ZZ16UpConv_Fused_RowILi8ELi32ELi32ELi480ELi240EEvP7ap_uintILi256EEPKS1_S4_S4_S4_2_address1;
+wire    grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_250_p_ZZ16UpConv_Fused_RowILi8ELi32ELi32ELi480ELi240EEvP7ap_uintILi256EEPKS1_S4_S4_S4_2_ce1;
+wire   [9:0] grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_250_p_ZZ16UpConv_Fused_RowILi8ELi32ELi32ELi480ELi240EEvP7ap_uintILi256EEPKS1_S4_S4_S4_1_address0;
+wire    grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_250_p_ZZ16UpConv_Fused_RowILi8ELi32ELi32ELi480ELi240EEvP7ap_uintILi256EEPKS1_S4_S4_S4_1_ce0;
+wire    grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_250_p_ZZ16UpConv_Fused_RowILi8ELi32ELi32ELi480ELi240EEvP7ap_uintILi256EEPKS1_S4_S4_S4_1_we0;
+wire   [15:0] grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_250_p_ZZ16UpConv_Fused_RowILi8ELi32ELi32ELi480ELi240EEvP7ap_uintILi256EEPKS1_S4_S4_S4_1_d0;
+wire   [9:0] grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_250_p_ZZ16UpConv_Fused_RowILi8ELi32ELi32ELi480ELi240EEvP7ap_uintILi256EEPKS1_S4_S4_S4_1_address1;
+wire    grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_250_p_ZZ16UpConv_Fused_RowILi8ELi32ELi32ELi480ELi240EEvP7ap_uintILi256EEPKS1_S4_S4_S4_1_ce1;
+wire   [9:0] grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_250_p_ZZ16UpConv_Fused_RowILi8ELi32ELi32ELi480ELi240EEvP7ap_uintILi256EEPKS1_S4_S4_S4_address0;
+wire    grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_250_p_ZZ16UpConv_Fused_RowILi8ELi32ELi32ELi480ELi240EEvP7ap_uintILi256EEPKS1_S4_S4_S4_ce0;
+wire    grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_250_p_ZZ16UpConv_Fused_RowILi8ELi32ELi32ELi480ELi240EEvP7ap_uintILi256EEPKS1_S4_S4_S4_we0;
+wire   [15:0] grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_250_p_ZZ16UpConv_Fused_RowILi8ELi32ELi32ELi480ELi240EEvP7ap_uintILi256EEPKS1_S4_S4_S4_d0;
+wire   [9:0] grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_250_p_ZZ16UpConv_Fused_RowILi8ELi32ELi32ELi480ELi240EEvP7ap_uintILi256EEPKS1_S4_S4_S4_address1;
+wire    grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_250_p_ZZ16UpConv_Fused_RowILi8ELi32ELi32ELi480ELi240EEvP7ap_uintILi256EEPKS1_S4_S4_S4_ce1;
+wire   [15:0] grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_250_grp_fu_582_p_din0;
+wire   [15:0] grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_250_grp_fu_582_p_din1;
+wire    grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_250_grp_fu_582_p_ce;
+wire   [15:0] grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_250_grp_fu_586_p_din0;
+wire   [15:0] grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_250_grp_fu_586_p_din1;
+wire    grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_250_grp_fu_586_p_ce;
+wire   [15:0] grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_250_grp_fu_590_p_din0;
+wire   [15:0] grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_250_grp_fu_590_p_din1;
+wire    grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_250_grp_fu_590_p_ce;
+wire   [15:0] grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_250_grp_fu_594_p_din0;
+wire   [15:0] grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_250_grp_fu_594_p_din1;
+wire    grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_250_grp_fu_594_p_ce;
+wire   [15:0] grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_250_grp_fu_598_p_din0;
+wire   [15:0] grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_250_grp_fu_598_p_din1;
+wire    grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_250_grp_fu_598_p_ce;
+wire   [15:0] grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_250_grp_fu_602_p_din0;
+wire   [15:0] grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_250_grp_fu_602_p_din1;
+wire    grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_250_grp_fu_602_p_ce;
+wire   [15:0] grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_250_grp_fu_606_p_din0;
+wire   [15:0] grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_250_grp_fu_606_p_din1;
+wire    grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_250_grp_fu_606_p_ce;
+wire   [15:0] grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_250_grp_fu_610_p_din0;
+wire   [15:0] grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_250_grp_fu_610_p_din1;
+wire    grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_250_grp_fu_610_p_ce;
+wire   [15:0] grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_250_grp_fu_614_p_din0;
+wire   [15:0] grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_250_grp_fu_614_p_din1;
+wire    grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_250_grp_fu_614_p_ce;
+wire   [15:0] grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_250_grp_fu_618_p_din0;
+wire   [15:0] grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_250_grp_fu_618_p_din1;
+wire    grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_250_grp_fu_618_p_ce;
+wire   [15:0] grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_250_grp_fu_622_p_din0;
+wire   [15:0] grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_250_grp_fu_622_p_din1;
+wire    grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_250_grp_fu_622_p_ce;
+wire   [15:0] grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_250_grp_fu_626_p_din0;
+wire   [15:0] grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_250_grp_fu_626_p_din1;
+wire    grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_250_grp_fu_626_p_ce;
+wire   [15:0] grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_250_grp_fu_630_p_din0;
+wire   [15:0] grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_250_grp_fu_630_p_din1;
+wire    grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_250_grp_fu_630_p_ce;
+wire   [15:0] grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_250_grp_fu_634_p_din0;
+wire   [15:0] grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_250_grp_fu_634_p_din1;
+wire    grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_250_grp_fu_634_p_ce;
+wire   [15:0] grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_250_grp_fu_638_p_din0;
+wire   [15:0] grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_250_grp_fu_638_p_din1;
+wire    grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_250_grp_fu_638_p_ce;
+wire   [15:0] grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_250_grp_fu_642_p_din0;
+wire   [15:0] grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_250_grp_fu_642_p_din1;
+wire    grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_250_grp_fu_642_p_ce;
+wire   [15:0] grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_250_grp_fu_646_p_din0;
+wire   [15:0] grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_250_grp_fu_646_p_din1;
+wire    grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_250_grp_fu_646_p_ce;
+wire   [15:0] grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_250_grp_fu_650_p_din0;
+wire   [15:0] grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_250_grp_fu_650_p_din1;
+wire    grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_250_grp_fu_650_p_ce;
+wire   [15:0] grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_250_grp_fu_654_p_din0;
+wire   [15:0] grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_250_grp_fu_654_p_din1;
+wire    grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_250_grp_fu_654_p_ce;
+wire   [15:0] grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_250_grp_fu_658_p_din0;
+wire   [15:0] grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_250_grp_fu_658_p_din1;
+wire    grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_250_grp_fu_658_p_ce;
+wire   [15:0] grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_250_grp_fu_662_p_din0;
+wire   [15:0] grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_250_grp_fu_662_p_din1;
+wire    grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_250_grp_fu_662_p_ce;
+wire   [15:0] grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_250_grp_fu_666_p_din0;
+wire   [15:0] grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_250_grp_fu_666_p_din1;
+wire    grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_250_grp_fu_666_p_ce;
+wire   [15:0] grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_250_grp_fu_670_p_din0;
+wire   [15:0] grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_250_grp_fu_670_p_din1;
+wire    grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_250_grp_fu_670_p_ce;
+wire   [15:0] grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_250_grp_fu_674_p_din0;
+wire   [15:0] grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_250_grp_fu_674_p_din1;
+wire    grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_250_grp_fu_674_p_ce;
+wire   [15:0] grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_250_grp_fu_678_p_din0;
+wire   [15:0] grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_250_grp_fu_678_p_din1;
+wire    grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_250_grp_fu_678_p_ce;
+wire   [15:0] grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_250_grp_fu_682_p_din0;
+wire   [15:0] grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_250_grp_fu_682_p_din1;
+wire    grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_250_grp_fu_682_p_ce;
+wire   [15:0] grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_250_grp_fu_686_p_din0;
+wire   [15:0] grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_250_grp_fu_686_p_din1;
+wire    grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_250_grp_fu_686_p_ce;
+wire   [15:0] grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_250_grp_fu_690_p_din0;
+wire   [15:0] grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_250_grp_fu_690_p_din1;
+wire    grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_250_grp_fu_690_p_ce;
+wire   [15:0] grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_250_grp_fu_694_p_din0;
+wire   [15:0] grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_250_grp_fu_694_p_din1;
+wire    grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_250_grp_fu_694_p_ce;
+wire   [15:0] grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_250_grp_fu_698_p_din0;
+wire   [15:0] grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_250_grp_fu_698_p_din1;
+wire    grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_250_grp_fu_698_p_ce;
+wire   [15:0] grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_250_grp_fu_702_p_din0;
+wire   [15:0] grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_250_grp_fu_702_p_din1;
+wire    grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_250_grp_fu_702_p_ce;
+wire   [15:0] grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_250_grp_fu_706_p_din0;
+wire   [15:0] grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_250_grp_fu_706_p_din1;
+wire    grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_250_grp_fu_706_p_ce;
+wire   [15:0] grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_250_grp_fu_710_p_din0;
+wire   [15:0] grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_250_grp_fu_710_p_din1;
+wire    grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_250_grp_fu_710_p_ce;
+wire   [15:0] grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_250_grp_fu_714_p_din0;
+wire   [15:0] grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_250_grp_fu_714_p_din1;
+wire    grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_250_grp_fu_714_p_ce;
+wire   [15:0] grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_250_grp_fu_718_p_din0;
+wire   [15:0] grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_250_grp_fu_718_p_din1;
+wire    grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_250_grp_fu_718_p_ce;
+wire   [15:0] grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_250_grp_fu_722_p_din0;
+wire   [15:0] grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_250_grp_fu_722_p_din1;
+wire    grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_250_grp_fu_722_p_ce;
+wire   [15:0] grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_250_grp_fu_726_p_din0;
+wire   [15:0] grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_250_grp_fu_726_p_din1;
+wire    grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_250_grp_fu_726_p_ce;
+wire   [15:0] grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_250_grp_fu_730_p_din0;
+wire   [15:0] grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_250_grp_fu_730_p_din1;
+wire    grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_250_grp_fu_730_p_ce;
+wire   [15:0] grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_250_grp_fu_734_p_din0;
+wire   [15:0] grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_250_grp_fu_734_p_din1;
+wire    grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_250_grp_fu_734_p_ce;
+wire   [15:0] grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_250_grp_fu_738_p_din0;
+wire   [15:0] grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_250_grp_fu_738_p_din1;
+wire    grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_250_grp_fu_738_p_ce;
+wire   [15:0] grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_250_grp_fu_742_p_din0;
+wire   [15:0] grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_250_grp_fu_742_p_din1;
+wire    grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_250_grp_fu_742_p_ce;
+wire   [15:0] grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_250_grp_fu_746_p_din0;
+wire   [15:0] grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_250_grp_fu_746_p_din1;
+wire    grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_250_grp_fu_746_p_ce;
+wire   [15:0] grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_250_grp_fu_750_p_din0;
+wire   [15:0] grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_250_grp_fu_750_p_din1;
+wire    grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_250_grp_fu_750_p_ce;
+wire   [15:0] grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_250_grp_fu_754_p_din0;
+wire   [15:0] grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_250_grp_fu_754_p_din1;
+wire    grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_250_grp_fu_754_p_ce;
+wire   [15:0] grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_250_grp_fu_758_p_din0;
+wire   [15:0] grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_250_grp_fu_758_p_din1;
+wire    grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_250_grp_fu_758_p_ce;
+wire   [15:0] grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_250_grp_fu_762_p_din0;
+wire   [15:0] grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_250_grp_fu_762_p_din1;
+wire    grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_250_grp_fu_762_p_ce;
+wire   [15:0] grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_250_grp_fu_766_p_din0;
+wire   [15:0] grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_250_grp_fu_766_p_din1;
+wire    grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_250_grp_fu_766_p_ce;
+wire   [15:0] grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_250_grp_fu_770_p_din0;
+wire   [15:0] grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_250_grp_fu_770_p_din1;
+wire    grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_250_grp_fu_770_p_ce;
+wire    grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_LOAD_B_fu_292_ap_start;
+wire    grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_LOAD_B_fu_292_ap_done;
+wire    grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_LOAD_B_fu_292_ap_idle;
+wire    grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_LOAD_B_fu_292_ap_ready;
+wire    grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_LOAD_B_fu_292_m_axi_gmem_param_0_AWVALID;
+wire   [63:0] grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_LOAD_B_fu_292_m_axi_gmem_param_0_AWADDR;
+wire   [0:0] grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_LOAD_B_fu_292_m_axi_gmem_param_0_AWID;
+wire   [31:0] grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_LOAD_B_fu_292_m_axi_gmem_param_0_AWLEN;
+wire   [2:0] grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_LOAD_B_fu_292_m_axi_gmem_param_0_AWSIZE;
+wire   [1:0] grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_LOAD_B_fu_292_m_axi_gmem_param_0_AWBURST;
+wire   [1:0] grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_LOAD_B_fu_292_m_axi_gmem_param_0_AWLOCK;
+wire   [3:0] grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_LOAD_B_fu_292_m_axi_gmem_param_0_AWCACHE;
+wire   [2:0] grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_LOAD_B_fu_292_m_axi_gmem_param_0_AWPROT;
+wire   [3:0] grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_LOAD_B_fu_292_m_axi_gmem_param_0_AWQOS;
+wire   [3:0] grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_LOAD_B_fu_292_m_axi_gmem_param_0_AWREGION;
+wire   [0:0] grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_LOAD_B_fu_292_m_axi_gmem_param_0_AWUSER;
+wire    grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_LOAD_B_fu_292_m_axi_gmem_param_0_WVALID;
+wire   [255:0] grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_LOAD_B_fu_292_m_axi_gmem_param_0_WDATA;
+wire   [31:0] grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_LOAD_B_fu_292_m_axi_gmem_param_0_WSTRB;
+wire    grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_LOAD_B_fu_292_m_axi_gmem_param_0_WLAST;
+wire   [0:0] grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_LOAD_B_fu_292_m_axi_gmem_param_0_WID;
+wire   [0:0] grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_LOAD_B_fu_292_m_axi_gmem_param_0_WUSER;
+wire    grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_LOAD_B_fu_292_m_axi_gmem_param_0_ARVALID;
+wire   [63:0] grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_LOAD_B_fu_292_m_axi_gmem_param_0_ARADDR;
+wire   [0:0] grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_LOAD_B_fu_292_m_axi_gmem_param_0_ARID;
+wire   [31:0] grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_LOAD_B_fu_292_m_axi_gmem_param_0_ARLEN;
+wire   [2:0] grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_LOAD_B_fu_292_m_axi_gmem_param_0_ARSIZE;
+wire   [1:0] grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_LOAD_B_fu_292_m_axi_gmem_param_0_ARBURST;
+wire   [1:0] grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_LOAD_B_fu_292_m_axi_gmem_param_0_ARLOCK;
+wire   [3:0] grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_LOAD_B_fu_292_m_axi_gmem_param_0_ARCACHE;
+wire   [2:0] grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_LOAD_B_fu_292_m_axi_gmem_param_0_ARPROT;
+wire   [3:0] grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_LOAD_B_fu_292_m_axi_gmem_param_0_ARQOS;
+wire   [3:0] grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_LOAD_B_fu_292_m_axi_gmem_param_0_ARREGION;
+wire   [0:0] grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_LOAD_B_fu_292_m_axi_gmem_param_0_ARUSER;
+wire    grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_LOAD_B_fu_292_m_axi_gmem_param_0_RREADY;
+wire    grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_LOAD_B_fu_292_m_axi_gmem_param_0_BREADY;
+wire   [3:0] grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_LOAD_B_fu_292_b_buf_address0;
+wire    grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_LOAD_B_fu_292_b_buf_ce0;
+wire    grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_LOAD_B_fu_292_b_buf_we0;
+wire   [255:0] grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_LOAD_B_fu_292_b_buf_d0;
+wire    grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_LOAD_G_fu_300_ap_start;
+wire    grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_LOAD_G_fu_300_ap_done;
+wire    grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_LOAD_G_fu_300_ap_idle;
+wire    grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_LOAD_G_fu_300_ap_ready;
+wire    grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_LOAD_G_fu_300_m_axi_gmem_param_0_AWVALID;
+wire   [63:0] grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_LOAD_G_fu_300_m_axi_gmem_param_0_AWADDR;
+wire   [0:0] grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_LOAD_G_fu_300_m_axi_gmem_param_0_AWID;
+wire   [31:0] grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_LOAD_G_fu_300_m_axi_gmem_param_0_AWLEN;
+wire   [2:0] grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_LOAD_G_fu_300_m_axi_gmem_param_0_AWSIZE;
+wire   [1:0] grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_LOAD_G_fu_300_m_axi_gmem_param_0_AWBURST;
+wire   [1:0] grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_LOAD_G_fu_300_m_axi_gmem_param_0_AWLOCK;
+wire   [3:0] grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_LOAD_G_fu_300_m_axi_gmem_param_0_AWCACHE;
+wire   [2:0] grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_LOAD_G_fu_300_m_axi_gmem_param_0_AWPROT;
+wire   [3:0] grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_LOAD_G_fu_300_m_axi_gmem_param_0_AWQOS;
+wire   [3:0] grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_LOAD_G_fu_300_m_axi_gmem_param_0_AWREGION;
+wire   [0:0] grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_LOAD_G_fu_300_m_axi_gmem_param_0_AWUSER;
+wire    grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_LOAD_G_fu_300_m_axi_gmem_param_0_WVALID;
+wire   [255:0] grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_LOAD_G_fu_300_m_axi_gmem_param_0_WDATA;
+wire   [31:0] grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_LOAD_G_fu_300_m_axi_gmem_param_0_WSTRB;
+wire    grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_LOAD_G_fu_300_m_axi_gmem_param_0_WLAST;
+wire   [0:0] grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_LOAD_G_fu_300_m_axi_gmem_param_0_WID;
+wire   [0:0] grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_LOAD_G_fu_300_m_axi_gmem_param_0_WUSER;
+wire    grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_LOAD_G_fu_300_m_axi_gmem_param_0_ARVALID;
+wire   [63:0] grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_LOAD_G_fu_300_m_axi_gmem_param_0_ARADDR;
+wire   [0:0] grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_LOAD_G_fu_300_m_axi_gmem_param_0_ARID;
+wire   [31:0] grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_LOAD_G_fu_300_m_axi_gmem_param_0_ARLEN;
+wire   [2:0] grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_LOAD_G_fu_300_m_axi_gmem_param_0_ARSIZE;
+wire   [1:0] grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_LOAD_G_fu_300_m_axi_gmem_param_0_ARBURST;
+wire   [1:0] grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_LOAD_G_fu_300_m_axi_gmem_param_0_ARLOCK;
+wire   [3:0] grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_LOAD_G_fu_300_m_axi_gmem_param_0_ARCACHE;
+wire   [2:0] grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_LOAD_G_fu_300_m_axi_gmem_param_0_ARPROT;
+wire   [3:0] grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_LOAD_G_fu_300_m_axi_gmem_param_0_ARQOS;
+wire   [3:0] grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_LOAD_G_fu_300_m_axi_gmem_param_0_ARREGION;
+wire   [0:0] grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_LOAD_G_fu_300_m_axi_gmem_param_0_ARUSER;
+wire    grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_LOAD_G_fu_300_m_axi_gmem_param_0_RREADY;
+wire    grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_LOAD_G_fu_300_m_axi_gmem_param_0_BREADY;
+wire   [3:0] grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_LOAD_G_fu_300_g_buf_address0;
+wire    grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_LOAD_G_fu_300_g_buf_ce0;
+wire    grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_LOAD_G_fu_300_g_buf_we0;
+wire   [255:0] grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_LOAD_G_fu_300_g_buf_d0;
+wire    grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_PIXEL_STATS_fu_308_ap_start;
+wire    grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_PIXEL_STATS_fu_308_ap_done;
+wire    grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_PIXEL_STATS_fu_308_ap_idle;
+wire    grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_PIXEL_STATS_fu_308_ap_ready;
+wire   [3:0] grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_PIXEL_STATS_fu_308_b_buf_address0;
+wire    grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_PIXEL_STATS_fu_308_b_buf_ce0;
+wire   [5:0] grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_PIXEL_STATS_fu_308_mean_buf_address1;
+wire    grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_PIXEL_STATS_fu_308_mean_buf_ce1;
+wire    grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_PIXEL_STATS_fu_308_mean_buf_we1;
+wire   [31:0] grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_PIXEL_STATS_fu_308_mean_buf_d1;
+wire   [5:0] grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_PIXEL_STATS_fu_308_inv_buf_address1;
+wire    grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_PIXEL_STATS_fu_308_inv_buf_ce1;
+wire    grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_PIXEL_STATS_fu_308_inv_buf_we1;
+wire   [15:0] grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_PIXEL_STATS_fu_308_inv_buf_d1;
+wire   [9:0] grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_PIXEL_STATS_fu_308_void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_9_address0;
+wire    grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_PIXEL_STATS_fu_308_void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_9_ce0;
+wire    grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_PIXEL_STATS_fu_308_void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_9_we0;
+wire   [15:0] grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_PIXEL_STATS_fu_308_void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_9_d0;
+wire   [9:0] grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_PIXEL_STATS_fu_308_void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_9_address1;
+wire    grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_PIXEL_STATS_fu_308_void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_9_ce1;
+wire   [9:0] grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_PIXEL_STATS_fu_308_void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_8_address0;
+wire    grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_PIXEL_STATS_fu_308_void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_8_ce0;
+wire    grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_PIXEL_STATS_fu_308_void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_8_we0;
+wire   [15:0] grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_PIXEL_STATS_fu_308_void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_8_d0;
+wire   [9:0] grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_PIXEL_STATS_fu_308_void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_8_address1;
+wire    grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_PIXEL_STATS_fu_308_void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_8_ce1;
+wire   [9:0] grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_PIXEL_STATS_fu_308_void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_7_address0;
+wire    grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_PIXEL_STATS_fu_308_void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_7_ce0;
+wire    grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_PIXEL_STATS_fu_308_void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_7_we0;
+wire   [15:0] grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_PIXEL_STATS_fu_308_void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_7_d0;
+wire   [9:0] grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_PIXEL_STATS_fu_308_void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_7_address1;
+wire    grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_PIXEL_STATS_fu_308_void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_7_ce1;
+wire   [9:0] grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_PIXEL_STATS_fu_308_void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_6_address0;
+wire    grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_PIXEL_STATS_fu_308_void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_6_ce0;
+wire    grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_PIXEL_STATS_fu_308_void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_6_we0;
+wire   [15:0] grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_PIXEL_STATS_fu_308_void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_6_d0;
+wire   [9:0] grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_PIXEL_STATS_fu_308_void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_6_address1;
+wire    grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_PIXEL_STATS_fu_308_void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_6_ce1;
+wire   [9:0] grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_PIXEL_STATS_fu_308_void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_5_address0;
+wire    grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_PIXEL_STATS_fu_308_void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_5_ce0;
+wire    grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_PIXEL_STATS_fu_308_void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_5_we0;
+wire   [15:0] grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_PIXEL_STATS_fu_308_void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_5_d0;
+wire   [9:0] grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_PIXEL_STATS_fu_308_void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_5_address1;
+wire    grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_PIXEL_STATS_fu_308_void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_5_ce1;
+wire   [9:0] grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_PIXEL_STATS_fu_308_void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_4_address0;
+wire    grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_PIXEL_STATS_fu_308_void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_4_ce0;
+wire    grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_PIXEL_STATS_fu_308_void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_4_we0;
+wire   [15:0] grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_PIXEL_STATS_fu_308_void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_4_d0;
+wire   [9:0] grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_PIXEL_STATS_fu_308_void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_4_address1;
+wire    grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_PIXEL_STATS_fu_308_void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_4_ce1;
+wire   [9:0] grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_PIXEL_STATS_fu_308_void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_3_address0;
+wire    grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_PIXEL_STATS_fu_308_void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_3_ce0;
+wire    grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_PIXEL_STATS_fu_308_void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_3_we0;
+wire   [15:0] grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_PIXEL_STATS_fu_308_void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_3_d0;
+wire   [9:0] grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_PIXEL_STATS_fu_308_void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_3_address1;
+wire    grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_PIXEL_STATS_fu_308_void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_3_ce1;
+wire   [9:0] grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_PIXEL_STATS_fu_308_void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_2_address0;
+wire    grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_PIXEL_STATS_fu_308_void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_2_ce0;
+wire    grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_PIXEL_STATS_fu_308_void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_2_we0;
+wire   [15:0] grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_PIXEL_STATS_fu_308_void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_2_d0;
+wire   [9:0] grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_PIXEL_STATS_fu_308_void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_2_address1;
+wire    grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_PIXEL_STATS_fu_308_void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_2_ce1;
+wire   [9:0] grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_PIXEL_STATS_fu_308_void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_1_address0;
+wire    grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_PIXEL_STATS_fu_308_void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_1_ce0;
+wire    grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_PIXEL_STATS_fu_308_void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_1_we0;
+wire   [15:0] grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_PIXEL_STATS_fu_308_void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_1_d0;
+wire   [9:0] grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_PIXEL_STATS_fu_308_void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_1_address1;
+wire    grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_PIXEL_STATS_fu_308_void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_1_ce1;
+wire   [9:0] grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_PIXEL_STATS_fu_308_void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_address0;
+wire    grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_PIXEL_STATS_fu_308_void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_ce0;
+wire    grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_PIXEL_STATS_fu_308_void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_we0;
+wire   [15:0] grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_PIXEL_STATS_fu_308_void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_d0;
+wire   [9:0] grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_PIXEL_STATS_fu_308_void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_address1;
+wire    grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_PIXEL_STATS_fu_308_void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_ce1;
+wire   [9:0] grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_PIXEL_STATS_fu_308_p_ZZ16UpConv_Fused_RowILi8ELi32ELi32ELi480ELi240EEvP7ap_uintILi256EEPKS1_S4_S4_S4_5_address0;
+wire    grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_PIXEL_STATS_fu_308_p_ZZ16UpConv_Fused_RowILi8ELi32ELi32ELi480ELi240EEvP7ap_uintILi256EEPKS1_S4_S4_S4_5_ce0;
+wire    grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_PIXEL_STATS_fu_308_p_ZZ16UpConv_Fused_RowILi8ELi32ELi32ELi480ELi240EEvP7ap_uintILi256EEPKS1_S4_S4_S4_5_we0;
+wire   [15:0] grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_PIXEL_STATS_fu_308_p_ZZ16UpConv_Fused_RowILi8ELi32ELi32ELi480ELi240EEvP7ap_uintILi256EEPKS1_S4_S4_S4_5_d0;
+wire   [9:0] grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_PIXEL_STATS_fu_308_p_ZZ16UpConv_Fused_RowILi8ELi32ELi32ELi480ELi240EEvP7ap_uintILi256EEPKS1_S4_S4_S4_5_address1;
+wire    grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_PIXEL_STATS_fu_308_p_ZZ16UpConv_Fused_RowILi8ELi32ELi32ELi480ELi240EEvP7ap_uintILi256EEPKS1_S4_S4_S4_5_ce1;
+wire   [9:0] grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_PIXEL_STATS_fu_308_p_ZZ16UpConv_Fused_RowILi8ELi32ELi32ELi480ELi240EEvP7ap_uintILi256EEPKS1_S4_S4_S4_4_address0;
+wire    grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_PIXEL_STATS_fu_308_p_ZZ16UpConv_Fused_RowILi8ELi32ELi32ELi480ELi240EEvP7ap_uintILi256EEPKS1_S4_S4_S4_4_ce0;
+wire    grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_PIXEL_STATS_fu_308_p_ZZ16UpConv_Fused_RowILi8ELi32ELi32ELi480ELi240EEvP7ap_uintILi256EEPKS1_S4_S4_S4_4_we0;
+wire   [15:0] grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_PIXEL_STATS_fu_308_p_ZZ16UpConv_Fused_RowILi8ELi32ELi32ELi480ELi240EEvP7ap_uintILi256EEPKS1_S4_S4_S4_4_d0;
+wire   [9:0] grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_PIXEL_STATS_fu_308_p_ZZ16UpConv_Fused_RowILi8ELi32ELi32ELi480ELi240EEvP7ap_uintILi256EEPKS1_S4_S4_S4_4_address1;
+wire    grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_PIXEL_STATS_fu_308_p_ZZ16UpConv_Fused_RowILi8ELi32ELi32ELi480ELi240EEvP7ap_uintILi256EEPKS1_S4_S4_S4_4_ce1;
+wire   [9:0] grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_PIXEL_STATS_fu_308_p_ZZ16UpConv_Fused_RowILi8ELi32ELi32ELi480ELi240EEvP7ap_uintILi256EEPKS1_S4_S4_S4_3_address0;
+wire    grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_PIXEL_STATS_fu_308_p_ZZ16UpConv_Fused_RowILi8ELi32ELi32ELi480ELi240EEvP7ap_uintILi256EEPKS1_S4_S4_S4_3_ce0;
+wire    grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_PIXEL_STATS_fu_308_p_ZZ16UpConv_Fused_RowILi8ELi32ELi32ELi480ELi240EEvP7ap_uintILi256EEPKS1_S4_S4_S4_3_we0;
+wire   [15:0] grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_PIXEL_STATS_fu_308_p_ZZ16UpConv_Fused_RowILi8ELi32ELi32ELi480ELi240EEvP7ap_uintILi256EEPKS1_S4_S4_S4_3_d0;
+wire   [9:0] grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_PIXEL_STATS_fu_308_p_ZZ16UpConv_Fused_RowILi8ELi32ELi32ELi480ELi240EEvP7ap_uintILi256EEPKS1_S4_S4_S4_3_address1;
+wire    grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_PIXEL_STATS_fu_308_p_ZZ16UpConv_Fused_RowILi8ELi32ELi32ELi480ELi240EEvP7ap_uintILi256EEPKS1_S4_S4_S4_3_ce1;
+wire   [9:0] grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_PIXEL_STATS_fu_308_p_ZZ16UpConv_Fused_RowILi8ELi32ELi32ELi480ELi240EEvP7ap_uintILi256EEPKS1_S4_S4_S4_2_address0;
+wire    grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_PIXEL_STATS_fu_308_p_ZZ16UpConv_Fused_RowILi8ELi32ELi32ELi480ELi240EEvP7ap_uintILi256EEPKS1_S4_S4_S4_2_ce0;
+wire    grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_PIXEL_STATS_fu_308_p_ZZ16UpConv_Fused_RowILi8ELi32ELi32ELi480ELi240EEvP7ap_uintILi256EEPKS1_S4_S4_S4_2_we0;
+wire   [15:0] grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_PIXEL_STATS_fu_308_p_ZZ16UpConv_Fused_RowILi8ELi32ELi32ELi480ELi240EEvP7ap_uintILi256EEPKS1_S4_S4_S4_2_d0;
+wire   [9:0] grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_PIXEL_STATS_fu_308_p_ZZ16UpConv_Fused_RowILi8ELi32ELi32ELi480ELi240EEvP7ap_uintILi256EEPKS1_S4_S4_S4_2_address1;
+wire    grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_PIXEL_STATS_fu_308_p_ZZ16UpConv_Fused_RowILi8ELi32ELi32ELi480ELi240EEvP7ap_uintILi256EEPKS1_S4_S4_S4_2_ce1;
+wire   [9:0] grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_PIXEL_STATS_fu_308_p_ZZ16UpConv_Fused_RowILi8ELi32ELi32ELi480ELi240EEvP7ap_uintILi256EEPKS1_S4_S4_S4_1_address0;
+wire    grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_PIXEL_STATS_fu_308_p_ZZ16UpConv_Fused_RowILi8ELi32ELi32ELi480ELi240EEvP7ap_uintILi256EEPKS1_S4_S4_S4_1_ce0;
+wire    grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_PIXEL_STATS_fu_308_p_ZZ16UpConv_Fused_RowILi8ELi32ELi32ELi480ELi240EEvP7ap_uintILi256EEPKS1_S4_S4_S4_1_we0;
+wire   [15:0] grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_PIXEL_STATS_fu_308_p_ZZ16UpConv_Fused_RowILi8ELi32ELi32ELi480ELi240EEvP7ap_uintILi256EEPKS1_S4_S4_S4_1_d0;
+wire   [9:0] grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_PIXEL_STATS_fu_308_p_ZZ16UpConv_Fused_RowILi8ELi32ELi32ELi480ELi240EEvP7ap_uintILi256EEPKS1_S4_S4_S4_1_address1;
+wire    grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_PIXEL_STATS_fu_308_p_ZZ16UpConv_Fused_RowILi8ELi32ELi32ELi480ELi240EEvP7ap_uintILi256EEPKS1_S4_S4_S4_1_ce1;
+wire   [9:0] grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_PIXEL_STATS_fu_308_p_ZZ16UpConv_Fused_RowILi8ELi32ELi32ELi480ELi240EEvP7ap_uintILi256EEPKS1_S4_S4_S4_address0;
+wire    grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_PIXEL_STATS_fu_308_p_ZZ16UpConv_Fused_RowILi8ELi32ELi32ELi480ELi240EEvP7ap_uintILi256EEPKS1_S4_S4_S4_ce0;
+wire    grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_PIXEL_STATS_fu_308_p_ZZ16UpConv_Fused_RowILi8ELi32ELi32ELi480ELi240EEvP7ap_uintILi256EEPKS1_S4_S4_S4_we0;
+wire   [15:0] grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_PIXEL_STATS_fu_308_p_ZZ16UpConv_Fused_RowILi8ELi32ELi32ELi480ELi240EEvP7ap_uintILi256EEPKS1_S4_S4_S4_d0;
+wire   [9:0] grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_PIXEL_STATS_fu_308_p_ZZ16UpConv_Fused_RowILi8ELi32ELi32ELi480ELi240EEvP7ap_uintILi256EEPKS1_S4_S4_S4_address1;
+wire    grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_PIXEL_STATS_fu_308_p_ZZ16UpConv_Fused_RowILi8ELi32ELi32ELi480ELi240EEvP7ap_uintILi256EEPKS1_S4_S4_S4_ce1;
+wire   [31:0] grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_PIXEL_STATS_fu_308_grp_fu_774_p_din0;
+wire    grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_PIXEL_STATS_fu_308_grp_fu_774_p_ce;
+wire   [15:0] grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_PIXEL_STATS_fu_308_grp_fu_405_p_din0;
+wire    grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_PIXEL_STATS_fu_308_grp_fu_405_p_ce;
+wire   [15:0] grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_PIXEL_STATS_fu_308_grp_fu_582_p_din0;
+wire   [15:0] grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_PIXEL_STATS_fu_308_grp_fu_582_p_din1;
+wire    grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_PIXEL_STATS_fu_308_grp_fu_582_p_ce;
+wire    grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_LOAD_BE_fu_350_ap_start;
+wire    grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_LOAD_BE_fu_350_ap_done;
+wire    grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_LOAD_BE_fu_350_ap_idle;
+wire    grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_LOAD_BE_fu_350_ap_ready;
+wire    grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_LOAD_BE_fu_350_m_axi_gmem_param_0_AWVALID;
+wire   [63:0] grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_LOAD_BE_fu_350_m_axi_gmem_param_0_AWADDR;
+wire   [0:0] grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_LOAD_BE_fu_350_m_axi_gmem_param_0_AWID;
+wire   [31:0] grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_LOAD_BE_fu_350_m_axi_gmem_param_0_AWLEN;
+wire   [2:0] grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_LOAD_BE_fu_350_m_axi_gmem_param_0_AWSIZE;
+wire   [1:0] grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_LOAD_BE_fu_350_m_axi_gmem_param_0_AWBURST;
+wire   [1:0] grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_LOAD_BE_fu_350_m_axi_gmem_param_0_AWLOCK;
+wire   [3:0] grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_LOAD_BE_fu_350_m_axi_gmem_param_0_AWCACHE;
+wire   [2:0] grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_LOAD_BE_fu_350_m_axi_gmem_param_0_AWPROT;
+wire   [3:0] grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_LOAD_BE_fu_350_m_axi_gmem_param_0_AWQOS;
+wire   [3:0] grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_LOAD_BE_fu_350_m_axi_gmem_param_0_AWREGION;
+wire   [0:0] grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_LOAD_BE_fu_350_m_axi_gmem_param_0_AWUSER;
+wire    grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_LOAD_BE_fu_350_m_axi_gmem_param_0_WVALID;
+wire   [255:0] grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_LOAD_BE_fu_350_m_axi_gmem_param_0_WDATA;
+wire   [31:0] grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_LOAD_BE_fu_350_m_axi_gmem_param_0_WSTRB;
+wire    grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_LOAD_BE_fu_350_m_axi_gmem_param_0_WLAST;
+wire   [0:0] grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_LOAD_BE_fu_350_m_axi_gmem_param_0_WID;
+wire   [0:0] grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_LOAD_BE_fu_350_m_axi_gmem_param_0_WUSER;
+wire    grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_LOAD_BE_fu_350_m_axi_gmem_param_0_ARVALID;
+wire   [63:0] grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_LOAD_BE_fu_350_m_axi_gmem_param_0_ARADDR;
+wire   [0:0] grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_LOAD_BE_fu_350_m_axi_gmem_param_0_ARID;
+wire   [31:0] grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_LOAD_BE_fu_350_m_axi_gmem_param_0_ARLEN;
+wire   [2:0] grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_LOAD_BE_fu_350_m_axi_gmem_param_0_ARSIZE;
+wire   [1:0] grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_LOAD_BE_fu_350_m_axi_gmem_param_0_ARBURST;
+wire   [1:0] grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_LOAD_BE_fu_350_m_axi_gmem_param_0_ARLOCK;
+wire   [3:0] grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_LOAD_BE_fu_350_m_axi_gmem_param_0_ARCACHE;
+wire   [2:0] grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_LOAD_BE_fu_350_m_axi_gmem_param_0_ARPROT;
+wire   [3:0] grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_LOAD_BE_fu_350_m_axi_gmem_param_0_ARQOS;
+wire   [3:0] grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_LOAD_BE_fu_350_m_axi_gmem_param_0_ARREGION;
+wire   [0:0] grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_LOAD_BE_fu_350_m_axi_gmem_param_0_ARUSER;
+wire    grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_LOAD_BE_fu_350_m_axi_gmem_param_0_RREADY;
+wire    grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_LOAD_BE_fu_350_m_axi_gmem_param_0_BREADY;
+wire   [3:0] grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_LOAD_BE_fu_350_be_buf_address0;
+wire    grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_LOAD_BE_fu_350_be_buf_ce0;
+wire    grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_LOAD_BE_fu_350_be_buf_we0;
+wire   [255:0] grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_LOAD_BE_fu_350_be_buf_d0;
+wire    grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_PIXEL_NORM_fu_358_ap_start;
+wire    grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_PIXEL_NORM_fu_358_ap_done;
+wire    grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_PIXEL_NORM_fu_358_ap_idle;
+wire    grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_PIXEL_NORM_fu_358_ap_ready;
+wire    grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_PIXEL_NORM_fu_358_m_axi_gmem_out_0_AWVALID;
+wire   [63:0] grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_PIXEL_NORM_fu_358_m_axi_gmem_out_0_AWADDR;
+wire   [0:0] grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_PIXEL_NORM_fu_358_m_axi_gmem_out_0_AWID;
+wire   [31:0] grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_PIXEL_NORM_fu_358_m_axi_gmem_out_0_AWLEN;
+wire   [2:0] grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_PIXEL_NORM_fu_358_m_axi_gmem_out_0_AWSIZE;
+wire   [1:0] grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_PIXEL_NORM_fu_358_m_axi_gmem_out_0_AWBURST;
+wire   [1:0] grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_PIXEL_NORM_fu_358_m_axi_gmem_out_0_AWLOCK;
+wire   [3:0] grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_PIXEL_NORM_fu_358_m_axi_gmem_out_0_AWCACHE;
+wire   [2:0] grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_PIXEL_NORM_fu_358_m_axi_gmem_out_0_AWPROT;
+wire   [3:0] grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_PIXEL_NORM_fu_358_m_axi_gmem_out_0_AWQOS;
+wire   [3:0] grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_PIXEL_NORM_fu_358_m_axi_gmem_out_0_AWREGION;
+wire   [0:0] grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_PIXEL_NORM_fu_358_m_axi_gmem_out_0_AWUSER;
+wire    grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_PIXEL_NORM_fu_358_m_axi_gmem_out_0_WVALID;
+wire   [255:0] grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_PIXEL_NORM_fu_358_m_axi_gmem_out_0_WDATA;
+wire   [31:0] grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_PIXEL_NORM_fu_358_m_axi_gmem_out_0_WSTRB;
+wire    grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_PIXEL_NORM_fu_358_m_axi_gmem_out_0_WLAST;
+wire   [0:0] grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_PIXEL_NORM_fu_358_m_axi_gmem_out_0_WID;
+wire   [0:0] grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_PIXEL_NORM_fu_358_m_axi_gmem_out_0_WUSER;
+wire    grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_PIXEL_NORM_fu_358_m_axi_gmem_out_0_ARVALID;
+wire   [63:0] grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_PIXEL_NORM_fu_358_m_axi_gmem_out_0_ARADDR;
+wire   [0:0] grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_PIXEL_NORM_fu_358_m_axi_gmem_out_0_ARID;
+wire   [31:0] grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_PIXEL_NORM_fu_358_m_axi_gmem_out_0_ARLEN;
+wire   [2:0] grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_PIXEL_NORM_fu_358_m_axi_gmem_out_0_ARSIZE;
+wire   [1:0] grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_PIXEL_NORM_fu_358_m_axi_gmem_out_0_ARBURST;
+wire   [1:0] grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_PIXEL_NORM_fu_358_m_axi_gmem_out_0_ARLOCK;
+wire   [3:0] grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_PIXEL_NORM_fu_358_m_axi_gmem_out_0_ARCACHE;
+wire   [2:0] grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_PIXEL_NORM_fu_358_m_axi_gmem_out_0_ARPROT;
+wire   [3:0] grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_PIXEL_NORM_fu_358_m_axi_gmem_out_0_ARQOS;
+wire   [3:0] grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_PIXEL_NORM_fu_358_m_axi_gmem_out_0_ARREGION;
+wire   [0:0] grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_PIXEL_NORM_fu_358_m_axi_gmem_out_0_ARUSER;
+wire    grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_PIXEL_NORM_fu_358_m_axi_gmem_out_0_RREADY;
+wire    grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_PIXEL_NORM_fu_358_m_axi_gmem_out_0_BREADY;
+wire   [3:0] grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_PIXEL_NORM_fu_358_g_buf_address0;
+wire    grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_PIXEL_NORM_fu_358_g_buf_ce0;
+wire   [3:0] grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_PIXEL_NORM_fu_358_be_buf_address0;
+wire    grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_PIXEL_NORM_fu_358_be_buf_ce0;
+wire   [5:0] grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_PIXEL_NORM_fu_358_mean_buf_address0;
+wire    grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_PIXEL_NORM_fu_358_mean_buf_ce0;
+wire   [5:0] grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_PIXEL_NORM_fu_358_inv_buf_address0;
+wire    grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_PIXEL_NORM_fu_358_inv_buf_ce0;
+wire   [9:0] grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_PIXEL_NORM_fu_358_void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_9_address0;
+wire    grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_PIXEL_NORM_fu_358_void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_9_ce0;
+wire   [9:0] grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_PIXEL_NORM_fu_358_void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_8_address0;
+wire    grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_PIXEL_NORM_fu_358_void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_8_ce0;
+wire   [9:0] grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_PIXEL_NORM_fu_358_void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_7_address0;
+wire    grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_PIXEL_NORM_fu_358_void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_7_ce0;
+wire   [9:0] grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_PIXEL_NORM_fu_358_void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_6_address0;
+wire    grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_PIXEL_NORM_fu_358_void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_6_ce0;
+wire   [9:0] grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_PIXEL_NORM_fu_358_void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_5_address0;
+wire    grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_PIXEL_NORM_fu_358_void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_5_ce0;
+wire   [9:0] grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_PIXEL_NORM_fu_358_void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_4_address0;
+wire    grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_PIXEL_NORM_fu_358_void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_4_ce0;
+wire   [9:0] grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_PIXEL_NORM_fu_358_void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_3_address0;
+wire    grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_PIXEL_NORM_fu_358_void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_3_ce0;
+wire   [9:0] grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_PIXEL_NORM_fu_358_void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_2_address0;
+wire    grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_PIXEL_NORM_fu_358_void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_2_ce0;
+wire   [9:0] grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_PIXEL_NORM_fu_358_void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_1_address0;
+wire    grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_PIXEL_NORM_fu_358_void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_1_ce0;
+wire   [9:0] grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_PIXEL_NORM_fu_358_void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_address0;
+wire    grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_PIXEL_NORM_fu_358_void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_ce0;
+wire   [9:0] grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_PIXEL_NORM_fu_358_p_ZZ16UpConv_Fused_RowILi8ELi32ELi32ELi480ELi240EEvP7ap_uintILi256EEPKS1_S4_S4_S4_5_address0;
+wire    grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_PIXEL_NORM_fu_358_p_ZZ16UpConv_Fused_RowILi8ELi32ELi32ELi480ELi240EEvP7ap_uintILi256EEPKS1_S4_S4_S4_5_ce0;
+wire   [9:0] grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_PIXEL_NORM_fu_358_p_ZZ16UpConv_Fused_RowILi8ELi32ELi32ELi480ELi240EEvP7ap_uintILi256EEPKS1_S4_S4_S4_4_address0;
+wire    grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_PIXEL_NORM_fu_358_p_ZZ16UpConv_Fused_RowILi8ELi32ELi32ELi480ELi240EEvP7ap_uintILi256EEPKS1_S4_S4_S4_4_ce0;
+wire   [9:0] grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_PIXEL_NORM_fu_358_p_ZZ16UpConv_Fused_RowILi8ELi32ELi32ELi480ELi240EEvP7ap_uintILi256EEPKS1_S4_S4_S4_3_address0;
+wire    grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_PIXEL_NORM_fu_358_p_ZZ16UpConv_Fused_RowILi8ELi32ELi32ELi480ELi240EEvP7ap_uintILi256EEPKS1_S4_S4_S4_3_ce0;
+wire   [9:0] grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_PIXEL_NORM_fu_358_p_ZZ16UpConv_Fused_RowILi8ELi32ELi32ELi480ELi240EEvP7ap_uintILi256EEPKS1_S4_S4_S4_2_address0;
+wire    grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_PIXEL_NORM_fu_358_p_ZZ16UpConv_Fused_RowILi8ELi32ELi32ELi480ELi240EEvP7ap_uintILi256EEPKS1_S4_S4_S4_2_ce0;
+wire   [9:0] grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_PIXEL_NORM_fu_358_p_ZZ16UpConv_Fused_RowILi8ELi32ELi32ELi480ELi240EEvP7ap_uintILi256EEPKS1_S4_S4_S4_1_address0;
+wire    grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_PIXEL_NORM_fu_358_p_ZZ16UpConv_Fused_RowILi8ELi32ELi32ELi480ELi240EEvP7ap_uintILi256EEPKS1_S4_S4_S4_1_ce0;
+wire   [9:0] grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_PIXEL_NORM_fu_358_p_ZZ16UpConv_Fused_RowILi8ELi32ELi32ELi480ELi240EEvP7ap_uintILi256EEPKS1_S4_S4_S4_address0;
+wire    grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_PIXEL_NORM_fu_358_p_ZZ16UpConv_Fused_RowILi8ELi32ELi32ELi480ELi240EEvP7ap_uintILi256EEPKS1_S4_S4_S4_ce0;
+wire   [31:0] grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_PIXEL_NORM_fu_358_grp_fu_774_p_din0;
+wire    grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_PIXEL_NORM_fu_358_grp_fu_774_p_ce;
+wire   [15:0] grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_PIXEL_NORM_fu_358_grp_fu_582_p_din0;
+wire   [15:0] grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_PIXEL_NORM_fu_358_grp_fu_582_p_din1;
+wire    grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_PIXEL_NORM_fu_358_grp_fu_582_p_ce;
+wire   [15:0] grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_PIXEL_NORM_fu_358_grp_fu_586_p_din0;
+wire   [15:0] grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_PIXEL_NORM_fu_358_grp_fu_586_p_din1;
+wire    grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_PIXEL_NORM_fu_358_grp_fu_586_p_ce;
+wire   [15:0] grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_PIXEL_NORM_fu_358_grp_fu_590_p_din0;
+wire   [15:0] grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_PIXEL_NORM_fu_358_grp_fu_590_p_din1;
+wire    grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_PIXEL_NORM_fu_358_grp_fu_590_p_ce;
+wire   [15:0] grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_PIXEL_NORM_fu_358_grp_fu_594_p_din0;
+wire   [15:0] grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_PIXEL_NORM_fu_358_grp_fu_594_p_din1;
+wire    grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_PIXEL_NORM_fu_358_grp_fu_594_p_ce;
+wire   [15:0] grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_PIXEL_NORM_fu_358_grp_fu_598_p_din0;
+wire   [15:0] grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_PIXEL_NORM_fu_358_grp_fu_598_p_din1;
+wire    grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_PIXEL_NORM_fu_358_grp_fu_598_p_ce;
+wire   [15:0] grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_PIXEL_NORM_fu_358_grp_fu_602_p_din0;
+wire   [15:0] grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_PIXEL_NORM_fu_358_grp_fu_602_p_din1;
+wire    grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_PIXEL_NORM_fu_358_grp_fu_602_p_ce;
+wire   [15:0] grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_PIXEL_NORM_fu_358_grp_fu_606_p_din0;
+wire   [15:0] grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_PIXEL_NORM_fu_358_grp_fu_606_p_din1;
+wire    grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_PIXEL_NORM_fu_358_grp_fu_606_p_ce;
+wire   [15:0] grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_PIXEL_NORM_fu_358_grp_fu_610_p_din0;
+wire   [15:0] grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_PIXEL_NORM_fu_358_grp_fu_610_p_din1;
+wire    grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_PIXEL_NORM_fu_358_grp_fu_610_p_ce;
+wire   [15:0] grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_PIXEL_NORM_fu_358_grp_fu_614_p_din0;
+wire   [15:0] grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_PIXEL_NORM_fu_358_grp_fu_614_p_din1;
+wire    grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_PIXEL_NORM_fu_358_grp_fu_614_p_ce;
+wire   [15:0] grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_PIXEL_NORM_fu_358_grp_fu_618_p_din0;
+wire   [15:0] grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_PIXEL_NORM_fu_358_grp_fu_618_p_din1;
+wire    grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_PIXEL_NORM_fu_358_grp_fu_618_p_ce;
+wire   [15:0] grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_PIXEL_NORM_fu_358_grp_fu_622_p_din0;
+wire   [15:0] grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_PIXEL_NORM_fu_358_grp_fu_622_p_din1;
+wire    grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_PIXEL_NORM_fu_358_grp_fu_622_p_ce;
+wire   [15:0] grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_PIXEL_NORM_fu_358_grp_fu_626_p_din0;
+wire   [15:0] grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_PIXEL_NORM_fu_358_grp_fu_626_p_din1;
+wire    grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_PIXEL_NORM_fu_358_grp_fu_626_p_ce;
+wire   [15:0] grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_PIXEL_NORM_fu_358_grp_fu_630_p_din0;
+wire   [15:0] grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_PIXEL_NORM_fu_358_grp_fu_630_p_din1;
+wire    grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_PIXEL_NORM_fu_358_grp_fu_630_p_ce;
+wire   [15:0] grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_PIXEL_NORM_fu_358_grp_fu_634_p_din0;
+wire   [15:0] grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_PIXEL_NORM_fu_358_grp_fu_634_p_din1;
+wire    grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_PIXEL_NORM_fu_358_grp_fu_634_p_ce;
+wire   [15:0] grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_PIXEL_NORM_fu_358_grp_fu_638_p_din0;
+wire   [15:0] grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_PIXEL_NORM_fu_358_grp_fu_638_p_din1;
+wire    grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_PIXEL_NORM_fu_358_grp_fu_638_p_ce;
+wire   [15:0] grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_PIXEL_NORM_fu_358_grp_fu_642_p_din0;
+wire   [15:0] grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_PIXEL_NORM_fu_358_grp_fu_642_p_din1;
+wire    grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_PIXEL_NORM_fu_358_grp_fu_642_p_ce;
+wire   [15:0] grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_PIXEL_NORM_fu_358_grp_fu_646_p_din0;
+wire   [15:0] grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_PIXEL_NORM_fu_358_grp_fu_646_p_din1;
+wire    grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_PIXEL_NORM_fu_358_grp_fu_646_p_ce;
+wire   [15:0] grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_PIXEL_NORM_fu_358_grp_fu_650_p_din0;
+wire   [15:0] grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_PIXEL_NORM_fu_358_grp_fu_650_p_din1;
+wire    grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_PIXEL_NORM_fu_358_grp_fu_650_p_ce;
+wire   [15:0] grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_PIXEL_NORM_fu_358_grp_fu_654_p_din0;
+wire   [15:0] grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_PIXEL_NORM_fu_358_grp_fu_654_p_din1;
+wire    grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_PIXEL_NORM_fu_358_grp_fu_654_p_ce;
+wire   [15:0] grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_PIXEL_NORM_fu_358_grp_fu_658_p_din0;
+wire   [15:0] grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_PIXEL_NORM_fu_358_grp_fu_658_p_din1;
+wire    grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_PIXEL_NORM_fu_358_grp_fu_658_p_ce;
+wire   [15:0] grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_PIXEL_NORM_fu_358_grp_fu_662_p_din0;
+wire   [15:0] grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_PIXEL_NORM_fu_358_grp_fu_662_p_din1;
+wire    grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_PIXEL_NORM_fu_358_grp_fu_662_p_ce;
+wire   [15:0] grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_PIXEL_NORM_fu_358_grp_fu_666_p_din0;
+wire   [15:0] grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_PIXEL_NORM_fu_358_grp_fu_666_p_din1;
+wire    grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_PIXEL_NORM_fu_358_grp_fu_666_p_ce;
+wire   [15:0] grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_PIXEL_NORM_fu_358_grp_fu_670_p_din0;
+wire   [15:0] grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_PIXEL_NORM_fu_358_grp_fu_670_p_din1;
+wire    grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_PIXEL_NORM_fu_358_grp_fu_670_p_ce;
+wire   [15:0] grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_PIXEL_NORM_fu_358_grp_fu_674_p_din0;
+wire   [15:0] grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_PIXEL_NORM_fu_358_grp_fu_674_p_din1;
+wire    grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_PIXEL_NORM_fu_358_grp_fu_674_p_ce;
+wire   [15:0] grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_PIXEL_NORM_fu_358_grp_fu_678_p_din0;
+wire   [15:0] grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_PIXEL_NORM_fu_358_grp_fu_678_p_din1;
+wire    grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_PIXEL_NORM_fu_358_grp_fu_678_p_ce;
+wire   [15:0] grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_PIXEL_NORM_fu_358_grp_fu_682_p_din0;
+wire   [15:0] grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_PIXEL_NORM_fu_358_grp_fu_682_p_din1;
+wire    grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_PIXEL_NORM_fu_358_grp_fu_682_p_ce;
+wire   [15:0] grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_PIXEL_NORM_fu_358_grp_fu_686_p_din0;
+wire   [15:0] grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_PIXEL_NORM_fu_358_grp_fu_686_p_din1;
+wire    grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_PIXEL_NORM_fu_358_grp_fu_686_p_ce;
+wire   [15:0] grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_PIXEL_NORM_fu_358_grp_fu_690_p_din0;
+wire   [15:0] grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_PIXEL_NORM_fu_358_grp_fu_690_p_din1;
+wire    grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_PIXEL_NORM_fu_358_grp_fu_690_p_ce;
+wire   [15:0] grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_PIXEL_NORM_fu_358_grp_fu_694_p_din0;
+wire   [15:0] grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_PIXEL_NORM_fu_358_grp_fu_694_p_din1;
+wire    grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_PIXEL_NORM_fu_358_grp_fu_694_p_ce;
+wire   [15:0] grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_PIXEL_NORM_fu_358_grp_fu_698_p_din0;
+wire   [15:0] grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_PIXEL_NORM_fu_358_grp_fu_698_p_din1;
+wire    grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_PIXEL_NORM_fu_358_grp_fu_698_p_ce;
+wire   [15:0] grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_PIXEL_NORM_fu_358_grp_fu_702_p_din0;
+wire   [15:0] grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_PIXEL_NORM_fu_358_grp_fu_702_p_din1;
+wire    grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_PIXEL_NORM_fu_358_grp_fu_702_p_ce;
+wire   [15:0] grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_PIXEL_NORM_fu_358_grp_fu_706_p_din0;
+wire   [15:0] grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_PIXEL_NORM_fu_358_grp_fu_706_p_din1;
+wire    grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_PIXEL_NORM_fu_358_grp_fu_706_p_ce;
+wire   [15:0] grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_PIXEL_NORM_fu_358_grp_fu_710_p_din0;
+wire   [15:0] grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_PIXEL_NORM_fu_358_grp_fu_710_p_din1;
+wire    grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_PIXEL_NORM_fu_358_grp_fu_710_p_ce;
+wire   [15:0] grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_PIXEL_NORM_fu_358_grp_fu_714_p_din0;
+wire   [15:0] grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_PIXEL_NORM_fu_358_grp_fu_714_p_din1;
+wire    grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_PIXEL_NORM_fu_358_grp_fu_714_p_ce;
+wire   [15:0] grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_PIXEL_NORM_fu_358_grp_fu_718_p_din0;
+wire   [15:0] grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_PIXEL_NORM_fu_358_grp_fu_718_p_din1;
+wire    grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_PIXEL_NORM_fu_358_grp_fu_718_p_ce;
+wire   [15:0] grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_PIXEL_NORM_fu_358_grp_fu_722_p_din0;
+wire   [15:0] grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_PIXEL_NORM_fu_358_grp_fu_722_p_din1;
+wire    grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_PIXEL_NORM_fu_358_grp_fu_722_p_ce;
+wire   [15:0] grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_PIXEL_NORM_fu_358_grp_fu_726_p_din0;
+wire   [15:0] grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_PIXEL_NORM_fu_358_grp_fu_726_p_din1;
+wire    grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_PIXEL_NORM_fu_358_grp_fu_726_p_ce;
+wire   [15:0] grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_PIXEL_NORM_fu_358_grp_fu_730_p_din0;
+wire   [15:0] grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_PIXEL_NORM_fu_358_grp_fu_730_p_din1;
+wire    grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_PIXEL_NORM_fu_358_grp_fu_730_p_ce;
+wire   [15:0] grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_PIXEL_NORM_fu_358_grp_fu_734_p_din0;
+wire   [15:0] grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_PIXEL_NORM_fu_358_grp_fu_734_p_din1;
+wire    grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_PIXEL_NORM_fu_358_grp_fu_734_p_ce;
+wire   [15:0] grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_PIXEL_NORM_fu_358_grp_fu_738_p_din0;
+wire   [15:0] grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_PIXEL_NORM_fu_358_grp_fu_738_p_din1;
+wire    grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_PIXEL_NORM_fu_358_grp_fu_738_p_ce;
+wire   [15:0] grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_PIXEL_NORM_fu_358_grp_fu_742_p_din0;
+wire   [15:0] grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_PIXEL_NORM_fu_358_grp_fu_742_p_din1;
+wire    grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_PIXEL_NORM_fu_358_grp_fu_742_p_ce;
+wire   [15:0] grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_PIXEL_NORM_fu_358_grp_fu_746_p_din0;
+wire   [15:0] grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_PIXEL_NORM_fu_358_grp_fu_746_p_din1;
+wire    grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_PIXEL_NORM_fu_358_grp_fu_746_p_ce;
+wire   [15:0] grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_PIXEL_NORM_fu_358_grp_fu_750_p_din0;
+wire   [15:0] grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_PIXEL_NORM_fu_358_grp_fu_750_p_din1;
+wire    grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_PIXEL_NORM_fu_358_grp_fu_750_p_ce;
+wire   [15:0] grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_PIXEL_NORM_fu_358_grp_fu_754_p_din0;
+wire   [15:0] grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_PIXEL_NORM_fu_358_grp_fu_754_p_din1;
+wire    grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_PIXEL_NORM_fu_358_grp_fu_754_p_ce;
+wire   [15:0] grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_PIXEL_NORM_fu_358_grp_fu_758_p_din0;
+wire   [15:0] grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_PIXEL_NORM_fu_358_grp_fu_758_p_din1;
+wire    grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_PIXEL_NORM_fu_358_grp_fu_758_p_ce;
+wire   [15:0] grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_PIXEL_NORM_fu_358_grp_fu_762_p_din0;
+wire   [15:0] grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_PIXEL_NORM_fu_358_grp_fu_762_p_din1;
+wire    grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_PIXEL_NORM_fu_358_grp_fu_762_p_ce;
+wire   [15:0] grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_PIXEL_NORM_fu_358_grp_fu_766_p_din0;
+wire   [15:0] grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_PIXEL_NORM_fu_358_grp_fu_766_p_din1;
+wire    grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_PIXEL_NORM_fu_358_grp_fu_766_p_ce;
+wire   [15:0] grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_PIXEL_NORM_fu_358_grp_fu_770_p_din0;
+wire   [15:0] grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_PIXEL_NORM_fu_358_grp_fu_770_p_din1;
+wire    grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_PIXEL_NORM_fu_358_grp_fu_770_p_ce;
+reg    grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_RESET_ROW_ACC_fu_214_ap_start_reg;
 wire    ap_CS_fsm_state2;
-reg    grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_LOAD_PARAMS_fu_273_ap_start_reg;
-reg    grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_288_ap_start_reg;
-reg    grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_BIAS_STATS_fu_330_ap_start_reg;
-wire    ap_CS_fsm_state15;
-wire    ap_CS_fsm_state16;
-reg    grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_NORM_WRITE_fu_370_ap_start_reg;
-wire    ap_CS_fsm_state136;
-wire  signed [63:0] sext_ln135_fu_503_p1;
-wire  signed [63:0] sext_ln238_fu_569_p1;
-reg   [6:0] wo_1_fu_156;
-wire   [6:0] add_ln238_1_fu_588_p2;
-wire   [0:0] icmp_ln238_fu_582_p2;
-wire    ap_CS_fsm_state17;
-wire    ap_CS_fsm_state24;
-reg   [31:0] grp_fu_414_p0;
-reg   [31:0] grp_fu_414_p1;
-wire    ap_CS_fsm_state54;
-wire    ap_CS_fsm_state65;
-reg   [31:0] grp_fu_418_p0;
-reg   [31:0] grp_fu_418_p1;
-wire    ap_CS_fsm_state47;
-reg   [31:0] grp_fu_422_p0;
-reg   [31:0] grp_fu_422_p1;
-wire    ap_CS_fsm_state104;
-wire    ap_CS_fsm_state76;
-wire    ap_CS_fsm_state134;
-reg   [15:0] grp_fu_437_p0;
-wire   [6:0] ho_cast_fu_514_p1;
-wire   [16:0] tmp_10_fu_532_p3;
-wire   [20:0] p_shl3_fu_525_p3;
-wire   [20:0] zext_ln238_fu_539_p1;
-wire   [20:0] sub_ln238_fu_543_p2;
-wire   [63:0] zext_ln238_1_fu_549_p1;
-wire   [63:0] add_ln238_fu_553_p2;
-wire   [5:0] trunc_ln246_fu_598_p1;
-wire   [9:0] p_shl_fu_602_p3;
-wire   [9:0] zext_ln246_fu_594_p1;
-reg   [1:0] grp_fu_414_opcode;
-reg    grp_fu_418_ce;
-reg    grp_fu_437_ce;
-wire   [15:0] grp_fu_740_p2;
-reg   [15:0] grp_fu_740_p0;
-reg   [15:0] grp_fu_740_p1;
-reg    grp_fu_740_ce;
-wire   [15:0] grp_fu_744_p2;
-reg   [15:0] grp_fu_744_p0;
-reg   [15:0] grp_fu_744_p1;
-reg    grp_fu_744_ce;
-wire   [15:0] grp_fu_748_p2;
-reg   [15:0] grp_fu_748_p0;
-reg   [15:0] grp_fu_748_p1;
-reg    grp_fu_748_ce;
-wire   [15:0] grp_fu_752_p2;
-reg   [15:0] grp_fu_752_p0;
-reg   [15:0] grp_fu_752_p1;
-reg    grp_fu_752_ce;
-wire   [15:0] grp_fu_756_p2;
-reg   [15:0] grp_fu_756_p0;
-reg   [15:0] grp_fu_756_p1;
-reg    grp_fu_756_ce;
-wire   [15:0] grp_fu_760_p2;
-reg   [15:0] grp_fu_760_p0;
-reg   [15:0] grp_fu_760_p1;
-reg    grp_fu_760_ce;
-wire   [15:0] grp_fu_764_p2;
-reg   [15:0] grp_fu_764_p0;
-reg   [15:0] grp_fu_764_p1;
-reg    grp_fu_764_ce;
-wire   [15:0] grp_fu_768_p2;
-reg   [15:0] grp_fu_768_p0;
-reg   [15:0] grp_fu_768_p1;
-reg    grp_fu_768_ce;
-wire   [15:0] grp_fu_772_p2;
-reg   [15:0] grp_fu_772_p0;
-reg   [15:0] grp_fu_772_p1;
-reg    grp_fu_772_ce;
-wire   [15:0] grp_fu_776_p2;
-reg   [15:0] grp_fu_776_p0;
-reg   [15:0] grp_fu_776_p1;
-reg    grp_fu_776_ce;
-wire   [15:0] grp_fu_780_p2;
-reg   [15:0] grp_fu_780_p0;
-reg   [15:0] grp_fu_780_p1;
-reg    grp_fu_780_ce;
-wire   [15:0] grp_fu_784_p2;
-reg   [15:0] grp_fu_784_p0;
-reg   [15:0] grp_fu_784_p1;
-reg    grp_fu_784_ce;
-wire   [15:0] grp_fu_788_p2;
-reg   [15:0] grp_fu_788_p0;
-reg   [15:0] grp_fu_788_p1;
-reg    grp_fu_788_ce;
-wire   [15:0] grp_fu_792_p2;
-reg   [15:0] grp_fu_792_p0;
-reg   [15:0] grp_fu_792_p1;
-reg    grp_fu_792_ce;
-wire   [15:0] grp_fu_796_p2;
-reg   [15:0] grp_fu_796_p0;
-reg   [15:0] grp_fu_796_p1;
-reg    grp_fu_796_ce;
-wire   [15:0] grp_fu_800_p2;
-reg   [15:0] grp_fu_800_p0;
-reg   [15:0] grp_fu_800_p1;
-reg    grp_fu_800_ce;
-wire   [15:0] grp_fu_804_p2;
-reg   [15:0] grp_fu_804_p0;
-reg   [15:0] grp_fu_804_p1;
-reg    grp_fu_804_ce;
-wire   [15:0] grp_fu_808_p2;
-reg   [15:0] grp_fu_808_p0;
-reg   [15:0] grp_fu_808_p1;
-reg    grp_fu_808_ce;
-wire   [15:0] grp_fu_812_p2;
-reg   [15:0] grp_fu_812_p0;
-reg   [15:0] grp_fu_812_p1;
-reg    grp_fu_812_ce;
-wire   [15:0] grp_fu_816_p2;
-reg   [15:0] grp_fu_816_p0;
-reg   [15:0] grp_fu_816_p1;
-reg    grp_fu_816_ce;
-wire   [15:0] grp_fu_820_p2;
-reg   [15:0] grp_fu_820_p0;
-reg   [15:0] grp_fu_820_p1;
-reg    grp_fu_820_ce;
-wire   [15:0] grp_fu_824_p2;
-reg   [15:0] grp_fu_824_p0;
-reg   [15:0] grp_fu_824_p1;
-reg    grp_fu_824_ce;
-wire   [15:0] grp_fu_828_p2;
-reg   [15:0] grp_fu_828_p0;
-reg   [15:0] grp_fu_828_p1;
-reg    grp_fu_828_ce;
-wire   [15:0] grp_fu_832_p2;
-reg   [15:0] grp_fu_832_p0;
-reg   [15:0] grp_fu_832_p1;
-reg    grp_fu_832_ce;
-wire   [15:0] grp_fu_836_p2;
-reg   [15:0] grp_fu_836_p0;
-reg   [15:0] grp_fu_836_p1;
-reg    grp_fu_836_ce;
-wire   [15:0] grp_fu_840_p2;
-reg   [15:0] grp_fu_840_p0;
-reg   [15:0] grp_fu_840_p1;
-reg    grp_fu_840_ce;
-wire   [15:0] grp_fu_844_p2;
-reg   [15:0] grp_fu_844_p0;
-reg   [15:0] grp_fu_844_p1;
-reg    grp_fu_844_ce;
-wire   [15:0] grp_fu_848_p2;
-reg   [15:0] grp_fu_848_p0;
-reg   [15:0] grp_fu_848_p1;
-reg    grp_fu_848_ce;
-wire   [15:0] grp_fu_852_p2;
-reg   [15:0] grp_fu_852_p0;
-reg   [15:0] grp_fu_852_p1;
-reg    grp_fu_852_ce;
-wire   [15:0] grp_fu_856_p2;
-reg   [15:0] grp_fu_856_p0;
-reg   [15:0] grp_fu_856_p1;
-reg    grp_fu_856_ce;
-wire   [15:0] grp_fu_860_p2;
-reg   [15:0] grp_fu_860_p0;
-reg   [15:0] grp_fu_860_p1;
-reg    grp_fu_860_ce;
-wire   [15:0] grp_fu_864_p2;
-reg   [15:0] grp_fu_864_p0;
-reg   [15:0] grp_fu_864_p1;
-reg    grp_fu_864_ce;
-wire   [15:0] grp_fu_868_p2;
-reg   [15:0] grp_fu_868_p0;
-reg   [15:0] grp_fu_868_p1;
-reg    grp_fu_868_ce;
-wire   [15:0] grp_fu_872_p2;
-reg   [15:0] grp_fu_872_p0;
-reg   [15:0] grp_fu_872_p1;
-reg    grp_fu_872_ce;
-wire   [15:0] grp_fu_876_p2;
-reg   [15:0] grp_fu_876_p0;
-reg   [15:0] grp_fu_876_p1;
-reg    grp_fu_876_ce;
-wire   [15:0] grp_fu_880_p2;
-reg   [15:0] grp_fu_880_p0;
-reg   [15:0] grp_fu_880_p1;
-reg    grp_fu_880_ce;
-wire   [15:0] grp_fu_884_p2;
-reg   [15:0] grp_fu_884_p0;
-reg   [15:0] grp_fu_884_p1;
-reg    grp_fu_884_ce;
-wire   [15:0] grp_fu_888_p2;
-reg   [15:0] grp_fu_888_p0;
-reg   [15:0] grp_fu_888_p1;
-reg    grp_fu_888_ce;
-wire   [15:0] grp_fu_892_p2;
-reg   [15:0] grp_fu_892_p0;
-reg   [15:0] grp_fu_892_p1;
-reg    grp_fu_892_ce;
-wire   [15:0] grp_fu_896_p2;
-reg   [15:0] grp_fu_896_p0;
-reg   [15:0] grp_fu_896_p1;
-reg    grp_fu_896_ce;
-wire   [15:0] grp_fu_900_p2;
-reg   [15:0] grp_fu_900_p0;
-reg   [15:0] grp_fu_900_p1;
-reg    grp_fu_900_ce;
-wire   [15:0] grp_fu_904_p2;
-reg   [15:0] grp_fu_904_p0;
-reg   [15:0] grp_fu_904_p1;
-reg    grp_fu_904_ce;
-wire   [15:0] grp_fu_908_p2;
-reg   [15:0] grp_fu_908_p0;
-reg   [15:0] grp_fu_908_p1;
-reg    grp_fu_908_ce;
-wire   [15:0] grp_fu_912_p2;
-reg   [15:0] grp_fu_912_p0;
-reg   [15:0] grp_fu_912_p1;
-reg    grp_fu_912_ce;
-wire   [15:0] grp_fu_916_p2;
-reg   [15:0] grp_fu_916_p0;
-reg   [15:0] grp_fu_916_p1;
-reg    grp_fu_916_ce;
-wire   [15:0] grp_fu_920_p2;
-reg   [15:0] grp_fu_920_p0;
-reg   [15:0] grp_fu_920_p1;
-reg    grp_fu_920_ce;
-wire   [15:0] grp_fu_924_p2;
-reg   [15:0] grp_fu_924_p0;
-reg   [15:0] grp_fu_924_p1;
-reg    grp_fu_924_ce;
-wire   [15:0] grp_fu_928_p2;
-reg   [15:0] grp_fu_928_p0;
-reg   [15:0] grp_fu_928_p1;
-reg    grp_fu_928_ce;
-reg   [140:0] ap_NS_fsm;
+reg    grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_250_ap_start_reg;
+wire    ap_CS_fsm_state12;
+reg    grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_LOAD_B_fu_292_ap_start_reg;
+wire    ap_CS_fsm_state21;
+wire    ap_CS_fsm_state22;
+reg    grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_LOAD_G_fu_300_ap_start_reg;
+wire    ap_CS_fsm_state31;
+wire    ap_CS_fsm_state32;
+reg    grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_PIXEL_STATS_fu_308_ap_start_reg;
+reg   [43:0] ap_NS_fsm;
+wire    ap_NS_fsm_state31;
+reg    grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_LOAD_BE_fu_350_ap_start_reg;
+wire    ap_CS_fsm_state41;
+wire    ap_CS_fsm_state42;
+reg    grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_PIXEL_NORM_fu_358_ap_start_reg;
+wire    ap_CS_fsm_state44;
+wire  signed [63:0] sext_ln356_fu_419_p1;
+wire  signed [63:0] sext_ln185_fu_451_p1;
+wire  signed [63:0] sext_ln189_fu_472_p1;
+wire  signed [63:0] sext_ln193_fu_493_p1;
+reg   [15:0] grp_fu_405_p0;
+wire   [6:0] ho_cast_fu_430_p1;
+reg    grp_fu_405_ce;
+wire   [15:0] grp_fu_582_p2;
+reg   [15:0] grp_fu_582_p0;
+reg   [15:0] grp_fu_582_p1;
+reg    grp_fu_582_ce;
+wire   [15:0] grp_fu_586_p2;
+reg   [15:0] grp_fu_586_p0;
+reg   [15:0] grp_fu_586_p1;
+reg    grp_fu_586_ce;
+wire   [15:0] grp_fu_590_p2;
+reg   [15:0] grp_fu_590_p0;
+reg   [15:0] grp_fu_590_p1;
+reg    grp_fu_590_ce;
+wire   [15:0] grp_fu_594_p2;
+reg   [15:0] grp_fu_594_p0;
+reg   [15:0] grp_fu_594_p1;
+reg    grp_fu_594_ce;
+wire   [15:0] grp_fu_598_p2;
+reg   [15:0] grp_fu_598_p0;
+reg   [15:0] grp_fu_598_p1;
+reg    grp_fu_598_ce;
+wire   [15:0] grp_fu_602_p2;
+reg   [15:0] grp_fu_602_p0;
+reg   [15:0] grp_fu_602_p1;
+reg    grp_fu_602_ce;
+wire   [15:0] grp_fu_606_p2;
+reg   [15:0] grp_fu_606_p0;
+reg   [15:0] grp_fu_606_p1;
+reg    grp_fu_606_ce;
+wire   [15:0] grp_fu_610_p2;
+reg   [15:0] grp_fu_610_p0;
+reg   [15:0] grp_fu_610_p1;
+reg    grp_fu_610_ce;
+wire   [15:0] grp_fu_614_p2;
+reg   [15:0] grp_fu_614_p0;
+reg   [15:0] grp_fu_614_p1;
+reg    grp_fu_614_ce;
+wire   [15:0] grp_fu_618_p2;
+reg   [15:0] grp_fu_618_p0;
+reg   [15:0] grp_fu_618_p1;
+reg    grp_fu_618_ce;
+wire   [15:0] grp_fu_622_p2;
+reg   [15:0] grp_fu_622_p0;
+reg   [15:0] grp_fu_622_p1;
+reg    grp_fu_622_ce;
+wire   [15:0] grp_fu_626_p2;
+reg   [15:0] grp_fu_626_p0;
+reg   [15:0] grp_fu_626_p1;
+reg    grp_fu_626_ce;
+wire   [15:0] grp_fu_630_p2;
+reg   [15:0] grp_fu_630_p0;
+reg   [15:0] grp_fu_630_p1;
+reg    grp_fu_630_ce;
+wire   [15:0] grp_fu_634_p2;
+reg   [15:0] grp_fu_634_p0;
+reg   [15:0] grp_fu_634_p1;
+reg    grp_fu_634_ce;
+wire   [15:0] grp_fu_638_p2;
+reg   [15:0] grp_fu_638_p0;
+reg   [15:0] grp_fu_638_p1;
+reg    grp_fu_638_ce;
+wire   [15:0] grp_fu_642_p2;
+reg   [15:0] grp_fu_642_p0;
+reg   [15:0] grp_fu_642_p1;
+reg    grp_fu_642_ce;
+wire   [15:0] grp_fu_646_p2;
+reg   [15:0] grp_fu_646_p0;
+reg   [15:0] grp_fu_646_p1;
+reg    grp_fu_646_ce;
+wire   [15:0] grp_fu_650_p2;
+reg   [15:0] grp_fu_650_p0;
+reg   [15:0] grp_fu_650_p1;
+reg    grp_fu_650_ce;
+wire   [15:0] grp_fu_654_p2;
+reg   [15:0] grp_fu_654_p0;
+reg   [15:0] grp_fu_654_p1;
+reg    grp_fu_654_ce;
+wire   [15:0] grp_fu_658_p2;
+reg   [15:0] grp_fu_658_p0;
+reg   [15:0] grp_fu_658_p1;
+reg    grp_fu_658_ce;
+wire   [15:0] grp_fu_662_p2;
+reg   [15:0] grp_fu_662_p0;
+reg   [15:0] grp_fu_662_p1;
+reg    grp_fu_662_ce;
+wire   [15:0] grp_fu_666_p2;
+reg   [15:0] grp_fu_666_p0;
+reg   [15:0] grp_fu_666_p1;
+reg    grp_fu_666_ce;
+wire   [15:0] grp_fu_670_p2;
+reg   [15:0] grp_fu_670_p0;
+reg   [15:0] grp_fu_670_p1;
+reg    grp_fu_670_ce;
+wire   [15:0] grp_fu_674_p2;
+reg   [15:0] grp_fu_674_p0;
+reg   [15:0] grp_fu_674_p1;
+reg    grp_fu_674_ce;
+wire   [15:0] grp_fu_678_p2;
+reg   [15:0] grp_fu_678_p0;
+reg   [15:0] grp_fu_678_p1;
+reg    grp_fu_678_ce;
+wire   [15:0] grp_fu_682_p2;
+reg   [15:0] grp_fu_682_p0;
+reg   [15:0] grp_fu_682_p1;
+reg    grp_fu_682_ce;
+wire   [15:0] grp_fu_686_p2;
+reg   [15:0] grp_fu_686_p0;
+reg   [15:0] grp_fu_686_p1;
+reg    grp_fu_686_ce;
+wire   [15:0] grp_fu_690_p2;
+reg   [15:0] grp_fu_690_p0;
+reg   [15:0] grp_fu_690_p1;
+reg    grp_fu_690_ce;
+wire   [15:0] grp_fu_694_p2;
+reg   [15:0] grp_fu_694_p0;
+reg   [15:0] grp_fu_694_p1;
+reg    grp_fu_694_ce;
+wire   [15:0] grp_fu_698_p2;
+reg   [15:0] grp_fu_698_p0;
+reg   [15:0] grp_fu_698_p1;
+reg    grp_fu_698_ce;
+wire   [15:0] grp_fu_702_p2;
+reg   [15:0] grp_fu_702_p0;
+reg   [15:0] grp_fu_702_p1;
+reg    grp_fu_702_ce;
+wire   [15:0] grp_fu_706_p2;
+reg   [15:0] grp_fu_706_p0;
+reg   [15:0] grp_fu_706_p1;
+reg    grp_fu_706_ce;
+wire   [15:0] grp_fu_710_p2;
+reg   [15:0] grp_fu_710_p0;
+reg   [15:0] grp_fu_710_p1;
+reg    grp_fu_710_ce;
+wire   [15:0] grp_fu_714_p2;
+reg   [15:0] grp_fu_714_p0;
+reg   [15:0] grp_fu_714_p1;
+reg    grp_fu_714_ce;
+wire   [15:0] grp_fu_718_p2;
+reg   [15:0] grp_fu_718_p0;
+reg   [15:0] grp_fu_718_p1;
+reg    grp_fu_718_ce;
+wire   [15:0] grp_fu_722_p2;
+reg   [15:0] grp_fu_722_p0;
+reg   [15:0] grp_fu_722_p1;
+reg    grp_fu_722_ce;
+wire   [15:0] grp_fu_726_p2;
+reg   [15:0] grp_fu_726_p0;
+reg   [15:0] grp_fu_726_p1;
+reg    grp_fu_726_ce;
+wire   [15:0] grp_fu_730_p2;
+reg   [15:0] grp_fu_730_p0;
+reg   [15:0] grp_fu_730_p1;
+reg    grp_fu_730_ce;
+wire   [15:0] grp_fu_734_p2;
+reg   [15:0] grp_fu_734_p0;
+reg   [15:0] grp_fu_734_p1;
+reg    grp_fu_734_ce;
+wire   [15:0] grp_fu_738_p2;
+reg   [15:0] grp_fu_738_p0;
+reg   [15:0] grp_fu_738_p1;
+reg    grp_fu_738_ce;
+wire   [15:0] grp_fu_742_p2;
+reg   [15:0] grp_fu_742_p0;
+reg   [15:0] grp_fu_742_p1;
+reg    grp_fu_742_ce;
+wire   [15:0] grp_fu_746_p2;
+reg   [15:0] grp_fu_746_p0;
+reg   [15:0] grp_fu_746_p1;
+reg    grp_fu_746_ce;
+wire   [15:0] grp_fu_750_p2;
+reg   [15:0] grp_fu_750_p0;
+reg   [15:0] grp_fu_750_p1;
+reg    grp_fu_750_ce;
+wire   [15:0] grp_fu_754_p2;
+reg   [15:0] grp_fu_754_p0;
+reg   [15:0] grp_fu_754_p1;
+reg    grp_fu_754_ce;
+wire   [15:0] grp_fu_758_p2;
+reg   [15:0] grp_fu_758_p0;
+reg   [15:0] grp_fu_758_p1;
+reg    grp_fu_758_ce;
+wire   [15:0] grp_fu_762_p2;
+reg   [15:0] grp_fu_762_p0;
+reg   [15:0] grp_fu_762_p1;
+reg    grp_fu_762_ce;
+wire   [15:0] grp_fu_766_p2;
+reg   [15:0] grp_fu_766_p0;
+reg   [15:0] grp_fu_766_p1;
+reg    grp_fu_766_ce;
+wire   [15:0] grp_fu_770_p2;
+reg   [15:0] grp_fu_770_p0;
+reg   [15:0] grp_fu_770_p1;
+reg    grp_fu_770_ce;
+wire   [15:0] grp_fu_774_p1;
+reg   [31:0] grp_fu_774_p0;
+reg    grp_fu_774_ce;
 reg    ap_ST_fsm_state1_blk;
-reg    ap_block_state2_on_subcall_done;
 reg    ap_ST_fsm_state2_blk;
 reg    ap_ST_fsm_state3_blk;
 wire    ap_ST_fsm_state4_blk;
@@ -1696,14 +1607,14 @@ reg    ap_ST_fsm_state12_blk;
 reg    ap_ST_fsm_state13_blk;
 wire    ap_ST_fsm_state14_blk;
 wire    ap_ST_fsm_state15_blk;
-reg    ap_ST_fsm_state16_blk;
+wire    ap_ST_fsm_state16_blk;
 wire    ap_ST_fsm_state17_blk;
 wire    ap_ST_fsm_state18_blk;
 wire    ap_ST_fsm_state19_blk;
 wire    ap_ST_fsm_state20_blk;
 wire    ap_ST_fsm_state21_blk;
-wire    ap_ST_fsm_state22_blk;
-wire    ap_ST_fsm_state23_blk;
+reg    ap_ST_fsm_state22_blk;
+reg    ap_ST_fsm_state23_blk;
 wire    ap_ST_fsm_state24_blk;
 wire    ap_ST_fsm_state25_blk;
 wire    ap_ST_fsm_state26_blk;
@@ -1712,8 +1623,9 @@ wire    ap_ST_fsm_state28_blk;
 wire    ap_ST_fsm_state29_blk;
 wire    ap_ST_fsm_state30_blk;
 wire    ap_ST_fsm_state31_blk;
-wire    ap_ST_fsm_state32_blk;
-wire    ap_ST_fsm_state33_blk;
+reg    ap_block_state32_on_subcall_done;
+reg    ap_ST_fsm_state32_blk;
+reg    ap_ST_fsm_state33_blk;
 wire    ap_ST_fsm_state34_blk;
 wire    ap_ST_fsm_state35_blk;
 wire    ap_ST_fsm_state36_blk;
@@ -1722,117 +1634,21 @@ wire    ap_ST_fsm_state38_blk;
 wire    ap_ST_fsm_state39_blk;
 wire    ap_ST_fsm_state40_blk;
 wire    ap_ST_fsm_state41_blk;
-wire    ap_ST_fsm_state42_blk;
+reg    ap_ST_fsm_state42_blk;
 wire    ap_ST_fsm_state43_blk;
-wire    ap_ST_fsm_state44_blk;
-wire    ap_ST_fsm_state45_blk;
-wire    ap_ST_fsm_state46_blk;
-wire    ap_ST_fsm_state47_blk;
-wire    ap_ST_fsm_state48_blk;
-wire    ap_ST_fsm_state49_blk;
-wire    ap_ST_fsm_state50_blk;
-wire    ap_ST_fsm_state51_blk;
-wire    ap_ST_fsm_state52_blk;
-wire    ap_ST_fsm_state53_blk;
-wire    ap_ST_fsm_state54_blk;
-wire    ap_ST_fsm_state55_blk;
-wire    ap_ST_fsm_state56_blk;
-wire    ap_ST_fsm_state57_blk;
-wire    ap_ST_fsm_state58_blk;
-wire    ap_ST_fsm_state59_blk;
-wire    ap_ST_fsm_state60_blk;
-wire    ap_ST_fsm_state61_blk;
-wire    ap_ST_fsm_state62_blk;
-wire    ap_ST_fsm_state63_blk;
-wire    ap_ST_fsm_state64_blk;
-wire    ap_ST_fsm_state65_blk;
-wire    ap_ST_fsm_state66_blk;
-wire    ap_ST_fsm_state67_blk;
-wire    ap_ST_fsm_state68_blk;
-wire    ap_ST_fsm_state69_blk;
-wire    ap_ST_fsm_state70_blk;
-wire    ap_ST_fsm_state71_blk;
-wire    ap_ST_fsm_state72_blk;
-wire    ap_ST_fsm_state73_blk;
-wire    ap_ST_fsm_state74_blk;
-wire    ap_ST_fsm_state75_blk;
-wire    ap_ST_fsm_state76_blk;
-wire    ap_ST_fsm_state77_blk;
-wire    ap_ST_fsm_state78_blk;
-wire    ap_ST_fsm_state79_blk;
-wire    ap_ST_fsm_state80_blk;
-wire    ap_ST_fsm_state81_blk;
-wire    ap_ST_fsm_state82_blk;
-wire    ap_ST_fsm_state83_blk;
-wire    ap_ST_fsm_state84_blk;
-wire    ap_ST_fsm_state85_blk;
-wire    ap_ST_fsm_state86_blk;
-wire    ap_ST_fsm_state87_blk;
-wire    ap_ST_fsm_state88_blk;
-wire    ap_ST_fsm_state89_blk;
-wire    ap_ST_fsm_state90_blk;
-wire    ap_ST_fsm_state91_blk;
-wire    ap_ST_fsm_state92_blk;
-wire    ap_ST_fsm_state93_blk;
-wire    ap_ST_fsm_state94_blk;
-wire    ap_ST_fsm_state95_blk;
-wire    ap_ST_fsm_state96_blk;
-wire    ap_ST_fsm_state97_blk;
-wire    ap_ST_fsm_state98_blk;
-wire    ap_ST_fsm_state99_blk;
-wire    ap_ST_fsm_state100_blk;
-wire    ap_ST_fsm_state101_blk;
-wire    ap_ST_fsm_state102_blk;
-wire    ap_ST_fsm_state103_blk;
-wire    ap_ST_fsm_state104_blk;
-wire    ap_ST_fsm_state105_blk;
-wire    ap_ST_fsm_state106_blk;
-wire    ap_ST_fsm_state107_blk;
-wire    ap_ST_fsm_state108_blk;
-wire    ap_ST_fsm_state109_blk;
-wire    ap_ST_fsm_state110_blk;
-wire    ap_ST_fsm_state111_blk;
-wire    ap_ST_fsm_state112_blk;
-wire    ap_ST_fsm_state113_blk;
-wire    ap_ST_fsm_state114_blk;
-wire    ap_ST_fsm_state115_blk;
-wire    ap_ST_fsm_state116_blk;
-wire    ap_ST_fsm_state117_blk;
-wire    ap_ST_fsm_state118_blk;
-wire    ap_ST_fsm_state119_blk;
-wire    ap_ST_fsm_state120_blk;
-wire    ap_ST_fsm_state121_blk;
-wire    ap_ST_fsm_state122_blk;
-wire    ap_ST_fsm_state123_blk;
-wire    ap_ST_fsm_state124_blk;
-wire    ap_ST_fsm_state125_blk;
-wire    ap_ST_fsm_state126_blk;
-wire    ap_ST_fsm_state127_blk;
-wire    ap_ST_fsm_state128_blk;
-wire    ap_ST_fsm_state129_blk;
-wire    ap_ST_fsm_state130_blk;
-wire    ap_ST_fsm_state131_blk;
-wire    ap_ST_fsm_state132_blk;
-wire    ap_ST_fsm_state133_blk;
-wire    ap_ST_fsm_state134_blk;
-wire    ap_ST_fsm_state135_blk;
-reg    ap_ST_fsm_state136_blk;
-wire    ap_ST_fsm_state137_blk;
-wire    ap_ST_fsm_state138_blk;
-wire    ap_ST_fsm_state139_blk;
-wire    ap_ST_fsm_state140_blk;
-reg    ap_ST_fsm_state141_blk;
+reg    ap_ST_fsm_state44_blk;
 wire    ap_ce_reg;
 
 // power-on initialization
 initial begin
-#0 ap_CS_fsm = 141'd1;
-#0 grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_RESET_ROW_ACC_fu_237_ap_start_reg = 1'b0;
-#0 grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_LOAD_PARAMS_fu_273_ap_start_reg = 1'b0;
-#0 grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_288_ap_start_reg = 1'b0;
-#0 grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_BIAS_STATS_fu_330_ap_start_reg = 1'b0;
-#0 grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_NORM_WRITE_fu_370_ap_start_reg = 1'b0;
-#0 wo_1_fu_156 = 7'd0;
+#0 ap_CS_fsm = 44'd1;
+#0 grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_RESET_ROW_ACC_fu_214_ap_start_reg = 1'b0;
+#0 grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_250_ap_start_reg = 1'b0;
+#0 grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_LOAD_B_fu_292_ap_start_reg = 1'b0;
+#0 grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_LOAD_G_fu_300_ap_start_reg = 1'b0;
+#0 grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_PIXEL_STATS_fu_308_ap_start_reg = 1'b0;
+#0 grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_LOAD_BE_fu_350_ap_start_reg = 1'b0;
+#0 grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_PIXEL_NORM_fu_358_ap_start_reg = 1'b0;
 end
 
 upconv_core_top_ucb1_UpConv_Fused_Row_8_32_32_480_240_s_void_UpConv_Fused_Row_ap_uint_ap_uint_consbkb #(
@@ -1849,8 +1665,6 @@ void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_9_U
     .q0(void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_9_q0),
     .address1(void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_9_address1),
     .ce1(void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_9_ce1),
-    .we1(void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_9_we1),
-    .d1(grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_RESET_ROW_ACC_fu_237_void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_9_d1),
     .q1(void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_9_q1)
 );
 
@@ -1868,8 +1682,6 @@ void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_8_U
     .q0(void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_8_q0),
     .address1(void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_8_address1),
     .ce1(void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_8_ce1),
-    .we1(void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_8_we1),
-    .d1(grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_RESET_ROW_ACC_fu_237_void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_8_d1),
     .q1(void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_8_q1)
 );
 
@@ -1887,8 +1699,6 @@ void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_7_U
     .q0(void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_7_q0),
     .address1(void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_7_address1),
     .ce1(void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_7_ce1),
-    .we1(void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_7_we1),
-    .d1(grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_RESET_ROW_ACC_fu_237_void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_7_d1),
     .q1(void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_7_q1)
 );
 
@@ -1906,8 +1716,6 @@ void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_6_U
     .q0(void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_6_q0),
     .address1(void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_6_address1),
     .ce1(void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_6_ce1),
-    .we1(void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_6_we1),
-    .d1(grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_RESET_ROW_ACC_fu_237_void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_6_d1),
     .q1(void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_6_q1)
 );
 
@@ -1925,8 +1733,6 @@ void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_5_U
     .q0(void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_5_q0),
     .address1(void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_5_address1),
     .ce1(void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_5_ce1),
-    .we1(void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_5_we1),
-    .d1(grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_RESET_ROW_ACC_fu_237_void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_5_d1),
     .q1(void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_5_q1)
 );
 
@@ -1944,8 +1750,6 @@ void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_4_U
     .q0(void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_4_q0),
     .address1(void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_4_address1),
     .ce1(void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_4_ce1),
-    .we1(void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_4_we1),
-    .d1(grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_RESET_ROW_ACC_fu_237_void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_4_d1),
     .q1(void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_4_q1)
 );
 
@@ -1963,8 +1767,6 @@ void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_3_U
     .q0(void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_3_q0),
     .address1(void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_3_address1),
     .ce1(void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_3_ce1),
-    .we1(void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_3_we1),
-    .d1(grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_RESET_ROW_ACC_fu_237_void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_3_d1),
     .q1(void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_3_q1)
 );
 
@@ -1982,8 +1784,6 @@ void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_2_U
     .q0(void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_2_q0),
     .address1(void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_2_address1),
     .ce1(void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_2_ce1),
-    .we1(void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_2_we1),
-    .d1(grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_RESET_ROW_ACC_fu_237_void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_2_d1),
     .q1(void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_2_q1)
 );
 
@@ -2001,8 +1801,6 @@ void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_1_U
     .q0(void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_1_q0),
     .address1(void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_1_address1),
     .ce1(void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_1_ce1),
-    .we1(void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_1_we1),
-    .d1(grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_RESET_ROW_ACC_fu_237_void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_1_d1),
     .q1(void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_1_q1)
 );
 
@@ -2020,8 +1818,6 @@ void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_U(
     .q0(void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_q0),
     .address1(void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_address1),
     .ce1(void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_ce1),
-    .we1(void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_we1),
-    .d1(grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_RESET_ROW_ACC_fu_237_void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_d1),
     .q1(void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_q1)
 );
 
@@ -2039,8 +1835,6 @@ p_ZZ16UpConv_Fused_RowILi8ELi32ELi32ELi480ELi240EEvP7ap_uintILi256EEPKS1_S4_S4_S
     .q0(p_ZZ16UpConv_Fused_RowILi8ELi32ELi32ELi480ELi240EEvP7ap_uintILi256EEPKS1_S4_S4_S4_5_q0),
     .address1(p_ZZ16UpConv_Fused_RowILi8ELi32ELi32ELi480ELi240EEvP7ap_uintILi256EEPKS1_S4_S4_S4_5_address1),
     .ce1(p_ZZ16UpConv_Fused_RowILi8ELi32ELi32ELi480ELi240EEvP7ap_uintILi256EEPKS1_S4_S4_S4_5_ce1),
-    .we1(p_ZZ16UpConv_Fused_RowILi8ELi32ELi32ELi480ELi240EEvP7ap_uintILi256EEPKS1_S4_S4_S4_5_we1),
-    .d1(grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_RESET_ROW_ACC_fu_237_p_ZZ16UpConv_Fused_RowILi8ELi32ELi32ELi480ELi240EEvP7ap_uintILi256EEPKS1_S4_S4_S4_5_d1),
     .q1(p_ZZ16UpConv_Fused_RowILi8ELi32ELi32ELi480ELi240EEvP7ap_uintILi256EEPKS1_S4_S4_S4_5_q1)
 );
 
@@ -2058,8 +1852,6 @@ p_ZZ16UpConv_Fused_RowILi8ELi32ELi32ELi480ELi240EEvP7ap_uintILi256EEPKS1_S4_S4_S
     .q0(p_ZZ16UpConv_Fused_RowILi8ELi32ELi32ELi480ELi240EEvP7ap_uintILi256EEPKS1_S4_S4_S4_4_q0),
     .address1(p_ZZ16UpConv_Fused_RowILi8ELi32ELi32ELi480ELi240EEvP7ap_uintILi256EEPKS1_S4_S4_S4_4_address1),
     .ce1(p_ZZ16UpConv_Fused_RowILi8ELi32ELi32ELi480ELi240EEvP7ap_uintILi256EEPKS1_S4_S4_S4_4_ce1),
-    .we1(p_ZZ16UpConv_Fused_RowILi8ELi32ELi32ELi480ELi240EEvP7ap_uintILi256EEPKS1_S4_S4_S4_4_we1),
-    .d1(grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_RESET_ROW_ACC_fu_237_p_ZZ16UpConv_Fused_RowILi8ELi32ELi32ELi480ELi240EEvP7ap_uintILi256EEPKS1_S4_S4_S4_4_d1),
     .q1(p_ZZ16UpConv_Fused_RowILi8ELi32ELi32ELi480ELi240EEvP7ap_uintILi256EEPKS1_S4_S4_S4_4_q1)
 );
 
@@ -2077,8 +1869,6 @@ p_ZZ16UpConv_Fused_RowILi8ELi32ELi32ELi480ELi240EEvP7ap_uintILi256EEPKS1_S4_S4_S
     .q0(p_ZZ16UpConv_Fused_RowILi8ELi32ELi32ELi480ELi240EEvP7ap_uintILi256EEPKS1_S4_S4_S4_3_q0),
     .address1(p_ZZ16UpConv_Fused_RowILi8ELi32ELi32ELi480ELi240EEvP7ap_uintILi256EEPKS1_S4_S4_S4_3_address1),
     .ce1(p_ZZ16UpConv_Fused_RowILi8ELi32ELi32ELi480ELi240EEvP7ap_uintILi256EEPKS1_S4_S4_S4_3_ce1),
-    .we1(p_ZZ16UpConv_Fused_RowILi8ELi32ELi32ELi480ELi240EEvP7ap_uintILi256EEPKS1_S4_S4_S4_3_we1),
-    .d1(grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_RESET_ROW_ACC_fu_237_p_ZZ16UpConv_Fused_RowILi8ELi32ELi32ELi480ELi240EEvP7ap_uintILi256EEPKS1_S4_S4_S4_3_d1),
     .q1(p_ZZ16UpConv_Fused_RowILi8ELi32ELi32ELi480ELi240EEvP7ap_uintILi256EEPKS1_S4_S4_S4_3_q1)
 );
 
@@ -2096,8 +1886,6 @@ p_ZZ16UpConv_Fused_RowILi8ELi32ELi32ELi480ELi240EEvP7ap_uintILi256EEPKS1_S4_S4_S
     .q0(p_ZZ16UpConv_Fused_RowILi8ELi32ELi32ELi480ELi240EEvP7ap_uintILi256EEPKS1_S4_S4_S4_2_q0),
     .address1(p_ZZ16UpConv_Fused_RowILi8ELi32ELi32ELi480ELi240EEvP7ap_uintILi256EEPKS1_S4_S4_S4_2_address1),
     .ce1(p_ZZ16UpConv_Fused_RowILi8ELi32ELi32ELi480ELi240EEvP7ap_uintILi256EEPKS1_S4_S4_S4_2_ce1),
-    .we1(p_ZZ16UpConv_Fused_RowILi8ELi32ELi32ELi480ELi240EEvP7ap_uintILi256EEPKS1_S4_S4_S4_2_we1),
-    .d1(grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_RESET_ROW_ACC_fu_237_p_ZZ16UpConv_Fused_RowILi8ELi32ELi32ELi480ELi240EEvP7ap_uintILi256EEPKS1_S4_S4_S4_2_d1),
     .q1(p_ZZ16UpConv_Fused_RowILi8ELi32ELi32ELi480ELi240EEvP7ap_uintILi256EEPKS1_S4_S4_S4_2_q1)
 );
 
@@ -2115,8 +1903,6 @@ p_ZZ16UpConv_Fused_RowILi8ELi32ELi32ELi480ELi240EEvP7ap_uintILi256EEPKS1_S4_S4_S
     .q0(p_ZZ16UpConv_Fused_RowILi8ELi32ELi32ELi480ELi240EEvP7ap_uintILi256EEPKS1_S4_S4_S4_1_q0),
     .address1(p_ZZ16UpConv_Fused_RowILi8ELi32ELi32ELi480ELi240EEvP7ap_uintILi256EEPKS1_S4_S4_S4_1_address1),
     .ce1(p_ZZ16UpConv_Fused_RowILi8ELi32ELi32ELi480ELi240EEvP7ap_uintILi256EEPKS1_S4_S4_S4_1_ce1),
-    .we1(p_ZZ16UpConv_Fused_RowILi8ELi32ELi32ELi480ELi240EEvP7ap_uintILi256EEPKS1_S4_S4_S4_1_we1),
-    .d1(grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_RESET_ROW_ACC_fu_237_p_ZZ16UpConv_Fused_RowILi8ELi32ELi32ELi480ELi240EEvP7ap_uintILi256EEPKS1_S4_S4_S4_1_d1),
     .q1(p_ZZ16UpConv_Fused_RowILi8ELi32ELi32ELi480ELi240EEvP7ap_uintILi256EEPKS1_S4_S4_S4_1_q1)
 );
 
@@ -2134,9 +1920,39 @@ p_ZZ16UpConv_Fused_RowILi8ELi32ELi32ELi480ELi240EEvP7ap_uintILi256EEPKS1_S4_S4_S
     .q0(p_ZZ16UpConv_Fused_RowILi8ELi32ELi32ELi480ELi240EEvP7ap_uintILi256EEPKS1_S4_S4_S4_q0),
     .address1(p_ZZ16UpConv_Fused_RowILi8ELi32ELi32ELi480ELi240EEvP7ap_uintILi256EEPKS1_S4_S4_S4_address1),
     .ce1(p_ZZ16UpConv_Fused_RowILi8ELi32ELi32ELi480ELi240EEvP7ap_uintILi256EEPKS1_S4_S4_S4_ce1),
-    .we1(p_ZZ16UpConv_Fused_RowILi8ELi32ELi32ELi480ELi240EEvP7ap_uintILi256EEPKS1_S4_S4_S4_we1),
-    .d1(grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_RESET_ROW_ACC_fu_237_p_ZZ16UpConv_Fused_RowILi8ELi32ELi32ELi480ELi240EEvP7ap_uintILi256EEPKS1_S4_S4_S4_d1),
     .q1(p_ZZ16UpConv_Fused_RowILi8ELi32ELi32ELi480ELi240EEvP7ap_uintILi256EEPKS1_S4_S4_S4_q1)
+);
+
+upconv_core_top_ucb1_UpConv_Fused_Row_8_32_32_480_240_s_mean_buf_RAM_2P_LUTRAM_1R1W #(
+    .DataWidth( 32 ),
+    .AddressRange( 64 ),
+    .AddressWidth( 6 ))
+mean_buf_U(
+    .clk(ap_clk),
+    .reset(ap_rst),
+    .address0(grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_PIXEL_NORM_fu_358_mean_buf_address0),
+    .ce0(mean_buf_ce0),
+    .q0(mean_buf_q0),
+    .address1(grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_PIXEL_STATS_fu_308_mean_buf_address1),
+    .ce1(mean_buf_ce1),
+    .we1(mean_buf_we1),
+    .d1(grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_PIXEL_STATS_fu_308_mean_buf_d1)
+);
+
+upconv_core_top_ucb1_UpConv_Fused_Row_8_32_32_480_240_s_inv_buf_RAM_2P_LUTRAM_1R1W #(
+    .DataWidth( 16 ),
+    .AddressRange( 64 ),
+    .AddressWidth( 6 ))
+inv_buf_U(
+    .clk(ap_clk),
+    .reset(ap_rst),
+    .address0(grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_PIXEL_NORM_fu_358_inv_buf_address0),
+    .ce0(inv_buf_ce0),
+    .q0(inv_buf_q0),
+    .address1(grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_PIXEL_STATS_fu_308_inv_buf_address1),
+    .ce1(inv_buf_ce1),
+    .we1(inv_buf_we1),
+    .d1(grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_PIXEL_STATS_fu_308_inv_buf_d1)
 );
 
 upconv_core_top_ucb1_UpConv_Fused_Row_8_32_32_480_240_s_b_buf_RAM_T2P_BRAM_1R1W #(
@@ -2149,7 +1965,7 @@ b_buf_U(
     .address0(b_buf_address0),
     .ce0(b_buf_ce0),
     .we0(b_buf_we0),
-    .d0(grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_LOAD_PARAMS_fu_273_b_buf_d0),
+    .d0(grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_LOAD_B_fu_292_b_buf_d0),
     .q0(b_buf_q0)
 );
 
@@ -2163,7 +1979,7 @@ g_buf_U(
     .address0(g_buf_address0),
     .ce0(g_buf_ce0),
     .we0(g_buf_we0),
-    .d0(grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_LOAD_PARAMS_fu_273_g_buf_d0),
+    .d0(grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_LOAD_G_fu_300_g_buf_d0),
     .q0(g_buf_q0)
 );
 
@@ -2177,259 +1993,125 @@ be_buf_U(
     .address0(be_buf_address0),
     .ce0(be_buf_ce0),
     .we0(be_buf_we0),
-    .d0(grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_LOAD_PARAMS_fu_273_be_buf_d0),
+    .d0(grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_LOAD_BE_fu_350_be_buf_d0),
     .q0(be_buf_q0)
 );
 
-upconv_core_top_ucb1_UpConv_Fused_Row_8_32_32_480_240_Pipeline_RESET_ROW_ACC grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_RESET_ROW_ACC_fu_237(
+upconv_core_top_ucb1_UpConv_Fused_Row_8_32_32_480_240_Pipeline_RESET_ROW_ACC grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_RESET_ROW_ACC_fu_214(
     .ap_clk(ap_clk),
     .ap_rst(ap_rst),
-    .ap_start(grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_RESET_ROW_ACC_fu_237_ap_start),
-    .ap_done(grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_RESET_ROW_ACC_fu_237_ap_done),
-    .ap_idle(grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_RESET_ROW_ACC_fu_237_ap_idle),
-    .ap_ready(grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_RESET_ROW_ACC_fu_237_ap_ready),
-    .void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_9_address0(grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_RESET_ROW_ACC_fu_237_void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_9_address0),
-    .void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_9_ce0(grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_RESET_ROW_ACC_fu_237_void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_9_ce0),
-    .void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_9_we0(grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_RESET_ROW_ACC_fu_237_void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_9_we0),
-    .void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_9_d0(grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_RESET_ROW_ACC_fu_237_void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_9_d0),
-    .void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_9_address1(grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_RESET_ROW_ACC_fu_237_void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_9_address1),
-    .void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_9_ce1(grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_RESET_ROW_ACC_fu_237_void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_9_ce1),
-    .void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_9_we1(grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_RESET_ROW_ACC_fu_237_void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_9_we1),
-    .void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_9_d1(grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_RESET_ROW_ACC_fu_237_void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_9_d1),
-    .void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_8_address0(grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_RESET_ROW_ACC_fu_237_void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_8_address0),
-    .void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_8_ce0(grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_RESET_ROW_ACC_fu_237_void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_8_ce0),
-    .void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_8_we0(grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_RESET_ROW_ACC_fu_237_void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_8_we0),
-    .void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_8_d0(grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_RESET_ROW_ACC_fu_237_void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_8_d0),
-    .void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_8_address1(grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_RESET_ROW_ACC_fu_237_void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_8_address1),
-    .void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_8_ce1(grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_RESET_ROW_ACC_fu_237_void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_8_ce1),
-    .void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_8_we1(grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_RESET_ROW_ACC_fu_237_void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_8_we1),
-    .void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_8_d1(grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_RESET_ROW_ACC_fu_237_void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_8_d1),
-    .void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_7_address0(grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_RESET_ROW_ACC_fu_237_void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_7_address0),
-    .void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_7_ce0(grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_RESET_ROW_ACC_fu_237_void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_7_ce0),
-    .void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_7_we0(grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_RESET_ROW_ACC_fu_237_void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_7_we0),
-    .void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_7_d0(grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_RESET_ROW_ACC_fu_237_void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_7_d0),
-    .void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_7_address1(grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_RESET_ROW_ACC_fu_237_void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_7_address1),
-    .void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_7_ce1(grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_RESET_ROW_ACC_fu_237_void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_7_ce1),
-    .void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_7_we1(grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_RESET_ROW_ACC_fu_237_void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_7_we1),
-    .void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_7_d1(grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_RESET_ROW_ACC_fu_237_void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_7_d1),
-    .void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_6_address0(grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_RESET_ROW_ACC_fu_237_void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_6_address0),
-    .void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_6_ce0(grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_RESET_ROW_ACC_fu_237_void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_6_ce0),
-    .void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_6_we0(grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_RESET_ROW_ACC_fu_237_void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_6_we0),
-    .void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_6_d0(grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_RESET_ROW_ACC_fu_237_void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_6_d0),
-    .void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_6_address1(grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_RESET_ROW_ACC_fu_237_void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_6_address1),
-    .void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_6_ce1(grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_RESET_ROW_ACC_fu_237_void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_6_ce1),
-    .void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_6_we1(grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_RESET_ROW_ACC_fu_237_void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_6_we1),
-    .void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_6_d1(grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_RESET_ROW_ACC_fu_237_void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_6_d1),
-    .void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_5_address0(grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_RESET_ROW_ACC_fu_237_void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_5_address0),
-    .void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_5_ce0(grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_RESET_ROW_ACC_fu_237_void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_5_ce0),
-    .void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_5_we0(grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_RESET_ROW_ACC_fu_237_void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_5_we0),
-    .void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_5_d0(grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_RESET_ROW_ACC_fu_237_void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_5_d0),
-    .void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_5_address1(grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_RESET_ROW_ACC_fu_237_void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_5_address1),
-    .void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_5_ce1(grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_RESET_ROW_ACC_fu_237_void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_5_ce1),
-    .void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_5_we1(grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_RESET_ROW_ACC_fu_237_void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_5_we1),
-    .void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_5_d1(grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_RESET_ROW_ACC_fu_237_void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_5_d1),
-    .void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_4_address0(grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_RESET_ROW_ACC_fu_237_void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_4_address0),
-    .void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_4_ce0(grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_RESET_ROW_ACC_fu_237_void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_4_ce0),
-    .void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_4_we0(grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_RESET_ROW_ACC_fu_237_void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_4_we0),
-    .void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_4_d0(grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_RESET_ROW_ACC_fu_237_void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_4_d0),
-    .void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_4_address1(grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_RESET_ROW_ACC_fu_237_void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_4_address1),
-    .void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_4_ce1(grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_RESET_ROW_ACC_fu_237_void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_4_ce1),
-    .void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_4_we1(grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_RESET_ROW_ACC_fu_237_void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_4_we1),
-    .void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_4_d1(grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_RESET_ROW_ACC_fu_237_void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_4_d1),
-    .void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_3_address0(grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_RESET_ROW_ACC_fu_237_void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_3_address0),
-    .void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_3_ce0(grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_RESET_ROW_ACC_fu_237_void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_3_ce0),
-    .void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_3_we0(grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_RESET_ROW_ACC_fu_237_void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_3_we0),
-    .void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_3_d0(grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_RESET_ROW_ACC_fu_237_void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_3_d0),
-    .void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_3_address1(grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_RESET_ROW_ACC_fu_237_void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_3_address1),
-    .void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_3_ce1(grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_RESET_ROW_ACC_fu_237_void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_3_ce1),
-    .void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_3_we1(grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_RESET_ROW_ACC_fu_237_void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_3_we1),
-    .void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_3_d1(grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_RESET_ROW_ACC_fu_237_void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_3_d1),
-    .void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_2_address0(grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_RESET_ROW_ACC_fu_237_void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_2_address0),
-    .void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_2_ce0(grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_RESET_ROW_ACC_fu_237_void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_2_ce0),
-    .void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_2_we0(grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_RESET_ROW_ACC_fu_237_void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_2_we0),
-    .void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_2_d0(grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_RESET_ROW_ACC_fu_237_void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_2_d0),
-    .void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_2_address1(grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_RESET_ROW_ACC_fu_237_void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_2_address1),
-    .void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_2_ce1(grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_RESET_ROW_ACC_fu_237_void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_2_ce1),
-    .void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_2_we1(grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_RESET_ROW_ACC_fu_237_void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_2_we1),
-    .void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_2_d1(grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_RESET_ROW_ACC_fu_237_void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_2_d1),
-    .void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_1_address0(grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_RESET_ROW_ACC_fu_237_void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_1_address0),
-    .void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_1_ce0(grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_RESET_ROW_ACC_fu_237_void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_1_ce0),
-    .void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_1_we0(grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_RESET_ROW_ACC_fu_237_void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_1_we0),
-    .void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_1_d0(grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_RESET_ROW_ACC_fu_237_void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_1_d0),
-    .void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_1_address1(grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_RESET_ROW_ACC_fu_237_void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_1_address1),
-    .void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_1_ce1(grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_RESET_ROW_ACC_fu_237_void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_1_ce1),
-    .void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_1_we1(grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_RESET_ROW_ACC_fu_237_void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_1_we1),
-    .void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_1_d1(grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_RESET_ROW_ACC_fu_237_void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_1_d1),
-    .void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_address0(grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_RESET_ROW_ACC_fu_237_void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_address0),
-    .void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_ce0(grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_RESET_ROW_ACC_fu_237_void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_ce0),
-    .void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_we0(grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_RESET_ROW_ACC_fu_237_void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_we0),
-    .void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_d0(grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_RESET_ROW_ACC_fu_237_void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_d0),
-    .void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_address1(grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_RESET_ROW_ACC_fu_237_void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_address1),
-    .void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_ce1(grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_RESET_ROW_ACC_fu_237_void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_ce1),
-    .void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_we1(grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_RESET_ROW_ACC_fu_237_void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_we1),
-    .void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_d1(grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_RESET_ROW_ACC_fu_237_void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_d1),
-    .p_ZZ16UpConv_Fused_RowILi8ELi32ELi32ELi480ELi240EEvP7ap_uintILi256EEPKS1_S4_S4_S4_5_address0(grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_RESET_ROW_ACC_fu_237_p_ZZ16UpConv_Fused_RowILi8ELi32ELi32ELi480ELi240EEvP7ap_uintILi256EEPKS1_S4_S4_S4_5_address0),
-    .p_ZZ16UpConv_Fused_RowILi8ELi32ELi32ELi480ELi240EEvP7ap_uintILi256EEPKS1_S4_S4_S4_5_ce0(grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_RESET_ROW_ACC_fu_237_p_ZZ16UpConv_Fused_RowILi8ELi32ELi32ELi480ELi240EEvP7ap_uintILi256EEPKS1_S4_S4_S4_5_ce0),
-    .p_ZZ16UpConv_Fused_RowILi8ELi32ELi32ELi480ELi240EEvP7ap_uintILi256EEPKS1_S4_S4_S4_5_we0(grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_RESET_ROW_ACC_fu_237_p_ZZ16UpConv_Fused_RowILi8ELi32ELi32ELi480ELi240EEvP7ap_uintILi256EEPKS1_S4_S4_S4_5_we0),
-    .p_ZZ16UpConv_Fused_RowILi8ELi32ELi32ELi480ELi240EEvP7ap_uintILi256EEPKS1_S4_S4_S4_5_d0(grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_RESET_ROW_ACC_fu_237_p_ZZ16UpConv_Fused_RowILi8ELi32ELi32ELi480ELi240EEvP7ap_uintILi256EEPKS1_S4_S4_S4_5_d0),
-    .p_ZZ16UpConv_Fused_RowILi8ELi32ELi32ELi480ELi240EEvP7ap_uintILi256EEPKS1_S4_S4_S4_5_address1(grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_RESET_ROW_ACC_fu_237_p_ZZ16UpConv_Fused_RowILi8ELi32ELi32ELi480ELi240EEvP7ap_uintILi256EEPKS1_S4_S4_S4_5_address1),
-    .p_ZZ16UpConv_Fused_RowILi8ELi32ELi32ELi480ELi240EEvP7ap_uintILi256EEPKS1_S4_S4_S4_5_ce1(grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_RESET_ROW_ACC_fu_237_p_ZZ16UpConv_Fused_RowILi8ELi32ELi32ELi480ELi240EEvP7ap_uintILi256EEPKS1_S4_S4_S4_5_ce1),
-    .p_ZZ16UpConv_Fused_RowILi8ELi32ELi32ELi480ELi240EEvP7ap_uintILi256EEPKS1_S4_S4_S4_5_we1(grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_RESET_ROW_ACC_fu_237_p_ZZ16UpConv_Fused_RowILi8ELi32ELi32ELi480ELi240EEvP7ap_uintILi256EEPKS1_S4_S4_S4_5_we1),
-    .p_ZZ16UpConv_Fused_RowILi8ELi32ELi32ELi480ELi240EEvP7ap_uintILi256EEPKS1_S4_S4_S4_5_d1(grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_RESET_ROW_ACC_fu_237_p_ZZ16UpConv_Fused_RowILi8ELi32ELi32ELi480ELi240EEvP7ap_uintILi256EEPKS1_S4_S4_S4_5_d1),
-    .p_ZZ16UpConv_Fused_RowILi8ELi32ELi32ELi480ELi240EEvP7ap_uintILi256EEPKS1_S4_S4_S4_4_address0(grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_RESET_ROW_ACC_fu_237_p_ZZ16UpConv_Fused_RowILi8ELi32ELi32ELi480ELi240EEvP7ap_uintILi256EEPKS1_S4_S4_S4_4_address0),
-    .p_ZZ16UpConv_Fused_RowILi8ELi32ELi32ELi480ELi240EEvP7ap_uintILi256EEPKS1_S4_S4_S4_4_ce0(grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_RESET_ROW_ACC_fu_237_p_ZZ16UpConv_Fused_RowILi8ELi32ELi32ELi480ELi240EEvP7ap_uintILi256EEPKS1_S4_S4_S4_4_ce0),
-    .p_ZZ16UpConv_Fused_RowILi8ELi32ELi32ELi480ELi240EEvP7ap_uintILi256EEPKS1_S4_S4_S4_4_we0(grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_RESET_ROW_ACC_fu_237_p_ZZ16UpConv_Fused_RowILi8ELi32ELi32ELi480ELi240EEvP7ap_uintILi256EEPKS1_S4_S4_S4_4_we0),
-    .p_ZZ16UpConv_Fused_RowILi8ELi32ELi32ELi480ELi240EEvP7ap_uintILi256EEPKS1_S4_S4_S4_4_d0(grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_RESET_ROW_ACC_fu_237_p_ZZ16UpConv_Fused_RowILi8ELi32ELi32ELi480ELi240EEvP7ap_uintILi256EEPKS1_S4_S4_S4_4_d0),
-    .p_ZZ16UpConv_Fused_RowILi8ELi32ELi32ELi480ELi240EEvP7ap_uintILi256EEPKS1_S4_S4_S4_4_address1(grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_RESET_ROW_ACC_fu_237_p_ZZ16UpConv_Fused_RowILi8ELi32ELi32ELi480ELi240EEvP7ap_uintILi256EEPKS1_S4_S4_S4_4_address1),
-    .p_ZZ16UpConv_Fused_RowILi8ELi32ELi32ELi480ELi240EEvP7ap_uintILi256EEPKS1_S4_S4_S4_4_ce1(grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_RESET_ROW_ACC_fu_237_p_ZZ16UpConv_Fused_RowILi8ELi32ELi32ELi480ELi240EEvP7ap_uintILi256EEPKS1_S4_S4_S4_4_ce1),
-    .p_ZZ16UpConv_Fused_RowILi8ELi32ELi32ELi480ELi240EEvP7ap_uintILi256EEPKS1_S4_S4_S4_4_we1(grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_RESET_ROW_ACC_fu_237_p_ZZ16UpConv_Fused_RowILi8ELi32ELi32ELi480ELi240EEvP7ap_uintILi256EEPKS1_S4_S4_S4_4_we1),
-    .p_ZZ16UpConv_Fused_RowILi8ELi32ELi32ELi480ELi240EEvP7ap_uintILi256EEPKS1_S4_S4_S4_4_d1(grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_RESET_ROW_ACC_fu_237_p_ZZ16UpConv_Fused_RowILi8ELi32ELi32ELi480ELi240EEvP7ap_uintILi256EEPKS1_S4_S4_S4_4_d1),
-    .p_ZZ16UpConv_Fused_RowILi8ELi32ELi32ELi480ELi240EEvP7ap_uintILi256EEPKS1_S4_S4_S4_3_address0(grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_RESET_ROW_ACC_fu_237_p_ZZ16UpConv_Fused_RowILi8ELi32ELi32ELi480ELi240EEvP7ap_uintILi256EEPKS1_S4_S4_S4_3_address0),
-    .p_ZZ16UpConv_Fused_RowILi8ELi32ELi32ELi480ELi240EEvP7ap_uintILi256EEPKS1_S4_S4_S4_3_ce0(grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_RESET_ROW_ACC_fu_237_p_ZZ16UpConv_Fused_RowILi8ELi32ELi32ELi480ELi240EEvP7ap_uintILi256EEPKS1_S4_S4_S4_3_ce0),
-    .p_ZZ16UpConv_Fused_RowILi8ELi32ELi32ELi480ELi240EEvP7ap_uintILi256EEPKS1_S4_S4_S4_3_we0(grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_RESET_ROW_ACC_fu_237_p_ZZ16UpConv_Fused_RowILi8ELi32ELi32ELi480ELi240EEvP7ap_uintILi256EEPKS1_S4_S4_S4_3_we0),
-    .p_ZZ16UpConv_Fused_RowILi8ELi32ELi32ELi480ELi240EEvP7ap_uintILi256EEPKS1_S4_S4_S4_3_d0(grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_RESET_ROW_ACC_fu_237_p_ZZ16UpConv_Fused_RowILi8ELi32ELi32ELi480ELi240EEvP7ap_uintILi256EEPKS1_S4_S4_S4_3_d0),
-    .p_ZZ16UpConv_Fused_RowILi8ELi32ELi32ELi480ELi240EEvP7ap_uintILi256EEPKS1_S4_S4_S4_3_address1(grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_RESET_ROW_ACC_fu_237_p_ZZ16UpConv_Fused_RowILi8ELi32ELi32ELi480ELi240EEvP7ap_uintILi256EEPKS1_S4_S4_S4_3_address1),
-    .p_ZZ16UpConv_Fused_RowILi8ELi32ELi32ELi480ELi240EEvP7ap_uintILi256EEPKS1_S4_S4_S4_3_ce1(grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_RESET_ROW_ACC_fu_237_p_ZZ16UpConv_Fused_RowILi8ELi32ELi32ELi480ELi240EEvP7ap_uintILi256EEPKS1_S4_S4_S4_3_ce1),
-    .p_ZZ16UpConv_Fused_RowILi8ELi32ELi32ELi480ELi240EEvP7ap_uintILi256EEPKS1_S4_S4_S4_3_we1(grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_RESET_ROW_ACC_fu_237_p_ZZ16UpConv_Fused_RowILi8ELi32ELi32ELi480ELi240EEvP7ap_uintILi256EEPKS1_S4_S4_S4_3_we1),
-    .p_ZZ16UpConv_Fused_RowILi8ELi32ELi32ELi480ELi240EEvP7ap_uintILi256EEPKS1_S4_S4_S4_3_d1(grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_RESET_ROW_ACC_fu_237_p_ZZ16UpConv_Fused_RowILi8ELi32ELi32ELi480ELi240EEvP7ap_uintILi256EEPKS1_S4_S4_S4_3_d1),
-    .p_ZZ16UpConv_Fused_RowILi8ELi32ELi32ELi480ELi240EEvP7ap_uintILi256EEPKS1_S4_S4_S4_2_address0(grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_RESET_ROW_ACC_fu_237_p_ZZ16UpConv_Fused_RowILi8ELi32ELi32ELi480ELi240EEvP7ap_uintILi256EEPKS1_S4_S4_S4_2_address0),
-    .p_ZZ16UpConv_Fused_RowILi8ELi32ELi32ELi480ELi240EEvP7ap_uintILi256EEPKS1_S4_S4_S4_2_ce0(grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_RESET_ROW_ACC_fu_237_p_ZZ16UpConv_Fused_RowILi8ELi32ELi32ELi480ELi240EEvP7ap_uintILi256EEPKS1_S4_S4_S4_2_ce0),
-    .p_ZZ16UpConv_Fused_RowILi8ELi32ELi32ELi480ELi240EEvP7ap_uintILi256EEPKS1_S4_S4_S4_2_we0(grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_RESET_ROW_ACC_fu_237_p_ZZ16UpConv_Fused_RowILi8ELi32ELi32ELi480ELi240EEvP7ap_uintILi256EEPKS1_S4_S4_S4_2_we0),
-    .p_ZZ16UpConv_Fused_RowILi8ELi32ELi32ELi480ELi240EEvP7ap_uintILi256EEPKS1_S4_S4_S4_2_d0(grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_RESET_ROW_ACC_fu_237_p_ZZ16UpConv_Fused_RowILi8ELi32ELi32ELi480ELi240EEvP7ap_uintILi256EEPKS1_S4_S4_S4_2_d0),
-    .p_ZZ16UpConv_Fused_RowILi8ELi32ELi32ELi480ELi240EEvP7ap_uintILi256EEPKS1_S4_S4_S4_2_address1(grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_RESET_ROW_ACC_fu_237_p_ZZ16UpConv_Fused_RowILi8ELi32ELi32ELi480ELi240EEvP7ap_uintILi256EEPKS1_S4_S4_S4_2_address1),
-    .p_ZZ16UpConv_Fused_RowILi8ELi32ELi32ELi480ELi240EEvP7ap_uintILi256EEPKS1_S4_S4_S4_2_ce1(grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_RESET_ROW_ACC_fu_237_p_ZZ16UpConv_Fused_RowILi8ELi32ELi32ELi480ELi240EEvP7ap_uintILi256EEPKS1_S4_S4_S4_2_ce1),
-    .p_ZZ16UpConv_Fused_RowILi8ELi32ELi32ELi480ELi240EEvP7ap_uintILi256EEPKS1_S4_S4_S4_2_we1(grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_RESET_ROW_ACC_fu_237_p_ZZ16UpConv_Fused_RowILi8ELi32ELi32ELi480ELi240EEvP7ap_uintILi256EEPKS1_S4_S4_S4_2_we1),
-    .p_ZZ16UpConv_Fused_RowILi8ELi32ELi32ELi480ELi240EEvP7ap_uintILi256EEPKS1_S4_S4_S4_2_d1(grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_RESET_ROW_ACC_fu_237_p_ZZ16UpConv_Fused_RowILi8ELi32ELi32ELi480ELi240EEvP7ap_uintILi256EEPKS1_S4_S4_S4_2_d1),
-    .p_ZZ16UpConv_Fused_RowILi8ELi32ELi32ELi480ELi240EEvP7ap_uintILi256EEPKS1_S4_S4_S4_1_address0(grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_RESET_ROW_ACC_fu_237_p_ZZ16UpConv_Fused_RowILi8ELi32ELi32ELi480ELi240EEvP7ap_uintILi256EEPKS1_S4_S4_S4_1_address0),
-    .p_ZZ16UpConv_Fused_RowILi8ELi32ELi32ELi480ELi240EEvP7ap_uintILi256EEPKS1_S4_S4_S4_1_ce0(grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_RESET_ROW_ACC_fu_237_p_ZZ16UpConv_Fused_RowILi8ELi32ELi32ELi480ELi240EEvP7ap_uintILi256EEPKS1_S4_S4_S4_1_ce0),
-    .p_ZZ16UpConv_Fused_RowILi8ELi32ELi32ELi480ELi240EEvP7ap_uintILi256EEPKS1_S4_S4_S4_1_we0(grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_RESET_ROW_ACC_fu_237_p_ZZ16UpConv_Fused_RowILi8ELi32ELi32ELi480ELi240EEvP7ap_uintILi256EEPKS1_S4_S4_S4_1_we0),
-    .p_ZZ16UpConv_Fused_RowILi8ELi32ELi32ELi480ELi240EEvP7ap_uintILi256EEPKS1_S4_S4_S4_1_d0(grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_RESET_ROW_ACC_fu_237_p_ZZ16UpConv_Fused_RowILi8ELi32ELi32ELi480ELi240EEvP7ap_uintILi256EEPKS1_S4_S4_S4_1_d0),
-    .p_ZZ16UpConv_Fused_RowILi8ELi32ELi32ELi480ELi240EEvP7ap_uintILi256EEPKS1_S4_S4_S4_1_address1(grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_RESET_ROW_ACC_fu_237_p_ZZ16UpConv_Fused_RowILi8ELi32ELi32ELi480ELi240EEvP7ap_uintILi256EEPKS1_S4_S4_S4_1_address1),
-    .p_ZZ16UpConv_Fused_RowILi8ELi32ELi32ELi480ELi240EEvP7ap_uintILi256EEPKS1_S4_S4_S4_1_ce1(grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_RESET_ROW_ACC_fu_237_p_ZZ16UpConv_Fused_RowILi8ELi32ELi32ELi480ELi240EEvP7ap_uintILi256EEPKS1_S4_S4_S4_1_ce1),
-    .p_ZZ16UpConv_Fused_RowILi8ELi32ELi32ELi480ELi240EEvP7ap_uintILi256EEPKS1_S4_S4_S4_1_we1(grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_RESET_ROW_ACC_fu_237_p_ZZ16UpConv_Fused_RowILi8ELi32ELi32ELi480ELi240EEvP7ap_uintILi256EEPKS1_S4_S4_S4_1_we1),
-    .p_ZZ16UpConv_Fused_RowILi8ELi32ELi32ELi480ELi240EEvP7ap_uintILi256EEPKS1_S4_S4_S4_1_d1(grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_RESET_ROW_ACC_fu_237_p_ZZ16UpConv_Fused_RowILi8ELi32ELi32ELi480ELi240EEvP7ap_uintILi256EEPKS1_S4_S4_S4_1_d1),
-    .p_ZZ16UpConv_Fused_RowILi8ELi32ELi32ELi480ELi240EEvP7ap_uintILi256EEPKS1_S4_S4_S4_address0(grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_RESET_ROW_ACC_fu_237_p_ZZ16UpConv_Fused_RowILi8ELi32ELi32ELi480ELi240EEvP7ap_uintILi256EEPKS1_S4_S4_S4_address0),
-    .p_ZZ16UpConv_Fused_RowILi8ELi32ELi32ELi480ELi240EEvP7ap_uintILi256EEPKS1_S4_S4_S4_ce0(grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_RESET_ROW_ACC_fu_237_p_ZZ16UpConv_Fused_RowILi8ELi32ELi32ELi480ELi240EEvP7ap_uintILi256EEPKS1_S4_S4_S4_ce0),
-    .p_ZZ16UpConv_Fused_RowILi8ELi32ELi32ELi480ELi240EEvP7ap_uintILi256EEPKS1_S4_S4_S4_we0(grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_RESET_ROW_ACC_fu_237_p_ZZ16UpConv_Fused_RowILi8ELi32ELi32ELi480ELi240EEvP7ap_uintILi256EEPKS1_S4_S4_S4_we0),
-    .p_ZZ16UpConv_Fused_RowILi8ELi32ELi32ELi480ELi240EEvP7ap_uintILi256EEPKS1_S4_S4_S4_d0(grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_RESET_ROW_ACC_fu_237_p_ZZ16UpConv_Fused_RowILi8ELi32ELi32ELi480ELi240EEvP7ap_uintILi256EEPKS1_S4_S4_S4_d0),
-    .p_ZZ16UpConv_Fused_RowILi8ELi32ELi32ELi480ELi240EEvP7ap_uintILi256EEPKS1_S4_S4_S4_address1(grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_RESET_ROW_ACC_fu_237_p_ZZ16UpConv_Fused_RowILi8ELi32ELi32ELi480ELi240EEvP7ap_uintILi256EEPKS1_S4_S4_S4_address1),
-    .p_ZZ16UpConv_Fused_RowILi8ELi32ELi32ELi480ELi240EEvP7ap_uintILi256EEPKS1_S4_S4_S4_ce1(grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_RESET_ROW_ACC_fu_237_p_ZZ16UpConv_Fused_RowILi8ELi32ELi32ELi480ELi240EEvP7ap_uintILi256EEPKS1_S4_S4_S4_ce1),
-    .p_ZZ16UpConv_Fused_RowILi8ELi32ELi32ELi480ELi240EEvP7ap_uintILi256EEPKS1_S4_S4_S4_we1(grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_RESET_ROW_ACC_fu_237_p_ZZ16UpConv_Fused_RowILi8ELi32ELi32ELi480ELi240EEvP7ap_uintILi256EEPKS1_S4_S4_S4_we1),
-    .p_ZZ16UpConv_Fused_RowILi8ELi32ELi32ELi480ELi240EEvP7ap_uintILi256EEPKS1_S4_S4_S4_d1(grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_RESET_ROW_ACC_fu_237_p_ZZ16UpConv_Fused_RowILi8ELi32ELi32ELi480ELi240EEvP7ap_uintILi256EEPKS1_S4_S4_S4_d1)
+    .ap_start(grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_RESET_ROW_ACC_fu_214_ap_start),
+    .ap_done(grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_RESET_ROW_ACC_fu_214_ap_done),
+    .ap_idle(grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_RESET_ROW_ACC_fu_214_ap_idle),
+    .ap_ready(grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_RESET_ROW_ACC_fu_214_ap_ready),
+    .void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_9_address0(grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_RESET_ROW_ACC_fu_214_void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_9_address0),
+    .void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_9_ce0(grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_RESET_ROW_ACC_fu_214_void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_9_ce0),
+    .void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_9_we0(grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_RESET_ROW_ACC_fu_214_void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_9_we0),
+    .void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_9_d0(grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_RESET_ROW_ACC_fu_214_void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_9_d0),
+    .void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_8_address0(grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_RESET_ROW_ACC_fu_214_void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_8_address0),
+    .void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_8_ce0(grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_RESET_ROW_ACC_fu_214_void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_8_ce0),
+    .void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_8_we0(grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_RESET_ROW_ACC_fu_214_void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_8_we0),
+    .void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_8_d0(grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_RESET_ROW_ACC_fu_214_void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_8_d0),
+    .void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_7_address0(grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_RESET_ROW_ACC_fu_214_void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_7_address0),
+    .void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_7_ce0(grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_RESET_ROW_ACC_fu_214_void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_7_ce0),
+    .void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_7_we0(grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_RESET_ROW_ACC_fu_214_void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_7_we0),
+    .void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_7_d0(grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_RESET_ROW_ACC_fu_214_void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_7_d0),
+    .void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_6_address0(grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_RESET_ROW_ACC_fu_214_void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_6_address0),
+    .void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_6_ce0(grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_RESET_ROW_ACC_fu_214_void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_6_ce0),
+    .void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_6_we0(grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_RESET_ROW_ACC_fu_214_void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_6_we0),
+    .void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_6_d0(grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_RESET_ROW_ACC_fu_214_void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_6_d0),
+    .void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_5_address0(grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_RESET_ROW_ACC_fu_214_void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_5_address0),
+    .void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_5_ce0(grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_RESET_ROW_ACC_fu_214_void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_5_ce0),
+    .void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_5_we0(grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_RESET_ROW_ACC_fu_214_void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_5_we0),
+    .void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_5_d0(grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_RESET_ROW_ACC_fu_214_void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_5_d0),
+    .void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_4_address0(grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_RESET_ROW_ACC_fu_214_void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_4_address0),
+    .void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_4_ce0(grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_RESET_ROW_ACC_fu_214_void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_4_ce0),
+    .void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_4_we0(grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_RESET_ROW_ACC_fu_214_void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_4_we0),
+    .void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_4_d0(grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_RESET_ROW_ACC_fu_214_void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_4_d0),
+    .void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_3_address0(grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_RESET_ROW_ACC_fu_214_void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_3_address0),
+    .void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_3_ce0(grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_RESET_ROW_ACC_fu_214_void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_3_ce0),
+    .void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_3_we0(grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_RESET_ROW_ACC_fu_214_void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_3_we0),
+    .void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_3_d0(grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_RESET_ROW_ACC_fu_214_void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_3_d0),
+    .void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_2_address0(grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_RESET_ROW_ACC_fu_214_void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_2_address0),
+    .void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_2_ce0(grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_RESET_ROW_ACC_fu_214_void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_2_ce0),
+    .void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_2_we0(grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_RESET_ROW_ACC_fu_214_void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_2_we0),
+    .void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_2_d0(grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_RESET_ROW_ACC_fu_214_void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_2_d0),
+    .void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_1_address0(grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_RESET_ROW_ACC_fu_214_void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_1_address0),
+    .void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_1_ce0(grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_RESET_ROW_ACC_fu_214_void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_1_ce0),
+    .void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_1_we0(grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_RESET_ROW_ACC_fu_214_void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_1_we0),
+    .void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_1_d0(grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_RESET_ROW_ACC_fu_214_void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_1_d0),
+    .void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_address0(grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_RESET_ROW_ACC_fu_214_void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_address0),
+    .void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_ce0(grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_RESET_ROW_ACC_fu_214_void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_ce0),
+    .void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_we0(grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_RESET_ROW_ACC_fu_214_void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_we0),
+    .void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_d0(grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_RESET_ROW_ACC_fu_214_void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_d0),
+    .p_ZZ16UpConv_Fused_RowILi8ELi32ELi32ELi480ELi240EEvP7ap_uintILi256EEPKS1_S4_S4_S4_5_address0(grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_RESET_ROW_ACC_fu_214_p_ZZ16UpConv_Fused_RowILi8ELi32ELi32ELi480ELi240EEvP7ap_uintILi256EEPKS1_S4_S4_S4_5_address0),
+    .p_ZZ16UpConv_Fused_RowILi8ELi32ELi32ELi480ELi240EEvP7ap_uintILi256EEPKS1_S4_S4_S4_5_ce0(grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_RESET_ROW_ACC_fu_214_p_ZZ16UpConv_Fused_RowILi8ELi32ELi32ELi480ELi240EEvP7ap_uintILi256EEPKS1_S4_S4_S4_5_ce0),
+    .p_ZZ16UpConv_Fused_RowILi8ELi32ELi32ELi480ELi240EEvP7ap_uintILi256EEPKS1_S4_S4_S4_5_we0(grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_RESET_ROW_ACC_fu_214_p_ZZ16UpConv_Fused_RowILi8ELi32ELi32ELi480ELi240EEvP7ap_uintILi256EEPKS1_S4_S4_S4_5_we0),
+    .p_ZZ16UpConv_Fused_RowILi8ELi32ELi32ELi480ELi240EEvP7ap_uintILi256EEPKS1_S4_S4_S4_5_d0(grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_RESET_ROW_ACC_fu_214_p_ZZ16UpConv_Fused_RowILi8ELi32ELi32ELi480ELi240EEvP7ap_uintILi256EEPKS1_S4_S4_S4_5_d0),
+    .p_ZZ16UpConv_Fused_RowILi8ELi32ELi32ELi480ELi240EEvP7ap_uintILi256EEPKS1_S4_S4_S4_4_address0(grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_RESET_ROW_ACC_fu_214_p_ZZ16UpConv_Fused_RowILi8ELi32ELi32ELi480ELi240EEvP7ap_uintILi256EEPKS1_S4_S4_S4_4_address0),
+    .p_ZZ16UpConv_Fused_RowILi8ELi32ELi32ELi480ELi240EEvP7ap_uintILi256EEPKS1_S4_S4_S4_4_ce0(grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_RESET_ROW_ACC_fu_214_p_ZZ16UpConv_Fused_RowILi8ELi32ELi32ELi480ELi240EEvP7ap_uintILi256EEPKS1_S4_S4_S4_4_ce0),
+    .p_ZZ16UpConv_Fused_RowILi8ELi32ELi32ELi480ELi240EEvP7ap_uintILi256EEPKS1_S4_S4_S4_4_we0(grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_RESET_ROW_ACC_fu_214_p_ZZ16UpConv_Fused_RowILi8ELi32ELi32ELi480ELi240EEvP7ap_uintILi256EEPKS1_S4_S4_S4_4_we0),
+    .p_ZZ16UpConv_Fused_RowILi8ELi32ELi32ELi480ELi240EEvP7ap_uintILi256EEPKS1_S4_S4_S4_4_d0(grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_RESET_ROW_ACC_fu_214_p_ZZ16UpConv_Fused_RowILi8ELi32ELi32ELi480ELi240EEvP7ap_uintILi256EEPKS1_S4_S4_S4_4_d0),
+    .p_ZZ16UpConv_Fused_RowILi8ELi32ELi32ELi480ELi240EEvP7ap_uintILi256EEPKS1_S4_S4_S4_3_address0(grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_RESET_ROW_ACC_fu_214_p_ZZ16UpConv_Fused_RowILi8ELi32ELi32ELi480ELi240EEvP7ap_uintILi256EEPKS1_S4_S4_S4_3_address0),
+    .p_ZZ16UpConv_Fused_RowILi8ELi32ELi32ELi480ELi240EEvP7ap_uintILi256EEPKS1_S4_S4_S4_3_ce0(grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_RESET_ROW_ACC_fu_214_p_ZZ16UpConv_Fused_RowILi8ELi32ELi32ELi480ELi240EEvP7ap_uintILi256EEPKS1_S4_S4_S4_3_ce0),
+    .p_ZZ16UpConv_Fused_RowILi8ELi32ELi32ELi480ELi240EEvP7ap_uintILi256EEPKS1_S4_S4_S4_3_we0(grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_RESET_ROW_ACC_fu_214_p_ZZ16UpConv_Fused_RowILi8ELi32ELi32ELi480ELi240EEvP7ap_uintILi256EEPKS1_S4_S4_S4_3_we0),
+    .p_ZZ16UpConv_Fused_RowILi8ELi32ELi32ELi480ELi240EEvP7ap_uintILi256EEPKS1_S4_S4_S4_3_d0(grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_RESET_ROW_ACC_fu_214_p_ZZ16UpConv_Fused_RowILi8ELi32ELi32ELi480ELi240EEvP7ap_uintILi256EEPKS1_S4_S4_S4_3_d0),
+    .p_ZZ16UpConv_Fused_RowILi8ELi32ELi32ELi480ELi240EEvP7ap_uintILi256EEPKS1_S4_S4_S4_2_address0(grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_RESET_ROW_ACC_fu_214_p_ZZ16UpConv_Fused_RowILi8ELi32ELi32ELi480ELi240EEvP7ap_uintILi256EEPKS1_S4_S4_S4_2_address0),
+    .p_ZZ16UpConv_Fused_RowILi8ELi32ELi32ELi480ELi240EEvP7ap_uintILi256EEPKS1_S4_S4_S4_2_ce0(grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_RESET_ROW_ACC_fu_214_p_ZZ16UpConv_Fused_RowILi8ELi32ELi32ELi480ELi240EEvP7ap_uintILi256EEPKS1_S4_S4_S4_2_ce0),
+    .p_ZZ16UpConv_Fused_RowILi8ELi32ELi32ELi480ELi240EEvP7ap_uintILi256EEPKS1_S4_S4_S4_2_we0(grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_RESET_ROW_ACC_fu_214_p_ZZ16UpConv_Fused_RowILi8ELi32ELi32ELi480ELi240EEvP7ap_uintILi256EEPKS1_S4_S4_S4_2_we0),
+    .p_ZZ16UpConv_Fused_RowILi8ELi32ELi32ELi480ELi240EEvP7ap_uintILi256EEPKS1_S4_S4_S4_2_d0(grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_RESET_ROW_ACC_fu_214_p_ZZ16UpConv_Fused_RowILi8ELi32ELi32ELi480ELi240EEvP7ap_uintILi256EEPKS1_S4_S4_S4_2_d0),
+    .p_ZZ16UpConv_Fused_RowILi8ELi32ELi32ELi480ELi240EEvP7ap_uintILi256EEPKS1_S4_S4_S4_1_address0(grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_RESET_ROW_ACC_fu_214_p_ZZ16UpConv_Fused_RowILi8ELi32ELi32ELi480ELi240EEvP7ap_uintILi256EEPKS1_S4_S4_S4_1_address0),
+    .p_ZZ16UpConv_Fused_RowILi8ELi32ELi32ELi480ELi240EEvP7ap_uintILi256EEPKS1_S4_S4_S4_1_ce0(grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_RESET_ROW_ACC_fu_214_p_ZZ16UpConv_Fused_RowILi8ELi32ELi32ELi480ELi240EEvP7ap_uintILi256EEPKS1_S4_S4_S4_1_ce0),
+    .p_ZZ16UpConv_Fused_RowILi8ELi32ELi32ELi480ELi240EEvP7ap_uintILi256EEPKS1_S4_S4_S4_1_we0(grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_RESET_ROW_ACC_fu_214_p_ZZ16UpConv_Fused_RowILi8ELi32ELi32ELi480ELi240EEvP7ap_uintILi256EEPKS1_S4_S4_S4_1_we0),
+    .p_ZZ16UpConv_Fused_RowILi8ELi32ELi32ELi480ELi240EEvP7ap_uintILi256EEPKS1_S4_S4_S4_1_d0(grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_RESET_ROW_ACC_fu_214_p_ZZ16UpConv_Fused_RowILi8ELi32ELi32ELi480ELi240EEvP7ap_uintILi256EEPKS1_S4_S4_S4_1_d0),
+    .p_ZZ16UpConv_Fused_RowILi8ELi32ELi32ELi480ELi240EEvP7ap_uintILi256EEPKS1_S4_S4_S4_address0(grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_RESET_ROW_ACC_fu_214_p_ZZ16UpConv_Fused_RowILi8ELi32ELi32ELi480ELi240EEvP7ap_uintILi256EEPKS1_S4_S4_S4_address0),
+    .p_ZZ16UpConv_Fused_RowILi8ELi32ELi32ELi480ELi240EEvP7ap_uintILi256EEPKS1_S4_S4_S4_ce0(grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_RESET_ROW_ACC_fu_214_p_ZZ16UpConv_Fused_RowILi8ELi32ELi32ELi480ELi240EEvP7ap_uintILi256EEPKS1_S4_S4_S4_ce0),
+    .p_ZZ16UpConv_Fused_RowILi8ELi32ELi32ELi480ELi240EEvP7ap_uintILi256EEPKS1_S4_S4_S4_we0(grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_RESET_ROW_ACC_fu_214_p_ZZ16UpConv_Fused_RowILi8ELi32ELi32ELi480ELi240EEvP7ap_uintILi256EEPKS1_S4_S4_S4_we0),
+    .p_ZZ16UpConv_Fused_RowILi8ELi32ELi32ELi480ELi240EEvP7ap_uintILi256EEPKS1_S4_S4_S4_d0(grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_RESET_ROW_ACC_fu_214_p_ZZ16UpConv_Fused_RowILi8ELi32ELi32ELi480ELi240EEvP7ap_uintILi256EEPKS1_S4_S4_S4_d0)
 );
 
-upconv_core_top_ucb1_UpConv_Fused_Row_8_32_32_480_240_Pipeline_LOAD_PARAMS grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_LOAD_PARAMS_fu_273(
+upconv_core_top_ucb1_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_250(
     .ap_clk(ap_clk),
     .ap_rst(ap_rst),
-    .ap_start(grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_LOAD_PARAMS_fu_273_ap_start),
-    .ap_done(grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_LOAD_PARAMS_fu_273_ap_done),
-    .ap_idle(grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_LOAD_PARAMS_fu_273_ap_idle),
-    .ap_ready(grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_LOAD_PARAMS_fu_273_ap_ready),
-    .m_axi_gmem_param_0_AWVALID(grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_LOAD_PARAMS_fu_273_m_axi_gmem_param_0_AWVALID),
-    .m_axi_gmem_param_0_AWREADY(1'b0),
-    .m_axi_gmem_param_0_AWADDR(grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_LOAD_PARAMS_fu_273_m_axi_gmem_param_0_AWADDR),
-    .m_axi_gmem_param_0_AWID(grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_LOAD_PARAMS_fu_273_m_axi_gmem_param_0_AWID),
-    .m_axi_gmem_param_0_AWLEN(grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_LOAD_PARAMS_fu_273_m_axi_gmem_param_0_AWLEN),
-    .m_axi_gmem_param_0_AWSIZE(grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_LOAD_PARAMS_fu_273_m_axi_gmem_param_0_AWSIZE),
-    .m_axi_gmem_param_0_AWBURST(grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_LOAD_PARAMS_fu_273_m_axi_gmem_param_0_AWBURST),
-    .m_axi_gmem_param_0_AWLOCK(grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_LOAD_PARAMS_fu_273_m_axi_gmem_param_0_AWLOCK),
-    .m_axi_gmem_param_0_AWCACHE(grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_LOAD_PARAMS_fu_273_m_axi_gmem_param_0_AWCACHE),
-    .m_axi_gmem_param_0_AWPROT(grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_LOAD_PARAMS_fu_273_m_axi_gmem_param_0_AWPROT),
-    .m_axi_gmem_param_0_AWQOS(grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_LOAD_PARAMS_fu_273_m_axi_gmem_param_0_AWQOS),
-    .m_axi_gmem_param_0_AWREGION(grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_LOAD_PARAMS_fu_273_m_axi_gmem_param_0_AWREGION),
-    .m_axi_gmem_param_0_AWUSER(grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_LOAD_PARAMS_fu_273_m_axi_gmem_param_0_AWUSER),
-    .m_axi_gmem_param_0_WVALID(grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_LOAD_PARAMS_fu_273_m_axi_gmem_param_0_WVALID),
-    .m_axi_gmem_param_0_WREADY(1'b0),
-    .m_axi_gmem_param_0_WDATA(grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_LOAD_PARAMS_fu_273_m_axi_gmem_param_0_WDATA),
-    .m_axi_gmem_param_0_WSTRB(grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_LOAD_PARAMS_fu_273_m_axi_gmem_param_0_WSTRB),
-    .m_axi_gmem_param_0_WLAST(grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_LOAD_PARAMS_fu_273_m_axi_gmem_param_0_WLAST),
-    .m_axi_gmem_param_0_WID(grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_LOAD_PARAMS_fu_273_m_axi_gmem_param_0_WID),
-    .m_axi_gmem_param_0_WUSER(grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_LOAD_PARAMS_fu_273_m_axi_gmem_param_0_WUSER),
-    .m_axi_gmem_param_0_ARVALID(grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_LOAD_PARAMS_fu_273_m_axi_gmem_param_0_ARVALID),
-    .m_axi_gmem_param_0_ARREADY(m_axi_gmem_param_0_ARREADY),
-    .m_axi_gmem_param_0_ARADDR(grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_LOAD_PARAMS_fu_273_m_axi_gmem_param_0_ARADDR),
-    .m_axi_gmem_param_0_ARID(grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_LOAD_PARAMS_fu_273_m_axi_gmem_param_0_ARID),
-    .m_axi_gmem_param_0_ARLEN(grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_LOAD_PARAMS_fu_273_m_axi_gmem_param_0_ARLEN),
-    .m_axi_gmem_param_0_ARSIZE(grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_LOAD_PARAMS_fu_273_m_axi_gmem_param_0_ARSIZE),
-    .m_axi_gmem_param_0_ARBURST(grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_LOAD_PARAMS_fu_273_m_axi_gmem_param_0_ARBURST),
-    .m_axi_gmem_param_0_ARLOCK(grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_LOAD_PARAMS_fu_273_m_axi_gmem_param_0_ARLOCK),
-    .m_axi_gmem_param_0_ARCACHE(grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_LOAD_PARAMS_fu_273_m_axi_gmem_param_0_ARCACHE),
-    .m_axi_gmem_param_0_ARPROT(grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_LOAD_PARAMS_fu_273_m_axi_gmem_param_0_ARPROT),
-    .m_axi_gmem_param_0_ARQOS(grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_LOAD_PARAMS_fu_273_m_axi_gmem_param_0_ARQOS),
-    .m_axi_gmem_param_0_ARREGION(grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_LOAD_PARAMS_fu_273_m_axi_gmem_param_0_ARREGION),
-    .m_axi_gmem_param_0_ARUSER(grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_LOAD_PARAMS_fu_273_m_axi_gmem_param_0_ARUSER),
-    .m_axi_gmem_param_0_RVALID(m_axi_gmem_param_0_RVALID),
-    .m_axi_gmem_param_0_RREADY(grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_LOAD_PARAMS_fu_273_m_axi_gmem_param_0_RREADY),
-    .m_axi_gmem_param_0_RDATA(m_axi_gmem_param_0_RDATA),
-    .m_axi_gmem_param_0_RLAST(m_axi_gmem_param_0_RLAST),
-    .m_axi_gmem_param_0_RID(m_axi_gmem_param_0_RID),
-    .m_axi_gmem_param_0_RFIFONUM(m_axi_gmem_param_0_RFIFONUM),
-    .m_axi_gmem_param_0_RUSER(m_axi_gmem_param_0_RUSER),
-    .m_axi_gmem_param_0_RRESP(m_axi_gmem_param_0_RRESP),
-    .m_axi_gmem_param_0_BVALID(1'b0),
-    .m_axi_gmem_param_0_BREADY(grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_LOAD_PARAMS_fu_273_m_axi_gmem_param_0_BREADY),
-    .m_axi_gmem_param_0_BRESP(2'd0),
-    .m_axi_gmem_param_0_BID(1'd0),
-    .m_axi_gmem_param_0_BUSER(1'd0),
-    .b_buf_address0(grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_LOAD_PARAMS_fu_273_b_buf_address0),
-    .b_buf_ce0(grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_LOAD_PARAMS_fu_273_b_buf_ce0),
-    .b_buf_we0(grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_LOAD_PARAMS_fu_273_b_buf_we0),
-    .b_buf_d0(grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_LOAD_PARAMS_fu_273_b_buf_d0),
-    .sext_ln228(trunc_ln2_reg_648),
-    .g_buf_address0(grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_LOAD_PARAMS_fu_273_g_buf_address0),
-    .g_buf_ce0(grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_LOAD_PARAMS_fu_273_g_buf_ce0),
-    .g_buf_we0(grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_LOAD_PARAMS_fu_273_g_buf_we0),
-    .g_buf_d0(grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_LOAD_PARAMS_fu_273_g_buf_d0),
-    .sext_ln228_1(trunc_ln228_1_reg_653),
-    .be_buf_address0(grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_LOAD_PARAMS_fu_273_be_buf_address0),
-    .be_buf_ce0(grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_LOAD_PARAMS_fu_273_be_buf_ce0),
-    .be_buf_we0(grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_LOAD_PARAMS_fu_273_be_buf_we0),
-    .be_buf_d0(grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_LOAD_PARAMS_fu_273_be_buf_d0),
-    .sext_ln228_2(trunc_ln228_2_reg_658)
-);
-
-upconv_core_top_ucb1_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_288(
-    .ap_clk(ap_clk),
-    .ap_rst(ap_rst),
-    .ap_start(grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_288_ap_start),
-    .ap_done(grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_288_ap_done),
-    .ap_idle(grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_288_ap_idle),
-    .ap_ready(grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_288_ap_ready),
-    .m_axi_gmem_weight_0_AWVALID(grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_288_m_axi_gmem_weight_0_AWVALID),
+    .ap_start(grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_250_ap_start),
+    .ap_done(grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_250_ap_done),
+    .ap_idle(grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_250_ap_idle),
+    .ap_ready(grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_250_ap_ready),
+    .m_axi_gmem_weight_0_AWVALID(grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_250_m_axi_gmem_weight_0_AWVALID),
     .m_axi_gmem_weight_0_AWREADY(1'b0),
-    .m_axi_gmem_weight_0_AWADDR(grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_288_m_axi_gmem_weight_0_AWADDR),
-    .m_axi_gmem_weight_0_AWID(grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_288_m_axi_gmem_weight_0_AWID),
-    .m_axi_gmem_weight_0_AWLEN(grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_288_m_axi_gmem_weight_0_AWLEN),
-    .m_axi_gmem_weight_0_AWSIZE(grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_288_m_axi_gmem_weight_0_AWSIZE),
-    .m_axi_gmem_weight_0_AWBURST(grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_288_m_axi_gmem_weight_0_AWBURST),
-    .m_axi_gmem_weight_0_AWLOCK(grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_288_m_axi_gmem_weight_0_AWLOCK),
-    .m_axi_gmem_weight_0_AWCACHE(grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_288_m_axi_gmem_weight_0_AWCACHE),
-    .m_axi_gmem_weight_0_AWPROT(grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_288_m_axi_gmem_weight_0_AWPROT),
-    .m_axi_gmem_weight_0_AWQOS(grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_288_m_axi_gmem_weight_0_AWQOS),
-    .m_axi_gmem_weight_0_AWREGION(grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_288_m_axi_gmem_weight_0_AWREGION),
-    .m_axi_gmem_weight_0_AWUSER(grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_288_m_axi_gmem_weight_0_AWUSER),
-    .m_axi_gmem_weight_0_WVALID(grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_288_m_axi_gmem_weight_0_WVALID),
+    .m_axi_gmem_weight_0_AWADDR(grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_250_m_axi_gmem_weight_0_AWADDR),
+    .m_axi_gmem_weight_0_AWID(grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_250_m_axi_gmem_weight_0_AWID),
+    .m_axi_gmem_weight_0_AWLEN(grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_250_m_axi_gmem_weight_0_AWLEN),
+    .m_axi_gmem_weight_0_AWSIZE(grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_250_m_axi_gmem_weight_0_AWSIZE),
+    .m_axi_gmem_weight_0_AWBURST(grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_250_m_axi_gmem_weight_0_AWBURST),
+    .m_axi_gmem_weight_0_AWLOCK(grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_250_m_axi_gmem_weight_0_AWLOCK),
+    .m_axi_gmem_weight_0_AWCACHE(grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_250_m_axi_gmem_weight_0_AWCACHE),
+    .m_axi_gmem_weight_0_AWPROT(grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_250_m_axi_gmem_weight_0_AWPROT),
+    .m_axi_gmem_weight_0_AWQOS(grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_250_m_axi_gmem_weight_0_AWQOS),
+    .m_axi_gmem_weight_0_AWREGION(grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_250_m_axi_gmem_weight_0_AWREGION),
+    .m_axi_gmem_weight_0_AWUSER(grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_250_m_axi_gmem_weight_0_AWUSER),
+    .m_axi_gmem_weight_0_WVALID(grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_250_m_axi_gmem_weight_0_WVALID),
     .m_axi_gmem_weight_0_WREADY(1'b0),
-    .m_axi_gmem_weight_0_WDATA(grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_288_m_axi_gmem_weight_0_WDATA),
-    .m_axi_gmem_weight_0_WSTRB(grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_288_m_axi_gmem_weight_0_WSTRB),
-    .m_axi_gmem_weight_0_WLAST(grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_288_m_axi_gmem_weight_0_WLAST),
-    .m_axi_gmem_weight_0_WID(grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_288_m_axi_gmem_weight_0_WID),
-    .m_axi_gmem_weight_0_WUSER(grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_288_m_axi_gmem_weight_0_WUSER),
-    .m_axi_gmem_weight_0_ARVALID(grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_288_m_axi_gmem_weight_0_ARVALID),
+    .m_axi_gmem_weight_0_WDATA(grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_250_m_axi_gmem_weight_0_WDATA),
+    .m_axi_gmem_weight_0_WSTRB(grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_250_m_axi_gmem_weight_0_WSTRB),
+    .m_axi_gmem_weight_0_WLAST(grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_250_m_axi_gmem_weight_0_WLAST),
+    .m_axi_gmem_weight_0_WID(grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_250_m_axi_gmem_weight_0_WID),
+    .m_axi_gmem_weight_0_WUSER(grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_250_m_axi_gmem_weight_0_WUSER),
+    .m_axi_gmem_weight_0_ARVALID(grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_250_m_axi_gmem_weight_0_ARVALID),
     .m_axi_gmem_weight_0_ARREADY(m_axi_gmem_weight_0_ARREADY),
-    .m_axi_gmem_weight_0_ARADDR(grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_288_m_axi_gmem_weight_0_ARADDR),
-    .m_axi_gmem_weight_0_ARID(grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_288_m_axi_gmem_weight_0_ARID),
-    .m_axi_gmem_weight_0_ARLEN(grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_288_m_axi_gmem_weight_0_ARLEN),
-    .m_axi_gmem_weight_0_ARSIZE(grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_288_m_axi_gmem_weight_0_ARSIZE),
-    .m_axi_gmem_weight_0_ARBURST(grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_288_m_axi_gmem_weight_0_ARBURST),
-    .m_axi_gmem_weight_0_ARLOCK(grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_288_m_axi_gmem_weight_0_ARLOCK),
-    .m_axi_gmem_weight_0_ARCACHE(grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_288_m_axi_gmem_weight_0_ARCACHE),
-    .m_axi_gmem_weight_0_ARPROT(grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_288_m_axi_gmem_weight_0_ARPROT),
-    .m_axi_gmem_weight_0_ARQOS(grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_288_m_axi_gmem_weight_0_ARQOS),
-    .m_axi_gmem_weight_0_ARREGION(grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_288_m_axi_gmem_weight_0_ARREGION),
-    .m_axi_gmem_weight_0_ARUSER(grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_288_m_axi_gmem_weight_0_ARUSER),
+    .m_axi_gmem_weight_0_ARADDR(grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_250_m_axi_gmem_weight_0_ARADDR),
+    .m_axi_gmem_weight_0_ARID(grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_250_m_axi_gmem_weight_0_ARID),
+    .m_axi_gmem_weight_0_ARLEN(grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_250_m_axi_gmem_weight_0_ARLEN),
+    .m_axi_gmem_weight_0_ARSIZE(grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_250_m_axi_gmem_weight_0_ARSIZE),
+    .m_axi_gmem_weight_0_ARBURST(grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_250_m_axi_gmem_weight_0_ARBURST),
+    .m_axi_gmem_weight_0_ARLOCK(grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_250_m_axi_gmem_weight_0_ARLOCK),
+    .m_axi_gmem_weight_0_ARCACHE(grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_250_m_axi_gmem_weight_0_ARCACHE),
+    .m_axi_gmem_weight_0_ARPROT(grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_250_m_axi_gmem_weight_0_ARPROT),
+    .m_axi_gmem_weight_0_ARQOS(grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_250_m_axi_gmem_weight_0_ARQOS),
+    .m_axi_gmem_weight_0_ARREGION(grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_250_m_axi_gmem_weight_0_ARREGION),
+    .m_axi_gmem_weight_0_ARUSER(grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_250_m_axi_gmem_weight_0_ARUSER),
     .m_axi_gmem_weight_0_RVALID(m_axi_gmem_weight_0_RVALID),
-    .m_axi_gmem_weight_0_RREADY(grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_288_m_axi_gmem_weight_0_RREADY),
+    .m_axi_gmem_weight_0_RREADY(grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_250_m_axi_gmem_weight_0_RREADY),
     .m_axi_gmem_weight_0_RDATA(m_axi_gmem_weight_0_RDATA),
     .m_axi_gmem_weight_0_RLAST(m_axi_gmem_weight_0_RLAST),
     .m_axi_gmem_weight_0_RID(m_axi_gmem_weight_0_RID),
@@ -2437,471 +2119,686 @@ upconv_core_top_ucb1_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP grp_UpCo
     .m_axi_gmem_weight_0_RUSER(m_axi_gmem_weight_0_RUSER),
     .m_axi_gmem_weight_0_RRESP(m_axi_gmem_weight_0_RRESP),
     .m_axi_gmem_weight_0_BVALID(1'b0),
-    .m_axi_gmem_weight_0_BREADY(grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_288_m_axi_gmem_weight_0_BREADY),
+    .m_axi_gmem_weight_0_BREADY(grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_250_m_axi_gmem_weight_0_BREADY),
     .m_axi_gmem_weight_0_BRESP(2'd0),
     .m_axi_gmem_weight_0_BID(1'd0),
     .m_axi_gmem_weight_0_BUSER(1'd0),
-    .sext_ln135(trunc_ln_reg_663),
-    .zext_ln135(add52_reg_679),
-    .void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_9_address0(grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_288_void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_9_address0),
-    .void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_9_ce0(grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_288_void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_9_ce0),
-    .void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_9_we0(grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_288_void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_9_we0),
-    .void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_9_d0(grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_288_void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_9_d0),
-    .void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_9_q0(void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_9_q0),
-    .void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_8_address0(grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_288_void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_8_address0),
-    .void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_8_ce0(grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_288_void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_8_ce0),
-    .void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_8_we0(grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_288_void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_8_we0),
-    .void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_8_d0(grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_288_void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_8_d0),
-    .void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_8_q0(void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_8_q0),
-    .void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_7_address0(grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_288_void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_7_address0),
-    .void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_7_ce0(grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_288_void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_7_ce0),
-    .void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_7_we0(grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_288_void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_7_we0),
-    .void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_7_d0(grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_288_void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_7_d0),
-    .void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_7_q0(void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_7_q0),
-    .void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_6_address0(grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_288_void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_6_address0),
-    .void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_6_ce0(grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_288_void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_6_ce0),
-    .void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_6_we0(grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_288_void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_6_we0),
-    .void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_6_d0(grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_288_void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_6_d0),
-    .void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_6_q0(void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_6_q0),
-    .void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_5_address0(grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_288_void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_5_address0),
-    .void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_5_ce0(grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_288_void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_5_ce0),
-    .void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_5_we0(grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_288_void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_5_we0),
-    .void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_5_d0(grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_288_void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_5_d0),
-    .void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_5_q0(void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_5_q0),
-    .void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_4_address0(grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_288_void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_4_address0),
-    .void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_4_ce0(grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_288_void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_4_ce0),
-    .void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_4_we0(grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_288_void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_4_we0),
-    .void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_4_d0(grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_288_void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_4_d0),
-    .void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_4_q0(void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_4_q0),
-    .void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_3_address0(grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_288_void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_3_address0),
-    .void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_3_ce0(grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_288_void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_3_ce0),
-    .void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_3_we0(grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_288_void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_3_we0),
-    .void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_3_d0(grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_288_void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_3_d0),
-    .void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_3_q0(void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_3_q0),
-    .void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_2_address0(grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_288_void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_2_address0),
-    .void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_2_ce0(grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_288_void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_2_ce0),
-    .void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_2_we0(grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_288_void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_2_we0),
-    .void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_2_d0(grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_288_void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_2_d0),
-    .void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_2_q0(void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_2_q0),
-    .x_buf_address0(grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_288_x_buf_address0),
-    .x_buf_ce0(grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_288_x_buf_ce0),
+    .sext_ln356(trunc_ln_reg_512),
+    .zext_ln356(add_i90_reg_527),
+    .x_buf_address0(grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_250_x_buf_address0),
+    .x_buf_ce0(grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_250_x_buf_ce0),
     .x_buf_q0(x_buf_q0),
-    .void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_1_address0(grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_288_void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_1_address0),
-    .void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_1_ce0(grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_288_void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_1_ce0),
-    .void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_1_we0(grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_288_void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_1_we0),
-    .void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_1_d0(grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_288_void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_1_d0),
-    .void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_1_q0(void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_1_q0),
-    .void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_address0(grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_288_void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_address0),
-    .void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_ce0(grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_288_void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_ce0),
-    .void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_we0(grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_288_void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_we0),
-    .void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_d0(grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_288_void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_d0),
-    .void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_q0(void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_q0),
-    .p_ZZ16UpConv_Fused_RowILi8ELi32ELi32ELi480ELi240EEvP7ap_uintILi256EEPKS1_S4_S4_S4_5_address0(grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_288_p_ZZ16UpConv_Fused_RowILi8ELi32ELi32ELi480ELi240EEvP7ap_uintILi256EEPKS1_S4_S4_S4_5_address0),
-    .p_ZZ16UpConv_Fused_RowILi8ELi32ELi32ELi480ELi240EEvP7ap_uintILi256EEPKS1_S4_S4_S4_5_ce0(grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_288_p_ZZ16UpConv_Fused_RowILi8ELi32ELi32ELi480ELi240EEvP7ap_uintILi256EEPKS1_S4_S4_S4_5_ce0),
-    .p_ZZ16UpConv_Fused_RowILi8ELi32ELi32ELi480ELi240EEvP7ap_uintILi256EEPKS1_S4_S4_S4_5_we0(grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_288_p_ZZ16UpConv_Fused_RowILi8ELi32ELi32ELi480ELi240EEvP7ap_uintILi256EEPKS1_S4_S4_S4_5_we0),
-    .p_ZZ16UpConv_Fused_RowILi8ELi32ELi32ELi480ELi240EEvP7ap_uintILi256EEPKS1_S4_S4_S4_5_d0(grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_288_p_ZZ16UpConv_Fused_RowILi8ELi32ELi32ELi480ELi240EEvP7ap_uintILi256EEPKS1_S4_S4_S4_5_d0),
-    .p_ZZ16UpConv_Fused_RowILi8ELi32ELi32ELi480ELi240EEvP7ap_uintILi256EEPKS1_S4_S4_S4_5_q0(p_ZZ16UpConv_Fused_RowILi8ELi32ELi32ELi480ELi240EEvP7ap_uintILi256EEPKS1_S4_S4_S4_5_q0),
-    .p_ZZ16UpConv_Fused_RowILi8ELi32ELi32ELi480ELi240EEvP7ap_uintILi256EEPKS1_S4_S4_S4_4_address0(grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_288_p_ZZ16UpConv_Fused_RowILi8ELi32ELi32ELi480ELi240EEvP7ap_uintILi256EEPKS1_S4_S4_S4_4_address0),
-    .p_ZZ16UpConv_Fused_RowILi8ELi32ELi32ELi480ELi240EEvP7ap_uintILi256EEPKS1_S4_S4_S4_4_ce0(grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_288_p_ZZ16UpConv_Fused_RowILi8ELi32ELi32ELi480ELi240EEvP7ap_uintILi256EEPKS1_S4_S4_S4_4_ce0),
-    .p_ZZ16UpConv_Fused_RowILi8ELi32ELi32ELi480ELi240EEvP7ap_uintILi256EEPKS1_S4_S4_S4_4_we0(grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_288_p_ZZ16UpConv_Fused_RowILi8ELi32ELi32ELi480ELi240EEvP7ap_uintILi256EEPKS1_S4_S4_S4_4_we0),
-    .p_ZZ16UpConv_Fused_RowILi8ELi32ELi32ELi480ELi240EEvP7ap_uintILi256EEPKS1_S4_S4_S4_4_d0(grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_288_p_ZZ16UpConv_Fused_RowILi8ELi32ELi32ELi480ELi240EEvP7ap_uintILi256EEPKS1_S4_S4_S4_4_d0),
-    .p_ZZ16UpConv_Fused_RowILi8ELi32ELi32ELi480ELi240EEvP7ap_uintILi256EEPKS1_S4_S4_S4_4_q0(p_ZZ16UpConv_Fused_RowILi8ELi32ELi32ELi480ELi240EEvP7ap_uintILi256EEPKS1_S4_S4_S4_4_q0),
-    .p_ZZ16UpConv_Fused_RowILi8ELi32ELi32ELi480ELi240EEvP7ap_uintILi256EEPKS1_S4_S4_S4_3_address0(grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_288_p_ZZ16UpConv_Fused_RowILi8ELi32ELi32ELi480ELi240EEvP7ap_uintILi256EEPKS1_S4_S4_S4_3_address0),
-    .p_ZZ16UpConv_Fused_RowILi8ELi32ELi32ELi480ELi240EEvP7ap_uintILi256EEPKS1_S4_S4_S4_3_ce0(grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_288_p_ZZ16UpConv_Fused_RowILi8ELi32ELi32ELi480ELi240EEvP7ap_uintILi256EEPKS1_S4_S4_S4_3_ce0),
-    .p_ZZ16UpConv_Fused_RowILi8ELi32ELi32ELi480ELi240EEvP7ap_uintILi256EEPKS1_S4_S4_S4_3_we0(grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_288_p_ZZ16UpConv_Fused_RowILi8ELi32ELi32ELi480ELi240EEvP7ap_uintILi256EEPKS1_S4_S4_S4_3_we0),
-    .p_ZZ16UpConv_Fused_RowILi8ELi32ELi32ELi480ELi240EEvP7ap_uintILi256EEPKS1_S4_S4_S4_3_d0(grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_288_p_ZZ16UpConv_Fused_RowILi8ELi32ELi32ELi480ELi240EEvP7ap_uintILi256EEPKS1_S4_S4_S4_3_d0),
-    .p_ZZ16UpConv_Fused_RowILi8ELi32ELi32ELi480ELi240EEvP7ap_uintILi256EEPKS1_S4_S4_S4_3_q0(p_ZZ16UpConv_Fused_RowILi8ELi32ELi32ELi480ELi240EEvP7ap_uintILi256EEPKS1_S4_S4_S4_3_q0),
-    .p_ZZ16UpConv_Fused_RowILi8ELi32ELi32ELi480ELi240EEvP7ap_uintILi256EEPKS1_S4_S4_S4_2_address0(grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_288_p_ZZ16UpConv_Fused_RowILi8ELi32ELi32ELi480ELi240EEvP7ap_uintILi256EEPKS1_S4_S4_S4_2_address0),
-    .p_ZZ16UpConv_Fused_RowILi8ELi32ELi32ELi480ELi240EEvP7ap_uintILi256EEPKS1_S4_S4_S4_2_ce0(grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_288_p_ZZ16UpConv_Fused_RowILi8ELi32ELi32ELi480ELi240EEvP7ap_uintILi256EEPKS1_S4_S4_S4_2_ce0),
-    .p_ZZ16UpConv_Fused_RowILi8ELi32ELi32ELi480ELi240EEvP7ap_uintILi256EEPKS1_S4_S4_S4_2_we0(grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_288_p_ZZ16UpConv_Fused_RowILi8ELi32ELi32ELi480ELi240EEvP7ap_uintILi256EEPKS1_S4_S4_S4_2_we0),
-    .p_ZZ16UpConv_Fused_RowILi8ELi32ELi32ELi480ELi240EEvP7ap_uintILi256EEPKS1_S4_S4_S4_2_d0(grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_288_p_ZZ16UpConv_Fused_RowILi8ELi32ELi32ELi480ELi240EEvP7ap_uintILi256EEPKS1_S4_S4_S4_2_d0),
-    .p_ZZ16UpConv_Fused_RowILi8ELi32ELi32ELi480ELi240EEvP7ap_uintILi256EEPKS1_S4_S4_S4_2_q0(p_ZZ16UpConv_Fused_RowILi8ELi32ELi32ELi480ELi240EEvP7ap_uintILi256EEPKS1_S4_S4_S4_2_q0),
-    .p_ZZ16UpConv_Fused_RowILi8ELi32ELi32ELi480ELi240EEvP7ap_uintILi256EEPKS1_S4_S4_S4_1_address0(grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_288_p_ZZ16UpConv_Fused_RowILi8ELi32ELi32ELi480ELi240EEvP7ap_uintILi256EEPKS1_S4_S4_S4_1_address0),
-    .p_ZZ16UpConv_Fused_RowILi8ELi32ELi32ELi480ELi240EEvP7ap_uintILi256EEPKS1_S4_S4_S4_1_ce0(grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_288_p_ZZ16UpConv_Fused_RowILi8ELi32ELi32ELi480ELi240EEvP7ap_uintILi256EEPKS1_S4_S4_S4_1_ce0),
-    .p_ZZ16UpConv_Fused_RowILi8ELi32ELi32ELi480ELi240EEvP7ap_uintILi256EEPKS1_S4_S4_S4_1_we0(grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_288_p_ZZ16UpConv_Fused_RowILi8ELi32ELi32ELi480ELi240EEvP7ap_uintILi256EEPKS1_S4_S4_S4_1_we0),
-    .p_ZZ16UpConv_Fused_RowILi8ELi32ELi32ELi480ELi240EEvP7ap_uintILi256EEPKS1_S4_S4_S4_1_d0(grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_288_p_ZZ16UpConv_Fused_RowILi8ELi32ELi32ELi480ELi240EEvP7ap_uintILi256EEPKS1_S4_S4_S4_1_d0),
-    .p_ZZ16UpConv_Fused_RowILi8ELi32ELi32ELi480ELi240EEvP7ap_uintILi256EEPKS1_S4_S4_S4_1_q0(p_ZZ16UpConv_Fused_RowILi8ELi32ELi32ELi480ELi240EEvP7ap_uintILi256EEPKS1_S4_S4_S4_1_q0),
-    .p_ZZ16UpConv_Fused_RowILi8ELi32ELi32ELi480ELi240EEvP7ap_uintILi256EEPKS1_S4_S4_S4_address0(grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_288_p_ZZ16UpConv_Fused_RowILi8ELi32ELi32ELi480ELi240EEvP7ap_uintILi256EEPKS1_S4_S4_S4_address0),
-    .p_ZZ16UpConv_Fused_RowILi8ELi32ELi32ELi480ELi240EEvP7ap_uintILi256EEPKS1_S4_S4_S4_ce0(grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_288_p_ZZ16UpConv_Fused_RowILi8ELi32ELi32ELi480ELi240EEvP7ap_uintILi256EEPKS1_S4_S4_S4_ce0),
-    .p_ZZ16UpConv_Fused_RowILi8ELi32ELi32ELi480ELi240EEvP7ap_uintILi256EEPKS1_S4_S4_S4_we0(grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_288_p_ZZ16UpConv_Fused_RowILi8ELi32ELi32ELi480ELi240EEvP7ap_uintILi256EEPKS1_S4_S4_S4_we0),
-    .p_ZZ16UpConv_Fused_RowILi8ELi32ELi32ELi480ELi240EEvP7ap_uintILi256EEPKS1_S4_S4_S4_d0(grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_288_p_ZZ16UpConv_Fused_RowILi8ELi32ELi32ELi480ELi240EEvP7ap_uintILi256EEPKS1_S4_S4_S4_d0),
-    .p_ZZ16UpConv_Fused_RowILi8ELi32ELi32ELi480ELi240EEvP7ap_uintILi256EEPKS1_S4_S4_S4_q0(p_ZZ16UpConv_Fused_RowILi8ELi32ELi32ELi480ELi240EEvP7ap_uintILi256EEPKS1_S4_S4_S4_q0),
-    .grp_fu_740_p_din0(grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_288_grp_fu_740_p_din0),
-    .grp_fu_740_p_din1(grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_288_grp_fu_740_p_din1),
-    .grp_fu_740_p_dout0(grp_fu_740_p2),
-    .grp_fu_740_p_ce(grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_288_grp_fu_740_p_ce),
-    .grp_fu_744_p_din0(grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_288_grp_fu_744_p_din0),
-    .grp_fu_744_p_din1(grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_288_grp_fu_744_p_din1),
-    .grp_fu_744_p_dout0(grp_fu_744_p2),
-    .grp_fu_744_p_ce(grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_288_grp_fu_744_p_ce),
-    .grp_fu_748_p_din0(grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_288_grp_fu_748_p_din0),
-    .grp_fu_748_p_din1(grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_288_grp_fu_748_p_din1),
-    .grp_fu_748_p_dout0(grp_fu_748_p2),
-    .grp_fu_748_p_ce(grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_288_grp_fu_748_p_ce),
-    .grp_fu_752_p_din0(grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_288_grp_fu_752_p_din0),
-    .grp_fu_752_p_din1(grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_288_grp_fu_752_p_din1),
-    .grp_fu_752_p_dout0(grp_fu_752_p2),
-    .grp_fu_752_p_ce(grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_288_grp_fu_752_p_ce),
-    .grp_fu_756_p_din0(grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_288_grp_fu_756_p_din0),
-    .grp_fu_756_p_din1(grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_288_grp_fu_756_p_din1),
-    .grp_fu_756_p_dout0(grp_fu_756_p2),
-    .grp_fu_756_p_ce(grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_288_grp_fu_756_p_ce),
-    .grp_fu_760_p_din0(grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_288_grp_fu_760_p_din0),
-    .grp_fu_760_p_din1(grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_288_grp_fu_760_p_din1),
-    .grp_fu_760_p_dout0(grp_fu_760_p2),
-    .grp_fu_760_p_ce(grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_288_grp_fu_760_p_ce),
-    .grp_fu_764_p_din0(grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_288_grp_fu_764_p_din0),
-    .grp_fu_764_p_din1(grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_288_grp_fu_764_p_din1),
-    .grp_fu_764_p_dout0(grp_fu_764_p2),
-    .grp_fu_764_p_ce(grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_288_grp_fu_764_p_ce),
-    .grp_fu_768_p_din0(grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_288_grp_fu_768_p_din0),
-    .grp_fu_768_p_din1(grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_288_grp_fu_768_p_din1),
-    .grp_fu_768_p_dout0(grp_fu_768_p2),
-    .grp_fu_768_p_ce(grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_288_grp_fu_768_p_ce),
-    .grp_fu_772_p_din0(grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_288_grp_fu_772_p_din0),
-    .grp_fu_772_p_din1(grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_288_grp_fu_772_p_din1),
-    .grp_fu_772_p_dout0(grp_fu_772_p2),
-    .grp_fu_772_p_ce(grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_288_grp_fu_772_p_ce),
-    .grp_fu_776_p_din0(grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_288_grp_fu_776_p_din0),
-    .grp_fu_776_p_din1(grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_288_grp_fu_776_p_din1),
-    .grp_fu_776_p_dout0(grp_fu_776_p2),
-    .grp_fu_776_p_ce(grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_288_grp_fu_776_p_ce),
-    .grp_fu_780_p_din0(grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_288_grp_fu_780_p_din0),
-    .grp_fu_780_p_din1(grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_288_grp_fu_780_p_din1),
-    .grp_fu_780_p_dout0(grp_fu_780_p2),
-    .grp_fu_780_p_ce(grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_288_grp_fu_780_p_ce),
-    .grp_fu_784_p_din0(grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_288_grp_fu_784_p_din0),
-    .grp_fu_784_p_din1(grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_288_grp_fu_784_p_din1),
-    .grp_fu_784_p_dout0(grp_fu_784_p2),
-    .grp_fu_784_p_ce(grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_288_grp_fu_784_p_ce),
-    .grp_fu_788_p_din0(grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_288_grp_fu_788_p_din0),
-    .grp_fu_788_p_din1(grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_288_grp_fu_788_p_din1),
-    .grp_fu_788_p_dout0(grp_fu_788_p2),
-    .grp_fu_788_p_ce(grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_288_grp_fu_788_p_ce),
-    .grp_fu_792_p_din0(grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_288_grp_fu_792_p_din0),
-    .grp_fu_792_p_din1(grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_288_grp_fu_792_p_din1),
-    .grp_fu_792_p_dout0(grp_fu_792_p2),
-    .grp_fu_792_p_ce(grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_288_grp_fu_792_p_ce),
-    .grp_fu_796_p_din0(grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_288_grp_fu_796_p_din0),
-    .grp_fu_796_p_din1(grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_288_grp_fu_796_p_din1),
-    .grp_fu_796_p_dout0(grp_fu_796_p2),
-    .grp_fu_796_p_ce(grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_288_grp_fu_796_p_ce),
-    .grp_fu_800_p_din0(grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_288_grp_fu_800_p_din0),
-    .grp_fu_800_p_din1(grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_288_grp_fu_800_p_din1),
-    .grp_fu_800_p_dout0(grp_fu_800_p2),
-    .grp_fu_800_p_ce(grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_288_grp_fu_800_p_ce),
-    .grp_fu_804_p_din0(grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_288_grp_fu_804_p_din0),
-    .grp_fu_804_p_din1(grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_288_grp_fu_804_p_din1),
-    .grp_fu_804_p_dout0(grp_fu_804_p2),
-    .grp_fu_804_p_ce(grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_288_grp_fu_804_p_ce),
-    .grp_fu_808_p_din0(grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_288_grp_fu_808_p_din0),
-    .grp_fu_808_p_din1(grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_288_grp_fu_808_p_din1),
-    .grp_fu_808_p_dout0(grp_fu_808_p2),
-    .grp_fu_808_p_ce(grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_288_grp_fu_808_p_ce),
-    .grp_fu_812_p_din0(grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_288_grp_fu_812_p_din0),
-    .grp_fu_812_p_din1(grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_288_grp_fu_812_p_din1),
-    .grp_fu_812_p_dout0(grp_fu_812_p2),
-    .grp_fu_812_p_ce(grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_288_grp_fu_812_p_ce),
-    .grp_fu_816_p_din0(grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_288_grp_fu_816_p_din0),
-    .grp_fu_816_p_din1(grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_288_grp_fu_816_p_din1),
-    .grp_fu_816_p_dout0(grp_fu_816_p2),
-    .grp_fu_816_p_ce(grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_288_grp_fu_816_p_ce),
-    .grp_fu_820_p_din0(grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_288_grp_fu_820_p_din0),
-    .grp_fu_820_p_din1(grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_288_grp_fu_820_p_din1),
-    .grp_fu_820_p_dout0(grp_fu_820_p2),
-    .grp_fu_820_p_ce(grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_288_grp_fu_820_p_ce),
-    .grp_fu_824_p_din0(grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_288_grp_fu_824_p_din0),
-    .grp_fu_824_p_din1(grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_288_grp_fu_824_p_din1),
-    .grp_fu_824_p_dout0(grp_fu_824_p2),
-    .grp_fu_824_p_ce(grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_288_grp_fu_824_p_ce),
-    .grp_fu_828_p_din0(grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_288_grp_fu_828_p_din0),
-    .grp_fu_828_p_din1(grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_288_grp_fu_828_p_din1),
-    .grp_fu_828_p_dout0(grp_fu_828_p2),
-    .grp_fu_828_p_ce(grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_288_grp_fu_828_p_ce),
-    .grp_fu_832_p_din0(grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_288_grp_fu_832_p_din0),
-    .grp_fu_832_p_din1(grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_288_grp_fu_832_p_din1),
-    .grp_fu_832_p_dout0(grp_fu_832_p2),
-    .grp_fu_832_p_ce(grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_288_grp_fu_832_p_ce),
-    .grp_fu_836_p_din0(grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_288_grp_fu_836_p_din0),
-    .grp_fu_836_p_din1(grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_288_grp_fu_836_p_din1),
-    .grp_fu_836_p_dout0(grp_fu_836_p2),
-    .grp_fu_836_p_ce(grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_288_grp_fu_836_p_ce),
-    .grp_fu_840_p_din0(grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_288_grp_fu_840_p_din0),
-    .grp_fu_840_p_din1(grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_288_grp_fu_840_p_din1),
-    .grp_fu_840_p_dout0(grp_fu_840_p2),
-    .grp_fu_840_p_ce(grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_288_grp_fu_840_p_ce),
-    .grp_fu_844_p_din0(grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_288_grp_fu_844_p_din0),
-    .grp_fu_844_p_din1(grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_288_grp_fu_844_p_din1),
-    .grp_fu_844_p_dout0(grp_fu_844_p2),
-    .grp_fu_844_p_ce(grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_288_grp_fu_844_p_ce),
-    .grp_fu_848_p_din0(grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_288_grp_fu_848_p_din0),
-    .grp_fu_848_p_din1(grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_288_grp_fu_848_p_din1),
-    .grp_fu_848_p_dout0(grp_fu_848_p2),
-    .grp_fu_848_p_ce(grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_288_grp_fu_848_p_ce),
-    .grp_fu_852_p_din0(grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_288_grp_fu_852_p_din0),
-    .grp_fu_852_p_din1(grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_288_grp_fu_852_p_din1),
-    .grp_fu_852_p_dout0(grp_fu_852_p2),
-    .grp_fu_852_p_ce(grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_288_grp_fu_852_p_ce),
-    .grp_fu_856_p_din0(grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_288_grp_fu_856_p_din0),
-    .grp_fu_856_p_din1(grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_288_grp_fu_856_p_din1),
-    .grp_fu_856_p_dout0(grp_fu_856_p2),
-    .grp_fu_856_p_ce(grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_288_grp_fu_856_p_ce),
-    .grp_fu_860_p_din0(grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_288_grp_fu_860_p_din0),
-    .grp_fu_860_p_din1(grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_288_grp_fu_860_p_din1),
-    .grp_fu_860_p_dout0(grp_fu_860_p2),
-    .grp_fu_860_p_ce(grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_288_grp_fu_860_p_ce),
-    .grp_fu_864_p_din0(grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_288_grp_fu_864_p_din0),
-    .grp_fu_864_p_din1(grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_288_grp_fu_864_p_din1),
-    .grp_fu_864_p_dout0(grp_fu_864_p2),
-    .grp_fu_864_p_ce(grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_288_grp_fu_864_p_ce),
-    .grp_fu_868_p_din0(grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_288_grp_fu_868_p_din0),
-    .grp_fu_868_p_din1(grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_288_grp_fu_868_p_din1),
-    .grp_fu_868_p_dout0(grp_fu_868_p2),
-    .grp_fu_868_p_ce(grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_288_grp_fu_868_p_ce),
-    .grp_fu_872_p_din0(grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_288_grp_fu_872_p_din0),
-    .grp_fu_872_p_din1(grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_288_grp_fu_872_p_din1),
-    .grp_fu_872_p_dout0(grp_fu_872_p2),
-    .grp_fu_872_p_ce(grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_288_grp_fu_872_p_ce),
-    .grp_fu_876_p_din0(grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_288_grp_fu_876_p_din0),
-    .grp_fu_876_p_din1(grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_288_grp_fu_876_p_din1),
-    .grp_fu_876_p_dout0(grp_fu_876_p2),
-    .grp_fu_876_p_ce(grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_288_grp_fu_876_p_ce),
-    .grp_fu_880_p_din0(grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_288_grp_fu_880_p_din0),
-    .grp_fu_880_p_din1(grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_288_grp_fu_880_p_din1),
-    .grp_fu_880_p_dout0(grp_fu_880_p2),
-    .grp_fu_880_p_ce(grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_288_grp_fu_880_p_ce),
-    .grp_fu_884_p_din0(grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_288_grp_fu_884_p_din0),
-    .grp_fu_884_p_din1(grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_288_grp_fu_884_p_din1),
-    .grp_fu_884_p_dout0(grp_fu_884_p2),
-    .grp_fu_884_p_ce(grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_288_grp_fu_884_p_ce),
-    .grp_fu_888_p_din0(grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_288_grp_fu_888_p_din0),
-    .grp_fu_888_p_din1(grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_288_grp_fu_888_p_din1),
-    .grp_fu_888_p_dout0(grp_fu_888_p2),
-    .grp_fu_888_p_ce(grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_288_grp_fu_888_p_ce),
-    .grp_fu_892_p_din0(grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_288_grp_fu_892_p_din0),
-    .grp_fu_892_p_din1(grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_288_grp_fu_892_p_din1),
-    .grp_fu_892_p_dout0(grp_fu_892_p2),
-    .grp_fu_892_p_ce(grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_288_grp_fu_892_p_ce),
-    .grp_fu_896_p_din0(grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_288_grp_fu_896_p_din0),
-    .grp_fu_896_p_din1(grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_288_grp_fu_896_p_din1),
-    .grp_fu_896_p_dout0(grp_fu_896_p2),
-    .grp_fu_896_p_ce(grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_288_grp_fu_896_p_ce),
-    .grp_fu_900_p_din0(grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_288_grp_fu_900_p_din0),
-    .grp_fu_900_p_din1(grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_288_grp_fu_900_p_din1),
-    .grp_fu_900_p_dout0(grp_fu_900_p2),
-    .grp_fu_900_p_ce(grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_288_grp_fu_900_p_ce),
-    .grp_fu_904_p_din0(grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_288_grp_fu_904_p_din0),
-    .grp_fu_904_p_din1(grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_288_grp_fu_904_p_din1),
-    .grp_fu_904_p_dout0(grp_fu_904_p2),
-    .grp_fu_904_p_ce(grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_288_grp_fu_904_p_ce),
-    .grp_fu_908_p_din0(grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_288_grp_fu_908_p_din0),
-    .grp_fu_908_p_din1(grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_288_grp_fu_908_p_din1),
-    .grp_fu_908_p_dout0(grp_fu_908_p2),
-    .grp_fu_908_p_ce(grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_288_grp_fu_908_p_ce),
-    .grp_fu_912_p_din0(grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_288_grp_fu_912_p_din0),
-    .grp_fu_912_p_din1(grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_288_grp_fu_912_p_din1),
-    .grp_fu_912_p_dout0(grp_fu_912_p2),
-    .grp_fu_912_p_ce(grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_288_grp_fu_912_p_ce),
-    .grp_fu_916_p_din0(grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_288_grp_fu_916_p_din0),
-    .grp_fu_916_p_din1(grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_288_grp_fu_916_p_din1),
-    .grp_fu_916_p_dout0(grp_fu_916_p2),
-    .grp_fu_916_p_ce(grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_288_grp_fu_916_p_ce),
-    .grp_fu_920_p_din0(grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_288_grp_fu_920_p_din0),
-    .grp_fu_920_p_din1(grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_288_grp_fu_920_p_din1),
-    .grp_fu_920_p_dout0(grp_fu_920_p2),
-    .grp_fu_920_p_ce(grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_288_grp_fu_920_p_ce),
-    .grp_fu_924_p_din0(grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_288_grp_fu_924_p_din0),
-    .grp_fu_924_p_din1(grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_288_grp_fu_924_p_din1),
-    .grp_fu_924_p_dout0(grp_fu_924_p2),
-    .grp_fu_924_p_ce(grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_288_grp_fu_924_p_ce),
-    .grp_fu_928_p_din0(grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_288_grp_fu_928_p_din0),
-    .grp_fu_928_p_din1(grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_288_grp_fu_928_p_din1),
-    .grp_fu_928_p_dout0(grp_fu_928_p2),
-    .grp_fu_928_p_ce(grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_288_grp_fu_928_p_ce)
-);
-
-upconv_core_top_ucb1_UpConv_Fused_Row_8_32_32_480_240_Pipeline_BIAS_STATS grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_BIAS_STATS_fu_330(
-    .ap_clk(ap_clk),
-    .ap_rst(ap_rst),
-    .ap_start(grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_BIAS_STATS_fu_330_ap_start),
-    .ap_done(grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_BIAS_STATS_fu_330_ap_done),
-    .ap_idle(grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_BIAS_STATS_fu_330_ap_idle),
-    .ap_ready(grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_BIAS_STATS_fu_330_ap_ready),
-    .mul_ln246(sub_ln246_reg_708),
-    .b_buf_address0(grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_BIAS_STATS_fu_330_b_buf_address0),
-    .b_buf_ce0(grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_BIAS_STATS_fu_330_b_buf_ce0),
-    .b_buf_q0(b_buf_q0),
-    .sumsq_out(grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_BIAS_STATS_fu_330_sumsq_out),
-    .sumsq_out_ap_vld(grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_BIAS_STATS_fu_330_sumsq_out_ap_vld),
-    .sum_out(grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_BIAS_STATS_fu_330_sum_out),
-    .sum_out_ap_vld(grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_BIAS_STATS_fu_330_sum_out_ap_vld),
-    .void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_9_address0(grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_BIAS_STATS_fu_330_void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_9_address0),
-    .void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_9_ce0(grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_BIAS_STATS_fu_330_void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_9_ce0),
-    .void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_9_we0(grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_BIAS_STATS_fu_330_void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_9_we0),
-    .void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_9_d0(grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_BIAS_STATS_fu_330_void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_9_d0),
-    .void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_9_address1(grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_BIAS_STATS_fu_330_void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_9_address1),
-    .void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_9_ce1(grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_BIAS_STATS_fu_330_void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_9_ce1),
+    .void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_9_address0(grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_250_void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_9_address0),
+    .void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_9_ce0(grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_250_void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_9_ce0),
+    .void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_9_we0(grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_250_void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_9_we0),
+    .void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_9_d0(grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_250_void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_9_d0),
+    .void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_9_address1(grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_250_void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_9_address1),
+    .void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_9_ce1(grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_250_void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_9_ce1),
     .void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_9_q1(void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_9_q1),
-    .void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_8_address0(grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_BIAS_STATS_fu_330_void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_8_address0),
-    .void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_8_ce0(grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_BIAS_STATS_fu_330_void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_8_ce0),
-    .void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_8_we0(grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_BIAS_STATS_fu_330_void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_8_we0),
-    .void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_8_d0(grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_BIAS_STATS_fu_330_void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_8_d0),
-    .void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_8_address1(grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_BIAS_STATS_fu_330_void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_8_address1),
-    .void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_8_ce1(grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_BIAS_STATS_fu_330_void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_8_ce1),
+    .void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_8_address0(grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_250_void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_8_address0),
+    .void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_8_ce0(grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_250_void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_8_ce0),
+    .void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_8_we0(grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_250_void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_8_we0),
+    .void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_8_d0(grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_250_void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_8_d0),
+    .void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_8_address1(grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_250_void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_8_address1),
+    .void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_8_ce1(grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_250_void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_8_ce1),
     .void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_8_q1(void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_8_q1),
-    .void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_7_address0(grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_BIAS_STATS_fu_330_void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_7_address0),
-    .void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_7_ce0(grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_BIAS_STATS_fu_330_void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_7_ce0),
-    .void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_7_we0(grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_BIAS_STATS_fu_330_void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_7_we0),
-    .void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_7_d0(grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_BIAS_STATS_fu_330_void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_7_d0),
-    .void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_7_address1(grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_BIAS_STATS_fu_330_void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_7_address1),
-    .void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_7_ce1(grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_BIAS_STATS_fu_330_void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_7_ce1),
+    .void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_7_address0(grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_250_void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_7_address0),
+    .void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_7_ce0(grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_250_void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_7_ce0),
+    .void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_7_we0(grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_250_void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_7_we0),
+    .void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_7_d0(grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_250_void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_7_d0),
+    .void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_7_address1(grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_250_void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_7_address1),
+    .void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_7_ce1(grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_250_void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_7_ce1),
     .void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_7_q1(void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_7_q1),
-    .void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_6_address0(grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_BIAS_STATS_fu_330_void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_6_address0),
-    .void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_6_ce0(grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_BIAS_STATS_fu_330_void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_6_ce0),
-    .void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_6_we0(grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_BIAS_STATS_fu_330_void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_6_we0),
-    .void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_6_d0(grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_BIAS_STATS_fu_330_void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_6_d0),
-    .void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_6_address1(grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_BIAS_STATS_fu_330_void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_6_address1),
-    .void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_6_ce1(grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_BIAS_STATS_fu_330_void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_6_ce1),
+    .void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_6_address0(grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_250_void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_6_address0),
+    .void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_6_ce0(grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_250_void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_6_ce0),
+    .void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_6_we0(grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_250_void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_6_we0),
+    .void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_6_d0(grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_250_void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_6_d0),
+    .void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_6_address1(grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_250_void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_6_address1),
+    .void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_6_ce1(grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_250_void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_6_ce1),
     .void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_6_q1(void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_6_q1),
-    .void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_5_address0(grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_BIAS_STATS_fu_330_void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_5_address0),
-    .void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_5_ce0(grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_BIAS_STATS_fu_330_void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_5_ce0),
-    .void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_5_we0(grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_BIAS_STATS_fu_330_void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_5_we0),
-    .void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_5_d0(grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_BIAS_STATS_fu_330_void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_5_d0),
-    .void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_5_address1(grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_BIAS_STATS_fu_330_void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_5_address1),
-    .void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_5_ce1(grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_BIAS_STATS_fu_330_void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_5_ce1),
+    .void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_5_address0(grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_250_void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_5_address0),
+    .void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_5_ce0(grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_250_void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_5_ce0),
+    .void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_5_we0(grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_250_void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_5_we0),
+    .void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_5_d0(grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_250_void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_5_d0),
+    .void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_5_address1(grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_250_void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_5_address1),
+    .void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_5_ce1(grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_250_void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_5_ce1),
     .void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_5_q1(void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_5_q1),
-    .void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_4_address0(grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_BIAS_STATS_fu_330_void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_4_address0),
-    .void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_4_ce0(grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_BIAS_STATS_fu_330_void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_4_ce0),
-    .void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_4_we0(grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_BIAS_STATS_fu_330_void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_4_we0),
-    .void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_4_d0(grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_BIAS_STATS_fu_330_void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_4_d0),
-    .void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_4_address1(grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_BIAS_STATS_fu_330_void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_4_address1),
-    .void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_4_ce1(grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_BIAS_STATS_fu_330_void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_4_ce1),
+    .void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_4_address0(grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_250_void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_4_address0),
+    .void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_4_ce0(grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_250_void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_4_ce0),
+    .void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_4_we0(grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_250_void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_4_we0),
+    .void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_4_d0(grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_250_void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_4_d0),
+    .void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_4_address1(grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_250_void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_4_address1),
+    .void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_4_ce1(grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_250_void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_4_ce1),
     .void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_4_q1(void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_4_q1),
-    .void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_3_address0(grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_BIAS_STATS_fu_330_void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_3_address0),
-    .void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_3_ce0(grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_BIAS_STATS_fu_330_void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_3_ce0),
-    .void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_3_we0(grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_BIAS_STATS_fu_330_void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_3_we0),
-    .void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_3_d0(grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_BIAS_STATS_fu_330_void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_3_d0),
-    .void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_3_address1(grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_BIAS_STATS_fu_330_void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_3_address1),
-    .void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_3_ce1(grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_BIAS_STATS_fu_330_void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_3_ce1),
+    .void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_3_address0(grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_250_void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_3_address0),
+    .void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_3_ce0(grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_250_void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_3_ce0),
+    .void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_3_we0(grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_250_void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_3_we0),
+    .void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_3_d0(grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_250_void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_3_d0),
+    .void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_3_address1(grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_250_void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_3_address1),
+    .void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_3_ce1(grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_250_void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_3_ce1),
     .void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_3_q1(void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_3_q1),
-    .void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_2_address0(grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_BIAS_STATS_fu_330_void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_2_address0),
-    .void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_2_ce0(grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_BIAS_STATS_fu_330_void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_2_ce0),
-    .void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_2_we0(grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_BIAS_STATS_fu_330_void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_2_we0),
-    .void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_2_d0(grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_BIAS_STATS_fu_330_void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_2_d0),
-    .void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_2_address1(grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_BIAS_STATS_fu_330_void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_2_address1),
-    .void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_2_ce1(grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_BIAS_STATS_fu_330_void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_2_ce1),
+    .void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_2_address0(grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_250_void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_2_address0),
+    .void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_2_ce0(grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_250_void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_2_ce0),
+    .void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_2_we0(grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_250_void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_2_we0),
+    .void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_2_d0(grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_250_void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_2_d0),
+    .void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_2_address1(grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_250_void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_2_address1),
+    .void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_2_ce1(grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_250_void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_2_ce1),
     .void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_2_q1(void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_2_q1),
-    .void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_1_address0(grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_BIAS_STATS_fu_330_void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_1_address0),
-    .void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_1_ce0(grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_BIAS_STATS_fu_330_void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_1_ce0),
-    .void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_1_we0(grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_BIAS_STATS_fu_330_void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_1_we0),
-    .void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_1_d0(grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_BIAS_STATS_fu_330_void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_1_d0),
-    .void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_1_address1(grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_BIAS_STATS_fu_330_void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_1_address1),
-    .void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_1_ce1(grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_BIAS_STATS_fu_330_void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_1_ce1),
+    .void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_1_address0(grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_250_void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_1_address0),
+    .void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_1_ce0(grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_250_void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_1_ce0),
+    .void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_1_we0(grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_250_void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_1_we0),
+    .void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_1_d0(grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_250_void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_1_d0),
+    .void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_1_address1(grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_250_void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_1_address1),
+    .void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_1_ce1(grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_250_void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_1_ce1),
     .void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_1_q1(void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_1_q1),
-    .void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_address0(grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_BIAS_STATS_fu_330_void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_address0),
-    .void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_ce0(grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_BIAS_STATS_fu_330_void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_ce0),
-    .void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_we0(grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_BIAS_STATS_fu_330_void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_we0),
-    .void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_d0(grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_BIAS_STATS_fu_330_void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_d0),
-    .void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_address1(grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_BIAS_STATS_fu_330_void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_address1),
-    .void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_ce1(grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_BIAS_STATS_fu_330_void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_ce1),
+    .void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_address0(grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_250_void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_address0),
+    .void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_ce0(grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_250_void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_ce0),
+    .void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_we0(grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_250_void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_we0),
+    .void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_d0(grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_250_void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_d0),
+    .void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_address1(grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_250_void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_address1),
+    .void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_ce1(grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_250_void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_ce1),
     .void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_q1(void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_q1),
-    .p_ZZ16UpConv_Fused_RowILi8ELi32ELi32ELi480ELi240EEvP7ap_uintILi256EEPKS1_S4_S4_S4_5_address0(grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_BIAS_STATS_fu_330_p_ZZ16UpConv_Fused_RowILi8ELi32ELi32ELi480ELi240EEvP7ap_uintILi256EEPKS1_S4_S4_S4_5_address0),
-    .p_ZZ16UpConv_Fused_RowILi8ELi32ELi32ELi480ELi240EEvP7ap_uintILi256EEPKS1_S4_S4_S4_5_ce0(grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_BIAS_STATS_fu_330_p_ZZ16UpConv_Fused_RowILi8ELi32ELi32ELi480ELi240EEvP7ap_uintILi256EEPKS1_S4_S4_S4_5_ce0),
-    .p_ZZ16UpConv_Fused_RowILi8ELi32ELi32ELi480ELi240EEvP7ap_uintILi256EEPKS1_S4_S4_S4_5_we0(grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_BIAS_STATS_fu_330_p_ZZ16UpConv_Fused_RowILi8ELi32ELi32ELi480ELi240EEvP7ap_uintILi256EEPKS1_S4_S4_S4_5_we0),
-    .p_ZZ16UpConv_Fused_RowILi8ELi32ELi32ELi480ELi240EEvP7ap_uintILi256EEPKS1_S4_S4_S4_5_d0(grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_BIAS_STATS_fu_330_p_ZZ16UpConv_Fused_RowILi8ELi32ELi32ELi480ELi240EEvP7ap_uintILi256EEPKS1_S4_S4_S4_5_d0),
-    .p_ZZ16UpConv_Fused_RowILi8ELi32ELi32ELi480ELi240EEvP7ap_uintILi256EEPKS1_S4_S4_S4_5_address1(grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_BIAS_STATS_fu_330_p_ZZ16UpConv_Fused_RowILi8ELi32ELi32ELi480ELi240EEvP7ap_uintILi256EEPKS1_S4_S4_S4_5_address1),
-    .p_ZZ16UpConv_Fused_RowILi8ELi32ELi32ELi480ELi240EEvP7ap_uintILi256EEPKS1_S4_S4_S4_5_ce1(grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_BIAS_STATS_fu_330_p_ZZ16UpConv_Fused_RowILi8ELi32ELi32ELi480ELi240EEvP7ap_uintILi256EEPKS1_S4_S4_S4_5_ce1),
+    .p_ZZ16UpConv_Fused_RowILi8ELi32ELi32ELi480ELi240EEvP7ap_uintILi256EEPKS1_S4_S4_S4_5_address0(grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_250_p_ZZ16UpConv_Fused_RowILi8ELi32ELi32ELi480ELi240EEvP7ap_uintILi256EEPKS1_S4_S4_S4_5_address0),
+    .p_ZZ16UpConv_Fused_RowILi8ELi32ELi32ELi480ELi240EEvP7ap_uintILi256EEPKS1_S4_S4_S4_5_ce0(grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_250_p_ZZ16UpConv_Fused_RowILi8ELi32ELi32ELi480ELi240EEvP7ap_uintILi256EEPKS1_S4_S4_S4_5_ce0),
+    .p_ZZ16UpConv_Fused_RowILi8ELi32ELi32ELi480ELi240EEvP7ap_uintILi256EEPKS1_S4_S4_S4_5_we0(grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_250_p_ZZ16UpConv_Fused_RowILi8ELi32ELi32ELi480ELi240EEvP7ap_uintILi256EEPKS1_S4_S4_S4_5_we0),
+    .p_ZZ16UpConv_Fused_RowILi8ELi32ELi32ELi480ELi240EEvP7ap_uintILi256EEPKS1_S4_S4_S4_5_d0(grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_250_p_ZZ16UpConv_Fused_RowILi8ELi32ELi32ELi480ELi240EEvP7ap_uintILi256EEPKS1_S4_S4_S4_5_d0),
+    .p_ZZ16UpConv_Fused_RowILi8ELi32ELi32ELi480ELi240EEvP7ap_uintILi256EEPKS1_S4_S4_S4_5_address1(grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_250_p_ZZ16UpConv_Fused_RowILi8ELi32ELi32ELi480ELi240EEvP7ap_uintILi256EEPKS1_S4_S4_S4_5_address1),
+    .p_ZZ16UpConv_Fused_RowILi8ELi32ELi32ELi480ELi240EEvP7ap_uintILi256EEPKS1_S4_S4_S4_5_ce1(grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_250_p_ZZ16UpConv_Fused_RowILi8ELi32ELi32ELi480ELi240EEvP7ap_uintILi256EEPKS1_S4_S4_S4_5_ce1),
     .p_ZZ16UpConv_Fused_RowILi8ELi32ELi32ELi480ELi240EEvP7ap_uintILi256EEPKS1_S4_S4_S4_5_q1(p_ZZ16UpConv_Fused_RowILi8ELi32ELi32ELi480ELi240EEvP7ap_uintILi256EEPKS1_S4_S4_S4_5_q1),
-    .p_ZZ16UpConv_Fused_RowILi8ELi32ELi32ELi480ELi240EEvP7ap_uintILi256EEPKS1_S4_S4_S4_4_address0(grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_BIAS_STATS_fu_330_p_ZZ16UpConv_Fused_RowILi8ELi32ELi32ELi480ELi240EEvP7ap_uintILi256EEPKS1_S4_S4_S4_4_address0),
-    .p_ZZ16UpConv_Fused_RowILi8ELi32ELi32ELi480ELi240EEvP7ap_uintILi256EEPKS1_S4_S4_S4_4_ce0(grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_BIAS_STATS_fu_330_p_ZZ16UpConv_Fused_RowILi8ELi32ELi32ELi480ELi240EEvP7ap_uintILi256EEPKS1_S4_S4_S4_4_ce0),
-    .p_ZZ16UpConv_Fused_RowILi8ELi32ELi32ELi480ELi240EEvP7ap_uintILi256EEPKS1_S4_S4_S4_4_we0(grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_BIAS_STATS_fu_330_p_ZZ16UpConv_Fused_RowILi8ELi32ELi32ELi480ELi240EEvP7ap_uintILi256EEPKS1_S4_S4_S4_4_we0),
-    .p_ZZ16UpConv_Fused_RowILi8ELi32ELi32ELi480ELi240EEvP7ap_uintILi256EEPKS1_S4_S4_S4_4_d0(grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_BIAS_STATS_fu_330_p_ZZ16UpConv_Fused_RowILi8ELi32ELi32ELi480ELi240EEvP7ap_uintILi256EEPKS1_S4_S4_S4_4_d0),
-    .p_ZZ16UpConv_Fused_RowILi8ELi32ELi32ELi480ELi240EEvP7ap_uintILi256EEPKS1_S4_S4_S4_4_address1(grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_BIAS_STATS_fu_330_p_ZZ16UpConv_Fused_RowILi8ELi32ELi32ELi480ELi240EEvP7ap_uintILi256EEPKS1_S4_S4_S4_4_address1),
-    .p_ZZ16UpConv_Fused_RowILi8ELi32ELi32ELi480ELi240EEvP7ap_uintILi256EEPKS1_S4_S4_S4_4_ce1(grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_BIAS_STATS_fu_330_p_ZZ16UpConv_Fused_RowILi8ELi32ELi32ELi480ELi240EEvP7ap_uintILi256EEPKS1_S4_S4_S4_4_ce1),
+    .p_ZZ16UpConv_Fused_RowILi8ELi32ELi32ELi480ELi240EEvP7ap_uintILi256EEPKS1_S4_S4_S4_4_address0(grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_250_p_ZZ16UpConv_Fused_RowILi8ELi32ELi32ELi480ELi240EEvP7ap_uintILi256EEPKS1_S4_S4_S4_4_address0),
+    .p_ZZ16UpConv_Fused_RowILi8ELi32ELi32ELi480ELi240EEvP7ap_uintILi256EEPKS1_S4_S4_S4_4_ce0(grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_250_p_ZZ16UpConv_Fused_RowILi8ELi32ELi32ELi480ELi240EEvP7ap_uintILi256EEPKS1_S4_S4_S4_4_ce0),
+    .p_ZZ16UpConv_Fused_RowILi8ELi32ELi32ELi480ELi240EEvP7ap_uintILi256EEPKS1_S4_S4_S4_4_we0(grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_250_p_ZZ16UpConv_Fused_RowILi8ELi32ELi32ELi480ELi240EEvP7ap_uintILi256EEPKS1_S4_S4_S4_4_we0),
+    .p_ZZ16UpConv_Fused_RowILi8ELi32ELi32ELi480ELi240EEvP7ap_uintILi256EEPKS1_S4_S4_S4_4_d0(grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_250_p_ZZ16UpConv_Fused_RowILi8ELi32ELi32ELi480ELi240EEvP7ap_uintILi256EEPKS1_S4_S4_S4_4_d0),
+    .p_ZZ16UpConv_Fused_RowILi8ELi32ELi32ELi480ELi240EEvP7ap_uintILi256EEPKS1_S4_S4_S4_4_address1(grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_250_p_ZZ16UpConv_Fused_RowILi8ELi32ELi32ELi480ELi240EEvP7ap_uintILi256EEPKS1_S4_S4_S4_4_address1),
+    .p_ZZ16UpConv_Fused_RowILi8ELi32ELi32ELi480ELi240EEvP7ap_uintILi256EEPKS1_S4_S4_S4_4_ce1(grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_250_p_ZZ16UpConv_Fused_RowILi8ELi32ELi32ELi480ELi240EEvP7ap_uintILi256EEPKS1_S4_S4_S4_4_ce1),
     .p_ZZ16UpConv_Fused_RowILi8ELi32ELi32ELi480ELi240EEvP7ap_uintILi256EEPKS1_S4_S4_S4_4_q1(p_ZZ16UpConv_Fused_RowILi8ELi32ELi32ELi480ELi240EEvP7ap_uintILi256EEPKS1_S4_S4_S4_4_q1),
-    .p_ZZ16UpConv_Fused_RowILi8ELi32ELi32ELi480ELi240EEvP7ap_uintILi256EEPKS1_S4_S4_S4_3_address0(grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_BIAS_STATS_fu_330_p_ZZ16UpConv_Fused_RowILi8ELi32ELi32ELi480ELi240EEvP7ap_uintILi256EEPKS1_S4_S4_S4_3_address0),
-    .p_ZZ16UpConv_Fused_RowILi8ELi32ELi32ELi480ELi240EEvP7ap_uintILi256EEPKS1_S4_S4_S4_3_ce0(grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_BIAS_STATS_fu_330_p_ZZ16UpConv_Fused_RowILi8ELi32ELi32ELi480ELi240EEvP7ap_uintILi256EEPKS1_S4_S4_S4_3_ce0),
-    .p_ZZ16UpConv_Fused_RowILi8ELi32ELi32ELi480ELi240EEvP7ap_uintILi256EEPKS1_S4_S4_S4_3_we0(grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_BIAS_STATS_fu_330_p_ZZ16UpConv_Fused_RowILi8ELi32ELi32ELi480ELi240EEvP7ap_uintILi256EEPKS1_S4_S4_S4_3_we0),
-    .p_ZZ16UpConv_Fused_RowILi8ELi32ELi32ELi480ELi240EEvP7ap_uintILi256EEPKS1_S4_S4_S4_3_d0(grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_BIAS_STATS_fu_330_p_ZZ16UpConv_Fused_RowILi8ELi32ELi32ELi480ELi240EEvP7ap_uintILi256EEPKS1_S4_S4_S4_3_d0),
-    .p_ZZ16UpConv_Fused_RowILi8ELi32ELi32ELi480ELi240EEvP7ap_uintILi256EEPKS1_S4_S4_S4_3_address1(grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_BIAS_STATS_fu_330_p_ZZ16UpConv_Fused_RowILi8ELi32ELi32ELi480ELi240EEvP7ap_uintILi256EEPKS1_S4_S4_S4_3_address1),
-    .p_ZZ16UpConv_Fused_RowILi8ELi32ELi32ELi480ELi240EEvP7ap_uintILi256EEPKS1_S4_S4_S4_3_ce1(grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_BIAS_STATS_fu_330_p_ZZ16UpConv_Fused_RowILi8ELi32ELi32ELi480ELi240EEvP7ap_uintILi256EEPKS1_S4_S4_S4_3_ce1),
+    .p_ZZ16UpConv_Fused_RowILi8ELi32ELi32ELi480ELi240EEvP7ap_uintILi256EEPKS1_S4_S4_S4_3_address0(grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_250_p_ZZ16UpConv_Fused_RowILi8ELi32ELi32ELi480ELi240EEvP7ap_uintILi256EEPKS1_S4_S4_S4_3_address0),
+    .p_ZZ16UpConv_Fused_RowILi8ELi32ELi32ELi480ELi240EEvP7ap_uintILi256EEPKS1_S4_S4_S4_3_ce0(grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_250_p_ZZ16UpConv_Fused_RowILi8ELi32ELi32ELi480ELi240EEvP7ap_uintILi256EEPKS1_S4_S4_S4_3_ce0),
+    .p_ZZ16UpConv_Fused_RowILi8ELi32ELi32ELi480ELi240EEvP7ap_uintILi256EEPKS1_S4_S4_S4_3_we0(grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_250_p_ZZ16UpConv_Fused_RowILi8ELi32ELi32ELi480ELi240EEvP7ap_uintILi256EEPKS1_S4_S4_S4_3_we0),
+    .p_ZZ16UpConv_Fused_RowILi8ELi32ELi32ELi480ELi240EEvP7ap_uintILi256EEPKS1_S4_S4_S4_3_d0(grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_250_p_ZZ16UpConv_Fused_RowILi8ELi32ELi32ELi480ELi240EEvP7ap_uintILi256EEPKS1_S4_S4_S4_3_d0),
+    .p_ZZ16UpConv_Fused_RowILi8ELi32ELi32ELi480ELi240EEvP7ap_uintILi256EEPKS1_S4_S4_S4_3_address1(grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_250_p_ZZ16UpConv_Fused_RowILi8ELi32ELi32ELi480ELi240EEvP7ap_uintILi256EEPKS1_S4_S4_S4_3_address1),
+    .p_ZZ16UpConv_Fused_RowILi8ELi32ELi32ELi480ELi240EEvP7ap_uintILi256EEPKS1_S4_S4_S4_3_ce1(grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_250_p_ZZ16UpConv_Fused_RowILi8ELi32ELi32ELi480ELi240EEvP7ap_uintILi256EEPKS1_S4_S4_S4_3_ce1),
     .p_ZZ16UpConv_Fused_RowILi8ELi32ELi32ELi480ELi240EEvP7ap_uintILi256EEPKS1_S4_S4_S4_3_q1(p_ZZ16UpConv_Fused_RowILi8ELi32ELi32ELi480ELi240EEvP7ap_uintILi256EEPKS1_S4_S4_S4_3_q1),
-    .p_ZZ16UpConv_Fused_RowILi8ELi32ELi32ELi480ELi240EEvP7ap_uintILi256EEPKS1_S4_S4_S4_2_address0(grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_BIAS_STATS_fu_330_p_ZZ16UpConv_Fused_RowILi8ELi32ELi32ELi480ELi240EEvP7ap_uintILi256EEPKS1_S4_S4_S4_2_address0),
-    .p_ZZ16UpConv_Fused_RowILi8ELi32ELi32ELi480ELi240EEvP7ap_uintILi256EEPKS1_S4_S4_S4_2_ce0(grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_BIAS_STATS_fu_330_p_ZZ16UpConv_Fused_RowILi8ELi32ELi32ELi480ELi240EEvP7ap_uintILi256EEPKS1_S4_S4_S4_2_ce0),
-    .p_ZZ16UpConv_Fused_RowILi8ELi32ELi32ELi480ELi240EEvP7ap_uintILi256EEPKS1_S4_S4_S4_2_we0(grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_BIAS_STATS_fu_330_p_ZZ16UpConv_Fused_RowILi8ELi32ELi32ELi480ELi240EEvP7ap_uintILi256EEPKS1_S4_S4_S4_2_we0),
-    .p_ZZ16UpConv_Fused_RowILi8ELi32ELi32ELi480ELi240EEvP7ap_uintILi256EEPKS1_S4_S4_S4_2_d0(grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_BIAS_STATS_fu_330_p_ZZ16UpConv_Fused_RowILi8ELi32ELi32ELi480ELi240EEvP7ap_uintILi256EEPKS1_S4_S4_S4_2_d0),
-    .p_ZZ16UpConv_Fused_RowILi8ELi32ELi32ELi480ELi240EEvP7ap_uintILi256EEPKS1_S4_S4_S4_2_address1(grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_BIAS_STATS_fu_330_p_ZZ16UpConv_Fused_RowILi8ELi32ELi32ELi480ELi240EEvP7ap_uintILi256EEPKS1_S4_S4_S4_2_address1),
-    .p_ZZ16UpConv_Fused_RowILi8ELi32ELi32ELi480ELi240EEvP7ap_uintILi256EEPKS1_S4_S4_S4_2_ce1(grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_BIAS_STATS_fu_330_p_ZZ16UpConv_Fused_RowILi8ELi32ELi32ELi480ELi240EEvP7ap_uintILi256EEPKS1_S4_S4_S4_2_ce1),
+    .p_ZZ16UpConv_Fused_RowILi8ELi32ELi32ELi480ELi240EEvP7ap_uintILi256EEPKS1_S4_S4_S4_2_address0(grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_250_p_ZZ16UpConv_Fused_RowILi8ELi32ELi32ELi480ELi240EEvP7ap_uintILi256EEPKS1_S4_S4_S4_2_address0),
+    .p_ZZ16UpConv_Fused_RowILi8ELi32ELi32ELi480ELi240EEvP7ap_uintILi256EEPKS1_S4_S4_S4_2_ce0(grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_250_p_ZZ16UpConv_Fused_RowILi8ELi32ELi32ELi480ELi240EEvP7ap_uintILi256EEPKS1_S4_S4_S4_2_ce0),
+    .p_ZZ16UpConv_Fused_RowILi8ELi32ELi32ELi480ELi240EEvP7ap_uintILi256EEPKS1_S4_S4_S4_2_we0(grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_250_p_ZZ16UpConv_Fused_RowILi8ELi32ELi32ELi480ELi240EEvP7ap_uintILi256EEPKS1_S4_S4_S4_2_we0),
+    .p_ZZ16UpConv_Fused_RowILi8ELi32ELi32ELi480ELi240EEvP7ap_uintILi256EEPKS1_S4_S4_S4_2_d0(grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_250_p_ZZ16UpConv_Fused_RowILi8ELi32ELi32ELi480ELi240EEvP7ap_uintILi256EEPKS1_S4_S4_S4_2_d0),
+    .p_ZZ16UpConv_Fused_RowILi8ELi32ELi32ELi480ELi240EEvP7ap_uintILi256EEPKS1_S4_S4_S4_2_address1(grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_250_p_ZZ16UpConv_Fused_RowILi8ELi32ELi32ELi480ELi240EEvP7ap_uintILi256EEPKS1_S4_S4_S4_2_address1),
+    .p_ZZ16UpConv_Fused_RowILi8ELi32ELi32ELi480ELi240EEvP7ap_uintILi256EEPKS1_S4_S4_S4_2_ce1(grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_250_p_ZZ16UpConv_Fused_RowILi8ELi32ELi32ELi480ELi240EEvP7ap_uintILi256EEPKS1_S4_S4_S4_2_ce1),
     .p_ZZ16UpConv_Fused_RowILi8ELi32ELi32ELi480ELi240EEvP7ap_uintILi256EEPKS1_S4_S4_S4_2_q1(p_ZZ16UpConv_Fused_RowILi8ELi32ELi32ELi480ELi240EEvP7ap_uintILi256EEPKS1_S4_S4_S4_2_q1),
-    .p_ZZ16UpConv_Fused_RowILi8ELi32ELi32ELi480ELi240EEvP7ap_uintILi256EEPKS1_S4_S4_S4_1_address0(grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_BIAS_STATS_fu_330_p_ZZ16UpConv_Fused_RowILi8ELi32ELi32ELi480ELi240EEvP7ap_uintILi256EEPKS1_S4_S4_S4_1_address0),
-    .p_ZZ16UpConv_Fused_RowILi8ELi32ELi32ELi480ELi240EEvP7ap_uintILi256EEPKS1_S4_S4_S4_1_ce0(grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_BIAS_STATS_fu_330_p_ZZ16UpConv_Fused_RowILi8ELi32ELi32ELi480ELi240EEvP7ap_uintILi256EEPKS1_S4_S4_S4_1_ce0),
-    .p_ZZ16UpConv_Fused_RowILi8ELi32ELi32ELi480ELi240EEvP7ap_uintILi256EEPKS1_S4_S4_S4_1_we0(grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_BIAS_STATS_fu_330_p_ZZ16UpConv_Fused_RowILi8ELi32ELi32ELi480ELi240EEvP7ap_uintILi256EEPKS1_S4_S4_S4_1_we0),
-    .p_ZZ16UpConv_Fused_RowILi8ELi32ELi32ELi480ELi240EEvP7ap_uintILi256EEPKS1_S4_S4_S4_1_d0(grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_BIAS_STATS_fu_330_p_ZZ16UpConv_Fused_RowILi8ELi32ELi32ELi480ELi240EEvP7ap_uintILi256EEPKS1_S4_S4_S4_1_d0),
-    .p_ZZ16UpConv_Fused_RowILi8ELi32ELi32ELi480ELi240EEvP7ap_uintILi256EEPKS1_S4_S4_S4_1_address1(grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_BIAS_STATS_fu_330_p_ZZ16UpConv_Fused_RowILi8ELi32ELi32ELi480ELi240EEvP7ap_uintILi256EEPKS1_S4_S4_S4_1_address1),
-    .p_ZZ16UpConv_Fused_RowILi8ELi32ELi32ELi480ELi240EEvP7ap_uintILi256EEPKS1_S4_S4_S4_1_ce1(grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_BIAS_STATS_fu_330_p_ZZ16UpConv_Fused_RowILi8ELi32ELi32ELi480ELi240EEvP7ap_uintILi256EEPKS1_S4_S4_S4_1_ce1),
+    .p_ZZ16UpConv_Fused_RowILi8ELi32ELi32ELi480ELi240EEvP7ap_uintILi256EEPKS1_S4_S4_S4_1_address0(grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_250_p_ZZ16UpConv_Fused_RowILi8ELi32ELi32ELi480ELi240EEvP7ap_uintILi256EEPKS1_S4_S4_S4_1_address0),
+    .p_ZZ16UpConv_Fused_RowILi8ELi32ELi32ELi480ELi240EEvP7ap_uintILi256EEPKS1_S4_S4_S4_1_ce0(grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_250_p_ZZ16UpConv_Fused_RowILi8ELi32ELi32ELi480ELi240EEvP7ap_uintILi256EEPKS1_S4_S4_S4_1_ce0),
+    .p_ZZ16UpConv_Fused_RowILi8ELi32ELi32ELi480ELi240EEvP7ap_uintILi256EEPKS1_S4_S4_S4_1_we0(grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_250_p_ZZ16UpConv_Fused_RowILi8ELi32ELi32ELi480ELi240EEvP7ap_uintILi256EEPKS1_S4_S4_S4_1_we0),
+    .p_ZZ16UpConv_Fused_RowILi8ELi32ELi32ELi480ELi240EEvP7ap_uintILi256EEPKS1_S4_S4_S4_1_d0(grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_250_p_ZZ16UpConv_Fused_RowILi8ELi32ELi32ELi480ELi240EEvP7ap_uintILi256EEPKS1_S4_S4_S4_1_d0),
+    .p_ZZ16UpConv_Fused_RowILi8ELi32ELi32ELi480ELi240EEvP7ap_uintILi256EEPKS1_S4_S4_S4_1_address1(grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_250_p_ZZ16UpConv_Fused_RowILi8ELi32ELi32ELi480ELi240EEvP7ap_uintILi256EEPKS1_S4_S4_S4_1_address1),
+    .p_ZZ16UpConv_Fused_RowILi8ELi32ELi32ELi480ELi240EEvP7ap_uintILi256EEPKS1_S4_S4_S4_1_ce1(grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_250_p_ZZ16UpConv_Fused_RowILi8ELi32ELi32ELi480ELi240EEvP7ap_uintILi256EEPKS1_S4_S4_S4_1_ce1),
     .p_ZZ16UpConv_Fused_RowILi8ELi32ELi32ELi480ELi240EEvP7ap_uintILi256EEPKS1_S4_S4_S4_1_q1(p_ZZ16UpConv_Fused_RowILi8ELi32ELi32ELi480ELi240EEvP7ap_uintILi256EEPKS1_S4_S4_S4_1_q1),
-    .p_ZZ16UpConv_Fused_RowILi8ELi32ELi32ELi480ELi240EEvP7ap_uintILi256EEPKS1_S4_S4_S4_address0(grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_BIAS_STATS_fu_330_p_ZZ16UpConv_Fused_RowILi8ELi32ELi32ELi480ELi240EEvP7ap_uintILi256EEPKS1_S4_S4_S4_address0),
-    .p_ZZ16UpConv_Fused_RowILi8ELi32ELi32ELi480ELi240EEvP7ap_uintILi256EEPKS1_S4_S4_S4_ce0(grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_BIAS_STATS_fu_330_p_ZZ16UpConv_Fused_RowILi8ELi32ELi32ELi480ELi240EEvP7ap_uintILi256EEPKS1_S4_S4_S4_ce0),
-    .p_ZZ16UpConv_Fused_RowILi8ELi32ELi32ELi480ELi240EEvP7ap_uintILi256EEPKS1_S4_S4_S4_we0(grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_BIAS_STATS_fu_330_p_ZZ16UpConv_Fused_RowILi8ELi32ELi32ELi480ELi240EEvP7ap_uintILi256EEPKS1_S4_S4_S4_we0),
-    .p_ZZ16UpConv_Fused_RowILi8ELi32ELi32ELi480ELi240EEvP7ap_uintILi256EEPKS1_S4_S4_S4_d0(grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_BIAS_STATS_fu_330_p_ZZ16UpConv_Fused_RowILi8ELi32ELi32ELi480ELi240EEvP7ap_uintILi256EEPKS1_S4_S4_S4_d0),
-    .p_ZZ16UpConv_Fused_RowILi8ELi32ELi32ELi480ELi240EEvP7ap_uintILi256EEPKS1_S4_S4_S4_address1(grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_BIAS_STATS_fu_330_p_ZZ16UpConv_Fused_RowILi8ELi32ELi32ELi480ELi240EEvP7ap_uintILi256EEPKS1_S4_S4_S4_address1),
-    .p_ZZ16UpConv_Fused_RowILi8ELi32ELi32ELi480ELi240EEvP7ap_uintILi256EEPKS1_S4_S4_S4_ce1(grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_BIAS_STATS_fu_330_p_ZZ16UpConv_Fused_RowILi8ELi32ELi32ELi480ELi240EEvP7ap_uintILi256EEPKS1_S4_S4_S4_ce1),
+    .p_ZZ16UpConv_Fused_RowILi8ELi32ELi32ELi480ELi240EEvP7ap_uintILi256EEPKS1_S4_S4_S4_address0(grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_250_p_ZZ16UpConv_Fused_RowILi8ELi32ELi32ELi480ELi240EEvP7ap_uintILi256EEPKS1_S4_S4_S4_address0),
+    .p_ZZ16UpConv_Fused_RowILi8ELi32ELi32ELi480ELi240EEvP7ap_uintILi256EEPKS1_S4_S4_S4_ce0(grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_250_p_ZZ16UpConv_Fused_RowILi8ELi32ELi32ELi480ELi240EEvP7ap_uintILi256EEPKS1_S4_S4_S4_ce0),
+    .p_ZZ16UpConv_Fused_RowILi8ELi32ELi32ELi480ELi240EEvP7ap_uintILi256EEPKS1_S4_S4_S4_we0(grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_250_p_ZZ16UpConv_Fused_RowILi8ELi32ELi32ELi480ELi240EEvP7ap_uintILi256EEPKS1_S4_S4_S4_we0),
+    .p_ZZ16UpConv_Fused_RowILi8ELi32ELi32ELi480ELi240EEvP7ap_uintILi256EEPKS1_S4_S4_S4_d0(grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_250_p_ZZ16UpConv_Fused_RowILi8ELi32ELi32ELi480ELi240EEvP7ap_uintILi256EEPKS1_S4_S4_S4_d0),
+    .p_ZZ16UpConv_Fused_RowILi8ELi32ELi32ELi480ELi240EEvP7ap_uintILi256EEPKS1_S4_S4_S4_address1(grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_250_p_ZZ16UpConv_Fused_RowILi8ELi32ELi32ELi480ELi240EEvP7ap_uintILi256EEPKS1_S4_S4_S4_address1),
+    .p_ZZ16UpConv_Fused_RowILi8ELi32ELi32ELi480ELi240EEvP7ap_uintILi256EEPKS1_S4_S4_S4_ce1(grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_250_p_ZZ16UpConv_Fused_RowILi8ELi32ELi32ELi480ELi240EEvP7ap_uintILi256EEPKS1_S4_S4_S4_ce1),
     .p_ZZ16UpConv_Fused_RowILi8ELi32ELi32ELi480ELi240EEvP7ap_uintILi256EEPKS1_S4_S4_S4_q1(p_ZZ16UpConv_Fused_RowILi8ELi32ELi32ELi480ELi240EEvP7ap_uintILi256EEPKS1_S4_S4_S4_q1),
-    .grp_fu_418_p_din0(grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_BIAS_STATS_fu_330_grp_fu_418_p_din0),
-    .grp_fu_418_p_din1(grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_BIAS_STATS_fu_330_grp_fu_418_p_din1),
-    .grp_fu_418_p_dout0(grp_fu_418_p2),
-    .grp_fu_418_p_ce(grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_BIAS_STATS_fu_330_grp_fu_418_p_ce),
-    .grp_fu_437_p_din0(grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_BIAS_STATS_fu_330_grp_fu_437_p_din0),
-    .grp_fu_437_p_dout0(grp_fu_437_p1),
-    .grp_fu_437_p_ce(grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_BIAS_STATS_fu_330_grp_fu_437_p_ce),
-    .grp_fu_900_p_din0(grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_BIAS_STATS_fu_330_grp_fu_900_p_din0),
-    .grp_fu_900_p_din1(grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_BIAS_STATS_fu_330_grp_fu_900_p_din1),
-    .grp_fu_900_p_dout0(grp_fu_900_p2),
-    .grp_fu_900_p_ce(grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_BIAS_STATS_fu_330_grp_fu_900_p_ce)
+    .grp_fu_582_p_din0(grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_250_grp_fu_582_p_din0),
+    .grp_fu_582_p_din1(grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_250_grp_fu_582_p_din1),
+    .grp_fu_582_p_dout0(grp_fu_582_p2),
+    .grp_fu_582_p_ce(grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_250_grp_fu_582_p_ce),
+    .grp_fu_586_p_din0(grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_250_grp_fu_586_p_din0),
+    .grp_fu_586_p_din1(grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_250_grp_fu_586_p_din1),
+    .grp_fu_586_p_dout0(grp_fu_586_p2),
+    .grp_fu_586_p_ce(grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_250_grp_fu_586_p_ce),
+    .grp_fu_590_p_din0(grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_250_grp_fu_590_p_din0),
+    .grp_fu_590_p_din1(grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_250_grp_fu_590_p_din1),
+    .grp_fu_590_p_dout0(grp_fu_590_p2),
+    .grp_fu_590_p_ce(grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_250_grp_fu_590_p_ce),
+    .grp_fu_594_p_din0(grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_250_grp_fu_594_p_din0),
+    .grp_fu_594_p_din1(grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_250_grp_fu_594_p_din1),
+    .grp_fu_594_p_dout0(grp_fu_594_p2),
+    .grp_fu_594_p_ce(grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_250_grp_fu_594_p_ce),
+    .grp_fu_598_p_din0(grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_250_grp_fu_598_p_din0),
+    .grp_fu_598_p_din1(grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_250_grp_fu_598_p_din1),
+    .grp_fu_598_p_dout0(grp_fu_598_p2),
+    .grp_fu_598_p_ce(grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_250_grp_fu_598_p_ce),
+    .grp_fu_602_p_din0(grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_250_grp_fu_602_p_din0),
+    .grp_fu_602_p_din1(grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_250_grp_fu_602_p_din1),
+    .grp_fu_602_p_dout0(grp_fu_602_p2),
+    .grp_fu_602_p_ce(grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_250_grp_fu_602_p_ce),
+    .grp_fu_606_p_din0(grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_250_grp_fu_606_p_din0),
+    .grp_fu_606_p_din1(grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_250_grp_fu_606_p_din1),
+    .grp_fu_606_p_dout0(grp_fu_606_p2),
+    .grp_fu_606_p_ce(grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_250_grp_fu_606_p_ce),
+    .grp_fu_610_p_din0(grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_250_grp_fu_610_p_din0),
+    .grp_fu_610_p_din1(grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_250_grp_fu_610_p_din1),
+    .grp_fu_610_p_dout0(grp_fu_610_p2),
+    .grp_fu_610_p_ce(grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_250_grp_fu_610_p_ce),
+    .grp_fu_614_p_din0(grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_250_grp_fu_614_p_din0),
+    .grp_fu_614_p_din1(grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_250_grp_fu_614_p_din1),
+    .grp_fu_614_p_dout0(grp_fu_614_p2),
+    .grp_fu_614_p_ce(grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_250_grp_fu_614_p_ce),
+    .grp_fu_618_p_din0(grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_250_grp_fu_618_p_din0),
+    .grp_fu_618_p_din1(grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_250_grp_fu_618_p_din1),
+    .grp_fu_618_p_dout0(grp_fu_618_p2),
+    .grp_fu_618_p_ce(grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_250_grp_fu_618_p_ce),
+    .grp_fu_622_p_din0(grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_250_grp_fu_622_p_din0),
+    .grp_fu_622_p_din1(grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_250_grp_fu_622_p_din1),
+    .grp_fu_622_p_dout0(grp_fu_622_p2),
+    .grp_fu_622_p_ce(grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_250_grp_fu_622_p_ce),
+    .grp_fu_626_p_din0(grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_250_grp_fu_626_p_din0),
+    .grp_fu_626_p_din1(grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_250_grp_fu_626_p_din1),
+    .grp_fu_626_p_dout0(grp_fu_626_p2),
+    .grp_fu_626_p_ce(grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_250_grp_fu_626_p_ce),
+    .grp_fu_630_p_din0(grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_250_grp_fu_630_p_din0),
+    .grp_fu_630_p_din1(grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_250_grp_fu_630_p_din1),
+    .grp_fu_630_p_dout0(grp_fu_630_p2),
+    .grp_fu_630_p_ce(grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_250_grp_fu_630_p_ce),
+    .grp_fu_634_p_din0(grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_250_grp_fu_634_p_din0),
+    .grp_fu_634_p_din1(grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_250_grp_fu_634_p_din1),
+    .grp_fu_634_p_dout0(grp_fu_634_p2),
+    .grp_fu_634_p_ce(grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_250_grp_fu_634_p_ce),
+    .grp_fu_638_p_din0(grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_250_grp_fu_638_p_din0),
+    .grp_fu_638_p_din1(grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_250_grp_fu_638_p_din1),
+    .grp_fu_638_p_dout0(grp_fu_638_p2),
+    .grp_fu_638_p_ce(grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_250_grp_fu_638_p_ce),
+    .grp_fu_642_p_din0(grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_250_grp_fu_642_p_din0),
+    .grp_fu_642_p_din1(grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_250_grp_fu_642_p_din1),
+    .grp_fu_642_p_dout0(grp_fu_642_p2),
+    .grp_fu_642_p_ce(grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_250_grp_fu_642_p_ce),
+    .grp_fu_646_p_din0(grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_250_grp_fu_646_p_din0),
+    .grp_fu_646_p_din1(grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_250_grp_fu_646_p_din1),
+    .grp_fu_646_p_dout0(grp_fu_646_p2),
+    .grp_fu_646_p_ce(grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_250_grp_fu_646_p_ce),
+    .grp_fu_650_p_din0(grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_250_grp_fu_650_p_din0),
+    .grp_fu_650_p_din1(grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_250_grp_fu_650_p_din1),
+    .grp_fu_650_p_dout0(grp_fu_650_p2),
+    .grp_fu_650_p_ce(grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_250_grp_fu_650_p_ce),
+    .grp_fu_654_p_din0(grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_250_grp_fu_654_p_din0),
+    .grp_fu_654_p_din1(grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_250_grp_fu_654_p_din1),
+    .grp_fu_654_p_dout0(grp_fu_654_p2),
+    .grp_fu_654_p_ce(grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_250_grp_fu_654_p_ce),
+    .grp_fu_658_p_din0(grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_250_grp_fu_658_p_din0),
+    .grp_fu_658_p_din1(grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_250_grp_fu_658_p_din1),
+    .grp_fu_658_p_dout0(grp_fu_658_p2),
+    .grp_fu_658_p_ce(grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_250_grp_fu_658_p_ce),
+    .grp_fu_662_p_din0(grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_250_grp_fu_662_p_din0),
+    .grp_fu_662_p_din1(grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_250_grp_fu_662_p_din1),
+    .grp_fu_662_p_dout0(grp_fu_662_p2),
+    .grp_fu_662_p_ce(grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_250_grp_fu_662_p_ce),
+    .grp_fu_666_p_din0(grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_250_grp_fu_666_p_din0),
+    .grp_fu_666_p_din1(grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_250_grp_fu_666_p_din1),
+    .grp_fu_666_p_dout0(grp_fu_666_p2),
+    .grp_fu_666_p_ce(grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_250_grp_fu_666_p_ce),
+    .grp_fu_670_p_din0(grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_250_grp_fu_670_p_din0),
+    .grp_fu_670_p_din1(grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_250_grp_fu_670_p_din1),
+    .grp_fu_670_p_dout0(grp_fu_670_p2),
+    .grp_fu_670_p_ce(grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_250_grp_fu_670_p_ce),
+    .grp_fu_674_p_din0(grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_250_grp_fu_674_p_din0),
+    .grp_fu_674_p_din1(grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_250_grp_fu_674_p_din1),
+    .grp_fu_674_p_dout0(grp_fu_674_p2),
+    .grp_fu_674_p_ce(grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_250_grp_fu_674_p_ce),
+    .grp_fu_678_p_din0(grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_250_grp_fu_678_p_din0),
+    .grp_fu_678_p_din1(grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_250_grp_fu_678_p_din1),
+    .grp_fu_678_p_dout0(grp_fu_678_p2),
+    .grp_fu_678_p_ce(grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_250_grp_fu_678_p_ce),
+    .grp_fu_682_p_din0(grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_250_grp_fu_682_p_din0),
+    .grp_fu_682_p_din1(grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_250_grp_fu_682_p_din1),
+    .grp_fu_682_p_dout0(grp_fu_682_p2),
+    .grp_fu_682_p_ce(grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_250_grp_fu_682_p_ce),
+    .grp_fu_686_p_din0(grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_250_grp_fu_686_p_din0),
+    .grp_fu_686_p_din1(grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_250_grp_fu_686_p_din1),
+    .grp_fu_686_p_dout0(grp_fu_686_p2),
+    .grp_fu_686_p_ce(grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_250_grp_fu_686_p_ce),
+    .grp_fu_690_p_din0(grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_250_grp_fu_690_p_din0),
+    .grp_fu_690_p_din1(grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_250_grp_fu_690_p_din1),
+    .grp_fu_690_p_dout0(grp_fu_690_p2),
+    .grp_fu_690_p_ce(grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_250_grp_fu_690_p_ce),
+    .grp_fu_694_p_din0(grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_250_grp_fu_694_p_din0),
+    .grp_fu_694_p_din1(grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_250_grp_fu_694_p_din1),
+    .grp_fu_694_p_dout0(grp_fu_694_p2),
+    .grp_fu_694_p_ce(grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_250_grp_fu_694_p_ce),
+    .grp_fu_698_p_din0(grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_250_grp_fu_698_p_din0),
+    .grp_fu_698_p_din1(grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_250_grp_fu_698_p_din1),
+    .grp_fu_698_p_dout0(grp_fu_698_p2),
+    .grp_fu_698_p_ce(grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_250_grp_fu_698_p_ce),
+    .grp_fu_702_p_din0(grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_250_grp_fu_702_p_din0),
+    .grp_fu_702_p_din1(grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_250_grp_fu_702_p_din1),
+    .grp_fu_702_p_dout0(grp_fu_702_p2),
+    .grp_fu_702_p_ce(grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_250_grp_fu_702_p_ce),
+    .grp_fu_706_p_din0(grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_250_grp_fu_706_p_din0),
+    .grp_fu_706_p_din1(grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_250_grp_fu_706_p_din1),
+    .grp_fu_706_p_dout0(grp_fu_706_p2),
+    .grp_fu_706_p_ce(grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_250_grp_fu_706_p_ce),
+    .grp_fu_710_p_din0(grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_250_grp_fu_710_p_din0),
+    .grp_fu_710_p_din1(grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_250_grp_fu_710_p_din1),
+    .grp_fu_710_p_dout0(grp_fu_710_p2),
+    .grp_fu_710_p_ce(grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_250_grp_fu_710_p_ce),
+    .grp_fu_714_p_din0(grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_250_grp_fu_714_p_din0),
+    .grp_fu_714_p_din1(grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_250_grp_fu_714_p_din1),
+    .grp_fu_714_p_dout0(grp_fu_714_p2),
+    .grp_fu_714_p_ce(grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_250_grp_fu_714_p_ce),
+    .grp_fu_718_p_din0(grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_250_grp_fu_718_p_din0),
+    .grp_fu_718_p_din1(grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_250_grp_fu_718_p_din1),
+    .grp_fu_718_p_dout0(grp_fu_718_p2),
+    .grp_fu_718_p_ce(grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_250_grp_fu_718_p_ce),
+    .grp_fu_722_p_din0(grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_250_grp_fu_722_p_din0),
+    .grp_fu_722_p_din1(grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_250_grp_fu_722_p_din1),
+    .grp_fu_722_p_dout0(grp_fu_722_p2),
+    .grp_fu_722_p_ce(grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_250_grp_fu_722_p_ce),
+    .grp_fu_726_p_din0(grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_250_grp_fu_726_p_din0),
+    .grp_fu_726_p_din1(grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_250_grp_fu_726_p_din1),
+    .grp_fu_726_p_dout0(grp_fu_726_p2),
+    .grp_fu_726_p_ce(grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_250_grp_fu_726_p_ce),
+    .grp_fu_730_p_din0(grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_250_grp_fu_730_p_din0),
+    .grp_fu_730_p_din1(grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_250_grp_fu_730_p_din1),
+    .grp_fu_730_p_dout0(grp_fu_730_p2),
+    .grp_fu_730_p_ce(grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_250_grp_fu_730_p_ce),
+    .grp_fu_734_p_din0(grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_250_grp_fu_734_p_din0),
+    .grp_fu_734_p_din1(grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_250_grp_fu_734_p_din1),
+    .grp_fu_734_p_dout0(grp_fu_734_p2),
+    .grp_fu_734_p_ce(grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_250_grp_fu_734_p_ce),
+    .grp_fu_738_p_din0(grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_250_grp_fu_738_p_din0),
+    .grp_fu_738_p_din1(grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_250_grp_fu_738_p_din1),
+    .grp_fu_738_p_dout0(grp_fu_738_p2),
+    .grp_fu_738_p_ce(grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_250_grp_fu_738_p_ce),
+    .grp_fu_742_p_din0(grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_250_grp_fu_742_p_din0),
+    .grp_fu_742_p_din1(grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_250_grp_fu_742_p_din1),
+    .grp_fu_742_p_dout0(grp_fu_742_p2),
+    .grp_fu_742_p_ce(grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_250_grp_fu_742_p_ce),
+    .grp_fu_746_p_din0(grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_250_grp_fu_746_p_din0),
+    .grp_fu_746_p_din1(grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_250_grp_fu_746_p_din1),
+    .grp_fu_746_p_dout0(grp_fu_746_p2),
+    .grp_fu_746_p_ce(grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_250_grp_fu_746_p_ce),
+    .grp_fu_750_p_din0(grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_250_grp_fu_750_p_din0),
+    .grp_fu_750_p_din1(grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_250_grp_fu_750_p_din1),
+    .grp_fu_750_p_dout0(grp_fu_750_p2),
+    .grp_fu_750_p_ce(grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_250_grp_fu_750_p_ce),
+    .grp_fu_754_p_din0(grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_250_grp_fu_754_p_din0),
+    .grp_fu_754_p_din1(grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_250_grp_fu_754_p_din1),
+    .grp_fu_754_p_dout0(grp_fu_754_p2),
+    .grp_fu_754_p_ce(grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_250_grp_fu_754_p_ce),
+    .grp_fu_758_p_din0(grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_250_grp_fu_758_p_din0),
+    .grp_fu_758_p_din1(grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_250_grp_fu_758_p_din1),
+    .grp_fu_758_p_dout0(grp_fu_758_p2),
+    .grp_fu_758_p_ce(grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_250_grp_fu_758_p_ce),
+    .grp_fu_762_p_din0(grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_250_grp_fu_762_p_din0),
+    .grp_fu_762_p_din1(grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_250_grp_fu_762_p_din1),
+    .grp_fu_762_p_dout0(grp_fu_762_p2),
+    .grp_fu_762_p_ce(grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_250_grp_fu_762_p_ce),
+    .grp_fu_766_p_din0(grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_250_grp_fu_766_p_din0),
+    .grp_fu_766_p_din1(grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_250_grp_fu_766_p_din1),
+    .grp_fu_766_p_dout0(grp_fu_766_p2),
+    .grp_fu_766_p_ce(grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_250_grp_fu_766_p_ce),
+    .grp_fu_770_p_din0(grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_250_grp_fu_770_p_din0),
+    .grp_fu_770_p_din1(grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_250_grp_fu_770_p_din1),
+    .grp_fu_770_p_dout0(grp_fu_770_p2),
+    .grp_fu_770_p_ce(grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_250_grp_fu_770_p_ce)
 );
 
-upconv_core_top_ucb1_UpConv_Fused_Row_8_32_32_480_240_Pipeline_NORM_WRITE grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_NORM_WRITE_fu_370(
+upconv_core_top_ucb1_UpConv_Fused_Row_8_32_32_480_240_Pipeline_LOAD_B grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_LOAD_B_fu_292(
     .ap_clk(ap_clk),
     .ap_rst(ap_rst),
-    .ap_start(grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_NORM_WRITE_fu_370_ap_start),
-    .ap_done(grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_NORM_WRITE_fu_370_ap_done),
-    .ap_idle(grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_NORM_WRITE_fu_370_ap_idle),
-    .ap_ready(grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_NORM_WRITE_fu_370_ap_ready),
-    .m_axi_gmem_out_0_AWVALID(grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_NORM_WRITE_fu_370_m_axi_gmem_out_0_AWVALID),
+    .ap_start(grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_LOAD_B_fu_292_ap_start),
+    .ap_done(grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_LOAD_B_fu_292_ap_done),
+    .ap_idle(grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_LOAD_B_fu_292_ap_idle),
+    .ap_ready(grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_LOAD_B_fu_292_ap_ready),
+    .m_axi_gmem_param_0_AWVALID(grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_LOAD_B_fu_292_m_axi_gmem_param_0_AWVALID),
+    .m_axi_gmem_param_0_AWREADY(1'b0),
+    .m_axi_gmem_param_0_AWADDR(grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_LOAD_B_fu_292_m_axi_gmem_param_0_AWADDR),
+    .m_axi_gmem_param_0_AWID(grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_LOAD_B_fu_292_m_axi_gmem_param_0_AWID),
+    .m_axi_gmem_param_0_AWLEN(grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_LOAD_B_fu_292_m_axi_gmem_param_0_AWLEN),
+    .m_axi_gmem_param_0_AWSIZE(grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_LOAD_B_fu_292_m_axi_gmem_param_0_AWSIZE),
+    .m_axi_gmem_param_0_AWBURST(grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_LOAD_B_fu_292_m_axi_gmem_param_0_AWBURST),
+    .m_axi_gmem_param_0_AWLOCK(grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_LOAD_B_fu_292_m_axi_gmem_param_0_AWLOCK),
+    .m_axi_gmem_param_0_AWCACHE(grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_LOAD_B_fu_292_m_axi_gmem_param_0_AWCACHE),
+    .m_axi_gmem_param_0_AWPROT(grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_LOAD_B_fu_292_m_axi_gmem_param_0_AWPROT),
+    .m_axi_gmem_param_0_AWQOS(grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_LOAD_B_fu_292_m_axi_gmem_param_0_AWQOS),
+    .m_axi_gmem_param_0_AWREGION(grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_LOAD_B_fu_292_m_axi_gmem_param_0_AWREGION),
+    .m_axi_gmem_param_0_AWUSER(grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_LOAD_B_fu_292_m_axi_gmem_param_0_AWUSER),
+    .m_axi_gmem_param_0_WVALID(grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_LOAD_B_fu_292_m_axi_gmem_param_0_WVALID),
+    .m_axi_gmem_param_0_WREADY(1'b0),
+    .m_axi_gmem_param_0_WDATA(grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_LOAD_B_fu_292_m_axi_gmem_param_0_WDATA),
+    .m_axi_gmem_param_0_WSTRB(grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_LOAD_B_fu_292_m_axi_gmem_param_0_WSTRB),
+    .m_axi_gmem_param_0_WLAST(grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_LOAD_B_fu_292_m_axi_gmem_param_0_WLAST),
+    .m_axi_gmem_param_0_WID(grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_LOAD_B_fu_292_m_axi_gmem_param_0_WID),
+    .m_axi_gmem_param_0_WUSER(grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_LOAD_B_fu_292_m_axi_gmem_param_0_WUSER),
+    .m_axi_gmem_param_0_ARVALID(grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_LOAD_B_fu_292_m_axi_gmem_param_0_ARVALID),
+    .m_axi_gmem_param_0_ARREADY(m_axi_gmem_param_0_ARREADY),
+    .m_axi_gmem_param_0_ARADDR(grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_LOAD_B_fu_292_m_axi_gmem_param_0_ARADDR),
+    .m_axi_gmem_param_0_ARID(grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_LOAD_B_fu_292_m_axi_gmem_param_0_ARID),
+    .m_axi_gmem_param_0_ARLEN(grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_LOAD_B_fu_292_m_axi_gmem_param_0_ARLEN),
+    .m_axi_gmem_param_0_ARSIZE(grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_LOAD_B_fu_292_m_axi_gmem_param_0_ARSIZE),
+    .m_axi_gmem_param_0_ARBURST(grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_LOAD_B_fu_292_m_axi_gmem_param_0_ARBURST),
+    .m_axi_gmem_param_0_ARLOCK(grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_LOAD_B_fu_292_m_axi_gmem_param_0_ARLOCK),
+    .m_axi_gmem_param_0_ARCACHE(grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_LOAD_B_fu_292_m_axi_gmem_param_0_ARCACHE),
+    .m_axi_gmem_param_0_ARPROT(grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_LOAD_B_fu_292_m_axi_gmem_param_0_ARPROT),
+    .m_axi_gmem_param_0_ARQOS(grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_LOAD_B_fu_292_m_axi_gmem_param_0_ARQOS),
+    .m_axi_gmem_param_0_ARREGION(grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_LOAD_B_fu_292_m_axi_gmem_param_0_ARREGION),
+    .m_axi_gmem_param_0_ARUSER(grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_LOAD_B_fu_292_m_axi_gmem_param_0_ARUSER),
+    .m_axi_gmem_param_0_RVALID(m_axi_gmem_param_0_RVALID),
+    .m_axi_gmem_param_0_RREADY(grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_LOAD_B_fu_292_m_axi_gmem_param_0_RREADY),
+    .m_axi_gmem_param_0_RDATA(m_axi_gmem_param_0_RDATA),
+    .m_axi_gmem_param_0_RLAST(m_axi_gmem_param_0_RLAST),
+    .m_axi_gmem_param_0_RID(m_axi_gmem_param_0_RID),
+    .m_axi_gmem_param_0_RFIFONUM(m_axi_gmem_param_0_RFIFONUM),
+    .m_axi_gmem_param_0_RUSER(m_axi_gmem_param_0_RUSER),
+    .m_axi_gmem_param_0_RRESP(m_axi_gmem_param_0_RRESP),
+    .m_axi_gmem_param_0_BVALID(1'b0),
+    .m_axi_gmem_param_0_BREADY(grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_LOAD_B_fu_292_m_axi_gmem_param_0_BREADY),
+    .m_axi_gmem_param_0_BRESP(2'd0),
+    .m_axi_gmem_param_0_BID(1'd0),
+    .m_axi_gmem_param_0_BUSER(1'd0),
+    .sext_ln185(trunc_ln3_reg_532),
+    .b_buf_address0(grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_LOAD_B_fu_292_b_buf_address0),
+    .b_buf_ce0(grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_LOAD_B_fu_292_b_buf_ce0),
+    .b_buf_we0(grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_LOAD_B_fu_292_b_buf_we0),
+    .b_buf_d0(grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_LOAD_B_fu_292_b_buf_d0)
+);
+
+upconv_core_top_ucb1_UpConv_Fused_Row_8_32_32_480_240_Pipeline_LOAD_G grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_LOAD_G_fu_300(
+    .ap_clk(ap_clk),
+    .ap_rst(ap_rst),
+    .ap_start(grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_LOAD_G_fu_300_ap_start),
+    .ap_done(grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_LOAD_G_fu_300_ap_done),
+    .ap_idle(grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_LOAD_G_fu_300_ap_idle),
+    .ap_ready(grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_LOAD_G_fu_300_ap_ready),
+    .m_axi_gmem_param_0_AWVALID(grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_LOAD_G_fu_300_m_axi_gmem_param_0_AWVALID),
+    .m_axi_gmem_param_0_AWREADY(1'b0),
+    .m_axi_gmem_param_0_AWADDR(grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_LOAD_G_fu_300_m_axi_gmem_param_0_AWADDR),
+    .m_axi_gmem_param_0_AWID(grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_LOAD_G_fu_300_m_axi_gmem_param_0_AWID),
+    .m_axi_gmem_param_0_AWLEN(grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_LOAD_G_fu_300_m_axi_gmem_param_0_AWLEN),
+    .m_axi_gmem_param_0_AWSIZE(grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_LOAD_G_fu_300_m_axi_gmem_param_0_AWSIZE),
+    .m_axi_gmem_param_0_AWBURST(grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_LOAD_G_fu_300_m_axi_gmem_param_0_AWBURST),
+    .m_axi_gmem_param_0_AWLOCK(grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_LOAD_G_fu_300_m_axi_gmem_param_0_AWLOCK),
+    .m_axi_gmem_param_0_AWCACHE(grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_LOAD_G_fu_300_m_axi_gmem_param_0_AWCACHE),
+    .m_axi_gmem_param_0_AWPROT(grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_LOAD_G_fu_300_m_axi_gmem_param_0_AWPROT),
+    .m_axi_gmem_param_0_AWQOS(grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_LOAD_G_fu_300_m_axi_gmem_param_0_AWQOS),
+    .m_axi_gmem_param_0_AWREGION(grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_LOAD_G_fu_300_m_axi_gmem_param_0_AWREGION),
+    .m_axi_gmem_param_0_AWUSER(grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_LOAD_G_fu_300_m_axi_gmem_param_0_AWUSER),
+    .m_axi_gmem_param_0_WVALID(grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_LOAD_G_fu_300_m_axi_gmem_param_0_WVALID),
+    .m_axi_gmem_param_0_WREADY(1'b0),
+    .m_axi_gmem_param_0_WDATA(grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_LOAD_G_fu_300_m_axi_gmem_param_0_WDATA),
+    .m_axi_gmem_param_0_WSTRB(grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_LOAD_G_fu_300_m_axi_gmem_param_0_WSTRB),
+    .m_axi_gmem_param_0_WLAST(grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_LOAD_G_fu_300_m_axi_gmem_param_0_WLAST),
+    .m_axi_gmem_param_0_WID(grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_LOAD_G_fu_300_m_axi_gmem_param_0_WID),
+    .m_axi_gmem_param_0_WUSER(grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_LOAD_G_fu_300_m_axi_gmem_param_0_WUSER),
+    .m_axi_gmem_param_0_ARVALID(grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_LOAD_G_fu_300_m_axi_gmem_param_0_ARVALID),
+    .m_axi_gmem_param_0_ARREADY(m_axi_gmem_param_0_ARREADY),
+    .m_axi_gmem_param_0_ARADDR(grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_LOAD_G_fu_300_m_axi_gmem_param_0_ARADDR),
+    .m_axi_gmem_param_0_ARID(grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_LOAD_G_fu_300_m_axi_gmem_param_0_ARID),
+    .m_axi_gmem_param_0_ARLEN(grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_LOAD_G_fu_300_m_axi_gmem_param_0_ARLEN),
+    .m_axi_gmem_param_0_ARSIZE(grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_LOAD_G_fu_300_m_axi_gmem_param_0_ARSIZE),
+    .m_axi_gmem_param_0_ARBURST(grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_LOAD_G_fu_300_m_axi_gmem_param_0_ARBURST),
+    .m_axi_gmem_param_0_ARLOCK(grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_LOAD_G_fu_300_m_axi_gmem_param_0_ARLOCK),
+    .m_axi_gmem_param_0_ARCACHE(grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_LOAD_G_fu_300_m_axi_gmem_param_0_ARCACHE),
+    .m_axi_gmem_param_0_ARPROT(grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_LOAD_G_fu_300_m_axi_gmem_param_0_ARPROT),
+    .m_axi_gmem_param_0_ARQOS(grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_LOAD_G_fu_300_m_axi_gmem_param_0_ARQOS),
+    .m_axi_gmem_param_0_ARREGION(grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_LOAD_G_fu_300_m_axi_gmem_param_0_ARREGION),
+    .m_axi_gmem_param_0_ARUSER(grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_LOAD_G_fu_300_m_axi_gmem_param_0_ARUSER),
+    .m_axi_gmem_param_0_RVALID(m_axi_gmem_param_0_RVALID),
+    .m_axi_gmem_param_0_RREADY(grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_LOAD_G_fu_300_m_axi_gmem_param_0_RREADY),
+    .m_axi_gmem_param_0_RDATA(m_axi_gmem_param_0_RDATA),
+    .m_axi_gmem_param_0_RLAST(m_axi_gmem_param_0_RLAST),
+    .m_axi_gmem_param_0_RID(m_axi_gmem_param_0_RID),
+    .m_axi_gmem_param_0_RFIFONUM(m_axi_gmem_param_0_RFIFONUM),
+    .m_axi_gmem_param_0_RUSER(m_axi_gmem_param_0_RUSER),
+    .m_axi_gmem_param_0_RRESP(m_axi_gmem_param_0_RRESP),
+    .m_axi_gmem_param_0_BVALID(1'b0),
+    .m_axi_gmem_param_0_BREADY(grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_LOAD_G_fu_300_m_axi_gmem_param_0_BREADY),
+    .m_axi_gmem_param_0_BRESP(2'd0),
+    .m_axi_gmem_param_0_BID(1'd0),
+    .m_axi_gmem_param_0_BUSER(1'd0),
+    .sext_ln189(trunc_ln4_reg_542),
+    .g_buf_address0(grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_LOAD_G_fu_300_g_buf_address0),
+    .g_buf_ce0(grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_LOAD_G_fu_300_g_buf_ce0),
+    .g_buf_we0(grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_LOAD_G_fu_300_g_buf_we0),
+    .g_buf_d0(grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_LOAD_G_fu_300_g_buf_d0)
+);
+
+upconv_core_top_ucb1_UpConv_Fused_Row_8_32_32_480_240_Pipeline_PIXEL_STATS grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_PIXEL_STATS_fu_308(
+    .ap_clk(ap_clk),
+    .ap_rst(ap_rst),
+    .ap_start(grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_PIXEL_STATS_fu_308_ap_start),
+    .ap_done(grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_PIXEL_STATS_fu_308_ap_done),
+    .ap_idle(grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_PIXEL_STATS_fu_308_ap_idle),
+    .ap_ready(grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_PIXEL_STATS_fu_308_ap_ready),
+    .conv42_i(conv42_i_reg_557),
+    .b_buf_address0(grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_PIXEL_STATS_fu_308_b_buf_address0),
+    .b_buf_ce0(grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_PIXEL_STATS_fu_308_b_buf_ce0),
+    .b_buf_q0(b_buf_q0),
+    .mean_buf_address1(grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_PIXEL_STATS_fu_308_mean_buf_address1),
+    .mean_buf_ce1(grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_PIXEL_STATS_fu_308_mean_buf_ce1),
+    .mean_buf_we1(grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_PIXEL_STATS_fu_308_mean_buf_we1),
+    .mean_buf_d1(grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_PIXEL_STATS_fu_308_mean_buf_d1),
+    .inv_buf_address1(grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_PIXEL_STATS_fu_308_inv_buf_address1),
+    .inv_buf_ce1(grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_PIXEL_STATS_fu_308_inv_buf_ce1),
+    .inv_buf_we1(grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_PIXEL_STATS_fu_308_inv_buf_we1),
+    .inv_buf_d1(grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_PIXEL_STATS_fu_308_inv_buf_d1),
+    .void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_9_address0(grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_PIXEL_STATS_fu_308_void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_9_address0),
+    .void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_9_ce0(grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_PIXEL_STATS_fu_308_void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_9_ce0),
+    .void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_9_we0(grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_PIXEL_STATS_fu_308_void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_9_we0),
+    .void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_9_d0(grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_PIXEL_STATS_fu_308_void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_9_d0),
+    .void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_9_address1(grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_PIXEL_STATS_fu_308_void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_9_address1),
+    .void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_9_ce1(grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_PIXEL_STATS_fu_308_void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_9_ce1),
+    .void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_9_q1(void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_9_q1),
+    .void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_8_address0(grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_PIXEL_STATS_fu_308_void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_8_address0),
+    .void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_8_ce0(grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_PIXEL_STATS_fu_308_void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_8_ce0),
+    .void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_8_we0(grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_PIXEL_STATS_fu_308_void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_8_we0),
+    .void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_8_d0(grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_PIXEL_STATS_fu_308_void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_8_d0),
+    .void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_8_address1(grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_PIXEL_STATS_fu_308_void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_8_address1),
+    .void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_8_ce1(grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_PIXEL_STATS_fu_308_void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_8_ce1),
+    .void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_8_q1(void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_8_q1),
+    .void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_7_address0(grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_PIXEL_STATS_fu_308_void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_7_address0),
+    .void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_7_ce0(grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_PIXEL_STATS_fu_308_void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_7_ce0),
+    .void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_7_we0(grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_PIXEL_STATS_fu_308_void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_7_we0),
+    .void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_7_d0(grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_PIXEL_STATS_fu_308_void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_7_d0),
+    .void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_7_address1(grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_PIXEL_STATS_fu_308_void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_7_address1),
+    .void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_7_ce1(grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_PIXEL_STATS_fu_308_void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_7_ce1),
+    .void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_7_q1(void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_7_q1),
+    .void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_6_address0(grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_PIXEL_STATS_fu_308_void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_6_address0),
+    .void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_6_ce0(grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_PIXEL_STATS_fu_308_void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_6_ce0),
+    .void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_6_we0(grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_PIXEL_STATS_fu_308_void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_6_we0),
+    .void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_6_d0(grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_PIXEL_STATS_fu_308_void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_6_d0),
+    .void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_6_address1(grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_PIXEL_STATS_fu_308_void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_6_address1),
+    .void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_6_ce1(grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_PIXEL_STATS_fu_308_void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_6_ce1),
+    .void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_6_q1(void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_6_q1),
+    .void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_5_address0(grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_PIXEL_STATS_fu_308_void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_5_address0),
+    .void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_5_ce0(grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_PIXEL_STATS_fu_308_void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_5_ce0),
+    .void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_5_we0(grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_PIXEL_STATS_fu_308_void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_5_we0),
+    .void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_5_d0(grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_PIXEL_STATS_fu_308_void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_5_d0),
+    .void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_5_address1(grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_PIXEL_STATS_fu_308_void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_5_address1),
+    .void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_5_ce1(grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_PIXEL_STATS_fu_308_void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_5_ce1),
+    .void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_5_q1(void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_5_q1),
+    .void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_4_address0(grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_PIXEL_STATS_fu_308_void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_4_address0),
+    .void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_4_ce0(grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_PIXEL_STATS_fu_308_void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_4_ce0),
+    .void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_4_we0(grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_PIXEL_STATS_fu_308_void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_4_we0),
+    .void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_4_d0(grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_PIXEL_STATS_fu_308_void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_4_d0),
+    .void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_4_address1(grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_PIXEL_STATS_fu_308_void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_4_address1),
+    .void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_4_ce1(grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_PIXEL_STATS_fu_308_void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_4_ce1),
+    .void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_4_q1(void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_4_q1),
+    .void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_3_address0(grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_PIXEL_STATS_fu_308_void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_3_address0),
+    .void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_3_ce0(grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_PIXEL_STATS_fu_308_void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_3_ce0),
+    .void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_3_we0(grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_PIXEL_STATS_fu_308_void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_3_we0),
+    .void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_3_d0(grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_PIXEL_STATS_fu_308_void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_3_d0),
+    .void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_3_address1(grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_PIXEL_STATS_fu_308_void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_3_address1),
+    .void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_3_ce1(grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_PIXEL_STATS_fu_308_void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_3_ce1),
+    .void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_3_q1(void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_3_q1),
+    .void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_2_address0(grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_PIXEL_STATS_fu_308_void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_2_address0),
+    .void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_2_ce0(grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_PIXEL_STATS_fu_308_void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_2_ce0),
+    .void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_2_we0(grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_PIXEL_STATS_fu_308_void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_2_we0),
+    .void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_2_d0(grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_PIXEL_STATS_fu_308_void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_2_d0),
+    .void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_2_address1(grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_PIXEL_STATS_fu_308_void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_2_address1),
+    .void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_2_ce1(grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_PIXEL_STATS_fu_308_void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_2_ce1),
+    .void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_2_q1(void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_2_q1),
+    .void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_1_address0(grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_PIXEL_STATS_fu_308_void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_1_address0),
+    .void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_1_ce0(grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_PIXEL_STATS_fu_308_void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_1_ce0),
+    .void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_1_we0(grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_PIXEL_STATS_fu_308_void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_1_we0),
+    .void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_1_d0(grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_PIXEL_STATS_fu_308_void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_1_d0),
+    .void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_1_address1(grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_PIXEL_STATS_fu_308_void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_1_address1),
+    .void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_1_ce1(grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_PIXEL_STATS_fu_308_void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_1_ce1),
+    .void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_1_q1(void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_1_q1),
+    .void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_address0(grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_PIXEL_STATS_fu_308_void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_address0),
+    .void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_ce0(grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_PIXEL_STATS_fu_308_void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_ce0),
+    .void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_we0(grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_PIXEL_STATS_fu_308_void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_we0),
+    .void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_d0(grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_PIXEL_STATS_fu_308_void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_d0),
+    .void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_address1(grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_PIXEL_STATS_fu_308_void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_address1),
+    .void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_ce1(grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_PIXEL_STATS_fu_308_void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_ce1),
+    .void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_q1(void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_q1),
+    .p_ZZ16UpConv_Fused_RowILi8ELi32ELi32ELi480ELi240EEvP7ap_uintILi256EEPKS1_S4_S4_S4_5_address0(grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_PIXEL_STATS_fu_308_p_ZZ16UpConv_Fused_RowILi8ELi32ELi32ELi480ELi240EEvP7ap_uintILi256EEPKS1_S4_S4_S4_5_address0),
+    .p_ZZ16UpConv_Fused_RowILi8ELi32ELi32ELi480ELi240EEvP7ap_uintILi256EEPKS1_S4_S4_S4_5_ce0(grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_PIXEL_STATS_fu_308_p_ZZ16UpConv_Fused_RowILi8ELi32ELi32ELi480ELi240EEvP7ap_uintILi256EEPKS1_S4_S4_S4_5_ce0),
+    .p_ZZ16UpConv_Fused_RowILi8ELi32ELi32ELi480ELi240EEvP7ap_uintILi256EEPKS1_S4_S4_S4_5_we0(grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_PIXEL_STATS_fu_308_p_ZZ16UpConv_Fused_RowILi8ELi32ELi32ELi480ELi240EEvP7ap_uintILi256EEPKS1_S4_S4_S4_5_we0),
+    .p_ZZ16UpConv_Fused_RowILi8ELi32ELi32ELi480ELi240EEvP7ap_uintILi256EEPKS1_S4_S4_S4_5_d0(grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_PIXEL_STATS_fu_308_p_ZZ16UpConv_Fused_RowILi8ELi32ELi32ELi480ELi240EEvP7ap_uintILi256EEPKS1_S4_S4_S4_5_d0),
+    .p_ZZ16UpConv_Fused_RowILi8ELi32ELi32ELi480ELi240EEvP7ap_uintILi256EEPKS1_S4_S4_S4_5_address1(grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_PIXEL_STATS_fu_308_p_ZZ16UpConv_Fused_RowILi8ELi32ELi32ELi480ELi240EEvP7ap_uintILi256EEPKS1_S4_S4_S4_5_address1),
+    .p_ZZ16UpConv_Fused_RowILi8ELi32ELi32ELi480ELi240EEvP7ap_uintILi256EEPKS1_S4_S4_S4_5_ce1(grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_PIXEL_STATS_fu_308_p_ZZ16UpConv_Fused_RowILi8ELi32ELi32ELi480ELi240EEvP7ap_uintILi256EEPKS1_S4_S4_S4_5_ce1),
+    .p_ZZ16UpConv_Fused_RowILi8ELi32ELi32ELi480ELi240EEvP7ap_uintILi256EEPKS1_S4_S4_S4_5_q1(p_ZZ16UpConv_Fused_RowILi8ELi32ELi32ELi480ELi240EEvP7ap_uintILi256EEPKS1_S4_S4_S4_5_q1),
+    .p_ZZ16UpConv_Fused_RowILi8ELi32ELi32ELi480ELi240EEvP7ap_uintILi256EEPKS1_S4_S4_S4_4_address0(grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_PIXEL_STATS_fu_308_p_ZZ16UpConv_Fused_RowILi8ELi32ELi32ELi480ELi240EEvP7ap_uintILi256EEPKS1_S4_S4_S4_4_address0),
+    .p_ZZ16UpConv_Fused_RowILi8ELi32ELi32ELi480ELi240EEvP7ap_uintILi256EEPKS1_S4_S4_S4_4_ce0(grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_PIXEL_STATS_fu_308_p_ZZ16UpConv_Fused_RowILi8ELi32ELi32ELi480ELi240EEvP7ap_uintILi256EEPKS1_S4_S4_S4_4_ce0),
+    .p_ZZ16UpConv_Fused_RowILi8ELi32ELi32ELi480ELi240EEvP7ap_uintILi256EEPKS1_S4_S4_S4_4_we0(grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_PIXEL_STATS_fu_308_p_ZZ16UpConv_Fused_RowILi8ELi32ELi32ELi480ELi240EEvP7ap_uintILi256EEPKS1_S4_S4_S4_4_we0),
+    .p_ZZ16UpConv_Fused_RowILi8ELi32ELi32ELi480ELi240EEvP7ap_uintILi256EEPKS1_S4_S4_S4_4_d0(grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_PIXEL_STATS_fu_308_p_ZZ16UpConv_Fused_RowILi8ELi32ELi32ELi480ELi240EEvP7ap_uintILi256EEPKS1_S4_S4_S4_4_d0),
+    .p_ZZ16UpConv_Fused_RowILi8ELi32ELi32ELi480ELi240EEvP7ap_uintILi256EEPKS1_S4_S4_S4_4_address1(grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_PIXEL_STATS_fu_308_p_ZZ16UpConv_Fused_RowILi8ELi32ELi32ELi480ELi240EEvP7ap_uintILi256EEPKS1_S4_S4_S4_4_address1),
+    .p_ZZ16UpConv_Fused_RowILi8ELi32ELi32ELi480ELi240EEvP7ap_uintILi256EEPKS1_S4_S4_S4_4_ce1(grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_PIXEL_STATS_fu_308_p_ZZ16UpConv_Fused_RowILi8ELi32ELi32ELi480ELi240EEvP7ap_uintILi256EEPKS1_S4_S4_S4_4_ce1),
+    .p_ZZ16UpConv_Fused_RowILi8ELi32ELi32ELi480ELi240EEvP7ap_uintILi256EEPKS1_S4_S4_S4_4_q1(p_ZZ16UpConv_Fused_RowILi8ELi32ELi32ELi480ELi240EEvP7ap_uintILi256EEPKS1_S4_S4_S4_4_q1),
+    .p_ZZ16UpConv_Fused_RowILi8ELi32ELi32ELi480ELi240EEvP7ap_uintILi256EEPKS1_S4_S4_S4_3_address0(grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_PIXEL_STATS_fu_308_p_ZZ16UpConv_Fused_RowILi8ELi32ELi32ELi480ELi240EEvP7ap_uintILi256EEPKS1_S4_S4_S4_3_address0),
+    .p_ZZ16UpConv_Fused_RowILi8ELi32ELi32ELi480ELi240EEvP7ap_uintILi256EEPKS1_S4_S4_S4_3_ce0(grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_PIXEL_STATS_fu_308_p_ZZ16UpConv_Fused_RowILi8ELi32ELi32ELi480ELi240EEvP7ap_uintILi256EEPKS1_S4_S4_S4_3_ce0),
+    .p_ZZ16UpConv_Fused_RowILi8ELi32ELi32ELi480ELi240EEvP7ap_uintILi256EEPKS1_S4_S4_S4_3_we0(grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_PIXEL_STATS_fu_308_p_ZZ16UpConv_Fused_RowILi8ELi32ELi32ELi480ELi240EEvP7ap_uintILi256EEPKS1_S4_S4_S4_3_we0),
+    .p_ZZ16UpConv_Fused_RowILi8ELi32ELi32ELi480ELi240EEvP7ap_uintILi256EEPKS1_S4_S4_S4_3_d0(grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_PIXEL_STATS_fu_308_p_ZZ16UpConv_Fused_RowILi8ELi32ELi32ELi480ELi240EEvP7ap_uintILi256EEPKS1_S4_S4_S4_3_d0),
+    .p_ZZ16UpConv_Fused_RowILi8ELi32ELi32ELi480ELi240EEvP7ap_uintILi256EEPKS1_S4_S4_S4_3_address1(grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_PIXEL_STATS_fu_308_p_ZZ16UpConv_Fused_RowILi8ELi32ELi32ELi480ELi240EEvP7ap_uintILi256EEPKS1_S4_S4_S4_3_address1),
+    .p_ZZ16UpConv_Fused_RowILi8ELi32ELi32ELi480ELi240EEvP7ap_uintILi256EEPKS1_S4_S4_S4_3_ce1(grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_PIXEL_STATS_fu_308_p_ZZ16UpConv_Fused_RowILi8ELi32ELi32ELi480ELi240EEvP7ap_uintILi256EEPKS1_S4_S4_S4_3_ce1),
+    .p_ZZ16UpConv_Fused_RowILi8ELi32ELi32ELi480ELi240EEvP7ap_uintILi256EEPKS1_S4_S4_S4_3_q1(p_ZZ16UpConv_Fused_RowILi8ELi32ELi32ELi480ELi240EEvP7ap_uintILi256EEPKS1_S4_S4_S4_3_q1),
+    .p_ZZ16UpConv_Fused_RowILi8ELi32ELi32ELi480ELi240EEvP7ap_uintILi256EEPKS1_S4_S4_S4_2_address0(grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_PIXEL_STATS_fu_308_p_ZZ16UpConv_Fused_RowILi8ELi32ELi32ELi480ELi240EEvP7ap_uintILi256EEPKS1_S4_S4_S4_2_address0),
+    .p_ZZ16UpConv_Fused_RowILi8ELi32ELi32ELi480ELi240EEvP7ap_uintILi256EEPKS1_S4_S4_S4_2_ce0(grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_PIXEL_STATS_fu_308_p_ZZ16UpConv_Fused_RowILi8ELi32ELi32ELi480ELi240EEvP7ap_uintILi256EEPKS1_S4_S4_S4_2_ce0),
+    .p_ZZ16UpConv_Fused_RowILi8ELi32ELi32ELi480ELi240EEvP7ap_uintILi256EEPKS1_S4_S4_S4_2_we0(grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_PIXEL_STATS_fu_308_p_ZZ16UpConv_Fused_RowILi8ELi32ELi32ELi480ELi240EEvP7ap_uintILi256EEPKS1_S4_S4_S4_2_we0),
+    .p_ZZ16UpConv_Fused_RowILi8ELi32ELi32ELi480ELi240EEvP7ap_uintILi256EEPKS1_S4_S4_S4_2_d0(grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_PIXEL_STATS_fu_308_p_ZZ16UpConv_Fused_RowILi8ELi32ELi32ELi480ELi240EEvP7ap_uintILi256EEPKS1_S4_S4_S4_2_d0),
+    .p_ZZ16UpConv_Fused_RowILi8ELi32ELi32ELi480ELi240EEvP7ap_uintILi256EEPKS1_S4_S4_S4_2_address1(grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_PIXEL_STATS_fu_308_p_ZZ16UpConv_Fused_RowILi8ELi32ELi32ELi480ELi240EEvP7ap_uintILi256EEPKS1_S4_S4_S4_2_address1),
+    .p_ZZ16UpConv_Fused_RowILi8ELi32ELi32ELi480ELi240EEvP7ap_uintILi256EEPKS1_S4_S4_S4_2_ce1(grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_PIXEL_STATS_fu_308_p_ZZ16UpConv_Fused_RowILi8ELi32ELi32ELi480ELi240EEvP7ap_uintILi256EEPKS1_S4_S4_S4_2_ce1),
+    .p_ZZ16UpConv_Fused_RowILi8ELi32ELi32ELi480ELi240EEvP7ap_uintILi256EEPKS1_S4_S4_S4_2_q1(p_ZZ16UpConv_Fused_RowILi8ELi32ELi32ELi480ELi240EEvP7ap_uintILi256EEPKS1_S4_S4_S4_2_q1),
+    .p_ZZ16UpConv_Fused_RowILi8ELi32ELi32ELi480ELi240EEvP7ap_uintILi256EEPKS1_S4_S4_S4_1_address0(grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_PIXEL_STATS_fu_308_p_ZZ16UpConv_Fused_RowILi8ELi32ELi32ELi480ELi240EEvP7ap_uintILi256EEPKS1_S4_S4_S4_1_address0),
+    .p_ZZ16UpConv_Fused_RowILi8ELi32ELi32ELi480ELi240EEvP7ap_uintILi256EEPKS1_S4_S4_S4_1_ce0(grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_PIXEL_STATS_fu_308_p_ZZ16UpConv_Fused_RowILi8ELi32ELi32ELi480ELi240EEvP7ap_uintILi256EEPKS1_S4_S4_S4_1_ce0),
+    .p_ZZ16UpConv_Fused_RowILi8ELi32ELi32ELi480ELi240EEvP7ap_uintILi256EEPKS1_S4_S4_S4_1_we0(grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_PIXEL_STATS_fu_308_p_ZZ16UpConv_Fused_RowILi8ELi32ELi32ELi480ELi240EEvP7ap_uintILi256EEPKS1_S4_S4_S4_1_we0),
+    .p_ZZ16UpConv_Fused_RowILi8ELi32ELi32ELi480ELi240EEvP7ap_uintILi256EEPKS1_S4_S4_S4_1_d0(grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_PIXEL_STATS_fu_308_p_ZZ16UpConv_Fused_RowILi8ELi32ELi32ELi480ELi240EEvP7ap_uintILi256EEPKS1_S4_S4_S4_1_d0),
+    .p_ZZ16UpConv_Fused_RowILi8ELi32ELi32ELi480ELi240EEvP7ap_uintILi256EEPKS1_S4_S4_S4_1_address1(grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_PIXEL_STATS_fu_308_p_ZZ16UpConv_Fused_RowILi8ELi32ELi32ELi480ELi240EEvP7ap_uintILi256EEPKS1_S4_S4_S4_1_address1),
+    .p_ZZ16UpConv_Fused_RowILi8ELi32ELi32ELi480ELi240EEvP7ap_uintILi256EEPKS1_S4_S4_S4_1_ce1(grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_PIXEL_STATS_fu_308_p_ZZ16UpConv_Fused_RowILi8ELi32ELi32ELi480ELi240EEvP7ap_uintILi256EEPKS1_S4_S4_S4_1_ce1),
+    .p_ZZ16UpConv_Fused_RowILi8ELi32ELi32ELi480ELi240EEvP7ap_uintILi256EEPKS1_S4_S4_S4_1_q1(p_ZZ16UpConv_Fused_RowILi8ELi32ELi32ELi480ELi240EEvP7ap_uintILi256EEPKS1_S4_S4_S4_1_q1),
+    .p_ZZ16UpConv_Fused_RowILi8ELi32ELi32ELi480ELi240EEvP7ap_uintILi256EEPKS1_S4_S4_S4_address0(grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_PIXEL_STATS_fu_308_p_ZZ16UpConv_Fused_RowILi8ELi32ELi32ELi480ELi240EEvP7ap_uintILi256EEPKS1_S4_S4_S4_address0),
+    .p_ZZ16UpConv_Fused_RowILi8ELi32ELi32ELi480ELi240EEvP7ap_uintILi256EEPKS1_S4_S4_S4_ce0(grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_PIXEL_STATS_fu_308_p_ZZ16UpConv_Fused_RowILi8ELi32ELi32ELi480ELi240EEvP7ap_uintILi256EEPKS1_S4_S4_S4_ce0),
+    .p_ZZ16UpConv_Fused_RowILi8ELi32ELi32ELi480ELi240EEvP7ap_uintILi256EEPKS1_S4_S4_S4_we0(grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_PIXEL_STATS_fu_308_p_ZZ16UpConv_Fused_RowILi8ELi32ELi32ELi480ELi240EEvP7ap_uintILi256EEPKS1_S4_S4_S4_we0),
+    .p_ZZ16UpConv_Fused_RowILi8ELi32ELi32ELi480ELi240EEvP7ap_uintILi256EEPKS1_S4_S4_S4_d0(grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_PIXEL_STATS_fu_308_p_ZZ16UpConv_Fused_RowILi8ELi32ELi32ELi480ELi240EEvP7ap_uintILi256EEPKS1_S4_S4_S4_d0),
+    .p_ZZ16UpConv_Fused_RowILi8ELi32ELi32ELi480ELi240EEvP7ap_uintILi256EEPKS1_S4_S4_S4_address1(grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_PIXEL_STATS_fu_308_p_ZZ16UpConv_Fused_RowILi8ELi32ELi32ELi480ELi240EEvP7ap_uintILi256EEPKS1_S4_S4_S4_address1),
+    .p_ZZ16UpConv_Fused_RowILi8ELi32ELi32ELi480ELi240EEvP7ap_uintILi256EEPKS1_S4_S4_S4_ce1(grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_PIXEL_STATS_fu_308_p_ZZ16UpConv_Fused_RowILi8ELi32ELi32ELi480ELi240EEvP7ap_uintILi256EEPKS1_S4_S4_S4_ce1),
+    .p_ZZ16UpConv_Fused_RowILi8ELi32ELi32ELi480ELi240EEvP7ap_uintILi256EEPKS1_S4_S4_S4_q1(p_ZZ16UpConv_Fused_RowILi8ELi32ELi32ELi480ELi240EEvP7ap_uintILi256EEPKS1_S4_S4_S4_q1),
+    .grp_fu_774_p_din0(grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_PIXEL_STATS_fu_308_grp_fu_774_p_din0),
+    .grp_fu_774_p_dout0(grp_fu_774_p1),
+    .grp_fu_774_p_ce(grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_PIXEL_STATS_fu_308_grp_fu_774_p_ce),
+    .grp_fu_405_p_din0(grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_PIXEL_STATS_fu_308_grp_fu_405_p_din0),
+    .grp_fu_405_p_dout0(grp_fu_405_p1),
+    .grp_fu_405_p_ce(grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_PIXEL_STATS_fu_308_grp_fu_405_p_ce),
+    .grp_fu_582_p_din0(grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_PIXEL_STATS_fu_308_grp_fu_582_p_din0),
+    .grp_fu_582_p_din1(grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_PIXEL_STATS_fu_308_grp_fu_582_p_din1),
+    .grp_fu_582_p_dout0(grp_fu_582_p2),
+    .grp_fu_582_p_ce(grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_PIXEL_STATS_fu_308_grp_fu_582_p_ce)
+);
+
+upconv_core_top_ucb1_UpConv_Fused_Row_8_32_32_480_240_Pipeline_LOAD_BE grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_LOAD_BE_fu_350(
+    .ap_clk(ap_clk),
+    .ap_rst(ap_rst),
+    .ap_start(grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_LOAD_BE_fu_350_ap_start),
+    .ap_done(grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_LOAD_BE_fu_350_ap_done),
+    .ap_idle(grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_LOAD_BE_fu_350_ap_idle),
+    .ap_ready(grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_LOAD_BE_fu_350_ap_ready),
+    .m_axi_gmem_param_0_AWVALID(grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_LOAD_BE_fu_350_m_axi_gmem_param_0_AWVALID),
+    .m_axi_gmem_param_0_AWREADY(1'b0),
+    .m_axi_gmem_param_0_AWADDR(grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_LOAD_BE_fu_350_m_axi_gmem_param_0_AWADDR),
+    .m_axi_gmem_param_0_AWID(grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_LOAD_BE_fu_350_m_axi_gmem_param_0_AWID),
+    .m_axi_gmem_param_0_AWLEN(grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_LOAD_BE_fu_350_m_axi_gmem_param_0_AWLEN),
+    .m_axi_gmem_param_0_AWSIZE(grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_LOAD_BE_fu_350_m_axi_gmem_param_0_AWSIZE),
+    .m_axi_gmem_param_0_AWBURST(grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_LOAD_BE_fu_350_m_axi_gmem_param_0_AWBURST),
+    .m_axi_gmem_param_0_AWLOCK(grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_LOAD_BE_fu_350_m_axi_gmem_param_0_AWLOCK),
+    .m_axi_gmem_param_0_AWCACHE(grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_LOAD_BE_fu_350_m_axi_gmem_param_0_AWCACHE),
+    .m_axi_gmem_param_0_AWPROT(grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_LOAD_BE_fu_350_m_axi_gmem_param_0_AWPROT),
+    .m_axi_gmem_param_0_AWQOS(grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_LOAD_BE_fu_350_m_axi_gmem_param_0_AWQOS),
+    .m_axi_gmem_param_0_AWREGION(grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_LOAD_BE_fu_350_m_axi_gmem_param_0_AWREGION),
+    .m_axi_gmem_param_0_AWUSER(grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_LOAD_BE_fu_350_m_axi_gmem_param_0_AWUSER),
+    .m_axi_gmem_param_0_WVALID(grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_LOAD_BE_fu_350_m_axi_gmem_param_0_WVALID),
+    .m_axi_gmem_param_0_WREADY(1'b0),
+    .m_axi_gmem_param_0_WDATA(grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_LOAD_BE_fu_350_m_axi_gmem_param_0_WDATA),
+    .m_axi_gmem_param_0_WSTRB(grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_LOAD_BE_fu_350_m_axi_gmem_param_0_WSTRB),
+    .m_axi_gmem_param_0_WLAST(grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_LOAD_BE_fu_350_m_axi_gmem_param_0_WLAST),
+    .m_axi_gmem_param_0_WID(grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_LOAD_BE_fu_350_m_axi_gmem_param_0_WID),
+    .m_axi_gmem_param_0_WUSER(grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_LOAD_BE_fu_350_m_axi_gmem_param_0_WUSER),
+    .m_axi_gmem_param_0_ARVALID(grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_LOAD_BE_fu_350_m_axi_gmem_param_0_ARVALID),
+    .m_axi_gmem_param_0_ARREADY(m_axi_gmem_param_0_ARREADY),
+    .m_axi_gmem_param_0_ARADDR(grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_LOAD_BE_fu_350_m_axi_gmem_param_0_ARADDR),
+    .m_axi_gmem_param_0_ARID(grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_LOAD_BE_fu_350_m_axi_gmem_param_0_ARID),
+    .m_axi_gmem_param_0_ARLEN(grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_LOAD_BE_fu_350_m_axi_gmem_param_0_ARLEN),
+    .m_axi_gmem_param_0_ARSIZE(grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_LOAD_BE_fu_350_m_axi_gmem_param_0_ARSIZE),
+    .m_axi_gmem_param_0_ARBURST(grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_LOAD_BE_fu_350_m_axi_gmem_param_0_ARBURST),
+    .m_axi_gmem_param_0_ARLOCK(grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_LOAD_BE_fu_350_m_axi_gmem_param_0_ARLOCK),
+    .m_axi_gmem_param_0_ARCACHE(grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_LOAD_BE_fu_350_m_axi_gmem_param_0_ARCACHE),
+    .m_axi_gmem_param_0_ARPROT(grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_LOAD_BE_fu_350_m_axi_gmem_param_0_ARPROT),
+    .m_axi_gmem_param_0_ARQOS(grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_LOAD_BE_fu_350_m_axi_gmem_param_0_ARQOS),
+    .m_axi_gmem_param_0_ARREGION(grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_LOAD_BE_fu_350_m_axi_gmem_param_0_ARREGION),
+    .m_axi_gmem_param_0_ARUSER(grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_LOAD_BE_fu_350_m_axi_gmem_param_0_ARUSER),
+    .m_axi_gmem_param_0_RVALID(m_axi_gmem_param_0_RVALID),
+    .m_axi_gmem_param_0_RREADY(grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_LOAD_BE_fu_350_m_axi_gmem_param_0_RREADY),
+    .m_axi_gmem_param_0_RDATA(m_axi_gmem_param_0_RDATA),
+    .m_axi_gmem_param_0_RLAST(m_axi_gmem_param_0_RLAST),
+    .m_axi_gmem_param_0_RID(m_axi_gmem_param_0_RID),
+    .m_axi_gmem_param_0_RFIFONUM(m_axi_gmem_param_0_RFIFONUM),
+    .m_axi_gmem_param_0_RUSER(m_axi_gmem_param_0_RUSER),
+    .m_axi_gmem_param_0_RRESP(m_axi_gmem_param_0_RRESP),
+    .m_axi_gmem_param_0_BVALID(1'b0),
+    .m_axi_gmem_param_0_BREADY(grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_LOAD_BE_fu_350_m_axi_gmem_param_0_BREADY),
+    .m_axi_gmem_param_0_BRESP(2'd0),
+    .m_axi_gmem_param_0_BID(1'd0),
+    .m_axi_gmem_param_0_BUSER(1'd0),
+    .sext_ln193(trunc_ln6_reg_562),
+    .be_buf_address0(grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_LOAD_BE_fu_350_be_buf_address0),
+    .be_buf_ce0(grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_LOAD_BE_fu_350_be_buf_ce0),
+    .be_buf_we0(grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_LOAD_BE_fu_350_be_buf_we0),
+    .be_buf_d0(grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_LOAD_BE_fu_350_be_buf_d0)
+);
+
+upconv_core_top_ucb1_UpConv_Fused_Row_8_32_32_480_240_Pipeline_PIXEL_NORM grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_PIXEL_NORM_fu_358(
+    .ap_clk(ap_clk),
+    .ap_rst(ap_rst),
+    .ap_start(grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_PIXEL_NORM_fu_358_ap_start),
+    .ap_done(grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_PIXEL_NORM_fu_358_ap_done),
+    .ap_idle(grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_PIXEL_NORM_fu_358_ap_idle),
+    .ap_ready(grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_PIXEL_NORM_fu_358_ap_ready),
+    .m_axi_gmem_out_0_AWVALID(grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_PIXEL_NORM_fu_358_m_axi_gmem_out_0_AWVALID),
     .m_axi_gmem_out_0_AWREADY(m_axi_gmem_out_0_AWREADY),
-    .m_axi_gmem_out_0_AWADDR(grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_NORM_WRITE_fu_370_m_axi_gmem_out_0_AWADDR),
-    .m_axi_gmem_out_0_AWID(grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_NORM_WRITE_fu_370_m_axi_gmem_out_0_AWID),
-    .m_axi_gmem_out_0_AWLEN(grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_NORM_WRITE_fu_370_m_axi_gmem_out_0_AWLEN),
-    .m_axi_gmem_out_0_AWSIZE(grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_NORM_WRITE_fu_370_m_axi_gmem_out_0_AWSIZE),
-    .m_axi_gmem_out_0_AWBURST(grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_NORM_WRITE_fu_370_m_axi_gmem_out_0_AWBURST),
-    .m_axi_gmem_out_0_AWLOCK(grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_NORM_WRITE_fu_370_m_axi_gmem_out_0_AWLOCK),
-    .m_axi_gmem_out_0_AWCACHE(grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_NORM_WRITE_fu_370_m_axi_gmem_out_0_AWCACHE),
-    .m_axi_gmem_out_0_AWPROT(grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_NORM_WRITE_fu_370_m_axi_gmem_out_0_AWPROT),
-    .m_axi_gmem_out_0_AWQOS(grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_NORM_WRITE_fu_370_m_axi_gmem_out_0_AWQOS),
-    .m_axi_gmem_out_0_AWREGION(grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_NORM_WRITE_fu_370_m_axi_gmem_out_0_AWREGION),
-    .m_axi_gmem_out_0_AWUSER(grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_NORM_WRITE_fu_370_m_axi_gmem_out_0_AWUSER),
-    .m_axi_gmem_out_0_WVALID(grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_NORM_WRITE_fu_370_m_axi_gmem_out_0_WVALID),
+    .m_axi_gmem_out_0_AWADDR(grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_PIXEL_NORM_fu_358_m_axi_gmem_out_0_AWADDR),
+    .m_axi_gmem_out_0_AWID(grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_PIXEL_NORM_fu_358_m_axi_gmem_out_0_AWID),
+    .m_axi_gmem_out_0_AWLEN(grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_PIXEL_NORM_fu_358_m_axi_gmem_out_0_AWLEN),
+    .m_axi_gmem_out_0_AWSIZE(grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_PIXEL_NORM_fu_358_m_axi_gmem_out_0_AWSIZE),
+    .m_axi_gmem_out_0_AWBURST(grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_PIXEL_NORM_fu_358_m_axi_gmem_out_0_AWBURST),
+    .m_axi_gmem_out_0_AWLOCK(grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_PIXEL_NORM_fu_358_m_axi_gmem_out_0_AWLOCK),
+    .m_axi_gmem_out_0_AWCACHE(grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_PIXEL_NORM_fu_358_m_axi_gmem_out_0_AWCACHE),
+    .m_axi_gmem_out_0_AWPROT(grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_PIXEL_NORM_fu_358_m_axi_gmem_out_0_AWPROT),
+    .m_axi_gmem_out_0_AWQOS(grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_PIXEL_NORM_fu_358_m_axi_gmem_out_0_AWQOS),
+    .m_axi_gmem_out_0_AWREGION(grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_PIXEL_NORM_fu_358_m_axi_gmem_out_0_AWREGION),
+    .m_axi_gmem_out_0_AWUSER(grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_PIXEL_NORM_fu_358_m_axi_gmem_out_0_AWUSER),
+    .m_axi_gmem_out_0_WVALID(grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_PIXEL_NORM_fu_358_m_axi_gmem_out_0_WVALID),
     .m_axi_gmem_out_0_WREADY(m_axi_gmem_out_0_WREADY),
-    .m_axi_gmem_out_0_WDATA(grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_NORM_WRITE_fu_370_m_axi_gmem_out_0_WDATA),
-    .m_axi_gmem_out_0_WSTRB(grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_NORM_WRITE_fu_370_m_axi_gmem_out_0_WSTRB),
-    .m_axi_gmem_out_0_WLAST(grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_NORM_WRITE_fu_370_m_axi_gmem_out_0_WLAST),
-    .m_axi_gmem_out_0_WID(grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_NORM_WRITE_fu_370_m_axi_gmem_out_0_WID),
-    .m_axi_gmem_out_0_WUSER(grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_NORM_WRITE_fu_370_m_axi_gmem_out_0_WUSER),
-    .m_axi_gmem_out_0_ARVALID(grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_NORM_WRITE_fu_370_m_axi_gmem_out_0_ARVALID),
+    .m_axi_gmem_out_0_WDATA(grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_PIXEL_NORM_fu_358_m_axi_gmem_out_0_WDATA),
+    .m_axi_gmem_out_0_WSTRB(grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_PIXEL_NORM_fu_358_m_axi_gmem_out_0_WSTRB),
+    .m_axi_gmem_out_0_WLAST(grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_PIXEL_NORM_fu_358_m_axi_gmem_out_0_WLAST),
+    .m_axi_gmem_out_0_WID(grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_PIXEL_NORM_fu_358_m_axi_gmem_out_0_WID),
+    .m_axi_gmem_out_0_WUSER(grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_PIXEL_NORM_fu_358_m_axi_gmem_out_0_WUSER),
+    .m_axi_gmem_out_0_ARVALID(grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_PIXEL_NORM_fu_358_m_axi_gmem_out_0_ARVALID),
     .m_axi_gmem_out_0_ARREADY(1'b0),
-    .m_axi_gmem_out_0_ARADDR(grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_NORM_WRITE_fu_370_m_axi_gmem_out_0_ARADDR),
-    .m_axi_gmem_out_0_ARID(grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_NORM_WRITE_fu_370_m_axi_gmem_out_0_ARID),
-    .m_axi_gmem_out_0_ARLEN(grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_NORM_WRITE_fu_370_m_axi_gmem_out_0_ARLEN),
-    .m_axi_gmem_out_0_ARSIZE(grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_NORM_WRITE_fu_370_m_axi_gmem_out_0_ARSIZE),
-    .m_axi_gmem_out_0_ARBURST(grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_NORM_WRITE_fu_370_m_axi_gmem_out_0_ARBURST),
-    .m_axi_gmem_out_0_ARLOCK(grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_NORM_WRITE_fu_370_m_axi_gmem_out_0_ARLOCK),
-    .m_axi_gmem_out_0_ARCACHE(grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_NORM_WRITE_fu_370_m_axi_gmem_out_0_ARCACHE),
-    .m_axi_gmem_out_0_ARPROT(grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_NORM_WRITE_fu_370_m_axi_gmem_out_0_ARPROT),
-    .m_axi_gmem_out_0_ARQOS(grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_NORM_WRITE_fu_370_m_axi_gmem_out_0_ARQOS),
-    .m_axi_gmem_out_0_ARREGION(grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_NORM_WRITE_fu_370_m_axi_gmem_out_0_ARREGION),
-    .m_axi_gmem_out_0_ARUSER(grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_NORM_WRITE_fu_370_m_axi_gmem_out_0_ARUSER),
+    .m_axi_gmem_out_0_ARADDR(grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_PIXEL_NORM_fu_358_m_axi_gmem_out_0_ARADDR),
+    .m_axi_gmem_out_0_ARID(grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_PIXEL_NORM_fu_358_m_axi_gmem_out_0_ARID),
+    .m_axi_gmem_out_0_ARLEN(grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_PIXEL_NORM_fu_358_m_axi_gmem_out_0_ARLEN),
+    .m_axi_gmem_out_0_ARSIZE(grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_PIXEL_NORM_fu_358_m_axi_gmem_out_0_ARSIZE),
+    .m_axi_gmem_out_0_ARBURST(grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_PIXEL_NORM_fu_358_m_axi_gmem_out_0_ARBURST),
+    .m_axi_gmem_out_0_ARLOCK(grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_PIXEL_NORM_fu_358_m_axi_gmem_out_0_ARLOCK),
+    .m_axi_gmem_out_0_ARCACHE(grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_PIXEL_NORM_fu_358_m_axi_gmem_out_0_ARCACHE),
+    .m_axi_gmem_out_0_ARPROT(grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_PIXEL_NORM_fu_358_m_axi_gmem_out_0_ARPROT),
+    .m_axi_gmem_out_0_ARQOS(grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_PIXEL_NORM_fu_358_m_axi_gmem_out_0_ARQOS),
+    .m_axi_gmem_out_0_ARREGION(grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_PIXEL_NORM_fu_358_m_axi_gmem_out_0_ARREGION),
+    .m_axi_gmem_out_0_ARUSER(grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_PIXEL_NORM_fu_358_m_axi_gmem_out_0_ARUSER),
     .m_axi_gmem_out_0_RVALID(1'b0),
-    .m_axi_gmem_out_0_RREADY(grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_NORM_WRITE_fu_370_m_axi_gmem_out_0_RREADY),
+    .m_axi_gmem_out_0_RREADY(grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_PIXEL_NORM_fu_358_m_axi_gmem_out_0_RREADY),
     .m_axi_gmem_out_0_RDATA(256'd0),
     .m_axi_gmem_out_0_RLAST(1'b0),
     .m_axi_gmem_out_0_RID(1'd0),
@@ -2909,334 +2806,267 @@ upconv_core_top_ucb1_UpConv_Fused_Row_8_32_32_480_240_Pipeline_NORM_WRITE grp_Up
     .m_axi_gmem_out_0_RUSER(1'd0),
     .m_axi_gmem_out_0_RRESP(2'd0),
     .m_axi_gmem_out_0_BVALID(m_axi_gmem_out_0_BVALID),
-    .m_axi_gmem_out_0_BREADY(grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_NORM_WRITE_fu_370_m_axi_gmem_out_0_BREADY),
+    .m_axi_gmem_out_0_BREADY(grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_PIXEL_NORM_fu_358_m_axi_gmem_out_0_BREADY),
     .m_axi_gmem_out_0_BRESP(m_axi_gmem_out_0_BRESP),
     .m_axi_gmem_out_0_BID(m_axi_gmem_out_0_BID),
     .m_axi_gmem_out_0_BUSER(m_axi_gmem_out_0_BUSER),
-    .sext_ln238(trunc_ln3_reg_689),
-    .mul_ln246(sub_ln246_reg_708),
-    .g_buf_address0(grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_NORM_WRITE_fu_370_g_buf_address0),
-    .g_buf_ce0(grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_NORM_WRITE_fu_370_g_buf_ce0),
+    .g_buf_address0(grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_PIXEL_NORM_fu_358_g_buf_address0),
+    .g_buf_ce0(grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_PIXEL_NORM_fu_358_g_buf_ce0),
     .g_buf_q0(g_buf_q0),
-    .be_buf_address0(grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_NORM_WRITE_fu_370_be_buf_address0),
-    .be_buf_ce0(grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_NORM_WRITE_fu_370_be_buf_ce0),
+    .be_buf_address0(grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_PIXEL_NORM_fu_358_be_buf_address0),
+    .be_buf_ce0(grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_PIXEL_NORM_fu_358_be_buf_ce0),
     .be_buf_q0(be_buf_q0),
-    .conv3(conv3_reg_720),
-    .inv_std(inv_std_reg_735),
-    .void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_9_address0(grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_NORM_WRITE_fu_370_void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_9_address0),
-    .void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_9_ce0(grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_NORM_WRITE_fu_370_void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_9_ce0),
+    .zext_ln262(mul43_i_reg_577),
+    .Y(Y),
+    .mean_buf_address0(grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_PIXEL_NORM_fu_358_mean_buf_address0),
+    .mean_buf_ce0(grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_PIXEL_NORM_fu_358_mean_buf_ce0),
+    .mean_buf_q0(mean_buf_q0),
+    .inv_buf_address0(grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_PIXEL_NORM_fu_358_inv_buf_address0),
+    .inv_buf_ce0(grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_PIXEL_NORM_fu_358_inv_buf_ce0),
+    .inv_buf_q0(inv_buf_q0),
+    .void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_9_address0(grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_PIXEL_NORM_fu_358_void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_9_address0),
+    .void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_9_ce0(grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_PIXEL_NORM_fu_358_void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_9_ce0),
     .void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_9_q0(void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_9_q0),
-    .void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_8_address0(grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_NORM_WRITE_fu_370_void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_8_address0),
-    .void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_8_ce0(grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_NORM_WRITE_fu_370_void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_8_ce0),
+    .void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_8_address0(grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_PIXEL_NORM_fu_358_void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_8_address0),
+    .void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_8_ce0(grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_PIXEL_NORM_fu_358_void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_8_ce0),
     .void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_8_q0(void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_8_q0),
-    .void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_7_address0(grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_NORM_WRITE_fu_370_void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_7_address0),
-    .void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_7_ce0(grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_NORM_WRITE_fu_370_void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_7_ce0),
+    .void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_7_address0(grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_PIXEL_NORM_fu_358_void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_7_address0),
+    .void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_7_ce0(grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_PIXEL_NORM_fu_358_void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_7_ce0),
     .void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_7_q0(void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_7_q0),
-    .void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_6_address0(grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_NORM_WRITE_fu_370_void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_6_address0),
-    .void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_6_ce0(grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_NORM_WRITE_fu_370_void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_6_ce0),
+    .void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_6_address0(grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_PIXEL_NORM_fu_358_void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_6_address0),
+    .void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_6_ce0(grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_PIXEL_NORM_fu_358_void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_6_ce0),
     .void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_6_q0(void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_6_q0),
-    .void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_5_address0(grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_NORM_WRITE_fu_370_void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_5_address0),
-    .void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_5_ce0(grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_NORM_WRITE_fu_370_void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_5_ce0),
+    .void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_5_address0(grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_PIXEL_NORM_fu_358_void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_5_address0),
+    .void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_5_ce0(grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_PIXEL_NORM_fu_358_void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_5_ce0),
     .void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_5_q0(void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_5_q0),
-    .void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_4_address0(grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_NORM_WRITE_fu_370_void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_4_address0),
-    .void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_4_ce0(grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_NORM_WRITE_fu_370_void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_4_ce0),
+    .void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_4_address0(grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_PIXEL_NORM_fu_358_void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_4_address0),
+    .void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_4_ce0(grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_PIXEL_NORM_fu_358_void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_4_ce0),
     .void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_4_q0(void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_4_q0),
-    .void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_3_address0(grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_NORM_WRITE_fu_370_void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_3_address0),
-    .void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_3_ce0(grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_NORM_WRITE_fu_370_void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_3_ce0),
+    .void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_3_address0(grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_PIXEL_NORM_fu_358_void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_3_address0),
+    .void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_3_ce0(grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_PIXEL_NORM_fu_358_void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_3_ce0),
     .void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_3_q0(void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_3_q0),
-    .void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_2_address0(grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_NORM_WRITE_fu_370_void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_2_address0),
-    .void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_2_ce0(grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_NORM_WRITE_fu_370_void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_2_ce0),
+    .void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_2_address0(grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_PIXEL_NORM_fu_358_void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_2_address0),
+    .void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_2_ce0(grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_PIXEL_NORM_fu_358_void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_2_ce0),
     .void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_2_q0(void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_2_q0),
-    .void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_1_address0(grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_NORM_WRITE_fu_370_void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_1_address0),
-    .void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_1_ce0(grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_NORM_WRITE_fu_370_void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_1_ce0),
+    .void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_1_address0(grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_PIXEL_NORM_fu_358_void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_1_address0),
+    .void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_1_ce0(grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_PIXEL_NORM_fu_358_void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_1_ce0),
     .void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_1_q0(void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_1_q0),
-    .void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_address0(grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_NORM_WRITE_fu_370_void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_address0),
-    .void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_ce0(grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_NORM_WRITE_fu_370_void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_ce0),
+    .void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_address0(grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_PIXEL_NORM_fu_358_void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_address0),
+    .void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_ce0(grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_PIXEL_NORM_fu_358_void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_ce0),
     .void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_q0(void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_q0),
-    .p_ZZ16UpConv_Fused_RowILi8ELi32ELi32ELi480ELi240EEvP7ap_uintILi256EEPKS1_S4_S4_S4_5_address0(grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_NORM_WRITE_fu_370_p_ZZ16UpConv_Fused_RowILi8ELi32ELi32ELi480ELi240EEvP7ap_uintILi256EEPKS1_S4_S4_S4_5_address0),
-    .p_ZZ16UpConv_Fused_RowILi8ELi32ELi32ELi480ELi240EEvP7ap_uintILi256EEPKS1_S4_S4_S4_5_ce0(grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_NORM_WRITE_fu_370_p_ZZ16UpConv_Fused_RowILi8ELi32ELi32ELi480ELi240EEvP7ap_uintILi256EEPKS1_S4_S4_S4_5_ce0),
+    .p_ZZ16UpConv_Fused_RowILi8ELi32ELi32ELi480ELi240EEvP7ap_uintILi256EEPKS1_S4_S4_S4_5_address0(grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_PIXEL_NORM_fu_358_p_ZZ16UpConv_Fused_RowILi8ELi32ELi32ELi480ELi240EEvP7ap_uintILi256EEPKS1_S4_S4_S4_5_address0),
+    .p_ZZ16UpConv_Fused_RowILi8ELi32ELi32ELi480ELi240EEvP7ap_uintILi256EEPKS1_S4_S4_S4_5_ce0(grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_PIXEL_NORM_fu_358_p_ZZ16UpConv_Fused_RowILi8ELi32ELi32ELi480ELi240EEvP7ap_uintILi256EEPKS1_S4_S4_S4_5_ce0),
     .p_ZZ16UpConv_Fused_RowILi8ELi32ELi32ELi480ELi240EEvP7ap_uintILi256EEPKS1_S4_S4_S4_5_q0(p_ZZ16UpConv_Fused_RowILi8ELi32ELi32ELi480ELi240EEvP7ap_uintILi256EEPKS1_S4_S4_S4_5_q0),
-    .p_ZZ16UpConv_Fused_RowILi8ELi32ELi32ELi480ELi240EEvP7ap_uintILi256EEPKS1_S4_S4_S4_4_address0(grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_NORM_WRITE_fu_370_p_ZZ16UpConv_Fused_RowILi8ELi32ELi32ELi480ELi240EEvP7ap_uintILi256EEPKS1_S4_S4_S4_4_address0),
-    .p_ZZ16UpConv_Fused_RowILi8ELi32ELi32ELi480ELi240EEvP7ap_uintILi256EEPKS1_S4_S4_S4_4_ce0(grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_NORM_WRITE_fu_370_p_ZZ16UpConv_Fused_RowILi8ELi32ELi32ELi480ELi240EEvP7ap_uintILi256EEPKS1_S4_S4_S4_4_ce0),
+    .p_ZZ16UpConv_Fused_RowILi8ELi32ELi32ELi480ELi240EEvP7ap_uintILi256EEPKS1_S4_S4_S4_4_address0(grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_PIXEL_NORM_fu_358_p_ZZ16UpConv_Fused_RowILi8ELi32ELi32ELi480ELi240EEvP7ap_uintILi256EEPKS1_S4_S4_S4_4_address0),
+    .p_ZZ16UpConv_Fused_RowILi8ELi32ELi32ELi480ELi240EEvP7ap_uintILi256EEPKS1_S4_S4_S4_4_ce0(grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_PIXEL_NORM_fu_358_p_ZZ16UpConv_Fused_RowILi8ELi32ELi32ELi480ELi240EEvP7ap_uintILi256EEPKS1_S4_S4_S4_4_ce0),
     .p_ZZ16UpConv_Fused_RowILi8ELi32ELi32ELi480ELi240EEvP7ap_uintILi256EEPKS1_S4_S4_S4_4_q0(p_ZZ16UpConv_Fused_RowILi8ELi32ELi32ELi480ELi240EEvP7ap_uintILi256EEPKS1_S4_S4_S4_4_q0),
-    .p_ZZ16UpConv_Fused_RowILi8ELi32ELi32ELi480ELi240EEvP7ap_uintILi256EEPKS1_S4_S4_S4_3_address0(grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_NORM_WRITE_fu_370_p_ZZ16UpConv_Fused_RowILi8ELi32ELi32ELi480ELi240EEvP7ap_uintILi256EEPKS1_S4_S4_S4_3_address0),
-    .p_ZZ16UpConv_Fused_RowILi8ELi32ELi32ELi480ELi240EEvP7ap_uintILi256EEPKS1_S4_S4_S4_3_ce0(grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_NORM_WRITE_fu_370_p_ZZ16UpConv_Fused_RowILi8ELi32ELi32ELi480ELi240EEvP7ap_uintILi256EEPKS1_S4_S4_S4_3_ce0),
+    .p_ZZ16UpConv_Fused_RowILi8ELi32ELi32ELi480ELi240EEvP7ap_uintILi256EEPKS1_S4_S4_S4_3_address0(grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_PIXEL_NORM_fu_358_p_ZZ16UpConv_Fused_RowILi8ELi32ELi32ELi480ELi240EEvP7ap_uintILi256EEPKS1_S4_S4_S4_3_address0),
+    .p_ZZ16UpConv_Fused_RowILi8ELi32ELi32ELi480ELi240EEvP7ap_uintILi256EEPKS1_S4_S4_S4_3_ce0(grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_PIXEL_NORM_fu_358_p_ZZ16UpConv_Fused_RowILi8ELi32ELi32ELi480ELi240EEvP7ap_uintILi256EEPKS1_S4_S4_S4_3_ce0),
     .p_ZZ16UpConv_Fused_RowILi8ELi32ELi32ELi480ELi240EEvP7ap_uintILi256EEPKS1_S4_S4_S4_3_q0(p_ZZ16UpConv_Fused_RowILi8ELi32ELi32ELi480ELi240EEvP7ap_uintILi256EEPKS1_S4_S4_S4_3_q0),
-    .p_ZZ16UpConv_Fused_RowILi8ELi32ELi32ELi480ELi240EEvP7ap_uintILi256EEPKS1_S4_S4_S4_2_address0(grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_NORM_WRITE_fu_370_p_ZZ16UpConv_Fused_RowILi8ELi32ELi32ELi480ELi240EEvP7ap_uintILi256EEPKS1_S4_S4_S4_2_address0),
-    .p_ZZ16UpConv_Fused_RowILi8ELi32ELi32ELi480ELi240EEvP7ap_uintILi256EEPKS1_S4_S4_S4_2_ce0(grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_NORM_WRITE_fu_370_p_ZZ16UpConv_Fused_RowILi8ELi32ELi32ELi480ELi240EEvP7ap_uintILi256EEPKS1_S4_S4_S4_2_ce0),
+    .p_ZZ16UpConv_Fused_RowILi8ELi32ELi32ELi480ELi240EEvP7ap_uintILi256EEPKS1_S4_S4_S4_2_address0(grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_PIXEL_NORM_fu_358_p_ZZ16UpConv_Fused_RowILi8ELi32ELi32ELi480ELi240EEvP7ap_uintILi256EEPKS1_S4_S4_S4_2_address0),
+    .p_ZZ16UpConv_Fused_RowILi8ELi32ELi32ELi480ELi240EEvP7ap_uintILi256EEPKS1_S4_S4_S4_2_ce0(grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_PIXEL_NORM_fu_358_p_ZZ16UpConv_Fused_RowILi8ELi32ELi32ELi480ELi240EEvP7ap_uintILi256EEPKS1_S4_S4_S4_2_ce0),
     .p_ZZ16UpConv_Fused_RowILi8ELi32ELi32ELi480ELi240EEvP7ap_uintILi256EEPKS1_S4_S4_S4_2_q0(p_ZZ16UpConv_Fused_RowILi8ELi32ELi32ELi480ELi240EEvP7ap_uintILi256EEPKS1_S4_S4_S4_2_q0),
-    .p_ZZ16UpConv_Fused_RowILi8ELi32ELi32ELi480ELi240EEvP7ap_uintILi256EEPKS1_S4_S4_S4_1_address0(grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_NORM_WRITE_fu_370_p_ZZ16UpConv_Fused_RowILi8ELi32ELi32ELi480ELi240EEvP7ap_uintILi256EEPKS1_S4_S4_S4_1_address0),
-    .p_ZZ16UpConv_Fused_RowILi8ELi32ELi32ELi480ELi240EEvP7ap_uintILi256EEPKS1_S4_S4_S4_1_ce0(grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_NORM_WRITE_fu_370_p_ZZ16UpConv_Fused_RowILi8ELi32ELi32ELi480ELi240EEvP7ap_uintILi256EEPKS1_S4_S4_S4_1_ce0),
+    .p_ZZ16UpConv_Fused_RowILi8ELi32ELi32ELi480ELi240EEvP7ap_uintILi256EEPKS1_S4_S4_S4_1_address0(grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_PIXEL_NORM_fu_358_p_ZZ16UpConv_Fused_RowILi8ELi32ELi32ELi480ELi240EEvP7ap_uintILi256EEPKS1_S4_S4_S4_1_address0),
+    .p_ZZ16UpConv_Fused_RowILi8ELi32ELi32ELi480ELi240EEvP7ap_uintILi256EEPKS1_S4_S4_S4_1_ce0(grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_PIXEL_NORM_fu_358_p_ZZ16UpConv_Fused_RowILi8ELi32ELi32ELi480ELi240EEvP7ap_uintILi256EEPKS1_S4_S4_S4_1_ce0),
     .p_ZZ16UpConv_Fused_RowILi8ELi32ELi32ELi480ELi240EEvP7ap_uintILi256EEPKS1_S4_S4_S4_1_q0(p_ZZ16UpConv_Fused_RowILi8ELi32ELi32ELi480ELi240EEvP7ap_uintILi256EEPKS1_S4_S4_S4_1_q0),
-    .p_ZZ16UpConv_Fused_RowILi8ELi32ELi32ELi480ELi240EEvP7ap_uintILi256EEPKS1_S4_S4_S4_address0(grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_NORM_WRITE_fu_370_p_ZZ16UpConv_Fused_RowILi8ELi32ELi32ELi480ELi240EEvP7ap_uintILi256EEPKS1_S4_S4_S4_address0),
-    .p_ZZ16UpConv_Fused_RowILi8ELi32ELi32ELi480ELi240EEvP7ap_uintILi256EEPKS1_S4_S4_S4_ce0(grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_NORM_WRITE_fu_370_p_ZZ16UpConv_Fused_RowILi8ELi32ELi32ELi480ELi240EEvP7ap_uintILi256EEPKS1_S4_S4_S4_ce0),
+    .p_ZZ16UpConv_Fused_RowILi8ELi32ELi32ELi480ELi240EEvP7ap_uintILi256EEPKS1_S4_S4_S4_address0(grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_PIXEL_NORM_fu_358_p_ZZ16UpConv_Fused_RowILi8ELi32ELi32ELi480ELi240EEvP7ap_uintILi256EEPKS1_S4_S4_S4_address0),
+    .p_ZZ16UpConv_Fused_RowILi8ELi32ELi32ELi480ELi240EEvP7ap_uintILi256EEPKS1_S4_S4_S4_ce0(grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_PIXEL_NORM_fu_358_p_ZZ16UpConv_Fused_RowILi8ELi32ELi32ELi480ELi240EEvP7ap_uintILi256EEPKS1_S4_S4_S4_ce0),
     .p_ZZ16UpConv_Fused_RowILi8ELi32ELi32ELi480ELi240EEvP7ap_uintILi256EEPKS1_S4_S4_S4_q0(p_ZZ16UpConv_Fused_RowILi8ELi32ELi32ELi480ELi240EEvP7ap_uintILi256EEPKS1_S4_S4_S4_q0),
-    .grp_fu_900_p_din0(grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_NORM_WRITE_fu_370_grp_fu_900_p_din0),
-    .grp_fu_900_p_din1(grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_NORM_WRITE_fu_370_grp_fu_900_p_din1),
-    .grp_fu_900_p_dout0(grp_fu_900_p2),
-    .grp_fu_900_p_ce(grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_NORM_WRITE_fu_370_grp_fu_900_p_ce),
-    .grp_fu_904_p_din0(grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_NORM_WRITE_fu_370_grp_fu_904_p_din0),
-    .grp_fu_904_p_din1(grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_NORM_WRITE_fu_370_grp_fu_904_p_din1),
-    .grp_fu_904_p_dout0(grp_fu_904_p2),
-    .grp_fu_904_p_ce(grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_NORM_WRITE_fu_370_grp_fu_904_p_ce),
-    .grp_fu_908_p_din0(grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_NORM_WRITE_fu_370_grp_fu_908_p_din0),
-    .grp_fu_908_p_din1(grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_NORM_WRITE_fu_370_grp_fu_908_p_din1),
-    .grp_fu_908_p_dout0(grp_fu_908_p2),
-    .grp_fu_908_p_ce(grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_NORM_WRITE_fu_370_grp_fu_908_p_ce),
-    .grp_fu_912_p_din0(grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_NORM_WRITE_fu_370_grp_fu_912_p_din0),
-    .grp_fu_912_p_din1(grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_NORM_WRITE_fu_370_grp_fu_912_p_din1),
-    .grp_fu_912_p_dout0(grp_fu_912_p2),
-    .grp_fu_912_p_ce(grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_NORM_WRITE_fu_370_grp_fu_912_p_ce),
-    .grp_fu_916_p_din0(grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_NORM_WRITE_fu_370_grp_fu_916_p_din0),
-    .grp_fu_916_p_din1(grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_NORM_WRITE_fu_370_grp_fu_916_p_din1),
-    .grp_fu_916_p_dout0(grp_fu_916_p2),
-    .grp_fu_916_p_ce(grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_NORM_WRITE_fu_370_grp_fu_916_p_ce),
-    .grp_fu_920_p_din0(grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_NORM_WRITE_fu_370_grp_fu_920_p_din0),
-    .grp_fu_920_p_din1(grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_NORM_WRITE_fu_370_grp_fu_920_p_din1),
-    .grp_fu_920_p_dout0(grp_fu_920_p2),
-    .grp_fu_920_p_ce(grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_NORM_WRITE_fu_370_grp_fu_920_p_ce),
-    .grp_fu_924_p_din0(grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_NORM_WRITE_fu_370_grp_fu_924_p_din0),
-    .grp_fu_924_p_din1(grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_NORM_WRITE_fu_370_grp_fu_924_p_din1),
-    .grp_fu_924_p_dout0(grp_fu_924_p2),
-    .grp_fu_924_p_ce(grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_NORM_WRITE_fu_370_grp_fu_924_p_ce),
-    .grp_fu_928_p_din0(grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_NORM_WRITE_fu_370_grp_fu_928_p_din0),
-    .grp_fu_928_p_din1(grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_NORM_WRITE_fu_370_grp_fu_928_p_din1),
-    .grp_fu_928_p_dout0(grp_fu_928_p2),
-    .grp_fu_928_p_ce(grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_NORM_WRITE_fu_370_grp_fu_928_p_ce),
-    .grp_fu_740_p_din0(grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_NORM_WRITE_fu_370_grp_fu_740_p_din0),
-    .grp_fu_740_p_din1(grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_NORM_WRITE_fu_370_grp_fu_740_p_din1),
-    .grp_fu_740_p_dout0(grp_fu_740_p2),
-    .grp_fu_740_p_ce(grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_NORM_WRITE_fu_370_grp_fu_740_p_ce),
-    .grp_fu_744_p_din0(grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_NORM_WRITE_fu_370_grp_fu_744_p_din0),
-    .grp_fu_744_p_din1(grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_NORM_WRITE_fu_370_grp_fu_744_p_din1),
-    .grp_fu_744_p_dout0(grp_fu_744_p2),
-    .grp_fu_744_p_ce(grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_NORM_WRITE_fu_370_grp_fu_744_p_ce),
-    .grp_fu_748_p_din0(grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_NORM_WRITE_fu_370_grp_fu_748_p_din0),
-    .grp_fu_748_p_din1(grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_NORM_WRITE_fu_370_grp_fu_748_p_din1),
-    .grp_fu_748_p_dout0(grp_fu_748_p2),
-    .grp_fu_748_p_ce(grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_NORM_WRITE_fu_370_grp_fu_748_p_ce),
-    .grp_fu_752_p_din0(grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_NORM_WRITE_fu_370_grp_fu_752_p_din0),
-    .grp_fu_752_p_din1(grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_NORM_WRITE_fu_370_grp_fu_752_p_din1),
-    .grp_fu_752_p_dout0(grp_fu_752_p2),
-    .grp_fu_752_p_ce(grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_NORM_WRITE_fu_370_grp_fu_752_p_ce),
-    .grp_fu_756_p_din0(grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_NORM_WRITE_fu_370_grp_fu_756_p_din0),
-    .grp_fu_756_p_din1(grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_NORM_WRITE_fu_370_grp_fu_756_p_din1),
-    .grp_fu_756_p_dout0(grp_fu_756_p2),
-    .grp_fu_756_p_ce(grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_NORM_WRITE_fu_370_grp_fu_756_p_ce),
-    .grp_fu_760_p_din0(grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_NORM_WRITE_fu_370_grp_fu_760_p_din0),
-    .grp_fu_760_p_din1(grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_NORM_WRITE_fu_370_grp_fu_760_p_din1),
-    .grp_fu_760_p_dout0(grp_fu_760_p2),
-    .grp_fu_760_p_ce(grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_NORM_WRITE_fu_370_grp_fu_760_p_ce),
-    .grp_fu_764_p_din0(grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_NORM_WRITE_fu_370_grp_fu_764_p_din0),
-    .grp_fu_764_p_din1(grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_NORM_WRITE_fu_370_grp_fu_764_p_din1),
-    .grp_fu_764_p_dout0(grp_fu_764_p2),
-    .grp_fu_764_p_ce(grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_NORM_WRITE_fu_370_grp_fu_764_p_ce),
-    .grp_fu_768_p_din0(grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_NORM_WRITE_fu_370_grp_fu_768_p_din0),
-    .grp_fu_768_p_din1(grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_NORM_WRITE_fu_370_grp_fu_768_p_din1),
-    .grp_fu_768_p_dout0(grp_fu_768_p2),
-    .grp_fu_768_p_ce(grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_NORM_WRITE_fu_370_grp_fu_768_p_ce),
-    .grp_fu_772_p_din0(grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_NORM_WRITE_fu_370_grp_fu_772_p_din0),
-    .grp_fu_772_p_din1(grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_NORM_WRITE_fu_370_grp_fu_772_p_din1),
-    .grp_fu_772_p_dout0(grp_fu_772_p2),
-    .grp_fu_772_p_ce(grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_NORM_WRITE_fu_370_grp_fu_772_p_ce),
-    .grp_fu_776_p_din0(grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_NORM_WRITE_fu_370_grp_fu_776_p_din0),
-    .grp_fu_776_p_din1(grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_NORM_WRITE_fu_370_grp_fu_776_p_din1),
-    .grp_fu_776_p_dout0(grp_fu_776_p2),
-    .grp_fu_776_p_ce(grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_NORM_WRITE_fu_370_grp_fu_776_p_ce),
-    .grp_fu_780_p_din0(grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_NORM_WRITE_fu_370_grp_fu_780_p_din0),
-    .grp_fu_780_p_din1(grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_NORM_WRITE_fu_370_grp_fu_780_p_din1),
-    .grp_fu_780_p_dout0(grp_fu_780_p2),
-    .grp_fu_780_p_ce(grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_NORM_WRITE_fu_370_grp_fu_780_p_ce),
-    .grp_fu_784_p_din0(grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_NORM_WRITE_fu_370_grp_fu_784_p_din0),
-    .grp_fu_784_p_din1(grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_NORM_WRITE_fu_370_grp_fu_784_p_din1),
-    .grp_fu_784_p_dout0(grp_fu_784_p2),
-    .grp_fu_784_p_ce(grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_NORM_WRITE_fu_370_grp_fu_784_p_ce),
-    .grp_fu_788_p_din0(grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_NORM_WRITE_fu_370_grp_fu_788_p_din0),
-    .grp_fu_788_p_din1(grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_NORM_WRITE_fu_370_grp_fu_788_p_din1),
-    .grp_fu_788_p_dout0(grp_fu_788_p2),
-    .grp_fu_788_p_ce(grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_NORM_WRITE_fu_370_grp_fu_788_p_ce),
-    .grp_fu_792_p_din0(grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_NORM_WRITE_fu_370_grp_fu_792_p_din0),
-    .grp_fu_792_p_din1(grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_NORM_WRITE_fu_370_grp_fu_792_p_din1),
-    .grp_fu_792_p_dout0(grp_fu_792_p2),
-    .grp_fu_792_p_ce(grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_NORM_WRITE_fu_370_grp_fu_792_p_ce),
-    .grp_fu_796_p_din0(grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_NORM_WRITE_fu_370_grp_fu_796_p_din0),
-    .grp_fu_796_p_din1(grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_NORM_WRITE_fu_370_grp_fu_796_p_din1),
-    .grp_fu_796_p_dout0(grp_fu_796_p2),
-    .grp_fu_796_p_ce(grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_NORM_WRITE_fu_370_grp_fu_796_p_ce),
-    .grp_fu_800_p_din0(grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_NORM_WRITE_fu_370_grp_fu_800_p_din0),
-    .grp_fu_800_p_din1(grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_NORM_WRITE_fu_370_grp_fu_800_p_din1),
-    .grp_fu_800_p_dout0(grp_fu_800_p2),
-    .grp_fu_800_p_ce(grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_NORM_WRITE_fu_370_grp_fu_800_p_ce),
-    .grp_fu_804_p_din0(grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_NORM_WRITE_fu_370_grp_fu_804_p_din0),
-    .grp_fu_804_p_din1(grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_NORM_WRITE_fu_370_grp_fu_804_p_din1),
-    .grp_fu_804_p_dout0(grp_fu_804_p2),
-    .grp_fu_804_p_ce(grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_NORM_WRITE_fu_370_grp_fu_804_p_ce),
-    .grp_fu_808_p_din0(grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_NORM_WRITE_fu_370_grp_fu_808_p_din0),
-    .grp_fu_808_p_din1(grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_NORM_WRITE_fu_370_grp_fu_808_p_din1),
-    .grp_fu_808_p_dout0(grp_fu_808_p2),
-    .grp_fu_808_p_ce(grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_NORM_WRITE_fu_370_grp_fu_808_p_ce),
-    .grp_fu_812_p_din0(grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_NORM_WRITE_fu_370_grp_fu_812_p_din0),
-    .grp_fu_812_p_din1(grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_NORM_WRITE_fu_370_grp_fu_812_p_din1),
-    .grp_fu_812_p_dout0(grp_fu_812_p2),
-    .grp_fu_812_p_ce(grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_NORM_WRITE_fu_370_grp_fu_812_p_ce),
-    .grp_fu_816_p_din0(grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_NORM_WRITE_fu_370_grp_fu_816_p_din0),
-    .grp_fu_816_p_din1(grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_NORM_WRITE_fu_370_grp_fu_816_p_din1),
-    .grp_fu_816_p_dout0(grp_fu_816_p2),
-    .grp_fu_816_p_ce(grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_NORM_WRITE_fu_370_grp_fu_816_p_ce),
-    .grp_fu_820_p_din0(grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_NORM_WRITE_fu_370_grp_fu_820_p_din0),
-    .grp_fu_820_p_din1(grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_NORM_WRITE_fu_370_grp_fu_820_p_din1),
-    .grp_fu_820_p_dout0(grp_fu_820_p2),
-    .grp_fu_820_p_ce(grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_NORM_WRITE_fu_370_grp_fu_820_p_ce),
-    .grp_fu_824_p_din0(grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_NORM_WRITE_fu_370_grp_fu_824_p_din0),
-    .grp_fu_824_p_din1(grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_NORM_WRITE_fu_370_grp_fu_824_p_din1),
-    .grp_fu_824_p_dout0(grp_fu_824_p2),
-    .grp_fu_824_p_ce(grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_NORM_WRITE_fu_370_grp_fu_824_p_ce),
-    .grp_fu_828_p_din0(grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_NORM_WRITE_fu_370_grp_fu_828_p_din0),
-    .grp_fu_828_p_din1(grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_NORM_WRITE_fu_370_grp_fu_828_p_din1),
-    .grp_fu_828_p_dout0(grp_fu_828_p2),
-    .grp_fu_828_p_ce(grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_NORM_WRITE_fu_370_grp_fu_828_p_ce),
-    .grp_fu_832_p_din0(grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_NORM_WRITE_fu_370_grp_fu_832_p_din0),
-    .grp_fu_832_p_din1(grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_NORM_WRITE_fu_370_grp_fu_832_p_din1),
-    .grp_fu_832_p_dout0(grp_fu_832_p2),
-    .grp_fu_832_p_ce(grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_NORM_WRITE_fu_370_grp_fu_832_p_ce),
-    .grp_fu_836_p_din0(grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_NORM_WRITE_fu_370_grp_fu_836_p_din0),
-    .grp_fu_836_p_din1(grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_NORM_WRITE_fu_370_grp_fu_836_p_din1),
-    .grp_fu_836_p_dout0(grp_fu_836_p2),
-    .grp_fu_836_p_ce(grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_NORM_WRITE_fu_370_grp_fu_836_p_ce),
-    .grp_fu_840_p_din0(grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_NORM_WRITE_fu_370_grp_fu_840_p_din0),
-    .grp_fu_840_p_din1(grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_NORM_WRITE_fu_370_grp_fu_840_p_din1),
-    .grp_fu_840_p_dout0(grp_fu_840_p2),
-    .grp_fu_840_p_ce(grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_NORM_WRITE_fu_370_grp_fu_840_p_ce),
-    .grp_fu_844_p_din0(grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_NORM_WRITE_fu_370_grp_fu_844_p_din0),
-    .grp_fu_844_p_din1(grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_NORM_WRITE_fu_370_grp_fu_844_p_din1),
-    .grp_fu_844_p_dout0(grp_fu_844_p2),
-    .grp_fu_844_p_ce(grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_NORM_WRITE_fu_370_grp_fu_844_p_ce),
-    .grp_fu_848_p_din0(grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_NORM_WRITE_fu_370_grp_fu_848_p_din0),
-    .grp_fu_848_p_din1(grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_NORM_WRITE_fu_370_grp_fu_848_p_din1),
-    .grp_fu_848_p_dout0(grp_fu_848_p2),
-    .grp_fu_848_p_ce(grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_NORM_WRITE_fu_370_grp_fu_848_p_ce),
-    .grp_fu_852_p_din0(grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_NORM_WRITE_fu_370_grp_fu_852_p_din0),
-    .grp_fu_852_p_din1(grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_NORM_WRITE_fu_370_grp_fu_852_p_din1),
-    .grp_fu_852_p_dout0(grp_fu_852_p2),
-    .grp_fu_852_p_ce(grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_NORM_WRITE_fu_370_grp_fu_852_p_ce),
-    .grp_fu_856_p_din0(grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_NORM_WRITE_fu_370_grp_fu_856_p_din0),
-    .grp_fu_856_p_din1(grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_NORM_WRITE_fu_370_grp_fu_856_p_din1),
-    .grp_fu_856_p_dout0(grp_fu_856_p2),
-    .grp_fu_856_p_ce(grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_NORM_WRITE_fu_370_grp_fu_856_p_ce),
-    .grp_fu_860_p_din0(grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_NORM_WRITE_fu_370_grp_fu_860_p_din0),
-    .grp_fu_860_p_din1(grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_NORM_WRITE_fu_370_grp_fu_860_p_din1),
-    .grp_fu_860_p_dout0(grp_fu_860_p2),
-    .grp_fu_860_p_ce(grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_NORM_WRITE_fu_370_grp_fu_860_p_ce),
-    .grp_fu_864_p_din0(grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_NORM_WRITE_fu_370_grp_fu_864_p_din0),
-    .grp_fu_864_p_din1(grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_NORM_WRITE_fu_370_grp_fu_864_p_din1),
-    .grp_fu_864_p_dout0(grp_fu_864_p2),
-    .grp_fu_864_p_ce(grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_NORM_WRITE_fu_370_grp_fu_864_p_ce),
-    .grp_fu_868_p_din0(grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_NORM_WRITE_fu_370_grp_fu_868_p_din0),
-    .grp_fu_868_p_din1(grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_NORM_WRITE_fu_370_grp_fu_868_p_din1),
-    .grp_fu_868_p_dout0(grp_fu_868_p2),
-    .grp_fu_868_p_ce(grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_NORM_WRITE_fu_370_grp_fu_868_p_ce),
-    .grp_fu_872_p_din0(grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_NORM_WRITE_fu_370_grp_fu_872_p_din0),
-    .grp_fu_872_p_din1(grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_NORM_WRITE_fu_370_grp_fu_872_p_din1),
-    .grp_fu_872_p_dout0(grp_fu_872_p2),
-    .grp_fu_872_p_ce(grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_NORM_WRITE_fu_370_grp_fu_872_p_ce),
-    .grp_fu_876_p_din0(grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_NORM_WRITE_fu_370_grp_fu_876_p_din0),
-    .grp_fu_876_p_din1(grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_NORM_WRITE_fu_370_grp_fu_876_p_din1),
-    .grp_fu_876_p_dout0(grp_fu_876_p2),
-    .grp_fu_876_p_ce(grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_NORM_WRITE_fu_370_grp_fu_876_p_ce),
-    .grp_fu_880_p_din0(grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_NORM_WRITE_fu_370_grp_fu_880_p_din0),
-    .grp_fu_880_p_din1(grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_NORM_WRITE_fu_370_grp_fu_880_p_din1),
-    .grp_fu_880_p_dout0(grp_fu_880_p2),
-    .grp_fu_880_p_ce(grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_NORM_WRITE_fu_370_grp_fu_880_p_ce),
-    .grp_fu_884_p_din0(grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_NORM_WRITE_fu_370_grp_fu_884_p_din0),
-    .grp_fu_884_p_din1(grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_NORM_WRITE_fu_370_grp_fu_884_p_din1),
-    .grp_fu_884_p_dout0(grp_fu_884_p2),
-    .grp_fu_884_p_ce(grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_NORM_WRITE_fu_370_grp_fu_884_p_ce),
-    .grp_fu_888_p_din0(grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_NORM_WRITE_fu_370_grp_fu_888_p_din0),
-    .grp_fu_888_p_din1(grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_NORM_WRITE_fu_370_grp_fu_888_p_din1),
-    .grp_fu_888_p_dout0(grp_fu_888_p2),
-    .grp_fu_888_p_ce(grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_NORM_WRITE_fu_370_grp_fu_888_p_ce),
-    .grp_fu_892_p_din0(grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_NORM_WRITE_fu_370_grp_fu_892_p_din0),
-    .grp_fu_892_p_din1(grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_NORM_WRITE_fu_370_grp_fu_892_p_din1),
-    .grp_fu_892_p_dout0(grp_fu_892_p2),
-    .grp_fu_892_p_ce(grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_NORM_WRITE_fu_370_grp_fu_892_p_ce),
-    .grp_fu_896_p_din0(grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_NORM_WRITE_fu_370_grp_fu_896_p_din0),
-    .grp_fu_896_p_din1(grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_NORM_WRITE_fu_370_grp_fu_896_p_din1),
-    .grp_fu_896_p_dout0(grp_fu_896_p2),
-    .grp_fu_896_p_ce(grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_NORM_WRITE_fu_370_grp_fu_896_p_ce)
-);
-
-upconv_core_top_ucb1_faddfsub_32ns_32ns_32_11_full_dsp_1 #(
-    .ID( 1 ),
-    .NUM_STAGE( 11 ),
-    .din0_WIDTH( 32 ),
-    .din1_WIDTH( 32 ),
-    .dout_WIDTH( 32 ))
-faddfsub_32ns_32ns_32_11_full_dsp_1_U558(
-    .clk(ap_clk),
-    .reset(ap_rst),
-    .din0(grp_fu_414_p0),
-    .din1(grp_fu_414_p1),
-    .opcode(grp_fu_414_opcode),
-    .ce(1'b1),
-    .dout(grp_fu_414_p2)
-);
-
-upconv_core_top_ucb1_fmul_32ns_32ns_32_7_max_dsp_1 #(
-    .ID( 1 ),
-    .NUM_STAGE( 7 ),
-    .din0_WIDTH( 32 ),
-    .din1_WIDTH( 32 ),
-    .dout_WIDTH( 32 ))
-fmul_32ns_32ns_32_7_max_dsp_1_U559(
-    .clk(ap_clk),
-    .reset(ap_rst),
-    .din0(grp_fu_418_p0),
-    .din1(grp_fu_418_p1),
-    .ce(grp_fu_418_ce),
-    .dout(grp_fu_418_p2)
-);
-
-upconv_core_top_ucb1_fdiv_32ns_32ns_32_30_no_dsp_1 #(
-    .ID( 1 ),
-    .NUM_STAGE( 30 ),
-    .din0_WIDTH( 32 ),
-    .din1_WIDTH( 32 ),
-    .dout_WIDTH( 32 ))
-fdiv_32ns_32ns_32_30_no_dsp_1_U560(
-    .clk(ap_clk),
-    .reset(ap_rst),
-    .din0(grp_fu_422_p0),
-    .din1(grp_fu_422_p1),
-    .ce(1'b1),
-    .dout(grp_fu_422_p2)
-);
-
-upconv_core_top_ucb1_fsqrt_32ns_32ns_32_28_no_dsp_1 #(
-    .ID( 1 ),
-    .NUM_STAGE( 28 ),
-    .din0_WIDTH( 32 ),
-    .din1_WIDTH( 32 ),
-    .dout_WIDTH( 32 ))
-fsqrt_32ns_32ns_32_28_no_dsp_1_U561(
-    .clk(ap_clk),
-    .reset(ap_rst),
-    .din0(32'd0),
-    .din1(reg_449),
-    .ce(1'b1),
-    .dout(grp_fu_428_p2)
-);
-
-upconv_core_top_ucb1_sptohp_32ns_16_2_no_dsp_1 #(
-    .ID( 1 ),
-    .NUM_STAGE( 2 ),
-    .din0_WIDTH( 32 ),
-    .dout_WIDTH( 16 ))
-sptohp_32ns_16_2_no_dsp_1_U562(
-    .clk(ap_clk),
-    .reset(ap_rst),
-    .din0(reg_441),
-    .ce(1'b1),
-    .dout(grp_fu_433_p1)
+    .grp_fu_774_p_din0(grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_PIXEL_NORM_fu_358_grp_fu_774_p_din0),
+    .grp_fu_774_p_dout0(grp_fu_774_p1),
+    .grp_fu_774_p_ce(grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_PIXEL_NORM_fu_358_grp_fu_774_p_ce),
+    .grp_fu_582_p_din0(grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_PIXEL_NORM_fu_358_grp_fu_582_p_din0),
+    .grp_fu_582_p_din1(grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_PIXEL_NORM_fu_358_grp_fu_582_p_din1),
+    .grp_fu_582_p_dout0(grp_fu_582_p2),
+    .grp_fu_582_p_ce(grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_PIXEL_NORM_fu_358_grp_fu_582_p_ce),
+    .grp_fu_586_p_din0(grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_PIXEL_NORM_fu_358_grp_fu_586_p_din0),
+    .grp_fu_586_p_din1(grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_PIXEL_NORM_fu_358_grp_fu_586_p_din1),
+    .grp_fu_586_p_dout0(grp_fu_586_p2),
+    .grp_fu_586_p_ce(grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_PIXEL_NORM_fu_358_grp_fu_586_p_ce),
+    .grp_fu_590_p_din0(grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_PIXEL_NORM_fu_358_grp_fu_590_p_din0),
+    .grp_fu_590_p_din1(grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_PIXEL_NORM_fu_358_grp_fu_590_p_din1),
+    .grp_fu_590_p_dout0(grp_fu_590_p2),
+    .grp_fu_590_p_ce(grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_PIXEL_NORM_fu_358_grp_fu_590_p_ce),
+    .grp_fu_594_p_din0(grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_PIXEL_NORM_fu_358_grp_fu_594_p_din0),
+    .grp_fu_594_p_din1(grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_PIXEL_NORM_fu_358_grp_fu_594_p_din1),
+    .grp_fu_594_p_dout0(grp_fu_594_p2),
+    .grp_fu_594_p_ce(grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_PIXEL_NORM_fu_358_grp_fu_594_p_ce),
+    .grp_fu_598_p_din0(grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_PIXEL_NORM_fu_358_grp_fu_598_p_din0),
+    .grp_fu_598_p_din1(grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_PIXEL_NORM_fu_358_grp_fu_598_p_din1),
+    .grp_fu_598_p_dout0(grp_fu_598_p2),
+    .grp_fu_598_p_ce(grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_PIXEL_NORM_fu_358_grp_fu_598_p_ce),
+    .grp_fu_602_p_din0(grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_PIXEL_NORM_fu_358_grp_fu_602_p_din0),
+    .grp_fu_602_p_din1(grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_PIXEL_NORM_fu_358_grp_fu_602_p_din1),
+    .grp_fu_602_p_dout0(grp_fu_602_p2),
+    .grp_fu_602_p_ce(grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_PIXEL_NORM_fu_358_grp_fu_602_p_ce),
+    .grp_fu_606_p_din0(grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_PIXEL_NORM_fu_358_grp_fu_606_p_din0),
+    .grp_fu_606_p_din1(grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_PIXEL_NORM_fu_358_grp_fu_606_p_din1),
+    .grp_fu_606_p_dout0(grp_fu_606_p2),
+    .grp_fu_606_p_ce(grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_PIXEL_NORM_fu_358_grp_fu_606_p_ce),
+    .grp_fu_610_p_din0(grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_PIXEL_NORM_fu_358_grp_fu_610_p_din0),
+    .grp_fu_610_p_din1(grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_PIXEL_NORM_fu_358_grp_fu_610_p_din1),
+    .grp_fu_610_p_dout0(grp_fu_610_p2),
+    .grp_fu_610_p_ce(grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_PIXEL_NORM_fu_358_grp_fu_610_p_ce),
+    .grp_fu_614_p_din0(grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_PIXEL_NORM_fu_358_grp_fu_614_p_din0),
+    .grp_fu_614_p_din1(grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_PIXEL_NORM_fu_358_grp_fu_614_p_din1),
+    .grp_fu_614_p_dout0(grp_fu_614_p2),
+    .grp_fu_614_p_ce(grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_PIXEL_NORM_fu_358_grp_fu_614_p_ce),
+    .grp_fu_618_p_din0(grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_PIXEL_NORM_fu_358_grp_fu_618_p_din0),
+    .grp_fu_618_p_din1(grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_PIXEL_NORM_fu_358_grp_fu_618_p_din1),
+    .grp_fu_618_p_dout0(grp_fu_618_p2),
+    .grp_fu_618_p_ce(grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_PIXEL_NORM_fu_358_grp_fu_618_p_ce),
+    .grp_fu_622_p_din0(grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_PIXEL_NORM_fu_358_grp_fu_622_p_din0),
+    .grp_fu_622_p_din1(grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_PIXEL_NORM_fu_358_grp_fu_622_p_din1),
+    .grp_fu_622_p_dout0(grp_fu_622_p2),
+    .grp_fu_622_p_ce(grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_PIXEL_NORM_fu_358_grp_fu_622_p_ce),
+    .grp_fu_626_p_din0(grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_PIXEL_NORM_fu_358_grp_fu_626_p_din0),
+    .grp_fu_626_p_din1(grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_PIXEL_NORM_fu_358_grp_fu_626_p_din1),
+    .grp_fu_626_p_dout0(grp_fu_626_p2),
+    .grp_fu_626_p_ce(grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_PIXEL_NORM_fu_358_grp_fu_626_p_ce),
+    .grp_fu_630_p_din0(grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_PIXEL_NORM_fu_358_grp_fu_630_p_din0),
+    .grp_fu_630_p_din1(grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_PIXEL_NORM_fu_358_grp_fu_630_p_din1),
+    .grp_fu_630_p_dout0(grp_fu_630_p2),
+    .grp_fu_630_p_ce(grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_PIXEL_NORM_fu_358_grp_fu_630_p_ce),
+    .grp_fu_634_p_din0(grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_PIXEL_NORM_fu_358_grp_fu_634_p_din0),
+    .grp_fu_634_p_din1(grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_PIXEL_NORM_fu_358_grp_fu_634_p_din1),
+    .grp_fu_634_p_dout0(grp_fu_634_p2),
+    .grp_fu_634_p_ce(grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_PIXEL_NORM_fu_358_grp_fu_634_p_ce),
+    .grp_fu_638_p_din0(grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_PIXEL_NORM_fu_358_grp_fu_638_p_din0),
+    .grp_fu_638_p_din1(grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_PIXEL_NORM_fu_358_grp_fu_638_p_din1),
+    .grp_fu_638_p_dout0(grp_fu_638_p2),
+    .grp_fu_638_p_ce(grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_PIXEL_NORM_fu_358_grp_fu_638_p_ce),
+    .grp_fu_642_p_din0(grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_PIXEL_NORM_fu_358_grp_fu_642_p_din0),
+    .grp_fu_642_p_din1(grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_PIXEL_NORM_fu_358_grp_fu_642_p_din1),
+    .grp_fu_642_p_dout0(grp_fu_642_p2),
+    .grp_fu_642_p_ce(grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_PIXEL_NORM_fu_358_grp_fu_642_p_ce),
+    .grp_fu_646_p_din0(grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_PIXEL_NORM_fu_358_grp_fu_646_p_din0),
+    .grp_fu_646_p_din1(grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_PIXEL_NORM_fu_358_grp_fu_646_p_din1),
+    .grp_fu_646_p_dout0(grp_fu_646_p2),
+    .grp_fu_646_p_ce(grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_PIXEL_NORM_fu_358_grp_fu_646_p_ce),
+    .grp_fu_650_p_din0(grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_PIXEL_NORM_fu_358_grp_fu_650_p_din0),
+    .grp_fu_650_p_din1(grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_PIXEL_NORM_fu_358_grp_fu_650_p_din1),
+    .grp_fu_650_p_dout0(grp_fu_650_p2),
+    .grp_fu_650_p_ce(grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_PIXEL_NORM_fu_358_grp_fu_650_p_ce),
+    .grp_fu_654_p_din0(grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_PIXEL_NORM_fu_358_grp_fu_654_p_din0),
+    .grp_fu_654_p_din1(grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_PIXEL_NORM_fu_358_grp_fu_654_p_din1),
+    .grp_fu_654_p_dout0(grp_fu_654_p2),
+    .grp_fu_654_p_ce(grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_PIXEL_NORM_fu_358_grp_fu_654_p_ce),
+    .grp_fu_658_p_din0(grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_PIXEL_NORM_fu_358_grp_fu_658_p_din0),
+    .grp_fu_658_p_din1(grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_PIXEL_NORM_fu_358_grp_fu_658_p_din1),
+    .grp_fu_658_p_dout0(grp_fu_658_p2),
+    .grp_fu_658_p_ce(grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_PIXEL_NORM_fu_358_grp_fu_658_p_ce),
+    .grp_fu_662_p_din0(grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_PIXEL_NORM_fu_358_grp_fu_662_p_din0),
+    .grp_fu_662_p_din1(grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_PIXEL_NORM_fu_358_grp_fu_662_p_din1),
+    .grp_fu_662_p_dout0(grp_fu_662_p2),
+    .grp_fu_662_p_ce(grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_PIXEL_NORM_fu_358_grp_fu_662_p_ce),
+    .grp_fu_666_p_din0(grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_PIXEL_NORM_fu_358_grp_fu_666_p_din0),
+    .grp_fu_666_p_din1(grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_PIXEL_NORM_fu_358_grp_fu_666_p_din1),
+    .grp_fu_666_p_dout0(grp_fu_666_p2),
+    .grp_fu_666_p_ce(grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_PIXEL_NORM_fu_358_grp_fu_666_p_ce),
+    .grp_fu_670_p_din0(grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_PIXEL_NORM_fu_358_grp_fu_670_p_din0),
+    .grp_fu_670_p_din1(grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_PIXEL_NORM_fu_358_grp_fu_670_p_din1),
+    .grp_fu_670_p_dout0(grp_fu_670_p2),
+    .grp_fu_670_p_ce(grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_PIXEL_NORM_fu_358_grp_fu_670_p_ce),
+    .grp_fu_674_p_din0(grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_PIXEL_NORM_fu_358_grp_fu_674_p_din0),
+    .grp_fu_674_p_din1(grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_PIXEL_NORM_fu_358_grp_fu_674_p_din1),
+    .grp_fu_674_p_dout0(grp_fu_674_p2),
+    .grp_fu_674_p_ce(grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_PIXEL_NORM_fu_358_grp_fu_674_p_ce),
+    .grp_fu_678_p_din0(grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_PIXEL_NORM_fu_358_grp_fu_678_p_din0),
+    .grp_fu_678_p_din1(grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_PIXEL_NORM_fu_358_grp_fu_678_p_din1),
+    .grp_fu_678_p_dout0(grp_fu_678_p2),
+    .grp_fu_678_p_ce(grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_PIXEL_NORM_fu_358_grp_fu_678_p_ce),
+    .grp_fu_682_p_din0(grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_PIXEL_NORM_fu_358_grp_fu_682_p_din0),
+    .grp_fu_682_p_din1(grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_PIXEL_NORM_fu_358_grp_fu_682_p_din1),
+    .grp_fu_682_p_dout0(grp_fu_682_p2),
+    .grp_fu_682_p_ce(grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_PIXEL_NORM_fu_358_grp_fu_682_p_ce),
+    .grp_fu_686_p_din0(grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_PIXEL_NORM_fu_358_grp_fu_686_p_din0),
+    .grp_fu_686_p_din1(grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_PIXEL_NORM_fu_358_grp_fu_686_p_din1),
+    .grp_fu_686_p_dout0(grp_fu_686_p2),
+    .grp_fu_686_p_ce(grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_PIXEL_NORM_fu_358_grp_fu_686_p_ce),
+    .grp_fu_690_p_din0(grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_PIXEL_NORM_fu_358_grp_fu_690_p_din0),
+    .grp_fu_690_p_din1(grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_PIXEL_NORM_fu_358_grp_fu_690_p_din1),
+    .grp_fu_690_p_dout0(grp_fu_690_p2),
+    .grp_fu_690_p_ce(grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_PIXEL_NORM_fu_358_grp_fu_690_p_ce),
+    .grp_fu_694_p_din0(grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_PIXEL_NORM_fu_358_grp_fu_694_p_din0),
+    .grp_fu_694_p_din1(grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_PIXEL_NORM_fu_358_grp_fu_694_p_din1),
+    .grp_fu_694_p_dout0(grp_fu_694_p2),
+    .grp_fu_694_p_ce(grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_PIXEL_NORM_fu_358_grp_fu_694_p_ce),
+    .grp_fu_698_p_din0(grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_PIXEL_NORM_fu_358_grp_fu_698_p_din0),
+    .grp_fu_698_p_din1(grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_PIXEL_NORM_fu_358_grp_fu_698_p_din1),
+    .grp_fu_698_p_dout0(grp_fu_698_p2),
+    .grp_fu_698_p_ce(grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_PIXEL_NORM_fu_358_grp_fu_698_p_ce),
+    .grp_fu_702_p_din0(grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_PIXEL_NORM_fu_358_grp_fu_702_p_din0),
+    .grp_fu_702_p_din1(grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_PIXEL_NORM_fu_358_grp_fu_702_p_din1),
+    .grp_fu_702_p_dout0(grp_fu_702_p2),
+    .grp_fu_702_p_ce(grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_PIXEL_NORM_fu_358_grp_fu_702_p_ce),
+    .grp_fu_706_p_din0(grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_PIXEL_NORM_fu_358_grp_fu_706_p_din0),
+    .grp_fu_706_p_din1(grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_PIXEL_NORM_fu_358_grp_fu_706_p_din1),
+    .grp_fu_706_p_dout0(grp_fu_706_p2),
+    .grp_fu_706_p_ce(grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_PIXEL_NORM_fu_358_grp_fu_706_p_ce),
+    .grp_fu_710_p_din0(grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_PIXEL_NORM_fu_358_grp_fu_710_p_din0),
+    .grp_fu_710_p_din1(grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_PIXEL_NORM_fu_358_grp_fu_710_p_din1),
+    .grp_fu_710_p_dout0(grp_fu_710_p2),
+    .grp_fu_710_p_ce(grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_PIXEL_NORM_fu_358_grp_fu_710_p_ce),
+    .grp_fu_714_p_din0(grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_PIXEL_NORM_fu_358_grp_fu_714_p_din0),
+    .grp_fu_714_p_din1(grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_PIXEL_NORM_fu_358_grp_fu_714_p_din1),
+    .grp_fu_714_p_dout0(grp_fu_714_p2),
+    .grp_fu_714_p_ce(grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_PIXEL_NORM_fu_358_grp_fu_714_p_ce),
+    .grp_fu_718_p_din0(grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_PIXEL_NORM_fu_358_grp_fu_718_p_din0),
+    .grp_fu_718_p_din1(grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_PIXEL_NORM_fu_358_grp_fu_718_p_din1),
+    .grp_fu_718_p_dout0(grp_fu_718_p2),
+    .grp_fu_718_p_ce(grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_PIXEL_NORM_fu_358_grp_fu_718_p_ce),
+    .grp_fu_722_p_din0(grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_PIXEL_NORM_fu_358_grp_fu_722_p_din0),
+    .grp_fu_722_p_din1(grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_PIXEL_NORM_fu_358_grp_fu_722_p_din1),
+    .grp_fu_722_p_dout0(grp_fu_722_p2),
+    .grp_fu_722_p_ce(grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_PIXEL_NORM_fu_358_grp_fu_722_p_ce),
+    .grp_fu_726_p_din0(grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_PIXEL_NORM_fu_358_grp_fu_726_p_din0),
+    .grp_fu_726_p_din1(grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_PIXEL_NORM_fu_358_grp_fu_726_p_din1),
+    .grp_fu_726_p_dout0(grp_fu_726_p2),
+    .grp_fu_726_p_ce(grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_PIXEL_NORM_fu_358_grp_fu_726_p_ce),
+    .grp_fu_730_p_din0(grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_PIXEL_NORM_fu_358_grp_fu_730_p_din0),
+    .grp_fu_730_p_din1(grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_PIXEL_NORM_fu_358_grp_fu_730_p_din1),
+    .grp_fu_730_p_dout0(grp_fu_730_p2),
+    .grp_fu_730_p_ce(grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_PIXEL_NORM_fu_358_grp_fu_730_p_ce),
+    .grp_fu_734_p_din0(grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_PIXEL_NORM_fu_358_grp_fu_734_p_din0),
+    .grp_fu_734_p_din1(grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_PIXEL_NORM_fu_358_grp_fu_734_p_din1),
+    .grp_fu_734_p_dout0(grp_fu_734_p2),
+    .grp_fu_734_p_ce(grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_PIXEL_NORM_fu_358_grp_fu_734_p_ce),
+    .grp_fu_738_p_din0(grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_PIXEL_NORM_fu_358_grp_fu_738_p_din0),
+    .grp_fu_738_p_din1(grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_PIXEL_NORM_fu_358_grp_fu_738_p_din1),
+    .grp_fu_738_p_dout0(grp_fu_738_p2),
+    .grp_fu_738_p_ce(grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_PIXEL_NORM_fu_358_grp_fu_738_p_ce),
+    .grp_fu_742_p_din0(grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_PIXEL_NORM_fu_358_grp_fu_742_p_din0),
+    .grp_fu_742_p_din1(grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_PIXEL_NORM_fu_358_grp_fu_742_p_din1),
+    .grp_fu_742_p_dout0(grp_fu_742_p2),
+    .grp_fu_742_p_ce(grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_PIXEL_NORM_fu_358_grp_fu_742_p_ce),
+    .grp_fu_746_p_din0(grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_PIXEL_NORM_fu_358_grp_fu_746_p_din0),
+    .grp_fu_746_p_din1(grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_PIXEL_NORM_fu_358_grp_fu_746_p_din1),
+    .grp_fu_746_p_dout0(grp_fu_746_p2),
+    .grp_fu_746_p_ce(grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_PIXEL_NORM_fu_358_grp_fu_746_p_ce),
+    .grp_fu_750_p_din0(grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_PIXEL_NORM_fu_358_grp_fu_750_p_din0),
+    .grp_fu_750_p_din1(grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_PIXEL_NORM_fu_358_grp_fu_750_p_din1),
+    .grp_fu_750_p_dout0(grp_fu_750_p2),
+    .grp_fu_750_p_ce(grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_PIXEL_NORM_fu_358_grp_fu_750_p_ce),
+    .grp_fu_754_p_din0(grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_PIXEL_NORM_fu_358_grp_fu_754_p_din0),
+    .grp_fu_754_p_din1(grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_PIXEL_NORM_fu_358_grp_fu_754_p_din1),
+    .grp_fu_754_p_dout0(grp_fu_754_p2),
+    .grp_fu_754_p_ce(grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_PIXEL_NORM_fu_358_grp_fu_754_p_ce),
+    .grp_fu_758_p_din0(grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_PIXEL_NORM_fu_358_grp_fu_758_p_din0),
+    .grp_fu_758_p_din1(grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_PIXEL_NORM_fu_358_grp_fu_758_p_din1),
+    .grp_fu_758_p_dout0(grp_fu_758_p2),
+    .grp_fu_758_p_ce(grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_PIXEL_NORM_fu_358_grp_fu_758_p_ce),
+    .grp_fu_762_p_din0(grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_PIXEL_NORM_fu_358_grp_fu_762_p_din0),
+    .grp_fu_762_p_din1(grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_PIXEL_NORM_fu_358_grp_fu_762_p_din1),
+    .grp_fu_762_p_dout0(grp_fu_762_p2),
+    .grp_fu_762_p_ce(grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_PIXEL_NORM_fu_358_grp_fu_762_p_ce),
+    .grp_fu_766_p_din0(grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_PIXEL_NORM_fu_358_grp_fu_766_p_din0),
+    .grp_fu_766_p_din1(grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_PIXEL_NORM_fu_358_grp_fu_766_p_din1),
+    .grp_fu_766_p_dout0(grp_fu_766_p2),
+    .grp_fu_766_p_ce(grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_PIXEL_NORM_fu_358_grp_fu_766_p_ce),
+    .grp_fu_770_p_din0(grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_PIXEL_NORM_fu_358_grp_fu_770_p_din0),
+    .grp_fu_770_p_din1(grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_PIXEL_NORM_fu_358_grp_fu_770_p_din1),
+    .grp_fu_770_p_dout0(grp_fu_770_p2),
+    .grp_fu_770_p_ce(grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_PIXEL_NORM_fu_358_grp_fu_770_p_ce)
 );
 
 upconv_core_top_ucb1_hptosp_16ns_32_2_no_dsp_1 #(
@@ -3244,12 +3074,12 @@ upconv_core_top_ucb1_hptosp_16ns_32_2_no_dsp_1 #(
     .NUM_STAGE( 2 ),
     .din0_WIDTH( 16 ),
     .dout_WIDTH( 32 ))
-hptosp_16ns_32_2_no_dsp_1_U563(
+hptosp_16ns_32_2_no_dsp_1_U611(
     .clk(ap_clk),
     .reset(ap_rst),
-    .din0(grp_fu_437_p0),
-    .ce(grp_fu_437_ce),
-    .dout(grp_fu_437_p1)
+    .din0(grp_fu_405_p0),
+    .ce(grp_fu_405_ce),
+    .dout(grp_fu_405_p1)
 );
 
 upconv_core_top_ucb1_hadd_16ns_16ns_16_5_full_dsp_1 #(
@@ -3258,13 +3088,13 @@ upconv_core_top_ucb1_hadd_16ns_16ns_16_5_full_dsp_1 #(
     .din0_WIDTH( 16 ),
     .din1_WIDTH( 16 ),
     .dout_WIDTH( 16 ))
-hadd_16ns_16ns_16_5_full_dsp_1_U564(
+hadd_16ns_16ns_16_5_full_dsp_1_U612(
     .clk(ap_clk),
     .reset(ap_rst),
-    .din0(grp_fu_740_p0),
-    .din1(grp_fu_740_p1),
-    .ce(grp_fu_740_ce),
-    .dout(grp_fu_740_p2)
+    .din0(grp_fu_582_p0),
+    .din1(grp_fu_582_p1),
+    .ce(grp_fu_582_ce),
+    .dout(grp_fu_582_p2)
 );
 
 upconv_core_top_ucb1_hadd_16ns_16ns_16_5_full_dsp_1 #(
@@ -3273,13 +3103,13 @@ upconv_core_top_ucb1_hadd_16ns_16ns_16_5_full_dsp_1 #(
     .din0_WIDTH( 16 ),
     .din1_WIDTH( 16 ),
     .dout_WIDTH( 16 ))
-hadd_16ns_16ns_16_5_full_dsp_1_U565(
+hadd_16ns_16ns_16_5_full_dsp_1_U613(
     .clk(ap_clk),
     .reset(ap_rst),
-    .din0(grp_fu_744_p0),
-    .din1(grp_fu_744_p1),
-    .ce(grp_fu_744_ce),
-    .dout(grp_fu_744_p2)
+    .din0(grp_fu_586_p0),
+    .din1(grp_fu_586_p1),
+    .ce(grp_fu_586_ce),
+    .dout(grp_fu_586_p2)
 );
 
 upconv_core_top_ucb1_hadd_16ns_16ns_16_5_full_dsp_1 #(
@@ -3288,13 +3118,13 @@ upconv_core_top_ucb1_hadd_16ns_16ns_16_5_full_dsp_1 #(
     .din0_WIDTH( 16 ),
     .din1_WIDTH( 16 ),
     .dout_WIDTH( 16 ))
-hadd_16ns_16ns_16_5_full_dsp_1_U566(
+hadd_16ns_16ns_16_5_full_dsp_1_U614(
     .clk(ap_clk),
     .reset(ap_rst),
-    .din0(grp_fu_748_p0),
-    .din1(grp_fu_748_p1),
-    .ce(grp_fu_748_ce),
-    .dout(grp_fu_748_p2)
+    .din0(grp_fu_590_p0),
+    .din1(grp_fu_590_p1),
+    .ce(grp_fu_590_ce),
+    .dout(grp_fu_590_p2)
 );
 
 upconv_core_top_ucb1_hadd_16ns_16ns_16_5_full_dsp_1 #(
@@ -3303,13 +3133,13 @@ upconv_core_top_ucb1_hadd_16ns_16ns_16_5_full_dsp_1 #(
     .din0_WIDTH( 16 ),
     .din1_WIDTH( 16 ),
     .dout_WIDTH( 16 ))
-hadd_16ns_16ns_16_5_full_dsp_1_U567(
+hadd_16ns_16ns_16_5_full_dsp_1_U615(
     .clk(ap_clk),
     .reset(ap_rst),
-    .din0(grp_fu_752_p0),
-    .din1(grp_fu_752_p1),
-    .ce(grp_fu_752_ce),
-    .dout(grp_fu_752_p2)
+    .din0(grp_fu_594_p0),
+    .din1(grp_fu_594_p1),
+    .ce(grp_fu_594_ce),
+    .dout(grp_fu_594_p2)
 );
 
 upconv_core_top_ucb1_hadd_16ns_16ns_16_5_full_dsp_1 #(
@@ -3318,13 +3148,13 @@ upconv_core_top_ucb1_hadd_16ns_16ns_16_5_full_dsp_1 #(
     .din0_WIDTH( 16 ),
     .din1_WIDTH( 16 ),
     .dout_WIDTH( 16 ))
-hadd_16ns_16ns_16_5_full_dsp_1_U568(
+hadd_16ns_16ns_16_5_full_dsp_1_U616(
     .clk(ap_clk),
     .reset(ap_rst),
-    .din0(grp_fu_756_p0),
-    .din1(grp_fu_756_p1),
-    .ce(grp_fu_756_ce),
-    .dout(grp_fu_756_p2)
+    .din0(grp_fu_598_p0),
+    .din1(grp_fu_598_p1),
+    .ce(grp_fu_598_ce),
+    .dout(grp_fu_598_p2)
 );
 
 upconv_core_top_ucb1_hadd_16ns_16ns_16_5_full_dsp_1 #(
@@ -3333,13 +3163,13 @@ upconv_core_top_ucb1_hadd_16ns_16ns_16_5_full_dsp_1 #(
     .din0_WIDTH( 16 ),
     .din1_WIDTH( 16 ),
     .dout_WIDTH( 16 ))
-hadd_16ns_16ns_16_5_full_dsp_1_U569(
+hadd_16ns_16ns_16_5_full_dsp_1_U617(
     .clk(ap_clk),
     .reset(ap_rst),
-    .din0(grp_fu_760_p0),
-    .din1(grp_fu_760_p1),
-    .ce(grp_fu_760_ce),
-    .dout(grp_fu_760_p2)
+    .din0(grp_fu_602_p0),
+    .din1(grp_fu_602_p1),
+    .ce(grp_fu_602_ce),
+    .dout(grp_fu_602_p2)
 );
 
 upconv_core_top_ucb1_hadd_16ns_16ns_16_5_full_dsp_1 #(
@@ -3348,13 +3178,13 @@ upconv_core_top_ucb1_hadd_16ns_16ns_16_5_full_dsp_1 #(
     .din0_WIDTH( 16 ),
     .din1_WIDTH( 16 ),
     .dout_WIDTH( 16 ))
-hadd_16ns_16ns_16_5_full_dsp_1_U570(
+hadd_16ns_16ns_16_5_full_dsp_1_U618(
     .clk(ap_clk),
     .reset(ap_rst),
-    .din0(grp_fu_764_p0),
-    .din1(grp_fu_764_p1),
-    .ce(grp_fu_764_ce),
-    .dout(grp_fu_764_p2)
+    .din0(grp_fu_606_p0),
+    .din1(grp_fu_606_p1),
+    .ce(grp_fu_606_ce),
+    .dout(grp_fu_606_p2)
 );
 
 upconv_core_top_ucb1_hadd_16ns_16ns_16_5_full_dsp_1 #(
@@ -3363,493 +3193,13 @@ upconv_core_top_ucb1_hadd_16ns_16ns_16_5_full_dsp_1 #(
     .din0_WIDTH( 16 ),
     .din1_WIDTH( 16 ),
     .dout_WIDTH( 16 ))
-hadd_16ns_16ns_16_5_full_dsp_1_U571(
+hadd_16ns_16ns_16_5_full_dsp_1_U619(
     .clk(ap_clk),
     .reset(ap_rst),
-    .din0(grp_fu_768_p0),
-    .din1(grp_fu_768_p1),
-    .ce(grp_fu_768_ce),
-    .dout(grp_fu_768_p2)
-);
-
-upconv_core_top_ucb1_hmul_16ns_16ns_16_4_max_dsp_1 #(
-    .ID( 1 ),
-    .NUM_STAGE( 4 ),
-    .din0_WIDTH( 16 ),
-    .din1_WIDTH( 16 ),
-    .dout_WIDTH( 16 ))
-hmul_16ns_16ns_16_4_max_dsp_1_U572(
-    .clk(ap_clk),
-    .reset(ap_rst),
-    .din0(grp_fu_772_p0),
-    .din1(grp_fu_772_p1),
-    .ce(grp_fu_772_ce),
-    .dout(grp_fu_772_p2)
-);
-
-upconv_core_top_ucb1_hmul_16ns_16ns_16_4_max_dsp_1 #(
-    .ID( 1 ),
-    .NUM_STAGE( 4 ),
-    .din0_WIDTH( 16 ),
-    .din1_WIDTH( 16 ),
-    .dout_WIDTH( 16 ))
-hmul_16ns_16ns_16_4_max_dsp_1_U573(
-    .clk(ap_clk),
-    .reset(ap_rst),
-    .din0(grp_fu_776_p0),
-    .din1(grp_fu_776_p1),
-    .ce(grp_fu_776_ce),
-    .dout(grp_fu_776_p2)
-);
-
-upconv_core_top_ucb1_hmul_16ns_16ns_16_4_max_dsp_1 #(
-    .ID( 1 ),
-    .NUM_STAGE( 4 ),
-    .din0_WIDTH( 16 ),
-    .din1_WIDTH( 16 ),
-    .dout_WIDTH( 16 ))
-hmul_16ns_16ns_16_4_max_dsp_1_U574(
-    .clk(ap_clk),
-    .reset(ap_rst),
-    .din0(grp_fu_780_p0),
-    .din1(grp_fu_780_p1),
-    .ce(grp_fu_780_ce),
-    .dout(grp_fu_780_p2)
-);
-
-upconv_core_top_ucb1_hmul_16ns_16ns_16_4_max_dsp_1 #(
-    .ID( 1 ),
-    .NUM_STAGE( 4 ),
-    .din0_WIDTH( 16 ),
-    .din1_WIDTH( 16 ),
-    .dout_WIDTH( 16 ))
-hmul_16ns_16ns_16_4_max_dsp_1_U575(
-    .clk(ap_clk),
-    .reset(ap_rst),
-    .din0(grp_fu_784_p0),
-    .din1(grp_fu_784_p1),
-    .ce(grp_fu_784_ce),
-    .dout(grp_fu_784_p2)
-);
-
-upconv_core_top_ucb1_hmul_16ns_16ns_16_4_max_dsp_1 #(
-    .ID( 1 ),
-    .NUM_STAGE( 4 ),
-    .din0_WIDTH( 16 ),
-    .din1_WIDTH( 16 ),
-    .dout_WIDTH( 16 ))
-hmul_16ns_16ns_16_4_max_dsp_1_U576(
-    .clk(ap_clk),
-    .reset(ap_rst),
-    .din0(grp_fu_788_p0),
-    .din1(grp_fu_788_p1),
-    .ce(grp_fu_788_ce),
-    .dout(grp_fu_788_p2)
-);
-
-upconv_core_top_ucb1_hmul_16ns_16ns_16_4_max_dsp_1 #(
-    .ID( 1 ),
-    .NUM_STAGE( 4 ),
-    .din0_WIDTH( 16 ),
-    .din1_WIDTH( 16 ),
-    .dout_WIDTH( 16 ))
-hmul_16ns_16ns_16_4_max_dsp_1_U577(
-    .clk(ap_clk),
-    .reset(ap_rst),
-    .din0(grp_fu_792_p0),
-    .din1(grp_fu_792_p1),
-    .ce(grp_fu_792_ce),
-    .dout(grp_fu_792_p2)
-);
-
-upconv_core_top_ucb1_hmul_16ns_16ns_16_4_max_dsp_1 #(
-    .ID( 1 ),
-    .NUM_STAGE( 4 ),
-    .din0_WIDTH( 16 ),
-    .din1_WIDTH( 16 ),
-    .dout_WIDTH( 16 ))
-hmul_16ns_16ns_16_4_max_dsp_1_U578(
-    .clk(ap_clk),
-    .reset(ap_rst),
-    .din0(grp_fu_796_p0),
-    .din1(grp_fu_796_p1),
-    .ce(grp_fu_796_ce),
-    .dout(grp_fu_796_p2)
-);
-
-upconv_core_top_ucb1_hmul_16ns_16ns_16_4_max_dsp_1 #(
-    .ID( 1 ),
-    .NUM_STAGE( 4 ),
-    .din0_WIDTH( 16 ),
-    .din1_WIDTH( 16 ),
-    .dout_WIDTH( 16 ))
-hmul_16ns_16ns_16_4_max_dsp_1_U579(
-    .clk(ap_clk),
-    .reset(ap_rst),
-    .din0(grp_fu_800_p0),
-    .din1(grp_fu_800_p1),
-    .ce(grp_fu_800_ce),
-    .dout(grp_fu_800_p2)
-);
-
-upconv_core_top_ucb1_hmul_16ns_16ns_16_4_max_dsp_1 #(
-    .ID( 1 ),
-    .NUM_STAGE( 4 ),
-    .din0_WIDTH( 16 ),
-    .din1_WIDTH( 16 ),
-    .dout_WIDTH( 16 ))
-hmul_16ns_16ns_16_4_max_dsp_1_U580(
-    .clk(ap_clk),
-    .reset(ap_rst),
-    .din0(grp_fu_804_p0),
-    .din1(grp_fu_804_p1),
-    .ce(grp_fu_804_ce),
-    .dout(grp_fu_804_p2)
-);
-
-upconv_core_top_ucb1_hmul_16ns_16ns_16_4_max_dsp_1 #(
-    .ID( 1 ),
-    .NUM_STAGE( 4 ),
-    .din0_WIDTH( 16 ),
-    .din1_WIDTH( 16 ),
-    .dout_WIDTH( 16 ))
-hmul_16ns_16ns_16_4_max_dsp_1_U581(
-    .clk(ap_clk),
-    .reset(ap_rst),
-    .din0(grp_fu_808_p0),
-    .din1(grp_fu_808_p1),
-    .ce(grp_fu_808_ce),
-    .dout(grp_fu_808_p2)
-);
-
-upconv_core_top_ucb1_hmul_16ns_16ns_16_4_max_dsp_1 #(
-    .ID( 1 ),
-    .NUM_STAGE( 4 ),
-    .din0_WIDTH( 16 ),
-    .din1_WIDTH( 16 ),
-    .dout_WIDTH( 16 ))
-hmul_16ns_16ns_16_4_max_dsp_1_U582(
-    .clk(ap_clk),
-    .reset(ap_rst),
-    .din0(grp_fu_812_p0),
-    .din1(grp_fu_812_p1),
-    .ce(grp_fu_812_ce),
-    .dout(grp_fu_812_p2)
-);
-
-upconv_core_top_ucb1_hmul_16ns_16ns_16_4_max_dsp_1 #(
-    .ID( 1 ),
-    .NUM_STAGE( 4 ),
-    .din0_WIDTH( 16 ),
-    .din1_WIDTH( 16 ),
-    .dout_WIDTH( 16 ))
-hmul_16ns_16ns_16_4_max_dsp_1_U583(
-    .clk(ap_clk),
-    .reset(ap_rst),
-    .din0(grp_fu_816_p0),
-    .din1(grp_fu_816_p1),
-    .ce(grp_fu_816_ce),
-    .dout(grp_fu_816_p2)
-);
-
-upconv_core_top_ucb1_hmul_16ns_16ns_16_4_max_dsp_1 #(
-    .ID( 1 ),
-    .NUM_STAGE( 4 ),
-    .din0_WIDTH( 16 ),
-    .din1_WIDTH( 16 ),
-    .dout_WIDTH( 16 ))
-hmul_16ns_16ns_16_4_max_dsp_1_U584(
-    .clk(ap_clk),
-    .reset(ap_rst),
-    .din0(grp_fu_820_p0),
-    .din1(grp_fu_820_p1),
-    .ce(grp_fu_820_ce),
-    .dout(grp_fu_820_p2)
-);
-
-upconv_core_top_ucb1_hmul_16ns_16ns_16_4_max_dsp_1 #(
-    .ID( 1 ),
-    .NUM_STAGE( 4 ),
-    .din0_WIDTH( 16 ),
-    .din1_WIDTH( 16 ),
-    .dout_WIDTH( 16 ))
-hmul_16ns_16ns_16_4_max_dsp_1_U585(
-    .clk(ap_clk),
-    .reset(ap_rst),
-    .din0(grp_fu_824_p0),
-    .din1(grp_fu_824_p1),
-    .ce(grp_fu_824_ce),
-    .dout(grp_fu_824_p2)
-);
-
-upconv_core_top_ucb1_hmul_16ns_16ns_16_4_max_dsp_1 #(
-    .ID( 1 ),
-    .NUM_STAGE( 4 ),
-    .din0_WIDTH( 16 ),
-    .din1_WIDTH( 16 ),
-    .dout_WIDTH( 16 ))
-hmul_16ns_16ns_16_4_max_dsp_1_U586(
-    .clk(ap_clk),
-    .reset(ap_rst),
-    .din0(grp_fu_828_p0),
-    .din1(grp_fu_828_p1),
-    .ce(grp_fu_828_ce),
-    .dout(grp_fu_828_p2)
-);
-
-upconv_core_top_ucb1_hmul_16ns_16ns_16_4_max_dsp_1 #(
-    .ID( 1 ),
-    .NUM_STAGE( 4 ),
-    .din0_WIDTH( 16 ),
-    .din1_WIDTH( 16 ),
-    .dout_WIDTH( 16 ))
-hmul_16ns_16ns_16_4_max_dsp_1_U587(
-    .clk(ap_clk),
-    .reset(ap_rst),
-    .din0(grp_fu_832_p0),
-    .din1(grp_fu_832_p1),
-    .ce(grp_fu_832_ce),
-    .dout(grp_fu_832_p2)
-);
-
-upconv_core_top_ucb1_hmul_16ns_16ns_16_4_max_dsp_1 #(
-    .ID( 1 ),
-    .NUM_STAGE( 4 ),
-    .din0_WIDTH( 16 ),
-    .din1_WIDTH( 16 ),
-    .dout_WIDTH( 16 ))
-hmul_16ns_16ns_16_4_max_dsp_1_U588(
-    .clk(ap_clk),
-    .reset(ap_rst),
-    .din0(grp_fu_836_p0),
-    .din1(grp_fu_836_p1),
-    .ce(grp_fu_836_ce),
-    .dout(grp_fu_836_p2)
-);
-
-upconv_core_top_ucb1_hmul_16ns_16ns_16_4_max_dsp_1 #(
-    .ID( 1 ),
-    .NUM_STAGE( 4 ),
-    .din0_WIDTH( 16 ),
-    .din1_WIDTH( 16 ),
-    .dout_WIDTH( 16 ))
-hmul_16ns_16ns_16_4_max_dsp_1_U589(
-    .clk(ap_clk),
-    .reset(ap_rst),
-    .din0(grp_fu_840_p0),
-    .din1(grp_fu_840_p1),
-    .ce(grp_fu_840_ce),
-    .dout(grp_fu_840_p2)
-);
-
-upconv_core_top_ucb1_hmul_16ns_16ns_16_4_max_dsp_1 #(
-    .ID( 1 ),
-    .NUM_STAGE( 4 ),
-    .din0_WIDTH( 16 ),
-    .din1_WIDTH( 16 ),
-    .dout_WIDTH( 16 ))
-hmul_16ns_16ns_16_4_max_dsp_1_U590(
-    .clk(ap_clk),
-    .reset(ap_rst),
-    .din0(grp_fu_844_p0),
-    .din1(grp_fu_844_p1),
-    .ce(grp_fu_844_ce),
-    .dout(grp_fu_844_p2)
-);
-
-upconv_core_top_ucb1_hmul_16ns_16ns_16_4_max_dsp_1 #(
-    .ID( 1 ),
-    .NUM_STAGE( 4 ),
-    .din0_WIDTH( 16 ),
-    .din1_WIDTH( 16 ),
-    .dout_WIDTH( 16 ))
-hmul_16ns_16ns_16_4_max_dsp_1_U591(
-    .clk(ap_clk),
-    .reset(ap_rst),
-    .din0(grp_fu_848_p0),
-    .din1(grp_fu_848_p1),
-    .ce(grp_fu_848_ce),
-    .dout(grp_fu_848_p2)
-);
-
-upconv_core_top_ucb1_hmul_16ns_16ns_16_4_max_dsp_1 #(
-    .ID( 1 ),
-    .NUM_STAGE( 4 ),
-    .din0_WIDTH( 16 ),
-    .din1_WIDTH( 16 ),
-    .dout_WIDTH( 16 ))
-hmul_16ns_16ns_16_4_max_dsp_1_U592(
-    .clk(ap_clk),
-    .reset(ap_rst),
-    .din0(grp_fu_852_p0),
-    .din1(grp_fu_852_p1),
-    .ce(grp_fu_852_ce),
-    .dout(grp_fu_852_p2)
-);
-
-upconv_core_top_ucb1_hmul_16ns_16ns_16_4_max_dsp_1 #(
-    .ID( 1 ),
-    .NUM_STAGE( 4 ),
-    .din0_WIDTH( 16 ),
-    .din1_WIDTH( 16 ),
-    .dout_WIDTH( 16 ))
-hmul_16ns_16ns_16_4_max_dsp_1_U593(
-    .clk(ap_clk),
-    .reset(ap_rst),
-    .din0(grp_fu_856_p0),
-    .din1(grp_fu_856_p1),
-    .ce(grp_fu_856_ce),
-    .dout(grp_fu_856_p2)
-);
-
-upconv_core_top_ucb1_hmul_16ns_16ns_16_4_max_dsp_1 #(
-    .ID( 1 ),
-    .NUM_STAGE( 4 ),
-    .din0_WIDTH( 16 ),
-    .din1_WIDTH( 16 ),
-    .dout_WIDTH( 16 ))
-hmul_16ns_16ns_16_4_max_dsp_1_U594(
-    .clk(ap_clk),
-    .reset(ap_rst),
-    .din0(grp_fu_860_p0),
-    .din1(grp_fu_860_p1),
-    .ce(grp_fu_860_ce),
-    .dout(grp_fu_860_p2)
-);
-
-upconv_core_top_ucb1_hmul_16ns_16ns_16_4_max_dsp_1 #(
-    .ID( 1 ),
-    .NUM_STAGE( 4 ),
-    .din0_WIDTH( 16 ),
-    .din1_WIDTH( 16 ),
-    .dout_WIDTH( 16 ))
-hmul_16ns_16ns_16_4_max_dsp_1_U595(
-    .clk(ap_clk),
-    .reset(ap_rst),
-    .din0(grp_fu_864_p0),
-    .din1(grp_fu_864_p1),
-    .ce(grp_fu_864_ce),
-    .dout(grp_fu_864_p2)
-);
-
-upconv_core_top_ucb1_hmul_16ns_16ns_16_4_max_dsp_1 #(
-    .ID( 1 ),
-    .NUM_STAGE( 4 ),
-    .din0_WIDTH( 16 ),
-    .din1_WIDTH( 16 ),
-    .dout_WIDTH( 16 ))
-hmul_16ns_16ns_16_4_max_dsp_1_U596(
-    .clk(ap_clk),
-    .reset(ap_rst),
-    .din0(grp_fu_868_p0),
-    .din1(grp_fu_868_p1),
-    .ce(grp_fu_868_ce),
-    .dout(grp_fu_868_p2)
-);
-
-upconv_core_top_ucb1_hmul_16ns_16ns_16_4_max_dsp_1 #(
-    .ID( 1 ),
-    .NUM_STAGE( 4 ),
-    .din0_WIDTH( 16 ),
-    .din1_WIDTH( 16 ),
-    .dout_WIDTH( 16 ))
-hmul_16ns_16ns_16_4_max_dsp_1_U597(
-    .clk(ap_clk),
-    .reset(ap_rst),
-    .din0(grp_fu_872_p0),
-    .din1(grp_fu_872_p1),
-    .ce(grp_fu_872_ce),
-    .dout(grp_fu_872_p2)
-);
-
-upconv_core_top_ucb1_hmul_16ns_16ns_16_4_max_dsp_1 #(
-    .ID( 1 ),
-    .NUM_STAGE( 4 ),
-    .din0_WIDTH( 16 ),
-    .din1_WIDTH( 16 ),
-    .dout_WIDTH( 16 ))
-hmul_16ns_16ns_16_4_max_dsp_1_U598(
-    .clk(ap_clk),
-    .reset(ap_rst),
-    .din0(grp_fu_876_p0),
-    .din1(grp_fu_876_p1),
-    .ce(grp_fu_876_ce),
-    .dout(grp_fu_876_p2)
-);
-
-upconv_core_top_ucb1_hmul_16ns_16ns_16_4_max_dsp_1 #(
-    .ID( 1 ),
-    .NUM_STAGE( 4 ),
-    .din0_WIDTH( 16 ),
-    .din1_WIDTH( 16 ),
-    .dout_WIDTH( 16 ))
-hmul_16ns_16ns_16_4_max_dsp_1_U599(
-    .clk(ap_clk),
-    .reset(ap_rst),
-    .din0(grp_fu_880_p0),
-    .din1(grp_fu_880_p1),
-    .ce(grp_fu_880_ce),
-    .dout(grp_fu_880_p2)
-);
-
-upconv_core_top_ucb1_hmul_16ns_16ns_16_4_max_dsp_1 #(
-    .ID( 1 ),
-    .NUM_STAGE( 4 ),
-    .din0_WIDTH( 16 ),
-    .din1_WIDTH( 16 ),
-    .dout_WIDTH( 16 ))
-hmul_16ns_16ns_16_4_max_dsp_1_U600(
-    .clk(ap_clk),
-    .reset(ap_rst),
-    .din0(grp_fu_884_p0),
-    .din1(grp_fu_884_p1),
-    .ce(grp_fu_884_ce),
-    .dout(grp_fu_884_p2)
-);
-
-upconv_core_top_ucb1_hmul_16ns_16ns_16_4_max_dsp_1 #(
-    .ID( 1 ),
-    .NUM_STAGE( 4 ),
-    .din0_WIDTH( 16 ),
-    .din1_WIDTH( 16 ),
-    .dout_WIDTH( 16 ))
-hmul_16ns_16ns_16_4_max_dsp_1_U601(
-    .clk(ap_clk),
-    .reset(ap_rst),
-    .din0(grp_fu_888_p0),
-    .din1(grp_fu_888_p1),
-    .ce(grp_fu_888_ce),
-    .dout(grp_fu_888_p2)
-);
-
-upconv_core_top_ucb1_hmul_16ns_16ns_16_4_max_dsp_1 #(
-    .ID( 1 ),
-    .NUM_STAGE( 4 ),
-    .din0_WIDTH( 16 ),
-    .din1_WIDTH( 16 ),
-    .dout_WIDTH( 16 ))
-hmul_16ns_16ns_16_4_max_dsp_1_U602(
-    .clk(ap_clk),
-    .reset(ap_rst),
-    .din0(grp_fu_892_p0),
-    .din1(grp_fu_892_p1),
-    .ce(grp_fu_892_ce),
-    .dout(grp_fu_892_p2)
-);
-
-upconv_core_top_ucb1_hmul_16ns_16ns_16_4_max_dsp_1 #(
-    .ID( 1 ),
-    .NUM_STAGE( 4 ),
-    .din0_WIDTH( 16 ),
-    .din1_WIDTH( 16 ),
-    .dout_WIDTH( 16 ))
-hmul_16ns_16ns_16_4_max_dsp_1_U603(
-    .clk(ap_clk),
-    .reset(ap_rst),
-    .din0(grp_fu_896_p0),
-    .din1(grp_fu_896_p1),
-    .ce(grp_fu_896_ce),
-    .dout(grp_fu_896_p2)
+    .din0(grp_fu_610_p0),
+    .din1(grp_fu_610_p1),
+    .ce(grp_fu_610_ce),
+    .dout(grp_fu_610_p2)
 );
 
 upconv_core_top_ucb1_hadd_16ns_16ns_16_5_full_dsp_1 #(
@@ -3858,13 +3208,13 @@ upconv_core_top_ucb1_hadd_16ns_16ns_16_5_full_dsp_1 #(
     .din0_WIDTH( 16 ),
     .din1_WIDTH( 16 ),
     .dout_WIDTH( 16 ))
-hadd_16ns_16ns_16_5_full_dsp_1_U604(
+hadd_16ns_16ns_16_5_full_dsp_1_U620(
     .clk(ap_clk),
     .reset(ap_rst),
-    .din0(grp_fu_900_p0),
-    .din1(grp_fu_900_p1),
-    .ce(grp_fu_900_ce),
-    .dout(grp_fu_900_p2)
+    .din0(grp_fu_614_p0),
+    .din1(grp_fu_614_p1),
+    .ce(grp_fu_614_ce),
+    .dout(grp_fu_614_p2)
 );
 
 upconv_core_top_ucb1_hadd_16ns_16ns_16_5_full_dsp_1 #(
@@ -3873,13 +3223,13 @@ upconv_core_top_ucb1_hadd_16ns_16ns_16_5_full_dsp_1 #(
     .din0_WIDTH( 16 ),
     .din1_WIDTH( 16 ),
     .dout_WIDTH( 16 ))
-hadd_16ns_16ns_16_5_full_dsp_1_U605(
+hadd_16ns_16ns_16_5_full_dsp_1_U621(
     .clk(ap_clk),
     .reset(ap_rst),
-    .din0(grp_fu_904_p0),
-    .din1(grp_fu_904_p1),
-    .ce(grp_fu_904_ce),
-    .dout(grp_fu_904_p2)
+    .din0(grp_fu_618_p0),
+    .din1(grp_fu_618_p1),
+    .ce(grp_fu_618_ce),
+    .dout(grp_fu_618_p2)
 );
 
 upconv_core_top_ucb1_hadd_16ns_16ns_16_5_full_dsp_1 #(
@@ -3888,13 +3238,13 @@ upconv_core_top_ucb1_hadd_16ns_16ns_16_5_full_dsp_1 #(
     .din0_WIDTH( 16 ),
     .din1_WIDTH( 16 ),
     .dout_WIDTH( 16 ))
-hadd_16ns_16ns_16_5_full_dsp_1_U606(
+hadd_16ns_16ns_16_5_full_dsp_1_U622(
     .clk(ap_clk),
     .reset(ap_rst),
-    .din0(grp_fu_908_p0),
-    .din1(grp_fu_908_p1),
-    .ce(grp_fu_908_ce),
-    .dout(grp_fu_908_p2)
+    .din0(grp_fu_622_p0),
+    .din1(grp_fu_622_p1),
+    .ce(grp_fu_622_ce),
+    .dout(grp_fu_622_p2)
 );
 
 upconv_core_top_ucb1_hadd_16ns_16ns_16_5_full_dsp_1 #(
@@ -3903,13 +3253,13 @@ upconv_core_top_ucb1_hadd_16ns_16ns_16_5_full_dsp_1 #(
     .din0_WIDTH( 16 ),
     .din1_WIDTH( 16 ),
     .dout_WIDTH( 16 ))
-hadd_16ns_16ns_16_5_full_dsp_1_U607(
+hadd_16ns_16ns_16_5_full_dsp_1_U623(
     .clk(ap_clk),
     .reset(ap_rst),
-    .din0(grp_fu_912_p0),
-    .din1(grp_fu_912_p1),
-    .ce(grp_fu_912_ce),
-    .dout(grp_fu_912_p2)
+    .din0(grp_fu_626_p0),
+    .din1(grp_fu_626_p1),
+    .ce(grp_fu_626_ce),
+    .dout(grp_fu_626_p2)
 );
 
 upconv_core_top_ucb1_hadd_16ns_16ns_16_5_full_dsp_1 #(
@@ -3918,13 +3268,13 @@ upconv_core_top_ucb1_hadd_16ns_16ns_16_5_full_dsp_1 #(
     .din0_WIDTH( 16 ),
     .din1_WIDTH( 16 ),
     .dout_WIDTH( 16 ))
-hadd_16ns_16ns_16_5_full_dsp_1_U608(
+hadd_16ns_16ns_16_5_full_dsp_1_U624(
     .clk(ap_clk),
     .reset(ap_rst),
-    .din0(grp_fu_916_p0),
-    .din1(grp_fu_916_p1),
-    .ce(grp_fu_916_ce),
-    .dout(grp_fu_916_p2)
+    .din0(grp_fu_630_p0),
+    .din1(grp_fu_630_p1),
+    .ce(grp_fu_630_ce),
+    .dout(grp_fu_630_p2)
 );
 
 upconv_core_top_ucb1_hadd_16ns_16ns_16_5_full_dsp_1 #(
@@ -3933,13 +3283,13 @@ upconv_core_top_ucb1_hadd_16ns_16ns_16_5_full_dsp_1 #(
     .din0_WIDTH( 16 ),
     .din1_WIDTH( 16 ),
     .dout_WIDTH( 16 ))
-hadd_16ns_16ns_16_5_full_dsp_1_U609(
+hadd_16ns_16ns_16_5_full_dsp_1_U625(
     .clk(ap_clk),
     .reset(ap_rst),
-    .din0(grp_fu_920_p0),
-    .din1(grp_fu_920_p1),
-    .ce(grp_fu_920_ce),
-    .dout(grp_fu_920_p2)
+    .din0(grp_fu_634_p0),
+    .din1(grp_fu_634_p1),
+    .ce(grp_fu_634_ce),
+    .dout(grp_fu_634_p2)
 );
 
 upconv_core_top_ucb1_hadd_16ns_16ns_16_5_full_dsp_1 #(
@@ -3948,13 +3298,13 @@ upconv_core_top_ucb1_hadd_16ns_16ns_16_5_full_dsp_1 #(
     .din0_WIDTH( 16 ),
     .din1_WIDTH( 16 ),
     .dout_WIDTH( 16 ))
-hadd_16ns_16ns_16_5_full_dsp_1_U610(
+hadd_16ns_16ns_16_5_full_dsp_1_U626(
     .clk(ap_clk),
     .reset(ap_rst),
-    .din0(grp_fu_924_p0),
-    .din1(grp_fu_924_p1),
-    .ce(grp_fu_924_ce),
-    .dout(grp_fu_924_p2)
+    .din0(grp_fu_638_p0),
+    .din1(grp_fu_638_p1),
+    .ce(grp_fu_638_ce),
+    .dout(grp_fu_638_p2)
 );
 
 upconv_core_top_ucb1_hadd_16ns_16ns_16_5_full_dsp_1 #(
@@ -3963,13 +3313,506 @@ upconv_core_top_ucb1_hadd_16ns_16ns_16_5_full_dsp_1 #(
     .din0_WIDTH( 16 ),
     .din1_WIDTH( 16 ),
     .dout_WIDTH( 16 ))
-hadd_16ns_16ns_16_5_full_dsp_1_U611(
+hadd_16ns_16ns_16_5_full_dsp_1_U627(
     .clk(ap_clk),
     .reset(ap_rst),
-    .din0(grp_fu_928_p0),
-    .din1(grp_fu_928_p1),
-    .ce(grp_fu_928_ce),
-    .dout(grp_fu_928_p2)
+    .din0(grp_fu_642_p0),
+    .din1(grp_fu_642_p1),
+    .ce(grp_fu_642_ce),
+    .dout(grp_fu_642_p2)
+);
+
+upconv_core_top_ucb1_hmul_16ns_16ns_16_4_max_dsp_1 #(
+    .ID( 1 ),
+    .NUM_STAGE( 4 ),
+    .din0_WIDTH( 16 ),
+    .din1_WIDTH( 16 ),
+    .dout_WIDTH( 16 ))
+hmul_16ns_16ns_16_4_max_dsp_1_U628(
+    .clk(ap_clk),
+    .reset(ap_rst),
+    .din0(grp_fu_646_p0),
+    .din1(grp_fu_646_p1),
+    .ce(grp_fu_646_ce),
+    .dout(grp_fu_646_p2)
+);
+
+upconv_core_top_ucb1_hmul_16ns_16ns_16_4_max_dsp_1 #(
+    .ID( 1 ),
+    .NUM_STAGE( 4 ),
+    .din0_WIDTH( 16 ),
+    .din1_WIDTH( 16 ),
+    .dout_WIDTH( 16 ))
+hmul_16ns_16ns_16_4_max_dsp_1_U629(
+    .clk(ap_clk),
+    .reset(ap_rst),
+    .din0(grp_fu_650_p0),
+    .din1(grp_fu_650_p1),
+    .ce(grp_fu_650_ce),
+    .dout(grp_fu_650_p2)
+);
+
+upconv_core_top_ucb1_hmul_16ns_16ns_16_4_max_dsp_1 #(
+    .ID( 1 ),
+    .NUM_STAGE( 4 ),
+    .din0_WIDTH( 16 ),
+    .din1_WIDTH( 16 ),
+    .dout_WIDTH( 16 ))
+hmul_16ns_16ns_16_4_max_dsp_1_U630(
+    .clk(ap_clk),
+    .reset(ap_rst),
+    .din0(grp_fu_654_p0),
+    .din1(grp_fu_654_p1),
+    .ce(grp_fu_654_ce),
+    .dout(grp_fu_654_p2)
+);
+
+upconv_core_top_ucb1_hmul_16ns_16ns_16_4_max_dsp_1 #(
+    .ID( 1 ),
+    .NUM_STAGE( 4 ),
+    .din0_WIDTH( 16 ),
+    .din1_WIDTH( 16 ),
+    .dout_WIDTH( 16 ))
+hmul_16ns_16ns_16_4_max_dsp_1_U631(
+    .clk(ap_clk),
+    .reset(ap_rst),
+    .din0(grp_fu_658_p0),
+    .din1(grp_fu_658_p1),
+    .ce(grp_fu_658_ce),
+    .dout(grp_fu_658_p2)
+);
+
+upconv_core_top_ucb1_hmul_16ns_16ns_16_4_max_dsp_1 #(
+    .ID( 1 ),
+    .NUM_STAGE( 4 ),
+    .din0_WIDTH( 16 ),
+    .din1_WIDTH( 16 ),
+    .dout_WIDTH( 16 ))
+hmul_16ns_16ns_16_4_max_dsp_1_U632(
+    .clk(ap_clk),
+    .reset(ap_rst),
+    .din0(grp_fu_662_p0),
+    .din1(grp_fu_662_p1),
+    .ce(grp_fu_662_ce),
+    .dout(grp_fu_662_p2)
+);
+
+upconv_core_top_ucb1_hmul_16ns_16ns_16_4_max_dsp_1 #(
+    .ID( 1 ),
+    .NUM_STAGE( 4 ),
+    .din0_WIDTH( 16 ),
+    .din1_WIDTH( 16 ),
+    .dout_WIDTH( 16 ))
+hmul_16ns_16ns_16_4_max_dsp_1_U633(
+    .clk(ap_clk),
+    .reset(ap_rst),
+    .din0(grp_fu_666_p0),
+    .din1(grp_fu_666_p1),
+    .ce(grp_fu_666_ce),
+    .dout(grp_fu_666_p2)
+);
+
+upconv_core_top_ucb1_hmul_16ns_16ns_16_4_max_dsp_1 #(
+    .ID( 1 ),
+    .NUM_STAGE( 4 ),
+    .din0_WIDTH( 16 ),
+    .din1_WIDTH( 16 ),
+    .dout_WIDTH( 16 ))
+hmul_16ns_16ns_16_4_max_dsp_1_U634(
+    .clk(ap_clk),
+    .reset(ap_rst),
+    .din0(grp_fu_670_p0),
+    .din1(grp_fu_670_p1),
+    .ce(grp_fu_670_ce),
+    .dout(grp_fu_670_p2)
+);
+
+upconv_core_top_ucb1_hmul_16ns_16ns_16_4_max_dsp_1 #(
+    .ID( 1 ),
+    .NUM_STAGE( 4 ),
+    .din0_WIDTH( 16 ),
+    .din1_WIDTH( 16 ),
+    .dout_WIDTH( 16 ))
+hmul_16ns_16ns_16_4_max_dsp_1_U635(
+    .clk(ap_clk),
+    .reset(ap_rst),
+    .din0(grp_fu_674_p0),
+    .din1(grp_fu_674_p1),
+    .ce(grp_fu_674_ce),
+    .dout(grp_fu_674_p2)
+);
+
+upconv_core_top_ucb1_hmul_16ns_16ns_16_4_max_dsp_1 #(
+    .ID( 1 ),
+    .NUM_STAGE( 4 ),
+    .din0_WIDTH( 16 ),
+    .din1_WIDTH( 16 ),
+    .dout_WIDTH( 16 ))
+hmul_16ns_16ns_16_4_max_dsp_1_U636(
+    .clk(ap_clk),
+    .reset(ap_rst),
+    .din0(grp_fu_678_p0),
+    .din1(grp_fu_678_p1),
+    .ce(grp_fu_678_ce),
+    .dout(grp_fu_678_p2)
+);
+
+upconv_core_top_ucb1_hmul_16ns_16ns_16_4_max_dsp_1 #(
+    .ID( 1 ),
+    .NUM_STAGE( 4 ),
+    .din0_WIDTH( 16 ),
+    .din1_WIDTH( 16 ),
+    .dout_WIDTH( 16 ))
+hmul_16ns_16ns_16_4_max_dsp_1_U637(
+    .clk(ap_clk),
+    .reset(ap_rst),
+    .din0(grp_fu_682_p0),
+    .din1(grp_fu_682_p1),
+    .ce(grp_fu_682_ce),
+    .dout(grp_fu_682_p2)
+);
+
+upconv_core_top_ucb1_hmul_16ns_16ns_16_4_max_dsp_1 #(
+    .ID( 1 ),
+    .NUM_STAGE( 4 ),
+    .din0_WIDTH( 16 ),
+    .din1_WIDTH( 16 ),
+    .dout_WIDTH( 16 ))
+hmul_16ns_16ns_16_4_max_dsp_1_U638(
+    .clk(ap_clk),
+    .reset(ap_rst),
+    .din0(grp_fu_686_p0),
+    .din1(grp_fu_686_p1),
+    .ce(grp_fu_686_ce),
+    .dout(grp_fu_686_p2)
+);
+
+upconv_core_top_ucb1_hmul_16ns_16ns_16_4_max_dsp_1 #(
+    .ID( 1 ),
+    .NUM_STAGE( 4 ),
+    .din0_WIDTH( 16 ),
+    .din1_WIDTH( 16 ),
+    .dout_WIDTH( 16 ))
+hmul_16ns_16ns_16_4_max_dsp_1_U639(
+    .clk(ap_clk),
+    .reset(ap_rst),
+    .din0(grp_fu_690_p0),
+    .din1(grp_fu_690_p1),
+    .ce(grp_fu_690_ce),
+    .dout(grp_fu_690_p2)
+);
+
+upconv_core_top_ucb1_hmul_16ns_16ns_16_4_max_dsp_1 #(
+    .ID( 1 ),
+    .NUM_STAGE( 4 ),
+    .din0_WIDTH( 16 ),
+    .din1_WIDTH( 16 ),
+    .dout_WIDTH( 16 ))
+hmul_16ns_16ns_16_4_max_dsp_1_U640(
+    .clk(ap_clk),
+    .reset(ap_rst),
+    .din0(grp_fu_694_p0),
+    .din1(grp_fu_694_p1),
+    .ce(grp_fu_694_ce),
+    .dout(grp_fu_694_p2)
+);
+
+upconv_core_top_ucb1_hmul_16ns_16ns_16_4_max_dsp_1 #(
+    .ID( 1 ),
+    .NUM_STAGE( 4 ),
+    .din0_WIDTH( 16 ),
+    .din1_WIDTH( 16 ),
+    .dout_WIDTH( 16 ))
+hmul_16ns_16ns_16_4_max_dsp_1_U641(
+    .clk(ap_clk),
+    .reset(ap_rst),
+    .din0(grp_fu_698_p0),
+    .din1(grp_fu_698_p1),
+    .ce(grp_fu_698_ce),
+    .dout(grp_fu_698_p2)
+);
+
+upconv_core_top_ucb1_hmul_16ns_16ns_16_4_max_dsp_1 #(
+    .ID( 1 ),
+    .NUM_STAGE( 4 ),
+    .din0_WIDTH( 16 ),
+    .din1_WIDTH( 16 ),
+    .dout_WIDTH( 16 ))
+hmul_16ns_16ns_16_4_max_dsp_1_U642(
+    .clk(ap_clk),
+    .reset(ap_rst),
+    .din0(grp_fu_702_p0),
+    .din1(grp_fu_702_p1),
+    .ce(grp_fu_702_ce),
+    .dout(grp_fu_702_p2)
+);
+
+upconv_core_top_ucb1_hmul_16ns_16ns_16_4_max_dsp_1 #(
+    .ID( 1 ),
+    .NUM_STAGE( 4 ),
+    .din0_WIDTH( 16 ),
+    .din1_WIDTH( 16 ),
+    .dout_WIDTH( 16 ))
+hmul_16ns_16ns_16_4_max_dsp_1_U643(
+    .clk(ap_clk),
+    .reset(ap_rst),
+    .din0(grp_fu_706_p0),
+    .din1(grp_fu_706_p1),
+    .ce(grp_fu_706_ce),
+    .dout(grp_fu_706_p2)
+);
+
+upconv_core_top_ucb1_hmul_16ns_16ns_16_4_max_dsp_1 #(
+    .ID( 1 ),
+    .NUM_STAGE( 4 ),
+    .din0_WIDTH( 16 ),
+    .din1_WIDTH( 16 ),
+    .dout_WIDTH( 16 ))
+hmul_16ns_16ns_16_4_max_dsp_1_U644(
+    .clk(ap_clk),
+    .reset(ap_rst),
+    .din0(grp_fu_710_p0),
+    .din1(grp_fu_710_p1),
+    .ce(grp_fu_710_ce),
+    .dout(grp_fu_710_p2)
+);
+
+upconv_core_top_ucb1_hmul_16ns_16ns_16_4_max_dsp_1 #(
+    .ID( 1 ),
+    .NUM_STAGE( 4 ),
+    .din0_WIDTH( 16 ),
+    .din1_WIDTH( 16 ),
+    .dout_WIDTH( 16 ))
+hmul_16ns_16ns_16_4_max_dsp_1_U645(
+    .clk(ap_clk),
+    .reset(ap_rst),
+    .din0(grp_fu_714_p0),
+    .din1(grp_fu_714_p1),
+    .ce(grp_fu_714_ce),
+    .dout(grp_fu_714_p2)
+);
+
+upconv_core_top_ucb1_hmul_16ns_16ns_16_4_max_dsp_1 #(
+    .ID( 1 ),
+    .NUM_STAGE( 4 ),
+    .din0_WIDTH( 16 ),
+    .din1_WIDTH( 16 ),
+    .dout_WIDTH( 16 ))
+hmul_16ns_16ns_16_4_max_dsp_1_U646(
+    .clk(ap_clk),
+    .reset(ap_rst),
+    .din0(grp_fu_718_p0),
+    .din1(grp_fu_718_p1),
+    .ce(grp_fu_718_ce),
+    .dout(grp_fu_718_p2)
+);
+
+upconv_core_top_ucb1_hmul_16ns_16ns_16_4_max_dsp_1 #(
+    .ID( 1 ),
+    .NUM_STAGE( 4 ),
+    .din0_WIDTH( 16 ),
+    .din1_WIDTH( 16 ),
+    .dout_WIDTH( 16 ))
+hmul_16ns_16ns_16_4_max_dsp_1_U647(
+    .clk(ap_clk),
+    .reset(ap_rst),
+    .din0(grp_fu_722_p0),
+    .din1(grp_fu_722_p1),
+    .ce(grp_fu_722_ce),
+    .dout(grp_fu_722_p2)
+);
+
+upconv_core_top_ucb1_hmul_16ns_16ns_16_4_max_dsp_1 #(
+    .ID( 1 ),
+    .NUM_STAGE( 4 ),
+    .din0_WIDTH( 16 ),
+    .din1_WIDTH( 16 ),
+    .dout_WIDTH( 16 ))
+hmul_16ns_16ns_16_4_max_dsp_1_U648(
+    .clk(ap_clk),
+    .reset(ap_rst),
+    .din0(grp_fu_726_p0),
+    .din1(grp_fu_726_p1),
+    .ce(grp_fu_726_ce),
+    .dout(grp_fu_726_p2)
+);
+
+upconv_core_top_ucb1_hmul_16ns_16ns_16_4_max_dsp_1 #(
+    .ID( 1 ),
+    .NUM_STAGE( 4 ),
+    .din0_WIDTH( 16 ),
+    .din1_WIDTH( 16 ),
+    .dout_WIDTH( 16 ))
+hmul_16ns_16ns_16_4_max_dsp_1_U649(
+    .clk(ap_clk),
+    .reset(ap_rst),
+    .din0(grp_fu_730_p0),
+    .din1(grp_fu_730_p1),
+    .ce(grp_fu_730_ce),
+    .dout(grp_fu_730_p2)
+);
+
+upconv_core_top_ucb1_hmul_16ns_16ns_16_4_max_dsp_1 #(
+    .ID( 1 ),
+    .NUM_STAGE( 4 ),
+    .din0_WIDTH( 16 ),
+    .din1_WIDTH( 16 ),
+    .dout_WIDTH( 16 ))
+hmul_16ns_16ns_16_4_max_dsp_1_U650(
+    .clk(ap_clk),
+    .reset(ap_rst),
+    .din0(grp_fu_734_p0),
+    .din1(grp_fu_734_p1),
+    .ce(grp_fu_734_ce),
+    .dout(grp_fu_734_p2)
+);
+
+upconv_core_top_ucb1_hmul_16ns_16ns_16_4_max_dsp_1 #(
+    .ID( 1 ),
+    .NUM_STAGE( 4 ),
+    .din0_WIDTH( 16 ),
+    .din1_WIDTH( 16 ),
+    .dout_WIDTH( 16 ))
+hmul_16ns_16ns_16_4_max_dsp_1_U651(
+    .clk(ap_clk),
+    .reset(ap_rst),
+    .din0(grp_fu_738_p0),
+    .din1(grp_fu_738_p1),
+    .ce(grp_fu_738_ce),
+    .dout(grp_fu_738_p2)
+);
+
+upconv_core_top_ucb1_hmul_16ns_16ns_16_4_max_dsp_1 #(
+    .ID( 1 ),
+    .NUM_STAGE( 4 ),
+    .din0_WIDTH( 16 ),
+    .din1_WIDTH( 16 ),
+    .dout_WIDTH( 16 ))
+hmul_16ns_16ns_16_4_max_dsp_1_U652(
+    .clk(ap_clk),
+    .reset(ap_rst),
+    .din0(grp_fu_742_p0),
+    .din1(grp_fu_742_p1),
+    .ce(grp_fu_742_ce),
+    .dout(grp_fu_742_p2)
+);
+
+upconv_core_top_ucb1_hmul_16ns_16ns_16_4_max_dsp_1 #(
+    .ID( 1 ),
+    .NUM_STAGE( 4 ),
+    .din0_WIDTH( 16 ),
+    .din1_WIDTH( 16 ),
+    .dout_WIDTH( 16 ))
+hmul_16ns_16ns_16_4_max_dsp_1_U653(
+    .clk(ap_clk),
+    .reset(ap_rst),
+    .din0(grp_fu_746_p0),
+    .din1(grp_fu_746_p1),
+    .ce(grp_fu_746_ce),
+    .dout(grp_fu_746_p2)
+);
+
+upconv_core_top_ucb1_hmul_16ns_16ns_16_4_max_dsp_1 #(
+    .ID( 1 ),
+    .NUM_STAGE( 4 ),
+    .din0_WIDTH( 16 ),
+    .din1_WIDTH( 16 ),
+    .dout_WIDTH( 16 ))
+hmul_16ns_16ns_16_4_max_dsp_1_U654(
+    .clk(ap_clk),
+    .reset(ap_rst),
+    .din0(grp_fu_750_p0),
+    .din1(grp_fu_750_p1),
+    .ce(grp_fu_750_ce),
+    .dout(grp_fu_750_p2)
+);
+
+upconv_core_top_ucb1_hmul_16ns_16ns_16_4_max_dsp_1 #(
+    .ID( 1 ),
+    .NUM_STAGE( 4 ),
+    .din0_WIDTH( 16 ),
+    .din1_WIDTH( 16 ),
+    .dout_WIDTH( 16 ))
+hmul_16ns_16ns_16_4_max_dsp_1_U655(
+    .clk(ap_clk),
+    .reset(ap_rst),
+    .din0(grp_fu_754_p0),
+    .din1(grp_fu_754_p1),
+    .ce(grp_fu_754_ce),
+    .dout(grp_fu_754_p2)
+);
+
+upconv_core_top_ucb1_hmul_16ns_16ns_16_4_max_dsp_1 #(
+    .ID( 1 ),
+    .NUM_STAGE( 4 ),
+    .din0_WIDTH( 16 ),
+    .din1_WIDTH( 16 ),
+    .dout_WIDTH( 16 ))
+hmul_16ns_16ns_16_4_max_dsp_1_U656(
+    .clk(ap_clk),
+    .reset(ap_rst),
+    .din0(grp_fu_758_p0),
+    .din1(grp_fu_758_p1),
+    .ce(grp_fu_758_ce),
+    .dout(grp_fu_758_p2)
+);
+
+upconv_core_top_ucb1_hmul_16ns_16ns_16_4_max_dsp_1 #(
+    .ID( 1 ),
+    .NUM_STAGE( 4 ),
+    .din0_WIDTH( 16 ),
+    .din1_WIDTH( 16 ),
+    .dout_WIDTH( 16 ))
+hmul_16ns_16ns_16_4_max_dsp_1_U657(
+    .clk(ap_clk),
+    .reset(ap_rst),
+    .din0(grp_fu_762_p0),
+    .din1(grp_fu_762_p1),
+    .ce(grp_fu_762_ce),
+    .dout(grp_fu_762_p2)
+);
+
+upconv_core_top_ucb1_hmul_16ns_16ns_16_4_max_dsp_1 #(
+    .ID( 1 ),
+    .NUM_STAGE( 4 ),
+    .din0_WIDTH( 16 ),
+    .din1_WIDTH( 16 ),
+    .dout_WIDTH( 16 ))
+hmul_16ns_16ns_16_4_max_dsp_1_U658(
+    .clk(ap_clk),
+    .reset(ap_rst),
+    .din0(grp_fu_766_p0),
+    .din1(grp_fu_766_p1),
+    .ce(grp_fu_766_ce),
+    .dout(grp_fu_766_p2)
+);
+
+upconv_core_top_ucb1_hmul_16ns_16ns_16_4_max_dsp_1 #(
+    .ID( 1 ),
+    .NUM_STAGE( 4 ),
+    .din0_WIDTH( 16 ),
+    .din1_WIDTH( 16 ),
+    .dout_WIDTH( 16 ))
+hmul_16ns_16ns_16_4_max_dsp_1_U659(
+    .clk(ap_clk),
+    .reset(ap_rst),
+    .din0(grp_fu_770_p0),
+    .din1(grp_fu_770_p1),
+    .ce(grp_fu_770_ce),
+    .dout(grp_fu_770_p2)
+);
+
+upconv_core_top_ucb1_sptohp_32ns_16_2_no_dsp_1 #(
+    .ID( 1 ),
+    .NUM_STAGE( 2 ),
+    .din0_WIDTH( 32 ),
+    .dout_WIDTH( 16 ))
+sptohp_32ns_16_2_no_dsp_1_U660(
+    .clk(ap_clk),
+    .reset(ap_rst),
+    .din0(grp_fu_774_p0),
+    .ce(grp_fu_774_ce),
+    .dout(grp_fu_774_p1)
 );
 
 always @ (posedge ap_clk) begin
@@ -3982,259 +3825,147 @@ end
 
 always @ (posedge ap_clk) begin
     if (ap_rst == 1'b1) begin
-        grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_288_ap_start_reg <= 1'b0;
+        grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_250_ap_start_reg <= 1'b0;
     end else begin
         if ((1'b1 == ap_CS_fsm_state11)) begin
-            grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_288_ap_start_reg <= 1'b1;
-        end else if ((grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_288_ap_ready == 1'b1)) begin
-            grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_288_ap_start_reg <= 1'b0;
+            grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_250_ap_start_reg <= 1'b1;
+        end else if ((grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_250_ap_ready == 1'b1)) begin
+            grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_250_ap_start_reg <= 1'b0;
         end
     end
 end
 
 always @ (posedge ap_clk) begin
     if (ap_rst == 1'b1) begin
-        grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_BIAS_STATS_fu_330_ap_start_reg <= 1'b0;
+        grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_LOAD_BE_fu_350_ap_start_reg <= 1'b0;
     end else begin
-        if ((1'b1 == ap_CS_fsm_state15)) begin
-            grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_BIAS_STATS_fu_330_ap_start_reg <= 1'b1;
-        end else if ((grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_BIAS_STATS_fu_330_ap_ready == 1'b1)) begin
-            grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_BIAS_STATS_fu_330_ap_start_reg <= 1'b0;
+        if ((1'b1 == ap_CS_fsm_state41)) begin
+            grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_LOAD_BE_fu_350_ap_start_reg <= 1'b1;
+        end else if ((grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_LOAD_BE_fu_350_ap_ready == 1'b1)) begin
+            grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_LOAD_BE_fu_350_ap_start_reg <= 1'b0;
         end
     end
 end
 
 always @ (posedge ap_clk) begin
     if (ap_rst == 1'b1) begin
-        grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_LOAD_PARAMS_fu_273_ap_start_reg <= 1'b0;
+        grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_LOAD_B_fu_292_ap_start_reg <= 1'b0;
     end else begin
-        if (((1'b1 == ap_CS_fsm_state1) & (ap_start == 1'b1))) begin
-            grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_LOAD_PARAMS_fu_273_ap_start_reg <= 1'b1;
-        end else if ((grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_LOAD_PARAMS_fu_273_ap_ready == 1'b1)) begin
-            grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_LOAD_PARAMS_fu_273_ap_start_reg <= 1'b0;
+        if ((1'b1 == ap_CS_fsm_state21)) begin
+            grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_LOAD_B_fu_292_ap_start_reg <= 1'b1;
+        end else if ((grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_LOAD_B_fu_292_ap_ready == 1'b1)) begin
+            grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_LOAD_B_fu_292_ap_start_reg <= 1'b0;
         end
     end
 end
 
 always @ (posedge ap_clk) begin
     if (ap_rst == 1'b1) begin
-        grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_NORM_WRITE_fu_370_ap_start_reg <= 1'b0;
+        grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_LOAD_G_fu_300_ap_start_reg <= 1'b0;
     end else begin
-        if ((1'b1 == ap_CS_fsm_state135)) begin
-            grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_NORM_WRITE_fu_370_ap_start_reg <= 1'b1;
-        end else if ((grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_NORM_WRITE_fu_370_ap_ready == 1'b1)) begin
-            grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_NORM_WRITE_fu_370_ap_start_reg <= 1'b0;
+        if ((1'b1 == ap_CS_fsm_state31)) begin
+            grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_LOAD_G_fu_300_ap_start_reg <= 1'b1;
+        end else if ((grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_LOAD_G_fu_300_ap_ready == 1'b1)) begin
+            grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_LOAD_G_fu_300_ap_start_reg <= 1'b0;
         end
     end
 end
 
 always @ (posedge ap_clk) begin
     if (ap_rst == 1'b1) begin
-        grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_RESET_ROW_ACC_fu_237_ap_start_reg <= 1'b0;
+        grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_PIXEL_NORM_fu_358_ap_start_reg <= 1'b0;
     end else begin
-        if (((1'b1 == ap_CS_fsm_state1) & (ap_start == 1'b1))) begin
-            grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_RESET_ROW_ACC_fu_237_ap_start_reg <= 1'b1;
-        end else if ((grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_RESET_ROW_ACC_fu_237_ap_ready == 1'b1)) begin
-            grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_RESET_ROW_ACC_fu_237_ap_start_reg <= 1'b0;
+        if ((1'b1 == ap_CS_fsm_state43)) begin
+            grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_PIXEL_NORM_fu_358_ap_start_reg <= 1'b1;
+        end else if ((grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_PIXEL_NORM_fu_358_ap_ready == 1'b1)) begin
+            grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_PIXEL_NORM_fu_358_ap_start_reg <= 1'b0;
         end
     end
 end
 
 always @ (posedge ap_clk) begin
-    if (((1'b1 == ap_CS_fsm_state1) & (ap_start == 1'b1))) begin
-        wo_1_fu_156 <= 7'd0;
-    end else if (((1'b1 == ap_CS_fsm_state14) & (icmp_ln238_fu_582_p2 == 1'd0))) begin
-        wo_1_fu_156 <= add_ln238_1_fu_588_p2;
+    if (ap_rst == 1'b1) begin
+        grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_PIXEL_STATS_fu_308_ap_start_reg <= 1'b0;
+    end else begin
+        if (((1'b1 == ap_CS_fsm_state30) & (1'b1 == ap_NS_fsm_state31))) begin
+            grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_PIXEL_STATS_fu_308_ap_start_reg <= 1'b1;
+        end else if ((grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_PIXEL_STATS_fu_308_ap_ready == 1'b1)) begin
+            grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_PIXEL_STATS_fu_308_ap_start_reg <= 1'b0;
+        end
+    end
+end
+
+always @ (posedge ap_clk) begin
+    if (ap_rst == 1'b1) begin
+        grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_RESET_ROW_ACC_fu_214_ap_start_reg <= 1'b0;
+    end else begin
+        if (((ap_start == 1'b1) & (1'b1 == ap_CS_fsm_state1))) begin
+            grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_RESET_ROW_ACC_fu_214_ap_start_reg <= 1'b1;
+        end else if ((grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_RESET_ROW_ACC_fu_214_ap_ready == 1'b1)) begin
+            grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_RESET_ROW_ACC_fu_214_ap_start_reg <= 1'b0;
+        end
     end
 end
 
 always @ (posedge ap_clk) begin
     if ((1'b1 == ap_CS_fsm_state11)) begin
-        add52_reg_679 <= add52_fu_518_p2;
+        add_i90_reg_527 <= add_i90_fu_434_p2;
+    end
+end
+
+always @ (posedge ap_clk) begin
+    if ((1'b1 == ap_CS_fsm_state30)) begin
+        conv42_i_reg_557 <= grp_fu_405_p1;
+    end
+end
+
+always @ (posedge ap_clk) begin
+    if ((1'b1 == ap_CS_fsm_state43)) begin
+        mul43_i_reg_577[11 : 6] <= mul43_i_fu_504_p3[11 : 6];
     end
 end
 
 always @ (posedge ap_clk) begin
     if ((1'b1 == ap_CS_fsm_state13)) begin
-        conv1_reg_695 <= grp_fu_437_p1;
+        trunc_ln3_reg_532 <= {{B_ptr[63:5]}};
     end
 end
 
 always @ (posedge ap_clk) begin
-    if ((1'b1 == ap_CS_fsm_state48)) begin
-        conv3_reg_720 <= grp_fu_433_p1;
+    if ((1'b1 == ap_CS_fsm_state23)) begin
+        trunc_ln4_reg_542 <= {{G_ptr[63:5]}};
     end
 end
 
 always @ (posedge ap_clk) begin
-    if ((1'b1 == ap_CS_fsm_state135)) begin
-        inv_std_reg_735 <= grp_fu_433_p1;
-    end
-end
-
-always @ (posedge ap_clk) begin
-    if ((1'b1 == ap_CS_fsm_state53)) begin
-        mul_reg_725 <= grp_fu_418_p2;
-    end
-end
-
-always @ (posedge ap_clk) begin
-    if (((1'b1 == ap_CS_fsm_state133) | (1'b1 == ap_CS_fsm_state53) | (1'b1 == ap_CS_fsm_state46))) begin
-        reg_441 <= grp_fu_422_p2;
-    end
-end
-
-always @ (posedge ap_clk) begin
-    if (((1'b1 == ap_CS_fsm_state75) | (1'b1 == ap_CS_fsm_state64))) begin
-        reg_449 <= grp_fu_414_p2;
-    end
-end
-
-always @ (posedge ap_clk) begin
-    if ((1'b1 == ap_CS_fsm_state14)) begin
-        sub_ln246_reg_708 <= sub_ln246_fu_610_p2;
-    end
-end
-
-always @ (posedge ap_clk) begin
-    if ((1'b1 == ap_CS_fsm_state103)) begin
-        tmp_reg_730 <= grp_fu_428_p2;
-    end
-end
-
-always @ (posedge ap_clk) begin
-    if ((1'b1 == ap_CS_fsm_state1)) begin
-        trunc_ln228_1_reg_653 <= {{G_ptr[63:5]}};
-        trunc_ln228_2_reg_658 <= {{BE_ptr[63:5]}};
-        trunc_ln2_reg_648 <= {{B_ptr[63:5]}};
-    end
-end
-
-always @ (posedge ap_clk) begin
-    if ((1'b1 == ap_CS_fsm_state12)) begin
-        trunc_ln3_reg_689 <= {{add_ln238_fu_553_p2[63:5]}};
+    if ((1'b1 == ap_CS_fsm_state33)) begin
+        trunc_ln6_reg_562 <= {{BE_ptr[63:5]}};
     end
 end
 
 always @ (posedge ap_clk) begin
     if ((1'b1 == ap_CS_fsm_state3)) begin
-        trunc_ln_reg_663 <= {{W_ptr[63:5]}};
+        trunc_ln_reg_512 <= {{W_ptr[63:5]}};
     end
 end
 
-assign ap_ST_fsm_state100_blk = 1'b0;
-
-assign ap_ST_fsm_state101_blk = 1'b0;
-
-assign ap_ST_fsm_state102_blk = 1'b0;
-
-assign ap_ST_fsm_state103_blk = 1'b0;
-
-assign ap_ST_fsm_state104_blk = 1'b0;
-
-assign ap_ST_fsm_state105_blk = 1'b0;
-
-assign ap_ST_fsm_state106_blk = 1'b0;
-
-assign ap_ST_fsm_state107_blk = 1'b0;
-
-assign ap_ST_fsm_state108_blk = 1'b0;
-
-assign ap_ST_fsm_state109_blk = 1'b0;
-
 assign ap_ST_fsm_state10_blk = 1'b0;
-
-assign ap_ST_fsm_state110_blk = 1'b0;
-
-assign ap_ST_fsm_state111_blk = 1'b0;
-
-assign ap_ST_fsm_state112_blk = 1'b0;
-
-assign ap_ST_fsm_state113_blk = 1'b0;
-
-assign ap_ST_fsm_state114_blk = 1'b0;
-
-assign ap_ST_fsm_state115_blk = 1'b0;
-
-assign ap_ST_fsm_state116_blk = 1'b0;
-
-assign ap_ST_fsm_state117_blk = 1'b0;
-
-assign ap_ST_fsm_state118_blk = 1'b0;
-
-assign ap_ST_fsm_state119_blk = 1'b0;
 
 assign ap_ST_fsm_state11_blk = 1'b0;
 
-assign ap_ST_fsm_state120_blk = 1'b0;
-
-assign ap_ST_fsm_state121_blk = 1'b0;
-
-assign ap_ST_fsm_state122_blk = 1'b0;
-
-assign ap_ST_fsm_state123_blk = 1'b0;
-
-assign ap_ST_fsm_state124_blk = 1'b0;
-
-assign ap_ST_fsm_state125_blk = 1'b0;
-
-assign ap_ST_fsm_state126_blk = 1'b0;
-
-assign ap_ST_fsm_state127_blk = 1'b0;
-
-assign ap_ST_fsm_state128_blk = 1'b0;
-
-assign ap_ST_fsm_state129_blk = 1'b0;
-
 always @ (*) begin
-    if ((grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_288_ap_done == 1'b0)) begin
+    if ((grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_250_ap_done == 1'b0)) begin
         ap_ST_fsm_state12_blk = 1'b1;
     end else begin
         ap_ST_fsm_state12_blk = 1'b0;
     end
 end
 
-assign ap_ST_fsm_state130_blk = 1'b0;
-
-assign ap_ST_fsm_state131_blk = 1'b0;
-
-assign ap_ST_fsm_state132_blk = 1'b0;
-
-assign ap_ST_fsm_state133_blk = 1'b0;
-
-assign ap_ST_fsm_state134_blk = 1'b0;
-
-assign ap_ST_fsm_state135_blk = 1'b0;
-
 always @ (*) begin
-    if ((grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_NORM_WRITE_fu_370_ap_done == 1'b0)) begin
-        ap_ST_fsm_state136_blk = 1'b1;
-    end else begin
-        ap_ST_fsm_state136_blk = 1'b0;
-    end
-end
-
-assign ap_ST_fsm_state137_blk = 1'b0;
-
-assign ap_ST_fsm_state138_blk = 1'b0;
-
-assign ap_ST_fsm_state139_blk = 1'b0;
-
-always @ (*) begin
-    if ((m_axi_gmem_out_0_AWREADY == 1'b0)) begin
+    if ((m_axi_gmem_param_0_ARREADY == 1'b0)) begin
         ap_ST_fsm_state13_blk = 1'b1;
     end else begin
         ap_ST_fsm_state13_blk = 1'b0;
-    end
-end
-
-assign ap_ST_fsm_state140_blk = 1'b0;
-
-always @ (*) begin
-    if ((m_axi_gmem_out_0_BVALID == 1'b0)) begin
-        ap_ST_fsm_state141_blk = 1'b1;
-    end else begin
-        ap_ST_fsm_state141_blk = 1'b0;
     end
 end
 
@@ -4242,13 +3973,7 @@ assign ap_ST_fsm_state14_blk = 1'b0;
 
 assign ap_ST_fsm_state15_blk = 1'b0;
 
-always @ (*) begin
-    if ((grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_BIAS_STATS_fu_330_ap_done == 1'b0)) begin
-        ap_ST_fsm_state16_blk = 1'b1;
-    end else begin
-        ap_ST_fsm_state16_blk = 1'b0;
-    end
-end
+assign ap_ST_fsm_state16_blk = 1'b0;
 
 assign ap_ST_fsm_state17_blk = 1'b0;
 
@@ -4268,9 +3993,21 @@ assign ap_ST_fsm_state20_blk = 1'b0;
 
 assign ap_ST_fsm_state21_blk = 1'b0;
 
-assign ap_ST_fsm_state22_blk = 1'b0;
+always @ (*) begin
+    if ((grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_LOAD_B_fu_292_ap_done == 1'b0)) begin
+        ap_ST_fsm_state22_blk = 1'b1;
+    end else begin
+        ap_ST_fsm_state22_blk = 1'b0;
+    end
+end
 
-assign ap_ST_fsm_state23_blk = 1'b0;
+always @ (*) begin
+    if ((m_axi_gmem_param_0_ARREADY == 1'b0)) begin
+        ap_ST_fsm_state23_blk = 1'b1;
+    end else begin
+        ap_ST_fsm_state23_blk = 1'b0;
+    end
+end
 
 assign ap_ST_fsm_state24_blk = 1'b0;
 
@@ -4285,7 +4022,7 @@ assign ap_ST_fsm_state28_blk = 1'b0;
 assign ap_ST_fsm_state29_blk = 1'b0;
 
 always @ (*) begin
-    if ((1'b1 == ap_block_state2_on_subcall_done)) begin
+    if ((grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_RESET_ROW_ACC_fu_214_ap_done == 1'b0)) begin
         ap_ST_fsm_state2_blk = 1'b1;
     end else begin
         ap_ST_fsm_state2_blk = 1'b0;
@@ -4296,9 +4033,21 @@ assign ap_ST_fsm_state30_blk = 1'b0;
 
 assign ap_ST_fsm_state31_blk = 1'b0;
 
-assign ap_ST_fsm_state32_blk = 1'b0;
+always @ (*) begin
+    if ((1'b1 == ap_block_state32_on_subcall_done)) begin
+        ap_ST_fsm_state32_blk = 1'b1;
+    end else begin
+        ap_ST_fsm_state32_blk = 1'b0;
+    end
+end
 
-assign ap_ST_fsm_state33_blk = 1'b0;
+always @ (*) begin
+    if ((m_axi_gmem_param_0_ARREADY == 1'b0)) begin
+        ap_ST_fsm_state33_blk = 1'b1;
+    end else begin
+        ap_ST_fsm_state33_blk = 1'b0;
+    end
+end
 
 assign ap_ST_fsm_state34_blk = 1'b0;
 
@@ -4324,136 +4073,38 @@ assign ap_ST_fsm_state40_blk = 1'b0;
 
 assign ap_ST_fsm_state41_blk = 1'b0;
 
-assign ap_ST_fsm_state42_blk = 1'b0;
+always @ (*) begin
+    if ((grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_LOAD_BE_fu_350_ap_done == 1'b0)) begin
+        ap_ST_fsm_state42_blk = 1'b1;
+    end else begin
+        ap_ST_fsm_state42_blk = 1'b0;
+    end
+end
 
 assign ap_ST_fsm_state43_blk = 1'b0;
 
-assign ap_ST_fsm_state44_blk = 1'b0;
-
-assign ap_ST_fsm_state45_blk = 1'b0;
-
-assign ap_ST_fsm_state46_blk = 1'b0;
-
-assign ap_ST_fsm_state47_blk = 1'b0;
-
-assign ap_ST_fsm_state48_blk = 1'b0;
-
-assign ap_ST_fsm_state49_blk = 1'b0;
+always @ (*) begin
+    if ((grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_PIXEL_NORM_fu_358_ap_done == 1'b0)) begin
+        ap_ST_fsm_state44_blk = 1'b1;
+    end else begin
+        ap_ST_fsm_state44_blk = 1'b0;
+    end
+end
 
 assign ap_ST_fsm_state4_blk = 1'b0;
 
-assign ap_ST_fsm_state50_blk = 1'b0;
-
-assign ap_ST_fsm_state51_blk = 1'b0;
-
-assign ap_ST_fsm_state52_blk = 1'b0;
-
-assign ap_ST_fsm_state53_blk = 1'b0;
-
-assign ap_ST_fsm_state54_blk = 1'b0;
-
-assign ap_ST_fsm_state55_blk = 1'b0;
-
-assign ap_ST_fsm_state56_blk = 1'b0;
-
-assign ap_ST_fsm_state57_blk = 1'b0;
-
-assign ap_ST_fsm_state58_blk = 1'b0;
-
-assign ap_ST_fsm_state59_blk = 1'b0;
-
 assign ap_ST_fsm_state5_blk = 1'b0;
-
-assign ap_ST_fsm_state60_blk = 1'b0;
-
-assign ap_ST_fsm_state61_blk = 1'b0;
-
-assign ap_ST_fsm_state62_blk = 1'b0;
-
-assign ap_ST_fsm_state63_blk = 1'b0;
-
-assign ap_ST_fsm_state64_blk = 1'b0;
-
-assign ap_ST_fsm_state65_blk = 1'b0;
-
-assign ap_ST_fsm_state66_blk = 1'b0;
-
-assign ap_ST_fsm_state67_blk = 1'b0;
-
-assign ap_ST_fsm_state68_blk = 1'b0;
-
-assign ap_ST_fsm_state69_blk = 1'b0;
 
 assign ap_ST_fsm_state6_blk = 1'b0;
 
-assign ap_ST_fsm_state70_blk = 1'b0;
-
-assign ap_ST_fsm_state71_blk = 1'b0;
-
-assign ap_ST_fsm_state72_blk = 1'b0;
-
-assign ap_ST_fsm_state73_blk = 1'b0;
-
-assign ap_ST_fsm_state74_blk = 1'b0;
-
-assign ap_ST_fsm_state75_blk = 1'b0;
-
-assign ap_ST_fsm_state76_blk = 1'b0;
-
-assign ap_ST_fsm_state77_blk = 1'b0;
-
-assign ap_ST_fsm_state78_blk = 1'b0;
-
-assign ap_ST_fsm_state79_blk = 1'b0;
-
 assign ap_ST_fsm_state7_blk = 1'b0;
 
-assign ap_ST_fsm_state80_blk = 1'b0;
-
-assign ap_ST_fsm_state81_blk = 1'b0;
-
-assign ap_ST_fsm_state82_blk = 1'b0;
-
-assign ap_ST_fsm_state83_blk = 1'b0;
-
-assign ap_ST_fsm_state84_blk = 1'b0;
-
-assign ap_ST_fsm_state85_blk = 1'b0;
-
-assign ap_ST_fsm_state86_blk = 1'b0;
-
-assign ap_ST_fsm_state87_blk = 1'b0;
-
-assign ap_ST_fsm_state88_blk = 1'b0;
-
-assign ap_ST_fsm_state89_blk = 1'b0;
-
 assign ap_ST_fsm_state8_blk = 1'b0;
-
-assign ap_ST_fsm_state90_blk = 1'b0;
-
-assign ap_ST_fsm_state91_blk = 1'b0;
-
-assign ap_ST_fsm_state92_blk = 1'b0;
-
-assign ap_ST_fsm_state93_blk = 1'b0;
-
-assign ap_ST_fsm_state94_blk = 1'b0;
-
-assign ap_ST_fsm_state95_blk = 1'b0;
-
-assign ap_ST_fsm_state96_blk = 1'b0;
-
-assign ap_ST_fsm_state97_blk = 1'b0;
-
-assign ap_ST_fsm_state98_blk = 1'b0;
-
-assign ap_ST_fsm_state99_blk = 1'b0;
 
 assign ap_ST_fsm_state9_blk = 1'b0;
 
 always @ (*) begin
-    if ((((m_axi_gmem_out_0_BVALID == 1'b1) & (1'b1 == ap_CS_fsm_state141)) | ((1'b1 == ap_CS_fsm_state1) & (ap_start == 1'b0)))) begin
+    if ((((ap_start == 1'b0) & (1'b1 == ap_CS_fsm_state1)) | ((1'b1 == ap_CS_fsm_state44) & (grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_PIXEL_NORM_fu_358_ap_done == 1'b1)))) begin
         ap_done = 1'b1;
     end else begin
         ap_done = 1'b0;
@@ -4461,7 +4112,7 @@ always @ (*) begin
 end
 
 always @ (*) begin
-    if (((1'b1 == ap_CS_fsm_state1) & (ap_start == 1'b0))) begin
+    if (((ap_start == 1'b0) & (1'b1 == ap_CS_fsm_state1))) begin
         ap_idle = 1'b1;
     end else begin
         ap_idle = 1'b0;
@@ -4469,7 +4120,7 @@ always @ (*) begin
 end
 
 always @ (*) begin
-    if (((m_axi_gmem_out_0_BVALID == 1'b1) & (1'b1 == ap_CS_fsm_state141))) begin
+    if (((1'b1 == ap_CS_fsm_state44) & (grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_PIXEL_NORM_fu_358_ap_done == 1'b1))) begin
         ap_ready = 1'b1;
     end else begin
         ap_ready = 1'b0;
@@ -4477,102 +4128,94 @@ always @ (*) begin
 end
 
 always @ (*) begin
-    if ((1'b1 == ap_CS_fsm_state16)) begin
-        b_buf_address0 = grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_BIAS_STATS_fu_330_b_buf_address0;
-    end else if ((1'b1 == ap_CS_fsm_state2)) begin
-        b_buf_address0 = grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_LOAD_PARAMS_fu_273_b_buf_address0;
+    if ((1'b1 == ap_CS_fsm_state32)) begin
+        b_buf_address0 = grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_PIXEL_STATS_fu_308_b_buf_address0;
+    end else if ((1'b1 == ap_CS_fsm_state22)) begin
+        b_buf_address0 = grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_LOAD_B_fu_292_b_buf_address0;
     end else begin
         b_buf_address0 = 'bx;
     end
 end
 
 always @ (*) begin
-    if ((1'b1 == ap_CS_fsm_state16)) begin
-        b_buf_ce0 = grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_BIAS_STATS_fu_330_b_buf_ce0;
-    end else if ((1'b1 == ap_CS_fsm_state2)) begin
-        b_buf_ce0 = grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_LOAD_PARAMS_fu_273_b_buf_ce0;
+    if ((1'b1 == ap_CS_fsm_state32)) begin
+        b_buf_ce0 = grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_PIXEL_STATS_fu_308_b_buf_ce0;
+    end else if ((1'b1 == ap_CS_fsm_state22)) begin
+        b_buf_ce0 = grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_LOAD_B_fu_292_b_buf_ce0;
     end else begin
         b_buf_ce0 = 1'b0;
     end
 end
 
 always @ (*) begin
-    if ((1'b1 == ap_CS_fsm_state2)) begin
-        b_buf_we0 = grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_LOAD_PARAMS_fu_273_b_buf_we0;
+    if ((1'b1 == ap_CS_fsm_state22)) begin
+        b_buf_we0 = grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_LOAD_B_fu_292_b_buf_we0;
     end else begin
         b_buf_we0 = 1'b0;
     end
 end
 
 always @ (*) begin
-    if ((1'b1 == ap_CS_fsm_state136)) begin
-        be_buf_address0 = grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_NORM_WRITE_fu_370_be_buf_address0;
-    end else if ((1'b1 == ap_CS_fsm_state2)) begin
-        be_buf_address0 = grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_LOAD_PARAMS_fu_273_be_buf_address0;
+    if ((1'b1 == ap_CS_fsm_state44)) begin
+        be_buf_address0 = grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_PIXEL_NORM_fu_358_be_buf_address0;
+    end else if ((1'b1 == ap_CS_fsm_state42)) begin
+        be_buf_address0 = grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_LOAD_BE_fu_350_be_buf_address0;
     end else begin
         be_buf_address0 = 'bx;
     end
 end
 
 always @ (*) begin
-    if ((1'b1 == ap_CS_fsm_state136)) begin
-        be_buf_ce0 = grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_NORM_WRITE_fu_370_be_buf_ce0;
-    end else if ((1'b1 == ap_CS_fsm_state2)) begin
-        be_buf_ce0 = grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_LOAD_PARAMS_fu_273_be_buf_ce0;
+    if ((1'b1 == ap_CS_fsm_state44)) begin
+        be_buf_ce0 = grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_PIXEL_NORM_fu_358_be_buf_ce0;
+    end else if ((1'b1 == ap_CS_fsm_state42)) begin
+        be_buf_ce0 = grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_LOAD_BE_fu_350_be_buf_ce0;
     end else begin
         be_buf_ce0 = 1'b0;
     end
 end
 
 always @ (*) begin
-    if ((1'b1 == ap_CS_fsm_state2)) begin
-        be_buf_we0 = grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_LOAD_PARAMS_fu_273_be_buf_we0;
+    if ((1'b1 == ap_CS_fsm_state42)) begin
+        be_buf_we0 = grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_LOAD_BE_fu_350_be_buf_we0;
     end else begin
         be_buf_we0 = 1'b0;
     end
 end
 
 always @ (*) begin
-    if ((1'b1 == ap_CS_fsm_state136)) begin
-        g_buf_address0 = grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_NORM_WRITE_fu_370_g_buf_address0;
-    end else if ((1'b1 == ap_CS_fsm_state2)) begin
-        g_buf_address0 = grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_LOAD_PARAMS_fu_273_g_buf_address0;
+    if ((1'b1 == ap_CS_fsm_state44)) begin
+        g_buf_address0 = grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_PIXEL_NORM_fu_358_g_buf_address0;
+    end else if ((1'b1 == ap_CS_fsm_state32)) begin
+        g_buf_address0 = grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_LOAD_G_fu_300_g_buf_address0;
     end else begin
         g_buf_address0 = 'bx;
     end
 end
 
 always @ (*) begin
-    if ((1'b1 == ap_CS_fsm_state136)) begin
-        g_buf_ce0 = grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_NORM_WRITE_fu_370_g_buf_ce0;
-    end else if ((1'b1 == ap_CS_fsm_state2)) begin
-        g_buf_ce0 = grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_LOAD_PARAMS_fu_273_g_buf_ce0;
+    if ((1'b1 == ap_CS_fsm_state44)) begin
+        g_buf_ce0 = grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_PIXEL_NORM_fu_358_g_buf_ce0;
+    end else if ((1'b1 == ap_CS_fsm_state32)) begin
+        g_buf_ce0 = grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_LOAD_G_fu_300_g_buf_ce0;
     end else begin
         g_buf_ce0 = 1'b0;
     end
 end
 
 always @ (*) begin
-    if ((1'b1 == ap_CS_fsm_state2)) begin
-        g_buf_we0 = grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_LOAD_PARAMS_fu_273_g_buf_we0;
+    if ((1'b1 == ap_CS_fsm_state32)) begin
+        g_buf_we0 = grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_LOAD_G_fu_300_g_buf_we0;
     end else begin
         g_buf_we0 = 1'b0;
     end
 end
 
 always @ (*) begin
-    if ((1'b1 == ap_CS_fsm_state13)) begin
-        gmem_out_blk_n_AW = m_axi_gmem_out_0_AWREADY;
+    if (((1'b1 == ap_CS_fsm_state33) | (1'b1 == ap_CS_fsm_state23) | (1'b1 == ap_CS_fsm_state13))) begin
+        gmem_param_blk_n_AR = m_axi_gmem_param_0_ARREADY;
     end else begin
-        gmem_out_blk_n_AW = 1'b1;
-    end
-end
-
-always @ (*) begin
-    if ((1'b1 == ap_CS_fsm_state141)) begin
-        gmem_out_blk_n_B = m_axi_gmem_out_0_BVALID;
-    end else begin
-        gmem_out_blk_n_B = 1'b1;
+        gmem_param_blk_n_AR = 1'b1;
     end
 end
 
@@ -4585,3079 +4228,2983 @@ always @ (*) begin
 end
 
 always @ (*) begin
-    if ((1'b1 == ap_CS_fsm_state54)) begin
-        grp_fu_414_opcode = 2'd1;
-    end else if ((1'b1 == ap_CS_fsm_state65)) begin
-        grp_fu_414_opcode = 2'd0;
+    if (((1'b1 == ap_CS_fsm_state32) | (1'b1 == ap_CS_fsm_state31))) begin
+        grp_fu_405_ce = grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_PIXEL_STATS_fu_308_grp_fu_405_p_ce;
     end else begin
-        grp_fu_414_opcode = 'bx;
+        grp_fu_405_ce = 1'b1;
     end
 end
 
 always @ (*) begin
-    if ((1'b1 == ap_CS_fsm_state65)) begin
-        grp_fu_414_p0 = reg_449;
-    end else if ((1'b1 == ap_CS_fsm_state54)) begin
-        grp_fu_414_p0 = reg_441;
+    if (((1'b1 == ap_CS_fsm_state32) | (1'b1 == ap_CS_fsm_state31))) begin
+        grp_fu_405_p0 = grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_PIXEL_STATS_fu_308_grp_fu_405_p_din0;
+    end else if ((1'b1 == ap_CS_fsm_state29)) begin
+        grp_fu_405_p0 = epsilon;
     end else begin
-        grp_fu_414_p0 = 'bx;
+        grp_fu_405_p0 = 'bx;
     end
 end
 
 always @ (*) begin
-    if ((1'b1 == ap_CS_fsm_state65)) begin
-        grp_fu_414_p1 = conv1_reg_695;
-    end else if ((1'b1 == ap_CS_fsm_state54)) begin
-        grp_fu_414_p1 = mul_reg_725;
-    end else begin
-        grp_fu_414_p1 = 'bx;
-    end
-end
-
-always @ (*) begin
-    if ((1'b1 == ap_CS_fsm_state16)) begin
-        grp_fu_418_ce = grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_BIAS_STATS_fu_330_grp_fu_418_p_ce;
-    end else begin
-        grp_fu_418_ce = 1'b1;
-    end
-end
-
-always @ (*) begin
-    if ((1'b1 == ap_CS_fsm_state16)) begin
-        grp_fu_418_p0 = grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_BIAS_STATS_fu_330_grp_fu_418_p_din0;
-    end else if ((1'b1 == ap_CS_fsm_state47)) begin
-        grp_fu_418_p0 = reg_441;
-    end else begin
-        grp_fu_418_p0 = 'bx;
-    end
-end
-
-always @ (*) begin
-    if ((1'b1 == ap_CS_fsm_state16)) begin
-        grp_fu_418_p1 = grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_BIAS_STATS_fu_330_grp_fu_418_p_din1;
-    end else if ((1'b1 == ap_CS_fsm_state47)) begin
-        grp_fu_418_p1 = reg_441;
-    end else begin
-        grp_fu_418_p1 = 'bx;
-    end
-end
-
-always @ (*) begin
-    if ((1'b1 == ap_CS_fsm_state104)) begin
-        grp_fu_422_p0 = 32'd1065353216;
-    end else if ((1'b1 == ap_CS_fsm_state24)) begin
-        grp_fu_422_p0 = grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_BIAS_STATS_fu_330_sumsq_out;
-    end else if ((1'b1 == ap_CS_fsm_state17)) begin
-        grp_fu_422_p0 = grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_BIAS_STATS_fu_330_sum_out;
+    if (((1'b1 == ap_CS_fsm_state43) | (1'b1 == ap_CS_fsm_state44))) begin
+        grp_fu_582_ce = grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_PIXEL_NORM_fu_358_grp_fu_582_p_ce;
+    end else if (((1'b1 == ap_CS_fsm_state32) | (1'b1 == ap_CS_fsm_state31))) begin
+        grp_fu_582_ce = grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_PIXEL_STATS_fu_308_grp_fu_582_p_ce;
+    end else if ((1'b1 == ap_CS_fsm_state12)) begin
+        grp_fu_582_ce = grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_250_grp_fu_582_p_ce;
     end else begin
-        grp_fu_422_p0 = 'bx;
+        grp_fu_582_ce = 1'b1;
     end
 end
 
 always @ (*) begin
-    if ((1'b1 == ap_CS_fsm_state104)) begin
-        grp_fu_422_p1 = tmp_reg_730;
-    end else if (((1'b1 == ap_CS_fsm_state24) | (1'b1 == ap_CS_fsm_state17))) begin
-        grp_fu_422_p1 = 32'd1131413504;
+    if (((1'b1 == ap_CS_fsm_state43) | (1'b1 == ap_CS_fsm_state44))) begin
+        grp_fu_582_p0 = grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_PIXEL_NORM_fu_358_grp_fu_582_p_din0;
+    end else if (((1'b1 == ap_CS_fsm_state32) | (1'b1 == ap_CS_fsm_state31))) begin
+        grp_fu_582_p0 = grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_PIXEL_STATS_fu_308_grp_fu_582_p_din0;
+    end else if ((1'b1 == ap_CS_fsm_state12)) begin
+        grp_fu_582_p0 = grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_250_grp_fu_582_p_din0;
     end else begin
-        grp_fu_422_p1 = 'bx;
+        grp_fu_582_p0 = 'bx;
     end
 end
 
 always @ (*) begin
-    if ((1'b1 == ap_CS_fsm_state16)) begin
-        grp_fu_437_ce = grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_BIAS_STATS_fu_330_grp_fu_437_p_ce;
-    end else if ((((grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_288_ap_done == 1'b1) & (1'b1 == ap_CS_fsm_state12)) | ((m_axi_gmem_out_0_AWREADY == 1'b1) & (1'b1 == ap_CS_fsm_state13)))) begin
-        grp_fu_437_ce = 1'b1;
+    if (((1'b1 == ap_CS_fsm_state43) | (1'b1 == ap_CS_fsm_state44))) begin
+        grp_fu_582_p1 = grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_PIXEL_NORM_fu_358_grp_fu_582_p_din1;
+    end else if (((1'b1 == ap_CS_fsm_state32) | (1'b1 == ap_CS_fsm_state31))) begin
+        grp_fu_582_p1 = grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_PIXEL_STATS_fu_308_grp_fu_582_p_din1;
+    end else if ((1'b1 == ap_CS_fsm_state12)) begin
+        grp_fu_582_p1 = grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_250_grp_fu_582_p_din1;
     end else begin
-        grp_fu_437_ce = 1'b0;
+        grp_fu_582_p1 = 'bx;
     end
 end
 
 always @ (*) begin
-    if ((1'b1 == ap_CS_fsm_state16)) begin
-        grp_fu_437_p0 = grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_BIAS_STATS_fu_330_grp_fu_437_p_din0;
+    if (((1'b1 == ap_CS_fsm_state43) | (1'b1 == ap_CS_fsm_state44))) begin
+        grp_fu_586_ce = grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_PIXEL_NORM_fu_358_grp_fu_586_p_ce;
     end else if ((1'b1 == ap_CS_fsm_state12)) begin
-        grp_fu_437_p0 = epsilon;
+        grp_fu_586_ce = grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_250_grp_fu_586_p_ce;
     end else begin
-        grp_fu_437_p0 = 'bx;
+        grp_fu_586_ce = 1'b1;
     end
 end
 
 always @ (*) begin
-    if ((1'b1 == ap_CS_fsm_state136)) begin
-        grp_fu_740_ce = grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_NORM_WRITE_fu_370_grp_fu_740_p_ce;
+    if (((1'b1 == ap_CS_fsm_state43) | (1'b1 == ap_CS_fsm_state44))) begin
+        grp_fu_586_p0 = grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_PIXEL_NORM_fu_358_grp_fu_586_p_din0;
     end else if ((1'b1 == ap_CS_fsm_state12)) begin
-        grp_fu_740_ce = grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_288_grp_fu_740_p_ce;
+        grp_fu_586_p0 = grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_250_grp_fu_586_p_din0;
     end else begin
-        grp_fu_740_ce = 1'b1;
+        grp_fu_586_p0 = 'bx;
     end
 end
 
 always @ (*) begin
-    if ((1'b1 == ap_CS_fsm_state136)) begin
-        grp_fu_740_p0 = grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_NORM_WRITE_fu_370_grp_fu_740_p_din0;
+    if (((1'b1 == ap_CS_fsm_state43) | (1'b1 == ap_CS_fsm_state44))) begin
+        grp_fu_586_p1 = grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_PIXEL_NORM_fu_358_grp_fu_586_p_din1;
     end else if ((1'b1 == ap_CS_fsm_state12)) begin
-        grp_fu_740_p0 = grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_288_grp_fu_740_p_din0;
+        grp_fu_586_p1 = grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_250_grp_fu_586_p_din1;
     end else begin
-        grp_fu_740_p0 = 'bx;
+        grp_fu_586_p1 = 'bx;
     end
 end
 
 always @ (*) begin
-    if ((1'b1 == ap_CS_fsm_state136)) begin
-        grp_fu_740_p1 = grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_NORM_WRITE_fu_370_grp_fu_740_p_din1;
+    if (((1'b1 == ap_CS_fsm_state43) | (1'b1 == ap_CS_fsm_state44))) begin
+        grp_fu_590_ce = grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_PIXEL_NORM_fu_358_grp_fu_590_p_ce;
     end else if ((1'b1 == ap_CS_fsm_state12)) begin
-        grp_fu_740_p1 = grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_288_grp_fu_740_p_din1;
+        grp_fu_590_ce = grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_250_grp_fu_590_p_ce;
     end else begin
-        grp_fu_740_p1 = 'bx;
+        grp_fu_590_ce = 1'b1;
     end
 end
 
 always @ (*) begin
-    if ((1'b1 == ap_CS_fsm_state136)) begin
-        grp_fu_744_ce = grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_NORM_WRITE_fu_370_grp_fu_744_p_ce;
+    if (((1'b1 == ap_CS_fsm_state43) | (1'b1 == ap_CS_fsm_state44))) begin
+        grp_fu_590_p0 = grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_PIXEL_NORM_fu_358_grp_fu_590_p_din0;
     end else if ((1'b1 == ap_CS_fsm_state12)) begin
-        grp_fu_744_ce = grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_288_grp_fu_744_p_ce;
+        grp_fu_590_p0 = grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_250_grp_fu_590_p_din0;
     end else begin
-        grp_fu_744_ce = 1'b1;
+        grp_fu_590_p0 = 'bx;
     end
 end
 
 always @ (*) begin
-    if ((1'b1 == ap_CS_fsm_state136)) begin
-        grp_fu_744_p0 = grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_NORM_WRITE_fu_370_grp_fu_744_p_din0;
+    if (((1'b1 == ap_CS_fsm_state43) | (1'b1 == ap_CS_fsm_state44))) begin
+        grp_fu_590_p1 = grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_PIXEL_NORM_fu_358_grp_fu_590_p_din1;
     end else if ((1'b1 == ap_CS_fsm_state12)) begin
-        grp_fu_744_p0 = grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_288_grp_fu_744_p_din0;
+        grp_fu_590_p1 = grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_250_grp_fu_590_p_din1;
     end else begin
-        grp_fu_744_p0 = 'bx;
+        grp_fu_590_p1 = 'bx;
     end
 end
 
 always @ (*) begin
-    if ((1'b1 == ap_CS_fsm_state136)) begin
-        grp_fu_744_p1 = grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_NORM_WRITE_fu_370_grp_fu_744_p_din1;
+    if (((1'b1 == ap_CS_fsm_state43) | (1'b1 == ap_CS_fsm_state44))) begin
+        grp_fu_594_ce = grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_PIXEL_NORM_fu_358_grp_fu_594_p_ce;
     end else if ((1'b1 == ap_CS_fsm_state12)) begin
-        grp_fu_744_p1 = grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_288_grp_fu_744_p_din1;
+        grp_fu_594_ce = grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_250_grp_fu_594_p_ce;
     end else begin
-        grp_fu_744_p1 = 'bx;
+        grp_fu_594_ce = 1'b1;
     end
 end
 
 always @ (*) begin
-    if ((1'b1 == ap_CS_fsm_state136)) begin
-        grp_fu_748_ce = grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_NORM_WRITE_fu_370_grp_fu_748_p_ce;
+    if (((1'b1 == ap_CS_fsm_state43) | (1'b1 == ap_CS_fsm_state44))) begin
+        grp_fu_594_p0 = grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_PIXEL_NORM_fu_358_grp_fu_594_p_din0;
     end else if ((1'b1 == ap_CS_fsm_state12)) begin
-        grp_fu_748_ce = grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_288_grp_fu_748_p_ce;
+        grp_fu_594_p0 = grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_250_grp_fu_594_p_din0;
     end else begin
-        grp_fu_748_ce = 1'b1;
+        grp_fu_594_p0 = 'bx;
     end
 end
 
 always @ (*) begin
-    if ((1'b1 == ap_CS_fsm_state136)) begin
-        grp_fu_748_p0 = grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_NORM_WRITE_fu_370_grp_fu_748_p_din0;
+    if (((1'b1 == ap_CS_fsm_state43) | (1'b1 == ap_CS_fsm_state44))) begin
+        grp_fu_594_p1 = grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_PIXEL_NORM_fu_358_grp_fu_594_p_din1;
     end else if ((1'b1 == ap_CS_fsm_state12)) begin
-        grp_fu_748_p0 = grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_288_grp_fu_748_p_din0;
+        grp_fu_594_p1 = grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_250_grp_fu_594_p_din1;
     end else begin
-        grp_fu_748_p0 = 'bx;
+        grp_fu_594_p1 = 'bx;
     end
 end
 
 always @ (*) begin
-    if ((1'b1 == ap_CS_fsm_state136)) begin
-        grp_fu_748_p1 = grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_NORM_WRITE_fu_370_grp_fu_748_p_din1;
+    if (((1'b1 == ap_CS_fsm_state43) | (1'b1 == ap_CS_fsm_state44))) begin
+        grp_fu_598_ce = grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_PIXEL_NORM_fu_358_grp_fu_598_p_ce;
     end else if ((1'b1 == ap_CS_fsm_state12)) begin
-        grp_fu_748_p1 = grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_288_grp_fu_748_p_din1;
+        grp_fu_598_ce = grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_250_grp_fu_598_p_ce;
     end else begin
-        grp_fu_748_p1 = 'bx;
+        grp_fu_598_ce = 1'b1;
     end
 end
 
 always @ (*) begin
-    if ((1'b1 == ap_CS_fsm_state136)) begin
-        grp_fu_752_ce = grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_NORM_WRITE_fu_370_grp_fu_752_p_ce;
+    if (((1'b1 == ap_CS_fsm_state43) | (1'b1 == ap_CS_fsm_state44))) begin
+        grp_fu_598_p0 = grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_PIXEL_NORM_fu_358_grp_fu_598_p_din0;
     end else if ((1'b1 == ap_CS_fsm_state12)) begin
-        grp_fu_752_ce = grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_288_grp_fu_752_p_ce;
+        grp_fu_598_p0 = grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_250_grp_fu_598_p_din0;
     end else begin
-        grp_fu_752_ce = 1'b1;
+        grp_fu_598_p0 = 'bx;
     end
 end
 
 always @ (*) begin
-    if ((1'b1 == ap_CS_fsm_state136)) begin
-        grp_fu_752_p0 = grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_NORM_WRITE_fu_370_grp_fu_752_p_din0;
+    if (((1'b1 == ap_CS_fsm_state43) | (1'b1 == ap_CS_fsm_state44))) begin
+        grp_fu_598_p1 = grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_PIXEL_NORM_fu_358_grp_fu_598_p_din1;
     end else if ((1'b1 == ap_CS_fsm_state12)) begin
-        grp_fu_752_p0 = grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_288_grp_fu_752_p_din0;
+        grp_fu_598_p1 = grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_250_grp_fu_598_p_din1;
     end else begin
-        grp_fu_752_p0 = 'bx;
+        grp_fu_598_p1 = 'bx;
     end
 end
 
 always @ (*) begin
-    if ((1'b1 == ap_CS_fsm_state136)) begin
-        grp_fu_752_p1 = grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_NORM_WRITE_fu_370_grp_fu_752_p_din1;
+    if (((1'b1 == ap_CS_fsm_state43) | (1'b1 == ap_CS_fsm_state44))) begin
+        grp_fu_602_ce = grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_PIXEL_NORM_fu_358_grp_fu_602_p_ce;
     end else if ((1'b1 == ap_CS_fsm_state12)) begin
-        grp_fu_752_p1 = grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_288_grp_fu_752_p_din1;
+        grp_fu_602_ce = grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_250_grp_fu_602_p_ce;
     end else begin
-        grp_fu_752_p1 = 'bx;
+        grp_fu_602_ce = 1'b1;
     end
 end
 
 always @ (*) begin
-    if ((1'b1 == ap_CS_fsm_state136)) begin
-        grp_fu_756_ce = grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_NORM_WRITE_fu_370_grp_fu_756_p_ce;
+    if (((1'b1 == ap_CS_fsm_state43) | (1'b1 == ap_CS_fsm_state44))) begin
+        grp_fu_602_p0 = grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_PIXEL_NORM_fu_358_grp_fu_602_p_din0;
     end else if ((1'b1 == ap_CS_fsm_state12)) begin
-        grp_fu_756_ce = grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_288_grp_fu_756_p_ce;
+        grp_fu_602_p0 = grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_250_grp_fu_602_p_din0;
     end else begin
-        grp_fu_756_ce = 1'b1;
+        grp_fu_602_p0 = 'bx;
     end
 end
 
 always @ (*) begin
-    if ((1'b1 == ap_CS_fsm_state136)) begin
-        grp_fu_756_p0 = grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_NORM_WRITE_fu_370_grp_fu_756_p_din0;
+    if (((1'b1 == ap_CS_fsm_state43) | (1'b1 == ap_CS_fsm_state44))) begin
+        grp_fu_602_p1 = grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_PIXEL_NORM_fu_358_grp_fu_602_p_din1;
     end else if ((1'b1 == ap_CS_fsm_state12)) begin
-        grp_fu_756_p0 = grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_288_grp_fu_756_p_din0;
+        grp_fu_602_p1 = grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_250_grp_fu_602_p_din1;
     end else begin
-        grp_fu_756_p0 = 'bx;
+        grp_fu_602_p1 = 'bx;
     end
 end
 
 always @ (*) begin
-    if ((1'b1 == ap_CS_fsm_state136)) begin
-        grp_fu_756_p1 = grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_NORM_WRITE_fu_370_grp_fu_756_p_din1;
+    if (((1'b1 == ap_CS_fsm_state43) | (1'b1 == ap_CS_fsm_state44))) begin
+        grp_fu_606_ce = grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_PIXEL_NORM_fu_358_grp_fu_606_p_ce;
     end else if ((1'b1 == ap_CS_fsm_state12)) begin
-        grp_fu_756_p1 = grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_288_grp_fu_756_p_din1;
+        grp_fu_606_ce = grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_250_grp_fu_606_p_ce;
     end else begin
-        grp_fu_756_p1 = 'bx;
+        grp_fu_606_ce = 1'b1;
     end
 end
 
 always @ (*) begin
-    if ((1'b1 == ap_CS_fsm_state136)) begin
-        grp_fu_760_ce = grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_NORM_WRITE_fu_370_grp_fu_760_p_ce;
+    if (((1'b1 == ap_CS_fsm_state43) | (1'b1 == ap_CS_fsm_state44))) begin
+        grp_fu_606_p0 = grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_PIXEL_NORM_fu_358_grp_fu_606_p_din0;
     end else if ((1'b1 == ap_CS_fsm_state12)) begin
-        grp_fu_760_ce = grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_288_grp_fu_760_p_ce;
+        grp_fu_606_p0 = grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_250_grp_fu_606_p_din0;
     end else begin
-        grp_fu_760_ce = 1'b1;
+        grp_fu_606_p0 = 'bx;
     end
 end
 
 always @ (*) begin
-    if ((1'b1 == ap_CS_fsm_state136)) begin
-        grp_fu_760_p0 = grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_NORM_WRITE_fu_370_grp_fu_760_p_din0;
+    if (((1'b1 == ap_CS_fsm_state43) | (1'b1 == ap_CS_fsm_state44))) begin
+        grp_fu_606_p1 = grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_PIXEL_NORM_fu_358_grp_fu_606_p_din1;
     end else if ((1'b1 == ap_CS_fsm_state12)) begin
-        grp_fu_760_p0 = grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_288_grp_fu_760_p_din0;
+        grp_fu_606_p1 = grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_250_grp_fu_606_p_din1;
     end else begin
-        grp_fu_760_p0 = 'bx;
+        grp_fu_606_p1 = 'bx;
     end
 end
 
 always @ (*) begin
-    if ((1'b1 == ap_CS_fsm_state136)) begin
-        grp_fu_760_p1 = grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_NORM_WRITE_fu_370_grp_fu_760_p_din1;
+    if (((1'b1 == ap_CS_fsm_state43) | (1'b1 == ap_CS_fsm_state44))) begin
+        grp_fu_610_ce = grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_PIXEL_NORM_fu_358_grp_fu_610_p_ce;
     end else if ((1'b1 == ap_CS_fsm_state12)) begin
-        grp_fu_760_p1 = grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_288_grp_fu_760_p_din1;
+        grp_fu_610_ce = grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_250_grp_fu_610_p_ce;
     end else begin
-        grp_fu_760_p1 = 'bx;
+        grp_fu_610_ce = 1'b1;
     end
 end
 
 always @ (*) begin
-    if ((1'b1 == ap_CS_fsm_state136)) begin
-        grp_fu_764_ce = grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_NORM_WRITE_fu_370_grp_fu_764_p_ce;
+    if (((1'b1 == ap_CS_fsm_state43) | (1'b1 == ap_CS_fsm_state44))) begin
+        grp_fu_610_p0 = grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_PIXEL_NORM_fu_358_grp_fu_610_p_din0;
     end else if ((1'b1 == ap_CS_fsm_state12)) begin
-        grp_fu_764_ce = grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_288_grp_fu_764_p_ce;
+        grp_fu_610_p0 = grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_250_grp_fu_610_p_din0;
     end else begin
-        grp_fu_764_ce = 1'b1;
+        grp_fu_610_p0 = 'bx;
     end
 end
 
 always @ (*) begin
-    if ((1'b1 == ap_CS_fsm_state136)) begin
-        grp_fu_764_p0 = grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_NORM_WRITE_fu_370_grp_fu_764_p_din0;
+    if (((1'b1 == ap_CS_fsm_state43) | (1'b1 == ap_CS_fsm_state44))) begin
+        grp_fu_610_p1 = grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_PIXEL_NORM_fu_358_grp_fu_610_p_din1;
     end else if ((1'b1 == ap_CS_fsm_state12)) begin
-        grp_fu_764_p0 = grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_288_grp_fu_764_p_din0;
+        grp_fu_610_p1 = grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_250_grp_fu_610_p_din1;
     end else begin
-        grp_fu_764_p0 = 'bx;
+        grp_fu_610_p1 = 'bx;
     end
 end
 
 always @ (*) begin
-    if ((1'b1 == ap_CS_fsm_state136)) begin
-        grp_fu_764_p1 = grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_NORM_WRITE_fu_370_grp_fu_764_p_din1;
+    if (((1'b1 == ap_CS_fsm_state43) | (1'b1 == ap_CS_fsm_state44))) begin
+        grp_fu_614_ce = grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_PIXEL_NORM_fu_358_grp_fu_614_p_ce;
     end else if ((1'b1 == ap_CS_fsm_state12)) begin
-        grp_fu_764_p1 = grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_288_grp_fu_764_p_din1;
+        grp_fu_614_ce = grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_250_grp_fu_614_p_ce;
     end else begin
-        grp_fu_764_p1 = 'bx;
+        grp_fu_614_ce = 1'b1;
     end
 end
 
 always @ (*) begin
-    if ((1'b1 == ap_CS_fsm_state136)) begin
-        grp_fu_768_ce = grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_NORM_WRITE_fu_370_grp_fu_768_p_ce;
+    if (((1'b1 == ap_CS_fsm_state43) | (1'b1 == ap_CS_fsm_state44))) begin
+        grp_fu_614_p0 = grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_PIXEL_NORM_fu_358_grp_fu_614_p_din0;
     end else if ((1'b1 == ap_CS_fsm_state12)) begin
-        grp_fu_768_ce = grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_288_grp_fu_768_p_ce;
+        grp_fu_614_p0 = grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_250_grp_fu_614_p_din0;
     end else begin
-        grp_fu_768_ce = 1'b1;
+        grp_fu_614_p0 = 'bx;
     end
 end
 
 always @ (*) begin
-    if ((1'b1 == ap_CS_fsm_state136)) begin
-        grp_fu_768_p0 = grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_NORM_WRITE_fu_370_grp_fu_768_p_din0;
+    if (((1'b1 == ap_CS_fsm_state43) | (1'b1 == ap_CS_fsm_state44))) begin
+        grp_fu_614_p1 = grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_PIXEL_NORM_fu_358_grp_fu_614_p_din1;
     end else if ((1'b1 == ap_CS_fsm_state12)) begin
-        grp_fu_768_p0 = grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_288_grp_fu_768_p_din0;
+        grp_fu_614_p1 = grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_250_grp_fu_614_p_din1;
     end else begin
-        grp_fu_768_p0 = 'bx;
+        grp_fu_614_p1 = 'bx;
     end
 end
 
 always @ (*) begin
-    if ((1'b1 == ap_CS_fsm_state136)) begin
-        grp_fu_768_p1 = grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_NORM_WRITE_fu_370_grp_fu_768_p_din1;
+    if (((1'b1 == ap_CS_fsm_state43) | (1'b1 == ap_CS_fsm_state44))) begin
+        grp_fu_618_ce = grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_PIXEL_NORM_fu_358_grp_fu_618_p_ce;
     end else if ((1'b1 == ap_CS_fsm_state12)) begin
-        grp_fu_768_p1 = grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_288_grp_fu_768_p_din1;
+        grp_fu_618_ce = grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_250_grp_fu_618_p_ce;
     end else begin
-        grp_fu_768_p1 = 'bx;
+        grp_fu_618_ce = 1'b1;
     end
 end
 
 always @ (*) begin
-    if ((1'b1 == ap_CS_fsm_state136)) begin
-        grp_fu_772_ce = grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_NORM_WRITE_fu_370_grp_fu_772_p_ce;
+    if (((1'b1 == ap_CS_fsm_state43) | (1'b1 == ap_CS_fsm_state44))) begin
+        grp_fu_618_p0 = grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_PIXEL_NORM_fu_358_grp_fu_618_p_din0;
     end else if ((1'b1 == ap_CS_fsm_state12)) begin
-        grp_fu_772_ce = grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_288_grp_fu_772_p_ce;
+        grp_fu_618_p0 = grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_250_grp_fu_618_p_din0;
     end else begin
-        grp_fu_772_ce = 1'b1;
+        grp_fu_618_p0 = 'bx;
     end
 end
 
 always @ (*) begin
-    if ((1'b1 == ap_CS_fsm_state136)) begin
-        grp_fu_772_p0 = grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_NORM_WRITE_fu_370_grp_fu_772_p_din0;
+    if (((1'b1 == ap_CS_fsm_state43) | (1'b1 == ap_CS_fsm_state44))) begin
+        grp_fu_618_p1 = grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_PIXEL_NORM_fu_358_grp_fu_618_p_din1;
     end else if ((1'b1 == ap_CS_fsm_state12)) begin
-        grp_fu_772_p0 = grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_288_grp_fu_772_p_din0;
+        grp_fu_618_p1 = grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_250_grp_fu_618_p_din1;
     end else begin
-        grp_fu_772_p0 = 'bx;
+        grp_fu_618_p1 = 'bx;
     end
 end
 
 always @ (*) begin
-    if ((1'b1 == ap_CS_fsm_state136)) begin
-        grp_fu_772_p1 = grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_NORM_WRITE_fu_370_grp_fu_772_p_din1;
+    if (((1'b1 == ap_CS_fsm_state43) | (1'b1 == ap_CS_fsm_state44))) begin
+        grp_fu_622_ce = grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_PIXEL_NORM_fu_358_grp_fu_622_p_ce;
     end else if ((1'b1 == ap_CS_fsm_state12)) begin
-        grp_fu_772_p1 = grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_288_grp_fu_772_p_din1;
+        grp_fu_622_ce = grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_250_grp_fu_622_p_ce;
     end else begin
-        grp_fu_772_p1 = 'bx;
+        grp_fu_622_ce = 1'b1;
     end
 end
 
 always @ (*) begin
-    if ((1'b1 == ap_CS_fsm_state136)) begin
-        grp_fu_776_ce = grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_NORM_WRITE_fu_370_grp_fu_776_p_ce;
+    if (((1'b1 == ap_CS_fsm_state43) | (1'b1 == ap_CS_fsm_state44))) begin
+        grp_fu_622_p0 = grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_PIXEL_NORM_fu_358_grp_fu_622_p_din0;
     end else if ((1'b1 == ap_CS_fsm_state12)) begin
-        grp_fu_776_ce = grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_288_grp_fu_776_p_ce;
+        grp_fu_622_p0 = grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_250_grp_fu_622_p_din0;
     end else begin
-        grp_fu_776_ce = 1'b1;
+        grp_fu_622_p0 = 'bx;
     end
 end
 
 always @ (*) begin
-    if ((1'b1 == ap_CS_fsm_state136)) begin
-        grp_fu_776_p0 = grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_NORM_WRITE_fu_370_grp_fu_776_p_din0;
+    if (((1'b1 == ap_CS_fsm_state43) | (1'b1 == ap_CS_fsm_state44))) begin
+        grp_fu_622_p1 = grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_PIXEL_NORM_fu_358_grp_fu_622_p_din1;
     end else if ((1'b1 == ap_CS_fsm_state12)) begin
-        grp_fu_776_p0 = grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_288_grp_fu_776_p_din0;
+        grp_fu_622_p1 = grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_250_grp_fu_622_p_din1;
     end else begin
-        grp_fu_776_p0 = 'bx;
+        grp_fu_622_p1 = 'bx;
     end
 end
 
 always @ (*) begin
-    if ((1'b1 == ap_CS_fsm_state136)) begin
-        grp_fu_776_p1 = grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_NORM_WRITE_fu_370_grp_fu_776_p_din1;
+    if (((1'b1 == ap_CS_fsm_state43) | (1'b1 == ap_CS_fsm_state44))) begin
+        grp_fu_626_ce = grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_PIXEL_NORM_fu_358_grp_fu_626_p_ce;
     end else if ((1'b1 == ap_CS_fsm_state12)) begin
-        grp_fu_776_p1 = grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_288_grp_fu_776_p_din1;
+        grp_fu_626_ce = grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_250_grp_fu_626_p_ce;
     end else begin
-        grp_fu_776_p1 = 'bx;
+        grp_fu_626_ce = 1'b1;
     end
 end
 
 always @ (*) begin
-    if ((1'b1 == ap_CS_fsm_state136)) begin
-        grp_fu_780_ce = grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_NORM_WRITE_fu_370_grp_fu_780_p_ce;
+    if (((1'b1 == ap_CS_fsm_state43) | (1'b1 == ap_CS_fsm_state44))) begin
+        grp_fu_626_p0 = grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_PIXEL_NORM_fu_358_grp_fu_626_p_din0;
     end else if ((1'b1 == ap_CS_fsm_state12)) begin
-        grp_fu_780_ce = grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_288_grp_fu_780_p_ce;
+        grp_fu_626_p0 = grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_250_grp_fu_626_p_din0;
     end else begin
-        grp_fu_780_ce = 1'b1;
+        grp_fu_626_p0 = 'bx;
     end
 end
 
 always @ (*) begin
-    if ((1'b1 == ap_CS_fsm_state136)) begin
-        grp_fu_780_p0 = grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_NORM_WRITE_fu_370_grp_fu_780_p_din0;
+    if (((1'b1 == ap_CS_fsm_state43) | (1'b1 == ap_CS_fsm_state44))) begin
+        grp_fu_626_p1 = grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_PIXEL_NORM_fu_358_grp_fu_626_p_din1;
     end else if ((1'b1 == ap_CS_fsm_state12)) begin
-        grp_fu_780_p0 = grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_288_grp_fu_780_p_din0;
+        grp_fu_626_p1 = grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_250_grp_fu_626_p_din1;
     end else begin
-        grp_fu_780_p0 = 'bx;
+        grp_fu_626_p1 = 'bx;
     end
 end
 
 always @ (*) begin
-    if ((1'b1 == ap_CS_fsm_state136)) begin
-        grp_fu_780_p1 = grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_NORM_WRITE_fu_370_grp_fu_780_p_din1;
+    if (((1'b1 == ap_CS_fsm_state43) | (1'b1 == ap_CS_fsm_state44))) begin
+        grp_fu_630_ce = grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_PIXEL_NORM_fu_358_grp_fu_630_p_ce;
     end else if ((1'b1 == ap_CS_fsm_state12)) begin
-        grp_fu_780_p1 = grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_288_grp_fu_780_p_din1;
+        grp_fu_630_ce = grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_250_grp_fu_630_p_ce;
     end else begin
-        grp_fu_780_p1 = 'bx;
+        grp_fu_630_ce = 1'b1;
     end
 end
 
 always @ (*) begin
-    if ((1'b1 == ap_CS_fsm_state136)) begin
-        grp_fu_784_ce = grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_NORM_WRITE_fu_370_grp_fu_784_p_ce;
+    if (((1'b1 == ap_CS_fsm_state43) | (1'b1 == ap_CS_fsm_state44))) begin
+        grp_fu_630_p0 = grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_PIXEL_NORM_fu_358_grp_fu_630_p_din0;
     end else if ((1'b1 == ap_CS_fsm_state12)) begin
-        grp_fu_784_ce = grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_288_grp_fu_784_p_ce;
+        grp_fu_630_p0 = grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_250_grp_fu_630_p_din0;
     end else begin
-        grp_fu_784_ce = 1'b1;
+        grp_fu_630_p0 = 'bx;
     end
 end
 
 always @ (*) begin
-    if ((1'b1 == ap_CS_fsm_state136)) begin
-        grp_fu_784_p0 = grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_NORM_WRITE_fu_370_grp_fu_784_p_din0;
+    if (((1'b1 == ap_CS_fsm_state43) | (1'b1 == ap_CS_fsm_state44))) begin
+        grp_fu_630_p1 = grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_PIXEL_NORM_fu_358_grp_fu_630_p_din1;
     end else if ((1'b1 == ap_CS_fsm_state12)) begin
-        grp_fu_784_p0 = grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_288_grp_fu_784_p_din0;
+        grp_fu_630_p1 = grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_250_grp_fu_630_p_din1;
     end else begin
-        grp_fu_784_p0 = 'bx;
+        grp_fu_630_p1 = 'bx;
     end
 end
 
 always @ (*) begin
-    if ((1'b1 == ap_CS_fsm_state136)) begin
-        grp_fu_784_p1 = grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_NORM_WRITE_fu_370_grp_fu_784_p_din1;
+    if (((1'b1 == ap_CS_fsm_state43) | (1'b1 == ap_CS_fsm_state44))) begin
+        grp_fu_634_ce = grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_PIXEL_NORM_fu_358_grp_fu_634_p_ce;
     end else if ((1'b1 == ap_CS_fsm_state12)) begin
-        grp_fu_784_p1 = grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_288_grp_fu_784_p_din1;
+        grp_fu_634_ce = grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_250_grp_fu_634_p_ce;
     end else begin
-        grp_fu_784_p1 = 'bx;
+        grp_fu_634_ce = 1'b1;
     end
 end
 
 always @ (*) begin
-    if ((1'b1 == ap_CS_fsm_state136)) begin
-        grp_fu_788_ce = grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_NORM_WRITE_fu_370_grp_fu_788_p_ce;
+    if (((1'b1 == ap_CS_fsm_state43) | (1'b1 == ap_CS_fsm_state44))) begin
+        grp_fu_634_p0 = grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_PIXEL_NORM_fu_358_grp_fu_634_p_din0;
     end else if ((1'b1 == ap_CS_fsm_state12)) begin
-        grp_fu_788_ce = grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_288_grp_fu_788_p_ce;
+        grp_fu_634_p0 = grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_250_grp_fu_634_p_din0;
     end else begin
-        grp_fu_788_ce = 1'b1;
+        grp_fu_634_p0 = 'bx;
     end
 end
 
 always @ (*) begin
-    if ((1'b1 == ap_CS_fsm_state136)) begin
-        grp_fu_788_p0 = grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_NORM_WRITE_fu_370_grp_fu_788_p_din0;
+    if (((1'b1 == ap_CS_fsm_state43) | (1'b1 == ap_CS_fsm_state44))) begin
+        grp_fu_634_p1 = grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_PIXEL_NORM_fu_358_grp_fu_634_p_din1;
     end else if ((1'b1 == ap_CS_fsm_state12)) begin
-        grp_fu_788_p0 = grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_288_grp_fu_788_p_din0;
+        grp_fu_634_p1 = grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_250_grp_fu_634_p_din1;
     end else begin
-        grp_fu_788_p0 = 'bx;
+        grp_fu_634_p1 = 'bx;
     end
 end
 
 always @ (*) begin
-    if ((1'b1 == ap_CS_fsm_state136)) begin
-        grp_fu_788_p1 = grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_NORM_WRITE_fu_370_grp_fu_788_p_din1;
+    if (((1'b1 == ap_CS_fsm_state43) | (1'b1 == ap_CS_fsm_state44))) begin
+        grp_fu_638_ce = grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_PIXEL_NORM_fu_358_grp_fu_638_p_ce;
     end else if ((1'b1 == ap_CS_fsm_state12)) begin
-        grp_fu_788_p1 = grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_288_grp_fu_788_p_din1;
+        grp_fu_638_ce = grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_250_grp_fu_638_p_ce;
     end else begin
-        grp_fu_788_p1 = 'bx;
+        grp_fu_638_ce = 1'b1;
     end
 end
 
 always @ (*) begin
-    if ((1'b1 == ap_CS_fsm_state136)) begin
-        grp_fu_792_ce = grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_NORM_WRITE_fu_370_grp_fu_792_p_ce;
+    if (((1'b1 == ap_CS_fsm_state43) | (1'b1 == ap_CS_fsm_state44))) begin
+        grp_fu_638_p0 = grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_PIXEL_NORM_fu_358_grp_fu_638_p_din0;
     end else if ((1'b1 == ap_CS_fsm_state12)) begin
-        grp_fu_792_ce = grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_288_grp_fu_792_p_ce;
+        grp_fu_638_p0 = grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_250_grp_fu_638_p_din0;
     end else begin
-        grp_fu_792_ce = 1'b1;
+        grp_fu_638_p0 = 'bx;
     end
 end
 
 always @ (*) begin
-    if ((1'b1 == ap_CS_fsm_state136)) begin
-        grp_fu_792_p0 = grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_NORM_WRITE_fu_370_grp_fu_792_p_din0;
+    if (((1'b1 == ap_CS_fsm_state43) | (1'b1 == ap_CS_fsm_state44))) begin
+        grp_fu_638_p1 = grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_PIXEL_NORM_fu_358_grp_fu_638_p_din1;
     end else if ((1'b1 == ap_CS_fsm_state12)) begin
-        grp_fu_792_p0 = grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_288_grp_fu_792_p_din0;
+        grp_fu_638_p1 = grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_250_grp_fu_638_p_din1;
     end else begin
-        grp_fu_792_p0 = 'bx;
+        grp_fu_638_p1 = 'bx;
     end
 end
 
 always @ (*) begin
-    if ((1'b1 == ap_CS_fsm_state136)) begin
-        grp_fu_792_p1 = grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_NORM_WRITE_fu_370_grp_fu_792_p_din1;
+    if (((1'b1 == ap_CS_fsm_state43) | (1'b1 == ap_CS_fsm_state44))) begin
+        grp_fu_642_ce = grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_PIXEL_NORM_fu_358_grp_fu_642_p_ce;
     end else if ((1'b1 == ap_CS_fsm_state12)) begin
-        grp_fu_792_p1 = grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_288_grp_fu_792_p_din1;
+        grp_fu_642_ce = grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_250_grp_fu_642_p_ce;
     end else begin
-        grp_fu_792_p1 = 'bx;
+        grp_fu_642_ce = 1'b1;
     end
 end
 
 always @ (*) begin
-    if ((1'b1 == ap_CS_fsm_state136)) begin
-        grp_fu_796_ce = grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_NORM_WRITE_fu_370_grp_fu_796_p_ce;
+    if (((1'b1 == ap_CS_fsm_state43) | (1'b1 == ap_CS_fsm_state44))) begin
+        grp_fu_642_p0 = grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_PIXEL_NORM_fu_358_grp_fu_642_p_din0;
     end else if ((1'b1 == ap_CS_fsm_state12)) begin
-        grp_fu_796_ce = grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_288_grp_fu_796_p_ce;
+        grp_fu_642_p0 = grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_250_grp_fu_642_p_din0;
     end else begin
-        grp_fu_796_ce = 1'b1;
+        grp_fu_642_p0 = 'bx;
     end
 end
 
 always @ (*) begin
-    if ((1'b1 == ap_CS_fsm_state136)) begin
-        grp_fu_796_p0 = grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_NORM_WRITE_fu_370_grp_fu_796_p_din0;
+    if (((1'b1 == ap_CS_fsm_state43) | (1'b1 == ap_CS_fsm_state44))) begin
+        grp_fu_642_p1 = grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_PIXEL_NORM_fu_358_grp_fu_642_p_din1;
     end else if ((1'b1 == ap_CS_fsm_state12)) begin
-        grp_fu_796_p0 = grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_288_grp_fu_796_p_din0;
+        grp_fu_642_p1 = grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_250_grp_fu_642_p_din1;
     end else begin
-        grp_fu_796_p0 = 'bx;
+        grp_fu_642_p1 = 'bx;
     end
 end
 
 always @ (*) begin
-    if ((1'b1 == ap_CS_fsm_state136)) begin
-        grp_fu_796_p1 = grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_NORM_WRITE_fu_370_grp_fu_796_p_din1;
+    if (((1'b1 == ap_CS_fsm_state43) | (1'b1 == ap_CS_fsm_state44))) begin
+        grp_fu_646_ce = grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_PIXEL_NORM_fu_358_grp_fu_646_p_ce;
     end else if ((1'b1 == ap_CS_fsm_state12)) begin
-        grp_fu_796_p1 = grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_288_grp_fu_796_p_din1;
+        grp_fu_646_ce = grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_250_grp_fu_646_p_ce;
     end else begin
-        grp_fu_796_p1 = 'bx;
+        grp_fu_646_ce = 1'b1;
     end
 end
 
 always @ (*) begin
-    if ((1'b1 == ap_CS_fsm_state136)) begin
-        grp_fu_800_ce = grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_NORM_WRITE_fu_370_grp_fu_800_p_ce;
+    if (((1'b1 == ap_CS_fsm_state43) | (1'b1 == ap_CS_fsm_state44))) begin
+        grp_fu_646_p0 = grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_PIXEL_NORM_fu_358_grp_fu_646_p_din0;
     end else if ((1'b1 == ap_CS_fsm_state12)) begin
-        grp_fu_800_ce = grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_288_grp_fu_800_p_ce;
+        grp_fu_646_p0 = grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_250_grp_fu_646_p_din0;
     end else begin
-        grp_fu_800_ce = 1'b1;
+        grp_fu_646_p0 = 'bx;
     end
 end
 
 always @ (*) begin
-    if ((1'b1 == ap_CS_fsm_state136)) begin
-        grp_fu_800_p0 = grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_NORM_WRITE_fu_370_grp_fu_800_p_din0;
+    if (((1'b1 == ap_CS_fsm_state43) | (1'b1 == ap_CS_fsm_state44))) begin
+        grp_fu_646_p1 = grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_PIXEL_NORM_fu_358_grp_fu_646_p_din1;
     end else if ((1'b1 == ap_CS_fsm_state12)) begin
-        grp_fu_800_p0 = grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_288_grp_fu_800_p_din0;
+        grp_fu_646_p1 = grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_250_grp_fu_646_p_din1;
     end else begin
-        grp_fu_800_p0 = 'bx;
+        grp_fu_646_p1 = 'bx;
     end
 end
 
 always @ (*) begin
-    if ((1'b1 == ap_CS_fsm_state136)) begin
-        grp_fu_800_p1 = grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_NORM_WRITE_fu_370_grp_fu_800_p_din1;
+    if (((1'b1 == ap_CS_fsm_state43) | (1'b1 == ap_CS_fsm_state44))) begin
+        grp_fu_650_ce = grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_PIXEL_NORM_fu_358_grp_fu_650_p_ce;
     end else if ((1'b1 == ap_CS_fsm_state12)) begin
-        grp_fu_800_p1 = grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_288_grp_fu_800_p_din1;
+        grp_fu_650_ce = grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_250_grp_fu_650_p_ce;
     end else begin
-        grp_fu_800_p1 = 'bx;
+        grp_fu_650_ce = 1'b1;
     end
 end
 
 always @ (*) begin
-    if ((1'b1 == ap_CS_fsm_state136)) begin
-        grp_fu_804_ce = grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_NORM_WRITE_fu_370_grp_fu_804_p_ce;
+    if (((1'b1 == ap_CS_fsm_state43) | (1'b1 == ap_CS_fsm_state44))) begin
+        grp_fu_650_p0 = grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_PIXEL_NORM_fu_358_grp_fu_650_p_din0;
     end else if ((1'b1 == ap_CS_fsm_state12)) begin
-        grp_fu_804_ce = grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_288_grp_fu_804_p_ce;
+        grp_fu_650_p0 = grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_250_grp_fu_650_p_din0;
     end else begin
-        grp_fu_804_ce = 1'b1;
+        grp_fu_650_p0 = 'bx;
     end
 end
 
 always @ (*) begin
-    if ((1'b1 == ap_CS_fsm_state136)) begin
-        grp_fu_804_p0 = grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_NORM_WRITE_fu_370_grp_fu_804_p_din0;
+    if (((1'b1 == ap_CS_fsm_state43) | (1'b1 == ap_CS_fsm_state44))) begin
+        grp_fu_650_p1 = grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_PIXEL_NORM_fu_358_grp_fu_650_p_din1;
     end else if ((1'b1 == ap_CS_fsm_state12)) begin
-        grp_fu_804_p0 = grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_288_grp_fu_804_p_din0;
+        grp_fu_650_p1 = grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_250_grp_fu_650_p_din1;
     end else begin
-        grp_fu_804_p0 = 'bx;
+        grp_fu_650_p1 = 'bx;
     end
 end
 
 always @ (*) begin
-    if ((1'b1 == ap_CS_fsm_state136)) begin
-        grp_fu_804_p1 = grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_NORM_WRITE_fu_370_grp_fu_804_p_din1;
+    if (((1'b1 == ap_CS_fsm_state43) | (1'b1 == ap_CS_fsm_state44))) begin
+        grp_fu_654_ce = grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_PIXEL_NORM_fu_358_grp_fu_654_p_ce;
     end else if ((1'b1 == ap_CS_fsm_state12)) begin
-        grp_fu_804_p1 = grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_288_grp_fu_804_p_din1;
+        grp_fu_654_ce = grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_250_grp_fu_654_p_ce;
     end else begin
-        grp_fu_804_p1 = 'bx;
+        grp_fu_654_ce = 1'b1;
     end
 end
 
 always @ (*) begin
-    if ((1'b1 == ap_CS_fsm_state136)) begin
-        grp_fu_808_ce = grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_NORM_WRITE_fu_370_grp_fu_808_p_ce;
+    if (((1'b1 == ap_CS_fsm_state43) | (1'b1 == ap_CS_fsm_state44))) begin
+        grp_fu_654_p0 = grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_PIXEL_NORM_fu_358_grp_fu_654_p_din0;
     end else if ((1'b1 == ap_CS_fsm_state12)) begin
-        grp_fu_808_ce = grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_288_grp_fu_808_p_ce;
+        grp_fu_654_p0 = grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_250_grp_fu_654_p_din0;
     end else begin
-        grp_fu_808_ce = 1'b1;
+        grp_fu_654_p0 = 'bx;
     end
 end
 
 always @ (*) begin
-    if ((1'b1 == ap_CS_fsm_state136)) begin
-        grp_fu_808_p0 = grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_NORM_WRITE_fu_370_grp_fu_808_p_din0;
+    if (((1'b1 == ap_CS_fsm_state43) | (1'b1 == ap_CS_fsm_state44))) begin
+        grp_fu_654_p1 = grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_PIXEL_NORM_fu_358_grp_fu_654_p_din1;
     end else if ((1'b1 == ap_CS_fsm_state12)) begin
-        grp_fu_808_p0 = grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_288_grp_fu_808_p_din0;
+        grp_fu_654_p1 = grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_250_grp_fu_654_p_din1;
     end else begin
-        grp_fu_808_p0 = 'bx;
+        grp_fu_654_p1 = 'bx;
     end
 end
 
 always @ (*) begin
-    if ((1'b1 == ap_CS_fsm_state136)) begin
-        grp_fu_808_p1 = grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_NORM_WRITE_fu_370_grp_fu_808_p_din1;
+    if (((1'b1 == ap_CS_fsm_state43) | (1'b1 == ap_CS_fsm_state44))) begin
+        grp_fu_658_ce = grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_PIXEL_NORM_fu_358_grp_fu_658_p_ce;
     end else if ((1'b1 == ap_CS_fsm_state12)) begin
-        grp_fu_808_p1 = grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_288_grp_fu_808_p_din1;
+        grp_fu_658_ce = grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_250_grp_fu_658_p_ce;
     end else begin
-        grp_fu_808_p1 = 'bx;
+        grp_fu_658_ce = 1'b1;
     end
 end
 
 always @ (*) begin
-    if ((1'b1 == ap_CS_fsm_state136)) begin
-        grp_fu_812_ce = grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_NORM_WRITE_fu_370_grp_fu_812_p_ce;
+    if (((1'b1 == ap_CS_fsm_state43) | (1'b1 == ap_CS_fsm_state44))) begin
+        grp_fu_658_p0 = grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_PIXEL_NORM_fu_358_grp_fu_658_p_din0;
     end else if ((1'b1 == ap_CS_fsm_state12)) begin
-        grp_fu_812_ce = grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_288_grp_fu_812_p_ce;
+        grp_fu_658_p0 = grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_250_grp_fu_658_p_din0;
     end else begin
-        grp_fu_812_ce = 1'b1;
+        grp_fu_658_p0 = 'bx;
     end
 end
 
 always @ (*) begin
-    if ((1'b1 == ap_CS_fsm_state136)) begin
-        grp_fu_812_p0 = grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_NORM_WRITE_fu_370_grp_fu_812_p_din0;
+    if (((1'b1 == ap_CS_fsm_state43) | (1'b1 == ap_CS_fsm_state44))) begin
+        grp_fu_658_p1 = grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_PIXEL_NORM_fu_358_grp_fu_658_p_din1;
     end else if ((1'b1 == ap_CS_fsm_state12)) begin
-        grp_fu_812_p0 = grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_288_grp_fu_812_p_din0;
+        grp_fu_658_p1 = grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_250_grp_fu_658_p_din1;
     end else begin
-        grp_fu_812_p0 = 'bx;
+        grp_fu_658_p1 = 'bx;
     end
 end
 
 always @ (*) begin
-    if ((1'b1 == ap_CS_fsm_state136)) begin
-        grp_fu_812_p1 = grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_NORM_WRITE_fu_370_grp_fu_812_p_din1;
+    if (((1'b1 == ap_CS_fsm_state43) | (1'b1 == ap_CS_fsm_state44))) begin
+        grp_fu_662_ce = grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_PIXEL_NORM_fu_358_grp_fu_662_p_ce;
     end else if ((1'b1 == ap_CS_fsm_state12)) begin
-        grp_fu_812_p1 = grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_288_grp_fu_812_p_din1;
+        grp_fu_662_ce = grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_250_grp_fu_662_p_ce;
     end else begin
-        grp_fu_812_p1 = 'bx;
+        grp_fu_662_ce = 1'b1;
     end
 end
 
 always @ (*) begin
-    if ((1'b1 == ap_CS_fsm_state136)) begin
-        grp_fu_816_ce = grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_NORM_WRITE_fu_370_grp_fu_816_p_ce;
+    if (((1'b1 == ap_CS_fsm_state43) | (1'b1 == ap_CS_fsm_state44))) begin
+        grp_fu_662_p0 = grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_PIXEL_NORM_fu_358_grp_fu_662_p_din0;
     end else if ((1'b1 == ap_CS_fsm_state12)) begin
-        grp_fu_816_ce = grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_288_grp_fu_816_p_ce;
+        grp_fu_662_p0 = grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_250_grp_fu_662_p_din0;
     end else begin
-        grp_fu_816_ce = 1'b1;
+        grp_fu_662_p0 = 'bx;
     end
 end
 
 always @ (*) begin
-    if ((1'b1 == ap_CS_fsm_state136)) begin
-        grp_fu_816_p0 = grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_NORM_WRITE_fu_370_grp_fu_816_p_din0;
+    if (((1'b1 == ap_CS_fsm_state43) | (1'b1 == ap_CS_fsm_state44))) begin
+        grp_fu_662_p1 = grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_PIXEL_NORM_fu_358_grp_fu_662_p_din1;
     end else if ((1'b1 == ap_CS_fsm_state12)) begin
-        grp_fu_816_p0 = grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_288_grp_fu_816_p_din0;
+        grp_fu_662_p1 = grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_250_grp_fu_662_p_din1;
     end else begin
-        grp_fu_816_p0 = 'bx;
+        grp_fu_662_p1 = 'bx;
     end
 end
 
 always @ (*) begin
-    if ((1'b1 == ap_CS_fsm_state136)) begin
-        grp_fu_816_p1 = grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_NORM_WRITE_fu_370_grp_fu_816_p_din1;
+    if (((1'b1 == ap_CS_fsm_state43) | (1'b1 == ap_CS_fsm_state44))) begin
+        grp_fu_666_ce = grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_PIXEL_NORM_fu_358_grp_fu_666_p_ce;
     end else if ((1'b1 == ap_CS_fsm_state12)) begin
-        grp_fu_816_p1 = grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_288_grp_fu_816_p_din1;
+        grp_fu_666_ce = grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_250_grp_fu_666_p_ce;
     end else begin
-        grp_fu_816_p1 = 'bx;
+        grp_fu_666_ce = 1'b1;
     end
 end
 
 always @ (*) begin
-    if ((1'b1 == ap_CS_fsm_state136)) begin
-        grp_fu_820_ce = grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_NORM_WRITE_fu_370_grp_fu_820_p_ce;
+    if (((1'b1 == ap_CS_fsm_state43) | (1'b1 == ap_CS_fsm_state44))) begin
+        grp_fu_666_p0 = grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_PIXEL_NORM_fu_358_grp_fu_666_p_din0;
     end else if ((1'b1 == ap_CS_fsm_state12)) begin
-        grp_fu_820_ce = grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_288_grp_fu_820_p_ce;
+        grp_fu_666_p0 = grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_250_grp_fu_666_p_din0;
     end else begin
-        grp_fu_820_ce = 1'b1;
+        grp_fu_666_p0 = 'bx;
     end
 end
 
 always @ (*) begin
-    if ((1'b1 == ap_CS_fsm_state136)) begin
-        grp_fu_820_p0 = grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_NORM_WRITE_fu_370_grp_fu_820_p_din0;
+    if (((1'b1 == ap_CS_fsm_state43) | (1'b1 == ap_CS_fsm_state44))) begin
+        grp_fu_666_p1 = grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_PIXEL_NORM_fu_358_grp_fu_666_p_din1;
     end else if ((1'b1 == ap_CS_fsm_state12)) begin
-        grp_fu_820_p0 = grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_288_grp_fu_820_p_din0;
+        grp_fu_666_p1 = grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_250_grp_fu_666_p_din1;
     end else begin
-        grp_fu_820_p0 = 'bx;
+        grp_fu_666_p1 = 'bx;
     end
 end
 
 always @ (*) begin
-    if ((1'b1 == ap_CS_fsm_state136)) begin
-        grp_fu_820_p1 = grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_NORM_WRITE_fu_370_grp_fu_820_p_din1;
+    if (((1'b1 == ap_CS_fsm_state43) | (1'b1 == ap_CS_fsm_state44))) begin
+        grp_fu_670_ce = grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_PIXEL_NORM_fu_358_grp_fu_670_p_ce;
     end else if ((1'b1 == ap_CS_fsm_state12)) begin
-        grp_fu_820_p1 = grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_288_grp_fu_820_p_din1;
+        grp_fu_670_ce = grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_250_grp_fu_670_p_ce;
     end else begin
-        grp_fu_820_p1 = 'bx;
+        grp_fu_670_ce = 1'b1;
     end
 end
 
 always @ (*) begin
-    if ((1'b1 == ap_CS_fsm_state136)) begin
-        grp_fu_824_ce = grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_NORM_WRITE_fu_370_grp_fu_824_p_ce;
+    if (((1'b1 == ap_CS_fsm_state43) | (1'b1 == ap_CS_fsm_state44))) begin
+        grp_fu_670_p0 = grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_PIXEL_NORM_fu_358_grp_fu_670_p_din0;
     end else if ((1'b1 == ap_CS_fsm_state12)) begin
-        grp_fu_824_ce = grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_288_grp_fu_824_p_ce;
+        grp_fu_670_p0 = grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_250_grp_fu_670_p_din0;
     end else begin
-        grp_fu_824_ce = 1'b1;
+        grp_fu_670_p0 = 'bx;
     end
 end
 
 always @ (*) begin
-    if ((1'b1 == ap_CS_fsm_state136)) begin
-        grp_fu_824_p0 = grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_NORM_WRITE_fu_370_grp_fu_824_p_din0;
+    if (((1'b1 == ap_CS_fsm_state43) | (1'b1 == ap_CS_fsm_state44))) begin
+        grp_fu_670_p1 = grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_PIXEL_NORM_fu_358_grp_fu_670_p_din1;
     end else if ((1'b1 == ap_CS_fsm_state12)) begin
-        grp_fu_824_p0 = grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_288_grp_fu_824_p_din0;
+        grp_fu_670_p1 = grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_250_grp_fu_670_p_din1;
     end else begin
-        grp_fu_824_p0 = 'bx;
+        grp_fu_670_p1 = 'bx;
     end
 end
 
 always @ (*) begin
-    if ((1'b1 == ap_CS_fsm_state136)) begin
-        grp_fu_824_p1 = grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_NORM_WRITE_fu_370_grp_fu_824_p_din1;
+    if (((1'b1 == ap_CS_fsm_state43) | (1'b1 == ap_CS_fsm_state44))) begin
+        grp_fu_674_ce = grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_PIXEL_NORM_fu_358_grp_fu_674_p_ce;
     end else if ((1'b1 == ap_CS_fsm_state12)) begin
-        grp_fu_824_p1 = grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_288_grp_fu_824_p_din1;
+        grp_fu_674_ce = grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_250_grp_fu_674_p_ce;
     end else begin
-        grp_fu_824_p1 = 'bx;
+        grp_fu_674_ce = 1'b1;
     end
 end
 
 always @ (*) begin
-    if ((1'b1 == ap_CS_fsm_state136)) begin
-        grp_fu_828_ce = grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_NORM_WRITE_fu_370_grp_fu_828_p_ce;
+    if (((1'b1 == ap_CS_fsm_state43) | (1'b1 == ap_CS_fsm_state44))) begin
+        grp_fu_674_p0 = grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_PIXEL_NORM_fu_358_grp_fu_674_p_din0;
     end else if ((1'b1 == ap_CS_fsm_state12)) begin
-        grp_fu_828_ce = grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_288_grp_fu_828_p_ce;
+        grp_fu_674_p0 = grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_250_grp_fu_674_p_din0;
     end else begin
-        grp_fu_828_ce = 1'b1;
+        grp_fu_674_p0 = 'bx;
     end
 end
 
 always @ (*) begin
-    if ((1'b1 == ap_CS_fsm_state136)) begin
-        grp_fu_828_p0 = grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_NORM_WRITE_fu_370_grp_fu_828_p_din0;
+    if (((1'b1 == ap_CS_fsm_state43) | (1'b1 == ap_CS_fsm_state44))) begin
+        grp_fu_674_p1 = grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_PIXEL_NORM_fu_358_grp_fu_674_p_din1;
     end else if ((1'b1 == ap_CS_fsm_state12)) begin
-        grp_fu_828_p0 = grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_288_grp_fu_828_p_din0;
+        grp_fu_674_p1 = grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_250_grp_fu_674_p_din1;
     end else begin
-        grp_fu_828_p0 = 'bx;
+        grp_fu_674_p1 = 'bx;
     end
 end
 
 always @ (*) begin
-    if ((1'b1 == ap_CS_fsm_state136)) begin
-        grp_fu_828_p1 = grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_NORM_WRITE_fu_370_grp_fu_828_p_din1;
+    if (((1'b1 == ap_CS_fsm_state43) | (1'b1 == ap_CS_fsm_state44))) begin
+        grp_fu_678_ce = grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_PIXEL_NORM_fu_358_grp_fu_678_p_ce;
     end else if ((1'b1 == ap_CS_fsm_state12)) begin
-        grp_fu_828_p1 = grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_288_grp_fu_828_p_din1;
+        grp_fu_678_ce = grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_250_grp_fu_678_p_ce;
     end else begin
-        grp_fu_828_p1 = 'bx;
+        grp_fu_678_ce = 1'b1;
     end
 end
 
 always @ (*) begin
-    if ((1'b1 == ap_CS_fsm_state136)) begin
-        grp_fu_832_ce = grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_NORM_WRITE_fu_370_grp_fu_832_p_ce;
+    if (((1'b1 == ap_CS_fsm_state43) | (1'b1 == ap_CS_fsm_state44))) begin
+        grp_fu_678_p0 = grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_PIXEL_NORM_fu_358_grp_fu_678_p_din0;
     end else if ((1'b1 == ap_CS_fsm_state12)) begin
-        grp_fu_832_ce = grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_288_grp_fu_832_p_ce;
+        grp_fu_678_p0 = grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_250_grp_fu_678_p_din0;
     end else begin
-        grp_fu_832_ce = 1'b1;
+        grp_fu_678_p0 = 'bx;
     end
 end
 
 always @ (*) begin
-    if ((1'b1 == ap_CS_fsm_state136)) begin
-        grp_fu_832_p0 = grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_NORM_WRITE_fu_370_grp_fu_832_p_din0;
+    if (((1'b1 == ap_CS_fsm_state43) | (1'b1 == ap_CS_fsm_state44))) begin
+        grp_fu_678_p1 = grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_PIXEL_NORM_fu_358_grp_fu_678_p_din1;
     end else if ((1'b1 == ap_CS_fsm_state12)) begin
-        grp_fu_832_p0 = grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_288_grp_fu_832_p_din0;
+        grp_fu_678_p1 = grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_250_grp_fu_678_p_din1;
     end else begin
-        grp_fu_832_p0 = 'bx;
+        grp_fu_678_p1 = 'bx;
     end
 end
 
 always @ (*) begin
-    if ((1'b1 == ap_CS_fsm_state136)) begin
-        grp_fu_832_p1 = grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_NORM_WRITE_fu_370_grp_fu_832_p_din1;
+    if (((1'b1 == ap_CS_fsm_state43) | (1'b1 == ap_CS_fsm_state44))) begin
+        grp_fu_682_ce = grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_PIXEL_NORM_fu_358_grp_fu_682_p_ce;
     end else if ((1'b1 == ap_CS_fsm_state12)) begin
-        grp_fu_832_p1 = grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_288_grp_fu_832_p_din1;
+        grp_fu_682_ce = grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_250_grp_fu_682_p_ce;
     end else begin
-        grp_fu_832_p1 = 'bx;
+        grp_fu_682_ce = 1'b1;
     end
 end
 
 always @ (*) begin
-    if ((1'b1 == ap_CS_fsm_state136)) begin
-        grp_fu_836_ce = grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_NORM_WRITE_fu_370_grp_fu_836_p_ce;
+    if (((1'b1 == ap_CS_fsm_state43) | (1'b1 == ap_CS_fsm_state44))) begin
+        grp_fu_682_p0 = grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_PIXEL_NORM_fu_358_grp_fu_682_p_din0;
     end else if ((1'b1 == ap_CS_fsm_state12)) begin
-        grp_fu_836_ce = grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_288_grp_fu_836_p_ce;
+        grp_fu_682_p0 = grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_250_grp_fu_682_p_din0;
     end else begin
-        grp_fu_836_ce = 1'b1;
+        grp_fu_682_p0 = 'bx;
     end
 end
 
 always @ (*) begin
-    if ((1'b1 == ap_CS_fsm_state136)) begin
-        grp_fu_836_p0 = grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_NORM_WRITE_fu_370_grp_fu_836_p_din0;
+    if (((1'b1 == ap_CS_fsm_state43) | (1'b1 == ap_CS_fsm_state44))) begin
+        grp_fu_682_p1 = grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_PIXEL_NORM_fu_358_grp_fu_682_p_din1;
     end else if ((1'b1 == ap_CS_fsm_state12)) begin
-        grp_fu_836_p0 = grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_288_grp_fu_836_p_din0;
+        grp_fu_682_p1 = grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_250_grp_fu_682_p_din1;
     end else begin
-        grp_fu_836_p0 = 'bx;
+        grp_fu_682_p1 = 'bx;
     end
 end
 
 always @ (*) begin
-    if ((1'b1 == ap_CS_fsm_state136)) begin
-        grp_fu_836_p1 = grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_NORM_WRITE_fu_370_grp_fu_836_p_din1;
+    if (((1'b1 == ap_CS_fsm_state43) | (1'b1 == ap_CS_fsm_state44))) begin
+        grp_fu_686_ce = grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_PIXEL_NORM_fu_358_grp_fu_686_p_ce;
     end else if ((1'b1 == ap_CS_fsm_state12)) begin
-        grp_fu_836_p1 = grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_288_grp_fu_836_p_din1;
+        grp_fu_686_ce = grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_250_grp_fu_686_p_ce;
     end else begin
-        grp_fu_836_p1 = 'bx;
+        grp_fu_686_ce = 1'b1;
     end
 end
 
 always @ (*) begin
-    if ((1'b1 == ap_CS_fsm_state136)) begin
-        grp_fu_840_ce = grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_NORM_WRITE_fu_370_grp_fu_840_p_ce;
+    if (((1'b1 == ap_CS_fsm_state43) | (1'b1 == ap_CS_fsm_state44))) begin
+        grp_fu_686_p0 = grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_PIXEL_NORM_fu_358_grp_fu_686_p_din0;
     end else if ((1'b1 == ap_CS_fsm_state12)) begin
-        grp_fu_840_ce = grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_288_grp_fu_840_p_ce;
+        grp_fu_686_p0 = grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_250_grp_fu_686_p_din0;
     end else begin
-        grp_fu_840_ce = 1'b1;
+        grp_fu_686_p0 = 'bx;
     end
 end
 
 always @ (*) begin
-    if ((1'b1 == ap_CS_fsm_state136)) begin
-        grp_fu_840_p0 = grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_NORM_WRITE_fu_370_grp_fu_840_p_din0;
+    if (((1'b1 == ap_CS_fsm_state43) | (1'b1 == ap_CS_fsm_state44))) begin
+        grp_fu_686_p1 = grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_PIXEL_NORM_fu_358_grp_fu_686_p_din1;
     end else if ((1'b1 == ap_CS_fsm_state12)) begin
-        grp_fu_840_p0 = grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_288_grp_fu_840_p_din0;
+        grp_fu_686_p1 = grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_250_grp_fu_686_p_din1;
     end else begin
-        grp_fu_840_p0 = 'bx;
+        grp_fu_686_p1 = 'bx;
     end
 end
 
 always @ (*) begin
-    if ((1'b1 == ap_CS_fsm_state136)) begin
-        grp_fu_840_p1 = grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_NORM_WRITE_fu_370_grp_fu_840_p_din1;
+    if (((1'b1 == ap_CS_fsm_state43) | (1'b1 == ap_CS_fsm_state44))) begin
+        grp_fu_690_ce = grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_PIXEL_NORM_fu_358_grp_fu_690_p_ce;
     end else if ((1'b1 == ap_CS_fsm_state12)) begin
-        grp_fu_840_p1 = grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_288_grp_fu_840_p_din1;
+        grp_fu_690_ce = grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_250_grp_fu_690_p_ce;
     end else begin
-        grp_fu_840_p1 = 'bx;
+        grp_fu_690_ce = 1'b1;
     end
 end
 
 always @ (*) begin
-    if ((1'b1 == ap_CS_fsm_state136)) begin
-        grp_fu_844_ce = grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_NORM_WRITE_fu_370_grp_fu_844_p_ce;
+    if (((1'b1 == ap_CS_fsm_state43) | (1'b1 == ap_CS_fsm_state44))) begin
+        grp_fu_690_p0 = grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_PIXEL_NORM_fu_358_grp_fu_690_p_din0;
     end else if ((1'b1 == ap_CS_fsm_state12)) begin
-        grp_fu_844_ce = grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_288_grp_fu_844_p_ce;
+        grp_fu_690_p0 = grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_250_grp_fu_690_p_din0;
     end else begin
-        grp_fu_844_ce = 1'b1;
+        grp_fu_690_p0 = 'bx;
     end
 end
 
 always @ (*) begin
-    if ((1'b1 == ap_CS_fsm_state136)) begin
-        grp_fu_844_p0 = grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_NORM_WRITE_fu_370_grp_fu_844_p_din0;
+    if (((1'b1 == ap_CS_fsm_state43) | (1'b1 == ap_CS_fsm_state44))) begin
+        grp_fu_690_p1 = grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_PIXEL_NORM_fu_358_grp_fu_690_p_din1;
     end else if ((1'b1 == ap_CS_fsm_state12)) begin
-        grp_fu_844_p0 = grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_288_grp_fu_844_p_din0;
+        grp_fu_690_p1 = grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_250_grp_fu_690_p_din1;
     end else begin
-        grp_fu_844_p0 = 'bx;
+        grp_fu_690_p1 = 'bx;
     end
 end
 
 always @ (*) begin
-    if ((1'b1 == ap_CS_fsm_state136)) begin
-        grp_fu_844_p1 = grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_NORM_WRITE_fu_370_grp_fu_844_p_din1;
+    if (((1'b1 == ap_CS_fsm_state43) | (1'b1 == ap_CS_fsm_state44))) begin
+        grp_fu_694_ce = grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_PIXEL_NORM_fu_358_grp_fu_694_p_ce;
     end else if ((1'b1 == ap_CS_fsm_state12)) begin
-        grp_fu_844_p1 = grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_288_grp_fu_844_p_din1;
+        grp_fu_694_ce = grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_250_grp_fu_694_p_ce;
     end else begin
-        grp_fu_844_p1 = 'bx;
+        grp_fu_694_ce = 1'b1;
     end
 end
 
 always @ (*) begin
-    if ((1'b1 == ap_CS_fsm_state136)) begin
-        grp_fu_848_ce = grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_NORM_WRITE_fu_370_grp_fu_848_p_ce;
+    if (((1'b1 == ap_CS_fsm_state43) | (1'b1 == ap_CS_fsm_state44))) begin
+        grp_fu_694_p0 = grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_PIXEL_NORM_fu_358_grp_fu_694_p_din0;
     end else if ((1'b1 == ap_CS_fsm_state12)) begin
-        grp_fu_848_ce = grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_288_grp_fu_848_p_ce;
+        grp_fu_694_p0 = grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_250_grp_fu_694_p_din0;
     end else begin
-        grp_fu_848_ce = 1'b1;
+        grp_fu_694_p0 = 'bx;
     end
 end
 
 always @ (*) begin
-    if ((1'b1 == ap_CS_fsm_state136)) begin
-        grp_fu_848_p0 = grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_NORM_WRITE_fu_370_grp_fu_848_p_din0;
+    if (((1'b1 == ap_CS_fsm_state43) | (1'b1 == ap_CS_fsm_state44))) begin
+        grp_fu_694_p1 = grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_PIXEL_NORM_fu_358_grp_fu_694_p_din1;
     end else if ((1'b1 == ap_CS_fsm_state12)) begin
-        grp_fu_848_p0 = grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_288_grp_fu_848_p_din0;
+        grp_fu_694_p1 = grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_250_grp_fu_694_p_din1;
     end else begin
-        grp_fu_848_p0 = 'bx;
+        grp_fu_694_p1 = 'bx;
     end
 end
 
 always @ (*) begin
-    if ((1'b1 == ap_CS_fsm_state136)) begin
-        grp_fu_848_p1 = grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_NORM_WRITE_fu_370_grp_fu_848_p_din1;
+    if (((1'b1 == ap_CS_fsm_state43) | (1'b1 == ap_CS_fsm_state44))) begin
+        grp_fu_698_ce = grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_PIXEL_NORM_fu_358_grp_fu_698_p_ce;
     end else if ((1'b1 == ap_CS_fsm_state12)) begin
-        grp_fu_848_p1 = grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_288_grp_fu_848_p_din1;
+        grp_fu_698_ce = grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_250_grp_fu_698_p_ce;
     end else begin
-        grp_fu_848_p1 = 'bx;
+        grp_fu_698_ce = 1'b1;
     end
 end
 
 always @ (*) begin
-    if ((1'b1 == ap_CS_fsm_state136)) begin
-        grp_fu_852_ce = grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_NORM_WRITE_fu_370_grp_fu_852_p_ce;
+    if (((1'b1 == ap_CS_fsm_state43) | (1'b1 == ap_CS_fsm_state44))) begin
+        grp_fu_698_p0 = grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_PIXEL_NORM_fu_358_grp_fu_698_p_din0;
     end else if ((1'b1 == ap_CS_fsm_state12)) begin
-        grp_fu_852_ce = grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_288_grp_fu_852_p_ce;
+        grp_fu_698_p0 = grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_250_grp_fu_698_p_din0;
     end else begin
-        grp_fu_852_ce = 1'b1;
+        grp_fu_698_p0 = 'bx;
     end
 end
 
 always @ (*) begin
-    if ((1'b1 == ap_CS_fsm_state136)) begin
-        grp_fu_852_p0 = grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_NORM_WRITE_fu_370_grp_fu_852_p_din0;
+    if (((1'b1 == ap_CS_fsm_state43) | (1'b1 == ap_CS_fsm_state44))) begin
+        grp_fu_698_p1 = grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_PIXEL_NORM_fu_358_grp_fu_698_p_din1;
     end else if ((1'b1 == ap_CS_fsm_state12)) begin
-        grp_fu_852_p0 = grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_288_grp_fu_852_p_din0;
+        grp_fu_698_p1 = grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_250_grp_fu_698_p_din1;
     end else begin
-        grp_fu_852_p0 = 'bx;
+        grp_fu_698_p1 = 'bx;
     end
 end
 
 always @ (*) begin
-    if ((1'b1 == ap_CS_fsm_state136)) begin
-        grp_fu_852_p1 = grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_NORM_WRITE_fu_370_grp_fu_852_p_din1;
+    if (((1'b1 == ap_CS_fsm_state43) | (1'b1 == ap_CS_fsm_state44))) begin
+        grp_fu_702_ce = grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_PIXEL_NORM_fu_358_grp_fu_702_p_ce;
     end else if ((1'b1 == ap_CS_fsm_state12)) begin
-        grp_fu_852_p1 = grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_288_grp_fu_852_p_din1;
+        grp_fu_702_ce = grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_250_grp_fu_702_p_ce;
     end else begin
-        grp_fu_852_p1 = 'bx;
+        grp_fu_702_ce = 1'b1;
     end
 end
 
 always @ (*) begin
-    if ((1'b1 == ap_CS_fsm_state136)) begin
-        grp_fu_856_ce = grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_NORM_WRITE_fu_370_grp_fu_856_p_ce;
+    if (((1'b1 == ap_CS_fsm_state43) | (1'b1 == ap_CS_fsm_state44))) begin
+        grp_fu_702_p0 = grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_PIXEL_NORM_fu_358_grp_fu_702_p_din0;
     end else if ((1'b1 == ap_CS_fsm_state12)) begin
-        grp_fu_856_ce = grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_288_grp_fu_856_p_ce;
+        grp_fu_702_p0 = grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_250_grp_fu_702_p_din0;
     end else begin
-        grp_fu_856_ce = 1'b1;
+        grp_fu_702_p0 = 'bx;
     end
 end
 
 always @ (*) begin
-    if ((1'b1 == ap_CS_fsm_state136)) begin
-        grp_fu_856_p0 = grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_NORM_WRITE_fu_370_grp_fu_856_p_din0;
+    if (((1'b1 == ap_CS_fsm_state43) | (1'b1 == ap_CS_fsm_state44))) begin
+        grp_fu_702_p1 = grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_PIXEL_NORM_fu_358_grp_fu_702_p_din1;
     end else if ((1'b1 == ap_CS_fsm_state12)) begin
-        grp_fu_856_p0 = grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_288_grp_fu_856_p_din0;
+        grp_fu_702_p1 = grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_250_grp_fu_702_p_din1;
     end else begin
-        grp_fu_856_p0 = 'bx;
+        grp_fu_702_p1 = 'bx;
     end
 end
 
 always @ (*) begin
-    if ((1'b1 == ap_CS_fsm_state136)) begin
-        grp_fu_856_p1 = grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_NORM_WRITE_fu_370_grp_fu_856_p_din1;
+    if (((1'b1 == ap_CS_fsm_state43) | (1'b1 == ap_CS_fsm_state44))) begin
+        grp_fu_706_ce = grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_PIXEL_NORM_fu_358_grp_fu_706_p_ce;
     end else if ((1'b1 == ap_CS_fsm_state12)) begin
-        grp_fu_856_p1 = grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_288_grp_fu_856_p_din1;
+        grp_fu_706_ce = grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_250_grp_fu_706_p_ce;
     end else begin
-        grp_fu_856_p1 = 'bx;
+        grp_fu_706_ce = 1'b1;
     end
 end
 
 always @ (*) begin
-    if ((1'b1 == ap_CS_fsm_state136)) begin
-        grp_fu_860_ce = grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_NORM_WRITE_fu_370_grp_fu_860_p_ce;
+    if (((1'b1 == ap_CS_fsm_state43) | (1'b1 == ap_CS_fsm_state44))) begin
+        grp_fu_706_p0 = grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_PIXEL_NORM_fu_358_grp_fu_706_p_din0;
     end else if ((1'b1 == ap_CS_fsm_state12)) begin
-        grp_fu_860_ce = grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_288_grp_fu_860_p_ce;
+        grp_fu_706_p0 = grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_250_grp_fu_706_p_din0;
     end else begin
-        grp_fu_860_ce = 1'b1;
+        grp_fu_706_p0 = 'bx;
     end
 end
 
 always @ (*) begin
-    if ((1'b1 == ap_CS_fsm_state136)) begin
-        grp_fu_860_p0 = grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_NORM_WRITE_fu_370_grp_fu_860_p_din0;
+    if (((1'b1 == ap_CS_fsm_state43) | (1'b1 == ap_CS_fsm_state44))) begin
+        grp_fu_706_p1 = grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_PIXEL_NORM_fu_358_grp_fu_706_p_din1;
     end else if ((1'b1 == ap_CS_fsm_state12)) begin
-        grp_fu_860_p0 = grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_288_grp_fu_860_p_din0;
+        grp_fu_706_p1 = grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_250_grp_fu_706_p_din1;
     end else begin
-        grp_fu_860_p0 = 'bx;
+        grp_fu_706_p1 = 'bx;
     end
 end
 
 always @ (*) begin
-    if ((1'b1 == ap_CS_fsm_state136)) begin
-        grp_fu_860_p1 = grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_NORM_WRITE_fu_370_grp_fu_860_p_din1;
+    if (((1'b1 == ap_CS_fsm_state43) | (1'b1 == ap_CS_fsm_state44))) begin
+        grp_fu_710_ce = grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_PIXEL_NORM_fu_358_grp_fu_710_p_ce;
     end else if ((1'b1 == ap_CS_fsm_state12)) begin
-        grp_fu_860_p1 = grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_288_grp_fu_860_p_din1;
+        grp_fu_710_ce = grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_250_grp_fu_710_p_ce;
     end else begin
-        grp_fu_860_p1 = 'bx;
+        grp_fu_710_ce = 1'b1;
     end
 end
 
 always @ (*) begin
-    if ((1'b1 == ap_CS_fsm_state136)) begin
-        grp_fu_864_ce = grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_NORM_WRITE_fu_370_grp_fu_864_p_ce;
+    if (((1'b1 == ap_CS_fsm_state43) | (1'b1 == ap_CS_fsm_state44))) begin
+        grp_fu_710_p0 = grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_PIXEL_NORM_fu_358_grp_fu_710_p_din0;
     end else if ((1'b1 == ap_CS_fsm_state12)) begin
-        grp_fu_864_ce = grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_288_grp_fu_864_p_ce;
+        grp_fu_710_p0 = grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_250_grp_fu_710_p_din0;
     end else begin
-        grp_fu_864_ce = 1'b1;
+        grp_fu_710_p0 = 'bx;
     end
 end
 
 always @ (*) begin
-    if ((1'b1 == ap_CS_fsm_state136)) begin
-        grp_fu_864_p0 = grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_NORM_WRITE_fu_370_grp_fu_864_p_din0;
+    if (((1'b1 == ap_CS_fsm_state43) | (1'b1 == ap_CS_fsm_state44))) begin
+        grp_fu_710_p1 = grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_PIXEL_NORM_fu_358_grp_fu_710_p_din1;
     end else if ((1'b1 == ap_CS_fsm_state12)) begin
-        grp_fu_864_p0 = grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_288_grp_fu_864_p_din0;
+        grp_fu_710_p1 = grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_250_grp_fu_710_p_din1;
     end else begin
-        grp_fu_864_p0 = 'bx;
+        grp_fu_710_p1 = 'bx;
     end
 end
 
 always @ (*) begin
-    if ((1'b1 == ap_CS_fsm_state136)) begin
-        grp_fu_864_p1 = grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_NORM_WRITE_fu_370_grp_fu_864_p_din1;
+    if (((1'b1 == ap_CS_fsm_state43) | (1'b1 == ap_CS_fsm_state44))) begin
+        grp_fu_714_ce = grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_PIXEL_NORM_fu_358_grp_fu_714_p_ce;
     end else if ((1'b1 == ap_CS_fsm_state12)) begin
-        grp_fu_864_p1 = grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_288_grp_fu_864_p_din1;
+        grp_fu_714_ce = grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_250_grp_fu_714_p_ce;
     end else begin
-        grp_fu_864_p1 = 'bx;
+        grp_fu_714_ce = 1'b1;
     end
 end
 
 always @ (*) begin
-    if ((1'b1 == ap_CS_fsm_state136)) begin
-        grp_fu_868_ce = grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_NORM_WRITE_fu_370_grp_fu_868_p_ce;
+    if (((1'b1 == ap_CS_fsm_state43) | (1'b1 == ap_CS_fsm_state44))) begin
+        grp_fu_714_p0 = grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_PIXEL_NORM_fu_358_grp_fu_714_p_din0;
     end else if ((1'b1 == ap_CS_fsm_state12)) begin
-        grp_fu_868_ce = grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_288_grp_fu_868_p_ce;
+        grp_fu_714_p0 = grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_250_grp_fu_714_p_din0;
     end else begin
-        grp_fu_868_ce = 1'b1;
+        grp_fu_714_p0 = 'bx;
     end
 end
 
 always @ (*) begin
-    if ((1'b1 == ap_CS_fsm_state136)) begin
-        grp_fu_868_p0 = grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_NORM_WRITE_fu_370_grp_fu_868_p_din0;
+    if (((1'b1 == ap_CS_fsm_state43) | (1'b1 == ap_CS_fsm_state44))) begin
+        grp_fu_714_p1 = grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_PIXEL_NORM_fu_358_grp_fu_714_p_din1;
     end else if ((1'b1 == ap_CS_fsm_state12)) begin
-        grp_fu_868_p0 = grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_288_grp_fu_868_p_din0;
+        grp_fu_714_p1 = grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_250_grp_fu_714_p_din1;
     end else begin
-        grp_fu_868_p0 = 'bx;
+        grp_fu_714_p1 = 'bx;
     end
 end
 
 always @ (*) begin
-    if ((1'b1 == ap_CS_fsm_state136)) begin
-        grp_fu_868_p1 = grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_NORM_WRITE_fu_370_grp_fu_868_p_din1;
+    if (((1'b1 == ap_CS_fsm_state43) | (1'b1 == ap_CS_fsm_state44))) begin
+        grp_fu_718_ce = grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_PIXEL_NORM_fu_358_grp_fu_718_p_ce;
     end else if ((1'b1 == ap_CS_fsm_state12)) begin
-        grp_fu_868_p1 = grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_288_grp_fu_868_p_din1;
+        grp_fu_718_ce = grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_250_grp_fu_718_p_ce;
     end else begin
-        grp_fu_868_p1 = 'bx;
+        grp_fu_718_ce = 1'b1;
     end
 end
 
 always @ (*) begin
-    if ((1'b1 == ap_CS_fsm_state136)) begin
-        grp_fu_872_ce = grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_NORM_WRITE_fu_370_grp_fu_872_p_ce;
+    if (((1'b1 == ap_CS_fsm_state43) | (1'b1 == ap_CS_fsm_state44))) begin
+        grp_fu_718_p0 = grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_PIXEL_NORM_fu_358_grp_fu_718_p_din0;
     end else if ((1'b1 == ap_CS_fsm_state12)) begin
-        grp_fu_872_ce = grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_288_grp_fu_872_p_ce;
+        grp_fu_718_p0 = grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_250_grp_fu_718_p_din0;
     end else begin
-        grp_fu_872_ce = 1'b1;
+        grp_fu_718_p0 = 'bx;
     end
 end
 
 always @ (*) begin
-    if ((1'b1 == ap_CS_fsm_state136)) begin
-        grp_fu_872_p0 = grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_NORM_WRITE_fu_370_grp_fu_872_p_din0;
+    if (((1'b1 == ap_CS_fsm_state43) | (1'b1 == ap_CS_fsm_state44))) begin
+        grp_fu_718_p1 = grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_PIXEL_NORM_fu_358_grp_fu_718_p_din1;
     end else if ((1'b1 == ap_CS_fsm_state12)) begin
-        grp_fu_872_p0 = grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_288_grp_fu_872_p_din0;
+        grp_fu_718_p1 = grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_250_grp_fu_718_p_din1;
     end else begin
-        grp_fu_872_p0 = 'bx;
+        grp_fu_718_p1 = 'bx;
     end
 end
 
 always @ (*) begin
-    if ((1'b1 == ap_CS_fsm_state136)) begin
-        grp_fu_872_p1 = grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_NORM_WRITE_fu_370_grp_fu_872_p_din1;
+    if (((1'b1 == ap_CS_fsm_state43) | (1'b1 == ap_CS_fsm_state44))) begin
+        grp_fu_722_ce = grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_PIXEL_NORM_fu_358_grp_fu_722_p_ce;
     end else if ((1'b1 == ap_CS_fsm_state12)) begin
-        grp_fu_872_p1 = grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_288_grp_fu_872_p_din1;
+        grp_fu_722_ce = grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_250_grp_fu_722_p_ce;
     end else begin
-        grp_fu_872_p1 = 'bx;
+        grp_fu_722_ce = 1'b1;
     end
 end
 
 always @ (*) begin
-    if ((1'b1 == ap_CS_fsm_state136)) begin
-        grp_fu_876_ce = grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_NORM_WRITE_fu_370_grp_fu_876_p_ce;
+    if (((1'b1 == ap_CS_fsm_state43) | (1'b1 == ap_CS_fsm_state44))) begin
+        grp_fu_722_p0 = grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_PIXEL_NORM_fu_358_grp_fu_722_p_din0;
     end else if ((1'b1 == ap_CS_fsm_state12)) begin
-        grp_fu_876_ce = grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_288_grp_fu_876_p_ce;
+        grp_fu_722_p0 = grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_250_grp_fu_722_p_din0;
     end else begin
-        grp_fu_876_ce = 1'b1;
+        grp_fu_722_p0 = 'bx;
     end
 end
 
 always @ (*) begin
-    if ((1'b1 == ap_CS_fsm_state136)) begin
-        grp_fu_876_p0 = grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_NORM_WRITE_fu_370_grp_fu_876_p_din0;
+    if (((1'b1 == ap_CS_fsm_state43) | (1'b1 == ap_CS_fsm_state44))) begin
+        grp_fu_722_p1 = grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_PIXEL_NORM_fu_358_grp_fu_722_p_din1;
     end else if ((1'b1 == ap_CS_fsm_state12)) begin
-        grp_fu_876_p0 = grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_288_grp_fu_876_p_din0;
+        grp_fu_722_p1 = grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_250_grp_fu_722_p_din1;
     end else begin
-        grp_fu_876_p0 = 'bx;
+        grp_fu_722_p1 = 'bx;
     end
 end
 
 always @ (*) begin
-    if ((1'b1 == ap_CS_fsm_state136)) begin
-        grp_fu_876_p1 = grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_NORM_WRITE_fu_370_grp_fu_876_p_din1;
+    if (((1'b1 == ap_CS_fsm_state43) | (1'b1 == ap_CS_fsm_state44))) begin
+        grp_fu_726_ce = grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_PIXEL_NORM_fu_358_grp_fu_726_p_ce;
     end else if ((1'b1 == ap_CS_fsm_state12)) begin
-        grp_fu_876_p1 = grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_288_grp_fu_876_p_din1;
+        grp_fu_726_ce = grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_250_grp_fu_726_p_ce;
     end else begin
-        grp_fu_876_p1 = 'bx;
+        grp_fu_726_ce = 1'b1;
     end
 end
 
 always @ (*) begin
-    if ((1'b1 == ap_CS_fsm_state136)) begin
-        grp_fu_880_ce = grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_NORM_WRITE_fu_370_grp_fu_880_p_ce;
+    if (((1'b1 == ap_CS_fsm_state43) | (1'b1 == ap_CS_fsm_state44))) begin
+        grp_fu_726_p0 = grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_PIXEL_NORM_fu_358_grp_fu_726_p_din0;
     end else if ((1'b1 == ap_CS_fsm_state12)) begin
-        grp_fu_880_ce = grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_288_grp_fu_880_p_ce;
+        grp_fu_726_p0 = grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_250_grp_fu_726_p_din0;
     end else begin
-        grp_fu_880_ce = 1'b1;
+        grp_fu_726_p0 = 'bx;
     end
 end
 
 always @ (*) begin
-    if ((1'b1 == ap_CS_fsm_state136)) begin
-        grp_fu_880_p0 = grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_NORM_WRITE_fu_370_grp_fu_880_p_din0;
+    if (((1'b1 == ap_CS_fsm_state43) | (1'b1 == ap_CS_fsm_state44))) begin
+        grp_fu_726_p1 = grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_PIXEL_NORM_fu_358_grp_fu_726_p_din1;
     end else if ((1'b1 == ap_CS_fsm_state12)) begin
-        grp_fu_880_p0 = grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_288_grp_fu_880_p_din0;
+        grp_fu_726_p1 = grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_250_grp_fu_726_p_din1;
     end else begin
-        grp_fu_880_p0 = 'bx;
+        grp_fu_726_p1 = 'bx;
     end
 end
 
 always @ (*) begin
-    if ((1'b1 == ap_CS_fsm_state136)) begin
-        grp_fu_880_p1 = grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_NORM_WRITE_fu_370_grp_fu_880_p_din1;
+    if (((1'b1 == ap_CS_fsm_state43) | (1'b1 == ap_CS_fsm_state44))) begin
+        grp_fu_730_ce = grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_PIXEL_NORM_fu_358_grp_fu_730_p_ce;
     end else if ((1'b1 == ap_CS_fsm_state12)) begin
-        grp_fu_880_p1 = grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_288_grp_fu_880_p_din1;
+        grp_fu_730_ce = grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_250_grp_fu_730_p_ce;
     end else begin
-        grp_fu_880_p1 = 'bx;
+        grp_fu_730_ce = 1'b1;
     end
 end
 
 always @ (*) begin
-    if ((1'b1 == ap_CS_fsm_state136)) begin
-        grp_fu_884_ce = grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_NORM_WRITE_fu_370_grp_fu_884_p_ce;
+    if (((1'b1 == ap_CS_fsm_state43) | (1'b1 == ap_CS_fsm_state44))) begin
+        grp_fu_730_p0 = grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_PIXEL_NORM_fu_358_grp_fu_730_p_din0;
     end else if ((1'b1 == ap_CS_fsm_state12)) begin
-        grp_fu_884_ce = grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_288_grp_fu_884_p_ce;
+        grp_fu_730_p0 = grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_250_grp_fu_730_p_din0;
     end else begin
-        grp_fu_884_ce = 1'b1;
+        grp_fu_730_p0 = 'bx;
     end
 end
 
 always @ (*) begin
-    if ((1'b1 == ap_CS_fsm_state136)) begin
-        grp_fu_884_p0 = grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_NORM_WRITE_fu_370_grp_fu_884_p_din0;
+    if (((1'b1 == ap_CS_fsm_state43) | (1'b1 == ap_CS_fsm_state44))) begin
+        grp_fu_730_p1 = grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_PIXEL_NORM_fu_358_grp_fu_730_p_din1;
     end else if ((1'b1 == ap_CS_fsm_state12)) begin
-        grp_fu_884_p0 = grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_288_grp_fu_884_p_din0;
+        grp_fu_730_p1 = grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_250_grp_fu_730_p_din1;
     end else begin
-        grp_fu_884_p0 = 'bx;
+        grp_fu_730_p1 = 'bx;
     end
 end
 
 always @ (*) begin
-    if ((1'b1 == ap_CS_fsm_state136)) begin
-        grp_fu_884_p1 = grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_NORM_WRITE_fu_370_grp_fu_884_p_din1;
+    if (((1'b1 == ap_CS_fsm_state43) | (1'b1 == ap_CS_fsm_state44))) begin
+        grp_fu_734_ce = grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_PIXEL_NORM_fu_358_grp_fu_734_p_ce;
     end else if ((1'b1 == ap_CS_fsm_state12)) begin
-        grp_fu_884_p1 = grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_288_grp_fu_884_p_din1;
+        grp_fu_734_ce = grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_250_grp_fu_734_p_ce;
     end else begin
-        grp_fu_884_p1 = 'bx;
+        grp_fu_734_ce = 1'b1;
     end
 end
 
 always @ (*) begin
-    if ((1'b1 == ap_CS_fsm_state136)) begin
-        grp_fu_888_ce = grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_NORM_WRITE_fu_370_grp_fu_888_p_ce;
+    if (((1'b1 == ap_CS_fsm_state43) | (1'b1 == ap_CS_fsm_state44))) begin
+        grp_fu_734_p0 = grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_PIXEL_NORM_fu_358_grp_fu_734_p_din0;
     end else if ((1'b1 == ap_CS_fsm_state12)) begin
-        grp_fu_888_ce = grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_288_grp_fu_888_p_ce;
+        grp_fu_734_p0 = grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_250_grp_fu_734_p_din0;
     end else begin
-        grp_fu_888_ce = 1'b1;
+        grp_fu_734_p0 = 'bx;
     end
 end
 
 always @ (*) begin
-    if ((1'b1 == ap_CS_fsm_state136)) begin
-        grp_fu_888_p0 = grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_NORM_WRITE_fu_370_grp_fu_888_p_din0;
+    if (((1'b1 == ap_CS_fsm_state43) | (1'b1 == ap_CS_fsm_state44))) begin
+        grp_fu_734_p1 = grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_PIXEL_NORM_fu_358_grp_fu_734_p_din1;
     end else if ((1'b1 == ap_CS_fsm_state12)) begin
-        grp_fu_888_p0 = grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_288_grp_fu_888_p_din0;
+        grp_fu_734_p1 = grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_250_grp_fu_734_p_din1;
     end else begin
-        grp_fu_888_p0 = 'bx;
+        grp_fu_734_p1 = 'bx;
     end
 end
 
 always @ (*) begin
-    if ((1'b1 == ap_CS_fsm_state136)) begin
-        grp_fu_888_p1 = grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_NORM_WRITE_fu_370_grp_fu_888_p_din1;
+    if (((1'b1 == ap_CS_fsm_state43) | (1'b1 == ap_CS_fsm_state44))) begin
+        grp_fu_738_ce = grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_PIXEL_NORM_fu_358_grp_fu_738_p_ce;
     end else if ((1'b1 == ap_CS_fsm_state12)) begin
-        grp_fu_888_p1 = grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_288_grp_fu_888_p_din1;
+        grp_fu_738_ce = grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_250_grp_fu_738_p_ce;
     end else begin
-        grp_fu_888_p1 = 'bx;
+        grp_fu_738_ce = 1'b1;
     end
 end
 
 always @ (*) begin
-    if ((1'b1 == ap_CS_fsm_state136)) begin
-        grp_fu_892_ce = grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_NORM_WRITE_fu_370_grp_fu_892_p_ce;
+    if (((1'b1 == ap_CS_fsm_state43) | (1'b1 == ap_CS_fsm_state44))) begin
+        grp_fu_738_p0 = grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_PIXEL_NORM_fu_358_grp_fu_738_p_din0;
     end else if ((1'b1 == ap_CS_fsm_state12)) begin
-        grp_fu_892_ce = grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_288_grp_fu_892_p_ce;
+        grp_fu_738_p0 = grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_250_grp_fu_738_p_din0;
     end else begin
-        grp_fu_892_ce = 1'b1;
+        grp_fu_738_p0 = 'bx;
     end
 end
 
 always @ (*) begin
-    if ((1'b1 == ap_CS_fsm_state136)) begin
-        grp_fu_892_p0 = grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_NORM_WRITE_fu_370_grp_fu_892_p_din0;
+    if (((1'b1 == ap_CS_fsm_state43) | (1'b1 == ap_CS_fsm_state44))) begin
+        grp_fu_738_p1 = grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_PIXEL_NORM_fu_358_grp_fu_738_p_din1;
     end else if ((1'b1 == ap_CS_fsm_state12)) begin
-        grp_fu_892_p0 = grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_288_grp_fu_892_p_din0;
+        grp_fu_738_p1 = grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_250_grp_fu_738_p_din1;
     end else begin
-        grp_fu_892_p0 = 'bx;
+        grp_fu_738_p1 = 'bx;
     end
 end
 
 always @ (*) begin
-    if ((1'b1 == ap_CS_fsm_state136)) begin
-        grp_fu_892_p1 = grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_NORM_WRITE_fu_370_grp_fu_892_p_din1;
+    if (((1'b1 == ap_CS_fsm_state43) | (1'b1 == ap_CS_fsm_state44))) begin
+        grp_fu_742_ce = grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_PIXEL_NORM_fu_358_grp_fu_742_p_ce;
     end else if ((1'b1 == ap_CS_fsm_state12)) begin
-        grp_fu_892_p1 = grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_288_grp_fu_892_p_din1;
+        grp_fu_742_ce = grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_250_grp_fu_742_p_ce;
     end else begin
-        grp_fu_892_p1 = 'bx;
+        grp_fu_742_ce = 1'b1;
     end
 end
 
 always @ (*) begin
-    if ((1'b1 == ap_CS_fsm_state136)) begin
-        grp_fu_896_ce = grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_NORM_WRITE_fu_370_grp_fu_896_p_ce;
+    if (((1'b1 == ap_CS_fsm_state43) | (1'b1 == ap_CS_fsm_state44))) begin
+        grp_fu_742_p0 = grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_PIXEL_NORM_fu_358_grp_fu_742_p_din0;
     end else if ((1'b1 == ap_CS_fsm_state12)) begin
-        grp_fu_896_ce = grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_288_grp_fu_896_p_ce;
+        grp_fu_742_p0 = grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_250_grp_fu_742_p_din0;
     end else begin
-        grp_fu_896_ce = 1'b1;
+        grp_fu_742_p0 = 'bx;
     end
 end
 
 always @ (*) begin
-    if ((1'b1 == ap_CS_fsm_state136)) begin
-        grp_fu_896_p0 = grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_NORM_WRITE_fu_370_grp_fu_896_p_din0;
+    if (((1'b1 == ap_CS_fsm_state43) | (1'b1 == ap_CS_fsm_state44))) begin
+        grp_fu_742_p1 = grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_PIXEL_NORM_fu_358_grp_fu_742_p_din1;
     end else if ((1'b1 == ap_CS_fsm_state12)) begin
-        grp_fu_896_p0 = grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_288_grp_fu_896_p_din0;
+        grp_fu_742_p1 = grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_250_grp_fu_742_p_din1;
     end else begin
-        grp_fu_896_p0 = 'bx;
+        grp_fu_742_p1 = 'bx;
     end
 end
 
 always @ (*) begin
-    if ((1'b1 == ap_CS_fsm_state136)) begin
-        grp_fu_896_p1 = grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_NORM_WRITE_fu_370_grp_fu_896_p_din1;
+    if (((1'b1 == ap_CS_fsm_state43) | (1'b1 == ap_CS_fsm_state44))) begin
+        grp_fu_746_ce = grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_PIXEL_NORM_fu_358_grp_fu_746_p_ce;
     end else if ((1'b1 == ap_CS_fsm_state12)) begin
-        grp_fu_896_p1 = grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_288_grp_fu_896_p_din1;
+        grp_fu_746_ce = grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_250_grp_fu_746_p_ce;
     end else begin
-        grp_fu_896_p1 = 'bx;
+        grp_fu_746_ce = 1'b1;
     end
 end
 
 always @ (*) begin
-    if ((1'b1 == ap_CS_fsm_state136)) begin
-        grp_fu_900_ce = grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_NORM_WRITE_fu_370_grp_fu_900_p_ce;
-    end else if ((1'b1 == ap_CS_fsm_state16)) begin
-        grp_fu_900_ce = grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_BIAS_STATS_fu_330_grp_fu_900_p_ce;
+    if (((1'b1 == ap_CS_fsm_state43) | (1'b1 == ap_CS_fsm_state44))) begin
+        grp_fu_746_p0 = grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_PIXEL_NORM_fu_358_grp_fu_746_p_din0;
     end else if ((1'b1 == ap_CS_fsm_state12)) begin
-        grp_fu_900_ce = grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_288_grp_fu_900_p_ce;
+        grp_fu_746_p0 = grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_250_grp_fu_746_p_din0;
     end else begin
-        grp_fu_900_ce = 1'b1;
+        grp_fu_746_p0 = 'bx;
     end
 end
 
 always @ (*) begin
-    if ((1'b1 == ap_CS_fsm_state136)) begin
-        grp_fu_900_p0 = grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_NORM_WRITE_fu_370_grp_fu_900_p_din0;
-    end else if ((1'b1 == ap_CS_fsm_state16)) begin
-        grp_fu_900_p0 = grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_BIAS_STATS_fu_330_grp_fu_900_p_din0;
+    if (((1'b1 == ap_CS_fsm_state43) | (1'b1 == ap_CS_fsm_state44))) begin
+        grp_fu_746_p1 = grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_PIXEL_NORM_fu_358_grp_fu_746_p_din1;
     end else if ((1'b1 == ap_CS_fsm_state12)) begin
-        grp_fu_900_p0 = grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_288_grp_fu_900_p_din0;
+        grp_fu_746_p1 = grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_250_grp_fu_746_p_din1;
     end else begin
-        grp_fu_900_p0 = 'bx;
+        grp_fu_746_p1 = 'bx;
     end
 end
 
 always @ (*) begin
-    if ((1'b1 == ap_CS_fsm_state136)) begin
-        grp_fu_900_p1 = grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_NORM_WRITE_fu_370_grp_fu_900_p_din1;
-    end else if ((1'b1 == ap_CS_fsm_state16)) begin
-        grp_fu_900_p1 = grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_BIAS_STATS_fu_330_grp_fu_900_p_din1;
+    if (((1'b1 == ap_CS_fsm_state43) | (1'b1 == ap_CS_fsm_state44))) begin
+        grp_fu_750_ce = grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_PIXEL_NORM_fu_358_grp_fu_750_p_ce;
     end else if ((1'b1 == ap_CS_fsm_state12)) begin
-        grp_fu_900_p1 = grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_288_grp_fu_900_p_din1;
+        grp_fu_750_ce = grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_250_grp_fu_750_p_ce;
     end else begin
-        grp_fu_900_p1 = 'bx;
+        grp_fu_750_ce = 1'b1;
     end
 end
 
 always @ (*) begin
-    if ((1'b1 == ap_CS_fsm_state136)) begin
-        grp_fu_904_ce = grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_NORM_WRITE_fu_370_grp_fu_904_p_ce;
+    if (((1'b1 == ap_CS_fsm_state43) | (1'b1 == ap_CS_fsm_state44))) begin
+        grp_fu_750_p0 = grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_PIXEL_NORM_fu_358_grp_fu_750_p_din0;
     end else if ((1'b1 == ap_CS_fsm_state12)) begin
-        grp_fu_904_ce = grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_288_grp_fu_904_p_ce;
+        grp_fu_750_p0 = grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_250_grp_fu_750_p_din0;
     end else begin
-        grp_fu_904_ce = 1'b1;
+        grp_fu_750_p0 = 'bx;
     end
 end
 
 always @ (*) begin
-    if ((1'b1 == ap_CS_fsm_state136)) begin
-        grp_fu_904_p0 = grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_NORM_WRITE_fu_370_grp_fu_904_p_din0;
+    if (((1'b1 == ap_CS_fsm_state43) | (1'b1 == ap_CS_fsm_state44))) begin
+        grp_fu_750_p1 = grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_PIXEL_NORM_fu_358_grp_fu_750_p_din1;
     end else if ((1'b1 == ap_CS_fsm_state12)) begin
-        grp_fu_904_p0 = grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_288_grp_fu_904_p_din0;
+        grp_fu_750_p1 = grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_250_grp_fu_750_p_din1;
     end else begin
-        grp_fu_904_p0 = 'bx;
+        grp_fu_750_p1 = 'bx;
     end
 end
 
 always @ (*) begin
-    if ((1'b1 == ap_CS_fsm_state136)) begin
-        grp_fu_904_p1 = grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_NORM_WRITE_fu_370_grp_fu_904_p_din1;
+    if (((1'b1 == ap_CS_fsm_state43) | (1'b1 == ap_CS_fsm_state44))) begin
+        grp_fu_754_ce = grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_PIXEL_NORM_fu_358_grp_fu_754_p_ce;
     end else if ((1'b1 == ap_CS_fsm_state12)) begin
-        grp_fu_904_p1 = grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_288_grp_fu_904_p_din1;
+        grp_fu_754_ce = grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_250_grp_fu_754_p_ce;
     end else begin
-        grp_fu_904_p1 = 'bx;
+        grp_fu_754_ce = 1'b1;
     end
 end
 
 always @ (*) begin
-    if ((1'b1 == ap_CS_fsm_state136)) begin
-        grp_fu_908_ce = grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_NORM_WRITE_fu_370_grp_fu_908_p_ce;
+    if (((1'b1 == ap_CS_fsm_state43) | (1'b1 == ap_CS_fsm_state44))) begin
+        grp_fu_754_p0 = grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_PIXEL_NORM_fu_358_grp_fu_754_p_din0;
     end else if ((1'b1 == ap_CS_fsm_state12)) begin
-        grp_fu_908_ce = grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_288_grp_fu_908_p_ce;
+        grp_fu_754_p0 = grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_250_grp_fu_754_p_din0;
     end else begin
-        grp_fu_908_ce = 1'b1;
+        grp_fu_754_p0 = 'bx;
     end
 end
 
 always @ (*) begin
-    if ((1'b1 == ap_CS_fsm_state136)) begin
-        grp_fu_908_p0 = grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_NORM_WRITE_fu_370_grp_fu_908_p_din0;
+    if (((1'b1 == ap_CS_fsm_state43) | (1'b1 == ap_CS_fsm_state44))) begin
+        grp_fu_754_p1 = grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_PIXEL_NORM_fu_358_grp_fu_754_p_din1;
     end else if ((1'b1 == ap_CS_fsm_state12)) begin
-        grp_fu_908_p0 = grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_288_grp_fu_908_p_din0;
+        grp_fu_754_p1 = grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_250_grp_fu_754_p_din1;
     end else begin
-        grp_fu_908_p0 = 'bx;
+        grp_fu_754_p1 = 'bx;
     end
 end
 
 always @ (*) begin
-    if ((1'b1 == ap_CS_fsm_state136)) begin
-        grp_fu_908_p1 = grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_NORM_WRITE_fu_370_grp_fu_908_p_din1;
+    if (((1'b1 == ap_CS_fsm_state43) | (1'b1 == ap_CS_fsm_state44))) begin
+        grp_fu_758_ce = grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_PIXEL_NORM_fu_358_grp_fu_758_p_ce;
     end else if ((1'b1 == ap_CS_fsm_state12)) begin
-        grp_fu_908_p1 = grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_288_grp_fu_908_p_din1;
+        grp_fu_758_ce = grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_250_grp_fu_758_p_ce;
     end else begin
-        grp_fu_908_p1 = 'bx;
+        grp_fu_758_ce = 1'b1;
     end
 end
 
 always @ (*) begin
-    if ((1'b1 == ap_CS_fsm_state136)) begin
-        grp_fu_912_ce = grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_NORM_WRITE_fu_370_grp_fu_912_p_ce;
+    if (((1'b1 == ap_CS_fsm_state43) | (1'b1 == ap_CS_fsm_state44))) begin
+        grp_fu_758_p0 = grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_PIXEL_NORM_fu_358_grp_fu_758_p_din0;
     end else if ((1'b1 == ap_CS_fsm_state12)) begin
-        grp_fu_912_ce = grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_288_grp_fu_912_p_ce;
+        grp_fu_758_p0 = grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_250_grp_fu_758_p_din0;
     end else begin
-        grp_fu_912_ce = 1'b1;
+        grp_fu_758_p0 = 'bx;
     end
 end
 
 always @ (*) begin
-    if ((1'b1 == ap_CS_fsm_state136)) begin
-        grp_fu_912_p0 = grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_NORM_WRITE_fu_370_grp_fu_912_p_din0;
+    if (((1'b1 == ap_CS_fsm_state43) | (1'b1 == ap_CS_fsm_state44))) begin
+        grp_fu_758_p1 = grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_PIXEL_NORM_fu_358_grp_fu_758_p_din1;
     end else if ((1'b1 == ap_CS_fsm_state12)) begin
-        grp_fu_912_p0 = grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_288_grp_fu_912_p_din0;
+        grp_fu_758_p1 = grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_250_grp_fu_758_p_din1;
     end else begin
-        grp_fu_912_p0 = 'bx;
+        grp_fu_758_p1 = 'bx;
     end
 end
 
 always @ (*) begin
-    if ((1'b1 == ap_CS_fsm_state136)) begin
-        grp_fu_912_p1 = grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_NORM_WRITE_fu_370_grp_fu_912_p_din1;
+    if (((1'b1 == ap_CS_fsm_state43) | (1'b1 == ap_CS_fsm_state44))) begin
+        grp_fu_762_ce = grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_PIXEL_NORM_fu_358_grp_fu_762_p_ce;
     end else if ((1'b1 == ap_CS_fsm_state12)) begin
-        grp_fu_912_p1 = grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_288_grp_fu_912_p_din1;
+        grp_fu_762_ce = grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_250_grp_fu_762_p_ce;
     end else begin
-        grp_fu_912_p1 = 'bx;
+        grp_fu_762_ce = 1'b1;
     end
 end
 
 always @ (*) begin
-    if ((1'b1 == ap_CS_fsm_state136)) begin
-        grp_fu_916_ce = grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_NORM_WRITE_fu_370_grp_fu_916_p_ce;
+    if (((1'b1 == ap_CS_fsm_state43) | (1'b1 == ap_CS_fsm_state44))) begin
+        grp_fu_762_p0 = grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_PIXEL_NORM_fu_358_grp_fu_762_p_din0;
     end else if ((1'b1 == ap_CS_fsm_state12)) begin
-        grp_fu_916_ce = grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_288_grp_fu_916_p_ce;
+        grp_fu_762_p0 = grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_250_grp_fu_762_p_din0;
     end else begin
-        grp_fu_916_ce = 1'b1;
+        grp_fu_762_p0 = 'bx;
     end
 end
 
 always @ (*) begin
-    if ((1'b1 == ap_CS_fsm_state136)) begin
-        grp_fu_916_p0 = grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_NORM_WRITE_fu_370_grp_fu_916_p_din0;
+    if (((1'b1 == ap_CS_fsm_state43) | (1'b1 == ap_CS_fsm_state44))) begin
+        grp_fu_762_p1 = grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_PIXEL_NORM_fu_358_grp_fu_762_p_din1;
     end else if ((1'b1 == ap_CS_fsm_state12)) begin
-        grp_fu_916_p0 = grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_288_grp_fu_916_p_din0;
+        grp_fu_762_p1 = grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_250_grp_fu_762_p_din1;
     end else begin
-        grp_fu_916_p0 = 'bx;
+        grp_fu_762_p1 = 'bx;
     end
 end
 
 always @ (*) begin
-    if ((1'b1 == ap_CS_fsm_state136)) begin
-        grp_fu_916_p1 = grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_NORM_WRITE_fu_370_grp_fu_916_p_din1;
+    if (((1'b1 == ap_CS_fsm_state43) | (1'b1 == ap_CS_fsm_state44))) begin
+        grp_fu_766_ce = grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_PIXEL_NORM_fu_358_grp_fu_766_p_ce;
     end else if ((1'b1 == ap_CS_fsm_state12)) begin
-        grp_fu_916_p1 = grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_288_grp_fu_916_p_din1;
+        grp_fu_766_ce = grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_250_grp_fu_766_p_ce;
     end else begin
-        grp_fu_916_p1 = 'bx;
+        grp_fu_766_ce = 1'b1;
     end
 end
 
 always @ (*) begin
-    if ((1'b1 == ap_CS_fsm_state136)) begin
-        grp_fu_920_ce = grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_NORM_WRITE_fu_370_grp_fu_920_p_ce;
+    if (((1'b1 == ap_CS_fsm_state43) | (1'b1 == ap_CS_fsm_state44))) begin
+        grp_fu_766_p0 = grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_PIXEL_NORM_fu_358_grp_fu_766_p_din0;
     end else if ((1'b1 == ap_CS_fsm_state12)) begin
-        grp_fu_920_ce = grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_288_grp_fu_920_p_ce;
+        grp_fu_766_p0 = grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_250_grp_fu_766_p_din0;
     end else begin
-        grp_fu_920_ce = 1'b1;
+        grp_fu_766_p0 = 'bx;
     end
 end
 
 always @ (*) begin
-    if ((1'b1 == ap_CS_fsm_state136)) begin
-        grp_fu_920_p0 = grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_NORM_WRITE_fu_370_grp_fu_920_p_din0;
+    if (((1'b1 == ap_CS_fsm_state43) | (1'b1 == ap_CS_fsm_state44))) begin
+        grp_fu_766_p1 = grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_PIXEL_NORM_fu_358_grp_fu_766_p_din1;
     end else if ((1'b1 == ap_CS_fsm_state12)) begin
-        grp_fu_920_p0 = grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_288_grp_fu_920_p_din0;
+        grp_fu_766_p1 = grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_250_grp_fu_766_p_din1;
     end else begin
-        grp_fu_920_p0 = 'bx;
+        grp_fu_766_p1 = 'bx;
     end
 end
 
 always @ (*) begin
-    if ((1'b1 == ap_CS_fsm_state136)) begin
-        grp_fu_920_p1 = grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_NORM_WRITE_fu_370_grp_fu_920_p_din1;
+    if (((1'b1 == ap_CS_fsm_state43) | (1'b1 == ap_CS_fsm_state44))) begin
+        grp_fu_770_ce = grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_PIXEL_NORM_fu_358_grp_fu_770_p_ce;
     end else if ((1'b1 == ap_CS_fsm_state12)) begin
-        grp_fu_920_p1 = grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_288_grp_fu_920_p_din1;
+        grp_fu_770_ce = grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_250_grp_fu_770_p_ce;
     end else begin
-        grp_fu_920_p1 = 'bx;
+        grp_fu_770_ce = 1'b1;
     end
 end
 
 always @ (*) begin
-    if ((1'b1 == ap_CS_fsm_state136)) begin
-        grp_fu_924_ce = grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_NORM_WRITE_fu_370_grp_fu_924_p_ce;
+    if (((1'b1 == ap_CS_fsm_state43) | (1'b1 == ap_CS_fsm_state44))) begin
+        grp_fu_770_p0 = grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_PIXEL_NORM_fu_358_grp_fu_770_p_din0;
     end else if ((1'b1 == ap_CS_fsm_state12)) begin
-        grp_fu_924_ce = grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_288_grp_fu_924_p_ce;
+        grp_fu_770_p0 = grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_250_grp_fu_770_p_din0;
     end else begin
-        grp_fu_924_ce = 1'b1;
+        grp_fu_770_p0 = 'bx;
     end
 end
 
 always @ (*) begin
-    if ((1'b1 == ap_CS_fsm_state136)) begin
-        grp_fu_924_p0 = grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_NORM_WRITE_fu_370_grp_fu_924_p_din0;
+    if (((1'b1 == ap_CS_fsm_state43) | (1'b1 == ap_CS_fsm_state44))) begin
+        grp_fu_770_p1 = grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_PIXEL_NORM_fu_358_grp_fu_770_p_din1;
     end else if ((1'b1 == ap_CS_fsm_state12)) begin
-        grp_fu_924_p0 = grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_288_grp_fu_924_p_din0;
+        grp_fu_770_p1 = grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_250_grp_fu_770_p_din1;
     end else begin
-        grp_fu_924_p0 = 'bx;
+        grp_fu_770_p1 = 'bx;
     end
 end
 
 always @ (*) begin
-    if ((1'b1 == ap_CS_fsm_state136)) begin
-        grp_fu_924_p1 = grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_NORM_WRITE_fu_370_grp_fu_924_p_din1;
-    end else if ((1'b1 == ap_CS_fsm_state12)) begin
-        grp_fu_924_p1 = grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_288_grp_fu_924_p_din1;
+    if (((1'b1 == ap_CS_fsm_state43) | (1'b1 == ap_CS_fsm_state44))) begin
+        grp_fu_774_ce = grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_PIXEL_NORM_fu_358_grp_fu_774_p_ce;
+    end else if (((1'b1 == ap_CS_fsm_state32) | (1'b1 == ap_CS_fsm_state31))) begin
+        grp_fu_774_ce = grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_PIXEL_STATS_fu_308_grp_fu_774_p_ce;
     end else begin
-        grp_fu_924_p1 = 'bx;
+        grp_fu_774_ce = 1'b1;
     end
 end
 
 always @ (*) begin
-    if ((1'b1 == ap_CS_fsm_state136)) begin
-        grp_fu_928_ce = grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_NORM_WRITE_fu_370_grp_fu_928_p_ce;
-    end else if ((1'b1 == ap_CS_fsm_state12)) begin
-        grp_fu_928_ce = grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_288_grp_fu_928_p_ce;
+    if (((1'b1 == ap_CS_fsm_state43) | (1'b1 == ap_CS_fsm_state44))) begin
+        grp_fu_774_p0 = grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_PIXEL_NORM_fu_358_grp_fu_774_p_din0;
+    end else if (((1'b1 == ap_CS_fsm_state32) | (1'b1 == ap_CS_fsm_state31))) begin
+        grp_fu_774_p0 = grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_PIXEL_STATS_fu_308_grp_fu_774_p_din0;
     end else begin
-        grp_fu_928_ce = 1'b1;
+        grp_fu_774_p0 = 'bx;
     end
 end
 
 always @ (*) begin
-    if ((1'b1 == ap_CS_fsm_state136)) begin
-        grp_fu_928_p0 = grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_NORM_WRITE_fu_370_grp_fu_928_p_din0;
-    end else if ((1'b1 == ap_CS_fsm_state12)) begin
-        grp_fu_928_p0 = grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_288_grp_fu_928_p_din0;
+    if ((1'b1 == ap_CS_fsm_state44)) begin
+        inv_buf_ce0 = grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_PIXEL_NORM_fu_358_inv_buf_ce0;
     end else begin
-        grp_fu_928_p0 = 'bx;
+        inv_buf_ce0 = 1'b0;
     end
 end
 
 always @ (*) begin
-    if ((1'b1 == ap_CS_fsm_state136)) begin
-        grp_fu_928_p1 = grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_NORM_WRITE_fu_370_grp_fu_928_p_din1;
-    end else if ((1'b1 == ap_CS_fsm_state12)) begin
-        grp_fu_928_p1 = grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_288_grp_fu_928_p_din1;
+    if ((1'b1 == ap_CS_fsm_state32)) begin
+        inv_buf_ce1 = grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_PIXEL_STATS_fu_308_inv_buf_ce1;
     end else begin
-        grp_fu_928_p1 = 'bx;
+        inv_buf_ce1 = 1'b0;
     end
 end
 
 always @ (*) begin
-    if (((m_axi_gmem_out_0_AWREADY == 1'b1) & (1'b1 == ap_CS_fsm_state13))) begin
-        m_axi_gmem_out_0_AWADDR = sext_ln238_fu_569_p1;
-    end else if (((1'b1 == ap_CS_fsm_state135) | (1'b1 == ap_CS_fsm_state136))) begin
-        m_axi_gmem_out_0_AWADDR = grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_NORM_WRITE_fu_370_m_axi_gmem_out_0_AWADDR;
+    if ((1'b1 == ap_CS_fsm_state32)) begin
+        inv_buf_we1 = grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_PIXEL_STATS_fu_308_inv_buf_we1;
     end else begin
-        m_axi_gmem_out_0_AWADDR = 'bx;
+        inv_buf_we1 = 1'b0;
     end
 end
 
 always @ (*) begin
-    if (((1'b1 == ap_CS_fsm_state135) | (1'b1 == ap_CS_fsm_state136))) begin
-        m_axi_gmem_out_0_AWBURST = grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_NORM_WRITE_fu_370_m_axi_gmem_out_0_AWBURST;
+    if (((1'b1 == ap_CS_fsm_state33) & (m_axi_gmem_param_0_ARREADY == 1'b1))) begin
+        m_axi_gmem_param_0_ARADDR = sext_ln193_fu_493_p1;
+    end else if (((1'b1 == ap_CS_fsm_state23) & (m_axi_gmem_param_0_ARREADY == 1'b1))) begin
+        m_axi_gmem_param_0_ARADDR = sext_ln189_fu_472_p1;
+    end else if (((1'b1 == ap_CS_fsm_state13) & (m_axi_gmem_param_0_ARREADY == 1'b1))) begin
+        m_axi_gmem_param_0_ARADDR = sext_ln185_fu_451_p1;
+    end else if (((1'b1 == ap_CS_fsm_state42) | (1'b1 == ap_CS_fsm_state41))) begin
+        m_axi_gmem_param_0_ARADDR = grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_LOAD_BE_fu_350_m_axi_gmem_param_0_ARADDR;
+    end else if (((1'b1 == ap_CS_fsm_state32) | (1'b1 == ap_CS_fsm_state31))) begin
+        m_axi_gmem_param_0_ARADDR = grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_LOAD_G_fu_300_m_axi_gmem_param_0_ARADDR;
+    end else if (((1'b1 == ap_CS_fsm_state22) | (1'b1 == ap_CS_fsm_state21))) begin
+        m_axi_gmem_param_0_ARADDR = grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_LOAD_B_fu_292_m_axi_gmem_param_0_ARADDR;
     end else begin
-        m_axi_gmem_out_0_AWBURST = 2'd0;
+        m_axi_gmem_param_0_ARADDR = 'bx;
     end
 end
 
 always @ (*) begin
-    if (((1'b1 == ap_CS_fsm_state135) | (1'b1 == ap_CS_fsm_state136))) begin
-        m_axi_gmem_out_0_AWCACHE = grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_NORM_WRITE_fu_370_m_axi_gmem_out_0_AWCACHE;
+    if (((1'b1 == ap_CS_fsm_state42) | (1'b1 == ap_CS_fsm_state41))) begin
+        m_axi_gmem_param_0_ARBURST = grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_LOAD_BE_fu_350_m_axi_gmem_param_0_ARBURST;
+    end else if (((1'b1 == ap_CS_fsm_state32) | (1'b1 == ap_CS_fsm_state31))) begin
+        m_axi_gmem_param_0_ARBURST = grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_LOAD_G_fu_300_m_axi_gmem_param_0_ARBURST;
+    end else if (((1'b1 == ap_CS_fsm_state22) | (1'b1 == ap_CS_fsm_state21))) begin
+        m_axi_gmem_param_0_ARBURST = grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_LOAD_B_fu_292_m_axi_gmem_param_0_ARBURST;
     end else begin
-        m_axi_gmem_out_0_AWCACHE = 4'd0;
+        m_axi_gmem_param_0_ARBURST = 2'd0;
     end
 end
 
 always @ (*) begin
-    if (((1'b1 == ap_CS_fsm_state135) | (1'b1 == ap_CS_fsm_state136))) begin
-        m_axi_gmem_out_0_AWID = grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_NORM_WRITE_fu_370_m_axi_gmem_out_0_AWID;
+    if (((1'b1 == ap_CS_fsm_state42) | (1'b1 == ap_CS_fsm_state41))) begin
+        m_axi_gmem_param_0_ARCACHE = grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_LOAD_BE_fu_350_m_axi_gmem_param_0_ARCACHE;
+    end else if (((1'b1 == ap_CS_fsm_state32) | (1'b1 == ap_CS_fsm_state31))) begin
+        m_axi_gmem_param_0_ARCACHE = grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_LOAD_G_fu_300_m_axi_gmem_param_0_ARCACHE;
+    end else if (((1'b1 == ap_CS_fsm_state22) | (1'b1 == ap_CS_fsm_state21))) begin
+        m_axi_gmem_param_0_ARCACHE = grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_LOAD_B_fu_292_m_axi_gmem_param_0_ARCACHE;
     end else begin
-        m_axi_gmem_out_0_AWID = 1'd0;
+        m_axi_gmem_param_0_ARCACHE = 4'd0;
     end
 end
 
 always @ (*) begin
-    if (((m_axi_gmem_out_0_AWREADY == 1'b1) & (1'b1 == ap_CS_fsm_state13))) begin
-        m_axi_gmem_out_0_AWLEN = 64'd960;
-    end else if (((1'b1 == ap_CS_fsm_state135) | (1'b1 == ap_CS_fsm_state136))) begin
-        m_axi_gmem_out_0_AWLEN = grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_NORM_WRITE_fu_370_m_axi_gmem_out_0_AWLEN;
+    if (((1'b1 == ap_CS_fsm_state42) | (1'b1 == ap_CS_fsm_state41))) begin
+        m_axi_gmem_param_0_ARID = grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_LOAD_BE_fu_350_m_axi_gmem_param_0_ARID;
+    end else if (((1'b1 == ap_CS_fsm_state32) | (1'b1 == ap_CS_fsm_state31))) begin
+        m_axi_gmem_param_0_ARID = grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_LOAD_G_fu_300_m_axi_gmem_param_0_ARID;
+    end else if (((1'b1 == ap_CS_fsm_state22) | (1'b1 == ap_CS_fsm_state21))) begin
+        m_axi_gmem_param_0_ARID = grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_LOAD_B_fu_292_m_axi_gmem_param_0_ARID;
     end else begin
-        m_axi_gmem_out_0_AWLEN = 'bx;
+        m_axi_gmem_param_0_ARID = 1'd0;
     end
 end
 
 always @ (*) begin
-    if (((1'b1 == ap_CS_fsm_state135) | (1'b1 == ap_CS_fsm_state136))) begin
-        m_axi_gmem_out_0_AWLOCK = grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_NORM_WRITE_fu_370_m_axi_gmem_out_0_AWLOCK;
+    if ((((1'b1 == ap_CS_fsm_state33) & (m_axi_gmem_param_0_ARREADY == 1'b1)) | ((1'b1 == ap_CS_fsm_state23) & (m_axi_gmem_param_0_ARREADY == 1'b1)) | ((1'b1 == ap_CS_fsm_state13) & (m_axi_gmem_param_0_ARREADY == 1'b1)))) begin
+        m_axi_gmem_param_0_ARLEN = 64'd15;
+    end else if (((1'b1 == ap_CS_fsm_state42) | (1'b1 == ap_CS_fsm_state41))) begin
+        m_axi_gmem_param_0_ARLEN = grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_LOAD_BE_fu_350_m_axi_gmem_param_0_ARLEN;
+    end else if (((1'b1 == ap_CS_fsm_state32) | (1'b1 == ap_CS_fsm_state31))) begin
+        m_axi_gmem_param_0_ARLEN = grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_LOAD_G_fu_300_m_axi_gmem_param_0_ARLEN;
+    end else if (((1'b1 == ap_CS_fsm_state22) | (1'b1 == ap_CS_fsm_state21))) begin
+        m_axi_gmem_param_0_ARLEN = grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_LOAD_B_fu_292_m_axi_gmem_param_0_ARLEN;
     end else begin
-        m_axi_gmem_out_0_AWLOCK = 2'd0;
+        m_axi_gmem_param_0_ARLEN = 'bx;
     end
 end
 
 always @ (*) begin
-    if (((1'b1 == ap_CS_fsm_state135) | (1'b1 == ap_CS_fsm_state136))) begin
-        m_axi_gmem_out_0_AWPROT = grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_NORM_WRITE_fu_370_m_axi_gmem_out_0_AWPROT;
+    if (((1'b1 == ap_CS_fsm_state42) | (1'b1 == ap_CS_fsm_state41))) begin
+        m_axi_gmem_param_0_ARLOCK = grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_LOAD_BE_fu_350_m_axi_gmem_param_0_ARLOCK;
+    end else if (((1'b1 == ap_CS_fsm_state32) | (1'b1 == ap_CS_fsm_state31))) begin
+        m_axi_gmem_param_0_ARLOCK = grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_LOAD_G_fu_300_m_axi_gmem_param_0_ARLOCK;
+    end else if (((1'b1 == ap_CS_fsm_state22) | (1'b1 == ap_CS_fsm_state21))) begin
+        m_axi_gmem_param_0_ARLOCK = grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_LOAD_B_fu_292_m_axi_gmem_param_0_ARLOCK;
     end else begin
-        m_axi_gmem_out_0_AWPROT = 3'd0;
+        m_axi_gmem_param_0_ARLOCK = 2'd0;
     end
 end
 
 always @ (*) begin
-    if (((1'b1 == ap_CS_fsm_state135) | (1'b1 == ap_CS_fsm_state136))) begin
-        m_axi_gmem_out_0_AWQOS = grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_NORM_WRITE_fu_370_m_axi_gmem_out_0_AWQOS;
+    if (((1'b1 == ap_CS_fsm_state42) | (1'b1 == ap_CS_fsm_state41))) begin
+        m_axi_gmem_param_0_ARPROT = grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_LOAD_BE_fu_350_m_axi_gmem_param_0_ARPROT;
+    end else if (((1'b1 == ap_CS_fsm_state32) | (1'b1 == ap_CS_fsm_state31))) begin
+        m_axi_gmem_param_0_ARPROT = grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_LOAD_G_fu_300_m_axi_gmem_param_0_ARPROT;
+    end else if (((1'b1 == ap_CS_fsm_state22) | (1'b1 == ap_CS_fsm_state21))) begin
+        m_axi_gmem_param_0_ARPROT = grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_LOAD_B_fu_292_m_axi_gmem_param_0_ARPROT;
     end else begin
-        m_axi_gmem_out_0_AWQOS = 4'd0;
+        m_axi_gmem_param_0_ARPROT = 3'd0;
     end
 end
 
 always @ (*) begin
-    if (((1'b1 == ap_CS_fsm_state135) | (1'b1 == ap_CS_fsm_state136))) begin
-        m_axi_gmem_out_0_AWREGION = grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_NORM_WRITE_fu_370_m_axi_gmem_out_0_AWREGION;
+    if (((1'b1 == ap_CS_fsm_state42) | (1'b1 == ap_CS_fsm_state41))) begin
+        m_axi_gmem_param_0_ARQOS = grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_LOAD_BE_fu_350_m_axi_gmem_param_0_ARQOS;
+    end else if (((1'b1 == ap_CS_fsm_state32) | (1'b1 == ap_CS_fsm_state31))) begin
+        m_axi_gmem_param_0_ARQOS = grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_LOAD_G_fu_300_m_axi_gmem_param_0_ARQOS;
+    end else if (((1'b1 == ap_CS_fsm_state22) | (1'b1 == ap_CS_fsm_state21))) begin
+        m_axi_gmem_param_0_ARQOS = grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_LOAD_B_fu_292_m_axi_gmem_param_0_ARQOS;
     end else begin
-        m_axi_gmem_out_0_AWREGION = 4'd0;
+        m_axi_gmem_param_0_ARQOS = 4'd0;
     end
 end
 
 always @ (*) begin
-    if (((1'b1 == ap_CS_fsm_state135) | (1'b1 == ap_CS_fsm_state136))) begin
-        m_axi_gmem_out_0_AWSIZE = grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_NORM_WRITE_fu_370_m_axi_gmem_out_0_AWSIZE;
+    if (((1'b1 == ap_CS_fsm_state42) | (1'b1 == ap_CS_fsm_state41))) begin
+        m_axi_gmem_param_0_ARREGION = grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_LOAD_BE_fu_350_m_axi_gmem_param_0_ARREGION;
+    end else if (((1'b1 == ap_CS_fsm_state32) | (1'b1 == ap_CS_fsm_state31))) begin
+        m_axi_gmem_param_0_ARREGION = grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_LOAD_G_fu_300_m_axi_gmem_param_0_ARREGION;
+    end else if (((1'b1 == ap_CS_fsm_state22) | (1'b1 == ap_CS_fsm_state21))) begin
+        m_axi_gmem_param_0_ARREGION = grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_LOAD_B_fu_292_m_axi_gmem_param_0_ARREGION;
     end else begin
-        m_axi_gmem_out_0_AWSIZE = 3'd0;
+        m_axi_gmem_param_0_ARREGION = 4'd0;
     end
 end
 
 always @ (*) begin
-    if (((1'b1 == ap_CS_fsm_state135) | (1'b1 == ap_CS_fsm_state136))) begin
-        m_axi_gmem_out_0_AWUSER = grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_NORM_WRITE_fu_370_m_axi_gmem_out_0_AWUSER;
+    if (((1'b1 == ap_CS_fsm_state42) | (1'b1 == ap_CS_fsm_state41))) begin
+        m_axi_gmem_param_0_ARSIZE = grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_LOAD_BE_fu_350_m_axi_gmem_param_0_ARSIZE;
+    end else if (((1'b1 == ap_CS_fsm_state32) | (1'b1 == ap_CS_fsm_state31))) begin
+        m_axi_gmem_param_0_ARSIZE = grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_LOAD_G_fu_300_m_axi_gmem_param_0_ARSIZE;
+    end else if (((1'b1 == ap_CS_fsm_state22) | (1'b1 == ap_CS_fsm_state21))) begin
+        m_axi_gmem_param_0_ARSIZE = grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_LOAD_B_fu_292_m_axi_gmem_param_0_ARSIZE;
     end else begin
-        m_axi_gmem_out_0_AWUSER = 1'd0;
+        m_axi_gmem_param_0_ARSIZE = 3'd0;
     end
 end
 
 always @ (*) begin
-    if (((m_axi_gmem_out_0_AWREADY == 1'b1) & (1'b1 == ap_CS_fsm_state13))) begin
-        m_axi_gmem_out_0_AWVALID = 1'b1;
-    end else if (((1'b1 == ap_CS_fsm_state135) | (1'b1 == ap_CS_fsm_state136))) begin
-        m_axi_gmem_out_0_AWVALID = grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_NORM_WRITE_fu_370_m_axi_gmem_out_0_AWVALID;
+    if (((1'b1 == ap_CS_fsm_state42) | (1'b1 == ap_CS_fsm_state41))) begin
+        m_axi_gmem_param_0_ARUSER = grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_LOAD_BE_fu_350_m_axi_gmem_param_0_ARUSER;
+    end else if (((1'b1 == ap_CS_fsm_state32) | (1'b1 == ap_CS_fsm_state31))) begin
+        m_axi_gmem_param_0_ARUSER = grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_LOAD_G_fu_300_m_axi_gmem_param_0_ARUSER;
+    end else if (((1'b1 == ap_CS_fsm_state22) | (1'b1 == ap_CS_fsm_state21))) begin
+        m_axi_gmem_param_0_ARUSER = grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_LOAD_B_fu_292_m_axi_gmem_param_0_ARUSER;
     end else begin
-        m_axi_gmem_out_0_AWVALID = 1'b0;
+        m_axi_gmem_param_0_ARUSER = 1'd0;
     end
 end
 
 always @ (*) begin
-    if (((m_axi_gmem_out_0_BVALID == 1'b1) & (1'b1 == ap_CS_fsm_state141))) begin
-        m_axi_gmem_out_0_BREADY = 1'b1;
-    end else if (((1'b1 == ap_CS_fsm_state135) | (1'b1 == ap_CS_fsm_state136))) begin
-        m_axi_gmem_out_0_BREADY = grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_NORM_WRITE_fu_370_m_axi_gmem_out_0_BREADY;
+    if ((((1'b1 == ap_CS_fsm_state33) & (m_axi_gmem_param_0_ARREADY == 1'b1)) | ((1'b1 == ap_CS_fsm_state23) & (m_axi_gmem_param_0_ARREADY == 1'b1)) | ((1'b1 == ap_CS_fsm_state13) & (m_axi_gmem_param_0_ARREADY == 1'b1)))) begin
+        m_axi_gmem_param_0_ARVALID = 1'b1;
+    end else if (((1'b1 == ap_CS_fsm_state42) | (1'b1 == ap_CS_fsm_state41))) begin
+        m_axi_gmem_param_0_ARVALID = grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_LOAD_BE_fu_350_m_axi_gmem_param_0_ARVALID;
+    end else if (((1'b1 == ap_CS_fsm_state32) | (1'b1 == ap_CS_fsm_state31))) begin
+        m_axi_gmem_param_0_ARVALID = grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_LOAD_G_fu_300_m_axi_gmem_param_0_ARVALID;
+    end else if (((1'b1 == ap_CS_fsm_state22) | (1'b1 == ap_CS_fsm_state21))) begin
+        m_axi_gmem_param_0_ARVALID = grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_LOAD_B_fu_292_m_axi_gmem_param_0_ARVALID;
     end else begin
-        m_axi_gmem_out_0_BREADY = 1'b0;
+        m_axi_gmem_param_0_ARVALID = 1'b0;
     end
 end
 
 always @ (*) begin
-    if (((1'b1 == ap_CS_fsm_state135) | (1'b1 == ap_CS_fsm_state136))) begin
-        m_axi_gmem_out_0_WVALID = grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_NORM_WRITE_fu_370_m_axi_gmem_out_0_WVALID;
+    if (((1'b1 == ap_CS_fsm_state42) | (1'b1 == ap_CS_fsm_state41))) begin
+        m_axi_gmem_param_0_RREADY = grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_LOAD_BE_fu_350_m_axi_gmem_param_0_RREADY;
+    end else if (((1'b1 == ap_CS_fsm_state32) | (1'b1 == ap_CS_fsm_state31))) begin
+        m_axi_gmem_param_0_RREADY = grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_LOAD_G_fu_300_m_axi_gmem_param_0_RREADY;
+    end else if (((1'b1 == ap_CS_fsm_state22) | (1'b1 == ap_CS_fsm_state21))) begin
+        m_axi_gmem_param_0_RREADY = grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_LOAD_B_fu_292_m_axi_gmem_param_0_RREADY;
     end else begin
-        m_axi_gmem_out_0_WVALID = 1'b0;
+        m_axi_gmem_param_0_RREADY = 1'b0;
     end
 end
 
 always @ (*) begin
-    if (((1'b1 == ap_CS_fsm_state3) & (m_axi_gmem_weight_0_ARREADY == 1'b1))) begin
-        m_axi_gmem_weight_0_ARADDR = sext_ln135_fu_503_p1;
-    end else if (((1'b1 == ap_CS_fsm_state12) | (1'b1 == ap_CS_fsm_state11))) begin
-        m_axi_gmem_weight_0_ARADDR = grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_288_m_axi_gmem_weight_0_ARADDR;
+    if (((m_axi_gmem_weight_0_ARREADY == 1'b1) & (1'b1 == ap_CS_fsm_state3))) begin
+        m_axi_gmem_weight_0_ARADDR = sext_ln356_fu_419_p1;
+    end else if (((1'b1 == ap_CS_fsm_state11) | (1'b1 == ap_CS_fsm_state12))) begin
+        m_axi_gmem_weight_0_ARADDR = grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_250_m_axi_gmem_weight_0_ARADDR;
     end else begin
         m_axi_gmem_weight_0_ARADDR = 'bx;
     end
 end
 
 always @ (*) begin
-    if (((1'b1 == ap_CS_fsm_state12) | (1'b1 == ap_CS_fsm_state11))) begin
-        m_axi_gmem_weight_0_ARBURST = grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_288_m_axi_gmem_weight_0_ARBURST;
+    if (((1'b1 == ap_CS_fsm_state11) | (1'b1 == ap_CS_fsm_state12))) begin
+        m_axi_gmem_weight_0_ARBURST = grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_250_m_axi_gmem_weight_0_ARBURST;
     end else begin
         m_axi_gmem_weight_0_ARBURST = 2'd0;
     end
 end
 
 always @ (*) begin
-    if (((1'b1 == ap_CS_fsm_state12) | (1'b1 == ap_CS_fsm_state11))) begin
-        m_axi_gmem_weight_0_ARCACHE = grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_288_m_axi_gmem_weight_0_ARCACHE;
+    if (((1'b1 == ap_CS_fsm_state11) | (1'b1 == ap_CS_fsm_state12))) begin
+        m_axi_gmem_weight_0_ARCACHE = grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_250_m_axi_gmem_weight_0_ARCACHE;
     end else begin
         m_axi_gmem_weight_0_ARCACHE = 4'd0;
     end
 end
 
 always @ (*) begin
-    if (((1'b1 == ap_CS_fsm_state12) | (1'b1 == ap_CS_fsm_state11))) begin
-        m_axi_gmem_weight_0_ARID = grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_288_m_axi_gmem_weight_0_ARID;
+    if (((1'b1 == ap_CS_fsm_state11) | (1'b1 == ap_CS_fsm_state12))) begin
+        m_axi_gmem_weight_0_ARID = grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_250_m_axi_gmem_weight_0_ARID;
     end else begin
         m_axi_gmem_weight_0_ARID = 1'd0;
     end
 end
 
 always @ (*) begin
-    if (((1'b1 == ap_CS_fsm_state3) & (m_axi_gmem_weight_0_ARREADY == 1'b1))) begin
+    if (((m_axi_gmem_weight_0_ARREADY == 1'b1) & (1'b1 == ap_CS_fsm_state3))) begin
         m_axi_gmem_weight_0_ARLEN = 64'd64800;
-    end else if (((1'b1 == ap_CS_fsm_state12) | (1'b1 == ap_CS_fsm_state11))) begin
-        m_axi_gmem_weight_0_ARLEN = grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_288_m_axi_gmem_weight_0_ARLEN;
+    end else if (((1'b1 == ap_CS_fsm_state11) | (1'b1 == ap_CS_fsm_state12))) begin
+        m_axi_gmem_weight_0_ARLEN = grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_250_m_axi_gmem_weight_0_ARLEN;
     end else begin
         m_axi_gmem_weight_0_ARLEN = 'bx;
     end
 end
 
 always @ (*) begin
-    if (((1'b1 == ap_CS_fsm_state12) | (1'b1 == ap_CS_fsm_state11))) begin
-        m_axi_gmem_weight_0_ARLOCK = grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_288_m_axi_gmem_weight_0_ARLOCK;
+    if (((1'b1 == ap_CS_fsm_state11) | (1'b1 == ap_CS_fsm_state12))) begin
+        m_axi_gmem_weight_0_ARLOCK = grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_250_m_axi_gmem_weight_0_ARLOCK;
     end else begin
         m_axi_gmem_weight_0_ARLOCK = 2'd0;
     end
 end
 
 always @ (*) begin
-    if (((1'b1 == ap_CS_fsm_state12) | (1'b1 == ap_CS_fsm_state11))) begin
-        m_axi_gmem_weight_0_ARPROT = grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_288_m_axi_gmem_weight_0_ARPROT;
+    if (((1'b1 == ap_CS_fsm_state11) | (1'b1 == ap_CS_fsm_state12))) begin
+        m_axi_gmem_weight_0_ARPROT = grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_250_m_axi_gmem_weight_0_ARPROT;
     end else begin
         m_axi_gmem_weight_0_ARPROT = 3'd0;
     end
 end
 
 always @ (*) begin
-    if (((1'b1 == ap_CS_fsm_state12) | (1'b1 == ap_CS_fsm_state11))) begin
-        m_axi_gmem_weight_0_ARQOS = grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_288_m_axi_gmem_weight_0_ARQOS;
+    if (((1'b1 == ap_CS_fsm_state11) | (1'b1 == ap_CS_fsm_state12))) begin
+        m_axi_gmem_weight_0_ARQOS = grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_250_m_axi_gmem_weight_0_ARQOS;
     end else begin
         m_axi_gmem_weight_0_ARQOS = 4'd0;
     end
 end
 
 always @ (*) begin
-    if (((1'b1 == ap_CS_fsm_state12) | (1'b1 == ap_CS_fsm_state11))) begin
-        m_axi_gmem_weight_0_ARREGION = grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_288_m_axi_gmem_weight_0_ARREGION;
+    if (((1'b1 == ap_CS_fsm_state11) | (1'b1 == ap_CS_fsm_state12))) begin
+        m_axi_gmem_weight_0_ARREGION = grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_250_m_axi_gmem_weight_0_ARREGION;
     end else begin
         m_axi_gmem_weight_0_ARREGION = 4'd0;
     end
 end
 
 always @ (*) begin
-    if (((1'b1 == ap_CS_fsm_state12) | (1'b1 == ap_CS_fsm_state11))) begin
-        m_axi_gmem_weight_0_ARSIZE = grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_288_m_axi_gmem_weight_0_ARSIZE;
+    if (((1'b1 == ap_CS_fsm_state11) | (1'b1 == ap_CS_fsm_state12))) begin
+        m_axi_gmem_weight_0_ARSIZE = grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_250_m_axi_gmem_weight_0_ARSIZE;
     end else begin
         m_axi_gmem_weight_0_ARSIZE = 3'd0;
     end
 end
 
 always @ (*) begin
-    if (((1'b1 == ap_CS_fsm_state12) | (1'b1 == ap_CS_fsm_state11))) begin
-        m_axi_gmem_weight_0_ARUSER = grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_288_m_axi_gmem_weight_0_ARUSER;
+    if (((1'b1 == ap_CS_fsm_state11) | (1'b1 == ap_CS_fsm_state12))) begin
+        m_axi_gmem_weight_0_ARUSER = grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_250_m_axi_gmem_weight_0_ARUSER;
     end else begin
         m_axi_gmem_weight_0_ARUSER = 1'd0;
     end
 end
 
 always @ (*) begin
-    if (((1'b1 == ap_CS_fsm_state3) & (m_axi_gmem_weight_0_ARREADY == 1'b1))) begin
+    if (((m_axi_gmem_weight_0_ARREADY == 1'b1) & (1'b1 == ap_CS_fsm_state3))) begin
         m_axi_gmem_weight_0_ARVALID = 1'b1;
-    end else if (((1'b1 == ap_CS_fsm_state12) | (1'b1 == ap_CS_fsm_state11))) begin
-        m_axi_gmem_weight_0_ARVALID = grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_288_m_axi_gmem_weight_0_ARVALID;
+    end else if (((1'b1 == ap_CS_fsm_state11) | (1'b1 == ap_CS_fsm_state12))) begin
+        m_axi_gmem_weight_0_ARVALID = grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_250_m_axi_gmem_weight_0_ARVALID;
     end else begin
         m_axi_gmem_weight_0_ARVALID = 1'b0;
     end
 end
 
 always @ (*) begin
-    if (((1'b1 == ap_CS_fsm_state12) | (1'b1 == ap_CS_fsm_state11))) begin
-        m_axi_gmem_weight_0_RREADY = grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_288_m_axi_gmem_weight_0_RREADY;
+    if (((1'b1 == ap_CS_fsm_state11) | (1'b1 == ap_CS_fsm_state12))) begin
+        m_axi_gmem_weight_0_RREADY = grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_250_m_axi_gmem_weight_0_RREADY;
     end else begin
         m_axi_gmem_weight_0_RREADY = 1'b0;
     end
 end
 
 always @ (*) begin
-    if ((1'b1 == ap_CS_fsm_state136)) begin
-        p_ZZ16UpConv_Fused_RowILi8ELi32ELi32ELi480ELi240EEvP7ap_uintILi256EEPKS1_S4_S4_S4_1_address0 = grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_NORM_WRITE_fu_370_p_ZZ16UpConv_Fused_RowILi8ELi32ELi32ELi480ELi240EEvP7ap_uintILi256EEPKS1_S4_S4_S4_1_address0;
-    end else if ((1'b1 == ap_CS_fsm_state16)) begin
-        p_ZZ16UpConv_Fused_RowILi8ELi32ELi32ELi480ELi240EEvP7ap_uintILi256EEPKS1_S4_S4_S4_1_address0 = grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_BIAS_STATS_fu_330_p_ZZ16UpConv_Fused_RowILi8ELi32ELi32ELi480ELi240EEvP7ap_uintILi256EEPKS1_S4_S4_S4_1_address0;
+    if ((1'b1 == ap_CS_fsm_state44)) begin
+        mean_buf_ce0 = grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_PIXEL_NORM_fu_358_mean_buf_ce0;
+    end else begin
+        mean_buf_ce0 = 1'b0;
+    end
+end
+
+always @ (*) begin
+    if ((1'b1 == ap_CS_fsm_state32)) begin
+        mean_buf_ce1 = grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_PIXEL_STATS_fu_308_mean_buf_ce1;
+    end else begin
+        mean_buf_ce1 = 1'b0;
+    end
+end
+
+always @ (*) begin
+    if ((1'b1 == ap_CS_fsm_state32)) begin
+        mean_buf_we1 = grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_PIXEL_STATS_fu_308_mean_buf_we1;
+    end else begin
+        mean_buf_we1 = 1'b0;
+    end
+end
+
+always @ (*) begin
+    if ((1'b1 == ap_CS_fsm_state44)) begin
+        p_ZZ16UpConv_Fused_RowILi8ELi32ELi32ELi480ELi240EEvP7ap_uintILi256EEPKS1_S4_S4_S4_1_address0 = grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_PIXEL_NORM_fu_358_p_ZZ16UpConv_Fused_RowILi8ELi32ELi32ELi480ELi240EEvP7ap_uintILi256EEPKS1_S4_S4_S4_1_address0;
+    end else if ((1'b1 == ap_CS_fsm_state32)) begin
+        p_ZZ16UpConv_Fused_RowILi8ELi32ELi32ELi480ELi240EEvP7ap_uintILi256EEPKS1_S4_S4_S4_1_address0 = grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_PIXEL_STATS_fu_308_p_ZZ16UpConv_Fused_RowILi8ELi32ELi32ELi480ELi240EEvP7ap_uintILi256EEPKS1_S4_S4_S4_1_address0;
     end else if ((1'b1 == ap_CS_fsm_state12)) begin
-        p_ZZ16UpConv_Fused_RowILi8ELi32ELi32ELi480ELi240EEvP7ap_uintILi256EEPKS1_S4_S4_S4_1_address0 = grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_288_p_ZZ16UpConv_Fused_RowILi8ELi32ELi32ELi480ELi240EEvP7ap_uintILi256EEPKS1_S4_S4_S4_1_address0;
+        p_ZZ16UpConv_Fused_RowILi8ELi32ELi32ELi480ELi240EEvP7ap_uintILi256EEPKS1_S4_S4_S4_1_address0 = grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_250_p_ZZ16UpConv_Fused_RowILi8ELi32ELi32ELi480ELi240EEvP7ap_uintILi256EEPKS1_S4_S4_S4_1_address0;
     end else if ((1'b1 == ap_CS_fsm_state2)) begin
-        p_ZZ16UpConv_Fused_RowILi8ELi32ELi32ELi480ELi240EEvP7ap_uintILi256EEPKS1_S4_S4_S4_1_address0 = grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_RESET_ROW_ACC_fu_237_p_ZZ16UpConv_Fused_RowILi8ELi32ELi32ELi480ELi240EEvP7ap_uintILi256EEPKS1_S4_S4_S4_1_address0;
+        p_ZZ16UpConv_Fused_RowILi8ELi32ELi32ELi480ELi240EEvP7ap_uintILi256EEPKS1_S4_S4_S4_1_address0 = grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_RESET_ROW_ACC_fu_214_p_ZZ16UpConv_Fused_RowILi8ELi32ELi32ELi480ELi240EEvP7ap_uintILi256EEPKS1_S4_S4_S4_1_address0;
     end else begin
         p_ZZ16UpConv_Fused_RowILi8ELi32ELi32ELi480ELi240EEvP7ap_uintILi256EEPKS1_S4_S4_S4_1_address0 = 'bx;
     end
 end
 
 always @ (*) begin
-    if ((1'b1 == ap_CS_fsm_state16)) begin
-        p_ZZ16UpConv_Fused_RowILi8ELi32ELi32ELi480ELi240EEvP7ap_uintILi256EEPKS1_S4_S4_S4_1_address1 = grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_BIAS_STATS_fu_330_p_ZZ16UpConv_Fused_RowILi8ELi32ELi32ELi480ELi240EEvP7ap_uintILi256EEPKS1_S4_S4_S4_1_address1;
-    end else if ((1'b1 == ap_CS_fsm_state2)) begin
-        p_ZZ16UpConv_Fused_RowILi8ELi32ELi32ELi480ELi240EEvP7ap_uintILi256EEPKS1_S4_S4_S4_1_address1 = grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_RESET_ROW_ACC_fu_237_p_ZZ16UpConv_Fused_RowILi8ELi32ELi32ELi480ELi240EEvP7ap_uintILi256EEPKS1_S4_S4_S4_1_address1;
+    if ((1'b1 == ap_CS_fsm_state32)) begin
+        p_ZZ16UpConv_Fused_RowILi8ELi32ELi32ELi480ELi240EEvP7ap_uintILi256EEPKS1_S4_S4_S4_1_address1 = grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_PIXEL_STATS_fu_308_p_ZZ16UpConv_Fused_RowILi8ELi32ELi32ELi480ELi240EEvP7ap_uintILi256EEPKS1_S4_S4_S4_1_address1;
+    end else if ((1'b1 == ap_CS_fsm_state12)) begin
+        p_ZZ16UpConv_Fused_RowILi8ELi32ELi32ELi480ELi240EEvP7ap_uintILi256EEPKS1_S4_S4_S4_1_address1 = grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_250_p_ZZ16UpConv_Fused_RowILi8ELi32ELi32ELi480ELi240EEvP7ap_uintILi256EEPKS1_S4_S4_S4_1_address1;
     end else begin
         p_ZZ16UpConv_Fused_RowILi8ELi32ELi32ELi480ELi240EEvP7ap_uintILi256EEPKS1_S4_S4_S4_1_address1 = 'bx;
     end
 end
 
 always @ (*) begin
-    if ((1'b1 == ap_CS_fsm_state136)) begin
-        p_ZZ16UpConv_Fused_RowILi8ELi32ELi32ELi480ELi240EEvP7ap_uintILi256EEPKS1_S4_S4_S4_1_ce0 = grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_NORM_WRITE_fu_370_p_ZZ16UpConv_Fused_RowILi8ELi32ELi32ELi480ELi240EEvP7ap_uintILi256EEPKS1_S4_S4_S4_1_ce0;
-    end else if ((1'b1 == ap_CS_fsm_state16)) begin
-        p_ZZ16UpConv_Fused_RowILi8ELi32ELi32ELi480ELi240EEvP7ap_uintILi256EEPKS1_S4_S4_S4_1_ce0 = grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_BIAS_STATS_fu_330_p_ZZ16UpConv_Fused_RowILi8ELi32ELi32ELi480ELi240EEvP7ap_uintILi256EEPKS1_S4_S4_S4_1_ce0;
+    if ((1'b1 == ap_CS_fsm_state44)) begin
+        p_ZZ16UpConv_Fused_RowILi8ELi32ELi32ELi480ELi240EEvP7ap_uintILi256EEPKS1_S4_S4_S4_1_ce0 = grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_PIXEL_NORM_fu_358_p_ZZ16UpConv_Fused_RowILi8ELi32ELi32ELi480ELi240EEvP7ap_uintILi256EEPKS1_S4_S4_S4_1_ce0;
+    end else if ((1'b1 == ap_CS_fsm_state32)) begin
+        p_ZZ16UpConv_Fused_RowILi8ELi32ELi32ELi480ELi240EEvP7ap_uintILi256EEPKS1_S4_S4_S4_1_ce0 = grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_PIXEL_STATS_fu_308_p_ZZ16UpConv_Fused_RowILi8ELi32ELi32ELi480ELi240EEvP7ap_uintILi256EEPKS1_S4_S4_S4_1_ce0;
     end else if ((1'b1 == ap_CS_fsm_state12)) begin
-        p_ZZ16UpConv_Fused_RowILi8ELi32ELi32ELi480ELi240EEvP7ap_uintILi256EEPKS1_S4_S4_S4_1_ce0 = grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_288_p_ZZ16UpConv_Fused_RowILi8ELi32ELi32ELi480ELi240EEvP7ap_uintILi256EEPKS1_S4_S4_S4_1_ce0;
+        p_ZZ16UpConv_Fused_RowILi8ELi32ELi32ELi480ELi240EEvP7ap_uintILi256EEPKS1_S4_S4_S4_1_ce0 = grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_250_p_ZZ16UpConv_Fused_RowILi8ELi32ELi32ELi480ELi240EEvP7ap_uintILi256EEPKS1_S4_S4_S4_1_ce0;
     end else if ((1'b1 == ap_CS_fsm_state2)) begin
-        p_ZZ16UpConv_Fused_RowILi8ELi32ELi32ELi480ELi240EEvP7ap_uintILi256EEPKS1_S4_S4_S4_1_ce0 = grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_RESET_ROW_ACC_fu_237_p_ZZ16UpConv_Fused_RowILi8ELi32ELi32ELi480ELi240EEvP7ap_uintILi256EEPKS1_S4_S4_S4_1_ce0;
+        p_ZZ16UpConv_Fused_RowILi8ELi32ELi32ELi480ELi240EEvP7ap_uintILi256EEPKS1_S4_S4_S4_1_ce0 = grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_RESET_ROW_ACC_fu_214_p_ZZ16UpConv_Fused_RowILi8ELi32ELi32ELi480ELi240EEvP7ap_uintILi256EEPKS1_S4_S4_S4_1_ce0;
     end else begin
         p_ZZ16UpConv_Fused_RowILi8ELi32ELi32ELi480ELi240EEvP7ap_uintILi256EEPKS1_S4_S4_S4_1_ce0 = 1'b0;
     end
 end
 
 always @ (*) begin
-    if ((1'b1 == ap_CS_fsm_state16)) begin
-        p_ZZ16UpConv_Fused_RowILi8ELi32ELi32ELi480ELi240EEvP7ap_uintILi256EEPKS1_S4_S4_S4_1_ce1 = grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_BIAS_STATS_fu_330_p_ZZ16UpConv_Fused_RowILi8ELi32ELi32ELi480ELi240EEvP7ap_uintILi256EEPKS1_S4_S4_S4_1_ce1;
-    end else if ((1'b1 == ap_CS_fsm_state2)) begin
-        p_ZZ16UpConv_Fused_RowILi8ELi32ELi32ELi480ELi240EEvP7ap_uintILi256EEPKS1_S4_S4_S4_1_ce1 = grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_RESET_ROW_ACC_fu_237_p_ZZ16UpConv_Fused_RowILi8ELi32ELi32ELi480ELi240EEvP7ap_uintILi256EEPKS1_S4_S4_S4_1_ce1;
+    if ((1'b1 == ap_CS_fsm_state32)) begin
+        p_ZZ16UpConv_Fused_RowILi8ELi32ELi32ELi480ELi240EEvP7ap_uintILi256EEPKS1_S4_S4_S4_1_ce1 = grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_PIXEL_STATS_fu_308_p_ZZ16UpConv_Fused_RowILi8ELi32ELi32ELi480ELi240EEvP7ap_uintILi256EEPKS1_S4_S4_S4_1_ce1;
+    end else if ((1'b1 == ap_CS_fsm_state12)) begin
+        p_ZZ16UpConv_Fused_RowILi8ELi32ELi32ELi480ELi240EEvP7ap_uintILi256EEPKS1_S4_S4_S4_1_ce1 = grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_250_p_ZZ16UpConv_Fused_RowILi8ELi32ELi32ELi480ELi240EEvP7ap_uintILi256EEPKS1_S4_S4_S4_1_ce1;
     end else begin
         p_ZZ16UpConv_Fused_RowILi8ELi32ELi32ELi480ELi240EEvP7ap_uintILi256EEPKS1_S4_S4_S4_1_ce1 = 1'b0;
     end
 end
 
 always @ (*) begin
-    if ((1'b1 == ap_CS_fsm_state16)) begin
-        p_ZZ16UpConv_Fused_RowILi8ELi32ELi32ELi480ELi240EEvP7ap_uintILi256EEPKS1_S4_S4_S4_1_d0 = grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_BIAS_STATS_fu_330_p_ZZ16UpConv_Fused_RowILi8ELi32ELi32ELi480ELi240EEvP7ap_uintILi256EEPKS1_S4_S4_S4_1_d0;
+    if ((1'b1 == ap_CS_fsm_state32)) begin
+        p_ZZ16UpConv_Fused_RowILi8ELi32ELi32ELi480ELi240EEvP7ap_uintILi256EEPKS1_S4_S4_S4_1_d0 = grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_PIXEL_STATS_fu_308_p_ZZ16UpConv_Fused_RowILi8ELi32ELi32ELi480ELi240EEvP7ap_uintILi256EEPKS1_S4_S4_S4_1_d0;
     end else if ((1'b1 == ap_CS_fsm_state12)) begin
-        p_ZZ16UpConv_Fused_RowILi8ELi32ELi32ELi480ELi240EEvP7ap_uintILi256EEPKS1_S4_S4_S4_1_d0 = grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_288_p_ZZ16UpConv_Fused_RowILi8ELi32ELi32ELi480ELi240EEvP7ap_uintILi256EEPKS1_S4_S4_S4_1_d0;
+        p_ZZ16UpConv_Fused_RowILi8ELi32ELi32ELi480ELi240EEvP7ap_uintILi256EEPKS1_S4_S4_S4_1_d0 = grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_250_p_ZZ16UpConv_Fused_RowILi8ELi32ELi32ELi480ELi240EEvP7ap_uintILi256EEPKS1_S4_S4_S4_1_d0;
     end else if ((1'b1 == ap_CS_fsm_state2)) begin
-        p_ZZ16UpConv_Fused_RowILi8ELi32ELi32ELi480ELi240EEvP7ap_uintILi256EEPKS1_S4_S4_S4_1_d0 = grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_RESET_ROW_ACC_fu_237_p_ZZ16UpConv_Fused_RowILi8ELi32ELi32ELi480ELi240EEvP7ap_uintILi256EEPKS1_S4_S4_S4_1_d0;
+        p_ZZ16UpConv_Fused_RowILi8ELi32ELi32ELi480ELi240EEvP7ap_uintILi256EEPKS1_S4_S4_S4_1_d0 = grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_RESET_ROW_ACC_fu_214_p_ZZ16UpConv_Fused_RowILi8ELi32ELi32ELi480ELi240EEvP7ap_uintILi256EEPKS1_S4_S4_S4_1_d0;
     end else begin
         p_ZZ16UpConv_Fused_RowILi8ELi32ELi32ELi480ELi240EEvP7ap_uintILi256EEPKS1_S4_S4_S4_1_d0 = 'bx;
     end
 end
 
 always @ (*) begin
-    if ((1'b1 == ap_CS_fsm_state16)) begin
-        p_ZZ16UpConv_Fused_RowILi8ELi32ELi32ELi480ELi240EEvP7ap_uintILi256EEPKS1_S4_S4_S4_1_we0 = grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_BIAS_STATS_fu_330_p_ZZ16UpConv_Fused_RowILi8ELi32ELi32ELi480ELi240EEvP7ap_uintILi256EEPKS1_S4_S4_S4_1_we0;
+    if ((1'b1 == ap_CS_fsm_state32)) begin
+        p_ZZ16UpConv_Fused_RowILi8ELi32ELi32ELi480ELi240EEvP7ap_uintILi256EEPKS1_S4_S4_S4_1_we0 = grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_PIXEL_STATS_fu_308_p_ZZ16UpConv_Fused_RowILi8ELi32ELi32ELi480ELi240EEvP7ap_uintILi256EEPKS1_S4_S4_S4_1_we0;
     end else if ((1'b1 == ap_CS_fsm_state12)) begin
-        p_ZZ16UpConv_Fused_RowILi8ELi32ELi32ELi480ELi240EEvP7ap_uintILi256EEPKS1_S4_S4_S4_1_we0 = grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_288_p_ZZ16UpConv_Fused_RowILi8ELi32ELi32ELi480ELi240EEvP7ap_uintILi256EEPKS1_S4_S4_S4_1_we0;
+        p_ZZ16UpConv_Fused_RowILi8ELi32ELi32ELi480ELi240EEvP7ap_uintILi256EEPKS1_S4_S4_S4_1_we0 = grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_250_p_ZZ16UpConv_Fused_RowILi8ELi32ELi32ELi480ELi240EEvP7ap_uintILi256EEPKS1_S4_S4_S4_1_we0;
     end else if ((1'b1 == ap_CS_fsm_state2)) begin
-        p_ZZ16UpConv_Fused_RowILi8ELi32ELi32ELi480ELi240EEvP7ap_uintILi256EEPKS1_S4_S4_S4_1_we0 = grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_RESET_ROW_ACC_fu_237_p_ZZ16UpConv_Fused_RowILi8ELi32ELi32ELi480ELi240EEvP7ap_uintILi256EEPKS1_S4_S4_S4_1_we0;
+        p_ZZ16UpConv_Fused_RowILi8ELi32ELi32ELi480ELi240EEvP7ap_uintILi256EEPKS1_S4_S4_S4_1_we0 = grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_RESET_ROW_ACC_fu_214_p_ZZ16UpConv_Fused_RowILi8ELi32ELi32ELi480ELi240EEvP7ap_uintILi256EEPKS1_S4_S4_S4_1_we0;
     end else begin
         p_ZZ16UpConv_Fused_RowILi8ELi32ELi32ELi480ELi240EEvP7ap_uintILi256EEPKS1_S4_S4_S4_1_we0 = 1'b0;
     end
 end
 
 always @ (*) begin
-    if ((1'b1 == ap_CS_fsm_state2)) begin
-        p_ZZ16UpConv_Fused_RowILi8ELi32ELi32ELi480ELi240EEvP7ap_uintILi256EEPKS1_S4_S4_S4_1_we1 = grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_RESET_ROW_ACC_fu_237_p_ZZ16UpConv_Fused_RowILi8ELi32ELi32ELi480ELi240EEvP7ap_uintILi256EEPKS1_S4_S4_S4_1_we1;
-    end else begin
-        p_ZZ16UpConv_Fused_RowILi8ELi32ELi32ELi480ELi240EEvP7ap_uintILi256EEPKS1_S4_S4_S4_1_we1 = 1'b0;
-    end
-end
-
-always @ (*) begin
-    if ((1'b1 == ap_CS_fsm_state136)) begin
-        p_ZZ16UpConv_Fused_RowILi8ELi32ELi32ELi480ELi240EEvP7ap_uintILi256EEPKS1_S4_S4_S4_2_address0 = grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_NORM_WRITE_fu_370_p_ZZ16UpConv_Fused_RowILi8ELi32ELi32ELi480ELi240EEvP7ap_uintILi256EEPKS1_S4_S4_S4_2_address0;
-    end else if ((1'b1 == ap_CS_fsm_state16)) begin
-        p_ZZ16UpConv_Fused_RowILi8ELi32ELi32ELi480ELi240EEvP7ap_uintILi256EEPKS1_S4_S4_S4_2_address0 = grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_BIAS_STATS_fu_330_p_ZZ16UpConv_Fused_RowILi8ELi32ELi32ELi480ELi240EEvP7ap_uintILi256EEPKS1_S4_S4_S4_2_address0;
+    if ((1'b1 == ap_CS_fsm_state44)) begin
+        p_ZZ16UpConv_Fused_RowILi8ELi32ELi32ELi480ELi240EEvP7ap_uintILi256EEPKS1_S4_S4_S4_2_address0 = grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_PIXEL_NORM_fu_358_p_ZZ16UpConv_Fused_RowILi8ELi32ELi32ELi480ELi240EEvP7ap_uintILi256EEPKS1_S4_S4_S4_2_address0;
+    end else if ((1'b1 == ap_CS_fsm_state32)) begin
+        p_ZZ16UpConv_Fused_RowILi8ELi32ELi32ELi480ELi240EEvP7ap_uintILi256EEPKS1_S4_S4_S4_2_address0 = grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_PIXEL_STATS_fu_308_p_ZZ16UpConv_Fused_RowILi8ELi32ELi32ELi480ELi240EEvP7ap_uintILi256EEPKS1_S4_S4_S4_2_address0;
     end else if ((1'b1 == ap_CS_fsm_state12)) begin
-        p_ZZ16UpConv_Fused_RowILi8ELi32ELi32ELi480ELi240EEvP7ap_uintILi256EEPKS1_S4_S4_S4_2_address0 = grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_288_p_ZZ16UpConv_Fused_RowILi8ELi32ELi32ELi480ELi240EEvP7ap_uintILi256EEPKS1_S4_S4_S4_2_address0;
+        p_ZZ16UpConv_Fused_RowILi8ELi32ELi32ELi480ELi240EEvP7ap_uintILi256EEPKS1_S4_S4_S4_2_address0 = grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_250_p_ZZ16UpConv_Fused_RowILi8ELi32ELi32ELi480ELi240EEvP7ap_uintILi256EEPKS1_S4_S4_S4_2_address0;
     end else if ((1'b1 == ap_CS_fsm_state2)) begin
-        p_ZZ16UpConv_Fused_RowILi8ELi32ELi32ELi480ELi240EEvP7ap_uintILi256EEPKS1_S4_S4_S4_2_address0 = grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_RESET_ROW_ACC_fu_237_p_ZZ16UpConv_Fused_RowILi8ELi32ELi32ELi480ELi240EEvP7ap_uintILi256EEPKS1_S4_S4_S4_2_address0;
+        p_ZZ16UpConv_Fused_RowILi8ELi32ELi32ELi480ELi240EEvP7ap_uintILi256EEPKS1_S4_S4_S4_2_address0 = grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_RESET_ROW_ACC_fu_214_p_ZZ16UpConv_Fused_RowILi8ELi32ELi32ELi480ELi240EEvP7ap_uintILi256EEPKS1_S4_S4_S4_2_address0;
     end else begin
         p_ZZ16UpConv_Fused_RowILi8ELi32ELi32ELi480ELi240EEvP7ap_uintILi256EEPKS1_S4_S4_S4_2_address0 = 'bx;
     end
 end
 
 always @ (*) begin
-    if ((1'b1 == ap_CS_fsm_state16)) begin
-        p_ZZ16UpConv_Fused_RowILi8ELi32ELi32ELi480ELi240EEvP7ap_uintILi256EEPKS1_S4_S4_S4_2_address1 = grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_BIAS_STATS_fu_330_p_ZZ16UpConv_Fused_RowILi8ELi32ELi32ELi480ELi240EEvP7ap_uintILi256EEPKS1_S4_S4_S4_2_address1;
-    end else if ((1'b1 == ap_CS_fsm_state2)) begin
-        p_ZZ16UpConv_Fused_RowILi8ELi32ELi32ELi480ELi240EEvP7ap_uintILi256EEPKS1_S4_S4_S4_2_address1 = grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_RESET_ROW_ACC_fu_237_p_ZZ16UpConv_Fused_RowILi8ELi32ELi32ELi480ELi240EEvP7ap_uintILi256EEPKS1_S4_S4_S4_2_address1;
+    if ((1'b1 == ap_CS_fsm_state32)) begin
+        p_ZZ16UpConv_Fused_RowILi8ELi32ELi32ELi480ELi240EEvP7ap_uintILi256EEPKS1_S4_S4_S4_2_address1 = grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_PIXEL_STATS_fu_308_p_ZZ16UpConv_Fused_RowILi8ELi32ELi32ELi480ELi240EEvP7ap_uintILi256EEPKS1_S4_S4_S4_2_address1;
+    end else if ((1'b1 == ap_CS_fsm_state12)) begin
+        p_ZZ16UpConv_Fused_RowILi8ELi32ELi32ELi480ELi240EEvP7ap_uintILi256EEPKS1_S4_S4_S4_2_address1 = grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_250_p_ZZ16UpConv_Fused_RowILi8ELi32ELi32ELi480ELi240EEvP7ap_uintILi256EEPKS1_S4_S4_S4_2_address1;
     end else begin
         p_ZZ16UpConv_Fused_RowILi8ELi32ELi32ELi480ELi240EEvP7ap_uintILi256EEPKS1_S4_S4_S4_2_address1 = 'bx;
     end
 end
 
 always @ (*) begin
-    if ((1'b1 == ap_CS_fsm_state136)) begin
-        p_ZZ16UpConv_Fused_RowILi8ELi32ELi32ELi480ELi240EEvP7ap_uintILi256EEPKS1_S4_S4_S4_2_ce0 = grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_NORM_WRITE_fu_370_p_ZZ16UpConv_Fused_RowILi8ELi32ELi32ELi480ELi240EEvP7ap_uintILi256EEPKS1_S4_S4_S4_2_ce0;
-    end else if ((1'b1 == ap_CS_fsm_state16)) begin
-        p_ZZ16UpConv_Fused_RowILi8ELi32ELi32ELi480ELi240EEvP7ap_uintILi256EEPKS1_S4_S4_S4_2_ce0 = grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_BIAS_STATS_fu_330_p_ZZ16UpConv_Fused_RowILi8ELi32ELi32ELi480ELi240EEvP7ap_uintILi256EEPKS1_S4_S4_S4_2_ce0;
+    if ((1'b1 == ap_CS_fsm_state44)) begin
+        p_ZZ16UpConv_Fused_RowILi8ELi32ELi32ELi480ELi240EEvP7ap_uintILi256EEPKS1_S4_S4_S4_2_ce0 = grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_PIXEL_NORM_fu_358_p_ZZ16UpConv_Fused_RowILi8ELi32ELi32ELi480ELi240EEvP7ap_uintILi256EEPKS1_S4_S4_S4_2_ce0;
+    end else if ((1'b1 == ap_CS_fsm_state32)) begin
+        p_ZZ16UpConv_Fused_RowILi8ELi32ELi32ELi480ELi240EEvP7ap_uintILi256EEPKS1_S4_S4_S4_2_ce0 = grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_PIXEL_STATS_fu_308_p_ZZ16UpConv_Fused_RowILi8ELi32ELi32ELi480ELi240EEvP7ap_uintILi256EEPKS1_S4_S4_S4_2_ce0;
     end else if ((1'b1 == ap_CS_fsm_state12)) begin
-        p_ZZ16UpConv_Fused_RowILi8ELi32ELi32ELi480ELi240EEvP7ap_uintILi256EEPKS1_S4_S4_S4_2_ce0 = grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_288_p_ZZ16UpConv_Fused_RowILi8ELi32ELi32ELi480ELi240EEvP7ap_uintILi256EEPKS1_S4_S4_S4_2_ce0;
+        p_ZZ16UpConv_Fused_RowILi8ELi32ELi32ELi480ELi240EEvP7ap_uintILi256EEPKS1_S4_S4_S4_2_ce0 = grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_250_p_ZZ16UpConv_Fused_RowILi8ELi32ELi32ELi480ELi240EEvP7ap_uintILi256EEPKS1_S4_S4_S4_2_ce0;
     end else if ((1'b1 == ap_CS_fsm_state2)) begin
-        p_ZZ16UpConv_Fused_RowILi8ELi32ELi32ELi480ELi240EEvP7ap_uintILi256EEPKS1_S4_S4_S4_2_ce0 = grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_RESET_ROW_ACC_fu_237_p_ZZ16UpConv_Fused_RowILi8ELi32ELi32ELi480ELi240EEvP7ap_uintILi256EEPKS1_S4_S4_S4_2_ce0;
+        p_ZZ16UpConv_Fused_RowILi8ELi32ELi32ELi480ELi240EEvP7ap_uintILi256EEPKS1_S4_S4_S4_2_ce0 = grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_RESET_ROW_ACC_fu_214_p_ZZ16UpConv_Fused_RowILi8ELi32ELi32ELi480ELi240EEvP7ap_uintILi256EEPKS1_S4_S4_S4_2_ce0;
     end else begin
         p_ZZ16UpConv_Fused_RowILi8ELi32ELi32ELi480ELi240EEvP7ap_uintILi256EEPKS1_S4_S4_S4_2_ce0 = 1'b0;
     end
 end
 
 always @ (*) begin
-    if ((1'b1 == ap_CS_fsm_state16)) begin
-        p_ZZ16UpConv_Fused_RowILi8ELi32ELi32ELi480ELi240EEvP7ap_uintILi256EEPKS1_S4_S4_S4_2_ce1 = grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_BIAS_STATS_fu_330_p_ZZ16UpConv_Fused_RowILi8ELi32ELi32ELi480ELi240EEvP7ap_uintILi256EEPKS1_S4_S4_S4_2_ce1;
-    end else if ((1'b1 == ap_CS_fsm_state2)) begin
-        p_ZZ16UpConv_Fused_RowILi8ELi32ELi32ELi480ELi240EEvP7ap_uintILi256EEPKS1_S4_S4_S4_2_ce1 = grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_RESET_ROW_ACC_fu_237_p_ZZ16UpConv_Fused_RowILi8ELi32ELi32ELi480ELi240EEvP7ap_uintILi256EEPKS1_S4_S4_S4_2_ce1;
+    if ((1'b1 == ap_CS_fsm_state32)) begin
+        p_ZZ16UpConv_Fused_RowILi8ELi32ELi32ELi480ELi240EEvP7ap_uintILi256EEPKS1_S4_S4_S4_2_ce1 = grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_PIXEL_STATS_fu_308_p_ZZ16UpConv_Fused_RowILi8ELi32ELi32ELi480ELi240EEvP7ap_uintILi256EEPKS1_S4_S4_S4_2_ce1;
+    end else if ((1'b1 == ap_CS_fsm_state12)) begin
+        p_ZZ16UpConv_Fused_RowILi8ELi32ELi32ELi480ELi240EEvP7ap_uintILi256EEPKS1_S4_S4_S4_2_ce1 = grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_250_p_ZZ16UpConv_Fused_RowILi8ELi32ELi32ELi480ELi240EEvP7ap_uintILi256EEPKS1_S4_S4_S4_2_ce1;
     end else begin
         p_ZZ16UpConv_Fused_RowILi8ELi32ELi32ELi480ELi240EEvP7ap_uintILi256EEPKS1_S4_S4_S4_2_ce1 = 1'b0;
     end
 end
 
 always @ (*) begin
-    if ((1'b1 == ap_CS_fsm_state16)) begin
-        p_ZZ16UpConv_Fused_RowILi8ELi32ELi32ELi480ELi240EEvP7ap_uintILi256EEPKS1_S4_S4_S4_2_d0 = grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_BIAS_STATS_fu_330_p_ZZ16UpConv_Fused_RowILi8ELi32ELi32ELi480ELi240EEvP7ap_uintILi256EEPKS1_S4_S4_S4_2_d0;
+    if ((1'b1 == ap_CS_fsm_state32)) begin
+        p_ZZ16UpConv_Fused_RowILi8ELi32ELi32ELi480ELi240EEvP7ap_uintILi256EEPKS1_S4_S4_S4_2_d0 = grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_PIXEL_STATS_fu_308_p_ZZ16UpConv_Fused_RowILi8ELi32ELi32ELi480ELi240EEvP7ap_uintILi256EEPKS1_S4_S4_S4_2_d0;
     end else if ((1'b1 == ap_CS_fsm_state12)) begin
-        p_ZZ16UpConv_Fused_RowILi8ELi32ELi32ELi480ELi240EEvP7ap_uintILi256EEPKS1_S4_S4_S4_2_d0 = grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_288_p_ZZ16UpConv_Fused_RowILi8ELi32ELi32ELi480ELi240EEvP7ap_uintILi256EEPKS1_S4_S4_S4_2_d0;
+        p_ZZ16UpConv_Fused_RowILi8ELi32ELi32ELi480ELi240EEvP7ap_uintILi256EEPKS1_S4_S4_S4_2_d0 = grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_250_p_ZZ16UpConv_Fused_RowILi8ELi32ELi32ELi480ELi240EEvP7ap_uintILi256EEPKS1_S4_S4_S4_2_d0;
     end else if ((1'b1 == ap_CS_fsm_state2)) begin
-        p_ZZ16UpConv_Fused_RowILi8ELi32ELi32ELi480ELi240EEvP7ap_uintILi256EEPKS1_S4_S4_S4_2_d0 = grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_RESET_ROW_ACC_fu_237_p_ZZ16UpConv_Fused_RowILi8ELi32ELi32ELi480ELi240EEvP7ap_uintILi256EEPKS1_S4_S4_S4_2_d0;
+        p_ZZ16UpConv_Fused_RowILi8ELi32ELi32ELi480ELi240EEvP7ap_uintILi256EEPKS1_S4_S4_S4_2_d0 = grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_RESET_ROW_ACC_fu_214_p_ZZ16UpConv_Fused_RowILi8ELi32ELi32ELi480ELi240EEvP7ap_uintILi256EEPKS1_S4_S4_S4_2_d0;
     end else begin
         p_ZZ16UpConv_Fused_RowILi8ELi32ELi32ELi480ELi240EEvP7ap_uintILi256EEPKS1_S4_S4_S4_2_d0 = 'bx;
     end
 end
 
 always @ (*) begin
-    if ((1'b1 == ap_CS_fsm_state16)) begin
-        p_ZZ16UpConv_Fused_RowILi8ELi32ELi32ELi480ELi240EEvP7ap_uintILi256EEPKS1_S4_S4_S4_2_we0 = grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_BIAS_STATS_fu_330_p_ZZ16UpConv_Fused_RowILi8ELi32ELi32ELi480ELi240EEvP7ap_uintILi256EEPKS1_S4_S4_S4_2_we0;
+    if ((1'b1 == ap_CS_fsm_state32)) begin
+        p_ZZ16UpConv_Fused_RowILi8ELi32ELi32ELi480ELi240EEvP7ap_uintILi256EEPKS1_S4_S4_S4_2_we0 = grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_PIXEL_STATS_fu_308_p_ZZ16UpConv_Fused_RowILi8ELi32ELi32ELi480ELi240EEvP7ap_uintILi256EEPKS1_S4_S4_S4_2_we0;
     end else if ((1'b1 == ap_CS_fsm_state12)) begin
-        p_ZZ16UpConv_Fused_RowILi8ELi32ELi32ELi480ELi240EEvP7ap_uintILi256EEPKS1_S4_S4_S4_2_we0 = grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_288_p_ZZ16UpConv_Fused_RowILi8ELi32ELi32ELi480ELi240EEvP7ap_uintILi256EEPKS1_S4_S4_S4_2_we0;
+        p_ZZ16UpConv_Fused_RowILi8ELi32ELi32ELi480ELi240EEvP7ap_uintILi256EEPKS1_S4_S4_S4_2_we0 = grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_250_p_ZZ16UpConv_Fused_RowILi8ELi32ELi32ELi480ELi240EEvP7ap_uintILi256EEPKS1_S4_S4_S4_2_we0;
     end else if ((1'b1 == ap_CS_fsm_state2)) begin
-        p_ZZ16UpConv_Fused_RowILi8ELi32ELi32ELi480ELi240EEvP7ap_uintILi256EEPKS1_S4_S4_S4_2_we0 = grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_RESET_ROW_ACC_fu_237_p_ZZ16UpConv_Fused_RowILi8ELi32ELi32ELi480ELi240EEvP7ap_uintILi256EEPKS1_S4_S4_S4_2_we0;
+        p_ZZ16UpConv_Fused_RowILi8ELi32ELi32ELi480ELi240EEvP7ap_uintILi256EEPKS1_S4_S4_S4_2_we0 = grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_RESET_ROW_ACC_fu_214_p_ZZ16UpConv_Fused_RowILi8ELi32ELi32ELi480ELi240EEvP7ap_uintILi256EEPKS1_S4_S4_S4_2_we0;
     end else begin
         p_ZZ16UpConv_Fused_RowILi8ELi32ELi32ELi480ELi240EEvP7ap_uintILi256EEPKS1_S4_S4_S4_2_we0 = 1'b0;
     end
 end
 
 always @ (*) begin
-    if ((1'b1 == ap_CS_fsm_state2)) begin
-        p_ZZ16UpConv_Fused_RowILi8ELi32ELi32ELi480ELi240EEvP7ap_uintILi256EEPKS1_S4_S4_S4_2_we1 = grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_RESET_ROW_ACC_fu_237_p_ZZ16UpConv_Fused_RowILi8ELi32ELi32ELi480ELi240EEvP7ap_uintILi256EEPKS1_S4_S4_S4_2_we1;
-    end else begin
-        p_ZZ16UpConv_Fused_RowILi8ELi32ELi32ELi480ELi240EEvP7ap_uintILi256EEPKS1_S4_S4_S4_2_we1 = 1'b0;
-    end
-end
-
-always @ (*) begin
-    if ((1'b1 == ap_CS_fsm_state136)) begin
-        p_ZZ16UpConv_Fused_RowILi8ELi32ELi32ELi480ELi240EEvP7ap_uintILi256EEPKS1_S4_S4_S4_3_address0 = grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_NORM_WRITE_fu_370_p_ZZ16UpConv_Fused_RowILi8ELi32ELi32ELi480ELi240EEvP7ap_uintILi256EEPKS1_S4_S4_S4_3_address0;
-    end else if ((1'b1 == ap_CS_fsm_state16)) begin
-        p_ZZ16UpConv_Fused_RowILi8ELi32ELi32ELi480ELi240EEvP7ap_uintILi256EEPKS1_S4_S4_S4_3_address0 = grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_BIAS_STATS_fu_330_p_ZZ16UpConv_Fused_RowILi8ELi32ELi32ELi480ELi240EEvP7ap_uintILi256EEPKS1_S4_S4_S4_3_address0;
+    if ((1'b1 == ap_CS_fsm_state44)) begin
+        p_ZZ16UpConv_Fused_RowILi8ELi32ELi32ELi480ELi240EEvP7ap_uintILi256EEPKS1_S4_S4_S4_3_address0 = grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_PIXEL_NORM_fu_358_p_ZZ16UpConv_Fused_RowILi8ELi32ELi32ELi480ELi240EEvP7ap_uintILi256EEPKS1_S4_S4_S4_3_address0;
+    end else if ((1'b1 == ap_CS_fsm_state32)) begin
+        p_ZZ16UpConv_Fused_RowILi8ELi32ELi32ELi480ELi240EEvP7ap_uintILi256EEPKS1_S4_S4_S4_3_address0 = grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_PIXEL_STATS_fu_308_p_ZZ16UpConv_Fused_RowILi8ELi32ELi32ELi480ELi240EEvP7ap_uintILi256EEPKS1_S4_S4_S4_3_address0;
     end else if ((1'b1 == ap_CS_fsm_state12)) begin
-        p_ZZ16UpConv_Fused_RowILi8ELi32ELi32ELi480ELi240EEvP7ap_uintILi256EEPKS1_S4_S4_S4_3_address0 = grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_288_p_ZZ16UpConv_Fused_RowILi8ELi32ELi32ELi480ELi240EEvP7ap_uintILi256EEPKS1_S4_S4_S4_3_address0;
+        p_ZZ16UpConv_Fused_RowILi8ELi32ELi32ELi480ELi240EEvP7ap_uintILi256EEPKS1_S4_S4_S4_3_address0 = grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_250_p_ZZ16UpConv_Fused_RowILi8ELi32ELi32ELi480ELi240EEvP7ap_uintILi256EEPKS1_S4_S4_S4_3_address0;
     end else if ((1'b1 == ap_CS_fsm_state2)) begin
-        p_ZZ16UpConv_Fused_RowILi8ELi32ELi32ELi480ELi240EEvP7ap_uintILi256EEPKS1_S4_S4_S4_3_address0 = grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_RESET_ROW_ACC_fu_237_p_ZZ16UpConv_Fused_RowILi8ELi32ELi32ELi480ELi240EEvP7ap_uintILi256EEPKS1_S4_S4_S4_3_address0;
+        p_ZZ16UpConv_Fused_RowILi8ELi32ELi32ELi480ELi240EEvP7ap_uintILi256EEPKS1_S4_S4_S4_3_address0 = grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_RESET_ROW_ACC_fu_214_p_ZZ16UpConv_Fused_RowILi8ELi32ELi32ELi480ELi240EEvP7ap_uintILi256EEPKS1_S4_S4_S4_3_address0;
     end else begin
         p_ZZ16UpConv_Fused_RowILi8ELi32ELi32ELi480ELi240EEvP7ap_uintILi256EEPKS1_S4_S4_S4_3_address0 = 'bx;
     end
 end
 
 always @ (*) begin
-    if ((1'b1 == ap_CS_fsm_state16)) begin
-        p_ZZ16UpConv_Fused_RowILi8ELi32ELi32ELi480ELi240EEvP7ap_uintILi256EEPKS1_S4_S4_S4_3_address1 = grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_BIAS_STATS_fu_330_p_ZZ16UpConv_Fused_RowILi8ELi32ELi32ELi480ELi240EEvP7ap_uintILi256EEPKS1_S4_S4_S4_3_address1;
-    end else if ((1'b1 == ap_CS_fsm_state2)) begin
-        p_ZZ16UpConv_Fused_RowILi8ELi32ELi32ELi480ELi240EEvP7ap_uintILi256EEPKS1_S4_S4_S4_3_address1 = grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_RESET_ROW_ACC_fu_237_p_ZZ16UpConv_Fused_RowILi8ELi32ELi32ELi480ELi240EEvP7ap_uintILi256EEPKS1_S4_S4_S4_3_address1;
+    if ((1'b1 == ap_CS_fsm_state32)) begin
+        p_ZZ16UpConv_Fused_RowILi8ELi32ELi32ELi480ELi240EEvP7ap_uintILi256EEPKS1_S4_S4_S4_3_address1 = grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_PIXEL_STATS_fu_308_p_ZZ16UpConv_Fused_RowILi8ELi32ELi32ELi480ELi240EEvP7ap_uintILi256EEPKS1_S4_S4_S4_3_address1;
+    end else if ((1'b1 == ap_CS_fsm_state12)) begin
+        p_ZZ16UpConv_Fused_RowILi8ELi32ELi32ELi480ELi240EEvP7ap_uintILi256EEPKS1_S4_S4_S4_3_address1 = grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_250_p_ZZ16UpConv_Fused_RowILi8ELi32ELi32ELi480ELi240EEvP7ap_uintILi256EEPKS1_S4_S4_S4_3_address1;
     end else begin
         p_ZZ16UpConv_Fused_RowILi8ELi32ELi32ELi480ELi240EEvP7ap_uintILi256EEPKS1_S4_S4_S4_3_address1 = 'bx;
     end
 end
 
 always @ (*) begin
-    if ((1'b1 == ap_CS_fsm_state136)) begin
-        p_ZZ16UpConv_Fused_RowILi8ELi32ELi32ELi480ELi240EEvP7ap_uintILi256EEPKS1_S4_S4_S4_3_ce0 = grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_NORM_WRITE_fu_370_p_ZZ16UpConv_Fused_RowILi8ELi32ELi32ELi480ELi240EEvP7ap_uintILi256EEPKS1_S4_S4_S4_3_ce0;
-    end else if ((1'b1 == ap_CS_fsm_state16)) begin
-        p_ZZ16UpConv_Fused_RowILi8ELi32ELi32ELi480ELi240EEvP7ap_uintILi256EEPKS1_S4_S4_S4_3_ce0 = grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_BIAS_STATS_fu_330_p_ZZ16UpConv_Fused_RowILi8ELi32ELi32ELi480ELi240EEvP7ap_uintILi256EEPKS1_S4_S4_S4_3_ce0;
+    if ((1'b1 == ap_CS_fsm_state44)) begin
+        p_ZZ16UpConv_Fused_RowILi8ELi32ELi32ELi480ELi240EEvP7ap_uintILi256EEPKS1_S4_S4_S4_3_ce0 = grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_PIXEL_NORM_fu_358_p_ZZ16UpConv_Fused_RowILi8ELi32ELi32ELi480ELi240EEvP7ap_uintILi256EEPKS1_S4_S4_S4_3_ce0;
+    end else if ((1'b1 == ap_CS_fsm_state32)) begin
+        p_ZZ16UpConv_Fused_RowILi8ELi32ELi32ELi480ELi240EEvP7ap_uintILi256EEPKS1_S4_S4_S4_3_ce0 = grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_PIXEL_STATS_fu_308_p_ZZ16UpConv_Fused_RowILi8ELi32ELi32ELi480ELi240EEvP7ap_uintILi256EEPKS1_S4_S4_S4_3_ce0;
     end else if ((1'b1 == ap_CS_fsm_state12)) begin
-        p_ZZ16UpConv_Fused_RowILi8ELi32ELi32ELi480ELi240EEvP7ap_uintILi256EEPKS1_S4_S4_S4_3_ce0 = grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_288_p_ZZ16UpConv_Fused_RowILi8ELi32ELi32ELi480ELi240EEvP7ap_uintILi256EEPKS1_S4_S4_S4_3_ce0;
+        p_ZZ16UpConv_Fused_RowILi8ELi32ELi32ELi480ELi240EEvP7ap_uintILi256EEPKS1_S4_S4_S4_3_ce0 = grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_250_p_ZZ16UpConv_Fused_RowILi8ELi32ELi32ELi480ELi240EEvP7ap_uintILi256EEPKS1_S4_S4_S4_3_ce0;
     end else if ((1'b1 == ap_CS_fsm_state2)) begin
-        p_ZZ16UpConv_Fused_RowILi8ELi32ELi32ELi480ELi240EEvP7ap_uintILi256EEPKS1_S4_S4_S4_3_ce0 = grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_RESET_ROW_ACC_fu_237_p_ZZ16UpConv_Fused_RowILi8ELi32ELi32ELi480ELi240EEvP7ap_uintILi256EEPKS1_S4_S4_S4_3_ce0;
+        p_ZZ16UpConv_Fused_RowILi8ELi32ELi32ELi480ELi240EEvP7ap_uintILi256EEPKS1_S4_S4_S4_3_ce0 = grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_RESET_ROW_ACC_fu_214_p_ZZ16UpConv_Fused_RowILi8ELi32ELi32ELi480ELi240EEvP7ap_uintILi256EEPKS1_S4_S4_S4_3_ce0;
     end else begin
         p_ZZ16UpConv_Fused_RowILi8ELi32ELi32ELi480ELi240EEvP7ap_uintILi256EEPKS1_S4_S4_S4_3_ce0 = 1'b0;
     end
 end
 
 always @ (*) begin
-    if ((1'b1 == ap_CS_fsm_state16)) begin
-        p_ZZ16UpConv_Fused_RowILi8ELi32ELi32ELi480ELi240EEvP7ap_uintILi256EEPKS1_S4_S4_S4_3_ce1 = grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_BIAS_STATS_fu_330_p_ZZ16UpConv_Fused_RowILi8ELi32ELi32ELi480ELi240EEvP7ap_uintILi256EEPKS1_S4_S4_S4_3_ce1;
-    end else if ((1'b1 == ap_CS_fsm_state2)) begin
-        p_ZZ16UpConv_Fused_RowILi8ELi32ELi32ELi480ELi240EEvP7ap_uintILi256EEPKS1_S4_S4_S4_3_ce1 = grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_RESET_ROW_ACC_fu_237_p_ZZ16UpConv_Fused_RowILi8ELi32ELi32ELi480ELi240EEvP7ap_uintILi256EEPKS1_S4_S4_S4_3_ce1;
+    if ((1'b1 == ap_CS_fsm_state32)) begin
+        p_ZZ16UpConv_Fused_RowILi8ELi32ELi32ELi480ELi240EEvP7ap_uintILi256EEPKS1_S4_S4_S4_3_ce1 = grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_PIXEL_STATS_fu_308_p_ZZ16UpConv_Fused_RowILi8ELi32ELi32ELi480ELi240EEvP7ap_uintILi256EEPKS1_S4_S4_S4_3_ce1;
+    end else if ((1'b1 == ap_CS_fsm_state12)) begin
+        p_ZZ16UpConv_Fused_RowILi8ELi32ELi32ELi480ELi240EEvP7ap_uintILi256EEPKS1_S4_S4_S4_3_ce1 = grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_250_p_ZZ16UpConv_Fused_RowILi8ELi32ELi32ELi480ELi240EEvP7ap_uintILi256EEPKS1_S4_S4_S4_3_ce1;
     end else begin
         p_ZZ16UpConv_Fused_RowILi8ELi32ELi32ELi480ELi240EEvP7ap_uintILi256EEPKS1_S4_S4_S4_3_ce1 = 1'b0;
     end
 end
 
 always @ (*) begin
-    if ((1'b1 == ap_CS_fsm_state16)) begin
-        p_ZZ16UpConv_Fused_RowILi8ELi32ELi32ELi480ELi240EEvP7ap_uintILi256EEPKS1_S4_S4_S4_3_d0 = grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_BIAS_STATS_fu_330_p_ZZ16UpConv_Fused_RowILi8ELi32ELi32ELi480ELi240EEvP7ap_uintILi256EEPKS1_S4_S4_S4_3_d0;
+    if ((1'b1 == ap_CS_fsm_state32)) begin
+        p_ZZ16UpConv_Fused_RowILi8ELi32ELi32ELi480ELi240EEvP7ap_uintILi256EEPKS1_S4_S4_S4_3_d0 = grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_PIXEL_STATS_fu_308_p_ZZ16UpConv_Fused_RowILi8ELi32ELi32ELi480ELi240EEvP7ap_uintILi256EEPKS1_S4_S4_S4_3_d0;
     end else if ((1'b1 == ap_CS_fsm_state12)) begin
-        p_ZZ16UpConv_Fused_RowILi8ELi32ELi32ELi480ELi240EEvP7ap_uintILi256EEPKS1_S4_S4_S4_3_d0 = grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_288_p_ZZ16UpConv_Fused_RowILi8ELi32ELi32ELi480ELi240EEvP7ap_uintILi256EEPKS1_S4_S4_S4_3_d0;
+        p_ZZ16UpConv_Fused_RowILi8ELi32ELi32ELi480ELi240EEvP7ap_uintILi256EEPKS1_S4_S4_S4_3_d0 = grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_250_p_ZZ16UpConv_Fused_RowILi8ELi32ELi32ELi480ELi240EEvP7ap_uintILi256EEPKS1_S4_S4_S4_3_d0;
     end else if ((1'b1 == ap_CS_fsm_state2)) begin
-        p_ZZ16UpConv_Fused_RowILi8ELi32ELi32ELi480ELi240EEvP7ap_uintILi256EEPKS1_S4_S4_S4_3_d0 = grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_RESET_ROW_ACC_fu_237_p_ZZ16UpConv_Fused_RowILi8ELi32ELi32ELi480ELi240EEvP7ap_uintILi256EEPKS1_S4_S4_S4_3_d0;
+        p_ZZ16UpConv_Fused_RowILi8ELi32ELi32ELi480ELi240EEvP7ap_uintILi256EEPKS1_S4_S4_S4_3_d0 = grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_RESET_ROW_ACC_fu_214_p_ZZ16UpConv_Fused_RowILi8ELi32ELi32ELi480ELi240EEvP7ap_uintILi256EEPKS1_S4_S4_S4_3_d0;
     end else begin
         p_ZZ16UpConv_Fused_RowILi8ELi32ELi32ELi480ELi240EEvP7ap_uintILi256EEPKS1_S4_S4_S4_3_d0 = 'bx;
     end
 end
 
 always @ (*) begin
-    if ((1'b1 == ap_CS_fsm_state16)) begin
-        p_ZZ16UpConv_Fused_RowILi8ELi32ELi32ELi480ELi240EEvP7ap_uintILi256EEPKS1_S4_S4_S4_3_we0 = grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_BIAS_STATS_fu_330_p_ZZ16UpConv_Fused_RowILi8ELi32ELi32ELi480ELi240EEvP7ap_uintILi256EEPKS1_S4_S4_S4_3_we0;
+    if ((1'b1 == ap_CS_fsm_state32)) begin
+        p_ZZ16UpConv_Fused_RowILi8ELi32ELi32ELi480ELi240EEvP7ap_uintILi256EEPKS1_S4_S4_S4_3_we0 = grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_PIXEL_STATS_fu_308_p_ZZ16UpConv_Fused_RowILi8ELi32ELi32ELi480ELi240EEvP7ap_uintILi256EEPKS1_S4_S4_S4_3_we0;
     end else if ((1'b1 == ap_CS_fsm_state12)) begin
-        p_ZZ16UpConv_Fused_RowILi8ELi32ELi32ELi480ELi240EEvP7ap_uintILi256EEPKS1_S4_S4_S4_3_we0 = grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_288_p_ZZ16UpConv_Fused_RowILi8ELi32ELi32ELi480ELi240EEvP7ap_uintILi256EEPKS1_S4_S4_S4_3_we0;
+        p_ZZ16UpConv_Fused_RowILi8ELi32ELi32ELi480ELi240EEvP7ap_uintILi256EEPKS1_S4_S4_S4_3_we0 = grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_250_p_ZZ16UpConv_Fused_RowILi8ELi32ELi32ELi480ELi240EEvP7ap_uintILi256EEPKS1_S4_S4_S4_3_we0;
     end else if ((1'b1 == ap_CS_fsm_state2)) begin
-        p_ZZ16UpConv_Fused_RowILi8ELi32ELi32ELi480ELi240EEvP7ap_uintILi256EEPKS1_S4_S4_S4_3_we0 = grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_RESET_ROW_ACC_fu_237_p_ZZ16UpConv_Fused_RowILi8ELi32ELi32ELi480ELi240EEvP7ap_uintILi256EEPKS1_S4_S4_S4_3_we0;
+        p_ZZ16UpConv_Fused_RowILi8ELi32ELi32ELi480ELi240EEvP7ap_uintILi256EEPKS1_S4_S4_S4_3_we0 = grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_RESET_ROW_ACC_fu_214_p_ZZ16UpConv_Fused_RowILi8ELi32ELi32ELi480ELi240EEvP7ap_uintILi256EEPKS1_S4_S4_S4_3_we0;
     end else begin
         p_ZZ16UpConv_Fused_RowILi8ELi32ELi32ELi480ELi240EEvP7ap_uintILi256EEPKS1_S4_S4_S4_3_we0 = 1'b0;
     end
 end
 
 always @ (*) begin
-    if ((1'b1 == ap_CS_fsm_state2)) begin
-        p_ZZ16UpConv_Fused_RowILi8ELi32ELi32ELi480ELi240EEvP7ap_uintILi256EEPKS1_S4_S4_S4_3_we1 = grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_RESET_ROW_ACC_fu_237_p_ZZ16UpConv_Fused_RowILi8ELi32ELi32ELi480ELi240EEvP7ap_uintILi256EEPKS1_S4_S4_S4_3_we1;
-    end else begin
-        p_ZZ16UpConv_Fused_RowILi8ELi32ELi32ELi480ELi240EEvP7ap_uintILi256EEPKS1_S4_S4_S4_3_we1 = 1'b0;
-    end
-end
-
-always @ (*) begin
-    if ((1'b1 == ap_CS_fsm_state136)) begin
-        p_ZZ16UpConv_Fused_RowILi8ELi32ELi32ELi480ELi240EEvP7ap_uintILi256EEPKS1_S4_S4_S4_4_address0 = grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_NORM_WRITE_fu_370_p_ZZ16UpConv_Fused_RowILi8ELi32ELi32ELi480ELi240EEvP7ap_uintILi256EEPKS1_S4_S4_S4_4_address0;
-    end else if ((1'b1 == ap_CS_fsm_state16)) begin
-        p_ZZ16UpConv_Fused_RowILi8ELi32ELi32ELi480ELi240EEvP7ap_uintILi256EEPKS1_S4_S4_S4_4_address0 = grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_BIAS_STATS_fu_330_p_ZZ16UpConv_Fused_RowILi8ELi32ELi32ELi480ELi240EEvP7ap_uintILi256EEPKS1_S4_S4_S4_4_address0;
+    if ((1'b1 == ap_CS_fsm_state44)) begin
+        p_ZZ16UpConv_Fused_RowILi8ELi32ELi32ELi480ELi240EEvP7ap_uintILi256EEPKS1_S4_S4_S4_4_address0 = grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_PIXEL_NORM_fu_358_p_ZZ16UpConv_Fused_RowILi8ELi32ELi32ELi480ELi240EEvP7ap_uintILi256EEPKS1_S4_S4_S4_4_address0;
+    end else if ((1'b1 == ap_CS_fsm_state32)) begin
+        p_ZZ16UpConv_Fused_RowILi8ELi32ELi32ELi480ELi240EEvP7ap_uintILi256EEPKS1_S4_S4_S4_4_address0 = grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_PIXEL_STATS_fu_308_p_ZZ16UpConv_Fused_RowILi8ELi32ELi32ELi480ELi240EEvP7ap_uintILi256EEPKS1_S4_S4_S4_4_address0;
     end else if ((1'b1 == ap_CS_fsm_state12)) begin
-        p_ZZ16UpConv_Fused_RowILi8ELi32ELi32ELi480ELi240EEvP7ap_uintILi256EEPKS1_S4_S4_S4_4_address0 = grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_288_p_ZZ16UpConv_Fused_RowILi8ELi32ELi32ELi480ELi240EEvP7ap_uintILi256EEPKS1_S4_S4_S4_4_address0;
+        p_ZZ16UpConv_Fused_RowILi8ELi32ELi32ELi480ELi240EEvP7ap_uintILi256EEPKS1_S4_S4_S4_4_address0 = grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_250_p_ZZ16UpConv_Fused_RowILi8ELi32ELi32ELi480ELi240EEvP7ap_uintILi256EEPKS1_S4_S4_S4_4_address0;
     end else if ((1'b1 == ap_CS_fsm_state2)) begin
-        p_ZZ16UpConv_Fused_RowILi8ELi32ELi32ELi480ELi240EEvP7ap_uintILi256EEPKS1_S4_S4_S4_4_address0 = grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_RESET_ROW_ACC_fu_237_p_ZZ16UpConv_Fused_RowILi8ELi32ELi32ELi480ELi240EEvP7ap_uintILi256EEPKS1_S4_S4_S4_4_address0;
+        p_ZZ16UpConv_Fused_RowILi8ELi32ELi32ELi480ELi240EEvP7ap_uintILi256EEPKS1_S4_S4_S4_4_address0 = grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_RESET_ROW_ACC_fu_214_p_ZZ16UpConv_Fused_RowILi8ELi32ELi32ELi480ELi240EEvP7ap_uintILi256EEPKS1_S4_S4_S4_4_address0;
     end else begin
         p_ZZ16UpConv_Fused_RowILi8ELi32ELi32ELi480ELi240EEvP7ap_uintILi256EEPKS1_S4_S4_S4_4_address0 = 'bx;
     end
 end
 
 always @ (*) begin
-    if ((1'b1 == ap_CS_fsm_state16)) begin
-        p_ZZ16UpConv_Fused_RowILi8ELi32ELi32ELi480ELi240EEvP7ap_uintILi256EEPKS1_S4_S4_S4_4_address1 = grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_BIAS_STATS_fu_330_p_ZZ16UpConv_Fused_RowILi8ELi32ELi32ELi480ELi240EEvP7ap_uintILi256EEPKS1_S4_S4_S4_4_address1;
-    end else if ((1'b1 == ap_CS_fsm_state2)) begin
-        p_ZZ16UpConv_Fused_RowILi8ELi32ELi32ELi480ELi240EEvP7ap_uintILi256EEPKS1_S4_S4_S4_4_address1 = grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_RESET_ROW_ACC_fu_237_p_ZZ16UpConv_Fused_RowILi8ELi32ELi32ELi480ELi240EEvP7ap_uintILi256EEPKS1_S4_S4_S4_4_address1;
+    if ((1'b1 == ap_CS_fsm_state32)) begin
+        p_ZZ16UpConv_Fused_RowILi8ELi32ELi32ELi480ELi240EEvP7ap_uintILi256EEPKS1_S4_S4_S4_4_address1 = grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_PIXEL_STATS_fu_308_p_ZZ16UpConv_Fused_RowILi8ELi32ELi32ELi480ELi240EEvP7ap_uintILi256EEPKS1_S4_S4_S4_4_address1;
+    end else if ((1'b1 == ap_CS_fsm_state12)) begin
+        p_ZZ16UpConv_Fused_RowILi8ELi32ELi32ELi480ELi240EEvP7ap_uintILi256EEPKS1_S4_S4_S4_4_address1 = grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_250_p_ZZ16UpConv_Fused_RowILi8ELi32ELi32ELi480ELi240EEvP7ap_uintILi256EEPKS1_S4_S4_S4_4_address1;
     end else begin
         p_ZZ16UpConv_Fused_RowILi8ELi32ELi32ELi480ELi240EEvP7ap_uintILi256EEPKS1_S4_S4_S4_4_address1 = 'bx;
     end
 end
 
 always @ (*) begin
-    if ((1'b1 == ap_CS_fsm_state136)) begin
-        p_ZZ16UpConv_Fused_RowILi8ELi32ELi32ELi480ELi240EEvP7ap_uintILi256EEPKS1_S4_S4_S4_4_ce0 = grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_NORM_WRITE_fu_370_p_ZZ16UpConv_Fused_RowILi8ELi32ELi32ELi480ELi240EEvP7ap_uintILi256EEPKS1_S4_S4_S4_4_ce0;
-    end else if ((1'b1 == ap_CS_fsm_state16)) begin
-        p_ZZ16UpConv_Fused_RowILi8ELi32ELi32ELi480ELi240EEvP7ap_uintILi256EEPKS1_S4_S4_S4_4_ce0 = grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_BIAS_STATS_fu_330_p_ZZ16UpConv_Fused_RowILi8ELi32ELi32ELi480ELi240EEvP7ap_uintILi256EEPKS1_S4_S4_S4_4_ce0;
+    if ((1'b1 == ap_CS_fsm_state44)) begin
+        p_ZZ16UpConv_Fused_RowILi8ELi32ELi32ELi480ELi240EEvP7ap_uintILi256EEPKS1_S4_S4_S4_4_ce0 = grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_PIXEL_NORM_fu_358_p_ZZ16UpConv_Fused_RowILi8ELi32ELi32ELi480ELi240EEvP7ap_uintILi256EEPKS1_S4_S4_S4_4_ce0;
+    end else if ((1'b1 == ap_CS_fsm_state32)) begin
+        p_ZZ16UpConv_Fused_RowILi8ELi32ELi32ELi480ELi240EEvP7ap_uintILi256EEPKS1_S4_S4_S4_4_ce0 = grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_PIXEL_STATS_fu_308_p_ZZ16UpConv_Fused_RowILi8ELi32ELi32ELi480ELi240EEvP7ap_uintILi256EEPKS1_S4_S4_S4_4_ce0;
     end else if ((1'b1 == ap_CS_fsm_state12)) begin
-        p_ZZ16UpConv_Fused_RowILi8ELi32ELi32ELi480ELi240EEvP7ap_uintILi256EEPKS1_S4_S4_S4_4_ce0 = grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_288_p_ZZ16UpConv_Fused_RowILi8ELi32ELi32ELi480ELi240EEvP7ap_uintILi256EEPKS1_S4_S4_S4_4_ce0;
+        p_ZZ16UpConv_Fused_RowILi8ELi32ELi32ELi480ELi240EEvP7ap_uintILi256EEPKS1_S4_S4_S4_4_ce0 = grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_250_p_ZZ16UpConv_Fused_RowILi8ELi32ELi32ELi480ELi240EEvP7ap_uintILi256EEPKS1_S4_S4_S4_4_ce0;
     end else if ((1'b1 == ap_CS_fsm_state2)) begin
-        p_ZZ16UpConv_Fused_RowILi8ELi32ELi32ELi480ELi240EEvP7ap_uintILi256EEPKS1_S4_S4_S4_4_ce0 = grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_RESET_ROW_ACC_fu_237_p_ZZ16UpConv_Fused_RowILi8ELi32ELi32ELi480ELi240EEvP7ap_uintILi256EEPKS1_S4_S4_S4_4_ce0;
+        p_ZZ16UpConv_Fused_RowILi8ELi32ELi32ELi480ELi240EEvP7ap_uintILi256EEPKS1_S4_S4_S4_4_ce0 = grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_RESET_ROW_ACC_fu_214_p_ZZ16UpConv_Fused_RowILi8ELi32ELi32ELi480ELi240EEvP7ap_uintILi256EEPKS1_S4_S4_S4_4_ce0;
     end else begin
         p_ZZ16UpConv_Fused_RowILi8ELi32ELi32ELi480ELi240EEvP7ap_uintILi256EEPKS1_S4_S4_S4_4_ce0 = 1'b0;
     end
 end
 
 always @ (*) begin
-    if ((1'b1 == ap_CS_fsm_state16)) begin
-        p_ZZ16UpConv_Fused_RowILi8ELi32ELi32ELi480ELi240EEvP7ap_uintILi256EEPKS1_S4_S4_S4_4_ce1 = grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_BIAS_STATS_fu_330_p_ZZ16UpConv_Fused_RowILi8ELi32ELi32ELi480ELi240EEvP7ap_uintILi256EEPKS1_S4_S4_S4_4_ce1;
-    end else if ((1'b1 == ap_CS_fsm_state2)) begin
-        p_ZZ16UpConv_Fused_RowILi8ELi32ELi32ELi480ELi240EEvP7ap_uintILi256EEPKS1_S4_S4_S4_4_ce1 = grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_RESET_ROW_ACC_fu_237_p_ZZ16UpConv_Fused_RowILi8ELi32ELi32ELi480ELi240EEvP7ap_uintILi256EEPKS1_S4_S4_S4_4_ce1;
+    if ((1'b1 == ap_CS_fsm_state32)) begin
+        p_ZZ16UpConv_Fused_RowILi8ELi32ELi32ELi480ELi240EEvP7ap_uintILi256EEPKS1_S4_S4_S4_4_ce1 = grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_PIXEL_STATS_fu_308_p_ZZ16UpConv_Fused_RowILi8ELi32ELi32ELi480ELi240EEvP7ap_uintILi256EEPKS1_S4_S4_S4_4_ce1;
+    end else if ((1'b1 == ap_CS_fsm_state12)) begin
+        p_ZZ16UpConv_Fused_RowILi8ELi32ELi32ELi480ELi240EEvP7ap_uintILi256EEPKS1_S4_S4_S4_4_ce1 = grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_250_p_ZZ16UpConv_Fused_RowILi8ELi32ELi32ELi480ELi240EEvP7ap_uintILi256EEPKS1_S4_S4_S4_4_ce1;
     end else begin
         p_ZZ16UpConv_Fused_RowILi8ELi32ELi32ELi480ELi240EEvP7ap_uintILi256EEPKS1_S4_S4_S4_4_ce1 = 1'b0;
     end
 end
 
 always @ (*) begin
-    if ((1'b1 == ap_CS_fsm_state16)) begin
-        p_ZZ16UpConv_Fused_RowILi8ELi32ELi32ELi480ELi240EEvP7ap_uintILi256EEPKS1_S4_S4_S4_4_d0 = grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_BIAS_STATS_fu_330_p_ZZ16UpConv_Fused_RowILi8ELi32ELi32ELi480ELi240EEvP7ap_uintILi256EEPKS1_S4_S4_S4_4_d0;
+    if ((1'b1 == ap_CS_fsm_state32)) begin
+        p_ZZ16UpConv_Fused_RowILi8ELi32ELi32ELi480ELi240EEvP7ap_uintILi256EEPKS1_S4_S4_S4_4_d0 = grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_PIXEL_STATS_fu_308_p_ZZ16UpConv_Fused_RowILi8ELi32ELi32ELi480ELi240EEvP7ap_uintILi256EEPKS1_S4_S4_S4_4_d0;
     end else if ((1'b1 == ap_CS_fsm_state12)) begin
-        p_ZZ16UpConv_Fused_RowILi8ELi32ELi32ELi480ELi240EEvP7ap_uintILi256EEPKS1_S4_S4_S4_4_d0 = grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_288_p_ZZ16UpConv_Fused_RowILi8ELi32ELi32ELi480ELi240EEvP7ap_uintILi256EEPKS1_S4_S4_S4_4_d0;
+        p_ZZ16UpConv_Fused_RowILi8ELi32ELi32ELi480ELi240EEvP7ap_uintILi256EEPKS1_S4_S4_S4_4_d0 = grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_250_p_ZZ16UpConv_Fused_RowILi8ELi32ELi32ELi480ELi240EEvP7ap_uintILi256EEPKS1_S4_S4_S4_4_d0;
     end else if ((1'b1 == ap_CS_fsm_state2)) begin
-        p_ZZ16UpConv_Fused_RowILi8ELi32ELi32ELi480ELi240EEvP7ap_uintILi256EEPKS1_S4_S4_S4_4_d0 = grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_RESET_ROW_ACC_fu_237_p_ZZ16UpConv_Fused_RowILi8ELi32ELi32ELi480ELi240EEvP7ap_uintILi256EEPKS1_S4_S4_S4_4_d0;
+        p_ZZ16UpConv_Fused_RowILi8ELi32ELi32ELi480ELi240EEvP7ap_uintILi256EEPKS1_S4_S4_S4_4_d0 = grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_RESET_ROW_ACC_fu_214_p_ZZ16UpConv_Fused_RowILi8ELi32ELi32ELi480ELi240EEvP7ap_uintILi256EEPKS1_S4_S4_S4_4_d0;
     end else begin
         p_ZZ16UpConv_Fused_RowILi8ELi32ELi32ELi480ELi240EEvP7ap_uintILi256EEPKS1_S4_S4_S4_4_d0 = 'bx;
     end
 end
 
 always @ (*) begin
-    if ((1'b1 == ap_CS_fsm_state16)) begin
-        p_ZZ16UpConv_Fused_RowILi8ELi32ELi32ELi480ELi240EEvP7ap_uintILi256EEPKS1_S4_S4_S4_4_we0 = grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_BIAS_STATS_fu_330_p_ZZ16UpConv_Fused_RowILi8ELi32ELi32ELi480ELi240EEvP7ap_uintILi256EEPKS1_S4_S4_S4_4_we0;
+    if ((1'b1 == ap_CS_fsm_state32)) begin
+        p_ZZ16UpConv_Fused_RowILi8ELi32ELi32ELi480ELi240EEvP7ap_uintILi256EEPKS1_S4_S4_S4_4_we0 = grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_PIXEL_STATS_fu_308_p_ZZ16UpConv_Fused_RowILi8ELi32ELi32ELi480ELi240EEvP7ap_uintILi256EEPKS1_S4_S4_S4_4_we0;
     end else if ((1'b1 == ap_CS_fsm_state12)) begin
-        p_ZZ16UpConv_Fused_RowILi8ELi32ELi32ELi480ELi240EEvP7ap_uintILi256EEPKS1_S4_S4_S4_4_we0 = grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_288_p_ZZ16UpConv_Fused_RowILi8ELi32ELi32ELi480ELi240EEvP7ap_uintILi256EEPKS1_S4_S4_S4_4_we0;
+        p_ZZ16UpConv_Fused_RowILi8ELi32ELi32ELi480ELi240EEvP7ap_uintILi256EEPKS1_S4_S4_S4_4_we0 = grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_250_p_ZZ16UpConv_Fused_RowILi8ELi32ELi32ELi480ELi240EEvP7ap_uintILi256EEPKS1_S4_S4_S4_4_we0;
     end else if ((1'b1 == ap_CS_fsm_state2)) begin
-        p_ZZ16UpConv_Fused_RowILi8ELi32ELi32ELi480ELi240EEvP7ap_uintILi256EEPKS1_S4_S4_S4_4_we0 = grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_RESET_ROW_ACC_fu_237_p_ZZ16UpConv_Fused_RowILi8ELi32ELi32ELi480ELi240EEvP7ap_uintILi256EEPKS1_S4_S4_S4_4_we0;
+        p_ZZ16UpConv_Fused_RowILi8ELi32ELi32ELi480ELi240EEvP7ap_uintILi256EEPKS1_S4_S4_S4_4_we0 = grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_RESET_ROW_ACC_fu_214_p_ZZ16UpConv_Fused_RowILi8ELi32ELi32ELi480ELi240EEvP7ap_uintILi256EEPKS1_S4_S4_S4_4_we0;
     end else begin
         p_ZZ16UpConv_Fused_RowILi8ELi32ELi32ELi480ELi240EEvP7ap_uintILi256EEPKS1_S4_S4_S4_4_we0 = 1'b0;
     end
 end
 
 always @ (*) begin
-    if ((1'b1 == ap_CS_fsm_state2)) begin
-        p_ZZ16UpConv_Fused_RowILi8ELi32ELi32ELi480ELi240EEvP7ap_uintILi256EEPKS1_S4_S4_S4_4_we1 = grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_RESET_ROW_ACC_fu_237_p_ZZ16UpConv_Fused_RowILi8ELi32ELi32ELi480ELi240EEvP7ap_uintILi256EEPKS1_S4_S4_S4_4_we1;
-    end else begin
-        p_ZZ16UpConv_Fused_RowILi8ELi32ELi32ELi480ELi240EEvP7ap_uintILi256EEPKS1_S4_S4_S4_4_we1 = 1'b0;
-    end
-end
-
-always @ (*) begin
-    if ((1'b1 == ap_CS_fsm_state136)) begin
-        p_ZZ16UpConv_Fused_RowILi8ELi32ELi32ELi480ELi240EEvP7ap_uintILi256EEPKS1_S4_S4_S4_5_address0 = grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_NORM_WRITE_fu_370_p_ZZ16UpConv_Fused_RowILi8ELi32ELi32ELi480ELi240EEvP7ap_uintILi256EEPKS1_S4_S4_S4_5_address0;
-    end else if ((1'b1 == ap_CS_fsm_state16)) begin
-        p_ZZ16UpConv_Fused_RowILi8ELi32ELi32ELi480ELi240EEvP7ap_uintILi256EEPKS1_S4_S4_S4_5_address0 = grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_BIAS_STATS_fu_330_p_ZZ16UpConv_Fused_RowILi8ELi32ELi32ELi480ELi240EEvP7ap_uintILi256EEPKS1_S4_S4_S4_5_address0;
+    if ((1'b1 == ap_CS_fsm_state44)) begin
+        p_ZZ16UpConv_Fused_RowILi8ELi32ELi32ELi480ELi240EEvP7ap_uintILi256EEPKS1_S4_S4_S4_5_address0 = grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_PIXEL_NORM_fu_358_p_ZZ16UpConv_Fused_RowILi8ELi32ELi32ELi480ELi240EEvP7ap_uintILi256EEPKS1_S4_S4_S4_5_address0;
+    end else if ((1'b1 == ap_CS_fsm_state32)) begin
+        p_ZZ16UpConv_Fused_RowILi8ELi32ELi32ELi480ELi240EEvP7ap_uintILi256EEPKS1_S4_S4_S4_5_address0 = grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_PIXEL_STATS_fu_308_p_ZZ16UpConv_Fused_RowILi8ELi32ELi32ELi480ELi240EEvP7ap_uintILi256EEPKS1_S4_S4_S4_5_address0;
     end else if ((1'b1 == ap_CS_fsm_state12)) begin
-        p_ZZ16UpConv_Fused_RowILi8ELi32ELi32ELi480ELi240EEvP7ap_uintILi256EEPKS1_S4_S4_S4_5_address0 = grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_288_p_ZZ16UpConv_Fused_RowILi8ELi32ELi32ELi480ELi240EEvP7ap_uintILi256EEPKS1_S4_S4_S4_5_address0;
+        p_ZZ16UpConv_Fused_RowILi8ELi32ELi32ELi480ELi240EEvP7ap_uintILi256EEPKS1_S4_S4_S4_5_address0 = grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_250_p_ZZ16UpConv_Fused_RowILi8ELi32ELi32ELi480ELi240EEvP7ap_uintILi256EEPKS1_S4_S4_S4_5_address0;
     end else if ((1'b1 == ap_CS_fsm_state2)) begin
-        p_ZZ16UpConv_Fused_RowILi8ELi32ELi32ELi480ELi240EEvP7ap_uintILi256EEPKS1_S4_S4_S4_5_address0 = grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_RESET_ROW_ACC_fu_237_p_ZZ16UpConv_Fused_RowILi8ELi32ELi32ELi480ELi240EEvP7ap_uintILi256EEPKS1_S4_S4_S4_5_address0;
+        p_ZZ16UpConv_Fused_RowILi8ELi32ELi32ELi480ELi240EEvP7ap_uintILi256EEPKS1_S4_S4_S4_5_address0 = grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_RESET_ROW_ACC_fu_214_p_ZZ16UpConv_Fused_RowILi8ELi32ELi32ELi480ELi240EEvP7ap_uintILi256EEPKS1_S4_S4_S4_5_address0;
     end else begin
         p_ZZ16UpConv_Fused_RowILi8ELi32ELi32ELi480ELi240EEvP7ap_uintILi256EEPKS1_S4_S4_S4_5_address0 = 'bx;
     end
 end
 
 always @ (*) begin
-    if ((1'b1 == ap_CS_fsm_state16)) begin
-        p_ZZ16UpConv_Fused_RowILi8ELi32ELi32ELi480ELi240EEvP7ap_uintILi256EEPKS1_S4_S4_S4_5_address1 = grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_BIAS_STATS_fu_330_p_ZZ16UpConv_Fused_RowILi8ELi32ELi32ELi480ELi240EEvP7ap_uintILi256EEPKS1_S4_S4_S4_5_address1;
-    end else if ((1'b1 == ap_CS_fsm_state2)) begin
-        p_ZZ16UpConv_Fused_RowILi8ELi32ELi32ELi480ELi240EEvP7ap_uintILi256EEPKS1_S4_S4_S4_5_address1 = grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_RESET_ROW_ACC_fu_237_p_ZZ16UpConv_Fused_RowILi8ELi32ELi32ELi480ELi240EEvP7ap_uintILi256EEPKS1_S4_S4_S4_5_address1;
+    if ((1'b1 == ap_CS_fsm_state32)) begin
+        p_ZZ16UpConv_Fused_RowILi8ELi32ELi32ELi480ELi240EEvP7ap_uintILi256EEPKS1_S4_S4_S4_5_address1 = grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_PIXEL_STATS_fu_308_p_ZZ16UpConv_Fused_RowILi8ELi32ELi32ELi480ELi240EEvP7ap_uintILi256EEPKS1_S4_S4_S4_5_address1;
+    end else if ((1'b1 == ap_CS_fsm_state12)) begin
+        p_ZZ16UpConv_Fused_RowILi8ELi32ELi32ELi480ELi240EEvP7ap_uintILi256EEPKS1_S4_S4_S4_5_address1 = grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_250_p_ZZ16UpConv_Fused_RowILi8ELi32ELi32ELi480ELi240EEvP7ap_uintILi256EEPKS1_S4_S4_S4_5_address1;
     end else begin
         p_ZZ16UpConv_Fused_RowILi8ELi32ELi32ELi480ELi240EEvP7ap_uintILi256EEPKS1_S4_S4_S4_5_address1 = 'bx;
     end
 end
 
 always @ (*) begin
-    if ((1'b1 == ap_CS_fsm_state136)) begin
-        p_ZZ16UpConv_Fused_RowILi8ELi32ELi32ELi480ELi240EEvP7ap_uintILi256EEPKS1_S4_S4_S4_5_ce0 = grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_NORM_WRITE_fu_370_p_ZZ16UpConv_Fused_RowILi8ELi32ELi32ELi480ELi240EEvP7ap_uintILi256EEPKS1_S4_S4_S4_5_ce0;
-    end else if ((1'b1 == ap_CS_fsm_state16)) begin
-        p_ZZ16UpConv_Fused_RowILi8ELi32ELi32ELi480ELi240EEvP7ap_uintILi256EEPKS1_S4_S4_S4_5_ce0 = grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_BIAS_STATS_fu_330_p_ZZ16UpConv_Fused_RowILi8ELi32ELi32ELi480ELi240EEvP7ap_uintILi256EEPKS1_S4_S4_S4_5_ce0;
+    if ((1'b1 == ap_CS_fsm_state44)) begin
+        p_ZZ16UpConv_Fused_RowILi8ELi32ELi32ELi480ELi240EEvP7ap_uintILi256EEPKS1_S4_S4_S4_5_ce0 = grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_PIXEL_NORM_fu_358_p_ZZ16UpConv_Fused_RowILi8ELi32ELi32ELi480ELi240EEvP7ap_uintILi256EEPKS1_S4_S4_S4_5_ce0;
+    end else if ((1'b1 == ap_CS_fsm_state32)) begin
+        p_ZZ16UpConv_Fused_RowILi8ELi32ELi32ELi480ELi240EEvP7ap_uintILi256EEPKS1_S4_S4_S4_5_ce0 = grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_PIXEL_STATS_fu_308_p_ZZ16UpConv_Fused_RowILi8ELi32ELi32ELi480ELi240EEvP7ap_uintILi256EEPKS1_S4_S4_S4_5_ce0;
     end else if ((1'b1 == ap_CS_fsm_state12)) begin
-        p_ZZ16UpConv_Fused_RowILi8ELi32ELi32ELi480ELi240EEvP7ap_uintILi256EEPKS1_S4_S4_S4_5_ce0 = grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_288_p_ZZ16UpConv_Fused_RowILi8ELi32ELi32ELi480ELi240EEvP7ap_uintILi256EEPKS1_S4_S4_S4_5_ce0;
+        p_ZZ16UpConv_Fused_RowILi8ELi32ELi32ELi480ELi240EEvP7ap_uintILi256EEPKS1_S4_S4_S4_5_ce0 = grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_250_p_ZZ16UpConv_Fused_RowILi8ELi32ELi32ELi480ELi240EEvP7ap_uintILi256EEPKS1_S4_S4_S4_5_ce0;
     end else if ((1'b1 == ap_CS_fsm_state2)) begin
-        p_ZZ16UpConv_Fused_RowILi8ELi32ELi32ELi480ELi240EEvP7ap_uintILi256EEPKS1_S4_S4_S4_5_ce0 = grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_RESET_ROW_ACC_fu_237_p_ZZ16UpConv_Fused_RowILi8ELi32ELi32ELi480ELi240EEvP7ap_uintILi256EEPKS1_S4_S4_S4_5_ce0;
+        p_ZZ16UpConv_Fused_RowILi8ELi32ELi32ELi480ELi240EEvP7ap_uintILi256EEPKS1_S4_S4_S4_5_ce0 = grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_RESET_ROW_ACC_fu_214_p_ZZ16UpConv_Fused_RowILi8ELi32ELi32ELi480ELi240EEvP7ap_uintILi256EEPKS1_S4_S4_S4_5_ce0;
     end else begin
         p_ZZ16UpConv_Fused_RowILi8ELi32ELi32ELi480ELi240EEvP7ap_uintILi256EEPKS1_S4_S4_S4_5_ce0 = 1'b0;
     end
 end
 
 always @ (*) begin
-    if ((1'b1 == ap_CS_fsm_state16)) begin
-        p_ZZ16UpConv_Fused_RowILi8ELi32ELi32ELi480ELi240EEvP7ap_uintILi256EEPKS1_S4_S4_S4_5_ce1 = grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_BIAS_STATS_fu_330_p_ZZ16UpConv_Fused_RowILi8ELi32ELi32ELi480ELi240EEvP7ap_uintILi256EEPKS1_S4_S4_S4_5_ce1;
-    end else if ((1'b1 == ap_CS_fsm_state2)) begin
-        p_ZZ16UpConv_Fused_RowILi8ELi32ELi32ELi480ELi240EEvP7ap_uintILi256EEPKS1_S4_S4_S4_5_ce1 = grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_RESET_ROW_ACC_fu_237_p_ZZ16UpConv_Fused_RowILi8ELi32ELi32ELi480ELi240EEvP7ap_uintILi256EEPKS1_S4_S4_S4_5_ce1;
+    if ((1'b1 == ap_CS_fsm_state32)) begin
+        p_ZZ16UpConv_Fused_RowILi8ELi32ELi32ELi480ELi240EEvP7ap_uintILi256EEPKS1_S4_S4_S4_5_ce1 = grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_PIXEL_STATS_fu_308_p_ZZ16UpConv_Fused_RowILi8ELi32ELi32ELi480ELi240EEvP7ap_uintILi256EEPKS1_S4_S4_S4_5_ce1;
+    end else if ((1'b1 == ap_CS_fsm_state12)) begin
+        p_ZZ16UpConv_Fused_RowILi8ELi32ELi32ELi480ELi240EEvP7ap_uintILi256EEPKS1_S4_S4_S4_5_ce1 = grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_250_p_ZZ16UpConv_Fused_RowILi8ELi32ELi32ELi480ELi240EEvP7ap_uintILi256EEPKS1_S4_S4_S4_5_ce1;
     end else begin
         p_ZZ16UpConv_Fused_RowILi8ELi32ELi32ELi480ELi240EEvP7ap_uintILi256EEPKS1_S4_S4_S4_5_ce1 = 1'b0;
     end
 end
 
 always @ (*) begin
-    if ((1'b1 == ap_CS_fsm_state16)) begin
-        p_ZZ16UpConv_Fused_RowILi8ELi32ELi32ELi480ELi240EEvP7ap_uintILi256EEPKS1_S4_S4_S4_5_d0 = grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_BIAS_STATS_fu_330_p_ZZ16UpConv_Fused_RowILi8ELi32ELi32ELi480ELi240EEvP7ap_uintILi256EEPKS1_S4_S4_S4_5_d0;
+    if ((1'b1 == ap_CS_fsm_state32)) begin
+        p_ZZ16UpConv_Fused_RowILi8ELi32ELi32ELi480ELi240EEvP7ap_uintILi256EEPKS1_S4_S4_S4_5_d0 = grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_PIXEL_STATS_fu_308_p_ZZ16UpConv_Fused_RowILi8ELi32ELi32ELi480ELi240EEvP7ap_uintILi256EEPKS1_S4_S4_S4_5_d0;
     end else if ((1'b1 == ap_CS_fsm_state12)) begin
-        p_ZZ16UpConv_Fused_RowILi8ELi32ELi32ELi480ELi240EEvP7ap_uintILi256EEPKS1_S4_S4_S4_5_d0 = grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_288_p_ZZ16UpConv_Fused_RowILi8ELi32ELi32ELi480ELi240EEvP7ap_uintILi256EEPKS1_S4_S4_S4_5_d0;
+        p_ZZ16UpConv_Fused_RowILi8ELi32ELi32ELi480ELi240EEvP7ap_uintILi256EEPKS1_S4_S4_S4_5_d0 = grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_250_p_ZZ16UpConv_Fused_RowILi8ELi32ELi32ELi480ELi240EEvP7ap_uintILi256EEPKS1_S4_S4_S4_5_d0;
     end else if ((1'b1 == ap_CS_fsm_state2)) begin
-        p_ZZ16UpConv_Fused_RowILi8ELi32ELi32ELi480ELi240EEvP7ap_uintILi256EEPKS1_S4_S4_S4_5_d0 = grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_RESET_ROW_ACC_fu_237_p_ZZ16UpConv_Fused_RowILi8ELi32ELi32ELi480ELi240EEvP7ap_uintILi256EEPKS1_S4_S4_S4_5_d0;
+        p_ZZ16UpConv_Fused_RowILi8ELi32ELi32ELi480ELi240EEvP7ap_uintILi256EEPKS1_S4_S4_S4_5_d0 = grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_RESET_ROW_ACC_fu_214_p_ZZ16UpConv_Fused_RowILi8ELi32ELi32ELi480ELi240EEvP7ap_uintILi256EEPKS1_S4_S4_S4_5_d0;
     end else begin
         p_ZZ16UpConv_Fused_RowILi8ELi32ELi32ELi480ELi240EEvP7ap_uintILi256EEPKS1_S4_S4_S4_5_d0 = 'bx;
     end
 end
 
 always @ (*) begin
-    if ((1'b1 == ap_CS_fsm_state16)) begin
-        p_ZZ16UpConv_Fused_RowILi8ELi32ELi32ELi480ELi240EEvP7ap_uintILi256EEPKS1_S4_S4_S4_5_we0 = grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_BIAS_STATS_fu_330_p_ZZ16UpConv_Fused_RowILi8ELi32ELi32ELi480ELi240EEvP7ap_uintILi256EEPKS1_S4_S4_S4_5_we0;
+    if ((1'b1 == ap_CS_fsm_state32)) begin
+        p_ZZ16UpConv_Fused_RowILi8ELi32ELi32ELi480ELi240EEvP7ap_uintILi256EEPKS1_S4_S4_S4_5_we0 = grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_PIXEL_STATS_fu_308_p_ZZ16UpConv_Fused_RowILi8ELi32ELi32ELi480ELi240EEvP7ap_uintILi256EEPKS1_S4_S4_S4_5_we0;
     end else if ((1'b1 == ap_CS_fsm_state12)) begin
-        p_ZZ16UpConv_Fused_RowILi8ELi32ELi32ELi480ELi240EEvP7ap_uintILi256EEPKS1_S4_S4_S4_5_we0 = grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_288_p_ZZ16UpConv_Fused_RowILi8ELi32ELi32ELi480ELi240EEvP7ap_uintILi256EEPKS1_S4_S4_S4_5_we0;
+        p_ZZ16UpConv_Fused_RowILi8ELi32ELi32ELi480ELi240EEvP7ap_uintILi256EEPKS1_S4_S4_S4_5_we0 = grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_250_p_ZZ16UpConv_Fused_RowILi8ELi32ELi32ELi480ELi240EEvP7ap_uintILi256EEPKS1_S4_S4_S4_5_we0;
     end else if ((1'b1 == ap_CS_fsm_state2)) begin
-        p_ZZ16UpConv_Fused_RowILi8ELi32ELi32ELi480ELi240EEvP7ap_uintILi256EEPKS1_S4_S4_S4_5_we0 = grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_RESET_ROW_ACC_fu_237_p_ZZ16UpConv_Fused_RowILi8ELi32ELi32ELi480ELi240EEvP7ap_uintILi256EEPKS1_S4_S4_S4_5_we0;
+        p_ZZ16UpConv_Fused_RowILi8ELi32ELi32ELi480ELi240EEvP7ap_uintILi256EEPKS1_S4_S4_S4_5_we0 = grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_RESET_ROW_ACC_fu_214_p_ZZ16UpConv_Fused_RowILi8ELi32ELi32ELi480ELi240EEvP7ap_uintILi256EEPKS1_S4_S4_S4_5_we0;
     end else begin
         p_ZZ16UpConv_Fused_RowILi8ELi32ELi32ELi480ELi240EEvP7ap_uintILi256EEPKS1_S4_S4_S4_5_we0 = 1'b0;
     end
 end
 
 always @ (*) begin
-    if ((1'b1 == ap_CS_fsm_state2)) begin
-        p_ZZ16UpConv_Fused_RowILi8ELi32ELi32ELi480ELi240EEvP7ap_uintILi256EEPKS1_S4_S4_S4_5_we1 = grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_RESET_ROW_ACC_fu_237_p_ZZ16UpConv_Fused_RowILi8ELi32ELi32ELi480ELi240EEvP7ap_uintILi256EEPKS1_S4_S4_S4_5_we1;
-    end else begin
-        p_ZZ16UpConv_Fused_RowILi8ELi32ELi32ELi480ELi240EEvP7ap_uintILi256EEPKS1_S4_S4_S4_5_we1 = 1'b0;
-    end
-end
-
-always @ (*) begin
-    if ((1'b1 == ap_CS_fsm_state136)) begin
-        p_ZZ16UpConv_Fused_RowILi8ELi32ELi32ELi480ELi240EEvP7ap_uintILi256EEPKS1_S4_S4_S4_address0 = grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_NORM_WRITE_fu_370_p_ZZ16UpConv_Fused_RowILi8ELi32ELi32ELi480ELi240EEvP7ap_uintILi256EEPKS1_S4_S4_S4_address0;
-    end else if ((1'b1 == ap_CS_fsm_state16)) begin
-        p_ZZ16UpConv_Fused_RowILi8ELi32ELi32ELi480ELi240EEvP7ap_uintILi256EEPKS1_S4_S4_S4_address0 = grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_BIAS_STATS_fu_330_p_ZZ16UpConv_Fused_RowILi8ELi32ELi32ELi480ELi240EEvP7ap_uintILi256EEPKS1_S4_S4_S4_address0;
+    if ((1'b1 == ap_CS_fsm_state44)) begin
+        p_ZZ16UpConv_Fused_RowILi8ELi32ELi32ELi480ELi240EEvP7ap_uintILi256EEPKS1_S4_S4_S4_address0 = grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_PIXEL_NORM_fu_358_p_ZZ16UpConv_Fused_RowILi8ELi32ELi32ELi480ELi240EEvP7ap_uintILi256EEPKS1_S4_S4_S4_address0;
+    end else if ((1'b1 == ap_CS_fsm_state32)) begin
+        p_ZZ16UpConv_Fused_RowILi8ELi32ELi32ELi480ELi240EEvP7ap_uintILi256EEPKS1_S4_S4_S4_address0 = grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_PIXEL_STATS_fu_308_p_ZZ16UpConv_Fused_RowILi8ELi32ELi32ELi480ELi240EEvP7ap_uintILi256EEPKS1_S4_S4_S4_address0;
     end else if ((1'b1 == ap_CS_fsm_state12)) begin
-        p_ZZ16UpConv_Fused_RowILi8ELi32ELi32ELi480ELi240EEvP7ap_uintILi256EEPKS1_S4_S4_S4_address0 = grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_288_p_ZZ16UpConv_Fused_RowILi8ELi32ELi32ELi480ELi240EEvP7ap_uintILi256EEPKS1_S4_S4_S4_address0;
+        p_ZZ16UpConv_Fused_RowILi8ELi32ELi32ELi480ELi240EEvP7ap_uintILi256EEPKS1_S4_S4_S4_address0 = grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_250_p_ZZ16UpConv_Fused_RowILi8ELi32ELi32ELi480ELi240EEvP7ap_uintILi256EEPKS1_S4_S4_S4_address0;
     end else if ((1'b1 == ap_CS_fsm_state2)) begin
-        p_ZZ16UpConv_Fused_RowILi8ELi32ELi32ELi480ELi240EEvP7ap_uintILi256EEPKS1_S4_S4_S4_address0 = grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_RESET_ROW_ACC_fu_237_p_ZZ16UpConv_Fused_RowILi8ELi32ELi32ELi480ELi240EEvP7ap_uintILi256EEPKS1_S4_S4_S4_address0;
+        p_ZZ16UpConv_Fused_RowILi8ELi32ELi32ELi480ELi240EEvP7ap_uintILi256EEPKS1_S4_S4_S4_address0 = grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_RESET_ROW_ACC_fu_214_p_ZZ16UpConv_Fused_RowILi8ELi32ELi32ELi480ELi240EEvP7ap_uintILi256EEPKS1_S4_S4_S4_address0;
     end else begin
         p_ZZ16UpConv_Fused_RowILi8ELi32ELi32ELi480ELi240EEvP7ap_uintILi256EEPKS1_S4_S4_S4_address0 = 'bx;
     end
 end
 
 always @ (*) begin
-    if ((1'b1 == ap_CS_fsm_state16)) begin
-        p_ZZ16UpConv_Fused_RowILi8ELi32ELi32ELi480ELi240EEvP7ap_uintILi256EEPKS1_S4_S4_S4_address1 = grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_BIAS_STATS_fu_330_p_ZZ16UpConv_Fused_RowILi8ELi32ELi32ELi480ELi240EEvP7ap_uintILi256EEPKS1_S4_S4_S4_address1;
-    end else if ((1'b1 == ap_CS_fsm_state2)) begin
-        p_ZZ16UpConv_Fused_RowILi8ELi32ELi32ELi480ELi240EEvP7ap_uintILi256EEPKS1_S4_S4_S4_address1 = grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_RESET_ROW_ACC_fu_237_p_ZZ16UpConv_Fused_RowILi8ELi32ELi32ELi480ELi240EEvP7ap_uintILi256EEPKS1_S4_S4_S4_address1;
+    if ((1'b1 == ap_CS_fsm_state32)) begin
+        p_ZZ16UpConv_Fused_RowILi8ELi32ELi32ELi480ELi240EEvP7ap_uintILi256EEPKS1_S4_S4_S4_address1 = grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_PIXEL_STATS_fu_308_p_ZZ16UpConv_Fused_RowILi8ELi32ELi32ELi480ELi240EEvP7ap_uintILi256EEPKS1_S4_S4_S4_address1;
+    end else if ((1'b1 == ap_CS_fsm_state12)) begin
+        p_ZZ16UpConv_Fused_RowILi8ELi32ELi32ELi480ELi240EEvP7ap_uintILi256EEPKS1_S4_S4_S4_address1 = grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_250_p_ZZ16UpConv_Fused_RowILi8ELi32ELi32ELi480ELi240EEvP7ap_uintILi256EEPKS1_S4_S4_S4_address1;
     end else begin
         p_ZZ16UpConv_Fused_RowILi8ELi32ELi32ELi480ELi240EEvP7ap_uintILi256EEPKS1_S4_S4_S4_address1 = 'bx;
     end
 end
 
 always @ (*) begin
-    if ((1'b1 == ap_CS_fsm_state136)) begin
-        p_ZZ16UpConv_Fused_RowILi8ELi32ELi32ELi480ELi240EEvP7ap_uintILi256EEPKS1_S4_S4_S4_ce0 = grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_NORM_WRITE_fu_370_p_ZZ16UpConv_Fused_RowILi8ELi32ELi32ELi480ELi240EEvP7ap_uintILi256EEPKS1_S4_S4_S4_ce0;
-    end else if ((1'b1 == ap_CS_fsm_state16)) begin
-        p_ZZ16UpConv_Fused_RowILi8ELi32ELi32ELi480ELi240EEvP7ap_uintILi256EEPKS1_S4_S4_S4_ce0 = grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_BIAS_STATS_fu_330_p_ZZ16UpConv_Fused_RowILi8ELi32ELi32ELi480ELi240EEvP7ap_uintILi256EEPKS1_S4_S4_S4_ce0;
+    if ((1'b1 == ap_CS_fsm_state44)) begin
+        p_ZZ16UpConv_Fused_RowILi8ELi32ELi32ELi480ELi240EEvP7ap_uintILi256EEPKS1_S4_S4_S4_ce0 = grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_PIXEL_NORM_fu_358_p_ZZ16UpConv_Fused_RowILi8ELi32ELi32ELi480ELi240EEvP7ap_uintILi256EEPKS1_S4_S4_S4_ce0;
+    end else if ((1'b1 == ap_CS_fsm_state32)) begin
+        p_ZZ16UpConv_Fused_RowILi8ELi32ELi32ELi480ELi240EEvP7ap_uintILi256EEPKS1_S4_S4_S4_ce0 = grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_PIXEL_STATS_fu_308_p_ZZ16UpConv_Fused_RowILi8ELi32ELi32ELi480ELi240EEvP7ap_uintILi256EEPKS1_S4_S4_S4_ce0;
     end else if ((1'b1 == ap_CS_fsm_state12)) begin
-        p_ZZ16UpConv_Fused_RowILi8ELi32ELi32ELi480ELi240EEvP7ap_uintILi256EEPKS1_S4_S4_S4_ce0 = grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_288_p_ZZ16UpConv_Fused_RowILi8ELi32ELi32ELi480ELi240EEvP7ap_uintILi256EEPKS1_S4_S4_S4_ce0;
+        p_ZZ16UpConv_Fused_RowILi8ELi32ELi32ELi480ELi240EEvP7ap_uintILi256EEPKS1_S4_S4_S4_ce0 = grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_250_p_ZZ16UpConv_Fused_RowILi8ELi32ELi32ELi480ELi240EEvP7ap_uintILi256EEPKS1_S4_S4_S4_ce0;
     end else if ((1'b1 == ap_CS_fsm_state2)) begin
-        p_ZZ16UpConv_Fused_RowILi8ELi32ELi32ELi480ELi240EEvP7ap_uintILi256EEPKS1_S4_S4_S4_ce0 = grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_RESET_ROW_ACC_fu_237_p_ZZ16UpConv_Fused_RowILi8ELi32ELi32ELi480ELi240EEvP7ap_uintILi256EEPKS1_S4_S4_S4_ce0;
+        p_ZZ16UpConv_Fused_RowILi8ELi32ELi32ELi480ELi240EEvP7ap_uintILi256EEPKS1_S4_S4_S4_ce0 = grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_RESET_ROW_ACC_fu_214_p_ZZ16UpConv_Fused_RowILi8ELi32ELi32ELi480ELi240EEvP7ap_uintILi256EEPKS1_S4_S4_S4_ce0;
     end else begin
         p_ZZ16UpConv_Fused_RowILi8ELi32ELi32ELi480ELi240EEvP7ap_uintILi256EEPKS1_S4_S4_S4_ce0 = 1'b0;
     end
 end
 
 always @ (*) begin
-    if ((1'b1 == ap_CS_fsm_state16)) begin
-        p_ZZ16UpConv_Fused_RowILi8ELi32ELi32ELi480ELi240EEvP7ap_uintILi256EEPKS1_S4_S4_S4_ce1 = grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_BIAS_STATS_fu_330_p_ZZ16UpConv_Fused_RowILi8ELi32ELi32ELi480ELi240EEvP7ap_uintILi256EEPKS1_S4_S4_S4_ce1;
-    end else if ((1'b1 == ap_CS_fsm_state2)) begin
-        p_ZZ16UpConv_Fused_RowILi8ELi32ELi32ELi480ELi240EEvP7ap_uintILi256EEPKS1_S4_S4_S4_ce1 = grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_RESET_ROW_ACC_fu_237_p_ZZ16UpConv_Fused_RowILi8ELi32ELi32ELi480ELi240EEvP7ap_uintILi256EEPKS1_S4_S4_S4_ce1;
+    if ((1'b1 == ap_CS_fsm_state32)) begin
+        p_ZZ16UpConv_Fused_RowILi8ELi32ELi32ELi480ELi240EEvP7ap_uintILi256EEPKS1_S4_S4_S4_ce1 = grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_PIXEL_STATS_fu_308_p_ZZ16UpConv_Fused_RowILi8ELi32ELi32ELi480ELi240EEvP7ap_uintILi256EEPKS1_S4_S4_S4_ce1;
+    end else if ((1'b1 == ap_CS_fsm_state12)) begin
+        p_ZZ16UpConv_Fused_RowILi8ELi32ELi32ELi480ELi240EEvP7ap_uintILi256EEPKS1_S4_S4_S4_ce1 = grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_250_p_ZZ16UpConv_Fused_RowILi8ELi32ELi32ELi480ELi240EEvP7ap_uintILi256EEPKS1_S4_S4_S4_ce1;
     end else begin
         p_ZZ16UpConv_Fused_RowILi8ELi32ELi32ELi480ELi240EEvP7ap_uintILi256EEPKS1_S4_S4_S4_ce1 = 1'b0;
     end
 end
 
 always @ (*) begin
-    if ((1'b1 == ap_CS_fsm_state16)) begin
-        p_ZZ16UpConv_Fused_RowILi8ELi32ELi32ELi480ELi240EEvP7ap_uintILi256EEPKS1_S4_S4_S4_d0 = grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_BIAS_STATS_fu_330_p_ZZ16UpConv_Fused_RowILi8ELi32ELi32ELi480ELi240EEvP7ap_uintILi256EEPKS1_S4_S4_S4_d0;
+    if ((1'b1 == ap_CS_fsm_state32)) begin
+        p_ZZ16UpConv_Fused_RowILi8ELi32ELi32ELi480ELi240EEvP7ap_uintILi256EEPKS1_S4_S4_S4_d0 = grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_PIXEL_STATS_fu_308_p_ZZ16UpConv_Fused_RowILi8ELi32ELi32ELi480ELi240EEvP7ap_uintILi256EEPKS1_S4_S4_S4_d0;
     end else if ((1'b1 == ap_CS_fsm_state12)) begin
-        p_ZZ16UpConv_Fused_RowILi8ELi32ELi32ELi480ELi240EEvP7ap_uintILi256EEPKS1_S4_S4_S4_d0 = grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_288_p_ZZ16UpConv_Fused_RowILi8ELi32ELi32ELi480ELi240EEvP7ap_uintILi256EEPKS1_S4_S4_S4_d0;
+        p_ZZ16UpConv_Fused_RowILi8ELi32ELi32ELi480ELi240EEvP7ap_uintILi256EEPKS1_S4_S4_S4_d0 = grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_250_p_ZZ16UpConv_Fused_RowILi8ELi32ELi32ELi480ELi240EEvP7ap_uintILi256EEPKS1_S4_S4_S4_d0;
     end else if ((1'b1 == ap_CS_fsm_state2)) begin
-        p_ZZ16UpConv_Fused_RowILi8ELi32ELi32ELi480ELi240EEvP7ap_uintILi256EEPKS1_S4_S4_S4_d0 = grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_RESET_ROW_ACC_fu_237_p_ZZ16UpConv_Fused_RowILi8ELi32ELi32ELi480ELi240EEvP7ap_uintILi256EEPKS1_S4_S4_S4_d0;
+        p_ZZ16UpConv_Fused_RowILi8ELi32ELi32ELi480ELi240EEvP7ap_uintILi256EEPKS1_S4_S4_S4_d0 = grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_RESET_ROW_ACC_fu_214_p_ZZ16UpConv_Fused_RowILi8ELi32ELi32ELi480ELi240EEvP7ap_uintILi256EEPKS1_S4_S4_S4_d0;
     end else begin
         p_ZZ16UpConv_Fused_RowILi8ELi32ELi32ELi480ELi240EEvP7ap_uintILi256EEPKS1_S4_S4_S4_d0 = 'bx;
     end
 end
 
 always @ (*) begin
-    if ((1'b1 == ap_CS_fsm_state16)) begin
-        p_ZZ16UpConv_Fused_RowILi8ELi32ELi32ELi480ELi240EEvP7ap_uintILi256EEPKS1_S4_S4_S4_we0 = grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_BIAS_STATS_fu_330_p_ZZ16UpConv_Fused_RowILi8ELi32ELi32ELi480ELi240EEvP7ap_uintILi256EEPKS1_S4_S4_S4_we0;
+    if ((1'b1 == ap_CS_fsm_state32)) begin
+        p_ZZ16UpConv_Fused_RowILi8ELi32ELi32ELi480ELi240EEvP7ap_uintILi256EEPKS1_S4_S4_S4_we0 = grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_PIXEL_STATS_fu_308_p_ZZ16UpConv_Fused_RowILi8ELi32ELi32ELi480ELi240EEvP7ap_uintILi256EEPKS1_S4_S4_S4_we0;
     end else if ((1'b1 == ap_CS_fsm_state12)) begin
-        p_ZZ16UpConv_Fused_RowILi8ELi32ELi32ELi480ELi240EEvP7ap_uintILi256EEPKS1_S4_S4_S4_we0 = grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_288_p_ZZ16UpConv_Fused_RowILi8ELi32ELi32ELi480ELi240EEvP7ap_uintILi256EEPKS1_S4_S4_S4_we0;
+        p_ZZ16UpConv_Fused_RowILi8ELi32ELi32ELi480ELi240EEvP7ap_uintILi256EEPKS1_S4_S4_S4_we0 = grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_250_p_ZZ16UpConv_Fused_RowILi8ELi32ELi32ELi480ELi240EEvP7ap_uintILi256EEPKS1_S4_S4_S4_we0;
     end else if ((1'b1 == ap_CS_fsm_state2)) begin
-        p_ZZ16UpConv_Fused_RowILi8ELi32ELi32ELi480ELi240EEvP7ap_uintILi256EEPKS1_S4_S4_S4_we0 = grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_RESET_ROW_ACC_fu_237_p_ZZ16UpConv_Fused_RowILi8ELi32ELi32ELi480ELi240EEvP7ap_uintILi256EEPKS1_S4_S4_S4_we0;
+        p_ZZ16UpConv_Fused_RowILi8ELi32ELi32ELi480ELi240EEvP7ap_uintILi256EEPKS1_S4_S4_S4_we0 = grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_RESET_ROW_ACC_fu_214_p_ZZ16UpConv_Fused_RowILi8ELi32ELi32ELi480ELi240EEvP7ap_uintILi256EEPKS1_S4_S4_S4_we0;
     end else begin
         p_ZZ16UpConv_Fused_RowILi8ELi32ELi32ELi480ELi240EEvP7ap_uintILi256EEPKS1_S4_S4_S4_we0 = 1'b0;
     end
 end
 
 always @ (*) begin
-    if ((1'b1 == ap_CS_fsm_state2)) begin
-        p_ZZ16UpConv_Fused_RowILi8ELi32ELi32ELi480ELi240EEvP7ap_uintILi256EEPKS1_S4_S4_S4_we1 = grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_RESET_ROW_ACC_fu_237_p_ZZ16UpConv_Fused_RowILi8ELi32ELi32ELi480ELi240EEvP7ap_uintILi256EEPKS1_S4_S4_S4_we1;
-    end else begin
-        p_ZZ16UpConv_Fused_RowILi8ELi32ELi32ELi480ELi240EEvP7ap_uintILi256EEPKS1_S4_S4_S4_we1 = 1'b0;
-    end
-end
-
-always @ (*) begin
-    if ((1'b1 == ap_CS_fsm_state136)) begin
-        void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_1_address0 = grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_NORM_WRITE_fu_370_void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_1_address0;
-    end else if ((1'b1 == ap_CS_fsm_state16)) begin
-        void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_1_address0 = grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_BIAS_STATS_fu_330_void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_1_address0;
+    if ((1'b1 == ap_CS_fsm_state44)) begin
+        void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_1_address0 = grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_PIXEL_NORM_fu_358_void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_1_address0;
+    end else if ((1'b1 == ap_CS_fsm_state32)) begin
+        void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_1_address0 = grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_PIXEL_STATS_fu_308_void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_1_address0;
     end else if ((1'b1 == ap_CS_fsm_state12)) begin
-        void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_1_address0 = grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_288_void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_1_address0;
+        void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_1_address0 = grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_250_void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_1_address0;
     end else if ((1'b1 == ap_CS_fsm_state2)) begin
-        void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_1_address0 = grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_RESET_ROW_ACC_fu_237_void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_1_address0;
+        void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_1_address0 = grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_RESET_ROW_ACC_fu_214_void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_1_address0;
     end else begin
         void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_1_address0 = 'bx;
     end
 end
 
 always @ (*) begin
-    if ((1'b1 == ap_CS_fsm_state16)) begin
-        void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_1_address1 = grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_BIAS_STATS_fu_330_void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_1_address1;
-    end else if ((1'b1 == ap_CS_fsm_state2)) begin
-        void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_1_address1 = grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_RESET_ROW_ACC_fu_237_void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_1_address1;
+    if ((1'b1 == ap_CS_fsm_state32)) begin
+        void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_1_address1 = grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_PIXEL_STATS_fu_308_void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_1_address1;
+    end else if ((1'b1 == ap_CS_fsm_state12)) begin
+        void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_1_address1 = grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_250_void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_1_address1;
     end else begin
         void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_1_address1 = 'bx;
     end
 end
 
 always @ (*) begin
-    if ((1'b1 == ap_CS_fsm_state136)) begin
-        void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_1_ce0 = grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_NORM_WRITE_fu_370_void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_1_ce0;
-    end else if ((1'b1 == ap_CS_fsm_state16)) begin
-        void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_1_ce0 = grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_BIAS_STATS_fu_330_void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_1_ce0;
+    if ((1'b1 == ap_CS_fsm_state44)) begin
+        void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_1_ce0 = grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_PIXEL_NORM_fu_358_void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_1_ce0;
+    end else if ((1'b1 == ap_CS_fsm_state32)) begin
+        void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_1_ce0 = grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_PIXEL_STATS_fu_308_void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_1_ce0;
     end else if ((1'b1 == ap_CS_fsm_state12)) begin
-        void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_1_ce0 = grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_288_void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_1_ce0;
+        void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_1_ce0 = grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_250_void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_1_ce0;
     end else if ((1'b1 == ap_CS_fsm_state2)) begin
-        void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_1_ce0 = grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_RESET_ROW_ACC_fu_237_void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_1_ce0;
+        void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_1_ce0 = grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_RESET_ROW_ACC_fu_214_void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_1_ce0;
     end else begin
         void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_1_ce0 = 1'b0;
     end
 end
 
 always @ (*) begin
-    if ((1'b1 == ap_CS_fsm_state16)) begin
-        void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_1_ce1 = grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_BIAS_STATS_fu_330_void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_1_ce1;
-    end else if ((1'b1 == ap_CS_fsm_state2)) begin
-        void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_1_ce1 = grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_RESET_ROW_ACC_fu_237_void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_1_ce1;
+    if ((1'b1 == ap_CS_fsm_state32)) begin
+        void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_1_ce1 = grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_PIXEL_STATS_fu_308_void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_1_ce1;
+    end else if ((1'b1 == ap_CS_fsm_state12)) begin
+        void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_1_ce1 = grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_250_void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_1_ce1;
     end else begin
         void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_1_ce1 = 1'b0;
     end
 end
 
 always @ (*) begin
-    if ((1'b1 == ap_CS_fsm_state16)) begin
-        void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_1_d0 = grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_BIAS_STATS_fu_330_void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_1_d0;
+    if ((1'b1 == ap_CS_fsm_state32)) begin
+        void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_1_d0 = grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_PIXEL_STATS_fu_308_void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_1_d0;
     end else if ((1'b1 == ap_CS_fsm_state12)) begin
-        void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_1_d0 = grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_288_void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_1_d0;
+        void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_1_d0 = grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_250_void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_1_d0;
     end else if ((1'b1 == ap_CS_fsm_state2)) begin
-        void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_1_d0 = grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_RESET_ROW_ACC_fu_237_void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_1_d0;
+        void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_1_d0 = grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_RESET_ROW_ACC_fu_214_void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_1_d0;
     end else begin
         void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_1_d0 = 'bx;
     end
 end
 
 always @ (*) begin
-    if ((1'b1 == ap_CS_fsm_state16)) begin
-        void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_1_we0 = grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_BIAS_STATS_fu_330_void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_1_we0;
+    if ((1'b1 == ap_CS_fsm_state32)) begin
+        void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_1_we0 = grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_PIXEL_STATS_fu_308_void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_1_we0;
     end else if ((1'b1 == ap_CS_fsm_state12)) begin
-        void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_1_we0 = grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_288_void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_1_we0;
+        void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_1_we0 = grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_250_void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_1_we0;
     end else if ((1'b1 == ap_CS_fsm_state2)) begin
-        void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_1_we0 = grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_RESET_ROW_ACC_fu_237_void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_1_we0;
+        void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_1_we0 = grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_RESET_ROW_ACC_fu_214_void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_1_we0;
     end else begin
         void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_1_we0 = 1'b0;
     end
 end
 
 always @ (*) begin
-    if ((1'b1 == ap_CS_fsm_state2)) begin
-        void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_1_we1 = grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_RESET_ROW_ACC_fu_237_void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_1_we1;
-    end else begin
-        void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_1_we1 = 1'b0;
-    end
-end
-
-always @ (*) begin
-    if ((1'b1 == ap_CS_fsm_state136)) begin
-        void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_2_address0 = grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_NORM_WRITE_fu_370_void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_2_address0;
-    end else if ((1'b1 == ap_CS_fsm_state16)) begin
-        void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_2_address0 = grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_BIAS_STATS_fu_330_void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_2_address0;
+    if ((1'b1 == ap_CS_fsm_state44)) begin
+        void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_2_address0 = grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_PIXEL_NORM_fu_358_void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_2_address0;
+    end else if ((1'b1 == ap_CS_fsm_state32)) begin
+        void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_2_address0 = grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_PIXEL_STATS_fu_308_void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_2_address0;
     end else if ((1'b1 == ap_CS_fsm_state12)) begin
-        void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_2_address0 = grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_288_void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_2_address0;
+        void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_2_address0 = grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_250_void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_2_address0;
     end else if ((1'b1 == ap_CS_fsm_state2)) begin
-        void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_2_address0 = grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_RESET_ROW_ACC_fu_237_void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_2_address0;
+        void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_2_address0 = grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_RESET_ROW_ACC_fu_214_void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_2_address0;
     end else begin
         void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_2_address0 = 'bx;
     end
 end
 
 always @ (*) begin
-    if ((1'b1 == ap_CS_fsm_state16)) begin
-        void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_2_address1 = grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_BIAS_STATS_fu_330_void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_2_address1;
-    end else if ((1'b1 == ap_CS_fsm_state2)) begin
-        void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_2_address1 = grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_RESET_ROW_ACC_fu_237_void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_2_address1;
+    if ((1'b1 == ap_CS_fsm_state32)) begin
+        void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_2_address1 = grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_PIXEL_STATS_fu_308_void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_2_address1;
+    end else if ((1'b1 == ap_CS_fsm_state12)) begin
+        void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_2_address1 = grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_250_void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_2_address1;
     end else begin
         void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_2_address1 = 'bx;
     end
 end
 
 always @ (*) begin
-    if ((1'b1 == ap_CS_fsm_state136)) begin
-        void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_2_ce0 = grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_NORM_WRITE_fu_370_void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_2_ce0;
-    end else if ((1'b1 == ap_CS_fsm_state16)) begin
-        void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_2_ce0 = grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_BIAS_STATS_fu_330_void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_2_ce0;
+    if ((1'b1 == ap_CS_fsm_state44)) begin
+        void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_2_ce0 = grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_PIXEL_NORM_fu_358_void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_2_ce0;
+    end else if ((1'b1 == ap_CS_fsm_state32)) begin
+        void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_2_ce0 = grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_PIXEL_STATS_fu_308_void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_2_ce0;
     end else if ((1'b1 == ap_CS_fsm_state12)) begin
-        void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_2_ce0 = grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_288_void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_2_ce0;
+        void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_2_ce0 = grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_250_void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_2_ce0;
     end else if ((1'b1 == ap_CS_fsm_state2)) begin
-        void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_2_ce0 = grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_RESET_ROW_ACC_fu_237_void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_2_ce0;
+        void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_2_ce0 = grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_RESET_ROW_ACC_fu_214_void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_2_ce0;
     end else begin
         void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_2_ce0 = 1'b0;
     end
 end
 
 always @ (*) begin
-    if ((1'b1 == ap_CS_fsm_state16)) begin
-        void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_2_ce1 = grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_BIAS_STATS_fu_330_void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_2_ce1;
-    end else if ((1'b1 == ap_CS_fsm_state2)) begin
-        void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_2_ce1 = grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_RESET_ROW_ACC_fu_237_void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_2_ce1;
+    if ((1'b1 == ap_CS_fsm_state32)) begin
+        void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_2_ce1 = grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_PIXEL_STATS_fu_308_void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_2_ce1;
+    end else if ((1'b1 == ap_CS_fsm_state12)) begin
+        void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_2_ce1 = grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_250_void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_2_ce1;
     end else begin
         void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_2_ce1 = 1'b0;
     end
 end
 
 always @ (*) begin
-    if ((1'b1 == ap_CS_fsm_state16)) begin
-        void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_2_d0 = grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_BIAS_STATS_fu_330_void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_2_d0;
+    if ((1'b1 == ap_CS_fsm_state32)) begin
+        void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_2_d0 = grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_PIXEL_STATS_fu_308_void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_2_d0;
     end else if ((1'b1 == ap_CS_fsm_state12)) begin
-        void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_2_d0 = grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_288_void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_2_d0;
+        void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_2_d0 = grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_250_void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_2_d0;
     end else if ((1'b1 == ap_CS_fsm_state2)) begin
-        void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_2_d0 = grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_RESET_ROW_ACC_fu_237_void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_2_d0;
+        void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_2_d0 = grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_RESET_ROW_ACC_fu_214_void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_2_d0;
     end else begin
         void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_2_d0 = 'bx;
     end
 end
 
 always @ (*) begin
-    if ((1'b1 == ap_CS_fsm_state16)) begin
-        void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_2_we0 = grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_BIAS_STATS_fu_330_void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_2_we0;
+    if ((1'b1 == ap_CS_fsm_state32)) begin
+        void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_2_we0 = grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_PIXEL_STATS_fu_308_void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_2_we0;
     end else if ((1'b1 == ap_CS_fsm_state12)) begin
-        void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_2_we0 = grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_288_void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_2_we0;
+        void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_2_we0 = grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_250_void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_2_we0;
     end else if ((1'b1 == ap_CS_fsm_state2)) begin
-        void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_2_we0 = grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_RESET_ROW_ACC_fu_237_void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_2_we0;
+        void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_2_we0 = grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_RESET_ROW_ACC_fu_214_void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_2_we0;
     end else begin
         void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_2_we0 = 1'b0;
     end
 end
 
 always @ (*) begin
-    if ((1'b1 == ap_CS_fsm_state2)) begin
-        void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_2_we1 = grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_RESET_ROW_ACC_fu_237_void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_2_we1;
-    end else begin
-        void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_2_we1 = 1'b0;
-    end
-end
-
-always @ (*) begin
-    if ((1'b1 == ap_CS_fsm_state136)) begin
-        void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_3_address0 = grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_NORM_WRITE_fu_370_void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_3_address0;
-    end else if ((1'b1 == ap_CS_fsm_state16)) begin
-        void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_3_address0 = grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_BIAS_STATS_fu_330_void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_3_address0;
+    if ((1'b1 == ap_CS_fsm_state44)) begin
+        void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_3_address0 = grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_PIXEL_NORM_fu_358_void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_3_address0;
+    end else if ((1'b1 == ap_CS_fsm_state32)) begin
+        void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_3_address0 = grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_PIXEL_STATS_fu_308_void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_3_address0;
     end else if ((1'b1 == ap_CS_fsm_state12)) begin
-        void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_3_address0 = grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_288_void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_3_address0;
+        void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_3_address0 = grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_250_void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_3_address0;
     end else if ((1'b1 == ap_CS_fsm_state2)) begin
-        void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_3_address0 = grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_RESET_ROW_ACC_fu_237_void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_3_address0;
+        void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_3_address0 = grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_RESET_ROW_ACC_fu_214_void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_3_address0;
     end else begin
         void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_3_address0 = 'bx;
     end
 end
 
 always @ (*) begin
-    if ((1'b1 == ap_CS_fsm_state16)) begin
-        void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_3_address1 = grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_BIAS_STATS_fu_330_void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_3_address1;
-    end else if ((1'b1 == ap_CS_fsm_state2)) begin
-        void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_3_address1 = grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_RESET_ROW_ACC_fu_237_void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_3_address1;
+    if ((1'b1 == ap_CS_fsm_state32)) begin
+        void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_3_address1 = grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_PIXEL_STATS_fu_308_void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_3_address1;
+    end else if ((1'b1 == ap_CS_fsm_state12)) begin
+        void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_3_address1 = grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_250_void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_3_address1;
     end else begin
         void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_3_address1 = 'bx;
     end
 end
 
 always @ (*) begin
-    if ((1'b1 == ap_CS_fsm_state136)) begin
-        void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_3_ce0 = grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_NORM_WRITE_fu_370_void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_3_ce0;
-    end else if ((1'b1 == ap_CS_fsm_state16)) begin
-        void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_3_ce0 = grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_BIAS_STATS_fu_330_void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_3_ce0;
+    if ((1'b1 == ap_CS_fsm_state44)) begin
+        void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_3_ce0 = grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_PIXEL_NORM_fu_358_void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_3_ce0;
+    end else if ((1'b1 == ap_CS_fsm_state32)) begin
+        void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_3_ce0 = grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_PIXEL_STATS_fu_308_void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_3_ce0;
     end else if ((1'b1 == ap_CS_fsm_state12)) begin
-        void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_3_ce0 = grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_288_void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_3_ce0;
+        void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_3_ce0 = grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_250_void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_3_ce0;
     end else if ((1'b1 == ap_CS_fsm_state2)) begin
-        void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_3_ce0 = grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_RESET_ROW_ACC_fu_237_void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_3_ce0;
+        void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_3_ce0 = grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_RESET_ROW_ACC_fu_214_void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_3_ce0;
     end else begin
         void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_3_ce0 = 1'b0;
     end
 end
 
 always @ (*) begin
-    if ((1'b1 == ap_CS_fsm_state16)) begin
-        void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_3_ce1 = grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_BIAS_STATS_fu_330_void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_3_ce1;
-    end else if ((1'b1 == ap_CS_fsm_state2)) begin
-        void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_3_ce1 = grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_RESET_ROW_ACC_fu_237_void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_3_ce1;
+    if ((1'b1 == ap_CS_fsm_state32)) begin
+        void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_3_ce1 = grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_PIXEL_STATS_fu_308_void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_3_ce1;
+    end else if ((1'b1 == ap_CS_fsm_state12)) begin
+        void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_3_ce1 = grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_250_void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_3_ce1;
     end else begin
         void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_3_ce1 = 1'b0;
     end
 end
 
 always @ (*) begin
-    if ((1'b1 == ap_CS_fsm_state16)) begin
-        void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_3_d0 = grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_BIAS_STATS_fu_330_void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_3_d0;
+    if ((1'b1 == ap_CS_fsm_state32)) begin
+        void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_3_d0 = grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_PIXEL_STATS_fu_308_void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_3_d0;
     end else if ((1'b1 == ap_CS_fsm_state12)) begin
-        void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_3_d0 = grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_288_void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_3_d0;
+        void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_3_d0 = grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_250_void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_3_d0;
     end else if ((1'b1 == ap_CS_fsm_state2)) begin
-        void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_3_d0 = grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_RESET_ROW_ACC_fu_237_void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_3_d0;
+        void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_3_d0 = grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_RESET_ROW_ACC_fu_214_void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_3_d0;
     end else begin
         void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_3_d0 = 'bx;
     end
 end
 
 always @ (*) begin
-    if ((1'b1 == ap_CS_fsm_state16)) begin
-        void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_3_we0 = grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_BIAS_STATS_fu_330_void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_3_we0;
+    if ((1'b1 == ap_CS_fsm_state32)) begin
+        void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_3_we0 = grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_PIXEL_STATS_fu_308_void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_3_we0;
     end else if ((1'b1 == ap_CS_fsm_state12)) begin
-        void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_3_we0 = grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_288_void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_3_we0;
+        void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_3_we0 = grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_250_void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_3_we0;
     end else if ((1'b1 == ap_CS_fsm_state2)) begin
-        void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_3_we0 = grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_RESET_ROW_ACC_fu_237_void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_3_we0;
+        void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_3_we0 = grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_RESET_ROW_ACC_fu_214_void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_3_we0;
     end else begin
         void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_3_we0 = 1'b0;
     end
 end
 
 always @ (*) begin
-    if ((1'b1 == ap_CS_fsm_state2)) begin
-        void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_3_we1 = grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_RESET_ROW_ACC_fu_237_void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_3_we1;
-    end else begin
-        void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_3_we1 = 1'b0;
-    end
-end
-
-always @ (*) begin
-    if ((1'b1 == ap_CS_fsm_state136)) begin
-        void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_4_address0 = grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_NORM_WRITE_fu_370_void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_4_address0;
-    end else if ((1'b1 == ap_CS_fsm_state16)) begin
-        void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_4_address0 = grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_BIAS_STATS_fu_330_void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_4_address0;
+    if ((1'b1 == ap_CS_fsm_state44)) begin
+        void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_4_address0 = grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_PIXEL_NORM_fu_358_void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_4_address0;
+    end else if ((1'b1 == ap_CS_fsm_state32)) begin
+        void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_4_address0 = grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_PIXEL_STATS_fu_308_void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_4_address0;
     end else if ((1'b1 == ap_CS_fsm_state12)) begin
-        void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_4_address0 = grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_288_void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_4_address0;
+        void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_4_address0 = grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_250_void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_4_address0;
     end else if ((1'b1 == ap_CS_fsm_state2)) begin
-        void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_4_address0 = grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_RESET_ROW_ACC_fu_237_void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_4_address0;
+        void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_4_address0 = grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_RESET_ROW_ACC_fu_214_void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_4_address0;
     end else begin
         void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_4_address0 = 'bx;
     end
 end
 
 always @ (*) begin
-    if ((1'b1 == ap_CS_fsm_state16)) begin
-        void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_4_address1 = grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_BIAS_STATS_fu_330_void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_4_address1;
-    end else if ((1'b1 == ap_CS_fsm_state2)) begin
-        void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_4_address1 = grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_RESET_ROW_ACC_fu_237_void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_4_address1;
+    if ((1'b1 == ap_CS_fsm_state32)) begin
+        void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_4_address1 = grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_PIXEL_STATS_fu_308_void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_4_address1;
+    end else if ((1'b1 == ap_CS_fsm_state12)) begin
+        void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_4_address1 = grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_250_void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_4_address1;
     end else begin
         void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_4_address1 = 'bx;
     end
 end
 
 always @ (*) begin
-    if ((1'b1 == ap_CS_fsm_state136)) begin
-        void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_4_ce0 = grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_NORM_WRITE_fu_370_void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_4_ce0;
-    end else if ((1'b1 == ap_CS_fsm_state16)) begin
-        void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_4_ce0 = grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_BIAS_STATS_fu_330_void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_4_ce0;
+    if ((1'b1 == ap_CS_fsm_state44)) begin
+        void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_4_ce0 = grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_PIXEL_NORM_fu_358_void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_4_ce0;
+    end else if ((1'b1 == ap_CS_fsm_state32)) begin
+        void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_4_ce0 = grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_PIXEL_STATS_fu_308_void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_4_ce0;
     end else if ((1'b1 == ap_CS_fsm_state12)) begin
-        void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_4_ce0 = grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_288_void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_4_ce0;
+        void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_4_ce0 = grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_250_void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_4_ce0;
     end else if ((1'b1 == ap_CS_fsm_state2)) begin
-        void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_4_ce0 = grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_RESET_ROW_ACC_fu_237_void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_4_ce0;
+        void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_4_ce0 = grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_RESET_ROW_ACC_fu_214_void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_4_ce0;
     end else begin
         void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_4_ce0 = 1'b0;
     end
 end
 
 always @ (*) begin
-    if ((1'b1 == ap_CS_fsm_state16)) begin
-        void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_4_ce1 = grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_BIAS_STATS_fu_330_void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_4_ce1;
-    end else if ((1'b1 == ap_CS_fsm_state2)) begin
-        void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_4_ce1 = grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_RESET_ROW_ACC_fu_237_void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_4_ce1;
+    if ((1'b1 == ap_CS_fsm_state32)) begin
+        void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_4_ce1 = grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_PIXEL_STATS_fu_308_void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_4_ce1;
+    end else if ((1'b1 == ap_CS_fsm_state12)) begin
+        void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_4_ce1 = grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_250_void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_4_ce1;
     end else begin
         void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_4_ce1 = 1'b0;
     end
 end
 
 always @ (*) begin
-    if ((1'b1 == ap_CS_fsm_state16)) begin
-        void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_4_d0 = grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_BIAS_STATS_fu_330_void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_4_d0;
+    if ((1'b1 == ap_CS_fsm_state32)) begin
+        void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_4_d0 = grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_PIXEL_STATS_fu_308_void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_4_d0;
     end else if ((1'b1 == ap_CS_fsm_state12)) begin
-        void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_4_d0 = grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_288_void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_4_d0;
+        void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_4_d0 = grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_250_void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_4_d0;
     end else if ((1'b1 == ap_CS_fsm_state2)) begin
-        void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_4_d0 = grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_RESET_ROW_ACC_fu_237_void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_4_d0;
+        void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_4_d0 = grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_RESET_ROW_ACC_fu_214_void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_4_d0;
     end else begin
         void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_4_d0 = 'bx;
     end
 end
 
 always @ (*) begin
-    if ((1'b1 == ap_CS_fsm_state16)) begin
-        void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_4_we0 = grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_BIAS_STATS_fu_330_void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_4_we0;
+    if ((1'b1 == ap_CS_fsm_state32)) begin
+        void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_4_we0 = grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_PIXEL_STATS_fu_308_void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_4_we0;
     end else if ((1'b1 == ap_CS_fsm_state12)) begin
-        void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_4_we0 = grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_288_void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_4_we0;
+        void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_4_we0 = grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_250_void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_4_we0;
     end else if ((1'b1 == ap_CS_fsm_state2)) begin
-        void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_4_we0 = grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_RESET_ROW_ACC_fu_237_void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_4_we0;
+        void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_4_we0 = grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_RESET_ROW_ACC_fu_214_void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_4_we0;
     end else begin
         void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_4_we0 = 1'b0;
     end
 end
 
 always @ (*) begin
-    if ((1'b1 == ap_CS_fsm_state2)) begin
-        void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_4_we1 = grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_RESET_ROW_ACC_fu_237_void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_4_we1;
-    end else begin
-        void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_4_we1 = 1'b0;
-    end
-end
-
-always @ (*) begin
-    if ((1'b1 == ap_CS_fsm_state136)) begin
-        void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_5_address0 = grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_NORM_WRITE_fu_370_void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_5_address0;
-    end else if ((1'b1 == ap_CS_fsm_state16)) begin
-        void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_5_address0 = grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_BIAS_STATS_fu_330_void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_5_address0;
+    if ((1'b1 == ap_CS_fsm_state44)) begin
+        void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_5_address0 = grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_PIXEL_NORM_fu_358_void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_5_address0;
+    end else if ((1'b1 == ap_CS_fsm_state32)) begin
+        void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_5_address0 = grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_PIXEL_STATS_fu_308_void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_5_address0;
     end else if ((1'b1 == ap_CS_fsm_state12)) begin
-        void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_5_address0 = grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_288_void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_5_address0;
+        void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_5_address0 = grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_250_void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_5_address0;
     end else if ((1'b1 == ap_CS_fsm_state2)) begin
-        void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_5_address0 = grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_RESET_ROW_ACC_fu_237_void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_5_address0;
+        void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_5_address0 = grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_RESET_ROW_ACC_fu_214_void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_5_address0;
     end else begin
         void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_5_address0 = 'bx;
     end
 end
 
 always @ (*) begin
-    if ((1'b1 == ap_CS_fsm_state16)) begin
-        void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_5_address1 = grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_BIAS_STATS_fu_330_void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_5_address1;
-    end else if ((1'b1 == ap_CS_fsm_state2)) begin
-        void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_5_address1 = grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_RESET_ROW_ACC_fu_237_void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_5_address1;
+    if ((1'b1 == ap_CS_fsm_state32)) begin
+        void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_5_address1 = grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_PIXEL_STATS_fu_308_void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_5_address1;
+    end else if ((1'b1 == ap_CS_fsm_state12)) begin
+        void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_5_address1 = grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_250_void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_5_address1;
     end else begin
         void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_5_address1 = 'bx;
     end
 end
 
 always @ (*) begin
-    if ((1'b1 == ap_CS_fsm_state136)) begin
-        void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_5_ce0 = grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_NORM_WRITE_fu_370_void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_5_ce0;
-    end else if ((1'b1 == ap_CS_fsm_state16)) begin
-        void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_5_ce0 = grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_BIAS_STATS_fu_330_void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_5_ce0;
+    if ((1'b1 == ap_CS_fsm_state44)) begin
+        void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_5_ce0 = grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_PIXEL_NORM_fu_358_void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_5_ce0;
+    end else if ((1'b1 == ap_CS_fsm_state32)) begin
+        void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_5_ce0 = grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_PIXEL_STATS_fu_308_void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_5_ce0;
     end else if ((1'b1 == ap_CS_fsm_state12)) begin
-        void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_5_ce0 = grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_288_void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_5_ce0;
+        void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_5_ce0 = grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_250_void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_5_ce0;
     end else if ((1'b1 == ap_CS_fsm_state2)) begin
-        void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_5_ce0 = grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_RESET_ROW_ACC_fu_237_void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_5_ce0;
+        void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_5_ce0 = grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_RESET_ROW_ACC_fu_214_void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_5_ce0;
     end else begin
         void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_5_ce0 = 1'b0;
     end
 end
 
 always @ (*) begin
-    if ((1'b1 == ap_CS_fsm_state16)) begin
-        void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_5_ce1 = grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_BIAS_STATS_fu_330_void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_5_ce1;
-    end else if ((1'b1 == ap_CS_fsm_state2)) begin
-        void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_5_ce1 = grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_RESET_ROW_ACC_fu_237_void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_5_ce1;
+    if ((1'b1 == ap_CS_fsm_state32)) begin
+        void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_5_ce1 = grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_PIXEL_STATS_fu_308_void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_5_ce1;
+    end else if ((1'b1 == ap_CS_fsm_state12)) begin
+        void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_5_ce1 = grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_250_void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_5_ce1;
     end else begin
         void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_5_ce1 = 1'b0;
     end
 end
 
 always @ (*) begin
-    if ((1'b1 == ap_CS_fsm_state16)) begin
-        void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_5_d0 = grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_BIAS_STATS_fu_330_void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_5_d0;
+    if ((1'b1 == ap_CS_fsm_state32)) begin
+        void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_5_d0 = grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_PIXEL_STATS_fu_308_void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_5_d0;
     end else if ((1'b1 == ap_CS_fsm_state12)) begin
-        void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_5_d0 = grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_288_void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_5_d0;
+        void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_5_d0 = grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_250_void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_5_d0;
     end else if ((1'b1 == ap_CS_fsm_state2)) begin
-        void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_5_d0 = grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_RESET_ROW_ACC_fu_237_void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_5_d0;
+        void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_5_d0 = grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_RESET_ROW_ACC_fu_214_void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_5_d0;
     end else begin
         void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_5_d0 = 'bx;
     end
 end
 
 always @ (*) begin
-    if ((1'b1 == ap_CS_fsm_state16)) begin
-        void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_5_we0 = grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_BIAS_STATS_fu_330_void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_5_we0;
+    if ((1'b1 == ap_CS_fsm_state32)) begin
+        void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_5_we0 = grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_PIXEL_STATS_fu_308_void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_5_we0;
     end else if ((1'b1 == ap_CS_fsm_state12)) begin
-        void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_5_we0 = grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_288_void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_5_we0;
+        void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_5_we0 = grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_250_void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_5_we0;
     end else if ((1'b1 == ap_CS_fsm_state2)) begin
-        void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_5_we0 = grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_RESET_ROW_ACC_fu_237_void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_5_we0;
+        void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_5_we0 = grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_RESET_ROW_ACC_fu_214_void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_5_we0;
     end else begin
         void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_5_we0 = 1'b0;
     end
 end
 
 always @ (*) begin
-    if ((1'b1 == ap_CS_fsm_state2)) begin
-        void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_5_we1 = grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_RESET_ROW_ACC_fu_237_void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_5_we1;
-    end else begin
-        void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_5_we1 = 1'b0;
-    end
-end
-
-always @ (*) begin
-    if ((1'b1 == ap_CS_fsm_state136)) begin
-        void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_6_address0 = grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_NORM_WRITE_fu_370_void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_6_address0;
-    end else if ((1'b1 == ap_CS_fsm_state16)) begin
-        void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_6_address0 = grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_BIAS_STATS_fu_330_void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_6_address0;
+    if ((1'b1 == ap_CS_fsm_state44)) begin
+        void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_6_address0 = grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_PIXEL_NORM_fu_358_void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_6_address0;
+    end else if ((1'b1 == ap_CS_fsm_state32)) begin
+        void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_6_address0 = grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_PIXEL_STATS_fu_308_void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_6_address0;
     end else if ((1'b1 == ap_CS_fsm_state12)) begin
-        void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_6_address0 = grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_288_void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_6_address0;
+        void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_6_address0 = grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_250_void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_6_address0;
     end else if ((1'b1 == ap_CS_fsm_state2)) begin
-        void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_6_address0 = grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_RESET_ROW_ACC_fu_237_void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_6_address0;
+        void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_6_address0 = grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_RESET_ROW_ACC_fu_214_void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_6_address0;
     end else begin
         void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_6_address0 = 'bx;
     end
 end
 
 always @ (*) begin
-    if ((1'b1 == ap_CS_fsm_state16)) begin
-        void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_6_address1 = grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_BIAS_STATS_fu_330_void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_6_address1;
-    end else if ((1'b1 == ap_CS_fsm_state2)) begin
-        void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_6_address1 = grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_RESET_ROW_ACC_fu_237_void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_6_address1;
+    if ((1'b1 == ap_CS_fsm_state32)) begin
+        void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_6_address1 = grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_PIXEL_STATS_fu_308_void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_6_address1;
+    end else if ((1'b1 == ap_CS_fsm_state12)) begin
+        void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_6_address1 = grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_250_void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_6_address1;
     end else begin
         void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_6_address1 = 'bx;
     end
 end
 
 always @ (*) begin
-    if ((1'b1 == ap_CS_fsm_state136)) begin
-        void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_6_ce0 = grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_NORM_WRITE_fu_370_void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_6_ce0;
-    end else if ((1'b1 == ap_CS_fsm_state16)) begin
-        void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_6_ce0 = grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_BIAS_STATS_fu_330_void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_6_ce0;
+    if ((1'b1 == ap_CS_fsm_state44)) begin
+        void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_6_ce0 = grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_PIXEL_NORM_fu_358_void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_6_ce0;
+    end else if ((1'b1 == ap_CS_fsm_state32)) begin
+        void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_6_ce0 = grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_PIXEL_STATS_fu_308_void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_6_ce0;
     end else if ((1'b1 == ap_CS_fsm_state12)) begin
-        void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_6_ce0 = grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_288_void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_6_ce0;
+        void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_6_ce0 = grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_250_void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_6_ce0;
     end else if ((1'b1 == ap_CS_fsm_state2)) begin
-        void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_6_ce0 = grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_RESET_ROW_ACC_fu_237_void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_6_ce0;
+        void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_6_ce0 = grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_RESET_ROW_ACC_fu_214_void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_6_ce0;
     end else begin
         void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_6_ce0 = 1'b0;
     end
 end
 
 always @ (*) begin
-    if ((1'b1 == ap_CS_fsm_state16)) begin
-        void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_6_ce1 = grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_BIAS_STATS_fu_330_void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_6_ce1;
-    end else if ((1'b1 == ap_CS_fsm_state2)) begin
-        void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_6_ce1 = grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_RESET_ROW_ACC_fu_237_void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_6_ce1;
+    if ((1'b1 == ap_CS_fsm_state32)) begin
+        void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_6_ce1 = grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_PIXEL_STATS_fu_308_void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_6_ce1;
+    end else if ((1'b1 == ap_CS_fsm_state12)) begin
+        void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_6_ce1 = grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_250_void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_6_ce1;
     end else begin
         void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_6_ce1 = 1'b0;
     end
 end
 
 always @ (*) begin
-    if ((1'b1 == ap_CS_fsm_state16)) begin
-        void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_6_d0 = grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_BIAS_STATS_fu_330_void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_6_d0;
+    if ((1'b1 == ap_CS_fsm_state32)) begin
+        void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_6_d0 = grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_PIXEL_STATS_fu_308_void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_6_d0;
     end else if ((1'b1 == ap_CS_fsm_state12)) begin
-        void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_6_d0 = grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_288_void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_6_d0;
+        void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_6_d0 = grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_250_void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_6_d0;
     end else if ((1'b1 == ap_CS_fsm_state2)) begin
-        void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_6_d0 = grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_RESET_ROW_ACC_fu_237_void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_6_d0;
+        void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_6_d0 = grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_RESET_ROW_ACC_fu_214_void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_6_d0;
     end else begin
         void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_6_d0 = 'bx;
     end
 end
 
 always @ (*) begin
-    if ((1'b1 == ap_CS_fsm_state16)) begin
-        void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_6_we0 = grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_BIAS_STATS_fu_330_void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_6_we0;
+    if ((1'b1 == ap_CS_fsm_state32)) begin
+        void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_6_we0 = grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_PIXEL_STATS_fu_308_void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_6_we0;
     end else if ((1'b1 == ap_CS_fsm_state12)) begin
-        void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_6_we0 = grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_288_void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_6_we0;
+        void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_6_we0 = grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_250_void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_6_we0;
     end else if ((1'b1 == ap_CS_fsm_state2)) begin
-        void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_6_we0 = grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_RESET_ROW_ACC_fu_237_void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_6_we0;
+        void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_6_we0 = grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_RESET_ROW_ACC_fu_214_void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_6_we0;
     end else begin
         void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_6_we0 = 1'b0;
     end
 end
 
 always @ (*) begin
-    if ((1'b1 == ap_CS_fsm_state2)) begin
-        void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_6_we1 = grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_RESET_ROW_ACC_fu_237_void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_6_we1;
-    end else begin
-        void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_6_we1 = 1'b0;
-    end
-end
-
-always @ (*) begin
-    if ((1'b1 == ap_CS_fsm_state136)) begin
-        void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_7_address0 = grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_NORM_WRITE_fu_370_void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_7_address0;
-    end else if ((1'b1 == ap_CS_fsm_state16)) begin
-        void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_7_address0 = grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_BIAS_STATS_fu_330_void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_7_address0;
+    if ((1'b1 == ap_CS_fsm_state44)) begin
+        void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_7_address0 = grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_PIXEL_NORM_fu_358_void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_7_address0;
+    end else if ((1'b1 == ap_CS_fsm_state32)) begin
+        void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_7_address0 = grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_PIXEL_STATS_fu_308_void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_7_address0;
     end else if ((1'b1 == ap_CS_fsm_state12)) begin
-        void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_7_address0 = grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_288_void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_7_address0;
+        void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_7_address0 = grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_250_void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_7_address0;
     end else if ((1'b1 == ap_CS_fsm_state2)) begin
-        void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_7_address0 = grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_RESET_ROW_ACC_fu_237_void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_7_address0;
+        void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_7_address0 = grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_RESET_ROW_ACC_fu_214_void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_7_address0;
     end else begin
         void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_7_address0 = 'bx;
     end
 end
 
 always @ (*) begin
-    if ((1'b1 == ap_CS_fsm_state16)) begin
-        void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_7_address1 = grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_BIAS_STATS_fu_330_void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_7_address1;
-    end else if ((1'b1 == ap_CS_fsm_state2)) begin
-        void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_7_address1 = grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_RESET_ROW_ACC_fu_237_void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_7_address1;
+    if ((1'b1 == ap_CS_fsm_state32)) begin
+        void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_7_address1 = grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_PIXEL_STATS_fu_308_void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_7_address1;
+    end else if ((1'b1 == ap_CS_fsm_state12)) begin
+        void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_7_address1 = grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_250_void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_7_address1;
     end else begin
         void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_7_address1 = 'bx;
     end
 end
 
 always @ (*) begin
-    if ((1'b1 == ap_CS_fsm_state136)) begin
-        void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_7_ce0 = grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_NORM_WRITE_fu_370_void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_7_ce0;
-    end else if ((1'b1 == ap_CS_fsm_state16)) begin
-        void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_7_ce0 = grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_BIAS_STATS_fu_330_void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_7_ce0;
+    if ((1'b1 == ap_CS_fsm_state44)) begin
+        void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_7_ce0 = grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_PIXEL_NORM_fu_358_void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_7_ce0;
+    end else if ((1'b1 == ap_CS_fsm_state32)) begin
+        void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_7_ce0 = grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_PIXEL_STATS_fu_308_void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_7_ce0;
     end else if ((1'b1 == ap_CS_fsm_state12)) begin
-        void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_7_ce0 = grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_288_void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_7_ce0;
+        void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_7_ce0 = grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_250_void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_7_ce0;
     end else if ((1'b1 == ap_CS_fsm_state2)) begin
-        void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_7_ce0 = grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_RESET_ROW_ACC_fu_237_void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_7_ce0;
+        void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_7_ce0 = grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_RESET_ROW_ACC_fu_214_void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_7_ce0;
     end else begin
         void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_7_ce0 = 1'b0;
     end
 end
 
 always @ (*) begin
-    if ((1'b1 == ap_CS_fsm_state16)) begin
-        void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_7_ce1 = grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_BIAS_STATS_fu_330_void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_7_ce1;
-    end else if ((1'b1 == ap_CS_fsm_state2)) begin
-        void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_7_ce1 = grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_RESET_ROW_ACC_fu_237_void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_7_ce1;
+    if ((1'b1 == ap_CS_fsm_state32)) begin
+        void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_7_ce1 = grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_PIXEL_STATS_fu_308_void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_7_ce1;
+    end else if ((1'b1 == ap_CS_fsm_state12)) begin
+        void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_7_ce1 = grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_250_void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_7_ce1;
     end else begin
         void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_7_ce1 = 1'b0;
     end
 end
 
 always @ (*) begin
-    if ((1'b1 == ap_CS_fsm_state16)) begin
-        void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_7_d0 = grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_BIAS_STATS_fu_330_void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_7_d0;
+    if ((1'b1 == ap_CS_fsm_state32)) begin
+        void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_7_d0 = grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_PIXEL_STATS_fu_308_void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_7_d0;
     end else if ((1'b1 == ap_CS_fsm_state12)) begin
-        void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_7_d0 = grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_288_void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_7_d0;
+        void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_7_d0 = grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_250_void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_7_d0;
     end else if ((1'b1 == ap_CS_fsm_state2)) begin
-        void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_7_d0 = grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_RESET_ROW_ACC_fu_237_void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_7_d0;
+        void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_7_d0 = grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_RESET_ROW_ACC_fu_214_void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_7_d0;
     end else begin
         void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_7_d0 = 'bx;
     end
 end
 
 always @ (*) begin
-    if ((1'b1 == ap_CS_fsm_state16)) begin
-        void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_7_we0 = grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_BIAS_STATS_fu_330_void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_7_we0;
+    if ((1'b1 == ap_CS_fsm_state32)) begin
+        void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_7_we0 = grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_PIXEL_STATS_fu_308_void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_7_we0;
     end else if ((1'b1 == ap_CS_fsm_state12)) begin
-        void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_7_we0 = grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_288_void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_7_we0;
+        void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_7_we0 = grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_250_void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_7_we0;
     end else if ((1'b1 == ap_CS_fsm_state2)) begin
-        void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_7_we0 = grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_RESET_ROW_ACC_fu_237_void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_7_we0;
+        void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_7_we0 = grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_RESET_ROW_ACC_fu_214_void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_7_we0;
     end else begin
         void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_7_we0 = 1'b0;
     end
 end
 
 always @ (*) begin
-    if ((1'b1 == ap_CS_fsm_state2)) begin
-        void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_7_we1 = grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_RESET_ROW_ACC_fu_237_void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_7_we1;
-    end else begin
-        void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_7_we1 = 1'b0;
-    end
-end
-
-always @ (*) begin
-    if ((1'b1 == ap_CS_fsm_state136)) begin
-        void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_8_address0 = grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_NORM_WRITE_fu_370_void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_8_address0;
-    end else if ((1'b1 == ap_CS_fsm_state16)) begin
-        void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_8_address0 = grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_BIAS_STATS_fu_330_void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_8_address0;
+    if ((1'b1 == ap_CS_fsm_state44)) begin
+        void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_8_address0 = grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_PIXEL_NORM_fu_358_void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_8_address0;
+    end else if ((1'b1 == ap_CS_fsm_state32)) begin
+        void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_8_address0 = grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_PIXEL_STATS_fu_308_void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_8_address0;
     end else if ((1'b1 == ap_CS_fsm_state12)) begin
-        void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_8_address0 = grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_288_void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_8_address0;
+        void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_8_address0 = grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_250_void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_8_address0;
     end else if ((1'b1 == ap_CS_fsm_state2)) begin
-        void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_8_address0 = grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_RESET_ROW_ACC_fu_237_void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_8_address0;
+        void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_8_address0 = grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_RESET_ROW_ACC_fu_214_void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_8_address0;
     end else begin
         void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_8_address0 = 'bx;
     end
 end
 
 always @ (*) begin
-    if ((1'b1 == ap_CS_fsm_state16)) begin
-        void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_8_address1 = grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_BIAS_STATS_fu_330_void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_8_address1;
-    end else if ((1'b1 == ap_CS_fsm_state2)) begin
-        void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_8_address1 = grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_RESET_ROW_ACC_fu_237_void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_8_address1;
+    if ((1'b1 == ap_CS_fsm_state32)) begin
+        void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_8_address1 = grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_PIXEL_STATS_fu_308_void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_8_address1;
+    end else if ((1'b1 == ap_CS_fsm_state12)) begin
+        void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_8_address1 = grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_250_void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_8_address1;
     end else begin
         void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_8_address1 = 'bx;
     end
 end
 
 always @ (*) begin
-    if ((1'b1 == ap_CS_fsm_state136)) begin
-        void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_8_ce0 = grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_NORM_WRITE_fu_370_void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_8_ce0;
-    end else if ((1'b1 == ap_CS_fsm_state16)) begin
-        void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_8_ce0 = grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_BIAS_STATS_fu_330_void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_8_ce0;
+    if ((1'b1 == ap_CS_fsm_state44)) begin
+        void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_8_ce0 = grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_PIXEL_NORM_fu_358_void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_8_ce0;
+    end else if ((1'b1 == ap_CS_fsm_state32)) begin
+        void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_8_ce0 = grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_PIXEL_STATS_fu_308_void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_8_ce0;
     end else if ((1'b1 == ap_CS_fsm_state12)) begin
-        void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_8_ce0 = grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_288_void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_8_ce0;
+        void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_8_ce0 = grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_250_void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_8_ce0;
     end else if ((1'b1 == ap_CS_fsm_state2)) begin
-        void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_8_ce0 = grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_RESET_ROW_ACC_fu_237_void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_8_ce0;
+        void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_8_ce0 = grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_RESET_ROW_ACC_fu_214_void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_8_ce0;
     end else begin
         void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_8_ce0 = 1'b0;
     end
 end
 
 always @ (*) begin
-    if ((1'b1 == ap_CS_fsm_state16)) begin
-        void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_8_ce1 = grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_BIAS_STATS_fu_330_void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_8_ce1;
-    end else if ((1'b1 == ap_CS_fsm_state2)) begin
-        void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_8_ce1 = grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_RESET_ROW_ACC_fu_237_void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_8_ce1;
+    if ((1'b1 == ap_CS_fsm_state32)) begin
+        void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_8_ce1 = grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_PIXEL_STATS_fu_308_void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_8_ce1;
+    end else if ((1'b1 == ap_CS_fsm_state12)) begin
+        void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_8_ce1 = grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_250_void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_8_ce1;
     end else begin
         void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_8_ce1 = 1'b0;
     end
 end
 
 always @ (*) begin
-    if ((1'b1 == ap_CS_fsm_state16)) begin
-        void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_8_d0 = grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_BIAS_STATS_fu_330_void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_8_d0;
+    if ((1'b1 == ap_CS_fsm_state32)) begin
+        void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_8_d0 = grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_PIXEL_STATS_fu_308_void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_8_d0;
     end else if ((1'b1 == ap_CS_fsm_state12)) begin
-        void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_8_d0 = grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_288_void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_8_d0;
+        void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_8_d0 = grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_250_void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_8_d0;
     end else if ((1'b1 == ap_CS_fsm_state2)) begin
-        void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_8_d0 = grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_RESET_ROW_ACC_fu_237_void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_8_d0;
+        void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_8_d0 = grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_RESET_ROW_ACC_fu_214_void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_8_d0;
     end else begin
         void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_8_d0 = 'bx;
     end
 end
 
 always @ (*) begin
-    if ((1'b1 == ap_CS_fsm_state16)) begin
-        void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_8_we0 = grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_BIAS_STATS_fu_330_void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_8_we0;
+    if ((1'b1 == ap_CS_fsm_state32)) begin
+        void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_8_we0 = grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_PIXEL_STATS_fu_308_void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_8_we0;
     end else if ((1'b1 == ap_CS_fsm_state12)) begin
-        void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_8_we0 = grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_288_void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_8_we0;
+        void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_8_we0 = grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_250_void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_8_we0;
     end else if ((1'b1 == ap_CS_fsm_state2)) begin
-        void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_8_we0 = grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_RESET_ROW_ACC_fu_237_void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_8_we0;
+        void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_8_we0 = grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_RESET_ROW_ACC_fu_214_void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_8_we0;
     end else begin
         void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_8_we0 = 1'b0;
     end
 end
 
 always @ (*) begin
-    if ((1'b1 == ap_CS_fsm_state2)) begin
-        void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_8_we1 = grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_RESET_ROW_ACC_fu_237_void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_8_we1;
-    end else begin
-        void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_8_we1 = 1'b0;
-    end
-end
-
-always @ (*) begin
-    if ((1'b1 == ap_CS_fsm_state136)) begin
-        void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_9_address0 = grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_NORM_WRITE_fu_370_void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_9_address0;
-    end else if ((1'b1 == ap_CS_fsm_state16)) begin
-        void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_9_address0 = grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_BIAS_STATS_fu_330_void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_9_address0;
+    if ((1'b1 == ap_CS_fsm_state44)) begin
+        void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_9_address0 = grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_PIXEL_NORM_fu_358_void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_9_address0;
+    end else if ((1'b1 == ap_CS_fsm_state32)) begin
+        void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_9_address0 = grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_PIXEL_STATS_fu_308_void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_9_address0;
     end else if ((1'b1 == ap_CS_fsm_state12)) begin
-        void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_9_address0 = grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_288_void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_9_address0;
+        void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_9_address0 = grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_250_void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_9_address0;
     end else if ((1'b1 == ap_CS_fsm_state2)) begin
-        void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_9_address0 = grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_RESET_ROW_ACC_fu_237_void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_9_address0;
+        void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_9_address0 = grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_RESET_ROW_ACC_fu_214_void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_9_address0;
     end else begin
         void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_9_address0 = 'bx;
     end
 end
 
 always @ (*) begin
-    if ((1'b1 == ap_CS_fsm_state16)) begin
-        void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_9_address1 = grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_BIAS_STATS_fu_330_void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_9_address1;
-    end else if ((1'b1 == ap_CS_fsm_state2)) begin
-        void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_9_address1 = grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_RESET_ROW_ACC_fu_237_void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_9_address1;
+    if ((1'b1 == ap_CS_fsm_state32)) begin
+        void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_9_address1 = grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_PIXEL_STATS_fu_308_void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_9_address1;
+    end else if ((1'b1 == ap_CS_fsm_state12)) begin
+        void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_9_address1 = grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_250_void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_9_address1;
     end else begin
         void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_9_address1 = 'bx;
     end
 end
 
 always @ (*) begin
-    if ((1'b1 == ap_CS_fsm_state136)) begin
-        void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_9_ce0 = grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_NORM_WRITE_fu_370_void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_9_ce0;
-    end else if ((1'b1 == ap_CS_fsm_state16)) begin
-        void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_9_ce0 = grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_BIAS_STATS_fu_330_void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_9_ce0;
+    if ((1'b1 == ap_CS_fsm_state44)) begin
+        void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_9_ce0 = grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_PIXEL_NORM_fu_358_void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_9_ce0;
+    end else if ((1'b1 == ap_CS_fsm_state32)) begin
+        void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_9_ce0 = grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_PIXEL_STATS_fu_308_void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_9_ce0;
     end else if ((1'b1 == ap_CS_fsm_state12)) begin
-        void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_9_ce0 = grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_288_void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_9_ce0;
+        void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_9_ce0 = grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_250_void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_9_ce0;
     end else if ((1'b1 == ap_CS_fsm_state2)) begin
-        void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_9_ce0 = grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_RESET_ROW_ACC_fu_237_void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_9_ce0;
+        void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_9_ce0 = grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_RESET_ROW_ACC_fu_214_void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_9_ce0;
     end else begin
         void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_9_ce0 = 1'b0;
     end
 end
 
 always @ (*) begin
-    if ((1'b1 == ap_CS_fsm_state16)) begin
-        void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_9_ce1 = grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_BIAS_STATS_fu_330_void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_9_ce1;
-    end else if ((1'b1 == ap_CS_fsm_state2)) begin
-        void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_9_ce1 = grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_RESET_ROW_ACC_fu_237_void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_9_ce1;
+    if ((1'b1 == ap_CS_fsm_state32)) begin
+        void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_9_ce1 = grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_PIXEL_STATS_fu_308_void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_9_ce1;
+    end else if ((1'b1 == ap_CS_fsm_state12)) begin
+        void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_9_ce1 = grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_250_void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_9_ce1;
     end else begin
         void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_9_ce1 = 1'b0;
     end
 end
 
 always @ (*) begin
-    if ((1'b1 == ap_CS_fsm_state16)) begin
-        void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_9_d0 = grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_BIAS_STATS_fu_330_void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_9_d0;
+    if ((1'b1 == ap_CS_fsm_state32)) begin
+        void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_9_d0 = grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_PIXEL_STATS_fu_308_void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_9_d0;
     end else if ((1'b1 == ap_CS_fsm_state12)) begin
-        void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_9_d0 = grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_288_void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_9_d0;
+        void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_9_d0 = grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_250_void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_9_d0;
     end else if ((1'b1 == ap_CS_fsm_state2)) begin
-        void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_9_d0 = grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_RESET_ROW_ACC_fu_237_void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_9_d0;
+        void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_9_d0 = grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_RESET_ROW_ACC_fu_214_void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_9_d0;
     end else begin
         void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_9_d0 = 'bx;
     end
 end
 
 always @ (*) begin
-    if ((1'b1 == ap_CS_fsm_state16)) begin
-        void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_9_we0 = grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_BIAS_STATS_fu_330_void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_9_we0;
+    if ((1'b1 == ap_CS_fsm_state32)) begin
+        void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_9_we0 = grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_PIXEL_STATS_fu_308_void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_9_we0;
     end else if ((1'b1 == ap_CS_fsm_state12)) begin
-        void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_9_we0 = grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_288_void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_9_we0;
+        void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_9_we0 = grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_250_void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_9_we0;
     end else if ((1'b1 == ap_CS_fsm_state2)) begin
-        void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_9_we0 = grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_RESET_ROW_ACC_fu_237_void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_9_we0;
+        void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_9_we0 = grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_RESET_ROW_ACC_fu_214_void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_9_we0;
     end else begin
         void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_9_we0 = 1'b0;
     end
 end
 
 always @ (*) begin
-    if ((1'b1 == ap_CS_fsm_state2)) begin
-        void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_9_we1 = grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_RESET_ROW_ACC_fu_237_void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_9_we1;
-    end else begin
-        void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_9_we1 = 1'b0;
-    end
-end
-
-always @ (*) begin
-    if ((1'b1 == ap_CS_fsm_state136)) begin
-        void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_address0 = grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_NORM_WRITE_fu_370_void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_address0;
-    end else if ((1'b1 == ap_CS_fsm_state16)) begin
-        void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_address0 = grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_BIAS_STATS_fu_330_void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_address0;
+    if ((1'b1 == ap_CS_fsm_state44)) begin
+        void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_address0 = grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_PIXEL_NORM_fu_358_void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_address0;
+    end else if ((1'b1 == ap_CS_fsm_state32)) begin
+        void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_address0 = grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_PIXEL_STATS_fu_308_void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_address0;
     end else if ((1'b1 == ap_CS_fsm_state12)) begin
-        void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_address0 = grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_288_void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_address0;
+        void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_address0 = grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_250_void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_address0;
     end else if ((1'b1 == ap_CS_fsm_state2)) begin
-        void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_address0 = grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_RESET_ROW_ACC_fu_237_void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_address0;
+        void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_address0 = grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_RESET_ROW_ACC_fu_214_void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_address0;
     end else begin
         void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_address0 = 'bx;
     end
 end
 
 always @ (*) begin
-    if ((1'b1 == ap_CS_fsm_state16)) begin
-        void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_address1 = grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_BIAS_STATS_fu_330_void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_address1;
-    end else if ((1'b1 == ap_CS_fsm_state2)) begin
-        void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_address1 = grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_RESET_ROW_ACC_fu_237_void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_address1;
+    if ((1'b1 == ap_CS_fsm_state32)) begin
+        void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_address1 = grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_PIXEL_STATS_fu_308_void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_address1;
+    end else if ((1'b1 == ap_CS_fsm_state12)) begin
+        void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_address1 = grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_250_void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_address1;
     end else begin
         void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_address1 = 'bx;
     end
 end
 
 always @ (*) begin
-    if ((1'b1 == ap_CS_fsm_state136)) begin
-        void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_ce0 = grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_NORM_WRITE_fu_370_void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_ce0;
-    end else if ((1'b1 == ap_CS_fsm_state16)) begin
-        void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_ce0 = grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_BIAS_STATS_fu_330_void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_ce0;
+    if ((1'b1 == ap_CS_fsm_state44)) begin
+        void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_ce0 = grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_PIXEL_NORM_fu_358_void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_ce0;
+    end else if ((1'b1 == ap_CS_fsm_state32)) begin
+        void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_ce0 = grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_PIXEL_STATS_fu_308_void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_ce0;
     end else if ((1'b1 == ap_CS_fsm_state12)) begin
-        void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_ce0 = grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_288_void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_ce0;
+        void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_ce0 = grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_250_void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_ce0;
     end else if ((1'b1 == ap_CS_fsm_state2)) begin
-        void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_ce0 = grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_RESET_ROW_ACC_fu_237_void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_ce0;
+        void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_ce0 = grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_RESET_ROW_ACC_fu_214_void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_ce0;
     end else begin
         void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_ce0 = 1'b0;
     end
 end
 
 always @ (*) begin
-    if ((1'b1 == ap_CS_fsm_state16)) begin
-        void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_ce1 = grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_BIAS_STATS_fu_330_void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_ce1;
-    end else if ((1'b1 == ap_CS_fsm_state2)) begin
-        void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_ce1 = grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_RESET_ROW_ACC_fu_237_void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_ce1;
+    if ((1'b1 == ap_CS_fsm_state32)) begin
+        void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_ce1 = grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_PIXEL_STATS_fu_308_void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_ce1;
+    end else if ((1'b1 == ap_CS_fsm_state12)) begin
+        void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_ce1 = grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_250_void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_ce1;
     end else begin
         void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_ce1 = 1'b0;
     end
 end
 
 always @ (*) begin
-    if ((1'b1 == ap_CS_fsm_state16)) begin
-        void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_d0 = grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_BIAS_STATS_fu_330_void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_d0;
+    if ((1'b1 == ap_CS_fsm_state32)) begin
+        void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_d0 = grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_PIXEL_STATS_fu_308_void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_d0;
     end else if ((1'b1 == ap_CS_fsm_state12)) begin
-        void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_d0 = grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_288_void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_d0;
+        void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_d0 = grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_250_void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_d0;
     end else if ((1'b1 == ap_CS_fsm_state2)) begin
-        void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_d0 = grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_RESET_ROW_ACC_fu_237_void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_d0;
+        void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_d0 = grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_RESET_ROW_ACC_fu_214_void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_d0;
     end else begin
         void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_d0 = 'bx;
     end
 end
 
 always @ (*) begin
-    if ((1'b1 == ap_CS_fsm_state16)) begin
-        void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_we0 = grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_BIAS_STATS_fu_330_void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_we0;
+    if ((1'b1 == ap_CS_fsm_state32)) begin
+        void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_we0 = grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_PIXEL_STATS_fu_308_void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_we0;
     end else if ((1'b1 == ap_CS_fsm_state12)) begin
-        void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_we0 = grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_288_void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_we0;
+        void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_we0 = grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_250_void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_we0;
     end else if ((1'b1 == ap_CS_fsm_state2)) begin
-        void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_we0 = grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_RESET_ROW_ACC_fu_237_void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_we0;
+        void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_we0 = grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_RESET_ROW_ACC_fu_214_void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_we0;
     end else begin
         void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_we0 = 1'b0;
     end
 end
 
 always @ (*) begin
-    if ((1'b1 == ap_CS_fsm_state2)) begin
-        void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_we1 = grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_RESET_ROW_ACC_fu_237_void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_we1;
-    end else begin
-        void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_we1 = 1'b0;
-    end
-end
-
-always @ (*) begin
     case (ap_CS_fsm)
         ap_ST_fsm_state1 : begin
-            if (((1'b1 == ap_CS_fsm_state1) & (ap_start == 1'b1))) begin
+            if (((ap_start == 1'b1) & (1'b1 == ap_CS_fsm_state1))) begin
                 ap_NS_fsm = ap_ST_fsm_state2;
             end else begin
                 ap_NS_fsm = ap_ST_fsm_state1;
             end
         end
         ap_ST_fsm_state2 : begin
-            if (((1'b0 == ap_block_state2_on_subcall_done) & (1'b1 == ap_CS_fsm_state2))) begin
+            if (((grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_RESET_ROW_ACC_fu_214_ap_done == 1'b1) & (1'b1 == ap_CS_fsm_state2))) begin
                 ap_NS_fsm = ap_ST_fsm_state3;
             end else begin
                 ap_NS_fsm = ap_ST_fsm_state2;
             end
         end
         ap_ST_fsm_state3 : begin
-            if (((1'b1 == ap_CS_fsm_state3) & (m_axi_gmem_weight_0_ARREADY == 1'b1))) begin
+            if (((m_axi_gmem_weight_0_ARREADY == 1'b1) & (1'b1 == ap_CS_fsm_state3))) begin
                 ap_NS_fsm = ap_ST_fsm_state4;
             end else begin
                 ap_NS_fsm = ap_ST_fsm_state3;
@@ -7688,35 +7235,27 @@ always @ (*) begin
             ap_NS_fsm = ap_ST_fsm_state12;
         end
         ap_ST_fsm_state12 : begin
-            if (((grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_288_ap_done == 1'b1) & (1'b1 == ap_CS_fsm_state12))) begin
+            if (((grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_250_ap_done == 1'b1) & (1'b1 == ap_CS_fsm_state12))) begin
                 ap_NS_fsm = ap_ST_fsm_state13;
             end else begin
                 ap_NS_fsm = ap_ST_fsm_state12;
             end
         end
         ap_ST_fsm_state13 : begin
-            if (((m_axi_gmem_out_0_AWREADY == 1'b1) & (1'b1 == ap_CS_fsm_state13))) begin
+            if (((1'b1 == ap_CS_fsm_state13) & (m_axi_gmem_param_0_ARREADY == 1'b1))) begin
                 ap_NS_fsm = ap_ST_fsm_state14;
             end else begin
                 ap_NS_fsm = ap_ST_fsm_state13;
             end
         end
         ap_ST_fsm_state14 : begin
-            if (((1'b1 == ap_CS_fsm_state14) & (icmp_ln238_fu_582_p2 == 1'd1))) begin
-                ap_NS_fsm = ap_ST_fsm_state137;
-            end else begin
-                ap_NS_fsm = ap_ST_fsm_state15;
-            end
+            ap_NS_fsm = ap_ST_fsm_state15;
         end
         ap_ST_fsm_state15 : begin
             ap_NS_fsm = ap_ST_fsm_state16;
         end
         ap_ST_fsm_state16 : begin
-            if (((1'b1 == ap_CS_fsm_state16) & (grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_BIAS_STATS_fu_330_ap_done == 1'b1))) begin
-                ap_NS_fsm = ap_ST_fsm_state17;
-            end else begin
-                ap_NS_fsm = ap_ST_fsm_state16;
-            end
+            ap_NS_fsm = ap_ST_fsm_state17;
         end
         ap_ST_fsm_state17 : begin
             ap_NS_fsm = ap_ST_fsm_state18;
@@ -7734,10 +7273,18 @@ always @ (*) begin
             ap_NS_fsm = ap_ST_fsm_state22;
         end
         ap_ST_fsm_state22 : begin
-            ap_NS_fsm = ap_ST_fsm_state23;
+            if (((grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_LOAD_B_fu_292_ap_done == 1'b1) & (1'b1 == ap_CS_fsm_state22))) begin
+                ap_NS_fsm = ap_ST_fsm_state23;
+            end else begin
+                ap_NS_fsm = ap_ST_fsm_state22;
+            end
         end
         ap_ST_fsm_state23 : begin
-            ap_NS_fsm = ap_ST_fsm_state24;
+            if (((1'b1 == ap_CS_fsm_state23) & (m_axi_gmem_param_0_ARREADY == 1'b1))) begin
+                ap_NS_fsm = ap_ST_fsm_state24;
+            end else begin
+                ap_NS_fsm = ap_ST_fsm_state23;
+            end
         end
         ap_ST_fsm_state24 : begin
             ap_NS_fsm = ap_ST_fsm_state25;
@@ -7764,10 +7311,18 @@ always @ (*) begin
             ap_NS_fsm = ap_ST_fsm_state32;
         end
         ap_ST_fsm_state32 : begin
-            ap_NS_fsm = ap_ST_fsm_state33;
+            if (((1'b0 == ap_block_state32_on_subcall_done) & (1'b1 == ap_CS_fsm_state32))) begin
+                ap_NS_fsm = ap_ST_fsm_state33;
+            end else begin
+                ap_NS_fsm = ap_ST_fsm_state32;
+            end
         end
         ap_ST_fsm_state33 : begin
-            ap_NS_fsm = ap_ST_fsm_state34;
+            if (((1'b1 == ap_CS_fsm_state33) & (m_axi_gmem_param_0_ARREADY == 1'b1))) begin
+                ap_NS_fsm = ap_ST_fsm_state34;
+            end else begin
+                ap_NS_fsm = ap_ST_fsm_state33;
+            end
         end
         ap_ST_fsm_state34 : begin
             ap_NS_fsm = ap_ST_fsm_state35;
@@ -7794,311 +7349,20 @@ always @ (*) begin
             ap_NS_fsm = ap_ST_fsm_state42;
         end
         ap_ST_fsm_state42 : begin
-            ap_NS_fsm = ap_ST_fsm_state43;
+            if (((1'b1 == ap_CS_fsm_state42) & (grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_LOAD_BE_fu_350_ap_done == 1'b1))) begin
+                ap_NS_fsm = ap_ST_fsm_state43;
+            end else begin
+                ap_NS_fsm = ap_ST_fsm_state42;
+            end
         end
         ap_ST_fsm_state43 : begin
             ap_NS_fsm = ap_ST_fsm_state44;
         end
         ap_ST_fsm_state44 : begin
-            ap_NS_fsm = ap_ST_fsm_state45;
-        end
-        ap_ST_fsm_state45 : begin
-            ap_NS_fsm = ap_ST_fsm_state46;
-        end
-        ap_ST_fsm_state46 : begin
-            ap_NS_fsm = ap_ST_fsm_state47;
-        end
-        ap_ST_fsm_state47 : begin
-            ap_NS_fsm = ap_ST_fsm_state48;
-        end
-        ap_ST_fsm_state48 : begin
-            ap_NS_fsm = ap_ST_fsm_state49;
-        end
-        ap_ST_fsm_state49 : begin
-            ap_NS_fsm = ap_ST_fsm_state50;
-        end
-        ap_ST_fsm_state50 : begin
-            ap_NS_fsm = ap_ST_fsm_state51;
-        end
-        ap_ST_fsm_state51 : begin
-            ap_NS_fsm = ap_ST_fsm_state52;
-        end
-        ap_ST_fsm_state52 : begin
-            ap_NS_fsm = ap_ST_fsm_state53;
-        end
-        ap_ST_fsm_state53 : begin
-            ap_NS_fsm = ap_ST_fsm_state54;
-        end
-        ap_ST_fsm_state54 : begin
-            ap_NS_fsm = ap_ST_fsm_state55;
-        end
-        ap_ST_fsm_state55 : begin
-            ap_NS_fsm = ap_ST_fsm_state56;
-        end
-        ap_ST_fsm_state56 : begin
-            ap_NS_fsm = ap_ST_fsm_state57;
-        end
-        ap_ST_fsm_state57 : begin
-            ap_NS_fsm = ap_ST_fsm_state58;
-        end
-        ap_ST_fsm_state58 : begin
-            ap_NS_fsm = ap_ST_fsm_state59;
-        end
-        ap_ST_fsm_state59 : begin
-            ap_NS_fsm = ap_ST_fsm_state60;
-        end
-        ap_ST_fsm_state60 : begin
-            ap_NS_fsm = ap_ST_fsm_state61;
-        end
-        ap_ST_fsm_state61 : begin
-            ap_NS_fsm = ap_ST_fsm_state62;
-        end
-        ap_ST_fsm_state62 : begin
-            ap_NS_fsm = ap_ST_fsm_state63;
-        end
-        ap_ST_fsm_state63 : begin
-            ap_NS_fsm = ap_ST_fsm_state64;
-        end
-        ap_ST_fsm_state64 : begin
-            ap_NS_fsm = ap_ST_fsm_state65;
-        end
-        ap_ST_fsm_state65 : begin
-            ap_NS_fsm = ap_ST_fsm_state66;
-        end
-        ap_ST_fsm_state66 : begin
-            ap_NS_fsm = ap_ST_fsm_state67;
-        end
-        ap_ST_fsm_state67 : begin
-            ap_NS_fsm = ap_ST_fsm_state68;
-        end
-        ap_ST_fsm_state68 : begin
-            ap_NS_fsm = ap_ST_fsm_state69;
-        end
-        ap_ST_fsm_state69 : begin
-            ap_NS_fsm = ap_ST_fsm_state70;
-        end
-        ap_ST_fsm_state70 : begin
-            ap_NS_fsm = ap_ST_fsm_state71;
-        end
-        ap_ST_fsm_state71 : begin
-            ap_NS_fsm = ap_ST_fsm_state72;
-        end
-        ap_ST_fsm_state72 : begin
-            ap_NS_fsm = ap_ST_fsm_state73;
-        end
-        ap_ST_fsm_state73 : begin
-            ap_NS_fsm = ap_ST_fsm_state74;
-        end
-        ap_ST_fsm_state74 : begin
-            ap_NS_fsm = ap_ST_fsm_state75;
-        end
-        ap_ST_fsm_state75 : begin
-            ap_NS_fsm = ap_ST_fsm_state76;
-        end
-        ap_ST_fsm_state76 : begin
-            ap_NS_fsm = ap_ST_fsm_state77;
-        end
-        ap_ST_fsm_state77 : begin
-            ap_NS_fsm = ap_ST_fsm_state78;
-        end
-        ap_ST_fsm_state78 : begin
-            ap_NS_fsm = ap_ST_fsm_state79;
-        end
-        ap_ST_fsm_state79 : begin
-            ap_NS_fsm = ap_ST_fsm_state80;
-        end
-        ap_ST_fsm_state80 : begin
-            ap_NS_fsm = ap_ST_fsm_state81;
-        end
-        ap_ST_fsm_state81 : begin
-            ap_NS_fsm = ap_ST_fsm_state82;
-        end
-        ap_ST_fsm_state82 : begin
-            ap_NS_fsm = ap_ST_fsm_state83;
-        end
-        ap_ST_fsm_state83 : begin
-            ap_NS_fsm = ap_ST_fsm_state84;
-        end
-        ap_ST_fsm_state84 : begin
-            ap_NS_fsm = ap_ST_fsm_state85;
-        end
-        ap_ST_fsm_state85 : begin
-            ap_NS_fsm = ap_ST_fsm_state86;
-        end
-        ap_ST_fsm_state86 : begin
-            ap_NS_fsm = ap_ST_fsm_state87;
-        end
-        ap_ST_fsm_state87 : begin
-            ap_NS_fsm = ap_ST_fsm_state88;
-        end
-        ap_ST_fsm_state88 : begin
-            ap_NS_fsm = ap_ST_fsm_state89;
-        end
-        ap_ST_fsm_state89 : begin
-            ap_NS_fsm = ap_ST_fsm_state90;
-        end
-        ap_ST_fsm_state90 : begin
-            ap_NS_fsm = ap_ST_fsm_state91;
-        end
-        ap_ST_fsm_state91 : begin
-            ap_NS_fsm = ap_ST_fsm_state92;
-        end
-        ap_ST_fsm_state92 : begin
-            ap_NS_fsm = ap_ST_fsm_state93;
-        end
-        ap_ST_fsm_state93 : begin
-            ap_NS_fsm = ap_ST_fsm_state94;
-        end
-        ap_ST_fsm_state94 : begin
-            ap_NS_fsm = ap_ST_fsm_state95;
-        end
-        ap_ST_fsm_state95 : begin
-            ap_NS_fsm = ap_ST_fsm_state96;
-        end
-        ap_ST_fsm_state96 : begin
-            ap_NS_fsm = ap_ST_fsm_state97;
-        end
-        ap_ST_fsm_state97 : begin
-            ap_NS_fsm = ap_ST_fsm_state98;
-        end
-        ap_ST_fsm_state98 : begin
-            ap_NS_fsm = ap_ST_fsm_state99;
-        end
-        ap_ST_fsm_state99 : begin
-            ap_NS_fsm = ap_ST_fsm_state100;
-        end
-        ap_ST_fsm_state100 : begin
-            ap_NS_fsm = ap_ST_fsm_state101;
-        end
-        ap_ST_fsm_state101 : begin
-            ap_NS_fsm = ap_ST_fsm_state102;
-        end
-        ap_ST_fsm_state102 : begin
-            ap_NS_fsm = ap_ST_fsm_state103;
-        end
-        ap_ST_fsm_state103 : begin
-            ap_NS_fsm = ap_ST_fsm_state104;
-        end
-        ap_ST_fsm_state104 : begin
-            ap_NS_fsm = ap_ST_fsm_state105;
-        end
-        ap_ST_fsm_state105 : begin
-            ap_NS_fsm = ap_ST_fsm_state106;
-        end
-        ap_ST_fsm_state106 : begin
-            ap_NS_fsm = ap_ST_fsm_state107;
-        end
-        ap_ST_fsm_state107 : begin
-            ap_NS_fsm = ap_ST_fsm_state108;
-        end
-        ap_ST_fsm_state108 : begin
-            ap_NS_fsm = ap_ST_fsm_state109;
-        end
-        ap_ST_fsm_state109 : begin
-            ap_NS_fsm = ap_ST_fsm_state110;
-        end
-        ap_ST_fsm_state110 : begin
-            ap_NS_fsm = ap_ST_fsm_state111;
-        end
-        ap_ST_fsm_state111 : begin
-            ap_NS_fsm = ap_ST_fsm_state112;
-        end
-        ap_ST_fsm_state112 : begin
-            ap_NS_fsm = ap_ST_fsm_state113;
-        end
-        ap_ST_fsm_state113 : begin
-            ap_NS_fsm = ap_ST_fsm_state114;
-        end
-        ap_ST_fsm_state114 : begin
-            ap_NS_fsm = ap_ST_fsm_state115;
-        end
-        ap_ST_fsm_state115 : begin
-            ap_NS_fsm = ap_ST_fsm_state116;
-        end
-        ap_ST_fsm_state116 : begin
-            ap_NS_fsm = ap_ST_fsm_state117;
-        end
-        ap_ST_fsm_state117 : begin
-            ap_NS_fsm = ap_ST_fsm_state118;
-        end
-        ap_ST_fsm_state118 : begin
-            ap_NS_fsm = ap_ST_fsm_state119;
-        end
-        ap_ST_fsm_state119 : begin
-            ap_NS_fsm = ap_ST_fsm_state120;
-        end
-        ap_ST_fsm_state120 : begin
-            ap_NS_fsm = ap_ST_fsm_state121;
-        end
-        ap_ST_fsm_state121 : begin
-            ap_NS_fsm = ap_ST_fsm_state122;
-        end
-        ap_ST_fsm_state122 : begin
-            ap_NS_fsm = ap_ST_fsm_state123;
-        end
-        ap_ST_fsm_state123 : begin
-            ap_NS_fsm = ap_ST_fsm_state124;
-        end
-        ap_ST_fsm_state124 : begin
-            ap_NS_fsm = ap_ST_fsm_state125;
-        end
-        ap_ST_fsm_state125 : begin
-            ap_NS_fsm = ap_ST_fsm_state126;
-        end
-        ap_ST_fsm_state126 : begin
-            ap_NS_fsm = ap_ST_fsm_state127;
-        end
-        ap_ST_fsm_state127 : begin
-            ap_NS_fsm = ap_ST_fsm_state128;
-        end
-        ap_ST_fsm_state128 : begin
-            ap_NS_fsm = ap_ST_fsm_state129;
-        end
-        ap_ST_fsm_state129 : begin
-            ap_NS_fsm = ap_ST_fsm_state130;
-        end
-        ap_ST_fsm_state130 : begin
-            ap_NS_fsm = ap_ST_fsm_state131;
-        end
-        ap_ST_fsm_state131 : begin
-            ap_NS_fsm = ap_ST_fsm_state132;
-        end
-        ap_ST_fsm_state132 : begin
-            ap_NS_fsm = ap_ST_fsm_state133;
-        end
-        ap_ST_fsm_state133 : begin
-            ap_NS_fsm = ap_ST_fsm_state134;
-        end
-        ap_ST_fsm_state134 : begin
-            ap_NS_fsm = ap_ST_fsm_state135;
-        end
-        ap_ST_fsm_state135 : begin
-            ap_NS_fsm = ap_ST_fsm_state136;
-        end
-        ap_ST_fsm_state136 : begin
-            if (((1'b1 == ap_CS_fsm_state136) & (grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_NORM_WRITE_fu_370_ap_done == 1'b1))) begin
-                ap_NS_fsm = ap_ST_fsm_state14;
-            end else begin
-                ap_NS_fsm = ap_ST_fsm_state136;
-            end
-        end
-        ap_ST_fsm_state137 : begin
-            ap_NS_fsm = ap_ST_fsm_state138;
-        end
-        ap_ST_fsm_state138 : begin
-            ap_NS_fsm = ap_ST_fsm_state139;
-        end
-        ap_ST_fsm_state139 : begin
-            ap_NS_fsm = ap_ST_fsm_state140;
-        end
-        ap_ST_fsm_state140 : begin
-            ap_NS_fsm = ap_ST_fsm_state141;
-        end
-        ap_ST_fsm_state141 : begin
-            if (((m_axi_gmem_out_0_BVALID == 1'b1) & (1'b1 == ap_CS_fsm_state141))) begin
+            if (((1'b1 == ap_CS_fsm_state44) & (grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_PIXEL_NORM_fu_358_ap_done == 1'b1))) begin
                 ap_NS_fsm = ap_ST_fsm_state1;
             end else begin
-                ap_NS_fsm = ap_ST_fsm_state141;
+                ap_NS_fsm = ap_ST_fsm_state44;
             end
         end
         default : begin
@@ -8107,17 +7371,9 @@ always @ (*) begin
     endcase
 end
 
-assign add52_fu_518_p2 = (ho_cast_fu_514_p1 + 7'd1);
-
-assign add_ln238_1_fu_588_p2 = (wo_1_fu_156 + 7'd1);
-
-assign add_ln238_fu_553_p2 = (zext_ln238_1_fu_549_p1 + Y);
+assign add_i90_fu_434_p2 = (ho_cast_fu_430_p1 + 7'd1);
 
 assign ap_CS_fsm_state1 = ap_CS_fsm[32'd0];
-
-assign ap_CS_fsm_state103 = ap_CS_fsm[32'd102];
-
-assign ap_CS_fsm_state104 = ap_CS_fsm[32'd103];
 
 assign ap_CS_fsm_state11 = ap_CS_fsm[32'd10];
 
@@ -8125,65 +7381,55 @@ assign ap_CS_fsm_state12 = ap_CS_fsm[32'd11];
 
 assign ap_CS_fsm_state13 = ap_CS_fsm[32'd12];
 
-assign ap_CS_fsm_state133 = ap_CS_fsm[32'd132];
-
-assign ap_CS_fsm_state134 = ap_CS_fsm[32'd133];
-
-assign ap_CS_fsm_state135 = ap_CS_fsm[32'd134];
-
-assign ap_CS_fsm_state136 = ap_CS_fsm[32'd135];
-
-assign ap_CS_fsm_state14 = ap_CS_fsm[32'd13];
-
-assign ap_CS_fsm_state141 = ap_CS_fsm[32'd140];
-
-assign ap_CS_fsm_state15 = ap_CS_fsm[32'd14];
-
-assign ap_CS_fsm_state16 = ap_CS_fsm[32'd15];
-
-assign ap_CS_fsm_state17 = ap_CS_fsm[32'd16];
-
 assign ap_CS_fsm_state2 = ap_CS_fsm[32'd1];
 
-assign ap_CS_fsm_state24 = ap_CS_fsm[32'd23];
+assign ap_CS_fsm_state21 = ap_CS_fsm[32'd20];
+
+assign ap_CS_fsm_state22 = ap_CS_fsm[32'd21];
+
+assign ap_CS_fsm_state23 = ap_CS_fsm[32'd22];
+
+assign ap_CS_fsm_state29 = ap_CS_fsm[32'd28];
 
 assign ap_CS_fsm_state3 = ap_CS_fsm[32'd2];
 
-assign ap_CS_fsm_state46 = ap_CS_fsm[32'd45];
+assign ap_CS_fsm_state30 = ap_CS_fsm[32'd29];
 
-assign ap_CS_fsm_state47 = ap_CS_fsm[32'd46];
+assign ap_CS_fsm_state31 = ap_CS_fsm[32'd30];
 
-assign ap_CS_fsm_state48 = ap_CS_fsm[32'd47];
+assign ap_CS_fsm_state32 = ap_CS_fsm[32'd31];
 
-assign ap_CS_fsm_state53 = ap_CS_fsm[32'd52];
+assign ap_CS_fsm_state33 = ap_CS_fsm[32'd32];
 
-assign ap_CS_fsm_state54 = ap_CS_fsm[32'd53];
+assign ap_CS_fsm_state41 = ap_CS_fsm[32'd40];
 
-assign ap_CS_fsm_state64 = ap_CS_fsm[32'd63];
+assign ap_CS_fsm_state42 = ap_CS_fsm[32'd41];
 
-assign ap_CS_fsm_state65 = ap_CS_fsm[32'd64];
+assign ap_CS_fsm_state43 = ap_CS_fsm[32'd42];
 
-assign ap_CS_fsm_state75 = ap_CS_fsm[32'd74];
+assign ap_CS_fsm_state44 = ap_CS_fsm[32'd43];
 
-assign ap_CS_fsm_state76 = ap_CS_fsm[32'd75];
+assign ap_NS_fsm_state31 = ap_NS_fsm[32'd30];
 
 always @ (*) begin
-    ap_block_state2_on_subcall_done = ((grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_LOAD_PARAMS_fu_273_ap_done == 1'b0) | (grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_RESET_ROW_ACC_fu_237_ap_done == 1'b0));
+    ap_block_state32_on_subcall_done = ((grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_PIXEL_STATS_fu_308_ap_done == 1'b0) | (grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_LOAD_G_fu_300_ap_done == 1'b0));
 end
 
-assign grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_288_ap_start = grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_288_ap_start_reg;
+assign grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_250_ap_start = grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_250_ap_start_reg;
 
-assign grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_BIAS_STATS_fu_330_ap_start = grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_BIAS_STATS_fu_330_ap_start_reg;
+assign grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_LOAD_BE_fu_350_ap_start = grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_LOAD_BE_fu_350_ap_start_reg;
 
-assign grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_LOAD_PARAMS_fu_273_ap_start = grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_LOAD_PARAMS_fu_273_ap_start_reg;
+assign grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_LOAD_B_fu_292_ap_start = grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_LOAD_B_fu_292_ap_start_reg;
 
-assign grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_NORM_WRITE_fu_370_ap_start = grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_NORM_WRITE_fu_370_ap_start_reg;
+assign grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_LOAD_G_fu_300_ap_start = grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_LOAD_G_fu_300_ap_start_reg;
 
-assign grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_RESET_ROW_ACC_fu_237_ap_start = grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_RESET_ROW_ACC_fu_237_ap_start_reg;
+assign grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_PIXEL_NORM_fu_358_ap_start = grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_PIXEL_NORM_fu_358_ap_start_reg;
 
-assign ho_cast_fu_514_p1 = ho;
+assign grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_PIXEL_STATS_fu_308_ap_start = grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_PIXEL_STATS_fu_308_ap_start_reg;
 
-assign icmp_ln238_fu_582_p2 = ((wo_1_fu_156 == 7'd64) ? 1'b1 : 1'b0);
+assign grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_RESET_ROW_ACC_fu_214_ap_start = grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_RESET_ROW_ACC_fu_214_ap_start_reg;
+
+assign ho_cast_fu_430_p1 = ho;
 
 assign m_axi_gmem_out_0_ARADDR = 64'd0;
 
@@ -8209,41 +7455,45 @@ assign m_axi_gmem_out_0_ARUSER = 1'd0;
 
 assign m_axi_gmem_out_0_ARVALID = 1'b0;
 
+assign m_axi_gmem_out_0_AWADDR = grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_PIXEL_NORM_fu_358_m_axi_gmem_out_0_AWADDR;
+
+assign m_axi_gmem_out_0_AWBURST = grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_PIXEL_NORM_fu_358_m_axi_gmem_out_0_AWBURST;
+
+assign m_axi_gmem_out_0_AWCACHE = grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_PIXEL_NORM_fu_358_m_axi_gmem_out_0_AWCACHE;
+
+assign m_axi_gmem_out_0_AWID = grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_PIXEL_NORM_fu_358_m_axi_gmem_out_0_AWID;
+
+assign m_axi_gmem_out_0_AWLEN = grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_PIXEL_NORM_fu_358_m_axi_gmem_out_0_AWLEN;
+
+assign m_axi_gmem_out_0_AWLOCK = grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_PIXEL_NORM_fu_358_m_axi_gmem_out_0_AWLOCK;
+
+assign m_axi_gmem_out_0_AWPROT = grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_PIXEL_NORM_fu_358_m_axi_gmem_out_0_AWPROT;
+
+assign m_axi_gmem_out_0_AWQOS = grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_PIXEL_NORM_fu_358_m_axi_gmem_out_0_AWQOS;
+
+assign m_axi_gmem_out_0_AWREGION = grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_PIXEL_NORM_fu_358_m_axi_gmem_out_0_AWREGION;
+
+assign m_axi_gmem_out_0_AWSIZE = grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_PIXEL_NORM_fu_358_m_axi_gmem_out_0_AWSIZE;
+
+assign m_axi_gmem_out_0_AWUSER = grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_PIXEL_NORM_fu_358_m_axi_gmem_out_0_AWUSER;
+
+assign m_axi_gmem_out_0_AWVALID = grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_PIXEL_NORM_fu_358_m_axi_gmem_out_0_AWVALID;
+
+assign m_axi_gmem_out_0_BREADY = grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_PIXEL_NORM_fu_358_m_axi_gmem_out_0_BREADY;
+
 assign m_axi_gmem_out_0_RREADY = 1'b0;
 
-assign m_axi_gmem_out_0_WDATA = grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_NORM_WRITE_fu_370_m_axi_gmem_out_0_WDATA;
+assign m_axi_gmem_out_0_WDATA = grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_PIXEL_NORM_fu_358_m_axi_gmem_out_0_WDATA;
 
-assign m_axi_gmem_out_0_WID = grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_NORM_WRITE_fu_370_m_axi_gmem_out_0_WID;
+assign m_axi_gmem_out_0_WID = grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_PIXEL_NORM_fu_358_m_axi_gmem_out_0_WID;
 
-assign m_axi_gmem_out_0_WLAST = grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_NORM_WRITE_fu_370_m_axi_gmem_out_0_WLAST;
+assign m_axi_gmem_out_0_WLAST = grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_PIXEL_NORM_fu_358_m_axi_gmem_out_0_WLAST;
 
-assign m_axi_gmem_out_0_WSTRB = grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_NORM_WRITE_fu_370_m_axi_gmem_out_0_WSTRB;
+assign m_axi_gmem_out_0_WSTRB = grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_PIXEL_NORM_fu_358_m_axi_gmem_out_0_WSTRB;
 
-assign m_axi_gmem_out_0_WUSER = grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_NORM_WRITE_fu_370_m_axi_gmem_out_0_WUSER;
+assign m_axi_gmem_out_0_WUSER = grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_PIXEL_NORM_fu_358_m_axi_gmem_out_0_WUSER;
 
-assign m_axi_gmem_param_0_ARADDR = grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_LOAD_PARAMS_fu_273_m_axi_gmem_param_0_ARADDR;
-
-assign m_axi_gmem_param_0_ARBURST = grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_LOAD_PARAMS_fu_273_m_axi_gmem_param_0_ARBURST;
-
-assign m_axi_gmem_param_0_ARCACHE = grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_LOAD_PARAMS_fu_273_m_axi_gmem_param_0_ARCACHE;
-
-assign m_axi_gmem_param_0_ARID = grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_LOAD_PARAMS_fu_273_m_axi_gmem_param_0_ARID;
-
-assign m_axi_gmem_param_0_ARLEN = grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_LOAD_PARAMS_fu_273_m_axi_gmem_param_0_ARLEN;
-
-assign m_axi_gmem_param_0_ARLOCK = grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_LOAD_PARAMS_fu_273_m_axi_gmem_param_0_ARLOCK;
-
-assign m_axi_gmem_param_0_ARPROT = grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_LOAD_PARAMS_fu_273_m_axi_gmem_param_0_ARPROT;
-
-assign m_axi_gmem_param_0_ARQOS = grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_LOAD_PARAMS_fu_273_m_axi_gmem_param_0_ARQOS;
-
-assign m_axi_gmem_param_0_ARREGION = grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_LOAD_PARAMS_fu_273_m_axi_gmem_param_0_ARREGION;
-
-assign m_axi_gmem_param_0_ARSIZE = grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_LOAD_PARAMS_fu_273_m_axi_gmem_param_0_ARSIZE;
-
-assign m_axi_gmem_param_0_ARUSER = grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_LOAD_PARAMS_fu_273_m_axi_gmem_param_0_ARUSER;
-
-assign m_axi_gmem_param_0_ARVALID = grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_LOAD_PARAMS_fu_273_m_axi_gmem_param_0_ARVALID;
+assign m_axi_gmem_out_0_WVALID = grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_PIXEL_NORM_fu_358_m_axi_gmem_out_0_WVALID;
 
 assign m_axi_gmem_param_0_AWADDR = 64'd0;
 
@@ -8270,8 +7520,6 @@ assign m_axi_gmem_param_0_AWUSER = 1'd0;
 assign m_axi_gmem_param_0_AWVALID = 1'b0;
 
 assign m_axi_gmem_param_0_BREADY = 1'b0;
-
-assign m_axi_gmem_param_0_RREADY = grp_UpConv_Fused_Row_8_32_32_480_240_Pipeline_LOAD_PARAMS_fu_273_m_axi_gmem_param_0_RREADY;
 
 assign m_axi_gmem_param_0_WDATA = 256'd0;
 
@@ -8323,32 +7571,30 @@ assign m_axi_gmem_weight_0_WUSER = 1'd0;
 
 assign m_axi_gmem_weight_0_WVALID = 1'b0;
 
-assign p_shl3_fu_525_p3 = {{ho}, {15'd0}};
+assign mul43_i_fu_504_p3 = {{ho}, {6'd0}};
 
-assign p_shl_fu_602_p3 = {{trunc_ln246_fu_598_p1}, {4'd0}};
+assign sext_ln185_fu_451_p1 = trunc_ln3_fu_441_p4;
 
-assign sext_ln135_fu_503_p1 = trunc_ln_fu_493_p4;
+assign sext_ln189_fu_472_p1 = trunc_ln4_fu_462_p4;
 
-assign sext_ln238_fu_569_p1 = $signed(trunc_ln3_reg_689);
+assign sext_ln193_fu_493_p1 = trunc_ln6_fu_483_p4;
 
-assign sub_ln238_fu_543_p2 = (p_shl3_fu_525_p3 - zext_ln238_fu_539_p1);
+assign sext_ln356_fu_419_p1 = trunc_ln_fu_409_p4;
 
-assign sub_ln246_fu_610_p2 = (p_shl_fu_602_p3 - zext_ln246_fu_594_p1);
+assign trunc_ln3_fu_441_p4 = {{B_ptr[63:5]}};
 
-assign tmp_10_fu_532_p3 = {{ho}, {11'd0}};
+assign trunc_ln4_fu_462_p4 = {{G_ptr[63:5]}};
 
-assign trunc_ln246_fu_598_p1 = wo_1_fu_156[5:0];
+assign trunc_ln6_fu_483_p4 = {{BE_ptr[63:5]}};
 
-assign trunc_ln_fu_493_p4 = {{W_ptr[63:5]}};
+assign trunc_ln_fu_409_p4 = {{W_ptr[63:5]}};
 
-assign x_buf_address0 = grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_288_x_buf_address0;
+assign x_buf_address0 = grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_250_x_buf_address0;
 
-assign x_buf_ce0 = grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_288_x_buf_ce0;
+assign x_buf_ce0 = grp_UpConv_Fused_Row_8_32_32_480_240_Outline_TILE_LOOP_fu_250_x_buf_ce0;
 
-assign zext_ln238_1_fu_549_p1 = sub_ln238_fu_543_p2;
-
-assign zext_ln238_fu_539_p1 = tmp_10_fu_532_p3;
-
-assign zext_ln246_fu_594_p1 = wo_1_fu_156;
+always @ (posedge ap_clk) begin
+    mul43_i_reg_577[5:0] <= 6'b000000;
+end
 
 endmodule //upconv_core_top_ucb1_UpConv_Fused_Row_8_32_32_480_240_s

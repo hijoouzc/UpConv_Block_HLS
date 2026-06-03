@@ -11,7 +11,7 @@ if {${::AESL::PGuard_autoexp_gen}} {
 if {${::AESL::PGuard_autoexp_gen}} {
 if {[info proc ::AESL_LIB_XILADAPTER::xil_bram_gen] == "::AESL_LIB_XILADAPTER::xil_bram_gen"} {
 eval "::AESL_LIB_XILADAPTER::xil_bram_gen { \
-    id 3313 \
+    id 694 \
     name x_buf \
     reset_level 1 \
     sync_rst true \
@@ -29,7 +29,7 @@ puts "@W \[IMPL-110\] Cannot find bus interface model in the library. Ignored ge
 # Direct connection:
 if {${::AESL::PGuard_autoexp_gen}} {
 eval "cg_default_interface_gen_dc { \
-    id 3309 \
+    id 689 \
     name gmem_in \
     type other \
     dir I \
@@ -44,7 +44,7 @@ eval "cg_default_interface_gen_dc { \
 # Direct connection:
 if {${::AESL::PGuard_autoexp_gen}} {
 eval "cg_default_interface_gen_dc { \
-    id 3310 \
+    id 690 \
     name empty \
     type other \
     dir I \
@@ -52,37 +52,52 @@ eval "cg_default_interface_gen_dc { \
     sync_rst true \
     corename dc_empty \
     op interface \
-    ports { empty { I 5 vector } } \
+    ports { empty { I 13 vector } } \
 } "
 }
 
 # Direct connection:
 if {${::AESL::PGuard_autoexp_gen}} {
 eval "cg_default_interface_gen_dc { \
-    id 3311 \
-    name sext_ln325 \
+    id 691 \
+    name shl_ln1 \
     type other \
     dir I \
     reset_level 1 \
     sync_rst true \
-    corename dc_sext_ln325 \
+    corename dc_shl_ln1 \
     op interface \
-    ports { sext_ln325 { I 59 vector } } \
+    ports { shl_ln1 { I 25 vector } } \
 } "
 }
 
 # Direct connection:
 if {${::AESL::PGuard_autoexp_gen}} {
 eval "cg_default_interface_gen_dc { \
-    id 3312 \
-    name zext_ln326 \
+    id 692 \
+    name base_buf \
     type other \
     dir I \
     reset_level 1 \
     sync_rst true \
-    corename dc_zext_ln326 \
+    corename dc_base_buf \
     op interface \
-    ports { zext_ln326 { I 8 vector } } \
+    ports { base_buf { I 11 vector } } \
+} "
+}
+
+# Direct connection:
+if {${::AESL::PGuard_autoexp_gen}} {
+eval "cg_default_interface_gen_dc { \
+    id 693 \
+    name sext_ln397 \
+    type other \
+    dir I \
+    reset_level 1 \
+    sync_rst true \
+    corename dc_sext_ln397 \
+    op interface \
+    ports { sext_ln397 { I 59 vector } } \
 } "
 }
 

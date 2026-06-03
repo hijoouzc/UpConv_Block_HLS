@@ -1,26 +1,27 @@
 INFO: [SIM 2] *************** CSIM start ***************
 INFO: [SIM 4] CSIM will launch CLANG as the compiler.
    Compiling ../../../../../test.cpp in debug mode
+   Compiling ../../../../../gen/upconv_core_top.cpp in debug mode
    Generating csim.exe
 ====================================================
    UPCONV CORE FULL DIMENSION VERIFICATION          
 ====================================================
 
 ====================================================
-   MINI_TEST (16x16x16 -> 32x32x16)
-   16x16x16 -> 32x32x16
+   MINI_TEST
+   16x16x64 -> 32x32x32
 ====================================================
 Packing inputs...
 Running HLS kernel...
-HLS CSIM time: 0.394586 s
+HLS CSIM time: 2.96676 s
 Unpacking outputs...
 Running CPU golden reference...
-Golden CPU time: 0.00147179 s
-Output Sum: 7146.64
-Max Error : 0.00373793
-MSE       : 2.02862e-06
+Golden CPU time: 0.00802792 s
+Output Sum: 14292.7
+Max Error : 0.00373968
+MSE       : 2.43692e-06
 ====================================================
-MINI_TEST (16x16x16 -> 32x32x16): PASSED (Functional & Numerical)
+MINI_TEST: PASSED (Functional & Numerical)
 ====================================================
 
 

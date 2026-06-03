@@ -22,21 +22,36 @@
 </SummaryOfTimingAnalysis>
 <SummaryOfOverallLatency>
 <unit>clock cycles</unit>
-<Best-caseLatency>19</Best-caseLatency>
-<Average-caseLatency>19</Average-caseLatency>
-<Worst-caseLatency>19</Worst-caseLatency>
-<Best-caseRealTimeLatency>63.327 ns</Best-caseRealTimeLatency>
-<Average-caseRealTimeLatency>63.327 ns</Average-caseRealTimeLatency>
-<Worst-caseRealTimeLatency>63.327 ns</Worst-caseRealTimeLatency>
-<Interval-min>17</Interval-min>
-<Interval-max>17</Interval-max>
+<Best-caseLatency>67</Best-caseLatency>
+<Average-caseLatency>963</Average-caseLatency>
+<Worst-caseLatency>7683</Worst-caseLatency>
+<Best-caseRealTimeLatency>0.223 us</Best-caseRealTimeLatency>
+<Average-caseRealTimeLatency>3.210 us</Average-caseRealTimeLatency>
+<Worst-caseRealTimeLatency>25.607 us</Worst-caseRealTimeLatency>
+<Interval-min>65</Interval-min>
+<Interval-max>7681</Interval-max>
 </SummaryOfOverallLatency>
 <SummaryOfLoopLatency>
 <LOAD_ROW0>
 <Slack>2.43</Slack>
-<TripCount>16</TripCount>
-<Latency>17</Latency>
-<AbsoluteTimeLatency>56</AbsoluteTimeLatency>
+<TripCount>
+<range>
+<min>64</min>
+<max>7680</max>
+</range>
+</TripCount>
+<Latency>
+<range>
+<min>65</min>
+<max>7681</max>
+</range>
+</Latency>
+<AbsoluteTimeLatency>
+<range>
+<min>216</min>
+<max>25600</max>
+</range>
+</AbsoluteTimeLatency>
 <PipelineII>1</PipelineII>
 <PipelineDepth>3</PipelineDepth>
 <InstanceList>
@@ -46,13 +61,13 @@
 <SummaryOfViolations>
 <IssueType>-</IssueType>
 <ViolationType>-</ViolationType>
-<SourceLocation>../gen/Hls_Layers_UpConv.tpp:316~../gen/upconv_core_top.cpp:55</SourceLocation>
+<SourceLocation>../gen/UpConv_Unified.tpp:387~../gen/upconv_core_top.cpp:59</SourceLocation>
 <SummaryOfLoopViolations>
 <LOAD_ROW0>
 <Name>LOAD_ROW0</Name>
 <IssueType>-</IssueType>
 <ViolationType>-</ViolationType>
-<SourceLocation>../gen/Hls_Layers_UpConv.tpp:316~../gen/upconv_core_top.cpp:55</SourceLocation>
+<SourceLocation>../gen/UpConv_Unified.tpp:387~../gen/upconv_core_top.cpp:59</SourceLocation>
 </LOAD_ROW0>
 </SummaryOfLoopViolations>
 </SummaryOfViolations>
@@ -60,8 +75,8 @@
 
 <AreaEstimates>
 <Resources>
-<FF>277</FF>
-<LUT>74</LUT>
+<FF>298</FF>
+<LUT>88</LUT>
 <BRAM_18K>0</BRAM_18K>
 <DSP>0</DSP>
 <URAM>0</URAM>
@@ -649,8 +664,19 @@
 <Attribute>unknown</Attribute>
 </RtlPorts>
 <RtlPorts>
-<name>sext_ln316</name>
-<Object>sext_ln316</Object>
+<name>empty</name>
+<Object>empty</Object>
+<Type>scalar</Type>
+<Scope></Scope>
+<IOProtocol>ap_none</IOProtocol>
+<IOConfig></IOConfig>
+<Dir>in</Dir>
+<Bits>13</Bits>
+<Attribute>data</Attribute>
+</RtlPorts>
+<RtlPorts>
+<name>sext_ln387</name>
+<Object>sext_ln387</Object>
 <Type>scalar</Type>
 <Scope></Scope>
 <IOProtocol>ap_none</IOProtocol>

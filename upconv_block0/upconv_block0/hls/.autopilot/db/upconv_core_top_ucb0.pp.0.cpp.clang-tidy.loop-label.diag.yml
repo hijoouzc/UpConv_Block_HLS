@@ -1292,103 +1292,95 @@ Diagnostics:
         Offset:          1691936
         Length:          0
         ReplacementText: 'VITIS_LOOP_169_3: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_73_1:  '
+    FileOffset:      73
+    FilePath:        /home/hoinguyen/Documents/Vitis/UpConv_HLS/gen/Hls_Layers_UpConv.tpp
+    Replacements:    
+      - FilePath:        /home/hoinguyen/Documents/Vitis/UpConv_HLS/upconv_block0/upconv_block0/hls/.autopilot/db/upconv_core_top_ucb0.pp.0.cpp
+        Offset:          1758926
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_73_1: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_144_1:  '
+    FileOffset:      144
+    FilePath:        /home/hoinguyen/Documents/Vitis/UpConv_HLS/gen/Hls_Layers_UpConv.tpp
+    Replacements:    
+      - FilePath:        /home/hoinguyen/Documents/Vitis/UpConv_HLS/upconv_block0/upconv_block0/hls/.autopilot/db/upconv_core_top_ucb0.pp.0.cpp
+        Offset:          1761059
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_144_1: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_234_1:  '
+    FileOffset:      234
+    FilePath:        /home/hoinguyen/Documents/Vitis/UpConv_HLS/gen/Hls_Layers_UpConv.tpp
+    Replacements:    
+      - FilePath:        /home/hoinguyen/Documents/Vitis/UpConv_HLS/upconv_block0/upconv_block0/hls/.autopilot/db/upconv_core_top_ucb0.pp.0.cpp
+        Offset:          1763930
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_234_1: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_267_1:  '
+    FileOffset:      267
+    FilePath:        /home/hoinguyen/Documents/Vitis/UpConv_HLS/gen/Hls_Layers_UpConv.tpp
+    Replacements:    
+      - FilePath:        /home/hoinguyen/Documents/Vitis/UpConv_HLS/upconv_block0/upconv_block0/hls/.autopilot/db/upconv_core_top_ucb0.pp.0.cpp
+        Offset:          1764931
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_267_1: '
   - DiagnosticName:  clang-diagnostic-error
     Message:         'Invalid Directive: for current device, ram_t2p + uram is invalid combination for BIND_STORAGE''s option ''type + impl'''
-    FileOffset:      109
-    FilePath:        /home/hoinguyen/Documents/Vitis/UpConv_HLS/gen/Hls_Layers_UpConv.tpp
-    Replacements:    
-  - DiagnosticName:  xilinx-label-all-loops
-    Message:         'Added loop label VITIS_LOOP_119_1:  '
-    FileOffset:      119
-    FilePath:        /home/hoinguyen/Documents/Vitis/UpConv_HLS/gen/Hls_Layers_UpConv.tpp
-    Replacements:    
-      - FilePath:        /home/hoinguyen/Documents/Vitis/UpConv_HLS/upconv_block0/upconv_block0/hls/.autopilot/db/upconv_core_top_ucb0.pp.0.cpp
-        Offset:          1759542
-        Length:          0
-        ReplacementText: 'VITIS_LOOP_119_1: '
-  - DiagnosticName:  clang-diagnostic-error
-    Message:         'Invalid Directive: for current device, ram_t2p + bram is invalid combination for BIND_STORAGE''s option ''type + impl'''
-    FileOffset:      129
-    FilePath:        /home/hoinguyen/Documents/Vitis/UpConv_HLS/gen/Hls_Layers_UpConv.tpp
-    Replacements:    
-  - DiagnosticName:  xilinx-label-all-loops
-    Message:         'Added loop label VITIS_LOOP_142_2:  '
-    FileOffset:      142
-    FilePath:        /home/hoinguyen/Documents/Vitis/UpConv_HLS/gen/Hls_Layers_UpConv.tpp
-    Replacements:    
-      - FilePath:        /home/hoinguyen/Documents/Vitis/UpConv_HLS/upconv_block0/upconv_block0/hls/.autopilot/db/upconv_core_top_ucb0.pp.0.cpp
-        Offset:          1760048
-        Length:          0
-        ReplacementText: 'VITIS_LOOP_142_2: '
-  - DiagnosticName:  xilinx-label-all-loops
-    Message:         'Added loop label VITIS_LOOP_143_3:  '
-    FileOffset:      143
-    FilePath:        /home/hoinguyen/Documents/Vitis/UpConv_HLS/gen/Hls_Layers_UpConv.tpp
-    Replacements:    
-      - FilePath:        /home/hoinguyen/Documents/Vitis/UpConv_HLS/upconv_block0/upconv_block0/hls/.autopilot/db/upconv_core_top_ucb0.pp.0.cpp
-        Offset:          1760098
-        Length:          0
-        ReplacementText: 'VITIS_LOOP_143_3: '
-  - DiagnosticName:  xilinx-label-all-loops
-    Message:         'Added loop label VITIS_LOOP_176_4:  '
-    FileOffset:      176
-    FilePath:        /home/hoinguyen/Documents/Vitis/UpConv_HLS/gen/Hls_Layers_UpConv.tpp
-    Replacements:    
-      - FilePath:        /home/hoinguyen/Documents/Vitis/UpConv_HLS/upconv_block0/upconv_block0/hls/.autopilot/db/upconv_core_top_ucb0.pp.0.cpp
-        Offset:          1761110
-        Length:          0
-        ReplacementText: 'VITIS_LOOP_176_4: '
-  - DiagnosticName:  xilinx-label-all-loops
-    Message:         'Added loop label VITIS_LOOP_194_5:  '
-    FileOffset:      194
-    FilePath:        /home/hoinguyen/Documents/Vitis/UpConv_HLS/gen/Hls_Layers_UpConv.tpp
-    Replacements:    
-      - FilePath:        /home/hoinguyen/Documents/Vitis/UpConv_HLS/upconv_block0/upconv_block0/hls/.autopilot/db/upconv_core_top_ucb0.pp.0.cpp
-        Offset:          1761728
-        Length:          0
-        ReplacementText: 'VITIS_LOOP_194_5: '
-  - DiagnosticName:  clang-diagnostic-error
-    Message:         'Invalid Directive: for current device, ram_t2p + bram is invalid combination for BIND_STORAGE''s option ''type + impl'''
-    FileOffset:      224
+    FileOffset:      326
     FilePath:        /home/hoinguyen/Documents/Vitis/UpConv_HLS/gen/Hls_Layers_UpConv.tpp
     Replacements:    
   - DiagnosticName:  clang-diagnostic-error
     Message:         'Invalid Directive: for current device, ram_t2p + bram is invalid combination for BIND_STORAGE''s option ''type + impl'''
-    FileOffset:      225
+    FileOffset:      334
     FilePath:        /home/hoinguyen/Documents/Vitis/UpConv_HLS/gen/Hls_Layers_UpConv.tpp
     Replacements:    
   - DiagnosticName:  clang-diagnostic-error
     Message:         'Invalid Directive: for current device, ram_t2p + bram is invalid combination for BIND_STORAGE''s option ''type + impl'''
-    FileOffset:      226
+    FileOffset:      340
+    FilePath:        /home/hoinguyen/Documents/Vitis/UpConv_HLS/gen/Hls_Layers_UpConv.tpp
+    Replacements:    
+  - DiagnosticName:  clang-diagnostic-error
+    Message:         'Invalid Directive: for current device, ram_t2p + bram is invalid combination for BIND_STORAGE''s option ''type + impl'''
+    FileOffset:      341
+    FilePath:        /home/hoinguyen/Documents/Vitis/UpConv_HLS/gen/Hls_Layers_UpConv.tpp
+    Replacements:    
+  - DiagnosticName:  clang-diagnostic-error
+    Message:         'Invalid Directive: for current device, ram_t2p + bram is invalid combination for BIND_STORAGE''s option ''type + impl'''
+    FileOffset:      342
+    FilePath:        /home/hoinguyen/Documents/Vitis/UpConv_HLS/gen/Hls_Layers_UpConv.tpp
+    Replacements:    
+  - DiagnosticName:  clang-diagnostic-error
+    Message:         'Invalid Directive: for current device, ram_2p + lutram is invalid combination for BIND_STORAGE''s option ''type + impl'''
+    FileOffset:      346
+    FilePath:        /home/hoinguyen/Documents/Vitis/UpConv_HLS/gen/Hls_Layers_UpConv.tpp
+    Replacements:    
+  - DiagnosticName:  clang-diagnostic-error
+    Message:         'Invalid Directive: for current device, ram_2p + lutram is invalid combination for BIND_STORAGE''s option ''type + impl'''
+    FileOffset:      347
     FilePath:        /home/hoinguyen/Documents/Vitis/UpConv_HLS/gen/Hls_Layers_UpConv.tpp
     Replacements:    
   - DiagnosticName:  xilinx-label-all-loops
-    Message:         'Added loop label VITIS_LOOP_260_6:  '
-    FileOffset:      260
+    Message:         'Added loop label VITIS_LOOP_386_1:  '
+    FileOffset:      386
     FilePath:        /home/hoinguyen/Documents/Vitis/UpConv_HLS/gen/Hls_Layers_UpConv.tpp
     Replacements:    
       - FilePath:        /home/hoinguyen/Documents/Vitis/UpConv_HLS/upconv_block0/upconv_block0/hls/.autopilot/db/upconv_core_top_ucb0.pp.0.cpp
-        Offset:          1763774
+        Offset:          1768083
         Length:          0
-        ReplacementText: 'VITIS_LOOP_260_6: '
+        ReplacementText: 'VITIS_LOOP_386_1: '
   - DiagnosticName:  xilinx-label-all-loops
-    Message:         'Added loop label VITIS_LOOP_296_1:  '
-    FileOffset:      296
+    Message:         'Added loop label VITIS_LOOP_397_2:  '
+    FileOffset:      397
     FilePath:        /home/hoinguyen/Documents/Vitis/UpConv_HLS/gen/Hls_Layers_UpConv.tpp
     Replacements:    
       - FilePath:        /home/hoinguyen/Documents/Vitis/UpConv_HLS/upconv_block0/upconv_block0/hls/.autopilot/db/upconv_core_top_ucb0.pp.0.cpp
-        Offset:          1764854
+        Offset:          1768468
         Length:          0
-        ReplacementText: 'VITIS_LOOP_296_1: '
-  - DiagnosticName:  xilinx-label-all-loops
-    Message:         'Added loop label VITIS_LOOP_307_2:  '
-    FileOffset:      307
-    FilePath:        /home/hoinguyen/Documents/Vitis/UpConv_HLS/gen/Hls_Layers_UpConv.tpp
-    Replacements:    
-      - FilePath:        /home/hoinguyen/Documents/Vitis/UpConv_HLS/upconv_block0/upconv_block0/hls/.autopilot/db/upconv_core_top_ucb0.pp.0.cpp
-        Offset:          1765239
-        Length:          0
-        ReplacementText: 'VITIS_LOOP_307_2: '
+        ReplacementText: 'VITIS_LOOP_397_2: '
   - DiagnosticName:  clang-diagnostic-error
     Message:         'Invalid Directive: for current device, ram_t2p + uram is invalid combination for BIND_STORAGE''s option ''type + impl'''
     FileOffset:      37

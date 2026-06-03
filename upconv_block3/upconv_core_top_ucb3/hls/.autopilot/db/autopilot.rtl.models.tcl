@@ -1,5 +1,5 @@
 set SynModuleInfo {
-  {SRCNAME upconv_core_top_ucb3_Pipeline_LOAD_ROW0_VITIS_LOOP_317_1 MODELNAME upconv_core_top_ucb3_Pipeline_LOAD_ROW0_VITIS_LOOP_317_1 RTLNAME upconv_core_top_ucb3_upconv_core_top_ucb3_Pipeline_LOAD_ROW0_VITIS_LOOP_317_1
+  {SRCNAME upconv_core_top_ucb3_Pipeline_LOAD_ROW0_VITIS_LOOP_386_1 MODELNAME upconv_core_top_ucb3_Pipeline_LOAD_ROW0_VITIS_LOOP_386_1 RTLNAME upconv_core_top_ucb3_upconv_core_top_ucb3_Pipeline_LOAD_ROW0_VITIS_LOOP_386_1
     SUBMODULES {
       {MODELNAME upconv_core_top_ucb3_flow_control_loop_pipe_sequential_init RTLNAME upconv_core_top_ucb3_flow_control_loop_pipe_sequential_init BINDTYPE interface TYPE internal_upc_flow_control INSTNAME upconv_core_top_ucb3_flow_control_loop_pipe_sequential_init_U}
     }
@@ -15,10 +15,12 @@ set SynModuleInfo {
   }
   {SRCNAME {UpConv_Fused_Row<8, 128, 128, 120, 60>_Outline_TILE_LOOP} MODELNAME UpConv_Fused_Row_8_128_128_120_60_Outline_TILE_LOOP RTLNAME upconv_core_top_ucb3_UpConv_Fused_Row_8_128_128_120_60_Outline_TILE_LOOP
     SUBMODULES {
-      {MODELNAME upconv_core_top_ucb3_UpConv_Fused_Row_8_128_128_120_60_Outline_TILE_LOOP_w_local_7_RAM_T2P_BRAM_1R1W RTLNAME upconv_core_top_ucb3_UpConv_Fused_Row_8_128_128_120_60_Outline_TILE_LOOP_w_local_7_RAM_T2P_BRAM_1R1W BINDTYPE storage TYPE ram_t2p IMPL bram LATENCY 2 ALLOW_PRAGMA 1}
+      {MODELNAME upconv_core_top_ucb3_UpConv_Fused_Row_8_128_128_120_60_Outline_TILE_LOOP_w_local_7_RAM_T2P_BRAM_2R1W RTLNAME upconv_core_top_ucb3_UpConv_Fused_Row_8_128_128_120_60_Outline_TILE_LOOP_w_local_7_RAM_T2P_BRAM_2R1W BINDTYPE storage TYPE ram_t2p IMPL bram LATENCY 3 ALLOW_PRAGMA 1}
     }
   }
-  {SRCNAME {UpConv_Fused_Row<8, 128, 128, 120, 60>_Pipeline_LOAD_PARAMS} MODELNAME UpConv_Fused_Row_8_128_128_120_60_Pipeline_LOAD_PARAMS RTLNAME upconv_core_top_ucb3_UpConv_Fused_Row_8_128_128_120_60_Pipeline_LOAD_PARAMS}
+  {SRCNAME {UpConv_Fused_Row<8, 128, 128, 120, 60>_Pipeline_LOAD_B} MODELNAME UpConv_Fused_Row_8_128_128_120_60_Pipeline_LOAD_B RTLNAME upconv_core_top_ucb3_UpConv_Fused_Row_8_128_128_120_60_Pipeline_LOAD_B}
+  {SRCNAME {UpConv_Fused_Row<8, 128, 128, 120, 60>_Pipeline_LOAD_G} MODELNAME UpConv_Fused_Row_8_128_128_120_60_Pipeline_LOAD_G RTLNAME upconv_core_top_ucb3_UpConv_Fused_Row_8_128_128_120_60_Pipeline_LOAD_G}
+  {SRCNAME {UpConv_Fused_Row<8, 128, 128, 120, 60>_Pipeline_LOAD_BE} MODELNAME UpConv_Fused_Row_8_128_128_120_60_Pipeline_LOAD_BE RTLNAME upconv_core_top_ucb3_UpConv_Fused_Row_8_128_128_120_60_Pipeline_LOAD_BE}
   {SRCNAME {UpConv_Fused_Row<8, 128, 128, 120, 60>_Pipeline_PIXEL_STATS} MODELNAME UpConv_Fused_Row_8_128_128_120_60_Pipeline_PIXEL_STATS RTLNAME upconv_core_top_ucb3_UpConv_Fused_Row_8_128_128_120_60_Pipeline_PIXEL_STATS
     SUBMODULES {
       {MODELNAME upconv_core_top_ucb3_fadd_32ns_32ns_32_11_full_dsp_1 RTLNAME upconv_core_top_ucb3_fadd_32ns_32ns_32_11_full_dsp_1 BINDTYPE op TYPE fadd IMPL fulldsp LATENCY 10 ALLOW_PRAGMA 1}
@@ -47,7 +49,7 @@ set SynModuleInfo {
       {MODELNAME upconv_core_top_ucb3_UpConv_Fused_Row_8_128_128_120_60_s_b_buf_RAM_T2P_BRAM_1R1W RTLNAME upconv_core_top_ucb3_UpConv_Fused_Row_8_128_128_120_60_s_b_buf_RAM_T2P_BRAM_1R1W BINDTYPE storage TYPE ram_t2p IMPL bram LATENCY 2 ALLOW_PRAGMA 1}
     }
   }
-  {SRCNAME upconv_core_top_ucb3_Pipeline_LOAD_ROW_VITIS_LOOP_328_2 MODELNAME upconv_core_top_ucb3_Pipeline_LOAD_ROW_VITIS_LOOP_328_2 RTLNAME upconv_core_top_ucb3_upconv_core_top_ucb3_Pipeline_LOAD_ROW_VITIS_LOOP_328_2}
+  {SRCNAME upconv_core_top_ucb3_Pipeline_LOAD_ROW_VITIS_LOOP_397_2 MODELNAME upconv_core_top_ucb3_Pipeline_LOAD_ROW_VITIS_LOOP_397_2 RTLNAME upconv_core_top_ucb3_upconv_core_top_ucb3_Pipeline_LOAD_ROW_VITIS_LOOP_397_2}
   {SRCNAME upconv_core_top_ucb3 MODELNAME upconv_core_top_ucb3 RTLNAME upconv_core_top_ucb3 IS_TOP 1
     SUBMODULES {
       {MODELNAME upconv_core_top_ucb3_x_buf_RAM_T2P_URAM_1R1W RTLNAME upconv_core_top_ucb3_x_buf_RAM_T2P_URAM_1R1W BINDTYPE storage TYPE ram_t2p IMPL uram LATENCY 2 ALLOW_PRAGMA 1}

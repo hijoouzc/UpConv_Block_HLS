@@ -1,7 +1,7 @@
 <profile>
 
 <section name = "Vitis HLS Report for 'upconv_core_top'" level="0">
-<item name = "Date">Mon Jun  1 23:47:07 2026
+<item name = "Date">Wed Jun  3 12:32:24 2026
 </item>
 <item name = "Version">2024.2 (Build 5238294 on Nov  8 2024)</item>
 <item name = "Project">upconv_core_top</item>
@@ -15,7 +15,7 @@
 <section name = "" level="1">
 <item name = "Summary"><table name="" hasTotal="0">
 <keys size="4">Clock, Target, Estimated, Uncertainty</keys>
-<column name="ap_clk">3.33 ns, 3.357 ns, 0.90 ns</column>
+<column name="ap_clk">3.33 ns, 2.433 ns, 0.90 ns</column>
 </table>
 </item>
 </section>
@@ -24,37 +24,24 @@
 <section name = "" level="1">
 <item name = "Summary"><table name="" hasTotal="0">
 <keys size="8">, min, max, min, max, min, max, Type</keys>
-<column name="">32721, 26168943, 0.110 ms, 87.849 ms, 32722, 26168944, no</column>
+<column name="">64515, 1163580687, 0.215 ms, 3.878 sec, 64516, 1163580688, no</column>
 </table>
 </item>
 <item name = "Detail">
 <section name = "" level="1">
 <item name = "Instance"><table name="" hasTotal="0">
 <keys size="9">Instance, Module, min, max, min, max, min, max, Type</keys>
-<column name="grp_upconv_core_top_Pipeline_LOAD_ROW0_VITIS_LOOP_317_15_fu_499">upconv_core_top_Pipeline_LOAD_ROW0_VITIS_LOOP_317_15, 1027, 1027, 3.423 us, 3.423 us, 1025, 1025, loop auto-rewind stp (delay=0 clock cycles(s))</column>
-<column name="grp_upconv_core_top_Pipeline_LOAD_ROW0_VITIS_LOOP_317_13_fu_508">upconv_core_top_Pipeline_LOAD_ROW0_VITIS_LOOP_317_13, 963, 963, 3.210 us, 3.210 us, 961, 961, loop auto-rewind stp (delay=0 clock cycles(s))</column>
-<column name="grp_upconv_core_top_Pipeline_LOAD_ROW0_VITIS_LOOP_317_11_fu_517">upconv_core_top_Pipeline_LOAD_ROW0_VITIS_LOOP_317_11, 963, 963, 3.210 us, 3.210 us, 961, 961, loop auto-rewind stp (delay=0 clock cycles(s))</column>
-<column name="grp_upconv_core_top_Pipeline_LOAD_ROW0_VITIS_LOOP_317_1_fu_526">upconv_core_top_Pipeline_LOAD_ROW0_VITIS_LOOP_317_1, 963, 963, 3.210 us, 3.210 us, 961, 961, loop auto-rewind stp (delay=0 clock cycles(s))</column>
-<column name="grp_upconv_core_top_Pipeline_LOAD_ROW0_fu_535">upconv_core_top_Pipeline_LOAD_ROW0, 19, 19, 63.327 ns, 63.327 ns, 17, 17, loop auto-rewind stp (delay=0 clock cycles(s))</column>
-<column name="grp_UpConv_Fused_Row_8_128_128_120_60_s_fu_544">UpConv_Fused_Row_8_128_128_120_60_s, 17878, 99918, 59.587 us, 0.333 ms, 17878, 99918, no</column>
-<column name="grp_UpConv_Fused_Row_8_64_64_240_120_s_fu_601">UpConv_Fused_Row_8_64_64_240_120_s, 18078, 180878, 60.254 us, 0.603 ms, 18078, 180878, no</column>
-<column name="grp_UpConv_Fused_Row_8_32_32_480_240_s_fu_658">UpConv_Fused_Row_8_32_32_480_240_s, 82980, 352620, 0.279 ms, 1.184 ms, 82980, 352620, no</column>
-<column name="grp_UpConv_Fused_Row_8_16_16_960_480_s_fu_715">UpConv_Fused_Row_8_16_16_960_480_s, 278010, 817290, 0.933 ms, 2.744 ms, 278010, 817290, no</column>
-<column name="grp_UpConv_Fused_Row_8_16_16_16_16_s_fu_772">UpConv_Fused_Row_8_16_16_16_16_s, 1006, 1948, 3.353 us, 6.493 us, 1006, 1948, no</column>
-<column name="grp_upconv_core_top_Pipeline_LOAD_ROW_VITIS_LOOP_328_26_fu_829">upconv_core_top_Pipeline_LOAD_ROW_VITIS_LOOP_328_26, 1036, 1036, 3.453 us, 3.453 us, 1025, 1025, loop auto-rewind stp (delay=0 clock cycles(s))</column>
-<column name="grp_upconv_core_top_Pipeline_LOAD_ROW_VITIS_LOOP_328_24_fu_840">upconv_core_top_Pipeline_LOAD_ROW_VITIS_LOOP_328_24, 973, 973, 3.243 us, 3.243 us, 961, 961, loop auto-rewind stp (delay=0 clock cycles(s))</column>
-<column name="grp_upconv_core_top_Pipeline_LOAD_ROW_VITIS_LOOP_328_22_fu_851">upconv_core_top_Pipeline_LOAD_ROW_VITIS_LOOP_328_22, 973, 973, 3.243 us, 3.243 us, 961, 961, loop auto-rewind stp (delay=0 clock cycles(s))</column>
-<column name="grp_upconv_core_top_Pipeline_LOAD_ROW_VITIS_LOOP_328_2_fu_862">upconv_core_top_Pipeline_LOAD_ROW_VITIS_LOOP_328_2, 973, 973, 3.243 us, 3.243 us, 961, 961, loop auto-rewind stp (delay=0 clock cycles(s))</column>
-<column name="grp_upconv_core_top_Pipeline_LOAD_ROW_fu_873">upconv_core_top_Pipeline_LOAD_ROW, 27, 27, 89.991 ns, 89.991 ns, 17, 17, loop auto-rewind stp (delay=0 clock cycles(s))</column>
+<column name="grp_upconv_core_top_Pipeline_LOAD_B_fu_344">upconv_core_top_Pipeline_LOAD_B, 7, 33, 23.331 ns, 0.110 us, 5, 31, loop auto-rewind stp (delay=0 clock cycles(s))</column>
+<column name="grp_upconv_core_top_Pipeline_LOAD_ROW0_fu_353">upconv_core_top_Pipeline_LOAD_ROW0, 67, 7683, 0.223 us, 25.607 us, 65, 7681, loop auto-rewind stp (delay=0 clock cycles(s))</column>
+<column name="grp_upconv_core_top_Pipeline_LOAD_G_fu_363">upconv_core_top_Pipeline_LOAD_G, 7, 33, 23.331 ns, 0.110 us, 5, 31, loop auto-rewind stp (delay=0 clock cycles(s))</column>
+<column name="grp_upconv_core_top_Pipeline_LOAD_BE_fu_372">upconv_core_top_Pipeline_LOAD_BE, 7, 33, 23.331 ns, 0.110 us, 5, 31, loop auto-rewind stp (delay=0 clock cycles(s))</column>
+<column name="grp_UpConv_Fused_Row_8_s_fu_381">UpConv_Fused_Row_8_s, 1855, 4508947, 6.183 us, 15.028 ms, 1855, 4508947, no</column>
+<column name="grp_upconv_core_top_Pipeline_LOAD_ROW_fu_440">upconv_core_top_Pipeline_LOAD_ROW, 76, 2060, 0.253 us, 6.866 us, 65, 2049, loop auto-rewind stp (delay=0 clock cycles(s))</column>
 </table>
 </item>
 <item name = "Loop"><table name="" hasTotal="0">
 <keys size="8">Loop Name, min, max, Latency, achieved, target, Count, Pipelined</keys>
-<column name="- ROW_LOOP">8354985, 24533385, 556999 ~ 1635559, -, -, 15, no</column>
-<column name="- ROW_LOOP">5175109, 21892789, 166939 ~ 706219, -, -, 31, no</column>
-<column name="- ROW_LOOP">2339505, 22852305, 37135 ~ 362735, -, -, 63, no</column>
-<column name="- ROW_LOOP">4673346, 25511506, 36798 ~ 200878, -, -, 127, no</column>
-<column name="- ROW_LOOP">30675, 58935, 2045 ~ 3929, -, -, 15, no</column>
+<column name="- ROW_LOOP">60688, 1154555008, 3793 ~ 9019961, -, -, 16 ~ 128, no</column>
 </table>
 </item>
 </section>
@@ -67,40 +54,36 @@
 <item name = "Summary"><table name="" hasTotal="1">
 <keys size="6">Name, BRAM_18K, DSP, FF, LUT, URAM</keys>
 <column name="DSP">-, -, -, -, -</column>
-<column name="Expression">-, -, 0, 555, -</column>
+<column name="Expression">-, -, 0, 479, -</column>
 <column name="FIFO">-, -, -, -, -</column>
-<column name="Instance">540, 3340, 346091, 234591, 80</column>
-<column name="Memory">-, -, 0, 0, 4</column>
-<column name="Multiplexer">-, -, 0, 1421, -</column>
-<column name="Register">-, -, 1028, -, -</column>
+<column name="Instance">180, 680, 74201, 52079, 32</column>
+<column name="Memory">24, -, 0, 0, 4</column>
+<column name="Multiplexer">-, -, 0, 676, -</column>
+<column name="Register">-, -, 771, -, -</column>
 <specialColumn name="Available">624, 1728, 460800, 230400, 96</specialColumn>
-<specialColumn name="Utilization (%)">86, 193, 75, 102, 87</specialColumn>
+<specialColumn name="Utilization (%)">32, 39, 16, 23, 37</specialColumn>
 </table>
 </item>
 <item name = "Detail">
 <section name = "" level="1">
 <item name = "Instance"><table name="" hasTotal="1">
 <keys size="7">Instance, Module, BRAM_18K, DSP, FF, LUT, URAM</keys>
-<column name="grp_UpConv_Fused_Row_8_128_128_120_60_s_fu_544">UpConv_Fused_Row_8_128_128_120_60_s, 88, 670, 68532, 46348, 16</column>
-<column name="grp_UpConv_Fused_Row_8_16_16_16_16_s_fu_772">UpConv_Fused_Row_8_16_16_16_16_s, 72, 660, 63316, 41000, 16</column>
-<column name="grp_UpConv_Fused_Row_8_16_16_960_480_s_fu_715">UpConv_Fused_Row_8_16_16_960_480_s, 144, 670, 68491, 46440, 16</column>
-<column name="grp_UpConv_Fused_Row_8_32_32_480_240_s_fu_658">UpConv_Fused_Row_8_32_32_480_240_s, 88, 670, 68482, 46455, 16</column>
-<column name="grp_UpConv_Fused_Row_8_64_64_240_120_s_fu_601">UpConv_Fused_Row_8_64_64_240_120_s, 88, 670, 68507, 46317, 16</column>
+<column name="grp_UpConv_Fused_Row_8_s_fu_381">UpConv_Fused_Row_8_s, 120, 679, 67887, 46071, 32</column>
 <column name="control_s_axi_U">control_s_axi, 0, 0, 516, 904, 0</column>
 <column name="gmem_in_m_axi_U">gmem_in_m_axi, 15, 0, 1044, 1114, 0</column>
 <column name="gmem_out_m_axi_U">gmem_out_m_axi, 15, 0, 1038, 1104, 0</column>
 <column name="gmem_param_m_axi_U">gmem_param_m_axi, 15, 0, 1044, 1114, 0</column>
 <column name="gmem_weight_m_axi_U">gmem_weight_m_axi, 15, 0, 1044, 1114, 0</column>
-<column name="grp_upconv_core_top_Pipeline_LOAD_ROW_fu_873">upconv_core_top_Pipeline_LOAD_ROW, 0, 0, 412, 247, 0</column>
-<column name="grp_upconv_core_top_Pipeline_LOAD_ROW0_fu_535">upconv_core_top_Pipeline_LOAD_ROW0, 0, 0, 277, 74, 0</column>
-<column name="grp_upconv_core_top_Pipeline_LOAD_ROW0_VITIS_LOOP_317_1_fu_526">upconv_core_top_Pipeline_LOAD_ROW0_VITIS_LOOP_317_1, 0, 0, 293, 188, 0</column>
-<column name="grp_upconv_core_top_Pipeline_LOAD_ROW0_VITIS_LOOP_317_11_fu_517">upconv_core_top_Pipeline_LOAD_ROW0_VITIS_LOOP_317_11, 0, 0, 293, 187, 0</column>
-<column name="grp_upconv_core_top_Pipeline_LOAD_ROW0_VITIS_LOOP_317_13_fu_508">upconv_core_top_Pipeline_LOAD_ROW0_VITIS_LOOP_317_13, 0, 0, 293, 188, 0</column>
-<column name="grp_upconv_core_top_Pipeline_LOAD_ROW0_VITIS_LOOP_317_15_fu_499">upconv_core_top_Pipeline_LOAD_ROW0_VITIS_LOOP_317_15, 0, 0, 295, 174, 0</column>
-<column name="grp_upconv_core_top_Pipeline_LOAD_ROW_VITIS_LOOP_328_2_fu_862">upconv_core_top_Pipeline_LOAD_ROW_VITIS_LOOP_328_2, 0, 0, 571, 428, 0</column>
-<column name="grp_upconv_core_top_Pipeline_LOAD_ROW_VITIS_LOOP_328_22_fu_851">upconv_core_top_Pipeline_LOAD_ROW_VITIS_LOOP_328_22, 0, 0, 572, 429, 0</column>
-<column name="grp_upconv_core_top_Pipeline_LOAD_ROW_VITIS_LOOP_328_24_fu_840">upconv_core_top_Pipeline_LOAD_ROW_VITIS_LOOP_328_24, 0, 0, 573, 432, 0</column>
-<column name="grp_upconv_core_top_Pipeline_LOAD_ROW_VITIS_LOOP_328_26_fu_829">upconv_core_top_Pipeline_LOAD_ROW_VITIS_LOOP_328_26, 0, 0, 498, 334, 0</column>
+<column name="mul_6ns_8ns_14_1_1_U698">mul_6ns_8ns_14_1_1, 0, 0, 0, 40, 0</column>
+<column name="mul_7ns_14ns_20_1_1_U699">mul_7ns_14ns_20_1_1, 0, 1, 0, 5, 0</column>
+<column name="sparsemux_9_32_10_1_1_U696">sparsemux_9_32_10_1_1, 0, 0, 0, 20, 0</column>
+<column name="sparsemux_9_32_8_1_1_U697">sparsemux_9_32_8_1_1, 0, 0, 0, 20, 0</column>
+<column name="sparsemux_9_32_9_1_1_U695">sparsemux_9_32_9_1_1, 0, 0, 0, 20, 0</column>
+<column name="grp_upconv_core_top_Pipeline_LOAD_B_fu_344">upconv_core_top_Pipeline_LOAD_B, 0, 0, 277, 73, 0</column>
+<column name="grp_upconv_core_top_Pipeline_LOAD_BE_fu_372">upconv_core_top_Pipeline_LOAD_BE, 0, 0, 277, 73, 0</column>
+<column name="grp_upconv_core_top_Pipeline_LOAD_G_fu_363">upconv_core_top_Pipeline_LOAD_G, 0, 0, 277, 73, 0</column>
+<column name="grp_upconv_core_top_Pipeline_LOAD_ROW_fu_440">upconv_core_top_Pipeline_LOAD_ROW, 0, 0, 499, 246, 0</column>
+<column name="grp_upconv_core_top_Pipeline_LOAD_ROW0_fu_353">upconv_core_top_Pipeline_LOAD_ROW0, 0, 0, 298, 88, 0</column>
 </table>
 </item>
 <item name = "DSP"><table name="" hasTotal="0">
@@ -109,6 +92,9 @@
 </item>
 <item name = "Memory"><table name="" hasTotal="1">
 <keys size="10">Memory, Module, BRAM_18K, FF, LUT, URAM, Words, Bits, Banks, W*Bits*Banks</keys>
+<column name="b_buf_U">b_buf_RAM_T2P_BRAM_1R1W, 8, 0, 0, 0, 30, 256, 1, 7680</column>
+<column name="g_buf_U">b_buf_RAM_T2P_BRAM_1R1W, 8, 0, 0, 0, 30, 256, 1, 7680</column>
+<column name="be_buf_U">b_buf_RAM_T2P_BRAM_1R1W, 8, 0, 0, 0, 30, 256, 1, 7680</column>
 <column name="x_buf_U">x_buf_RAM_T2P_URAM_1R1W, 0, 0, 0, 4, 2048, 256, 1, 524288</column>
 </table>
 </item>
@@ -118,169 +104,109 @@
 </item>
 <item name = "Expression"><table name="" hasTotal="1">
 <keys size="7">Variable Name, Operation, DSP, FF, LUT, Bitwidth P0, Bitwidth P1</keys>
-<column name="add_ln325_10_fu_1150_p2">+, 0, 0, 12, 5, 1</column>
-<column name="add_ln325_11_fu_1110_p2">+, 0, 0, 14, 7, 1</column>
-<column name="add_ln325_12_fu_1070_p2">+, 0, 0, 13, 6, 1</column>
-<column name="add_ln325_13_fu_1030_p2">+, 0, 0, 15, 8, 1</column>
-<column name="add_ln325_14_fu_1019_p2">+, 0, 0, 14, 7, 1</column>
-<column name="add_ln325_4_fu_976_p2">+, 0, 0, 71, 64, 16</column>
-<column name="add_ln325_5_fu_1332_p2">+, 0, 0, 12, 5, 1</column>
-<column name="add_ln325_6_fu_1310_p2">+, 0, 0, 12, 4, 1</column>
-<column name="add_ln325_7_fu_1270_p2">+, 0, 0, 12, 5, 1</column>
-<column name="add_ln325_8_fu_1230_p2">+, 0, 0, 12, 4, 1</column>
-<column name="add_ln325_9_fu_1190_p2">+, 0, 0, 13, 6, 1</column>
-<column name="add_ln325_fu_991_p2">+, 0, 0, 71, 64, 10</column>
-<column name="add_ln333_1_fu_1291_p2">+, 0, 0, 12, 5, 2</column>
-<column name="add_ln333_2_fu_1211_p2">+, 0, 0, 13, 6, 2</column>
-<column name="add_ln333_3_fu_1131_p2">+, 0, 0, 14, 7, 2</column>
-<column name="add_ln333_4_fu_1051_p2">+, 0, 0, 15, 8, 2</column>
-<column name="add_ln333_fu_1353_p2">+, 0, 0, 12, 5, 2</column>
-<column name="grp_fu_884_p2">+, 0, 0, 71, 64, 15</column>
-<column name="sub_ln326_1_fu_1176_p2">-, 0, 0, 22, 15, 15</column>
-<column name="sub_ln326_2_fu_1096_p2">-, 0, 0, 23, 16, 16</column>
-<column name="sub_ln326_fu_1256_p2">-, 0, 0, 21, 14, 14</column>
-<column name="ap_block_state49_on_subcall_done">and, 0, 0, 2, 1, 1</column>
-<column name="ap_predicate_op113_readreq_state2">and, 0, 0, 2, 1, 1</column>
-<column name="icmp_ln325_1_fu_1224_p2">icmp, 0, 0, 13, 5, 6</column>
-<column name="icmp_ln325_2_fu_1144_p2">icmp, 0, 0, 14, 6, 7</column>
-<column name="icmp_ln325_3_fu_1064_p2">icmp, 0, 0, 15, 7, 8</column>
-<column name="icmp_ln325_4_fu_1013_p2">icmp, 0, 0, 16, 8, 9</column>
-<column name="icmp_ln325_fu_1304_p2">icmp, 0, 0, 13, 5, 6</column>
-<column name="ap_block_state11_on_subcall_done">or, 0, 0, 2, 1, 1</column>
-<column name="ap_block_state13_on_subcall_done">or, 0, 0, 2, 1, 1</column>
-<column name="ap_block_state2_io">or, 0, 0, 2, 1, 1</column>
+<column name="add_ln373_fu_578_p2">+, 0, 0, 17, 10, 4</column>
+<column name="add_ln374_fu_617_p2">+, 0, 0, 16, 9, 4</column>
+<column name="add_ln395_1_fu_794_p2">+, 0, 0, 15, 8, 1</column>
+<column name="add_ln395_2_fu_779_p2">+, 0, 0, 14, 7, 1</column>
+<column name="add_ln395_fu_692_p2">+, 0, 0, 71, 64, 64</column>
+<column name="add_ln405_fu_851_p2">+, 0, 0, 15, 8, 2</column>
+<column name="add_ln410_fu_815_p2">+, 0, 0, 15, 8, 2</column>
+<column name="base_buf_fu_840_p2">and, 0, 0, 11, 11, 11</column>
+<column name="icmp_ln395_fu_774_p2">icmp, 0, 0, 15, 8, 8</column>
+<column name="icmp_ln46_1_fu_458_p2">icmp, 0, 0, 39, 32, 1</column>
+<column name="icmp_ln46_2_fu_464_p2">icmp, 0, 0, 39, 32, 2</column>
+<column name="icmp_ln46_3_fu_470_p2">icmp, 0, 0, 39, 32, 2</column>
+<column name="icmp_ln46_fu_452_p2">icmp, 0, 0, 39, 32, 1</column>
+<column name="ap_block_state12_on_subcall_done">or, 0, 0, 2, 1, 1</column>
+<column name="ap_block_state3_io">or, 0, 0, 2, 1, 1</column>
+<column name="empty_54_fu_753_p2">or, 0, 0, 2, 1, 1</column>
+<column name="or_ln46_fu_734_p2">or, 0, 0, 2, 1, 1</column>
+<column name="empty_fu_746_p3">select, 0, 0, 30, 1, 30</column>
+<column name="inv_C_OUT_fu_757_p3">select, 0, 0, 32, 1, 32</column>
+<column name="select_ln399_fu_832_p3">select, 0, 0, 2, 1, 2</column>
+<column name="select_ln46_1_fu_738_p3">select, 0, 0, 32, 1, 32</column>
+<column name="select_ln46_fu_727_p3">select, 0, 0, 30, 1, 30</column>
 </table>
 </item>
 <item name = "Multiplexer"><table name="" hasTotal="1">
 <keys size="5">Name, LUT, Input Size, Bits, Total Bits</keys>
-<column name="ap_NS_fsm">225, 50, 1, 50</column>
-<column name="gmem_in_0_ARADDR">65, 12, 64, 768</column>
-<column name="gmem_in_0_ARLEN">65, 14, 32, 448</column>
-<column name="gmem_in_0_ARVALID">65, 12, 1, 12</column>
-<column name="gmem_in_0_RREADY">59, 11, 1, 11</column>
+<column name="ap_NS_fsm">202, 44, 1, 44</column>
+<column name="b_buf_address0">14, 3, 5, 15</column>
+<column name="b_buf_ce0">14, 3, 1, 3</column>
+<column name="b_buf_we0">9, 2, 1, 2</column>
+<column name="be_buf_address0">14, 3, 5, 15</column>
+<column name="be_buf_ce0">14, 3, 1, 3</column>
+<column name="be_buf_we0">9, 2, 1, 2</column>
+<column name="g_buf_address0">14, 3, 5, 15</column>
+<column name="g_buf_ce0">14, 3, 1, 3</column>
+<column name="g_buf_we0">9, 2, 1, 2</column>
+<column name="gmem_in_0_ARADDR">20, 4, 64, 256</column>
+<column name="gmem_in_0_ARLEN">20, 4, 32, 128</column>
+<column name="gmem_in_0_ARVALID">20, 4, 1, 4</column>
+<column name="gmem_in_0_RREADY">14, 3, 1, 3</column>
 <column name="gmem_in_blk_n_AR">9, 2, 1, 2</column>
-<column name="gmem_out_0_AWADDR">31, 6, 64, 384</column>
-<column name="gmem_out_0_AWLEN">31, 6, 32, 192</column>
-<column name="gmem_out_0_AWVALID">31, 6, 1, 6</column>
-<column name="gmem_out_0_BREADY">31, 6, 1, 6</column>
-<column name="gmem_out_0_WDATA">31, 6, 256, 1536</column>
-<column name="gmem_out_0_WSTRB">31, 6, 32, 192</column>
-<column name="gmem_out_0_WVALID">31, 6, 1, 6</column>
-<column name="gmem_param_0_ARADDR">31, 6, 64, 384</column>
+<column name="gmem_out_0_AWVALID">9, 2, 1, 2</column>
+<column name="gmem_out_0_BREADY">9, 2, 1, 2</column>
+<column name="gmem_out_0_WVALID">9, 2, 1, 2</column>
+<column name="gmem_param_0_ARADDR">37, 7, 64, 448</column>
 <column name="gmem_param_0_ARLEN">31, 6, 32, 192</column>
-<column name="gmem_param_0_ARVALID">31, 6, 1, 6</column>
-<column name="gmem_param_0_RREADY">31, 6, 1, 6</column>
-<column name="gmem_weight_0_ARADDR">31, 6, 64, 384</column>
-<column name="gmem_weight_0_ARLEN">31, 6, 32, 192</column>
-<column name="gmem_weight_0_ARVALID">31, 6, 1, 6</column>
-<column name="gmem_weight_0_RREADY">31, 6, 1, 6</column>
-<column name="grp_UpConv_Fused_Row_8_128_128_120_60_s_fu_544_ho">26, 5, 8, 40</column>
-<column name="grp_UpConv_Fused_Row_8_16_16_16_16_s_fu_772_ho">26, 5, 5, 25</column>
-<column name="grp_UpConv_Fused_Row_8_16_16_960_480_s_fu_715_ho">26, 5, 5, 25</column>
-<column name="grp_UpConv_Fused_Row_8_32_32_480_240_s_fu_658_ho">26, 5, 6, 30</column>
-<column name="grp_UpConv_Fused_Row_8_64_64_240_120_s_fu_601_ho">26, 5, 7, 35</column>
-<column name="hi_1_fu_426">9, 2, 5, 10</column>
-<column name="hi_2_fu_418">9, 2, 6, 12</column>
-<column name="hi_3_fu_410">9, 2, 7, 14</column>
-<column name="hi_4_fu_402">9, 2, 8, 16</column>
-<column name="hi_fu_434">9, 2, 5, 10</column>
-<column name="indvar159_fu_430">9, 2, 4, 8</column>
-<column name="indvar163_fu_422">9, 2, 5, 10</column>
-<column name="indvar167_fu_414">9, 2, 6, 12</column>
-<column name="indvar171_fu_406">9, 2, 7, 14</column>
-<column name="indvar_fu_438">9, 2, 4, 8</column>
-<column name="x_buf_address0">65, 16, 11, 176</column>
-<column name="x_buf_ce0">65, 16, 1, 16</column>
-<column name="x_buf_d0">59, 11, 256, 2816</column>
-<column name="x_buf_we0">59, 11, 1, 11</column>
+<column name="gmem_param_0_ARVALID">26, 5, 1, 5</column>
+<column name="gmem_param_0_RREADY">20, 4, 1, 4</column>
+<column name="gmem_param_blk_n_AR">9, 2, 1, 2</column>
+<column name="gmem_weight_0_ARVALID">9, 2, 1, 2</column>
+<column name="gmem_weight_0_RREADY">9, 2, 1, 2</column>
+<column name="grp_UpConv_Fused_Row_8_s_fu_381_ho">26, 5, 8, 40</column>
+<column name="hi_fu_252">9, 2, 8, 16</column>
+<column name="indvar_fu_256">9, 2, 7, 14</column>
+<column name="x_buf_address0">20, 4, 11, 44</column>
+<column name="x_buf_ce0">20, 4, 1, 4</column>
+<column name="x_buf_d0">14, 3, 256, 768</column>
+<column name="x_buf_we0">14, 3, 1, 3</column>
 </table>
 </item>
 <item name = "Register"><table name="" hasTotal="1">
 <keys size="5">Name, FF, LUT, Bits, Const Bits</keys>
-<column name="BE_read_reg_1381">64, 0, 64, 0</column>
-<column name="B_read_reg_1399">64, 0, 64, 0</column>
-<column name="G_read_reg_1390">64, 0, 64, 0</column>
-<column name="W_read_reg_1408">64, 0, 64, 0</column>
-<column name="X_read_reg_1417">64, 0, 64, 0</column>
-<column name="Y_read_reg_1372">64, 0, 64, 0</column>
-<column name="add_ln333_1_reg_1625">5, 0, 5, 0</column>
-<column name="add_ln333_2_reg_1597">6, 0, 6, 0</column>
-<column name="add_ln333_3_reg_1569">7, 0, 7, 0</column>
-<column name="add_ln333_4_reg_1541">8, 0, 8, 0</column>
-<column name="add_ln333_reg_1653">5, 0, 5, 0</column>
-<column name="ap_CS_fsm">49, 0, 49, 0</column>
-<column name="ap_predicate_pred300_state10">1, 0, 1, 0</column>
-<column name="ap_predicate_pred300_state11">1, 0, 1, 0</column>
-<column name="ap_predicate_pred300_state12">1, 0, 1, 0</column>
-<column name="ap_predicate_pred300_state13">1, 0, 1, 0</column>
-<column name="ap_predicate_pred302_state10">1, 0, 1, 0</column>
-<column name="ap_predicate_pred302_state11">1, 0, 1, 0</column>
-<column name="ap_predicate_pred302_state12">1, 0, 1, 0</column>
-<column name="ap_predicate_pred302_state13">1, 0, 1, 0</column>
-<column name="ap_predicate_pred306_state10">1, 0, 1, 0</column>
-<column name="ap_predicate_pred306_state11">1, 0, 1, 0</column>
-<column name="ap_predicate_pred306_state12">1, 0, 1, 0</column>
-<column name="ap_predicate_pred306_state13">1, 0, 1, 0</column>
-<column name="ap_predicate_pred310_state10">1, 0, 1, 0</column>
-<column name="ap_predicate_pred310_state11">1, 0, 1, 0</column>
-<column name="ap_predicate_pred310_state12">1, 0, 1, 0</column>
-<column name="ap_predicate_pred310_state13">1, 0, 1, 0</column>
-<column name="ap_predicate_pred319_state10">1, 0, 1, 0</column>
-<column name="ap_predicate_pred319_state11">1, 0, 1, 0</column>
-<column name="ap_predicate_pred319_state12">1, 0, 1, 0</column>
-<column name="ap_predicate_pred319_state13">1, 0, 1, 0</column>
-<column name="empty_65_reg_1615">5, 0, 5, 0</column>
-<column name="empty_67_reg_1587">6, 0, 6, 0</column>
-<column name="empty_69_reg_1559">7, 0, 7, 0</column>
-<column name="empty_71_reg_1531">1, 0, 1, 0</column>
-<column name="empty_73_reg_1643">5, 0, 5, 0</column>
-<column name="epsilon_read_reg_1363">16, 0, 16, 0</column>
-<column name="gmem_in_addr_reg_1433">64, 0, 64, 0</column>
-<column name="grp_UpConv_Fused_Row_8_128_128_120_60_s_fu_544_ap_start_reg">1, 0, 1, 0</column>
-<column name="grp_UpConv_Fused_Row_8_16_16_16_16_s_fu_772_ap_start_reg">1, 0, 1, 0</column>
-<column name="grp_UpConv_Fused_Row_8_16_16_960_480_s_fu_715_ap_start_reg">1, 0, 1, 0</column>
-<column name="grp_UpConv_Fused_Row_8_32_32_480_240_s_fu_658_ap_start_reg">1, 0, 1, 0</column>
-<column name="grp_UpConv_Fused_Row_8_64_64_240_120_s_fu_601_ap_start_reg">1, 0, 1, 0</column>
-<column name="grp_upconv_core_top_Pipeline_LOAD_ROW0_VITIS_LOOP_317_11_fu_517_ap_start_reg">1, 0, 1, 0</column>
-<column name="grp_upconv_core_top_Pipeline_LOAD_ROW0_VITIS_LOOP_317_13_fu_508_ap_start_reg">1, 0, 1, 0</column>
-<column name="grp_upconv_core_top_Pipeline_LOAD_ROW0_VITIS_LOOP_317_15_fu_499_ap_start_reg">1, 0, 1, 0</column>
-<column name="grp_upconv_core_top_Pipeline_LOAD_ROW0_VITIS_LOOP_317_1_fu_526_ap_start_reg">1, 0, 1, 0</column>
-<column name="grp_upconv_core_top_Pipeline_LOAD_ROW0_fu_535_ap_start_reg">1, 0, 1, 0</column>
-<column name="grp_upconv_core_top_Pipeline_LOAD_ROW_VITIS_LOOP_328_22_fu_851_ap_start_reg">1, 0, 1, 0</column>
-<column name="grp_upconv_core_top_Pipeline_LOAD_ROW_VITIS_LOOP_328_24_fu_840_ap_start_reg">1, 0, 1, 0</column>
-<column name="grp_upconv_core_top_Pipeline_LOAD_ROW_VITIS_LOOP_328_26_fu_829_ap_start_reg">1, 0, 1, 0</column>
-<column name="grp_upconv_core_top_Pipeline_LOAD_ROW_VITIS_LOOP_328_2_fu_862_ap_start_reg">1, 0, 1, 0</column>
-<column name="grp_upconv_core_top_Pipeline_LOAD_ROW_fu_873_ap_start_reg">1, 0, 1, 0</column>
-<column name="hi_1_fu_426">5, 0, 5, 0</column>
-<column name="hi_2_fu_418">6, 0, 6, 0</column>
-<column name="hi_3_fu_410">7, 0, 7, 0</column>
-<column name="hi_4_fu_402">8, 0, 8, 0</column>
-<column name="hi_5_reg_1630">5, 0, 5, 0</column>
-<column name="hi_6_reg_1602">5, 0, 5, 0</column>
-<column name="hi_7_reg_1574">6, 0, 6, 0</column>
-<column name="hi_8_reg_1546">7, 0, 7, 0</column>
-<column name="hi_9_reg_1518">8, 0, 8, 0</column>
-<column name="hi_fu_434">5, 0, 5, 0</column>
-<column name="indvar159_fu_430">4, 0, 4, 0</column>
-<column name="indvar163_fu_422">5, 0, 5, 0</column>
-<column name="indvar167_fu_414">6, 0, 6, 0</column>
-<column name="indvar171_fu_406">7, 0, 7, 0</column>
-<column name="indvar171_load_reg_1523">7, 0, 7, 0</column>
-<column name="indvar_fu_438">4, 0, 4, 0</column>
-<column name="mode_read_reg_1359">32, 0, 32, 0</column>
-<column name="reg_899">59, 0, 59, 0</column>
-<column name="shl_ln333_1_reg_1620">5, 0, 5, 0</column>
-<column name="shl_ln333_2_reg_1592">6, 0, 6, 0</column>
-<column name="shl_ln333_3_reg_1564">7, 0, 7, 0</column>
-<column name="shl_ln333_4_reg_1536">8, 0, 8, 0</column>
-<column name="shl_ln333_reg_1648">5, 0, 5, 0</column>
-<column name="shl_ln_reg_1638">4, 0, 8, 4</column>
-<column name="sub_ln326_1_reg_1582">9, 0, 15, 6</column>
-<column name="sub_ln326_2_reg_1554">10, 0, 16, 6</column>
-<column name="sub_ln326_reg_1610">8, 0, 14, 6</column>
-<column name="trunc_ln1_reg_1513">59, 0, 59, 0</column>
-<column name="trunc_ln325_4_reg_1508">59, 0, 59, 0</column>
-<column name="trunc_ln_reg_1424">59, 0, 59, 0</column>
+<column name="CI_W_reg_951">6, 0, 6, 0</column>
+<column name="C_IN_reg_919">10, 0, 10, 0</column>
+<column name="C_OUT_reg_913">9, 0, 9, 0</column>
+<column name="C_WORDS_OUT_reg_962">5, 0, 5, 0</column>
+<column name="W_IN_reg_924">8, 0, 8, 0</column>
+<column name="W_read_reg_881">64, 0, 64, 0</column>
+<column name="X_read_reg_886">64, 0, 64, 0</column>
+<column name="Y_read_reg_876">64, 0, 64, 0</column>
+<column name="add_ln405_reg_1073">8, 0, 8, 0</column>
+<column name="add_ln410_reg_1053">8, 0, 8, 0</column>
+<column name="ap_CS_fsm">43, 0, 43, 0</column>
+<column name="base_buf_reg_1063">11, 0, 11, 0</column>
+<column name="epsilon_read_reg_871">16, 0, 16, 0</column>
+<column name="grp_UpConv_Fused_Row_8_s_fu_381_ap_start_reg">1, 0, 1, 0</column>
+<column name="grp_upconv_core_top_Pipeline_LOAD_BE_fu_372_ap_start_reg">1, 0, 1, 0</column>
+<column name="grp_upconv_core_top_Pipeline_LOAD_B_fu_344_ap_start_reg">1, 0, 1, 0</column>
+<column name="grp_upconv_core_top_Pipeline_LOAD_G_fu_363_ap_start_reg">1, 0, 1, 0</column>
+<column name="grp_upconv_core_top_Pipeline_LOAD_ROW0_fu_353_ap_start_reg">1, 0, 1, 0</column>
+<column name="grp_upconv_core_top_Pipeline_LOAD_ROW_fu_440_ap_start_reg">1, 0, 1, 0</column>
+<column name="hi_1_reg_1039">8, 0, 8, 0</column>
+<column name="hi_fu_252">8, 0, 8, 0</column>
+<column name="icmp_ln46_1_reg_896">1, 0, 1, 0</column>
+<column name="icmp_ln46_2_reg_902">1, 0, 1, 0</column>
+<column name="icmp_ln46_3_reg_907">1, 0, 1, 0</column>
+<column name="icmp_ln46_reg_891">1, 0, 1, 0</column>
+<column name="indvar_fu_256">7, 0, 7, 0</column>
+<column name="inv_C_OUT_reg_1029">10, 0, 32, 22</column>
+<column name="mul_ln397_reg_1048">20, 0, 20, 0</column>
+<column name="shl_ln1_reg_1058">20, 0, 25, 5</column>
+<column name="shl_ln405_reg_1068">8, 0, 8, 0</column>
+<column name="total_reg_970">14, 0, 14, 0</column>
+<column name="trunc_ln1_reg_939">59, 0, 59, 0</column>
+<column name="trunc_ln2_reg_945">59, 0, 59, 0</column>
+<column name="trunc_ln386_reg_976">11, 0, 11, 0</column>
+<column name="trunc_ln387_reg_981">13, 0, 13, 0</column>
+<column name="trunc_ln395_reg_987">12, 0, 12, 0</column>
+<column name="trunc_ln4_reg_956">59, 0, 59, 0</column>
+<column name="trunc_ln5_reg_1014">59, 0, 59, 0</column>
+<column name="trunc_ln_reg_933">59, 0, 59, 0</column>
+<column name="wide_trip_count36_reg_992">5, 0, 64, 59</column>
+<column name="zext_ln395_1_reg_1034">14, 0, 20, 6</column>
 </table>
 </item>
 </section>

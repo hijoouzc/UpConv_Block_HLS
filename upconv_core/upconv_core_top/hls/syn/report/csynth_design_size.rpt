@@ -6,73 +6,53 @@
 +---------------+-----------------------------+--------------+----------------------------------------------------------------------------------------+
 | Phase         | Step                        | Instructions | Description                                                                            |
 +---------------+-----------------------------+--------------+----------------------------------------------------------------------------------------+
-| Compile/Link  |                             | 19,778       | After all functions are compiled and linked into a single design                       |
+| Compile/Link  |                             |  3,934       | After all functions are compiled and linked into a single design                       |
 |               |                             |              |                                                                                        |
 | Unroll/Inline |                             |              | After user unroll and inline pragmas are applied                                       |
-|               | (1) unroll                  | 38,314       | user unroll pragmas are applied                                                        |
-|               | (2) simplification          | 29,967       | simplification of applied user unroll pragmas                                          |
-|               | (3) inline                  | 28,934       | user inline pragmas are applied                                                        |
-|               | (4) simplification          | 28,593       | simplification of applied user inline pragmas                                          |
+|               | (1) unroll                  |  7,868       | user unroll pragmas are applied                                                        |
+|               | (2) simplification          |  6,216       | simplification of applied user unroll pragmas                                          |
+|               | (3) inline                  |  6,150       | user inline pragmas are applied                                                        |
+|               | (4) simplification          |  6,069       | simplification of applied user inline pragmas                                          |
 |               |                             |              |                                                                                        |
 | Array/Struct  |                             |              | After user array partition and struct aggregate/disaggregate pragmas are applied       |
-|               | (1) array partition         | 60,401       | user array partition pragmas are applied                                               |
-|               | (2) simplification          | 40,152       | simplification of applied user array partition & struct aggregate/disaggregate pragmas |
-|               | (3) aggregate/disaggregate  | 40,152       | user struct aggregate/disaggregate pragmas are applied                                 |
-|               | (4) array reshape           | 40,112       | apply array reshape pragmas                                                            |
-|               | (5) access patterns         | 40,043       | array access pattern optmizations                                                      |
+|               | (1) array partition         | 12,664       | user array partition pragmas are applied                                               |
+|               | (2) simplification          |  8,459       | simplification of applied user array partition & struct aggregate/disaggregate pragmas |
+|               | (3) aggregate/disaggregate  |  8,459       | user struct aggregate/disaggregate pragmas are applied                                 |
+|               | (4) array reshape           |  8,455       | apply array reshape pragmas                                                            |
+|               | (5) access patterns         |  8,518       | array access pattern optmizations                                                      |
 |               |                             |              |                                                                                        |
 | Performance   |                             |              | After transformations are applied to meet performance pragma targets                   |
-|               | (1) loop simplification     | 39,987       | loop and instruction simplification                                                    |
-|               | (2) parallelization         | 39,987       | loops are unrolled or pipelined to meet performance targets                            |
-|               | (3) array partition         | 39,959       | arrays are partitioned to meet performance targets                                     |
-|               | (4) simplification          | 39,831       | simplification of design after performance transformations                             |
+|               | (1) loop simplification     |  8,462       | loop and instruction simplification                                                    |
+|               | (2) parallelization         |  8,462       | loops are unrolled or pipelined to meet performance targets                            |
+|               | (3) array partition         |  8,437       | arrays are partitioned to meet performance targets                                     |
+|               | (4) simplification          |  8,437       | simplification of design after performance transformations                             |
 |               |                             |              |                                                                                        |
 | HW Transforms |                             |              | After hardware transfomations                                                          |
-|               | (1) lowering                | 39,579       | initial conversion to HW specific instructions                                         |
-|               | (2) optimizations           | 37,204       | high level synthesis optimizations                                                     |
+|               | (1) lowering                |  8,484       | initial conversion to HW specific instructions                                         |
+|               | (2) optimizations           |  7,989       | high level synthesis optimizations                                                     |
 +---------------+-----------------------------+--------------+----------------------------------------------------------------------------------------+
 
 * Instructions per Function for each Compilation Phase
-+-------------------------------------+---------------------------+------------------+-----------------+-----------------+-----------------+-----------------+
-| Function                            | Location                  | Compile/Link     | Unroll/Inline   | Array/Struct    | Performance     | HW Transforms   |
-+-------------------------------------+---------------------------+------------------+-----------------+-----------------+-----------------+-----------------+
-| + upconv_core_top                   | upconv_core_top.cpp:11    | 19,778           | 28,593          | 40,043          | 39,831          | 37,204          |
-|  + UpConv_Fused_Top<8, 16, 16, ...  | Hls_Layers_UpConv.tpp:302 | 3,948            |                 |                 |                 |                 |
-|   + UpConv_Fused_Row<8, 16, 16, ... | Hls_Layers_UpConv.tpp:79  | 3,868 (4 calls)  |                 |                 |                 |                 |
-|      bits_to_half<__fp16>           | Hls_Layers_UpConv.tpp:38  |   360 (20 calls) |                 |                 |                 |                 |
-|    + my_sqrt_f                      | Hls_Layers_UpConv.tpp:52  |    16 (4 calls)  |                 |                 |                 |                 |
-|       sqrtf                         | sqrtfloat.cpp:11          |     8 (4 calls)  |                 |                 |                 |                 |
-|      half_to_bits<__fp16>           | Hls_Layers_UpConv.tpp:22  |   104 (4 calls)  |                 |                 |                 |                 |
-|  + UpConv_Fused_Top<8, 32, 32, ...  | Hls_Layers_UpConv.tpp:302 | 3,948            |                 |                 |                 |                 |
-|   + UpConv_Fused_Row<8, 32, 32, ... | Hls_Layers_UpConv.tpp:79  | 3,868 (4 calls)  |                 |                 |                 |                 |
-|      bits_to_half<__fp16>           | Hls_Layers_UpConv.tpp:38  |   360 (20 calls) |                 |                 |                 |                 |
-|    + my_sqrt_f                      | Hls_Layers_UpConv.tpp:52  |    16 (4 calls)  |                 |                 |                 |                 |
-|       sqrtf                         | sqrtfloat.cpp:11          |     8 (4 calls)  |                 |                 |                 |                 |
-|      half_to_bits<__fp16>           | Hls_Layers_UpConv.tpp:22  |   104 (4 calls)  |                 |                 |                 |                 |
-|  + UpConv_Fused_Top<8, 64, 64, ...  | Hls_Layers_UpConv.tpp:302 | 3,948            |                 |                 |                 |                 |
-|   + UpConv_Fused_Row<8, 64, 64, ... | Hls_Layers_UpConv.tpp:79  | 3,868 (4 calls)  |                 |                 |                 |                 |
-|      bits_to_half<__fp16>           | Hls_Layers_UpConv.tpp:38  |   360 (20 calls) |                 |                 |                 |                 |
-|    + my_sqrt_f                      | Hls_Layers_UpConv.tpp:52  |    16 (4 calls)  |                 |                 |                 |                 |
-|       sqrtf                         | sqrtfloat.cpp:11          |     8 (4 calls)  |                 |                 |                 |                 |
-|      half_to_bits<__fp16>           | Hls_Layers_UpConv.tpp:22  |   104 (4 calls)  |                 |                 |                 |                 |
-|  + UpConv_Fused_Top<8, 128, 128...  | Hls_Layers_UpConv.tpp:302 | 3,948            |                 |                 |                 |                 |
-|   + UpConv_Fused_Row<8, 128, 128... | Hls_Layers_UpConv.tpp:79  | 3,868 (4 calls)  |                 |                 |                 |                 |
-|      bits_to_half<__fp16>           | Hls_Layers_UpConv.tpp:38  |   360 (20 calls) |                 |                 |                 |                 |
-|    + my_sqrt_f                      | Hls_Layers_UpConv.tpp:52  |    16 (4 calls)  |                 |                 |                 |                 |
-|       sqrtf                         | sqrtfloat.cpp:11          |     8 (4 calls)  |                 |                 |                 |                 |
-|      half_to_bits<__fp16>           | Hls_Layers_UpConv.tpp:22  |   104 (4 calls)  |                 |                 |                 |                 |
-|  + UpConv_Fused_Top<8, 16, 16, ...  | Hls_Layers_UpConv.tpp:302 | 3,948            |                 |                 |                 |                 |
-|   + UpConv_Fused_Row<8, 16, 16, ... | Hls_Layers_UpConv.tpp:79  | 3,868 (4 calls)  |                 |                 |                 |                 |
-|      bits_to_half<__fp16>           | Hls_Layers_UpConv.tpp:38  |   360 (20 calls) |                 |                 |                 |                 |
-|    + my_sqrt_f                      | Hls_Layers_UpConv.tpp:52  |    16 (4 calls)  |                 |                 |                 |                 |
-|       sqrtf                         | sqrtfloat.cpp:11          |     8 (4 calls)  |                 |                 |                 |                 |
-|      half_to_bits<__fp16>           | Hls_Layers_UpConv.tpp:22  |   104 (4 calls)  |                 |                 |                 |                 |
-|    UpConv_Fused_Row<8, 16, 16, ...  | Hls_Layers_UpConv.tpp:79  |                  | 5,876 (4 calls) | 8,200 (4 calls) | 8,196 (4 calls) | 7,676 (4 calls) |
-|    UpConv_Fused_Row<8, 32, 32, ...  | Hls_Layers_UpConv.tpp:79  |                  | 5,876 (4 calls) | 8,200 (4 calls) | 8,196 (4 calls) | 7,676 (4 calls) |
-|    UpConv_Fused_Row<8, 64, 64, ...  | Hls_Layers_UpConv.tpp:79  |                  | 5,984 (4 calls) | 8,504 (4 calls) | 8,440 (4 calls) | 7,924 (4 calls) |
-|    UpConv_Fused_Row<8, 128, 128...  | Hls_Layers_UpConv.tpp:79  |                  | 5,936 (4 calls) | 8,324 (4 calls) | 8,316 (4 calls) | 7,800 (4 calls) |
-|    UpConv_Fused_Row<8, 16, 16, ...  | Hls_Layers_UpConv.tpp:79  |                  | 4,644 (4 calls) | 6,516 (4 calls) | 6,384 (4 calls) | 5,732 (4 calls) |
-+-------------------------------------+---------------------------+------------------+-----------------+-----------------+-----------------+-----------------+
++----------------------------+------------------------+-----------------+-----------------+-----------------+-----------------+-----------------+
+| Function                   | Location               | Compile/Link    | Unroll/Inline   | Array/Struct    | Performance     | HW Transforms   |
++----------------------------+------------------------+-----------------+-----------------+-----------------+-----------------+-----------------+
+| + upconv_core_top          | upconv_core_top.cpp:10 | 3,934           | 6,069           | 8,518           | 8,437           | 7,989           |
+|  + UpConv_Fused_Top<8>     | UpConv_Unified.tpp:360 | 3,880           |                 |                 |                 |                 |
+|     Load_Norm_Params       | UpConv_Unified.tpp:178 |   46            |                 |                 |                 |                 |
+|   + UpConv_Fused_Row<8>    | UpConv_Unified.tpp:297 | 3,756 (4 calls) |                 |                 |                 |                 |
+|      Reset_Row_Buffer      | UpConv_Unified.tpp:67  |  152 (4 calls)  |                 |                 |                 |                 |
+|      Load_Weight_Tile<8>   | UpConv_Unified.tpp:83  |  144 (4 calls)  |                 |                 |                 |                 |
+|    + Compute_MAC_Tile<8>   | UpConv_Unified.tpp:104 | 1,312 (4 calls) |                 |                 |                 |                 |
+|       bits_to_half<__fp16> | UpConv_Unified.tpp:38  |  144 (8 calls)  |                 |                 |                 |                 |
+|    + Compute_Pixel_Stats   | UpConv_Unified.tpp:205 |  748 (4 calls)  |                 |                 |                 |                 |
+|       bits_to_half<__fp16> | UpConv_Unified.tpp:38  |   72 (4 calls)  |                 |                 |                 |                 |
+|     + my_sqrt_f            | UpConv_Unified.tpp:52  |   16 (4 calls)  |                 |                 |                 |                 |
+|        sqrtf               | sqrtfloat.cpp:11       |    8 (4 calls)  |                 |                 |                 |                 |
+|    + Apply_Norm_And_Write  | UpConv_Unified.tpp:259 | 1,264 (4 calls) |                 |                 |                 |                 |
+|       bits_to_half<__fp16> | UpConv_Unified.tpp:38  |  144 (8 calls)  |                 |                 |                 |                 |
+|       half_to_bits<__fp16> | UpConv_Unified.tpp:22  |  104 (4 calls)  |                 |                 |                 |                 |
+|    UpConv_Fused_Row<8>     | UpConv_Unified.tpp:297 |                 | 5,944 (4 calls) | 8,380 (4 calls) | 8,300 (4 calls) | 7,824 (4 calls) |
++----------------------------+------------------------+-----------------+-----------------+-----------------+-----------------+-----------------+
 
 * Design Size Message Settings
 +---------------------------------------------+--------+------------------------------------------------------------------+

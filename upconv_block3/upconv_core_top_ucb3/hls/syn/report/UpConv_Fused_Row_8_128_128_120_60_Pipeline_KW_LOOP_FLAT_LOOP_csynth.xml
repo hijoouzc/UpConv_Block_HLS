@@ -46,13 +46,13 @@
 <SummaryOfViolations>
 <IssueType>-</IssueType>
 <ViolationType>-</ViolationType>
-<SourceLocation>../gen/Hls_Layers_UpConv.tpp:169</SourceLocation>
+<SourceLocation>../gen/Hls_Layers_UpConv.tpp:132~../gen/Hls_Layers_UpConv.tpp:358</SourceLocation>
 <SummaryOfLoopViolations>
 <KW_LOOP_FLAT_LOOP>
 <Name>KW_LOOP_FLAT_LOOP</Name>
 <IssueType>-</IssueType>
 <ViolationType>-</ViolationType>
-<SourceLocation>../gen/Hls_Layers_UpConv.tpp:158</SourceLocation>
+<SourceLocation>../gen/Hls_Layers_UpConv.tpp:121~../gen/Hls_Layers_UpConv.tpp:358</SourceLocation>
 </KW_LOOP_FLAT_LOOP>
 </SummaryOfLoopViolations>
 </SummaryOfViolations>
@@ -61,7 +61,7 @@
 <AreaEstimates>
 <Resources>
 <DSP>496</DSP>
-<FF>43306</FF>
+<FF>43299</FF>
 <LUT>26290</LUT>
 <BRAM_18K>0</BRAM_18K>
 <URAM>0</URAM>
@@ -143,7 +143,7 @@
 <Attribute>control</Attribute>
 </RtlPorts>
 <RtlPorts>
-<name>grp_fu_605_p_din0</name>
+<name>grp_fu_723_p_din0</name>
 <Object>UpConv_Fused_Row&lt;8, 128, 128, 120, 60&gt;_Pipeline_KW_LOOP_FLAT_LOOP</Object>
 <Type>return value</Type>
 <Scope></Scope>
@@ -154,7 +154,7 @@
 <Attribute>data</Attribute>
 </RtlPorts>
 <RtlPorts>
-<name>grp_fu_605_p_din1</name>
+<name>grp_fu_723_p_din1</name>
 <Object>UpConv_Fused_Row&lt;8, 128, 128, 120, 60&gt;_Pipeline_KW_LOOP_FLAT_LOOP</Object>
 <Type>return value</Type>
 <Scope></Scope>
@@ -165,51 +165,7 @@
 <Attribute>data</Attribute>
 </RtlPorts>
 <RtlPorts>
-<name>grp_fu_605_p_dout0</name>
-<Object>UpConv_Fused_Row&lt;8, 128, 128, 120, 60&gt;_Pipeline_KW_LOOP_FLAT_LOOP</Object>
-<Type>return value</Type>
-<Scope></Scope>
-<IOProtocol>ap_ctrl_hs</IOProtocol>
-<IOConfig></IOConfig>
-<Dir>in</Dir>
-<Bits>16</Bits>
-<Attribute>data</Attribute>
-</RtlPorts>
-<RtlPorts>
-<name>grp_fu_605_p_ce</name>
-<Object>UpConv_Fused_Row&lt;8, 128, 128, 120, 60&gt;_Pipeline_KW_LOOP_FLAT_LOOP</Object>
-<Type>return value</Type>
-<Scope></Scope>
-<IOProtocol>ap_ctrl_hs</IOProtocol>
-<IOConfig></IOConfig>
-<Dir>out</Dir>
-<Bits>1</Bits>
-<Attribute>data</Attribute>
-</RtlPorts>
-<RtlPorts>
-<name>grp_fu_609_p_din0</name>
-<Object>UpConv_Fused_Row&lt;8, 128, 128, 120, 60&gt;_Pipeline_KW_LOOP_FLAT_LOOP</Object>
-<Type>return value</Type>
-<Scope></Scope>
-<IOProtocol>ap_ctrl_hs</IOProtocol>
-<IOConfig></IOConfig>
-<Dir>out</Dir>
-<Bits>16</Bits>
-<Attribute>data</Attribute>
-</RtlPorts>
-<RtlPorts>
-<name>grp_fu_609_p_din1</name>
-<Object>UpConv_Fused_Row&lt;8, 128, 128, 120, 60&gt;_Pipeline_KW_LOOP_FLAT_LOOP</Object>
-<Type>return value</Type>
-<Scope></Scope>
-<IOProtocol>ap_ctrl_hs</IOProtocol>
-<IOConfig></IOConfig>
-<Dir>out</Dir>
-<Bits>16</Bits>
-<Attribute>data</Attribute>
-</RtlPorts>
-<RtlPorts>
-<name>grp_fu_609_p_dout0</name>
+<name>grp_fu_723_p_dout0</name>
 <Object>UpConv_Fused_Row&lt;8, 128, 128, 120, 60&gt;_Pipeline_KW_LOOP_FLAT_LOOP</Object>
 <Type>return value</Type>
 <Scope></Scope>
@@ -220,7 +176,7 @@
 <Attribute>data</Attribute>
 </RtlPorts>
 <RtlPorts>
-<name>grp_fu_609_p_ce</name>
+<name>grp_fu_723_p_ce</name>
 <Object>UpConv_Fused_Row&lt;8, 128, 128, 120, 60&gt;_Pipeline_KW_LOOP_FLAT_LOOP</Object>
 <Type>return value</Type>
 <Scope></Scope>
@@ -231,7 +187,7 @@
 <Attribute>data</Attribute>
 </RtlPorts>
 <RtlPorts>
-<name>grp_fu_613_p_din0</name>
+<name>grp_fu_727_p_din0</name>
 <Object>UpConv_Fused_Row&lt;8, 128, 128, 120, 60&gt;_Pipeline_KW_LOOP_FLAT_LOOP</Object>
 <Type>return value</Type>
 <Scope></Scope>
@@ -242,7 +198,7 @@
 <Attribute>data</Attribute>
 </RtlPorts>
 <RtlPorts>
-<name>grp_fu_613_p_din1</name>
+<name>grp_fu_727_p_din1</name>
 <Object>UpConv_Fused_Row&lt;8, 128, 128, 120, 60&gt;_Pipeline_KW_LOOP_FLAT_LOOP</Object>
 <Type>return value</Type>
 <Scope></Scope>
@@ -253,7 +209,7 @@
 <Attribute>data</Attribute>
 </RtlPorts>
 <RtlPorts>
-<name>grp_fu_613_p_dout0</name>
+<name>grp_fu_727_p_dout0</name>
 <Object>UpConv_Fused_Row&lt;8, 128, 128, 120, 60&gt;_Pipeline_KW_LOOP_FLAT_LOOP</Object>
 <Type>return value</Type>
 <Scope></Scope>
@@ -264,7 +220,7 @@
 <Attribute>data</Attribute>
 </RtlPorts>
 <RtlPorts>
-<name>grp_fu_613_p_ce</name>
+<name>grp_fu_727_p_ce</name>
 <Object>UpConv_Fused_Row&lt;8, 128, 128, 120, 60&gt;_Pipeline_KW_LOOP_FLAT_LOOP</Object>
 <Type>return value</Type>
 <Scope></Scope>
@@ -275,7 +231,7 @@
 <Attribute>data</Attribute>
 </RtlPorts>
 <RtlPorts>
-<name>grp_fu_617_p_din0</name>
+<name>grp_fu_731_p_din0</name>
 <Object>UpConv_Fused_Row&lt;8, 128, 128, 120, 60&gt;_Pipeline_KW_LOOP_FLAT_LOOP</Object>
 <Type>return value</Type>
 <Scope></Scope>
@@ -286,7 +242,7 @@
 <Attribute>data</Attribute>
 </RtlPorts>
 <RtlPorts>
-<name>grp_fu_617_p_din1</name>
+<name>grp_fu_731_p_din1</name>
 <Object>UpConv_Fused_Row&lt;8, 128, 128, 120, 60&gt;_Pipeline_KW_LOOP_FLAT_LOOP</Object>
 <Type>return value</Type>
 <Scope></Scope>
@@ -297,7 +253,7 @@
 <Attribute>data</Attribute>
 </RtlPorts>
 <RtlPorts>
-<name>grp_fu_617_p_dout0</name>
+<name>grp_fu_731_p_dout0</name>
 <Object>UpConv_Fused_Row&lt;8, 128, 128, 120, 60&gt;_Pipeline_KW_LOOP_FLAT_LOOP</Object>
 <Type>return value</Type>
 <Scope></Scope>
@@ -308,7 +264,7 @@
 <Attribute>data</Attribute>
 </RtlPorts>
 <RtlPorts>
-<name>grp_fu_617_p_ce</name>
+<name>grp_fu_731_p_ce</name>
 <Object>UpConv_Fused_Row&lt;8, 128, 128, 120, 60&gt;_Pipeline_KW_LOOP_FLAT_LOOP</Object>
 <Type>return value</Type>
 <Scope></Scope>
@@ -319,7 +275,7 @@
 <Attribute>data</Attribute>
 </RtlPorts>
 <RtlPorts>
-<name>grp_fu_621_p_din0</name>
+<name>grp_fu_735_p_din0</name>
 <Object>UpConv_Fused_Row&lt;8, 128, 128, 120, 60&gt;_Pipeline_KW_LOOP_FLAT_LOOP</Object>
 <Type>return value</Type>
 <Scope></Scope>
@@ -330,7 +286,7 @@
 <Attribute>data</Attribute>
 </RtlPorts>
 <RtlPorts>
-<name>grp_fu_621_p_din1</name>
+<name>grp_fu_735_p_din1</name>
 <Object>UpConv_Fused_Row&lt;8, 128, 128, 120, 60&gt;_Pipeline_KW_LOOP_FLAT_LOOP</Object>
 <Type>return value</Type>
 <Scope></Scope>
@@ -341,7 +297,7 @@
 <Attribute>data</Attribute>
 </RtlPorts>
 <RtlPorts>
-<name>grp_fu_621_p_dout0</name>
+<name>grp_fu_735_p_dout0</name>
 <Object>UpConv_Fused_Row&lt;8, 128, 128, 120, 60&gt;_Pipeline_KW_LOOP_FLAT_LOOP</Object>
 <Type>return value</Type>
 <Scope></Scope>
@@ -352,7 +308,7 @@
 <Attribute>data</Attribute>
 </RtlPorts>
 <RtlPorts>
-<name>grp_fu_621_p_ce</name>
+<name>grp_fu_735_p_ce</name>
 <Object>UpConv_Fused_Row&lt;8, 128, 128, 120, 60&gt;_Pipeline_KW_LOOP_FLAT_LOOP</Object>
 <Type>return value</Type>
 <Scope></Scope>
@@ -363,7 +319,7 @@
 <Attribute>data</Attribute>
 </RtlPorts>
 <RtlPorts>
-<name>grp_fu_625_p_din0</name>
+<name>grp_fu_739_p_din0</name>
 <Object>UpConv_Fused_Row&lt;8, 128, 128, 120, 60&gt;_Pipeline_KW_LOOP_FLAT_LOOP</Object>
 <Type>return value</Type>
 <Scope></Scope>
@@ -374,7 +330,7 @@
 <Attribute>data</Attribute>
 </RtlPorts>
 <RtlPorts>
-<name>grp_fu_625_p_din1</name>
+<name>grp_fu_739_p_din1</name>
 <Object>UpConv_Fused_Row&lt;8, 128, 128, 120, 60&gt;_Pipeline_KW_LOOP_FLAT_LOOP</Object>
 <Type>return value</Type>
 <Scope></Scope>
@@ -385,7 +341,7 @@
 <Attribute>data</Attribute>
 </RtlPorts>
 <RtlPorts>
-<name>grp_fu_625_p_dout0</name>
+<name>grp_fu_739_p_dout0</name>
 <Object>UpConv_Fused_Row&lt;8, 128, 128, 120, 60&gt;_Pipeline_KW_LOOP_FLAT_LOOP</Object>
 <Type>return value</Type>
 <Scope></Scope>
@@ -396,7 +352,7 @@
 <Attribute>data</Attribute>
 </RtlPorts>
 <RtlPorts>
-<name>grp_fu_625_p_ce</name>
+<name>grp_fu_739_p_ce</name>
 <Object>UpConv_Fused_Row&lt;8, 128, 128, 120, 60&gt;_Pipeline_KW_LOOP_FLAT_LOOP</Object>
 <Type>return value</Type>
 <Scope></Scope>
@@ -407,7 +363,7 @@
 <Attribute>data</Attribute>
 </RtlPorts>
 <RtlPorts>
-<name>grp_fu_629_p_din0</name>
+<name>grp_fu_743_p_din0</name>
 <Object>UpConv_Fused_Row&lt;8, 128, 128, 120, 60&gt;_Pipeline_KW_LOOP_FLAT_LOOP</Object>
 <Type>return value</Type>
 <Scope></Scope>
@@ -418,7 +374,7 @@
 <Attribute>data</Attribute>
 </RtlPorts>
 <RtlPorts>
-<name>grp_fu_629_p_din1</name>
+<name>grp_fu_743_p_din1</name>
 <Object>UpConv_Fused_Row&lt;8, 128, 128, 120, 60&gt;_Pipeline_KW_LOOP_FLAT_LOOP</Object>
 <Type>return value</Type>
 <Scope></Scope>
@@ -429,7 +385,7 @@
 <Attribute>data</Attribute>
 </RtlPorts>
 <RtlPorts>
-<name>grp_fu_629_p_dout0</name>
+<name>grp_fu_743_p_dout0</name>
 <Object>UpConv_Fused_Row&lt;8, 128, 128, 120, 60&gt;_Pipeline_KW_LOOP_FLAT_LOOP</Object>
 <Type>return value</Type>
 <Scope></Scope>
@@ -440,7 +396,7 @@
 <Attribute>data</Attribute>
 </RtlPorts>
 <RtlPorts>
-<name>grp_fu_629_p_ce</name>
+<name>grp_fu_743_p_ce</name>
 <Object>UpConv_Fused_Row&lt;8, 128, 128, 120, 60&gt;_Pipeline_KW_LOOP_FLAT_LOOP</Object>
 <Type>return value</Type>
 <Scope></Scope>
@@ -451,7 +407,7 @@
 <Attribute>data</Attribute>
 </RtlPorts>
 <RtlPorts>
-<name>grp_fu_633_p_din0</name>
+<name>grp_fu_747_p_din0</name>
 <Object>UpConv_Fused_Row&lt;8, 128, 128, 120, 60&gt;_Pipeline_KW_LOOP_FLAT_LOOP</Object>
 <Type>return value</Type>
 <Scope></Scope>
@@ -462,7 +418,7 @@
 <Attribute>data</Attribute>
 </RtlPorts>
 <RtlPorts>
-<name>grp_fu_633_p_din1</name>
+<name>grp_fu_747_p_din1</name>
 <Object>UpConv_Fused_Row&lt;8, 128, 128, 120, 60&gt;_Pipeline_KW_LOOP_FLAT_LOOP</Object>
 <Type>return value</Type>
 <Scope></Scope>
@@ -473,7 +429,7 @@
 <Attribute>data</Attribute>
 </RtlPorts>
 <RtlPorts>
-<name>grp_fu_633_p_dout0</name>
+<name>grp_fu_747_p_dout0</name>
 <Object>UpConv_Fused_Row&lt;8, 128, 128, 120, 60&gt;_Pipeline_KW_LOOP_FLAT_LOOP</Object>
 <Type>return value</Type>
 <Scope></Scope>
@@ -484,7 +440,7 @@
 <Attribute>data</Attribute>
 </RtlPorts>
 <RtlPorts>
-<name>grp_fu_633_p_ce</name>
+<name>grp_fu_747_p_ce</name>
 <Object>UpConv_Fused_Row&lt;8, 128, 128, 120, 60&gt;_Pipeline_KW_LOOP_FLAT_LOOP</Object>
 <Type>return value</Type>
 <Scope></Scope>
@@ -495,7 +451,7 @@
 <Attribute>data</Attribute>
 </RtlPorts>
 <RtlPorts>
-<name>grp_fu_637_p_din0</name>
+<name>grp_fu_751_p_din0</name>
 <Object>UpConv_Fused_Row&lt;8, 128, 128, 120, 60&gt;_Pipeline_KW_LOOP_FLAT_LOOP</Object>
 <Type>return value</Type>
 <Scope></Scope>
@@ -506,7 +462,7 @@
 <Attribute>data</Attribute>
 </RtlPorts>
 <RtlPorts>
-<name>grp_fu_637_p_din1</name>
+<name>grp_fu_751_p_din1</name>
 <Object>UpConv_Fused_Row&lt;8, 128, 128, 120, 60&gt;_Pipeline_KW_LOOP_FLAT_LOOP</Object>
 <Type>return value</Type>
 <Scope></Scope>
@@ -517,7 +473,7 @@
 <Attribute>data</Attribute>
 </RtlPorts>
 <RtlPorts>
-<name>grp_fu_637_p_dout0</name>
+<name>grp_fu_751_p_dout0</name>
 <Object>UpConv_Fused_Row&lt;8, 128, 128, 120, 60&gt;_Pipeline_KW_LOOP_FLAT_LOOP</Object>
 <Type>return value</Type>
 <Scope></Scope>
@@ -528,7 +484,7 @@
 <Attribute>data</Attribute>
 </RtlPorts>
 <RtlPorts>
-<name>grp_fu_637_p_ce</name>
+<name>grp_fu_751_p_ce</name>
 <Object>UpConv_Fused_Row&lt;8, 128, 128, 120, 60&gt;_Pipeline_KW_LOOP_FLAT_LOOP</Object>
 <Type>return value</Type>
 <Scope></Scope>
@@ -539,7 +495,7 @@
 <Attribute>data</Attribute>
 </RtlPorts>
 <RtlPorts>
-<name>grp_fu_641_p_din0</name>
+<name>grp_fu_755_p_din0</name>
 <Object>UpConv_Fused_Row&lt;8, 128, 128, 120, 60&gt;_Pipeline_KW_LOOP_FLAT_LOOP</Object>
 <Type>return value</Type>
 <Scope></Scope>
@@ -550,7 +506,7 @@
 <Attribute>data</Attribute>
 </RtlPorts>
 <RtlPorts>
-<name>grp_fu_641_p_din1</name>
+<name>grp_fu_755_p_din1</name>
 <Object>UpConv_Fused_Row&lt;8, 128, 128, 120, 60&gt;_Pipeline_KW_LOOP_FLAT_LOOP</Object>
 <Type>return value</Type>
 <Scope></Scope>
@@ -561,7 +517,7 @@
 <Attribute>data</Attribute>
 </RtlPorts>
 <RtlPorts>
-<name>grp_fu_641_p_dout0</name>
+<name>grp_fu_755_p_dout0</name>
 <Object>UpConv_Fused_Row&lt;8, 128, 128, 120, 60&gt;_Pipeline_KW_LOOP_FLAT_LOOP</Object>
 <Type>return value</Type>
 <Scope></Scope>
@@ -572,7 +528,7 @@
 <Attribute>data</Attribute>
 </RtlPorts>
 <RtlPorts>
-<name>grp_fu_641_p_ce</name>
+<name>grp_fu_755_p_ce</name>
 <Object>UpConv_Fused_Row&lt;8, 128, 128, 120, 60&gt;_Pipeline_KW_LOOP_FLAT_LOOP</Object>
 <Type>return value</Type>
 <Scope></Scope>
@@ -583,7 +539,7 @@
 <Attribute>data</Attribute>
 </RtlPorts>
 <RtlPorts>
-<name>grp_fu_645_p_din0</name>
+<name>grp_fu_759_p_din0</name>
 <Object>UpConv_Fused_Row&lt;8, 128, 128, 120, 60&gt;_Pipeline_KW_LOOP_FLAT_LOOP</Object>
 <Type>return value</Type>
 <Scope></Scope>
@@ -594,7 +550,7 @@
 <Attribute>data</Attribute>
 </RtlPorts>
 <RtlPorts>
-<name>grp_fu_645_p_din1</name>
+<name>grp_fu_759_p_din1</name>
 <Object>UpConv_Fused_Row&lt;8, 128, 128, 120, 60&gt;_Pipeline_KW_LOOP_FLAT_LOOP</Object>
 <Type>return value</Type>
 <Scope></Scope>
@@ -605,7 +561,7 @@
 <Attribute>data</Attribute>
 </RtlPorts>
 <RtlPorts>
-<name>grp_fu_645_p_dout0</name>
+<name>grp_fu_759_p_dout0</name>
 <Object>UpConv_Fused_Row&lt;8, 128, 128, 120, 60&gt;_Pipeline_KW_LOOP_FLAT_LOOP</Object>
 <Type>return value</Type>
 <Scope></Scope>
@@ -616,7 +572,7 @@
 <Attribute>data</Attribute>
 </RtlPorts>
 <RtlPorts>
-<name>grp_fu_645_p_ce</name>
+<name>grp_fu_759_p_ce</name>
 <Object>UpConv_Fused_Row&lt;8, 128, 128, 120, 60&gt;_Pipeline_KW_LOOP_FLAT_LOOP</Object>
 <Type>return value</Type>
 <Scope></Scope>
@@ -627,7 +583,7 @@
 <Attribute>data</Attribute>
 </RtlPorts>
 <RtlPorts>
-<name>grp_fu_649_p_din0</name>
+<name>grp_fu_763_p_din0</name>
 <Object>UpConv_Fused_Row&lt;8, 128, 128, 120, 60&gt;_Pipeline_KW_LOOP_FLAT_LOOP</Object>
 <Type>return value</Type>
 <Scope></Scope>
@@ -638,7 +594,7 @@
 <Attribute>data</Attribute>
 </RtlPorts>
 <RtlPorts>
-<name>grp_fu_649_p_din1</name>
+<name>grp_fu_763_p_din1</name>
 <Object>UpConv_Fused_Row&lt;8, 128, 128, 120, 60&gt;_Pipeline_KW_LOOP_FLAT_LOOP</Object>
 <Type>return value</Type>
 <Scope></Scope>
@@ -649,7 +605,7 @@
 <Attribute>data</Attribute>
 </RtlPorts>
 <RtlPorts>
-<name>grp_fu_649_p_dout0</name>
+<name>grp_fu_763_p_dout0</name>
 <Object>UpConv_Fused_Row&lt;8, 128, 128, 120, 60&gt;_Pipeline_KW_LOOP_FLAT_LOOP</Object>
 <Type>return value</Type>
 <Scope></Scope>
@@ -660,7 +616,7 @@
 <Attribute>data</Attribute>
 </RtlPorts>
 <RtlPorts>
-<name>grp_fu_649_p_ce</name>
+<name>grp_fu_763_p_ce</name>
 <Object>UpConv_Fused_Row&lt;8, 128, 128, 120, 60&gt;_Pipeline_KW_LOOP_FLAT_LOOP</Object>
 <Type>return value</Type>
 <Scope></Scope>
@@ -671,7 +627,7 @@
 <Attribute>data</Attribute>
 </RtlPorts>
 <RtlPorts>
-<name>grp_fu_653_p_din0</name>
+<name>grp_fu_767_p_din0</name>
 <Object>UpConv_Fused_Row&lt;8, 128, 128, 120, 60&gt;_Pipeline_KW_LOOP_FLAT_LOOP</Object>
 <Type>return value</Type>
 <Scope></Scope>
@@ -682,7 +638,7 @@
 <Attribute>data</Attribute>
 </RtlPorts>
 <RtlPorts>
-<name>grp_fu_653_p_din1</name>
+<name>grp_fu_767_p_din1</name>
 <Object>UpConv_Fused_Row&lt;8, 128, 128, 120, 60&gt;_Pipeline_KW_LOOP_FLAT_LOOP</Object>
 <Type>return value</Type>
 <Scope></Scope>
@@ -693,7 +649,7 @@
 <Attribute>data</Attribute>
 </RtlPorts>
 <RtlPorts>
-<name>grp_fu_653_p_dout0</name>
+<name>grp_fu_767_p_dout0</name>
 <Object>UpConv_Fused_Row&lt;8, 128, 128, 120, 60&gt;_Pipeline_KW_LOOP_FLAT_LOOP</Object>
 <Type>return value</Type>
 <Scope></Scope>
@@ -704,7 +660,7 @@
 <Attribute>data</Attribute>
 </RtlPorts>
 <RtlPorts>
-<name>grp_fu_653_p_ce</name>
+<name>grp_fu_767_p_ce</name>
 <Object>UpConv_Fused_Row&lt;8, 128, 128, 120, 60&gt;_Pipeline_KW_LOOP_FLAT_LOOP</Object>
 <Type>return value</Type>
 <Scope></Scope>
@@ -715,7 +671,7 @@
 <Attribute>data</Attribute>
 </RtlPorts>
 <RtlPorts>
-<name>grp_fu_657_p_din0</name>
+<name>grp_fu_771_p_din0</name>
 <Object>UpConv_Fused_Row&lt;8, 128, 128, 120, 60&gt;_Pipeline_KW_LOOP_FLAT_LOOP</Object>
 <Type>return value</Type>
 <Scope></Scope>
@@ -726,7 +682,7 @@
 <Attribute>data</Attribute>
 </RtlPorts>
 <RtlPorts>
-<name>grp_fu_657_p_din1</name>
+<name>grp_fu_771_p_din1</name>
 <Object>UpConv_Fused_Row&lt;8, 128, 128, 120, 60&gt;_Pipeline_KW_LOOP_FLAT_LOOP</Object>
 <Type>return value</Type>
 <Scope></Scope>
@@ -737,7 +693,7 @@
 <Attribute>data</Attribute>
 </RtlPorts>
 <RtlPorts>
-<name>grp_fu_657_p_dout0</name>
+<name>grp_fu_771_p_dout0</name>
 <Object>UpConv_Fused_Row&lt;8, 128, 128, 120, 60&gt;_Pipeline_KW_LOOP_FLAT_LOOP</Object>
 <Type>return value</Type>
 <Scope></Scope>
@@ -748,7 +704,7 @@
 <Attribute>data</Attribute>
 </RtlPorts>
 <RtlPorts>
-<name>grp_fu_657_p_ce</name>
+<name>grp_fu_771_p_ce</name>
 <Object>UpConv_Fused_Row&lt;8, 128, 128, 120, 60&gt;_Pipeline_KW_LOOP_FLAT_LOOP</Object>
 <Type>return value</Type>
 <Scope></Scope>
@@ -759,7 +715,7 @@
 <Attribute>data</Attribute>
 </RtlPorts>
 <RtlPorts>
-<name>grp_fu_661_p_din0</name>
+<name>grp_fu_775_p_din0</name>
 <Object>UpConv_Fused_Row&lt;8, 128, 128, 120, 60&gt;_Pipeline_KW_LOOP_FLAT_LOOP</Object>
 <Type>return value</Type>
 <Scope></Scope>
@@ -770,7 +726,7 @@
 <Attribute>data</Attribute>
 </RtlPorts>
 <RtlPorts>
-<name>grp_fu_661_p_din1</name>
+<name>grp_fu_775_p_din1</name>
 <Object>UpConv_Fused_Row&lt;8, 128, 128, 120, 60&gt;_Pipeline_KW_LOOP_FLAT_LOOP</Object>
 <Type>return value</Type>
 <Scope></Scope>
@@ -781,7 +737,7 @@
 <Attribute>data</Attribute>
 </RtlPorts>
 <RtlPorts>
-<name>grp_fu_661_p_dout0</name>
+<name>grp_fu_775_p_dout0</name>
 <Object>UpConv_Fused_Row&lt;8, 128, 128, 120, 60&gt;_Pipeline_KW_LOOP_FLAT_LOOP</Object>
 <Type>return value</Type>
 <Scope></Scope>
@@ -792,7 +748,7 @@
 <Attribute>data</Attribute>
 </RtlPorts>
 <RtlPorts>
-<name>grp_fu_661_p_ce</name>
+<name>grp_fu_775_p_ce</name>
 <Object>UpConv_Fused_Row&lt;8, 128, 128, 120, 60&gt;_Pipeline_KW_LOOP_FLAT_LOOP</Object>
 <Type>return value</Type>
 <Scope></Scope>
@@ -803,7 +759,7 @@
 <Attribute>data</Attribute>
 </RtlPorts>
 <RtlPorts>
-<name>grp_fu_665_p_din0</name>
+<name>grp_fu_779_p_din0</name>
 <Object>UpConv_Fused_Row&lt;8, 128, 128, 120, 60&gt;_Pipeline_KW_LOOP_FLAT_LOOP</Object>
 <Type>return value</Type>
 <Scope></Scope>
@@ -814,7 +770,7 @@
 <Attribute>data</Attribute>
 </RtlPorts>
 <RtlPorts>
-<name>grp_fu_665_p_din1</name>
+<name>grp_fu_779_p_din1</name>
 <Object>UpConv_Fused_Row&lt;8, 128, 128, 120, 60&gt;_Pipeline_KW_LOOP_FLAT_LOOP</Object>
 <Type>return value</Type>
 <Scope></Scope>
@@ -825,7 +781,7 @@
 <Attribute>data</Attribute>
 </RtlPorts>
 <RtlPorts>
-<name>grp_fu_665_p_dout0</name>
+<name>grp_fu_779_p_dout0</name>
 <Object>UpConv_Fused_Row&lt;8, 128, 128, 120, 60&gt;_Pipeline_KW_LOOP_FLAT_LOOP</Object>
 <Type>return value</Type>
 <Scope></Scope>
@@ -836,7 +792,7 @@
 <Attribute>data</Attribute>
 </RtlPorts>
 <RtlPorts>
-<name>grp_fu_665_p_ce</name>
+<name>grp_fu_779_p_ce</name>
 <Object>UpConv_Fused_Row&lt;8, 128, 128, 120, 60&gt;_Pipeline_KW_LOOP_FLAT_LOOP</Object>
 <Type>return value</Type>
 <Scope></Scope>
@@ -847,7 +803,7 @@
 <Attribute>data</Attribute>
 </RtlPorts>
 <RtlPorts>
-<name>grp_fu_669_p_din0</name>
+<name>grp_fu_783_p_din0</name>
 <Object>UpConv_Fused_Row&lt;8, 128, 128, 120, 60&gt;_Pipeline_KW_LOOP_FLAT_LOOP</Object>
 <Type>return value</Type>
 <Scope></Scope>
@@ -858,7 +814,7 @@
 <Attribute>data</Attribute>
 </RtlPorts>
 <RtlPorts>
-<name>grp_fu_669_p_din1</name>
+<name>grp_fu_783_p_din1</name>
 <Object>UpConv_Fused_Row&lt;8, 128, 128, 120, 60&gt;_Pipeline_KW_LOOP_FLAT_LOOP</Object>
 <Type>return value</Type>
 <Scope></Scope>
@@ -869,7 +825,7 @@
 <Attribute>data</Attribute>
 </RtlPorts>
 <RtlPorts>
-<name>grp_fu_669_p_dout0</name>
+<name>grp_fu_783_p_dout0</name>
 <Object>UpConv_Fused_Row&lt;8, 128, 128, 120, 60&gt;_Pipeline_KW_LOOP_FLAT_LOOP</Object>
 <Type>return value</Type>
 <Scope></Scope>
@@ -880,7 +836,7 @@
 <Attribute>data</Attribute>
 </RtlPorts>
 <RtlPorts>
-<name>grp_fu_669_p_ce</name>
+<name>grp_fu_783_p_ce</name>
 <Object>UpConv_Fused_Row&lt;8, 128, 128, 120, 60&gt;_Pipeline_KW_LOOP_FLAT_LOOP</Object>
 <Type>return value</Type>
 <Scope></Scope>
@@ -891,7 +847,7 @@
 <Attribute>data</Attribute>
 </RtlPorts>
 <RtlPorts>
-<name>grp_fu_673_p_din0</name>
+<name>grp_fu_787_p_din0</name>
 <Object>UpConv_Fused_Row&lt;8, 128, 128, 120, 60&gt;_Pipeline_KW_LOOP_FLAT_LOOP</Object>
 <Type>return value</Type>
 <Scope></Scope>
@@ -902,7 +858,7 @@
 <Attribute>data</Attribute>
 </RtlPorts>
 <RtlPorts>
-<name>grp_fu_673_p_din1</name>
+<name>grp_fu_787_p_din1</name>
 <Object>UpConv_Fused_Row&lt;8, 128, 128, 120, 60&gt;_Pipeline_KW_LOOP_FLAT_LOOP</Object>
 <Type>return value</Type>
 <Scope></Scope>
@@ -913,7 +869,7 @@
 <Attribute>data</Attribute>
 </RtlPorts>
 <RtlPorts>
-<name>grp_fu_673_p_dout0</name>
+<name>grp_fu_787_p_dout0</name>
 <Object>UpConv_Fused_Row&lt;8, 128, 128, 120, 60&gt;_Pipeline_KW_LOOP_FLAT_LOOP</Object>
 <Type>return value</Type>
 <Scope></Scope>
@@ -924,7 +880,7 @@
 <Attribute>data</Attribute>
 </RtlPorts>
 <RtlPorts>
-<name>grp_fu_673_p_ce</name>
+<name>grp_fu_787_p_ce</name>
 <Object>UpConv_Fused_Row&lt;8, 128, 128, 120, 60&gt;_Pipeline_KW_LOOP_FLAT_LOOP</Object>
 <Type>return value</Type>
 <Scope></Scope>
@@ -935,7 +891,7 @@
 <Attribute>data</Attribute>
 </RtlPorts>
 <RtlPorts>
-<name>grp_fu_677_p_din0</name>
+<name>grp_fu_791_p_din0</name>
 <Object>UpConv_Fused_Row&lt;8, 128, 128, 120, 60&gt;_Pipeline_KW_LOOP_FLAT_LOOP</Object>
 <Type>return value</Type>
 <Scope></Scope>
@@ -946,7 +902,7 @@
 <Attribute>data</Attribute>
 </RtlPorts>
 <RtlPorts>
-<name>grp_fu_677_p_din1</name>
+<name>grp_fu_791_p_din1</name>
 <Object>UpConv_Fused_Row&lt;8, 128, 128, 120, 60&gt;_Pipeline_KW_LOOP_FLAT_LOOP</Object>
 <Type>return value</Type>
 <Scope></Scope>
@@ -957,7 +913,7 @@
 <Attribute>data</Attribute>
 </RtlPorts>
 <RtlPorts>
-<name>grp_fu_677_p_dout0</name>
+<name>grp_fu_791_p_dout0</name>
 <Object>UpConv_Fused_Row&lt;8, 128, 128, 120, 60&gt;_Pipeline_KW_LOOP_FLAT_LOOP</Object>
 <Type>return value</Type>
 <Scope></Scope>
@@ -968,7 +924,7 @@
 <Attribute>data</Attribute>
 </RtlPorts>
 <RtlPorts>
-<name>grp_fu_677_p_ce</name>
+<name>grp_fu_791_p_ce</name>
 <Object>UpConv_Fused_Row&lt;8, 128, 128, 120, 60&gt;_Pipeline_KW_LOOP_FLAT_LOOP</Object>
 <Type>return value</Type>
 <Scope></Scope>
@@ -979,7 +935,7 @@
 <Attribute>data</Attribute>
 </RtlPorts>
 <RtlPorts>
-<name>grp_fu_681_p_din0</name>
+<name>grp_fu_795_p_din0</name>
 <Object>UpConv_Fused_Row&lt;8, 128, 128, 120, 60&gt;_Pipeline_KW_LOOP_FLAT_LOOP</Object>
 <Type>return value</Type>
 <Scope></Scope>
@@ -990,7 +946,7 @@
 <Attribute>data</Attribute>
 </RtlPorts>
 <RtlPorts>
-<name>grp_fu_681_p_din1</name>
+<name>grp_fu_795_p_din1</name>
 <Object>UpConv_Fused_Row&lt;8, 128, 128, 120, 60&gt;_Pipeline_KW_LOOP_FLAT_LOOP</Object>
 <Type>return value</Type>
 <Scope></Scope>
@@ -1001,7 +957,7 @@
 <Attribute>data</Attribute>
 </RtlPorts>
 <RtlPorts>
-<name>grp_fu_681_p_dout0</name>
+<name>grp_fu_795_p_dout0</name>
 <Object>UpConv_Fused_Row&lt;8, 128, 128, 120, 60&gt;_Pipeline_KW_LOOP_FLAT_LOOP</Object>
 <Type>return value</Type>
 <Scope></Scope>
@@ -1012,7 +968,7 @@
 <Attribute>data</Attribute>
 </RtlPorts>
 <RtlPorts>
-<name>grp_fu_681_p_ce</name>
+<name>grp_fu_795_p_ce</name>
 <Object>UpConv_Fused_Row&lt;8, 128, 128, 120, 60&gt;_Pipeline_KW_LOOP_FLAT_LOOP</Object>
 <Type>return value</Type>
 <Scope></Scope>
@@ -1023,7 +979,7 @@
 <Attribute>data</Attribute>
 </RtlPorts>
 <RtlPorts>
-<name>grp_fu_685_p_din0</name>
+<name>grp_fu_799_p_din0</name>
 <Object>UpConv_Fused_Row&lt;8, 128, 128, 120, 60&gt;_Pipeline_KW_LOOP_FLAT_LOOP</Object>
 <Type>return value</Type>
 <Scope></Scope>
@@ -1034,7 +990,7 @@
 <Attribute>data</Attribute>
 </RtlPorts>
 <RtlPorts>
-<name>grp_fu_685_p_din1</name>
+<name>grp_fu_799_p_din1</name>
 <Object>UpConv_Fused_Row&lt;8, 128, 128, 120, 60&gt;_Pipeline_KW_LOOP_FLAT_LOOP</Object>
 <Type>return value</Type>
 <Scope></Scope>
@@ -1045,7 +1001,7 @@
 <Attribute>data</Attribute>
 </RtlPorts>
 <RtlPorts>
-<name>grp_fu_685_p_dout0</name>
+<name>grp_fu_799_p_dout0</name>
 <Object>UpConv_Fused_Row&lt;8, 128, 128, 120, 60&gt;_Pipeline_KW_LOOP_FLAT_LOOP</Object>
 <Type>return value</Type>
 <Scope></Scope>
@@ -1056,7 +1012,7 @@
 <Attribute>data</Attribute>
 </RtlPorts>
 <RtlPorts>
-<name>grp_fu_685_p_ce</name>
+<name>grp_fu_799_p_ce</name>
 <Object>UpConv_Fused_Row&lt;8, 128, 128, 120, 60&gt;_Pipeline_KW_LOOP_FLAT_LOOP</Object>
 <Type>return value</Type>
 <Scope></Scope>
@@ -1067,7 +1023,7 @@
 <Attribute>data</Attribute>
 </RtlPorts>
 <RtlPorts>
-<name>grp_fu_689_p_din0</name>
+<name>grp_fu_803_p_din0</name>
 <Object>UpConv_Fused_Row&lt;8, 128, 128, 120, 60&gt;_Pipeline_KW_LOOP_FLAT_LOOP</Object>
 <Type>return value</Type>
 <Scope></Scope>
@@ -1078,7 +1034,7 @@
 <Attribute>data</Attribute>
 </RtlPorts>
 <RtlPorts>
-<name>grp_fu_689_p_din1</name>
+<name>grp_fu_803_p_din1</name>
 <Object>UpConv_Fused_Row&lt;8, 128, 128, 120, 60&gt;_Pipeline_KW_LOOP_FLAT_LOOP</Object>
 <Type>return value</Type>
 <Scope></Scope>
@@ -1089,7 +1045,7 @@
 <Attribute>data</Attribute>
 </RtlPorts>
 <RtlPorts>
-<name>grp_fu_689_p_dout0</name>
+<name>grp_fu_803_p_dout0</name>
 <Object>UpConv_Fused_Row&lt;8, 128, 128, 120, 60&gt;_Pipeline_KW_LOOP_FLAT_LOOP</Object>
 <Type>return value</Type>
 <Scope></Scope>
@@ -1100,7 +1056,7 @@
 <Attribute>data</Attribute>
 </RtlPorts>
 <RtlPorts>
-<name>grp_fu_689_p_ce</name>
+<name>grp_fu_803_p_ce</name>
 <Object>UpConv_Fused_Row&lt;8, 128, 128, 120, 60&gt;_Pipeline_KW_LOOP_FLAT_LOOP</Object>
 <Type>return value</Type>
 <Scope></Scope>
@@ -1111,7 +1067,7 @@
 <Attribute>data</Attribute>
 </RtlPorts>
 <RtlPorts>
-<name>grp_fu_693_p_din0</name>
+<name>grp_fu_807_p_din0</name>
 <Object>UpConv_Fused_Row&lt;8, 128, 128, 120, 60&gt;_Pipeline_KW_LOOP_FLAT_LOOP</Object>
 <Type>return value</Type>
 <Scope></Scope>
@@ -1122,7 +1078,7 @@
 <Attribute>data</Attribute>
 </RtlPorts>
 <RtlPorts>
-<name>grp_fu_693_p_din1</name>
+<name>grp_fu_807_p_din1</name>
 <Object>UpConv_Fused_Row&lt;8, 128, 128, 120, 60&gt;_Pipeline_KW_LOOP_FLAT_LOOP</Object>
 <Type>return value</Type>
 <Scope></Scope>
@@ -1133,7 +1089,7 @@
 <Attribute>data</Attribute>
 </RtlPorts>
 <RtlPorts>
-<name>grp_fu_693_p_dout0</name>
+<name>grp_fu_807_p_dout0</name>
 <Object>UpConv_Fused_Row&lt;8, 128, 128, 120, 60&gt;_Pipeline_KW_LOOP_FLAT_LOOP</Object>
 <Type>return value</Type>
 <Scope></Scope>
@@ -1144,7 +1100,7 @@
 <Attribute>data</Attribute>
 </RtlPorts>
 <RtlPorts>
-<name>grp_fu_693_p_ce</name>
+<name>grp_fu_807_p_ce</name>
 <Object>UpConv_Fused_Row&lt;8, 128, 128, 120, 60&gt;_Pipeline_KW_LOOP_FLAT_LOOP</Object>
 <Type>return value</Type>
 <Scope></Scope>
@@ -1155,7 +1111,7 @@
 <Attribute>data</Attribute>
 </RtlPorts>
 <RtlPorts>
-<name>grp_fu_697_p_din0</name>
+<name>grp_fu_811_p_din0</name>
 <Object>UpConv_Fused_Row&lt;8, 128, 128, 120, 60&gt;_Pipeline_KW_LOOP_FLAT_LOOP</Object>
 <Type>return value</Type>
 <Scope></Scope>
@@ -1166,7 +1122,7 @@
 <Attribute>data</Attribute>
 </RtlPorts>
 <RtlPorts>
-<name>grp_fu_697_p_din1</name>
+<name>grp_fu_811_p_din1</name>
 <Object>UpConv_Fused_Row&lt;8, 128, 128, 120, 60&gt;_Pipeline_KW_LOOP_FLAT_LOOP</Object>
 <Type>return value</Type>
 <Scope></Scope>
@@ -1177,7 +1133,7 @@
 <Attribute>data</Attribute>
 </RtlPorts>
 <RtlPorts>
-<name>grp_fu_697_p_dout0</name>
+<name>grp_fu_811_p_dout0</name>
 <Object>UpConv_Fused_Row&lt;8, 128, 128, 120, 60&gt;_Pipeline_KW_LOOP_FLAT_LOOP</Object>
 <Type>return value</Type>
 <Scope></Scope>
@@ -1188,7 +1144,7 @@
 <Attribute>data</Attribute>
 </RtlPorts>
 <RtlPorts>
-<name>grp_fu_697_p_ce</name>
+<name>grp_fu_811_p_ce</name>
 <Object>UpConv_Fused_Row&lt;8, 128, 128, 120, 60&gt;_Pipeline_KW_LOOP_FLAT_LOOP</Object>
 <Type>return value</Type>
 <Scope></Scope>
@@ -1199,7 +1155,7 @@
 <Attribute>data</Attribute>
 </RtlPorts>
 <RtlPorts>
-<name>grp_fu_701_p_din0</name>
+<name>grp_fu_815_p_din0</name>
 <Object>UpConv_Fused_Row&lt;8, 128, 128, 120, 60&gt;_Pipeline_KW_LOOP_FLAT_LOOP</Object>
 <Type>return value</Type>
 <Scope></Scope>
@@ -1210,7 +1166,7 @@
 <Attribute>data</Attribute>
 </RtlPorts>
 <RtlPorts>
-<name>grp_fu_701_p_din1</name>
+<name>grp_fu_815_p_din1</name>
 <Object>UpConv_Fused_Row&lt;8, 128, 128, 120, 60&gt;_Pipeline_KW_LOOP_FLAT_LOOP</Object>
 <Type>return value</Type>
 <Scope></Scope>
@@ -1221,7 +1177,7 @@
 <Attribute>data</Attribute>
 </RtlPorts>
 <RtlPorts>
-<name>grp_fu_701_p_dout0</name>
+<name>grp_fu_815_p_dout0</name>
 <Object>UpConv_Fused_Row&lt;8, 128, 128, 120, 60&gt;_Pipeline_KW_LOOP_FLAT_LOOP</Object>
 <Type>return value</Type>
 <Scope></Scope>
@@ -1232,7 +1188,7 @@
 <Attribute>data</Attribute>
 </RtlPorts>
 <RtlPorts>
-<name>grp_fu_701_p_ce</name>
+<name>grp_fu_815_p_ce</name>
 <Object>UpConv_Fused_Row&lt;8, 128, 128, 120, 60&gt;_Pipeline_KW_LOOP_FLAT_LOOP</Object>
 <Type>return value</Type>
 <Scope></Scope>
@@ -1243,7 +1199,7 @@
 <Attribute>data</Attribute>
 </RtlPorts>
 <RtlPorts>
-<name>grp_fu_705_p_din0</name>
+<name>grp_fu_819_p_din0</name>
 <Object>UpConv_Fused_Row&lt;8, 128, 128, 120, 60&gt;_Pipeline_KW_LOOP_FLAT_LOOP</Object>
 <Type>return value</Type>
 <Scope></Scope>
@@ -1254,7 +1210,7 @@
 <Attribute>data</Attribute>
 </RtlPorts>
 <RtlPorts>
-<name>grp_fu_705_p_din1</name>
+<name>grp_fu_819_p_din1</name>
 <Object>UpConv_Fused_Row&lt;8, 128, 128, 120, 60&gt;_Pipeline_KW_LOOP_FLAT_LOOP</Object>
 <Type>return value</Type>
 <Scope></Scope>
@@ -1265,7 +1221,7 @@
 <Attribute>data</Attribute>
 </RtlPorts>
 <RtlPorts>
-<name>grp_fu_705_p_dout0</name>
+<name>grp_fu_819_p_dout0</name>
 <Object>UpConv_Fused_Row&lt;8, 128, 128, 120, 60&gt;_Pipeline_KW_LOOP_FLAT_LOOP</Object>
 <Type>return value</Type>
 <Scope></Scope>
@@ -1276,7 +1232,7 @@
 <Attribute>data</Attribute>
 </RtlPorts>
 <RtlPorts>
-<name>grp_fu_705_p_ce</name>
+<name>grp_fu_819_p_ce</name>
 <Object>UpConv_Fused_Row&lt;8, 128, 128, 120, 60&gt;_Pipeline_KW_LOOP_FLAT_LOOP</Object>
 <Type>return value</Type>
 <Scope></Scope>
@@ -1287,7 +1243,7 @@
 <Attribute>data</Attribute>
 </RtlPorts>
 <RtlPorts>
-<name>grp_fu_709_p_din0</name>
+<name>grp_fu_823_p_din0</name>
 <Object>UpConv_Fused_Row&lt;8, 128, 128, 120, 60&gt;_Pipeline_KW_LOOP_FLAT_LOOP</Object>
 <Type>return value</Type>
 <Scope></Scope>
@@ -1298,7 +1254,7 @@
 <Attribute>data</Attribute>
 </RtlPorts>
 <RtlPorts>
-<name>grp_fu_709_p_din1</name>
+<name>grp_fu_823_p_din1</name>
 <Object>UpConv_Fused_Row&lt;8, 128, 128, 120, 60&gt;_Pipeline_KW_LOOP_FLAT_LOOP</Object>
 <Type>return value</Type>
 <Scope></Scope>
@@ -1309,7 +1265,7 @@
 <Attribute>data</Attribute>
 </RtlPorts>
 <RtlPorts>
-<name>grp_fu_709_p_dout0</name>
+<name>grp_fu_823_p_dout0</name>
 <Object>UpConv_Fused_Row&lt;8, 128, 128, 120, 60&gt;_Pipeline_KW_LOOP_FLAT_LOOP</Object>
 <Type>return value</Type>
 <Scope></Scope>
@@ -1320,7 +1276,7 @@
 <Attribute>data</Attribute>
 </RtlPorts>
 <RtlPorts>
-<name>grp_fu_709_p_ce</name>
+<name>grp_fu_823_p_ce</name>
 <Object>UpConv_Fused_Row&lt;8, 128, 128, 120, 60&gt;_Pipeline_KW_LOOP_FLAT_LOOP</Object>
 <Type>return value</Type>
 <Scope></Scope>
@@ -1331,7 +1287,7 @@
 <Attribute>data</Attribute>
 </RtlPorts>
 <RtlPorts>
-<name>grp_fu_713_p_din0</name>
+<name>grp_fu_827_p_din0</name>
 <Object>UpConv_Fused_Row&lt;8, 128, 128, 120, 60&gt;_Pipeline_KW_LOOP_FLAT_LOOP</Object>
 <Type>return value</Type>
 <Scope></Scope>
@@ -1342,7 +1298,7 @@
 <Attribute>data</Attribute>
 </RtlPorts>
 <RtlPorts>
-<name>grp_fu_713_p_din1</name>
+<name>grp_fu_827_p_din1</name>
 <Object>UpConv_Fused_Row&lt;8, 128, 128, 120, 60&gt;_Pipeline_KW_LOOP_FLAT_LOOP</Object>
 <Type>return value</Type>
 <Scope></Scope>
@@ -1353,7 +1309,7 @@
 <Attribute>data</Attribute>
 </RtlPorts>
 <RtlPorts>
-<name>grp_fu_713_p_dout0</name>
+<name>grp_fu_827_p_dout0</name>
 <Object>UpConv_Fused_Row&lt;8, 128, 128, 120, 60&gt;_Pipeline_KW_LOOP_FLAT_LOOP</Object>
 <Type>return value</Type>
 <Scope></Scope>
@@ -1364,7 +1320,7 @@
 <Attribute>data</Attribute>
 </RtlPorts>
 <RtlPorts>
-<name>grp_fu_713_p_ce</name>
+<name>grp_fu_827_p_ce</name>
 <Object>UpConv_Fused_Row&lt;8, 128, 128, 120, 60&gt;_Pipeline_KW_LOOP_FLAT_LOOP</Object>
 <Type>return value</Type>
 <Scope></Scope>
@@ -1375,7 +1331,7 @@
 <Attribute>data</Attribute>
 </RtlPorts>
 <RtlPorts>
-<name>grp_fu_717_p_din0</name>
+<name>grp_fu_831_p_din0</name>
 <Object>UpConv_Fused_Row&lt;8, 128, 128, 120, 60&gt;_Pipeline_KW_LOOP_FLAT_LOOP</Object>
 <Type>return value</Type>
 <Scope></Scope>
@@ -1386,7 +1342,7 @@
 <Attribute>data</Attribute>
 </RtlPorts>
 <RtlPorts>
-<name>grp_fu_717_p_din1</name>
+<name>grp_fu_831_p_din1</name>
 <Object>UpConv_Fused_Row&lt;8, 128, 128, 120, 60&gt;_Pipeline_KW_LOOP_FLAT_LOOP</Object>
 <Type>return value</Type>
 <Scope></Scope>
@@ -1397,7 +1353,7 @@
 <Attribute>data</Attribute>
 </RtlPorts>
 <RtlPorts>
-<name>grp_fu_717_p_dout0</name>
+<name>grp_fu_831_p_dout0</name>
 <Object>UpConv_Fused_Row&lt;8, 128, 128, 120, 60&gt;_Pipeline_KW_LOOP_FLAT_LOOP</Object>
 <Type>return value</Type>
 <Scope></Scope>
@@ -1408,7 +1364,7 @@
 <Attribute>data</Attribute>
 </RtlPorts>
 <RtlPorts>
-<name>grp_fu_717_p_ce</name>
+<name>grp_fu_831_p_ce</name>
 <Object>UpConv_Fused_Row&lt;8, 128, 128, 120, 60&gt;_Pipeline_KW_LOOP_FLAT_LOOP</Object>
 <Type>return value</Type>
 <Scope></Scope>
@@ -1419,7 +1375,7 @@
 <Attribute>data</Attribute>
 </RtlPorts>
 <RtlPorts>
-<name>grp_fu_721_p_din0</name>
+<name>grp_fu_835_p_din0</name>
 <Object>UpConv_Fused_Row&lt;8, 128, 128, 120, 60&gt;_Pipeline_KW_LOOP_FLAT_LOOP</Object>
 <Type>return value</Type>
 <Scope></Scope>
@@ -1430,7 +1386,7 @@
 <Attribute>data</Attribute>
 </RtlPorts>
 <RtlPorts>
-<name>grp_fu_721_p_din1</name>
+<name>grp_fu_835_p_din1</name>
 <Object>UpConv_Fused_Row&lt;8, 128, 128, 120, 60&gt;_Pipeline_KW_LOOP_FLAT_LOOP</Object>
 <Type>return value</Type>
 <Scope></Scope>
@@ -1441,7 +1397,7 @@
 <Attribute>data</Attribute>
 </RtlPorts>
 <RtlPorts>
-<name>grp_fu_721_p_dout0</name>
+<name>grp_fu_835_p_dout0</name>
 <Object>UpConv_Fused_Row&lt;8, 128, 128, 120, 60&gt;_Pipeline_KW_LOOP_FLAT_LOOP</Object>
 <Type>return value</Type>
 <Scope></Scope>
@@ -1452,7 +1408,7 @@
 <Attribute>data</Attribute>
 </RtlPorts>
 <RtlPorts>
-<name>grp_fu_721_p_ce</name>
+<name>grp_fu_835_p_ce</name>
 <Object>UpConv_Fused_Row&lt;8, 128, 128, 120, 60&gt;_Pipeline_KW_LOOP_FLAT_LOOP</Object>
 <Type>return value</Type>
 <Scope></Scope>
@@ -1463,7 +1419,7 @@
 <Attribute>data</Attribute>
 </RtlPorts>
 <RtlPorts>
-<name>grp_fu_725_p_din0</name>
+<name>grp_fu_839_p_din0</name>
 <Object>UpConv_Fused_Row&lt;8, 128, 128, 120, 60&gt;_Pipeline_KW_LOOP_FLAT_LOOP</Object>
 <Type>return value</Type>
 <Scope></Scope>
@@ -1474,7 +1430,7 @@
 <Attribute>data</Attribute>
 </RtlPorts>
 <RtlPorts>
-<name>grp_fu_725_p_din1</name>
+<name>grp_fu_839_p_din1</name>
 <Object>UpConv_Fused_Row&lt;8, 128, 128, 120, 60&gt;_Pipeline_KW_LOOP_FLAT_LOOP</Object>
 <Type>return value</Type>
 <Scope></Scope>
@@ -1485,7 +1441,7 @@
 <Attribute>data</Attribute>
 </RtlPorts>
 <RtlPorts>
-<name>grp_fu_725_p_dout0</name>
+<name>grp_fu_839_p_dout0</name>
 <Object>UpConv_Fused_Row&lt;8, 128, 128, 120, 60&gt;_Pipeline_KW_LOOP_FLAT_LOOP</Object>
 <Type>return value</Type>
 <Scope></Scope>
@@ -1496,7 +1452,7 @@
 <Attribute>data</Attribute>
 </RtlPorts>
 <RtlPorts>
-<name>grp_fu_725_p_ce</name>
+<name>grp_fu_839_p_ce</name>
 <Object>UpConv_Fused_Row&lt;8, 128, 128, 120, 60&gt;_Pipeline_KW_LOOP_FLAT_LOOP</Object>
 <Type>return value</Type>
 <Scope></Scope>
@@ -1507,7 +1463,7 @@
 <Attribute>data</Attribute>
 </RtlPorts>
 <RtlPorts>
-<name>grp_fu_729_p_din0</name>
+<name>grp_fu_843_p_din0</name>
 <Object>UpConv_Fused_Row&lt;8, 128, 128, 120, 60&gt;_Pipeline_KW_LOOP_FLAT_LOOP</Object>
 <Type>return value</Type>
 <Scope></Scope>
@@ -1518,7 +1474,7 @@
 <Attribute>data</Attribute>
 </RtlPorts>
 <RtlPorts>
-<name>grp_fu_729_p_din1</name>
+<name>grp_fu_843_p_din1</name>
 <Object>UpConv_Fused_Row&lt;8, 128, 128, 120, 60&gt;_Pipeline_KW_LOOP_FLAT_LOOP</Object>
 <Type>return value</Type>
 <Scope></Scope>
@@ -1529,7 +1485,7 @@
 <Attribute>data</Attribute>
 </RtlPorts>
 <RtlPorts>
-<name>grp_fu_729_p_dout0</name>
+<name>grp_fu_843_p_dout0</name>
 <Object>UpConv_Fused_Row&lt;8, 128, 128, 120, 60&gt;_Pipeline_KW_LOOP_FLAT_LOOP</Object>
 <Type>return value</Type>
 <Scope></Scope>
@@ -1540,7 +1496,7 @@
 <Attribute>data</Attribute>
 </RtlPorts>
 <RtlPorts>
-<name>grp_fu_729_p_ce</name>
+<name>grp_fu_843_p_ce</name>
 <Object>UpConv_Fused_Row&lt;8, 128, 128, 120, 60&gt;_Pipeline_KW_LOOP_FLAT_LOOP</Object>
 <Type>return value</Type>
 <Scope></Scope>
@@ -1551,7 +1507,7 @@
 <Attribute>data</Attribute>
 </RtlPorts>
 <RtlPorts>
-<name>grp_fu_733_p_din0</name>
+<name>grp_fu_847_p_din0</name>
 <Object>UpConv_Fused_Row&lt;8, 128, 128, 120, 60&gt;_Pipeline_KW_LOOP_FLAT_LOOP</Object>
 <Type>return value</Type>
 <Scope></Scope>
@@ -1562,7 +1518,7 @@
 <Attribute>data</Attribute>
 </RtlPorts>
 <RtlPorts>
-<name>grp_fu_733_p_din1</name>
+<name>grp_fu_847_p_din1</name>
 <Object>UpConv_Fused_Row&lt;8, 128, 128, 120, 60&gt;_Pipeline_KW_LOOP_FLAT_LOOP</Object>
 <Type>return value</Type>
 <Scope></Scope>
@@ -1573,7 +1529,7 @@
 <Attribute>data</Attribute>
 </RtlPorts>
 <RtlPorts>
-<name>grp_fu_733_p_dout0</name>
+<name>grp_fu_847_p_dout0</name>
 <Object>UpConv_Fused_Row&lt;8, 128, 128, 120, 60&gt;_Pipeline_KW_LOOP_FLAT_LOOP</Object>
 <Type>return value</Type>
 <Scope></Scope>
@@ -1584,7 +1540,7 @@
 <Attribute>data</Attribute>
 </RtlPorts>
 <RtlPorts>
-<name>grp_fu_733_p_ce</name>
+<name>grp_fu_847_p_ce</name>
 <Object>UpConv_Fused_Row&lt;8, 128, 128, 120, 60&gt;_Pipeline_KW_LOOP_FLAT_LOOP</Object>
 <Type>return value</Type>
 <Scope></Scope>
@@ -1595,7 +1551,7 @@
 <Attribute>data</Attribute>
 </RtlPorts>
 <RtlPorts>
-<name>grp_fu_737_p_din0</name>
+<name>grp_fu_851_p_din0</name>
 <Object>UpConv_Fused_Row&lt;8, 128, 128, 120, 60&gt;_Pipeline_KW_LOOP_FLAT_LOOP</Object>
 <Type>return value</Type>
 <Scope></Scope>
@@ -1606,7 +1562,7 @@
 <Attribute>data</Attribute>
 </RtlPorts>
 <RtlPorts>
-<name>grp_fu_737_p_din1</name>
+<name>grp_fu_851_p_din1</name>
 <Object>UpConv_Fused_Row&lt;8, 128, 128, 120, 60&gt;_Pipeline_KW_LOOP_FLAT_LOOP</Object>
 <Type>return value</Type>
 <Scope></Scope>
@@ -1617,7 +1573,7 @@
 <Attribute>data</Attribute>
 </RtlPorts>
 <RtlPorts>
-<name>grp_fu_737_p_dout0</name>
+<name>grp_fu_851_p_dout0</name>
 <Object>UpConv_Fused_Row&lt;8, 128, 128, 120, 60&gt;_Pipeline_KW_LOOP_FLAT_LOOP</Object>
 <Type>return value</Type>
 <Scope></Scope>
@@ -1628,7 +1584,7 @@
 <Attribute>data</Attribute>
 </RtlPorts>
 <RtlPorts>
-<name>grp_fu_737_p_ce</name>
+<name>grp_fu_851_p_ce</name>
 <Object>UpConv_Fused_Row&lt;8, 128, 128, 120, 60&gt;_Pipeline_KW_LOOP_FLAT_LOOP</Object>
 <Type>return value</Type>
 <Scope></Scope>
@@ -1639,7 +1595,7 @@
 <Attribute>data</Attribute>
 </RtlPorts>
 <RtlPorts>
-<name>grp_fu_741_p_din0</name>
+<name>grp_fu_855_p_din0</name>
 <Object>UpConv_Fused_Row&lt;8, 128, 128, 120, 60&gt;_Pipeline_KW_LOOP_FLAT_LOOP</Object>
 <Type>return value</Type>
 <Scope></Scope>
@@ -1650,7 +1606,7 @@
 <Attribute>data</Attribute>
 </RtlPorts>
 <RtlPorts>
-<name>grp_fu_741_p_din1</name>
+<name>grp_fu_855_p_din1</name>
 <Object>UpConv_Fused_Row&lt;8, 128, 128, 120, 60&gt;_Pipeline_KW_LOOP_FLAT_LOOP</Object>
 <Type>return value</Type>
 <Scope></Scope>
@@ -1661,7 +1617,7 @@
 <Attribute>data</Attribute>
 </RtlPorts>
 <RtlPorts>
-<name>grp_fu_741_p_dout0</name>
+<name>grp_fu_855_p_dout0</name>
 <Object>UpConv_Fused_Row&lt;8, 128, 128, 120, 60&gt;_Pipeline_KW_LOOP_FLAT_LOOP</Object>
 <Type>return value</Type>
 <Scope></Scope>
@@ -1672,7 +1628,7 @@
 <Attribute>data</Attribute>
 </RtlPorts>
 <RtlPorts>
-<name>grp_fu_741_p_ce</name>
+<name>grp_fu_855_p_ce</name>
 <Object>UpConv_Fused_Row&lt;8, 128, 128, 120, 60&gt;_Pipeline_KW_LOOP_FLAT_LOOP</Object>
 <Type>return value</Type>
 <Scope></Scope>
@@ -1683,7 +1639,7 @@
 <Attribute>data</Attribute>
 </RtlPorts>
 <RtlPorts>
-<name>grp_fu_745_p_din0</name>
+<name>grp_fu_859_p_din0</name>
 <Object>UpConv_Fused_Row&lt;8, 128, 128, 120, 60&gt;_Pipeline_KW_LOOP_FLAT_LOOP</Object>
 <Type>return value</Type>
 <Scope></Scope>
@@ -1694,7 +1650,7 @@
 <Attribute>data</Attribute>
 </RtlPorts>
 <RtlPorts>
-<name>grp_fu_745_p_din1</name>
+<name>grp_fu_859_p_din1</name>
 <Object>UpConv_Fused_Row&lt;8, 128, 128, 120, 60&gt;_Pipeline_KW_LOOP_FLAT_LOOP</Object>
 <Type>return value</Type>
 <Scope></Scope>
@@ -1705,7 +1661,7 @@
 <Attribute>data</Attribute>
 </RtlPorts>
 <RtlPorts>
-<name>grp_fu_745_p_dout0</name>
+<name>grp_fu_859_p_dout0</name>
 <Object>UpConv_Fused_Row&lt;8, 128, 128, 120, 60&gt;_Pipeline_KW_LOOP_FLAT_LOOP</Object>
 <Type>return value</Type>
 <Scope></Scope>
@@ -1716,7 +1672,7 @@
 <Attribute>data</Attribute>
 </RtlPorts>
 <RtlPorts>
-<name>grp_fu_745_p_ce</name>
+<name>grp_fu_859_p_ce</name>
 <Object>UpConv_Fused_Row&lt;8, 128, 128, 120, 60&gt;_Pipeline_KW_LOOP_FLAT_LOOP</Object>
 <Type>return value</Type>
 <Scope></Scope>
@@ -1727,7 +1683,7 @@
 <Attribute>data</Attribute>
 </RtlPorts>
 <RtlPorts>
-<name>grp_fu_749_p_din0</name>
+<name>grp_fu_863_p_din0</name>
 <Object>UpConv_Fused_Row&lt;8, 128, 128, 120, 60&gt;_Pipeline_KW_LOOP_FLAT_LOOP</Object>
 <Type>return value</Type>
 <Scope></Scope>
@@ -1738,7 +1694,7 @@
 <Attribute>data</Attribute>
 </RtlPorts>
 <RtlPorts>
-<name>grp_fu_749_p_din1</name>
+<name>grp_fu_863_p_din1</name>
 <Object>UpConv_Fused_Row&lt;8, 128, 128, 120, 60&gt;_Pipeline_KW_LOOP_FLAT_LOOP</Object>
 <Type>return value</Type>
 <Scope></Scope>
@@ -1749,7 +1705,7 @@
 <Attribute>data</Attribute>
 </RtlPorts>
 <RtlPorts>
-<name>grp_fu_749_p_dout0</name>
+<name>grp_fu_863_p_dout0</name>
 <Object>UpConv_Fused_Row&lt;8, 128, 128, 120, 60&gt;_Pipeline_KW_LOOP_FLAT_LOOP</Object>
 <Type>return value</Type>
 <Scope></Scope>
@@ -1760,7 +1716,7 @@
 <Attribute>data</Attribute>
 </RtlPorts>
 <RtlPorts>
-<name>grp_fu_749_p_ce</name>
+<name>grp_fu_863_p_ce</name>
 <Object>UpConv_Fused_Row&lt;8, 128, 128, 120, 60&gt;_Pipeline_KW_LOOP_FLAT_LOOP</Object>
 <Type>return value</Type>
 <Scope></Scope>
@@ -1771,7 +1727,7 @@
 <Attribute>data</Attribute>
 </RtlPorts>
 <RtlPorts>
-<name>grp_fu_753_p_din0</name>
+<name>grp_fu_867_p_din0</name>
 <Object>UpConv_Fused_Row&lt;8, 128, 128, 120, 60&gt;_Pipeline_KW_LOOP_FLAT_LOOP</Object>
 <Type>return value</Type>
 <Scope></Scope>
@@ -1782,7 +1738,7 @@
 <Attribute>data</Attribute>
 </RtlPorts>
 <RtlPorts>
-<name>grp_fu_753_p_din1</name>
+<name>grp_fu_867_p_din1</name>
 <Object>UpConv_Fused_Row&lt;8, 128, 128, 120, 60&gt;_Pipeline_KW_LOOP_FLAT_LOOP</Object>
 <Type>return value</Type>
 <Scope></Scope>
@@ -1793,7 +1749,7 @@
 <Attribute>data</Attribute>
 </RtlPorts>
 <RtlPorts>
-<name>grp_fu_753_p_dout0</name>
+<name>grp_fu_867_p_dout0</name>
 <Object>UpConv_Fused_Row&lt;8, 128, 128, 120, 60&gt;_Pipeline_KW_LOOP_FLAT_LOOP</Object>
 <Type>return value</Type>
 <Scope></Scope>
@@ -1804,7 +1760,7 @@
 <Attribute>data</Attribute>
 </RtlPorts>
 <RtlPorts>
-<name>grp_fu_753_p_ce</name>
+<name>grp_fu_867_p_ce</name>
 <Object>UpConv_Fused_Row&lt;8, 128, 128, 120, 60&gt;_Pipeline_KW_LOOP_FLAT_LOOP</Object>
 <Type>return value</Type>
 <Scope></Scope>
@@ -1815,7 +1771,7 @@
 <Attribute>data</Attribute>
 </RtlPorts>
 <RtlPorts>
-<name>grp_fu_757_p_din0</name>
+<name>grp_fu_871_p_din0</name>
 <Object>UpConv_Fused_Row&lt;8, 128, 128, 120, 60&gt;_Pipeline_KW_LOOP_FLAT_LOOP</Object>
 <Type>return value</Type>
 <Scope></Scope>
@@ -1826,7 +1782,7 @@
 <Attribute>data</Attribute>
 </RtlPorts>
 <RtlPorts>
-<name>grp_fu_757_p_din1</name>
+<name>grp_fu_871_p_din1</name>
 <Object>UpConv_Fused_Row&lt;8, 128, 128, 120, 60&gt;_Pipeline_KW_LOOP_FLAT_LOOP</Object>
 <Type>return value</Type>
 <Scope></Scope>
@@ -1837,7 +1793,7 @@
 <Attribute>data</Attribute>
 </RtlPorts>
 <RtlPorts>
-<name>grp_fu_757_p_dout0</name>
+<name>grp_fu_871_p_dout0</name>
 <Object>UpConv_Fused_Row&lt;8, 128, 128, 120, 60&gt;_Pipeline_KW_LOOP_FLAT_LOOP</Object>
 <Type>return value</Type>
 <Scope></Scope>
@@ -1848,7 +1804,7 @@
 <Attribute>data</Attribute>
 </RtlPorts>
 <RtlPorts>
-<name>grp_fu_757_p_ce</name>
+<name>grp_fu_871_p_ce</name>
 <Object>UpConv_Fused_Row&lt;8, 128, 128, 120, 60&gt;_Pipeline_KW_LOOP_FLAT_LOOP</Object>
 <Type>return value</Type>
 <Scope></Scope>
@@ -1859,7 +1815,7 @@
 <Attribute>data</Attribute>
 </RtlPorts>
 <RtlPorts>
-<name>grp_fu_761_p_din0</name>
+<name>grp_fu_875_p_din0</name>
 <Object>UpConv_Fused_Row&lt;8, 128, 128, 120, 60&gt;_Pipeline_KW_LOOP_FLAT_LOOP</Object>
 <Type>return value</Type>
 <Scope></Scope>
@@ -1870,7 +1826,7 @@
 <Attribute>data</Attribute>
 </RtlPorts>
 <RtlPorts>
-<name>grp_fu_761_p_din1</name>
+<name>grp_fu_875_p_din1</name>
 <Object>UpConv_Fused_Row&lt;8, 128, 128, 120, 60&gt;_Pipeline_KW_LOOP_FLAT_LOOP</Object>
 <Type>return value</Type>
 <Scope></Scope>
@@ -1881,7 +1837,7 @@
 <Attribute>data</Attribute>
 </RtlPorts>
 <RtlPorts>
-<name>grp_fu_761_p_dout0</name>
+<name>grp_fu_875_p_dout0</name>
 <Object>UpConv_Fused_Row&lt;8, 128, 128, 120, 60&gt;_Pipeline_KW_LOOP_FLAT_LOOP</Object>
 <Type>return value</Type>
 <Scope></Scope>
@@ -1892,7 +1848,7 @@
 <Attribute>data</Attribute>
 </RtlPorts>
 <RtlPorts>
-<name>grp_fu_761_p_ce</name>
+<name>grp_fu_875_p_ce</name>
 <Object>UpConv_Fused_Row&lt;8, 128, 128, 120, 60&gt;_Pipeline_KW_LOOP_FLAT_LOOP</Object>
 <Type>return value</Type>
 <Scope></Scope>
@@ -1903,7 +1859,7 @@
 <Attribute>data</Attribute>
 </RtlPorts>
 <RtlPorts>
-<name>grp_fu_765_p_din0</name>
+<name>grp_fu_879_p_din0</name>
 <Object>UpConv_Fused_Row&lt;8, 128, 128, 120, 60&gt;_Pipeline_KW_LOOP_FLAT_LOOP</Object>
 <Type>return value</Type>
 <Scope></Scope>
@@ -1914,7 +1870,7 @@
 <Attribute>data</Attribute>
 </RtlPorts>
 <RtlPorts>
-<name>grp_fu_765_p_din1</name>
+<name>grp_fu_879_p_din1</name>
 <Object>UpConv_Fused_Row&lt;8, 128, 128, 120, 60&gt;_Pipeline_KW_LOOP_FLAT_LOOP</Object>
 <Type>return value</Type>
 <Scope></Scope>
@@ -1925,7 +1881,7 @@
 <Attribute>data</Attribute>
 </RtlPorts>
 <RtlPorts>
-<name>grp_fu_765_p_dout0</name>
+<name>grp_fu_879_p_dout0</name>
 <Object>UpConv_Fused_Row&lt;8, 128, 128, 120, 60&gt;_Pipeline_KW_LOOP_FLAT_LOOP</Object>
 <Type>return value</Type>
 <Scope></Scope>
@@ -1936,7 +1892,7 @@
 <Attribute>data</Attribute>
 </RtlPorts>
 <RtlPorts>
-<name>grp_fu_765_p_ce</name>
+<name>grp_fu_879_p_ce</name>
 <Object>UpConv_Fused_Row&lt;8, 128, 128, 120, 60&gt;_Pipeline_KW_LOOP_FLAT_LOOP</Object>
 <Type>return value</Type>
 <Scope></Scope>
@@ -1947,7 +1903,7 @@
 <Attribute>data</Attribute>
 </RtlPorts>
 <RtlPorts>
-<name>grp_fu_769_p_din0</name>
+<name>grp_fu_883_p_din0</name>
 <Object>UpConv_Fused_Row&lt;8, 128, 128, 120, 60&gt;_Pipeline_KW_LOOP_FLAT_LOOP</Object>
 <Type>return value</Type>
 <Scope></Scope>
@@ -1958,7 +1914,7 @@
 <Attribute>data</Attribute>
 </RtlPorts>
 <RtlPorts>
-<name>grp_fu_769_p_din1</name>
+<name>grp_fu_883_p_din1</name>
 <Object>UpConv_Fused_Row&lt;8, 128, 128, 120, 60&gt;_Pipeline_KW_LOOP_FLAT_LOOP</Object>
 <Type>return value</Type>
 <Scope></Scope>
@@ -1969,7 +1925,7 @@
 <Attribute>data</Attribute>
 </RtlPorts>
 <RtlPorts>
-<name>grp_fu_769_p_dout0</name>
+<name>grp_fu_883_p_dout0</name>
 <Object>UpConv_Fused_Row&lt;8, 128, 128, 120, 60&gt;_Pipeline_KW_LOOP_FLAT_LOOP</Object>
 <Type>return value</Type>
 <Scope></Scope>
@@ -1980,7 +1936,7 @@
 <Attribute>data</Attribute>
 </RtlPorts>
 <RtlPorts>
-<name>grp_fu_769_p_ce</name>
+<name>grp_fu_883_p_ce</name>
 <Object>UpConv_Fused_Row&lt;8, 128, 128, 120, 60&gt;_Pipeline_KW_LOOP_FLAT_LOOP</Object>
 <Type>return value</Type>
 <Scope></Scope>
@@ -1991,7 +1947,7 @@
 <Attribute>data</Attribute>
 </RtlPorts>
 <RtlPorts>
-<name>grp_fu_773_p_din0</name>
+<name>grp_fu_887_p_din0</name>
 <Object>UpConv_Fused_Row&lt;8, 128, 128, 120, 60&gt;_Pipeline_KW_LOOP_FLAT_LOOP</Object>
 <Type>return value</Type>
 <Scope></Scope>
@@ -2002,7 +1958,7 @@
 <Attribute>data</Attribute>
 </RtlPorts>
 <RtlPorts>
-<name>grp_fu_773_p_din1</name>
+<name>grp_fu_887_p_din1</name>
 <Object>UpConv_Fused_Row&lt;8, 128, 128, 120, 60&gt;_Pipeline_KW_LOOP_FLAT_LOOP</Object>
 <Type>return value</Type>
 <Scope></Scope>
@@ -2013,7 +1969,7 @@
 <Attribute>data</Attribute>
 </RtlPorts>
 <RtlPorts>
-<name>grp_fu_773_p_dout0</name>
+<name>grp_fu_887_p_dout0</name>
 <Object>UpConv_Fused_Row&lt;8, 128, 128, 120, 60&gt;_Pipeline_KW_LOOP_FLAT_LOOP</Object>
 <Type>return value</Type>
 <Scope></Scope>
@@ -2024,7 +1980,7 @@
 <Attribute>data</Attribute>
 </RtlPorts>
 <RtlPorts>
-<name>grp_fu_773_p_ce</name>
+<name>grp_fu_887_p_ce</name>
 <Object>UpConv_Fused_Row&lt;8, 128, 128, 120, 60&gt;_Pipeline_KW_LOOP_FLAT_LOOP</Object>
 <Type>return value</Type>
 <Scope></Scope>
@@ -2035,7 +1991,7 @@
 <Attribute>data</Attribute>
 </RtlPorts>
 <RtlPorts>
-<name>grp_fu_777_p_din0</name>
+<name>grp_fu_891_p_din0</name>
 <Object>UpConv_Fused_Row&lt;8, 128, 128, 120, 60&gt;_Pipeline_KW_LOOP_FLAT_LOOP</Object>
 <Type>return value</Type>
 <Scope></Scope>
@@ -2046,7 +2002,7 @@
 <Attribute>data</Attribute>
 </RtlPorts>
 <RtlPorts>
-<name>grp_fu_777_p_din1</name>
+<name>grp_fu_891_p_din1</name>
 <Object>UpConv_Fused_Row&lt;8, 128, 128, 120, 60&gt;_Pipeline_KW_LOOP_FLAT_LOOP</Object>
 <Type>return value</Type>
 <Scope></Scope>
@@ -2057,7 +2013,7 @@
 <Attribute>data</Attribute>
 </RtlPorts>
 <RtlPorts>
-<name>grp_fu_777_p_dout0</name>
+<name>grp_fu_891_p_dout0</name>
 <Object>UpConv_Fused_Row&lt;8, 128, 128, 120, 60&gt;_Pipeline_KW_LOOP_FLAT_LOOP</Object>
 <Type>return value</Type>
 <Scope></Scope>
@@ -2068,7 +2024,7 @@
 <Attribute>data</Attribute>
 </RtlPorts>
 <RtlPorts>
-<name>grp_fu_777_p_ce</name>
+<name>grp_fu_891_p_ce</name>
 <Object>UpConv_Fused_Row&lt;8, 128, 128, 120, 60&gt;_Pipeline_KW_LOOP_FLAT_LOOP</Object>
 <Type>return value</Type>
 <Scope></Scope>
@@ -2079,7 +2035,7 @@
 <Attribute>data</Attribute>
 </RtlPorts>
 <RtlPorts>
-<name>grp_fu_781_p_din0</name>
+<name>grp_fu_895_p_din0</name>
 <Object>UpConv_Fused_Row&lt;8, 128, 128, 120, 60&gt;_Pipeline_KW_LOOP_FLAT_LOOP</Object>
 <Type>return value</Type>
 <Scope></Scope>
@@ -2090,7 +2046,7 @@
 <Attribute>data</Attribute>
 </RtlPorts>
 <RtlPorts>
-<name>grp_fu_781_p_din1</name>
+<name>grp_fu_895_p_din1</name>
 <Object>UpConv_Fused_Row&lt;8, 128, 128, 120, 60&gt;_Pipeline_KW_LOOP_FLAT_LOOP</Object>
 <Type>return value</Type>
 <Scope></Scope>
@@ -2101,7 +2057,7 @@
 <Attribute>data</Attribute>
 </RtlPorts>
 <RtlPorts>
-<name>grp_fu_781_p_dout0</name>
+<name>grp_fu_895_p_dout0</name>
 <Object>UpConv_Fused_Row&lt;8, 128, 128, 120, 60&gt;_Pipeline_KW_LOOP_FLAT_LOOP</Object>
 <Type>return value</Type>
 <Scope></Scope>
@@ -2112,7 +2068,7 @@
 <Attribute>data</Attribute>
 </RtlPorts>
 <RtlPorts>
-<name>grp_fu_781_p_ce</name>
+<name>grp_fu_895_p_ce</name>
 <Object>UpConv_Fused_Row&lt;8, 128, 128, 120, 60&gt;_Pipeline_KW_LOOP_FLAT_LOOP</Object>
 <Type>return value</Type>
 <Scope></Scope>
@@ -2123,7 +2079,7 @@
 <Attribute>data</Attribute>
 </RtlPorts>
 <RtlPorts>
-<name>grp_fu_785_p_din0</name>
+<name>grp_fu_899_p_din0</name>
 <Object>UpConv_Fused_Row&lt;8, 128, 128, 120, 60&gt;_Pipeline_KW_LOOP_FLAT_LOOP</Object>
 <Type>return value</Type>
 <Scope></Scope>
@@ -2134,7 +2090,7 @@
 <Attribute>data</Attribute>
 </RtlPorts>
 <RtlPorts>
-<name>grp_fu_785_p_din1</name>
+<name>grp_fu_899_p_din1</name>
 <Object>UpConv_Fused_Row&lt;8, 128, 128, 120, 60&gt;_Pipeline_KW_LOOP_FLAT_LOOP</Object>
 <Type>return value</Type>
 <Scope></Scope>
@@ -2145,7 +2101,7 @@
 <Attribute>data</Attribute>
 </RtlPorts>
 <RtlPorts>
-<name>grp_fu_785_p_dout0</name>
+<name>grp_fu_899_p_dout0</name>
 <Object>UpConv_Fused_Row&lt;8, 128, 128, 120, 60&gt;_Pipeline_KW_LOOP_FLAT_LOOP</Object>
 <Type>return value</Type>
 <Scope></Scope>
@@ -2156,7 +2112,7 @@
 <Attribute>data</Attribute>
 </RtlPorts>
 <RtlPorts>
-<name>grp_fu_785_p_ce</name>
+<name>grp_fu_899_p_ce</name>
 <Object>UpConv_Fused_Row&lt;8, 128, 128, 120, 60&gt;_Pipeline_KW_LOOP_FLAT_LOOP</Object>
 <Type>return value</Type>
 <Scope></Scope>
@@ -2167,7 +2123,7 @@
 <Attribute>data</Attribute>
 </RtlPorts>
 <RtlPorts>
-<name>grp_fu_789_p_din0</name>
+<name>grp_fu_903_p_din0</name>
 <Object>UpConv_Fused_Row&lt;8, 128, 128, 120, 60&gt;_Pipeline_KW_LOOP_FLAT_LOOP</Object>
 <Type>return value</Type>
 <Scope></Scope>
@@ -2178,7 +2134,7 @@
 <Attribute>data</Attribute>
 </RtlPorts>
 <RtlPorts>
-<name>grp_fu_789_p_din1</name>
+<name>grp_fu_903_p_din1</name>
 <Object>UpConv_Fused_Row&lt;8, 128, 128, 120, 60&gt;_Pipeline_KW_LOOP_FLAT_LOOP</Object>
 <Type>return value</Type>
 <Scope></Scope>
@@ -2189,7 +2145,7 @@
 <Attribute>data</Attribute>
 </RtlPorts>
 <RtlPorts>
-<name>grp_fu_789_p_dout0</name>
+<name>grp_fu_903_p_dout0</name>
 <Object>UpConv_Fused_Row&lt;8, 128, 128, 120, 60&gt;_Pipeline_KW_LOOP_FLAT_LOOP</Object>
 <Type>return value</Type>
 <Scope></Scope>
@@ -2200,7 +2156,7 @@
 <Attribute>data</Attribute>
 </RtlPorts>
 <RtlPorts>
-<name>grp_fu_789_p_ce</name>
+<name>grp_fu_903_p_ce</name>
 <Object>UpConv_Fused_Row&lt;8, 128, 128, 120, 60&gt;_Pipeline_KW_LOOP_FLAT_LOOP</Object>
 <Type>return value</Type>
 <Scope></Scope>
@@ -2211,7 +2167,7 @@
 <Attribute>data</Attribute>
 </RtlPorts>
 <RtlPorts>
-<name>grp_fu_793_p_din0</name>
+<name>grp_fu_907_p_din0</name>
 <Object>UpConv_Fused_Row&lt;8, 128, 128, 120, 60&gt;_Pipeline_KW_LOOP_FLAT_LOOP</Object>
 <Type>return value</Type>
 <Scope></Scope>
@@ -2222,7 +2178,7 @@
 <Attribute>data</Attribute>
 </RtlPorts>
 <RtlPorts>
-<name>grp_fu_793_p_din1</name>
+<name>grp_fu_907_p_din1</name>
 <Object>UpConv_Fused_Row&lt;8, 128, 128, 120, 60&gt;_Pipeline_KW_LOOP_FLAT_LOOP</Object>
 <Type>return value</Type>
 <Scope></Scope>
@@ -2233,7 +2189,7 @@
 <Attribute>data</Attribute>
 </RtlPorts>
 <RtlPorts>
-<name>grp_fu_793_p_dout0</name>
+<name>grp_fu_907_p_dout0</name>
 <Object>UpConv_Fused_Row&lt;8, 128, 128, 120, 60&gt;_Pipeline_KW_LOOP_FLAT_LOOP</Object>
 <Type>return value</Type>
 <Scope></Scope>
@@ -2244,7 +2200,7 @@
 <Attribute>data</Attribute>
 </RtlPorts>
 <RtlPorts>
-<name>grp_fu_793_p_ce</name>
+<name>grp_fu_907_p_ce</name>
 <Object>UpConv_Fused_Row&lt;8, 128, 128, 120, 60&gt;_Pipeline_KW_LOOP_FLAT_LOOP</Object>
 <Type>return value</Type>
 <Scope></Scope>
@@ -2255,8 +2211,52 @@
 <Attribute>data</Attribute>
 </RtlPorts>
 <RtlPorts>
-<name>mul72</name>
-<Object>mul72</Object>
+<name>grp_fu_911_p_din0</name>
+<Object>UpConv_Fused_Row&lt;8, 128, 128, 120, 60&gt;_Pipeline_KW_LOOP_FLAT_LOOP</Object>
+<Type>return value</Type>
+<Scope></Scope>
+<IOProtocol>ap_ctrl_hs</IOProtocol>
+<IOConfig></IOConfig>
+<Dir>out</Dir>
+<Bits>16</Bits>
+<Attribute>data</Attribute>
+</RtlPorts>
+<RtlPorts>
+<name>grp_fu_911_p_din1</name>
+<Object>UpConv_Fused_Row&lt;8, 128, 128, 120, 60&gt;_Pipeline_KW_LOOP_FLAT_LOOP</Object>
+<Type>return value</Type>
+<Scope></Scope>
+<IOProtocol>ap_ctrl_hs</IOProtocol>
+<IOConfig></IOConfig>
+<Dir>out</Dir>
+<Bits>16</Bits>
+<Attribute>data</Attribute>
+</RtlPorts>
+<RtlPorts>
+<name>grp_fu_911_p_dout0</name>
+<Object>UpConv_Fused_Row&lt;8, 128, 128, 120, 60&gt;_Pipeline_KW_LOOP_FLAT_LOOP</Object>
+<Type>return value</Type>
+<Scope></Scope>
+<IOProtocol>ap_ctrl_hs</IOProtocol>
+<IOConfig></IOConfig>
+<Dir>in</Dir>
+<Bits>16</Bits>
+<Attribute>data</Attribute>
+</RtlPorts>
+<RtlPorts>
+<name>grp_fu_911_p_ce</name>
+<Object>UpConv_Fused_Row&lt;8, 128, 128, 120, 60&gt;_Pipeline_KW_LOOP_FLAT_LOOP</Object>
+<Type>return value</Type>
+<Scope></Scope>
+<IOProtocol>ap_ctrl_hs</IOProtocol>
+<IOConfig></IOConfig>
+<Dir>out</Dir>
+<Bits>1</Bits>
+<Attribute>data</Attribute>
+</RtlPorts>
+<RtlPorts>
+<name>mul13_i</name>
+<Object>mul13_i</Object>
 <Type>scalar</Type>
 <Scope></Scope>
 <IOProtocol>ap_none</IOProtocol>

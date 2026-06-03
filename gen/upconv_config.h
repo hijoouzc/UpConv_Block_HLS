@@ -25,7 +25,7 @@
     #define MODEL_H_IN    16
     #define MODEL_W_IN    16
     #define MODEL_C_IN    64
-    #define MODEL_C_OUT   16
+    #define MODEL_C_OUT   32
     
     #define MODEL_H_OUT   32
     #define MODEL_W_OUT   32

@@ -37,21 +37,21 @@
          <obj_property name="Render_Data">/apatb_upconv_core_top_ucb3_top/AESL_inst_upconv_core_top_ucb3//AESL_inst_upconv_core_top_ucb3_activity.dataflowTxWaveData.Cycles</obj_property>
          <obj_property name="Value_Data">/apatb_upconv_core_top_ucb3_top/AESL_inst_upconv_core_top_ucb3//AESL_inst_upconv_core_top_ucb3_activity.dataflowTxWaveData.OutStanding</obj_property>
          <obj_property name="Detail_Data">/apatb_upconv_core_top_ucb3_top/AESL_inst_upconv_core_top_ucb3//AESL_inst_upconv_core_top_ucb3_activity.dataflowTxTooltipData</obj_property>
-         <wvobject type="group" fp_name="/apatb_upconv_core_top_ucb3_top/AESL_inst_upconv_core_top_ucb3/grp_upconv_core_top_ucb3_Pipeline_LOAD_ROW0_VITIS_LOOP_317_1_fu_223/grp_upconv_core_top_ucb3_Pipeline_LOAD_ROW0_VITIS_LOOP_317_1_fu_223_activity">
-            <obj_property name="label">grp_upconv_core_top_ucb3_Pipeline_LOAD_ROW0_VITIS_LOOP_317_1_fu_223_activity</obj_property>
+         <wvobject type="group" fp_name="/apatb_upconv_core_top_ucb3_top/AESL_inst_upconv_core_top_ucb3/grp_upconv_core_top_ucb3_Pipeline_LOAD_ROW0_VITIS_LOOP_386_1_fu_223/grp_upconv_core_top_ucb3_Pipeline_LOAD_ROW0_VITIS_LOOP_386_1_fu_223_activity">
+            <obj_property name="label">grp_upconv_core_top_ucb3_Pipeline_LOAD_ROW0_VITIS_LOOP_386_1_fu_223_activity</obj_property>
             <obj_property name="DisplayName">label</obj_property>
             <obj_property name="UseFullPath">true</obj_property>
-            <obj_property name="ElementShortName">grp_upconv_core_top_ucb3_Pipeline_LOAD_ROW0_VITIS_LOOP_317_1_fu_223_activity</obj_property>
-            <obj_property name="ObjectShortName">grp_upconv_core_top_ucb3_Pipeline_LOAD_ROW0_VITIS_LOOP_317_1_fu_223_activity</obj_property>
+            <obj_property name="ElementShortName">grp_upconv_core_top_ucb3_Pipeline_LOAD_ROW0_VITIS_LOOP_386_1_fu_223_activity</obj_property>
+            <obj_property name="ObjectShortName">grp_upconv_core_top_ucb3_Pipeline_LOAD_ROW0_VITIS_LOOP_386_1_fu_223_activity</obj_property>
             <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
             <obj_property name="WaveformStyle">STYLE_ENUM_TRANSACTION</obj_property>
             <obj_property name="EnumTransactionColorTable">0=blank ffff=blank 0bad=#FF0000</obj_property>
             <obj_property name="UseCustomSignalColor">true</obj_property>
             <obj_property name="CustomSignalColor">turquoise</obj_property>
             <obj_property name="EnumTransactionValueTable">65535=blank</obj_property>
-            <obj_property name="Render_Data">/apatb_upconv_core_top_ucb3_top/AESL_inst_upconv_core_top_ucb3/grp_upconv_core_top_ucb3_Pipeline_LOAD_ROW0_VITIS_LOOP_317_1_fu_223/grp_upconv_core_top_ucb3_Pipeline_LOAD_ROW0_VITIS_LOOP_317_1_fu_223_activity.dataflowTxWaveData.Cycles</obj_property>
-            <obj_property name="Value_Data">/apatb_upconv_core_top_ucb3_top/AESL_inst_upconv_core_top_ucb3/grp_upconv_core_top_ucb3_Pipeline_LOAD_ROW0_VITIS_LOOP_317_1_fu_223/grp_upconv_core_top_ucb3_Pipeline_LOAD_ROW0_VITIS_LOOP_317_1_fu_223_activity.dataflowTxWaveData.OutStanding</obj_property>
-            <obj_property name="Detail_Data">/apatb_upconv_core_top_ucb3_top/AESL_inst_upconv_core_top_ucb3/grp_upconv_core_top_ucb3_Pipeline_LOAD_ROW0_VITIS_LOOP_317_1_fu_223/grp_upconv_core_top_ucb3_Pipeline_LOAD_ROW0_VITIS_LOOP_317_1_fu_223_activity.dataflowTxTooltipData</obj_property>
+            <obj_property name="Render_Data">/apatb_upconv_core_top_ucb3_top/AESL_inst_upconv_core_top_ucb3/grp_upconv_core_top_ucb3_Pipeline_LOAD_ROW0_VITIS_LOOP_386_1_fu_223/grp_upconv_core_top_ucb3_Pipeline_LOAD_ROW0_VITIS_LOOP_386_1_fu_223_activity.dataflowTxWaveData.Cycles</obj_property>
+            <obj_property name="Value_Data">/apatb_upconv_core_top_ucb3_top/AESL_inst_upconv_core_top_ucb3/grp_upconv_core_top_ucb3_Pipeline_LOAD_ROW0_VITIS_LOOP_386_1_fu_223/grp_upconv_core_top_ucb3_Pipeline_LOAD_ROW0_VITIS_LOOP_386_1_fu_223_activity.dataflowTxWaveData.OutStanding</obj_property>
+            <obj_property name="Detail_Data">/apatb_upconv_core_top_ucb3_top/AESL_inst_upconv_core_top_ucb3/grp_upconv_core_top_ucb3_Pipeline_LOAD_ROW0_VITIS_LOOP_386_1_fu_223/grp_upconv_core_top_ucb3_Pipeline_LOAD_ROW0_VITIS_LOOP_386_1_fu_223_activity.dataflowTxTooltipData</obj_property>
          </wvobject>
          <wvobject type="group" fp_name="/apatb_upconv_core_top_ucb3_top/AESL_inst_upconv_core_top_ucb3/grp_UpConv_Fused_Row_8_128_128_120_60_s_fu_232/grp_UpConv_Fused_Row_8_128_128_120_60_s_fu_232_activity">
             <obj_property name="label">grp_UpConv_Fused_Row_8_128_128_120_60_s_fu_232_activity</obj_property>
@@ -68,134 +68,166 @@
             <obj_property name="Render_Data">/apatb_upconv_core_top_ucb3_top/AESL_inst_upconv_core_top_ucb3/grp_UpConv_Fused_Row_8_128_128_120_60_s_fu_232/grp_UpConv_Fused_Row_8_128_128_120_60_s_fu_232_activity.dataflowTxWaveData.Cycles</obj_property>
             <obj_property name="Value_Data">/apatb_upconv_core_top_ucb3_top/AESL_inst_upconv_core_top_ucb3/grp_UpConv_Fused_Row_8_128_128_120_60_s_fu_232/grp_UpConv_Fused_Row_8_128_128_120_60_s_fu_232_activity.dataflowTxWaveData.OutStanding</obj_property>
             <obj_property name="Detail_Data">/apatb_upconv_core_top_ucb3_top/AESL_inst_upconv_core_top_ucb3/grp_UpConv_Fused_Row_8_128_128_120_60_s_fu_232/grp_UpConv_Fused_Row_8_128_128_120_60_s_fu_232_activity.dataflowTxTooltipData</obj_property>
-            <wvobject type="group" fp_name="/apatb_upconv_core_top_ucb3_top/AESL_inst_upconv_core_top_ucb3/grp_UpConv_Fused_Row_8_128_128_120_60_s_fu_232/grp_UpConv_Fused_Row_8_128_128_120_60_Pipeline_RESET_ROW_ACC_fu_172/grp_UpConv_Fused_Row_8_128_128_120_60_Pipeline_RESET_ROW_ACC_fu_172_activity">
-               <obj_property name="label">grp_UpConv_Fused_Row_8_128_128_120_60_Pipeline_RESET_ROW_ACC_fu_172_activity</obj_property>
+            <wvobject type="group" fp_name="/apatb_upconv_core_top_ucb3_top/AESL_inst_upconv_core_top_ucb3/grp_UpConv_Fused_Row_8_128_128_120_60_s_fu_232/grp_UpConv_Fused_Row_8_128_128_120_60_Pipeline_RESET_ROW_ACC_fu_201/grp_UpConv_Fused_Row_8_128_128_120_60_Pipeline_RESET_ROW_ACC_fu_201_activity">
+               <obj_property name="label">grp_UpConv_Fused_Row_8_128_128_120_60_Pipeline_RESET_ROW_ACC_fu_201_activity</obj_property>
                <obj_property name="DisplayName">label</obj_property>
                <obj_property name="UseFullPath">true</obj_property>
-               <obj_property name="ElementShortName">grp_UpConv_Fused_Row_8_128_128_120_60_Pipeline_RESET_ROW_ACC_fu_172_activity</obj_property>
-               <obj_property name="ObjectShortName">grp_UpConv_Fused_Row_8_128_128_120_60_Pipeline_RESET_ROW_ACC_fu_172_activity</obj_property>
+               <obj_property name="ElementShortName">grp_UpConv_Fused_Row_8_128_128_120_60_Pipeline_RESET_ROW_ACC_fu_201_activity</obj_property>
+               <obj_property name="ObjectShortName">grp_UpConv_Fused_Row_8_128_128_120_60_Pipeline_RESET_ROW_ACC_fu_201_activity</obj_property>
                <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
                <obj_property name="WaveformStyle">STYLE_ENUM_TRANSACTION</obj_property>
                <obj_property name="EnumTransactionColorTable">0=blank ffff=blank 0bad=#FF0000</obj_property>
                <obj_property name="UseCustomSignalColor">true</obj_property>
                <obj_property name="CustomSignalColor">turquoise</obj_property>
                <obj_property name="EnumTransactionValueTable">65535=blank</obj_property>
-               <obj_property name="Render_Data">/apatb_upconv_core_top_ucb3_top/AESL_inst_upconv_core_top_ucb3/grp_UpConv_Fused_Row_8_128_128_120_60_s_fu_232/grp_UpConv_Fused_Row_8_128_128_120_60_Pipeline_RESET_ROW_ACC_fu_172/grp_UpConv_Fused_Row_8_128_128_120_60_Pipeline_RESET_ROW_ACC_fu_172_activity.dataflowTxWaveData.Cycles</obj_property>
-               <obj_property name="Value_Data">/apatb_upconv_core_top_ucb3_top/AESL_inst_upconv_core_top_ucb3/grp_UpConv_Fused_Row_8_128_128_120_60_s_fu_232/grp_UpConv_Fused_Row_8_128_128_120_60_Pipeline_RESET_ROW_ACC_fu_172/grp_UpConv_Fused_Row_8_128_128_120_60_Pipeline_RESET_ROW_ACC_fu_172_activity.dataflowTxWaveData.OutStanding</obj_property>
-               <obj_property name="Detail_Data">/apatb_upconv_core_top_ucb3_top/AESL_inst_upconv_core_top_ucb3/grp_UpConv_Fused_Row_8_128_128_120_60_s_fu_232/grp_UpConv_Fused_Row_8_128_128_120_60_Pipeline_RESET_ROW_ACC_fu_172/grp_UpConv_Fused_Row_8_128_128_120_60_Pipeline_RESET_ROW_ACC_fu_172_activity.dataflowTxTooltipData</obj_property>
+               <obj_property name="Render_Data">/apatb_upconv_core_top_ucb3_top/AESL_inst_upconv_core_top_ucb3/grp_UpConv_Fused_Row_8_128_128_120_60_s_fu_232/grp_UpConv_Fused_Row_8_128_128_120_60_Pipeline_RESET_ROW_ACC_fu_201/grp_UpConv_Fused_Row_8_128_128_120_60_Pipeline_RESET_ROW_ACC_fu_201_activity.dataflowTxWaveData.Cycles</obj_property>
+               <obj_property name="Value_Data">/apatb_upconv_core_top_ucb3_top/AESL_inst_upconv_core_top_ucb3/grp_UpConv_Fused_Row_8_128_128_120_60_s_fu_232/grp_UpConv_Fused_Row_8_128_128_120_60_Pipeline_RESET_ROW_ACC_fu_201/grp_UpConv_Fused_Row_8_128_128_120_60_Pipeline_RESET_ROW_ACC_fu_201_activity.dataflowTxWaveData.OutStanding</obj_property>
+               <obj_property name="Detail_Data">/apatb_upconv_core_top_ucb3_top/AESL_inst_upconv_core_top_ucb3/grp_UpConv_Fused_Row_8_128_128_120_60_s_fu_232/grp_UpConv_Fused_Row_8_128_128_120_60_Pipeline_RESET_ROW_ACC_fu_201/grp_UpConv_Fused_Row_8_128_128_120_60_Pipeline_RESET_ROW_ACC_fu_201_activity.dataflowTxTooltipData</obj_property>
             </wvobject>
-            <wvobject type="group" fp_name="/apatb_upconv_core_top_ucb3_top/AESL_inst_upconv_core_top_ucb3/grp_UpConv_Fused_Row_8_128_128_120_60_s_fu_232/grp_UpConv_Fused_Row_8_128_128_120_60_Pipeline_LOAD_PARAMS_fu_208/grp_UpConv_Fused_Row_8_128_128_120_60_Pipeline_LOAD_PARAMS_fu_208_activity">
-               <obj_property name="label">grp_UpConv_Fused_Row_8_128_128_120_60_Pipeline_LOAD_PARAMS_fu_208_activity</obj_property>
+            <wvobject type="group" fp_name="/apatb_upconv_core_top_ucb3_top/AESL_inst_upconv_core_top_ucb3/grp_UpConv_Fused_Row_8_128_128_120_60_s_fu_232/grp_UpConv_Fused_Row_8_128_128_120_60_Outline_TILE_LOOP_fu_237/grp_UpConv_Fused_Row_8_128_128_120_60_Outline_TILE_LOOP_fu_237_activity">
+               <obj_property name="label">grp_UpConv_Fused_Row_8_128_128_120_60_Outline_TILE_LOOP_fu_237_activity</obj_property>
                <obj_property name="DisplayName">label</obj_property>
                <obj_property name="UseFullPath">true</obj_property>
-               <obj_property name="ElementShortName">grp_UpConv_Fused_Row_8_128_128_120_60_Pipeline_LOAD_PARAMS_fu_208_activity</obj_property>
-               <obj_property name="ObjectShortName">grp_UpConv_Fused_Row_8_128_128_120_60_Pipeline_LOAD_PARAMS_fu_208_activity</obj_property>
+               <obj_property name="ElementShortName">grp_UpConv_Fused_Row_8_128_128_120_60_Outline_TILE_LOOP_fu_237_activity</obj_property>
+               <obj_property name="ObjectShortName">grp_UpConv_Fused_Row_8_128_128_120_60_Outline_TILE_LOOP_fu_237_activity</obj_property>
                <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
                <obj_property name="WaveformStyle">STYLE_ENUM_TRANSACTION</obj_property>
                <obj_property name="EnumTransactionColorTable">0=blank ffff=blank 0bad=#FF0000</obj_property>
                <obj_property name="UseCustomSignalColor">true</obj_property>
                <obj_property name="CustomSignalColor">turquoise</obj_property>
                <obj_property name="EnumTransactionValueTable">65535=blank</obj_property>
-               <obj_property name="Render_Data">/apatb_upconv_core_top_ucb3_top/AESL_inst_upconv_core_top_ucb3/grp_UpConv_Fused_Row_8_128_128_120_60_s_fu_232/grp_UpConv_Fused_Row_8_128_128_120_60_Pipeline_LOAD_PARAMS_fu_208/grp_UpConv_Fused_Row_8_128_128_120_60_Pipeline_LOAD_PARAMS_fu_208_activity.dataflowTxWaveData.Cycles</obj_property>
-               <obj_property name="Value_Data">/apatb_upconv_core_top_ucb3_top/AESL_inst_upconv_core_top_ucb3/grp_UpConv_Fused_Row_8_128_128_120_60_s_fu_232/grp_UpConv_Fused_Row_8_128_128_120_60_Pipeline_LOAD_PARAMS_fu_208/grp_UpConv_Fused_Row_8_128_128_120_60_Pipeline_LOAD_PARAMS_fu_208_activity.dataflowTxWaveData.OutStanding</obj_property>
-               <obj_property name="Detail_Data">/apatb_upconv_core_top_ucb3_top/AESL_inst_upconv_core_top_ucb3/grp_UpConv_Fused_Row_8_128_128_120_60_s_fu_232/grp_UpConv_Fused_Row_8_128_128_120_60_Pipeline_LOAD_PARAMS_fu_208/grp_UpConv_Fused_Row_8_128_128_120_60_Pipeline_LOAD_PARAMS_fu_208_activity.dataflowTxTooltipData</obj_property>
-            </wvobject>
-            <wvobject type="group" fp_name="/apatb_upconv_core_top_ucb3_top/AESL_inst_upconv_core_top_ucb3/grp_UpConv_Fused_Row_8_128_128_120_60_s_fu_232/grp_UpConv_Fused_Row_8_128_128_120_60_Outline_TILE_LOOP_fu_223/grp_UpConv_Fused_Row_8_128_128_120_60_Outline_TILE_LOOP_fu_223_activity">
-               <obj_property name="label">grp_UpConv_Fused_Row_8_128_128_120_60_Outline_TILE_LOOP_fu_223_activity</obj_property>
-               <obj_property name="DisplayName">label</obj_property>
-               <obj_property name="UseFullPath">true</obj_property>
-               <obj_property name="ElementShortName">grp_UpConv_Fused_Row_8_128_128_120_60_Outline_TILE_LOOP_fu_223_activity</obj_property>
-               <obj_property name="ObjectShortName">grp_UpConv_Fused_Row_8_128_128_120_60_Outline_TILE_LOOP_fu_223_activity</obj_property>
-               <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
-               <obj_property name="WaveformStyle">STYLE_ENUM_TRANSACTION</obj_property>
-               <obj_property name="EnumTransactionColorTable">0=blank ffff=blank 0bad=#FF0000</obj_property>
-               <obj_property name="UseCustomSignalColor">true</obj_property>
-               <obj_property name="CustomSignalColor">turquoise</obj_property>
-               <obj_property name="EnumTransactionValueTable">65535=blank</obj_property>
-               <obj_property name="Render_Data">/apatb_upconv_core_top_ucb3_top/AESL_inst_upconv_core_top_ucb3/grp_UpConv_Fused_Row_8_128_128_120_60_s_fu_232/grp_UpConv_Fused_Row_8_128_128_120_60_Outline_TILE_LOOP_fu_223/grp_UpConv_Fused_Row_8_128_128_120_60_Outline_TILE_LOOP_fu_223_activity.dataflowTxWaveData.Cycles</obj_property>
-               <obj_property name="Value_Data">/apatb_upconv_core_top_ucb3_top/AESL_inst_upconv_core_top_ucb3/grp_UpConv_Fused_Row_8_128_128_120_60_s_fu_232/grp_UpConv_Fused_Row_8_128_128_120_60_Outline_TILE_LOOP_fu_223/grp_UpConv_Fused_Row_8_128_128_120_60_Outline_TILE_LOOP_fu_223_activity.dataflowTxWaveData.OutStanding</obj_property>
-               <obj_property name="Detail_Data">/apatb_upconv_core_top_ucb3_top/AESL_inst_upconv_core_top_ucb3/grp_UpConv_Fused_Row_8_128_128_120_60_s_fu_232/grp_UpConv_Fused_Row_8_128_128_120_60_Outline_TILE_LOOP_fu_223/grp_UpConv_Fused_Row_8_128_128_120_60_Outline_TILE_LOOP_fu_223_activity.dataflowTxTooltipData</obj_property>
-               <wvobject type="group" fp_name="/apatb_upconv_core_top_ucb3_top/AESL_inst_upconv_core_top_ucb3/grp_UpConv_Fused_Row_8_128_128_120_60_s_fu_232/grp_UpConv_Fused_Row_8_128_128_120_60_Outline_TILE_LOOP_fu_223/grp_UpConv_Fused_Row_8_128_128_120_60_Pipeline_W_FLAT_fu_207/grp_UpConv_Fused_Row_8_128_128_120_60_Pipeline_W_FLAT_fu_207_activity">
-                  <obj_property name="label">grp_UpConv_Fused_Row_8_128_128_120_60_Pipeline_W_FLAT_fu_207_activity</obj_property>
+               <obj_property name="Render_Data">/apatb_upconv_core_top_ucb3_top/AESL_inst_upconv_core_top_ucb3/grp_UpConv_Fused_Row_8_128_128_120_60_s_fu_232/grp_UpConv_Fused_Row_8_128_128_120_60_Outline_TILE_LOOP_fu_237/grp_UpConv_Fused_Row_8_128_128_120_60_Outline_TILE_LOOP_fu_237_activity.dataflowTxWaveData.Cycles</obj_property>
+               <obj_property name="Value_Data">/apatb_upconv_core_top_ucb3_top/AESL_inst_upconv_core_top_ucb3/grp_UpConv_Fused_Row_8_128_128_120_60_s_fu_232/grp_UpConv_Fused_Row_8_128_128_120_60_Outline_TILE_LOOP_fu_237/grp_UpConv_Fused_Row_8_128_128_120_60_Outline_TILE_LOOP_fu_237_activity.dataflowTxWaveData.OutStanding</obj_property>
+               <obj_property name="Detail_Data">/apatb_upconv_core_top_ucb3_top/AESL_inst_upconv_core_top_ucb3/grp_UpConv_Fused_Row_8_128_128_120_60_s_fu_232/grp_UpConv_Fused_Row_8_128_128_120_60_Outline_TILE_LOOP_fu_237/grp_UpConv_Fused_Row_8_128_128_120_60_Outline_TILE_LOOP_fu_237_activity.dataflowTxTooltipData</obj_property>
+               <wvobject type="group" fp_name="/apatb_upconv_core_top_ucb3_top/AESL_inst_upconv_core_top_ucb3/grp_UpConv_Fused_Row_8_128_128_120_60_s_fu_232/grp_UpConv_Fused_Row_8_128_128_120_60_Outline_TILE_LOOP_fu_237/grp_UpConv_Fused_Row_8_128_128_120_60_Pipeline_W_FLAT_fu_236/grp_UpConv_Fused_Row_8_128_128_120_60_Pipeline_W_FLAT_fu_236_activity">
+                  <obj_property name="label">grp_UpConv_Fused_Row_8_128_128_120_60_Pipeline_W_FLAT_fu_236_activity</obj_property>
                   <obj_property name="DisplayName">label</obj_property>
                   <obj_property name="UseFullPath">true</obj_property>
-                  <obj_property name="ElementShortName">grp_UpConv_Fused_Row_8_128_128_120_60_Pipeline_W_FLAT_fu_207_activity</obj_property>
-                  <obj_property name="ObjectShortName">grp_UpConv_Fused_Row_8_128_128_120_60_Pipeline_W_FLAT_fu_207_activity</obj_property>
+                  <obj_property name="ElementShortName">grp_UpConv_Fused_Row_8_128_128_120_60_Pipeline_W_FLAT_fu_236_activity</obj_property>
+                  <obj_property name="ObjectShortName">grp_UpConv_Fused_Row_8_128_128_120_60_Pipeline_W_FLAT_fu_236_activity</obj_property>
                   <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
                   <obj_property name="WaveformStyle">STYLE_ENUM_TRANSACTION</obj_property>
                   <obj_property name="EnumTransactionColorTable">0=blank ffff=blank 0bad=#FF0000</obj_property>
                   <obj_property name="UseCustomSignalColor">true</obj_property>
                   <obj_property name="CustomSignalColor">turquoise</obj_property>
                   <obj_property name="EnumTransactionValueTable">65535=blank</obj_property>
-                  <obj_property name="Render_Data">/apatb_upconv_core_top_ucb3_top/AESL_inst_upconv_core_top_ucb3/grp_UpConv_Fused_Row_8_128_128_120_60_s_fu_232/grp_UpConv_Fused_Row_8_128_128_120_60_Outline_TILE_LOOP_fu_223/grp_UpConv_Fused_Row_8_128_128_120_60_Pipeline_W_FLAT_fu_207/grp_UpConv_Fused_Row_8_128_128_120_60_Pipeline_W_FLAT_fu_207_activity.dataflowTxWaveData.Cycles</obj_property>
-                  <obj_property name="Value_Data">/apatb_upconv_core_top_ucb3_top/AESL_inst_upconv_core_top_ucb3/grp_UpConv_Fused_Row_8_128_128_120_60_s_fu_232/grp_UpConv_Fused_Row_8_128_128_120_60_Outline_TILE_LOOP_fu_223/grp_UpConv_Fused_Row_8_128_128_120_60_Pipeline_W_FLAT_fu_207/grp_UpConv_Fused_Row_8_128_128_120_60_Pipeline_W_FLAT_fu_207_activity.dataflowTxWaveData.OutStanding</obj_property>
-                  <obj_property name="Detail_Data">/apatb_upconv_core_top_ucb3_top/AESL_inst_upconv_core_top_ucb3/grp_UpConv_Fused_Row_8_128_128_120_60_s_fu_232/grp_UpConv_Fused_Row_8_128_128_120_60_Outline_TILE_LOOP_fu_223/grp_UpConv_Fused_Row_8_128_128_120_60_Pipeline_W_FLAT_fu_207/grp_UpConv_Fused_Row_8_128_128_120_60_Pipeline_W_FLAT_fu_207_activity.dataflowTxTooltipData</obj_property>
+                  <obj_property name="Render_Data">/apatb_upconv_core_top_ucb3_top/AESL_inst_upconv_core_top_ucb3/grp_UpConv_Fused_Row_8_128_128_120_60_s_fu_232/grp_UpConv_Fused_Row_8_128_128_120_60_Outline_TILE_LOOP_fu_237/grp_UpConv_Fused_Row_8_128_128_120_60_Pipeline_W_FLAT_fu_236/grp_UpConv_Fused_Row_8_128_128_120_60_Pipeline_W_FLAT_fu_236_activity.dataflowTxWaveData.Cycles</obj_property>
+                  <obj_property name="Value_Data">/apatb_upconv_core_top_ucb3_top/AESL_inst_upconv_core_top_ucb3/grp_UpConv_Fused_Row_8_128_128_120_60_s_fu_232/grp_UpConv_Fused_Row_8_128_128_120_60_Outline_TILE_LOOP_fu_237/grp_UpConv_Fused_Row_8_128_128_120_60_Pipeline_W_FLAT_fu_236/grp_UpConv_Fused_Row_8_128_128_120_60_Pipeline_W_FLAT_fu_236_activity.dataflowTxWaveData.OutStanding</obj_property>
+                  <obj_property name="Detail_Data">/apatb_upconv_core_top_ucb3_top/AESL_inst_upconv_core_top_ucb3/grp_UpConv_Fused_Row_8_128_128_120_60_s_fu_232/grp_UpConv_Fused_Row_8_128_128_120_60_Outline_TILE_LOOP_fu_237/grp_UpConv_Fused_Row_8_128_128_120_60_Pipeline_W_FLAT_fu_236/grp_UpConv_Fused_Row_8_128_128_120_60_Pipeline_W_FLAT_fu_236_activity.dataflowTxTooltipData</obj_property>
                </wvobject>
-               <wvobject type="group" fp_name="/apatb_upconv_core_top_ucb3_top/AESL_inst_upconv_core_top_ucb3/grp_UpConv_Fused_Row_8_128_128_120_60_s_fu_232/grp_UpConv_Fused_Row_8_128_128_120_60_Outline_TILE_LOOP_fu_223/grp_UpConv_Fused_Row_8_128_128_120_60_Pipeline_KW_LOOP_FLAT_LOOP_fu_224/grp_UpConv_Fused_Row_8_128_128_120_60_Pipeline_KW_LOOP_FLAT_LOOP_fu_224_activity">
-                  <obj_property name="label">grp_UpConv_Fused_Row_8_128_128_120_60_Pipeline_KW_LOOP_FLAT_LOOP_fu_224_activity</obj_property>
+               <wvobject type="group" fp_name="/apatb_upconv_core_top_ucb3_top/AESL_inst_upconv_core_top_ucb3/grp_UpConv_Fused_Row_8_128_128_120_60_s_fu_232/grp_UpConv_Fused_Row_8_128_128_120_60_Outline_TILE_LOOP_fu_237/grp_UpConv_Fused_Row_8_128_128_120_60_Pipeline_KW_LOOP_FLAT_LOOP_fu_252/grp_UpConv_Fused_Row_8_128_128_120_60_Pipeline_KW_LOOP_FLAT_LOOP_fu_252_activity">
+                  <obj_property name="label">grp_UpConv_Fused_Row_8_128_128_120_60_Pipeline_KW_LOOP_FLAT_LOOP_fu_252_activity</obj_property>
                   <obj_property name="DisplayName">label</obj_property>
                   <obj_property name="UseFullPath">true</obj_property>
-                  <obj_property name="ElementShortName">grp_UpConv_Fused_Row_8_128_128_120_60_Pipeline_KW_LOOP_FLAT_LOOP_fu_224_activity</obj_property>
-                  <obj_property name="ObjectShortName">grp_UpConv_Fused_Row_8_128_128_120_60_Pipeline_KW_LOOP_FLAT_LOOP_fu_224_activity</obj_property>
+                  <obj_property name="ElementShortName">grp_UpConv_Fused_Row_8_128_128_120_60_Pipeline_KW_LOOP_FLAT_LOOP_fu_252_activity</obj_property>
+                  <obj_property name="ObjectShortName">grp_UpConv_Fused_Row_8_128_128_120_60_Pipeline_KW_LOOP_FLAT_LOOP_fu_252_activity</obj_property>
                   <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
                   <obj_property name="WaveformStyle">STYLE_ENUM_TRANSACTION</obj_property>
                   <obj_property name="EnumTransactionColorTable">0=blank ffff=blank 0bad=#FF0000</obj_property>
                   <obj_property name="UseCustomSignalColor">true</obj_property>
                   <obj_property name="CustomSignalColor">turquoise</obj_property>
                   <obj_property name="EnumTransactionValueTable">65535=blank</obj_property>
-                  <obj_property name="Render_Data">/apatb_upconv_core_top_ucb3_top/AESL_inst_upconv_core_top_ucb3/grp_UpConv_Fused_Row_8_128_128_120_60_s_fu_232/grp_UpConv_Fused_Row_8_128_128_120_60_Outline_TILE_LOOP_fu_223/grp_UpConv_Fused_Row_8_128_128_120_60_Pipeline_KW_LOOP_FLAT_LOOP_fu_224/grp_UpConv_Fused_Row_8_128_128_120_60_Pipeline_KW_LOOP_FLAT_LOOP_fu_224_activity.dataflowTxWaveData.Cycles</obj_property>
-                  <obj_property name="Value_Data">/apatb_upconv_core_top_ucb3_top/AESL_inst_upconv_core_top_ucb3/grp_UpConv_Fused_Row_8_128_128_120_60_s_fu_232/grp_UpConv_Fused_Row_8_128_128_120_60_Outline_TILE_LOOP_fu_223/grp_UpConv_Fused_Row_8_128_128_120_60_Pipeline_KW_LOOP_FLAT_LOOP_fu_224/grp_UpConv_Fused_Row_8_128_128_120_60_Pipeline_KW_LOOP_FLAT_LOOP_fu_224_activity.dataflowTxWaveData.OutStanding</obj_property>
-                  <obj_property name="Detail_Data">/apatb_upconv_core_top_ucb3_top/AESL_inst_upconv_core_top_ucb3/grp_UpConv_Fused_Row_8_128_128_120_60_s_fu_232/grp_UpConv_Fused_Row_8_128_128_120_60_Outline_TILE_LOOP_fu_223/grp_UpConv_Fused_Row_8_128_128_120_60_Pipeline_KW_LOOP_FLAT_LOOP_fu_224/grp_UpConv_Fused_Row_8_128_128_120_60_Pipeline_KW_LOOP_FLAT_LOOP_fu_224_activity.dataflowTxTooltipData</obj_property>
+                  <obj_property name="Render_Data">/apatb_upconv_core_top_ucb3_top/AESL_inst_upconv_core_top_ucb3/grp_UpConv_Fused_Row_8_128_128_120_60_s_fu_232/grp_UpConv_Fused_Row_8_128_128_120_60_Outline_TILE_LOOP_fu_237/grp_UpConv_Fused_Row_8_128_128_120_60_Pipeline_KW_LOOP_FLAT_LOOP_fu_252/grp_UpConv_Fused_Row_8_128_128_120_60_Pipeline_KW_LOOP_FLAT_LOOP_fu_252_activity.dataflowTxWaveData.Cycles</obj_property>
+                  <obj_property name="Value_Data">/apatb_upconv_core_top_ucb3_top/AESL_inst_upconv_core_top_ucb3/grp_UpConv_Fused_Row_8_128_128_120_60_s_fu_232/grp_UpConv_Fused_Row_8_128_128_120_60_Outline_TILE_LOOP_fu_237/grp_UpConv_Fused_Row_8_128_128_120_60_Pipeline_KW_LOOP_FLAT_LOOP_fu_252/grp_UpConv_Fused_Row_8_128_128_120_60_Pipeline_KW_LOOP_FLAT_LOOP_fu_252_activity.dataflowTxWaveData.OutStanding</obj_property>
+                  <obj_property name="Detail_Data">/apatb_upconv_core_top_ucb3_top/AESL_inst_upconv_core_top_ucb3/grp_UpConv_Fused_Row_8_128_128_120_60_s_fu_232/grp_UpConv_Fused_Row_8_128_128_120_60_Outline_TILE_LOOP_fu_237/grp_UpConv_Fused_Row_8_128_128_120_60_Pipeline_KW_LOOP_FLAT_LOOP_fu_252/grp_UpConv_Fused_Row_8_128_128_120_60_Pipeline_KW_LOOP_FLAT_LOOP_fu_252_activity.dataflowTxTooltipData</obj_property>
                </wvobject>
             </wvobject>
-            <wvobject type="group" fp_name="/apatb_upconv_core_top_ucb3_top/AESL_inst_upconv_core_top_ucb3/grp_UpConv_Fused_Row_8_128_128_120_60_s_fu_232/grp_UpConv_Fused_Row_8_128_128_120_60_Pipeline_PIXEL_STATS_fu_266/grp_UpConv_Fused_Row_8_128_128_120_60_Pipeline_PIXEL_STATS_fu_266_activity">
-               <obj_property name="label">grp_UpConv_Fused_Row_8_128_128_120_60_Pipeline_PIXEL_STATS_fu_266_activity</obj_property>
+            <wvobject type="group" fp_name="/apatb_upconv_core_top_ucb3_top/AESL_inst_upconv_core_top_ucb3/grp_UpConv_Fused_Row_8_128_128_120_60_s_fu_232/grp_UpConv_Fused_Row_8_128_128_120_60_Pipeline_LOAD_B_fu_280/grp_UpConv_Fused_Row_8_128_128_120_60_Pipeline_LOAD_B_fu_280_activity">
+               <obj_property name="label">grp_UpConv_Fused_Row_8_128_128_120_60_Pipeline_LOAD_B_fu_280_activity</obj_property>
                <obj_property name="DisplayName">label</obj_property>
                <obj_property name="UseFullPath">true</obj_property>
-               <obj_property name="ElementShortName">grp_UpConv_Fused_Row_8_128_128_120_60_Pipeline_PIXEL_STATS_fu_266_activity</obj_property>
-               <obj_property name="ObjectShortName">grp_UpConv_Fused_Row_8_128_128_120_60_Pipeline_PIXEL_STATS_fu_266_activity</obj_property>
+               <obj_property name="ElementShortName">grp_UpConv_Fused_Row_8_128_128_120_60_Pipeline_LOAD_B_fu_280_activity</obj_property>
+               <obj_property name="ObjectShortName">grp_UpConv_Fused_Row_8_128_128_120_60_Pipeline_LOAD_B_fu_280_activity</obj_property>
                <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
                <obj_property name="WaveformStyle">STYLE_ENUM_TRANSACTION</obj_property>
                <obj_property name="EnumTransactionColorTable">0=blank ffff=blank 0bad=#FF0000</obj_property>
                <obj_property name="UseCustomSignalColor">true</obj_property>
                <obj_property name="CustomSignalColor">turquoise</obj_property>
                <obj_property name="EnumTransactionValueTable">65535=blank</obj_property>
-               <obj_property name="Render_Data">/apatb_upconv_core_top_ucb3_top/AESL_inst_upconv_core_top_ucb3/grp_UpConv_Fused_Row_8_128_128_120_60_s_fu_232/grp_UpConv_Fused_Row_8_128_128_120_60_Pipeline_PIXEL_STATS_fu_266/grp_UpConv_Fused_Row_8_128_128_120_60_Pipeline_PIXEL_STATS_fu_266_activity.dataflowTxWaveData.Cycles</obj_property>
-               <obj_property name="Value_Data">/apatb_upconv_core_top_ucb3_top/AESL_inst_upconv_core_top_ucb3/grp_UpConv_Fused_Row_8_128_128_120_60_s_fu_232/grp_UpConv_Fused_Row_8_128_128_120_60_Pipeline_PIXEL_STATS_fu_266/grp_UpConv_Fused_Row_8_128_128_120_60_Pipeline_PIXEL_STATS_fu_266_activity.dataflowTxWaveData.OutStanding</obj_property>
-               <obj_property name="Detail_Data">/apatb_upconv_core_top_ucb3_top/AESL_inst_upconv_core_top_ucb3/grp_UpConv_Fused_Row_8_128_128_120_60_s_fu_232/grp_UpConv_Fused_Row_8_128_128_120_60_Pipeline_PIXEL_STATS_fu_266/grp_UpConv_Fused_Row_8_128_128_120_60_Pipeline_PIXEL_STATS_fu_266_activity.dataflowTxTooltipData</obj_property>
+               <obj_property name="Render_Data">/apatb_upconv_core_top_ucb3_top/AESL_inst_upconv_core_top_ucb3/grp_UpConv_Fused_Row_8_128_128_120_60_s_fu_232/grp_UpConv_Fused_Row_8_128_128_120_60_Pipeline_LOAD_B_fu_280/grp_UpConv_Fused_Row_8_128_128_120_60_Pipeline_LOAD_B_fu_280_activity.dataflowTxWaveData.Cycles</obj_property>
+               <obj_property name="Value_Data">/apatb_upconv_core_top_ucb3_top/AESL_inst_upconv_core_top_ucb3/grp_UpConv_Fused_Row_8_128_128_120_60_s_fu_232/grp_UpConv_Fused_Row_8_128_128_120_60_Pipeline_LOAD_B_fu_280/grp_UpConv_Fused_Row_8_128_128_120_60_Pipeline_LOAD_B_fu_280_activity.dataflowTxWaveData.OutStanding</obj_property>
+               <obj_property name="Detail_Data">/apatb_upconv_core_top_ucb3_top/AESL_inst_upconv_core_top_ucb3/grp_UpConv_Fused_Row_8_128_128_120_60_s_fu_232/grp_UpConv_Fused_Row_8_128_128_120_60_Pipeline_LOAD_B_fu_280/grp_UpConv_Fused_Row_8_128_128_120_60_Pipeline_LOAD_B_fu_280_activity.dataflowTxTooltipData</obj_property>
             </wvobject>
-            <wvobject type="group" fp_name="/apatb_upconv_core_top_ucb3_top/AESL_inst_upconv_core_top_ucb3/grp_UpConv_Fused_Row_8_128_128_120_60_s_fu_232/grp_UpConv_Fused_Row_8_128_128_120_60_Pipeline_PIXEL_NORM_fu_308/grp_UpConv_Fused_Row_8_128_128_120_60_Pipeline_PIXEL_NORM_fu_308_activity">
-               <obj_property name="label">grp_UpConv_Fused_Row_8_128_128_120_60_Pipeline_PIXEL_NORM_fu_308_activity</obj_property>
+            <wvobject type="group" fp_name="/apatb_upconv_core_top_ucb3_top/AESL_inst_upconv_core_top_ucb3/grp_UpConv_Fused_Row_8_128_128_120_60_s_fu_232/grp_UpConv_Fused_Row_8_128_128_120_60_Pipeline_LOAD_G_fu_288/grp_UpConv_Fused_Row_8_128_128_120_60_Pipeline_LOAD_G_fu_288_activity">
+               <obj_property name="label">grp_UpConv_Fused_Row_8_128_128_120_60_Pipeline_LOAD_G_fu_288_activity</obj_property>
                <obj_property name="DisplayName">label</obj_property>
                <obj_property name="UseFullPath">true</obj_property>
-               <obj_property name="ElementShortName">grp_UpConv_Fused_Row_8_128_128_120_60_Pipeline_PIXEL_NORM_fu_308_activity</obj_property>
-               <obj_property name="ObjectShortName">grp_UpConv_Fused_Row_8_128_128_120_60_Pipeline_PIXEL_NORM_fu_308_activity</obj_property>
+               <obj_property name="ElementShortName">grp_UpConv_Fused_Row_8_128_128_120_60_Pipeline_LOAD_G_fu_288_activity</obj_property>
+               <obj_property name="ObjectShortName">grp_UpConv_Fused_Row_8_128_128_120_60_Pipeline_LOAD_G_fu_288_activity</obj_property>
                <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
                <obj_property name="WaveformStyle">STYLE_ENUM_TRANSACTION</obj_property>
                <obj_property name="EnumTransactionColorTable">0=blank ffff=blank 0bad=#FF0000</obj_property>
                <obj_property name="UseCustomSignalColor">true</obj_property>
                <obj_property name="CustomSignalColor">turquoise</obj_property>
                <obj_property name="EnumTransactionValueTable">65535=blank</obj_property>
-               <obj_property name="Render_Data">/apatb_upconv_core_top_ucb3_top/AESL_inst_upconv_core_top_ucb3/grp_UpConv_Fused_Row_8_128_128_120_60_s_fu_232/grp_UpConv_Fused_Row_8_128_128_120_60_Pipeline_PIXEL_NORM_fu_308/grp_UpConv_Fused_Row_8_128_128_120_60_Pipeline_PIXEL_NORM_fu_308_activity.dataflowTxWaveData.Cycles</obj_property>
-               <obj_property name="Value_Data">/apatb_upconv_core_top_ucb3_top/AESL_inst_upconv_core_top_ucb3/grp_UpConv_Fused_Row_8_128_128_120_60_s_fu_232/grp_UpConv_Fused_Row_8_128_128_120_60_Pipeline_PIXEL_NORM_fu_308/grp_UpConv_Fused_Row_8_128_128_120_60_Pipeline_PIXEL_NORM_fu_308_activity.dataflowTxWaveData.OutStanding</obj_property>
-               <obj_property name="Detail_Data">/apatb_upconv_core_top_ucb3_top/AESL_inst_upconv_core_top_ucb3/grp_UpConv_Fused_Row_8_128_128_120_60_s_fu_232/grp_UpConv_Fused_Row_8_128_128_120_60_Pipeline_PIXEL_NORM_fu_308/grp_UpConv_Fused_Row_8_128_128_120_60_Pipeline_PIXEL_NORM_fu_308_activity.dataflowTxTooltipData</obj_property>
+               <obj_property name="Render_Data">/apatb_upconv_core_top_ucb3_top/AESL_inst_upconv_core_top_ucb3/grp_UpConv_Fused_Row_8_128_128_120_60_s_fu_232/grp_UpConv_Fused_Row_8_128_128_120_60_Pipeline_LOAD_G_fu_288/grp_UpConv_Fused_Row_8_128_128_120_60_Pipeline_LOAD_G_fu_288_activity.dataflowTxWaveData.Cycles</obj_property>
+               <obj_property name="Value_Data">/apatb_upconv_core_top_ucb3_top/AESL_inst_upconv_core_top_ucb3/grp_UpConv_Fused_Row_8_128_128_120_60_s_fu_232/grp_UpConv_Fused_Row_8_128_128_120_60_Pipeline_LOAD_G_fu_288/grp_UpConv_Fused_Row_8_128_128_120_60_Pipeline_LOAD_G_fu_288_activity.dataflowTxWaveData.OutStanding</obj_property>
+               <obj_property name="Detail_Data">/apatb_upconv_core_top_ucb3_top/AESL_inst_upconv_core_top_ucb3/grp_UpConv_Fused_Row_8_128_128_120_60_s_fu_232/grp_UpConv_Fused_Row_8_128_128_120_60_Pipeline_LOAD_G_fu_288/grp_UpConv_Fused_Row_8_128_128_120_60_Pipeline_LOAD_G_fu_288_activity.dataflowTxTooltipData</obj_property>
+            </wvobject>
+            <wvobject type="group" fp_name="/apatb_upconv_core_top_ucb3_top/AESL_inst_upconv_core_top_ucb3/grp_UpConv_Fused_Row_8_128_128_120_60_s_fu_232/grp_UpConv_Fused_Row_8_128_128_120_60_Pipeline_PIXEL_STATS_fu_296/grp_UpConv_Fused_Row_8_128_128_120_60_Pipeline_PIXEL_STATS_fu_296_activity">
+               <obj_property name="label">grp_UpConv_Fused_Row_8_128_128_120_60_Pipeline_PIXEL_STATS_fu_296_activity</obj_property>
+               <obj_property name="DisplayName">label</obj_property>
+               <obj_property name="UseFullPath">true</obj_property>
+               <obj_property name="ElementShortName">grp_UpConv_Fused_Row_8_128_128_120_60_Pipeline_PIXEL_STATS_fu_296_activity</obj_property>
+               <obj_property name="ObjectShortName">grp_UpConv_Fused_Row_8_128_128_120_60_Pipeline_PIXEL_STATS_fu_296_activity</obj_property>
+               <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+               <obj_property name="WaveformStyle">STYLE_ENUM_TRANSACTION</obj_property>
+               <obj_property name="EnumTransactionColorTable">0=blank ffff=blank 0bad=#FF0000</obj_property>
+               <obj_property name="UseCustomSignalColor">true</obj_property>
+               <obj_property name="CustomSignalColor">turquoise</obj_property>
+               <obj_property name="EnumTransactionValueTable">65535=blank</obj_property>
+               <obj_property name="Render_Data">/apatb_upconv_core_top_ucb3_top/AESL_inst_upconv_core_top_ucb3/grp_UpConv_Fused_Row_8_128_128_120_60_s_fu_232/grp_UpConv_Fused_Row_8_128_128_120_60_Pipeline_PIXEL_STATS_fu_296/grp_UpConv_Fused_Row_8_128_128_120_60_Pipeline_PIXEL_STATS_fu_296_activity.dataflowTxWaveData.Cycles</obj_property>
+               <obj_property name="Value_Data">/apatb_upconv_core_top_ucb3_top/AESL_inst_upconv_core_top_ucb3/grp_UpConv_Fused_Row_8_128_128_120_60_s_fu_232/grp_UpConv_Fused_Row_8_128_128_120_60_Pipeline_PIXEL_STATS_fu_296/grp_UpConv_Fused_Row_8_128_128_120_60_Pipeline_PIXEL_STATS_fu_296_activity.dataflowTxWaveData.OutStanding</obj_property>
+               <obj_property name="Detail_Data">/apatb_upconv_core_top_ucb3_top/AESL_inst_upconv_core_top_ucb3/grp_UpConv_Fused_Row_8_128_128_120_60_s_fu_232/grp_UpConv_Fused_Row_8_128_128_120_60_Pipeline_PIXEL_STATS_fu_296/grp_UpConv_Fused_Row_8_128_128_120_60_Pipeline_PIXEL_STATS_fu_296_activity.dataflowTxTooltipData</obj_property>
+            </wvobject>
+            <wvobject type="group" fp_name="/apatb_upconv_core_top_ucb3_top/AESL_inst_upconv_core_top_ucb3/grp_UpConv_Fused_Row_8_128_128_120_60_s_fu_232/grp_UpConv_Fused_Row_8_128_128_120_60_Pipeline_LOAD_BE_fu_338/grp_UpConv_Fused_Row_8_128_128_120_60_Pipeline_LOAD_BE_fu_338_activity">
+               <obj_property name="label">grp_UpConv_Fused_Row_8_128_128_120_60_Pipeline_LOAD_BE_fu_338_activity</obj_property>
+               <obj_property name="DisplayName">label</obj_property>
+               <obj_property name="UseFullPath">true</obj_property>
+               <obj_property name="ElementShortName">grp_UpConv_Fused_Row_8_128_128_120_60_Pipeline_LOAD_BE_fu_338_activity</obj_property>
+               <obj_property name="ObjectShortName">grp_UpConv_Fused_Row_8_128_128_120_60_Pipeline_LOAD_BE_fu_338_activity</obj_property>
+               <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+               <obj_property name="WaveformStyle">STYLE_ENUM_TRANSACTION</obj_property>
+               <obj_property name="EnumTransactionColorTable">0=blank ffff=blank 0bad=#FF0000</obj_property>
+               <obj_property name="UseCustomSignalColor">true</obj_property>
+               <obj_property name="CustomSignalColor">turquoise</obj_property>
+               <obj_property name="EnumTransactionValueTable">65535=blank</obj_property>
+               <obj_property name="Render_Data">/apatb_upconv_core_top_ucb3_top/AESL_inst_upconv_core_top_ucb3/grp_UpConv_Fused_Row_8_128_128_120_60_s_fu_232/grp_UpConv_Fused_Row_8_128_128_120_60_Pipeline_LOAD_BE_fu_338/grp_UpConv_Fused_Row_8_128_128_120_60_Pipeline_LOAD_BE_fu_338_activity.dataflowTxWaveData.Cycles</obj_property>
+               <obj_property name="Value_Data">/apatb_upconv_core_top_ucb3_top/AESL_inst_upconv_core_top_ucb3/grp_UpConv_Fused_Row_8_128_128_120_60_s_fu_232/grp_UpConv_Fused_Row_8_128_128_120_60_Pipeline_LOAD_BE_fu_338/grp_UpConv_Fused_Row_8_128_128_120_60_Pipeline_LOAD_BE_fu_338_activity.dataflowTxWaveData.OutStanding</obj_property>
+               <obj_property name="Detail_Data">/apatb_upconv_core_top_ucb3_top/AESL_inst_upconv_core_top_ucb3/grp_UpConv_Fused_Row_8_128_128_120_60_s_fu_232/grp_UpConv_Fused_Row_8_128_128_120_60_Pipeline_LOAD_BE_fu_338/grp_UpConv_Fused_Row_8_128_128_120_60_Pipeline_LOAD_BE_fu_338_activity.dataflowTxTooltipData</obj_property>
+            </wvobject>
+            <wvobject type="group" fp_name="/apatb_upconv_core_top_ucb3_top/AESL_inst_upconv_core_top_ucb3/grp_UpConv_Fused_Row_8_128_128_120_60_s_fu_232/grp_UpConv_Fused_Row_8_128_128_120_60_Pipeline_PIXEL_NORM_fu_346/grp_UpConv_Fused_Row_8_128_128_120_60_Pipeline_PIXEL_NORM_fu_346_activity">
+               <obj_property name="label">grp_UpConv_Fused_Row_8_128_128_120_60_Pipeline_PIXEL_NORM_fu_346_activity</obj_property>
+               <obj_property name="DisplayName">label</obj_property>
+               <obj_property name="UseFullPath">true</obj_property>
+               <obj_property name="ElementShortName">grp_UpConv_Fused_Row_8_128_128_120_60_Pipeline_PIXEL_NORM_fu_346_activity</obj_property>
+               <obj_property name="ObjectShortName">grp_UpConv_Fused_Row_8_128_128_120_60_Pipeline_PIXEL_NORM_fu_346_activity</obj_property>
+               <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+               <obj_property name="WaveformStyle">STYLE_ENUM_TRANSACTION</obj_property>
+               <obj_property name="EnumTransactionColorTable">0=blank ffff=blank 0bad=#FF0000</obj_property>
+               <obj_property name="UseCustomSignalColor">true</obj_property>
+               <obj_property name="CustomSignalColor">turquoise</obj_property>
+               <obj_property name="EnumTransactionValueTable">65535=blank</obj_property>
+               <obj_property name="Render_Data">/apatb_upconv_core_top_ucb3_top/AESL_inst_upconv_core_top_ucb3/grp_UpConv_Fused_Row_8_128_128_120_60_s_fu_232/grp_UpConv_Fused_Row_8_128_128_120_60_Pipeline_PIXEL_NORM_fu_346/grp_UpConv_Fused_Row_8_128_128_120_60_Pipeline_PIXEL_NORM_fu_346_activity.dataflowTxWaveData.Cycles</obj_property>
+               <obj_property name="Value_Data">/apatb_upconv_core_top_ucb3_top/AESL_inst_upconv_core_top_ucb3/grp_UpConv_Fused_Row_8_128_128_120_60_s_fu_232/grp_UpConv_Fused_Row_8_128_128_120_60_Pipeline_PIXEL_NORM_fu_346/grp_UpConv_Fused_Row_8_128_128_120_60_Pipeline_PIXEL_NORM_fu_346_activity.dataflowTxWaveData.OutStanding</obj_property>
+               <obj_property name="Detail_Data">/apatb_upconv_core_top_ucb3_top/AESL_inst_upconv_core_top_ucb3/grp_UpConv_Fused_Row_8_128_128_120_60_s_fu_232/grp_UpConv_Fused_Row_8_128_128_120_60_Pipeline_PIXEL_NORM_fu_346/grp_UpConv_Fused_Row_8_128_128_120_60_Pipeline_PIXEL_NORM_fu_346_activity.dataflowTxTooltipData</obj_property>
             </wvobject>
          </wvobject>
-         <wvobject type="group" fp_name="/apatb_upconv_core_top_ucb3_top/AESL_inst_upconv_core_top_ucb3/grp_upconv_core_top_ucb3_Pipeline_LOAD_ROW_VITIS_LOOP_328_2_fu_289/grp_upconv_core_top_ucb3_Pipeline_LOAD_ROW_VITIS_LOOP_328_2_fu_289_activity">
-            <obj_property name="label">grp_upconv_core_top_ucb3_Pipeline_LOAD_ROW_VITIS_LOOP_328_2_fu_289_activity</obj_property>
+         <wvobject type="group" fp_name="/apatb_upconv_core_top_ucb3_top/AESL_inst_upconv_core_top_ucb3/grp_upconv_core_top_ucb3_Pipeline_LOAD_ROW_VITIS_LOOP_397_2_fu_289/grp_upconv_core_top_ucb3_Pipeline_LOAD_ROW_VITIS_LOOP_397_2_fu_289_activity">
+            <obj_property name="label">grp_upconv_core_top_ucb3_Pipeline_LOAD_ROW_VITIS_LOOP_397_2_fu_289_activity</obj_property>
             <obj_property name="DisplayName">label</obj_property>
             <obj_property name="UseFullPath">true</obj_property>
-            <obj_property name="ElementShortName">grp_upconv_core_top_ucb3_Pipeline_LOAD_ROW_VITIS_LOOP_328_2_fu_289_activity</obj_property>
-            <obj_property name="ObjectShortName">grp_upconv_core_top_ucb3_Pipeline_LOAD_ROW_VITIS_LOOP_328_2_fu_289_activity</obj_property>
+            <obj_property name="ElementShortName">grp_upconv_core_top_ucb3_Pipeline_LOAD_ROW_VITIS_LOOP_397_2_fu_289_activity</obj_property>
+            <obj_property name="ObjectShortName">grp_upconv_core_top_ucb3_Pipeline_LOAD_ROW_VITIS_LOOP_397_2_fu_289_activity</obj_property>
             <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
             <obj_property name="WaveformStyle">STYLE_ENUM_TRANSACTION</obj_property>
             <obj_property name="EnumTransactionColorTable">0=blank ffff=blank 0bad=#FF0000</obj_property>
             <obj_property name="UseCustomSignalColor">true</obj_property>
             <obj_property name="CustomSignalColor">turquoise</obj_property>
             <obj_property name="EnumTransactionValueTable">65535=blank</obj_property>
-            <obj_property name="Render_Data">/apatb_upconv_core_top_ucb3_top/AESL_inst_upconv_core_top_ucb3/grp_upconv_core_top_ucb3_Pipeline_LOAD_ROW_VITIS_LOOP_328_2_fu_289/grp_upconv_core_top_ucb3_Pipeline_LOAD_ROW_VITIS_LOOP_328_2_fu_289_activity.dataflowTxWaveData.Cycles</obj_property>
-            <obj_property name="Value_Data">/apatb_upconv_core_top_ucb3_top/AESL_inst_upconv_core_top_ucb3/grp_upconv_core_top_ucb3_Pipeline_LOAD_ROW_VITIS_LOOP_328_2_fu_289/grp_upconv_core_top_ucb3_Pipeline_LOAD_ROW_VITIS_LOOP_328_2_fu_289_activity.dataflowTxWaveData.OutStanding</obj_property>
-            <obj_property name="Detail_Data">/apatb_upconv_core_top_ucb3_top/AESL_inst_upconv_core_top_ucb3/grp_upconv_core_top_ucb3_Pipeline_LOAD_ROW_VITIS_LOOP_328_2_fu_289/grp_upconv_core_top_ucb3_Pipeline_LOAD_ROW_VITIS_LOOP_328_2_fu_289_activity.dataflowTxTooltipData</obj_property>
+            <obj_property name="Render_Data">/apatb_upconv_core_top_ucb3_top/AESL_inst_upconv_core_top_ucb3/grp_upconv_core_top_ucb3_Pipeline_LOAD_ROW_VITIS_LOOP_397_2_fu_289/grp_upconv_core_top_ucb3_Pipeline_LOAD_ROW_VITIS_LOOP_397_2_fu_289_activity.dataflowTxWaveData.Cycles</obj_property>
+            <obj_property name="Value_Data">/apatb_upconv_core_top_ucb3_top/AESL_inst_upconv_core_top_ucb3/grp_upconv_core_top_ucb3_Pipeline_LOAD_ROW_VITIS_LOOP_397_2_fu_289/grp_upconv_core_top_ucb3_Pipeline_LOAD_ROW_VITIS_LOOP_397_2_fu_289_activity.dataflowTxWaveData.OutStanding</obj_property>
+            <obj_property name="Detail_Data">/apatb_upconv_core_top_ucb3_top/AESL_inst_upconv_core_top_ucb3/grp_upconv_core_top_ucb3_Pipeline_LOAD_ROW_VITIS_LOOP_397_2_fu_289/grp_upconv_core_top_ucb3_Pipeline_LOAD_ROW_VITIS_LOOP_397_2_fu_289_activity.dataflowTxTooltipData</obj_property>
          </wvobject>
       </wvobject>
    </wvobject>
@@ -206,17 +238,17 @@
    <wvobject type="group" fp_name="AESL_inst_upconv_core_top_ucb3_group">
       <obj_property name="label">AESL_inst_upconv_core_top_ucb3</obj_property>
       <obj_property name="DisplayName">label</obj_property>
-      <wvobject type="protoinst" fp_name="/apatb_upconv_core_top_ucb3_top/AESL_inst_upconv_core_top_ucb3/grp_upconv_core_top_ucb3_Pipeline_LOAD_ROW0_VITIS_LOOP_317_1_fu_223/grp_upconv_core_top_ucb3_Pipeline_LOAD_ROW0_VITIS_LOOP_317_1_fu_223_activity">
-         <obj_property name="ElementShortName">grp_upconv_core_top_ucb3_Pipeline_LOAD_ROW0_VITIS_LOOP_317_1_fu_223_activity</obj_property>
-         <obj_property name="ObjectShortName">grp_upconv_core_top_ucb3_Pipeline_LOAD_ROW0_VITIS_LOOP_317_1_fu_223_activity</obj_property>
+      <wvobject type="protoinst" fp_name="/apatb_upconv_core_top_ucb3_top/AESL_inst_upconv_core_top_ucb3/grp_upconv_core_top_ucb3_Pipeline_LOAD_ROW0_VITIS_LOOP_386_1_fu_223/grp_upconv_core_top_ucb3_Pipeline_LOAD_ROW0_VITIS_LOOP_386_1_fu_223_activity">
+         <obj_property name="ElementShortName">grp_upconv_core_top_ucb3_Pipeline_LOAD_ROW0_VITIS_LOOP_386_1_fu_223_activity</obj_property>
+         <obj_property name="ObjectShortName">grp_upconv_core_top_ucb3_Pipeline_LOAD_ROW0_VITIS_LOOP_386_1_fu_223_activity</obj_property>
       </wvobject>
       <wvobject type="protoinst" fp_name="/apatb_upconv_core_top_ucb3_top/AESL_inst_upconv_core_top_ucb3/grp_UpConv_Fused_Row_8_128_128_120_60_s_fu_232/grp_UpConv_Fused_Row_8_128_128_120_60_s_fu_232_activity">
          <obj_property name="ElementShortName">grp_UpConv_Fused_Row_8_128_128_120_60_s_fu_232_activity</obj_property>
          <obj_property name="ObjectShortName">grp_UpConv_Fused_Row_8_128_128_120_60_s_fu_232_activity</obj_property>
       </wvobject>
-      <wvobject type="protoinst" fp_name="/apatb_upconv_core_top_ucb3_top/AESL_inst_upconv_core_top_ucb3/grp_upconv_core_top_ucb3_Pipeline_LOAD_ROW_VITIS_LOOP_328_2_fu_289/grp_upconv_core_top_ucb3_Pipeline_LOAD_ROW_VITIS_LOOP_328_2_fu_289_activity">
-         <obj_property name="ElementShortName">grp_upconv_core_top_ucb3_Pipeline_LOAD_ROW_VITIS_LOOP_328_2_fu_289_activity</obj_property>
-         <obj_property name="ObjectShortName">grp_upconv_core_top_ucb3_Pipeline_LOAD_ROW_VITIS_LOOP_328_2_fu_289_activity</obj_property>
+      <wvobject type="protoinst" fp_name="/apatb_upconv_core_top_ucb3_top/AESL_inst_upconv_core_top_ucb3/grp_upconv_core_top_ucb3_Pipeline_LOAD_ROW_VITIS_LOOP_397_2_fu_289/grp_upconv_core_top_ucb3_Pipeline_LOAD_ROW_VITIS_LOOP_397_2_fu_289_activity">
+         <obj_property name="ElementShortName">grp_upconv_core_top_ucb3_Pipeline_LOAD_ROW_VITIS_LOOP_397_2_fu_289_activity</obj_property>
+         <obj_property name="ObjectShortName">grp_upconv_core_top_ucb3_Pipeline_LOAD_ROW_VITIS_LOOP_397_2_fu_289_activity</obj_property>
       </wvobject>
       <wvobject type="group" fp_name="AESL_inst_upconv_core_top_ucb3_Handshake_group">
          <obj_property name="label">Block-level handshake</obj_property>
@@ -234,21 +266,21 @@
             <obj_property name="ObjectShortName">ap_done</obj_property>
          </wvobject>
       </wvobject>
-      <wvobject type="group" fp_name="grp_upconv_core_top_ucb3_Pipeline_LOAD_ROW0_VITIS_LOOP_317_1_fu_223_group">
-         <obj_property name="label">grp_upconv_core_top_ucb3_Pipeline_LOAD_ROW0_VITIS_LOOP_317_1_fu_223</obj_property>
+      <wvobject type="group" fp_name="grp_upconv_core_top_ucb3_Pipeline_LOAD_ROW0_VITIS_LOOP_386_1_fu_223_group">
+         <obj_property name="label">grp_upconv_core_top_ucb3_Pipeline_LOAD_ROW0_VITIS_LOOP_386_1_fu_223</obj_property>
          <obj_property name="DisplayName">label</obj_property>
-         <wvobject type="group" fp_name="grp_upconv_core_top_ucb3_Pipeline_LOAD_ROW0_VITIS_LOOP_317_1_fu_223_Handshake_group">
+         <wvobject type="group" fp_name="grp_upconv_core_top_ucb3_Pipeline_LOAD_ROW0_VITIS_LOOP_386_1_fu_223_Handshake_group">
             <obj_property name="label">Block-level handshake</obj_property>
             <obj_property name="DisplayName">label</obj_property>
-            <wvobject type="logic" fp_name="/apatb_upconv_core_top_ucb3_top/AESL_inst_upconv_core_top_ucb3/grp_upconv_core_top_ucb3_Pipeline_LOAD_ROW0_VITIS_LOOP_317_1_fu_223/ap_start">
+            <wvobject type="logic" fp_name="/apatb_upconv_core_top_ucb3_top/AESL_inst_upconv_core_top_ucb3/grp_upconv_core_top_ucb3_Pipeline_LOAD_ROW0_VITIS_LOOP_386_1_fu_223/ap_start">
                <obj_property name="ElementShortName">ap_start</obj_property>
                <obj_property name="ObjectShortName">ap_start</obj_property>
             </wvobject>
-            <wvobject type="logic" fp_name="/apatb_upconv_core_top_ucb3_top/AESL_inst_upconv_core_top_ucb3/grp_upconv_core_top_ucb3_Pipeline_LOAD_ROW0_VITIS_LOOP_317_1_fu_223/ap_ready">
+            <wvobject type="logic" fp_name="/apatb_upconv_core_top_ucb3_top/AESL_inst_upconv_core_top_ucb3/grp_upconv_core_top_ucb3_Pipeline_LOAD_ROW0_VITIS_LOOP_386_1_fu_223/ap_ready">
                <obj_property name="ElementShortName">ap_ready</obj_property>
                <obj_property name="ObjectShortName">ap_ready</obj_property>
             </wvobject>
-            <wvobject type="logic" fp_name="/apatb_upconv_core_top_ucb3_top/AESL_inst_upconv_core_top_ucb3/grp_upconv_core_top_ucb3_Pipeline_LOAD_ROW0_VITIS_LOOP_317_1_fu_223/ap_done">
+            <wvobject type="logic" fp_name="/apatb_upconv_core_top_ucb3_top/AESL_inst_upconv_core_top_ucb3/grp_upconv_core_top_ucb3_Pipeline_LOAD_ROW0_VITIS_LOOP_386_1_fu_223/ap_done">
                <obj_property name="ElementShortName">ap_done</obj_property>
                <obj_property name="ObjectShortName">ap_done</obj_property>
             </wvobject>
@@ -257,25 +289,33 @@
       <wvobject type="group" fp_name="grp_UpConv_Fused_Row_8_128_128_120_60_s_fu_232_group">
          <obj_property name="label">grp_UpConv_Fused_Row_8_128_128_120_60_s_fu_232</obj_property>
          <obj_property name="DisplayName">label</obj_property>
-         <wvobject type="protoinst" fp_name="/apatb_upconv_core_top_ucb3_top/AESL_inst_upconv_core_top_ucb3/grp_UpConv_Fused_Row_8_128_128_120_60_s_fu_232/grp_UpConv_Fused_Row_8_128_128_120_60_Pipeline_RESET_ROW_ACC_fu_172/grp_UpConv_Fused_Row_8_128_128_120_60_Pipeline_RESET_ROW_ACC_fu_172_activity">
-            <obj_property name="ElementShortName">grp_UpConv_Fused_Row_8_128_128_120_60_Pipeline_RESET_ROW_ACC_fu_172_activity</obj_property>
-            <obj_property name="ObjectShortName">grp_UpConv_Fused_Row_8_128_128_120_60_Pipeline_RESET_ROW_ACC_fu_172_activity</obj_property>
+         <wvobject type="protoinst" fp_name="/apatb_upconv_core_top_ucb3_top/AESL_inst_upconv_core_top_ucb3/grp_UpConv_Fused_Row_8_128_128_120_60_s_fu_232/grp_UpConv_Fused_Row_8_128_128_120_60_Pipeline_RESET_ROW_ACC_fu_201/grp_UpConv_Fused_Row_8_128_128_120_60_Pipeline_RESET_ROW_ACC_fu_201_activity">
+            <obj_property name="ElementShortName">grp_UpConv_Fused_Row_8_128_128_120_60_Pipeline_RESET_ROW_ACC_fu_201_activity</obj_property>
+            <obj_property name="ObjectShortName">grp_UpConv_Fused_Row_8_128_128_120_60_Pipeline_RESET_ROW_ACC_fu_201_activity</obj_property>
          </wvobject>
-         <wvobject type="protoinst" fp_name="/apatb_upconv_core_top_ucb3_top/AESL_inst_upconv_core_top_ucb3/grp_UpConv_Fused_Row_8_128_128_120_60_s_fu_232/grp_UpConv_Fused_Row_8_128_128_120_60_Pipeline_LOAD_PARAMS_fu_208/grp_UpConv_Fused_Row_8_128_128_120_60_Pipeline_LOAD_PARAMS_fu_208_activity">
-            <obj_property name="ElementShortName">grp_UpConv_Fused_Row_8_128_128_120_60_Pipeline_LOAD_PARAMS_fu_208_activity</obj_property>
-            <obj_property name="ObjectShortName">grp_UpConv_Fused_Row_8_128_128_120_60_Pipeline_LOAD_PARAMS_fu_208_activity</obj_property>
+         <wvobject type="protoinst" fp_name="/apatb_upconv_core_top_ucb3_top/AESL_inst_upconv_core_top_ucb3/grp_UpConv_Fused_Row_8_128_128_120_60_s_fu_232/grp_UpConv_Fused_Row_8_128_128_120_60_Outline_TILE_LOOP_fu_237/grp_UpConv_Fused_Row_8_128_128_120_60_Outline_TILE_LOOP_fu_237_activity">
+            <obj_property name="ElementShortName">grp_UpConv_Fused_Row_8_128_128_120_60_Outline_TILE_LOOP_fu_237_activity</obj_property>
+            <obj_property name="ObjectShortName">grp_UpConv_Fused_Row_8_128_128_120_60_Outline_TILE_LOOP_fu_237_activity</obj_property>
          </wvobject>
-         <wvobject type="protoinst" fp_name="/apatb_upconv_core_top_ucb3_top/AESL_inst_upconv_core_top_ucb3/grp_UpConv_Fused_Row_8_128_128_120_60_s_fu_232/grp_UpConv_Fused_Row_8_128_128_120_60_Outline_TILE_LOOP_fu_223/grp_UpConv_Fused_Row_8_128_128_120_60_Outline_TILE_LOOP_fu_223_activity">
-            <obj_property name="ElementShortName">grp_UpConv_Fused_Row_8_128_128_120_60_Outline_TILE_LOOP_fu_223_activity</obj_property>
-            <obj_property name="ObjectShortName">grp_UpConv_Fused_Row_8_128_128_120_60_Outline_TILE_LOOP_fu_223_activity</obj_property>
+         <wvobject type="protoinst" fp_name="/apatb_upconv_core_top_ucb3_top/AESL_inst_upconv_core_top_ucb3/grp_UpConv_Fused_Row_8_128_128_120_60_s_fu_232/grp_UpConv_Fused_Row_8_128_128_120_60_Pipeline_LOAD_B_fu_280/grp_UpConv_Fused_Row_8_128_128_120_60_Pipeline_LOAD_B_fu_280_activity">
+            <obj_property name="ElementShortName">grp_UpConv_Fused_Row_8_128_128_120_60_Pipeline_LOAD_B_fu_280_activity</obj_property>
+            <obj_property name="ObjectShortName">grp_UpConv_Fused_Row_8_128_128_120_60_Pipeline_LOAD_B_fu_280_activity</obj_property>
          </wvobject>
-         <wvobject type="protoinst" fp_name="/apatb_upconv_core_top_ucb3_top/AESL_inst_upconv_core_top_ucb3/grp_UpConv_Fused_Row_8_128_128_120_60_s_fu_232/grp_UpConv_Fused_Row_8_128_128_120_60_Pipeline_PIXEL_STATS_fu_266/grp_UpConv_Fused_Row_8_128_128_120_60_Pipeline_PIXEL_STATS_fu_266_activity">
-            <obj_property name="ElementShortName">grp_UpConv_Fused_Row_8_128_128_120_60_Pipeline_PIXEL_STATS_fu_266_activity</obj_property>
-            <obj_property name="ObjectShortName">grp_UpConv_Fused_Row_8_128_128_120_60_Pipeline_PIXEL_STATS_fu_266_activity</obj_property>
+         <wvobject type="protoinst" fp_name="/apatb_upconv_core_top_ucb3_top/AESL_inst_upconv_core_top_ucb3/grp_UpConv_Fused_Row_8_128_128_120_60_s_fu_232/grp_UpConv_Fused_Row_8_128_128_120_60_Pipeline_LOAD_G_fu_288/grp_UpConv_Fused_Row_8_128_128_120_60_Pipeline_LOAD_G_fu_288_activity">
+            <obj_property name="ElementShortName">grp_UpConv_Fused_Row_8_128_128_120_60_Pipeline_LOAD_G_fu_288_activity</obj_property>
+            <obj_property name="ObjectShortName">grp_UpConv_Fused_Row_8_128_128_120_60_Pipeline_LOAD_G_fu_288_activity</obj_property>
          </wvobject>
-         <wvobject type="protoinst" fp_name="/apatb_upconv_core_top_ucb3_top/AESL_inst_upconv_core_top_ucb3/grp_UpConv_Fused_Row_8_128_128_120_60_s_fu_232/grp_UpConv_Fused_Row_8_128_128_120_60_Pipeline_PIXEL_NORM_fu_308/grp_UpConv_Fused_Row_8_128_128_120_60_Pipeline_PIXEL_NORM_fu_308_activity">
-            <obj_property name="ElementShortName">grp_UpConv_Fused_Row_8_128_128_120_60_Pipeline_PIXEL_NORM_fu_308_activity</obj_property>
-            <obj_property name="ObjectShortName">grp_UpConv_Fused_Row_8_128_128_120_60_Pipeline_PIXEL_NORM_fu_308_activity</obj_property>
+         <wvobject type="protoinst" fp_name="/apatb_upconv_core_top_ucb3_top/AESL_inst_upconv_core_top_ucb3/grp_UpConv_Fused_Row_8_128_128_120_60_s_fu_232/grp_UpConv_Fused_Row_8_128_128_120_60_Pipeline_PIXEL_STATS_fu_296/grp_UpConv_Fused_Row_8_128_128_120_60_Pipeline_PIXEL_STATS_fu_296_activity">
+            <obj_property name="ElementShortName">grp_UpConv_Fused_Row_8_128_128_120_60_Pipeline_PIXEL_STATS_fu_296_activity</obj_property>
+            <obj_property name="ObjectShortName">grp_UpConv_Fused_Row_8_128_128_120_60_Pipeline_PIXEL_STATS_fu_296_activity</obj_property>
+         </wvobject>
+         <wvobject type="protoinst" fp_name="/apatb_upconv_core_top_ucb3_top/AESL_inst_upconv_core_top_ucb3/grp_UpConv_Fused_Row_8_128_128_120_60_s_fu_232/grp_UpConv_Fused_Row_8_128_128_120_60_Pipeline_LOAD_BE_fu_338/grp_UpConv_Fused_Row_8_128_128_120_60_Pipeline_LOAD_BE_fu_338_activity">
+            <obj_property name="ElementShortName">grp_UpConv_Fused_Row_8_128_128_120_60_Pipeline_LOAD_BE_fu_338_activity</obj_property>
+            <obj_property name="ObjectShortName">grp_UpConv_Fused_Row_8_128_128_120_60_Pipeline_LOAD_BE_fu_338_activity</obj_property>
+         </wvobject>
+         <wvobject type="protoinst" fp_name="/apatb_upconv_core_top_ucb3_top/AESL_inst_upconv_core_top_ucb3/grp_UpConv_Fused_Row_8_128_128_120_60_s_fu_232/grp_UpConv_Fused_Row_8_128_128_120_60_Pipeline_PIXEL_NORM_fu_346/grp_UpConv_Fused_Row_8_128_128_120_60_Pipeline_PIXEL_NORM_fu_346_activity">
+            <obj_property name="ElementShortName">grp_UpConv_Fused_Row_8_128_128_120_60_Pipeline_PIXEL_NORM_fu_346_activity</obj_property>
+            <obj_property name="ObjectShortName">grp_UpConv_Fused_Row_8_128_128_120_60_Pipeline_PIXEL_NORM_fu_346_activity</obj_property>
          </wvobject>
          <wvobject type="group" fp_name="grp_UpConv_Fused_Row_8_128_128_120_60_s_fu_232_Handshake_group">
             <obj_property name="label">Block-level handshake</obj_property>
@@ -293,170 +333,210 @@
                <obj_property name="ObjectShortName">ap_done</obj_property>
             </wvobject>
          </wvobject>
-         <wvobject type="group" fp_name="grp_UpConv_Fused_Row_8_128_128_120_60_Pipeline_RESET_ROW_ACC_fu_172_group">
-            <obj_property name="label">grp_UpConv_Fused_Row_8_128_128_120_60_Pipeline_RESET_ROW_ACC_fu_172</obj_property>
+         <wvobject type="group" fp_name="grp_UpConv_Fused_Row_8_128_128_120_60_Pipeline_RESET_ROW_ACC_fu_201_group">
+            <obj_property name="label">grp_UpConv_Fused_Row_8_128_128_120_60_Pipeline_RESET_ROW_ACC_fu_201</obj_property>
             <obj_property name="DisplayName">label</obj_property>
-            <wvobject type="group" fp_name="grp_UpConv_Fused_Row_8_128_128_120_60_Pipeline_RESET_ROW_ACC_fu_172_Handshake_group">
+            <wvobject type="group" fp_name="grp_UpConv_Fused_Row_8_128_128_120_60_Pipeline_RESET_ROW_ACC_fu_201_Handshake_group">
                <obj_property name="label">Block-level handshake</obj_property>
                <obj_property name="DisplayName">label</obj_property>
-               <wvobject type="logic" fp_name="/apatb_upconv_core_top_ucb3_top/AESL_inst_upconv_core_top_ucb3/grp_UpConv_Fused_Row_8_128_128_120_60_s_fu_232/grp_UpConv_Fused_Row_8_128_128_120_60_Pipeline_RESET_ROW_ACC_fu_172/ap_start">
+               <wvobject type="logic" fp_name="/apatb_upconv_core_top_ucb3_top/AESL_inst_upconv_core_top_ucb3/grp_UpConv_Fused_Row_8_128_128_120_60_s_fu_232/grp_UpConv_Fused_Row_8_128_128_120_60_Pipeline_RESET_ROW_ACC_fu_201/ap_start">
                   <obj_property name="ElementShortName">ap_start</obj_property>
                   <obj_property name="ObjectShortName">ap_start</obj_property>
                </wvobject>
-               <wvobject type="logic" fp_name="/apatb_upconv_core_top_ucb3_top/AESL_inst_upconv_core_top_ucb3/grp_UpConv_Fused_Row_8_128_128_120_60_s_fu_232/grp_UpConv_Fused_Row_8_128_128_120_60_Pipeline_RESET_ROW_ACC_fu_172/ap_ready">
+               <wvobject type="logic" fp_name="/apatb_upconv_core_top_ucb3_top/AESL_inst_upconv_core_top_ucb3/grp_UpConv_Fused_Row_8_128_128_120_60_s_fu_232/grp_UpConv_Fused_Row_8_128_128_120_60_Pipeline_RESET_ROW_ACC_fu_201/ap_ready">
                   <obj_property name="ElementShortName">ap_ready</obj_property>
                   <obj_property name="ObjectShortName">ap_ready</obj_property>
                </wvobject>
-               <wvobject type="logic" fp_name="/apatb_upconv_core_top_ucb3_top/AESL_inst_upconv_core_top_ucb3/grp_UpConv_Fused_Row_8_128_128_120_60_s_fu_232/grp_UpConv_Fused_Row_8_128_128_120_60_Pipeline_RESET_ROW_ACC_fu_172/ap_done">
+               <wvobject type="logic" fp_name="/apatb_upconv_core_top_ucb3_top/AESL_inst_upconv_core_top_ucb3/grp_UpConv_Fused_Row_8_128_128_120_60_s_fu_232/grp_UpConv_Fused_Row_8_128_128_120_60_Pipeline_RESET_ROW_ACC_fu_201/ap_done">
                   <obj_property name="ElementShortName">ap_done</obj_property>
                   <obj_property name="ObjectShortName">ap_done</obj_property>
                </wvobject>
             </wvobject>
          </wvobject>
-         <wvobject type="group" fp_name="grp_UpConv_Fused_Row_8_128_128_120_60_Pipeline_LOAD_PARAMS_fu_208_group">
-            <obj_property name="label">grp_UpConv_Fused_Row_8_128_128_120_60_Pipeline_LOAD_PARAMS_fu_208</obj_property>
+         <wvobject type="group" fp_name="grp_UpConv_Fused_Row_8_128_128_120_60_Outline_TILE_LOOP_fu_237_group">
+            <obj_property name="label">grp_UpConv_Fused_Row_8_128_128_120_60_Outline_TILE_LOOP_fu_237</obj_property>
             <obj_property name="DisplayName">label</obj_property>
-            <wvobject type="group" fp_name="grp_UpConv_Fused_Row_8_128_128_120_60_Pipeline_LOAD_PARAMS_fu_208_Handshake_group">
+            <wvobject type="protoinst" fp_name="/apatb_upconv_core_top_ucb3_top/AESL_inst_upconv_core_top_ucb3/grp_UpConv_Fused_Row_8_128_128_120_60_s_fu_232/grp_UpConv_Fused_Row_8_128_128_120_60_Outline_TILE_LOOP_fu_237/grp_UpConv_Fused_Row_8_128_128_120_60_Pipeline_W_FLAT_fu_236/grp_UpConv_Fused_Row_8_128_128_120_60_Pipeline_W_FLAT_fu_236_activity">
+               <obj_property name="ElementShortName">grp_UpConv_Fused_Row_8_128_128_120_60_Pipeline_W_FLAT_fu_236_activity</obj_property>
+               <obj_property name="ObjectShortName">grp_UpConv_Fused_Row_8_128_128_120_60_Pipeline_W_FLAT_fu_236_activity</obj_property>
+            </wvobject>
+            <wvobject type="protoinst" fp_name="/apatb_upconv_core_top_ucb3_top/AESL_inst_upconv_core_top_ucb3/grp_UpConv_Fused_Row_8_128_128_120_60_s_fu_232/grp_UpConv_Fused_Row_8_128_128_120_60_Outline_TILE_LOOP_fu_237/grp_UpConv_Fused_Row_8_128_128_120_60_Pipeline_KW_LOOP_FLAT_LOOP_fu_252/grp_UpConv_Fused_Row_8_128_128_120_60_Pipeline_KW_LOOP_FLAT_LOOP_fu_252_activity">
+               <obj_property name="ElementShortName">grp_UpConv_Fused_Row_8_128_128_120_60_Pipeline_KW_LOOP_FLAT_LOOP_fu_252_activity</obj_property>
+               <obj_property name="ObjectShortName">grp_UpConv_Fused_Row_8_128_128_120_60_Pipeline_KW_LOOP_FLAT_LOOP_fu_252_activity</obj_property>
+            </wvobject>
+            <wvobject type="group" fp_name="grp_UpConv_Fused_Row_8_128_128_120_60_Outline_TILE_LOOP_fu_237_Handshake_group">
                <obj_property name="label">Block-level handshake</obj_property>
                <obj_property name="DisplayName">label</obj_property>
-               <wvobject type="logic" fp_name="/apatb_upconv_core_top_ucb3_top/AESL_inst_upconv_core_top_ucb3/grp_UpConv_Fused_Row_8_128_128_120_60_s_fu_232/grp_UpConv_Fused_Row_8_128_128_120_60_Pipeline_LOAD_PARAMS_fu_208/ap_start">
+               <wvobject type="logic" fp_name="/apatb_upconv_core_top_ucb3_top/AESL_inst_upconv_core_top_ucb3/grp_UpConv_Fused_Row_8_128_128_120_60_s_fu_232/grp_UpConv_Fused_Row_8_128_128_120_60_Outline_TILE_LOOP_fu_237/ap_start">
                   <obj_property name="ElementShortName">ap_start</obj_property>
                   <obj_property name="ObjectShortName">ap_start</obj_property>
                </wvobject>
-               <wvobject type="logic" fp_name="/apatb_upconv_core_top_ucb3_top/AESL_inst_upconv_core_top_ucb3/grp_UpConv_Fused_Row_8_128_128_120_60_s_fu_232/grp_UpConv_Fused_Row_8_128_128_120_60_Pipeline_LOAD_PARAMS_fu_208/ap_ready">
+               <wvobject type="logic" fp_name="/apatb_upconv_core_top_ucb3_top/AESL_inst_upconv_core_top_ucb3/grp_UpConv_Fused_Row_8_128_128_120_60_s_fu_232/grp_UpConv_Fused_Row_8_128_128_120_60_Outline_TILE_LOOP_fu_237/ap_ready">
                   <obj_property name="ElementShortName">ap_ready</obj_property>
                   <obj_property name="ObjectShortName">ap_ready</obj_property>
                </wvobject>
-               <wvobject type="logic" fp_name="/apatb_upconv_core_top_ucb3_top/AESL_inst_upconv_core_top_ucb3/grp_UpConv_Fused_Row_8_128_128_120_60_s_fu_232/grp_UpConv_Fused_Row_8_128_128_120_60_Pipeline_LOAD_PARAMS_fu_208/ap_done">
+               <wvobject type="logic" fp_name="/apatb_upconv_core_top_ucb3_top/AESL_inst_upconv_core_top_ucb3/grp_UpConv_Fused_Row_8_128_128_120_60_s_fu_232/grp_UpConv_Fused_Row_8_128_128_120_60_Outline_TILE_LOOP_fu_237/ap_done">
                   <obj_property name="ElementShortName">ap_done</obj_property>
                   <obj_property name="ObjectShortName">ap_done</obj_property>
                </wvobject>
             </wvobject>
-         </wvobject>
-         <wvobject type="group" fp_name="grp_UpConv_Fused_Row_8_128_128_120_60_Outline_TILE_LOOP_fu_223_group">
-            <obj_property name="label">grp_UpConv_Fused_Row_8_128_128_120_60_Outline_TILE_LOOP_fu_223</obj_property>
-            <obj_property name="DisplayName">label</obj_property>
-            <wvobject type="protoinst" fp_name="/apatb_upconv_core_top_ucb3_top/AESL_inst_upconv_core_top_ucb3/grp_UpConv_Fused_Row_8_128_128_120_60_s_fu_232/grp_UpConv_Fused_Row_8_128_128_120_60_Outline_TILE_LOOP_fu_223/grp_UpConv_Fused_Row_8_128_128_120_60_Pipeline_W_FLAT_fu_207/grp_UpConv_Fused_Row_8_128_128_120_60_Pipeline_W_FLAT_fu_207_activity">
-               <obj_property name="ElementShortName">grp_UpConv_Fused_Row_8_128_128_120_60_Pipeline_W_FLAT_fu_207_activity</obj_property>
-               <obj_property name="ObjectShortName">grp_UpConv_Fused_Row_8_128_128_120_60_Pipeline_W_FLAT_fu_207_activity</obj_property>
-            </wvobject>
-            <wvobject type="protoinst" fp_name="/apatb_upconv_core_top_ucb3_top/AESL_inst_upconv_core_top_ucb3/grp_UpConv_Fused_Row_8_128_128_120_60_s_fu_232/grp_UpConv_Fused_Row_8_128_128_120_60_Outline_TILE_LOOP_fu_223/grp_UpConv_Fused_Row_8_128_128_120_60_Pipeline_KW_LOOP_FLAT_LOOP_fu_224/grp_UpConv_Fused_Row_8_128_128_120_60_Pipeline_KW_LOOP_FLAT_LOOP_fu_224_activity">
-               <obj_property name="ElementShortName">grp_UpConv_Fused_Row_8_128_128_120_60_Pipeline_KW_LOOP_FLAT_LOOP_fu_224_activity</obj_property>
-               <obj_property name="ObjectShortName">grp_UpConv_Fused_Row_8_128_128_120_60_Pipeline_KW_LOOP_FLAT_LOOP_fu_224_activity</obj_property>
-            </wvobject>
-            <wvobject type="group" fp_name="grp_UpConv_Fused_Row_8_128_128_120_60_Outline_TILE_LOOP_fu_223_Handshake_group">
-               <obj_property name="label">Block-level handshake</obj_property>
+            <wvobject type="group" fp_name="grp_UpConv_Fused_Row_8_128_128_120_60_Pipeline_W_FLAT_fu_236_group">
+               <obj_property name="label">grp_UpConv_Fused_Row_8_128_128_120_60_Pipeline_W_FLAT_fu_236</obj_property>
                <obj_property name="DisplayName">label</obj_property>
-               <wvobject type="logic" fp_name="/apatb_upconv_core_top_ucb3_top/AESL_inst_upconv_core_top_ucb3/grp_UpConv_Fused_Row_8_128_128_120_60_s_fu_232/grp_UpConv_Fused_Row_8_128_128_120_60_Outline_TILE_LOOP_fu_223/ap_start">
-                  <obj_property name="ElementShortName">ap_start</obj_property>
-                  <obj_property name="ObjectShortName">ap_start</obj_property>
-               </wvobject>
-               <wvobject type="logic" fp_name="/apatb_upconv_core_top_ucb3_top/AESL_inst_upconv_core_top_ucb3/grp_UpConv_Fused_Row_8_128_128_120_60_s_fu_232/grp_UpConv_Fused_Row_8_128_128_120_60_Outline_TILE_LOOP_fu_223/ap_ready">
-                  <obj_property name="ElementShortName">ap_ready</obj_property>
-                  <obj_property name="ObjectShortName">ap_ready</obj_property>
-               </wvobject>
-               <wvobject type="logic" fp_name="/apatb_upconv_core_top_ucb3_top/AESL_inst_upconv_core_top_ucb3/grp_UpConv_Fused_Row_8_128_128_120_60_s_fu_232/grp_UpConv_Fused_Row_8_128_128_120_60_Outline_TILE_LOOP_fu_223/ap_done">
-                  <obj_property name="ElementShortName">ap_done</obj_property>
-                  <obj_property name="ObjectShortName">ap_done</obj_property>
-               </wvobject>
-            </wvobject>
-            <wvobject type="group" fp_name="grp_UpConv_Fused_Row_8_128_128_120_60_Pipeline_W_FLAT_fu_207_group">
-               <obj_property name="label">grp_UpConv_Fused_Row_8_128_128_120_60_Pipeline_W_FLAT_fu_207</obj_property>
-               <obj_property name="DisplayName">label</obj_property>
-               <wvobject type="group" fp_name="grp_UpConv_Fused_Row_8_128_128_120_60_Pipeline_W_FLAT_fu_207_Handshake_group">
+               <wvobject type="group" fp_name="grp_UpConv_Fused_Row_8_128_128_120_60_Pipeline_W_FLAT_fu_236_Handshake_group">
                   <obj_property name="label">Block-level handshake</obj_property>
                   <obj_property name="DisplayName">label</obj_property>
-                  <wvobject type="logic" fp_name="/apatb_upconv_core_top_ucb3_top/AESL_inst_upconv_core_top_ucb3/grp_UpConv_Fused_Row_8_128_128_120_60_s_fu_232/grp_UpConv_Fused_Row_8_128_128_120_60_Outline_TILE_LOOP_fu_223/grp_UpConv_Fused_Row_8_128_128_120_60_Pipeline_W_FLAT_fu_207/ap_start">
+                  <wvobject type="logic" fp_name="/apatb_upconv_core_top_ucb3_top/AESL_inst_upconv_core_top_ucb3/grp_UpConv_Fused_Row_8_128_128_120_60_s_fu_232/grp_UpConv_Fused_Row_8_128_128_120_60_Outline_TILE_LOOP_fu_237/grp_UpConv_Fused_Row_8_128_128_120_60_Pipeline_W_FLAT_fu_236/ap_start">
                      <obj_property name="ElementShortName">ap_start</obj_property>
                      <obj_property name="ObjectShortName">ap_start</obj_property>
                   </wvobject>
-                  <wvobject type="logic" fp_name="/apatb_upconv_core_top_ucb3_top/AESL_inst_upconv_core_top_ucb3/grp_UpConv_Fused_Row_8_128_128_120_60_s_fu_232/grp_UpConv_Fused_Row_8_128_128_120_60_Outline_TILE_LOOP_fu_223/grp_UpConv_Fused_Row_8_128_128_120_60_Pipeline_W_FLAT_fu_207/ap_ready">
+                  <wvobject type="logic" fp_name="/apatb_upconv_core_top_ucb3_top/AESL_inst_upconv_core_top_ucb3/grp_UpConv_Fused_Row_8_128_128_120_60_s_fu_232/grp_UpConv_Fused_Row_8_128_128_120_60_Outline_TILE_LOOP_fu_237/grp_UpConv_Fused_Row_8_128_128_120_60_Pipeline_W_FLAT_fu_236/ap_ready">
                      <obj_property name="ElementShortName">ap_ready</obj_property>
                      <obj_property name="ObjectShortName">ap_ready</obj_property>
                   </wvobject>
-                  <wvobject type="logic" fp_name="/apatb_upconv_core_top_ucb3_top/AESL_inst_upconv_core_top_ucb3/grp_UpConv_Fused_Row_8_128_128_120_60_s_fu_232/grp_UpConv_Fused_Row_8_128_128_120_60_Outline_TILE_LOOP_fu_223/grp_UpConv_Fused_Row_8_128_128_120_60_Pipeline_W_FLAT_fu_207/ap_done">
+                  <wvobject type="logic" fp_name="/apatb_upconv_core_top_ucb3_top/AESL_inst_upconv_core_top_ucb3/grp_UpConv_Fused_Row_8_128_128_120_60_s_fu_232/grp_UpConv_Fused_Row_8_128_128_120_60_Outline_TILE_LOOP_fu_237/grp_UpConv_Fused_Row_8_128_128_120_60_Pipeline_W_FLAT_fu_236/ap_done">
                      <obj_property name="ElementShortName">ap_done</obj_property>
                      <obj_property name="ObjectShortName">ap_done</obj_property>
                   </wvobject>
                </wvobject>
             </wvobject>
-            <wvobject type="group" fp_name="grp_UpConv_Fused_Row_8_128_128_120_60_Pipeline_KW_LOOP_FLAT_LOOP_fu_224_group">
-               <obj_property name="label">grp_UpConv_Fused_Row_8_128_128_120_60_Pipeline_KW_LOOP_FLAT_LOOP_fu_224</obj_property>
+            <wvobject type="group" fp_name="grp_UpConv_Fused_Row_8_128_128_120_60_Pipeline_KW_LOOP_FLAT_LOOP_fu_252_group">
+               <obj_property name="label">grp_UpConv_Fused_Row_8_128_128_120_60_Pipeline_KW_LOOP_FLAT_LOOP_fu_252</obj_property>
                <obj_property name="DisplayName">label</obj_property>
-               <wvobject type="group" fp_name="grp_UpConv_Fused_Row_8_128_128_120_60_Pipeline_KW_LOOP_FLAT_LOOP_fu_224_Handshake_group">
+               <wvobject type="group" fp_name="grp_UpConv_Fused_Row_8_128_128_120_60_Pipeline_KW_LOOP_FLAT_LOOP_fu_252_Handshake_group">
                   <obj_property name="label">Block-level handshake</obj_property>
                   <obj_property name="DisplayName">label</obj_property>
-                  <wvobject type="logic" fp_name="/apatb_upconv_core_top_ucb3_top/AESL_inst_upconv_core_top_ucb3/grp_UpConv_Fused_Row_8_128_128_120_60_s_fu_232/grp_UpConv_Fused_Row_8_128_128_120_60_Outline_TILE_LOOP_fu_223/grp_UpConv_Fused_Row_8_128_128_120_60_Pipeline_KW_LOOP_FLAT_LOOP_fu_224/ap_start">
+                  <wvobject type="logic" fp_name="/apatb_upconv_core_top_ucb3_top/AESL_inst_upconv_core_top_ucb3/grp_UpConv_Fused_Row_8_128_128_120_60_s_fu_232/grp_UpConv_Fused_Row_8_128_128_120_60_Outline_TILE_LOOP_fu_237/grp_UpConv_Fused_Row_8_128_128_120_60_Pipeline_KW_LOOP_FLAT_LOOP_fu_252/ap_start">
                      <obj_property name="ElementShortName">ap_start</obj_property>
                      <obj_property name="ObjectShortName">ap_start</obj_property>
                   </wvobject>
-                  <wvobject type="logic" fp_name="/apatb_upconv_core_top_ucb3_top/AESL_inst_upconv_core_top_ucb3/grp_UpConv_Fused_Row_8_128_128_120_60_s_fu_232/grp_UpConv_Fused_Row_8_128_128_120_60_Outline_TILE_LOOP_fu_223/grp_UpConv_Fused_Row_8_128_128_120_60_Pipeline_KW_LOOP_FLAT_LOOP_fu_224/ap_ready">
+                  <wvobject type="logic" fp_name="/apatb_upconv_core_top_ucb3_top/AESL_inst_upconv_core_top_ucb3/grp_UpConv_Fused_Row_8_128_128_120_60_s_fu_232/grp_UpConv_Fused_Row_8_128_128_120_60_Outline_TILE_LOOP_fu_237/grp_UpConv_Fused_Row_8_128_128_120_60_Pipeline_KW_LOOP_FLAT_LOOP_fu_252/ap_ready">
                      <obj_property name="ElementShortName">ap_ready</obj_property>
                      <obj_property name="ObjectShortName">ap_ready</obj_property>
                   </wvobject>
-                  <wvobject type="logic" fp_name="/apatb_upconv_core_top_ucb3_top/AESL_inst_upconv_core_top_ucb3/grp_UpConv_Fused_Row_8_128_128_120_60_s_fu_232/grp_UpConv_Fused_Row_8_128_128_120_60_Outline_TILE_LOOP_fu_223/grp_UpConv_Fused_Row_8_128_128_120_60_Pipeline_KW_LOOP_FLAT_LOOP_fu_224/ap_done">
+                  <wvobject type="logic" fp_name="/apatb_upconv_core_top_ucb3_top/AESL_inst_upconv_core_top_ucb3/grp_UpConv_Fused_Row_8_128_128_120_60_s_fu_232/grp_UpConv_Fused_Row_8_128_128_120_60_Outline_TILE_LOOP_fu_237/grp_UpConv_Fused_Row_8_128_128_120_60_Pipeline_KW_LOOP_FLAT_LOOP_fu_252/ap_done">
                      <obj_property name="ElementShortName">ap_done</obj_property>
                      <obj_property name="ObjectShortName">ap_done</obj_property>
                   </wvobject>
                </wvobject>
             </wvobject>
          </wvobject>
-         <wvobject type="group" fp_name="grp_UpConv_Fused_Row_8_128_128_120_60_Pipeline_PIXEL_STATS_fu_266_group">
-            <obj_property name="label">grp_UpConv_Fused_Row_8_128_128_120_60_Pipeline_PIXEL_STATS_fu_266</obj_property>
+         <wvobject type="group" fp_name="grp_UpConv_Fused_Row_8_128_128_120_60_Pipeline_LOAD_B_fu_280_group">
+            <obj_property name="label">grp_UpConv_Fused_Row_8_128_128_120_60_Pipeline_LOAD_B_fu_280</obj_property>
             <obj_property name="DisplayName">label</obj_property>
-            <wvobject type="group" fp_name="grp_UpConv_Fused_Row_8_128_128_120_60_Pipeline_PIXEL_STATS_fu_266_Handshake_group">
+            <wvobject type="group" fp_name="grp_UpConv_Fused_Row_8_128_128_120_60_Pipeline_LOAD_B_fu_280_Handshake_group">
                <obj_property name="label">Block-level handshake</obj_property>
                <obj_property name="DisplayName">label</obj_property>
-               <wvobject type="logic" fp_name="/apatb_upconv_core_top_ucb3_top/AESL_inst_upconv_core_top_ucb3/grp_UpConv_Fused_Row_8_128_128_120_60_s_fu_232/grp_UpConv_Fused_Row_8_128_128_120_60_Pipeline_PIXEL_STATS_fu_266/ap_start">
+               <wvobject type="logic" fp_name="/apatb_upconv_core_top_ucb3_top/AESL_inst_upconv_core_top_ucb3/grp_UpConv_Fused_Row_8_128_128_120_60_s_fu_232/grp_UpConv_Fused_Row_8_128_128_120_60_Pipeline_LOAD_B_fu_280/ap_start">
                   <obj_property name="ElementShortName">ap_start</obj_property>
                   <obj_property name="ObjectShortName">ap_start</obj_property>
                </wvobject>
-               <wvobject type="logic" fp_name="/apatb_upconv_core_top_ucb3_top/AESL_inst_upconv_core_top_ucb3/grp_UpConv_Fused_Row_8_128_128_120_60_s_fu_232/grp_UpConv_Fused_Row_8_128_128_120_60_Pipeline_PIXEL_STATS_fu_266/ap_ready">
+               <wvobject type="logic" fp_name="/apatb_upconv_core_top_ucb3_top/AESL_inst_upconv_core_top_ucb3/grp_UpConv_Fused_Row_8_128_128_120_60_s_fu_232/grp_UpConv_Fused_Row_8_128_128_120_60_Pipeline_LOAD_B_fu_280/ap_ready">
                   <obj_property name="ElementShortName">ap_ready</obj_property>
                   <obj_property name="ObjectShortName">ap_ready</obj_property>
                </wvobject>
-               <wvobject type="logic" fp_name="/apatb_upconv_core_top_ucb3_top/AESL_inst_upconv_core_top_ucb3/grp_UpConv_Fused_Row_8_128_128_120_60_s_fu_232/grp_UpConv_Fused_Row_8_128_128_120_60_Pipeline_PIXEL_STATS_fu_266/ap_done">
+               <wvobject type="logic" fp_name="/apatb_upconv_core_top_ucb3_top/AESL_inst_upconv_core_top_ucb3/grp_UpConv_Fused_Row_8_128_128_120_60_s_fu_232/grp_UpConv_Fused_Row_8_128_128_120_60_Pipeline_LOAD_B_fu_280/ap_done">
                   <obj_property name="ElementShortName">ap_done</obj_property>
                   <obj_property name="ObjectShortName">ap_done</obj_property>
                </wvobject>
             </wvobject>
          </wvobject>
-         <wvobject type="group" fp_name="grp_UpConv_Fused_Row_8_128_128_120_60_Pipeline_PIXEL_NORM_fu_308_group">
-            <obj_property name="label">grp_UpConv_Fused_Row_8_128_128_120_60_Pipeline_PIXEL_NORM_fu_308</obj_property>
+         <wvobject type="group" fp_name="grp_UpConv_Fused_Row_8_128_128_120_60_Pipeline_LOAD_G_fu_288_group">
+            <obj_property name="label">grp_UpConv_Fused_Row_8_128_128_120_60_Pipeline_LOAD_G_fu_288</obj_property>
             <obj_property name="DisplayName">label</obj_property>
-            <wvobject type="group" fp_name="grp_UpConv_Fused_Row_8_128_128_120_60_Pipeline_PIXEL_NORM_fu_308_Handshake_group">
+            <wvobject type="group" fp_name="grp_UpConv_Fused_Row_8_128_128_120_60_Pipeline_LOAD_G_fu_288_Handshake_group">
                <obj_property name="label">Block-level handshake</obj_property>
                <obj_property name="DisplayName">label</obj_property>
-               <wvobject type="logic" fp_name="/apatb_upconv_core_top_ucb3_top/AESL_inst_upconv_core_top_ucb3/grp_UpConv_Fused_Row_8_128_128_120_60_s_fu_232/grp_UpConv_Fused_Row_8_128_128_120_60_Pipeline_PIXEL_NORM_fu_308/ap_start">
+               <wvobject type="logic" fp_name="/apatb_upconv_core_top_ucb3_top/AESL_inst_upconv_core_top_ucb3/grp_UpConv_Fused_Row_8_128_128_120_60_s_fu_232/grp_UpConv_Fused_Row_8_128_128_120_60_Pipeline_LOAD_G_fu_288/ap_start">
                   <obj_property name="ElementShortName">ap_start</obj_property>
                   <obj_property name="ObjectShortName">ap_start</obj_property>
                </wvobject>
-               <wvobject type="logic" fp_name="/apatb_upconv_core_top_ucb3_top/AESL_inst_upconv_core_top_ucb3/grp_UpConv_Fused_Row_8_128_128_120_60_s_fu_232/grp_UpConv_Fused_Row_8_128_128_120_60_Pipeline_PIXEL_NORM_fu_308/ap_ready">
+               <wvobject type="logic" fp_name="/apatb_upconv_core_top_ucb3_top/AESL_inst_upconv_core_top_ucb3/grp_UpConv_Fused_Row_8_128_128_120_60_s_fu_232/grp_UpConv_Fused_Row_8_128_128_120_60_Pipeline_LOAD_G_fu_288/ap_ready">
                   <obj_property name="ElementShortName">ap_ready</obj_property>
                   <obj_property name="ObjectShortName">ap_ready</obj_property>
                </wvobject>
-               <wvobject type="logic" fp_name="/apatb_upconv_core_top_ucb3_top/AESL_inst_upconv_core_top_ucb3/grp_UpConv_Fused_Row_8_128_128_120_60_s_fu_232/grp_UpConv_Fused_Row_8_128_128_120_60_Pipeline_PIXEL_NORM_fu_308/ap_done">
+               <wvobject type="logic" fp_name="/apatb_upconv_core_top_ucb3_top/AESL_inst_upconv_core_top_ucb3/grp_UpConv_Fused_Row_8_128_128_120_60_s_fu_232/grp_UpConv_Fused_Row_8_128_128_120_60_Pipeline_LOAD_G_fu_288/ap_done">
+                  <obj_property name="ElementShortName">ap_done</obj_property>
+                  <obj_property name="ObjectShortName">ap_done</obj_property>
+               </wvobject>
+            </wvobject>
+         </wvobject>
+         <wvobject type="group" fp_name="grp_UpConv_Fused_Row_8_128_128_120_60_Pipeline_PIXEL_STATS_fu_296_group">
+            <obj_property name="label">grp_UpConv_Fused_Row_8_128_128_120_60_Pipeline_PIXEL_STATS_fu_296</obj_property>
+            <obj_property name="DisplayName">label</obj_property>
+            <wvobject type="group" fp_name="grp_UpConv_Fused_Row_8_128_128_120_60_Pipeline_PIXEL_STATS_fu_296_Handshake_group">
+               <obj_property name="label">Block-level handshake</obj_property>
+               <obj_property name="DisplayName">label</obj_property>
+               <wvobject type="logic" fp_name="/apatb_upconv_core_top_ucb3_top/AESL_inst_upconv_core_top_ucb3/grp_UpConv_Fused_Row_8_128_128_120_60_s_fu_232/grp_UpConv_Fused_Row_8_128_128_120_60_Pipeline_PIXEL_STATS_fu_296/ap_start">
+                  <obj_property name="ElementShortName">ap_start</obj_property>
+                  <obj_property name="ObjectShortName">ap_start</obj_property>
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_upconv_core_top_ucb3_top/AESL_inst_upconv_core_top_ucb3/grp_UpConv_Fused_Row_8_128_128_120_60_s_fu_232/grp_UpConv_Fused_Row_8_128_128_120_60_Pipeline_PIXEL_STATS_fu_296/ap_ready">
+                  <obj_property name="ElementShortName">ap_ready</obj_property>
+                  <obj_property name="ObjectShortName">ap_ready</obj_property>
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_upconv_core_top_ucb3_top/AESL_inst_upconv_core_top_ucb3/grp_UpConv_Fused_Row_8_128_128_120_60_s_fu_232/grp_UpConv_Fused_Row_8_128_128_120_60_Pipeline_PIXEL_STATS_fu_296/ap_done">
+                  <obj_property name="ElementShortName">ap_done</obj_property>
+                  <obj_property name="ObjectShortName">ap_done</obj_property>
+               </wvobject>
+            </wvobject>
+         </wvobject>
+         <wvobject type="group" fp_name="grp_UpConv_Fused_Row_8_128_128_120_60_Pipeline_LOAD_BE_fu_338_group">
+            <obj_property name="label">grp_UpConv_Fused_Row_8_128_128_120_60_Pipeline_LOAD_BE_fu_338</obj_property>
+            <obj_property name="DisplayName">label</obj_property>
+            <wvobject type="group" fp_name="grp_UpConv_Fused_Row_8_128_128_120_60_Pipeline_LOAD_BE_fu_338_Handshake_group">
+               <obj_property name="label">Block-level handshake</obj_property>
+               <obj_property name="DisplayName">label</obj_property>
+               <wvobject type="logic" fp_name="/apatb_upconv_core_top_ucb3_top/AESL_inst_upconv_core_top_ucb3/grp_UpConv_Fused_Row_8_128_128_120_60_s_fu_232/grp_UpConv_Fused_Row_8_128_128_120_60_Pipeline_LOAD_BE_fu_338/ap_start">
+                  <obj_property name="ElementShortName">ap_start</obj_property>
+                  <obj_property name="ObjectShortName">ap_start</obj_property>
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_upconv_core_top_ucb3_top/AESL_inst_upconv_core_top_ucb3/grp_UpConv_Fused_Row_8_128_128_120_60_s_fu_232/grp_UpConv_Fused_Row_8_128_128_120_60_Pipeline_LOAD_BE_fu_338/ap_ready">
+                  <obj_property name="ElementShortName">ap_ready</obj_property>
+                  <obj_property name="ObjectShortName">ap_ready</obj_property>
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_upconv_core_top_ucb3_top/AESL_inst_upconv_core_top_ucb3/grp_UpConv_Fused_Row_8_128_128_120_60_s_fu_232/grp_UpConv_Fused_Row_8_128_128_120_60_Pipeline_LOAD_BE_fu_338/ap_done">
+                  <obj_property name="ElementShortName">ap_done</obj_property>
+                  <obj_property name="ObjectShortName">ap_done</obj_property>
+               </wvobject>
+            </wvobject>
+         </wvobject>
+         <wvobject type="group" fp_name="grp_UpConv_Fused_Row_8_128_128_120_60_Pipeline_PIXEL_NORM_fu_346_group">
+            <obj_property name="label">grp_UpConv_Fused_Row_8_128_128_120_60_Pipeline_PIXEL_NORM_fu_346</obj_property>
+            <obj_property name="DisplayName">label</obj_property>
+            <wvobject type="group" fp_name="grp_UpConv_Fused_Row_8_128_128_120_60_Pipeline_PIXEL_NORM_fu_346_Handshake_group">
+               <obj_property name="label">Block-level handshake</obj_property>
+               <obj_property name="DisplayName">label</obj_property>
+               <wvobject type="logic" fp_name="/apatb_upconv_core_top_ucb3_top/AESL_inst_upconv_core_top_ucb3/grp_UpConv_Fused_Row_8_128_128_120_60_s_fu_232/grp_UpConv_Fused_Row_8_128_128_120_60_Pipeline_PIXEL_NORM_fu_346/ap_start">
+                  <obj_property name="ElementShortName">ap_start</obj_property>
+                  <obj_property name="ObjectShortName">ap_start</obj_property>
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_upconv_core_top_ucb3_top/AESL_inst_upconv_core_top_ucb3/grp_UpConv_Fused_Row_8_128_128_120_60_s_fu_232/grp_UpConv_Fused_Row_8_128_128_120_60_Pipeline_PIXEL_NORM_fu_346/ap_ready">
+                  <obj_property name="ElementShortName">ap_ready</obj_property>
+                  <obj_property name="ObjectShortName">ap_ready</obj_property>
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_upconv_core_top_ucb3_top/AESL_inst_upconv_core_top_ucb3/grp_UpConv_Fused_Row_8_128_128_120_60_s_fu_232/grp_UpConv_Fused_Row_8_128_128_120_60_Pipeline_PIXEL_NORM_fu_346/ap_done">
                   <obj_property name="ElementShortName">ap_done</obj_property>
                   <obj_property name="ObjectShortName">ap_done</obj_property>
                </wvobject>
             </wvobject>
          </wvobject>
       </wvobject>
-      <wvobject type="group" fp_name="grp_upconv_core_top_ucb3_Pipeline_LOAD_ROW_VITIS_LOOP_328_2_fu_289_group">
-         <obj_property name="label">grp_upconv_core_top_ucb3_Pipeline_LOAD_ROW_VITIS_LOOP_328_2_fu_289</obj_property>
+      <wvobject type="group" fp_name="grp_upconv_core_top_ucb3_Pipeline_LOAD_ROW_VITIS_LOOP_397_2_fu_289_group">
+         <obj_property name="label">grp_upconv_core_top_ucb3_Pipeline_LOAD_ROW_VITIS_LOOP_397_2_fu_289</obj_property>
          <obj_property name="DisplayName">label</obj_property>
-         <wvobject type="group" fp_name="grp_upconv_core_top_ucb3_Pipeline_LOAD_ROW_VITIS_LOOP_328_2_fu_289_Handshake_group">
+         <wvobject type="group" fp_name="grp_upconv_core_top_ucb3_Pipeline_LOAD_ROW_VITIS_LOOP_397_2_fu_289_Handshake_group">
             <obj_property name="label">Block-level handshake</obj_property>
             <obj_property name="DisplayName">label</obj_property>
-            <wvobject type="logic" fp_name="/apatb_upconv_core_top_ucb3_top/AESL_inst_upconv_core_top_ucb3/grp_upconv_core_top_ucb3_Pipeline_LOAD_ROW_VITIS_LOOP_328_2_fu_289/ap_start">
+            <wvobject type="logic" fp_name="/apatb_upconv_core_top_ucb3_top/AESL_inst_upconv_core_top_ucb3/grp_upconv_core_top_ucb3_Pipeline_LOAD_ROW_VITIS_LOOP_397_2_fu_289/ap_start">
                <obj_property name="ElementShortName">ap_start</obj_property>
                <obj_property name="ObjectShortName">ap_start</obj_property>
             </wvobject>
-            <wvobject type="logic" fp_name="/apatb_upconv_core_top_ucb3_top/AESL_inst_upconv_core_top_ucb3/grp_upconv_core_top_ucb3_Pipeline_LOAD_ROW_VITIS_LOOP_328_2_fu_289/ap_ready">
+            <wvobject type="logic" fp_name="/apatb_upconv_core_top_ucb3_top/AESL_inst_upconv_core_top_ucb3/grp_upconv_core_top_ucb3_Pipeline_LOAD_ROW_VITIS_LOOP_397_2_fu_289/ap_ready">
                <obj_property name="ElementShortName">ap_ready</obj_property>
                <obj_property name="ObjectShortName">ap_ready</obj_property>
             </wvobject>
-            <wvobject type="logic" fp_name="/apatb_upconv_core_top_ucb3_top/AESL_inst_upconv_core_top_ucb3/grp_upconv_core_top_ucb3_Pipeline_LOAD_ROW_VITIS_LOOP_328_2_fu_289/ap_done">
+            <wvobject type="logic" fp_name="/apatb_upconv_core_top_ucb3_top/AESL_inst_upconv_core_top_ucb3/grp_upconv_core_top_ucb3_Pipeline_LOAD_ROW_VITIS_LOOP_397_2_fu_289/ap_done">
                <obj_property name="ElementShortName">ap_done</obj_property>
                <obj_property name="ObjectShortName">ap_done</obj_property>
             </wvobject>

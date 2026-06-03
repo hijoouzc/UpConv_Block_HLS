@@ -61,57 +61,12 @@ static inline float my_sqrt_f(float x) {
 #endif // HLS_HALF_HELPERS_DEFINED
 
 // ============================================================
-// UPCONV FUSED ROW — Fully Templatized (all dimensions compile-time)
-//
-// Template parameters:
-//   PEs   : number of parallel output-channel processing elements
-//   H_IN  : input feature map height
-//   W_IN  : input feature map width
-//   C_IN  : number of input channels
-//   C_OUT : number of output channels
-//
-// All array sizes, loop bounds, and index strides are now
-// compile-time constants, enabling full HLS static analysis,
-// correct per-block URAM/BRAM sizing, and optimal scheduling.
+// HLS INLINE HELPER FUNCTIONS (Refactored for Clean Dataflow)
 // ============================================================
 
-template<int PEs, int H_IN, int W_IN, int C_IN, int C_OUT>
-void UpConv_Fused_Row(
-    data_256_t*       x_buf,    // Circular Line Buffer [2][W_IN][CI_WORDS]
-    const data_256_t* W_ptr,
-    const data_256_t* B_ptr,
-    const data_256_t* G_ptr,
-    const data_256_t* BE_ptr,
-    DDR_PTR           Y,
-    data_t            epsilon,
-    int               ho       // output row index (runtime)
-) {
-#pragma HLS INLINE off
-
-    // --------------------------------------------------------
-    // All dimensions computed at compile time
-    // --------------------------------------------------------
-    const int S           = 2;
-    const int PAD         = 1;
-    const int H_OUT       = H_IN * S;
-    const int W_OUT       = W_IN * S;
-    const int CI_WORDS    = (C_IN  + 15) / 16;
-    const int C_WORDS_OUT = (C_OUT + 15) / 16;
-    const int C_OUT_PAD   = C_WORDS_OUT * 16;   // padded to 16-multiple
-    const int N_TILES     = C_OUT_PAD / PEs;
-
-    // --------------------------------------------------------
-    // Row accumulator: sized exactly per block instantiation.
-    // --------------------------------------------------------
-    static data_t row_acc[W_OUT][C_OUT_PAD];
-#pragma HLS BIND_STORAGE variable=row_acc type=ram_t2p impl=uram
-#pragma HLS ARRAY_PARTITION variable=row_acc cyclic factor=16 dim=2
-
-#if !defined(__SYNTHESIS__)
-    std::memset(row_acc, 0, sizeof(row_acc));
-#endif
-
-    // [C-pipe] Reset only the C_OUT_PAD channels actually used
+template<int W_OUT, int C_WORDS_OUT, int C_OUT_PAD>
+static inline void Reset_Row_Buffer(data_t (&row_acc)[W_OUT][C_OUT_PAD]) {
+#pragma HLS INLINE
     int rw = 0, rcw = 0;
     RESET_ROW_ACC: for (int m = 0; m < W_OUT * C_WORDS_OUT; m++) {
 #pragma HLS PIPELINE II=1
@@ -121,118 +76,135 @@ void UpConv_Fused_Row(
         }
         if (rcw == C_WORDS_OUT - 1) { rcw = 0; rw++; } else { rcw++; }
     }
+}
 
-    // --------------------------------------------------------
-    // Weight buffer: sized to [PEs][9 * CI_WORDS]
-    // --------------------------------------------------------
-    data_256_t w_local[PEs][9 * CI_WORDS];
-#pragma HLS BIND_STORAGE variable=w_local type=ram_t2p impl=bram
-#pragma HLS ARRAY_PARTITION variable=w_local complete dim=1
-
-    // --------------------------------------------------------
-    // TILE LOOP
-    // --------------------------------------------------------
-    TILE_LOOP: for (int tile = 0; tile < N_TILES; tile++) {
-        int co_base = tile * PEs;
-
-        PRELOAD_W: for (int tc = 0; tc < PEs; tc++) {
-            int co = co_base + tc;
-            if (co < C_OUT) {
-                int k_cnt = 0, ci_cnt = 0;
-                W_FLAT: for (int kci = 0; kci < 9 * CI_WORDS; kci++) {
+template<int PEs, int C_OUT, int CI_WORDS>
+static inline void Load_Weight_Tile(
+    const data_256_t* W_ptr,
+    data_256_t (&w_local)[PEs][9 * CI_WORDS],
+    int tile
+) {
+#pragma HLS INLINE
+    int co_base = tile * PEs;
+    PRELOAD_W: for (int tc = 0; tc < PEs; tc++) {
+        int co = co_base + tc;
+        if (co < C_OUT) {
+            int axi_base_addr = co * 9 * CI_WORDS;
+            W_FLAT: for (int kci = 0; kci < 9 * CI_WORDS; kci++) {
 #pragma HLS PIPELINE II=1
-                    w_local[tc][k_cnt * CI_WORDS + ci_cnt] = W_ptr[(co * 9 + k_cnt) * CI_WORDS + ci_cnt];
-                    ci_cnt++;
-                    if (ci_cnt >= CI_WORDS) { ci_cnt = 0; k_cnt++; }
-                }
+                w_local[tc][kci] = W_ptr[axi_base_addr + kci];
             }
         }
+    }
+}
 
-        KH_LOOP: for (int kh = 0; kh < 3; kh++) {
-            int hpk = ho + PAD - kh;
-            if (hpk < 0 || hpk % S != 0) continue;
-            int hi = hpk / S;
-            if (hi < 0 || hi >= H_IN) continue;
-            int x_row = hi % 2;
+template<int PEs, int H_IN, int W_IN, int CI_WORDS, int W_OUT, int C_OUT, int C_OUT_PAD>
+static inline void Compute_MAC_Tile(
+    data_256_t* x_buf,
+    const data_256_t (&w_local)[PEs][9 * CI_WORDS],
+    data_t (&row_acc)[W_OUT][C_OUT_PAD],
+    int tile,
+    int ho
+) {
+#pragma HLS INLINE
+    const int S = 2;
+    const int PAD = 1;
+    int co_base = tile * PEs;
 
-            KW_LOOP: for (int kw = 0; kw < 3; kw++) {
-                int k = kh * 3 + kw;
+    KH_LOOP: for (int kh = 0; kh < 3; kh++) {
+        int hpk = ho + PAD - kh;
+        if (hpk < 0 || hpk % S != 0) continue;
+        int hi = hpk / S;
+        if (hi < 0 || hi >= H_IN) continue;
+        int x_row = hi % 2;
 
-                // [A] Flatten WI x CI into one II=1 pipeline
-                const int M_TOTAL = W_IN * CI_WORDS;
-                const int x_base  = x_row * W_IN * CI_WORDS;
-                const int w_off   = k * CI_WORDS;
+        KW_LOOP: for (int kw = 0; kw < 3; kw++) {
+            int k = kh * 3 + kw;
 
-                data_t psum[PEs][4];
+            // [A] Flatten WI x CI into one II=1 pipeline
+            const int M_TOTAL = W_IN * CI_WORDS;
+            const int x_base  = x_row * W_IN * CI_WORDS;
+            const int w_off   = k * CI_WORDS;
+
+            data_t psum[PEs][4];
 #pragma HLS ARRAY_PARTITION variable=psum complete dim=0
 
-                int wi = 0, ci_w = 0;
-                FLAT_LOOP: for (int m = 0; m < M_TOTAL; m++) {
+            int wi = 0, ci_w = 0;
+            FLAT_LOOP: for (int m = 0; m < M_TOTAL; m++) {
 #pragma HLS PIPELINE II=1
 #pragma HLS DEPENDENCE variable=psum    type=inter false
 #pragma HLS DEPENDENCE variable=row_acc type=inter false
-                    int acc_idx = ci_w & 3;
-                    data_256_t x_word = x_buf[x_base + m];
+                int acc_idx = ci_w & 3;
+                data_256_t x_word = x_buf[x_base + m];
 
-                    TC_MAC: for (int tc = 0; tc < PEs; tc++) {
+                TC_MAC: for (int tc = 0; tc < PEs; tc++) {
 #pragma HLS UNROLL
-                        data_256_t w_word = w_local[tc][w_off + ci_w];
-                        data_t dot = (data_t)0;
-                        for (int l = 0; l < 16; l++) {
+                    data_256_t w_word = w_local[tc][w_off + ci_w];
+                    data_t dot = (data_t)0;
+                    for (int l = 0; l < 16; l++) {
 #pragma HLS UNROLL
-                            data_t xv = bits_to_half<data_t>(x_word.range(16*l+15, 16*l));
-                            data_t wv = bits_to_half<data_t>(w_word.range(16*l+15, 16*l));
-                            dot += xv * wv;
-                        }
-                        if (ci_w < 4) psum[tc][acc_idx]  = dot;   // first touch
-                        else          psum[tc][acc_idx] += dot;   // RAW distance-4
+                        data_t xv = bits_to_half<data_t>(x_word.range(16*l+15, 16*l));
+                        data_t wv = bits_to_half<data_t>(w_word.range(16*l+15, 16*l));
+                        dot += xv * wv;
                     }
+                    if (ci_w < 4) psum[tc][acc_idx]  = dot;   // first touch
+                    else          psum[tc][acc_idx] += dot;   // RAW distance-4
+                }
 
-                    if (ci_w == CI_WORDS - 1) {
-                        int wo = wi * S + kw - PAD;
-                        if (wo >= 0 && wo < W_OUT) {
-                            ACC_WRITE: for (int tc = 0; tc < PEs; tc++) {
+                if (ci_w == CI_WORDS - 1) {
+                    int wo = wi * S + kw - PAD;
+                    if (wo >= 0 && wo < W_OUT) {
+                        ACC_WRITE: for (int tc = 0; tc < PEs; tc++) {
 #pragma HLS UNROLL
-                                if (co_base + tc < C_OUT) {
-                                    data_t total = psum[tc][0] + psum[tc][1] + psum[tc][2] + psum[tc][3];
-                                    row_acc[wo][co_base + tc] += total;
-                                }
+                            if (co_base + tc < C_OUT) {
+                                data_t total = psum[tc][0] + psum[tc][1] + psum[tc][2] + psum[tc][3];
+                                row_acc[wo][co_base + tc] += total;
                             }
                         }
-                        ci_w = 0; wi++;
-                    } else {
-                        ci_w++;
                     }
+                    ci_w = 0; wi++;
+                } else {
+                    ci_w++;
                 }
             }
         }
-    } // end TILE_LOOP
+    }
+}
 
-    // --------------------------------------------------------
-    // Bias / Norm / ReLU parameters
-    // --------------------------------------------------------
-    data_256_t b_buf[C_WORDS_OUT];
-    data_256_t g_buf[C_WORDS_OUT];
-    data_256_t be_buf[C_WORDS_OUT];
-#pragma HLS BIND_STORAGE variable=b_buf  type=ram_t2p impl=bram
-#pragma HLS BIND_STORAGE variable=g_buf  type=ram_t2p impl=bram
-#pragma HLS BIND_STORAGE variable=be_buf type=ram_t2p impl=bram
-
-    LOAD_PARAMS: for (int i = 0; i < C_WORDS_OUT; i++) {
+template<int C_WORDS_OUT>
+static inline void Load_Norm_Params(
+    const data_256_t* B_ptr,
+    const data_256_t* G_ptr,
+    const data_256_t* BE_ptr,
+    data_256_t (&b_buf)[C_WORDS_OUT],
+    data_256_t (&g_buf)[C_WORDS_OUT],
+    data_256_t (&be_buf)[C_WORDS_OUT]
+) {
+#pragma HLS INLINE
+    // Phải tách làm 3 vòng lặp rời để HLS kích hoạt AXI Burst Read trên gmem_param
+    LOAD_B: for (int i = 0; i < C_WORDS_OUT; i++) {
 #pragma HLS PIPELINE II=1
         b_buf[i]  = B_ptr[i];
+    }
+    LOAD_G: for (int i = 0; i < C_WORDS_OUT; i++) {
+#pragma HLS PIPELINE II=1
         g_buf[i]  = G_ptr[i];
+    }
+    LOAD_BE: for (int i = 0; i < C_WORDS_OUT; i++) {
+#pragma HLS PIPELINE II=1
         be_buf[i] = BE_ptr[i];
     }
+}
 
-    // --------------------------------------------------------
-    // [B] PIXEL_NORM as two flattened II=1 passes
-    // --------------------------------------------------------
-    static float  mean_buf[W_OUT];
-    static data_t inv_buf [W_OUT];
-#pragma HLS BIND_STORAGE variable=mean_buf type=ram_2p impl=lutram
-#pragma HLS BIND_STORAGE variable=inv_buf  type=ram_2p impl=lutram
-
+template<int W_OUT, int C_OUT, int C_WORDS_OUT, int C_OUT_PAD>
+static inline void Compute_Pixel_Stats(
+    data_t (&row_acc)[W_OUT][C_OUT_PAD],
+    const data_256_t (&b_buf)[C_WORDS_OUT],
+    float (&mean_buf)[W_OUT],
+    data_t (&inv_buf)[W_OUT],
+    data_t epsilon
+) {
+#pragma HLS INLINE
     float sum_rot[8], sumsq_rot[8];
 #pragma HLS ARRAY_PARTITION variable=sum_rot   complete
 #pragma HLS ARRAY_PARTITION variable=sumsq_rot complete
@@ -273,7 +245,19 @@ void UpConv_Fused_Row(
             cs++;
         }
     }
+}
 
+template<int W_OUT, int C_OUT, int C_WORDS_OUT, int C_OUT_PAD>
+static inline void Apply_Norm_And_Write(
+    const data_t (&row_acc)[W_OUT][C_OUT_PAD],
+    const data_256_t (&g_buf)[C_WORDS_OUT],
+    const data_256_t (&be_buf)[C_WORDS_OUT],
+    const float (&mean_buf)[W_OUT],
+    const data_t (&inv_buf)[W_OUT],
+    DDR_PTR Y,
+    int ho
+) {
+#pragma HLS INLINE
     int wn = 0, cwn = 0;
     PIXEL_NORM: for (int m = 0; m < W_OUT * C_WORDS_OUT; m++) {
 #pragma HLS PIPELINE II=1
@@ -293,6 +277,91 @@ void UpConv_Fused_Row(
         Y[(ho * W_OUT + wn) * C_WORDS_OUT + cwn] = out_word;
         if (cwn == C_WORDS_OUT - 1) { cwn = 0; wn++; } else { cwn++; }
     }
+}
+
+// ============================================================
+// UPCONV FUSED ROW — Fully Templatized & Modularized
+//
+// Template parameters:
+//   PEs   : number of parallel output-channel processing elements
+//   H_IN  : input feature map height
+//   W_IN  : input feature map width
+//   C_IN  : number of input channels
+//   C_OUT : number of output channels
+//
+// All array sizes, loop bounds, and index strides are now
+// compile-time constants, enabling full HLS static analysis,
+// correct per-block URAM/BRAM sizing, and optimal scheduling.
+// ============================================================
+
+template<int PEs, int H_IN, int W_IN, int C_IN, int C_OUT>
+void UpConv_Fused_Row(
+    data_256_t*       x_buf,    // Circular Line Buffer [2][W_IN][CI_WORDS]
+    const data_256_t* W_ptr,
+    const data_256_t* B_ptr,
+    const data_256_t* G_ptr,
+    const data_256_t* BE_ptr,
+    DDR_PTR           Y,
+    data_t            epsilon,
+    int               ho       // output row index (runtime)
+) {
+#pragma HLS INLINE off
+
+    // --------------------------------------------------------
+    // Compile-time Dimension Resolution
+    // --------------------------------------------------------
+    const int S           = 2;
+    const int PAD         = 1;
+    const int H_OUT       = H_IN * S;
+    const int W_OUT       = W_IN * S;
+    const int CI_WORDS    = (C_IN  + 15) / 16;
+    const int C_WORDS_OUT = (C_OUT + 15) / 16;
+    const int C_OUT_PAD   = C_WORDS_OUT * 16;
+    const int N_TILES     = C_OUT_PAD / PEs;
+
+    // --------------------------------------------------------
+    // Static Buffers Declaration (URAM/BRAM/LUTRAM)
+    // --------------------------------------------------------
+    static data_t row_acc[W_OUT][C_OUT_PAD];
+#pragma HLS BIND_STORAGE variable=row_acc type=ram_t2p impl=uram
+#pragma HLS ARRAY_PARTITION variable=row_acc cyclic factor=16 dim=2
+
+#if !defined(__SYNTHESIS__)
+    std::memset(row_acc, 0, sizeof(row_acc));
+#endif
+
+    data_256_t w_local[PEs][9 * CI_WORDS];
+#pragma HLS BIND_STORAGE variable=w_local type=ram_t2p impl=bram latency=2
+#pragma HLS ARRAY_PARTITION variable=w_local complete dim=1
+
+    data_256_t b_buf[C_WORDS_OUT];
+    data_256_t g_buf[C_WORDS_OUT];
+    data_256_t be_buf[C_WORDS_OUT];
+#pragma HLS BIND_STORAGE variable=b_buf  type=ram_t2p impl=bram
+#pragma HLS BIND_STORAGE variable=g_buf  type=ram_t2p impl=bram
+#pragma HLS BIND_STORAGE variable=be_buf type=ram_t2p impl=bram
+
+    static float  mean_buf[W_OUT];
+    static data_t inv_buf [W_OUT];
+#pragma HLS BIND_STORAGE variable=mean_buf type=ram_2p impl=lutram
+#pragma HLS BIND_STORAGE variable=inv_buf  type=ram_2p impl=lutram
+
+    // --------------------------------------------------------
+    // Clean Sequential Execution (No Pipeline Flush/Stalls)
+    // Arrays passed by C++ Reference to preserve pragmas perfectly.
+    // --------------------------------------------------------
+
+    Load_Norm_Params<C_WORDS_OUT>(B_ptr, G_ptr, BE_ptr, b_buf, g_buf, be_buf);
+    Reset_Row_Buffer<W_OUT, C_WORDS_OUT, C_OUT_PAD>(row_acc);
+
+    TILE_LOOP: for (int tile = 0; tile < N_TILES; tile++) {
+        Load_Weight_Tile<PEs, C_OUT, CI_WORDS>(W_ptr, w_local, tile);
+        Compute_MAC_Tile<PEs, H_IN, W_IN, CI_WORDS, W_OUT, C_OUT, C_OUT_PAD>(
+            x_buf, w_local, row_acc, tile, ho);
+    }
+
+    Compute_Pixel_Stats<W_OUT, C_OUT, C_WORDS_OUT, C_OUT_PAD>(row_acc, b_buf, mean_buf, inv_buf, epsilon);
+    Apply_Norm_And_Write<W_OUT, C_OUT, C_WORDS_OUT, C_OUT_PAD>(row_acc, g_buf, be_buf, mean_buf, inv_buf, Y, ho);
 }
 
 // ============================================================

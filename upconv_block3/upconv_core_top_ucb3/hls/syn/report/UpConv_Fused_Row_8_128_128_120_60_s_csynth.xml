@@ -18,23 +18,23 @@
 <PipelineType>no</PipelineType>
 <SummaryOfTimingAnalysis>
 <unit>ns</unit>
-<EstimatedClockPeriod>2.877</EstimatedClockPeriod>
+<EstimatedClockPeriod>2.433</EstimatedClockPeriod>
 </SummaryOfTimingAnalysis>
 <SummaryOfOverallLatency>
 <unit>clock cycles</unit>
-<Best-caseLatency>17878</Best-caseLatency>
-<Average-caseLatency>58910</Average-caseLatency>
-<Worst-caseLatency>99918</Worst-caseLatency>
-<Best-caseRealTimeLatency>59.587 us</Best-caseRealTimeLatency>
+<Best-caseLatency>17984</Best-caseLatency>
+<Average-caseLatency>58952</Average-caseLatency>
+<Worst-caseLatency>99896</Worst-caseLatency>
+<Best-caseRealTimeLatency>59.941 us</Best-caseRealTimeLatency>
 <Average-caseRealTimeLatency>0.196 ms</Average-caseRealTimeLatency>
 <Worst-caseRealTimeLatency>0.333 ms</Worst-caseRealTimeLatency>
-<Interval-min>17878</Interval-min>
-<Interval-max>99918</Interval-max>
+<Interval-min>17984</Interval-min>
+<Interval-max>99896</Interval-max>
 </SummaryOfOverallLatency>
 <SummaryOfViolations>
 <IssueType>-</IssueType>
 <ViolationType>-</ViolationType>
-<SourceLocation>../gen/Hls_Layers_UpConv.tpp:214</SourceLocation>
+<SourceLocation>../gen/Hls_Layers_UpConv.tpp:337</SourceLocation>
 </SummaryOfViolations>
 </PerformanceEstimates>
 
@@ -42,8 +42,8 @@
 <Resources>
 <BRAM_18K>88</BRAM_18K>
 <DSP>670</DSP>
-<FF>68532</FF>
-<LUT>46348</LUT>
+<FF>67964</FF>
+<LUT>46417</LUT>
 <URAM>16</URAM>
 </Resources>
 <AvailableResources>

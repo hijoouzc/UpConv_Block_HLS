@@ -19,7 +19,7 @@ int main() {
             })
 
     // Mini test first for quick verification
-    RUN_UNIFIED_TEST(MODE_UCB_TEST, "MINI_TEST (16x16x16 -> 32x32x16)", 16, 16, 16, 16);
+    RUN_UNIFIED_TEST(MODE_UCB_TEST, "MINI_TEST", MODEL_H_IN, MODEL_W_IN, MODEL_C_IN, MODEL_C_OUT);
 
     // Real dimensions (Comment in one at a time for fast CSIM)
     // RUN_UNIFIED_TEST(MODE_UCB_0, "UPCONV_BLOCK_0 (16x16x960 -> 32x32x480)", 16, 16, 960, 480);

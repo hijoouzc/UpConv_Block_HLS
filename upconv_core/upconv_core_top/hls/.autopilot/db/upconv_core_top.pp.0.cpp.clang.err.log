@@ -1,5 +1,5 @@
-In file included from ../gen/upconv_core_top.cpp:7:
-In file included from ../gen/Hls_Layers_UpConv.tpp:10:
+In file included from ../gen/upconv_core_top.cpp:5:
+In file included from ../gen/UpConv_Unified.tpp:10:
 In file included from /home/tools/Xilinx/Vitis/2024.2/common/technology/autopilot/hls_math.h:1054:
 In file included from /home/tools/Xilinx/Vitis/2024.2/common/technology/autopilot/etc/hls_hotbm_apfixed.h:19:
 /home/tools/Xilinx/Vitis/2024.2/common/technology/autopilot/utils/x_hls_utils.h:224:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=pipeline_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=reg_XLX_SEP_ PragmaOptions=II=1_XLX_SEP_ [-Wdump-hls-pragmas]
@@ -11,8 +11,8 @@ In file included from /home/tools/Xilinx/Vitis/2024.2/common/technology/autopilo
 /home/tools/Xilinx/Vitis/2024.2/common/technology/autopilot/utils/x_hls_utils.h:226:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=inline_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=reg_XLX_SEP_ PragmaOptions=off_XLX_SEP_ [-Wdump-hls-pragmas]
 #pragma HLS INLINE off
         ^
-In file included from ../gen/upconv_core_top.cpp:7:
-In file included from ../gen/Hls_Layers_UpConv.tpp:10:
+In file included from ../gen/upconv_core_top.cpp:5:
+In file included from ../gen/UpConv_Unified.tpp:10:
 In file included from /home/tools/Xilinx/Vitis/2024.2/common/technology/autopilot/hls_math.h:1054:
 /home/tools/Xilinx/Vitis/2024.2/common/technology/autopilot/etc/hls_hotbm_apfixed.h:90:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=array_partition_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=sin_or_cos_approximation_XLX_SEP_ PragmaOptions=variable=swap_table complete_XLX_SEP_ [-Wdump-hls-pragmas]
 #pragma HLS array_partition variable=swap_table complete
@@ -122,8 +122,8 @@ In file included from /home/tools/Xilinx/Vitis/2024.2/common/technology/autopilo
 /home/tools/Xilinx/Vitis/2024.2/common/technology/autopilot/etc/hls_hotbm_apfixed.h:428:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=array_partition_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=sinf_or_cosf_XLX_SEP_ PragmaOptions=variable=neg_cos_table complete_XLX_SEP_ [-Wdump-hls-pragmas]
 #pragma HLS array_partition variable=neg_cos_table complete
         ^
-In file included from ../gen/upconv_core_top.cpp:7:
-In file included from ../gen/Hls_Layers_UpConv.tpp:10:
+In file included from ../gen/upconv_core_top.cpp:5:
+In file included from ../gen/UpConv_Unified.tpp:10:
 In file included from /home/tools/Xilinx/Vitis/2024.2/common/technology/autopilot/hls_math.h:1054:
 /home/tools/Xilinx/Vitis/2024.2/common/technology/autopilot/etc/hls_cordic_apfixed.h:62:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=pipeline_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=cordic_circ_apfixed_XLX_SEP_ PragmaOptions=_XLX_SEP_ [-Wdump-hls-pragmas]
 #pragma HLS pipeline
@@ -158,8 +158,8 @@ In file included from /home/tools/Xilinx/Vitis/2024.2/common/technology/autopilo
 /home/tools/Xilinx/Vitis/2024.2/common/technology/autopilot/etc/hls_cordic_apfixed.h:860:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=unroll_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=sinh_cosh_range_redux_cordic_XLX_SEP_ PragmaOptions=_XLX_SEP_ [-Wdump-hls-pragmas]
 #pragma HLS UNROLL
         ^
-In file included from ../gen/upconv_core_top.cpp:7:
-In file included from ../gen/Hls_Layers_UpConv.tpp:10:
+In file included from ../gen/upconv_core_top.cpp:5:
+In file included from ../gen/UpConv_Unified.tpp:10:
 In file included from /home/tools/Xilinx/Vitis/2024.2/common/technology/autopilot/hls_math.h:1055:
 /home/tools/Xilinx/Vitis/2024.2/common/technology/autopilot/etc/hls_exp_apfixed.h:15:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=pipeline_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=exp_XLX_SEP_ PragmaOptions=_XLX_SEP_ [-Wdump-hls-pragmas]
 #pragma HLS pipeline
@@ -419,8 +419,8 @@ In file included from /home/tools/Xilinx/Vitis/2024.2/common/technology/autopilo
 /home/tools/Xilinx/Vitis/2024.2/common/technology/autopilot/etc/hls_exp_apfixed.h:3416:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=unroll_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=exp10_XLX_SEP_ PragmaOptions=_XLX_SEP_ [-Wdump-hls-pragmas]
 #pragma HLS unroll
         ^
-In file included from ../gen/upconv_core_top.cpp:7:
-In file included from ../gen/Hls_Layers_UpConv.tpp:10:
+In file included from ../gen/upconv_core_top.cpp:5:
+In file included from ../gen/UpConv_Unified.tpp:10:
 In file included from /home/tools/Xilinx/Vitis/2024.2/common/technology/autopilot/hls_math.h:1056:
 /home/tools/Xilinx/Vitis/2024.2/common/technology/autopilot/etc/hls_log_apfixed.h:475:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=pipeline_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=log_XLX_SEP_ PragmaOptions=_XLX_SEP_ [-Wdump-hls-pragmas]
 #pragma HLS pipeline
@@ -440,8 +440,8 @@ In file included from /home/tools/Xilinx/Vitis/2024.2/common/technology/autopilo
 /home/tools/Xilinx/Vitis/2024.2/common/technology/autopilot/etc/hls_log_apfixed.h:1346:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=unroll_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=log2_XLX_SEP_ PragmaOptions=_XLX_SEP_ [-Wdump-hls-pragmas]
 #pragma HLS unroll
         ^
-In file included from ../gen/upconv_core_top.cpp:7:
-In file included from ../gen/Hls_Layers_UpConv.tpp:10:
+In file included from ../gen/upconv_core_top.cpp:5:
+In file included from ../gen/UpConv_Unified.tpp:10:
 In file included from /home/tools/Xilinx/Vitis/2024.2/common/technology/autopilot/hls_math.h:1057:
 /home/tools/Xilinx/Vitis/2024.2/common/technology/autopilot/etc/hls_sqrt_apfixed.h:18:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=pipeline_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=sqrt_fixed_XLX_SEP_ PragmaOptions=_XLX_SEP_ [-Wdump-hls-pragmas]
 #pragma HLS pipeline
@@ -458,8 +458,8 @@ In file included from /home/tools/Xilinx/Vitis/2024.2/common/technology/autopilo
 /home/tools/Xilinx/Vitis/2024.2/common/technology/autopilot/etc/hls_sqrt_apfixed.h:414:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=pipeline_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=recip_fixed_XLX_SEP_ PragmaOptions=_XLX_SEP_ [-Wdump-hls-pragmas]
 #pragma HLS pipeline
         ^
-In file included from ../gen/upconv_core_top.cpp:7:
-In file included from ../gen/Hls_Layers_UpConv.tpp:10:
+In file included from ../gen/upconv_core_top.cpp:5:
+In file included from ../gen/UpConv_Unified.tpp:10:
 In file included from /home/tools/Xilinx/Vitis/2024.2/common/technology/autopilot/hls_math.h:1058:
 /home/tools/Xilinx/Vitis/2024.2/common/technology/autopilot/etc/hls_round_copysign_apfixed.h:14:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=pipeline_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=ceil_fixed_XLX_SEP_ PragmaOptions=_XLX_SEP_ [-Wdump-hls-pragmas]
 #pragma HLS pipeline
@@ -476,8 +476,8 @@ In file included from /home/tools/Xilinx/Vitis/2024.2/common/technology/autopilo
 /home/tools/Xilinx/Vitis/2024.2/common/technology/autopilot/etc/hls_round_copysign_apfixed.h:213:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=pipeline_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=rint_fixed_XLX_SEP_ PragmaOptions=_XLX_SEP_ [-Wdump-hls-pragmas]
 #pragma HLS pipeline
         ^
-In file included from ../gen/upconv_core_top.cpp:7:
-In file included from ../gen/Hls_Layers_UpConv.tpp:10:
+In file included from ../gen/upconv_core_top.cpp:5:
+In file included from ../gen/UpConv_Unified.tpp:10:
 In file included from /home/tools/Xilinx/Vitis/2024.2/common/technology/autopilot/hls_math.h:1059:
 /home/tools/Xilinx/Vitis/2024.2/common/technology/autopilot/etc/hls_pow_apfixed.h:49:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=unroll_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=pow_XLX_SEP_ PragmaOptions=_XLX_SEP_ [-Wdump-hls-pragmas]
 #pragma HLS unroll
@@ -506,8 +506,8 @@ In file included from /home/tools/Xilinx/Vitis/2024.2/common/technology/autopilo
 /home/tools/Xilinx/Vitis/2024.2/common/technology/autopilot/etc/hls_pow_apfixed.h:448:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=unroll_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=rootn_XLX_SEP_ PragmaOptions=_XLX_SEP_ [-Wdump-hls-pragmas]
 #pragma HLS unroll
         ^
-In file included from ../gen/upconv_core_top.cpp:7:
-In file included from ../gen/Hls_Layers_UpConv.tpp:10:
+In file included from ../gen/upconv_core_top.cpp:5:
+In file included from ../gen/UpConv_Unified.tpp:10:
 In file included from /home/tools/Xilinx/Vitis/2024.2/common/technology/autopilot/hls_math.h:1060:
 /home/tools/Xilinx/Vitis/2024.2/common/technology/autopilot/etc/hls_diff_apfixed.h:23:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=pipeline_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=fdim_fixed_XLX_SEP_ PragmaOptions=II=1_XLX_SEP_ [-Wdump-hls-pragmas]
 #pragma HLS PIPELINE II=1
@@ -527,14 +527,14 @@ In file included from /home/tools/Xilinx/Vitis/2024.2/common/technology/autopilo
 /home/tools/Xilinx/Vitis/2024.2/common/technology/autopilot/etc/hls_diff_apfixed.h:249:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=unroll_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=minmag_fixed_XLX_SEP_ PragmaOptions=_XLX_SEP_ [-Wdump-hls-pragmas]
 #pragma HLS UNROLL
         ^
-In file included from ../gen/upconv_core_top.cpp:7:
-In file included from ../gen/Hls_Layers_UpConv.tpp:10:
+In file included from ../gen/upconv_core_top.cpp:5:
+In file included from ../gen/UpConv_Unified.tpp:10:
 In file included from /home/tools/Xilinx/Vitis/2024.2/common/technology/autopilot/hls_math.h:1062:
 /home/tools/Xilinx/Vitis/2024.2/common/technology/autopilot/etc/hls_frexp_apfixed.h:46:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=pipeline_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=frexp_XLX_SEP_ PragmaOptions=II=1_XLX_SEP_ [-Wdump-hls-pragmas]
 #pragma HLS pipeline II=1
         ^
-In file included from ../gen/upconv_core_top.cpp:7:
-In file included from ../gen/Hls_Layers_UpConv.tpp:10:
+In file included from ../gen/upconv_core_top.cpp:5:
+In file included from ../gen/UpConv_Unified.tpp:10:
 In file included from /home/tools/Xilinx/Vitis/2024.2/common/technology/autopilot/hls_math.h:1064:
 /home/tools/Xilinx/Vitis/2024.2/common/technology/autopilot/etc/hls_isequal_isnotequal_apfixed.h:17:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=pipeline_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=generic_isequal_XLX_SEP_ PragmaOptions=_XLX_SEP_ [-Wdump-hls-pragmas]
 #pragma HLS pipeline
@@ -584,8 +584,8 @@ In file included from /home/tools/Xilinx/Vitis/2024.2/common/technology/autopilo
 /home/tools/Xilinx/Vitis/2024.2/common/technology/autopilot/etc/hls_isequal_isnotequal_apfixed.h:138:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=pipeline_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=generic_isnotequal_XLX_SEP_ PragmaOptions=_XLX_SEP_ [-Wdump-hls-pragmas]
 #pragma HLS pipeline
         ^
-In file included from ../gen/upconv_core_top.cpp:7:
-In file included from ../gen/Hls_Layers_UpConv.tpp:10:
+In file included from ../gen/upconv_core_top.cpp:5:
+In file included from ../gen/UpConv_Unified.tpp:10:
 In file included from /home/tools/Xilinx/Vitis/2024.2/common/technology/autopilot/hls_math.h:1065:
 /home/tools/Xilinx/Vitis/2024.2/common/technology/autopilot/etc/hls_all_any_apfixed.h:15:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=pipeline_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=generic_all_XLX_SEP_ PragmaOptions=II=1_XLX_SEP_ [-Wdump-hls-pragmas]
 #pragma HLS pipeline II=1
@@ -611,8 +611,8 @@ In file included from /home/tools/Xilinx/Vitis/2024.2/common/technology/autopilo
 /home/tools/Xilinx/Vitis/2024.2/common/technology/autopilot/etc/hls_all_any_apfixed.h:92:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=pipeline_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=generic_any_XLX_SEP_ PragmaOptions=II=1_XLX_SEP_ [-Wdump-hls-pragmas]
 #pragma HLS pipeline II=1
         ^
-In file included from ../gen/upconv_core_top.cpp:7:
-In file included from ../gen/Hls_Layers_UpConv.tpp:10:
+In file included from ../gen/upconv_core_top.cpp:5:
+In file included from ../gen/UpConv_Unified.tpp:10:
 In file included from /home/tools/Xilinx/Vitis/2024.2/common/technology/autopilot/hls_math.h:1066:
 /home/tools/Xilinx/Vitis/2024.2/common/technology/autopilot/etc/hls_select_bitselect_apfixed.h:39:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=pipeline_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=generic_bitselect_XLX_SEP_ PragmaOptions=_XLX_SEP_ [-Wdump-hls-pragmas]
 #pragma HLS pipeline
@@ -626,194 +626,260 @@ In file included from /home/tools/Xilinx/Vitis/2024.2/common/technology/autopilo
 /home/tools/Xilinx/Vitis/2024.2/common/technology/autopilot/etc/hls_select_bitselect_apfixed.h:62:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=pipeline_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=generic_bitselect_XLX_SEP_ PragmaOptions=_XLX_SEP_ [-Wdump-hls-pragmas]
 #pragma HLS pipeline
         ^
-In file included from ../gen/upconv_core_top.cpp:7:
-In file included from ../gen/Hls_Layers_UpConv.tpp:10:
+In file included from ../gen/upconv_core_top.cpp:5:
+In file included from ../gen/UpConv_Unified.tpp:10:
 In file included from /home/tools/Xilinx/Vitis/2024.2/common/technology/autopilot/hls_math.h:1067:
 /home/tools/Xilinx/Vitis/2024.2/common/technology/autopilot/etc/hls_erf_apfixed.h:490:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=pipeline_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=erfc_XLX_SEP_ PragmaOptions=II=1_XLX_SEP_ [-Wdump-hls-pragmas]
 #pragma HLS PIPELINE II=1
         ^
-In file included from ../gen/upconv_core_top.cpp:7:
-In file included from ../gen/Hls_Layers_UpConv.tpp:10:
+In file included from ../gen/upconv_core_top.cpp:5:
+In file included from ../gen/UpConv_Unified.tpp:10:
 In file included from /home/tools/Xilinx/Vitis/2024.2/common/technology/autopilot/hls_math.h:1069:
 /home/tools/Xilinx/Vitis/2024.2/common/technology/autopilot/etc/hls_lgamma_apfixed.h:17:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=pipeline_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=lgamma_generic_XLX_SEP_ PragmaOptions=_XLX_SEP_ [-Wdump-hls-pragmas]
 #pragma HLS pipeline
         ^
-In file included from ../gen/upconv_core_top.cpp:7:
-In file included from ../gen/Hls_Layers_UpConv.tpp:10:
+In file included from ../gen/upconv_core_top.cpp:5:
+In file included from ../gen/UpConv_Unified.tpp:10:
 In file included from /home/tools/Xilinx/Vitis/2024.2/common/technology/autopilot/hls_math.h:1070:
 /home/tools/Xilinx/Vitis/2024.2/common/technology/autopilot/etc/hls_tgamma_apfixed.h:18:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=pipeline_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=tgamma_generic_XLX_SEP_ PragmaOptions=_XLX_SEP_ [-Wdump-hls-pragmas]
 #pragma HLS pipeline
         ^
-In file included from ../gen/upconv_core_top.cpp:7:
-In file included from ../gen/Hls_Layers_UpConv.tpp:10:
+In file included from ../gen/upconv_core_top.cpp:5:
+In file included from ../gen/UpConv_Unified.tpp:10:
 In file included from /home/tools/Xilinx/Vitis/2024.2/common/technology/autopilot/hls_math.h:1072:
 /home/tools/Xilinx/Vitis/2024.2/common/technology/autopilot/etc/hls_mad_apfixed.h:27:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=unroll_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=generic_mad_XLX_SEP_ PragmaOptions=_XLX_SEP_ [-Wdump-hls-pragmas]
 #pragma HLS unroll
         ^
-In file included from ../gen/upconv_core_top.cpp:7:
-In file included from ../gen/Hls_Layers_UpConv.tpp:10:
+In file included from ../gen/upconv_core_top.cpp:5:
+In file included from ../gen/UpConv_Unified.tpp:10:
 In file included from /home/tools/Xilinx/Vitis/2024.2/common/technology/autopilot/hls_math.h:1074:
 /home/tools/Xilinx/Vitis/2024.2/common/technology/autopilot/etc/hls_hypot_apfixed.h:170:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=unroll_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=hypot_fixed_XLX_SEP_ PragmaOptions=_XLX_SEP_ [-Wdump-hls-pragmas]
 #pragma HLS unroll
         ^
-In file included from ../gen/upconv_core_top.cpp:7:
-../gen/Hls_Layers_UpConv.tpp:23:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=inline_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=half_to_bits_XLX_SEP_ PragmaOptions=_XLX_SEP_ [-Wdump-hls-pragmas]
+In file included from ../gen/upconv_core_top.cpp:5:
+../gen/UpConv_Unified.tpp:23:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=inline_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=half_to_bits_XLX_SEP_ PragmaOptions=_XLX_SEP_ [-Wdump-hls-pragmas]
 #pragma HLS INLINE
         ^
-../gen/Hls_Layers_UpConv.tpp:39:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=inline_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=bits_to_half_XLX_SEP_ PragmaOptions=_XLX_SEP_ [-Wdump-hls-pragmas]
+../gen/UpConv_Unified.tpp:39:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=inline_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=bits_to_half_XLX_SEP_ PragmaOptions=_XLX_SEP_ [-Wdump-hls-pragmas]
 #pragma HLS INLINE
         ^
-../gen/Hls_Layers_UpConv.tpp:53:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=inline_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=my_sqrt_f_XLX_SEP_ PragmaOptions=_XLX_SEP_ [-Wdump-hls-pragmas]
+../gen/UpConv_Unified.tpp:53:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=inline_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=my_sqrt_f_XLX_SEP_ PragmaOptions=_XLX_SEP_ [-Wdump-hls-pragmas]
 #pragma HLS INLINE
         ^
-../gen/Hls_Layers_UpConv.tpp:89:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=inline_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=UpConv_Fused_Row_XLX_SEP_ PragmaOptions=off_XLX_SEP_ [-Wdump-hls-pragmas]
-#pragma HLS INLINE off
+../gen/UpConv_Unified.tpp:68:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=inline_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=Reset_Row_Buffer_XLX_SEP_ PragmaOptions=_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS INLINE
         ^
-../gen/Hls_Layers_UpConv.tpp:107:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=bind_storage_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=UpConv_Fused_Row_XLX_SEP_ PragmaOptions=variable=row_acc type=ram_t2p impl=uram_XLX_SEP_ [-Wdump-hls-pragmas]
-#pragma HLS BIND_STORAGE variable=row_acc type=ram_t2p impl=uram
-        ^
-../gen/Hls_Layers_UpConv.tpp:108:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=array_partition_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=UpConv_Fused_Row_XLX_SEP_ PragmaOptions=variable=row_acc cyclic factor=16 dim=2_XLX_SEP_ [-Wdump-hls-pragmas]
-#pragma HLS ARRAY_PARTITION variable=row_acc cyclic factor=16 dim=2
-        ^
-../gen/Hls_Layers_UpConv.tpp:117:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=pipeline_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=UpConv_Fused_Row_XLX_SEP_ PragmaOptions=II=1_XLX_SEP_ [-Wdump-hls-pragmas]
+../gen/UpConv_Unified.tpp:72:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=pipeline_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=Reset_Row_Buffer_XLX_SEP_ PragmaOptions=II=1_XLX_SEP_ [-Wdump-hls-pragmas]
 #pragma HLS PIPELINE II=1
         ^
-../gen/Hls_Layers_UpConv.tpp:119:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=unroll_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=UpConv_Fused_Row_XLX_SEP_ PragmaOptions=_XLX_SEP_ [-Wdump-hls-pragmas]
+../gen/UpConv_Unified.tpp:73:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=loop_tripcount_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=Reset_Row_Buffer_XLX_SEP_ PragmaOptions=min=128 max=7680 avg=3840_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS LOOP_TRIPCOUNT min=128 max=7680 avg=3840
+        ^
+../gen/UpConv_Unified.tpp:75:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=unroll_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=Reset_Row_Buffer_XLX_SEP_ PragmaOptions=_XLX_SEP_ [-Wdump-hls-pragmas]
 #pragma HLS UNROLL
         ^
-../gen/Hls_Layers_UpConv.tpp:129:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=bind_storage_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=UpConv_Fused_Row_XLX_SEP_ PragmaOptions=variable=w_local type=ram_t2p impl=bram_XLX_SEP_ [-Wdump-hls-pragmas]
-#pragma HLS BIND_STORAGE variable=w_local type=ram_t2p impl=bram
+../gen/UpConv_Unified.tpp:88:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=inline_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=Load_Weight_Tile_XLX_SEP_ PragmaOptions=_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS INLINE
         ^
-../gen/Hls_Layers_UpConv.tpp:130:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=array_partition_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=UpConv_Fused_Row_XLX_SEP_ PragmaOptions=variable=w_local complete dim=1_XLX_SEP_ [-Wdump-hls-pragmas]
-#pragma HLS ARRAY_PARTITION variable=w_local complete dim=1
-        ^
-../gen/Hls_Layers_UpConv.tpp:143:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=pipeline_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=UpConv_Fused_Row_XLX_SEP_ PragmaOptions=II=1_XLX_SEP_ [-Wdump-hls-pragmas]
+../gen/UpConv_Unified.tpp:95:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=pipeline_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=Load_Weight_Tile_XLX_SEP_ PragmaOptions=II=1_XLX_SEP_ [-Wdump-hls-pragmas]
 #pragma HLS PIPELINE II=1
         ^
-../gen/Hls_Layers_UpConv.tpp:167:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=array_partition_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=UpConv_Fused_Row_XLX_SEP_ PragmaOptions=variable=psum complete dim=0_XLX_SEP_ [-Wdump-hls-pragmas]
+../gen/UpConv_Unified.tpp:96:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=loop_tripcount_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=Load_Weight_Tile_XLX_SEP_ PragmaOptions=min=72 max=540 avg=252_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS LOOP_TRIPCOUNT min=72 max=540 avg=252
+        ^
+../gen/UpConv_Unified.tpp:110:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=inline_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=Compute_MAC_Tile_XLX_SEP_ PragmaOptions=_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS INLINE
+        ^
+../gen/UpConv_Unified.tpp:117:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=loop_flatten_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=Compute_MAC_Tile_XLX_SEP_ PragmaOptions=off_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS LOOP_FLATTEN off
+        ^
+../gen/UpConv_Unified.tpp:125:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=loop_flatten_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=Compute_MAC_Tile_XLX_SEP_ PragmaOptions=off_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS LOOP_FLATTEN off
+        ^
+../gen/UpConv_Unified.tpp:133:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=array_partition_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=Compute_MAC_Tile_XLX_SEP_ PragmaOptions=variable=psum complete dim=0_XLX_SEP_ [-Wdump-hls-pragmas]
 #pragma HLS ARRAY_PARTITION variable=psum complete dim=0
         ^
-../gen/Hls_Layers_UpConv.tpp:171:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=pipeline_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=UpConv_Fused_Row_XLX_SEP_ PragmaOptions=II=1_XLX_SEP_ [-Wdump-hls-pragmas]
+../gen/UpConv_Unified.tpp:137:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=pipeline_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=Compute_MAC_Tile_XLX_SEP_ PragmaOptions=II=1_XLX_SEP_ [-Wdump-hls-pragmas]
 #pragma HLS PIPELINE II=1
         ^
-../gen/Hls_Layers_UpConv.tpp:172:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=dependence_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=UpConv_Fused_Row_XLX_SEP_ PragmaOptions=variable=psum type=inter false_XLX_SEP_ [-Wdump-hls-pragmas]
+../gen/UpConv_Unified.tpp:138:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=loop_tripcount_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=Compute_MAC_Tile_XLX_SEP_ PragmaOptions=min=128 max=7680 avg=1680_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS LOOP_TRIPCOUNT min=128 max=7680 avg=1680
+        ^
+../gen/UpConv_Unified.tpp:139:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=dependence_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=Compute_MAC_Tile_XLX_SEP_ PragmaOptions=variable=psum type=inter false_XLX_SEP_ [-Wdump-hls-pragmas]
 #pragma HLS DEPENDENCE variable=psum type=inter false
         ^
-../gen/Hls_Layers_UpConv.tpp:173:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=dependence_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=UpConv_Fused_Row_XLX_SEP_ PragmaOptions=variable=row_acc type=inter false_XLX_SEP_ [-Wdump-hls-pragmas]
+../gen/UpConv_Unified.tpp:140:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=dependence_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=Compute_MAC_Tile_XLX_SEP_ PragmaOptions=variable=row_acc type=inter false_XLX_SEP_ [-Wdump-hls-pragmas]
 #pragma HLS DEPENDENCE variable=row_acc type=inter false
         ^
-../gen/Hls_Layers_UpConv.tpp:178:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=unroll_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=UpConv_Fused_Row_XLX_SEP_ PragmaOptions=_XLX_SEP_ [-Wdump-hls-pragmas]
+../gen/UpConv_Unified.tpp:145:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=unroll_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=Compute_MAC_Tile_XLX_SEP_ PragmaOptions=_XLX_SEP_ [-Wdump-hls-pragmas]
 #pragma HLS UNROLL
         ^
-../gen/Hls_Layers_UpConv.tpp:182:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=unroll_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=UpConv_Fused_Row_XLX_SEP_ PragmaOptions=_XLX_SEP_ [-Wdump-hls-pragmas]
+../gen/UpConv_Unified.tpp:149:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=unroll_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=Compute_MAC_Tile_XLX_SEP_ PragmaOptions=_XLX_SEP_ [-Wdump-hls-pragmas]
 #pragma HLS UNROLL
         ^
-../gen/Hls_Layers_UpConv.tpp:195:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=unroll_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=UpConv_Fused_Row_XLX_SEP_ PragmaOptions=_XLX_SEP_ [-Wdump-hls-pragmas]
+../gen/UpConv_Unified.tpp:162:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=unroll_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=Compute_MAC_Tile_XLX_SEP_ PragmaOptions=_XLX_SEP_ [-Wdump-hls-pragmas]
 #pragma HLS UNROLL
         ^
-../gen/Hls_Layers_UpConv.tpp:217:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=bind_storage_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=UpConv_Fused_Row_XLX_SEP_ PragmaOptions=variable=b_buf type=ram_t2p impl=bram_XLX_SEP_ [-Wdump-hls-pragmas]
-#pragma HLS BIND_STORAGE variable=b_buf type=ram_t2p impl=bram
-        ^
-../gen/Hls_Layers_UpConv.tpp:218:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=bind_storage_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=UpConv_Fused_Row_XLX_SEP_ PragmaOptions=variable=g_buf type=ram_t2p impl=bram_XLX_SEP_ [-Wdump-hls-pragmas]
-#pragma HLS BIND_STORAGE variable=g_buf type=ram_t2p impl=bram
-        ^
-../gen/Hls_Layers_UpConv.tpp:219:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=bind_storage_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=UpConv_Fused_Row_XLX_SEP_ PragmaOptions=variable=be_buf type=ram_t2p impl=bram_XLX_SEP_ [-Wdump-hls-pragmas]
-#pragma HLS BIND_STORAGE variable=be_buf type=ram_t2p impl=bram
-        ^
-../gen/Hls_Layers_UpConv.tpp:222:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=pipeline_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=UpConv_Fused_Row_XLX_SEP_ PragmaOptions=II=1_XLX_SEP_ [-Wdump-hls-pragmas]
-#pragma HLS PIPELINE II=1
-        ^
-../gen/Hls_Layers_UpConv.tpp:233:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=bind_storage_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=UpConv_Fused_Row_XLX_SEP_ PragmaOptions=variable=mean_buf type=ram_2p impl=lutram_XLX_SEP_ [-Wdump-hls-pragmas]
-#pragma HLS BIND_STORAGE variable=mean_buf type=ram_2p impl=lutram
-        ^
-../gen/Hls_Layers_UpConv.tpp:234:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=bind_storage_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=UpConv_Fused_Row_XLX_SEP_ PragmaOptions=variable=inv_buf type=ram_2p impl=lutram_XLX_SEP_ [-Wdump-hls-pragmas]
-#pragma HLS BIND_STORAGE variable=inv_buf type=ram_2p impl=lutram
-        ^
-../gen/Hls_Layers_UpConv.tpp:237:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=array_partition_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=UpConv_Fused_Row_XLX_SEP_ PragmaOptions=variable=sum_rot complete_XLX_SEP_ [-Wdump-hls-pragmas]
-#pragma HLS ARRAY_PARTITION variable=sum_rot complete
-        ^
-../gen/Hls_Layers_UpConv.tpp:238:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=array_partition_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=UpConv_Fused_Row_XLX_SEP_ PragmaOptions=variable=sumsq_rot complete_XLX_SEP_ [-Wdump-hls-pragmas]
-#pragma HLS ARRAY_PARTITION variable=sumsq_rot complete
-        ^
-../gen/Hls_Layers_UpConv.tpp:242:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=pipeline_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=UpConv_Fused_Row_XLX_SEP_ PragmaOptions=II=1_XLX_SEP_ [-Wdump-hls-pragmas]
-#pragma HLS PIPELINE II=1
-        ^
-../gen/Hls_Layers_UpConv.tpp:243:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=dependence_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=UpConv_Fused_Row_XLX_SEP_ PragmaOptions=variable=sum_rot type=inter false_XLX_SEP_ [-Wdump-hls-pragmas]
-#pragma HLS DEPENDENCE variable=sum_rot type=inter false
-        ^
-../gen/Hls_Layers_UpConv.tpp:244:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=dependence_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=UpConv_Fused_Row_XLX_SEP_ PragmaOptions=variable=sumsq_rot type=inter false_XLX_SEP_ [-Wdump-hls-pragmas]
-#pragma HLS DEPENDENCE variable=sumsq_rot type=inter false
-        ^
-../gen/Hls_Layers_UpConv.tpp:245:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=dependence_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=UpConv_Fused_Row_XLX_SEP_ PragmaOptions=variable=row_acc type=inter false_XLX_SEP_ [-Wdump-hls-pragmas]
-#pragma HLS DEPENDENCE variable=row_acc type=inter false
-        ^
-../gen/Hls_Layers_UpConv.tpp:263:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=unroll_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=UpConv_Fused_Row_XLX_SEP_ PragmaOptions=_XLX_SEP_ [-Wdump-hls-pragmas]
-#pragma HLS UNROLL
-        ^
-../gen/Hls_Layers_UpConv.tpp:279:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=pipeline_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=UpConv_Fused_Row_XLX_SEP_ PragmaOptions=II=1_XLX_SEP_ [-Wdump-hls-pragmas]
-#pragma HLS PIPELINE II=1
-        ^
-../gen/Hls_Layers_UpConv.tpp:284:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=unroll_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=UpConv_Fused_Row_XLX_SEP_ PragmaOptions=_XLX_SEP_ [-Wdump-hls-pragmas]
-#pragma HLS UNROLL
-        ^
-../gen/Hls_Layers_UpConv.tpp:312:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=inline_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=UpConv_Fused_Top_XLX_SEP_ PragmaOptions=_XLX_SEP_ [-Wdump-hls-pragmas]
+../gen/UpConv_Unified.tpp:187:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=inline_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=Load_Norm_Params_XLX_SEP_ PragmaOptions=_XLX_SEP_ [-Wdump-hls-pragmas]
 #pragma HLS INLINE
         ^
-../gen/Hls_Layers_UpConv.tpp:318:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=pipeline_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=UpConv_Fused_Top_XLX_SEP_ PragmaOptions=II=1_XLX_SEP_ [-Wdump-hls-pragmas]
+../gen/UpConv_Unified.tpp:189:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=pipeline_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=Load_Norm_Params_XLX_SEP_ PragmaOptions=II=1_XLX_SEP_ [-Wdump-hls-pragmas]
 #pragma HLS PIPELINE II=1
         ^
-../gen/Hls_Layers_UpConv.tpp:329:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=pipeline_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=UpConv_Fused_Top_XLX_SEP_ PragmaOptions=II=1_XLX_SEP_ [-Wdump-hls-pragmas]
+../gen/UpConv_Unified.tpp:190:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=loop_tripcount_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=Load_Norm_Params_XLX_SEP_ PragmaOptions=min=4 max=30 avg=14_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS LOOP_TRIPCOUNT min=4 max=30 avg=14
+        ^
+../gen/UpConv_Unified.tpp:194:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=pipeline_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=Load_Norm_Params_XLX_SEP_ PragmaOptions=II=1_XLX_SEP_ [-Wdump-hls-pragmas]
 #pragma HLS PIPELINE II=1
+        ^
+../gen/UpConv_Unified.tpp:195:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=loop_tripcount_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=Load_Norm_Params_XLX_SEP_ PragmaOptions=min=4 max=30 avg=14_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS LOOP_TRIPCOUNT min=4 max=30 avg=14
+        ^
+../gen/UpConv_Unified.tpp:199:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=pipeline_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=Load_Norm_Params_XLX_SEP_ PragmaOptions=II=1_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS PIPELINE II=1
+        ^
+../gen/UpConv_Unified.tpp:200:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=loop_tripcount_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=Load_Norm_Params_XLX_SEP_ PragmaOptions=min=4 max=30 avg=14_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS LOOP_TRIPCOUNT min=4 max=30 avg=14
+        ^
+../gen/UpConv_Unified.tpp:214:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=inline_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=Compute_Pixel_Stats_XLX_SEP_ PragmaOptions=_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS INLINE
+        ^
+../gen/UpConv_Unified.tpp:216:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=array_partition_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=Compute_Pixel_Stats_XLX_SEP_ PragmaOptions=variable=sum_rot complete_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS ARRAY_PARTITION variable=sum_rot complete
+        ^
+../gen/UpConv_Unified.tpp:217:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=array_partition_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=Compute_Pixel_Stats_XLX_SEP_ PragmaOptions=variable=sumsq_rot complete_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS ARRAY_PARTITION variable=sumsq_rot complete
+        ^
+../gen/UpConv_Unified.tpp:222:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=pipeline_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=Compute_Pixel_Stats_XLX_SEP_ PragmaOptions=II=1_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS PIPELINE II=1
+        ^
+../gen/UpConv_Unified.tpp:223:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=loop_tripcount_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=Compute_Pixel_Stats_XLX_SEP_ PragmaOptions=min=1024 max=15360 avg=7680_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS LOOP_TRIPCOUNT min=1024 max=15360 avg=7680
+        ^
+../gen/UpConv_Unified.tpp:224:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=dependence_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=Compute_Pixel_Stats_XLX_SEP_ PragmaOptions=variable=sum_rot type=inter false_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS DEPENDENCE variable=sum_rot type=inter false
+        ^
+../gen/UpConv_Unified.tpp:225:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=dependence_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=Compute_Pixel_Stats_XLX_SEP_ PragmaOptions=variable=sumsq_rot type=inter false_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS DEPENDENCE variable=sumsq_rot type=inter false
+        ^
+../gen/UpConv_Unified.tpp:226:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=dependence_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=Compute_Pixel_Stats_XLX_SEP_ PragmaOptions=variable=row_acc type=inter false_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS DEPENDENCE variable=row_acc type=inter false
+        ^
+../gen/UpConv_Unified.tpp:244:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=unroll_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=Compute_Pixel_Stats_XLX_SEP_ PragmaOptions=_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS UNROLL
+        ^
+../gen/UpConv_Unified.tpp:268:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=inline_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=Apply_Norm_And_Write_XLX_SEP_ PragmaOptions=_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS INLINE
+        ^
+../gen/UpConv_Unified.tpp:272:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=pipeline_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=Apply_Norm_And_Write_XLX_SEP_ PragmaOptions=II=1_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS PIPELINE II=1
+        ^
+../gen/UpConv_Unified.tpp:273:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=loop_tripcount_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=Apply_Norm_And_Write_XLX_SEP_ PragmaOptions=min=128 max=7680 avg=3840_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS LOOP_TRIPCOUNT min=128 max=7680 avg=3840
+        ^
+../gen/UpConv_Unified.tpp:278:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=unroll_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=Apply_Norm_And_Write_XLX_SEP_ PragmaOptions=_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS UNROLL
+        ^
+../gen/UpConv_Unified.tpp:309:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=inline_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=UpConv_Fused_Row_XLX_SEP_ PragmaOptions=off_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS INLINE off
+        ^
+../gen/UpConv_Unified.tpp:324:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=bind_storage_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=UpConv_Fused_Row_XLX_SEP_ PragmaOptions=variable=row_acc type=ram_t2p impl=uram_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS BIND_STORAGE variable=row_acc type=ram_t2p impl=uram
+        ^
+../gen/UpConv_Unified.tpp:325:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=array_partition_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=UpConv_Fused_Row_XLX_SEP_ PragmaOptions=variable=row_acc cyclic factor=16 dim=2_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS ARRAY_PARTITION variable=row_acc cyclic factor=16 dim=2
+        ^
+../gen/UpConv_Unified.tpp:332:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=bind_storage_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=UpConv_Fused_Row_XLX_SEP_ PragmaOptions=variable=w_local type=ram_t2p impl=bram latency=2_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS BIND_STORAGE variable=w_local type=ram_t2p impl=bram latency=2
+        ^
+../gen/UpConv_Unified.tpp:333:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=array_partition_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=UpConv_Fused_Row_XLX_SEP_ PragmaOptions=variable=w_local complete dim=1_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS ARRAY_PARTITION variable=w_local complete dim=1
+        ^
+../gen/UpConv_Unified.tpp:337:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=bind_storage_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=UpConv_Fused_Row_XLX_SEP_ PragmaOptions=variable=mean_buf type=ram_2p impl=lutram_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS BIND_STORAGE variable=mean_buf type=ram_2p impl=lutram
+        ^
+../gen/UpConv_Unified.tpp:338:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=bind_storage_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=UpConv_Fused_Row_XLX_SEP_ PragmaOptions=variable=inv_buf type=ram_2p impl=lutram_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS BIND_STORAGE variable=inv_buf type=ram_2p impl=lutram
+        ^
+../gen/UpConv_Unified.tpp:347:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=loop_tripcount_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=UpConv_Fused_Row_XLX_SEP_ PragmaOptions=min=8 max=60 avg=29_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS LOOP_TRIPCOUNT min=8 max=60 avg=29
+        ^
+../gen/UpConv_Unified.tpp:372:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=inline_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=UpConv_Fused_Top_XLX_SEP_ PragmaOptions=_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS INLINE
+        ^
+../gen/UpConv_Unified.tpp:379:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=bind_storage_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=UpConv_Fused_Top_XLX_SEP_ PragmaOptions=variable=b_buf type=ram_t2p impl=bram_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS BIND_STORAGE variable=b_buf type=ram_t2p impl=bram
+        ^
+../gen/UpConv_Unified.tpp:380:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=bind_storage_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=UpConv_Fused_Top_XLX_SEP_ PragmaOptions=variable=g_buf type=ram_t2p impl=bram_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS BIND_STORAGE variable=g_buf type=ram_t2p impl=bram
+        ^
+../gen/UpConv_Unified.tpp:381:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=bind_storage_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=UpConv_Fused_Top_XLX_SEP_ PragmaOptions=variable=be_buf type=ram_t2p impl=bram_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS BIND_STORAGE variable=be_buf type=ram_t2p impl=bram
+        ^
+../gen/UpConv_Unified.tpp:388:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=pipeline_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=UpConv_Fused_Top_XLX_SEP_ PragmaOptions=II=1_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS PIPELINE II=1
+        ^
+../gen/UpConv_Unified.tpp:389:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=loop_tripcount_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=UpConv_Fused_Top_XLX_SEP_ PragmaOptions=min=64 max=7680 avg=960_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS LOOP_TRIPCOUNT min=64 max=7680 avg=960
+        ^
+../gen/UpConv_Unified.tpp:396:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=loop_tripcount_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=UpConv_Fused_Top_XLX_SEP_ PragmaOptions=min=16 max=128 avg=64_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS LOOP_TRIPCOUNT min=16 max=128 avg=64
+        ^
+../gen/UpConv_Unified.tpp:401:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=pipeline_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=UpConv_Fused_Top_XLX_SEP_ PragmaOptions=II=1_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS PIPELINE II=1
+        ^
+../gen/UpConv_Unified.tpp:402:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=loop_tripcount_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=UpConv_Fused_Top_XLX_SEP_ PragmaOptions=min=64 max=7680 avg=960_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS LOOP_TRIPCOUNT min=64 max=7680 avg=960
         ^
 directive:1:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=top_XLX_SEP_ PragmaContext=directive_XLX_SEP_ PragmaFunction=upconv_core_top_XLX_SEP_ PragmaOptions=name=upconv_core_top_XLX_SEP_ [-Wdump-hls-pragmas]
 #pragma HLSDIRECTIVE TOP name=upconv_core_top
         ^
-../gen/upconv_core_top.cpp:21:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=interface_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=upconv_core_top_XLX_SEP_ PragmaOptions=m_axi port=X offset=slave bundle=gmem_in max_read_burst_length=64_XLX_SEP_ [-Wdump-hls-pragmas]
+../gen/upconv_core_top.cpp:20:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=interface_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=upconv_core_top_XLX_SEP_ PragmaOptions=m_axi port=X offset=slave bundle=gmem_in max_read_burst_length=64_XLX_SEP_ [-Wdump-hls-pragmas]
 #pragma HLS INTERFACE m_axi port=X offset=slave bundle=gmem_in max_read_burst_length=64
         ^
-../gen/upconv_core_top.cpp:22:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=interface_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=upconv_core_top_XLX_SEP_ PragmaOptions=m_axi port=W offset=slave bundle=gmem_weight max_read_burst_length=64_XLX_SEP_ [-Wdump-hls-pragmas]
+../gen/upconv_core_top.cpp:21:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=interface_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=upconv_core_top_XLX_SEP_ PragmaOptions=m_axi port=W offset=slave bundle=gmem_weight max_read_burst_length=64_XLX_SEP_ [-Wdump-hls-pragmas]
 #pragma HLS INTERFACE m_axi port=W offset=slave bundle=gmem_weight max_read_burst_length=64
         ^
-../gen/upconv_core_top.cpp:23:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=interface_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=upconv_core_top_XLX_SEP_ PragmaOptions=m_axi port=B offset=slave bundle=gmem_param max_read_burst_length=64_XLX_SEP_ [-Wdump-hls-pragmas]
+../gen/upconv_core_top.cpp:22:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=interface_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=upconv_core_top_XLX_SEP_ PragmaOptions=m_axi port=B offset=slave bundle=gmem_param max_read_burst_length=64_XLX_SEP_ [-Wdump-hls-pragmas]
 #pragma HLS INTERFACE m_axi port=B offset=slave bundle=gmem_param max_read_burst_length=64
         ^
-../gen/upconv_core_top.cpp:24:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=interface_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=upconv_core_top_XLX_SEP_ PragmaOptions=m_axi port=G offset=slave bundle=gmem_param max_read_burst_length=64_XLX_SEP_ [-Wdump-hls-pragmas]
+../gen/upconv_core_top.cpp:23:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=interface_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=upconv_core_top_XLX_SEP_ PragmaOptions=m_axi port=G offset=slave bundle=gmem_param max_read_burst_length=64_XLX_SEP_ [-Wdump-hls-pragmas]
 #pragma HLS INTERFACE m_axi port=G offset=slave bundle=gmem_param max_read_burst_length=64
         ^
-../gen/upconv_core_top.cpp:25:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=interface_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=upconv_core_top_XLX_SEP_ PragmaOptions=m_axi port=BE offset=slave bundle=gmem_param max_read_burst_length=64_XLX_SEP_ [-Wdump-hls-pragmas]
+../gen/upconv_core_top.cpp:24:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=interface_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=upconv_core_top_XLX_SEP_ PragmaOptions=m_axi port=BE offset=slave bundle=gmem_param max_read_burst_length=64_XLX_SEP_ [-Wdump-hls-pragmas]
 #pragma HLS INTERFACE m_axi port=BE offset=slave bundle=gmem_param max_read_burst_length=64
         ^
-../gen/upconv_core_top.cpp:26:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=interface_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=upconv_core_top_XLX_SEP_ PragmaOptions=m_axi port=Y offset=slave bundle=gmem_out max_write_burst_length=64_XLX_SEP_ [-Wdump-hls-pragmas]
+../gen/upconv_core_top.cpp:25:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=interface_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=upconv_core_top_XLX_SEP_ PragmaOptions=m_axi port=Y offset=slave bundle=gmem_out max_write_burst_length=64_XLX_SEP_ [-Wdump-hls-pragmas]
 #pragma HLS INTERFACE m_axi port=Y offset=slave bundle=gmem_out max_write_burst_length=64
         ^
-../gen/upconv_core_top.cpp:28:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=interface_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=upconv_core_top_XLX_SEP_ PragmaOptions=s_axilite port=X bundle=control_XLX_SEP_ [-Wdump-hls-pragmas]
+../gen/upconv_core_top.cpp:27:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=interface_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=upconv_core_top_XLX_SEP_ PragmaOptions=s_axilite port=X bundle=control_XLX_SEP_ [-Wdump-hls-pragmas]
 #pragma HLS INTERFACE s_axilite port=X bundle=control
         ^
-../gen/upconv_core_top.cpp:29:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=interface_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=upconv_core_top_XLX_SEP_ PragmaOptions=s_axilite port=W bundle=control_XLX_SEP_ [-Wdump-hls-pragmas]
+../gen/upconv_core_top.cpp:28:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=interface_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=upconv_core_top_XLX_SEP_ PragmaOptions=s_axilite port=W bundle=control_XLX_SEP_ [-Wdump-hls-pragmas]
 #pragma HLS INTERFACE s_axilite port=W bundle=control
         ^
-../gen/upconv_core_top.cpp:30:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=interface_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=upconv_core_top_XLX_SEP_ PragmaOptions=s_axilite port=B bundle=control_XLX_SEP_ [-Wdump-hls-pragmas]
+../gen/upconv_core_top.cpp:29:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=interface_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=upconv_core_top_XLX_SEP_ PragmaOptions=s_axilite port=B bundle=control_XLX_SEP_ [-Wdump-hls-pragmas]
 #pragma HLS INTERFACE s_axilite port=B bundle=control
         ^
-../gen/upconv_core_top.cpp:31:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=interface_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=upconv_core_top_XLX_SEP_ PragmaOptions=s_axilite port=G bundle=control_XLX_SEP_ [-Wdump-hls-pragmas]
+../gen/upconv_core_top.cpp:30:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=interface_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=upconv_core_top_XLX_SEP_ PragmaOptions=s_axilite port=G bundle=control_XLX_SEP_ [-Wdump-hls-pragmas]
 #pragma HLS INTERFACE s_axilite port=G bundle=control
         ^
-../gen/upconv_core_top.cpp:32:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=interface_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=upconv_core_top_XLX_SEP_ PragmaOptions=s_axilite port=BE bundle=control_XLX_SEP_ [-Wdump-hls-pragmas]
+../gen/upconv_core_top.cpp:31:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=interface_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=upconv_core_top_XLX_SEP_ PragmaOptions=s_axilite port=BE bundle=control_XLX_SEP_ [-Wdump-hls-pragmas]
 #pragma HLS INTERFACE s_axilite port=BE bundle=control
         ^
-../gen/upconv_core_top.cpp:33:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=interface_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=upconv_core_top_XLX_SEP_ PragmaOptions=s_axilite port=Y bundle=control_XLX_SEP_ [-Wdump-hls-pragmas]
+../gen/upconv_core_top.cpp:32:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=interface_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=upconv_core_top_XLX_SEP_ PragmaOptions=s_axilite port=Y bundle=control_XLX_SEP_ [-Wdump-hls-pragmas]
 #pragma HLS INTERFACE s_axilite port=Y bundle=control
         ^
-../gen/upconv_core_top.cpp:34:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=interface_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=upconv_core_top_XLX_SEP_ PragmaOptions=s_axilite port=epsilon bundle=control_XLX_SEP_ [-Wdump-hls-pragmas]
+../gen/upconv_core_top.cpp:33:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=interface_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=upconv_core_top_XLX_SEP_ PragmaOptions=s_axilite port=epsilon bundle=control_XLX_SEP_ [-Wdump-hls-pragmas]
 #pragma HLS INTERFACE s_axilite port=epsilon bundle=control
         ^
-../gen/upconv_core_top.cpp:35:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=interface_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=upconv_core_top_XLX_SEP_ PragmaOptions=s_axilite port=mode bundle=control_XLX_SEP_ [-Wdump-hls-pragmas]
+../gen/upconv_core_top.cpp:34:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=interface_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=upconv_core_top_XLX_SEP_ PragmaOptions=s_axilite port=mode bundle=control_XLX_SEP_ [-Wdump-hls-pragmas]
 #pragma HLS INTERFACE s_axilite port=mode bundle=control
         ^
-../gen/upconv_core_top.cpp:36:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=interface_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=upconv_core_top_XLX_SEP_ PragmaOptions=s_axilite port=return bundle=control_XLX_SEP_ [-Wdump-hls-pragmas]
+../gen/upconv_core_top.cpp:35:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=interface_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=upconv_core_top_XLX_SEP_ PragmaOptions=s_axilite port=return bundle=control_XLX_SEP_ [-Wdump-hls-pragmas]
 #pragma HLS INTERFACE s_axilite port=return bundle=control
         ^
-../gen/upconv_core_top.cpp:42:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=bind_storage_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=upconv_core_top_XLX_SEP_ PragmaOptions=variable=x_buf type=ram_t2p impl=uram_XLX_SEP_ [-Wdump-hls-pragmas]
+../gen/upconv_core_top.cpp:41:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=bind_storage_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=upconv_core_top_XLX_SEP_ PragmaOptions=variable=x_buf type=ram_t2p impl=uram_XLX_SEP_ [-Wdump-hls-pragmas]
 #pragma HLS BIND_STORAGE variable=x_buf type=ram_t2p impl=uram
         ^
-254 warnings generated.
+276 warnings generated.

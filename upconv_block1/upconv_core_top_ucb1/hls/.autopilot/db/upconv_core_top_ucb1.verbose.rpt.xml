@@ -1,7 +1,7 @@
 <profile>
 
 <section name = "Vitis HLS Report for 'upconv_core_top_ucb1'" level="0">
-<item name = "Date">Thu May  7 21:58:28 2026
+<item name = "Date">Tue Jun  2 22:29:37 2026
 </item>
 <item name = "Version">2024.2 (Build 5238294 on Nov  8 2024)</item>
 <item name = "Project">upconv_core_top_ucb1</item>
@@ -15,7 +15,7 @@
 <section name = "" level="1">
 <item name = "Summary"><table name="" hasTotal="0">
 <keys size="4">Clock, Target, Estimated, Uncertainty</keys>
-<column name="ap_clk">3.33 ns, 2.719 ns, 0.90 ns</column>
+<column name="ap_clk">3.33 ns, 2.433 ns, 0.90 ns</column>
 </table>
 </item>
 </section>
@@ -24,21 +24,21 @@
 <section name = "" level="1">
 <item name = "Summary"><table name="" hasTotal="0">
 <keys size="8">, min, max, min, max, min, max, Type</keys>
-<column name="">11858335, 174463135, 39.524 ms, 0.581 sec, 11858336, 174463136, no</column>
+<column name="">5329375, 22586335, 17.763 ms, 75.280 ms, 5329376, 22586336, no</column>
 </table>
 </item>
 <item name = "Detail">
 <section name = "" level="1">
 <item name = "Instance"><table name="" hasTotal="0">
 <keys size="9">Instance, Module, min, max, min, max, min, max, Type</keys>
-<column name="grp_upconv_core_top_ucb1_Pipeline_LOAD_ROW0_VITIS_LOOP_296_1_fu_225">upconv_core_top_ucb1_Pipeline_LOAD_ROW0_VITIS_LOOP_296_1, 963, 963, 3.210 us, 3.210 us, 961, 961, loop auto-rewind stp (delay=0 clock cycles(s))</column>
-<column name="grp_UpConv_Fused_Row_8_32_32_480_240_s_fu_234">UpConv_Fused_Row_8_32_32_480_240_s, 184797, 2725497, 0.616 ms, 9.084 ms, 184797, 2725497, no</column>
-<column name="grp_upconv_core_top_ucb1_Pipeline_LOAD_ROW_VITIS_LOOP_307_2_fu_287">upconv_core_top_ucb1_Pipeline_LOAD_ROW_VITIS_LOOP_307_2, 973, 973, 3.243 us, 3.243 us, 961, 961, loop auto-rewind stp (delay=0 clock cycles(s))</column>
+<column name="grp_upconv_core_top_ucb1_Pipeline_LOAD_ROW0_VITIS_LOOP_386_1_fu_229">upconv_core_top_ucb1_Pipeline_LOAD_ROW0_VITIS_LOOP_386_1, 963, 963, 3.210 us, 3.210 us, 961, 961, loop auto-rewind stp (delay=0 clock cycles(s))</column>
+<column name="grp_UpConv_Fused_Row_8_32_32_480_240_s_fu_238">UpConv_Fused_Row_8_32_32_480_240_s, 82782, 352422, 0.276 ms, 1.175 ms, 82782, 352422, no</column>
+<column name="grp_upconv_core_top_ucb1_Pipeline_LOAD_ROW_VITIS_LOOP_397_2_fu_295">upconv_core_top_ucb1_Pipeline_LOAD_ROW_VITIS_LOOP_397_2, 973, 973, 3.243 us, 3.243 us, 961, 961, loop auto-rewind stp (delay=0 clock cycles(s))</column>
 </table>
 </item>
 <item name = "Loop"><table name="" hasTotal="0">
 <keys size="8">Loop Name, min, max, Latency, achieved, target, Count, Pipelined</keys>
-<column name="- ROW_LOOP">11487763, 169011163, 370573 ~ 5451973, -, -, 31, no</column>
+<column name="- ROW_LOOP">5162833, 21880513, 166543 ~ 705823, -, -, 31, no</column>
 </table>
 </item>
 </section>
@@ -53,26 +53,26 @@
 <column name="DSP">-, -, -, -, -</column>
 <column name="Expression">-, -, 0, 145, -</column>
 <column name="FIFO">-, -, -, -, -</column>
-<column name="Instance">148, 565, 55545, 43621, 16</column>
+<column name="Instance">148, 670, 73389, 52139, 16</column>
 <column name="Memory">-, -, 0, 0, 4</column>
 <column name="Multiplexer">-, -, 0, 369, -</column>
 <column name="Register">-, -, 522, -, -</column>
 <specialColumn name="Available">624, 1728, 460800, 230400, 96</specialColumn>
-<specialColumn name="Utilization (%)">23, 32, 12, 19, 20</specialColumn>
+<specialColumn name="Utilization (%)">23, 38, 16, 22, 20</specialColumn>
 </table>
 </item>
 <item name = "Detail">
 <section name = "" level="1">
 <item name = "Instance"><table name="" hasTotal="1">
 <keys size="7">Instance, Module, BRAM_18K, DSP, FF, LUT, URAM</keys>
-<column name="grp_UpConv_Fused_Row_8_32_32_480_240_s_fu_234">UpConv_Fused_Row_8_32_32_480_240_s, 88, 565, 50032, 37719, 16</column>
+<column name="grp_UpConv_Fused_Row_8_32_32_480_240_s_fu_238">UpConv_Fused_Row_8_32_32_480_240_s, 88, 670, 67876, 46237, 16</column>
 <column name="control_s_axi_U">control_s_axi, 0, 0, 478, 840, 0</column>
 <column name="gmem_in_m_axi_U">gmem_in_m_axi, 15, 0, 1044, 1114, 0</column>
 <column name="gmem_out_m_axi_U">gmem_out_m_axi, 15, 0, 1038, 1104, 0</column>
 <column name="gmem_param_m_axi_U">gmem_param_m_axi, 15, 0, 1044, 1114, 0</column>
 <column name="gmem_weight_m_axi_U">gmem_weight_m_axi, 15, 0, 1044, 1114, 0</column>
-<column name="grp_upconv_core_top_ucb1_Pipeline_LOAD_ROW0_VITIS_LOOP_296_1_fu_225">upconv_core_top_ucb1_Pipeline_LOAD_ROW0_VITIS_LOOP_296_1, 0, 0, 293, 187, 0</column>
-<column name="grp_upconv_core_top_ucb1_Pipeline_LOAD_ROW_VITIS_LOOP_307_2_fu_287">upconv_core_top_ucb1_Pipeline_LOAD_ROW_VITIS_LOOP_307_2, 0, 0, 572, 429, 0</column>
+<column name="grp_upconv_core_top_ucb1_Pipeline_LOAD_ROW0_VITIS_LOOP_386_1_fu_229">upconv_core_top_ucb1_Pipeline_LOAD_ROW0_VITIS_LOOP_386_1, 0, 0, 293, 187, 0</column>
+<column name="grp_upconv_core_top_ucb1_Pipeline_LOAD_ROW_VITIS_LOOP_397_2_fu_295">upconv_core_top_ucb1_Pipeline_LOAD_ROW_VITIS_LOOP_397_2, 0, 0, 572, 429, 0</column>
 </table>
 </item>
 <item name = "DSP"><table name="" hasTotal="0">
@@ -90,12 +90,12 @@
 </item>
 <item name = "Expression"><table name="" hasTotal="1">
 <keys size="7">Variable Name, Operation, DSP, FF, LUT, Bitwidth P0, Bitwidth P1</keys>
-<column name="add_ln304_1_fu_396_p2">+, 0, 0, 13, 6, 1</column>
-<column name="add_ln304_2_fu_356_p2">+, 0, 0, 12, 5, 1</column>
-<column name="add_ln304_fu_308_p2">+, 0, 0, 71, 64, 15</column>
-<column name="add_ln312_fu_417_p2">+, 0, 0, 13, 6, 2</column>
-<column name="sub_ln305_fu_382_p2">-, 0, 0, 22, 15, 15</column>
-<column name="icmp_ln304_fu_350_p2">icmp, 0, 0, 14, 6, 7</column>
+<column name="add_ln394_1_fu_404_p2">+, 0, 0, 13, 6, 1</column>
+<column name="add_ln394_2_fu_364_p2">+, 0, 0, 12, 5, 1</column>
+<column name="add_ln394_fu_316_p2">+, 0, 0, 71, 64, 15</column>
+<column name="add_ln402_fu_425_p2">+, 0, 0, 13, 6, 2</column>
+<column name="sub_ln395_fu_390_p2">-, 0, 0, 22, 15, 15</column>
+<column name="icmp_ln394_fu_358_p2">icmp, 0, 0, 14, 6, 7</column>
 </table>
 </item>
 <item name = "Multiplexer"><table name="" hasTotal="1">
@@ -113,9 +113,9 @@
 <column name="gmem_param_0_RREADY">9, 2, 1, 2</column>
 <column name="gmem_weight_0_ARVALID">9, 2, 1, 2</column>
 <column name="gmem_weight_0_RREADY">9, 2, 1, 2</column>
-<column name="grp_UpConv_Fused_Row_8_32_32_480_240_s_fu_234_ho">26, 5, 6, 30</column>
-<column name="hi_fu_168">9, 2, 6, 12</column>
-<column name="indvar_fu_172">9, 2, 5, 10</column>
+<column name="grp_UpConv_Fused_Row_8_32_32_480_240_s_fu_238_ho">26, 5, 6, 30</column>
+<column name="hi_fu_172">9, 2, 6, 12</column>
+<column name="indvar_fu_176">9, 2, 5, 10</column>
 <column name="x_buf_address0">20, 4, 11, 44</column>
 <column name="x_buf_ce0">20, 4, 1, 4</column>
 <column name="x_buf_d0">14, 3, 256, 768</column>
@@ -124,25 +124,25 @@
 </item>
 <item name = "Register"><table name="" hasTotal="1">
 <keys size="5">Name, FF, LUT, Bits, Const Bits</keys>
-<column name="BE_read_reg_447">64, 0, 64, 0</column>
-<column name="B_read_reg_457">64, 0, 64, 0</column>
-<column name="G_read_reg_452">64, 0, 64, 0</column>
-<column name="W_read_reg_462">64, 0, 64, 0</column>
-<column name="Y_read_reg_442">64, 0, 64, 0</column>
-<column name="add_ln312_reg_506">6, 0, 6, 0</column>
+<column name="BE_read_reg_455">64, 0, 64, 0</column>
+<column name="B_read_reg_465">64, 0, 64, 0</column>
+<column name="G_read_reg_460">64, 0, 64, 0</column>
+<column name="W_read_reg_470">64, 0, 64, 0</column>
+<column name="Y_read_reg_450">64, 0, 64, 0</column>
+<column name="add_ln402_reg_514">6, 0, 6, 0</column>
 <column name="ap_CS_fsm">21, 0, 21, 0</column>
-<column name="empty_44_reg_496">6, 0, 6, 0</column>
-<column name="epsilon_read_reg_437">16, 0, 16, 0</column>
-<column name="grp_UpConv_Fused_Row_8_32_32_480_240_s_fu_234_ap_start_reg">1, 0, 1, 0</column>
-<column name="grp_upconv_core_top_ucb1_Pipeline_LOAD_ROW0_VITIS_LOOP_296_1_fu_225_ap_start_reg">1, 0, 1, 0</column>
-<column name="grp_upconv_core_top_ucb1_Pipeline_LOAD_ROW_VITIS_LOOP_307_2_fu_287_ap_start_reg">1, 0, 1, 0</column>
-<column name="hi_1_reg_483">6, 0, 6, 0</column>
-<column name="hi_fu_168">6, 0, 6, 0</column>
-<column name="indvar_fu_172">5, 0, 5, 0</column>
-<column name="shl_ln312_reg_501">6, 0, 6, 0</column>
-<column name="sub_ln305_reg_491">9, 0, 15, 6</column>
-<column name="trunc_ln1_reg_473">59, 0, 59, 0</column>
-<column name="trunc_ln_reg_467">59, 0, 59, 0</column>
+<column name="empty_44_reg_504">6, 0, 6, 0</column>
+<column name="epsilon_read_reg_445">16, 0, 16, 0</column>
+<column name="grp_UpConv_Fused_Row_8_32_32_480_240_s_fu_238_ap_start_reg">1, 0, 1, 0</column>
+<column name="grp_upconv_core_top_ucb1_Pipeline_LOAD_ROW0_VITIS_LOOP_386_1_fu_229_ap_start_reg">1, 0, 1, 0</column>
+<column name="grp_upconv_core_top_ucb1_Pipeline_LOAD_ROW_VITIS_LOOP_397_2_fu_295_ap_start_reg">1, 0, 1, 0</column>
+<column name="hi_1_reg_491">6, 0, 6, 0</column>
+<column name="hi_fu_172">6, 0, 6, 0</column>
+<column name="indvar_fu_176">5, 0, 5, 0</column>
+<column name="shl_ln402_reg_509">6, 0, 6, 0</column>
+<column name="sub_ln395_reg_499">9, 0, 15, 6</column>
+<column name="trunc_ln1_reg_481">59, 0, 59, 0</column>
+<column name="trunc_ln_reg_475">59, 0, 59, 0</column>
 </table>
 </item>
 </section>

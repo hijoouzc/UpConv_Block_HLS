@@ -18,51 +18,32 @@
 <PipelineType>no</PipelineType>
 <SummaryOfTimingAnalysis>
 <unit>ns</unit>
-<EstimatedClockPeriod>2.719</EstimatedClockPeriod>
+<EstimatedClockPeriod>2.433</EstimatedClockPeriod>
 </SummaryOfTimingAnalysis>
 <SummaryOfOverallLatency>
 <unit>clock cycles</unit>
-<Best-caseLatency>374214</Best-caseLatency>
-<Average-caseLatency>901794</Average-caseLatency>
-<Worst-caseLatency>3433854</Worst-caseLatency>
-<Best-caseRealTimeLatency>1.247 ms</Best-caseRealTimeLatency>
-<Average-caseRealTimeLatency>3.006 ms</Average-caseRealTimeLatency>
-<Worst-caseRealTimeLatency>11.445 ms</Worst-caseRealTimeLatency>
-<Interval-min>374214</Interval-min>
-<Interval-max>3433854</Interval-max>
+<Best-caseLatency>277494</Best-caseLatency>
+<Average-caseLatency>547134</Average-caseLatency>
+<Worst-caseLatency>816774</Worst-caseLatency>
+<Best-caseRealTimeLatency>0.925 ms</Best-caseRealTimeLatency>
+<Average-caseRealTimeLatency>1.824 ms</Average-caseRealTimeLatency>
+<Worst-caseRealTimeLatency>2.722 ms</Worst-caseRealTimeLatency>
+<Interval-min>277494</Interval-min>
+<Interval-max>816774</Interval-max>
 </SummaryOfOverallLatency>
-<SummaryOfLoopLatency>
-<PIXEL_NORM>
-<Slack>2.43</Slack>
-<TripCount>32</TripCount>
-<Latency>113792</Latency>
-<AbsoluteTimeLatency>379268</AbsoluteTimeLatency>
-<IterationLatency>3556</IterationLatency>
-<InstanceList>
-</InstanceList>
-</PIXEL_NORM>
-</SummaryOfLoopLatency>
 <SummaryOfViolations>
 <IssueType>-</IssueType>
 <ViolationType>-</ViolationType>
-<SourceLocation>../gen/Hls_Layers_UpConv.tpp:238</SourceLocation>
-<SummaryOfLoopViolations>
-<PIXEL_NORM>
-<Name>PIXEL_NORM</Name>
-<IssueType>-</IssueType>
-<ViolationType>-</ViolationType>
-<SourceLocation>../gen/Hls_Layers_UpConv.tpp:246</SourceLocation>
-</PIXEL_NORM>
-</SummaryOfLoopViolations>
+<SourceLocation>../gen/Hls_Layers_UpConv.tpp:337</SourceLocation>
 </SummaryOfViolations>
 </PerformanceEstimates>
 
 <AreaEstimates>
 <Resources>
 <BRAM_18K>144</BRAM_18K>
-<DSP>565</DSP>
-<FF>50048</FF>
-<LUT>38577</LUT>
+<DSP>670</DSP>
+<FF>67876</FF>
+<LUT>46170</LUT>
 <URAM>16</URAM>
 </Resources>
 <AvailableResources>
