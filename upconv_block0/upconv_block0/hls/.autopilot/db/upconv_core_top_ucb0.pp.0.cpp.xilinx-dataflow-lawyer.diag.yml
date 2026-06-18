@@ -1,0 +1,8 @@
+---
+MainSourceFile:  /home/hoinguyen/Documents/Vitis/UpConv_HLS/upconv_block0/upconv_block0/hls/.autopilot/db/upconv_core_top_ucb0.pp.0.cpp
+Diagnostics:     
+  - DiagnosticName:  clang-diagnostic-warning
+    Message:         '[xlx-df-check-10] Either use an argument of the function or declare the variable inside the dataflow loop body'
+    FileOffset:      '201:90'
+    FilePath:        ../gen/Hls_Layers_UpConv.tpp
+...

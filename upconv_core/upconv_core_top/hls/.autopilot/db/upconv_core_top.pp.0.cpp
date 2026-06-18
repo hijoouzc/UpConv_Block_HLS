@@ -1,4 +1,4 @@
-# 1 "../gen/upconv_core_top.cpp"
+# 1 "../gen2/upconv_core_top.cpp"
 # 1 "<built-in>" 1
 # 1 "<built-in>" 3
 # 376 "<built-in>" 3
@@ -152,13 +152,10 @@ extern "C" {
 
 }
 # 2 "<built-in>" 2
-# 1 "../gen/upconv_core_top.cpp" 2
+# 1 "../gen2/upconv_core_top.cpp" 2
+# 1 "../gen2/upconv_core.h" 1
 
-
-
-# 1 "../gen/upconv_core.h" 1
-
-# 1 "../gen/Core.h" 1
+# 1 "../gen2/Core.h" 1
 
 
 
@@ -5702,16 +5699,16 @@ inline __attribute__((nodebug)) bool operator!=(
 }
 # 370 "/home/tools/Xilinx/Vitis/2024.2/common/technology/autopilot/ap_fixed.h" 2
 # 365 "/home/tools/Xilinx/Vitis/2024.2/common/technology/autopilot/ap_int.h" 2
-# 5 "../gen/Core.h" 2
+# 5 "../gen2/Core.h" 2
 # 1 "/home/tools/Xilinx/Vitis/2024.2/common/technology/autopilot/hls_half.h" 1
-# 6 "../gen/Core.h" 2
+# 6 "../gen2/Core.h" 2
 
 typedef half data_t;
 typedef ap_uint<256> data_256_t;
 
 typedef data_256_t* DDR_PTR;
 typedef const data_256_t* DDR_CONST_PTR;
-# 3 "../gen/upconv_core.h" 2
+# 3 "../gen2/upconv_core.h" 2
 
 
 
@@ -5732,9 +5729,9 @@ __attribute__((sdx_kernel("upconv_core_top", 0))) void upconv_core_top(
     int mode
 );
 }
-# 5 "../gen/upconv_core_top.cpp" 2
-# 1 "../gen/UpConv_Unified.tpp" 1
-# 10 "../gen/UpConv_Unified.tpp"
+# 2 "../gen2/upconv_core_top.cpp" 2
+# 1 "../gen2/Hls_Layers_UpConv.tpp" 1
+# 10 "../gen2/Hls_Layers_UpConv.tpp"
 # 1 "/home/tools/Xilinx/Vitis/2024.2/common/technology/autopilot/hls_math.h" 1
 # 26 "/home/tools/Xilinx/Vitis/2024.2/common/technology/autopilot/hls_math.h"
 # 1 "/home/tools/Xilinx/Vitis/2024.2/tps/lnx64/gcc-8.3.0/lib/gcc/x86_64-pc-linux-gnu/8.3.0/../../../../include/c++/8.3.0/cmath" 1 3
@@ -29560,7 +29557,7 @@ namespace hls {
     uint32_t logb(uint32_t);
 
 };
-# 11 "../gen/UpConv_Unified.tpp" 2
+# 11 "../gen2/Hls_Layers_UpConv.tpp" 2
 
 # 1 "/home/tools/Xilinx/Vitis/2024.2/tps/lnx64/gcc-8.3.0/lib/gcc/x86_64-pc-linux-gnu/8.3.0/../../../../include/c++/8.3.0/cstring" 1 3
 # 40 "/home/tools/Xilinx/Vitis/2024.2/tps/lnx64/gcc-8.3.0/lib/gcc/x86_64-pc-linux-gnu/8.3.0/../../../../include/c++/8.3.0/cstring" 3
@@ -30012,7 +30009,7 @@ namespace std __attribute__ ((__visibility__ ("default")))
   using ::strstr;
 # 121 "/home/tools/Xilinx/Vitis/2024.2/tps/lnx64/gcc-8.3.0/lib/gcc/x86_64-pc-linux-gnu/8.3.0/../../../../include/c++/8.3.0/cstring" 3
 }
-# 13 "../gen/UpConv_Unified.tpp" 2
+# 13 "../gen2/Hls_Layers_UpConv.tpp" 2
 
 
 
@@ -30060,64 +30057,36 @@ static inline float my_sqrt_f(float x) {
 
 
 }
-
-
-
-
-
-
-
-static inline void Reset_Row_Buffer(data_t (&row_acc)[256][480], int W_OUT, int C_WORDS_OUT) {
-#pragma HLS INLINE
- int rw = 0, rcw = 0;
-    int total = W_OUT * C_WORDS_OUT;
-    RESET_ROW_ACC: for (int m = 0; m < total; m++) {
-#pragma HLS PIPELINE II=1
-#pragma HLS LOOP_TRIPCOUNT min=128 max=7680 avg=3840
- VITIS_LOOP_74_1: for (int l = 0; l < 16; l++) {
-#pragma HLS UNROLL
- row_acc[rw][rcw * 16 + l] = (data_t)0;
-        }
-        if (rcw == C_WORDS_OUT - 1) { rcw = 0; rw++; } else { rcw++; }
-    }
-}
-
+# 74 "../gen2/Hls_Layers_UpConv.tpp"
 template<int PEs>
-static inline void Load_Weight_Tile(
-    const data_256_t* W_ptr,
-    data_256_t (&w_local)[PEs][540],
-    int tile, int C_OUT, int CI_WORDS
-) {
-#pragma HLS INLINE
+static void uc_load_tile(const data_256_t* W_ptr, int tile, int C_OUT, int CI_WORDS,
+                         data_256_t wbuf[PEs][540]) {
+#pragma HLS INLINE off
  int co_base = tile * PEs;
     PRELOAD_W: for (int tc = 0; tc < PEs; tc++) {
         int co = co_base + tc;
         if (co < C_OUT) {
-            int axi_base_addr = co * 9 * CI_WORDS;
+            int k_cnt = 0, ci_cnt = 0;
             W_FLAT: for (int kci = 0; kci < 9 * CI_WORDS; kci++) {
 #pragma HLS PIPELINE II=1
 #pragma HLS LOOP_TRIPCOUNT min=72 max=540 avg=252
- w_local[tc][kci] = W_ptr[axi_base_addr + kci];
+ wbuf[tc][k_cnt * 60 + ci_cnt] = W_ptr[co * 9 * CI_WORDS + kci];
+                ci_cnt++;
+                if (ci_cnt >= CI_WORDS) { ci_cnt = 0; k_cnt++; }
             }
         }
     }
 }
 
 template<int PEs>
-static inline void Compute_MAC_Tile(
-    data_256_t* x_buf,
-    const data_256_t (&w_local)[PEs][540],
-    data_t (&row_acc)[256][480],
-    int tile, int ho, int H_IN, int W_IN, int C_OUT, int CI_WORDS
-) {
-#pragma HLS INLINE
- const int S = 2;
-    const int PAD = 1;
-    const int W_OUT = W_IN * S;
+static void uc_compute_tile(data_256_t wbuf[PEs][540], data_256_t* x_buf,
+                            data_t row_acc[256][480], int tile, int ho,
+                            int H_IN, int W_IN, int CI_WORDS, int W_OUT, int C_OUT) {
+#pragma HLS INLINE off
+ const int S = 2, PAD = 1;
     int co_base = tile * PEs;
-
     KH_LOOP: for (int kh = 0; kh < 3; kh++) {
-#pragma HLS LOOP_FLATTEN off
+#pragma HLS LOOP_TRIPCOUNT min=1 max=2
  int hpk = ho + PAD - kh;
         if (hpk < 0 || hpk % S != 0) continue;
         int hi = hpk / S;
@@ -30125,12 +30094,11 @@ static inline void Compute_MAC_Tile(
         int x_row = hi % 2;
 
         KW_LOOP: for (int kw = 0; kw < 3; kw++) {
-#pragma HLS LOOP_FLATTEN off
+#pragma HLS LOOP_TRIPCOUNT min=2 max=3
  int k = kh * 3 + kw;
-
             const int M_TOTAL = W_IN * CI_WORDS;
             const int x_base = x_row * W_IN * CI_WORDS;
-            const int w_off = k * CI_WORDS;
+            const int w_off = k * 60;
 
             data_t psum[PEs][4];
 #pragma HLS ARRAY_PARTITION variable=psum complete dim=0
@@ -30146,13 +30114,16 @@ static inline void Compute_MAC_Tile(
 
                 TC_MAC: for (int tc = 0; tc < PEs; tc++) {
 #pragma HLS UNROLL
- data_256_t w_word = w_local[tc][w_off + ci_w];
-                    data_t dot = (data_t)0;
-                    VITIS_LOOP_148_1: for (int l = 0; l < 16; l++) {
+ data_256_t w_word = wbuf[tc][w_off + ci_w];
+                    data_t dot = 0;
+                    VITIS_LOOP_132_1: for (int l = 0; l < 16; l++) {
 #pragma HLS UNROLL
  data_t xv = bits_to_half<data_t>(x_word.range(16*l+15, 16*l));
                         data_t wv = bits_to_half<data_t>(w_word.range(16*l+15, 16*l));
-                        dot += xv * wv;
+                        data_t prod;
+#pragma HLS BIND_OP variable=prod op=hmul impl=fabric
+ prod = xv * wv;
+                        dot += prod;
                     }
                     if (ci_w < 4) psum[tc][acc_idx] = dot;
                     else psum[tc][acc_idx] += dot;
@@ -30178,52 +30149,93 @@ static inline void Compute_MAC_Tile(
     }
 }
 
-static inline void Load_Norm_Params(
+template<int PEs>
+void UpConv_Fused_Row(
+    data_256_t* x_buf,
+    const data_256_t* W_ptr,
     const data_256_t* B_ptr,
     const data_256_t* G_ptr,
     const data_256_t* BE_ptr,
-    data_256_t (&b_buf)[30],
-    data_256_t (&g_buf)[30],
-    data_256_t (&be_buf)[30],
-    int C_WORDS_OUT
+    DDR_PTR Y,
+    data_t epsilon,
+    int H_IN, int W_IN, int C_IN, int C_OUT,
+    int ho
 ) {
-#pragma HLS INLINE
- LOAD_B: for (int i = 0; i < C_WORDS_OUT; i++) {
+#pragma HLS INLINE off
+
+ const int S = 2;
+    const int PAD = 1;
+    const int H_OUT = H_IN * S;
+    const int W_OUT = W_IN * S;
+    const int CI_WORDS = (C_IN + 15) / 16;
+    const int C_WORDS_OUT = (C_OUT + 15) / 16;
+    const int C_OUT_PAD = C_WORDS_OUT * 16;
+    const int N_TILES = (C_OUT + PEs - 1) / PEs;
+
+
+    static data_t row_acc[256][480];
+#pragma HLS BIND_STORAGE variable=row_acc type=ram_t2p impl=uram
+#pragma HLS ARRAY_PARTITION variable=row_acc cyclic factor=16 dim=2
+
+
+
+
+
+
+
+ int rw = 0, rcw = 0;
+    RESET_ROW_ACC: for (int m = 0; m < W_OUT * C_WORDS_OUT; m++) {
+#pragma HLS PIPELINE II=1
+#pragma HLS LOOP_TRIPCOUNT min=128 max=1024 avg=420
+ VITIS_LOOP_203_1: for (int l = 0; l < 16; l++) {
+#pragma HLS UNROLL
+ row_acc[rw][rcw * 16 + l] = 0;
+        }
+        if (rcw == C_WORDS_OUT - 1) { rcw = 0; rw++; } else { rcw++; }
+    }
+
+
+
+
+    TILE_LOOP: for (int tile = 0; tile < N_TILES; tile++) {
+#pragma HLS LOOP_TRIPCOUNT min=6 max=41 avg=20
+#pragma HLS DATAFLOW
+ data_256_t wbuf[PEs][540];
+#pragma HLS BIND_STORAGE variable=wbuf type=ram_t2p impl=uram
+#pragma HLS ARRAY_PARTITION variable=wbuf complete dim=1
+ uc_load_tile<PEs>(W_ptr, tile, C_OUT, CI_WORDS, wbuf);
+        uc_compute_tile<PEs>(wbuf, x_buf, row_acc, tile, ho, H_IN, W_IN, CI_WORDS, W_OUT, C_OUT);
+    }
+
+    data_256_t b_buf[30], g_buf[30], be_buf[30];
+#pragma HLS BIND_STORAGE variable=b_buf type=ram_t2p impl=bram
+#pragma HLS BIND_STORAGE variable=g_buf type=ram_t2p impl=bram
+#pragma HLS BIND_STORAGE variable=be_buf type=ram_t2p impl=bram
+
+ LOAD_PARAMS: for (int i = 0; i < C_WORDS_OUT; i++) {
 #pragma HLS PIPELINE II=1
 #pragma HLS LOOP_TRIPCOUNT min=4 max=30 avg=14
  b_buf[i] = B_ptr[i];
+        g_buf[i] = G_ptr[i];
+        be_buf[i] = BE_ptr[i];
     }
-    LOAD_G: for (int i = 0; i < C_WORDS_OUT; i++) {
-#pragma HLS PIPELINE II=1
-#pragma HLS LOOP_TRIPCOUNT min=4 max=30 avg=14
- g_buf[i] = G_ptr[i];
-    }
-    LOAD_BE: for (int i = 0; i < C_WORDS_OUT; i++) {
-#pragma HLS PIPELINE II=1
-#pragma HLS LOOP_TRIPCOUNT min=4 max=30 avg=14
- be_buf[i] = BE_ptr[i];
-    }
-}
 
-static inline void Compute_Pixel_Stats(
-    data_t (&row_acc)[256][480],
-    const data_256_t (&b_buf)[30],
-    float (&mean_buf)[256],
-    data_t (&inv_buf)[256],
-    data_t epsilon,
-    float inv_C_OUT,
-    int W_OUT, int C_OUT
-) {
-#pragma HLS INLINE
+
+
+
+    static float mean_buf[256];
+    static data_t inv_buf [256];
+#pragma HLS BIND_STORAGE variable=mean_buf type=ram_2p impl=lutram
+#pragma HLS BIND_STORAGE variable=inv_buf type=ram_2p impl=lutram
+
  float sum_rot[8], sumsq_rot[8];
 #pragma HLS ARRAY_PARTITION variable=sum_rot complete
 #pragma HLS ARRAY_PARTITION variable=sumsq_rot complete
 
  int ws = 0, cs = 0;
-    int total = W_OUT * C_OUT;
-    PIXEL_STATS: for (int m = 0; m < total; m++) {
+    PIXEL_STATS: for (int m = 0; m < W_OUT * C_OUT; m++) {
 #pragma HLS PIPELINE II=1
-#pragma HLS LOOP_TRIPCOUNT min=1024 max=15360 avg=7680
+#pragma HLS LOOP_TRIPCOUNT min=1920 max=15360 avg=7200
 #pragma HLS DEPENDENCE variable=sum_rot type=inter false
 #pragma HLS DEPENDENCE variable=sumsq_rot type=inter false
 #pragma HLS DEPENDENCE variable=row_acc type=inter false
@@ -30232,24 +30244,18 @@ static inline void Compute_Pixel_Stats(
         data_t val = row_acc[ws][cs] + bias;
         row_acc[ws][cs] = val;
         float fv = (float)val;
-
-        if (cs < 8) {
-            sum_rot[acc_idx] = fv;
-            sumsq_rot[acc_idx] = fv * fv;
-        } else {
-            sum_rot[acc_idx] += fv;
-            sumsq_rot[acc_idx] += fv * fv;
-        }
+        if (cs < 8) { sum_rot[acc_idx] = fv; sumsq_rot[acc_idx] = fv * fv; }
+        else { sum_rot[acc_idx] += fv; sumsq_rot[acc_idx] += fv * fv; }
 
         if (cs == C_OUT - 1) {
             float sum = 0, sumsq = 0;
-            VITIS_LOOP_243_1: for (int r = 0; r < 8; r++) {
+            VITIS_LOOP_265_2: for (int r = 0; r < 8; r++) {
 #pragma HLS UNROLL
  sum += sum_rot[r];
                 sumsq += sumsq_rot[r];
             }
-            float mean = sum * inv_C_OUT;
-            float var = sumsq * inv_C_OUT - mean * mean;
+            float mean = sum / (float)C_OUT;
+            float var = sumsq / (float)C_OUT - mean * mean;
             mean_buf[ws] = mean;
             inv_buf[ws] = (data_t)(1.0f / my_sqrt_f(var + (float)epsilon));
             cs = 0; ws++;
@@ -30257,27 +30263,15 @@ static inline void Compute_Pixel_Stats(
             cs++;
         }
     }
-}
 
-static inline void Apply_Norm_And_Write(
-    const data_t (&row_acc)[256][480],
-    const data_256_t (&g_buf)[30],
-    const data_256_t (&be_buf)[30],
-    const float (&mean_buf)[256],
-    const data_t (&inv_buf)[256],
-    DDR_PTR Y,
-    int ho, int W_OUT, int C_OUT, int C_WORDS_OUT
-) {
-#pragma HLS INLINE
- int wn = 0, cwn = 0;
-    int total = W_OUT * C_WORDS_OUT;
-    PIXEL_NORM: for (int m = 0; m < total; m++) {
+    int wn = 0, cwn = 0;
+    PIXEL_NORM: for (int m = 0; m < W_OUT * C_WORDS_OUT; m++) {
 #pragma HLS PIPELINE II=1
-#pragma HLS LOOP_TRIPCOUNT min=128 max=7680 avg=3840
+#pragma HLS LOOP_TRIPCOUNT min=128 max=7680 avg=1680
  data_t mean_w = (data_t)mean_buf[wn];
         data_t inv_w = inv_buf[wn];
         data_256_t out_word;
-        VITIS_LOOP_277_1: for (int l = 0; l < 16; l++) {
+        VITIS_LOOP_287_3: for (int l = 0; l < 16; l++) {
 #pragma HLS UNROLL
  int c = cwn * 16 + l;
             data_t val = (c < C_OUT) ? row_acc[wn][c] : (data_t)0;
@@ -30291,130 +30285,7 @@ static inline void Apply_Norm_And_Write(
         if (cwn == C_WORDS_OUT - 1) { cwn = 0; wn++; } else { cwn++; }
     }
 }
-
-
-
-
-
-template<int PEs>
-void UpConv_Fused_Row(
-    data_256_t* x_buf,
-    const data_256_t* W_ptr,
-    const data_256_t (&b_buf)[30],
-    const data_256_t (&g_buf)[30],
-    const data_256_t (&be_buf)[30],
-    DDR_PTR Y,
-    data_t epsilon,
-    float inv_C_OUT,
-    int ho,
-    int H_IN, int W_IN, int C_IN, int C_OUT
-) {
-#pragma HLS INLINE off
-
-
-
-
- const int S = 2;
-    const int W_OUT = W_IN * S;
-    const int CI_WORDS = (C_IN + 15) / 16;
-    const int C_WORDS_OUT = (C_OUT + 15) / 16;
-    const int N_TILES = (C_OUT + PEs - 1) / PEs;
-
-
-
-
-    static data_t row_acc[256][480];
-#pragma HLS BIND_STORAGE variable=row_acc type=ram_t2p impl=uram
-#pragma HLS ARRAY_PARTITION variable=row_acc cyclic factor=16 dim=2
-
-
-
-
-
- data_256_t w_local[PEs][540];
-#pragma HLS BIND_STORAGE variable=w_local type=ram_t2p impl=bram latency=2
-#pragma HLS ARRAY_PARTITION variable=w_local complete dim=1
-
- static float mean_buf[256];
-    static data_t inv_buf [256];
-#pragma HLS BIND_STORAGE variable=mean_buf type=ram_2p impl=lutram
-#pragma HLS BIND_STORAGE variable=inv_buf type=ram_2p impl=lutram
-
-
-
-
-
- Reset_Row_Buffer(row_acc, W_OUT, C_WORDS_OUT);
-
-    TILE_LOOP: for (int tile = 0; tile < N_TILES; tile++) {
-#pragma HLS LOOP_TRIPCOUNT min=8 max=60 avg=29
- Load_Weight_Tile<PEs>(W_ptr, w_local, tile, C_OUT, CI_WORDS);
-        Compute_MAC_Tile<PEs>(x_buf, w_local, row_acc, tile, ho, H_IN, W_IN, C_OUT, CI_WORDS);
-    }
-
-    Compute_Pixel_Stats(row_acc, b_buf, mean_buf, inv_buf, epsilon, inv_C_OUT, W_OUT, C_OUT);
-    Apply_Norm_And_Write(row_acc, g_buf, be_buf, mean_buf, inv_buf, Y, ho, W_OUT, C_OUT, C_WORDS_OUT);
-}
-
-
-
-
-template<int PEs>
-void UpConv_Fused_Top(
-    data_256_t* x_buf,
-    DDR_CONST_PTR X,
-    const data_256_t* W,
-    const data_256_t* B,
-    const data_256_t* G,
-    const data_256_t* BE,
-    DDR_PTR Y,
-    data_t epsilon,
-    float inv_C_OUT,
-    int H_IN, int W_IN, int C_IN, int C_OUT
-) {
-#pragma HLS INLINE
- const int CI_W = (C_IN + 15) / 16;
-    const int C_WORDS_OUT = (C_OUT + 15) / 16;
-
-    data_256_t b_buf[30];
-    data_256_t g_buf[30];
-    data_256_t be_buf[30];
-#pragma HLS BIND_STORAGE variable=b_buf type=ram_t2p impl=bram
-#pragma HLS BIND_STORAGE variable=g_buf type=ram_t2p impl=bram
-#pragma HLS BIND_STORAGE variable=be_buf type=ram_t2p impl=bram
-
- Load_Norm_Params(B, G, BE, b_buf, g_buf, be_buf, C_WORDS_OUT);
-
-
-    int total = W_IN * CI_W;
-    LOAD_ROW0: for (int m = 0; m < total; m++) {
-#pragma HLS PIPELINE II=1
-#pragma HLS LOOP_TRIPCOUNT min=64 max=7680 avg=960
- x_buf[m] = X[m];
-    }
-    UpConv_Fused_Row<PEs>(x_buf, W, b_buf, g_buf, be_buf, Y, epsilon, inv_C_OUT, 0, H_IN, W_IN, C_IN, C_OUT);
-
-
-    ROW_LOOP: for (int hi = 1; hi < H_IN; hi++) {
-#pragma HLS LOOP_TRIPCOUNT min=16 max=128 avg=64
- int slot = hi % 2;
-        int base_X = hi * total;
-        int base_buf = slot * total;
-        LOAD_ROW: for (int m = 0; m < total; m++) {
-#pragma HLS PIPELINE II=1
-#pragma HLS LOOP_TRIPCOUNT min=64 max=7680 avg=960
- x_buf[base_buf + m] = X[base_X + m];
-        }
-        UpConv_Fused_Row<PEs>(x_buf, W, b_buf, g_buf, be_buf, Y, epsilon, inv_C_OUT, 2*hi - 1, H_IN, W_IN, C_IN, C_OUT);
-        UpConv_Fused_Row<PEs>(x_buf, W, b_buf, g_buf, be_buf, Y, epsilon, inv_C_OUT, 2*hi, H_IN, W_IN, C_IN, C_OUT);
-    }
-
-
-    UpConv_Fused_Row<PEs>(x_buf, W, b_buf, g_buf, be_buf, Y, epsilon, inv_C_OUT, 2*H_IN - 1, H_IN, W_IN, C_IN, C_OUT);
-}
-# 6 "../gen/upconv_core_top.cpp" 2
-# 1 "../gen/upconv_config.h" 1
-# 7 "../gen/upconv_core_top.cpp" 2
+# 3 "../gen2/upconv_core_top.cpp" 2
 
 extern "C" {
 
@@ -30430,7 +30301,7 @@ __attribute__((sdx_kernel("upconv_core_top", 0))) void upconv_core_top(
 ) {
 #line 1 "directive"
 #pragma HLSDIRECTIVE TOP name=upconv_core_top
-# 19 "../gen/upconv_core_top.cpp"
+# 15 "../gen2/upconv_core_top.cpp"
 
 #pragma HLS INTERFACE m_axi port=X offset=slave bundle=gmem_in max_read_burst_length=64
 #pragma HLS INTERFACE m_axi port=W offset=slave bundle=gmem_weight max_read_burst_length=64
@@ -30452,26 +30323,54 @@ __attribute__((sdx_kernel("upconv_core_top", 0))) void upconv_core_top(
  const int PEs = 8;
 
 
-    static data_256_t x_buf[2 * 128 * 8];
+    static data_256_t x_buf[2 * 1024];
 #pragma HLS BIND_STORAGE variable=x_buf type=ram_t2p impl=uram
 
+ int h_in, w_in, c_in, c_out;
 
- int H_IN, W_IN, C_IN, C_OUT;
-    float inv_C_OUT;
     if (mode == 0) {
-        H_IN = 16; W_IN = 16; C_IN = 960; C_OUT = 480; inv_C_OUT = 1.0f / 480.0f;
+        h_in = 16; w_in = 16; c_in = 960; c_out = 480;
     } else if (mode == 1) {
-        H_IN = 32; W_IN = 32; C_IN = 480; C_OUT = 240; inv_C_OUT = 1.0f / 240.0f;
+        h_in = 32; w_in = 32; c_in = 480; c_out = 240;
     } else if (mode == 2) {
-        H_IN = 64; W_IN = 64; C_IN = 240; C_OUT = 120; inv_C_OUT = 1.0f / 120.0f;
+        h_in = 64; w_in = 64; c_in = 240; c_out = 120;
     } else if (mode == 3) {
-        H_IN = 128; W_IN = 128; C_IN = 120; C_OUT = 60; inv_C_OUT = 1.0f / 60.0f;
+        h_in = 128; w_in = 128; c_in = 120; c_out = 60;
     } else {
-
-        H_IN = 16; W_IN = 16; C_IN = 64; C_OUT = 32; inv_C_OUT = 1.0f / (float)32;
+        h_in = 16; w_in = 16; c_in = 16; c_out = 16;
     }
 
-    UpConv_Fused_Top<PEs>(x_buf, X, W, B, G, BE, Y, epsilon, inv_C_OUT, H_IN, W_IN, C_IN, C_OUT);
+    int ci_words = (c_in + 15) / 16;
+
+
+    LOAD_ROW0: for (int wi = 0; wi < w_in; wi++) {
+#pragma HLS LOOP_TRIPCOUNT min=16 max=128 avg=60
+ VITIS_LOOP_58_1: for (int ciw = 0; ciw < ci_words; ciw++) {
+#pragma HLS PIPELINE II=1
+#pragma HLS LOOP_TRIPCOUNT min=8 max=60 avg=28
+ x_buf[(0 * w_in + wi) * ci_words + ciw] = X[(0 * w_in + wi) * ci_words + ciw];
+        }
+    }
+    UpConv_Fused_Row<PEs>(x_buf, W, B, G, BE, Y, epsilon, h_in, w_in, c_in, c_out, 0);
+
+
+    ROW_LOOP: for (int hi = 1; hi < h_in; hi++) {
+#pragma HLS LOOP_TRIPCOUNT min=15 max=127 avg=59
+ int slot = hi % 2;
+        LOAD_ROW: for (int wi = 0; wi < w_in; wi++) {
+#pragma HLS LOOP_TRIPCOUNT min=16 max=128 avg=60
+ VITIS_LOOP_72_2: for (int ciw = 0; ciw < ci_words; ciw++) {
+#pragma HLS PIPELINE II=1
+#pragma HLS LOOP_TRIPCOUNT min=8 max=60 avg=28
+ x_buf[(slot * w_in + wi) * ci_words + ciw] = X[(hi * w_in + wi) * ci_words + ciw];
+            }
+        }
+        UpConv_Fused_Row<PEs>(x_buf, W, B, G, BE, Y, epsilon, h_in, w_in, c_in, c_out, 2*hi-1);
+        UpConv_Fused_Row<PEs>(x_buf, W, B, G, BE, Y, epsilon, h_in, w_in, c_in, c_out, 2*hi);
+    }
+
+
+    UpConv_Fused_Row<PEs>(x_buf, W, B, G, BE, Y, epsilon, h_in, w_in, c_in, c_out, 2*h_in-1);
 }
 
 }

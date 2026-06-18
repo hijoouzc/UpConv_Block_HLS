@@ -1,15 +1,15 @@
 --- !Passed
 Pass:            inline
 Name:            AlwaysInline
-DebugLoc:        { File: ../gen/Hls_Layers_UpConv.tpp, Line: 147, Column: 37 }
-Function:        _ZL16Compute_MAC_TileILi8ELi16ELi16ELi60ELi32ELi480ELi480EEvP7ap_uintILi256EERAT__AmlLi9ET2__KS1_RAT3__AT5__Dhii
+DebugLoc:        { File: ../gen/Hls_Layers_UpConv.tpp, Line: 122, Column: 37 }
+Function:        _ZL15uc_compute_tileILi8ELi16ELi16ELi60ELi32ELi480ELi480EEvPAmlLi9ET2__7ap_uintILi256EEPS1_PAT5__Dhii
 Args:            
   - String:          'Inlining function '''
   - Callee:          'half bits_to_half<half>(ap_uint<16>)'
     DebugLoc:        { File: ../gen/Hls_Layers_UpConv.tpp, Line: 38, Column: 0 }
   - String:          ''' into '''
-  - Caller:          'void Compute_MAC_Tile<8, 16, 16, 60, 32, 480, 480>(ap_uint<256>*, ap_uint<256> const (&) [8][(9) * (60)], half (&) [32][480], int, int)'
-    DebugLoc:        { File: ../gen/Hls_Layers_UpConv.tpp, Line: 108, Column: 0 }
+  - Caller:          'void uc_compute_tile<8, 16, 16, 60, 32, 480, 480>(ap_uint<256> (*) [(9) * (60)], ap_uint<256>*, half (*) [480], int, int)'
+    DebugLoc:        { File: ../gen/Hls_Layers_UpConv.tpp, Line: 87, Column: 0 }
   - String:          ''''
 ...
 --- !Missed
@@ -26,116 +26,72 @@ Args:
     DebugLoc:        { File: ../gen/Hls_Layers_UpConv.tpp, Line: 52, Column: 0 }
   - String:          ' because it should never be inlined (cost=never)'
 ...
---- !Passed
+--- !Missed
 Pass:            inline
-Name:            AlwaysInline
-DebugLoc:        { File: ../gen/Hls_Layers_UpConv.tpp, Line: 242, Column: 43 }
-Function:        _ZL19Compute_Pixel_StatsILi32ELi480ELi30ELi480EEvRAT__AT2__DhRAT1__K7ap_uintILi256EERAT__fRAT__DhDh
+Name:            NeverInline
+DebugLoc:        { File: ../gen/Hls_Layers_UpConv.tpp, Line: 200, Column: 2 }
+Function:        _Z16UpConv_Fused_RowILi8ELi16ELi16ELi960ELi480EEvP7ap_uintILi256EEPKS1_S4_S4_S4_S2_Dhi
 Args:            
-  - String:          'Inlining function '''
-  - Callee:          'my_sqrt_f(float)'
-    DebugLoc:        { File: ../gen/Hls_Layers_UpConv.tpp, Line: 52, Column: 0 }
-  - String:          ''' into '''
-  - Caller:          'void Compute_Pixel_Stats<32, 480, 30, 480>(half (&) [32][480], ap_uint<256> const (&) [30], float (&) [32], half (&) [32], half)'
-    DebugLoc:        { File: ../gen/Hls_Layers_UpConv.tpp, Line: 206, Column: 0 }
-  - String:          ''''
+  - Callee:          'void uc_load_tile<8, 480, 60>(ap_uint<256> const*, int, ap_uint<256> (*) [(9) * (60)])'
+    DebugLoc:        { File: ../gen/Hls_Layers_UpConv.tpp, Line: 68, Column: 0 }
+  - String:          ' not inlined into '
+  - Caller:          'void UpConv_Fused_Row<8, 16, 16, 960, 480>(ap_uint<256>*, ap_uint<256> const*, ap_uint<256> const*, ap_uint<256> const*, ap_uint<256> const*, ap_uint<256>*, half, int)'
+    DebugLoc:        { File: ../gen/Hls_Layers_UpConv.tpp, Line: 162, Column: 0 }
+  - String:          ' because it should never be inlined (cost=never)'
 ...
 --- !Missed
 Pass:            inline
 Name:            NeverInline
-DebugLoc:        { File: ../gen/Hls_Layers_UpConv.tpp, Line: 55, Column: 9 }
-Function:        _ZL19Compute_Pixel_StatsILi32ELi480ELi30ELi480EEvRAT__AT2__DhRAT1__K7ap_uintILi256EERAT__fRAT__DhDh
+DebugLoc:        { File: ../gen/Hls_Layers_UpConv.tpp, Line: 201, Column: 9 }
+Function:        _Z16UpConv_Fused_RowILi8ELi16ELi16ELi960ELi480EEvP7ap_uintILi256EEPKS1_S4_S4_S4_S2_Dhi
 Args:            
-  - Callee:          'hls::sqrtf(float)'
-    DebugLoc:        { File: '/wrk/ci/prod/2024.2/hls_product/continuous/495/2024.2/src/shared/hls/clib/hlsmath/src/c++/sqrtfloat.cpp', 
-                       Line: 11, Column: 0 }
+  - Callee:          'void uc_compute_tile<8, 16, 16, 60, 32, 480, 480>(ap_uint<256> (*) [(9) * (60)], ap_uint<256>*, half (*) [480], int, int)'
+    DebugLoc:        { File: ../gen/Hls_Layers_UpConv.tpp, Line: 87, Column: 0 }
   - String:          ' not inlined into '
-  - Caller:          'void Compute_Pixel_Stats<32, 480, 30, 480>(half (&) [32][480], ap_uint<256> const (&) [30], float (&) [32], half (&) [32], half)'
-    DebugLoc:        { File: ../gen/Hls_Layers_UpConv.tpp, Line: 206, Column: 0 }
+  - Caller:          'void UpConv_Fused_Row<8, 16, 16, 960, 480>(ap_uint<256>*, ap_uint<256> const*, ap_uint<256> const*, ap_uint<256> const*, ap_uint<256> const*, ap_uint<256>*, half, int)'
+    DebugLoc:        { File: ../gen/Hls_Layers_UpConv.tpp, Line: 162, Column: 0 }
   - String:          ' because it should never be inlined (cost=never)'
 ...
 --- !Passed
 Pass:            inline
 Name:            AlwaysInline
-DebugLoc:        { File: ../gen/Hls_Layers_UpConv.tpp, Line: 219, Column: 23 }
-Function:        _ZL19Compute_Pixel_StatsILi32ELi480ELi30ELi480EEvRAT__AT2__DhRAT1__K7ap_uintILi256EERAT__fRAT__DhDh
-Args:            
-  - String:          'Inlining function '''
-  - Callee:          'half bits_to_half<half>(ap_uint<16>)'
-    DebugLoc:        { File: ../gen/Hls_Layers_UpConv.tpp, Line: 38, Column: 0 }
-  - String:          ''' into '''
-  - Caller:          'void Compute_Pixel_Stats<32, 480, 30, 480>(half (&) [32][480], ap_uint<256> const (&) [30], float (&) [32], half (&) [32], half)'
-    DebugLoc:        { File: ../gen/Hls_Layers_UpConv.tpp, Line: 206, Column: 0 }
-  - String:          ''''
-...
---- !Passed
-Pass:            inline
-Name:            AlwaysInline
-DebugLoc:        { File: ../gen/Hls_Layers_UpConv.tpp, Line: 275, Column: 45 }
-Function:        _ZL20Apply_Norm_And_WriteILi32ELi480ELi30ELi480EEvRAT__AT2__KDhRAT1__K7ap_uintILi256EES8_RAT__KfRAT__S0_PS5_i
+DebugLoc:        { File: ../gen/Hls_Layers_UpConv.tpp, Line: 271, Column: 45 }
+Function:        _Z16UpConv_Fused_RowILi8ELi16ELi16ELi960ELi480EEvP7ap_uintILi256EEPKS1_S4_S4_S4_S2_Dhi
 Args:            
   - String:          'Inlining function '''
   - Callee:          'ap_uint<16> half_to_bits<half>(half)'
     DebugLoc:        { File: ../gen/Hls_Layers_UpConv.tpp, Line: 22, Column: 0 }
   - String:          ''' into '''
-  - Caller:          'void Apply_Norm_And_Write<32, 480, 30, 480>(half const (&) [32][480], ap_uint<256> const (&) [30], ap_uint<256> const (&) [30], float const (&) [32], half const (&) [32], ap_uint<256>*, int)'
-    DebugLoc:        { File: ../gen/Hls_Layers_UpConv.tpp, Line: 259, Column: 0 }
+  - Caller:          'void UpConv_Fused_Row<8, 16, 16, 960, 480>(ap_uint<256>*, ap_uint<256> const*, ap_uint<256> const*, ap_uint<256> const*, ap_uint<256> const*, ap_uint<256>*, half, int)'
+    DebugLoc:        { File: ../gen/Hls_Layers_UpConv.tpp, Line: 162, Column: 0 }
   - String:          ''''
 ...
 --- !Passed
 Pass:            inline
 Name:            AlwaysInline
-DebugLoc:        { File: ../gen/Hls_Layers_UpConv.tpp, Line: 272, Column: 25 }
-Function:        _ZL20Apply_Norm_And_WriteILi32ELi480ELi30ELi480EEvRAT__AT2__KDhRAT1__K7ap_uintILi256EES8_RAT__KfRAT__S0_PS5_i
+DebugLoc:        { File: ../gen/Hls_Layers_UpConv.tpp, Line: 268, Column: 25 }
+Function:        _Z16UpConv_Fused_RowILi8ELi16ELi16ELi960ELi480EEvP7ap_uintILi256EEPKS1_S4_S4_S4_S2_Dhi
 Args:            
   - String:          'Inlining function '''
   - Callee:          'half bits_to_half<half>(ap_uint<16>)'
     DebugLoc:        { File: ../gen/Hls_Layers_UpConv.tpp, Line: 38, Column: 0 }
   - String:          ''' into '''
-  - Caller:          'void Apply_Norm_And_Write<32, 480, 30, 480>(half const (&) [32][480], ap_uint<256> const (&) [30], ap_uint<256> const (&) [30], float const (&) [32], half const (&) [32], ap_uint<256>*, int)'
-    DebugLoc:        { File: ../gen/Hls_Layers_UpConv.tpp, Line: 259, Column: 0 }
+  - Caller:          'void UpConv_Fused_Row<8, 16, 16, 960, 480>(ap_uint<256>*, ap_uint<256> const*, ap_uint<256> const*, ap_uint<256> const*, ap_uint<256> const*, ap_uint<256>*, half, int)'
+    DebugLoc:        { File: ../gen/Hls_Layers_UpConv.tpp, Line: 162, Column: 0 }
   - String:          ''''
 ...
 --- !Passed
 Pass:            inline
 Name:            AlwaysInline
-DebugLoc:        { File: ../gen/Hls_Layers_UpConv.tpp, Line: 354, Column: 2 }
+DebugLoc:        { File: ../gen/Hls_Layers_UpConv.tpp, Line: 250, Column: 43 }
 Function:        _Z16UpConv_Fused_RowILi8ELi16ELi16ELi960ELi480EEvP7ap_uintILi256EEPKS1_S4_S4_S4_S2_Dhi
 Args:            
   - String:          'Inlining function '''
-  - Callee:          'void Load_Norm_Params<30>(ap_uint<256> const*, ap_uint<256> const*, ap_uint<256> const*, ap_uint<256> (&) [30], ap_uint<256> (&) [30], ap_uint<256> (&) [30])'
-    DebugLoc:        { File: ../gen/Hls_Layers_UpConv.tpp, Line: 182, Column: 0 }
+  - Callee:          'my_sqrt_f(float)'
+    DebugLoc:        { File: ../gen/Hls_Layers_UpConv.tpp, Line: 52, Column: 0 }
   - String:          ''' into '''
   - Caller:          'void UpConv_Fused_Row<8, 16, 16, 960, 480>(ap_uint<256>*, ap_uint<256> const*, ap_uint<256> const*, ap_uint<256> const*, ap_uint<256> const*, ap_uint<256>*, half, int)'
-    DebugLoc:        { File: ../gen/Hls_Layers_UpConv.tpp, Line: 307, Column: 0 }
-  - String:          ''''
-...
---- !Passed
-Pass:            inline
-Name:            AlwaysInline
-DebugLoc:        { File: ../gen/Hls_Layers_UpConv.tpp, Line: 364, Column: 5 }
-Function:        _Z16UpConv_Fused_RowILi8ELi16ELi16ELi960ELi480EEvP7ap_uintILi256EEPKS1_S4_S4_S4_S2_Dhi
-Args:            
-  - String:          'Inlining function '''
-  - Callee:          'void Apply_Norm_And_Write<32, 480, 30, 480>(half const (&) [32][480], ap_uint<256> const (&) [30], ap_uint<256> const (&) [30], float const (&) [32], half const (&) [32], ap_uint<256>*, int)'
-    DebugLoc:        { File: ../gen/Hls_Layers_UpConv.tpp, Line: 259, Column: 0 }
-  - String:          ''' into '''
-  - Caller:          'void UpConv_Fused_Row<8, 16, 16, 960, 480>(ap_uint<256>*, ap_uint<256> const*, ap_uint<256> const*, ap_uint<256> const*, ap_uint<256> const*, ap_uint<256>*, half, int)'
-    DebugLoc:        { File: ../gen/Hls_Layers_UpConv.tpp, Line: 307, Column: 0 }
-  - String:          ''''
-...
---- !Passed
-Pass:            inline
-Name:            AlwaysInline
-DebugLoc:        { File: ../gen/Hls_Layers_UpConv.tpp, Line: 363, Column: 5 }
-Function:        _Z16UpConv_Fused_RowILi8ELi16ELi16ELi960ELi480EEvP7ap_uintILi256EEPKS1_S4_S4_S4_S2_Dhi
-Args:            
-  - String:          'Inlining function '''
-  - Callee:          'void Compute_Pixel_Stats<32, 480, 30, 480>(half (&) [32][480], ap_uint<256> const (&) [30], float (&) [32], half (&) [32], half)'
-    DebugLoc:        { File: ../gen/Hls_Layers_UpConv.tpp, Line: 206, Column: 0 }
-  - String:          ''' into '''
-  - Caller:          'void UpConv_Fused_Row<8, 16, 16, 960, 480>(ap_uint<256>*, ap_uint<256> const*, ap_uint<256> const*, ap_uint<256> const*, ap_uint<256> const*, ap_uint<256>*, half, int)'
-    DebugLoc:        { File: ../gen/Hls_Layers_UpConv.tpp, Line: 307, Column: 0 }
+    DebugLoc:        { File: ../gen/Hls_Layers_UpConv.tpp, Line: 162, Column: 0 }
   - String:          ''''
 ...
 --- !Missed
@@ -149,62 +105,20 @@ Args:
                        Line: 11, Column: 0 }
   - String:          ' not inlined into '
   - Caller:          'void UpConv_Fused_Row<8, 16, 16, 960, 480>(ap_uint<256>*, ap_uint<256> const*, ap_uint<256> const*, ap_uint<256> const*, ap_uint<256> const*, ap_uint<256>*, half, int)'
-    DebugLoc:        { File: ../gen/Hls_Layers_UpConv.tpp, Line: 307, Column: 0 }
+    DebugLoc:        { File: ../gen/Hls_Layers_UpConv.tpp, Line: 162, Column: 0 }
   - String:          ' because it should never be inlined (cost=never)'
-...
---- !Passed
-Pass:            inline
-Name:            AlwaysInline
-DebugLoc:        { File: ../gen/Hls_Layers_UpConv.tpp, Line: 355, Column: 5 }
-Function:        _Z16UpConv_Fused_RowILi8ELi16ELi16ELi960ELi480EEvP7ap_uintILi256EEPKS1_S4_S4_S4_S2_Dhi
-Args:            
-  - String:          'Inlining function '''
-  - Callee:          'void Reset_Row_Buffer<32, 30, 480>(half (&) [32][480])'
-    DebugLoc:        { File: ../gen/Hls_Layers_UpConv.tpp, Line: 68, Column: 0 }
-  - String:          ''' into '''
-  - Caller:          'void UpConv_Fused_Row<8, 16, 16, 960, 480>(ap_uint<256>*, ap_uint<256> const*, ap_uint<256> const*, ap_uint<256> const*, ap_uint<256> const*, ap_uint<256>*, half, int)'
-    DebugLoc:        { File: ../gen/Hls_Layers_UpConv.tpp, Line: 307, Column: 0 }
-  - String:          ''''
-...
---- !Passed
-Pass:            inline
-Name:            AlwaysInline
-DebugLoc:        { File: ../gen/Hls_Layers_UpConv.tpp, Line: 359, Column: 9 }
-Function:        _Z16UpConv_Fused_RowILi8ELi16ELi16ELi960ELi480EEvP7ap_uintILi256EEPKS1_S4_S4_S4_S2_Dhi
-Args:            
-  - String:          'Inlining function '''
-  - Callee:          'void Compute_MAC_Tile<8, 16, 16, 60, 32, 480, 480>(ap_uint<256>*, ap_uint<256> const (&) [8][(9) * (60)], half (&) [32][480], int, int)'
-    DebugLoc:        { File: ../gen/Hls_Layers_UpConv.tpp, Line: 108, Column: 0 }
-  - String:          ''' into '''
-  - Caller:          'void UpConv_Fused_Row<8, 16, 16, 960, 480>(ap_uint<256>*, ap_uint<256> const*, ap_uint<256> const*, ap_uint<256> const*, ap_uint<256> const*, ap_uint<256>*, half, int)'
-    DebugLoc:        { File: ../gen/Hls_Layers_UpConv.tpp, Line: 307, Column: 0 }
-  - String:          ''''
-...
---- !Passed
-Pass:            inline
-Name:            AlwaysInline
-DebugLoc:        { File: ../gen/Hls_Layers_UpConv.tpp, Line: 358, Column: 9 }
-Function:        _Z16UpConv_Fused_RowILi8ELi16ELi16ELi960ELi480EEvP7ap_uintILi256EEPKS1_S4_S4_S4_S2_Dhi
-Args:            
-  - String:          'Inlining function '''
-  - Callee:          'void Load_Weight_Tile<8, 480, 60>(ap_uint<256> const*, ap_uint<256> (&) [8][(9) * (60)], int)'
-    DebugLoc:        { File: ../gen/Hls_Layers_UpConv.tpp, Line: 86, Column: 0 }
-  - String:          ''' into '''
-  - Caller:          'void UpConv_Fused_Row<8, 16, 16, 960, 480>(ap_uint<256>*, ap_uint<256> const*, ap_uint<256> const*, ap_uint<256> const*, ap_uint<256> const*, ap_uint<256>*, half, int)'
-    DebugLoc:        { File: ../gen/Hls_Layers_UpConv.tpp, Line: 307, Column: 0 }
-  - String:          ''''
 ...
 --- !Missed
 Pass:            inline
 Name:            NeverInline
-DebugLoc:        { File: ../gen/Hls_Layers_UpConv.tpp, Line: 391, Column: 5 }
+DebugLoc:        { File: ../gen/Hls_Layers_UpConv.tpp, Line: 302, Column: 5 }
 Function:        _Z16UpConv_Fused_TopILi8ELi16ELi16ELi960ELi480EEvP7ap_uintILi256EEPKS1_S4_S4_S4_S4_S2_Dh
 Args:            
   - Callee:          'void UpConv_Fused_Row<8, 16, 16, 960, 480>(ap_uint<256>*, ap_uint<256> const*, ap_uint<256> const*, ap_uint<256> const*, ap_uint<256> const*, ap_uint<256>*, half, int)'
-    DebugLoc:        { File: ../gen/Hls_Layers_UpConv.tpp, Line: 307, Column: 0 }
+    DebugLoc:        { File: ../gen/Hls_Layers_UpConv.tpp, Line: 162, Column: 0 }
   - String:          ' not inlined into '
   - Caller:          'void UpConv_Fused_Top<8, 16, 16, 960, 480>(ap_uint<256>*, ap_uint<256> const*, ap_uint<256> const*, ap_uint<256> const*, ap_uint<256> const*, ap_uint<256> const*, ap_uint<256>*, half)'
-    DebugLoc:        { File: ../gen/Hls_Layers_UpConv.tpp, Line: 380, Column: 0 }
+    DebugLoc:        { File: ../gen/Hls_Layers_UpConv.tpp, Line: 291, Column: 0 }
   - String:          ' because it should never be inlined (cost=never)'
 ...
 --- !Passed
@@ -215,7 +129,7 @@ Function:        upconv_core_top_ucb0
 Args:            
   - String:          'Inlining function '''
   - Callee:          'void UpConv_Fused_Top<8, 16, 16, 960, 480>(ap_uint<256>*, ap_uint<256> const*, ap_uint<256> const*, ap_uint<256> const*, ap_uint<256> const*, ap_uint<256> const*, ap_uint<256>*, half)'
-    DebugLoc:        { File: ../gen/Hls_Layers_UpConv.tpp, Line: 380, Column: 0 }
+    DebugLoc:        { File: ../gen/Hls_Layers_UpConv.tpp, Line: 291, Column: 0 }
   - String:          ''' into '''
   - Caller:          upconv_core_top_ucb0
     DebugLoc:        { File: ../gen/upconv_core_top_ucb0.cpp, Line: 18, 
@@ -225,11 +139,11 @@ Args:
 --- !Missed
 Pass:            inline
 Name:            NeverInline
-DebugLoc:        { File: ../gen/Hls_Layers_UpConv.tpp, Line: 407, Column: 5 }
+DebugLoc:        { File: ../gen/Hls_Layers_UpConv.tpp, Line: 318, Column: 5 }
 Function:        upconv_core_top_ucb0
 Args:            
   - Callee:          'void UpConv_Fused_Row<8, 16, 16, 960, 480>(ap_uint<256>*, ap_uint<256> const*, ap_uint<256> const*, ap_uint<256> const*, ap_uint<256> const*, ap_uint<256>*, half, int)'
-    DebugLoc:        { File: ../gen/Hls_Layers_UpConv.tpp, Line: 307, Column: 0 }
+    DebugLoc:        { File: ../gen/Hls_Layers_UpConv.tpp, Line: 162, Column: 0 }
   - String:          ' not inlined into '
   - Caller:          upconv_core_top_ucb0
     DebugLoc:        { File: ../gen/upconv_core_top_ucb0.cpp, Line: 18, 
@@ -239,28 +153,38 @@ Args:
 --- !Passed
 Pass:            reflow-infer-unroll
 Name:            ImplicitUnroll
-DebugLoc:        { File: ../gen/Hls_Layers_UpConv.tpp, Line: 267, Column: 27 }
+DebugLoc:        { File: ../gen/Hls_Layers_UpConv.tpp, Line: 263, Column: 27 }
 Function:        _Z16UpConv_Fused_RowILi8ELi16ELi16ELi960ELi480EEvP7ap_uintILi256EEPKS1_S4_S4_S4_S2_Dhi
 Args:            
   - String:          'Loop '''
-  - LoopName:        VITIS_LOOP_267_1
+  - LoopName:        VITIS_LOOP_263_3
   - String:          ''' is marked as complete unroll implied by the pipeline pragma'
 ...
 --- !Passed
 Pass:            reflow-infer-unroll
 Name:            ImplicitUnroll
-DebugLoc:        { File: ../gen/Hls_Layers_UpConv.tpp, Line: 234, Column: 31 }
+DebugLoc:        { File: ../gen/Hls_Layers_UpConv.tpp, Line: 242, Column: 31 }
 Function:        _Z16UpConv_Fused_RowILi8ELi16ELi16ELi960ELi480EEvP7ap_uintILi256EEPKS1_S4_S4_S4_S2_Dhi
 Args:            
   - String:          'Loop '''
-  - LoopName:        VITIS_LOOP_234_1
+  - LoopName:        VITIS_LOOP_242_2
   - String:          ''' is marked as complete unroll implied by the pipeline pragma'
 ...
 --- !Passed
 Pass:            reflow-infer-unroll
 Name:            ImplicitUnroll
-DebugLoc:        { File: ../gen/Hls_Layers_UpConv.tpp, Line: 140, Column: 25 }
+DebugLoc:        { File: ../gen/Hls_Layers_UpConv.tpp, Line: 187, Column: 20 }
 Function:        _Z16UpConv_Fused_RowILi8ELi16ELi16ELi960ELi480EEvP7ap_uintILi256EEPKS1_S4_S4_S4_S2_Dhi
+Args:            
+  - String:          'Loop '''
+  - LoopName:        VITIS_LOOP_187_1
+  - String:          ''' is marked as complete unroll implied by the pipeline pragma'
+...
+--- !Passed
+Pass:            reflow-infer-unroll
+Name:            ImplicitUnroll
+DebugLoc:        { File: ../gen/Hls_Layers_UpConv.tpp, Line: 115, Column: 25 }
+Function:        _ZL15uc_compute_tileILi8ELi16ELi16ELi60ELi32ELi480ELi480EEvPAmlLi9ET2__7ap_uintILi256EEPS1_PAT5__Dhii
 Args:            
   - String:          'Loop '''
   - LoopName:        TC_MAC
@@ -269,43 +193,33 @@ Args:
 --- !Passed
 Pass:            reflow-infer-unroll
 Name:            ImplicitUnroll
-DebugLoc:        { File: ../gen/Hls_Layers_UpConv.tpp, Line: 144, Column: 39 }
-Function:        _Z16UpConv_Fused_RowILi8ELi16ELi16ELi960ELi480EEvP7ap_uintILi256EEPKS1_S4_S4_S4_S2_Dhi
+DebugLoc:        { File: ../gen/Hls_Layers_UpConv.tpp, Line: 119, Column: 39 }
+Function:        _ZL15uc_compute_tileILi8ELi16ELi16ELi60ELi32ELi480ELi480EEvPAmlLi9ET2__7ap_uintILi256EEPS1_PAT5__Dhii
 Args:            
   - String:          'Loop '''
-  - LoopName:        VITIS_LOOP_144_1
+  - LoopName:        VITIS_LOOP_119_1
   - String:          ''' is marked as complete unroll implied by the pipeline pragma'
 ...
 --- !Passed
 Pass:            reflow-infer-unroll
 Name:            ImplicitUnroll
-DebugLoc:        { File: ../gen/Hls_Layers_UpConv.tpp, Line: 157, Column: 36 }
-Function:        _Z16UpConv_Fused_RowILi8ELi16ELi16ELi960ELi480EEvP7ap_uintILi256EEPKS1_S4_S4_S4_S2_Dhi
+DebugLoc:        { File: ../gen/Hls_Layers_UpConv.tpp, Line: 135, Column: 36 }
+Function:        _ZL15uc_compute_tileILi8ELi16ELi16ELi60ELi32ELi480ELi480EEvPAmlLi9ET2__7ap_uintILi256EEPS1_PAT5__Dhii
 Args:            
   - String:          'Loop '''
   - LoopName:        ACC_WRITE
   - String:          ''' is marked as complete unroll implied by the pipeline pragma'
 ...
 --- !Passed
-Pass:            reflow-infer-unroll
-Name:            ImplicitUnroll
-DebugLoc:        { File: ../gen/Hls_Layers_UpConv.tpp, Line: 73, Column: 19 }
-Function:        _Z16UpConv_Fused_RowILi8ELi16ELi16ELi960ELi480EEvP7ap_uintILi256EEPKS1_S4_S4_S4_S2_Dhi
-Args:            
-  - String:          'Loop '''
-  - LoopName:        VITIS_LOOP_73_1
-  - String:          ''' is marked as complete unroll implied by the pipeline pragma'
-...
---- !Passed
 Pass:            reflow-pragma-loop-unroll
 Name:            PragmaFullyUnroll
-DebugLoc:        { File: ../gen/Hls_Layers_UpConv.tpp, Line: 307, Column: 0 }
+DebugLoc:        { File: ../gen/Hls_Layers_UpConv.tpp, Line: 162, Column: 0 }
 Function:        _Z16UpConv_Fused_RowILi8ELi16ELi16ELi960ELi480EEvP7ap_uintILi256EEPKS1_S4_S4_S4_S2_Dhi
 Args:            
   - String:          'Unrolling loop '''
-  - LoopName:        VITIS_LOOP_267_1
+  - LoopName:        VITIS_LOOP_263_3
   - String:          ''' ('
-  - LoopLoc:         '../gen/Hls_Layers_UpConv.tpp:267:27'
+  - LoopLoc:         '../gen/Hls_Layers_UpConv.tpp:263:27'
   - String:          ') '
   - String:          'in function '''
   - String:          'UpConv_Fused_Row<8, 16, 16, 960, 480>'
@@ -315,13 +229,13 @@ Args:
 --- !Passed
 Pass:            reflow-pragma-loop-unroll
 Name:            PragmaFullyUnroll
-DebugLoc:        { File: ../gen/Hls_Layers_UpConv.tpp, Line: 307, Column: 0 }
+DebugLoc:        { File: ../gen/Hls_Layers_UpConv.tpp, Line: 162, Column: 0 }
 Function:        _Z16UpConv_Fused_RowILi8ELi16ELi16ELi960ELi480EEvP7ap_uintILi256EEPKS1_S4_S4_S4_S2_Dhi
 Args:            
   - String:          'Unrolling loop '''
-  - LoopName:        VITIS_LOOP_234_1
+  - LoopName:        VITIS_LOOP_242_2
   - String:          ''' ('
-  - LoopLoc:         '../gen/Hls_Layers_UpConv.tpp:234:31'
+  - LoopLoc:         '../gen/Hls_Layers_UpConv.tpp:242:31'
   - String:          ') '
   - String:          'in function '''
   - String:          'UpConv_Fused_Row<8, 16, 16, 960, 480>'
@@ -331,178 +245,204 @@ Args:
 --- !Passed
 Pass:            reflow-pragma-loop-unroll
 Name:            PragmaFullyUnroll
-DebugLoc:        { File: ../gen/Hls_Layers_UpConv.tpp, Line: 307, Column: 0 }
+DebugLoc:        { File: ../gen/Hls_Layers_UpConv.tpp, Line: 162, Column: 0 }
 Function:        _Z16UpConv_Fused_RowILi8ELi16ELi16ELi960ELi480EEvP7ap_uintILi256EEPKS1_S4_S4_S4_S2_Dhi
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        VITIS_LOOP_187_1
+  - String:          ''' ('
+  - LoopLoc:         '../gen/Hls_Layers_UpConv.tpp:187:20'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          'UpConv_Fused_Row<8, 16, 16, 960, 480>'
+  - String:          ''' completely with a factor of '
+  - Factor:          '16'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: ../gen/Hls_Layers_UpConv.tpp, Line: 87, Column: 0 }
+Function:        _ZL15uc_compute_tileILi8ELi16ELi16ELi60ELi32ELi480ELi480EEvPAmlLi9ET2__7ap_uintILi256EEPS1_PAT5__Dhii
 Args:            
   - String:          'Unrolling loop '''
   - LoopName:        TC_MAC
   - String:          ''' ('
-  - LoopLoc:         '../gen/Hls_Layers_UpConv.tpp:140:25'
+  - LoopLoc:         '../gen/Hls_Layers_UpConv.tpp:115:25'
   - String:          ') '
   - String:          'in function '''
-  - String:          'UpConv_Fused_Row<8, 16, 16, 960, 480>'
+  - String:          'uc_compute_tile<8, 16, 16, 60, 32, 480, 480>'
   - String:          ''' completely with a factor of '
   - Factor:          '8'
 ...
 --- !Passed
 Pass:            reflow-pragma-loop-unroll
 Name:            PragmaFullyUnroll
-DebugLoc:        { File: ../gen/Hls_Layers_UpConv.tpp, Line: 307, Column: 0 }
-Function:        _Z16UpConv_Fused_RowILi8ELi16ELi16ELi960ELi480EEvP7ap_uintILi256EEPKS1_S4_S4_S4_S2_Dhi
+DebugLoc:        { File: ../gen/Hls_Layers_UpConv.tpp, Line: 87, Column: 0 }
+Function:        _ZL15uc_compute_tileILi8ELi16ELi16ELi60ELi32ELi480ELi480EEvPAmlLi9ET2__7ap_uintILi256EEPS1_PAT5__Dhii
 Args:            
   - String:          'Unrolling loop '''
-  - LoopName:        VITIS_LOOP_144_1
+  - LoopName:        VITIS_LOOP_119_1
   - String:          ''' ('
-  - LoopLoc:         '../gen/Hls_Layers_UpConv.tpp:144:39'
+  - LoopLoc:         '../gen/Hls_Layers_UpConv.tpp:119:39'
   - String:          ') '
   - String:          'in function '''
-  - String:          'UpConv_Fused_Row<8, 16, 16, 960, 480>'
+  - String:          'uc_compute_tile<8, 16, 16, 60, 32, 480, 480>'
   - String:          ''' completely with a factor of '
   - Factor:          '16'
 ...
 --- !Passed
 Pass:            reflow-pragma-loop-unroll
 Name:            PragmaFullyUnroll
-DebugLoc:        { File: ../gen/Hls_Layers_UpConv.tpp, Line: 307, Column: 0 }
-Function:        _Z16UpConv_Fused_RowILi8ELi16ELi16ELi960ELi480EEvP7ap_uintILi256EEPKS1_S4_S4_S4_S2_Dhi
+DebugLoc:        { File: ../gen/Hls_Layers_UpConv.tpp, Line: 87, Column: 0 }
+Function:        _ZL15uc_compute_tileILi8ELi16ELi16ELi60ELi32ELi480ELi480EEvPAmlLi9ET2__7ap_uintILi256EEPS1_PAT5__Dhii
 Args:            
   - String:          'Unrolling loop '''
-  - LoopName:        VITIS_LOOP_144_1
+  - LoopName:        VITIS_LOOP_119_1
   - String:          ''' ('
-  - LoopLoc:         '../gen/Hls_Layers_UpConv.tpp:144:39'
+  - LoopLoc:         '../gen/Hls_Layers_UpConv.tpp:119:39'
   - String:          ') '
   - String:          'in function '''
-  - String:          'UpConv_Fused_Row<8, 16, 16, 960, 480>'
+  - String:          'uc_compute_tile<8, 16, 16, 60, 32, 480, 480>'
   - String:          ''' completely with a factor of '
   - Factor:          '16'
 ...
 --- !Passed
 Pass:            reflow-pragma-loop-unroll
 Name:            PragmaFullyUnroll
-DebugLoc:        { File: ../gen/Hls_Layers_UpConv.tpp, Line: 307, Column: 0 }
-Function:        _Z16UpConv_Fused_RowILi8ELi16ELi16ELi960ELi480EEvP7ap_uintILi256EEPKS1_S4_S4_S4_S2_Dhi
+DebugLoc:        { File: ../gen/Hls_Layers_UpConv.tpp, Line: 87, Column: 0 }
+Function:        _ZL15uc_compute_tileILi8ELi16ELi16ELi60ELi32ELi480ELi480EEvPAmlLi9ET2__7ap_uintILi256EEPS1_PAT5__Dhii
 Args:            
   - String:          'Unrolling loop '''
-  - LoopName:        VITIS_LOOP_144_1
+  - LoopName:        VITIS_LOOP_119_1
   - String:          ''' ('
-  - LoopLoc:         '../gen/Hls_Layers_UpConv.tpp:144:39'
+  - LoopLoc:         '../gen/Hls_Layers_UpConv.tpp:119:39'
   - String:          ') '
   - String:          'in function '''
-  - String:          'UpConv_Fused_Row<8, 16, 16, 960, 480>'
+  - String:          'uc_compute_tile<8, 16, 16, 60, 32, 480, 480>'
   - String:          ''' completely with a factor of '
   - Factor:          '16'
 ...
 --- !Passed
 Pass:            reflow-pragma-loop-unroll
 Name:            PragmaFullyUnroll
-DebugLoc:        { File: ../gen/Hls_Layers_UpConv.tpp, Line: 307, Column: 0 }
-Function:        _Z16UpConv_Fused_RowILi8ELi16ELi16ELi960ELi480EEvP7ap_uintILi256EEPKS1_S4_S4_S4_S2_Dhi
+DebugLoc:        { File: ../gen/Hls_Layers_UpConv.tpp, Line: 87, Column: 0 }
+Function:        _ZL15uc_compute_tileILi8ELi16ELi16ELi60ELi32ELi480ELi480EEvPAmlLi9ET2__7ap_uintILi256EEPS1_PAT5__Dhii
 Args:            
   - String:          'Unrolling loop '''
-  - LoopName:        VITIS_LOOP_144_1
+  - LoopName:        VITIS_LOOP_119_1
   - String:          ''' ('
-  - LoopLoc:         '../gen/Hls_Layers_UpConv.tpp:144:39'
+  - LoopLoc:         '../gen/Hls_Layers_UpConv.tpp:119:39'
   - String:          ') '
   - String:          'in function '''
-  - String:          'UpConv_Fused_Row<8, 16, 16, 960, 480>'
+  - String:          'uc_compute_tile<8, 16, 16, 60, 32, 480, 480>'
   - String:          ''' completely with a factor of '
   - Factor:          '16'
 ...
 --- !Passed
 Pass:            reflow-pragma-loop-unroll
 Name:            PragmaFullyUnroll
-DebugLoc:        { File: ../gen/Hls_Layers_UpConv.tpp, Line: 307, Column: 0 }
-Function:        _Z16UpConv_Fused_RowILi8ELi16ELi16ELi960ELi480EEvP7ap_uintILi256EEPKS1_S4_S4_S4_S2_Dhi
+DebugLoc:        { File: ../gen/Hls_Layers_UpConv.tpp, Line: 87, Column: 0 }
+Function:        _ZL15uc_compute_tileILi8ELi16ELi16ELi60ELi32ELi480ELi480EEvPAmlLi9ET2__7ap_uintILi256EEPS1_PAT5__Dhii
 Args:            
   - String:          'Unrolling loop '''
-  - LoopName:        VITIS_LOOP_144_1
+  - LoopName:        VITIS_LOOP_119_1
   - String:          ''' ('
-  - LoopLoc:         '../gen/Hls_Layers_UpConv.tpp:144:39'
+  - LoopLoc:         '../gen/Hls_Layers_UpConv.tpp:119:39'
   - String:          ') '
   - String:          'in function '''
-  - String:          'UpConv_Fused_Row<8, 16, 16, 960, 480>'
+  - String:          'uc_compute_tile<8, 16, 16, 60, 32, 480, 480>'
   - String:          ''' completely with a factor of '
   - Factor:          '16'
 ...
 --- !Passed
 Pass:            reflow-pragma-loop-unroll
 Name:            PragmaFullyUnroll
-DebugLoc:        { File: ../gen/Hls_Layers_UpConv.tpp, Line: 307, Column: 0 }
-Function:        _Z16UpConv_Fused_RowILi8ELi16ELi16ELi960ELi480EEvP7ap_uintILi256EEPKS1_S4_S4_S4_S2_Dhi
+DebugLoc:        { File: ../gen/Hls_Layers_UpConv.tpp, Line: 87, Column: 0 }
+Function:        _ZL15uc_compute_tileILi8ELi16ELi16ELi60ELi32ELi480ELi480EEvPAmlLi9ET2__7ap_uintILi256EEPS1_PAT5__Dhii
 Args:            
   - String:          'Unrolling loop '''
-  - LoopName:        VITIS_LOOP_144_1
+  - LoopName:        VITIS_LOOP_119_1
   - String:          ''' ('
-  - LoopLoc:         '../gen/Hls_Layers_UpConv.tpp:144:39'
+  - LoopLoc:         '../gen/Hls_Layers_UpConv.tpp:119:39'
   - String:          ') '
   - String:          'in function '''
-  - String:          'UpConv_Fused_Row<8, 16, 16, 960, 480>'
+  - String:          'uc_compute_tile<8, 16, 16, 60, 32, 480, 480>'
   - String:          ''' completely with a factor of '
   - Factor:          '16'
 ...
 --- !Passed
 Pass:            reflow-pragma-loop-unroll
 Name:            PragmaFullyUnroll
-DebugLoc:        { File: ../gen/Hls_Layers_UpConv.tpp, Line: 307, Column: 0 }
-Function:        _Z16UpConv_Fused_RowILi8ELi16ELi16ELi960ELi480EEvP7ap_uintILi256EEPKS1_S4_S4_S4_S2_Dhi
+DebugLoc:        { File: ../gen/Hls_Layers_UpConv.tpp, Line: 87, Column: 0 }
+Function:        _ZL15uc_compute_tileILi8ELi16ELi16ELi60ELi32ELi480ELi480EEvPAmlLi9ET2__7ap_uintILi256EEPS1_PAT5__Dhii
 Args:            
   - String:          'Unrolling loop '''
-  - LoopName:        VITIS_LOOP_144_1
+  - LoopName:        VITIS_LOOP_119_1
   - String:          ''' ('
-  - LoopLoc:         '../gen/Hls_Layers_UpConv.tpp:144:39'
+  - LoopLoc:         '../gen/Hls_Layers_UpConv.tpp:119:39'
   - String:          ') '
   - String:          'in function '''
-  - String:          'UpConv_Fused_Row<8, 16, 16, 960, 480>'
+  - String:          'uc_compute_tile<8, 16, 16, 60, 32, 480, 480>'
   - String:          ''' completely with a factor of '
   - Factor:          '16'
 ...
 --- !Passed
 Pass:            reflow-pragma-loop-unroll
 Name:            PragmaFullyUnroll
-DebugLoc:        { File: ../gen/Hls_Layers_UpConv.tpp, Line: 307, Column: 0 }
-Function:        _Z16UpConv_Fused_RowILi8ELi16ELi16ELi960ELi480EEvP7ap_uintILi256EEPKS1_S4_S4_S4_S2_Dhi
+DebugLoc:        { File: ../gen/Hls_Layers_UpConv.tpp, Line: 87, Column: 0 }
+Function:        _ZL15uc_compute_tileILi8ELi16ELi16ELi60ELi32ELi480ELi480EEvPAmlLi9ET2__7ap_uintILi256EEPS1_PAT5__Dhii
 Args:            
   - String:          'Unrolling loop '''
-  - LoopName:        VITIS_LOOP_144_1
+  - LoopName:        VITIS_LOOP_119_1
   - String:          ''' ('
-  - LoopLoc:         '../gen/Hls_Layers_UpConv.tpp:144:39'
+  - LoopLoc:         '../gen/Hls_Layers_UpConv.tpp:119:39'
   - String:          ') '
   - String:          'in function '''
-  - String:          'UpConv_Fused_Row<8, 16, 16, 960, 480>'
+  - String:          'uc_compute_tile<8, 16, 16, 60, 32, 480, 480>'
   - String:          ''' completely with a factor of '
   - Factor:          '16'
 ...
 --- !Passed
 Pass:            reflow-pragma-loop-unroll
 Name:            PragmaFullyUnroll
-DebugLoc:        { File: ../gen/Hls_Layers_UpConv.tpp, Line: 307, Column: 0 }
-Function:        _Z16UpConv_Fused_RowILi8ELi16ELi16ELi960ELi480EEvP7ap_uintILi256EEPKS1_S4_S4_S4_S2_Dhi
+DebugLoc:        { File: ../gen/Hls_Layers_UpConv.tpp, Line: 87, Column: 0 }
+Function:        _ZL15uc_compute_tileILi8ELi16ELi16ELi60ELi32ELi480ELi480EEvPAmlLi9ET2__7ap_uintILi256EEPS1_PAT5__Dhii
 Args:            
   - String:          'Unrolling loop '''
   - LoopName:        ACC_WRITE
   - String:          ''' ('
-  - LoopLoc:         '../gen/Hls_Layers_UpConv.tpp:157:36'
+  - LoopLoc:         '../gen/Hls_Layers_UpConv.tpp:135:36'
   - String:          ') '
   - String:          'in function '''
-  - String:          'UpConv_Fused_Row<8, 16, 16, 960, 480>'
+  - String:          'uc_compute_tile<8, 16, 16, 60, 32, 480, 480>'
   - String:          ''' completely with a factor of '
   - Factor:          '8'
 ...
---- !Passed
-Pass:            reflow-pragma-loop-unroll
-Name:            PragmaFullyUnroll
-DebugLoc:        { File: ../gen/Hls_Layers_UpConv.tpp, Line: 307, Column: 0 }
+--- !Missed
+Pass:            inline
+Name:            NeverInline
+DebugLoc:        { File: ../gen/Hls_Layers_UpConv.tpp, Line: 200, Column: 2 }
 Function:        _Z16UpConv_Fused_RowILi8ELi16ELi16ELi960ELi480EEvP7ap_uintILi256EEPKS1_S4_S4_S4_S2_Dhi
 Args:            
-  - String:          'Unrolling loop '''
-  - LoopName:        VITIS_LOOP_73_1
-  - String:          ''' ('
-  - LoopLoc:         '../gen/Hls_Layers_UpConv.tpp:73:19'
-  - String:          ') '
-  - String:          'in function '''
-  - String:          'UpConv_Fused_Row<8, 16, 16, 960, 480>'
-  - String:          ''' completely with a factor of '
-  - Factor:          '16'
+  - Callee:          'void uc_load_tile<8, 480, 60>(ap_uint<256> const*, int, ap_uint<256> (*) [(9) * (60)]) (.50)'
+    DebugLoc:        { File: ../gen/Hls_Layers_UpConv.tpp, Line: 68, Column: 0 }
+  - String:          ' not inlined into '
+  - Caller:          'void UpConv_Fused_Row<8, 16, 16, 960, 480>(ap_uint<256>*, ap_uint<256> const*, ap_uint<256> const*, ap_uint<256> const*, ap_uint<256> const*, ap_uint<256>*, half, int)'
+    DebugLoc:        { File: ../gen/Hls_Layers_UpConv.tpp, Line: 162, Column: 0 }
+  - String:          ' because it should never be inlined (cost=never)'
+...
+--- !Missed
+Pass:            inline
+Name:            NeverInline
+DebugLoc:        { File: ../gen/Hls_Layers_UpConv.tpp, Line: 201, Column: 9 }
+Function:        _Z16UpConv_Fused_RowILi8ELi16ELi16ELi960ELi480EEvP7ap_uintILi256EEPKS1_S4_S4_S4_S2_Dhi
+Args:            
+  - Callee:          'void uc_compute_tile<8, 16, 16, 60, 32, 480, 480>(ap_uint<256> (*) [(9) * (60)], ap_uint<256>*, half (*) [480], int, int)'
+    DebugLoc:        { File: ../gen/Hls_Layers_UpConv.tpp, Line: 87, Column: 0 }
+  - String:          ' not inlined into '
+  - Caller:          'void UpConv_Fused_Row<8, 16, 16, 960, 480>(ap_uint<256>*, ap_uint<256> const*, ap_uint<256> const*, ap_uint<256> const*, ap_uint<256> const*, ap_uint<256>*, half, int)'
+    DebugLoc:        { File: ../gen/Hls_Layers_UpConv.tpp, Line: 162, Column: 0 }
+  - String:          ' because it should never be inlined (cost=never)'
 ...
 --- !Missed
 Pass:            inline
@@ -515,17 +455,17 @@ Args:
                        Line: 11, Column: 0 }
   - String:          ' not inlined into '
   - Caller:          'void UpConv_Fused_Row<8, 16, 16, 960, 480>(ap_uint<256>*, ap_uint<256> const*, ap_uint<256> const*, ap_uint<256> const*, ap_uint<256> const*, ap_uint<256>*, half, int)'
-    DebugLoc:        { File: ../gen/Hls_Layers_UpConv.tpp, Line: 307, Column: 0 }
+    DebugLoc:        { File: ../gen/Hls_Layers_UpConv.tpp, Line: 162, Column: 0 }
   - String:          ' because it should never be inlined (cost=never)'
 ...
 --- !Missed
 Pass:            inline
 Name:            NeverInline
-DebugLoc:        { File: ../gen/Hls_Layers_UpConv.tpp, Line: 391, Column: 5 }
+DebugLoc:        { File: ../gen/Hls_Layers_UpConv.tpp, Line: 302, Column: 5 }
 Function:        upconv_core_top_ucb0
 Args:            
   - Callee:          'void UpConv_Fused_Row<8, 16, 16, 960, 480>(ap_uint<256>*, ap_uint<256> const*, ap_uint<256> const*, ap_uint<256> const*, ap_uint<256> const*, ap_uint<256>*, half, int)'
-    DebugLoc:        { File: ../gen/Hls_Layers_UpConv.tpp, Line: 307, Column: 0 }
+    DebugLoc:        { File: ../gen/Hls_Layers_UpConv.tpp, Line: 162, Column: 0 }
   - String:          ' not inlined into '
   - Caller:          upconv_core_top_ucb0
     DebugLoc:        { File: ../gen/upconv_core_top_ucb0.cpp, Line: 18, 
@@ -547,7 +487,7 @@ Args:
 --- !Passed
 Pass:            reflow-inliner
 Name:            Inline
-DebugLoc:        { File: ../gen/Hls_Layers_UpConv.tpp, Line: 307, Column: 0 }
+DebugLoc:        { File: ../gen/Hls_Layers_UpConv.tpp, Line: 162, Column: 0 }
 Function:        _Z16UpConv_Fused_RowILi8ELi16ELi16ELi960ELi480EEvP7ap_uintILi256EEPKS1_S4_S4_S4_S2_Dhi
 Args:            
   - String:          'Inlining function '''
@@ -556,13 +496,13 @@ Args:
                        Line: 11, Column: 0 }
   - String:          ''' into '''
   - Caller:          'void UpConv_Fused_Row<8, 16, 16, 960, 480>(ap_uint<256>*, ap_uint<256> const*, ap_uint<256> const*, ap_uint<256> const*, ap_uint<256> const*, ap_uint<256>*, half, int)'
-    DebugLoc:        { File: ../gen/Hls_Layers_UpConv.tpp, Line: 307, Column: 0 }
+    DebugLoc:        { File: ../gen/Hls_Layers_UpConv.tpp, Line: 162, Column: 0 }
   - String:          ''''
 ...
 --- !Passed
 Pass:            reflow-array-partition
 Name:            ArrayXform
-DebugLoc:        { File: ../gen/Hls_Layers_UpConv.tpp, Line: 325, Column: 0 }
+DebugLoc:        { File: ../gen/Hls_Layers_UpConv.tpp, Line: 175, Column: 0 }
 Function:        _Z16UpConv_Fused_RowILi8ELi16ELi16ELi960ELi480EEvP7ap_uintILi256EEPKS1_S4_S4_S4_S2_Dhi
 Args:            
   - String:          'Applying '
@@ -582,13 +522,13 @@ Args:
 --- !Passed
 Pass:            reflow-array-partition
 Name:            ArrayXform
-DebugLoc:        { File: ../gen/Hls_Layers_UpConv.tpp, Line: 129, Column: 20 }
-Function:        _Z16UpConv_Fused_RowILi8ELi16ELi16ELi960ELi480EEvP7ap_uintILi256EEPKS1_S4_S4_S4_S2_Dhi
+DebugLoc:        { File: ../gen/Hls_Layers_UpConv.tpp, Line: 104, Column: 20 }
+Function:        _ZL15uc_compute_tileILi8ELi16ELi16ELi60ELi32ELi480ELi480EEvPAmlLi9ET2__7ap_uintILi256EEPS1_PAT5__Dhii
 Args:            
   - String:          'Applying '
   - String:          array_partition
   - String:          ' to '''
-  - UOName:          psum.i
+  - UOName:          psum
   - String:          ''':'
   - String:          ' '
   - Mode:            Complete
@@ -606,13 +546,13 @@ Args:
 --- !Passed
 Pass:            reflow-array-partition
 Name:            ArrayXform
-DebugLoc:        { File: ../gen/Hls_Layers_UpConv.tpp, Line: 208, Column: 8 }
+DebugLoc:        { File: ../gen/Hls_Layers_UpConv.tpp, Line: 197, Column: 13 }
 Function:        _Z16UpConv_Fused_RowILi8ELi16ELi16ELi960ELi480EEvP7ap_uintILi256EEPKS1_S4_S4_S4_S2_Dhi
 Args:            
   - String:          'Applying '
   - String:          array_partition
   - String:          ' to '''
-  - UOName:          sum_rot.i
+  - UOName:          wbuf
   - String:          ''':'
   - String:          ' '
   - Mode:            Complete
@@ -624,13 +564,13 @@ Args:
 --- !Passed
 Pass:            reflow-array-partition
 Name:            ArrayXform
-DebugLoc:        { File: ../gen/Hls_Layers_UpConv.tpp, Line: 208, Column: 20 }
+DebugLoc:        { File: ../gen/Hls_Layers_UpConv.tpp, Line: 222, Column: 8 }
 Function:        _Z16UpConv_Fused_RowILi8ELi16ELi16ELi960ELi480EEvP7ap_uintILi256EEPKS1_S4_S4_S4_S2_Dhi
 Args:            
   - String:          'Applying '
   - String:          array_partition
   - String:          ' to '''
-  - UOName:          sumsq_rot.i
+  - UOName:          sum_rot
   - String:          ''':'
   - String:          ' '
   - Mode:            Complete
@@ -642,13 +582,13 @@ Args:
 --- !Passed
 Pass:            reflow-array-partition
 Name:            ArrayXform
-DebugLoc:        { File: ../gen/Hls_Layers_UpConv.tpp, Line: 333, Column: 13 }
+DebugLoc:        { File: ../gen/Hls_Layers_UpConv.tpp, Line: 222, Column: 20 }
 Function:        _Z16UpConv_Fused_RowILi8ELi16ELi16ELi960ELi480EEvP7ap_uintILi256EEPKS1_S4_S4_S4_S2_Dhi
 Args:            
   - String:          'Applying '
   - String:          array_partition
   - String:          ' to '''
-  - UOName:          w_local
+  - UOName:          sumsq_rot
   - String:          ''':'
   - String:          ' '
   - Mode:            Complete
@@ -660,7 +600,7 @@ Args:
 --- !Passed
 Pass:            reflow-burst-inference
 Name:            BurstInferred
-DebugLoc:        { File: ../gen/Hls_Layers_UpConv.tpp, Line: 385, Column: 16 }
+DebugLoc:        { File: ../gen/Hls_Layers_UpConv.tpp, Line: 296, Column: 16 }
 Function:        upconv_core_top_ucb0
 Args:            
   - String:          'Sequential '
@@ -676,7 +616,7 @@ Args:
   - String:          ' '
   - LoopName:        LOAD_ROW0
   - String:          ' '
-  - LoopLoc:         '../gen/Hls_Layers_UpConv.tpp:385:16'
+  - LoopLoc:         '../gen/Hls_Layers_UpConv.tpp:296:16'
   - String:          ' '
   - Function:        upconv_core_top_ucb0
     DebugLoc:        { File: ../gen/upconv_core_top_ucb0.cpp, Line: 18, 
@@ -684,14 +624,14 @@ Args:
   - String:          ' '
   - String:          ' _XLX_SEP_ '
   - OrigAccess:      load
-    DebugLoc:        { File: ../gen/Hls_Layers_UpConv.tpp, Line: 388, Column: 38 }
+    DebugLoc:        { File: ../gen/Hls_Layers_UpConv.tpp, Line: 299, Column: 38 }
   - OrigDirection:   read
   - OrigID:          for.body4.i.load.7
 ...
 --- !Passed
 Pass:            reflow-burst-inference
 Name:            BurstInferred
-DebugLoc:        { File: ../gen/Hls_Layers_UpConv.tpp, Line: 394, Column: 15 }
+DebugLoc:        { File: ../gen/Hls_Layers_UpConv.tpp, Line: 305, Column: 15 }
 Function:        upconv_core_top_ucb0
 Args:            
   - String:          'Sequential '
@@ -707,7 +647,7 @@ Args:
   - String:          ' '
   - LoopName:        ROW_LOOP
   - String:          ' '
-  - LoopLoc:         '../gen/Hls_Layers_UpConv.tpp:394:15'
+  - LoopLoc:         '../gen/Hls_Layers_UpConv.tpp:305:15'
   - String:          ' '
   - Function:        upconv_core_top_ucb0
     DebugLoc:        { File: ../gen/upconv_core_top_ucb0.cpp, Line: 18, 
@@ -715,14 +655,14 @@ Args:
   - String:          ' '
   - String:          ' _XLX_SEP_ '
   - OrigAccess:      load
-    DebugLoc:        { File: ../gen/Hls_Layers_UpConv.tpp, Line: 399, Column: 41 }
+    DebugLoc:        { File: ../gen/Hls_Layers_UpConv.tpp, Line: 310, Column: 41 }
   - OrigDirection:   read
   - OrigID:          for.body27.i.load.8
 ...
 --- !Passed
 Pass:            reflow-burst-inference
 Name:            BurstInferred
-DebugLoc:        { File: ../gen/Hls_Layers_UpConv.tpp, Line: 185, Column: 10 }
+DebugLoc:        { File: ../gen/Hls_Layers_UpConv.tpp, Line: 209, Column: 15 }
 Function:        _Z16UpConv_Fused_RowILi8ELi16ELi16ELi960ELi480EEvP7ap_uintILi256EEPKS1_S4_S4_S4_S2_Dhi
 Args:            
   - String:          'Sequential '
@@ -736,23 +676,23 @@ Args:
   - String:          ' '
   - BundleName:      gmem_param
   - String:          ' '
-  - LoopName:        LOAD_B
+  - LoopName:        LOAD_PARAMS
   - String:          ' '
-  - LoopLoc:         '../gen/Hls_Layers_UpConv.tpp:185:10'
+  - LoopLoc:         '../gen/Hls_Layers_UpConv.tpp:209:15'
   - String:          ' '
   - Function:        'void UpConv_Fused_Row<8, 16, 16, 960, 480>(ap_uint<256>*, ap_uint<256> const*, ap_uint<256> const*, ap_uint<256> const*, ap_uint<256> const*, ap_uint<256>*, half, int)'
-    DebugLoc:        { File: ../gen/Hls_Layers_UpConv.tpp, Line: 307, Column: 0 }
+    DebugLoc:        { File: ../gen/Hls_Layers_UpConv.tpp, Line: 162, Column: 0 }
   - String:          ' '
   - String:          ' _XLX_SEP_ '
   - OrigAccess:      load
-    DebugLoc:        { File: ../gen/Hls_Layers_UpConv.tpp, Line: 187, Column: 11 }
+    DebugLoc:        { File: ../gen/Hls_Layers_UpConv.tpp, Line: 211, Column: 11 }
   - OrigDirection:   read
-  - OrigID:          for.body.i.load.5
+  - OrigID:          for.inc37.load.5
 ...
 --- !Passed
 Pass:            reflow-burst-inference
 Name:            BurstInferred
-DebugLoc:        { File: ../gen/Hls_Layers_UpConv.tpp, Line: 189, Column: 13 }
+DebugLoc:        { File: ../gen/Hls_Layers_UpConv.tpp, Line: 209, Column: 15 }
 Function:        _Z16UpConv_Fused_RowILi8ELi16ELi16ELi960ELi480EEvP7ap_uintILi256EEPKS1_S4_S4_S4_S2_Dhi
 Args:            
   - String:          'Sequential '
@@ -766,23 +706,23 @@ Args:
   - String:          ' '
   - BundleName:      gmem_param
   - String:          ' '
-  - LoopName:        LOAD_G
+  - LoopName:        LOAD_PARAMS
   - String:          ' '
-  - LoopLoc:         '../gen/Hls_Layers_UpConv.tpp:189:13'
+  - LoopLoc:         '../gen/Hls_Layers_UpConv.tpp:209:15'
   - String:          ' '
   - Function:        'void UpConv_Fused_Row<8, 16, 16, 960, 480>(ap_uint<256>*, ap_uint<256> const*, ap_uint<256> const*, ap_uint<256> const*, ap_uint<256> const*, ap_uint<256>*, half, int)'
-    DebugLoc:        { File: ../gen/Hls_Layers_UpConv.tpp, Line: 307, Column: 0 }
+    DebugLoc:        { File: ../gen/Hls_Layers_UpConv.tpp, Line: 162, Column: 0 }
   - String:          ' '
   - String:          ' _XLX_SEP_ '
   - OrigAccess:      load
-    DebugLoc:        { File: ../gen/Hls_Layers_UpConv.tpp, Line: 191, Column: 11 }
+    DebugLoc:        { File: ../gen/Hls_Layers_UpConv.tpp, Line: 212, Column: 18 }
   - OrigDirection:   read
-  - OrigID:          for.body7.i.load.5
+  - OrigID:          for.inc37.load.10
 ...
 --- !Passed
 Pass:            reflow-burst-inference
 Name:            BurstInferred
-DebugLoc:        { File: ../gen/Hls_Layers_UpConv.tpp, Line: 193, Column: 14 }
+DebugLoc:        { File: ../gen/Hls_Layers_UpConv.tpp, Line: 209, Column: 15 }
 Function:        _Z16UpConv_Fused_RowILi8ELi16ELi16ELi960ELi480EEvP7ap_uintILi256EEPKS1_S4_S4_S4_S2_Dhi
 Args:            
   - String:          'Sequential '
@@ -796,214 +736,160 @@ Args:
   - String:          ' '
   - BundleName:      gmem_param
   - String:          ' '
-  - LoopName:        LOAD_BE
+  - LoopName:        LOAD_PARAMS
   - String:          ' '
-  - LoopLoc:         '../gen/Hls_Layers_UpConv.tpp:193:14'
+  - LoopLoc:         '../gen/Hls_Layers_UpConv.tpp:209:15'
   - String:          ' '
   - Function:        'void UpConv_Fused_Row<8, 16, 16, 960, 480>(ap_uint<256>*, ap_uint<256> const*, ap_uint<256> const*, ap_uint<256> const*, ap_uint<256> const*, ap_uint<256>*, half, int)'
-    DebugLoc:        { File: ../gen/Hls_Layers_UpConv.tpp, Line: 307, Column: 0 }
+    DebugLoc:        { File: ../gen/Hls_Layers_UpConv.tpp, Line: 162, Column: 0 }
   - String:          ' '
   - String:          ' _XLX_SEP_ '
   - OrigAccess:      load
-    DebugLoc:        { File: ../gen/Hls_Layers_UpConv.tpp, Line: 195, Column: 12 }
+    DebugLoc:        { File: ../gen/Hls_Layers_UpConv.tpp, Line: 213, Column: 19 }
   - OrigDirection:   read
-  - OrigID:          for.body19.i.load.5
-...
---- !Passed
-Pass:            reflow-burst-inference
-Name:            BurstInferred
-DebugLoc:        { File: ../gen/Hls_Layers_UpConv.tpp, Line: 357, Column: 16 }
-Function:        _Z16UpConv_Fused_RowILi8ELi16ELi16ELi960ELi480EEvP7ap_uintILi256EEPKS1_S4_S4_S4_S2_Dhi
-Args:            
-  - String:          'Sequential '
-  - Direction:       read
-  - String:          ' of length '
-  - Length:          '259200'
-  - String:          ' has been inferred'
-  - String:          ' _XLX_SEP_ '
-  - AccessID:        W_ptrseq
-  - ArrayName:       W_ptr
-  - String:          ' '
-  - BundleName:      gmem_weight
-  - String:          ' '
-  - LoopName:        TILE_LOOP
-  - String:          ' '
-  - LoopLoc:         '../gen/Hls_Layers_UpConv.tpp:357:16'
-  - String:          ' '
-  - Function:        'void UpConv_Fused_Row<8, 16, 16, 960, 480>(ap_uint<256>*, ap_uint<256> const*, ap_uint<256> const*, ap_uint<256> const*, ap_uint<256> const*, ap_uint<256>*, half, int)'
-    DebugLoc:        { File: ../gen/Hls_Layers_UpConv.tpp, Line: 307, Column: 0 }
-  - String:          ' '
-  - String:          ' _XLX_SEP_ '
-  - OrigAccess:      load
-    DebugLoc:        { File: ../gen/Hls_Layers_UpConv.tpp, Line: 95, Column: 19 }
-  - OrigDirection:   read
-  - OrigID:          for.body7.i132.load.22
+  - OrigID:          for.inc37.load.15
 ...
 --- !Missed
 Pass:            reflow-burst-inference
 Name:            CouldNotAnalyzePattern
-DebugLoc:        { File: ../gen/Hls_Layers_UpConv.tpp, Line: 277, Column: 50 }
+DebugLoc:        { File: ../gen/Hls_Layers_UpConv.tpp, Line: 273, Column: 50 }
 Function:        _Z16UpConv_Fused_RowILi8ELi16ELi16ELi960ELi480EEvP7ap_uintILi256EEPKS1_S4_S4_S4_S2_Dhi
 Args:            
   - String:          Could not analyze pattern
   - String:          ' _XLX_SEP_ '
   - OrigAccess:      store
-    DebugLoc:        { File: ../gen/Hls_Layers_UpConv.tpp, Line: 277, Column: 50 }
+    DebugLoc:        { File: ../gen/Hls_Layers_UpConv.tpp, Line: 273, Column: 50 }
   - OrigDirection:   write
-  - OrigID:          cond.end31.i.15.store.15
+  - OrigID:          cond.end156.15.store.15
   - ArrayName:       'Y'
   - String:          ' '
   - BundleName:      gmem_out
   - String:          ' '
   - LoopName:        PIXEL_NORM
   - String:          ' '
-  - LoopLoc:         '../gen/Hls_Layers_UpConv.tpp:262:17'
+  - LoopLoc:         '../gen/Hls_Layers_UpConv.tpp:258:17'
   - String:          ' '
   - Function:        'void UpConv_Fused_Row<8, 16, 16, 960, 480>(ap_uint<256>*, ap_uint<256> const*, ap_uint<256> const*, ap_uint<256> const*, ap_uint<256> const*, ap_uint<256>*, half, int)'
-    DebugLoc:        { File: ../gen/Hls_Layers_UpConv.tpp, Line: 307, Column: 0 }
+    DebugLoc:        { File: ../gen/Hls_Layers_UpConv.tpp, Line: 162, Column: 0 }
   - String:          ' '
 ...
---- !Missed
-Pass:            reflow-burst-widen
-Name:            GreaterOrEqualThreshold
-DebugLoc:        { File: ../gen/Hls_Layers_UpConv.tpp, Line: 394, Column: 15 }
-Function:        upconv_core_top_ucb0
+--- !Passed
+Pass:            reflow-burst-inference
+Name:            BurstInferred
+DebugLoc:        { File: ../gen/Hls_Layers_UpConv.tpp, Line: 75, Column: 21 }
+Function:        _ZL12uc_load_tileILi8ELi480ELi60EEvPK7ap_uintILi256EEiPAmlLi9ET1__S1_.50
 Args:            
-  - String:          'Could not widen since type '
-  - Type:            i256
-  - String:          ' size is greater than or equal to the max_widen_bitwidth threshold of '
-  - Threshold:       '0'
+  - String:          'Sequential '
+  - Direction:       read
+  - String:          ' of length '
+  - Length:          '540'
+  - String:          ' has been inferred'
   - String:          ' _XLX_SEP_ '
-  - OrigAccess:      call
-    DebugLoc:        { File: ../gen/Hls_Layers_UpConv.tpp, Line: 394, Column: 15 }
-  - OrigDirection:   read
-  - OrigID:          scevgepseq
-  - ArrayName:       X
-  - String:          ' '
-  - BundleName:      gmem_in
-  - String:          ' '
-  - LoopName:        VITIS_LOOP_397_2
-  - String:          ' '
-  - LoopLoc:         '../gen/Hls_Layers_UpConv.tpp:397:31'
-  - String:          ' '
-  - Function:        upconv_core_top_ucb0
-    DebugLoc:        { File: ../gen/upconv_core_top_ucb0.cpp, Line: 18, 
-                       Column: 0 }
-  - String:          ' '
-...
---- !Missed
-Pass:            reflow-burst-widen
-Name:            GreaterOrEqualThreshold
-DebugLoc:        { File: ../gen/Hls_Layers_UpConv.tpp, Line: 385, Column: 16 }
-Function:        upconv_core_top_ucb0
-Args:            
-  - String:          'Could not widen since type '
-  - Type:            i256
-  - String:          ' size is greater than or equal to the max_widen_bitwidth threshold of '
-  - Threshold:       '0'
-  - String:          ' _XLX_SEP_ '
-  - OrigAccess:      call
-    DebugLoc:        { File: ../gen/Hls_Layers_UpConv.tpp, Line: 385, Column: 16 }
-  - OrigDirection:   read
-  - OrigID:          Xseq
-  - ArrayName:       X
-  - String:          ' '
-  - BundleName:      gmem_in
-  - String:          ' '
-  - LoopName:        VITIS_LOOP_386_1
-  - String:          ' '
-  - LoopLoc:         '../gen/Hls_Layers_UpConv.tpp:386:27'
-  - String:          ' '
-  - Function:        upconv_core_top_ucb0
-    DebugLoc:        { File: ../gen/upconv_core_top_ucb0.cpp, Line: 18, 
-                       Column: 0 }
-  - String:          ' '
-...
---- !Missed
-Pass:            reflow-burst-widen
-Name:            GreaterOrEqualThreshold
-DebugLoc:        { File: ../gen/Hls_Layers_UpConv.tpp, Line: 357, Column: 16 }
-Function:        _Z16UpConv_Fused_RowILi8ELi16ELi16ELi960ELi480EEvP7ap_uintILi256EEPKS1_S4_S4_S4_S2_Dhi
-Args:            
-  - String:          'Could not widen since type '
-  - Type:            i256
-  - String:          ' size is greater than or equal to the max_widen_bitwidth threshold of '
-  - Threshold:       '0'
-  - String:          ' _XLX_SEP_ '
-  - OrigAccess:      call
-    DebugLoc:        { File: ../gen/Hls_Layers_UpConv.tpp, Line: 357, Column: 16 }
-  - OrigDirection:   read
-  - OrigID:          W_ptrseq
+  - AccessID:        scevgepseq
   - ArrayName:       W_ptr
   - String:          ' '
   - BundleName:      gmem_weight
   - String:          ' '
   - LoopName:        W_FLAT
   - String:          ' '
-  - LoopLoc:         '../gen/Hls_Layers_UpConv.tpp:93:21'
+  - LoopLoc:         '../gen/Hls_Layers_UpConv.tpp:75:21'
   - String:          ' '
-  - Function:        'void UpConv_Fused_Row<8, 16, 16, 960, 480>(ap_uint<256>*, ap_uint<256> const*, ap_uint<256> const*, ap_uint<256> const*, ap_uint<256> const*, ap_uint<256>*, half, int)'
-    DebugLoc:        { File: ../gen/Hls_Layers_UpConv.tpp, Line: 307, Column: 0 }
+  - Function:        'void uc_load_tile<8, 480, 60>(ap_uint<256> const*, int, ap_uint<256> (*) [(9) * (60)]) (.50)'
+    DebugLoc:        { File: ../gen/Hls_Layers_UpConv.tpp, Line: 68, Column: 0 }
   - String:          ' '
-...
---- !Missed
-Pass:            reflow-burst-widen
-Name:            GreaterOrEqualThreshold
-DebugLoc:        { File: ../gen/Hls_Layers_UpConv.tpp, Line: 193, Column: 14 }
-Function:        _Z16UpConv_Fused_RowILi8ELi16ELi16ELi960ELi480EEvP7ap_uintILi256EEPKS1_S4_S4_S4_S2_Dhi
-Args:            
-  - String:          'Could not widen since type '
-  - Type:            i256
-  - String:          ' size is greater than or equal to the max_widen_bitwidth threshold of '
-  - Threshold:       '0'
   - String:          ' _XLX_SEP_ '
-  - OrigAccess:      call
-    DebugLoc:        { File: ../gen/Hls_Layers_UpConv.tpp, Line: 193, Column: 14 }
+  - OrigAccess:      load
+    DebugLoc:        { File: ../gen/Hls_Layers_UpConv.tpp, Line: 77, Column: 38 }
   - OrigDirection:   read
-  - OrigID:          BE_ptrseq
-  - ArrayName:       BE_ptr
-  - String:          ' '
-  - BundleName:      gmem_param
-  - String:          ' '
-  - LoopName:        LOAD_BE
-  - String:          ' '
-  - LoopLoc:         '../gen/Hls_Layers_UpConv.tpp:193:14'
-  - String:          ' '
-  - Function:        'void UpConv_Fused_Row<8, 16, 16, 960, 480>(ap_uint<256>*, ap_uint<256> const*, ap_uint<256> const*, ap_uint<256> const*, ap_uint<256> const*, ap_uint<256>*, half, int)'
-    DebugLoc:        { File: ../gen/Hls_Layers_UpConv.tpp, Line: 307, Column: 0 }
-  - String:          ' '
+  - OrigID:          for.body5.load.36
 ...
 --- !Missed
-Pass:            reflow-burst-widen
-Name:            GreaterOrEqualThreshold
-DebugLoc:        { File: ../gen/Hls_Layers_UpConv.tpp, Line: 189, Column: 13 }
-Function:        _Z16UpConv_Fused_RowILi8ELi16ELi16ELi960ELi480EEvP7ap_uintILi256EEPKS1_S4_S4_S4_S2_Dhi
+Pass:            reflow-burst-inference
+Name:            AccessInCondBranch
+DebugLoc:        { File: ../gen/Hls_Layers_UpConv.tpp, Line: 75, Column: 21 }
+Function:        _ZL12uc_load_tileILi8ELi480ELi60EEvPK7ap_uintILi256EEiPAmlLi9ET1__S1_.50
 Args:            
-  - String:          'Could not widen since type '
-  - Type:            i256
-  - String:          ' size is greater than or equal to the max_widen_bitwidth threshold of '
-  - Threshold:       '0'
+  - String:          'Access '
+  - Access:          call
+    DebugLoc:        { File: ../gen/Hls_Layers_UpConv.tpp, Line: 75, Column: 21 }
+  - String:          ' is in the conditional branch'
   - String:          ' _XLX_SEP_ '
   - OrigAccess:      call
-    DebugLoc:        { File: ../gen/Hls_Layers_UpConv.tpp, Line: 189, Column: 13 }
+    DebugLoc:        { File: ../gen/Hls_Layers_UpConv.tpp, Line: 75, Column: 21 }
   - OrigDirection:   read
-  - OrigID:          G_ptrseq
-  - ArrayName:       G_ptr
+  - OrigID:          scevgepseq
+  - ArrayName:       W_ptr
   - String:          ' '
-  - BundleName:      gmem_param
+  - BundleName:      gmem_weight
   - String:          ' '
-  - LoopName:        LOAD_G
+  - LoopName:        PRELOAD_W
   - String:          ' '
-  - LoopLoc:         '../gen/Hls_Layers_UpConv.tpp:189:13'
+  - LoopLoc:         '../gen/Hls_Layers_UpConv.tpp:71:16'
   - String:          ' '
-  - Function:        'void UpConv_Fused_Row<8, 16, 16, 960, 480>(ap_uint<256>*, ap_uint<256> const*, ap_uint<256> const*, ap_uint<256> const*, ap_uint<256> const*, ap_uint<256>*, half, int)'
-    DebugLoc:        { File: ../gen/Hls_Layers_UpConv.tpp, Line: 307, Column: 0 }
+  - Function:        'void uc_load_tile<8, 480, 60>(ap_uint<256> const*, int, ap_uint<256> (*) [(9) * (60)]) (.50)'
+    DebugLoc:        { File: ../gen/Hls_Layers_UpConv.tpp, Line: 68, Column: 0 }
   - String:          ' '
 ...
 --- !Missed
 Pass:            reflow-burst-widen
 Name:            GreaterOrEqualThreshold
-DebugLoc:        { File: ../gen/Hls_Layers_UpConv.tpp, Line: 185, Column: 10 }
+DebugLoc:        { File: ../gen/Hls_Layers_UpConv.tpp, Line: 305, Column: 15 }
+Function:        upconv_core_top_ucb0
+Args:            
+  - String:          'Could not widen since type '
+  - Type:            i256
+  - String:          ' size is greater than or equal to the max_widen_bitwidth threshold of '
+  - Threshold:       '0'
+  - String:          ' _XLX_SEP_ '
+  - OrigAccess:      call
+    DebugLoc:        { File: ../gen/Hls_Layers_UpConv.tpp, Line: 305, Column: 15 }
+  - OrigDirection:   read
+  - OrigID:          scevgepseq
+  - ArrayName:       X
+  - String:          ' '
+  - BundleName:      gmem_in
+  - String:          ' '
+  - LoopName:        VITIS_LOOP_308_2
+  - String:          ' '
+  - LoopLoc:         '../gen/Hls_Layers_UpConv.tpp:308:31'
+  - String:          ' '
+  - Function:        upconv_core_top_ucb0
+    DebugLoc:        { File: ../gen/upconv_core_top_ucb0.cpp, Line: 18, 
+                       Column: 0 }
+  - String:          ' '
+...
+--- !Missed
+Pass:            reflow-burst-widen
+Name:            GreaterOrEqualThreshold
+DebugLoc:        { File: ../gen/Hls_Layers_UpConv.tpp, Line: 296, Column: 16 }
+Function:        upconv_core_top_ucb0
+Args:            
+  - String:          'Could not widen since type '
+  - Type:            i256
+  - String:          ' size is greater than or equal to the max_widen_bitwidth threshold of '
+  - Threshold:       '0'
+  - String:          ' _XLX_SEP_ '
+  - OrigAccess:      call
+    DebugLoc:        { File: ../gen/Hls_Layers_UpConv.tpp, Line: 296, Column: 16 }
+  - OrigDirection:   read
+  - OrigID:          Xseq
+  - ArrayName:       X
+  - String:          ' '
+  - BundleName:      gmem_in
+  - String:          ' '
+  - LoopName:        VITIS_LOOP_297_1
+  - String:          ' '
+  - LoopLoc:         '../gen/Hls_Layers_UpConv.tpp:297:27'
+  - String:          ' '
+  - Function:        upconv_core_top_ucb0
+    DebugLoc:        { File: ../gen/upconv_core_top_ucb0.cpp, Line: 18, 
+                       Column: 0 }
+  - String:          ' '
+...
+--- !Missed
+Pass:            reflow-burst-widen
+Name:            GreaterOrEqualThreshold
+DebugLoc:        { File: ../gen/Hls_Layers_UpConv.tpp, Line: 209, Column: 15 }
 Function:        _Z16UpConv_Fused_RowILi8ELi16ELi16ELi960ELi480EEvP7ap_uintILi256EEPKS1_S4_S4_S4_S2_Dhi
 Args:            
   - String:          'Could not widen since type '
@@ -1012,25 +898,106 @@ Args:
   - Threshold:       '0'
   - String:          ' _XLX_SEP_ '
   - OrigAccess:      call
-    DebugLoc:        { File: ../gen/Hls_Layers_UpConv.tpp, Line: 185, Column: 10 }
+    DebugLoc:        { File: ../gen/Hls_Layers_UpConv.tpp, Line: 209, Column: 15 }
   - OrigDirection:   read
   - OrigID:          B_ptrseq
   - ArrayName:       B_ptr
   - String:          ' '
   - BundleName:      gmem_param
   - String:          ' '
-  - LoopName:        LOAD_B
+  - LoopName:        LOAD_PARAMS
   - String:          ' '
-  - LoopLoc:         '../gen/Hls_Layers_UpConv.tpp:185:10'
+  - LoopLoc:         '../gen/Hls_Layers_UpConv.tpp:209:15'
   - String:          ' '
   - Function:        'void UpConv_Fused_Row<8, 16, 16, 960, 480>(ap_uint<256>*, ap_uint<256> const*, ap_uint<256> const*, ap_uint<256> const*, ap_uint<256> const*, ap_uint<256>*, half, int)'
-    DebugLoc:        { File: ../gen/Hls_Layers_UpConv.tpp, Line: 307, Column: 0 }
+    DebugLoc:        { File: ../gen/Hls_Layers_UpConv.tpp, Line: 162, Column: 0 }
+  - String:          ' '
+...
+--- !Missed
+Pass:            reflow-burst-widen
+Name:            GreaterOrEqualThreshold
+DebugLoc:        { File: ../gen/Hls_Layers_UpConv.tpp, Line: 209, Column: 15 }
+Function:        _Z16UpConv_Fused_RowILi8ELi16ELi16ELi960ELi480EEvP7ap_uintILi256EEPKS1_S4_S4_S4_S2_Dhi
+Args:            
+  - String:          'Could not widen since type '
+  - Type:            i256
+  - String:          ' size is greater than or equal to the max_widen_bitwidth threshold of '
+  - Threshold:       '0'
+  - String:          ' _XLX_SEP_ '
+  - OrigAccess:      call
+    DebugLoc:        { File: ../gen/Hls_Layers_UpConv.tpp, Line: 209, Column: 15 }
+  - OrigDirection:   read
+  - OrigID:          G_ptrseq
+  - ArrayName:       G_ptr
+  - String:          ' '
+  - BundleName:      gmem_param
+  - String:          ' '
+  - LoopName:        LOAD_PARAMS
+  - String:          ' '
+  - LoopLoc:         '../gen/Hls_Layers_UpConv.tpp:209:15'
+  - String:          ' '
+  - Function:        'void UpConv_Fused_Row<8, 16, 16, 960, 480>(ap_uint<256>*, ap_uint<256> const*, ap_uint<256> const*, ap_uint<256> const*, ap_uint<256> const*, ap_uint<256>*, half, int)'
+    DebugLoc:        { File: ../gen/Hls_Layers_UpConv.tpp, Line: 162, Column: 0 }
+  - String:          ' '
+...
+--- !Missed
+Pass:            reflow-burst-widen
+Name:            GreaterOrEqualThreshold
+DebugLoc:        { File: ../gen/Hls_Layers_UpConv.tpp, Line: 209, Column: 15 }
+Function:        _Z16UpConv_Fused_RowILi8ELi16ELi16ELi960ELi480EEvP7ap_uintILi256EEPKS1_S4_S4_S4_S2_Dhi
+Args:            
+  - String:          'Could not widen since type '
+  - Type:            i256
+  - String:          ' size is greater than or equal to the max_widen_bitwidth threshold of '
+  - Threshold:       '0'
+  - String:          ' _XLX_SEP_ '
+  - OrigAccess:      call
+    DebugLoc:        { File: ../gen/Hls_Layers_UpConv.tpp, Line: 209, Column: 15 }
+  - OrigDirection:   read
+  - OrigID:          BE_ptrseq
+  - ArrayName:       BE_ptr
+  - String:          ' '
+  - BundleName:      gmem_param
+  - String:          ' '
+  - LoopName:        LOAD_PARAMS
+  - String:          ' '
+  - LoopLoc:         '../gen/Hls_Layers_UpConv.tpp:209:15'
+  - String:          ' '
+  - Function:        'void UpConv_Fused_Row<8, 16, 16, 960, 480>(ap_uint<256>*, ap_uint<256> const*, ap_uint<256> const*, ap_uint<256> const*, ap_uint<256> const*, ap_uint<256>*, half, int)'
+    DebugLoc:        { File: ../gen/Hls_Layers_UpConv.tpp, Line: 162, Column: 0 }
+  - String:          ' '
+...
+--- !Missed
+Pass:            reflow-burst-widen
+Name:            GreaterOrEqualThreshold
+DebugLoc:        { File: ../gen/Hls_Layers_UpConv.tpp, Line: 75, Column: 21 }
+Function:        _ZL12uc_load_tileILi8ELi480ELi60EEvPK7ap_uintILi256EEiPAmlLi9ET1__S1_.50
+Args:            
+  - String:          'Could not widen since type '
+  - Type:            i256
+  - String:          ' size is greater than or equal to the max_widen_bitwidth threshold of '
+  - Threshold:       '0'
+  - String:          ' _XLX_SEP_ '
+  - OrigAccess:      call
+    DebugLoc:        { File: ../gen/Hls_Layers_UpConv.tpp, Line: 75, Column: 21 }
+  - OrigDirection:   read
+  - OrigID:          scevgepseq
+  - ArrayName:       W_ptr
+  - String:          ' '
+  - BundleName:      gmem_weight
+  - String:          ' '
+  - LoopName:        W_FLAT
+  - String:          ' '
+  - LoopLoc:         '../gen/Hls_Layers_UpConv.tpp:75:21'
+  - String:          ' '
+  - Function:        'void uc_load_tile<8, 480, 60>(ap_uint<256> const*, int, ap_uint<256> (*) [(9) * (60)]) (.50)'
+    DebugLoc:        { File: ../gen/Hls_Layers_UpConv.tpp, Line: 68, Column: 0 }
   - String:          ' '
 ...
 --- !Passed
 Pass:            reflow-loop-flatten-cost-model
 Name:            FlattenOffInference
-DebugLoc:        { File: ../gen/Hls_Layers_UpConv.tpp, Line: 394, Column: 15 }
+DebugLoc:        { File: ../gen/Hls_Layers_UpConv.tpp, Line: 305, Column: 15 }
 Function:        upconv_core_top_ucb0
 Args:            
   - String:          'Automatically disabling loop flattening for loop '''
@@ -1040,7 +1007,7 @@ Args:
 --- !Passed
 Pass:            reflow-loop-flatten-cost-model
 Name:            AutoParallelPerformanceDrivenVerbosePassed
-DebugLoc:        { File: ../gen/Hls_Layers_UpConv.tpp, Line: 394, Column: 15 }
+DebugLoc:        { File: ../gen/Hls_Layers_UpConv.tpp, Line: 305, Column: 15 }
 Function:        upconv_core_top_ucb0
 Args:            
   - PragmaType:      loop_flatten
@@ -1051,24 +1018,24 @@ Args:
   - String:          ' '
   - PragmaFunction:  upconv_core_top_ucb0
   - String:          ' '
-  - PragmaSrcLoc:    '../gen/Hls_Layers_UpConv.tpp:394:15'
-    DebugLoc:        { File: ../gen/Hls_Layers_UpConv.tpp, Line: 394, Column: 15 }
+  - PragmaSrcLoc:    '../gen/Hls_Layers_UpConv.tpp:305:15'
+    DebugLoc:        { File: ../gen/Hls_Layers_UpConv.tpp, Line: 305, Column: 15 }
   - LoopName:        ROW_LOOP
   - String:          ' '
-  - LoopLoc:         '../gen/Hls_Layers_UpConv.tpp:394:15'
-    DebugLoc:        { File: ../gen/Hls_Layers_UpConv.tpp, Line: 394, Column: 15 }
+  - LoopLoc:         '../gen/Hls_Layers_UpConv.tpp:305:15'
+    DebugLoc:        { File: ../gen/Hls_Layers_UpConv.tpp, Line: 305, Column: 15 }
   - String:          ' '
 ...
 --- !Passed
 Pass:            reflow-burst-summary
 Name:            BurstInferredVerboseSummary
-DebugLoc:        { File: ../gen/Hls_Layers_UpConv.tpp, Line: 185, Column: 10 }
-Function:        _Z16UpConv_Fused_RowILi8ELi16ELi16ELi960ELi480EEvP7ap_uintILi256EEPKS1_S4_S4_S4_S2_Dhi.1
+DebugLoc:        { File: ../gen/Hls_Layers_UpConv.tpp, Line: 75, Column: 21 }
+Function:        _ZL12uc_load_tileILi8ELi480ELi60EEvPK7ap_uintILi256EEiPAmlLi9ET1__S1_.50.1
 Args:            
   - String:          'Multiple burst '
   - Direction:       reads
   - String:          ' of length '
-  - Length:          '30'
+  - Length:          '540'
   - String:          ' and bit width '
   - Width:           '256'
   - String:          ' has been inferred.'
@@ -1077,182 +1044,32 @@ Args:
   - AccessID:        seq
   - ArrayName:       ''
   - String:          ' '
-  - BundleName:      gmem_param
-  - String:          ' '
-  - LoopName:        LOAD_B
-  - String:          ' '
-  - LoopLoc:         '../gen/Hls_Layers_UpConv.tpp:185:10'
-  - String:          ' '
-  - Function:        'void UpConv_Fused_Row<8, 16, 16, 960, 480>(ap_uint<256>*, ap_uint<256> const*, ap_uint<256> const*, ap_uint<256> const*, ap_uint<256> const*, ap_uint<256>*, half, int) (.1)'
-    DebugLoc:        { File: ../gen/Hls_Layers_UpConv.tpp, Line: 307, Column: 0 }
-  - String:          ' '
-...
---- !Passed
-Pass:            reflow-burst-summary
-Name:            BurstInferredSummary
-DebugLoc:        { File: ../gen/Hls_Layers_UpConv.tpp, Line: 185, Column: 10 }
-Function:        _Z16UpConv_Fused_RowILi8ELi16ELi16ELi960ELi480EEvP7ap_uintILi256EEPKS1_S4_S4_S4_S2_Dhi.1
-Args:            
-  - String:          'Multiple burst '
-  - Direction:       reads
-  - String:          ' of length '
-  - Length:          '30'
-  - String:          ' and bit width '
-  - Width:           '256'
-  - String:          ' in loop '''
-  - LoopName:        LOAD_B
-  - String:          '''('
-  - LoopLoc:         '../gen/Hls_Layers_UpConv.tpp:185:10'
-  - String:          ')'
-  - String:          ' has been inferred on bundle '''
-  - BundleName:      gmem_param
-  - String:          '''.'
-  - String:          ' These burst requests might be further partitioned into multiple requests during RTL generation, based on max_read_burst_length or max_write_burst_length settings.'
-...
---- !Passed
-Pass:            reflow-burst-summary
-Name:            BurstInferredVerboseSummary
-DebugLoc:        { File: ../gen/Hls_Layers_UpConv.tpp, Line: 189, Column: 13 }
-Function:        _Z16UpConv_Fused_RowILi8ELi16ELi16ELi960ELi480EEvP7ap_uintILi256EEPKS1_S4_S4_S4_S2_Dhi.1
-Args:            
-  - String:          'Multiple burst '
-  - Direction:       reads
-  - String:          ' of length '
-  - Length:          '30'
-  - String:          ' and bit width '
-  - Width:           '256'
-  - String:          ' has been inferred.'
-  - String:          ' These burst requests might be further partitioned into multiple requests during RTL generation, based on max_read_burst_length or max_write_burst_length settings.'
-  - String:          ' _XLX_SEP_ '
-  - AccessID:        seq1
-  - ArrayName:       ''
-  - String:          ' '
-  - BundleName:      gmem_param
-  - String:          ' '
-  - LoopName:        LOAD_G
-  - String:          ' '
-  - LoopLoc:         '../gen/Hls_Layers_UpConv.tpp:189:13'
-  - String:          ' '
-  - Function:        'void UpConv_Fused_Row<8, 16, 16, 960, 480>(ap_uint<256>*, ap_uint<256> const*, ap_uint<256> const*, ap_uint<256> const*, ap_uint<256> const*, ap_uint<256>*, half, int) (.1)'
-    DebugLoc:        { File: ../gen/Hls_Layers_UpConv.tpp, Line: 307, Column: 0 }
-  - String:          ' '
-...
---- !Passed
-Pass:            reflow-burst-summary
-Name:            BurstInferredSummary
-DebugLoc:        { File: ../gen/Hls_Layers_UpConv.tpp, Line: 189, Column: 13 }
-Function:        _Z16UpConv_Fused_RowILi8ELi16ELi16ELi960ELi480EEvP7ap_uintILi256EEPKS1_S4_S4_S4_S2_Dhi.1
-Args:            
-  - String:          'Multiple burst '
-  - Direction:       reads
-  - String:          ' of length '
-  - Length:          '30'
-  - String:          ' and bit width '
-  - Width:           '256'
-  - String:          ' in loop '''
-  - LoopName:        LOAD_G
-  - String:          '''('
-  - LoopLoc:         '../gen/Hls_Layers_UpConv.tpp:189:13'
-  - String:          ')'
-  - String:          ' has been inferred on bundle '''
-  - BundleName:      gmem_param
-  - String:          '''.'
-  - String:          ' These burst requests might be further partitioned into multiple requests during RTL generation, based on max_read_burst_length or max_write_burst_length settings.'
-...
---- !Passed
-Pass:            reflow-burst-summary
-Name:            BurstInferredVerboseSummary
-DebugLoc:        { File: ../gen/Hls_Layers_UpConv.tpp, Line: 193, Column: 14 }
-Function:        _Z16UpConv_Fused_RowILi8ELi16ELi16ELi960ELi480EEvP7ap_uintILi256EEPKS1_S4_S4_S4_S2_Dhi.1
-Args:            
-  - String:          'Multiple burst '
-  - Direction:       reads
-  - String:          ' of length '
-  - Length:          '30'
-  - String:          ' and bit width '
-  - Width:           '256'
-  - String:          ' has been inferred.'
-  - String:          ' These burst requests might be further partitioned into multiple requests during RTL generation, based on max_read_burst_length or max_write_burst_length settings.'
-  - String:          ' _XLX_SEP_ '
-  - AccessID:        seq2
-  - ArrayName:       ''
-  - String:          ' '
-  - BundleName:      gmem_param
-  - String:          ' '
-  - LoopName:        LOAD_BE
-  - String:          ' '
-  - LoopLoc:         '../gen/Hls_Layers_UpConv.tpp:193:14'
-  - String:          ' '
-  - Function:        'void UpConv_Fused_Row<8, 16, 16, 960, 480>(ap_uint<256>*, ap_uint<256> const*, ap_uint<256> const*, ap_uint<256> const*, ap_uint<256> const*, ap_uint<256>*, half, int) (.1)'
-    DebugLoc:        { File: ../gen/Hls_Layers_UpConv.tpp, Line: 307, Column: 0 }
-  - String:          ' '
-...
---- !Passed
-Pass:            reflow-burst-summary
-Name:            BurstInferredSummary
-DebugLoc:        { File: ../gen/Hls_Layers_UpConv.tpp, Line: 193, Column: 14 }
-Function:        _Z16UpConv_Fused_RowILi8ELi16ELi16ELi960ELi480EEvP7ap_uintILi256EEPKS1_S4_S4_S4_S2_Dhi.1
-Args:            
-  - String:          'Multiple burst '
-  - Direction:       reads
-  - String:          ' of length '
-  - Length:          '30'
-  - String:          ' and bit width '
-  - Width:           '256'
-  - String:          ' in loop '''
-  - LoopName:        LOAD_BE
-  - String:          '''('
-  - LoopLoc:         '../gen/Hls_Layers_UpConv.tpp:193:14'
-  - String:          ')'
-  - String:          ' has been inferred on bundle '''
-  - BundleName:      gmem_param
-  - String:          '''.'
-  - String:          ' These burst requests might be further partitioned into multiple requests during RTL generation, based on max_read_burst_length or max_write_burst_length settings.'
-...
---- !Passed
-Pass:            reflow-burst-summary
-Name:            BurstInferredVerboseSummary
-DebugLoc:        { File: ../gen/Hls_Layers_UpConv.tpp, Line: 357, Column: 16 }
-Function:        _Z16UpConv_Fused_RowILi8ELi16ELi16ELi960ELi480EEvP7ap_uintILi256EEPKS1_S4_S4_S4_S2_Dhi.1
-Args:            
-  - String:          'Multiple burst '
-  - Direction:       reads
-  - String:          ' of length '
-  - Length:          '259200'
-  - String:          ' and bit width '
-  - Width:           '256'
-  - String:          ' has been inferred.'
-  - String:          ' These burst requests might be further partitioned into multiple requests during RTL generation, based on max_read_burst_length or max_write_burst_length settings.'
-  - String:          ' _XLX_SEP_ '
-  - AccessID:        seq3
-  - ArrayName:       ''
-  - String:          ' '
   - BundleName:      gmem_weight
   - String:          ' '
-  - LoopName:        TILE_LOOP
+  - LoopName:        W_FLAT
   - String:          ' '
-  - LoopLoc:         '../gen/Hls_Layers_UpConv.tpp:357:16'
+  - LoopLoc:         '../gen/Hls_Layers_UpConv.tpp:75:21'
   - String:          ' '
-  - Function:        'void UpConv_Fused_Row<8, 16, 16, 960, 480>(ap_uint<256>*, ap_uint<256> const*, ap_uint<256> const*, ap_uint<256> const*, ap_uint<256> const*, ap_uint<256>*, half, int) (.1)'
-    DebugLoc:        { File: ../gen/Hls_Layers_UpConv.tpp, Line: 307, Column: 0 }
+  - Function:        'void uc_load_tile<8, 480, 60>(ap_uint<256> const*, int, ap_uint<256> (*) [(9) * (60)]) (.50.1)'
+    DebugLoc:        { File: ../gen/Hls_Layers_UpConv.tpp, Line: 68, Column: 0 }
   - String:          ' '
 ...
 --- !Passed
 Pass:            reflow-burst-summary
 Name:            BurstInferredSummary
-DebugLoc:        { File: ../gen/Hls_Layers_UpConv.tpp, Line: 357, Column: 16 }
-Function:        _Z16UpConv_Fused_RowILi8ELi16ELi16ELi960ELi480EEvP7ap_uintILi256EEPKS1_S4_S4_S4_S2_Dhi.1
+DebugLoc:        { File: ../gen/Hls_Layers_UpConv.tpp, Line: 75, Column: 21 }
+Function:        _ZL12uc_load_tileILi8ELi480ELi60EEvPK7ap_uintILi256EEiPAmlLi9ET1__S1_.50.1
 Args:            
   - String:          'Multiple burst '
   - Direction:       reads
   - String:          ' of length '
-  - Length:          '259200'
+  - Length:          '540'
   - String:          ' and bit width '
   - Width:           '256'
   - String:          ' in loop '''
-  - LoopName:        TILE_LOOP
+  - LoopName:        W_FLAT
   - String:          '''('
-  - LoopLoc:         '../gen/Hls_Layers_UpConv.tpp:357:16'
+  - LoopLoc:         '../gen/Hls_Layers_UpConv.tpp:75:21'
   - String:          ')'
   - String:          ' has been inferred on bundle '''
   - BundleName:      gmem_weight
@@ -1262,7 +1079,51 @@ Args:
 --- !Missed
 Pass:            reflow-burst-inference
 Name:            BurstConflict
-DebugLoc:        { File: ../gen/Hls_Layers_UpConv.tpp, Line: 394, Column: 15 }
+DebugLoc:        { File: ../gen/Hls_Layers_UpConv.tpp, Line: 209, Column: 15 }
+Function:        _Z16UpConv_Fused_RowILi8ELi16ELi16ELi960ELi480EEvP7ap_uintILi256EEPKS1_S4_S4_S4_S2_Dhi.1
+Args:            
+  - String:          'Could not burst due to multiple potential '
+  - Direction:       reads
+  - String:          ' to the same bundle in the same region.'
+  - String:          ' _XLX_SEP_ '
+  - OrigAccess:      call
+    DebugLoc:        { File: ../gen/Hls_Layers_UpConv.tpp, Line: 209, Column: 15 }
+  - OrigDirection:   read
+  - OrigID:          seq
+  - ArrayName:       ''
+  - String:          ' '
+  - BundleName:      gmem_param
+  - String:          ' '
+  - Function:        'void UpConv_Fused_Row<8, 16, 16, 960, 480>(ap_uint<256>*, ap_uint<256> const*, ap_uint<256> const*, ap_uint<256> const*, ap_uint<256> const*, ap_uint<256>*, half, int) (.1)'
+    DebugLoc:        { File: ../gen/Hls_Layers_UpConv.tpp, Line: 162, Column: 0 }
+  - String:          ' '
+...
+--- !Missed
+Pass:            reflow-burst-inference
+Name:            BurstConflict
+DebugLoc:        { File: ../gen/Hls_Layers_UpConv.tpp, Line: 209, Column: 15 }
+Function:        _Z16UpConv_Fused_RowILi8ELi16ELi16ELi960ELi480EEvP7ap_uintILi256EEPKS1_S4_S4_S4_S2_Dhi.1
+Args:            
+  - String:          'Could not burst due to multiple potential '
+  - Direction:       reads
+  - String:          ' to the same bundle in the same region.'
+  - String:          ' _XLX_SEP_ '
+  - OrigAccess:      call
+    DebugLoc:        { File: ../gen/Hls_Layers_UpConv.tpp, Line: 209, Column: 15 }
+  - OrigDirection:   read
+  - OrigID:          seq1
+  - ArrayName:       ''
+  - String:          ' '
+  - BundleName:      gmem_param
+  - String:          ' '
+  - Function:        'void UpConv_Fused_Row<8, 16, 16, 960, 480>(ap_uint<256>*, ap_uint<256> const*, ap_uint<256> const*, ap_uint<256> const*, ap_uint<256> const*, ap_uint<256>*, half, int) (.1)'
+    DebugLoc:        { File: ../gen/Hls_Layers_UpConv.tpp, Line: 162, Column: 0 }
+  - String:          ' '
+...
+--- !Missed
+Pass:            reflow-burst-inference
+Name:            BurstConflict
+DebugLoc:        { File: ../gen/Hls_Layers_UpConv.tpp, Line: 305, Column: 15 }
 Function:        upconv_core_top_ucb0
 Args:            
   - String:          'Could not burst due to multiple potential '
@@ -1270,7 +1131,7 @@ Args:
   - String:          ' to the same bundle in the same region.'
   - String:          ' _XLX_SEP_ '
   - OrigAccess:      call
-    DebugLoc:        { File: ../gen/Hls_Layers_UpConv.tpp, Line: 394, Column: 15 }
+    DebugLoc:        { File: ../gen/Hls_Layers_UpConv.tpp, Line: 305, Column: 15 }
   - OrigDirection:   read
   - OrigID:          seq1
   - ArrayName:       ''
@@ -1285,7 +1146,7 @@ Args:
 --- !Passed
 Pass:            reflow-burst-summary
 Name:            BurstInferredVerboseSummary
-DebugLoc:        { File: ../gen/Hls_Layers_UpConv.tpp, Line: 385, Column: 16 }
+DebugLoc:        { File: ../gen/Hls_Layers_UpConv.tpp, Line: 296, Column: 16 }
 Function:        upconv_core_top_ucb0
 Args:            
   - String:          'Multiple burst '
@@ -1304,7 +1165,7 @@ Args:
   - String:          ' '
   - LoopName:        LOAD_ROW0
   - String:          ' '
-  - LoopLoc:         '../gen/Hls_Layers_UpConv.tpp:385:16'
+  - LoopLoc:         '../gen/Hls_Layers_UpConv.tpp:296:16'
   - String:          ' '
   - Function:        upconv_core_top_ucb0
     DebugLoc:        { File: ../gen/upconv_core_top_ucb0.cpp, Line: 18, 
@@ -1314,7 +1175,7 @@ Args:
 --- !Passed
 Pass:            reflow-burst-summary
 Name:            BurstInferredSummary
-DebugLoc:        { File: ../gen/Hls_Layers_UpConv.tpp, Line: 385, Column: 16 }
+DebugLoc:        { File: ../gen/Hls_Layers_UpConv.tpp, Line: 296, Column: 16 }
 Function:        upconv_core_top_ucb0
 Args:            
   - String:          'Multiple burst '
@@ -1326,7 +1187,7 @@ Args:
   - String:          ' in loop '''
   - LoopName:        LOAD_ROW0
   - String:          '''('
-  - LoopLoc:         '../gen/Hls_Layers_UpConv.tpp:385:16'
+  - LoopLoc:         '../gen/Hls_Layers_UpConv.tpp:296:16'
   - String:          ')'
   - String:          ' has been inferred on bundle '''
   - BundleName:      gmem_in
@@ -1336,11 +1197,50 @@ Args:
 --- !Missed
 Pass:            inline
 Name:            NeverInline
-DebugLoc:        { File: ../gen/Hls_Layers_UpConv.tpp, Line: 391, Column: 5 }
+DebugLoc:        { File: ../gen/Hls_Layers_UpConv.tpp, Line: 200, Column: 2 }
+Function:        dataflow_in_loop_TILE_LOOP.1
+Args:            
+  - Callee:          'void uc_load_tile<8, 480, 60>(ap_uint<256> const*, int, ap_uint<256> (*) [(9) * (60)]) (.50.1)'
+    DebugLoc:        { File: ../gen/Hls_Layers_UpConv.tpp, Line: 68, Column: 0 }
+  - String:          ' not inlined into '
+  - Caller:          dataflow_in_loop_TILE_LOOP.1
+    DebugLoc:        { File: ../gen/Hls_Layers_UpConv.tpp, Line: 0, Column: 0 }
+  - String:          ' because it should never be inlined (cost=never)'
+...
+--- !Missed
+Pass:            inline
+Name:            NeverInline
+DebugLoc:        { File: ../gen/Hls_Layers_UpConv.tpp, Line: 201, Column: 9 }
+Function:        dataflow_in_loop_TILE_LOOP.1
+Args:            
+  - Callee:          'void uc_compute_tile<8, 16, 16, 60, 32, 480, 480>(ap_uint<256> (*) [(9) * (60)], ap_uint<256>*, half (*) [480], int, int)'
+    DebugLoc:        { File: ../gen/Hls_Layers_UpConv.tpp, Line: 87, Column: 0 }
+  - String:          ' not inlined into '
+  - Caller:          dataflow_in_loop_TILE_LOOP.1
+    DebugLoc:        { File: ../gen/Hls_Layers_UpConv.tpp, Line: 0, Column: 0 }
+  - String:          ' because it should never be inlined (cost=never)'
+...
+--- !Missed
+Pass:            inline
+Name:            NeverInline
+DebugLoc:        { File: ../gen/Hls_Layers_UpConv.tpp, Line: 197, Column: 13 }
+Function:        _Z16UpConv_Fused_RowILi8ELi16ELi16ELi960ELi480EEvP7ap_uintILi256EEPKS1_S4_S4_S4_S2_Dhi.1
+Args:            
+  - Callee:          dataflow_in_loop_TILE_LOOP.1
+    DebugLoc:        { File: ../gen/Hls_Layers_UpConv.tpp, Line: 0, Column: 0 }
+  - String:          ' not inlined into '
+  - Caller:          'void UpConv_Fused_Row<8, 16, 16, 960, 480>(ap_uint<256>*, ap_uint<256> const*, ap_uint<256> const*, ap_uint<256> const*, ap_uint<256> const*, ap_uint<256>*, half, int) (.1)'
+    DebugLoc:        { File: ../gen/Hls_Layers_UpConv.tpp, Line: 162, Column: 0 }
+  - String:          ' because it should never be inlined (cost=never)'
+...
+--- !Missed
+Pass:            inline
+Name:            NeverInline
+DebugLoc:        { File: ../gen/Hls_Layers_UpConv.tpp, Line: 302, Column: 5 }
 Function:        upconv_core_top_ucb0
 Args:            
   - Callee:          'void UpConv_Fused_Row<8, 16, 16, 960, 480>(ap_uint<256>*, ap_uint<256> const*, ap_uint<256> const*, ap_uint<256> const*, ap_uint<256> const*, ap_uint<256>*, half, int) (.1)'
-    DebugLoc:        { File: ../gen/Hls_Layers_UpConv.tpp, Line: 307, Column: 0 }
+    DebugLoc:        { File: ../gen/Hls_Layers_UpConv.tpp, Line: 162, Column: 0 }
   - String:          ' not inlined into '
   - Caller:          upconv_core_top_ucb0
     DebugLoc:        { File: ../gen/upconv_core_top_ucb0.cpp, Line: 18, 

@@ -16,7 +16,7 @@
             <Obj class_id="5" tracking_level="0" version="0">
               <type>1</type>
               <id>1</id>
-              <name>conv42_i</name>
+              <name>conv1</name>
               <fileName/>
               <fileDirectory/>
               <lineNumber>0</lineNumber>
@@ -743,30 +743,23 @@
               <name>cs</name>
               <fileName>../gen/Hls_Layers_UpConv.tpp</fileName>
               <fileDirectory>../.</fileDirectory>
-              <lineNumber>212</lineNumber>
-              <contextFuncName>Compute_Pixel_Stats&amp;lt;32, 480, 30, 480&amp;gt;</contextFuncName>
-              <contextNormFuncName>Compute_Pixel_Stats_32_480_30_480_s</contextNormFuncName>
+              <lineNumber>226</lineNumber>
+              <contextFuncName>UpConv_Fused_Row&amp;lt;8, 16, 16, 960, 480&amp;gt;</contextFuncName>
+              <contextNormFuncName>UpConv_Fused_Row_8_16_16_960_480_s</contextNormFuncName>
               <inlineStackInfo>
                 <count>1</count>
                 <item_version>0</item_version>
                 <item class_id="10" tracking_level="0" version="0">
                   <first>/home/hoinguyen/Documents/Vitis/UpConv_HLS/upconv_block0</first>
                   <second class_id="11" tracking_level="0" version="0">
-                    <count>2</count>
+                    <count>1</count>
                     <item_version>0</item_version>
                     <item class_id="12" tracking_level="0" version="0">
                       <first class_id="13" tracking_level="0" version="0">
                         <first>../gen/Hls_Layers_UpConv.tpp</first>
-                        <second>Compute_Pixel_Stats&amp;lt;32, 480, 30, 480&amp;gt;</second>
-                      </first>
-                      <second>212</second>
-                    </item>
-                    <item>
-                      <first>
-                        <first>../gen/Hls_Layers_UpConv.tpp</first>
                         <second>UpConv_Fused_Row&amp;lt;8, 16, 16, 960, 480&amp;gt;</second>
                       </first>
-                      <second>363</second>
+                      <second>226</second>
                     </item>
                   </second>
                 </item>
@@ -806,30 +799,23 @@
               <name>m_2</name>
               <fileName>../gen/Hls_Layers_UpConv.tpp</fileName>
               <fileDirectory>../.</fileDirectory>
-              <lineNumber>213</lineNumber>
-              <contextFuncName>Compute_Pixel_Stats&amp;lt;32, 480, 30, 480&amp;gt;</contextFuncName>
-              <contextNormFuncName>Compute_Pixel_Stats_32_480_30_480_s</contextNormFuncName>
+              <lineNumber>227</lineNumber>
+              <contextFuncName>UpConv_Fused_Row&amp;lt;8, 16, 16, 960, 480&amp;gt;</contextFuncName>
+              <contextNormFuncName>UpConv_Fused_Row_8_16_16_960_480_s</contextNormFuncName>
               <inlineStackInfo>
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
                   <first>/home/hoinguyen/Documents/Vitis/UpConv_HLS/upconv_block0</first>
                   <second>
-                    <count>2</count>
+                    <count>1</count>
                     <item_version>0</item_version>
-                    <item>
-                      <first>
-                        <first>../gen/Hls_Layers_UpConv.tpp</first>
-                        <second>Compute_Pixel_Stats&amp;lt;32, 480, 30, 480&amp;gt;</second>
-                      </first>
-                      <second>213</second>
-                    </item>
                     <item>
                       <first>
                         <first>../gen/Hls_Layers_UpConv.tpp</first>
                         <second>UpConv_Fused_Row&amp;lt;8, 16, 16, 960, 480&amp;gt;</second>
                       </first>
-                      <second>363</second>
+                      <second>227</second>
                     </item>
                   </second>
                 </item>
@@ -869,30 +855,23 @@
               <name>ws</name>
               <fileName>../gen/Hls_Layers_UpConv.tpp</fileName>
               <fileDirectory>../.</fileDirectory>
-              <lineNumber>212</lineNumber>
-              <contextFuncName>Compute_Pixel_Stats&amp;lt;32, 480, 30, 480&amp;gt;</contextFuncName>
-              <contextNormFuncName>Compute_Pixel_Stats_32_480_30_480_s</contextNormFuncName>
+              <lineNumber>226</lineNumber>
+              <contextFuncName>UpConv_Fused_Row&amp;lt;8, 16, 16, 960, 480&amp;gt;</contextFuncName>
+              <contextNormFuncName>UpConv_Fused_Row_8_16_16_960_480_s</contextNormFuncName>
               <inlineStackInfo>
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
                   <first>/home/hoinguyen/Documents/Vitis/UpConv_HLS/upconv_block0</first>
                   <second>
-                    <count>2</count>
+                    <count>1</count>
                     <item_version>0</item_version>
-                    <item>
-                      <first>
-                        <first>../gen/Hls_Layers_UpConv.tpp</first>
-                        <second>Compute_Pixel_Stats&amp;lt;32, 480, 30, 480&amp;gt;</second>
-                      </first>
-                      <second>212</second>
-                    </item>
                     <item>
                       <first>
                         <first>../gen/Hls_Layers_UpConv.tpp</first>
                         <second>UpConv_Fused_Row&amp;lt;8, 16, 16, 960, 480&amp;gt;</second>
                       </first>
-                      <second>363</second>
+                      <second>226</second>
                     </item>
                   </second>
                 </item>
@@ -929,7 +908,7 @@
             <Obj>
               <type>0</type>
               <id>43</id>
-              <name>conv42_i_read</name>
+              <name>conv1_read</name>
               <fileName/>
               <fileDirectory/>
               <lineNumber>0</lineNumber>
@@ -975,30 +954,23 @@
               <name>sumsq_rot_7</name>
               <fileName>../gen/Hls_Layers_UpConv.tpp</fileName>
               <fileDirectory>../.</fileDirectory>
-              <lineNumber>208</lineNumber>
-              <contextFuncName>Compute_Pixel_Stats&amp;lt;32, 480, 30, 480&amp;gt;</contextFuncName>
-              <contextNormFuncName>Compute_Pixel_Stats_32_480_30_480_s</contextNormFuncName>
+              <lineNumber>222</lineNumber>
+              <contextFuncName>UpConv_Fused_Row&amp;lt;8, 16, 16, 960, 480&amp;gt;</contextFuncName>
+              <contextNormFuncName>UpConv_Fused_Row_8_16_16_960_480_s</contextNormFuncName>
               <inlineStackInfo>
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
                   <first>/home/hoinguyen/Documents/Vitis/UpConv_HLS/upconv_block0</first>
                   <second>
-                    <count>2</count>
+                    <count>1</count>
                     <item_version>0</item_version>
-                    <item>
-                      <first>
-                        <first>../gen/Hls_Layers_UpConv.tpp</first>
-                        <second>Compute_Pixel_Stats&amp;lt;32, 480, 30, 480&amp;gt;</second>
-                      </first>
-                      <second>208</second>
-                    </item>
                     <item>
                       <first>
                         <first>../gen/Hls_Layers_UpConv.tpp</first>
                         <second>UpConv_Fused_Row&amp;lt;8, 16, 16, 960, 480&amp;gt;</second>
                       </first>
-                      <second>363</second>
+                      <second>222</second>
                     </item>
                   </second>
                 </item>
@@ -1038,30 +1010,23 @@
               <name>sumsq_rot_6</name>
               <fileName>../gen/Hls_Layers_UpConv.tpp</fileName>
               <fileDirectory>../.</fileDirectory>
-              <lineNumber>208</lineNumber>
-              <contextFuncName>Compute_Pixel_Stats&amp;lt;32, 480, 30, 480&amp;gt;</contextFuncName>
-              <contextNormFuncName>Compute_Pixel_Stats_32_480_30_480_s</contextNormFuncName>
+              <lineNumber>222</lineNumber>
+              <contextFuncName>UpConv_Fused_Row&amp;lt;8, 16, 16, 960, 480&amp;gt;</contextFuncName>
+              <contextNormFuncName>UpConv_Fused_Row_8_16_16_960_480_s</contextNormFuncName>
               <inlineStackInfo>
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
                   <first>/home/hoinguyen/Documents/Vitis/UpConv_HLS/upconv_block0</first>
                   <second>
-                    <count>2</count>
+                    <count>1</count>
                     <item_version>0</item_version>
-                    <item>
-                      <first>
-                        <first>../gen/Hls_Layers_UpConv.tpp</first>
-                        <second>Compute_Pixel_Stats&amp;lt;32, 480, 30, 480&amp;gt;</second>
-                      </first>
-                      <second>208</second>
-                    </item>
                     <item>
                       <first>
                         <first>../gen/Hls_Layers_UpConv.tpp</first>
                         <second>UpConv_Fused_Row&amp;lt;8, 16, 16, 960, 480&amp;gt;</second>
                       </first>
-                      <second>363</second>
+                      <second>222</second>
                     </item>
                   </second>
                 </item>
@@ -1101,30 +1066,23 @@
               <name>sumsq_rot_5</name>
               <fileName>../gen/Hls_Layers_UpConv.tpp</fileName>
               <fileDirectory>../.</fileDirectory>
-              <lineNumber>208</lineNumber>
-              <contextFuncName>Compute_Pixel_Stats&amp;lt;32, 480, 30, 480&amp;gt;</contextFuncName>
-              <contextNormFuncName>Compute_Pixel_Stats_32_480_30_480_s</contextNormFuncName>
+              <lineNumber>222</lineNumber>
+              <contextFuncName>UpConv_Fused_Row&amp;lt;8, 16, 16, 960, 480&amp;gt;</contextFuncName>
+              <contextNormFuncName>UpConv_Fused_Row_8_16_16_960_480_s</contextNormFuncName>
               <inlineStackInfo>
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
                   <first>/home/hoinguyen/Documents/Vitis/UpConv_HLS/upconv_block0</first>
                   <second>
-                    <count>2</count>
+                    <count>1</count>
                     <item_version>0</item_version>
-                    <item>
-                      <first>
-                        <first>../gen/Hls_Layers_UpConv.tpp</first>
-                        <second>Compute_Pixel_Stats&amp;lt;32, 480, 30, 480&amp;gt;</second>
-                      </first>
-                      <second>208</second>
-                    </item>
                     <item>
                       <first>
                         <first>../gen/Hls_Layers_UpConv.tpp</first>
                         <second>UpConv_Fused_Row&amp;lt;8, 16, 16, 960, 480&amp;gt;</second>
                       </first>
-                      <second>363</second>
+                      <second>222</second>
                     </item>
                   </second>
                 </item>
@@ -1164,30 +1122,23 @@
               <name>sumsq_rot_4</name>
               <fileName>../gen/Hls_Layers_UpConv.tpp</fileName>
               <fileDirectory>../.</fileDirectory>
-              <lineNumber>208</lineNumber>
-              <contextFuncName>Compute_Pixel_Stats&amp;lt;32, 480, 30, 480&amp;gt;</contextFuncName>
-              <contextNormFuncName>Compute_Pixel_Stats_32_480_30_480_s</contextNormFuncName>
+              <lineNumber>222</lineNumber>
+              <contextFuncName>UpConv_Fused_Row&amp;lt;8, 16, 16, 960, 480&amp;gt;</contextFuncName>
+              <contextNormFuncName>UpConv_Fused_Row_8_16_16_960_480_s</contextNormFuncName>
               <inlineStackInfo>
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
                   <first>/home/hoinguyen/Documents/Vitis/UpConv_HLS/upconv_block0</first>
                   <second>
-                    <count>2</count>
+                    <count>1</count>
                     <item_version>0</item_version>
-                    <item>
-                      <first>
-                        <first>../gen/Hls_Layers_UpConv.tpp</first>
-                        <second>Compute_Pixel_Stats&amp;lt;32, 480, 30, 480&amp;gt;</second>
-                      </first>
-                      <second>208</second>
-                    </item>
                     <item>
                       <first>
                         <first>../gen/Hls_Layers_UpConv.tpp</first>
                         <second>UpConv_Fused_Row&amp;lt;8, 16, 16, 960, 480&amp;gt;</second>
                       </first>
-                      <second>363</second>
+                      <second>222</second>
                     </item>
                   </second>
                 </item>
@@ -1227,30 +1178,23 @@
               <name>sumsq_rot_3</name>
               <fileName>../gen/Hls_Layers_UpConv.tpp</fileName>
               <fileDirectory>../.</fileDirectory>
-              <lineNumber>208</lineNumber>
-              <contextFuncName>Compute_Pixel_Stats&amp;lt;32, 480, 30, 480&amp;gt;</contextFuncName>
-              <contextNormFuncName>Compute_Pixel_Stats_32_480_30_480_s</contextNormFuncName>
+              <lineNumber>222</lineNumber>
+              <contextFuncName>UpConv_Fused_Row&amp;lt;8, 16, 16, 960, 480&amp;gt;</contextFuncName>
+              <contextNormFuncName>UpConv_Fused_Row_8_16_16_960_480_s</contextNormFuncName>
               <inlineStackInfo>
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
                   <first>/home/hoinguyen/Documents/Vitis/UpConv_HLS/upconv_block0</first>
                   <second>
-                    <count>2</count>
+                    <count>1</count>
                     <item_version>0</item_version>
-                    <item>
-                      <first>
-                        <first>../gen/Hls_Layers_UpConv.tpp</first>
-                        <second>Compute_Pixel_Stats&amp;lt;32, 480, 30, 480&amp;gt;</second>
-                      </first>
-                      <second>208</second>
-                    </item>
                     <item>
                       <first>
                         <first>../gen/Hls_Layers_UpConv.tpp</first>
                         <second>UpConv_Fused_Row&amp;lt;8, 16, 16, 960, 480&amp;gt;</second>
                       </first>
-                      <second>363</second>
+                      <second>222</second>
                     </item>
                   </second>
                 </item>
@@ -1290,30 +1234,23 @@
               <name>sumsq_rot_2</name>
               <fileName>../gen/Hls_Layers_UpConv.tpp</fileName>
               <fileDirectory>../.</fileDirectory>
-              <lineNumber>208</lineNumber>
-              <contextFuncName>Compute_Pixel_Stats&amp;lt;32, 480, 30, 480&amp;gt;</contextFuncName>
-              <contextNormFuncName>Compute_Pixel_Stats_32_480_30_480_s</contextNormFuncName>
+              <lineNumber>222</lineNumber>
+              <contextFuncName>UpConv_Fused_Row&amp;lt;8, 16, 16, 960, 480&amp;gt;</contextFuncName>
+              <contextNormFuncName>UpConv_Fused_Row_8_16_16_960_480_s</contextNormFuncName>
               <inlineStackInfo>
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
                   <first>/home/hoinguyen/Documents/Vitis/UpConv_HLS/upconv_block0</first>
                   <second>
-                    <count>2</count>
+                    <count>1</count>
                     <item_version>0</item_version>
-                    <item>
-                      <first>
-                        <first>../gen/Hls_Layers_UpConv.tpp</first>
-                        <second>Compute_Pixel_Stats&amp;lt;32, 480, 30, 480&amp;gt;</second>
-                      </first>
-                      <second>208</second>
-                    </item>
                     <item>
                       <first>
                         <first>../gen/Hls_Layers_UpConv.tpp</first>
                         <second>UpConv_Fused_Row&amp;lt;8, 16, 16, 960, 480&amp;gt;</second>
                       </first>
-                      <second>363</second>
+                      <second>222</second>
                     </item>
                   </second>
                 </item>
@@ -1353,30 +1290,23 @@
               <name>sumsq_rot_1</name>
               <fileName>../gen/Hls_Layers_UpConv.tpp</fileName>
               <fileDirectory>../.</fileDirectory>
-              <lineNumber>208</lineNumber>
-              <contextFuncName>Compute_Pixel_Stats&amp;lt;32, 480, 30, 480&amp;gt;</contextFuncName>
-              <contextNormFuncName>Compute_Pixel_Stats_32_480_30_480_s</contextNormFuncName>
+              <lineNumber>222</lineNumber>
+              <contextFuncName>UpConv_Fused_Row&amp;lt;8, 16, 16, 960, 480&amp;gt;</contextFuncName>
+              <contextNormFuncName>UpConv_Fused_Row_8_16_16_960_480_s</contextNormFuncName>
               <inlineStackInfo>
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
                   <first>/home/hoinguyen/Documents/Vitis/UpConv_HLS/upconv_block0</first>
                   <second>
-                    <count>2</count>
+                    <count>1</count>
                     <item_version>0</item_version>
-                    <item>
-                      <first>
-                        <first>../gen/Hls_Layers_UpConv.tpp</first>
-                        <second>Compute_Pixel_Stats&amp;lt;32, 480, 30, 480&amp;gt;</second>
-                      </first>
-                      <second>208</second>
-                    </item>
                     <item>
                       <first>
                         <first>../gen/Hls_Layers_UpConv.tpp</first>
                         <second>UpConv_Fused_Row&amp;lt;8, 16, 16, 960, 480&amp;gt;</second>
                       </first>
-                      <second>363</second>
+                      <second>222</second>
                     </item>
                   </second>
                 </item>
@@ -1416,30 +1346,23 @@
               <name>sumsq_rot</name>
               <fileName>../gen/Hls_Layers_UpConv.tpp</fileName>
               <fileDirectory>../.</fileDirectory>
-              <lineNumber>208</lineNumber>
-              <contextFuncName>Compute_Pixel_Stats&amp;lt;32, 480, 30, 480&amp;gt;</contextFuncName>
-              <contextNormFuncName>Compute_Pixel_Stats_32_480_30_480_s</contextNormFuncName>
+              <lineNumber>222</lineNumber>
+              <contextFuncName>UpConv_Fused_Row&amp;lt;8, 16, 16, 960, 480&amp;gt;</contextFuncName>
+              <contextNormFuncName>UpConv_Fused_Row_8_16_16_960_480_s</contextNormFuncName>
               <inlineStackInfo>
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
                   <first>/home/hoinguyen/Documents/Vitis/UpConv_HLS/upconv_block0</first>
                   <second>
-                    <count>2</count>
+                    <count>1</count>
                     <item_version>0</item_version>
-                    <item>
-                      <first>
-                        <first>../gen/Hls_Layers_UpConv.tpp</first>
-                        <second>Compute_Pixel_Stats&amp;lt;32, 480, 30, 480&amp;gt;</second>
-                      </first>
-                      <second>208</second>
-                    </item>
                     <item>
                       <first>
                         <first>../gen/Hls_Layers_UpConv.tpp</first>
                         <second>UpConv_Fused_Row&amp;lt;8, 16, 16, 960, 480&amp;gt;</second>
                       </first>
-                      <second>363</second>
+                      <second>222</second>
                     </item>
                   </second>
                 </item>
@@ -1479,30 +1402,23 @@
               <name>sum_rot_7</name>
               <fileName>../gen/Hls_Layers_UpConv.tpp</fileName>
               <fileDirectory>../.</fileDirectory>
-              <lineNumber>208</lineNumber>
-              <contextFuncName>Compute_Pixel_Stats&amp;lt;32, 480, 30, 480&amp;gt;</contextFuncName>
-              <contextNormFuncName>Compute_Pixel_Stats_32_480_30_480_s</contextNormFuncName>
+              <lineNumber>222</lineNumber>
+              <contextFuncName>UpConv_Fused_Row&amp;lt;8, 16, 16, 960, 480&amp;gt;</contextFuncName>
+              <contextNormFuncName>UpConv_Fused_Row_8_16_16_960_480_s</contextNormFuncName>
               <inlineStackInfo>
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
                   <first>/home/hoinguyen/Documents/Vitis/UpConv_HLS/upconv_block0</first>
                   <second>
-                    <count>2</count>
+                    <count>1</count>
                     <item_version>0</item_version>
-                    <item>
-                      <first>
-                        <first>../gen/Hls_Layers_UpConv.tpp</first>
-                        <second>Compute_Pixel_Stats&amp;lt;32, 480, 30, 480&amp;gt;</second>
-                      </first>
-                      <second>208</second>
-                    </item>
                     <item>
                       <first>
                         <first>../gen/Hls_Layers_UpConv.tpp</first>
                         <second>UpConv_Fused_Row&amp;lt;8, 16, 16, 960, 480&amp;gt;</second>
                       </first>
-                      <second>363</second>
+                      <second>222</second>
                     </item>
                   </second>
                 </item>
@@ -1542,30 +1458,23 @@
               <name>sum_rot_6</name>
               <fileName>../gen/Hls_Layers_UpConv.tpp</fileName>
               <fileDirectory>../.</fileDirectory>
-              <lineNumber>208</lineNumber>
-              <contextFuncName>Compute_Pixel_Stats&amp;lt;32, 480, 30, 480&amp;gt;</contextFuncName>
-              <contextNormFuncName>Compute_Pixel_Stats_32_480_30_480_s</contextNormFuncName>
+              <lineNumber>222</lineNumber>
+              <contextFuncName>UpConv_Fused_Row&amp;lt;8, 16, 16, 960, 480&amp;gt;</contextFuncName>
+              <contextNormFuncName>UpConv_Fused_Row_8_16_16_960_480_s</contextNormFuncName>
               <inlineStackInfo>
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
                   <first>/home/hoinguyen/Documents/Vitis/UpConv_HLS/upconv_block0</first>
                   <second>
-                    <count>2</count>
+                    <count>1</count>
                     <item_version>0</item_version>
-                    <item>
-                      <first>
-                        <first>../gen/Hls_Layers_UpConv.tpp</first>
-                        <second>Compute_Pixel_Stats&amp;lt;32, 480, 30, 480&amp;gt;</second>
-                      </first>
-                      <second>208</second>
-                    </item>
                     <item>
                       <first>
                         <first>../gen/Hls_Layers_UpConv.tpp</first>
                         <second>UpConv_Fused_Row&amp;lt;8, 16, 16, 960, 480&amp;gt;</second>
                       </first>
-                      <second>363</second>
+                      <second>222</second>
                     </item>
                   </second>
                 </item>
@@ -1605,30 +1514,23 @@
               <name>sum_rot_5</name>
               <fileName>../gen/Hls_Layers_UpConv.tpp</fileName>
               <fileDirectory>../.</fileDirectory>
-              <lineNumber>208</lineNumber>
-              <contextFuncName>Compute_Pixel_Stats&amp;lt;32, 480, 30, 480&amp;gt;</contextFuncName>
-              <contextNormFuncName>Compute_Pixel_Stats_32_480_30_480_s</contextNormFuncName>
+              <lineNumber>222</lineNumber>
+              <contextFuncName>UpConv_Fused_Row&amp;lt;8, 16, 16, 960, 480&amp;gt;</contextFuncName>
+              <contextNormFuncName>UpConv_Fused_Row_8_16_16_960_480_s</contextNormFuncName>
               <inlineStackInfo>
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
                   <first>/home/hoinguyen/Documents/Vitis/UpConv_HLS/upconv_block0</first>
                   <second>
-                    <count>2</count>
+                    <count>1</count>
                     <item_version>0</item_version>
-                    <item>
-                      <first>
-                        <first>../gen/Hls_Layers_UpConv.tpp</first>
-                        <second>Compute_Pixel_Stats&amp;lt;32, 480, 30, 480&amp;gt;</second>
-                      </first>
-                      <second>208</second>
-                    </item>
                     <item>
                       <first>
                         <first>../gen/Hls_Layers_UpConv.tpp</first>
                         <second>UpConv_Fused_Row&amp;lt;8, 16, 16, 960, 480&amp;gt;</second>
                       </first>
-                      <second>363</second>
+                      <second>222</second>
                     </item>
                   </second>
                 </item>
@@ -1668,30 +1570,23 @@
               <name>sum_rot_4</name>
               <fileName>../gen/Hls_Layers_UpConv.tpp</fileName>
               <fileDirectory>../.</fileDirectory>
-              <lineNumber>208</lineNumber>
-              <contextFuncName>Compute_Pixel_Stats&amp;lt;32, 480, 30, 480&amp;gt;</contextFuncName>
-              <contextNormFuncName>Compute_Pixel_Stats_32_480_30_480_s</contextNormFuncName>
+              <lineNumber>222</lineNumber>
+              <contextFuncName>UpConv_Fused_Row&amp;lt;8, 16, 16, 960, 480&amp;gt;</contextFuncName>
+              <contextNormFuncName>UpConv_Fused_Row_8_16_16_960_480_s</contextNormFuncName>
               <inlineStackInfo>
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
                   <first>/home/hoinguyen/Documents/Vitis/UpConv_HLS/upconv_block0</first>
                   <second>
-                    <count>2</count>
+                    <count>1</count>
                     <item_version>0</item_version>
-                    <item>
-                      <first>
-                        <first>../gen/Hls_Layers_UpConv.tpp</first>
-                        <second>Compute_Pixel_Stats&amp;lt;32, 480, 30, 480&amp;gt;</second>
-                      </first>
-                      <second>208</second>
-                    </item>
                     <item>
                       <first>
                         <first>../gen/Hls_Layers_UpConv.tpp</first>
                         <second>UpConv_Fused_Row&amp;lt;8, 16, 16, 960, 480&amp;gt;</second>
                       </first>
-                      <second>363</second>
+                      <second>222</second>
                     </item>
                   </second>
                 </item>
@@ -1731,30 +1626,23 @@
               <name>sum_rot_3</name>
               <fileName>../gen/Hls_Layers_UpConv.tpp</fileName>
               <fileDirectory>../.</fileDirectory>
-              <lineNumber>208</lineNumber>
-              <contextFuncName>Compute_Pixel_Stats&amp;lt;32, 480, 30, 480&amp;gt;</contextFuncName>
-              <contextNormFuncName>Compute_Pixel_Stats_32_480_30_480_s</contextNormFuncName>
+              <lineNumber>222</lineNumber>
+              <contextFuncName>UpConv_Fused_Row&amp;lt;8, 16, 16, 960, 480&amp;gt;</contextFuncName>
+              <contextNormFuncName>UpConv_Fused_Row_8_16_16_960_480_s</contextNormFuncName>
               <inlineStackInfo>
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
                   <first>/home/hoinguyen/Documents/Vitis/UpConv_HLS/upconv_block0</first>
                   <second>
-                    <count>2</count>
+                    <count>1</count>
                     <item_version>0</item_version>
-                    <item>
-                      <first>
-                        <first>../gen/Hls_Layers_UpConv.tpp</first>
-                        <second>Compute_Pixel_Stats&amp;lt;32, 480, 30, 480&amp;gt;</second>
-                      </first>
-                      <second>208</second>
-                    </item>
                     <item>
                       <first>
                         <first>../gen/Hls_Layers_UpConv.tpp</first>
                         <second>UpConv_Fused_Row&amp;lt;8, 16, 16, 960, 480&amp;gt;</second>
                       </first>
-                      <second>363</second>
+                      <second>222</second>
                     </item>
                   </second>
                 </item>
@@ -1794,30 +1682,23 @@
               <name>sum_rot_2</name>
               <fileName>../gen/Hls_Layers_UpConv.tpp</fileName>
               <fileDirectory>../.</fileDirectory>
-              <lineNumber>208</lineNumber>
-              <contextFuncName>Compute_Pixel_Stats&amp;lt;32, 480, 30, 480&amp;gt;</contextFuncName>
-              <contextNormFuncName>Compute_Pixel_Stats_32_480_30_480_s</contextNormFuncName>
+              <lineNumber>222</lineNumber>
+              <contextFuncName>UpConv_Fused_Row&amp;lt;8, 16, 16, 960, 480&amp;gt;</contextFuncName>
+              <contextNormFuncName>UpConv_Fused_Row_8_16_16_960_480_s</contextNormFuncName>
               <inlineStackInfo>
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
                   <first>/home/hoinguyen/Documents/Vitis/UpConv_HLS/upconv_block0</first>
                   <second>
-                    <count>2</count>
+                    <count>1</count>
                     <item_version>0</item_version>
-                    <item>
-                      <first>
-                        <first>../gen/Hls_Layers_UpConv.tpp</first>
-                        <second>Compute_Pixel_Stats&amp;lt;32, 480, 30, 480&amp;gt;</second>
-                      </first>
-                      <second>208</second>
-                    </item>
                     <item>
                       <first>
                         <first>../gen/Hls_Layers_UpConv.tpp</first>
                         <second>UpConv_Fused_Row&amp;lt;8, 16, 16, 960, 480&amp;gt;</second>
                       </first>
-                      <second>363</second>
+                      <second>222</second>
                     </item>
                   </second>
                 </item>
@@ -1857,30 +1738,23 @@
               <name>sum_rot_1</name>
               <fileName>../gen/Hls_Layers_UpConv.tpp</fileName>
               <fileDirectory>../.</fileDirectory>
-              <lineNumber>208</lineNumber>
-              <contextFuncName>Compute_Pixel_Stats&amp;lt;32, 480, 30, 480&amp;gt;</contextFuncName>
-              <contextNormFuncName>Compute_Pixel_Stats_32_480_30_480_s</contextNormFuncName>
+              <lineNumber>222</lineNumber>
+              <contextFuncName>UpConv_Fused_Row&amp;lt;8, 16, 16, 960, 480&amp;gt;</contextFuncName>
+              <contextNormFuncName>UpConv_Fused_Row_8_16_16_960_480_s</contextNormFuncName>
               <inlineStackInfo>
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
                   <first>/home/hoinguyen/Documents/Vitis/UpConv_HLS/upconv_block0</first>
                   <second>
-                    <count>2</count>
+                    <count>1</count>
                     <item_version>0</item_version>
-                    <item>
-                      <first>
-                        <first>../gen/Hls_Layers_UpConv.tpp</first>
-                        <second>Compute_Pixel_Stats&amp;lt;32, 480, 30, 480&amp;gt;</second>
-                      </first>
-                      <second>208</second>
-                    </item>
                     <item>
                       <first>
                         <first>../gen/Hls_Layers_UpConv.tpp</first>
                         <second>UpConv_Fused_Row&amp;lt;8, 16, 16, 960, 480&amp;gt;</second>
                       </first>
-                      <second>363</second>
+                      <second>222</second>
                     </item>
                   </second>
                 </item>
@@ -1920,30 +1794,23 @@
               <name>sum_rot</name>
               <fileName>../gen/Hls_Layers_UpConv.tpp</fileName>
               <fileDirectory>../.</fileDirectory>
-              <lineNumber>208</lineNumber>
-              <contextFuncName>Compute_Pixel_Stats&amp;lt;32, 480, 30, 480&amp;gt;</contextFuncName>
-              <contextNormFuncName>Compute_Pixel_Stats_32_480_30_480_s</contextNormFuncName>
+              <lineNumber>222</lineNumber>
+              <contextFuncName>UpConv_Fused_Row&amp;lt;8, 16, 16, 960, 480&amp;gt;</contextFuncName>
+              <contextNormFuncName>UpConv_Fused_Row_8_16_16_960_480_s</contextNormFuncName>
               <inlineStackInfo>
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
                   <first>/home/hoinguyen/Documents/Vitis/UpConv_HLS/upconv_block0</first>
                   <second>
-                    <count>2</count>
+                    <count>1</count>
                     <item_version>0</item_version>
-                    <item>
-                      <first>
-                        <first>../gen/Hls_Layers_UpConv.tpp</first>
-                        <second>Compute_Pixel_Stats&amp;lt;32, 480, 30, 480&amp;gt;</second>
-                      </first>
-                      <second>208</second>
-                    </item>
                     <item>
                       <first>
                         <first>../gen/Hls_Layers_UpConv.tpp</first>
                         <second>UpConv_Fused_Row&amp;lt;8, 16, 16, 960, 480&amp;gt;</second>
                       </first>
-                      <second>363</second>
+                      <second>222</second>
                     </item>
                   </second>
                 </item>
@@ -1980,33 +1847,26 @@
             <Obj>
               <type>0</type>
               <id>60</id>
-              <name>ws_write_ln212</name>
+              <name>ws_write_ln226</name>
               <fileName>../gen/Hls_Layers_UpConv.tpp</fileName>
               <fileDirectory>../.</fileDirectory>
-              <lineNumber>212</lineNumber>
-              <contextFuncName>Compute_Pixel_Stats&amp;lt;32, 480, 30, 480&amp;gt;</contextFuncName>
-              <contextNormFuncName>Compute_Pixel_Stats_32_480_30_480_s</contextNormFuncName>
+              <lineNumber>226</lineNumber>
+              <contextFuncName>UpConv_Fused_Row&amp;lt;8, 16, 16, 960, 480&amp;gt;</contextFuncName>
+              <contextNormFuncName>UpConv_Fused_Row_8_16_16_960_480_s</contextNormFuncName>
               <inlineStackInfo>
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
                   <first>/home/hoinguyen/Documents/Vitis/UpConv_HLS/upconv_block0</first>
                   <second>
-                    <count>2</count>
+                    <count>1</count>
                     <item_version>0</item_version>
-                    <item>
-                      <first>
-                        <first>../gen/Hls_Layers_UpConv.tpp</first>
-                        <second>Compute_Pixel_Stats&amp;lt;32, 480, 30, 480&amp;gt;</second>
-                      </first>
-                      <second>212</second>
-                    </item>
                     <item>
                       <first>
                         <first>../gen/Hls_Layers_UpConv.tpp</first>
                         <second>UpConv_Fused_Row&amp;lt;8, 16, 16, 960, 480&amp;gt;</second>
                       </first>
-                      <second>363</second>
+                      <second>226</second>
                     </item>
                   </second>
                 </item>
@@ -2044,33 +1904,26 @@
             <Obj>
               <type>0</type>
               <id>61</id>
-              <name>m_2_write_ln213</name>
+              <name>m_2_write_ln227</name>
               <fileName>../gen/Hls_Layers_UpConv.tpp</fileName>
               <fileDirectory>../.</fileDirectory>
-              <lineNumber>213</lineNumber>
-              <contextFuncName>Compute_Pixel_Stats&amp;lt;32, 480, 30, 480&amp;gt;</contextFuncName>
-              <contextNormFuncName>Compute_Pixel_Stats_32_480_30_480_s</contextNormFuncName>
+              <lineNumber>227</lineNumber>
+              <contextFuncName>UpConv_Fused_Row&amp;lt;8, 16, 16, 960, 480&amp;gt;</contextFuncName>
+              <contextNormFuncName>UpConv_Fused_Row_8_16_16_960_480_s</contextNormFuncName>
               <inlineStackInfo>
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
                   <first>/home/hoinguyen/Documents/Vitis/UpConv_HLS/upconv_block0</first>
                   <second>
-                    <count>2</count>
+                    <count>1</count>
                     <item_version>0</item_version>
-                    <item>
-                      <first>
-                        <first>../gen/Hls_Layers_UpConv.tpp</first>
-                        <second>Compute_Pixel_Stats&amp;lt;32, 480, 30, 480&amp;gt;</second>
-                      </first>
-                      <second>213</second>
-                    </item>
                     <item>
                       <first>
                         <first>../gen/Hls_Layers_UpConv.tpp</first>
                         <second>UpConv_Fused_Row&amp;lt;8, 16, 16, 960, 480&amp;gt;</second>
                       </first>
-                      <second>363</second>
+                      <second>227</second>
                     </item>
                   </second>
                 </item>
@@ -2108,33 +1961,26 @@
             <Obj>
               <type>0</type>
               <id>62</id>
-              <name>cs_write_ln212</name>
+              <name>cs_write_ln226</name>
               <fileName>../gen/Hls_Layers_UpConv.tpp</fileName>
               <fileDirectory>../.</fileDirectory>
-              <lineNumber>212</lineNumber>
-              <contextFuncName>Compute_Pixel_Stats&amp;lt;32, 480, 30, 480&amp;gt;</contextFuncName>
-              <contextNormFuncName>Compute_Pixel_Stats_32_480_30_480_s</contextNormFuncName>
+              <lineNumber>226</lineNumber>
+              <contextFuncName>UpConv_Fused_Row&amp;lt;8, 16, 16, 960, 480&amp;gt;</contextFuncName>
+              <contextNormFuncName>UpConv_Fused_Row_8_16_16_960_480_s</contextNormFuncName>
               <inlineStackInfo>
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
                   <first>/home/hoinguyen/Documents/Vitis/UpConv_HLS/upconv_block0</first>
                   <second>
-                    <count>2</count>
+                    <count>1</count>
                     <item_version>0</item_version>
-                    <item>
-                      <first>
-                        <first>../gen/Hls_Layers_UpConv.tpp</first>
-                        <second>Compute_Pixel_Stats&amp;lt;32, 480, 30, 480&amp;gt;</second>
-                      </first>
-                      <second>212</second>
-                    </item>
                     <item>
                       <first>
                         <first>../gen/Hls_Layers_UpConv.tpp</first>
                         <second>UpConv_Fused_Row&amp;lt;8, 16, 16, 960, 480&amp;gt;</second>
                       </first>
-                      <second>363</second>
+                      <second>226</second>
                     </item>
                   </second>
                 </item>
@@ -2172,33 +2018,26 @@
             <Obj>
               <type>0</type>
               <id>63</id>
-              <name>br_ln213</name>
+              <name>br_ln227</name>
               <fileName>../gen/Hls_Layers_UpConv.tpp</fileName>
               <fileDirectory>../.</fileDirectory>
-              <lineNumber>213</lineNumber>
-              <contextFuncName>Compute_Pixel_Stats&amp;lt;32, 480, 30, 480&amp;gt;</contextFuncName>
-              <contextNormFuncName>Compute_Pixel_Stats_32_480_30_480_s</contextNormFuncName>
+              <lineNumber>227</lineNumber>
+              <contextFuncName>UpConv_Fused_Row&amp;lt;8, 16, 16, 960, 480&amp;gt;</contextFuncName>
+              <contextNormFuncName>UpConv_Fused_Row_8_16_16_960_480_s</contextNormFuncName>
               <inlineStackInfo>
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
                   <first>/home/hoinguyen/Documents/Vitis/UpConv_HLS/upconv_block0</first>
                   <second>
-                    <count>2</count>
+                    <count>1</count>
                     <item_version>0</item_version>
-                    <item>
-                      <first>
-                        <first>../gen/Hls_Layers_UpConv.tpp</first>
-                        <second>Compute_Pixel_Stats&amp;lt;32, 480, 30, 480&amp;gt;</second>
-                      </first>
-                      <second>213</second>
-                    </item>
                     <item>
                       <first>
                         <first>../gen/Hls_Layers_UpConv.tpp</first>
                         <second>UpConv_Fused_Row&amp;lt;8, 16, 16, 960, 480&amp;gt;</second>
                       </first>
-                      <second>363</second>
+                      <second>227</second>
                     </item>
                   </second>
                 </item>
@@ -2235,33 +2074,26 @@
             <Obj>
               <type>0</type>
               <id>65</id>
-              <name>cs_2</name>
+              <name>cs_1</name>
               <fileName>../gen/Hls_Layers_UpConv.tpp</fileName>
               <fileDirectory>../.</fileDirectory>
-              <lineNumber>213</lineNumber>
-              <contextFuncName>Compute_Pixel_Stats&amp;lt;32, 480, 30, 480&amp;gt;</contextFuncName>
-              <contextNormFuncName>Compute_Pixel_Stats_32_480_30_480_s</contextNormFuncName>
+              <lineNumber>227</lineNumber>
+              <contextFuncName>UpConv_Fused_Row&amp;lt;8, 16, 16, 960, 480&amp;gt;</contextFuncName>
+              <contextNormFuncName>UpConv_Fused_Row_8_16_16_960_480_s</contextNormFuncName>
               <inlineStackInfo>
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
                   <first>/home/hoinguyen/Documents/Vitis/UpConv_HLS/upconv_block0</first>
                   <second>
-                    <count>2</count>
+                    <count>1</count>
                     <item_version>0</item_version>
-                    <item>
-                      <first>
-                        <first>../gen/Hls_Layers_UpConv.tpp</first>
-                        <second>Compute_Pixel_Stats&amp;lt;32, 480, 30, 480&amp;gt;</second>
-                      </first>
-                      <second>213</second>
-                    </item>
                     <item>
                       <first>
                         <first>../gen/Hls_Layers_UpConv.tpp</first>
                         <second>UpConv_Fused_Row&amp;lt;8, 16, 16, 960, 480&amp;gt;</second>
                       </first>
-                      <second>363</second>
+                      <second>227</second>
                     </item>
                   </second>
                 </item>
@@ -2302,30 +2134,23 @@
               <name>m</name>
               <fileName>../gen/Hls_Layers_UpConv.tpp</fileName>
               <fileDirectory>../.</fileDirectory>
-              <lineNumber>213</lineNumber>
-              <contextFuncName>Compute_Pixel_Stats&amp;lt;32, 480, 30, 480&amp;gt;</contextFuncName>
-              <contextNormFuncName>Compute_Pixel_Stats_32_480_30_480_s</contextNormFuncName>
+              <lineNumber>227</lineNumber>
+              <contextFuncName>UpConv_Fused_Row&amp;lt;8, 16, 16, 960, 480&amp;gt;</contextFuncName>
+              <contextNormFuncName>UpConv_Fused_Row_8_16_16_960_480_s</contextNormFuncName>
               <inlineStackInfo>
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
                   <first>/home/hoinguyen/Documents/Vitis/UpConv_HLS/upconv_block0</first>
                   <second>
-                    <count>2</count>
+                    <count>1</count>
                     <item_version>0</item_version>
-                    <item>
-                      <first>
-                        <first>../gen/Hls_Layers_UpConv.tpp</first>
-                        <second>Compute_Pixel_Stats&amp;lt;32, 480, 30, 480&amp;gt;</second>
-                      </first>
-                      <second>213</second>
-                    </item>
                     <item>
                       <first>
                         <first>../gen/Hls_Layers_UpConv.tpp</first>
                         <second>UpConv_Fused_Row&amp;lt;8, 16, 16, 960, 480&amp;gt;</second>
                       </first>
-                      <second>363</second>
+                      <second>227</second>
                     </item>
                   </second>
                 </item>
@@ -2363,39 +2188,32 @@
             <Obj>
               <type>0</type>
               <id>67</id>
-              <name>icmp_ln213</name>
+              <name>icmp_ln227</name>
               <fileName>../gen/Hls_Layers_UpConv.tpp</fileName>
               <fileDirectory>../.</fileDirectory>
-              <lineNumber>213</lineNumber>
-              <contextFuncName>Compute_Pixel_Stats&amp;lt;32, 480, 30, 480&amp;gt;</contextFuncName>
-              <contextNormFuncName>Compute_Pixel_Stats_32_480_30_480_s</contextNormFuncName>
+              <lineNumber>227</lineNumber>
+              <contextFuncName>UpConv_Fused_Row&amp;lt;8, 16, 16, 960, 480&amp;gt;</contextFuncName>
+              <contextNormFuncName>UpConv_Fused_Row_8_16_16_960_480_s</contextNormFuncName>
               <inlineStackInfo>
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
                   <first>/home/hoinguyen/Documents/Vitis/UpConv_HLS/upconv_block0</first>
                   <second>
-                    <count>2</count>
+                    <count>1</count>
                     <item_version>0</item_version>
-                    <item>
-                      <first>
-                        <first>../gen/Hls_Layers_UpConv.tpp</first>
-                        <second>Compute_Pixel_Stats&amp;lt;32, 480, 30, 480&amp;gt;</second>
-                      </first>
-                      <second>213</second>
-                    </item>
                     <item>
                       <first>
                         <first>../gen/Hls_Layers_UpConv.tpp</first>
                         <second>UpConv_Fused_Row&amp;lt;8, 16, 16, 960, 480&amp;gt;</second>
                       </first>
-                      <second>363</second>
+                      <second>227</second>
                     </item>
                   </second>
                 </item>
               </inlineStackInfo>
               <originalName/>
-              <rtlName>icmp_ln213_fu_733_p2</rtlName>
+              <rtlName>icmp_ln227_fu_733_p2</rtlName>
               <control>auto</control>
               <opType>seteq</opType>
               <implIndex>auto</implIndex>
@@ -2430,30 +2248,23 @@
               <name>m_3</name>
               <fileName>../gen/Hls_Layers_UpConv.tpp</fileName>
               <fileDirectory>../.</fileDirectory>
-              <lineNumber>213</lineNumber>
-              <contextFuncName>Compute_Pixel_Stats&amp;lt;32, 480, 30, 480&amp;gt;</contextFuncName>
-              <contextNormFuncName>Compute_Pixel_Stats_32_480_30_480_s</contextNormFuncName>
+              <lineNumber>227</lineNumber>
+              <contextFuncName>UpConv_Fused_Row&amp;lt;8, 16, 16, 960, 480&amp;gt;</contextFuncName>
+              <contextNormFuncName>UpConv_Fused_Row_8_16_16_960_480_s</contextNormFuncName>
               <inlineStackInfo>
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
                   <first>/home/hoinguyen/Documents/Vitis/UpConv_HLS/upconv_block0</first>
                   <second>
-                    <count>2</count>
+                    <count>1</count>
                     <item_version>0</item_version>
-                    <item>
-                      <first>
-                        <first>../gen/Hls_Layers_UpConv.tpp</first>
-                        <second>Compute_Pixel_Stats&amp;lt;32, 480, 30, 480&amp;gt;</second>
-                      </first>
-                      <second>213</second>
-                    </item>
                     <item>
                       <first>
                         <first>../gen/Hls_Layers_UpConv.tpp</first>
                         <second>UpConv_Fused_Row&amp;lt;8, 16, 16, 960, 480&amp;gt;</second>
                       </first>
-                      <second>363</second>
+                      <second>227</second>
                     </item>
                   </second>
                 </item>
@@ -2491,33 +2302,26 @@
             <Obj>
               <type>0</type>
               <id>69</id>
-              <name>br_ln213</name>
+              <name>br_ln227</name>
               <fileName>../gen/Hls_Layers_UpConv.tpp</fileName>
               <fileDirectory>../.</fileDirectory>
-              <lineNumber>213</lineNumber>
-              <contextFuncName>Compute_Pixel_Stats&amp;lt;32, 480, 30, 480&amp;gt;</contextFuncName>
-              <contextNormFuncName>Compute_Pixel_Stats_32_480_30_480_s</contextNormFuncName>
+              <lineNumber>227</lineNumber>
+              <contextFuncName>UpConv_Fused_Row&amp;lt;8, 16, 16, 960, 480&amp;gt;</contextFuncName>
+              <contextNormFuncName>UpConv_Fused_Row_8_16_16_960_480_s</contextNormFuncName>
               <inlineStackInfo>
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
                   <first>/home/hoinguyen/Documents/Vitis/UpConv_HLS/upconv_block0</first>
                   <second>
-                    <count>2</count>
+                    <count>1</count>
                     <item_version>0</item_version>
-                    <item>
-                      <first>
-                        <first>../gen/Hls_Layers_UpConv.tpp</first>
-                        <second>Compute_Pixel_Stats&amp;lt;32, 480, 30, 480&amp;gt;</second>
-                      </first>
-                      <second>213</second>
-                    </item>
                     <item>
                       <first>
                         <first>../gen/Hls_Layers_UpConv.tpp</first>
                         <second>UpConv_Fused_Row&amp;lt;8, 16, 16, 960, 480&amp;gt;</second>
                       </first>
-                      <second>363</second>
+                      <second>227</second>
                     </item>
                   </second>
                 </item>
@@ -2559,30 +2363,23 @@
               <name>ws_load</name>
               <fileName>../gen/Hls_Layers_UpConv.tpp</fileName>
               <fileDirectory>../.</fileDirectory>
-              <lineNumber>220</lineNumber>
-              <contextFuncName>Compute_Pixel_Stats&amp;lt;32, 480, 30, 480&amp;gt;</contextFuncName>
-              <contextNormFuncName>Compute_Pixel_Stats_32_480_30_480_s</contextNormFuncName>
+              <lineNumber>234</lineNumber>
+              <contextFuncName>UpConv_Fused_Row&amp;lt;8, 16, 16, 960, 480&amp;gt;</contextFuncName>
+              <contextNormFuncName>UpConv_Fused_Row_8_16_16_960_480_s</contextNormFuncName>
               <inlineStackInfo>
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
                   <first>/home/hoinguyen/Documents/Vitis/UpConv_HLS/upconv_block0</first>
                   <second>
-                    <count>2</count>
+                    <count>1</count>
                     <item_version>0</item_version>
-                    <item>
-                      <first>
-                        <first>../gen/Hls_Layers_UpConv.tpp</first>
-                        <second>Compute_Pixel_Stats&amp;lt;32, 480, 30, 480&amp;gt;</second>
-                      </first>
-                      <second>220</second>
-                    </item>
                     <item>
                       <first>
                         <first>../gen/Hls_Layers_UpConv.tpp</first>
                         <second>UpConv_Fused_Row&amp;lt;8, 16, 16, 960, 480&amp;gt;</second>
                       </first>
-                      <second>363</second>
+                      <second>234</second>
                     </item>
                   </second>
                 </item>
@@ -2620,39 +2417,32 @@
             <Obj>
               <type>0</type>
               <id>72</id>
-              <name>trunc_ln213</name>
+              <name>trunc_ln227</name>
               <fileName>../gen/Hls_Layers_UpConv.tpp</fileName>
               <fileDirectory>../.</fileDirectory>
-              <lineNumber>213</lineNumber>
-              <contextFuncName>Compute_Pixel_Stats&amp;lt;32, 480, 30, 480&amp;gt;</contextFuncName>
-              <contextNormFuncName>Compute_Pixel_Stats_32_480_30_480_s</contextNormFuncName>
+              <lineNumber>227</lineNumber>
+              <contextFuncName>UpConv_Fused_Row&amp;lt;8, 16, 16, 960, 480&amp;gt;</contextFuncName>
+              <contextNormFuncName>UpConv_Fused_Row_8_16_16_960_480_s</contextNormFuncName>
               <inlineStackInfo>
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
                   <first>/home/hoinguyen/Documents/Vitis/UpConv_HLS/upconv_block0</first>
                   <second>
-                    <count>2</count>
+                    <count>1</count>
                     <item_version>0</item_version>
-                    <item>
-                      <first>
-                        <first>../gen/Hls_Layers_UpConv.tpp</first>
-                        <second>Compute_Pixel_Stats&amp;lt;32, 480, 30, 480&amp;gt;</second>
-                      </first>
-                      <second>213</second>
-                    </item>
                     <item>
                       <first>
                         <first>../gen/Hls_Layers_UpConv.tpp</first>
                         <second>UpConv_Fused_Row&amp;lt;8, 16, 16, 960, 480&amp;gt;</second>
                       </first>
-                      <second>363</second>
+                      <second>227</second>
                     </item>
                   </second>
                 </item>
               </inlineStackInfo>
               <originalName/>
-              <rtlName>trunc_ln213_fu_745_p1</rtlName>
+              <rtlName>trunc_ln227_fu_745_p1</rtlName>
               <control/>
               <opType/>
               <implIndex/>
@@ -2683,39 +2473,32 @@
             <Obj>
               <type>0</type>
               <id>73</id>
-              <name>trunc_ln213_1</name>
+              <name>trunc_ln227_1</name>
               <fileName>../gen/Hls_Layers_UpConv.tpp</fileName>
               <fileDirectory>../.</fileDirectory>
-              <lineNumber>213</lineNumber>
-              <contextFuncName>Compute_Pixel_Stats&amp;lt;32, 480, 30, 480&amp;gt;</contextFuncName>
-              <contextNormFuncName>Compute_Pixel_Stats_32_480_30_480_s</contextNormFuncName>
+              <lineNumber>227</lineNumber>
+              <contextFuncName>UpConv_Fused_Row&amp;lt;8, 16, 16, 960, 480&amp;gt;</contextFuncName>
+              <contextNormFuncName>UpConv_Fused_Row_8_16_16_960_480_s</contextNormFuncName>
               <inlineStackInfo>
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
                   <first>/home/hoinguyen/Documents/Vitis/UpConv_HLS/upconv_block0</first>
                   <second>
-                    <count>2</count>
+                    <count>1</count>
                     <item_version>0</item_version>
-                    <item>
-                      <first>
-                        <first>../gen/Hls_Layers_UpConv.tpp</first>
-                        <second>Compute_Pixel_Stats&amp;lt;32, 480, 30, 480&amp;gt;</second>
-                      </first>
-                      <second>213</second>
-                    </item>
                     <item>
                       <first>
                         <first>../gen/Hls_Layers_UpConv.tpp</first>
                         <second>UpConv_Fused_Row&amp;lt;8, 16, 16, 960, 480&amp;gt;</second>
                       </first>
-                      <second>363</second>
+                      <second>227</second>
                     </item>
                   </second>
                 </item>
               </inlineStackInfo>
               <originalName/>
-              <rtlName>trunc_ln213_1_fu_805_p1</rtlName>
+              <rtlName>trunc_ln227_1_fu_805_p1</rtlName>
               <control/>
               <opType/>
               <implIndex/>
@@ -2746,39 +2529,32 @@
             <Obj>
               <type>0</type>
               <id>74</id>
-              <name>trunc_ln213_2</name>
+              <name>trunc_ln227_2</name>
               <fileName>../gen/Hls_Layers_UpConv.tpp</fileName>
               <fileDirectory>../.</fileDirectory>
-              <lineNumber>213</lineNumber>
-              <contextFuncName>Compute_Pixel_Stats&amp;lt;32, 480, 30, 480&amp;gt;</contextFuncName>
-              <contextNormFuncName>Compute_Pixel_Stats_32_480_30_480_s</contextNormFuncName>
+              <lineNumber>227</lineNumber>
+              <contextFuncName>UpConv_Fused_Row&amp;lt;8, 16, 16, 960, 480&amp;gt;</contextFuncName>
+              <contextNormFuncName>UpConv_Fused_Row_8_16_16_960_480_s</contextNormFuncName>
               <inlineStackInfo>
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
                   <first>/home/hoinguyen/Documents/Vitis/UpConv_HLS/upconv_block0</first>
                   <second>
-                    <count>2</count>
+                    <count>1</count>
                     <item_version>0</item_version>
-                    <item>
-                      <first>
-                        <first>../gen/Hls_Layers_UpConv.tpp</first>
-                        <second>Compute_Pixel_Stats&amp;lt;32, 480, 30, 480&amp;gt;</second>
-                      </first>
-                      <second>213</second>
-                    </item>
                     <item>
                       <first>
                         <first>../gen/Hls_Layers_UpConv.tpp</first>
                         <second>UpConv_Fused_Row&amp;lt;8, 16, 16, 960, 480&amp;gt;</second>
                       </first>
-                      <second>363</second>
+                      <second>227</second>
                     </item>
                   </second>
                 </item>
               </inlineStackInfo>
               <originalName/>
-              <rtlName>trunc_ln213_2_fu_749_p1</rtlName>
+              <rtlName>trunc_ln227_2_fu_749_p1</rtlName>
               <control/>
               <opType/>
               <implIndex/>
@@ -2812,30 +2588,23 @@
               <name>lshr_ln</name>
               <fileName>../gen/Hls_Layers_UpConv.tpp</fileName>
               <fileDirectory>../.</fileDirectory>
-              <lineNumber>212</lineNumber>
-              <contextFuncName>Compute_Pixel_Stats&amp;lt;32, 480, 30, 480&amp;gt;</contextFuncName>
-              <contextNormFuncName>Compute_Pixel_Stats_32_480_30_480_s</contextNormFuncName>
+              <lineNumber>226</lineNumber>
+              <contextFuncName>UpConv_Fused_Row&amp;lt;8, 16, 16, 960, 480&amp;gt;</contextFuncName>
+              <contextNormFuncName>UpConv_Fused_Row_8_16_16_960_480_s</contextNormFuncName>
               <inlineStackInfo>
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
                   <first>/home/hoinguyen/Documents/Vitis/UpConv_HLS/upconv_block0</first>
                   <second>
-                    <count>2</count>
+                    <count>1</count>
                     <item_version>0</item_version>
-                    <item>
-                      <first>
-                        <first>../gen/Hls_Layers_UpConv.tpp</first>
-                        <second>Compute_Pixel_Stats&amp;lt;32, 480, 30, 480&amp;gt;</second>
-                      </first>
-                      <second>212</second>
-                    </item>
                     <item>
                       <first>
                         <first>../gen/Hls_Layers_UpConv.tpp</first>
                         <second>UpConv_Fused_Row&amp;lt;8, 16, 16, 960, 480&amp;gt;</second>
                       </first>
-                      <second>363</second>
+                      <second>226</second>
                     </item>
                   </second>
                 </item>
@@ -2875,39 +2644,32 @@
             <Obj>
               <type>0</type>
               <id>79</id>
-              <name>trunc_ln7</name>
+              <name>trunc_ln5</name>
               <fileName>../gen/Hls_Layers_UpConv.tpp</fileName>
               <fileDirectory>../.</fileDirectory>
-              <lineNumber>212</lineNumber>
-              <contextFuncName>Compute_Pixel_Stats&amp;lt;32, 480, 30, 480&amp;gt;</contextFuncName>
-              <contextNormFuncName>Compute_Pixel_Stats_32_480_30_480_s</contextNormFuncName>
+              <lineNumber>226</lineNumber>
+              <contextFuncName>UpConv_Fused_Row&amp;lt;8, 16, 16, 960, 480&amp;gt;</contextFuncName>
+              <contextNormFuncName>UpConv_Fused_Row_8_16_16_960_480_s</contextNormFuncName>
               <inlineStackInfo>
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
                   <first>/home/hoinguyen/Documents/Vitis/UpConv_HLS/upconv_block0</first>
                   <second>
-                    <count>2</count>
+                    <count>1</count>
                     <item_version>0</item_version>
-                    <item>
-                      <first>
-                        <first>../gen/Hls_Layers_UpConv.tpp</first>
-                        <second>Compute_Pixel_Stats&amp;lt;32, 480, 30, 480&amp;gt;</second>
-                      </first>
-                      <second>212</second>
-                    </item>
                     <item>
                       <first>
                         <first>../gen/Hls_Layers_UpConv.tpp</first>
                         <second>UpConv_Fused_Row&amp;lt;8, 16, 16, 960, 480&amp;gt;</second>
                       </first>
-                      <second>363</second>
+                      <second>226</second>
                     </item>
                   </second>
                 </item>
               </inlineStackInfo>
               <originalName/>
-              <rtlName>trunc_ln7_fu_817_p4</rtlName>
+              <rtlName>trunc_ln5_fu_817_p4</rtlName>
               <control/>
               <opType/>
               <implIndex/>
@@ -2941,39 +2703,32 @@
             <Obj>
               <type>0</type>
               <id>80</id>
-              <name>tmp_3</name>
+              <name>tmp_14</name>
               <fileName>../gen/Hls_Layers_UpConv.tpp</fileName>
               <fileDirectory>../.</fileDirectory>
-              <lineNumber>219</lineNumber>
-              <contextFuncName>Compute_Pixel_Stats&amp;lt;32, 480, 30, 480&amp;gt;</contextFuncName>
-              <contextNormFuncName>Compute_Pixel_Stats_32_480_30_480_s</contextNormFuncName>
+              <lineNumber>233</lineNumber>
+              <contextFuncName>UpConv_Fused_Row&amp;lt;8, 16, 16, 960, 480&amp;gt;</contextFuncName>
+              <contextNormFuncName>UpConv_Fused_Row_8_16_16_960_480_s</contextNormFuncName>
               <inlineStackInfo>
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
                   <first>/home/hoinguyen/Documents/Vitis/UpConv_HLS/upconv_block0</first>
                   <second>
-                    <count>2</count>
+                    <count>1</count>
                     <item_version>0</item_version>
-                    <item>
-                      <first>
-                        <first>../gen/Hls_Layers_UpConv.tpp</first>
-                        <second>Compute_Pixel_Stats&amp;lt;32, 480, 30, 480&amp;gt;</second>
-                      </first>
-                      <second>219</second>
-                    </item>
                     <item>
                       <first>
                         <first>../gen/Hls_Layers_UpConv.tpp</first>
                         <second>UpConv_Fused_Row&amp;lt;8, 16, 16, 960, 480&amp;gt;</second>
                       </first>
-                      <second>363</second>
+                      <second>233</second>
                     </item>
                   </second>
                 </item>
               </inlineStackInfo>
               <originalName/>
-              <rtlName>tmp_3_reg_1543</rtlName>
+              <rtlName>tmp_14_reg_1543</rtlName>
               <control/>
               <opType/>
               <implIndex/>
@@ -3006,39 +2761,32 @@
             <Obj>
               <type>0</type>
               <id>81</id>
-              <name>sub_ln219</name>
+              <name>sub_ln233</name>
               <fileName>../gen/Hls_Layers_UpConv.tpp</fileName>
               <fileDirectory>../.</fileDirectory>
-              <lineNumber>219</lineNumber>
-              <contextFuncName>Compute_Pixel_Stats&amp;lt;32, 480, 30, 480&amp;gt;</contextFuncName>
-              <contextNormFuncName>Compute_Pixel_Stats_32_480_30_480_s</contextNormFuncName>
+              <lineNumber>233</lineNumber>
+              <contextFuncName>UpConv_Fused_Row&amp;lt;8, 16, 16, 960, 480&amp;gt;</contextFuncName>
+              <contextNormFuncName>UpConv_Fused_Row_8_16_16_960_480_s</contextNormFuncName>
               <inlineStackInfo>
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
                   <first>/home/hoinguyen/Documents/Vitis/UpConv_HLS/upconv_block0</first>
                   <second>
-                    <count>2</count>
+                    <count>1</count>
                     <item_version>0</item_version>
-                    <item>
-                      <first>
-                        <first>../gen/Hls_Layers_UpConv.tpp</first>
-                        <second>Compute_Pixel_Stats&amp;lt;32, 480, 30, 480&amp;gt;</second>
-                      </first>
-                      <second>219</second>
-                    </item>
                     <item>
                       <first>
                         <first>../gen/Hls_Layers_UpConv.tpp</first>
                         <second>UpConv_Fused_Row&amp;lt;8, 16, 16, 960, 480&amp;gt;</second>
                       </first>
-                      <second>363</second>
+                      <second>233</second>
                     </item>
                   </second>
                 </item>
               </inlineStackInfo>
               <originalName/>
-              <rtlName>sub_ln219_fu_753_p2</rtlName>
+              <rtlName>sub_ln233_fu_753_p2</rtlName>
               <control>auto</control>
               <opType>sub</opType>
               <implIndex>fabric</implIndex>
@@ -3070,39 +2818,32 @@
             <Obj>
               <type>0</type>
               <id>82</id>
-              <name>trunc_ln219_1</name>
+              <name>trunc_ln233_1</name>
               <fileName>../gen/Hls_Layers_UpConv.tpp</fileName>
               <fileDirectory>../.</fileDirectory>
-              <lineNumber>219</lineNumber>
-              <contextFuncName>Compute_Pixel_Stats&amp;lt;32, 480, 30, 480&amp;gt;</contextFuncName>
-              <contextNormFuncName>Compute_Pixel_Stats_32_480_30_480_s</contextNormFuncName>
+              <lineNumber>233</lineNumber>
+              <contextFuncName>UpConv_Fused_Row&amp;lt;8, 16, 16, 960, 480&amp;gt;</contextFuncName>
+              <contextNormFuncName>UpConv_Fused_Row_8_16_16_960_480_s</contextNormFuncName>
               <inlineStackInfo>
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
                   <first>/home/hoinguyen/Documents/Vitis/UpConv_HLS/upconv_block0</first>
                   <second>
-                    <count>2</count>
+                    <count>1</count>
                     <item_version>0</item_version>
-                    <item>
-                      <first>
-                        <first>../gen/Hls_Layers_UpConv.tpp</first>
-                        <second>Compute_Pixel_Stats&amp;lt;32, 480, 30, 480&amp;gt;</second>
-                      </first>
-                      <second>219</second>
-                    </item>
                     <item>
                       <first>
                         <first>../gen/Hls_Layers_UpConv.tpp</first>
                         <second>UpConv_Fused_Row&amp;lt;8, 16, 16, 960, 480&amp;gt;</second>
                       </first>
-                      <second>363</second>
+                      <second>233</second>
                     </item>
                   </second>
                 </item>
               </inlineStackInfo>
               <originalName/>
-              <rtlName>trunc_ln219_1_fu_759_p4</rtlName>
+              <rtlName>trunc_ln233_1_fu_759_p4</rtlName>
               <control/>
               <opType/>
               <implIndex/>
@@ -3136,39 +2877,32 @@
             <Obj>
               <type>0</type>
               <id>83</id>
-              <name>sub_ln219_1</name>
+              <name>sub_ln233_1</name>
               <fileName>../gen/Hls_Layers_UpConv.tpp</fileName>
               <fileDirectory>../.</fileDirectory>
-              <lineNumber>219</lineNumber>
-              <contextFuncName>Compute_Pixel_Stats&amp;lt;32, 480, 30, 480&amp;gt;</contextFuncName>
-              <contextNormFuncName>Compute_Pixel_Stats_32_480_30_480_s</contextNormFuncName>
+              <lineNumber>233</lineNumber>
+              <contextFuncName>UpConv_Fused_Row&amp;lt;8, 16, 16, 960, 480&amp;gt;</contextFuncName>
+              <contextNormFuncName>UpConv_Fused_Row_8_16_16_960_480_s</contextNormFuncName>
               <inlineStackInfo>
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
                   <first>/home/hoinguyen/Documents/Vitis/UpConv_HLS/upconv_block0</first>
                   <second>
-                    <count>2</count>
+                    <count>1</count>
                     <item_version>0</item_version>
-                    <item>
-                      <first>
-                        <first>../gen/Hls_Layers_UpConv.tpp</first>
-                        <second>Compute_Pixel_Stats&amp;lt;32, 480, 30, 480&amp;gt;</second>
-                      </first>
-                      <second>219</second>
-                    </item>
                     <item>
                       <first>
                         <first>../gen/Hls_Layers_UpConv.tpp</first>
                         <second>UpConv_Fused_Row&amp;lt;8, 16, 16, 960, 480&amp;gt;</second>
                       </first>
-                      <second>363</second>
+                      <second>233</second>
                     </item>
                   </second>
                 </item>
               </inlineStackInfo>
               <originalName/>
-              <rtlName>sub_ln219_1_fu_769_p2</rtlName>
+              <rtlName>sub_ln233_1_fu_769_p2</rtlName>
               <control>auto</control>
               <opType>sub</opType>
               <implIndex>fabric</implIndex>
@@ -3200,39 +2934,32 @@
             <Obj>
               <type>0</type>
               <id>84</id>
-              <name>select_ln219</name>
+              <name>select_ln233</name>
               <fileName>../gen/Hls_Layers_UpConv.tpp</fileName>
               <fileDirectory>../.</fileDirectory>
-              <lineNumber>219</lineNumber>
-              <contextFuncName>Compute_Pixel_Stats&amp;lt;32, 480, 30, 480&amp;gt;</contextFuncName>
-              <contextNormFuncName>Compute_Pixel_Stats_32_480_30_480_s</contextNormFuncName>
+              <lineNumber>233</lineNumber>
+              <contextFuncName>UpConv_Fused_Row&amp;lt;8, 16, 16, 960, 480&amp;gt;</contextFuncName>
+              <contextNormFuncName>UpConv_Fused_Row_8_16_16_960_480_s</contextNormFuncName>
               <inlineStackInfo>
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
                   <first>/home/hoinguyen/Documents/Vitis/UpConv_HLS/upconv_block0</first>
                   <second>
-                    <count>2</count>
+                    <count>1</count>
                     <item_version>0</item_version>
-                    <item>
-                      <first>
-                        <first>../gen/Hls_Layers_UpConv.tpp</first>
-                        <second>Compute_Pixel_Stats&amp;lt;32, 480, 30, 480&amp;gt;</second>
-                      </first>
-                      <second>219</second>
-                    </item>
                     <item>
                       <first>
                         <first>../gen/Hls_Layers_UpConv.tpp</first>
                         <second>UpConv_Fused_Row&amp;lt;8, 16, 16, 960, 480&amp;gt;</second>
                       </first>
-                      <second>363</second>
+                      <second>233</second>
                     </item>
                   </second>
                 </item>
               </inlineStackInfo>
               <originalName/>
-              <rtlName>select_ln219_fu_833_p3</rtlName>
+              <rtlName>select_ln233_fu_833_p3</rtlName>
               <control>auto</control>
               <opType>select</opType>
               <implIndex>auto_sel</implIndex>
@@ -3265,39 +2992,32 @@
             <Obj>
               <type>0</type>
               <id>85</id>
-              <name>zext_ln219</name>
+              <name>zext_ln233</name>
               <fileName>../gen/Hls_Layers_UpConv.tpp</fileName>
               <fileDirectory>../.</fileDirectory>
-              <lineNumber>219</lineNumber>
-              <contextFuncName>Compute_Pixel_Stats&amp;lt;32, 480, 30, 480&amp;gt;</contextFuncName>
-              <contextNormFuncName>Compute_Pixel_Stats_32_480_30_480_s</contextNormFuncName>
+              <lineNumber>233</lineNumber>
+              <contextFuncName>UpConv_Fused_Row&amp;lt;8, 16, 16, 960, 480&amp;gt;</contextFuncName>
+              <contextNormFuncName>UpConv_Fused_Row_8_16_16_960_480_s</contextNormFuncName>
               <inlineStackInfo>
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
                   <first>/home/hoinguyen/Documents/Vitis/UpConv_HLS/upconv_block0</first>
                   <second>
-                    <count>2</count>
+                    <count>1</count>
                     <item_version>0</item_version>
-                    <item>
-                      <first>
-                        <first>../gen/Hls_Layers_UpConv.tpp</first>
-                        <second>Compute_Pixel_Stats&amp;lt;32, 480, 30, 480&amp;gt;</second>
-                      </first>
-                      <second>219</second>
-                    </item>
                     <item>
                       <first>
                         <first>../gen/Hls_Layers_UpConv.tpp</first>
                         <second>UpConv_Fused_Row&amp;lt;8, 16, 16, 960, 480&amp;gt;</second>
                       </first>
-                      <second>363</second>
+                      <second>233</second>
                     </item>
                   </second>
                 </item>
               </inlineStackInfo>
               <originalName/>
-              <rtlName>zext_ln219_fu_840_p1</rtlName>
+              <rtlName>zext_ln233_fu_840_p1</rtlName>
               <control/>
               <opType/>
               <implIndex/>
@@ -3328,39 +3048,32 @@
             <Obj>
               <type>0</type>
               <id>86</id>
-              <name>sub_ln219_2</name>
+              <name>sub_ln233_2</name>
               <fileName>../gen/Hls_Layers_UpConv.tpp</fileName>
               <fileDirectory>../.</fileDirectory>
-              <lineNumber>219</lineNumber>
-              <contextFuncName>Compute_Pixel_Stats&amp;lt;32, 480, 30, 480&amp;gt;</contextFuncName>
-              <contextNormFuncName>Compute_Pixel_Stats_32_480_30_480_s</contextNormFuncName>
+              <lineNumber>233</lineNumber>
+              <contextFuncName>UpConv_Fused_Row&amp;lt;8, 16, 16, 960, 480&amp;gt;</contextFuncName>
+              <contextNormFuncName>UpConv_Fused_Row_8_16_16_960_480_s</contextNormFuncName>
               <inlineStackInfo>
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
                   <first>/home/hoinguyen/Documents/Vitis/UpConv_HLS/upconv_block0</first>
                   <second>
-                    <count>2</count>
+                    <count>1</count>
                     <item_version>0</item_version>
-                    <item>
-                      <first>
-                        <first>../gen/Hls_Layers_UpConv.tpp</first>
-                        <second>Compute_Pixel_Stats&amp;lt;32, 480, 30, 480&amp;gt;</second>
-                      </first>
-                      <second>219</second>
-                    </item>
                     <item>
                       <first>
                         <first>../gen/Hls_Layers_UpConv.tpp</first>
                         <second>UpConv_Fused_Row&amp;lt;8, 16, 16, 960, 480&amp;gt;</second>
                       </first>
-                      <second>363</second>
+                      <second>233</second>
                     </item>
                   </second>
                 </item>
               </inlineStackInfo>
               <originalName/>
-              <rtlName>sub_ln219_2_fu_845_p2</rtlName>
+              <rtlName>sub_ln233_2_fu_845_p2</rtlName>
               <control>auto</control>
               <opType>sub</opType>
               <implIndex>fabric</implIndex>
@@ -3392,39 +3105,32 @@
             <Obj>
               <type>0</type>
               <id>87</id>
-              <name>zext_ln219_1</name>
+              <name>zext_ln233_1</name>
               <fileName>../gen/Hls_Layers_UpConv.tpp</fileName>
               <fileDirectory>../.</fileDirectory>
-              <lineNumber>219</lineNumber>
-              <contextFuncName>Compute_Pixel_Stats&amp;lt;32, 480, 30, 480&amp;gt;</contextFuncName>
-              <contextNormFuncName>Compute_Pixel_Stats_32_480_30_480_s</contextNormFuncName>
+              <lineNumber>233</lineNumber>
+              <contextFuncName>UpConv_Fused_Row&amp;lt;8, 16, 16, 960, 480&amp;gt;</contextFuncName>
+              <contextNormFuncName>UpConv_Fused_Row_8_16_16_960_480_s</contextNormFuncName>
               <inlineStackInfo>
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
                   <first>/home/hoinguyen/Documents/Vitis/UpConv_HLS/upconv_block0</first>
                   <second>
-                    <count>2</count>
+                    <count>1</count>
                     <item_version>0</item_version>
-                    <item>
-                      <first>
-                        <first>../gen/Hls_Layers_UpConv.tpp</first>
-                        <second>Compute_Pixel_Stats&amp;lt;32, 480, 30, 480&amp;gt;</second>
-                      </first>
-                      <second>219</second>
-                    </item>
                     <item>
                       <first>
                         <first>../gen/Hls_Layers_UpConv.tpp</first>
                         <second>UpConv_Fused_Row&amp;lt;8, 16, 16, 960, 480&amp;gt;</second>
                       </first>
-                      <second>363</second>
+                      <second>233</second>
                     </item>
                   </second>
                 </item>
               </inlineStackInfo>
               <originalName/>
-              <rtlName>zext_ln219_1_fu_935_p1</rtlName>
+              <rtlName>zext_ln233_1_fu_935_p1</rtlName>
               <control/>
               <opType/>
               <implIndex/>
@@ -3455,39 +3161,32 @@
             <Obj>
               <type>0</type>
               <id>88</id>
-              <name>sub_ln219_3</name>
+              <name>sub_ln233_3</name>
               <fileName>../gen/Hls_Layers_UpConv.tpp</fileName>
               <fileDirectory>../.</fileDirectory>
-              <lineNumber>219</lineNumber>
-              <contextFuncName>Compute_Pixel_Stats&amp;lt;32, 480, 30, 480&amp;gt;</contextFuncName>
-              <contextNormFuncName>Compute_Pixel_Stats_32_480_30_480_s</contextNormFuncName>
+              <lineNumber>233</lineNumber>
+              <contextFuncName>UpConv_Fused_Row&amp;lt;8, 16, 16, 960, 480&amp;gt;</contextFuncName>
+              <contextNormFuncName>UpConv_Fused_Row_8_16_16_960_480_s</contextNormFuncName>
               <inlineStackInfo>
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
                   <first>/home/hoinguyen/Documents/Vitis/UpConv_HLS/upconv_block0</first>
                   <second>
-                    <count>2</count>
+                    <count>1</count>
                     <item_version>0</item_version>
-                    <item>
-                      <first>
-                        <first>../gen/Hls_Layers_UpConv.tpp</first>
-                        <second>Compute_Pixel_Stats&amp;lt;32, 480, 30, 480&amp;gt;</second>
-                      </first>
-                      <second>219</second>
-                    </item>
                     <item>
                       <first>
                         <first>../gen/Hls_Layers_UpConv.tpp</first>
                         <second>UpConv_Fused_Row&amp;lt;8, 16, 16, 960, 480&amp;gt;</second>
                       </first>
-                      <second>363</second>
+                      <second>233</second>
                     </item>
                   </second>
                 </item>
               </inlineStackInfo>
               <originalName/>
-              <rtlName>sub_ln219_3_fu_938_p2</rtlName>
+              <rtlName>sub_ln233_3_fu_938_p2</rtlName>
               <control>auto</control>
               <opType>sub</opType>
               <implIndex>fabric</implIndex>
@@ -3519,39 +3218,32 @@
             <Obj>
               <type>0</type>
               <id>89</id>
-              <name>zext_ln219_2</name>
+              <name>zext_ln233_2</name>
               <fileName>../gen/Hls_Layers_UpConv.tpp</fileName>
               <fileDirectory>../.</fileDirectory>
-              <lineNumber>219</lineNumber>
-              <contextFuncName>Compute_Pixel_Stats&amp;lt;32, 480, 30, 480&amp;gt;</contextFuncName>
-              <contextNormFuncName>Compute_Pixel_Stats_32_480_30_480_s</contextNormFuncName>
+              <lineNumber>233</lineNumber>
+              <contextFuncName>UpConv_Fused_Row&amp;lt;8, 16, 16, 960, 480&amp;gt;</contextFuncName>
+              <contextNormFuncName>UpConv_Fused_Row_8_16_16_960_480_s</contextNormFuncName>
               <inlineStackInfo>
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
                   <first>/home/hoinguyen/Documents/Vitis/UpConv_HLS/upconv_block0</first>
                   <second>
-                    <count>2</count>
+                    <count>1</count>
                     <item_version>0</item_version>
-                    <item>
-                      <first>
-                        <first>../gen/Hls_Layers_UpConv.tpp</first>
-                        <second>Compute_Pixel_Stats&amp;lt;32, 480, 30, 480&amp;gt;</second>
-                      </first>
-                      <second>219</second>
-                    </item>
                     <item>
                       <first>
                         <first>../gen/Hls_Layers_UpConv.tpp</first>
                         <second>UpConv_Fused_Row&amp;lt;8, 16, 16, 960, 480&amp;gt;</second>
                       </first>
-                      <second>363</second>
+                      <second>233</second>
                     </item>
                   </second>
                 </item>
               </inlineStackInfo>
               <originalName/>
-              <rtlName>zext_ln219_2_fu_944_p1</rtlName>
+              <rtlName>zext_ln233_2_fu_944_p1</rtlName>
               <control/>
               <opType/>
               <implIndex/>
@@ -3582,39 +3274,32 @@
             <Obj>
               <type>0</type>
               <id>90</id>
-              <name>select_ln219_1</name>
+              <name>select_ln233_1</name>
               <fileName>../gen/Hls_Layers_UpConv.tpp</fileName>
               <fileDirectory>../.</fileDirectory>
-              <lineNumber>219</lineNumber>
-              <contextFuncName>Compute_Pixel_Stats&amp;lt;32, 480, 30, 480&amp;gt;</contextFuncName>
-              <contextNormFuncName>Compute_Pixel_Stats_32_480_30_480_s</contextNormFuncName>
+              <lineNumber>233</lineNumber>
+              <contextFuncName>UpConv_Fused_Row&amp;lt;8, 16, 16, 960, 480&amp;gt;</contextFuncName>
+              <contextNormFuncName>UpConv_Fused_Row_8_16_16_960_480_s</contextNormFuncName>
               <inlineStackInfo>
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
                   <first>/home/hoinguyen/Documents/Vitis/UpConv_HLS/upconv_block0</first>
                   <second>
-                    <count>2</count>
+                    <count>1</count>
                     <item_version>0</item_version>
-                    <item>
-                      <first>
-                        <first>../gen/Hls_Layers_UpConv.tpp</first>
-                        <second>Compute_Pixel_Stats&amp;lt;32, 480, 30, 480&amp;gt;</second>
-                      </first>
-                      <second>219</second>
-                    </item>
                     <item>
                       <first>
                         <first>../gen/Hls_Layers_UpConv.tpp</first>
                         <second>UpConv_Fused_Row&amp;lt;8, 16, 16, 960, 480&amp;gt;</second>
                       </first>
-                      <second>363</second>
+                      <second>233</second>
                     </item>
                   </second>
                 </item>
               </inlineStackInfo>
               <originalName/>
-              <rtlName>select_ln219_1_fu_947_p3</rtlName>
+              <rtlName>select_ln233_1_fu_947_p3</rtlName>
               <control>auto</control>
               <opType>select</opType>
               <implIndex>auto_sel</implIndex>
@@ -3650,30 +3335,23 @@
               <name>shl_ln</name>
               <fileName>../gen/Hls_Layers_UpConv.tpp</fileName>
               <fileDirectory>../.</fileDirectory>
-              <lineNumber>219</lineNumber>
-              <contextFuncName>Compute_Pixel_Stats&amp;lt;32, 480, 30, 480&amp;gt;</contextFuncName>
-              <contextNormFuncName>Compute_Pixel_Stats_32_480_30_480_s</contextNormFuncName>
+              <lineNumber>233</lineNumber>
+              <contextFuncName>UpConv_Fused_Row&amp;lt;8, 16, 16, 960, 480&amp;gt;</contextFuncName>
+              <contextNormFuncName>UpConv_Fused_Row_8_16_16_960_480_s</contextNormFuncName>
               <inlineStackInfo>
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
                   <first>/home/hoinguyen/Documents/Vitis/UpConv_HLS/upconv_block0</first>
                   <second>
-                    <count>2</count>
+                    <count>1</count>
                     <item_version>0</item_version>
-                    <item>
-                      <first>
-                        <first>../gen/Hls_Layers_UpConv.tpp</first>
-                        <second>Compute_Pixel_Stats&amp;lt;32, 480, 30, 480&amp;gt;</second>
-                      </first>
-                      <second>219</second>
-                    </item>
                     <item>
                       <first>
                         <first>../gen/Hls_Layers_UpConv.tpp</first>
                         <second>UpConv_Fused_Row&amp;lt;8, 16, 16, 960, 480&amp;gt;</second>
                       </first>
-                      <second>363</second>
+                      <second>233</second>
                     </item>
                   </second>
                 </item>
@@ -3712,33 +3390,26 @@
             <Obj>
               <type>0</type>
               <id>92</id>
-              <name>sext_ln219</name>
+              <name>sext_ln233</name>
               <fileName>../gen/Hls_Layers_UpConv.tpp</fileName>
               <fileDirectory>../.</fileDirectory>
-              <lineNumber>219</lineNumber>
-              <contextFuncName>Compute_Pixel_Stats&amp;lt;32, 480, 30, 480&amp;gt;</contextFuncName>
-              <contextNormFuncName>Compute_Pixel_Stats_32_480_30_480_s</contextNormFuncName>
+              <lineNumber>233</lineNumber>
+              <contextFuncName>UpConv_Fused_Row&amp;lt;8, 16, 16, 960, 480&amp;gt;</contextFuncName>
+              <contextNormFuncName>UpConv_Fused_Row_8_16_16_960_480_s</contextNormFuncName>
               <inlineStackInfo>
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
                   <first>/home/hoinguyen/Documents/Vitis/UpConv_HLS/upconv_block0</first>
                   <second>
-                    <count>2</count>
+                    <count>1</count>
                     <item_version>0</item_version>
-                    <item>
-                      <first>
-                        <first>../gen/Hls_Layers_UpConv.tpp</first>
-                        <second>Compute_Pixel_Stats&amp;lt;32, 480, 30, 480&amp;gt;</second>
-                      </first>
-                      <second>219</second>
-                    </item>
                     <item>
                       <first>
                         <first>../gen/Hls_Layers_UpConv.tpp</first>
                         <second>UpConv_Fused_Row&amp;lt;8, 16, 16, 960, 480&amp;gt;</second>
                       </first>
-                      <second>363</second>
+                      <second>233</second>
                     </item>
                   </second>
                 </item>
@@ -3778,30 +3449,23 @@
               <name>b_buf_addr</name>
               <fileName>../gen/Hls_Layers_UpConv.tpp</fileName>
               <fileDirectory>../.</fileDirectory>
-              <lineNumber>219</lineNumber>
-              <contextFuncName>Compute_Pixel_Stats&amp;lt;32, 480, 30, 480&amp;gt;</contextFuncName>
-              <contextNormFuncName>Compute_Pixel_Stats_32_480_30_480_s</contextNormFuncName>
+              <lineNumber>233</lineNumber>
+              <contextFuncName>UpConv_Fused_Row&amp;lt;8, 16, 16, 960, 480&amp;gt;</contextFuncName>
+              <contextNormFuncName>UpConv_Fused_Row_8_16_16_960_480_s</contextNormFuncName>
               <inlineStackInfo>
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
                   <first>/home/hoinguyen/Documents/Vitis/UpConv_HLS/upconv_block0</first>
                   <second>
-                    <count>2</count>
+                    <count>1</count>
                     <item_version>0</item_version>
-                    <item>
-                      <first>
-                        <first>../gen/Hls_Layers_UpConv.tpp</first>
-                        <second>Compute_Pixel_Stats&amp;lt;32, 480, 30, 480&amp;gt;</second>
-                      </first>
-                      <second>219</second>
-                    </item>
                     <item>
                       <first>
                         <first>../gen/Hls_Layers_UpConv.tpp</first>
                         <second>UpConv_Fused_Row&amp;lt;8, 16, 16, 960, 480&amp;gt;</second>
                       </first>
-                      <second>363</second>
+                      <second>233</second>
                     </item>
                   </second>
                 </item>
@@ -3843,30 +3507,23 @@
               <name>b_buf_load</name>
               <fileName>../gen/Hls_Layers_UpConv.tpp</fileName>
               <fileDirectory>../.</fileDirectory>
-              <lineNumber>219</lineNumber>
-              <contextFuncName>Compute_Pixel_Stats&amp;lt;32, 480, 30, 480&amp;gt;</contextFuncName>
-              <contextNormFuncName>Compute_Pixel_Stats_32_480_30_480_s</contextNormFuncName>
+              <lineNumber>233</lineNumber>
+              <contextFuncName>UpConv_Fused_Row&amp;lt;8, 16, 16, 960, 480&amp;gt;</contextFuncName>
+              <contextNormFuncName>UpConv_Fused_Row_8_16_16_960_480_s</contextNormFuncName>
               <inlineStackInfo>
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
                   <first>/home/hoinguyen/Documents/Vitis/UpConv_HLS/upconv_block0</first>
                   <second>
-                    <count>2</count>
+                    <count>1</count>
                     <item_version>0</item_version>
-                    <item>
-                      <first>
-                        <first>../gen/Hls_Layers_UpConv.tpp</first>
-                        <second>Compute_Pixel_Stats&amp;lt;32, 480, 30, 480&amp;gt;</second>
-                      </first>
-                      <second>219</second>
-                    </item>
                     <item>
                       <first>
                         <first>../gen/Hls_Layers_UpConv.tpp</first>
                         <second>UpConv_Fused_Row&amp;lt;8, 16, 16, 960, 480&amp;gt;</second>
                       </first>
-                      <second>363</second>
+                      <second>233</second>
                     </item>
                   </second>
                 </item>
@@ -3906,36 +3563,29 @@
               <name>u</name>
               <fileName>../gen/Hls_Layers_UpConv.tpp</fileName>
               <fileDirectory>../.</fileDirectory>
-              <lineNumber>219</lineNumber>
-              <contextFuncName>Compute_Pixel_Stats&amp;lt;32, 480, 30, 480&amp;gt;</contextFuncName>
-              <contextNormFuncName>Compute_Pixel_Stats_32_480_30_480_s</contextNormFuncName>
+              <lineNumber>233</lineNumber>
+              <contextFuncName>UpConv_Fused_Row&amp;lt;8, 16, 16, 960, 480&amp;gt;</contextFuncName>
+              <contextNormFuncName>UpConv_Fused_Row_8_16_16_960_480_s</contextNormFuncName>
               <inlineStackInfo>
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
                   <first>/home/hoinguyen/Documents/Vitis/UpConv_HLS/upconv_block0</first>
                   <second>
-                    <count>2</count>
+                    <count>1</count>
                     <item_version>0</item_version>
-                    <item>
-                      <first>
-                        <first>../gen/Hls_Layers_UpConv.tpp</first>
-                        <second>Compute_Pixel_Stats&amp;lt;32, 480, 30, 480&amp;gt;</second>
-                      </first>
-                      <second>219</second>
-                    </item>
                     <item>
                       <first>
                         <first>../gen/Hls_Layers_UpConv.tpp</first>
                         <second>UpConv_Fused_Row&amp;lt;8, 16, 16, 960, 480&amp;gt;</second>
                       </first>
-                      <second>363</second>
+                      <second>233</second>
                     </item>
                   </second>
                 </item>
               </inlineStackInfo>
               <originalName>bits</originalName>
-              <rtlName>partselect_16ns_256ns_32s_16_1_1_U473</rtlName>
+              <rtlName>partselect_16ns_256ns_32s_16_1_1_U478</rtlName>
               <control>auto</control>
               <opType>partselect</opType>
               <implIndex>auto</implIndex>
@@ -3980,21 +3630,14 @@
                 <item>
                   <first>/home/hoinguyen/Documents/Vitis/UpConv_HLS/upconv_block0</first>
                   <second>
-                    <count>3</count>
+                    <count>2</count>
                     <item_version>0</item_version>
-                    <item>
-                      <first>
-                        <first>../gen/Hls_Layers_UpConv.tpp</first>
-                        <second>Compute_Pixel_Stats&amp;lt;32, 480, 30, 480&amp;gt;</second>
-                      </first>
-                      <second>219</second>
-                    </item>
                     <item>
                       <first>
                         <first>../gen/Hls_Layers_UpConv.tpp</first>
                         <second>UpConv_Fused_Row&amp;lt;8, 16, 16, 960, 480&amp;gt;</second>
                       </first>
-                      <second>363</second>
+                      <second>233</second>
                     </item>
                     <item>
                       <first>
@@ -4038,39 +3681,32 @@
             <Obj>
               <type>0</type>
               <id>97</id>
-              <name>zext_ln220</name>
+              <name>zext_ln234</name>
               <fileName>../gen/Hls_Layers_UpConv.tpp</fileName>
               <fileDirectory>../.</fileDirectory>
-              <lineNumber>220</lineNumber>
-              <contextFuncName>Compute_Pixel_Stats&amp;lt;32, 480, 30, 480&amp;gt;</contextFuncName>
-              <contextNormFuncName>Compute_Pixel_Stats_32_480_30_480_s</contextNormFuncName>
+              <lineNumber>234</lineNumber>
+              <contextFuncName>UpConv_Fused_Row&amp;lt;8, 16, 16, 960, 480&amp;gt;</contextFuncName>
+              <contextNormFuncName>UpConv_Fused_Row_8_16_16_960_480_s</contextNormFuncName>
               <inlineStackInfo>
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
                   <first>/home/hoinguyen/Documents/Vitis/UpConv_HLS/upconv_block0</first>
                   <second>
-                    <count>2</count>
+                    <count>1</count>
                     <item_version>0</item_version>
-                    <item>
-                      <first>
-                        <first>../gen/Hls_Layers_UpConv.tpp</first>
-                        <second>Compute_Pixel_Stats&amp;lt;32, 480, 30, 480&amp;gt;</second>
-                      </first>
-                      <second>220</second>
-                    </item>
                     <item>
                       <first>
                         <first>../gen/Hls_Layers_UpConv.tpp</first>
                         <second>UpConv_Fused_Row&amp;lt;8, 16, 16, 960, 480&amp;gt;</second>
                       </first>
-                      <second>363</second>
+                      <second>234</second>
                     </item>
                   </second>
                 </item>
               </inlineStackInfo>
               <originalName/>
-              <rtlName>zext_ln220_fu_1351_p1</rtlName>
+              <rtlName>zext_ln234_fu_1351_p1</rtlName>
               <control/>
               <opType/>
               <implIndex/>
@@ -4101,39 +3737,32 @@
             <Obj>
               <type>0</type>
               <id>98</id>
-              <name>trunc_ln220</name>
+              <name>trunc_ln234</name>
               <fileName>../gen/Hls_Layers_UpConv.tpp</fileName>
               <fileDirectory>../.</fileDirectory>
-              <lineNumber>220</lineNumber>
-              <contextFuncName>Compute_Pixel_Stats&amp;lt;32, 480, 30, 480&amp;gt;</contextFuncName>
-              <contextNormFuncName>Compute_Pixel_Stats_32_480_30_480_s</contextNormFuncName>
+              <lineNumber>234</lineNumber>
+              <contextFuncName>UpConv_Fused_Row&amp;lt;8, 16, 16, 960, 480&amp;gt;</contextFuncName>
+              <contextNormFuncName>UpConv_Fused_Row_8_16_16_960_480_s</contextNormFuncName>
               <inlineStackInfo>
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
                   <first>/home/hoinguyen/Documents/Vitis/UpConv_HLS/upconv_block0</first>
                   <second>
-                    <count>2</count>
+                    <count>1</count>
                     <item_version>0</item_version>
-                    <item>
-                      <first>
-                        <first>../gen/Hls_Layers_UpConv.tpp</first>
-                        <second>Compute_Pixel_Stats&amp;lt;32, 480, 30, 480&amp;gt;</second>
-                      </first>
-                      <second>220</second>
-                    </item>
                     <item>
                       <first>
                         <first>../gen/Hls_Layers_UpConv.tpp</first>
                         <second>UpConv_Fused_Row&amp;lt;8, 16, 16, 960, 480&amp;gt;</second>
                       </first>
-                      <second>363</second>
+                      <second>234</second>
                     </item>
                   </second>
                 </item>
               </inlineStackInfo>
               <originalName/>
-              <rtlName>trunc_ln220_fu_850_p1</rtlName>
+              <rtlName>trunc_ln234_fu_850_p1</rtlName>
               <control/>
               <opType/>
               <implIndex/>
@@ -4167,30 +3796,23 @@
               <name>p_shl</name>
               <fileName>../gen/Hls_Layers_UpConv.tpp</fileName>
               <fileDirectory>../.</fileDirectory>
-              <lineNumber>220</lineNumber>
-              <contextFuncName>Compute_Pixel_Stats&amp;lt;32, 480, 30, 480&amp;gt;</contextFuncName>
-              <contextNormFuncName>Compute_Pixel_Stats_32_480_30_480_s</contextNormFuncName>
+              <lineNumber>234</lineNumber>
+              <contextFuncName>UpConv_Fused_Row&amp;lt;8, 16, 16, 960, 480&amp;gt;</contextFuncName>
+              <contextNormFuncName>UpConv_Fused_Row_8_16_16_960_480_s</contextNormFuncName>
               <inlineStackInfo>
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
                   <first>/home/hoinguyen/Documents/Vitis/UpConv_HLS/upconv_block0</first>
                   <second>
-                    <count>2</count>
+                    <count>1</count>
                     <item_version>0</item_version>
-                    <item>
-                      <first>
-                        <first>../gen/Hls_Layers_UpConv.tpp</first>
-                        <second>Compute_Pixel_Stats&amp;lt;32, 480, 30, 480&amp;gt;</second>
-                      </first>
-                      <second>220</second>
-                    </item>
                     <item>
                       <first>
                         <first>../gen/Hls_Layers_UpConv.tpp</first>
                         <second>UpConv_Fused_Row&amp;lt;8, 16, 16, 960, 480&amp;gt;</second>
                       </first>
-                      <second>363</second>
+                      <second>234</second>
                     </item>
                   </second>
                 </item>
@@ -4229,39 +3851,32 @@
             <Obj>
               <type>0</type>
               <id>100</id>
-              <name>trunc_ln220_1</name>
+              <name>trunc_ln234_1</name>
               <fileName>../gen/Hls_Layers_UpConv.tpp</fileName>
               <fileDirectory>../.</fileDirectory>
-              <lineNumber>220</lineNumber>
-              <contextFuncName>Compute_Pixel_Stats&amp;lt;32, 480, 30, 480&amp;gt;</contextFuncName>
-              <contextNormFuncName>Compute_Pixel_Stats_32_480_30_480_s</contextNormFuncName>
+              <lineNumber>234</lineNumber>
+              <contextFuncName>UpConv_Fused_Row&amp;lt;8, 16, 16, 960, 480&amp;gt;</contextFuncName>
+              <contextNormFuncName>UpConv_Fused_Row_8_16_16_960_480_s</contextNormFuncName>
               <inlineStackInfo>
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
                   <first>/home/hoinguyen/Documents/Vitis/UpConv_HLS/upconv_block0</first>
                   <second>
-                    <count>2</count>
+                    <count>1</count>
                     <item_version>0</item_version>
-                    <item>
-                      <first>
-                        <first>../gen/Hls_Layers_UpConv.tpp</first>
-                        <second>Compute_Pixel_Stats&amp;lt;32, 480, 30, 480&amp;gt;</second>
-                      </first>
-                      <second>220</second>
-                    </item>
                     <item>
                       <first>
                         <first>../gen/Hls_Layers_UpConv.tpp</first>
                         <second>UpConv_Fused_Row&amp;lt;8, 16, 16, 960, 480&amp;gt;</second>
                       </first>
-                      <second>363</second>
+                      <second>234</second>
                     </item>
                   </second>
                 </item>
               </inlineStackInfo>
               <originalName/>
-              <rtlName>trunc_ln220_1_fu_862_p1</rtlName>
+              <rtlName>trunc_ln234_1_fu_862_p1</rtlName>
               <control/>
               <opType/>
               <implIndex/>
@@ -4292,39 +3907,32 @@
             <Obj>
               <type>0</type>
               <id>101</id>
-              <name>p_shl1</name>
+              <name>p_shl4</name>
               <fileName>../gen/Hls_Layers_UpConv.tpp</fileName>
               <fileDirectory>../.</fileDirectory>
-              <lineNumber>220</lineNumber>
-              <contextFuncName>Compute_Pixel_Stats&amp;lt;32, 480, 30, 480&amp;gt;</contextFuncName>
-              <contextNormFuncName>Compute_Pixel_Stats_32_480_30_480_s</contextNormFuncName>
+              <lineNumber>234</lineNumber>
+              <contextFuncName>UpConv_Fused_Row&amp;lt;8, 16, 16, 960, 480&amp;gt;</contextFuncName>
+              <contextNormFuncName>UpConv_Fused_Row_8_16_16_960_480_s</contextNormFuncName>
               <inlineStackInfo>
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
                   <first>/home/hoinguyen/Documents/Vitis/UpConv_HLS/upconv_block0</first>
                   <second>
-                    <count>2</count>
+                    <count>1</count>
                     <item_version>0</item_version>
-                    <item>
-                      <first>
-                        <first>../gen/Hls_Layers_UpConv.tpp</first>
-                        <second>Compute_Pixel_Stats&amp;lt;32, 480, 30, 480&amp;gt;</second>
-                      </first>
-                      <second>220</second>
-                    </item>
                     <item>
                       <first>
                         <first>../gen/Hls_Layers_UpConv.tpp</first>
                         <second>UpConv_Fused_Row&amp;lt;8, 16, 16, 960, 480&amp;gt;</second>
                       </first>
-                      <second>363</second>
+                      <second>234</second>
                     </item>
                   </second>
                 </item>
               </inlineStackInfo>
               <originalName/>
-              <rtlName>p_shl1_fu_866_p3</rtlName>
+              <rtlName>p_shl4_fu_866_p3</rtlName>
               <control/>
               <opType/>
               <implIndex/>
@@ -4357,39 +3965,32 @@
             <Obj>
               <type>0</type>
               <id>102</id>
-              <name>sub_ln220</name>
+              <name>sub_ln234</name>
               <fileName>../gen/Hls_Layers_UpConv.tpp</fileName>
               <fileDirectory>../.</fileDirectory>
-              <lineNumber>220</lineNumber>
-              <contextFuncName>Compute_Pixel_Stats&amp;lt;32, 480, 30, 480&amp;gt;</contextFuncName>
-              <contextNormFuncName>Compute_Pixel_Stats_32_480_30_480_s</contextNormFuncName>
+              <lineNumber>234</lineNumber>
+              <contextFuncName>UpConv_Fused_Row&amp;lt;8, 16, 16, 960, 480&amp;gt;</contextFuncName>
+              <contextNormFuncName>UpConv_Fused_Row_8_16_16_960_480_s</contextNormFuncName>
               <inlineStackInfo>
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
                   <first>/home/hoinguyen/Documents/Vitis/UpConv_HLS/upconv_block0</first>
                   <second>
-                    <count>2</count>
+                    <count>1</count>
                     <item_version>0</item_version>
-                    <item>
-                      <first>
-                        <first>../gen/Hls_Layers_UpConv.tpp</first>
-                        <second>Compute_Pixel_Stats&amp;lt;32, 480, 30, 480&amp;gt;</second>
-                      </first>
-                      <second>220</second>
-                    </item>
                     <item>
                       <first>
                         <first>../gen/Hls_Layers_UpConv.tpp</first>
                         <second>UpConv_Fused_Row&amp;lt;8, 16, 16, 960, 480&amp;gt;</second>
                       </first>
-                      <second>363</second>
+                      <second>234</second>
                     </item>
                   </second>
                 </item>
               </inlineStackInfo>
               <originalName/>
-              <rtlName>sub_ln220_fu_874_p2</rtlName>
+              <rtlName>sub_ln234_fu_874_p2</rtlName>
               <control>auto</control>
               <opType>all</opType>
               <implIndex>tadder</implIndex>
@@ -4421,39 +4022,32 @@
             <Obj>
               <type>0</type>
               <id>103</id>
-              <name>add_ln220</name>
+              <name>add_ln234</name>
               <fileName>../gen/Hls_Layers_UpConv.tpp</fileName>
               <fileDirectory>../.</fileDirectory>
-              <lineNumber>220</lineNumber>
-              <contextFuncName>Compute_Pixel_Stats&amp;lt;32, 480, 30, 480&amp;gt;</contextFuncName>
-              <contextNormFuncName>Compute_Pixel_Stats_32_480_30_480_s</contextNormFuncName>
+              <lineNumber>234</lineNumber>
+              <contextFuncName>UpConv_Fused_Row&amp;lt;8, 16, 16, 960, 480&amp;gt;</contextFuncName>
+              <contextNormFuncName>UpConv_Fused_Row_8_16_16_960_480_s</contextNormFuncName>
               <inlineStackInfo>
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
                   <first>/home/hoinguyen/Documents/Vitis/UpConv_HLS/upconv_block0</first>
                   <second>
-                    <count>2</count>
+                    <count>1</count>
                     <item_version>0</item_version>
-                    <item>
-                      <first>
-                        <first>../gen/Hls_Layers_UpConv.tpp</first>
-                        <second>Compute_Pixel_Stats&amp;lt;32, 480, 30, 480&amp;gt;</second>
-                      </first>
-                      <second>220</second>
-                    </item>
                     <item>
                       <first>
                         <first>../gen/Hls_Layers_UpConv.tpp</first>
                         <second>UpConv_Fused_Row&amp;lt;8, 16, 16, 960, 480&amp;gt;</second>
                       </first>
-                      <second>363</second>
+                      <second>234</second>
                     </item>
                   </second>
                 </item>
               </inlineStackInfo>
               <originalName/>
-              <rtlName>add_ln220_fu_880_p2</rtlName>
+              <rtlName>add_ln234_fu_880_p2</rtlName>
               <control>auto</control>
               <opType>all</opType>
               <implIndex>tadder</implIndex>
@@ -4485,39 +4079,32 @@
             <Obj>
               <type>0</type>
               <id>104</id>
-              <name>zext_ln220_1</name>
+              <name>zext_ln234_1</name>
               <fileName>../gen/Hls_Layers_UpConv.tpp</fileName>
               <fileDirectory>../.</fileDirectory>
-              <lineNumber>220</lineNumber>
-              <contextFuncName>Compute_Pixel_Stats&amp;lt;32, 480, 30, 480&amp;gt;</contextFuncName>
-              <contextNormFuncName>Compute_Pixel_Stats_32_480_30_480_s</contextNormFuncName>
+              <lineNumber>234</lineNumber>
+              <contextFuncName>UpConv_Fused_Row&amp;lt;8, 16, 16, 960, 480&amp;gt;</contextFuncName>
+              <contextNormFuncName>UpConv_Fused_Row_8_16_16_960_480_s</contextNormFuncName>
               <inlineStackInfo>
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
                   <first>/home/hoinguyen/Documents/Vitis/UpConv_HLS/upconv_block0</first>
                   <second>
-                    <count>2</count>
+                    <count>1</count>
                     <item_version>0</item_version>
-                    <item>
-                      <first>
-                        <first>../gen/Hls_Layers_UpConv.tpp</first>
-                        <second>Compute_Pixel_Stats&amp;lt;32, 480, 30, 480&amp;gt;</second>
-                      </first>
-                      <second>220</second>
-                    </item>
                     <item>
                       <first>
                         <first>../gen/Hls_Layers_UpConv.tpp</first>
                         <second>UpConv_Fused_Row&amp;lt;8, 16, 16, 960, 480&amp;gt;</second>
                       </first>
-                      <second>363</second>
+                      <second>234</second>
                     </item>
                   </second>
                 </item>
               </inlineStackInfo>
               <originalName/>
-              <rtlName>zext_ln220_1_fu_886_p1</rtlName>
+              <rtlName>zext_ln234_1_fu_886_p1</rtlName>
               <control/>
               <opType/>
               <implIndex/>
@@ -4548,33 +4135,26 @@
             <Obj>
               <type>0</type>
               <id>105</id>
-              <name>p_ZZ16UpConv_Fused_RowILi8ELi16ELi16ELi960ELi480EEvP7ap_uintILi256EEPKS1_S4_S4_S4_12</name>
+              <name>p_ZZ16UpConv_Fused_RowILi8ELi16ELi16ELi960ELi480EEvP7ap_uintILi256EEPKS1_S4_S4_S4_24</name>
               <fileName>../gen/Hls_Layers_UpConv.tpp</fileName>
               <fileDirectory>../.</fileDirectory>
-              <lineNumber>220</lineNumber>
-              <contextFuncName>Compute_Pixel_Stats&amp;lt;32, 480, 30, 480&amp;gt;</contextFuncName>
-              <contextNormFuncName>Compute_Pixel_Stats_32_480_30_480_s</contextNormFuncName>
+              <lineNumber>234</lineNumber>
+              <contextFuncName>UpConv_Fused_Row&amp;lt;8, 16, 16, 960, 480&amp;gt;</contextFuncName>
+              <contextNormFuncName>UpConv_Fused_Row_8_16_16_960_480_s</contextNormFuncName>
               <inlineStackInfo>
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
                   <first>/home/hoinguyen/Documents/Vitis/UpConv_HLS/upconv_block0</first>
                   <second>
-                    <count>2</count>
+                    <count>1</count>
                     <item_version>0</item_version>
-                    <item>
-                      <first>
-                        <first>../gen/Hls_Layers_UpConv.tpp</first>
-                        <second>Compute_Pixel_Stats&amp;lt;32, 480, 30, 480&amp;gt;</second>
-                      </first>
-                      <second>220</second>
-                    </item>
                     <item>
                       <first>
                         <first>../gen/Hls_Layers_UpConv.tpp</first>
                         <second>UpConv_Fused_Row&amp;lt;8, 16, 16, 960, 480&amp;gt;</second>
                       </first>
-                      <second>363</second>
+                      <second>234</second>
                     </item>
                   </second>
                 </item>
@@ -4613,33 +4193,26 @@
             <Obj>
               <type>0</type>
               <id>106</id>
-              <name>p_ZZ16UpConv_Fused_RowILi8ELi16ELi16ELi960ELi480EEvP7ap_uintILi256EEPKS1_S4_S4_S4_13</name>
+              <name>p_ZZ16UpConv_Fused_RowILi8ELi16ELi16ELi960ELi480EEvP7ap_uintILi256EEPKS1_S4_S4_S4_25</name>
               <fileName>../gen/Hls_Layers_UpConv.tpp</fileName>
               <fileDirectory>../.</fileDirectory>
-              <lineNumber>220</lineNumber>
-              <contextFuncName>Compute_Pixel_Stats&amp;lt;32, 480, 30, 480&amp;gt;</contextFuncName>
-              <contextNormFuncName>Compute_Pixel_Stats_32_480_30_480_s</contextNormFuncName>
+              <lineNumber>234</lineNumber>
+              <contextFuncName>UpConv_Fused_Row&amp;lt;8, 16, 16, 960, 480&amp;gt;</contextFuncName>
+              <contextNormFuncName>UpConv_Fused_Row_8_16_16_960_480_s</contextNormFuncName>
               <inlineStackInfo>
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
                   <first>/home/hoinguyen/Documents/Vitis/UpConv_HLS/upconv_block0</first>
                   <second>
-                    <count>2</count>
+                    <count>1</count>
                     <item_version>0</item_version>
-                    <item>
-                      <first>
-                        <first>../gen/Hls_Layers_UpConv.tpp</first>
-                        <second>Compute_Pixel_Stats&amp;lt;32, 480, 30, 480&amp;gt;</second>
-                      </first>
-                      <second>220</second>
-                    </item>
                     <item>
                       <first>
                         <first>../gen/Hls_Layers_UpConv.tpp</first>
                         <second>UpConv_Fused_Row&amp;lt;8, 16, 16, 960, 480&amp;gt;</second>
                       </first>
-                      <second>363</second>
+                      <second>234</second>
                     </item>
                   </second>
                 </item>
@@ -4678,33 +4251,26 @@
             <Obj>
               <type>0</type>
               <id>107</id>
-              <name>p_ZZ16UpConv_Fused_RowILi8ELi16ELi16ELi960ELi480EEvP7ap_uintILi256EEPKS1_S4_S4_S4_14</name>
+              <name>p_ZZ16UpConv_Fused_RowILi8ELi16ELi16ELi960ELi480EEvP7ap_uintILi256EEPKS1_S4_S4_S4_26</name>
               <fileName>../gen/Hls_Layers_UpConv.tpp</fileName>
               <fileDirectory>../.</fileDirectory>
-              <lineNumber>220</lineNumber>
-              <contextFuncName>Compute_Pixel_Stats&amp;lt;32, 480, 30, 480&amp;gt;</contextFuncName>
-              <contextNormFuncName>Compute_Pixel_Stats_32_480_30_480_s</contextNormFuncName>
+              <lineNumber>234</lineNumber>
+              <contextFuncName>UpConv_Fused_Row&amp;lt;8, 16, 16, 960, 480&amp;gt;</contextFuncName>
+              <contextNormFuncName>UpConv_Fused_Row_8_16_16_960_480_s</contextNormFuncName>
               <inlineStackInfo>
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
                   <first>/home/hoinguyen/Documents/Vitis/UpConv_HLS/upconv_block0</first>
                   <second>
-                    <count>2</count>
+                    <count>1</count>
                     <item_version>0</item_version>
-                    <item>
-                      <first>
-                        <first>../gen/Hls_Layers_UpConv.tpp</first>
-                        <second>Compute_Pixel_Stats&amp;lt;32, 480, 30, 480&amp;gt;</second>
-                      </first>
-                      <second>220</second>
-                    </item>
                     <item>
                       <first>
                         <first>../gen/Hls_Layers_UpConv.tpp</first>
                         <second>UpConv_Fused_Row&amp;lt;8, 16, 16, 960, 480&amp;gt;</second>
                       </first>
-                      <second>363</second>
+                      <second>234</second>
                     </item>
                   </second>
                 </item>
@@ -4743,33 +4309,26 @@
             <Obj>
               <type>0</type>
               <id>108</id>
-              <name>p_ZZ16UpConv_Fused_RowILi8ELi16ELi16ELi960ELi480EEvP7ap_uintILi256EEPKS1_S4_S4_S4_15</name>
+              <name>p_ZZ16UpConv_Fused_RowILi8ELi16ELi16ELi960ELi480EEvP7ap_uintILi256EEPKS1_S4_S4_S4_27</name>
               <fileName>../gen/Hls_Layers_UpConv.tpp</fileName>
               <fileDirectory>../.</fileDirectory>
-              <lineNumber>220</lineNumber>
-              <contextFuncName>Compute_Pixel_Stats&amp;lt;32, 480, 30, 480&amp;gt;</contextFuncName>
-              <contextNormFuncName>Compute_Pixel_Stats_32_480_30_480_s</contextNormFuncName>
+              <lineNumber>234</lineNumber>
+              <contextFuncName>UpConv_Fused_Row&amp;lt;8, 16, 16, 960, 480&amp;gt;</contextFuncName>
+              <contextNormFuncName>UpConv_Fused_Row_8_16_16_960_480_s</contextNormFuncName>
               <inlineStackInfo>
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
                   <first>/home/hoinguyen/Documents/Vitis/UpConv_HLS/upconv_block0</first>
                   <second>
-                    <count>2</count>
+                    <count>1</count>
                     <item_version>0</item_version>
-                    <item>
-                      <first>
-                        <first>../gen/Hls_Layers_UpConv.tpp</first>
-                        <second>Compute_Pixel_Stats&amp;lt;32, 480, 30, 480&amp;gt;</second>
-                      </first>
-                      <second>220</second>
-                    </item>
                     <item>
                       <first>
                         <first>../gen/Hls_Layers_UpConv.tpp</first>
                         <second>UpConv_Fused_Row&amp;lt;8, 16, 16, 960, 480&amp;gt;</second>
                       </first>
-                      <second>363</second>
+                      <second>234</second>
                     </item>
                   </second>
                 </item>
@@ -4808,33 +4367,26 @@
             <Obj>
               <type>0</type>
               <id>109</id>
-              <name>p_ZZ16UpConv_Fused_RowILi8ELi16ELi16ELi960ELi480EEvP7ap_uintILi256EEPKS1_S4_S4_S4_16</name>
+              <name>p_ZZ16UpConv_Fused_RowILi8ELi16ELi16ELi960ELi480EEvP7ap_uintILi256EEPKS1_S4_S4_S4_28</name>
               <fileName>../gen/Hls_Layers_UpConv.tpp</fileName>
               <fileDirectory>../.</fileDirectory>
-              <lineNumber>220</lineNumber>
-              <contextFuncName>Compute_Pixel_Stats&amp;lt;32, 480, 30, 480&amp;gt;</contextFuncName>
-              <contextNormFuncName>Compute_Pixel_Stats_32_480_30_480_s</contextNormFuncName>
+              <lineNumber>234</lineNumber>
+              <contextFuncName>UpConv_Fused_Row&amp;lt;8, 16, 16, 960, 480&amp;gt;</contextFuncName>
+              <contextNormFuncName>UpConv_Fused_Row_8_16_16_960_480_s</contextNormFuncName>
               <inlineStackInfo>
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
                   <first>/home/hoinguyen/Documents/Vitis/UpConv_HLS/upconv_block0</first>
                   <second>
-                    <count>2</count>
+                    <count>1</count>
                     <item_version>0</item_version>
-                    <item>
-                      <first>
-                        <first>../gen/Hls_Layers_UpConv.tpp</first>
-                        <second>Compute_Pixel_Stats&amp;lt;32, 480, 30, 480&amp;gt;</second>
-                      </first>
-                      <second>220</second>
-                    </item>
                     <item>
                       <first>
                         <first>../gen/Hls_Layers_UpConv.tpp</first>
                         <second>UpConv_Fused_Row&amp;lt;8, 16, 16, 960, 480&amp;gt;</second>
                       </first>
-                      <second>363</second>
+                      <second>234</second>
                     </item>
                   </second>
                 </item>
@@ -4873,33 +4425,26 @@
             <Obj>
               <type>0</type>
               <id>110</id>
-              <name>p_ZZ16UpConv_Fused_RowILi8ELi16ELi16ELi960ELi480EEvP7ap_uintILi256EEPKS1_S4_S4_S4_17</name>
+              <name>p_ZZ16UpConv_Fused_RowILi8ELi16ELi16ELi960ELi480EEvP7ap_uintILi256EEPKS1_S4_S4_S4_29</name>
               <fileName>../gen/Hls_Layers_UpConv.tpp</fileName>
               <fileDirectory>../.</fileDirectory>
-              <lineNumber>220</lineNumber>
-              <contextFuncName>Compute_Pixel_Stats&amp;lt;32, 480, 30, 480&amp;gt;</contextFuncName>
-              <contextNormFuncName>Compute_Pixel_Stats_32_480_30_480_s</contextNormFuncName>
+              <lineNumber>234</lineNumber>
+              <contextFuncName>UpConv_Fused_Row&amp;lt;8, 16, 16, 960, 480&amp;gt;</contextFuncName>
+              <contextNormFuncName>UpConv_Fused_Row_8_16_16_960_480_s</contextNormFuncName>
               <inlineStackInfo>
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
                   <first>/home/hoinguyen/Documents/Vitis/UpConv_HLS/upconv_block0</first>
                   <second>
-                    <count>2</count>
+                    <count>1</count>
                     <item_version>0</item_version>
-                    <item>
-                      <first>
-                        <first>../gen/Hls_Layers_UpConv.tpp</first>
-                        <second>Compute_Pixel_Stats&amp;lt;32, 480, 30, 480&amp;gt;</second>
-                      </first>
-                      <second>220</second>
-                    </item>
                     <item>
                       <first>
                         <first>../gen/Hls_Layers_UpConv.tpp</first>
                         <second>UpConv_Fused_Row&amp;lt;8, 16, 16, 960, 480&amp;gt;</second>
                       </first>
-                      <second>363</second>
+                      <second>234</second>
                     </item>
                   </second>
                 </item>
@@ -4938,33 +4483,26 @@
             <Obj>
               <type>0</type>
               <id>111</id>
-              <name>void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_20</name>
+              <name>void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_40</name>
               <fileName>../gen/Hls_Layers_UpConv.tpp</fileName>
               <fileDirectory>../.</fileDirectory>
-              <lineNumber>220</lineNumber>
-              <contextFuncName>Compute_Pixel_Stats&amp;lt;32, 480, 30, 480&amp;gt;</contextFuncName>
-              <contextNormFuncName>Compute_Pixel_Stats_32_480_30_480_s</contextNormFuncName>
+              <lineNumber>234</lineNumber>
+              <contextFuncName>UpConv_Fused_Row&amp;lt;8, 16, 16, 960, 480&amp;gt;</contextFuncName>
+              <contextNormFuncName>UpConv_Fused_Row_8_16_16_960_480_s</contextNormFuncName>
               <inlineStackInfo>
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
                   <first>/home/hoinguyen/Documents/Vitis/UpConv_HLS/upconv_block0</first>
                   <second>
-                    <count>2</count>
+                    <count>1</count>
                     <item_version>0</item_version>
-                    <item>
-                      <first>
-                        <first>../gen/Hls_Layers_UpConv.tpp</first>
-                        <second>Compute_Pixel_Stats&amp;lt;32, 480, 30, 480&amp;gt;</second>
-                      </first>
-                      <second>220</second>
-                    </item>
                     <item>
                       <first>
                         <first>../gen/Hls_Layers_UpConv.tpp</first>
                         <second>UpConv_Fused_Row&amp;lt;8, 16, 16, 960, 480&amp;gt;</second>
                       </first>
-                      <second>363</second>
+                      <second>234</second>
                     </item>
                   </second>
                 </item>
@@ -5003,33 +4541,26 @@
             <Obj>
               <type>0</type>
               <id>112</id>
-              <name>void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_21</name>
+              <name>void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_41</name>
               <fileName>../gen/Hls_Layers_UpConv.tpp</fileName>
               <fileDirectory>../.</fileDirectory>
-              <lineNumber>220</lineNumber>
-              <contextFuncName>Compute_Pixel_Stats&amp;lt;32, 480, 30, 480&amp;gt;</contextFuncName>
-              <contextNormFuncName>Compute_Pixel_Stats_32_480_30_480_s</contextNormFuncName>
+              <lineNumber>234</lineNumber>
+              <contextFuncName>UpConv_Fused_Row&amp;lt;8, 16, 16, 960, 480&amp;gt;</contextFuncName>
+              <contextNormFuncName>UpConv_Fused_Row_8_16_16_960_480_s</contextNormFuncName>
               <inlineStackInfo>
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
                   <first>/home/hoinguyen/Documents/Vitis/UpConv_HLS/upconv_block0</first>
                   <second>
-                    <count>2</count>
+                    <count>1</count>
                     <item_version>0</item_version>
-                    <item>
-                      <first>
-                        <first>../gen/Hls_Layers_UpConv.tpp</first>
-                        <second>Compute_Pixel_Stats&amp;lt;32, 480, 30, 480&amp;gt;</second>
-                      </first>
-                      <second>220</second>
-                    </item>
                     <item>
                       <first>
                         <first>../gen/Hls_Layers_UpConv.tpp</first>
                         <second>UpConv_Fused_Row&amp;lt;8, 16, 16, 960, 480&amp;gt;</second>
                       </first>
-                      <second>363</second>
+                      <second>234</second>
                     </item>
                   </second>
                 </item>
@@ -5068,33 +4599,26 @@
             <Obj>
               <type>0</type>
               <id>113</id>
-              <name>void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_22</name>
+              <name>void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_42</name>
               <fileName>../gen/Hls_Layers_UpConv.tpp</fileName>
               <fileDirectory>../.</fileDirectory>
-              <lineNumber>220</lineNumber>
-              <contextFuncName>Compute_Pixel_Stats&amp;lt;32, 480, 30, 480&amp;gt;</contextFuncName>
-              <contextNormFuncName>Compute_Pixel_Stats_32_480_30_480_s</contextNormFuncName>
+              <lineNumber>234</lineNumber>
+              <contextFuncName>UpConv_Fused_Row&amp;lt;8, 16, 16, 960, 480&amp;gt;</contextFuncName>
+              <contextNormFuncName>UpConv_Fused_Row_8_16_16_960_480_s</contextNormFuncName>
               <inlineStackInfo>
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
                   <first>/home/hoinguyen/Documents/Vitis/UpConv_HLS/upconv_block0</first>
                   <second>
-                    <count>2</count>
+                    <count>1</count>
                     <item_version>0</item_version>
-                    <item>
-                      <first>
-                        <first>../gen/Hls_Layers_UpConv.tpp</first>
-                        <second>Compute_Pixel_Stats&amp;lt;32, 480, 30, 480&amp;gt;</second>
-                      </first>
-                      <second>220</second>
-                    </item>
                     <item>
                       <first>
                         <first>../gen/Hls_Layers_UpConv.tpp</first>
                         <second>UpConv_Fused_Row&amp;lt;8, 16, 16, 960, 480&amp;gt;</second>
                       </first>
-                      <second>363</second>
+                      <second>234</second>
                     </item>
                   </second>
                 </item>
@@ -5133,33 +4657,26 @@
             <Obj>
               <type>0</type>
               <id>114</id>
-              <name>void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_23</name>
+              <name>void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_43</name>
               <fileName>../gen/Hls_Layers_UpConv.tpp</fileName>
               <fileDirectory>../.</fileDirectory>
-              <lineNumber>220</lineNumber>
-              <contextFuncName>Compute_Pixel_Stats&amp;lt;32, 480, 30, 480&amp;gt;</contextFuncName>
-              <contextNormFuncName>Compute_Pixel_Stats_32_480_30_480_s</contextNormFuncName>
+              <lineNumber>234</lineNumber>
+              <contextFuncName>UpConv_Fused_Row&amp;lt;8, 16, 16, 960, 480&amp;gt;</contextFuncName>
+              <contextNormFuncName>UpConv_Fused_Row_8_16_16_960_480_s</contextNormFuncName>
               <inlineStackInfo>
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
                   <first>/home/hoinguyen/Documents/Vitis/UpConv_HLS/upconv_block0</first>
                   <second>
-                    <count>2</count>
+                    <count>1</count>
                     <item_version>0</item_version>
-                    <item>
-                      <first>
-                        <first>../gen/Hls_Layers_UpConv.tpp</first>
-                        <second>Compute_Pixel_Stats&amp;lt;32, 480, 30, 480&amp;gt;</second>
-                      </first>
-                      <second>220</second>
-                    </item>
                     <item>
                       <first>
                         <first>../gen/Hls_Layers_UpConv.tpp</first>
                         <second>UpConv_Fused_Row&amp;lt;8, 16, 16, 960, 480&amp;gt;</second>
                       </first>
-                      <second>363</second>
+                      <second>234</second>
                     </item>
                   </second>
                 </item>
@@ -5198,33 +4715,26 @@
             <Obj>
               <type>0</type>
               <id>115</id>
-              <name>void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_24</name>
+              <name>void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_44</name>
               <fileName>../gen/Hls_Layers_UpConv.tpp</fileName>
               <fileDirectory>../.</fileDirectory>
-              <lineNumber>220</lineNumber>
-              <contextFuncName>Compute_Pixel_Stats&amp;lt;32, 480, 30, 480&amp;gt;</contextFuncName>
-              <contextNormFuncName>Compute_Pixel_Stats_32_480_30_480_s</contextNormFuncName>
+              <lineNumber>234</lineNumber>
+              <contextFuncName>UpConv_Fused_Row&amp;lt;8, 16, 16, 960, 480&amp;gt;</contextFuncName>
+              <contextNormFuncName>UpConv_Fused_Row_8_16_16_960_480_s</contextNormFuncName>
               <inlineStackInfo>
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
                   <first>/home/hoinguyen/Documents/Vitis/UpConv_HLS/upconv_block0</first>
                   <second>
-                    <count>2</count>
+                    <count>1</count>
                     <item_version>0</item_version>
-                    <item>
-                      <first>
-                        <first>../gen/Hls_Layers_UpConv.tpp</first>
-                        <second>Compute_Pixel_Stats&amp;lt;32, 480, 30, 480&amp;gt;</second>
-                      </first>
-                      <second>220</second>
-                    </item>
                     <item>
                       <first>
                         <first>../gen/Hls_Layers_UpConv.tpp</first>
                         <second>UpConv_Fused_Row&amp;lt;8, 16, 16, 960, 480&amp;gt;</second>
                       </first>
-                      <second>363</second>
+                      <second>234</second>
                     </item>
                   </second>
                 </item>
@@ -5263,33 +4773,26 @@
             <Obj>
               <type>0</type>
               <id>116</id>
-              <name>void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_25</name>
+              <name>void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_45</name>
               <fileName>../gen/Hls_Layers_UpConv.tpp</fileName>
               <fileDirectory>../.</fileDirectory>
-              <lineNumber>220</lineNumber>
-              <contextFuncName>Compute_Pixel_Stats&amp;lt;32, 480, 30, 480&amp;gt;</contextFuncName>
-              <contextNormFuncName>Compute_Pixel_Stats_32_480_30_480_s</contextNormFuncName>
+              <lineNumber>234</lineNumber>
+              <contextFuncName>UpConv_Fused_Row&amp;lt;8, 16, 16, 960, 480&amp;gt;</contextFuncName>
+              <contextNormFuncName>UpConv_Fused_Row_8_16_16_960_480_s</contextNormFuncName>
               <inlineStackInfo>
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
                   <first>/home/hoinguyen/Documents/Vitis/UpConv_HLS/upconv_block0</first>
                   <second>
-                    <count>2</count>
+                    <count>1</count>
                     <item_version>0</item_version>
-                    <item>
-                      <first>
-                        <first>../gen/Hls_Layers_UpConv.tpp</first>
-                        <second>Compute_Pixel_Stats&amp;lt;32, 480, 30, 480&amp;gt;</second>
-                      </first>
-                      <second>220</second>
-                    </item>
                     <item>
                       <first>
                         <first>../gen/Hls_Layers_UpConv.tpp</first>
                         <second>UpConv_Fused_Row&amp;lt;8, 16, 16, 960, 480&amp;gt;</second>
                       </first>
-                      <second>363</second>
+                      <second>234</second>
                     </item>
                   </second>
                 </item>
@@ -5328,33 +4831,26 @@
             <Obj>
               <type>0</type>
               <id>117</id>
-              <name>void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_26</name>
+              <name>void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_46</name>
               <fileName>../gen/Hls_Layers_UpConv.tpp</fileName>
               <fileDirectory>../.</fileDirectory>
-              <lineNumber>220</lineNumber>
-              <contextFuncName>Compute_Pixel_Stats&amp;lt;32, 480, 30, 480&amp;gt;</contextFuncName>
-              <contextNormFuncName>Compute_Pixel_Stats_32_480_30_480_s</contextNormFuncName>
+              <lineNumber>234</lineNumber>
+              <contextFuncName>UpConv_Fused_Row&amp;lt;8, 16, 16, 960, 480&amp;gt;</contextFuncName>
+              <contextNormFuncName>UpConv_Fused_Row_8_16_16_960_480_s</contextNormFuncName>
               <inlineStackInfo>
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
                   <first>/home/hoinguyen/Documents/Vitis/UpConv_HLS/upconv_block0</first>
                   <second>
-                    <count>2</count>
+                    <count>1</count>
                     <item_version>0</item_version>
-                    <item>
-                      <first>
-                        <first>../gen/Hls_Layers_UpConv.tpp</first>
-                        <second>Compute_Pixel_Stats&amp;lt;32, 480, 30, 480&amp;gt;</second>
-                      </first>
-                      <second>220</second>
-                    </item>
                     <item>
                       <first>
                         <first>../gen/Hls_Layers_UpConv.tpp</first>
                         <second>UpConv_Fused_Row&amp;lt;8, 16, 16, 960, 480&amp;gt;</second>
                       </first>
-                      <second>363</second>
+                      <second>234</second>
                     </item>
                   </second>
                 </item>
@@ -5393,33 +4889,26 @@
             <Obj>
               <type>0</type>
               <id>118</id>
-              <name>void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_27</name>
+              <name>void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_47</name>
               <fileName>../gen/Hls_Layers_UpConv.tpp</fileName>
               <fileDirectory>../.</fileDirectory>
-              <lineNumber>220</lineNumber>
-              <contextFuncName>Compute_Pixel_Stats&amp;lt;32, 480, 30, 480&amp;gt;</contextFuncName>
-              <contextNormFuncName>Compute_Pixel_Stats_32_480_30_480_s</contextNormFuncName>
+              <lineNumber>234</lineNumber>
+              <contextFuncName>UpConv_Fused_Row&amp;lt;8, 16, 16, 960, 480&amp;gt;</contextFuncName>
+              <contextNormFuncName>UpConv_Fused_Row_8_16_16_960_480_s</contextNormFuncName>
               <inlineStackInfo>
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
                   <first>/home/hoinguyen/Documents/Vitis/UpConv_HLS/upconv_block0</first>
                   <second>
-                    <count>2</count>
+                    <count>1</count>
                     <item_version>0</item_version>
-                    <item>
-                      <first>
-                        <first>../gen/Hls_Layers_UpConv.tpp</first>
-                        <second>Compute_Pixel_Stats&amp;lt;32, 480, 30, 480&amp;gt;</second>
-                      </first>
-                      <second>220</second>
-                    </item>
                     <item>
                       <first>
                         <first>../gen/Hls_Layers_UpConv.tpp</first>
                         <second>UpConv_Fused_Row&amp;lt;8, 16, 16, 960, 480&amp;gt;</second>
                       </first>
-                      <second>363</second>
+                      <second>234</second>
                     </item>
                   </second>
                 </item>
@@ -5458,33 +4947,26 @@
             <Obj>
               <type>0</type>
               <id>119</id>
-              <name>void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_28</name>
+              <name>void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_48</name>
               <fileName>../gen/Hls_Layers_UpConv.tpp</fileName>
               <fileDirectory>../.</fileDirectory>
-              <lineNumber>220</lineNumber>
-              <contextFuncName>Compute_Pixel_Stats&amp;lt;32, 480, 30, 480&amp;gt;</contextFuncName>
-              <contextNormFuncName>Compute_Pixel_Stats_32_480_30_480_s</contextNormFuncName>
+              <lineNumber>234</lineNumber>
+              <contextFuncName>UpConv_Fused_Row&amp;lt;8, 16, 16, 960, 480&amp;gt;</contextFuncName>
+              <contextNormFuncName>UpConv_Fused_Row_8_16_16_960_480_s</contextNormFuncName>
               <inlineStackInfo>
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
                   <first>/home/hoinguyen/Documents/Vitis/UpConv_HLS/upconv_block0</first>
                   <second>
-                    <count>2</count>
+                    <count>1</count>
                     <item_version>0</item_version>
-                    <item>
-                      <first>
-                        <first>../gen/Hls_Layers_UpConv.tpp</first>
-                        <second>Compute_Pixel_Stats&amp;lt;32, 480, 30, 480&amp;gt;</second>
-                      </first>
-                      <second>220</second>
-                    </item>
                     <item>
                       <first>
                         <first>../gen/Hls_Layers_UpConv.tpp</first>
                         <second>UpConv_Fused_Row&amp;lt;8, 16, 16, 960, 480&amp;gt;</second>
                       </first>
-                      <second>363</second>
+                      <second>234</second>
                     </item>
                   </second>
                 </item>
@@ -5523,33 +5005,26 @@
             <Obj>
               <type>0</type>
               <id>120</id>
-              <name>void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_29</name>
+              <name>void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_49</name>
               <fileName>../gen/Hls_Layers_UpConv.tpp</fileName>
               <fileDirectory>../.</fileDirectory>
-              <lineNumber>220</lineNumber>
-              <contextFuncName>Compute_Pixel_Stats&amp;lt;32, 480, 30, 480&amp;gt;</contextFuncName>
-              <contextNormFuncName>Compute_Pixel_Stats_32_480_30_480_s</contextNormFuncName>
+              <lineNumber>234</lineNumber>
+              <contextFuncName>UpConv_Fused_Row&amp;lt;8, 16, 16, 960, 480&amp;gt;</contextFuncName>
+              <contextNormFuncName>UpConv_Fused_Row_8_16_16_960_480_s</contextNormFuncName>
               <inlineStackInfo>
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
                   <first>/home/hoinguyen/Documents/Vitis/UpConv_HLS/upconv_block0</first>
                   <second>
-                    <count>2</count>
+                    <count>1</count>
                     <item_version>0</item_version>
-                    <item>
-                      <first>
-                        <first>../gen/Hls_Layers_UpConv.tpp</first>
-                        <second>Compute_Pixel_Stats&amp;lt;32, 480, 30, 480&amp;gt;</second>
-                      </first>
-                      <second>220</second>
-                    </item>
                     <item>
                       <first>
                         <first>../gen/Hls_Layers_UpConv.tpp</first>
                         <second>UpConv_Fused_Row&amp;lt;8, 16, 16, 960, 480&amp;gt;</second>
                       </first>
-                      <second>363</second>
+                      <second>234</second>
                     </item>
                   </second>
                 </item>
@@ -5588,33 +5063,26 @@
             <Obj>
               <type>0</type>
               <id>121</id>
-              <name>void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_30</name>
+              <name>void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_50</name>
               <fileName>../gen/Hls_Layers_UpConv.tpp</fileName>
               <fileDirectory>../.</fileDirectory>
-              <lineNumber>220</lineNumber>
-              <contextFuncName>Compute_Pixel_Stats&amp;lt;32, 480, 30, 480&amp;gt;</contextFuncName>
-              <contextNormFuncName>Compute_Pixel_Stats_32_480_30_480_s</contextNormFuncName>
+              <lineNumber>234</lineNumber>
+              <contextFuncName>UpConv_Fused_Row&amp;lt;8, 16, 16, 960, 480&amp;gt;</contextFuncName>
+              <contextNormFuncName>UpConv_Fused_Row_8_16_16_960_480_s</contextNormFuncName>
               <inlineStackInfo>
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
                   <first>/home/hoinguyen/Documents/Vitis/UpConv_HLS/upconv_block0</first>
                   <second>
-                    <count>2</count>
+                    <count>1</count>
                     <item_version>0</item_version>
-                    <item>
-                      <first>
-                        <first>../gen/Hls_Layers_UpConv.tpp</first>
-                        <second>Compute_Pixel_Stats&amp;lt;32, 480, 30, 480&amp;gt;</second>
-                      </first>
-                      <second>220</second>
-                    </item>
                     <item>
                       <first>
                         <first>../gen/Hls_Layers_UpConv.tpp</first>
                         <second>UpConv_Fused_Row&amp;lt;8, 16, 16, 960, 480&amp;gt;</second>
                       </first>
-                      <second>363</second>
+                      <second>234</second>
                     </item>
                   </second>
                 </item>
@@ -5651,33 +5119,26 @@
             <Obj>
               <type>0</type>
               <id>122</id>
-              <name>void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_31</name>
+              <name>void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_51</name>
               <fileName>../gen/Hls_Layers_UpConv.tpp</fileName>
               <fileDirectory>../.</fileDirectory>
-              <lineNumber>220</lineNumber>
-              <contextFuncName>Compute_Pixel_Stats&amp;lt;32, 480, 30, 480&amp;gt;</contextFuncName>
-              <contextNormFuncName>Compute_Pixel_Stats_32_480_30_480_s</contextNormFuncName>
+              <lineNumber>234</lineNumber>
+              <contextFuncName>UpConv_Fused_Row&amp;lt;8, 16, 16, 960, 480&amp;gt;</contextFuncName>
+              <contextNormFuncName>UpConv_Fused_Row_8_16_16_960_480_s</contextNormFuncName>
               <inlineStackInfo>
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
                   <first>/home/hoinguyen/Documents/Vitis/UpConv_HLS/upconv_block0</first>
                   <second>
-                    <count>2</count>
+                    <count>1</count>
                     <item_version>0</item_version>
-                    <item>
-                      <first>
-                        <first>../gen/Hls_Layers_UpConv.tpp</first>
-                        <second>Compute_Pixel_Stats&amp;lt;32, 480, 30, 480&amp;gt;</second>
-                      </first>
-                      <second>220</second>
-                    </item>
                     <item>
                       <first>
                         <first>../gen/Hls_Layers_UpConv.tpp</first>
                         <second>UpConv_Fused_Row&amp;lt;8, 16, 16, 960, 480&amp;gt;</second>
                       </first>
-                      <second>363</second>
+                      <second>234</second>
                     </item>
                   </second>
                 </item>
@@ -5714,33 +5175,26 @@
             <Obj>
               <type>0</type>
               <id>123</id>
-              <name>void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_32</name>
+              <name>void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_52</name>
               <fileName>../gen/Hls_Layers_UpConv.tpp</fileName>
               <fileDirectory>../.</fileDirectory>
-              <lineNumber>220</lineNumber>
-              <contextFuncName>Compute_Pixel_Stats&amp;lt;32, 480, 30, 480&amp;gt;</contextFuncName>
-              <contextNormFuncName>Compute_Pixel_Stats_32_480_30_480_s</contextNormFuncName>
+              <lineNumber>234</lineNumber>
+              <contextFuncName>UpConv_Fused_Row&amp;lt;8, 16, 16, 960, 480&amp;gt;</contextFuncName>
+              <contextNormFuncName>UpConv_Fused_Row_8_16_16_960_480_s</contextNormFuncName>
               <inlineStackInfo>
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
                   <first>/home/hoinguyen/Documents/Vitis/UpConv_HLS/upconv_block0</first>
                   <second>
-                    <count>2</count>
+                    <count>1</count>
                     <item_version>0</item_version>
-                    <item>
-                      <first>
-                        <first>../gen/Hls_Layers_UpConv.tpp</first>
-                        <second>Compute_Pixel_Stats&amp;lt;32, 480, 30, 480&amp;gt;</second>
-                      </first>
-                      <second>220</second>
-                    </item>
                     <item>
                       <first>
                         <first>../gen/Hls_Layers_UpConv.tpp</first>
                         <second>UpConv_Fused_Row&amp;lt;8, 16, 16, 960, 480&amp;gt;</second>
                       </first>
-                      <second>363</second>
+                      <second>234</second>
                     </item>
                   </second>
                 </item>
@@ -5777,33 +5231,26 @@
             <Obj>
               <type>0</type>
               <id>124</id>
-              <name>void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_33</name>
+              <name>void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_53</name>
               <fileName>../gen/Hls_Layers_UpConv.tpp</fileName>
               <fileDirectory>../.</fileDirectory>
-              <lineNumber>220</lineNumber>
-              <contextFuncName>Compute_Pixel_Stats&amp;lt;32, 480, 30, 480&amp;gt;</contextFuncName>
-              <contextNormFuncName>Compute_Pixel_Stats_32_480_30_480_s</contextNormFuncName>
+              <lineNumber>234</lineNumber>
+              <contextFuncName>UpConv_Fused_Row&amp;lt;8, 16, 16, 960, 480&amp;gt;</contextFuncName>
+              <contextNormFuncName>UpConv_Fused_Row_8_16_16_960_480_s</contextNormFuncName>
               <inlineStackInfo>
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
                   <first>/home/hoinguyen/Documents/Vitis/UpConv_HLS/upconv_block0</first>
                   <second>
-                    <count>2</count>
+                    <count>1</count>
                     <item_version>0</item_version>
-                    <item>
-                      <first>
-                        <first>../gen/Hls_Layers_UpConv.tpp</first>
-                        <second>Compute_Pixel_Stats&amp;lt;32, 480, 30, 480&amp;gt;</second>
-                      </first>
-                      <second>220</second>
-                    </item>
                     <item>
                       <first>
                         <first>../gen/Hls_Layers_UpConv.tpp</first>
                         <second>UpConv_Fused_Row&amp;lt;8, 16, 16, 960, 480&amp;gt;</second>
                       </first>
-                      <second>363</second>
+                      <second>234</second>
                     </item>
                   </second>
                 </item>
@@ -5840,33 +5287,26 @@
             <Obj>
               <type>0</type>
               <id>125</id>
-              <name>void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_34</name>
+              <name>void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_54</name>
               <fileName>../gen/Hls_Layers_UpConv.tpp</fileName>
               <fileDirectory>../.</fileDirectory>
-              <lineNumber>220</lineNumber>
-              <contextFuncName>Compute_Pixel_Stats&amp;lt;32, 480, 30, 480&amp;gt;</contextFuncName>
-              <contextNormFuncName>Compute_Pixel_Stats_32_480_30_480_s</contextNormFuncName>
+              <lineNumber>234</lineNumber>
+              <contextFuncName>UpConv_Fused_Row&amp;lt;8, 16, 16, 960, 480&amp;gt;</contextFuncName>
+              <contextNormFuncName>UpConv_Fused_Row_8_16_16_960_480_s</contextNormFuncName>
               <inlineStackInfo>
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
                   <first>/home/hoinguyen/Documents/Vitis/UpConv_HLS/upconv_block0</first>
                   <second>
-                    <count>2</count>
+                    <count>1</count>
                     <item_version>0</item_version>
-                    <item>
-                      <first>
-                        <first>../gen/Hls_Layers_UpConv.tpp</first>
-                        <second>Compute_Pixel_Stats&amp;lt;32, 480, 30, 480&amp;gt;</second>
-                      </first>
-                      <second>220</second>
-                    </item>
                     <item>
                       <first>
                         <first>../gen/Hls_Layers_UpConv.tpp</first>
                         <second>UpConv_Fused_Row&amp;lt;8, 16, 16, 960, 480&amp;gt;</second>
                       </first>
-                      <second>363</second>
+                      <second>234</second>
                     </item>
                   </second>
                 </item>
@@ -5903,33 +5343,26 @@
             <Obj>
               <type>0</type>
               <id>126</id>
-              <name>void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_35</name>
+              <name>void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_55</name>
               <fileName>../gen/Hls_Layers_UpConv.tpp</fileName>
               <fileDirectory>../.</fileDirectory>
-              <lineNumber>220</lineNumber>
-              <contextFuncName>Compute_Pixel_Stats&amp;lt;32, 480, 30, 480&amp;gt;</contextFuncName>
-              <contextNormFuncName>Compute_Pixel_Stats_32_480_30_480_s</contextNormFuncName>
+              <lineNumber>234</lineNumber>
+              <contextFuncName>UpConv_Fused_Row&amp;lt;8, 16, 16, 960, 480&amp;gt;</contextFuncName>
+              <contextNormFuncName>UpConv_Fused_Row_8_16_16_960_480_s</contextNormFuncName>
               <inlineStackInfo>
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
                   <first>/home/hoinguyen/Documents/Vitis/UpConv_HLS/upconv_block0</first>
                   <second>
-                    <count>2</count>
+                    <count>1</count>
                     <item_version>0</item_version>
-                    <item>
-                      <first>
-                        <first>../gen/Hls_Layers_UpConv.tpp</first>
-                        <second>Compute_Pixel_Stats&amp;lt;32, 480, 30, 480&amp;gt;</second>
-                      </first>
-                      <second>220</second>
-                    </item>
                     <item>
                       <first>
                         <first>../gen/Hls_Layers_UpConv.tpp</first>
                         <second>UpConv_Fused_Row&amp;lt;8, 16, 16, 960, 480&amp;gt;</second>
                       </first>
-                      <second>363</second>
+                      <second>234</second>
                     </item>
                   </second>
                 </item>
@@ -5966,33 +5399,26 @@
             <Obj>
               <type>0</type>
               <id>127</id>
-              <name>void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_36</name>
+              <name>void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_56</name>
               <fileName>../gen/Hls_Layers_UpConv.tpp</fileName>
               <fileDirectory>../.</fileDirectory>
-              <lineNumber>220</lineNumber>
-              <contextFuncName>Compute_Pixel_Stats&amp;lt;32, 480, 30, 480&amp;gt;</contextFuncName>
-              <contextNormFuncName>Compute_Pixel_Stats_32_480_30_480_s</contextNormFuncName>
+              <lineNumber>234</lineNumber>
+              <contextFuncName>UpConv_Fused_Row&amp;lt;8, 16, 16, 960, 480&amp;gt;</contextFuncName>
+              <contextNormFuncName>UpConv_Fused_Row_8_16_16_960_480_s</contextNormFuncName>
               <inlineStackInfo>
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
                   <first>/home/hoinguyen/Documents/Vitis/UpConv_HLS/upconv_block0</first>
                   <second>
-                    <count>2</count>
+                    <count>1</count>
                     <item_version>0</item_version>
-                    <item>
-                      <first>
-                        <first>../gen/Hls_Layers_UpConv.tpp</first>
-                        <second>Compute_Pixel_Stats&amp;lt;32, 480, 30, 480&amp;gt;</second>
-                      </first>
-                      <second>220</second>
-                    </item>
                     <item>
                       <first>
                         <first>../gen/Hls_Layers_UpConv.tpp</first>
                         <second>UpConv_Fused_Row&amp;lt;8, 16, 16, 960, 480&amp;gt;</second>
                       </first>
-                      <second>363</second>
+                      <second>234</second>
                     </item>
                   </second>
                 </item>
@@ -6029,33 +5455,26 @@
             <Obj>
               <type>0</type>
               <id>128</id>
-              <name>void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_37</name>
+              <name>void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_57</name>
               <fileName>../gen/Hls_Layers_UpConv.tpp</fileName>
               <fileDirectory>../.</fileDirectory>
-              <lineNumber>220</lineNumber>
-              <contextFuncName>Compute_Pixel_Stats&amp;lt;32, 480, 30, 480&amp;gt;</contextFuncName>
-              <contextNormFuncName>Compute_Pixel_Stats_32_480_30_480_s</contextNormFuncName>
+              <lineNumber>234</lineNumber>
+              <contextFuncName>UpConv_Fused_Row&amp;lt;8, 16, 16, 960, 480&amp;gt;</contextFuncName>
+              <contextNormFuncName>UpConv_Fused_Row_8_16_16_960_480_s</contextNormFuncName>
               <inlineStackInfo>
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
                   <first>/home/hoinguyen/Documents/Vitis/UpConv_HLS/upconv_block0</first>
                   <second>
-                    <count>2</count>
+                    <count>1</count>
                     <item_version>0</item_version>
-                    <item>
-                      <first>
-                        <first>../gen/Hls_Layers_UpConv.tpp</first>
-                        <second>Compute_Pixel_Stats&amp;lt;32, 480, 30, 480&amp;gt;</second>
-                      </first>
-                      <second>220</second>
-                    </item>
                     <item>
                       <first>
                         <first>../gen/Hls_Layers_UpConv.tpp</first>
                         <second>UpConv_Fused_Row&amp;lt;8, 16, 16, 960, 480&amp;gt;</second>
                       </first>
-                      <second>363</second>
+                      <second>234</second>
                     </item>
                   </second>
                 </item>
@@ -6092,33 +5511,26 @@
             <Obj>
               <type>0</type>
               <id>129</id>
-              <name>void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_38</name>
+              <name>void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_58</name>
               <fileName>../gen/Hls_Layers_UpConv.tpp</fileName>
               <fileDirectory>../.</fileDirectory>
-              <lineNumber>220</lineNumber>
-              <contextFuncName>Compute_Pixel_Stats&amp;lt;32, 480, 30, 480&amp;gt;</contextFuncName>
-              <contextNormFuncName>Compute_Pixel_Stats_32_480_30_480_s</contextNormFuncName>
+              <lineNumber>234</lineNumber>
+              <contextFuncName>UpConv_Fused_Row&amp;lt;8, 16, 16, 960, 480&amp;gt;</contextFuncName>
+              <contextNormFuncName>UpConv_Fused_Row_8_16_16_960_480_s</contextNormFuncName>
               <inlineStackInfo>
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
                   <first>/home/hoinguyen/Documents/Vitis/UpConv_HLS/upconv_block0</first>
                   <second>
-                    <count>2</count>
+                    <count>1</count>
                     <item_version>0</item_version>
-                    <item>
-                      <first>
-                        <first>../gen/Hls_Layers_UpConv.tpp</first>
-                        <second>Compute_Pixel_Stats&amp;lt;32, 480, 30, 480&amp;gt;</second>
-                      </first>
-                      <second>220</second>
-                    </item>
                     <item>
                       <first>
                         <first>../gen/Hls_Layers_UpConv.tpp</first>
                         <second>UpConv_Fused_Row&amp;lt;8, 16, 16, 960, 480&amp;gt;</second>
                       </first>
-                      <second>363</second>
+                      <second>234</second>
                     </item>
                   </second>
                 </item>
@@ -6155,33 +5567,26 @@
             <Obj>
               <type>0</type>
               <id>130</id>
-              <name>void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_39</name>
+              <name>void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_59</name>
               <fileName>../gen/Hls_Layers_UpConv.tpp</fileName>
               <fileDirectory>../.</fileDirectory>
-              <lineNumber>220</lineNumber>
-              <contextFuncName>Compute_Pixel_Stats&amp;lt;32, 480, 30, 480&amp;gt;</contextFuncName>
-              <contextNormFuncName>Compute_Pixel_Stats_32_480_30_480_s</contextNormFuncName>
+              <lineNumber>234</lineNumber>
+              <contextFuncName>UpConv_Fused_Row&amp;lt;8, 16, 16, 960, 480&amp;gt;</contextFuncName>
+              <contextNormFuncName>UpConv_Fused_Row_8_16_16_960_480_s</contextNormFuncName>
               <inlineStackInfo>
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
                   <first>/home/hoinguyen/Documents/Vitis/UpConv_HLS/upconv_block0</first>
                   <second>
-                    <count>2</count>
+                    <count>1</count>
                     <item_version>0</item_version>
-                    <item>
-                      <first>
-                        <first>../gen/Hls_Layers_UpConv.tpp</first>
-                        <second>Compute_Pixel_Stats&amp;lt;32, 480, 30, 480&amp;gt;</second>
-                      </first>
-                      <second>220</second>
-                    </item>
                     <item>
                       <first>
                         <first>../gen/Hls_Layers_UpConv.tpp</first>
                         <second>UpConv_Fused_Row&amp;lt;8, 16, 16, 960, 480&amp;gt;</second>
                       </first>
-                      <second>363</second>
+                      <second>234</second>
                     </item>
                   </second>
                 </item>
@@ -6218,33 +5623,26 @@
             <Obj>
               <type>0</type>
               <id>131</id>
-              <name>p_ZZ16UpConv_Fused_RowILi8ELi16ELi16ELi960ELi480EEvP7ap_uintILi256EEPKS1_S4_S4_S4_18</name>
+              <name>p_ZZ16UpConv_Fused_RowILi8ELi16ELi16ELi960ELi480EEvP7ap_uintILi256EEPKS1_S4_S4_S4_30</name>
               <fileName>../gen/Hls_Layers_UpConv.tpp</fileName>
               <fileDirectory>../.</fileDirectory>
-              <lineNumber>220</lineNumber>
-              <contextFuncName>Compute_Pixel_Stats&amp;lt;32, 480, 30, 480&amp;gt;</contextFuncName>
-              <contextNormFuncName>Compute_Pixel_Stats_32_480_30_480_s</contextNormFuncName>
+              <lineNumber>234</lineNumber>
+              <contextFuncName>UpConv_Fused_Row&amp;lt;8, 16, 16, 960, 480&amp;gt;</contextFuncName>
+              <contextNormFuncName>UpConv_Fused_Row_8_16_16_960_480_s</contextNormFuncName>
               <inlineStackInfo>
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
                   <first>/home/hoinguyen/Documents/Vitis/UpConv_HLS/upconv_block0</first>
                   <second>
-                    <count>2</count>
+                    <count>1</count>
                     <item_version>0</item_version>
-                    <item>
-                      <first>
-                        <first>../gen/Hls_Layers_UpConv.tpp</first>
-                        <second>Compute_Pixel_Stats&amp;lt;32, 480, 30, 480&amp;gt;</second>
-                      </first>
-                      <second>220</second>
-                    </item>
                     <item>
                       <first>
                         <first>../gen/Hls_Layers_UpConv.tpp</first>
                         <second>UpConv_Fused_Row&amp;lt;8, 16, 16, 960, 480&amp;gt;</second>
                       </first>
-                      <second>363</second>
+                      <second>234</second>
                     </item>
                   </second>
                 </item>
@@ -6281,33 +5679,26 @@
             <Obj>
               <type>0</type>
               <id>132</id>
-              <name>p_ZZ16UpConv_Fused_RowILi8ELi16ELi16ELi960ELi480EEvP7ap_uintILi256EEPKS1_S4_S4_S4_19</name>
+              <name>p_ZZ16UpConv_Fused_RowILi8ELi16ELi16ELi960ELi480EEvP7ap_uintILi256EEPKS1_S4_S4_S4_31</name>
               <fileName>../gen/Hls_Layers_UpConv.tpp</fileName>
               <fileDirectory>../.</fileDirectory>
-              <lineNumber>220</lineNumber>
-              <contextFuncName>Compute_Pixel_Stats&amp;lt;32, 480, 30, 480&amp;gt;</contextFuncName>
-              <contextNormFuncName>Compute_Pixel_Stats_32_480_30_480_s</contextNormFuncName>
+              <lineNumber>234</lineNumber>
+              <contextFuncName>UpConv_Fused_Row&amp;lt;8, 16, 16, 960, 480&amp;gt;</contextFuncName>
+              <contextNormFuncName>UpConv_Fused_Row_8_16_16_960_480_s</contextNormFuncName>
               <inlineStackInfo>
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
                   <first>/home/hoinguyen/Documents/Vitis/UpConv_HLS/upconv_block0</first>
                   <second>
-                    <count>2</count>
+                    <count>1</count>
                     <item_version>0</item_version>
-                    <item>
-                      <first>
-                        <first>../gen/Hls_Layers_UpConv.tpp</first>
-                        <second>Compute_Pixel_Stats&amp;lt;32, 480, 30, 480&amp;gt;</second>
-                      </first>
-                      <second>220</second>
-                    </item>
                     <item>
                       <first>
                         <first>../gen/Hls_Layers_UpConv.tpp</first>
                         <second>UpConv_Fused_Row&amp;lt;8, 16, 16, 960, 480&amp;gt;</second>
                       </first>
-                      <second>363</second>
+                      <second>234</second>
                     </item>
                   </second>
                 </item>
@@ -6344,33 +5735,26 @@
             <Obj>
               <type>0</type>
               <id>133</id>
-              <name>p_ZZ16UpConv_Fused_RowILi8ELi16ELi16ELi960ELi480EEvP7ap_uintILi256EEPKS1_S4_S4_S4_20</name>
+              <name>p_ZZ16UpConv_Fused_RowILi8ELi16ELi16ELi960ELi480EEvP7ap_uintILi256EEPKS1_S4_S4_S4_32</name>
               <fileName>../gen/Hls_Layers_UpConv.tpp</fileName>
               <fileDirectory>../.</fileDirectory>
-              <lineNumber>220</lineNumber>
-              <contextFuncName>Compute_Pixel_Stats&amp;lt;32, 480, 30, 480&amp;gt;</contextFuncName>
-              <contextNormFuncName>Compute_Pixel_Stats_32_480_30_480_s</contextNormFuncName>
+              <lineNumber>234</lineNumber>
+              <contextFuncName>UpConv_Fused_Row&amp;lt;8, 16, 16, 960, 480&amp;gt;</contextFuncName>
+              <contextNormFuncName>UpConv_Fused_Row_8_16_16_960_480_s</contextNormFuncName>
               <inlineStackInfo>
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
                   <first>/home/hoinguyen/Documents/Vitis/UpConv_HLS/upconv_block0</first>
                   <second>
-                    <count>2</count>
+                    <count>1</count>
                     <item_version>0</item_version>
-                    <item>
-                      <first>
-                        <first>../gen/Hls_Layers_UpConv.tpp</first>
-                        <second>Compute_Pixel_Stats&amp;lt;32, 480, 30, 480&amp;gt;</second>
-                      </first>
-                      <second>220</second>
-                    </item>
                     <item>
                       <first>
                         <first>../gen/Hls_Layers_UpConv.tpp</first>
                         <second>UpConv_Fused_Row&amp;lt;8, 16, 16, 960, 480&amp;gt;</second>
                       </first>
-                      <second>363</second>
+                      <second>234</second>
                     </item>
                   </second>
                 </item>
@@ -6407,33 +5791,26 @@
             <Obj>
               <type>0</type>
               <id>134</id>
-              <name>p_ZZ16UpConv_Fused_RowILi8ELi16ELi16ELi960ELi480EEvP7ap_uintILi256EEPKS1_S4_S4_S4_21</name>
+              <name>p_ZZ16UpConv_Fused_RowILi8ELi16ELi16ELi960ELi480EEvP7ap_uintILi256EEPKS1_S4_S4_S4_33</name>
               <fileName>../gen/Hls_Layers_UpConv.tpp</fileName>
               <fileDirectory>../.</fileDirectory>
-              <lineNumber>220</lineNumber>
-              <contextFuncName>Compute_Pixel_Stats&amp;lt;32, 480, 30, 480&amp;gt;</contextFuncName>
-              <contextNormFuncName>Compute_Pixel_Stats_32_480_30_480_s</contextNormFuncName>
+              <lineNumber>234</lineNumber>
+              <contextFuncName>UpConv_Fused_Row&amp;lt;8, 16, 16, 960, 480&amp;gt;</contextFuncName>
+              <contextNormFuncName>UpConv_Fused_Row_8_16_16_960_480_s</contextNormFuncName>
               <inlineStackInfo>
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
                   <first>/home/hoinguyen/Documents/Vitis/UpConv_HLS/upconv_block0</first>
                   <second>
-                    <count>2</count>
+                    <count>1</count>
                     <item_version>0</item_version>
-                    <item>
-                      <first>
-                        <first>../gen/Hls_Layers_UpConv.tpp</first>
-                        <second>Compute_Pixel_Stats&amp;lt;32, 480, 30, 480&amp;gt;</second>
-                      </first>
-                      <second>220</second>
-                    </item>
                     <item>
                       <first>
                         <first>../gen/Hls_Layers_UpConv.tpp</first>
                         <second>UpConv_Fused_Row&amp;lt;8, 16, 16, 960, 480&amp;gt;</second>
                       </first>
-                      <second>363</second>
+                      <second>234</second>
                     </item>
                   </second>
                 </item>
@@ -6470,33 +5847,26 @@
             <Obj>
               <type>0</type>
               <id>135</id>
-              <name>p_ZZ16UpConv_Fused_RowILi8ELi16ELi16ELi960ELi480EEvP7ap_uintILi256EEPKS1_S4_S4_S4_22</name>
+              <name>p_ZZ16UpConv_Fused_RowILi8ELi16ELi16ELi960ELi480EEvP7ap_uintILi256EEPKS1_S4_S4_S4_34</name>
               <fileName>../gen/Hls_Layers_UpConv.tpp</fileName>
               <fileDirectory>../.</fileDirectory>
-              <lineNumber>220</lineNumber>
-              <contextFuncName>Compute_Pixel_Stats&amp;lt;32, 480, 30, 480&amp;gt;</contextFuncName>
-              <contextNormFuncName>Compute_Pixel_Stats_32_480_30_480_s</contextNormFuncName>
+              <lineNumber>234</lineNumber>
+              <contextFuncName>UpConv_Fused_Row&amp;lt;8, 16, 16, 960, 480&amp;gt;</contextFuncName>
+              <contextNormFuncName>UpConv_Fused_Row_8_16_16_960_480_s</contextNormFuncName>
               <inlineStackInfo>
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
                   <first>/home/hoinguyen/Documents/Vitis/UpConv_HLS/upconv_block0</first>
                   <second>
-                    <count>2</count>
+                    <count>1</count>
                     <item_version>0</item_version>
-                    <item>
-                      <first>
-                        <first>../gen/Hls_Layers_UpConv.tpp</first>
-                        <second>Compute_Pixel_Stats&amp;lt;32, 480, 30, 480&amp;gt;</second>
-                      </first>
-                      <second>220</second>
-                    </item>
                     <item>
                       <first>
                         <first>../gen/Hls_Layers_UpConv.tpp</first>
                         <second>UpConv_Fused_Row&amp;lt;8, 16, 16, 960, 480&amp;gt;</second>
                       </first>
-                      <second>363</second>
+                      <second>234</second>
                     </item>
                   </second>
                 </item>
@@ -6533,33 +5903,26 @@
             <Obj>
               <type>0</type>
               <id>136</id>
-              <name>p_ZZ16UpConv_Fused_RowILi8ELi16ELi16ELi960ELi480EEvP7ap_uintILi256EEPKS1_S4_S4_S4_23</name>
+              <name>p_ZZ16UpConv_Fused_RowILi8ELi16ELi16ELi960ELi480EEvP7ap_uintILi256EEPKS1_S4_S4_S4_35</name>
               <fileName>../gen/Hls_Layers_UpConv.tpp</fileName>
               <fileDirectory>../.</fileDirectory>
-              <lineNumber>220</lineNumber>
-              <contextFuncName>Compute_Pixel_Stats&amp;lt;32, 480, 30, 480&amp;gt;</contextFuncName>
-              <contextNormFuncName>Compute_Pixel_Stats_32_480_30_480_s</contextNormFuncName>
+              <lineNumber>234</lineNumber>
+              <contextFuncName>UpConv_Fused_Row&amp;lt;8, 16, 16, 960, 480&amp;gt;</contextFuncName>
+              <contextNormFuncName>UpConv_Fused_Row_8_16_16_960_480_s</contextNormFuncName>
               <inlineStackInfo>
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
                   <first>/home/hoinguyen/Documents/Vitis/UpConv_HLS/upconv_block0</first>
                   <second>
-                    <count>2</count>
+                    <count>1</count>
                     <item_version>0</item_version>
-                    <item>
-                      <first>
-                        <first>../gen/Hls_Layers_UpConv.tpp</first>
-                        <second>Compute_Pixel_Stats&amp;lt;32, 480, 30, 480&amp;gt;</second>
-                      </first>
-                      <second>220</second>
-                    </item>
                     <item>
                       <first>
                         <first>../gen/Hls_Layers_UpConv.tpp</first>
                         <second>UpConv_Fused_Row&amp;lt;8, 16, 16, 960, 480&amp;gt;</second>
                       </first>
-                      <second>363</second>
+                      <second>234</second>
                     </item>
                   </second>
                 </item>
@@ -6599,36 +5962,29 @@
               <name>tmp</name>
               <fileName>../gen/Hls_Layers_UpConv.tpp</fileName>
               <fileDirectory>../.</fileDirectory>
-              <lineNumber>220</lineNumber>
-              <contextFuncName>Compute_Pixel_Stats&amp;lt;32, 480, 30, 480&amp;gt;</contextFuncName>
-              <contextNormFuncName>Compute_Pixel_Stats_32_480_30_480_s</contextNormFuncName>
+              <lineNumber>234</lineNumber>
+              <contextFuncName>UpConv_Fused_Row&amp;lt;8, 16, 16, 960, 480&amp;gt;</contextFuncName>
+              <contextNormFuncName>UpConv_Fused_Row_8_16_16_960_480_s</contextNormFuncName>
               <inlineStackInfo>
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
                   <first>/home/hoinguyen/Documents/Vitis/UpConv_HLS/upconv_block0</first>
                   <second>
-                    <count>2</count>
+                    <count>1</count>
                     <item_version>0</item_version>
-                    <item>
-                      <first>
-                        <first>../gen/Hls_Layers_UpConv.tpp</first>
-                        <second>Compute_Pixel_Stats&amp;lt;32, 480, 30, 480&amp;gt;</second>
-                      </first>
-                      <second>220</second>
-                    </item>
                     <item>
                       <first>
                         <first>../gen/Hls_Layers_UpConv.tpp</first>
                         <second>UpConv_Fused_Row&amp;lt;8, 16, 16, 960, 480&amp;gt;</second>
                       </first>
-                      <second>363</second>
+                      <second>234</second>
                     </item>
                   </second>
                 </item>
               </inlineStackInfo>
               <originalName/>
-              <rtlName>sparsemux_33_4_16_1_1_U474</rtlName>
+              <rtlName>sparsemux_33_4_16_1_1_U479</rtlName>
               <control>auto</control>
               <opType>sparsemux</opType>
               <implIndex>compactencoding_dontcare</implIndex>
@@ -6696,30 +6052,23 @@
               <name>val</name>
               <fileName>../gen/Hls_Layers_UpConv.tpp</fileName>
               <fileDirectory>../.</fileDirectory>
-              <lineNumber>220</lineNumber>
-              <contextFuncName>Compute_Pixel_Stats&amp;lt;32, 480, 30, 480&amp;gt;</contextFuncName>
-              <contextNormFuncName>Compute_Pixel_Stats_32_480_30_480_s</contextNormFuncName>
+              <lineNumber>234</lineNumber>
+              <contextFuncName>UpConv_Fused_Row&amp;lt;8, 16, 16, 960, 480&amp;gt;</contextFuncName>
+              <contextNormFuncName>UpConv_Fused_Row_8_16_16_960_480_s</contextNormFuncName>
               <inlineStackInfo>
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
                   <first>/home/hoinguyen/Documents/Vitis/UpConv_HLS/upconv_block0</first>
                   <second>
-                    <count>2</count>
+                    <count>1</count>
                     <item_version>0</item_version>
-                    <item>
-                      <first>
-                        <first>../gen/Hls_Layers_UpConv.tpp</first>
-                        <second>Compute_Pixel_Stats&amp;lt;32, 480, 30, 480&amp;gt;</second>
-                      </first>
-                      <second>220</second>
-                    </item>
                     <item>
                       <first>
                         <first>../gen/Hls_Layers_UpConv.tpp</first>
                         <second>UpConv_Fused_Row&amp;lt;8, 16, 16, 960, 480&amp;gt;</second>
                       </first>
-                      <second>363</second>
+                      <second>234</second>
                     </item>
                   </second>
                 </item>
@@ -6757,33 +6106,26 @@
             <Obj>
               <type>0</type>
               <id>139</id>
-              <name>_ln221</name>
+              <name>_ln235</name>
               <fileName>../gen/Hls_Layers_UpConv.tpp</fileName>
               <fileDirectory>../.</fileDirectory>
-              <lineNumber>221</lineNumber>
-              <contextFuncName>Compute_Pixel_Stats&amp;lt;32, 480, 30, 480&amp;gt;</contextFuncName>
-              <contextNormFuncName>Compute_Pixel_Stats_32_480_30_480_s</contextNormFuncName>
+              <lineNumber>235</lineNumber>
+              <contextFuncName>UpConv_Fused_Row&amp;lt;8, 16, 16, 960, 480&amp;gt;</contextFuncName>
+              <contextNormFuncName>UpConv_Fused_Row_8_16_16_960_480_s</contextNormFuncName>
               <inlineStackInfo>
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
                   <first>/home/hoinguyen/Documents/Vitis/UpConv_HLS/upconv_block0</first>
                   <second>
-                    <count>2</count>
+                    <count>1</count>
                     <item_version>0</item_version>
-                    <item>
-                      <first>
-                        <first>../gen/Hls_Layers_UpConv.tpp</first>
-                        <second>Compute_Pixel_Stats&amp;lt;32, 480, 30, 480&amp;gt;</second>
-                      </first>
-                      <second>221</second>
-                    </item>
                     <item>
                       <first>
                         <first>../gen/Hls_Layers_UpConv.tpp</first>
                         <second>UpConv_Fused_Row&amp;lt;8, 16, 16, 960, 480&amp;gt;</second>
                       </first>
-                      <second>363</second>
+                      <second>235</second>
                     </item>
                   </second>
                 </item>
@@ -6851,33 +6193,26 @@
             <Obj>
               <type>0</type>
               <id>141</id>
-              <name>p_ZZ16UpConv_Fused_RowILi8ELi16ELi16ELi960ELi480EEvP7ap_uintILi256EEPKS1_S4_S4_S4_16_write_ln221</name>
+              <name>p_ZZ16UpConv_Fused_RowILi8ELi16ELi16ELi960ELi480EEvP7ap_uintILi256EEPKS1_S4_S4_S4_28_write_ln235</name>
               <fileName>../gen/Hls_Layers_UpConv.tpp</fileName>
               <fileDirectory>../.</fileDirectory>
-              <lineNumber>221</lineNumber>
-              <contextFuncName>Compute_Pixel_Stats&amp;lt;32, 480, 30, 480&amp;gt;</contextFuncName>
-              <contextNormFuncName>Compute_Pixel_Stats_32_480_30_480_s</contextNormFuncName>
+              <lineNumber>235</lineNumber>
+              <contextFuncName>UpConv_Fused_Row&amp;lt;8, 16, 16, 960, 480&amp;gt;</contextFuncName>
+              <contextNormFuncName>UpConv_Fused_Row_8_16_16_960_480_s</contextNormFuncName>
               <inlineStackInfo>
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
                   <first>/home/hoinguyen/Documents/Vitis/UpConv_HLS/upconv_block0</first>
                   <second>
-                    <count>2</count>
+                    <count>1</count>
                     <item_version>0</item_version>
-                    <item>
-                      <first>
-                        <first>../gen/Hls_Layers_UpConv.tpp</first>
-                        <second>Compute_Pixel_Stats&amp;lt;32, 480, 30, 480&amp;gt;</second>
-                      </first>
-                      <second>221</second>
-                    </item>
                     <item>
                       <first>
                         <first>../gen/Hls_Layers_UpConv.tpp</first>
                         <second>UpConv_Fused_Row&amp;lt;8, 16, 16, 960, 480&amp;gt;</second>
                       </first>
-                      <second>363</second>
+                      <second>235</second>
                     </item>
                   </second>
                 </item>
@@ -6916,33 +6251,26 @@
             <Obj>
               <type>0</type>
               <id>142</id>
-              <name>br_ln221</name>
+              <name>br_ln235</name>
               <fileName>../gen/Hls_Layers_UpConv.tpp</fileName>
               <fileDirectory>../.</fileDirectory>
-              <lineNumber>221</lineNumber>
-              <contextFuncName>Compute_Pixel_Stats&amp;lt;32, 480, 30, 480&amp;gt;</contextFuncName>
-              <contextNormFuncName>Compute_Pixel_Stats_32_480_30_480_s</contextNormFuncName>
+              <lineNumber>235</lineNumber>
+              <contextFuncName>UpConv_Fused_Row&amp;lt;8, 16, 16, 960, 480&amp;gt;</contextFuncName>
+              <contextNormFuncName>UpConv_Fused_Row_8_16_16_960_480_s</contextNormFuncName>
               <inlineStackInfo>
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
                   <first>/home/hoinguyen/Documents/Vitis/UpConv_HLS/upconv_block0</first>
                   <second>
-                    <count>2</count>
+                    <count>1</count>
                     <item_version>0</item_version>
-                    <item>
-                      <first>
-                        <first>../gen/Hls_Layers_UpConv.tpp</first>
-                        <second>Compute_Pixel_Stats&amp;lt;32, 480, 30, 480&amp;gt;</second>
-                      </first>
-                      <second>221</second>
-                    </item>
                     <item>
                       <first>
                         <first>../gen/Hls_Layers_UpConv.tpp</first>
                         <second>UpConv_Fused_Row&amp;lt;8, 16, 16, 960, 480&amp;gt;</second>
                       </first>
-                      <second>363</second>
+                      <second>235</second>
                     </item>
                   </second>
                 </item>
@@ -6979,33 +6307,26 @@
             <Obj>
               <type>0</type>
               <id>144</id>
-              <name>p_ZZ16UpConv_Fused_RowILi8ELi16ELi16ELi960ELi480EEvP7ap_uintILi256EEPKS1_S4_S4_S4_15_write_ln221</name>
+              <name>p_ZZ16UpConv_Fused_RowILi8ELi16ELi16ELi960ELi480EEvP7ap_uintILi256EEPKS1_S4_S4_S4_27_write_ln235</name>
               <fileName>../gen/Hls_Layers_UpConv.tpp</fileName>
               <fileDirectory>../.</fileDirectory>
-              <lineNumber>221</lineNumber>
-              <contextFuncName>Compute_Pixel_Stats&amp;lt;32, 480, 30, 480&amp;gt;</contextFuncName>
-              <contextNormFuncName>Compute_Pixel_Stats_32_480_30_480_s</contextNormFuncName>
+              <lineNumber>235</lineNumber>
+              <contextFuncName>UpConv_Fused_Row&amp;lt;8, 16, 16, 960, 480&amp;gt;</contextFuncName>
+              <contextNormFuncName>UpConv_Fused_Row_8_16_16_960_480_s</contextNormFuncName>
               <inlineStackInfo>
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
                   <first>/home/hoinguyen/Documents/Vitis/UpConv_HLS/upconv_block0</first>
                   <second>
-                    <count>2</count>
+                    <count>1</count>
                     <item_version>0</item_version>
-                    <item>
-                      <first>
-                        <first>../gen/Hls_Layers_UpConv.tpp</first>
-                        <second>Compute_Pixel_Stats&amp;lt;32, 480, 30, 480&amp;gt;</second>
-                      </first>
-                      <second>221</second>
-                    </item>
                     <item>
                       <first>
                         <first>../gen/Hls_Layers_UpConv.tpp</first>
                         <second>UpConv_Fused_Row&amp;lt;8, 16, 16, 960, 480&amp;gt;</second>
                       </first>
-                      <second>363</second>
+                      <second>235</second>
                     </item>
                   </second>
                 </item>
@@ -7044,33 +6365,26 @@
             <Obj>
               <type>0</type>
               <id>145</id>
-              <name>br_ln221</name>
+              <name>br_ln235</name>
               <fileName>../gen/Hls_Layers_UpConv.tpp</fileName>
               <fileDirectory>../.</fileDirectory>
-              <lineNumber>221</lineNumber>
-              <contextFuncName>Compute_Pixel_Stats&amp;lt;32, 480, 30, 480&amp;gt;</contextFuncName>
-              <contextNormFuncName>Compute_Pixel_Stats_32_480_30_480_s</contextNormFuncName>
+              <lineNumber>235</lineNumber>
+              <contextFuncName>UpConv_Fused_Row&amp;lt;8, 16, 16, 960, 480&amp;gt;</contextFuncName>
+              <contextNormFuncName>UpConv_Fused_Row_8_16_16_960_480_s</contextNormFuncName>
               <inlineStackInfo>
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
                   <first>/home/hoinguyen/Documents/Vitis/UpConv_HLS/upconv_block0</first>
                   <second>
-                    <count>2</count>
+                    <count>1</count>
                     <item_version>0</item_version>
-                    <item>
-                      <first>
-                        <first>../gen/Hls_Layers_UpConv.tpp</first>
-                        <second>Compute_Pixel_Stats&amp;lt;32, 480, 30, 480&amp;gt;</second>
-                      </first>
-                      <second>221</second>
-                    </item>
                     <item>
                       <first>
                         <first>../gen/Hls_Layers_UpConv.tpp</first>
                         <second>UpConv_Fused_Row&amp;lt;8, 16, 16, 960, 480&amp;gt;</second>
                       </first>
-                      <second>363</second>
+                      <second>235</second>
                     </item>
                   </second>
                 </item>
@@ -7107,33 +6421,26 @@
             <Obj>
               <type>0</type>
               <id>147</id>
-              <name>p_ZZ16UpConv_Fused_RowILi8ELi16ELi16ELi960ELi480EEvP7ap_uintILi256EEPKS1_S4_S4_S4_14_write_ln221</name>
+              <name>p_ZZ16UpConv_Fused_RowILi8ELi16ELi16ELi960ELi480EEvP7ap_uintILi256EEPKS1_S4_S4_S4_26_write_ln235</name>
               <fileName>../gen/Hls_Layers_UpConv.tpp</fileName>
               <fileDirectory>../.</fileDirectory>
-              <lineNumber>221</lineNumber>
-              <contextFuncName>Compute_Pixel_Stats&amp;lt;32, 480, 30, 480&amp;gt;</contextFuncName>
-              <contextNormFuncName>Compute_Pixel_Stats_32_480_30_480_s</contextNormFuncName>
+              <lineNumber>235</lineNumber>
+              <contextFuncName>UpConv_Fused_Row&amp;lt;8, 16, 16, 960, 480&amp;gt;</contextFuncName>
+              <contextNormFuncName>UpConv_Fused_Row_8_16_16_960_480_s</contextNormFuncName>
               <inlineStackInfo>
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
                   <first>/home/hoinguyen/Documents/Vitis/UpConv_HLS/upconv_block0</first>
                   <second>
-                    <count>2</count>
+                    <count>1</count>
                     <item_version>0</item_version>
-                    <item>
-                      <first>
-                        <first>../gen/Hls_Layers_UpConv.tpp</first>
-                        <second>Compute_Pixel_Stats&amp;lt;32, 480, 30, 480&amp;gt;</second>
-                      </first>
-                      <second>221</second>
-                    </item>
                     <item>
                       <first>
                         <first>../gen/Hls_Layers_UpConv.tpp</first>
                         <second>UpConv_Fused_Row&amp;lt;8, 16, 16, 960, 480&amp;gt;</second>
                       </first>
-                      <second>363</second>
+                      <second>235</second>
                     </item>
                   </second>
                 </item>
@@ -7172,33 +6479,26 @@
             <Obj>
               <type>0</type>
               <id>148</id>
-              <name>br_ln221</name>
+              <name>br_ln235</name>
               <fileName>../gen/Hls_Layers_UpConv.tpp</fileName>
               <fileDirectory>../.</fileDirectory>
-              <lineNumber>221</lineNumber>
-              <contextFuncName>Compute_Pixel_Stats&amp;lt;32, 480, 30, 480&amp;gt;</contextFuncName>
-              <contextNormFuncName>Compute_Pixel_Stats_32_480_30_480_s</contextNormFuncName>
+              <lineNumber>235</lineNumber>
+              <contextFuncName>UpConv_Fused_Row&amp;lt;8, 16, 16, 960, 480&amp;gt;</contextFuncName>
+              <contextNormFuncName>UpConv_Fused_Row_8_16_16_960_480_s</contextNormFuncName>
               <inlineStackInfo>
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
                   <first>/home/hoinguyen/Documents/Vitis/UpConv_HLS/upconv_block0</first>
                   <second>
-                    <count>2</count>
+                    <count>1</count>
                     <item_version>0</item_version>
-                    <item>
-                      <first>
-                        <first>../gen/Hls_Layers_UpConv.tpp</first>
-                        <second>Compute_Pixel_Stats&amp;lt;32, 480, 30, 480&amp;gt;</second>
-                      </first>
-                      <second>221</second>
-                    </item>
                     <item>
                       <first>
                         <first>../gen/Hls_Layers_UpConv.tpp</first>
                         <second>UpConv_Fused_Row&amp;lt;8, 16, 16, 960, 480&amp;gt;</second>
                       </first>
-                      <second>363</second>
+                      <second>235</second>
                     </item>
                   </second>
                 </item>
@@ -7235,33 +6535,26 @@
             <Obj>
               <type>0</type>
               <id>150</id>
-              <name>p_ZZ16UpConv_Fused_RowILi8ELi16ELi16ELi960ELi480EEvP7ap_uintILi256EEPKS1_S4_S4_S4_13_write_ln221</name>
+              <name>p_ZZ16UpConv_Fused_RowILi8ELi16ELi16ELi960ELi480EEvP7ap_uintILi256EEPKS1_S4_S4_S4_25_write_ln235</name>
               <fileName>../gen/Hls_Layers_UpConv.tpp</fileName>
               <fileDirectory>../.</fileDirectory>
-              <lineNumber>221</lineNumber>
-              <contextFuncName>Compute_Pixel_Stats&amp;lt;32, 480, 30, 480&amp;gt;</contextFuncName>
-              <contextNormFuncName>Compute_Pixel_Stats_32_480_30_480_s</contextNormFuncName>
+              <lineNumber>235</lineNumber>
+              <contextFuncName>UpConv_Fused_Row&amp;lt;8, 16, 16, 960, 480&amp;gt;</contextFuncName>
+              <contextNormFuncName>UpConv_Fused_Row_8_16_16_960_480_s</contextNormFuncName>
               <inlineStackInfo>
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
                   <first>/home/hoinguyen/Documents/Vitis/UpConv_HLS/upconv_block0</first>
                   <second>
-                    <count>2</count>
+                    <count>1</count>
                     <item_version>0</item_version>
-                    <item>
-                      <first>
-                        <first>../gen/Hls_Layers_UpConv.tpp</first>
-                        <second>Compute_Pixel_Stats&amp;lt;32, 480, 30, 480&amp;gt;</second>
-                      </first>
-                      <second>221</second>
-                    </item>
                     <item>
                       <first>
                         <first>../gen/Hls_Layers_UpConv.tpp</first>
                         <second>UpConv_Fused_Row&amp;lt;8, 16, 16, 960, 480&amp;gt;</second>
                       </first>
-                      <second>363</second>
+                      <second>235</second>
                     </item>
                   </second>
                 </item>
@@ -7300,33 +6593,26 @@
             <Obj>
               <type>0</type>
               <id>151</id>
-              <name>br_ln221</name>
+              <name>br_ln235</name>
               <fileName>../gen/Hls_Layers_UpConv.tpp</fileName>
               <fileDirectory>../.</fileDirectory>
-              <lineNumber>221</lineNumber>
-              <contextFuncName>Compute_Pixel_Stats&amp;lt;32, 480, 30, 480&amp;gt;</contextFuncName>
-              <contextNormFuncName>Compute_Pixel_Stats_32_480_30_480_s</contextNormFuncName>
+              <lineNumber>235</lineNumber>
+              <contextFuncName>UpConv_Fused_Row&amp;lt;8, 16, 16, 960, 480&amp;gt;</contextFuncName>
+              <contextNormFuncName>UpConv_Fused_Row_8_16_16_960_480_s</contextNormFuncName>
               <inlineStackInfo>
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
                   <first>/home/hoinguyen/Documents/Vitis/UpConv_HLS/upconv_block0</first>
                   <second>
-                    <count>2</count>
+                    <count>1</count>
                     <item_version>0</item_version>
-                    <item>
-                      <first>
-                        <first>../gen/Hls_Layers_UpConv.tpp</first>
-                        <second>Compute_Pixel_Stats&amp;lt;32, 480, 30, 480&amp;gt;</second>
-                      </first>
-                      <second>221</second>
-                    </item>
                     <item>
                       <first>
                         <first>../gen/Hls_Layers_UpConv.tpp</first>
                         <second>UpConv_Fused_Row&amp;lt;8, 16, 16, 960, 480&amp;gt;</second>
                       </first>
-                      <second>363</second>
+                      <second>235</second>
                     </item>
                   </second>
                 </item>
@@ -7363,33 +6649,26 @@
             <Obj>
               <type>0</type>
               <id>153</id>
-              <name>p_ZZ16UpConv_Fused_RowILi8ELi16ELi16ELi960ELi480EEvP7ap_uintILi256EEPKS1_S4_S4_S4_12_write_ln221</name>
+              <name>p_ZZ16UpConv_Fused_RowILi8ELi16ELi16ELi960ELi480EEvP7ap_uintILi256EEPKS1_S4_S4_S4_24_write_ln235</name>
               <fileName>../gen/Hls_Layers_UpConv.tpp</fileName>
               <fileDirectory>../.</fileDirectory>
-              <lineNumber>221</lineNumber>
-              <contextFuncName>Compute_Pixel_Stats&amp;lt;32, 480, 30, 480&amp;gt;</contextFuncName>
-              <contextNormFuncName>Compute_Pixel_Stats_32_480_30_480_s</contextNormFuncName>
+              <lineNumber>235</lineNumber>
+              <contextFuncName>UpConv_Fused_Row&amp;lt;8, 16, 16, 960, 480&amp;gt;</contextFuncName>
+              <contextNormFuncName>UpConv_Fused_Row_8_16_16_960_480_s</contextNormFuncName>
               <inlineStackInfo>
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
                   <first>/home/hoinguyen/Documents/Vitis/UpConv_HLS/upconv_block0</first>
                   <second>
-                    <count>2</count>
+                    <count>1</count>
                     <item_version>0</item_version>
-                    <item>
-                      <first>
-                        <first>../gen/Hls_Layers_UpConv.tpp</first>
-                        <second>Compute_Pixel_Stats&amp;lt;32, 480, 30, 480&amp;gt;</second>
-                      </first>
-                      <second>221</second>
-                    </item>
                     <item>
                       <first>
                         <first>../gen/Hls_Layers_UpConv.tpp</first>
                         <second>UpConv_Fused_Row&amp;lt;8, 16, 16, 960, 480&amp;gt;</second>
                       </first>
-                      <second>363</second>
+                      <second>235</second>
                     </item>
                   </second>
                 </item>
@@ -7428,33 +6707,26 @@
             <Obj>
               <type>0</type>
               <id>154</id>
-              <name>br_ln221</name>
+              <name>br_ln235</name>
               <fileName>../gen/Hls_Layers_UpConv.tpp</fileName>
               <fileDirectory>../.</fileDirectory>
-              <lineNumber>221</lineNumber>
-              <contextFuncName>Compute_Pixel_Stats&amp;lt;32, 480, 30, 480&amp;gt;</contextFuncName>
-              <contextNormFuncName>Compute_Pixel_Stats_32_480_30_480_s</contextNormFuncName>
+              <lineNumber>235</lineNumber>
+              <contextFuncName>UpConv_Fused_Row&amp;lt;8, 16, 16, 960, 480&amp;gt;</contextFuncName>
+              <contextNormFuncName>UpConv_Fused_Row_8_16_16_960_480_s</contextNormFuncName>
               <inlineStackInfo>
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
                   <first>/home/hoinguyen/Documents/Vitis/UpConv_HLS/upconv_block0</first>
                   <second>
-                    <count>2</count>
+                    <count>1</count>
                     <item_version>0</item_version>
-                    <item>
-                      <first>
-                        <first>../gen/Hls_Layers_UpConv.tpp</first>
-                        <second>Compute_Pixel_Stats&amp;lt;32, 480, 30, 480&amp;gt;</second>
-                      </first>
-                      <second>221</second>
-                    </item>
                     <item>
                       <first>
                         <first>../gen/Hls_Layers_UpConv.tpp</first>
                         <second>UpConv_Fused_Row&amp;lt;8, 16, 16, 960, 480&amp;gt;</second>
                       </first>
-                      <second>363</second>
+                      <second>235</second>
                     </item>
                   </second>
                 </item>
@@ -7491,33 +6763,26 @@
             <Obj>
               <type>0</type>
               <id>156</id>
-              <name>void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_29_write_ln221</name>
+              <name>void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_49_write_ln235</name>
               <fileName>../gen/Hls_Layers_UpConv.tpp</fileName>
               <fileDirectory>../.</fileDirectory>
-              <lineNumber>221</lineNumber>
-              <contextFuncName>Compute_Pixel_Stats&amp;lt;32, 480, 30, 480&amp;gt;</contextFuncName>
-              <contextNormFuncName>Compute_Pixel_Stats_32_480_30_480_s</contextNormFuncName>
+              <lineNumber>235</lineNumber>
+              <contextFuncName>UpConv_Fused_Row&amp;lt;8, 16, 16, 960, 480&amp;gt;</contextFuncName>
+              <contextNormFuncName>UpConv_Fused_Row_8_16_16_960_480_s</contextNormFuncName>
               <inlineStackInfo>
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
                   <first>/home/hoinguyen/Documents/Vitis/UpConv_HLS/upconv_block0</first>
                   <second>
-                    <count>2</count>
+                    <count>1</count>
                     <item_version>0</item_version>
-                    <item>
-                      <first>
-                        <first>../gen/Hls_Layers_UpConv.tpp</first>
-                        <second>Compute_Pixel_Stats&amp;lt;32, 480, 30, 480&amp;gt;</second>
-                      </first>
-                      <second>221</second>
-                    </item>
                     <item>
                       <first>
                         <first>../gen/Hls_Layers_UpConv.tpp</first>
                         <second>UpConv_Fused_Row&amp;lt;8, 16, 16, 960, 480&amp;gt;</second>
                       </first>
-                      <second>363</second>
+                      <second>235</second>
                     </item>
                   </second>
                 </item>
@@ -7556,33 +6821,26 @@
             <Obj>
               <type>0</type>
               <id>157</id>
-              <name>br_ln221</name>
+              <name>br_ln235</name>
               <fileName>../gen/Hls_Layers_UpConv.tpp</fileName>
               <fileDirectory>../.</fileDirectory>
-              <lineNumber>221</lineNumber>
-              <contextFuncName>Compute_Pixel_Stats&amp;lt;32, 480, 30, 480&amp;gt;</contextFuncName>
-              <contextNormFuncName>Compute_Pixel_Stats_32_480_30_480_s</contextNormFuncName>
+              <lineNumber>235</lineNumber>
+              <contextFuncName>UpConv_Fused_Row&amp;lt;8, 16, 16, 960, 480&amp;gt;</contextFuncName>
+              <contextNormFuncName>UpConv_Fused_Row_8_16_16_960_480_s</contextNormFuncName>
               <inlineStackInfo>
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
                   <first>/home/hoinguyen/Documents/Vitis/UpConv_HLS/upconv_block0</first>
                   <second>
-                    <count>2</count>
+                    <count>1</count>
                     <item_version>0</item_version>
-                    <item>
-                      <first>
-                        <first>../gen/Hls_Layers_UpConv.tpp</first>
-                        <second>Compute_Pixel_Stats&amp;lt;32, 480, 30, 480&amp;gt;</second>
-                      </first>
-                      <second>221</second>
-                    </item>
                     <item>
                       <first>
                         <first>../gen/Hls_Layers_UpConv.tpp</first>
                         <second>UpConv_Fused_Row&amp;lt;8, 16, 16, 960, 480&amp;gt;</second>
                       </first>
-                      <second>363</second>
+                      <second>235</second>
                     </item>
                   </second>
                 </item>
@@ -7619,33 +6877,26 @@
             <Obj>
               <type>0</type>
               <id>159</id>
-              <name>void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_28_write_ln221</name>
+              <name>void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_48_write_ln235</name>
               <fileName>../gen/Hls_Layers_UpConv.tpp</fileName>
               <fileDirectory>../.</fileDirectory>
-              <lineNumber>221</lineNumber>
-              <contextFuncName>Compute_Pixel_Stats&amp;lt;32, 480, 30, 480&amp;gt;</contextFuncName>
-              <contextNormFuncName>Compute_Pixel_Stats_32_480_30_480_s</contextNormFuncName>
+              <lineNumber>235</lineNumber>
+              <contextFuncName>UpConv_Fused_Row&amp;lt;8, 16, 16, 960, 480&amp;gt;</contextFuncName>
+              <contextNormFuncName>UpConv_Fused_Row_8_16_16_960_480_s</contextNormFuncName>
               <inlineStackInfo>
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
                   <first>/home/hoinguyen/Documents/Vitis/UpConv_HLS/upconv_block0</first>
                   <second>
-                    <count>2</count>
+                    <count>1</count>
                     <item_version>0</item_version>
-                    <item>
-                      <first>
-                        <first>../gen/Hls_Layers_UpConv.tpp</first>
-                        <second>Compute_Pixel_Stats&amp;lt;32, 480, 30, 480&amp;gt;</second>
-                      </first>
-                      <second>221</second>
-                    </item>
                     <item>
                       <first>
                         <first>../gen/Hls_Layers_UpConv.tpp</first>
                         <second>UpConv_Fused_Row&amp;lt;8, 16, 16, 960, 480&amp;gt;</second>
                       </first>
-                      <second>363</second>
+                      <second>235</second>
                     </item>
                   </second>
                 </item>
@@ -7684,33 +6935,26 @@
             <Obj>
               <type>0</type>
               <id>160</id>
-              <name>br_ln221</name>
+              <name>br_ln235</name>
               <fileName>../gen/Hls_Layers_UpConv.tpp</fileName>
               <fileDirectory>../.</fileDirectory>
-              <lineNumber>221</lineNumber>
-              <contextFuncName>Compute_Pixel_Stats&amp;lt;32, 480, 30, 480&amp;gt;</contextFuncName>
-              <contextNormFuncName>Compute_Pixel_Stats_32_480_30_480_s</contextNormFuncName>
+              <lineNumber>235</lineNumber>
+              <contextFuncName>UpConv_Fused_Row&amp;lt;8, 16, 16, 960, 480&amp;gt;</contextFuncName>
+              <contextNormFuncName>UpConv_Fused_Row_8_16_16_960_480_s</contextNormFuncName>
               <inlineStackInfo>
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
                   <first>/home/hoinguyen/Documents/Vitis/UpConv_HLS/upconv_block0</first>
                   <second>
-                    <count>2</count>
+                    <count>1</count>
                     <item_version>0</item_version>
-                    <item>
-                      <first>
-                        <first>../gen/Hls_Layers_UpConv.tpp</first>
-                        <second>Compute_Pixel_Stats&amp;lt;32, 480, 30, 480&amp;gt;</second>
-                      </first>
-                      <second>221</second>
-                    </item>
                     <item>
                       <first>
                         <first>../gen/Hls_Layers_UpConv.tpp</first>
                         <second>UpConv_Fused_Row&amp;lt;8, 16, 16, 960, 480&amp;gt;</second>
                       </first>
-                      <second>363</second>
+                      <second>235</second>
                     </item>
                   </second>
                 </item>
@@ -7747,33 +6991,26 @@
             <Obj>
               <type>0</type>
               <id>162</id>
-              <name>void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_27_write_ln221</name>
+              <name>void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_47_write_ln235</name>
               <fileName>../gen/Hls_Layers_UpConv.tpp</fileName>
               <fileDirectory>../.</fileDirectory>
-              <lineNumber>221</lineNumber>
-              <contextFuncName>Compute_Pixel_Stats&amp;lt;32, 480, 30, 480&amp;gt;</contextFuncName>
-              <contextNormFuncName>Compute_Pixel_Stats_32_480_30_480_s</contextNormFuncName>
+              <lineNumber>235</lineNumber>
+              <contextFuncName>UpConv_Fused_Row&amp;lt;8, 16, 16, 960, 480&amp;gt;</contextFuncName>
+              <contextNormFuncName>UpConv_Fused_Row_8_16_16_960_480_s</contextNormFuncName>
               <inlineStackInfo>
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
                   <first>/home/hoinguyen/Documents/Vitis/UpConv_HLS/upconv_block0</first>
                   <second>
-                    <count>2</count>
+                    <count>1</count>
                     <item_version>0</item_version>
-                    <item>
-                      <first>
-                        <first>../gen/Hls_Layers_UpConv.tpp</first>
-                        <second>Compute_Pixel_Stats&amp;lt;32, 480, 30, 480&amp;gt;</second>
-                      </first>
-                      <second>221</second>
-                    </item>
                     <item>
                       <first>
                         <first>../gen/Hls_Layers_UpConv.tpp</first>
                         <second>UpConv_Fused_Row&amp;lt;8, 16, 16, 960, 480&amp;gt;</second>
                       </first>
-                      <second>363</second>
+                      <second>235</second>
                     </item>
                   </second>
                 </item>
@@ -7812,33 +7049,26 @@
             <Obj>
               <type>0</type>
               <id>163</id>
-              <name>br_ln221</name>
+              <name>br_ln235</name>
               <fileName>../gen/Hls_Layers_UpConv.tpp</fileName>
               <fileDirectory>../.</fileDirectory>
-              <lineNumber>221</lineNumber>
-              <contextFuncName>Compute_Pixel_Stats&amp;lt;32, 480, 30, 480&amp;gt;</contextFuncName>
-              <contextNormFuncName>Compute_Pixel_Stats_32_480_30_480_s</contextNormFuncName>
+              <lineNumber>235</lineNumber>
+              <contextFuncName>UpConv_Fused_Row&amp;lt;8, 16, 16, 960, 480&amp;gt;</contextFuncName>
+              <contextNormFuncName>UpConv_Fused_Row_8_16_16_960_480_s</contextNormFuncName>
               <inlineStackInfo>
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
                   <first>/home/hoinguyen/Documents/Vitis/UpConv_HLS/upconv_block0</first>
                   <second>
-                    <count>2</count>
+                    <count>1</count>
                     <item_version>0</item_version>
-                    <item>
-                      <first>
-                        <first>../gen/Hls_Layers_UpConv.tpp</first>
-                        <second>Compute_Pixel_Stats&amp;lt;32, 480, 30, 480&amp;gt;</second>
-                      </first>
-                      <second>221</second>
-                    </item>
                     <item>
                       <first>
                         <first>../gen/Hls_Layers_UpConv.tpp</first>
                         <second>UpConv_Fused_Row&amp;lt;8, 16, 16, 960, 480&amp;gt;</second>
                       </first>
-                      <second>363</second>
+                      <second>235</second>
                     </item>
                   </second>
                 </item>
@@ -7875,33 +7105,26 @@
             <Obj>
               <type>0</type>
               <id>165</id>
-              <name>void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_26_write_ln221</name>
+              <name>void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_46_write_ln235</name>
               <fileName>../gen/Hls_Layers_UpConv.tpp</fileName>
               <fileDirectory>../.</fileDirectory>
-              <lineNumber>221</lineNumber>
-              <contextFuncName>Compute_Pixel_Stats&amp;lt;32, 480, 30, 480&amp;gt;</contextFuncName>
-              <contextNormFuncName>Compute_Pixel_Stats_32_480_30_480_s</contextNormFuncName>
+              <lineNumber>235</lineNumber>
+              <contextFuncName>UpConv_Fused_Row&amp;lt;8, 16, 16, 960, 480&amp;gt;</contextFuncName>
+              <contextNormFuncName>UpConv_Fused_Row_8_16_16_960_480_s</contextNormFuncName>
               <inlineStackInfo>
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
                   <first>/home/hoinguyen/Documents/Vitis/UpConv_HLS/upconv_block0</first>
                   <second>
-                    <count>2</count>
+                    <count>1</count>
                     <item_version>0</item_version>
-                    <item>
-                      <first>
-                        <first>../gen/Hls_Layers_UpConv.tpp</first>
-                        <second>Compute_Pixel_Stats&amp;lt;32, 480, 30, 480&amp;gt;</second>
-                      </first>
-                      <second>221</second>
-                    </item>
                     <item>
                       <first>
                         <first>../gen/Hls_Layers_UpConv.tpp</first>
                         <second>UpConv_Fused_Row&amp;lt;8, 16, 16, 960, 480&amp;gt;</second>
                       </first>
-                      <second>363</second>
+                      <second>235</second>
                     </item>
                   </second>
                 </item>
@@ -7940,33 +7163,26 @@
             <Obj>
               <type>0</type>
               <id>166</id>
-              <name>br_ln221</name>
+              <name>br_ln235</name>
               <fileName>../gen/Hls_Layers_UpConv.tpp</fileName>
               <fileDirectory>../.</fileDirectory>
-              <lineNumber>221</lineNumber>
-              <contextFuncName>Compute_Pixel_Stats&amp;lt;32, 480, 30, 480&amp;gt;</contextFuncName>
-              <contextNormFuncName>Compute_Pixel_Stats_32_480_30_480_s</contextNormFuncName>
+              <lineNumber>235</lineNumber>
+              <contextFuncName>UpConv_Fused_Row&amp;lt;8, 16, 16, 960, 480&amp;gt;</contextFuncName>
+              <contextNormFuncName>UpConv_Fused_Row_8_16_16_960_480_s</contextNormFuncName>
               <inlineStackInfo>
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
                   <first>/home/hoinguyen/Documents/Vitis/UpConv_HLS/upconv_block0</first>
                   <second>
-                    <count>2</count>
+                    <count>1</count>
                     <item_version>0</item_version>
-                    <item>
-                      <first>
-                        <first>../gen/Hls_Layers_UpConv.tpp</first>
-                        <second>Compute_Pixel_Stats&amp;lt;32, 480, 30, 480&amp;gt;</second>
-                      </first>
-                      <second>221</second>
-                    </item>
                     <item>
                       <first>
                         <first>../gen/Hls_Layers_UpConv.tpp</first>
                         <second>UpConv_Fused_Row&amp;lt;8, 16, 16, 960, 480&amp;gt;</second>
                       </first>
-                      <second>363</second>
+                      <second>235</second>
                     </item>
                   </second>
                 </item>
@@ -8003,33 +7219,26 @@
             <Obj>
               <type>0</type>
               <id>168</id>
-              <name>void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_25_write_ln221</name>
+              <name>void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_45_write_ln235</name>
               <fileName>../gen/Hls_Layers_UpConv.tpp</fileName>
               <fileDirectory>../.</fileDirectory>
-              <lineNumber>221</lineNumber>
-              <contextFuncName>Compute_Pixel_Stats&amp;lt;32, 480, 30, 480&amp;gt;</contextFuncName>
-              <contextNormFuncName>Compute_Pixel_Stats_32_480_30_480_s</contextNormFuncName>
+              <lineNumber>235</lineNumber>
+              <contextFuncName>UpConv_Fused_Row&amp;lt;8, 16, 16, 960, 480&amp;gt;</contextFuncName>
+              <contextNormFuncName>UpConv_Fused_Row_8_16_16_960_480_s</contextNormFuncName>
               <inlineStackInfo>
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
                   <first>/home/hoinguyen/Documents/Vitis/UpConv_HLS/upconv_block0</first>
                   <second>
-                    <count>2</count>
+                    <count>1</count>
                     <item_version>0</item_version>
-                    <item>
-                      <first>
-                        <first>../gen/Hls_Layers_UpConv.tpp</first>
-                        <second>Compute_Pixel_Stats&amp;lt;32, 480, 30, 480&amp;gt;</second>
-                      </first>
-                      <second>221</second>
-                    </item>
                     <item>
                       <first>
                         <first>../gen/Hls_Layers_UpConv.tpp</first>
                         <second>UpConv_Fused_Row&amp;lt;8, 16, 16, 960, 480&amp;gt;</second>
                       </first>
-                      <second>363</second>
+                      <second>235</second>
                     </item>
                   </second>
                 </item>
@@ -8068,33 +7277,26 @@
             <Obj>
               <type>0</type>
               <id>169</id>
-              <name>br_ln221</name>
+              <name>br_ln235</name>
               <fileName>../gen/Hls_Layers_UpConv.tpp</fileName>
               <fileDirectory>../.</fileDirectory>
-              <lineNumber>221</lineNumber>
-              <contextFuncName>Compute_Pixel_Stats&amp;lt;32, 480, 30, 480&amp;gt;</contextFuncName>
-              <contextNormFuncName>Compute_Pixel_Stats_32_480_30_480_s</contextNormFuncName>
+              <lineNumber>235</lineNumber>
+              <contextFuncName>UpConv_Fused_Row&amp;lt;8, 16, 16, 960, 480&amp;gt;</contextFuncName>
+              <contextNormFuncName>UpConv_Fused_Row_8_16_16_960_480_s</contextNormFuncName>
               <inlineStackInfo>
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
                   <first>/home/hoinguyen/Documents/Vitis/UpConv_HLS/upconv_block0</first>
                   <second>
-                    <count>2</count>
+                    <count>1</count>
                     <item_version>0</item_version>
-                    <item>
-                      <first>
-                        <first>../gen/Hls_Layers_UpConv.tpp</first>
-                        <second>Compute_Pixel_Stats&amp;lt;32, 480, 30, 480&amp;gt;</second>
-                      </first>
-                      <second>221</second>
-                    </item>
                     <item>
                       <first>
                         <first>../gen/Hls_Layers_UpConv.tpp</first>
                         <second>UpConv_Fused_Row&amp;lt;8, 16, 16, 960, 480&amp;gt;</second>
                       </first>
-                      <second>363</second>
+                      <second>235</second>
                     </item>
                   </second>
                 </item>
@@ -8131,33 +7333,26 @@
             <Obj>
               <type>0</type>
               <id>171</id>
-              <name>void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_24_write_ln221</name>
+              <name>void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_44_write_ln235</name>
               <fileName>../gen/Hls_Layers_UpConv.tpp</fileName>
               <fileDirectory>../.</fileDirectory>
-              <lineNumber>221</lineNumber>
-              <contextFuncName>Compute_Pixel_Stats&amp;lt;32, 480, 30, 480&amp;gt;</contextFuncName>
-              <contextNormFuncName>Compute_Pixel_Stats_32_480_30_480_s</contextNormFuncName>
+              <lineNumber>235</lineNumber>
+              <contextFuncName>UpConv_Fused_Row&amp;lt;8, 16, 16, 960, 480&amp;gt;</contextFuncName>
+              <contextNormFuncName>UpConv_Fused_Row_8_16_16_960_480_s</contextNormFuncName>
               <inlineStackInfo>
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
                   <first>/home/hoinguyen/Documents/Vitis/UpConv_HLS/upconv_block0</first>
                   <second>
-                    <count>2</count>
+                    <count>1</count>
                     <item_version>0</item_version>
-                    <item>
-                      <first>
-                        <first>../gen/Hls_Layers_UpConv.tpp</first>
-                        <second>Compute_Pixel_Stats&amp;lt;32, 480, 30, 480&amp;gt;</second>
-                      </first>
-                      <second>221</second>
-                    </item>
                     <item>
                       <first>
                         <first>../gen/Hls_Layers_UpConv.tpp</first>
                         <second>UpConv_Fused_Row&amp;lt;8, 16, 16, 960, 480&amp;gt;</second>
                       </first>
-                      <second>363</second>
+                      <second>235</second>
                     </item>
                   </second>
                 </item>
@@ -8196,33 +7391,26 @@
             <Obj>
               <type>0</type>
               <id>172</id>
-              <name>br_ln221</name>
+              <name>br_ln235</name>
               <fileName>../gen/Hls_Layers_UpConv.tpp</fileName>
               <fileDirectory>../.</fileDirectory>
-              <lineNumber>221</lineNumber>
-              <contextFuncName>Compute_Pixel_Stats&amp;lt;32, 480, 30, 480&amp;gt;</contextFuncName>
-              <contextNormFuncName>Compute_Pixel_Stats_32_480_30_480_s</contextNormFuncName>
+              <lineNumber>235</lineNumber>
+              <contextFuncName>UpConv_Fused_Row&amp;lt;8, 16, 16, 960, 480&amp;gt;</contextFuncName>
+              <contextNormFuncName>UpConv_Fused_Row_8_16_16_960_480_s</contextNormFuncName>
               <inlineStackInfo>
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
                   <first>/home/hoinguyen/Documents/Vitis/UpConv_HLS/upconv_block0</first>
                   <second>
-                    <count>2</count>
+                    <count>1</count>
                     <item_version>0</item_version>
-                    <item>
-                      <first>
-                        <first>../gen/Hls_Layers_UpConv.tpp</first>
-                        <second>Compute_Pixel_Stats&amp;lt;32, 480, 30, 480&amp;gt;</second>
-                      </first>
-                      <second>221</second>
-                    </item>
                     <item>
                       <first>
                         <first>../gen/Hls_Layers_UpConv.tpp</first>
                         <second>UpConv_Fused_Row&amp;lt;8, 16, 16, 960, 480&amp;gt;</second>
                       </first>
-                      <second>363</second>
+                      <second>235</second>
                     </item>
                   </second>
                 </item>
@@ -8259,33 +7447,26 @@
             <Obj>
               <type>0</type>
               <id>174</id>
-              <name>void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_23_write_ln221</name>
+              <name>void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_43_write_ln235</name>
               <fileName>../gen/Hls_Layers_UpConv.tpp</fileName>
               <fileDirectory>../.</fileDirectory>
-              <lineNumber>221</lineNumber>
-              <contextFuncName>Compute_Pixel_Stats&amp;lt;32, 480, 30, 480&amp;gt;</contextFuncName>
-              <contextNormFuncName>Compute_Pixel_Stats_32_480_30_480_s</contextNormFuncName>
+              <lineNumber>235</lineNumber>
+              <contextFuncName>UpConv_Fused_Row&amp;lt;8, 16, 16, 960, 480&amp;gt;</contextFuncName>
+              <contextNormFuncName>UpConv_Fused_Row_8_16_16_960_480_s</contextNormFuncName>
               <inlineStackInfo>
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
                   <first>/home/hoinguyen/Documents/Vitis/UpConv_HLS/upconv_block0</first>
                   <second>
-                    <count>2</count>
+                    <count>1</count>
                     <item_version>0</item_version>
-                    <item>
-                      <first>
-                        <first>../gen/Hls_Layers_UpConv.tpp</first>
-                        <second>Compute_Pixel_Stats&amp;lt;32, 480, 30, 480&amp;gt;</second>
-                      </first>
-                      <second>221</second>
-                    </item>
                     <item>
                       <first>
                         <first>../gen/Hls_Layers_UpConv.tpp</first>
                         <second>UpConv_Fused_Row&amp;lt;8, 16, 16, 960, 480&amp;gt;</second>
                       </first>
-                      <second>363</second>
+                      <second>235</second>
                     </item>
                   </second>
                 </item>
@@ -8324,33 +7505,26 @@
             <Obj>
               <type>0</type>
               <id>175</id>
-              <name>br_ln221</name>
+              <name>br_ln235</name>
               <fileName>../gen/Hls_Layers_UpConv.tpp</fileName>
               <fileDirectory>../.</fileDirectory>
-              <lineNumber>221</lineNumber>
-              <contextFuncName>Compute_Pixel_Stats&amp;lt;32, 480, 30, 480&amp;gt;</contextFuncName>
-              <contextNormFuncName>Compute_Pixel_Stats_32_480_30_480_s</contextNormFuncName>
+              <lineNumber>235</lineNumber>
+              <contextFuncName>UpConv_Fused_Row&amp;lt;8, 16, 16, 960, 480&amp;gt;</contextFuncName>
+              <contextNormFuncName>UpConv_Fused_Row_8_16_16_960_480_s</contextNormFuncName>
               <inlineStackInfo>
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
                   <first>/home/hoinguyen/Documents/Vitis/UpConv_HLS/upconv_block0</first>
                   <second>
-                    <count>2</count>
+                    <count>1</count>
                     <item_version>0</item_version>
-                    <item>
-                      <first>
-                        <first>../gen/Hls_Layers_UpConv.tpp</first>
-                        <second>Compute_Pixel_Stats&amp;lt;32, 480, 30, 480&amp;gt;</second>
-                      </first>
-                      <second>221</second>
-                    </item>
                     <item>
                       <first>
                         <first>../gen/Hls_Layers_UpConv.tpp</first>
                         <second>UpConv_Fused_Row&amp;lt;8, 16, 16, 960, 480&amp;gt;</second>
                       </first>
-                      <second>363</second>
+                      <second>235</second>
                     </item>
                   </second>
                 </item>
@@ -8387,33 +7561,26 @@
             <Obj>
               <type>0</type>
               <id>177</id>
-              <name>void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_22_write_ln221</name>
+              <name>void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_42_write_ln235</name>
               <fileName>../gen/Hls_Layers_UpConv.tpp</fileName>
               <fileDirectory>../.</fileDirectory>
-              <lineNumber>221</lineNumber>
-              <contextFuncName>Compute_Pixel_Stats&amp;lt;32, 480, 30, 480&amp;gt;</contextFuncName>
-              <contextNormFuncName>Compute_Pixel_Stats_32_480_30_480_s</contextNormFuncName>
+              <lineNumber>235</lineNumber>
+              <contextFuncName>UpConv_Fused_Row&amp;lt;8, 16, 16, 960, 480&amp;gt;</contextFuncName>
+              <contextNormFuncName>UpConv_Fused_Row_8_16_16_960_480_s</contextNormFuncName>
               <inlineStackInfo>
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
                   <first>/home/hoinguyen/Documents/Vitis/UpConv_HLS/upconv_block0</first>
                   <second>
-                    <count>2</count>
+                    <count>1</count>
                     <item_version>0</item_version>
-                    <item>
-                      <first>
-                        <first>../gen/Hls_Layers_UpConv.tpp</first>
-                        <second>Compute_Pixel_Stats&amp;lt;32, 480, 30, 480&amp;gt;</second>
-                      </first>
-                      <second>221</second>
-                    </item>
                     <item>
                       <first>
                         <first>../gen/Hls_Layers_UpConv.tpp</first>
                         <second>UpConv_Fused_Row&amp;lt;8, 16, 16, 960, 480&amp;gt;</second>
                       </first>
-                      <second>363</second>
+                      <second>235</second>
                     </item>
                   </second>
                 </item>
@@ -8452,33 +7619,26 @@
             <Obj>
               <type>0</type>
               <id>178</id>
-              <name>br_ln221</name>
+              <name>br_ln235</name>
               <fileName>../gen/Hls_Layers_UpConv.tpp</fileName>
               <fileDirectory>../.</fileDirectory>
-              <lineNumber>221</lineNumber>
-              <contextFuncName>Compute_Pixel_Stats&amp;lt;32, 480, 30, 480&amp;gt;</contextFuncName>
-              <contextNormFuncName>Compute_Pixel_Stats_32_480_30_480_s</contextNormFuncName>
+              <lineNumber>235</lineNumber>
+              <contextFuncName>UpConv_Fused_Row&amp;lt;8, 16, 16, 960, 480&amp;gt;</contextFuncName>
+              <contextNormFuncName>UpConv_Fused_Row_8_16_16_960_480_s</contextNormFuncName>
               <inlineStackInfo>
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
                   <first>/home/hoinguyen/Documents/Vitis/UpConv_HLS/upconv_block0</first>
                   <second>
-                    <count>2</count>
+                    <count>1</count>
                     <item_version>0</item_version>
-                    <item>
-                      <first>
-                        <first>../gen/Hls_Layers_UpConv.tpp</first>
-                        <second>Compute_Pixel_Stats&amp;lt;32, 480, 30, 480&amp;gt;</second>
-                      </first>
-                      <second>221</second>
-                    </item>
                     <item>
                       <first>
                         <first>../gen/Hls_Layers_UpConv.tpp</first>
                         <second>UpConv_Fused_Row&amp;lt;8, 16, 16, 960, 480&amp;gt;</second>
                       </first>
-                      <second>363</second>
+                      <second>235</second>
                     </item>
                   </second>
                 </item>
@@ -8515,33 +7675,26 @@
             <Obj>
               <type>0</type>
               <id>180</id>
-              <name>void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_21_write_ln221</name>
+              <name>void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_41_write_ln235</name>
               <fileName>../gen/Hls_Layers_UpConv.tpp</fileName>
               <fileDirectory>../.</fileDirectory>
-              <lineNumber>221</lineNumber>
-              <contextFuncName>Compute_Pixel_Stats&amp;lt;32, 480, 30, 480&amp;gt;</contextFuncName>
-              <contextNormFuncName>Compute_Pixel_Stats_32_480_30_480_s</contextNormFuncName>
+              <lineNumber>235</lineNumber>
+              <contextFuncName>UpConv_Fused_Row&amp;lt;8, 16, 16, 960, 480&amp;gt;</contextFuncName>
+              <contextNormFuncName>UpConv_Fused_Row_8_16_16_960_480_s</contextNormFuncName>
               <inlineStackInfo>
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
                   <first>/home/hoinguyen/Documents/Vitis/UpConv_HLS/upconv_block0</first>
                   <second>
-                    <count>2</count>
+                    <count>1</count>
                     <item_version>0</item_version>
-                    <item>
-                      <first>
-                        <first>../gen/Hls_Layers_UpConv.tpp</first>
-                        <second>Compute_Pixel_Stats&amp;lt;32, 480, 30, 480&amp;gt;</second>
-                      </first>
-                      <second>221</second>
-                    </item>
                     <item>
                       <first>
                         <first>../gen/Hls_Layers_UpConv.tpp</first>
                         <second>UpConv_Fused_Row&amp;lt;8, 16, 16, 960, 480&amp;gt;</second>
                       </first>
-                      <second>363</second>
+                      <second>235</second>
                     </item>
                   </second>
                 </item>
@@ -8580,33 +7733,26 @@
             <Obj>
               <type>0</type>
               <id>181</id>
-              <name>br_ln221</name>
+              <name>br_ln235</name>
               <fileName>../gen/Hls_Layers_UpConv.tpp</fileName>
               <fileDirectory>../.</fileDirectory>
-              <lineNumber>221</lineNumber>
-              <contextFuncName>Compute_Pixel_Stats&amp;lt;32, 480, 30, 480&amp;gt;</contextFuncName>
-              <contextNormFuncName>Compute_Pixel_Stats_32_480_30_480_s</contextNormFuncName>
+              <lineNumber>235</lineNumber>
+              <contextFuncName>UpConv_Fused_Row&amp;lt;8, 16, 16, 960, 480&amp;gt;</contextFuncName>
+              <contextNormFuncName>UpConv_Fused_Row_8_16_16_960_480_s</contextNormFuncName>
               <inlineStackInfo>
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
                   <first>/home/hoinguyen/Documents/Vitis/UpConv_HLS/upconv_block0</first>
                   <second>
-                    <count>2</count>
+                    <count>1</count>
                     <item_version>0</item_version>
-                    <item>
-                      <first>
-                        <first>../gen/Hls_Layers_UpConv.tpp</first>
-                        <second>Compute_Pixel_Stats&amp;lt;32, 480, 30, 480&amp;gt;</second>
-                      </first>
-                      <second>221</second>
-                    </item>
                     <item>
                       <first>
                         <first>../gen/Hls_Layers_UpConv.tpp</first>
                         <second>UpConv_Fused_Row&amp;lt;8, 16, 16, 960, 480&amp;gt;</second>
                       </first>
-                      <second>363</second>
+                      <second>235</second>
                     </item>
                   </second>
                 </item>
@@ -8643,33 +7789,26 @@
             <Obj>
               <type>0</type>
               <id>183</id>
-              <name>void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_20_write_ln221</name>
+              <name>void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_40_write_ln235</name>
               <fileName>../gen/Hls_Layers_UpConv.tpp</fileName>
               <fileDirectory>../.</fileDirectory>
-              <lineNumber>221</lineNumber>
-              <contextFuncName>Compute_Pixel_Stats&amp;lt;32, 480, 30, 480&amp;gt;</contextFuncName>
-              <contextNormFuncName>Compute_Pixel_Stats_32_480_30_480_s</contextNormFuncName>
+              <lineNumber>235</lineNumber>
+              <contextFuncName>UpConv_Fused_Row&amp;lt;8, 16, 16, 960, 480&amp;gt;</contextFuncName>
+              <contextNormFuncName>UpConv_Fused_Row_8_16_16_960_480_s</contextNormFuncName>
               <inlineStackInfo>
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
                   <first>/home/hoinguyen/Documents/Vitis/UpConv_HLS/upconv_block0</first>
                   <second>
-                    <count>2</count>
+                    <count>1</count>
                     <item_version>0</item_version>
-                    <item>
-                      <first>
-                        <first>../gen/Hls_Layers_UpConv.tpp</first>
-                        <second>Compute_Pixel_Stats&amp;lt;32, 480, 30, 480&amp;gt;</second>
-                      </first>
-                      <second>221</second>
-                    </item>
                     <item>
                       <first>
                         <first>../gen/Hls_Layers_UpConv.tpp</first>
                         <second>UpConv_Fused_Row&amp;lt;8, 16, 16, 960, 480&amp;gt;</second>
                       </first>
-                      <second>363</second>
+                      <second>235</second>
                     </item>
                   </second>
                 </item>
@@ -8708,33 +7847,26 @@
             <Obj>
               <type>0</type>
               <id>184</id>
-              <name>br_ln221</name>
+              <name>br_ln235</name>
               <fileName>../gen/Hls_Layers_UpConv.tpp</fileName>
               <fileDirectory>../.</fileDirectory>
-              <lineNumber>221</lineNumber>
-              <contextFuncName>Compute_Pixel_Stats&amp;lt;32, 480, 30, 480&amp;gt;</contextFuncName>
-              <contextNormFuncName>Compute_Pixel_Stats_32_480_30_480_s</contextNormFuncName>
+              <lineNumber>235</lineNumber>
+              <contextFuncName>UpConv_Fused_Row&amp;lt;8, 16, 16, 960, 480&amp;gt;</contextFuncName>
+              <contextNormFuncName>UpConv_Fused_Row_8_16_16_960_480_s</contextNormFuncName>
               <inlineStackInfo>
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
                   <first>/home/hoinguyen/Documents/Vitis/UpConv_HLS/upconv_block0</first>
                   <second>
-                    <count>2</count>
+                    <count>1</count>
                     <item_version>0</item_version>
-                    <item>
-                      <first>
-                        <first>../gen/Hls_Layers_UpConv.tpp</first>
-                        <second>Compute_Pixel_Stats&amp;lt;32, 480, 30, 480&amp;gt;</second>
-                      </first>
-                      <second>221</second>
-                    </item>
                     <item>
                       <first>
                         <first>../gen/Hls_Layers_UpConv.tpp</first>
                         <second>UpConv_Fused_Row&amp;lt;8, 16, 16, 960, 480&amp;gt;</second>
                       </first>
-                      <second>363</second>
+                      <second>235</second>
                     </item>
                   </second>
                 </item>
@@ -8771,33 +7903,26 @@
             <Obj>
               <type>0</type>
               <id>186</id>
-              <name>p_ZZ16UpConv_Fused_RowILi8ELi16ELi16ELi960ELi480EEvP7ap_uintILi256EEPKS1_S4_S4_S4_17_write_ln221</name>
+              <name>p_ZZ16UpConv_Fused_RowILi8ELi16ELi16ELi960ELi480EEvP7ap_uintILi256EEPKS1_S4_S4_S4_29_write_ln235</name>
               <fileName>../gen/Hls_Layers_UpConv.tpp</fileName>
               <fileDirectory>../.</fileDirectory>
-              <lineNumber>221</lineNumber>
-              <contextFuncName>Compute_Pixel_Stats&amp;lt;32, 480, 30, 480&amp;gt;</contextFuncName>
-              <contextNormFuncName>Compute_Pixel_Stats_32_480_30_480_s</contextNormFuncName>
+              <lineNumber>235</lineNumber>
+              <contextFuncName>UpConv_Fused_Row&amp;lt;8, 16, 16, 960, 480&amp;gt;</contextFuncName>
+              <contextNormFuncName>UpConv_Fused_Row_8_16_16_960_480_s</contextNormFuncName>
               <inlineStackInfo>
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
                   <first>/home/hoinguyen/Documents/Vitis/UpConv_HLS/upconv_block0</first>
                   <second>
-                    <count>2</count>
+                    <count>1</count>
                     <item_version>0</item_version>
-                    <item>
-                      <first>
-                        <first>../gen/Hls_Layers_UpConv.tpp</first>
-                        <second>Compute_Pixel_Stats&amp;lt;32, 480, 30, 480&amp;gt;</second>
-                      </first>
-                      <second>221</second>
-                    </item>
                     <item>
                       <first>
                         <first>../gen/Hls_Layers_UpConv.tpp</first>
                         <second>UpConv_Fused_Row&amp;lt;8, 16, 16, 960, 480&amp;gt;</second>
                       </first>
-                      <second>363</second>
+                      <second>235</second>
                     </item>
                   </second>
                 </item>
@@ -8836,33 +7961,26 @@
             <Obj>
               <type>0</type>
               <id>187</id>
-              <name>br_ln221</name>
+              <name>br_ln235</name>
               <fileName>../gen/Hls_Layers_UpConv.tpp</fileName>
               <fileDirectory>../.</fileDirectory>
-              <lineNumber>221</lineNumber>
-              <contextFuncName>Compute_Pixel_Stats&amp;lt;32, 480, 30, 480&amp;gt;</contextFuncName>
-              <contextNormFuncName>Compute_Pixel_Stats_32_480_30_480_s</contextNormFuncName>
+              <lineNumber>235</lineNumber>
+              <contextFuncName>UpConv_Fused_Row&amp;lt;8, 16, 16, 960, 480&amp;gt;</contextFuncName>
+              <contextNormFuncName>UpConv_Fused_Row_8_16_16_960_480_s</contextNormFuncName>
               <inlineStackInfo>
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
                   <first>/home/hoinguyen/Documents/Vitis/UpConv_HLS/upconv_block0</first>
                   <second>
-                    <count>2</count>
+                    <count>1</count>
                     <item_version>0</item_version>
-                    <item>
-                      <first>
-                        <first>../gen/Hls_Layers_UpConv.tpp</first>
-                        <second>Compute_Pixel_Stats&amp;lt;32, 480, 30, 480&amp;gt;</second>
-                      </first>
-                      <second>221</second>
-                    </item>
                     <item>
                       <first>
                         <first>../gen/Hls_Layers_UpConv.tpp</first>
                         <second>UpConv_Fused_Row&amp;lt;8, 16, 16, 960, 480&amp;gt;</second>
                       </first>
-                      <second>363</second>
+                      <second>235</second>
                     </item>
                   </second>
                 </item>
@@ -8902,30 +8020,23 @@
               <name>sum_rot_8</name>
               <fileName>../gen/Hls_Layers_UpConv.tpp</fileName>
               <fileDirectory>../.</fileDirectory>
-              <lineNumber>222</lineNumber>
-              <contextFuncName>Compute_Pixel_Stats&amp;lt;32, 480, 30, 480&amp;gt;</contextFuncName>
-              <contextNormFuncName>Compute_Pixel_Stats_32_480_30_480_s</contextNormFuncName>
+              <lineNumber>236</lineNumber>
+              <contextFuncName>UpConv_Fused_Row&amp;lt;8, 16, 16, 960, 480&amp;gt;</contextFuncName>
+              <contextNormFuncName>UpConv_Fused_Row_8_16_16_960_480_s</contextNormFuncName>
               <inlineStackInfo>
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
                   <first>/home/hoinguyen/Documents/Vitis/UpConv_HLS/upconv_block0</first>
                   <second>
-                    <count>2</count>
+                    <count>1</count>
                     <item_version>0</item_version>
-                    <item>
-                      <first>
-                        <first>../gen/Hls_Layers_UpConv.tpp</first>
-                        <second>Compute_Pixel_Stats&amp;lt;32, 480, 30, 480&amp;gt;</second>
-                      </first>
-                      <second>222</second>
-                    </item>
                     <item>
                       <first>
                         <first>../gen/Hls_Layers_UpConv.tpp</first>
                         <second>UpConv_Fused_Row&amp;lt;8, 16, 16, 960, 480&amp;gt;</second>
                       </first>
-                      <second>363</second>
+                      <second>236</second>
                     </item>
                   </second>
                 </item>
@@ -8962,39 +8073,32 @@
             <Obj>
               <type>0</type>
               <id>190</id>
-              <name>tmp_4</name>
+              <name>tmp_15</name>
               <fileName>../gen/Hls_Layers_UpConv.tpp</fileName>
               <fileDirectory>../.</fileDirectory>
-              <lineNumber>224</lineNumber>
-              <contextFuncName>Compute_Pixel_Stats&amp;lt;32, 480, 30, 480&amp;gt;</contextFuncName>
-              <contextNormFuncName>Compute_Pixel_Stats_32_480_30_480_s</contextNormFuncName>
+              <lineNumber>237</lineNumber>
+              <contextFuncName>UpConv_Fused_Row&amp;lt;8, 16, 16, 960, 480&amp;gt;</contextFuncName>
+              <contextNormFuncName>UpConv_Fused_Row_8_16_16_960_480_s</contextNormFuncName>
               <inlineStackInfo>
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
                   <first>/home/hoinguyen/Documents/Vitis/UpConv_HLS/upconv_block0</first>
                   <second>
-                    <count>2</count>
+                    <count>1</count>
                     <item_version>0</item_version>
-                    <item>
-                      <first>
-                        <first>../gen/Hls_Layers_UpConv.tpp</first>
-                        <second>Compute_Pixel_Stats&amp;lt;32, 480, 30, 480&amp;gt;</second>
-                      </first>
-                      <second>224</second>
-                    </item>
                     <item>
                       <first>
                         <first>../gen/Hls_Layers_UpConv.tpp</first>
                         <second>UpConv_Fused_Row&amp;lt;8, 16, 16, 960, 480&amp;gt;</second>
                       </first>
-                      <second>363</second>
+                      <second>237</second>
                     </item>
                   </second>
                 </item>
               </inlineStackInfo>
               <originalName/>
-              <rtlName>tmp_4_fu_906_p4</rtlName>
+              <rtlName>tmp_15_fu_906_p4</rtlName>
               <control/>
               <opType/>
               <implIndex/>
@@ -9028,39 +8132,32 @@
             <Obj>
               <type>0</type>
               <id>191</id>
-              <name>icmp_ln224</name>
+              <name>icmp_ln237</name>
               <fileName>../gen/Hls_Layers_UpConv.tpp</fileName>
               <fileDirectory>../.</fileDirectory>
-              <lineNumber>224</lineNumber>
-              <contextFuncName>Compute_Pixel_Stats&amp;lt;32, 480, 30, 480&amp;gt;</contextFuncName>
-              <contextNormFuncName>Compute_Pixel_Stats_32_480_30_480_s</contextNormFuncName>
+              <lineNumber>237</lineNumber>
+              <contextFuncName>UpConv_Fused_Row&amp;lt;8, 16, 16, 960, 480&amp;gt;</contextFuncName>
+              <contextNormFuncName>UpConv_Fused_Row_8_16_16_960_480_s</contextNormFuncName>
               <inlineStackInfo>
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
                   <first>/home/hoinguyen/Documents/Vitis/UpConv_HLS/upconv_block0</first>
                   <second>
-                    <count>2</count>
+                    <count>1</count>
                     <item_version>0</item_version>
-                    <item>
-                      <first>
-                        <first>../gen/Hls_Layers_UpConv.tpp</first>
-                        <second>Compute_Pixel_Stats&amp;lt;32, 480, 30, 480&amp;gt;</second>
-                      </first>
-                      <second>224</second>
-                    </item>
                     <item>
                       <first>
                         <first>../gen/Hls_Layers_UpConv.tpp</first>
                         <second>UpConv_Fused_Row&amp;lt;8, 16, 16, 960, 480&amp;gt;</second>
                       </first>
-                      <second>363</second>
+                      <second>237</second>
                     </item>
                   </second>
                 </item>
               </inlineStackInfo>
               <originalName/>
-              <rtlName>icmp_ln224_fu_915_p2</rtlName>
+              <rtlName>icmp_ln237_fu_915_p2</rtlName>
               <control>auto</control>
               <opType>setlt</opType>
               <implIndex>auto</implIndex>
@@ -9092,39 +8189,32 @@
             <Obj>
               <type>0</type>
               <id>192</id>
-              <name>mul15_i</name>
+              <name>mul</name>
               <fileName>../gen/Hls_Layers_UpConv.tpp</fileName>
               <fileDirectory>../.</fileDirectory>
-              <lineNumber>226</lineNumber>
-              <contextFuncName>Compute_Pixel_Stats&amp;lt;32, 480, 30, 480&amp;gt;</contextFuncName>
-              <contextNormFuncName>Compute_Pixel_Stats_32_480_30_480_s</contextNormFuncName>
+              <lineNumber>237</lineNumber>
+              <contextFuncName>UpConv_Fused_Row&amp;lt;8, 16, 16, 960, 480&amp;gt;</contextFuncName>
+              <contextNormFuncName>UpConv_Fused_Row_8_16_16_960_480_s</contextNormFuncName>
               <inlineStackInfo>
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
                   <first>/home/hoinguyen/Documents/Vitis/UpConv_HLS/upconv_block0</first>
                   <second>
-                    <count>2</count>
+                    <count>1</count>
                     <item_version>0</item_version>
-                    <item>
-                      <first>
-                        <first>../gen/Hls_Layers_UpConv.tpp</first>
-                        <second>Compute_Pixel_Stats&amp;lt;32, 480, 30, 480&amp;gt;</second>
-                      </first>
-                      <second>226</second>
-                    </item>
                     <item>
                       <first>
                         <first>../gen/Hls_Layers_UpConv.tpp</first>
                         <second>UpConv_Fused_Row&amp;lt;8, 16, 16, 960, 480&amp;gt;</second>
                       </first>
-                      <second>363</second>
+                      <second>237</second>
                     </item>
                   </second>
                 </item>
               </inlineStackInfo>
               <originalName/>
-              <rtlName>fmul_32ns_32ns_32_7_max_dsp_1_U464</rtlName>
+              <rtlName>fmul_32ns_32ns_32_7_max_dsp_1_U469</rtlName>
               <control>auto</control>
               <opType>fmul</opType>
               <implIndex>maxdsp</implIndex>
@@ -9156,33 +8246,26 @@
             <Obj>
               <type>0</type>
               <id>193</id>
-              <name>br_ln224</name>
+              <name>br_ln237</name>
               <fileName>../gen/Hls_Layers_UpConv.tpp</fileName>
               <fileDirectory>../.</fileDirectory>
-              <lineNumber>224</lineNumber>
-              <contextFuncName>Compute_Pixel_Stats&amp;lt;32, 480, 30, 480&amp;gt;</contextFuncName>
-              <contextNormFuncName>Compute_Pixel_Stats_32_480_30_480_s</contextNormFuncName>
+              <lineNumber>237</lineNumber>
+              <contextFuncName>UpConv_Fused_Row&amp;lt;8, 16, 16, 960, 480&amp;gt;</contextFuncName>
+              <contextNormFuncName>UpConv_Fused_Row_8_16_16_960_480_s</contextNormFuncName>
               <inlineStackInfo>
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
                   <first>/home/hoinguyen/Documents/Vitis/UpConv_HLS/upconv_block0</first>
                   <second>
-                    <count>2</count>
+                    <count>1</count>
                     <item_version>0</item_version>
-                    <item>
-                      <first>
-                        <first>../gen/Hls_Layers_UpConv.tpp</first>
-                        <second>Compute_Pixel_Stats&amp;lt;32, 480, 30, 480&amp;gt;</second>
-                      </first>
-                      <second>224</second>
-                    </item>
                     <item>
                       <first>
                         <first>../gen/Hls_Layers_UpConv.tpp</first>
                         <second>UpConv_Fused_Row&amp;lt;8, 16, 16, 960, 480&amp;gt;</second>
                       </first>
-                      <second>363</second>
+                      <second>237</second>
                     </item>
                   </second>
                 </item>
@@ -9224,30 +8307,23 @@
               <name>sum_rot_load</name>
               <fileName>../gen/Hls_Layers_UpConv.tpp</fileName>
               <fileDirectory>../.</fileDirectory>
-              <lineNumber>228</lineNumber>
-              <contextFuncName>Compute_Pixel_Stats&amp;lt;32, 480, 30, 480&amp;gt;</contextFuncName>
-              <contextNormFuncName>Compute_Pixel_Stats_32_480_30_480_s</contextNormFuncName>
+              <lineNumber>238</lineNumber>
+              <contextFuncName>UpConv_Fused_Row&amp;lt;8, 16, 16, 960, 480&amp;gt;</contextFuncName>
+              <contextNormFuncName>UpConv_Fused_Row_8_16_16_960_480_s</contextNormFuncName>
               <inlineStackInfo>
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
                   <first>/home/hoinguyen/Documents/Vitis/UpConv_HLS/upconv_block0</first>
                   <second>
-                    <count>2</count>
+                    <count>1</count>
                     <item_version>0</item_version>
-                    <item>
-                      <first>
-                        <first>../gen/Hls_Layers_UpConv.tpp</first>
-                        <second>Compute_Pixel_Stats&amp;lt;32, 480, 30, 480&amp;gt;</second>
-                      </first>
-                      <second>228</second>
-                    </item>
                     <item>
                       <first>
                         <first>../gen/Hls_Layers_UpConv.tpp</first>
                         <second>UpConv_Fused_Row&amp;lt;8, 16, 16, 960, 480&amp;gt;</second>
                       </first>
-                      <second>363</second>
+                      <second>238</second>
                     </item>
                   </second>
                 </item>
@@ -9287,30 +8363,23 @@
               <name>sum_rot_1_load</name>
               <fileName>../gen/Hls_Layers_UpConv.tpp</fileName>
               <fileDirectory>../.</fileDirectory>
-              <lineNumber>228</lineNumber>
-              <contextFuncName>Compute_Pixel_Stats&amp;lt;32, 480, 30, 480&amp;gt;</contextFuncName>
-              <contextNormFuncName>Compute_Pixel_Stats_32_480_30_480_s</contextNormFuncName>
+              <lineNumber>238</lineNumber>
+              <contextFuncName>UpConv_Fused_Row&amp;lt;8, 16, 16, 960, 480&amp;gt;</contextFuncName>
+              <contextNormFuncName>UpConv_Fused_Row_8_16_16_960_480_s</contextNormFuncName>
               <inlineStackInfo>
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
                   <first>/home/hoinguyen/Documents/Vitis/UpConv_HLS/upconv_block0</first>
                   <second>
-                    <count>2</count>
+                    <count>1</count>
                     <item_version>0</item_version>
-                    <item>
-                      <first>
-                        <first>../gen/Hls_Layers_UpConv.tpp</first>
-                        <second>Compute_Pixel_Stats&amp;lt;32, 480, 30, 480&amp;gt;</second>
-                      </first>
-                      <second>228</second>
-                    </item>
                     <item>
                       <first>
                         <first>../gen/Hls_Layers_UpConv.tpp</first>
                         <second>UpConv_Fused_Row&amp;lt;8, 16, 16, 960, 480&amp;gt;</second>
                       </first>
-                      <second>363</second>
+                      <second>238</second>
                     </item>
                   </second>
                 </item>
@@ -9350,30 +8419,23 @@
               <name>sum_rot_2_load</name>
               <fileName>../gen/Hls_Layers_UpConv.tpp</fileName>
               <fileDirectory>../.</fileDirectory>
-              <lineNumber>228</lineNumber>
-              <contextFuncName>Compute_Pixel_Stats&amp;lt;32, 480, 30, 480&amp;gt;</contextFuncName>
-              <contextNormFuncName>Compute_Pixel_Stats_32_480_30_480_s</contextNormFuncName>
+              <lineNumber>238</lineNumber>
+              <contextFuncName>UpConv_Fused_Row&amp;lt;8, 16, 16, 960, 480&amp;gt;</contextFuncName>
+              <contextNormFuncName>UpConv_Fused_Row_8_16_16_960_480_s</contextNormFuncName>
               <inlineStackInfo>
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
                   <first>/home/hoinguyen/Documents/Vitis/UpConv_HLS/upconv_block0</first>
                   <second>
-                    <count>2</count>
+                    <count>1</count>
                     <item_version>0</item_version>
-                    <item>
-                      <first>
-                        <first>../gen/Hls_Layers_UpConv.tpp</first>
-                        <second>Compute_Pixel_Stats&amp;lt;32, 480, 30, 480&amp;gt;</second>
-                      </first>
-                      <second>228</second>
-                    </item>
                     <item>
                       <first>
                         <first>../gen/Hls_Layers_UpConv.tpp</first>
                         <second>UpConv_Fused_Row&amp;lt;8, 16, 16, 960, 480&amp;gt;</second>
                       </first>
-                      <second>363</second>
+                      <second>238</second>
                     </item>
                   </second>
                 </item>
@@ -9413,30 +8475,23 @@
               <name>sum_rot_3_load</name>
               <fileName>../gen/Hls_Layers_UpConv.tpp</fileName>
               <fileDirectory>../.</fileDirectory>
-              <lineNumber>228</lineNumber>
-              <contextFuncName>Compute_Pixel_Stats&amp;lt;32, 480, 30, 480&amp;gt;</contextFuncName>
-              <contextNormFuncName>Compute_Pixel_Stats_32_480_30_480_s</contextNormFuncName>
+              <lineNumber>238</lineNumber>
+              <contextFuncName>UpConv_Fused_Row&amp;lt;8, 16, 16, 960, 480&amp;gt;</contextFuncName>
+              <contextNormFuncName>UpConv_Fused_Row_8_16_16_960_480_s</contextNormFuncName>
               <inlineStackInfo>
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
                   <first>/home/hoinguyen/Documents/Vitis/UpConv_HLS/upconv_block0</first>
                   <second>
-                    <count>2</count>
+                    <count>1</count>
                     <item_version>0</item_version>
-                    <item>
-                      <first>
-                        <first>../gen/Hls_Layers_UpConv.tpp</first>
-                        <second>Compute_Pixel_Stats&amp;lt;32, 480, 30, 480&amp;gt;</second>
-                      </first>
-                      <second>228</second>
-                    </item>
                     <item>
                       <first>
                         <first>../gen/Hls_Layers_UpConv.tpp</first>
                         <second>UpConv_Fused_Row&amp;lt;8, 16, 16, 960, 480&amp;gt;</second>
                       </first>
-                      <second>363</second>
+                      <second>238</second>
                     </item>
                   </second>
                 </item>
@@ -9476,30 +8531,23 @@
               <name>sum_rot_4_load</name>
               <fileName>../gen/Hls_Layers_UpConv.tpp</fileName>
               <fileDirectory>../.</fileDirectory>
-              <lineNumber>228</lineNumber>
-              <contextFuncName>Compute_Pixel_Stats&amp;lt;32, 480, 30, 480&amp;gt;</contextFuncName>
-              <contextNormFuncName>Compute_Pixel_Stats_32_480_30_480_s</contextNormFuncName>
+              <lineNumber>238</lineNumber>
+              <contextFuncName>UpConv_Fused_Row&amp;lt;8, 16, 16, 960, 480&amp;gt;</contextFuncName>
+              <contextNormFuncName>UpConv_Fused_Row_8_16_16_960_480_s</contextNormFuncName>
               <inlineStackInfo>
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
                   <first>/home/hoinguyen/Documents/Vitis/UpConv_HLS/upconv_block0</first>
                   <second>
-                    <count>2</count>
+                    <count>1</count>
                     <item_version>0</item_version>
-                    <item>
-                      <first>
-                        <first>../gen/Hls_Layers_UpConv.tpp</first>
-                        <second>Compute_Pixel_Stats&amp;lt;32, 480, 30, 480&amp;gt;</second>
-                      </first>
-                      <second>228</second>
-                    </item>
                     <item>
                       <first>
                         <first>../gen/Hls_Layers_UpConv.tpp</first>
                         <second>UpConv_Fused_Row&amp;lt;8, 16, 16, 960, 480&amp;gt;</second>
                       </first>
-                      <second>363</second>
+                      <second>238</second>
                     </item>
                   </second>
                 </item>
@@ -9539,30 +8587,23 @@
               <name>sum_rot_5_load</name>
               <fileName>../gen/Hls_Layers_UpConv.tpp</fileName>
               <fileDirectory>../.</fileDirectory>
-              <lineNumber>228</lineNumber>
-              <contextFuncName>Compute_Pixel_Stats&amp;lt;32, 480, 30, 480&amp;gt;</contextFuncName>
-              <contextNormFuncName>Compute_Pixel_Stats_32_480_30_480_s</contextNormFuncName>
+              <lineNumber>238</lineNumber>
+              <contextFuncName>UpConv_Fused_Row&amp;lt;8, 16, 16, 960, 480&amp;gt;</contextFuncName>
+              <contextNormFuncName>UpConv_Fused_Row_8_16_16_960_480_s</contextNormFuncName>
               <inlineStackInfo>
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
                   <first>/home/hoinguyen/Documents/Vitis/UpConv_HLS/upconv_block0</first>
                   <second>
-                    <count>2</count>
+                    <count>1</count>
                     <item_version>0</item_version>
-                    <item>
-                      <first>
-                        <first>../gen/Hls_Layers_UpConv.tpp</first>
-                        <second>Compute_Pixel_Stats&amp;lt;32, 480, 30, 480&amp;gt;</second>
-                      </first>
-                      <second>228</second>
-                    </item>
                     <item>
                       <first>
                         <first>../gen/Hls_Layers_UpConv.tpp</first>
                         <second>UpConv_Fused_Row&amp;lt;8, 16, 16, 960, 480&amp;gt;</second>
                       </first>
-                      <second>363</second>
+                      <second>238</second>
                     </item>
                   </second>
                 </item>
@@ -9602,30 +8643,23 @@
               <name>sum_rot_6_load</name>
               <fileName>../gen/Hls_Layers_UpConv.tpp</fileName>
               <fileDirectory>../.</fileDirectory>
-              <lineNumber>228</lineNumber>
-              <contextFuncName>Compute_Pixel_Stats&amp;lt;32, 480, 30, 480&amp;gt;</contextFuncName>
-              <contextNormFuncName>Compute_Pixel_Stats_32_480_30_480_s</contextNormFuncName>
+              <lineNumber>238</lineNumber>
+              <contextFuncName>UpConv_Fused_Row&amp;lt;8, 16, 16, 960, 480&amp;gt;</contextFuncName>
+              <contextNormFuncName>UpConv_Fused_Row_8_16_16_960_480_s</contextNormFuncName>
               <inlineStackInfo>
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
                   <first>/home/hoinguyen/Documents/Vitis/UpConv_HLS/upconv_block0</first>
                   <second>
-                    <count>2</count>
+                    <count>1</count>
                     <item_version>0</item_version>
-                    <item>
-                      <first>
-                        <first>../gen/Hls_Layers_UpConv.tpp</first>
-                        <second>Compute_Pixel_Stats&amp;lt;32, 480, 30, 480&amp;gt;</second>
-                      </first>
-                      <second>228</second>
-                    </item>
                     <item>
                       <first>
                         <first>../gen/Hls_Layers_UpConv.tpp</first>
                         <second>UpConv_Fused_Row&amp;lt;8, 16, 16, 960, 480&amp;gt;</second>
                       </first>
-                      <second>363</second>
+                      <second>238</second>
                     </item>
                   </second>
                 </item>
@@ -9665,30 +8699,23 @@
               <name>sum_rot_7_load</name>
               <fileName>../gen/Hls_Layers_UpConv.tpp</fileName>
               <fileDirectory>../.</fileDirectory>
-              <lineNumber>228</lineNumber>
-              <contextFuncName>Compute_Pixel_Stats&amp;lt;32, 480, 30, 480&amp;gt;</contextFuncName>
-              <contextNormFuncName>Compute_Pixel_Stats_32_480_30_480_s</contextNormFuncName>
+              <lineNumber>238</lineNumber>
+              <contextFuncName>UpConv_Fused_Row&amp;lt;8, 16, 16, 960, 480&amp;gt;</contextFuncName>
+              <contextNormFuncName>UpConv_Fused_Row_8_16_16_960_480_s</contextNormFuncName>
               <inlineStackInfo>
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
                   <first>/home/hoinguyen/Documents/Vitis/UpConv_HLS/upconv_block0</first>
                   <second>
-                    <count>2</count>
+                    <count>1</count>
                     <item_version>0</item_version>
-                    <item>
-                      <first>
-                        <first>../gen/Hls_Layers_UpConv.tpp</first>
-                        <second>Compute_Pixel_Stats&amp;lt;32, 480, 30, 480&amp;gt;</second>
-                      </first>
-                      <second>228</second>
-                    </item>
                     <item>
                       <first>
                         <first>../gen/Hls_Layers_UpConv.tpp</first>
                         <second>UpConv_Fused_Row&amp;lt;8, 16, 16, 960, 480&amp;gt;</second>
                       </first>
-                      <second>363</second>
+                      <second>238</second>
                     </item>
                   </second>
                 </item>
@@ -9725,39 +8752,32 @@
             <Obj>
               <type>0</type>
               <id>203</id>
-              <name>tmp_5</name>
+              <name>tmp_s</name>
               <fileName>../gen/Hls_Layers_UpConv.tpp</fileName>
               <fileDirectory>../.</fileDirectory>
-              <lineNumber>228</lineNumber>
-              <contextFuncName>Compute_Pixel_Stats&amp;lt;32, 480, 30, 480&amp;gt;</contextFuncName>
-              <contextNormFuncName>Compute_Pixel_Stats_32_480_30_480_s</contextNormFuncName>
+              <lineNumber>238</lineNumber>
+              <contextFuncName>UpConv_Fused_Row&amp;lt;8, 16, 16, 960, 480&amp;gt;</contextFuncName>
+              <contextNormFuncName>UpConv_Fused_Row_8_16_16_960_480_s</contextNormFuncName>
               <inlineStackInfo>
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
                   <first>/home/hoinguyen/Documents/Vitis/UpConv_HLS/upconv_block0</first>
                   <second>
-                    <count>2</count>
+                    <count>1</count>
                     <item_version>0</item_version>
-                    <item>
-                      <first>
-                        <first>../gen/Hls_Layers_UpConv.tpp</first>
-                        <second>Compute_Pixel_Stats&amp;lt;32, 480, 30, 480&amp;gt;</second>
-                      </first>
-                      <second>228</second>
-                    </item>
                     <item>
                       <first>
                         <first>../gen/Hls_Layers_UpConv.tpp</first>
                         <second>UpConv_Fused_Row&amp;lt;8, 16, 16, 960, 480&amp;gt;</second>
                       </first>
-                      <second>363</second>
+                      <second>238</second>
                     </item>
                   </second>
                 </item>
               </inlineStackInfo>
               <originalName/>
-              <rtlName>sparsemux_17_3_32_1_1_U475</rtlName>
+              <rtlName>sparsemux_17_3_32_1_1_U480</rtlName>
               <control>auto</control>
               <opType>sparsemux</opType>
               <implIndex>compactencoding_dontcare</implIndex>
@@ -9809,36 +8829,29 @@
               <name>sum_rot_9</name>
               <fileName>../gen/Hls_Layers_UpConv.tpp</fileName>
               <fileDirectory>../.</fileDirectory>
-              <lineNumber>228</lineNumber>
-              <contextFuncName>Compute_Pixel_Stats&amp;lt;32, 480, 30, 480&amp;gt;</contextFuncName>
-              <contextNormFuncName>Compute_Pixel_Stats_32_480_30_480_s</contextNormFuncName>
+              <lineNumber>238</lineNumber>
+              <contextFuncName>UpConv_Fused_Row&amp;lt;8, 16, 16, 960, 480&amp;gt;</contextFuncName>
+              <contextNormFuncName>UpConv_Fused_Row_8_16_16_960_480_s</contextNormFuncName>
               <inlineStackInfo>
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
                   <first>/home/hoinguyen/Documents/Vitis/UpConv_HLS/upconv_block0</first>
                   <second>
-                    <count>2</count>
+                    <count>1</count>
                     <item_version>0</item_version>
-                    <item>
-                      <first>
-                        <first>../gen/Hls_Layers_UpConv.tpp</first>
-                        <second>Compute_Pixel_Stats&amp;lt;32, 480, 30, 480&amp;gt;</second>
-                      </first>
-                      <second>228</second>
-                    </item>
                     <item>
                       <first>
                         <first>../gen/Hls_Layers_UpConv.tpp</first>
                         <second>UpConv_Fused_Row&amp;lt;8, 16, 16, 960, 480&amp;gt;</second>
                       </first>
-                      <second>363</second>
+                      <second>238</second>
                     </item>
                   </second>
                 </item>
               </inlineStackInfo>
               <originalName>sum_rot</originalName>
-              <rtlName>fadd_32ns_32ns_32_11_full_dsp_1_U444</rtlName>
+              <rtlName>fadd_32ns_32ns_32_11_full_dsp_1_U449</rtlName>
               <control>auto</control>
               <opType>fadd</opType>
               <implIndex>fulldsp</implIndex>
@@ -9870,33 +8883,26 @@
             <Obj>
               <type>0</type>
               <id>205</id>
-              <name>_ln228</name>
+              <name>_ln238</name>
               <fileName>../gen/Hls_Layers_UpConv.tpp</fileName>
               <fileDirectory>../.</fileDirectory>
-              <lineNumber>228</lineNumber>
-              <contextFuncName>Compute_Pixel_Stats&amp;lt;32, 480, 30, 480&amp;gt;</contextFuncName>
-              <contextNormFuncName>Compute_Pixel_Stats_32_480_30_480_s</contextNormFuncName>
+              <lineNumber>238</lineNumber>
+              <contextFuncName>UpConv_Fused_Row&amp;lt;8, 16, 16, 960, 480&amp;gt;</contextFuncName>
+              <contextNormFuncName>UpConv_Fused_Row_8_16_16_960_480_s</contextNormFuncName>
               <inlineStackInfo>
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
                   <first>/home/hoinguyen/Documents/Vitis/UpConv_HLS/upconv_block0</first>
                   <second>
-                    <count>2</count>
+                    <count>1</count>
                     <item_version>0</item_version>
-                    <item>
-                      <first>
-                        <first>../gen/Hls_Layers_UpConv.tpp</first>
-                        <second>Compute_Pixel_Stats&amp;lt;32, 480, 30, 480&amp;gt;</second>
-                      </first>
-                      <second>228</second>
-                    </item>
                     <item>
                       <first>
                         <first>../gen/Hls_Layers_UpConv.tpp</first>
                         <second>UpConv_Fused_Row&amp;lt;8, 16, 16, 960, 480&amp;gt;</second>
                       </first>
-                      <second>363</second>
+                      <second>238</second>
                     </item>
                   </second>
                 </item>
@@ -9948,33 +8954,26 @@
             <Obj>
               <type>0</type>
               <id>207</id>
-              <name>sum_rot_6_write_ln228</name>
+              <name>sum_rot_6_write_ln238</name>
               <fileName>../gen/Hls_Layers_UpConv.tpp</fileName>
               <fileDirectory>../.</fileDirectory>
-              <lineNumber>228</lineNumber>
-              <contextFuncName>Compute_Pixel_Stats&amp;lt;32, 480, 30, 480&amp;gt;</contextFuncName>
-              <contextNormFuncName>Compute_Pixel_Stats_32_480_30_480_s</contextNormFuncName>
+              <lineNumber>238</lineNumber>
+              <contextFuncName>UpConv_Fused_Row&amp;lt;8, 16, 16, 960, 480&amp;gt;</contextFuncName>
+              <contextNormFuncName>UpConv_Fused_Row_8_16_16_960_480_s</contextNormFuncName>
               <inlineStackInfo>
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
                   <first>/home/hoinguyen/Documents/Vitis/UpConv_HLS/upconv_block0</first>
                   <second>
-                    <count>2</count>
+                    <count>1</count>
                     <item_version>0</item_version>
-                    <item>
-                      <first>
-                        <first>../gen/Hls_Layers_UpConv.tpp</first>
-                        <second>Compute_Pixel_Stats&amp;lt;32, 480, 30, 480&amp;gt;</second>
-                      </first>
-                      <second>228</second>
-                    </item>
                     <item>
                       <first>
                         <first>../gen/Hls_Layers_UpConv.tpp</first>
                         <second>UpConv_Fused_Row&amp;lt;8, 16, 16, 960, 480&amp;gt;</second>
                       </first>
-                      <second>363</second>
+                      <second>238</second>
                     </item>
                   </second>
                 </item>
@@ -10013,33 +9012,26 @@
             <Obj>
               <type>0</type>
               <id>208</id>
-              <name>br_ln228</name>
+              <name>br_ln238</name>
               <fileName>../gen/Hls_Layers_UpConv.tpp</fileName>
               <fileDirectory>../.</fileDirectory>
-              <lineNumber>228</lineNumber>
-              <contextFuncName>Compute_Pixel_Stats&amp;lt;32, 480, 30, 480&amp;gt;</contextFuncName>
-              <contextNormFuncName>Compute_Pixel_Stats_32_480_30_480_s</contextNormFuncName>
+              <lineNumber>238</lineNumber>
+              <contextFuncName>UpConv_Fused_Row&amp;lt;8, 16, 16, 960, 480&amp;gt;</contextFuncName>
+              <contextNormFuncName>UpConv_Fused_Row_8_16_16_960_480_s</contextNormFuncName>
               <inlineStackInfo>
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
                   <first>/home/hoinguyen/Documents/Vitis/UpConv_HLS/upconv_block0</first>
                   <second>
-                    <count>2</count>
+                    <count>1</count>
                     <item_version>0</item_version>
-                    <item>
-                      <first>
-                        <first>../gen/Hls_Layers_UpConv.tpp</first>
-                        <second>Compute_Pixel_Stats&amp;lt;32, 480, 30, 480&amp;gt;</second>
-                      </first>
-                      <second>228</second>
-                    </item>
                     <item>
                       <first>
                         <first>../gen/Hls_Layers_UpConv.tpp</first>
                         <second>UpConv_Fused_Row&amp;lt;8, 16, 16, 960, 480&amp;gt;</second>
                       </first>
-                      <second>363</second>
+                      <second>238</second>
                     </item>
                   </second>
                 </item>
@@ -10076,33 +9068,26 @@
             <Obj>
               <type>0</type>
               <id>210</id>
-              <name>sum_rot_5_write_ln228</name>
+              <name>sum_rot_5_write_ln238</name>
               <fileName>../gen/Hls_Layers_UpConv.tpp</fileName>
               <fileDirectory>../.</fileDirectory>
-              <lineNumber>228</lineNumber>
-              <contextFuncName>Compute_Pixel_Stats&amp;lt;32, 480, 30, 480&amp;gt;</contextFuncName>
-              <contextNormFuncName>Compute_Pixel_Stats_32_480_30_480_s</contextNormFuncName>
+              <lineNumber>238</lineNumber>
+              <contextFuncName>UpConv_Fused_Row&amp;lt;8, 16, 16, 960, 480&amp;gt;</contextFuncName>
+              <contextNormFuncName>UpConv_Fused_Row_8_16_16_960_480_s</contextNormFuncName>
               <inlineStackInfo>
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
                   <first>/home/hoinguyen/Documents/Vitis/UpConv_HLS/upconv_block0</first>
                   <second>
-                    <count>2</count>
+                    <count>1</count>
                     <item_version>0</item_version>
-                    <item>
-                      <first>
-                        <first>../gen/Hls_Layers_UpConv.tpp</first>
-                        <second>Compute_Pixel_Stats&amp;lt;32, 480, 30, 480&amp;gt;</second>
-                      </first>
-                      <second>228</second>
-                    </item>
                     <item>
                       <first>
                         <first>../gen/Hls_Layers_UpConv.tpp</first>
                         <second>UpConv_Fused_Row&amp;lt;8, 16, 16, 960, 480&amp;gt;</second>
                       </first>
-                      <second>363</second>
+                      <second>238</second>
                     </item>
                   </second>
                 </item>
@@ -10141,33 +9126,26 @@
             <Obj>
               <type>0</type>
               <id>211</id>
-              <name>br_ln228</name>
+              <name>br_ln238</name>
               <fileName>../gen/Hls_Layers_UpConv.tpp</fileName>
               <fileDirectory>../.</fileDirectory>
-              <lineNumber>228</lineNumber>
-              <contextFuncName>Compute_Pixel_Stats&amp;lt;32, 480, 30, 480&amp;gt;</contextFuncName>
-              <contextNormFuncName>Compute_Pixel_Stats_32_480_30_480_s</contextNormFuncName>
+              <lineNumber>238</lineNumber>
+              <contextFuncName>UpConv_Fused_Row&amp;lt;8, 16, 16, 960, 480&amp;gt;</contextFuncName>
+              <contextNormFuncName>UpConv_Fused_Row_8_16_16_960_480_s</contextNormFuncName>
               <inlineStackInfo>
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
                   <first>/home/hoinguyen/Documents/Vitis/UpConv_HLS/upconv_block0</first>
                   <second>
-                    <count>2</count>
+                    <count>1</count>
                     <item_version>0</item_version>
-                    <item>
-                      <first>
-                        <first>../gen/Hls_Layers_UpConv.tpp</first>
-                        <second>Compute_Pixel_Stats&amp;lt;32, 480, 30, 480&amp;gt;</second>
-                      </first>
-                      <second>228</second>
-                    </item>
                     <item>
                       <first>
                         <first>../gen/Hls_Layers_UpConv.tpp</first>
                         <second>UpConv_Fused_Row&amp;lt;8, 16, 16, 960, 480&amp;gt;</second>
                       </first>
-                      <second>363</second>
+                      <second>238</second>
                     </item>
                   </second>
                 </item>
@@ -10204,33 +9182,26 @@
             <Obj>
               <type>0</type>
               <id>213</id>
-              <name>sum_rot_4_write_ln228</name>
+              <name>sum_rot_4_write_ln238</name>
               <fileName>../gen/Hls_Layers_UpConv.tpp</fileName>
               <fileDirectory>../.</fileDirectory>
-              <lineNumber>228</lineNumber>
-              <contextFuncName>Compute_Pixel_Stats&amp;lt;32, 480, 30, 480&amp;gt;</contextFuncName>
-              <contextNormFuncName>Compute_Pixel_Stats_32_480_30_480_s</contextNormFuncName>
+              <lineNumber>238</lineNumber>
+              <contextFuncName>UpConv_Fused_Row&amp;lt;8, 16, 16, 960, 480&amp;gt;</contextFuncName>
+              <contextNormFuncName>UpConv_Fused_Row_8_16_16_960_480_s</contextNormFuncName>
               <inlineStackInfo>
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
                   <first>/home/hoinguyen/Documents/Vitis/UpConv_HLS/upconv_block0</first>
                   <second>
-                    <count>2</count>
+                    <count>1</count>
                     <item_version>0</item_version>
-                    <item>
-                      <first>
-                        <first>../gen/Hls_Layers_UpConv.tpp</first>
-                        <second>Compute_Pixel_Stats&amp;lt;32, 480, 30, 480&amp;gt;</second>
-                      </first>
-                      <second>228</second>
-                    </item>
                     <item>
                       <first>
                         <first>../gen/Hls_Layers_UpConv.tpp</first>
                         <second>UpConv_Fused_Row&amp;lt;8, 16, 16, 960, 480&amp;gt;</second>
                       </first>
-                      <second>363</second>
+                      <second>238</second>
                     </item>
                   </second>
                 </item>
@@ -10269,33 +9240,26 @@
             <Obj>
               <type>0</type>
               <id>214</id>
-              <name>br_ln228</name>
+              <name>br_ln238</name>
               <fileName>../gen/Hls_Layers_UpConv.tpp</fileName>
               <fileDirectory>../.</fileDirectory>
-              <lineNumber>228</lineNumber>
-              <contextFuncName>Compute_Pixel_Stats&amp;lt;32, 480, 30, 480&amp;gt;</contextFuncName>
-              <contextNormFuncName>Compute_Pixel_Stats_32_480_30_480_s</contextNormFuncName>
+              <lineNumber>238</lineNumber>
+              <contextFuncName>UpConv_Fused_Row&amp;lt;8, 16, 16, 960, 480&amp;gt;</contextFuncName>
+              <contextNormFuncName>UpConv_Fused_Row_8_16_16_960_480_s</contextNormFuncName>
               <inlineStackInfo>
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
                   <first>/home/hoinguyen/Documents/Vitis/UpConv_HLS/upconv_block0</first>
                   <second>
-                    <count>2</count>
+                    <count>1</count>
                     <item_version>0</item_version>
-                    <item>
-                      <first>
-                        <first>../gen/Hls_Layers_UpConv.tpp</first>
-                        <second>Compute_Pixel_Stats&amp;lt;32, 480, 30, 480&amp;gt;</second>
-                      </first>
-                      <second>228</second>
-                    </item>
                     <item>
                       <first>
                         <first>../gen/Hls_Layers_UpConv.tpp</first>
                         <second>UpConv_Fused_Row&amp;lt;8, 16, 16, 960, 480&amp;gt;</second>
                       </first>
-                      <second>363</second>
+                      <second>238</second>
                     </item>
                   </second>
                 </item>
@@ -10332,33 +9296,26 @@
             <Obj>
               <type>0</type>
               <id>216</id>
-              <name>sum_rot_3_write_ln228</name>
+              <name>sum_rot_3_write_ln238</name>
               <fileName>../gen/Hls_Layers_UpConv.tpp</fileName>
               <fileDirectory>../.</fileDirectory>
-              <lineNumber>228</lineNumber>
-              <contextFuncName>Compute_Pixel_Stats&amp;lt;32, 480, 30, 480&amp;gt;</contextFuncName>
-              <contextNormFuncName>Compute_Pixel_Stats_32_480_30_480_s</contextNormFuncName>
+              <lineNumber>238</lineNumber>
+              <contextFuncName>UpConv_Fused_Row&amp;lt;8, 16, 16, 960, 480&amp;gt;</contextFuncName>
+              <contextNormFuncName>UpConv_Fused_Row_8_16_16_960_480_s</contextNormFuncName>
               <inlineStackInfo>
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
                   <first>/home/hoinguyen/Documents/Vitis/UpConv_HLS/upconv_block0</first>
                   <second>
-                    <count>2</count>
+                    <count>1</count>
                     <item_version>0</item_version>
-                    <item>
-                      <first>
-                        <first>../gen/Hls_Layers_UpConv.tpp</first>
-                        <second>Compute_Pixel_Stats&amp;lt;32, 480, 30, 480&amp;gt;</second>
-                      </first>
-                      <second>228</second>
-                    </item>
                     <item>
                       <first>
                         <first>../gen/Hls_Layers_UpConv.tpp</first>
                         <second>UpConv_Fused_Row&amp;lt;8, 16, 16, 960, 480&amp;gt;</second>
                       </first>
-                      <second>363</second>
+                      <second>238</second>
                     </item>
                   </second>
                 </item>
@@ -10397,33 +9354,26 @@
             <Obj>
               <type>0</type>
               <id>217</id>
-              <name>br_ln228</name>
+              <name>br_ln238</name>
               <fileName>../gen/Hls_Layers_UpConv.tpp</fileName>
               <fileDirectory>../.</fileDirectory>
-              <lineNumber>228</lineNumber>
-              <contextFuncName>Compute_Pixel_Stats&amp;lt;32, 480, 30, 480&amp;gt;</contextFuncName>
-              <contextNormFuncName>Compute_Pixel_Stats_32_480_30_480_s</contextNormFuncName>
+              <lineNumber>238</lineNumber>
+              <contextFuncName>UpConv_Fused_Row&amp;lt;8, 16, 16, 960, 480&amp;gt;</contextFuncName>
+              <contextNormFuncName>UpConv_Fused_Row_8_16_16_960_480_s</contextNormFuncName>
               <inlineStackInfo>
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
                   <first>/home/hoinguyen/Documents/Vitis/UpConv_HLS/upconv_block0</first>
                   <second>
-                    <count>2</count>
+                    <count>1</count>
                     <item_version>0</item_version>
-                    <item>
-                      <first>
-                        <first>../gen/Hls_Layers_UpConv.tpp</first>
-                        <second>Compute_Pixel_Stats&amp;lt;32, 480, 30, 480&amp;gt;</second>
-                      </first>
-                      <second>228</second>
-                    </item>
                     <item>
                       <first>
                         <first>../gen/Hls_Layers_UpConv.tpp</first>
                         <second>UpConv_Fused_Row&amp;lt;8, 16, 16, 960, 480&amp;gt;</second>
                       </first>
-                      <second>363</second>
+                      <second>238</second>
                     </item>
                   </second>
                 </item>
@@ -10460,33 +9410,26 @@
             <Obj>
               <type>0</type>
               <id>219</id>
-              <name>sum_rot_2_write_ln228</name>
+              <name>sum_rot_2_write_ln238</name>
               <fileName>../gen/Hls_Layers_UpConv.tpp</fileName>
               <fileDirectory>../.</fileDirectory>
-              <lineNumber>228</lineNumber>
-              <contextFuncName>Compute_Pixel_Stats&amp;lt;32, 480, 30, 480&amp;gt;</contextFuncName>
-              <contextNormFuncName>Compute_Pixel_Stats_32_480_30_480_s</contextNormFuncName>
+              <lineNumber>238</lineNumber>
+              <contextFuncName>UpConv_Fused_Row&amp;lt;8, 16, 16, 960, 480&amp;gt;</contextFuncName>
+              <contextNormFuncName>UpConv_Fused_Row_8_16_16_960_480_s</contextNormFuncName>
               <inlineStackInfo>
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
                   <first>/home/hoinguyen/Documents/Vitis/UpConv_HLS/upconv_block0</first>
                   <second>
-                    <count>2</count>
+                    <count>1</count>
                     <item_version>0</item_version>
-                    <item>
-                      <first>
-                        <first>../gen/Hls_Layers_UpConv.tpp</first>
-                        <second>Compute_Pixel_Stats&amp;lt;32, 480, 30, 480&amp;gt;</second>
-                      </first>
-                      <second>228</second>
-                    </item>
                     <item>
                       <first>
                         <first>../gen/Hls_Layers_UpConv.tpp</first>
                         <second>UpConv_Fused_Row&amp;lt;8, 16, 16, 960, 480&amp;gt;</second>
                       </first>
-                      <second>363</second>
+                      <second>238</second>
                     </item>
                   </second>
                 </item>
@@ -10525,33 +9468,26 @@
             <Obj>
               <type>0</type>
               <id>220</id>
-              <name>br_ln228</name>
+              <name>br_ln238</name>
               <fileName>../gen/Hls_Layers_UpConv.tpp</fileName>
               <fileDirectory>../.</fileDirectory>
-              <lineNumber>228</lineNumber>
-              <contextFuncName>Compute_Pixel_Stats&amp;lt;32, 480, 30, 480&amp;gt;</contextFuncName>
-              <contextNormFuncName>Compute_Pixel_Stats_32_480_30_480_s</contextNormFuncName>
+              <lineNumber>238</lineNumber>
+              <contextFuncName>UpConv_Fused_Row&amp;lt;8, 16, 16, 960, 480&amp;gt;</contextFuncName>
+              <contextNormFuncName>UpConv_Fused_Row_8_16_16_960_480_s</contextNormFuncName>
               <inlineStackInfo>
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
                   <first>/home/hoinguyen/Documents/Vitis/UpConv_HLS/upconv_block0</first>
                   <second>
-                    <count>2</count>
+                    <count>1</count>
                     <item_version>0</item_version>
-                    <item>
-                      <first>
-                        <first>../gen/Hls_Layers_UpConv.tpp</first>
-                        <second>Compute_Pixel_Stats&amp;lt;32, 480, 30, 480&amp;gt;</second>
-                      </first>
-                      <second>228</second>
-                    </item>
                     <item>
                       <first>
                         <first>../gen/Hls_Layers_UpConv.tpp</first>
                         <second>UpConv_Fused_Row&amp;lt;8, 16, 16, 960, 480&amp;gt;</second>
                       </first>
-                      <second>363</second>
+                      <second>238</second>
                     </item>
                   </second>
                 </item>
@@ -10588,33 +9524,26 @@
             <Obj>
               <type>0</type>
               <id>222</id>
-              <name>sum_rot_1_write_ln228</name>
+              <name>sum_rot_1_write_ln238</name>
               <fileName>../gen/Hls_Layers_UpConv.tpp</fileName>
               <fileDirectory>../.</fileDirectory>
-              <lineNumber>228</lineNumber>
-              <contextFuncName>Compute_Pixel_Stats&amp;lt;32, 480, 30, 480&amp;gt;</contextFuncName>
-              <contextNormFuncName>Compute_Pixel_Stats_32_480_30_480_s</contextNormFuncName>
+              <lineNumber>238</lineNumber>
+              <contextFuncName>UpConv_Fused_Row&amp;lt;8, 16, 16, 960, 480&amp;gt;</contextFuncName>
+              <contextNormFuncName>UpConv_Fused_Row_8_16_16_960_480_s</contextNormFuncName>
               <inlineStackInfo>
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
                   <first>/home/hoinguyen/Documents/Vitis/UpConv_HLS/upconv_block0</first>
                   <second>
-                    <count>2</count>
+                    <count>1</count>
                     <item_version>0</item_version>
-                    <item>
-                      <first>
-                        <first>../gen/Hls_Layers_UpConv.tpp</first>
-                        <second>Compute_Pixel_Stats&amp;lt;32, 480, 30, 480&amp;gt;</second>
-                      </first>
-                      <second>228</second>
-                    </item>
                     <item>
                       <first>
                         <first>../gen/Hls_Layers_UpConv.tpp</first>
                         <second>UpConv_Fused_Row&amp;lt;8, 16, 16, 960, 480&amp;gt;</second>
                       </first>
-                      <second>363</second>
+                      <second>238</second>
                     </item>
                   </second>
                 </item>
@@ -10653,33 +9582,26 @@
             <Obj>
               <type>0</type>
               <id>223</id>
-              <name>br_ln228</name>
+              <name>br_ln238</name>
               <fileName>../gen/Hls_Layers_UpConv.tpp</fileName>
               <fileDirectory>../.</fileDirectory>
-              <lineNumber>228</lineNumber>
-              <contextFuncName>Compute_Pixel_Stats&amp;lt;32, 480, 30, 480&amp;gt;</contextFuncName>
-              <contextNormFuncName>Compute_Pixel_Stats_32_480_30_480_s</contextNormFuncName>
+              <lineNumber>238</lineNumber>
+              <contextFuncName>UpConv_Fused_Row&amp;lt;8, 16, 16, 960, 480&amp;gt;</contextFuncName>
+              <contextNormFuncName>UpConv_Fused_Row_8_16_16_960_480_s</contextNormFuncName>
               <inlineStackInfo>
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
                   <first>/home/hoinguyen/Documents/Vitis/UpConv_HLS/upconv_block0</first>
                   <second>
-                    <count>2</count>
+                    <count>1</count>
                     <item_version>0</item_version>
-                    <item>
-                      <first>
-                        <first>../gen/Hls_Layers_UpConv.tpp</first>
-                        <second>Compute_Pixel_Stats&amp;lt;32, 480, 30, 480&amp;gt;</second>
-                      </first>
-                      <second>228</second>
-                    </item>
                     <item>
                       <first>
                         <first>../gen/Hls_Layers_UpConv.tpp</first>
                         <second>UpConv_Fused_Row&amp;lt;8, 16, 16, 960, 480&amp;gt;</second>
                       </first>
-                      <second>363</second>
+                      <second>238</second>
                     </item>
                   </second>
                 </item>
@@ -10716,33 +9638,26 @@
             <Obj>
               <type>0</type>
               <id>225</id>
-              <name>sum_rot_write_ln228</name>
+              <name>sum_rot_write_ln238</name>
               <fileName>../gen/Hls_Layers_UpConv.tpp</fileName>
               <fileDirectory>../.</fileDirectory>
-              <lineNumber>228</lineNumber>
-              <contextFuncName>Compute_Pixel_Stats&amp;lt;32, 480, 30, 480&amp;gt;</contextFuncName>
-              <contextNormFuncName>Compute_Pixel_Stats_32_480_30_480_s</contextNormFuncName>
+              <lineNumber>238</lineNumber>
+              <contextFuncName>UpConv_Fused_Row&amp;lt;8, 16, 16, 960, 480&amp;gt;</contextFuncName>
+              <contextNormFuncName>UpConv_Fused_Row_8_16_16_960_480_s</contextNormFuncName>
               <inlineStackInfo>
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
                   <first>/home/hoinguyen/Documents/Vitis/UpConv_HLS/upconv_block0</first>
                   <second>
-                    <count>2</count>
+                    <count>1</count>
                     <item_version>0</item_version>
-                    <item>
-                      <first>
-                        <first>../gen/Hls_Layers_UpConv.tpp</first>
-                        <second>Compute_Pixel_Stats&amp;lt;32, 480, 30, 480&amp;gt;</second>
-                      </first>
-                      <second>228</second>
-                    </item>
                     <item>
                       <first>
                         <first>../gen/Hls_Layers_UpConv.tpp</first>
                         <second>UpConv_Fused_Row&amp;lt;8, 16, 16, 960, 480&amp;gt;</second>
                       </first>
-                      <second>363</second>
+                      <second>238</second>
                     </item>
                   </second>
                 </item>
@@ -10781,33 +9696,26 @@
             <Obj>
               <type>0</type>
               <id>226</id>
-              <name>br_ln228</name>
+              <name>br_ln238</name>
               <fileName>../gen/Hls_Layers_UpConv.tpp</fileName>
               <fileDirectory>../.</fileDirectory>
-              <lineNumber>228</lineNumber>
-              <contextFuncName>Compute_Pixel_Stats&amp;lt;32, 480, 30, 480&amp;gt;</contextFuncName>
-              <contextNormFuncName>Compute_Pixel_Stats_32_480_30_480_s</contextNormFuncName>
+              <lineNumber>238</lineNumber>
+              <contextFuncName>UpConv_Fused_Row&amp;lt;8, 16, 16, 960, 480&amp;gt;</contextFuncName>
+              <contextNormFuncName>UpConv_Fused_Row_8_16_16_960_480_s</contextNormFuncName>
               <inlineStackInfo>
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
                   <first>/home/hoinguyen/Documents/Vitis/UpConv_HLS/upconv_block0</first>
                   <second>
-                    <count>2</count>
+                    <count>1</count>
                     <item_version>0</item_version>
-                    <item>
-                      <first>
-                        <first>../gen/Hls_Layers_UpConv.tpp</first>
-                        <second>Compute_Pixel_Stats&amp;lt;32, 480, 30, 480&amp;gt;</second>
-                      </first>
-                      <second>228</second>
-                    </item>
                     <item>
                       <first>
                         <first>../gen/Hls_Layers_UpConv.tpp</first>
                         <second>UpConv_Fused_Row&amp;lt;8, 16, 16, 960, 480&amp;gt;</second>
                       </first>
-                      <second>363</second>
+                      <second>238</second>
                     </item>
                   </second>
                 </item>
@@ -10844,33 +9752,26 @@
             <Obj>
               <type>0</type>
               <id>228</id>
-              <name>sum_rot_7_write_ln228</name>
+              <name>sum_rot_7_write_ln238</name>
               <fileName>../gen/Hls_Layers_UpConv.tpp</fileName>
               <fileDirectory>../.</fileDirectory>
-              <lineNumber>228</lineNumber>
-              <contextFuncName>Compute_Pixel_Stats&amp;lt;32, 480, 30, 480&amp;gt;</contextFuncName>
-              <contextNormFuncName>Compute_Pixel_Stats_32_480_30_480_s</contextNormFuncName>
+              <lineNumber>238</lineNumber>
+              <contextFuncName>UpConv_Fused_Row&amp;lt;8, 16, 16, 960, 480&amp;gt;</contextFuncName>
+              <contextNormFuncName>UpConv_Fused_Row_8_16_16_960_480_s</contextNormFuncName>
               <inlineStackInfo>
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
                   <first>/home/hoinguyen/Documents/Vitis/UpConv_HLS/upconv_block0</first>
                   <second>
-                    <count>2</count>
+                    <count>1</count>
                     <item_version>0</item_version>
-                    <item>
-                      <first>
-                        <first>../gen/Hls_Layers_UpConv.tpp</first>
-                        <second>Compute_Pixel_Stats&amp;lt;32, 480, 30, 480&amp;gt;</second>
-                      </first>
-                      <second>228</second>
-                    </item>
                     <item>
                       <first>
                         <first>../gen/Hls_Layers_UpConv.tpp</first>
                         <second>UpConv_Fused_Row&amp;lt;8, 16, 16, 960, 480&amp;gt;</second>
                       </first>
-                      <second>363</second>
+                      <second>238</second>
                     </item>
                   </second>
                 </item>
@@ -10909,33 +9810,26 @@
             <Obj>
               <type>0</type>
               <id>229</id>
-              <name>br_ln228</name>
+              <name>br_ln238</name>
               <fileName>../gen/Hls_Layers_UpConv.tpp</fileName>
               <fileDirectory>../.</fileDirectory>
-              <lineNumber>228</lineNumber>
-              <contextFuncName>Compute_Pixel_Stats&amp;lt;32, 480, 30, 480&amp;gt;</contextFuncName>
-              <contextNormFuncName>Compute_Pixel_Stats_32_480_30_480_s</contextNormFuncName>
+              <lineNumber>238</lineNumber>
+              <contextFuncName>UpConv_Fused_Row&amp;lt;8, 16, 16, 960, 480&amp;gt;</contextFuncName>
+              <contextNormFuncName>UpConv_Fused_Row_8_16_16_960_480_s</contextNormFuncName>
               <inlineStackInfo>
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
                   <first>/home/hoinguyen/Documents/Vitis/UpConv_HLS/upconv_block0</first>
                   <second>
-                    <count>2</count>
+                    <count>1</count>
                     <item_version>0</item_version>
-                    <item>
-                      <first>
-                        <first>../gen/Hls_Layers_UpConv.tpp</first>
-                        <second>Compute_Pixel_Stats&amp;lt;32, 480, 30, 480&amp;gt;</second>
-                      </first>
-                      <second>228</second>
-                    </item>
                     <item>
                       <first>
                         <first>../gen/Hls_Layers_UpConv.tpp</first>
                         <second>UpConv_Fused_Row&amp;lt;8, 16, 16, 960, 480&amp;gt;</second>
                       </first>
-                      <second>363</second>
+                      <second>238</second>
                     </item>
                   </second>
                 </item>
@@ -10975,30 +9869,23 @@
               <name>sumsq_rot_load</name>
               <fileName>../gen/Hls_Layers_UpConv.tpp</fileName>
               <fileDirectory>../.</fileDirectory>
-              <lineNumber>229</lineNumber>
-              <contextFuncName>Compute_Pixel_Stats&amp;lt;32, 480, 30, 480&amp;gt;</contextFuncName>
-              <contextNormFuncName>Compute_Pixel_Stats_32_480_30_480_s</contextNormFuncName>
+              <lineNumber>238</lineNumber>
+              <contextFuncName>UpConv_Fused_Row&amp;lt;8, 16, 16, 960, 480&amp;gt;</contextFuncName>
+              <contextNormFuncName>UpConv_Fused_Row_8_16_16_960_480_s</contextNormFuncName>
               <inlineStackInfo>
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
                   <first>/home/hoinguyen/Documents/Vitis/UpConv_HLS/upconv_block0</first>
                   <second>
-                    <count>2</count>
+                    <count>1</count>
                     <item_version>0</item_version>
-                    <item>
-                      <first>
-                        <first>../gen/Hls_Layers_UpConv.tpp</first>
-                        <second>Compute_Pixel_Stats&amp;lt;32, 480, 30, 480&amp;gt;</second>
-                      </first>
-                      <second>229</second>
-                    </item>
                     <item>
                       <first>
                         <first>../gen/Hls_Layers_UpConv.tpp</first>
                         <second>UpConv_Fused_Row&amp;lt;8, 16, 16, 960, 480&amp;gt;</second>
                       </first>
-                      <second>363</second>
+                      <second>238</second>
                     </item>
                   </second>
                 </item>
@@ -11038,30 +9925,23 @@
               <name>sumsq_rot_1_load</name>
               <fileName>../gen/Hls_Layers_UpConv.tpp</fileName>
               <fileDirectory>../.</fileDirectory>
-              <lineNumber>229</lineNumber>
-              <contextFuncName>Compute_Pixel_Stats&amp;lt;32, 480, 30, 480&amp;gt;</contextFuncName>
-              <contextNormFuncName>Compute_Pixel_Stats_32_480_30_480_s</contextNormFuncName>
+              <lineNumber>238</lineNumber>
+              <contextFuncName>UpConv_Fused_Row&amp;lt;8, 16, 16, 960, 480&amp;gt;</contextFuncName>
+              <contextNormFuncName>UpConv_Fused_Row_8_16_16_960_480_s</contextNormFuncName>
               <inlineStackInfo>
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
                   <first>/home/hoinguyen/Documents/Vitis/UpConv_HLS/upconv_block0</first>
                   <second>
-                    <count>2</count>
+                    <count>1</count>
                     <item_version>0</item_version>
-                    <item>
-                      <first>
-                        <first>../gen/Hls_Layers_UpConv.tpp</first>
-                        <second>Compute_Pixel_Stats&amp;lt;32, 480, 30, 480&amp;gt;</second>
-                      </first>
-                      <second>229</second>
-                    </item>
                     <item>
                       <first>
                         <first>../gen/Hls_Layers_UpConv.tpp</first>
                         <second>UpConv_Fused_Row&amp;lt;8, 16, 16, 960, 480&amp;gt;</second>
                       </first>
-                      <second>363</second>
+                      <second>238</second>
                     </item>
                   </second>
                 </item>
@@ -11101,30 +9981,23 @@
               <name>sumsq_rot_2_load</name>
               <fileName>../gen/Hls_Layers_UpConv.tpp</fileName>
               <fileDirectory>../.</fileDirectory>
-              <lineNumber>229</lineNumber>
-              <contextFuncName>Compute_Pixel_Stats&amp;lt;32, 480, 30, 480&amp;gt;</contextFuncName>
-              <contextNormFuncName>Compute_Pixel_Stats_32_480_30_480_s</contextNormFuncName>
+              <lineNumber>238</lineNumber>
+              <contextFuncName>UpConv_Fused_Row&amp;lt;8, 16, 16, 960, 480&amp;gt;</contextFuncName>
+              <contextNormFuncName>UpConv_Fused_Row_8_16_16_960_480_s</contextNormFuncName>
               <inlineStackInfo>
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
                   <first>/home/hoinguyen/Documents/Vitis/UpConv_HLS/upconv_block0</first>
                   <second>
-                    <count>2</count>
+                    <count>1</count>
                     <item_version>0</item_version>
-                    <item>
-                      <first>
-                        <first>../gen/Hls_Layers_UpConv.tpp</first>
-                        <second>Compute_Pixel_Stats&amp;lt;32, 480, 30, 480&amp;gt;</second>
-                      </first>
-                      <second>229</second>
-                    </item>
                     <item>
                       <first>
                         <first>../gen/Hls_Layers_UpConv.tpp</first>
                         <second>UpConv_Fused_Row&amp;lt;8, 16, 16, 960, 480&amp;gt;</second>
                       </first>
-                      <second>363</second>
+                      <second>238</second>
                     </item>
                   </second>
                 </item>
@@ -11164,30 +10037,23 @@
               <name>sumsq_rot_3_load</name>
               <fileName>../gen/Hls_Layers_UpConv.tpp</fileName>
               <fileDirectory>../.</fileDirectory>
-              <lineNumber>229</lineNumber>
-              <contextFuncName>Compute_Pixel_Stats&amp;lt;32, 480, 30, 480&amp;gt;</contextFuncName>
-              <contextNormFuncName>Compute_Pixel_Stats_32_480_30_480_s</contextNormFuncName>
+              <lineNumber>238</lineNumber>
+              <contextFuncName>UpConv_Fused_Row&amp;lt;8, 16, 16, 960, 480&amp;gt;</contextFuncName>
+              <contextNormFuncName>UpConv_Fused_Row_8_16_16_960_480_s</contextNormFuncName>
               <inlineStackInfo>
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
                   <first>/home/hoinguyen/Documents/Vitis/UpConv_HLS/upconv_block0</first>
                   <second>
-                    <count>2</count>
+                    <count>1</count>
                     <item_version>0</item_version>
-                    <item>
-                      <first>
-                        <first>../gen/Hls_Layers_UpConv.tpp</first>
-                        <second>Compute_Pixel_Stats&amp;lt;32, 480, 30, 480&amp;gt;</second>
-                      </first>
-                      <second>229</second>
-                    </item>
                     <item>
                       <first>
                         <first>../gen/Hls_Layers_UpConv.tpp</first>
                         <second>UpConv_Fused_Row&amp;lt;8, 16, 16, 960, 480&amp;gt;</second>
                       </first>
-                      <second>363</second>
+                      <second>238</second>
                     </item>
                   </second>
                 </item>
@@ -11227,30 +10093,23 @@
               <name>sumsq_rot_4_load</name>
               <fileName>../gen/Hls_Layers_UpConv.tpp</fileName>
               <fileDirectory>../.</fileDirectory>
-              <lineNumber>229</lineNumber>
-              <contextFuncName>Compute_Pixel_Stats&amp;lt;32, 480, 30, 480&amp;gt;</contextFuncName>
-              <contextNormFuncName>Compute_Pixel_Stats_32_480_30_480_s</contextNormFuncName>
+              <lineNumber>238</lineNumber>
+              <contextFuncName>UpConv_Fused_Row&amp;lt;8, 16, 16, 960, 480&amp;gt;</contextFuncName>
+              <contextNormFuncName>UpConv_Fused_Row_8_16_16_960_480_s</contextNormFuncName>
               <inlineStackInfo>
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
                   <first>/home/hoinguyen/Documents/Vitis/UpConv_HLS/upconv_block0</first>
                   <second>
-                    <count>2</count>
+                    <count>1</count>
                     <item_version>0</item_version>
-                    <item>
-                      <first>
-                        <first>../gen/Hls_Layers_UpConv.tpp</first>
-                        <second>Compute_Pixel_Stats&amp;lt;32, 480, 30, 480&amp;gt;</second>
-                      </first>
-                      <second>229</second>
-                    </item>
                     <item>
                       <first>
                         <first>../gen/Hls_Layers_UpConv.tpp</first>
                         <second>UpConv_Fused_Row&amp;lt;8, 16, 16, 960, 480&amp;gt;</second>
                       </first>
-                      <second>363</second>
+                      <second>238</second>
                     </item>
                   </second>
                 </item>
@@ -11290,30 +10149,23 @@
               <name>sumsq_rot_5_load</name>
               <fileName>../gen/Hls_Layers_UpConv.tpp</fileName>
               <fileDirectory>../.</fileDirectory>
-              <lineNumber>229</lineNumber>
-              <contextFuncName>Compute_Pixel_Stats&amp;lt;32, 480, 30, 480&amp;gt;</contextFuncName>
-              <contextNormFuncName>Compute_Pixel_Stats_32_480_30_480_s</contextNormFuncName>
+              <lineNumber>238</lineNumber>
+              <contextFuncName>UpConv_Fused_Row&amp;lt;8, 16, 16, 960, 480&amp;gt;</contextFuncName>
+              <contextNormFuncName>UpConv_Fused_Row_8_16_16_960_480_s</contextNormFuncName>
               <inlineStackInfo>
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
                   <first>/home/hoinguyen/Documents/Vitis/UpConv_HLS/upconv_block0</first>
                   <second>
-                    <count>2</count>
+                    <count>1</count>
                     <item_version>0</item_version>
-                    <item>
-                      <first>
-                        <first>../gen/Hls_Layers_UpConv.tpp</first>
-                        <second>Compute_Pixel_Stats&amp;lt;32, 480, 30, 480&amp;gt;</second>
-                      </first>
-                      <second>229</second>
-                    </item>
                     <item>
                       <first>
                         <first>../gen/Hls_Layers_UpConv.tpp</first>
                         <second>UpConv_Fused_Row&amp;lt;8, 16, 16, 960, 480&amp;gt;</second>
                       </first>
-                      <second>363</second>
+                      <second>238</second>
                     </item>
                   </second>
                 </item>
@@ -11353,30 +10205,23 @@
               <name>sumsq_rot_6_load</name>
               <fileName>../gen/Hls_Layers_UpConv.tpp</fileName>
               <fileDirectory>../.</fileDirectory>
-              <lineNumber>229</lineNumber>
-              <contextFuncName>Compute_Pixel_Stats&amp;lt;32, 480, 30, 480&amp;gt;</contextFuncName>
-              <contextNormFuncName>Compute_Pixel_Stats_32_480_30_480_s</contextNormFuncName>
+              <lineNumber>238</lineNumber>
+              <contextFuncName>UpConv_Fused_Row&amp;lt;8, 16, 16, 960, 480&amp;gt;</contextFuncName>
+              <contextNormFuncName>UpConv_Fused_Row_8_16_16_960_480_s</contextNormFuncName>
               <inlineStackInfo>
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
                   <first>/home/hoinguyen/Documents/Vitis/UpConv_HLS/upconv_block0</first>
                   <second>
-                    <count>2</count>
+                    <count>1</count>
                     <item_version>0</item_version>
-                    <item>
-                      <first>
-                        <first>../gen/Hls_Layers_UpConv.tpp</first>
-                        <second>Compute_Pixel_Stats&amp;lt;32, 480, 30, 480&amp;gt;</second>
-                      </first>
-                      <second>229</second>
-                    </item>
                     <item>
                       <first>
                         <first>../gen/Hls_Layers_UpConv.tpp</first>
                         <second>UpConv_Fused_Row&amp;lt;8, 16, 16, 960, 480&amp;gt;</second>
                       </first>
-                      <second>363</second>
+                      <second>238</second>
                     </item>
                   </second>
                 </item>
@@ -11416,30 +10261,23 @@
               <name>sumsq_rot_7_load</name>
               <fileName>../gen/Hls_Layers_UpConv.tpp</fileName>
               <fileDirectory>../.</fileDirectory>
-              <lineNumber>229</lineNumber>
-              <contextFuncName>Compute_Pixel_Stats&amp;lt;32, 480, 30, 480&amp;gt;</contextFuncName>
-              <contextNormFuncName>Compute_Pixel_Stats_32_480_30_480_s</contextNormFuncName>
+              <lineNumber>238</lineNumber>
+              <contextFuncName>UpConv_Fused_Row&amp;lt;8, 16, 16, 960, 480&amp;gt;</contextFuncName>
+              <contextNormFuncName>UpConv_Fused_Row_8_16_16_960_480_s</contextNormFuncName>
               <inlineStackInfo>
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
                   <first>/home/hoinguyen/Documents/Vitis/UpConv_HLS/upconv_block0</first>
                   <second>
-                    <count>2</count>
+                    <count>1</count>
                     <item_version>0</item_version>
-                    <item>
-                      <first>
-                        <first>../gen/Hls_Layers_UpConv.tpp</first>
-                        <second>Compute_Pixel_Stats&amp;lt;32, 480, 30, 480&amp;gt;</second>
-                      </first>
-                      <second>229</second>
-                    </item>
                     <item>
                       <first>
                         <first>../gen/Hls_Layers_UpConv.tpp</first>
                         <second>UpConv_Fused_Row&amp;lt;8, 16, 16, 960, 480&amp;gt;</second>
                       </first>
-                      <second>363</second>
+                      <second>238</second>
                     </item>
                   </second>
                 </item>
@@ -11476,39 +10314,32 @@
             <Obj>
               <type>0</type>
               <id>239</id>
-              <name>tmp_s</name>
+              <name>tmp_1</name>
               <fileName>../gen/Hls_Layers_UpConv.tpp</fileName>
               <fileDirectory>../.</fileDirectory>
-              <lineNumber>229</lineNumber>
-              <contextFuncName>Compute_Pixel_Stats&amp;lt;32, 480, 30, 480&amp;gt;</contextFuncName>
-              <contextNormFuncName>Compute_Pixel_Stats_32_480_30_480_s</contextNormFuncName>
+              <lineNumber>238</lineNumber>
+              <contextFuncName>UpConv_Fused_Row&amp;lt;8, 16, 16, 960, 480&amp;gt;</contextFuncName>
+              <contextNormFuncName>UpConv_Fused_Row_8_16_16_960_480_s</contextNormFuncName>
               <inlineStackInfo>
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
                   <first>/home/hoinguyen/Documents/Vitis/UpConv_HLS/upconv_block0</first>
                   <second>
-                    <count>2</count>
+                    <count>1</count>
                     <item_version>0</item_version>
-                    <item>
-                      <first>
-                        <first>../gen/Hls_Layers_UpConv.tpp</first>
-                        <second>Compute_Pixel_Stats&amp;lt;32, 480, 30, 480&amp;gt;</second>
-                      </first>
-                      <second>229</second>
-                    </item>
                     <item>
                       <first>
                         <first>../gen/Hls_Layers_UpConv.tpp</first>
                         <second>UpConv_Fused_Row&amp;lt;8, 16, 16, 960, 480&amp;gt;</second>
                       </first>
-                      <second>363</second>
+                      <second>238</second>
                     </item>
                   </second>
                 </item>
               </inlineStackInfo>
               <originalName/>
-              <rtlName>sparsemux_17_3_32_1_1_U476</rtlName>
+              <rtlName>sparsemux_17_3_32_1_1_U481</rtlName>
               <control>auto</control>
               <opType>sparsemux</opType>
               <implIndex>compactencoding_dontcare</implIndex>
@@ -11557,39 +10388,32 @@
             <Obj>
               <type>0</type>
               <id>240</id>
-              <name>add24_i</name>
+              <name>add8</name>
               <fileName>../gen/Hls_Layers_UpConv.tpp</fileName>
               <fileDirectory>../.</fileDirectory>
-              <lineNumber>229</lineNumber>
-              <contextFuncName>Compute_Pixel_Stats&amp;lt;32, 480, 30, 480&amp;gt;</contextFuncName>
-              <contextNormFuncName>Compute_Pixel_Stats_32_480_30_480_s</contextNormFuncName>
+              <lineNumber>238</lineNumber>
+              <contextFuncName>UpConv_Fused_Row&amp;lt;8, 16, 16, 960, 480&amp;gt;</contextFuncName>
+              <contextNormFuncName>UpConv_Fused_Row_8_16_16_960_480_s</contextNormFuncName>
               <inlineStackInfo>
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
                   <first>/home/hoinguyen/Documents/Vitis/UpConv_HLS/upconv_block0</first>
                   <second>
-                    <count>2</count>
+                    <count>1</count>
                     <item_version>0</item_version>
-                    <item>
-                      <first>
-                        <first>../gen/Hls_Layers_UpConv.tpp</first>
-                        <second>Compute_Pixel_Stats&amp;lt;32, 480, 30, 480&amp;gt;</second>
-                      </first>
-                      <second>229</second>
-                    </item>
                     <item>
                       <first>
                         <first>../gen/Hls_Layers_UpConv.tpp</first>
                         <second>UpConv_Fused_Row&amp;lt;8, 16, 16, 960, 480&amp;gt;</second>
                       </first>
-                      <second>363</second>
+                      <second>238</second>
                     </item>
                   </second>
                 </item>
               </inlineStackInfo>
               <originalName/>
-              <rtlName>fadd_32ns_32ns_32_11_full_dsp_1_U445</rtlName>
+              <rtlName>fadd_32ns_32ns_32_11_full_dsp_1_U450</rtlName>
               <control>auto</control>
               <opType>fadd</opType>
               <implIndex>fulldsp</implIndex>
@@ -11663,33 +10487,26 @@
             <Obj>
               <type>0</type>
               <id>243</id>
-              <name>_ln225</name>
+              <name>_ln237</name>
               <fileName>../gen/Hls_Layers_UpConv.tpp</fileName>
               <fileDirectory>../.</fileDirectory>
-              <lineNumber>225</lineNumber>
-              <contextFuncName>Compute_Pixel_Stats&amp;lt;32, 480, 30, 480&amp;gt;</contextFuncName>
-              <contextNormFuncName>Compute_Pixel_Stats_32_480_30_480_s</contextNormFuncName>
+              <lineNumber>237</lineNumber>
+              <contextFuncName>UpConv_Fused_Row&amp;lt;8, 16, 16, 960, 480&amp;gt;</contextFuncName>
+              <contextNormFuncName>UpConv_Fused_Row_8_16_16_960_480_s</contextNormFuncName>
               <inlineStackInfo>
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
                   <first>/home/hoinguyen/Documents/Vitis/UpConv_HLS/upconv_block0</first>
                   <second>
-                    <count>2</count>
+                    <count>1</count>
                     <item_version>0</item_version>
-                    <item>
-                      <first>
-                        <first>../gen/Hls_Layers_UpConv.tpp</first>
-                        <second>Compute_Pixel_Stats&amp;lt;32, 480, 30, 480&amp;gt;</second>
-                      </first>
-                      <second>225</second>
-                    </item>
                     <item>
                       <first>
                         <first>../gen/Hls_Layers_UpConv.tpp</first>
                         <second>UpConv_Fused_Row&amp;lt;8, 16, 16, 960, 480&amp;gt;</second>
                       </first>
-                      <second>363</second>
+                      <second>237</second>
                     </item>
                   </second>
                 </item>
@@ -11741,33 +10558,26 @@
             <Obj>
               <type>0</type>
               <id>245</id>
-              <name>sum_rot_6_write_ln225</name>
+              <name>sum_rot_6_write_ln237</name>
               <fileName>../gen/Hls_Layers_UpConv.tpp</fileName>
               <fileDirectory>../.</fileDirectory>
-              <lineNumber>225</lineNumber>
-              <contextFuncName>Compute_Pixel_Stats&amp;lt;32, 480, 30, 480&amp;gt;</contextFuncName>
-              <contextNormFuncName>Compute_Pixel_Stats_32_480_30_480_s</contextNormFuncName>
+              <lineNumber>237</lineNumber>
+              <contextFuncName>UpConv_Fused_Row&amp;lt;8, 16, 16, 960, 480&amp;gt;</contextFuncName>
+              <contextNormFuncName>UpConv_Fused_Row_8_16_16_960_480_s</contextNormFuncName>
               <inlineStackInfo>
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
                   <first>/home/hoinguyen/Documents/Vitis/UpConv_HLS/upconv_block0</first>
                   <second>
-                    <count>2</count>
+                    <count>1</count>
                     <item_version>0</item_version>
-                    <item>
-                      <first>
-                        <first>../gen/Hls_Layers_UpConv.tpp</first>
-                        <second>Compute_Pixel_Stats&amp;lt;32, 480, 30, 480&amp;gt;</second>
-                      </first>
-                      <second>225</second>
-                    </item>
                     <item>
                       <first>
                         <first>../gen/Hls_Layers_UpConv.tpp</first>
                         <second>UpConv_Fused_Row&amp;lt;8, 16, 16, 960, 480&amp;gt;</second>
                       </first>
-                      <second>363</second>
+                      <second>237</second>
                     </item>
                   </second>
                 </item>
@@ -11805,33 +10615,26 @@
             <Obj>
               <type>0</type>
               <id>246</id>
-              <name>br_ln225</name>
+              <name>br_ln237</name>
               <fileName>../gen/Hls_Layers_UpConv.tpp</fileName>
               <fileDirectory>../.</fileDirectory>
-              <lineNumber>225</lineNumber>
-              <contextFuncName>Compute_Pixel_Stats&amp;lt;32, 480, 30, 480&amp;gt;</contextFuncName>
-              <contextNormFuncName>Compute_Pixel_Stats_32_480_30_480_s</contextNormFuncName>
+              <lineNumber>237</lineNumber>
+              <contextFuncName>UpConv_Fused_Row&amp;lt;8, 16, 16, 960, 480&amp;gt;</contextFuncName>
+              <contextNormFuncName>UpConv_Fused_Row_8_16_16_960_480_s</contextNormFuncName>
               <inlineStackInfo>
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
                   <first>/home/hoinguyen/Documents/Vitis/UpConv_HLS/upconv_block0</first>
                   <second>
-                    <count>2</count>
+                    <count>1</count>
                     <item_version>0</item_version>
-                    <item>
-                      <first>
-                        <first>../gen/Hls_Layers_UpConv.tpp</first>
-                        <second>Compute_Pixel_Stats&amp;lt;32, 480, 30, 480&amp;gt;</second>
-                      </first>
-                      <second>225</second>
-                    </item>
                     <item>
                       <first>
                         <first>../gen/Hls_Layers_UpConv.tpp</first>
                         <second>UpConv_Fused_Row&amp;lt;8, 16, 16, 960, 480&amp;gt;</second>
                       </first>
-                      <second>363</second>
+                      <second>237</second>
                     </item>
                   </second>
                 </item>
@@ -11868,33 +10671,26 @@
             <Obj>
               <type>0</type>
               <id>248</id>
-              <name>sum_rot_5_write_ln225</name>
+              <name>sum_rot_5_write_ln237</name>
               <fileName>../gen/Hls_Layers_UpConv.tpp</fileName>
               <fileDirectory>../.</fileDirectory>
-              <lineNumber>225</lineNumber>
-              <contextFuncName>Compute_Pixel_Stats&amp;lt;32, 480, 30, 480&amp;gt;</contextFuncName>
-              <contextNormFuncName>Compute_Pixel_Stats_32_480_30_480_s</contextNormFuncName>
+              <lineNumber>237</lineNumber>
+              <contextFuncName>UpConv_Fused_Row&amp;lt;8, 16, 16, 960, 480&amp;gt;</contextFuncName>
+              <contextNormFuncName>UpConv_Fused_Row_8_16_16_960_480_s</contextNormFuncName>
               <inlineStackInfo>
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
                   <first>/home/hoinguyen/Documents/Vitis/UpConv_HLS/upconv_block0</first>
                   <second>
-                    <count>2</count>
+                    <count>1</count>
                     <item_version>0</item_version>
-                    <item>
-                      <first>
-                        <first>../gen/Hls_Layers_UpConv.tpp</first>
-                        <second>Compute_Pixel_Stats&amp;lt;32, 480, 30, 480&amp;gt;</second>
-                      </first>
-                      <second>225</second>
-                    </item>
                     <item>
                       <first>
                         <first>../gen/Hls_Layers_UpConv.tpp</first>
                         <second>UpConv_Fused_Row&amp;lt;8, 16, 16, 960, 480&amp;gt;</second>
                       </first>
-                      <second>363</second>
+                      <second>237</second>
                     </item>
                   </second>
                 </item>
@@ -11932,33 +10728,26 @@
             <Obj>
               <type>0</type>
               <id>249</id>
-              <name>br_ln225</name>
+              <name>br_ln237</name>
               <fileName>../gen/Hls_Layers_UpConv.tpp</fileName>
               <fileDirectory>../.</fileDirectory>
-              <lineNumber>225</lineNumber>
-              <contextFuncName>Compute_Pixel_Stats&amp;lt;32, 480, 30, 480&amp;gt;</contextFuncName>
-              <contextNormFuncName>Compute_Pixel_Stats_32_480_30_480_s</contextNormFuncName>
+              <lineNumber>237</lineNumber>
+              <contextFuncName>UpConv_Fused_Row&amp;lt;8, 16, 16, 960, 480&amp;gt;</contextFuncName>
+              <contextNormFuncName>UpConv_Fused_Row_8_16_16_960_480_s</contextNormFuncName>
               <inlineStackInfo>
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
                   <first>/home/hoinguyen/Documents/Vitis/UpConv_HLS/upconv_block0</first>
                   <second>
-                    <count>2</count>
+                    <count>1</count>
                     <item_version>0</item_version>
-                    <item>
-                      <first>
-                        <first>../gen/Hls_Layers_UpConv.tpp</first>
-                        <second>Compute_Pixel_Stats&amp;lt;32, 480, 30, 480&amp;gt;</second>
-                      </first>
-                      <second>225</second>
-                    </item>
                     <item>
                       <first>
                         <first>../gen/Hls_Layers_UpConv.tpp</first>
                         <second>UpConv_Fused_Row&amp;lt;8, 16, 16, 960, 480&amp;gt;</second>
                       </first>
-                      <second>363</second>
+                      <second>237</second>
                     </item>
                   </second>
                 </item>
@@ -11995,33 +10784,26 @@
             <Obj>
               <type>0</type>
               <id>251</id>
-              <name>sum_rot_4_write_ln225</name>
+              <name>sum_rot_4_write_ln237</name>
               <fileName>../gen/Hls_Layers_UpConv.tpp</fileName>
               <fileDirectory>../.</fileDirectory>
-              <lineNumber>225</lineNumber>
-              <contextFuncName>Compute_Pixel_Stats&amp;lt;32, 480, 30, 480&amp;gt;</contextFuncName>
-              <contextNormFuncName>Compute_Pixel_Stats_32_480_30_480_s</contextNormFuncName>
+              <lineNumber>237</lineNumber>
+              <contextFuncName>UpConv_Fused_Row&amp;lt;8, 16, 16, 960, 480&amp;gt;</contextFuncName>
+              <contextNormFuncName>UpConv_Fused_Row_8_16_16_960_480_s</contextNormFuncName>
               <inlineStackInfo>
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
                   <first>/home/hoinguyen/Documents/Vitis/UpConv_HLS/upconv_block0</first>
                   <second>
-                    <count>2</count>
+                    <count>1</count>
                     <item_version>0</item_version>
-                    <item>
-                      <first>
-                        <first>../gen/Hls_Layers_UpConv.tpp</first>
-                        <second>Compute_Pixel_Stats&amp;lt;32, 480, 30, 480&amp;gt;</second>
-                      </first>
-                      <second>225</second>
-                    </item>
                     <item>
                       <first>
                         <first>../gen/Hls_Layers_UpConv.tpp</first>
                         <second>UpConv_Fused_Row&amp;lt;8, 16, 16, 960, 480&amp;gt;</second>
                       </first>
-                      <second>363</second>
+                      <second>237</second>
                     </item>
                   </second>
                 </item>
@@ -12059,33 +10841,26 @@
             <Obj>
               <type>0</type>
               <id>252</id>
-              <name>br_ln225</name>
+              <name>br_ln237</name>
               <fileName>../gen/Hls_Layers_UpConv.tpp</fileName>
               <fileDirectory>../.</fileDirectory>
-              <lineNumber>225</lineNumber>
-              <contextFuncName>Compute_Pixel_Stats&amp;lt;32, 480, 30, 480&amp;gt;</contextFuncName>
-              <contextNormFuncName>Compute_Pixel_Stats_32_480_30_480_s</contextNormFuncName>
+              <lineNumber>237</lineNumber>
+              <contextFuncName>UpConv_Fused_Row&amp;lt;8, 16, 16, 960, 480&amp;gt;</contextFuncName>
+              <contextNormFuncName>UpConv_Fused_Row_8_16_16_960_480_s</contextNormFuncName>
               <inlineStackInfo>
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
                   <first>/home/hoinguyen/Documents/Vitis/UpConv_HLS/upconv_block0</first>
                   <second>
-                    <count>2</count>
+                    <count>1</count>
                     <item_version>0</item_version>
-                    <item>
-                      <first>
-                        <first>../gen/Hls_Layers_UpConv.tpp</first>
-                        <second>Compute_Pixel_Stats&amp;lt;32, 480, 30, 480&amp;gt;</second>
-                      </first>
-                      <second>225</second>
-                    </item>
                     <item>
                       <first>
                         <first>../gen/Hls_Layers_UpConv.tpp</first>
                         <second>UpConv_Fused_Row&amp;lt;8, 16, 16, 960, 480&amp;gt;</second>
                       </first>
-                      <second>363</second>
+                      <second>237</second>
                     </item>
                   </second>
                 </item>
@@ -12122,33 +10897,26 @@
             <Obj>
               <type>0</type>
               <id>254</id>
-              <name>sum_rot_3_write_ln225</name>
+              <name>sum_rot_3_write_ln237</name>
               <fileName>../gen/Hls_Layers_UpConv.tpp</fileName>
               <fileDirectory>../.</fileDirectory>
-              <lineNumber>225</lineNumber>
-              <contextFuncName>Compute_Pixel_Stats&amp;lt;32, 480, 30, 480&amp;gt;</contextFuncName>
-              <contextNormFuncName>Compute_Pixel_Stats_32_480_30_480_s</contextNormFuncName>
+              <lineNumber>237</lineNumber>
+              <contextFuncName>UpConv_Fused_Row&amp;lt;8, 16, 16, 960, 480&amp;gt;</contextFuncName>
+              <contextNormFuncName>UpConv_Fused_Row_8_16_16_960_480_s</contextNormFuncName>
               <inlineStackInfo>
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
                   <first>/home/hoinguyen/Documents/Vitis/UpConv_HLS/upconv_block0</first>
                   <second>
-                    <count>2</count>
+                    <count>1</count>
                     <item_version>0</item_version>
-                    <item>
-                      <first>
-                        <first>../gen/Hls_Layers_UpConv.tpp</first>
-                        <second>Compute_Pixel_Stats&amp;lt;32, 480, 30, 480&amp;gt;</second>
-                      </first>
-                      <second>225</second>
-                    </item>
                     <item>
                       <first>
                         <first>../gen/Hls_Layers_UpConv.tpp</first>
                         <second>UpConv_Fused_Row&amp;lt;8, 16, 16, 960, 480&amp;gt;</second>
                       </first>
-                      <second>363</second>
+                      <second>237</second>
                     </item>
                   </second>
                 </item>
@@ -12186,33 +10954,26 @@
             <Obj>
               <type>0</type>
               <id>255</id>
-              <name>br_ln225</name>
+              <name>br_ln237</name>
               <fileName>../gen/Hls_Layers_UpConv.tpp</fileName>
               <fileDirectory>../.</fileDirectory>
-              <lineNumber>225</lineNumber>
-              <contextFuncName>Compute_Pixel_Stats&amp;lt;32, 480, 30, 480&amp;gt;</contextFuncName>
-              <contextNormFuncName>Compute_Pixel_Stats_32_480_30_480_s</contextNormFuncName>
+              <lineNumber>237</lineNumber>
+              <contextFuncName>UpConv_Fused_Row&amp;lt;8, 16, 16, 960, 480&amp;gt;</contextFuncName>
+              <contextNormFuncName>UpConv_Fused_Row_8_16_16_960_480_s</contextNormFuncName>
               <inlineStackInfo>
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
                   <first>/home/hoinguyen/Documents/Vitis/UpConv_HLS/upconv_block0</first>
                   <second>
-                    <count>2</count>
+                    <count>1</count>
                     <item_version>0</item_version>
-                    <item>
-                      <first>
-                        <first>../gen/Hls_Layers_UpConv.tpp</first>
-                        <second>Compute_Pixel_Stats&amp;lt;32, 480, 30, 480&amp;gt;</second>
-                      </first>
-                      <second>225</second>
-                    </item>
                     <item>
                       <first>
                         <first>../gen/Hls_Layers_UpConv.tpp</first>
                         <second>UpConv_Fused_Row&amp;lt;8, 16, 16, 960, 480&amp;gt;</second>
                       </first>
-                      <second>363</second>
+                      <second>237</second>
                     </item>
                   </second>
                 </item>
@@ -12249,33 +11010,26 @@
             <Obj>
               <type>0</type>
               <id>257</id>
-              <name>sum_rot_2_write_ln225</name>
+              <name>sum_rot_2_write_ln237</name>
               <fileName>../gen/Hls_Layers_UpConv.tpp</fileName>
               <fileDirectory>../.</fileDirectory>
-              <lineNumber>225</lineNumber>
-              <contextFuncName>Compute_Pixel_Stats&amp;lt;32, 480, 30, 480&amp;gt;</contextFuncName>
-              <contextNormFuncName>Compute_Pixel_Stats_32_480_30_480_s</contextNormFuncName>
+              <lineNumber>237</lineNumber>
+              <contextFuncName>UpConv_Fused_Row&amp;lt;8, 16, 16, 960, 480&amp;gt;</contextFuncName>
+              <contextNormFuncName>UpConv_Fused_Row_8_16_16_960_480_s</contextNormFuncName>
               <inlineStackInfo>
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
                   <first>/home/hoinguyen/Documents/Vitis/UpConv_HLS/upconv_block0</first>
                   <second>
-                    <count>2</count>
+                    <count>1</count>
                     <item_version>0</item_version>
-                    <item>
-                      <first>
-                        <first>../gen/Hls_Layers_UpConv.tpp</first>
-                        <second>Compute_Pixel_Stats&amp;lt;32, 480, 30, 480&amp;gt;</second>
-                      </first>
-                      <second>225</second>
-                    </item>
                     <item>
                       <first>
                         <first>../gen/Hls_Layers_UpConv.tpp</first>
                         <second>UpConv_Fused_Row&amp;lt;8, 16, 16, 960, 480&amp;gt;</second>
                       </first>
-                      <second>363</second>
+                      <second>237</second>
                     </item>
                   </second>
                 </item>
@@ -12313,33 +11067,26 @@
             <Obj>
               <type>0</type>
               <id>258</id>
-              <name>br_ln225</name>
+              <name>br_ln237</name>
               <fileName>../gen/Hls_Layers_UpConv.tpp</fileName>
               <fileDirectory>../.</fileDirectory>
-              <lineNumber>225</lineNumber>
-              <contextFuncName>Compute_Pixel_Stats&amp;lt;32, 480, 30, 480&amp;gt;</contextFuncName>
-              <contextNormFuncName>Compute_Pixel_Stats_32_480_30_480_s</contextNormFuncName>
+              <lineNumber>237</lineNumber>
+              <contextFuncName>UpConv_Fused_Row&amp;lt;8, 16, 16, 960, 480&amp;gt;</contextFuncName>
+              <contextNormFuncName>UpConv_Fused_Row_8_16_16_960_480_s</contextNormFuncName>
               <inlineStackInfo>
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
                   <first>/home/hoinguyen/Documents/Vitis/UpConv_HLS/upconv_block0</first>
                   <second>
-                    <count>2</count>
+                    <count>1</count>
                     <item_version>0</item_version>
-                    <item>
-                      <first>
-                        <first>../gen/Hls_Layers_UpConv.tpp</first>
-                        <second>Compute_Pixel_Stats&amp;lt;32, 480, 30, 480&amp;gt;</second>
-                      </first>
-                      <second>225</second>
-                    </item>
                     <item>
                       <first>
                         <first>../gen/Hls_Layers_UpConv.tpp</first>
                         <second>UpConv_Fused_Row&amp;lt;8, 16, 16, 960, 480&amp;gt;</second>
                       </first>
-                      <second>363</second>
+                      <second>237</second>
                     </item>
                   </second>
                 </item>
@@ -12376,33 +11123,26 @@
             <Obj>
               <type>0</type>
               <id>260</id>
-              <name>sum_rot_1_write_ln225</name>
+              <name>sum_rot_1_write_ln237</name>
               <fileName>../gen/Hls_Layers_UpConv.tpp</fileName>
               <fileDirectory>../.</fileDirectory>
-              <lineNumber>225</lineNumber>
-              <contextFuncName>Compute_Pixel_Stats&amp;lt;32, 480, 30, 480&amp;gt;</contextFuncName>
-              <contextNormFuncName>Compute_Pixel_Stats_32_480_30_480_s</contextNormFuncName>
+              <lineNumber>237</lineNumber>
+              <contextFuncName>UpConv_Fused_Row&amp;lt;8, 16, 16, 960, 480&amp;gt;</contextFuncName>
+              <contextNormFuncName>UpConv_Fused_Row_8_16_16_960_480_s</contextNormFuncName>
               <inlineStackInfo>
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
                   <first>/home/hoinguyen/Documents/Vitis/UpConv_HLS/upconv_block0</first>
                   <second>
-                    <count>2</count>
+                    <count>1</count>
                     <item_version>0</item_version>
-                    <item>
-                      <first>
-                        <first>../gen/Hls_Layers_UpConv.tpp</first>
-                        <second>Compute_Pixel_Stats&amp;lt;32, 480, 30, 480&amp;gt;</second>
-                      </first>
-                      <second>225</second>
-                    </item>
                     <item>
                       <first>
                         <first>../gen/Hls_Layers_UpConv.tpp</first>
                         <second>UpConv_Fused_Row&amp;lt;8, 16, 16, 960, 480&amp;gt;</second>
                       </first>
-                      <second>363</second>
+                      <second>237</second>
                     </item>
                   </second>
                 </item>
@@ -12440,33 +11180,26 @@
             <Obj>
               <type>0</type>
               <id>261</id>
-              <name>br_ln225</name>
+              <name>br_ln237</name>
               <fileName>../gen/Hls_Layers_UpConv.tpp</fileName>
               <fileDirectory>../.</fileDirectory>
-              <lineNumber>225</lineNumber>
-              <contextFuncName>Compute_Pixel_Stats&amp;lt;32, 480, 30, 480&amp;gt;</contextFuncName>
-              <contextNormFuncName>Compute_Pixel_Stats_32_480_30_480_s</contextNormFuncName>
+              <lineNumber>237</lineNumber>
+              <contextFuncName>UpConv_Fused_Row&amp;lt;8, 16, 16, 960, 480&amp;gt;</contextFuncName>
+              <contextNormFuncName>UpConv_Fused_Row_8_16_16_960_480_s</contextNormFuncName>
               <inlineStackInfo>
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
                   <first>/home/hoinguyen/Documents/Vitis/UpConv_HLS/upconv_block0</first>
                   <second>
-                    <count>2</count>
+                    <count>1</count>
                     <item_version>0</item_version>
-                    <item>
-                      <first>
-                        <first>../gen/Hls_Layers_UpConv.tpp</first>
-                        <second>Compute_Pixel_Stats&amp;lt;32, 480, 30, 480&amp;gt;</second>
-                      </first>
-                      <second>225</second>
-                    </item>
                     <item>
                       <first>
                         <first>../gen/Hls_Layers_UpConv.tpp</first>
                         <second>UpConv_Fused_Row&amp;lt;8, 16, 16, 960, 480&amp;gt;</second>
                       </first>
-                      <second>363</second>
+                      <second>237</second>
                     </item>
                   </second>
                 </item>
@@ -12503,33 +11236,26 @@
             <Obj>
               <type>0</type>
               <id>263</id>
-              <name>sum_rot_write_ln225</name>
+              <name>sum_rot_write_ln237</name>
               <fileName>../gen/Hls_Layers_UpConv.tpp</fileName>
               <fileDirectory>../.</fileDirectory>
-              <lineNumber>225</lineNumber>
-              <contextFuncName>Compute_Pixel_Stats&amp;lt;32, 480, 30, 480&amp;gt;</contextFuncName>
-              <contextNormFuncName>Compute_Pixel_Stats_32_480_30_480_s</contextNormFuncName>
+              <lineNumber>237</lineNumber>
+              <contextFuncName>UpConv_Fused_Row&amp;lt;8, 16, 16, 960, 480&amp;gt;</contextFuncName>
+              <contextNormFuncName>UpConv_Fused_Row_8_16_16_960_480_s</contextNormFuncName>
               <inlineStackInfo>
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
                   <first>/home/hoinguyen/Documents/Vitis/UpConv_HLS/upconv_block0</first>
                   <second>
-                    <count>2</count>
+                    <count>1</count>
                     <item_version>0</item_version>
-                    <item>
-                      <first>
-                        <first>../gen/Hls_Layers_UpConv.tpp</first>
-                        <second>Compute_Pixel_Stats&amp;lt;32, 480, 30, 480&amp;gt;</second>
-                      </first>
-                      <second>225</second>
-                    </item>
                     <item>
                       <first>
                         <first>../gen/Hls_Layers_UpConv.tpp</first>
                         <second>UpConv_Fused_Row&amp;lt;8, 16, 16, 960, 480&amp;gt;</second>
                       </first>
-                      <second>363</second>
+                      <second>237</second>
                     </item>
                   </second>
                 </item>
@@ -12567,33 +11293,26 @@
             <Obj>
               <type>0</type>
               <id>264</id>
-              <name>br_ln225</name>
+              <name>br_ln237</name>
               <fileName>../gen/Hls_Layers_UpConv.tpp</fileName>
               <fileDirectory>../.</fileDirectory>
-              <lineNumber>225</lineNumber>
-              <contextFuncName>Compute_Pixel_Stats&amp;lt;32, 480, 30, 480&amp;gt;</contextFuncName>
-              <contextNormFuncName>Compute_Pixel_Stats_32_480_30_480_s</contextNormFuncName>
+              <lineNumber>237</lineNumber>
+              <contextFuncName>UpConv_Fused_Row&amp;lt;8, 16, 16, 960, 480&amp;gt;</contextFuncName>
+              <contextNormFuncName>UpConv_Fused_Row_8_16_16_960_480_s</contextNormFuncName>
               <inlineStackInfo>
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
                   <first>/home/hoinguyen/Documents/Vitis/UpConv_HLS/upconv_block0</first>
                   <second>
-                    <count>2</count>
+                    <count>1</count>
                     <item_version>0</item_version>
-                    <item>
-                      <first>
-                        <first>../gen/Hls_Layers_UpConv.tpp</first>
-                        <second>Compute_Pixel_Stats&amp;lt;32, 480, 30, 480&amp;gt;</second>
-                      </first>
-                      <second>225</second>
-                    </item>
                     <item>
                       <first>
                         <first>../gen/Hls_Layers_UpConv.tpp</first>
                         <second>UpConv_Fused_Row&amp;lt;8, 16, 16, 960, 480&amp;gt;</second>
                       </first>
-                      <second>363</second>
+                      <second>237</second>
                     </item>
                   </second>
                 </item>
@@ -12630,33 +11349,26 @@
             <Obj>
               <type>0</type>
               <id>266</id>
-              <name>sum_rot_7_write_ln225</name>
+              <name>sum_rot_7_write_ln237</name>
               <fileName>../gen/Hls_Layers_UpConv.tpp</fileName>
               <fileDirectory>../.</fileDirectory>
-              <lineNumber>225</lineNumber>
-              <contextFuncName>Compute_Pixel_Stats&amp;lt;32, 480, 30, 480&amp;gt;</contextFuncName>
-              <contextNormFuncName>Compute_Pixel_Stats_32_480_30_480_s</contextNormFuncName>
+              <lineNumber>237</lineNumber>
+              <contextFuncName>UpConv_Fused_Row&amp;lt;8, 16, 16, 960, 480&amp;gt;</contextFuncName>
+              <contextNormFuncName>UpConv_Fused_Row_8_16_16_960_480_s</contextNormFuncName>
               <inlineStackInfo>
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
                   <first>/home/hoinguyen/Documents/Vitis/UpConv_HLS/upconv_block0</first>
                   <second>
-                    <count>2</count>
+                    <count>1</count>
                     <item_version>0</item_version>
-                    <item>
-                      <first>
-                        <first>../gen/Hls_Layers_UpConv.tpp</first>
-                        <second>Compute_Pixel_Stats&amp;lt;32, 480, 30, 480&amp;gt;</second>
-                      </first>
-                      <second>225</second>
-                    </item>
                     <item>
                       <first>
                         <first>../gen/Hls_Layers_UpConv.tpp</first>
                         <second>UpConv_Fused_Row&amp;lt;8, 16, 16, 960, 480&amp;gt;</second>
                       </first>
-                      <second>363</second>
+                      <second>237</second>
                     </item>
                   </second>
                 </item>
@@ -12694,33 +11406,26 @@
             <Obj>
               <type>0</type>
               <id>267</id>
-              <name>br_ln225</name>
+              <name>br_ln237</name>
               <fileName>../gen/Hls_Layers_UpConv.tpp</fileName>
               <fileDirectory>../.</fileDirectory>
-              <lineNumber>225</lineNumber>
-              <contextFuncName>Compute_Pixel_Stats&amp;lt;32, 480, 30, 480&amp;gt;</contextFuncName>
-              <contextNormFuncName>Compute_Pixel_Stats_32_480_30_480_s</contextNormFuncName>
+              <lineNumber>237</lineNumber>
+              <contextFuncName>UpConv_Fused_Row&amp;lt;8, 16, 16, 960, 480&amp;gt;</contextFuncName>
+              <contextNormFuncName>UpConv_Fused_Row_8_16_16_960_480_s</contextNormFuncName>
               <inlineStackInfo>
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
                   <first>/home/hoinguyen/Documents/Vitis/UpConv_HLS/upconv_block0</first>
                   <second>
-                    <count>2</count>
+                    <count>1</count>
                     <item_version>0</item_version>
-                    <item>
-                      <first>
-                        <first>../gen/Hls_Layers_UpConv.tpp</first>
-                        <second>Compute_Pixel_Stats&amp;lt;32, 480, 30, 480&amp;gt;</second>
-                      </first>
-                      <second>225</second>
-                    </item>
                     <item>
                       <first>
                         <first>../gen/Hls_Layers_UpConv.tpp</first>
                         <second>UpConv_Fused_Row&amp;lt;8, 16, 16, 960, 480&amp;gt;</second>
                       </first>
-                      <second>363</second>
+                      <second>237</second>
                     </item>
                   </second>
                 </item>
@@ -12757,33 +11462,26 @@
             <Obj>
               <type>0</type>
               <id>269</id>
-              <name>br_ln227</name>
+              <name>br_ln237</name>
               <fileName>../gen/Hls_Layers_UpConv.tpp</fileName>
               <fileDirectory>../.</fileDirectory>
-              <lineNumber>227</lineNumber>
-              <contextFuncName>Compute_Pixel_Stats&amp;lt;32, 480, 30, 480&amp;gt;</contextFuncName>
-              <contextNormFuncName>Compute_Pixel_Stats_32_480_30_480_s</contextNormFuncName>
+              <lineNumber>237</lineNumber>
+              <contextFuncName>UpConv_Fused_Row&amp;lt;8, 16, 16, 960, 480&amp;gt;</contextFuncName>
+              <contextNormFuncName>UpConv_Fused_Row_8_16_16_960_480_s</contextNormFuncName>
               <inlineStackInfo>
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
                   <first>/home/hoinguyen/Documents/Vitis/UpConv_HLS/upconv_block0</first>
                   <second>
-                    <count>2</count>
+                    <count>1</count>
                     <item_version>0</item_version>
-                    <item>
-                      <first>
-                        <first>../gen/Hls_Layers_UpConv.tpp</first>
-                        <second>Compute_Pixel_Stats&amp;lt;32, 480, 30, 480&amp;gt;</second>
-                      </first>
-                      <second>227</second>
-                    </item>
                     <item>
                       <first>
                         <first>../gen/Hls_Layers_UpConv.tpp</first>
                         <second>UpConv_Fused_Row&amp;lt;8, 16, 16, 960, 480&amp;gt;</second>
                       </first>
-                      <second>363</second>
+                      <second>237</second>
                     </item>
                   </second>
                 </item>
@@ -12823,30 +11521,23 @@
               <name>sumsq_rot_8</name>
               <fileName>../gen/Hls_Layers_UpConv.tpp</fileName>
               <fileDirectory>../.</fileDirectory>
-              <lineNumber>229</lineNumber>
-              <contextFuncName>Compute_Pixel_Stats&amp;lt;32, 480, 30, 480&amp;gt;</contextFuncName>
-              <contextNormFuncName>Compute_Pixel_Stats_32_480_30_480_s</contextNormFuncName>
+              <lineNumber>238</lineNumber>
+              <contextFuncName>UpConv_Fused_Row&amp;lt;8, 16, 16, 960, 480&amp;gt;</contextFuncName>
+              <contextNormFuncName>UpConv_Fused_Row_8_16_16_960_480_s</contextNormFuncName>
               <inlineStackInfo>
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
                   <first>/home/hoinguyen/Documents/Vitis/UpConv_HLS/upconv_block0</first>
                   <second>
-                    <count>2</count>
+                    <count>1</count>
                     <item_version>0</item_version>
-                    <item>
-                      <first>
-                        <first>../gen/Hls_Layers_UpConv.tpp</first>
-                        <second>Compute_Pixel_Stats&amp;lt;32, 480, 30, 480&amp;gt;</second>
-                      </first>
-                      <second>229</second>
-                    </item>
                     <item>
                       <first>
                         <first>../gen/Hls_Layers_UpConv.tpp</first>
                         <second>UpConv_Fused_Row&amp;lt;8, 16, 16, 960, 480&amp;gt;</second>
                       </first>
-                      <second>363</second>
+                      <second>238</second>
                     </item>
                   </second>
                 </item>
@@ -12886,33 +11577,26 @@
             <Obj>
               <type>0</type>
               <id>272</id>
-              <name>_ln213</name>
+              <name>_ln227</name>
               <fileName>../gen/Hls_Layers_UpConv.tpp</fileName>
               <fileDirectory>../.</fileDirectory>
-              <lineNumber>213</lineNumber>
-              <contextFuncName>Compute_Pixel_Stats&amp;lt;32, 480, 30, 480&amp;gt;</contextFuncName>
-              <contextNormFuncName>Compute_Pixel_Stats_32_480_30_480_s</contextNormFuncName>
+              <lineNumber>227</lineNumber>
+              <contextFuncName>UpConv_Fused_Row&amp;lt;8, 16, 16, 960, 480&amp;gt;</contextFuncName>
+              <contextNormFuncName>UpConv_Fused_Row_8_16_16_960_480_s</contextNormFuncName>
               <inlineStackInfo>
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
                   <first>/home/hoinguyen/Documents/Vitis/UpConv_HLS/upconv_block0</first>
                   <second>
-                    <count>2</count>
+                    <count>1</count>
                     <item_version>0</item_version>
-                    <item>
-                      <first>
-                        <first>../gen/Hls_Layers_UpConv.tpp</first>
-                        <second>Compute_Pixel_Stats&amp;lt;32, 480, 30, 480&amp;gt;</second>
-                      </first>
-                      <second>213</second>
-                    </item>
                     <item>
                       <first>
                         <first>../gen/Hls_Layers_UpConv.tpp</first>
                         <second>UpConv_Fused_Row&amp;lt;8, 16, 16, 960, 480&amp;gt;</second>
                       </first>
-                      <second>363</second>
+                      <second>227</second>
                     </item>
                   </second>
                 </item>
@@ -12964,33 +11648,26 @@
             <Obj>
               <type>0</type>
               <id>274</id>
-              <name>sumsq_rot_6_write_ln229</name>
+              <name>sumsq_rot_6_write_ln238</name>
               <fileName>../gen/Hls_Layers_UpConv.tpp</fileName>
               <fileDirectory>../.</fileDirectory>
-              <lineNumber>229</lineNumber>
-              <contextFuncName>Compute_Pixel_Stats&amp;lt;32, 480, 30, 480&amp;gt;</contextFuncName>
-              <contextNormFuncName>Compute_Pixel_Stats_32_480_30_480_s</contextNormFuncName>
+              <lineNumber>238</lineNumber>
+              <contextFuncName>UpConv_Fused_Row&amp;lt;8, 16, 16, 960, 480&amp;gt;</contextFuncName>
+              <contextNormFuncName>UpConv_Fused_Row_8_16_16_960_480_s</contextNormFuncName>
               <inlineStackInfo>
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
                   <first>/home/hoinguyen/Documents/Vitis/UpConv_HLS/upconv_block0</first>
                   <second>
-                    <count>2</count>
+                    <count>1</count>
                     <item_version>0</item_version>
-                    <item>
-                      <first>
-                        <first>../gen/Hls_Layers_UpConv.tpp</first>
-                        <second>Compute_Pixel_Stats&amp;lt;32, 480, 30, 480&amp;gt;</second>
-                      </first>
-                      <second>229</second>
-                    </item>
                     <item>
                       <first>
                         <first>../gen/Hls_Layers_UpConv.tpp</first>
                         <second>UpConv_Fused_Row&amp;lt;8, 16, 16, 960, 480&amp;gt;</second>
                       </first>
-                      <second>363</second>
+                      <second>238</second>
                     </item>
                   </second>
                 </item>
@@ -13071,33 +11748,26 @@
             <Obj>
               <type>0</type>
               <id>277</id>
-              <name>sumsq_rot_5_write_ln229</name>
+              <name>sumsq_rot_5_write_ln238</name>
               <fileName>../gen/Hls_Layers_UpConv.tpp</fileName>
               <fileDirectory>../.</fileDirectory>
-              <lineNumber>229</lineNumber>
-              <contextFuncName>Compute_Pixel_Stats&amp;lt;32, 480, 30, 480&amp;gt;</contextFuncName>
-              <contextNormFuncName>Compute_Pixel_Stats_32_480_30_480_s</contextNormFuncName>
+              <lineNumber>238</lineNumber>
+              <contextFuncName>UpConv_Fused_Row&amp;lt;8, 16, 16, 960, 480&amp;gt;</contextFuncName>
+              <contextNormFuncName>UpConv_Fused_Row_8_16_16_960_480_s</contextNormFuncName>
               <inlineStackInfo>
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
                   <first>/home/hoinguyen/Documents/Vitis/UpConv_HLS/upconv_block0</first>
                   <second>
-                    <count>2</count>
+                    <count>1</count>
                     <item_version>0</item_version>
-                    <item>
-                      <first>
-                        <first>../gen/Hls_Layers_UpConv.tpp</first>
-                        <second>Compute_Pixel_Stats&amp;lt;32, 480, 30, 480&amp;gt;</second>
-                      </first>
-                      <second>229</second>
-                    </item>
                     <item>
                       <first>
                         <first>../gen/Hls_Layers_UpConv.tpp</first>
                         <second>UpConv_Fused_Row&amp;lt;8, 16, 16, 960, 480&amp;gt;</second>
                       </first>
-                      <second>363</second>
+                      <second>238</second>
                     </item>
                   </second>
                 </item>
@@ -13178,33 +11848,26 @@
             <Obj>
               <type>0</type>
               <id>280</id>
-              <name>sumsq_rot_4_write_ln229</name>
+              <name>sumsq_rot_4_write_ln238</name>
               <fileName>../gen/Hls_Layers_UpConv.tpp</fileName>
               <fileDirectory>../.</fileDirectory>
-              <lineNumber>229</lineNumber>
-              <contextFuncName>Compute_Pixel_Stats&amp;lt;32, 480, 30, 480&amp;gt;</contextFuncName>
-              <contextNormFuncName>Compute_Pixel_Stats_32_480_30_480_s</contextNormFuncName>
+              <lineNumber>238</lineNumber>
+              <contextFuncName>UpConv_Fused_Row&amp;lt;8, 16, 16, 960, 480&amp;gt;</contextFuncName>
+              <contextNormFuncName>UpConv_Fused_Row_8_16_16_960_480_s</contextNormFuncName>
               <inlineStackInfo>
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
                   <first>/home/hoinguyen/Documents/Vitis/UpConv_HLS/upconv_block0</first>
                   <second>
-                    <count>2</count>
+                    <count>1</count>
                     <item_version>0</item_version>
-                    <item>
-                      <first>
-                        <first>../gen/Hls_Layers_UpConv.tpp</first>
-                        <second>Compute_Pixel_Stats&amp;lt;32, 480, 30, 480&amp;gt;</second>
-                      </first>
-                      <second>229</second>
-                    </item>
                     <item>
                       <first>
                         <first>../gen/Hls_Layers_UpConv.tpp</first>
                         <second>UpConv_Fused_Row&amp;lt;8, 16, 16, 960, 480&amp;gt;</second>
                       </first>
-                      <second>363</second>
+                      <second>238</second>
                     </item>
                   </second>
                 </item>
@@ -13285,33 +11948,26 @@
             <Obj>
               <type>0</type>
               <id>283</id>
-              <name>sumsq_rot_3_write_ln229</name>
+              <name>sumsq_rot_3_write_ln238</name>
               <fileName>../gen/Hls_Layers_UpConv.tpp</fileName>
               <fileDirectory>../.</fileDirectory>
-              <lineNumber>229</lineNumber>
-              <contextFuncName>Compute_Pixel_Stats&amp;lt;32, 480, 30, 480&amp;gt;</contextFuncName>
-              <contextNormFuncName>Compute_Pixel_Stats_32_480_30_480_s</contextNormFuncName>
+              <lineNumber>238</lineNumber>
+              <contextFuncName>UpConv_Fused_Row&amp;lt;8, 16, 16, 960, 480&amp;gt;</contextFuncName>
+              <contextNormFuncName>UpConv_Fused_Row_8_16_16_960_480_s</contextNormFuncName>
               <inlineStackInfo>
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
                   <first>/home/hoinguyen/Documents/Vitis/UpConv_HLS/upconv_block0</first>
                   <second>
-                    <count>2</count>
+                    <count>1</count>
                     <item_version>0</item_version>
-                    <item>
-                      <first>
-                        <first>../gen/Hls_Layers_UpConv.tpp</first>
-                        <second>Compute_Pixel_Stats&amp;lt;32, 480, 30, 480&amp;gt;</second>
-                      </first>
-                      <second>229</second>
-                    </item>
                     <item>
                       <first>
                         <first>../gen/Hls_Layers_UpConv.tpp</first>
                         <second>UpConv_Fused_Row&amp;lt;8, 16, 16, 960, 480&amp;gt;</second>
                       </first>
-                      <second>363</second>
+                      <second>238</second>
                     </item>
                   </second>
                 </item>
@@ -13392,33 +12048,26 @@
             <Obj>
               <type>0</type>
               <id>286</id>
-              <name>sumsq_rot_2_write_ln229</name>
+              <name>sumsq_rot_2_write_ln238</name>
               <fileName>../gen/Hls_Layers_UpConv.tpp</fileName>
               <fileDirectory>../.</fileDirectory>
-              <lineNumber>229</lineNumber>
-              <contextFuncName>Compute_Pixel_Stats&amp;lt;32, 480, 30, 480&amp;gt;</contextFuncName>
-              <contextNormFuncName>Compute_Pixel_Stats_32_480_30_480_s</contextNormFuncName>
+              <lineNumber>238</lineNumber>
+              <contextFuncName>UpConv_Fused_Row&amp;lt;8, 16, 16, 960, 480&amp;gt;</contextFuncName>
+              <contextNormFuncName>UpConv_Fused_Row_8_16_16_960_480_s</contextNormFuncName>
               <inlineStackInfo>
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
                   <first>/home/hoinguyen/Documents/Vitis/UpConv_HLS/upconv_block0</first>
                   <second>
-                    <count>2</count>
+                    <count>1</count>
                     <item_version>0</item_version>
-                    <item>
-                      <first>
-                        <first>../gen/Hls_Layers_UpConv.tpp</first>
-                        <second>Compute_Pixel_Stats&amp;lt;32, 480, 30, 480&amp;gt;</second>
-                      </first>
-                      <second>229</second>
-                    </item>
                     <item>
                       <first>
                         <first>../gen/Hls_Layers_UpConv.tpp</first>
                         <second>UpConv_Fused_Row&amp;lt;8, 16, 16, 960, 480&amp;gt;</second>
                       </first>
-                      <second>363</second>
+                      <second>238</second>
                     </item>
                   </second>
                 </item>
@@ -13499,33 +12148,26 @@
             <Obj>
               <type>0</type>
               <id>289</id>
-              <name>sumsq_rot_1_write_ln229</name>
+              <name>sumsq_rot_1_write_ln238</name>
               <fileName>../gen/Hls_Layers_UpConv.tpp</fileName>
               <fileDirectory>../.</fileDirectory>
-              <lineNumber>229</lineNumber>
-              <contextFuncName>Compute_Pixel_Stats&amp;lt;32, 480, 30, 480&amp;gt;</contextFuncName>
-              <contextNormFuncName>Compute_Pixel_Stats_32_480_30_480_s</contextNormFuncName>
+              <lineNumber>238</lineNumber>
+              <contextFuncName>UpConv_Fused_Row&amp;lt;8, 16, 16, 960, 480&amp;gt;</contextFuncName>
+              <contextNormFuncName>UpConv_Fused_Row_8_16_16_960_480_s</contextNormFuncName>
               <inlineStackInfo>
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
                   <first>/home/hoinguyen/Documents/Vitis/UpConv_HLS/upconv_block0</first>
                   <second>
-                    <count>2</count>
+                    <count>1</count>
                     <item_version>0</item_version>
-                    <item>
-                      <first>
-                        <first>../gen/Hls_Layers_UpConv.tpp</first>
-                        <second>Compute_Pixel_Stats&amp;lt;32, 480, 30, 480&amp;gt;</second>
-                      </first>
-                      <second>229</second>
-                    </item>
                     <item>
                       <first>
                         <first>../gen/Hls_Layers_UpConv.tpp</first>
                         <second>UpConv_Fused_Row&amp;lt;8, 16, 16, 960, 480&amp;gt;</second>
                       </first>
-                      <second>363</second>
+                      <second>238</second>
                     </item>
                   </second>
                 </item>
@@ -13606,33 +12248,26 @@
             <Obj>
               <type>0</type>
               <id>292</id>
-              <name>sumsq_rot_write_ln229</name>
+              <name>sumsq_rot_write_ln238</name>
               <fileName>../gen/Hls_Layers_UpConv.tpp</fileName>
               <fileDirectory>../.</fileDirectory>
-              <lineNumber>229</lineNumber>
-              <contextFuncName>Compute_Pixel_Stats&amp;lt;32, 480, 30, 480&amp;gt;</contextFuncName>
-              <contextNormFuncName>Compute_Pixel_Stats_32_480_30_480_s</contextNormFuncName>
+              <lineNumber>238</lineNumber>
+              <contextFuncName>UpConv_Fused_Row&amp;lt;8, 16, 16, 960, 480&amp;gt;</contextFuncName>
+              <contextNormFuncName>UpConv_Fused_Row_8_16_16_960_480_s</contextNormFuncName>
               <inlineStackInfo>
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
                   <first>/home/hoinguyen/Documents/Vitis/UpConv_HLS/upconv_block0</first>
                   <second>
-                    <count>2</count>
+                    <count>1</count>
                     <item_version>0</item_version>
-                    <item>
-                      <first>
-                        <first>../gen/Hls_Layers_UpConv.tpp</first>
-                        <second>Compute_Pixel_Stats&amp;lt;32, 480, 30, 480&amp;gt;</second>
-                      </first>
-                      <second>229</second>
-                    </item>
                     <item>
                       <first>
                         <first>../gen/Hls_Layers_UpConv.tpp</first>
                         <second>UpConv_Fused_Row&amp;lt;8, 16, 16, 960, 480&amp;gt;</second>
                       </first>
-                      <second>363</second>
+                      <second>238</second>
                     </item>
                   </second>
                 </item>
@@ -13713,33 +12348,26 @@
             <Obj>
               <type>0</type>
               <id>295</id>
-              <name>sumsq_rot_7_write_ln229</name>
+              <name>sumsq_rot_7_write_ln238</name>
               <fileName>../gen/Hls_Layers_UpConv.tpp</fileName>
               <fileDirectory>../.</fileDirectory>
-              <lineNumber>229</lineNumber>
-              <contextFuncName>Compute_Pixel_Stats&amp;lt;32, 480, 30, 480&amp;gt;</contextFuncName>
-              <contextNormFuncName>Compute_Pixel_Stats_32_480_30_480_s</contextNormFuncName>
+              <lineNumber>238</lineNumber>
+              <contextFuncName>UpConv_Fused_Row&amp;lt;8, 16, 16, 960, 480&amp;gt;</contextFuncName>
+              <contextNormFuncName>UpConv_Fused_Row_8_16_16_960_480_s</contextNormFuncName>
               <inlineStackInfo>
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
                   <first>/home/hoinguyen/Documents/Vitis/UpConv_HLS/upconv_block0</first>
                   <second>
-                    <count>2</count>
+                    <count>1</count>
                     <item_version>0</item_version>
-                    <item>
-                      <first>
-                        <first>../gen/Hls_Layers_UpConv.tpp</first>
-                        <second>Compute_Pixel_Stats&amp;lt;32, 480, 30, 480&amp;gt;</second>
-                      </first>
-                      <second>229</second>
-                    </item>
                     <item>
                       <first>
                         <first>../gen/Hls_Layers_UpConv.tpp</first>
                         <second>UpConv_Fused_Row&amp;lt;8, 16, 16, 960, 480&amp;gt;</second>
                       </first>
-                      <second>363</second>
+                      <second>238</second>
                     </item>
                   </second>
                 </item>
@@ -13820,39 +12448,32 @@
             <Obj>
               <type>0</type>
               <id>298</id>
-              <name>icmp_ln232</name>
+              <name>icmp_ln240</name>
               <fileName>../gen/Hls_Layers_UpConv.tpp</fileName>
               <fileDirectory>../.</fileDirectory>
-              <lineNumber>232</lineNumber>
-              <contextFuncName>Compute_Pixel_Stats&amp;lt;32, 480, 30, 480&amp;gt;</contextFuncName>
-              <contextNormFuncName>Compute_Pixel_Stats_32_480_30_480_s</contextNormFuncName>
+              <lineNumber>240</lineNumber>
+              <contextFuncName>UpConv_Fused_Row&amp;lt;8, 16, 16, 960, 480&amp;gt;</contextFuncName>
+              <contextNormFuncName>UpConv_Fused_Row_8_16_16_960_480_s</contextNormFuncName>
               <inlineStackInfo>
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
                   <first>/home/hoinguyen/Documents/Vitis/UpConv_HLS/upconv_block0</first>
                   <second>
-                    <count>2</count>
+                    <count>1</count>
                     <item_version>0</item_version>
-                    <item>
-                      <first>
-                        <first>../gen/Hls_Layers_UpConv.tpp</first>
-                        <second>Compute_Pixel_Stats&amp;lt;32, 480, 30, 480&amp;gt;</second>
-                      </first>
-                      <second>232</second>
-                    </item>
                     <item>
                       <first>
                         <first>../gen/Hls_Layers_UpConv.tpp</first>
                         <second>UpConv_Fused_Row&amp;lt;8, 16, 16, 960, 480&amp;gt;</second>
                       </first>
-                      <second>363</second>
+                      <second>240</second>
                     </item>
                   </second>
                 </item>
               </inlineStackInfo>
               <originalName/>
-              <rtlName>icmp_ln232_fu_775_p2</rtlName>
+              <rtlName>icmp_ln240_fu_775_p2</rtlName>
               <control>auto</control>
               <opType>seteq</opType>
               <implIndex>auto</implIndex>
@@ -13884,33 +12505,26 @@
             <Obj>
               <type>0</type>
               <id>299</id>
-              <name>br_ln232</name>
+              <name>br_ln240</name>
               <fileName>../gen/Hls_Layers_UpConv.tpp</fileName>
               <fileDirectory>../.</fileDirectory>
-              <lineNumber>232</lineNumber>
-              <contextFuncName>Compute_Pixel_Stats&amp;lt;32, 480, 30, 480&amp;gt;</contextFuncName>
-              <contextNormFuncName>Compute_Pixel_Stats_32_480_30_480_s</contextNormFuncName>
+              <lineNumber>240</lineNumber>
+              <contextFuncName>UpConv_Fused_Row&amp;lt;8, 16, 16, 960, 480&amp;gt;</contextFuncName>
+              <contextNormFuncName>UpConv_Fused_Row_8_16_16_960_480_s</contextNormFuncName>
               <inlineStackInfo>
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
                   <first>/home/hoinguyen/Documents/Vitis/UpConv_HLS/upconv_block0</first>
                   <second>
-                    <count>2</count>
+                    <count>1</count>
                     <item_version>0</item_version>
-                    <item>
-                      <first>
-                        <first>../gen/Hls_Layers_UpConv.tpp</first>
-                        <second>Compute_Pixel_Stats&amp;lt;32, 480, 30, 480&amp;gt;</second>
-                      </first>
-                      <second>232</second>
-                    </item>
                     <item>
                       <first>
                         <first>../gen/Hls_Layers_UpConv.tpp</first>
                         <second>UpConv_Fused_Row&amp;lt;8, 16, 16, 960, 480&amp;gt;</second>
                       </first>
-                      <second>363</second>
+                      <second>240</second>
                     </item>
                   </second>
                 </item>
@@ -13949,39 +12563,32 @@
             <Obj>
               <type>0</type>
               <id>301</id>
-              <name>cs_3</name>
+              <name>cs_2</name>
               <fileName>../gen/Hls_Layers_UpConv.tpp</fileName>
               <fileDirectory>../.</fileDirectory>
-              <lineNumber>245</lineNumber>
-              <contextFuncName>Compute_Pixel_Stats&amp;lt;32, 480, 30, 480&amp;gt;</contextFuncName>
-              <contextNormFuncName>Compute_Pixel_Stats_32_480_30_480_s</contextNormFuncName>
+              <lineNumber>253</lineNumber>
+              <contextFuncName>UpConv_Fused_Row&amp;lt;8, 16, 16, 960, 480&amp;gt;</contextFuncName>
+              <contextNormFuncName>UpConv_Fused_Row_8_16_16_960_480_s</contextNormFuncName>
               <inlineStackInfo>
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
                   <first>/home/hoinguyen/Documents/Vitis/UpConv_HLS/upconv_block0</first>
                   <second>
-                    <count>2</count>
+                    <count>1</count>
                     <item_version>0</item_version>
-                    <item>
-                      <first>
-                        <first>../gen/Hls_Layers_UpConv.tpp</first>
-                        <second>Compute_Pixel_Stats&amp;lt;32, 480, 30, 480&amp;gt;</second>
-                      </first>
-                      <second>245</second>
-                    </item>
                     <item>
                       <first>
                         <first>../gen/Hls_Layers_UpConv.tpp</first>
                         <second>UpConv_Fused_Row&amp;lt;8, 16, 16, 960, 480&amp;gt;</second>
                       </first>
-                      <second>363</second>
+                      <second>253</second>
                     </item>
                   </second>
                 </item>
               </inlineStackInfo>
               <originalName>cs</originalName>
-              <rtlName>cs_3_fu_781_p2</rtlName>
+              <rtlName>cs_2_fu_781_p2</rtlName>
               <control>auto</control>
               <opType>add</opType>
               <implIndex>fabric</implIndex>
@@ -14013,33 +12620,26 @@
             <Obj>
               <type>0</type>
               <id>302</id>
-              <name>cs_write_ln212</name>
+              <name>cs_write_ln226</name>
               <fileName>../gen/Hls_Layers_UpConv.tpp</fileName>
               <fileDirectory>../.</fileDirectory>
-              <lineNumber>212</lineNumber>
-              <contextFuncName>Compute_Pixel_Stats&amp;lt;32, 480, 30, 480&amp;gt;</contextFuncName>
-              <contextNormFuncName>Compute_Pixel_Stats_32_480_30_480_s</contextNormFuncName>
+              <lineNumber>226</lineNumber>
+              <contextFuncName>UpConv_Fused_Row&amp;lt;8, 16, 16, 960, 480&amp;gt;</contextFuncName>
+              <contextNormFuncName>UpConv_Fused_Row_8_16_16_960_480_s</contextNormFuncName>
               <inlineStackInfo>
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
                   <first>/home/hoinguyen/Documents/Vitis/UpConv_HLS/upconv_block0</first>
                   <second>
-                    <count>2</count>
+                    <count>1</count>
                     <item_version>0</item_version>
-                    <item>
-                      <first>
-                        <first>../gen/Hls_Layers_UpConv.tpp</first>
-                        <second>Compute_Pixel_Stats&amp;lt;32, 480, 30, 480&amp;gt;</second>
-                      </first>
-                      <second>212</second>
-                    </item>
                     <item>
                       <first>
                         <first>../gen/Hls_Layers_UpConv.tpp</first>
                         <second>UpConv_Fused_Row&amp;lt;8, 16, 16, 960, 480&amp;gt;</second>
                       </first>
-                      <second>363</second>
+                      <second>226</second>
                     </item>
                   </second>
                 </item>
@@ -14124,30 +12724,23 @@
               <name>ws_load_1</name>
               <fileName>../gen/Hls_Layers_UpConv.tpp</fileName>
               <fileDirectory>../.</fileDirectory>
-              <lineNumber>243</lineNumber>
-              <contextFuncName>Compute_Pixel_Stats&amp;lt;32, 480, 30, 480&amp;gt;</contextFuncName>
-              <contextNormFuncName>Compute_Pixel_Stats_32_480_30_480_s</contextNormFuncName>
+              <lineNumber>251</lineNumber>
+              <contextFuncName>UpConv_Fused_Row&amp;lt;8, 16, 16, 960, 480&amp;gt;</contextFuncName>
+              <contextNormFuncName>UpConv_Fused_Row_8_16_16_960_480_s</contextNormFuncName>
               <inlineStackInfo>
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
                   <first>/home/hoinguyen/Documents/Vitis/UpConv_HLS/upconv_block0</first>
                   <second>
-                    <count>2</count>
+                    <count>1</count>
                     <item_version>0</item_version>
-                    <item>
-                      <first>
-                        <first>../gen/Hls_Layers_UpConv.tpp</first>
-                        <second>Compute_Pixel_Stats&amp;lt;32, 480, 30, 480&amp;gt;</second>
-                      </first>
-                      <second>243</second>
-                    </item>
                     <item>
                       <first>
                         <first>../gen/Hls_Layers_UpConv.tpp</first>
                         <second>UpConv_Fused_Row&amp;lt;8, 16, 16, 960, 480&amp;gt;</second>
                       </first>
-                      <second>363</second>
+                      <second>251</second>
                     </item>
                   </second>
                 </item>
@@ -14188,30 +12781,23 @@
               <name>sum_rot_load_1</name>
               <fileName>../gen/Hls_Layers_UpConv.tpp</fileName>
               <fileDirectory>../.</fileDirectory>
-              <lineNumber>236</lineNumber>
-              <contextFuncName>Compute_Pixel_Stats&amp;lt;32, 480, 30, 480&amp;gt;</contextFuncName>
-              <contextNormFuncName>Compute_Pixel_Stats_32_480_30_480_s</contextNormFuncName>
+              <lineNumber>244</lineNumber>
+              <contextFuncName>UpConv_Fused_Row&amp;lt;8, 16, 16, 960, 480&amp;gt;</contextFuncName>
+              <contextNormFuncName>UpConv_Fused_Row_8_16_16_960_480_s</contextNormFuncName>
               <inlineStackInfo>
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
                   <first>/home/hoinguyen/Documents/Vitis/UpConv_HLS/upconv_block0</first>
                   <second>
-                    <count>2</count>
+                    <count>1</count>
                     <item_version>0</item_version>
-                    <item>
-                      <first>
-                        <first>../gen/Hls_Layers_UpConv.tpp</first>
-                        <second>Compute_Pixel_Stats&amp;lt;32, 480, 30, 480&amp;gt;</second>
-                      </first>
-                      <second>236</second>
-                    </item>
                     <item>
                       <first>
                         <first>../gen/Hls_Layers_UpConv.tpp</first>
                         <second>UpConv_Fused_Row&amp;lt;8, 16, 16, 960, 480&amp;gt;</second>
                       </first>
-                      <second>363</second>
+                      <second>244</second>
                     </item>
                   </second>
                 </item>
@@ -14253,36 +12839,29 @@
               <name>sum</name>
               <fileName>../gen/Hls_Layers_UpConv.tpp</fileName>
               <fileDirectory>../.</fileDirectory>
-              <lineNumber>236</lineNumber>
-              <contextFuncName>Compute_Pixel_Stats&amp;lt;32, 480, 30, 480&amp;gt;</contextFuncName>
-              <contextNormFuncName>Compute_Pixel_Stats_32_480_30_480_s</contextNormFuncName>
+              <lineNumber>244</lineNumber>
+              <contextFuncName>UpConv_Fused_Row&amp;lt;8, 16, 16, 960, 480&amp;gt;</contextFuncName>
+              <contextNormFuncName>UpConv_Fused_Row_8_16_16_960_480_s</contextNormFuncName>
               <inlineStackInfo>
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
                   <first>/home/hoinguyen/Documents/Vitis/UpConv_HLS/upconv_block0</first>
                   <second>
-                    <count>2</count>
+                    <count>1</count>
                     <item_version>0</item_version>
-                    <item>
-                      <first>
-                        <first>../gen/Hls_Layers_UpConv.tpp</first>
-                        <second>Compute_Pixel_Stats&amp;lt;32, 480, 30, 480&amp;gt;</second>
-                      </first>
-                      <second>236</second>
-                    </item>
                     <item>
                       <first>
                         <first>../gen/Hls_Layers_UpConv.tpp</first>
                         <second>UpConv_Fused_Row&amp;lt;8, 16, 16, 960, 480&amp;gt;</second>
                       </first>
-                      <second>363</second>
+                      <second>244</second>
                     </item>
                   </second>
                 </item>
               </inlineStackInfo>
               <originalName>sum</originalName>
-              <rtlName>fadd_32ns_32ns_32_11_full_dsp_1_U446</rtlName>
+              <rtlName>fadd_32ns_32ns_32_11_full_dsp_1_U451</rtlName>
               <control>auto</control>
               <opType>fadd</opType>
               <implIndex>fulldsp</implIndex>
@@ -14317,30 +12896,23 @@
               <name>sumsq_rot_load_1</name>
               <fileName>../gen/Hls_Layers_UpConv.tpp</fileName>
               <fileDirectory>../.</fileDirectory>
-              <lineNumber>237</lineNumber>
-              <contextFuncName>Compute_Pixel_Stats&amp;lt;32, 480, 30, 480&amp;gt;</contextFuncName>
-              <contextNormFuncName>Compute_Pixel_Stats_32_480_30_480_s</contextNormFuncName>
+              <lineNumber>245</lineNumber>
+              <contextFuncName>UpConv_Fused_Row&amp;lt;8, 16, 16, 960, 480&amp;gt;</contextFuncName>
+              <contextNormFuncName>UpConv_Fused_Row_8_16_16_960_480_s</contextNormFuncName>
               <inlineStackInfo>
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
                   <first>/home/hoinguyen/Documents/Vitis/UpConv_HLS/upconv_block0</first>
                   <second>
-                    <count>2</count>
+                    <count>1</count>
                     <item_version>0</item_version>
-                    <item>
-                      <first>
-                        <first>../gen/Hls_Layers_UpConv.tpp</first>
-                        <second>Compute_Pixel_Stats&amp;lt;32, 480, 30, 480&amp;gt;</second>
-                      </first>
-                      <second>237</second>
-                    </item>
                     <item>
                       <first>
                         <first>../gen/Hls_Layers_UpConv.tpp</first>
                         <second>UpConv_Fused_Row&amp;lt;8, 16, 16, 960, 480&amp;gt;</second>
                       </first>
-                      <second>363</second>
+                      <second>245</second>
                     </item>
                   </second>
                 </item>
@@ -14381,36 +12953,29 @@
               <name>sumsq</name>
               <fileName>../gen/Hls_Layers_UpConv.tpp</fileName>
               <fileDirectory>../.</fileDirectory>
-              <lineNumber>237</lineNumber>
-              <contextFuncName>Compute_Pixel_Stats&amp;lt;32, 480, 30, 480&amp;gt;</contextFuncName>
-              <contextNormFuncName>Compute_Pixel_Stats_32_480_30_480_s</contextNormFuncName>
+              <lineNumber>245</lineNumber>
+              <contextFuncName>UpConv_Fused_Row&amp;lt;8, 16, 16, 960, 480&amp;gt;</contextFuncName>
+              <contextNormFuncName>UpConv_Fused_Row_8_16_16_960_480_s</contextNormFuncName>
               <inlineStackInfo>
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
                   <first>/home/hoinguyen/Documents/Vitis/UpConv_HLS/upconv_block0</first>
                   <second>
-                    <count>2</count>
+                    <count>1</count>
                     <item_version>0</item_version>
-                    <item>
-                      <first>
-                        <first>../gen/Hls_Layers_UpConv.tpp</first>
-                        <second>Compute_Pixel_Stats&amp;lt;32, 480, 30, 480&amp;gt;</second>
-                      </first>
-                      <second>237</second>
-                    </item>
                     <item>
                       <first>
                         <first>../gen/Hls_Layers_UpConv.tpp</first>
                         <second>UpConv_Fused_Row&amp;lt;8, 16, 16, 960, 480&amp;gt;</second>
                       </first>
-                      <second>363</second>
+                      <second>245</second>
                     </item>
                   </second>
                 </item>
               </inlineStackInfo>
               <originalName>sumsq</originalName>
-              <rtlName>fadd_32ns_32ns_32_11_full_dsp_1_U447</rtlName>
+              <rtlName>fadd_32ns_32ns_32_11_full_dsp_1_U452</rtlName>
               <control>auto</control>
               <opType>fadd</opType>
               <implIndex>fulldsp</implIndex>
@@ -14445,30 +13010,23 @@
               <name>sum_rot_1_load_1</name>
               <fileName>../gen/Hls_Layers_UpConv.tpp</fileName>
               <fileDirectory>../.</fileDirectory>
-              <lineNumber>236</lineNumber>
-              <contextFuncName>Compute_Pixel_Stats&amp;lt;32, 480, 30, 480&amp;gt;</contextFuncName>
-              <contextNormFuncName>Compute_Pixel_Stats_32_480_30_480_s</contextNormFuncName>
+              <lineNumber>244</lineNumber>
+              <contextFuncName>UpConv_Fused_Row&amp;lt;8, 16, 16, 960, 480&amp;gt;</contextFuncName>
+              <contextNormFuncName>UpConv_Fused_Row_8_16_16_960_480_s</contextNormFuncName>
               <inlineStackInfo>
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
                   <first>/home/hoinguyen/Documents/Vitis/UpConv_HLS/upconv_block0</first>
                   <second>
-                    <count>2</count>
+                    <count>1</count>
                     <item_version>0</item_version>
-                    <item>
-                      <first>
-                        <first>../gen/Hls_Layers_UpConv.tpp</first>
-                        <second>Compute_Pixel_Stats&amp;lt;32, 480, 30, 480&amp;gt;</second>
-                      </first>
-                      <second>236</second>
-                    </item>
                     <item>
                       <first>
                         <first>../gen/Hls_Layers_UpConv.tpp</first>
                         <second>UpConv_Fused_Row&amp;lt;8, 16, 16, 960, 480&amp;gt;</second>
                       </first>
-                      <second>363</second>
+                      <second>244</second>
                     </item>
                   </second>
                 </item>
@@ -14510,36 +13068,29 @@
               <name>sum_1</name>
               <fileName>../gen/Hls_Layers_UpConv.tpp</fileName>
               <fileDirectory>../.</fileDirectory>
-              <lineNumber>236</lineNumber>
-              <contextFuncName>Compute_Pixel_Stats&amp;lt;32, 480, 30, 480&amp;gt;</contextFuncName>
-              <contextNormFuncName>Compute_Pixel_Stats_32_480_30_480_s</contextNormFuncName>
+              <lineNumber>244</lineNumber>
+              <contextFuncName>UpConv_Fused_Row&amp;lt;8, 16, 16, 960, 480&amp;gt;</contextFuncName>
+              <contextNormFuncName>UpConv_Fused_Row_8_16_16_960_480_s</contextNormFuncName>
               <inlineStackInfo>
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
                   <first>/home/hoinguyen/Documents/Vitis/UpConv_HLS/upconv_block0</first>
                   <second>
-                    <count>2</count>
+                    <count>1</count>
                     <item_version>0</item_version>
-                    <item>
-                      <first>
-                        <first>../gen/Hls_Layers_UpConv.tpp</first>
-                        <second>Compute_Pixel_Stats&amp;lt;32, 480, 30, 480&amp;gt;</second>
-                      </first>
-                      <second>236</second>
-                    </item>
                     <item>
                       <first>
                         <first>../gen/Hls_Layers_UpConv.tpp</first>
                         <second>UpConv_Fused_Row&amp;lt;8, 16, 16, 960, 480&amp;gt;</second>
                       </first>
-                      <second>363</second>
+                      <second>244</second>
                     </item>
                   </second>
                 </item>
               </inlineStackInfo>
               <originalName>sum</originalName>
-              <rtlName>fadd_32ns_32ns_32_11_full_dsp_1_U448</rtlName>
+              <rtlName>fadd_32ns_32ns_32_11_full_dsp_1_U453</rtlName>
               <control>auto</control>
               <opType>fadd</opType>
               <implIndex>fulldsp</implIndex>
@@ -14574,30 +13125,23 @@
               <name>sumsq_rot_1_load_1</name>
               <fileName>../gen/Hls_Layers_UpConv.tpp</fileName>
               <fileDirectory>../.</fileDirectory>
-              <lineNumber>237</lineNumber>
-              <contextFuncName>Compute_Pixel_Stats&amp;lt;32, 480, 30, 480&amp;gt;</contextFuncName>
-              <contextNormFuncName>Compute_Pixel_Stats_32_480_30_480_s</contextNormFuncName>
+              <lineNumber>245</lineNumber>
+              <contextFuncName>UpConv_Fused_Row&amp;lt;8, 16, 16, 960, 480&amp;gt;</contextFuncName>
+              <contextNormFuncName>UpConv_Fused_Row_8_16_16_960_480_s</contextNormFuncName>
               <inlineStackInfo>
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
                   <first>/home/hoinguyen/Documents/Vitis/UpConv_HLS/upconv_block0</first>
                   <second>
-                    <count>2</count>
+                    <count>1</count>
                     <item_version>0</item_version>
-                    <item>
-                      <first>
-                        <first>../gen/Hls_Layers_UpConv.tpp</first>
-                        <second>Compute_Pixel_Stats&amp;lt;32, 480, 30, 480&amp;gt;</second>
-                      </first>
-                      <second>237</second>
-                    </item>
                     <item>
                       <first>
                         <first>../gen/Hls_Layers_UpConv.tpp</first>
                         <second>UpConv_Fused_Row&amp;lt;8, 16, 16, 960, 480&amp;gt;</second>
                       </first>
-                      <second>363</second>
+                      <second>245</second>
                     </item>
                   </second>
                 </item>
@@ -14638,36 +13182,29 @@
               <name>sumsq_1</name>
               <fileName>../gen/Hls_Layers_UpConv.tpp</fileName>
               <fileDirectory>../.</fileDirectory>
-              <lineNumber>237</lineNumber>
-              <contextFuncName>Compute_Pixel_Stats&amp;lt;32, 480, 30, 480&amp;gt;</contextFuncName>
-              <contextNormFuncName>Compute_Pixel_Stats_32_480_30_480_s</contextNormFuncName>
+              <lineNumber>245</lineNumber>
+              <contextFuncName>UpConv_Fused_Row&amp;lt;8, 16, 16, 960, 480&amp;gt;</contextFuncName>
+              <contextNormFuncName>UpConv_Fused_Row_8_16_16_960_480_s</contextNormFuncName>
               <inlineStackInfo>
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
                   <first>/home/hoinguyen/Documents/Vitis/UpConv_HLS/upconv_block0</first>
                   <second>
-                    <count>2</count>
+                    <count>1</count>
                     <item_version>0</item_version>
-                    <item>
-                      <first>
-                        <first>../gen/Hls_Layers_UpConv.tpp</first>
-                        <second>Compute_Pixel_Stats&amp;lt;32, 480, 30, 480&amp;gt;</second>
-                      </first>
-                      <second>237</second>
-                    </item>
                     <item>
                       <first>
                         <first>../gen/Hls_Layers_UpConv.tpp</first>
                         <second>UpConv_Fused_Row&amp;lt;8, 16, 16, 960, 480&amp;gt;</second>
                       </first>
-                      <second>363</second>
+                      <second>245</second>
                     </item>
                   </second>
                 </item>
               </inlineStackInfo>
               <originalName>sumsq</originalName>
-              <rtlName>fadd_32ns_32ns_32_11_full_dsp_1_U449</rtlName>
+              <rtlName>fadd_32ns_32ns_32_11_full_dsp_1_U454</rtlName>
               <control>auto</control>
               <opType>fadd</opType>
               <implIndex>fulldsp</implIndex>
@@ -14702,30 +13239,23 @@
               <name>sum_rot_2_load_1</name>
               <fileName>../gen/Hls_Layers_UpConv.tpp</fileName>
               <fileDirectory>../.</fileDirectory>
-              <lineNumber>236</lineNumber>
-              <contextFuncName>Compute_Pixel_Stats&amp;lt;32, 480, 30, 480&amp;gt;</contextFuncName>
-              <contextNormFuncName>Compute_Pixel_Stats_32_480_30_480_s</contextNormFuncName>
+              <lineNumber>244</lineNumber>
+              <contextFuncName>UpConv_Fused_Row&amp;lt;8, 16, 16, 960, 480&amp;gt;</contextFuncName>
+              <contextNormFuncName>UpConv_Fused_Row_8_16_16_960_480_s</contextNormFuncName>
               <inlineStackInfo>
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
                   <first>/home/hoinguyen/Documents/Vitis/UpConv_HLS/upconv_block0</first>
                   <second>
-                    <count>2</count>
+                    <count>1</count>
                     <item_version>0</item_version>
-                    <item>
-                      <first>
-                        <first>../gen/Hls_Layers_UpConv.tpp</first>
-                        <second>Compute_Pixel_Stats&amp;lt;32, 480, 30, 480&amp;gt;</second>
-                      </first>
-                      <second>236</second>
-                    </item>
                     <item>
                       <first>
                         <first>../gen/Hls_Layers_UpConv.tpp</first>
                         <second>UpConv_Fused_Row&amp;lt;8, 16, 16, 960, 480&amp;gt;</second>
                       </first>
-                      <second>363</second>
+                      <second>244</second>
                     </item>
                   </second>
                 </item>
@@ -14767,36 +13297,29 @@
               <name>sum_2</name>
               <fileName>../gen/Hls_Layers_UpConv.tpp</fileName>
               <fileDirectory>../.</fileDirectory>
-              <lineNumber>236</lineNumber>
-              <contextFuncName>Compute_Pixel_Stats&amp;lt;32, 480, 30, 480&amp;gt;</contextFuncName>
-              <contextNormFuncName>Compute_Pixel_Stats_32_480_30_480_s</contextNormFuncName>
+              <lineNumber>244</lineNumber>
+              <contextFuncName>UpConv_Fused_Row&amp;lt;8, 16, 16, 960, 480&amp;gt;</contextFuncName>
+              <contextNormFuncName>UpConv_Fused_Row_8_16_16_960_480_s</contextNormFuncName>
               <inlineStackInfo>
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
                   <first>/home/hoinguyen/Documents/Vitis/UpConv_HLS/upconv_block0</first>
                   <second>
-                    <count>2</count>
+                    <count>1</count>
                     <item_version>0</item_version>
-                    <item>
-                      <first>
-                        <first>../gen/Hls_Layers_UpConv.tpp</first>
-                        <second>Compute_Pixel_Stats&amp;lt;32, 480, 30, 480&amp;gt;</second>
-                      </first>
-                      <second>236</second>
-                    </item>
                     <item>
                       <first>
                         <first>../gen/Hls_Layers_UpConv.tpp</first>
                         <second>UpConv_Fused_Row&amp;lt;8, 16, 16, 960, 480&amp;gt;</second>
                       </first>
-                      <second>363</second>
+                      <second>244</second>
                     </item>
                   </second>
                 </item>
               </inlineStackInfo>
               <originalName>sum</originalName>
-              <rtlName>fadd_32ns_32ns_32_11_full_dsp_1_U450</rtlName>
+              <rtlName>fadd_32ns_32ns_32_11_full_dsp_1_U455</rtlName>
               <control>auto</control>
               <opType>fadd</opType>
               <implIndex>fulldsp</implIndex>
@@ -14831,30 +13354,23 @@
               <name>sumsq_rot_2_load_1</name>
               <fileName>../gen/Hls_Layers_UpConv.tpp</fileName>
               <fileDirectory>../.</fileDirectory>
-              <lineNumber>237</lineNumber>
-              <contextFuncName>Compute_Pixel_Stats&amp;lt;32, 480, 30, 480&amp;gt;</contextFuncName>
-              <contextNormFuncName>Compute_Pixel_Stats_32_480_30_480_s</contextNormFuncName>
+              <lineNumber>245</lineNumber>
+              <contextFuncName>UpConv_Fused_Row&amp;lt;8, 16, 16, 960, 480&amp;gt;</contextFuncName>
+              <contextNormFuncName>UpConv_Fused_Row_8_16_16_960_480_s</contextNormFuncName>
               <inlineStackInfo>
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
                   <first>/home/hoinguyen/Documents/Vitis/UpConv_HLS/upconv_block0</first>
                   <second>
-                    <count>2</count>
+                    <count>1</count>
                     <item_version>0</item_version>
-                    <item>
-                      <first>
-                        <first>../gen/Hls_Layers_UpConv.tpp</first>
-                        <second>Compute_Pixel_Stats&amp;lt;32, 480, 30, 480&amp;gt;</second>
-                      </first>
-                      <second>237</second>
-                    </item>
                     <item>
                       <first>
                         <first>../gen/Hls_Layers_UpConv.tpp</first>
                         <second>UpConv_Fused_Row&amp;lt;8, 16, 16, 960, 480&amp;gt;</second>
                       </first>
-                      <second>363</second>
+                      <second>245</second>
                     </item>
                   </second>
                 </item>
@@ -14895,36 +13411,29 @@
               <name>sumsq_2</name>
               <fileName>../gen/Hls_Layers_UpConv.tpp</fileName>
               <fileDirectory>../.</fileDirectory>
-              <lineNumber>237</lineNumber>
-              <contextFuncName>Compute_Pixel_Stats&amp;lt;32, 480, 30, 480&amp;gt;</contextFuncName>
-              <contextNormFuncName>Compute_Pixel_Stats_32_480_30_480_s</contextNormFuncName>
+              <lineNumber>245</lineNumber>
+              <contextFuncName>UpConv_Fused_Row&amp;lt;8, 16, 16, 960, 480&amp;gt;</contextFuncName>
+              <contextNormFuncName>UpConv_Fused_Row_8_16_16_960_480_s</contextNormFuncName>
               <inlineStackInfo>
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
                   <first>/home/hoinguyen/Documents/Vitis/UpConv_HLS/upconv_block0</first>
                   <second>
-                    <count>2</count>
+                    <count>1</count>
                     <item_version>0</item_version>
-                    <item>
-                      <first>
-                        <first>../gen/Hls_Layers_UpConv.tpp</first>
-                        <second>Compute_Pixel_Stats&amp;lt;32, 480, 30, 480&amp;gt;</second>
-                      </first>
-                      <second>237</second>
-                    </item>
                     <item>
                       <first>
                         <first>../gen/Hls_Layers_UpConv.tpp</first>
                         <second>UpConv_Fused_Row&amp;lt;8, 16, 16, 960, 480&amp;gt;</second>
                       </first>
-                      <second>363</second>
+                      <second>245</second>
                     </item>
                   </second>
                 </item>
               </inlineStackInfo>
               <originalName>sumsq</originalName>
-              <rtlName>fadd_32ns_32ns_32_11_full_dsp_1_U451</rtlName>
+              <rtlName>fadd_32ns_32ns_32_11_full_dsp_1_U456</rtlName>
               <control>auto</control>
               <opType>fadd</opType>
               <implIndex>fulldsp</implIndex>
@@ -14959,30 +13468,23 @@
               <name>sum_rot_3_load_1</name>
               <fileName>../gen/Hls_Layers_UpConv.tpp</fileName>
               <fileDirectory>../.</fileDirectory>
-              <lineNumber>236</lineNumber>
-              <contextFuncName>Compute_Pixel_Stats&amp;lt;32, 480, 30, 480&amp;gt;</contextFuncName>
-              <contextNormFuncName>Compute_Pixel_Stats_32_480_30_480_s</contextNormFuncName>
+              <lineNumber>244</lineNumber>
+              <contextFuncName>UpConv_Fused_Row&amp;lt;8, 16, 16, 960, 480&amp;gt;</contextFuncName>
+              <contextNormFuncName>UpConv_Fused_Row_8_16_16_960_480_s</contextNormFuncName>
               <inlineStackInfo>
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
                   <first>/home/hoinguyen/Documents/Vitis/UpConv_HLS/upconv_block0</first>
                   <second>
-                    <count>2</count>
+                    <count>1</count>
                     <item_version>0</item_version>
-                    <item>
-                      <first>
-                        <first>../gen/Hls_Layers_UpConv.tpp</first>
-                        <second>Compute_Pixel_Stats&amp;lt;32, 480, 30, 480&amp;gt;</second>
-                      </first>
-                      <second>236</second>
-                    </item>
                     <item>
                       <first>
                         <first>../gen/Hls_Layers_UpConv.tpp</first>
                         <second>UpConv_Fused_Row&amp;lt;8, 16, 16, 960, 480&amp;gt;</second>
                       </first>
-                      <second>363</second>
+                      <second>244</second>
                     </item>
                   </second>
                 </item>
@@ -15024,36 +13526,29 @@
               <name>sum_3</name>
               <fileName>../gen/Hls_Layers_UpConv.tpp</fileName>
               <fileDirectory>../.</fileDirectory>
-              <lineNumber>236</lineNumber>
-              <contextFuncName>Compute_Pixel_Stats&amp;lt;32, 480, 30, 480&amp;gt;</contextFuncName>
-              <contextNormFuncName>Compute_Pixel_Stats_32_480_30_480_s</contextNormFuncName>
+              <lineNumber>244</lineNumber>
+              <contextFuncName>UpConv_Fused_Row&amp;lt;8, 16, 16, 960, 480&amp;gt;</contextFuncName>
+              <contextNormFuncName>UpConv_Fused_Row_8_16_16_960_480_s</contextNormFuncName>
               <inlineStackInfo>
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
                   <first>/home/hoinguyen/Documents/Vitis/UpConv_HLS/upconv_block0</first>
                   <second>
-                    <count>2</count>
+                    <count>1</count>
                     <item_version>0</item_version>
-                    <item>
-                      <first>
-                        <first>../gen/Hls_Layers_UpConv.tpp</first>
-                        <second>Compute_Pixel_Stats&amp;lt;32, 480, 30, 480&amp;gt;</second>
-                      </first>
-                      <second>236</second>
-                    </item>
                     <item>
                       <first>
                         <first>../gen/Hls_Layers_UpConv.tpp</first>
                         <second>UpConv_Fused_Row&amp;lt;8, 16, 16, 960, 480&amp;gt;</second>
                       </first>
-                      <second>363</second>
+                      <second>244</second>
                     </item>
                   </second>
                 </item>
               </inlineStackInfo>
               <originalName>sum</originalName>
-              <rtlName>fadd_32ns_32ns_32_11_full_dsp_1_U452</rtlName>
+              <rtlName>fadd_32ns_32ns_32_11_full_dsp_1_U457</rtlName>
               <control>auto</control>
               <opType>fadd</opType>
               <implIndex>fulldsp</implIndex>
@@ -15088,30 +13583,23 @@
               <name>sumsq_rot_3_load_1</name>
               <fileName>../gen/Hls_Layers_UpConv.tpp</fileName>
               <fileDirectory>../.</fileDirectory>
-              <lineNumber>237</lineNumber>
-              <contextFuncName>Compute_Pixel_Stats&amp;lt;32, 480, 30, 480&amp;gt;</contextFuncName>
-              <contextNormFuncName>Compute_Pixel_Stats_32_480_30_480_s</contextNormFuncName>
+              <lineNumber>245</lineNumber>
+              <contextFuncName>UpConv_Fused_Row&amp;lt;8, 16, 16, 960, 480&amp;gt;</contextFuncName>
+              <contextNormFuncName>UpConv_Fused_Row_8_16_16_960_480_s</contextNormFuncName>
               <inlineStackInfo>
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
                   <first>/home/hoinguyen/Documents/Vitis/UpConv_HLS/upconv_block0</first>
                   <second>
-                    <count>2</count>
+                    <count>1</count>
                     <item_version>0</item_version>
-                    <item>
-                      <first>
-                        <first>../gen/Hls_Layers_UpConv.tpp</first>
-                        <second>Compute_Pixel_Stats&amp;lt;32, 480, 30, 480&amp;gt;</second>
-                      </first>
-                      <second>237</second>
-                    </item>
                     <item>
                       <first>
                         <first>../gen/Hls_Layers_UpConv.tpp</first>
                         <second>UpConv_Fused_Row&amp;lt;8, 16, 16, 960, 480&amp;gt;</second>
                       </first>
-                      <second>363</second>
+                      <second>245</second>
                     </item>
                   </second>
                 </item>
@@ -15152,36 +13640,29 @@
               <name>sumsq_3</name>
               <fileName>../gen/Hls_Layers_UpConv.tpp</fileName>
               <fileDirectory>../.</fileDirectory>
-              <lineNumber>237</lineNumber>
-              <contextFuncName>Compute_Pixel_Stats&amp;lt;32, 480, 30, 480&amp;gt;</contextFuncName>
-              <contextNormFuncName>Compute_Pixel_Stats_32_480_30_480_s</contextNormFuncName>
+              <lineNumber>245</lineNumber>
+              <contextFuncName>UpConv_Fused_Row&amp;lt;8, 16, 16, 960, 480&amp;gt;</contextFuncName>
+              <contextNormFuncName>UpConv_Fused_Row_8_16_16_960_480_s</contextNormFuncName>
               <inlineStackInfo>
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
                   <first>/home/hoinguyen/Documents/Vitis/UpConv_HLS/upconv_block0</first>
                   <second>
-                    <count>2</count>
+                    <count>1</count>
                     <item_version>0</item_version>
-                    <item>
-                      <first>
-                        <first>../gen/Hls_Layers_UpConv.tpp</first>
-                        <second>Compute_Pixel_Stats&amp;lt;32, 480, 30, 480&amp;gt;</second>
-                      </first>
-                      <second>237</second>
-                    </item>
                     <item>
                       <first>
                         <first>../gen/Hls_Layers_UpConv.tpp</first>
                         <second>UpConv_Fused_Row&amp;lt;8, 16, 16, 960, 480&amp;gt;</second>
                       </first>
-                      <second>363</second>
+                      <second>245</second>
                     </item>
                   </second>
                 </item>
               </inlineStackInfo>
               <originalName>sumsq</originalName>
-              <rtlName>fadd_32ns_32ns_32_11_full_dsp_1_U453</rtlName>
+              <rtlName>fadd_32ns_32ns_32_11_full_dsp_1_U458</rtlName>
               <control>auto</control>
               <opType>fadd</opType>
               <implIndex>fulldsp</implIndex>
@@ -15216,30 +13697,23 @@
               <name>sum_rot_4_load_1</name>
               <fileName>../gen/Hls_Layers_UpConv.tpp</fileName>
               <fileDirectory>../.</fileDirectory>
-              <lineNumber>236</lineNumber>
-              <contextFuncName>Compute_Pixel_Stats&amp;lt;32, 480, 30, 480&amp;gt;</contextFuncName>
-              <contextNormFuncName>Compute_Pixel_Stats_32_480_30_480_s</contextNormFuncName>
+              <lineNumber>244</lineNumber>
+              <contextFuncName>UpConv_Fused_Row&amp;lt;8, 16, 16, 960, 480&amp;gt;</contextFuncName>
+              <contextNormFuncName>UpConv_Fused_Row_8_16_16_960_480_s</contextNormFuncName>
               <inlineStackInfo>
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
                   <first>/home/hoinguyen/Documents/Vitis/UpConv_HLS/upconv_block0</first>
                   <second>
-                    <count>2</count>
+                    <count>1</count>
                     <item_version>0</item_version>
-                    <item>
-                      <first>
-                        <first>../gen/Hls_Layers_UpConv.tpp</first>
-                        <second>Compute_Pixel_Stats&amp;lt;32, 480, 30, 480&amp;gt;</second>
-                      </first>
-                      <second>236</second>
-                    </item>
                     <item>
                       <first>
                         <first>../gen/Hls_Layers_UpConv.tpp</first>
                         <second>UpConv_Fused_Row&amp;lt;8, 16, 16, 960, 480&amp;gt;</second>
                       </first>
-                      <second>363</second>
+                      <second>244</second>
                     </item>
                   </second>
                 </item>
@@ -15281,36 +13755,29 @@
               <name>sum_4</name>
               <fileName>../gen/Hls_Layers_UpConv.tpp</fileName>
               <fileDirectory>../.</fileDirectory>
-              <lineNumber>236</lineNumber>
-              <contextFuncName>Compute_Pixel_Stats&amp;lt;32, 480, 30, 480&amp;gt;</contextFuncName>
-              <contextNormFuncName>Compute_Pixel_Stats_32_480_30_480_s</contextNormFuncName>
+              <lineNumber>244</lineNumber>
+              <contextFuncName>UpConv_Fused_Row&amp;lt;8, 16, 16, 960, 480&amp;gt;</contextFuncName>
+              <contextNormFuncName>UpConv_Fused_Row_8_16_16_960_480_s</contextNormFuncName>
               <inlineStackInfo>
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
                   <first>/home/hoinguyen/Documents/Vitis/UpConv_HLS/upconv_block0</first>
                   <second>
-                    <count>2</count>
+                    <count>1</count>
                     <item_version>0</item_version>
-                    <item>
-                      <first>
-                        <first>../gen/Hls_Layers_UpConv.tpp</first>
-                        <second>Compute_Pixel_Stats&amp;lt;32, 480, 30, 480&amp;gt;</second>
-                      </first>
-                      <second>236</second>
-                    </item>
                     <item>
                       <first>
                         <first>../gen/Hls_Layers_UpConv.tpp</first>
                         <second>UpConv_Fused_Row&amp;lt;8, 16, 16, 960, 480&amp;gt;</second>
                       </first>
-                      <second>363</second>
+                      <second>244</second>
                     </item>
                   </second>
                 </item>
               </inlineStackInfo>
               <originalName>sum</originalName>
-              <rtlName>fadd_32ns_32ns_32_11_full_dsp_1_U454</rtlName>
+              <rtlName>fadd_32ns_32ns_32_11_full_dsp_1_U459</rtlName>
               <control>auto</control>
               <opType>fadd</opType>
               <implIndex>fulldsp</implIndex>
@@ -15345,30 +13812,23 @@
               <name>sumsq_rot_4_load_1</name>
               <fileName>../gen/Hls_Layers_UpConv.tpp</fileName>
               <fileDirectory>../.</fileDirectory>
-              <lineNumber>237</lineNumber>
-              <contextFuncName>Compute_Pixel_Stats&amp;lt;32, 480, 30, 480&amp;gt;</contextFuncName>
-              <contextNormFuncName>Compute_Pixel_Stats_32_480_30_480_s</contextNormFuncName>
+              <lineNumber>245</lineNumber>
+              <contextFuncName>UpConv_Fused_Row&amp;lt;8, 16, 16, 960, 480&amp;gt;</contextFuncName>
+              <contextNormFuncName>UpConv_Fused_Row_8_16_16_960_480_s</contextNormFuncName>
               <inlineStackInfo>
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
                   <first>/home/hoinguyen/Documents/Vitis/UpConv_HLS/upconv_block0</first>
                   <second>
-                    <count>2</count>
+                    <count>1</count>
                     <item_version>0</item_version>
-                    <item>
-                      <first>
-                        <first>../gen/Hls_Layers_UpConv.tpp</first>
-                        <second>Compute_Pixel_Stats&amp;lt;32, 480, 30, 480&amp;gt;</second>
-                      </first>
-                      <second>237</second>
-                    </item>
                     <item>
                       <first>
                         <first>../gen/Hls_Layers_UpConv.tpp</first>
                         <second>UpConv_Fused_Row&amp;lt;8, 16, 16, 960, 480&amp;gt;</second>
                       </first>
-                      <second>363</second>
+                      <second>245</second>
                     </item>
                   </second>
                 </item>
@@ -15409,36 +13869,29 @@
               <name>sumsq_4</name>
               <fileName>../gen/Hls_Layers_UpConv.tpp</fileName>
               <fileDirectory>../.</fileDirectory>
-              <lineNumber>237</lineNumber>
-              <contextFuncName>Compute_Pixel_Stats&amp;lt;32, 480, 30, 480&amp;gt;</contextFuncName>
-              <contextNormFuncName>Compute_Pixel_Stats_32_480_30_480_s</contextNormFuncName>
+              <lineNumber>245</lineNumber>
+              <contextFuncName>UpConv_Fused_Row&amp;lt;8, 16, 16, 960, 480&amp;gt;</contextFuncName>
+              <contextNormFuncName>UpConv_Fused_Row_8_16_16_960_480_s</contextNormFuncName>
               <inlineStackInfo>
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
                   <first>/home/hoinguyen/Documents/Vitis/UpConv_HLS/upconv_block0</first>
                   <second>
-                    <count>2</count>
+                    <count>1</count>
                     <item_version>0</item_version>
-                    <item>
-                      <first>
-                        <first>../gen/Hls_Layers_UpConv.tpp</first>
-                        <second>Compute_Pixel_Stats&amp;lt;32, 480, 30, 480&amp;gt;</second>
-                      </first>
-                      <second>237</second>
-                    </item>
                     <item>
                       <first>
                         <first>../gen/Hls_Layers_UpConv.tpp</first>
                         <second>UpConv_Fused_Row&amp;lt;8, 16, 16, 960, 480&amp;gt;</second>
                       </first>
-                      <second>363</second>
+                      <second>245</second>
                     </item>
                   </second>
                 </item>
               </inlineStackInfo>
               <originalName>sumsq</originalName>
-              <rtlName>fadd_32ns_32ns_32_11_full_dsp_1_U455</rtlName>
+              <rtlName>fadd_32ns_32ns_32_11_full_dsp_1_U460</rtlName>
               <control>auto</control>
               <opType>fadd</opType>
               <implIndex>fulldsp</implIndex>
@@ -15473,30 +13926,23 @@
               <name>sum_rot_5_load_1</name>
               <fileName>../gen/Hls_Layers_UpConv.tpp</fileName>
               <fileDirectory>../.</fileDirectory>
-              <lineNumber>236</lineNumber>
-              <contextFuncName>Compute_Pixel_Stats&amp;lt;32, 480, 30, 480&amp;gt;</contextFuncName>
-              <contextNormFuncName>Compute_Pixel_Stats_32_480_30_480_s</contextNormFuncName>
+              <lineNumber>244</lineNumber>
+              <contextFuncName>UpConv_Fused_Row&amp;lt;8, 16, 16, 960, 480&amp;gt;</contextFuncName>
+              <contextNormFuncName>UpConv_Fused_Row_8_16_16_960_480_s</contextNormFuncName>
               <inlineStackInfo>
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
                   <first>/home/hoinguyen/Documents/Vitis/UpConv_HLS/upconv_block0</first>
                   <second>
-                    <count>2</count>
+                    <count>1</count>
                     <item_version>0</item_version>
-                    <item>
-                      <first>
-                        <first>../gen/Hls_Layers_UpConv.tpp</first>
-                        <second>Compute_Pixel_Stats&amp;lt;32, 480, 30, 480&amp;gt;</second>
-                      </first>
-                      <second>236</second>
-                    </item>
                     <item>
                       <first>
                         <first>../gen/Hls_Layers_UpConv.tpp</first>
                         <second>UpConv_Fused_Row&amp;lt;8, 16, 16, 960, 480&amp;gt;</second>
                       </first>
-                      <second>363</second>
+                      <second>244</second>
                     </item>
                   </second>
                 </item>
@@ -15538,36 +13984,29 @@
               <name>sum_5</name>
               <fileName>../gen/Hls_Layers_UpConv.tpp</fileName>
               <fileDirectory>../.</fileDirectory>
-              <lineNumber>236</lineNumber>
-              <contextFuncName>Compute_Pixel_Stats&amp;lt;32, 480, 30, 480&amp;gt;</contextFuncName>
-              <contextNormFuncName>Compute_Pixel_Stats_32_480_30_480_s</contextNormFuncName>
+              <lineNumber>244</lineNumber>
+              <contextFuncName>UpConv_Fused_Row&amp;lt;8, 16, 16, 960, 480&amp;gt;</contextFuncName>
+              <contextNormFuncName>UpConv_Fused_Row_8_16_16_960_480_s</contextNormFuncName>
               <inlineStackInfo>
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
                   <first>/home/hoinguyen/Documents/Vitis/UpConv_HLS/upconv_block0</first>
                   <second>
-                    <count>2</count>
+                    <count>1</count>
                     <item_version>0</item_version>
-                    <item>
-                      <first>
-                        <first>../gen/Hls_Layers_UpConv.tpp</first>
-                        <second>Compute_Pixel_Stats&amp;lt;32, 480, 30, 480&amp;gt;</second>
-                      </first>
-                      <second>236</second>
-                    </item>
                     <item>
                       <first>
                         <first>../gen/Hls_Layers_UpConv.tpp</first>
                         <second>UpConv_Fused_Row&amp;lt;8, 16, 16, 960, 480&amp;gt;</second>
                       </first>
-                      <second>363</second>
+                      <second>244</second>
                     </item>
                   </second>
                 </item>
               </inlineStackInfo>
               <originalName>sum</originalName>
-              <rtlName>fadd_32ns_32ns_32_11_full_dsp_1_U456</rtlName>
+              <rtlName>fadd_32ns_32ns_32_11_full_dsp_1_U461</rtlName>
               <control>auto</control>
               <opType>fadd</opType>
               <implIndex>fulldsp</implIndex>
@@ -15602,30 +14041,23 @@
               <name>sumsq_rot_5_load_1</name>
               <fileName>../gen/Hls_Layers_UpConv.tpp</fileName>
               <fileDirectory>../.</fileDirectory>
-              <lineNumber>237</lineNumber>
-              <contextFuncName>Compute_Pixel_Stats&amp;lt;32, 480, 30, 480&amp;gt;</contextFuncName>
-              <contextNormFuncName>Compute_Pixel_Stats_32_480_30_480_s</contextNormFuncName>
+              <lineNumber>245</lineNumber>
+              <contextFuncName>UpConv_Fused_Row&amp;lt;8, 16, 16, 960, 480&amp;gt;</contextFuncName>
+              <contextNormFuncName>UpConv_Fused_Row_8_16_16_960_480_s</contextNormFuncName>
               <inlineStackInfo>
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
                   <first>/home/hoinguyen/Documents/Vitis/UpConv_HLS/upconv_block0</first>
                   <second>
-                    <count>2</count>
+                    <count>1</count>
                     <item_version>0</item_version>
-                    <item>
-                      <first>
-                        <first>../gen/Hls_Layers_UpConv.tpp</first>
-                        <second>Compute_Pixel_Stats&amp;lt;32, 480, 30, 480&amp;gt;</second>
-                      </first>
-                      <second>237</second>
-                    </item>
                     <item>
                       <first>
                         <first>../gen/Hls_Layers_UpConv.tpp</first>
                         <second>UpConv_Fused_Row&amp;lt;8, 16, 16, 960, 480&amp;gt;</second>
                       </first>
-                      <second>363</second>
+                      <second>245</second>
                     </item>
                   </second>
                 </item>
@@ -15666,36 +14098,29 @@
               <name>sumsq_5</name>
               <fileName>../gen/Hls_Layers_UpConv.tpp</fileName>
               <fileDirectory>../.</fileDirectory>
-              <lineNumber>237</lineNumber>
-              <contextFuncName>Compute_Pixel_Stats&amp;lt;32, 480, 30, 480&amp;gt;</contextFuncName>
-              <contextNormFuncName>Compute_Pixel_Stats_32_480_30_480_s</contextNormFuncName>
+              <lineNumber>245</lineNumber>
+              <contextFuncName>UpConv_Fused_Row&amp;lt;8, 16, 16, 960, 480&amp;gt;</contextFuncName>
+              <contextNormFuncName>UpConv_Fused_Row_8_16_16_960_480_s</contextNormFuncName>
               <inlineStackInfo>
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
                   <first>/home/hoinguyen/Documents/Vitis/UpConv_HLS/upconv_block0</first>
                   <second>
-                    <count>2</count>
+                    <count>1</count>
                     <item_version>0</item_version>
-                    <item>
-                      <first>
-                        <first>../gen/Hls_Layers_UpConv.tpp</first>
-                        <second>Compute_Pixel_Stats&amp;lt;32, 480, 30, 480&amp;gt;</second>
-                      </first>
-                      <second>237</second>
-                    </item>
                     <item>
                       <first>
                         <first>../gen/Hls_Layers_UpConv.tpp</first>
                         <second>UpConv_Fused_Row&amp;lt;8, 16, 16, 960, 480&amp;gt;</second>
                       </first>
-                      <second>363</second>
+                      <second>245</second>
                     </item>
                   </second>
                 </item>
               </inlineStackInfo>
               <originalName>sumsq</originalName>
-              <rtlName>fadd_32ns_32ns_32_11_full_dsp_1_U457</rtlName>
+              <rtlName>fadd_32ns_32ns_32_11_full_dsp_1_U462</rtlName>
               <control>auto</control>
               <opType>fadd</opType>
               <implIndex>fulldsp</implIndex>
@@ -15730,30 +14155,23 @@
               <name>sum_rot_6_load_1</name>
               <fileName>../gen/Hls_Layers_UpConv.tpp</fileName>
               <fileDirectory>../.</fileDirectory>
-              <lineNumber>236</lineNumber>
-              <contextFuncName>Compute_Pixel_Stats&amp;lt;32, 480, 30, 480&amp;gt;</contextFuncName>
-              <contextNormFuncName>Compute_Pixel_Stats_32_480_30_480_s</contextNormFuncName>
+              <lineNumber>244</lineNumber>
+              <contextFuncName>UpConv_Fused_Row&amp;lt;8, 16, 16, 960, 480&amp;gt;</contextFuncName>
+              <contextNormFuncName>UpConv_Fused_Row_8_16_16_960_480_s</contextNormFuncName>
               <inlineStackInfo>
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
                   <first>/home/hoinguyen/Documents/Vitis/UpConv_HLS/upconv_block0</first>
                   <second>
-                    <count>2</count>
+                    <count>1</count>
                     <item_version>0</item_version>
-                    <item>
-                      <first>
-                        <first>../gen/Hls_Layers_UpConv.tpp</first>
-                        <second>Compute_Pixel_Stats&amp;lt;32, 480, 30, 480&amp;gt;</second>
-                      </first>
-                      <second>236</second>
-                    </item>
                     <item>
                       <first>
                         <first>../gen/Hls_Layers_UpConv.tpp</first>
                         <second>UpConv_Fused_Row&amp;lt;8, 16, 16, 960, 480&amp;gt;</second>
                       </first>
-                      <second>363</second>
+                      <second>244</second>
                     </item>
                   </second>
                 </item>
@@ -15795,36 +14213,29 @@
               <name>sum_6</name>
               <fileName>../gen/Hls_Layers_UpConv.tpp</fileName>
               <fileDirectory>../.</fileDirectory>
-              <lineNumber>236</lineNumber>
-              <contextFuncName>Compute_Pixel_Stats&amp;lt;32, 480, 30, 480&amp;gt;</contextFuncName>
-              <contextNormFuncName>Compute_Pixel_Stats_32_480_30_480_s</contextNormFuncName>
+              <lineNumber>244</lineNumber>
+              <contextFuncName>UpConv_Fused_Row&amp;lt;8, 16, 16, 960, 480&amp;gt;</contextFuncName>
+              <contextNormFuncName>UpConv_Fused_Row_8_16_16_960_480_s</contextNormFuncName>
               <inlineStackInfo>
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
                   <first>/home/hoinguyen/Documents/Vitis/UpConv_HLS/upconv_block0</first>
                   <second>
-                    <count>2</count>
+                    <count>1</count>
                     <item_version>0</item_version>
-                    <item>
-                      <first>
-                        <first>../gen/Hls_Layers_UpConv.tpp</first>
-                        <second>Compute_Pixel_Stats&amp;lt;32, 480, 30, 480&amp;gt;</second>
-                      </first>
-                      <second>236</second>
-                    </item>
                     <item>
                       <first>
                         <first>../gen/Hls_Layers_UpConv.tpp</first>
                         <second>UpConv_Fused_Row&amp;lt;8, 16, 16, 960, 480&amp;gt;</second>
                       </first>
-                      <second>363</second>
+                      <second>244</second>
                     </item>
                   </second>
                 </item>
               </inlineStackInfo>
               <originalName>sum</originalName>
-              <rtlName>fadd_32ns_32ns_32_11_full_dsp_1_U458</rtlName>
+              <rtlName>fadd_32ns_32ns_32_11_full_dsp_1_U463</rtlName>
               <control>auto</control>
               <opType>fadd</opType>
               <implIndex>fulldsp</implIndex>
@@ -15859,30 +14270,23 @@
               <name>sumsq_rot_6_load_1</name>
               <fileName>../gen/Hls_Layers_UpConv.tpp</fileName>
               <fileDirectory>../.</fileDirectory>
-              <lineNumber>237</lineNumber>
-              <contextFuncName>Compute_Pixel_Stats&amp;lt;32, 480, 30, 480&amp;gt;</contextFuncName>
-              <contextNormFuncName>Compute_Pixel_Stats_32_480_30_480_s</contextNormFuncName>
+              <lineNumber>245</lineNumber>
+              <contextFuncName>UpConv_Fused_Row&amp;lt;8, 16, 16, 960, 480&amp;gt;</contextFuncName>
+              <contextNormFuncName>UpConv_Fused_Row_8_16_16_960_480_s</contextNormFuncName>
               <inlineStackInfo>
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
                   <first>/home/hoinguyen/Documents/Vitis/UpConv_HLS/upconv_block0</first>
                   <second>
-                    <count>2</count>
+                    <count>1</count>
                     <item_version>0</item_version>
-                    <item>
-                      <first>
-                        <first>../gen/Hls_Layers_UpConv.tpp</first>
-                        <second>Compute_Pixel_Stats&amp;lt;32, 480, 30, 480&amp;gt;</second>
-                      </first>
-                      <second>237</second>
-                    </item>
                     <item>
                       <first>
                         <first>../gen/Hls_Layers_UpConv.tpp</first>
                         <second>UpConv_Fused_Row&amp;lt;8, 16, 16, 960, 480&amp;gt;</second>
                       </first>
-                      <second>363</second>
+                      <second>245</second>
                     </item>
                   </second>
                 </item>
@@ -15923,36 +14327,29 @@
               <name>sumsq_6</name>
               <fileName>../gen/Hls_Layers_UpConv.tpp</fileName>
               <fileDirectory>../.</fileDirectory>
-              <lineNumber>237</lineNumber>
-              <contextFuncName>Compute_Pixel_Stats&amp;lt;32, 480, 30, 480&amp;gt;</contextFuncName>
-              <contextNormFuncName>Compute_Pixel_Stats_32_480_30_480_s</contextNormFuncName>
+              <lineNumber>245</lineNumber>
+              <contextFuncName>UpConv_Fused_Row&amp;lt;8, 16, 16, 960, 480&amp;gt;</contextFuncName>
+              <contextNormFuncName>UpConv_Fused_Row_8_16_16_960_480_s</contextNormFuncName>
               <inlineStackInfo>
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
                   <first>/home/hoinguyen/Documents/Vitis/UpConv_HLS/upconv_block0</first>
                   <second>
-                    <count>2</count>
+                    <count>1</count>
                     <item_version>0</item_version>
-                    <item>
-                      <first>
-                        <first>../gen/Hls_Layers_UpConv.tpp</first>
-                        <second>Compute_Pixel_Stats&amp;lt;32, 480, 30, 480&amp;gt;</second>
-                      </first>
-                      <second>237</second>
-                    </item>
                     <item>
                       <first>
                         <first>../gen/Hls_Layers_UpConv.tpp</first>
                         <second>UpConv_Fused_Row&amp;lt;8, 16, 16, 960, 480&amp;gt;</second>
                       </first>
-                      <second>363</second>
+                      <second>245</second>
                     </item>
                   </second>
                 </item>
               </inlineStackInfo>
               <originalName>sumsq</originalName>
-              <rtlName>fadd_32ns_32ns_32_11_full_dsp_1_U459</rtlName>
+              <rtlName>fadd_32ns_32ns_32_11_full_dsp_1_U464</rtlName>
               <control>auto</control>
               <opType>fadd</opType>
               <implIndex>fulldsp</implIndex>
@@ -15987,30 +14384,23 @@
               <name>sum_rot_7_load_1</name>
               <fileName>../gen/Hls_Layers_UpConv.tpp</fileName>
               <fileDirectory>../.</fileDirectory>
-              <lineNumber>236</lineNumber>
-              <contextFuncName>Compute_Pixel_Stats&amp;lt;32, 480, 30, 480&amp;gt;</contextFuncName>
-              <contextNormFuncName>Compute_Pixel_Stats_32_480_30_480_s</contextNormFuncName>
+              <lineNumber>244</lineNumber>
+              <contextFuncName>UpConv_Fused_Row&amp;lt;8, 16, 16, 960, 480&amp;gt;</contextFuncName>
+              <contextNormFuncName>UpConv_Fused_Row_8_16_16_960_480_s</contextNormFuncName>
               <inlineStackInfo>
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
                   <first>/home/hoinguyen/Documents/Vitis/UpConv_HLS/upconv_block0</first>
                   <second>
-                    <count>2</count>
+                    <count>1</count>
                     <item_version>0</item_version>
-                    <item>
-                      <first>
-                        <first>../gen/Hls_Layers_UpConv.tpp</first>
-                        <second>Compute_Pixel_Stats&amp;lt;32, 480, 30, 480&amp;gt;</second>
-                      </first>
-                      <second>236</second>
-                    </item>
                     <item>
                       <first>
                         <first>../gen/Hls_Layers_UpConv.tpp</first>
                         <second>UpConv_Fused_Row&amp;lt;8, 16, 16, 960, 480&amp;gt;</second>
                       </first>
-                      <second>363</second>
+                      <second>244</second>
                     </item>
                   </second>
                 </item>
@@ -16052,36 +14442,29 @@
               <name>sum_7</name>
               <fileName>../gen/Hls_Layers_UpConv.tpp</fileName>
               <fileDirectory>../.</fileDirectory>
-              <lineNumber>236</lineNumber>
-              <contextFuncName>Compute_Pixel_Stats&amp;lt;32, 480, 30, 480&amp;gt;</contextFuncName>
-              <contextNormFuncName>Compute_Pixel_Stats_32_480_30_480_s</contextNormFuncName>
+              <lineNumber>244</lineNumber>
+              <contextFuncName>UpConv_Fused_Row&amp;lt;8, 16, 16, 960, 480&amp;gt;</contextFuncName>
+              <contextNormFuncName>UpConv_Fused_Row_8_16_16_960_480_s</contextNormFuncName>
               <inlineStackInfo>
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
                   <first>/home/hoinguyen/Documents/Vitis/UpConv_HLS/upconv_block0</first>
                   <second>
-                    <count>2</count>
+                    <count>1</count>
                     <item_version>0</item_version>
-                    <item>
-                      <first>
-                        <first>../gen/Hls_Layers_UpConv.tpp</first>
-                        <second>Compute_Pixel_Stats&amp;lt;32, 480, 30, 480&amp;gt;</second>
-                      </first>
-                      <second>236</second>
-                    </item>
                     <item>
                       <first>
                         <first>../gen/Hls_Layers_UpConv.tpp</first>
                         <second>UpConv_Fused_Row&amp;lt;8, 16, 16, 960, 480&amp;gt;</second>
                       </first>
-                      <second>363</second>
+                      <second>244</second>
                     </item>
                   </second>
                 </item>
               </inlineStackInfo>
               <originalName>sum</originalName>
-              <rtlName>fadd_32ns_32ns_32_11_full_dsp_1_U460</rtlName>
+              <rtlName>fadd_32ns_32ns_32_11_full_dsp_1_U465</rtlName>
               <control>auto</control>
               <opType>fadd</opType>
               <implIndex>fulldsp</implIndex>
@@ -16116,30 +14499,23 @@
               <name>sumsq_rot_7_load_1</name>
               <fileName>../gen/Hls_Layers_UpConv.tpp</fileName>
               <fileDirectory>../.</fileDirectory>
-              <lineNumber>237</lineNumber>
-              <contextFuncName>Compute_Pixel_Stats&amp;lt;32, 480, 30, 480&amp;gt;</contextFuncName>
-              <contextNormFuncName>Compute_Pixel_Stats_32_480_30_480_s</contextNormFuncName>
+              <lineNumber>245</lineNumber>
+              <contextFuncName>UpConv_Fused_Row&amp;lt;8, 16, 16, 960, 480&amp;gt;</contextFuncName>
+              <contextNormFuncName>UpConv_Fused_Row_8_16_16_960_480_s</contextNormFuncName>
               <inlineStackInfo>
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
                   <first>/home/hoinguyen/Documents/Vitis/UpConv_HLS/upconv_block0</first>
                   <second>
-                    <count>2</count>
+                    <count>1</count>
                     <item_version>0</item_version>
-                    <item>
-                      <first>
-                        <first>../gen/Hls_Layers_UpConv.tpp</first>
-                        <second>Compute_Pixel_Stats&amp;lt;32, 480, 30, 480&amp;gt;</second>
-                      </first>
-                      <second>237</second>
-                    </item>
                     <item>
                       <first>
                         <first>../gen/Hls_Layers_UpConv.tpp</first>
                         <second>UpConv_Fused_Row&amp;lt;8, 16, 16, 960, 480&amp;gt;</second>
                       </first>
-                      <second>363</second>
+                      <second>245</second>
                     </item>
                   </second>
                 </item>
@@ -16180,36 +14556,29 @@
               <name>sumsq_7</name>
               <fileName>../gen/Hls_Layers_UpConv.tpp</fileName>
               <fileDirectory>../.</fileDirectory>
-              <lineNumber>237</lineNumber>
-              <contextFuncName>Compute_Pixel_Stats&amp;lt;32, 480, 30, 480&amp;gt;</contextFuncName>
-              <contextNormFuncName>Compute_Pixel_Stats_32_480_30_480_s</contextNormFuncName>
+              <lineNumber>245</lineNumber>
+              <contextFuncName>UpConv_Fused_Row&amp;lt;8, 16, 16, 960, 480&amp;gt;</contextFuncName>
+              <contextNormFuncName>UpConv_Fused_Row_8_16_16_960_480_s</contextNormFuncName>
               <inlineStackInfo>
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
                   <first>/home/hoinguyen/Documents/Vitis/UpConv_HLS/upconv_block0</first>
                   <second>
-                    <count>2</count>
+                    <count>1</count>
                     <item_version>0</item_version>
-                    <item>
-                      <first>
-                        <first>../gen/Hls_Layers_UpConv.tpp</first>
-                        <second>Compute_Pixel_Stats&amp;lt;32, 480, 30, 480&amp;gt;</second>
-                      </first>
-                      <second>237</second>
-                    </item>
                     <item>
                       <first>
                         <first>../gen/Hls_Layers_UpConv.tpp</first>
                         <second>UpConv_Fused_Row&amp;lt;8, 16, 16, 960, 480&amp;gt;</second>
                       </first>
-                      <second>363</second>
+                      <second>245</second>
                     </item>
                   </second>
                 </item>
               </inlineStackInfo>
               <originalName>sumsq</originalName>
-              <rtlName>fadd_32ns_32ns_32_11_full_dsp_1_U461</rtlName>
+              <rtlName>fadd_32ns_32ns_32_11_full_dsp_1_U466</rtlName>
               <control>auto</control>
               <opType>fadd</opType>
               <implIndex>fulldsp</implIndex>
@@ -16244,36 +14613,29 @@
               <name>mean</name>
               <fileName>../gen/Hls_Layers_UpConv.tpp</fileName>
               <fileDirectory>../.</fileDirectory>
-              <lineNumber>239</lineNumber>
-              <contextFuncName>Compute_Pixel_Stats&amp;lt;32, 480, 30, 480&amp;gt;</contextFuncName>
-              <contextNormFuncName>Compute_Pixel_Stats_32_480_30_480_s</contextNormFuncName>
+              <lineNumber>247</lineNumber>
+              <contextFuncName>UpConv_Fused_Row&amp;lt;8, 16, 16, 960, 480&amp;gt;</contextFuncName>
+              <contextNormFuncName>UpConv_Fused_Row_8_16_16_960_480_s</contextNormFuncName>
               <inlineStackInfo>
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
                   <first>/home/hoinguyen/Documents/Vitis/UpConv_HLS/upconv_block0</first>
                   <second>
-                    <count>2</count>
+                    <count>1</count>
                     <item_version>0</item_version>
-                    <item>
-                      <first>
-                        <first>../gen/Hls_Layers_UpConv.tpp</first>
-                        <second>Compute_Pixel_Stats&amp;lt;32, 480, 30, 480&amp;gt;</second>
-                      </first>
-                      <second>239</second>
-                    </item>
                     <item>
                       <first>
                         <first>../gen/Hls_Layers_UpConv.tpp</first>
                         <second>UpConv_Fused_Row&amp;lt;8, 16, 16, 960, 480&amp;gt;</second>
                       </first>
-                      <second>363</second>
+                      <second>247</second>
                     </item>
                   </second>
                 </item>
               </inlineStackInfo>
               <originalName>mean</originalName>
-              <rtlName>fdiv_32ns_32ns_32_30_no_dsp_1_U466</rtlName>
+              <rtlName>fdiv_32ns_32ns_32_30_no_dsp_1_U471</rtlName>
               <control>auto</control>
               <opType>fdiv</opType>
               <implIndex>fabric</implIndex>
@@ -16305,39 +14667,32 @@
             <Obj>
               <type>0</type>
               <id>339</id>
-              <name>div38_i</name>
+              <name>div</name>
               <fileName>../gen/Hls_Layers_UpConv.tpp</fileName>
               <fileDirectory>../.</fileDirectory>
-              <lineNumber>240</lineNumber>
-              <contextFuncName>Compute_Pixel_Stats&amp;lt;32, 480, 30, 480&amp;gt;</contextFuncName>
-              <contextNormFuncName>Compute_Pixel_Stats_32_480_30_480_s</contextNormFuncName>
+              <lineNumber>248</lineNumber>
+              <contextFuncName>UpConv_Fused_Row&amp;lt;8, 16, 16, 960, 480&amp;gt;</contextFuncName>
+              <contextNormFuncName>UpConv_Fused_Row_8_16_16_960_480_s</contextNormFuncName>
               <inlineStackInfo>
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
                   <first>/home/hoinguyen/Documents/Vitis/UpConv_HLS/upconv_block0</first>
                   <second>
-                    <count>2</count>
+                    <count>1</count>
                     <item_version>0</item_version>
-                    <item>
-                      <first>
-                        <first>../gen/Hls_Layers_UpConv.tpp</first>
-                        <second>Compute_Pixel_Stats&amp;lt;32, 480, 30, 480&amp;gt;</second>
-                      </first>
-                      <second>240</second>
-                    </item>
                     <item>
                       <first>
                         <first>../gen/Hls_Layers_UpConv.tpp</first>
                         <second>UpConv_Fused_Row&amp;lt;8, 16, 16, 960, 480&amp;gt;</second>
                       </first>
-                      <second>363</second>
+                      <second>248</second>
                     </item>
                   </second>
                 </item>
               </inlineStackInfo>
               <originalName/>
-              <rtlName>fdiv_32ns_32ns_32_30_no_dsp_1_U467</rtlName>
+              <rtlName>fdiv_32ns_32ns_32_30_no_dsp_1_U472</rtlName>
               <control>auto</control>
               <opType>fdiv</opType>
               <implIndex>fabric</implIndex>
@@ -16369,39 +14724,32 @@
             <Obj>
               <type>0</type>
               <id>340</id>
-              <name>mul39_i</name>
+              <name>mul3</name>
               <fileName>../gen/Hls_Layers_UpConv.tpp</fileName>
               <fileDirectory>../.</fileDirectory>
-              <lineNumber>240</lineNumber>
-              <contextFuncName>Compute_Pixel_Stats&amp;lt;32, 480, 30, 480&amp;gt;</contextFuncName>
-              <contextNormFuncName>Compute_Pixel_Stats_32_480_30_480_s</contextNormFuncName>
+              <lineNumber>248</lineNumber>
+              <contextFuncName>UpConv_Fused_Row&amp;lt;8, 16, 16, 960, 480&amp;gt;</contextFuncName>
+              <contextNormFuncName>UpConv_Fused_Row_8_16_16_960_480_s</contextNormFuncName>
               <inlineStackInfo>
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
                   <first>/home/hoinguyen/Documents/Vitis/UpConv_HLS/upconv_block0</first>
                   <second>
-                    <count>2</count>
+                    <count>1</count>
                     <item_version>0</item_version>
-                    <item>
-                      <first>
-                        <first>../gen/Hls_Layers_UpConv.tpp</first>
-                        <second>Compute_Pixel_Stats&amp;lt;32, 480, 30, 480&amp;gt;</second>
-                      </first>
-                      <second>240</second>
-                    </item>
                     <item>
                       <first>
                         <first>../gen/Hls_Layers_UpConv.tpp</first>
                         <second>UpConv_Fused_Row&amp;lt;8, 16, 16, 960, 480&amp;gt;</second>
                       </first>
-                      <second>363</second>
+                      <second>248</second>
                     </item>
                   </second>
                 </item>
               </inlineStackInfo>
               <originalName/>
-              <rtlName>fmul_32ns_32ns_32_7_max_dsp_1_U465</rtlName>
+              <rtlName>fmul_32ns_32ns_32_7_max_dsp_1_U470</rtlName>
               <control>auto</control>
               <opType>fmul</opType>
               <implIndex>maxdsp</implIndex>
@@ -16436,36 +14784,29 @@
               <name>var</name>
               <fileName>../gen/Hls_Layers_UpConv.tpp</fileName>
               <fileDirectory>../.</fileDirectory>
-              <lineNumber>240</lineNumber>
-              <contextFuncName>Compute_Pixel_Stats&amp;lt;32, 480, 30, 480&amp;gt;</contextFuncName>
-              <contextNormFuncName>Compute_Pixel_Stats_32_480_30_480_s</contextNormFuncName>
+              <lineNumber>248</lineNumber>
+              <contextFuncName>UpConv_Fused_Row&amp;lt;8, 16, 16, 960, 480&amp;gt;</contextFuncName>
+              <contextNormFuncName>UpConv_Fused_Row_8_16_16_960_480_s</contextNormFuncName>
               <inlineStackInfo>
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
                   <first>/home/hoinguyen/Documents/Vitis/UpConv_HLS/upconv_block0</first>
                   <second>
-                    <count>2</count>
+                    <count>1</count>
                     <item_version>0</item_version>
-                    <item>
-                      <first>
-                        <first>../gen/Hls_Layers_UpConv.tpp</first>
-                        <second>Compute_Pixel_Stats&amp;lt;32, 480, 30, 480&amp;gt;</second>
-                      </first>
-                      <second>240</second>
-                    </item>
                     <item>
                       <first>
                         <first>../gen/Hls_Layers_UpConv.tpp</first>
                         <second>UpConv_Fused_Row&amp;lt;8, 16, 16, 960, 480&amp;gt;</second>
                       </first>
-                      <second>363</second>
+                      <second>248</second>
                     </item>
                   </second>
                 </item>
               </inlineStackInfo>
               <originalName>var</originalName>
-              <rtlName>fsub_32ns_32ns_32_11_full_dsp_1_U462</rtlName>
+              <rtlName>fsub_32ns_32ns_32_11_full_dsp_1_U467</rtlName>
               <control>auto</control>
               <opType>fsub</opType>
               <implIndex>fulldsp</implIndex>
@@ -16500,30 +14841,23 @@
               <name>mean_buf_addr</name>
               <fileName>../gen/Hls_Layers_UpConv.tpp</fileName>
               <fileDirectory>../.</fileDirectory>
-              <lineNumber>241</lineNumber>
-              <contextFuncName>Compute_Pixel_Stats&amp;lt;32, 480, 30, 480&amp;gt;</contextFuncName>
-              <contextNormFuncName>Compute_Pixel_Stats_32_480_30_480_s</contextNormFuncName>
+              <lineNumber>249</lineNumber>
+              <contextFuncName>UpConv_Fused_Row&amp;lt;8, 16, 16, 960, 480&amp;gt;</contextFuncName>
+              <contextNormFuncName>UpConv_Fused_Row_8_16_16_960_480_s</contextNormFuncName>
               <inlineStackInfo>
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
                   <first>/home/hoinguyen/Documents/Vitis/UpConv_HLS/upconv_block0</first>
                   <second>
-                    <count>2</count>
+                    <count>1</count>
                     <item_version>0</item_version>
-                    <item>
-                      <first>
-                        <first>../gen/Hls_Layers_UpConv.tpp</first>
-                        <second>Compute_Pixel_Stats&amp;lt;32, 480, 30, 480&amp;gt;</second>
-                      </first>
-                      <second>241</second>
-                    </item>
                     <item>
                       <first>
                         <first>../gen/Hls_Layers_UpConv.tpp</first>
                         <second>UpConv_Fused_Row&amp;lt;8, 16, 16, 960, 480&amp;gt;</second>
                       </first>
-                      <second>363</second>
+                      <second>249</second>
                     </item>
                   </second>
                 </item>
@@ -16562,33 +14896,26 @@
             <Obj>
               <type>0</type>
               <id>343</id>
-              <name>mean_buf_addr_write_ln241</name>
+              <name>mean_buf_addr_write_ln249</name>
               <fileName>../gen/Hls_Layers_UpConv.tpp</fileName>
               <fileDirectory>../.</fileDirectory>
-              <lineNumber>241</lineNumber>
-              <contextFuncName>Compute_Pixel_Stats&amp;lt;32, 480, 30, 480&amp;gt;</contextFuncName>
-              <contextNormFuncName>Compute_Pixel_Stats_32_480_30_480_s</contextNormFuncName>
+              <lineNumber>249</lineNumber>
+              <contextFuncName>UpConv_Fused_Row&amp;lt;8, 16, 16, 960, 480&amp;gt;</contextFuncName>
+              <contextNormFuncName>UpConv_Fused_Row_8_16_16_960_480_s</contextNormFuncName>
               <inlineStackInfo>
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
                   <first>/home/hoinguyen/Documents/Vitis/UpConv_HLS/upconv_block0</first>
                   <second>
-                    <count>2</count>
+                    <count>1</count>
                     <item_version>0</item_version>
-                    <item>
-                      <first>
-                        <first>../gen/Hls_Layers_UpConv.tpp</first>
-                        <second>Compute_Pixel_Stats&amp;lt;32, 480, 30, 480&amp;gt;</second>
-                      </first>
-                      <second>241</second>
-                    </item>
                     <item>
                       <first>
                         <first>../gen/Hls_Layers_UpConv.tpp</first>
                         <second>UpConv_Fused_Row&amp;lt;8, 16, 16, 960, 480&amp;gt;</second>
                       </first>
-                      <second>363</second>
+                      <second>249</second>
                     </item>
                   </second>
                 </item>
@@ -16629,36 +14956,29 @@
               <name>x_assign</name>
               <fileName>../gen/Hls_Layers_UpConv.tpp</fileName>
               <fileDirectory>../.</fileDirectory>
-              <lineNumber>242</lineNumber>
-              <contextFuncName>Compute_Pixel_Stats&amp;lt;32, 480, 30, 480&amp;gt;</contextFuncName>
-              <contextNormFuncName>Compute_Pixel_Stats_32_480_30_480_s</contextNormFuncName>
+              <lineNumber>250</lineNumber>
+              <contextFuncName>UpConv_Fused_Row&amp;lt;8, 16, 16, 960, 480&amp;gt;</contextFuncName>
+              <contextNormFuncName>UpConv_Fused_Row_8_16_16_960_480_s</contextNormFuncName>
               <inlineStackInfo>
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
                   <first>/home/hoinguyen/Documents/Vitis/UpConv_HLS/upconv_block0</first>
                   <second>
-                    <count>2</count>
+                    <count>1</count>
                     <item_version>0</item_version>
-                    <item>
-                      <first>
-                        <first>../gen/Hls_Layers_UpConv.tpp</first>
-                        <second>Compute_Pixel_Stats&amp;lt;32, 480, 30, 480&amp;gt;</second>
-                      </first>
-                      <second>242</second>
-                    </item>
                     <item>
                       <first>
                         <first>../gen/Hls_Layers_UpConv.tpp</first>
                         <second>UpConv_Fused_Row&amp;lt;8, 16, 16, 960, 480&amp;gt;</second>
                       </first>
-                      <second>363</second>
+                      <second>250</second>
                     </item>
                   </second>
                 </item>
               </inlineStackInfo>
               <originalName>x</originalName>
-              <rtlName>fadd_32ns_32ns_32_11_full_dsp_1_U463</rtlName>
+              <rtlName>fadd_32ns_32ns_32_11_full_dsp_1_U468</rtlName>
               <control>auto</control>
               <opType>fadd</opType>
               <implIndex>fulldsp</implIndex>
@@ -16690,7 +15010,7 @@
             <Obj>
               <type>0</type>
               <id>345</id>
-              <name>tmp_1</name>
+              <name>tmp_2</name>
               <fileName>/wrk/ci/prod/2024.2/hls_product/continuous/495/2024.2/src/shared/hls/clib/hlsmath/src/c++/sqrtfloat.cpp</fileName>
               <fileDirectory>../../../../../../../wrk/ci/prod/2024.2/hls_product/continuous/495/2024.2/src/shared/hls/clib/hlsmath</fileDirectory>
               <lineNumber>13</lineNumber>
@@ -16702,21 +15022,14 @@
                 <item>
                   <first>/home/hoinguyen/Documents/Vitis/UpConv_HLS/upconv_block0</first>
                   <second>
-                    <count>3</count>
+                    <count>2</count>
                     <item_version>0</item_version>
-                    <item>
-                      <first>
-                        <first>../gen/Hls_Layers_UpConv.tpp</first>
-                        <second>Compute_Pixel_Stats&amp;lt;32, 480, 30, 480&amp;gt;</second>
-                      </first>
-                      <second>242</second>
-                    </item>
                     <item>
                       <first>
                         <first>../gen/Hls_Layers_UpConv.tpp</first>
                         <second>UpConv_Fused_Row&amp;lt;8, 16, 16, 960, 480&amp;gt;</second>
                       </first>
-                      <second>363</second>
+                      <second>250</second>
                     </item>
                     <item>
                       <first>
@@ -16743,7 +15056,7 @@
                 </item>
               </inlineStackInfo>
               <originalName/>
-              <rtlName>fsqrt_32ns_32ns_32_28_no_dsp_1_U469</rtlName>
+              <rtlName>fsqrt_32ns_32ns_32_28_no_dsp_1_U474</rtlName>
               <control>auto</control>
               <opType>fsqrt</opType>
               <implIndex>fabric</implIndex>
@@ -16775,39 +15088,32 @@
             <Obj>
               <type>0</type>
               <id>346</id>
-              <name>div45_i</name>
+              <name>div1</name>
               <fileName>../gen/Hls_Layers_UpConv.tpp</fileName>
               <fileDirectory>../.</fileDirectory>
-              <lineNumber>242</lineNumber>
-              <contextFuncName>Compute_Pixel_Stats&amp;lt;32, 480, 30, 480&amp;gt;</contextFuncName>
-              <contextNormFuncName>Compute_Pixel_Stats_32_480_30_480_s</contextNormFuncName>
+              <lineNumber>250</lineNumber>
+              <contextFuncName>UpConv_Fused_Row&amp;lt;8, 16, 16, 960, 480&amp;gt;</contextFuncName>
+              <contextNormFuncName>UpConv_Fused_Row_8_16_16_960_480_s</contextNormFuncName>
               <inlineStackInfo>
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
                   <first>/home/hoinguyen/Documents/Vitis/UpConv_HLS/upconv_block0</first>
                   <second>
-                    <count>2</count>
+                    <count>1</count>
                     <item_version>0</item_version>
-                    <item>
-                      <first>
-                        <first>../gen/Hls_Layers_UpConv.tpp</first>
-                        <second>Compute_Pixel_Stats&amp;lt;32, 480, 30, 480&amp;gt;</second>
-                      </first>
-                      <second>242</second>
-                    </item>
                     <item>
                       <first>
                         <first>../gen/Hls_Layers_UpConv.tpp</first>
                         <second>UpConv_Fused_Row&amp;lt;8, 16, 16, 960, 480&amp;gt;</second>
                       </first>
-                      <second>363</second>
+                      <second>250</second>
                     </item>
                   </second>
                 </item>
               </inlineStackInfo>
               <originalName/>
-              <rtlName>fdiv_32ns_32ns_32_30_no_dsp_1_U468</rtlName>
+              <rtlName>fdiv_32ns_32ns_32_30_no_dsp_1_U473</rtlName>
               <control>auto</control>
               <opType>fdiv</opType>
               <implIndex>fabric</implIndex>
@@ -16839,33 +15145,26 @@
             <Obj>
               <type>0</type>
               <id>347</id>
-              <name>conv46_i</name>
+              <name>conv</name>
               <fileName>../gen/Hls_Layers_UpConv.tpp</fileName>
               <fileDirectory>../.</fileDirectory>
-              <lineNumber>242</lineNumber>
-              <contextFuncName>Compute_Pixel_Stats&amp;lt;32, 480, 30, 480&amp;gt;</contextFuncName>
-              <contextNormFuncName>Compute_Pixel_Stats_32_480_30_480_s</contextNormFuncName>
+              <lineNumber>250</lineNumber>
+              <contextFuncName>UpConv_Fused_Row&amp;lt;8, 16, 16, 960, 480&amp;gt;</contextFuncName>
+              <contextNormFuncName>UpConv_Fused_Row_8_16_16_960_480_s</contextNormFuncName>
               <inlineStackInfo>
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
                   <first>/home/hoinguyen/Documents/Vitis/UpConv_HLS/upconv_block0</first>
                   <second>
-                    <count>2</count>
+                    <count>1</count>
                     <item_version>0</item_version>
-                    <item>
-                      <first>
-                        <first>../gen/Hls_Layers_UpConv.tpp</first>
-                        <second>Compute_Pixel_Stats&amp;lt;32, 480, 30, 480&amp;gt;</second>
-                      </first>
-                      <second>242</second>
-                    </item>
                     <item>
                       <first>
                         <first>../gen/Hls_Layers_UpConv.tpp</first>
                         <second>UpConv_Fused_Row&amp;lt;8, 16, 16, 960, 480&amp;gt;</second>
                       </first>
-                      <second>363</second>
+                      <second>250</second>
                     </item>
                   </second>
                 </item>
@@ -16905,30 +15204,23 @@
               <name>inv_buf_addr</name>
               <fileName>../gen/Hls_Layers_UpConv.tpp</fileName>
               <fileDirectory>../.</fileDirectory>
-              <lineNumber>242</lineNumber>
-              <contextFuncName>Compute_Pixel_Stats&amp;lt;32, 480, 30, 480&amp;gt;</contextFuncName>
-              <contextNormFuncName>Compute_Pixel_Stats_32_480_30_480_s</contextNormFuncName>
+              <lineNumber>250</lineNumber>
+              <contextFuncName>UpConv_Fused_Row&amp;lt;8, 16, 16, 960, 480&amp;gt;</contextFuncName>
+              <contextNormFuncName>UpConv_Fused_Row_8_16_16_960_480_s</contextNormFuncName>
               <inlineStackInfo>
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
                   <first>/home/hoinguyen/Documents/Vitis/UpConv_HLS/upconv_block0</first>
                   <second>
-                    <count>2</count>
+                    <count>1</count>
                     <item_version>0</item_version>
-                    <item>
-                      <first>
-                        <first>../gen/Hls_Layers_UpConv.tpp</first>
-                        <second>Compute_Pixel_Stats&amp;lt;32, 480, 30, 480&amp;gt;</second>
-                      </first>
-                      <second>242</second>
-                    </item>
                     <item>
                       <first>
                         <first>../gen/Hls_Layers_UpConv.tpp</first>
                         <second>UpConv_Fused_Row&amp;lt;8, 16, 16, 960, 480&amp;gt;</second>
                       </first>
-                      <second>363</second>
+                      <second>250</second>
                     </item>
                   </second>
                 </item>
@@ -16967,33 +15259,26 @@
             <Obj>
               <type>0</type>
               <id>349</id>
-              <name>inv_buf_addr_write_ln242</name>
+              <name>inv_buf_addr_write_ln250</name>
               <fileName>../gen/Hls_Layers_UpConv.tpp</fileName>
               <fileDirectory>../.</fileDirectory>
-              <lineNumber>242</lineNumber>
-              <contextFuncName>Compute_Pixel_Stats&amp;lt;32, 480, 30, 480&amp;gt;</contextFuncName>
-              <contextNormFuncName>Compute_Pixel_Stats_32_480_30_480_s</contextNormFuncName>
+              <lineNumber>250</lineNumber>
+              <contextFuncName>UpConv_Fused_Row&amp;lt;8, 16, 16, 960, 480&amp;gt;</contextFuncName>
+              <contextNormFuncName>UpConv_Fused_Row_8_16_16_960_480_s</contextNormFuncName>
               <inlineStackInfo>
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
                   <first>/home/hoinguyen/Documents/Vitis/UpConv_HLS/upconv_block0</first>
                   <second>
-                    <count>2</count>
+                    <count>1</count>
                     <item_version>0</item_version>
-                    <item>
-                      <first>
-                        <first>../gen/Hls_Layers_UpConv.tpp</first>
-                        <second>Compute_Pixel_Stats&amp;lt;32, 480, 30, 480&amp;gt;</second>
-                      </first>
-                      <second>242</second>
-                    </item>
                     <item>
                       <first>
                         <first>../gen/Hls_Layers_UpConv.tpp</first>
                         <second>UpConv_Fused_Row&amp;lt;8, 16, 16, 960, 480&amp;gt;</second>
                       </first>
-                      <second>363</second>
+                      <second>250</second>
                     </item>
                   </second>
                 </item>
@@ -17034,30 +15319,23 @@
               <name>ws_1</name>
               <fileName>../gen/Hls_Layers_UpConv.tpp</fileName>
               <fileDirectory>../.</fileDirectory>
-              <lineNumber>243</lineNumber>
-              <contextFuncName>Compute_Pixel_Stats&amp;lt;32, 480, 30, 480&amp;gt;</contextFuncName>
-              <contextNormFuncName>Compute_Pixel_Stats_32_480_30_480_s</contextNormFuncName>
+              <lineNumber>251</lineNumber>
+              <contextFuncName>UpConv_Fused_Row&amp;lt;8, 16, 16, 960, 480&amp;gt;</contextFuncName>
+              <contextNormFuncName>UpConv_Fused_Row_8_16_16_960_480_s</contextNormFuncName>
               <inlineStackInfo>
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
                   <first>/home/hoinguyen/Documents/Vitis/UpConv_HLS/upconv_block0</first>
                   <second>
-                    <count>2</count>
+                    <count>1</count>
                     <item_version>0</item_version>
-                    <item>
-                      <first>
-                        <first>../gen/Hls_Layers_UpConv.tpp</first>
-                        <second>Compute_Pixel_Stats&amp;lt;32, 480, 30, 480&amp;gt;</second>
-                      </first>
-                      <second>243</second>
-                    </item>
                     <item>
                       <first>
                         <first>../gen/Hls_Layers_UpConv.tpp</first>
                         <second>UpConv_Fused_Row&amp;lt;8, 16, 16, 960, 480&amp;gt;</second>
                       </first>
-                      <second>363</second>
+                      <second>251</second>
                     </item>
                   </second>
                 </item>
@@ -17095,33 +15373,26 @@
             <Obj>
               <type>0</type>
               <id>351</id>
-              <name>ws_write_ln212</name>
+              <name>ws_write_ln226</name>
               <fileName>../gen/Hls_Layers_UpConv.tpp</fileName>
               <fileDirectory>../.</fileDirectory>
-              <lineNumber>212</lineNumber>
-              <contextFuncName>Compute_Pixel_Stats&amp;lt;32, 480, 30, 480&amp;gt;</contextFuncName>
-              <contextNormFuncName>Compute_Pixel_Stats_32_480_30_480_s</contextNormFuncName>
+              <lineNumber>226</lineNumber>
+              <contextFuncName>UpConv_Fused_Row&amp;lt;8, 16, 16, 960, 480&amp;gt;</contextFuncName>
+              <contextNormFuncName>UpConv_Fused_Row_8_16_16_960_480_s</contextNormFuncName>
               <inlineStackInfo>
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
                   <first>/home/hoinguyen/Documents/Vitis/UpConv_HLS/upconv_block0</first>
                   <second>
-                    <count>2</count>
+                    <count>1</count>
                     <item_version>0</item_version>
-                    <item>
-                      <first>
-                        <first>../gen/Hls_Layers_UpConv.tpp</first>
-                        <second>Compute_Pixel_Stats&amp;lt;32, 480, 30, 480&amp;gt;</second>
-                      </first>
-                      <second>212</second>
-                    </item>
                     <item>
                       <first>
                         <first>../gen/Hls_Layers_UpConv.tpp</first>
                         <second>UpConv_Fused_Row&amp;lt;8, 16, 16, 960, 480&amp;gt;</second>
                       </first>
-                      <second>363</second>
+                      <second>226</second>
                     </item>
                   </second>
                 </item>
@@ -17162,33 +15433,26 @@
             <Obj>
               <type>0</type>
               <id>352</id>
-              <name>cs_write_ln212</name>
+              <name>cs_write_ln226</name>
               <fileName>../gen/Hls_Layers_UpConv.tpp</fileName>
               <fileDirectory>../.</fileDirectory>
-              <lineNumber>212</lineNumber>
-              <contextFuncName>Compute_Pixel_Stats&amp;lt;32, 480, 30, 480&amp;gt;</contextFuncName>
-              <contextNormFuncName>Compute_Pixel_Stats_32_480_30_480_s</contextNormFuncName>
+              <lineNumber>226</lineNumber>
+              <contextFuncName>UpConv_Fused_Row&amp;lt;8, 16, 16, 960, 480&amp;gt;</contextFuncName>
+              <contextNormFuncName>UpConv_Fused_Row_8_16_16_960_480_s</contextNormFuncName>
               <inlineStackInfo>
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
                   <first>/home/hoinguyen/Documents/Vitis/UpConv_HLS/upconv_block0</first>
                   <second>
-                    <count>2</count>
+                    <count>1</count>
                     <item_version>0</item_version>
-                    <item>
-                      <first>
-                        <first>../gen/Hls_Layers_UpConv.tpp</first>
-                        <second>Compute_Pixel_Stats&amp;lt;32, 480, 30, 480&amp;gt;</second>
-                      </first>
-                      <second>212</second>
-                    </item>
                     <item>
                       <first>
                         <first>../gen/Hls_Layers_UpConv.tpp</first>
                         <second>UpConv_Fused_Row&amp;lt;8, 16, 16, 960, 480&amp;gt;</second>
                       </first>
-                      <second>363</second>
+                      <second>226</second>
                     </item>
                   </second>
                 </item>
@@ -17228,33 +15492,26 @@
             <Obj>
               <type>0</type>
               <id>353</id>
-              <name>br_ln244</name>
+              <name>br_ln252</name>
               <fileName>../gen/Hls_Layers_UpConv.tpp</fileName>
               <fileDirectory>../.</fileDirectory>
-              <lineNumber>244</lineNumber>
-              <contextFuncName>Compute_Pixel_Stats&amp;lt;32, 480, 30, 480&amp;gt;</contextFuncName>
-              <contextNormFuncName>Compute_Pixel_Stats_32_480_30_480_s</contextNormFuncName>
+              <lineNumber>252</lineNumber>
+              <contextFuncName>UpConv_Fused_Row&amp;lt;8, 16, 16, 960, 480&amp;gt;</contextFuncName>
+              <contextNormFuncName>UpConv_Fused_Row_8_16_16_960_480_s</contextNormFuncName>
               <inlineStackInfo>
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
                   <first>/home/hoinguyen/Documents/Vitis/UpConv_HLS/upconv_block0</first>
                   <second>
-                    <count>2</count>
+                    <count>1</count>
                     <item_version>0</item_version>
-                    <item>
-                      <first>
-                        <first>../gen/Hls_Layers_UpConv.tpp</first>
-                        <second>Compute_Pixel_Stats&amp;lt;32, 480, 30, 480&amp;gt;</second>
-                      </first>
-                      <second>244</second>
-                    </item>
                     <item>
                       <first>
                         <first>../gen/Hls_Layers_UpConv.tpp</first>
                         <second>UpConv_Fused_Row&amp;lt;8, 16, 16, 960, 480&amp;gt;</second>
                       </first>
-                      <second>363</second>
+                      <second>252</second>
                     </item>
                   </second>
                 </item>
@@ -17291,33 +15548,26 @@
             <Obj>
               <type>0</type>
               <id>355</id>
-              <name>m_2_write_ln213</name>
+              <name>m_2_write_ln227</name>
               <fileName>../gen/Hls_Layers_UpConv.tpp</fileName>
               <fileDirectory>../.</fileDirectory>
-              <lineNumber>213</lineNumber>
-              <contextFuncName>Compute_Pixel_Stats&amp;lt;32, 480, 30, 480&amp;gt;</contextFuncName>
-              <contextNormFuncName>Compute_Pixel_Stats_32_480_30_480_s</contextNormFuncName>
+              <lineNumber>227</lineNumber>
+              <contextFuncName>UpConv_Fused_Row&amp;lt;8, 16, 16, 960, 480&amp;gt;</contextFuncName>
+              <contextNormFuncName>UpConv_Fused_Row_8_16_16_960_480_s</contextNormFuncName>
               <inlineStackInfo>
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
                   <first>/home/hoinguyen/Documents/Vitis/UpConv_HLS/upconv_block0</first>
                   <second>
-                    <count>2</count>
+                    <count>1</count>
                     <item_version>0</item_version>
-                    <item>
-                      <first>
-                        <first>../gen/Hls_Layers_UpConv.tpp</first>
-                        <second>Compute_Pixel_Stats&amp;lt;32, 480, 30, 480&amp;gt;</second>
-                      </first>
-                      <second>213</second>
-                    </item>
                     <item>
                       <first>
                         <first>../gen/Hls_Layers_UpConv.tpp</first>
                         <second>UpConv_Fused_Row&amp;lt;8, 16, 16, 960, 480&amp;gt;</second>
                       </first>
-                      <second>363</second>
+                      <second>227</second>
                     </item>
                   </second>
                 </item>
@@ -17357,33 +15607,26 @@
             <Obj>
               <type>0</type>
               <id>356</id>
-              <name>br_ln213</name>
+              <name>br_ln227</name>
               <fileName>../gen/Hls_Layers_UpConv.tpp</fileName>
               <fileDirectory>../.</fileDirectory>
-              <lineNumber>213</lineNumber>
-              <contextFuncName>Compute_Pixel_Stats&amp;lt;32, 480, 30, 480&amp;gt;</contextFuncName>
-              <contextNormFuncName>Compute_Pixel_Stats_32_480_30_480_s</contextNormFuncName>
+              <lineNumber>227</lineNumber>
+              <contextFuncName>UpConv_Fused_Row&amp;lt;8, 16, 16, 960, 480&amp;gt;</contextFuncName>
+              <contextNormFuncName>UpConv_Fused_Row_8_16_16_960_480_s</contextNormFuncName>
               <inlineStackInfo>
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
                   <first>/home/hoinguyen/Documents/Vitis/UpConv_HLS/upconv_block0</first>
                   <second>
-                    <count>2</count>
+                    <count>1</count>
                     <item_version>0</item_version>
-                    <item>
-                      <first>
-                        <first>../gen/Hls_Layers_UpConv.tpp</first>
-                        <second>Compute_Pixel_Stats&amp;lt;32, 480, 30, 480&amp;gt;</second>
-                      </first>
-                      <second>213</second>
-                    </item>
                     <item>
                       <first>
                         <first>../gen/Hls_Layers_UpConv.tpp</first>
                         <second>UpConv_Fused_Row&amp;lt;8, 16, 16, 960, 480&amp;gt;</second>
                       </first>
-                      <second>363</second>
+                      <second>227</second>
                     </item>
                   </second>
                 </item>
@@ -18948,7 +17191,7 @@
           <Obj>
             <type>3</type>
             <id>70</id>
-            <name>for.body.i40</name>
+            <name>for.body44</name>
             <fileName/>
             <fileDirectory/>
             <lineNumber>0</lineNumber>
@@ -18983,7 +17226,7 @@
           <Obj>
             <type>3</type>
             <id>140</id>
-            <name>for.body.i40.split</name>
+            <name>for.body44.split</name>
             <fileName/>
             <fileDirectory/>
             <lineNumber>0</lineNumber>
@@ -19079,7 +17322,7 @@
           <Obj>
             <type>3</type>
             <id>143</id>
-            <name>arrayidx61.i.case.14</name>
+            <name>arrayidx542.case.14</name>
             <fileName/>
             <fileDirectory/>
             <lineNumber>0</lineNumber>
@@ -19111,7 +17354,7 @@
           <Obj>
             <type>3</type>
             <id>146</id>
-            <name>arrayidx61.i.case.13</name>
+            <name>arrayidx542.case.13</name>
             <fileName/>
             <fileDirectory/>
             <lineNumber>0</lineNumber>
@@ -19143,7 +17386,7 @@
           <Obj>
             <type>3</type>
             <id>149</id>
-            <name>arrayidx61.i.case.12</name>
+            <name>arrayidx542.case.12</name>
             <fileName/>
             <fileDirectory/>
             <lineNumber>0</lineNumber>
@@ -19175,7 +17418,7 @@
           <Obj>
             <type>3</type>
             <id>152</id>
-            <name>arrayidx61.i.case.11</name>
+            <name>arrayidx542.case.11</name>
             <fileName/>
             <fileDirectory/>
             <lineNumber>0</lineNumber>
@@ -19207,7 +17450,7 @@
           <Obj>
             <type>3</type>
             <id>155</id>
-            <name>arrayidx61.i.case.10</name>
+            <name>arrayidx542.case.10</name>
             <fileName/>
             <fileDirectory/>
             <lineNumber>0</lineNumber>
@@ -19239,7 +17482,7 @@
           <Obj>
             <type>3</type>
             <id>158</id>
-            <name>arrayidx61.i.case.9</name>
+            <name>arrayidx542.case.9</name>
             <fileName/>
             <fileDirectory/>
             <lineNumber>0</lineNumber>
@@ -19271,7 +17514,7 @@
           <Obj>
             <type>3</type>
             <id>161</id>
-            <name>arrayidx61.i.case.8</name>
+            <name>arrayidx542.case.8</name>
             <fileName/>
             <fileDirectory/>
             <lineNumber>0</lineNumber>
@@ -19303,7 +17546,7 @@
           <Obj>
             <type>3</type>
             <id>164</id>
-            <name>arrayidx61.i.case.7</name>
+            <name>arrayidx542.case.7</name>
             <fileName/>
             <fileDirectory/>
             <lineNumber>0</lineNumber>
@@ -19335,7 +17578,7 @@
           <Obj>
             <type>3</type>
             <id>167</id>
-            <name>arrayidx61.i.case.6</name>
+            <name>arrayidx542.case.6</name>
             <fileName/>
             <fileDirectory/>
             <lineNumber>0</lineNumber>
@@ -19367,7 +17610,7 @@
           <Obj>
             <type>3</type>
             <id>170</id>
-            <name>arrayidx61.i.case.5</name>
+            <name>arrayidx542.case.5</name>
             <fileName/>
             <fileDirectory/>
             <lineNumber>0</lineNumber>
@@ -19399,7 +17642,7 @@
           <Obj>
             <type>3</type>
             <id>173</id>
-            <name>arrayidx61.i.case.4</name>
+            <name>arrayidx542.case.4</name>
             <fileName/>
             <fileDirectory/>
             <lineNumber>0</lineNumber>
@@ -19431,7 +17674,7 @@
           <Obj>
             <type>3</type>
             <id>176</id>
-            <name>arrayidx61.i.case.3</name>
+            <name>arrayidx542.case.3</name>
             <fileName/>
             <fileDirectory/>
             <lineNumber>0</lineNumber>
@@ -19463,7 +17706,7 @@
           <Obj>
             <type>3</type>
             <id>179</id>
-            <name>arrayidx61.i.case.2</name>
+            <name>arrayidx542.case.2</name>
             <fileName/>
             <fileDirectory/>
             <lineNumber>0</lineNumber>
@@ -19495,7 +17738,7 @@
           <Obj>
             <type>3</type>
             <id>182</id>
-            <name>arrayidx61.i.case.1</name>
+            <name>arrayidx542.case.1</name>
             <fileName/>
             <fileDirectory/>
             <lineNumber>0</lineNumber>
@@ -19527,7 +17770,7 @@
           <Obj>
             <type>3</type>
             <id>185</id>
-            <name>arrayidx61.i.case.0</name>
+            <name>arrayidx542.case.0</name>
             <fileName/>
             <fileDirectory/>
             <lineNumber>0</lineNumber>
@@ -19559,7 +17802,7 @@
           <Obj>
             <type>3</type>
             <id>188</id>
-            <name>arrayidx61.i.case.15</name>
+            <name>arrayidx542.case.15</name>
             <fileName/>
             <fileDirectory/>
             <lineNumber>0</lineNumber>
@@ -19591,7 +17834,7 @@
           <Obj>
             <type>3</type>
             <id>194</id>
-            <name>arrayidx61.i.exit</name>
+            <name>arrayidx542.exit</name>
             <fileName/>
             <fileDirectory/>
             <lineNumber>0</lineNumber>
@@ -19626,7 +17869,7 @@
           <Obj>
             <type>3</type>
             <id>206</id>
-            <name>if.else.i45</name>
+            <name>if.else67</name>
             <fileName/>
             <fileDirectory/>
             <lineNumber>0</lineNumber>
@@ -19667,7 +17910,7 @@
           <Obj>
             <type>3</type>
             <id>209</id>
-            <name>arrayidx14.i.case.6</name>
+            <name>arrayidx63.case.6</name>
             <fileName/>
             <fileDirectory/>
             <lineNumber>0</lineNumber>
@@ -19699,7 +17942,7 @@
           <Obj>
             <type>3</type>
             <id>212</id>
-            <name>arrayidx14.i.case.5</name>
+            <name>arrayidx63.case.5</name>
             <fileName/>
             <fileDirectory/>
             <lineNumber>0</lineNumber>
@@ -19731,7 +17974,7 @@
           <Obj>
             <type>3</type>
             <id>215</id>
-            <name>arrayidx14.i.case.4</name>
+            <name>arrayidx63.case.4</name>
             <fileName/>
             <fileDirectory/>
             <lineNumber>0</lineNumber>
@@ -19763,7 +18006,7 @@
           <Obj>
             <type>3</type>
             <id>218</id>
-            <name>arrayidx14.i.case.3</name>
+            <name>arrayidx63.case.3</name>
             <fileName/>
             <fileDirectory/>
             <lineNumber>0</lineNumber>
@@ -19795,7 +18038,7 @@
           <Obj>
             <type>3</type>
             <id>221</id>
-            <name>arrayidx14.i.case.2</name>
+            <name>arrayidx63.case.2</name>
             <fileName/>
             <fileDirectory/>
             <lineNumber>0</lineNumber>
@@ -19827,7 +18070,7 @@
           <Obj>
             <type>3</type>
             <id>224</id>
-            <name>arrayidx14.i.case.1</name>
+            <name>arrayidx63.case.1</name>
             <fileName/>
             <fileDirectory/>
             <lineNumber>0</lineNumber>
@@ -19859,7 +18102,7 @@
           <Obj>
             <type>3</type>
             <id>227</id>
-            <name>arrayidx14.i.case.0</name>
+            <name>arrayidx63.case.0</name>
             <fileName/>
             <fileDirectory/>
             <lineNumber>0</lineNumber>
@@ -19891,7 +18134,7 @@
           <Obj>
             <type>3</type>
             <id>230</id>
-            <name>arrayidx14.i.case.7</name>
+            <name>arrayidx63.case.7</name>
             <fileName/>
             <fileDirectory/>
             <lineNumber>0</lineNumber>
@@ -19923,7 +18166,7 @@
           <Obj>
             <type>3</type>
             <id>242</id>
-            <name>arrayidx14.i.exit</name>
+            <name>arrayidx63.exit</name>
             <fileName/>
             <fileDirectory/>
             <lineNumber>0</lineNumber>
@@ -19964,7 +18207,7 @@
           <Obj>
             <type>3</type>
             <id>244</id>
-            <name>if.then.i41</name>
+            <name>if.then61</name>
             <fileName/>
             <fileDirectory/>
             <lineNumber>0</lineNumber>
@@ -19995,7 +18238,7 @@
           <Obj>
             <type>3</type>
             <id>247</id>
-            <name>arrayidx14.i.case.6191</name>
+            <name>arrayidx63.case.672</name>
             <fileName/>
             <fileDirectory/>
             <lineNumber>0</lineNumber>
@@ -20027,7 +18270,7 @@
           <Obj>
             <type>3</type>
             <id>250</id>
-            <name>arrayidx14.i.case.5190</name>
+            <name>arrayidx63.case.571</name>
             <fileName/>
             <fileDirectory/>
             <lineNumber>0</lineNumber>
@@ -20059,7 +18302,7 @@
           <Obj>
             <type>3</type>
             <id>253</id>
-            <name>arrayidx14.i.case.4189</name>
+            <name>arrayidx63.case.470</name>
             <fileName/>
             <fileDirectory/>
             <lineNumber>0</lineNumber>
@@ -20091,7 +18334,7 @@
           <Obj>
             <type>3</type>
             <id>256</id>
-            <name>arrayidx14.i.case.3188</name>
+            <name>arrayidx63.case.369</name>
             <fileName/>
             <fileDirectory/>
             <lineNumber>0</lineNumber>
@@ -20123,7 +18366,7 @@
           <Obj>
             <type>3</type>
             <id>259</id>
-            <name>arrayidx14.i.case.2187</name>
+            <name>arrayidx63.case.268</name>
             <fileName/>
             <fileDirectory/>
             <lineNumber>0</lineNumber>
@@ -20155,7 +18398,7 @@
           <Obj>
             <type>3</type>
             <id>262</id>
-            <name>arrayidx14.i.case.1186</name>
+            <name>arrayidx63.case.167</name>
             <fileName/>
             <fileDirectory/>
             <lineNumber>0</lineNumber>
@@ -20187,7 +18430,7 @@
           <Obj>
             <type>3</type>
             <id>265</id>
-            <name>arrayidx14.i.case.0185</name>
+            <name>arrayidx63.case.066</name>
             <fileName/>
             <fileDirectory/>
             <lineNumber>0</lineNumber>
@@ -20219,7 +18462,7 @@
           <Obj>
             <type>3</type>
             <id>268</id>
-            <name>arrayidx14.i.case.7192</name>
+            <name>arrayidx63.case.773</name>
             <fileName/>
             <fileDirectory/>
             <lineNumber>0</lineNumber>
@@ -20251,7 +18494,7 @@
           <Obj>
             <type>3</type>
             <id>270</id>
-            <name>arrayidx14.i.exit184</name>
+            <name>arrayidx63.exit65</name>
             <fileName/>
             <fileDirectory/>
             <lineNumber>0</lineNumber>
@@ -20282,7 +18525,7 @@
           <Obj>
             <type>3</type>
             <id>273</id>
-            <name>if.end.i47</name>
+            <name>if.end75</name>
             <fileName/>
             <fileDirectory/>
             <lineNumber>0</lineNumber>
@@ -20314,7 +18557,7 @@
           <Obj>
             <type>3</type>
             <id>276</id>
-            <name>arrayidx17.i.case.6</name>
+            <name>arrayidx66.case.6</name>
             <fileName/>
             <fileDirectory/>
             <lineNumber>0</lineNumber>
@@ -20346,7 +18589,7 @@
           <Obj>
             <type>3</type>
             <id>279</id>
-            <name>arrayidx17.i.case.5</name>
+            <name>arrayidx66.case.5</name>
             <fileName/>
             <fileDirectory/>
             <lineNumber>0</lineNumber>
@@ -20378,7 +18621,7 @@
           <Obj>
             <type>3</type>
             <id>282</id>
-            <name>arrayidx17.i.case.4</name>
+            <name>arrayidx66.case.4</name>
             <fileName/>
             <fileDirectory/>
             <lineNumber>0</lineNumber>
@@ -20410,7 +18653,7 @@
           <Obj>
             <type>3</type>
             <id>285</id>
-            <name>arrayidx17.i.case.3</name>
+            <name>arrayidx66.case.3</name>
             <fileName/>
             <fileDirectory/>
             <lineNumber>0</lineNumber>
@@ -20442,7 +18685,7 @@
           <Obj>
             <type>3</type>
             <id>288</id>
-            <name>arrayidx17.i.case.2</name>
+            <name>arrayidx66.case.2</name>
             <fileName/>
             <fileDirectory/>
             <lineNumber>0</lineNumber>
@@ -20474,7 +18717,7 @@
           <Obj>
             <type>3</type>
             <id>291</id>
-            <name>arrayidx17.i.case.1</name>
+            <name>arrayidx66.case.1</name>
             <fileName/>
             <fileDirectory/>
             <lineNumber>0</lineNumber>
@@ -20506,7 +18749,7 @@
           <Obj>
             <type>3</type>
             <id>294</id>
-            <name>arrayidx17.i.case.0</name>
+            <name>arrayidx66.case.0</name>
             <fileName/>
             <fileDirectory/>
             <lineNumber>0</lineNumber>
@@ -20538,7 +18781,7 @@
           <Obj>
             <type>3</type>
             <id>297</id>
-            <name>arrayidx17.i.case.7</name>
+            <name>arrayidx66.case.7</name>
             <fileName/>
             <fileDirectory/>
             <lineNumber>0</lineNumber>
@@ -20570,7 +18813,7 @@
           <Obj>
             <type>3</type>
             <id>300</id>
-            <name>arrayidx17.i.exit</name>
+            <name>arrayidx66.exit</name>
             <fileName/>
             <fileDirectory/>
             <lineNumber>0</lineNumber>
@@ -20602,7 +18845,7 @@
           <Obj>
             <type>3</type>
             <id>304</id>
-            <name>if.else50.i</name>
+            <name>if.else104</name>
             <fileName/>
             <fileDirectory/>
             <lineNumber>0</lineNumber>
@@ -20635,7 +18878,7 @@
           <Obj>
             <type>3</type>
             <id>354</id>
-            <name>for.body30.i</name>
+            <name>for.inc88</name>
             <fileName/>
             <fileDirectory/>
             <lineNumber>0</lineNumber>
@@ -20714,7 +18957,7 @@
           <Obj>
             <type>3</type>
             <id>357</id>
-            <name>if.end52.i</name>
+            <name>for.inc107</name>
             <fileName/>
             <fileDirectory/>
             <lineNumber>0</lineNumber>
@@ -20746,7 +18989,7 @@
           <Obj>
             <type>3</type>
             <id>359</id>
-            <name>_ZL19Compute_Pixel_StatsILi32ELi480ELi30ELi480EEvRAT__AT2__DhRAT1__K7ap_uintILi256EERAT__fRAT__DhDh.exit.exitStub</name>
+            <name>PIXEL_NORM.exitStub</name>
             <fileName/>
             <fileDirectory/>
             <lineNumber>0</lineNumber>
@@ -34199,106 +32442,11 @@
         <count>31</count>
         <item_version>0</item_version>
         <item class_id="36" tracking_level="0" version="0">
-          <first>fadd_32ns_32ns_32_11_full_dsp_1_U444 (fadd_32ns_32ns_32_11_full_dsp_1)</first>
+          <first>fadd_32ns_32ns_32_11_full_dsp_1_U449 (fadd_32ns_32ns_32_11_full_dsp_1)</first>
           <second class_id="37" tracking_level="0" version="0">
             <count>3</count>
             <item_version>0</item_version>
             <item class_id="38" tracking_level="0" version="0">
-              <first>DSP</first>
-              <second>2</second>
-            </item>
-            <item>
-              <first>FF</first>
-              <second>369</second>
-            </item>
-            <item>
-              <first>LUT</first>
-              <second>236</second>
-            </item>
-          </second>
-        </item>
-        <item>
-          <first>fadd_32ns_32ns_32_11_full_dsp_1_U445 (fadd_32ns_32ns_32_11_full_dsp_1)</first>
-          <second>
-            <count>3</count>
-            <item_version>0</item_version>
-            <item>
-              <first>DSP</first>
-              <second>2</second>
-            </item>
-            <item>
-              <first>FF</first>
-              <second>369</second>
-            </item>
-            <item>
-              <first>LUT</first>
-              <second>236</second>
-            </item>
-          </second>
-        </item>
-        <item>
-          <first>fadd_32ns_32ns_32_11_full_dsp_1_U446 (fadd_32ns_32ns_32_11_full_dsp_1)</first>
-          <second>
-            <count>3</count>
-            <item_version>0</item_version>
-            <item>
-              <first>DSP</first>
-              <second>2</second>
-            </item>
-            <item>
-              <first>FF</first>
-              <second>369</second>
-            </item>
-            <item>
-              <first>LUT</first>
-              <second>236</second>
-            </item>
-          </second>
-        </item>
-        <item>
-          <first>fadd_32ns_32ns_32_11_full_dsp_1_U447 (fadd_32ns_32ns_32_11_full_dsp_1)</first>
-          <second>
-            <count>3</count>
-            <item_version>0</item_version>
-            <item>
-              <first>DSP</first>
-              <second>2</second>
-            </item>
-            <item>
-              <first>FF</first>
-              <second>369</second>
-            </item>
-            <item>
-              <first>LUT</first>
-              <second>236</second>
-            </item>
-          </second>
-        </item>
-        <item>
-          <first>fadd_32ns_32ns_32_11_full_dsp_1_U448 (fadd_32ns_32ns_32_11_full_dsp_1)</first>
-          <second>
-            <count>3</count>
-            <item_version>0</item_version>
-            <item>
-              <first>DSP</first>
-              <second>2</second>
-            </item>
-            <item>
-              <first>FF</first>
-              <second>369</second>
-            </item>
-            <item>
-              <first>LUT</first>
-              <second>236</second>
-            </item>
-          </second>
-        </item>
-        <item>
-          <first>fadd_32ns_32ns_32_11_full_dsp_1_U449 (fadd_32ns_32ns_32_11_full_dsp_1)</first>
-          <second>
-            <count>3</count>
-            <item_version>0</item_version>
-            <item>
               <first>DSP</first>
               <second>2</second>
             </item>
@@ -34541,6 +32689,25 @@
           </second>
         </item>
         <item>
+          <first>fadd_32ns_32ns_32_11_full_dsp_1_U462 (fadd_32ns_32ns_32_11_full_dsp_1)</first>
+          <second>
+            <count>3</count>
+            <item_version>0</item_version>
+            <item>
+              <first>DSP</first>
+              <second>2</second>
+            </item>
+            <item>
+              <first>FF</first>
+              <second>369</second>
+            </item>
+            <item>
+              <first>LUT</first>
+              <second>236</second>
+            </item>
+          </second>
+        </item>
+        <item>
           <first>fadd_32ns_32ns_32_11_full_dsp_1_U463 (fadd_32ns_32ns_32_11_full_dsp_1)</first>
           <second>
             <count>3</count>
@@ -34560,80 +32727,7 @@
           </second>
         </item>
         <item>
-          <first>fdiv_32ns_32ns_32_30_no_dsp_1_U466 (fdiv_32ns_32ns_32_30_no_dsp_1)</first>
-          <second>
-            <count>0</count>
-            <item_version>0</item_version>
-          </second>
-        </item>
-        <item>
-          <first>fdiv_32ns_32ns_32_30_no_dsp_1_U467 (fdiv_32ns_32ns_32_30_no_dsp_1)</first>
-          <second>
-            <count>0</count>
-            <item_version>0</item_version>
-          </second>
-        </item>
-        <item>
-          <first>fdiv_32ns_32ns_32_30_no_dsp_1_U468 (fdiv_32ns_32ns_32_30_no_dsp_1)</first>
-          <second>
-            <count>0</count>
-            <item_version>0</item_version>
-          </second>
-        </item>
-        <item>
-          <first>flow_control_loop_pipe_sequential_init_U (upconv_core_top_ucb0_flow_control_loop_pipe_sequential_init)</first>
-          <second>
-            <count>0</count>
-            <item_version>0</item_version>
-          </second>
-        </item>
-        <item>
-          <first>fmul_32ns_32ns_32_7_max_dsp_1_U464 (fmul_32ns_32ns_32_7_max_dsp_1)</first>
-          <second>
-            <count>3</count>
-            <item_version>0</item_version>
-            <item>
-              <first>DSP</first>
-              <second>3</second>
-            </item>
-            <item>
-              <first>FF</first>
-              <second>197</second>
-            </item>
-            <item>
-              <first>LUT</first>
-              <second>123</second>
-            </item>
-          </second>
-        </item>
-        <item>
-          <first>fmul_32ns_32ns_32_7_max_dsp_1_U465 (fmul_32ns_32ns_32_7_max_dsp_1)</first>
-          <second>
-            <count>3</count>
-            <item_version>0</item_version>
-            <item>
-              <first>DSP</first>
-              <second>3</second>
-            </item>
-            <item>
-              <first>FF</first>
-              <second>197</second>
-            </item>
-            <item>
-              <first>LUT</first>
-              <second>123</second>
-            </item>
-          </second>
-        </item>
-        <item>
-          <first>fsqrt_32ns_32ns_32_28_no_dsp_1_U469 (fsqrt_32ns_32ns_32_28_no_dsp_1)</first>
-          <second>
-            <count>0</count>
-            <item_version>0</item_version>
-          </second>
-        </item>
-        <item>
-          <first>fsub_32ns_32ns_32_11_full_dsp_1_U462 (fsub_32ns_32ns_32_11_full_dsp_1)</first>
+          <first>fadd_32ns_32ns_32_11_full_dsp_1_U464 (fadd_32ns_32ns_32_11_full_dsp_1)</first>
           <second>
             <count>3</count>
             <item_version>0</item_version>
@@ -34652,7 +32746,156 @@
           </second>
         </item>
         <item>
-          <first>partselect_16ns_256ns_32s_16_1_1_U473 (partselect_16ns_256ns_32s_16_1_1)</first>
+          <first>fadd_32ns_32ns_32_11_full_dsp_1_U465 (fadd_32ns_32ns_32_11_full_dsp_1)</first>
+          <second>
+            <count>3</count>
+            <item_version>0</item_version>
+            <item>
+              <first>DSP</first>
+              <second>2</second>
+            </item>
+            <item>
+              <first>FF</first>
+              <second>369</second>
+            </item>
+            <item>
+              <first>LUT</first>
+              <second>236</second>
+            </item>
+          </second>
+        </item>
+        <item>
+          <first>fadd_32ns_32ns_32_11_full_dsp_1_U466 (fadd_32ns_32ns_32_11_full_dsp_1)</first>
+          <second>
+            <count>3</count>
+            <item_version>0</item_version>
+            <item>
+              <first>DSP</first>
+              <second>2</second>
+            </item>
+            <item>
+              <first>FF</first>
+              <second>369</second>
+            </item>
+            <item>
+              <first>LUT</first>
+              <second>236</second>
+            </item>
+          </second>
+        </item>
+        <item>
+          <first>fadd_32ns_32ns_32_11_full_dsp_1_U468 (fadd_32ns_32ns_32_11_full_dsp_1)</first>
+          <second>
+            <count>3</count>
+            <item_version>0</item_version>
+            <item>
+              <first>DSP</first>
+              <second>2</second>
+            </item>
+            <item>
+              <first>FF</first>
+              <second>369</second>
+            </item>
+            <item>
+              <first>LUT</first>
+              <second>236</second>
+            </item>
+          </second>
+        </item>
+        <item>
+          <first>fdiv_32ns_32ns_32_30_no_dsp_1_U471 (fdiv_32ns_32ns_32_30_no_dsp_1)</first>
+          <second>
+            <count>0</count>
+            <item_version>0</item_version>
+          </second>
+        </item>
+        <item>
+          <first>fdiv_32ns_32ns_32_30_no_dsp_1_U472 (fdiv_32ns_32ns_32_30_no_dsp_1)</first>
+          <second>
+            <count>0</count>
+            <item_version>0</item_version>
+          </second>
+        </item>
+        <item>
+          <first>fdiv_32ns_32ns_32_30_no_dsp_1_U473 (fdiv_32ns_32ns_32_30_no_dsp_1)</first>
+          <second>
+            <count>0</count>
+            <item_version>0</item_version>
+          </second>
+        </item>
+        <item>
+          <first>flow_control_loop_pipe_sequential_init_U (upconv_core_top_ucb0_flow_control_loop_pipe_sequential_init)</first>
+          <second>
+            <count>0</count>
+            <item_version>0</item_version>
+          </second>
+        </item>
+        <item>
+          <first>fmul_32ns_32ns_32_7_max_dsp_1_U469 (fmul_32ns_32ns_32_7_max_dsp_1)</first>
+          <second>
+            <count>3</count>
+            <item_version>0</item_version>
+            <item>
+              <first>DSP</first>
+              <second>3</second>
+            </item>
+            <item>
+              <first>FF</first>
+              <second>197</second>
+            </item>
+            <item>
+              <first>LUT</first>
+              <second>123</second>
+            </item>
+          </second>
+        </item>
+        <item>
+          <first>fmul_32ns_32ns_32_7_max_dsp_1_U470 (fmul_32ns_32ns_32_7_max_dsp_1)</first>
+          <second>
+            <count>3</count>
+            <item_version>0</item_version>
+            <item>
+              <first>DSP</first>
+              <second>3</second>
+            </item>
+            <item>
+              <first>FF</first>
+              <second>197</second>
+            </item>
+            <item>
+              <first>LUT</first>
+              <second>123</second>
+            </item>
+          </second>
+        </item>
+        <item>
+          <first>fsqrt_32ns_32ns_32_28_no_dsp_1_U474 (fsqrt_32ns_32ns_32_28_no_dsp_1)</first>
+          <second>
+            <count>0</count>
+            <item_version>0</item_version>
+          </second>
+        </item>
+        <item>
+          <first>fsub_32ns_32ns_32_11_full_dsp_1_U467 (fsub_32ns_32ns_32_11_full_dsp_1)</first>
+          <second>
+            <count>3</count>
+            <item_version>0</item_version>
+            <item>
+              <first>DSP</first>
+              <second>2</second>
+            </item>
+            <item>
+              <first>FF</first>
+              <second>369</second>
+            </item>
+            <item>
+              <first>LUT</first>
+              <second>236</second>
+            </item>
+          </second>
+        </item>
+        <item>
+          <first>partselect_16ns_256ns_32s_16_1_1_U478 (partselect_16ns_256ns_32s_16_1_1)</first>
           <second>
             <count>2</count>
             <item_version>0</item_version>
@@ -34667,7 +32910,7 @@
           </second>
         </item>
         <item>
-          <first>sparsemux_17_3_32_1_1_U475 (sparsemux_17_3_32_1_1)</first>
+          <first>sparsemux_17_3_32_1_1_U480 (sparsemux_17_3_32_1_1)</first>
           <second>
             <count>2</count>
             <item_version>0</item_version>
@@ -34682,7 +32925,7 @@
           </second>
         </item>
         <item>
-          <first>sparsemux_17_3_32_1_1_U476 (sparsemux_17_3_32_1_1)</first>
+          <first>sparsemux_17_3_32_1_1_U481 (sparsemux_17_3_32_1_1)</first>
           <second>
             <count>2</count>
             <item_version>0</item_version>
@@ -34697,7 +32940,7 @@
           </second>
         </item>
         <item>
-          <first>sparsemux_33_4_16_1_1_U474 (sparsemux_33_4_16_1_1)</first>
+          <first>sparsemux_33_4_16_1_1_U479 (sparsemux_33_4_16_1_1)</first>
           <second>
             <count>2</count>
             <item_version>0</item_version>
@@ -34716,7 +32959,7 @@
         <count>67</count>
         <item_version>0</item_version>
         <item>
-          <first>add_ln220_fu_880_p2 ( + ) </first>
+          <first>add_ln234_fu_880_p2 ( + ) </first>
           <second>
             <count>4</count>
             <item_version>0</item_version>
@@ -35958,7 +34201,7 @@
           </second>
         </item>
         <item>
-          <first>cs_3_fu_781_p2 ( + ) </first>
+          <first>cs_2_fu_781_p2 ( + ) </first>
           <second>
             <count>4</count>
             <item_version>0</item_version>
@@ -35981,7 +34224,7 @@
           </second>
         </item>
         <item>
-          <first>icmp_ln213_fu_733_p2 ( icmp ) </first>
+          <first>icmp_ln227_fu_733_p2 ( icmp ) </first>
           <second>
             <count>4</count>
             <item_version>0</item_version>
@@ -36004,7 +34247,7 @@
           </second>
         </item>
         <item>
-          <first>icmp_ln224_fu_915_p2 ( icmp ) </first>
+          <first>icmp_ln237_fu_915_p2 ( icmp ) </first>
           <second>
             <count>4</count>
             <item_version>0</item_version>
@@ -36027,7 +34270,7 @@
           </second>
         </item>
         <item>
-          <first>icmp_ln232_fu_775_p2 ( icmp ) </first>
+          <first>icmp_ln240_fu_775_p2 ( icmp ) </first>
           <second>
             <count>4</count>
             <item_version>0</item_version>
@@ -36073,7 +34316,7 @@
           </second>
         </item>
         <item>
-          <first>select_ln219_1_fu_947_p3 ( select ) </first>
+          <first>select_ln233_1_fu_947_p3 ( select ) </first>
           <second>
             <count>5</count>
             <item_version>0</item_version>
@@ -36100,7 +34343,7 @@
           </second>
         </item>
         <item>
-          <first>select_ln219_fu_833_p3 ( select ) </first>
+          <first>select_ln233_fu_833_p3 ( select ) </first>
           <second>
             <count>5</count>
             <item_version>0</item_version>
@@ -36127,7 +34370,7 @@
           </second>
         </item>
         <item>
-          <first>sub_ln219_1_fu_769_p2 ( - ) </first>
+          <first>sub_ln233_1_fu_769_p2 ( - ) </first>
           <second>
             <count>4</count>
             <item_version>0</item_version>
@@ -36150,7 +34393,7 @@
           </second>
         </item>
         <item>
-          <first>sub_ln219_2_fu_845_p2 ( - ) </first>
+          <first>sub_ln233_2_fu_845_p2 ( - ) </first>
           <second>
             <count>4</count>
             <item_version>0</item_version>
@@ -36173,7 +34416,7 @@
           </second>
         </item>
         <item>
-          <first>sub_ln219_3_fu_938_p2 ( - ) </first>
+          <first>sub_ln233_3_fu_938_p2 ( - ) </first>
           <second>
             <count>4</count>
             <item_version>0</item_version>
@@ -36196,7 +34439,7 @@
           </second>
         </item>
         <item>
-          <first>sub_ln219_fu_753_p2 ( - ) </first>
+          <first>sub_ln233_fu_753_p2 ( - ) </first>
           <second>
             <count>4</count>
             <item_version>0</item_version>
@@ -36219,7 +34462,7 @@
           </second>
         </item>
         <item>
-          <first>sub_ln220_fu_874_p2 ( - ) </first>
+          <first>sub_ln234_fu_874_p2 ( - ) </first>
           <second>
             <count>4</count>
             <item_version>0</item_version>
@@ -36713,7 +34956,7 @@
         <count>568</count>
         <item_version>0</item_version>
         <item>
-          <first>add24_i_reg_1734</first>
+          <first>add8_reg_1734</first>
           <second>
             <count>3</count>
             <item_version>0</item_version>
@@ -46023,7 +44266,7 @@
           </second>
         </item>
         <item>
-          <first>conv46_i_reg_1936</first>
+          <first>conv_reg_1936</first>
           <second>
             <count>3</count>
             <item_version>0</item_version>
@@ -46042,7 +44285,7 @@
           </second>
         </item>
         <item>
-          <first>cs_2_reg_1503</first>
+          <first>cs_1_reg_1503</first>
           <second>
             <count>3</count>
             <item_version>0</item_version>
@@ -46080,7 +44323,7 @@
           </second>
         </item>
         <item>
-          <first>div38_i_reg_1906</first>
+          <first>div1_reg_1931</first>
           <second>
             <count>3</count>
             <item_version>0</item_version>
@@ -46099,7 +44342,7 @@
           </second>
         </item>
         <item>
-          <first>div45_i_reg_1931</first>
+          <first>div_reg_1906</first>
           <second>
             <count>3</count>
             <item_version>0</item_version>
@@ -46118,7 +44361,7 @@
           </second>
         </item>
         <item>
-          <first>icmp_ln213_reg_1512</first>
+          <first>icmp_ln227_reg_1512</first>
           <second>
             <count>3</count>
             <item_version>0</item_version>
@@ -46137,7 +44380,7 @@
           </second>
         </item>
         <item>
-          <first>icmp_ln224_reg_1654</first>
+          <first>icmp_ln237_reg_1654</first>
           <second>
             <count>3</count>
             <item_version>0</item_version>
@@ -46156,7 +44399,7 @@
           </second>
         </item>
         <item>
-          <first>icmp_ln232_reg_1528</first>
+          <first>icmp_ln240_reg_1528</first>
           <second>
             <count>3</count>
             <item_version>0</item_version>
@@ -46213,7 +44456,7 @@
           </second>
         </item>
         <item>
-          <first>mul15_i_reg_1706</first>
+          <first>mul3_reg_1911</first>
           <second>
             <count>3</count>
             <item_version>0</item_version>
@@ -46232,7 +44475,7 @@
           </second>
         </item>
         <item>
-          <first>mul39_i_reg_1911</first>
+          <first>mul_reg_1706</first>
           <second>
             <count>3</count>
             <item_version>0</item_version>
@@ -46251,7 +44494,7 @@
           </second>
         </item>
         <item>
-          <first>p_ZZ16UpConv_Fused_RowILi8ELi16ELi16ELi960ELi480EEvP7ap_uintILi256EEPKS1_S4_S4_S4_12_reg_1558</first>
+          <first>p_ZZ16UpConv_Fused_RowILi8ELi16ELi16ELi960ELi480EEvP7ap_uintILi256EEPKS1_S4_S4_S4_24_reg_1558</first>
           <second>
             <count>3</count>
             <item_version>0</item_version>
@@ -46270,7 +44513,7 @@
           </second>
         </item>
         <item>
-          <first>p_ZZ16UpConv_Fused_RowILi8ELi16ELi16ELi960ELi480EEvP7ap_uintILi256EEPKS1_S4_S4_S4_13_reg_1564</first>
+          <first>p_ZZ16UpConv_Fused_RowILi8ELi16ELi16ELi960ELi480EEvP7ap_uintILi256EEPKS1_S4_S4_S4_25_reg_1564</first>
           <second>
             <count>3</count>
             <item_version>0</item_version>
@@ -46289,7 +44532,7 @@
           </second>
         </item>
         <item>
-          <first>p_ZZ16UpConv_Fused_RowILi8ELi16ELi16ELi960ELi480EEvP7ap_uintILi256EEPKS1_S4_S4_S4_14_reg_1570</first>
+          <first>p_ZZ16UpConv_Fused_RowILi8ELi16ELi16ELi960ELi480EEvP7ap_uintILi256EEPKS1_S4_S4_S4_26_reg_1570</first>
           <second>
             <count>3</count>
             <item_version>0</item_version>
@@ -46308,7 +44551,7 @@
           </second>
         </item>
         <item>
-          <first>p_ZZ16UpConv_Fused_RowILi8ELi16ELi16ELi960ELi480EEvP7ap_uintILi256EEPKS1_S4_S4_S4_15_reg_1576</first>
+          <first>p_ZZ16UpConv_Fused_RowILi8ELi16ELi16ELi960ELi480EEvP7ap_uintILi256EEPKS1_S4_S4_S4_27_reg_1576</first>
           <second>
             <count>3</count>
             <item_version>0</item_version>
@@ -46327,7 +44570,7 @@
           </second>
         </item>
         <item>
-          <first>p_ZZ16UpConv_Fused_RowILi8ELi16ELi16ELi960ELi480EEvP7ap_uintILi256EEPKS1_S4_S4_S4_16_reg_1582</first>
+          <first>p_ZZ16UpConv_Fused_RowILi8ELi16ELi16ELi960ELi480EEvP7ap_uintILi256EEPKS1_S4_S4_S4_28_reg_1582</first>
           <second>
             <count>3</count>
             <item_version>0</item_version>
@@ -46346,7 +44589,7 @@
           </second>
         </item>
         <item>
-          <first>p_ZZ16UpConv_Fused_RowILi8ELi16ELi16ELi960ELi480EEvP7ap_uintILi256EEPKS1_S4_S4_S4_17_reg_1588</first>
+          <first>p_ZZ16UpConv_Fused_RowILi8ELi16ELi16ELi960ELi480EEvP7ap_uintILi256EEPKS1_S4_S4_S4_29_reg_1588</first>
           <second>
             <count>3</count>
             <item_version>0</item_version>
@@ -46365,7 +44608,7 @@
           </second>
         </item>
         <item>
-          <first>sub_ln219_1_reg_1523</first>
+          <first>sub_ln233_1_reg_1523</first>
           <second>
             <count>3</count>
             <item_version>0</item_version>
@@ -46384,7 +44627,7 @@
           </second>
         </item>
         <item>
-          <first>sub_ln219_2_reg_1548</first>
+          <first>sub_ln233_2_reg_1548</first>
           <second>
             <count>3</count>
             <item_version>0</item_version>
@@ -47049,26 +45292,7 @@
           </second>
         </item>
         <item>
-          <first>tmp_1_reg_1926</first>
-          <second>
-            <count>3</count>
-            <item_version>0</item_version>
-            <item>
-              <first>(Bits)</first>
-              <second>32</second>
-            </item>
-            <item>
-              <first>(Consts)</first>
-              <second>0</second>
-            </item>
-            <item>
-              <first>FF</first>
-              <second>32</second>
-            </item>
-          </second>
-        </item>
-        <item>
-          <first>tmp_3_reg_1543</first>
+          <first>tmp_14_reg_1543</first>
           <second>
             <count>3</count>
             <item_version>0</item_version>
@@ -47087,7 +45311,26 @@
           </second>
         </item>
         <item>
-          <first>tmp_5_reg_1701</first>
+          <first>tmp_1_reg_1712</first>
+          <second>
+            <count>3</count>
+            <item_version>0</item_version>
+            <item>
+              <first>(Bits)</first>
+              <second>32</second>
+            </item>
+            <item>
+              <first>(Consts)</first>
+              <second>0</second>
+            </item>
+            <item>
+              <first>FF</first>
+              <second>32</second>
+            </item>
+          </second>
+        </item>
+        <item>
+          <first>tmp_2_reg_1926</first>
           <second>
             <count>3</count>
             <item_version>0</item_version>
@@ -47125,7 +45368,7 @@
           </second>
         </item>
         <item>
-          <first>tmp_s_reg_1712</first>
+          <first>tmp_s_reg_1701</first>
           <second>
             <count>3</count>
             <item_version>0</item_version>
@@ -47144,7 +45387,7 @@
           </second>
         </item>
         <item>
-          <first>trunc_ln213_1_reg_1537</first>
+          <first>trunc_ln227_1_reg_1537</first>
           <second>
             <count>3</count>
             <item_version>0</item_version>
@@ -47163,7 +45406,7 @@
           </second>
         </item>
         <item>
-          <first>trunc_ln213_2_reg_1516</first>
+          <first>trunc_ln227_2_reg_1516</first>
           <second>
             <count>3</count>
             <item_version>0</item_version>
@@ -47239,7 +45482,7 @@
           </second>
         </item>
         <item>
-          <first>void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_20_reg_1594</first>
+          <first>void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_40_reg_1594</first>
           <second>
             <count>3</count>
             <item_version>0</item_version>
@@ -47258,7 +45501,7 @@
           </second>
         </item>
         <item>
-          <first>void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_21_reg_1600</first>
+          <first>void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_41_reg_1600</first>
           <second>
             <count>3</count>
             <item_version>0</item_version>
@@ -47277,7 +45520,7 @@
           </second>
         </item>
         <item>
-          <first>void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_22_reg_1606</first>
+          <first>void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_42_reg_1606</first>
           <second>
             <count>3</count>
             <item_version>0</item_version>
@@ -47296,7 +45539,7 @@
           </second>
         </item>
         <item>
-          <first>void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_23_reg_1612</first>
+          <first>void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_43_reg_1612</first>
           <second>
             <count>3</count>
             <item_version>0</item_version>
@@ -47315,7 +45558,7 @@
           </second>
         </item>
         <item>
-          <first>void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_24_reg_1618</first>
+          <first>void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_44_reg_1618</first>
           <second>
             <count>3</count>
             <item_version>0</item_version>
@@ -47334,7 +45577,7 @@
           </second>
         </item>
         <item>
-          <first>void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_25_reg_1624</first>
+          <first>void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_45_reg_1624</first>
           <second>
             <count>3</count>
             <item_version>0</item_version>
@@ -47353,7 +45596,7 @@
           </second>
         </item>
         <item>
-          <first>void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_26_reg_1630</first>
+          <first>void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_46_reg_1630</first>
           <second>
             <count>3</count>
             <item_version>0</item_version>
@@ -47372,7 +45615,7 @@
           </second>
         </item>
         <item>
-          <first>void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_27_reg_1636</first>
+          <first>void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_47_reg_1636</first>
           <second>
             <count>3</count>
             <item_version>0</item_version>
@@ -47391,7 +45634,7 @@
           </second>
         </item>
         <item>
-          <first>void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_28_reg_1642</first>
+          <first>void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_48_reg_1642</first>
           <second>
             <count>3</count>
             <item_version>0</item_version>
@@ -47410,7 +45653,7 @@
           </second>
         </item>
         <item>
-          <first>void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_29_reg_1648</first>
+          <first>void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_49_reg_1648</first>
           <second>
             <count>3</count>
             <item_version>0</item_version>
@@ -47486,7 +45729,7 @@
           </second>
         </item>
         <item>
-          <first>zext_ln220_reg_1901</first>
+          <first>zext_ln234_reg_1901</first>
           <second>
             <count>3</count>
             <item_version>0</item_version>
@@ -47508,41 +45751,6 @@
       <dp_dsp_resource>
         <count>31</count>
         <item_version>0</item_version>
-        <item>
-          <first>fadd_32ns_32ns_32_11_full_dsp_1_U444</first>
-          <second>
-            <count>0</count>
-            <item_version>0</item_version>
-          </second>
-        </item>
-        <item>
-          <first>fadd_32ns_32ns_32_11_full_dsp_1_U445</first>
-          <second>
-            <count>0</count>
-            <item_version>0</item_version>
-          </second>
-        </item>
-        <item>
-          <first>fadd_32ns_32ns_32_11_full_dsp_1_U446</first>
-          <second>
-            <count>0</count>
-            <item_version>0</item_version>
-          </second>
-        </item>
-        <item>
-          <first>fadd_32ns_32ns_32_11_full_dsp_1_U447</first>
-          <second>
-            <count>0</count>
-            <item_version>0</item_version>
-          </second>
-        </item>
-        <item>
-          <first>fadd_32ns_32ns_32_11_full_dsp_1_U448</first>
-          <second>
-            <count>0</count>
-            <item_version>0</item_version>
-          </second>
-        </item>
         <item>
           <first>fadd_32ns_32ns_32_11_full_dsp_1_U449</first>
           <second>
@@ -47635,6 +45843,13 @@
           </second>
         </item>
         <item>
+          <first>fadd_32ns_32ns_32_11_full_dsp_1_U462</first>
+          <second>
+            <count>0</count>
+            <item_version>0</item_version>
+          </second>
+        </item>
+        <item>
           <first>fadd_32ns_32ns_32_11_full_dsp_1_U463</first>
           <second>
             <count>0</count>
@@ -47642,21 +45857,49 @@
           </second>
         </item>
         <item>
-          <first>fdiv_32ns_32ns_32_30_no_dsp_1_U466</first>
+          <first>fadd_32ns_32ns_32_11_full_dsp_1_U464</first>
           <second>
             <count>0</count>
             <item_version>0</item_version>
           </second>
         </item>
         <item>
-          <first>fdiv_32ns_32ns_32_30_no_dsp_1_U467</first>
+          <first>fadd_32ns_32ns_32_11_full_dsp_1_U465</first>
           <second>
             <count>0</count>
             <item_version>0</item_version>
           </second>
         </item>
         <item>
-          <first>fdiv_32ns_32ns_32_30_no_dsp_1_U468</first>
+          <first>fadd_32ns_32ns_32_11_full_dsp_1_U466</first>
+          <second>
+            <count>0</count>
+            <item_version>0</item_version>
+          </second>
+        </item>
+        <item>
+          <first>fadd_32ns_32ns_32_11_full_dsp_1_U468</first>
+          <second>
+            <count>0</count>
+            <item_version>0</item_version>
+          </second>
+        </item>
+        <item>
+          <first>fdiv_32ns_32ns_32_30_no_dsp_1_U471</first>
+          <second>
+            <count>0</count>
+            <item_version>0</item_version>
+          </second>
+        </item>
+        <item>
+          <first>fdiv_32ns_32ns_32_30_no_dsp_1_U472</first>
+          <second>
+            <count>0</count>
+            <item_version>0</item_version>
+          </second>
+        </item>
+        <item>
+          <first>fdiv_32ns_32ns_32_30_no_dsp_1_U473</first>
           <second>
             <count>0</count>
             <item_version>0</item_version>
@@ -47670,56 +45913,56 @@
           </second>
         </item>
         <item>
-          <first>fmul_32ns_32ns_32_7_max_dsp_1_U464</first>
+          <first>fmul_32ns_32ns_32_7_max_dsp_1_U469</first>
           <second>
             <count>0</count>
             <item_version>0</item_version>
           </second>
         </item>
         <item>
-          <first>fmul_32ns_32ns_32_7_max_dsp_1_U465</first>
+          <first>fmul_32ns_32ns_32_7_max_dsp_1_U470</first>
           <second>
             <count>0</count>
             <item_version>0</item_version>
           </second>
         </item>
         <item>
-          <first>fsqrt_32ns_32ns_32_28_no_dsp_1_U469</first>
+          <first>fsqrt_32ns_32ns_32_28_no_dsp_1_U474</first>
           <second>
             <count>0</count>
             <item_version>0</item_version>
           </second>
         </item>
         <item>
-          <first>fsub_32ns_32ns_32_11_full_dsp_1_U462</first>
+          <first>fsub_32ns_32ns_32_11_full_dsp_1_U467</first>
           <second>
             <count>0</count>
             <item_version>0</item_version>
           </second>
         </item>
         <item>
-          <first>partselect_16ns_256ns_32s_16_1_1_U473</first>
+          <first>partselect_16ns_256ns_32s_16_1_1_U478</first>
           <second>
             <count>0</count>
             <item_version>0</item_version>
           </second>
         </item>
         <item>
-          <first>sparsemux_17_3_32_1_1_U475</first>
+          <first>sparsemux_17_3_32_1_1_U480</first>
           <second>
             <count>0</count>
             <item_version>0</item_version>
           </second>
         </item>
         <item>
-          <first>sparsemux_17_3_32_1_1_U476</first>
+          <first>sparsemux_17_3_32_1_1_U481</first>
           <second>
             <count>0</count>
             <item_version>0</item_version>
           </second>
         </item>
         <item>
-          <first>sparsemux_33_4_16_1_1_U474</first>
+          <first>sparsemux_33_4_16_1_1_U479</first>
           <second>
             <count>0</count>
             <item_version>0</item_version>
@@ -47730,7 +45973,7 @@
         <count>30</count>
         <item_version>0</item_version>
         <item class_id="40" tracking_level="0" version="0">
-          <first>fadd_32ns_32ns_32_11_full_dsp_1_U444 (fadd_32ns_32ns_32_11_full_dsp_1)</first>
+          <first>fadd_32ns_32ns_32_11_full_dsp_1_U449 (fadd_32ns_32ns_32_11_full_dsp_1)</first>
           <second>
             <count>1</count>
             <item_version>0</item_version>
@@ -47738,7 +45981,7 @@
           </second>
         </item>
         <item>
-          <first>fadd_32ns_32ns_32_11_full_dsp_1_U445 (fadd_32ns_32ns_32_11_full_dsp_1)</first>
+          <first>fadd_32ns_32ns_32_11_full_dsp_1_U450 (fadd_32ns_32ns_32_11_full_dsp_1)</first>
           <second>
             <count>1</count>
             <item_version>0</item_version>
@@ -47746,7 +45989,7 @@
           </second>
         </item>
         <item>
-          <first>fadd_32ns_32ns_32_11_full_dsp_1_U446 (fadd_32ns_32ns_32_11_full_dsp_1)</first>
+          <first>fadd_32ns_32ns_32_11_full_dsp_1_U451 (fadd_32ns_32ns_32_11_full_dsp_1)</first>
           <second>
             <count>1</count>
             <item_version>0</item_version>
@@ -47754,7 +45997,7 @@
           </second>
         </item>
         <item>
-          <first>fadd_32ns_32ns_32_11_full_dsp_1_U447 (fadd_32ns_32ns_32_11_full_dsp_1)</first>
+          <first>fadd_32ns_32ns_32_11_full_dsp_1_U452 (fadd_32ns_32ns_32_11_full_dsp_1)</first>
           <second>
             <count>1</count>
             <item_version>0</item_version>
@@ -47762,7 +46005,7 @@
           </second>
         </item>
         <item>
-          <first>fadd_32ns_32ns_32_11_full_dsp_1_U448 (fadd_32ns_32ns_32_11_full_dsp_1)</first>
+          <first>fadd_32ns_32ns_32_11_full_dsp_1_U453 (fadd_32ns_32ns_32_11_full_dsp_1)</first>
           <second>
             <count>1</count>
             <item_version>0</item_version>
@@ -47770,7 +46013,7 @@
           </second>
         </item>
         <item>
-          <first>fadd_32ns_32ns_32_11_full_dsp_1_U449 (fadd_32ns_32ns_32_11_full_dsp_1)</first>
+          <first>fadd_32ns_32ns_32_11_full_dsp_1_U454 (fadd_32ns_32ns_32_11_full_dsp_1)</first>
           <second>
             <count>1</count>
             <item_version>0</item_version>
@@ -47778,7 +46021,7 @@
           </second>
         </item>
         <item>
-          <first>fadd_32ns_32ns_32_11_full_dsp_1_U450 (fadd_32ns_32ns_32_11_full_dsp_1)</first>
+          <first>fadd_32ns_32ns_32_11_full_dsp_1_U455 (fadd_32ns_32ns_32_11_full_dsp_1)</first>
           <second>
             <count>1</count>
             <item_version>0</item_version>
@@ -47786,7 +46029,7 @@
           </second>
         </item>
         <item>
-          <first>fadd_32ns_32ns_32_11_full_dsp_1_U451 (fadd_32ns_32ns_32_11_full_dsp_1)</first>
+          <first>fadd_32ns_32ns_32_11_full_dsp_1_U456 (fadd_32ns_32ns_32_11_full_dsp_1)</first>
           <second>
             <count>1</count>
             <item_version>0</item_version>
@@ -47794,7 +46037,7 @@
           </second>
         </item>
         <item>
-          <first>fadd_32ns_32ns_32_11_full_dsp_1_U452 (fadd_32ns_32ns_32_11_full_dsp_1)</first>
+          <first>fadd_32ns_32ns_32_11_full_dsp_1_U457 (fadd_32ns_32ns_32_11_full_dsp_1)</first>
           <second>
             <count>1</count>
             <item_version>0</item_version>
@@ -47802,7 +46045,7 @@
           </second>
         </item>
         <item>
-          <first>fadd_32ns_32ns_32_11_full_dsp_1_U453 (fadd_32ns_32ns_32_11_full_dsp_1)</first>
+          <first>fadd_32ns_32ns_32_11_full_dsp_1_U458 (fadd_32ns_32ns_32_11_full_dsp_1)</first>
           <second>
             <count>1</count>
             <item_version>0</item_version>
@@ -47810,7 +46053,7 @@
           </second>
         </item>
         <item>
-          <first>fadd_32ns_32ns_32_11_full_dsp_1_U454 (fadd_32ns_32ns_32_11_full_dsp_1)</first>
+          <first>fadd_32ns_32ns_32_11_full_dsp_1_U459 (fadd_32ns_32ns_32_11_full_dsp_1)</first>
           <second>
             <count>1</count>
             <item_version>0</item_version>
@@ -47818,7 +46061,7 @@
           </second>
         </item>
         <item>
-          <first>fadd_32ns_32ns_32_11_full_dsp_1_U455 (fadd_32ns_32ns_32_11_full_dsp_1)</first>
+          <first>fadd_32ns_32ns_32_11_full_dsp_1_U460 (fadd_32ns_32ns_32_11_full_dsp_1)</first>
           <second>
             <count>1</count>
             <item_version>0</item_version>
@@ -47826,7 +46069,7 @@
           </second>
         </item>
         <item>
-          <first>fadd_32ns_32ns_32_11_full_dsp_1_U456 (fadd_32ns_32ns_32_11_full_dsp_1)</first>
+          <first>fadd_32ns_32ns_32_11_full_dsp_1_U461 (fadd_32ns_32ns_32_11_full_dsp_1)</first>
           <second>
             <count>1</count>
             <item_version>0</item_version>
@@ -47834,7 +46077,7 @@
           </second>
         </item>
         <item>
-          <first>fadd_32ns_32ns_32_11_full_dsp_1_U457 (fadd_32ns_32ns_32_11_full_dsp_1)</first>
+          <first>fadd_32ns_32ns_32_11_full_dsp_1_U462 (fadd_32ns_32ns_32_11_full_dsp_1)</first>
           <second>
             <count>1</count>
             <item_version>0</item_version>
@@ -47842,7 +46085,7 @@
           </second>
         </item>
         <item>
-          <first>fadd_32ns_32ns_32_11_full_dsp_1_U458 (fadd_32ns_32ns_32_11_full_dsp_1)</first>
+          <first>fadd_32ns_32ns_32_11_full_dsp_1_U463 (fadd_32ns_32ns_32_11_full_dsp_1)</first>
           <second>
             <count>1</count>
             <item_version>0</item_version>
@@ -47850,7 +46093,7 @@
           </second>
         </item>
         <item>
-          <first>fadd_32ns_32ns_32_11_full_dsp_1_U459 (fadd_32ns_32ns_32_11_full_dsp_1)</first>
+          <first>fadd_32ns_32ns_32_11_full_dsp_1_U464 (fadd_32ns_32ns_32_11_full_dsp_1)</first>
           <second>
             <count>1</count>
             <item_version>0</item_version>
@@ -47858,7 +46101,7 @@
           </second>
         </item>
         <item>
-          <first>fadd_32ns_32ns_32_11_full_dsp_1_U460 (fadd_32ns_32ns_32_11_full_dsp_1)</first>
+          <first>fadd_32ns_32ns_32_11_full_dsp_1_U465 (fadd_32ns_32ns_32_11_full_dsp_1)</first>
           <second>
             <count>1</count>
             <item_version>0</item_version>
@@ -47866,7 +46109,7 @@
           </second>
         </item>
         <item>
-          <first>fadd_32ns_32ns_32_11_full_dsp_1_U461 (fadd_32ns_32ns_32_11_full_dsp_1)</first>
+          <first>fadd_32ns_32ns_32_11_full_dsp_1_U466 (fadd_32ns_32ns_32_11_full_dsp_1)</first>
           <second>
             <count>1</count>
             <item_version>0</item_version>
@@ -47874,7 +46117,7 @@
           </second>
         </item>
         <item>
-          <first>fadd_32ns_32ns_32_11_full_dsp_1_U463 (fadd_32ns_32ns_32_11_full_dsp_1)</first>
+          <first>fadd_32ns_32ns_32_11_full_dsp_1_U468 (fadd_32ns_32ns_32_11_full_dsp_1)</first>
           <second>
             <count>1</count>
             <item_version>0</item_version>
@@ -47882,7 +46125,7 @@
           </second>
         </item>
         <item>
-          <first>fdiv_32ns_32ns_32_30_no_dsp_1_U466 (fdiv_32ns_32ns_32_30_no_dsp_1)</first>
+          <first>fdiv_32ns_32ns_32_30_no_dsp_1_U471 (fdiv_32ns_32ns_32_30_no_dsp_1)</first>
           <second>
             <count>1</count>
             <item_version>0</item_version>
@@ -47890,7 +46133,7 @@
           </second>
         </item>
         <item>
-          <first>fdiv_32ns_32ns_32_30_no_dsp_1_U467 (fdiv_32ns_32ns_32_30_no_dsp_1)</first>
+          <first>fdiv_32ns_32ns_32_30_no_dsp_1_U472 (fdiv_32ns_32ns_32_30_no_dsp_1)</first>
           <second>
             <count>1</count>
             <item_version>0</item_version>
@@ -47898,7 +46141,7 @@
           </second>
         </item>
         <item>
-          <first>fdiv_32ns_32ns_32_30_no_dsp_1_U468 (fdiv_32ns_32ns_32_30_no_dsp_1)</first>
+          <first>fdiv_32ns_32ns_32_30_no_dsp_1_U473 (fdiv_32ns_32ns_32_30_no_dsp_1)</first>
           <second>
             <count>1</count>
             <item_version>0</item_version>
@@ -47906,7 +46149,7 @@
           </second>
         </item>
         <item>
-          <first>fmul_32ns_32ns_32_7_max_dsp_1_U464 (fmul_32ns_32ns_32_7_max_dsp_1)</first>
+          <first>fmul_32ns_32ns_32_7_max_dsp_1_U469 (fmul_32ns_32ns_32_7_max_dsp_1)</first>
           <second>
             <count>1</count>
             <item_version>0</item_version>
@@ -47914,7 +46157,7 @@
           </second>
         </item>
         <item>
-          <first>fmul_32ns_32ns_32_7_max_dsp_1_U465 (fmul_32ns_32ns_32_7_max_dsp_1)</first>
+          <first>fmul_32ns_32ns_32_7_max_dsp_1_U470 (fmul_32ns_32ns_32_7_max_dsp_1)</first>
           <second>
             <count>1</count>
             <item_version>0</item_version>
@@ -47922,7 +46165,7 @@
           </second>
         </item>
         <item>
-          <first>fsqrt_32ns_32ns_32_28_no_dsp_1_U469 (fsqrt_32ns_32ns_32_28_no_dsp_1)</first>
+          <first>fsqrt_32ns_32ns_32_28_no_dsp_1_U474 (fsqrt_32ns_32ns_32_28_no_dsp_1)</first>
           <second>
             <count>1</count>
             <item_version>0</item_version>
@@ -47930,7 +46173,7 @@
           </second>
         </item>
         <item>
-          <first>fsub_32ns_32ns_32_11_full_dsp_1_U462 (fsub_32ns_32ns_32_11_full_dsp_1)</first>
+          <first>fsub_32ns_32ns_32_11_full_dsp_1_U467 (fsub_32ns_32ns_32_11_full_dsp_1)</first>
           <second>
             <count>1</count>
             <item_version>0</item_version>
@@ -47938,7 +46181,7 @@
           </second>
         </item>
         <item>
-          <first>partselect_16ns_256ns_32s_16_1_1_U473 (partselect_16ns_256ns_32s_16_1_1)</first>
+          <first>partselect_16ns_256ns_32s_16_1_1_U478 (partselect_16ns_256ns_32s_16_1_1)</first>
           <second>
             <count>1</count>
             <item_version>0</item_version>
@@ -47946,7 +46189,7 @@
           </second>
         </item>
         <item>
-          <first>sparsemux_17_3_32_1_1_U475 (sparsemux_17_3_32_1_1)</first>
+          <first>sparsemux_17_3_32_1_1_U480 (sparsemux_17_3_32_1_1)</first>
           <second>
             <count>1</count>
             <item_version>0</item_version>
@@ -47954,7 +46197,7 @@
           </second>
         </item>
         <item>
-          <first>sparsemux_17_3_32_1_1_U476 (sparsemux_17_3_32_1_1)</first>
+          <first>sparsemux_17_3_32_1_1_U481 (sparsemux_17_3_32_1_1)</first>
           <second>
             <count>1</count>
             <item_version>0</item_version>
@@ -47962,7 +46205,7 @@
           </second>
         </item>
         <item>
-          <first>sparsemux_33_4_16_1_1_U474 (sparsemux_33_4_16_1_1)</first>
+          <first>sparsemux_33_4_16_1_1_U479 (sparsemux_33_4_16_1_1)</first>
           <second>
             <count>1</count>
             <item_version>0</item_version>
@@ -47974,7 +46217,7 @@
         <count>14</count>
         <item_version>0</item_version>
         <item>
-          <first>add_ln220_fu_880_p2 ( + ) </first>
+          <first>add_ln234_fu_880_p2 ( + ) </first>
           <second>
             <count>1</count>
             <item_version>0</item_version>
@@ -47982,7 +46225,7 @@
           </second>
         </item>
         <item>
-          <first>cs_3_fu_781_p2 ( + ) </first>
+          <first>cs_2_fu_781_p2 ( + ) </first>
           <second>
             <count>1</count>
             <item_version>0</item_version>
@@ -47990,7 +46233,7 @@
           </second>
         </item>
         <item>
-          <first>icmp_ln213_fu_733_p2 ( icmp ) </first>
+          <first>icmp_ln227_fu_733_p2 ( icmp ) </first>
           <second>
             <count>1</count>
             <item_version>0</item_version>
@@ -47998,7 +46241,7 @@
           </second>
         </item>
         <item>
-          <first>icmp_ln224_fu_915_p2 ( icmp ) </first>
+          <first>icmp_ln237_fu_915_p2 ( icmp ) </first>
           <second>
             <count>1</count>
             <item_version>0</item_version>
@@ -48006,7 +46249,7 @@
           </second>
         </item>
         <item>
-          <first>icmp_ln232_fu_775_p2 ( icmp ) </first>
+          <first>icmp_ln240_fu_775_p2 ( icmp ) </first>
           <second>
             <count>1</count>
             <item_version>0</item_version>
@@ -48022,7 +46265,7 @@
           </second>
         </item>
         <item>
-          <first>select_ln219_1_fu_947_p3 ( select ) </first>
+          <first>select_ln233_1_fu_947_p3 ( select ) </first>
           <second>
             <count>1</count>
             <item_version>0</item_version>
@@ -48030,7 +46273,7 @@
           </second>
         </item>
         <item>
-          <first>select_ln219_fu_833_p3 ( select ) </first>
+          <first>select_ln233_fu_833_p3 ( select ) </first>
           <second>
             <count>1</count>
             <item_version>0</item_version>
@@ -48038,7 +46281,7 @@
           </second>
         </item>
         <item>
-          <first>sub_ln219_1_fu_769_p2 ( - ) </first>
+          <first>sub_ln233_1_fu_769_p2 ( - ) </first>
           <second>
             <count>1</count>
             <item_version>0</item_version>
@@ -48046,7 +46289,7 @@
           </second>
         </item>
         <item>
-          <first>sub_ln219_2_fu_845_p2 ( - ) </first>
+          <first>sub_ln233_2_fu_845_p2 ( - ) </first>
           <second>
             <count>1</count>
             <item_version>0</item_version>
@@ -48054,7 +46297,7 @@
           </second>
         </item>
         <item>
-          <first>sub_ln219_3_fu_938_p2 ( - ) </first>
+          <first>sub_ln233_3_fu_938_p2 ( - ) </first>
           <second>
             <count>1</count>
             <item_version>0</item_version>
@@ -48062,7 +46305,7 @@
           </second>
         </item>
         <item>
-          <first>sub_ln219_fu_753_p2 ( - ) </first>
+          <first>sub_ln233_fu_753_p2 ( - ) </first>
           <second>
             <count>1</count>
             <item_version>0</item_version>
@@ -48070,7 +46313,7 @@
           </second>
         </item>
         <item>
-          <first>sub_ln220_fu_874_p2 ( - ) </first>
+          <first>sub_ln234_fu_874_p2 ( - ) </first>
           <second>
             <count>1</count>
             <item_version>0</item_version>
@@ -52314,7 +50557,7 @@
       <count>77</count>
       <item_version>0</item_version>
       <item class_id="54" tracking_level="0" version="0">
-        <first>add_ln220_fu_880</first>
+        <first>add_ln234_fu_880</first>
         <second>
           <count>1</count>
           <item_version>0</item_version>
@@ -52338,7 +50581,7 @@
         </second>
       </item>
       <item>
-        <first>cs_3_fu_781</first>
+        <first>cs_2_fu_781</first>
         <second>
           <count>1</count>
           <item_version>0</item_version>
@@ -52354,7 +50597,7 @@
         </second>
       </item>
       <item>
-        <first>icmp_ln213_fu_733</first>
+        <first>icmp_ln227_fu_733</first>
         <second>
           <count>1</count>
           <item_version>0</item_version>
@@ -52362,7 +50605,7 @@
         </second>
       </item>
       <item>
-        <first>icmp_ln224_fu_915</first>
+        <first>icmp_ln237_fu_915</first>
         <second>
           <count>1</count>
           <item_version>0</item_version>
@@ -52370,7 +50613,7 @@
         </second>
       </item>
       <item>
-        <first>icmp_ln232_fu_775</first>
+        <first>icmp_ln240_fu_775</first>
         <second>
           <count>1</count>
           <item_version>0</item_version>
@@ -52418,7 +50661,7 @@
         </second>
       </item>
       <item>
-        <first>p_ZZ16UpConv_Fused_RowILi8ELi16ELi16ELi960ELi480EEvP7ap_uintILi256EEPKS1_S4_S4_S4_12_gep_fu_277</first>
+        <first>p_ZZ16UpConv_Fused_RowILi8ELi16ELi16ELi960ELi480EEvP7ap_uintILi256EEPKS1_S4_S4_S4_24_gep_fu_277</first>
         <second>
           <count>1</count>
           <item_version>0</item_version>
@@ -52426,7 +50669,7 @@
         </second>
       </item>
       <item>
-        <first>p_ZZ16UpConv_Fused_RowILi8ELi16ELi16ELi960ELi480EEvP7ap_uintILi256EEPKS1_S4_S4_S4_13_gep_fu_284</first>
+        <first>p_ZZ16UpConv_Fused_RowILi8ELi16ELi16ELi960ELi480EEvP7ap_uintILi256EEPKS1_S4_S4_S4_25_gep_fu_284</first>
         <second>
           <count>1</count>
           <item_version>0</item_version>
@@ -52434,7 +50677,7 @@
         </second>
       </item>
       <item>
-        <first>p_ZZ16UpConv_Fused_RowILi8ELi16ELi16ELi960ELi480EEvP7ap_uintILi256EEPKS1_S4_S4_S4_14_gep_fu_291</first>
+        <first>p_ZZ16UpConv_Fused_RowILi8ELi16ELi16ELi960ELi480EEvP7ap_uintILi256EEPKS1_S4_S4_S4_26_gep_fu_291</first>
         <second>
           <count>1</count>
           <item_version>0</item_version>
@@ -52442,7 +50685,7 @@
         </second>
       </item>
       <item>
-        <first>p_ZZ16UpConv_Fused_RowILi8ELi16ELi16ELi960ELi480EEvP7ap_uintILi256EEPKS1_S4_S4_S4_15_gep_fu_298</first>
+        <first>p_ZZ16UpConv_Fused_RowILi8ELi16ELi16ELi960ELi480EEvP7ap_uintILi256EEPKS1_S4_S4_S4_27_gep_fu_298</first>
         <second>
           <count>1</count>
           <item_version>0</item_version>
@@ -52450,7 +50693,7 @@
         </second>
       </item>
       <item>
-        <first>p_ZZ16UpConv_Fused_RowILi8ELi16ELi16ELi960ELi480EEvP7ap_uintILi256EEPKS1_S4_S4_S4_16_gep_fu_305</first>
+        <first>p_ZZ16UpConv_Fused_RowILi8ELi16ELi16ELi960ELi480EEvP7ap_uintILi256EEPKS1_S4_S4_S4_28_gep_fu_305</first>
         <second>
           <count>1</count>
           <item_version>0</item_version>
@@ -52458,7 +50701,7 @@
         </second>
       </item>
       <item>
-        <first>p_ZZ16UpConv_Fused_RowILi8ELi16ELi16ELi960ELi480EEvP7ap_uintILi256EEPKS1_S4_S4_S4_17_gep_fu_312</first>
+        <first>p_ZZ16UpConv_Fused_RowILi8ELi16ELi16ELi960ELi480EEvP7ap_uintILi256EEPKS1_S4_S4_S4_29_gep_fu_312</first>
         <second>
           <count>1</count>
           <item_version>0</item_version>
@@ -52466,7 +50709,7 @@
         </second>
       </item>
       <item>
-        <first>p_shl1_fu_866</first>
+        <first>p_shl4_fu_866</first>
         <second>
           <count>1</count>
           <item_version>0</item_version>
@@ -52482,7 +50725,7 @@
         </second>
       </item>
       <item>
-        <first>select_ln219_1_fu_947</first>
+        <first>select_ln233_1_fu_947</first>
         <second>
           <count>1</count>
           <item_version>0</item_version>
@@ -52490,7 +50733,7 @@
         </second>
       </item>
       <item>
-        <first>select_ln219_fu_833</first>
+        <first>select_ln233_fu_833</first>
         <second>
           <count>1</count>
           <item_version>0</item_version>
@@ -52498,7 +50741,7 @@
         </second>
       </item>
       <item>
-        <first>sext_ln219_fu_962</first>
+        <first>sext_ln233_fu_962</first>
         <second>
           <count>1</count>
           <item_version>0</item_version>
@@ -52514,7 +50757,7 @@
         </second>
       </item>
       <item>
-        <first>sub_ln219_1_fu_769</first>
+        <first>sub_ln233_1_fu_769</first>
         <second>
           <count>1</count>
           <item_version>0</item_version>
@@ -52522,7 +50765,7 @@
         </second>
       </item>
       <item>
-        <first>sub_ln219_2_fu_845</first>
+        <first>sub_ln233_2_fu_845</first>
         <second>
           <count>1</count>
           <item_version>0</item_version>
@@ -52530,7 +50773,7 @@
         </second>
       </item>
       <item>
-        <first>sub_ln219_3_fu_938</first>
+        <first>sub_ln233_3_fu_938</first>
         <second>
           <count>1</count>
           <item_version>0</item_version>
@@ -52538,7 +50781,7 @@
         </second>
       </item>
       <item>
-        <first>sub_ln219_fu_753</first>
+        <first>sub_ln233_fu_753</first>
         <second>
           <count>1</count>
           <item_version>0</item_version>
@@ -52546,7 +50789,7 @@
         </second>
       </item>
       <item>
-        <first>sub_ln220_fu_874</first>
+        <first>sub_ln234_fu_874</first>
         <second>
           <count>1</count>
           <item_version>0</item_version>
@@ -52690,7 +50933,7 @@
         </second>
       </item>
       <item>
-        <first>tmp_3_fu_826</first>
+        <first>tmp_14_fu_826</first>
         <second>
           <count>1</count>
           <item_version>0</item_version>
@@ -52698,7 +50941,7 @@
         </second>
       </item>
       <item>
-        <first>tmp_4_fu_906</first>
+        <first>tmp_15_fu_906</first>
         <second>
           <count>1</count>
           <item_version>0</item_version>
@@ -52706,11 +50949,11 @@
         </second>
       </item>
       <item>
-        <first>tmp_5_fu_1073</first>
+        <first>tmp_1_fu_1176</first>
         <second>
           <count>1</count>
           <item_version>0</item_version>
-          <item>203</item>
+          <item>239</item>
         </second>
       </item>
       <item>
@@ -52722,15 +50965,15 @@
         </second>
       </item>
       <item>
-        <first>tmp_s_fu_1176</first>
+        <first>tmp_s_fu_1073</first>
         <second>
           <count>1</count>
           <item_version>0</item_version>
-          <item>239</item>
+          <item>203</item>
         </second>
       </item>
       <item>
-        <first>trunc_ln213_1_fu_805</first>
+        <first>trunc_ln227_1_fu_805</first>
         <second>
           <count>1</count>
           <item_version>0</item_version>
@@ -52738,7 +50981,7 @@
         </second>
       </item>
       <item>
-        <first>trunc_ln213_2_fu_749</first>
+        <first>trunc_ln227_2_fu_749</first>
         <second>
           <count>1</count>
           <item_version>0</item_version>
@@ -52746,7 +50989,7 @@
         </second>
       </item>
       <item>
-        <first>trunc_ln213_fu_745</first>
+        <first>trunc_ln227_fu_745</first>
         <second>
           <count>1</count>
           <item_version>0</item_version>
@@ -52754,7 +50997,7 @@
         </second>
       </item>
       <item>
-        <first>trunc_ln219_1_fu_759</first>
+        <first>trunc_ln233_1_fu_759</first>
         <second>
           <count>1</count>
           <item_version>0</item_version>
@@ -52762,7 +51005,7 @@
         </second>
       </item>
       <item>
-        <first>trunc_ln220_1_fu_862</first>
+        <first>trunc_ln234_1_fu_862</first>
         <second>
           <count>1</count>
           <item_version>0</item_version>
@@ -52770,7 +51013,7 @@
         </second>
       </item>
       <item>
-        <first>trunc_ln220_fu_850</first>
+        <first>trunc_ln234_fu_850</first>
         <second>
           <count>1</count>
           <item_version>0</item_version>
@@ -52778,7 +51021,7 @@
         </second>
       </item>
       <item>
-        <first>trunc_ln7_fu_817</first>
+        <first>trunc_ln5_fu_817</first>
         <second>
           <count>1</count>
           <item_version>0</item_version>
@@ -52794,7 +51037,7 @@
         </second>
       </item>
       <item>
-        <first>void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_20_gep_fu_319</first>
+        <first>void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_40_gep_fu_319</first>
         <second>
           <count>1</count>
           <item_version>0</item_version>
@@ -52802,7 +51045,7 @@
         </second>
       </item>
       <item>
-        <first>void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_21_gep_fu_326</first>
+        <first>void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_41_gep_fu_326</first>
         <second>
           <count>1</count>
           <item_version>0</item_version>
@@ -52810,7 +51053,7 @@
         </second>
       </item>
       <item>
-        <first>void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_22_gep_fu_333</first>
+        <first>void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_42_gep_fu_333</first>
         <second>
           <count>1</count>
           <item_version>0</item_version>
@@ -52818,7 +51061,7 @@
         </second>
       </item>
       <item>
-        <first>void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_23_gep_fu_340</first>
+        <first>void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_43_gep_fu_340</first>
         <second>
           <count>1</count>
           <item_version>0</item_version>
@@ -52826,7 +51069,7 @@
         </second>
       </item>
       <item>
-        <first>void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_24_gep_fu_347</first>
+        <first>void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_44_gep_fu_347</first>
         <second>
           <count>1</count>
           <item_version>0</item_version>
@@ -52834,7 +51077,7 @@
         </second>
       </item>
       <item>
-        <first>void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_25_gep_fu_354</first>
+        <first>void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_45_gep_fu_354</first>
         <second>
           <count>1</count>
           <item_version>0</item_version>
@@ -52842,7 +51085,7 @@
         </second>
       </item>
       <item>
-        <first>void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_26_gep_fu_361</first>
+        <first>void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_46_gep_fu_361</first>
         <second>
           <count>1</count>
           <item_version>0</item_version>
@@ -52850,7 +51093,7 @@
         </second>
       </item>
       <item>
-        <first>void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_27_gep_fu_368</first>
+        <first>void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_47_gep_fu_368</first>
         <second>
           <count>1</count>
           <item_version>0</item_version>
@@ -52858,7 +51101,7 @@
         </second>
       </item>
       <item>
-        <first>void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_28_gep_fu_375</first>
+        <first>void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_48_gep_fu_375</first>
         <second>
           <count>1</count>
           <item_version>0</item_version>
@@ -52866,7 +51109,7 @@
         </second>
       </item>
       <item>
-        <first>void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_29_gep_fu_382</first>
+        <first>void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_49_gep_fu_382</first>
         <second>
           <count>1</count>
           <item_version>0</item_version>
@@ -52890,7 +51133,7 @@
         </second>
       </item>
       <item>
-        <first>zext_ln219_1_fu_935</first>
+        <first>zext_ln233_1_fu_935</first>
         <second>
           <count>1</count>
           <item_version>0</item_version>
@@ -52898,7 +51141,7 @@
         </second>
       </item>
       <item>
-        <first>zext_ln219_2_fu_944</first>
+        <first>zext_ln233_2_fu_944</first>
         <second>
           <count>1</count>
           <item_version>0</item_version>
@@ -52906,7 +51149,7 @@
         </second>
       </item>
       <item>
-        <first>zext_ln219_fu_840</first>
+        <first>zext_ln233_fu_840</first>
         <second>
           <count>1</count>
           <item_version>0</item_version>
@@ -52914,7 +51157,7 @@
         </second>
       </item>
       <item>
-        <first>zext_ln220_1_fu_886</first>
+        <first>zext_ln234_1_fu_886</first>
         <second>
           <count>1</count>
           <item_version>0</item_version>
@@ -52922,7 +51165,7 @@
         </second>
       </item>
       <item>
-        <first>zext_ln220_fu_1351</first>
+        <first>zext_ln234_fu_1351</first>
         <second>
           <count>1</count>
           <item_version>0</item_version>
@@ -53502,7 +51745,7 @@
       <count>68</count>
       <item_version>0</item_version>
       <item>
-        <first>conv42_i_read_read_fu_258</first>
+        <first>conv1_read_read_fu_258</first>
         <second>
           <count>1</count>
           <item_version>0</item_version>
@@ -53510,7 +51753,7 @@
         </second>
       </item>
       <item>
-        <first>cs_2_load_fu_727</first>
+        <first>cs_1_load_fu_727</first>
         <second>
           <count>1</count>
           <item_version>0</item_version>
@@ -53526,7 +51769,7 @@
         </second>
       </item>
       <item>
-        <first>store_ln212_store_fu_712</first>
+        <first>store_ln226_store_fu_712</first>
         <second>
           <count>1</count>
           <item_version>0</item_version>
@@ -53534,7 +51777,7 @@
         </second>
       </item>
       <item>
-        <first>store_ln212_store_fu_722</first>
+        <first>store_ln226_store_fu_722</first>
         <second>
           <count>1</count>
           <item_version>0</item_version>
@@ -53542,7 +51785,7 @@
         </second>
       </item>
       <item>
-        <first>store_ln212_store_fu_787</first>
+        <first>store_ln226_store_fu_787</first>
         <second>
           <count>1</count>
           <item_version>0</item_version>
@@ -53550,7 +51793,7 @@
         </second>
       </item>
       <item>
-        <first>store_ln212_store_fu_792</first>
+        <first>store_ln226_store_fu_792</first>
         <second>
           <count>1</count>
           <item_version>0</item_version>
@@ -53558,7 +51801,7 @@
         </second>
       </item>
       <item>
-        <first>store_ln212_store_fu_930</first>
+        <first>store_ln226_store_fu_930</first>
         <second>
           <count>1</count>
           <item_version>0</item_version>
@@ -53566,7 +51809,7 @@
         </second>
       </item>
       <item>
-        <first>store_ln213_store_fu_717</first>
+        <first>store_ln227_store_fu_717</first>
         <second>
           <count>1</count>
           <item_version>0</item_version>
@@ -53574,7 +51817,7 @@
         </second>
       </item>
       <item>
-        <first>store_ln213_store_fu_797</first>
+        <first>store_ln227_store_fu_797</first>
         <second>
           <count>1</count>
           <item_version>0</item_version>
@@ -53582,7 +51825,7 @@
         </second>
       </item>
       <item>
-        <first>store_ln225_store_fu_1112</first>
+        <first>store_ln237_store_fu_1112</first>
         <second>
           <count>1</count>
           <item_version>0</item_version>
@@ -53590,7 +51833,7 @@
         </second>
       </item>
       <item>
-        <first>store_ln225_store_fu_1117</first>
+        <first>store_ln237_store_fu_1117</first>
         <second>
           <count>1</count>
           <item_version>0</item_version>
@@ -53598,7 +51841,7 @@
         </second>
       </item>
       <item>
-        <first>store_ln225_store_fu_1122</first>
+        <first>store_ln237_store_fu_1122</first>
         <second>
           <count>1</count>
           <item_version>0</item_version>
@@ -53606,7 +51849,7 @@
         </second>
       </item>
       <item>
-        <first>store_ln225_store_fu_1127</first>
+        <first>store_ln237_store_fu_1127</first>
         <second>
           <count>1</count>
           <item_version>0</item_version>
@@ -53614,7 +51857,7 @@
         </second>
       </item>
       <item>
-        <first>store_ln225_store_fu_1132</first>
+        <first>store_ln237_store_fu_1132</first>
         <second>
           <count>1</count>
           <item_version>0</item_version>
@@ -53622,7 +51865,7 @@
         </second>
       </item>
       <item>
-        <first>store_ln225_store_fu_1137</first>
+        <first>store_ln237_store_fu_1137</first>
         <second>
           <count>1</count>
           <item_version>0</item_version>
@@ -53630,7 +51873,7 @@
         </second>
       </item>
       <item>
-        <first>store_ln225_store_fu_1142</first>
+        <first>store_ln237_store_fu_1142</first>
         <second>
           <count>1</count>
           <item_version>0</item_version>
@@ -53638,7 +51881,7 @@
         </second>
       </item>
       <item>
-        <first>store_ln225_store_fu_1147</first>
+        <first>store_ln237_store_fu_1147</first>
         <second>
           <count>1</count>
           <item_version>0</item_version>
@@ -53646,7 +51889,7 @@
         </second>
       </item>
       <item>
-        <first>store_ln228_store_fu_1215</first>
+        <first>store_ln238_store_fu_1215</first>
         <second>
           <count>1</count>
           <item_version>0</item_version>
@@ -53654,7 +51897,7 @@
         </second>
       </item>
       <item>
-        <first>store_ln228_store_fu_1219</first>
+        <first>store_ln238_store_fu_1219</first>
         <second>
           <count>1</count>
           <item_version>0</item_version>
@@ -53662,7 +51905,7 @@
         </second>
       </item>
       <item>
-        <first>store_ln228_store_fu_1223</first>
+        <first>store_ln238_store_fu_1223</first>
         <second>
           <count>1</count>
           <item_version>0</item_version>
@@ -53670,7 +51913,7 @@
         </second>
       </item>
       <item>
-        <first>store_ln228_store_fu_1227</first>
+        <first>store_ln238_store_fu_1227</first>
         <second>
           <count>1</count>
           <item_version>0</item_version>
@@ -53678,7 +51921,7 @@
         </second>
       </item>
       <item>
-        <first>store_ln228_store_fu_1231</first>
+        <first>store_ln238_store_fu_1231</first>
         <second>
           <count>1</count>
           <item_version>0</item_version>
@@ -53686,7 +51929,7 @@
         </second>
       </item>
       <item>
-        <first>store_ln228_store_fu_1235</first>
+        <first>store_ln238_store_fu_1235</first>
         <second>
           <count>1</count>
           <item_version>0</item_version>
@@ -53694,7 +51937,7 @@
         </second>
       </item>
       <item>
-        <first>store_ln228_store_fu_1239</first>
+        <first>store_ln238_store_fu_1239</first>
         <second>
           <count>1</count>
           <item_version>0</item_version>
@@ -53702,7 +51945,7 @@
         </second>
       </item>
       <item>
-        <first>store_ln228_store_fu_1243</first>
+        <first>store_ln238_store_fu_1243</first>
         <second>
           <count>1</count>
           <item_version>0</item_version>
@@ -53710,7 +51953,7 @@
         </second>
       </item>
       <item>
-        <first>store_ln229_store_fu_1251</first>
+        <first>store_ln238_store_fu_1251</first>
         <second>
           <count>1</count>
           <item_version>0</item_version>
@@ -53718,7 +51961,7 @@
         </second>
       </item>
       <item>
-        <first>store_ln229_store_fu_1256</first>
+        <first>store_ln238_store_fu_1256</first>
         <second>
           <count>1</count>
           <item_version>0</item_version>
@@ -53726,7 +51969,7 @@
         </second>
       </item>
       <item>
-        <first>store_ln229_store_fu_1261</first>
+        <first>store_ln238_store_fu_1261</first>
         <second>
           <count>1</count>
           <item_version>0</item_version>
@@ -53734,7 +51977,7 @@
         </second>
       </item>
       <item>
-        <first>store_ln229_store_fu_1266</first>
+        <first>store_ln238_store_fu_1266</first>
         <second>
           <count>1</count>
           <item_version>0</item_version>
@@ -53742,7 +51985,7 @@
         </second>
       </item>
       <item>
-        <first>store_ln229_store_fu_1271</first>
+        <first>store_ln238_store_fu_1271</first>
         <second>
           <count>1</count>
           <item_version>0</item_version>
@@ -53750,7 +51993,7 @@
         </second>
       </item>
       <item>
-        <first>store_ln229_store_fu_1276</first>
+        <first>store_ln238_store_fu_1276</first>
         <second>
           <count>1</count>
           <item_version>0</item_version>
@@ -53758,7 +52001,7 @@
         </second>
       </item>
       <item>
-        <first>store_ln229_store_fu_1281</first>
+        <first>store_ln238_store_fu_1281</first>
         <second>
           <count>1</count>
           <item_version>0</item_version>
@@ -53766,7 +52009,7 @@
         </second>
       </item>
       <item>
-        <first>store_ln229_store_fu_1286</first>
+        <first>store_ln238_store_fu_1286</first>
         <second>
           <count>1</count>
           <item_version>0</item_version>
@@ -55256,7 +53499,7 @@
       <count>99</count>
       <item_version>0</item_version>
       <item>
-        <first>add24_i_reg_1734</first>
+        <first>add8_reg_1734</first>
         <second>
           <count>1</count>
           <item_version>0</item_version>
@@ -55280,7 +53523,7 @@
         </second>
       </item>
       <item>
-        <first>conv42_i_read_reg_1378</first>
+        <first>conv1_read_reg_1378</first>
         <second>
           <count>1</count>
           <item_version>0</item_version>
@@ -55288,7 +53531,7 @@
         </second>
       </item>
       <item>
-        <first>conv46_i_reg_1936</first>
+        <first>conv_reg_1936</first>
         <second>
           <count>1</count>
           <item_version>0</item_version>
@@ -55296,7 +53539,7 @@
         </second>
       </item>
       <item>
-        <first>cs_2_reg_1503</first>
+        <first>cs_1_reg_1503</first>
         <second>
           <count>1</count>
           <item_version>0</item_version>
@@ -55312,15 +53555,7 @@
         </second>
       </item>
       <item>
-        <first>div38_i_reg_1906</first>
-        <second>
-          <count>1</count>
-          <item_version>0</item_version>
-          <item>339</item>
-        </second>
-      </item>
-      <item>
-        <first>div45_i_reg_1931</first>
+        <first>div1_reg_1931</first>
         <second>
           <count>1</count>
           <item_version>0</item_version>
@@ -55328,7 +53563,15 @@
         </second>
       </item>
       <item>
-        <first>icmp_ln213_reg_1512</first>
+        <first>div_reg_1906</first>
+        <second>
+          <count>1</count>
+          <item_version>0</item_version>
+          <item>339</item>
+        </second>
+      </item>
+      <item>
+        <first>icmp_ln227_reg_1512</first>
         <second>
           <count>1</count>
           <item_version>0</item_version>
@@ -55336,7 +53579,7 @@
         </second>
       </item>
       <item>
-        <first>icmp_ln224_reg_1654</first>
+        <first>icmp_ln237_reg_1654</first>
         <second>
           <count>1</count>
           <item_version>0</item_version>
@@ -55344,7 +53587,7 @@
         </second>
       </item>
       <item>
-        <first>icmp_ln232_reg_1528</first>
+        <first>icmp_ln240_reg_1528</first>
         <second>
           <count>1</count>
           <item_version>0</item_version>
@@ -55368,15 +53611,7 @@
         </second>
       </item>
       <item>
-        <first>mul15_i_reg_1706</first>
-        <second>
-          <count>1</count>
-          <item_version>0</item_version>
-          <item>192</item>
-        </second>
-      </item>
-      <item>
-        <first>mul39_i_reg_1911</first>
+        <first>mul3_reg_1911</first>
         <second>
           <count>1</count>
           <item_version>0</item_version>
@@ -55384,7 +53619,15 @@
         </second>
       </item>
       <item>
-        <first>p_ZZ16UpConv_Fused_RowILi8ELi16ELi16ELi960ELi480EEvP7ap_uintILi256EEPKS1_S4_S4_S4_12_reg_1558</first>
+        <first>mul_reg_1706</first>
+        <second>
+          <count>1</count>
+          <item_version>0</item_version>
+          <item>192</item>
+        </second>
+      </item>
+      <item>
+        <first>p_ZZ16UpConv_Fused_RowILi8ELi16ELi16ELi960ELi480EEvP7ap_uintILi256EEPKS1_S4_S4_S4_24_reg_1558</first>
         <second>
           <count>1</count>
           <item_version>0</item_version>
@@ -55392,7 +53635,7 @@
         </second>
       </item>
       <item>
-        <first>p_ZZ16UpConv_Fused_RowILi8ELi16ELi16ELi960ELi480EEvP7ap_uintILi256EEPKS1_S4_S4_S4_13_reg_1564</first>
+        <first>p_ZZ16UpConv_Fused_RowILi8ELi16ELi16ELi960ELi480EEvP7ap_uintILi256EEPKS1_S4_S4_S4_25_reg_1564</first>
         <second>
           <count>1</count>
           <item_version>0</item_version>
@@ -55400,7 +53643,7 @@
         </second>
       </item>
       <item>
-        <first>p_ZZ16UpConv_Fused_RowILi8ELi16ELi16ELi960ELi480EEvP7ap_uintILi256EEPKS1_S4_S4_S4_14_reg_1570</first>
+        <first>p_ZZ16UpConv_Fused_RowILi8ELi16ELi16ELi960ELi480EEvP7ap_uintILi256EEPKS1_S4_S4_S4_26_reg_1570</first>
         <second>
           <count>1</count>
           <item_version>0</item_version>
@@ -55408,7 +53651,7 @@
         </second>
       </item>
       <item>
-        <first>p_ZZ16UpConv_Fused_RowILi8ELi16ELi16ELi960ELi480EEvP7ap_uintILi256EEPKS1_S4_S4_S4_15_reg_1576</first>
+        <first>p_ZZ16UpConv_Fused_RowILi8ELi16ELi16ELi960ELi480EEvP7ap_uintILi256EEPKS1_S4_S4_S4_27_reg_1576</first>
         <second>
           <count>1</count>
           <item_version>0</item_version>
@@ -55416,7 +53659,7 @@
         </second>
       </item>
       <item>
-        <first>p_ZZ16UpConv_Fused_RowILi8ELi16ELi16ELi960ELi480EEvP7ap_uintILi256EEPKS1_S4_S4_S4_16_reg_1582</first>
+        <first>p_ZZ16UpConv_Fused_RowILi8ELi16ELi16ELi960ELi480EEvP7ap_uintILi256EEPKS1_S4_S4_S4_28_reg_1582</first>
         <second>
           <count>1</count>
           <item_version>0</item_version>
@@ -55424,7 +53667,7 @@
         </second>
       </item>
       <item>
-        <first>p_ZZ16UpConv_Fused_RowILi8ELi16ELi16ELi960ELi480EEvP7ap_uintILi256EEPKS1_S4_S4_S4_17_reg_1588</first>
+        <first>p_ZZ16UpConv_Fused_RowILi8ELi16ELi16ELi960ELi480EEvP7ap_uintILi256EEPKS1_S4_S4_S4_29_reg_1588</first>
         <second>
           <count>1</count>
           <item_version>0</item_version>
@@ -55432,7 +53675,7 @@
         </second>
       </item>
       <item>
-        <first>sub_ln219_1_reg_1523</first>
+        <first>sub_ln233_1_reg_1523</first>
         <second>
           <count>1</count>
           <item_version>0</item_version>
@@ -55440,7 +53683,7 @@
         </second>
       </item>
       <item>
-        <first>sub_ln219_2_reg_1548</first>
+        <first>sub_ln233_2_reg_1548</first>
         <second>
           <count>1</count>
           <item_version>0</item_version>
@@ -55856,15 +54099,7 @@
         </second>
       </item>
       <item>
-        <first>tmp_1_reg_1926</first>
-        <second>
-          <count>1</count>
-          <item_version>0</item_version>
-          <item>345</item>
-        </second>
-      </item>
-      <item>
-        <first>tmp_3_reg_1543</first>
+        <first>tmp_14_reg_1543</first>
         <second>
           <count>1</count>
           <item_version>0</item_version>
@@ -55872,11 +54107,19 @@
         </second>
       </item>
       <item>
-        <first>tmp_5_reg_1701</first>
+        <first>tmp_1_reg_1712</first>
         <second>
           <count>1</count>
           <item_version>0</item_version>
-          <item>203</item>
+          <item>239</item>
+        </second>
+      </item>
+      <item>
+        <first>tmp_2_reg_1926</first>
+        <second>
+          <count>1</count>
+          <item_version>0</item_version>
+          <item>345</item>
         </second>
       </item>
       <item>
@@ -55888,15 +54131,15 @@
         </second>
       </item>
       <item>
-        <first>tmp_s_reg_1712</first>
+        <first>tmp_s_reg_1701</first>
         <second>
           <count>1</count>
           <item_version>0</item_version>
-          <item>239</item>
+          <item>203</item>
         </second>
       </item>
       <item>
-        <first>trunc_ln213_1_reg_1537</first>
+        <first>trunc_ln227_1_reg_1537</first>
         <second>
           <count>1</count>
           <item_version>0</item_version>
@@ -55904,7 +54147,7 @@
         </second>
       </item>
       <item>
-        <first>trunc_ln213_2_reg_1516</first>
+        <first>trunc_ln227_2_reg_1516</first>
         <second>
           <count>1</count>
           <item_version>0</item_version>
@@ -55936,7 +54179,7 @@
         </second>
       </item>
       <item>
-        <first>void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_20_reg_1594</first>
+        <first>void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_40_reg_1594</first>
         <second>
           <count>1</count>
           <item_version>0</item_version>
@@ -55944,7 +54187,7 @@
         </second>
       </item>
       <item>
-        <first>void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_21_reg_1600</first>
+        <first>void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_41_reg_1600</first>
         <second>
           <count>1</count>
           <item_version>0</item_version>
@@ -55952,7 +54195,7 @@
         </second>
       </item>
       <item>
-        <first>void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_22_reg_1606</first>
+        <first>void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_42_reg_1606</first>
         <second>
           <count>1</count>
           <item_version>0</item_version>
@@ -55960,7 +54203,7 @@
         </second>
       </item>
       <item>
-        <first>void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_23_reg_1612</first>
+        <first>void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_43_reg_1612</first>
         <second>
           <count>1</count>
           <item_version>0</item_version>
@@ -55968,7 +54211,7 @@
         </second>
       </item>
       <item>
-        <first>void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_24_reg_1618</first>
+        <first>void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_44_reg_1618</first>
         <second>
           <count>1</count>
           <item_version>0</item_version>
@@ -55976,7 +54219,7 @@
         </second>
       </item>
       <item>
-        <first>void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_25_reg_1624</first>
+        <first>void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_45_reg_1624</first>
         <second>
           <count>1</count>
           <item_version>0</item_version>
@@ -55984,7 +54227,7 @@
         </second>
       </item>
       <item>
-        <first>void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_26_reg_1630</first>
+        <first>void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_46_reg_1630</first>
         <second>
           <count>1</count>
           <item_version>0</item_version>
@@ -55992,7 +54235,7 @@
         </second>
       </item>
       <item>
-        <first>void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_27_reg_1636</first>
+        <first>void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_47_reg_1636</first>
         <second>
           <count>1</count>
           <item_version>0</item_version>
@@ -56000,7 +54243,7 @@
         </second>
       </item>
       <item>
-        <first>void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_28_reg_1642</first>
+        <first>void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_48_reg_1642</first>
         <second>
           <count>1</count>
           <item_version>0</item_version>
@@ -56008,7 +54251,7 @@
         </second>
       </item>
       <item>
-        <first>void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_29_reg_1648</first>
+        <first>void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_49_reg_1648</first>
         <second>
           <count>1</count>
           <item_version>0</item_version>
@@ -56040,7 +54283,7 @@
         </second>
       </item>
       <item>
-        <first>zext_ln220_reg_1901</first>
+        <first>zext_ln234_reg_1901</first>
         <second>
           <count>1</count>
           <item_version>0</item_version>
@@ -56092,7 +54335,7 @@
         </second>
       </item>
       <item>
-        <first>conv42_i</first>
+        <first>conv1</first>
         <second>
           <count>1</count>
           <item_version>0</item_version>

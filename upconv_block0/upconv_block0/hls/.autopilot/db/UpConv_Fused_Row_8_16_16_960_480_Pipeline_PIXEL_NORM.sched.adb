@@ -88,7 +88,7 @@
 					<Obj>
 						<type>1</type>
 						<id>3</id>
-						<name>zext_ln262</name>
+						<name>zext_ln258</name>
 						<fileName></fileName>
 						<fileDirectory></fileDirectory>
 						<lineNumber>0</lineNumber>
@@ -851,30 +851,23 @@
 						<name>wn</name>
 						<fileName>../gen/Hls_Layers_UpConv.tpp</fileName>
 						<fileDirectory>/home/hoinguyen/Documents/Vitis/UpConv_HLS/upconv_block0</fileDirectory>
-						<lineNumber>261</lineNumber>
-						<contextFuncName>Apply_Norm_And_Write&amp;lt;32, 480, 30, 480&amp;gt;</contextFuncName>
-						<contextNormFuncName>Apply_Norm_And_Write_32_480_30_480_s</contextNormFuncName>
+						<lineNumber>257</lineNumber>
+						<contextFuncName>UpConv_Fused_Row&amp;lt;8, 16, 16, 960, 480&amp;gt;</contextFuncName>
+						<contextNormFuncName>UpConv_Fused_Row_8_16_16_960_480_s</contextNormFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item class_id="10" tracking_level="0" version="0">
 								<first>/home/hoinguyen/Documents/Vitis/UpConv_HLS/upconv_block0</first>
 								<second class_id="11" tracking_level="0" version="0">
-									<count>2</count>
+									<count>1</count>
 									<item_version>0</item_version>
 									<item class_id="12" tracking_level="0" version="0">
 										<first class_id="13" tracking_level="0" version="0">
 											<first>../gen/Hls_Layers_UpConv.tpp</first>
-											<second>Apply_Norm_And_Write&amp;lt;32, 480, 30, 480&amp;gt;</second>
-										</first>
-										<second>261</second>
-									</item>
-									<item>
-										<first>
-											<first>../gen/Hls_Layers_UpConv.tpp</first>
 											<second>UpConv_Fused_Row&amp;lt;8, 16, 16, 960, 480&amp;gt;</second>
 										</first>
-										<second>364</second>
+										<second>257</second>
 									</item>
 								</second>
 							</item>
@@ -914,30 +907,23 @@
 						<name>cwn</name>
 						<fileName>../gen/Hls_Layers_UpConv.tpp</fileName>
 						<fileDirectory>/home/hoinguyen/Documents/Vitis/UpConv_HLS/upconv_block0</fileDirectory>
-						<lineNumber>261</lineNumber>
-						<contextFuncName>Apply_Norm_And_Write&amp;lt;32, 480, 30, 480&amp;gt;</contextFuncName>
-						<contextNormFuncName>Apply_Norm_And_Write_32_480_30_480_s</contextNormFuncName>
+						<lineNumber>257</lineNumber>
+						<contextFuncName>UpConv_Fused_Row&amp;lt;8, 16, 16, 960, 480&amp;gt;</contextFuncName>
+						<contextNormFuncName>UpConv_Fused_Row_8_16_16_960_480_s</contextNormFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
 								<first>/home/hoinguyen/Documents/Vitis/UpConv_HLS/upconv_block0</first>
 								<second>
-									<count>2</count>
+									<count>1</count>
 									<item_version>0</item_version>
-									<item>
-										<first>
-											<first>../gen/Hls_Layers_UpConv.tpp</first>
-											<second>Apply_Norm_And_Write&amp;lt;32, 480, 30, 480&amp;gt;</second>
-										</first>
-										<second>261</second>
-									</item>
 									<item>
 										<first>
 											<first>../gen/Hls_Layers_UpConv.tpp</first>
 											<second>UpConv_Fused_Row&amp;lt;8, 16, 16, 960, 480&amp;gt;</second>
 										</first>
-										<second>364</second>
+										<second>257</second>
 									</item>
 								</second>
 							</item>
@@ -977,30 +963,23 @@
 						<name>m_3</name>
 						<fileName>../gen/Hls_Layers_UpConv.tpp</fileName>
 						<fileDirectory>/home/hoinguyen/Documents/Vitis/UpConv_HLS/upconv_block0</fileDirectory>
-						<lineNumber>262</lineNumber>
-						<contextFuncName>Apply_Norm_And_Write&amp;lt;32, 480, 30, 480&amp;gt;</contextFuncName>
-						<contextNormFuncName>Apply_Norm_And_Write_32_480_30_480_s</contextNormFuncName>
+						<lineNumber>258</lineNumber>
+						<contextFuncName>UpConv_Fused_Row&amp;lt;8, 16, 16, 960, 480&amp;gt;</contextFuncName>
+						<contextNormFuncName>UpConv_Fused_Row_8_16_16_960_480_s</contextNormFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
 								<first>/home/hoinguyen/Documents/Vitis/UpConv_HLS/upconv_block0</first>
 								<second>
-									<count>2</count>
+									<count>1</count>
 									<item_version>0</item_version>
-									<item>
-										<first>
-											<first>../gen/Hls_Layers_UpConv.tpp</first>
-											<second>Apply_Norm_And_Write&amp;lt;32, 480, 30, 480&amp;gt;</second>
-										</first>
-										<second>262</second>
-									</item>
 									<item>
 										<first>
 											<first>../gen/Hls_Layers_UpConv.tpp</first>
 											<second>UpConv_Fused_Row&amp;lt;8, 16, 16, 960, 480&amp;gt;</second>
 										</first>
-										<second>364</second>
+										<second>258</second>
 									</item>
 								</second>
 							</item>
@@ -1080,7 +1059,7 @@
 					<Obj>
 						<type>0</type>
 						<id>28</id>
-						<name>zext_ln262_read</name>
+						<name>zext_ln258_read</name>
 						<fileName></fileName>
 						<fileDirectory></fileDirectory>
 						<lineNumber>0</lineNumber>
@@ -1123,7 +1102,7 @@
 					<Obj>
 						<type>0</type>
 						<id>29</id>
-						<name>zext_ln262_cast</name>
+						<name>zext_ln258_cast</name>
 						<fileName></fileName>
 						<fileDirectory></fileDirectory>
 						<lineNumber>0</lineNumber>
@@ -1165,33 +1144,26 @@
 					<Obj>
 						<type>0</type>
 						<id>51</id>
-						<name>m_3_write_ln262</name>
+						<name>m_3_write_ln258</name>
 						<fileName>../gen/Hls_Layers_UpConv.tpp</fileName>
 						<fileDirectory>/home/hoinguyen/Documents/Vitis/UpConv_HLS/upconv_block0</fileDirectory>
-						<lineNumber>262</lineNumber>
-						<contextFuncName>Apply_Norm_And_Write&amp;lt;32, 480, 30, 480&amp;gt;</contextFuncName>
-						<contextNormFuncName>Apply_Norm_And_Write_32_480_30_480_s</contextNormFuncName>
+						<lineNumber>258</lineNumber>
+						<contextFuncName>UpConv_Fused_Row&amp;lt;8, 16, 16, 960, 480&amp;gt;</contextFuncName>
+						<contextNormFuncName>UpConv_Fused_Row_8_16_16_960_480_s</contextNormFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
 								<first>/home/hoinguyen/Documents/Vitis/UpConv_HLS/upconv_block0</first>
 								<second>
-									<count>2</count>
+									<count>1</count>
 									<item_version>0</item_version>
-									<item>
-										<first>
-											<first>../gen/Hls_Layers_UpConv.tpp</first>
-											<second>Apply_Norm_And_Write&amp;lt;32, 480, 30, 480&amp;gt;</second>
-										</first>
-										<second>262</second>
-									</item>
 									<item>
 										<first>
 											<first>../gen/Hls_Layers_UpConv.tpp</first>
 											<second>UpConv_Fused_Row&amp;lt;8, 16, 16, 960, 480&amp;gt;</second>
 										</first>
-										<second>364</second>
+										<second>258</second>
 									</item>
 								</second>
 							</item>
@@ -1229,33 +1201,26 @@
 					<Obj>
 						<type>0</type>
 						<id>52</id>
-						<name>cwn_write_ln261</name>
+						<name>cwn_write_ln257</name>
 						<fileName>../gen/Hls_Layers_UpConv.tpp</fileName>
 						<fileDirectory>/home/hoinguyen/Documents/Vitis/UpConv_HLS/upconv_block0</fileDirectory>
-						<lineNumber>261</lineNumber>
-						<contextFuncName>Apply_Norm_And_Write&amp;lt;32, 480, 30, 480&amp;gt;</contextFuncName>
-						<contextNormFuncName>Apply_Norm_And_Write_32_480_30_480_s</contextNormFuncName>
+						<lineNumber>257</lineNumber>
+						<contextFuncName>UpConv_Fused_Row&amp;lt;8, 16, 16, 960, 480&amp;gt;</contextFuncName>
+						<contextNormFuncName>UpConv_Fused_Row_8_16_16_960_480_s</contextNormFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
 								<first>/home/hoinguyen/Documents/Vitis/UpConv_HLS/upconv_block0</first>
 								<second>
-									<count>2</count>
+									<count>1</count>
 									<item_version>0</item_version>
-									<item>
-										<first>
-											<first>../gen/Hls_Layers_UpConv.tpp</first>
-											<second>Apply_Norm_And_Write&amp;lt;32, 480, 30, 480&amp;gt;</second>
-										</first>
-										<second>261</second>
-									</item>
 									<item>
 										<first>
 											<first>../gen/Hls_Layers_UpConv.tpp</first>
 											<second>UpConv_Fused_Row&amp;lt;8, 16, 16, 960, 480&amp;gt;</second>
 										</first>
-										<second>364</second>
+										<second>257</second>
 									</item>
 								</second>
 							</item>
@@ -1293,33 +1258,26 @@
 					<Obj>
 						<type>0</type>
 						<id>53</id>
-						<name>wn_write_ln261</name>
+						<name>wn_write_ln257</name>
 						<fileName>../gen/Hls_Layers_UpConv.tpp</fileName>
 						<fileDirectory>/home/hoinguyen/Documents/Vitis/UpConv_HLS/upconv_block0</fileDirectory>
-						<lineNumber>261</lineNumber>
-						<contextFuncName>Apply_Norm_And_Write&amp;lt;32, 480, 30, 480&amp;gt;</contextFuncName>
-						<contextNormFuncName>Apply_Norm_And_Write_32_480_30_480_s</contextNormFuncName>
+						<lineNumber>257</lineNumber>
+						<contextFuncName>UpConv_Fused_Row&amp;lt;8, 16, 16, 960, 480&amp;gt;</contextFuncName>
+						<contextNormFuncName>UpConv_Fused_Row_8_16_16_960_480_s</contextNormFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
 								<first>/home/hoinguyen/Documents/Vitis/UpConv_HLS/upconv_block0</first>
 								<second>
-									<count>2</count>
+									<count>1</count>
 									<item_version>0</item_version>
-									<item>
-										<first>
-											<first>../gen/Hls_Layers_UpConv.tpp</first>
-											<second>Apply_Norm_And_Write&amp;lt;32, 480, 30, 480&amp;gt;</second>
-										</first>
-										<second>261</second>
-									</item>
 									<item>
 										<first>
 											<first>../gen/Hls_Layers_UpConv.tpp</first>
 											<second>UpConv_Fused_Row&amp;lt;8, 16, 16, 960, 480&amp;gt;</second>
 										</first>
-										<second>364</second>
+										<second>257</second>
 									</item>
 								</second>
 							</item>
@@ -1402,30 +1360,23 @@
 						<name>m</name>
 						<fileName>../gen/Hls_Layers_UpConv.tpp</fileName>
 						<fileDirectory>/home/hoinguyen/Documents/Vitis/UpConv_HLS/upconv_block0</fileDirectory>
-						<lineNumber>262</lineNumber>
-						<contextFuncName>Apply_Norm_And_Write&amp;lt;32, 480, 30, 480&amp;gt;</contextFuncName>
-						<contextNormFuncName>Apply_Norm_And_Write_32_480_30_480_s</contextNormFuncName>
+						<lineNumber>258</lineNumber>
+						<contextFuncName>UpConv_Fused_Row&amp;lt;8, 16, 16, 960, 480&amp;gt;</contextFuncName>
+						<contextNormFuncName>UpConv_Fused_Row_8_16_16_960_480_s</contextNormFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
 								<first>/home/hoinguyen/Documents/Vitis/UpConv_HLS/upconv_block0</first>
 								<second>
-									<count>2</count>
+									<count>1</count>
 									<item_version>0</item_version>
-									<item>
-										<first>
-											<first>../gen/Hls_Layers_UpConv.tpp</first>
-											<second>Apply_Norm_And_Write&amp;lt;32, 480, 30, 480&amp;gt;</second>
-										</first>
-										<second>262</second>
-									</item>
 									<item>
 										<first>
 											<first>../gen/Hls_Layers_UpConv.tpp</first>
 											<second>UpConv_Fused_Row&amp;lt;8, 16, 16, 960, 480&amp;gt;</second>
 										</first>
-										<second>364</second>
+										<second>258</second>
 									</item>
 								</second>
 							</item>
@@ -1463,33 +1414,26 @@
 					<Obj>
 						<type>0</type>
 						<id>57</id>
-						<name>icmp_ln262</name>
+						<name>icmp_ln258</name>
 						<fileName>../gen/Hls_Layers_UpConv.tpp</fileName>
 						<fileDirectory>/home/hoinguyen/Documents/Vitis/UpConv_HLS/upconv_block0</fileDirectory>
-						<lineNumber>262</lineNumber>
-						<contextFuncName>Apply_Norm_And_Write&amp;lt;32, 480, 30, 480&amp;gt;</contextFuncName>
-						<contextNormFuncName>Apply_Norm_And_Write_32_480_30_480_s</contextNormFuncName>
+						<lineNumber>258</lineNumber>
+						<contextFuncName>UpConv_Fused_Row&amp;lt;8, 16, 16, 960, 480&amp;gt;</contextFuncName>
+						<contextNormFuncName>UpConv_Fused_Row_8_16_16_960_480_s</contextNormFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
 								<first>/home/hoinguyen/Documents/Vitis/UpConv_HLS/upconv_block0</first>
 								<second>
-									<count>2</count>
+									<count>1</count>
 									<item_version>0</item_version>
-									<item>
-										<first>
-											<first>../gen/Hls_Layers_UpConv.tpp</first>
-											<second>Apply_Norm_And_Write&amp;lt;32, 480, 30, 480&amp;gt;</second>
-										</first>
-										<second>262</second>
-									</item>
 									<item>
 										<first>
 											<first>../gen/Hls_Layers_UpConv.tpp</first>
 											<second>UpConv_Fused_Row&amp;lt;8, 16, 16, 960, 480&amp;gt;</second>
 										</first>
-										<second>364</second>
+										<second>258</second>
 									</item>
 								</second>
 							</item>
@@ -1530,30 +1474,23 @@
 						<name>m_4</name>
 						<fileName>../gen/Hls_Layers_UpConv.tpp</fileName>
 						<fileDirectory>/home/hoinguyen/Documents/Vitis/UpConv_HLS/upconv_block0</fileDirectory>
-						<lineNumber>262</lineNumber>
-						<contextFuncName>Apply_Norm_And_Write&amp;lt;32, 480, 30, 480&amp;gt;</contextFuncName>
-						<contextNormFuncName>Apply_Norm_And_Write_32_480_30_480_s</contextNormFuncName>
+						<lineNumber>258</lineNumber>
+						<contextFuncName>UpConv_Fused_Row&amp;lt;8, 16, 16, 960, 480&amp;gt;</contextFuncName>
+						<contextNormFuncName>UpConv_Fused_Row_8_16_16_960_480_s</contextNormFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
 								<first>/home/hoinguyen/Documents/Vitis/UpConv_HLS/upconv_block0</first>
 								<second>
-									<count>2</count>
+									<count>1</count>
 									<item_version>0</item_version>
-									<item>
-										<first>
-											<first>../gen/Hls_Layers_UpConv.tpp</first>
-											<second>Apply_Norm_And_Write&amp;lt;32, 480, 30, 480&amp;gt;</second>
-										</first>
-										<second>262</second>
-									</item>
 									<item>
 										<first>
 											<first>../gen/Hls_Layers_UpConv.tpp</first>
 											<second>UpConv_Fused_Row&amp;lt;8, 16, 16, 960, 480&amp;gt;</second>
 										</first>
-										<second>364</second>
+										<second>258</second>
 									</item>
 								</second>
 							</item>
@@ -1591,33 +1528,26 @@
 					<Obj>
 						<type>0</type>
 						<id>59</id>
-						<name>br_ln262</name>
+						<name>br_ln258</name>
 						<fileName>../gen/Hls_Layers_UpConv.tpp</fileName>
 						<fileDirectory>/home/hoinguyen/Documents/Vitis/UpConv_HLS/upconv_block0</fileDirectory>
-						<lineNumber>262</lineNumber>
-						<contextFuncName>Apply_Norm_And_Write&amp;lt;32, 480, 30, 480&amp;gt;</contextFuncName>
-						<contextNormFuncName>Apply_Norm_And_Write_32_480_30_480_s</contextNormFuncName>
+						<lineNumber>258</lineNumber>
+						<contextFuncName>UpConv_Fused_Row&amp;lt;8, 16, 16, 960, 480&amp;gt;</contextFuncName>
+						<contextNormFuncName>UpConv_Fused_Row_8_16_16_960_480_s</contextNormFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
 								<first>/home/hoinguyen/Documents/Vitis/UpConv_HLS/upconv_block0</first>
 								<second>
-									<count>2</count>
+									<count>1</count>
 									<item_version>0</item_version>
-									<item>
-										<first>
-											<first>../gen/Hls_Layers_UpConv.tpp</first>
-											<second>Apply_Norm_And_Write&amp;lt;32, 480, 30, 480&amp;gt;</second>
-										</first>
-										<second>262</second>
-									</item>
 									<item>
 										<first>
 											<first>../gen/Hls_Layers_UpConv.tpp</first>
 											<second>UpConv_Fused_Row&amp;lt;8, 16, 16, 960, 480&amp;gt;</second>
 										</first>
-										<second>364</second>
+										<second>258</second>
 									</item>
 								</second>
 							</item>
@@ -1659,30 +1589,23 @@
 						<name>wn_load</name>
 						<fileName>../gen/Hls_Layers_UpConv.tpp</fileName>
 						<fileDirectory>/home/hoinguyen/Documents/Vitis/UpConv_HLS/upconv_block0</fileDirectory>
-						<lineNumber>270</lineNumber>
-						<contextFuncName>Apply_Norm_And_Write&amp;lt;32, 480, 30, 480&amp;gt;</contextFuncName>
-						<contextNormFuncName>Apply_Norm_And_Write_32_480_30_480_s</contextNormFuncName>
+						<lineNumber>266</lineNumber>
+						<contextFuncName>UpConv_Fused_Row&amp;lt;8, 16, 16, 960, 480&amp;gt;</contextFuncName>
+						<contextNormFuncName>UpConv_Fused_Row_8_16_16_960_480_s</contextNormFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
 								<first>/home/hoinguyen/Documents/Vitis/UpConv_HLS/upconv_block0</first>
 								<second>
-									<count>2</count>
+									<count>1</count>
 									<item_version>0</item_version>
-									<item>
-										<first>
-											<first>../gen/Hls_Layers_UpConv.tpp</first>
-											<second>Apply_Norm_And_Write&amp;lt;32, 480, 30, 480&amp;gt;</second>
-										</first>
-										<second>270</second>
-									</item>
 									<item>
 										<first>
 											<first>../gen/Hls_Layers_UpConv.tpp</first>
 											<second>UpConv_Fused_Row&amp;lt;8, 16, 16, 960, 480&amp;gt;</second>
 										</first>
-										<second>364</second>
+										<second>266</second>
 									</item>
 								</second>
 							</item>
@@ -1763,33 +1686,26 @@
 					<Obj>
 						<type>0</type>
 						<id>63</id>
-						<name>trunc_ln262</name>
+						<name>trunc_ln258</name>
 						<fileName>../gen/Hls_Layers_UpConv.tpp</fileName>
 						<fileDirectory>/home/hoinguyen/Documents/Vitis/UpConv_HLS/upconv_block0</fileDirectory>
-						<lineNumber>262</lineNumber>
-						<contextFuncName>Apply_Norm_And_Write&amp;lt;32, 480, 30, 480&amp;gt;</contextFuncName>
-						<contextNormFuncName>Apply_Norm_And_Write_32_480_30_480_s</contextNormFuncName>
+						<lineNumber>258</lineNumber>
+						<contextFuncName>UpConv_Fused_Row&amp;lt;8, 16, 16, 960, 480&amp;gt;</contextFuncName>
+						<contextNormFuncName>UpConv_Fused_Row_8_16_16_960_480_s</contextNormFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
 								<first>/home/hoinguyen/Documents/Vitis/UpConv_HLS/upconv_block0</first>
 								<second>
-									<count>2</count>
+									<count>1</count>
 									<item_version>0</item_version>
-									<item>
-										<first>
-											<first>../gen/Hls_Layers_UpConv.tpp</first>
-											<second>Apply_Norm_And_Write&amp;lt;32, 480, 30, 480&amp;gt;</second>
-										</first>
-										<second>262</second>
-									</item>
 									<item>
 										<first>
 											<first>../gen/Hls_Layers_UpConv.tpp</first>
 											<second>UpConv_Fused_Row&amp;lt;8, 16, 16, 960, 480&amp;gt;</second>
 										</first>
-										<second>364</second>
+										<second>258</second>
 									</item>
 								</second>
 							</item>
@@ -1826,33 +1742,26 @@
 					<Obj>
 						<type>0</type>
 						<id>67</id>
-						<name>zext_ln264</name>
+						<name>zext_ln260</name>
 						<fileName>../gen/Hls_Layers_UpConv.tpp</fileName>
 						<fileDirectory>/home/hoinguyen/Documents/Vitis/UpConv_HLS/upconv_block0</fileDirectory>
-						<lineNumber>264</lineNumber>
-						<contextFuncName>Apply_Norm_And_Write&amp;lt;32, 480, 30, 480&amp;gt;</contextFuncName>
-						<contextNormFuncName>Apply_Norm_And_Write_32_480_30_480_s</contextNormFuncName>
+						<lineNumber>260</lineNumber>
+						<contextFuncName>UpConv_Fused_Row&amp;lt;8, 16, 16, 960, 480&amp;gt;</contextFuncName>
+						<contextNormFuncName>UpConv_Fused_Row_8_16_16_960_480_s</contextNormFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
 								<first>/home/hoinguyen/Documents/Vitis/UpConv_HLS/upconv_block0</first>
 								<second>
-									<count>2</count>
+									<count>1</count>
 									<item_version>0</item_version>
-									<item>
-										<first>
-											<first>../gen/Hls_Layers_UpConv.tpp</first>
-											<second>Apply_Norm_And_Write&amp;lt;32, 480, 30, 480&amp;gt;</second>
-										</first>
-										<second>264</second>
-									</item>
 									<item>
 										<first>
 											<first>../gen/Hls_Layers_UpConv.tpp</first>
 											<second>UpConv_Fused_Row&amp;lt;8, 16, 16, 960, 480&amp;gt;</second>
 										</first>
-										<second>364</second>
+										<second>260</second>
 									</item>
 								</second>
 							</item>
@@ -1889,33 +1798,26 @@
 					<Obj>
 						<type>0</type>
 						<id>68</id>
-						<name>trunc_ln270</name>
+						<name>trunc_ln266</name>
 						<fileName>../gen/Hls_Layers_UpConv.tpp</fileName>
 						<fileDirectory>/home/hoinguyen/Documents/Vitis/UpConv_HLS/upconv_block0</fileDirectory>
-						<lineNumber>270</lineNumber>
-						<contextFuncName>Apply_Norm_And_Write&amp;lt;32, 480, 30, 480&amp;gt;</contextFuncName>
-						<contextNormFuncName>Apply_Norm_And_Write_32_480_30_480_s</contextNormFuncName>
+						<lineNumber>266</lineNumber>
+						<contextFuncName>UpConv_Fused_Row&amp;lt;8, 16, 16, 960, 480&amp;gt;</contextFuncName>
+						<contextNormFuncName>UpConv_Fused_Row_8_16_16_960_480_s</contextNormFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
 								<first>/home/hoinguyen/Documents/Vitis/UpConv_HLS/upconv_block0</first>
 								<second>
-									<count>2</count>
+									<count>1</count>
 									<item_version>0</item_version>
-									<item>
-										<first>
-											<first>../gen/Hls_Layers_UpConv.tpp</first>
-											<second>Apply_Norm_And_Write&amp;lt;32, 480, 30, 480&amp;gt;</second>
-										</first>
-										<second>270</second>
-									</item>
 									<item>
 										<first>
 											<first>../gen/Hls_Layers_UpConv.tpp</first>
 											<second>UpConv_Fused_Row&amp;lt;8, 16, 16, 960, 480&amp;gt;</second>
 										</first>
-										<second>364</second>
+										<second>266</second>
 									</item>
 								</second>
 							</item>
@@ -1955,30 +1857,23 @@
 						<name>p_shl</name>
 						<fileName>../gen/Hls_Layers_UpConv.tpp</fileName>
 						<fileDirectory>/home/hoinguyen/Documents/Vitis/UpConv_HLS/upconv_block0</fileDirectory>
-						<lineNumber>270</lineNumber>
-						<contextFuncName>Apply_Norm_And_Write&amp;lt;32, 480, 30, 480&amp;gt;</contextFuncName>
-						<contextNormFuncName>Apply_Norm_And_Write_32_480_30_480_s</contextNormFuncName>
+						<lineNumber>266</lineNumber>
+						<contextFuncName>UpConv_Fused_Row&amp;lt;8, 16, 16, 960, 480&amp;gt;</contextFuncName>
+						<contextNormFuncName>UpConv_Fused_Row_8_16_16_960_480_s</contextNormFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
 								<first>/home/hoinguyen/Documents/Vitis/UpConv_HLS/upconv_block0</first>
 								<second>
-									<count>2</count>
+									<count>1</count>
 									<item_version>0</item_version>
-									<item>
-										<first>
-											<first>../gen/Hls_Layers_UpConv.tpp</first>
-											<second>Apply_Norm_And_Write&amp;lt;32, 480, 30, 480&amp;gt;</second>
-										</first>
-										<second>270</second>
-									</item>
 									<item>
 										<first>
 											<first>../gen/Hls_Layers_UpConv.tpp</first>
 											<second>UpConv_Fused_Row&amp;lt;8, 16, 16, 960, 480&amp;gt;</second>
 										</first>
-										<second>364</second>
+										<second>266</second>
 									</item>
 								</second>
 							</item>
@@ -2017,33 +1912,26 @@
 					<Obj>
 						<type>0</type>
 						<id>70</id>
-						<name>trunc_ln270_1</name>
+						<name>trunc_ln266_1</name>
 						<fileName>../gen/Hls_Layers_UpConv.tpp</fileName>
 						<fileDirectory>/home/hoinguyen/Documents/Vitis/UpConv_HLS/upconv_block0</fileDirectory>
-						<lineNumber>270</lineNumber>
-						<contextFuncName>Apply_Norm_And_Write&amp;lt;32, 480, 30, 480&amp;gt;</contextFuncName>
-						<contextNormFuncName>Apply_Norm_And_Write_32_480_30_480_s</contextNormFuncName>
+						<lineNumber>266</lineNumber>
+						<contextFuncName>UpConv_Fused_Row&amp;lt;8, 16, 16, 960, 480&amp;gt;</contextFuncName>
+						<contextNormFuncName>UpConv_Fused_Row_8_16_16_960_480_s</contextNormFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
 								<first>/home/hoinguyen/Documents/Vitis/UpConv_HLS/upconv_block0</first>
 								<second>
-									<count>2</count>
+									<count>1</count>
 									<item_version>0</item_version>
-									<item>
-										<first>
-											<first>../gen/Hls_Layers_UpConv.tpp</first>
-											<second>Apply_Norm_And_Write&amp;lt;32, 480, 30, 480&amp;gt;</second>
-										</first>
-										<second>270</second>
-									</item>
 									<item>
 										<first>
 											<first>../gen/Hls_Layers_UpConv.tpp</first>
 											<second>UpConv_Fused_Row&amp;lt;8, 16, 16, 960, 480&amp;gt;</second>
 										</first>
-										<second>364</second>
+										<second>266</second>
 									</item>
 								</second>
 							</item>
@@ -2080,33 +1968,26 @@
 					<Obj>
 						<type>0</type>
 						<id>71</id>
-						<name>p_shl2</name>
+						<name>p_shl5</name>
 						<fileName>../gen/Hls_Layers_UpConv.tpp</fileName>
 						<fileDirectory>/home/hoinguyen/Documents/Vitis/UpConv_HLS/upconv_block0</fileDirectory>
-						<lineNumber>270</lineNumber>
-						<contextFuncName>Apply_Norm_And_Write&amp;lt;32, 480, 30, 480&amp;gt;</contextFuncName>
-						<contextNormFuncName>Apply_Norm_And_Write_32_480_30_480_s</contextNormFuncName>
+						<lineNumber>266</lineNumber>
+						<contextFuncName>UpConv_Fused_Row&amp;lt;8, 16, 16, 960, 480&amp;gt;</contextFuncName>
+						<contextNormFuncName>UpConv_Fused_Row_8_16_16_960_480_s</contextNormFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
 								<first>/home/hoinguyen/Documents/Vitis/UpConv_HLS/upconv_block0</first>
 								<second>
-									<count>2</count>
+									<count>1</count>
 									<item_version>0</item_version>
-									<item>
-										<first>
-											<first>../gen/Hls_Layers_UpConv.tpp</first>
-											<second>Apply_Norm_And_Write&amp;lt;32, 480, 30, 480&amp;gt;</second>
-										</first>
-										<second>270</second>
-									</item>
 									<item>
 										<first>
 											<first>../gen/Hls_Layers_UpConv.tpp</first>
 											<second>UpConv_Fused_Row&amp;lt;8, 16, 16, 960, 480&amp;gt;</second>
 										</first>
-										<second>364</second>
+										<second>266</second>
 									</item>
 								</second>
 							</item>
@@ -2145,33 +2026,26 @@
 					<Obj>
 						<type>0</type>
 						<id>72</id>
-						<name>sub_ln270</name>
+						<name>sub_ln266</name>
 						<fileName>../gen/Hls_Layers_UpConv.tpp</fileName>
 						<fileDirectory>/home/hoinguyen/Documents/Vitis/UpConv_HLS/upconv_block0</fileDirectory>
-						<lineNumber>270</lineNumber>
-						<contextFuncName>Apply_Norm_And_Write&amp;lt;32, 480, 30, 480&amp;gt;</contextFuncName>
-						<contextNormFuncName>Apply_Norm_And_Write_32_480_30_480_s</contextNormFuncName>
+						<lineNumber>266</lineNumber>
+						<contextFuncName>UpConv_Fused_Row&amp;lt;8, 16, 16, 960, 480&amp;gt;</contextFuncName>
+						<contextNormFuncName>UpConv_Fused_Row_8_16_16_960_480_s</contextNormFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
 								<first>/home/hoinguyen/Documents/Vitis/UpConv_HLS/upconv_block0</first>
 								<second>
-									<count>2</count>
+									<count>1</count>
 									<item_version>0</item_version>
-									<item>
-										<first>
-											<first>../gen/Hls_Layers_UpConv.tpp</first>
-											<second>Apply_Norm_And_Write&amp;lt;32, 480, 30, 480&amp;gt;</second>
-										</first>
-										<second>270</second>
-									</item>
 									<item>
 										<first>
 											<first>../gen/Hls_Layers_UpConv.tpp</first>
 											<second>UpConv_Fused_Row&amp;lt;8, 16, 16, 960, 480&amp;gt;</second>
 										</first>
-										<second>364</second>
+										<second>266</second>
 									</item>
 								</second>
 							</item>
@@ -2212,30 +2086,23 @@
 						<name>mean_buf_addr</name>
 						<fileName>../gen/Hls_Layers_UpConv.tpp</fileName>
 						<fileDirectory>/home/hoinguyen/Documents/Vitis/UpConv_HLS/upconv_block0</fileDirectory>
-						<lineNumber>264</lineNumber>
-						<contextFuncName>Apply_Norm_And_Write&amp;lt;32, 480, 30, 480&amp;gt;</contextFuncName>
-						<contextNormFuncName>Apply_Norm_And_Write_32_480_30_480_s</contextNormFuncName>
+						<lineNumber>260</lineNumber>
+						<contextFuncName>UpConv_Fused_Row&amp;lt;8, 16, 16, 960, 480&amp;gt;</contextFuncName>
+						<contextNormFuncName>UpConv_Fused_Row_8_16_16_960_480_s</contextNormFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
 								<first>/home/hoinguyen/Documents/Vitis/UpConv_HLS/upconv_block0</first>
 								<second>
-									<count>2</count>
+									<count>1</count>
 									<item_version>0</item_version>
-									<item>
-										<first>
-											<first>../gen/Hls_Layers_UpConv.tpp</first>
-											<second>Apply_Norm_And_Write&amp;lt;32, 480, 30, 480&amp;gt;</second>
-										</first>
-										<second>264</second>
-									</item>
 									<item>
 										<first>
 											<first>../gen/Hls_Layers_UpConv.tpp</first>
 											<second>UpConv_Fused_Row&amp;lt;8, 16, 16, 960, 480&amp;gt;</second>
 										</first>
-										<second>364</second>
+										<second>260</second>
 									</item>
 								</second>
 							</item>
@@ -2277,30 +2144,23 @@
 						<name>mean_buf_load</name>
 						<fileName>../gen/Hls_Layers_UpConv.tpp</fileName>
 						<fileDirectory>/home/hoinguyen/Documents/Vitis/UpConv_HLS/upconv_block0</fileDirectory>
-						<lineNumber>264</lineNumber>
-						<contextFuncName>Apply_Norm_And_Write&amp;lt;32, 480, 30, 480&amp;gt;</contextFuncName>
-						<contextNormFuncName>Apply_Norm_And_Write_32_480_30_480_s</contextNormFuncName>
+						<lineNumber>260</lineNumber>
+						<contextFuncName>UpConv_Fused_Row&amp;lt;8, 16, 16, 960, 480&amp;gt;</contextFuncName>
+						<contextNormFuncName>UpConv_Fused_Row_8_16_16_960_480_s</contextNormFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
 								<first>/home/hoinguyen/Documents/Vitis/UpConv_HLS/upconv_block0</first>
 								<second>
-									<count>2</count>
+									<count>1</count>
 									<item_version>0</item_version>
-									<item>
-										<first>
-											<first>../gen/Hls_Layers_UpConv.tpp</first>
-											<second>Apply_Norm_And_Write&amp;lt;32, 480, 30, 480&amp;gt;</second>
-										</first>
-										<second>264</second>
-									</item>
 									<item>
 										<first>
 											<first>../gen/Hls_Layers_UpConv.tpp</first>
 											<second>UpConv_Fused_Row&amp;lt;8, 16, 16, 960, 480&amp;gt;</second>
 										</first>
-										<second>364</second>
+										<second>260</second>
 									</item>
 								</second>
 							</item>
@@ -2340,30 +2200,23 @@
 						<name>mean_w</name>
 						<fileName>../gen/Hls_Layers_UpConv.tpp</fileName>
 						<fileDirectory>/home/hoinguyen/Documents/Vitis/UpConv_HLS/upconv_block0</fileDirectory>
-						<lineNumber>264</lineNumber>
-						<contextFuncName>Apply_Norm_And_Write&amp;lt;32, 480, 30, 480&amp;gt;</contextFuncName>
-						<contextNormFuncName>Apply_Norm_And_Write_32_480_30_480_s</contextNormFuncName>
+						<lineNumber>260</lineNumber>
+						<contextFuncName>UpConv_Fused_Row&amp;lt;8, 16, 16, 960, 480&amp;gt;</contextFuncName>
+						<contextNormFuncName>UpConv_Fused_Row_8_16_16_960_480_s</contextNormFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
 								<first>/home/hoinguyen/Documents/Vitis/UpConv_HLS/upconv_block0</first>
 								<second>
-									<count>2</count>
+									<count>1</count>
 									<item_version>0</item_version>
-									<item>
-										<first>
-											<first>../gen/Hls_Layers_UpConv.tpp</first>
-											<second>Apply_Norm_And_Write&amp;lt;32, 480, 30, 480&amp;gt;</second>
-										</first>
-										<second>264</second>
-									</item>
 									<item>
 										<first>
 											<first>../gen/Hls_Layers_UpConv.tpp</first>
 											<second>UpConv_Fused_Row&amp;lt;8, 16, 16, 960, 480&amp;gt;</second>
 										</first>
-										<second>364</second>
+										<second>260</second>
 									</item>
 								</second>
 							</item>
@@ -2403,30 +2256,23 @@
 						<name>inv_buf_addr</name>
 						<fileName>../gen/Hls_Layers_UpConv.tpp</fileName>
 						<fileDirectory>/home/hoinguyen/Documents/Vitis/UpConv_HLS/upconv_block0</fileDirectory>
-						<lineNumber>265</lineNumber>
-						<contextFuncName>Apply_Norm_And_Write&amp;lt;32, 480, 30, 480&amp;gt;</contextFuncName>
-						<contextNormFuncName>Apply_Norm_And_Write_32_480_30_480_s</contextNormFuncName>
+						<lineNumber>261</lineNumber>
+						<contextFuncName>UpConv_Fused_Row&amp;lt;8, 16, 16, 960, 480&amp;gt;</contextFuncName>
+						<contextNormFuncName>UpConv_Fused_Row_8_16_16_960_480_s</contextNormFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
 								<first>/home/hoinguyen/Documents/Vitis/UpConv_HLS/upconv_block0</first>
 								<second>
-									<count>2</count>
+									<count>1</count>
 									<item_version>0</item_version>
-									<item>
-										<first>
-											<first>../gen/Hls_Layers_UpConv.tpp</first>
-											<second>Apply_Norm_And_Write&amp;lt;32, 480, 30, 480&amp;gt;</second>
-										</first>
-										<second>265</second>
-									</item>
 									<item>
 										<first>
 											<first>../gen/Hls_Layers_UpConv.tpp</first>
 											<second>UpConv_Fused_Row&amp;lt;8, 16, 16, 960, 480&amp;gt;</second>
 										</first>
-										<second>364</second>
+										<second>261</second>
 									</item>
 								</second>
 							</item>
@@ -2468,30 +2314,23 @@
 						<name>inv_w</name>
 						<fileName>../gen/Hls_Layers_UpConv.tpp</fileName>
 						<fileDirectory>/home/hoinguyen/Documents/Vitis/UpConv_HLS/upconv_block0</fileDirectory>
-						<lineNumber>265</lineNumber>
-						<contextFuncName>Apply_Norm_And_Write&amp;lt;32, 480, 30, 480&amp;gt;</contextFuncName>
-						<contextNormFuncName>Apply_Norm_And_Write_32_480_30_480_s</contextNormFuncName>
+						<lineNumber>261</lineNumber>
+						<contextFuncName>UpConv_Fused_Row&amp;lt;8, 16, 16, 960, 480&amp;gt;</contextFuncName>
+						<contextNormFuncName>UpConv_Fused_Row_8_16_16_960_480_s</contextNormFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
 								<first>/home/hoinguyen/Documents/Vitis/UpConv_HLS/upconv_block0</first>
 								<second>
-									<count>2</count>
+									<count>1</count>
 									<item_version>0</item_version>
-									<item>
-										<first>
-											<first>../gen/Hls_Layers_UpConv.tpp</first>
-											<second>Apply_Norm_And_Write&amp;lt;32, 480, 30, 480&amp;gt;</second>
-										</first>
-										<second>265</second>
-									</item>
 									<item>
 										<first>
 											<first>../gen/Hls_Layers_UpConv.tpp</first>
 											<second>UpConv_Fused_Row&amp;lt;8, 16, 16, 960, 480&amp;gt;</second>
 										</first>
-										<second>364</second>
+										<second>261</second>
 									</item>
 								</second>
 							</item>
@@ -2613,33 +2452,26 @@
 					<Obj>
 						<type>0</type>
 						<id>80</id>
-						<name>add_ln270</name>
+						<name>add_ln266</name>
 						<fileName>../gen/Hls_Layers_UpConv.tpp</fileName>
 						<fileDirectory>/home/hoinguyen/Documents/Vitis/UpConv_HLS/upconv_block0</fileDirectory>
-						<lineNumber>270</lineNumber>
-						<contextFuncName>Apply_Norm_And_Write&amp;lt;32, 480, 30, 480&amp;gt;</contextFuncName>
-						<contextNormFuncName>Apply_Norm_And_Write_32_480_30_480_s</contextNormFuncName>
+						<lineNumber>266</lineNumber>
+						<contextFuncName>UpConv_Fused_Row&amp;lt;8, 16, 16, 960, 480&amp;gt;</contextFuncName>
+						<contextNormFuncName>UpConv_Fused_Row_8_16_16_960_480_s</contextNormFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
 								<first>/home/hoinguyen/Documents/Vitis/UpConv_HLS/upconv_block0</first>
 								<second>
-									<count>2</count>
+									<count>1</count>
 									<item_version>0</item_version>
-									<item>
-										<first>
-											<first>../gen/Hls_Layers_UpConv.tpp</first>
-											<second>Apply_Norm_And_Write&amp;lt;32, 480, 30, 480&amp;gt;</second>
-										</first>
-										<second>270</second>
-									</item>
 									<item>
 										<first>
 											<first>../gen/Hls_Layers_UpConv.tpp</first>
 											<second>UpConv_Fused_Row&amp;lt;8, 16, 16, 960, 480&amp;gt;</second>
 										</first>
-										<second>364</second>
+										<second>266</second>
 									</item>
 								</second>
 							</item>
@@ -2677,33 +2509,26 @@
 					<Obj>
 						<type>0</type>
 						<id>81</id>
-						<name>zext_ln270</name>
+						<name>zext_ln266</name>
 						<fileName>../gen/Hls_Layers_UpConv.tpp</fileName>
 						<fileDirectory>/home/hoinguyen/Documents/Vitis/UpConv_HLS/upconv_block0</fileDirectory>
-						<lineNumber>270</lineNumber>
-						<contextFuncName>Apply_Norm_And_Write&amp;lt;32, 480, 30, 480&amp;gt;</contextFuncName>
-						<contextNormFuncName>Apply_Norm_And_Write_32_480_30_480_s</contextNormFuncName>
+						<lineNumber>266</lineNumber>
+						<contextFuncName>UpConv_Fused_Row&amp;lt;8, 16, 16, 960, 480&amp;gt;</contextFuncName>
+						<contextNormFuncName>UpConv_Fused_Row_8_16_16_960_480_s</contextNormFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
 								<first>/home/hoinguyen/Documents/Vitis/UpConv_HLS/upconv_block0</first>
 								<second>
-									<count>2</count>
+									<count>1</count>
 									<item_version>0</item_version>
-									<item>
-										<first>
-											<first>../gen/Hls_Layers_UpConv.tpp</first>
-											<second>Apply_Norm_And_Write&amp;lt;32, 480, 30, 480&amp;gt;</second>
-										</first>
-										<second>270</second>
-									</item>
 									<item>
 										<first>
 											<first>../gen/Hls_Layers_UpConv.tpp</first>
 											<second>UpConv_Fused_Row&amp;lt;8, 16, 16, 960, 480&amp;gt;</second>
 										</first>
-										<second>364</second>
+										<second>266</second>
 									</item>
 								</second>
 							</item>
@@ -2740,33 +2565,26 @@
 					<Obj>
 						<type>0</type>
 						<id>82</id>
-						<name>p_ZZ16UpConv_Fused_RowILi8ELi16ELi16ELi960ELi480EEvP7ap_uintILi256EEPKS1_S4_S4_S4_24</name>
+						<name>p_ZZ16UpConv_Fused_RowILi8ELi16ELi16ELi960ELi480EEvP7ap_uintILi256EEPKS1_S4_S4_S4_36</name>
 						<fileName>../gen/Hls_Layers_UpConv.tpp</fileName>
 						<fileDirectory>/home/hoinguyen/Documents/Vitis/UpConv_HLS/upconv_block0</fileDirectory>
-						<lineNumber>270</lineNumber>
-						<contextFuncName>Apply_Norm_And_Write&amp;lt;32, 480, 30, 480&amp;gt;</contextFuncName>
-						<contextNormFuncName>Apply_Norm_And_Write_32_480_30_480_s</contextNormFuncName>
+						<lineNumber>266</lineNumber>
+						<contextFuncName>UpConv_Fused_Row&amp;lt;8, 16, 16, 960, 480&amp;gt;</contextFuncName>
+						<contextNormFuncName>UpConv_Fused_Row_8_16_16_960_480_s</contextNormFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
 								<first>/home/hoinguyen/Documents/Vitis/UpConv_HLS/upconv_block0</first>
 								<second>
-									<count>2</count>
+									<count>1</count>
 									<item_version>0</item_version>
-									<item>
-										<first>
-											<first>../gen/Hls_Layers_UpConv.tpp</first>
-											<second>Apply_Norm_And_Write&amp;lt;32, 480, 30, 480&amp;gt;</second>
-										</first>
-										<second>270</second>
-									</item>
 									<item>
 										<first>
 											<first>../gen/Hls_Layers_UpConv.tpp</first>
 											<second>UpConv_Fused_Row&amp;lt;8, 16, 16, 960, 480&amp;gt;</second>
 										</first>
-										<second>364</second>
+										<second>266</second>
 									</item>
 								</second>
 							</item>
@@ -2805,33 +2623,26 @@
 					<Obj>
 						<type>0</type>
 						<id>83</id>
-						<name>p_ZZ16UpConv_Fused_RowILi8ELi16ELi16ELi960ELi480EEvP7ap_uintILi256EEPKS1_S4_S4_S4_25</name>
+						<name>p_ZZ16UpConv_Fused_RowILi8ELi16ELi16ELi960ELi480EEvP7ap_uintILi256EEPKS1_S4_S4_S4_37</name>
 						<fileName>../gen/Hls_Layers_UpConv.tpp</fileName>
 						<fileDirectory>/home/hoinguyen/Documents/Vitis/UpConv_HLS/upconv_block0</fileDirectory>
-						<lineNumber>270</lineNumber>
-						<contextFuncName>Apply_Norm_And_Write&amp;lt;32, 480, 30, 480&amp;gt;</contextFuncName>
-						<contextNormFuncName>Apply_Norm_And_Write_32_480_30_480_s</contextNormFuncName>
+						<lineNumber>266</lineNumber>
+						<contextFuncName>UpConv_Fused_Row&amp;lt;8, 16, 16, 960, 480&amp;gt;</contextFuncName>
+						<contextNormFuncName>UpConv_Fused_Row_8_16_16_960_480_s</contextNormFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
 								<first>/home/hoinguyen/Documents/Vitis/UpConv_HLS/upconv_block0</first>
 								<second>
-									<count>2</count>
+									<count>1</count>
 									<item_version>0</item_version>
-									<item>
-										<first>
-											<first>../gen/Hls_Layers_UpConv.tpp</first>
-											<second>Apply_Norm_And_Write&amp;lt;32, 480, 30, 480&amp;gt;</second>
-										</first>
-										<second>270</second>
-									</item>
 									<item>
 										<first>
 											<first>../gen/Hls_Layers_UpConv.tpp</first>
 											<second>UpConv_Fused_Row&amp;lt;8, 16, 16, 960, 480&amp;gt;</second>
 										</first>
-										<second>364</second>
+										<second>266</second>
 									</item>
 								</second>
 							</item>
@@ -2870,33 +2681,26 @@
 					<Obj>
 						<type>0</type>
 						<id>84</id>
-						<name>p_ZZ16UpConv_Fused_RowILi8ELi16ELi16ELi960ELi480EEvP7ap_uintILi256EEPKS1_S4_S4_S4_26</name>
+						<name>p_ZZ16UpConv_Fused_RowILi8ELi16ELi16ELi960ELi480EEvP7ap_uintILi256EEPKS1_S4_S4_S4_38</name>
 						<fileName>../gen/Hls_Layers_UpConv.tpp</fileName>
 						<fileDirectory>/home/hoinguyen/Documents/Vitis/UpConv_HLS/upconv_block0</fileDirectory>
-						<lineNumber>270</lineNumber>
-						<contextFuncName>Apply_Norm_And_Write&amp;lt;32, 480, 30, 480&amp;gt;</contextFuncName>
-						<contextNormFuncName>Apply_Norm_And_Write_32_480_30_480_s</contextNormFuncName>
+						<lineNumber>266</lineNumber>
+						<contextFuncName>UpConv_Fused_Row&amp;lt;8, 16, 16, 960, 480&amp;gt;</contextFuncName>
+						<contextNormFuncName>UpConv_Fused_Row_8_16_16_960_480_s</contextNormFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
 								<first>/home/hoinguyen/Documents/Vitis/UpConv_HLS/upconv_block0</first>
 								<second>
-									<count>2</count>
+									<count>1</count>
 									<item_version>0</item_version>
-									<item>
-										<first>
-											<first>../gen/Hls_Layers_UpConv.tpp</first>
-											<second>Apply_Norm_And_Write&amp;lt;32, 480, 30, 480&amp;gt;</second>
-										</first>
-										<second>270</second>
-									</item>
 									<item>
 										<first>
 											<first>../gen/Hls_Layers_UpConv.tpp</first>
 											<second>UpConv_Fused_Row&amp;lt;8, 16, 16, 960, 480&amp;gt;</second>
 										</first>
-										<second>364</second>
+										<second>266</second>
 									</item>
 								</second>
 							</item>
@@ -2935,33 +2739,26 @@
 					<Obj>
 						<type>0</type>
 						<id>85</id>
-						<name>p_ZZ16UpConv_Fused_RowILi8ELi16ELi16ELi960ELi480EEvP7ap_uintILi256EEPKS1_S4_S4_S4_27</name>
+						<name>p_ZZ16UpConv_Fused_RowILi8ELi16ELi16ELi960ELi480EEvP7ap_uintILi256EEPKS1_S4_S4_S4_39</name>
 						<fileName>../gen/Hls_Layers_UpConv.tpp</fileName>
 						<fileDirectory>/home/hoinguyen/Documents/Vitis/UpConv_HLS/upconv_block0</fileDirectory>
-						<lineNumber>270</lineNumber>
-						<contextFuncName>Apply_Norm_And_Write&amp;lt;32, 480, 30, 480&amp;gt;</contextFuncName>
-						<contextNormFuncName>Apply_Norm_And_Write_32_480_30_480_s</contextNormFuncName>
+						<lineNumber>266</lineNumber>
+						<contextFuncName>UpConv_Fused_Row&amp;lt;8, 16, 16, 960, 480&amp;gt;</contextFuncName>
+						<contextNormFuncName>UpConv_Fused_Row_8_16_16_960_480_s</contextNormFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
 								<first>/home/hoinguyen/Documents/Vitis/UpConv_HLS/upconv_block0</first>
 								<second>
-									<count>2</count>
+									<count>1</count>
 									<item_version>0</item_version>
-									<item>
-										<first>
-											<first>../gen/Hls_Layers_UpConv.tpp</first>
-											<second>Apply_Norm_And_Write&amp;lt;32, 480, 30, 480&amp;gt;</second>
-										</first>
-										<second>270</second>
-									</item>
 									<item>
 										<first>
 											<first>../gen/Hls_Layers_UpConv.tpp</first>
 											<second>UpConv_Fused_Row&amp;lt;8, 16, 16, 960, 480&amp;gt;</second>
 										</first>
-										<second>364</second>
+										<second>266</second>
 									</item>
 								</second>
 							</item>
@@ -3000,33 +2797,26 @@
 					<Obj>
 						<type>0</type>
 						<id>86</id>
-						<name>p_ZZ16UpConv_Fused_RowILi8ELi16ELi16ELi960ELi480EEvP7ap_uintILi256EEPKS1_S4_S4_S4_28</name>
+						<name>p_ZZ16UpConv_Fused_RowILi8ELi16ELi16ELi960ELi480EEvP7ap_uintILi256EEPKS1_S4_S4_S4_40</name>
 						<fileName>../gen/Hls_Layers_UpConv.tpp</fileName>
 						<fileDirectory>/home/hoinguyen/Documents/Vitis/UpConv_HLS/upconv_block0</fileDirectory>
-						<lineNumber>270</lineNumber>
-						<contextFuncName>Apply_Norm_And_Write&amp;lt;32, 480, 30, 480&amp;gt;</contextFuncName>
-						<contextNormFuncName>Apply_Norm_And_Write_32_480_30_480_s</contextNormFuncName>
+						<lineNumber>266</lineNumber>
+						<contextFuncName>UpConv_Fused_Row&amp;lt;8, 16, 16, 960, 480&amp;gt;</contextFuncName>
+						<contextNormFuncName>UpConv_Fused_Row_8_16_16_960_480_s</contextNormFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
 								<first>/home/hoinguyen/Documents/Vitis/UpConv_HLS/upconv_block0</first>
 								<second>
-									<count>2</count>
+									<count>1</count>
 									<item_version>0</item_version>
-									<item>
-										<first>
-											<first>../gen/Hls_Layers_UpConv.tpp</first>
-											<second>Apply_Norm_And_Write&amp;lt;32, 480, 30, 480&amp;gt;</second>
-										</first>
-										<second>270</second>
-									</item>
 									<item>
 										<first>
 											<first>../gen/Hls_Layers_UpConv.tpp</first>
 											<second>UpConv_Fused_Row&amp;lt;8, 16, 16, 960, 480&amp;gt;</second>
 										</first>
-										<second>364</second>
+										<second>266</second>
 									</item>
 								</second>
 							</item>
@@ -3065,33 +2855,26 @@
 					<Obj>
 						<type>0</type>
 						<id>87</id>
-						<name>p_ZZ16UpConv_Fused_RowILi8ELi16ELi16ELi960ELi480EEvP7ap_uintILi256EEPKS1_S4_S4_S4_29</name>
+						<name>p_ZZ16UpConv_Fused_RowILi8ELi16ELi16ELi960ELi480EEvP7ap_uintILi256EEPKS1_S4_S4_S4_41</name>
 						<fileName>../gen/Hls_Layers_UpConv.tpp</fileName>
 						<fileDirectory>/home/hoinguyen/Documents/Vitis/UpConv_HLS/upconv_block0</fileDirectory>
-						<lineNumber>270</lineNumber>
-						<contextFuncName>Apply_Norm_And_Write&amp;lt;32, 480, 30, 480&amp;gt;</contextFuncName>
-						<contextNormFuncName>Apply_Norm_And_Write_32_480_30_480_s</contextNormFuncName>
+						<lineNumber>266</lineNumber>
+						<contextFuncName>UpConv_Fused_Row&amp;lt;8, 16, 16, 960, 480&amp;gt;</contextFuncName>
+						<contextNormFuncName>UpConv_Fused_Row_8_16_16_960_480_s</contextNormFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
 								<first>/home/hoinguyen/Documents/Vitis/UpConv_HLS/upconv_block0</first>
 								<second>
-									<count>2</count>
+									<count>1</count>
 									<item_version>0</item_version>
-									<item>
-										<first>
-											<first>../gen/Hls_Layers_UpConv.tpp</first>
-											<second>Apply_Norm_And_Write&amp;lt;32, 480, 30, 480&amp;gt;</second>
-										</first>
-										<second>270</second>
-									</item>
 									<item>
 										<first>
 											<first>../gen/Hls_Layers_UpConv.tpp</first>
 											<second>UpConv_Fused_Row&amp;lt;8, 16, 16, 960, 480&amp;gt;</second>
 										</first>
-										<second>364</second>
+										<second>266</second>
 									</item>
 								</second>
 							</item>
@@ -3130,33 +2913,26 @@
 					<Obj>
 						<type>0</type>
 						<id>88</id>
-						<name>void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_40</name>
+						<name>void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_60</name>
 						<fileName>../gen/Hls_Layers_UpConv.tpp</fileName>
 						<fileDirectory>/home/hoinguyen/Documents/Vitis/UpConv_HLS/upconv_block0</fileDirectory>
-						<lineNumber>270</lineNumber>
-						<contextFuncName>Apply_Norm_And_Write&amp;lt;32, 480, 30, 480&amp;gt;</contextFuncName>
-						<contextNormFuncName>Apply_Norm_And_Write_32_480_30_480_s</contextNormFuncName>
+						<lineNumber>266</lineNumber>
+						<contextFuncName>UpConv_Fused_Row&amp;lt;8, 16, 16, 960, 480&amp;gt;</contextFuncName>
+						<contextNormFuncName>UpConv_Fused_Row_8_16_16_960_480_s</contextNormFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
 								<first>/home/hoinguyen/Documents/Vitis/UpConv_HLS/upconv_block0</first>
 								<second>
-									<count>2</count>
+									<count>1</count>
 									<item_version>0</item_version>
-									<item>
-										<first>
-											<first>../gen/Hls_Layers_UpConv.tpp</first>
-											<second>Apply_Norm_And_Write&amp;lt;32, 480, 30, 480&amp;gt;</second>
-										</first>
-										<second>270</second>
-									</item>
 									<item>
 										<first>
 											<first>../gen/Hls_Layers_UpConv.tpp</first>
 											<second>UpConv_Fused_Row&amp;lt;8, 16, 16, 960, 480&amp;gt;</second>
 										</first>
-										<second>364</second>
+										<second>266</second>
 									</item>
 								</second>
 							</item>
@@ -3195,33 +2971,26 @@
 					<Obj>
 						<type>0</type>
 						<id>89</id>
-						<name>void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_41</name>
+						<name>void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_61</name>
 						<fileName>../gen/Hls_Layers_UpConv.tpp</fileName>
 						<fileDirectory>/home/hoinguyen/Documents/Vitis/UpConv_HLS/upconv_block0</fileDirectory>
-						<lineNumber>270</lineNumber>
-						<contextFuncName>Apply_Norm_And_Write&amp;lt;32, 480, 30, 480&amp;gt;</contextFuncName>
-						<contextNormFuncName>Apply_Norm_And_Write_32_480_30_480_s</contextNormFuncName>
+						<lineNumber>266</lineNumber>
+						<contextFuncName>UpConv_Fused_Row&amp;lt;8, 16, 16, 960, 480&amp;gt;</contextFuncName>
+						<contextNormFuncName>UpConv_Fused_Row_8_16_16_960_480_s</contextNormFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
 								<first>/home/hoinguyen/Documents/Vitis/UpConv_HLS/upconv_block0</first>
 								<second>
-									<count>2</count>
+									<count>1</count>
 									<item_version>0</item_version>
-									<item>
-										<first>
-											<first>../gen/Hls_Layers_UpConv.tpp</first>
-											<second>Apply_Norm_And_Write&amp;lt;32, 480, 30, 480&amp;gt;</second>
-										</first>
-										<second>270</second>
-									</item>
 									<item>
 										<first>
 											<first>../gen/Hls_Layers_UpConv.tpp</first>
 											<second>UpConv_Fused_Row&amp;lt;8, 16, 16, 960, 480&amp;gt;</second>
 										</first>
-										<second>364</second>
+										<second>266</second>
 									</item>
 								</second>
 							</item>
@@ -3260,33 +3029,26 @@
 					<Obj>
 						<type>0</type>
 						<id>90</id>
-						<name>void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_42</name>
+						<name>void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_62</name>
 						<fileName>../gen/Hls_Layers_UpConv.tpp</fileName>
 						<fileDirectory>/home/hoinguyen/Documents/Vitis/UpConv_HLS/upconv_block0</fileDirectory>
-						<lineNumber>270</lineNumber>
-						<contextFuncName>Apply_Norm_And_Write&amp;lt;32, 480, 30, 480&amp;gt;</contextFuncName>
-						<contextNormFuncName>Apply_Norm_And_Write_32_480_30_480_s</contextNormFuncName>
+						<lineNumber>266</lineNumber>
+						<contextFuncName>UpConv_Fused_Row&amp;lt;8, 16, 16, 960, 480&amp;gt;</contextFuncName>
+						<contextNormFuncName>UpConv_Fused_Row_8_16_16_960_480_s</contextNormFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
 								<first>/home/hoinguyen/Documents/Vitis/UpConv_HLS/upconv_block0</first>
 								<second>
-									<count>2</count>
+									<count>1</count>
 									<item_version>0</item_version>
-									<item>
-										<first>
-											<first>../gen/Hls_Layers_UpConv.tpp</first>
-											<second>Apply_Norm_And_Write&amp;lt;32, 480, 30, 480&amp;gt;</second>
-										</first>
-										<second>270</second>
-									</item>
 									<item>
 										<first>
 											<first>../gen/Hls_Layers_UpConv.tpp</first>
 											<second>UpConv_Fused_Row&amp;lt;8, 16, 16, 960, 480&amp;gt;</second>
 										</first>
-										<second>364</second>
+										<second>266</second>
 									</item>
 								</second>
 							</item>
@@ -3325,33 +3087,26 @@
 					<Obj>
 						<type>0</type>
 						<id>91</id>
-						<name>void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_43</name>
+						<name>void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_63</name>
 						<fileName>../gen/Hls_Layers_UpConv.tpp</fileName>
 						<fileDirectory>/home/hoinguyen/Documents/Vitis/UpConv_HLS/upconv_block0</fileDirectory>
-						<lineNumber>270</lineNumber>
-						<contextFuncName>Apply_Norm_And_Write&amp;lt;32, 480, 30, 480&amp;gt;</contextFuncName>
-						<contextNormFuncName>Apply_Norm_And_Write_32_480_30_480_s</contextNormFuncName>
+						<lineNumber>266</lineNumber>
+						<contextFuncName>UpConv_Fused_Row&amp;lt;8, 16, 16, 960, 480&amp;gt;</contextFuncName>
+						<contextNormFuncName>UpConv_Fused_Row_8_16_16_960_480_s</contextNormFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
 								<first>/home/hoinguyen/Documents/Vitis/UpConv_HLS/upconv_block0</first>
 								<second>
-									<count>2</count>
+									<count>1</count>
 									<item_version>0</item_version>
-									<item>
-										<first>
-											<first>../gen/Hls_Layers_UpConv.tpp</first>
-											<second>Apply_Norm_And_Write&amp;lt;32, 480, 30, 480&amp;gt;</second>
-										</first>
-										<second>270</second>
-									</item>
 									<item>
 										<first>
 											<first>../gen/Hls_Layers_UpConv.tpp</first>
 											<second>UpConv_Fused_Row&amp;lt;8, 16, 16, 960, 480&amp;gt;</second>
 										</first>
-										<second>364</second>
+										<second>266</second>
 									</item>
 								</second>
 							</item>
@@ -3390,33 +3145,26 @@
 					<Obj>
 						<type>0</type>
 						<id>92</id>
-						<name>void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_44</name>
+						<name>void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_64</name>
 						<fileName>../gen/Hls_Layers_UpConv.tpp</fileName>
 						<fileDirectory>/home/hoinguyen/Documents/Vitis/UpConv_HLS/upconv_block0</fileDirectory>
-						<lineNumber>270</lineNumber>
-						<contextFuncName>Apply_Norm_And_Write&amp;lt;32, 480, 30, 480&amp;gt;</contextFuncName>
-						<contextNormFuncName>Apply_Norm_And_Write_32_480_30_480_s</contextNormFuncName>
+						<lineNumber>266</lineNumber>
+						<contextFuncName>UpConv_Fused_Row&amp;lt;8, 16, 16, 960, 480&amp;gt;</contextFuncName>
+						<contextNormFuncName>UpConv_Fused_Row_8_16_16_960_480_s</contextNormFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
 								<first>/home/hoinguyen/Documents/Vitis/UpConv_HLS/upconv_block0</first>
 								<second>
-									<count>2</count>
+									<count>1</count>
 									<item_version>0</item_version>
-									<item>
-										<first>
-											<first>../gen/Hls_Layers_UpConv.tpp</first>
-											<second>Apply_Norm_And_Write&amp;lt;32, 480, 30, 480&amp;gt;</second>
-										</first>
-										<second>270</second>
-									</item>
 									<item>
 										<first>
 											<first>../gen/Hls_Layers_UpConv.tpp</first>
 											<second>UpConv_Fused_Row&amp;lt;8, 16, 16, 960, 480&amp;gt;</second>
 										</first>
-										<second>364</second>
+										<second>266</second>
 									</item>
 								</second>
 							</item>
@@ -3455,33 +3203,26 @@
 					<Obj>
 						<type>0</type>
 						<id>93</id>
-						<name>void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_45</name>
+						<name>void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_65</name>
 						<fileName>../gen/Hls_Layers_UpConv.tpp</fileName>
 						<fileDirectory>/home/hoinguyen/Documents/Vitis/UpConv_HLS/upconv_block0</fileDirectory>
-						<lineNumber>270</lineNumber>
-						<contextFuncName>Apply_Norm_And_Write&amp;lt;32, 480, 30, 480&amp;gt;</contextFuncName>
-						<contextNormFuncName>Apply_Norm_And_Write_32_480_30_480_s</contextNormFuncName>
+						<lineNumber>266</lineNumber>
+						<contextFuncName>UpConv_Fused_Row&amp;lt;8, 16, 16, 960, 480&amp;gt;</contextFuncName>
+						<contextNormFuncName>UpConv_Fused_Row_8_16_16_960_480_s</contextNormFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
 								<first>/home/hoinguyen/Documents/Vitis/UpConv_HLS/upconv_block0</first>
 								<second>
-									<count>2</count>
+									<count>1</count>
 									<item_version>0</item_version>
-									<item>
-										<first>
-											<first>../gen/Hls_Layers_UpConv.tpp</first>
-											<second>Apply_Norm_And_Write&amp;lt;32, 480, 30, 480&amp;gt;</second>
-										</first>
-										<second>270</second>
-									</item>
 									<item>
 										<first>
 											<first>../gen/Hls_Layers_UpConv.tpp</first>
 											<second>UpConv_Fused_Row&amp;lt;8, 16, 16, 960, 480&amp;gt;</second>
 										</first>
-										<second>364</second>
+										<second>266</second>
 									</item>
 								</second>
 							</item>
@@ -3520,33 +3261,26 @@
 					<Obj>
 						<type>0</type>
 						<id>94</id>
-						<name>void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_46</name>
+						<name>void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_66</name>
 						<fileName>../gen/Hls_Layers_UpConv.tpp</fileName>
 						<fileDirectory>/home/hoinguyen/Documents/Vitis/UpConv_HLS/upconv_block0</fileDirectory>
-						<lineNumber>270</lineNumber>
-						<contextFuncName>Apply_Norm_And_Write&amp;lt;32, 480, 30, 480&amp;gt;</contextFuncName>
-						<contextNormFuncName>Apply_Norm_And_Write_32_480_30_480_s</contextNormFuncName>
+						<lineNumber>266</lineNumber>
+						<contextFuncName>UpConv_Fused_Row&amp;lt;8, 16, 16, 960, 480&amp;gt;</contextFuncName>
+						<contextNormFuncName>UpConv_Fused_Row_8_16_16_960_480_s</contextNormFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
 								<first>/home/hoinguyen/Documents/Vitis/UpConv_HLS/upconv_block0</first>
 								<second>
-									<count>2</count>
+									<count>1</count>
 									<item_version>0</item_version>
-									<item>
-										<first>
-											<first>../gen/Hls_Layers_UpConv.tpp</first>
-											<second>Apply_Norm_And_Write&amp;lt;32, 480, 30, 480&amp;gt;</second>
-										</first>
-										<second>270</second>
-									</item>
 									<item>
 										<first>
 											<first>../gen/Hls_Layers_UpConv.tpp</first>
 											<second>UpConv_Fused_Row&amp;lt;8, 16, 16, 960, 480&amp;gt;</second>
 										</first>
-										<second>364</second>
+										<second>266</second>
 									</item>
 								</second>
 							</item>
@@ -3585,33 +3319,26 @@
 					<Obj>
 						<type>0</type>
 						<id>95</id>
-						<name>void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_47</name>
+						<name>void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_67</name>
 						<fileName>../gen/Hls_Layers_UpConv.tpp</fileName>
 						<fileDirectory>/home/hoinguyen/Documents/Vitis/UpConv_HLS/upconv_block0</fileDirectory>
-						<lineNumber>270</lineNumber>
-						<contextFuncName>Apply_Norm_And_Write&amp;lt;32, 480, 30, 480&amp;gt;</contextFuncName>
-						<contextNormFuncName>Apply_Norm_And_Write_32_480_30_480_s</contextNormFuncName>
+						<lineNumber>266</lineNumber>
+						<contextFuncName>UpConv_Fused_Row&amp;lt;8, 16, 16, 960, 480&amp;gt;</contextFuncName>
+						<contextNormFuncName>UpConv_Fused_Row_8_16_16_960_480_s</contextNormFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
 								<first>/home/hoinguyen/Documents/Vitis/UpConv_HLS/upconv_block0</first>
 								<second>
-									<count>2</count>
+									<count>1</count>
 									<item_version>0</item_version>
-									<item>
-										<first>
-											<first>../gen/Hls_Layers_UpConv.tpp</first>
-											<second>Apply_Norm_And_Write&amp;lt;32, 480, 30, 480&amp;gt;</second>
-										</first>
-										<second>270</second>
-									</item>
 									<item>
 										<first>
 											<first>../gen/Hls_Layers_UpConv.tpp</first>
 											<second>UpConv_Fused_Row&amp;lt;8, 16, 16, 960, 480&amp;gt;</second>
 										</first>
-										<second>364</second>
+										<second>266</second>
 									</item>
 								</second>
 							</item>
@@ -3650,33 +3377,26 @@
 					<Obj>
 						<type>0</type>
 						<id>96</id>
-						<name>void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_48</name>
+						<name>void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_68</name>
 						<fileName>../gen/Hls_Layers_UpConv.tpp</fileName>
 						<fileDirectory>/home/hoinguyen/Documents/Vitis/UpConv_HLS/upconv_block0</fileDirectory>
-						<lineNumber>270</lineNumber>
-						<contextFuncName>Apply_Norm_And_Write&amp;lt;32, 480, 30, 480&amp;gt;</contextFuncName>
-						<contextNormFuncName>Apply_Norm_And_Write_32_480_30_480_s</contextNormFuncName>
+						<lineNumber>266</lineNumber>
+						<contextFuncName>UpConv_Fused_Row&amp;lt;8, 16, 16, 960, 480&amp;gt;</contextFuncName>
+						<contextNormFuncName>UpConv_Fused_Row_8_16_16_960_480_s</contextNormFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
 								<first>/home/hoinguyen/Documents/Vitis/UpConv_HLS/upconv_block0</first>
 								<second>
-									<count>2</count>
+									<count>1</count>
 									<item_version>0</item_version>
-									<item>
-										<first>
-											<first>../gen/Hls_Layers_UpConv.tpp</first>
-											<second>Apply_Norm_And_Write&amp;lt;32, 480, 30, 480&amp;gt;</second>
-										</first>
-										<second>270</second>
-									</item>
 									<item>
 										<first>
 											<first>../gen/Hls_Layers_UpConv.tpp</first>
 											<second>UpConv_Fused_Row&amp;lt;8, 16, 16, 960, 480&amp;gt;</second>
 										</first>
-										<second>364</second>
+										<second>266</second>
 									</item>
 								</second>
 							</item>
@@ -3715,33 +3435,26 @@
 					<Obj>
 						<type>0</type>
 						<id>97</id>
-						<name>void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_49</name>
+						<name>void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_69</name>
 						<fileName>../gen/Hls_Layers_UpConv.tpp</fileName>
 						<fileDirectory>/home/hoinguyen/Documents/Vitis/UpConv_HLS/upconv_block0</fileDirectory>
-						<lineNumber>270</lineNumber>
-						<contextFuncName>Apply_Norm_And_Write&amp;lt;32, 480, 30, 480&amp;gt;</contextFuncName>
-						<contextNormFuncName>Apply_Norm_And_Write_32_480_30_480_s</contextNormFuncName>
+						<lineNumber>266</lineNumber>
+						<contextFuncName>UpConv_Fused_Row&amp;lt;8, 16, 16, 960, 480&amp;gt;</contextFuncName>
+						<contextNormFuncName>UpConv_Fused_Row_8_16_16_960_480_s</contextNormFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
 								<first>/home/hoinguyen/Documents/Vitis/UpConv_HLS/upconv_block0</first>
 								<second>
-									<count>2</count>
+									<count>1</count>
 									<item_version>0</item_version>
-									<item>
-										<first>
-											<first>../gen/Hls_Layers_UpConv.tpp</first>
-											<second>Apply_Norm_And_Write&amp;lt;32, 480, 30, 480&amp;gt;</second>
-										</first>
-										<second>270</second>
-									</item>
 									<item>
 										<first>
 											<first>../gen/Hls_Layers_UpConv.tpp</first>
 											<second>UpConv_Fused_Row&amp;lt;8, 16, 16, 960, 480&amp;gt;</second>
 										</first>
-										<second>364</second>
+										<second>266</second>
 									</item>
 								</second>
 							</item>
@@ -3780,7 +3493,7 @@
 					<Obj>
 						<type>0</type>
 						<id>98</id>
-						<name>idxprom12_i</name>
+						<name>idxprom135</name>
 						<fileName></fileName>
 						<fileDirectory></fileDirectory>
 						<lineNumber>0</lineNumber>
@@ -3994,33 +3707,26 @@
 					<Obj>
 						<type>0</type>
 						<id>103</id>
-						<name>icmp_ln270</name>
+						<name>icmp_ln266</name>
 						<fileName>../gen/Hls_Layers_UpConv.tpp</fileName>
 						<fileDirectory>/home/hoinguyen/Documents/Vitis/UpConv_HLS/upconv_block0</fileDirectory>
-						<lineNumber>270</lineNumber>
-						<contextFuncName>Apply_Norm_And_Write&amp;lt;32, 480, 30, 480&amp;gt;</contextFuncName>
-						<contextNormFuncName>Apply_Norm_And_Write_32_480_30_480_s</contextNormFuncName>
+						<lineNumber>266</lineNumber>
+						<contextFuncName>UpConv_Fused_Row&amp;lt;8, 16, 16, 960, 480&amp;gt;</contextFuncName>
+						<contextNormFuncName>UpConv_Fused_Row_8_16_16_960_480_s</contextNormFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
 								<first>/home/hoinguyen/Documents/Vitis/UpConv_HLS/upconv_block0</first>
 								<second>
-									<count>2</count>
+									<count>1</count>
 									<item_version>0</item_version>
-									<item>
-										<first>
-											<first>../gen/Hls_Layers_UpConv.tpp</first>
-											<second>Apply_Norm_And_Write&amp;lt;32, 480, 30, 480&amp;gt;</second>
-										</first>
-										<second>270</second>
-									</item>
 									<item>
 										<first>
 											<first>../gen/Hls_Layers_UpConv.tpp</first>
 											<second>UpConv_Fused_Row&amp;lt;8, 16, 16, 960, 480&amp;gt;</second>
 										</first>
-										<second>364</second>
+										<second>266</second>
 									</item>
 								</second>
 							</item>
@@ -4061,30 +3767,23 @@
 						<name>u</name>
 						<fileName>../gen/Hls_Layers_UpConv.tpp</fileName>
 						<fileDirectory>/home/hoinguyen/Documents/Vitis/UpConv_HLS/upconv_block0</fileDirectory>
-						<lineNumber>271</lineNumber>
-						<contextFuncName>Apply_Norm_And_Write&amp;lt;32, 480, 30, 480&amp;gt;</contextFuncName>
-						<contextNormFuncName>Apply_Norm_And_Write_32_480_30_480_s</contextNormFuncName>
+						<lineNumber>267</lineNumber>
+						<contextFuncName>UpConv_Fused_Row&amp;lt;8, 16, 16, 960, 480&amp;gt;</contextFuncName>
+						<contextNormFuncName>UpConv_Fused_Row_8_16_16_960_480_s</contextNormFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
 								<first>/home/hoinguyen/Documents/Vitis/UpConv_HLS/upconv_block0</first>
 								<second>
-									<count>2</count>
+									<count>1</count>
 									<item_version>0</item_version>
-									<item>
-										<first>
-											<first>../gen/Hls_Layers_UpConv.tpp</first>
-											<second>Apply_Norm_And_Write&amp;lt;32, 480, 30, 480&amp;gt;</second>
-										</first>
-										<second>271</second>
-									</item>
 									<item>
 										<first>
 											<first>../gen/Hls_Layers_UpConv.tpp</first>
 											<second>UpConv_Fused_Row&amp;lt;8, 16, 16, 960, 480&amp;gt;</second>
 										</first>
-										<second>364</second>
+										<second>267</second>
 									</item>
 								</second>
 							</item>
@@ -4133,21 +3832,14 @@
 							<item>
 								<first>/home/hoinguyen/Documents/Vitis/UpConv_HLS/upconv_block0</first>
 								<second>
-									<count>3</count>
+									<count>2</count>
 									<item_version>0</item_version>
-									<item>
-										<first>
-											<first>../gen/Hls_Layers_UpConv.tpp</first>
-											<second>Apply_Norm_And_Write&amp;lt;32, 480, 30, 480&amp;gt;</second>
-										</first>
-										<second>271</second>
-									</item>
 									<item>
 										<first>
 											<first>../gen/Hls_Layers_UpConv.tpp</first>
 											<second>UpConv_Fused_Row&amp;lt;8, 16, 16, 960, 480&amp;gt;</second>
 										</first>
-										<second>364</second>
+										<second>267</second>
 									</item>
 									<item>
 										<first>
@@ -4191,33 +3883,26 @@
 					<Obj>
 						<type>0</type>
 						<id>106</id>
-						<name>u_1</name>
+						<name>u_144</name>
 						<fileName>../gen/Hls_Layers_UpConv.tpp</fileName>
 						<fileDirectory>/home/hoinguyen/Documents/Vitis/UpConv_HLS/upconv_block0</fileDirectory>
-						<lineNumber>272</lineNumber>
-						<contextFuncName>Apply_Norm_And_Write&amp;lt;32, 480, 30, 480&amp;gt;</contextFuncName>
-						<contextNormFuncName>Apply_Norm_And_Write_32_480_30_480_s</contextNormFuncName>
+						<lineNumber>268</lineNumber>
+						<contextFuncName>UpConv_Fused_Row&amp;lt;8, 16, 16, 960, 480&amp;gt;</contextFuncName>
+						<contextNormFuncName>UpConv_Fused_Row_8_16_16_960_480_s</contextNormFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
 								<first>/home/hoinguyen/Documents/Vitis/UpConv_HLS/upconv_block0</first>
 								<second>
-									<count>2</count>
+									<count>1</count>
 									<item_version>0</item_version>
-									<item>
-										<first>
-											<first>../gen/Hls_Layers_UpConv.tpp</first>
-											<second>Apply_Norm_And_Write&amp;lt;32, 480, 30, 480&amp;gt;</second>
-										</first>
-										<second>272</second>
-									</item>
 									<item>
 										<first>
 											<first>../gen/Hls_Layers_UpConv.tpp</first>
 											<second>UpConv_Fused_Row&amp;lt;8, 16, 16, 960, 480&amp;gt;</second>
 										</first>
-										<second>364</second>
+										<second>268</second>
 									</item>
 								</second>
 							</item>
@@ -4266,21 +3951,14 @@
 							<item>
 								<first>/home/hoinguyen/Documents/Vitis/UpConv_HLS/upconv_block0</first>
 								<second>
-									<count>3</count>
+									<count>2</count>
 									<item_version>0</item_version>
-									<item>
-										<first>
-											<first>../gen/Hls_Layers_UpConv.tpp</first>
-											<second>Apply_Norm_And_Write&amp;lt;32, 480, 30, 480&amp;gt;</second>
-										</first>
-										<second>272</second>
-									</item>
 									<item>
 										<first>
 											<first>../gen/Hls_Layers_UpConv.tpp</first>
 											<second>UpConv_Fused_Row&amp;lt;8, 16, 16, 960, 480&amp;gt;</second>
 										</first>
-										<second>364</second>
+										<second>268</second>
 									</item>
 									<item>
 										<first>
@@ -4324,33 +4002,26 @@
 					<Obj>
 						<type>0</type>
 						<id>108</id>
-						<name>void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_50</name>
+						<name>void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_70</name>
 						<fileName>../gen/Hls_Layers_UpConv.tpp</fileName>
 						<fileDirectory>/home/hoinguyen/Documents/Vitis/UpConv_HLS/upconv_block0</fileDirectory>
-						<lineNumber>270</lineNumber>
-						<contextFuncName>Apply_Norm_And_Write&amp;lt;32, 480, 30, 480&amp;gt;</contextFuncName>
-						<contextNormFuncName>Apply_Norm_And_Write_32_480_30_480_s</contextNormFuncName>
+						<lineNumber>266</lineNumber>
+						<contextFuncName>UpConv_Fused_Row&amp;lt;8, 16, 16, 960, 480&amp;gt;</contextFuncName>
+						<contextNormFuncName>UpConv_Fused_Row_8_16_16_960_480_s</contextNormFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
 								<first>/home/hoinguyen/Documents/Vitis/UpConv_HLS/upconv_block0</first>
 								<second>
-									<count>2</count>
+									<count>1</count>
 									<item_version>0</item_version>
-									<item>
-										<first>
-											<first>../gen/Hls_Layers_UpConv.tpp</first>
-											<second>Apply_Norm_And_Write&amp;lt;32, 480, 30, 480&amp;gt;</second>
-										</first>
-										<second>270</second>
-									</item>
 									<item>
 										<first>
 											<first>../gen/Hls_Layers_UpConv.tpp</first>
 											<second>UpConv_Fused_Row&amp;lt;8, 16, 16, 960, 480&amp;gt;</second>
 										</first>
-										<second>364</second>
+										<second>266</second>
 									</item>
 								</second>
 							</item>
@@ -4387,33 +4058,26 @@
 					<Obj>
 						<type>0</type>
 						<id>109</id>
-						<name>sub_i</name>
+						<name>sub1</name>
 						<fileName>../gen/Hls_Layers_UpConv.tpp</fileName>
 						<fileDirectory>/home/hoinguyen/Documents/Vitis/UpConv_HLS/upconv_block0</fileDirectory>
-						<lineNumber>273</lineNumber>
-						<contextFuncName>Apply_Norm_And_Write&amp;lt;32, 480, 30, 480&amp;gt;</contextFuncName>
-						<contextNormFuncName>Apply_Norm_And_Write_32_480_30_480_s</contextNormFuncName>
+						<lineNumber>269</lineNumber>
+						<contextFuncName>UpConv_Fused_Row&amp;lt;8, 16, 16, 960, 480&amp;gt;</contextFuncName>
+						<contextNormFuncName>UpConv_Fused_Row_8_16_16_960_480_s</contextNormFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
 								<first>/home/hoinguyen/Documents/Vitis/UpConv_HLS/upconv_block0</first>
 								<second>
-									<count>2</count>
+									<count>1</count>
 									<item_version>0</item_version>
-									<item>
-										<first>
-											<first>../gen/Hls_Layers_UpConv.tpp</first>
-											<second>Apply_Norm_And_Write&amp;lt;32, 480, 30, 480&amp;gt;</second>
-										</first>
-										<second>273</second>
-									</item>
 									<item>
 										<first>
 											<first>../gen/Hls_Layers_UpConv.tpp</first>
 											<second>UpConv_Fused_Row&amp;lt;8, 16, 16, 960, 480&amp;gt;</second>
 										</first>
-										<second>364</second>
+										<second>269</second>
 									</item>
 								</second>
 							</item>
@@ -4451,33 +4115,26 @@
 					<Obj>
 						<type>0</type>
 						<id>110</id>
-						<name>mul27_i</name>
+						<name>mul1</name>
 						<fileName>../gen/Hls_Layers_UpConv.tpp</fileName>
 						<fileDirectory>/home/hoinguyen/Documents/Vitis/UpConv_HLS/upconv_block0</fileDirectory>
-						<lineNumber>273</lineNumber>
-						<contextFuncName>Apply_Norm_And_Write&amp;lt;32, 480, 30, 480&amp;gt;</contextFuncName>
-						<contextNormFuncName>Apply_Norm_And_Write_32_480_30_480_s</contextNormFuncName>
+						<lineNumber>269</lineNumber>
+						<contextFuncName>UpConv_Fused_Row&amp;lt;8, 16, 16, 960, 480&amp;gt;</contextFuncName>
+						<contextNormFuncName>UpConv_Fused_Row_8_16_16_960_480_s</contextNormFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
 								<first>/home/hoinguyen/Documents/Vitis/UpConv_HLS/upconv_block0</first>
 								<second>
-									<count>2</count>
+									<count>1</count>
 									<item_version>0</item_version>
-									<item>
-										<first>
-											<first>../gen/Hls_Layers_UpConv.tpp</first>
-											<second>Apply_Norm_And_Write&amp;lt;32, 480, 30, 480&amp;gt;</second>
-										</first>
-										<second>273</second>
-									</item>
 									<item>
 										<first>
 											<first>../gen/Hls_Layers_UpConv.tpp</first>
 											<second>UpConv_Fused_Row&amp;lt;8, 16, 16, 960, 480&amp;gt;</second>
 										</first>
-										<second>364</second>
+										<second>269</second>
 									</item>
 								</second>
 							</item>
@@ -4515,33 +4172,26 @@
 					<Obj>
 						<type>0</type>
 						<id>111</id>
-						<name>mul28_i</name>
+						<name>mul2</name>
 						<fileName>../gen/Hls_Layers_UpConv.tpp</fileName>
 						<fileDirectory>/home/hoinguyen/Documents/Vitis/UpConv_HLS/upconv_block0</fileDirectory>
-						<lineNumber>273</lineNumber>
-						<contextFuncName>Apply_Norm_And_Write&amp;lt;32, 480, 30, 480&amp;gt;</contextFuncName>
-						<contextNormFuncName>Apply_Norm_And_Write_32_480_30_480_s</contextNormFuncName>
+						<lineNumber>269</lineNumber>
+						<contextFuncName>UpConv_Fused_Row&amp;lt;8, 16, 16, 960, 480&amp;gt;</contextFuncName>
+						<contextNormFuncName>UpConv_Fused_Row_8_16_16_960_480_s</contextNormFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
 								<first>/home/hoinguyen/Documents/Vitis/UpConv_HLS/upconv_block0</first>
 								<second>
-									<count>2</count>
+									<count>1</count>
 									<item_version>0</item_version>
-									<item>
-										<first>
-											<first>../gen/Hls_Layers_UpConv.tpp</first>
-											<second>Apply_Norm_And_Write&amp;lt;32, 480, 30, 480&amp;gt;</second>
-										</first>
-										<second>273</second>
-									</item>
 									<item>
 										<first>
 											<first>../gen/Hls_Layers_UpConv.tpp</first>
 											<second>UpConv_Fused_Row&amp;lt;8, 16, 16, 960, 480&amp;gt;</second>
 										</first>
-										<second>364</second>
+										<second>269</second>
 									</item>
 								</second>
 							</item>
@@ -4579,33 +4229,26 @@
 					<Obj>
 						<type>0</type>
 						<id>112</id>
-						<name>add29_i</name>
+						<name>add</name>
 						<fileName>../gen/Hls_Layers_UpConv.tpp</fileName>
 						<fileDirectory>/home/hoinguyen/Documents/Vitis/UpConv_HLS/upconv_block0</fileDirectory>
-						<lineNumber>273</lineNumber>
-						<contextFuncName>Apply_Norm_And_Write&amp;lt;32, 480, 30, 480&amp;gt;</contextFuncName>
-						<contextNormFuncName>Apply_Norm_And_Write_32_480_30_480_s</contextNormFuncName>
+						<lineNumber>269</lineNumber>
+						<contextFuncName>UpConv_Fused_Row&amp;lt;8, 16, 16, 960, 480&amp;gt;</contextFuncName>
+						<contextNormFuncName>UpConv_Fused_Row_8_16_16_960_480_s</contextNormFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
 								<first>/home/hoinguyen/Documents/Vitis/UpConv_HLS/upconv_block0</first>
 								<second>
-									<count>2</count>
+									<count>1</count>
 									<item_version>0</item_version>
-									<item>
-										<first>
-											<first>../gen/Hls_Layers_UpConv.tpp</first>
-											<second>Apply_Norm_And_Write&amp;lt;32, 480, 30, 480&amp;gt;</second>
-										</first>
-										<second>273</second>
-									</item>
 									<item>
 										<first>
 											<first>../gen/Hls_Layers_UpConv.tpp</first>
 											<second>UpConv_Fused_Row&amp;lt;8, 16, 16, 960, 480&amp;gt;</second>
 										</first>
-										<second>364</second>
+										<second>269</second>
 									</item>
 								</second>
 							</item>
@@ -4646,30 +4289,23 @@
 						<name>norm</name>
 						<fileName>../gen/Hls_Layers_UpConv.tpp</fileName>
 						<fileDirectory>/home/hoinguyen/Documents/Vitis/UpConv_HLS/upconv_block0</fileDirectory>
-						<lineNumber>270</lineNumber>
-						<contextFuncName>Apply_Norm_And_Write&amp;lt;32, 480, 30, 480&amp;gt;</contextFuncName>
-						<contextNormFuncName>Apply_Norm_And_Write_32_480_30_480_s</contextNormFuncName>
+						<lineNumber>266</lineNumber>
+						<contextFuncName>UpConv_Fused_Row&amp;lt;8, 16, 16, 960, 480&amp;gt;</contextFuncName>
+						<contextNormFuncName>UpConv_Fused_Row_8_16_16_960_480_s</contextNormFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
 								<first>/home/hoinguyen/Documents/Vitis/UpConv_HLS/upconv_block0</first>
 								<second>
-									<count>2</count>
+									<count>1</count>
 									<item_version>0</item_version>
-									<item>
-										<first>
-											<first>../gen/Hls_Layers_UpConv.tpp</first>
-											<second>Apply_Norm_And_Write&amp;lt;32, 480, 30, 480&amp;gt;</second>
-										</first>
-										<second>270</second>
-									</item>
 									<item>
 										<first>
 											<first>../gen/Hls_Layers_UpConv.tpp</first>
 											<second>UpConv_Fused_Row&amp;lt;8, 16, 16, 960, 480&amp;gt;</second>
 										</first>
-										<second>364</second>
+										<second>266</second>
 									</item>
 								</second>
 							</item>
@@ -4708,33 +4344,26 @@
 					<Obj>
 						<type>0</type>
 						<id>114</id>
-						<name>cmp33_i</name>
+						<name>cmp</name>
 						<fileName>../gen/Hls_Layers_UpConv.tpp</fileName>
 						<fileDirectory>/home/hoinguyen/Documents/Vitis/UpConv_HLS/upconv_block0</fileDirectory>
-						<lineNumber>274</lineNumber>
-						<contextFuncName>Apply_Norm_And_Write&amp;lt;32, 480, 30, 480&amp;gt;</contextFuncName>
-						<contextNormFuncName>Apply_Norm_And_Write_32_480_30_480_s</contextNormFuncName>
+						<lineNumber>270</lineNumber>
+						<contextFuncName>UpConv_Fused_Row&amp;lt;8, 16, 16, 960, 480&amp;gt;</contextFuncName>
+						<contextNormFuncName>UpConv_Fused_Row_8_16_16_960_480_s</contextNormFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
 								<first>/home/hoinguyen/Documents/Vitis/UpConv_HLS/upconv_block0</first>
 								<second>
-									<count>2</count>
+									<count>1</count>
 									<item_version>0</item_version>
-									<item>
-										<first>
-											<first>../gen/Hls_Layers_UpConv.tpp</first>
-											<second>Apply_Norm_And_Write&amp;lt;32, 480, 30, 480&amp;gt;</second>
-										</first>
-										<second>274</second>
-									</item>
 									<item>
 										<first>
 											<first>../gen/Hls_Layers_UpConv.tpp</first>
 											<second>UpConv_Fused_Row&amp;lt;8, 16, 16, 960, 480&amp;gt;</second>
 										</first>
-										<second>364</second>
+										<second>270</second>
 									</item>
 								</second>
 							</item>
@@ -4784,21 +4413,14 @@
 							<item>
 								<first>/home/hoinguyen/Documents/Vitis/UpConv_HLS/upconv_block0</first>
 								<second>
-									<count>3</count>
+									<count>2</count>
 									<item_version>0</item_version>
-									<item>
-										<first>
-											<first>../gen/Hls_Layers_UpConv.tpp</first>
-											<second>Apply_Norm_And_Write&amp;lt;32, 480, 30, 480&amp;gt;</second>
-										</first>
-										<second>275</second>
-									</item>
 									<item>
 										<first>
 											<first>../gen/Hls_Layers_UpConv.tpp</first>
 											<second>UpConv_Fused_Row&amp;lt;8, 16, 16, 960, 480&amp;gt;</second>
 										</first>
-										<second>364</second>
+										<second>271</second>
 									</item>
 									<item>
 										<first>
@@ -4854,21 +4476,14 @@
 							<item>
 								<first>/home/hoinguyen/Documents/Vitis/UpConv_HLS/upconv_block0</first>
 								<second>
-									<count>3</count>
+									<count>2</count>
 									<item_version>0</item_version>
-									<item>
-										<first>
-											<first>../gen/Hls_Layers_UpConv.tpp</first>
-											<second>Apply_Norm_And_Write&amp;lt;32, 480, 30, 480&amp;gt;</second>
-										</first>
-										<second>275</second>
-									</item>
 									<item>
 										<first>
 											<first>../gen/Hls_Layers_UpConv.tpp</first>
 											<second>UpConv_Fused_Row&amp;lt;8, 16, 16, 960, 480&amp;gt;</second>
 										</first>
-										<second>364</second>
+										<second>271</second>
 									</item>
 									<item>
 										<first>
@@ -4917,30 +4532,23 @@
 						<name>c_1</name>
 						<fileName>../gen/Hls_Layers_UpConv.tpp</fileName>
 						<fileDirectory>/home/hoinguyen/Documents/Vitis/UpConv_HLS/upconv_block0</fileDirectory>
-						<lineNumber>269</lineNumber>
-						<contextFuncName>Apply_Norm_And_Write&amp;lt;32, 480, 30, 480&amp;gt;</contextFuncName>
-						<contextNormFuncName>Apply_Norm_And_Write_32_480_30_480_s</contextNormFuncName>
+						<lineNumber>265</lineNumber>
+						<contextFuncName>UpConv_Fused_Row&amp;lt;8, 16, 16, 960, 480&amp;gt;</contextFuncName>
+						<contextNormFuncName>UpConv_Fused_Row_8_16_16_960_480_s</contextNormFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
 								<first>/home/hoinguyen/Documents/Vitis/UpConv_HLS/upconv_block0</first>
 								<second>
-									<count>2</count>
+									<count>1</count>
 									<item_version>0</item_version>
-									<item>
-										<first>
-											<first>../gen/Hls_Layers_UpConv.tpp</first>
-											<second>Apply_Norm_And_Write&amp;lt;32, 480, 30, 480&amp;gt;</second>
-										</first>
-										<second>269</second>
-									</item>
 									<item>
 										<first>
 											<first>../gen/Hls_Layers_UpConv.tpp</first>
 											<second>UpConv_Fused_Row&amp;lt;8, 16, 16, 960, 480&amp;gt;</second>
 										</first>
-										<second>364</second>
+										<second>265</second>
 									</item>
 								</second>
 							</item>
@@ -4979,33 +4587,26 @@
 					<Obj>
 						<type>0</type>
 						<id>118</id>
-						<name>icmp_ln270_1</name>
+						<name>icmp_ln266_1</name>
 						<fileName>../gen/Hls_Layers_UpConv.tpp</fileName>
 						<fileDirectory>/home/hoinguyen/Documents/Vitis/UpConv_HLS/upconv_block0</fileDirectory>
-						<lineNumber>270</lineNumber>
-						<contextFuncName>Apply_Norm_And_Write&amp;lt;32, 480, 30, 480&amp;gt;</contextFuncName>
-						<contextNormFuncName>Apply_Norm_And_Write_32_480_30_480_s</contextNormFuncName>
+						<lineNumber>266</lineNumber>
+						<contextFuncName>UpConv_Fused_Row&amp;lt;8, 16, 16, 960, 480&amp;gt;</contextFuncName>
+						<contextNormFuncName>UpConv_Fused_Row_8_16_16_960_480_s</contextNormFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
 								<first>/home/hoinguyen/Documents/Vitis/UpConv_HLS/upconv_block0</first>
 								<second>
-									<count>2</count>
+									<count>1</count>
 									<item_version>0</item_version>
-									<item>
-										<first>
-											<first>../gen/Hls_Layers_UpConv.tpp</first>
-											<second>Apply_Norm_And_Write&amp;lt;32, 480, 30, 480&amp;gt;</second>
-										</first>
-										<second>270</second>
-									</item>
 									<item>
 										<first>
 											<first>../gen/Hls_Layers_UpConv.tpp</first>
 											<second>UpConv_Fused_Row&amp;lt;8, 16, 16, 960, 480&amp;gt;</second>
 										</first>
-										<second>364</second>
+										<second>266</second>
 									</item>
 								</second>
 							</item>
@@ -5043,33 +4644,26 @@
 					<Obj>
 						<type>0</type>
 						<id>119</id>
-						<name>u_2</name>
+						<name>u_145</name>
 						<fileName>../gen/Hls_Layers_UpConv.tpp</fileName>
 						<fileDirectory>/home/hoinguyen/Documents/Vitis/UpConv_HLS/upconv_block0</fileDirectory>
-						<lineNumber>271</lineNumber>
-						<contextFuncName>Apply_Norm_And_Write&amp;lt;32, 480, 30, 480&amp;gt;</contextFuncName>
-						<contextNormFuncName>Apply_Norm_And_Write_32_480_30_480_s</contextNormFuncName>
+						<lineNumber>267</lineNumber>
+						<contextFuncName>UpConv_Fused_Row&amp;lt;8, 16, 16, 960, 480&amp;gt;</contextFuncName>
+						<contextNormFuncName>UpConv_Fused_Row_8_16_16_960_480_s</contextNormFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
 								<first>/home/hoinguyen/Documents/Vitis/UpConv_HLS/upconv_block0</first>
 								<second>
-									<count>2</count>
+									<count>1</count>
 									<item_version>0</item_version>
-									<item>
-										<first>
-											<first>../gen/Hls_Layers_UpConv.tpp</first>
-											<second>Apply_Norm_And_Write&amp;lt;32, 480, 30, 480&amp;gt;</second>
-										</first>
-										<second>271</second>
-									</item>
 									<item>
 										<first>
 											<first>../gen/Hls_Layers_UpConv.tpp</first>
 											<second>UpConv_Fused_Row&amp;lt;8, 16, 16, 960, 480&amp;gt;</second>
 										</first>
-										<second>364</second>
+										<second>267</second>
 									</item>
 								</second>
 							</item>
@@ -5120,21 +4714,14 @@
 							<item>
 								<first>/home/hoinguyen/Documents/Vitis/UpConv_HLS/upconv_block0</first>
 								<second>
-									<count>3</count>
+									<count>2</count>
 									<item_version>0</item_version>
-									<item>
-										<first>
-											<first>../gen/Hls_Layers_UpConv.tpp</first>
-											<second>Apply_Norm_And_Write&amp;lt;32, 480, 30, 480&amp;gt;</second>
-										</first>
-										<second>271</second>
-									</item>
 									<item>
 										<first>
 											<first>../gen/Hls_Layers_UpConv.tpp</first>
 											<second>UpConv_Fused_Row&amp;lt;8, 16, 16, 960, 480&amp;gt;</second>
 										</first>
-										<second>364</second>
+										<second>267</second>
 									</item>
 									<item>
 										<first>
@@ -5178,33 +4765,26 @@
 					<Obj>
 						<type>0</type>
 						<id>121</id>
-						<name>u_3</name>
+						<name>u_136</name>
 						<fileName>../gen/Hls_Layers_UpConv.tpp</fileName>
 						<fileDirectory>/home/hoinguyen/Documents/Vitis/UpConv_HLS/upconv_block0</fileDirectory>
-						<lineNumber>272</lineNumber>
-						<contextFuncName>Apply_Norm_And_Write&amp;lt;32, 480, 30, 480&amp;gt;</contextFuncName>
-						<contextNormFuncName>Apply_Norm_And_Write_32_480_30_480_s</contextNormFuncName>
+						<lineNumber>268</lineNumber>
+						<contextFuncName>UpConv_Fused_Row&amp;lt;8, 16, 16, 960, 480&amp;gt;</contextFuncName>
+						<contextNormFuncName>UpConv_Fused_Row_8_16_16_960_480_s</contextNormFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
 								<first>/home/hoinguyen/Documents/Vitis/UpConv_HLS/upconv_block0</first>
 								<second>
-									<count>2</count>
+									<count>1</count>
 									<item_version>0</item_version>
-									<item>
-										<first>
-											<first>../gen/Hls_Layers_UpConv.tpp</first>
-											<second>Apply_Norm_And_Write&amp;lt;32, 480, 30, 480&amp;gt;</second>
-										</first>
-										<second>272</second>
-									</item>
 									<item>
 										<first>
 											<first>../gen/Hls_Layers_UpConv.tpp</first>
 											<second>UpConv_Fused_Row&amp;lt;8, 16, 16, 960, 480&amp;gt;</second>
 										</first>
-										<second>364</second>
+										<second>268</second>
 									</item>
 								</second>
 							</item>
@@ -5255,21 +4835,14 @@
 							<item>
 								<first>/home/hoinguyen/Documents/Vitis/UpConv_HLS/upconv_block0</first>
 								<second>
-									<count>3</count>
+									<count>2</count>
 									<item_version>0</item_version>
-									<item>
-										<first>
-											<first>../gen/Hls_Layers_UpConv.tpp</first>
-											<second>Apply_Norm_And_Write&amp;lt;32, 480, 30, 480&amp;gt;</second>
-										</first>
-										<second>272</second>
-									</item>
 									<item>
 										<first>
 											<first>../gen/Hls_Layers_UpConv.tpp</first>
 											<second>UpConv_Fused_Row&amp;lt;8, 16, 16, 960, 480&amp;gt;</second>
 										</first>
-										<second>364</second>
+										<second>268</second>
 									</item>
 									<item>
 										<first>
@@ -5313,33 +4886,26 @@
 					<Obj>
 						<type>0</type>
 						<id>123</id>
-						<name>void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_51</name>
+						<name>void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_71</name>
 						<fileName>../gen/Hls_Layers_UpConv.tpp</fileName>
 						<fileDirectory>/home/hoinguyen/Documents/Vitis/UpConv_HLS/upconv_block0</fileDirectory>
-						<lineNumber>270</lineNumber>
-						<contextFuncName>Apply_Norm_And_Write&amp;lt;32, 480, 30, 480&amp;gt;</contextFuncName>
-						<contextNormFuncName>Apply_Norm_And_Write_32_480_30_480_s</contextNormFuncName>
+						<lineNumber>266</lineNumber>
+						<contextFuncName>UpConv_Fused_Row&amp;lt;8, 16, 16, 960, 480&amp;gt;</contextFuncName>
+						<contextNormFuncName>UpConv_Fused_Row_8_16_16_960_480_s</contextNormFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
 								<first>/home/hoinguyen/Documents/Vitis/UpConv_HLS/upconv_block0</first>
 								<second>
-									<count>2</count>
+									<count>1</count>
 									<item_version>0</item_version>
-									<item>
-										<first>
-											<first>../gen/Hls_Layers_UpConv.tpp</first>
-											<second>Apply_Norm_And_Write&amp;lt;32, 480, 30, 480&amp;gt;</second>
-										</first>
-										<second>270</second>
-									</item>
 									<item>
 										<first>
 											<first>../gen/Hls_Layers_UpConv.tpp</first>
 											<second>UpConv_Fused_Row&amp;lt;8, 16, 16, 960, 480&amp;gt;</second>
 										</first>
-										<second>364</second>
+										<second>266</second>
 									</item>
 								</second>
 							</item>
@@ -5376,33 +4942,26 @@
 					<Obj>
 						<type>0</type>
 						<id>124</id>
-						<name>sub_i_1</name>
+						<name>sub151_1</name>
 						<fileName>../gen/Hls_Layers_UpConv.tpp</fileName>
 						<fileDirectory>/home/hoinguyen/Documents/Vitis/UpConv_HLS/upconv_block0</fileDirectory>
-						<lineNumber>273</lineNumber>
-						<contextFuncName>Apply_Norm_And_Write&amp;lt;32, 480, 30, 480&amp;gt;</contextFuncName>
-						<contextNormFuncName>Apply_Norm_And_Write_32_480_30_480_s</contextNormFuncName>
+						<lineNumber>269</lineNumber>
+						<contextFuncName>UpConv_Fused_Row&amp;lt;8, 16, 16, 960, 480&amp;gt;</contextFuncName>
+						<contextNormFuncName>UpConv_Fused_Row_8_16_16_960_480_s</contextNormFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
 								<first>/home/hoinguyen/Documents/Vitis/UpConv_HLS/upconv_block0</first>
 								<second>
-									<count>2</count>
+									<count>1</count>
 									<item_version>0</item_version>
-									<item>
-										<first>
-											<first>../gen/Hls_Layers_UpConv.tpp</first>
-											<second>Apply_Norm_And_Write&amp;lt;32, 480, 30, 480&amp;gt;</second>
-										</first>
-										<second>273</second>
-									</item>
 									<item>
 										<first>
 											<first>../gen/Hls_Layers_UpConv.tpp</first>
 											<second>UpConv_Fused_Row&amp;lt;8, 16, 16, 960, 480&amp;gt;</second>
 										</first>
-										<second>364</second>
+										<second>269</second>
 									</item>
 								</second>
 							</item>
@@ -5440,33 +4999,26 @@
 					<Obj>
 						<type>0</type>
 						<id>125</id>
-						<name>mul27_i_1</name>
+						<name>mul152_1</name>
 						<fileName>../gen/Hls_Layers_UpConv.tpp</fileName>
 						<fileDirectory>/home/hoinguyen/Documents/Vitis/UpConv_HLS/upconv_block0</fileDirectory>
-						<lineNumber>273</lineNumber>
-						<contextFuncName>Apply_Norm_And_Write&amp;lt;32, 480, 30, 480&amp;gt;</contextFuncName>
-						<contextNormFuncName>Apply_Norm_And_Write_32_480_30_480_s</contextNormFuncName>
+						<lineNumber>269</lineNumber>
+						<contextFuncName>UpConv_Fused_Row&amp;lt;8, 16, 16, 960, 480&amp;gt;</contextFuncName>
+						<contextNormFuncName>UpConv_Fused_Row_8_16_16_960_480_s</contextNormFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
 								<first>/home/hoinguyen/Documents/Vitis/UpConv_HLS/upconv_block0</first>
 								<second>
-									<count>2</count>
+									<count>1</count>
 									<item_version>0</item_version>
-									<item>
-										<first>
-											<first>../gen/Hls_Layers_UpConv.tpp</first>
-											<second>Apply_Norm_And_Write&amp;lt;32, 480, 30, 480&amp;gt;</second>
-										</first>
-										<second>273</second>
-									</item>
 									<item>
 										<first>
 											<first>../gen/Hls_Layers_UpConv.tpp</first>
 											<second>UpConv_Fused_Row&amp;lt;8, 16, 16, 960, 480&amp;gt;</second>
 										</first>
-										<second>364</second>
+										<second>269</second>
 									</item>
 								</second>
 							</item>
@@ -5504,33 +5056,26 @@
 					<Obj>
 						<type>0</type>
 						<id>126</id>
-						<name>mul28_i_1</name>
+						<name>mul153_1</name>
 						<fileName>../gen/Hls_Layers_UpConv.tpp</fileName>
 						<fileDirectory>/home/hoinguyen/Documents/Vitis/UpConv_HLS/upconv_block0</fileDirectory>
-						<lineNumber>273</lineNumber>
-						<contextFuncName>Apply_Norm_And_Write&amp;lt;32, 480, 30, 480&amp;gt;</contextFuncName>
-						<contextNormFuncName>Apply_Norm_And_Write_32_480_30_480_s</contextNormFuncName>
+						<lineNumber>269</lineNumber>
+						<contextFuncName>UpConv_Fused_Row&amp;lt;8, 16, 16, 960, 480&amp;gt;</contextFuncName>
+						<contextNormFuncName>UpConv_Fused_Row_8_16_16_960_480_s</contextNormFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
 								<first>/home/hoinguyen/Documents/Vitis/UpConv_HLS/upconv_block0</first>
 								<second>
-									<count>2</count>
+									<count>1</count>
 									<item_version>0</item_version>
-									<item>
-										<first>
-											<first>../gen/Hls_Layers_UpConv.tpp</first>
-											<second>Apply_Norm_And_Write&amp;lt;32, 480, 30, 480&amp;gt;</second>
-										</first>
-										<second>273</second>
-									</item>
 									<item>
 										<first>
 											<first>../gen/Hls_Layers_UpConv.tpp</first>
 											<second>UpConv_Fused_Row&amp;lt;8, 16, 16, 960, 480&amp;gt;</second>
 										</first>
-										<second>364</second>
+										<second>269</second>
 									</item>
 								</second>
 							</item>
@@ -5568,33 +5113,26 @@
 					<Obj>
 						<type>0</type>
 						<id>127</id>
-						<name>add29_i_1</name>
+						<name>add154_1</name>
 						<fileName>../gen/Hls_Layers_UpConv.tpp</fileName>
 						<fileDirectory>/home/hoinguyen/Documents/Vitis/UpConv_HLS/upconv_block0</fileDirectory>
-						<lineNumber>273</lineNumber>
-						<contextFuncName>Apply_Norm_And_Write&amp;lt;32, 480, 30, 480&amp;gt;</contextFuncName>
-						<contextNormFuncName>Apply_Norm_And_Write_32_480_30_480_s</contextNormFuncName>
+						<lineNumber>269</lineNumber>
+						<contextFuncName>UpConv_Fused_Row&amp;lt;8, 16, 16, 960, 480&amp;gt;</contextFuncName>
+						<contextNormFuncName>UpConv_Fused_Row_8_16_16_960_480_s</contextNormFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
 								<first>/home/hoinguyen/Documents/Vitis/UpConv_HLS/upconv_block0</first>
 								<second>
-									<count>2</count>
+									<count>1</count>
 									<item_version>0</item_version>
-									<item>
-										<first>
-											<first>../gen/Hls_Layers_UpConv.tpp</first>
-											<second>Apply_Norm_And_Write&amp;lt;32, 480, 30, 480&amp;gt;</second>
-										</first>
-										<second>273</second>
-									</item>
 									<item>
 										<first>
 											<first>../gen/Hls_Layers_UpConv.tpp</first>
 											<second>UpConv_Fused_Row&amp;lt;8, 16, 16, 960, 480&amp;gt;</second>
 										</first>
-										<second>364</second>
+										<second>269</second>
 									</item>
 								</second>
 							</item>
@@ -5635,30 +5173,23 @@
 						<name>norm_1</name>
 						<fileName>../gen/Hls_Layers_UpConv.tpp</fileName>
 						<fileDirectory>/home/hoinguyen/Documents/Vitis/UpConv_HLS/upconv_block0</fileDirectory>
-						<lineNumber>270</lineNumber>
-						<contextFuncName>Apply_Norm_And_Write&amp;lt;32, 480, 30, 480&amp;gt;</contextFuncName>
-						<contextNormFuncName>Apply_Norm_And_Write_32_480_30_480_s</contextNormFuncName>
+						<lineNumber>266</lineNumber>
+						<contextFuncName>UpConv_Fused_Row&amp;lt;8, 16, 16, 960, 480&amp;gt;</contextFuncName>
+						<contextNormFuncName>UpConv_Fused_Row_8_16_16_960_480_s</contextNormFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
 								<first>/home/hoinguyen/Documents/Vitis/UpConv_HLS/upconv_block0</first>
 								<second>
-									<count>2</count>
+									<count>1</count>
 									<item_version>0</item_version>
-									<item>
-										<first>
-											<first>../gen/Hls_Layers_UpConv.tpp</first>
-											<second>Apply_Norm_And_Write&amp;lt;32, 480, 30, 480&amp;gt;</second>
-										</first>
-										<second>270</second>
-									</item>
 									<item>
 										<first>
 											<first>../gen/Hls_Layers_UpConv.tpp</first>
 											<second>UpConv_Fused_Row&amp;lt;8, 16, 16, 960, 480&amp;gt;</second>
 										</first>
-										<second>364</second>
+										<second>266</second>
 									</item>
 								</second>
 							</item>
@@ -5697,33 +5228,26 @@
 					<Obj>
 						<type>0</type>
 						<id>129</id>
-						<name>cmp33_i_1</name>
+						<name>cmp158_1</name>
 						<fileName>../gen/Hls_Layers_UpConv.tpp</fileName>
 						<fileDirectory>/home/hoinguyen/Documents/Vitis/UpConv_HLS/upconv_block0</fileDirectory>
-						<lineNumber>274</lineNumber>
-						<contextFuncName>Apply_Norm_And_Write&amp;lt;32, 480, 30, 480&amp;gt;</contextFuncName>
-						<contextNormFuncName>Apply_Norm_And_Write_32_480_30_480_s</contextNormFuncName>
+						<lineNumber>270</lineNumber>
+						<contextFuncName>UpConv_Fused_Row&amp;lt;8, 16, 16, 960, 480&amp;gt;</contextFuncName>
+						<contextNormFuncName>UpConv_Fused_Row_8_16_16_960_480_s</contextNormFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
 								<first>/home/hoinguyen/Documents/Vitis/UpConv_HLS/upconv_block0</first>
 								<second>
-									<count>2</count>
+									<count>1</count>
 									<item_version>0</item_version>
-									<item>
-										<first>
-											<first>../gen/Hls_Layers_UpConv.tpp</first>
-											<second>Apply_Norm_And_Write&amp;lt;32, 480, 30, 480&amp;gt;</second>
-										</first>
-										<second>274</second>
-									</item>
 									<item>
 										<first>
 											<first>../gen/Hls_Layers_UpConv.tpp</first>
 											<second>UpConv_Fused_Row&amp;lt;8, 16, 16, 960, 480&amp;gt;</second>
 										</first>
-										<second>364</second>
+										<second>270</second>
 									</item>
 								</second>
 							</item>
@@ -5773,21 +5297,14 @@
 							<item>
 								<first>/home/hoinguyen/Documents/Vitis/UpConv_HLS/upconv_block0</first>
 								<second>
-									<count>3</count>
+									<count>2</count>
 									<item_version>0</item_version>
-									<item>
-										<first>
-											<first>../gen/Hls_Layers_UpConv.tpp</first>
-											<second>Apply_Norm_And_Write&amp;lt;32, 480, 30, 480&amp;gt;</second>
-										</first>
-										<second>275</second>
-									</item>
 									<item>
 										<first>
 											<first>../gen/Hls_Layers_UpConv.tpp</first>
 											<second>UpConv_Fused_Row&amp;lt;8, 16, 16, 960, 480&amp;gt;</second>
 										</first>
-										<second>364</second>
+										<second>271</second>
 									</item>
 									<item>
 										<first>
@@ -5843,21 +5360,14 @@
 							<item>
 								<first>/home/hoinguyen/Documents/Vitis/UpConv_HLS/upconv_block0</first>
 								<second>
-									<count>3</count>
+									<count>2</count>
 									<item_version>0</item_version>
-									<item>
-										<first>
-											<first>../gen/Hls_Layers_UpConv.tpp</first>
-											<second>Apply_Norm_And_Write&amp;lt;32, 480, 30, 480&amp;gt;</second>
-										</first>
-										<second>275</second>
-									</item>
 									<item>
 										<first>
 											<first>../gen/Hls_Layers_UpConv.tpp</first>
 											<second>UpConv_Fused_Row&amp;lt;8, 16, 16, 960, 480&amp;gt;</second>
 										</first>
-										<second>364</second>
+										<second>271</second>
 									</item>
 									<item>
 										<first>
@@ -5906,30 +5416,23 @@
 						<name>c_2</name>
 						<fileName>../gen/Hls_Layers_UpConv.tpp</fileName>
 						<fileDirectory>/home/hoinguyen/Documents/Vitis/UpConv_HLS/upconv_block0</fileDirectory>
-						<lineNumber>269</lineNumber>
-						<contextFuncName>Apply_Norm_And_Write&amp;lt;32, 480, 30, 480&amp;gt;</contextFuncName>
-						<contextNormFuncName>Apply_Norm_And_Write_32_480_30_480_s</contextNormFuncName>
+						<lineNumber>265</lineNumber>
+						<contextFuncName>UpConv_Fused_Row&amp;lt;8, 16, 16, 960, 480&amp;gt;</contextFuncName>
+						<contextNormFuncName>UpConv_Fused_Row_8_16_16_960_480_s</contextNormFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
 								<first>/home/hoinguyen/Documents/Vitis/UpConv_HLS/upconv_block0</first>
 								<second>
-									<count>2</count>
+									<count>1</count>
 									<item_version>0</item_version>
-									<item>
-										<first>
-											<first>../gen/Hls_Layers_UpConv.tpp</first>
-											<second>Apply_Norm_And_Write&amp;lt;32, 480, 30, 480&amp;gt;</second>
-										</first>
-										<second>269</second>
-									</item>
 									<item>
 										<first>
 											<first>../gen/Hls_Layers_UpConv.tpp</first>
 											<second>UpConv_Fused_Row&amp;lt;8, 16, 16, 960, 480&amp;gt;</second>
 										</first>
-										<second>364</second>
+										<second>265</second>
 									</item>
 								</second>
 							</item>
@@ -5968,33 +5471,26 @@
 					<Obj>
 						<type>0</type>
 						<id>133</id>
-						<name>icmp_ln270_2</name>
+						<name>icmp_ln266_2</name>
 						<fileName>../gen/Hls_Layers_UpConv.tpp</fileName>
 						<fileDirectory>/home/hoinguyen/Documents/Vitis/UpConv_HLS/upconv_block0</fileDirectory>
-						<lineNumber>270</lineNumber>
-						<contextFuncName>Apply_Norm_And_Write&amp;lt;32, 480, 30, 480&amp;gt;</contextFuncName>
-						<contextNormFuncName>Apply_Norm_And_Write_32_480_30_480_s</contextNormFuncName>
+						<lineNumber>266</lineNumber>
+						<contextFuncName>UpConv_Fused_Row&amp;lt;8, 16, 16, 960, 480&amp;gt;</contextFuncName>
+						<contextNormFuncName>UpConv_Fused_Row_8_16_16_960_480_s</contextNormFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
 								<first>/home/hoinguyen/Documents/Vitis/UpConv_HLS/upconv_block0</first>
 								<second>
-									<count>2</count>
+									<count>1</count>
 									<item_version>0</item_version>
-									<item>
-										<first>
-											<first>../gen/Hls_Layers_UpConv.tpp</first>
-											<second>Apply_Norm_And_Write&amp;lt;32, 480, 30, 480&amp;gt;</second>
-										</first>
-										<second>270</second>
-									</item>
 									<item>
 										<first>
 											<first>../gen/Hls_Layers_UpConv.tpp</first>
 											<second>UpConv_Fused_Row&amp;lt;8, 16, 16, 960, 480&amp;gt;</second>
 										</first>
-										<second>364</second>
+										<second>266</second>
 									</item>
 								</second>
 							</item>
@@ -6032,33 +5528,26 @@
 					<Obj>
 						<type>0</type>
 						<id>134</id>
-						<name>u_4</name>
+						<name>u_146</name>
 						<fileName>../gen/Hls_Layers_UpConv.tpp</fileName>
 						<fileDirectory>/home/hoinguyen/Documents/Vitis/UpConv_HLS/upconv_block0</fileDirectory>
-						<lineNumber>271</lineNumber>
-						<contextFuncName>Apply_Norm_And_Write&amp;lt;32, 480, 30, 480&amp;gt;</contextFuncName>
-						<contextNormFuncName>Apply_Norm_And_Write_32_480_30_480_s</contextNormFuncName>
+						<lineNumber>267</lineNumber>
+						<contextFuncName>UpConv_Fused_Row&amp;lt;8, 16, 16, 960, 480&amp;gt;</contextFuncName>
+						<contextNormFuncName>UpConv_Fused_Row_8_16_16_960_480_s</contextNormFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
 								<first>/home/hoinguyen/Documents/Vitis/UpConv_HLS/upconv_block0</first>
 								<second>
-									<count>2</count>
+									<count>1</count>
 									<item_version>0</item_version>
-									<item>
-										<first>
-											<first>../gen/Hls_Layers_UpConv.tpp</first>
-											<second>Apply_Norm_And_Write&amp;lt;32, 480, 30, 480&amp;gt;</second>
-										</first>
-										<second>271</second>
-									</item>
 									<item>
 										<first>
 											<first>../gen/Hls_Layers_UpConv.tpp</first>
 											<second>UpConv_Fused_Row&amp;lt;8, 16, 16, 960, 480&amp;gt;</second>
 										</first>
-										<second>364</second>
+										<second>267</second>
 									</item>
 								</second>
 							</item>
@@ -6109,21 +5598,14 @@
 							<item>
 								<first>/home/hoinguyen/Documents/Vitis/UpConv_HLS/upconv_block0</first>
 								<second>
-									<count>3</count>
+									<count>2</count>
 									<item_version>0</item_version>
-									<item>
-										<first>
-											<first>../gen/Hls_Layers_UpConv.tpp</first>
-											<second>Apply_Norm_And_Write&amp;lt;32, 480, 30, 480&amp;gt;</second>
-										</first>
-										<second>271</second>
-									</item>
 									<item>
 										<first>
 											<first>../gen/Hls_Layers_UpConv.tpp</first>
 											<second>UpConv_Fused_Row&amp;lt;8, 16, 16, 960, 480&amp;gt;</second>
 										</first>
-										<second>364</second>
+										<second>267</second>
 									</item>
 									<item>
 										<first>
@@ -6167,33 +5649,26 @@
 					<Obj>
 						<type>0</type>
 						<id>136</id>
-						<name>u_5</name>
+						<name>u_137</name>
 						<fileName>../gen/Hls_Layers_UpConv.tpp</fileName>
 						<fileDirectory>/home/hoinguyen/Documents/Vitis/UpConv_HLS/upconv_block0</fileDirectory>
-						<lineNumber>272</lineNumber>
-						<contextFuncName>Apply_Norm_And_Write&amp;lt;32, 480, 30, 480&amp;gt;</contextFuncName>
-						<contextNormFuncName>Apply_Norm_And_Write_32_480_30_480_s</contextNormFuncName>
+						<lineNumber>268</lineNumber>
+						<contextFuncName>UpConv_Fused_Row&amp;lt;8, 16, 16, 960, 480&amp;gt;</contextFuncName>
+						<contextNormFuncName>UpConv_Fused_Row_8_16_16_960_480_s</contextNormFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
 								<first>/home/hoinguyen/Documents/Vitis/UpConv_HLS/upconv_block0</first>
 								<second>
-									<count>2</count>
+									<count>1</count>
 									<item_version>0</item_version>
-									<item>
-										<first>
-											<first>../gen/Hls_Layers_UpConv.tpp</first>
-											<second>Apply_Norm_And_Write&amp;lt;32, 480, 30, 480&amp;gt;</second>
-										</first>
-										<second>272</second>
-									</item>
 									<item>
 										<first>
 											<first>../gen/Hls_Layers_UpConv.tpp</first>
 											<second>UpConv_Fused_Row&amp;lt;8, 16, 16, 960, 480&amp;gt;</second>
 										</first>
-										<second>364</second>
+										<second>268</second>
 									</item>
 								</second>
 							</item>
@@ -6244,21 +5719,14 @@
 							<item>
 								<first>/home/hoinguyen/Documents/Vitis/UpConv_HLS/upconv_block0</first>
 								<second>
-									<count>3</count>
+									<count>2</count>
 									<item_version>0</item_version>
-									<item>
-										<first>
-											<first>../gen/Hls_Layers_UpConv.tpp</first>
-											<second>Apply_Norm_And_Write&amp;lt;32, 480, 30, 480&amp;gt;</second>
-										</first>
-										<second>272</second>
-									</item>
 									<item>
 										<first>
 											<first>../gen/Hls_Layers_UpConv.tpp</first>
 											<second>UpConv_Fused_Row&amp;lt;8, 16, 16, 960, 480&amp;gt;</second>
 										</first>
-										<second>364</second>
+										<second>268</second>
 									</item>
 									<item>
 										<first>
@@ -6302,33 +5770,26 @@
 					<Obj>
 						<type>0</type>
 						<id>138</id>
-						<name>void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_52</name>
+						<name>void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_72</name>
 						<fileName>../gen/Hls_Layers_UpConv.tpp</fileName>
 						<fileDirectory>/home/hoinguyen/Documents/Vitis/UpConv_HLS/upconv_block0</fileDirectory>
-						<lineNumber>270</lineNumber>
-						<contextFuncName>Apply_Norm_And_Write&amp;lt;32, 480, 30, 480&amp;gt;</contextFuncName>
-						<contextNormFuncName>Apply_Norm_And_Write_32_480_30_480_s</contextNormFuncName>
+						<lineNumber>266</lineNumber>
+						<contextFuncName>UpConv_Fused_Row&amp;lt;8, 16, 16, 960, 480&amp;gt;</contextFuncName>
+						<contextNormFuncName>UpConv_Fused_Row_8_16_16_960_480_s</contextNormFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
 								<first>/home/hoinguyen/Documents/Vitis/UpConv_HLS/upconv_block0</first>
 								<second>
-									<count>2</count>
+									<count>1</count>
 									<item_version>0</item_version>
-									<item>
-										<first>
-											<first>../gen/Hls_Layers_UpConv.tpp</first>
-											<second>Apply_Norm_And_Write&amp;lt;32, 480, 30, 480&amp;gt;</second>
-										</first>
-										<second>270</second>
-									</item>
 									<item>
 										<first>
 											<first>../gen/Hls_Layers_UpConv.tpp</first>
 											<second>UpConv_Fused_Row&amp;lt;8, 16, 16, 960, 480&amp;gt;</second>
 										</first>
-										<second>364</second>
+										<second>266</second>
 									</item>
 								</second>
 							</item>
@@ -6365,33 +5826,26 @@
 					<Obj>
 						<type>0</type>
 						<id>139</id>
-						<name>sub_i_2</name>
+						<name>sub151_2</name>
 						<fileName>../gen/Hls_Layers_UpConv.tpp</fileName>
 						<fileDirectory>/home/hoinguyen/Documents/Vitis/UpConv_HLS/upconv_block0</fileDirectory>
-						<lineNumber>273</lineNumber>
-						<contextFuncName>Apply_Norm_And_Write&amp;lt;32, 480, 30, 480&amp;gt;</contextFuncName>
-						<contextNormFuncName>Apply_Norm_And_Write_32_480_30_480_s</contextNormFuncName>
+						<lineNumber>269</lineNumber>
+						<contextFuncName>UpConv_Fused_Row&amp;lt;8, 16, 16, 960, 480&amp;gt;</contextFuncName>
+						<contextNormFuncName>UpConv_Fused_Row_8_16_16_960_480_s</contextNormFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
 								<first>/home/hoinguyen/Documents/Vitis/UpConv_HLS/upconv_block0</first>
 								<second>
-									<count>2</count>
+									<count>1</count>
 									<item_version>0</item_version>
-									<item>
-										<first>
-											<first>../gen/Hls_Layers_UpConv.tpp</first>
-											<second>Apply_Norm_And_Write&amp;lt;32, 480, 30, 480&amp;gt;</second>
-										</first>
-										<second>273</second>
-									</item>
 									<item>
 										<first>
 											<first>../gen/Hls_Layers_UpConv.tpp</first>
 											<second>UpConv_Fused_Row&amp;lt;8, 16, 16, 960, 480&amp;gt;</second>
 										</first>
-										<second>364</second>
+										<second>269</second>
 									</item>
 								</second>
 							</item>
@@ -6429,33 +5883,26 @@
 					<Obj>
 						<type>0</type>
 						<id>140</id>
-						<name>mul27_i_2</name>
+						<name>mul152_2</name>
 						<fileName>../gen/Hls_Layers_UpConv.tpp</fileName>
 						<fileDirectory>/home/hoinguyen/Documents/Vitis/UpConv_HLS/upconv_block0</fileDirectory>
-						<lineNumber>273</lineNumber>
-						<contextFuncName>Apply_Norm_And_Write&amp;lt;32, 480, 30, 480&amp;gt;</contextFuncName>
-						<contextNormFuncName>Apply_Norm_And_Write_32_480_30_480_s</contextNormFuncName>
+						<lineNumber>269</lineNumber>
+						<contextFuncName>UpConv_Fused_Row&amp;lt;8, 16, 16, 960, 480&amp;gt;</contextFuncName>
+						<contextNormFuncName>UpConv_Fused_Row_8_16_16_960_480_s</contextNormFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
 								<first>/home/hoinguyen/Documents/Vitis/UpConv_HLS/upconv_block0</first>
 								<second>
-									<count>2</count>
+									<count>1</count>
 									<item_version>0</item_version>
-									<item>
-										<first>
-											<first>../gen/Hls_Layers_UpConv.tpp</first>
-											<second>Apply_Norm_And_Write&amp;lt;32, 480, 30, 480&amp;gt;</second>
-										</first>
-										<second>273</second>
-									</item>
 									<item>
 										<first>
 											<first>../gen/Hls_Layers_UpConv.tpp</first>
 											<second>UpConv_Fused_Row&amp;lt;8, 16, 16, 960, 480&amp;gt;</second>
 										</first>
-										<second>364</second>
+										<second>269</second>
 									</item>
 								</second>
 							</item>
@@ -6493,33 +5940,26 @@
 					<Obj>
 						<type>0</type>
 						<id>141</id>
-						<name>mul28_i_2</name>
+						<name>mul153_2</name>
 						<fileName>../gen/Hls_Layers_UpConv.tpp</fileName>
 						<fileDirectory>/home/hoinguyen/Documents/Vitis/UpConv_HLS/upconv_block0</fileDirectory>
-						<lineNumber>273</lineNumber>
-						<contextFuncName>Apply_Norm_And_Write&amp;lt;32, 480, 30, 480&amp;gt;</contextFuncName>
-						<contextNormFuncName>Apply_Norm_And_Write_32_480_30_480_s</contextNormFuncName>
+						<lineNumber>269</lineNumber>
+						<contextFuncName>UpConv_Fused_Row&amp;lt;8, 16, 16, 960, 480&amp;gt;</contextFuncName>
+						<contextNormFuncName>UpConv_Fused_Row_8_16_16_960_480_s</contextNormFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
 								<first>/home/hoinguyen/Documents/Vitis/UpConv_HLS/upconv_block0</first>
 								<second>
-									<count>2</count>
+									<count>1</count>
 									<item_version>0</item_version>
-									<item>
-										<first>
-											<first>../gen/Hls_Layers_UpConv.tpp</first>
-											<second>Apply_Norm_And_Write&amp;lt;32, 480, 30, 480&amp;gt;</second>
-										</first>
-										<second>273</second>
-									</item>
 									<item>
 										<first>
 											<first>../gen/Hls_Layers_UpConv.tpp</first>
 											<second>UpConv_Fused_Row&amp;lt;8, 16, 16, 960, 480&amp;gt;</second>
 										</first>
-										<second>364</second>
+										<second>269</second>
 									</item>
 								</second>
 							</item>
@@ -6557,33 +5997,26 @@
 					<Obj>
 						<type>0</type>
 						<id>142</id>
-						<name>add29_i_2</name>
+						<name>add154_2</name>
 						<fileName>../gen/Hls_Layers_UpConv.tpp</fileName>
 						<fileDirectory>/home/hoinguyen/Documents/Vitis/UpConv_HLS/upconv_block0</fileDirectory>
-						<lineNumber>273</lineNumber>
-						<contextFuncName>Apply_Norm_And_Write&amp;lt;32, 480, 30, 480&amp;gt;</contextFuncName>
-						<contextNormFuncName>Apply_Norm_And_Write_32_480_30_480_s</contextNormFuncName>
+						<lineNumber>269</lineNumber>
+						<contextFuncName>UpConv_Fused_Row&amp;lt;8, 16, 16, 960, 480&amp;gt;</contextFuncName>
+						<contextNormFuncName>UpConv_Fused_Row_8_16_16_960_480_s</contextNormFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
 								<first>/home/hoinguyen/Documents/Vitis/UpConv_HLS/upconv_block0</first>
 								<second>
-									<count>2</count>
+									<count>1</count>
 									<item_version>0</item_version>
-									<item>
-										<first>
-											<first>../gen/Hls_Layers_UpConv.tpp</first>
-											<second>Apply_Norm_And_Write&amp;lt;32, 480, 30, 480&amp;gt;</second>
-										</first>
-										<second>273</second>
-									</item>
 									<item>
 										<first>
 											<first>../gen/Hls_Layers_UpConv.tpp</first>
 											<second>UpConv_Fused_Row&amp;lt;8, 16, 16, 960, 480&amp;gt;</second>
 										</first>
-										<second>364</second>
+										<second>269</second>
 									</item>
 								</second>
 							</item>
@@ -6624,30 +6057,23 @@
 						<name>norm_2</name>
 						<fileName>../gen/Hls_Layers_UpConv.tpp</fileName>
 						<fileDirectory>/home/hoinguyen/Documents/Vitis/UpConv_HLS/upconv_block0</fileDirectory>
-						<lineNumber>270</lineNumber>
-						<contextFuncName>Apply_Norm_And_Write&amp;lt;32, 480, 30, 480&amp;gt;</contextFuncName>
-						<contextNormFuncName>Apply_Norm_And_Write_32_480_30_480_s</contextNormFuncName>
+						<lineNumber>266</lineNumber>
+						<contextFuncName>UpConv_Fused_Row&amp;lt;8, 16, 16, 960, 480&amp;gt;</contextFuncName>
+						<contextNormFuncName>UpConv_Fused_Row_8_16_16_960_480_s</contextNormFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
 								<first>/home/hoinguyen/Documents/Vitis/UpConv_HLS/upconv_block0</first>
 								<second>
-									<count>2</count>
+									<count>1</count>
 									<item_version>0</item_version>
-									<item>
-										<first>
-											<first>../gen/Hls_Layers_UpConv.tpp</first>
-											<second>Apply_Norm_And_Write&amp;lt;32, 480, 30, 480&amp;gt;</second>
-										</first>
-										<second>270</second>
-									</item>
 									<item>
 										<first>
 											<first>../gen/Hls_Layers_UpConv.tpp</first>
 											<second>UpConv_Fused_Row&amp;lt;8, 16, 16, 960, 480&amp;gt;</second>
 										</first>
-										<second>364</second>
+										<second>266</second>
 									</item>
 								</second>
 							</item>
@@ -6686,33 +6112,26 @@
 					<Obj>
 						<type>0</type>
 						<id>144</id>
-						<name>cmp33_i_2</name>
+						<name>cmp158_2</name>
 						<fileName>../gen/Hls_Layers_UpConv.tpp</fileName>
 						<fileDirectory>/home/hoinguyen/Documents/Vitis/UpConv_HLS/upconv_block0</fileDirectory>
-						<lineNumber>274</lineNumber>
-						<contextFuncName>Apply_Norm_And_Write&amp;lt;32, 480, 30, 480&amp;gt;</contextFuncName>
-						<contextNormFuncName>Apply_Norm_And_Write_32_480_30_480_s</contextNormFuncName>
+						<lineNumber>270</lineNumber>
+						<contextFuncName>UpConv_Fused_Row&amp;lt;8, 16, 16, 960, 480&amp;gt;</contextFuncName>
+						<contextNormFuncName>UpConv_Fused_Row_8_16_16_960_480_s</contextNormFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
 								<first>/home/hoinguyen/Documents/Vitis/UpConv_HLS/upconv_block0</first>
 								<second>
-									<count>2</count>
+									<count>1</count>
 									<item_version>0</item_version>
-									<item>
-										<first>
-											<first>../gen/Hls_Layers_UpConv.tpp</first>
-											<second>Apply_Norm_And_Write&amp;lt;32, 480, 30, 480&amp;gt;</second>
-										</first>
-										<second>274</second>
-									</item>
 									<item>
 										<first>
 											<first>../gen/Hls_Layers_UpConv.tpp</first>
 											<second>UpConv_Fused_Row&amp;lt;8, 16, 16, 960, 480&amp;gt;</second>
 										</first>
-										<second>364</second>
+										<second>270</second>
 									</item>
 								</second>
 							</item>
@@ -6762,21 +6181,14 @@
 							<item>
 								<first>/home/hoinguyen/Documents/Vitis/UpConv_HLS/upconv_block0</first>
 								<second>
-									<count>3</count>
+									<count>2</count>
 									<item_version>0</item_version>
-									<item>
-										<first>
-											<first>../gen/Hls_Layers_UpConv.tpp</first>
-											<second>Apply_Norm_And_Write&amp;lt;32, 480, 30, 480&amp;gt;</second>
-										</first>
-										<second>275</second>
-									</item>
 									<item>
 										<first>
 											<first>../gen/Hls_Layers_UpConv.tpp</first>
 											<second>UpConv_Fused_Row&amp;lt;8, 16, 16, 960, 480&amp;gt;</second>
 										</first>
-										<second>364</second>
+										<second>271</second>
 									</item>
 									<item>
 										<first>
@@ -6832,21 +6244,14 @@
 							<item>
 								<first>/home/hoinguyen/Documents/Vitis/UpConv_HLS/upconv_block0</first>
 								<second>
-									<count>3</count>
+									<count>2</count>
 									<item_version>0</item_version>
-									<item>
-										<first>
-											<first>../gen/Hls_Layers_UpConv.tpp</first>
-											<second>Apply_Norm_And_Write&amp;lt;32, 480, 30, 480&amp;gt;</second>
-										</first>
-										<second>275</second>
-									</item>
 									<item>
 										<first>
 											<first>../gen/Hls_Layers_UpConv.tpp</first>
 											<second>UpConv_Fused_Row&amp;lt;8, 16, 16, 960, 480&amp;gt;</second>
 										</first>
-										<second>364</second>
+										<second>271</second>
 									</item>
 									<item>
 										<first>
@@ -6895,30 +6300,23 @@
 						<name>c_3</name>
 						<fileName>../gen/Hls_Layers_UpConv.tpp</fileName>
 						<fileDirectory>/home/hoinguyen/Documents/Vitis/UpConv_HLS/upconv_block0</fileDirectory>
-						<lineNumber>269</lineNumber>
-						<contextFuncName>Apply_Norm_And_Write&amp;lt;32, 480, 30, 480&amp;gt;</contextFuncName>
-						<contextNormFuncName>Apply_Norm_And_Write_32_480_30_480_s</contextNormFuncName>
+						<lineNumber>265</lineNumber>
+						<contextFuncName>UpConv_Fused_Row&amp;lt;8, 16, 16, 960, 480&amp;gt;</contextFuncName>
+						<contextNormFuncName>UpConv_Fused_Row_8_16_16_960_480_s</contextNormFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
 								<first>/home/hoinguyen/Documents/Vitis/UpConv_HLS/upconv_block0</first>
 								<second>
-									<count>2</count>
+									<count>1</count>
 									<item_version>0</item_version>
-									<item>
-										<first>
-											<first>../gen/Hls_Layers_UpConv.tpp</first>
-											<second>Apply_Norm_And_Write&amp;lt;32, 480, 30, 480&amp;gt;</second>
-										</first>
-										<second>269</second>
-									</item>
 									<item>
 										<first>
 											<first>../gen/Hls_Layers_UpConv.tpp</first>
 											<second>UpConv_Fused_Row&amp;lt;8, 16, 16, 960, 480&amp;gt;</second>
 										</first>
-										<second>364</second>
+										<second>265</second>
 									</item>
 								</second>
 							</item>
@@ -6957,33 +6355,26 @@
 					<Obj>
 						<type>0</type>
 						<id>148</id>
-						<name>icmp_ln270_3</name>
+						<name>icmp_ln266_3</name>
 						<fileName>../gen/Hls_Layers_UpConv.tpp</fileName>
 						<fileDirectory>/home/hoinguyen/Documents/Vitis/UpConv_HLS/upconv_block0</fileDirectory>
-						<lineNumber>270</lineNumber>
-						<contextFuncName>Apply_Norm_And_Write&amp;lt;32, 480, 30, 480&amp;gt;</contextFuncName>
-						<contextNormFuncName>Apply_Norm_And_Write_32_480_30_480_s</contextNormFuncName>
+						<lineNumber>266</lineNumber>
+						<contextFuncName>UpConv_Fused_Row&amp;lt;8, 16, 16, 960, 480&amp;gt;</contextFuncName>
+						<contextNormFuncName>UpConv_Fused_Row_8_16_16_960_480_s</contextNormFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
 								<first>/home/hoinguyen/Documents/Vitis/UpConv_HLS/upconv_block0</first>
 								<second>
-									<count>2</count>
+									<count>1</count>
 									<item_version>0</item_version>
-									<item>
-										<first>
-											<first>../gen/Hls_Layers_UpConv.tpp</first>
-											<second>Apply_Norm_And_Write&amp;lt;32, 480, 30, 480&amp;gt;</second>
-										</first>
-										<second>270</second>
-									</item>
 									<item>
 										<first>
 											<first>../gen/Hls_Layers_UpConv.tpp</first>
 											<second>UpConv_Fused_Row&amp;lt;8, 16, 16, 960, 480&amp;gt;</second>
 										</first>
-										<second>364</second>
+										<second>266</second>
 									</item>
 								</second>
 							</item>
@@ -7021,33 +6412,26 @@
 					<Obj>
 						<type>0</type>
 						<id>149</id>
-						<name>u_6</name>
+						<name>u_147</name>
 						<fileName>../gen/Hls_Layers_UpConv.tpp</fileName>
 						<fileDirectory>/home/hoinguyen/Documents/Vitis/UpConv_HLS/upconv_block0</fileDirectory>
-						<lineNumber>271</lineNumber>
-						<contextFuncName>Apply_Norm_And_Write&amp;lt;32, 480, 30, 480&amp;gt;</contextFuncName>
-						<contextNormFuncName>Apply_Norm_And_Write_32_480_30_480_s</contextNormFuncName>
+						<lineNumber>267</lineNumber>
+						<contextFuncName>UpConv_Fused_Row&amp;lt;8, 16, 16, 960, 480&amp;gt;</contextFuncName>
+						<contextNormFuncName>UpConv_Fused_Row_8_16_16_960_480_s</contextNormFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
 								<first>/home/hoinguyen/Documents/Vitis/UpConv_HLS/upconv_block0</first>
 								<second>
-									<count>2</count>
+									<count>1</count>
 									<item_version>0</item_version>
-									<item>
-										<first>
-											<first>../gen/Hls_Layers_UpConv.tpp</first>
-											<second>Apply_Norm_And_Write&amp;lt;32, 480, 30, 480&amp;gt;</second>
-										</first>
-										<second>271</second>
-									</item>
 									<item>
 										<first>
 											<first>../gen/Hls_Layers_UpConv.tpp</first>
 											<second>UpConv_Fused_Row&amp;lt;8, 16, 16, 960, 480&amp;gt;</second>
 										</first>
-										<second>364</second>
+										<second>267</second>
 									</item>
 								</second>
 							</item>
@@ -7098,21 +6482,14 @@
 							<item>
 								<first>/home/hoinguyen/Documents/Vitis/UpConv_HLS/upconv_block0</first>
 								<second>
-									<count>3</count>
+									<count>2</count>
 									<item_version>0</item_version>
-									<item>
-										<first>
-											<first>../gen/Hls_Layers_UpConv.tpp</first>
-											<second>Apply_Norm_And_Write&amp;lt;32, 480, 30, 480&amp;gt;</second>
-										</first>
-										<second>271</second>
-									</item>
 									<item>
 										<first>
 											<first>../gen/Hls_Layers_UpConv.tpp</first>
 											<second>UpConv_Fused_Row&amp;lt;8, 16, 16, 960, 480&amp;gt;</second>
 										</first>
-										<second>364</second>
+										<second>267</second>
 									</item>
 									<item>
 										<first>
@@ -7156,33 +6533,26 @@
 					<Obj>
 						<type>0</type>
 						<id>151</id>
-						<name>u_7</name>
+						<name>u_138</name>
 						<fileName>../gen/Hls_Layers_UpConv.tpp</fileName>
 						<fileDirectory>/home/hoinguyen/Documents/Vitis/UpConv_HLS/upconv_block0</fileDirectory>
-						<lineNumber>272</lineNumber>
-						<contextFuncName>Apply_Norm_And_Write&amp;lt;32, 480, 30, 480&amp;gt;</contextFuncName>
-						<contextNormFuncName>Apply_Norm_And_Write_32_480_30_480_s</contextNormFuncName>
+						<lineNumber>268</lineNumber>
+						<contextFuncName>UpConv_Fused_Row&amp;lt;8, 16, 16, 960, 480&amp;gt;</contextFuncName>
+						<contextNormFuncName>UpConv_Fused_Row_8_16_16_960_480_s</contextNormFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
 								<first>/home/hoinguyen/Documents/Vitis/UpConv_HLS/upconv_block0</first>
 								<second>
-									<count>2</count>
+									<count>1</count>
 									<item_version>0</item_version>
-									<item>
-										<first>
-											<first>../gen/Hls_Layers_UpConv.tpp</first>
-											<second>Apply_Norm_And_Write&amp;lt;32, 480, 30, 480&amp;gt;</second>
-										</first>
-										<second>272</second>
-									</item>
 									<item>
 										<first>
 											<first>../gen/Hls_Layers_UpConv.tpp</first>
 											<second>UpConv_Fused_Row&amp;lt;8, 16, 16, 960, 480&amp;gt;</second>
 										</first>
-										<second>364</second>
+										<second>268</second>
 									</item>
 								</second>
 							</item>
@@ -7233,21 +6603,14 @@
 							<item>
 								<first>/home/hoinguyen/Documents/Vitis/UpConv_HLS/upconv_block0</first>
 								<second>
-									<count>3</count>
+									<count>2</count>
 									<item_version>0</item_version>
-									<item>
-										<first>
-											<first>../gen/Hls_Layers_UpConv.tpp</first>
-											<second>Apply_Norm_And_Write&amp;lt;32, 480, 30, 480&amp;gt;</second>
-										</first>
-										<second>272</second>
-									</item>
 									<item>
 										<first>
 											<first>../gen/Hls_Layers_UpConv.tpp</first>
 											<second>UpConv_Fused_Row&amp;lt;8, 16, 16, 960, 480&amp;gt;</second>
 										</first>
-										<second>364</second>
+										<second>268</second>
 									</item>
 									<item>
 										<first>
@@ -7291,33 +6654,26 @@
 					<Obj>
 						<type>0</type>
 						<id>153</id>
-						<name>void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_53</name>
+						<name>void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_73</name>
 						<fileName>../gen/Hls_Layers_UpConv.tpp</fileName>
 						<fileDirectory>/home/hoinguyen/Documents/Vitis/UpConv_HLS/upconv_block0</fileDirectory>
-						<lineNumber>270</lineNumber>
-						<contextFuncName>Apply_Norm_And_Write&amp;lt;32, 480, 30, 480&amp;gt;</contextFuncName>
-						<contextNormFuncName>Apply_Norm_And_Write_32_480_30_480_s</contextNormFuncName>
+						<lineNumber>266</lineNumber>
+						<contextFuncName>UpConv_Fused_Row&amp;lt;8, 16, 16, 960, 480&amp;gt;</contextFuncName>
+						<contextNormFuncName>UpConv_Fused_Row_8_16_16_960_480_s</contextNormFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
 								<first>/home/hoinguyen/Documents/Vitis/UpConv_HLS/upconv_block0</first>
 								<second>
-									<count>2</count>
+									<count>1</count>
 									<item_version>0</item_version>
-									<item>
-										<first>
-											<first>../gen/Hls_Layers_UpConv.tpp</first>
-											<second>Apply_Norm_And_Write&amp;lt;32, 480, 30, 480&amp;gt;</second>
-										</first>
-										<second>270</second>
-									</item>
 									<item>
 										<first>
 											<first>../gen/Hls_Layers_UpConv.tpp</first>
 											<second>UpConv_Fused_Row&amp;lt;8, 16, 16, 960, 480&amp;gt;</second>
 										</first>
-										<second>364</second>
+										<second>266</second>
 									</item>
 								</second>
 							</item>
@@ -7354,33 +6710,26 @@
 					<Obj>
 						<type>0</type>
 						<id>154</id>
-						<name>sub_i_3</name>
+						<name>sub151_3</name>
 						<fileName>../gen/Hls_Layers_UpConv.tpp</fileName>
 						<fileDirectory>/home/hoinguyen/Documents/Vitis/UpConv_HLS/upconv_block0</fileDirectory>
-						<lineNumber>273</lineNumber>
-						<contextFuncName>Apply_Norm_And_Write&amp;lt;32, 480, 30, 480&amp;gt;</contextFuncName>
-						<contextNormFuncName>Apply_Norm_And_Write_32_480_30_480_s</contextNormFuncName>
+						<lineNumber>269</lineNumber>
+						<contextFuncName>UpConv_Fused_Row&amp;lt;8, 16, 16, 960, 480&amp;gt;</contextFuncName>
+						<contextNormFuncName>UpConv_Fused_Row_8_16_16_960_480_s</contextNormFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
 								<first>/home/hoinguyen/Documents/Vitis/UpConv_HLS/upconv_block0</first>
 								<second>
-									<count>2</count>
+									<count>1</count>
 									<item_version>0</item_version>
-									<item>
-										<first>
-											<first>../gen/Hls_Layers_UpConv.tpp</first>
-											<second>Apply_Norm_And_Write&amp;lt;32, 480, 30, 480&amp;gt;</second>
-										</first>
-										<second>273</second>
-									</item>
 									<item>
 										<first>
 											<first>../gen/Hls_Layers_UpConv.tpp</first>
 											<second>UpConv_Fused_Row&amp;lt;8, 16, 16, 960, 480&amp;gt;</second>
 										</first>
-										<second>364</second>
+										<second>269</second>
 									</item>
 								</second>
 							</item>
@@ -7418,33 +6767,26 @@
 					<Obj>
 						<type>0</type>
 						<id>155</id>
-						<name>mul27_i_3</name>
+						<name>mul152_3</name>
 						<fileName>../gen/Hls_Layers_UpConv.tpp</fileName>
 						<fileDirectory>/home/hoinguyen/Documents/Vitis/UpConv_HLS/upconv_block0</fileDirectory>
-						<lineNumber>273</lineNumber>
-						<contextFuncName>Apply_Norm_And_Write&amp;lt;32, 480, 30, 480&amp;gt;</contextFuncName>
-						<contextNormFuncName>Apply_Norm_And_Write_32_480_30_480_s</contextNormFuncName>
+						<lineNumber>269</lineNumber>
+						<contextFuncName>UpConv_Fused_Row&amp;lt;8, 16, 16, 960, 480&amp;gt;</contextFuncName>
+						<contextNormFuncName>UpConv_Fused_Row_8_16_16_960_480_s</contextNormFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
 								<first>/home/hoinguyen/Documents/Vitis/UpConv_HLS/upconv_block0</first>
 								<second>
-									<count>2</count>
+									<count>1</count>
 									<item_version>0</item_version>
-									<item>
-										<first>
-											<first>../gen/Hls_Layers_UpConv.tpp</first>
-											<second>Apply_Norm_And_Write&amp;lt;32, 480, 30, 480&amp;gt;</second>
-										</first>
-										<second>273</second>
-									</item>
 									<item>
 										<first>
 											<first>../gen/Hls_Layers_UpConv.tpp</first>
 											<second>UpConv_Fused_Row&amp;lt;8, 16, 16, 960, 480&amp;gt;</second>
 										</first>
-										<second>364</second>
+										<second>269</second>
 									</item>
 								</second>
 							</item>
@@ -7482,33 +6824,26 @@
 					<Obj>
 						<type>0</type>
 						<id>156</id>
-						<name>mul28_i_3</name>
+						<name>mul153_3</name>
 						<fileName>../gen/Hls_Layers_UpConv.tpp</fileName>
 						<fileDirectory>/home/hoinguyen/Documents/Vitis/UpConv_HLS/upconv_block0</fileDirectory>
-						<lineNumber>273</lineNumber>
-						<contextFuncName>Apply_Norm_And_Write&amp;lt;32, 480, 30, 480&amp;gt;</contextFuncName>
-						<contextNormFuncName>Apply_Norm_And_Write_32_480_30_480_s</contextNormFuncName>
+						<lineNumber>269</lineNumber>
+						<contextFuncName>UpConv_Fused_Row&amp;lt;8, 16, 16, 960, 480&amp;gt;</contextFuncName>
+						<contextNormFuncName>UpConv_Fused_Row_8_16_16_960_480_s</contextNormFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
 								<first>/home/hoinguyen/Documents/Vitis/UpConv_HLS/upconv_block0</first>
 								<second>
-									<count>2</count>
+									<count>1</count>
 									<item_version>0</item_version>
-									<item>
-										<first>
-											<first>../gen/Hls_Layers_UpConv.tpp</first>
-											<second>Apply_Norm_And_Write&amp;lt;32, 480, 30, 480&amp;gt;</second>
-										</first>
-										<second>273</second>
-									</item>
 									<item>
 										<first>
 											<first>../gen/Hls_Layers_UpConv.tpp</first>
 											<second>UpConv_Fused_Row&amp;lt;8, 16, 16, 960, 480&amp;gt;</second>
 										</first>
-										<second>364</second>
+										<second>269</second>
 									</item>
 								</second>
 							</item>
@@ -7546,33 +6881,26 @@
 					<Obj>
 						<type>0</type>
 						<id>157</id>
-						<name>add29_i_3</name>
+						<name>add154_3</name>
 						<fileName>../gen/Hls_Layers_UpConv.tpp</fileName>
 						<fileDirectory>/home/hoinguyen/Documents/Vitis/UpConv_HLS/upconv_block0</fileDirectory>
-						<lineNumber>273</lineNumber>
-						<contextFuncName>Apply_Norm_And_Write&amp;lt;32, 480, 30, 480&amp;gt;</contextFuncName>
-						<contextNormFuncName>Apply_Norm_And_Write_32_480_30_480_s</contextNormFuncName>
+						<lineNumber>269</lineNumber>
+						<contextFuncName>UpConv_Fused_Row&amp;lt;8, 16, 16, 960, 480&amp;gt;</contextFuncName>
+						<contextNormFuncName>UpConv_Fused_Row_8_16_16_960_480_s</contextNormFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
 								<first>/home/hoinguyen/Documents/Vitis/UpConv_HLS/upconv_block0</first>
 								<second>
-									<count>2</count>
+									<count>1</count>
 									<item_version>0</item_version>
-									<item>
-										<first>
-											<first>../gen/Hls_Layers_UpConv.tpp</first>
-											<second>Apply_Norm_And_Write&amp;lt;32, 480, 30, 480&amp;gt;</second>
-										</first>
-										<second>273</second>
-									</item>
 									<item>
 										<first>
 											<first>../gen/Hls_Layers_UpConv.tpp</first>
 											<second>UpConv_Fused_Row&amp;lt;8, 16, 16, 960, 480&amp;gt;</second>
 										</first>
-										<second>364</second>
+										<second>269</second>
 									</item>
 								</second>
 							</item>
@@ -7613,30 +6941,23 @@
 						<name>norm_3</name>
 						<fileName>../gen/Hls_Layers_UpConv.tpp</fileName>
 						<fileDirectory>/home/hoinguyen/Documents/Vitis/UpConv_HLS/upconv_block0</fileDirectory>
-						<lineNumber>270</lineNumber>
-						<contextFuncName>Apply_Norm_And_Write&amp;lt;32, 480, 30, 480&amp;gt;</contextFuncName>
-						<contextNormFuncName>Apply_Norm_And_Write_32_480_30_480_s</contextNormFuncName>
+						<lineNumber>266</lineNumber>
+						<contextFuncName>UpConv_Fused_Row&amp;lt;8, 16, 16, 960, 480&amp;gt;</contextFuncName>
+						<contextNormFuncName>UpConv_Fused_Row_8_16_16_960_480_s</contextNormFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
 								<first>/home/hoinguyen/Documents/Vitis/UpConv_HLS/upconv_block0</first>
 								<second>
-									<count>2</count>
+									<count>1</count>
 									<item_version>0</item_version>
-									<item>
-										<first>
-											<first>../gen/Hls_Layers_UpConv.tpp</first>
-											<second>Apply_Norm_And_Write&amp;lt;32, 480, 30, 480&amp;gt;</second>
-										</first>
-										<second>270</second>
-									</item>
 									<item>
 										<first>
 											<first>../gen/Hls_Layers_UpConv.tpp</first>
 											<second>UpConv_Fused_Row&amp;lt;8, 16, 16, 960, 480&amp;gt;</second>
 										</first>
-										<second>364</second>
+										<second>266</second>
 									</item>
 								</second>
 							</item>
@@ -7675,33 +6996,26 @@
 					<Obj>
 						<type>0</type>
 						<id>159</id>
-						<name>cmp33_i_3</name>
+						<name>cmp158_3</name>
 						<fileName>../gen/Hls_Layers_UpConv.tpp</fileName>
 						<fileDirectory>/home/hoinguyen/Documents/Vitis/UpConv_HLS/upconv_block0</fileDirectory>
-						<lineNumber>274</lineNumber>
-						<contextFuncName>Apply_Norm_And_Write&amp;lt;32, 480, 30, 480&amp;gt;</contextFuncName>
-						<contextNormFuncName>Apply_Norm_And_Write_32_480_30_480_s</contextNormFuncName>
+						<lineNumber>270</lineNumber>
+						<contextFuncName>UpConv_Fused_Row&amp;lt;8, 16, 16, 960, 480&amp;gt;</contextFuncName>
+						<contextNormFuncName>UpConv_Fused_Row_8_16_16_960_480_s</contextNormFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
 								<first>/home/hoinguyen/Documents/Vitis/UpConv_HLS/upconv_block0</first>
 								<second>
-									<count>2</count>
+									<count>1</count>
 									<item_version>0</item_version>
-									<item>
-										<first>
-											<first>../gen/Hls_Layers_UpConv.tpp</first>
-											<second>Apply_Norm_And_Write&amp;lt;32, 480, 30, 480&amp;gt;</second>
-										</first>
-										<second>274</second>
-									</item>
 									<item>
 										<first>
 											<first>../gen/Hls_Layers_UpConv.tpp</first>
 											<second>UpConv_Fused_Row&amp;lt;8, 16, 16, 960, 480&amp;gt;</second>
 										</first>
-										<second>364</second>
+										<second>270</second>
 									</item>
 								</second>
 							</item>
@@ -7751,21 +7065,14 @@
 							<item>
 								<first>/home/hoinguyen/Documents/Vitis/UpConv_HLS/upconv_block0</first>
 								<second>
-									<count>3</count>
+									<count>2</count>
 									<item_version>0</item_version>
-									<item>
-										<first>
-											<first>../gen/Hls_Layers_UpConv.tpp</first>
-											<second>Apply_Norm_And_Write&amp;lt;32, 480, 30, 480&amp;gt;</second>
-										</first>
-										<second>275</second>
-									</item>
 									<item>
 										<first>
 											<first>../gen/Hls_Layers_UpConv.tpp</first>
 											<second>UpConv_Fused_Row&amp;lt;8, 16, 16, 960, 480&amp;gt;</second>
 										</first>
-										<second>364</second>
+										<second>271</second>
 									</item>
 									<item>
 										<first>
@@ -7821,21 +7128,14 @@
 							<item>
 								<first>/home/hoinguyen/Documents/Vitis/UpConv_HLS/upconv_block0</first>
 								<second>
-									<count>3</count>
+									<count>2</count>
 									<item_version>0</item_version>
-									<item>
-										<first>
-											<first>../gen/Hls_Layers_UpConv.tpp</first>
-											<second>Apply_Norm_And_Write&amp;lt;32, 480, 30, 480&amp;gt;</second>
-										</first>
-										<second>275</second>
-									</item>
 									<item>
 										<first>
 											<first>../gen/Hls_Layers_UpConv.tpp</first>
 											<second>UpConv_Fused_Row&amp;lt;8, 16, 16, 960, 480&amp;gt;</second>
 										</first>
-										<second>364</second>
+										<second>271</second>
 									</item>
 									<item>
 										<first>
@@ -7884,30 +7184,23 @@
 						<name>c_4</name>
 						<fileName>../gen/Hls_Layers_UpConv.tpp</fileName>
 						<fileDirectory>/home/hoinguyen/Documents/Vitis/UpConv_HLS/upconv_block0</fileDirectory>
-						<lineNumber>269</lineNumber>
-						<contextFuncName>Apply_Norm_And_Write&amp;lt;32, 480, 30, 480&amp;gt;</contextFuncName>
-						<contextNormFuncName>Apply_Norm_And_Write_32_480_30_480_s</contextNormFuncName>
+						<lineNumber>265</lineNumber>
+						<contextFuncName>UpConv_Fused_Row&amp;lt;8, 16, 16, 960, 480&amp;gt;</contextFuncName>
+						<contextNormFuncName>UpConv_Fused_Row_8_16_16_960_480_s</contextNormFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
 								<first>/home/hoinguyen/Documents/Vitis/UpConv_HLS/upconv_block0</first>
 								<second>
-									<count>2</count>
+									<count>1</count>
 									<item_version>0</item_version>
-									<item>
-										<first>
-											<first>../gen/Hls_Layers_UpConv.tpp</first>
-											<second>Apply_Norm_And_Write&amp;lt;32, 480, 30, 480&amp;gt;</second>
-										</first>
-										<second>269</second>
-									</item>
 									<item>
 										<first>
 											<first>../gen/Hls_Layers_UpConv.tpp</first>
 											<second>UpConv_Fused_Row&amp;lt;8, 16, 16, 960, 480&amp;gt;</second>
 										</first>
-										<second>364</second>
+										<second>265</second>
 									</item>
 								</second>
 							</item>
@@ -7946,33 +7239,26 @@
 					<Obj>
 						<type>0</type>
 						<id>163</id>
-						<name>icmp_ln270_4</name>
+						<name>icmp_ln266_4</name>
 						<fileName>../gen/Hls_Layers_UpConv.tpp</fileName>
 						<fileDirectory>/home/hoinguyen/Documents/Vitis/UpConv_HLS/upconv_block0</fileDirectory>
-						<lineNumber>270</lineNumber>
-						<contextFuncName>Apply_Norm_And_Write&amp;lt;32, 480, 30, 480&amp;gt;</contextFuncName>
-						<contextNormFuncName>Apply_Norm_And_Write_32_480_30_480_s</contextNormFuncName>
+						<lineNumber>266</lineNumber>
+						<contextFuncName>UpConv_Fused_Row&amp;lt;8, 16, 16, 960, 480&amp;gt;</contextFuncName>
+						<contextNormFuncName>UpConv_Fused_Row_8_16_16_960_480_s</contextNormFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
 								<first>/home/hoinguyen/Documents/Vitis/UpConv_HLS/upconv_block0</first>
 								<second>
-									<count>2</count>
+									<count>1</count>
 									<item_version>0</item_version>
-									<item>
-										<first>
-											<first>../gen/Hls_Layers_UpConv.tpp</first>
-											<second>Apply_Norm_And_Write&amp;lt;32, 480, 30, 480&amp;gt;</second>
-										</first>
-										<second>270</second>
-									</item>
 									<item>
 										<first>
 											<first>../gen/Hls_Layers_UpConv.tpp</first>
 											<second>UpConv_Fused_Row&amp;lt;8, 16, 16, 960, 480&amp;gt;</second>
 										</first>
-										<second>364</second>
+										<second>266</second>
 									</item>
 								</second>
 							</item>
@@ -8010,33 +7296,26 @@
 					<Obj>
 						<type>0</type>
 						<id>164</id>
-						<name>u_8</name>
+						<name>u_148</name>
 						<fileName>../gen/Hls_Layers_UpConv.tpp</fileName>
 						<fileDirectory>/home/hoinguyen/Documents/Vitis/UpConv_HLS/upconv_block0</fileDirectory>
-						<lineNumber>271</lineNumber>
-						<contextFuncName>Apply_Norm_And_Write&amp;lt;32, 480, 30, 480&amp;gt;</contextFuncName>
-						<contextNormFuncName>Apply_Norm_And_Write_32_480_30_480_s</contextNormFuncName>
+						<lineNumber>267</lineNumber>
+						<contextFuncName>UpConv_Fused_Row&amp;lt;8, 16, 16, 960, 480&amp;gt;</contextFuncName>
+						<contextNormFuncName>UpConv_Fused_Row_8_16_16_960_480_s</contextNormFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
 								<first>/home/hoinguyen/Documents/Vitis/UpConv_HLS/upconv_block0</first>
 								<second>
-									<count>2</count>
+									<count>1</count>
 									<item_version>0</item_version>
-									<item>
-										<first>
-											<first>../gen/Hls_Layers_UpConv.tpp</first>
-											<second>Apply_Norm_And_Write&amp;lt;32, 480, 30, 480&amp;gt;</second>
-										</first>
-										<second>271</second>
-									</item>
 									<item>
 										<first>
 											<first>../gen/Hls_Layers_UpConv.tpp</first>
 											<second>UpConv_Fused_Row&amp;lt;8, 16, 16, 960, 480&amp;gt;</second>
 										</first>
-										<second>364</second>
+										<second>267</second>
 									</item>
 								</second>
 							</item>
@@ -8087,21 +7366,14 @@
 							<item>
 								<first>/home/hoinguyen/Documents/Vitis/UpConv_HLS/upconv_block0</first>
 								<second>
-									<count>3</count>
+									<count>2</count>
 									<item_version>0</item_version>
-									<item>
-										<first>
-											<first>../gen/Hls_Layers_UpConv.tpp</first>
-											<second>Apply_Norm_And_Write&amp;lt;32, 480, 30, 480&amp;gt;</second>
-										</first>
-										<second>271</second>
-									</item>
 									<item>
 										<first>
 											<first>../gen/Hls_Layers_UpConv.tpp</first>
 											<second>UpConv_Fused_Row&amp;lt;8, 16, 16, 960, 480&amp;gt;</second>
 										</first>
-										<second>364</second>
+										<second>267</second>
 									</item>
 									<item>
 										<first>
@@ -8145,33 +7417,26 @@
 					<Obj>
 						<type>0</type>
 						<id>166</id>
-						<name>u_9</name>
+						<name>u_139</name>
 						<fileName>../gen/Hls_Layers_UpConv.tpp</fileName>
 						<fileDirectory>/home/hoinguyen/Documents/Vitis/UpConv_HLS/upconv_block0</fileDirectory>
-						<lineNumber>272</lineNumber>
-						<contextFuncName>Apply_Norm_And_Write&amp;lt;32, 480, 30, 480&amp;gt;</contextFuncName>
-						<contextNormFuncName>Apply_Norm_And_Write_32_480_30_480_s</contextNormFuncName>
+						<lineNumber>268</lineNumber>
+						<contextFuncName>UpConv_Fused_Row&amp;lt;8, 16, 16, 960, 480&amp;gt;</contextFuncName>
+						<contextNormFuncName>UpConv_Fused_Row_8_16_16_960_480_s</contextNormFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
 								<first>/home/hoinguyen/Documents/Vitis/UpConv_HLS/upconv_block0</first>
 								<second>
-									<count>2</count>
+									<count>1</count>
 									<item_version>0</item_version>
-									<item>
-										<first>
-											<first>../gen/Hls_Layers_UpConv.tpp</first>
-											<second>Apply_Norm_And_Write&amp;lt;32, 480, 30, 480&amp;gt;</second>
-										</first>
-										<second>272</second>
-									</item>
 									<item>
 										<first>
 											<first>../gen/Hls_Layers_UpConv.tpp</first>
 											<second>UpConv_Fused_Row&amp;lt;8, 16, 16, 960, 480&amp;gt;</second>
 										</first>
-										<second>364</second>
+										<second>268</second>
 									</item>
 								</second>
 							</item>
@@ -8222,21 +7487,14 @@
 							<item>
 								<first>/home/hoinguyen/Documents/Vitis/UpConv_HLS/upconv_block0</first>
 								<second>
-									<count>3</count>
+									<count>2</count>
 									<item_version>0</item_version>
-									<item>
-										<first>
-											<first>../gen/Hls_Layers_UpConv.tpp</first>
-											<second>Apply_Norm_And_Write&amp;lt;32, 480, 30, 480&amp;gt;</second>
-										</first>
-										<second>272</second>
-									</item>
 									<item>
 										<first>
 											<first>../gen/Hls_Layers_UpConv.tpp</first>
 											<second>UpConv_Fused_Row&amp;lt;8, 16, 16, 960, 480&amp;gt;</second>
 										</first>
-										<second>364</second>
+										<second>268</second>
 									</item>
 									<item>
 										<first>
@@ -8280,33 +7538,26 @@
 					<Obj>
 						<type>0</type>
 						<id>168</id>
-						<name>void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_54</name>
+						<name>void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_74</name>
 						<fileName>../gen/Hls_Layers_UpConv.tpp</fileName>
 						<fileDirectory>/home/hoinguyen/Documents/Vitis/UpConv_HLS/upconv_block0</fileDirectory>
-						<lineNumber>270</lineNumber>
-						<contextFuncName>Apply_Norm_And_Write&amp;lt;32, 480, 30, 480&amp;gt;</contextFuncName>
-						<contextNormFuncName>Apply_Norm_And_Write_32_480_30_480_s</contextNormFuncName>
+						<lineNumber>266</lineNumber>
+						<contextFuncName>UpConv_Fused_Row&amp;lt;8, 16, 16, 960, 480&amp;gt;</contextFuncName>
+						<contextNormFuncName>UpConv_Fused_Row_8_16_16_960_480_s</contextNormFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
 								<first>/home/hoinguyen/Documents/Vitis/UpConv_HLS/upconv_block0</first>
 								<second>
-									<count>2</count>
+									<count>1</count>
 									<item_version>0</item_version>
-									<item>
-										<first>
-											<first>../gen/Hls_Layers_UpConv.tpp</first>
-											<second>Apply_Norm_And_Write&amp;lt;32, 480, 30, 480&amp;gt;</second>
-										</first>
-										<second>270</second>
-									</item>
 									<item>
 										<first>
 											<first>../gen/Hls_Layers_UpConv.tpp</first>
 											<second>UpConv_Fused_Row&amp;lt;8, 16, 16, 960, 480&amp;gt;</second>
 										</first>
-										<second>364</second>
+										<second>266</second>
 									</item>
 								</second>
 							</item>
@@ -8343,33 +7594,26 @@
 					<Obj>
 						<type>0</type>
 						<id>169</id>
-						<name>sub_i_4</name>
+						<name>sub151_4</name>
 						<fileName>../gen/Hls_Layers_UpConv.tpp</fileName>
 						<fileDirectory>/home/hoinguyen/Documents/Vitis/UpConv_HLS/upconv_block0</fileDirectory>
-						<lineNumber>273</lineNumber>
-						<contextFuncName>Apply_Norm_And_Write&amp;lt;32, 480, 30, 480&amp;gt;</contextFuncName>
-						<contextNormFuncName>Apply_Norm_And_Write_32_480_30_480_s</contextNormFuncName>
+						<lineNumber>269</lineNumber>
+						<contextFuncName>UpConv_Fused_Row&amp;lt;8, 16, 16, 960, 480&amp;gt;</contextFuncName>
+						<contextNormFuncName>UpConv_Fused_Row_8_16_16_960_480_s</contextNormFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
 								<first>/home/hoinguyen/Documents/Vitis/UpConv_HLS/upconv_block0</first>
 								<second>
-									<count>2</count>
+									<count>1</count>
 									<item_version>0</item_version>
-									<item>
-										<first>
-											<first>../gen/Hls_Layers_UpConv.tpp</first>
-											<second>Apply_Norm_And_Write&amp;lt;32, 480, 30, 480&amp;gt;</second>
-										</first>
-										<second>273</second>
-									</item>
 									<item>
 										<first>
 											<first>../gen/Hls_Layers_UpConv.tpp</first>
 											<second>UpConv_Fused_Row&amp;lt;8, 16, 16, 960, 480&amp;gt;</second>
 										</first>
-										<second>364</second>
+										<second>269</second>
 									</item>
 								</second>
 							</item>
@@ -8407,33 +7651,26 @@
 					<Obj>
 						<type>0</type>
 						<id>170</id>
-						<name>mul27_i_4</name>
+						<name>mul152_4</name>
 						<fileName>../gen/Hls_Layers_UpConv.tpp</fileName>
 						<fileDirectory>/home/hoinguyen/Documents/Vitis/UpConv_HLS/upconv_block0</fileDirectory>
-						<lineNumber>273</lineNumber>
-						<contextFuncName>Apply_Norm_And_Write&amp;lt;32, 480, 30, 480&amp;gt;</contextFuncName>
-						<contextNormFuncName>Apply_Norm_And_Write_32_480_30_480_s</contextNormFuncName>
+						<lineNumber>269</lineNumber>
+						<contextFuncName>UpConv_Fused_Row&amp;lt;8, 16, 16, 960, 480&amp;gt;</contextFuncName>
+						<contextNormFuncName>UpConv_Fused_Row_8_16_16_960_480_s</contextNormFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
 								<first>/home/hoinguyen/Documents/Vitis/UpConv_HLS/upconv_block0</first>
 								<second>
-									<count>2</count>
+									<count>1</count>
 									<item_version>0</item_version>
-									<item>
-										<first>
-											<first>../gen/Hls_Layers_UpConv.tpp</first>
-											<second>Apply_Norm_And_Write&amp;lt;32, 480, 30, 480&amp;gt;</second>
-										</first>
-										<second>273</second>
-									</item>
 									<item>
 										<first>
 											<first>../gen/Hls_Layers_UpConv.tpp</first>
 											<second>UpConv_Fused_Row&amp;lt;8, 16, 16, 960, 480&amp;gt;</second>
 										</first>
-										<second>364</second>
+										<second>269</second>
 									</item>
 								</second>
 							</item>
@@ -8471,33 +7708,26 @@
 					<Obj>
 						<type>0</type>
 						<id>171</id>
-						<name>mul28_i_4</name>
+						<name>mul153_4</name>
 						<fileName>../gen/Hls_Layers_UpConv.tpp</fileName>
 						<fileDirectory>/home/hoinguyen/Documents/Vitis/UpConv_HLS/upconv_block0</fileDirectory>
-						<lineNumber>273</lineNumber>
-						<contextFuncName>Apply_Norm_And_Write&amp;lt;32, 480, 30, 480&amp;gt;</contextFuncName>
-						<contextNormFuncName>Apply_Norm_And_Write_32_480_30_480_s</contextNormFuncName>
+						<lineNumber>269</lineNumber>
+						<contextFuncName>UpConv_Fused_Row&amp;lt;8, 16, 16, 960, 480&amp;gt;</contextFuncName>
+						<contextNormFuncName>UpConv_Fused_Row_8_16_16_960_480_s</contextNormFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
 								<first>/home/hoinguyen/Documents/Vitis/UpConv_HLS/upconv_block0</first>
 								<second>
-									<count>2</count>
+									<count>1</count>
 									<item_version>0</item_version>
-									<item>
-										<first>
-											<first>../gen/Hls_Layers_UpConv.tpp</first>
-											<second>Apply_Norm_And_Write&amp;lt;32, 480, 30, 480&amp;gt;</second>
-										</first>
-										<second>273</second>
-									</item>
 									<item>
 										<first>
 											<first>../gen/Hls_Layers_UpConv.tpp</first>
 											<second>UpConv_Fused_Row&amp;lt;8, 16, 16, 960, 480&amp;gt;</second>
 										</first>
-										<second>364</second>
+										<second>269</second>
 									</item>
 								</second>
 							</item>
@@ -8535,33 +7765,26 @@
 					<Obj>
 						<type>0</type>
 						<id>172</id>
-						<name>add29_i_4</name>
+						<name>add154_4</name>
 						<fileName>../gen/Hls_Layers_UpConv.tpp</fileName>
 						<fileDirectory>/home/hoinguyen/Documents/Vitis/UpConv_HLS/upconv_block0</fileDirectory>
-						<lineNumber>273</lineNumber>
-						<contextFuncName>Apply_Norm_And_Write&amp;lt;32, 480, 30, 480&amp;gt;</contextFuncName>
-						<contextNormFuncName>Apply_Norm_And_Write_32_480_30_480_s</contextNormFuncName>
+						<lineNumber>269</lineNumber>
+						<contextFuncName>UpConv_Fused_Row&amp;lt;8, 16, 16, 960, 480&amp;gt;</contextFuncName>
+						<contextNormFuncName>UpConv_Fused_Row_8_16_16_960_480_s</contextNormFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
 								<first>/home/hoinguyen/Documents/Vitis/UpConv_HLS/upconv_block0</first>
 								<second>
-									<count>2</count>
+									<count>1</count>
 									<item_version>0</item_version>
-									<item>
-										<first>
-											<first>../gen/Hls_Layers_UpConv.tpp</first>
-											<second>Apply_Norm_And_Write&amp;lt;32, 480, 30, 480&amp;gt;</second>
-										</first>
-										<second>273</second>
-									</item>
 									<item>
 										<first>
 											<first>../gen/Hls_Layers_UpConv.tpp</first>
 											<second>UpConv_Fused_Row&amp;lt;8, 16, 16, 960, 480&amp;gt;</second>
 										</first>
-										<second>364</second>
+										<second>269</second>
 									</item>
 								</second>
 							</item>
@@ -8602,30 +7825,23 @@
 						<name>norm_4</name>
 						<fileName>../gen/Hls_Layers_UpConv.tpp</fileName>
 						<fileDirectory>/home/hoinguyen/Documents/Vitis/UpConv_HLS/upconv_block0</fileDirectory>
-						<lineNumber>270</lineNumber>
-						<contextFuncName>Apply_Norm_And_Write&amp;lt;32, 480, 30, 480&amp;gt;</contextFuncName>
-						<contextNormFuncName>Apply_Norm_And_Write_32_480_30_480_s</contextNormFuncName>
+						<lineNumber>266</lineNumber>
+						<contextFuncName>UpConv_Fused_Row&amp;lt;8, 16, 16, 960, 480&amp;gt;</contextFuncName>
+						<contextNormFuncName>UpConv_Fused_Row_8_16_16_960_480_s</contextNormFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
 								<first>/home/hoinguyen/Documents/Vitis/UpConv_HLS/upconv_block0</first>
 								<second>
-									<count>2</count>
+									<count>1</count>
 									<item_version>0</item_version>
-									<item>
-										<first>
-											<first>../gen/Hls_Layers_UpConv.tpp</first>
-											<second>Apply_Norm_And_Write&amp;lt;32, 480, 30, 480&amp;gt;</second>
-										</first>
-										<second>270</second>
-									</item>
 									<item>
 										<first>
 											<first>../gen/Hls_Layers_UpConv.tpp</first>
 											<second>UpConv_Fused_Row&amp;lt;8, 16, 16, 960, 480&amp;gt;</second>
 										</first>
-										<second>364</second>
+										<second>266</second>
 									</item>
 								</second>
 							</item>
@@ -8664,33 +7880,26 @@
 					<Obj>
 						<type>0</type>
 						<id>174</id>
-						<name>cmp33_i_4</name>
+						<name>cmp158_4</name>
 						<fileName>../gen/Hls_Layers_UpConv.tpp</fileName>
 						<fileDirectory>/home/hoinguyen/Documents/Vitis/UpConv_HLS/upconv_block0</fileDirectory>
-						<lineNumber>274</lineNumber>
-						<contextFuncName>Apply_Norm_And_Write&amp;lt;32, 480, 30, 480&amp;gt;</contextFuncName>
-						<contextNormFuncName>Apply_Norm_And_Write_32_480_30_480_s</contextNormFuncName>
+						<lineNumber>270</lineNumber>
+						<contextFuncName>UpConv_Fused_Row&amp;lt;8, 16, 16, 960, 480&amp;gt;</contextFuncName>
+						<contextNormFuncName>UpConv_Fused_Row_8_16_16_960_480_s</contextNormFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
 								<first>/home/hoinguyen/Documents/Vitis/UpConv_HLS/upconv_block0</first>
 								<second>
-									<count>2</count>
+									<count>1</count>
 									<item_version>0</item_version>
-									<item>
-										<first>
-											<first>../gen/Hls_Layers_UpConv.tpp</first>
-											<second>Apply_Norm_And_Write&amp;lt;32, 480, 30, 480&amp;gt;</second>
-										</first>
-										<second>274</second>
-									</item>
 									<item>
 										<first>
 											<first>../gen/Hls_Layers_UpConv.tpp</first>
 											<second>UpConv_Fused_Row&amp;lt;8, 16, 16, 960, 480&amp;gt;</second>
 										</first>
-										<second>364</second>
+										<second>270</second>
 									</item>
 								</second>
 							</item>
@@ -8740,21 +7949,14 @@
 							<item>
 								<first>/home/hoinguyen/Documents/Vitis/UpConv_HLS/upconv_block0</first>
 								<second>
-									<count>3</count>
+									<count>2</count>
 									<item_version>0</item_version>
-									<item>
-										<first>
-											<first>../gen/Hls_Layers_UpConv.tpp</first>
-											<second>Apply_Norm_And_Write&amp;lt;32, 480, 30, 480&amp;gt;</second>
-										</first>
-										<second>275</second>
-									</item>
 									<item>
 										<first>
 											<first>../gen/Hls_Layers_UpConv.tpp</first>
 											<second>UpConv_Fused_Row&amp;lt;8, 16, 16, 960, 480&amp;gt;</second>
 										</first>
-										<second>364</second>
+										<second>271</second>
 									</item>
 									<item>
 										<first>
@@ -8810,21 +8012,14 @@
 							<item>
 								<first>/home/hoinguyen/Documents/Vitis/UpConv_HLS/upconv_block0</first>
 								<second>
-									<count>3</count>
+									<count>2</count>
 									<item_version>0</item_version>
-									<item>
-										<first>
-											<first>../gen/Hls_Layers_UpConv.tpp</first>
-											<second>Apply_Norm_And_Write&amp;lt;32, 480, 30, 480&amp;gt;</second>
-										</first>
-										<second>275</second>
-									</item>
 									<item>
 										<first>
 											<first>../gen/Hls_Layers_UpConv.tpp</first>
 											<second>UpConv_Fused_Row&amp;lt;8, 16, 16, 960, 480&amp;gt;</second>
 										</first>
-										<second>364</second>
+										<second>271</second>
 									</item>
 									<item>
 										<first>
@@ -8873,30 +8068,23 @@
 						<name>c_5</name>
 						<fileName>../gen/Hls_Layers_UpConv.tpp</fileName>
 						<fileDirectory>/home/hoinguyen/Documents/Vitis/UpConv_HLS/upconv_block0</fileDirectory>
-						<lineNumber>269</lineNumber>
-						<contextFuncName>Apply_Norm_And_Write&amp;lt;32, 480, 30, 480&amp;gt;</contextFuncName>
-						<contextNormFuncName>Apply_Norm_And_Write_32_480_30_480_s</contextNormFuncName>
+						<lineNumber>265</lineNumber>
+						<contextFuncName>UpConv_Fused_Row&amp;lt;8, 16, 16, 960, 480&amp;gt;</contextFuncName>
+						<contextNormFuncName>UpConv_Fused_Row_8_16_16_960_480_s</contextNormFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
 								<first>/home/hoinguyen/Documents/Vitis/UpConv_HLS/upconv_block0</first>
 								<second>
-									<count>2</count>
+									<count>1</count>
 									<item_version>0</item_version>
-									<item>
-										<first>
-											<first>../gen/Hls_Layers_UpConv.tpp</first>
-											<second>Apply_Norm_And_Write&amp;lt;32, 480, 30, 480&amp;gt;</second>
-										</first>
-										<second>269</second>
-									</item>
 									<item>
 										<first>
 											<first>../gen/Hls_Layers_UpConv.tpp</first>
 											<second>UpConv_Fused_Row&amp;lt;8, 16, 16, 960, 480&amp;gt;</second>
 										</first>
-										<second>364</second>
+										<second>265</second>
 									</item>
 								</second>
 							</item>
@@ -8935,33 +8123,26 @@
 					<Obj>
 						<type>0</type>
 						<id>178</id>
-						<name>icmp_ln270_5</name>
+						<name>icmp_ln266_5</name>
 						<fileName>../gen/Hls_Layers_UpConv.tpp</fileName>
 						<fileDirectory>/home/hoinguyen/Documents/Vitis/UpConv_HLS/upconv_block0</fileDirectory>
-						<lineNumber>270</lineNumber>
-						<contextFuncName>Apply_Norm_And_Write&amp;lt;32, 480, 30, 480&amp;gt;</contextFuncName>
-						<contextNormFuncName>Apply_Norm_And_Write_32_480_30_480_s</contextNormFuncName>
+						<lineNumber>266</lineNumber>
+						<contextFuncName>UpConv_Fused_Row&amp;lt;8, 16, 16, 960, 480&amp;gt;</contextFuncName>
+						<contextNormFuncName>UpConv_Fused_Row_8_16_16_960_480_s</contextNormFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
 								<first>/home/hoinguyen/Documents/Vitis/UpConv_HLS/upconv_block0</first>
 								<second>
-									<count>2</count>
+									<count>1</count>
 									<item_version>0</item_version>
-									<item>
-										<first>
-											<first>../gen/Hls_Layers_UpConv.tpp</first>
-											<second>Apply_Norm_And_Write&amp;lt;32, 480, 30, 480&amp;gt;</second>
-										</first>
-										<second>270</second>
-									</item>
 									<item>
 										<first>
 											<first>../gen/Hls_Layers_UpConv.tpp</first>
 											<second>UpConv_Fused_Row&amp;lt;8, 16, 16, 960, 480&amp;gt;</second>
 										</first>
-										<second>364</second>
+										<second>266</second>
 									</item>
 								</second>
 							</item>
@@ -8999,33 +8180,26 @@
 					<Obj>
 						<type>0</type>
 						<id>179</id>
-						<name>u_11</name>
+						<name>u_149</name>
 						<fileName>../gen/Hls_Layers_UpConv.tpp</fileName>
 						<fileDirectory>/home/hoinguyen/Documents/Vitis/UpConv_HLS/upconv_block0</fileDirectory>
-						<lineNumber>271</lineNumber>
-						<contextFuncName>Apply_Norm_And_Write&amp;lt;32, 480, 30, 480&amp;gt;</contextFuncName>
-						<contextNormFuncName>Apply_Norm_And_Write_32_480_30_480_s</contextNormFuncName>
+						<lineNumber>267</lineNumber>
+						<contextFuncName>UpConv_Fused_Row&amp;lt;8, 16, 16, 960, 480&amp;gt;</contextFuncName>
+						<contextNormFuncName>UpConv_Fused_Row_8_16_16_960_480_s</contextNormFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
 								<first>/home/hoinguyen/Documents/Vitis/UpConv_HLS/upconv_block0</first>
 								<second>
-									<count>2</count>
+									<count>1</count>
 									<item_version>0</item_version>
-									<item>
-										<first>
-											<first>../gen/Hls_Layers_UpConv.tpp</first>
-											<second>Apply_Norm_And_Write&amp;lt;32, 480, 30, 480&amp;gt;</second>
-										</first>
-										<second>271</second>
-									</item>
 									<item>
 										<first>
 											<first>../gen/Hls_Layers_UpConv.tpp</first>
 											<second>UpConv_Fused_Row&amp;lt;8, 16, 16, 960, 480&amp;gt;</second>
 										</first>
-										<second>364</second>
+										<second>267</second>
 									</item>
 								</second>
 							</item>
@@ -9076,21 +8250,14 @@
 							<item>
 								<first>/home/hoinguyen/Documents/Vitis/UpConv_HLS/upconv_block0</first>
 								<second>
-									<count>3</count>
+									<count>2</count>
 									<item_version>0</item_version>
-									<item>
-										<first>
-											<first>../gen/Hls_Layers_UpConv.tpp</first>
-											<second>Apply_Norm_And_Write&amp;lt;32, 480, 30, 480&amp;gt;</second>
-										</first>
-										<second>271</second>
-									</item>
 									<item>
 										<first>
 											<first>../gen/Hls_Layers_UpConv.tpp</first>
 											<second>UpConv_Fused_Row&amp;lt;8, 16, 16, 960, 480&amp;gt;</second>
 										</first>
-										<second>364</second>
+										<second>267</second>
 									</item>
 									<item>
 										<first>
@@ -9134,33 +8301,26 @@
 					<Obj>
 						<type>0</type>
 						<id>181</id>
-						<name>u_10</name>
+						<name>u_140</name>
 						<fileName>../gen/Hls_Layers_UpConv.tpp</fileName>
 						<fileDirectory>/home/hoinguyen/Documents/Vitis/UpConv_HLS/upconv_block0</fileDirectory>
-						<lineNumber>272</lineNumber>
-						<contextFuncName>Apply_Norm_And_Write&amp;lt;32, 480, 30, 480&amp;gt;</contextFuncName>
-						<contextNormFuncName>Apply_Norm_And_Write_32_480_30_480_s</contextNormFuncName>
+						<lineNumber>268</lineNumber>
+						<contextFuncName>UpConv_Fused_Row&amp;lt;8, 16, 16, 960, 480&amp;gt;</contextFuncName>
+						<contextNormFuncName>UpConv_Fused_Row_8_16_16_960_480_s</contextNormFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
 								<first>/home/hoinguyen/Documents/Vitis/UpConv_HLS/upconv_block0</first>
 								<second>
-									<count>2</count>
+									<count>1</count>
 									<item_version>0</item_version>
-									<item>
-										<first>
-											<first>../gen/Hls_Layers_UpConv.tpp</first>
-											<second>Apply_Norm_And_Write&amp;lt;32, 480, 30, 480&amp;gt;</second>
-										</first>
-										<second>272</second>
-									</item>
 									<item>
 										<first>
 											<first>../gen/Hls_Layers_UpConv.tpp</first>
 											<second>UpConv_Fused_Row&amp;lt;8, 16, 16, 960, 480&amp;gt;</second>
 										</first>
-										<second>364</second>
+										<second>268</second>
 									</item>
 								</second>
 							</item>
@@ -9211,21 +8371,14 @@
 							<item>
 								<first>/home/hoinguyen/Documents/Vitis/UpConv_HLS/upconv_block0</first>
 								<second>
-									<count>3</count>
+									<count>2</count>
 									<item_version>0</item_version>
-									<item>
-										<first>
-											<first>../gen/Hls_Layers_UpConv.tpp</first>
-											<second>Apply_Norm_And_Write&amp;lt;32, 480, 30, 480&amp;gt;</second>
-										</first>
-										<second>272</second>
-									</item>
 									<item>
 										<first>
 											<first>../gen/Hls_Layers_UpConv.tpp</first>
 											<second>UpConv_Fused_Row&amp;lt;8, 16, 16, 960, 480&amp;gt;</second>
 										</first>
-										<second>364</second>
+										<second>268</second>
 									</item>
 									<item>
 										<first>
@@ -9269,33 +8422,26 @@
 					<Obj>
 						<type>0</type>
 						<id>183</id>
-						<name>void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_55</name>
+						<name>void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_75</name>
 						<fileName>../gen/Hls_Layers_UpConv.tpp</fileName>
 						<fileDirectory>/home/hoinguyen/Documents/Vitis/UpConv_HLS/upconv_block0</fileDirectory>
-						<lineNumber>270</lineNumber>
-						<contextFuncName>Apply_Norm_And_Write&amp;lt;32, 480, 30, 480&amp;gt;</contextFuncName>
-						<contextNormFuncName>Apply_Norm_And_Write_32_480_30_480_s</contextNormFuncName>
+						<lineNumber>266</lineNumber>
+						<contextFuncName>UpConv_Fused_Row&amp;lt;8, 16, 16, 960, 480&amp;gt;</contextFuncName>
+						<contextNormFuncName>UpConv_Fused_Row_8_16_16_960_480_s</contextNormFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
 								<first>/home/hoinguyen/Documents/Vitis/UpConv_HLS/upconv_block0</first>
 								<second>
-									<count>2</count>
+									<count>1</count>
 									<item_version>0</item_version>
-									<item>
-										<first>
-											<first>../gen/Hls_Layers_UpConv.tpp</first>
-											<second>Apply_Norm_And_Write&amp;lt;32, 480, 30, 480&amp;gt;</second>
-										</first>
-										<second>270</second>
-									</item>
 									<item>
 										<first>
 											<first>../gen/Hls_Layers_UpConv.tpp</first>
 											<second>UpConv_Fused_Row&amp;lt;8, 16, 16, 960, 480&amp;gt;</second>
 										</first>
-										<second>364</second>
+										<second>266</second>
 									</item>
 								</second>
 							</item>
@@ -9332,33 +8478,26 @@
 					<Obj>
 						<type>0</type>
 						<id>184</id>
-						<name>sub_i_5</name>
+						<name>sub151_5</name>
 						<fileName>../gen/Hls_Layers_UpConv.tpp</fileName>
 						<fileDirectory>/home/hoinguyen/Documents/Vitis/UpConv_HLS/upconv_block0</fileDirectory>
-						<lineNumber>273</lineNumber>
-						<contextFuncName>Apply_Norm_And_Write&amp;lt;32, 480, 30, 480&amp;gt;</contextFuncName>
-						<contextNormFuncName>Apply_Norm_And_Write_32_480_30_480_s</contextNormFuncName>
+						<lineNumber>269</lineNumber>
+						<contextFuncName>UpConv_Fused_Row&amp;lt;8, 16, 16, 960, 480&amp;gt;</contextFuncName>
+						<contextNormFuncName>UpConv_Fused_Row_8_16_16_960_480_s</contextNormFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
 								<first>/home/hoinguyen/Documents/Vitis/UpConv_HLS/upconv_block0</first>
 								<second>
-									<count>2</count>
+									<count>1</count>
 									<item_version>0</item_version>
-									<item>
-										<first>
-											<first>../gen/Hls_Layers_UpConv.tpp</first>
-											<second>Apply_Norm_And_Write&amp;lt;32, 480, 30, 480&amp;gt;</second>
-										</first>
-										<second>273</second>
-									</item>
 									<item>
 										<first>
 											<first>../gen/Hls_Layers_UpConv.tpp</first>
 											<second>UpConv_Fused_Row&amp;lt;8, 16, 16, 960, 480&amp;gt;</second>
 										</first>
-										<second>364</second>
+										<second>269</second>
 									</item>
 								</second>
 							</item>
@@ -9396,33 +8535,26 @@
 					<Obj>
 						<type>0</type>
 						<id>185</id>
-						<name>mul27_i_5</name>
+						<name>mul152_5</name>
 						<fileName>../gen/Hls_Layers_UpConv.tpp</fileName>
 						<fileDirectory>/home/hoinguyen/Documents/Vitis/UpConv_HLS/upconv_block0</fileDirectory>
-						<lineNumber>273</lineNumber>
-						<contextFuncName>Apply_Norm_And_Write&amp;lt;32, 480, 30, 480&amp;gt;</contextFuncName>
-						<contextNormFuncName>Apply_Norm_And_Write_32_480_30_480_s</contextNormFuncName>
+						<lineNumber>269</lineNumber>
+						<contextFuncName>UpConv_Fused_Row&amp;lt;8, 16, 16, 960, 480&amp;gt;</contextFuncName>
+						<contextNormFuncName>UpConv_Fused_Row_8_16_16_960_480_s</contextNormFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
 								<first>/home/hoinguyen/Documents/Vitis/UpConv_HLS/upconv_block0</first>
 								<second>
-									<count>2</count>
+									<count>1</count>
 									<item_version>0</item_version>
-									<item>
-										<first>
-											<first>../gen/Hls_Layers_UpConv.tpp</first>
-											<second>Apply_Norm_And_Write&amp;lt;32, 480, 30, 480&amp;gt;</second>
-										</first>
-										<second>273</second>
-									</item>
 									<item>
 										<first>
 											<first>../gen/Hls_Layers_UpConv.tpp</first>
 											<second>UpConv_Fused_Row&amp;lt;8, 16, 16, 960, 480&amp;gt;</second>
 										</first>
-										<second>364</second>
+										<second>269</second>
 									</item>
 								</second>
 							</item>
@@ -9460,33 +8592,26 @@
 					<Obj>
 						<type>0</type>
 						<id>186</id>
-						<name>mul28_i_5</name>
+						<name>mul153_5</name>
 						<fileName>../gen/Hls_Layers_UpConv.tpp</fileName>
 						<fileDirectory>/home/hoinguyen/Documents/Vitis/UpConv_HLS/upconv_block0</fileDirectory>
-						<lineNumber>273</lineNumber>
-						<contextFuncName>Apply_Norm_And_Write&amp;lt;32, 480, 30, 480&amp;gt;</contextFuncName>
-						<contextNormFuncName>Apply_Norm_And_Write_32_480_30_480_s</contextNormFuncName>
+						<lineNumber>269</lineNumber>
+						<contextFuncName>UpConv_Fused_Row&amp;lt;8, 16, 16, 960, 480&amp;gt;</contextFuncName>
+						<contextNormFuncName>UpConv_Fused_Row_8_16_16_960_480_s</contextNormFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
 								<first>/home/hoinguyen/Documents/Vitis/UpConv_HLS/upconv_block0</first>
 								<second>
-									<count>2</count>
+									<count>1</count>
 									<item_version>0</item_version>
-									<item>
-										<first>
-											<first>../gen/Hls_Layers_UpConv.tpp</first>
-											<second>Apply_Norm_And_Write&amp;lt;32, 480, 30, 480&amp;gt;</second>
-										</first>
-										<second>273</second>
-									</item>
 									<item>
 										<first>
 											<first>../gen/Hls_Layers_UpConv.tpp</first>
 											<second>UpConv_Fused_Row&amp;lt;8, 16, 16, 960, 480&amp;gt;</second>
 										</first>
-										<second>364</second>
+										<second>269</second>
 									</item>
 								</second>
 							</item>
@@ -9524,33 +8649,26 @@
 					<Obj>
 						<type>0</type>
 						<id>187</id>
-						<name>add29_i_5</name>
+						<name>add154_5</name>
 						<fileName>../gen/Hls_Layers_UpConv.tpp</fileName>
 						<fileDirectory>/home/hoinguyen/Documents/Vitis/UpConv_HLS/upconv_block0</fileDirectory>
-						<lineNumber>273</lineNumber>
-						<contextFuncName>Apply_Norm_And_Write&amp;lt;32, 480, 30, 480&amp;gt;</contextFuncName>
-						<contextNormFuncName>Apply_Norm_And_Write_32_480_30_480_s</contextNormFuncName>
+						<lineNumber>269</lineNumber>
+						<contextFuncName>UpConv_Fused_Row&amp;lt;8, 16, 16, 960, 480&amp;gt;</contextFuncName>
+						<contextNormFuncName>UpConv_Fused_Row_8_16_16_960_480_s</contextNormFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
 								<first>/home/hoinguyen/Documents/Vitis/UpConv_HLS/upconv_block0</first>
 								<second>
-									<count>2</count>
+									<count>1</count>
 									<item_version>0</item_version>
-									<item>
-										<first>
-											<first>../gen/Hls_Layers_UpConv.tpp</first>
-											<second>Apply_Norm_And_Write&amp;lt;32, 480, 30, 480&amp;gt;</second>
-										</first>
-										<second>273</second>
-									</item>
 									<item>
 										<first>
 											<first>../gen/Hls_Layers_UpConv.tpp</first>
 											<second>UpConv_Fused_Row&amp;lt;8, 16, 16, 960, 480&amp;gt;</second>
 										</first>
-										<second>364</second>
+										<second>269</second>
 									</item>
 								</second>
 							</item>
@@ -9591,30 +8709,23 @@
 						<name>norm_5</name>
 						<fileName>../gen/Hls_Layers_UpConv.tpp</fileName>
 						<fileDirectory>/home/hoinguyen/Documents/Vitis/UpConv_HLS/upconv_block0</fileDirectory>
-						<lineNumber>270</lineNumber>
-						<contextFuncName>Apply_Norm_And_Write&amp;lt;32, 480, 30, 480&amp;gt;</contextFuncName>
-						<contextNormFuncName>Apply_Norm_And_Write_32_480_30_480_s</contextNormFuncName>
+						<lineNumber>266</lineNumber>
+						<contextFuncName>UpConv_Fused_Row&amp;lt;8, 16, 16, 960, 480&amp;gt;</contextFuncName>
+						<contextNormFuncName>UpConv_Fused_Row_8_16_16_960_480_s</contextNormFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
 								<first>/home/hoinguyen/Documents/Vitis/UpConv_HLS/upconv_block0</first>
 								<second>
-									<count>2</count>
+									<count>1</count>
 									<item_version>0</item_version>
-									<item>
-										<first>
-											<first>../gen/Hls_Layers_UpConv.tpp</first>
-											<second>Apply_Norm_And_Write&amp;lt;32, 480, 30, 480&amp;gt;</second>
-										</first>
-										<second>270</second>
-									</item>
 									<item>
 										<first>
 											<first>../gen/Hls_Layers_UpConv.tpp</first>
 											<second>UpConv_Fused_Row&amp;lt;8, 16, 16, 960, 480&amp;gt;</second>
 										</first>
-										<second>364</second>
+										<second>266</second>
 									</item>
 								</second>
 							</item>
@@ -9653,33 +8764,26 @@
 					<Obj>
 						<type>0</type>
 						<id>189</id>
-						<name>cmp33_i_5</name>
+						<name>cmp158_5</name>
 						<fileName>../gen/Hls_Layers_UpConv.tpp</fileName>
 						<fileDirectory>/home/hoinguyen/Documents/Vitis/UpConv_HLS/upconv_block0</fileDirectory>
-						<lineNumber>274</lineNumber>
-						<contextFuncName>Apply_Norm_And_Write&amp;lt;32, 480, 30, 480&amp;gt;</contextFuncName>
-						<contextNormFuncName>Apply_Norm_And_Write_32_480_30_480_s</contextNormFuncName>
+						<lineNumber>270</lineNumber>
+						<contextFuncName>UpConv_Fused_Row&amp;lt;8, 16, 16, 960, 480&amp;gt;</contextFuncName>
+						<contextNormFuncName>UpConv_Fused_Row_8_16_16_960_480_s</contextNormFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
 								<first>/home/hoinguyen/Documents/Vitis/UpConv_HLS/upconv_block0</first>
 								<second>
-									<count>2</count>
+									<count>1</count>
 									<item_version>0</item_version>
-									<item>
-										<first>
-											<first>../gen/Hls_Layers_UpConv.tpp</first>
-											<second>Apply_Norm_And_Write&amp;lt;32, 480, 30, 480&amp;gt;</second>
-										</first>
-										<second>274</second>
-									</item>
 									<item>
 										<first>
 											<first>../gen/Hls_Layers_UpConv.tpp</first>
 											<second>UpConv_Fused_Row&amp;lt;8, 16, 16, 960, 480&amp;gt;</second>
 										</first>
-										<second>364</second>
+										<second>270</second>
 									</item>
 								</second>
 							</item>
@@ -9729,21 +8833,14 @@
 							<item>
 								<first>/home/hoinguyen/Documents/Vitis/UpConv_HLS/upconv_block0</first>
 								<second>
-									<count>3</count>
+									<count>2</count>
 									<item_version>0</item_version>
-									<item>
-										<first>
-											<first>../gen/Hls_Layers_UpConv.tpp</first>
-											<second>Apply_Norm_And_Write&amp;lt;32, 480, 30, 480&amp;gt;</second>
-										</first>
-										<second>275</second>
-									</item>
 									<item>
 										<first>
 											<first>../gen/Hls_Layers_UpConv.tpp</first>
 											<second>UpConv_Fused_Row&amp;lt;8, 16, 16, 960, 480&amp;gt;</second>
 										</first>
-										<second>364</second>
+										<second>271</second>
 									</item>
 									<item>
 										<first>
@@ -9799,21 +8896,14 @@
 							<item>
 								<first>/home/hoinguyen/Documents/Vitis/UpConv_HLS/upconv_block0</first>
 								<second>
-									<count>3</count>
+									<count>2</count>
 									<item_version>0</item_version>
-									<item>
-										<first>
-											<first>../gen/Hls_Layers_UpConv.tpp</first>
-											<second>Apply_Norm_And_Write&amp;lt;32, 480, 30, 480&amp;gt;</second>
-										</first>
-										<second>275</second>
-									</item>
 									<item>
 										<first>
 											<first>../gen/Hls_Layers_UpConv.tpp</first>
 											<second>UpConv_Fused_Row&amp;lt;8, 16, 16, 960, 480&amp;gt;</second>
 										</first>
-										<second>364</second>
+										<second>271</second>
 									</item>
 									<item>
 										<first>
@@ -9862,30 +8952,23 @@
 						<name>c_6</name>
 						<fileName>../gen/Hls_Layers_UpConv.tpp</fileName>
 						<fileDirectory>/home/hoinguyen/Documents/Vitis/UpConv_HLS/upconv_block0</fileDirectory>
-						<lineNumber>269</lineNumber>
-						<contextFuncName>Apply_Norm_And_Write&amp;lt;32, 480, 30, 480&amp;gt;</contextFuncName>
-						<contextNormFuncName>Apply_Norm_And_Write_32_480_30_480_s</contextNormFuncName>
+						<lineNumber>265</lineNumber>
+						<contextFuncName>UpConv_Fused_Row&amp;lt;8, 16, 16, 960, 480&amp;gt;</contextFuncName>
+						<contextNormFuncName>UpConv_Fused_Row_8_16_16_960_480_s</contextNormFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
 								<first>/home/hoinguyen/Documents/Vitis/UpConv_HLS/upconv_block0</first>
 								<second>
-									<count>2</count>
+									<count>1</count>
 									<item_version>0</item_version>
-									<item>
-										<first>
-											<first>../gen/Hls_Layers_UpConv.tpp</first>
-											<second>Apply_Norm_And_Write&amp;lt;32, 480, 30, 480&amp;gt;</second>
-										</first>
-										<second>269</second>
-									</item>
 									<item>
 										<first>
 											<first>../gen/Hls_Layers_UpConv.tpp</first>
 											<second>UpConv_Fused_Row&amp;lt;8, 16, 16, 960, 480&amp;gt;</second>
 										</first>
-										<second>364</second>
+										<second>265</second>
 									</item>
 								</second>
 							</item>
@@ -9924,33 +9007,26 @@
 					<Obj>
 						<type>0</type>
 						<id>193</id>
-						<name>icmp_ln270_6</name>
+						<name>icmp_ln266_6</name>
 						<fileName>../gen/Hls_Layers_UpConv.tpp</fileName>
 						<fileDirectory>/home/hoinguyen/Documents/Vitis/UpConv_HLS/upconv_block0</fileDirectory>
-						<lineNumber>270</lineNumber>
-						<contextFuncName>Apply_Norm_And_Write&amp;lt;32, 480, 30, 480&amp;gt;</contextFuncName>
-						<contextNormFuncName>Apply_Norm_And_Write_32_480_30_480_s</contextNormFuncName>
+						<lineNumber>266</lineNumber>
+						<contextFuncName>UpConv_Fused_Row&amp;lt;8, 16, 16, 960, 480&amp;gt;</contextFuncName>
+						<contextNormFuncName>UpConv_Fused_Row_8_16_16_960_480_s</contextNormFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
 								<first>/home/hoinguyen/Documents/Vitis/UpConv_HLS/upconv_block0</first>
 								<second>
-									<count>2</count>
+									<count>1</count>
 									<item_version>0</item_version>
-									<item>
-										<first>
-											<first>../gen/Hls_Layers_UpConv.tpp</first>
-											<second>Apply_Norm_And_Write&amp;lt;32, 480, 30, 480&amp;gt;</second>
-										</first>
-										<second>270</second>
-									</item>
 									<item>
 										<first>
 											<first>../gen/Hls_Layers_UpConv.tpp</first>
 											<second>UpConv_Fused_Row&amp;lt;8, 16, 16, 960, 480&amp;gt;</second>
 										</first>
-										<second>364</second>
+										<second>266</second>
 									</item>
 								</second>
 							</item>
@@ -9988,33 +9064,26 @@
 					<Obj>
 						<type>0</type>
 						<id>194</id>
-						<name>u_13</name>
+						<name>u_150</name>
 						<fileName>../gen/Hls_Layers_UpConv.tpp</fileName>
 						<fileDirectory>/home/hoinguyen/Documents/Vitis/UpConv_HLS/upconv_block0</fileDirectory>
-						<lineNumber>271</lineNumber>
-						<contextFuncName>Apply_Norm_And_Write&amp;lt;32, 480, 30, 480&amp;gt;</contextFuncName>
-						<contextNormFuncName>Apply_Norm_And_Write_32_480_30_480_s</contextNormFuncName>
+						<lineNumber>267</lineNumber>
+						<contextFuncName>UpConv_Fused_Row&amp;lt;8, 16, 16, 960, 480&amp;gt;</contextFuncName>
+						<contextNormFuncName>UpConv_Fused_Row_8_16_16_960_480_s</contextNormFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
 								<first>/home/hoinguyen/Documents/Vitis/UpConv_HLS/upconv_block0</first>
 								<second>
-									<count>2</count>
+									<count>1</count>
 									<item_version>0</item_version>
-									<item>
-										<first>
-											<first>../gen/Hls_Layers_UpConv.tpp</first>
-											<second>Apply_Norm_And_Write&amp;lt;32, 480, 30, 480&amp;gt;</second>
-										</first>
-										<second>271</second>
-									</item>
 									<item>
 										<first>
 											<first>../gen/Hls_Layers_UpConv.tpp</first>
 											<second>UpConv_Fused_Row&amp;lt;8, 16, 16, 960, 480&amp;gt;</second>
 										</first>
-										<second>364</second>
+										<second>267</second>
 									</item>
 								</second>
 							</item>
@@ -10065,21 +9134,14 @@
 							<item>
 								<first>/home/hoinguyen/Documents/Vitis/UpConv_HLS/upconv_block0</first>
 								<second>
-									<count>3</count>
+									<count>2</count>
 									<item_version>0</item_version>
-									<item>
-										<first>
-											<first>../gen/Hls_Layers_UpConv.tpp</first>
-											<second>Apply_Norm_And_Write&amp;lt;32, 480, 30, 480&amp;gt;</second>
-										</first>
-										<second>271</second>
-									</item>
 									<item>
 										<first>
 											<first>../gen/Hls_Layers_UpConv.tpp</first>
 											<second>UpConv_Fused_Row&amp;lt;8, 16, 16, 960, 480&amp;gt;</second>
 										</first>
-										<second>364</second>
+										<second>267</second>
 									</item>
 									<item>
 										<first>
@@ -10123,33 +9185,26 @@
 					<Obj>
 						<type>0</type>
 						<id>196</id>
-						<name>u_12</name>
+						<name>u_141</name>
 						<fileName>../gen/Hls_Layers_UpConv.tpp</fileName>
 						<fileDirectory>/home/hoinguyen/Documents/Vitis/UpConv_HLS/upconv_block0</fileDirectory>
-						<lineNumber>272</lineNumber>
-						<contextFuncName>Apply_Norm_And_Write&amp;lt;32, 480, 30, 480&amp;gt;</contextFuncName>
-						<contextNormFuncName>Apply_Norm_And_Write_32_480_30_480_s</contextNormFuncName>
+						<lineNumber>268</lineNumber>
+						<contextFuncName>UpConv_Fused_Row&amp;lt;8, 16, 16, 960, 480&amp;gt;</contextFuncName>
+						<contextNormFuncName>UpConv_Fused_Row_8_16_16_960_480_s</contextNormFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
 								<first>/home/hoinguyen/Documents/Vitis/UpConv_HLS/upconv_block0</first>
 								<second>
-									<count>2</count>
+									<count>1</count>
 									<item_version>0</item_version>
-									<item>
-										<first>
-											<first>../gen/Hls_Layers_UpConv.tpp</first>
-											<second>Apply_Norm_And_Write&amp;lt;32, 480, 30, 480&amp;gt;</second>
-										</first>
-										<second>272</second>
-									</item>
 									<item>
 										<first>
 											<first>../gen/Hls_Layers_UpConv.tpp</first>
 											<second>UpConv_Fused_Row&amp;lt;8, 16, 16, 960, 480&amp;gt;</second>
 										</first>
-										<second>364</second>
+										<second>268</second>
 									</item>
 								</second>
 							</item>
@@ -10200,21 +9255,14 @@
 							<item>
 								<first>/home/hoinguyen/Documents/Vitis/UpConv_HLS/upconv_block0</first>
 								<second>
-									<count>3</count>
+									<count>2</count>
 									<item_version>0</item_version>
-									<item>
-										<first>
-											<first>../gen/Hls_Layers_UpConv.tpp</first>
-											<second>Apply_Norm_And_Write&amp;lt;32, 480, 30, 480&amp;gt;</second>
-										</first>
-										<second>272</second>
-									</item>
 									<item>
 										<first>
 											<first>../gen/Hls_Layers_UpConv.tpp</first>
 											<second>UpConv_Fused_Row&amp;lt;8, 16, 16, 960, 480&amp;gt;</second>
 										</first>
-										<second>364</second>
+										<second>268</second>
 									</item>
 									<item>
 										<first>
@@ -10258,33 +9306,26 @@
 					<Obj>
 						<type>0</type>
 						<id>198</id>
-						<name>void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_56</name>
+						<name>void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_76</name>
 						<fileName>../gen/Hls_Layers_UpConv.tpp</fileName>
 						<fileDirectory>/home/hoinguyen/Documents/Vitis/UpConv_HLS/upconv_block0</fileDirectory>
-						<lineNumber>270</lineNumber>
-						<contextFuncName>Apply_Norm_And_Write&amp;lt;32, 480, 30, 480&amp;gt;</contextFuncName>
-						<contextNormFuncName>Apply_Norm_And_Write_32_480_30_480_s</contextNormFuncName>
+						<lineNumber>266</lineNumber>
+						<contextFuncName>UpConv_Fused_Row&amp;lt;8, 16, 16, 960, 480&amp;gt;</contextFuncName>
+						<contextNormFuncName>UpConv_Fused_Row_8_16_16_960_480_s</contextNormFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
 								<first>/home/hoinguyen/Documents/Vitis/UpConv_HLS/upconv_block0</first>
 								<second>
-									<count>2</count>
+									<count>1</count>
 									<item_version>0</item_version>
-									<item>
-										<first>
-											<first>../gen/Hls_Layers_UpConv.tpp</first>
-											<second>Apply_Norm_And_Write&amp;lt;32, 480, 30, 480&amp;gt;</second>
-										</first>
-										<second>270</second>
-									</item>
 									<item>
 										<first>
 											<first>../gen/Hls_Layers_UpConv.tpp</first>
 											<second>UpConv_Fused_Row&amp;lt;8, 16, 16, 960, 480&amp;gt;</second>
 										</first>
-										<second>364</second>
+										<second>266</second>
 									</item>
 								</second>
 							</item>
@@ -10321,33 +9362,26 @@
 					<Obj>
 						<type>0</type>
 						<id>199</id>
-						<name>sub_i_6</name>
+						<name>sub151_6</name>
 						<fileName>../gen/Hls_Layers_UpConv.tpp</fileName>
 						<fileDirectory>/home/hoinguyen/Documents/Vitis/UpConv_HLS/upconv_block0</fileDirectory>
-						<lineNumber>273</lineNumber>
-						<contextFuncName>Apply_Norm_And_Write&amp;lt;32, 480, 30, 480&amp;gt;</contextFuncName>
-						<contextNormFuncName>Apply_Norm_And_Write_32_480_30_480_s</contextNormFuncName>
+						<lineNumber>269</lineNumber>
+						<contextFuncName>UpConv_Fused_Row&amp;lt;8, 16, 16, 960, 480&amp;gt;</contextFuncName>
+						<contextNormFuncName>UpConv_Fused_Row_8_16_16_960_480_s</contextNormFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
 								<first>/home/hoinguyen/Documents/Vitis/UpConv_HLS/upconv_block0</first>
 								<second>
-									<count>2</count>
+									<count>1</count>
 									<item_version>0</item_version>
-									<item>
-										<first>
-											<first>../gen/Hls_Layers_UpConv.tpp</first>
-											<second>Apply_Norm_And_Write&amp;lt;32, 480, 30, 480&amp;gt;</second>
-										</first>
-										<second>273</second>
-									</item>
 									<item>
 										<first>
 											<first>../gen/Hls_Layers_UpConv.tpp</first>
 											<second>UpConv_Fused_Row&amp;lt;8, 16, 16, 960, 480&amp;gt;</second>
 										</first>
-										<second>364</second>
+										<second>269</second>
 									</item>
 								</second>
 							</item>
@@ -10385,33 +9419,26 @@
 					<Obj>
 						<type>0</type>
 						<id>200</id>
-						<name>mul27_i_6</name>
+						<name>mul152_6</name>
 						<fileName>../gen/Hls_Layers_UpConv.tpp</fileName>
 						<fileDirectory>/home/hoinguyen/Documents/Vitis/UpConv_HLS/upconv_block0</fileDirectory>
-						<lineNumber>273</lineNumber>
-						<contextFuncName>Apply_Norm_And_Write&amp;lt;32, 480, 30, 480&amp;gt;</contextFuncName>
-						<contextNormFuncName>Apply_Norm_And_Write_32_480_30_480_s</contextNormFuncName>
+						<lineNumber>269</lineNumber>
+						<contextFuncName>UpConv_Fused_Row&amp;lt;8, 16, 16, 960, 480&amp;gt;</contextFuncName>
+						<contextNormFuncName>UpConv_Fused_Row_8_16_16_960_480_s</contextNormFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
 								<first>/home/hoinguyen/Documents/Vitis/UpConv_HLS/upconv_block0</first>
 								<second>
-									<count>2</count>
+									<count>1</count>
 									<item_version>0</item_version>
-									<item>
-										<first>
-											<first>../gen/Hls_Layers_UpConv.tpp</first>
-											<second>Apply_Norm_And_Write&amp;lt;32, 480, 30, 480&amp;gt;</second>
-										</first>
-										<second>273</second>
-									</item>
 									<item>
 										<first>
 											<first>../gen/Hls_Layers_UpConv.tpp</first>
 											<second>UpConv_Fused_Row&amp;lt;8, 16, 16, 960, 480&amp;gt;</second>
 										</first>
-										<second>364</second>
+										<second>269</second>
 									</item>
 								</second>
 							</item>
@@ -10449,33 +9476,26 @@
 					<Obj>
 						<type>0</type>
 						<id>201</id>
-						<name>mul28_i_6</name>
+						<name>mul153_6</name>
 						<fileName>../gen/Hls_Layers_UpConv.tpp</fileName>
 						<fileDirectory>/home/hoinguyen/Documents/Vitis/UpConv_HLS/upconv_block0</fileDirectory>
-						<lineNumber>273</lineNumber>
-						<contextFuncName>Apply_Norm_And_Write&amp;lt;32, 480, 30, 480&amp;gt;</contextFuncName>
-						<contextNormFuncName>Apply_Norm_And_Write_32_480_30_480_s</contextNormFuncName>
+						<lineNumber>269</lineNumber>
+						<contextFuncName>UpConv_Fused_Row&amp;lt;8, 16, 16, 960, 480&amp;gt;</contextFuncName>
+						<contextNormFuncName>UpConv_Fused_Row_8_16_16_960_480_s</contextNormFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
 								<first>/home/hoinguyen/Documents/Vitis/UpConv_HLS/upconv_block0</first>
 								<second>
-									<count>2</count>
+									<count>1</count>
 									<item_version>0</item_version>
-									<item>
-										<first>
-											<first>../gen/Hls_Layers_UpConv.tpp</first>
-											<second>Apply_Norm_And_Write&amp;lt;32, 480, 30, 480&amp;gt;</second>
-										</first>
-										<second>273</second>
-									</item>
 									<item>
 										<first>
 											<first>../gen/Hls_Layers_UpConv.tpp</first>
 											<second>UpConv_Fused_Row&amp;lt;8, 16, 16, 960, 480&amp;gt;</second>
 										</first>
-										<second>364</second>
+										<second>269</second>
 									</item>
 								</second>
 							</item>
@@ -10513,33 +9533,26 @@
 					<Obj>
 						<type>0</type>
 						<id>202</id>
-						<name>add29_i_6</name>
+						<name>add154_6</name>
 						<fileName>../gen/Hls_Layers_UpConv.tpp</fileName>
 						<fileDirectory>/home/hoinguyen/Documents/Vitis/UpConv_HLS/upconv_block0</fileDirectory>
-						<lineNumber>273</lineNumber>
-						<contextFuncName>Apply_Norm_And_Write&amp;lt;32, 480, 30, 480&amp;gt;</contextFuncName>
-						<contextNormFuncName>Apply_Norm_And_Write_32_480_30_480_s</contextNormFuncName>
+						<lineNumber>269</lineNumber>
+						<contextFuncName>UpConv_Fused_Row&amp;lt;8, 16, 16, 960, 480&amp;gt;</contextFuncName>
+						<contextNormFuncName>UpConv_Fused_Row_8_16_16_960_480_s</contextNormFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
 								<first>/home/hoinguyen/Documents/Vitis/UpConv_HLS/upconv_block0</first>
 								<second>
-									<count>2</count>
+									<count>1</count>
 									<item_version>0</item_version>
-									<item>
-										<first>
-											<first>../gen/Hls_Layers_UpConv.tpp</first>
-											<second>Apply_Norm_And_Write&amp;lt;32, 480, 30, 480&amp;gt;</second>
-										</first>
-										<second>273</second>
-									</item>
 									<item>
 										<first>
 											<first>../gen/Hls_Layers_UpConv.tpp</first>
 											<second>UpConv_Fused_Row&amp;lt;8, 16, 16, 960, 480&amp;gt;</second>
 										</first>
-										<second>364</second>
+										<second>269</second>
 									</item>
 								</second>
 							</item>
@@ -10580,30 +9593,23 @@
 						<name>norm_6</name>
 						<fileName>../gen/Hls_Layers_UpConv.tpp</fileName>
 						<fileDirectory>/home/hoinguyen/Documents/Vitis/UpConv_HLS/upconv_block0</fileDirectory>
-						<lineNumber>270</lineNumber>
-						<contextFuncName>Apply_Norm_And_Write&amp;lt;32, 480, 30, 480&amp;gt;</contextFuncName>
-						<contextNormFuncName>Apply_Norm_And_Write_32_480_30_480_s</contextNormFuncName>
+						<lineNumber>266</lineNumber>
+						<contextFuncName>UpConv_Fused_Row&amp;lt;8, 16, 16, 960, 480&amp;gt;</contextFuncName>
+						<contextNormFuncName>UpConv_Fused_Row_8_16_16_960_480_s</contextNormFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
 								<first>/home/hoinguyen/Documents/Vitis/UpConv_HLS/upconv_block0</first>
 								<second>
-									<count>2</count>
+									<count>1</count>
 									<item_version>0</item_version>
-									<item>
-										<first>
-											<first>../gen/Hls_Layers_UpConv.tpp</first>
-											<second>Apply_Norm_And_Write&amp;lt;32, 480, 30, 480&amp;gt;</second>
-										</first>
-										<second>270</second>
-									</item>
 									<item>
 										<first>
 											<first>../gen/Hls_Layers_UpConv.tpp</first>
 											<second>UpConv_Fused_Row&amp;lt;8, 16, 16, 960, 480&amp;gt;</second>
 										</first>
-										<second>364</second>
+										<second>266</second>
 									</item>
 								</second>
 							</item>
@@ -10642,33 +9648,26 @@
 					<Obj>
 						<type>0</type>
 						<id>204</id>
-						<name>cmp33_i_6</name>
+						<name>cmp158_6</name>
 						<fileName>../gen/Hls_Layers_UpConv.tpp</fileName>
 						<fileDirectory>/home/hoinguyen/Documents/Vitis/UpConv_HLS/upconv_block0</fileDirectory>
-						<lineNumber>274</lineNumber>
-						<contextFuncName>Apply_Norm_And_Write&amp;lt;32, 480, 30, 480&amp;gt;</contextFuncName>
-						<contextNormFuncName>Apply_Norm_And_Write_32_480_30_480_s</contextNormFuncName>
+						<lineNumber>270</lineNumber>
+						<contextFuncName>UpConv_Fused_Row&amp;lt;8, 16, 16, 960, 480&amp;gt;</contextFuncName>
+						<contextNormFuncName>UpConv_Fused_Row_8_16_16_960_480_s</contextNormFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
 								<first>/home/hoinguyen/Documents/Vitis/UpConv_HLS/upconv_block0</first>
 								<second>
-									<count>2</count>
+									<count>1</count>
 									<item_version>0</item_version>
-									<item>
-										<first>
-											<first>../gen/Hls_Layers_UpConv.tpp</first>
-											<second>Apply_Norm_And_Write&amp;lt;32, 480, 30, 480&amp;gt;</second>
-										</first>
-										<second>274</second>
-									</item>
 									<item>
 										<first>
 											<first>../gen/Hls_Layers_UpConv.tpp</first>
 											<second>UpConv_Fused_Row&amp;lt;8, 16, 16, 960, 480&amp;gt;</second>
 										</first>
-										<second>364</second>
+										<second>270</second>
 									</item>
 								</second>
 							</item>
@@ -10718,21 +9717,14 @@
 							<item>
 								<first>/home/hoinguyen/Documents/Vitis/UpConv_HLS/upconv_block0</first>
 								<second>
-									<count>3</count>
+									<count>2</count>
 									<item_version>0</item_version>
-									<item>
-										<first>
-											<first>../gen/Hls_Layers_UpConv.tpp</first>
-											<second>Apply_Norm_And_Write&amp;lt;32, 480, 30, 480&amp;gt;</second>
-										</first>
-										<second>275</second>
-									</item>
 									<item>
 										<first>
 											<first>../gen/Hls_Layers_UpConv.tpp</first>
 											<second>UpConv_Fused_Row&amp;lt;8, 16, 16, 960, 480&amp;gt;</second>
 										</first>
-										<second>364</second>
+										<second>271</second>
 									</item>
 									<item>
 										<first>
@@ -10788,21 +9780,14 @@
 							<item>
 								<first>/home/hoinguyen/Documents/Vitis/UpConv_HLS/upconv_block0</first>
 								<second>
-									<count>3</count>
+									<count>2</count>
 									<item_version>0</item_version>
-									<item>
-										<first>
-											<first>../gen/Hls_Layers_UpConv.tpp</first>
-											<second>Apply_Norm_And_Write&amp;lt;32, 480, 30, 480&amp;gt;</second>
-										</first>
-										<second>275</second>
-									</item>
 									<item>
 										<first>
 											<first>../gen/Hls_Layers_UpConv.tpp</first>
 											<second>UpConv_Fused_Row&amp;lt;8, 16, 16, 960, 480&amp;gt;</second>
 										</first>
-										<second>364</second>
+										<second>271</second>
 									</item>
 									<item>
 										<first>
@@ -10851,30 +9836,23 @@
 						<name>c_7</name>
 						<fileName>../gen/Hls_Layers_UpConv.tpp</fileName>
 						<fileDirectory>/home/hoinguyen/Documents/Vitis/UpConv_HLS/upconv_block0</fileDirectory>
-						<lineNumber>269</lineNumber>
-						<contextFuncName>Apply_Norm_And_Write&amp;lt;32, 480, 30, 480&amp;gt;</contextFuncName>
-						<contextNormFuncName>Apply_Norm_And_Write_32_480_30_480_s</contextNormFuncName>
+						<lineNumber>265</lineNumber>
+						<contextFuncName>UpConv_Fused_Row&amp;lt;8, 16, 16, 960, 480&amp;gt;</contextFuncName>
+						<contextNormFuncName>UpConv_Fused_Row_8_16_16_960_480_s</contextNormFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
 								<first>/home/hoinguyen/Documents/Vitis/UpConv_HLS/upconv_block0</first>
 								<second>
-									<count>2</count>
+									<count>1</count>
 									<item_version>0</item_version>
-									<item>
-										<first>
-											<first>../gen/Hls_Layers_UpConv.tpp</first>
-											<second>Apply_Norm_And_Write&amp;lt;32, 480, 30, 480&amp;gt;</second>
-										</first>
-										<second>269</second>
-									</item>
 									<item>
 										<first>
 											<first>../gen/Hls_Layers_UpConv.tpp</first>
 											<second>UpConv_Fused_Row&amp;lt;8, 16, 16, 960, 480&amp;gt;</second>
 										</first>
-										<second>364</second>
+										<second>265</second>
 									</item>
 								</second>
 							</item>
@@ -10913,33 +9891,26 @@
 					<Obj>
 						<type>0</type>
 						<id>208</id>
-						<name>icmp_ln270_7</name>
+						<name>icmp_ln266_7</name>
 						<fileName>../gen/Hls_Layers_UpConv.tpp</fileName>
 						<fileDirectory>/home/hoinguyen/Documents/Vitis/UpConv_HLS/upconv_block0</fileDirectory>
-						<lineNumber>270</lineNumber>
-						<contextFuncName>Apply_Norm_And_Write&amp;lt;32, 480, 30, 480&amp;gt;</contextFuncName>
-						<contextNormFuncName>Apply_Norm_And_Write_32_480_30_480_s</contextNormFuncName>
+						<lineNumber>266</lineNumber>
+						<contextFuncName>UpConv_Fused_Row&amp;lt;8, 16, 16, 960, 480&amp;gt;</contextFuncName>
+						<contextNormFuncName>UpConv_Fused_Row_8_16_16_960_480_s</contextNormFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
 								<first>/home/hoinguyen/Documents/Vitis/UpConv_HLS/upconv_block0</first>
 								<second>
-									<count>2</count>
+									<count>1</count>
 									<item_version>0</item_version>
-									<item>
-										<first>
-											<first>../gen/Hls_Layers_UpConv.tpp</first>
-											<second>Apply_Norm_And_Write&amp;lt;32, 480, 30, 480&amp;gt;</second>
-										</first>
-										<second>270</second>
-									</item>
 									<item>
 										<first>
 											<first>../gen/Hls_Layers_UpConv.tpp</first>
 											<second>UpConv_Fused_Row&amp;lt;8, 16, 16, 960, 480&amp;gt;</second>
 										</first>
-										<second>364</second>
+										<second>266</second>
 									</item>
 								</second>
 							</item>
@@ -10977,33 +9948,26 @@
 					<Obj>
 						<type>0</type>
 						<id>209</id>
-						<name>u_15</name>
+						<name>u_151</name>
 						<fileName>../gen/Hls_Layers_UpConv.tpp</fileName>
 						<fileDirectory>/home/hoinguyen/Documents/Vitis/UpConv_HLS/upconv_block0</fileDirectory>
-						<lineNumber>271</lineNumber>
-						<contextFuncName>Apply_Norm_And_Write&amp;lt;32, 480, 30, 480&amp;gt;</contextFuncName>
-						<contextNormFuncName>Apply_Norm_And_Write_32_480_30_480_s</contextNormFuncName>
+						<lineNumber>267</lineNumber>
+						<contextFuncName>UpConv_Fused_Row&amp;lt;8, 16, 16, 960, 480&amp;gt;</contextFuncName>
+						<contextNormFuncName>UpConv_Fused_Row_8_16_16_960_480_s</contextNormFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
 								<first>/home/hoinguyen/Documents/Vitis/UpConv_HLS/upconv_block0</first>
 								<second>
-									<count>2</count>
+									<count>1</count>
 									<item_version>0</item_version>
-									<item>
-										<first>
-											<first>../gen/Hls_Layers_UpConv.tpp</first>
-											<second>Apply_Norm_And_Write&amp;lt;32, 480, 30, 480&amp;gt;</second>
-										</first>
-										<second>271</second>
-									</item>
 									<item>
 										<first>
 											<first>../gen/Hls_Layers_UpConv.tpp</first>
 											<second>UpConv_Fused_Row&amp;lt;8, 16, 16, 960, 480&amp;gt;</second>
 										</first>
-										<second>364</second>
+										<second>267</second>
 									</item>
 								</second>
 							</item>
@@ -11054,21 +10018,14 @@
 							<item>
 								<first>/home/hoinguyen/Documents/Vitis/UpConv_HLS/upconv_block0</first>
 								<second>
-									<count>3</count>
+									<count>2</count>
 									<item_version>0</item_version>
-									<item>
-										<first>
-											<first>../gen/Hls_Layers_UpConv.tpp</first>
-											<second>Apply_Norm_And_Write&amp;lt;32, 480, 30, 480&amp;gt;</second>
-										</first>
-										<second>271</second>
-									</item>
 									<item>
 										<first>
 											<first>../gen/Hls_Layers_UpConv.tpp</first>
 											<second>UpConv_Fused_Row&amp;lt;8, 16, 16, 960, 480&amp;gt;</second>
 										</first>
-										<second>364</second>
+										<second>267</second>
 									</item>
 									<item>
 										<first>
@@ -11112,33 +10069,26 @@
 					<Obj>
 						<type>0</type>
 						<id>211</id>
-						<name>u_14</name>
+						<name>u_142</name>
 						<fileName>../gen/Hls_Layers_UpConv.tpp</fileName>
 						<fileDirectory>/home/hoinguyen/Documents/Vitis/UpConv_HLS/upconv_block0</fileDirectory>
-						<lineNumber>272</lineNumber>
-						<contextFuncName>Apply_Norm_And_Write&amp;lt;32, 480, 30, 480&amp;gt;</contextFuncName>
-						<contextNormFuncName>Apply_Norm_And_Write_32_480_30_480_s</contextNormFuncName>
+						<lineNumber>268</lineNumber>
+						<contextFuncName>UpConv_Fused_Row&amp;lt;8, 16, 16, 960, 480&amp;gt;</contextFuncName>
+						<contextNormFuncName>UpConv_Fused_Row_8_16_16_960_480_s</contextNormFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
 								<first>/home/hoinguyen/Documents/Vitis/UpConv_HLS/upconv_block0</first>
 								<second>
-									<count>2</count>
+									<count>1</count>
 									<item_version>0</item_version>
-									<item>
-										<first>
-											<first>../gen/Hls_Layers_UpConv.tpp</first>
-											<second>Apply_Norm_And_Write&amp;lt;32, 480, 30, 480&amp;gt;</second>
-										</first>
-										<second>272</second>
-									</item>
 									<item>
 										<first>
 											<first>../gen/Hls_Layers_UpConv.tpp</first>
 											<second>UpConv_Fused_Row&amp;lt;8, 16, 16, 960, 480&amp;gt;</second>
 										</first>
-										<second>364</second>
+										<second>268</second>
 									</item>
 								</second>
 							</item>
@@ -11189,21 +10139,14 @@
 							<item>
 								<first>/home/hoinguyen/Documents/Vitis/UpConv_HLS/upconv_block0</first>
 								<second>
-									<count>3</count>
+									<count>2</count>
 									<item_version>0</item_version>
-									<item>
-										<first>
-											<first>../gen/Hls_Layers_UpConv.tpp</first>
-											<second>Apply_Norm_And_Write&amp;lt;32, 480, 30, 480&amp;gt;</second>
-										</first>
-										<second>272</second>
-									</item>
 									<item>
 										<first>
 											<first>../gen/Hls_Layers_UpConv.tpp</first>
 											<second>UpConv_Fused_Row&amp;lt;8, 16, 16, 960, 480&amp;gt;</second>
 										</first>
-										<second>364</second>
+										<second>268</second>
 									</item>
 									<item>
 										<first>
@@ -11247,33 +10190,26 @@
 					<Obj>
 						<type>0</type>
 						<id>213</id>
-						<name>void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_57</name>
+						<name>void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_77</name>
 						<fileName>../gen/Hls_Layers_UpConv.tpp</fileName>
 						<fileDirectory>/home/hoinguyen/Documents/Vitis/UpConv_HLS/upconv_block0</fileDirectory>
-						<lineNumber>270</lineNumber>
-						<contextFuncName>Apply_Norm_And_Write&amp;lt;32, 480, 30, 480&amp;gt;</contextFuncName>
-						<contextNormFuncName>Apply_Norm_And_Write_32_480_30_480_s</contextNormFuncName>
+						<lineNumber>266</lineNumber>
+						<contextFuncName>UpConv_Fused_Row&amp;lt;8, 16, 16, 960, 480&amp;gt;</contextFuncName>
+						<contextNormFuncName>UpConv_Fused_Row_8_16_16_960_480_s</contextNormFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
 								<first>/home/hoinguyen/Documents/Vitis/UpConv_HLS/upconv_block0</first>
 								<second>
-									<count>2</count>
+									<count>1</count>
 									<item_version>0</item_version>
-									<item>
-										<first>
-											<first>../gen/Hls_Layers_UpConv.tpp</first>
-											<second>Apply_Norm_And_Write&amp;lt;32, 480, 30, 480&amp;gt;</second>
-										</first>
-										<second>270</second>
-									</item>
 									<item>
 										<first>
 											<first>../gen/Hls_Layers_UpConv.tpp</first>
 											<second>UpConv_Fused_Row&amp;lt;8, 16, 16, 960, 480&amp;gt;</second>
 										</first>
-										<second>364</second>
+										<second>266</second>
 									</item>
 								</second>
 							</item>
@@ -11310,33 +10246,26 @@
 					<Obj>
 						<type>0</type>
 						<id>214</id>
-						<name>sub_i_7</name>
+						<name>sub151_7</name>
 						<fileName>../gen/Hls_Layers_UpConv.tpp</fileName>
 						<fileDirectory>/home/hoinguyen/Documents/Vitis/UpConv_HLS/upconv_block0</fileDirectory>
-						<lineNumber>273</lineNumber>
-						<contextFuncName>Apply_Norm_And_Write&amp;lt;32, 480, 30, 480&amp;gt;</contextFuncName>
-						<contextNormFuncName>Apply_Norm_And_Write_32_480_30_480_s</contextNormFuncName>
+						<lineNumber>269</lineNumber>
+						<contextFuncName>UpConv_Fused_Row&amp;lt;8, 16, 16, 960, 480&amp;gt;</contextFuncName>
+						<contextNormFuncName>UpConv_Fused_Row_8_16_16_960_480_s</contextNormFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
 								<first>/home/hoinguyen/Documents/Vitis/UpConv_HLS/upconv_block0</first>
 								<second>
-									<count>2</count>
+									<count>1</count>
 									<item_version>0</item_version>
-									<item>
-										<first>
-											<first>../gen/Hls_Layers_UpConv.tpp</first>
-											<second>Apply_Norm_And_Write&amp;lt;32, 480, 30, 480&amp;gt;</second>
-										</first>
-										<second>273</second>
-									</item>
 									<item>
 										<first>
 											<first>../gen/Hls_Layers_UpConv.tpp</first>
 											<second>UpConv_Fused_Row&amp;lt;8, 16, 16, 960, 480&amp;gt;</second>
 										</first>
-										<second>364</second>
+										<second>269</second>
 									</item>
 								</second>
 							</item>
@@ -11374,33 +10303,26 @@
 					<Obj>
 						<type>0</type>
 						<id>215</id>
-						<name>mul27_i_7</name>
+						<name>mul152_7</name>
 						<fileName>../gen/Hls_Layers_UpConv.tpp</fileName>
 						<fileDirectory>/home/hoinguyen/Documents/Vitis/UpConv_HLS/upconv_block0</fileDirectory>
-						<lineNumber>273</lineNumber>
-						<contextFuncName>Apply_Norm_And_Write&amp;lt;32, 480, 30, 480&amp;gt;</contextFuncName>
-						<contextNormFuncName>Apply_Norm_And_Write_32_480_30_480_s</contextNormFuncName>
+						<lineNumber>269</lineNumber>
+						<contextFuncName>UpConv_Fused_Row&amp;lt;8, 16, 16, 960, 480&amp;gt;</contextFuncName>
+						<contextNormFuncName>UpConv_Fused_Row_8_16_16_960_480_s</contextNormFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
 								<first>/home/hoinguyen/Documents/Vitis/UpConv_HLS/upconv_block0</first>
 								<second>
-									<count>2</count>
+									<count>1</count>
 									<item_version>0</item_version>
-									<item>
-										<first>
-											<first>../gen/Hls_Layers_UpConv.tpp</first>
-											<second>Apply_Norm_And_Write&amp;lt;32, 480, 30, 480&amp;gt;</second>
-										</first>
-										<second>273</second>
-									</item>
 									<item>
 										<first>
 											<first>../gen/Hls_Layers_UpConv.tpp</first>
 											<second>UpConv_Fused_Row&amp;lt;8, 16, 16, 960, 480&amp;gt;</second>
 										</first>
-										<second>364</second>
+										<second>269</second>
 									</item>
 								</second>
 							</item>
@@ -11438,33 +10360,26 @@
 					<Obj>
 						<type>0</type>
 						<id>216</id>
-						<name>mul28_i_7</name>
+						<name>mul153_7</name>
 						<fileName>../gen/Hls_Layers_UpConv.tpp</fileName>
 						<fileDirectory>/home/hoinguyen/Documents/Vitis/UpConv_HLS/upconv_block0</fileDirectory>
-						<lineNumber>273</lineNumber>
-						<contextFuncName>Apply_Norm_And_Write&amp;lt;32, 480, 30, 480&amp;gt;</contextFuncName>
-						<contextNormFuncName>Apply_Norm_And_Write_32_480_30_480_s</contextNormFuncName>
+						<lineNumber>269</lineNumber>
+						<contextFuncName>UpConv_Fused_Row&amp;lt;8, 16, 16, 960, 480&amp;gt;</contextFuncName>
+						<contextNormFuncName>UpConv_Fused_Row_8_16_16_960_480_s</contextNormFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
 								<first>/home/hoinguyen/Documents/Vitis/UpConv_HLS/upconv_block0</first>
 								<second>
-									<count>2</count>
+									<count>1</count>
 									<item_version>0</item_version>
-									<item>
-										<first>
-											<first>../gen/Hls_Layers_UpConv.tpp</first>
-											<second>Apply_Norm_And_Write&amp;lt;32, 480, 30, 480&amp;gt;</second>
-										</first>
-										<second>273</second>
-									</item>
 									<item>
 										<first>
 											<first>../gen/Hls_Layers_UpConv.tpp</first>
 											<second>UpConv_Fused_Row&amp;lt;8, 16, 16, 960, 480&amp;gt;</second>
 										</first>
-										<second>364</second>
+										<second>269</second>
 									</item>
 								</second>
 							</item>
@@ -11502,33 +10417,26 @@
 					<Obj>
 						<type>0</type>
 						<id>217</id>
-						<name>add29_i_7</name>
+						<name>add154_7</name>
 						<fileName>../gen/Hls_Layers_UpConv.tpp</fileName>
 						<fileDirectory>/home/hoinguyen/Documents/Vitis/UpConv_HLS/upconv_block0</fileDirectory>
-						<lineNumber>273</lineNumber>
-						<contextFuncName>Apply_Norm_And_Write&amp;lt;32, 480, 30, 480&amp;gt;</contextFuncName>
-						<contextNormFuncName>Apply_Norm_And_Write_32_480_30_480_s</contextNormFuncName>
+						<lineNumber>269</lineNumber>
+						<contextFuncName>UpConv_Fused_Row&amp;lt;8, 16, 16, 960, 480&amp;gt;</contextFuncName>
+						<contextNormFuncName>UpConv_Fused_Row_8_16_16_960_480_s</contextNormFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
 								<first>/home/hoinguyen/Documents/Vitis/UpConv_HLS/upconv_block0</first>
 								<second>
-									<count>2</count>
+									<count>1</count>
 									<item_version>0</item_version>
-									<item>
-										<first>
-											<first>../gen/Hls_Layers_UpConv.tpp</first>
-											<second>Apply_Norm_And_Write&amp;lt;32, 480, 30, 480&amp;gt;</second>
-										</first>
-										<second>273</second>
-									</item>
 									<item>
 										<first>
 											<first>../gen/Hls_Layers_UpConv.tpp</first>
 											<second>UpConv_Fused_Row&amp;lt;8, 16, 16, 960, 480&amp;gt;</second>
 										</first>
-										<second>364</second>
+										<second>269</second>
 									</item>
 								</second>
 							</item>
@@ -11569,30 +10477,23 @@
 						<name>norm_7</name>
 						<fileName>../gen/Hls_Layers_UpConv.tpp</fileName>
 						<fileDirectory>/home/hoinguyen/Documents/Vitis/UpConv_HLS/upconv_block0</fileDirectory>
-						<lineNumber>270</lineNumber>
-						<contextFuncName>Apply_Norm_And_Write&amp;lt;32, 480, 30, 480&amp;gt;</contextFuncName>
-						<contextNormFuncName>Apply_Norm_And_Write_32_480_30_480_s</contextNormFuncName>
+						<lineNumber>266</lineNumber>
+						<contextFuncName>UpConv_Fused_Row&amp;lt;8, 16, 16, 960, 480&amp;gt;</contextFuncName>
+						<contextNormFuncName>UpConv_Fused_Row_8_16_16_960_480_s</contextNormFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
 								<first>/home/hoinguyen/Documents/Vitis/UpConv_HLS/upconv_block0</first>
 								<second>
-									<count>2</count>
+									<count>1</count>
 									<item_version>0</item_version>
-									<item>
-										<first>
-											<first>../gen/Hls_Layers_UpConv.tpp</first>
-											<second>Apply_Norm_And_Write&amp;lt;32, 480, 30, 480&amp;gt;</second>
-										</first>
-										<second>270</second>
-									</item>
 									<item>
 										<first>
 											<first>../gen/Hls_Layers_UpConv.tpp</first>
 											<second>UpConv_Fused_Row&amp;lt;8, 16, 16, 960, 480&amp;gt;</second>
 										</first>
-										<second>364</second>
+										<second>266</second>
 									</item>
 								</second>
 							</item>
@@ -11631,33 +10532,26 @@
 					<Obj>
 						<type>0</type>
 						<id>219</id>
-						<name>cmp33_i_7</name>
+						<name>cmp158_7</name>
 						<fileName>../gen/Hls_Layers_UpConv.tpp</fileName>
 						<fileDirectory>/home/hoinguyen/Documents/Vitis/UpConv_HLS/upconv_block0</fileDirectory>
-						<lineNumber>274</lineNumber>
-						<contextFuncName>Apply_Norm_And_Write&amp;lt;32, 480, 30, 480&amp;gt;</contextFuncName>
-						<contextNormFuncName>Apply_Norm_And_Write_32_480_30_480_s</contextNormFuncName>
+						<lineNumber>270</lineNumber>
+						<contextFuncName>UpConv_Fused_Row&amp;lt;8, 16, 16, 960, 480&amp;gt;</contextFuncName>
+						<contextNormFuncName>UpConv_Fused_Row_8_16_16_960_480_s</contextNormFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
 								<first>/home/hoinguyen/Documents/Vitis/UpConv_HLS/upconv_block0</first>
 								<second>
-									<count>2</count>
+									<count>1</count>
 									<item_version>0</item_version>
-									<item>
-										<first>
-											<first>../gen/Hls_Layers_UpConv.tpp</first>
-											<second>Apply_Norm_And_Write&amp;lt;32, 480, 30, 480&amp;gt;</second>
-										</first>
-										<second>274</second>
-									</item>
 									<item>
 										<first>
 											<first>../gen/Hls_Layers_UpConv.tpp</first>
 											<second>UpConv_Fused_Row&amp;lt;8, 16, 16, 960, 480&amp;gt;</second>
 										</first>
-										<second>364</second>
+										<second>270</second>
 									</item>
 								</second>
 							</item>
@@ -11707,21 +10601,14 @@
 							<item>
 								<first>/home/hoinguyen/Documents/Vitis/UpConv_HLS/upconv_block0</first>
 								<second>
-									<count>3</count>
+									<count>2</count>
 									<item_version>0</item_version>
-									<item>
-										<first>
-											<first>../gen/Hls_Layers_UpConv.tpp</first>
-											<second>Apply_Norm_And_Write&amp;lt;32, 480, 30, 480&amp;gt;</second>
-										</first>
-										<second>275</second>
-									</item>
 									<item>
 										<first>
 											<first>../gen/Hls_Layers_UpConv.tpp</first>
 											<second>UpConv_Fused_Row&amp;lt;8, 16, 16, 960, 480&amp;gt;</second>
 										</first>
-										<second>364</second>
+										<second>271</second>
 									</item>
 									<item>
 										<first>
@@ -11777,21 +10664,14 @@
 							<item>
 								<first>/home/hoinguyen/Documents/Vitis/UpConv_HLS/upconv_block0</first>
 								<second>
-									<count>3</count>
+									<count>2</count>
 									<item_version>0</item_version>
-									<item>
-										<first>
-											<first>../gen/Hls_Layers_UpConv.tpp</first>
-											<second>Apply_Norm_And_Write&amp;lt;32, 480, 30, 480&amp;gt;</second>
-										</first>
-										<second>275</second>
-									</item>
 									<item>
 										<first>
 											<first>../gen/Hls_Layers_UpConv.tpp</first>
 											<second>UpConv_Fused_Row&amp;lt;8, 16, 16, 960, 480&amp;gt;</second>
 										</first>
-										<second>364</second>
+										<second>271</second>
 									</item>
 									<item>
 										<first>
@@ -11840,30 +10720,23 @@
 						<name>c_8</name>
 						<fileName>../gen/Hls_Layers_UpConv.tpp</fileName>
 						<fileDirectory>/home/hoinguyen/Documents/Vitis/UpConv_HLS/upconv_block0</fileDirectory>
-						<lineNumber>269</lineNumber>
-						<contextFuncName>Apply_Norm_And_Write&amp;lt;32, 480, 30, 480&amp;gt;</contextFuncName>
-						<contextNormFuncName>Apply_Norm_And_Write_32_480_30_480_s</contextNormFuncName>
+						<lineNumber>265</lineNumber>
+						<contextFuncName>UpConv_Fused_Row&amp;lt;8, 16, 16, 960, 480&amp;gt;</contextFuncName>
+						<contextNormFuncName>UpConv_Fused_Row_8_16_16_960_480_s</contextNormFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
 								<first>/home/hoinguyen/Documents/Vitis/UpConv_HLS/upconv_block0</first>
 								<second>
-									<count>2</count>
+									<count>1</count>
 									<item_version>0</item_version>
-									<item>
-										<first>
-											<first>../gen/Hls_Layers_UpConv.tpp</first>
-											<second>Apply_Norm_And_Write&amp;lt;32, 480, 30, 480&amp;gt;</second>
-										</first>
-										<second>269</second>
-									</item>
 									<item>
 										<first>
 											<first>../gen/Hls_Layers_UpConv.tpp</first>
 											<second>UpConv_Fused_Row&amp;lt;8, 16, 16, 960, 480&amp;gt;</second>
 										</first>
-										<second>364</second>
+										<second>265</second>
 									</item>
 								</second>
 							</item>
@@ -11902,33 +10775,26 @@
 					<Obj>
 						<type>0</type>
 						<id>223</id>
-						<name>icmp_ln270_8</name>
+						<name>icmp_ln266_8</name>
 						<fileName>../gen/Hls_Layers_UpConv.tpp</fileName>
 						<fileDirectory>/home/hoinguyen/Documents/Vitis/UpConv_HLS/upconv_block0</fileDirectory>
-						<lineNumber>270</lineNumber>
-						<contextFuncName>Apply_Norm_And_Write&amp;lt;32, 480, 30, 480&amp;gt;</contextFuncName>
-						<contextNormFuncName>Apply_Norm_And_Write_32_480_30_480_s</contextNormFuncName>
+						<lineNumber>266</lineNumber>
+						<contextFuncName>UpConv_Fused_Row&amp;lt;8, 16, 16, 960, 480&amp;gt;</contextFuncName>
+						<contextNormFuncName>UpConv_Fused_Row_8_16_16_960_480_s</contextNormFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
 								<first>/home/hoinguyen/Documents/Vitis/UpConv_HLS/upconv_block0</first>
 								<second>
-									<count>2</count>
+									<count>1</count>
 									<item_version>0</item_version>
-									<item>
-										<first>
-											<first>../gen/Hls_Layers_UpConv.tpp</first>
-											<second>Apply_Norm_And_Write&amp;lt;32, 480, 30, 480&amp;gt;</second>
-										</first>
-										<second>270</second>
-									</item>
 									<item>
 										<first>
 											<first>../gen/Hls_Layers_UpConv.tpp</first>
 											<second>UpConv_Fused_Row&amp;lt;8, 16, 16, 960, 480&amp;gt;</second>
 										</first>
-										<second>364</second>
+										<second>266</second>
 									</item>
 								</second>
 							</item>
@@ -11966,33 +10832,26 @@
 					<Obj>
 						<type>0</type>
 						<id>224</id>
-						<name>u_17</name>
+						<name>u_152</name>
 						<fileName>../gen/Hls_Layers_UpConv.tpp</fileName>
 						<fileDirectory>/home/hoinguyen/Documents/Vitis/UpConv_HLS/upconv_block0</fileDirectory>
-						<lineNumber>271</lineNumber>
-						<contextFuncName>Apply_Norm_And_Write&amp;lt;32, 480, 30, 480&amp;gt;</contextFuncName>
-						<contextNormFuncName>Apply_Norm_And_Write_32_480_30_480_s</contextNormFuncName>
+						<lineNumber>267</lineNumber>
+						<contextFuncName>UpConv_Fused_Row&amp;lt;8, 16, 16, 960, 480&amp;gt;</contextFuncName>
+						<contextNormFuncName>UpConv_Fused_Row_8_16_16_960_480_s</contextNormFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
 								<first>/home/hoinguyen/Documents/Vitis/UpConv_HLS/upconv_block0</first>
 								<second>
-									<count>2</count>
+									<count>1</count>
 									<item_version>0</item_version>
-									<item>
-										<first>
-											<first>../gen/Hls_Layers_UpConv.tpp</first>
-											<second>Apply_Norm_And_Write&amp;lt;32, 480, 30, 480&amp;gt;</second>
-										</first>
-										<second>271</second>
-									</item>
 									<item>
 										<first>
 											<first>../gen/Hls_Layers_UpConv.tpp</first>
 											<second>UpConv_Fused_Row&amp;lt;8, 16, 16, 960, 480&amp;gt;</second>
 										</first>
-										<second>364</second>
+										<second>267</second>
 									</item>
 								</second>
 							</item>
@@ -12043,21 +10902,14 @@
 							<item>
 								<first>/home/hoinguyen/Documents/Vitis/UpConv_HLS/upconv_block0</first>
 								<second>
-									<count>3</count>
+									<count>2</count>
 									<item_version>0</item_version>
-									<item>
-										<first>
-											<first>../gen/Hls_Layers_UpConv.tpp</first>
-											<second>Apply_Norm_And_Write&amp;lt;32, 480, 30, 480&amp;gt;</second>
-										</first>
-										<second>271</second>
-									</item>
 									<item>
 										<first>
 											<first>../gen/Hls_Layers_UpConv.tpp</first>
 											<second>UpConv_Fused_Row&amp;lt;8, 16, 16, 960, 480&amp;gt;</second>
 										</first>
-										<second>364</second>
+										<second>267</second>
 									</item>
 									<item>
 										<first>
@@ -12101,33 +10953,26 @@
 					<Obj>
 						<type>0</type>
 						<id>226</id>
-						<name>u_16</name>
+						<name>u_143</name>
 						<fileName>../gen/Hls_Layers_UpConv.tpp</fileName>
 						<fileDirectory>/home/hoinguyen/Documents/Vitis/UpConv_HLS/upconv_block0</fileDirectory>
-						<lineNumber>272</lineNumber>
-						<contextFuncName>Apply_Norm_And_Write&amp;lt;32, 480, 30, 480&amp;gt;</contextFuncName>
-						<contextNormFuncName>Apply_Norm_And_Write_32_480_30_480_s</contextNormFuncName>
+						<lineNumber>268</lineNumber>
+						<contextFuncName>UpConv_Fused_Row&amp;lt;8, 16, 16, 960, 480&amp;gt;</contextFuncName>
+						<contextNormFuncName>UpConv_Fused_Row_8_16_16_960_480_s</contextNormFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
 								<first>/home/hoinguyen/Documents/Vitis/UpConv_HLS/upconv_block0</first>
 								<second>
-									<count>2</count>
+									<count>1</count>
 									<item_version>0</item_version>
-									<item>
-										<first>
-											<first>../gen/Hls_Layers_UpConv.tpp</first>
-											<second>Apply_Norm_And_Write&amp;lt;32, 480, 30, 480&amp;gt;</second>
-										</first>
-										<second>272</second>
-									</item>
 									<item>
 										<first>
 											<first>../gen/Hls_Layers_UpConv.tpp</first>
 											<second>UpConv_Fused_Row&amp;lt;8, 16, 16, 960, 480&amp;gt;</second>
 										</first>
-										<second>364</second>
+										<second>268</second>
 									</item>
 								</second>
 							</item>
@@ -12178,21 +11023,14 @@
 							<item>
 								<first>/home/hoinguyen/Documents/Vitis/UpConv_HLS/upconv_block0</first>
 								<second>
-									<count>3</count>
+									<count>2</count>
 									<item_version>0</item_version>
-									<item>
-										<first>
-											<first>../gen/Hls_Layers_UpConv.tpp</first>
-											<second>Apply_Norm_And_Write&amp;lt;32, 480, 30, 480&amp;gt;</second>
-										</first>
-										<second>272</second>
-									</item>
 									<item>
 										<first>
 											<first>../gen/Hls_Layers_UpConv.tpp</first>
 											<second>UpConv_Fused_Row&amp;lt;8, 16, 16, 960, 480&amp;gt;</second>
 										</first>
-										<second>364</second>
+										<second>268</second>
 									</item>
 									<item>
 										<first>
@@ -12236,33 +11074,26 @@
 					<Obj>
 						<type>0</type>
 						<id>228</id>
-						<name>void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_58</name>
+						<name>void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_78</name>
 						<fileName>../gen/Hls_Layers_UpConv.tpp</fileName>
 						<fileDirectory>/home/hoinguyen/Documents/Vitis/UpConv_HLS/upconv_block0</fileDirectory>
-						<lineNumber>270</lineNumber>
-						<contextFuncName>Apply_Norm_And_Write&amp;lt;32, 480, 30, 480&amp;gt;</contextFuncName>
-						<contextNormFuncName>Apply_Norm_And_Write_32_480_30_480_s</contextNormFuncName>
+						<lineNumber>266</lineNumber>
+						<contextFuncName>UpConv_Fused_Row&amp;lt;8, 16, 16, 960, 480&amp;gt;</contextFuncName>
+						<contextNormFuncName>UpConv_Fused_Row_8_16_16_960_480_s</contextNormFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
 								<first>/home/hoinguyen/Documents/Vitis/UpConv_HLS/upconv_block0</first>
 								<second>
-									<count>2</count>
+									<count>1</count>
 									<item_version>0</item_version>
-									<item>
-										<first>
-											<first>../gen/Hls_Layers_UpConv.tpp</first>
-											<second>Apply_Norm_And_Write&amp;lt;32, 480, 30, 480&amp;gt;</second>
-										</first>
-										<second>270</second>
-									</item>
 									<item>
 										<first>
 											<first>../gen/Hls_Layers_UpConv.tpp</first>
 											<second>UpConv_Fused_Row&amp;lt;8, 16, 16, 960, 480&amp;gt;</second>
 										</first>
-										<second>364</second>
+										<second>266</second>
 									</item>
 								</second>
 							</item>
@@ -12299,33 +11130,26 @@
 					<Obj>
 						<type>0</type>
 						<id>229</id>
-						<name>sub_i_8</name>
+						<name>sub151_8</name>
 						<fileName>../gen/Hls_Layers_UpConv.tpp</fileName>
 						<fileDirectory>/home/hoinguyen/Documents/Vitis/UpConv_HLS/upconv_block0</fileDirectory>
-						<lineNumber>273</lineNumber>
-						<contextFuncName>Apply_Norm_And_Write&amp;lt;32, 480, 30, 480&amp;gt;</contextFuncName>
-						<contextNormFuncName>Apply_Norm_And_Write_32_480_30_480_s</contextNormFuncName>
+						<lineNumber>269</lineNumber>
+						<contextFuncName>UpConv_Fused_Row&amp;lt;8, 16, 16, 960, 480&amp;gt;</contextFuncName>
+						<contextNormFuncName>UpConv_Fused_Row_8_16_16_960_480_s</contextNormFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
 								<first>/home/hoinguyen/Documents/Vitis/UpConv_HLS/upconv_block0</first>
 								<second>
-									<count>2</count>
+									<count>1</count>
 									<item_version>0</item_version>
-									<item>
-										<first>
-											<first>../gen/Hls_Layers_UpConv.tpp</first>
-											<second>Apply_Norm_And_Write&amp;lt;32, 480, 30, 480&amp;gt;</second>
-										</first>
-										<second>273</second>
-									</item>
 									<item>
 										<first>
 											<first>../gen/Hls_Layers_UpConv.tpp</first>
 											<second>UpConv_Fused_Row&amp;lt;8, 16, 16, 960, 480&amp;gt;</second>
 										</first>
-										<second>364</second>
+										<second>269</second>
 									</item>
 								</second>
 							</item>
@@ -12363,33 +11187,26 @@
 					<Obj>
 						<type>0</type>
 						<id>230</id>
-						<name>mul27_i_8</name>
+						<name>mul152_8</name>
 						<fileName>../gen/Hls_Layers_UpConv.tpp</fileName>
 						<fileDirectory>/home/hoinguyen/Documents/Vitis/UpConv_HLS/upconv_block0</fileDirectory>
-						<lineNumber>273</lineNumber>
-						<contextFuncName>Apply_Norm_And_Write&amp;lt;32, 480, 30, 480&amp;gt;</contextFuncName>
-						<contextNormFuncName>Apply_Norm_And_Write_32_480_30_480_s</contextNormFuncName>
+						<lineNumber>269</lineNumber>
+						<contextFuncName>UpConv_Fused_Row&amp;lt;8, 16, 16, 960, 480&amp;gt;</contextFuncName>
+						<contextNormFuncName>UpConv_Fused_Row_8_16_16_960_480_s</contextNormFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
 								<first>/home/hoinguyen/Documents/Vitis/UpConv_HLS/upconv_block0</first>
 								<second>
-									<count>2</count>
+									<count>1</count>
 									<item_version>0</item_version>
-									<item>
-										<first>
-											<first>../gen/Hls_Layers_UpConv.tpp</first>
-											<second>Apply_Norm_And_Write&amp;lt;32, 480, 30, 480&amp;gt;</second>
-										</first>
-										<second>273</second>
-									</item>
 									<item>
 										<first>
 											<first>../gen/Hls_Layers_UpConv.tpp</first>
 											<second>UpConv_Fused_Row&amp;lt;8, 16, 16, 960, 480&amp;gt;</second>
 										</first>
-										<second>364</second>
+										<second>269</second>
 									</item>
 								</second>
 							</item>
@@ -12427,33 +11244,26 @@
 					<Obj>
 						<type>0</type>
 						<id>231</id>
-						<name>mul28_i_8</name>
+						<name>mul153_8</name>
 						<fileName>../gen/Hls_Layers_UpConv.tpp</fileName>
 						<fileDirectory>/home/hoinguyen/Documents/Vitis/UpConv_HLS/upconv_block0</fileDirectory>
-						<lineNumber>273</lineNumber>
-						<contextFuncName>Apply_Norm_And_Write&amp;lt;32, 480, 30, 480&amp;gt;</contextFuncName>
-						<contextNormFuncName>Apply_Norm_And_Write_32_480_30_480_s</contextNormFuncName>
+						<lineNumber>269</lineNumber>
+						<contextFuncName>UpConv_Fused_Row&amp;lt;8, 16, 16, 960, 480&amp;gt;</contextFuncName>
+						<contextNormFuncName>UpConv_Fused_Row_8_16_16_960_480_s</contextNormFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
 								<first>/home/hoinguyen/Documents/Vitis/UpConv_HLS/upconv_block0</first>
 								<second>
-									<count>2</count>
+									<count>1</count>
 									<item_version>0</item_version>
-									<item>
-										<first>
-											<first>../gen/Hls_Layers_UpConv.tpp</first>
-											<second>Apply_Norm_And_Write&amp;lt;32, 480, 30, 480&amp;gt;</second>
-										</first>
-										<second>273</second>
-									</item>
 									<item>
 										<first>
 											<first>../gen/Hls_Layers_UpConv.tpp</first>
 											<second>UpConv_Fused_Row&amp;lt;8, 16, 16, 960, 480&amp;gt;</second>
 										</first>
-										<second>364</second>
+										<second>269</second>
 									</item>
 								</second>
 							</item>
@@ -12491,33 +11301,26 @@
 					<Obj>
 						<type>0</type>
 						<id>232</id>
-						<name>add29_i_8</name>
+						<name>add154_8</name>
 						<fileName>../gen/Hls_Layers_UpConv.tpp</fileName>
 						<fileDirectory>/home/hoinguyen/Documents/Vitis/UpConv_HLS/upconv_block0</fileDirectory>
-						<lineNumber>273</lineNumber>
-						<contextFuncName>Apply_Norm_And_Write&amp;lt;32, 480, 30, 480&amp;gt;</contextFuncName>
-						<contextNormFuncName>Apply_Norm_And_Write_32_480_30_480_s</contextNormFuncName>
+						<lineNumber>269</lineNumber>
+						<contextFuncName>UpConv_Fused_Row&amp;lt;8, 16, 16, 960, 480&amp;gt;</contextFuncName>
+						<contextNormFuncName>UpConv_Fused_Row_8_16_16_960_480_s</contextNormFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
 								<first>/home/hoinguyen/Documents/Vitis/UpConv_HLS/upconv_block0</first>
 								<second>
-									<count>2</count>
+									<count>1</count>
 									<item_version>0</item_version>
-									<item>
-										<first>
-											<first>../gen/Hls_Layers_UpConv.tpp</first>
-											<second>Apply_Norm_And_Write&amp;lt;32, 480, 30, 480&amp;gt;</second>
-										</first>
-										<second>273</second>
-									</item>
 									<item>
 										<first>
 											<first>../gen/Hls_Layers_UpConv.tpp</first>
 											<second>UpConv_Fused_Row&amp;lt;8, 16, 16, 960, 480&amp;gt;</second>
 										</first>
-										<second>364</second>
+										<second>269</second>
 									</item>
 								</second>
 							</item>
@@ -12558,30 +11361,23 @@
 						<name>norm_8</name>
 						<fileName>../gen/Hls_Layers_UpConv.tpp</fileName>
 						<fileDirectory>/home/hoinguyen/Documents/Vitis/UpConv_HLS/upconv_block0</fileDirectory>
-						<lineNumber>270</lineNumber>
-						<contextFuncName>Apply_Norm_And_Write&amp;lt;32, 480, 30, 480&amp;gt;</contextFuncName>
-						<contextNormFuncName>Apply_Norm_And_Write_32_480_30_480_s</contextNormFuncName>
+						<lineNumber>266</lineNumber>
+						<contextFuncName>UpConv_Fused_Row&amp;lt;8, 16, 16, 960, 480&amp;gt;</contextFuncName>
+						<contextNormFuncName>UpConv_Fused_Row_8_16_16_960_480_s</contextNormFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
 								<first>/home/hoinguyen/Documents/Vitis/UpConv_HLS/upconv_block0</first>
 								<second>
-									<count>2</count>
+									<count>1</count>
 									<item_version>0</item_version>
-									<item>
-										<first>
-											<first>../gen/Hls_Layers_UpConv.tpp</first>
-											<second>Apply_Norm_And_Write&amp;lt;32, 480, 30, 480&amp;gt;</second>
-										</first>
-										<second>270</second>
-									</item>
 									<item>
 										<first>
 											<first>../gen/Hls_Layers_UpConv.tpp</first>
 											<second>UpConv_Fused_Row&amp;lt;8, 16, 16, 960, 480&amp;gt;</second>
 										</first>
-										<second>364</second>
+										<second>266</second>
 									</item>
 								</second>
 							</item>
@@ -12620,33 +11416,26 @@
 					<Obj>
 						<type>0</type>
 						<id>234</id>
-						<name>cmp33_i_8</name>
+						<name>cmp158_8</name>
 						<fileName>../gen/Hls_Layers_UpConv.tpp</fileName>
 						<fileDirectory>/home/hoinguyen/Documents/Vitis/UpConv_HLS/upconv_block0</fileDirectory>
-						<lineNumber>274</lineNumber>
-						<contextFuncName>Apply_Norm_And_Write&amp;lt;32, 480, 30, 480&amp;gt;</contextFuncName>
-						<contextNormFuncName>Apply_Norm_And_Write_32_480_30_480_s</contextNormFuncName>
+						<lineNumber>270</lineNumber>
+						<contextFuncName>UpConv_Fused_Row&amp;lt;8, 16, 16, 960, 480&amp;gt;</contextFuncName>
+						<contextNormFuncName>UpConv_Fused_Row_8_16_16_960_480_s</contextNormFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
 								<first>/home/hoinguyen/Documents/Vitis/UpConv_HLS/upconv_block0</first>
 								<second>
-									<count>2</count>
+									<count>1</count>
 									<item_version>0</item_version>
-									<item>
-										<first>
-											<first>../gen/Hls_Layers_UpConv.tpp</first>
-											<second>Apply_Norm_And_Write&amp;lt;32, 480, 30, 480&amp;gt;</second>
-										</first>
-										<second>274</second>
-									</item>
 									<item>
 										<first>
 											<first>../gen/Hls_Layers_UpConv.tpp</first>
 											<second>UpConv_Fused_Row&amp;lt;8, 16, 16, 960, 480&amp;gt;</second>
 										</first>
-										<second>364</second>
+										<second>270</second>
 									</item>
 								</second>
 							</item>
@@ -12696,21 +11485,14 @@
 							<item>
 								<first>/home/hoinguyen/Documents/Vitis/UpConv_HLS/upconv_block0</first>
 								<second>
-									<count>3</count>
+									<count>2</count>
 									<item_version>0</item_version>
-									<item>
-										<first>
-											<first>../gen/Hls_Layers_UpConv.tpp</first>
-											<second>Apply_Norm_And_Write&amp;lt;32, 480, 30, 480&amp;gt;</second>
-										</first>
-										<second>275</second>
-									</item>
 									<item>
 										<first>
 											<first>../gen/Hls_Layers_UpConv.tpp</first>
 											<second>UpConv_Fused_Row&amp;lt;8, 16, 16, 960, 480&amp;gt;</second>
 										</first>
-										<second>364</second>
+										<second>271</second>
 									</item>
 									<item>
 										<first>
@@ -12766,21 +11548,14 @@
 							<item>
 								<first>/home/hoinguyen/Documents/Vitis/UpConv_HLS/upconv_block0</first>
 								<second>
-									<count>3</count>
+									<count>2</count>
 									<item_version>0</item_version>
-									<item>
-										<first>
-											<first>../gen/Hls_Layers_UpConv.tpp</first>
-											<second>Apply_Norm_And_Write&amp;lt;32, 480, 30, 480&amp;gt;</second>
-										</first>
-										<second>275</second>
-									</item>
 									<item>
 										<first>
 											<first>../gen/Hls_Layers_UpConv.tpp</first>
 											<second>UpConv_Fused_Row&amp;lt;8, 16, 16, 960, 480&amp;gt;</second>
 										</first>
-										<second>364</second>
+										<second>271</second>
 									</item>
 									<item>
 										<first>
@@ -12829,30 +11604,23 @@
 						<name>c_9</name>
 						<fileName>../gen/Hls_Layers_UpConv.tpp</fileName>
 						<fileDirectory>/home/hoinguyen/Documents/Vitis/UpConv_HLS/upconv_block0</fileDirectory>
-						<lineNumber>269</lineNumber>
-						<contextFuncName>Apply_Norm_And_Write&amp;lt;32, 480, 30, 480&amp;gt;</contextFuncName>
-						<contextNormFuncName>Apply_Norm_And_Write_32_480_30_480_s</contextNormFuncName>
+						<lineNumber>265</lineNumber>
+						<contextFuncName>UpConv_Fused_Row&amp;lt;8, 16, 16, 960, 480&amp;gt;</contextFuncName>
+						<contextNormFuncName>UpConv_Fused_Row_8_16_16_960_480_s</contextNormFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
 								<first>/home/hoinguyen/Documents/Vitis/UpConv_HLS/upconv_block0</first>
 								<second>
-									<count>2</count>
+									<count>1</count>
 									<item_version>0</item_version>
-									<item>
-										<first>
-											<first>../gen/Hls_Layers_UpConv.tpp</first>
-											<second>Apply_Norm_And_Write&amp;lt;32, 480, 30, 480&amp;gt;</second>
-										</first>
-										<second>269</second>
-									</item>
 									<item>
 										<first>
 											<first>../gen/Hls_Layers_UpConv.tpp</first>
 											<second>UpConv_Fused_Row&amp;lt;8, 16, 16, 960, 480&amp;gt;</second>
 										</first>
-										<second>364</second>
+										<second>265</second>
 									</item>
 								</second>
 							</item>
@@ -12891,33 +11659,26 @@
 					<Obj>
 						<type>0</type>
 						<id>238</id>
-						<name>icmp_ln270_9</name>
+						<name>icmp_ln266_9</name>
 						<fileName>../gen/Hls_Layers_UpConv.tpp</fileName>
 						<fileDirectory>/home/hoinguyen/Documents/Vitis/UpConv_HLS/upconv_block0</fileDirectory>
-						<lineNumber>270</lineNumber>
-						<contextFuncName>Apply_Norm_And_Write&amp;lt;32, 480, 30, 480&amp;gt;</contextFuncName>
-						<contextNormFuncName>Apply_Norm_And_Write_32_480_30_480_s</contextNormFuncName>
+						<lineNumber>266</lineNumber>
+						<contextFuncName>UpConv_Fused_Row&amp;lt;8, 16, 16, 960, 480&amp;gt;</contextFuncName>
+						<contextNormFuncName>UpConv_Fused_Row_8_16_16_960_480_s</contextNormFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
 								<first>/home/hoinguyen/Documents/Vitis/UpConv_HLS/upconv_block0</first>
 								<second>
-									<count>2</count>
+									<count>1</count>
 									<item_version>0</item_version>
-									<item>
-										<first>
-											<first>../gen/Hls_Layers_UpConv.tpp</first>
-											<second>Apply_Norm_And_Write&amp;lt;32, 480, 30, 480&amp;gt;</second>
-										</first>
-										<second>270</second>
-									</item>
 									<item>
 										<first>
 											<first>../gen/Hls_Layers_UpConv.tpp</first>
 											<second>UpConv_Fused_Row&amp;lt;8, 16, 16, 960, 480&amp;gt;</second>
 										</first>
-										<second>364</second>
+										<second>266</second>
 									</item>
 								</second>
 							</item>
@@ -12955,33 +11716,26 @@
 					<Obj>
 						<type>0</type>
 						<id>239</id>
-						<name>u_19</name>
+						<name>u_154</name>
 						<fileName>../gen/Hls_Layers_UpConv.tpp</fileName>
 						<fileDirectory>/home/hoinguyen/Documents/Vitis/UpConv_HLS/upconv_block0</fileDirectory>
-						<lineNumber>271</lineNumber>
-						<contextFuncName>Apply_Norm_And_Write&amp;lt;32, 480, 30, 480&amp;gt;</contextFuncName>
-						<contextNormFuncName>Apply_Norm_And_Write_32_480_30_480_s</contextNormFuncName>
+						<lineNumber>267</lineNumber>
+						<contextFuncName>UpConv_Fused_Row&amp;lt;8, 16, 16, 960, 480&amp;gt;</contextFuncName>
+						<contextNormFuncName>UpConv_Fused_Row_8_16_16_960_480_s</contextNormFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
 								<first>/home/hoinguyen/Documents/Vitis/UpConv_HLS/upconv_block0</first>
 								<second>
-									<count>2</count>
+									<count>1</count>
 									<item_version>0</item_version>
-									<item>
-										<first>
-											<first>../gen/Hls_Layers_UpConv.tpp</first>
-											<second>Apply_Norm_And_Write&amp;lt;32, 480, 30, 480&amp;gt;</second>
-										</first>
-										<second>271</second>
-									</item>
 									<item>
 										<first>
 											<first>../gen/Hls_Layers_UpConv.tpp</first>
 											<second>UpConv_Fused_Row&amp;lt;8, 16, 16, 960, 480&amp;gt;</second>
 										</first>
-										<second>364</second>
+										<second>267</second>
 									</item>
 								</second>
 							</item>
@@ -13032,21 +11786,14 @@
 							<item>
 								<first>/home/hoinguyen/Documents/Vitis/UpConv_HLS/upconv_block0</first>
 								<second>
-									<count>3</count>
+									<count>2</count>
 									<item_version>0</item_version>
-									<item>
-										<first>
-											<first>../gen/Hls_Layers_UpConv.tpp</first>
-											<second>Apply_Norm_And_Write&amp;lt;32, 480, 30, 480&amp;gt;</second>
-										</first>
-										<second>271</second>
-									</item>
 									<item>
 										<first>
 											<first>../gen/Hls_Layers_UpConv.tpp</first>
 											<second>UpConv_Fused_Row&amp;lt;8, 16, 16, 960, 480&amp;gt;</second>
 										</first>
-										<second>364</second>
+										<second>267</second>
 									</item>
 									<item>
 										<first>
@@ -13090,33 +11837,26 @@
 					<Obj>
 						<type>0</type>
 						<id>241</id>
-						<name>u_18</name>
+						<name>u_153</name>
 						<fileName>../gen/Hls_Layers_UpConv.tpp</fileName>
 						<fileDirectory>/home/hoinguyen/Documents/Vitis/UpConv_HLS/upconv_block0</fileDirectory>
-						<lineNumber>272</lineNumber>
-						<contextFuncName>Apply_Norm_And_Write&amp;lt;32, 480, 30, 480&amp;gt;</contextFuncName>
-						<contextNormFuncName>Apply_Norm_And_Write_32_480_30_480_s</contextNormFuncName>
+						<lineNumber>268</lineNumber>
+						<contextFuncName>UpConv_Fused_Row&amp;lt;8, 16, 16, 960, 480&amp;gt;</contextFuncName>
+						<contextNormFuncName>UpConv_Fused_Row_8_16_16_960_480_s</contextNormFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
 								<first>/home/hoinguyen/Documents/Vitis/UpConv_HLS/upconv_block0</first>
 								<second>
-									<count>2</count>
+									<count>1</count>
 									<item_version>0</item_version>
-									<item>
-										<first>
-											<first>../gen/Hls_Layers_UpConv.tpp</first>
-											<second>Apply_Norm_And_Write&amp;lt;32, 480, 30, 480&amp;gt;</second>
-										</first>
-										<second>272</second>
-									</item>
 									<item>
 										<first>
 											<first>../gen/Hls_Layers_UpConv.tpp</first>
 											<second>UpConv_Fused_Row&amp;lt;8, 16, 16, 960, 480&amp;gt;</second>
 										</first>
-										<second>364</second>
+										<second>268</second>
 									</item>
 								</second>
 							</item>
@@ -13167,21 +11907,14 @@
 							<item>
 								<first>/home/hoinguyen/Documents/Vitis/UpConv_HLS/upconv_block0</first>
 								<second>
-									<count>3</count>
+									<count>2</count>
 									<item_version>0</item_version>
-									<item>
-										<first>
-											<first>../gen/Hls_Layers_UpConv.tpp</first>
-											<second>Apply_Norm_And_Write&amp;lt;32, 480, 30, 480&amp;gt;</second>
-										</first>
-										<second>272</second>
-									</item>
 									<item>
 										<first>
 											<first>../gen/Hls_Layers_UpConv.tpp</first>
 											<second>UpConv_Fused_Row&amp;lt;8, 16, 16, 960, 480&amp;gt;</second>
 										</first>
-										<second>364</second>
+										<second>268</second>
 									</item>
 									<item>
 										<first>
@@ -13225,33 +11958,26 @@
 					<Obj>
 						<type>0</type>
 						<id>243</id>
-						<name>void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_59</name>
+						<name>void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_79</name>
 						<fileName>../gen/Hls_Layers_UpConv.tpp</fileName>
 						<fileDirectory>/home/hoinguyen/Documents/Vitis/UpConv_HLS/upconv_block0</fileDirectory>
-						<lineNumber>270</lineNumber>
-						<contextFuncName>Apply_Norm_And_Write&amp;lt;32, 480, 30, 480&amp;gt;</contextFuncName>
-						<contextNormFuncName>Apply_Norm_And_Write_32_480_30_480_s</contextNormFuncName>
+						<lineNumber>266</lineNumber>
+						<contextFuncName>UpConv_Fused_Row&amp;lt;8, 16, 16, 960, 480&amp;gt;</contextFuncName>
+						<contextNormFuncName>UpConv_Fused_Row_8_16_16_960_480_s</contextNormFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
 								<first>/home/hoinguyen/Documents/Vitis/UpConv_HLS/upconv_block0</first>
 								<second>
-									<count>2</count>
+									<count>1</count>
 									<item_version>0</item_version>
-									<item>
-										<first>
-											<first>../gen/Hls_Layers_UpConv.tpp</first>
-											<second>Apply_Norm_And_Write&amp;lt;32, 480, 30, 480&amp;gt;</second>
-										</first>
-										<second>270</second>
-									</item>
 									<item>
 										<first>
 											<first>../gen/Hls_Layers_UpConv.tpp</first>
 											<second>UpConv_Fused_Row&amp;lt;8, 16, 16, 960, 480&amp;gt;</second>
 										</first>
-										<second>364</second>
+										<second>266</second>
 									</item>
 								</second>
 							</item>
@@ -13288,33 +12014,26 @@
 					<Obj>
 						<type>0</type>
 						<id>244</id>
-						<name>sub_i_9</name>
+						<name>sub151_9</name>
 						<fileName>../gen/Hls_Layers_UpConv.tpp</fileName>
 						<fileDirectory>/home/hoinguyen/Documents/Vitis/UpConv_HLS/upconv_block0</fileDirectory>
-						<lineNumber>273</lineNumber>
-						<contextFuncName>Apply_Norm_And_Write&amp;lt;32, 480, 30, 480&amp;gt;</contextFuncName>
-						<contextNormFuncName>Apply_Norm_And_Write_32_480_30_480_s</contextNormFuncName>
+						<lineNumber>269</lineNumber>
+						<contextFuncName>UpConv_Fused_Row&amp;lt;8, 16, 16, 960, 480&amp;gt;</contextFuncName>
+						<contextNormFuncName>UpConv_Fused_Row_8_16_16_960_480_s</contextNormFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
 								<first>/home/hoinguyen/Documents/Vitis/UpConv_HLS/upconv_block0</first>
 								<second>
-									<count>2</count>
+									<count>1</count>
 									<item_version>0</item_version>
-									<item>
-										<first>
-											<first>../gen/Hls_Layers_UpConv.tpp</first>
-											<second>Apply_Norm_And_Write&amp;lt;32, 480, 30, 480&amp;gt;</second>
-										</first>
-										<second>273</second>
-									</item>
 									<item>
 										<first>
 											<first>../gen/Hls_Layers_UpConv.tpp</first>
 											<second>UpConv_Fused_Row&amp;lt;8, 16, 16, 960, 480&amp;gt;</second>
 										</first>
-										<second>364</second>
+										<second>269</second>
 									</item>
 								</second>
 							</item>
@@ -13352,33 +12071,26 @@
 					<Obj>
 						<type>0</type>
 						<id>245</id>
-						<name>mul27_i_9</name>
+						<name>mul152_9</name>
 						<fileName>../gen/Hls_Layers_UpConv.tpp</fileName>
 						<fileDirectory>/home/hoinguyen/Documents/Vitis/UpConv_HLS/upconv_block0</fileDirectory>
-						<lineNumber>273</lineNumber>
-						<contextFuncName>Apply_Norm_And_Write&amp;lt;32, 480, 30, 480&amp;gt;</contextFuncName>
-						<contextNormFuncName>Apply_Norm_And_Write_32_480_30_480_s</contextNormFuncName>
+						<lineNumber>269</lineNumber>
+						<contextFuncName>UpConv_Fused_Row&amp;lt;8, 16, 16, 960, 480&amp;gt;</contextFuncName>
+						<contextNormFuncName>UpConv_Fused_Row_8_16_16_960_480_s</contextNormFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
 								<first>/home/hoinguyen/Documents/Vitis/UpConv_HLS/upconv_block0</first>
 								<second>
-									<count>2</count>
+									<count>1</count>
 									<item_version>0</item_version>
-									<item>
-										<first>
-											<first>../gen/Hls_Layers_UpConv.tpp</first>
-											<second>Apply_Norm_And_Write&amp;lt;32, 480, 30, 480&amp;gt;</second>
-										</first>
-										<second>273</second>
-									</item>
 									<item>
 										<first>
 											<first>../gen/Hls_Layers_UpConv.tpp</first>
 											<second>UpConv_Fused_Row&amp;lt;8, 16, 16, 960, 480&amp;gt;</second>
 										</first>
-										<second>364</second>
+										<second>269</second>
 									</item>
 								</second>
 							</item>
@@ -13416,33 +12128,26 @@
 					<Obj>
 						<type>0</type>
 						<id>246</id>
-						<name>mul28_i_9</name>
+						<name>mul153_9</name>
 						<fileName>../gen/Hls_Layers_UpConv.tpp</fileName>
 						<fileDirectory>/home/hoinguyen/Documents/Vitis/UpConv_HLS/upconv_block0</fileDirectory>
-						<lineNumber>273</lineNumber>
-						<contextFuncName>Apply_Norm_And_Write&amp;lt;32, 480, 30, 480&amp;gt;</contextFuncName>
-						<contextNormFuncName>Apply_Norm_And_Write_32_480_30_480_s</contextNormFuncName>
+						<lineNumber>269</lineNumber>
+						<contextFuncName>UpConv_Fused_Row&amp;lt;8, 16, 16, 960, 480&amp;gt;</contextFuncName>
+						<contextNormFuncName>UpConv_Fused_Row_8_16_16_960_480_s</contextNormFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
 								<first>/home/hoinguyen/Documents/Vitis/UpConv_HLS/upconv_block0</first>
 								<second>
-									<count>2</count>
+									<count>1</count>
 									<item_version>0</item_version>
-									<item>
-										<first>
-											<first>../gen/Hls_Layers_UpConv.tpp</first>
-											<second>Apply_Norm_And_Write&amp;lt;32, 480, 30, 480&amp;gt;</second>
-										</first>
-										<second>273</second>
-									</item>
 									<item>
 										<first>
 											<first>../gen/Hls_Layers_UpConv.tpp</first>
 											<second>UpConv_Fused_Row&amp;lt;8, 16, 16, 960, 480&amp;gt;</second>
 										</first>
-										<second>364</second>
+										<second>269</second>
 									</item>
 								</second>
 							</item>
@@ -13480,33 +12185,26 @@
 					<Obj>
 						<type>0</type>
 						<id>247</id>
-						<name>add29_i_9</name>
+						<name>add154_9</name>
 						<fileName>../gen/Hls_Layers_UpConv.tpp</fileName>
 						<fileDirectory>/home/hoinguyen/Documents/Vitis/UpConv_HLS/upconv_block0</fileDirectory>
-						<lineNumber>273</lineNumber>
-						<contextFuncName>Apply_Norm_And_Write&amp;lt;32, 480, 30, 480&amp;gt;</contextFuncName>
-						<contextNormFuncName>Apply_Norm_And_Write_32_480_30_480_s</contextNormFuncName>
+						<lineNumber>269</lineNumber>
+						<contextFuncName>UpConv_Fused_Row&amp;lt;8, 16, 16, 960, 480&amp;gt;</contextFuncName>
+						<contextNormFuncName>UpConv_Fused_Row_8_16_16_960_480_s</contextNormFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
 								<first>/home/hoinguyen/Documents/Vitis/UpConv_HLS/upconv_block0</first>
 								<second>
-									<count>2</count>
+									<count>1</count>
 									<item_version>0</item_version>
-									<item>
-										<first>
-											<first>../gen/Hls_Layers_UpConv.tpp</first>
-											<second>Apply_Norm_And_Write&amp;lt;32, 480, 30, 480&amp;gt;</second>
-										</first>
-										<second>273</second>
-									</item>
 									<item>
 										<first>
 											<first>../gen/Hls_Layers_UpConv.tpp</first>
 											<second>UpConv_Fused_Row&amp;lt;8, 16, 16, 960, 480&amp;gt;</second>
 										</first>
-										<second>364</second>
+										<second>269</second>
 									</item>
 								</second>
 							</item>
@@ -13547,30 +12245,23 @@
 						<name>norm_9</name>
 						<fileName>../gen/Hls_Layers_UpConv.tpp</fileName>
 						<fileDirectory>/home/hoinguyen/Documents/Vitis/UpConv_HLS/upconv_block0</fileDirectory>
-						<lineNumber>270</lineNumber>
-						<contextFuncName>Apply_Norm_And_Write&amp;lt;32, 480, 30, 480&amp;gt;</contextFuncName>
-						<contextNormFuncName>Apply_Norm_And_Write_32_480_30_480_s</contextNormFuncName>
+						<lineNumber>266</lineNumber>
+						<contextFuncName>UpConv_Fused_Row&amp;lt;8, 16, 16, 960, 480&amp;gt;</contextFuncName>
+						<contextNormFuncName>UpConv_Fused_Row_8_16_16_960_480_s</contextNormFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
 								<first>/home/hoinguyen/Documents/Vitis/UpConv_HLS/upconv_block0</first>
 								<second>
-									<count>2</count>
+									<count>1</count>
 									<item_version>0</item_version>
-									<item>
-										<first>
-											<first>../gen/Hls_Layers_UpConv.tpp</first>
-											<second>Apply_Norm_And_Write&amp;lt;32, 480, 30, 480&amp;gt;</second>
-										</first>
-										<second>270</second>
-									</item>
 									<item>
 										<first>
 											<first>../gen/Hls_Layers_UpConv.tpp</first>
 											<second>UpConv_Fused_Row&amp;lt;8, 16, 16, 960, 480&amp;gt;</second>
 										</first>
-										<second>364</second>
+										<second>266</second>
 									</item>
 								</second>
 							</item>
@@ -13609,33 +12300,26 @@
 					<Obj>
 						<type>0</type>
 						<id>249</id>
-						<name>cmp33_i_9</name>
+						<name>cmp158_9</name>
 						<fileName>../gen/Hls_Layers_UpConv.tpp</fileName>
 						<fileDirectory>/home/hoinguyen/Documents/Vitis/UpConv_HLS/upconv_block0</fileDirectory>
-						<lineNumber>274</lineNumber>
-						<contextFuncName>Apply_Norm_And_Write&amp;lt;32, 480, 30, 480&amp;gt;</contextFuncName>
-						<contextNormFuncName>Apply_Norm_And_Write_32_480_30_480_s</contextNormFuncName>
+						<lineNumber>270</lineNumber>
+						<contextFuncName>UpConv_Fused_Row&amp;lt;8, 16, 16, 960, 480&amp;gt;</contextFuncName>
+						<contextNormFuncName>UpConv_Fused_Row_8_16_16_960_480_s</contextNormFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
 								<first>/home/hoinguyen/Documents/Vitis/UpConv_HLS/upconv_block0</first>
 								<second>
-									<count>2</count>
+									<count>1</count>
 									<item_version>0</item_version>
-									<item>
-										<first>
-											<first>../gen/Hls_Layers_UpConv.tpp</first>
-											<second>Apply_Norm_And_Write&amp;lt;32, 480, 30, 480&amp;gt;</second>
-										</first>
-										<second>274</second>
-									</item>
 									<item>
 										<first>
 											<first>../gen/Hls_Layers_UpConv.tpp</first>
 											<second>UpConv_Fused_Row&amp;lt;8, 16, 16, 960, 480&amp;gt;</second>
 										</first>
-										<second>364</second>
+										<second>270</second>
 									</item>
 								</second>
 							</item>
@@ -13685,21 +12369,14 @@
 							<item>
 								<first>/home/hoinguyen/Documents/Vitis/UpConv_HLS/upconv_block0</first>
 								<second>
-									<count>3</count>
+									<count>2</count>
 									<item_version>0</item_version>
-									<item>
-										<first>
-											<first>../gen/Hls_Layers_UpConv.tpp</first>
-											<second>Apply_Norm_And_Write&amp;lt;32, 480, 30, 480&amp;gt;</second>
-										</first>
-										<second>275</second>
-									</item>
 									<item>
 										<first>
 											<first>../gen/Hls_Layers_UpConv.tpp</first>
 											<second>UpConv_Fused_Row&amp;lt;8, 16, 16, 960, 480&amp;gt;</second>
 										</first>
-										<second>364</second>
+										<second>271</second>
 									</item>
 									<item>
 										<first>
@@ -13755,21 +12432,14 @@
 							<item>
 								<first>/home/hoinguyen/Documents/Vitis/UpConv_HLS/upconv_block0</first>
 								<second>
-									<count>3</count>
+									<count>2</count>
 									<item_version>0</item_version>
-									<item>
-										<first>
-											<first>../gen/Hls_Layers_UpConv.tpp</first>
-											<second>Apply_Norm_And_Write&amp;lt;32, 480, 30, 480&amp;gt;</second>
-										</first>
-										<second>275</second>
-									</item>
 									<item>
 										<first>
 											<first>../gen/Hls_Layers_UpConv.tpp</first>
 											<second>UpConv_Fused_Row&amp;lt;8, 16, 16, 960, 480&amp;gt;</second>
 										</first>
-										<second>364</second>
+										<second>271</second>
 									</item>
 									<item>
 										<first>
@@ -13818,30 +12488,23 @@
 						<name>c_10</name>
 						<fileName>../gen/Hls_Layers_UpConv.tpp</fileName>
 						<fileDirectory>/home/hoinguyen/Documents/Vitis/UpConv_HLS/upconv_block0</fileDirectory>
-						<lineNumber>269</lineNumber>
-						<contextFuncName>Apply_Norm_And_Write&amp;lt;32, 480, 30, 480&amp;gt;</contextFuncName>
-						<contextNormFuncName>Apply_Norm_And_Write_32_480_30_480_s</contextNormFuncName>
+						<lineNumber>265</lineNumber>
+						<contextFuncName>UpConv_Fused_Row&amp;lt;8, 16, 16, 960, 480&amp;gt;</contextFuncName>
+						<contextNormFuncName>UpConv_Fused_Row_8_16_16_960_480_s</contextNormFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
 								<first>/home/hoinguyen/Documents/Vitis/UpConv_HLS/upconv_block0</first>
 								<second>
-									<count>2</count>
+									<count>1</count>
 									<item_version>0</item_version>
-									<item>
-										<first>
-											<first>../gen/Hls_Layers_UpConv.tpp</first>
-											<second>Apply_Norm_And_Write&amp;lt;32, 480, 30, 480&amp;gt;</second>
-										</first>
-										<second>269</second>
-									</item>
 									<item>
 										<first>
 											<first>../gen/Hls_Layers_UpConv.tpp</first>
 											<second>UpConv_Fused_Row&amp;lt;8, 16, 16, 960, 480&amp;gt;</second>
 										</first>
-										<second>364</second>
+										<second>265</second>
 									</item>
 								</second>
 							</item>
@@ -13880,33 +12543,26 @@
 					<Obj>
 						<type>0</type>
 						<id>253</id>
-						<name>icmp_ln270_10</name>
+						<name>icmp_ln266_10</name>
 						<fileName>../gen/Hls_Layers_UpConv.tpp</fileName>
 						<fileDirectory>/home/hoinguyen/Documents/Vitis/UpConv_HLS/upconv_block0</fileDirectory>
-						<lineNumber>270</lineNumber>
-						<contextFuncName>Apply_Norm_And_Write&amp;lt;32, 480, 30, 480&amp;gt;</contextFuncName>
-						<contextNormFuncName>Apply_Norm_And_Write_32_480_30_480_s</contextNormFuncName>
+						<lineNumber>266</lineNumber>
+						<contextFuncName>UpConv_Fused_Row&amp;lt;8, 16, 16, 960, 480&amp;gt;</contextFuncName>
+						<contextNormFuncName>UpConv_Fused_Row_8_16_16_960_480_s</contextNormFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
 								<first>/home/hoinguyen/Documents/Vitis/UpConv_HLS/upconv_block0</first>
 								<second>
-									<count>2</count>
+									<count>1</count>
 									<item_version>0</item_version>
-									<item>
-										<first>
-											<first>../gen/Hls_Layers_UpConv.tpp</first>
-											<second>Apply_Norm_And_Write&amp;lt;32, 480, 30, 480&amp;gt;</second>
-										</first>
-										<second>270</second>
-									</item>
 									<item>
 										<first>
 											<first>../gen/Hls_Layers_UpConv.tpp</first>
 											<second>UpConv_Fused_Row&amp;lt;8, 16, 16, 960, 480&amp;gt;</second>
 										</first>
-										<second>364</second>
+										<second>266</second>
 									</item>
 								</second>
 							</item>
@@ -13944,33 +12600,26 @@
 					<Obj>
 						<type>0</type>
 						<id>254</id>
-						<name>u_21</name>
+						<name>u_156</name>
 						<fileName>../gen/Hls_Layers_UpConv.tpp</fileName>
 						<fileDirectory>/home/hoinguyen/Documents/Vitis/UpConv_HLS/upconv_block0</fileDirectory>
-						<lineNumber>271</lineNumber>
-						<contextFuncName>Apply_Norm_And_Write&amp;lt;32, 480, 30, 480&amp;gt;</contextFuncName>
-						<contextNormFuncName>Apply_Norm_And_Write_32_480_30_480_s</contextNormFuncName>
+						<lineNumber>267</lineNumber>
+						<contextFuncName>UpConv_Fused_Row&amp;lt;8, 16, 16, 960, 480&amp;gt;</contextFuncName>
+						<contextNormFuncName>UpConv_Fused_Row_8_16_16_960_480_s</contextNormFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
 								<first>/home/hoinguyen/Documents/Vitis/UpConv_HLS/upconv_block0</first>
 								<second>
-									<count>2</count>
+									<count>1</count>
 									<item_version>0</item_version>
-									<item>
-										<first>
-											<first>../gen/Hls_Layers_UpConv.tpp</first>
-											<second>Apply_Norm_And_Write&amp;lt;32, 480, 30, 480&amp;gt;</second>
-										</first>
-										<second>271</second>
-									</item>
 									<item>
 										<first>
 											<first>../gen/Hls_Layers_UpConv.tpp</first>
 											<second>UpConv_Fused_Row&amp;lt;8, 16, 16, 960, 480&amp;gt;</second>
 										</first>
-										<second>364</second>
+										<second>267</second>
 									</item>
 								</second>
 							</item>
@@ -14021,21 +12670,14 @@
 							<item>
 								<first>/home/hoinguyen/Documents/Vitis/UpConv_HLS/upconv_block0</first>
 								<second>
-									<count>3</count>
+									<count>2</count>
 									<item_version>0</item_version>
-									<item>
-										<first>
-											<first>../gen/Hls_Layers_UpConv.tpp</first>
-											<second>Apply_Norm_And_Write&amp;lt;32, 480, 30, 480&amp;gt;</second>
-										</first>
-										<second>271</second>
-									</item>
 									<item>
 										<first>
 											<first>../gen/Hls_Layers_UpConv.tpp</first>
 											<second>UpConv_Fused_Row&amp;lt;8, 16, 16, 960, 480&amp;gt;</second>
 										</first>
-										<second>364</second>
+										<second>267</second>
 									</item>
 									<item>
 										<first>
@@ -14079,33 +12721,26 @@
 					<Obj>
 						<type>0</type>
 						<id>256</id>
-						<name>u_20</name>
+						<name>u_155</name>
 						<fileName>../gen/Hls_Layers_UpConv.tpp</fileName>
 						<fileDirectory>/home/hoinguyen/Documents/Vitis/UpConv_HLS/upconv_block0</fileDirectory>
-						<lineNumber>272</lineNumber>
-						<contextFuncName>Apply_Norm_And_Write&amp;lt;32, 480, 30, 480&amp;gt;</contextFuncName>
-						<contextNormFuncName>Apply_Norm_And_Write_32_480_30_480_s</contextNormFuncName>
+						<lineNumber>268</lineNumber>
+						<contextFuncName>UpConv_Fused_Row&amp;lt;8, 16, 16, 960, 480&amp;gt;</contextFuncName>
+						<contextNormFuncName>UpConv_Fused_Row_8_16_16_960_480_s</contextNormFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
 								<first>/home/hoinguyen/Documents/Vitis/UpConv_HLS/upconv_block0</first>
 								<second>
-									<count>2</count>
+									<count>1</count>
 									<item_version>0</item_version>
-									<item>
-										<first>
-											<first>../gen/Hls_Layers_UpConv.tpp</first>
-											<second>Apply_Norm_And_Write&amp;lt;32, 480, 30, 480&amp;gt;</second>
-										</first>
-										<second>272</second>
-									</item>
 									<item>
 										<first>
 											<first>../gen/Hls_Layers_UpConv.tpp</first>
 											<second>UpConv_Fused_Row&amp;lt;8, 16, 16, 960, 480&amp;gt;</second>
 										</first>
-										<second>364</second>
+										<second>268</second>
 									</item>
 								</second>
 							</item>
@@ -14156,21 +12791,14 @@
 							<item>
 								<first>/home/hoinguyen/Documents/Vitis/UpConv_HLS/upconv_block0</first>
 								<second>
-									<count>3</count>
+									<count>2</count>
 									<item_version>0</item_version>
-									<item>
-										<first>
-											<first>../gen/Hls_Layers_UpConv.tpp</first>
-											<second>Apply_Norm_And_Write&amp;lt;32, 480, 30, 480&amp;gt;</second>
-										</first>
-										<second>272</second>
-									</item>
 									<item>
 										<first>
 											<first>../gen/Hls_Layers_UpConv.tpp</first>
 											<second>UpConv_Fused_Row&amp;lt;8, 16, 16, 960, 480&amp;gt;</second>
 										</first>
-										<second>364</second>
+										<second>268</second>
 									</item>
 									<item>
 										<first>
@@ -14214,33 +12842,26 @@
 					<Obj>
 						<type>0</type>
 						<id>258</id>
-						<name>p_ZZ16UpConv_Fused_RowILi8ELi16ELi16ELi960ELi480EEvP7ap_uintILi256EEPKS1_S4_S4_S4_30</name>
+						<name>p_ZZ16UpConv_Fused_RowILi8ELi16ELi16ELi960ELi480EEvP7ap_uintILi256EEPKS1_S4_S4_S4_42</name>
 						<fileName>../gen/Hls_Layers_UpConv.tpp</fileName>
 						<fileDirectory>/home/hoinguyen/Documents/Vitis/UpConv_HLS/upconv_block0</fileDirectory>
-						<lineNumber>270</lineNumber>
-						<contextFuncName>Apply_Norm_And_Write&amp;lt;32, 480, 30, 480&amp;gt;</contextFuncName>
-						<contextNormFuncName>Apply_Norm_And_Write_32_480_30_480_s</contextNormFuncName>
+						<lineNumber>266</lineNumber>
+						<contextFuncName>UpConv_Fused_Row&amp;lt;8, 16, 16, 960, 480&amp;gt;</contextFuncName>
+						<contextNormFuncName>UpConv_Fused_Row_8_16_16_960_480_s</contextNormFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
 								<first>/home/hoinguyen/Documents/Vitis/UpConv_HLS/upconv_block0</first>
 								<second>
-									<count>2</count>
+									<count>1</count>
 									<item_version>0</item_version>
-									<item>
-										<first>
-											<first>../gen/Hls_Layers_UpConv.tpp</first>
-											<second>Apply_Norm_And_Write&amp;lt;32, 480, 30, 480&amp;gt;</second>
-										</first>
-										<second>270</second>
-									</item>
 									<item>
 										<first>
 											<first>../gen/Hls_Layers_UpConv.tpp</first>
 											<second>UpConv_Fused_Row&amp;lt;8, 16, 16, 960, 480&amp;gt;</second>
 										</first>
-										<second>364</second>
+										<second>266</second>
 									</item>
 								</second>
 							</item>
@@ -14277,33 +12898,26 @@
 					<Obj>
 						<type>0</type>
 						<id>259</id>
-						<name>sub_i_s</name>
+						<name>sub151_s</name>
 						<fileName>../gen/Hls_Layers_UpConv.tpp</fileName>
 						<fileDirectory>/home/hoinguyen/Documents/Vitis/UpConv_HLS/upconv_block0</fileDirectory>
-						<lineNumber>273</lineNumber>
-						<contextFuncName>Apply_Norm_And_Write&amp;lt;32, 480, 30, 480&amp;gt;</contextFuncName>
-						<contextNormFuncName>Apply_Norm_And_Write_32_480_30_480_s</contextNormFuncName>
+						<lineNumber>269</lineNumber>
+						<contextFuncName>UpConv_Fused_Row&amp;lt;8, 16, 16, 960, 480&amp;gt;</contextFuncName>
+						<contextNormFuncName>UpConv_Fused_Row_8_16_16_960_480_s</contextNormFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
 								<first>/home/hoinguyen/Documents/Vitis/UpConv_HLS/upconv_block0</first>
 								<second>
-									<count>2</count>
+									<count>1</count>
 									<item_version>0</item_version>
-									<item>
-										<first>
-											<first>../gen/Hls_Layers_UpConv.tpp</first>
-											<second>Apply_Norm_And_Write&amp;lt;32, 480, 30, 480&amp;gt;</second>
-										</first>
-										<second>273</second>
-									</item>
 									<item>
 										<first>
 											<first>../gen/Hls_Layers_UpConv.tpp</first>
 											<second>UpConv_Fused_Row&amp;lt;8, 16, 16, 960, 480&amp;gt;</second>
 										</first>
-										<second>364</second>
+										<second>269</second>
 									</item>
 								</second>
 							</item>
@@ -14341,33 +12955,26 @@
 					<Obj>
 						<type>0</type>
 						<id>260</id>
-						<name>mul27_i_s</name>
+						<name>mul152_s</name>
 						<fileName>../gen/Hls_Layers_UpConv.tpp</fileName>
 						<fileDirectory>/home/hoinguyen/Documents/Vitis/UpConv_HLS/upconv_block0</fileDirectory>
-						<lineNumber>273</lineNumber>
-						<contextFuncName>Apply_Norm_And_Write&amp;lt;32, 480, 30, 480&amp;gt;</contextFuncName>
-						<contextNormFuncName>Apply_Norm_And_Write_32_480_30_480_s</contextNormFuncName>
+						<lineNumber>269</lineNumber>
+						<contextFuncName>UpConv_Fused_Row&amp;lt;8, 16, 16, 960, 480&amp;gt;</contextFuncName>
+						<contextNormFuncName>UpConv_Fused_Row_8_16_16_960_480_s</contextNormFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
 								<first>/home/hoinguyen/Documents/Vitis/UpConv_HLS/upconv_block0</first>
 								<second>
-									<count>2</count>
+									<count>1</count>
 									<item_version>0</item_version>
-									<item>
-										<first>
-											<first>../gen/Hls_Layers_UpConv.tpp</first>
-											<second>Apply_Norm_And_Write&amp;lt;32, 480, 30, 480&amp;gt;</second>
-										</first>
-										<second>273</second>
-									</item>
 									<item>
 										<first>
 											<first>../gen/Hls_Layers_UpConv.tpp</first>
 											<second>UpConv_Fused_Row&amp;lt;8, 16, 16, 960, 480&amp;gt;</second>
 										</first>
-										<second>364</second>
+										<second>269</second>
 									</item>
 								</second>
 							</item>
@@ -14405,33 +13012,26 @@
 					<Obj>
 						<type>0</type>
 						<id>261</id>
-						<name>mul28_i_s</name>
+						<name>mul153_s</name>
 						<fileName>../gen/Hls_Layers_UpConv.tpp</fileName>
 						<fileDirectory>/home/hoinguyen/Documents/Vitis/UpConv_HLS/upconv_block0</fileDirectory>
-						<lineNumber>273</lineNumber>
-						<contextFuncName>Apply_Norm_And_Write&amp;lt;32, 480, 30, 480&amp;gt;</contextFuncName>
-						<contextNormFuncName>Apply_Norm_And_Write_32_480_30_480_s</contextNormFuncName>
+						<lineNumber>269</lineNumber>
+						<contextFuncName>UpConv_Fused_Row&amp;lt;8, 16, 16, 960, 480&amp;gt;</contextFuncName>
+						<contextNormFuncName>UpConv_Fused_Row_8_16_16_960_480_s</contextNormFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
 								<first>/home/hoinguyen/Documents/Vitis/UpConv_HLS/upconv_block0</first>
 								<second>
-									<count>2</count>
+									<count>1</count>
 									<item_version>0</item_version>
-									<item>
-										<first>
-											<first>../gen/Hls_Layers_UpConv.tpp</first>
-											<second>Apply_Norm_And_Write&amp;lt;32, 480, 30, 480&amp;gt;</second>
-										</first>
-										<second>273</second>
-									</item>
 									<item>
 										<first>
 											<first>../gen/Hls_Layers_UpConv.tpp</first>
 											<second>UpConv_Fused_Row&amp;lt;8, 16, 16, 960, 480&amp;gt;</second>
 										</first>
-										<second>364</second>
+										<second>269</second>
 									</item>
 								</second>
 							</item>
@@ -14469,33 +13069,26 @@
 					<Obj>
 						<type>0</type>
 						<id>262</id>
-						<name>add29_i_s</name>
+						<name>add154_s</name>
 						<fileName>../gen/Hls_Layers_UpConv.tpp</fileName>
 						<fileDirectory>/home/hoinguyen/Documents/Vitis/UpConv_HLS/upconv_block0</fileDirectory>
-						<lineNumber>273</lineNumber>
-						<contextFuncName>Apply_Norm_And_Write&amp;lt;32, 480, 30, 480&amp;gt;</contextFuncName>
-						<contextNormFuncName>Apply_Norm_And_Write_32_480_30_480_s</contextNormFuncName>
+						<lineNumber>269</lineNumber>
+						<contextFuncName>UpConv_Fused_Row&amp;lt;8, 16, 16, 960, 480&amp;gt;</contextFuncName>
+						<contextNormFuncName>UpConv_Fused_Row_8_16_16_960_480_s</contextNormFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
 								<first>/home/hoinguyen/Documents/Vitis/UpConv_HLS/upconv_block0</first>
 								<second>
-									<count>2</count>
+									<count>1</count>
 									<item_version>0</item_version>
-									<item>
-										<first>
-											<first>../gen/Hls_Layers_UpConv.tpp</first>
-											<second>Apply_Norm_And_Write&amp;lt;32, 480, 30, 480&amp;gt;</second>
-										</first>
-										<second>273</second>
-									</item>
 									<item>
 										<first>
 											<first>../gen/Hls_Layers_UpConv.tpp</first>
 											<second>UpConv_Fused_Row&amp;lt;8, 16, 16, 960, 480&amp;gt;</second>
 										</first>
-										<second>364</second>
+										<second>269</second>
 									</item>
 								</second>
 							</item>
@@ -14536,30 +13129,23 @@
 						<name>norm_10</name>
 						<fileName>../gen/Hls_Layers_UpConv.tpp</fileName>
 						<fileDirectory>/home/hoinguyen/Documents/Vitis/UpConv_HLS/upconv_block0</fileDirectory>
-						<lineNumber>270</lineNumber>
-						<contextFuncName>Apply_Norm_And_Write&amp;lt;32, 480, 30, 480&amp;gt;</contextFuncName>
-						<contextNormFuncName>Apply_Norm_And_Write_32_480_30_480_s</contextNormFuncName>
+						<lineNumber>266</lineNumber>
+						<contextFuncName>UpConv_Fused_Row&amp;lt;8, 16, 16, 960, 480&amp;gt;</contextFuncName>
+						<contextNormFuncName>UpConv_Fused_Row_8_16_16_960_480_s</contextNormFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
 								<first>/home/hoinguyen/Documents/Vitis/UpConv_HLS/upconv_block0</first>
 								<second>
-									<count>2</count>
+									<count>1</count>
 									<item_version>0</item_version>
-									<item>
-										<first>
-											<first>../gen/Hls_Layers_UpConv.tpp</first>
-											<second>Apply_Norm_And_Write&amp;lt;32, 480, 30, 480&amp;gt;</second>
-										</first>
-										<second>270</second>
-									</item>
 									<item>
 										<first>
 											<first>../gen/Hls_Layers_UpConv.tpp</first>
 											<second>UpConv_Fused_Row&amp;lt;8, 16, 16, 960, 480&amp;gt;</second>
 										</first>
-										<second>364</second>
+										<second>266</second>
 									</item>
 								</second>
 							</item>
@@ -14598,33 +13184,26 @@
 					<Obj>
 						<type>0</type>
 						<id>264</id>
-						<name>cmp33_i_s</name>
+						<name>cmp158_s</name>
 						<fileName>../gen/Hls_Layers_UpConv.tpp</fileName>
 						<fileDirectory>/home/hoinguyen/Documents/Vitis/UpConv_HLS/upconv_block0</fileDirectory>
-						<lineNumber>274</lineNumber>
-						<contextFuncName>Apply_Norm_And_Write&amp;lt;32, 480, 30, 480&amp;gt;</contextFuncName>
-						<contextNormFuncName>Apply_Norm_And_Write_32_480_30_480_s</contextNormFuncName>
+						<lineNumber>270</lineNumber>
+						<contextFuncName>UpConv_Fused_Row&amp;lt;8, 16, 16, 960, 480&amp;gt;</contextFuncName>
+						<contextNormFuncName>UpConv_Fused_Row_8_16_16_960_480_s</contextNormFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
 								<first>/home/hoinguyen/Documents/Vitis/UpConv_HLS/upconv_block0</first>
 								<second>
-									<count>2</count>
+									<count>1</count>
 									<item_version>0</item_version>
-									<item>
-										<first>
-											<first>../gen/Hls_Layers_UpConv.tpp</first>
-											<second>Apply_Norm_And_Write&amp;lt;32, 480, 30, 480&amp;gt;</second>
-										</first>
-										<second>274</second>
-									</item>
 									<item>
 										<first>
 											<first>../gen/Hls_Layers_UpConv.tpp</first>
 											<second>UpConv_Fused_Row&amp;lt;8, 16, 16, 960, 480&amp;gt;</second>
 										</first>
-										<second>364</second>
+										<second>270</second>
 									</item>
 								</second>
 							</item>
@@ -14674,21 +13253,14 @@
 							<item>
 								<first>/home/hoinguyen/Documents/Vitis/UpConv_HLS/upconv_block0</first>
 								<second>
-									<count>3</count>
+									<count>2</count>
 									<item_version>0</item_version>
-									<item>
-										<first>
-											<first>../gen/Hls_Layers_UpConv.tpp</first>
-											<second>Apply_Norm_And_Write&amp;lt;32, 480, 30, 480&amp;gt;</second>
-										</first>
-										<second>275</second>
-									</item>
 									<item>
 										<first>
 											<first>../gen/Hls_Layers_UpConv.tpp</first>
 											<second>UpConv_Fused_Row&amp;lt;8, 16, 16, 960, 480&amp;gt;</second>
 										</first>
-										<second>364</second>
+										<second>271</second>
 									</item>
 									<item>
 										<first>
@@ -14744,21 +13316,14 @@
 							<item>
 								<first>/home/hoinguyen/Documents/Vitis/UpConv_HLS/upconv_block0</first>
 								<second>
-									<count>3</count>
+									<count>2</count>
 									<item_version>0</item_version>
-									<item>
-										<first>
-											<first>../gen/Hls_Layers_UpConv.tpp</first>
-											<second>Apply_Norm_And_Write&amp;lt;32, 480, 30, 480&amp;gt;</second>
-										</first>
-										<second>275</second>
-									</item>
 									<item>
 										<first>
 											<first>../gen/Hls_Layers_UpConv.tpp</first>
 											<second>UpConv_Fused_Row&amp;lt;8, 16, 16, 960, 480&amp;gt;</second>
 										</first>
-										<second>364</second>
+										<second>271</second>
 									</item>
 									<item>
 										<first>
@@ -14807,30 +13372,23 @@
 						<name>c_11</name>
 						<fileName>../gen/Hls_Layers_UpConv.tpp</fileName>
 						<fileDirectory>/home/hoinguyen/Documents/Vitis/UpConv_HLS/upconv_block0</fileDirectory>
-						<lineNumber>269</lineNumber>
-						<contextFuncName>Apply_Norm_And_Write&amp;lt;32, 480, 30, 480&amp;gt;</contextFuncName>
-						<contextNormFuncName>Apply_Norm_And_Write_32_480_30_480_s</contextNormFuncName>
+						<lineNumber>265</lineNumber>
+						<contextFuncName>UpConv_Fused_Row&amp;lt;8, 16, 16, 960, 480&amp;gt;</contextFuncName>
+						<contextNormFuncName>UpConv_Fused_Row_8_16_16_960_480_s</contextNormFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
 								<first>/home/hoinguyen/Documents/Vitis/UpConv_HLS/upconv_block0</first>
 								<second>
-									<count>2</count>
+									<count>1</count>
 									<item_version>0</item_version>
-									<item>
-										<first>
-											<first>../gen/Hls_Layers_UpConv.tpp</first>
-											<second>Apply_Norm_And_Write&amp;lt;32, 480, 30, 480&amp;gt;</second>
-										</first>
-										<second>269</second>
-									</item>
 									<item>
 										<first>
 											<first>../gen/Hls_Layers_UpConv.tpp</first>
 											<second>UpConv_Fused_Row&amp;lt;8, 16, 16, 960, 480&amp;gt;</second>
 										</first>
-										<second>364</second>
+										<second>265</second>
 									</item>
 								</second>
 							</item>
@@ -14869,33 +13427,26 @@
 					<Obj>
 						<type>0</type>
 						<id>268</id>
-						<name>icmp_ln270_11</name>
+						<name>icmp_ln266_11</name>
 						<fileName>../gen/Hls_Layers_UpConv.tpp</fileName>
 						<fileDirectory>/home/hoinguyen/Documents/Vitis/UpConv_HLS/upconv_block0</fileDirectory>
-						<lineNumber>270</lineNumber>
-						<contextFuncName>Apply_Norm_And_Write&amp;lt;32, 480, 30, 480&amp;gt;</contextFuncName>
-						<contextNormFuncName>Apply_Norm_And_Write_32_480_30_480_s</contextNormFuncName>
+						<lineNumber>266</lineNumber>
+						<contextFuncName>UpConv_Fused_Row&amp;lt;8, 16, 16, 960, 480&amp;gt;</contextFuncName>
+						<contextNormFuncName>UpConv_Fused_Row_8_16_16_960_480_s</contextNormFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
 								<first>/home/hoinguyen/Documents/Vitis/UpConv_HLS/upconv_block0</first>
 								<second>
-									<count>2</count>
+									<count>1</count>
 									<item_version>0</item_version>
-									<item>
-										<first>
-											<first>../gen/Hls_Layers_UpConv.tpp</first>
-											<second>Apply_Norm_And_Write&amp;lt;32, 480, 30, 480&amp;gt;</second>
-										</first>
-										<second>270</second>
-									</item>
 									<item>
 										<first>
 											<first>../gen/Hls_Layers_UpConv.tpp</first>
 											<second>UpConv_Fused_Row&amp;lt;8, 16, 16, 960, 480&amp;gt;</second>
 										</first>
-										<second>364</second>
+										<second>266</second>
 									</item>
 								</second>
 							</item>
@@ -14933,33 +13484,26 @@
 					<Obj>
 						<type>0</type>
 						<id>269</id>
-						<name>u_23</name>
+						<name>u_158</name>
 						<fileName>../gen/Hls_Layers_UpConv.tpp</fileName>
 						<fileDirectory>/home/hoinguyen/Documents/Vitis/UpConv_HLS/upconv_block0</fileDirectory>
-						<lineNumber>271</lineNumber>
-						<contextFuncName>Apply_Norm_And_Write&amp;lt;32, 480, 30, 480&amp;gt;</contextFuncName>
-						<contextNormFuncName>Apply_Norm_And_Write_32_480_30_480_s</contextNormFuncName>
+						<lineNumber>267</lineNumber>
+						<contextFuncName>UpConv_Fused_Row&amp;lt;8, 16, 16, 960, 480&amp;gt;</contextFuncName>
+						<contextNormFuncName>UpConv_Fused_Row_8_16_16_960_480_s</contextNormFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
 								<first>/home/hoinguyen/Documents/Vitis/UpConv_HLS/upconv_block0</first>
 								<second>
-									<count>2</count>
+									<count>1</count>
 									<item_version>0</item_version>
-									<item>
-										<first>
-											<first>../gen/Hls_Layers_UpConv.tpp</first>
-											<second>Apply_Norm_And_Write&amp;lt;32, 480, 30, 480&amp;gt;</second>
-										</first>
-										<second>271</second>
-									</item>
 									<item>
 										<first>
 											<first>../gen/Hls_Layers_UpConv.tpp</first>
 											<second>UpConv_Fused_Row&amp;lt;8, 16, 16, 960, 480&amp;gt;</second>
 										</first>
-										<second>364</second>
+										<second>267</second>
 									</item>
 								</second>
 							</item>
@@ -15010,21 +13554,14 @@
 							<item>
 								<first>/home/hoinguyen/Documents/Vitis/UpConv_HLS/upconv_block0</first>
 								<second>
-									<count>3</count>
+									<count>2</count>
 									<item_version>0</item_version>
-									<item>
-										<first>
-											<first>../gen/Hls_Layers_UpConv.tpp</first>
-											<second>Apply_Norm_And_Write&amp;lt;32, 480, 30, 480&amp;gt;</second>
-										</first>
-										<second>271</second>
-									</item>
 									<item>
 										<first>
 											<first>../gen/Hls_Layers_UpConv.tpp</first>
 											<second>UpConv_Fused_Row&amp;lt;8, 16, 16, 960, 480&amp;gt;</second>
 										</first>
-										<second>364</second>
+										<second>267</second>
 									</item>
 									<item>
 										<first>
@@ -15068,33 +13605,26 @@
 					<Obj>
 						<type>0</type>
 						<id>271</id>
-						<name>u_22</name>
+						<name>u_157</name>
 						<fileName>../gen/Hls_Layers_UpConv.tpp</fileName>
 						<fileDirectory>/home/hoinguyen/Documents/Vitis/UpConv_HLS/upconv_block0</fileDirectory>
-						<lineNumber>272</lineNumber>
-						<contextFuncName>Apply_Norm_And_Write&amp;lt;32, 480, 30, 480&amp;gt;</contextFuncName>
-						<contextNormFuncName>Apply_Norm_And_Write_32_480_30_480_s</contextNormFuncName>
+						<lineNumber>268</lineNumber>
+						<contextFuncName>UpConv_Fused_Row&amp;lt;8, 16, 16, 960, 480&amp;gt;</contextFuncName>
+						<contextNormFuncName>UpConv_Fused_Row_8_16_16_960_480_s</contextNormFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
 								<first>/home/hoinguyen/Documents/Vitis/UpConv_HLS/upconv_block0</first>
 								<second>
-									<count>2</count>
+									<count>1</count>
 									<item_version>0</item_version>
-									<item>
-										<first>
-											<first>../gen/Hls_Layers_UpConv.tpp</first>
-											<second>Apply_Norm_And_Write&amp;lt;32, 480, 30, 480&amp;gt;</second>
-										</first>
-										<second>272</second>
-									</item>
 									<item>
 										<first>
 											<first>../gen/Hls_Layers_UpConv.tpp</first>
 											<second>UpConv_Fused_Row&amp;lt;8, 16, 16, 960, 480&amp;gt;</second>
 										</first>
-										<second>364</second>
+										<second>268</second>
 									</item>
 								</second>
 							</item>
@@ -15145,21 +13675,14 @@
 							<item>
 								<first>/home/hoinguyen/Documents/Vitis/UpConv_HLS/upconv_block0</first>
 								<second>
-									<count>3</count>
+									<count>2</count>
 									<item_version>0</item_version>
-									<item>
-										<first>
-											<first>../gen/Hls_Layers_UpConv.tpp</first>
-											<second>Apply_Norm_And_Write&amp;lt;32, 480, 30, 480&amp;gt;</second>
-										</first>
-										<second>272</second>
-									</item>
 									<item>
 										<first>
 											<first>../gen/Hls_Layers_UpConv.tpp</first>
 											<second>UpConv_Fused_Row&amp;lt;8, 16, 16, 960, 480&amp;gt;</second>
 										</first>
-										<second>364</second>
+										<second>268</second>
 									</item>
 									<item>
 										<first>
@@ -15203,33 +13726,26 @@
 					<Obj>
 						<type>0</type>
 						<id>273</id>
-						<name>p_ZZ16UpConv_Fused_RowILi8ELi16ELi16ELi960ELi480EEvP7ap_uintILi256EEPKS1_S4_S4_S4_31</name>
+						<name>p_ZZ16UpConv_Fused_RowILi8ELi16ELi16ELi960ELi480EEvP7ap_uintILi256EEPKS1_S4_S4_S4_43</name>
 						<fileName>../gen/Hls_Layers_UpConv.tpp</fileName>
 						<fileDirectory>/home/hoinguyen/Documents/Vitis/UpConv_HLS/upconv_block0</fileDirectory>
-						<lineNumber>270</lineNumber>
-						<contextFuncName>Apply_Norm_And_Write&amp;lt;32, 480, 30, 480&amp;gt;</contextFuncName>
-						<contextNormFuncName>Apply_Norm_And_Write_32_480_30_480_s</contextNormFuncName>
+						<lineNumber>266</lineNumber>
+						<contextFuncName>UpConv_Fused_Row&amp;lt;8, 16, 16, 960, 480&amp;gt;</contextFuncName>
+						<contextNormFuncName>UpConv_Fused_Row_8_16_16_960_480_s</contextNormFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
 								<first>/home/hoinguyen/Documents/Vitis/UpConv_HLS/upconv_block0</first>
 								<second>
-									<count>2</count>
+									<count>1</count>
 									<item_version>0</item_version>
-									<item>
-										<first>
-											<first>../gen/Hls_Layers_UpConv.tpp</first>
-											<second>Apply_Norm_And_Write&amp;lt;32, 480, 30, 480&amp;gt;</second>
-										</first>
-										<second>270</second>
-									</item>
 									<item>
 										<first>
 											<first>../gen/Hls_Layers_UpConv.tpp</first>
 											<second>UpConv_Fused_Row&amp;lt;8, 16, 16, 960, 480&amp;gt;</second>
 										</first>
-										<second>364</second>
+										<second>266</second>
 									</item>
 								</second>
 							</item>
@@ -15266,33 +13782,26 @@
 					<Obj>
 						<type>0</type>
 						<id>274</id>
-						<name>sub_i_10</name>
+						<name>sub151_10</name>
 						<fileName>../gen/Hls_Layers_UpConv.tpp</fileName>
 						<fileDirectory>/home/hoinguyen/Documents/Vitis/UpConv_HLS/upconv_block0</fileDirectory>
-						<lineNumber>273</lineNumber>
-						<contextFuncName>Apply_Norm_And_Write&amp;lt;32, 480, 30, 480&amp;gt;</contextFuncName>
-						<contextNormFuncName>Apply_Norm_And_Write_32_480_30_480_s</contextNormFuncName>
+						<lineNumber>269</lineNumber>
+						<contextFuncName>UpConv_Fused_Row&amp;lt;8, 16, 16, 960, 480&amp;gt;</contextFuncName>
+						<contextNormFuncName>UpConv_Fused_Row_8_16_16_960_480_s</contextNormFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
 								<first>/home/hoinguyen/Documents/Vitis/UpConv_HLS/upconv_block0</first>
 								<second>
-									<count>2</count>
+									<count>1</count>
 									<item_version>0</item_version>
-									<item>
-										<first>
-											<first>../gen/Hls_Layers_UpConv.tpp</first>
-											<second>Apply_Norm_And_Write&amp;lt;32, 480, 30, 480&amp;gt;</second>
-										</first>
-										<second>273</second>
-									</item>
 									<item>
 										<first>
 											<first>../gen/Hls_Layers_UpConv.tpp</first>
 											<second>UpConv_Fused_Row&amp;lt;8, 16, 16, 960, 480&amp;gt;</second>
 										</first>
-										<second>364</second>
+										<second>269</second>
 									</item>
 								</second>
 							</item>
@@ -15330,33 +13839,26 @@
 					<Obj>
 						<type>0</type>
 						<id>275</id>
-						<name>mul27_i_10</name>
+						<name>mul152_10</name>
 						<fileName>../gen/Hls_Layers_UpConv.tpp</fileName>
 						<fileDirectory>/home/hoinguyen/Documents/Vitis/UpConv_HLS/upconv_block0</fileDirectory>
-						<lineNumber>273</lineNumber>
-						<contextFuncName>Apply_Norm_And_Write&amp;lt;32, 480, 30, 480&amp;gt;</contextFuncName>
-						<contextNormFuncName>Apply_Norm_And_Write_32_480_30_480_s</contextNormFuncName>
+						<lineNumber>269</lineNumber>
+						<contextFuncName>UpConv_Fused_Row&amp;lt;8, 16, 16, 960, 480&amp;gt;</contextFuncName>
+						<contextNormFuncName>UpConv_Fused_Row_8_16_16_960_480_s</contextNormFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
 								<first>/home/hoinguyen/Documents/Vitis/UpConv_HLS/upconv_block0</first>
 								<second>
-									<count>2</count>
+									<count>1</count>
 									<item_version>0</item_version>
-									<item>
-										<first>
-											<first>../gen/Hls_Layers_UpConv.tpp</first>
-											<second>Apply_Norm_And_Write&amp;lt;32, 480, 30, 480&amp;gt;</second>
-										</first>
-										<second>273</second>
-									</item>
 									<item>
 										<first>
 											<first>../gen/Hls_Layers_UpConv.tpp</first>
 											<second>UpConv_Fused_Row&amp;lt;8, 16, 16, 960, 480&amp;gt;</second>
 										</first>
-										<second>364</second>
+										<second>269</second>
 									</item>
 								</second>
 							</item>
@@ -15394,33 +13896,26 @@
 					<Obj>
 						<type>0</type>
 						<id>276</id>
-						<name>mul28_i_10</name>
+						<name>mul153_10</name>
 						<fileName>../gen/Hls_Layers_UpConv.tpp</fileName>
 						<fileDirectory>/home/hoinguyen/Documents/Vitis/UpConv_HLS/upconv_block0</fileDirectory>
-						<lineNumber>273</lineNumber>
-						<contextFuncName>Apply_Norm_And_Write&amp;lt;32, 480, 30, 480&amp;gt;</contextFuncName>
-						<contextNormFuncName>Apply_Norm_And_Write_32_480_30_480_s</contextNormFuncName>
+						<lineNumber>269</lineNumber>
+						<contextFuncName>UpConv_Fused_Row&amp;lt;8, 16, 16, 960, 480&amp;gt;</contextFuncName>
+						<contextNormFuncName>UpConv_Fused_Row_8_16_16_960_480_s</contextNormFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
 								<first>/home/hoinguyen/Documents/Vitis/UpConv_HLS/upconv_block0</first>
 								<second>
-									<count>2</count>
+									<count>1</count>
 									<item_version>0</item_version>
-									<item>
-										<first>
-											<first>../gen/Hls_Layers_UpConv.tpp</first>
-											<second>Apply_Norm_And_Write&amp;lt;32, 480, 30, 480&amp;gt;</second>
-										</first>
-										<second>273</second>
-									</item>
 									<item>
 										<first>
 											<first>../gen/Hls_Layers_UpConv.tpp</first>
 											<second>UpConv_Fused_Row&amp;lt;8, 16, 16, 960, 480&amp;gt;</second>
 										</first>
-										<second>364</second>
+										<second>269</second>
 									</item>
 								</second>
 							</item>
@@ -15458,33 +13953,26 @@
 					<Obj>
 						<type>0</type>
 						<id>277</id>
-						<name>add29_i_10</name>
+						<name>add154_10</name>
 						<fileName>../gen/Hls_Layers_UpConv.tpp</fileName>
 						<fileDirectory>/home/hoinguyen/Documents/Vitis/UpConv_HLS/upconv_block0</fileDirectory>
-						<lineNumber>273</lineNumber>
-						<contextFuncName>Apply_Norm_And_Write&amp;lt;32, 480, 30, 480&amp;gt;</contextFuncName>
-						<contextNormFuncName>Apply_Norm_And_Write_32_480_30_480_s</contextNormFuncName>
+						<lineNumber>269</lineNumber>
+						<contextFuncName>UpConv_Fused_Row&amp;lt;8, 16, 16, 960, 480&amp;gt;</contextFuncName>
+						<contextNormFuncName>UpConv_Fused_Row_8_16_16_960_480_s</contextNormFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
 								<first>/home/hoinguyen/Documents/Vitis/UpConv_HLS/upconv_block0</first>
 								<second>
-									<count>2</count>
+									<count>1</count>
 									<item_version>0</item_version>
-									<item>
-										<first>
-											<first>../gen/Hls_Layers_UpConv.tpp</first>
-											<second>Apply_Norm_And_Write&amp;lt;32, 480, 30, 480&amp;gt;</second>
-										</first>
-										<second>273</second>
-									</item>
 									<item>
 										<first>
 											<first>../gen/Hls_Layers_UpConv.tpp</first>
 											<second>UpConv_Fused_Row&amp;lt;8, 16, 16, 960, 480&amp;gt;</second>
 										</first>
-										<second>364</second>
+										<second>269</second>
 									</item>
 								</second>
 							</item>
@@ -15525,30 +14013,23 @@
 						<name>norm_11</name>
 						<fileName>../gen/Hls_Layers_UpConv.tpp</fileName>
 						<fileDirectory>/home/hoinguyen/Documents/Vitis/UpConv_HLS/upconv_block0</fileDirectory>
-						<lineNumber>270</lineNumber>
-						<contextFuncName>Apply_Norm_And_Write&amp;lt;32, 480, 30, 480&amp;gt;</contextFuncName>
-						<contextNormFuncName>Apply_Norm_And_Write_32_480_30_480_s</contextNormFuncName>
+						<lineNumber>266</lineNumber>
+						<contextFuncName>UpConv_Fused_Row&amp;lt;8, 16, 16, 960, 480&amp;gt;</contextFuncName>
+						<contextNormFuncName>UpConv_Fused_Row_8_16_16_960_480_s</contextNormFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
 								<first>/home/hoinguyen/Documents/Vitis/UpConv_HLS/upconv_block0</first>
 								<second>
-									<count>2</count>
+									<count>1</count>
 									<item_version>0</item_version>
-									<item>
-										<first>
-											<first>../gen/Hls_Layers_UpConv.tpp</first>
-											<second>Apply_Norm_And_Write&amp;lt;32, 480, 30, 480&amp;gt;</second>
-										</first>
-										<second>270</second>
-									</item>
 									<item>
 										<first>
 											<first>../gen/Hls_Layers_UpConv.tpp</first>
 											<second>UpConv_Fused_Row&amp;lt;8, 16, 16, 960, 480&amp;gt;</second>
 										</first>
-										<second>364</second>
+										<second>266</second>
 									</item>
 								</second>
 							</item>
@@ -15587,33 +14068,26 @@
 					<Obj>
 						<type>0</type>
 						<id>279</id>
-						<name>cmp33_i_10</name>
+						<name>cmp158_10</name>
 						<fileName>../gen/Hls_Layers_UpConv.tpp</fileName>
 						<fileDirectory>/home/hoinguyen/Documents/Vitis/UpConv_HLS/upconv_block0</fileDirectory>
-						<lineNumber>274</lineNumber>
-						<contextFuncName>Apply_Norm_And_Write&amp;lt;32, 480, 30, 480&amp;gt;</contextFuncName>
-						<contextNormFuncName>Apply_Norm_And_Write_32_480_30_480_s</contextNormFuncName>
+						<lineNumber>270</lineNumber>
+						<contextFuncName>UpConv_Fused_Row&amp;lt;8, 16, 16, 960, 480&amp;gt;</contextFuncName>
+						<contextNormFuncName>UpConv_Fused_Row_8_16_16_960_480_s</contextNormFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
 								<first>/home/hoinguyen/Documents/Vitis/UpConv_HLS/upconv_block0</first>
 								<second>
-									<count>2</count>
+									<count>1</count>
 									<item_version>0</item_version>
-									<item>
-										<first>
-											<first>../gen/Hls_Layers_UpConv.tpp</first>
-											<second>Apply_Norm_And_Write&amp;lt;32, 480, 30, 480&amp;gt;</second>
-										</first>
-										<second>274</second>
-									</item>
 									<item>
 										<first>
 											<first>../gen/Hls_Layers_UpConv.tpp</first>
 											<second>UpConv_Fused_Row&amp;lt;8, 16, 16, 960, 480&amp;gt;</second>
 										</first>
-										<second>364</second>
+										<second>270</second>
 									</item>
 								</second>
 							</item>
@@ -15663,21 +14137,14 @@
 							<item>
 								<first>/home/hoinguyen/Documents/Vitis/UpConv_HLS/upconv_block0</first>
 								<second>
-									<count>3</count>
+									<count>2</count>
 									<item_version>0</item_version>
-									<item>
-										<first>
-											<first>../gen/Hls_Layers_UpConv.tpp</first>
-											<second>Apply_Norm_And_Write&amp;lt;32, 480, 30, 480&amp;gt;</second>
-										</first>
-										<second>275</second>
-									</item>
 									<item>
 										<first>
 											<first>../gen/Hls_Layers_UpConv.tpp</first>
 											<second>UpConv_Fused_Row&amp;lt;8, 16, 16, 960, 480&amp;gt;</second>
 										</first>
-										<second>364</second>
+										<second>271</second>
 									</item>
 									<item>
 										<first>
@@ -15733,21 +14200,14 @@
 							<item>
 								<first>/home/hoinguyen/Documents/Vitis/UpConv_HLS/upconv_block0</first>
 								<second>
-									<count>3</count>
+									<count>2</count>
 									<item_version>0</item_version>
-									<item>
-										<first>
-											<first>../gen/Hls_Layers_UpConv.tpp</first>
-											<second>Apply_Norm_And_Write&amp;lt;32, 480, 30, 480&amp;gt;</second>
-										</first>
-										<second>275</second>
-									</item>
 									<item>
 										<first>
 											<first>../gen/Hls_Layers_UpConv.tpp</first>
 											<second>UpConv_Fused_Row&amp;lt;8, 16, 16, 960, 480&amp;gt;</second>
 										</first>
-										<second>364</second>
+										<second>271</second>
 									</item>
 									<item>
 										<first>
@@ -15796,30 +14256,23 @@
 						<name>c_12</name>
 						<fileName>../gen/Hls_Layers_UpConv.tpp</fileName>
 						<fileDirectory>/home/hoinguyen/Documents/Vitis/UpConv_HLS/upconv_block0</fileDirectory>
-						<lineNumber>269</lineNumber>
-						<contextFuncName>Apply_Norm_And_Write&amp;lt;32, 480, 30, 480&amp;gt;</contextFuncName>
-						<contextNormFuncName>Apply_Norm_And_Write_32_480_30_480_s</contextNormFuncName>
+						<lineNumber>265</lineNumber>
+						<contextFuncName>UpConv_Fused_Row&amp;lt;8, 16, 16, 960, 480&amp;gt;</contextFuncName>
+						<contextNormFuncName>UpConv_Fused_Row_8_16_16_960_480_s</contextNormFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
 								<first>/home/hoinguyen/Documents/Vitis/UpConv_HLS/upconv_block0</first>
 								<second>
-									<count>2</count>
+									<count>1</count>
 									<item_version>0</item_version>
-									<item>
-										<first>
-											<first>../gen/Hls_Layers_UpConv.tpp</first>
-											<second>Apply_Norm_And_Write&amp;lt;32, 480, 30, 480&amp;gt;</second>
-										</first>
-										<second>269</second>
-									</item>
 									<item>
 										<first>
 											<first>../gen/Hls_Layers_UpConv.tpp</first>
 											<second>UpConv_Fused_Row&amp;lt;8, 16, 16, 960, 480&amp;gt;</second>
 										</first>
-										<second>364</second>
+										<second>265</second>
 									</item>
 								</second>
 							</item>
@@ -15858,33 +14311,26 @@
 					<Obj>
 						<type>0</type>
 						<id>283</id>
-						<name>icmp_ln270_12</name>
+						<name>icmp_ln266_12</name>
 						<fileName>../gen/Hls_Layers_UpConv.tpp</fileName>
 						<fileDirectory>/home/hoinguyen/Documents/Vitis/UpConv_HLS/upconv_block0</fileDirectory>
-						<lineNumber>270</lineNumber>
-						<contextFuncName>Apply_Norm_And_Write&amp;lt;32, 480, 30, 480&amp;gt;</contextFuncName>
-						<contextNormFuncName>Apply_Norm_And_Write_32_480_30_480_s</contextNormFuncName>
+						<lineNumber>266</lineNumber>
+						<contextFuncName>UpConv_Fused_Row&amp;lt;8, 16, 16, 960, 480&amp;gt;</contextFuncName>
+						<contextNormFuncName>UpConv_Fused_Row_8_16_16_960_480_s</contextNormFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
 								<first>/home/hoinguyen/Documents/Vitis/UpConv_HLS/upconv_block0</first>
 								<second>
-									<count>2</count>
+									<count>1</count>
 									<item_version>0</item_version>
-									<item>
-										<first>
-											<first>../gen/Hls_Layers_UpConv.tpp</first>
-											<second>Apply_Norm_And_Write&amp;lt;32, 480, 30, 480&amp;gt;</second>
-										</first>
-										<second>270</second>
-									</item>
 									<item>
 										<first>
 											<first>../gen/Hls_Layers_UpConv.tpp</first>
 											<second>UpConv_Fused_Row&amp;lt;8, 16, 16, 960, 480&amp;gt;</second>
 										</first>
-										<second>364</second>
+										<second>266</second>
 									</item>
 								</second>
 							</item>
@@ -15922,33 +14368,26 @@
 					<Obj>
 						<type>0</type>
 						<id>284</id>
-						<name>u_25</name>
+						<name>u_160</name>
 						<fileName>../gen/Hls_Layers_UpConv.tpp</fileName>
 						<fileDirectory>/home/hoinguyen/Documents/Vitis/UpConv_HLS/upconv_block0</fileDirectory>
-						<lineNumber>271</lineNumber>
-						<contextFuncName>Apply_Norm_And_Write&amp;lt;32, 480, 30, 480&amp;gt;</contextFuncName>
-						<contextNormFuncName>Apply_Norm_And_Write_32_480_30_480_s</contextNormFuncName>
+						<lineNumber>267</lineNumber>
+						<contextFuncName>UpConv_Fused_Row&amp;lt;8, 16, 16, 960, 480&amp;gt;</contextFuncName>
+						<contextNormFuncName>UpConv_Fused_Row_8_16_16_960_480_s</contextNormFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
 								<first>/home/hoinguyen/Documents/Vitis/UpConv_HLS/upconv_block0</first>
 								<second>
-									<count>2</count>
+									<count>1</count>
 									<item_version>0</item_version>
-									<item>
-										<first>
-											<first>../gen/Hls_Layers_UpConv.tpp</first>
-											<second>Apply_Norm_And_Write&amp;lt;32, 480, 30, 480&amp;gt;</second>
-										</first>
-										<second>271</second>
-									</item>
 									<item>
 										<first>
 											<first>../gen/Hls_Layers_UpConv.tpp</first>
 											<second>UpConv_Fused_Row&amp;lt;8, 16, 16, 960, 480&amp;gt;</second>
 										</first>
-										<second>364</second>
+										<second>267</second>
 									</item>
 								</second>
 							</item>
@@ -15999,21 +14438,14 @@
 							<item>
 								<first>/home/hoinguyen/Documents/Vitis/UpConv_HLS/upconv_block0</first>
 								<second>
-									<count>3</count>
+									<count>2</count>
 									<item_version>0</item_version>
-									<item>
-										<first>
-											<first>../gen/Hls_Layers_UpConv.tpp</first>
-											<second>Apply_Norm_And_Write&amp;lt;32, 480, 30, 480&amp;gt;</second>
-										</first>
-										<second>271</second>
-									</item>
 									<item>
 										<first>
 											<first>../gen/Hls_Layers_UpConv.tpp</first>
 											<second>UpConv_Fused_Row&amp;lt;8, 16, 16, 960, 480&amp;gt;</second>
 										</first>
-										<second>364</second>
+										<second>267</second>
 									</item>
 									<item>
 										<first>
@@ -16057,33 +14489,26 @@
 					<Obj>
 						<type>0</type>
 						<id>286</id>
-						<name>u_24</name>
+						<name>u_159</name>
 						<fileName>../gen/Hls_Layers_UpConv.tpp</fileName>
 						<fileDirectory>/home/hoinguyen/Documents/Vitis/UpConv_HLS/upconv_block0</fileDirectory>
-						<lineNumber>272</lineNumber>
-						<contextFuncName>Apply_Norm_And_Write&amp;lt;32, 480, 30, 480&amp;gt;</contextFuncName>
-						<contextNormFuncName>Apply_Norm_And_Write_32_480_30_480_s</contextNormFuncName>
+						<lineNumber>268</lineNumber>
+						<contextFuncName>UpConv_Fused_Row&amp;lt;8, 16, 16, 960, 480&amp;gt;</contextFuncName>
+						<contextNormFuncName>UpConv_Fused_Row_8_16_16_960_480_s</contextNormFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
 								<first>/home/hoinguyen/Documents/Vitis/UpConv_HLS/upconv_block0</first>
 								<second>
-									<count>2</count>
+									<count>1</count>
 									<item_version>0</item_version>
-									<item>
-										<first>
-											<first>../gen/Hls_Layers_UpConv.tpp</first>
-											<second>Apply_Norm_And_Write&amp;lt;32, 480, 30, 480&amp;gt;</second>
-										</first>
-										<second>272</second>
-									</item>
 									<item>
 										<first>
 											<first>../gen/Hls_Layers_UpConv.tpp</first>
 											<second>UpConv_Fused_Row&amp;lt;8, 16, 16, 960, 480&amp;gt;</second>
 										</first>
-										<second>364</second>
+										<second>268</second>
 									</item>
 								</second>
 							</item>
@@ -16134,21 +14559,14 @@
 							<item>
 								<first>/home/hoinguyen/Documents/Vitis/UpConv_HLS/upconv_block0</first>
 								<second>
-									<count>3</count>
+									<count>2</count>
 									<item_version>0</item_version>
-									<item>
-										<first>
-											<first>../gen/Hls_Layers_UpConv.tpp</first>
-											<second>Apply_Norm_And_Write&amp;lt;32, 480, 30, 480&amp;gt;</second>
-										</first>
-										<second>272</second>
-									</item>
 									<item>
 										<first>
 											<first>../gen/Hls_Layers_UpConv.tpp</first>
 											<second>UpConv_Fused_Row&amp;lt;8, 16, 16, 960, 480&amp;gt;</second>
 										</first>
-										<second>364</second>
+										<second>268</second>
 									</item>
 									<item>
 										<first>
@@ -16192,33 +14610,26 @@
 					<Obj>
 						<type>0</type>
 						<id>288</id>
-						<name>p_ZZ16UpConv_Fused_RowILi8ELi16ELi16ELi960ELi480EEvP7ap_uintILi256EEPKS1_S4_S4_S4_32</name>
+						<name>p_ZZ16UpConv_Fused_RowILi8ELi16ELi16ELi960ELi480EEvP7ap_uintILi256EEPKS1_S4_S4_S4_44</name>
 						<fileName>../gen/Hls_Layers_UpConv.tpp</fileName>
 						<fileDirectory>/home/hoinguyen/Documents/Vitis/UpConv_HLS/upconv_block0</fileDirectory>
-						<lineNumber>270</lineNumber>
-						<contextFuncName>Apply_Norm_And_Write&amp;lt;32, 480, 30, 480&amp;gt;</contextFuncName>
-						<contextNormFuncName>Apply_Norm_And_Write_32_480_30_480_s</contextNormFuncName>
+						<lineNumber>266</lineNumber>
+						<contextFuncName>UpConv_Fused_Row&amp;lt;8, 16, 16, 960, 480&amp;gt;</contextFuncName>
+						<contextNormFuncName>UpConv_Fused_Row_8_16_16_960_480_s</contextNormFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
 								<first>/home/hoinguyen/Documents/Vitis/UpConv_HLS/upconv_block0</first>
 								<second>
-									<count>2</count>
+									<count>1</count>
 									<item_version>0</item_version>
-									<item>
-										<first>
-											<first>../gen/Hls_Layers_UpConv.tpp</first>
-											<second>Apply_Norm_And_Write&amp;lt;32, 480, 30, 480&amp;gt;</second>
-										</first>
-										<second>270</second>
-									</item>
 									<item>
 										<first>
 											<first>../gen/Hls_Layers_UpConv.tpp</first>
 											<second>UpConv_Fused_Row&amp;lt;8, 16, 16, 960, 480&amp;gt;</second>
 										</first>
-										<second>364</second>
+										<second>266</second>
 									</item>
 								</second>
 							</item>
@@ -16255,33 +14666,26 @@
 					<Obj>
 						<type>0</type>
 						<id>289</id>
-						<name>sub_i_11</name>
+						<name>sub151_11</name>
 						<fileName>../gen/Hls_Layers_UpConv.tpp</fileName>
 						<fileDirectory>/home/hoinguyen/Documents/Vitis/UpConv_HLS/upconv_block0</fileDirectory>
-						<lineNumber>273</lineNumber>
-						<contextFuncName>Apply_Norm_And_Write&amp;lt;32, 480, 30, 480&amp;gt;</contextFuncName>
-						<contextNormFuncName>Apply_Norm_And_Write_32_480_30_480_s</contextNormFuncName>
+						<lineNumber>269</lineNumber>
+						<contextFuncName>UpConv_Fused_Row&amp;lt;8, 16, 16, 960, 480&amp;gt;</contextFuncName>
+						<contextNormFuncName>UpConv_Fused_Row_8_16_16_960_480_s</contextNormFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
 								<first>/home/hoinguyen/Documents/Vitis/UpConv_HLS/upconv_block0</first>
 								<second>
-									<count>2</count>
+									<count>1</count>
 									<item_version>0</item_version>
-									<item>
-										<first>
-											<first>../gen/Hls_Layers_UpConv.tpp</first>
-											<second>Apply_Norm_And_Write&amp;lt;32, 480, 30, 480&amp;gt;</second>
-										</first>
-										<second>273</second>
-									</item>
 									<item>
 										<first>
 											<first>../gen/Hls_Layers_UpConv.tpp</first>
 											<second>UpConv_Fused_Row&amp;lt;8, 16, 16, 960, 480&amp;gt;</second>
 										</first>
-										<second>364</second>
+										<second>269</second>
 									</item>
 								</second>
 							</item>
@@ -16319,33 +14723,26 @@
 					<Obj>
 						<type>0</type>
 						<id>290</id>
-						<name>mul27_i_11</name>
+						<name>mul152_11</name>
 						<fileName>../gen/Hls_Layers_UpConv.tpp</fileName>
 						<fileDirectory>/home/hoinguyen/Documents/Vitis/UpConv_HLS/upconv_block0</fileDirectory>
-						<lineNumber>273</lineNumber>
-						<contextFuncName>Apply_Norm_And_Write&amp;lt;32, 480, 30, 480&amp;gt;</contextFuncName>
-						<contextNormFuncName>Apply_Norm_And_Write_32_480_30_480_s</contextNormFuncName>
+						<lineNumber>269</lineNumber>
+						<contextFuncName>UpConv_Fused_Row&amp;lt;8, 16, 16, 960, 480&amp;gt;</contextFuncName>
+						<contextNormFuncName>UpConv_Fused_Row_8_16_16_960_480_s</contextNormFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
 								<first>/home/hoinguyen/Documents/Vitis/UpConv_HLS/upconv_block0</first>
 								<second>
-									<count>2</count>
+									<count>1</count>
 									<item_version>0</item_version>
-									<item>
-										<first>
-											<first>../gen/Hls_Layers_UpConv.tpp</first>
-											<second>Apply_Norm_And_Write&amp;lt;32, 480, 30, 480&amp;gt;</second>
-										</first>
-										<second>273</second>
-									</item>
 									<item>
 										<first>
 											<first>../gen/Hls_Layers_UpConv.tpp</first>
 											<second>UpConv_Fused_Row&amp;lt;8, 16, 16, 960, 480&amp;gt;</second>
 										</first>
-										<second>364</second>
+										<second>269</second>
 									</item>
 								</second>
 							</item>
@@ -16383,33 +14780,26 @@
 					<Obj>
 						<type>0</type>
 						<id>291</id>
-						<name>mul28_i_11</name>
+						<name>mul153_11</name>
 						<fileName>../gen/Hls_Layers_UpConv.tpp</fileName>
 						<fileDirectory>/home/hoinguyen/Documents/Vitis/UpConv_HLS/upconv_block0</fileDirectory>
-						<lineNumber>273</lineNumber>
-						<contextFuncName>Apply_Norm_And_Write&amp;lt;32, 480, 30, 480&amp;gt;</contextFuncName>
-						<contextNormFuncName>Apply_Norm_And_Write_32_480_30_480_s</contextNormFuncName>
+						<lineNumber>269</lineNumber>
+						<contextFuncName>UpConv_Fused_Row&amp;lt;8, 16, 16, 960, 480&amp;gt;</contextFuncName>
+						<contextNormFuncName>UpConv_Fused_Row_8_16_16_960_480_s</contextNormFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
 								<first>/home/hoinguyen/Documents/Vitis/UpConv_HLS/upconv_block0</first>
 								<second>
-									<count>2</count>
+									<count>1</count>
 									<item_version>0</item_version>
-									<item>
-										<first>
-											<first>../gen/Hls_Layers_UpConv.tpp</first>
-											<second>Apply_Norm_And_Write&amp;lt;32, 480, 30, 480&amp;gt;</second>
-										</first>
-										<second>273</second>
-									</item>
 									<item>
 										<first>
 											<first>../gen/Hls_Layers_UpConv.tpp</first>
 											<second>UpConv_Fused_Row&amp;lt;8, 16, 16, 960, 480&amp;gt;</second>
 										</first>
-										<second>364</second>
+										<second>269</second>
 									</item>
 								</second>
 							</item>
@@ -16447,33 +14837,26 @@
 					<Obj>
 						<type>0</type>
 						<id>292</id>
-						<name>add29_i_11</name>
+						<name>add154_11</name>
 						<fileName>../gen/Hls_Layers_UpConv.tpp</fileName>
 						<fileDirectory>/home/hoinguyen/Documents/Vitis/UpConv_HLS/upconv_block0</fileDirectory>
-						<lineNumber>273</lineNumber>
-						<contextFuncName>Apply_Norm_And_Write&amp;lt;32, 480, 30, 480&amp;gt;</contextFuncName>
-						<contextNormFuncName>Apply_Norm_And_Write_32_480_30_480_s</contextNormFuncName>
+						<lineNumber>269</lineNumber>
+						<contextFuncName>UpConv_Fused_Row&amp;lt;8, 16, 16, 960, 480&amp;gt;</contextFuncName>
+						<contextNormFuncName>UpConv_Fused_Row_8_16_16_960_480_s</contextNormFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
 								<first>/home/hoinguyen/Documents/Vitis/UpConv_HLS/upconv_block0</first>
 								<second>
-									<count>2</count>
+									<count>1</count>
 									<item_version>0</item_version>
-									<item>
-										<first>
-											<first>../gen/Hls_Layers_UpConv.tpp</first>
-											<second>Apply_Norm_And_Write&amp;lt;32, 480, 30, 480&amp;gt;</second>
-										</first>
-										<second>273</second>
-									</item>
 									<item>
 										<first>
 											<first>../gen/Hls_Layers_UpConv.tpp</first>
 											<second>UpConv_Fused_Row&amp;lt;8, 16, 16, 960, 480&amp;gt;</second>
 										</first>
-										<second>364</second>
+										<second>269</second>
 									</item>
 								</second>
 							</item>
@@ -16514,30 +14897,23 @@
 						<name>norm_12</name>
 						<fileName>../gen/Hls_Layers_UpConv.tpp</fileName>
 						<fileDirectory>/home/hoinguyen/Documents/Vitis/UpConv_HLS/upconv_block0</fileDirectory>
-						<lineNumber>270</lineNumber>
-						<contextFuncName>Apply_Norm_And_Write&amp;lt;32, 480, 30, 480&amp;gt;</contextFuncName>
-						<contextNormFuncName>Apply_Norm_And_Write_32_480_30_480_s</contextNormFuncName>
+						<lineNumber>266</lineNumber>
+						<contextFuncName>UpConv_Fused_Row&amp;lt;8, 16, 16, 960, 480&amp;gt;</contextFuncName>
+						<contextNormFuncName>UpConv_Fused_Row_8_16_16_960_480_s</contextNormFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
 								<first>/home/hoinguyen/Documents/Vitis/UpConv_HLS/upconv_block0</first>
 								<second>
-									<count>2</count>
+									<count>1</count>
 									<item_version>0</item_version>
-									<item>
-										<first>
-											<first>../gen/Hls_Layers_UpConv.tpp</first>
-											<second>Apply_Norm_And_Write&amp;lt;32, 480, 30, 480&amp;gt;</second>
-										</first>
-										<second>270</second>
-									</item>
 									<item>
 										<first>
 											<first>../gen/Hls_Layers_UpConv.tpp</first>
 											<second>UpConv_Fused_Row&amp;lt;8, 16, 16, 960, 480&amp;gt;</second>
 										</first>
-										<second>364</second>
+										<second>266</second>
 									</item>
 								</second>
 							</item>
@@ -16576,33 +14952,26 @@
 					<Obj>
 						<type>0</type>
 						<id>294</id>
-						<name>cmp33_i_11</name>
+						<name>cmp158_11</name>
 						<fileName>../gen/Hls_Layers_UpConv.tpp</fileName>
 						<fileDirectory>/home/hoinguyen/Documents/Vitis/UpConv_HLS/upconv_block0</fileDirectory>
-						<lineNumber>274</lineNumber>
-						<contextFuncName>Apply_Norm_And_Write&amp;lt;32, 480, 30, 480&amp;gt;</contextFuncName>
-						<contextNormFuncName>Apply_Norm_And_Write_32_480_30_480_s</contextNormFuncName>
+						<lineNumber>270</lineNumber>
+						<contextFuncName>UpConv_Fused_Row&amp;lt;8, 16, 16, 960, 480&amp;gt;</contextFuncName>
+						<contextNormFuncName>UpConv_Fused_Row_8_16_16_960_480_s</contextNormFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
 								<first>/home/hoinguyen/Documents/Vitis/UpConv_HLS/upconv_block0</first>
 								<second>
-									<count>2</count>
+									<count>1</count>
 									<item_version>0</item_version>
-									<item>
-										<first>
-											<first>../gen/Hls_Layers_UpConv.tpp</first>
-											<second>Apply_Norm_And_Write&amp;lt;32, 480, 30, 480&amp;gt;</second>
-										</first>
-										<second>274</second>
-									</item>
 									<item>
 										<first>
 											<first>../gen/Hls_Layers_UpConv.tpp</first>
 											<second>UpConv_Fused_Row&amp;lt;8, 16, 16, 960, 480&amp;gt;</second>
 										</first>
-										<second>364</second>
+										<second>270</second>
 									</item>
 								</second>
 							</item>
@@ -16652,21 +15021,14 @@
 							<item>
 								<first>/home/hoinguyen/Documents/Vitis/UpConv_HLS/upconv_block0</first>
 								<second>
-									<count>3</count>
+									<count>2</count>
 									<item_version>0</item_version>
-									<item>
-										<first>
-											<first>../gen/Hls_Layers_UpConv.tpp</first>
-											<second>Apply_Norm_And_Write&amp;lt;32, 480, 30, 480&amp;gt;</second>
-										</first>
-										<second>275</second>
-									</item>
 									<item>
 										<first>
 											<first>../gen/Hls_Layers_UpConv.tpp</first>
 											<second>UpConv_Fused_Row&amp;lt;8, 16, 16, 960, 480&amp;gt;</second>
 										</first>
-										<second>364</second>
+										<second>271</second>
 									</item>
 									<item>
 										<first>
@@ -16722,21 +15084,14 @@
 							<item>
 								<first>/home/hoinguyen/Documents/Vitis/UpConv_HLS/upconv_block0</first>
 								<second>
-									<count>3</count>
+									<count>2</count>
 									<item_version>0</item_version>
-									<item>
-										<first>
-											<first>../gen/Hls_Layers_UpConv.tpp</first>
-											<second>Apply_Norm_And_Write&amp;lt;32, 480, 30, 480&amp;gt;</second>
-										</first>
-										<second>275</second>
-									</item>
 									<item>
 										<first>
 											<first>../gen/Hls_Layers_UpConv.tpp</first>
 											<second>UpConv_Fused_Row&amp;lt;8, 16, 16, 960, 480&amp;gt;</second>
 										</first>
-										<second>364</second>
+										<second>271</second>
 									</item>
 									<item>
 										<first>
@@ -16785,30 +15140,23 @@
 						<name>c_13</name>
 						<fileName>../gen/Hls_Layers_UpConv.tpp</fileName>
 						<fileDirectory>/home/hoinguyen/Documents/Vitis/UpConv_HLS/upconv_block0</fileDirectory>
-						<lineNumber>269</lineNumber>
-						<contextFuncName>Apply_Norm_And_Write&amp;lt;32, 480, 30, 480&amp;gt;</contextFuncName>
-						<contextNormFuncName>Apply_Norm_And_Write_32_480_30_480_s</contextNormFuncName>
+						<lineNumber>265</lineNumber>
+						<contextFuncName>UpConv_Fused_Row&amp;lt;8, 16, 16, 960, 480&amp;gt;</contextFuncName>
+						<contextNormFuncName>UpConv_Fused_Row_8_16_16_960_480_s</contextNormFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
 								<first>/home/hoinguyen/Documents/Vitis/UpConv_HLS/upconv_block0</first>
 								<second>
-									<count>2</count>
+									<count>1</count>
 									<item_version>0</item_version>
-									<item>
-										<first>
-											<first>../gen/Hls_Layers_UpConv.tpp</first>
-											<second>Apply_Norm_And_Write&amp;lt;32, 480, 30, 480&amp;gt;</second>
-										</first>
-										<second>269</second>
-									</item>
 									<item>
 										<first>
 											<first>../gen/Hls_Layers_UpConv.tpp</first>
 											<second>UpConv_Fused_Row&amp;lt;8, 16, 16, 960, 480&amp;gt;</second>
 										</first>
-										<second>364</second>
+										<second>265</second>
 									</item>
 								</second>
 							</item>
@@ -16847,33 +15195,26 @@
 					<Obj>
 						<type>0</type>
 						<id>298</id>
-						<name>icmp_ln270_13</name>
+						<name>icmp_ln266_13</name>
 						<fileName>../gen/Hls_Layers_UpConv.tpp</fileName>
 						<fileDirectory>/home/hoinguyen/Documents/Vitis/UpConv_HLS/upconv_block0</fileDirectory>
-						<lineNumber>270</lineNumber>
-						<contextFuncName>Apply_Norm_And_Write&amp;lt;32, 480, 30, 480&amp;gt;</contextFuncName>
-						<contextNormFuncName>Apply_Norm_And_Write_32_480_30_480_s</contextNormFuncName>
+						<lineNumber>266</lineNumber>
+						<contextFuncName>UpConv_Fused_Row&amp;lt;8, 16, 16, 960, 480&amp;gt;</contextFuncName>
+						<contextNormFuncName>UpConv_Fused_Row_8_16_16_960_480_s</contextNormFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
 								<first>/home/hoinguyen/Documents/Vitis/UpConv_HLS/upconv_block0</first>
 								<second>
-									<count>2</count>
+									<count>1</count>
 									<item_version>0</item_version>
-									<item>
-										<first>
-											<first>../gen/Hls_Layers_UpConv.tpp</first>
-											<second>Apply_Norm_And_Write&amp;lt;32, 480, 30, 480&amp;gt;</second>
-										</first>
-										<second>270</second>
-									</item>
 									<item>
 										<first>
 											<first>../gen/Hls_Layers_UpConv.tpp</first>
 											<second>UpConv_Fused_Row&amp;lt;8, 16, 16, 960, 480&amp;gt;</second>
 										</first>
-										<second>364</second>
+										<second>266</second>
 									</item>
 								</second>
 							</item>
@@ -16911,33 +15252,26 @@
 					<Obj>
 						<type>0</type>
 						<id>299</id>
-						<name>u_27</name>
+						<name>u_162</name>
 						<fileName>../gen/Hls_Layers_UpConv.tpp</fileName>
 						<fileDirectory>/home/hoinguyen/Documents/Vitis/UpConv_HLS/upconv_block0</fileDirectory>
-						<lineNumber>271</lineNumber>
-						<contextFuncName>Apply_Norm_And_Write&amp;lt;32, 480, 30, 480&amp;gt;</contextFuncName>
-						<contextNormFuncName>Apply_Norm_And_Write_32_480_30_480_s</contextNormFuncName>
+						<lineNumber>267</lineNumber>
+						<contextFuncName>UpConv_Fused_Row&amp;lt;8, 16, 16, 960, 480&amp;gt;</contextFuncName>
+						<contextNormFuncName>UpConv_Fused_Row_8_16_16_960_480_s</contextNormFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
 								<first>/home/hoinguyen/Documents/Vitis/UpConv_HLS/upconv_block0</first>
 								<second>
-									<count>2</count>
+									<count>1</count>
 									<item_version>0</item_version>
-									<item>
-										<first>
-											<first>../gen/Hls_Layers_UpConv.tpp</first>
-											<second>Apply_Norm_And_Write&amp;lt;32, 480, 30, 480&amp;gt;</second>
-										</first>
-										<second>271</second>
-									</item>
 									<item>
 										<first>
 											<first>../gen/Hls_Layers_UpConv.tpp</first>
 											<second>UpConv_Fused_Row&amp;lt;8, 16, 16, 960, 480&amp;gt;</second>
 										</first>
-										<second>364</second>
+										<second>267</second>
 									</item>
 								</second>
 							</item>
@@ -16988,21 +15322,14 @@
 							<item>
 								<first>/home/hoinguyen/Documents/Vitis/UpConv_HLS/upconv_block0</first>
 								<second>
-									<count>3</count>
+									<count>2</count>
 									<item_version>0</item_version>
-									<item>
-										<first>
-											<first>../gen/Hls_Layers_UpConv.tpp</first>
-											<second>Apply_Norm_And_Write&amp;lt;32, 480, 30, 480&amp;gt;</second>
-										</first>
-										<second>271</second>
-									</item>
 									<item>
 										<first>
 											<first>../gen/Hls_Layers_UpConv.tpp</first>
 											<second>UpConv_Fused_Row&amp;lt;8, 16, 16, 960, 480&amp;gt;</second>
 										</first>
-										<second>364</second>
+										<second>267</second>
 									</item>
 									<item>
 										<first>
@@ -17046,33 +15373,26 @@
 					<Obj>
 						<type>0</type>
 						<id>301</id>
-						<name>u_26</name>
+						<name>u_161</name>
 						<fileName>../gen/Hls_Layers_UpConv.tpp</fileName>
 						<fileDirectory>/home/hoinguyen/Documents/Vitis/UpConv_HLS/upconv_block0</fileDirectory>
-						<lineNumber>272</lineNumber>
-						<contextFuncName>Apply_Norm_And_Write&amp;lt;32, 480, 30, 480&amp;gt;</contextFuncName>
-						<contextNormFuncName>Apply_Norm_And_Write_32_480_30_480_s</contextNormFuncName>
+						<lineNumber>268</lineNumber>
+						<contextFuncName>UpConv_Fused_Row&amp;lt;8, 16, 16, 960, 480&amp;gt;</contextFuncName>
+						<contextNormFuncName>UpConv_Fused_Row_8_16_16_960_480_s</contextNormFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
 								<first>/home/hoinguyen/Documents/Vitis/UpConv_HLS/upconv_block0</first>
 								<second>
-									<count>2</count>
+									<count>1</count>
 									<item_version>0</item_version>
-									<item>
-										<first>
-											<first>../gen/Hls_Layers_UpConv.tpp</first>
-											<second>Apply_Norm_And_Write&amp;lt;32, 480, 30, 480&amp;gt;</second>
-										</first>
-										<second>272</second>
-									</item>
 									<item>
 										<first>
 											<first>../gen/Hls_Layers_UpConv.tpp</first>
 											<second>UpConv_Fused_Row&amp;lt;8, 16, 16, 960, 480&amp;gt;</second>
 										</first>
-										<second>364</second>
+										<second>268</second>
 									</item>
 								</second>
 							</item>
@@ -17123,21 +15443,14 @@
 							<item>
 								<first>/home/hoinguyen/Documents/Vitis/UpConv_HLS/upconv_block0</first>
 								<second>
-									<count>3</count>
+									<count>2</count>
 									<item_version>0</item_version>
-									<item>
-										<first>
-											<first>../gen/Hls_Layers_UpConv.tpp</first>
-											<second>Apply_Norm_And_Write&amp;lt;32, 480, 30, 480&amp;gt;</second>
-										</first>
-										<second>272</second>
-									</item>
 									<item>
 										<first>
 											<first>../gen/Hls_Layers_UpConv.tpp</first>
 											<second>UpConv_Fused_Row&amp;lt;8, 16, 16, 960, 480&amp;gt;</second>
 										</first>
-										<second>364</second>
+										<second>268</second>
 									</item>
 									<item>
 										<first>
@@ -17181,33 +15494,26 @@
 					<Obj>
 						<type>0</type>
 						<id>303</id>
-						<name>p_ZZ16UpConv_Fused_RowILi8ELi16ELi16ELi960ELi480EEvP7ap_uintILi256EEPKS1_S4_S4_S4_33</name>
+						<name>p_ZZ16UpConv_Fused_RowILi8ELi16ELi16ELi960ELi480EEvP7ap_uintILi256EEPKS1_S4_S4_S4_45</name>
 						<fileName>../gen/Hls_Layers_UpConv.tpp</fileName>
 						<fileDirectory>/home/hoinguyen/Documents/Vitis/UpConv_HLS/upconv_block0</fileDirectory>
-						<lineNumber>270</lineNumber>
-						<contextFuncName>Apply_Norm_And_Write&amp;lt;32, 480, 30, 480&amp;gt;</contextFuncName>
-						<contextNormFuncName>Apply_Norm_And_Write_32_480_30_480_s</contextNormFuncName>
+						<lineNumber>266</lineNumber>
+						<contextFuncName>UpConv_Fused_Row&amp;lt;8, 16, 16, 960, 480&amp;gt;</contextFuncName>
+						<contextNormFuncName>UpConv_Fused_Row_8_16_16_960_480_s</contextNormFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
 								<first>/home/hoinguyen/Documents/Vitis/UpConv_HLS/upconv_block0</first>
 								<second>
-									<count>2</count>
+									<count>1</count>
 									<item_version>0</item_version>
-									<item>
-										<first>
-											<first>../gen/Hls_Layers_UpConv.tpp</first>
-											<second>Apply_Norm_And_Write&amp;lt;32, 480, 30, 480&amp;gt;</second>
-										</first>
-										<second>270</second>
-									</item>
 									<item>
 										<first>
 											<first>../gen/Hls_Layers_UpConv.tpp</first>
 											<second>UpConv_Fused_Row&amp;lt;8, 16, 16, 960, 480&amp;gt;</second>
 										</first>
-										<second>364</second>
+										<second>266</second>
 									</item>
 								</second>
 							</item>
@@ -17244,33 +15550,26 @@
 					<Obj>
 						<type>0</type>
 						<id>304</id>
-						<name>sub_i_12</name>
+						<name>sub151_12</name>
 						<fileName>../gen/Hls_Layers_UpConv.tpp</fileName>
 						<fileDirectory>/home/hoinguyen/Documents/Vitis/UpConv_HLS/upconv_block0</fileDirectory>
-						<lineNumber>273</lineNumber>
-						<contextFuncName>Apply_Norm_And_Write&amp;lt;32, 480, 30, 480&amp;gt;</contextFuncName>
-						<contextNormFuncName>Apply_Norm_And_Write_32_480_30_480_s</contextNormFuncName>
+						<lineNumber>269</lineNumber>
+						<contextFuncName>UpConv_Fused_Row&amp;lt;8, 16, 16, 960, 480&amp;gt;</contextFuncName>
+						<contextNormFuncName>UpConv_Fused_Row_8_16_16_960_480_s</contextNormFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
 								<first>/home/hoinguyen/Documents/Vitis/UpConv_HLS/upconv_block0</first>
 								<second>
-									<count>2</count>
+									<count>1</count>
 									<item_version>0</item_version>
-									<item>
-										<first>
-											<first>../gen/Hls_Layers_UpConv.tpp</first>
-											<second>Apply_Norm_And_Write&amp;lt;32, 480, 30, 480&amp;gt;</second>
-										</first>
-										<second>273</second>
-									</item>
 									<item>
 										<first>
 											<first>../gen/Hls_Layers_UpConv.tpp</first>
 											<second>UpConv_Fused_Row&amp;lt;8, 16, 16, 960, 480&amp;gt;</second>
 										</first>
-										<second>364</second>
+										<second>269</second>
 									</item>
 								</second>
 							</item>
@@ -17308,33 +15607,26 @@
 					<Obj>
 						<type>0</type>
 						<id>305</id>
-						<name>mul27_i_12</name>
+						<name>mul152_12</name>
 						<fileName>../gen/Hls_Layers_UpConv.tpp</fileName>
 						<fileDirectory>/home/hoinguyen/Documents/Vitis/UpConv_HLS/upconv_block0</fileDirectory>
-						<lineNumber>273</lineNumber>
-						<contextFuncName>Apply_Norm_And_Write&amp;lt;32, 480, 30, 480&amp;gt;</contextFuncName>
-						<contextNormFuncName>Apply_Norm_And_Write_32_480_30_480_s</contextNormFuncName>
+						<lineNumber>269</lineNumber>
+						<contextFuncName>UpConv_Fused_Row&amp;lt;8, 16, 16, 960, 480&amp;gt;</contextFuncName>
+						<contextNormFuncName>UpConv_Fused_Row_8_16_16_960_480_s</contextNormFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
 								<first>/home/hoinguyen/Documents/Vitis/UpConv_HLS/upconv_block0</first>
 								<second>
-									<count>2</count>
+									<count>1</count>
 									<item_version>0</item_version>
-									<item>
-										<first>
-											<first>../gen/Hls_Layers_UpConv.tpp</first>
-											<second>Apply_Norm_And_Write&amp;lt;32, 480, 30, 480&amp;gt;</second>
-										</first>
-										<second>273</second>
-									</item>
 									<item>
 										<first>
 											<first>../gen/Hls_Layers_UpConv.tpp</first>
 											<second>UpConv_Fused_Row&amp;lt;8, 16, 16, 960, 480&amp;gt;</second>
 										</first>
-										<second>364</second>
+										<second>269</second>
 									</item>
 								</second>
 							</item>
@@ -17372,33 +15664,26 @@
 					<Obj>
 						<type>0</type>
 						<id>306</id>
-						<name>mul28_i_12</name>
+						<name>mul153_12</name>
 						<fileName>../gen/Hls_Layers_UpConv.tpp</fileName>
 						<fileDirectory>/home/hoinguyen/Documents/Vitis/UpConv_HLS/upconv_block0</fileDirectory>
-						<lineNumber>273</lineNumber>
-						<contextFuncName>Apply_Norm_And_Write&amp;lt;32, 480, 30, 480&amp;gt;</contextFuncName>
-						<contextNormFuncName>Apply_Norm_And_Write_32_480_30_480_s</contextNormFuncName>
+						<lineNumber>269</lineNumber>
+						<contextFuncName>UpConv_Fused_Row&amp;lt;8, 16, 16, 960, 480&amp;gt;</contextFuncName>
+						<contextNormFuncName>UpConv_Fused_Row_8_16_16_960_480_s</contextNormFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
 								<first>/home/hoinguyen/Documents/Vitis/UpConv_HLS/upconv_block0</first>
 								<second>
-									<count>2</count>
+									<count>1</count>
 									<item_version>0</item_version>
-									<item>
-										<first>
-											<first>../gen/Hls_Layers_UpConv.tpp</first>
-											<second>Apply_Norm_And_Write&amp;lt;32, 480, 30, 480&amp;gt;</second>
-										</first>
-										<second>273</second>
-									</item>
 									<item>
 										<first>
 											<first>../gen/Hls_Layers_UpConv.tpp</first>
 											<second>UpConv_Fused_Row&amp;lt;8, 16, 16, 960, 480&amp;gt;</second>
 										</first>
-										<second>364</second>
+										<second>269</second>
 									</item>
 								</second>
 							</item>
@@ -17436,33 +15721,26 @@
 					<Obj>
 						<type>0</type>
 						<id>307</id>
-						<name>add29_i_12</name>
+						<name>add154_12</name>
 						<fileName>../gen/Hls_Layers_UpConv.tpp</fileName>
 						<fileDirectory>/home/hoinguyen/Documents/Vitis/UpConv_HLS/upconv_block0</fileDirectory>
-						<lineNumber>273</lineNumber>
-						<contextFuncName>Apply_Norm_And_Write&amp;lt;32, 480, 30, 480&amp;gt;</contextFuncName>
-						<contextNormFuncName>Apply_Norm_And_Write_32_480_30_480_s</contextNormFuncName>
+						<lineNumber>269</lineNumber>
+						<contextFuncName>UpConv_Fused_Row&amp;lt;8, 16, 16, 960, 480&amp;gt;</contextFuncName>
+						<contextNormFuncName>UpConv_Fused_Row_8_16_16_960_480_s</contextNormFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
 								<first>/home/hoinguyen/Documents/Vitis/UpConv_HLS/upconv_block0</first>
 								<second>
-									<count>2</count>
+									<count>1</count>
 									<item_version>0</item_version>
-									<item>
-										<first>
-											<first>../gen/Hls_Layers_UpConv.tpp</first>
-											<second>Apply_Norm_And_Write&amp;lt;32, 480, 30, 480&amp;gt;</second>
-										</first>
-										<second>273</second>
-									</item>
 									<item>
 										<first>
 											<first>../gen/Hls_Layers_UpConv.tpp</first>
 											<second>UpConv_Fused_Row&amp;lt;8, 16, 16, 960, 480&amp;gt;</second>
 										</first>
-										<second>364</second>
+										<second>269</second>
 									</item>
 								</second>
 							</item>
@@ -17503,30 +15781,23 @@
 						<name>norm_13</name>
 						<fileName>../gen/Hls_Layers_UpConv.tpp</fileName>
 						<fileDirectory>/home/hoinguyen/Documents/Vitis/UpConv_HLS/upconv_block0</fileDirectory>
-						<lineNumber>270</lineNumber>
-						<contextFuncName>Apply_Norm_And_Write&amp;lt;32, 480, 30, 480&amp;gt;</contextFuncName>
-						<contextNormFuncName>Apply_Norm_And_Write_32_480_30_480_s</contextNormFuncName>
+						<lineNumber>266</lineNumber>
+						<contextFuncName>UpConv_Fused_Row&amp;lt;8, 16, 16, 960, 480&amp;gt;</contextFuncName>
+						<contextNormFuncName>UpConv_Fused_Row_8_16_16_960_480_s</contextNormFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
 								<first>/home/hoinguyen/Documents/Vitis/UpConv_HLS/upconv_block0</first>
 								<second>
-									<count>2</count>
+									<count>1</count>
 									<item_version>0</item_version>
-									<item>
-										<first>
-											<first>../gen/Hls_Layers_UpConv.tpp</first>
-											<second>Apply_Norm_And_Write&amp;lt;32, 480, 30, 480&amp;gt;</second>
-										</first>
-										<second>270</second>
-									</item>
 									<item>
 										<first>
 											<first>../gen/Hls_Layers_UpConv.tpp</first>
 											<second>UpConv_Fused_Row&amp;lt;8, 16, 16, 960, 480&amp;gt;</second>
 										</first>
-										<second>364</second>
+										<second>266</second>
 									</item>
 								</second>
 							</item>
@@ -17565,33 +15836,26 @@
 					<Obj>
 						<type>0</type>
 						<id>309</id>
-						<name>cmp33_i_12</name>
+						<name>cmp158_12</name>
 						<fileName>../gen/Hls_Layers_UpConv.tpp</fileName>
 						<fileDirectory>/home/hoinguyen/Documents/Vitis/UpConv_HLS/upconv_block0</fileDirectory>
-						<lineNumber>274</lineNumber>
-						<contextFuncName>Apply_Norm_And_Write&amp;lt;32, 480, 30, 480&amp;gt;</contextFuncName>
-						<contextNormFuncName>Apply_Norm_And_Write_32_480_30_480_s</contextNormFuncName>
+						<lineNumber>270</lineNumber>
+						<contextFuncName>UpConv_Fused_Row&amp;lt;8, 16, 16, 960, 480&amp;gt;</contextFuncName>
+						<contextNormFuncName>UpConv_Fused_Row_8_16_16_960_480_s</contextNormFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
 								<first>/home/hoinguyen/Documents/Vitis/UpConv_HLS/upconv_block0</first>
 								<second>
-									<count>2</count>
+									<count>1</count>
 									<item_version>0</item_version>
-									<item>
-										<first>
-											<first>../gen/Hls_Layers_UpConv.tpp</first>
-											<second>Apply_Norm_And_Write&amp;lt;32, 480, 30, 480&amp;gt;</second>
-										</first>
-										<second>274</second>
-									</item>
 									<item>
 										<first>
 											<first>../gen/Hls_Layers_UpConv.tpp</first>
 											<second>UpConv_Fused_Row&amp;lt;8, 16, 16, 960, 480&amp;gt;</second>
 										</first>
-										<second>364</second>
+										<second>270</second>
 									</item>
 								</second>
 							</item>
@@ -17641,21 +15905,14 @@
 							<item>
 								<first>/home/hoinguyen/Documents/Vitis/UpConv_HLS/upconv_block0</first>
 								<second>
-									<count>3</count>
+									<count>2</count>
 									<item_version>0</item_version>
-									<item>
-										<first>
-											<first>../gen/Hls_Layers_UpConv.tpp</first>
-											<second>Apply_Norm_And_Write&amp;lt;32, 480, 30, 480&amp;gt;</second>
-										</first>
-										<second>275</second>
-									</item>
 									<item>
 										<first>
 											<first>../gen/Hls_Layers_UpConv.tpp</first>
 											<second>UpConv_Fused_Row&amp;lt;8, 16, 16, 960, 480&amp;gt;</second>
 										</first>
-										<second>364</second>
+										<second>271</second>
 									</item>
 									<item>
 										<first>
@@ -17711,21 +15968,14 @@
 							<item>
 								<first>/home/hoinguyen/Documents/Vitis/UpConv_HLS/upconv_block0</first>
 								<second>
-									<count>3</count>
+									<count>2</count>
 									<item_version>0</item_version>
-									<item>
-										<first>
-											<first>../gen/Hls_Layers_UpConv.tpp</first>
-											<second>Apply_Norm_And_Write&amp;lt;32, 480, 30, 480&amp;gt;</second>
-										</first>
-										<second>275</second>
-									</item>
 									<item>
 										<first>
 											<first>../gen/Hls_Layers_UpConv.tpp</first>
 											<second>UpConv_Fused_Row&amp;lt;8, 16, 16, 960, 480&amp;gt;</second>
 										</first>
-										<second>364</second>
+										<second>271</second>
 									</item>
 									<item>
 										<first>
@@ -17774,30 +16024,23 @@
 						<name>c_14</name>
 						<fileName>../gen/Hls_Layers_UpConv.tpp</fileName>
 						<fileDirectory>/home/hoinguyen/Documents/Vitis/UpConv_HLS/upconv_block0</fileDirectory>
-						<lineNumber>269</lineNumber>
-						<contextFuncName>Apply_Norm_And_Write&amp;lt;32, 480, 30, 480&amp;gt;</contextFuncName>
-						<contextNormFuncName>Apply_Norm_And_Write_32_480_30_480_s</contextNormFuncName>
+						<lineNumber>265</lineNumber>
+						<contextFuncName>UpConv_Fused_Row&amp;lt;8, 16, 16, 960, 480&amp;gt;</contextFuncName>
+						<contextNormFuncName>UpConv_Fused_Row_8_16_16_960_480_s</contextNormFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
 								<first>/home/hoinguyen/Documents/Vitis/UpConv_HLS/upconv_block0</first>
 								<second>
-									<count>2</count>
+									<count>1</count>
 									<item_version>0</item_version>
-									<item>
-										<first>
-											<first>../gen/Hls_Layers_UpConv.tpp</first>
-											<second>Apply_Norm_And_Write&amp;lt;32, 480, 30, 480&amp;gt;</second>
-										</first>
-										<second>269</second>
-									</item>
 									<item>
 										<first>
 											<first>../gen/Hls_Layers_UpConv.tpp</first>
 											<second>UpConv_Fused_Row&amp;lt;8, 16, 16, 960, 480&amp;gt;</second>
 										</first>
-										<second>364</second>
+										<second>265</second>
 									</item>
 								</second>
 							</item>
@@ -17836,33 +16079,26 @@
 					<Obj>
 						<type>0</type>
 						<id>313</id>
-						<name>icmp_ln270_14</name>
+						<name>icmp_ln266_14</name>
 						<fileName>../gen/Hls_Layers_UpConv.tpp</fileName>
 						<fileDirectory>/home/hoinguyen/Documents/Vitis/UpConv_HLS/upconv_block0</fileDirectory>
-						<lineNumber>270</lineNumber>
-						<contextFuncName>Apply_Norm_And_Write&amp;lt;32, 480, 30, 480&amp;gt;</contextFuncName>
-						<contextNormFuncName>Apply_Norm_And_Write_32_480_30_480_s</contextNormFuncName>
+						<lineNumber>266</lineNumber>
+						<contextFuncName>UpConv_Fused_Row&amp;lt;8, 16, 16, 960, 480&amp;gt;</contextFuncName>
+						<contextNormFuncName>UpConv_Fused_Row_8_16_16_960_480_s</contextNormFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
 								<first>/home/hoinguyen/Documents/Vitis/UpConv_HLS/upconv_block0</first>
 								<second>
-									<count>2</count>
+									<count>1</count>
 									<item_version>0</item_version>
-									<item>
-										<first>
-											<first>../gen/Hls_Layers_UpConv.tpp</first>
-											<second>Apply_Norm_And_Write&amp;lt;32, 480, 30, 480&amp;gt;</second>
-										</first>
-										<second>270</second>
-									</item>
 									<item>
 										<first>
 											<first>../gen/Hls_Layers_UpConv.tpp</first>
 											<second>UpConv_Fused_Row&amp;lt;8, 16, 16, 960, 480&amp;gt;</second>
 										</first>
-										<second>364</second>
+										<second>266</second>
 									</item>
 								</second>
 							</item>
@@ -17900,33 +16136,26 @@
 					<Obj>
 						<type>0</type>
 						<id>314</id>
-						<name>u_29</name>
+						<name>u_164</name>
 						<fileName>../gen/Hls_Layers_UpConv.tpp</fileName>
 						<fileDirectory>/home/hoinguyen/Documents/Vitis/UpConv_HLS/upconv_block0</fileDirectory>
-						<lineNumber>271</lineNumber>
-						<contextFuncName>Apply_Norm_And_Write&amp;lt;32, 480, 30, 480&amp;gt;</contextFuncName>
-						<contextNormFuncName>Apply_Norm_And_Write_32_480_30_480_s</contextNormFuncName>
+						<lineNumber>267</lineNumber>
+						<contextFuncName>UpConv_Fused_Row&amp;lt;8, 16, 16, 960, 480&amp;gt;</contextFuncName>
+						<contextNormFuncName>UpConv_Fused_Row_8_16_16_960_480_s</contextNormFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
 								<first>/home/hoinguyen/Documents/Vitis/UpConv_HLS/upconv_block0</first>
 								<second>
-									<count>2</count>
+									<count>1</count>
 									<item_version>0</item_version>
-									<item>
-										<first>
-											<first>../gen/Hls_Layers_UpConv.tpp</first>
-											<second>Apply_Norm_And_Write&amp;lt;32, 480, 30, 480&amp;gt;</second>
-										</first>
-										<second>271</second>
-									</item>
 									<item>
 										<first>
 											<first>../gen/Hls_Layers_UpConv.tpp</first>
 											<second>UpConv_Fused_Row&amp;lt;8, 16, 16, 960, 480&amp;gt;</second>
 										</first>
-										<second>364</second>
+										<second>267</second>
 									</item>
 								</second>
 							</item>
@@ -17977,21 +16206,14 @@
 							<item>
 								<first>/home/hoinguyen/Documents/Vitis/UpConv_HLS/upconv_block0</first>
 								<second>
-									<count>3</count>
+									<count>2</count>
 									<item_version>0</item_version>
-									<item>
-										<first>
-											<first>../gen/Hls_Layers_UpConv.tpp</first>
-											<second>Apply_Norm_And_Write&amp;lt;32, 480, 30, 480&amp;gt;</second>
-										</first>
-										<second>271</second>
-									</item>
 									<item>
 										<first>
 											<first>../gen/Hls_Layers_UpConv.tpp</first>
 											<second>UpConv_Fused_Row&amp;lt;8, 16, 16, 960, 480&amp;gt;</second>
 										</first>
-										<second>364</second>
+										<second>267</second>
 									</item>
 									<item>
 										<first>
@@ -18035,33 +16257,26 @@
 					<Obj>
 						<type>0</type>
 						<id>316</id>
-						<name>u_28</name>
+						<name>u_163</name>
 						<fileName>../gen/Hls_Layers_UpConv.tpp</fileName>
 						<fileDirectory>/home/hoinguyen/Documents/Vitis/UpConv_HLS/upconv_block0</fileDirectory>
-						<lineNumber>272</lineNumber>
-						<contextFuncName>Apply_Norm_And_Write&amp;lt;32, 480, 30, 480&amp;gt;</contextFuncName>
-						<contextNormFuncName>Apply_Norm_And_Write_32_480_30_480_s</contextNormFuncName>
+						<lineNumber>268</lineNumber>
+						<contextFuncName>UpConv_Fused_Row&amp;lt;8, 16, 16, 960, 480&amp;gt;</contextFuncName>
+						<contextNormFuncName>UpConv_Fused_Row_8_16_16_960_480_s</contextNormFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
 								<first>/home/hoinguyen/Documents/Vitis/UpConv_HLS/upconv_block0</first>
 								<second>
-									<count>2</count>
+									<count>1</count>
 									<item_version>0</item_version>
-									<item>
-										<first>
-											<first>../gen/Hls_Layers_UpConv.tpp</first>
-											<second>Apply_Norm_And_Write&amp;lt;32, 480, 30, 480&amp;gt;</second>
-										</first>
-										<second>272</second>
-									</item>
 									<item>
 										<first>
 											<first>../gen/Hls_Layers_UpConv.tpp</first>
 											<second>UpConv_Fused_Row&amp;lt;8, 16, 16, 960, 480&amp;gt;</second>
 										</first>
-										<second>364</second>
+										<second>268</second>
 									</item>
 								</second>
 							</item>
@@ -18112,21 +16327,14 @@
 							<item>
 								<first>/home/hoinguyen/Documents/Vitis/UpConv_HLS/upconv_block0</first>
 								<second>
-									<count>3</count>
+									<count>2</count>
 									<item_version>0</item_version>
-									<item>
-										<first>
-											<first>../gen/Hls_Layers_UpConv.tpp</first>
-											<second>Apply_Norm_And_Write&amp;lt;32, 480, 30, 480&amp;gt;</second>
-										</first>
-										<second>272</second>
-									</item>
 									<item>
 										<first>
 											<first>../gen/Hls_Layers_UpConv.tpp</first>
 											<second>UpConv_Fused_Row&amp;lt;8, 16, 16, 960, 480&amp;gt;</second>
 										</first>
-										<second>364</second>
+										<second>268</second>
 									</item>
 									<item>
 										<first>
@@ -18170,33 +16378,26 @@
 					<Obj>
 						<type>0</type>
 						<id>318</id>
-						<name>p_ZZ16UpConv_Fused_RowILi8ELi16ELi16ELi960ELi480EEvP7ap_uintILi256EEPKS1_S4_S4_S4_34</name>
+						<name>p_ZZ16UpConv_Fused_RowILi8ELi16ELi16ELi960ELi480EEvP7ap_uintILi256EEPKS1_S4_S4_S4_46</name>
 						<fileName>../gen/Hls_Layers_UpConv.tpp</fileName>
 						<fileDirectory>/home/hoinguyen/Documents/Vitis/UpConv_HLS/upconv_block0</fileDirectory>
-						<lineNumber>270</lineNumber>
-						<contextFuncName>Apply_Norm_And_Write&amp;lt;32, 480, 30, 480&amp;gt;</contextFuncName>
-						<contextNormFuncName>Apply_Norm_And_Write_32_480_30_480_s</contextNormFuncName>
+						<lineNumber>266</lineNumber>
+						<contextFuncName>UpConv_Fused_Row&amp;lt;8, 16, 16, 960, 480&amp;gt;</contextFuncName>
+						<contextNormFuncName>UpConv_Fused_Row_8_16_16_960_480_s</contextNormFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
 								<first>/home/hoinguyen/Documents/Vitis/UpConv_HLS/upconv_block0</first>
 								<second>
-									<count>2</count>
+									<count>1</count>
 									<item_version>0</item_version>
-									<item>
-										<first>
-											<first>../gen/Hls_Layers_UpConv.tpp</first>
-											<second>Apply_Norm_And_Write&amp;lt;32, 480, 30, 480&amp;gt;</second>
-										</first>
-										<second>270</second>
-									</item>
 									<item>
 										<first>
 											<first>../gen/Hls_Layers_UpConv.tpp</first>
 											<second>UpConv_Fused_Row&amp;lt;8, 16, 16, 960, 480&amp;gt;</second>
 										</first>
-										<second>364</second>
+										<second>266</second>
 									</item>
 								</second>
 							</item>
@@ -18233,33 +16434,26 @@
 					<Obj>
 						<type>0</type>
 						<id>319</id>
-						<name>sub_i_13</name>
+						<name>sub151_13</name>
 						<fileName>../gen/Hls_Layers_UpConv.tpp</fileName>
 						<fileDirectory>/home/hoinguyen/Documents/Vitis/UpConv_HLS/upconv_block0</fileDirectory>
-						<lineNumber>273</lineNumber>
-						<contextFuncName>Apply_Norm_And_Write&amp;lt;32, 480, 30, 480&amp;gt;</contextFuncName>
-						<contextNormFuncName>Apply_Norm_And_Write_32_480_30_480_s</contextNormFuncName>
+						<lineNumber>269</lineNumber>
+						<contextFuncName>UpConv_Fused_Row&amp;lt;8, 16, 16, 960, 480&amp;gt;</contextFuncName>
+						<contextNormFuncName>UpConv_Fused_Row_8_16_16_960_480_s</contextNormFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
 								<first>/home/hoinguyen/Documents/Vitis/UpConv_HLS/upconv_block0</first>
 								<second>
-									<count>2</count>
+									<count>1</count>
 									<item_version>0</item_version>
-									<item>
-										<first>
-											<first>../gen/Hls_Layers_UpConv.tpp</first>
-											<second>Apply_Norm_And_Write&amp;lt;32, 480, 30, 480&amp;gt;</second>
-										</first>
-										<second>273</second>
-									</item>
 									<item>
 										<first>
 											<first>../gen/Hls_Layers_UpConv.tpp</first>
 											<second>UpConv_Fused_Row&amp;lt;8, 16, 16, 960, 480&amp;gt;</second>
 										</first>
-										<second>364</second>
+										<second>269</second>
 									</item>
 								</second>
 							</item>
@@ -18297,33 +16491,26 @@
 					<Obj>
 						<type>0</type>
 						<id>320</id>
-						<name>mul27_i_13</name>
+						<name>mul152_13</name>
 						<fileName>../gen/Hls_Layers_UpConv.tpp</fileName>
 						<fileDirectory>/home/hoinguyen/Documents/Vitis/UpConv_HLS/upconv_block0</fileDirectory>
-						<lineNumber>273</lineNumber>
-						<contextFuncName>Apply_Norm_And_Write&amp;lt;32, 480, 30, 480&amp;gt;</contextFuncName>
-						<contextNormFuncName>Apply_Norm_And_Write_32_480_30_480_s</contextNormFuncName>
+						<lineNumber>269</lineNumber>
+						<contextFuncName>UpConv_Fused_Row&amp;lt;8, 16, 16, 960, 480&amp;gt;</contextFuncName>
+						<contextNormFuncName>UpConv_Fused_Row_8_16_16_960_480_s</contextNormFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
 								<first>/home/hoinguyen/Documents/Vitis/UpConv_HLS/upconv_block0</first>
 								<second>
-									<count>2</count>
+									<count>1</count>
 									<item_version>0</item_version>
-									<item>
-										<first>
-											<first>../gen/Hls_Layers_UpConv.tpp</first>
-											<second>Apply_Norm_And_Write&amp;lt;32, 480, 30, 480&amp;gt;</second>
-										</first>
-										<second>273</second>
-									</item>
 									<item>
 										<first>
 											<first>../gen/Hls_Layers_UpConv.tpp</first>
 											<second>UpConv_Fused_Row&amp;lt;8, 16, 16, 960, 480&amp;gt;</second>
 										</first>
-										<second>364</second>
+										<second>269</second>
 									</item>
 								</second>
 							</item>
@@ -18361,33 +16548,26 @@
 					<Obj>
 						<type>0</type>
 						<id>321</id>
-						<name>mul28_i_13</name>
+						<name>mul153_13</name>
 						<fileName>../gen/Hls_Layers_UpConv.tpp</fileName>
 						<fileDirectory>/home/hoinguyen/Documents/Vitis/UpConv_HLS/upconv_block0</fileDirectory>
-						<lineNumber>273</lineNumber>
-						<contextFuncName>Apply_Norm_And_Write&amp;lt;32, 480, 30, 480&amp;gt;</contextFuncName>
-						<contextNormFuncName>Apply_Norm_And_Write_32_480_30_480_s</contextNormFuncName>
+						<lineNumber>269</lineNumber>
+						<contextFuncName>UpConv_Fused_Row&amp;lt;8, 16, 16, 960, 480&amp;gt;</contextFuncName>
+						<contextNormFuncName>UpConv_Fused_Row_8_16_16_960_480_s</contextNormFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
 								<first>/home/hoinguyen/Documents/Vitis/UpConv_HLS/upconv_block0</first>
 								<second>
-									<count>2</count>
+									<count>1</count>
 									<item_version>0</item_version>
-									<item>
-										<first>
-											<first>../gen/Hls_Layers_UpConv.tpp</first>
-											<second>Apply_Norm_And_Write&amp;lt;32, 480, 30, 480&amp;gt;</second>
-										</first>
-										<second>273</second>
-									</item>
 									<item>
 										<first>
 											<first>../gen/Hls_Layers_UpConv.tpp</first>
 											<second>UpConv_Fused_Row&amp;lt;8, 16, 16, 960, 480&amp;gt;</second>
 										</first>
-										<second>364</second>
+										<second>269</second>
 									</item>
 								</second>
 							</item>
@@ -18425,33 +16605,26 @@
 					<Obj>
 						<type>0</type>
 						<id>322</id>
-						<name>add29_i_13</name>
+						<name>add154_13</name>
 						<fileName>../gen/Hls_Layers_UpConv.tpp</fileName>
 						<fileDirectory>/home/hoinguyen/Documents/Vitis/UpConv_HLS/upconv_block0</fileDirectory>
-						<lineNumber>273</lineNumber>
-						<contextFuncName>Apply_Norm_And_Write&amp;lt;32, 480, 30, 480&amp;gt;</contextFuncName>
-						<contextNormFuncName>Apply_Norm_And_Write_32_480_30_480_s</contextNormFuncName>
+						<lineNumber>269</lineNumber>
+						<contextFuncName>UpConv_Fused_Row&amp;lt;8, 16, 16, 960, 480&amp;gt;</contextFuncName>
+						<contextNormFuncName>UpConv_Fused_Row_8_16_16_960_480_s</contextNormFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
 								<first>/home/hoinguyen/Documents/Vitis/UpConv_HLS/upconv_block0</first>
 								<second>
-									<count>2</count>
+									<count>1</count>
 									<item_version>0</item_version>
-									<item>
-										<first>
-											<first>../gen/Hls_Layers_UpConv.tpp</first>
-											<second>Apply_Norm_And_Write&amp;lt;32, 480, 30, 480&amp;gt;</second>
-										</first>
-										<second>273</second>
-									</item>
 									<item>
 										<first>
 											<first>../gen/Hls_Layers_UpConv.tpp</first>
 											<second>UpConv_Fused_Row&amp;lt;8, 16, 16, 960, 480&amp;gt;</second>
 										</first>
-										<second>364</second>
+										<second>269</second>
 									</item>
 								</second>
 							</item>
@@ -18492,30 +16665,23 @@
 						<name>norm_14</name>
 						<fileName>../gen/Hls_Layers_UpConv.tpp</fileName>
 						<fileDirectory>/home/hoinguyen/Documents/Vitis/UpConv_HLS/upconv_block0</fileDirectory>
-						<lineNumber>270</lineNumber>
-						<contextFuncName>Apply_Norm_And_Write&amp;lt;32, 480, 30, 480&amp;gt;</contextFuncName>
-						<contextNormFuncName>Apply_Norm_And_Write_32_480_30_480_s</contextNormFuncName>
+						<lineNumber>266</lineNumber>
+						<contextFuncName>UpConv_Fused_Row&amp;lt;8, 16, 16, 960, 480&amp;gt;</contextFuncName>
+						<contextNormFuncName>UpConv_Fused_Row_8_16_16_960_480_s</contextNormFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
 								<first>/home/hoinguyen/Documents/Vitis/UpConv_HLS/upconv_block0</first>
 								<second>
-									<count>2</count>
+									<count>1</count>
 									<item_version>0</item_version>
-									<item>
-										<first>
-											<first>../gen/Hls_Layers_UpConv.tpp</first>
-											<second>Apply_Norm_And_Write&amp;lt;32, 480, 30, 480&amp;gt;</second>
-										</first>
-										<second>270</second>
-									</item>
 									<item>
 										<first>
 											<first>../gen/Hls_Layers_UpConv.tpp</first>
 											<second>UpConv_Fused_Row&amp;lt;8, 16, 16, 960, 480&amp;gt;</second>
 										</first>
-										<second>364</second>
+										<second>266</second>
 									</item>
 								</second>
 							</item>
@@ -18554,33 +16720,26 @@
 					<Obj>
 						<type>0</type>
 						<id>324</id>
-						<name>cmp33_i_13</name>
+						<name>cmp158_13</name>
 						<fileName>../gen/Hls_Layers_UpConv.tpp</fileName>
 						<fileDirectory>/home/hoinguyen/Documents/Vitis/UpConv_HLS/upconv_block0</fileDirectory>
-						<lineNumber>274</lineNumber>
-						<contextFuncName>Apply_Norm_And_Write&amp;lt;32, 480, 30, 480&amp;gt;</contextFuncName>
-						<contextNormFuncName>Apply_Norm_And_Write_32_480_30_480_s</contextNormFuncName>
+						<lineNumber>270</lineNumber>
+						<contextFuncName>UpConv_Fused_Row&amp;lt;8, 16, 16, 960, 480&amp;gt;</contextFuncName>
+						<contextNormFuncName>UpConv_Fused_Row_8_16_16_960_480_s</contextNormFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
 								<first>/home/hoinguyen/Documents/Vitis/UpConv_HLS/upconv_block0</first>
 								<second>
-									<count>2</count>
+									<count>1</count>
 									<item_version>0</item_version>
-									<item>
-										<first>
-											<first>../gen/Hls_Layers_UpConv.tpp</first>
-											<second>Apply_Norm_And_Write&amp;lt;32, 480, 30, 480&amp;gt;</second>
-										</first>
-										<second>274</second>
-									</item>
 									<item>
 										<first>
 											<first>../gen/Hls_Layers_UpConv.tpp</first>
 											<second>UpConv_Fused_Row&amp;lt;8, 16, 16, 960, 480&amp;gt;</second>
 										</first>
-										<second>364</second>
+										<second>270</second>
 									</item>
 								</second>
 							</item>
@@ -18630,21 +16789,14 @@
 							<item>
 								<first>/home/hoinguyen/Documents/Vitis/UpConv_HLS/upconv_block0</first>
 								<second>
-									<count>3</count>
+									<count>2</count>
 									<item_version>0</item_version>
-									<item>
-										<first>
-											<first>../gen/Hls_Layers_UpConv.tpp</first>
-											<second>Apply_Norm_And_Write&amp;lt;32, 480, 30, 480&amp;gt;</second>
-										</first>
-										<second>275</second>
-									</item>
 									<item>
 										<first>
 											<first>../gen/Hls_Layers_UpConv.tpp</first>
 											<second>UpConv_Fused_Row&amp;lt;8, 16, 16, 960, 480&amp;gt;</second>
 										</first>
-										<second>364</second>
+										<second>271</second>
 									</item>
 									<item>
 										<first>
@@ -18700,21 +16852,14 @@
 							<item>
 								<first>/home/hoinguyen/Documents/Vitis/UpConv_HLS/upconv_block0</first>
 								<second>
-									<count>3</count>
+									<count>2</count>
 									<item_version>0</item_version>
-									<item>
-										<first>
-											<first>../gen/Hls_Layers_UpConv.tpp</first>
-											<second>Apply_Norm_And_Write&amp;lt;32, 480, 30, 480&amp;gt;</second>
-										</first>
-										<second>275</second>
-									</item>
 									<item>
 										<first>
 											<first>../gen/Hls_Layers_UpConv.tpp</first>
 											<second>UpConv_Fused_Row&amp;lt;8, 16, 16, 960, 480&amp;gt;</second>
 										</first>
-										<second>364</second>
+										<second>271</second>
 									</item>
 									<item>
 										<first>
@@ -18763,30 +16908,23 @@
 						<name>c_15</name>
 						<fileName>../gen/Hls_Layers_UpConv.tpp</fileName>
 						<fileDirectory>/home/hoinguyen/Documents/Vitis/UpConv_HLS/upconv_block0</fileDirectory>
-						<lineNumber>269</lineNumber>
-						<contextFuncName>Apply_Norm_And_Write&amp;lt;32, 480, 30, 480&amp;gt;</contextFuncName>
-						<contextNormFuncName>Apply_Norm_And_Write_32_480_30_480_s</contextNormFuncName>
+						<lineNumber>265</lineNumber>
+						<contextFuncName>UpConv_Fused_Row&amp;lt;8, 16, 16, 960, 480&amp;gt;</contextFuncName>
+						<contextNormFuncName>UpConv_Fused_Row_8_16_16_960_480_s</contextNormFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
 								<first>/home/hoinguyen/Documents/Vitis/UpConv_HLS/upconv_block0</first>
 								<second>
-									<count>2</count>
+									<count>1</count>
 									<item_version>0</item_version>
-									<item>
-										<first>
-											<first>../gen/Hls_Layers_UpConv.tpp</first>
-											<second>Apply_Norm_And_Write&amp;lt;32, 480, 30, 480&amp;gt;</second>
-										</first>
-										<second>269</second>
-									</item>
 									<item>
 										<first>
 											<first>../gen/Hls_Layers_UpConv.tpp</first>
 											<second>UpConv_Fused_Row&amp;lt;8, 16, 16, 960, 480&amp;gt;</second>
 										</first>
-										<second>364</second>
+										<second>265</second>
 									</item>
 								</second>
 							</item>
@@ -18825,33 +16963,26 @@
 					<Obj>
 						<type>0</type>
 						<id>328</id>
-						<name>icmp_ln270_15</name>
+						<name>icmp_ln266_15</name>
 						<fileName>../gen/Hls_Layers_UpConv.tpp</fileName>
 						<fileDirectory>/home/hoinguyen/Documents/Vitis/UpConv_HLS/upconv_block0</fileDirectory>
-						<lineNumber>270</lineNumber>
-						<contextFuncName>Apply_Norm_And_Write&amp;lt;32, 480, 30, 480&amp;gt;</contextFuncName>
-						<contextNormFuncName>Apply_Norm_And_Write_32_480_30_480_s</contextNormFuncName>
+						<lineNumber>266</lineNumber>
+						<contextFuncName>UpConv_Fused_Row&amp;lt;8, 16, 16, 960, 480&amp;gt;</contextFuncName>
+						<contextNormFuncName>UpConv_Fused_Row_8_16_16_960_480_s</contextNormFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
 								<first>/home/hoinguyen/Documents/Vitis/UpConv_HLS/upconv_block0</first>
 								<second>
-									<count>2</count>
+									<count>1</count>
 									<item_version>0</item_version>
-									<item>
-										<first>
-											<first>../gen/Hls_Layers_UpConv.tpp</first>
-											<second>Apply_Norm_And_Write&amp;lt;32, 480, 30, 480&amp;gt;</second>
-										</first>
-										<second>270</second>
-									</item>
 									<item>
 										<first>
 											<first>../gen/Hls_Layers_UpConv.tpp</first>
 											<second>UpConv_Fused_Row&amp;lt;8, 16, 16, 960, 480&amp;gt;</second>
 										</first>
-										<second>364</second>
+										<second>266</second>
 									</item>
 								</second>
 							</item>
@@ -18889,33 +17020,26 @@
 					<Obj>
 						<type>0</type>
 						<id>329</id>
-						<name>u_31</name>
+						<name>u_166</name>
 						<fileName>../gen/Hls_Layers_UpConv.tpp</fileName>
 						<fileDirectory>/home/hoinguyen/Documents/Vitis/UpConv_HLS/upconv_block0</fileDirectory>
-						<lineNumber>271</lineNumber>
-						<contextFuncName>Apply_Norm_And_Write&amp;lt;32, 480, 30, 480&amp;gt;</contextFuncName>
-						<contextNormFuncName>Apply_Norm_And_Write_32_480_30_480_s</contextNormFuncName>
+						<lineNumber>267</lineNumber>
+						<contextFuncName>UpConv_Fused_Row&amp;lt;8, 16, 16, 960, 480&amp;gt;</contextFuncName>
+						<contextNormFuncName>UpConv_Fused_Row_8_16_16_960_480_s</contextNormFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
 								<first>/home/hoinguyen/Documents/Vitis/UpConv_HLS/upconv_block0</first>
 								<second>
-									<count>2</count>
+									<count>1</count>
 									<item_version>0</item_version>
-									<item>
-										<first>
-											<first>../gen/Hls_Layers_UpConv.tpp</first>
-											<second>Apply_Norm_And_Write&amp;lt;32, 480, 30, 480&amp;gt;</second>
-										</first>
-										<second>271</second>
-									</item>
 									<item>
 										<first>
 											<first>../gen/Hls_Layers_UpConv.tpp</first>
 											<second>UpConv_Fused_Row&amp;lt;8, 16, 16, 960, 480&amp;gt;</second>
 										</first>
-										<second>364</second>
+										<second>267</second>
 									</item>
 								</second>
 							</item>
@@ -18966,21 +17090,14 @@
 							<item>
 								<first>/home/hoinguyen/Documents/Vitis/UpConv_HLS/upconv_block0</first>
 								<second>
-									<count>3</count>
+									<count>2</count>
 									<item_version>0</item_version>
-									<item>
-										<first>
-											<first>../gen/Hls_Layers_UpConv.tpp</first>
-											<second>Apply_Norm_And_Write&amp;lt;32, 480, 30, 480&amp;gt;</second>
-										</first>
-										<second>271</second>
-									</item>
 									<item>
 										<first>
 											<first>../gen/Hls_Layers_UpConv.tpp</first>
 											<second>UpConv_Fused_Row&amp;lt;8, 16, 16, 960, 480&amp;gt;</second>
 										</first>
-										<second>364</second>
+										<second>267</second>
 									</item>
 									<item>
 										<first>
@@ -19024,33 +17141,26 @@
 					<Obj>
 						<type>0</type>
 						<id>331</id>
-						<name>u_30</name>
+						<name>u_165</name>
 						<fileName>../gen/Hls_Layers_UpConv.tpp</fileName>
 						<fileDirectory>/home/hoinguyen/Documents/Vitis/UpConv_HLS/upconv_block0</fileDirectory>
-						<lineNumber>272</lineNumber>
-						<contextFuncName>Apply_Norm_And_Write&amp;lt;32, 480, 30, 480&amp;gt;</contextFuncName>
-						<contextNormFuncName>Apply_Norm_And_Write_32_480_30_480_s</contextNormFuncName>
+						<lineNumber>268</lineNumber>
+						<contextFuncName>UpConv_Fused_Row&amp;lt;8, 16, 16, 960, 480&amp;gt;</contextFuncName>
+						<contextNormFuncName>UpConv_Fused_Row_8_16_16_960_480_s</contextNormFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
 								<first>/home/hoinguyen/Documents/Vitis/UpConv_HLS/upconv_block0</first>
 								<second>
-									<count>2</count>
+									<count>1</count>
 									<item_version>0</item_version>
-									<item>
-										<first>
-											<first>../gen/Hls_Layers_UpConv.tpp</first>
-											<second>Apply_Norm_And_Write&amp;lt;32, 480, 30, 480&amp;gt;</second>
-										</first>
-										<second>272</second>
-									</item>
 									<item>
 										<first>
 											<first>../gen/Hls_Layers_UpConv.tpp</first>
 											<second>UpConv_Fused_Row&amp;lt;8, 16, 16, 960, 480&amp;gt;</second>
 										</first>
-										<second>364</second>
+										<second>268</second>
 									</item>
 								</second>
 							</item>
@@ -19101,21 +17211,14 @@
 							<item>
 								<first>/home/hoinguyen/Documents/Vitis/UpConv_HLS/upconv_block0</first>
 								<second>
-									<count>3</count>
+									<count>2</count>
 									<item_version>0</item_version>
-									<item>
-										<first>
-											<first>../gen/Hls_Layers_UpConv.tpp</first>
-											<second>Apply_Norm_And_Write&amp;lt;32, 480, 30, 480&amp;gt;</second>
-										</first>
-										<second>272</second>
-									</item>
 									<item>
 										<first>
 											<first>../gen/Hls_Layers_UpConv.tpp</first>
 											<second>UpConv_Fused_Row&amp;lt;8, 16, 16, 960, 480&amp;gt;</second>
 										</first>
-										<second>364</second>
+										<second>268</second>
 									</item>
 									<item>
 										<first>
@@ -19159,33 +17262,26 @@
 					<Obj>
 						<type>0</type>
 						<id>333</id>
-						<name>p_ZZ16UpConv_Fused_RowILi8ELi16ELi16ELi960ELi480EEvP7ap_uintILi256EEPKS1_S4_S4_S4_35</name>
+						<name>p_ZZ16UpConv_Fused_RowILi8ELi16ELi16ELi960ELi480EEvP7ap_uintILi256EEPKS1_S4_S4_S4_47</name>
 						<fileName>../gen/Hls_Layers_UpConv.tpp</fileName>
 						<fileDirectory>/home/hoinguyen/Documents/Vitis/UpConv_HLS/upconv_block0</fileDirectory>
-						<lineNumber>270</lineNumber>
-						<contextFuncName>Apply_Norm_And_Write&amp;lt;32, 480, 30, 480&amp;gt;</contextFuncName>
-						<contextNormFuncName>Apply_Norm_And_Write_32_480_30_480_s</contextNormFuncName>
+						<lineNumber>266</lineNumber>
+						<contextFuncName>UpConv_Fused_Row&amp;lt;8, 16, 16, 960, 480&amp;gt;</contextFuncName>
+						<contextNormFuncName>UpConv_Fused_Row_8_16_16_960_480_s</contextNormFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
 								<first>/home/hoinguyen/Documents/Vitis/UpConv_HLS/upconv_block0</first>
 								<second>
-									<count>2</count>
+									<count>1</count>
 									<item_version>0</item_version>
-									<item>
-										<first>
-											<first>../gen/Hls_Layers_UpConv.tpp</first>
-											<second>Apply_Norm_And_Write&amp;lt;32, 480, 30, 480&amp;gt;</second>
-										</first>
-										<second>270</second>
-									</item>
 									<item>
 										<first>
 											<first>../gen/Hls_Layers_UpConv.tpp</first>
 											<second>UpConv_Fused_Row&amp;lt;8, 16, 16, 960, 480&amp;gt;</second>
 										</first>
-										<second>364</second>
+										<second>266</second>
 									</item>
 								</second>
 							</item>
@@ -19222,33 +17318,26 @@
 					<Obj>
 						<type>0</type>
 						<id>334</id>
-						<name>sub_i_14</name>
+						<name>sub151_14</name>
 						<fileName>../gen/Hls_Layers_UpConv.tpp</fileName>
 						<fileDirectory>/home/hoinguyen/Documents/Vitis/UpConv_HLS/upconv_block0</fileDirectory>
-						<lineNumber>273</lineNumber>
-						<contextFuncName>Apply_Norm_And_Write&amp;lt;32, 480, 30, 480&amp;gt;</contextFuncName>
-						<contextNormFuncName>Apply_Norm_And_Write_32_480_30_480_s</contextNormFuncName>
+						<lineNumber>269</lineNumber>
+						<contextFuncName>UpConv_Fused_Row&amp;lt;8, 16, 16, 960, 480&amp;gt;</contextFuncName>
+						<contextNormFuncName>UpConv_Fused_Row_8_16_16_960_480_s</contextNormFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
 								<first>/home/hoinguyen/Documents/Vitis/UpConv_HLS/upconv_block0</first>
 								<second>
-									<count>2</count>
+									<count>1</count>
 									<item_version>0</item_version>
-									<item>
-										<first>
-											<first>../gen/Hls_Layers_UpConv.tpp</first>
-											<second>Apply_Norm_And_Write&amp;lt;32, 480, 30, 480&amp;gt;</second>
-										</first>
-										<second>273</second>
-									</item>
 									<item>
 										<first>
 											<first>../gen/Hls_Layers_UpConv.tpp</first>
 											<second>UpConv_Fused_Row&amp;lt;8, 16, 16, 960, 480&amp;gt;</second>
 										</first>
-										<second>364</second>
+										<second>269</second>
 									</item>
 								</second>
 							</item>
@@ -19286,33 +17375,26 @@
 					<Obj>
 						<type>0</type>
 						<id>335</id>
-						<name>mul27_i_14</name>
+						<name>mul152_14</name>
 						<fileName>../gen/Hls_Layers_UpConv.tpp</fileName>
 						<fileDirectory>/home/hoinguyen/Documents/Vitis/UpConv_HLS/upconv_block0</fileDirectory>
-						<lineNumber>273</lineNumber>
-						<contextFuncName>Apply_Norm_And_Write&amp;lt;32, 480, 30, 480&amp;gt;</contextFuncName>
-						<contextNormFuncName>Apply_Norm_And_Write_32_480_30_480_s</contextNormFuncName>
+						<lineNumber>269</lineNumber>
+						<contextFuncName>UpConv_Fused_Row&amp;lt;8, 16, 16, 960, 480&amp;gt;</contextFuncName>
+						<contextNormFuncName>UpConv_Fused_Row_8_16_16_960_480_s</contextNormFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
 								<first>/home/hoinguyen/Documents/Vitis/UpConv_HLS/upconv_block0</first>
 								<second>
-									<count>2</count>
+									<count>1</count>
 									<item_version>0</item_version>
-									<item>
-										<first>
-											<first>../gen/Hls_Layers_UpConv.tpp</first>
-											<second>Apply_Norm_And_Write&amp;lt;32, 480, 30, 480&amp;gt;</second>
-										</first>
-										<second>273</second>
-									</item>
 									<item>
 										<first>
 											<first>../gen/Hls_Layers_UpConv.tpp</first>
 											<second>UpConv_Fused_Row&amp;lt;8, 16, 16, 960, 480&amp;gt;</second>
 										</first>
-										<second>364</second>
+										<second>269</second>
 									</item>
 								</second>
 							</item>
@@ -19350,33 +17432,26 @@
 					<Obj>
 						<type>0</type>
 						<id>336</id>
-						<name>mul28_i_14</name>
+						<name>mul153_14</name>
 						<fileName>../gen/Hls_Layers_UpConv.tpp</fileName>
 						<fileDirectory>/home/hoinguyen/Documents/Vitis/UpConv_HLS/upconv_block0</fileDirectory>
-						<lineNumber>273</lineNumber>
-						<contextFuncName>Apply_Norm_And_Write&amp;lt;32, 480, 30, 480&amp;gt;</contextFuncName>
-						<contextNormFuncName>Apply_Norm_And_Write_32_480_30_480_s</contextNormFuncName>
+						<lineNumber>269</lineNumber>
+						<contextFuncName>UpConv_Fused_Row&amp;lt;8, 16, 16, 960, 480&amp;gt;</contextFuncName>
+						<contextNormFuncName>UpConv_Fused_Row_8_16_16_960_480_s</contextNormFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
 								<first>/home/hoinguyen/Documents/Vitis/UpConv_HLS/upconv_block0</first>
 								<second>
-									<count>2</count>
+									<count>1</count>
 									<item_version>0</item_version>
-									<item>
-										<first>
-											<first>../gen/Hls_Layers_UpConv.tpp</first>
-											<second>Apply_Norm_And_Write&amp;lt;32, 480, 30, 480&amp;gt;</second>
-										</first>
-										<second>273</second>
-									</item>
 									<item>
 										<first>
 											<first>../gen/Hls_Layers_UpConv.tpp</first>
 											<second>UpConv_Fused_Row&amp;lt;8, 16, 16, 960, 480&amp;gt;</second>
 										</first>
-										<second>364</second>
+										<second>269</second>
 									</item>
 								</second>
 							</item>
@@ -19414,33 +17489,26 @@
 					<Obj>
 						<type>0</type>
 						<id>337</id>
-						<name>add29_i_14</name>
+						<name>add154_14</name>
 						<fileName>../gen/Hls_Layers_UpConv.tpp</fileName>
 						<fileDirectory>/home/hoinguyen/Documents/Vitis/UpConv_HLS/upconv_block0</fileDirectory>
-						<lineNumber>273</lineNumber>
-						<contextFuncName>Apply_Norm_And_Write&amp;lt;32, 480, 30, 480&amp;gt;</contextFuncName>
-						<contextNormFuncName>Apply_Norm_And_Write_32_480_30_480_s</contextNormFuncName>
+						<lineNumber>269</lineNumber>
+						<contextFuncName>UpConv_Fused_Row&amp;lt;8, 16, 16, 960, 480&amp;gt;</contextFuncName>
+						<contextNormFuncName>UpConv_Fused_Row_8_16_16_960_480_s</contextNormFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
 								<first>/home/hoinguyen/Documents/Vitis/UpConv_HLS/upconv_block0</first>
 								<second>
-									<count>2</count>
+									<count>1</count>
 									<item_version>0</item_version>
-									<item>
-										<first>
-											<first>../gen/Hls_Layers_UpConv.tpp</first>
-											<second>Apply_Norm_And_Write&amp;lt;32, 480, 30, 480&amp;gt;</second>
-										</first>
-										<second>273</second>
-									</item>
 									<item>
 										<first>
 											<first>../gen/Hls_Layers_UpConv.tpp</first>
 											<second>UpConv_Fused_Row&amp;lt;8, 16, 16, 960, 480&amp;gt;</second>
 										</first>
-										<second>364</second>
+										<second>269</second>
 									</item>
 								</second>
 							</item>
@@ -19481,30 +17549,23 @@
 						<name>norm_15</name>
 						<fileName>../gen/Hls_Layers_UpConv.tpp</fileName>
 						<fileDirectory>/home/hoinguyen/Documents/Vitis/UpConv_HLS/upconv_block0</fileDirectory>
-						<lineNumber>270</lineNumber>
-						<contextFuncName>Apply_Norm_And_Write&amp;lt;32, 480, 30, 480&amp;gt;</contextFuncName>
-						<contextNormFuncName>Apply_Norm_And_Write_32_480_30_480_s</contextNormFuncName>
+						<lineNumber>266</lineNumber>
+						<contextFuncName>UpConv_Fused_Row&amp;lt;8, 16, 16, 960, 480&amp;gt;</contextFuncName>
+						<contextNormFuncName>UpConv_Fused_Row_8_16_16_960_480_s</contextNormFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
 								<first>/home/hoinguyen/Documents/Vitis/UpConv_HLS/upconv_block0</first>
 								<second>
-									<count>2</count>
+									<count>1</count>
 									<item_version>0</item_version>
-									<item>
-										<first>
-											<first>../gen/Hls_Layers_UpConv.tpp</first>
-											<second>Apply_Norm_And_Write&amp;lt;32, 480, 30, 480&amp;gt;</second>
-										</first>
-										<second>270</second>
-									</item>
 									<item>
 										<first>
 											<first>../gen/Hls_Layers_UpConv.tpp</first>
 											<second>UpConv_Fused_Row&amp;lt;8, 16, 16, 960, 480&amp;gt;</second>
 										</first>
-										<second>364</second>
+										<second>266</second>
 									</item>
 								</second>
 							</item>
@@ -19543,33 +17604,26 @@
 					<Obj>
 						<type>0</type>
 						<id>339</id>
-						<name>cmp33_i_14</name>
+						<name>cmp158_14</name>
 						<fileName>../gen/Hls_Layers_UpConv.tpp</fileName>
 						<fileDirectory>/home/hoinguyen/Documents/Vitis/UpConv_HLS/upconv_block0</fileDirectory>
-						<lineNumber>274</lineNumber>
-						<contextFuncName>Apply_Norm_And_Write&amp;lt;32, 480, 30, 480&amp;gt;</contextFuncName>
-						<contextNormFuncName>Apply_Norm_And_Write_32_480_30_480_s</contextNormFuncName>
+						<lineNumber>270</lineNumber>
+						<contextFuncName>UpConv_Fused_Row&amp;lt;8, 16, 16, 960, 480&amp;gt;</contextFuncName>
+						<contextNormFuncName>UpConv_Fused_Row_8_16_16_960_480_s</contextNormFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
 								<first>/home/hoinguyen/Documents/Vitis/UpConv_HLS/upconv_block0</first>
 								<second>
-									<count>2</count>
+									<count>1</count>
 									<item_version>0</item_version>
-									<item>
-										<first>
-											<first>../gen/Hls_Layers_UpConv.tpp</first>
-											<second>Apply_Norm_And_Write&amp;lt;32, 480, 30, 480&amp;gt;</second>
-										</first>
-										<second>274</second>
-									</item>
 									<item>
 										<first>
 											<first>../gen/Hls_Layers_UpConv.tpp</first>
 											<second>UpConv_Fused_Row&amp;lt;8, 16, 16, 960, 480&amp;gt;</second>
 										</first>
-										<second>364</second>
+										<second>270</second>
 									</item>
 								</second>
 							</item>
@@ -19619,21 +17673,14 @@
 							<item>
 								<first>/home/hoinguyen/Documents/Vitis/UpConv_HLS/upconv_block0</first>
 								<second>
-									<count>3</count>
+									<count>2</count>
 									<item_version>0</item_version>
-									<item>
-										<first>
-											<first>../gen/Hls_Layers_UpConv.tpp</first>
-											<second>Apply_Norm_And_Write&amp;lt;32, 480, 30, 480&amp;gt;</second>
-										</first>
-										<second>275</second>
-									</item>
 									<item>
 										<first>
 											<first>../gen/Hls_Layers_UpConv.tpp</first>
 											<second>UpConv_Fused_Row&amp;lt;8, 16, 16, 960, 480&amp;gt;</second>
 										</first>
-										<second>364</second>
+										<second>271</second>
 									</item>
 									<item>
 										<first>
@@ -19689,21 +17736,14 @@
 							<item>
 								<first>/home/hoinguyen/Documents/Vitis/UpConv_HLS/upconv_block0</first>
 								<second>
-									<count>3</count>
+									<count>2</count>
 									<item_version>0</item_version>
-									<item>
-										<first>
-											<first>../gen/Hls_Layers_UpConv.tpp</first>
-											<second>Apply_Norm_And_Write&amp;lt;32, 480, 30, 480&amp;gt;</second>
-										</first>
-										<second>275</second>
-									</item>
 									<item>
 										<first>
 											<first>../gen/Hls_Layers_UpConv.tpp</first>
 											<second>UpConv_Fused_Row&amp;lt;8, 16, 16, 960, 480&amp;gt;</second>
 										</first>
-										<second>364</second>
+										<second>271</second>
 									</item>
 									<item>
 										<first>
@@ -19752,30 +17792,23 @@
 						<name>out_word</name>
 						<fileName>../gen/Hls_Layers_UpConv.tpp</fileName>
 						<fileDirectory>/home/hoinguyen/Documents/Vitis/UpConv_HLS/upconv_block0</fileDirectory>
-						<lineNumber>275</lineNumber>
-						<contextFuncName>Apply_Norm_And_Write&amp;lt;32, 480, 30, 480&amp;gt;</contextFuncName>
-						<contextNormFuncName>Apply_Norm_And_Write_32_480_30_480_s</contextNormFuncName>
+						<lineNumber>271</lineNumber>
+						<contextFuncName>UpConv_Fused_Row&amp;lt;8, 16, 16, 960, 480&amp;gt;</contextFuncName>
+						<contextNormFuncName>UpConv_Fused_Row_8_16_16_960_480_s</contextNormFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
 								<first>/home/hoinguyen/Documents/Vitis/UpConv_HLS/upconv_block0</first>
 								<second>
-									<count>2</count>
+									<count>1</count>
 									<item_version>0</item_version>
-									<item>
-										<first>
-											<first>../gen/Hls_Layers_UpConv.tpp</first>
-											<second>Apply_Norm_And_Write&amp;lt;32, 480, 30, 480&amp;gt;</second>
-										</first>
-										<second>275</second>
-									</item>
 									<item>
 										<first>
 											<first>../gen/Hls_Layers_UpConv.tpp</first>
 											<second>UpConv_Fused_Row&amp;lt;8, 16, 16, 960, 480&amp;gt;</second>
 										</first>
-										<second>364</second>
+										<second>271</second>
 									</item>
 								</second>
 							</item>
@@ -19828,33 +17861,26 @@
 					<Obj>
 						<type>0</type>
 						<id>343</id>
-						<name>add_ln277</name>
+						<name>add_ln273</name>
 						<fileName>../gen/Hls_Layers_UpConv.tpp</fileName>
 						<fileDirectory>/home/hoinguyen/Documents/Vitis/UpConv_HLS/upconv_block0</fileDirectory>
-						<lineNumber>277</lineNumber>
-						<contextFuncName>Apply_Norm_And_Write&amp;lt;32, 480, 30, 480&amp;gt;</contextFuncName>
-						<contextNormFuncName>Apply_Norm_And_Write_32_480_30_480_s</contextNormFuncName>
+						<lineNumber>273</lineNumber>
+						<contextFuncName>UpConv_Fused_Row&amp;lt;8, 16, 16, 960, 480&amp;gt;</contextFuncName>
+						<contextNormFuncName>UpConv_Fused_Row_8_16_16_960_480_s</contextNormFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
 								<first>/home/hoinguyen/Documents/Vitis/UpConv_HLS/upconv_block0</first>
 								<second>
-									<count>2</count>
+									<count>1</count>
 									<item_version>0</item_version>
-									<item>
-										<first>
-											<first>../gen/Hls_Layers_UpConv.tpp</first>
-											<second>Apply_Norm_And_Write&amp;lt;32, 480, 30, 480&amp;gt;</second>
-										</first>
-										<second>277</second>
-									</item>
 									<item>
 										<first>
 											<first>../gen/Hls_Layers_UpConv.tpp</first>
 											<second>UpConv_Fused_Row&amp;lt;8, 16, 16, 960, 480&amp;gt;</second>
 										</first>
-										<second>364</second>
+										<second>273</second>
 									</item>
 								</second>
 							</item>
@@ -19892,33 +17918,26 @@
 					<Obj>
 						<type>0</type>
 						<id>344</id>
-						<name>shl_ln277</name>
+						<name>shl_ln273</name>
 						<fileName>../gen/Hls_Layers_UpConv.tpp</fileName>
 						<fileDirectory>/home/hoinguyen/Documents/Vitis/UpConv_HLS/upconv_block0</fileDirectory>
-						<lineNumber>277</lineNumber>
-						<contextFuncName>Apply_Norm_And_Write&amp;lt;32, 480, 30, 480&amp;gt;</contextFuncName>
-						<contextNormFuncName>Apply_Norm_And_Write_32_480_30_480_s</contextNormFuncName>
+						<lineNumber>273</lineNumber>
+						<contextFuncName>UpConv_Fused_Row&amp;lt;8, 16, 16, 960, 480&amp;gt;</contextFuncName>
+						<contextNormFuncName>UpConv_Fused_Row_8_16_16_960_480_s</contextNormFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
 								<first>/home/hoinguyen/Documents/Vitis/UpConv_HLS/upconv_block0</first>
 								<second>
-									<count>2</count>
+									<count>1</count>
 									<item_version>0</item_version>
-									<item>
-										<first>
-											<first>../gen/Hls_Layers_UpConv.tpp</first>
-											<second>Apply_Norm_And_Write&amp;lt;32, 480, 30, 480&amp;gt;</second>
-										</first>
-										<second>277</second>
-									</item>
 									<item>
 										<first>
 											<first>../gen/Hls_Layers_UpConv.tpp</first>
 											<second>UpConv_Fused_Row&amp;lt;8, 16, 16, 960, 480&amp;gt;</second>
 										</first>
-										<second>364</second>
+										<second>273</second>
 									</item>
 								</second>
 							</item>
@@ -19956,33 +17975,26 @@
 					<Obj>
 						<type>0</type>
 						<id>345</id>
-						<name>shl_ln277_1</name>
+						<name>shl_ln273_1</name>
 						<fileName>../gen/Hls_Layers_UpConv.tpp</fileName>
 						<fileDirectory>/home/hoinguyen/Documents/Vitis/UpConv_HLS/upconv_block0</fileDirectory>
-						<lineNumber>277</lineNumber>
-						<contextFuncName>Apply_Norm_And_Write&amp;lt;32, 480, 30, 480&amp;gt;</contextFuncName>
-						<contextNormFuncName>Apply_Norm_And_Write_32_480_30_480_s</contextNormFuncName>
+						<lineNumber>273</lineNumber>
+						<contextFuncName>UpConv_Fused_Row&amp;lt;8, 16, 16, 960, 480&amp;gt;</contextFuncName>
+						<contextNormFuncName>UpConv_Fused_Row_8_16_16_960_480_s</contextNormFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
 								<first>/home/hoinguyen/Documents/Vitis/UpConv_HLS/upconv_block0</first>
 								<second>
-									<count>2</count>
+									<count>1</count>
 									<item_version>0</item_version>
-									<item>
-										<first>
-											<first>../gen/Hls_Layers_UpConv.tpp</first>
-											<second>Apply_Norm_And_Write&amp;lt;32, 480, 30, 480&amp;gt;</second>
-										</first>
-										<second>277</second>
-									</item>
 									<item>
 										<first>
 											<first>../gen/Hls_Layers_UpConv.tpp</first>
 											<second>UpConv_Fused_Row&amp;lt;8, 16, 16, 960, 480&amp;gt;</second>
 										</first>
-										<second>364</second>
+										<second>273</second>
 									</item>
 								</second>
 							</item>
@@ -20020,33 +18032,26 @@
 					<Obj>
 						<type>0</type>
 						<id>346</id>
-						<name>sub_ln277</name>
+						<name>sub_ln273</name>
 						<fileName>../gen/Hls_Layers_UpConv.tpp</fileName>
 						<fileDirectory>/home/hoinguyen/Documents/Vitis/UpConv_HLS/upconv_block0</fileDirectory>
-						<lineNumber>277</lineNumber>
-						<contextFuncName>Apply_Norm_And_Write&amp;lt;32, 480, 30, 480&amp;gt;</contextFuncName>
-						<contextNormFuncName>Apply_Norm_And_Write_32_480_30_480_s</contextNormFuncName>
+						<lineNumber>273</lineNumber>
+						<contextFuncName>UpConv_Fused_Row&amp;lt;8, 16, 16, 960, 480&amp;gt;</contextFuncName>
+						<contextNormFuncName>UpConv_Fused_Row_8_16_16_960_480_s</contextNormFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
 								<first>/home/hoinguyen/Documents/Vitis/UpConv_HLS/upconv_block0</first>
 								<second>
-									<count>2</count>
+									<count>1</count>
 									<item_version>0</item_version>
-									<item>
-										<first>
-											<first>../gen/Hls_Layers_UpConv.tpp</first>
-											<second>Apply_Norm_And_Write&amp;lt;32, 480, 30, 480&amp;gt;</second>
-										</first>
-										<second>277</second>
-									</item>
 									<item>
 										<first>
 											<first>../gen/Hls_Layers_UpConv.tpp</first>
 											<second>UpConv_Fused_Row&amp;lt;8, 16, 16, 960, 480&amp;gt;</second>
 										</first>
-										<second>364</second>
+										<second>273</second>
 									</item>
 								</second>
 							</item>
@@ -20084,33 +18089,26 @@
 					<Obj>
 						<type>0</type>
 						<id>347</id>
-						<name>add_ln277_1</name>
+						<name>add_ln273_1</name>
 						<fileName>../gen/Hls_Layers_UpConv.tpp</fileName>
 						<fileDirectory>/home/hoinguyen/Documents/Vitis/UpConv_HLS/upconv_block0</fileDirectory>
-						<lineNumber>277</lineNumber>
-						<contextFuncName>Apply_Norm_And_Write&amp;lt;32, 480, 30, 480&amp;gt;</contextFuncName>
-						<contextNormFuncName>Apply_Norm_And_Write_32_480_30_480_s</contextNormFuncName>
+						<lineNumber>273</lineNumber>
+						<contextFuncName>UpConv_Fused_Row&amp;lt;8, 16, 16, 960, 480&amp;gt;</contextFuncName>
+						<contextNormFuncName>UpConv_Fused_Row_8_16_16_960_480_s</contextNormFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
 								<first>/home/hoinguyen/Documents/Vitis/UpConv_HLS/upconv_block0</first>
 								<second>
-									<count>2</count>
+									<count>1</count>
 									<item_version>0</item_version>
-									<item>
-										<first>
-											<first>../gen/Hls_Layers_UpConv.tpp</first>
-											<second>Apply_Norm_And_Write&amp;lt;32, 480, 30, 480&amp;gt;</second>
-										</first>
-										<second>277</second>
-									</item>
 									<item>
 										<first>
 											<first>../gen/Hls_Layers_UpConv.tpp</first>
 											<second>UpConv_Fused_Row&amp;lt;8, 16, 16, 960, 480&amp;gt;</second>
 										</first>
-										<second>364</second>
+										<second>273</second>
 									</item>
 								</second>
 							</item>
@@ -20151,30 +18149,23 @@
 						<name>shl_ln1</name>
 						<fileName>../gen/Hls_Layers_UpConv.tpp</fileName>
 						<fileDirectory>/home/hoinguyen/Documents/Vitis/UpConv_HLS/upconv_block0</fileDirectory>
-						<lineNumber>277</lineNumber>
-						<contextFuncName>Apply_Norm_And_Write&amp;lt;32, 480, 30, 480&amp;gt;</contextFuncName>
-						<contextNormFuncName>Apply_Norm_And_Write_32_480_30_480_s</contextNormFuncName>
+						<lineNumber>273</lineNumber>
+						<contextFuncName>UpConv_Fused_Row&amp;lt;8, 16, 16, 960, 480&amp;gt;</contextFuncName>
+						<contextNormFuncName>UpConv_Fused_Row_8_16_16_960_480_s</contextNormFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
 								<first>/home/hoinguyen/Documents/Vitis/UpConv_HLS/upconv_block0</first>
 								<second>
-									<count>2</count>
+									<count>1</count>
 									<item_version>0</item_version>
-									<item>
-										<first>
-											<first>../gen/Hls_Layers_UpConv.tpp</first>
-											<second>Apply_Norm_And_Write&amp;lt;32, 480, 30, 480&amp;gt;</second>
-										</first>
-										<second>277</second>
-									</item>
 									<item>
 										<first>
 											<first>../gen/Hls_Layers_UpConv.tpp</first>
 											<second>UpConv_Fused_Row&amp;lt;8, 16, 16, 960, 480&amp;gt;</second>
 										</first>
-										<second>364</second>
+										<second>273</second>
 									</item>
 								</second>
 							</item>
@@ -20213,33 +18204,26 @@
 					<Obj>
 						<type>0</type>
 						<id>349</id>
-						<name>sext_ln277</name>
+						<name>sext_ln273</name>
 						<fileName>../gen/Hls_Layers_UpConv.tpp</fileName>
 						<fileDirectory>/home/hoinguyen/Documents/Vitis/UpConv_HLS/upconv_block0</fileDirectory>
-						<lineNumber>277</lineNumber>
-						<contextFuncName>Apply_Norm_And_Write&amp;lt;32, 480, 30, 480&amp;gt;</contextFuncName>
-						<contextNormFuncName>Apply_Norm_And_Write_32_480_30_480_s</contextNormFuncName>
+						<lineNumber>273</lineNumber>
+						<contextFuncName>UpConv_Fused_Row&amp;lt;8, 16, 16, 960, 480&amp;gt;</contextFuncName>
+						<contextNormFuncName>UpConv_Fused_Row_8_16_16_960_480_s</contextNormFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
 								<first>/home/hoinguyen/Documents/Vitis/UpConv_HLS/upconv_block0</first>
 								<second>
-									<count>2</count>
+									<count>1</count>
 									<item_version>0</item_version>
-									<item>
-										<first>
-											<first>../gen/Hls_Layers_UpConv.tpp</first>
-											<second>Apply_Norm_And_Write&amp;lt;32, 480, 30, 480&amp;gt;</second>
-										</first>
-										<second>277</second>
-									</item>
 									<item>
 										<first>
 											<first>../gen/Hls_Layers_UpConv.tpp</first>
 											<second>UpConv_Fused_Row&amp;lt;8, 16, 16, 960, 480&amp;gt;</second>
 										</first>
-										<second>364</second>
+										<second>273</second>
 									</item>
 								</second>
 							</item>
@@ -20276,33 +18260,26 @@
 					<Obj>
 						<type>0</type>
 						<id>350</id>
-						<name>add_ln277_2</name>
+						<name>add_ln273_2</name>
 						<fileName>../gen/Hls_Layers_UpConv.tpp</fileName>
 						<fileDirectory>/home/hoinguyen/Documents/Vitis/UpConv_HLS/upconv_block0</fileDirectory>
-						<lineNumber>277</lineNumber>
-						<contextFuncName>Apply_Norm_And_Write&amp;lt;32, 480, 30, 480&amp;gt;</contextFuncName>
-						<contextNormFuncName>Apply_Norm_And_Write_32_480_30_480_s</contextNormFuncName>
+						<lineNumber>273</lineNumber>
+						<contextFuncName>UpConv_Fused_Row&amp;lt;8, 16, 16, 960, 480&amp;gt;</contextFuncName>
+						<contextNormFuncName>UpConv_Fused_Row_8_16_16_960_480_s</contextNormFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
 								<first>/home/hoinguyen/Documents/Vitis/UpConv_HLS/upconv_block0</first>
 								<second>
-									<count>2</count>
+									<count>1</count>
 									<item_version>0</item_version>
-									<item>
-										<first>
-											<first>../gen/Hls_Layers_UpConv.tpp</first>
-											<second>Apply_Norm_And_Write&amp;lt;32, 480, 30, 480&amp;gt;</second>
-										</first>
-										<second>277</second>
-									</item>
 									<item>
 										<first>
 											<first>../gen/Hls_Layers_UpConv.tpp</first>
 											<second>UpConv_Fused_Row&amp;lt;8, 16, 16, 960, 480&amp;gt;</second>
 										</first>
-										<second>364</second>
+										<second>273</second>
 									</item>
 								</second>
 							</item>
@@ -20340,33 +18317,26 @@
 					<Obj>
 						<type>0</type>
 						<id>351</id>
-						<name>trunc_ln</name>
+						<name>trunc_ln8</name>
 						<fileName>../gen/Hls_Layers_UpConv.tpp</fileName>
 						<fileDirectory>/home/hoinguyen/Documents/Vitis/UpConv_HLS/upconv_block0</fileDirectory>
-						<lineNumber>277</lineNumber>
-						<contextFuncName>Apply_Norm_And_Write&amp;lt;32, 480, 30, 480&amp;gt;</contextFuncName>
-						<contextNormFuncName>Apply_Norm_And_Write_32_480_30_480_s</contextNormFuncName>
+						<lineNumber>273</lineNumber>
+						<contextFuncName>UpConv_Fused_Row&amp;lt;8, 16, 16, 960, 480&amp;gt;</contextFuncName>
+						<contextNormFuncName>UpConv_Fused_Row_8_16_16_960_480_s</contextNormFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
 								<first>/home/hoinguyen/Documents/Vitis/UpConv_HLS/upconv_block0</first>
 								<second>
-									<count>2</count>
+									<count>1</count>
 									<item_version>0</item_version>
-									<item>
-										<first>
-											<first>../gen/Hls_Layers_UpConv.tpp</first>
-											<second>Apply_Norm_And_Write&amp;lt;32, 480, 30, 480&amp;gt;</second>
-										</first>
-										<second>277</second>
-									</item>
 									<item>
 										<first>
 											<first>../gen/Hls_Layers_UpConv.tpp</first>
 											<second>UpConv_Fused_Row&amp;lt;8, 16, 16, 960, 480&amp;gt;</second>
 										</first>
-										<second>364</second>
+										<second>273</second>
 									</item>
 								</second>
 							</item>
@@ -20406,33 +18376,26 @@
 					<Obj>
 						<type>0</type>
 						<id>352</id>
-						<name>sext_ln277_1</name>
+						<name>sext_ln273_1</name>
 						<fileName>../gen/Hls_Layers_UpConv.tpp</fileName>
 						<fileDirectory>/home/hoinguyen/Documents/Vitis/UpConv_HLS/upconv_block0</fileDirectory>
-						<lineNumber>277</lineNumber>
-						<contextFuncName>Apply_Norm_And_Write&amp;lt;32, 480, 30, 480&amp;gt;</contextFuncName>
-						<contextNormFuncName>Apply_Norm_And_Write_32_480_30_480_s</contextNormFuncName>
+						<lineNumber>273</lineNumber>
+						<contextFuncName>UpConv_Fused_Row&amp;lt;8, 16, 16, 960, 480&amp;gt;</contextFuncName>
+						<contextNormFuncName>UpConv_Fused_Row_8_16_16_960_480_s</contextNormFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
 								<first>/home/hoinguyen/Documents/Vitis/UpConv_HLS/upconv_block0</first>
 								<second>
-									<count>2</count>
+									<count>1</count>
 									<item_version>0</item_version>
-									<item>
-										<first>
-											<first>../gen/Hls_Layers_UpConv.tpp</first>
-											<second>Apply_Norm_And_Write&amp;lt;32, 480, 30, 480&amp;gt;</second>
-										</first>
-										<second>277</second>
-									</item>
 									<item>
 										<first>
 											<first>../gen/Hls_Layers_UpConv.tpp</first>
 											<second>UpConv_Fused_Row&amp;lt;8, 16, 16, 960, 480&amp;gt;</second>
 										</first>
-										<second>364</second>
+										<second>273</second>
 									</item>
 								</second>
 							</item>
@@ -20472,30 +18435,23 @@
 						<name>gmem_out_addr</name>
 						<fileName>../gen/Hls_Layers_UpConv.tpp</fileName>
 						<fileDirectory>/home/hoinguyen/Documents/Vitis/UpConv_HLS/upconv_block0</fileDirectory>
-						<lineNumber>277</lineNumber>
-						<contextFuncName>Apply_Norm_And_Write&amp;lt;32, 480, 30, 480&amp;gt;</contextFuncName>
-						<contextNormFuncName>Apply_Norm_And_Write_32_480_30_480_s</contextNormFuncName>
+						<lineNumber>273</lineNumber>
+						<contextFuncName>UpConv_Fused_Row&amp;lt;8, 16, 16, 960, 480&amp;gt;</contextFuncName>
+						<contextNormFuncName>UpConv_Fused_Row_8_16_16_960_480_s</contextNormFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
 								<first>/home/hoinguyen/Documents/Vitis/UpConv_HLS/upconv_block0</first>
 								<second>
-									<count>2</count>
+									<count>1</count>
 									<item_version>0</item_version>
-									<item>
-										<first>
-											<first>../gen/Hls_Layers_UpConv.tpp</first>
-											<second>Apply_Norm_And_Write&amp;lt;32, 480, 30, 480&amp;gt;</second>
-										</first>
-										<second>277</second>
-									</item>
 									<item>
 										<first>
 											<first>../gen/Hls_Layers_UpConv.tpp</first>
 											<second>UpConv_Fused_Row&amp;lt;8, 16, 16, 960, 480&amp;gt;</second>
 										</first>
-										<second>364</second>
+										<second>273</second>
 									</item>
 								</second>
 							</item>
@@ -20536,30 +18492,23 @@
 						<name>gmem_out_addr_req</name>
 						<fileName>../gen/Hls_Layers_UpConv.tpp</fileName>
 						<fileDirectory>/home/hoinguyen/Documents/Vitis/UpConv_HLS/upconv_block0</fileDirectory>
-						<lineNumber>277</lineNumber>
-						<contextFuncName>Apply_Norm_And_Write&amp;lt;32, 480, 30, 480&amp;gt;</contextFuncName>
-						<contextNormFuncName>Apply_Norm_And_Write_32_480_30_480_s</contextNormFuncName>
+						<lineNumber>273</lineNumber>
+						<contextFuncName>UpConv_Fused_Row&amp;lt;8, 16, 16, 960, 480&amp;gt;</contextFuncName>
+						<contextNormFuncName>UpConv_Fused_Row_8_16_16_960_480_s</contextNormFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
 								<first>/home/hoinguyen/Documents/Vitis/UpConv_HLS/upconv_block0</first>
 								<second>
-									<count>2</count>
+									<count>1</count>
 									<item_version>0</item_version>
-									<item>
-										<first>
-											<first>../gen/Hls_Layers_UpConv.tpp</first>
-											<second>Apply_Norm_And_Write&amp;lt;32, 480, 30, 480&amp;gt;</second>
-										</first>
-										<second>277</second>
-									</item>
 									<item>
 										<first>
 											<first>../gen/Hls_Layers_UpConv.tpp</first>
 											<second>UpConv_Fused_Row&amp;lt;8, 16, 16, 960, 480&amp;gt;</second>
 										</first>
-										<second>364</second>
+										<second>273</second>
 									</item>
 								</second>
 							</item>
@@ -20598,33 +18547,26 @@
 					<Obj>
 						<type>0</type>
 						<id>355</id>
-						<name>gmem_out_addr_write_ln277</name>
+						<name>gmem_out_addr_write_ln273</name>
 						<fileName>../gen/Hls_Layers_UpConv.tpp</fileName>
 						<fileDirectory>/home/hoinguyen/Documents/Vitis/UpConv_HLS/upconv_block0</fileDirectory>
-						<lineNumber>277</lineNumber>
-						<contextFuncName>Apply_Norm_And_Write&amp;lt;32, 480, 30, 480&amp;gt;</contextFuncName>
-						<contextNormFuncName>Apply_Norm_And_Write_32_480_30_480_s</contextNormFuncName>
+						<lineNumber>273</lineNumber>
+						<contextFuncName>UpConv_Fused_Row&amp;lt;8, 16, 16, 960, 480&amp;gt;</contextFuncName>
+						<contextNormFuncName>UpConv_Fused_Row_8_16_16_960_480_s</contextNormFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
 								<first>/home/hoinguyen/Documents/Vitis/UpConv_HLS/upconv_block0</first>
 								<second>
-									<count>2</count>
+									<count>1</count>
 									<item_version>0</item_version>
-									<item>
-										<first>
-											<first>../gen/Hls_Layers_UpConv.tpp</first>
-											<second>Apply_Norm_And_Write&amp;lt;32, 480, 30, 480&amp;gt;</second>
-										</first>
-										<second>277</second>
-									</item>
 									<item>
 										<first>
 											<first>../gen/Hls_Layers_UpConv.tpp</first>
 											<second>UpConv_Fused_Row&amp;lt;8, 16, 16, 960, 480&amp;gt;</second>
 										</first>
-										<second>364</second>
+										<second>273</second>
 									</item>
 								</second>
 							</item>
@@ -20668,30 +18610,23 @@
 						<name>gmem_out_addr_resp</name>
 						<fileName>../gen/Hls_Layers_UpConv.tpp</fileName>
 						<fileDirectory>/home/hoinguyen/Documents/Vitis/UpConv_HLS/upconv_block0</fileDirectory>
-						<lineNumber>277</lineNumber>
-						<contextFuncName>Apply_Norm_And_Write&amp;lt;32, 480, 30, 480&amp;gt;</contextFuncName>
-						<contextNormFuncName>Apply_Norm_And_Write_32_480_30_480_s</contextNormFuncName>
+						<lineNumber>273</lineNumber>
+						<contextFuncName>UpConv_Fused_Row&amp;lt;8, 16, 16, 960, 480&amp;gt;</contextFuncName>
+						<contextNormFuncName>UpConv_Fused_Row_8_16_16_960_480_s</contextNormFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
 								<first>/home/hoinguyen/Documents/Vitis/UpConv_HLS/upconv_block0</first>
 								<second>
-									<count>2</count>
+									<count>1</count>
 									<item_version>0</item_version>
-									<item>
-										<first>
-											<first>../gen/Hls_Layers_UpConv.tpp</first>
-											<second>Apply_Norm_And_Write&amp;lt;32, 480, 30, 480&amp;gt;</second>
-										</first>
-										<second>277</second>
-									</item>
 									<item>
 										<first>
 											<first>../gen/Hls_Layers_UpConv.tpp</first>
 											<second>UpConv_Fused_Row&amp;lt;8, 16, 16, 960, 480&amp;gt;</second>
 										</first>
-										<second>364</second>
+										<second>273</second>
 									</item>
 								</second>
 							</item>
@@ -20730,33 +18665,26 @@
 					<Obj>
 						<type>0</type>
 						<id>357</id>
-						<name>icmp_ln278</name>
+						<name>icmp_ln274</name>
 						<fileName>../gen/Hls_Layers_UpConv.tpp</fileName>
 						<fileDirectory>/home/hoinguyen/Documents/Vitis/UpConv_HLS/upconv_block0</fileDirectory>
-						<lineNumber>278</lineNumber>
-						<contextFuncName>Apply_Norm_And_Write&amp;lt;32, 480, 30, 480&amp;gt;</contextFuncName>
-						<contextNormFuncName>Apply_Norm_And_Write_32_480_30_480_s</contextNormFuncName>
+						<lineNumber>274</lineNumber>
+						<contextFuncName>UpConv_Fused_Row&amp;lt;8, 16, 16, 960, 480&amp;gt;</contextFuncName>
+						<contextNormFuncName>UpConv_Fused_Row_8_16_16_960_480_s</contextNormFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
 								<first>/home/hoinguyen/Documents/Vitis/UpConv_HLS/upconv_block0</first>
 								<second>
-									<count>2</count>
+									<count>1</count>
 									<item_version>0</item_version>
-									<item>
-										<first>
-											<first>../gen/Hls_Layers_UpConv.tpp</first>
-											<second>Apply_Norm_And_Write&amp;lt;32, 480, 30, 480&amp;gt;</second>
-										</first>
-										<second>278</second>
-									</item>
 									<item>
 										<first>
 											<first>../gen/Hls_Layers_UpConv.tpp</first>
 											<second>UpConv_Fused_Row&amp;lt;8, 16, 16, 960, 480&amp;gt;</second>
 										</first>
-										<second>364</second>
+										<second>274</second>
 									</item>
 								</second>
 							</item>
@@ -20797,30 +18725,23 @@
 						<name>wn_1</name>
 						<fileName>../gen/Hls_Layers_UpConv.tpp</fileName>
 						<fileDirectory>/home/hoinguyen/Documents/Vitis/UpConv_HLS/upconv_block0</fileDirectory>
-						<lineNumber>278</lineNumber>
-						<contextFuncName>Apply_Norm_And_Write&amp;lt;32, 480, 30, 480&amp;gt;</contextFuncName>
-						<contextNormFuncName>Apply_Norm_And_Write_32_480_30_480_s</contextNormFuncName>
+						<lineNumber>274</lineNumber>
+						<contextFuncName>UpConv_Fused_Row&amp;lt;8, 16, 16, 960, 480&amp;gt;</contextFuncName>
+						<contextNormFuncName>UpConv_Fused_Row_8_16_16_960_480_s</contextNormFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
 								<first>/home/hoinguyen/Documents/Vitis/UpConv_HLS/upconv_block0</first>
 								<second>
-									<count>2</count>
+									<count>1</count>
 									<item_version>0</item_version>
-									<item>
-										<first>
-											<first>../gen/Hls_Layers_UpConv.tpp</first>
-											<second>Apply_Norm_And_Write&amp;lt;32, 480, 30, 480&amp;gt;</second>
-										</first>
-										<second>278</second>
-									</item>
 									<item>
 										<first>
 											<first>../gen/Hls_Layers_UpConv.tpp</first>
 											<second>UpConv_Fused_Row&amp;lt;8, 16, 16, 960, 480&amp;gt;</second>
 										</first>
-										<second>364</second>
+										<second>274</second>
 									</item>
 								</second>
 							</item>
@@ -20861,30 +18782,23 @@
 						<name>cwn_1</name>
 						<fileName>../gen/Hls_Layers_UpConv.tpp</fileName>
 						<fileDirectory>/home/hoinguyen/Documents/Vitis/UpConv_HLS/upconv_block0</fileDirectory>
-						<lineNumber>278</lineNumber>
-						<contextFuncName>Apply_Norm_And_Write&amp;lt;32, 480, 30, 480&amp;gt;</contextFuncName>
-						<contextNormFuncName>Apply_Norm_And_Write_32_480_30_480_s</contextNormFuncName>
+						<lineNumber>274</lineNumber>
+						<contextFuncName>UpConv_Fused_Row&amp;lt;8, 16, 16, 960, 480&amp;gt;</contextFuncName>
+						<contextNormFuncName>UpConv_Fused_Row_8_16_16_960_480_s</contextNormFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
 								<first>/home/hoinguyen/Documents/Vitis/UpConv_HLS/upconv_block0</first>
 								<second>
-									<count>2</count>
+									<count>1</count>
 									<item_version>0</item_version>
-									<item>
-										<first>
-											<first>../gen/Hls_Layers_UpConv.tpp</first>
-											<second>Apply_Norm_And_Write&amp;lt;32, 480, 30, 480&amp;gt;</second>
-										</first>
-										<second>278</second>
-									</item>
 									<item>
 										<first>
 											<first>../gen/Hls_Layers_UpConv.tpp</first>
 											<second>UpConv_Fused_Row&amp;lt;8, 16, 16, 960, 480&amp;gt;</second>
 										</first>
-										<second>364</second>
+										<second>274</second>
 									</item>
 								</second>
 							</item>
@@ -20925,30 +18839,23 @@
 						<name>wn_2</name>
 						<fileName>../gen/Hls_Layers_UpConv.tpp</fileName>
 						<fileDirectory>/home/hoinguyen/Documents/Vitis/UpConv_HLS/upconv_block0</fileDirectory>
-						<lineNumber>278</lineNumber>
-						<contextFuncName>Apply_Norm_And_Write&amp;lt;32, 480, 30, 480&amp;gt;</contextFuncName>
-						<contextNormFuncName>Apply_Norm_And_Write_32_480_30_480_s</contextNormFuncName>
+						<lineNumber>274</lineNumber>
+						<contextFuncName>UpConv_Fused_Row&amp;lt;8, 16, 16, 960, 480&amp;gt;</contextFuncName>
+						<contextNormFuncName>UpConv_Fused_Row_8_16_16_960_480_s</contextNormFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
 								<first>/home/hoinguyen/Documents/Vitis/UpConv_HLS/upconv_block0</first>
 								<second>
-									<count>2</count>
+									<count>1</count>
 									<item_version>0</item_version>
-									<item>
-										<first>
-											<first>../gen/Hls_Layers_UpConv.tpp</first>
-											<second>Apply_Norm_And_Write&amp;lt;32, 480, 30, 480&amp;gt;</second>
-										</first>
-										<second>278</second>
-									</item>
 									<item>
 										<first>
 											<first>../gen/Hls_Layers_UpConv.tpp</first>
 											<second>UpConv_Fused_Row&amp;lt;8, 16, 16, 960, 480&amp;gt;</second>
 										</first>
-										<second>364</second>
+										<second>274</second>
 									</item>
 								</second>
 							</item>
@@ -20990,30 +18897,23 @@
 						<name>cwn_2</name>
 						<fileName>../gen/Hls_Layers_UpConv.tpp</fileName>
 						<fileDirectory>/home/hoinguyen/Documents/Vitis/UpConv_HLS/upconv_block0</fileDirectory>
-						<lineNumber>278</lineNumber>
-						<contextFuncName>Apply_Norm_And_Write&amp;lt;32, 480, 30, 480&amp;gt;</contextFuncName>
-						<contextNormFuncName>Apply_Norm_And_Write_32_480_30_480_s</contextNormFuncName>
+						<lineNumber>274</lineNumber>
+						<contextFuncName>UpConv_Fused_Row&amp;lt;8, 16, 16, 960, 480&amp;gt;</contextFuncName>
+						<contextNormFuncName>UpConv_Fused_Row_8_16_16_960_480_s</contextNormFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
 								<first>/home/hoinguyen/Documents/Vitis/UpConv_HLS/upconv_block0</first>
 								<second>
-									<count>2</count>
+									<count>1</count>
 									<item_version>0</item_version>
-									<item>
-										<first>
-											<first>../gen/Hls_Layers_UpConv.tpp</first>
-											<second>Apply_Norm_And_Write&amp;lt;32, 480, 30, 480&amp;gt;</second>
-										</first>
-										<second>278</second>
-									</item>
 									<item>
 										<first>
 											<first>../gen/Hls_Layers_UpConv.tpp</first>
 											<second>UpConv_Fused_Row&amp;lt;8, 16, 16, 960, 480&amp;gt;</second>
 										</first>
-										<second>364</second>
+										<second>274</second>
 									</item>
 								</second>
 							</item>
@@ -21052,33 +18952,26 @@
 					<Obj>
 						<type>0</type>
 						<id>362</id>
-						<name>m_3_write_ln262</name>
+						<name>m_3_write_ln258</name>
 						<fileName>../gen/Hls_Layers_UpConv.tpp</fileName>
 						<fileDirectory>/home/hoinguyen/Documents/Vitis/UpConv_HLS/upconv_block0</fileDirectory>
-						<lineNumber>262</lineNumber>
-						<contextFuncName>Apply_Norm_And_Write&amp;lt;32, 480, 30, 480&amp;gt;</contextFuncName>
-						<contextNormFuncName>Apply_Norm_And_Write_32_480_30_480_s</contextNormFuncName>
+						<lineNumber>258</lineNumber>
+						<contextFuncName>UpConv_Fused_Row&amp;lt;8, 16, 16, 960, 480&amp;gt;</contextFuncName>
+						<contextNormFuncName>UpConv_Fused_Row_8_16_16_960_480_s</contextNormFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
 								<first>/home/hoinguyen/Documents/Vitis/UpConv_HLS/upconv_block0</first>
 								<second>
-									<count>2</count>
+									<count>1</count>
 									<item_version>0</item_version>
-									<item>
-										<first>
-											<first>../gen/Hls_Layers_UpConv.tpp</first>
-											<second>Apply_Norm_And_Write&amp;lt;32, 480, 30, 480&amp;gt;</second>
-										</first>
-										<second>262</second>
-									</item>
 									<item>
 										<first>
 											<first>../gen/Hls_Layers_UpConv.tpp</first>
 											<second>UpConv_Fused_Row&amp;lt;8, 16, 16, 960, 480&amp;gt;</second>
 										</first>
-										<second>364</second>
+										<second>258</second>
 									</item>
 								</second>
 							</item>
@@ -21118,33 +19011,26 @@
 					<Obj>
 						<type>0</type>
 						<id>363</id>
-						<name>cwn_write_ln261</name>
+						<name>cwn_write_ln257</name>
 						<fileName>../gen/Hls_Layers_UpConv.tpp</fileName>
 						<fileDirectory>/home/hoinguyen/Documents/Vitis/UpConv_HLS/upconv_block0</fileDirectory>
-						<lineNumber>261</lineNumber>
-						<contextFuncName>Apply_Norm_And_Write&amp;lt;32, 480, 30, 480&amp;gt;</contextFuncName>
-						<contextNormFuncName>Apply_Norm_And_Write_32_480_30_480_s</contextNormFuncName>
+						<lineNumber>257</lineNumber>
+						<contextFuncName>UpConv_Fused_Row&amp;lt;8, 16, 16, 960, 480&amp;gt;</contextFuncName>
+						<contextNormFuncName>UpConv_Fused_Row_8_16_16_960_480_s</contextNormFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
 								<first>/home/hoinguyen/Documents/Vitis/UpConv_HLS/upconv_block0</first>
 								<second>
-									<count>2</count>
+									<count>1</count>
 									<item_version>0</item_version>
-									<item>
-										<first>
-											<first>../gen/Hls_Layers_UpConv.tpp</first>
-											<second>Apply_Norm_And_Write&amp;lt;32, 480, 30, 480&amp;gt;</second>
-										</first>
-										<second>261</second>
-									</item>
 									<item>
 										<first>
 											<first>../gen/Hls_Layers_UpConv.tpp</first>
 											<second>UpConv_Fused_Row&amp;lt;8, 16, 16, 960, 480&amp;gt;</second>
 										</first>
-										<second>364</second>
+										<second>257</second>
 									</item>
 								</second>
 							</item>
@@ -21184,33 +19070,26 @@
 					<Obj>
 						<type>0</type>
 						<id>364</id>
-						<name>wn_write_ln261</name>
+						<name>wn_write_ln257</name>
 						<fileName>../gen/Hls_Layers_UpConv.tpp</fileName>
 						<fileDirectory>/home/hoinguyen/Documents/Vitis/UpConv_HLS/upconv_block0</fileDirectory>
-						<lineNumber>261</lineNumber>
-						<contextFuncName>Apply_Norm_And_Write&amp;lt;32, 480, 30, 480&amp;gt;</contextFuncName>
-						<contextNormFuncName>Apply_Norm_And_Write_32_480_30_480_s</contextNormFuncName>
+						<lineNumber>257</lineNumber>
+						<contextFuncName>UpConv_Fused_Row&amp;lt;8, 16, 16, 960, 480&amp;gt;</contextFuncName>
+						<contextNormFuncName>UpConv_Fused_Row_8_16_16_960_480_s</contextNormFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
 								<first>/home/hoinguyen/Documents/Vitis/UpConv_HLS/upconv_block0</first>
 								<second>
-									<count>2</count>
+									<count>1</count>
 									<item_version>0</item_version>
-									<item>
-										<first>
-											<first>../gen/Hls_Layers_UpConv.tpp</first>
-											<second>Apply_Norm_And_Write&amp;lt;32, 480, 30, 480&amp;gt;</second>
-										</first>
-										<second>261</second>
-									</item>
 									<item>
 										<first>
 											<first>../gen/Hls_Layers_UpConv.tpp</first>
 											<second>UpConv_Fused_Row&amp;lt;8, 16, 16, 960, 480&amp;gt;</second>
 										</first>
-										<second>364</second>
+										<second>257</second>
 									</item>
 								</second>
 							</item>
@@ -21250,33 +19129,26 @@
 					<Obj>
 						<type>0</type>
 						<id>365</id>
-						<name>br_ln262</name>
+						<name>br_ln258</name>
 						<fileName>../gen/Hls_Layers_UpConv.tpp</fileName>
 						<fileDirectory>/home/hoinguyen/Documents/Vitis/UpConv_HLS/upconv_block0</fileDirectory>
-						<lineNumber>262</lineNumber>
-						<contextFuncName>Apply_Norm_And_Write&amp;lt;32, 480, 30, 480&amp;gt;</contextFuncName>
-						<contextNormFuncName>Apply_Norm_And_Write_32_480_30_480_s</contextNormFuncName>
+						<lineNumber>258</lineNumber>
+						<contextFuncName>UpConv_Fused_Row&amp;lt;8, 16, 16, 960, 480&amp;gt;</contextFuncName>
+						<contextNormFuncName>UpConv_Fused_Row_8_16_16_960_480_s</contextNormFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
 								<first>/home/hoinguyen/Documents/Vitis/UpConv_HLS/upconv_block0</first>
 								<second>
-									<count>2</count>
+									<count>1</count>
 									<item_version>0</item_version>
-									<item>
-										<first>
-											<first>../gen/Hls_Layers_UpConv.tpp</first>
-											<second>Apply_Norm_And_Write&amp;lt;32, 480, 30, 480&amp;gt;</second>
-										</first>
-										<second>262</second>
-									</item>
 									<item>
 										<first>
 											<first>../gen/Hls_Layers_UpConv.tpp</first>
 											<second>UpConv_Fused_Row&amp;lt;8, 16, 16, 960, 480&amp;gt;</second>
 										</first>
-										<second>364</second>
+										<second>258</second>
 									</item>
 								</second>
 							</item>
@@ -22858,7 +20730,7 @@
 				<Obj>
 					<type>3</type>
 					<id>60</id>
-					<name>for.body.i8</name>
+					<name>VITIS_LOOP_263_3</name>
 					<fileName></fileName>
 					<fileDirectory></fileDirectory>
 					<lineNumber>0</lineNumber>
@@ -22892,7 +20764,7 @@
 				<Obj>
 					<type>3</type>
 					<id>366</id>
-					<name>for.body.i8.split_ifconv</name>
+					<name>VITIS_LOOP_263_3.split_ifconv</name>
 					<fileName></fileName>
 					<fileDirectory></fileDirectory>
 					<lineNumber>0</lineNumber>
@@ -23224,7 +21096,7 @@
 				<Obj>
 					<type>3</type>
 					<id>368</id>
-					<name>_ZL20Apply_Norm_And_WriteILi32ELi480ELi30ELi480EEvRAT__AT2__KDhRAT1__K7ap_uintILi256EES8_RAT__KfRAT__S0_PS5_i.exit.exitStub</name>
+					<name>for.end185.exitStub</name>
 					<fileName></fileName>
 					<fileDirectory></fileDirectory>
 					<lineNumber>0</lineNumber>

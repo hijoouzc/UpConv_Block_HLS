@@ -1,5 +1,11 @@
 # This script segment is generated automatically by AutoPilot
 
+set name upconv_core_top_sitofp_32ns_32_7_no_dsp_1
+if {${::AESL::PGuard_rtl_comp_handler}} {
+	::AP::rtl_comp_handler $name BINDTYPE {op} TYPE {sitofp} IMPL {auto} LATENCY 6 ALLOW_PRAGMA 1
+}
+
+
 set name upconv_core_top_hptosp_16ns_32_2_no_dsp_1
 if {${::AESL::PGuard_rtl_comp_handler}} {
 	::AP::rtl_comp_handler $name BINDTYPE {op} TYPE {hptosp} IMPL {auto} LATENCY 1 ALLOW_PRAGMA 1
@@ -7,12 +13,6 @@ if {${::AESL::PGuard_rtl_comp_handler}} {
 
 
 set name upconv_core_top_mul_8ns_5ns_12_1_1
-if {${::AESL::PGuard_rtl_comp_handler}} {
-	::AP::rtl_comp_handler $name BINDTYPE {op} TYPE {mul} IMPL {auto} LATENCY 0 ALLOW_PRAGMA 1
-}
-
-
-set name upconv_core_top_mul_6ns_8ns_13_1_1
 if {${::AESL::PGuard_rtl_comp_handler}} {
 	::AP::rtl_comp_handler $name BINDTYPE {op} TYPE {mul} IMPL {auto} LATENCY 0 ALLOW_PRAGMA 1
 }
@@ -27,216 +27,6 @@ if {${::AESL::PGuard_rtl_comp_handler}} {
 set name upconv_core_top_mul_8ns_8ns_15_1_1
 if {${::AESL::PGuard_rtl_comp_handler}} {
 	::AP::rtl_comp_handler $name BINDTYPE {op} TYPE {mul} IMPL {auto} LATENCY 0 ALLOW_PRAGMA 1
-}
-
-
-set name upconv_core_top_mul_13ns_6ns_18_1_1
-if {${::AESL::PGuard_rtl_comp_handler}} {
-	::AP::rtl_comp_handler $name BINDTYPE {op} TYPE {mul} IMPL {auto} LATENCY 0 ALLOW_PRAGMA 1
-}
-
-
-set name upconv_core_top_mul_8ns_6ns_11_1_1
-if {${::AESL::PGuard_rtl_comp_handler}} {
-	::AP::rtl_comp_handler $name BINDTYPE {op} TYPE {mul} IMPL {auto} LATENCY 0 ALLOW_PRAGMA 1
-}
-
-
-set name upconv_core_top_mul_4ns_6ns_9_1_1
-if {${::AESL::PGuard_rtl_comp_handler}} {
-	::AP::rtl_comp_handler $name BINDTYPE {op} TYPE {mul} IMPL {auto} LATENCY 0 ALLOW_PRAGMA 1
-}
-
-
-set name upconv_core_top_hmul_16ns_16ns_16_4_max_dsp_1
-if {${::AESL::PGuard_rtl_comp_handler}} {
-	::AP::rtl_comp_handler $name BINDTYPE {op} TYPE {hmul} IMPL {maxdsp} LATENCY 3 ALLOW_PRAGMA 1
-}
-
-
-set name upconv_core_top_hmul_16ns_16ns_16_4_max_dsp_1
-if {${::AESL::PGuard_rtl_comp_handler}} {
-	::AP::rtl_comp_handler $name BINDTYPE {op} TYPE {hmul} IMPL {maxdsp} LATENCY 3 ALLOW_PRAGMA 1
-}
-
-
-set name upconv_core_top_hmul_16ns_16ns_16_4_max_dsp_1
-if {${::AESL::PGuard_rtl_comp_handler}} {
-	::AP::rtl_comp_handler $name BINDTYPE {op} TYPE {hmul} IMPL {maxdsp} LATENCY 3 ALLOW_PRAGMA 1
-}
-
-
-set name upconv_core_top_hmul_16ns_16ns_16_4_max_dsp_1
-if {${::AESL::PGuard_rtl_comp_handler}} {
-	::AP::rtl_comp_handler $name BINDTYPE {op} TYPE {hmul} IMPL {maxdsp} LATENCY 3 ALLOW_PRAGMA 1
-}
-
-
-set name upconv_core_top_hmul_16ns_16ns_16_4_max_dsp_1
-if {${::AESL::PGuard_rtl_comp_handler}} {
-	::AP::rtl_comp_handler $name BINDTYPE {op} TYPE {hmul} IMPL {maxdsp} LATENCY 3 ALLOW_PRAGMA 1
-}
-
-
-set name upconv_core_top_hmul_16ns_16ns_16_4_max_dsp_1
-if {${::AESL::PGuard_rtl_comp_handler}} {
-	::AP::rtl_comp_handler $name BINDTYPE {op} TYPE {hmul} IMPL {maxdsp} LATENCY 3 ALLOW_PRAGMA 1
-}
-
-
-set name upconv_core_top_hmul_16ns_16ns_16_4_max_dsp_1
-if {${::AESL::PGuard_rtl_comp_handler}} {
-	::AP::rtl_comp_handler $name BINDTYPE {op} TYPE {hmul} IMPL {maxdsp} LATENCY 3 ALLOW_PRAGMA 1
-}
-
-
-set name upconv_core_top_hmul_16ns_16ns_16_4_max_dsp_1
-if {${::AESL::PGuard_rtl_comp_handler}} {
-	::AP::rtl_comp_handler $name BINDTYPE {op} TYPE {hmul} IMPL {maxdsp} LATENCY 3 ALLOW_PRAGMA 1
-}
-
-
-set name upconv_core_top_hmul_16ns_16ns_16_4_max_dsp_1
-if {${::AESL::PGuard_rtl_comp_handler}} {
-	::AP::rtl_comp_handler $name BINDTYPE {op} TYPE {hmul} IMPL {maxdsp} LATENCY 3 ALLOW_PRAGMA 1
-}
-
-
-set name upconv_core_top_hmul_16ns_16ns_16_4_max_dsp_1
-if {${::AESL::PGuard_rtl_comp_handler}} {
-	::AP::rtl_comp_handler $name BINDTYPE {op} TYPE {hmul} IMPL {maxdsp} LATENCY 3 ALLOW_PRAGMA 1
-}
-
-
-set name upconv_core_top_hmul_16ns_16ns_16_4_max_dsp_1
-if {${::AESL::PGuard_rtl_comp_handler}} {
-	::AP::rtl_comp_handler $name BINDTYPE {op} TYPE {hmul} IMPL {maxdsp} LATENCY 3 ALLOW_PRAGMA 1
-}
-
-
-set name upconv_core_top_hmul_16ns_16ns_16_4_max_dsp_1
-if {${::AESL::PGuard_rtl_comp_handler}} {
-	::AP::rtl_comp_handler $name BINDTYPE {op} TYPE {hmul} IMPL {maxdsp} LATENCY 3 ALLOW_PRAGMA 1
-}
-
-
-set name upconv_core_top_hmul_16ns_16ns_16_4_max_dsp_1
-if {${::AESL::PGuard_rtl_comp_handler}} {
-	::AP::rtl_comp_handler $name BINDTYPE {op} TYPE {hmul} IMPL {maxdsp} LATENCY 3 ALLOW_PRAGMA 1
-}
-
-
-set name upconv_core_top_hmul_16ns_16ns_16_4_max_dsp_1
-if {${::AESL::PGuard_rtl_comp_handler}} {
-	::AP::rtl_comp_handler $name BINDTYPE {op} TYPE {hmul} IMPL {maxdsp} LATENCY 3 ALLOW_PRAGMA 1
-}
-
-
-set name upconv_core_top_hmul_16ns_16ns_16_4_max_dsp_1
-if {${::AESL::PGuard_rtl_comp_handler}} {
-	::AP::rtl_comp_handler $name BINDTYPE {op} TYPE {hmul} IMPL {maxdsp} LATENCY 3 ALLOW_PRAGMA 1
-}
-
-
-set name upconv_core_top_hmul_16ns_16ns_16_4_max_dsp_1
-if {${::AESL::PGuard_rtl_comp_handler}} {
-	::AP::rtl_comp_handler $name BINDTYPE {op} TYPE {hmul} IMPL {maxdsp} LATENCY 3 ALLOW_PRAGMA 1
-}
-
-
-set name upconv_core_top_hmul_16ns_16ns_16_4_max_dsp_1
-if {${::AESL::PGuard_rtl_comp_handler}} {
-	::AP::rtl_comp_handler $name BINDTYPE {op} TYPE {hmul} IMPL {maxdsp} LATENCY 3 ALLOW_PRAGMA 1
-}
-
-
-set name upconv_core_top_hmul_16ns_16ns_16_4_max_dsp_1
-if {${::AESL::PGuard_rtl_comp_handler}} {
-	::AP::rtl_comp_handler $name BINDTYPE {op} TYPE {hmul} IMPL {maxdsp} LATENCY 3 ALLOW_PRAGMA 1
-}
-
-
-set name upconv_core_top_hmul_16ns_16ns_16_4_max_dsp_1
-if {${::AESL::PGuard_rtl_comp_handler}} {
-	::AP::rtl_comp_handler $name BINDTYPE {op} TYPE {hmul} IMPL {maxdsp} LATENCY 3 ALLOW_PRAGMA 1
-}
-
-
-set name upconv_core_top_hmul_16ns_16ns_16_4_max_dsp_1
-if {${::AESL::PGuard_rtl_comp_handler}} {
-	::AP::rtl_comp_handler $name BINDTYPE {op} TYPE {hmul} IMPL {maxdsp} LATENCY 3 ALLOW_PRAGMA 1
-}
-
-
-set name upconv_core_top_hmul_16ns_16ns_16_4_max_dsp_1
-if {${::AESL::PGuard_rtl_comp_handler}} {
-	::AP::rtl_comp_handler $name BINDTYPE {op} TYPE {hmul} IMPL {maxdsp} LATENCY 3 ALLOW_PRAGMA 1
-}
-
-
-set name upconv_core_top_hmul_16ns_16ns_16_4_max_dsp_1
-if {${::AESL::PGuard_rtl_comp_handler}} {
-	::AP::rtl_comp_handler $name BINDTYPE {op} TYPE {hmul} IMPL {maxdsp} LATENCY 3 ALLOW_PRAGMA 1
-}
-
-
-set name upconv_core_top_hmul_16ns_16ns_16_4_max_dsp_1
-if {${::AESL::PGuard_rtl_comp_handler}} {
-	::AP::rtl_comp_handler $name BINDTYPE {op} TYPE {hmul} IMPL {maxdsp} LATENCY 3 ALLOW_PRAGMA 1
-}
-
-
-set name upconv_core_top_hmul_16ns_16ns_16_4_max_dsp_1
-if {${::AESL::PGuard_rtl_comp_handler}} {
-	::AP::rtl_comp_handler $name BINDTYPE {op} TYPE {hmul} IMPL {maxdsp} LATENCY 3 ALLOW_PRAGMA 1
-}
-
-
-set name upconv_core_top_hmul_16ns_16ns_16_4_max_dsp_1
-if {${::AESL::PGuard_rtl_comp_handler}} {
-	::AP::rtl_comp_handler $name BINDTYPE {op} TYPE {hmul} IMPL {maxdsp} LATENCY 3 ALLOW_PRAGMA 1
-}
-
-
-set name upconv_core_top_hmul_16ns_16ns_16_4_max_dsp_1
-if {${::AESL::PGuard_rtl_comp_handler}} {
-	::AP::rtl_comp_handler $name BINDTYPE {op} TYPE {hmul} IMPL {maxdsp} LATENCY 3 ALLOW_PRAGMA 1
-}
-
-
-set name upconv_core_top_hmul_16ns_16ns_16_4_max_dsp_1
-if {${::AESL::PGuard_rtl_comp_handler}} {
-	::AP::rtl_comp_handler $name BINDTYPE {op} TYPE {hmul} IMPL {maxdsp} LATENCY 3 ALLOW_PRAGMA 1
-}
-
-
-set name upconv_core_top_hmul_16ns_16ns_16_4_max_dsp_1
-if {${::AESL::PGuard_rtl_comp_handler}} {
-	::AP::rtl_comp_handler $name BINDTYPE {op} TYPE {hmul} IMPL {maxdsp} LATENCY 3 ALLOW_PRAGMA 1
-}
-
-
-set name upconv_core_top_hmul_16ns_16ns_16_4_max_dsp_1
-if {${::AESL::PGuard_rtl_comp_handler}} {
-	::AP::rtl_comp_handler $name BINDTYPE {op} TYPE {hmul} IMPL {maxdsp} LATENCY 3 ALLOW_PRAGMA 1
-}
-
-
-set name upconv_core_top_hmul_16ns_16ns_16_4_max_dsp_1
-if {${::AESL::PGuard_rtl_comp_handler}} {
-	::AP::rtl_comp_handler $name BINDTYPE {op} TYPE {hmul} IMPL {maxdsp} LATENCY 3 ALLOW_PRAGMA 1
-}
-
-
-set name upconv_core_top_hmul_16ns_16ns_16_4_max_dsp_1
-if {${::AESL::PGuard_rtl_comp_handler}} {
-	::AP::rtl_comp_handler $name BINDTYPE {op} TYPE {hmul} IMPL {maxdsp} LATENCY 3 ALLOW_PRAGMA 1
-}
-
-
-set name upconv_core_top_hmul_16ns_16ns_16_4_max_dsp_1
-if {${::AESL::PGuard_rtl_comp_handler}} {
-	::AP::rtl_comp_handler $name BINDTYPE {op} TYPE {hmul} IMPL {maxdsp} LATENCY 3 ALLOW_PRAGMA 1
 }
 
 
@@ -262,7 +52,7 @@ if {${::AESL::PGuard_rtl_comp_handler}} {
 
 
 if {${::AESL::PGuard_rtl_comp_handler}} {
-	::AP::rtl_comp_handler upconv_core_top_UpConv_Fused_Row_8_s_w_local_RAM_T2P_BRAM_2R1W BINDTYPE {storage} TYPE {ram_t2p} IMPL {bram} LATENCY 3 ALLOW_PRAGMA 1
+	::AP::rtl_comp_handler upconv_core_top_UpConv_Fused_Row_8_s_b_buf_RAM_T2P_BRAM_1R1W BINDTYPE {storage} TYPE {ram_t2p} IMPL {bram} LATENCY 2 ALLOW_PRAGMA 1
 }
 
 
@@ -277,64 +67,7 @@ if {${::AESL::PGuard_autoexp_gen}} {
 if {${::AESL::PGuard_autoexp_gen}} {
 if {[info proc ::AESL_LIB_XILADAPTER::xil_bram_gen] == "::AESL_LIB_XILADAPTER::xil_bram_gen"} {
 eval "::AESL_LIB_XILADAPTER::xil_bram_gen { \
-    id 676 \
-    name b_buf \
-    reset_level 1 \
-    sync_rst true \
-    dir I \
-    corename b_buf \
-    op interface \
-    ports { b_buf_address0 { O 5 vector } b_buf_ce0 { O 1 bit } b_buf_q0 { I 256 vector } } \
-} "
-} else {
-puts "@W \[IMPL-110\] Cannot find bus interface model in the library. Ignored generation of bus interface for 'b_buf'"
-}
-}
-
-
-# XIL_BRAM:
-if {${::AESL::PGuard_autoexp_gen}} {
-if {[info proc ::AESL_LIB_XILADAPTER::xil_bram_gen] == "::AESL_LIB_XILADAPTER::xil_bram_gen"} {
-eval "::AESL_LIB_XILADAPTER::xil_bram_gen { \
-    id 677 \
-    name g_buf \
-    reset_level 1 \
-    sync_rst true \
-    dir I \
-    corename g_buf \
-    op interface \
-    ports { g_buf_address0 { O 5 vector } g_buf_ce0 { O 1 bit } g_buf_q0 { I 256 vector } } \
-} "
-} else {
-puts "@W \[IMPL-110\] Cannot find bus interface model in the library. Ignored generation of bus interface for 'g_buf'"
-}
-}
-
-
-# XIL_BRAM:
-if {${::AESL::PGuard_autoexp_gen}} {
-if {[info proc ::AESL_LIB_XILADAPTER::xil_bram_gen] == "::AESL_LIB_XILADAPTER::xil_bram_gen"} {
-eval "::AESL_LIB_XILADAPTER::xil_bram_gen { \
-    id 678 \
-    name be_buf \
-    reset_level 1 \
-    sync_rst true \
-    dir I \
-    corename be_buf \
-    op interface \
-    ports { be_buf_address0 { O 5 vector } be_buf_ce0 { O 1 bit } be_buf_q0 { I 256 vector } } \
-} "
-} else {
-puts "@W \[IMPL-110\] Cannot find bus interface model in the library. Ignored generation of bus interface for 'be_buf'"
-}
-}
-
-
-# XIL_BRAM:
-if {${::AESL::PGuard_autoexp_gen}} {
-if {[info proc ::AESL_LIB_XILADAPTER::xil_bram_gen] == "::AESL_LIB_XILADAPTER::xil_bram_gen"} {
-eval "::AESL_LIB_XILADAPTER::xil_bram_gen { \
-    id 688 \
+    id 718 \
     name x_buf \
     reset_level 1 \
     sync_rst true \
@@ -352,7 +85,7 @@ puts "@W \[IMPL-110\] Cannot find bus interface model in the library. Ignored ge
 # Direct connection:
 if {${::AESL::PGuard_autoexp_gen}} {
 eval "cg_default_interface_gen_dc { \
-    id 674 \
+    id 704 \
     name gmem_weight \
     type other \
     dir I \
@@ -367,7 +100,7 @@ eval "cg_default_interface_gen_dc { \
 # Direct connection:
 if {${::AESL::PGuard_autoexp_gen}} {
 eval "cg_default_interface_gen_dc { \
-    id 675 \
+    id 705 \
     name W_ptr \
     type other \
     dir I \
@@ -382,7 +115,67 @@ eval "cg_default_interface_gen_dc { \
 # Direct connection:
 if {${::AESL::PGuard_autoexp_gen}} {
 eval "cg_default_interface_gen_dc { \
-    id 679 \
+    id 706 \
+    name gmem_param \
+    type other \
+    dir I \
+    reset_level 1 \
+    sync_rst true \
+    corename dc_gmem_param \
+    op interface \
+    ports { m_axi_gmem_param_0_AWVALID { O 1 bit } m_axi_gmem_param_0_AWREADY { I 1 bit } m_axi_gmem_param_0_AWADDR { O 64 vector } m_axi_gmem_param_0_AWID { O 1 vector } m_axi_gmem_param_0_AWLEN { O 32 vector } m_axi_gmem_param_0_AWSIZE { O 3 vector } m_axi_gmem_param_0_AWBURST { O 2 vector } m_axi_gmem_param_0_AWLOCK { O 2 vector } m_axi_gmem_param_0_AWCACHE { O 4 vector } m_axi_gmem_param_0_AWPROT { O 3 vector } m_axi_gmem_param_0_AWQOS { O 4 vector } m_axi_gmem_param_0_AWREGION { O 4 vector } m_axi_gmem_param_0_AWUSER { O 1 vector } m_axi_gmem_param_0_WVALID { O 1 bit } m_axi_gmem_param_0_WREADY { I 1 bit } m_axi_gmem_param_0_WDATA { O 256 vector } m_axi_gmem_param_0_WSTRB { O 32 vector } m_axi_gmem_param_0_WLAST { O 1 bit } m_axi_gmem_param_0_WID { O 1 vector } m_axi_gmem_param_0_WUSER { O 1 vector } m_axi_gmem_param_0_ARVALID { O 1 bit } m_axi_gmem_param_0_ARREADY { I 1 bit } m_axi_gmem_param_0_ARADDR { O 64 vector } m_axi_gmem_param_0_ARID { O 1 vector } m_axi_gmem_param_0_ARLEN { O 32 vector } m_axi_gmem_param_0_ARSIZE { O 3 vector } m_axi_gmem_param_0_ARBURST { O 2 vector } m_axi_gmem_param_0_ARLOCK { O 2 vector } m_axi_gmem_param_0_ARCACHE { O 4 vector } m_axi_gmem_param_0_ARPROT { O 3 vector } m_axi_gmem_param_0_ARQOS { O 4 vector } m_axi_gmem_param_0_ARREGION { O 4 vector } m_axi_gmem_param_0_ARUSER { O 1 vector } m_axi_gmem_param_0_RVALID { I 1 bit } m_axi_gmem_param_0_RREADY { O 1 bit } m_axi_gmem_param_0_RDATA { I 256 vector } m_axi_gmem_param_0_RLAST { I 1 bit } m_axi_gmem_param_0_RID { I 1 vector } m_axi_gmem_param_0_RFIFONUM { I 11 vector } m_axi_gmem_param_0_RUSER { I 1 vector } m_axi_gmem_param_0_RRESP { I 2 vector } m_axi_gmem_param_0_BVALID { I 1 bit } m_axi_gmem_param_0_BREADY { O 1 bit } m_axi_gmem_param_0_BRESP { I 2 vector } m_axi_gmem_param_0_BID { I 1 vector } m_axi_gmem_param_0_BUSER { I 1 vector } } \
+} "
+}
+
+# Direct connection:
+if {${::AESL::PGuard_autoexp_gen}} {
+eval "cg_default_interface_gen_dc { \
+    id 707 \
+    name B_ptr \
+    type other \
+    dir I \
+    reset_level 1 \
+    sync_rst true \
+    corename dc_B_ptr \
+    op interface \
+    ports { B_ptr { I 64 vector } } \
+} "
+}
+
+# Direct connection:
+if {${::AESL::PGuard_autoexp_gen}} {
+eval "cg_default_interface_gen_dc { \
+    id 708 \
+    name G_ptr \
+    type other \
+    dir I \
+    reset_level 1 \
+    sync_rst true \
+    corename dc_G_ptr \
+    op interface \
+    ports { G_ptr { I 64 vector } } \
+} "
+}
+
+# Direct connection:
+if {${::AESL::PGuard_autoexp_gen}} {
+eval "cg_default_interface_gen_dc { \
+    id 709 \
+    name BE_ptr \
+    type other \
+    dir I \
+    reset_level 1 \
+    sync_rst true \
+    corename dc_BE_ptr \
+    op interface \
+    ports { BE_ptr { I 64 vector } } \
+} "
+}
+
+# Direct connection:
+if {${::AESL::PGuard_autoexp_gen}} {
+eval "cg_default_interface_gen_dc { \
+    id 710 \
     name gmem_out \
     type other \
     dir O \
@@ -397,7 +190,7 @@ eval "cg_default_interface_gen_dc { \
 # Direct connection:
 if {${::AESL::PGuard_autoexp_gen}} {
 eval "cg_default_interface_gen_dc { \
-    id 680 \
+    id 711 \
     name Y \
     type other \
     dir I \
@@ -412,7 +205,7 @@ eval "cg_default_interface_gen_dc { \
 # Direct connection:
 if {${::AESL::PGuard_autoexp_gen}} {
 eval "cg_default_interface_gen_dc { \
-    id 681 \
+    id 712 \
     name epsilon \
     type other \
     dir I \
@@ -427,37 +220,7 @@ eval "cg_default_interface_gen_dc { \
 # Direct connection:
 if {${::AESL::PGuard_autoexp_gen}} {
 eval "cg_default_interface_gen_dc { \
-    id 682 \
-    name inv_C_OUT \
-    type other \
-    dir I \
-    reset_level 1 \
-    sync_rst true \
-    corename dc_inv_C_OUT \
-    op interface \
-    ports { inv_C_OUT { I 32 vector } } \
-} "
-}
-
-# Direct connection:
-if {${::AESL::PGuard_autoexp_gen}} {
-eval "cg_default_interface_gen_dc { \
-    id 683 \
-    name ho \
-    type other \
-    dir I \
-    reset_level 1 \
-    sync_rst true \
-    corename dc_ho \
-    op interface \
-    ports { ho { I 8 vector } } \
-} "
-}
-
-# Direct connection:
-if {${::AESL::PGuard_autoexp_gen}} {
-eval "cg_default_interface_gen_dc { \
-    id 684 \
+    id 713 \
     name H_IN \
     type other \
     dir I \
@@ -472,7 +235,7 @@ eval "cg_default_interface_gen_dc { \
 # Direct connection:
 if {${::AESL::PGuard_autoexp_gen}} {
 eval "cg_default_interface_gen_dc { \
-    id 685 \
+    id 714 \
     name W_IN \
     type other \
     dir I \
@@ -487,7 +250,7 @@ eval "cg_default_interface_gen_dc { \
 # Direct connection:
 if {${::AESL::PGuard_autoexp_gen}} {
 eval "cg_default_interface_gen_dc { \
-    id 686 \
+    id 715 \
     name C_IN \
     type other \
     dir I \
@@ -502,7 +265,7 @@ eval "cg_default_interface_gen_dc { \
 # Direct connection:
 if {${::AESL::PGuard_autoexp_gen}} {
 eval "cg_default_interface_gen_dc { \
-    id 687 \
+    id 716 \
     name C_OUT \
     type other \
     dir I \
@@ -511,6 +274,21 @@ eval "cg_default_interface_gen_dc { \
     corename dc_C_OUT \
     op interface \
     ports { C_OUT { I 9 vector } } \
+} "
+}
+
+# Direct connection:
+if {${::AESL::PGuard_autoexp_gen}} {
+eval "cg_default_interface_gen_dc { \
+    id 717 \
+    name ho \
+    type other \
+    dir I \
+    reset_level 1 \
+    sync_rst true \
+    corename dc_ho \
+    op interface \
+    ports { ho { I 8 vector } } \
 } "
 }
 

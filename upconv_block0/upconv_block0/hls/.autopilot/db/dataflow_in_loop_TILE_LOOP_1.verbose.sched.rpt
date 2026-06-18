@@ -1,0 +1,161 @@
+
+
+================================================================
+== Vitis HLS Report for 'dataflow_in_loop_TILE_LOOP_1'
+================================================================
+* Date:           Thu Jun 18 11:44:32 2026
+
+* Version:        2024.2 (Build 5238294 on Nov  8 2024)
+* Project:        upconv_block0
+* Solution:       hls (Vivado IP Flow Target)
+* Product family: zynquplus
+* Target device:  xczu7ev-ffvc1156-2-e
+
+
+================================================================
+== Performance Estimates
+================================================================
++ Timing: 
+    * Summary: 
+    +--------+---------+----------+------------+
+    |  Clock |  Target | Estimated| Uncertainty|
+    +--------+---------+----------+------------+
+    |ap_clk  |  3.33 ns|  3.357 ns|     0.90 ns|
+    +--------+---------+----------+------------+
+
++ Latency: 
+    * Summary: 
+    +---------+---------+-----------+-----------+------+------+----------+
+    |  Latency (cycles) |   Latency (absolute)  |   Interval  | Pipeline |
+    |   min   |   max   |    min    |    max    |  min |  max |   Type   |
+    +---------+---------+-----------+-----------+------+------+----------+
+    |     4341|    13329|  14.573 us|  44.745 us|  4320|  8996|  dataflow|
+    +---------+---------+-----------+-----------+------+------+----------+
+
+    + Detail: 
+        * Instance: 
+        N/A
+
+        * Loop: 
+        N/A
+
+============================================================
++ Verbose Summary: Synthesis Manager
+============================================================
+InlineROM: 1
+ExposeGlobal: 0
+============================================================
++ Verbose Summary: CDFG Model
+============================================================
+IsTopModel: 0
+ResetActiveHigh: 1
+IsCombinational: 2
+IsDatapathOnly: 0
+HasWiredReturn: 1
+HasMFsm: 0
+HasVarLatency: 1
+IsPipeline: 0
+IsRtlPipelined: 0
+IsInstanceOverlapped: 0
+IsDontTouch: 0
+HasImplIP: 0
+IsGatedGlobalClock: 0
+
+
+============================================================
++ Verbose Summary: Schedule
+============================================================
+* Number of FSM states : 4
+* Pipeline : 0
+* Dataflow Pipeline: 1
+  DF-Pipeline-0: Size = 4, States = { 1 2 3 4 }
+
+* FSM state transitions: 
+1 --> 2 
+2 --> 3 
+3 --> 4 
+4 --> 
+
+* FSM state operations: 
+
+State 1 <SV = 0> <Delay = 0.77>
+ST_1 : Operation 5 [1/1] (0.00ns)   --->   "%tile_0_read = read i6 @_ssdm_op_Read.ap_auto.i6, i6 %tile_0"   --->   Operation 5 'read' 'tile_0_read' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 6 [1/1] (0.00ns)   --->   "%W_ptr_read = read i64 @_ssdm_op_Read.ap_auto.i64, i64 %W_ptr"   --->   Operation 6 'read' 'W_ptr_read' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 7 [1/1] (0.00ns)   --->   "%ho_c = alloca i64 1"   --->   Operation 7 'alloca' 'ho_c' <Predicate = true> <Delay = 0.00> <CoreInst = "FIFO_SRL">   --->   Core 80 'FIFO_SRL' <Latency = 0> <II = 1> <Delay = 1.83> <Storage> <Opcode : 'read' 'write' 'nbread' 'nbwrite'> <Ports = 0> <Width = 5> <Depth = 3> <FIFO>
+ST_1 : Operation 8 [1/1] (0.00ns)   --->   "%wbuf = alloca i64 1" [../gen/Hls_Layers_UpConv.tpp:197]   --->   Operation 8 'alloca' 'wbuf' <Predicate = true> <Delay = 0.00> <CoreInst = "RAM_T2P_URAM">   --->   Core 99 'RAM_T2P_URAM' <Latency = 1> <II = 1> <Delay = 1.23> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 256> <Depth = 540> <RAM>
+ST_1 : Operation 9 [1/1] (0.00ns)   --->   "%wbuf_1_179 = alloca i64 1" [../gen/Hls_Layers_UpConv.tpp:197]   --->   Operation 9 'alloca' 'wbuf_1_179' <Predicate = true> <Delay = 0.00> <CoreInst = "RAM_T2P_URAM">   --->   Core 99 'RAM_T2P_URAM' <Latency = 1> <II = 1> <Delay = 1.23> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 256> <Depth = 540> <RAM>
+ST_1 : Operation 10 [1/1] (0.00ns)   --->   "%wbuf_2_180 = alloca i64 1" [../gen/Hls_Layers_UpConv.tpp:197]   --->   Operation 10 'alloca' 'wbuf_2_180' <Predicate = true> <Delay = 0.00> <CoreInst = "RAM_T2P_URAM">   --->   Core 99 'RAM_T2P_URAM' <Latency = 1> <II = 1> <Delay = 1.23> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 256> <Depth = 540> <RAM>
+ST_1 : Operation 11 [1/1] (0.00ns)   --->   "%wbuf_3_181 = alloca i64 1" [../gen/Hls_Layers_UpConv.tpp:197]   --->   Operation 11 'alloca' 'wbuf_3_181' <Predicate = true> <Delay = 0.00> <CoreInst = "RAM_T2P_URAM">   --->   Core 99 'RAM_T2P_URAM' <Latency = 1> <II = 1> <Delay = 1.23> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 256> <Depth = 540> <RAM>
+ST_1 : Operation 12 [1/1] (0.00ns)   --->   "%wbuf_3 = alloca i64 1" [../gen/Hls_Layers_UpConv.tpp:197]   --->   Operation 12 'alloca' 'wbuf_3' <Predicate = true> <Delay = 0.00> <CoreInst = "RAM_T2P_URAM">   --->   Core 99 'RAM_T2P_URAM' <Latency = 1> <II = 1> <Delay = 1.23> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 256> <Depth = 540> <RAM>
+ST_1 : Operation 13 [1/1] (0.00ns)   --->   "%wbuf_2 = alloca i64 1" [../gen/Hls_Layers_UpConv.tpp:197]   --->   Operation 13 'alloca' 'wbuf_2' <Predicate = true> <Delay = 0.00> <CoreInst = "RAM_T2P_URAM">   --->   Core 99 'RAM_T2P_URAM' <Latency = 1> <II = 1> <Delay = 1.23> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 256> <Depth = 540> <RAM>
+ST_1 : Operation 14 [1/1] (0.00ns)   --->   "%wbuf_1 = alloca i64 1" [../gen/Hls_Layers_UpConv.tpp:197]   --->   Operation 14 'alloca' 'wbuf_1' <Predicate = true> <Delay = 0.00> <CoreInst = "RAM_T2P_URAM">   --->   Core 99 'RAM_T2P_URAM' <Latency = 1> <II = 1> <Delay = 1.23> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 256> <Depth = 540> <RAM>
+ST_1 : Operation 15 [1/1] (0.00ns)   --->   "%wbuf_4 = alloca i64 1" [../gen/Hls_Layers_UpConv.tpp:197]   --->   Operation 15 'alloca' 'wbuf_4' <Predicate = true> <Delay = 0.00> <CoreInst = "RAM_T2P_URAM">   --->   Core 99 'RAM_T2P_URAM' <Latency = 1> <II = 1> <Delay = 1.23> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 256> <Depth = 540> <RAM>
+ST_1 : Operation 16 [2/2] (0.77ns)   --->   "%tile_0_c_channel = call i6 @uc_load_tile<8, 480, 60>, i256 %gmem_weight, i64 %W_ptr_read, i6 %tile_0_read, i256 %wbuf_4, i256 %wbuf_1, i256 %wbuf_2, i256 %wbuf_3, i256 %wbuf_3_181, i256 %wbuf_2_180, i256 %wbuf_1_179, i256 %wbuf" [../gen/Hls_Layers_UpConv.tpp:200]   --->   Operation 16 'call' 'tile_0_c_channel' <Predicate = true> <Delay = 0.77> <CoreInst = "FIFO_SRL">   --->   Core 80 'FIFO_SRL' <Latency = 0> <II = 1> <Delay = 1.83> <Storage> <Opcode : 'read' 'write' 'nbread' 'nbwrite'> <Ports = 0> <Width = 6> <Depth = 2> <FIFO>
+
+State 2 <SV = 1> <Delay = 1.21>
+ST_2 : Operation 17 [1/1] (0.00ns)   --->   "%ho_read = read i5 @_ssdm_op_Read.ap_auto.i5, i5 %ho"   --->   Operation 17 'read' 'ho_read' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 18 [1/1] (1.21ns)   --->   "%call_ln0 = call void @entry_proc, i5 %ho_read, i5 %ho_c"   --->   Operation 18 'call' 'call_ln0' <Predicate = true> <Delay = 1.21> <CoreType = "Generic">   --->   Generic Core
+ST_2 : Operation 19 [1/2] (0.00ns)   --->   "%tile_0_c_channel = call i6 @uc_load_tile<8, 480, 60>, i256 %gmem_weight, i64 %W_ptr_read, i6 %tile_0_read, i256 %wbuf_4, i256 %wbuf_1, i256 %wbuf_2, i256 %wbuf_3, i256 %wbuf_3_181, i256 %wbuf_2_180, i256 %wbuf_1_179, i256 %wbuf" [../gen/Hls_Layers_UpConv.tpp:200]   --->   Operation 19 'call' 'tile_0_c_channel' <Predicate = true> <Delay = 0.00> <CoreInst = "FIFO_SRL">   --->   Core 80 'FIFO_SRL' <Latency = 0> <II = 1> <Delay = 1.83> <Storage> <Opcode : 'read' 'write' 'nbread' 'nbwrite'> <Ports = 0> <Width = 6> <Depth = 2> <FIFO>
+
+State 3 <SV = 2> <Delay = 1.21>
+ST_3 : Operation 20 [2/2] (1.21ns)   --->   "%call_ln201 = call void @uc_compute_tile<8, 16, 16, 60, 32, 480, 480>, i256 %wbuf_4, i256 %wbuf_1, i256 %wbuf_2, i256 %wbuf_3, i256 %wbuf_3_181, i256 %wbuf_2_180, i256 %wbuf_1_179, i256 %wbuf, i6 %tile_0_c_channel, i5 %ho_c, i256 %x_buf, i16 %void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_2, i16 %p_ZZ16UpConv_Fused_RowILi8ELi16ELi16ELi960ELi480EEvP7ap_uintILi256EEPKS1_S4_S4_S4, i16 %void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_3, i16 %p_ZZ16UpConv_Fused_RowILi8ELi16ELi16ELi960ELi480EEvP7ap_uintILi256EEPKS1_S4_S4_S4_1, i16 %void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_4, i16 %p_ZZ16UpConv_Fused_RowILi8ELi16ELi16ELi960ELi480EEvP7ap_uintILi256EEPKS1_S4_S4_S4_2, i16 %void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_5, i16 %p_ZZ16UpConv_Fused_RowILi8ELi16ELi16ELi960ELi480EEvP7ap_uintILi256EEPKS1_S4_S4_S4_3, i16 %void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_6, i16 %p_ZZ16UpConv_Fused_RowILi8ELi16ELi16ELi960ELi480EEvP7ap_uintILi256EEPKS1_S4_S4_S4_4, i16 %void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_7, i16 %p_ZZ16UpConv_Fused_RowILi8ELi16ELi16ELi960ELi480EEvP7ap_uintILi256EEPKS1_S4_S4_S4_5, i16 %void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_8, i16 %void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u, i16 %void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_9, i16 %void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_1" [../gen/Hls_Layers_UpConv.tpp:201]   --->   Operation 20 'call' 'call_ln201' <Predicate = true> <Delay = 1.21> <CoreType = "Generic">   --->   Generic Core
+
+State 4 <SV = 3> <Delay = 0.54>
+ST_4 : Operation 21 [1/1] (0.00ns)   --->   "%empty = specchannel i32 @_ssdm_op_SpecChannel, void @ho_c_str, i32 1, void @p_str, void @p_str, i32 3, i32 0, i5 %ho_c, i5 %ho_c"   --->   Operation 21 'specchannel' 'empty' <Predicate = true> <Delay = 0.00>
+ST_4 : Operation 22 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i5 %ho_c, void @ap_fifo_str, i32 0, i32 0, void @p_str, i32 0, i32 0, void @p_str, void @p_str, void @p_str, i32 2, i32 2, i32 16, i32 16, void @p_str, void @p_str, i32 4294967295, i32 0, i32 0"   --->   Operation 22 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
+ST_4 : Operation 23 [1/1] (0.00ns)   --->   "%specdataflowpipeline_ln0 = specdataflowpipeline void @_ssdm_op_SpecDataflowPipeline, i32 4294967295, i32 0, void @empty_65"   --->   Operation 23 'specdataflowpipeline' 'specdataflowpipeline_ln0' <Predicate = true> <Delay = 0.00>
+ST_4 : Operation 24 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i256 %gmem_weight, void @empty_109, i32 0, i32 0, void @empty_65, i32 0, i32 0, void @empty_134, void @empty_67, void @empty_65, i32 16, i32 16, i32 64, i32 16, void @empty_65, void @empty_65, i32 4294967295, i32 0, i32 0"   --->   Operation 24 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
+ST_4 : Operation 25 [1/1] (0.00ns)   --->   "%specmemcore_ln198 = specmemcore void @_ssdm_op_SpecMemCore, i256 %wbuf, i64 666, i64 31, i64 18446744073709551615" [../gen/Hls_Layers_UpConv.tpp:198]   --->   Operation 25 'specmemcore' 'specmemcore_ln198' <Predicate = true> <Delay = 0.00>
+ST_4 : Operation 26 [1/1] (0.00ns)   --->   "%specmemcore_ln198 = specmemcore void @_ssdm_op_SpecMemCore, i256 %wbuf_1_179, i64 666, i64 31, i64 18446744073709551615" [../gen/Hls_Layers_UpConv.tpp:198]   --->   Operation 26 'specmemcore' 'specmemcore_ln198' <Predicate = true> <Delay = 0.00>
+ST_4 : Operation 27 [1/1] (0.00ns)   --->   "%specmemcore_ln198 = specmemcore void @_ssdm_op_SpecMemCore, i256 %wbuf_2_180, i64 666, i64 31, i64 18446744073709551615" [../gen/Hls_Layers_UpConv.tpp:198]   --->   Operation 27 'specmemcore' 'specmemcore_ln198' <Predicate = true> <Delay = 0.00>
+ST_4 : Operation 28 [1/1] (0.00ns)   --->   "%specmemcore_ln198 = specmemcore void @_ssdm_op_SpecMemCore, i256 %wbuf_3_181, i64 666, i64 31, i64 18446744073709551615" [../gen/Hls_Layers_UpConv.tpp:198]   --->   Operation 28 'specmemcore' 'specmemcore_ln198' <Predicate = true> <Delay = 0.00>
+ST_4 : Operation 29 [1/1] (0.00ns)   --->   "%specmemcore_ln198 = specmemcore void @_ssdm_op_SpecMemCore, i256 %wbuf_3, i64 666, i64 31, i64 18446744073709551615" [../gen/Hls_Layers_UpConv.tpp:198]   --->   Operation 29 'specmemcore' 'specmemcore_ln198' <Predicate = true> <Delay = 0.00>
+ST_4 : Operation 30 [1/1] (0.00ns)   --->   "%specmemcore_ln198 = specmemcore void @_ssdm_op_SpecMemCore, i256 %wbuf_2, i64 666, i64 31, i64 18446744073709551615" [../gen/Hls_Layers_UpConv.tpp:198]   --->   Operation 30 'specmemcore' 'specmemcore_ln198' <Predicate = true> <Delay = 0.00>
+ST_4 : Operation 31 [1/1] (0.00ns)   --->   "%specmemcore_ln198 = specmemcore void @_ssdm_op_SpecMemCore, i256 %wbuf_1, i64 666, i64 31, i64 18446744073709551615" [../gen/Hls_Layers_UpConv.tpp:198]   --->   Operation 31 'specmemcore' 'specmemcore_ln198' <Predicate = true> <Delay = 0.00>
+ST_4 : Operation 32 [1/1] (0.00ns)   --->   "%specmemcore_ln198 = specmemcore void @_ssdm_op_SpecMemCore, i256 %wbuf_4, i64 666, i64 31, i64 18446744073709551615" [../gen/Hls_Layers_UpConv.tpp:198]   --->   Operation 32 'specmemcore' 'specmemcore_ln198' <Predicate = true> <Delay = 0.00>
+ST_4 : Operation 33 [1/2] (0.54ns)   --->   "%call_ln201 = call void @uc_compute_tile<8, 16, 16, 60, 32, 480, 480>, i256 %wbuf_4, i256 %wbuf_1, i256 %wbuf_2, i256 %wbuf_3, i256 %wbuf_3_181, i256 %wbuf_2_180, i256 %wbuf_1_179, i256 %wbuf, i6 %tile_0_c_channel, i5 %ho_c, i256 %x_buf, i16 %void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_2, i16 %p_ZZ16UpConv_Fused_RowILi8ELi16ELi16ELi960ELi480EEvP7ap_uintILi256EEPKS1_S4_S4_S4, i16 %void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_3, i16 %p_ZZ16UpConv_Fused_RowILi8ELi16ELi16ELi960ELi480EEvP7ap_uintILi256EEPKS1_S4_S4_S4_1, i16 %void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_4, i16 %p_ZZ16UpConv_Fused_RowILi8ELi16ELi16ELi960ELi480EEvP7ap_uintILi256EEPKS1_S4_S4_S4_2, i16 %void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_5, i16 %p_ZZ16UpConv_Fused_RowILi8ELi16ELi16ELi960ELi480EEvP7ap_uintILi256EEPKS1_S4_S4_S4_3, i16 %void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_6, i16 %p_ZZ16UpConv_Fused_RowILi8ELi16ELi16ELi960ELi480EEvP7ap_uintILi256EEPKS1_S4_S4_S4_4, i16 %void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_7, i16 %p_ZZ16UpConv_Fused_RowILi8ELi16ELi16ELi960ELi480EEvP7ap_uintILi256EEPKS1_S4_S4_S4_5, i16 %void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_8, i16 %void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u, i16 %void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_9, i16 %void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_1" [../gen/Hls_Layers_UpConv.tpp:201]   --->   Operation 33 'call' 'call_ln201' <Predicate = true> <Delay = 0.54> <CoreType = "Generic">   --->   Generic Core
+ST_4 : Operation 34 [1/1] (0.00ns)   --->   "%ret_ln0 = ret"   --->   Operation 34 'ret' 'ret_ln0' <Predicate = true> <Delay = 0.00>
+
+
+============================================================
++ Verbose Summary: Timing violations
+============================================================
+Target clock period: 3.333ns, clock uncertainty: 0.900ns.
+
+ <State 1>: 0.776ns
+The critical path consists of the following:
+	wire read operation ('tile_0_read') on port 'tile_0' [23]  (0.000 ns)
+	'call' operation 6 bit ('tile_0_c_channel', ../gen/Hls_Layers_UpConv.tpp:200) to 'uc_load_tile<8, 480, 60>' [47]  (0.776 ns)
+
+ <State 2>: 1.217ns
+The critical path consists of the following:
+	wire read operation ('ho_read') on port 'ho' [22]  (0.000 ns)
+	'call' operation 0 bit ('call_ln0') to 'entry_proc' [46]  (1.217 ns)
+
+ <State 3>: 1.217ns
+The critical path consists of the following:
+	'call' operation 0 bit ('call_ln201', ../gen/Hls_Layers_UpConv.tpp:201) to 'uc_compute_tile<8, 16, 16, 60, 32, 480, 480>' [48]  (1.217 ns)
+
+ <State 4>: 0.548ns
+The critical path consists of the following:
+	'call' operation 0 bit ('call_ln201', ../gen/Hls_Layers_UpConv.tpp:201) to 'uc_compute_tile<8, 16, 16, 60, 32, 480, 480>' [48]  (0.548 ns)
+
+
+============================================================
++ Verbose Summary: Binding
+============================================================
+N/A
+* FSMD analyzer results:
+  - Output states:
+ - Input state : 
+  - Chain level:
+	State 1
+	State 2
+	State 3
+	State 4
+
+
+============================================================
++ Verbose Summary: Datapath Resource usage 
+============================================================
+N/A

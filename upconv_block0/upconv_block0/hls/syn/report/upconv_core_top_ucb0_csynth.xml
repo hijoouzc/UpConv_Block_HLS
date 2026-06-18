@@ -18,18 +18,18 @@
 <PipelineType>no</PipelineType>
 <SummaryOfTimingAnalysis>
 <unit>ns</unit>
-<EstimatedClockPeriod>2.433</EstimatedClockPeriod>
+<EstimatedClockPeriod>3.357</EstimatedClockPeriod>
 </SummaryOfTimingAnalysis>
 <SummaryOfOverallLatency>
 <unit>clock cycles</unit>
-<Best-caseLatency>8895471</Best-caseLatency>
-<Average-caseLatency>17523951</Average-caseLatency>
-<Worst-caseLatency>26152431</Worst-caseLatency>
-<Best-caseRealTimeLatency>29.649 ms</Best-caseRealTimeLatency>
-<Average-caseRealTimeLatency>58.407 ms</Average-caseRealTimeLatency>
-<Worst-caseRealTimeLatency>87.166 ms</Worst-caseRealTimeLatency>
-<Interval-min>8895472</Interval-min>
-<Interval-max>26152432</Interval-max>
+<Best-caseLatency>8872366</Best-caseLatency>
+<Average-caseLatency>9359790</Average-caseLatency>
+<Worst-caseLatency>17988270</Worst-caseLatency>
+<Best-caseRealTimeLatency>29.785 ms</Best-caseRealTimeLatency>
+<Average-caseRealTimeLatency>31.421 ms</Average-caseRealTimeLatency>
+<Worst-caseRealTimeLatency>60.387 ms</Worst-caseRealTimeLatency>
+<Interval-min>8872367</Interval-min>
+<Interval-max>17988271</Interval-max>
 </SummaryOfOverallLatency>
 <SummaryOfLoopLatency>
 <ROW_LOOP>
@@ -37,20 +37,20 @@
 <TripCount>15</TripCount>
 <Latency>
 <range>
-<min>8339505</min>
-<max>24517905</max>
+<min>8317845</min>
+<max>16864005</max>
 </range>
 </Latency>
 <AbsoluteTimeLatency>
 <range>
-<min>27795569</min>
-<max>81718176</max>
+<min>27923005</min>
+<max>56612464</max>
 </range>
 </AbsoluteTimeLatency>
 <IterationLatency>
 <range>
-<min>555967</min>
-<max>1634527</max>
+<min>554523</min>
+<max>1124267</max>
 </range>
 </IterationLatency>
 <InstanceList>
@@ -60,13 +60,13 @@
 <SummaryOfViolations>
 <IssueType>-</IssueType>
 <ViolationType>-</ViolationType>
-<SourceLocation>../gen/Hls_Layers_UpConv.tpp:394~../gen/upconv_core_top_ucb0.cpp:40</SourceLocation>
+<SourceLocation>../gen/Hls_Layers_UpConv.tpp:305~../gen/upconv_core_top_ucb0.cpp:40</SourceLocation>
 <SummaryOfLoopViolations>
 <ROW_LOOP>
 <Name>ROW_LOOP</Name>
 <IssueType>-</IssueType>
 <ViolationType>-</ViolationType>
-<SourceLocation>../gen/Hls_Layers_UpConv.tpp:402~../gen/upconv_core_top_ucb0.cpp:40</SourceLocation>
+<SourceLocation>../gen/Hls_Layers_UpConv.tpp:313~../gen/upconv_core_top_ucb0.cpp:40</SourceLocation>
 </ROW_LOOP>
 </SummaryOfLoopViolations>
 </SummaryOfViolations>
@@ -74,11 +74,11 @@
 
 <AreaEstimates>
 <Resources>
-<BRAM_18K>204</BRAM_18K>
-<DSP>670</DSP>
-<FF>73903</FF>
-<LUT>52582</LUT>
-<URAM>20</URAM>
+<BRAM_18K>84</BRAM_18K>
+<DSP>511</DSP>
+<FF>81881</FF>
+<LUT>71310</LUT>
+<URAM>52</URAM>
 </Resources>
 <AvailableResources>
 <BRAM_18K>624</BRAM_18K>

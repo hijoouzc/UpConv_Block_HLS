@@ -1,7 +1,7 @@
 {
   "0": {
     "basicblocks": 11,
-    "calls": "2 2 2 2",
+    "calls": "1 1 1 1",
     "file": "upconv_core_top_ucb0.cpp",
     "fileloc": 10,
     "instructions": 69,
@@ -12,9 +12,43 @@
     "stores": {
       "G": 2
     },
-    "total_instructions": 6205
+    "total_instructions": 7805
   },
   "1": {
+    "basicblocks": 82,
+    "calls": "4 2 3",
+    "file": "Hls_Layers_UpConv.tpp",
+    "fileloc": 153,
+    "instructions": 655,
+    "loads": {
+      "G": 19,
+      "L": 24
+    },
+    "name": "UpConv_Fused_Row<8, 16, 16, 960, 480>",
+    "stores": {
+      "G": 19,
+      "L": 8
+    },
+    "total_instructions": 1934
+  },
+  "2": {
+    "basicblocks": 54,
+    "calls": "",
+    "file": "Hls_Layers_UpConv.tpp",
+    "fileloc": 86,
+    "instructions": 1243,
+    "loads": {
+      "G": 9,
+      "L": 48
+    },
+    "name": "uc_compute_tile<8, 16, 16, 60, 32, 480, 480>",
+    "stores": {
+      "G": 8,
+      "L": 16
+    },
+    "total_instructions": 1243
+  },
+  "3": {
     "basicblocks": 1,
     "calls": "",
     "file": "sqrtfloat.cpp",
@@ -23,21 +57,19 @@
     "name": "sqrtf",
     "total_instructions": 2
   },
-  "2": {
-    "basicblocks": 143,
-    "calls": "1",
+  "4": {
+    "basicblocks": 6,
+    "calls": "",
     "file": "Hls_Layers_UpConv.tpp",
-    "fileloc": 298,
-    "instructions": 1532,
+    "fileloc": 68,
+    "instructions": 34,
     "loads": {
-      "G": 28,
-      "L": 73
+      "L": 1
     },
-    "name": "UpConv_Fused_Row<8, 16, 16, 960, 480>",
+    "name": "uc_load_tile<8, 480, 60>",
     "stores": {
-      "G": 27,
-      "L": 25
+      "L": 1
     },
-    "total_instructions": 1534
+    "total_instructions": 34
   }
 }

@@ -721,57 +721,60 @@
        ^~~
        VITIS_LOOP_169_3: 
 /home/hoinguyen/Documents/Vitis/UpConv_HLS/upconv_block0/upconv_block0/hls/.autopilot/db/upconv_core_top_ucb0.pp.0.cpp:27330:8: note: FIX-IT applied suggested code changes
-/home/hoinguyen/Documents/Vitis/UpConv_HLS/upconv_block0/upconv_block0/hls/.autopilot/db/upconv_core_top_ucb0.pp.0.cpp:30063:2: warning: Added loop label VITIS_LOOP_73_1:   [xilinx-label-all-loops]
- for (int l = 0; l < 16; l++) {
- ^~~
- VITIS_LOOP_73_1: 
-/home/hoinguyen/Documents/Vitis/UpConv_HLS/upconv_block0/upconv_block0/hls/.autopilot/db/upconv_core_top_ucb0.pp.0.cpp:30063:2: note: FIX-IT applied suggested code changes
-/home/hoinguyen/Documents/Vitis/UpConv_HLS/upconv_block0/upconv_block0/hls/.autopilot/db/upconv_core_top_ucb0.pp.0.cpp:30134:21: warning: Added loop label VITIS_LOOP_144_1:   [xilinx-label-all-loops]
+/home/hoinguyen/Documents/Vitis/UpConv_HLS/upconv_block0/upconv_block0/hls/.autopilot/db/upconv_core_top_ucb0.pp.0.cpp:30109:21: warning: Added loop label VITIS_LOOP_119_1:   [xilinx-label-all-loops]
                     for (int l = 0; l < 16; l++) {
                     ^~~
-                    VITIS_LOOP_144_1: 
-/home/hoinguyen/Documents/Vitis/UpConv_HLS/upconv_block0/upconv_block0/hls/.autopilot/db/upconv_core_top_ucb0.pp.0.cpp:30134:21: note: FIX-IT applied suggested code changes
-/home/hoinguyen/Documents/Vitis/UpConv_HLS/upconv_block0/upconv_block0/hls/.autopilot/db/upconv_core_top_ucb0.pp.0.cpp:30224:13: warning: Added loop label VITIS_LOOP_234_1:   [xilinx-label-all-loops]
-            for (int r = 0; r < 8; r++) {
-            ^~~
-            VITIS_LOOP_234_1: 
-/home/hoinguyen/Documents/Vitis/UpConv_HLS/upconv_block0/upconv_block0/hls/.autopilot/db/upconv_core_top_ucb0.pp.0.cpp:30224:13: note: FIX-IT applied suggested code changes
-/home/hoinguyen/Documents/Vitis/UpConv_HLS/upconv_block0/upconv_block0/hls/.autopilot/db/upconv_core_top_ucb0.pp.0.cpp:30257:9: warning: Added loop label VITIS_LOOP_267_1:   [xilinx-label-all-loops]
-        for (int l = 0; l < 16; l++) {
-        ^~~
-        VITIS_LOOP_267_1: 
-/home/hoinguyen/Documents/Vitis/UpConv_HLS/upconv_block0/upconv_block0/hls/.autopilot/db/upconv_core_top_ucb0.pp.0.cpp:30257:9: note: FIX-IT applied suggested code changes
-/home/hoinguyen/Documents/Vitis/UpConv_HLS/upconv_block0/upconv_block0/hls/.autopilot/db/upconv_core_top_ucb0.pp.0.cpp:30301:48: error: Invalid Directive: for current device, ram_t2p + uram is invalid combination for BIND_STORAGE's option 'type + impl' [clang-diagnostic-error]
+                    VITIS_LOOP_119_1: 
+/home/hoinguyen/Documents/Vitis/UpConv_HLS/upconv_block0/upconv_block0/hls/.autopilot/db/upconv_core_top_ucb0.pp.0.cpp:30109:21: note: FIX-IT applied suggested code changes
+/home/hoinguyen/Documents/Vitis/UpConv_HLS/upconv_block0/upconv_block0/hls/.autopilot/db/upconv_core_top_ucb0.pp.0.cpp:30114:9: error: Invalid Directive: for current device, hmul + fabric is invalid combination for bind_op [clang-diagnostic-error]
+#pragma HLS BIND_OP variable=prod op=hmul impl=fabric
+        ^
+/home/hoinguyen/Documents/Vitis/UpConv_HLS/upconv_block0/upconv_block0/hls/.autopilot/db/upconv_core_top_ucb0.pp.0.cpp:30166:48: error: Invalid Directive: for current device, ram_t2p + uram is invalid combination for BIND_STORAGE's option 'type + impl' [clang-diagnostic-error]
 #pragma HLS BIND_STORAGE variable=row_acc type=ram_t2p impl=uram
                                                ^
-/home/hoinguyen/Documents/Vitis/UpConv_HLS/upconv_block0/upconv_block0/hls/.autopilot/db/upconv_core_top_ucb0.pp.0.cpp:30309:48: error: Invalid Directive: for current device, ram_t2p + bram is invalid combination for BIND_STORAGE's option 'type + impl' [clang-diagnostic-error]
-#pragma HLS BIND_STORAGE variable=w_local type=ram_t2p impl=bram latency=2
-                                               ^
-/home/hoinguyen/Documents/Vitis/UpConv_HLS/upconv_block0/upconv_block0/hls/.autopilot/db/upconv_core_top_ucb0.pp.0.cpp:30315:46: error: Invalid Directive: for current device, ram_t2p + bram is invalid combination for BIND_STORAGE's option 'type + impl' [clang-diagnostic-error]
+/home/hoinguyen/Documents/Vitis/UpConv_HLS/upconv_block0/upconv_block0/hls/.autopilot/db/upconv_core_top_ucb0.pp.0.cpp:30177:2: warning: Added loop label VITIS_LOOP_187_1:   [xilinx-label-all-loops]
+ for (int l = 0; l < 16; l++) {
+ ^~~
+ VITIS_LOOP_187_1: 
+/home/hoinguyen/Documents/Vitis/UpConv_HLS/upconv_block0/upconv_block0/hls/.autopilot/db/upconv_core_top_ucb0.pp.0.cpp:30177:2: note: FIX-IT applied suggested code changes
+/home/hoinguyen/Documents/Vitis/UpConv_HLS/upconv_block0/upconv_block0/hls/.autopilot/db/upconv_core_top_ucb0.pp.0.cpp:30188:45: error: Invalid Directive: for current device, ram_t2p + uram is invalid combination for BIND_STORAGE's option 'type + impl' [clang-diagnostic-error]
+#pragma HLS BIND_STORAGE variable=wbuf type=ram_t2p impl=uram
+                                            ^
+/home/hoinguyen/Documents/Vitis/UpConv_HLS/upconv_block0/upconv_block0/hls/.autopilot/db/upconv_core_top_ucb0.pp.0.cpp:30195:46: error: Invalid Directive: for current device, ram_t2p + bram is invalid combination for BIND_STORAGE's option 'type + impl' [clang-diagnostic-error]
 #pragma HLS BIND_STORAGE variable=b_buf type=ram_t2p impl=bram
                                              ^
-/home/hoinguyen/Documents/Vitis/UpConv_HLS/upconv_block0/upconv_block0/hls/.autopilot/db/upconv_core_top_ucb0.pp.0.cpp:30316:46: error: Invalid Directive: for current device, ram_t2p + bram is invalid combination for BIND_STORAGE's option 'type + impl' [clang-diagnostic-error]
+/home/hoinguyen/Documents/Vitis/UpConv_HLS/upconv_block0/upconv_block0/hls/.autopilot/db/upconv_core_top_ucb0.pp.0.cpp:30196:46: error: Invalid Directive: for current device, ram_t2p + bram is invalid combination for BIND_STORAGE's option 'type + impl' [clang-diagnostic-error]
 #pragma HLS BIND_STORAGE variable=g_buf type=ram_t2p impl=bram
                                              ^
-/home/hoinguyen/Documents/Vitis/UpConv_HLS/upconv_block0/upconv_block0/hls/.autopilot/db/upconv_core_top_ucb0.pp.0.cpp:30317:47: error: Invalid Directive: for current device, ram_t2p + bram is invalid combination for BIND_STORAGE's option 'type + impl' [clang-diagnostic-error]
+/home/hoinguyen/Documents/Vitis/UpConv_HLS/upconv_block0/upconv_block0/hls/.autopilot/db/upconv_core_top_ucb0.pp.0.cpp:30197:47: error: Invalid Directive: for current device, ram_t2p + bram is invalid combination for BIND_STORAGE's option 'type + impl' [clang-diagnostic-error]
 #pragma HLS BIND_STORAGE variable=be_buf type=ram_t2p impl=bram
                                               ^
-/home/hoinguyen/Documents/Vitis/UpConv_HLS/upconv_block0/upconv_block0/hls/.autopilot/db/upconv_core_top_ucb0.pp.0.cpp:30321:49: error: Invalid Directive: for current device, ram_2p + lutram is invalid combination for BIND_STORAGE's option 'type + impl' [clang-diagnostic-error]
+/home/hoinguyen/Documents/Vitis/UpConv_HLS/upconv_block0/upconv_block0/hls/.autopilot/db/upconv_core_top_ucb0.pp.0.cpp:30209:49: error: Invalid Directive: for current device, ram_2p + lutram is invalid combination for BIND_STORAGE's option 'type + impl' [clang-diagnostic-error]
 #pragma HLS BIND_STORAGE variable=mean_buf type=ram_2p impl=lutram
                                                 ^
-/home/hoinguyen/Documents/Vitis/UpConv_HLS/upconv_block0/upconv_block0/hls/.autopilot/db/upconv_core_top_ucb0.pp.0.cpp:30322:48: error: Invalid Directive: for current device, ram_2p + lutram is invalid combination for BIND_STORAGE's option 'type + impl' [clang-diagnostic-error]
+/home/hoinguyen/Documents/Vitis/UpConv_HLS/upconv_block0/upconv_block0/hls/.autopilot/db/upconv_core_top_ucb0.pp.0.cpp:30210:48: error: Invalid Directive: for current device, ram_2p + lutram is invalid combination for BIND_STORAGE's option 'type + impl' [clang-diagnostic-error]
 #pragma HLS BIND_STORAGE variable=inv_buf type=ram_2p impl=lutram
                                                ^
-/home/hoinguyen/Documents/Vitis/UpConv_HLS/upconv_block0/upconv_block0/hls/.autopilot/db/upconv_core_top_ucb0.pp.0.cpp:30361:9: warning: Added loop label VITIS_LOOP_386_1:   [xilinx-label-all-loops]
+/home/hoinguyen/Documents/Vitis/UpConv_HLS/upconv_block0/upconv_block0/hls/.autopilot/db/upconv_core_top_ucb0.pp.0.cpp:30232:13: warning: Added loop label VITIS_LOOP_242_2:   [xilinx-label-all-loops]
+            for (int r = 0; r < 8; r++) {
+            ^~~
+            VITIS_LOOP_242_2: 
+/home/hoinguyen/Documents/Vitis/UpConv_HLS/upconv_block0/upconv_block0/hls/.autopilot/db/upconv_core_top_ucb0.pp.0.cpp:30232:13: note: FIX-IT applied suggested code changes
+/home/hoinguyen/Documents/Vitis/UpConv_HLS/upconv_block0/upconv_block0/hls/.autopilot/db/upconv_core_top_ucb0.pp.0.cpp:30253:9: warning: Added loop label VITIS_LOOP_263_3:   [xilinx-label-all-loops]
+        for (int l = 0; l < 16; l++) {
+        ^~~
+        VITIS_LOOP_263_3: 
+/home/hoinguyen/Documents/Vitis/UpConv_HLS/upconv_block0/upconv_block0/hls/.autopilot/db/upconv_core_top_ucb0.pp.0.cpp:30253:9: note: FIX-IT applied suggested code changes
+/home/hoinguyen/Documents/Vitis/UpConv_HLS/upconv_block0/upconv_block0/hls/.autopilot/db/upconv_core_top_ucb0.pp.0.cpp:30287:9: warning: Added loop label VITIS_LOOP_297_1:   [xilinx-label-all-loops]
         for (int ciw = 0; ciw < CI_W; ciw++) {
         ^~~
-        VITIS_LOOP_386_1: 
-/home/hoinguyen/Documents/Vitis/UpConv_HLS/upconv_block0/upconv_block0/hls/.autopilot/db/upconv_core_top_ucb0.pp.0.cpp:30361:9: note: FIX-IT applied suggested code changes
-/home/hoinguyen/Documents/Vitis/UpConv_HLS/upconv_block0/upconv_block0/hls/.autopilot/db/upconv_core_top_ucb0.pp.0.cpp:30372:13: warning: Added loop label VITIS_LOOP_397_2:   [xilinx-label-all-loops]
+        VITIS_LOOP_297_1: 
+/home/hoinguyen/Documents/Vitis/UpConv_HLS/upconv_block0/upconv_block0/hls/.autopilot/db/upconv_core_top_ucb0.pp.0.cpp:30287:9: note: FIX-IT applied suggested code changes
+/home/hoinguyen/Documents/Vitis/UpConv_HLS/upconv_block0/upconv_block0/hls/.autopilot/db/upconv_core_top_ucb0.pp.0.cpp:30298:13: warning: Added loop label VITIS_LOOP_308_2:   [xilinx-label-all-loops]
             for (int ciw = 0; ciw < CI_W; ciw++) {
             ^~~
-            VITIS_LOOP_397_2: 
-/home/hoinguyen/Documents/Vitis/UpConv_HLS/upconv_block0/upconv_block0/hls/.autopilot/db/upconv_core_top_ucb0.pp.0.cpp:30372:13: note: FIX-IT applied suggested code changes
-/home/hoinguyen/Documents/Vitis/UpConv_HLS/upconv_block0/upconv_block0/hls/.autopilot/db/upconv_core_top_ucb0.pp.0.cpp:30419:46: error: Invalid Directive: for current device, ram_t2p + uram is invalid combination for BIND_STORAGE's option 'type + impl' [clang-diagnostic-error]
+            VITIS_LOOP_308_2: 
+/home/hoinguyen/Documents/Vitis/UpConv_HLS/upconv_block0/upconv_block0/hls/.autopilot/db/upconv_core_top_ucb0.pp.0.cpp:30298:13: note: FIX-IT applied suggested code changes
+/home/hoinguyen/Documents/Vitis/UpConv_HLS/upconv_block0/upconv_block0/hls/.autopilot/db/upconv_core_top_ucb0.pp.0.cpp:30345:46: error: Invalid Directive: for current device, ram_t2p + uram is invalid combination for BIND_STORAGE's option 'type + impl' [clang-diagnostic-error]
 #pragma HLS BIND_STORAGE variable=x_buf type=ram_t2p impl=uram
                                              ^

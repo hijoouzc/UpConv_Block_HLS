@@ -1,7 +1,7 @@
 <profile>
 
 <section name = "Vitis HLS Report for 'UpConv_Fused_Row_8_16_16_960_480_Pipeline_RESET_ROW_ACC'" level="0">
-<item name = "Date">Wed Jun  3 13:46:36 2026
+<item name = "Date">Thu Jun 18 11:44:33 2026
 </item>
 <item name = "Version">2024.2 (Build 5238294 on Nov  8 2024)</item>
 <item name = "Project">upconv_block0</item>
@@ -78,15 +78,15 @@
 </item>
 <item name = "Expression"><table name="" hasTotal="1">
 <keys size="7">Variable Name, Operation, DSP, FF, LUT, Bitwidth P0, Bitwidth P1</keys>
-<column name="add_ln75_fu_387_p2">+, 0, 0, 18, 10, 10</column>
+<column name="add_ln189_fu_387_p2">+, 0, 0, 18, 10, 10</column>
 <column name="m_2_fu_336_p2">+, 0, 0, 17, 10, 1</column>
 <column name="rcw_1_fu_425_p2">+, 0, 0, 39, 32, 1</column>
 <column name="rw_1_fu_419_p2">+, 0, 0, 39, 32, 1</column>
-<column name="sub_ln75_fu_381_p2">-, 0, 0, 18, 10, 10</column>
-<column name="icmp_ln71_fu_330_p2">icmp, 0, 0, 17, 10, 8</column>
-<column name="icmp_ln77_fu_413_p2">icmp, 0, 0, 39, 32, 5</column>
-<column name="rcw_2_fu_431_p3">select, 0, 0, 32, 1, 1</column>
-<column name="rw_2_fu_439_p3">select, 0, 0, 32, 1, 32</column>
+<column name="sub_ln189_fu_381_p2">-, 0, 0, 18, 10, 10</column>
+<column name="icmp_ln185_fu_330_p2">icmp, 0, 0, 17, 10, 8</column>
+<column name="icmp_ln191_fu_413_p2">icmp, 0, 0, 39, 32, 5</column>
+<column name="rcw_2_fu_439_p3">select, 0, 0, 32, 1, 1</column>
+<column name="rw_2_fu_431_p3">select, 0, 0, 32, 1, 32</column>
 <column name="ap_enable_pp0">xor, 0, 0, 2, 1, 2</column>
 </table>
 </item>
@@ -95,9 +95,9 @@
 <column name="ap_done_int">9, 2, 1, 2</column>
 <column name="ap_enable_reg_pp0_iter1">9, 2, 1, 2</column>
 <column name="ap_sig_allocacmp_m_1">9, 2, 10, 20</column>
-<column name="m_fu_76">9, 2, 10, 20</column>
+<column name="m_fu_84">9, 2, 10, 20</column>
 <column name="rcw_fu_80">9, 2, 32, 64</column>
-<column name="rw_fu_84">9, 2, 32, 64</column>
+<column name="rw_fu_76">9, 2, 32, 64</column>
 </table>
 </item>
 <item name = "Register"><table name="" hasTotal="1">
@@ -105,9 +105,9 @@
 <column name="ap_CS_fsm">1, 0, 1, 0</column>
 <column name="ap_done_reg">1, 0, 1, 0</column>
 <column name="ap_enable_reg_pp0_iter1">1, 0, 1, 0</column>
-<column name="m_fu_76">10, 0, 10, 0</column>
+<column name="m_fu_84">10, 0, 10, 0</column>
 <column name="rcw_fu_80">32, 0, 32, 0</column>
-<column name="rw_fu_84">32, 0, 32, 0</column>
+<column name="rw_fu_76">32, 0, 32, 0</column>
 </table>
 </item>
 </section>

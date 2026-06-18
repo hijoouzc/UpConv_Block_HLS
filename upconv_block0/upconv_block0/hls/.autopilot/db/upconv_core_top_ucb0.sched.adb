@@ -419,7 +419,7 @@
 						<name>hi</name>
 						<fileName>../gen/Hls_Layers_UpConv.tpp</fileName>
 						<fileDirectory>/home/hoinguyen/Documents/Vitis/UpConv_HLS/upconv_block0</fileDirectory>
-						<lineNumber>394</lineNumber>
+						<lineNumber>305</lineNumber>
 						<contextFuncName>UpConv_Fused_Top&amp;lt;8, 16, 16, 960, 480&amp;gt;</contextFuncName>
 						<contextNormFuncName>UpConv_Fused_Top_8_16_16_960_480_s</contextNormFuncName>
 						<inlineStackInfo>
@@ -435,7 +435,7 @@
 											<first>../gen/Hls_Layers_UpConv.tpp</first>
 											<second>UpConv_Fused_Top&amp;lt;8, 16, 16, 960, 480&amp;gt;</second>
 										</first>
-										<second>394</second>
+										<second>305</second>
 									</item>
 									<item>
 										<first>
@@ -923,7 +923,7 @@
 						<name>trunc_ln</name>
 						<fileName>../gen/Hls_Layers_UpConv.tpp</fileName>
 						<fileDirectory>/home/hoinguyen/Documents/Vitis/UpConv_HLS/upconv_block0</fileDirectory>
-						<lineNumber>385</lineNumber>
+						<lineNumber>296</lineNumber>
 						<contextFuncName>UpConv_Fused_Top&amp;lt;8, 16, 16, 960, 480&amp;gt;</contextFuncName>
 						<contextNormFuncName>UpConv_Fused_Top_8_16_16_960_480_s</contextNormFuncName>
 						<inlineStackInfo>
@@ -939,7 +939,7 @@
 											<first>../gen/Hls_Layers_UpConv.tpp</first>
 											<second>UpConv_Fused_Top&amp;lt;8, 16, 16, 960, 480&amp;gt;</second>
 										</first>
-										<second>385</second>
+										<second>296</second>
 									</item>
 									<item>
 										<first>
@@ -986,10 +986,10 @@
 					<Obj>
 						<type>0</type>
 						<id>67</id>
-						<name>sext_ln385</name>
+						<name>sext_ln296</name>
 						<fileName>../gen/Hls_Layers_UpConv.tpp</fileName>
 						<fileDirectory>/home/hoinguyen/Documents/Vitis/UpConv_HLS/upconv_block0</fileDirectory>
-						<lineNumber>385</lineNumber>
+						<lineNumber>296</lineNumber>
 						<contextFuncName>UpConv_Fused_Top&amp;lt;8, 16, 16, 960, 480&amp;gt;</contextFuncName>
 						<contextNormFuncName>UpConv_Fused_Top_8_16_16_960_480_s</contextNormFuncName>
 						<inlineStackInfo>
@@ -1005,7 +1005,7 @@
 											<first>../gen/Hls_Layers_UpConv.tpp</first>
 											<second>UpConv_Fused_Top&amp;lt;8, 16, 16, 960, 480&amp;gt;</second>
 										</first>
-										<second>385</second>
+										<second>296</second>
 									</item>
 									<item>
 										<first>
@@ -1052,7 +1052,7 @@
 						<name>gmem_in_addr</name>
 						<fileName>../gen/Hls_Layers_UpConv.tpp</fileName>
 						<fileDirectory>/home/hoinguyen/Documents/Vitis/UpConv_HLS/upconv_block0</fileDirectory>
-						<lineNumber>385</lineNumber>
+						<lineNumber>296</lineNumber>
 						<contextFuncName>UpConv_Fused_Top&amp;lt;8, 16, 16, 960, 480&amp;gt;</contextFuncName>
 						<contextNormFuncName>UpConv_Fused_Top_8_16_16_960_480_s</contextNormFuncName>
 						<inlineStackInfo>
@@ -1068,7 +1068,7 @@
 											<first>../gen/Hls_Layers_UpConv.tpp</first>
 											<second>UpConv_Fused_Top&amp;lt;8, 16, 16, 960, 480&amp;gt;</second>
 										</first>
-										<second>385</second>
+										<second>296</second>
 									</item>
 									<item>
 										<first>
@@ -1116,7 +1116,7 @@
 						<name>empty</name>
 						<fileName>../gen/Hls_Layers_UpConv.tpp</fileName>
 						<fileDirectory>/home/hoinguyen/Documents/Vitis/UpConv_HLS/upconv_block0</fileDirectory>
-						<lineNumber>385</lineNumber>
+						<lineNumber>296</lineNumber>
 						<contextFuncName>UpConv_Fused_Top&amp;lt;8, 16, 16, 960, 480&amp;gt;</contextFuncName>
 						<contextNormFuncName>UpConv_Fused_Top_8_16_16_960_480_s</contextNormFuncName>
 						<inlineStackInfo>
@@ -1132,7 +1132,7 @@
 											<first>../gen/Hls_Layers_UpConv.tpp</first>
 											<second>UpConv_Fused_Top&amp;lt;8, 16, 16, 960, 480&amp;gt;</second>
 										</first>
-										<second>385</second>
+										<second>296</second>
 									</item>
 									<item>
 										<first>
@@ -1178,10 +1178,10 @@
 					<Obj>
 						<type>0</type>
 						<id>70</id>
-						<name>_ln385</name>
+						<name>_ln296</name>
 						<fileName>../gen/Hls_Layers_UpConv.tpp</fileName>
 						<fileDirectory>/home/hoinguyen/Documents/Vitis/UpConv_HLS/upconv_block0</fileDirectory>
-						<lineNumber>385</lineNumber>
+						<lineNumber>296</lineNumber>
 						<contextFuncName>UpConv_Fused_Top&amp;lt;8, 16, 16, 960, 480&amp;gt;</contextFuncName>
 						<contextNormFuncName>UpConv_Fused_Top_8_16_16_960_480_s</contextNormFuncName>
 						<inlineStackInfo>
@@ -1197,7 +1197,7 @@
 											<first>../gen/Hls_Layers_UpConv.tpp</first>
 											<second>UpConv_Fused_Top&amp;lt;8, 16, 16, 960, 480&amp;gt;</second>
 										</first>
-										<second>385</second>
+										<second>296</second>
 									</item>
 									<item>
 										<first>
@@ -1245,10 +1245,10 @@
 					<Obj>
 						<type>0</type>
 						<id>71</id>
-						<name>_ln391</name>
+						<name>_ln302</name>
 						<fileName>../gen/Hls_Layers_UpConv.tpp</fileName>
 						<fileDirectory>/home/hoinguyen/Documents/Vitis/UpConv_HLS/upconv_block0</fileDirectory>
-						<lineNumber>391</lineNumber>
+						<lineNumber>302</lineNumber>
 						<contextFuncName>UpConv_Fused_Top&amp;lt;8, 16, 16, 960, 480&amp;gt;</contextFuncName>
 						<contextNormFuncName>UpConv_Fused_Top_8_16_16_960_480_s</contextNormFuncName>
 						<inlineStackInfo>
@@ -1264,7 +1264,7 @@
 											<first>../gen/Hls_Layers_UpConv.tpp</first>
 											<second>UpConv_Fused_Top&amp;lt;8, 16, 16, 960, 480&amp;gt;</second>
 										</first>
-										<second>391</second>
+										<second>302</second>
 									</item>
 									<item>
 										<first>
@@ -1330,7 +1330,7 @@
 				<m_isOnCriticalPath>0</m_isOnCriticalPath>
 				<m_isLCDNode>0</m_isLCDNode>
 				<m_isStartOfPath>0</m_isStartOfPath>
-				<m_delay>2.43</m_delay>
+				<m_delay>1.53</m_delay>
 				<m_topoIndex>19</m_topoIndex>
 				<m_clusterGroupNumber>-1</m_clusterGroupNumber>
 			</item>
@@ -1339,10 +1339,10 @@
 					<Obj>
 						<type>0</type>
 						<id>72</id>
-						<name>add_ln394</name>
+						<name>add_ln305</name>
 						<fileName>../gen/Hls_Layers_UpConv.tpp</fileName>
 						<fileDirectory>/home/hoinguyen/Documents/Vitis/UpConv_HLS/upconv_block0</fileDirectory>
-						<lineNumber>394</lineNumber>
+						<lineNumber>305</lineNumber>
 						<contextFuncName>UpConv_Fused_Top&amp;lt;8, 16, 16, 960, 480&amp;gt;</contextFuncName>
 						<contextNormFuncName>UpConv_Fused_Top_8_16_16_960_480_s</contextNormFuncName>
 						<inlineStackInfo>
@@ -1358,7 +1358,7 @@
 											<first>../gen/Hls_Layers_UpConv.tpp</first>
 											<second>UpConv_Fused_Top&amp;lt;8, 16, 16, 960, 480&amp;gt;</second>
 										</first>
-										<second>394</second>
+										<second>305</second>
 									</item>
 									<item>
 										<first>
@@ -1406,7 +1406,7 @@
 						<name>trunc_ln1</name>
 						<fileName>../gen/Hls_Layers_UpConv.tpp</fileName>
 						<fileDirectory>/home/hoinguyen/Documents/Vitis/UpConv_HLS/upconv_block0</fileDirectory>
-						<lineNumber>394</lineNumber>
+						<lineNumber>305</lineNumber>
 						<contextFuncName>UpConv_Fused_Top&amp;lt;8, 16, 16, 960, 480&amp;gt;</contextFuncName>
 						<contextNormFuncName>UpConv_Fused_Top_8_16_16_960_480_s</contextNormFuncName>
 						<inlineStackInfo>
@@ -1422,7 +1422,7 @@
 											<first>../gen/Hls_Layers_UpConv.tpp</first>
 											<second>UpConv_Fused_Top&amp;lt;8, 16, 16, 960, 480&amp;gt;</second>
 										</first>
-										<second>394</second>
+										<second>305</second>
 									</item>
 									<item>
 										<first>
@@ -1512,10 +1512,10 @@
 					<Obj>
 						<type>0</type>
 						<id>75</id>
-						<name>hi_write_ln394</name>
+						<name>hi_write_ln305</name>
 						<fileName>../gen/Hls_Layers_UpConv.tpp</fileName>
 						<fileDirectory>/home/hoinguyen/Documents/Vitis/UpConv_HLS/upconv_block0</fileDirectory>
-						<lineNumber>394</lineNumber>
+						<lineNumber>305</lineNumber>
 						<contextFuncName>UpConv_Fused_Top&amp;lt;8, 16, 16, 960, 480&amp;gt;</contextFuncName>
 						<contextNormFuncName>UpConv_Fused_Top_8_16_16_960_480_s</contextNormFuncName>
 						<inlineStackInfo>
@@ -1531,7 +1531,7 @@
 											<first>../gen/Hls_Layers_UpConv.tpp</first>
 											<second>UpConv_Fused_Top&amp;lt;8, 16, 16, 960, 480&amp;gt;</second>
 										</first>
-										<second>394</second>
+										<second>305</second>
 									</item>
 									<item>
 										<first>
@@ -1576,10 +1576,10 @@
 					<Obj>
 						<type>0</type>
 						<id>76</id>
-						<name>br_ln394</name>
+						<name>br_ln305</name>
 						<fileName>../gen/Hls_Layers_UpConv.tpp</fileName>
 						<fileDirectory>/home/hoinguyen/Documents/Vitis/UpConv_HLS/upconv_block0</fileDirectory>
-						<lineNumber>394</lineNumber>
+						<lineNumber>305</lineNumber>
 						<contextFuncName>UpConv_Fused_Top&amp;lt;8, 16, 16, 960, 480&amp;gt;</contextFuncName>
 						<contextNormFuncName>UpConv_Fused_Top_8_16_16_960_480_s</contextNormFuncName>
 						<inlineStackInfo>
@@ -1595,7 +1595,7 @@
 											<first>../gen/Hls_Layers_UpConv.tpp</first>
 											<second>UpConv_Fused_Top&amp;lt;8, 16, 16, 960, 480&amp;gt;</second>
 										</first>
-										<second>394</second>
+										<second>305</second>
 									</item>
 									<item>
 										<first>
@@ -1642,7 +1642,7 @@
 						<name>hi_1</name>
 						<fileName>../gen/Hls_Layers_UpConv.tpp</fileName>
 						<fileDirectory>/home/hoinguyen/Documents/Vitis/UpConv_HLS/upconv_block0</fileDirectory>
-						<lineNumber>402</lineNumber>
+						<lineNumber>313</lineNumber>
 						<contextFuncName>UpConv_Fused_Top&amp;lt;8, 16, 16, 960, 480&amp;gt;</contextFuncName>
 						<contextNormFuncName>UpConv_Fused_Top_8_16_16_960_480_s</contextNormFuncName>
 						<inlineStackInfo>
@@ -1658,7 +1658,7 @@
 											<first>../gen/Hls_Layers_UpConv.tpp</first>
 											<second>UpConv_Fused_Top&amp;lt;8, 16, 16, 960, 480&amp;gt;</second>
 										</first>
-										<second>402</second>
+										<second>313</second>
 									</item>
 									<item>
 										<first>
@@ -1706,7 +1706,7 @@
 						<name>indvar_load</name>
 						<fileName>../gen/Hls_Layers_UpConv.tpp</fileName>
 						<fileDirectory>/home/hoinguyen/Documents/Vitis/UpConv_HLS/upconv_block0</fileDirectory>
-						<lineNumber>394</lineNumber>
+						<lineNumber>305</lineNumber>
 						<contextFuncName>UpConv_Fused_Top&amp;lt;8, 16, 16, 960, 480&amp;gt;</contextFuncName>
 						<contextNormFuncName>UpConv_Fused_Top_8_16_16_960_480_s</contextNormFuncName>
 						<inlineStackInfo>
@@ -1722,7 +1722,7 @@
 											<first>../gen/Hls_Layers_UpConv.tpp</first>
 											<second>UpConv_Fused_Top&amp;lt;8, 16, 16, 960, 480&amp;gt;</second>
 										</first>
-										<second>394</second>
+										<second>305</second>
 									</item>
 									<item>
 										<first>
@@ -1767,10 +1767,10 @@
 					<Obj>
 						<type>0</type>
 						<id>80</id>
-						<name>icmp_ln394</name>
+						<name>icmp_ln305</name>
 						<fileName>../gen/Hls_Layers_UpConv.tpp</fileName>
 						<fileDirectory>/home/hoinguyen/Documents/Vitis/UpConv_HLS/upconv_block0</fileDirectory>
-						<lineNumber>394</lineNumber>
+						<lineNumber>305</lineNumber>
 						<contextFuncName>UpConv_Fused_Top&amp;lt;8, 16, 16, 960, 480&amp;gt;</contextFuncName>
 						<contextNormFuncName>UpConv_Fused_Top_8_16_16_960_480_s</contextNormFuncName>
 						<inlineStackInfo>
@@ -1786,7 +1786,7 @@
 											<first>../gen/Hls_Layers_UpConv.tpp</first>
 											<second>UpConv_Fused_Top&amp;lt;8, 16, 16, 960, 480&amp;gt;</second>
 										</first>
-										<second>394</second>
+										<second>305</second>
 									</item>
 									<item>
 										<first>
@@ -1831,10 +1831,10 @@
 					<Obj>
 						<type>0</type>
 						<id>81</id>
-						<name>add_ln394_2</name>
+						<name>add_ln305_2</name>
 						<fileName>../gen/Hls_Layers_UpConv.tpp</fileName>
 						<fileDirectory>/home/hoinguyen/Documents/Vitis/UpConv_HLS/upconv_block0</fileDirectory>
-						<lineNumber>394</lineNumber>
+						<lineNumber>305</lineNumber>
 						<contextFuncName>UpConv_Fused_Top&amp;lt;8, 16, 16, 960, 480&amp;gt;</contextFuncName>
 						<contextNormFuncName>UpConv_Fused_Top_8_16_16_960_480_s</contextNormFuncName>
 						<inlineStackInfo>
@@ -1850,7 +1850,7 @@
 											<first>../gen/Hls_Layers_UpConv.tpp</first>
 											<second>UpConv_Fused_Top&amp;lt;8, 16, 16, 960, 480&amp;gt;</second>
 										</first>
-										<second>394</second>
+										<second>305</second>
 									</item>
 									<item>
 										<first>
@@ -1895,10 +1895,10 @@
 					<Obj>
 						<type>0</type>
 						<id>82</id>
-						<name>br_ln394</name>
+						<name>br_ln305</name>
 						<fileName>../gen/Hls_Layers_UpConv.tpp</fileName>
 						<fileDirectory>/home/hoinguyen/Documents/Vitis/UpConv_HLS/upconv_block0</fileDirectory>
-						<lineNumber>394</lineNumber>
+						<lineNumber>305</lineNumber>
 						<contextFuncName>UpConv_Fused_Top&amp;lt;8, 16, 16, 960, 480&amp;gt;</contextFuncName>
 						<contextNormFuncName>UpConv_Fused_Top_8_16_16_960_480_s</contextNormFuncName>
 						<inlineStackInfo>
@@ -1914,7 +1914,7 @@
 											<first>../gen/Hls_Layers_UpConv.tpp</first>
 											<second>UpConv_Fused_Top&amp;lt;8, 16, 16, 960, 480&amp;gt;</second>
 										</first>
-										<second>394</second>
+										<second>305</second>
 									</item>
 									<item>
 										<first>
@@ -1963,7 +1963,7 @@
 						<name>p_shl</name>
 						<fileName>../gen/Hls_Layers_UpConv.tpp</fileName>
 						<fileDirectory>/home/hoinguyen/Documents/Vitis/UpConv_HLS/upconv_block0</fileDirectory>
-						<lineNumber>395</lineNumber>
+						<lineNumber>306</lineNumber>
 						<contextFuncName>UpConv_Fused_Top&amp;lt;8, 16, 16, 960, 480&amp;gt;</contextFuncName>
 						<contextNormFuncName>UpConv_Fused_Top_8_16_16_960_480_s</contextNormFuncName>
 						<inlineStackInfo>
@@ -1979,7 +1979,7 @@
 											<first>../gen/Hls_Layers_UpConv.tpp</first>
 											<second>UpConv_Fused_Top&amp;lt;8, 16, 16, 960, 480&amp;gt;</second>
 										</first>
-										<second>395</second>
+										<second>306</second>
 									</item>
 									<item>
 										<first>
@@ -2028,7 +2028,7 @@
 						<name>tmp</name>
 						<fileName>../gen/Hls_Layers_UpConv.tpp</fileName>
 						<fileDirectory>/home/hoinguyen/Documents/Vitis/UpConv_HLS/upconv_block0</fileDirectory>
-						<lineNumber>395</lineNumber>
+						<lineNumber>306</lineNumber>
 						<contextFuncName>UpConv_Fused_Top&amp;lt;8, 16, 16, 960, 480&amp;gt;</contextFuncName>
 						<contextNormFuncName>UpConv_Fused_Top_8_16_16_960_480_s</contextNormFuncName>
 						<inlineStackInfo>
@@ -2044,7 +2044,7 @@
 											<first>../gen/Hls_Layers_UpConv.tpp</first>
 											<second>UpConv_Fused_Top&amp;lt;8, 16, 16, 960, 480&amp;gt;</second>
 										</first>
-										<second>395</second>
+										<second>306</second>
 									</item>
 									<item>
 										<first>
@@ -2090,10 +2090,10 @@
 					<Obj>
 						<type>0</type>
 						<id>88</id>
-						<name>zext_ln395</name>
+						<name>zext_ln306</name>
 						<fileName>../gen/Hls_Layers_UpConv.tpp</fileName>
 						<fileDirectory>/home/hoinguyen/Documents/Vitis/UpConv_HLS/upconv_block0</fileDirectory>
-						<lineNumber>395</lineNumber>
+						<lineNumber>306</lineNumber>
 						<contextFuncName>UpConv_Fused_Top&amp;lt;8, 16, 16, 960, 480&amp;gt;</contextFuncName>
 						<contextNormFuncName>UpConv_Fused_Top_8_16_16_960_480_s</contextNormFuncName>
 						<inlineStackInfo>
@@ -2109,7 +2109,7 @@
 											<first>../gen/Hls_Layers_UpConv.tpp</first>
 											<second>UpConv_Fused_Top&amp;lt;8, 16, 16, 960, 480&amp;gt;</second>
 										</first>
-										<second>395</second>
+										<second>306</second>
 									</item>
 									<item>
 										<first>
@@ -2153,10 +2153,10 @@
 					<Obj>
 						<type>0</type>
 						<id>89</id>
-						<name>sub_ln395</name>
+						<name>sub_ln306</name>
 						<fileName>../gen/Hls_Layers_UpConv.tpp</fileName>
 						<fileDirectory>/home/hoinguyen/Documents/Vitis/UpConv_HLS/upconv_block0</fileDirectory>
-						<lineNumber>395</lineNumber>
+						<lineNumber>306</lineNumber>
 						<contextFuncName>UpConv_Fused_Top&amp;lt;8, 16, 16, 960, 480&amp;gt;</contextFuncName>
 						<contextNormFuncName>UpConv_Fused_Top_8_16_16_960_480_s</contextNormFuncName>
 						<inlineStackInfo>
@@ -2172,7 +2172,7 @@
 											<first>../gen/Hls_Layers_UpConv.tpp</first>
 											<second>UpConv_Fused_Top&amp;lt;8, 16, 16, 960, 480&amp;gt;</second>
 										</first>
-										<second>395</second>
+										<second>306</second>
 									</item>
 									<item>
 										<first>
@@ -2217,10 +2217,10 @@
 					<Obj>
 						<type>0</type>
 						<id>90</id>
-						<name>empty_46</name>
+						<name>empty_174</name>
 						<fileName>../gen/Hls_Layers_UpConv.tpp</fileName>
 						<fileDirectory>/home/hoinguyen/Documents/Vitis/UpConv_HLS/upconv_block0</fileDirectory>
-						<lineNumber>402</lineNumber>
+						<lineNumber>313</lineNumber>
 						<contextFuncName>UpConv_Fused_Top&amp;lt;8, 16, 16, 960, 480&amp;gt;</contextFuncName>
 						<contextNormFuncName>UpConv_Fused_Top_8_16_16_960_480_s</contextNormFuncName>
 						<inlineStackInfo>
@@ -2236,7 +2236,7 @@
 											<first>../gen/Hls_Layers_UpConv.tpp</first>
 											<second>UpConv_Fused_Top&amp;lt;8, 16, 16, 960, 480&amp;gt;</second>
 										</first>
-										<second>402</second>
+										<second>313</second>
 									</item>
 									<item>
 										<first>
@@ -2281,10 +2281,10 @@
 					<Obj>
 						<type>0</type>
 						<id>91</id>
-						<name>_ln402</name>
+						<name>_ln313</name>
 						<fileName>../gen/Hls_Layers_UpConv.tpp</fileName>
 						<fileDirectory>/home/hoinguyen/Documents/Vitis/UpConv_HLS/upconv_block0</fileDirectory>
-						<lineNumber>402</lineNumber>
+						<lineNumber>313</lineNumber>
 						<contextFuncName>UpConv_Fused_Top&amp;lt;8, 16, 16, 960, 480&amp;gt;</contextFuncName>
 						<contextNormFuncName>UpConv_Fused_Top_8_16_16_960_480_s</contextNormFuncName>
 						<inlineStackInfo>
@@ -2300,7 +2300,7 @@
 											<first>../gen/Hls_Layers_UpConv.tpp</first>
 											<second>UpConv_Fused_Top&amp;lt;8, 16, 16, 960, 480&amp;gt;</second>
 										</first>
-										<second>402</second>
+										<second>313</second>
 									</item>
 									<item>
 										<first>
@@ -2353,10 +2353,10 @@
 					<Obj>
 						<type>0</type>
 						<id>92</id>
-						<name>shl_ln402</name>
+						<name>shl_ln313</name>
 						<fileName>../gen/Hls_Layers_UpConv.tpp</fileName>
 						<fileDirectory>/home/hoinguyen/Documents/Vitis/UpConv_HLS/upconv_block0</fileDirectory>
-						<lineNumber>402</lineNumber>
+						<lineNumber>313</lineNumber>
 						<contextFuncName>UpConv_Fused_Top&amp;lt;8, 16, 16, 960, 480&amp;gt;</contextFuncName>
 						<contextNormFuncName>UpConv_Fused_Top_8_16_16_960_480_s</contextNormFuncName>
 						<inlineStackInfo>
@@ -2372,7 +2372,7 @@
 											<first>../gen/Hls_Layers_UpConv.tpp</first>
 											<second>UpConv_Fused_Top&amp;lt;8, 16, 16, 960, 480&amp;gt;</second>
 										</first>
-										<second>402</second>
+										<second>313</second>
 									</item>
 									<item>
 										<first>
@@ -2409,7 +2409,7 @@
 				<m_isLCDNode>0</m_isLCDNode>
 				<m_isStartOfPath>0</m_isStartOfPath>
 				<m_delay>0.00</m_delay>
-				<m_topoIndex>35</m_topoIndex>
+				<m_topoIndex>36</m_topoIndex>
 				<m_clusterGroupNumber>-1</m_clusterGroupNumber>
 			</item>
 			<item class_id_reference="9" object_id="_44">
@@ -2417,10 +2417,10 @@
 					<Obj>
 						<type>0</type>
 						<id>93</id>
-						<name>add_ln402</name>
+						<name>add_ln313</name>
 						<fileName>../gen/Hls_Layers_UpConv.tpp</fileName>
 						<fileDirectory>/home/hoinguyen/Documents/Vitis/UpConv_HLS/upconv_block0</fileDirectory>
-						<lineNumber>402</lineNumber>
+						<lineNumber>313</lineNumber>
 						<contextFuncName>UpConv_Fused_Top&amp;lt;8, 16, 16, 960, 480&amp;gt;</contextFuncName>
 						<contextNormFuncName>UpConv_Fused_Top_8_16_16_960_480_s</contextNormFuncName>
 						<inlineStackInfo>
@@ -2436,7 +2436,7 @@
 											<first>../gen/Hls_Layers_UpConv.tpp</first>
 											<second>UpConv_Fused_Top&amp;lt;8, 16, 16, 960, 480&amp;gt;</second>
 										</first>
-										<second>402</second>
+										<second>313</second>
 									</item>
 									<item>
 										<first>
@@ -2473,7 +2473,7 @@
 				<m_isLCDNode>0</m_isLCDNode>
 				<m_isStartOfPath>0</m_isStartOfPath>
 				<m_delay>0.78</m_delay>
-				<m_topoIndex>36</m_topoIndex>
+				<m_topoIndex>37</m_topoIndex>
 				<m_clusterGroupNumber>-1</m_clusterGroupNumber>
 			</item>
 			<item class_id_reference="9" object_id="_45">
@@ -2481,10 +2481,10 @@
 					<Obj>
 						<type>0</type>
 						<id>94</id>
-						<name>_ln402</name>
+						<name>_ln313</name>
 						<fileName>../gen/Hls_Layers_UpConv.tpp</fileName>
 						<fileDirectory>/home/hoinguyen/Documents/Vitis/UpConv_HLS/upconv_block0</fileDirectory>
-						<lineNumber>402</lineNumber>
+						<lineNumber>313</lineNumber>
 						<contextFuncName>UpConv_Fused_Top&amp;lt;8, 16, 16, 960, 480&amp;gt;</contextFuncName>
 						<contextNormFuncName>UpConv_Fused_Top_8_16_16_960_480_s</contextNormFuncName>
 						<inlineStackInfo>
@@ -2500,7 +2500,7 @@
 											<first>../gen/Hls_Layers_UpConv.tpp</first>
 											<second>UpConv_Fused_Top&amp;lt;8, 16, 16, 960, 480&amp;gt;</second>
 										</first>
-										<second>402</second>
+										<second>313</second>
 									</item>
 									<item>
 										<first>
@@ -2569,8 +2569,8 @@
 				<m_isOnCriticalPath>0</m_isOnCriticalPath>
 				<m_isLCDNode>0</m_isLCDNode>
 				<m_isStartOfPath>0</m_isStartOfPath>
-				<m_delay>2.43</m_delay>
-				<m_topoIndex>37</m_topoIndex>
+				<m_delay>1.53</m_delay>
+				<m_topoIndex>38</m_topoIndex>
 				<m_clusterGroupNumber>-1</m_clusterGroupNumber>
 			</item>
 			<item class_id_reference="9" object_id="_46">
@@ -2578,10 +2578,10 @@
 					<Obj>
 						<type>0</type>
 						<id>95</id>
-						<name>_ln403</name>
+						<name>_ln314</name>
 						<fileName>../gen/Hls_Layers_UpConv.tpp</fileName>
 						<fileDirectory>/home/hoinguyen/Documents/Vitis/UpConv_HLS/upconv_block0</fileDirectory>
-						<lineNumber>403</lineNumber>
+						<lineNumber>314</lineNumber>
 						<contextFuncName>UpConv_Fused_Top&amp;lt;8, 16, 16, 960, 480&amp;gt;</contextFuncName>
 						<contextNormFuncName>UpConv_Fused_Top_8_16_16_960_480_s</contextNormFuncName>
 						<inlineStackInfo>
@@ -2597,7 +2597,7 @@
 											<first>../gen/Hls_Layers_UpConv.tpp</first>
 											<second>UpConv_Fused_Top&amp;lt;8, 16, 16, 960, 480&amp;gt;</second>
 										</first>
-										<second>403</second>
+										<second>314</second>
 									</item>
 									<item>
 										<first>
@@ -2667,8 +2667,8 @@
 				<m_isOnCriticalPath>0</m_isOnCriticalPath>
 				<m_isLCDNode>0</m_isLCDNode>
 				<m_isStartOfPath>0</m_isStartOfPath>
-				<m_delay>2.43</m_delay>
-				<m_topoIndex>38</m_topoIndex>
+				<m_delay>1.53</m_delay>
+				<m_topoIndex>39</m_topoIndex>
 				<m_clusterGroupNumber>-1</m_clusterGroupNumber>
 			</item>
 			<item class_id_reference="9" object_id="_47">
@@ -2676,10 +2676,10 @@
 					<Obj>
 						<type>0</type>
 						<id>96</id>
-						<name>add_ln394_1</name>
+						<name>add_ln305_1</name>
 						<fileName>../gen/Hls_Layers_UpConv.tpp</fileName>
 						<fileDirectory>/home/hoinguyen/Documents/Vitis/UpConv_HLS/upconv_block0</fileDirectory>
-						<lineNumber>394</lineNumber>
+						<lineNumber>305</lineNumber>
 						<contextFuncName>UpConv_Fused_Top&amp;lt;8, 16, 16, 960, 480&amp;gt;</contextFuncName>
 						<contextNormFuncName>UpConv_Fused_Top_8_16_16_960_480_s</contextNormFuncName>
 						<inlineStackInfo>
@@ -2695,7 +2695,7 @@
 											<first>../gen/Hls_Layers_UpConv.tpp</first>
 											<second>UpConv_Fused_Top&amp;lt;8, 16, 16, 960, 480&amp;gt;</second>
 										</first>
-										<second>394</second>
+										<second>305</second>
 									</item>
 									<item>
 										<first>
@@ -2740,10 +2740,10 @@
 					<Obj>
 						<type>0</type>
 						<id>97</id>
-						<name>indvar_write_ln394</name>
+						<name>indvar_write_ln305</name>
 						<fileName>../gen/Hls_Layers_UpConv.tpp</fileName>
 						<fileDirectory>/home/hoinguyen/Documents/Vitis/UpConv_HLS/upconv_block0</fileDirectory>
-						<lineNumber>394</lineNumber>
+						<lineNumber>305</lineNumber>
 						<contextFuncName>UpConv_Fused_Top&amp;lt;8, 16, 16, 960, 480&amp;gt;</contextFuncName>
 						<contextNormFuncName>UpConv_Fused_Top_8_16_16_960_480_s</contextNormFuncName>
 						<inlineStackInfo>
@@ -2759,7 +2759,7 @@
 											<first>../gen/Hls_Layers_UpConv.tpp</first>
 											<second>UpConv_Fused_Top&amp;lt;8, 16, 16, 960, 480&amp;gt;</second>
 										</first>
-										<second>394</second>
+										<second>305</second>
 									</item>
 									<item>
 										<first>
@@ -2806,10 +2806,10 @@
 					<Obj>
 						<type>0</type>
 						<id>98</id>
-						<name>hi_write_ln394</name>
+						<name>hi_write_ln305</name>
 						<fileName>../gen/Hls_Layers_UpConv.tpp</fileName>
 						<fileDirectory>/home/hoinguyen/Documents/Vitis/UpConv_HLS/upconv_block0</fileDirectory>
-						<lineNumber>394</lineNumber>
+						<lineNumber>305</lineNumber>
 						<contextFuncName>UpConv_Fused_Top&amp;lt;8, 16, 16, 960, 480&amp;gt;</contextFuncName>
 						<contextNormFuncName>UpConv_Fused_Top_8_16_16_960_480_s</contextNormFuncName>
 						<inlineStackInfo>
@@ -2825,7 +2825,7 @@
 											<first>../gen/Hls_Layers_UpConv.tpp</first>
 											<second>UpConv_Fused_Top&amp;lt;8, 16, 16, 960, 480&amp;gt;</second>
 										</first>
-										<second>394</second>
+										<second>305</second>
 									</item>
 									<item>
 										<first>
@@ -2872,10 +2872,10 @@
 					<Obj>
 						<type>0</type>
 						<id>99</id>
-						<name>br_ln394</name>
+						<name>br_ln305</name>
 						<fileName>../gen/Hls_Layers_UpConv.tpp</fileName>
 						<fileDirectory>/home/hoinguyen/Documents/Vitis/UpConv_HLS/upconv_block0</fileDirectory>
-						<lineNumber>394</lineNumber>
+						<lineNumber>305</lineNumber>
 						<contextFuncName>UpConv_Fused_Top&amp;lt;8, 16, 16, 960, 480&amp;gt;</contextFuncName>
 						<contextNormFuncName>UpConv_Fused_Top_8_16_16_960_480_s</contextNormFuncName>
 						<inlineStackInfo>
@@ -2891,7 +2891,7 @@
 											<first>../gen/Hls_Layers_UpConv.tpp</first>
 											<second>UpConv_Fused_Top&amp;lt;8, 16, 16, 960, 480&amp;gt;</second>
 										</first>
-										<second>394</second>
+										<second>305</second>
 									</item>
 									<item>
 										<first>
@@ -2927,7 +2927,7 @@
 				<m_isLCDNode>0</m_isLCDNode>
 				<m_isStartOfPath>0</m_isStartOfPath>
 				<m_delay>0.00</m_delay>
-				<m_topoIndex>39</m_topoIndex>
+				<m_topoIndex>40</m_topoIndex>
 				<m_clusterGroupNumber>-1</m_clusterGroupNumber>
 			</item>
 			<item class_id_reference="9" object_id="_51">
@@ -2935,10 +2935,10 @@
 					<Obj>
 						<type>0</type>
 						<id>101</id>
-						<name>_ln407</name>
+						<name>_ln318</name>
 						<fileName>../gen/Hls_Layers_UpConv.tpp</fileName>
 						<fileDirectory>/home/hoinguyen/Documents/Vitis/UpConv_HLS/upconv_block0</fileDirectory>
-						<lineNumber>407</lineNumber>
+						<lineNumber>318</lineNumber>
 						<contextFuncName>UpConv_Fused_Top&amp;lt;8, 16, 16, 960, 480&amp;gt;</contextFuncName>
 						<contextNormFuncName>UpConv_Fused_Top_8_16_16_960_480_s</contextNormFuncName>
 						<inlineStackInfo>
@@ -2954,7 +2954,7 @@
 											<first>../gen/Hls_Layers_UpConv.tpp</first>
 											<second>UpConv_Fused_Top&amp;lt;8, 16, 16, 960, 480&amp;gt;</second>
 										</first>
-										<second>407</second>
+										<second>318</second>
 									</item>
 									<item>
 										<first>
@@ -3021,8 +3021,8 @@
 				<m_isOnCriticalPath>0</m_isOnCriticalPath>
 				<m_isLCDNode>0</m_isLCDNode>
 				<m_isStartOfPath>0</m_isStartOfPath>
-				<m_delay>2.43</m_delay>
-				<m_topoIndex>40</m_topoIndex>
+				<m_delay>1.53</m_delay>
+				<m_topoIndex>35</m_topoIndex>
 				<m_clusterGroupNumber>-1</m_clusterGroupNumber>
 			</item>
 			<item class_id_reference="9" object_id="_52">
@@ -3213,7 +3213,7 @@
 					<Obj>
 						<type>2</type>
 						<id>138</id>
-						<name>upconv_core_top_ucb0_Pipeline_LOAD_ROW0_VITIS_LOOP_386_1</name>
+						<name>upconv_core_top_ucb0_Pipeline_LOAD_ROW0_VITIS_LOOP_297_1</name>
 						<fileName></fileName>
 						<fileDirectory></fileDirectory>
 						<lineNumber>0</lineNumber>
@@ -3237,7 +3237,7 @@
 					<bitwidth>0</bitwidth>
 				</Value>
 				<const_type>6</const_type>
-				<content>&lt;constant:upconv_core_top_ucb0_Pipeline_LOAD_ROW0_VITIS_LOOP_386_1&gt;</content>
+				<content>&lt;constant:upconv_core_top_ucb0_Pipeline_LOAD_ROW0_VITIS_LOOP_297_1&gt;</content>
 			</item>
 			<item class_id_reference="16" object_id="_58">
 				<Value>
@@ -3554,7 +3554,7 @@
 					<Obj>
 						<type>2</type>
 						<id>196</id>
-						<name>upconv_core_top_ucb0_Pipeline_LOAD_ROW_VITIS_LOOP_397_2</name>
+						<name>upconv_core_top_ucb0_Pipeline_LOAD_ROW_VITIS_LOOP_308_2</name>
 						<fileName></fileName>
 						<fileDirectory></fileDirectory>
 						<lineNumber>0</lineNumber>
@@ -3578,7 +3578,7 @@
 					<bitwidth>0</bitwidth>
 				</Value>
 				<const_type>6</const_type>
-				<content>&lt;constant:upconv_core_top_ucb0_Pipeline_LOAD_ROW_VITIS_LOOP_397_2&gt;</content>
+				<content>&lt;constant:upconv_core_top_ucb0_Pipeline_LOAD_ROW_VITIS_LOOP_308_2&gt;</content>
 			</item>
 			<item class_id_reference="16" object_id="_69">
 				<Value>
@@ -4217,14 +4217,14 @@
 			<item class_id_reference="20" object_id="_136">
 				<id>200</id>
 				<edge_type>1</edge_type>
-				<source_obj>89</source_obj>
+				<source_obj>73</source_obj>
 				<sink_obj>91</sink_obj>
 				<is_back_edge>0</is_back_edge>
 			</item>
 			<item class_id_reference="20" object_id="_137">
 				<id>201</id>
 				<edge_type>1</edge_type>
-				<source_obj>73</source_obj>
+				<source_obj>89</source_obj>
 				<sink_obj>91</sink_obj>
 				<is_back_edge>0</is_back_edge>
 			</item>
@@ -5324,8 +5324,8 @@
 			<mDepth>-1</mDepth>
 			<mMinTripCount>-1</mMinTripCount>
 			<mMaxTripCount>-1</mMaxTripCount>
-			<mMinLatency>8895471</mMinLatency>
-			<mMaxLatency>26152431</mMaxLatency>
+			<mMinLatency>8872366</mMinLatency>
+			<mMaxLatency>17988270</mMaxLatency>
 			<mIsDfPipe>0</mIsDfPipe>
 			<mDfPipe class_id="-1"></mDfPipe>
 		</item>
@@ -5347,8 +5347,8 @@
 			<mDepth>-1</mDepth>
 			<mMinTripCount>-1</mMinTripCount>
 			<mMaxTripCount>-1</mMaxTripCount>
-			<mMinLatency>278469</mMinLatency>
-			<mMaxLatency>817749</mMaxLatency>
+			<mMinLatency>277747</mMinLatency>
+			<mMaxLatency>562619</mMaxLatency>
 			<mIsDfPipe>0</mIsDfPipe>
 			<mDfPipe class_id="-1"></mDfPipe>
 		</item>
@@ -5371,8 +5371,8 @@
 			<mDepth>-1</mDepth>
 			<mMinTripCount>15</mMinTripCount>
 			<mMaxTripCount>15</mMaxTripCount>
-			<mMinLatency>8339505</mMinLatency>
-			<mMaxLatency>24517905</mMaxLatency>
+			<mMinLatency>8317845</mMinLatency>
+			<mMaxLatency>16864005</mMaxLatency>
 			<mIsDfPipe>0</mIsDfPipe>
 			<mDfPipe class_id="-1"></mDfPipe>
 		</item>
@@ -5394,8 +5394,8 @@
 			<mDepth>-1</mDepth>
 			<mMinTripCount>-1</mMinTripCount>
 			<mMaxTripCount>-1</mMaxTripCount>
-			<mMinLatency>277495</mMinLatency>
-			<mMaxLatency>816775</mMaxLatency>
+			<mMinLatency>276773</mMinLatency>
+			<mMaxLatency>561645</mMaxLatency>
 			<mIsDfPipe>0</mIsDfPipe>
 			<mDfPipe class_id="-1"></mDfPipe>
 		</item>
@@ -5625,14 +5625,14 @@
 		<item>
 			<first>92</first>
 			<second>
-				<first>14</first>
+				<first>15</first>
 				<second>0</second>
 			</second>
 		</item>
 		<item>
 			<first>93</first>
 			<second>
-				<first>14</first>
+				<first>15</first>
 				<second>0</second>
 			</second>
 		</item>
@@ -5681,14 +5681,14 @@
 		<item>
 			<first>101</first>
 			<second>
-				<first>19</first>
+				<first>13</first>
 				<second>1</second>
 			</second>
 		</item>
 		<item>
 			<first>102</first>
 			<second>
-				<first>20</first>
+				<first>19</first>
 				<second>0</second>
 			</second>
 		</item>
@@ -5720,8 +5720,8 @@
 		<item>
 			<first>103</first>
 			<second>
-				<first>14</first>
-				<second>15</second>
+				<first>13</first>
+				<second>14</second>
 			</second>
 		</item>
 	</bblk_ent_exit>

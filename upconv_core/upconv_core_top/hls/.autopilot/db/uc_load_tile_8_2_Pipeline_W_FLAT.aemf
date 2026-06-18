@@ -1,0 +1,1213 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<cdfg:DBCdfg xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:cdfg="http://www.autoesl.com/DBCdfg" timeStamp="1781756483083">
+  <ports id="1" name="mul3_i" type="PortType" coreId="4294967295" bitwidth="10">
+    <dataOutputObjs>read</dataOutputObjs>
+  </ports>
+  <ports id="2" name="CI_WORDS_cast4_i" type="PortType" coreId="4294967295" bitwidth="6">
+    <dataOutputObjs>read</dataOutputObjs>
+  </ports>
+  <ports id="3" name="gmem_weight" type="PortType" coreId="4294967295" bitwidth="256" iftype="IfTypeFifo">
+    <dataOutputObjs>getelementptr</dataOutputObjs>
+  </ports>
+  <ports id="4" name="sext_ln83" type="PortType" coreId="4294967295" bitwidth="59">
+    <dataOutputObjs>read</dataOutputObjs>
+  </ports>
+  <ports id="5" name="wbuf_i" type="PortType" coreName="RAM_T2P_URAM" coreId="4294967295" bitwidth="256" direction="DirOut" iftype="IfTypeRegister" arraysize="540">
+    <dataInputObjs>getelementptr</dataInputObjs>
+  </ports>
+  <ports id="6" name="wbuf_1_i_164" type="PortType" coreName="RAM_T2P_URAM" coreId="4294967295" bitwidth="256" direction="DirOut" iftype="IfTypeRegister" arraysize="540">
+    <dataInputObjs>getelementptr</dataInputObjs>
+  </ports>
+  <ports id="7" name="wbuf_2_i_163" type="PortType" coreName="RAM_T2P_URAM" coreId="4294967295" bitwidth="256" direction="DirOut" iftype="IfTypeRegister" arraysize="540">
+    <dataInputObjs>getelementptr</dataInputObjs>
+  </ports>
+  <ports id="8" name="wbuf_3_i_162" type="PortType" coreName="RAM_T2P_URAM" coreId="4294967295" bitwidth="256" direction="DirOut" iftype="IfTypeRegister" arraysize="540">
+    <dataInputObjs>getelementptr</dataInputObjs>
+  </ports>
+  <ports id="9" name="wbuf_3_i" type="PortType" coreName="RAM_T2P_URAM" coreId="4294967295" bitwidth="256" direction="DirOut" iftype="IfTypeRegister" arraysize="540">
+    <dataInputObjs>getelementptr</dataInputObjs>
+  </ports>
+  <ports id="10" name="wbuf_2_i" type="PortType" coreName="RAM_T2P_URAM" coreId="4294967295" bitwidth="256" direction="DirOut" iftype="IfTypeRegister" arraysize="540">
+    <dataInputObjs>getelementptr</dataInputObjs>
+  </ports>
+  <ports id="11" name="wbuf_1_i" type="PortType" coreName="RAM_T2P_URAM" coreId="4294967295" bitwidth="256" direction="DirOut" iftype="IfTypeRegister" arraysize="540">
+    <dataInputObjs>getelementptr</dataInputObjs>
+  </ports>
+  <ports id="12" name="wbuf_4_i" type="PortType" coreName="RAM_T2P_URAM" coreId="4294967295" bitwidth="256" direction="DirOut" iftype="IfTypeRegister" arraysize="540">
+    <dataInputObjs>getelementptr</dataInputObjs>
+  </ports>
+  <ports id="13" name="tc" type="PortType" coreId="4294967295" bitwidth="3">
+    <dataOutputObjs>read</dataOutputObjs>
+  </ports>
+  <edges id="112" source_obj="//@ports.12" sink_obj="//@blocks.0/@node_objs.3"/>
+  <edges id="115" source_obj="//@ports.3" sink_obj="//@blocks.0/@node_objs.4"/>
+  <edges id="118" source_obj="//@ports.1" sink_obj="//@blocks.0/@node_objs.5"/>
+  <edges id="121" source_obj="//@ports.0" sink_obj="//@blocks.0/@node_objs.6"/>
+  <edges id="122" source_obj="//@blocks.0/@node_objs.4" sink_obj="//@blocks.0/@node_objs.7"/>
+  <edges id="123" source_obj="//@blocks.0/@node_objs.5" sink_obj="//@blocks.0/@node_objs.8"/>
+  <edges id="126" source_obj="//@blocks.0/@node_objs.2" sink_obj="//@blocks.0/@node_objs.9"/>
+  <edges id="129" source_obj="//@blocks.0/@node_objs.1" sink_obj="//@blocks.0/@node_objs.10"/>
+  <edges id="131" source_obj="//@blocks.0/@node_objs.0" sink_obj="//@blocks.0/@node_objs.11"/>
+  <edges id="132" edge_type="CtrlEdge" source_obj="//@regions.0/@basic_blocks.0" sink_obj="//@blocks.0/@node_objs.12"/>
+  <edges id="133" source_obj="//@blocks.0/@node_objs.2" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.0"/>
+  <edges id="134" source_obj="//@regions.0/@basic_blocks.0/@node_objs.0" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.1"/>
+  <edges id="135" source_obj="//@blocks.0/@node_objs.6" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.1"/>
+  <edges id="136" source_obj="//@regions.0/@basic_blocks.0/@node_objs.0" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.2"/>
+  <edges id="139" source_obj="//@regions.0/@basic_blocks.0/@node_objs.1" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.3"/>
+  <edges id="140" edge_type="CtrlEdge" source_obj="//@regions.0/@basic_blocks.1" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.3"/>
+  <edges id="141" edge_type="CtrlEdge" source_obj="//@blocks.1" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.3"/>
+  <edges id="142" source_obj="//@blocks.0/@node_objs.0" sink_obj="//@regions.0/@basic_blocks.10/@node_objs.0"/>
+  <edges id="143" source_obj="//@blocks.0/@node_objs.1" sink_obj="//@regions.0/@basic_blocks.10/@node_objs.1"/>
+  <edges id="144" source_obj="//@regions.0/@basic_blocks.10/@node_objs.1" sink_obj="//@regions.0/@basic_blocks.10/@node_objs.2"/>
+  <edges id="146" source_obj="//@regions.0/@basic_blocks.10/@node_objs.2" sink_obj="//@regions.0/@basic_blocks.10/@node_objs.3"/>
+  <edges id="147" source_obj="//@blocks.0/@node_objs.8" sink_obj="//@regions.0/@basic_blocks.10/@node_objs.3"/>
+  <edges id="148" source_obj="//@regions.0/@basic_blocks.10/@node_objs.3" sink_obj="//@regions.0/@basic_blocks.10/@node_objs.4"/>
+  <edges id="151" source_obj="//@regions.0/@basic_blocks.10/@node_objs.0" sink_obj="//@regions.0/@basic_blocks.10/@node_objs.5"/>
+  <edges id="153" source_obj="//@regions.0/@basic_blocks.10/@node_objs.4" sink_obj="//@regions.0/@basic_blocks.10/@node_objs.6"/>
+  <edges id="154" source_obj="//@regions.0/@basic_blocks.10/@node_objs.5" sink_obj="//@regions.0/@basic_blocks.10/@node_objs.6"/>
+  <edges id="155" source_obj="//@regions.0/@basic_blocks.10/@node_objs.0" sink_obj="//@regions.0/@basic_blocks.10/@node_objs.6"/>
+  <edges id="156" source_obj="//@regions.0/@basic_blocks.10/@node_objs.4" sink_obj="//@regions.0/@basic_blocks.10/@node_objs.7"/>
+  <edges id="158" source_obj="//@regions.0/@basic_blocks.10/@node_objs.2" sink_obj="//@regions.0/@basic_blocks.10/@node_objs.7"/>
+  <edges id="159" source_obj="//@regions.0/@basic_blocks.0/@node_objs.2" sink_obj="//@regions.0/@basic_blocks.10/@node_objs.8"/>
+  <edges id="160" source_obj="//@blocks.0/@node_objs.2" sink_obj="//@regions.0/@basic_blocks.10/@node_objs.8"/>
+  <edges id="161" source_obj="//@regions.0/@basic_blocks.10/@node_objs.7" sink_obj="//@regions.0/@basic_blocks.10/@node_objs.9"/>
+  <edges id="162" source_obj="//@blocks.0/@node_objs.1" sink_obj="//@regions.0/@basic_blocks.10/@node_objs.9"/>
+  <edges id="163" source_obj="//@regions.0/@basic_blocks.10/@node_objs.6" sink_obj="//@regions.0/@basic_blocks.10/@node_objs.10"/>
+  <edges id="164" source_obj="//@blocks.0/@node_objs.0" sink_obj="//@regions.0/@basic_blocks.10/@node_objs.10"/>
+  <edges id="165" edge_type="CtrlEdge" source_obj="//@regions.0/@basic_blocks.0" sink_obj="//@regions.0/@basic_blocks.10/@node_objs.11"/>
+  <edges id="166" source_obj="//@regions.0/@basic_blocks.1/@node_objs.19" sink_obj="//@regions.0/@basic_blocks.8/@node_objs.0"/>
+  <edges id="167" source_obj="//@regions.0/@basic_blocks.1/@node_objs.11" sink_obj="//@regions.0/@basic_blocks.8/@node_objs.0"/>
+  <edges id="168" edge_type="CtrlEdge" source_obj="//@regions.0/@basic_blocks.10" sink_obj="//@regions.0/@basic_blocks.8/@node_objs.1"/>
+  <edges id="169" source_obj="//@blocks.0/@node_objs.0" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.0"/>
+  <edges id="170" source_obj="//@blocks.0/@node_objs.1" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.1"/>
+  <edges id="171" source_obj="//@ports.2" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.2"/>
+  <edges id="172" source_obj="//@blocks.0/@node_objs.7" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.2"/>
+  <edges id="173" source_obj="//@regions.0/@basic_blocks.1/@node_objs.1" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.3"/>
+  <edges id="174" source_obj="//@regions.0/@basic_blocks.1/@node_objs.0" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.4"/>
+  <edges id="177" source_obj="//@regions.0/@basic_blocks.1/@node_objs.4" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.5"/>
+  <edges id="180" source_obj="//@regions.0/@basic_blocks.1/@node_objs.0" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.6"/>
+  <edges id="183" source_obj="//@regions.0/@basic_blocks.1/@node_objs.6" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.7"/>
+  <edges id="186" source_obj="//@regions.0/@basic_blocks.1/@node_objs.5" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.8"/>
+  <edges id="187" source_obj="//@regions.0/@basic_blocks.1/@node_objs.7" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.8"/>
+  <edges id="188" source_obj="//@regions.0/@basic_blocks.1/@node_objs.8" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.9"/>
+  <edges id="189" source_obj="//@regions.0/@basic_blocks.1/@node_objs.3" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.9"/>
+  <edges id="190" source_obj="//@regions.0/@basic_blocks.1/@node_objs.9" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.10"/>
+  <edges id="191" source_obj="//@regions.0/@basic_blocks.1/@node_objs.11" sink_obj="//@ports.11"/>
+  <edges id="194" source_obj="//@regions.0/@basic_blocks.1/@node_objs.10" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.11"/>
+  <edges id="195" source_obj="//@regions.0/@basic_blocks.1/@node_objs.12" sink_obj="//@ports.10"/>
+  <edges id="197" source_obj="//@regions.0/@basic_blocks.1/@node_objs.10" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.12"/>
+  <edges id="198" source_obj="//@regions.0/@basic_blocks.1/@node_objs.13" sink_obj="//@ports.9"/>
+  <edges id="200" source_obj="//@regions.0/@basic_blocks.1/@node_objs.10" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.13"/>
+  <edges id="201" source_obj="//@regions.0/@basic_blocks.1/@node_objs.14" sink_obj="//@ports.8"/>
+  <edges id="203" source_obj="//@regions.0/@basic_blocks.1/@node_objs.10" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.14"/>
+  <edges id="204" source_obj="//@regions.0/@basic_blocks.1/@node_objs.15" sink_obj="//@ports.7"/>
+  <edges id="206" source_obj="//@regions.0/@basic_blocks.1/@node_objs.10" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.15"/>
+  <edges id="207" source_obj="//@regions.0/@basic_blocks.1/@node_objs.16" sink_obj="//@ports.6"/>
+  <edges id="209" source_obj="//@regions.0/@basic_blocks.1/@node_objs.10" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.16"/>
+  <edges id="210" source_obj="//@regions.0/@basic_blocks.1/@node_objs.17" sink_obj="//@ports.5"/>
+  <edges id="212" source_obj="//@regions.0/@basic_blocks.1/@node_objs.10" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.17"/>
+  <edges id="213" source_obj="//@regions.0/@basic_blocks.1/@node_objs.18" sink_obj="//@ports.4"/>
+  <edges id="215" source_obj="//@regions.0/@basic_blocks.1/@node_objs.10" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.18"/>
+  <edges id="218" source_obj="//@regions.0/@basic_blocks.1/@node_objs.2" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.19"/>
+  <edges id="219" source_obj="//@blocks.0/@node_objs.3" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.20"/>
+  <edges id="220" edge_type="CtrlEdge" source_obj="//@regions.0/@basic_blocks.9" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.20"/>
+  <edges id="223" edge_type="CtrlEdge" source_obj="//@regions.0/@basic_blocks.8" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.20"/>
+  <edges id="226" edge_type="CtrlEdge" source_obj="//@regions.0/@basic_blocks.7" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.20"/>
+  <edges id="229" edge_type="CtrlEdge" source_obj="//@regions.0/@basic_blocks.6" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.20"/>
+  <edges id="232" edge_type="CtrlEdge" source_obj="//@regions.0/@basic_blocks.5" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.20"/>
+  <edges id="235" edge_type="CtrlEdge" source_obj="//@regions.0/@basic_blocks.4" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.20"/>
+  <edges id="238" edge_type="CtrlEdge" source_obj="//@regions.0/@basic_blocks.3" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.20"/>
+  <edges id="241" edge_type="CtrlEdge" source_obj="//@regions.0/@basic_blocks.2" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.20"/>
+  <edges id="242" source_obj="//@regions.0/@basic_blocks.1/@node_objs.19" sink_obj="//@regions.0/@basic_blocks.7/@node_objs.0"/>
+  <edges id="243" source_obj="//@regions.0/@basic_blocks.1/@node_objs.12" sink_obj="//@regions.0/@basic_blocks.7/@node_objs.0"/>
+  <edges id="244" edge_type="CtrlEdge" source_obj="//@regions.0/@basic_blocks.10" sink_obj="//@regions.0/@basic_blocks.7/@node_objs.1"/>
+  <edges id="245" source_obj="//@regions.0/@basic_blocks.1/@node_objs.19" sink_obj="//@regions.0/@basic_blocks.6/@node_objs.0"/>
+  <edges id="246" source_obj="//@regions.0/@basic_blocks.1/@node_objs.13" sink_obj="//@regions.0/@basic_blocks.6/@node_objs.0"/>
+  <edges id="247" edge_type="CtrlEdge" source_obj="//@regions.0/@basic_blocks.10" sink_obj="//@regions.0/@basic_blocks.6/@node_objs.1"/>
+  <edges id="248" source_obj="//@regions.0/@basic_blocks.1/@node_objs.19" sink_obj="//@regions.0/@basic_blocks.5/@node_objs.0"/>
+  <edges id="249" source_obj="//@regions.0/@basic_blocks.1/@node_objs.14" sink_obj="//@regions.0/@basic_blocks.5/@node_objs.0"/>
+  <edges id="250" edge_type="CtrlEdge" source_obj="//@regions.0/@basic_blocks.10" sink_obj="//@regions.0/@basic_blocks.5/@node_objs.1"/>
+  <edges id="251" source_obj="//@regions.0/@basic_blocks.1/@node_objs.19" sink_obj="//@regions.0/@basic_blocks.4/@node_objs.0"/>
+  <edges id="252" source_obj="//@regions.0/@basic_blocks.1/@node_objs.15" sink_obj="//@regions.0/@basic_blocks.4/@node_objs.0"/>
+  <edges id="253" edge_type="CtrlEdge" source_obj="//@regions.0/@basic_blocks.10" sink_obj="//@regions.0/@basic_blocks.4/@node_objs.1"/>
+  <edges id="254" source_obj="//@regions.0/@basic_blocks.1/@node_objs.19" sink_obj="//@regions.0/@basic_blocks.3/@node_objs.0"/>
+  <edges id="255" source_obj="//@regions.0/@basic_blocks.1/@node_objs.16" sink_obj="//@regions.0/@basic_blocks.3/@node_objs.0"/>
+  <edges id="256" edge_type="CtrlEdge" source_obj="//@regions.0/@basic_blocks.10" sink_obj="//@regions.0/@basic_blocks.3/@node_objs.1"/>
+  <edges id="257" source_obj="//@regions.0/@basic_blocks.1/@node_objs.19" sink_obj="//@regions.0/@basic_blocks.2/@node_objs.0"/>
+  <edges id="258" source_obj="//@regions.0/@basic_blocks.1/@node_objs.17" sink_obj="//@regions.0/@basic_blocks.2/@node_objs.0"/>
+  <edges id="259" edge_type="CtrlEdge" source_obj="//@regions.0/@basic_blocks.10" sink_obj="//@regions.0/@basic_blocks.2/@node_objs.1"/>
+  <edges id="260" source_obj="//@regions.0/@basic_blocks.1/@node_objs.19" sink_obj="//@regions.0/@basic_blocks.9/@node_objs.0"/>
+  <edges id="261" source_obj="//@regions.0/@basic_blocks.1/@node_objs.18" sink_obj="//@regions.0/@basic_blocks.9/@node_objs.0"/>
+  <edges id="262" edge_type="CtrlEdge" source_obj="//@regions.0/@basic_blocks.10" sink_obj="//@regions.0/@basic_blocks.9/@node_objs.1"/>
+  <edges id="354" edge_type="CtrlEdge" source_obj="//@blocks.0" sink_obj="//@regions.0/@basic_blocks.0"/>
+  <edges id="355" edge_type="CtrlEdge" source_obj="//@regions.0/@basic_blocks.0" sink_obj="//@blocks.1"/>
+  <edges id="356" edge_type="CtrlEdge" source_obj="//@regions.0/@basic_blocks.0" sink_obj="//@regions.0/@basic_blocks.1"/>
+  <edges id="357" edge_type="CtrlEdge" source_obj="//@regions.0/@basic_blocks.1" sink_obj="//@regions.0/@basic_blocks.9"/>
+  <edges id="358" edge_type="CtrlEdge" source_obj="//@regions.0/@basic_blocks.1" sink_obj="//@regions.0/@basic_blocks.8"/>
+  <edges id="359" edge_type="CtrlEdge" source_obj="//@regions.0/@basic_blocks.1" sink_obj="//@regions.0/@basic_blocks.7"/>
+  <edges id="360" edge_type="CtrlEdge" source_obj="//@regions.0/@basic_blocks.1" sink_obj="//@regions.0/@basic_blocks.6"/>
+  <edges id="361" edge_type="CtrlEdge" source_obj="//@regions.0/@basic_blocks.1" sink_obj="//@regions.0/@basic_blocks.5"/>
+  <edges id="362" edge_type="CtrlEdge" source_obj="//@regions.0/@basic_blocks.1" sink_obj="//@regions.0/@basic_blocks.4"/>
+  <edges id="363" edge_type="CtrlEdge" source_obj="//@regions.0/@basic_blocks.1" sink_obj="//@regions.0/@basic_blocks.3"/>
+  <edges id="364" edge_type="CtrlEdge" source_obj="//@regions.0/@basic_blocks.1" sink_obj="//@regions.0/@basic_blocks.2"/>
+  <edges id="365" edge_type="CtrlEdge" source_obj="//@regions.0/@basic_blocks.2" sink_obj="//@regions.0/@basic_blocks.10"/>
+  <edges id="366" edge_type="CtrlEdge" source_obj="//@regions.0/@basic_blocks.3" sink_obj="//@regions.0/@basic_blocks.10"/>
+  <edges id="367" edge_type="CtrlEdge" source_obj="//@regions.0/@basic_blocks.4" sink_obj="//@regions.0/@basic_blocks.10"/>
+  <edges id="368" edge_type="CtrlEdge" source_obj="//@regions.0/@basic_blocks.5" sink_obj="//@regions.0/@basic_blocks.10"/>
+  <edges id="369" edge_type="CtrlEdge" source_obj="//@regions.0/@basic_blocks.6" sink_obj="//@regions.0/@basic_blocks.10"/>
+  <edges id="370" edge_type="CtrlEdge" source_obj="//@regions.0/@basic_blocks.7" sink_obj="//@regions.0/@basic_blocks.10"/>
+  <edges id="371" edge_type="CtrlEdge" source_obj="//@regions.0/@basic_blocks.8" sink_obj="//@regions.0/@basic_blocks.10"/>
+  <edges id="372" edge_type="CtrlEdge" source_obj="//@regions.0/@basic_blocks.9" sink_obj="//@regions.0/@basic_blocks.10"/>
+  <edges id="373" edge_type="CtrlEdge" source_obj="//@regions.0/@basic_blocks.10" sink_obj="//@regions.0/@basic_blocks.0" is_back_edge="1"/>
+  <edges id="374" edge_type="VirtEdge" source_obj="//@regions.0/@basic_blocks.10/@node_objs.1" sink_obj="//@regions.0/@basic_blocks.10/@node_objs.9"/>
+  <edges id="375" edge_type="VirtEdge" source_obj="//@regions.0/@basic_blocks.10/@node_objs.0" sink_obj="//@regions.0/@basic_blocks.10/@node_objs.10"/>
+  <edges id="376" edge_type="VirtEdge" source_obj="//@blocks.0/@node_objs.9" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.0"/>
+  <edges id="377" edge_type="VirtEdge" source_obj="//@blocks.0/@node_objs.10" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.1"/>
+  <edges id="378" edge_type="VirtEdge" source_obj="//@blocks.0/@node_objs.11" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.0"/>
+  <edges id="379" edge_type="VirtEdge" source_obj="//@blocks.0/@node_objs.9" sink_obj="//@regions.0/@basic_blocks.10/@node_objs.8"/>
+  <edges id="380" edge_type="VirtEdge" source_obj="//@blocks.0/@node_objs.10" sink_obj="//@regions.0/@basic_blocks.10/@node_objs.1"/>
+  <edges id="381" edge_type="VirtEdge" source_obj="//@blocks.0/@node_objs.10" sink_obj="//@regions.0/@basic_blocks.10/@node_objs.9"/>
+  <edges id="382" edge_type="VirtEdge" source_obj="//@blocks.0/@node_objs.11" sink_obj="//@regions.0/@basic_blocks.10/@node_objs.0"/>
+  <edges id="383" edge_type="VirtEdge" source_obj="//@blocks.0/@node_objs.11" sink_obj="//@regions.0/@basic_blocks.10/@node_objs.10"/>
+  <edges id="384" edge_type="VirtEdge" source_obj="//@regions.0/@basic_blocks.0/@node_objs.0" sink_obj="//@regions.0/@basic_blocks.10/@node_objs.8"/>
+  <edges id="385" edge_type="VirtEdge" source_obj="//@regions.0/@basic_blocks.1/@node_objs.0" sink_obj="//@regions.0/@basic_blocks.10/@node_objs.10"/>
+  <edges id="386" edge_type="VirtEdge" source_obj="//@regions.0/@basic_blocks.1/@node_objs.1" sink_obj="//@regions.0/@basic_blocks.10/@node_objs.9"/>
+  <blocks id="36" name="newFuncRoot" type="BlockType">
+    <controlOutputObjs>for.body6.i</controlOutputObjs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="14" name="k_cnt" lineNumber="82" originalName="k_cnt" fileName="../gen2/Hls_Layers_UpConv.tpp" fileDirectory="../." coreId="4294967295" contextFuncName="uc_load_tile_8_s" bitwidth="32" opcode="alloca" m_display="0" m_topoIndex="1" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="../gen2/Hls_Layers_UpConv.tpp" linenumber="216" fileDirectory="/home/hoinguyen/Documents/Vitis/UpConv_HLS/upconv_core" functionName="UpConv_Fused_Row&amp;lt;8&amp;gt;"/>
+      <inlineStackInfo fileName="../gen2/Hls_Layers_UpConv.tpp" linenumber="219" fileDirectory="/home/hoinguyen/Documents/Vitis/UpConv_HLS/upconv_core" functionName="_Z16UpConv_Fused_RowILi8EEvP7ap_uintILi256EEPKS1_S4_S4_S4_S2_Dhiiiii_for.inc28"/>
+      <inlineStackInfo fileName="../gen2/Hls_Layers_UpConv.tpp" linenumber="82" fileDirectory="/home/hoinguyen/Documents/Vitis/UpConv_HLS/upconv_core" functionName="uc_load_tile&amp;lt;8&amp;gt;"/>
+      <dataOutputObjs>store</dataOutputObjs>
+      <dataOutputObjs>load</dataOutputObjs>
+      <dataOutputObjs>store</dataOutputObjs>
+      <dataOutputObjs>load</dataOutputObjs>
+      <constName>empty</constName>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="15" name="ci_cnt" lineNumber="82" originalName="ci_cnt" fileName="../gen2/Hls_Layers_UpConv.tpp" fileDirectory="../." coreId="4294967295" contextFuncName="uc_load_tile_8_s" bitwidth="32" opcode="alloca" m_display="0" m_topoIndex="2" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="../gen2/Hls_Layers_UpConv.tpp" linenumber="216" fileDirectory="/home/hoinguyen/Documents/Vitis/UpConv_HLS/upconv_core" functionName="UpConv_Fused_Row&amp;lt;8&amp;gt;"/>
+      <inlineStackInfo fileName="../gen2/Hls_Layers_UpConv.tpp" linenumber="219" fileDirectory="/home/hoinguyen/Documents/Vitis/UpConv_HLS/upconv_core" functionName="_Z16UpConv_Fused_RowILi8EEvP7ap_uintILi256EEPKS1_S4_S4_S4_S2_Dhiiiii_for.inc28"/>
+      <inlineStackInfo fileName="../gen2/Hls_Layers_UpConv.tpp" linenumber="82" fileDirectory="/home/hoinguyen/Documents/Vitis/UpConv_HLS/upconv_core" functionName="uc_load_tile&amp;lt;8&amp;gt;"/>
+      <dataOutputObjs>store</dataOutputObjs>
+      <dataOutputObjs>load</dataOutputObjs>
+      <dataOutputObjs>store</dataOutputObjs>
+      <dataOutputObjs>load</dataOutputObjs>
+      <constName>empty</constName>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="16" name="kci" lineNumber="83" originalName="kci" fileName="../gen2/Hls_Layers_UpConv.tpp" fileDirectory="../." coreId="4294967295" contextFuncName="uc_load_tile_8_s" bitwidth="10" opcode="alloca" m_display="0" m_topoIndex="3" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="../gen2/Hls_Layers_UpConv.tpp" linenumber="216" fileDirectory="/home/hoinguyen/Documents/Vitis/UpConv_HLS/upconv_core" functionName="UpConv_Fused_Row&amp;lt;8&amp;gt;"/>
+      <inlineStackInfo fileName="../gen2/Hls_Layers_UpConv.tpp" linenumber="219" fileDirectory="/home/hoinguyen/Documents/Vitis/UpConv_HLS/upconv_core" functionName="_Z16UpConv_Fused_RowILi8EEvP7ap_uintILi256EEPKS1_S4_S4_S4_S2_Dhiiiii_for.inc28"/>
+      <inlineStackInfo fileName="../gen2/Hls_Layers_UpConv.tpp" linenumber="83" fileDirectory="/home/hoinguyen/Documents/Vitis/UpConv_HLS/upconv_core" functionName="uc_load_tile&amp;lt;8&amp;gt;"/>
+      <dataOutputObjs>store</dataOutputObjs>
+      <dataOutputObjs>load</dataOutputObjs>
+      <dataOutputObjs>store</dataOutputObjs>
+      <constName>empty</constName>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="17" name="tc_read" coreId="4294967295" bitwidth="3" opcode="read" m_display="0" m_topoIndex="4" m_clusterGroupNumber="-1">
+      <dataInputObjs>tc</dataInputObjs>
+      <dataOutputObjs>switch</dataOutputObjs>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="18" name="sext_ln83_read" coreId="4294967295" bitwidth="59" opcode="read" m_display="0" m_topoIndex="5" m_clusterGroupNumber="-1">
+      <dataInputObjs>sext_ln83</dataInputObjs>
+      <dataOutputObjs>sext</dataOutputObjs>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="19" name="CI_WORDS_cast4_i_read" coreId="4294967295" bitwidth="6" opcode="read" m_display="0" m_topoIndex="6" m_clusterGroupNumber="-1">
+      <dataInputObjs>CI_WORDS_cast4_i</dataInputObjs>
+      <dataOutputObjs>zext</dataOutputObjs>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="20" name="mul3_i_read" coreId="4294967295" bitwidth="10" opcode="read" m_display="0" m_topoIndex="7" m_clusterGroupNumber="-1">
+      <dataInputObjs>mul3_i</dataInputObjs>
+      <dataOutputObjs>icmp</dataOutputObjs>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="21" name="sext_ln83_cast" coreId="4294967295" bitwidth="64" opcode="sext" m_display="0" m_topoIndex="8" m_clusterGroupNumber="-1">
+      <dataInputObjs>read</dataInputObjs>
+      <dataOutputObjs>getelementptr</dataOutputObjs>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="22" name="CI_WORDS_cast4_i_cast" rtlName="CI_WORDS_cast4_i_cast_fu_257_p1" coreId="4294967295" bitwidth="32" opcode="zext" m_display="0" m_topoIndex="9" m_clusterGroupNumber="-1">
+      <dataInputObjs>read</dataInputObjs>
+      <dataOutputObjs>icmp</dataOutputObjs>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="32" name="kci_write_ln83" lineNumber="83" fileName="../gen2/Hls_Layers_UpConv.tpp" fileDirectory="../." coreId="4294967295" contextFuncName="uc_load_tile_8_s" opcode="store" m_display="0" m_delay="0.42" m_topoIndex="10" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="../gen2/Hls_Layers_UpConv.tpp" linenumber="216" fileDirectory="/home/hoinguyen/Documents/Vitis/UpConv_HLS/upconv_core" functionName="UpConv_Fused_Row&amp;lt;8&amp;gt;"/>
+      <inlineStackInfo fileName="../gen2/Hls_Layers_UpConv.tpp" linenumber="219" fileDirectory="/home/hoinguyen/Documents/Vitis/UpConv_HLS/upconv_core" functionName="_Z16UpConv_Fused_RowILi8EEvP7ap_uintILi256EEPKS1_S4_S4_S4_S2_Dhiiiii_for.inc28"/>
+      <inlineStackInfo fileName="../gen2/Hls_Layers_UpConv.tpp" linenumber="83" fileDirectory="/home/hoinguyen/Documents/Vitis/UpConv_HLS/upconv_core" functionName="uc_load_tile&amp;lt;8&amp;gt;"/>
+      <dataInputObjs>alloca</dataInputObjs>
+      <constName>empty</constName>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="33" name="ci_cnt_write_ln82" lineNumber="82" fileName="../gen2/Hls_Layers_UpConv.tpp" fileDirectory="../." coreId="4294967295" contextFuncName="uc_load_tile_8_s" opcode="store" m_display="0" m_delay="0.42" m_topoIndex="11" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="../gen2/Hls_Layers_UpConv.tpp" linenumber="216" fileDirectory="/home/hoinguyen/Documents/Vitis/UpConv_HLS/upconv_core" functionName="UpConv_Fused_Row&amp;lt;8&amp;gt;"/>
+      <inlineStackInfo fileName="../gen2/Hls_Layers_UpConv.tpp" linenumber="219" fileDirectory="/home/hoinguyen/Documents/Vitis/UpConv_HLS/upconv_core" functionName="_Z16UpConv_Fused_RowILi8EEvP7ap_uintILi256EEPKS1_S4_S4_S4_S2_Dhiiiii_for.inc28"/>
+      <inlineStackInfo fileName="../gen2/Hls_Layers_UpConv.tpp" linenumber="82" fileDirectory="/home/hoinguyen/Documents/Vitis/UpConv_HLS/upconv_core" functionName="uc_load_tile&amp;lt;8&amp;gt;"/>
+      <dataInputObjs>alloca</dataInputObjs>
+      <constName>empty</constName>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="34" name="k_cnt_write_ln82" lineNumber="82" fileName="../gen2/Hls_Layers_UpConv.tpp" fileDirectory="../." coreId="4294967295" contextFuncName="uc_load_tile_8_s" opcode="store" m_display="0" m_delay="0.42" m_topoIndex="12" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="../gen2/Hls_Layers_UpConv.tpp" linenumber="216" fileDirectory="/home/hoinguyen/Documents/Vitis/UpConv_HLS/upconv_core" functionName="UpConv_Fused_Row&amp;lt;8&amp;gt;"/>
+      <inlineStackInfo fileName="../gen2/Hls_Layers_UpConv.tpp" linenumber="219" fileDirectory="/home/hoinguyen/Documents/Vitis/UpConv_HLS/upconv_core" functionName="_Z16UpConv_Fused_RowILi8EEvP7ap_uintILi256EEPKS1_S4_S4_S4_S2_Dhiiiii_for.inc28"/>
+      <inlineStackInfo fileName="../gen2/Hls_Layers_UpConv.tpp" linenumber="82" fileDirectory="/home/hoinguyen/Documents/Vitis/UpConv_HLS/upconv_core" functionName="uc_load_tile&amp;lt;8&amp;gt;"/>
+      <dataInputObjs>alloca</dataInputObjs>
+      <constName>empty</constName>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="35" name="br_ln83" lineNumber="83" fileName="../gen2/Hls_Layers_UpConv.tpp" fileDirectory="../." coreId="4294967295" contextFuncName="uc_load_tile_8_s" opcode="br" m_display="0" m_topoIndex="13" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="../gen2/Hls_Layers_UpConv.tpp" linenumber="216" fileDirectory="/home/hoinguyen/Documents/Vitis/UpConv_HLS/upconv_core" functionName="UpConv_Fused_Row&amp;lt;8&amp;gt;"/>
+      <inlineStackInfo fileName="../gen2/Hls_Layers_UpConv.tpp" linenumber="219" fileDirectory="/home/hoinguyen/Documents/Vitis/UpConv_HLS/upconv_core" functionName="_Z16UpConv_Fused_RowILi8EEvP7ap_uintILi256EEPKS1_S4_S4_S4_S2_Dhiiiii_for.inc28"/>
+      <inlineStackInfo fileName="../gen2/Hls_Layers_UpConv.tpp" linenumber="83" fileDirectory="/home/hoinguyen/Documents/Vitis/UpConv_HLS/upconv_core" functionName="uc_load_tile&amp;lt;8&amp;gt;"/>
+      <controlInputObjs>for.body6.i</controlInputObjs>
+    </node_objs>
+    <fileValidLineNumbers fileName="../gen2/Hls_Layers_UpConv.tpp">
+      <validLinenumbers>82</validLinenumbers>
+      <validLinenumbers>83</validLinenumbers>
+      <validLinenumbers>216</validLinenumbers>
+      <validLinenumbers>219</validLinenumbers>
+    </fileValidLineNumbers>
+  </blocks>
+  <blocks id="105" name="for.inc21.i.loopexit.exitStub" type="BlockType">
+    <controlInputObjs>for.body6.i</controlInputObjs>
+    <controlOutputObjs>br</controlOutputObjs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="104" name="_ln0" coreId="4294967295" opcode="ret" nodeLabel="1.0" m_display="0" m_delay="0.42" m_topoIndex="30" m_clusterGroupNumber="-1"/>
+  </blocks>
+  <regions anchor_node="-1" region_type="8" interval="1" typeName="Pipeline" iiViolation="" id="360" pipe_depth="3" RegionName="W_FLAT">
+    <basic_blocks id="41" name="for.body6.i" type="BlockType">
+      <controlInputObjs>newFuncRoot</controlInputObjs>
+      <controlInputObjs>arrayidx1511.exit.i</controlInputObjs>
+      <controlOutputObjs>br</controlOutputObjs>
+      <controlOutputObjs>br</controlOutputObjs>
+      <controlOutputObjs>for.inc21.i.loopexit.exitStub</controlOutputObjs>
+      <controlOutputObjs>for.body6.split.i</controlOutputObjs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="37" name="kci_1" lineNumber="83" originalName="kci" fileName="../gen2/Hls_Layers_UpConv.tpp" fileDirectory="../." coreId="4294967295" contextFuncName="uc_load_tile_8_s" bitwidth="10" opcode="load" m_display="0" m_topoIndex="14" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="../gen2/Hls_Layers_UpConv.tpp" linenumber="216" fileDirectory="/home/hoinguyen/Documents/Vitis/UpConv_HLS/upconv_core" functionName="UpConv_Fused_Row&amp;lt;8&amp;gt;"/>
+        <inlineStackInfo fileName="../gen2/Hls_Layers_UpConv.tpp" linenumber="219" fileDirectory="/home/hoinguyen/Documents/Vitis/UpConv_HLS/upconv_core" functionName="_Z16UpConv_Fused_RowILi8EEvP7ap_uintILi256EEPKS1_S4_S4_S4_S2_Dhiiiii_for.inc28"/>
+        <inlineStackInfo fileName="../gen2/Hls_Layers_UpConv.tpp" linenumber="83" fileDirectory="/home/hoinguyen/Documents/Vitis/UpConv_HLS/upconv_core" functionName="uc_load_tile&amp;lt;8&amp;gt;"/>
+        <dataInputObjs>alloca</dataInputObjs>
+        <dataOutputObjs>icmp</dataOutputObjs>
+        <dataOutputObjs>add</dataOutputObjs>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="38" name="icmp_ln83" lineNumber="83" fileName="../gen2/Hls_Layers_UpConv.tpp" fileDirectory="../." rtlName="icmp_ln83_fu_279_p2" coreName="Cmp" implIndex="auto" control="no" opType="seteq" coreId="9" contextFuncName="uc_load_tile_8_s" bitwidth="1" opcode="icmp" m_display="0" m_delay="0.78" m_topoIndex="15" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="../gen2/Hls_Layers_UpConv.tpp" linenumber="216" fileDirectory="/home/hoinguyen/Documents/Vitis/UpConv_HLS/upconv_core" functionName="UpConv_Fused_Row&amp;lt;8&amp;gt;"/>
+        <inlineStackInfo fileName="../gen2/Hls_Layers_UpConv.tpp" linenumber="219" fileDirectory="/home/hoinguyen/Documents/Vitis/UpConv_HLS/upconv_core" functionName="_Z16UpConv_Fused_RowILi8EEvP7ap_uintILi256EEPKS1_S4_S4_S4_S2_Dhiiiii_for.inc28"/>
+        <inlineStackInfo fileName="../gen2/Hls_Layers_UpConv.tpp" linenumber="83" fileDirectory="/home/hoinguyen/Documents/Vitis/UpConv_HLS/upconv_core" functionName="uc_load_tile&amp;lt;8&amp;gt;"/>
+        <dataInputObjs>load</dataInputObjs>
+        <dataInputObjs>read</dataInputObjs>
+        <dataOutputObjs>br</dataOutputObjs>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="39" name="add_ln83" lineNumber="83" fileName="../gen2/Hls_Layers_UpConv.tpp" fileDirectory="../." rtlName="add_ln83_fu_285_p2" coreName="Adder" implIndex="fabric" control="no" opType="add" coreId="1" contextFuncName="uc_load_tile_8_s" bitwidth="10" opcode="add" m_display="0" m_delay="0.78" m_topoIndex="16" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="../gen2/Hls_Layers_UpConv.tpp" linenumber="216" fileDirectory="/home/hoinguyen/Documents/Vitis/UpConv_HLS/upconv_core" functionName="UpConv_Fused_Row&amp;lt;8&amp;gt;"/>
+        <inlineStackInfo fileName="../gen2/Hls_Layers_UpConv.tpp" linenumber="219" fileDirectory="/home/hoinguyen/Documents/Vitis/UpConv_HLS/upconv_core" functionName="_Z16UpConv_Fused_RowILi8EEvP7ap_uintILi256EEPKS1_S4_S4_S4_S2_Dhiiiii_for.inc28"/>
+        <inlineStackInfo fileName="../gen2/Hls_Layers_UpConv.tpp" linenumber="83" fileDirectory="/home/hoinguyen/Documents/Vitis/UpConv_HLS/upconv_core" functionName="uc_load_tile&amp;lt;8&amp;gt;"/>
+        <dataInputObjs>load</dataInputObjs>
+        <dataOutputObjs>store</dataOutputObjs>
+        <constName>empty</constName>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="40" name="br_ln83" lineNumber="83" fileName="../gen2/Hls_Layers_UpConv.tpp" fileDirectory="../." coreId="4294967295" contextFuncName="uc_load_tile_8_s" opcode="br" m_display="0" m_topoIndex="17" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="../gen2/Hls_Layers_UpConv.tpp" linenumber="216" fileDirectory="/home/hoinguyen/Documents/Vitis/UpConv_HLS/upconv_core" functionName="UpConv_Fused_Row&amp;lt;8&amp;gt;"/>
+        <inlineStackInfo fileName="../gen2/Hls_Layers_UpConv.tpp" linenumber="219" fileDirectory="/home/hoinguyen/Documents/Vitis/UpConv_HLS/upconv_core" functionName="_Z16UpConv_Fused_RowILi8EEvP7ap_uintILi256EEPKS1_S4_S4_S4_S2_Dhiiiii_for.inc28"/>
+        <inlineStackInfo fileName="../gen2/Hls_Layers_UpConv.tpp" linenumber="83" fileDirectory="/home/hoinguyen/Documents/Vitis/UpConv_HLS/upconv_core" functionName="uc_load_tile&amp;lt;8&amp;gt;"/>
+        <dataInputObjs>icmp</dataInputObjs>
+        <controlInputObjs>for.body6.split.i</controlInputObjs>
+        <controlInputObjs>for.inc21.i.loopexit.exitStub</controlInputObjs>
+      </node_objs>
+      <fileValidLineNumbers fileName="../gen2/Hls_Layers_UpConv.tpp">
+        <validLinenumbers>83</validLinenumbers>
+        <validLinenumbers>216</validLinenumbers>
+        <validLinenumbers>219</validLinenumbers>
+      </fileValidLineNumbers>
+    </basic_blocks>
+    <basic_blocks id="66" name="for.body6.split.i" type="BlockType">
+      <controlInputObjs>for.body6.i</controlInputObjs>
+      <controlOutputObjs>br</controlOutputObjs>
+      <controlOutputObjs>arrayidx1511.case.7.i</controlOutputObjs>
+      <controlOutputObjs>arrayidx1511.case.0.i</controlOutputObjs>
+      <controlOutputObjs>arrayidx1511.case.1.i</controlOutputObjs>
+      <controlOutputObjs>arrayidx1511.case.2.i</controlOutputObjs>
+      <controlOutputObjs>arrayidx1511.case.3.i</controlOutputObjs>
+      <controlOutputObjs>arrayidx1511.case.4.i</controlOutputObjs>
+      <controlOutputObjs>arrayidx1511.case.5.i</controlOutputObjs>
+      <controlOutputObjs>arrayidx1511.case.6.i</controlOutputObjs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="42" name="k_cnt_load" lineNumber="86" fileName="../gen2/Hls_Layers_UpConv.tpp" fileDirectory="../." coreId="4294967295" contextFuncName="uc_load_tile_8_s" bitwidth="32" opcode="load" nodeLabel="2.0" m_display="0" m_topoIndex="31" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="../gen2/Hls_Layers_UpConv.tpp" linenumber="216" fileDirectory="/home/hoinguyen/Documents/Vitis/UpConv_HLS/upconv_core" functionName="UpConv_Fused_Row&amp;lt;8&amp;gt;"/>
+        <inlineStackInfo fileName="../gen2/Hls_Layers_UpConv.tpp" linenumber="219" fileDirectory="/home/hoinguyen/Documents/Vitis/UpConv_HLS/upconv_core" functionName="_Z16UpConv_Fused_RowILi8EEvP7ap_uintILi256EEPKS1_S4_S4_S4_S2_Dhiiiii_for.inc28"/>
+        <inlineStackInfo fileName="../gen2/Hls_Layers_UpConv.tpp" linenumber="86" fileDirectory="/home/hoinguyen/Documents/Vitis/UpConv_HLS/upconv_core" functionName="uc_load_tile&amp;lt;8&amp;gt;"/>
+        <dataInputObjs>alloca</dataInputObjs>
+        <dataOutputObjs>trunc</dataOutputObjs>
+        <dataOutputObjs>trunc</dataOutputObjs>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="43" name="ci_cnt_load" lineNumber="83" fileName="../gen2/Hls_Layers_UpConv.tpp" fileDirectory="../." coreId="4294967295" contextFuncName="uc_load_tile_8_s" bitwidth="32" opcode="load" nodeLabel="1.0" m_display="0" m_topoIndex="20" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="../gen2/Hls_Layers_UpConv.tpp" linenumber="216" fileDirectory="/home/hoinguyen/Documents/Vitis/UpConv_HLS/upconv_core" functionName="UpConv_Fused_Row&amp;lt;8&amp;gt;"/>
+        <inlineStackInfo fileName="../gen2/Hls_Layers_UpConv.tpp" linenumber="219" fileDirectory="/home/hoinguyen/Documents/Vitis/UpConv_HLS/upconv_core" functionName="_Z16UpConv_Fused_RowILi8EEvP7ap_uintILi256EEPKS1_S4_S4_S4_S2_Dhiiiii_for.inc28"/>
+        <inlineStackInfo fileName="../gen2/Hls_Layers_UpConv.tpp" linenumber="83" fileDirectory="/home/hoinguyen/Documents/Vitis/UpConv_HLS/upconv_core" functionName="uc_load_tile&amp;lt;8&amp;gt;"/>
+        <dataInputObjs>alloca</dataInputObjs>
+        <dataOutputObjs>trunc</dataOutputObjs>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="44" name="gmem_weight_addr" lineNumber="83" fileName="../gen2/Hls_Layers_UpConv.tpp" fileDirectory="../." coreId="4294967295" contextFuncName="uc_load_tile_8_s" bitwidth="256" opcode="getelementptr" nodeLabel="1.0" m_display="0" m_topoIndex="21" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="../gen2/Hls_Layers_UpConv.tpp" linenumber="216" fileDirectory="/home/hoinguyen/Documents/Vitis/UpConv_HLS/upconv_core" functionName="UpConv_Fused_Row&amp;lt;8&amp;gt;"/>
+        <inlineStackInfo fileName="../gen2/Hls_Layers_UpConv.tpp" linenumber="219" fileDirectory="/home/hoinguyen/Documents/Vitis/UpConv_HLS/upconv_core" functionName="_Z16UpConv_Fused_RowILi8EEvP7ap_uintILi256EEPKS1_S4_S4_S4_S2_Dhiiiii_for.inc28"/>
+        <inlineStackInfo fileName="../gen2/Hls_Layers_UpConv.tpp" linenumber="83" fileDirectory="/home/hoinguyen/Documents/Vitis/UpConv_HLS/upconv_core" functionName="uc_load_tile&amp;lt;8&amp;gt;"/>
+        <dataInputObjs>gmem_weight</dataInputObjs>
+        <dataInputObjs>sext</dataInputObjs>
+        <dataOutputObjs>read</dataOutputObjs>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="45" name="trunc_ln83" lineNumber="83" fileName="../gen2/Hls_Layers_UpConv.tpp" fileDirectory="../." rtlName="trunc_ln83_fu_305_p1" coreId="4294967295" contextFuncName="uc_load_tile_8_s" bitwidth="10" opcode="trunc" nodeLabel="1.0" m_display="0" m_topoIndex="22" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="../gen2/Hls_Layers_UpConv.tpp" linenumber="216" fileDirectory="/home/hoinguyen/Documents/Vitis/UpConv_HLS/upconv_core" functionName="UpConv_Fused_Row&amp;lt;8&amp;gt;"/>
+        <inlineStackInfo fileName="../gen2/Hls_Layers_UpConv.tpp" linenumber="219" fileDirectory="/home/hoinguyen/Documents/Vitis/UpConv_HLS/upconv_core" functionName="_Z16UpConv_Fused_RowILi8EEvP7ap_uintILi256EEPKS1_S4_S4_S4_S2_Dhiiiii_for.inc28"/>
+        <inlineStackInfo fileName="../gen2/Hls_Layers_UpConv.tpp" linenumber="83" fileDirectory="/home/hoinguyen/Documents/Vitis/UpConv_HLS/upconv_core" functionName="uc_load_tile&amp;lt;8&amp;gt;"/>
+        <dataInputObjs>load</dataInputObjs>
+        <dataOutputObjs>add</dataOutputObjs>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="49" name="trunc_ln86" lineNumber="86" fileName="../gen2/Hls_Layers_UpConv.tpp" fileDirectory="../." rtlName="trunc_ln86_fu_345_p1" coreId="4294967295" contextFuncName="uc_load_tile_8_s" bitwidth="4" opcode="trunc" nodeLabel="2.0" m_display="0" m_topoIndex="32" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="../gen2/Hls_Layers_UpConv.tpp" linenumber="216" fileDirectory="/home/hoinguyen/Documents/Vitis/UpConv_HLS/upconv_core" functionName="UpConv_Fused_Row&amp;lt;8&amp;gt;"/>
+        <inlineStackInfo fileName="../gen2/Hls_Layers_UpConv.tpp" linenumber="219" fileDirectory="/home/hoinguyen/Documents/Vitis/UpConv_HLS/upconv_core" functionName="_Z16UpConv_Fused_RowILi8EEvP7ap_uintILi256EEPKS1_S4_S4_S4_S2_Dhiiiii_for.inc28"/>
+        <inlineStackInfo fileName="../gen2/Hls_Layers_UpConv.tpp" linenumber="86" fileDirectory="/home/hoinguyen/Documents/Vitis/UpConv_HLS/upconv_core" functionName="uc_load_tile&amp;lt;8&amp;gt;"/>
+        <dataInputObjs>load</dataInputObjs>
+        <dataOutputObjs>bitconcatenate</dataOutputObjs>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="50" name="p_shl" lineNumber="86" fileName="../gen2/Hls_Layers_UpConv.tpp" fileDirectory="../." rtlName="p_shl_fu_349_p3" coreId="4294967295" contextFuncName="uc_load_tile_8_s" bitwidth="10" opcode="bitconcatenate" nodeLabel="2.0" m_display="0" m_topoIndex="33" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="../gen2/Hls_Layers_UpConv.tpp" linenumber="216" fileDirectory="/home/hoinguyen/Documents/Vitis/UpConv_HLS/upconv_core" functionName="UpConv_Fused_Row&amp;lt;8&amp;gt;"/>
+        <inlineStackInfo fileName="../gen2/Hls_Layers_UpConv.tpp" linenumber="219" fileDirectory="/home/hoinguyen/Documents/Vitis/UpConv_HLS/upconv_core" functionName="_Z16UpConv_Fused_RowILi8EEvP7ap_uintILi256EEPKS1_S4_S4_S4_S2_Dhiiiii_for.inc28"/>
+        <inlineStackInfo fileName="../gen2/Hls_Layers_UpConv.tpp" linenumber="86" fileDirectory="/home/hoinguyen/Documents/Vitis/UpConv_HLS/upconv_core" functionName="uc_load_tile&amp;lt;8&amp;gt;"/>
+        <dataInputObjs>trunc</dataInputObjs>
+        <dataOutputObjs>sub</dataOutputObjs>
+        <constName>empty</constName>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="51" name="trunc_ln86_1" lineNumber="86" fileName="../gen2/Hls_Layers_UpConv.tpp" fileDirectory="../." rtlName="trunc_ln86_1_fu_357_p1" coreId="4294967295" contextFuncName="uc_load_tile_8_s" bitwidth="8" opcode="trunc" nodeLabel="2.0" m_display="0" m_topoIndex="34" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="../gen2/Hls_Layers_UpConv.tpp" linenumber="216" fileDirectory="/home/hoinguyen/Documents/Vitis/UpConv_HLS/upconv_core" functionName="UpConv_Fused_Row&amp;lt;8&amp;gt;"/>
+        <inlineStackInfo fileName="../gen2/Hls_Layers_UpConv.tpp" linenumber="219" fileDirectory="/home/hoinguyen/Documents/Vitis/UpConv_HLS/upconv_core" functionName="_Z16UpConv_Fused_RowILi8EEvP7ap_uintILi256EEPKS1_S4_S4_S4_S2_Dhiiiii_for.inc28"/>
+        <inlineStackInfo fileName="../gen2/Hls_Layers_UpConv.tpp" linenumber="86" fileDirectory="/home/hoinguyen/Documents/Vitis/UpConv_HLS/upconv_core" functionName="uc_load_tile&amp;lt;8&amp;gt;"/>
+        <dataInputObjs>load</dataInputObjs>
+        <dataOutputObjs>bitconcatenate</dataOutputObjs>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="52" name="p_shl9" lineNumber="86" fileName="../gen2/Hls_Layers_UpConv.tpp" fileDirectory="../." rtlName="p_shl9_fu_361_p3" coreId="4294967295" contextFuncName="uc_load_tile_8_s" bitwidth="10" opcode="bitconcatenate" nodeLabel="2.0" m_display="0" m_topoIndex="35" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="../gen2/Hls_Layers_UpConv.tpp" linenumber="216" fileDirectory="/home/hoinguyen/Documents/Vitis/UpConv_HLS/upconv_core" functionName="UpConv_Fused_Row&amp;lt;8&amp;gt;"/>
+        <inlineStackInfo fileName="../gen2/Hls_Layers_UpConv.tpp" linenumber="219" fileDirectory="/home/hoinguyen/Documents/Vitis/UpConv_HLS/upconv_core" functionName="_Z16UpConv_Fused_RowILi8EEvP7ap_uintILi256EEPKS1_S4_S4_S4_S2_Dhiiiii_for.inc28"/>
+        <inlineStackInfo fileName="../gen2/Hls_Layers_UpConv.tpp" linenumber="86" fileDirectory="/home/hoinguyen/Documents/Vitis/UpConv_HLS/upconv_core" functionName="uc_load_tile&amp;lt;8&amp;gt;"/>
+        <dataInputObjs>trunc</dataInputObjs>
+        <dataOutputObjs>sub</dataOutputObjs>
+        <constName>empty</constName>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="53" name="sub_ln86" lineNumber="86" fileName="../gen2/Hls_Layers_UpConv.tpp" fileDirectory="../." rtlName="sub_ln86_fu_369_p2" coreName="TAddSub" implIndex="tadder" control="no" opType="all" coreId="10" contextFuncName="uc_load_tile_8_s" bitwidth="10" opcode="sub" nodeLabel="2.0" m_display="0" m_topoIndex="36" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="../gen2/Hls_Layers_UpConv.tpp" linenumber="216" fileDirectory="/home/hoinguyen/Documents/Vitis/UpConv_HLS/upconv_core" functionName="UpConv_Fused_Row&amp;lt;8&amp;gt;"/>
+        <inlineStackInfo fileName="../gen2/Hls_Layers_UpConv.tpp" linenumber="219" fileDirectory="/home/hoinguyen/Documents/Vitis/UpConv_HLS/upconv_core" functionName="_Z16UpConv_Fused_RowILi8EEvP7ap_uintILi256EEPKS1_S4_S4_S4_S2_Dhiiiii_for.inc28"/>
+        <inlineStackInfo fileName="../gen2/Hls_Layers_UpConv.tpp" linenumber="86" fileDirectory="/home/hoinguyen/Documents/Vitis/UpConv_HLS/upconv_core" functionName="uc_load_tile&amp;lt;8&amp;gt;"/>
+        <dataInputObjs>bitconcatenate</dataInputObjs>
+        <dataInputObjs>bitconcatenate</dataInputObjs>
+        <dataOutputObjs>add</dataOutputObjs>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="54" name="add_ln86" lineNumber="86" fileName="../gen2/Hls_Layers_UpConv.tpp" fileDirectory="../." rtlName="add_ln86_fu_375_p2" coreName="TAddSub" implIndex="tadder" control="no" opType="all" coreId="10" contextFuncName="uc_load_tile_8_s" bitwidth="10" opcode="add" nodeLabel="2.0" m_display="0" m_delay="0.96" m_topoIndex="37" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="../gen2/Hls_Layers_UpConv.tpp" linenumber="216" fileDirectory="/home/hoinguyen/Documents/Vitis/UpConv_HLS/upconv_core" functionName="UpConv_Fused_Row&amp;lt;8&amp;gt;"/>
+        <inlineStackInfo fileName="../gen2/Hls_Layers_UpConv.tpp" linenumber="219" fileDirectory="/home/hoinguyen/Documents/Vitis/UpConv_HLS/upconv_core" functionName="_Z16UpConv_Fused_RowILi8EEvP7ap_uintILi256EEPKS1_S4_S4_S4_S2_Dhiiiii_for.inc28"/>
+        <inlineStackInfo fileName="../gen2/Hls_Layers_UpConv.tpp" linenumber="86" fileDirectory="/home/hoinguyen/Documents/Vitis/UpConv_HLS/upconv_core" functionName="uc_load_tile&amp;lt;8&amp;gt;"/>
+        <dataInputObjs>sub</dataInputObjs>
+        <dataInputObjs>trunc</dataInputObjs>
+        <dataOutputObjs>zext</dataOutputObjs>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="55" name="zext_ln86" lineNumber="86" fileName="../gen2/Hls_Layers_UpConv.tpp" fileDirectory="../." rtlName="zext_ln86_fu_380_p1" coreId="4294967295" contextFuncName="uc_load_tile_8_s" bitwidth="64" opcode="zext" nodeLabel="2.0" m_display="0" m_topoIndex="38" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="../gen2/Hls_Layers_UpConv.tpp" linenumber="216" fileDirectory="/home/hoinguyen/Documents/Vitis/UpConv_HLS/upconv_core" functionName="UpConv_Fused_Row&amp;lt;8&amp;gt;"/>
+        <inlineStackInfo fileName="../gen2/Hls_Layers_UpConv.tpp" linenumber="219" fileDirectory="/home/hoinguyen/Documents/Vitis/UpConv_HLS/upconv_core" functionName="_Z16UpConv_Fused_RowILi8EEvP7ap_uintILi256EEPKS1_S4_S4_S4_S2_Dhiiiii_for.inc28"/>
+        <inlineStackInfo fileName="../gen2/Hls_Layers_UpConv.tpp" linenumber="86" fileDirectory="/home/hoinguyen/Documents/Vitis/UpConv_HLS/upconv_core" functionName="uc_load_tile&amp;lt;8&amp;gt;"/>
+        <dataInputObjs>add</dataInputObjs>
+        <dataOutputObjs>getelementptr</dataOutputObjs>
+        <dataOutputObjs>getelementptr</dataOutputObjs>
+        <dataOutputObjs>getelementptr</dataOutputObjs>
+        <dataOutputObjs>getelementptr</dataOutputObjs>
+        <dataOutputObjs>getelementptr</dataOutputObjs>
+        <dataOutputObjs>getelementptr</dataOutputObjs>
+        <dataOutputObjs>getelementptr</dataOutputObjs>
+        <dataOutputObjs>getelementptr</dataOutputObjs>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="56" name="wbuf_4_i_addr" lineNumber="86" fileName="../gen2/Hls_Layers_UpConv.tpp" fileDirectory="../." coreId="4294967295" contextFuncName="uc_load_tile_8_s" bitwidth="10" opcode="getelementptr" nodeLabel="2.0" m_display="0" m_topoIndex="39" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="../gen2/Hls_Layers_UpConv.tpp" linenumber="216" fileDirectory="/home/hoinguyen/Documents/Vitis/UpConv_HLS/upconv_core" functionName="UpConv_Fused_Row&amp;lt;8&amp;gt;"/>
+        <inlineStackInfo fileName="../gen2/Hls_Layers_UpConv.tpp" linenumber="219" fileDirectory="/home/hoinguyen/Documents/Vitis/UpConv_HLS/upconv_core" functionName="_Z16UpConv_Fused_RowILi8EEvP7ap_uintILi256EEPKS1_S4_S4_S4_S2_Dhiiiii_for.inc28"/>
+        <inlineStackInfo fileName="../gen2/Hls_Layers_UpConv.tpp" linenumber="86" fileDirectory="/home/hoinguyen/Documents/Vitis/UpConv_HLS/upconv_core" functionName="uc_load_tile&amp;lt;8&amp;gt;"/>
+        <dataInputObjs>zext</dataInputObjs>
+        <dataOutputObjs>store</dataOutputObjs>
+        <dataOutputObjs>wbuf_4_i</dataOutputObjs>
+        <constName>empty</constName>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="57" name="wbuf_1_i_addr" lineNumber="86" fileName="../gen2/Hls_Layers_UpConv.tpp" fileDirectory="../." coreId="4294967295" contextFuncName="uc_load_tile_8_s" bitwidth="10" opcode="getelementptr" nodeLabel="2.0" m_display="0" m_topoIndex="40" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="../gen2/Hls_Layers_UpConv.tpp" linenumber="216" fileDirectory="/home/hoinguyen/Documents/Vitis/UpConv_HLS/upconv_core" functionName="UpConv_Fused_Row&amp;lt;8&amp;gt;"/>
+        <inlineStackInfo fileName="../gen2/Hls_Layers_UpConv.tpp" linenumber="219" fileDirectory="/home/hoinguyen/Documents/Vitis/UpConv_HLS/upconv_core" functionName="_Z16UpConv_Fused_RowILi8EEvP7ap_uintILi256EEPKS1_S4_S4_S4_S2_Dhiiiii_for.inc28"/>
+        <inlineStackInfo fileName="../gen2/Hls_Layers_UpConv.tpp" linenumber="86" fileDirectory="/home/hoinguyen/Documents/Vitis/UpConv_HLS/upconv_core" functionName="uc_load_tile&amp;lt;8&amp;gt;"/>
+        <dataInputObjs>zext</dataInputObjs>
+        <dataOutputObjs>wbuf_1_i</dataOutputObjs>
+        <dataOutputObjs>store</dataOutputObjs>
+        <constName>empty</constName>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="58" name="wbuf_2_i_addr" lineNumber="86" fileName="../gen2/Hls_Layers_UpConv.tpp" fileDirectory="../." coreId="4294967295" contextFuncName="uc_load_tile_8_s" bitwidth="10" opcode="getelementptr" nodeLabel="2.0" m_display="0" m_topoIndex="41" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="../gen2/Hls_Layers_UpConv.tpp" linenumber="216" fileDirectory="/home/hoinguyen/Documents/Vitis/UpConv_HLS/upconv_core" functionName="UpConv_Fused_Row&amp;lt;8&amp;gt;"/>
+        <inlineStackInfo fileName="../gen2/Hls_Layers_UpConv.tpp" linenumber="219" fileDirectory="/home/hoinguyen/Documents/Vitis/UpConv_HLS/upconv_core" functionName="_Z16UpConv_Fused_RowILi8EEvP7ap_uintILi256EEPKS1_S4_S4_S4_S2_Dhiiiii_for.inc28"/>
+        <inlineStackInfo fileName="../gen2/Hls_Layers_UpConv.tpp" linenumber="86" fileDirectory="/home/hoinguyen/Documents/Vitis/UpConv_HLS/upconv_core" functionName="uc_load_tile&amp;lt;8&amp;gt;"/>
+        <dataInputObjs>zext</dataInputObjs>
+        <dataOutputObjs>wbuf_2_i</dataOutputObjs>
+        <dataOutputObjs>store</dataOutputObjs>
+        <constName>empty</constName>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="59" name="wbuf_3_i_addr" lineNumber="86" fileName="../gen2/Hls_Layers_UpConv.tpp" fileDirectory="../." coreId="4294967295" contextFuncName="uc_load_tile_8_s" bitwidth="10" opcode="getelementptr" nodeLabel="2.0" m_display="0" m_topoIndex="42" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="../gen2/Hls_Layers_UpConv.tpp" linenumber="216" fileDirectory="/home/hoinguyen/Documents/Vitis/UpConv_HLS/upconv_core" functionName="UpConv_Fused_Row&amp;lt;8&amp;gt;"/>
+        <inlineStackInfo fileName="../gen2/Hls_Layers_UpConv.tpp" linenumber="219" fileDirectory="/home/hoinguyen/Documents/Vitis/UpConv_HLS/upconv_core" functionName="_Z16UpConv_Fused_RowILi8EEvP7ap_uintILi256EEPKS1_S4_S4_S4_S2_Dhiiiii_for.inc28"/>
+        <inlineStackInfo fileName="../gen2/Hls_Layers_UpConv.tpp" linenumber="86" fileDirectory="/home/hoinguyen/Documents/Vitis/UpConv_HLS/upconv_core" functionName="uc_load_tile&amp;lt;8&amp;gt;"/>
+        <dataInputObjs>zext</dataInputObjs>
+        <dataOutputObjs>wbuf_3_i</dataOutputObjs>
+        <dataOutputObjs>store</dataOutputObjs>
+        <constName>empty</constName>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="60" name="wbuf_3_i_addr_193" lineNumber="86" fileName="../gen2/Hls_Layers_UpConv.tpp" fileDirectory="../." coreId="4294967295" contextFuncName="uc_load_tile_8_s" bitwidth="10" opcode="getelementptr" nodeLabel="2.0" m_display="0" m_topoIndex="43" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="../gen2/Hls_Layers_UpConv.tpp" linenumber="216" fileDirectory="/home/hoinguyen/Documents/Vitis/UpConv_HLS/upconv_core" functionName="UpConv_Fused_Row&amp;lt;8&amp;gt;"/>
+        <inlineStackInfo fileName="../gen2/Hls_Layers_UpConv.tpp" linenumber="219" fileDirectory="/home/hoinguyen/Documents/Vitis/UpConv_HLS/upconv_core" functionName="_Z16UpConv_Fused_RowILi8EEvP7ap_uintILi256EEPKS1_S4_S4_S4_S2_Dhiiiii_for.inc28"/>
+        <inlineStackInfo fileName="../gen2/Hls_Layers_UpConv.tpp" linenumber="86" fileDirectory="/home/hoinguyen/Documents/Vitis/UpConv_HLS/upconv_core" functionName="uc_load_tile&amp;lt;8&amp;gt;"/>
+        <dataInputObjs>zext</dataInputObjs>
+        <dataOutputObjs>wbuf_3_i_162</dataOutputObjs>
+        <dataOutputObjs>store</dataOutputObjs>
+        <constName>empty</constName>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="61" name="wbuf_2_i_addr_194" lineNumber="86" fileName="../gen2/Hls_Layers_UpConv.tpp" fileDirectory="../." coreId="4294967295" contextFuncName="uc_load_tile_8_s" bitwidth="10" opcode="getelementptr" nodeLabel="2.0" m_display="0" m_topoIndex="44" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="../gen2/Hls_Layers_UpConv.tpp" linenumber="216" fileDirectory="/home/hoinguyen/Documents/Vitis/UpConv_HLS/upconv_core" functionName="UpConv_Fused_Row&amp;lt;8&amp;gt;"/>
+        <inlineStackInfo fileName="../gen2/Hls_Layers_UpConv.tpp" linenumber="219" fileDirectory="/home/hoinguyen/Documents/Vitis/UpConv_HLS/upconv_core" functionName="_Z16UpConv_Fused_RowILi8EEvP7ap_uintILi256EEPKS1_S4_S4_S4_S2_Dhiiiii_for.inc28"/>
+        <inlineStackInfo fileName="../gen2/Hls_Layers_UpConv.tpp" linenumber="86" fileDirectory="/home/hoinguyen/Documents/Vitis/UpConv_HLS/upconv_core" functionName="uc_load_tile&amp;lt;8&amp;gt;"/>
+        <dataInputObjs>zext</dataInputObjs>
+        <dataOutputObjs>wbuf_2_i_163</dataOutputObjs>
+        <dataOutputObjs>store</dataOutputObjs>
+        <constName>empty</constName>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="62" name="wbuf_1_i_addr_195" lineNumber="86" fileName="../gen2/Hls_Layers_UpConv.tpp" fileDirectory="../." coreId="4294967295" contextFuncName="uc_load_tile_8_s" bitwidth="10" opcode="getelementptr" nodeLabel="2.0" m_display="0" m_topoIndex="45" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="../gen2/Hls_Layers_UpConv.tpp" linenumber="216" fileDirectory="/home/hoinguyen/Documents/Vitis/UpConv_HLS/upconv_core" functionName="UpConv_Fused_Row&amp;lt;8&amp;gt;"/>
+        <inlineStackInfo fileName="../gen2/Hls_Layers_UpConv.tpp" linenumber="219" fileDirectory="/home/hoinguyen/Documents/Vitis/UpConv_HLS/upconv_core" functionName="_Z16UpConv_Fused_RowILi8EEvP7ap_uintILi256EEPKS1_S4_S4_S4_S2_Dhiiiii_for.inc28"/>
+        <inlineStackInfo fileName="../gen2/Hls_Layers_UpConv.tpp" linenumber="86" fileDirectory="/home/hoinguyen/Documents/Vitis/UpConv_HLS/upconv_core" functionName="uc_load_tile&amp;lt;8&amp;gt;"/>
+        <dataInputObjs>zext</dataInputObjs>
+        <dataOutputObjs>wbuf_1_i_164</dataOutputObjs>
+        <dataOutputObjs>store</dataOutputObjs>
+        <constName>empty</constName>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="63" name="wbuf_i_addr" lineNumber="86" fileName="../gen2/Hls_Layers_UpConv.tpp" fileDirectory="../." coreId="4294967295" contextFuncName="uc_load_tile_8_s" bitwidth="10" opcode="getelementptr" nodeLabel="2.0" m_display="0" m_topoIndex="46" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="../gen2/Hls_Layers_UpConv.tpp" linenumber="216" fileDirectory="/home/hoinguyen/Documents/Vitis/UpConv_HLS/upconv_core" functionName="UpConv_Fused_Row&amp;lt;8&amp;gt;"/>
+        <inlineStackInfo fileName="../gen2/Hls_Layers_UpConv.tpp" linenumber="219" fileDirectory="/home/hoinguyen/Documents/Vitis/UpConv_HLS/upconv_core" functionName="_Z16UpConv_Fused_RowILi8EEvP7ap_uintILi256EEPKS1_S4_S4_S4_S2_Dhiiiii_for.inc28"/>
+        <inlineStackInfo fileName="../gen2/Hls_Layers_UpConv.tpp" linenumber="86" fileDirectory="/home/hoinguyen/Documents/Vitis/UpConv_HLS/upconv_core" functionName="uc_load_tile&amp;lt;8&amp;gt;"/>
+        <dataInputObjs>zext</dataInputObjs>
+        <dataOutputObjs>wbuf_i</dataOutputObjs>
+        <dataOutputObjs>store</dataOutputObjs>
+        <constName>empty</constName>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="64" name="gmem_weight_addr_read" lineNumber="86" fileName="../gen2/Hls_Layers_UpConv.tpp" fileDirectory="../." coreName="m_axi" implIndex="m_axi" control="no" opType="adapter" coreId="119" contextFuncName="uc_load_tile_8_s" bitwidth="256" opcode="read" nodeLabel="1.0" m_display="0" m_delay="2.43" m_topoIndex="23" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="../gen2/Hls_Layers_UpConv.tpp" linenumber="216" fileDirectory="/home/hoinguyen/Documents/Vitis/UpConv_HLS/upconv_core" functionName="UpConv_Fused_Row&amp;lt;8&amp;gt;"/>
+        <inlineStackInfo fileName="../gen2/Hls_Layers_UpConv.tpp" linenumber="219" fileDirectory="/home/hoinguyen/Documents/Vitis/UpConv_HLS/upconv_core" functionName="_Z16UpConv_Fused_RowILi8EEvP7ap_uintILi256EEPKS1_S4_S4_S4_S2_Dhiiiii_for.inc28"/>
+        <inlineStackInfo fileName="../gen2/Hls_Layers_UpConv.tpp" linenumber="86" fileDirectory="/home/hoinguyen/Documents/Vitis/UpConv_HLS/upconv_core" functionName="uc_load_tile&amp;lt;8&amp;gt;"/>
+        <dataInputObjs>getelementptr</dataInputObjs>
+        <dataOutputObjs>store</dataOutputObjs>
+        <dataOutputObjs>store</dataOutputObjs>
+        <dataOutputObjs>store</dataOutputObjs>
+        <dataOutputObjs>store</dataOutputObjs>
+        <dataOutputObjs>store</dataOutputObjs>
+        <dataOutputObjs>store</dataOutputObjs>
+        <dataOutputObjs>store</dataOutputObjs>
+        <dataOutputObjs>store</dataOutputObjs>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="65" name="_ln86" lineNumber="86" fileName="../gen2/Hls_Layers_UpConv.tpp" fileDirectory="../." coreId="4294967295" contextFuncName="uc_load_tile_8_s" opcode="switch" m_display="0" m_delay="0.67" m_topoIndex="18" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="../gen2/Hls_Layers_UpConv.tpp" linenumber="216" fileDirectory="/home/hoinguyen/Documents/Vitis/UpConv_HLS/upconv_core" functionName="UpConv_Fused_Row&amp;lt;8&amp;gt;"/>
+        <inlineStackInfo fileName="../gen2/Hls_Layers_UpConv.tpp" linenumber="219" fileDirectory="/home/hoinguyen/Documents/Vitis/UpConv_HLS/upconv_core" functionName="_Z16UpConv_Fused_RowILi8EEvP7ap_uintILi256EEPKS1_S4_S4_S4_S2_Dhiiiii_for.inc28"/>
+        <inlineStackInfo fileName="../gen2/Hls_Layers_UpConv.tpp" linenumber="86" fileDirectory="/home/hoinguyen/Documents/Vitis/UpConv_HLS/upconv_core" functionName="uc_load_tile&amp;lt;8&amp;gt;"/>
+        <dataInputObjs>read</dataInputObjs>
+        <controlInputObjs>arrayidx1511.case.7.i</controlInputObjs>
+        <controlInputObjs>arrayidx1511.case.0.i</controlInputObjs>
+        <controlInputObjs>arrayidx1511.case.1.i</controlInputObjs>
+        <controlInputObjs>arrayidx1511.case.2.i</controlInputObjs>
+        <controlInputObjs>arrayidx1511.case.3.i</controlInputObjs>
+        <controlInputObjs>arrayidx1511.case.4.i</controlInputObjs>
+        <controlInputObjs>arrayidx1511.case.5.i</controlInputObjs>
+        <controlInputObjs>arrayidx1511.case.6.i</controlInputObjs>
+        <constName>empty</constName>
+      </node_objs>
+      <fileValidLineNumbers fileName="../gen2/Hls_Layers_UpConv.tpp">
+        <validLinenumbers>86</validLinenumbers>
+        <validLinenumbers>83</validLinenumbers>
+        <validLinenumbers>216</validLinenumbers>
+        <validLinenumbers>219</validLinenumbers>
+      </fileValidLineNumbers>
+    </basic_blocks>
+    <basic_blocks id="69" name="arrayidx1511.case.6.i" type="BlockType">
+      <controlInputObjs>for.body6.split.i</controlInputObjs>
+      <controlOutputObjs>switch</controlOutputObjs>
+      <controlOutputObjs>arrayidx1511.exit.i</controlOutputObjs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="67" name="wbuf_1_i_addr_195_write_ln86" lineNumber="86" fileName="../gen2/Hls_Layers_UpConv.tpp" fileDirectory="../." coreName="RAM_T2P_URAM" implIndex="uram" control="no" opType="ram_t2p" coreId="99" contextFuncName="uc_load_tile_8_s" opcode="store" nodeLabel="2.0" m_display="0" m_delay="1.23" m_topoIndex="47" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="../gen2/Hls_Layers_UpConv.tpp" linenumber="216" fileDirectory="/home/hoinguyen/Documents/Vitis/UpConv_HLS/upconv_core" functionName="UpConv_Fused_Row&amp;lt;8&amp;gt;"/>
+        <inlineStackInfo fileName="../gen2/Hls_Layers_UpConv.tpp" linenumber="219" fileDirectory="/home/hoinguyen/Documents/Vitis/UpConv_HLS/upconv_core" functionName="_Z16UpConv_Fused_RowILi8EEvP7ap_uintILi256EEPKS1_S4_S4_S4_S2_Dhiiiii_for.inc28"/>
+        <inlineStackInfo fileName="../gen2/Hls_Layers_UpConv.tpp" linenumber="86" fileDirectory="/home/hoinguyen/Documents/Vitis/UpConv_HLS/upconv_core" functionName="uc_load_tile&amp;lt;8&amp;gt;"/>
+        <dataInputObjs>read</dataInputObjs>
+        <dataInputObjs>getelementptr</dataInputObjs>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="68" name="br_ln86" lineNumber="86" fileName="../gen2/Hls_Layers_UpConv.tpp" fileDirectory="../." coreId="4294967295" contextFuncName="uc_load_tile_8_s" opcode="br" nodeLabel="2.0" m_display="0" m_topoIndex="48" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="../gen2/Hls_Layers_UpConv.tpp" linenumber="216" fileDirectory="/home/hoinguyen/Documents/Vitis/UpConv_HLS/upconv_core" functionName="UpConv_Fused_Row&amp;lt;8&amp;gt;"/>
+        <inlineStackInfo fileName="../gen2/Hls_Layers_UpConv.tpp" linenumber="219" fileDirectory="/home/hoinguyen/Documents/Vitis/UpConv_HLS/upconv_core" functionName="_Z16UpConv_Fused_RowILi8EEvP7ap_uintILi256EEPKS1_S4_S4_S4_S2_Dhiiiii_for.inc28"/>
+        <inlineStackInfo fileName="../gen2/Hls_Layers_UpConv.tpp" linenumber="86" fileDirectory="/home/hoinguyen/Documents/Vitis/UpConv_HLS/upconv_core" functionName="uc_load_tile&amp;lt;8&amp;gt;"/>
+        <controlInputObjs>arrayidx1511.exit.i</controlInputObjs>
+      </node_objs>
+      <fileValidLineNumbers fileName="../gen2/Hls_Layers_UpConv.tpp">
+        <validLinenumbers>86</validLinenumbers>
+        <validLinenumbers>216</validLinenumbers>
+        <validLinenumbers>219</validLinenumbers>
+      </fileValidLineNumbers>
+    </basic_blocks>
+    <basic_blocks id="72" name="arrayidx1511.case.5.i" type="BlockType">
+      <controlInputObjs>for.body6.split.i</controlInputObjs>
+      <controlOutputObjs>switch</controlOutputObjs>
+      <controlOutputObjs>arrayidx1511.exit.i</controlOutputObjs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="70" name="wbuf_2_i_addr_194_write_ln86" lineNumber="86" fileName="../gen2/Hls_Layers_UpConv.tpp" fileDirectory="../." coreName="RAM_T2P_URAM" implIndex="uram" control="no" opType="ram_t2p" coreId="99" contextFuncName="uc_load_tile_8_s" opcode="store" nodeLabel="2.0" m_display="0" m_delay="1.23" m_topoIndex="49" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="../gen2/Hls_Layers_UpConv.tpp" linenumber="216" fileDirectory="/home/hoinguyen/Documents/Vitis/UpConv_HLS/upconv_core" functionName="UpConv_Fused_Row&amp;lt;8&amp;gt;"/>
+        <inlineStackInfo fileName="../gen2/Hls_Layers_UpConv.tpp" linenumber="219" fileDirectory="/home/hoinguyen/Documents/Vitis/UpConv_HLS/upconv_core" functionName="_Z16UpConv_Fused_RowILi8EEvP7ap_uintILi256EEPKS1_S4_S4_S4_S2_Dhiiiii_for.inc28"/>
+        <inlineStackInfo fileName="../gen2/Hls_Layers_UpConv.tpp" linenumber="86" fileDirectory="/home/hoinguyen/Documents/Vitis/UpConv_HLS/upconv_core" functionName="uc_load_tile&amp;lt;8&amp;gt;"/>
+        <dataInputObjs>read</dataInputObjs>
+        <dataInputObjs>getelementptr</dataInputObjs>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="71" name="br_ln86" lineNumber="86" fileName="../gen2/Hls_Layers_UpConv.tpp" fileDirectory="../." coreId="4294967295" contextFuncName="uc_load_tile_8_s" opcode="br" nodeLabel="2.0" m_display="0" m_topoIndex="50" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="../gen2/Hls_Layers_UpConv.tpp" linenumber="216" fileDirectory="/home/hoinguyen/Documents/Vitis/UpConv_HLS/upconv_core" functionName="UpConv_Fused_Row&amp;lt;8&amp;gt;"/>
+        <inlineStackInfo fileName="../gen2/Hls_Layers_UpConv.tpp" linenumber="219" fileDirectory="/home/hoinguyen/Documents/Vitis/UpConv_HLS/upconv_core" functionName="_Z16UpConv_Fused_RowILi8EEvP7ap_uintILi256EEPKS1_S4_S4_S4_S2_Dhiiiii_for.inc28"/>
+        <inlineStackInfo fileName="../gen2/Hls_Layers_UpConv.tpp" linenumber="86" fileDirectory="/home/hoinguyen/Documents/Vitis/UpConv_HLS/upconv_core" functionName="uc_load_tile&amp;lt;8&amp;gt;"/>
+        <controlInputObjs>arrayidx1511.exit.i</controlInputObjs>
+      </node_objs>
+      <fileValidLineNumbers fileName="../gen2/Hls_Layers_UpConv.tpp">
+        <validLinenumbers>86</validLinenumbers>
+        <validLinenumbers>216</validLinenumbers>
+        <validLinenumbers>219</validLinenumbers>
+      </fileValidLineNumbers>
+    </basic_blocks>
+    <basic_blocks id="75" name="arrayidx1511.case.4.i" type="BlockType">
+      <controlInputObjs>for.body6.split.i</controlInputObjs>
+      <controlOutputObjs>switch</controlOutputObjs>
+      <controlOutputObjs>arrayidx1511.exit.i</controlOutputObjs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="73" name="wbuf_3_i_addr_193_write_ln86" lineNumber="86" fileName="../gen2/Hls_Layers_UpConv.tpp" fileDirectory="../." coreName="RAM_T2P_URAM" implIndex="uram" control="no" opType="ram_t2p" coreId="99" contextFuncName="uc_load_tile_8_s" opcode="store" nodeLabel="2.0" m_display="0" m_delay="1.23" m_topoIndex="51" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="../gen2/Hls_Layers_UpConv.tpp" linenumber="216" fileDirectory="/home/hoinguyen/Documents/Vitis/UpConv_HLS/upconv_core" functionName="UpConv_Fused_Row&amp;lt;8&amp;gt;"/>
+        <inlineStackInfo fileName="../gen2/Hls_Layers_UpConv.tpp" linenumber="219" fileDirectory="/home/hoinguyen/Documents/Vitis/UpConv_HLS/upconv_core" functionName="_Z16UpConv_Fused_RowILi8EEvP7ap_uintILi256EEPKS1_S4_S4_S4_S2_Dhiiiii_for.inc28"/>
+        <inlineStackInfo fileName="../gen2/Hls_Layers_UpConv.tpp" linenumber="86" fileDirectory="/home/hoinguyen/Documents/Vitis/UpConv_HLS/upconv_core" functionName="uc_load_tile&amp;lt;8&amp;gt;"/>
+        <dataInputObjs>read</dataInputObjs>
+        <dataInputObjs>getelementptr</dataInputObjs>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="74" name="br_ln86" lineNumber="86" fileName="../gen2/Hls_Layers_UpConv.tpp" fileDirectory="../." coreId="4294967295" contextFuncName="uc_load_tile_8_s" opcode="br" nodeLabel="2.0" m_display="0" m_topoIndex="52" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="../gen2/Hls_Layers_UpConv.tpp" linenumber="216" fileDirectory="/home/hoinguyen/Documents/Vitis/UpConv_HLS/upconv_core" functionName="UpConv_Fused_Row&amp;lt;8&amp;gt;"/>
+        <inlineStackInfo fileName="../gen2/Hls_Layers_UpConv.tpp" linenumber="219" fileDirectory="/home/hoinguyen/Documents/Vitis/UpConv_HLS/upconv_core" functionName="_Z16UpConv_Fused_RowILi8EEvP7ap_uintILi256EEPKS1_S4_S4_S4_S2_Dhiiiii_for.inc28"/>
+        <inlineStackInfo fileName="../gen2/Hls_Layers_UpConv.tpp" linenumber="86" fileDirectory="/home/hoinguyen/Documents/Vitis/UpConv_HLS/upconv_core" functionName="uc_load_tile&amp;lt;8&amp;gt;"/>
+        <controlInputObjs>arrayidx1511.exit.i</controlInputObjs>
+      </node_objs>
+      <fileValidLineNumbers fileName="../gen2/Hls_Layers_UpConv.tpp">
+        <validLinenumbers>86</validLinenumbers>
+        <validLinenumbers>216</validLinenumbers>
+        <validLinenumbers>219</validLinenumbers>
+      </fileValidLineNumbers>
+    </basic_blocks>
+    <basic_blocks id="78" name="arrayidx1511.case.3.i" type="BlockType">
+      <controlInputObjs>for.body6.split.i</controlInputObjs>
+      <controlOutputObjs>switch</controlOutputObjs>
+      <controlOutputObjs>arrayidx1511.exit.i</controlOutputObjs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="76" name="wbuf_3_i_addr_write_ln86" lineNumber="86" fileName="../gen2/Hls_Layers_UpConv.tpp" fileDirectory="../." coreName="RAM_T2P_URAM" implIndex="uram" control="no" opType="ram_t2p" coreId="99" contextFuncName="uc_load_tile_8_s" opcode="store" nodeLabel="2.0" m_display="0" m_delay="1.23" m_topoIndex="53" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="../gen2/Hls_Layers_UpConv.tpp" linenumber="216" fileDirectory="/home/hoinguyen/Documents/Vitis/UpConv_HLS/upconv_core" functionName="UpConv_Fused_Row&amp;lt;8&amp;gt;"/>
+        <inlineStackInfo fileName="../gen2/Hls_Layers_UpConv.tpp" linenumber="219" fileDirectory="/home/hoinguyen/Documents/Vitis/UpConv_HLS/upconv_core" functionName="_Z16UpConv_Fused_RowILi8EEvP7ap_uintILi256EEPKS1_S4_S4_S4_S2_Dhiiiii_for.inc28"/>
+        <inlineStackInfo fileName="../gen2/Hls_Layers_UpConv.tpp" linenumber="86" fileDirectory="/home/hoinguyen/Documents/Vitis/UpConv_HLS/upconv_core" functionName="uc_load_tile&amp;lt;8&amp;gt;"/>
+        <dataInputObjs>read</dataInputObjs>
+        <dataInputObjs>getelementptr</dataInputObjs>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="77" name="br_ln86" lineNumber="86" fileName="../gen2/Hls_Layers_UpConv.tpp" fileDirectory="../." coreId="4294967295" contextFuncName="uc_load_tile_8_s" opcode="br" nodeLabel="2.0" m_display="0" m_topoIndex="54" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="../gen2/Hls_Layers_UpConv.tpp" linenumber="216" fileDirectory="/home/hoinguyen/Documents/Vitis/UpConv_HLS/upconv_core" functionName="UpConv_Fused_Row&amp;lt;8&amp;gt;"/>
+        <inlineStackInfo fileName="../gen2/Hls_Layers_UpConv.tpp" linenumber="219" fileDirectory="/home/hoinguyen/Documents/Vitis/UpConv_HLS/upconv_core" functionName="_Z16UpConv_Fused_RowILi8EEvP7ap_uintILi256EEPKS1_S4_S4_S4_S2_Dhiiiii_for.inc28"/>
+        <inlineStackInfo fileName="../gen2/Hls_Layers_UpConv.tpp" linenumber="86" fileDirectory="/home/hoinguyen/Documents/Vitis/UpConv_HLS/upconv_core" functionName="uc_load_tile&amp;lt;8&amp;gt;"/>
+        <controlInputObjs>arrayidx1511.exit.i</controlInputObjs>
+      </node_objs>
+      <fileValidLineNumbers fileName="../gen2/Hls_Layers_UpConv.tpp">
+        <validLinenumbers>86</validLinenumbers>
+        <validLinenumbers>216</validLinenumbers>
+        <validLinenumbers>219</validLinenumbers>
+      </fileValidLineNumbers>
+    </basic_blocks>
+    <basic_blocks id="81" name="arrayidx1511.case.2.i" type="BlockType">
+      <controlInputObjs>for.body6.split.i</controlInputObjs>
+      <controlOutputObjs>switch</controlOutputObjs>
+      <controlOutputObjs>arrayidx1511.exit.i</controlOutputObjs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="79" name="wbuf_2_i_addr_write_ln86" lineNumber="86" fileName="../gen2/Hls_Layers_UpConv.tpp" fileDirectory="../." coreName="RAM_T2P_URAM" implIndex="uram" control="no" opType="ram_t2p" coreId="99" contextFuncName="uc_load_tile_8_s" opcode="store" nodeLabel="2.0" m_display="0" m_delay="1.23" m_topoIndex="55" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="../gen2/Hls_Layers_UpConv.tpp" linenumber="216" fileDirectory="/home/hoinguyen/Documents/Vitis/UpConv_HLS/upconv_core" functionName="UpConv_Fused_Row&amp;lt;8&amp;gt;"/>
+        <inlineStackInfo fileName="../gen2/Hls_Layers_UpConv.tpp" linenumber="219" fileDirectory="/home/hoinguyen/Documents/Vitis/UpConv_HLS/upconv_core" functionName="_Z16UpConv_Fused_RowILi8EEvP7ap_uintILi256EEPKS1_S4_S4_S4_S2_Dhiiiii_for.inc28"/>
+        <inlineStackInfo fileName="../gen2/Hls_Layers_UpConv.tpp" linenumber="86" fileDirectory="/home/hoinguyen/Documents/Vitis/UpConv_HLS/upconv_core" functionName="uc_load_tile&amp;lt;8&amp;gt;"/>
+        <dataInputObjs>read</dataInputObjs>
+        <dataInputObjs>getelementptr</dataInputObjs>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="80" name="br_ln86" lineNumber="86" fileName="../gen2/Hls_Layers_UpConv.tpp" fileDirectory="../." coreId="4294967295" contextFuncName="uc_load_tile_8_s" opcode="br" nodeLabel="2.0" m_display="0" m_topoIndex="56" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="../gen2/Hls_Layers_UpConv.tpp" linenumber="216" fileDirectory="/home/hoinguyen/Documents/Vitis/UpConv_HLS/upconv_core" functionName="UpConv_Fused_Row&amp;lt;8&amp;gt;"/>
+        <inlineStackInfo fileName="../gen2/Hls_Layers_UpConv.tpp" linenumber="219" fileDirectory="/home/hoinguyen/Documents/Vitis/UpConv_HLS/upconv_core" functionName="_Z16UpConv_Fused_RowILi8EEvP7ap_uintILi256EEPKS1_S4_S4_S4_S2_Dhiiiii_for.inc28"/>
+        <inlineStackInfo fileName="../gen2/Hls_Layers_UpConv.tpp" linenumber="86" fileDirectory="/home/hoinguyen/Documents/Vitis/UpConv_HLS/upconv_core" functionName="uc_load_tile&amp;lt;8&amp;gt;"/>
+        <controlInputObjs>arrayidx1511.exit.i</controlInputObjs>
+      </node_objs>
+      <fileValidLineNumbers fileName="../gen2/Hls_Layers_UpConv.tpp">
+        <validLinenumbers>86</validLinenumbers>
+        <validLinenumbers>216</validLinenumbers>
+        <validLinenumbers>219</validLinenumbers>
+      </fileValidLineNumbers>
+    </basic_blocks>
+    <basic_blocks id="84" name="arrayidx1511.case.1.i" type="BlockType">
+      <controlInputObjs>for.body6.split.i</controlInputObjs>
+      <controlOutputObjs>switch</controlOutputObjs>
+      <controlOutputObjs>arrayidx1511.exit.i</controlOutputObjs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="82" name="wbuf_1_i_addr_write_ln86" lineNumber="86" fileName="../gen2/Hls_Layers_UpConv.tpp" fileDirectory="../." coreName="RAM_T2P_URAM" implIndex="uram" control="no" opType="ram_t2p" coreId="99" contextFuncName="uc_load_tile_8_s" opcode="store" nodeLabel="2.0" m_display="0" m_delay="1.23" m_topoIndex="57" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="../gen2/Hls_Layers_UpConv.tpp" linenumber="216" fileDirectory="/home/hoinguyen/Documents/Vitis/UpConv_HLS/upconv_core" functionName="UpConv_Fused_Row&amp;lt;8&amp;gt;"/>
+        <inlineStackInfo fileName="../gen2/Hls_Layers_UpConv.tpp" linenumber="219" fileDirectory="/home/hoinguyen/Documents/Vitis/UpConv_HLS/upconv_core" functionName="_Z16UpConv_Fused_RowILi8EEvP7ap_uintILi256EEPKS1_S4_S4_S4_S2_Dhiiiii_for.inc28"/>
+        <inlineStackInfo fileName="../gen2/Hls_Layers_UpConv.tpp" linenumber="86" fileDirectory="/home/hoinguyen/Documents/Vitis/UpConv_HLS/upconv_core" functionName="uc_load_tile&amp;lt;8&amp;gt;"/>
+        <dataInputObjs>read</dataInputObjs>
+        <dataInputObjs>getelementptr</dataInputObjs>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="83" name="br_ln86" lineNumber="86" fileName="../gen2/Hls_Layers_UpConv.tpp" fileDirectory="../." coreId="4294967295" contextFuncName="uc_load_tile_8_s" opcode="br" nodeLabel="2.0" m_display="0" m_topoIndex="58" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="../gen2/Hls_Layers_UpConv.tpp" linenumber="216" fileDirectory="/home/hoinguyen/Documents/Vitis/UpConv_HLS/upconv_core" functionName="UpConv_Fused_Row&amp;lt;8&amp;gt;"/>
+        <inlineStackInfo fileName="../gen2/Hls_Layers_UpConv.tpp" linenumber="219" fileDirectory="/home/hoinguyen/Documents/Vitis/UpConv_HLS/upconv_core" functionName="_Z16UpConv_Fused_RowILi8EEvP7ap_uintILi256EEPKS1_S4_S4_S4_S2_Dhiiiii_for.inc28"/>
+        <inlineStackInfo fileName="../gen2/Hls_Layers_UpConv.tpp" linenumber="86" fileDirectory="/home/hoinguyen/Documents/Vitis/UpConv_HLS/upconv_core" functionName="uc_load_tile&amp;lt;8&amp;gt;"/>
+        <controlInputObjs>arrayidx1511.exit.i</controlInputObjs>
+      </node_objs>
+      <fileValidLineNumbers fileName="../gen2/Hls_Layers_UpConv.tpp">
+        <validLinenumbers>86</validLinenumbers>
+        <validLinenumbers>216</validLinenumbers>
+        <validLinenumbers>219</validLinenumbers>
+      </fileValidLineNumbers>
+    </basic_blocks>
+    <basic_blocks id="87" name="arrayidx1511.case.0.i" type="BlockType">
+      <controlInputObjs>for.body6.split.i</controlInputObjs>
+      <controlOutputObjs>switch</controlOutputObjs>
+      <controlOutputObjs>arrayidx1511.exit.i</controlOutputObjs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="85" name="wbuf_4_i_addr_write_ln86" lineNumber="86" fileName="../gen2/Hls_Layers_UpConv.tpp" fileDirectory="../." coreName="RAM_T2P_URAM" implIndex="uram" control="no" opType="ram_t2p" coreId="99" contextFuncName="uc_load_tile_8_s" opcode="store" nodeLabel="2.0" m_display="0" m_delay="1.23" m_topoIndex="59" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="../gen2/Hls_Layers_UpConv.tpp" linenumber="216" fileDirectory="/home/hoinguyen/Documents/Vitis/UpConv_HLS/upconv_core" functionName="UpConv_Fused_Row&amp;lt;8&amp;gt;"/>
+        <inlineStackInfo fileName="../gen2/Hls_Layers_UpConv.tpp" linenumber="219" fileDirectory="/home/hoinguyen/Documents/Vitis/UpConv_HLS/upconv_core" functionName="_Z16UpConv_Fused_RowILi8EEvP7ap_uintILi256EEPKS1_S4_S4_S4_S2_Dhiiiii_for.inc28"/>
+        <inlineStackInfo fileName="../gen2/Hls_Layers_UpConv.tpp" linenumber="86" fileDirectory="/home/hoinguyen/Documents/Vitis/UpConv_HLS/upconv_core" functionName="uc_load_tile&amp;lt;8&amp;gt;"/>
+        <dataInputObjs>read</dataInputObjs>
+        <dataInputObjs>getelementptr</dataInputObjs>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="86" name="br_ln86" lineNumber="86" fileName="../gen2/Hls_Layers_UpConv.tpp" fileDirectory="../." coreId="4294967295" contextFuncName="uc_load_tile_8_s" opcode="br" nodeLabel="2.0" m_display="0" m_topoIndex="60" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="../gen2/Hls_Layers_UpConv.tpp" linenumber="216" fileDirectory="/home/hoinguyen/Documents/Vitis/UpConv_HLS/upconv_core" functionName="UpConv_Fused_Row&amp;lt;8&amp;gt;"/>
+        <inlineStackInfo fileName="../gen2/Hls_Layers_UpConv.tpp" linenumber="219" fileDirectory="/home/hoinguyen/Documents/Vitis/UpConv_HLS/upconv_core" functionName="_Z16UpConv_Fused_RowILi8EEvP7ap_uintILi256EEPKS1_S4_S4_S4_S2_Dhiiiii_for.inc28"/>
+        <inlineStackInfo fileName="../gen2/Hls_Layers_UpConv.tpp" linenumber="86" fileDirectory="/home/hoinguyen/Documents/Vitis/UpConv_HLS/upconv_core" functionName="uc_load_tile&amp;lt;8&amp;gt;"/>
+        <controlInputObjs>arrayidx1511.exit.i</controlInputObjs>
+      </node_objs>
+      <fileValidLineNumbers fileName="../gen2/Hls_Layers_UpConv.tpp">
+        <validLinenumbers>86</validLinenumbers>
+        <validLinenumbers>216</validLinenumbers>
+        <validLinenumbers>219</validLinenumbers>
+      </fileValidLineNumbers>
+    </basic_blocks>
+    <basic_blocks id="90" name="arrayidx1511.case.7.i" type="BlockType">
+      <controlInputObjs>for.body6.split.i</controlInputObjs>
+      <controlOutputObjs>switch</controlOutputObjs>
+      <controlOutputObjs>arrayidx1511.exit.i</controlOutputObjs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="88" name="wbuf_i_addr_write_ln86" lineNumber="86" fileName="../gen2/Hls_Layers_UpConv.tpp" fileDirectory="../." coreName="RAM_T2P_URAM" implIndex="uram" control="no" opType="ram_t2p" coreId="99" contextFuncName="uc_load_tile_8_s" opcode="store" nodeLabel="2.0" m_display="0" m_delay="1.23" m_topoIndex="61" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="../gen2/Hls_Layers_UpConv.tpp" linenumber="216" fileDirectory="/home/hoinguyen/Documents/Vitis/UpConv_HLS/upconv_core" functionName="UpConv_Fused_Row&amp;lt;8&amp;gt;"/>
+        <inlineStackInfo fileName="../gen2/Hls_Layers_UpConv.tpp" linenumber="219" fileDirectory="/home/hoinguyen/Documents/Vitis/UpConv_HLS/upconv_core" functionName="_Z16UpConv_Fused_RowILi8EEvP7ap_uintILi256EEPKS1_S4_S4_S4_S2_Dhiiiii_for.inc28"/>
+        <inlineStackInfo fileName="../gen2/Hls_Layers_UpConv.tpp" linenumber="86" fileDirectory="/home/hoinguyen/Documents/Vitis/UpConv_HLS/upconv_core" functionName="uc_load_tile&amp;lt;8&amp;gt;"/>
+        <dataInputObjs>read</dataInputObjs>
+        <dataInputObjs>getelementptr</dataInputObjs>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="89" name="br_ln86" lineNumber="86" fileName="../gen2/Hls_Layers_UpConv.tpp" fileDirectory="../." coreId="4294967295" contextFuncName="uc_load_tile_8_s" opcode="br" nodeLabel="2.0" m_display="0" m_topoIndex="62" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="../gen2/Hls_Layers_UpConv.tpp" linenumber="216" fileDirectory="/home/hoinguyen/Documents/Vitis/UpConv_HLS/upconv_core" functionName="UpConv_Fused_Row&amp;lt;8&amp;gt;"/>
+        <inlineStackInfo fileName="../gen2/Hls_Layers_UpConv.tpp" linenumber="219" fileDirectory="/home/hoinguyen/Documents/Vitis/UpConv_HLS/upconv_core" functionName="_Z16UpConv_Fused_RowILi8EEvP7ap_uintILi256EEPKS1_S4_S4_S4_S2_Dhiiiii_for.inc28"/>
+        <inlineStackInfo fileName="../gen2/Hls_Layers_UpConv.tpp" linenumber="86" fileDirectory="/home/hoinguyen/Documents/Vitis/UpConv_HLS/upconv_core" functionName="uc_load_tile&amp;lt;8&amp;gt;"/>
+        <controlInputObjs>arrayidx1511.exit.i</controlInputObjs>
+      </node_objs>
+      <fileValidLineNumbers fileName="../gen2/Hls_Layers_UpConv.tpp">
+        <validLinenumbers>86</validLinenumbers>
+        <validLinenumbers>216</validLinenumbers>
+        <validLinenumbers>219</validLinenumbers>
+      </fileValidLineNumbers>
+    </basic_blocks>
+    <basic_blocks id="103" name="arrayidx1511.exit.i" type="BlockType">
+      <controlInputObjs>arrayidx1511.case.6.i</controlInputObjs>
+      <controlInputObjs>arrayidx1511.case.5.i</controlInputObjs>
+      <controlInputObjs>arrayidx1511.case.4.i</controlInputObjs>
+      <controlInputObjs>arrayidx1511.case.3.i</controlInputObjs>
+      <controlInputObjs>arrayidx1511.case.2.i</controlInputObjs>
+      <controlInputObjs>arrayidx1511.case.1.i</controlInputObjs>
+      <controlInputObjs>arrayidx1511.case.0.i</controlInputObjs>
+      <controlInputObjs>arrayidx1511.case.7.i</controlInputObjs>
+      <controlOutputObjs>br</controlOutputObjs>
+      <controlOutputObjs>br</controlOutputObjs>
+      <controlOutputObjs>br</controlOutputObjs>
+      <controlOutputObjs>br</controlOutputObjs>
+      <controlOutputObjs>br</controlOutputObjs>
+      <controlOutputObjs>br</controlOutputObjs>
+      <controlOutputObjs>br</controlOutputObjs>
+      <controlOutputObjs>br</controlOutputObjs>
+      <controlOutputObjs>for.body6.i</controlOutputObjs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="91" name="k_cnt_load_1" lineNumber="88" fileName="../gen2/Hls_Layers_UpConv.tpp" fileDirectory="../." coreId="4294967295" contextFuncName="uc_load_tile_8_s" bitwidth="32" opcode="load" nodeLabel="2.0" m_display="0" m_topoIndex="63" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="../gen2/Hls_Layers_UpConv.tpp" linenumber="216" fileDirectory="/home/hoinguyen/Documents/Vitis/UpConv_HLS/upconv_core" functionName="UpConv_Fused_Row&amp;lt;8&amp;gt;"/>
+        <inlineStackInfo fileName="../gen2/Hls_Layers_UpConv.tpp" linenumber="219" fileDirectory="/home/hoinguyen/Documents/Vitis/UpConv_HLS/upconv_core" functionName="_Z16UpConv_Fused_RowILi8EEvP7ap_uintILi256EEPKS1_S4_S4_S4_S2_Dhiiiii_for.inc28"/>
+        <inlineStackInfo fileName="../gen2/Hls_Layers_UpConv.tpp" linenumber="88" fileDirectory="/home/hoinguyen/Documents/Vitis/UpConv_HLS/upconv_core" functionName="uc_load_tile&amp;lt;8&amp;gt;"/>
+        <dataInputObjs>alloca</dataInputObjs>
+        <dataOutputObjs>add</dataOutputObjs>
+        <dataOutputObjs>select</dataOutputObjs>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="92" name="ci_cnt_load_1" lineNumber="87" fileName="../gen2/Hls_Layers_UpConv.tpp" fileDirectory="../." coreId="4294967295" contextFuncName="uc_load_tile_8_s" bitwidth="32" opcode="load" nodeLabel="1.0" m_display="0" m_isOnCriticalPath="true" m_isStartOfPath="true" m_topoIndex="24" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="../gen2/Hls_Layers_UpConv.tpp" linenumber="216" fileDirectory="/home/hoinguyen/Documents/Vitis/UpConv_HLS/upconv_core" functionName="UpConv_Fused_Row&amp;lt;8&amp;gt;"/>
+        <inlineStackInfo fileName="../gen2/Hls_Layers_UpConv.tpp" linenumber="219" fileDirectory="/home/hoinguyen/Documents/Vitis/UpConv_HLS/upconv_core" functionName="_Z16UpConv_Fused_RowILi8EEvP7ap_uintILi256EEPKS1_S4_S4_S4_S2_Dhiiiii_for.inc28"/>
+        <inlineStackInfo fileName="../gen2/Hls_Layers_UpConv.tpp" linenumber="87" fileDirectory="/home/hoinguyen/Documents/Vitis/UpConv_HLS/upconv_core" functionName="uc_load_tile&amp;lt;8&amp;gt;"/>
+        <dataInputObjs>alloca</dataInputObjs>
+        <dataOutputObjs>add</dataOutputObjs>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="93" name="ci_cnt_1" lineNumber="87" originalName="ci_cnt" fileName="../gen2/Hls_Layers_UpConv.tpp" fileDirectory="../." rtlName="ci_cnt_1_fu_312_p2" coreName="Adder" implIndex="fabric" control="no" opType="add" coreId="1" contextFuncName="uc_load_tile_8_s" bitwidth="32" opcode="add" nodeLabel="1.0" m_display="0" m_delay="1.01" m_isOnCriticalPath="true" m_topoIndex="25" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="../gen2/Hls_Layers_UpConv.tpp" linenumber="216" fileDirectory="/home/hoinguyen/Documents/Vitis/UpConv_HLS/upconv_core" functionName="UpConv_Fused_Row&amp;lt;8&amp;gt;"/>
+        <inlineStackInfo fileName="../gen2/Hls_Layers_UpConv.tpp" linenumber="219" fileDirectory="/home/hoinguyen/Documents/Vitis/UpConv_HLS/upconv_core" functionName="_Z16UpConv_Fused_RowILi8EEvP7ap_uintILi256EEPKS1_S4_S4_S4_S2_Dhiiiii_for.inc28"/>
+        <inlineStackInfo fileName="../gen2/Hls_Layers_UpConv.tpp" linenumber="87" fileDirectory="/home/hoinguyen/Documents/Vitis/UpConv_HLS/upconv_core" functionName="uc_load_tile&amp;lt;8&amp;gt;"/>
+        <dataInputObjs>load</dataInputObjs>
+        <dataOutputObjs>icmp</dataOutputObjs>
+        <dataOutputObjs>select</dataOutputObjs>
+        <constName>empty</constName>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="94" name="icmp_ln88" lineNumber="88" fileName="../gen2/Hls_Layers_UpConv.tpp" fileDirectory="../." rtlName="icmp_ln88_fu_318_p2" coreName="Cmp" implIndex="auto" control="no" opType="setlt" coreId="9" contextFuncName="uc_load_tile_8_s" bitwidth="1" opcode="icmp" nodeLabel="1.0" m_display="0" m_delay="1.01" m_isOnCriticalPath="true" m_topoIndex="26" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="../gen2/Hls_Layers_UpConv.tpp" linenumber="216" fileDirectory="/home/hoinguyen/Documents/Vitis/UpConv_HLS/upconv_core" functionName="UpConv_Fused_Row&amp;lt;8&amp;gt;"/>
+        <inlineStackInfo fileName="../gen2/Hls_Layers_UpConv.tpp" linenumber="219" fileDirectory="/home/hoinguyen/Documents/Vitis/UpConv_HLS/upconv_core" functionName="_Z16UpConv_Fused_RowILi8EEvP7ap_uintILi256EEPKS1_S4_S4_S4_S2_Dhiiiii_for.inc28"/>
+        <inlineStackInfo fileName="../gen2/Hls_Layers_UpConv.tpp" linenumber="88" fileDirectory="/home/hoinguyen/Documents/Vitis/UpConv_HLS/upconv_core" functionName="uc_load_tile&amp;lt;8&amp;gt;"/>
+        <dataInputObjs>add</dataInputObjs>
+        <dataInputObjs>zext</dataInputObjs>
+        <dataOutputObjs>xor</dataOutputObjs>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="95" name="xor_ln88" lineNumber="88" fileName="../gen2/Hls_Layers_UpConv.tpp" fileDirectory="../." rtlName="xor_ln88_fu_323_p2" coreName="LogicGate" implIndex="auto" control="no" opType="xor" coreId="74" contextFuncName="uc_load_tile_8_s" bitwidth="1" opcode="xor" nodeLabel="1.0" m_display="0" m_delay="0.28" m_isOnCriticalPath="true" m_topoIndex="27" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="../gen2/Hls_Layers_UpConv.tpp" linenumber="216" fileDirectory="/home/hoinguyen/Documents/Vitis/UpConv_HLS/upconv_core" functionName="UpConv_Fused_Row&amp;lt;8&amp;gt;"/>
+        <inlineStackInfo fileName="../gen2/Hls_Layers_UpConv.tpp" linenumber="219" fileDirectory="/home/hoinguyen/Documents/Vitis/UpConv_HLS/upconv_core" functionName="_Z16UpConv_Fused_RowILi8EEvP7ap_uintILi256EEPKS1_S4_S4_S4_S2_Dhiiiii_for.inc28"/>
+        <inlineStackInfo fileName="../gen2/Hls_Layers_UpConv.tpp" linenumber="88" fileDirectory="/home/hoinguyen/Documents/Vitis/UpConv_HLS/upconv_core" functionName="uc_load_tile&amp;lt;8&amp;gt;"/>
+        <dataInputObjs>icmp</dataInputObjs>
+        <dataOutputObjs>select</dataOutputObjs>
+        <dataOutputObjs>select</dataOutputObjs>
+        <constName>empty</constName>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="96" name="add_ln88" lineNumber="88" fileName="../gen2/Hls_Layers_UpConv.tpp" fileDirectory="../." rtlName="add_ln88_fu_395_p2" coreName="Adder" implIndex="fabric" control="no" opType="add" coreId="1" contextFuncName="uc_load_tile_8_s" bitwidth="32" opcode="add" nodeLabel="2.0" m_display="0" m_delay="1.01" m_topoIndex="64" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="../gen2/Hls_Layers_UpConv.tpp" linenumber="216" fileDirectory="/home/hoinguyen/Documents/Vitis/UpConv_HLS/upconv_core" functionName="UpConv_Fused_Row&amp;lt;8&amp;gt;"/>
+        <inlineStackInfo fileName="../gen2/Hls_Layers_UpConv.tpp" linenumber="219" fileDirectory="/home/hoinguyen/Documents/Vitis/UpConv_HLS/upconv_core" functionName="_Z16UpConv_Fused_RowILi8EEvP7ap_uintILi256EEPKS1_S4_S4_S4_S2_Dhiiiii_for.inc28"/>
+        <inlineStackInfo fileName="../gen2/Hls_Layers_UpConv.tpp" linenumber="88" fileDirectory="/home/hoinguyen/Documents/Vitis/UpConv_HLS/upconv_core" functionName="uc_load_tile&amp;lt;8&amp;gt;"/>
+        <dataInputObjs>load</dataInputObjs>
+        <dataOutputObjs>select</dataOutputObjs>
+        <constName>empty</constName>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="97" name="k_cnt_1" lineNumber="88" originalName="k_cnt" fileName="../gen2/Hls_Layers_UpConv.tpp" fileDirectory="../." rtlName="k_cnt_1_fu_401_p3" coreName="Sel" implIndex="auto_sel" control="no" opType="select" coreId="73" contextFuncName="uc_load_tile_8_s" bitwidth="32" opcode="select" nodeLabel="2.0" m_display="0" m_delay="0.44" m_topoIndex="65" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="../gen2/Hls_Layers_UpConv.tpp" linenumber="216" fileDirectory="/home/hoinguyen/Documents/Vitis/UpConv_HLS/upconv_core" functionName="UpConv_Fused_Row&amp;lt;8&amp;gt;"/>
+        <inlineStackInfo fileName="../gen2/Hls_Layers_UpConv.tpp" linenumber="219" fileDirectory="/home/hoinguyen/Documents/Vitis/UpConv_HLS/upconv_core" functionName="_Z16UpConv_Fused_RowILi8EEvP7ap_uintILi256EEPKS1_S4_S4_S4_S2_Dhiiiii_for.inc28"/>
+        <inlineStackInfo fileName="../gen2/Hls_Layers_UpConv.tpp" linenumber="88" fileDirectory="/home/hoinguyen/Documents/Vitis/UpConv_HLS/upconv_core" functionName="uc_load_tile&amp;lt;8&amp;gt;"/>
+        <dataInputObjs>xor</dataInputObjs>
+        <dataInputObjs>add</dataInputObjs>
+        <dataInputObjs>load</dataInputObjs>
+        <dataOutputObjs>store</dataOutputObjs>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="98" name="ci_cnt_2" lineNumber="88" originalName="ci_cnt" fileName="../gen2/Hls_Layers_UpConv.tpp" fileDirectory="../." rtlName="ci_cnt_2_fu_329_p3" coreName="Sel" implIndex="auto_sel" control="no" opType="select" coreId="73" contextFuncName="uc_load_tile_8_s" bitwidth="32" opcode="select" nodeLabel="1.0" m_display="0" m_delay="0.44" m_isOnCriticalPath="true" m_topoIndex="28" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="../gen2/Hls_Layers_UpConv.tpp" linenumber="216" fileDirectory="/home/hoinguyen/Documents/Vitis/UpConv_HLS/upconv_core" functionName="UpConv_Fused_Row&amp;lt;8&amp;gt;"/>
+        <inlineStackInfo fileName="../gen2/Hls_Layers_UpConv.tpp" linenumber="219" fileDirectory="/home/hoinguyen/Documents/Vitis/UpConv_HLS/upconv_core" functionName="_Z16UpConv_Fused_RowILi8EEvP7ap_uintILi256EEPKS1_S4_S4_S4_S2_Dhiiiii_for.inc28"/>
+        <inlineStackInfo fileName="../gen2/Hls_Layers_UpConv.tpp" linenumber="88" fileDirectory="/home/hoinguyen/Documents/Vitis/UpConv_HLS/upconv_core" functionName="uc_load_tile&amp;lt;8&amp;gt;"/>
+        <dataInputObjs>xor</dataInputObjs>
+        <dataInputObjs>add</dataInputObjs>
+        <dataOutputObjs>store</dataOutputObjs>
+        <constName>empty</constName>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="99" name="kci_write_ln83" lineNumber="83" fileName="../gen2/Hls_Layers_UpConv.tpp" fileDirectory="../." coreId="4294967295" contextFuncName="uc_load_tile_8_s" opcode="store" m_display="0" m_delay="0.42" m_topoIndex="19" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="../gen2/Hls_Layers_UpConv.tpp" linenumber="216" fileDirectory="/home/hoinguyen/Documents/Vitis/UpConv_HLS/upconv_core" functionName="UpConv_Fused_Row&amp;lt;8&amp;gt;"/>
+        <inlineStackInfo fileName="../gen2/Hls_Layers_UpConv.tpp" linenumber="219" fileDirectory="/home/hoinguyen/Documents/Vitis/UpConv_HLS/upconv_core" functionName="_Z16UpConv_Fused_RowILi8EEvP7ap_uintILi256EEPKS1_S4_S4_S4_S2_Dhiiiii_for.inc28"/>
+        <inlineStackInfo fileName="../gen2/Hls_Layers_UpConv.tpp" linenumber="83" fileDirectory="/home/hoinguyen/Documents/Vitis/UpConv_HLS/upconv_core" functionName="uc_load_tile&amp;lt;8&amp;gt;"/>
+        <dataInputObjs>add</dataInputObjs>
+        <dataInputObjs>alloca</dataInputObjs>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="100" name="ci_cnt_write_ln82" lineNumber="82" fileName="../gen2/Hls_Layers_UpConv.tpp" fileDirectory="../." coreId="4294967295" contextFuncName="uc_load_tile_8_s" opcode="store" nodeLabel="1.0" m_display="0" m_delay="0.42" m_isOnCriticalPath="true" m_topoIndex="29" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="../gen2/Hls_Layers_UpConv.tpp" linenumber="216" fileDirectory="/home/hoinguyen/Documents/Vitis/UpConv_HLS/upconv_core" functionName="UpConv_Fused_Row&amp;lt;8&amp;gt;"/>
+        <inlineStackInfo fileName="../gen2/Hls_Layers_UpConv.tpp" linenumber="219" fileDirectory="/home/hoinguyen/Documents/Vitis/UpConv_HLS/upconv_core" functionName="_Z16UpConv_Fused_RowILi8EEvP7ap_uintILi256EEPKS1_S4_S4_S4_S2_Dhiiiii_for.inc28"/>
+        <inlineStackInfo fileName="../gen2/Hls_Layers_UpConv.tpp" linenumber="82" fileDirectory="/home/hoinguyen/Documents/Vitis/UpConv_HLS/upconv_core" functionName="uc_load_tile&amp;lt;8&amp;gt;"/>
+        <dataInputObjs>select</dataInputObjs>
+        <dataInputObjs>alloca</dataInputObjs>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="101" name="k_cnt_write_ln82" lineNumber="82" fileName="../gen2/Hls_Layers_UpConv.tpp" fileDirectory="../." coreId="4294967295" contextFuncName="uc_load_tile_8_s" opcode="store" nodeLabel="2.0" m_display="0" m_delay="0.42" m_topoIndex="66" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="../gen2/Hls_Layers_UpConv.tpp" linenumber="216" fileDirectory="/home/hoinguyen/Documents/Vitis/UpConv_HLS/upconv_core" functionName="UpConv_Fused_Row&amp;lt;8&amp;gt;"/>
+        <inlineStackInfo fileName="../gen2/Hls_Layers_UpConv.tpp" linenumber="219" fileDirectory="/home/hoinguyen/Documents/Vitis/UpConv_HLS/upconv_core" functionName="_Z16UpConv_Fused_RowILi8EEvP7ap_uintILi256EEPKS1_S4_S4_S4_S2_Dhiiiii_for.inc28"/>
+        <inlineStackInfo fileName="../gen2/Hls_Layers_UpConv.tpp" linenumber="82" fileDirectory="/home/hoinguyen/Documents/Vitis/UpConv_HLS/upconv_core" functionName="uc_load_tile&amp;lt;8&amp;gt;"/>
+        <dataInputObjs>select</dataInputObjs>
+        <dataInputObjs>alloca</dataInputObjs>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="102" name="br_ln83" lineNumber="83" fileName="../gen2/Hls_Layers_UpConv.tpp" fileDirectory="../." coreId="4294967295" contextFuncName="uc_load_tile_8_s" opcode="br" nodeLabel="2.0" m_display="0" m_topoIndex="67" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="../gen2/Hls_Layers_UpConv.tpp" linenumber="216" fileDirectory="/home/hoinguyen/Documents/Vitis/UpConv_HLS/upconv_core" functionName="UpConv_Fused_Row&amp;lt;8&amp;gt;"/>
+        <inlineStackInfo fileName="../gen2/Hls_Layers_UpConv.tpp" linenumber="219" fileDirectory="/home/hoinguyen/Documents/Vitis/UpConv_HLS/upconv_core" functionName="_Z16UpConv_Fused_RowILi8EEvP7ap_uintILi256EEPKS1_S4_S4_S4_S2_Dhiiiii_for.inc28"/>
+        <inlineStackInfo fileName="../gen2/Hls_Layers_UpConv.tpp" linenumber="83" fileDirectory="/home/hoinguyen/Documents/Vitis/UpConv_HLS/upconv_core" functionName="uc_load_tile&amp;lt;8&amp;gt;"/>
+        <controlInputObjs>for.body6.i</controlInputObjs>
+      </node_objs>
+      <fileValidLineNumbers fileName="../gen2/Hls_Layers_UpConv.tpp">
+        <validLinenumbers>88</validLinenumbers>
+        <validLinenumbers>87</validLinenumbers>
+        <validLinenumbers>83</validLinenumbers>
+        <validLinenumbers>82</validLinenumbers>
+        <validLinenumbers>216</validLinenumbers>
+        <validLinenumbers>219</validLinenumbers>
+      </fileValidLineNumbers>
+    </basic_blocks>
+  </regions>
+  <ScheduleInfo time="0"/>
+  <ScheduleInfo time="1"/>
+  <ScheduleInfo time="2"/>
+  <regnodes realName="sext_ln83_cast_reg_440">
+    <nodeIds>21</nodeIds>
+  </regnodes>
+  <regnodes realName="xor_ln88_reg_471">
+    <nodeIds>95</nodeIds>
+  </regnodes>
+  <regnodes realName="kci_reg_429">
+    <nodeIds>16</nodeIds>
+  </regnodes>
+  <regnodes realName="k_cnt_reg_413">
+    <nodeIds>14</nodeIds>
+  </regnodes>
+  <regnodes realName="CI_WORDS_cast4_i_cast_reg_445">
+    <nodeIds>22</nodeIds>
+  </regnodes>
+  <regnodes realName="gmem_weight_addr_read_reg_459">
+    <nodeIds>64</nodeIds>
+  </regnodes>
+  <regnodes realName="icmp_ln83_reg_450">
+    <nodeIds>38</nodeIds>
+  </regnodes>
+  <regnodes realName="ci_cnt_reg_421">
+    <nodeIds>15</nodeIds>
+  </regnodes>
+  <regnodes realName="tc_read_reg_436">
+    <nodeIds>17</nodeIds>
+  </regnodes>
+  <regnodes realName="trunc_ln83_reg_454">
+    <nodeIds>45</nodeIds>
+  </regnodes>
+  <expressionNodes realName="p_shl9_fu_361">
+    <nodeIds>52</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="p_shl_fu_349">
+    <nodeIds>50</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="ci_cnt_1_fu_312">
+    <nodeIds>93</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="kci_fu_116">
+    <nodeIds>16</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="wbuf_1_i_addr_gep_fu_156">
+    <nodeIds>57</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="gmem_weight_addr_fu_299">
+    <nodeIds>44</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="wbuf_3_i_addr_193_gep_fu_177">
+    <nodeIds>60</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="xor_ln88_fu_323">
+    <nodeIds>95</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="k_cnt_1_fu_401">
+    <nodeIds>97</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="wbuf_i_addr_gep_fu_198">
+    <nodeIds>63</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="add_ln88_fu_395">
+    <nodeIds>96</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="add_ln86_fu_375">
+    <nodeIds>54</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="wbuf_2_i_addr_194_gep_fu_184">
+    <nodeIds>61</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="trunc_ln86_1_fu_357">
+    <nodeIds>51</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="k_cnt_fu_108">
+    <nodeIds>14</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="trunc_ln83_fu_305">
+    <nodeIds>45</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="wbuf_1_i_addr_195_gep_fu_191">
+    <nodeIds>62</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="trunc_ln86_fu_345">
+    <nodeIds>49</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="wbuf_4_i_addr_gep_fu_149">
+    <nodeIds>56</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="ci_cnt_fu_112">
+    <nodeIds>15</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="ci_cnt_2_fu_329">
+    <nodeIds>98</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="icmp_ln83_fu_279">
+    <nodeIds>38</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="zext_ln86_fu_380">
+    <nodeIds>55</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="wbuf_2_i_addr_gep_fu_163">
+    <nodeIds>58</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="CI_WORDS_cast4_i_cast_fu_257">
+    <nodeIds>22</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="add_ln83_fu_285">
+    <nodeIds>39</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="sub_ln86_fu_369">
+    <nodeIds>53</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="sext_ln83_cast_fu_253">
+    <nodeIds>21</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="icmp_ln88_fu_318">
+    <nodeIds>94</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="wbuf_3_i_addr_gep_fu_170">
+    <nodeIds>59</nodeIds>
+  </expressionNodes>
+  <ioNodes realName="k_cnt_load_1_load_fu_392">
+    <nodeIds>91</nodeIds>
+  </ioNodes>
+  <ioNodes realName="CI_WORDS_cast4_i_read_read_fu_132">
+    <nodeIds>19</nodeIds>
+  </ioNodes>
+  <ioNodes realName="store_ln82_store_fu_271">
+    <nodeIds>34</nodeIds>
+  </ioNodes>
+  <ioNodes realName="store_ln83_store_fu_261">
+    <nodeIds>32</nodeIds>
+  </ioNodes>
+  <ioNodes realName="ci_cnt_load_1_load_fu_309">
+    <nodeIds>92</nodeIds>
+  </ioNodes>
+  <ioNodes realName="store_ln83_store_fu_291">
+    <nodeIds>99</nodeIds>
+  </ioNodes>
+  <ioNodes realName="tc_read_read_fu_120">
+    <nodeIds>17</nodeIds>
+  </ioNodes>
+  <ioNodes realName="k_cnt_load_load_fu_342">
+    <nodeIds>42</nodeIds>
+  </ioNodes>
+  <ioNodes realName="store_ln82_store_fu_337">
+    <nodeIds>100</nodeIds>
+  </ioNodes>
+  <ioNodes realName="ci_cnt_load_load_fu_296">
+    <nodeIds>43</nodeIds>
+  </ioNodes>
+  <ioNodes realName="store_ln82_store_fu_408">
+    <nodeIds>101</nodeIds>
+  </ioNodes>
+  <ioNodes realName="kci_1_load_fu_276">
+    <nodeIds>37</nodeIds>
+  </ioNodes>
+  <ioNodes realName="mul3_i_read_read_fu_138">
+    <nodeIds>20</nodeIds>
+  </ioNodes>
+  <ioNodes realName="gmem_weight_addr_read_read_fu_144">
+    <nodeIds>64</nodeIds>
+  </ioNodes>
+  <ioNodes realName="sext_ln83_read_read_fu_126">
+    <nodeIds>18</nodeIds>
+  </ioNodes>
+  <ioNodes realName="store_ln82_store_fu_266">
+    <nodeIds>33</nodeIds>
+  </ioNodes>
+  <memoryPorts dataString="wbuf_1_i">
+    <nodeIds>82</nodeIds>
+  </memoryPorts>
+  <memoryPorts dataString="wbuf_1_i_164">
+    <nodeIds>67</nodeIds>
+  </memoryPorts>
+  <memoryPorts dataString="wbuf_2_i">
+    <nodeIds>79</nodeIds>
+  </memoryPorts>
+  <memoryPorts dataString="wbuf_2_i_163">
+    <nodeIds>70</nodeIds>
+  </memoryPorts>
+  <memoryPorts dataString="wbuf_3_i">
+    <nodeIds>76</nodeIds>
+  </memoryPorts>
+  <memoryPorts dataString="wbuf_3_i_162">
+    <nodeIds>73</nodeIds>
+  </memoryPorts>
+  <memoryPorts dataString="wbuf_4_i">
+    <nodeIds>85</nodeIds>
+  </memoryPorts>
+  <memoryPorts dataString="wbuf_i">
+    <nodeIds>88</nodeIds>
+  </memoryPorts>
+  <ioPorts name="CI_WORDS_cast4_i">
+    <contents name="read">
+      <nodeIds>19</nodeIds>
+    </contents>
+  </ioPorts>
+  <ioPorts name="gmem_weight">
+    <contents name="read">
+      <nodeIds>64</nodeIds>
+    </contents>
+  </ioPorts>
+  <ioPorts name="mul3_i">
+    <contents name="read">
+      <nodeIds>20</nodeIds>
+    </contents>
+  </ioPorts>
+  <ioPorts name="sext_ln83">
+    <contents name="read">
+      <nodeIds>18</nodeIds>
+    </contents>
+  </ioPorts>
+  <ioPorts name="tc">
+    <contents name="read">
+      <nodeIds>17</nodeIds>
+    </contents>
+  </ioPorts>
+  <ioPorts name="wbuf_1_i(p0)">
+    <contents name="store">
+      <nodeIds>82</nodeIds>
+    </contents>
+  </ioPorts>
+  <ioPorts name="wbuf_1_i_164(p0)">
+    <contents name="store">
+      <nodeIds>67</nodeIds>
+    </contents>
+  </ioPorts>
+  <ioPorts name="wbuf_2_i(p0)">
+    <contents name="store">
+      <nodeIds>79</nodeIds>
+    </contents>
+  </ioPorts>
+  <ioPorts name="wbuf_2_i_163(p0)">
+    <contents name="store">
+      <nodeIds>70</nodeIds>
+    </contents>
+  </ioPorts>
+  <ioPorts name="wbuf_3_i(p0)">
+    <contents name="store">
+      <nodeIds>76</nodeIds>
+    </contents>
+  </ioPorts>
+  <ioPorts name="wbuf_3_i_162(p0)">
+    <contents name="store">
+      <nodeIds>73</nodeIds>
+    </contents>
+  </ioPorts>
+  <ioPorts name="wbuf_4_i(p0)">
+    <contents name="store">
+      <nodeIds>85</nodeIds>
+    </contents>
+  </ioPorts>
+  <ioPorts name="wbuf_i(p0)">
+    <contents name="store">
+      <nodeIds>88</nodeIds>
+    </contents>
+  </ioPorts>
+  <fsm>
+    <states id="1">
+      <operations id="14" stage="1" latency="1"/>
+      <operations id="15" stage="1" latency="1"/>
+      <operations id="16" stage="1" latency="1"/>
+      <operations id="17" stage="1" latency="1"/>
+      <operations id="18" stage="1" latency="1"/>
+      <operations id="19" stage="1" latency="1"/>
+      <operations id="20" stage="1" latency="1"/>
+      <operations id="21" stage="1" latency="1"/>
+      <operations id="22" stage="1" latency="1"/>
+      <operations id="23" stage="1" latency="1"/>
+      <operations id="24" stage="1" latency="1"/>
+      <operations id="25" stage="1" latency="1"/>
+      <operations id="26" stage="1" latency="1"/>
+      <operations id="27" stage="1" latency="1"/>
+      <operations id="28" stage="1" latency="1"/>
+      <operations id="29" stage="1" latency="1"/>
+      <operations id="30" stage="1" latency="1"/>
+      <operations id="31" stage="1" latency="1"/>
+      <operations id="32" stage="1" latency="1"/>
+      <operations id="33" stage="1" latency="1"/>
+      <operations id="34" stage="1" latency="1"/>
+      <operations id="35" stage="1" latency="1"/>
+      <operations id="37" stage="1" latency="1"/>
+      <operations id="38" stage="1" latency="1"/>
+      <operations id="39" stage="1" latency="1"/>
+      <operations id="40" stage="1" latency="1"/>
+      <operations id="65" stage="1" latency="1"/>
+      <operations id="99" stage="1" latency="1"/>
+    </states>
+    <states id="2">
+      <operations id="43" stage="1" latency="1"/>
+      <operations id="44" stage="1" latency="1"/>
+      <operations id="45" stage="1" latency="1"/>
+      <operations id="64" stage="1" latency="1"/>
+      <operations id="92" stage="1" latency="1"/>
+      <operations id="93" stage="1" latency="1"/>
+      <operations id="94" stage="1" latency="1"/>
+      <operations id="95" stage="1" latency="1"/>
+      <operations id="98" stage="1" latency="1"/>
+      <operations id="100" stage="1" latency="1"/>
+      <operations id="104" stage="1" latency="1"/>
+    </states>
+    <states id="3">
+      <operations id="42" stage="1" latency="1"/>
+      <operations id="46" stage="1" latency="1"/>
+      <operations id="47" stage="1" latency="1"/>
+      <operations id="48" stage="1" latency="1"/>
+      <operations id="49" stage="1" latency="1"/>
+      <operations id="50" stage="1" latency="1"/>
+      <operations id="51" stage="1" latency="1"/>
+      <operations id="52" stage="1" latency="1"/>
+      <operations id="53" stage="1" latency="1"/>
+      <operations id="54" stage="1" latency="1"/>
+      <operations id="55" stage="1" latency="1"/>
+      <operations id="56" stage="1" latency="1"/>
+      <operations id="57" stage="1" latency="1"/>
+      <operations id="58" stage="1" latency="1"/>
+      <operations id="59" stage="1" latency="1"/>
+      <operations id="60" stage="1" latency="1"/>
+      <operations id="61" stage="1" latency="1"/>
+      <operations id="62" stage="1" latency="1"/>
+      <operations id="63" stage="1" latency="1"/>
+      <operations id="67" stage="1" latency="1"/>
+      <operations id="68" stage="1" latency="1"/>
+      <operations id="70" stage="1" latency="1"/>
+      <operations id="71" stage="1" latency="1"/>
+      <operations id="73" stage="1" latency="1"/>
+      <operations id="74" stage="1" latency="1"/>
+      <operations id="76" stage="1" latency="1"/>
+      <operations id="77" stage="1" latency="1"/>
+      <operations id="79" stage="1" latency="1"/>
+      <operations id="80" stage="1" latency="1"/>
+      <operations id="82" stage="1" latency="1"/>
+      <operations id="83" stage="1" latency="1"/>
+      <operations id="85" stage="1" latency="1"/>
+      <operations id="86" stage="1" latency="1"/>
+      <operations id="88" stage="1" latency="1"/>
+      <operations id="89" stage="1" latency="1"/>
+      <operations id="91" stage="1" latency="1"/>
+      <operations id="96" stage="1" latency="1"/>
+      <operations id="97" stage="1" latency="1"/>
+      <operations id="101" stage="1" latency="1"/>
+      <operations id="102" stage="1" latency="1"/>
+    </states>
+    <transitions inState="2" outState="3">
+      <condition id="-1"/>
+    </transitions>
+    <transitions inState="1" outState="2">
+      <condition id="-1"/>
+    </transitions>
+  </fsm>
+  <CFGRegionsRoot>
+    <cfgRegions mId="1" mTag="uc_load_tile_8_2_Pipeline_W_FLAT" mII="-1" mDepth="-1" mMinTripCount="-1" mMaxTripCount="-1" mMinLatency="75" mMaxLatency="543">
+      <subRegions>2</subRegions>
+      <subRegions>3</subRegions>
+      <subRegions>4</subRegions>
+      <mDfPipe/>
+    </cfgRegions>
+    <cfgRegions mId="2" mTag="Entry" mII="-1" mDepth="-1" mMinTripCount="-1" mMaxTripCount="-1">
+      <basicBlocks>36</basicBlocks>
+      <mDfPipe/>
+    </cfgRegions>
+    <cfgRegions mId="3" mTag="W_FLAT" mII="1" mDepth="3" mMinTripCount="72" mMaxTripCount="540" mMinLatency="73" mMaxLatency="541" mType="1">
+      <basicBlocks>41</basicBlocks>
+      <basicBlocks>66</basicBlocks>
+      <basicBlocks>69</basicBlocks>
+      <basicBlocks>72</basicBlocks>
+      <basicBlocks>75</basicBlocks>
+      <basicBlocks>78</basicBlocks>
+      <basicBlocks>81</basicBlocks>
+      <basicBlocks>84</basicBlocks>
+      <basicBlocks>87</basicBlocks>
+      <basicBlocks>90</basicBlocks>
+      <basicBlocks>103</basicBlocks>
+      <mDfPipe/>
+    </cfgRegions>
+    <cfgRegions mId="4" mTag="Return" mII="-1" mDepth="-1" mMinTripCount="-1" mMaxTripCount="-1">
+      <basicBlocks>105</basicBlocks>
+      <mDfPipe/>
+    </cfgRegions>
+  </CFGRegionsRoot>
+</cdfg:DBCdfg>

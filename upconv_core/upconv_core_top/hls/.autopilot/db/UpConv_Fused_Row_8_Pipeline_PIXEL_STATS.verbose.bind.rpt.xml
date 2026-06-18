@@ -1,7 +1,7 @@
 <profile>
 
 <section name = "Vitis HLS Report for 'UpConv_Fused_Row_8_Pipeline_PIXEL_STATS'" level="0">
-<item name = "Date">Wed Jun  3 12:32:20 2026
+<item name = "Date">Thu Jun 18 11:21:22 2026
 </item>
 <item name = "Version">2024.2 (Build 5238294 on Nov  8 2024)</item>
 <item name = "Project">upconv_core_top</item>
@@ -24,7 +24,7 @@
 <section name = "" level="1">
 <item name = "Summary"><table name="" hasTotal="0">
 <keys size="8">, min, max, min, max, min, max, Type</keys>
-<column name="">1231, 15567, 4.103 us, 51.885 us, 1025, 15361, loop auto-rewind stp (delay=0 clock cycles(s))</column>
+<column name="">2150, 15590, 7.166 us, 51.961 us, 1921, 15361, loop auto-rewind stp (delay=0 clock cycles(s))</column>
 </table>
 </item>
 <item name = "Detail">
@@ -35,7 +35,7 @@
 </item>
 <item name = "Loop"><table name="" hasTotal="0">
 <keys size="8">Loop Name, min, max, Latency, achieved, target, Count, Pipelined</keys>
-<column name="- PIXEL_STATS">1229, 15565, 207, 1, 1, 1024 ~ 15360, yes</column>
+<column name="- PIXEL_STATS">2148, 15588, 230, 1, 1, 1920 ~ 15360, yes</column>
 </table>
 </item>
 </section>

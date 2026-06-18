@@ -1,0 +1,24 @@
+---
+MainSourceFile:  /home/hoinguyen/Documents/Vitis/UpConv_HLS/upconv_core/upconv_core_top/hls/.autopilot/db/upconv_core_top.pp.0.cpp
+Diagnostics:     
+  - DiagnosticName:  clang-diagnostic-warning
+    Message:         '[xlx-df-check-7] As the loop bound is not a constant or function argument, the compiler may not successfully process the dataflow loop'
+    FileOffset:      '213:42'
+    FilePath:        ../gen2/Hls_Layers_UpConv.tpp
+  - DiagnosticName:  clang-diagnostic-warning
+    Message:         '[xlx-df-check-10] Either use an argument of the function or declare the variable inside the dataflow loop body'
+    FileOffset:      '219:40'
+    FilePath:        ../gen2/Hls_Layers_UpConv.tpp
+  - DiagnosticName:  clang-diagnostic-warning
+    Message:         '[xlx-df-check-10] Either use an argument of the function or declare the variable inside the dataflow loop body'
+    FileOffset:      '220:43'
+    FilePath:        ../gen2/Hls_Layers_UpConv.tpp
+  - DiagnosticName:  clang-diagnostic-warning
+    Message:         '[xlx-df-check-10] Either use an argument of the function or declare the variable inside the dataflow loop body'
+    FileOffset:      '220:74'
+    FilePath:        ../gen2/Hls_Layers_UpConv.tpp
+  - DiagnosticName:  clang-diagnostic-warning
+    Message:         '[xlx-df-check-10] Either use an argument of the function or declare the variable inside the dataflow loop body'
+    FileOffset:      '220:84'
+    FilePath:        ../gen2/Hls_Layers_UpConv.tpp
+...

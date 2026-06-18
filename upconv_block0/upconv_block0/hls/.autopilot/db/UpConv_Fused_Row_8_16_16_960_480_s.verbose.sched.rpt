@@ -3,7 +3,7 @@
 ================================================================
 == Vitis HLS Report for 'UpConv_Fused_Row_8_16_16_960_480_s'
 ================================================================
-* Date:           Wed Jun  3 13:46:35 2026
+* Date:           Thu Jun 18 11:44:33 2026
 
 * Version:        2024.2 (Build 5238294 on Nov  8 2024)
 * Project:        upconv_block0
@@ -20,7 +20,7 @@
     +--------+---------+----------+------------+
     |  Clock |  Target | Estimated| Uncertainty|
     +--------+---------+----------+------------+
-    |ap_clk  |  3.33 ns|  2.433 ns|     0.90 ns|
+    |ap_clk  |  3.33 ns|  3.357 ns|     0.90 ns|
     +--------+---------+----------+------------+
 
 + Latency: 
@@ -29,7 +29,7 @@
     |  Latency (cycles) |  Latency (absolute) |     Interval    | Pipeline|
     |   min   |   max   |    min   |    max   |   min  |   max  |   Type  |
     +---------+---------+----------+----------+--------+--------+---------+
-    |   277494|   816774|  0.925 ms|  2.722 ms|  277494|  816774|       no|
+    |   276772|   561644|  0.929 ms|  1.885 ms|  276772|  561644|       no|
     +---------+---------+----------+----------+--------+--------+---------+
 
     + Detail: 
@@ -65,7 +65,7 @@ IsGatedGlobalClock: 0
 ============================================================
 + Verbose Summary: Schedule
 ============================================================
-* Number of FSM states : 32
+* Number of FSM states : 8
 * Pipeline : 0
 * Dataflow Pipeline: 0
 
@@ -77,196 +77,76 @@ IsGatedGlobalClock: 0
 5 --> 6 
 6 --> 7 
 7 --> 8 
-8 --> 9 
-9 --> 10 
-10 --> 11 
-11 --> 12 
-12 --> 13 
-13 --> 14 
-14 --> 15 
-15 --> 16 
-16 --> 17 
-17 --> 18 
-18 --> 19 
-19 --> 20 
-20 --> 21 
-21 --> 22 
-22 --> 23 
-23 --> 24 
-24 --> 25 
-25 --> 26 
-26 --> 27 
-27 --> 28 
-28 --> 29 
-29 --> 30 
-30 --> 31 
-31 --> 32 
-32 --> 
+8 --> 
 
 * FSM state operations: 
 
-State 1 <SV = 0> <Delay = 2.43>
-ST_1 : Operation 33 [1/1] (0.00ns)   --->   "%B_ptr_read = read i64 @_ssdm_op_Read.ap_auto.i64, i64 %B_ptr"   --->   Operation 33 'read' 'B_ptr_read' <Predicate = true> <Delay = 0.00>
-ST_1 : Operation 34 [1/1] (0.00ns)   --->   "%b_buf = alloca i64 1" [../gen/Hls_Layers_UpConv.tpp:337]   --->   Operation 34 'alloca' 'b_buf' <Predicate = true> <Delay = 0.00> <CoreInst = "RAM_T2P_BRAM">   --->   Core 98 'RAM_T2P_BRAM' <Latency = 1> <II = 1> <Delay = 1.23> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 256> <Depth = 30> <RAM>
-ST_1 : Operation 35 [1/1] (0.00ns)   --->   "%g_buf = alloca i64 1" [../gen/Hls_Layers_UpConv.tpp:338]   --->   Operation 35 'alloca' 'g_buf' <Predicate = true> <Delay = 0.00> <CoreInst = "RAM_T2P_BRAM">   --->   Core 98 'RAM_T2P_BRAM' <Latency = 1> <II = 1> <Delay = 1.23> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 256> <Depth = 30> <RAM>
-ST_1 : Operation 36 [1/1] (0.00ns)   --->   "%be_buf = alloca i64 1" [../gen/Hls_Layers_UpConv.tpp:339]   --->   Operation 36 'alloca' 'be_buf' <Predicate = true> <Delay = 0.00> <CoreInst = "RAM_T2P_BRAM">   --->   Core 98 'RAM_T2P_BRAM' <Latency = 1> <II = 1> <Delay = 1.23> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 256> <Depth = 30> <RAM>
-ST_1 : Operation 37 [1/1] (0.00ns)   --->   "%trunc_ln = partselect i59 @_ssdm_op_PartSelect.i59.i64.i32.i32, i64 %B_ptr_read, i32 5, i32 63" [../gen/Hls_Layers_UpConv.tpp:185->../gen/Hls_Layers_UpConv.tpp:354]   --->   Operation 37 'partselect' 'trunc_ln' <Predicate = true> <Delay = 0.00>
-ST_1 : Operation 38 [1/1] (0.00ns)   --->   "%sext_ln185 = sext i59 %trunc_ln" [../gen/Hls_Layers_UpConv.tpp:185->../gen/Hls_Layers_UpConv.tpp:354]   --->   Operation 38 'sext' 'sext_ln185' <Predicate = true> <Delay = 0.00>
-ST_1 : Operation 39 [1/1] (0.00ns)   --->   "%gmem_param_addr = getelementptr i256 %gmem_param, i64 %sext_ln185" [../gen/Hls_Layers_UpConv.tpp:185->../gen/Hls_Layers_UpConv.tpp:354]   --->   Operation 39 'getelementptr' 'gmem_param_addr' <Predicate = true> <Delay = 0.00>
-ST_1 : Operation 40 [8/8] (2.43ns)   --->   "%empty = readreq i1 @_ssdm_op_ReadReq.m_axi.p1i256, i256 %gmem_param_addr, i64 30" [../gen/Hls_Layers_UpConv.tpp:185->../gen/Hls_Layers_UpConv.tpp:354]   --->   Operation 40 'readreq' 'empty' <Predicate = true> <Delay = 2.43> <CoreInst = "m_axi">   --->   Core 119 'm_axi' <Latency = 6> <II = 1> <Delay = 1.00> <Adapter> <Opcode : 'read' 'write' 'readreq' 'writereq' 'writeresp'>
+State 1 <SV = 0> <Delay = 1.09>
+ST_1 : Operation 9 [1/1] (0.00ns)   --->   "%BE_ptr_read = read i64 @_ssdm_op_Read.ap_auto.i64, i64 %BE_ptr"   --->   Operation 9 'read' 'BE_ptr_read' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 10 [1/1] (0.00ns)   --->   "%G_ptr_read = read i64 @_ssdm_op_Read.ap_auto.i64, i64 %G_ptr"   --->   Operation 10 'read' 'G_ptr_read' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 11 [1/1] (0.00ns)   --->   "%B_ptr_read = read i64 @_ssdm_op_Read.ap_auto.i64, i64 %B_ptr"   --->   Operation 11 'read' 'B_ptr_read' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 12 [1/1] (0.00ns)   --->   "%b_buf = alloca i64 1" [../gen/Hls_Layers_UpConv.tpp:204]   --->   Operation 12 'alloca' 'b_buf' <Predicate = true> <Delay = 0.00> <CoreInst = "RAM_T2P_BRAM">   --->   Core 98 'RAM_T2P_BRAM' <Latency = 1> <II = 1> <Delay = 1.23> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 256> <Depth = 30> <RAM>
+ST_1 : Operation 13 [1/1] (0.00ns)   --->   "%g_buf = alloca i64 1" [../gen/Hls_Layers_UpConv.tpp:204]   --->   Operation 13 'alloca' 'g_buf' <Predicate = true> <Delay = 0.00> <CoreInst = "RAM_T2P_BRAM">   --->   Core 98 'RAM_T2P_BRAM' <Latency = 1> <II = 1> <Delay = 1.23> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 256> <Depth = 30> <RAM>
+ST_1 : Operation 14 [1/1] (0.00ns)   --->   "%be_buf = alloca i64 1" [../gen/Hls_Layers_UpConv.tpp:204]   --->   Operation 14 'alloca' 'be_buf' <Predicate = true> <Delay = 0.00> <CoreInst = "RAM_T2P_BRAM">   --->   Core 98 'RAM_T2P_BRAM' <Latency = 1> <II = 1> <Delay = 1.23> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 256> <Depth = 30> <RAM>
+ST_1 : Operation 15 [2/2] (0.00ns)   --->   "%call_ln0 = call void @UpConv_Fused_Row<8, 16, 16, 960, 480>_Pipeline_RESET_ROW_ACC, i16 %void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_9, i16 %void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_8, i16 %void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_7, i16 %void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_6, i16 %void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_5, i16 %void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_4, i16 %void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_3, i16 %void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_2, i16 %void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_1, i16 %void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u, i16 %p_ZZ16UpConv_Fused_RowILi8ELi16ELi16ELi960ELi480EEvP7ap_uintILi256EEPKS1_S4_S4_S4_5, i16 %p_ZZ16UpConv_Fused_RowILi8ELi16ELi16ELi960ELi480EEvP7ap_uintILi256EEPKS1_S4_S4_S4_4, i16 %p_ZZ16UpConv_Fused_RowILi8ELi16ELi16ELi960ELi480EEvP7ap_uintILi256EEPKS1_S4_S4_S4_3, i16 %p_ZZ16UpConv_Fused_RowILi8ELi16ELi16ELi960ELi480EEvP7ap_uintILi256EEPKS1_S4_S4_S4_2, i16 %p_ZZ16UpConv_Fused_RowILi8ELi16ELi16ELi960ELi480EEvP7ap_uintILi256EEPKS1_S4_S4_S4_1, i16 %p_ZZ16UpConv_Fused_RowILi8ELi16ELi16ELi960ELi480EEvP7ap_uintILi256EEPKS1_S4_S4_S4"   --->   Operation 15 'call' 'call_ln0' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Generic Core
+ST_1 : Operation 16 [1/1] (0.00ns)   --->   "%trunc_ln = partselect i59 @_ssdm_op_PartSelect.i59.i64.i32.i32, i64 %B_ptr_read, i32 5, i32 63" [../gen/Hls_Layers_UpConv.tpp:209]   --->   Operation 16 'partselect' 'trunc_ln' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 17 [1/1] (0.00ns)   --->   "%trunc_ln209_1 = partselect i59 @_ssdm_op_PartSelect.i59.i64.i32.i32, i64 %G_ptr_read, i32 5, i32 63" [../gen/Hls_Layers_UpConv.tpp:209]   --->   Operation 17 'partselect' 'trunc_ln209_1' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 18 [1/1] (0.00ns)   --->   "%trunc_ln209_2 = partselect i59 @_ssdm_op_PartSelect.i59.i64.i32.i32, i64 %BE_ptr_read, i32 5, i32 63" [../gen/Hls_Layers_UpConv.tpp:209]   --->   Operation 18 'partselect' 'trunc_ln209_2' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 19 [2/2] (1.09ns)   --->   "%call_ln209 = call void @UpConv_Fused_Row<8, 16, 16, 960, 480>_Pipeline_LOAD_PARAMS, i256 %b_buf, i59 %trunc_ln, i256 %gmem_param, i256 %g_buf, i59 %trunc_ln209_1, i256 %be_buf, i59 %trunc_ln209_2" [../gen/Hls_Layers_UpConv.tpp:209]   --->   Operation 19 'call' 'call_ln209' <Predicate = true> <Delay = 1.09> <CoreType = "Generic">   --->   Generic Core
 
-State 2 <SV = 1> <Delay = 2.43>
-ST_2 : Operation 41 [7/8] (2.43ns)   --->   "%empty = readreq i1 @_ssdm_op_ReadReq.m_axi.p1i256, i256 %gmem_param_addr, i64 30" [../gen/Hls_Layers_UpConv.tpp:185->../gen/Hls_Layers_UpConv.tpp:354]   --->   Operation 41 'readreq' 'empty' <Predicate = true> <Delay = 2.43> <CoreInst = "m_axi">   --->   Core 119 'm_axi' <Latency = 6> <II = 1> <Delay = 1.00> <Adapter> <Opcode : 'read' 'write' 'readreq' 'writereq' 'writeresp'>
+State 2 <SV = 1> <Delay = 1.64>
+ST_2 : Operation 20 [1/2] (1.64ns)   --->   "%call_ln0 = call void @UpConv_Fused_Row<8, 16, 16, 960, 480>_Pipeline_RESET_ROW_ACC, i16 %void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_9, i16 %void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_8, i16 %void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_7, i16 %void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_6, i16 %void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_5, i16 %void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_4, i16 %void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_3, i16 %void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_2, i16 %void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_1, i16 %void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u, i16 %p_ZZ16UpConv_Fused_RowILi8ELi16ELi16ELi960ELi480EEvP7ap_uintILi256EEPKS1_S4_S4_S4_5, i16 %p_ZZ16UpConv_Fused_RowILi8ELi16ELi16ELi960ELi480EEvP7ap_uintILi256EEPKS1_S4_S4_S4_4, i16 %p_ZZ16UpConv_Fused_RowILi8ELi16ELi16ELi960ELi480EEvP7ap_uintILi256EEPKS1_S4_S4_S4_3, i16 %p_ZZ16UpConv_Fused_RowILi8ELi16ELi16ELi960ELi480EEvP7ap_uintILi256EEPKS1_S4_S4_S4_2, i16 %p_ZZ16UpConv_Fused_RowILi8ELi16ELi16ELi960ELi480EEvP7ap_uintILi256EEPKS1_S4_S4_S4_1, i16 %p_ZZ16UpConv_Fused_RowILi8ELi16ELi16ELi960ELi480EEvP7ap_uintILi256EEPKS1_S4_S4_S4"   --->   Operation 20 'call' 'call_ln0' <Predicate = true> <Delay = 1.64> <CoreType = "Generic">   --->   Generic Core
+ST_2 : Operation 21 [1/2] (0.00ns)   --->   "%call_ln209 = call void @UpConv_Fused_Row<8, 16, 16, 960, 480>_Pipeline_LOAD_PARAMS, i256 %b_buf, i59 %trunc_ln, i256 %gmem_param, i256 %g_buf, i59 %trunc_ln209_1, i256 %be_buf, i59 %trunc_ln209_2" [../gen/Hls_Layers_UpConv.tpp:209]   --->   Operation 21 'call' 'call_ln209' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Generic Core
 
-State 3 <SV = 2> <Delay = 2.43>
-ST_3 : Operation 42 [6/8] (2.43ns)   --->   "%empty = readreq i1 @_ssdm_op_ReadReq.m_axi.p1i256, i256 %gmem_param_addr, i64 30" [../gen/Hls_Layers_UpConv.tpp:185->../gen/Hls_Layers_UpConv.tpp:354]   --->   Operation 42 'readreq' 'empty' <Predicate = true> <Delay = 2.43> <CoreInst = "m_axi">   --->   Core 119 'm_axi' <Latency = 6> <II = 1> <Delay = 1.00> <Adapter> <Opcode : 'read' 'write' 'readreq' 'writereq' 'writeresp'>
+State 3 <SV = 2> <Delay = 1.53>
+ST_3 : Operation 22 [1/1] (0.00ns)   --->   "%ho_read = read i5 @_ssdm_op_Read.ap_auto.i5, i5 %ho"   --->   Operation 22 'read' 'ho_read' <Predicate = true> <Delay = 0.00>
+ST_3 : Operation 23 [1/1] (0.00ns)   --->   "%epsilon_read = read i16 @_ssdm_op_Read.ap_auto.half, i16 %epsilon"   --->   Operation 23 'read' 'epsilon_read' <Predicate = true> <Delay = 0.00>
+ST_3 : Operation 24 [1/1] (0.00ns)   --->   "%W_ptr_read = read i64 @_ssdm_op_Read.ap_auto.i64, i64 %W_ptr"   --->   Operation 24 'read' 'W_ptr_read' <Predicate = true> <Delay = 0.00>
+ST_3 : Operation 25 [2/2] (0.00ns)   --->   "%call_ln0 = call void @dataflow_parent_loop_proc, i256 %gmem_weight, i64 %W_ptr_read, i5 %ho_read, i256 %x_buf, i16 %void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_2, i16 %p_ZZ16UpConv_Fused_RowILi8ELi16ELi16ELi960ELi480EEvP7ap_uintILi256EEPKS1_S4_S4_S4, i16 %void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_3, i16 %p_ZZ16UpConv_Fused_RowILi8ELi16ELi16ELi960ELi480EEvP7ap_uintILi256EEPKS1_S4_S4_S4_1, i16 %void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_4, i16 %p_ZZ16UpConv_Fused_RowILi8ELi16ELi16ELi960ELi480EEvP7ap_uintILi256EEPKS1_S4_S4_S4_2, i16 %void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_5, i16 %p_ZZ16UpConv_Fused_RowILi8ELi16ELi16ELi960ELi480EEvP7ap_uintILi256EEPKS1_S4_S4_S4_3, i16 %void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_6, i16 %p_ZZ16UpConv_Fused_RowILi8ELi16ELi16ELi960ELi480EEvP7ap_uintILi256EEPKS1_S4_S4_S4_4, i16 %void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_7, i16 %p_ZZ16UpConv_Fused_RowILi8ELi16ELi16ELi960ELi480EEvP7ap_uintILi256EEPKS1_S4_S4_S4_5, i16 %void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_8, i16 %void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u, i16 %void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_9, i16 %void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_1"   --->   Operation 25 'call' 'call_ln0' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Generic Core
+ST_3 : Operation 26 [2/2] (1.53ns)   --->   "%conv1 = hptosp i16 %epsilon_read"   --->   Operation 26 'hptosp' 'conv1' <Predicate = true> <Delay = 1.53> <CoreInst = "Half2Float">   --->   Core 68 'Half2Float' <Latency = 1> <II = 1> <Delay = 1.53> <FuncUnit> <Opcode : 'hptosp'> <InPorts = 1> <OutPorts = 1>
 
-State 4 <SV = 3> <Delay = 2.43>
-ST_4 : Operation 43 [5/8] (2.43ns)   --->   "%empty = readreq i1 @_ssdm_op_ReadReq.m_axi.p1i256, i256 %gmem_param_addr, i64 30" [../gen/Hls_Layers_UpConv.tpp:185->../gen/Hls_Layers_UpConv.tpp:354]   --->   Operation 43 'readreq' 'empty' <Predicate = true> <Delay = 2.43> <CoreInst = "m_axi">   --->   Core 119 'm_axi' <Latency = 6> <II = 1> <Delay = 1.00> <Adapter> <Opcode : 'read' 'write' 'readreq' 'writereq' 'writeresp'>
+State 4 <SV = 3> <Delay = 1.53>
+ST_4 : Operation 27 [1/2] (0.78ns)   --->   "%call_ln0 = call void @dataflow_parent_loop_proc, i256 %gmem_weight, i64 %W_ptr_read, i5 %ho_read, i256 %x_buf, i16 %void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_2, i16 %p_ZZ16UpConv_Fused_RowILi8ELi16ELi16ELi960ELi480EEvP7ap_uintILi256EEPKS1_S4_S4_S4, i16 %void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_3, i16 %p_ZZ16UpConv_Fused_RowILi8ELi16ELi16ELi960ELi480EEvP7ap_uintILi256EEPKS1_S4_S4_S4_1, i16 %void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_4, i16 %p_ZZ16UpConv_Fused_RowILi8ELi16ELi16ELi960ELi480EEvP7ap_uintILi256EEPKS1_S4_S4_S4_2, i16 %void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_5, i16 %p_ZZ16UpConv_Fused_RowILi8ELi16ELi16ELi960ELi480EEvP7ap_uintILi256EEPKS1_S4_S4_S4_3, i16 %void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_6, i16 %p_ZZ16UpConv_Fused_RowILi8ELi16ELi16ELi960ELi480EEvP7ap_uintILi256EEPKS1_S4_S4_S4_4, i16 %void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_7, i16 %p_ZZ16UpConv_Fused_RowILi8ELi16ELi16ELi960ELi480EEvP7ap_uintILi256EEPKS1_S4_S4_S4_5, i16 %void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_8, i16 %void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u, i16 %void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_9, i16 %void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_1"   --->   Operation 27 'call' 'call_ln0' <Predicate = true> <Delay = 0.78> <CoreType = "Generic">   --->   Generic Core
+ST_4 : Operation 28 [1/2] (1.53ns)   --->   "%conv1 = hptosp i16 %epsilon_read"   --->   Operation 28 'hptosp' 'conv1' <Predicate = true> <Delay = 1.53> <CoreInst = "Half2Float">   --->   Core 68 'Half2Float' <Latency = 1> <II = 1> <Delay = 1.53> <FuncUnit> <Opcode : 'hptosp'> <InPorts = 1> <OutPorts = 1>
 
-State 5 <SV = 4> <Delay = 2.43>
-ST_5 : Operation 44 [4/8] (2.43ns)   --->   "%empty = readreq i1 @_ssdm_op_ReadReq.m_axi.p1i256, i256 %gmem_param_addr, i64 30" [../gen/Hls_Layers_UpConv.tpp:185->../gen/Hls_Layers_UpConv.tpp:354]   --->   Operation 44 'readreq' 'empty' <Predicate = true> <Delay = 2.43> <CoreInst = "m_axi">   --->   Core 119 'm_axi' <Latency = 6> <II = 1> <Delay = 1.00> <Adapter> <Opcode : 'read' 'write' 'readreq' 'writereq' 'writeresp'>
+State 5 <SV = 4> <Delay = 0.00>
+ST_5 : Operation 29 [2/2] (0.00ns)   --->   "%call_ln0 = call void @UpConv_Fused_Row<8, 16, 16, 960, 480>_Pipeline_PIXEL_STATS, i32 %conv1, i256 %b_buf, i32 %mean_buf, i16 %inv_buf, i16 %void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_9, i16 %void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_8, i16 %void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_7, i16 %void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_6, i16 %void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_5, i16 %void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_4, i16 %void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_3, i16 %void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_2, i16 %void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_1, i16 %void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u, i16 %p_ZZ16UpConv_Fused_RowILi8ELi16ELi16ELi960ELi480EEvP7ap_uintILi256EEPKS1_S4_S4_S4_5, i16 %p_ZZ16UpConv_Fused_RowILi8ELi16ELi16ELi960ELi480EEvP7ap_uintILi256EEPKS1_S4_S4_S4_4, i16 %p_ZZ16UpConv_Fused_RowILi8ELi16ELi16ELi960ELi480EEvP7ap_uintILi256EEPKS1_S4_S4_S4_3, i16 %p_ZZ16UpConv_Fused_RowILi8ELi16ELi16ELi960ELi480EEvP7ap_uintILi256EEPKS1_S4_S4_S4_2, i16 %p_ZZ16UpConv_Fused_RowILi8ELi16ELi16ELi960ELi480EEvP7ap_uintILi256EEPKS1_S4_S4_S4_1, i16 %p_ZZ16UpConv_Fused_RowILi8ELi16ELi16ELi960ELi480EEvP7ap_uintILi256EEPKS1_S4_S4_S4"   --->   Operation 29 'call' 'call_ln0' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Generic Core
 
-State 6 <SV = 5> <Delay = 2.43>
-ST_6 : Operation 45 [3/8] (2.43ns)   --->   "%empty = readreq i1 @_ssdm_op_ReadReq.m_axi.p1i256, i256 %gmem_param_addr, i64 30" [../gen/Hls_Layers_UpConv.tpp:185->../gen/Hls_Layers_UpConv.tpp:354]   --->   Operation 45 'readreq' 'empty' <Predicate = true> <Delay = 2.43> <CoreInst = "m_axi">   --->   Core 119 'm_axi' <Latency = 6> <II = 1> <Delay = 1.00> <Adapter> <Opcode : 'read' 'write' 'readreq' 'writereq' 'writeresp'>
+State 6 <SV = 5> <Delay = 0.00>
+ST_6 : Operation 30 [1/2] (0.00ns)   --->   "%call_ln0 = call void @UpConv_Fused_Row<8, 16, 16, 960, 480>_Pipeline_PIXEL_STATS, i32 %conv1, i256 %b_buf, i32 %mean_buf, i16 %inv_buf, i16 %void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_9, i16 %void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_8, i16 %void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_7, i16 %void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_6, i16 %void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_5, i16 %void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_4, i16 %void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_3, i16 %void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_2, i16 %void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_1, i16 %void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u, i16 %p_ZZ16UpConv_Fused_RowILi8ELi16ELi16ELi960ELi480EEvP7ap_uintILi256EEPKS1_S4_S4_S4_5, i16 %p_ZZ16UpConv_Fused_RowILi8ELi16ELi16ELi960ELi480EEvP7ap_uintILi256EEPKS1_S4_S4_S4_4, i16 %p_ZZ16UpConv_Fused_RowILi8ELi16ELi16ELi960ELi480EEvP7ap_uintILi256EEPKS1_S4_S4_S4_3, i16 %p_ZZ16UpConv_Fused_RowILi8ELi16ELi16ELi960ELi480EEvP7ap_uintILi256EEPKS1_S4_S4_S4_2, i16 %p_ZZ16UpConv_Fused_RowILi8ELi16ELi16ELi960ELi480EEvP7ap_uintILi256EEPKS1_S4_S4_S4_1, i16 %p_ZZ16UpConv_Fused_RowILi8ELi16ELi16ELi960ELi480EEvP7ap_uintILi256EEPKS1_S4_S4_S4"   --->   Operation 30 'call' 'call_ln0' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Generic Core
 
-State 7 <SV = 6> <Delay = 2.43>
-ST_7 : Operation 46 [2/8] (2.43ns)   --->   "%empty = readreq i1 @_ssdm_op_ReadReq.m_axi.p1i256, i256 %gmem_param_addr, i64 30" [../gen/Hls_Layers_UpConv.tpp:185->../gen/Hls_Layers_UpConv.tpp:354]   --->   Operation 46 'readreq' 'empty' <Predicate = true> <Delay = 2.43> <CoreInst = "m_axi">   --->   Core 119 'm_axi' <Latency = 6> <II = 1> <Delay = 1.00> <Adapter> <Opcode : 'read' 'write' 'readreq' 'writereq' 'writeresp'>
+State 7 <SV = 6> <Delay = 0.00>
+ST_7 : Operation 31 [1/1] (0.00ns)   --->   "%Y_read = read i64 @_ssdm_op_Read.ap_auto.i64, i64 %Y"   --->   Operation 31 'read' 'Y_read' <Predicate = true> <Delay = 0.00>
+ST_7 : Operation 32 [1/1] (0.00ns)   --->   "%mul4 = bitconcatenate i10 @_ssdm_op_BitConcatenate.i10.i5.i5, i5 %ho_read, i5 0"   --->   Operation 32 'bitconcatenate' 'mul4' <Predicate = true> <Delay = 0.00>
+ST_7 : Operation 33 [2/2] (0.00ns)   --->   "%call_ln0 = call void @UpConv_Fused_Row<8, 16, 16, 960, 480>_Pipeline_PIXEL_NORM, i256 %g_buf, i256 %be_buf, i10 %mul4, i64 %Y_read, i256 %gmem_out, i32 %mean_buf, i16 %inv_buf, i16 %void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_9, i16 %void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_8, i16 %void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_7, i16 %void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_6, i16 %void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_5, i16 %void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_4, i16 %void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_3, i16 %void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_2, i16 %void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_1, i16 %void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u, i16 %p_ZZ16UpConv_Fused_RowILi8ELi16ELi16ELi960ELi480EEvP7ap_uintILi256EEPKS1_S4_S4_S4_5, i16 %p_ZZ16UpConv_Fused_RowILi8ELi16ELi16ELi960ELi480EEvP7ap_uintILi256EEPKS1_S4_S4_S4_4, i16 %p_ZZ16UpConv_Fused_RowILi8ELi16ELi16ELi960ELi480EEvP7ap_uintILi256EEPKS1_S4_S4_S4_3, i16 %p_ZZ16UpConv_Fused_RowILi8ELi16ELi16ELi960ELi480EEvP7ap_uintILi256EEPKS1_S4_S4_S4_2, i16 %p_ZZ16UpConv_Fused_RowILi8ELi16ELi16ELi960ELi480EEvP7ap_uintILi256EEPKS1_S4_S4_S4_1, i16 %p_ZZ16UpConv_Fused_RowILi8ELi16ELi16ELi960ELi480EEvP7ap_uintILi256EEPKS1_S4_S4_S4"   --->   Operation 33 'call' 'call_ln0' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Generic Core
 
-State 8 <SV = 7> <Delay = 2.43>
-ST_8 : Operation 47 [1/8] (2.43ns)   --->   "%empty = readreq i1 @_ssdm_op_ReadReq.m_axi.p1i256, i256 %gmem_param_addr, i64 30" [../gen/Hls_Layers_UpConv.tpp:185->../gen/Hls_Layers_UpConv.tpp:354]   --->   Operation 47 'readreq' 'empty' <Predicate = true> <Delay = 2.43> <CoreInst = "m_axi">   --->   Core 119 'm_axi' <Latency = 6> <II = 1> <Delay = 1.00> <Adapter> <Opcode : 'read' 'write' 'readreq' 'writereq' 'writeresp'>
-
-State 9 <SV = 8> <Delay = 0.00>
-ST_9 : Operation 48 [2/2] (0.00ns)   --->   "%call_ln185 = call void @UpConv_Fused_Row<8, 16, 16, 960, 480>_Pipeline_LOAD_B, i256 %gmem_param, i59 %trunc_ln, i256 %b_buf" [../gen/Hls_Layers_UpConv.tpp:185->../gen/Hls_Layers_UpConv.tpp:354]   --->   Operation 48 'call' 'call_ln185' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Generic Core
-ST_9 : Operation 49 [2/2] (0.00ns)   --->   "%call_ln0 = call void @UpConv_Fused_Row<8, 16, 16, 960, 480>_Pipeline_RESET_ROW_ACC, i16 %void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_9, i16 %void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_8, i16 %void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_7, i16 %void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_6, i16 %void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_5, i16 %void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_4, i16 %void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_3, i16 %void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_2, i16 %void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_1, i16 %void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u, i16 %p_ZZ16UpConv_Fused_RowILi8ELi16ELi16ELi960ELi480EEvP7ap_uintILi256EEPKS1_S4_S4_S4_5, i16 %p_ZZ16UpConv_Fused_RowILi8ELi16ELi16ELi960ELi480EEvP7ap_uintILi256EEPKS1_S4_S4_S4_4, i16 %p_ZZ16UpConv_Fused_RowILi8ELi16ELi16ELi960ELi480EEvP7ap_uintILi256EEPKS1_S4_S4_S4_3, i16 %p_ZZ16UpConv_Fused_RowILi8ELi16ELi16ELi960ELi480EEvP7ap_uintILi256EEPKS1_S4_S4_S4_2, i16 %p_ZZ16UpConv_Fused_RowILi8ELi16ELi16ELi960ELi480EEvP7ap_uintILi256EEPKS1_S4_S4_S4_1, i16 %p_ZZ16UpConv_Fused_RowILi8ELi16ELi16ELi960ELi480EEvP7ap_uintILi256EEPKS1_S4_S4_S4"   --->   Operation 49 'call' 'call_ln0' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Generic Core
-
-State 10 <SV = 9> <Delay = 1.64>
-ST_10 : Operation 50 [1/2] (0.00ns)   --->   "%call_ln185 = call void @UpConv_Fused_Row<8, 16, 16, 960, 480>_Pipeline_LOAD_B, i256 %gmem_param, i59 %trunc_ln, i256 %b_buf" [../gen/Hls_Layers_UpConv.tpp:185->../gen/Hls_Layers_UpConv.tpp:354]   --->   Operation 50 'call' 'call_ln185' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Generic Core
-ST_10 : Operation 51 [1/2] (1.64ns)   --->   "%call_ln0 = call void @UpConv_Fused_Row<8, 16, 16, 960, 480>_Pipeline_RESET_ROW_ACC, i16 %void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_9, i16 %void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_8, i16 %void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_7, i16 %void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_6, i16 %void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_5, i16 %void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_4, i16 %void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_3, i16 %void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_2, i16 %void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_1, i16 %void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u, i16 %p_ZZ16UpConv_Fused_RowILi8ELi16ELi16ELi960ELi480EEvP7ap_uintILi256EEPKS1_S4_S4_S4_5, i16 %p_ZZ16UpConv_Fused_RowILi8ELi16ELi16ELi960ELi480EEvP7ap_uintILi256EEPKS1_S4_S4_S4_4, i16 %p_ZZ16UpConv_Fused_RowILi8ELi16ELi16ELi960ELi480EEvP7ap_uintILi256EEPKS1_S4_S4_S4_3, i16 %p_ZZ16UpConv_Fused_RowILi8ELi16ELi16ELi960ELi480EEvP7ap_uintILi256EEPKS1_S4_S4_S4_2, i16 %p_ZZ16UpConv_Fused_RowILi8ELi16ELi16ELi960ELi480EEvP7ap_uintILi256EEPKS1_S4_S4_S4_1, i16 %p_ZZ16UpConv_Fused_RowILi8ELi16ELi16ELi960ELi480EEvP7ap_uintILi256EEPKS1_S4_S4_S4"   --->   Operation 51 'call' 'call_ln0' <Predicate = true> <Delay = 1.64> <CoreType = "Generic">   --->   Generic Core
-
-State 11 <SV = 10> <Delay = 2.43>
-ST_11 : Operation 52 [1/1] (0.00ns)   --->   "%G_ptr_read = read i64 @_ssdm_op_Read.ap_auto.i64, i64 %G_ptr"   --->   Operation 52 'read' 'G_ptr_read' <Predicate = true> <Delay = 0.00>
-ST_11 : Operation 53 [1/1] (0.00ns)   --->   "%W_ptr_read = read i64 @_ssdm_op_Read.ap_auto.i64, i64 %W_ptr"   --->   Operation 53 'read' 'W_ptr_read' <Predicate = true> <Delay = 0.00>
-ST_11 : Operation 54 [1/1] (0.00ns)   --->   "%trunc_ln2 = partselect i59 @_ssdm_op_PartSelect.i59.i64.i32.i32, i64 %G_ptr_read, i32 5, i32 63" [../gen/Hls_Layers_UpConv.tpp:189->../gen/Hls_Layers_UpConv.tpp:354]   --->   Operation 54 'partselect' 'trunc_ln2' <Predicate = true> <Delay = 0.00>
-ST_11 : Operation 55 [1/1] (0.00ns)   --->   "%sext_ln189 = sext i59 %trunc_ln2" [../gen/Hls_Layers_UpConv.tpp:189->../gen/Hls_Layers_UpConv.tpp:354]   --->   Operation 55 'sext' 'sext_ln189' <Predicate = true> <Delay = 0.00>
-ST_11 : Operation 56 [1/1] (0.00ns)   --->   "%gmem_param_addr_1 = getelementptr i256 %gmem_param, i64 %sext_ln189" [../gen/Hls_Layers_UpConv.tpp:189->../gen/Hls_Layers_UpConv.tpp:354]   --->   Operation 56 'getelementptr' 'gmem_param_addr_1' <Predicate = true> <Delay = 0.00>
-ST_11 : Operation 57 [8/8] (2.43ns)   --->   "%empty_203 = readreq i1 @_ssdm_op_ReadReq.m_axi.p1i256, i256 %gmem_param_addr_1, i64 30" [../gen/Hls_Layers_UpConv.tpp:189->../gen/Hls_Layers_UpConv.tpp:354]   --->   Operation 57 'readreq' 'empty_203' <Predicate = true> <Delay = 2.43> <CoreInst = "m_axi">   --->   Core 119 'm_axi' <Latency = 6> <II = 1> <Delay = 1.00> <Adapter> <Opcode : 'read' 'write' 'readreq' 'writereq' 'writeresp'>
-ST_11 : Operation 58 [1/1] (0.00ns)   --->   "%trunc_ln4 = partselect i59 @_ssdm_op_PartSelect.i59.i64.i32.i32, i64 %W_ptr_read, i32 5, i32 63" [../gen/Hls_Layers_UpConv.tpp:357]   --->   Operation 58 'partselect' 'trunc_ln4' <Predicate = true> <Delay = 0.00>
-ST_11 : Operation 59 [1/1] (0.00ns)   --->   "%sext_ln357 = sext i59 %trunc_ln4" [../gen/Hls_Layers_UpConv.tpp:357]   --->   Operation 59 'sext' 'sext_ln357' <Predicate = true> <Delay = 0.00>
-ST_11 : Operation 60 [1/1] (0.00ns)   --->   "%gmem_weight_addr = getelementptr i256 %gmem_weight, i64 %sext_ln357" [../gen/Hls_Layers_UpConv.tpp:357]   --->   Operation 60 'getelementptr' 'gmem_weight_addr' <Predicate = true> <Delay = 0.00>
-ST_11 : Operation 61 [8/8] (2.43ns)   --->   "%empty_205 = readreq i1 @_ssdm_op_ReadReq.m_axi.p1i256, i256 %gmem_weight_addr, i64 259200" [../gen/Hls_Layers_UpConv.tpp:357]   --->   Operation 61 'readreq' 'empty_205' <Predicate = true> <Delay = 2.43> <CoreInst = "m_axi">   --->   Core 119 'm_axi' <Latency = 6> <II = 1> <Delay = 1.00> <Adapter> <Opcode : 'read' 'write' 'readreq' 'writereq' 'writeresp'>
-
-State 12 <SV = 11> <Delay = 2.43>
-ST_12 : Operation 62 [7/8] (2.43ns)   --->   "%empty_203 = readreq i1 @_ssdm_op_ReadReq.m_axi.p1i256, i256 %gmem_param_addr_1, i64 30" [../gen/Hls_Layers_UpConv.tpp:189->../gen/Hls_Layers_UpConv.tpp:354]   --->   Operation 62 'readreq' 'empty_203' <Predicate = true> <Delay = 2.43> <CoreInst = "m_axi">   --->   Core 119 'm_axi' <Latency = 6> <II = 1> <Delay = 1.00> <Adapter> <Opcode : 'read' 'write' 'readreq' 'writereq' 'writeresp'>
-ST_12 : Operation 63 [7/8] (2.43ns)   --->   "%empty_205 = readreq i1 @_ssdm_op_ReadReq.m_axi.p1i256, i256 %gmem_weight_addr, i64 259200" [../gen/Hls_Layers_UpConv.tpp:357]   --->   Operation 63 'readreq' 'empty_205' <Predicate = true> <Delay = 2.43> <CoreInst = "m_axi">   --->   Core 119 'm_axi' <Latency = 6> <II = 1> <Delay = 1.00> <Adapter> <Opcode : 'read' 'write' 'readreq' 'writereq' 'writeresp'>
-
-State 13 <SV = 12> <Delay = 2.43>
-ST_13 : Operation 64 [6/8] (2.43ns)   --->   "%empty_203 = readreq i1 @_ssdm_op_ReadReq.m_axi.p1i256, i256 %gmem_param_addr_1, i64 30" [../gen/Hls_Layers_UpConv.tpp:189->../gen/Hls_Layers_UpConv.tpp:354]   --->   Operation 64 'readreq' 'empty_203' <Predicate = true> <Delay = 2.43> <CoreInst = "m_axi">   --->   Core 119 'm_axi' <Latency = 6> <II = 1> <Delay = 1.00> <Adapter> <Opcode : 'read' 'write' 'readreq' 'writereq' 'writeresp'>
-ST_13 : Operation 65 [6/8] (2.43ns)   --->   "%empty_205 = readreq i1 @_ssdm_op_ReadReq.m_axi.p1i256, i256 %gmem_weight_addr, i64 259200" [../gen/Hls_Layers_UpConv.tpp:357]   --->   Operation 65 'readreq' 'empty_205' <Predicate = true> <Delay = 2.43> <CoreInst = "m_axi">   --->   Core 119 'm_axi' <Latency = 6> <II = 1> <Delay = 1.00> <Adapter> <Opcode : 'read' 'write' 'readreq' 'writereq' 'writeresp'>
-
-State 14 <SV = 13> <Delay = 2.43>
-ST_14 : Operation 66 [5/8] (2.43ns)   --->   "%empty_203 = readreq i1 @_ssdm_op_ReadReq.m_axi.p1i256, i256 %gmem_param_addr_1, i64 30" [../gen/Hls_Layers_UpConv.tpp:189->../gen/Hls_Layers_UpConv.tpp:354]   --->   Operation 66 'readreq' 'empty_203' <Predicate = true> <Delay = 2.43> <CoreInst = "m_axi">   --->   Core 119 'm_axi' <Latency = 6> <II = 1> <Delay = 1.00> <Adapter> <Opcode : 'read' 'write' 'readreq' 'writereq' 'writeresp'>
-ST_14 : Operation 67 [5/8] (2.43ns)   --->   "%empty_205 = readreq i1 @_ssdm_op_ReadReq.m_axi.p1i256, i256 %gmem_weight_addr, i64 259200" [../gen/Hls_Layers_UpConv.tpp:357]   --->   Operation 67 'readreq' 'empty_205' <Predicate = true> <Delay = 2.43> <CoreInst = "m_axi">   --->   Core 119 'm_axi' <Latency = 6> <II = 1> <Delay = 1.00> <Adapter> <Opcode : 'read' 'write' 'readreq' 'writereq' 'writeresp'>
-
-State 15 <SV = 14> <Delay = 2.43>
-ST_15 : Operation 68 [4/8] (2.43ns)   --->   "%empty_203 = readreq i1 @_ssdm_op_ReadReq.m_axi.p1i256, i256 %gmem_param_addr_1, i64 30" [../gen/Hls_Layers_UpConv.tpp:189->../gen/Hls_Layers_UpConv.tpp:354]   --->   Operation 68 'readreq' 'empty_203' <Predicate = true> <Delay = 2.43> <CoreInst = "m_axi">   --->   Core 119 'm_axi' <Latency = 6> <II = 1> <Delay = 1.00> <Adapter> <Opcode : 'read' 'write' 'readreq' 'writereq' 'writeresp'>
-ST_15 : Operation 69 [4/8] (2.43ns)   --->   "%empty_205 = readreq i1 @_ssdm_op_ReadReq.m_axi.p1i256, i256 %gmem_weight_addr, i64 259200" [../gen/Hls_Layers_UpConv.tpp:357]   --->   Operation 69 'readreq' 'empty_205' <Predicate = true> <Delay = 2.43> <CoreInst = "m_axi">   --->   Core 119 'm_axi' <Latency = 6> <II = 1> <Delay = 1.00> <Adapter> <Opcode : 'read' 'write' 'readreq' 'writereq' 'writeresp'>
-
-State 16 <SV = 15> <Delay = 2.43>
-ST_16 : Operation 70 [3/8] (2.43ns)   --->   "%empty_203 = readreq i1 @_ssdm_op_ReadReq.m_axi.p1i256, i256 %gmem_param_addr_1, i64 30" [../gen/Hls_Layers_UpConv.tpp:189->../gen/Hls_Layers_UpConv.tpp:354]   --->   Operation 70 'readreq' 'empty_203' <Predicate = true> <Delay = 2.43> <CoreInst = "m_axi">   --->   Core 119 'm_axi' <Latency = 6> <II = 1> <Delay = 1.00> <Adapter> <Opcode : 'read' 'write' 'readreq' 'writereq' 'writeresp'>
-ST_16 : Operation 71 [3/8] (2.43ns)   --->   "%empty_205 = readreq i1 @_ssdm_op_ReadReq.m_axi.p1i256, i256 %gmem_weight_addr, i64 259200" [../gen/Hls_Layers_UpConv.tpp:357]   --->   Operation 71 'readreq' 'empty_205' <Predicate = true> <Delay = 2.43> <CoreInst = "m_axi">   --->   Core 119 'm_axi' <Latency = 6> <II = 1> <Delay = 1.00> <Adapter> <Opcode : 'read' 'write' 'readreq' 'writereq' 'writeresp'>
-
-State 17 <SV = 16> <Delay = 2.43>
-ST_17 : Operation 72 [2/8] (2.43ns)   --->   "%empty_203 = readreq i1 @_ssdm_op_ReadReq.m_axi.p1i256, i256 %gmem_param_addr_1, i64 30" [../gen/Hls_Layers_UpConv.tpp:189->../gen/Hls_Layers_UpConv.tpp:354]   --->   Operation 72 'readreq' 'empty_203' <Predicate = true> <Delay = 2.43> <CoreInst = "m_axi">   --->   Core 119 'm_axi' <Latency = 6> <II = 1> <Delay = 1.00> <Adapter> <Opcode : 'read' 'write' 'readreq' 'writereq' 'writeresp'>
-ST_17 : Operation 73 [2/8] (2.43ns)   --->   "%empty_205 = readreq i1 @_ssdm_op_ReadReq.m_axi.p1i256, i256 %gmem_weight_addr, i64 259200" [../gen/Hls_Layers_UpConv.tpp:357]   --->   Operation 73 'readreq' 'empty_205' <Predicate = true> <Delay = 2.43> <CoreInst = "m_axi">   --->   Core 119 'm_axi' <Latency = 6> <II = 1> <Delay = 1.00> <Adapter> <Opcode : 'read' 'write' 'readreq' 'writereq' 'writeresp'>
-
-State 18 <SV = 17> <Delay = 2.43>
-ST_18 : Operation 74 [1/8] (2.43ns)   --->   "%empty_203 = readreq i1 @_ssdm_op_ReadReq.m_axi.p1i256, i256 %gmem_param_addr_1, i64 30" [../gen/Hls_Layers_UpConv.tpp:189->../gen/Hls_Layers_UpConv.tpp:354]   --->   Operation 74 'readreq' 'empty_203' <Predicate = true> <Delay = 2.43> <CoreInst = "m_axi">   --->   Core 119 'm_axi' <Latency = 6> <II = 1> <Delay = 1.00> <Adapter> <Opcode : 'read' 'write' 'readreq' 'writereq' 'writeresp'>
-ST_18 : Operation 75 [1/8] (2.43ns)   --->   "%empty_205 = readreq i1 @_ssdm_op_ReadReq.m_axi.p1i256, i256 %gmem_weight_addr, i64 259200" [../gen/Hls_Layers_UpConv.tpp:357]   --->   Operation 75 'readreq' 'empty_205' <Predicate = true> <Delay = 2.43> <CoreInst = "m_axi">   --->   Core 119 'm_axi' <Latency = 6> <II = 1> <Delay = 1.00> <Adapter> <Opcode : 'read' 'write' 'readreq' 'writereq' 'writeresp'>
-
-State 19 <SV = 18> <Delay = 0.78>
-ST_19 : Operation 76 [1/1] (0.00ns)   --->   "%ho_read = read i5 @_ssdm_op_Read.ap_auto.i5, i5 %ho"   --->   Operation 76 'read' 'ho_read' <Predicate = true> <Delay = 0.00>
-ST_19 : Operation 77 [1/1] (0.00ns)   --->   "%ho_cast = zext i5 %ho_read"   --->   Operation 77 'zext' 'ho_cast' <Predicate = true> <Delay = 0.00>
-ST_19 : Operation 78 [2/2] (0.00ns)   --->   "%call_ln189 = call void @UpConv_Fused_Row<8, 16, 16, 960, 480>_Pipeline_LOAD_G, i256 %gmem_param, i59 %trunc_ln2, i256 %g_buf" [../gen/Hls_Layers_UpConv.tpp:189->../gen/Hls_Layers_UpConv.tpp:354]   --->   Operation 78 'call' 'call_ln189' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Generic Core
-ST_19 : Operation 79 [1/1] (0.78ns)   --->   "%add_i78 = add i6 %ho_cast, i6 1"   --->   Operation 79 'add' 'add_i78' <Predicate = true> <Delay = 0.78> <CoreInst = "Adder">   --->   Core 1 'Adder' <Latency = 0> <II = 1> <Delay = 0.78> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
-ST_19 : Operation 80 [2/2] (0.00ns)   --->   "%call_ln357 = call void @UpConv_Fused_Row<8, 16, 16, 960, 480>_Outline_TILE_LOOP, i256 %gmem_weight, i59 %trunc_ln4, i6 %add_i78, i256 %x_buf, i16 %void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_9, i16 %void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_8, i16 %void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_7, i16 %void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_6, i16 %void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_5, i16 %void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_4, i16 %void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_3, i16 %void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_2, i16 %void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_1, i16 %void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u, i16 %p_ZZ16UpConv_Fused_RowILi8ELi16ELi16ELi960ELi480EEvP7ap_uintILi256EEPKS1_S4_S4_S4_5, i16 %p_ZZ16UpConv_Fused_RowILi8ELi16ELi16ELi960ELi480EEvP7ap_uintILi256EEPKS1_S4_S4_S4_4, i16 %p_ZZ16UpConv_Fused_RowILi8ELi16ELi16ELi960ELi480EEvP7ap_uintILi256EEPKS1_S4_S4_S4_3, i16 %p_ZZ16UpConv_Fused_RowILi8ELi16ELi16ELi960ELi480EEvP7ap_uintILi256EEPKS1_S4_S4_S4_2, i16 %p_ZZ16UpConv_Fused_RowILi8ELi16ELi16ELi960ELi480EEvP7ap_uintILi256EEPKS1_S4_S4_S4_1, i16 %p_ZZ16UpConv_Fused_RowILi8ELi16ELi16ELi960ELi480EEvP7ap_uintILi256EEPKS1_S4_S4_S4" [../gen/Hls_Layers_UpConv.tpp:357]   --->   Operation 80 'call' 'call_ln357' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Generic Core
-
-State 20 <SV = 19> <Delay = 0.78>
-ST_20 : Operation 81 [1/2] (0.00ns)   --->   "%call_ln189 = call void @UpConv_Fused_Row<8, 16, 16, 960, 480>_Pipeline_LOAD_G, i256 %gmem_param, i59 %trunc_ln2, i256 %g_buf" [../gen/Hls_Layers_UpConv.tpp:189->../gen/Hls_Layers_UpConv.tpp:354]   --->   Operation 81 'call' 'call_ln189' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Generic Core
-ST_20 : Operation 82 [1/2] (0.78ns)   --->   "%call_ln357 = call void @UpConv_Fused_Row<8, 16, 16, 960, 480>_Outline_TILE_LOOP, i256 %gmem_weight, i59 %trunc_ln4, i6 %add_i78, i256 %x_buf, i16 %void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_9, i16 %void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_8, i16 %void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_7, i16 %void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_6, i16 %void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_5, i16 %void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_4, i16 %void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_3, i16 %void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_2, i16 %void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_1, i16 %void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u, i16 %p_ZZ16UpConv_Fused_RowILi8ELi16ELi16ELi960ELi480EEvP7ap_uintILi256EEPKS1_S4_S4_S4_5, i16 %p_ZZ16UpConv_Fused_RowILi8ELi16ELi16ELi960ELi480EEvP7ap_uintILi256EEPKS1_S4_S4_S4_4, i16 %p_ZZ16UpConv_Fused_RowILi8ELi16ELi16ELi960ELi480EEvP7ap_uintILi256EEPKS1_S4_S4_S4_3, i16 %p_ZZ16UpConv_Fused_RowILi8ELi16ELi16ELi960ELi480EEvP7ap_uintILi256EEPKS1_S4_S4_S4_2, i16 %p_ZZ16UpConv_Fused_RowILi8ELi16ELi16ELi960ELi480EEvP7ap_uintILi256EEPKS1_S4_S4_S4_1, i16 %p_ZZ16UpConv_Fused_RowILi8ELi16ELi16ELi960ELi480EEvP7ap_uintILi256EEPKS1_S4_S4_S4" [../gen/Hls_Layers_UpConv.tpp:357]   --->   Operation 82 'call' 'call_ln357' <Predicate = true> <Delay = 0.78> <CoreType = "Generic">   --->   Generic Core
-
-State 21 <SV = 20> <Delay = 2.43>
-ST_21 : Operation 83 [1/1] (0.00ns)   --->   "%BE_ptr_read = read i64 @_ssdm_op_Read.ap_auto.i64, i64 %BE_ptr"   --->   Operation 83 'read' 'BE_ptr_read' <Predicate = true> <Delay = 0.00>
-ST_21 : Operation 84 [1/1] (0.00ns)   --->   "%trunc_ln3 = partselect i59 @_ssdm_op_PartSelect.i59.i64.i32.i32, i64 %BE_ptr_read, i32 5, i32 63" [../gen/Hls_Layers_UpConv.tpp:193->../gen/Hls_Layers_UpConv.tpp:354]   --->   Operation 84 'partselect' 'trunc_ln3' <Predicate = true> <Delay = 0.00>
-ST_21 : Operation 85 [1/1] (0.00ns)   --->   "%sext_ln193 = sext i59 %trunc_ln3" [../gen/Hls_Layers_UpConv.tpp:193->../gen/Hls_Layers_UpConv.tpp:354]   --->   Operation 85 'sext' 'sext_ln193' <Predicate = true> <Delay = 0.00>
-ST_21 : Operation 86 [1/1] (0.00ns)   --->   "%gmem_param_addr_2 = getelementptr i256 %gmem_param, i64 %sext_ln193" [../gen/Hls_Layers_UpConv.tpp:193->../gen/Hls_Layers_UpConv.tpp:354]   --->   Operation 86 'getelementptr' 'gmem_param_addr_2' <Predicate = true> <Delay = 0.00>
-ST_21 : Operation 87 [8/8] (2.43ns)   --->   "%empty_204 = readreq i1 @_ssdm_op_ReadReq.m_axi.p1i256, i256 %gmem_param_addr_2, i64 30" [../gen/Hls_Layers_UpConv.tpp:193->../gen/Hls_Layers_UpConv.tpp:354]   --->   Operation 87 'readreq' 'empty_204' <Predicate = true> <Delay = 2.43> <CoreInst = "m_axi">   --->   Core 119 'm_axi' <Latency = 6> <II = 1> <Delay = 1.00> <Adapter> <Opcode : 'read' 'write' 'readreq' 'writereq' 'writeresp'>
-
-State 22 <SV = 21> <Delay = 2.43>
-ST_22 : Operation 88 [7/8] (2.43ns)   --->   "%empty_204 = readreq i1 @_ssdm_op_ReadReq.m_axi.p1i256, i256 %gmem_param_addr_2, i64 30" [../gen/Hls_Layers_UpConv.tpp:193->../gen/Hls_Layers_UpConv.tpp:354]   --->   Operation 88 'readreq' 'empty_204' <Predicate = true> <Delay = 2.43> <CoreInst = "m_axi">   --->   Core 119 'm_axi' <Latency = 6> <II = 1> <Delay = 1.00> <Adapter> <Opcode : 'read' 'write' 'readreq' 'writereq' 'writeresp'>
-
-State 23 <SV = 22> <Delay = 2.43>
-ST_23 : Operation 89 [6/8] (2.43ns)   --->   "%empty_204 = readreq i1 @_ssdm_op_ReadReq.m_axi.p1i256, i256 %gmem_param_addr_2, i64 30" [../gen/Hls_Layers_UpConv.tpp:193->../gen/Hls_Layers_UpConv.tpp:354]   --->   Operation 89 'readreq' 'empty_204' <Predicate = true> <Delay = 2.43> <CoreInst = "m_axi">   --->   Core 119 'm_axi' <Latency = 6> <II = 1> <Delay = 1.00> <Adapter> <Opcode : 'read' 'write' 'readreq' 'writereq' 'writeresp'>
-
-State 24 <SV = 23> <Delay = 2.43>
-ST_24 : Operation 90 [5/8] (2.43ns)   --->   "%empty_204 = readreq i1 @_ssdm_op_ReadReq.m_axi.p1i256, i256 %gmem_param_addr_2, i64 30" [../gen/Hls_Layers_UpConv.tpp:193->../gen/Hls_Layers_UpConv.tpp:354]   --->   Operation 90 'readreq' 'empty_204' <Predicate = true> <Delay = 2.43> <CoreInst = "m_axi">   --->   Core 119 'm_axi' <Latency = 6> <II = 1> <Delay = 1.00> <Adapter> <Opcode : 'read' 'write' 'readreq' 'writereq' 'writeresp'>
-
-State 25 <SV = 24> <Delay = 2.43>
-ST_25 : Operation 91 [4/8] (2.43ns)   --->   "%empty_204 = readreq i1 @_ssdm_op_ReadReq.m_axi.p1i256, i256 %gmem_param_addr_2, i64 30" [../gen/Hls_Layers_UpConv.tpp:193->../gen/Hls_Layers_UpConv.tpp:354]   --->   Operation 91 'readreq' 'empty_204' <Predicate = true> <Delay = 2.43> <CoreInst = "m_axi">   --->   Core 119 'm_axi' <Latency = 6> <II = 1> <Delay = 1.00> <Adapter> <Opcode : 'read' 'write' 'readreq' 'writereq' 'writeresp'>
-
-State 26 <SV = 25> <Delay = 2.43>
-ST_26 : Operation 92 [3/8] (2.43ns)   --->   "%empty_204 = readreq i1 @_ssdm_op_ReadReq.m_axi.p1i256, i256 %gmem_param_addr_2, i64 30" [../gen/Hls_Layers_UpConv.tpp:193->../gen/Hls_Layers_UpConv.tpp:354]   --->   Operation 92 'readreq' 'empty_204' <Predicate = true> <Delay = 2.43> <CoreInst = "m_axi">   --->   Core 119 'm_axi' <Latency = 6> <II = 1> <Delay = 1.00> <Adapter> <Opcode : 'read' 'write' 'readreq' 'writereq' 'writeresp'>
-
-State 27 <SV = 26> <Delay = 2.43>
-ST_27 : Operation 93 [1/1] (0.00ns)   --->   "%epsilon_read = read i16 @_ssdm_op_Read.ap_auto.half, i16 %epsilon"   --->   Operation 93 'read' 'epsilon_read' <Predicate = true> <Delay = 0.00>
-ST_27 : Operation 94 [2/8] (2.43ns)   --->   "%empty_204 = readreq i1 @_ssdm_op_ReadReq.m_axi.p1i256, i256 %gmem_param_addr_2, i64 30" [../gen/Hls_Layers_UpConv.tpp:193->../gen/Hls_Layers_UpConv.tpp:354]   --->   Operation 94 'readreq' 'empty_204' <Predicate = true> <Delay = 2.43> <CoreInst = "m_axi">   --->   Core 119 'm_axi' <Latency = 6> <II = 1> <Delay = 1.00> <Adapter> <Opcode : 'read' 'write' 'readreq' 'writereq' 'writeresp'>
-ST_27 : Operation 95 [2/2] (1.53ns)   --->   "%conv42_i = hptosp i16 %epsilon_read"   --->   Operation 95 'hptosp' 'conv42_i' <Predicate = true> <Delay = 1.53> <CoreInst = "Half2Float">   --->   Core 68 'Half2Float' <Latency = 1> <II = 1> <Delay = 1.53> <FuncUnit> <Opcode : 'hptosp'> <InPorts = 1> <OutPorts = 1>
-
-State 28 <SV = 27> <Delay = 2.43>
-ST_28 : Operation 96 [1/8] (2.43ns)   --->   "%empty_204 = readreq i1 @_ssdm_op_ReadReq.m_axi.p1i256, i256 %gmem_param_addr_2, i64 30" [../gen/Hls_Layers_UpConv.tpp:193->../gen/Hls_Layers_UpConv.tpp:354]   --->   Operation 96 'readreq' 'empty_204' <Predicate = true> <Delay = 2.43> <CoreInst = "m_axi">   --->   Core 119 'm_axi' <Latency = 6> <II = 1> <Delay = 1.00> <Adapter> <Opcode : 'read' 'write' 'readreq' 'writereq' 'writeresp'>
-ST_28 : Operation 97 [1/2] (1.53ns)   --->   "%conv42_i = hptosp i16 %epsilon_read"   --->   Operation 97 'hptosp' 'conv42_i' <Predicate = true> <Delay = 1.53> <CoreInst = "Half2Float">   --->   Core 68 'Half2Float' <Latency = 1> <II = 1> <Delay = 1.53> <FuncUnit> <Opcode : 'hptosp'> <InPorts = 1> <OutPorts = 1>
-
-State 29 <SV = 28> <Delay = 0.00>
-ST_29 : Operation 98 [2/2] (0.00ns)   --->   "%call_ln193 = call void @UpConv_Fused_Row<8, 16, 16, 960, 480>_Pipeline_LOAD_BE, i256 %gmem_param, i59 %trunc_ln3, i256 %be_buf" [../gen/Hls_Layers_UpConv.tpp:193->../gen/Hls_Layers_UpConv.tpp:354]   --->   Operation 98 'call' 'call_ln193' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Generic Core
-ST_29 : Operation 99 [2/2] (0.00ns)   --->   "%call_ln0 = call void @UpConv_Fused_Row<8, 16, 16, 960, 480>_Pipeline_PIXEL_STATS, i32 %conv42_i, i256 %b_buf, i32 %mean_buf, i16 %inv_buf, i16 %void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_9, i16 %void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_8, i16 %void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_7, i16 %void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_6, i16 %void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_5, i16 %void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_4, i16 %void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_3, i16 %void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_2, i16 %void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_1, i16 %void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u, i16 %p_ZZ16UpConv_Fused_RowILi8ELi16ELi16ELi960ELi480EEvP7ap_uintILi256EEPKS1_S4_S4_S4_5, i16 %p_ZZ16UpConv_Fused_RowILi8ELi16ELi16ELi960ELi480EEvP7ap_uintILi256EEPKS1_S4_S4_S4_4, i16 %p_ZZ16UpConv_Fused_RowILi8ELi16ELi16ELi960ELi480EEvP7ap_uintILi256EEPKS1_S4_S4_S4_3, i16 %p_ZZ16UpConv_Fused_RowILi8ELi16ELi16ELi960ELi480EEvP7ap_uintILi256EEPKS1_S4_S4_S4_2, i16 %p_ZZ16UpConv_Fused_RowILi8ELi16ELi16ELi960ELi480EEvP7ap_uintILi256EEPKS1_S4_S4_S4_1, i16 %p_ZZ16UpConv_Fused_RowILi8ELi16ELi16ELi960ELi480EEvP7ap_uintILi256EEPKS1_S4_S4_S4"   --->   Operation 99 'call' 'call_ln0' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Generic Core
-
-State 30 <SV = 29> <Delay = 0.00>
-ST_30 : Operation 100 [1/2] (0.00ns)   --->   "%call_ln193 = call void @UpConv_Fused_Row<8, 16, 16, 960, 480>_Pipeline_LOAD_BE, i256 %gmem_param, i59 %trunc_ln3, i256 %be_buf" [../gen/Hls_Layers_UpConv.tpp:193->../gen/Hls_Layers_UpConv.tpp:354]   --->   Operation 100 'call' 'call_ln193' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Generic Core
-ST_30 : Operation 101 [1/2] (0.00ns)   --->   "%call_ln0 = call void @UpConv_Fused_Row<8, 16, 16, 960, 480>_Pipeline_PIXEL_STATS, i32 %conv42_i, i256 %b_buf, i32 %mean_buf, i16 %inv_buf, i16 %void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_9, i16 %void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_8, i16 %void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_7, i16 %void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_6, i16 %void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_5, i16 %void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_4, i16 %void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_3, i16 %void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_2, i16 %void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_1, i16 %void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u, i16 %p_ZZ16UpConv_Fused_RowILi8ELi16ELi16ELi960ELi480EEvP7ap_uintILi256EEPKS1_S4_S4_S4_5, i16 %p_ZZ16UpConv_Fused_RowILi8ELi16ELi16ELi960ELi480EEvP7ap_uintILi256EEPKS1_S4_S4_S4_4, i16 %p_ZZ16UpConv_Fused_RowILi8ELi16ELi16ELi960ELi480EEvP7ap_uintILi256EEPKS1_S4_S4_S4_3, i16 %p_ZZ16UpConv_Fused_RowILi8ELi16ELi16ELi960ELi480EEvP7ap_uintILi256EEPKS1_S4_S4_S4_2, i16 %p_ZZ16UpConv_Fused_RowILi8ELi16ELi16ELi960ELi480EEvP7ap_uintILi256EEPKS1_S4_S4_S4_1, i16 %p_ZZ16UpConv_Fused_RowILi8ELi16ELi16ELi960ELi480EEvP7ap_uintILi256EEPKS1_S4_S4_S4"   --->   Operation 101 'call' 'call_ln0' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Generic Core
-
-State 31 <SV = 30> <Delay = 0.00>
-ST_31 : Operation 102 [1/1] (0.00ns)   --->   "%Y_read = read i64 @_ssdm_op_Read.ap_auto.i64, i64 %Y"   --->   Operation 102 'read' 'Y_read' <Predicate = true> <Delay = 0.00>
-ST_31 : Operation 103 [1/1] (0.00ns)   --->   "%mul43_i = bitconcatenate i10 @_ssdm_op_BitConcatenate.i10.i5.i5, i5 %ho_read, i5 0"   --->   Operation 103 'bitconcatenate' 'mul43_i' <Predicate = true> <Delay = 0.00>
-ST_31 : Operation 104 [2/2] (0.00ns)   --->   "%call_ln0 = call void @UpConv_Fused_Row<8, 16, 16, 960, 480>_Pipeline_PIXEL_NORM, i256 %g_buf, i256 %be_buf, i10 %mul43_i, i64 %Y_read, i256 %gmem_out, i32 %mean_buf, i16 %inv_buf, i16 %void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_9, i16 %void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_8, i16 %void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_7, i16 %void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_6, i16 %void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_5, i16 %void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_4, i16 %void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_3, i16 %void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_2, i16 %void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_1, i16 %void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u, i16 %p_ZZ16UpConv_Fused_RowILi8ELi16ELi16ELi960ELi480EEvP7ap_uintILi256EEPKS1_S4_S4_S4_5, i16 %p_ZZ16UpConv_Fused_RowILi8ELi16ELi16ELi960ELi480EEvP7ap_uintILi256EEPKS1_S4_S4_S4_4, i16 %p_ZZ16UpConv_Fused_RowILi8ELi16ELi16ELi960ELi480EEvP7ap_uintILi256EEPKS1_S4_S4_S4_3, i16 %p_ZZ16UpConv_Fused_RowILi8ELi16ELi16ELi960ELi480EEvP7ap_uintILi256EEPKS1_S4_S4_S4_2, i16 %p_ZZ16UpConv_Fused_RowILi8ELi16ELi16ELi960ELi480EEvP7ap_uintILi256EEPKS1_S4_S4_S4_1, i16 %p_ZZ16UpConv_Fused_RowILi8ELi16ELi16ELi960ELi480EEvP7ap_uintILi256EEPKS1_S4_S4_S4"   --->   Operation 104 'call' 'call_ln0' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Generic Core
-
-State 32 <SV = 31> <Delay = 0.00>
-ST_32 : Operation 105 [1/1] (0.00ns)   --->   "%specmemcore_ln0 = specmemcore void @_ssdm_op_SpecMemCore, i256 %x_buf, i64 666, i64 31, i64 18446744073709551615"   --->   Operation 105 'specmemcore' 'specmemcore_ln0' <Predicate = true> <Delay = 0.00>
-ST_32 : Operation 106 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i256 %gmem_out, void @empty_27, i32 0, i32 0, void @empty_1, i32 0, i32 0, void @empty_21, void @empty_14, void @empty_1, i32 16, i32 16, i32 16, i32 64, void @empty_1, void @empty_1, i32 4294967295, i32 0, i32 0"   --->   Operation 106 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
-ST_32 : Operation 107 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i256 %gmem_param, void @empty_27, i32 0, i32 0, void @empty_1, i32 0, i32 0, void @empty_22, void @empty_14, void @empty_1, i32 16, i32 16, i32 64, i32 16, void @empty_1, void @empty_1, i32 4294967295, i32 0, i32 0"   --->   Operation 107 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
-ST_32 : Operation 108 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i256 %gmem_weight, void @empty_27, i32 0, i32 0, void @empty_1, i32 0, i32 0, void @empty_11, void @empty_14, void @empty_1, i32 16, i32 16, i32 64, i32 16, void @empty_1, void @empty_1, i32 4294967295, i32 0, i32 0"   --->   Operation 108 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
-ST_32 : Operation 109 [1/1] (0.00ns)   --->   "%specmemcore_ln326 = specmemcore void @_ssdm_op_SpecMemCore, i16 %p_ZZ16UpConv_Fused_RowILi8ELi16ELi16ELi960ELi480EEvP7ap_uintILi256EEPKS1_S4_S4_S4, i64 666, i64 31, i64 18446744073709551615" [../gen/Hls_Layers_UpConv.tpp:326]   --->   Operation 109 'specmemcore' 'specmemcore_ln326' <Predicate = true> <Delay = 0.00>
-ST_32 : Operation 110 [1/1] (0.00ns)   --->   "%specmemcore_ln326 = specmemcore void @_ssdm_op_SpecMemCore, i16 %p_ZZ16UpConv_Fused_RowILi8ELi16ELi16ELi960ELi480EEvP7ap_uintILi256EEPKS1_S4_S4_S4_1, i64 666, i64 31, i64 18446744073709551615" [../gen/Hls_Layers_UpConv.tpp:326]   --->   Operation 110 'specmemcore' 'specmemcore_ln326' <Predicate = true> <Delay = 0.00>
-ST_32 : Operation 111 [1/1] (0.00ns)   --->   "%specmemcore_ln326 = specmemcore void @_ssdm_op_SpecMemCore, i16 %p_ZZ16UpConv_Fused_RowILi8ELi16ELi16ELi960ELi480EEvP7ap_uintILi256EEPKS1_S4_S4_S4_2, i64 666, i64 31, i64 18446744073709551615" [../gen/Hls_Layers_UpConv.tpp:326]   --->   Operation 111 'specmemcore' 'specmemcore_ln326' <Predicate = true> <Delay = 0.00>
-ST_32 : Operation 112 [1/1] (0.00ns)   --->   "%specmemcore_ln326 = specmemcore void @_ssdm_op_SpecMemCore, i16 %p_ZZ16UpConv_Fused_RowILi8ELi16ELi16ELi960ELi480EEvP7ap_uintILi256EEPKS1_S4_S4_S4_3, i64 666, i64 31, i64 18446744073709551615" [../gen/Hls_Layers_UpConv.tpp:326]   --->   Operation 112 'specmemcore' 'specmemcore_ln326' <Predicate = true> <Delay = 0.00>
-ST_32 : Operation 113 [1/1] (0.00ns)   --->   "%specmemcore_ln326 = specmemcore void @_ssdm_op_SpecMemCore, i16 %p_ZZ16UpConv_Fused_RowILi8ELi16ELi16ELi960ELi480EEvP7ap_uintILi256EEPKS1_S4_S4_S4_4, i64 666, i64 31, i64 18446744073709551615" [../gen/Hls_Layers_UpConv.tpp:326]   --->   Operation 113 'specmemcore' 'specmemcore_ln326' <Predicate = true> <Delay = 0.00>
-ST_32 : Operation 114 [1/1] (0.00ns)   --->   "%specmemcore_ln326 = specmemcore void @_ssdm_op_SpecMemCore, i16 %p_ZZ16UpConv_Fused_RowILi8ELi16ELi16ELi960ELi480EEvP7ap_uintILi256EEPKS1_S4_S4_S4_5, i64 666, i64 31, i64 18446744073709551615" [../gen/Hls_Layers_UpConv.tpp:326]   --->   Operation 114 'specmemcore' 'specmemcore_ln326' <Predicate = true> <Delay = 0.00>
-ST_32 : Operation 115 [1/1] (0.00ns)   --->   "%specmemcore_ln326 = specmemcore void @_ssdm_op_SpecMemCore, i16 %void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u, i64 666, i64 31, i64 18446744073709551615" [../gen/Hls_Layers_UpConv.tpp:326]   --->   Operation 115 'specmemcore' 'specmemcore_ln326' <Predicate = true> <Delay = 0.00>
-ST_32 : Operation 116 [1/1] (0.00ns)   --->   "%specmemcore_ln326 = specmemcore void @_ssdm_op_SpecMemCore, i16 %void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_1, i64 666, i64 31, i64 18446744073709551615" [../gen/Hls_Layers_UpConv.tpp:326]   --->   Operation 116 'specmemcore' 'specmemcore_ln326' <Predicate = true> <Delay = 0.00>
-ST_32 : Operation 117 [1/1] (0.00ns)   --->   "%specmemcore_ln326 = specmemcore void @_ssdm_op_SpecMemCore, i16 %void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_2, i64 666, i64 31, i64 18446744073709551615" [../gen/Hls_Layers_UpConv.tpp:326]   --->   Operation 117 'specmemcore' 'specmemcore_ln326' <Predicate = true> <Delay = 0.00>
-ST_32 : Operation 118 [1/1] (0.00ns)   --->   "%specmemcore_ln326 = specmemcore void @_ssdm_op_SpecMemCore, i16 %void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_3, i64 666, i64 31, i64 18446744073709551615" [../gen/Hls_Layers_UpConv.tpp:326]   --->   Operation 118 'specmemcore' 'specmemcore_ln326' <Predicate = true> <Delay = 0.00>
-ST_32 : Operation 119 [1/1] (0.00ns)   --->   "%specmemcore_ln326 = specmemcore void @_ssdm_op_SpecMemCore, i16 %void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_4, i64 666, i64 31, i64 18446744073709551615" [../gen/Hls_Layers_UpConv.tpp:326]   --->   Operation 119 'specmemcore' 'specmemcore_ln326' <Predicate = true> <Delay = 0.00>
-ST_32 : Operation 120 [1/1] (0.00ns)   --->   "%specmemcore_ln326 = specmemcore void @_ssdm_op_SpecMemCore, i16 %void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_5, i64 666, i64 31, i64 18446744073709551615" [../gen/Hls_Layers_UpConv.tpp:326]   --->   Operation 120 'specmemcore' 'specmemcore_ln326' <Predicate = true> <Delay = 0.00>
-ST_32 : Operation 121 [1/1] (0.00ns)   --->   "%specmemcore_ln326 = specmemcore void @_ssdm_op_SpecMemCore, i16 %void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_6, i64 666, i64 31, i64 18446744073709551615" [../gen/Hls_Layers_UpConv.tpp:326]   --->   Operation 121 'specmemcore' 'specmemcore_ln326' <Predicate = true> <Delay = 0.00>
-ST_32 : Operation 122 [1/1] (0.00ns)   --->   "%specmemcore_ln326 = specmemcore void @_ssdm_op_SpecMemCore, i16 %void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_7, i64 666, i64 31, i64 18446744073709551615" [../gen/Hls_Layers_UpConv.tpp:326]   --->   Operation 122 'specmemcore' 'specmemcore_ln326' <Predicate = true> <Delay = 0.00>
-ST_32 : Operation 123 [1/1] (0.00ns)   --->   "%specmemcore_ln326 = specmemcore void @_ssdm_op_SpecMemCore, i16 %void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_8, i64 666, i64 31, i64 18446744073709551615" [../gen/Hls_Layers_UpConv.tpp:326]   --->   Operation 123 'specmemcore' 'specmemcore_ln326' <Predicate = true> <Delay = 0.00>
-ST_32 : Operation 124 [1/1] (0.00ns)   --->   "%specmemcore_ln326 = specmemcore void @_ssdm_op_SpecMemCore, i16 %void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_9, i64 666, i64 31, i64 18446744073709551615" [../gen/Hls_Layers_UpConv.tpp:326]   --->   Operation 124 'specmemcore' 'specmemcore_ln326' <Predicate = true> <Delay = 0.00>
-ST_32 : Operation 125 [1/1] (0.00ns)   --->   "%specmemcore_ln340 = specmemcore void @_ssdm_op_SpecMemCore, i256 %b_buf, i64 666, i64 30, i64 18446744073709551615" [../gen/Hls_Layers_UpConv.tpp:340]   --->   Operation 125 'specmemcore' 'specmemcore_ln340' <Predicate = true> <Delay = 0.00>
-ST_32 : Operation 126 [1/1] (0.00ns)   --->   "%specmemcore_ln341 = specmemcore void @_ssdm_op_SpecMemCore, i256 %g_buf, i64 666, i64 30, i64 18446744073709551615" [../gen/Hls_Layers_UpConv.tpp:341]   --->   Operation 126 'specmemcore' 'specmemcore_ln341' <Predicate = true> <Delay = 0.00>
-ST_32 : Operation 127 [1/1] (0.00ns)   --->   "%specmemcore_ln342 = specmemcore void @_ssdm_op_SpecMemCore, i256 %be_buf, i64 666, i64 30, i64 18446744073709551615" [../gen/Hls_Layers_UpConv.tpp:342]   --->   Operation 127 'specmemcore' 'specmemcore_ln342' <Predicate = true> <Delay = 0.00>
-ST_32 : Operation 128 [1/1] (0.00ns)   --->   "%specmemcore_ln346 = specmemcore void @_ssdm_op_SpecMemCore, i32 %mean_buf, i64 666, i64 23, i64 18446744073709551615" [../gen/Hls_Layers_UpConv.tpp:346]   --->   Operation 128 'specmemcore' 'specmemcore_ln346' <Predicate = true> <Delay = 0.00>
-ST_32 : Operation 129 [1/1] (0.00ns)   --->   "%specmemcore_ln347 = specmemcore void @_ssdm_op_SpecMemCore, i16 %inv_buf, i64 666, i64 23, i64 18446744073709551615" [../gen/Hls_Layers_UpConv.tpp:347]   --->   Operation 129 'specmemcore' 'specmemcore_ln347' <Predicate = true> <Delay = 0.00>
-ST_32 : Operation 130 [1/2] (0.00ns)   --->   "%call_ln0 = call void @UpConv_Fused_Row<8, 16, 16, 960, 480>_Pipeline_PIXEL_NORM, i256 %g_buf, i256 %be_buf, i10 %mul43_i, i64 %Y_read, i256 %gmem_out, i32 %mean_buf, i16 %inv_buf, i16 %void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_9, i16 %void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_8, i16 %void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_7, i16 %void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_6, i16 %void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_5, i16 %void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_4, i16 %void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_3, i16 %void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_2, i16 %void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_1, i16 %void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u, i16 %p_ZZ16UpConv_Fused_RowILi8ELi16ELi16ELi960ELi480EEvP7ap_uintILi256EEPKS1_S4_S4_S4_5, i16 %p_ZZ16UpConv_Fused_RowILi8ELi16ELi16ELi960ELi480EEvP7ap_uintILi256EEPKS1_S4_S4_S4_4, i16 %p_ZZ16UpConv_Fused_RowILi8ELi16ELi16ELi960ELi480EEvP7ap_uintILi256EEPKS1_S4_S4_S4_3, i16 %p_ZZ16UpConv_Fused_RowILi8ELi16ELi16ELi960ELi480EEvP7ap_uintILi256EEPKS1_S4_S4_S4_2, i16 %p_ZZ16UpConv_Fused_RowILi8ELi16ELi16ELi960ELi480EEvP7ap_uintILi256EEPKS1_S4_S4_S4_1, i16 %p_ZZ16UpConv_Fused_RowILi8ELi16ELi16ELi960ELi480EEvP7ap_uintILi256EEPKS1_S4_S4_S4"   --->   Operation 130 'call' 'call_ln0' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Generic Core
-ST_32 : Operation 131 [1/1] (0.00ns)   --->   "%ret_ln365 = ret" [../gen/Hls_Layers_UpConv.tpp:365]   --->   Operation 131 'ret' 'ret_ln365' <Predicate = true> <Delay = 0.00>
+State 8 <SV = 7> <Delay = 0.00>
+ST_8 : Operation 34 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i256 %gmem_out, void @empty_109, i32 0, i32 0, void @empty_65, i32 0, i32 0, void @empty_136, void @empty_67, void @empty_65, i32 16, i32 16, i32 16, i32 64, void @empty_65, void @empty_65, i32 4294967295, i32 0, i32 0"   --->   Operation 34 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
+ST_8 : Operation 35 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i256 %gmem_param, void @empty_109, i32 0, i32 0, void @empty_65, i32 0, i32 0, void @empty_118, void @empty_67, void @empty_65, i32 16, i32 16, i32 64, i32 16, void @empty_65, void @empty_65, i32 4294967295, i32 0, i32 0"   --->   Operation 35 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
+ST_8 : Operation 36 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i256 %gmem_weight, void @empty_109, i32 0, i32 0, void @empty_65, i32 0, i32 0, void @empty_134, void @empty_67, void @empty_65, i32 16, i32 16, i32 64, i32 16, void @empty_65, void @empty_65, i32 4294967295, i32 0, i32 0"   --->   Operation 36 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
+ST_8 : Operation 37 [1/1] (0.00ns)   --->   "%specmemcore_ln176 = specmemcore void @_ssdm_op_SpecMemCore, i16 %p_ZZ16UpConv_Fused_RowILi8ELi16ELi16ELi960ELi480EEvP7ap_uintILi256EEPKS1_S4_S4_S4, i64 666, i64 31, i64 18446744073709551615" [../gen/Hls_Layers_UpConv.tpp:176]   --->   Operation 37 'specmemcore' 'specmemcore_ln176' <Predicate = true> <Delay = 0.00>
+ST_8 : Operation 38 [1/1] (0.00ns)   --->   "%specmemcore_ln176 = specmemcore void @_ssdm_op_SpecMemCore, i16 %p_ZZ16UpConv_Fused_RowILi8ELi16ELi16ELi960ELi480EEvP7ap_uintILi256EEPKS1_S4_S4_S4_1, i64 666, i64 31, i64 18446744073709551615" [../gen/Hls_Layers_UpConv.tpp:176]   --->   Operation 38 'specmemcore' 'specmemcore_ln176' <Predicate = true> <Delay = 0.00>
+ST_8 : Operation 39 [1/1] (0.00ns)   --->   "%specmemcore_ln176 = specmemcore void @_ssdm_op_SpecMemCore, i16 %p_ZZ16UpConv_Fused_RowILi8ELi16ELi16ELi960ELi480EEvP7ap_uintILi256EEPKS1_S4_S4_S4_2, i64 666, i64 31, i64 18446744073709551615" [../gen/Hls_Layers_UpConv.tpp:176]   --->   Operation 39 'specmemcore' 'specmemcore_ln176' <Predicate = true> <Delay = 0.00>
+ST_8 : Operation 40 [1/1] (0.00ns)   --->   "%specmemcore_ln176 = specmemcore void @_ssdm_op_SpecMemCore, i16 %p_ZZ16UpConv_Fused_RowILi8ELi16ELi16ELi960ELi480EEvP7ap_uintILi256EEPKS1_S4_S4_S4_3, i64 666, i64 31, i64 18446744073709551615" [../gen/Hls_Layers_UpConv.tpp:176]   --->   Operation 40 'specmemcore' 'specmemcore_ln176' <Predicate = true> <Delay = 0.00>
+ST_8 : Operation 41 [1/1] (0.00ns)   --->   "%specmemcore_ln176 = specmemcore void @_ssdm_op_SpecMemCore, i16 %p_ZZ16UpConv_Fused_RowILi8ELi16ELi16ELi960ELi480EEvP7ap_uintILi256EEPKS1_S4_S4_S4_4, i64 666, i64 31, i64 18446744073709551615" [../gen/Hls_Layers_UpConv.tpp:176]   --->   Operation 41 'specmemcore' 'specmemcore_ln176' <Predicate = true> <Delay = 0.00>
+ST_8 : Operation 42 [1/1] (0.00ns)   --->   "%specmemcore_ln176 = specmemcore void @_ssdm_op_SpecMemCore, i16 %p_ZZ16UpConv_Fused_RowILi8ELi16ELi16ELi960ELi480EEvP7ap_uintILi256EEPKS1_S4_S4_S4_5, i64 666, i64 31, i64 18446744073709551615" [../gen/Hls_Layers_UpConv.tpp:176]   --->   Operation 42 'specmemcore' 'specmemcore_ln176' <Predicate = true> <Delay = 0.00>
+ST_8 : Operation 43 [1/1] (0.00ns)   --->   "%specmemcore_ln176 = specmemcore void @_ssdm_op_SpecMemCore, i16 %void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u, i64 666, i64 31, i64 18446744073709551615" [../gen/Hls_Layers_UpConv.tpp:176]   --->   Operation 43 'specmemcore' 'specmemcore_ln176' <Predicate = true> <Delay = 0.00>
+ST_8 : Operation 44 [1/1] (0.00ns)   --->   "%specmemcore_ln176 = specmemcore void @_ssdm_op_SpecMemCore, i16 %void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_1, i64 666, i64 31, i64 18446744073709551615" [../gen/Hls_Layers_UpConv.tpp:176]   --->   Operation 44 'specmemcore' 'specmemcore_ln176' <Predicate = true> <Delay = 0.00>
+ST_8 : Operation 45 [1/1] (0.00ns)   --->   "%specmemcore_ln176 = specmemcore void @_ssdm_op_SpecMemCore, i16 %void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_2, i64 666, i64 31, i64 18446744073709551615" [../gen/Hls_Layers_UpConv.tpp:176]   --->   Operation 45 'specmemcore' 'specmemcore_ln176' <Predicate = true> <Delay = 0.00>
+ST_8 : Operation 46 [1/1] (0.00ns)   --->   "%specmemcore_ln176 = specmemcore void @_ssdm_op_SpecMemCore, i16 %void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_3, i64 666, i64 31, i64 18446744073709551615" [../gen/Hls_Layers_UpConv.tpp:176]   --->   Operation 46 'specmemcore' 'specmemcore_ln176' <Predicate = true> <Delay = 0.00>
+ST_8 : Operation 47 [1/1] (0.00ns)   --->   "%specmemcore_ln176 = specmemcore void @_ssdm_op_SpecMemCore, i16 %void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_4, i64 666, i64 31, i64 18446744073709551615" [../gen/Hls_Layers_UpConv.tpp:176]   --->   Operation 47 'specmemcore' 'specmemcore_ln176' <Predicate = true> <Delay = 0.00>
+ST_8 : Operation 48 [1/1] (0.00ns)   --->   "%specmemcore_ln176 = specmemcore void @_ssdm_op_SpecMemCore, i16 %void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_5, i64 666, i64 31, i64 18446744073709551615" [../gen/Hls_Layers_UpConv.tpp:176]   --->   Operation 48 'specmemcore' 'specmemcore_ln176' <Predicate = true> <Delay = 0.00>
+ST_8 : Operation 49 [1/1] (0.00ns)   --->   "%specmemcore_ln176 = specmemcore void @_ssdm_op_SpecMemCore, i16 %void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_6, i64 666, i64 31, i64 18446744073709551615" [../gen/Hls_Layers_UpConv.tpp:176]   --->   Operation 49 'specmemcore' 'specmemcore_ln176' <Predicate = true> <Delay = 0.00>
+ST_8 : Operation 50 [1/1] (0.00ns)   --->   "%specmemcore_ln176 = specmemcore void @_ssdm_op_SpecMemCore, i16 %void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_7, i64 666, i64 31, i64 18446744073709551615" [../gen/Hls_Layers_UpConv.tpp:176]   --->   Operation 50 'specmemcore' 'specmemcore_ln176' <Predicate = true> <Delay = 0.00>
+ST_8 : Operation 51 [1/1] (0.00ns)   --->   "%specmemcore_ln176 = specmemcore void @_ssdm_op_SpecMemCore, i16 %void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_8, i64 666, i64 31, i64 18446744073709551615" [../gen/Hls_Layers_UpConv.tpp:176]   --->   Operation 51 'specmemcore' 'specmemcore_ln176' <Predicate = true> <Delay = 0.00>
+ST_8 : Operation 52 [1/1] (0.00ns)   --->   "%specmemcore_ln176 = specmemcore void @_ssdm_op_SpecMemCore, i16 %void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_9, i64 666, i64 31, i64 18446744073709551615" [../gen/Hls_Layers_UpConv.tpp:176]   --->   Operation 52 'specmemcore' 'specmemcore_ln176' <Predicate = true> <Delay = 0.00>
+ST_8 : Operation 53 [1/1] (0.00ns)   --->   "%specmemcore_ln205 = specmemcore void @_ssdm_op_SpecMemCore, i256 %b_buf, i64 666, i64 30, i64 18446744073709551615" [../gen/Hls_Layers_UpConv.tpp:205]   --->   Operation 53 'specmemcore' 'specmemcore_ln205' <Predicate = true> <Delay = 0.00>
+ST_8 : Operation 54 [1/1] (0.00ns)   --->   "%specmemcore_ln206 = specmemcore void @_ssdm_op_SpecMemCore, i256 %g_buf, i64 666, i64 30, i64 18446744073709551615" [../gen/Hls_Layers_UpConv.tpp:206]   --->   Operation 54 'specmemcore' 'specmemcore_ln206' <Predicate = true> <Delay = 0.00>
+ST_8 : Operation 55 [1/1] (0.00ns)   --->   "%specmemcore_ln207 = specmemcore void @_ssdm_op_SpecMemCore, i256 %be_buf, i64 666, i64 30, i64 18446744073709551615" [../gen/Hls_Layers_UpConv.tpp:207]   --->   Operation 55 'specmemcore' 'specmemcore_ln207' <Predicate = true> <Delay = 0.00>
+ST_8 : Operation 56 [1/1] (0.00ns)   --->   "%specmemcore_ln219 = specmemcore void @_ssdm_op_SpecMemCore, i32 %mean_buf, i64 666, i64 23, i64 18446744073709551615" [../gen/Hls_Layers_UpConv.tpp:219]   --->   Operation 56 'specmemcore' 'specmemcore_ln219' <Predicate = true> <Delay = 0.00>
+ST_8 : Operation 57 [1/1] (0.00ns)   --->   "%specmemcore_ln220 = specmemcore void @_ssdm_op_SpecMemCore, i16 %inv_buf, i64 666, i64 23, i64 18446744073709551615" [../gen/Hls_Layers_UpConv.tpp:220]   --->   Operation 57 'specmemcore' 'specmemcore_ln220' <Predicate = true> <Delay = 0.00>
+ST_8 : Operation 58 [1/2] (0.00ns)   --->   "%call_ln0 = call void @UpConv_Fused_Row<8, 16, 16, 960, 480>_Pipeline_PIXEL_NORM, i256 %g_buf, i256 %be_buf, i10 %mul4, i64 %Y_read, i256 %gmem_out, i32 %mean_buf, i16 %inv_buf, i16 %void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_9, i16 %void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_8, i16 %void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_7, i16 %void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_6, i16 %void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_5, i16 %void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_4, i16 %void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_3, i16 %void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_2, i16 %void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_1, i16 %void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u, i16 %p_ZZ16UpConv_Fused_RowILi8ELi16ELi16ELi960ELi480EEvP7ap_uintILi256EEPKS1_S4_S4_S4_5, i16 %p_ZZ16UpConv_Fused_RowILi8ELi16ELi16ELi960ELi480EEvP7ap_uintILi256EEPKS1_S4_S4_S4_4, i16 %p_ZZ16UpConv_Fused_RowILi8ELi16ELi16ELi960ELi480EEvP7ap_uintILi256EEPKS1_S4_S4_S4_3, i16 %p_ZZ16UpConv_Fused_RowILi8ELi16ELi16ELi960ELi480EEvP7ap_uintILi256EEPKS1_S4_S4_S4_2, i16 %p_ZZ16UpConv_Fused_RowILi8ELi16ELi16ELi960ELi480EEvP7ap_uintILi256EEPKS1_S4_S4_S4_1, i16 %p_ZZ16UpConv_Fused_RowILi8ELi16ELi16ELi960ELi480EEvP7ap_uintILi256EEPKS1_S4_S4_S4"   --->   Operation 58 'call' 'call_ln0' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Generic Core
+ST_8 : Operation 59 [1/1] (0.00ns)   --->   "%ret_ln276 = ret" [../gen/Hls_Layers_UpConv.tpp:276]   --->   Operation 59 'ret' 'ret_ln276' <Predicate = true> <Delay = 0.00>
 
 
 ============================================================
@@ -274,134 +154,34 @@ ST_32 : Operation 131 [1/1] (0.00ns)   --->   "%ret_ln365 = ret" [../gen/Hls_Lay
 ============================================================
 Target clock period: 3.333ns, clock uncertainty: 0.900ns.
 
- <State 1>: 2.433ns
-The critical path consists of the following:
-	wire read operation ('B_ptr_read') on port 'B_ptr' [35]  (0.000 ns)
-	'getelementptr' operation 256 bit ('gmem_param_addr', ../gen/Hls_Layers_UpConv.tpp:185->../gen/Hls_Layers_UpConv.tpp:354) [68]  (0.000 ns)
-	bus request operation ('empty', ../gen/Hls_Layers_UpConv.tpp:185->../gen/Hls_Layers_UpConv.tpp:354) on port 'gmem_param' (../gen/Hls_Layers_UpConv.tpp:185->../gen/Hls_Layers_UpConv.tpp:354) [69]  (2.433 ns)
-
- <State 2>: 2.433ns
-The critical path consists of the following:
-	bus request operation ('empty', ../gen/Hls_Layers_UpConv.tpp:185->../gen/Hls_Layers_UpConv.tpp:354) on port 'gmem_param' (../gen/Hls_Layers_UpConv.tpp:185->../gen/Hls_Layers_UpConv.tpp:354) [69]  (2.433 ns)
-
- <State 3>: 2.433ns
-The critical path consists of the following:
-	bus request operation ('empty', ../gen/Hls_Layers_UpConv.tpp:185->../gen/Hls_Layers_UpConv.tpp:354) on port 'gmem_param' (../gen/Hls_Layers_UpConv.tpp:185->../gen/Hls_Layers_UpConv.tpp:354) [69]  (2.433 ns)
-
- <State 4>: 2.433ns
-The critical path consists of the following:
-	bus request operation ('empty', ../gen/Hls_Layers_UpConv.tpp:185->../gen/Hls_Layers_UpConv.tpp:354) on port 'gmem_param' (../gen/Hls_Layers_UpConv.tpp:185->../gen/Hls_Layers_UpConv.tpp:354) [69]  (2.433 ns)
-
- <State 5>: 2.433ns
-The critical path consists of the following:
-	bus request operation ('empty', ../gen/Hls_Layers_UpConv.tpp:185->../gen/Hls_Layers_UpConv.tpp:354) on port 'gmem_param' (../gen/Hls_Layers_UpConv.tpp:185->../gen/Hls_Layers_UpConv.tpp:354) [69]  (2.433 ns)
-
- <State 6>: 2.433ns
-The critical path consists of the following:
-	bus request operation ('empty', ../gen/Hls_Layers_UpConv.tpp:185->../gen/Hls_Layers_UpConv.tpp:354) on port 'gmem_param' (../gen/Hls_Layers_UpConv.tpp:185->../gen/Hls_Layers_UpConv.tpp:354) [69]  (2.433 ns)
-
- <State 7>: 2.433ns
-The critical path consists of the following:
-	bus request operation ('empty', ../gen/Hls_Layers_UpConv.tpp:185->../gen/Hls_Layers_UpConv.tpp:354) on port 'gmem_param' (../gen/Hls_Layers_UpConv.tpp:185->../gen/Hls_Layers_UpConv.tpp:354) [69]  (2.433 ns)
-
- <State 8>: 2.433ns
-The critical path consists of the following:
-	bus request operation ('empty', ../gen/Hls_Layers_UpConv.tpp:185->../gen/Hls_Layers_UpConv.tpp:354) on port 'gmem_param' (../gen/Hls_Layers_UpConv.tpp:185->../gen/Hls_Layers_UpConv.tpp:354) [69]  (2.433 ns)
-
- <State 9>: 0.000ns
-The critical path consists of the following:
-
- <State 10>: 1.641ns
-The critical path consists of the following:
-	'call' operation 0 bit ('call_ln0') to 'UpConv_Fused_Row<8, 16, 16, 960, 480>_Pipeline_RESET_ROW_ACC' [81]  (1.641 ns)
-
- <State 11>: 2.433ns
-The critical path consists of the following:
-	wire read operation ('G_ptr_read') on port 'G_ptr' [34]  (0.000 ns)
-	'getelementptr' operation 256 bit ('gmem_param_addr_1', ../gen/Hls_Layers_UpConv.tpp:189->../gen/Hls_Layers_UpConv.tpp:354) [73]  (0.000 ns)
-	bus request operation ('empty_203', ../gen/Hls_Layers_UpConv.tpp:189->../gen/Hls_Layers_UpConv.tpp:354) on port 'gmem_param' (../gen/Hls_Layers_UpConv.tpp:189->../gen/Hls_Layers_UpConv.tpp:354) [74]  (2.433 ns)
-
- <State 12>: 2.433ns
-The critical path consists of the following:
-	bus request operation ('empty_203', ../gen/Hls_Layers_UpConv.tpp:189->../gen/Hls_Layers_UpConv.tpp:354) on port 'gmem_param' (../gen/Hls_Layers_UpConv.tpp:189->../gen/Hls_Layers_UpConv.tpp:354) [74]  (2.433 ns)
-
- <State 13>: 2.433ns
-The critical path consists of the following:
-	bus request operation ('empty_203', ../gen/Hls_Layers_UpConv.tpp:189->../gen/Hls_Layers_UpConv.tpp:354) on port 'gmem_param' (../gen/Hls_Layers_UpConv.tpp:189->../gen/Hls_Layers_UpConv.tpp:354) [74]  (2.433 ns)
-
- <State 14>: 2.433ns
-The critical path consists of the following:
-	bus request operation ('empty_203', ../gen/Hls_Layers_UpConv.tpp:189->../gen/Hls_Layers_UpConv.tpp:354) on port 'gmem_param' (../gen/Hls_Layers_UpConv.tpp:189->../gen/Hls_Layers_UpConv.tpp:354) [74]  (2.433 ns)
-
- <State 15>: 2.433ns
-The critical path consists of the following:
-	bus request operation ('empty_203', ../gen/Hls_Layers_UpConv.tpp:189->../gen/Hls_Layers_UpConv.tpp:354) on port 'gmem_param' (../gen/Hls_Layers_UpConv.tpp:189->../gen/Hls_Layers_UpConv.tpp:354) [74]  (2.433 ns)
-
- <State 16>: 2.433ns
-The critical path consists of the following:
-	bus request operation ('empty_203', ../gen/Hls_Layers_UpConv.tpp:189->../gen/Hls_Layers_UpConv.tpp:354) on port 'gmem_param' (../gen/Hls_Layers_UpConv.tpp:189->../gen/Hls_Layers_UpConv.tpp:354) [74]  (2.433 ns)
-
- <State 17>: 2.433ns
-The critical path consists of the following:
-	bus request operation ('empty_203', ../gen/Hls_Layers_UpConv.tpp:189->../gen/Hls_Layers_UpConv.tpp:354) on port 'gmem_param' (../gen/Hls_Layers_UpConv.tpp:189->../gen/Hls_Layers_UpConv.tpp:354) [74]  (2.433 ns)
-
- <State 18>: 2.433ns
-The critical path consists of the following:
-	bus request operation ('empty_203', ../gen/Hls_Layers_UpConv.tpp:189->../gen/Hls_Layers_UpConv.tpp:354) on port 'gmem_param' (../gen/Hls_Layers_UpConv.tpp:189->../gen/Hls_Layers_UpConv.tpp:354) [74]  (2.433 ns)
-
- <State 19>: 0.789ns
-The critical path consists of the following:
-	wire read operation ('ho_read') on port 'ho' [30]  (0.000 ns)
-	'add' operation 6 bit ('add_i78') [82]  (0.789 ns)
-
- <State 20>: 0.781ns
-The critical path consists of the following:
-	'call' operation 0 bit ('call_ln357', ../gen/Hls_Layers_UpConv.tpp:357) to 'UpConv_Fused_Row<8, 16, 16, 960, 480>_Outline_TILE_LOOP' [87]  (0.781 ns)
-
- <State 21>: 2.433ns
+ <State 1>: 1.092ns
 The critical path consists of the following:
 	wire read operation ('BE_ptr_read') on port 'BE_ptr' [33]  (0.000 ns)
-	'getelementptr' operation 256 bit ('gmem_param_addr_2', ../gen/Hls_Layers_UpConv.tpp:193->../gen/Hls_Layers_UpConv.tpp:354) [78]  (0.000 ns)
-	bus request operation ('empty_204', ../gen/Hls_Layers_UpConv.tpp:193->../gen/Hls_Layers_UpConv.tpp:354) on port 'gmem_param' (../gen/Hls_Layers_UpConv.tpp:193->../gen/Hls_Layers_UpConv.tpp:354) [79]  (2.433 ns)
+	'call' operation 0 bit ('call_ln209', ../gen/Hls_Layers_UpConv.tpp:209) to 'UpConv_Fused_Row<8, 16, 16, 960, 480>_Pipeline_LOAD_PARAMS' [67]  (1.092 ns)
 
- <State 22>: 2.433ns
+ <State 2>: 1.641ns
 The critical path consists of the following:
-	bus request operation ('empty_204', ../gen/Hls_Layers_UpConv.tpp:193->../gen/Hls_Layers_UpConv.tpp:354) on port 'gmem_param' (../gen/Hls_Layers_UpConv.tpp:193->../gen/Hls_Layers_UpConv.tpp:354) [79]  (2.433 ns)
+	'call' operation 0 bit ('call_ln0') to 'UpConv_Fused_Row<8, 16, 16, 960, 480>_Pipeline_RESET_ROW_ACC' [59]  (1.641 ns)
 
- <State 23>: 2.433ns
+ <State 3>: 1.530ns
 The critical path consists of the following:
-	bus request operation ('empty_204', ../gen/Hls_Layers_UpConv.tpp:193->../gen/Hls_Layers_UpConv.tpp:354) on port 'gmem_param' (../gen/Hls_Layers_UpConv.tpp:193->../gen/Hls_Layers_UpConv.tpp:354) [79]  (2.433 ns)
+	wire read operation ('epsilon_read') on port 'epsilon' [31]  (0.000 ns)
+	'hptosp' operation 32 bit ('conv1') [70]  (1.530 ns)
 
- <State 24>: 2.433ns
+ <State 4>: 1.530ns
 The critical path consists of the following:
-	bus request operation ('empty_204', ../gen/Hls_Layers_UpConv.tpp:193->../gen/Hls_Layers_UpConv.tpp:354) on port 'gmem_param' (../gen/Hls_Layers_UpConv.tpp:193->../gen/Hls_Layers_UpConv.tpp:354) [79]  (2.433 ns)
+	'hptosp' operation 32 bit ('conv1') [70]  (1.530 ns)
 
- <State 25>: 2.433ns
-The critical path consists of the following:
-	bus request operation ('empty_204', ../gen/Hls_Layers_UpConv.tpp:193->../gen/Hls_Layers_UpConv.tpp:354) on port 'gmem_param' (../gen/Hls_Layers_UpConv.tpp:193->../gen/Hls_Layers_UpConv.tpp:354) [79]  (2.433 ns)
-
- <State 26>: 2.433ns
-The critical path consists of the following:
-	bus request operation ('empty_204', ../gen/Hls_Layers_UpConv.tpp:193->../gen/Hls_Layers_UpConv.tpp:354) on port 'gmem_param' (../gen/Hls_Layers_UpConv.tpp:193->../gen/Hls_Layers_UpConv.tpp:354) [79]  (2.433 ns)
-
- <State 27>: 2.433ns
-The critical path consists of the following:
-	bus request operation ('empty_204', ../gen/Hls_Layers_UpConv.tpp:193->../gen/Hls_Layers_UpConv.tpp:354) on port 'gmem_param' (../gen/Hls_Layers_UpConv.tpp:193->../gen/Hls_Layers_UpConv.tpp:354) [79]  (2.433 ns)
-
- <State 28>: 2.433ns
-The critical path consists of the following:
-	bus request operation ('empty_204', ../gen/Hls_Layers_UpConv.tpp:193->../gen/Hls_Layers_UpConv.tpp:354) on port 'gmem_param' (../gen/Hls_Layers_UpConv.tpp:193->../gen/Hls_Layers_UpConv.tpp:354) [79]  (2.433 ns)
-
- <State 29>: 0.000ns
+ <State 5>: 0.000ns
 The critical path consists of the following:
 
- <State 30>: 0.000ns
+ <State 6>: 0.000ns
 The critical path consists of the following:
 
- <State 31>: 0.000ns
+ <State 7>: 0.000ns
 The critical path consists of the following:
 
- <State 32>: 0.000ns
+ <State 8>: 0.000ns
 The critical path consists of the following:
 
 
@@ -421,30 +201,6 @@ N/A
 	State 6
 	State 7
 	State 8
-	State 9
-	State 10
-	State 11
-	State 12
-	State 13
-	State 14
-	State 15
-	State 16
-	State 17
-	State 18
-	State 19
-	State 20
-	State 21
-	State 22
-	State 23
-	State 24
-	State 25
-	State 26
-	State 27
-	State 28
-	State 29
-	State 30
-	State 31
-	State 32
 
 
 ============================================================

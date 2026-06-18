@@ -3223,7 +3223,7 @@
       <key>level</key>
       <string>warning</string>
       <key>filename</key>
-      <string>../gen/UpConv_Unified.tpp</string>
+      <string>../gen2/Hls_Layers_UpConv.tpp</string>
       <key>line</key>
       <integer>23</integer>
       <key>column</key>
@@ -3239,7 +3239,7 @@
       <key>level</key>
       <string>warning</string>
       <key>filename</key>
-      <string>../gen/UpConv_Unified.tpp</string>
+      <string>../gen2/Hls_Layers_UpConv.tpp</string>
       <key>line</key>
       <integer>39</integer>
       <key>column</key>
@@ -3255,7 +3255,7 @@
       <key>level</key>
       <string>warning</string>
       <key>filename</key>
-      <string>../gen/UpConv_Unified.tpp</string>
+      <string>../gen2/Hls_Layers_UpConv.tpp</string>
       <key>line</key>
       <integer>53</integer>
       <key>column</key>
@@ -3271,13 +3271,13 @@
       <key>level</key>
       <string>warning</string>
       <key>filename</key>
-      <string>../gen/UpConv_Unified.tpp</string>
+      <string>../gen2/Hls_Layers_UpConv.tpp</string>
       <key>line</key>
-      <integer>68</integer>
+      <integer>77</integer>
       <key>column</key>
       <integer>9</integer>
       <key>message</key>
-      <string>HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=inline_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=Reset_Row_Buffer_XLX_SEP_ PragmaOptions=_XLX_SEP_</string>
+      <string>HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=inline_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=uc_load_tile_XLX_SEP_ PragmaOptions=off_XLX_SEP_</string>
       <key>ID</key>
       <integer>5471</integer>
       <key>WarningOption</key>
@@ -3287,13 +3287,13 @@
       <key>level</key>
       <string>warning</string>
       <key>filename</key>
-      <string>../gen/UpConv_Unified.tpp</string>
+      <string>../gen2/Hls_Layers_UpConv.tpp</string>
       <key>line</key>
-      <integer>72</integer>
+      <integer>84</integer>
       <key>column</key>
       <integer>9</integer>
       <key>message</key>
-      <string>HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=pipeline_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=Reset_Row_Buffer_XLX_SEP_ PragmaOptions=II=1_XLX_SEP_</string>
+      <string>HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=pipeline_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=uc_load_tile_XLX_SEP_ PragmaOptions=II=1_XLX_SEP_</string>
       <key>ID</key>
       <integer>5471</integer>
       <key>WarningOption</key>
@@ -3303,13 +3303,13 @@
       <key>level</key>
       <string>warning</string>
       <key>filename</key>
-      <string>../gen/UpConv_Unified.tpp</string>
+      <string>../gen2/Hls_Layers_UpConv.tpp</string>
       <key>line</key>
-      <integer>73</integer>
+      <integer>85</integer>
       <key>column</key>
       <integer>9</integer>
       <key>message</key>
-      <string>HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=loop_tripcount_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=Reset_Row_Buffer_XLX_SEP_ PragmaOptions=min=128 max=7680 avg=3840_XLX_SEP_</string>
+      <string>HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=loop_tripcount_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=uc_load_tile_XLX_SEP_ PragmaOptions=min=72 max=540 avg=252_XLX_SEP_</string>
       <key>ID</key>
       <integer>5471</integer>
       <key>WarningOption</key>
@@ -3319,13 +3319,13 @@
       <key>level</key>
       <string>warning</string>
       <key>filename</key>
-      <string>../gen/UpConv_Unified.tpp</string>
+      <string>../gen2/Hls_Layers_UpConv.tpp</string>
       <key>line</key>
-      <integer>75</integer>
+      <integer>98</integer>
       <key>column</key>
       <integer>9</integer>
       <key>message</key>
-      <string>HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=unroll_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=Reset_Row_Buffer_XLX_SEP_ PragmaOptions=_XLX_SEP_</string>
+      <string>HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=inline_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=uc_compute_tile_XLX_SEP_ PragmaOptions=off_XLX_SEP_</string>
       <key>ID</key>
       <integer>5471</integer>
       <key>WarningOption</key>
@@ -3335,13 +3335,13 @@
       <key>level</key>
       <string>warning</string>
       <key>filename</key>
-      <string>../gen/UpConv_Unified.tpp</string>
+      <string>../gen2/Hls_Layers_UpConv.tpp</string>
       <key>line</key>
-      <integer>88</integer>
+      <integer>102</integer>
       <key>column</key>
       <integer>9</integer>
       <key>message</key>
-      <string>HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=inline_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=Load_Weight_Tile_XLX_SEP_ PragmaOptions=_XLX_SEP_</string>
+      <string>HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=loop_tripcount_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=uc_compute_tile_XLX_SEP_ PragmaOptions=min=1 max=2_XLX_SEP_</string>
       <key>ID</key>
       <integer>5471</integer>
       <key>WarningOption</key>
@@ -3351,45 +3351,13 @@
       <key>level</key>
       <string>warning</string>
       <key>filename</key>
-      <string>../gen/UpConv_Unified.tpp</string>
-      <key>line</key>
-      <integer>95</integer>
-      <key>column</key>
-      <integer>9</integer>
-      <key>message</key>
-      <string>HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=pipeline_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=Load_Weight_Tile_XLX_SEP_ PragmaOptions=II=1_XLX_SEP_</string>
-      <key>ID</key>
-      <integer>5471</integer>
-      <key>WarningOption</key>
-      <string>dump-hls-pragmas</string>
-    </dict>
-    <dict>
-      <key>level</key>
-      <string>warning</string>
-      <key>filename</key>
-      <string>../gen/UpConv_Unified.tpp</string>
-      <key>line</key>
-      <integer>96</integer>
-      <key>column</key>
-      <integer>9</integer>
-      <key>message</key>
-      <string>HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=loop_tripcount_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=Load_Weight_Tile_XLX_SEP_ PragmaOptions=min=72 max=540 avg=252_XLX_SEP_</string>
-      <key>ID</key>
-      <integer>5471</integer>
-      <key>WarningOption</key>
-      <string>dump-hls-pragmas</string>
-    </dict>
-    <dict>
-      <key>level</key>
-      <string>warning</string>
-      <key>filename</key>
-      <string>../gen/UpConv_Unified.tpp</string>
+      <string>../gen2/Hls_Layers_UpConv.tpp</string>
       <key>line</key>
       <integer>110</integer>
       <key>column</key>
       <integer>9</integer>
       <key>message</key>
-      <string>HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=inline_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=Compute_MAC_Tile_XLX_SEP_ PragmaOptions=_XLX_SEP_</string>
+      <string>HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=loop_tripcount_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=uc_compute_tile_XLX_SEP_ PragmaOptions=min=2 max=3_XLX_SEP_</string>
       <key>ID</key>
       <integer>5471</integer>
       <key>WarningOption</key>
@@ -3399,13 +3367,13 @@
       <key>level</key>
       <string>warning</string>
       <key>filename</key>
-      <string>../gen/UpConv_Unified.tpp</string>
+      <string>../gen2/Hls_Layers_UpConv.tpp</string>
       <key>line</key>
       <integer>117</integer>
       <key>column</key>
       <integer>9</integer>
       <key>message</key>
-      <string>HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=loop_flatten_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=Compute_MAC_Tile_XLX_SEP_ PragmaOptions=off_XLX_SEP_</string>
+      <string>HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=array_partition_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=uc_compute_tile_XLX_SEP_ PragmaOptions=variable=psum complete dim=0_XLX_SEP_</string>
       <key>ID</key>
       <integer>5471</integer>
       <key>WarningOption</key>
@@ -3415,13 +3383,13 @@
       <key>level</key>
       <string>warning</string>
       <key>filename</key>
-      <string>../gen/UpConv_Unified.tpp</string>
+      <string>../gen2/Hls_Layers_UpConv.tpp</string>
       <key>line</key>
-      <integer>125</integer>
+      <integer>121</integer>
       <key>column</key>
       <integer>9</integer>
       <key>message</key>
-      <string>HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=loop_flatten_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=Compute_MAC_Tile_XLX_SEP_ PragmaOptions=off_XLX_SEP_</string>
+      <string>HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=pipeline_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=uc_compute_tile_XLX_SEP_ PragmaOptions=II=1_XLX_SEP_</string>
       <key>ID</key>
       <integer>5471</integer>
       <key>WarningOption</key>
@@ -3431,13 +3399,77 @@
       <key>level</key>
       <string>warning</string>
       <key>filename</key>
-      <string>../gen/UpConv_Unified.tpp</string>
+      <string>../gen2/Hls_Layers_UpConv.tpp</string>
+      <key>line</key>
+      <integer>122</integer>
+      <key>column</key>
+      <integer>9</integer>
+      <key>message</key>
+      <string>HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=loop_tripcount_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=uc_compute_tile_XLX_SEP_ PragmaOptions=min=128 max=7680 avg=1680_XLX_SEP_</string>
+      <key>ID</key>
+      <integer>5471</integer>
+      <key>WarningOption</key>
+      <string>dump-hls-pragmas</string>
+    </dict>
+    <dict>
+      <key>level</key>
+      <string>warning</string>
+      <key>filename</key>
+      <string>../gen2/Hls_Layers_UpConv.tpp</string>
+      <key>line</key>
+      <integer>123</integer>
+      <key>column</key>
+      <integer>9</integer>
+      <key>message</key>
+      <string>HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=dependence_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=uc_compute_tile_XLX_SEP_ PragmaOptions=variable=psum type=inter false_XLX_SEP_</string>
+      <key>ID</key>
+      <integer>5471</integer>
+      <key>WarningOption</key>
+      <string>dump-hls-pragmas</string>
+    </dict>
+    <dict>
+      <key>level</key>
+      <string>warning</string>
+      <key>filename</key>
+      <string>../gen2/Hls_Layers_UpConv.tpp</string>
+      <key>line</key>
+      <integer>124</integer>
+      <key>column</key>
+      <integer>9</integer>
+      <key>message</key>
+      <string>HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=dependence_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=uc_compute_tile_XLX_SEP_ PragmaOptions=variable=row_acc type=inter false_XLX_SEP_</string>
+      <key>ID</key>
+      <integer>5471</integer>
+      <key>WarningOption</key>
+      <string>dump-hls-pragmas</string>
+    </dict>
+    <dict>
+      <key>level</key>
+      <string>warning</string>
+      <key>filename</key>
+      <string>../gen2/Hls_Layers_UpConv.tpp</string>
+      <key>line</key>
+      <integer>129</integer>
+      <key>column</key>
+      <integer>9</integer>
+      <key>message</key>
+      <string>HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=unroll_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=uc_compute_tile_XLX_SEP_ PragmaOptions=_XLX_SEP_</string>
+      <key>ID</key>
+      <integer>5471</integer>
+      <key>WarningOption</key>
+      <string>dump-hls-pragmas</string>
+    </dict>
+    <dict>
+      <key>level</key>
+      <string>warning</string>
+      <key>filename</key>
+      <string>../gen2/Hls_Layers_UpConv.tpp</string>
       <key>line</key>
       <integer>133</integer>
       <key>column</key>
       <integer>9</integer>
       <key>message</key>
-      <string>HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=array_partition_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=Compute_MAC_Tile_XLX_SEP_ PragmaOptions=variable=psum complete dim=0_XLX_SEP_</string>
+      <string>HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=unroll_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=uc_compute_tile_XLX_SEP_ PragmaOptions=_XLX_SEP_</string>
       <key>ID</key>
       <integer>5471</integer>
       <key>WarningOption</key>
@@ -3447,13 +3479,13 @@
       <key>level</key>
       <string>warning</string>
       <key>filename</key>
-      <string>../gen/UpConv_Unified.tpp</string>
+      <string>../gen2/Hls_Layers_UpConv.tpp</string>
       <key>line</key>
       <integer>137</integer>
       <key>column</key>
       <integer>9</integer>
       <key>message</key>
-      <string>HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=pipeline_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=Compute_MAC_Tile_XLX_SEP_ PragmaOptions=II=1_XLX_SEP_</string>
+      <string>HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=bind_op_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=uc_compute_tile_XLX_SEP_ PragmaOptions=variable=prod op=hmul impl=fabric_XLX_SEP_</string>
       <key>ID</key>
       <integer>5471</integer>
       <key>WarningOption</key>
@@ -3463,77 +3495,13 @@
       <key>level</key>
       <string>warning</string>
       <key>filename</key>
-      <string>../gen/UpConv_Unified.tpp</string>
-      <key>line</key>
-      <integer>138</integer>
-      <key>column</key>
-      <integer>9</integer>
-      <key>message</key>
-      <string>HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=loop_tripcount_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=Compute_MAC_Tile_XLX_SEP_ PragmaOptions=min=128 max=7680 avg=1680_XLX_SEP_</string>
-      <key>ID</key>
-      <integer>5471</integer>
-      <key>WarningOption</key>
-      <string>dump-hls-pragmas</string>
-    </dict>
-    <dict>
-      <key>level</key>
-      <string>warning</string>
-      <key>filename</key>
-      <string>../gen/UpConv_Unified.tpp</string>
-      <key>line</key>
-      <integer>139</integer>
-      <key>column</key>
-      <integer>9</integer>
-      <key>message</key>
-      <string>HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=dependence_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=Compute_MAC_Tile_XLX_SEP_ PragmaOptions=variable=psum type=inter false_XLX_SEP_</string>
-      <key>ID</key>
-      <integer>5471</integer>
-      <key>WarningOption</key>
-      <string>dump-hls-pragmas</string>
-    </dict>
-    <dict>
-      <key>level</key>
-      <string>warning</string>
-      <key>filename</key>
-      <string>../gen/UpConv_Unified.tpp</string>
-      <key>line</key>
-      <integer>140</integer>
-      <key>column</key>
-      <integer>9</integer>
-      <key>message</key>
-      <string>HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=dependence_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=Compute_MAC_Tile_XLX_SEP_ PragmaOptions=variable=row_acc type=inter false_XLX_SEP_</string>
-      <key>ID</key>
-      <integer>5471</integer>
-      <key>WarningOption</key>
-      <string>dump-hls-pragmas</string>
-    </dict>
-    <dict>
-      <key>level</key>
-      <string>warning</string>
-      <key>filename</key>
-      <string>../gen/UpConv_Unified.tpp</string>
-      <key>line</key>
-      <integer>145</integer>
-      <key>column</key>
-      <integer>9</integer>
-      <key>message</key>
-      <string>HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=unroll_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=Compute_MAC_Tile_XLX_SEP_ PragmaOptions=_XLX_SEP_</string>
-      <key>ID</key>
-      <integer>5471</integer>
-      <key>WarningOption</key>
-      <string>dump-hls-pragmas</string>
-    </dict>
-    <dict>
-      <key>level</key>
-      <string>warning</string>
-      <key>filename</key>
-      <string>../gen/UpConv_Unified.tpp</string>
+      <string>../gen2/Hls_Layers_UpConv.tpp</string>
       <key>line</key>
       <integer>149</integer>
       <key>column</key>
       <integer>9</integer>
       <key>message</key>
-      <string>HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=unroll_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=Compute_MAC_Tile_XLX_SEP_ PragmaOptions=_XLX_SEP_</string>
+      <string>HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=unroll_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=uc_compute_tile_XLX_SEP_ PragmaOptions=_XLX_SEP_</string>
       <key>ID</key>
       <integer>5471</integer>
       <key>WarningOption</key>
@@ -3543,345 +3511,9 @@
       <key>level</key>
       <string>warning</string>
       <key>filename</key>
-      <string>../gen/UpConv_Unified.tpp</string>
+      <string>../gen2/Hls_Layers_UpConv.tpp</string>
       <key>line</key>
-      <integer>162</integer>
-      <key>column</key>
-      <integer>9</integer>
-      <key>message</key>
-      <string>HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=unroll_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=Compute_MAC_Tile_XLX_SEP_ PragmaOptions=_XLX_SEP_</string>
-      <key>ID</key>
-      <integer>5471</integer>
-      <key>WarningOption</key>
-      <string>dump-hls-pragmas</string>
-    </dict>
-    <dict>
-      <key>level</key>
-      <string>warning</string>
-      <key>filename</key>
-      <string>../gen/UpConv_Unified.tpp</string>
-      <key>line</key>
-      <integer>187</integer>
-      <key>column</key>
-      <integer>9</integer>
-      <key>message</key>
-      <string>HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=inline_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=Load_Norm_Params_XLX_SEP_ PragmaOptions=_XLX_SEP_</string>
-      <key>ID</key>
-      <integer>5471</integer>
-      <key>WarningOption</key>
-      <string>dump-hls-pragmas</string>
-    </dict>
-    <dict>
-      <key>level</key>
-      <string>warning</string>
-      <key>filename</key>
-      <string>../gen/UpConv_Unified.tpp</string>
-      <key>line</key>
-      <integer>189</integer>
-      <key>column</key>
-      <integer>9</integer>
-      <key>message</key>
-      <string>HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=pipeline_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=Load_Norm_Params_XLX_SEP_ PragmaOptions=II=1_XLX_SEP_</string>
-      <key>ID</key>
-      <integer>5471</integer>
-      <key>WarningOption</key>
-      <string>dump-hls-pragmas</string>
-    </dict>
-    <dict>
-      <key>level</key>
-      <string>warning</string>
-      <key>filename</key>
-      <string>../gen/UpConv_Unified.tpp</string>
-      <key>line</key>
-      <integer>190</integer>
-      <key>column</key>
-      <integer>9</integer>
-      <key>message</key>
-      <string>HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=loop_tripcount_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=Load_Norm_Params_XLX_SEP_ PragmaOptions=min=4 max=30 avg=14_XLX_SEP_</string>
-      <key>ID</key>
-      <integer>5471</integer>
-      <key>WarningOption</key>
-      <string>dump-hls-pragmas</string>
-    </dict>
-    <dict>
-      <key>level</key>
-      <string>warning</string>
-      <key>filename</key>
-      <string>../gen/UpConv_Unified.tpp</string>
-      <key>line</key>
-      <integer>194</integer>
-      <key>column</key>
-      <integer>9</integer>
-      <key>message</key>
-      <string>HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=pipeline_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=Load_Norm_Params_XLX_SEP_ PragmaOptions=II=1_XLX_SEP_</string>
-      <key>ID</key>
-      <integer>5471</integer>
-      <key>WarningOption</key>
-      <string>dump-hls-pragmas</string>
-    </dict>
-    <dict>
-      <key>level</key>
-      <string>warning</string>
-      <key>filename</key>
-      <string>../gen/UpConv_Unified.tpp</string>
-      <key>line</key>
-      <integer>195</integer>
-      <key>column</key>
-      <integer>9</integer>
-      <key>message</key>
-      <string>HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=loop_tripcount_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=Load_Norm_Params_XLX_SEP_ PragmaOptions=min=4 max=30 avg=14_XLX_SEP_</string>
-      <key>ID</key>
-      <integer>5471</integer>
-      <key>WarningOption</key>
-      <string>dump-hls-pragmas</string>
-    </dict>
-    <dict>
-      <key>level</key>
-      <string>warning</string>
-      <key>filename</key>
-      <string>../gen/UpConv_Unified.tpp</string>
-      <key>line</key>
-      <integer>199</integer>
-      <key>column</key>
-      <integer>9</integer>
-      <key>message</key>
-      <string>HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=pipeline_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=Load_Norm_Params_XLX_SEP_ PragmaOptions=II=1_XLX_SEP_</string>
-      <key>ID</key>
-      <integer>5471</integer>
-      <key>WarningOption</key>
-      <string>dump-hls-pragmas</string>
-    </dict>
-    <dict>
-      <key>level</key>
-      <string>warning</string>
-      <key>filename</key>
-      <string>../gen/UpConv_Unified.tpp</string>
-      <key>line</key>
-      <integer>200</integer>
-      <key>column</key>
-      <integer>9</integer>
-      <key>message</key>
-      <string>HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=loop_tripcount_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=Load_Norm_Params_XLX_SEP_ PragmaOptions=min=4 max=30 avg=14_XLX_SEP_</string>
-      <key>ID</key>
-      <integer>5471</integer>
-      <key>WarningOption</key>
-      <string>dump-hls-pragmas</string>
-    </dict>
-    <dict>
-      <key>level</key>
-      <string>warning</string>
-      <key>filename</key>
-      <string>../gen/UpConv_Unified.tpp</string>
-      <key>line</key>
-      <integer>214</integer>
-      <key>column</key>
-      <integer>9</integer>
-      <key>message</key>
-      <string>HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=inline_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=Compute_Pixel_Stats_XLX_SEP_ PragmaOptions=_XLX_SEP_</string>
-      <key>ID</key>
-      <integer>5471</integer>
-      <key>WarningOption</key>
-      <string>dump-hls-pragmas</string>
-    </dict>
-    <dict>
-      <key>level</key>
-      <string>warning</string>
-      <key>filename</key>
-      <string>../gen/UpConv_Unified.tpp</string>
-      <key>line</key>
-      <integer>216</integer>
-      <key>column</key>
-      <integer>9</integer>
-      <key>message</key>
-      <string>HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=array_partition_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=Compute_Pixel_Stats_XLX_SEP_ PragmaOptions=variable=sum_rot complete_XLX_SEP_</string>
-      <key>ID</key>
-      <integer>5471</integer>
-      <key>WarningOption</key>
-      <string>dump-hls-pragmas</string>
-    </dict>
-    <dict>
-      <key>level</key>
-      <string>warning</string>
-      <key>filename</key>
-      <string>../gen/UpConv_Unified.tpp</string>
-      <key>line</key>
-      <integer>217</integer>
-      <key>column</key>
-      <integer>9</integer>
-      <key>message</key>
-      <string>HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=array_partition_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=Compute_Pixel_Stats_XLX_SEP_ PragmaOptions=variable=sumsq_rot complete_XLX_SEP_</string>
-      <key>ID</key>
-      <integer>5471</integer>
-      <key>WarningOption</key>
-      <string>dump-hls-pragmas</string>
-    </dict>
-    <dict>
-      <key>level</key>
-      <string>warning</string>
-      <key>filename</key>
-      <string>../gen/UpConv_Unified.tpp</string>
-      <key>line</key>
-      <integer>222</integer>
-      <key>column</key>
-      <integer>9</integer>
-      <key>message</key>
-      <string>HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=pipeline_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=Compute_Pixel_Stats_XLX_SEP_ PragmaOptions=II=1_XLX_SEP_</string>
-      <key>ID</key>
-      <integer>5471</integer>
-      <key>WarningOption</key>
-      <string>dump-hls-pragmas</string>
-    </dict>
-    <dict>
-      <key>level</key>
-      <string>warning</string>
-      <key>filename</key>
-      <string>../gen/UpConv_Unified.tpp</string>
-      <key>line</key>
-      <integer>223</integer>
-      <key>column</key>
-      <integer>9</integer>
-      <key>message</key>
-      <string>HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=loop_tripcount_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=Compute_Pixel_Stats_XLX_SEP_ PragmaOptions=min=1024 max=15360 avg=7680_XLX_SEP_</string>
-      <key>ID</key>
-      <integer>5471</integer>
-      <key>WarningOption</key>
-      <string>dump-hls-pragmas</string>
-    </dict>
-    <dict>
-      <key>level</key>
-      <string>warning</string>
-      <key>filename</key>
-      <string>../gen/UpConv_Unified.tpp</string>
-      <key>line</key>
-      <integer>224</integer>
-      <key>column</key>
-      <integer>9</integer>
-      <key>message</key>
-      <string>HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=dependence_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=Compute_Pixel_Stats_XLX_SEP_ PragmaOptions=variable=sum_rot type=inter false_XLX_SEP_</string>
-      <key>ID</key>
-      <integer>5471</integer>
-      <key>WarningOption</key>
-      <string>dump-hls-pragmas</string>
-    </dict>
-    <dict>
-      <key>level</key>
-      <string>warning</string>
-      <key>filename</key>
-      <string>../gen/UpConv_Unified.tpp</string>
-      <key>line</key>
-      <integer>225</integer>
-      <key>column</key>
-      <integer>9</integer>
-      <key>message</key>
-      <string>HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=dependence_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=Compute_Pixel_Stats_XLX_SEP_ PragmaOptions=variable=sumsq_rot type=inter false_XLX_SEP_</string>
-      <key>ID</key>
-      <integer>5471</integer>
-      <key>WarningOption</key>
-      <string>dump-hls-pragmas</string>
-    </dict>
-    <dict>
-      <key>level</key>
-      <string>warning</string>
-      <key>filename</key>
-      <string>../gen/UpConv_Unified.tpp</string>
-      <key>line</key>
-      <integer>226</integer>
-      <key>column</key>
-      <integer>9</integer>
-      <key>message</key>
-      <string>HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=dependence_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=Compute_Pixel_Stats_XLX_SEP_ PragmaOptions=variable=row_acc type=inter false_XLX_SEP_</string>
-      <key>ID</key>
-      <integer>5471</integer>
-      <key>WarningOption</key>
-      <string>dump-hls-pragmas</string>
-    </dict>
-    <dict>
-      <key>level</key>
-      <string>warning</string>
-      <key>filename</key>
-      <string>../gen/UpConv_Unified.tpp</string>
-      <key>line</key>
-      <integer>244</integer>
-      <key>column</key>
-      <integer>9</integer>
-      <key>message</key>
-      <string>HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=unroll_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=Compute_Pixel_Stats_XLX_SEP_ PragmaOptions=_XLX_SEP_</string>
-      <key>ID</key>
-      <integer>5471</integer>
-      <key>WarningOption</key>
-      <string>dump-hls-pragmas</string>
-    </dict>
-    <dict>
-      <key>level</key>
-      <string>warning</string>
-      <key>filename</key>
-      <string>../gen/UpConv_Unified.tpp</string>
-      <key>line</key>
-      <integer>268</integer>
-      <key>column</key>
-      <integer>9</integer>
-      <key>message</key>
-      <string>HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=inline_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=Apply_Norm_And_Write_XLX_SEP_ PragmaOptions=_XLX_SEP_</string>
-      <key>ID</key>
-      <integer>5471</integer>
-      <key>WarningOption</key>
-      <string>dump-hls-pragmas</string>
-    </dict>
-    <dict>
-      <key>level</key>
-      <string>warning</string>
-      <key>filename</key>
-      <string>../gen/UpConv_Unified.tpp</string>
-      <key>line</key>
-      <integer>272</integer>
-      <key>column</key>
-      <integer>9</integer>
-      <key>message</key>
-      <string>HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=pipeline_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=Apply_Norm_And_Write_XLX_SEP_ PragmaOptions=II=1_XLX_SEP_</string>
-      <key>ID</key>
-      <integer>5471</integer>
-      <key>WarningOption</key>
-      <string>dump-hls-pragmas</string>
-    </dict>
-    <dict>
-      <key>level</key>
-      <string>warning</string>
-      <key>filename</key>
-      <string>../gen/UpConv_Unified.tpp</string>
-      <key>line</key>
-      <integer>273</integer>
-      <key>column</key>
-      <integer>9</integer>
-      <key>message</key>
-      <string>HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=loop_tripcount_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=Apply_Norm_And_Write_XLX_SEP_ PragmaOptions=min=128 max=7680 avg=3840_XLX_SEP_</string>
-      <key>ID</key>
-      <integer>5471</integer>
-      <key>WarningOption</key>
-      <string>dump-hls-pragmas</string>
-    </dict>
-    <dict>
-      <key>level</key>
-      <string>warning</string>
-      <key>filename</key>
-      <string>../gen/UpConv_Unified.tpp</string>
-      <key>line</key>
-      <integer>278</integer>
-      <key>column</key>
-      <integer>9</integer>
-      <key>message</key>
-      <string>HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=unroll_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=Apply_Norm_And_Write_XLX_SEP_ PragmaOptions=_XLX_SEP_</string>
-      <key>ID</key>
-      <integer>5471</integer>
-      <key>WarningOption</key>
-      <string>dump-hls-pragmas</string>
-    </dict>
-    <dict>
-      <key>level</key>
-      <string>warning</string>
-      <key>filename</key>
-      <string>../gen/UpConv_Unified.tpp</string>
-      <key>line</key>
-      <integer>309</integer>
+      <integer>177</integer>
       <key>column</key>
       <integer>9</integer>
       <key>message</key>
@@ -3895,9 +3527,9 @@
       <key>level</key>
       <string>warning</string>
       <key>filename</key>
-      <string>../gen/UpConv_Unified.tpp</string>
+      <string>../gen2/Hls_Layers_UpConv.tpp</string>
       <key>line</key>
-      <integer>324</integer>
+      <integer>190</integer>
       <key>column</key>
       <integer>9</integer>
       <key>message</key>
@@ -3911,9 +3543,9 @@
       <key>level</key>
       <string>warning</string>
       <key>filename</key>
-      <string>../gen/UpConv_Unified.tpp</string>
+      <string>../gen2/Hls_Layers_UpConv.tpp</string>
       <key>line</key>
-      <integer>325</integer>
+      <integer>191</integer>
       <key>column</key>
       <integer>9</integer>
       <key>message</key>
@@ -3927,13 +3559,13 @@
       <key>level</key>
       <string>warning</string>
       <key>filename</key>
-      <string>../gen/UpConv_Unified.tpp</string>
+      <string>../gen2/Hls_Layers_UpConv.tpp</string>
       <key>line</key>
-      <integer>332</integer>
+      <integer>201</integer>
       <key>column</key>
       <integer>9</integer>
       <key>message</key>
-      <string>HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=bind_storage_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=UpConv_Fused_Row_XLX_SEP_ PragmaOptions=variable=w_local type=ram_t2p impl=bram latency=2_XLX_SEP_</string>
+      <string>HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=pipeline_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=UpConv_Fused_Row_XLX_SEP_ PragmaOptions=II=1_XLX_SEP_</string>
       <key>ID</key>
       <integer>5471</integer>
       <key>WarningOption</key>
@@ -3943,13 +3575,13 @@
       <key>level</key>
       <string>warning</string>
       <key>filename</key>
-      <string>../gen/UpConv_Unified.tpp</string>
+      <string>../gen2/Hls_Layers_UpConv.tpp</string>
       <key>line</key>
-      <integer>333</integer>
+      <integer>202</integer>
       <key>column</key>
       <integer>9</integer>
       <key>message</key>
-      <string>HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=array_partition_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=UpConv_Fused_Row_XLX_SEP_ PragmaOptions=variable=w_local complete dim=1_XLX_SEP_</string>
+      <string>HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=loop_tripcount_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=UpConv_Fused_Row_XLX_SEP_ PragmaOptions=min=128 max=1024 avg=420_XLX_SEP_</string>
       <key>ID</key>
       <integer>5471</integer>
       <key>WarningOption</key>
@@ -3959,9 +3591,169 @@
       <key>level</key>
       <string>warning</string>
       <key>filename</key>
-      <string>../gen/UpConv_Unified.tpp</string>
+      <string>../gen2/Hls_Layers_UpConv.tpp</string>
       <key>line</key>
-      <integer>337</integer>
+      <integer>204</integer>
+      <key>column</key>
+      <integer>9</integer>
+      <key>message</key>
+      <string>HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=unroll_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=UpConv_Fused_Row_XLX_SEP_ PragmaOptions=_XLX_SEP_</string>
+      <key>ID</key>
+      <integer>5471</integer>
+      <key>WarningOption</key>
+      <string>dump-hls-pragmas</string>
+    </dict>
+    <dict>
+      <key>level</key>
+      <string>warning</string>
+      <key>filename</key>
+      <string>../gen2/Hls_Layers_UpConv.tpp</string>
+      <key>line</key>
+      <integer>214</integer>
+      <key>column</key>
+      <integer>9</integer>
+      <key>message</key>
+      <string>HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=loop_tripcount_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=UpConv_Fused_Row_XLX_SEP_ PragmaOptions=min=6 max=41 avg=20_XLX_SEP_</string>
+      <key>ID</key>
+      <integer>5471</integer>
+      <key>WarningOption</key>
+      <string>dump-hls-pragmas</string>
+    </dict>
+    <dict>
+      <key>level</key>
+      <string>warning</string>
+      <key>filename</key>
+      <string>../gen2/Hls_Layers_UpConv.tpp</string>
+      <key>line</key>
+      <integer>215</integer>
+      <key>column</key>
+      <integer>9</integer>
+      <key>message</key>
+      <string>HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=dataflow_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=UpConv_Fused_Row_XLX_SEP_ PragmaOptions=_XLX_SEP_</string>
+      <key>ID</key>
+      <integer>5471</integer>
+      <key>WarningOption</key>
+      <string>dump-hls-pragmas</string>
+    </dict>
+    <dict>
+      <key>level</key>
+      <string>warning</string>
+      <key>filename</key>
+      <string>../gen2/Hls_Layers_UpConv.tpp</string>
+      <key>line</key>
+      <integer>217</integer>
+      <key>column</key>
+      <integer>9</integer>
+      <key>message</key>
+      <string>HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=bind_storage_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=UpConv_Fused_Row_XLX_SEP_ PragmaOptions=variable=wbuf type=ram_t2p impl=uram_XLX_SEP_</string>
+      <key>ID</key>
+      <integer>5471</integer>
+      <key>WarningOption</key>
+      <string>dump-hls-pragmas</string>
+    </dict>
+    <dict>
+      <key>level</key>
+      <string>warning</string>
+      <key>filename</key>
+      <string>../gen2/Hls_Layers_UpConv.tpp</string>
+      <key>line</key>
+      <integer>218</integer>
+      <key>column</key>
+      <integer>9</integer>
+      <key>message</key>
+      <string>HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=array_partition_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=UpConv_Fused_Row_XLX_SEP_ PragmaOptions=variable=wbuf complete dim=1_XLX_SEP_</string>
+      <key>ID</key>
+      <integer>5471</integer>
+      <key>WarningOption</key>
+      <string>dump-hls-pragmas</string>
+    </dict>
+    <dict>
+      <key>level</key>
+      <string>warning</string>
+      <key>filename</key>
+      <string>../gen2/Hls_Layers_UpConv.tpp</string>
+      <key>line</key>
+      <integer>224</integer>
+      <key>column</key>
+      <integer>9</integer>
+      <key>message</key>
+      <string>HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=bind_storage_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=UpConv_Fused_Row_XLX_SEP_ PragmaOptions=variable=b_buf type=ram_t2p impl=bram_XLX_SEP_</string>
+      <key>ID</key>
+      <integer>5471</integer>
+      <key>WarningOption</key>
+      <string>dump-hls-pragmas</string>
+    </dict>
+    <dict>
+      <key>level</key>
+      <string>warning</string>
+      <key>filename</key>
+      <string>../gen2/Hls_Layers_UpConv.tpp</string>
+      <key>line</key>
+      <integer>225</integer>
+      <key>column</key>
+      <integer>9</integer>
+      <key>message</key>
+      <string>HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=bind_storage_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=UpConv_Fused_Row_XLX_SEP_ PragmaOptions=variable=g_buf type=ram_t2p impl=bram_XLX_SEP_</string>
+      <key>ID</key>
+      <integer>5471</integer>
+      <key>WarningOption</key>
+      <string>dump-hls-pragmas</string>
+    </dict>
+    <dict>
+      <key>level</key>
+      <string>warning</string>
+      <key>filename</key>
+      <string>../gen2/Hls_Layers_UpConv.tpp</string>
+      <key>line</key>
+      <integer>226</integer>
+      <key>column</key>
+      <integer>9</integer>
+      <key>message</key>
+      <string>HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=bind_storage_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=UpConv_Fused_Row_XLX_SEP_ PragmaOptions=variable=be_buf type=ram_t2p impl=bram_XLX_SEP_</string>
+      <key>ID</key>
+      <integer>5471</integer>
+      <key>WarningOption</key>
+      <string>dump-hls-pragmas</string>
+    </dict>
+    <dict>
+      <key>level</key>
+      <string>warning</string>
+      <key>filename</key>
+      <string>../gen2/Hls_Layers_UpConv.tpp</string>
+      <key>line</key>
+      <integer>229</integer>
+      <key>column</key>
+      <integer>9</integer>
+      <key>message</key>
+      <string>HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=pipeline_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=UpConv_Fused_Row_XLX_SEP_ PragmaOptions=II=1_XLX_SEP_</string>
+      <key>ID</key>
+      <integer>5471</integer>
+      <key>WarningOption</key>
+      <string>dump-hls-pragmas</string>
+    </dict>
+    <dict>
+      <key>level</key>
+      <string>warning</string>
+      <key>filename</key>
+      <string>../gen2/Hls_Layers_UpConv.tpp</string>
+      <key>line</key>
+      <integer>230</integer>
+      <key>column</key>
+      <integer>9</integer>
+      <key>message</key>
+      <string>HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=loop_tripcount_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=UpConv_Fused_Row_XLX_SEP_ PragmaOptions=min=4 max=30 avg=14_XLX_SEP_</string>
+      <key>ID</key>
+      <integer>5471</integer>
+      <key>WarningOption</key>
+      <string>dump-hls-pragmas</string>
+    </dict>
+    <dict>
+      <key>level</key>
+      <string>warning</string>
+      <key>filename</key>
+      <string>../gen2/Hls_Layers_UpConv.tpp</string>
+      <key>line</key>
+      <integer>241</integer>
       <key>column</key>
       <integer>9</integer>
       <key>message</key>
@@ -3975,9 +3767,9 @@
       <key>level</key>
       <string>warning</string>
       <key>filename</key>
-      <string>../gen/UpConv_Unified.tpp</string>
+      <string>../gen2/Hls_Layers_UpConv.tpp</string>
       <key>line</key>
-      <integer>338</integer>
+      <integer>242</integer>
       <key>column</key>
       <integer>9</integer>
       <key>message</key>
@@ -3991,13 +3783,13 @@
       <key>level</key>
       <string>warning</string>
       <key>filename</key>
-      <string>../gen/UpConv_Unified.tpp</string>
+      <string>../gen2/Hls_Layers_UpConv.tpp</string>
       <key>line</key>
-      <integer>347</integer>
+      <integer>245</integer>
       <key>column</key>
       <integer>9</integer>
       <key>message</key>
-      <string>HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=loop_tripcount_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=UpConv_Fused_Row_XLX_SEP_ PragmaOptions=min=8 max=60 avg=29_XLX_SEP_</string>
+      <string>HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=array_partition_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=UpConv_Fused_Row_XLX_SEP_ PragmaOptions=variable=sum_rot complete_XLX_SEP_</string>
       <key>ID</key>
       <integer>5471</integer>
       <key>WarningOption</key>
@@ -4007,13 +3799,13 @@
       <key>level</key>
       <string>warning</string>
       <key>filename</key>
-      <string>../gen/UpConv_Unified.tpp</string>
+      <string>../gen2/Hls_Layers_UpConv.tpp</string>
       <key>line</key>
-      <integer>372</integer>
+      <integer>246</integer>
       <key>column</key>
       <integer>9</integer>
       <key>message</key>
-      <string>HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=inline_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=UpConv_Fused_Top_XLX_SEP_ PragmaOptions=_XLX_SEP_</string>
+      <string>HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=array_partition_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=UpConv_Fused_Row_XLX_SEP_ PragmaOptions=variable=sumsq_rot complete_XLX_SEP_</string>
       <key>ID</key>
       <integer>5471</integer>
       <key>WarningOption</key>
@@ -4023,13 +3815,13 @@
       <key>level</key>
       <string>warning</string>
       <key>filename</key>
-      <string>../gen/UpConv_Unified.tpp</string>
+      <string>../gen2/Hls_Layers_UpConv.tpp</string>
       <key>line</key>
-      <integer>379</integer>
+      <integer>250</integer>
       <key>column</key>
       <integer>9</integer>
       <key>message</key>
-      <string>HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=bind_storage_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=UpConv_Fused_Top_XLX_SEP_ PragmaOptions=variable=b_buf type=ram_t2p impl=bram_XLX_SEP_</string>
+      <string>HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=pipeline_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=UpConv_Fused_Row_XLX_SEP_ PragmaOptions=II=1_XLX_SEP_</string>
       <key>ID</key>
       <integer>5471</integer>
       <key>WarningOption</key>
@@ -4039,13 +3831,13 @@
       <key>level</key>
       <string>warning</string>
       <key>filename</key>
-      <string>../gen/UpConv_Unified.tpp</string>
+      <string>../gen2/Hls_Layers_UpConv.tpp</string>
       <key>line</key>
-      <integer>380</integer>
+      <integer>251</integer>
       <key>column</key>
       <integer>9</integer>
       <key>message</key>
-      <string>HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=bind_storage_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=UpConv_Fused_Top_XLX_SEP_ PragmaOptions=variable=g_buf type=ram_t2p impl=bram_XLX_SEP_</string>
+      <string>HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=loop_tripcount_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=UpConv_Fused_Row_XLX_SEP_ PragmaOptions=min=1920 max=15360 avg=7200_XLX_SEP_</string>
       <key>ID</key>
       <integer>5471</integer>
       <key>WarningOption</key>
@@ -4055,13 +3847,13 @@
       <key>level</key>
       <string>warning</string>
       <key>filename</key>
-      <string>../gen/UpConv_Unified.tpp</string>
+      <string>../gen2/Hls_Layers_UpConv.tpp</string>
       <key>line</key>
-      <integer>381</integer>
+      <integer>252</integer>
       <key>column</key>
       <integer>9</integer>
       <key>message</key>
-      <string>HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=bind_storage_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=UpConv_Fused_Top_XLX_SEP_ PragmaOptions=variable=be_buf type=ram_t2p impl=bram_XLX_SEP_</string>
+      <string>HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=dependence_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=UpConv_Fused_Row_XLX_SEP_ PragmaOptions=variable=sum_rot type=inter false_XLX_SEP_</string>
       <key>ID</key>
       <integer>5471</integer>
       <key>WarningOption</key>
@@ -4071,13 +3863,13 @@
       <key>level</key>
       <string>warning</string>
       <key>filename</key>
-      <string>../gen/UpConv_Unified.tpp</string>
+      <string>../gen2/Hls_Layers_UpConv.tpp</string>
       <key>line</key>
-      <integer>388</integer>
+      <integer>253</integer>
       <key>column</key>
       <integer>9</integer>
       <key>message</key>
-      <string>HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=pipeline_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=UpConv_Fused_Top_XLX_SEP_ PragmaOptions=II=1_XLX_SEP_</string>
+      <string>HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=dependence_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=UpConv_Fused_Row_XLX_SEP_ PragmaOptions=variable=sumsq_rot type=inter false_XLX_SEP_</string>
       <key>ID</key>
       <integer>5471</integer>
       <key>WarningOption</key>
@@ -4087,13 +3879,13 @@
       <key>level</key>
       <string>warning</string>
       <key>filename</key>
-      <string>../gen/UpConv_Unified.tpp</string>
+      <string>../gen2/Hls_Layers_UpConv.tpp</string>
       <key>line</key>
-      <integer>389</integer>
+      <integer>254</integer>
       <key>column</key>
       <integer>9</integer>
       <key>message</key>
-      <string>HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=loop_tripcount_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=UpConv_Fused_Top_XLX_SEP_ PragmaOptions=min=64 max=7680 avg=960_XLX_SEP_</string>
+      <string>HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=dependence_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=UpConv_Fused_Row_XLX_SEP_ PragmaOptions=variable=row_acc type=inter false_XLX_SEP_</string>
       <key>ID</key>
       <integer>5471</integer>
       <key>WarningOption</key>
@@ -4103,13 +3895,13 @@
       <key>level</key>
       <string>warning</string>
       <key>filename</key>
-      <string>../gen/UpConv_Unified.tpp</string>
+      <string>../gen2/Hls_Layers_UpConv.tpp</string>
       <key>line</key>
-      <integer>396</integer>
+      <integer>266</integer>
       <key>column</key>
       <integer>9</integer>
       <key>message</key>
-      <string>HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=loop_tripcount_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=UpConv_Fused_Top_XLX_SEP_ PragmaOptions=min=16 max=128 avg=64_XLX_SEP_</string>
+      <string>HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=unroll_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=UpConv_Fused_Row_XLX_SEP_ PragmaOptions=_XLX_SEP_</string>
       <key>ID</key>
       <integer>5471</integer>
       <key>WarningOption</key>
@@ -4119,13 +3911,13 @@
       <key>level</key>
       <string>warning</string>
       <key>filename</key>
-      <string>../gen/UpConv_Unified.tpp</string>
+      <string>../gen2/Hls_Layers_UpConv.tpp</string>
       <key>line</key>
-      <integer>401</integer>
+      <integer>282</integer>
       <key>column</key>
       <integer>9</integer>
       <key>message</key>
-      <string>HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=pipeline_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=UpConv_Fused_Top_XLX_SEP_ PragmaOptions=II=1_XLX_SEP_</string>
+      <string>HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=pipeline_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=UpConv_Fused_Row_XLX_SEP_ PragmaOptions=II=1_XLX_SEP_</string>
       <key>ID</key>
       <integer>5471</integer>
       <key>WarningOption</key>
@@ -4135,13 +3927,29 @@
       <key>level</key>
       <string>warning</string>
       <key>filename</key>
-      <string>../gen/UpConv_Unified.tpp</string>
+      <string>../gen2/Hls_Layers_UpConv.tpp</string>
       <key>line</key>
-      <integer>402</integer>
+      <integer>283</integer>
       <key>column</key>
       <integer>9</integer>
       <key>message</key>
-      <string>HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=loop_tripcount_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=UpConv_Fused_Top_XLX_SEP_ PragmaOptions=min=64 max=7680 avg=960_XLX_SEP_</string>
+      <string>HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=loop_tripcount_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=UpConv_Fused_Row_XLX_SEP_ PragmaOptions=min=128 max=7680 avg=1680_XLX_SEP_</string>
+      <key>ID</key>
+      <integer>5471</integer>
+      <key>WarningOption</key>
+      <string>dump-hls-pragmas</string>
+    </dict>
+    <dict>
+      <key>level</key>
+      <string>warning</string>
+      <key>filename</key>
+      <string>../gen2/Hls_Layers_UpConv.tpp</string>
+      <key>line</key>
+      <integer>288</integer>
+      <key>column</key>
+      <integer>9</integer>
+      <key>message</key>
+      <string>HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=unroll_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=UpConv_Fused_Row_XLX_SEP_ PragmaOptions=_XLX_SEP_</string>
       <key>ID</key>
       <integer>5471</integer>
       <key>WarningOption</key>
@@ -4167,9 +3975,9 @@
       <key>level</key>
       <string>warning</string>
       <key>filename</key>
-      <string>../gen/upconv_core_top.cpp</string>
+      <string>../gen2/upconv_core_top.cpp</string>
       <key>line</key>
-      <integer>20</integer>
+      <integer>16</integer>
       <key>column</key>
       <integer>9</integer>
       <key>message</key>
@@ -4183,9 +3991,9 @@
       <key>level</key>
       <string>warning</string>
       <key>filename</key>
-      <string>../gen/upconv_core_top.cpp</string>
+      <string>../gen2/upconv_core_top.cpp</string>
       <key>line</key>
-      <integer>21</integer>
+      <integer>17</integer>
       <key>column</key>
       <integer>9</integer>
       <key>message</key>
@@ -4199,9 +4007,9 @@
       <key>level</key>
       <string>warning</string>
       <key>filename</key>
-      <string>../gen/upconv_core_top.cpp</string>
+      <string>../gen2/upconv_core_top.cpp</string>
       <key>line</key>
-      <integer>22</integer>
+      <integer>18</integer>
       <key>column</key>
       <integer>9</integer>
       <key>message</key>
@@ -4215,9 +4023,9 @@
       <key>level</key>
       <string>warning</string>
       <key>filename</key>
-      <string>../gen/upconv_core_top.cpp</string>
+      <string>../gen2/upconv_core_top.cpp</string>
       <key>line</key>
-      <integer>23</integer>
+      <integer>19</integer>
       <key>column</key>
       <integer>9</integer>
       <key>message</key>
@@ -4231,9 +4039,9 @@
       <key>level</key>
       <string>warning</string>
       <key>filename</key>
-      <string>../gen/upconv_core_top.cpp</string>
+      <string>../gen2/upconv_core_top.cpp</string>
       <key>line</key>
-      <integer>24</integer>
+      <integer>20</integer>
       <key>column</key>
       <integer>9</integer>
       <key>message</key>
@@ -4247,9 +4055,9 @@
       <key>level</key>
       <string>warning</string>
       <key>filename</key>
-      <string>../gen/upconv_core_top.cpp</string>
+      <string>../gen2/upconv_core_top.cpp</string>
       <key>line</key>
-      <integer>25</integer>
+      <integer>21</integer>
       <key>column</key>
       <integer>9</integer>
       <key>message</key>
@@ -4263,9 +4071,9 @@
       <key>level</key>
       <string>warning</string>
       <key>filename</key>
-      <string>../gen/upconv_core_top.cpp</string>
+      <string>../gen2/upconv_core_top.cpp</string>
       <key>line</key>
-      <integer>27</integer>
+      <integer>23</integer>
       <key>column</key>
       <integer>9</integer>
       <key>message</key>
@@ -4279,9 +4087,9 @@
       <key>level</key>
       <string>warning</string>
       <key>filename</key>
-      <string>../gen/upconv_core_top.cpp</string>
+      <string>../gen2/upconv_core_top.cpp</string>
       <key>line</key>
-      <integer>28</integer>
+      <integer>24</integer>
       <key>column</key>
       <integer>9</integer>
       <key>message</key>
@@ -4295,9 +4103,9 @@
       <key>level</key>
       <string>warning</string>
       <key>filename</key>
-      <string>../gen/upconv_core_top.cpp</string>
+      <string>../gen2/upconv_core_top.cpp</string>
       <key>line</key>
-      <integer>29</integer>
+      <integer>25</integer>
       <key>column</key>
       <integer>9</integer>
       <key>message</key>
@@ -4311,9 +4119,9 @@
       <key>level</key>
       <string>warning</string>
       <key>filename</key>
-      <string>../gen/upconv_core_top.cpp</string>
+      <string>../gen2/upconv_core_top.cpp</string>
       <key>line</key>
-      <integer>30</integer>
+      <integer>26</integer>
       <key>column</key>
       <integer>9</integer>
       <key>message</key>
@@ -4327,9 +4135,9 @@
       <key>level</key>
       <string>warning</string>
       <key>filename</key>
-      <string>../gen/upconv_core_top.cpp</string>
+      <string>../gen2/upconv_core_top.cpp</string>
       <key>line</key>
-      <integer>31</integer>
+      <integer>27</integer>
       <key>column</key>
       <integer>9</integer>
       <key>message</key>
@@ -4343,9 +4151,9 @@
       <key>level</key>
       <string>warning</string>
       <key>filename</key>
-      <string>../gen/upconv_core_top.cpp</string>
+      <string>../gen2/upconv_core_top.cpp</string>
       <key>line</key>
-      <integer>32</integer>
+      <integer>28</integer>
       <key>column</key>
       <integer>9</integer>
       <key>message</key>
@@ -4359,9 +4167,9 @@
       <key>level</key>
       <string>warning</string>
       <key>filename</key>
-      <string>../gen/upconv_core_top.cpp</string>
+      <string>../gen2/upconv_core_top.cpp</string>
       <key>line</key>
-      <integer>33</integer>
+      <integer>29</integer>
       <key>column</key>
       <integer>9</integer>
       <key>message</key>
@@ -4375,9 +4183,9 @@
       <key>level</key>
       <string>warning</string>
       <key>filename</key>
-      <string>../gen/upconv_core_top.cpp</string>
+      <string>../gen2/upconv_core_top.cpp</string>
       <key>line</key>
-      <integer>34</integer>
+      <integer>30</integer>
       <key>column</key>
       <integer>9</integer>
       <key>message</key>
@@ -4391,9 +4199,9 @@
       <key>level</key>
       <string>warning</string>
       <key>filename</key>
-      <string>../gen/upconv_core_top.cpp</string>
+      <string>../gen2/upconv_core_top.cpp</string>
       <key>line</key>
-      <integer>35</integer>
+      <integer>31</integer>
       <key>column</key>
       <integer>9</integer>
       <key>message</key>
@@ -4407,13 +4215,125 @@
       <key>level</key>
       <string>warning</string>
       <key>filename</key>
-      <string>../gen/upconv_core_top.cpp</string>
+      <string>../gen2/upconv_core_top.cpp</string>
       <key>line</key>
-      <integer>41</integer>
+      <integer>37</integer>
       <key>column</key>
       <integer>9</integer>
       <key>message</key>
       <string>HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=bind_storage_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=upconv_core_top_XLX_SEP_ PragmaOptions=variable=x_buf type=ram_t2p impl=uram_XLX_SEP_</string>
+      <key>ID</key>
+      <integer>5471</integer>
+      <key>WarningOption</key>
+      <string>dump-hls-pragmas</string>
+    </dict>
+    <dict>
+      <key>level</key>
+      <string>warning</string>
+      <key>filename</key>
+      <string>../gen2/upconv_core_top.cpp</string>
+      <key>line</key>
+      <integer>57</integer>
+      <key>column</key>
+      <integer>9</integer>
+      <key>message</key>
+      <string>HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=loop_tripcount_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=upconv_core_top_XLX_SEP_ PragmaOptions=min=16 max=128 avg=60_XLX_SEP_</string>
+      <key>ID</key>
+      <integer>5471</integer>
+      <key>WarningOption</key>
+      <string>dump-hls-pragmas</string>
+    </dict>
+    <dict>
+      <key>level</key>
+      <string>warning</string>
+      <key>filename</key>
+      <string>../gen2/upconv_core_top.cpp</string>
+      <key>line</key>
+      <integer>59</integer>
+      <key>column</key>
+      <integer>9</integer>
+      <key>message</key>
+      <string>HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=pipeline_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=upconv_core_top_XLX_SEP_ PragmaOptions=II=1_XLX_SEP_</string>
+      <key>ID</key>
+      <integer>5471</integer>
+      <key>WarningOption</key>
+      <string>dump-hls-pragmas</string>
+    </dict>
+    <dict>
+      <key>level</key>
+      <string>warning</string>
+      <key>filename</key>
+      <string>../gen2/upconv_core_top.cpp</string>
+      <key>line</key>
+      <integer>60</integer>
+      <key>column</key>
+      <integer>9</integer>
+      <key>message</key>
+      <string>HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=loop_tripcount_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=upconv_core_top_XLX_SEP_ PragmaOptions=min=8 max=60 avg=28_XLX_SEP_</string>
+      <key>ID</key>
+      <integer>5471</integer>
+      <key>WarningOption</key>
+      <string>dump-hls-pragmas</string>
+    </dict>
+    <dict>
+      <key>level</key>
+      <string>warning</string>
+      <key>filename</key>
+      <string>../gen2/upconv_core_top.cpp</string>
+      <key>line</key>
+      <integer>68</integer>
+      <key>column</key>
+      <integer>9</integer>
+      <key>message</key>
+      <string>HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=loop_tripcount_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=upconv_core_top_XLX_SEP_ PragmaOptions=min=15 max=127 avg=59_XLX_SEP_</string>
+      <key>ID</key>
+      <integer>5471</integer>
+      <key>WarningOption</key>
+      <string>dump-hls-pragmas</string>
+    </dict>
+    <dict>
+      <key>level</key>
+      <string>warning</string>
+      <key>filename</key>
+      <string>../gen2/upconv_core_top.cpp</string>
+      <key>line</key>
+      <integer>71</integer>
+      <key>column</key>
+      <integer>9</integer>
+      <key>message</key>
+      <string>HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=loop_tripcount_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=upconv_core_top_XLX_SEP_ PragmaOptions=min=16 max=128 avg=60_XLX_SEP_</string>
+      <key>ID</key>
+      <integer>5471</integer>
+      <key>WarningOption</key>
+      <string>dump-hls-pragmas</string>
+    </dict>
+    <dict>
+      <key>level</key>
+      <string>warning</string>
+      <key>filename</key>
+      <string>../gen2/upconv_core_top.cpp</string>
+      <key>line</key>
+      <integer>73</integer>
+      <key>column</key>
+      <integer>9</integer>
+      <key>message</key>
+      <string>HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=pipeline_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=upconv_core_top_XLX_SEP_ PragmaOptions=II=1_XLX_SEP_</string>
+      <key>ID</key>
+      <integer>5471</integer>
+      <key>WarningOption</key>
+      <string>dump-hls-pragmas</string>
+    </dict>
+    <dict>
+      <key>level</key>
+      <string>warning</string>
+      <key>filename</key>
+      <string>../gen2/upconv_core_top.cpp</string>
+      <key>line</key>
+      <integer>74</integer>
+      <key>column</key>
+      <integer>9</integer>
+      <key>message</key>
+      <string>HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=loop_tripcount_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=upconv_core_top_XLX_SEP_ PragmaOptions=min=8 max=60 avg=28_XLX_SEP_</string>
       <key>ID</key>
       <integer>5471</integer>
       <key>WarningOption</key>

@@ -3,7 +3,7 @@
 ================================================================
 == Vitis HLS Report for 'upconv_core_top_ucb0'
 ================================================================
-* Date:           Wed Jun  3 13:46:35 2026
+* Date:           Thu Jun 18 11:44:33 2026
 
 * Version:        2024.2 (Build 5238294 on Nov  8 2024)
 * Project:        upconv_block0
@@ -20,7 +20,7 @@
     +--------+---------+----------+------------+
     |  Clock |  Target | Estimated| Uncertainty|
     +--------+---------+----------+------------+
-    |ap_clk  |  3.33 ns|  2.433 ns|     0.90 ns|
+    |ap_clk  |  3.33 ns|  3.357 ns|     0.90 ns|
     +--------+---------+----------+------------+
 
 + Latency: 
@@ -29,7 +29,7 @@
     |  Latency (cycles)  |   Latency (absolute)  |      Interval      | Pipeline|
     |   min   |    max   |    min    |    max    |   min   |    max   |   Type  |
     +---------+----------+-----------+-----------+---------+----------+---------+
-    |  8895471|  26152431|  29.649 ms|  87.166 ms|  8895472|  26152432|       no|
+    |  8872366|  17988270|  29.785 ms|  60.387 ms|  8872367|  17988271|       no|
     +---------+----------+-----------+-----------+---------+----------+---------+
 
     + Detail: 
@@ -38,9 +38,9 @@
         |                                                                     |                                                          |  Latency (cycles) |  Latency (absolute) |     Interval    |                    Pipeline                    |
         |                               Instance                              |                          Module                          |   min   |   max   |    min   |    max   |   min  |   max  |                      Type                      |
         +---------------------------------------------------------------------+----------------------------------------------------------+---------+---------+----------+----------+--------+--------+------------------------------------------------+
-        |grp_upconv_core_top_ucb0_Pipeline_LOAD_ROW0_VITIS_LOOP_386_1_fu_233  |upconv_core_top_ucb0_Pipeline_LOAD_ROW0_VITIS_LOOP_386_1  |      963|      963|  3.210 us|  3.210 us|     961|     961|  loop auto-rewind stp (delay=0 clock cycles(s))|
-        |grp_UpConv_Fused_Row_8_16_16_960_480_s_fu_242                        |UpConv_Fused_Row_8_16_16_960_480_s                        |   277494|   816774|  0.925 ms|  2.722 ms|  277494|  816774|                                              no|
-        |grp_upconv_core_top_ucb0_Pipeline_LOAD_ROW_VITIS_LOOP_397_2_fu_299   |upconv_core_top_ucb0_Pipeline_LOAD_ROW_VITIS_LOOP_397_2   |      973|      973|  3.243 us|  3.243 us|     961|     961|  loop auto-rewind stp (delay=0 clock cycles(s))|
+        |grp_upconv_core_top_ucb0_Pipeline_LOAD_ROW0_VITIS_LOOP_297_1_fu_233  |upconv_core_top_ucb0_Pipeline_LOAD_ROW0_VITIS_LOOP_297_1  |      963|      963|  3.210 us|  3.210 us|     961|     961|  loop auto-rewind stp (delay=0 clock cycles(s))|
+        |grp_UpConv_Fused_Row_8_16_16_960_480_s_fu_242                        |UpConv_Fused_Row_8_16_16_960_480_s                        |   276772|   561644|  0.929 ms|  1.885 ms|  276772|  561644|                                              no|
+        |grp_upconv_core_top_ucb0_Pipeline_LOAD_ROW_VITIS_LOOP_308_2_fu_299   |upconv_core_top_ucb0_Pipeline_LOAD_ROW_VITIS_LOOP_308_2   |      973|      973|  3.243 us|  3.243 us|     961|     961|  loop auto-rewind stp (delay=0 clock cycles(s))|
         +---------------------------------------------------------------------+----------------------------------------------------------+---------+---------+----------+----------+--------+--------+------------------------------------------------+
 
         * Loop: 
@@ -48,7 +48,7 @@
         |            |  Latency (cycles)  |     Iteration    |  Initiation Interval  | Trip |          |
         |  Loop Name |   min   |    max   |      Latency     |  achieved |   target  | Count| Pipelined|
         +------------+---------+----------+------------------+-----------+-----------+------+----------+
-        |- ROW_LOOP  |  8339505|  24517905|  555967 ~ 1634527|          -|          -|    15|        no|
+        |- ROW_LOOP  |  8317845|  16864005|  554523 ~ 1124267|          -|          -|    15|        no|
         +------------+---------+----------+------------------+-----------+-----------+------+----------+
 
 ============================================================
@@ -77,7 +77,7 @@ IsGatedGlobalClock: 0
 ============================================================
 + Verbose Summary: Schedule
 ============================================================
-* Number of FSM states : 21
+* Number of FSM states : 20
 * Pipeline : 0
 * Dataflow Pipeline: 0
 
@@ -101,134 +101,131 @@ IsGatedGlobalClock: 0
 17 --> 18 
 18 --> 19 
 19 --> 14 
-20 --> 21 
-21 --> 
+20 --> 
 
 * FSM state operations: 
 
 State 1 <SV = 0> <Delay = 2.08>
-ST_1 : Operation 22 [1/1] (0.00ns)   --->   "%hi = alloca i32 1" [../gen/Hls_Layers_UpConv.tpp:394->../gen/upconv_core_top_ucb0.cpp:40]   --->   Operation 22 'alloca' 'hi' <Predicate = true> <Delay = 0.00>
-ST_1 : Operation 23 [1/1] (0.00ns)   --->   "%indvar = alloca i32 1"   --->   Operation 23 'alloca' 'indvar' <Predicate = true> <Delay = 0.00>
-ST_1 : Operation 24 [1/1] (1.00ns)   --->   "%epsilon_read = read i16 @_ssdm_op_Read.s_axilite.half, i16 %epsilon" [../gen/upconv_core_top_ucb0.cpp:11]   --->   Operation 24 'read' 'epsilon_read' <Predicate = true> <Delay = 1.00> <CoreInst = "s_axilite">   --->   Core 120 's_axilite' <Latency = 0> <II = 1> <Delay = 1.00> <Adapter> <Opcode : 'read' 'write'>
-ST_1 : Operation 25 [1/1] (1.00ns)   --->   "%Y_read = read i64 @_ssdm_op_Read.s_axilite.i64, i64 %Y" [../gen/upconv_core_top_ucb0.cpp:11]   --->   Operation 25 'read' 'Y_read' <Predicate = true> <Delay = 1.00> <CoreInst = "s_axilite">   --->   Core 120 's_axilite' <Latency = 0> <II = 1> <Delay = 1.00> <Adapter> <Opcode : 'read' 'write'>
-ST_1 : Operation 26 [1/1] (1.00ns)   --->   "%BE_read = read i64 @_ssdm_op_Read.s_axilite.i64, i64 %BE" [../gen/upconv_core_top_ucb0.cpp:11]   --->   Operation 26 'read' 'BE_read' <Predicate = true> <Delay = 1.00> <CoreInst = "s_axilite">   --->   Core 120 's_axilite' <Latency = 0> <II = 1> <Delay = 1.00> <Adapter> <Opcode : 'read' 'write'>
-ST_1 : Operation 27 [1/1] (1.00ns)   --->   "%G_read = read i64 @_ssdm_op_Read.s_axilite.i64, i64 %G" [../gen/upconv_core_top_ucb0.cpp:11]   --->   Operation 27 'read' 'G_read' <Predicate = true> <Delay = 1.00> <CoreInst = "s_axilite">   --->   Core 120 's_axilite' <Latency = 0> <II = 1> <Delay = 1.00> <Adapter> <Opcode : 'read' 'write'>
-ST_1 : Operation 28 [1/1] (1.00ns)   --->   "%B_read = read i64 @_ssdm_op_Read.s_axilite.i64, i64 %B" [../gen/upconv_core_top_ucb0.cpp:11]   --->   Operation 28 'read' 'B_read' <Predicate = true> <Delay = 1.00> <CoreInst = "s_axilite">   --->   Core 120 's_axilite' <Latency = 0> <II = 1> <Delay = 1.00> <Adapter> <Opcode : 'read' 'write'>
-ST_1 : Operation 29 [1/1] (1.00ns)   --->   "%W_read = read i64 @_ssdm_op_Read.s_axilite.i64, i64 %W" [../gen/upconv_core_top_ucb0.cpp:11]   --->   Operation 29 'read' 'W_read' <Predicate = true> <Delay = 1.00> <CoreInst = "s_axilite">   --->   Core 120 's_axilite' <Latency = 0> <II = 1> <Delay = 1.00> <Adapter> <Opcode : 'read' 'write'>
-ST_1 : Operation 30 [1/1] (1.00ns)   --->   "%X_read = read i64 @_ssdm_op_Read.s_axilite.i64, i64 %X" [../gen/upconv_core_top_ucb0.cpp:11]   --->   Operation 30 'read' 'X_read' <Predicate = true> <Delay = 1.00> <CoreInst = "s_axilite">   --->   Core 120 's_axilite' <Latency = 0> <II = 1> <Delay = 1.00> <Adapter> <Opcode : 'read' 'write'>
-ST_1 : Operation 31 [1/1] (0.00ns)   --->   "%trunc_ln = partselect i59 @_ssdm_op_PartSelect.i59.i64.i32.i32, i64 %X_read, i32 5, i32 63" [../gen/Hls_Layers_UpConv.tpp:385->../gen/upconv_core_top_ucb0.cpp:40]   --->   Operation 31 'partselect' 'trunc_ln' <Predicate = true> <Delay = 0.00>
-ST_1 : Operation 32 [1/1] (1.08ns)   --->   "%add_ln394 = add i64 %X_read, i64 30720" [../gen/Hls_Layers_UpConv.tpp:394->../gen/upconv_core_top_ucb0.cpp:40]   --->   Operation 32 'add' 'add_ln394' <Predicate = true> <Delay = 1.08> <CoreInst = "Adder">   --->   Core 1 'Adder' <Latency = 0> <II = 1> <Delay = 1.08> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
-ST_1 : Operation 33 [1/1] (0.00ns)   --->   "%trunc_ln1 = partselect i59 @_ssdm_op_PartSelect.i59.i64.i32.i32, i64 %add_ln394, i32 5, i32 63" [../gen/Hls_Layers_UpConv.tpp:394->../gen/upconv_core_top_ucb0.cpp:40]   --->   Operation 33 'partselect' 'trunc_ln1' <Predicate = true> <Delay = 0.00>
-ST_1 : Operation 34 [1/1] (0.42ns)   --->   "%store_ln0 = store i4 0, i4 %indvar"   --->   Operation 34 'store' 'store_ln0' <Predicate = true> <Delay = 0.42>
-ST_1 : Operation 35 [1/1] (0.42ns)   --->   "%store_ln394 = store i5 1, i5 %hi" [../gen/Hls_Layers_UpConv.tpp:394->../gen/upconv_core_top_ucb0.cpp:40]   --->   Operation 35 'store' 'store_ln394' <Predicate = true> <Delay = 0.42>
+ST_1 : Operation 21 [1/1] (0.00ns)   --->   "%hi = alloca i32 1" [../gen/Hls_Layers_UpConv.tpp:305->../gen/upconv_core_top_ucb0.cpp:40]   --->   Operation 21 'alloca' 'hi' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 22 [1/1] (0.00ns)   --->   "%indvar = alloca i32 1"   --->   Operation 22 'alloca' 'indvar' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 23 [1/1] (1.00ns)   --->   "%epsilon_read = read i16 @_ssdm_op_Read.s_axilite.half, i16 %epsilon" [../gen/upconv_core_top_ucb0.cpp:11]   --->   Operation 23 'read' 'epsilon_read' <Predicate = true> <Delay = 1.00> <CoreInst = "s_axilite">   --->   Core 120 's_axilite' <Latency = 0> <II = 1> <Delay = 1.00> <Adapter> <Opcode : 'read' 'write'>
+ST_1 : Operation 24 [1/1] (1.00ns)   --->   "%Y_read = read i64 @_ssdm_op_Read.s_axilite.i64, i64 %Y" [../gen/upconv_core_top_ucb0.cpp:11]   --->   Operation 24 'read' 'Y_read' <Predicate = true> <Delay = 1.00> <CoreInst = "s_axilite">   --->   Core 120 's_axilite' <Latency = 0> <II = 1> <Delay = 1.00> <Adapter> <Opcode : 'read' 'write'>
+ST_1 : Operation 25 [1/1] (1.00ns)   --->   "%BE_read = read i64 @_ssdm_op_Read.s_axilite.i64, i64 %BE" [../gen/upconv_core_top_ucb0.cpp:11]   --->   Operation 25 'read' 'BE_read' <Predicate = true> <Delay = 1.00> <CoreInst = "s_axilite">   --->   Core 120 's_axilite' <Latency = 0> <II = 1> <Delay = 1.00> <Adapter> <Opcode : 'read' 'write'>
+ST_1 : Operation 26 [1/1] (1.00ns)   --->   "%G_read = read i64 @_ssdm_op_Read.s_axilite.i64, i64 %G" [../gen/upconv_core_top_ucb0.cpp:11]   --->   Operation 26 'read' 'G_read' <Predicate = true> <Delay = 1.00> <CoreInst = "s_axilite">   --->   Core 120 's_axilite' <Latency = 0> <II = 1> <Delay = 1.00> <Adapter> <Opcode : 'read' 'write'>
+ST_1 : Operation 27 [1/1] (1.00ns)   --->   "%B_read = read i64 @_ssdm_op_Read.s_axilite.i64, i64 %B" [../gen/upconv_core_top_ucb0.cpp:11]   --->   Operation 27 'read' 'B_read' <Predicate = true> <Delay = 1.00> <CoreInst = "s_axilite">   --->   Core 120 's_axilite' <Latency = 0> <II = 1> <Delay = 1.00> <Adapter> <Opcode : 'read' 'write'>
+ST_1 : Operation 28 [1/1] (1.00ns)   --->   "%W_read = read i64 @_ssdm_op_Read.s_axilite.i64, i64 %W" [../gen/upconv_core_top_ucb0.cpp:11]   --->   Operation 28 'read' 'W_read' <Predicate = true> <Delay = 1.00> <CoreInst = "s_axilite">   --->   Core 120 's_axilite' <Latency = 0> <II = 1> <Delay = 1.00> <Adapter> <Opcode : 'read' 'write'>
+ST_1 : Operation 29 [1/1] (1.00ns)   --->   "%X_read = read i64 @_ssdm_op_Read.s_axilite.i64, i64 %X" [../gen/upconv_core_top_ucb0.cpp:11]   --->   Operation 29 'read' 'X_read' <Predicate = true> <Delay = 1.00> <CoreInst = "s_axilite">   --->   Core 120 's_axilite' <Latency = 0> <II = 1> <Delay = 1.00> <Adapter> <Opcode : 'read' 'write'>
+ST_1 : Operation 30 [1/1] (0.00ns)   --->   "%trunc_ln = partselect i59 @_ssdm_op_PartSelect.i59.i64.i32.i32, i64 %X_read, i32 5, i32 63" [../gen/Hls_Layers_UpConv.tpp:296->../gen/upconv_core_top_ucb0.cpp:40]   --->   Operation 30 'partselect' 'trunc_ln' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 31 [1/1] (1.08ns)   --->   "%add_ln305 = add i64 %X_read, i64 30720" [../gen/Hls_Layers_UpConv.tpp:305->../gen/upconv_core_top_ucb0.cpp:40]   --->   Operation 31 'add' 'add_ln305' <Predicate = true> <Delay = 1.08> <CoreInst = "Adder">   --->   Core 1 'Adder' <Latency = 0> <II = 1> <Delay = 1.08> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_1 : Operation 32 [1/1] (0.00ns)   --->   "%trunc_ln1 = partselect i59 @_ssdm_op_PartSelect.i59.i64.i32.i32, i64 %add_ln305, i32 5, i32 63" [../gen/Hls_Layers_UpConv.tpp:305->../gen/upconv_core_top_ucb0.cpp:40]   --->   Operation 32 'partselect' 'trunc_ln1' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 33 [1/1] (0.42ns)   --->   "%store_ln0 = store i4 0, i4 %indvar"   --->   Operation 33 'store' 'store_ln0' <Predicate = true> <Delay = 0.42>
+ST_1 : Operation 34 [1/1] (0.42ns)   --->   "%store_ln305 = store i5 1, i5 %hi" [../gen/Hls_Layers_UpConv.tpp:305->../gen/upconv_core_top_ucb0.cpp:40]   --->   Operation 34 'store' 'store_ln305' <Predicate = true> <Delay = 0.42>
 
 State 2 <SV = 1> <Delay = 2.43>
-ST_2 : Operation 36 [1/1] (0.00ns)   --->   "%sext_ln385 = sext i59 %trunc_ln" [../gen/Hls_Layers_UpConv.tpp:385->../gen/upconv_core_top_ucb0.cpp:40]   --->   Operation 36 'sext' 'sext_ln385' <Predicate = true> <Delay = 0.00>
-ST_2 : Operation 37 [1/1] (0.00ns)   --->   "%gmem_in_addr = getelementptr i256 %gmem_in, i64 %sext_ln385" [../gen/Hls_Layers_UpConv.tpp:385->../gen/upconv_core_top_ucb0.cpp:40]   --->   Operation 37 'getelementptr' 'gmem_in_addr' <Predicate = true> <Delay = 0.00>
-ST_2 : Operation 38 [8/8] (2.43ns)   --->   "%empty = readreq i1 @_ssdm_op_ReadReq.m_axi.p1i256, i256 %gmem_in_addr, i64 960" [../gen/Hls_Layers_UpConv.tpp:385->../gen/upconv_core_top_ucb0.cpp:40]   --->   Operation 38 'readreq' 'empty' <Predicate = true> <Delay = 2.43> <CoreInst = "m_axi">   --->   Core 119 'm_axi' <Latency = 6> <II = 1> <Delay = 1.00> <Adapter> <Opcode : 'read' 'write' 'readreq' 'writereq' 'writeresp'>
+ST_2 : Operation 35 [1/1] (0.00ns)   --->   "%sext_ln296 = sext i59 %trunc_ln" [../gen/Hls_Layers_UpConv.tpp:296->../gen/upconv_core_top_ucb0.cpp:40]   --->   Operation 35 'sext' 'sext_ln296' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 36 [1/1] (0.00ns)   --->   "%gmem_in_addr = getelementptr i256 %gmem_in, i64 %sext_ln296" [../gen/Hls_Layers_UpConv.tpp:296->../gen/upconv_core_top_ucb0.cpp:40]   --->   Operation 36 'getelementptr' 'gmem_in_addr' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 37 [8/8] (2.43ns)   --->   "%empty = readreq i1 @_ssdm_op_ReadReq.m_axi.p1i256, i256 %gmem_in_addr, i64 960" [../gen/Hls_Layers_UpConv.tpp:296->../gen/upconv_core_top_ucb0.cpp:40]   --->   Operation 37 'readreq' 'empty' <Predicate = true> <Delay = 2.43> <CoreInst = "m_axi">   --->   Core 119 'm_axi' <Latency = 6> <II = 1> <Delay = 1.00> <Adapter> <Opcode : 'read' 'write' 'readreq' 'writereq' 'writeresp'>
 
 State 3 <SV = 2> <Delay = 2.43>
-ST_3 : Operation 39 [7/8] (2.43ns)   --->   "%empty = readreq i1 @_ssdm_op_ReadReq.m_axi.p1i256, i256 %gmem_in_addr, i64 960" [../gen/Hls_Layers_UpConv.tpp:385->../gen/upconv_core_top_ucb0.cpp:40]   --->   Operation 39 'readreq' 'empty' <Predicate = true> <Delay = 2.43> <CoreInst = "m_axi">   --->   Core 119 'm_axi' <Latency = 6> <II = 1> <Delay = 1.00> <Adapter> <Opcode : 'read' 'write' 'readreq' 'writereq' 'writeresp'>
+ST_3 : Operation 38 [7/8] (2.43ns)   --->   "%empty = readreq i1 @_ssdm_op_ReadReq.m_axi.p1i256, i256 %gmem_in_addr, i64 960" [../gen/Hls_Layers_UpConv.tpp:296->../gen/upconv_core_top_ucb0.cpp:40]   --->   Operation 38 'readreq' 'empty' <Predicate = true> <Delay = 2.43> <CoreInst = "m_axi">   --->   Core 119 'm_axi' <Latency = 6> <II = 1> <Delay = 1.00> <Adapter> <Opcode : 'read' 'write' 'readreq' 'writereq' 'writeresp'>
 
 State 4 <SV = 3> <Delay = 2.43>
-ST_4 : Operation 40 [6/8] (2.43ns)   --->   "%empty = readreq i1 @_ssdm_op_ReadReq.m_axi.p1i256, i256 %gmem_in_addr, i64 960" [../gen/Hls_Layers_UpConv.tpp:385->../gen/upconv_core_top_ucb0.cpp:40]   --->   Operation 40 'readreq' 'empty' <Predicate = true> <Delay = 2.43> <CoreInst = "m_axi">   --->   Core 119 'm_axi' <Latency = 6> <II = 1> <Delay = 1.00> <Adapter> <Opcode : 'read' 'write' 'readreq' 'writereq' 'writeresp'>
+ST_4 : Operation 39 [6/8] (2.43ns)   --->   "%empty = readreq i1 @_ssdm_op_ReadReq.m_axi.p1i256, i256 %gmem_in_addr, i64 960" [../gen/Hls_Layers_UpConv.tpp:296->../gen/upconv_core_top_ucb0.cpp:40]   --->   Operation 39 'readreq' 'empty' <Predicate = true> <Delay = 2.43> <CoreInst = "m_axi">   --->   Core 119 'm_axi' <Latency = 6> <II = 1> <Delay = 1.00> <Adapter> <Opcode : 'read' 'write' 'readreq' 'writereq' 'writeresp'>
 
 State 5 <SV = 4> <Delay = 2.43>
-ST_5 : Operation 41 [5/8] (2.43ns)   --->   "%empty = readreq i1 @_ssdm_op_ReadReq.m_axi.p1i256, i256 %gmem_in_addr, i64 960" [../gen/Hls_Layers_UpConv.tpp:385->../gen/upconv_core_top_ucb0.cpp:40]   --->   Operation 41 'readreq' 'empty' <Predicate = true> <Delay = 2.43> <CoreInst = "m_axi">   --->   Core 119 'm_axi' <Latency = 6> <II = 1> <Delay = 1.00> <Adapter> <Opcode : 'read' 'write' 'readreq' 'writereq' 'writeresp'>
+ST_5 : Operation 40 [5/8] (2.43ns)   --->   "%empty = readreq i1 @_ssdm_op_ReadReq.m_axi.p1i256, i256 %gmem_in_addr, i64 960" [../gen/Hls_Layers_UpConv.tpp:296->../gen/upconv_core_top_ucb0.cpp:40]   --->   Operation 40 'readreq' 'empty' <Predicate = true> <Delay = 2.43> <CoreInst = "m_axi">   --->   Core 119 'm_axi' <Latency = 6> <II = 1> <Delay = 1.00> <Adapter> <Opcode : 'read' 'write' 'readreq' 'writereq' 'writeresp'>
 
 State 6 <SV = 5> <Delay = 2.43>
-ST_6 : Operation 42 [4/8] (2.43ns)   --->   "%empty = readreq i1 @_ssdm_op_ReadReq.m_axi.p1i256, i256 %gmem_in_addr, i64 960" [../gen/Hls_Layers_UpConv.tpp:385->../gen/upconv_core_top_ucb0.cpp:40]   --->   Operation 42 'readreq' 'empty' <Predicate = true> <Delay = 2.43> <CoreInst = "m_axi">   --->   Core 119 'm_axi' <Latency = 6> <II = 1> <Delay = 1.00> <Adapter> <Opcode : 'read' 'write' 'readreq' 'writereq' 'writeresp'>
+ST_6 : Operation 41 [4/8] (2.43ns)   --->   "%empty = readreq i1 @_ssdm_op_ReadReq.m_axi.p1i256, i256 %gmem_in_addr, i64 960" [../gen/Hls_Layers_UpConv.tpp:296->../gen/upconv_core_top_ucb0.cpp:40]   --->   Operation 41 'readreq' 'empty' <Predicate = true> <Delay = 2.43> <CoreInst = "m_axi">   --->   Core 119 'm_axi' <Latency = 6> <II = 1> <Delay = 1.00> <Adapter> <Opcode : 'read' 'write' 'readreq' 'writereq' 'writeresp'>
 
 State 7 <SV = 6> <Delay = 2.43>
-ST_7 : Operation 43 [3/8] (2.43ns)   --->   "%empty = readreq i1 @_ssdm_op_ReadReq.m_axi.p1i256, i256 %gmem_in_addr, i64 960" [../gen/Hls_Layers_UpConv.tpp:385->../gen/upconv_core_top_ucb0.cpp:40]   --->   Operation 43 'readreq' 'empty' <Predicate = true> <Delay = 2.43> <CoreInst = "m_axi">   --->   Core 119 'm_axi' <Latency = 6> <II = 1> <Delay = 1.00> <Adapter> <Opcode : 'read' 'write' 'readreq' 'writereq' 'writeresp'>
+ST_7 : Operation 42 [3/8] (2.43ns)   --->   "%empty = readreq i1 @_ssdm_op_ReadReq.m_axi.p1i256, i256 %gmem_in_addr, i64 960" [../gen/Hls_Layers_UpConv.tpp:296->../gen/upconv_core_top_ucb0.cpp:40]   --->   Operation 42 'readreq' 'empty' <Predicate = true> <Delay = 2.43> <CoreInst = "m_axi">   --->   Core 119 'm_axi' <Latency = 6> <II = 1> <Delay = 1.00> <Adapter> <Opcode : 'read' 'write' 'readreq' 'writereq' 'writeresp'>
 
 State 8 <SV = 7> <Delay = 2.43>
-ST_8 : Operation 44 [2/8] (2.43ns)   --->   "%empty = readreq i1 @_ssdm_op_ReadReq.m_axi.p1i256, i256 %gmem_in_addr, i64 960" [../gen/Hls_Layers_UpConv.tpp:385->../gen/upconv_core_top_ucb0.cpp:40]   --->   Operation 44 'readreq' 'empty' <Predicate = true> <Delay = 2.43> <CoreInst = "m_axi">   --->   Core 119 'm_axi' <Latency = 6> <II = 1> <Delay = 1.00> <Adapter> <Opcode : 'read' 'write' 'readreq' 'writereq' 'writeresp'>
+ST_8 : Operation 43 [2/8] (2.43ns)   --->   "%empty = readreq i1 @_ssdm_op_ReadReq.m_axi.p1i256, i256 %gmem_in_addr, i64 960" [../gen/Hls_Layers_UpConv.tpp:296->../gen/upconv_core_top_ucb0.cpp:40]   --->   Operation 43 'readreq' 'empty' <Predicate = true> <Delay = 2.43> <CoreInst = "m_axi">   --->   Core 119 'm_axi' <Latency = 6> <II = 1> <Delay = 1.00> <Adapter> <Opcode : 'read' 'write' 'readreq' 'writereq' 'writeresp'>
 
 State 9 <SV = 8> <Delay = 2.43>
-ST_9 : Operation 45 [1/8] (2.43ns)   --->   "%empty = readreq i1 @_ssdm_op_ReadReq.m_axi.p1i256, i256 %gmem_in_addr, i64 960" [../gen/Hls_Layers_UpConv.tpp:385->../gen/upconv_core_top_ucb0.cpp:40]   --->   Operation 45 'readreq' 'empty' <Predicate = true> <Delay = 2.43> <CoreInst = "m_axi">   --->   Core 119 'm_axi' <Latency = 6> <II = 1> <Delay = 1.00> <Adapter> <Opcode : 'read' 'write' 'readreq' 'writereq' 'writeresp'>
+ST_9 : Operation 44 [1/8] (2.43ns)   --->   "%empty = readreq i1 @_ssdm_op_ReadReq.m_axi.p1i256, i256 %gmem_in_addr, i64 960" [../gen/Hls_Layers_UpConv.tpp:296->../gen/upconv_core_top_ucb0.cpp:40]   --->   Operation 44 'readreq' 'empty' <Predicate = true> <Delay = 2.43> <CoreInst = "m_axi">   --->   Core 119 'm_axi' <Latency = 6> <II = 1> <Delay = 1.00> <Adapter> <Opcode : 'read' 'write' 'readreq' 'writereq' 'writeresp'>
 
 State 10 <SV = 9> <Delay = 0.00>
-ST_10 : Operation 46 [2/2] (0.00ns)   --->   "%call_ln385 = call void @upconv_core_top_ucb0_Pipeline_LOAD_ROW0_VITIS_LOOP_386_1, i256 %gmem_in, i59 %trunc_ln, i256 %x_buf" [../gen/Hls_Layers_UpConv.tpp:385->../gen/upconv_core_top_ucb0.cpp:40]   --->   Operation 46 'call' 'call_ln385' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Generic Core
+ST_10 : Operation 45 [2/2] (0.00ns)   --->   "%call_ln296 = call void @upconv_core_top_ucb0_Pipeline_LOAD_ROW0_VITIS_LOOP_297_1, i256 %gmem_in, i59 %trunc_ln, i256 %x_buf" [../gen/Hls_Layers_UpConv.tpp:296->../gen/upconv_core_top_ucb0.cpp:40]   --->   Operation 45 'call' 'call_ln296' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Generic Core
 
 State 11 <SV = 10> <Delay = 0.00>
-ST_11 : Operation 47 [1/2] (0.00ns)   --->   "%call_ln385 = call void @upconv_core_top_ucb0_Pipeline_LOAD_ROW0_VITIS_LOOP_386_1, i256 %gmem_in, i59 %trunc_ln, i256 %x_buf" [../gen/Hls_Layers_UpConv.tpp:385->../gen/upconv_core_top_ucb0.cpp:40]   --->   Operation 47 'call' 'call_ln385' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Generic Core
+ST_11 : Operation 46 [1/2] (0.00ns)   --->   "%call_ln296 = call void @upconv_core_top_ucb0_Pipeline_LOAD_ROW0_VITIS_LOOP_297_1, i256 %gmem_in, i59 %trunc_ln, i256 %x_buf" [../gen/Hls_Layers_UpConv.tpp:296->../gen/upconv_core_top_ucb0.cpp:40]   --->   Operation 46 'call' 'call_ln296' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Generic Core
 
-State 12 <SV = 11> <Delay = 2.43>
-ST_12 : Operation 48 [2/2] (2.43ns)   --->   "%call_ln391 = call void @UpConv_Fused_Row<8, 16, 16, 960, 480>, i256 %gmem_weight, i64 %W_read, i256 %gmem_param, i64 %B_read, i64 %G_read, i64 %BE_read, i256 %gmem_out, i64 %Y_read, i16 %epsilon_read, i5 0, i16 %void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_9, i16 %void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_8, i16 %void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_7, i16 %void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_6, i16 %void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_5, i16 %void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_4, i16 %void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_3, i16 %void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_2, i16 %void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_1, i16 %void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u, i16 %p_ZZ16UpConv_Fused_RowILi8ELi16ELi16ELi960ELi480EEvP7ap_uintILi256EEPKS1_S4_S4_S4_5, i16 %p_ZZ16UpConv_Fused_RowILi8ELi16ELi16ELi960ELi480EEvP7ap_uintILi256EEPKS1_S4_S4_S4_4, i16 %p_ZZ16UpConv_Fused_RowILi8ELi16ELi16ELi960ELi480EEvP7ap_uintILi256EEPKS1_S4_S4_S4_3, i16 %p_ZZ16UpConv_Fused_RowILi8ELi16ELi16ELi960ELi480EEvP7ap_uintILi256EEPKS1_S4_S4_S4_2, i16 %p_ZZ16UpConv_Fused_RowILi8ELi16ELi16ELi960ELi480EEvP7ap_uintILi256EEPKS1_S4_S4_S4_1, i16 %p_ZZ16UpConv_Fused_RowILi8ELi16ELi16ELi960ELi480EEvP7ap_uintILi256EEPKS1_S4_S4_S4, i256 %x_buf, i32 %mean_buf, i16 %inv_buf" [../gen/Hls_Layers_UpConv.tpp:391->../gen/upconv_core_top_ucb0.cpp:40]   --->   Operation 48 'call' 'call_ln391' <Predicate = true> <Delay = 2.43> <CoreType = "Generic">   --->   Generic Core
+State 12 <SV = 11> <Delay = 1.53>
+ST_12 : Operation 47 [2/2] (1.53ns)   --->   "%call_ln302 = call void @UpConv_Fused_Row<8, 16, 16, 960, 480>, i256 %gmem_weight, i64 %W_read, i256 %gmem_param, i64 %B_read, i64 %G_read, i64 %BE_read, i256 %gmem_out, i64 %Y_read, i16 %epsilon_read, i5 0, i16 %void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_9, i16 %void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_8, i16 %void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_7, i16 %void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_6, i16 %void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_5, i16 %void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_4, i16 %void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_3, i16 %void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_2, i16 %void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_1, i16 %void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u, i16 %p_ZZ16UpConv_Fused_RowILi8ELi16ELi16ELi960ELi480EEvP7ap_uintILi256EEPKS1_S4_S4_S4_5, i16 %p_ZZ16UpConv_Fused_RowILi8ELi16ELi16ELi960ELi480EEvP7ap_uintILi256EEPKS1_S4_S4_S4_4, i16 %p_ZZ16UpConv_Fused_RowILi8ELi16ELi16ELi960ELi480EEvP7ap_uintILi256EEPKS1_S4_S4_S4_3, i16 %p_ZZ16UpConv_Fused_RowILi8ELi16ELi16ELi960ELi480EEvP7ap_uintILi256EEPKS1_S4_S4_S4_2, i16 %p_ZZ16UpConv_Fused_RowILi8ELi16ELi16ELi960ELi480EEvP7ap_uintILi256EEPKS1_S4_S4_S4_1, i16 %p_ZZ16UpConv_Fused_RowILi8ELi16ELi16ELi960ELi480EEvP7ap_uintILi256EEPKS1_S4_S4_S4, i256 %x_buf, i32 %mean_buf, i16 %inv_buf" [../gen/Hls_Layers_UpConv.tpp:302->../gen/upconv_core_top_ucb0.cpp:40]   --->   Operation 47 'call' 'call_ln302' <Predicate = true> <Delay = 1.53> <CoreType = "Generic">   --->   Generic Core
 
 State 13 <SV = 12> <Delay = 0.00>
-ST_13 : Operation 49 [1/1] (0.00ns)   --->   "%spectopmodule_ln10 = spectopmodule void @_ssdm_op_SpecTopModule, void @empty_10" [../gen/upconv_core_top_ucb0.cpp:10]   --->   Operation 49 'spectopmodule' 'spectopmodule_ln10' <Predicate = true> <Delay = 0.00>
-ST_13 : Operation 50 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i256 %gmem_in, void @empty_27, i32 0, i32 0, void @empty_1, i32 0, i32 0, void @empty_6, void @empty_14, void @empty_1, i32 16, i32 16, i32 64, i32 16, void @empty_1, void @empty_1, i32 4294967295, i32 0, i32 0"   --->   Operation 50 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
-ST_13 : Operation 51 [1/1] (0.00ns)   --->   "%specbitsmap_ln0 = specbitsmap void @_ssdm_op_SpecBitsMap, i256 %gmem_in"   --->   Operation 51 'specbitsmap' 'specbitsmap_ln0' <Predicate = true> <Delay = 0.00>
-ST_13 : Operation 52 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i256 %gmem_weight, void @empty_27, i32 0, i32 0, void @empty_1, i32 0, i32 0, void @empty_11, void @empty_14, void @empty_1, i32 16, i32 16, i32 64, i32 16, void @empty_1, void @empty_1, i32 4294967295, i32 0, i32 0"   --->   Operation 52 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
-ST_13 : Operation 53 [1/1] (0.00ns)   --->   "%specbitsmap_ln0 = specbitsmap void @_ssdm_op_SpecBitsMap, i256 %gmem_weight"   --->   Operation 53 'specbitsmap' 'specbitsmap_ln0' <Predicate = true> <Delay = 0.00>
-ST_13 : Operation 54 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i256 %gmem_param, void @empty_27, i32 0, i32 0, void @empty_1, i32 0, i32 0, void @empty_22, void @empty_14, void @empty_1, i32 16, i32 16, i32 64, i32 16, void @empty_1, void @empty_1, i32 4294967295, i32 0, i32 0"   --->   Operation 54 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
-ST_13 : Operation 55 [1/1] (0.00ns)   --->   "%specbitsmap_ln0 = specbitsmap void @_ssdm_op_SpecBitsMap, i256 %gmem_param"   --->   Operation 55 'specbitsmap' 'specbitsmap_ln0' <Predicate = true> <Delay = 0.00>
-ST_13 : Operation 56 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i256 %gmem_out, void @empty_27, i32 0, i32 0, void @empty_1, i32 0, i32 0, void @empty_21, void @empty_14, void @empty_1, i32 16, i32 16, i32 16, i32 64, void @empty_1, void @empty_1, i32 4294967295, i32 0, i32 0"   --->   Operation 56 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
-ST_13 : Operation 57 [1/1] (0.00ns)   --->   "%specbitsmap_ln0 = specbitsmap void @_ssdm_op_SpecBitsMap, i256 %gmem_out"   --->   Operation 57 'specbitsmap' 'specbitsmap_ln0' <Predicate = true> <Delay = 0.00>
-ST_13 : Operation 58 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i64 %X, void @empty_20, i32 4294967295, i32 4294967295, void @empty_19, i32 0, i32 0, void @empty_8, void @empty_18, void @empty_1, i32 0, i32 0, i32 0, i32 0, void @empty_1, void @empty_17, i32 4294967295, i32 0, i32 0"   --->   Operation 58 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
-ST_13 : Operation 59 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i64 %X, void @empty_15, i32 4294967295, i32 4294967295, void @empty_1, i32 0, i32 0, void @empty_1, void @empty_1, void @empty_1, i32 0, i32 0, i32 0, i32 0, void @empty_1, void @empty_17, i32 4294967295, i32 0, i32 0"   --->   Operation 59 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
-ST_13 : Operation 60 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i64 %W, void @empty_20, i32 4294967295, i32 4294967295, void @empty_19, i32 0, i32 0, void @empty_8, void @empty_16, void @empty_1, i32 0, i32 0, i32 0, i32 0, void @empty_1, void @empty_17, i32 4294967295, i32 0, i32 0"   --->   Operation 60 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
-ST_13 : Operation 61 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i64 %W, void @empty_15, i32 4294967295, i32 4294967295, void @empty_1, i32 0, i32 0, void @empty_1, void @empty_1, void @empty_1, i32 0, i32 0, i32 0, i32 0, void @empty_1, void @empty_17, i32 4294967295, i32 0, i32 0"   --->   Operation 61 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
-ST_13 : Operation 62 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i64 %B, void @empty_20, i32 4294967295, i32 4294967295, void @empty_19, i32 0, i32 0, void @empty_8, void @empty_2, void @empty_1, i32 0, i32 0, i32 0, i32 0, void @empty_1, void @empty_17, i32 4294967295, i32 0, i32 0"   --->   Operation 62 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
-ST_13 : Operation 63 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i64 %B, void @empty_15, i32 4294967295, i32 4294967295, void @empty_1, i32 0, i32 0, void @empty_1, void @empty_1, void @empty_1, i32 0, i32 0, i32 0, i32 0, void @empty_1, void @empty_17, i32 4294967295, i32 0, i32 0"   --->   Operation 63 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
-ST_13 : Operation 64 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i64 %G, void @empty_20, i32 4294967295, i32 4294967295, void @empty_19, i32 0, i32 0, void @empty_8, void @empty_24, void @empty_1, i32 0, i32 0, i32 0, i32 0, void @empty_1, void @empty_17, i32 4294967295, i32 0, i32 0"   --->   Operation 64 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
-ST_13 : Operation 65 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i64 %G, void @empty_15, i32 4294967295, i32 4294967295, void @empty_1, i32 0, i32 0, void @empty_1, void @empty_1, void @empty_1, i32 0, i32 0, i32 0, i32 0, void @empty_1, void @empty_17, i32 4294967295, i32 0, i32 0"   --->   Operation 65 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
-ST_13 : Operation 66 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i64 %BE, void @empty_20, i32 4294967295, i32 4294967295, void @empty_19, i32 0, i32 0, void @empty_8, void @empty_12, void @empty_1, i32 0, i32 0, i32 0, i32 0, void @empty_1, void @empty_17, i32 4294967295, i32 0, i32 0"   --->   Operation 66 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
-ST_13 : Operation 67 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i64 %BE, void @empty_15, i32 4294967295, i32 4294967295, void @empty_1, i32 0, i32 0, void @empty_1, void @empty_1, void @empty_1, i32 0, i32 0, i32 0, i32 0, void @empty_1, void @empty_17, i32 4294967295, i32 0, i32 0"   --->   Operation 67 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
-ST_13 : Operation 68 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i64 %Y, void @empty_20, i32 4294967295, i32 4294967295, void @empty_19, i32 0, i32 0, void @empty_8, void @empty, void @empty_1, i32 0, i32 0, i32 0, i32 0, void @empty_1, void @empty_17, i32 4294967295, i32 0, i32 0"   --->   Operation 68 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
-ST_13 : Operation 69 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i64 %Y, void @empty_15, i32 4294967295, i32 4294967295, void @empty_1, i32 0, i32 0, void @empty_1, void @empty_1, void @empty_1, i32 0, i32 0, i32 0, i32 0, void @empty_1, void @empty_17, i32 4294967295, i32 0, i32 0"   --->   Operation 69 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
-ST_13 : Operation 70 [1/1] (0.00ns)   --->   "%specbitsmap_ln0 = specbitsmap void @_ssdm_op_SpecBitsMap, i16 %epsilon"   --->   Operation 70 'specbitsmap' 'specbitsmap_ln0' <Predicate = true> <Delay = 0.00>
-ST_13 : Operation 71 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i16 %epsilon, void @empty_20, i32 4294967295, i32 4294967295, void @empty_19, i32 0, i32 0, void @empty_8, void @empty_23, void @empty_1, i32 0, i32 0, i32 0, i32 0, void @empty_1, void @empty_1, i32 4294967295, i32 0, i32 0"   --->   Operation 71 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
-ST_13 : Operation 72 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i16 %epsilon, void @empty_15, i32 4294967295, i32 4294967295, void @empty_1, i32 0, i32 0, void @empty_1, void @empty_1, void @empty_1, i32 0, i32 0, i32 0, i32 0, void @empty_1, void @empty_1, i32 4294967295, i32 0, i32 0"   --->   Operation 72 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
-ST_13 : Operation 73 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i32 0, void @empty_20, i32 0, i32 0, void @empty_1, i32 0, i32 0, void @empty_8, void @empty_1, void @empty_1, i32 0, i32 0, i32 0, i32 0, void @empty_1, void @empty_1, i32 4294967295, i32 0, i32 0"   --->   Operation 73 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
-ST_13 : Operation 74 [1/1] (0.00ns)   --->   "%specmemcore_ln37 = specmemcore void @_ssdm_op_SpecMemCore, i256 %x_buf, i64 666, i64 31, i64 18446744073709551615" [../gen/upconv_core_top_ucb0.cpp:37]   --->   Operation 74 'specmemcore' 'specmemcore_ln37' <Predicate = true> <Delay = 0.00>
-ST_13 : Operation 75 [1/2] (0.00ns)   --->   "%call_ln391 = call void @UpConv_Fused_Row<8, 16, 16, 960, 480>, i256 %gmem_weight, i64 %W_read, i256 %gmem_param, i64 %B_read, i64 %G_read, i64 %BE_read, i256 %gmem_out, i64 %Y_read, i16 %epsilon_read, i5 0, i16 %void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_9, i16 %void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_8, i16 %void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_7, i16 %void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_6, i16 %void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_5, i16 %void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_4, i16 %void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_3, i16 %void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_2, i16 %void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_1, i16 %void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u, i16 %p_ZZ16UpConv_Fused_RowILi8ELi16ELi16ELi960ELi480EEvP7ap_uintILi256EEPKS1_S4_S4_S4_5, i16 %p_ZZ16UpConv_Fused_RowILi8ELi16ELi16ELi960ELi480EEvP7ap_uintILi256EEPKS1_S4_S4_S4_4, i16 %p_ZZ16UpConv_Fused_RowILi8ELi16ELi16ELi960ELi480EEvP7ap_uintILi256EEPKS1_S4_S4_S4_3, i16 %p_ZZ16UpConv_Fused_RowILi8ELi16ELi16ELi960ELi480EEvP7ap_uintILi256EEPKS1_S4_S4_S4_2, i16 %p_ZZ16UpConv_Fused_RowILi8ELi16ELi16ELi960ELi480EEvP7ap_uintILi256EEPKS1_S4_S4_S4_1, i16 %p_ZZ16UpConv_Fused_RowILi8ELi16ELi16ELi960ELi480EEvP7ap_uintILi256EEPKS1_S4_S4_S4, i256 %x_buf, i32 %mean_buf, i16 %inv_buf" [../gen/Hls_Layers_UpConv.tpp:391->../gen/upconv_core_top_ucb0.cpp:40]   --->   Operation 75 'call' 'call_ln391' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Generic Core
-ST_13 : Operation 76 [1/1] (0.00ns)   --->   "%br_ln394 = br void %for.body17.i" [../gen/Hls_Layers_UpConv.tpp:394->../gen/upconv_core_top_ucb0.cpp:40]   --->   Operation 76 'br' 'br_ln394' <Predicate = true> <Delay = 0.00>
+ST_13 : Operation 48 [1/1] (0.00ns)   --->   "%spectopmodule_ln10 = spectopmodule void @_ssdm_op_SpecTopModule, void @empty_139" [../gen/upconv_core_top_ucb0.cpp:10]   --->   Operation 48 'spectopmodule' 'spectopmodule_ln10' <Predicate = true> <Delay = 0.00>
+ST_13 : Operation 49 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i256 %gmem_in, void @empty_109, i32 0, i32 0, void @empty_65, i32 0, i32 0, void @empty_111, void @empty_67, void @empty_65, i32 16, i32 16, i32 64, i32 16, void @empty_65, void @empty_65, i32 4294967295, i32 0, i32 0"   --->   Operation 49 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
+ST_13 : Operation 50 [1/1] (0.00ns)   --->   "%specbitsmap_ln0 = specbitsmap void @_ssdm_op_SpecBitsMap, i256 %gmem_in"   --->   Operation 50 'specbitsmap' 'specbitsmap_ln0' <Predicate = true> <Delay = 0.00>
+ST_13 : Operation 51 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i256 %gmem_weight, void @empty_109, i32 0, i32 0, void @empty_65, i32 0, i32 0, void @empty_134, void @empty_67, void @empty_65, i32 16, i32 16, i32 64, i32 16, void @empty_65, void @empty_65, i32 4294967295, i32 0, i32 0"   --->   Operation 51 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
+ST_13 : Operation 52 [1/1] (0.00ns)   --->   "%specbitsmap_ln0 = specbitsmap void @_ssdm_op_SpecBitsMap, i256 %gmem_weight"   --->   Operation 52 'specbitsmap' 'specbitsmap_ln0' <Predicate = true> <Delay = 0.00>
+ST_13 : Operation 53 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i256 %gmem_param, void @empty_109, i32 0, i32 0, void @empty_65, i32 0, i32 0, void @empty_118, void @empty_67, void @empty_65, i32 16, i32 16, i32 64, i32 16, void @empty_65, void @empty_65, i32 4294967295, i32 0, i32 0"   --->   Operation 53 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
+ST_13 : Operation 54 [1/1] (0.00ns)   --->   "%specbitsmap_ln0 = specbitsmap void @_ssdm_op_SpecBitsMap, i256 %gmem_param"   --->   Operation 54 'specbitsmap' 'specbitsmap_ln0' <Predicate = true> <Delay = 0.00>
+ST_13 : Operation 55 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i256 %gmem_out, void @empty_109, i32 0, i32 0, void @empty_65, i32 0, i32 0, void @empty_136, void @empty_67, void @empty_65, i32 16, i32 16, i32 16, i32 64, void @empty_65, void @empty_65, i32 4294967295, i32 0, i32 0"   --->   Operation 55 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
+ST_13 : Operation 56 [1/1] (0.00ns)   --->   "%specbitsmap_ln0 = specbitsmap void @_ssdm_op_SpecBitsMap, i256 %gmem_out"   --->   Operation 56 'specbitsmap' 'specbitsmap_ln0' <Predicate = true> <Delay = 0.00>
+ST_13 : Operation 57 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i64 %X, void @empty_138, i32 4294967295, i32 4294967295, void @empty_82, i32 0, i32 0, void @empty_83, void @empty_130, void @empty_65, i32 0, i32 0, i32 0, i32 0, void @empty_65, void @empty_52, i32 4294967295, i32 0, i32 0"   --->   Operation 57 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
+ST_13 : Operation 58 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i64 %X, void @empty_141, i32 4294967295, i32 4294967295, void @empty_65, i32 0, i32 0, void @empty_65, void @empty_65, void @empty_65, i32 0, i32 0, i32 0, i32 0, void @empty_65, void @empty_52, i32 4294967295, i32 0, i32 0"   --->   Operation 58 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
+ST_13 : Operation 59 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i64 %W, void @empty_138, i32 4294967295, i32 4294967295, void @empty_82, i32 0, i32 0, void @empty_83, void @empty_97, void @empty_65, i32 0, i32 0, i32 0, i32 0, void @empty_65, void @empty_52, i32 4294967295, i32 0, i32 0"   --->   Operation 59 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
+ST_13 : Operation 60 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i64 %W, void @empty_141, i32 4294967295, i32 4294967295, void @empty_65, i32 0, i32 0, void @empty_65, void @empty_65, void @empty_65, i32 0, i32 0, i32 0, i32 0, void @empty_65, void @empty_52, i32 4294967295, i32 0, i32 0"   --->   Operation 60 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
+ST_13 : Operation 61 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i64 %B, void @empty_138, i32 4294967295, i32 4294967295, void @empty_82, i32 0, i32 0, void @empty_83, void @empty_71, void @empty_65, i32 0, i32 0, i32 0, i32 0, void @empty_65, void @empty_52, i32 4294967295, i32 0, i32 0"   --->   Operation 61 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
+ST_13 : Operation 62 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i64 %B, void @empty_141, i32 4294967295, i32 4294967295, void @empty_65, i32 0, i32 0, void @empty_65, void @empty_65, void @empty_65, i32 0, i32 0, i32 0, i32 0, void @empty_65, void @empty_52, i32 4294967295, i32 0, i32 0"   --->   Operation 62 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
+ST_13 : Operation 63 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i64 %G, void @empty_138, i32 4294967295, i32 4294967295, void @empty_82, i32 0, i32 0, void @empty_83, void @empty_135, void @empty_65, i32 0, i32 0, i32 0, i32 0, void @empty_65, void @empty_52, i32 4294967295, i32 0, i32 0"   --->   Operation 63 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
+ST_13 : Operation 64 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i64 %G, void @empty_141, i32 4294967295, i32 4294967295, void @empty_65, i32 0, i32 0, void @empty_65, void @empty_65, void @empty_65, i32 0, i32 0, i32 0, i32 0, void @empty_65, void @empty_52, i32 4294967295, i32 0, i32 0"   --->   Operation 64 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
+ST_13 : Operation 65 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i64 %BE, void @empty_138, i32 4294967295, i32 4294967295, void @empty_82, i32 0, i32 0, void @empty_83, void @empty_80, void @empty_65, i32 0, i32 0, i32 0, i32 0, void @empty_65, void @empty_52, i32 4294967295, i32 0, i32 0"   --->   Operation 65 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
+ST_13 : Operation 66 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i64 %BE, void @empty_141, i32 4294967295, i32 4294967295, void @empty_65, i32 0, i32 0, void @empty_65, void @empty_65, void @empty_65, i32 0, i32 0, i32 0, i32 0, void @empty_65, void @empty_52, i32 4294967295, i32 0, i32 0"   --->   Operation 66 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
+ST_13 : Operation 67 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i64 %Y, void @empty_138, i32 4294967295, i32 4294967295, void @empty_82, i32 0, i32 0, void @empty_83, void @empty_137, void @empty_65, i32 0, i32 0, i32 0, i32 0, void @empty_65, void @empty_52, i32 4294967295, i32 0, i32 0"   --->   Operation 67 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
+ST_13 : Operation 68 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i64 %Y, void @empty_141, i32 4294967295, i32 4294967295, void @empty_65, i32 0, i32 0, void @empty_65, void @empty_65, void @empty_65, i32 0, i32 0, i32 0, i32 0, void @empty_65, void @empty_52, i32 4294967295, i32 0, i32 0"   --->   Operation 68 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
+ST_13 : Operation 69 [1/1] (0.00ns)   --->   "%specbitsmap_ln0 = specbitsmap void @_ssdm_op_SpecBitsMap, i16 %epsilon"   --->   Operation 69 'specbitsmap' 'specbitsmap_ln0' <Predicate = true> <Delay = 0.00>
+ST_13 : Operation 70 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i16 %epsilon, void @empty_138, i32 4294967295, i32 4294967295, void @empty_82, i32 0, i32 0, void @empty_83, void @empty_81, void @empty_65, i32 0, i32 0, i32 0, i32 0, void @empty_65, void @empty_65, i32 4294967295, i32 0, i32 0"   --->   Operation 70 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
+ST_13 : Operation 71 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i16 %epsilon, void @empty_141, i32 4294967295, i32 4294967295, void @empty_65, i32 0, i32 0, void @empty_65, void @empty_65, void @empty_65, i32 0, i32 0, i32 0, i32 0, void @empty_65, void @empty_65, i32 4294967295, i32 0, i32 0"   --->   Operation 71 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
+ST_13 : Operation 72 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i32 0, void @empty_138, i32 0, i32 0, void @empty_65, i32 0, i32 0, void @empty_83, void @empty_65, void @empty_65, i32 0, i32 0, i32 0, i32 0, void @empty_65, void @empty_65, i32 4294967295, i32 0, i32 0"   --->   Operation 72 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
+ST_13 : Operation 73 [1/1] (0.00ns)   --->   "%specmemcore_ln37 = specmemcore void @_ssdm_op_SpecMemCore, i256 %x_buf, i64 666, i64 31, i64 18446744073709551615" [../gen/upconv_core_top_ucb0.cpp:37]   --->   Operation 73 'specmemcore' 'specmemcore_ln37' <Predicate = true> <Delay = 0.00>
+ST_13 : Operation 74 [1/2] (0.00ns)   --->   "%call_ln302 = call void @UpConv_Fused_Row<8, 16, 16, 960, 480>, i256 %gmem_weight, i64 %W_read, i256 %gmem_param, i64 %B_read, i64 %G_read, i64 %BE_read, i256 %gmem_out, i64 %Y_read, i16 %epsilon_read, i5 0, i16 %void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_9, i16 %void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_8, i16 %void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_7, i16 %void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_6, i16 %void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_5, i16 %void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_4, i16 %void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_3, i16 %void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_2, i16 %void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_1, i16 %void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u, i16 %p_ZZ16UpConv_Fused_RowILi8ELi16ELi16ELi960ELi480EEvP7ap_uintILi256EEPKS1_S4_S4_S4_5, i16 %p_ZZ16UpConv_Fused_RowILi8ELi16ELi16ELi960ELi480EEvP7ap_uintILi256EEPKS1_S4_S4_S4_4, i16 %p_ZZ16UpConv_Fused_RowILi8ELi16ELi16ELi960ELi480EEvP7ap_uintILi256EEPKS1_S4_S4_S4_3, i16 %p_ZZ16UpConv_Fused_RowILi8ELi16ELi16ELi960ELi480EEvP7ap_uintILi256EEPKS1_S4_S4_S4_2, i16 %p_ZZ16UpConv_Fused_RowILi8ELi16ELi16ELi960ELi480EEvP7ap_uintILi256EEPKS1_S4_S4_S4_1, i16 %p_ZZ16UpConv_Fused_RowILi8ELi16ELi16ELi960ELi480EEvP7ap_uintILi256EEPKS1_S4_S4_S4, i256 %x_buf, i32 %mean_buf, i16 %inv_buf" [../gen/Hls_Layers_UpConv.tpp:302->../gen/upconv_core_top_ucb0.cpp:40]   --->   Operation 74 'call' 'call_ln302' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Generic Core
+ST_13 : Operation 75 [1/1] (0.00ns)   --->   "%br_ln305 = br void %for.body17.i" [../gen/Hls_Layers_UpConv.tpp:305->../gen/upconv_core_top_ucb0.cpp:40]   --->   Operation 75 'br' 'br_ln305' <Predicate = true> <Delay = 0.00>
 
-State 14 <SV = 13> <Delay = 1.22>
-ST_14 : Operation 77 [1/1] (0.00ns)   --->   "%hi_1 = load i5 %hi" [../gen/Hls_Layers_UpConv.tpp:402->../gen/upconv_core_top_ucb0.cpp:40]   --->   Operation 77 'load' 'hi_1' <Predicate = true> <Delay = 0.00>
-ST_14 : Operation 78 [1/1] (0.00ns)   --->   "%indvar_load = load i4 %indvar" [../gen/Hls_Layers_UpConv.tpp:394->../gen/upconv_core_top_ucb0.cpp:40]   --->   Operation 78 'load' 'indvar_load' <Predicate = true> <Delay = 0.00>
-ST_14 : Operation 79 [1/1] (0.78ns)   --->   "%icmp_ln394 = icmp_eq  i5 %hi_1, i5 16" [../gen/Hls_Layers_UpConv.tpp:394->../gen/upconv_core_top_ucb0.cpp:40]   --->   Operation 79 'icmp' 'icmp_ln394' <Predicate = true> <Delay = 0.78> <CoreInst = "Cmp">   --->   Core 9 'Cmp' <Latency = 0> <II = 1> <Delay = 0.78> <FuncUnit> <Opcode : 'seteq' 'setne' 'setle' 'setge' 'setlt' 'setgt'> <InPorts = 2> <OutPorts = 1>
-ST_14 : Operation 80 [1/1] (0.79ns)   --->   "%add_ln394_2 = add i4 %indvar_load, i4 1" [../gen/Hls_Layers_UpConv.tpp:394->../gen/upconv_core_top_ucb0.cpp:40]   --->   Operation 80 'add' 'add_ln394_2' <Predicate = true> <Delay = 0.79> <CoreInst = "Adder">   --->   Core 1 'Adder' <Latency = 0> <II = 1> <Delay = 0.79> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
-ST_14 : Operation 81 [1/1] (0.00ns)   --->   "%br_ln394 = br i1 %icmp_ln394, void %for.body17.i.split, void %_Z16UpConv_Fused_TopILi8ELi16ELi16ELi960ELi480EEvP7ap_uintILi256EEPKS1_S4_S4_S4_S4_S2_Dh.exit" [../gen/Hls_Layers_UpConv.tpp:394->../gen/upconv_core_top_ucb0.cpp:40]   --->   Operation 81 'br' 'br_ln394' <Predicate = true> <Delay = 0.00>
-ST_14 : Operation 82 [1/1] (0.00ns)   --->   "%p_shl = bitconcatenate i14 @_ssdm_op_BitConcatenate.i14.i4.i10, i4 %indvar_load, i10 0" [../gen/Hls_Layers_UpConv.tpp:395->../gen/upconv_core_top_ucb0.cpp:40]   --->   Operation 82 'bitconcatenate' 'p_shl' <Predicate = (!icmp_ln394)> <Delay = 0.00>
-ST_14 : Operation 83 [1/1] (0.00ns)   --->   "%tmp = bitconcatenate i10 @_ssdm_op_BitConcatenate.i10.i4.i6, i4 %indvar_load, i6 0" [../gen/Hls_Layers_UpConv.tpp:395->../gen/upconv_core_top_ucb0.cpp:40]   --->   Operation 83 'bitconcatenate' 'tmp' <Predicate = (!icmp_ln394)> <Delay = 0.00>
-ST_14 : Operation 84 [1/1] (0.00ns)   --->   "%zext_ln395 = zext i10 %tmp" [../gen/Hls_Layers_UpConv.tpp:395->../gen/upconv_core_top_ucb0.cpp:40]   --->   Operation 84 'zext' 'zext_ln395' <Predicate = (!icmp_ln394)> <Delay = 0.00>
-ST_14 : Operation 85 [1/1] (0.83ns)   --->   "%sub_ln395 = sub i14 %p_shl, i14 %zext_ln395" [../gen/Hls_Layers_UpConv.tpp:395->../gen/upconv_core_top_ucb0.cpp:40]   --->   Operation 85 'sub' 'sub_ln395' <Predicate = (!icmp_ln394)> <Delay = 0.83> <CoreInst = "Adder">   --->   Core 1 'Adder' <Latency = 0> <II = 1> <Delay = 0.83> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
-ST_14 : Operation 86 [1/1] (0.00ns)   --->   "%empty_46 = shl i5 %hi_1, i5 4" [../gen/Hls_Layers_UpConv.tpp:402->../gen/upconv_core_top_ucb0.cpp:40]   --->   Operation 86 'shl' 'empty_46' <Predicate = (!icmp_ln394)> <Delay = 0.00>
-ST_14 : Operation 87 [2/2] (0.00ns)   --->   "%call_ln402 = call void @upconv_core_top_ucb0_Pipeline_LOAD_ROW_VITIS_LOOP_397_2, i256 %gmem_in, i5 %empty_46, i14 %sub_ln395, i59 %trunc_ln1, i256 %x_buf" [../gen/Hls_Layers_UpConv.tpp:402->../gen/upconv_core_top_ucb0.cpp:40]   --->   Operation 87 'call' 'call_ln402' <Predicate = (!icmp_ln394)> <Delay = 0.00> <CoreType = "Generic">   --->   Generic Core
-ST_14 : Operation 88 [1/1] (0.78ns)   --->   "%add_ln394_1 = add i5 %hi_1, i5 1" [../gen/Hls_Layers_UpConv.tpp:394->../gen/upconv_core_top_ucb0.cpp:40]   --->   Operation 88 'add' 'add_ln394_1' <Predicate = (!icmp_ln394)> <Delay = 0.78> <CoreInst = "Adder">   --->   Core 1 'Adder' <Latency = 0> <II = 1> <Delay = 0.78> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
-ST_14 : Operation 89 [1/1] (0.42ns)   --->   "%store_ln394 = store i4 %add_ln394_2, i4 %indvar" [../gen/Hls_Layers_UpConv.tpp:394->../gen/upconv_core_top_ucb0.cpp:40]   --->   Operation 89 'store' 'store_ln394' <Predicate = (!icmp_ln394)> <Delay = 0.42>
-ST_14 : Operation 90 [1/1] (0.42ns)   --->   "%store_ln394 = store i5 %add_ln394_1, i5 %hi" [../gen/Hls_Layers_UpConv.tpp:394->../gen/upconv_core_top_ucb0.cpp:40]   --->   Operation 90 'store' 'store_ln394' <Predicate = (!icmp_ln394)> <Delay = 0.42>
+State 14 <SV = 13> <Delay = 2.31>
+ST_14 : Operation 76 [1/1] (0.00ns)   --->   "%hi_1 = load i5 %hi" [../gen/Hls_Layers_UpConv.tpp:313->../gen/upconv_core_top_ucb0.cpp:40]   --->   Operation 76 'load' 'hi_1' <Predicate = true> <Delay = 0.00>
+ST_14 : Operation 77 [1/1] (0.00ns)   --->   "%indvar_load = load i4 %indvar" [../gen/Hls_Layers_UpConv.tpp:305->../gen/upconv_core_top_ucb0.cpp:40]   --->   Operation 77 'load' 'indvar_load' <Predicate = true> <Delay = 0.00>
+ST_14 : Operation 78 [1/1] (0.78ns)   --->   "%icmp_ln305 = icmp_eq  i5 %hi_1, i5 16" [../gen/Hls_Layers_UpConv.tpp:305->../gen/upconv_core_top_ucb0.cpp:40]   --->   Operation 78 'icmp' 'icmp_ln305' <Predicate = true> <Delay = 0.78> <CoreInst = "Cmp">   --->   Core 9 'Cmp' <Latency = 0> <II = 1> <Delay = 0.78> <FuncUnit> <Opcode : 'seteq' 'setne' 'setle' 'setge' 'setlt' 'setgt'> <InPorts = 2> <OutPorts = 1>
+ST_14 : Operation 79 [1/1] (0.79ns)   --->   "%add_ln305_2 = add i4 %indvar_load, i4 1" [../gen/Hls_Layers_UpConv.tpp:305->../gen/upconv_core_top_ucb0.cpp:40]   --->   Operation 79 'add' 'add_ln305_2' <Predicate = true> <Delay = 0.79> <CoreInst = "Adder">   --->   Core 1 'Adder' <Latency = 0> <II = 1> <Delay = 0.79> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_14 : Operation 80 [1/1] (0.00ns)   --->   "%br_ln305 = br i1 %icmp_ln305, void %for.body17.i.split, void %_Z16UpConv_Fused_TopILi8ELi16ELi16ELi960ELi480EEvP7ap_uintILi256EEPKS1_S4_S4_S4_S4_S2_Dh.exit" [../gen/Hls_Layers_UpConv.tpp:305->../gen/upconv_core_top_ucb0.cpp:40]   --->   Operation 80 'br' 'br_ln305' <Predicate = true> <Delay = 0.00>
+ST_14 : Operation 81 [1/1] (0.00ns)   --->   "%p_shl = bitconcatenate i14 @_ssdm_op_BitConcatenate.i14.i4.i10, i4 %indvar_load, i10 0" [../gen/Hls_Layers_UpConv.tpp:306->../gen/upconv_core_top_ucb0.cpp:40]   --->   Operation 81 'bitconcatenate' 'p_shl' <Predicate = (!icmp_ln305)> <Delay = 0.00>
+ST_14 : Operation 82 [1/1] (0.00ns)   --->   "%tmp = bitconcatenate i10 @_ssdm_op_BitConcatenate.i10.i4.i6, i4 %indvar_load, i6 0" [../gen/Hls_Layers_UpConv.tpp:306->../gen/upconv_core_top_ucb0.cpp:40]   --->   Operation 82 'bitconcatenate' 'tmp' <Predicate = (!icmp_ln305)> <Delay = 0.00>
+ST_14 : Operation 83 [1/1] (0.00ns)   --->   "%zext_ln306 = zext i10 %tmp" [../gen/Hls_Layers_UpConv.tpp:306->../gen/upconv_core_top_ucb0.cpp:40]   --->   Operation 83 'zext' 'zext_ln306' <Predicate = (!icmp_ln305)> <Delay = 0.00>
+ST_14 : Operation 84 [1/1] (0.83ns)   --->   "%sub_ln306 = sub i14 %p_shl, i14 %zext_ln306" [../gen/Hls_Layers_UpConv.tpp:306->../gen/upconv_core_top_ucb0.cpp:40]   --->   Operation 84 'sub' 'sub_ln306' <Predicate = (!icmp_ln305)> <Delay = 0.83> <CoreInst = "Adder">   --->   Core 1 'Adder' <Latency = 0> <II = 1> <Delay = 0.83> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_14 : Operation 85 [1/1] (0.00ns)   --->   "%empty_174 = shl i5 %hi_1, i5 4" [../gen/Hls_Layers_UpConv.tpp:313->../gen/upconv_core_top_ucb0.cpp:40]   --->   Operation 85 'shl' 'empty_174' <Predicate = (!icmp_ln305)> <Delay = 0.00>
+ST_14 : Operation 86 [2/2] (0.00ns)   --->   "%call_ln313 = call void @upconv_core_top_ucb0_Pipeline_LOAD_ROW_VITIS_LOOP_308_2, i256 %gmem_in, i5 %empty_174, i59 %trunc_ln1, i14 %sub_ln306, i256 %x_buf" [../gen/Hls_Layers_UpConv.tpp:313->../gen/upconv_core_top_ucb0.cpp:40]   --->   Operation 86 'call' 'call_ln313' <Predicate = (!icmp_ln305)> <Delay = 0.00> <CoreType = "Generic">   --->   Generic Core
+ST_14 : Operation 87 [1/1] (0.78ns)   --->   "%add_ln305_1 = add i5 %hi_1, i5 1" [../gen/Hls_Layers_UpConv.tpp:305->../gen/upconv_core_top_ucb0.cpp:40]   --->   Operation 87 'add' 'add_ln305_1' <Predicate = (!icmp_ln305)> <Delay = 0.78> <CoreInst = "Adder">   --->   Core 1 'Adder' <Latency = 0> <II = 1> <Delay = 0.78> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_14 : Operation 88 [1/1] (0.42ns)   --->   "%store_ln305 = store i4 %add_ln305_2, i4 %indvar" [../gen/Hls_Layers_UpConv.tpp:305->../gen/upconv_core_top_ucb0.cpp:40]   --->   Operation 88 'store' 'store_ln305' <Predicate = (!icmp_ln305)> <Delay = 0.42>
+ST_14 : Operation 89 [1/1] (0.42ns)   --->   "%store_ln305 = store i5 %add_ln305_1, i5 %hi" [../gen/Hls_Layers_UpConv.tpp:305->../gen/upconv_core_top_ucb0.cpp:40]   --->   Operation 89 'store' 'store_ln305' <Predicate = (!icmp_ln305)> <Delay = 0.42>
+ST_14 : Operation 90 [2/2] (1.53ns)   --->   "%call_ln318 = call void @UpConv_Fused_Row<8, 16, 16, 960, 480>, i256 %gmem_weight, i64 %W_read, i256 %gmem_param, i64 %B_read, i64 %G_read, i64 %BE_read, i256 %gmem_out, i64 %Y_read, i16 %epsilon_read, i5 31, i16 %void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_9, i16 %void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_8, i16 %void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_7, i16 %void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_6, i16 %void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_5, i16 %void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_4, i16 %void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_3, i16 %void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_2, i16 %void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_1, i16 %void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u, i16 %p_ZZ16UpConv_Fused_RowILi8ELi16ELi16ELi960ELi480EEvP7ap_uintILi256EEPKS1_S4_S4_S4_5, i16 %p_ZZ16UpConv_Fused_RowILi8ELi16ELi16ELi960ELi480EEvP7ap_uintILi256EEPKS1_S4_S4_S4_4, i16 %p_ZZ16UpConv_Fused_RowILi8ELi16ELi16ELi960ELi480EEvP7ap_uintILi256EEPKS1_S4_S4_S4_3, i16 %p_ZZ16UpConv_Fused_RowILi8ELi16ELi16ELi960ELi480EEvP7ap_uintILi256EEPKS1_S4_S4_S4_2, i16 %p_ZZ16UpConv_Fused_RowILi8ELi16ELi16ELi960ELi480EEvP7ap_uintILi256EEPKS1_S4_S4_S4_1, i16 %p_ZZ16UpConv_Fused_RowILi8ELi16ELi16ELi960ELi480EEvP7ap_uintILi256EEPKS1_S4_S4_S4, i256 %x_buf, i32 %mean_buf, i16 %inv_buf" [../gen/Hls_Layers_UpConv.tpp:318->../gen/upconv_core_top_ucb0.cpp:40]   --->   Operation 90 'call' 'call_ln318' <Predicate = (icmp_ln305)> <Delay = 1.53> <CoreType = "Generic">   --->   Generic Core
 
-State 15 <SV = 14> <Delay = 0.78>
-ST_15 : Operation 91 [1/2] (0.00ns)   --->   "%call_ln402 = call void @upconv_core_top_ucb0_Pipeline_LOAD_ROW_VITIS_LOOP_397_2, i256 %gmem_in, i5 %empty_46, i14 %sub_ln395, i59 %trunc_ln1, i256 %x_buf" [../gen/Hls_Layers_UpConv.tpp:402->../gen/upconv_core_top_ucb0.cpp:40]   --->   Operation 91 'call' 'call_ln402' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Generic Core
-ST_15 : Operation 92 [1/1] (0.00ns)   --->   "%shl_ln402 = shl i5 %hi_1, i5 1" [../gen/Hls_Layers_UpConv.tpp:402->../gen/upconv_core_top_ucb0.cpp:40]   --->   Operation 92 'shl' 'shl_ln402' <Predicate = true> <Delay = 0.00>
-ST_15 : Operation 93 [1/1] (0.78ns)   --->   "%add_ln402 = add i5 %shl_ln402, i5 31" [../gen/Hls_Layers_UpConv.tpp:402->../gen/upconv_core_top_ucb0.cpp:40]   --->   Operation 93 'add' 'add_ln402' <Predicate = true> <Delay = 0.78> <CoreInst = "Adder">   --->   Core 1 'Adder' <Latency = 0> <II = 1> <Delay = 0.78> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+State 15 <SV = 14> <Delay = 0.00>
+ST_15 : Operation 91 [1/2] (0.00ns)   --->   "%call_ln313 = call void @upconv_core_top_ucb0_Pipeline_LOAD_ROW_VITIS_LOOP_308_2, i256 %gmem_in, i5 %empty_174, i59 %trunc_ln1, i14 %sub_ln306, i256 %x_buf" [../gen/Hls_Layers_UpConv.tpp:313->../gen/upconv_core_top_ucb0.cpp:40]   --->   Operation 91 'call' 'call_ln313' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Generic Core
 
-State 16 <SV = 15> <Delay = 2.43>
-ST_16 : Operation 94 [2/2] (2.43ns)   --->   "%call_ln402 = call void @UpConv_Fused_Row<8, 16, 16, 960, 480>, i256 %gmem_weight, i64 %W_read, i256 %gmem_param, i64 %B_read, i64 %G_read, i64 %BE_read, i256 %gmem_out, i64 %Y_read, i16 %epsilon_read, i5 %add_ln402, i16 %void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_9, i16 %void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_8, i16 %void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_7, i16 %void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_6, i16 %void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_5, i16 %void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_4, i16 %void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_3, i16 %void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_2, i16 %void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_1, i16 %void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u, i16 %p_ZZ16UpConv_Fused_RowILi8ELi16ELi16ELi960ELi480EEvP7ap_uintILi256EEPKS1_S4_S4_S4_5, i16 %p_ZZ16UpConv_Fused_RowILi8ELi16ELi16ELi960ELi480EEvP7ap_uintILi256EEPKS1_S4_S4_S4_4, i16 %p_ZZ16UpConv_Fused_RowILi8ELi16ELi16ELi960ELi480EEvP7ap_uintILi256EEPKS1_S4_S4_S4_3, i16 %p_ZZ16UpConv_Fused_RowILi8ELi16ELi16ELi960ELi480EEvP7ap_uintILi256EEPKS1_S4_S4_S4_2, i16 %p_ZZ16UpConv_Fused_RowILi8ELi16ELi16ELi960ELi480EEvP7ap_uintILi256EEPKS1_S4_S4_S4_1, i16 %p_ZZ16UpConv_Fused_RowILi8ELi16ELi16ELi960ELi480EEvP7ap_uintILi256EEPKS1_S4_S4_S4, i256 %x_buf, i32 %mean_buf, i16 %inv_buf" [../gen/Hls_Layers_UpConv.tpp:402->../gen/upconv_core_top_ucb0.cpp:40]   --->   Operation 94 'call' 'call_ln402' <Predicate = true> <Delay = 2.43> <CoreType = "Generic">   --->   Generic Core
+State 16 <SV = 15> <Delay = 2.31>
+ST_16 : Operation 92 [1/1] (0.00ns)   --->   "%shl_ln313 = shl i5 %hi_1, i5 1" [../gen/Hls_Layers_UpConv.tpp:313->../gen/upconv_core_top_ucb0.cpp:40]   --->   Operation 92 'shl' 'shl_ln313' <Predicate = true> <Delay = 0.00>
+ST_16 : Operation 93 [1/1] (0.78ns)   --->   "%add_ln313 = add i5 %shl_ln313, i5 31" [../gen/Hls_Layers_UpConv.tpp:313->../gen/upconv_core_top_ucb0.cpp:40]   --->   Operation 93 'add' 'add_ln313' <Predicate = true> <Delay = 0.78> <CoreInst = "Adder">   --->   Core 1 'Adder' <Latency = 0> <II = 1> <Delay = 0.78> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_16 : Operation 94 [2/2] (1.53ns)   --->   "%call_ln313 = call void @UpConv_Fused_Row<8, 16, 16, 960, 480>, i256 %gmem_weight, i64 %W_read, i256 %gmem_param, i64 %B_read, i64 %G_read, i64 %BE_read, i256 %gmem_out, i64 %Y_read, i16 %epsilon_read, i5 %add_ln313, i16 %void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_9, i16 %void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_8, i16 %void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_7, i16 %void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_6, i16 %void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_5, i16 %void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_4, i16 %void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_3, i16 %void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_2, i16 %void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_1, i16 %void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u, i16 %p_ZZ16UpConv_Fused_RowILi8ELi16ELi16ELi960ELi480EEvP7ap_uintILi256EEPKS1_S4_S4_S4_5, i16 %p_ZZ16UpConv_Fused_RowILi8ELi16ELi16ELi960ELi480EEvP7ap_uintILi256EEPKS1_S4_S4_S4_4, i16 %p_ZZ16UpConv_Fused_RowILi8ELi16ELi16ELi960ELi480EEvP7ap_uintILi256EEPKS1_S4_S4_S4_3, i16 %p_ZZ16UpConv_Fused_RowILi8ELi16ELi16ELi960ELi480EEvP7ap_uintILi256EEPKS1_S4_S4_S4_2, i16 %p_ZZ16UpConv_Fused_RowILi8ELi16ELi16ELi960ELi480EEvP7ap_uintILi256EEPKS1_S4_S4_S4_1, i16 %p_ZZ16UpConv_Fused_RowILi8ELi16ELi16ELi960ELi480EEvP7ap_uintILi256EEPKS1_S4_S4_S4, i256 %x_buf, i32 %mean_buf, i16 %inv_buf" [../gen/Hls_Layers_UpConv.tpp:313->../gen/upconv_core_top_ucb0.cpp:40]   --->   Operation 94 'call' 'call_ln313' <Predicate = true> <Delay = 1.53> <CoreType = "Generic">   --->   Generic Core
 
 State 17 <SV = 16> <Delay = 0.00>
-ST_17 : Operation 95 [1/2] (0.00ns)   --->   "%call_ln402 = call void @UpConv_Fused_Row<8, 16, 16, 960, 480>, i256 %gmem_weight, i64 %W_read, i256 %gmem_param, i64 %B_read, i64 %G_read, i64 %BE_read, i256 %gmem_out, i64 %Y_read, i16 %epsilon_read, i5 %add_ln402, i16 %void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_9, i16 %void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_8, i16 %void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_7, i16 %void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_6, i16 %void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_5, i16 %void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_4, i16 %void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_3, i16 %void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_2, i16 %void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_1, i16 %void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u, i16 %p_ZZ16UpConv_Fused_RowILi8ELi16ELi16ELi960ELi480EEvP7ap_uintILi256EEPKS1_S4_S4_S4_5, i16 %p_ZZ16UpConv_Fused_RowILi8ELi16ELi16ELi960ELi480EEvP7ap_uintILi256EEPKS1_S4_S4_S4_4, i16 %p_ZZ16UpConv_Fused_RowILi8ELi16ELi16ELi960ELi480EEvP7ap_uintILi256EEPKS1_S4_S4_S4_3, i16 %p_ZZ16UpConv_Fused_RowILi8ELi16ELi16ELi960ELi480EEvP7ap_uintILi256EEPKS1_S4_S4_S4_2, i16 %p_ZZ16UpConv_Fused_RowILi8ELi16ELi16ELi960ELi480EEvP7ap_uintILi256EEPKS1_S4_S4_S4_1, i16 %p_ZZ16UpConv_Fused_RowILi8ELi16ELi16ELi960ELi480EEvP7ap_uintILi256EEPKS1_S4_S4_S4, i256 %x_buf, i32 %mean_buf, i16 %inv_buf" [../gen/Hls_Layers_UpConv.tpp:402->../gen/upconv_core_top_ucb0.cpp:40]   --->   Operation 95 'call' 'call_ln402' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Generic Core
+ST_17 : Operation 95 [1/2] (0.00ns)   --->   "%call_ln313 = call void @UpConv_Fused_Row<8, 16, 16, 960, 480>, i256 %gmem_weight, i64 %W_read, i256 %gmem_param, i64 %B_read, i64 %G_read, i64 %BE_read, i256 %gmem_out, i64 %Y_read, i16 %epsilon_read, i5 %add_ln313, i16 %void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_9, i16 %void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_8, i16 %void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_7, i16 %void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_6, i16 %void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_5, i16 %void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_4, i16 %void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_3, i16 %void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_2, i16 %void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_1, i16 %void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u, i16 %p_ZZ16UpConv_Fused_RowILi8ELi16ELi16ELi960ELi480EEvP7ap_uintILi256EEPKS1_S4_S4_S4_5, i16 %p_ZZ16UpConv_Fused_RowILi8ELi16ELi16ELi960ELi480EEvP7ap_uintILi256EEPKS1_S4_S4_S4_4, i16 %p_ZZ16UpConv_Fused_RowILi8ELi16ELi16ELi960ELi480EEvP7ap_uintILi256EEPKS1_S4_S4_S4_3, i16 %p_ZZ16UpConv_Fused_RowILi8ELi16ELi16ELi960ELi480EEvP7ap_uintILi256EEPKS1_S4_S4_S4_2, i16 %p_ZZ16UpConv_Fused_RowILi8ELi16ELi16ELi960ELi480EEvP7ap_uintILi256EEPKS1_S4_S4_S4_1, i16 %p_ZZ16UpConv_Fused_RowILi8ELi16ELi16ELi960ELi480EEvP7ap_uintILi256EEPKS1_S4_S4_S4, i256 %x_buf, i32 %mean_buf, i16 %inv_buf" [../gen/Hls_Layers_UpConv.tpp:313->../gen/upconv_core_top_ucb0.cpp:40]   --->   Operation 95 'call' 'call_ln313' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Generic Core
 
-State 18 <SV = 17> <Delay = 2.43>
-ST_18 : Operation 96 [2/2] (2.43ns)   --->   "%call_ln403 = call void @UpConv_Fused_Row<8, 16, 16, 960, 480>, i256 %gmem_weight, i64 %W_read, i256 %gmem_param, i64 %B_read, i64 %G_read, i64 %BE_read, i256 %gmem_out, i64 %Y_read, i16 %epsilon_read, i5 %shl_ln402, i16 %void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_9, i16 %void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_8, i16 %void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_7, i16 %void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_6, i16 %void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_5, i16 %void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_4, i16 %void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_3, i16 %void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_2, i16 %void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_1, i16 %void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u, i16 %p_ZZ16UpConv_Fused_RowILi8ELi16ELi16ELi960ELi480EEvP7ap_uintILi256EEPKS1_S4_S4_S4_5, i16 %p_ZZ16UpConv_Fused_RowILi8ELi16ELi16ELi960ELi480EEvP7ap_uintILi256EEPKS1_S4_S4_S4_4, i16 %p_ZZ16UpConv_Fused_RowILi8ELi16ELi16ELi960ELi480EEvP7ap_uintILi256EEPKS1_S4_S4_S4_3, i16 %p_ZZ16UpConv_Fused_RowILi8ELi16ELi16ELi960ELi480EEvP7ap_uintILi256EEPKS1_S4_S4_S4_2, i16 %p_ZZ16UpConv_Fused_RowILi8ELi16ELi16ELi960ELi480EEvP7ap_uintILi256EEPKS1_S4_S4_S4_1, i16 %p_ZZ16UpConv_Fused_RowILi8ELi16ELi16ELi960ELi480EEvP7ap_uintILi256EEPKS1_S4_S4_S4, i256 %x_buf, i32 %mean_buf, i16 %inv_buf" [../gen/Hls_Layers_UpConv.tpp:403->../gen/upconv_core_top_ucb0.cpp:40]   --->   Operation 96 'call' 'call_ln403' <Predicate = true> <Delay = 2.43> <CoreType = "Generic">   --->   Generic Core
+State 18 <SV = 17> <Delay = 1.53>
+ST_18 : Operation 96 [2/2] (1.53ns)   --->   "%call_ln314 = call void @UpConv_Fused_Row<8, 16, 16, 960, 480>, i256 %gmem_weight, i64 %W_read, i256 %gmem_param, i64 %B_read, i64 %G_read, i64 %BE_read, i256 %gmem_out, i64 %Y_read, i16 %epsilon_read, i5 %shl_ln313, i16 %void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_9, i16 %void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_8, i16 %void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_7, i16 %void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_6, i16 %void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_5, i16 %void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_4, i16 %void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_3, i16 %void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_2, i16 %void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_1, i16 %void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u, i16 %p_ZZ16UpConv_Fused_RowILi8ELi16ELi16ELi960ELi480EEvP7ap_uintILi256EEPKS1_S4_S4_S4_5, i16 %p_ZZ16UpConv_Fused_RowILi8ELi16ELi16ELi960ELi480EEvP7ap_uintILi256EEPKS1_S4_S4_S4_4, i16 %p_ZZ16UpConv_Fused_RowILi8ELi16ELi16ELi960ELi480EEvP7ap_uintILi256EEPKS1_S4_S4_S4_3, i16 %p_ZZ16UpConv_Fused_RowILi8ELi16ELi16ELi960ELi480EEvP7ap_uintILi256EEPKS1_S4_S4_S4_2, i16 %p_ZZ16UpConv_Fused_RowILi8ELi16ELi16ELi960ELi480EEvP7ap_uintILi256EEPKS1_S4_S4_S4_1, i16 %p_ZZ16UpConv_Fused_RowILi8ELi16ELi16ELi960ELi480EEvP7ap_uintILi256EEPKS1_S4_S4_S4, i256 %x_buf, i32 %mean_buf, i16 %inv_buf" [../gen/Hls_Layers_UpConv.tpp:314->../gen/upconv_core_top_ucb0.cpp:40]   --->   Operation 96 'call' 'call_ln314' <Predicate = true> <Delay = 1.53> <CoreType = "Generic">   --->   Generic Core
 
 State 19 <SV = 18> <Delay = 0.00>
-ST_19 : Operation 97 [1/1] (0.00ns)   --->   "%speclooptripcount_ln394 = speclooptripcount void @_ssdm_op_SpecLoopTripCount, i64 15, i64 15, i64 15" [../gen/Hls_Layers_UpConv.tpp:394->../gen/upconv_core_top_ucb0.cpp:40]   --->   Operation 97 'speclooptripcount' 'speclooptripcount_ln394' <Predicate = true> <Delay = 0.00>
-ST_19 : Operation 98 [1/1] (0.00ns)   --->   "%specloopname_ln394 = specloopname void @_ssdm_op_SpecLoopName, void @empty_5" [../gen/Hls_Layers_UpConv.tpp:394->../gen/upconv_core_top_ucb0.cpp:40]   --->   Operation 98 'specloopname' 'specloopname_ln394' <Predicate = true> <Delay = 0.00>
-ST_19 : Operation 99 [1/2] (0.00ns)   --->   "%call_ln403 = call void @UpConv_Fused_Row<8, 16, 16, 960, 480>, i256 %gmem_weight, i64 %W_read, i256 %gmem_param, i64 %B_read, i64 %G_read, i64 %BE_read, i256 %gmem_out, i64 %Y_read, i16 %epsilon_read, i5 %shl_ln402, i16 %void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_9, i16 %void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_8, i16 %void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_7, i16 %void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_6, i16 %void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_5, i16 %void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_4, i16 %void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_3, i16 %void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_2, i16 %void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_1, i16 %void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u, i16 %p_ZZ16UpConv_Fused_RowILi8ELi16ELi16ELi960ELi480EEvP7ap_uintILi256EEPKS1_S4_S4_S4_5, i16 %p_ZZ16UpConv_Fused_RowILi8ELi16ELi16ELi960ELi480EEvP7ap_uintILi256EEPKS1_S4_S4_S4_4, i16 %p_ZZ16UpConv_Fused_RowILi8ELi16ELi16ELi960ELi480EEvP7ap_uintILi256EEPKS1_S4_S4_S4_3, i16 %p_ZZ16UpConv_Fused_RowILi8ELi16ELi16ELi960ELi480EEvP7ap_uintILi256EEPKS1_S4_S4_S4_2, i16 %p_ZZ16UpConv_Fused_RowILi8ELi16ELi16ELi960ELi480EEvP7ap_uintILi256EEPKS1_S4_S4_S4_1, i16 %p_ZZ16UpConv_Fused_RowILi8ELi16ELi16ELi960ELi480EEvP7ap_uintILi256EEPKS1_S4_S4_S4, i256 %x_buf, i32 %mean_buf, i16 %inv_buf" [../gen/Hls_Layers_UpConv.tpp:403->../gen/upconv_core_top_ucb0.cpp:40]   --->   Operation 99 'call' 'call_ln403' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Generic Core
-ST_19 : Operation 100 [1/1] (0.00ns)   --->   "%br_ln394 = br void %for.body17.i" [../gen/Hls_Layers_UpConv.tpp:394->../gen/upconv_core_top_ucb0.cpp:40]   --->   Operation 100 'br' 'br_ln394' <Predicate = true> <Delay = 0.00>
+ST_19 : Operation 97 [1/1] (0.00ns)   --->   "%speclooptripcount_ln305 = speclooptripcount void @_ssdm_op_SpecLoopTripCount, i64 15, i64 15, i64 15" [../gen/Hls_Layers_UpConv.tpp:305->../gen/upconv_core_top_ucb0.cpp:40]   --->   Operation 97 'speclooptripcount' 'speclooptripcount_ln305' <Predicate = true> <Delay = 0.00>
+ST_19 : Operation 98 [1/1] (0.00ns)   --->   "%specloopname_ln305 = specloopname void @_ssdm_op_SpecLoopName, void @empty_140" [../gen/Hls_Layers_UpConv.tpp:305->../gen/upconv_core_top_ucb0.cpp:40]   --->   Operation 98 'specloopname' 'specloopname_ln305' <Predicate = true> <Delay = 0.00>
+ST_19 : Operation 99 [1/2] (0.00ns)   --->   "%call_ln314 = call void @UpConv_Fused_Row<8, 16, 16, 960, 480>, i256 %gmem_weight, i64 %W_read, i256 %gmem_param, i64 %B_read, i64 %G_read, i64 %BE_read, i256 %gmem_out, i64 %Y_read, i16 %epsilon_read, i5 %shl_ln313, i16 %void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_9, i16 %void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_8, i16 %void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_7, i16 %void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_6, i16 %void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_5, i16 %void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_4, i16 %void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_3, i16 %void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_2, i16 %void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_1, i16 %void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u, i16 %p_ZZ16UpConv_Fused_RowILi8ELi16ELi16ELi960ELi480EEvP7ap_uintILi256EEPKS1_S4_S4_S4_5, i16 %p_ZZ16UpConv_Fused_RowILi8ELi16ELi16ELi960ELi480EEvP7ap_uintILi256EEPKS1_S4_S4_S4_4, i16 %p_ZZ16UpConv_Fused_RowILi8ELi16ELi16ELi960ELi480EEvP7ap_uintILi256EEPKS1_S4_S4_S4_3, i16 %p_ZZ16UpConv_Fused_RowILi8ELi16ELi16ELi960ELi480EEvP7ap_uintILi256EEPKS1_S4_S4_S4_2, i16 %p_ZZ16UpConv_Fused_RowILi8ELi16ELi16ELi960ELi480EEvP7ap_uintILi256EEPKS1_S4_S4_S4_1, i16 %p_ZZ16UpConv_Fused_RowILi8ELi16ELi16ELi960ELi480EEvP7ap_uintILi256EEPKS1_S4_S4_S4, i256 %x_buf, i32 %mean_buf, i16 %inv_buf" [../gen/Hls_Layers_UpConv.tpp:314->../gen/upconv_core_top_ucb0.cpp:40]   --->   Operation 99 'call' 'call_ln314' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Generic Core
+ST_19 : Operation 100 [1/1] (0.00ns)   --->   "%br_ln305 = br void %for.body17.i" [../gen/Hls_Layers_UpConv.tpp:305->../gen/upconv_core_top_ucb0.cpp:40]   --->   Operation 100 'br' 'br_ln305' <Predicate = true> <Delay = 0.00>
 
-State 20 <SV = 14> <Delay = 2.43>
-ST_20 : Operation 101 [2/2] (2.43ns)   --->   "%call_ln407 = call void @UpConv_Fused_Row<8, 16, 16, 960, 480>, i256 %gmem_weight, i64 %W_read, i256 %gmem_param, i64 %B_read, i64 %G_read, i64 %BE_read, i256 %gmem_out, i64 %Y_read, i16 %epsilon_read, i5 31, i16 %void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_9, i16 %void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_8, i16 %void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_7, i16 %void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_6, i16 %void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_5, i16 %void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_4, i16 %void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_3, i16 %void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_2, i16 %void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_1, i16 %void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u, i16 %p_ZZ16UpConv_Fused_RowILi8ELi16ELi16ELi960ELi480EEvP7ap_uintILi256EEPKS1_S4_S4_S4_5, i16 %p_ZZ16UpConv_Fused_RowILi8ELi16ELi16ELi960ELi480EEvP7ap_uintILi256EEPKS1_S4_S4_S4_4, i16 %p_ZZ16UpConv_Fused_RowILi8ELi16ELi16ELi960ELi480EEvP7ap_uintILi256EEPKS1_S4_S4_S4_3, i16 %p_ZZ16UpConv_Fused_RowILi8ELi16ELi16ELi960ELi480EEvP7ap_uintILi256EEPKS1_S4_S4_S4_2, i16 %p_ZZ16UpConv_Fused_RowILi8ELi16ELi16ELi960ELi480EEvP7ap_uintILi256EEPKS1_S4_S4_S4_1, i16 %p_ZZ16UpConv_Fused_RowILi8ELi16ELi16ELi960ELi480EEvP7ap_uintILi256EEPKS1_S4_S4_S4, i256 %x_buf, i32 %mean_buf, i16 %inv_buf" [../gen/Hls_Layers_UpConv.tpp:407->../gen/upconv_core_top_ucb0.cpp:40]   --->   Operation 101 'call' 'call_ln407' <Predicate = true> <Delay = 2.43> <CoreType = "Generic">   --->   Generic Core
-
-State 21 <SV = 15> <Delay = 0.00>
-ST_21 : Operation 102 [1/2] (0.00ns)   --->   "%call_ln407 = call void @UpConv_Fused_Row<8, 16, 16, 960, 480>, i256 %gmem_weight, i64 %W_read, i256 %gmem_param, i64 %B_read, i64 %G_read, i64 %BE_read, i256 %gmem_out, i64 %Y_read, i16 %epsilon_read, i5 31, i16 %void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_9, i16 %void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_8, i16 %void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_7, i16 %void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_6, i16 %void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_5, i16 %void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_4, i16 %void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_3, i16 %void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_2, i16 %void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_1, i16 %void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u, i16 %p_ZZ16UpConv_Fused_RowILi8ELi16ELi16ELi960ELi480EEvP7ap_uintILi256EEPKS1_S4_S4_S4_5, i16 %p_ZZ16UpConv_Fused_RowILi8ELi16ELi16ELi960ELi480EEvP7ap_uintILi256EEPKS1_S4_S4_S4_4, i16 %p_ZZ16UpConv_Fused_RowILi8ELi16ELi16ELi960ELi480EEvP7ap_uintILi256EEPKS1_S4_S4_S4_3, i16 %p_ZZ16UpConv_Fused_RowILi8ELi16ELi16ELi960ELi480EEvP7ap_uintILi256EEPKS1_S4_S4_S4_2, i16 %p_ZZ16UpConv_Fused_RowILi8ELi16ELi16ELi960ELi480EEvP7ap_uintILi256EEPKS1_S4_S4_S4_1, i16 %p_ZZ16UpConv_Fused_RowILi8ELi16ELi16ELi960ELi480EEvP7ap_uintILi256EEPKS1_S4_S4_S4, i256 %x_buf, i32 %mean_buf, i16 %inv_buf" [../gen/Hls_Layers_UpConv.tpp:407->../gen/upconv_core_top_ucb0.cpp:40]   --->   Operation 102 'call' 'call_ln407' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Generic Core
-ST_21 : Operation 103 [1/1] (0.00ns)   --->   "%ret_ln42 = ret" [../gen/upconv_core_top_ucb0.cpp:42]   --->   Operation 103 'ret' 'ret_ln42' <Predicate = true> <Delay = 0.00>
+State 20 <SV = 14> <Delay = 0.00>
+ST_20 : Operation 101 [1/2] (0.00ns)   --->   "%call_ln318 = call void @UpConv_Fused_Row<8, 16, 16, 960, 480>, i256 %gmem_weight, i64 %W_read, i256 %gmem_param, i64 %B_read, i64 %G_read, i64 %BE_read, i256 %gmem_out, i64 %Y_read, i16 %epsilon_read, i5 31, i16 %void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_9, i16 %void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_8, i16 %void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_7, i16 %void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_6, i16 %void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_5, i16 %void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_4, i16 %void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_3, i16 %void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_2, i16 %void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_1, i16 %void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u, i16 %p_ZZ16UpConv_Fused_RowILi8ELi16ELi16ELi960ELi480EEvP7ap_uintILi256EEPKS1_S4_S4_S4_5, i16 %p_ZZ16UpConv_Fused_RowILi8ELi16ELi16ELi960ELi480EEvP7ap_uintILi256EEPKS1_S4_S4_S4_4, i16 %p_ZZ16UpConv_Fused_RowILi8ELi16ELi16ELi960ELi480EEvP7ap_uintILi256EEPKS1_S4_S4_S4_3, i16 %p_ZZ16UpConv_Fused_RowILi8ELi16ELi16ELi960ELi480EEvP7ap_uintILi256EEPKS1_S4_S4_S4_2, i16 %p_ZZ16UpConv_Fused_RowILi8ELi16ELi16ELi960ELi480EEvP7ap_uintILi256EEPKS1_S4_S4_S4_1, i16 %p_ZZ16UpConv_Fused_RowILi8ELi16ELi16ELi960ELi480EEvP7ap_uintILi256EEPKS1_S4_S4_S4, i256 %x_buf, i32 %mean_buf, i16 %inv_buf" [../gen/Hls_Layers_UpConv.tpp:318->../gen/upconv_core_top_ucb0.cpp:40]   --->   Operation 101 'call' 'call_ln318' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Generic Core
+ST_20 : Operation 102 [1/1] (0.00ns)   --->   "%ret_ln42 = ret" [../gen/upconv_core_top_ucb0.cpp:42]   --->   Operation 102 'ret' 'ret_ln42' <Predicate = true> <Delay = 0.00>
 
 
 ============================================================
@@ -278,75 +275,75 @@ Port [ inv_buf]:  wired=0; compound=1; hidden=1; nouse=1; global=1; static=1; ex
 
 <LifeTime>
 <method=bitvector/>
-hi                      (alloca           ) [ 0111111111111111111100]
-indvar                  (alloca           ) [ 0111111111111111111100]
-epsilon_read            (read             ) [ 0011111111111111111111]
-Y_read                  (read             ) [ 0011111111111111111111]
-BE_read                 (read             ) [ 0011111111111111111111]
-G_read                  (read             ) [ 0011111111111111111111]
-B_read                  (read             ) [ 0011111111111111111111]
-W_read                  (read             ) [ 0011111111111111111111]
-X_read                  (read             ) [ 0000000000000000000000]
-trunc_ln                (partselect       ) [ 0011111111110000000000]
-add_ln394               (add              ) [ 0000000000000000000000]
-trunc_ln1               (partselect       ) [ 0011111111111111111100]
-store_ln0               (store            ) [ 0000000000000000000000]
-store_ln394             (store            ) [ 0000000000000000000000]
-sext_ln385              (sext             ) [ 0000000000000000000000]
-gmem_in_addr            (getelementptr    ) [ 0001111111000000000000]
-empty                   (readreq          ) [ 0000000000000000000000]
-call_ln385              (call             ) [ 0000000000000000000000]
-spectopmodule_ln10      (spectopmodule    ) [ 0000000000000000000000]
-specinterface_ln0       (specinterface    ) [ 0000000000000000000000]
-specbitsmap_ln0         (specbitsmap      ) [ 0000000000000000000000]
-specinterface_ln0       (specinterface    ) [ 0000000000000000000000]
-specbitsmap_ln0         (specbitsmap      ) [ 0000000000000000000000]
-specinterface_ln0       (specinterface    ) [ 0000000000000000000000]
-specbitsmap_ln0         (specbitsmap      ) [ 0000000000000000000000]
-specinterface_ln0       (specinterface    ) [ 0000000000000000000000]
-specbitsmap_ln0         (specbitsmap      ) [ 0000000000000000000000]
-specinterface_ln0       (specinterface    ) [ 0000000000000000000000]
-specinterface_ln0       (specinterface    ) [ 0000000000000000000000]
-specinterface_ln0       (specinterface    ) [ 0000000000000000000000]
-specinterface_ln0       (specinterface    ) [ 0000000000000000000000]
-specinterface_ln0       (specinterface    ) [ 0000000000000000000000]
-specinterface_ln0       (specinterface    ) [ 0000000000000000000000]
-specinterface_ln0       (specinterface    ) [ 0000000000000000000000]
-specinterface_ln0       (specinterface    ) [ 0000000000000000000000]
-specinterface_ln0       (specinterface    ) [ 0000000000000000000000]
-specinterface_ln0       (specinterface    ) [ 0000000000000000000000]
-specinterface_ln0       (specinterface    ) [ 0000000000000000000000]
-specinterface_ln0       (specinterface    ) [ 0000000000000000000000]
-specbitsmap_ln0         (specbitsmap      ) [ 0000000000000000000000]
-specinterface_ln0       (specinterface    ) [ 0000000000000000000000]
-specinterface_ln0       (specinterface    ) [ 0000000000000000000000]
-specinterface_ln0       (specinterface    ) [ 0000000000000000000000]
-specmemcore_ln37        (specmemcore      ) [ 0000000000000000000000]
-call_ln391              (call             ) [ 0000000000000000000000]
-br_ln394                (br               ) [ 0000000000000000000000]
-hi_1                    (load             ) [ 0000000000000001000000]
-indvar_load             (load             ) [ 0000000000000000000000]
-icmp_ln394              (icmp             ) [ 0000000000000011111100]
-add_ln394_2             (add              ) [ 0000000000000000000000]
-br_ln394                (br               ) [ 0000000000000000000000]
-p_shl                   (bitconcatenate   ) [ 0000000000000000000000]
-tmp                     (bitconcatenate   ) [ 0000000000000000000000]
-zext_ln395              (zext             ) [ 0000000000000000000000]
-sub_ln395               (sub              ) [ 0000000000000001000000]
-empty_46                (shl              ) [ 0000000000000001000000]
-add_ln394_1             (add              ) [ 0000000000000000000000]
-store_ln394             (store            ) [ 0000000000000000000000]
-store_ln394             (store            ) [ 0000000000000000000000]
-call_ln402              (call             ) [ 0000000000000000000000]
-shl_ln402               (shl              ) [ 0000000000000000111100]
-add_ln402               (add              ) [ 0000000000000000110000]
-call_ln402              (call             ) [ 0000000000000000000000]
-speclooptripcount_ln394 (speclooptripcount) [ 0000000000000000000000]
-specloopname_ln394      (specloopname     ) [ 0000000000000000000000]
-call_ln403              (call             ) [ 0000000000000000000000]
-br_ln394                (br               ) [ 0000000000000000000000]
-call_ln407              (call             ) [ 0000000000000000000000]
-ret_ln42                (ret              ) [ 0000000000000000000000]
+hi                      (alloca           ) [ 011111111111111111110]
+indvar                  (alloca           ) [ 011111111111111111110]
+epsilon_read            (read             ) [ 001111111111111111111]
+Y_read                  (read             ) [ 001111111111111111111]
+BE_read                 (read             ) [ 001111111111111111111]
+G_read                  (read             ) [ 001111111111111111111]
+B_read                  (read             ) [ 001111111111111111111]
+W_read                  (read             ) [ 001111111111111111111]
+X_read                  (read             ) [ 000000000000000000000]
+trunc_ln                (partselect       ) [ 001111111111000000000]
+add_ln305               (add              ) [ 000000000000000000000]
+trunc_ln1               (partselect       ) [ 001111111111111111110]
+store_ln0               (store            ) [ 000000000000000000000]
+store_ln305             (store            ) [ 000000000000000000000]
+sext_ln296              (sext             ) [ 000000000000000000000]
+gmem_in_addr            (getelementptr    ) [ 000111111100000000000]
+empty                   (readreq          ) [ 000000000000000000000]
+call_ln296              (call             ) [ 000000000000000000000]
+spectopmodule_ln10      (spectopmodule    ) [ 000000000000000000000]
+specinterface_ln0       (specinterface    ) [ 000000000000000000000]
+specbitsmap_ln0         (specbitsmap      ) [ 000000000000000000000]
+specinterface_ln0       (specinterface    ) [ 000000000000000000000]
+specbitsmap_ln0         (specbitsmap      ) [ 000000000000000000000]
+specinterface_ln0       (specinterface    ) [ 000000000000000000000]
+specbitsmap_ln0         (specbitsmap      ) [ 000000000000000000000]
+specinterface_ln0       (specinterface    ) [ 000000000000000000000]
+specbitsmap_ln0         (specbitsmap      ) [ 000000000000000000000]
+specinterface_ln0       (specinterface    ) [ 000000000000000000000]
+specinterface_ln0       (specinterface    ) [ 000000000000000000000]
+specinterface_ln0       (specinterface    ) [ 000000000000000000000]
+specinterface_ln0       (specinterface    ) [ 000000000000000000000]
+specinterface_ln0       (specinterface    ) [ 000000000000000000000]
+specinterface_ln0       (specinterface    ) [ 000000000000000000000]
+specinterface_ln0       (specinterface    ) [ 000000000000000000000]
+specinterface_ln0       (specinterface    ) [ 000000000000000000000]
+specinterface_ln0       (specinterface    ) [ 000000000000000000000]
+specinterface_ln0       (specinterface    ) [ 000000000000000000000]
+specinterface_ln0       (specinterface    ) [ 000000000000000000000]
+specinterface_ln0       (specinterface    ) [ 000000000000000000000]
+specbitsmap_ln0         (specbitsmap      ) [ 000000000000000000000]
+specinterface_ln0       (specinterface    ) [ 000000000000000000000]
+specinterface_ln0       (specinterface    ) [ 000000000000000000000]
+specinterface_ln0       (specinterface    ) [ 000000000000000000000]
+specmemcore_ln37        (specmemcore      ) [ 000000000000000000000]
+call_ln302              (call             ) [ 000000000000000000000]
+br_ln305                (br               ) [ 000000000000000000000]
+hi_1                    (load             ) [ 000000000000000110000]
+indvar_load             (load             ) [ 000000000000000000000]
+icmp_ln305              (icmp             ) [ 000000000000001111110]
+add_ln305_2             (add              ) [ 000000000000000000000]
+br_ln305                (br               ) [ 000000000000000000000]
+p_shl                   (bitconcatenate   ) [ 000000000000000000000]
+tmp                     (bitconcatenate   ) [ 000000000000000000000]
+zext_ln306              (zext             ) [ 000000000000000000000]
+sub_ln306               (sub              ) [ 000000000000000100000]
+empty_174               (shl              ) [ 000000000000000100000]
+add_ln305_1             (add              ) [ 000000000000000000000]
+store_ln305             (store            ) [ 000000000000000000000]
+store_ln305             (store            ) [ 000000000000000000000]
+call_ln313              (call             ) [ 000000000000000000000]
+shl_ln313               (shl              ) [ 000000000000000001110]
+add_ln313               (add              ) [ 000000000000000001000]
+call_ln313              (call             ) [ 000000000000000000000]
+speclooptripcount_ln305 (speclooptripcount) [ 000000000000000000000]
+specloopname_ln305      (specloopname     ) [ 000000000000000000000]
+call_ln314              (call             ) [ 000000000000000000000]
+br_ln305                (br               ) [ 000000000000000000000]
+call_ln318              (call             ) [ 000000000000000000000]
+ret_ln42                (ret              ) [ 000000000000000000000]
 </LifeTime>
 
 <model>
@@ -749,7 +746,7 @@ ret_ln42                (ret              ) [ 0000000000000000000000]
 <pin id="83" dir="1" index="0" bw="1" slack="0"/>
 </pin_list>
 <bind>
-<StgValue><ssdm name="upconv_core_top_ucb0_Pipeline_LOAD_ROW0_VITIS_LOOP_386_1"/></StgValue>
+<StgValue><ssdm name="upconv_core_top_ucb0_Pipeline_LOAD_ROW0_VITIS_LOOP_297_1"/></StgValue>
 </bind>
 </comp>
 
@@ -785,7 +782,7 @@ ret_ln42                (ret              ) [ 0000000000000000000000]
 <pin id="91" dir="1" index="0" bw="1" slack="2147483647"/>
 </pin_list>
 <bind>
-<StgValue><ssdm name="empty_10"/></StgValue>
+<StgValue><ssdm name="empty_139"/></StgValue>
 </bind>
 </comp>
 
@@ -803,7 +800,7 @@ ret_ln42                (ret              ) [ 0000000000000000000000]
 <pin id="95" dir="1" index="0" bw="1" slack="2147483647"/>
 </pin_list>
 <bind>
-<StgValue><ssdm name="empty_27"/></StgValue>
+<StgValue><ssdm name="empty_109"/></StgValue>
 </bind>
 </comp>
 
@@ -821,7 +818,7 @@ ret_ln42                (ret              ) [ 0000000000000000000000]
 <pin id="99" dir="1" index="0" bw="1" slack="2147483647"/>
 </pin_list>
 <bind>
-<StgValue><ssdm name="empty_1"/></StgValue>
+<StgValue><ssdm name="empty_65"/></StgValue>
 </bind>
 </comp>
 
@@ -830,7 +827,7 @@ ret_ln42                (ret              ) [ 0000000000000000000000]
 <pin id="101" dir="1" index="0" bw="1" slack="2147483647"/>
 </pin_list>
 <bind>
-<StgValue><ssdm name="empty_6"/></StgValue>
+<StgValue><ssdm name="empty_111"/></StgValue>
 </bind>
 </comp>
 
@@ -839,7 +836,7 @@ ret_ln42                (ret              ) [ 0000000000000000000000]
 <pin id="103" dir="1" index="0" bw="1" slack="2147483647"/>
 </pin_list>
 <bind>
-<StgValue><ssdm name="empty_14"/></StgValue>
+<StgValue><ssdm name="empty_67"/></StgValue>
 </bind>
 </comp>
 
@@ -884,7 +881,7 @@ ret_ln42                (ret              ) [ 0000000000000000000000]
 <pin id="113" dir="1" index="0" bw="1" slack="2147483647"/>
 </pin_list>
 <bind>
-<StgValue><ssdm name="empty_11"/></StgValue>
+<StgValue><ssdm name="empty_134"/></StgValue>
 </bind>
 </comp>
 
@@ -893,7 +890,7 @@ ret_ln42                (ret              ) [ 0000000000000000000000]
 <pin id="115" dir="1" index="0" bw="1" slack="2147483647"/>
 </pin_list>
 <bind>
-<StgValue><ssdm name="empty_22"/></StgValue>
+<StgValue><ssdm name="empty_118"/></StgValue>
 </bind>
 </comp>
 
@@ -902,7 +899,7 @@ ret_ln42                (ret              ) [ 0000000000000000000000]
 <pin id="117" dir="1" index="0" bw="1" slack="2147483647"/>
 </pin_list>
 <bind>
-<StgValue><ssdm name="empty_21"/></StgValue>
+<StgValue><ssdm name="empty_136"/></StgValue>
 </bind>
 </comp>
 
@@ -911,7 +908,7 @@ ret_ln42                (ret              ) [ 0000000000000000000000]
 <pin id="119" dir="1" index="0" bw="1" slack="2147483647"/>
 </pin_list>
 <bind>
-<StgValue><ssdm name="empty_20"/></StgValue>
+<StgValue><ssdm name="empty_138"/></StgValue>
 </bind>
 </comp>
 
@@ -920,7 +917,7 @@ ret_ln42                (ret              ) [ 0000000000000000000000]
 <pin id="121" dir="1" index="0" bw="1" slack="2147483647"/>
 </pin_list>
 <bind>
-<StgValue><ssdm name="empty_19"/></StgValue>
+<StgValue><ssdm name="empty_82"/></StgValue>
 </bind>
 </comp>
 
@@ -929,7 +926,7 @@ ret_ln42                (ret              ) [ 0000000000000000000000]
 <pin id="123" dir="1" index="0" bw="1" slack="2147483647"/>
 </pin_list>
 <bind>
-<StgValue><ssdm name="empty_8"/></StgValue>
+<StgValue><ssdm name="empty_83"/></StgValue>
 </bind>
 </comp>
 
@@ -938,7 +935,7 @@ ret_ln42                (ret              ) [ 0000000000000000000000]
 <pin id="125" dir="1" index="0" bw="1" slack="2147483647"/>
 </pin_list>
 <bind>
-<StgValue><ssdm name="empty_18"/></StgValue>
+<StgValue><ssdm name="empty_130"/></StgValue>
 </bind>
 </comp>
 
@@ -947,7 +944,7 @@ ret_ln42                (ret              ) [ 0000000000000000000000]
 <pin id="127" dir="1" index="0" bw="1" slack="2147483647"/>
 </pin_list>
 <bind>
-<StgValue><ssdm name="empty_17"/></StgValue>
+<StgValue><ssdm name="empty_52"/></StgValue>
 </bind>
 </comp>
 
@@ -956,7 +953,7 @@ ret_ln42                (ret              ) [ 0000000000000000000000]
 <pin id="129" dir="1" index="0" bw="1" slack="2147483647"/>
 </pin_list>
 <bind>
-<StgValue><ssdm name="empty_15"/></StgValue>
+<StgValue><ssdm name="empty_141"/></StgValue>
 </bind>
 </comp>
 
@@ -965,7 +962,7 @@ ret_ln42                (ret              ) [ 0000000000000000000000]
 <pin id="131" dir="1" index="0" bw="1" slack="2147483647"/>
 </pin_list>
 <bind>
-<StgValue><ssdm name="empty_16"/></StgValue>
+<StgValue><ssdm name="empty_97"/></StgValue>
 </bind>
 </comp>
 
@@ -974,7 +971,7 @@ ret_ln42                (ret              ) [ 0000000000000000000000]
 <pin id="133" dir="1" index="0" bw="1" slack="2147483647"/>
 </pin_list>
 <bind>
-<StgValue><ssdm name="empty_2"/></StgValue>
+<StgValue><ssdm name="empty_71"/></StgValue>
 </bind>
 </comp>
 
@@ -983,7 +980,7 @@ ret_ln42                (ret              ) [ 0000000000000000000000]
 <pin id="135" dir="1" index="0" bw="1" slack="2147483647"/>
 </pin_list>
 <bind>
-<StgValue><ssdm name="empty_24"/></StgValue>
+<StgValue><ssdm name="empty_135"/></StgValue>
 </bind>
 </comp>
 
@@ -992,7 +989,7 @@ ret_ln42                (ret              ) [ 0000000000000000000000]
 <pin id="137" dir="1" index="0" bw="1" slack="2147483647"/>
 </pin_list>
 <bind>
-<StgValue><ssdm name="empty_12"/></StgValue>
+<StgValue><ssdm name="empty_80"/></StgValue>
 </bind>
 </comp>
 
@@ -1001,7 +998,7 @@ ret_ln42                (ret              ) [ 0000000000000000000000]
 <pin id="139" dir="1" index="0" bw="1" slack="2147483647"/>
 </pin_list>
 <bind>
-<StgValue><ssdm name="empty"/></StgValue>
+<StgValue><ssdm name="empty_137"/></StgValue>
 </bind>
 </comp>
 
@@ -1010,7 +1007,7 @@ ret_ln42                (ret              ) [ 0000000000000000000000]
 <pin id="141" dir="1" index="0" bw="1" slack="2147483647"/>
 </pin_list>
 <bind>
-<StgValue><ssdm name="empty_23"/></StgValue>
+<StgValue><ssdm name="empty_81"/></StgValue>
 </bind>
 </comp>
 
@@ -1118,7 +1115,7 @@ ret_ln42                (ret              ) [ 0000000000000000000000]
 <pin id="165" dir="1" index="0" bw="1" slack="0"/>
 </pin_list>
 <bind>
-<StgValue><ssdm name="upconv_core_top_ucb0_Pipeline_LOAD_ROW_VITIS_LOOP_397_2"/></StgValue>
+<StgValue><ssdm name="upconv_core_top_ucb0_Pipeline_LOAD_ROW_VITIS_LOOP_308_2"/></StgValue>
 </bind>
 </comp>
 
@@ -1163,7 +1160,7 @@ ret_ln42                (ret              ) [ 0000000000000000000000]
 <pin id="175" dir="1" index="0" bw="1" slack="2147483647"/>
 </pin_list>
 <bind>
-<StgValue><ssdm name="empty_5"/></StgValue>
+<StgValue><ssdm name="empty_140"/></StgValue>
 </bind>
 </comp>
 
@@ -1286,7 +1283,7 @@ ret_ln42                (ret              ) [ 0000000000000000000000]
 </bind>
 </comp>
 
-<comp id="233" class="1004" name="grp_upconv_core_top_ucb0_Pipeline_LOAD_ROW0_VITIS_LOOP_386_1_fu_233">
+<comp id="233" class="1004" name="grp_upconv_core_top_ucb0_Pipeline_LOAD_ROW0_VITIS_LOOP_297_1_fu_233">
 <pin_list>
 <pin id="234" dir="0" index="0" bw="0" slack="0"/>
 <pin id="235" dir="0" index="1" bw="256" slack="0"/>
@@ -1296,7 +1293,7 @@ ret_ln42                (ret              ) [ 0000000000000000000000]
 </pin_list>
 <bind>
 <opcode="call(48) " fcode="call"/>
-<opset="call_ln385/10 "/>
+<opset="call_ln296/10 "/>
 </bind>
 </comp>
 
@@ -1336,23 +1333,23 @@ ret_ln42                (ret              ) [ 0000000000000000000000]
 </pin_list>
 <bind>
 <opcode="call(48) " fcode="call"/>
-<opset="call_ln391/12 call_ln402/16 call_ln403/18 call_ln407/20 "/>
+<opset="call_ln302/12 call_ln318/14 call_ln313/16 call_ln314/18 "/>
 </bind>
 </comp>
 
-<comp id="299" class="1004" name="grp_upconv_core_top_ucb0_Pipeline_LOAD_ROW_VITIS_LOOP_397_2_fu_299">
+<comp id="299" class="1004" name="grp_upconv_core_top_ucb0_Pipeline_LOAD_ROW_VITIS_LOOP_308_2_fu_299">
 <pin_list>
 <pin id="300" dir="0" index="0" bw="0" slack="0"/>
 <pin id="301" dir="0" index="1" bw="256" slack="0"/>
 <pin id="302" dir="0" index="2" bw="5" slack="0"/>
-<pin id="303" dir="0" index="3" bw="14" slack="0"/>
-<pin id="304" dir="0" index="4" bw="59" slack="13"/>
+<pin id="303" dir="0" index="3" bw="59" slack="13"/>
+<pin id="304" dir="0" index="4" bw="14" slack="0"/>
 <pin id="305" dir="0" index="5" bw="256" slack="0"/>
 <pin id="306" dir="1" index="6" bw="0" slack="2147483647"/>
 </pin_list>
 <bind>
 <opcode="call(48) " fcode="call"/>
-<opset="call_ln402/14 "/>
+<opset="call_ln313/14 "/>
 </bind>
 </comp>
 
@@ -1370,7 +1367,7 @@ ret_ln42                (ret              ) [ 0000000000000000000000]
 </bind>
 </comp>
 
-<comp id="320" class="1004" name="add_ln394_fu_320">
+<comp id="320" class="1004" name="add_ln305_fu_320">
 <pin_list>
 <pin id="321" dir="0" index="0" bw="64" slack="0"/>
 <pin id="322" dir="0" index="1" bw="16" slack="0"/>
@@ -1378,7 +1375,7 @@ ret_ln42                (ret              ) [ 0000000000000000000000]
 </pin_list>
 <bind>
 <opcode="add(8) " fcode="add"/>
-<opset="add_ln394/1 "/>
+<opset="add_ln305/1 "/>
 </bind>
 </comp>
 
@@ -1408,7 +1405,7 @@ ret_ln42                (ret              ) [ 0000000000000000000000]
 </bind>
 </comp>
 
-<comp id="341" class="1004" name="store_ln394_store_fu_341">
+<comp id="341" class="1004" name="store_ln305_store_fu_341">
 <pin_list>
 <pin id="342" dir="0" index="0" bw="1" slack="0"/>
 <pin id="343" dir="0" index="1" bw="5" slack="0"/>
@@ -1416,18 +1413,18 @@ ret_ln42                (ret              ) [ 0000000000000000000000]
 </pin_list>
 <bind>
 <opcode="store(28) " fcode="store"/>
-<opset="store_ln394/1 "/>
+<opset="store_ln305/1 "/>
 </bind>
 </comp>
 
-<comp id="346" class="1004" name="sext_ln385_fu_346">
+<comp id="346" class="1004" name="sext_ln296_fu_346">
 <pin_list>
 <pin id="347" dir="0" index="0" bw="59" slack="1"/>
 <pin id="348" dir="1" index="1" bw="64" slack="0"/>
 </pin_list>
 <bind>
 <opcode="sext(35) " fcode="sext"/>
-<opset="sext_ln385/2 "/>
+<opset="sext_ln296/2 "/>
 </bind>
 </comp>
 
@@ -1465,7 +1462,7 @@ ret_ln42                (ret              ) [ 0000000000000000000000]
 </bind>
 </comp>
 
-<comp id="362" class="1004" name="icmp_ln394_fu_362">
+<comp id="362" class="1004" name="icmp_ln305_fu_362">
 <pin_list>
 <pin id="363" dir="0" index="0" bw="5" slack="0"/>
 <pin id="364" dir="0" index="1" bw="5" slack="0"/>
@@ -1473,11 +1470,11 @@ ret_ln42                (ret              ) [ 0000000000000000000000]
 </pin_list>
 <bind>
 <opcode="icmp(45) " fcode="icmp"/>
-<opset="icmp_ln394/14 "/>
+<opset="icmp_ln305/14 "/>
 </bind>
 </comp>
 
-<comp id="368" class="1004" name="add_ln394_2_fu_368">
+<comp id="368" class="1004" name="add_ln305_2_fu_368">
 <pin_list>
 <pin id="369" dir="0" index="0" bw="4" slack="0"/>
 <pin id="370" dir="0" index="1" bw="1" slack="0"/>
@@ -1485,7 +1482,7 @@ ret_ln42                (ret              ) [ 0000000000000000000000]
 </pin_list>
 <bind>
 <opcode="add(8) " fcode="add"/>
-<opset="add_ln394_2/14 "/>
+<opset="add_ln305_2/14 "/>
 </bind>
 </comp>
 
@@ -1515,18 +1512,18 @@ ret_ln42                (ret              ) [ 0000000000000000000000]
 </bind>
 </comp>
 
-<comp id="390" class="1004" name="zext_ln395_fu_390">
+<comp id="390" class="1004" name="zext_ln306_fu_390">
 <pin_list>
 <pin id="391" dir="0" index="0" bw="10" slack="0"/>
 <pin id="392" dir="1" index="1" bw="14" slack="0"/>
 </pin_list>
 <bind>
 <opcode="zext(34) " fcode="zext"/>
-<opset="zext_ln395/14 "/>
+<opset="zext_ln306/14 "/>
 </bind>
 </comp>
 
-<comp id="394" class="1004" name="sub_ln395_fu_394">
+<comp id="394" class="1004" name="sub_ln306_fu_394">
 <pin_list>
 <pin id="395" dir="0" index="0" bw="14" slack="0"/>
 <pin id="396" dir="0" index="1" bw="10" slack="0"/>
@@ -1534,11 +1531,11 @@ ret_ln42                (ret              ) [ 0000000000000000000000]
 </pin_list>
 <bind>
 <opcode="sub(10) " fcode="sub"/>
-<opset="sub_ln395/14 "/>
+<opset="sub_ln306/14 "/>
 </bind>
 </comp>
 
-<comp id="401" class="1004" name="empty_46_fu_401">
+<comp id="401" class="1004" name="empty_174_fu_401">
 <pin_list>
 <pin id="402" dir="0" index="0" bw="5" slack="0"/>
 <pin id="403" dir="0" index="1" bw="4" slack="0"/>
@@ -1546,11 +1543,11 @@ ret_ln42                (ret              ) [ 0000000000000000000000]
 </pin_list>
 <bind>
 <opcode="shl(20) " fcode="shl"/>
-<opset="empty_46/14 "/>
+<opset="empty_174/14 "/>
 </bind>
 </comp>
 
-<comp id="408" class="1004" name="add_ln394_1_fu_408">
+<comp id="408" class="1004" name="add_ln305_1_fu_408">
 <pin_list>
 <pin id="409" dir="0" index="0" bw="5" slack="0"/>
 <pin id="410" dir="0" index="1" bw="1" slack="0"/>
@@ -1558,11 +1555,11 @@ ret_ln42                (ret              ) [ 0000000000000000000000]
 </pin_list>
 <bind>
 <opcode="add(8) " fcode="add"/>
-<opset="add_ln394_1/14 "/>
+<opset="add_ln305_1/14 "/>
 </bind>
 </comp>
 
-<comp id="414" class="1004" name="store_ln394_store_fu_414">
+<comp id="414" class="1004" name="store_ln305_store_fu_414">
 <pin_list>
 <pin id="415" dir="0" index="0" bw="4" slack="0"/>
 <pin id="416" dir="0" index="1" bw="4" slack="13"/>
@@ -1570,11 +1567,11 @@ ret_ln42                (ret              ) [ 0000000000000000000000]
 </pin_list>
 <bind>
 <opcode="store(28) " fcode="store"/>
-<opset="store_ln394/14 "/>
+<opset="store_ln305/14 "/>
 </bind>
 </comp>
 
-<comp id="419" class="1004" name="store_ln394_store_fu_419">
+<comp id="419" class="1004" name="store_ln305_store_fu_419">
 <pin_list>
 <pin id="420" dir="0" index="0" bw="5" slack="0"/>
 <pin id="421" dir="0" index="1" bw="5" slack="13"/>
@@ -1582,191 +1579,191 @@ ret_ln42                (ret              ) [ 0000000000000000000000]
 </pin_list>
 <bind>
 <opcode="store(28) " fcode="store"/>
-<opset="store_ln394/14 "/>
+<opset="store_ln305/14 "/>
 </bind>
 </comp>
 
-<comp id="424" class="1004" name="shl_ln402_fu_424">
+<comp id="424" class="1004" name="shl_ln313_fu_424">
 <pin_list>
-<pin id="425" dir="0" index="0" bw="5" slack="1"/>
+<pin id="425" dir="0" index="0" bw="5" slack="2"/>
 <pin id="426" dir="0" index="1" bw="1" slack="0"/>
 <pin id="427" dir="1" index="2" bw="5" slack="0"/>
 </pin_list>
 <bind>
 <opcode="shl(20) " fcode="shl"/>
-<opset="shl_ln402/15 "/>
+<opset="shl_ln313/16 "/>
 </bind>
 </comp>
 
-<comp id="429" class="1004" name="add_ln402_fu_429">
+<comp id="429" class="1004" name="add_ln313_fu_429">
 <pin_list>
 <pin id="430" dir="0" index="0" bw="5" slack="0"/>
 <pin id="431" dir="0" index="1" bw="1" slack="0"/>
-<pin id="432" dir="1" index="2" bw="5" slack="1"/>
+<pin id="432" dir="1" index="2" bw="5" slack="0"/>
 </pin_list>
 <bind>
 <opcode="add(8) " fcode="add"/>
-<opset="add_ln402/15 "/>
+<opset="add_ln313/16 "/>
 </bind>
 </comp>
 
-<comp id="435" class="1005" name="hi_reg_435">
+<comp id="436" class="1005" name="hi_reg_436">
 <pin_list>
-<pin id="436" dir="0" index="0" bw="5" slack="0"/>
-<pin id="437" dir="1" index="1" bw="5" slack="0"/>
+<pin id="437" dir="0" index="0" bw="5" slack="0"/>
+<pin id="438" dir="1" index="1" bw="5" slack="0"/>
 </pin_list>
 <bind>
 <opset="hi "/>
 </bind>
 </comp>
 
-<comp id="442" class="1005" name="indvar_reg_442">
+<comp id="443" class="1005" name="indvar_reg_443">
 <pin_list>
-<pin id="443" dir="0" index="0" bw="4" slack="0"/>
-<pin id="444" dir="1" index="1" bw="4" slack="0"/>
+<pin id="444" dir="0" index="0" bw="4" slack="0"/>
+<pin id="445" dir="1" index="1" bw="4" slack="0"/>
 </pin_list>
 <bind>
 <opset="indvar "/>
 </bind>
 </comp>
 
-<comp id="449" class="1005" name="epsilon_read_reg_449">
+<comp id="450" class="1005" name="epsilon_read_reg_450">
 <pin_list>
-<pin id="450" dir="0" index="0" bw="16" slack="11"/>
-<pin id="451" dir="1" index="1" bw="16" slack="11"/>
+<pin id="451" dir="0" index="0" bw="16" slack="11"/>
+<pin id="452" dir="1" index="1" bw="16" slack="11"/>
 </pin_list>
 <bind>
 <opset="epsilon_read "/>
 </bind>
 </comp>
 
-<comp id="454" class="1005" name="Y_read_reg_454">
+<comp id="455" class="1005" name="Y_read_reg_455">
 <pin_list>
-<pin id="455" dir="0" index="0" bw="64" slack="11"/>
-<pin id="456" dir="1" index="1" bw="64" slack="11"/>
+<pin id="456" dir="0" index="0" bw="64" slack="11"/>
+<pin id="457" dir="1" index="1" bw="64" slack="11"/>
 </pin_list>
 <bind>
 <opset="Y_read "/>
 </bind>
 </comp>
 
-<comp id="459" class="1005" name="BE_read_reg_459">
+<comp id="460" class="1005" name="BE_read_reg_460">
 <pin_list>
-<pin id="460" dir="0" index="0" bw="64" slack="11"/>
-<pin id="461" dir="1" index="1" bw="64" slack="11"/>
+<pin id="461" dir="0" index="0" bw="64" slack="11"/>
+<pin id="462" dir="1" index="1" bw="64" slack="11"/>
 </pin_list>
 <bind>
 <opset="BE_read "/>
 </bind>
 </comp>
 
-<comp id="464" class="1005" name="G_read_reg_464">
+<comp id="465" class="1005" name="G_read_reg_465">
 <pin_list>
-<pin id="465" dir="0" index="0" bw="64" slack="11"/>
-<pin id="466" dir="1" index="1" bw="64" slack="11"/>
+<pin id="466" dir="0" index="0" bw="64" slack="11"/>
+<pin id="467" dir="1" index="1" bw="64" slack="11"/>
 </pin_list>
 <bind>
 <opset="G_read "/>
 </bind>
 </comp>
 
-<comp id="469" class="1005" name="B_read_reg_469">
+<comp id="470" class="1005" name="B_read_reg_470">
 <pin_list>
-<pin id="470" dir="0" index="0" bw="64" slack="11"/>
-<pin id="471" dir="1" index="1" bw="64" slack="11"/>
+<pin id="471" dir="0" index="0" bw="64" slack="11"/>
+<pin id="472" dir="1" index="1" bw="64" slack="11"/>
 </pin_list>
 <bind>
 <opset="B_read "/>
 </bind>
 </comp>
 
-<comp id="474" class="1005" name="W_read_reg_474">
+<comp id="475" class="1005" name="W_read_reg_475">
 <pin_list>
-<pin id="475" dir="0" index="0" bw="64" slack="11"/>
-<pin id="476" dir="1" index="1" bw="64" slack="11"/>
+<pin id="476" dir="0" index="0" bw="64" slack="11"/>
+<pin id="477" dir="1" index="1" bw="64" slack="11"/>
 </pin_list>
 <bind>
 <opset="W_read "/>
 </bind>
 </comp>
 
-<comp id="479" class="1005" name="trunc_ln_reg_479">
+<comp id="480" class="1005" name="trunc_ln_reg_480">
 <pin_list>
-<pin id="480" dir="0" index="0" bw="59" slack="1"/>
-<pin id="481" dir="1" index="1" bw="59" slack="1"/>
+<pin id="481" dir="0" index="0" bw="59" slack="1"/>
+<pin id="482" dir="1" index="1" bw="59" slack="1"/>
 </pin_list>
 <bind>
 <opset="trunc_ln "/>
 </bind>
 </comp>
 
-<comp id="485" class="1005" name="trunc_ln1_reg_485">
+<comp id="486" class="1005" name="trunc_ln1_reg_486">
 <pin_list>
-<pin id="486" dir="0" index="0" bw="59" slack="13"/>
-<pin id="487" dir="1" index="1" bw="59" slack="13"/>
+<pin id="487" dir="0" index="0" bw="59" slack="13"/>
+<pin id="488" dir="1" index="1" bw="59" slack="13"/>
 </pin_list>
 <bind>
 <opset="trunc_ln1 "/>
 </bind>
 </comp>
 
-<comp id="490" class="1005" name="gmem_in_addr_reg_490">
+<comp id="491" class="1005" name="gmem_in_addr_reg_491">
 <pin_list>
-<pin id="491" dir="0" index="0" bw="256" slack="1"/>
-<pin id="492" dir="1" index="1" bw="256" slack="1"/>
+<pin id="492" dir="0" index="0" bw="256" slack="1"/>
+<pin id="493" dir="1" index="1" bw="256" slack="1"/>
 </pin_list>
 <bind>
 <opset="gmem_in_addr "/>
 </bind>
 </comp>
 
-<comp id="495" class="1005" name="hi_1_reg_495">
+<comp id="496" class="1005" name="hi_1_reg_496">
 <pin_list>
-<pin id="496" dir="0" index="0" bw="5" slack="1"/>
-<pin id="497" dir="1" index="1" bw="5" slack="1"/>
+<pin id="497" dir="0" index="0" bw="5" slack="2"/>
+<pin id="498" dir="1" index="1" bw="5" slack="2"/>
 </pin_list>
 <bind>
 <opset="hi_1 "/>
 </bind>
 </comp>
 
-<comp id="503" class="1005" name="sub_ln395_reg_503">
+<comp id="504" class="1005" name="sub_ln306_reg_504">
 <pin_list>
-<pin id="504" dir="0" index="0" bw="14" slack="1"/>
-<pin id="505" dir="1" index="1" bw="14" slack="1"/>
+<pin id="505" dir="0" index="0" bw="14" slack="1"/>
+<pin id="506" dir="1" index="1" bw="14" slack="1"/>
 </pin_list>
 <bind>
-<opset="sub_ln395 "/>
+<opset="sub_ln306 "/>
 </bind>
 </comp>
 
-<comp id="508" class="1005" name="empty_46_reg_508">
+<comp id="509" class="1005" name="empty_174_reg_509">
 <pin_list>
-<pin id="509" dir="0" index="0" bw="5" slack="1"/>
-<pin id="510" dir="1" index="1" bw="5" slack="1"/>
+<pin id="510" dir="0" index="0" bw="5" slack="1"/>
+<pin id="511" dir="1" index="1" bw="5" slack="1"/>
 </pin_list>
 <bind>
-<opset="empty_46 "/>
+<opset="empty_174 "/>
 </bind>
 </comp>
 
-<comp id="513" class="1005" name="shl_ln402_reg_513">
+<comp id="514" class="1005" name="shl_ln313_reg_514">
 <pin_list>
-<pin id="514" dir="0" index="0" bw="5" slack="3"/>
-<pin id="515" dir="1" index="1" bw="5" slack="3"/>
+<pin id="515" dir="0" index="0" bw="5" slack="2"/>
+<pin id="516" dir="1" index="1" bw="5" slack="2"/>
 </pin_list>
 <bind>
-<opset="shl_ln402 "/>
+<opset="shl_ln313 "/>
 </bind>
 </comp>
 
-<comp id="518" class="1005" name="add_ln402_reg_518">
+<comp id="519" class="1005" name="add_ln313_reg_519">
 <pin_list>
-<pin id="519" dir="0" index="0" bw="5" slack="1"/>
-<pin id="520" dir="1" index="1" bw="5" slack="1"/>
+<pin id="520" dir="0" index="0" bw="5" slack="1"/>
+<pin id="521" dir="1" index="1" bw="5" slack="1"/>
 </pin_list>
 <bind>
-<opset="add_ln402 "/>
+<opset="add_ln313 "/>
 </bind>
 </comp>
 
@@ -1927,7 +1924,7 @@ ret_ln42                (ret              ) [ 0000000000000000000000]
 
 <net id="399"><net_src comp="390" pin="1"/><net_sink comp="394" pin=1"/></net>
 
-<net id="400"><net_src comp="394" pin="2"/><net_sink comp="299" pin=3"/></net>
+<net id="400"><net_src comp="394" pin="2"/><net_sink comp="299" pin=4"/></net>
 
 <net id="405"><net_src comp="356" pin="1"/><net_sink comp="401" pin=0"/></net>
 
@@ -1949,79 +1946,81 @@ ret_ln42                (ret              ) [ 0000000000000000000000]
 
 <net id="434"><net_src comp="166" pin="0"/><net_sink comp="429" pin=1"/></net>
 
-<net id="438"><net_src comp="176" pin="1"/><net_sink comp="435" pin=0"/></net>
+<net id="435"><net_src comp="429" pin="2"/><net_sink comp="242" pin=10"/></net>
 
-<net id="439"><net_src comp="435" pin="1"/><net_sink comp="341" pin=1"/></net>
+<net id="439"><net_src comp="176" pin="1"/><net_sink comp="436" pin=0"/></net>
 
-<net id="440"><net_src comp="435" pin="1"/><net_sink comp="356" pin=0"/></net>
+<net id="440"><net_src comp="436" pin="1"/><net_sink comp="341" pin=1"/></net>
 
-<net id="441"><net_src comp="435" pin="1"/><net_sink comp="419" pin=1"/></net>
+<net id="441"><net_src comp="436" pin="1"/><net_sink comp="356" pin=0"/></net>
 
-<net id="445"><net_src comp="180" pin="1"/><net_sink comp="442" pin=0"/></net>
+<net id="442"><net_src comp="436" pin="1"/><net_sink comp="419" pin=1"/></net>
 
-<net id="446"><net_src comp="442" pin="1"/><net_sink comp="336" pin=1"/></net>
+<net id="446"><net_src comp="180" pin="1"/><net_sink comp="443" pin=0"/></net>
 
-<net id="447"><net_src comp="442" pin="1"/><net_sink comp="359" pin=0"/></net>
+<net id="447"><net_src comp="443" pin="1"/><net_sink comp="336" pin=1"/></net>
 
-<net id="448"><net_src comp="442" pin="1"/><net_sink comp="414" pin=1"/></net>
+<net id="448"><net_src comp="443" pin="1"/><net_sink comp="359" pin=0"/></net>
 
-<net id="452"><net_src comp="184" pin="2"/><net_sink comp="449" pin=0"/></net>
+<net id="449"><net_src comp="443" pin="1"/><net_sink comp="414" pin=1"/></net>
 
-<net id="453"><net_src comp="449" pin="1"/><net_sink comp="242" pin=9"/></net>
+<net id="453"><net_src comp="184" pin="2"/><net_sink comp="450" pin=0"/></net>
 
-<net id="457"><net_src comp="190" pin="2"/><net_sink comp="454" pin=0"/></net>
+<net id="454"><net_src comp="450" pin="1"/><net_sink comp="242" pin=9"/></net>
 
-<net id="458"><net_src comp="454" pin="1"/><net_sink comp="242" pin=8"/></net>
+<net id="458"><net_src comp="190" pin="2"/><net_sink comp="455" pin=0"/></net>
 
-<net id="462"><net_src comp="196" pin="2"/><net_sink comp="459" pin=0"/></net>
+<net id="459"><net_src comp="455" pin="1"/><net_sink comp="242" pin=8"/></net>
 
-<net id="463"><net_src comp="459" pin="1"/><net_sink comp="242" pin=6"/></net>
+<net id="463"><net_src comp="196" pin="2"/><net_sink comp="460" pin=0"/></net>
 
-<net id="467"><net_src comp="202" pin="2"/><net_sink comp="464" pin=0"/></net>
+<net id="464"><net_src comp="460" pin="1"/><net_sink comp="242" pin=6"/></net>
 
-<net id="468"><net_src comp="464" pin="1"/><net_sink comp="242" pin=5"/></net>
+<net id="468"><net_src comp="202" pin="2"/><net_sink comp="465" pin=0"/></net>
 
-<net id="472"><net_src comp="208" pin="2"/><net_sink comp="469" pin=0"/></net>
+<net id="469"><net_src comp="465" pin="1"/><net_sink comp="242" pin=5"/></net>
 
-<net id="473"><net_src comp="469" pin="1"/><net_sink comp="242" pin=4"/></net>
+<net id="473"><net_src comp="208" pin="2"/><net_sink comp="470" pin=0"/></net>
 
-<net id="477"><net_src comp="214" pin="2"/><net_sink comp="474" pin=0"/></net>
+<net id="474"><net_src comp="470" pin="1"/><net_sink comp="242" pin=4"/></net>
 
-<net id="478"><net_src comp="474" pin="1"/><net_sink comp="242" pin=2"/></net>
+<net id="478"><net_src comp="214" pin="2"/><net_sink comp="475" pin=0"/></net>
 
-<net id="482"><net_src comp="310" pin="4"/><net_sink comp="479" pin=0"/></net>
+<net id="479"><net_src comp="475" pin="1"/><net_sink comp="242" pin=2"/></net>
 
-<net id="483"><net_src comp="479" pin="1"/><net_sink comp="346" pin=0"/></net>
+<net id="483"><net_src comp="310" pin="4"/><net_sink comp="480" pin=0"/></net>
 
-<net id="484"><net_src comp="479" pin="1"/><net_sink comp="233" pin=2"/></net>
+<net id="484"><net_src comp="480" pin="1"/><net_sink comp="346" pin=0"/></net>
 
-<net id="488"><net_src comp="326" pin="4"/><net_sink comp="485" pin=0"/></net>
+<net id="485"><net_src comp="480" pin="1"/><net_sink comp="233" pin=2"/></net>
 
-<net id="489"><net_src comp="485" pin="1"/><net_sink comp="299" pin=4"/></net>
+<net id="489"><net_src comp="326" pin="4"/><net_sink comp="486" pin=0"/></net>
 
-<net id="493"><net_src comp="349" pin="2"/><net_sink comp="490" pin=0"/></net>
+<net id="490"><net_src comp="486" pin="1"/><net_sink comp="299" pin=3"/></net>
 
-<net id="494"><net_src comp="490" pin="1"/><net_sink comp="226" pin=1"/></net>
+<net id="494"><net_src comp="349" pin="2"/><net_sink comp="491" pin=0"/></net>
 
-<net id="498"><net_src comp="356" pin="1"/><net_sink comp="495" pin=0"/></net>
+<net id="495"><net_src comp="491" pin="1"/><net_sink comp="226" pin=1"/></net>
 
-<net id="499"><net_src comp="495" pin="1"/><net_sink comp="424" pin=0"/></net>
+<net id="499"><net_src comp="356" pin="1"/><net_sink comp="496" pin=0"/></net>
 
-<net id="506"><net_src comp="394" pin="2"/><net_sink comp="503" pin=0"/></net>
+<net id="500"><net_src comp="496" pin="1"/><net_sink comp="424" pin=0"/></net>
 
-<net id="507"><net_src comp="503" pin="1"/><net_sink comp="299" pin=3"/></net>
+<net id="507"><net_src comp="394" pin="2"/><net_sink comp="504" pin=0"/></net>
 
-<net id="511"><net_src comp="401" pin="2"/><net_sink comp="508" pin=0"/></net>
+<net id="508"><net_src comp="504" pin="1"/><net_sink comp="299" pin=4"/></net>
 
-<net id="512"><net_src comp="508" pin="1"/><net_sink comp="299" pin=2"/></net>
+<net id="512"><net_src comp="401" pin="2"/><net_sink comp="509" pin=0"/></net>
 
-<net id="516"><net_src comp="424" pin="2"/><net_sink comp="513" pin=0"/></net>
+<net id="513"><net_src comp="509" pin="1"/><net_sink comp="299" pin=2"/></net>
 
-<net id="517"><net_src comp="513" pin="1"/><net_sink comp="242" pin=10"/></net>
+<net id="517"><net_src comp="424" pin="2"/><net_sink comp="514" pin=0"/></net>
 
-<net id="521"><net_src comp="429" pin="2"/><net_sink comp="518" pin=0"/></net>
+<net id="518"><net_src comp="514" pin="1"/><net_sink comp="242" pin=10"/></net>
 
-<net id="522"><net_src comp="518" pin="1"/><net_sink comp="242" pin=10"/></net>
+<net id="522"><net_src comp="429" pin="2"/><net_sink comp="519" pin=0"/></net>
+
+<net id="523"><net_src comp="519" pin="1"/><net_sink comp="242" pin=10"/></net>
 
 </net_list>
 
@@ -2030,30 +2029,30 @@ ret_ln42                (ret              ) [ 0000000000000000000000]
 
 * FSMD analyzer results:
   - Output states:
-	Port: gmem_out | {12 13 16 17 18 19 20 21 }
+	Port: gmem_out | {12 13 14 16 17 18 19 20 }
 	Port: x_buf | {10 11 14 15 }
-	Port: void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_9 | {12 13 16 17 18 19 20 21 }
-	Port: void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_8 | {12 13 16 17 18 19 20 21 }
-	Port: void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_7 | {12 13 16 17 18 19 20 21 }
-	Port: void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_6 | {12 13 16 17 18 19 20 21 }
-	Port: void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_5 | {12 13 16 17 18 19 20 21 }
-	Port: void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_4 | {12 13 16 17 18 19 20 21 }
-	Port: void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_3 | {12 13 16 17 18 19 20 21 }
-	Port: void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_2 | {12 13 16 17 18 19 20 21 }
-	Port: void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_1 | {12 13 16 17 18 19 20 21 }
-	Port: void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u | {12 13 16 17 18 19 20 21 }
-	Port: p_ZZ16UpConv_Fused_RowILi8ELi16ELi16ELi960ELi480EEvP7ap_uintILi256EEPKS1_S4_S4_S4_5 | {12 13 16 17 18 19 20 21 }
-	Port: p_ZZ16UpConv_Fused_RowILi8ELi16ELi16ELi960ELi480EEvP7ap_uintILi256EEPKS1_S4_S4_S4_4 | {12 13 16 17 18 19 20 21 }
-	Port: p_ZZ16UpConv_Fused_RowILi8ELi16ELi16ELi960ELi480EEvP7ap_uintILi256EEPKS1_S4_S4_S4_3 | {12 13 16 17 18 19 20 21 }
-	Port: p_ZZ16UpConv_Fused_RowILi8ELi16ELi16ELi960ELi480EEvP7ap_uintILi256EEPKS1_S4_S4_S4_2 | {12 13 16 17 18 19 20 21 }
-	Port: p_ZZ16UpConv_Fused_RowILi8ELi16ELi16ELi960ELi480EEvP7ap_uintILi256EEPKS1_S4_S4_S4_1 | {12 13 16 17 18 19 20 21 }
-	Port: p_ZZ16UpConv_Fused_RowILi8ELi16ELi16ELi960ELi480EEvP7ap_uintILi256EEPKS1_S4_S4_S4 | {12 13 16 17 18 19 20 21 }
-	Port: mean_buf | {12 13 16 17 18 19 20 21 }
-	Port: inv_buf | {12 13 16 17 18 19 20 21 }
+	Port: void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_9 | {12 13 14 16 17 18 19 20 }
+	Port: void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_8 | {12 13 14 16 17 18 19 20 }
+	Port: void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_7 | {12 13 14 16 17 18 19 20 }
+	Port: void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_6 | {12 13 14 16 17 18 19 20 }
+	Port: void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_5 | {12 13 14 16 17 18 19 20 }
+	Port: void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_4 | {12 13 14 16 17 18 19 20 }
+	Port: void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_3 | {12 13 14 16 17 18 19 20 }
+	Port: void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_2 | {12 13 14 16 17 18 19 20 }
+	Port: void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_1 | {12 13 14 16 17 18 19 20 }
+	Port: void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u | {12 13 14 16 17 18 19 20 }
+	Port: p_ZZ16UpConv_Fused_RowILi8ELi16ELi16ELi960ELi480EEvP7ap_uintILi256EEPKS1_S4_S4_S4_5 | {12 13 14 16 17 18 19 20 }
+	Port: p_ZZ16UpConv_Fused_RowILi8ELi16ELi16ELi960ELi480EEvP7ap_uintILi256EEPKS1_S4_S4_S4_4 | {12 13 14 16 17 18 19 20 }
+	Port: p_ZZ16UpConv_Fused_RowILi8ELi16ELi16ELi960ELi480EEvP7ap_uintILi256EEPKS1_S4_S4_S4_3 | {12 13 14 16 17 18 19 20 }
+	Port: p_ZZ16UpConv_Fused_RowILi8ELi16ELi16ELi960ELi480EEvP7ap_uintILi256EEPKS1_S4_S4_S4_2 | {12 13 14 16 17 18 19 20 }
+	Port: p_ZZ16UpConv_Fused_RowILi8ELi16ELi16ELi960ELi480EEvP7ap_uintILi256EEPKS1_S4_S4_S4_1 | {12 13 14 16 17 18 19 20 }
+	Port: p_ZZ16UpConv_Fused_RowILi8ELi16ELi16ELi960ELi480EEvP7ap_uintILi256EEPKS1_S4_S4_S4 | {12 13 14 16 17 18 19 20 }
+	Port: mean_buf | {12 13 14 16 17 18 19 20 }
+	Port: inv_buf | {12 13 14 16 17 18 19 20 }
  - Input state : 
 	Port: upconv_core_top_ucb0 : gmem_in | {2 3 4 5 6 7 8 9 10 11 14 15 }
-	Port: upconv_core_top_ucb0 : gmem_weight | {12 13 16 17 18 19 20 21 }
-	Port: upconv_core_top_ucb0 : gmem_param | {12 13 16 17 18 19 20 21 }
+	Port: upconv_core_top_ucb0 : gmem_weight | {12 13 14 16 17 18 19 20 }
+	Port: upconv_core_top_ucb0 : gmem_param | {12 13 14 16 17 18 19 20 }
 	Port: upconv_core_top_ucb0 : X | {1 }
 	Port: upconv_core_top_ucb0 : W | {1 }
 	Port: upconv_core_top_ucb0 : B | {1 }
@@ -2061,30 +2060,30 @@ ret_ln42                (ret              ) [ 0000000000000000000000]
 	Port: upconv_core_top_ucb0 : BE | {1 }
 	Port: upconv_core_top_ucb0 : Y | {1 }
 	Port: upconv_core_top_ucb0 : epsilon | {1 }
-	Port: upconv_core_top_ucb0 : x_buf | {12 13 16 17 18 19 20 21 }
-	Port: upconv_core_top_ucb0 : void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_9 | {12 13 16 17 18 19 20 21 }
-	Port: upconv_core_top_ucb0 : void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_8 | {12 13 16 17 18 19 20 21 }
-	Port: upconv_core_top_ucb0 : void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_7 | {12 13 16 17 18 19 20 21 }
-	Port: upconv_core_top_ucb0 : void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_6 | {12 13 16 17 18 19 20 21 }
-	Port: upconv_core_top_ucb0 : void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_5 | {12 13 16 17 18 19 20 21 }
-	Port: upconv_core_top_ucb0 : void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_4 | {12 13 16 17 18 19 20 21 }
-	Port: upconv_core_top_ucb0 : void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_3 | {12 13 16 17 18 19 20 21 }
-	Port: upconv_core_top_ucb0 : void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_2 | {12 13 16 17 18 19 20 21 }
-	Port: upconv_core_top_ucb0 : void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_1 | {12 13 16 17 18 19 20 21 }
-	Port: upconv_core_top_ucb0 : void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u | {12 13 16 17 18 19 20 21 }
-	Port: upconv_core_top_ucb0 : p_ZZ16UpConv_Fused_RowILi8ELi16ELi16ELi960ELi480EEvP7ap_uintILi256EEPKS1_S4_S4_S4_5 | {12 13 16 17 18 19 20 21 }
-	Port: upconv_core_top_ucb0 : p_ZZ16UpConv_Fused_RowILi8ELi16ELi16ELi960ELi480EEvP7ap_uintILi256EEPKS1_S4_S4_S4_4 | {12 13 16 17 18 19 20 21 }
-	Port: upconv_core_top_ucb0 : p_ZZ16UpConv_Fused_RowILi8ELi16ELi16ELi960ELi480EEvP7ap_uintILi256EEPKS1_S4_S4_S4_3 | {12 13 16 17 18 19 20 21 }
-	Port: upconv_core_top_ucb0 : p_ZZ16UpConv_Fused_RowILi8ELi16ELi16ELi960ELi480EEvP7ap_uintILi256EEPKS1_S4_S4_S4_2 | {12 13 16 17 18 19 20 21 }
-	Port: upconv_core_top_ucb0 : p_ZZ16UpConv_Fused_RowILi8ELi16ELi16ELi960ELi480EEvP7ap_uintILi256EEPKS1_S4_S4_S4_1 | {12 13 16 17 18 19 20 21 }
-	Port: upconv_core_top_ucb0 : p_ZZ16UpConv_Fused_RowILi8ELi16ELi16ELi960ELi480EEvP7ap_uintILi256EEPKS1_S4_S4_S4 | {12 13 16 17 18 19 20 21 }
-	Port: upconv_core_top_ucb0 : mean_buf | {12 13 16 17 18 19 20 21 }
-	Port: upconv_core_top_ucb0 : inv_buf | {12 13 16 17 18 19 20 21 }
+	Port: upconv_core_top_ucb0 : x_buf | {12 13 14 16 17 18 19 20 }
+	Port: upconv_core_top_ucb0 : void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_9 | {12 13 14 16 17 18 19 20 }
+	Port: upconv_core_top_ucb0 : void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_8 | {12 13 14 16 17 18 19 20 }
+	Port: upconv_core_top_ucb0 : void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_7 | {12 13 14 16 17 18 19 20 }
+	Port: upconv_core_top_ucb0 : void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_6 | {12 13 14 16 17 18 19 20 }
+	Port: upconv_core_top_ucb0 : void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_5 | {12 13 14 16 17 18 19 20 }
+	Port: upconv_core_top_ucb0 : void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_4 | {12 13 14 16 17 18 19 20 }
+	Port: upconv_core_top_ucb0 : void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_3 | {12 13 14 16 17 18 19 20 }
+	Port: upconv_core_top_ucb0 : void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_2 | {12 13 14 16 17 18 19 20 }
+	Port: upconv_core_top_ucb0 : void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_1 | {12 13 14 16 17 18 19 20 }
+	Port: upconv_core_top_ucb0 : void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u | {12 13 14 16 17 18 19 20 }
+	Port: upconv_core_top_ucb0 : p_ZZ16UpConv_Fused_RowILi8ELi16ELi16ELi960ELi480EEvP7ap_uintILi256EEPKS1_S4_S4_S4_5 | {12 13 14 16 17 18 19 20 }
+	Port: upconv_core_top_ucb0 : p_ZZ16UpConv_Fused_RowILi8ELi16ELi16ELi960ELi480EEvP7ap_uintILi256EEPKS1_S4_S4_S4_4 | {12 13 14 16 17 18 19 20 }
+	Port: upconv_core_top_ucb0 : p_ZZ16UpConv_Fused_RowILi8ELi16ELi16ELi960ELi480EEvP7ap_uintILi256EEPKS1_S4_S4_S4_3 | {12 13 14 16 17 18 19 20 }
+	Port: upconv_core_top_ucb0 : p_ZZ16UpConv_Fused_RowILi8ELi16ELi16ELi960ELi480EEvP7ap_uintILi256EEPKS1_S4_S4_S4_2 | {12 13 14 16 17 18 19 20 }
+	Port: upconv_core_top_ucb0 : p_ZZ16UpConv_Fused_RowILi8ELi16ELi16ELi960ELi480EEvP7ap_uintILi256EEPKS1_S4_S4_S4_1 | {12 13 14 16 17 18 19 20 }
+	Port: upconv_core_top_ucb0 : p_ZZ16UpConv_Fused_RowILi8ELi16ELi16ELi960ELi480EEvP7ap_uintILi256EEPKS1_S4_S4_S4 | {12 13 14 16 17 18 19 20 }
+	Port: upconv_core_top_ucb0 : mean_buf | {12 13 14 16 17 18 19 20 }
+	Port: upconv_core_top_ucb0 : inv_buf | {12 13 14 16 17 18 19 20 }
   - Chain level:
 	State 1
 		trunc_ln1 : 1
 		store_ln0 : 1
-		store_ln394 : 1
+		store_ln305 : 1
 	State 2
 		gmem_in_addr : 1
 		empty : 2
@@ -2100,25 +2099,25 @@ ret_ln42                (ret              ) [ 0000000000000000000000]
 	State 12
 	State 13
 	State 14
-		icmp_ln394 : 1
-		add_ln394_2 : 1
-		br_ln394 : 2
+		icmp_ln305 : 1
+		add_ln305_2 : 1
+		br_ln305 : 2
 		p_shl : 1
 		tmp : 1
-		zext_ln395 : 2
-		sub_ln395 : 3
-		empty_46 : 1
-		call_ln402 : 4
-		add_ln394_1 : 1
-		store_ln394 : 2
-		store_ln394 : 2
+		zext_ln306 : 2
+		sub_ln306 : 3
+		empty_174 : 1
+		call_ln313 : 4
+		add_ln305_1 : 1
+		store_ln305 : 2
+		store_ln305 : 2
 	State 15
 	State 16
+		call_ln313 : 1
 	State 17
 	State 18
 	State 19
 	State 20
-	State 21
 
 
 ============================================================
@@ -2126,47 +2125,47 @@ ret_ln42                (ret              ) [ 0000000000000000000000]
 ============================================================
 
 * Functional unit list:
-|----------|---------------------------------------------------------------------|---------|---------|---------|---------|---------|
-| Operation|                           Functional Unit                           |   BRAM  |   DSP   |  Delay  |    FF   |   LUT   |
-|----------|---------------------------------------------------------------------|---------|---------|---------|---------|---------|
-|          | grp_upconv_core_top_ucb0_Pipeline_LOAD_ROW0_VITIS_LOOP_386_1_fu_233 |    0    |    0    |    0    |   352   |   119   |
-|   call   |            grp_UpConv_Fused_Row_8_16_16_960_480_s_fu_242            |   144   |   768   | 182.329 |  64436  |  40491  |
-|          |  grp_upconv_core_top_ucb0_Pipeline_LOAD_ROW_VITIS_LOOP_397_2_fu_299 |    0    |    0    |  0.427  |   695   |   296   |
-|----------|---------------------------------------------------------------------|---------|---------|---------|---------|---------|
-|          |                           add_ln394_fu_320                          |    0    |    0    |    0    |    0    |    71   |
-|    add   |                          add_ln394_2_fu_368                         |    0    |    0    |    0    |    0    |    12   |
-|          |                          add_ln394_1_fu_408                         |    0    |    0    |    0    |    0    |    12   |
-|          |                           add_ln402_fu_429                          |    0    |    0    |    0    |    0    |    12   |
-|----------|---------------------------------------------------------------------|---------|---------|---------|---------|---------|
-|    sub   |                           sub_ln395_fu_394                          |    0    |    0    |    0    |    0    |    21   |
-|----------|---------------------------------------------------------------------|---------|---------|---------|---------|---------|
-|   icmp   |                          icmp_ln394_fu_362                          |    0    |    0    |    0    |    0    |    12   |
-|----------|---------------------------------------------------------------------|---------|---------|---------|---------|---------|
-|          |                       epsilon_read_read_fu_184                      |    0    |    0    |    0    |    0    |    0    |
-|          |                          Y_read_read_fu_190                         |    0    |    0    |    0    |    0    |    0    |
-|          |                         BE_read_read_fu_196                         |    0    |    0    |    0    |    0    |    0    |
-|   read   |                          G_read_read_fu_202                         |    0    |    0    |    0    |    0    |    0    |
-|          |                          B_read_read_fu_208                         |    0    |    0    |    0    |    0    |    0    |
-|          |                          W_read_read_fu_214                         |    0    |    0    |    0    |    0    |    0    |
-|          |                          X_read_read_fu_220                         |    0    |    0    |    0    |    0    |    0    |
-|----------|---------------------------------------------------------------------|---------|---------|---------|---------|---------|
-|  readreq |                          grp_readreq_fu_226                         |    0    |    0    |    0    |    0    |    0    |
-|----------|---------------------------------------------------------------------|---------|---------|---------|---------|---------|
-|partselect|                           trunc_ln_fu_310                           |    0    |    0    |    0    |    0    |    0    |
-|          |                           trunc_ln1_fu_326                          |    0    |    0    |    0    |    0    |    0    |
-|----------|---------------------------------------------------------------------|---------|---------|---------|---------|---------|
-|   sext   |                          sext_ln385_fu_346                          |    0    |    0    |    0    |    0    |    0    |
-|----------|---------------------------------------------------------------------|---------|---------|---------|---------|---------|
-|bitconcatenate|                             p_shl_fu_374                            |    0    |    0    |    0    |    0    |    0    |
-|          |                              tmp_fu_382                             |    0    |    0    |    0    |    0    |    0    |
-|----------|---------------------------------------------------------------------|---------|---------|---------|---------|---------|
-|   zext   |                          zext_ln395_fu_390                          |    0    |    0    |    0    |    0    |    0    |
-|----------|---------------------------------------------------------------------|---------|---------|---------|---------|---------|
-|    shl   |                           empty_46_fu_401                           |    0    |    0    |    0    |    0    |    0    |
-|          |                           shl_ln402_fu_424                          |    0    |    0    |    0    |    0    |    0    |
-|----------|---------------------------------------------------------------------|---------|---------|---------|---------|---------|
-|   Total  |                                                                     |   144   |   768   | 182.756 |  65483  |  41046  |
-|----------|---------------------------------------------------------------------|---------|---------|---------|---------|---------|
+|----------|---------------------------------------------------------------------|---------|---------|---------|---------|---------|---------|
+| Operation|                           Functional Unit                           |   BRAM  |   DSP   |  Delay  |    FF   |   LUT   |   URAM  |
+|----------|---------------------------------------------------------------------|---------|---------|---------|---------|---------|---------|
+|          | grp_upconv_core_top_ucb0_Pipeline_LOAD_ROW0_VITIS_LOOP_297_1_fu_233 |    0    |    0    |    0    |   352   |   119   |    0    |
+|   call   |            grp_UpConv_Fused_Row_8_16_16_960_480_s_fu_242            |    24   |   513   | 185.318 |  67102  |  59141  |    32   |
+|          |  grp_upconv_core_top_ucb0_Pipeline_LOAD_ROW_VITIS_LOOP_308_2_fu_299 |    0    |    0    |  0.427  |   739   |   293   |    0    |
+|----------|---------------------------------------------------------------------|---------|---------|---------|---------|---------|---------|
+|          |                           add_ln305_fu_320                          |    0    |    0    |    0    |    0    |    71   |    0    |
+|    add   |                          add_ln305_2_fu_368                         |    0    |    0    |    0    |    0    |    12   |    0    |
+|          |                          add_ln305_1_fu_408                         |    0    |    0    |    0    |    0    |    12   |    0    |
+|          |                           add_ln313_fu_429                          |    0    |    0    |    0    |    0    |    12   |    0    |
+|----------|---------------------------------------------------------------------|---------|---------|---------|---------|---------|---------|
+|    sub   |                           sub_ln306_fu_394                          |    0    |    0    |    0    |    0    |    21   |    0    |
+|----------|---------------------------------------------------------------------|---------|---------|---------|---------|---------|---------|
+|   icmp   |                          icmp_ln305_fu_362                          |    0    |    0    |    0    |    0    |    12   |    0    |
+|----------|---------------------------------------------------------------------|---------|---------|---------|---------|---------|---------|
+|          |                       epsilon_read_read_fu_184                      |    0    |    0    |    0    |    0    |    0    |    0    |
+|          |                          Y_read_read_fu_190                         |    0    |    0    |    0    |    0    |    0    |    0    |
+|          |                         BE_read_read_fu_196                         |    0    |    0    |    0    |    0    |    0    |    0    |
+|   read   |                          G_read_read_fu_202                         |    0    |    0    |    0    |    0    |    0    |    0    |
+|          |                          B_read_read_fu_208                         |    0    |    0    |    0    |    0    |    0    |    0    |
+|          |                          W_read_read_fu_214                         |    0    |    0    |    0    |    0    |    0    |    0    |
+|          |                          X_read_read_fu_220                         |    0    |    0    |    0    |    0    |    0    |    0    |
+|----------|---------------------------------------------------------------------|---------|---------|---------|---------|---------|---------|
+|  readreq |                          grp_readreq_fu_226                         |    0    |    0    |    0    |    0    |    0    |    0    |
+|----------|---------------------------------------------------------------------|---------|---------|---------|---------|---------|---------|
+|partselect|                           trunc_ln_fu_310                           |    0    |    0    |    0    |    0    |    0    |    0    |
+|          |                           trunc_ln1_fu_326                          |    0    |    0    |    0    |    0    |    0    |    0    |
+|----------|---------------------------------------------------------------------|---------|---------|---------|---------|---------|---------|
+|   sext   |                          sext_ln296_fu_346                          |    0    |    0    |    0    |    0    |    0    |    0    |
+|----------|---------------------------------------------------------------------|---------|---------|---------|---------|---------|---------|
+|bitconcatenate|                             p_shl_fu_374                            |    0    |    0    |    0    |    0    |    0    |    0    |
+|          |                              tmp_fu_382                             |    0    |    0    |    0    |    0    |    0    |    0    |
+|----------|---------------------------------------------------------------------|---------|---------|---------|---------|---------|---------|
+|   zext   |                          zext_ln306_fu_390                          |    0    |    0    |    0    |    0    |    0    |    0    |
+|----------|---------------------------------------------------------------------|---------|---------|---------|---------|---------|---------|
+|    shl   |                           empty_174_fu_401                          |    0    |    0    |    0    |    0    |    0    |    0    |
+|          |                           shl_ln313_fu_424                          |    0    |    0    |    0    |    0    |    0    |    0    |
+|----------|---------------------------------------------------------------------|---------|---------|---------|---------|---------|---------|
+|   Total  |                                                                     |    24   |   513   | 185.745 |  68193  |  59693  |    32   |
+|----------|---------------------------------------------------------------------|---------|---------|---------|---------|---------|---------|
 
 Memories:
 +-----------------------------------------------------------------------------------+--------+--------+--------+
@@ -2199,22 +2198,22 @@ Memories:
 +--------------------+--------+
 |                    |   FF   |
 +--------------------+--------+
-|   BE_read_reg_459  |   64   |
-|   B_read_reg_469   |   64   |
-|   G_read_reg_464   |   64   |
-|   W_read_reg_474   |   64   |
-|   Y_read_reg_454   |   64   |
-|  add_ln402_reg_518 |    5   |
-|  empty_46_reg_508  |    5   |
-|epsilon_read_reg_449|   16   |
-|gmem_in_addr_reg_490|   256  |
-|    hi_1_reg_495    |    5   |
-|     hi_reg_435     |    5   |
-|   indvar_reg_442   |    4   |
-|  shl_ln402_reg_513 |    5   |
-|  sub_ln395_reg_503 |   14   |
-|  trunc_ln1_reg_485 |   59   |
-|  trunc_ln_reg_479  |   59   |
+|   BE_read_reg_460  |   64   |
+|   B_read_reg_470   |   64   |
+|   G_read_reg_465   |   64   |
+|   W_read_reg_475   |   64   |
+|   Y_read_reg_455   |   64   |
+|  add_ln313_reg_519 |    5   |
+|  empty_174_reg_509 |    5   |
+|epsilon_read_reg_450|   16   |
+|gmem_in_addr_reg_491|   256  |
+|    hi_1_reg_496    |    5   |
+|     hi_reg_436     |    5   |
+|   indvar_reg_443   |    4   |
+|  shl_ln313_reg_514 |    5   |
+|  sub_ln306_reg_504 |   14   |
+|  trunc_ln1_reg_486 |   59   |
+|  trunc_ln_reg_480  |   59   |
 +--------------------+--------+
 |        Total       |   753  |
 +--------------------+--------+
@@ -2224,11 +2223,11 @@ Memories:
 |                                Comp                                |  Pin | Size |  BW  | S x BW ||  Delay  ||    FF   ||   LUT   |
 |--------------------------------------------------------------------|------|------|------|--------||---------||---------||---------|
 |                         grp_readreq_fu_226                         |  p1  |   2  |  256 |   512  ||    0    ||    9    |
-|            grp_UpConv_Fused_Row_8_16_16_960_480_s_fu_242           |  p10 |   4  |   5  |   20   ||    0    ||    14   |
-| grp_upconv_core_top_ucb0_Pipeline_LOAD_ROW_VITIS_LOOP_397_2_fu_299 |  p2  |   2  |   5  |   10   ||    0    ||    9    |
-| grp_upconv_core_top_ucb0_Pipeline_LOAD_ROW_VITIS_LOOP_397_2_fu_299 |  p3  |   2  |  14  |   28   ||    0    ||    9    |
+|            grp_UpConv_Fused_Row_8_16_16_960_480_s_fu_242           |  p10 |   5  |   5  |   25   ||    0    ||    20   |
+| grp_upconv_core_top_ucb0_Pipeline_LOAD_ROW_VITIS_LOOP_308_2_fu_299 |  p2  |   2  |   5  |   10   ||    0    ||    9    |
+| grp_upconv_core_top_ucb0_Pipeline_LOAD_ROW_VITIS_LOOP_308_2_fu_299 |  p4  |   2  |  14  |   28   ||    0    ||    9    |
 |--------------------------------------------------------------------|------|------|------|--------||---------||---------||---------|
-|                                Total                               |      |      |      |   570  ||  1.806  ||    0    ||    41   |
+|                                Total                               |      |      |      |   575  ||  1.855  ||    0    ||    47   |
 |--------------------------------------------------------------------|------|------|------|--------||---------||---------||---------|
 
 
@@ -2237,10 +2236,10 @@ Memories:
 +-----------+--------+--------+--------+--------+--------+--------+
 |           |  BRAM  |   DSP  |  Delay |   FF   |   LUT  |  URAM  |
 +-----------+--------+--------+--------+--------+--------+--------+
-|  Function |   144  |   768  |   182  |  65483 |  41046 |    -   |
+|  Function |   24   |   513  |   185  |  68193 |  59693 |   32   |
 |   Memory  |    -   |    -   |    -   |   96   |   24   |   20   |
-|Multiplexer|    -   |    -   |    1   |    0   |   41   |    -   |
+|Multiplexer|    -   |    -   |    1   |    0   |   47   |    -   |
 |  Register |    -   |    -   |    -   |   753  |    -   |    -   |
 +-----------+--------+--------+--------+--------+--------+--------+
-|   Total   |   144  |   768  |   184  |  66332 |  41111 |   20   |
+|   Total   |   24   |   513  |   187  |  69042 |  59764 |   52   |
 +-----------+--------+--------+--------+--------+--------+--------+

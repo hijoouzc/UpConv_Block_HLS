@@ -1,0 +1,1557 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<cdfg:DBCdfg xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:cdfg="http://www.autoesl.com/DBCdfg" timeStamp="1781756486138">
+  <ports id="1" name="gmem_in" type="PortType" coreId="4294967295" bitwidth="256" iftype="IfTypeFifo">
+    <dataOutputObjs>getelementptr</dataOutputObjs>
+    <dataOutputObjs>call</dataOutputObjs>
+    <dataOutputObjs>getelementptr</dataOutputObjs>
+    <dataOutputObjs>call</dataOutputObjs>
+  </ports>
+  <ports id="2" name="gmem_weight" type="PortType" coreId="4294967295" bitwidth="256" iftype="IfTypeFifo">
+    <dataOutputObjs>call</dataOutputObjs>
+    <dataOutputObjs>call</dataOutputObjs>
+    <dataOutputObjs>call</dataOutputObjs>
+    <dataOutputObjs>call</dataOutputObjs>
+  </ports>
+  <ports id="3" name="gmem_param" type="PortType" coreId="4294967295" bitwidth="256" iftype="IfTypeFifo">
+    <dataOutputObjs>call</dataOutputObjs>
+    <dataOutputObjs>call</dataOutputObjs>
+    <dataOutputObjs>call</dataOutputObjs>
+    <dataOutputObjs>call</dataOutputObjs>
+  </ports>
+  <ports id="4" name="gmem_out" type="PortType" coreId="4294967295" bitwidth="256" direction="DirOut" iftype="IfTypeFifo">
+    <dataInputObjs>call</dataInputObjs>
+    <dataInputObjs>call</dataInputObjs>
+    <dataInputObjs>call</dataInputObjs>
+    <dataInputObjs>call</dataInputObjs>
+  </ports>
+  <ports id="5" name="X" type="PortType" originalName="X" coreId="4294967295" bitwidth="64">
+    <dataOutputObjs>read</dataOutputObjs>
+  </ports>
+  <ports id="6" name="W" type="PortType" originalName="W" coreId="4294967295" bitwidth="64">
+    <dataOutputObjs>read</dataOutputObjs>
+  </ports>
+  <ports id="7" name="B" type="PortType" originalName="B" coreId="4294967295" bitwidth="64">
+    <dataOutputObjs>read</dataOutputObjs>
+  </ports>
+  <ports id="8" name="G" type="PortType" originalName="G" coreId="4294967295" bitwidth="64">
+    <dataOutputObjs>read</dataOutputObjs>
+  </ports>
+  <ports id="9" name="BE" type="PortType" originalName="BE" coreId="4294967295" bitwidth="64">
+    <dataOutputObjs>read</dataOutputObjs>
+  </ports>
+  <ports id="10" name="Y" type="PortType" originalName="Y" coreId="4294967295" bitwidth="64">
+    <dataOutputObjs>read</dataOutputObjs>
+  </ports>
+  <ports id="11" name="epsilon" type="PortType" originalName="epsilon" coreId="4294967295" bitwidth="16">
+    <dataOutputObjs>read</dataOutputObjs>
+  </ports>
+  <ports id="12" name="mode" type="PortType" originalName="mode" coreId="4294967295" bitwidth="32">
+    <dataOutputObjs>read</dataOutputObjs>
+  </ports>
+  <edges id="133" source_obj="//@ports.11" sink_obj="//@blocks.0/@node_objs.2"/>
+  <edges id="136" source_obj="//@ports.10" sink_obj="//@blocks.0/@node_objs.3"/>
+  <edges id="139" source_obj="//@ports.9" sink_obj="//@blocks.0/@node_objs.4"/>
+  <edges id="141" source_obj="//@ports.8" sink_obj="//@blocks.0/@node_objs.5"/>
+  <edges id="143" source_obj="//@ports.7" sink_obj="//@blocks.0/@node_objs.6"/>
+  <edges id="145" source_obj="//@ports.6" sink_obj="//@blocks.0/@node_objs.7"/>
+  <edges id="147" source_obj="//@ports.5" sink_obj="//@blocks.0/@node_objs.8"/>
+  <edges id="149" source_obj="//@ports.4" sink_obj="//@blocks.0/@node_objs.9"/>
+  <edges id="169" source_obj="//@blocks.0/@node_objs.2" sink_obj="//@blocks.0/@node_objs.10"/>
+  <edges id="186" source_obj="//@blocks.0/@node_objs.2" sink_obj="//@blocks.0/@node_objs.11"/>
+  <edges id="202" source_obj="//@blocks.0/@node_objs.2" sink_obj="//@blocks.0/@node_objs.12"/>
+  <edges id="203" source_obj="//@blocks.0/@node_objs.11" sink_obj="//@blocks.0/@node_objs.13"/>
+  <edges id="208" source_obj="//@blocks.0/@node_objs.13" sink_obj="//@blocks.0/@node_objs.14"/>
+  <edges id="213" source_obj="//@blocks.0/@node_objs.14" sink_obj="//@blocks.0/@node_objs.15"/>
+  <edges id="214" source_obj="//@blocks.0/@node_objs.12" sink_obj="//@blocks.0/@node_objs.16"/>
+  <edges id="215" source_obj="//@blocks.0/@node_objs.15" sink_obj="//@blocks.0/@node_objs.17"/>
+  <edges id="216" source_obj="//@blocks.0/@node_objs.16" sink_obj="//@blocks.0/@node_objs.17"/>
+  <edges id="217" source_obj="//@blocks.0/@node_objs.17" sink_obj="//@blocks.0/@node_objs.18"/>
+  <edges id="218" source_obj="//@blocks.0/@node_objs.17" sink_obj="//@blocks.0/@node_objs.19"/>
+  <edges id="219" source_obj="//@blocks.0/@node_objs.17" sink_obj="//@blocks.0/@node_objs.20"/>
+  <edges id="222" source_obj="//@blocks.0/@node_objs.9" sink_obj="//@blocks.0/@node_objs.21"/>
+  <edges id="227" source_obj="//@blocks.0/@node_objs.21" sink_obj="//@blocks.0/@node_objs.22"/>
+  <edges id="228" source_obj="//@ports.0" sink_obj="//@blocks.0/@node_objs.23"/>
+  <edges id="229" source_obj="//@blocks.0/@node_objs.22" sink_obj="//@blocks.0/@node_objs.23"/>
+  <edges id="232" source_obj="//@blocks.0/@node_objs.23" sink_obj="//@blocks.0/@node_objs.24"/>
+  <edges id="233" source_obj="//@blocks.0/@node_objs.19" sink_obj="//@blocks.0/@node_objs.24"/>
+  <edges id="236" source_obj="//@ports.0" sink_obj="//@blocks.0/@node_objs.25"/>
+  <edges id="237" source_obj="//@blocks.0/@node_objs.18" sink_obj="//@blocks.0/@node_objs.25"/>
+  <edges id="238" source_obj="//@blocks.0/@node_objs.21" sink_obj="//@blocks.0/@node_objs.25"/>
+  <edges id="239" source_obj="//@blocks.0/@node_objs.14" sink_obj="//@blocks.0/@node_objs.25"/>
+  <edges id="240" source_obj="//@blocks.0/@node_objs.14" sink_obj="//@blocks.0/@node_objs.25"/>
+  <edges id="243" source_obj="//@ports.1" sink_obj="//@blocks.0/@node_objs.26"/>
+  <edges id="244" source_obj="//@blocks.0/@node_objs.8" sink_obj="//@blocks.0/@node_objs.26"/>
+  <edges id="245" source_obj="//@ports.2" sink_obj="//@blocks.0/@node_objs.26"/>
+  <edges id="246" source_obj="//@blocks.0/@node_objs.7" sink_obj="//@blocks.0/@node_objs.26"/>
+  <edges id="247" source_obj="//@blocks.0/@node_objs.6" sink_obj="//@blocks.0/@node_objs.26"/>
+  <edges id="248" source_obj="//@blocks.0/@node_objs.5" sink_obj="//@blocks.0/@node_objs.26"/>
+  <edges id="249" source_obj="//@blocks.0/@node_objs.26" sink_obj="//@ports.3"/>
+  <edges id="250" source_obj="//@blocks.0/@node_objs.4" sink_obj="//@blocks.0/@node_objs.26"/>
+  <edges id="251" source_obj="//@blocks.0/@node_objs.3" sink_obj="//@blocks.0/@node_objs.26"/>
+  <edges id="252" source_obj="//@blocks.0/@node_objs.12" sink_obj="//@blocks.0/@node_objs.26"/>
+  <edges id="253" source_obj="//@blocks.0/@node_objs.12" sink_obj="//@blocks.0/@node_objs.26"/>
+  <edges id="254" source_obj="//@blocks.0/@node_objs.11" sink_obj="//@blocks.0/@node_objs.26"/>
+  <edges id="255" source_obj="//@blocks.0/@node_objs.10" sink_obj="//@blocks.0/@node_objs.26"/>
+  <edges id="260" source_obj="//@blocks.0/@node_objs.1" sink_obj="//@blocks.0/@node_objs.27"/>
+  <edges id="263" source_obj="//@blocks.0/@node_objs.0" sink_obj="//@blocks.0/@node_objs.28"/>
+  <edges id="264" edge_type="CtrlEdge" source_obj="//@blocks.1" sink_obj="//@blocks.0/@node_objs.29"/>
+  <edges id="265" source_obj="//@blocks.0/@node_objs.0" sink_obj="//@blocks.1/@node_objs.0"/>
+  <edges id="266" source_obj="//@blocks.0/@node_objs.1" sink_obj="//@blocks.1/@node_objs.1"/>
+  <edges id="267" source_obj="//@blocks.1/@node_objs.0" sink_obj="//@blocks.1/@node_objs.2"/>
+  <edges id="268" source_obj="//@blocks.0/@node_objs.12" sink_obj="//@blocks.1/@node_objs.2"/>
+  <edges id="269" source_obj="//@blocks.1/@node_objs.1" sink_obj="//@blocks.1/@node_objs.3"/>
+  <edges id="272" source_obj="//@blocks.1/@node_objs.2" sink_obj="//@blocks.1/@node_objs.4"/>
+  <edges id="273" edge_type="CtrlEdge" source_obj="//@blocks.3" sink_obj="//@blocks.1/@node_objs.4"/>
+  <edges id="274" edge_type="CtrlEdge" source_obj="//@blocks.2" sink_obj="//@blocks.1/@node_objs.4"/>
+  <edges id="275" source_obj="//@blocks.1/@node_objs.1" sink_obj="//@blocks.2/@node_objs.0"/>
+  <edges id="276" source_obj="//@blocks.0/@node_objs.20" sink_obj="//@blocks.2/@node_objs.1"/>
+  <edges id="277" source_obj="//@blocks.2/@node_objs.0" sink_obj="//@blocks.2/@node_objs.1"/>
+  <edges id="278" source_obj="//@blocks.2/@node_objs.1" sink_obj="//@blocks.2/@node_objs.2"/>
+  <edges id="279" source_obj="//@blocks.0/@node_objs.20" sink_obj="//@blocks.2/@node_objs.2"/>
+  <edges id="282" source_obj="//@blocks.2/@node_objs.2" sink_obj="//@blocks.2/@node_objs.3"/>
+  <edges id="285" source_obj="//@blocks.2/@node_objs.3" sink_obj="//@blocks.2/@node_objs.4"/>
+  <edges id="286" source_obj="//@blocks.2/@node_objs.4" sink_obj="//@blocks.2/@node_objs.5"/>
+  <edges id="287" source_obj="//@blocks.0/@node_objs.9" sink_obj="//@blocks.2/@node_objs.5"/>
+  <edges id="288" source_obj="//@blocks.1/@node_objs.0" sink_obj="//@blocks.2/@node_objs.6"/>
+  <edges id="289" source_obj="//@blocks.2/@node_objs.6" sink_obj="//@blocks.2/@node_objs.7"/>
+  <edges id="293" source_obj="//@blocks.0/@node_objs.12" sink_obj="//@blocks.2/@node_objs.8"/>
+  <edges id="294" source_obj="//@blocks.2/@node_objs.7" sink_obj="//@blocks.2/@node_objs.8"/>
+  <edges id="296" source_obj="//@blocks.2/@node_objs.5" sink_obj="//@blocks.2/@node_objs.9"/>
+  <edges id="299" source_obj="//@blocks.2/@node_objs.9" sink_obj="//@blocks.2/@node_objs.10"/>
+  <edges id="300" source_obj="//@ports.0" sink_obj="//@blocks.2/@node_objs.11"/>
+  <edges id="301" source_obj="//@blocks.2/@node_objs.10" sink_obj="//@blocks.2/@node_objs.11"/>
+  <edges id="303" source_obj="//@blocks.2/@node_objs.11" sink_obj="//@blocks.2/@node_objs.12"/>
+  <edges id="304" source_obj="//@blocks.0/@node_objs.19" sink_obj="//@blocks.2/@node_objs.12"/>
+  <edges id="307" source_obj="//@ports.0" sink_obj="//@blocks.2/@node_objs.13"/>
+  <edges id="308" source_obj="//@blocks.0/@node_objs.18" sink_obj="//@blocks.2/@node_objs.13"/>
+  <edges id="309" source_obj="//@blocks.2/@node_objs.9" sink_obj="//@blocks.2/@node_objs.13"/>
+  <edges id="310" source_obj="//@blocks.0/@node_objs.14" sink_obj="//@blocks.2/@node_objs.13"/>
+  <edges id="311" source_obj="//@blocks.2/@node_objs.8" sink_obj="//@blocks.2/@node_objs.13"/>
+  <edges id="312" source_obj="//@blocks.0/@node_objs.14" sink_obj="//@blocks.2/@node_objs.13"/>
+  <edges id="313" source_obj="//@blocks.1/@node_objs.0" sink_obj="//@blocks.2/@node_objs.14"/>
+  <edges id="315" source_obj="//@blocks.2/@node_objs.14" sink_obj="//@blocks.2/@node_objs.15"/>
+  <edges id="318" source_obj="//@ports.1" sink_obj="//@blocks.2/@node_objs.16"/>
+  <edges id="319" source_obj="//@blocks.0/@node_objs.8" sink_obj="//@blocks.2/@node_objs.16"/>
+  <edges id="320" source_obj="//@ports.2" sink_obj="//@blocks.2/@node_objs.16"/>
+  <edges id="321" source_obj="//@blocks.0/@node_objs.7" sink_obj="//@blocks.2/@node_objs.16"/>
+  <edges id="322" source_obj="//@blocks.0/@node_objs.6" sink_obj="//@blocks.2/@node_objs.16"/>
+  <edges id="323" source_obj="//@blocks.0/@node_objs.5" sink_obj="//@blocks.2/@node_objs.16"/>
+  <edges id="324" source_obj="//@blocks.2/@node_objs.16" sink_obj="//@ports.3"/>
+  <edges id="325" source_obj="//@blocks.0/@node_objs.4" sink_obj="//@blocks.2/@node_objs.16"/>
+  <edges id="326" source_obj="//@blocks.0/@node_objs.3" sink_obj="//@blocks.2/@node_objs.16"/>
+  <edges id="327" source_obj="//@blocks.0/@node_objs.12" sink_obj="//@blocks.2/@node_objs.16"/>
+  <edges id="328" source_obj="//@blocks.0/@node_objs.12" sink_obj="//@blocks.2/@node_objs.16"/>
+  <edges id="329" source_obj="//@blocks.0/@node_objs.11" sink_obj="//@blocks.2/@node_objs.16"/>
+  <edges id="330" source_obj="//@blocks.0/@node_objs.10" sink_obj="//@blocks.2/@node_objs.16"/>
+  <edges id="331" source_obj="//@blocks.2/@node_objs.15" sink_obj="//@blocks.2/@node_objs.16"/>
+  <edges id="333" source_obj="//@ports.1" sink_obj="//@blocks.2/@node_objs.17"/>
+  <edges id="334" source_obj="//@blocks.0/@node_objs.8" sink_obj="//@blocks.2/@node_objs.17"/>
+  <edges id="335" source_obj="//@ports.2" sink_obj="//@blocks.2/@node_objs.17"/>
+  <edges id="336" source_obj="//@blocks.0/@node_objs.7" sink_obj="//@blocks.2/@node_objs.17"/>
+  <edges id="337" source_obj="//@blocks.0/@node_objs.6" sink_obj="//@blocks.2/@node_objs.17"/>
+  <edges id="338" source_obj="//@blocks.0/@node_objs.5" sink_obj="//@blocks.2/@node_objs.17"/>
+  <edges id="339" source_obj="//@blocks.2/@node_objs.17" sink_obj="//@ports.3"/>
+  <edges id="340" source_obj="//@blocks.0/@node_objs.4" sink_obj="//@blocks.2/@node_objs.17"/>
+  <edges id="341" source_obj="//@blocks.0/@node_objs.3" sink_obj="//@blocks.2/@node_objs.17"/>
+  <edges id="342" source_obj="//@blocks.0/@node_objs.12" sink_obj="//@blocks.2/@node_objs.17"/>
+  <edges id="343" source_obj="//@blocks.0/@node_objs.12" sink_obj="//@blocks.2/@node_objs.17"/>
+  <edges id="344" source_obj="//@blocks.0/@node_objs.11" sink_obj="//@blocks.2/@node_objs.17"/>
+  <edges id="345" source_obj="//@blocks.0/@node_objs.10" sink_obj="//@blocks.2/@node_objs.17"/>
+  <edges id="346" source_obj="//@blocks.2/@node_objs.14" sink_obj="//@blocks.2/@node_objs.17"/>
+  <edges id="347" source_obj="//@blocks.1/@node_objs.0" sink_obj="//@blocks.2/@node_objs.18"/>
+  <edges id="349" source_obj="//@blocks.1/@node_objs.3" sink_obj="//@blocks.2/@node_objs.19"/>
+  <edges id="350" source_obj="//@blocks.0/@node_objs.1" sink_obj="//@blocks.2/@node_objs.19"/>
+  <edges id="351" source_obj="//@blocks.2/@node_objs.18" sink_obj="//@blocks.2/@node_objs.20"/>
+  <edges id="352" source_obj="//@blocks.0/@node_objs.0" sink_obj="//@blocks.2/@node_objs.20"/>
+  <edges id="353" edge_type="CtrlEdge" source_obj="//@blocks.1" sink_obj="//@blocks.2/@node_objs.21"/>
+  <edges id="354" source_obj="//@blocks.0/@node_objs.12" sink_obj="//@blocks.3/@node_objs.0"/>
+  <edges id="356" source_obj="//@blocks.3/@node_objs.0" sink_obj="//@blocks.3/@node_objs.1"/>
+  <edges id="359" source_obj="//@ports.1" sink_obj="//@blocks.3/@node_objs.2"/>
+  <edges id="360" source_obj="//@blocks.0/@node_objs.8" sink_obj="//@blocks.3/@node_objs.2"/>
+  <edges id="361" source_obj="//@ports.2" sink_obj="//@blocks.3/@node_objs.2"/>
+  <edges id="362" source_obj="//@blocks.0/@node_objs.7" sink_obj="//@blocks.3/@node_objs.2"/>
+  <edges id="363" source_obj="//@blocks.0/@node_objs.6" sink_obj="//@blocks.3/@node_objs.2"/>
+  <edges id="364" source_obj="//@blocks.0/@node_objs.5" sink_obj="//@blocks.3/@node_objs.2"/>
+  <edges id="365" source_obj="//@blocks.3/@node_objs.2" sink_obj="//@ports.3"/>
+  <edges id="366" source_obj="//@blocks.0/@node_objs.4" sink_obj="//@blocks.3/@node_objs.2"/>
+  <edges id="367" source_obj="//@blocks.0/@node_objs.3" sink_obj="//@blocks.3/@node_objs.2"/>
+  <edges id="368" source_obj="//@blocks.0/@node_objs.12" sink_obj="//@blocks.3/@node_objs.2"/>
+  <edges id="369" source_obj="//@blocks.0/@node_objs.12" sink_obj="//@blocks.3/@node_objs.2"/>
+  <edges id="370" source_obj="//@blocks.0/@node_objs.11" sink_obj="//@blocks.3/@node_objs.2"/>
+  <edges id="371" source_obj="//@blocks.0/@node_objs.10" sink_obj="//@blocks.3/@node_objs.2"/>
+  <edges id="372" source_obj="//@blocks.3/@node_objs.1" sink_obj="//@blocks.3/@node_objs.2"/>
+  <edges id="373" sink_obj="//@blocks.0/@node_objs.25"/>
+  <edges id="374" sink_obj="//@blocks.0/@node_objs.26"/>
+  <edges id="375" sink_obj="//@blocks.0/@node_objs.26"/>
+  <edges id="376" sink_obj="//@blocks.0/@node_objs.26"/>
+  <edges id="377" sink_obj="//@blocks.0/@node_objs.26"/>
+  <edges id="378" sink_obj="//@blocks.0/@node_objs.26"/>
+  <edges id="379" sink_obj="//@blocks.0/@node_objs.26"/>
+  <edges id="380" sink_obj="//@blocks.0/@node_objs.26"/>
+  <edges id="381" sink_obj="//@blocks.0/@node_objs.26"/>
+  <edges id="382" sink_obj="//@blocks.0/@node_objs.26"/>
+  <edges id="383" sink_obj="//@blocks.0/@node_objs.26"/>
+  <edges id="384" sink_obj="//@blocks.0/@node_objs.26"/>
+  <edges id="385" sink_obj="//@blocks.0/@node_objs.26"/>
+  <edges id="386" sink_obj="//@blocks.0/@node_objs.26"/>
+  <edges id="387" sink_obj="//@blocks.0/@node_objs.26"/>
+  <edges id="388" sink_obj="//@blocks.0/@node_objs.26"/>
+  <edges id="389" sink_obj="//@blocks.0/@node_objs.26"/>
+  <edges id="390" sink_obj="//@blocks.0/@node_objs.26"/>
+  <edges id="391" sink_obj="//@blocks.0/@node_objs.26"/>
+  <edges id="392" sink_obj="//@blocks.0/@node_objs.26"/>
+  <edges id="393" sink_obj="//@blocks.2/@node_objs.13"/>
+  <edges id="394" sink_obj="//@blocks.2/@node_objs.16"/>
+  <edges id="395" sink_obj="//@blocks.2/@node_objs.16"/>
+  <edges id="396" sink_obj="//@blocks.2/@node_objs.16"/>
+  <edges id="397" sink_obj="//@blocks.2/@node_objs.16"/>
+  <edges id="398" sink_obj="//@blocks.2/@node_objs.16"/>
+  <edges id="399" sink_obj="//@blocks.2/@node_objs.16"/>
+  <edges id="400" sink_obj="//@blocks.2/@node_objs.16"/>
+  <edges id="401" sink_obj="//@blocks.2/@node_objs.16"/>
+  <edges id="402" sink_obj="//@blocks.2/@node_objs.16"/>
+  <edges id="403" sink_obj="//@blocks.2/@node_objs.16"/>
+  <edges id="404" sink_obj="//@blocks.2/@node_objs.16"/>
+  <edges id="405" sink_obj="//@blocks.2/@node_objs.16"/>
+  <edges id="406" sink_obj="//@blocks.2/@node_objs.16"/>
+  <edges id="407" sink_obj="//@blocks.2/@node_objs.16"/>
+  <edges id="408" sink_obj="//@blocks.2/@node_objs.16"/>
+  <edges id="409" sink_obj="//@blocks.2/@node_objs.16"/>
+  <edges id="410" sink_obj="//@blocks.2/@node_objs.16"/>
+  <edges id="411" sink_obj="//@blocks.2/@node_objs.16"/>
+  <edges id="412" sink_obj="//@blocks.2/@node_objs.16"/>
+  <edges id="413" sink_obj="//@blocks.2/@node_objs.17"/>
+  <edges id="414" sink_obj="//@blocks.2/@node_objs.17"/>
+  <edges id="415" sink_obj="//@blocks.2/@node_objs.17"/>
+  <edges id="416" sink_obj="//@blocks.2/@node_objs.17"/>
+  <edges id="417" sink_obj="//@blocks.2/@node_objs.17"/>
+  <edges id="418" sink_obj="//@blocks.2/@node_objs.17"/>
+  <edges id="419" sink_obj="//@blocks.2/@node_objs.17"/>
+  <edges id="420" sink_obj="//@blocks.2/@node_objs.17"/>
+  <edges id="421" sink_obj="//@blocks.2/@node_objs.17"/>
+  <edges id="422" sink_obj="//@blocks.2/@node_objs.17"/>
+  <edges id="423" sink_obj="//@blocks.2/@node_objs.17"/>
+  <edges id="424" sink_obj="//@blocks.2/@node_objs.17"/>
+  <edges id="425" sink_obj="//@blocks.2/@node_objs.17"/>
+  <edges id="426" sink_obj="//@blocks.2/@node_objs.17"/>
+  <edges id="427" sink_obj="//@blocks.2/@node_objs.17"/>
+  <edges id="428" sink_obj="//@blocks.2/@node_objs.17"/>
+  <edges id="429" sink_obj="//@blocks.2/@node_objs.17"/>
+  <edges id="430" sink_obj="//@blocks.2/@node_objs.17"/>
+  <edges id="431" sink_obj="//@blocks.2/@node_objs.17"/>
+  <edges id="432" sink_obj="//@blocks.3/@node_objs.2"/>
+  <edges id="433" sink_obj="//@blocks.3/@node_objs.2"/>
+  <edges id="434" sink_obj="//@blocks.3/@node_objs.2"/>
+  <edges id="435" sink_obj="//@blocks.3/@node_objs.2"/>
+  <edges id="436" sink_obj="//@blocks.3/@node_objs.2"/>
+  <edges id="437" sink_obj="//@blocks.3/@node_objs.2"/>
+  <edges id="438" sink_obj="//@blocks.3/@node_objs.2"/>
+  <edges id="439" sink_obj="//@blocks.3/@node_objs.2"/>
+  <edges id="440" sink_obj="//@blocks.3/@node_objs.2"/>
+  <edges id="441" sink_obj="//@blocks.3/@node_objs.2"/>
+  <edges id="442" sink_obj="//@blocks.3/@node_objs.2"/>
+  <edges id="443" sink_obj="//@blocks.3/@node_objs.2"/>
+  <edges id="444" sink_obj="//@blocks.3/@node_objs.2"/>
+  <edges id="445" sink_obj="//@blocks.3/@node_objs.2"/>
+  <edges id="446" sink_obj="//@blocks.3/@node_objs.2"/>
+  <edges id="447" sink_obj="//@blocks.3/@node_objs.2"/>
+  <edges id="448" sink_obj="//@blocks.3/@node_objs.2"/>
+  <edges id="449" sink_obj="//@blocks.3/@node_objs.2"/>
+  <edges id="450" sink_obj="//@blocks.3/@node_objs.2"/>
+  <edges id="933" edge_type="CtrlEdge" source_obj="//@blocks.0" sink_obj="//@blocks.1"/>
+  <edges id="934" edge_type="CtrlEdge" source_obj="//@blocks.1" sink_obj="//@blocks.2"/>
+  <edges id="935" edge_type="CtrlEdge" source_obj="//@blocks.1" sink_obj="//@blocks.3"/>
+  <edges id="936" edge_type="CtrlEdge" source_obj="//@blocks.2" sink_obj="//@blocks.1" is_back_edge="1"/>
+  <edges id="937" edge_type="VirtEdge" source_obj="//@blocks.0/@node_objs.25" sink_obj="//@blocks.0/@node_objs.26"/>
+  <edges id="938" edge_type="VirtEdge" source_obj="//@blocks.2/@node_objs.16" sink_obj="//@blocks.2/@node_objs.17"/>
+  <edges id="939" edge_type="VirtEdge" source_obj="//@blocks.2/@node_objs.13" sink_obj="//@blocks.2/@node_objs.16"/>
+  <edges id="940" edge_type="VirtEdge" source_obj="//@blocks.0/@node_objs.24" sink_obj="//@blocks.0/@node_objs.25"/>
+  <edges id="941" edge_type="VirtEdge" source_obj="//@blocks.2/@node_objs.16" sink_obj="//@blocks.2/@node_objs.17"/>
+  <edges id="942" edge_type="VirtEdge" source_obj="//@blocks.2/@node_objs.12" sink_obj="//@blocks.2/@node_objs.13"/>
+  <edges id="943" edge_type="VirtEdge" source_obj="//@blocks.0/@node_objs.27" sink_obj="//@blocks.1/@node_objs.1"/>
+  <edges id="944" edge_type="VirtEdge" source_obj="//@blocks.0/@node_objs.28" sink_obj="//@blocks.1/@node_objs.0"/>
+  <edges id="945" edge_type="VirtEdge" source_obj="//@blocks.0/@node_objs.24" sink_obj="//@blocks.2/@node_objs.12"/>
+  <edges id="946" edge_type="VirtEdge" source_obj="//@blocks.0/@node_objs.24" sink_obj="//@blocks.2/@node_objs.13"/>
+  <edges id="947" edge_type="VirtEdge" source_obj="//@blocks.0/@node_objs.25" sink_obj="//@blocks.2/@node_objs.12"/>
+  <edges id="948" edge_type="VirtEdge" source_obj="//@blocks.0/@node_objs.25" sink_obj="//@blocks.2/@node_objs.13"/>
+  <edges id="949" edge_type="VirtEdge" source_obj="//@blocks.0/@node_objs.26" sink_obj="//@blocks.2/@node_objs.16"/>
+  <edges id="950" edge_type="VirtEdge" source_obj="//@blocks.0/@node_objs.26" sink_obj="//@blocks.2/@node_objs.17"/>
+  <edges id="951" edge_type="VirtEdge" source_obj="//@blocks.0/@node_objs.27" sink_obj="//@blocks.2/@node_objs.19"/>
+  <edges id="952" edge_type="VirtEdge" source_obj="//@blocks.0/@node_objs.28" sink_obj="//@blocks.2/@node_objs.20"/>
+  <edges id="953" edge_type="VirtEdge" source_obj="//@blocks.0/@node_objs.26" sink_obj="//@blocks.3/@node_objs.2"/>
+  <edges id="954" edge_type="VirtEdge" source_obj="//@blocks.1/@node_objs.0" sink_obj="//@blocks.2/@node_objs.20"/>
+  <edges id="955" edge_type="VirtEdge" source_obj="//@blocks.1/@node_objs.1" sink_obj="//@blocks.2/@node_objs.19"/>
+  <edges id="956" edge_type="VirtEdge" source_obj="//@blocks.0/@node_objs.25" sink_obj="//@blocks.0/@node_objs.26"/>
+  <edges id="957" edge_type="VirtEdge" source_obj="//@blocks.2/@node_objs.13" sink_obj="//@blocks.2/@node_objs.16"/>
+  <edges id="958" edge_type="VirtEdge" source_obj="//@blocks.2/@node_objs.16" sink_obj="//@blocks.2/@node_objs.17"/>
+  <edges id="959" edge_type="VirtEdge" source_obj="//@blocks.0/@node_objs.25" sink_obj="//@blocks.2/@node_objs.13"/>
+  <edges id="960" edge_type="VirtEdge" source_obj="//@blocks.0/@node_objs.25" sink_obj="//@blocks.2/@node_objs.16"/>
+  <edges id="961" edge_type="VirtEdge" source_obj="//@blocks.0/@node_objs.25" sink_obj="//@blocks.2/@node_objs.17"/>
+  <edges id="962" edge_type="VirtEdge" source_obj="//@blocks.0/@node_objs.26" sink_obj="//@blocks.2/@node_objs.13"/>
+  <edges id="963" edge_type="VirtEdge" source_obj="//@blocks.0/@node_objs.26" sink_obj="//@blocks.2/@node_objs.16"/>
+  <edges id="964" edge_type="VirtEdge" source_obj="//@blocks.0/@node_objs.26" sink_obj="//@blocks.2/@node_objs.17"/>
+  <edges id="965" edge_type="VirtEdge" source_obj="//@blocks.0/@node_objs.25" sink_obj="//@blocks.3/@node_objs.2"/>
+  <edges id="966" edge_type="VirtEdge" source_obj="//@blocks.0/@node_objs.26" sink_obj="//@blocks.3/@node_objs.2"/>
+  <blocks id="91" name="entry" type="BlockType">
+    <controlOutputObjs>LOAD_ROW</controlOutputObjs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="32" name="hi" lineNumber="67" originalName="hi" fileName="../gen2/upconv_core_top.cpp" fileDirectory="../." coreId="4294967295" contextFuncName="upconv_core_top" bitwidth="8" opcode="alloca" m_display="0" m_topoIndex="1" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="../gen2/upconv_core_top.cpp" linenumber="67" fileDirectory="/home/hoinguyen/Documents/Vitis/UpConv_HLS/upconv_core" functionName="upconv_core_top"/>
+      <dataOutputObjs>store</dataOutputObjs>
+      <dataOutputObjs>load</dataOutputObjs>
+      <dataOutputObjs>store</dataOutputObjs>
+      <constName>empty</constName>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="33" name="indvar" coreId="4294967295" bitwidth="7" opcode="alloca" m_display="0" m_topoIndex="2" m_clusterGroupNumber="-1">
+      <dataOutputObjs>store</dataOutputObjs>
+      <dataOutputObjs>load</dataOutputObjs>
+      <dataOutputObjs>store</dataOutputObjs>
+      <constName>empty</constName>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="62" name="mode_read" lineNumber="7" fileName="../gen2/upconv_core_top.cpp" fileDirectory="../." coreName="s_axilite" implIndex="s_axilite" control="no" opType="adapter" coreId="120" contextFuncName="upconv_core_top" bitwidth="32" opcode="read" m_display="0" m_delay="1.0" m_topoIndex="3" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="../gen2/upconv_core_top.cpp" linenumber="7" fileDirectory="/home/hoinguyen/Documents/Vitis/UpConv_HLS/upconv_core" functionName="upconv_core_top"/>
+      <dataInputObjs>mode</dataInputObjs>
+      <dataOutputObjs>sparsemux</dataOutputObjs>
+      <dataOutputObjs>sparsemux</dataOutputObjs>
+      <dataOutputObjs>sparsemux</dataOutputObjs>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="63" name="epsilon_read" lineNumber="7" fileName="../gen2/upconv_core_top.cpp" fileDirectory="../." coreName="s_axilite" implIndex="s_axilite" control="no" opType="adapter" coreId="120" contextFuncName="upconv_core_top" bitwidth="16" opcode="read" m_display="0" m_delay="1.0" m_topoIndex="4" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="../gen2/upconv_core_top.cpp" linenumber="7" fileDirectory="/home/hoinguyen/Documents/Vitis/UpConv_HLS/upconv_core" functionName="upconv_core_top"/>
+      <dataInputObjs>epsilon</dataInputObjs>
+      <dataOutputObjs>call</dataOutputObjs>
+      <dataOutputObjs>call</dataOutputObjs>
+      <dataOutputObjs>call</dataOutputObjs>
+      <dataOutputObjs>call</dataOutputObjs>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="64" name="Y_read" lineNumber="7" fileName="../gen2/upconv_core_top.cpp" fileDirectory="../." coreName="s_axilite" implIndex="s_axilite" control="no" opType="adapter" coreId="120" contextFuncName="upconv_core_top" bitwidth="64" opcode="read" m_display="0" m_delay="1.0" m_topoIndex="5" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="../gen2/upconv_core_top.cpp" linenumber="7" fileDirectory="/home/hoinguyen/Documents/Vitis/UpConv_HLS/upconv_core" functionName="upconv_core_top"/>
+      <dataInputObjs>Y</dataInputObjs>
+      <dataOutputObjs>call</dataOutputObjs>
+      <dataOutputObjs>call</dataOutputObjs>
+      <dataOutputObjs>call</dataOutputObjs>
+      <dataOutputObjs>call</dataOutputObjs>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="65" name="BE_read" lineNumber="7" fileName="../gen2/upconv_core_top.cpp" fileDirectory="../." coreName="s_axilite" implIndex="s_axilite" control="no" opType="adapter" coreId="120" contextFuncName="upconv_core_top" bitwidth="64" opcode="read" m_display="0" m_delay="1.0" m_topoIndex="6" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="../gen2/upconv_core_top.cpp" linenumber="7" fileDirectory="/home/hoinguyen/Documents/Vitis/UpConv_HLS/upconv_core" functionName="upconv_core_top"/>
+      <dataInputObjs>BE</dataInputObjs>
+      <dataOutputObjs>call</dataOutputObjs>
+      <dataOutputObjs>call</dataOutputObjs>
+      <dataOutputObjs>call</dataOutputObjs>
+      <dataOutputObjs>call</dataOutputObjs>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="66" name="G_read" lineNumber="7" fileName="../gen2/upconv_core_top.cpp" fileDirectory="../." coreName="s_axilite" implIndex="s_axilite" control="no" opType="adapter" coreId="120" contextFuncName="upconv_core_top" bitwidth="64" opcode="read" m_display="0" m_delay="1.0" m_topoIndex="7" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="../gen2/upconv_core_top.cpp" linenumber="7" fileDirectory="/home/hoinguyen/Documents/Vitis/UpConv_HLS/upconv_core" functionName="upconv_core_top"/>
+      <dataInputObjs>G</dataInputObjs>
+      <dataOutputObjs>call</dataOutputObjs>
+      <dataOutputObjs>call</dataOutputObjs>
+      <dataOutputObjs>call</dataOutputObjs>
+      <dataOutputObjs>call</dataOutputObjs>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="67" name="B_read" lineNumber="7" fileName="../gen2/upconv_core_top.cpp" fileDirectory="../." coreName="s_axilite" implIndex="s_axilite" control="no" opType="adapter" coreId="120" contextFuncName="upconv_core_top" bitwidth="64" opcode="read" m_display="0" m_delay="1.0" m_topoIndex="8" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="../gen2/upconv_core_top.cpp" linenumber="7" fileDirectory="/home/hoinguyen/Documents/Vitis/UpConv_HLS/upconv_core" functionName="upconv_core_top"/>
+      <dataInputObjs>B</dataInputObjs>
+      <dataOutputObjs>call</dataOutputObjs>
+      <dataOutputObjs>call</dataOutputObjs>
+      <dataOutputObjs>call</dataOutputObjs>
+      <dataOutputObjs>call</dataOutputObjs>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="68" name="W_read" lineNumber="7" fileName="../gen2/upconv_core_top.cpp" fileDirectory="../." coreName="s_axilite" implIndex="s_axilite" control="no" opType="adapter" coreId="120" contextFuncName="upconv_core_top" bitwidth="64" opcode="read" m_display="0" m_delay="1.0" m_topoIndex="9" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="../gen2/upconv_core_top.cpp" linenumber="7" fileDirectory="/home/hoinguyen/Documents/Vitis/UpConv_HLS/upconv_core" functionName="upconv_core_top"/>
+      <dataInputObjs>W</dataInputObjs>
+      <dataOutputObjs>call</dataOutputObjs>
+      <dataOutputObjs>call</dataOutputObjs>
+      <dataOutputObjs>call</dataOutputObjs>
+      <dataOutputObjs>call</dataOutputObjs>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="69" name="X_read" lineNumber="7" fileName="../gen2/upconv_core_top.cpp" fileDirectory="../." coreName="s_axilite" implIndex="s_axilite" control="no" opType="adapter" coreId="120" contextFuncName="upconv_core_top" bitwidth="64" opcode="read" m_display="0" m_delay="1.0" m_topoIndex="10" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="../gen2/upconv_core_top.cpp" linenumber="7" fileDirectory="/home/hoinguyen/Documents/Vitis/UpConv_HLS/upconv_core" functionName="upconv_core_top"/>
+      <dataInputObjs>X</dataInputObjs>
+      <dataOutputObjs>partselect</dataOutputObjs>
+      <dataOutputObjs>add</dataOutputObjs>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="71" name="c_out" lineNumber="7" originalName="c_out" fileName="../gen2/upconv_core_top.cpp" fileDirectory="../." rtlName="sparsemux_9_32_9_1_1_U728" coreName="BinarySparseMux_HasDef" implIndex="compactencoding_realdef" control="no" opType="sparsemux" coreId="150" contextFuncName="upconv_core_top" bitwidth="9" opcode="sparsemux" m_display="0" m_delay="0.52" m_topoIndex="11" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="../gen2/upconv_core_top.cpp" linenumber="7" fileDirectory="/home/hoinguyen/Documents/Vitis/UpConv_HLS/upconv_core" functionName="upconv_core_top"/>
+      <dataInputObjs>read</dataInputObjs>
+      <dataOutputObjs>call</dataOutputObjs>
+      <dataOutputObjs>call</dataOutputObjs>
+      <dataOutputObjs>call</dataOutputObjs>
+      <dataOutputObjs>call</dataOutputObjs>
+      <constName>empty</constName>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="72" name="c_in" lineNumber="7" originalName="c_in" fileName="../gen2/upconv_core_top.cpp" fileDirectory="../." rtlName="sparsemux_9_32_10_1_1_U729" coreName="BinarySparseMux_HasDef" implIndex="compactencoding_realdef" control="no" opType="sparsemux" coreId="150" contextFuncName="upconv_core_top" bitwidth="10" opcode="sparsemux" m_display="0" m_delay="0.52" m_topoIndex="12" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="../gen2/upconv_core_top.cpp" linenumber="7" fileDirectory="/home/hoinguyen/Documents/Vitis/UpConv_HLS/upconv_core" functionName="upconv_core_top"/>
+      <dataInputObjs>read</dataInputObjs>
+      <dataOutputObjs>add</dataOutputObjs>
+      <dataOutputObjs>call</dataOutputObjs>
+      <dataOutputObjs>call</dataOutputObjs>
+      <dataOutputObjs>call</dataOutputObjs>
+      <dataOutputObjs>call</dataOutputObjs>
+      <constName>empty</constName>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="73" name="w_in" lineNumber="56" originalName="w_in" fileName="../gen2/upconv_core_top.cpp" fileDirectory="../." rtlName="sparsemux_9_32_8_1_1_U730" coreName="BinarySparseMux_HasDef" implIndex="compactencoding_realdef" control="no" opType="sparsemux" coreId="150" contextFuncName="upconv_core_top" bitwidth="8" opcode="sparsemux" m_display="0" m_delay="0.52" m_topoIndex="13" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="../gen2/upconv_core_top.cpp" linenumber="56" fileDirectory="/home/hoinguyen/Documents/Vitis/UpConv_HLS/upconv_core" functionName="upconv_core_top"/>
+      <dataInputObjs>read</dataInputObjs>
+      <dataOutputObjs>zext</dataOutputObjs>
+      <dataOutputObjs>call</dataOutputObjs>
+      <dataOutputObjs>call</dataOutputObjs>
+      <dataOutputObjs>icmp</dataOutputObjs>
+      <dataOutputObjs>and</dataOutputObjs>
+      <dataOutputObjs>call</dataOutputObjs>
+      <dataOutputObjs>call</dataOutputObjs>
+      <dataOutputObjs>call</dataOutputObjs>
+      <dataOutputObjs>call</dataOutputObjs>
+      <dataOutputObjs>shl</dataOutputObjs>
+      <dataOutputObjs>call</dataOutputObjs>
+      <dataOutputObjs>call</dataOutputObjs>
+      <constName>empty</constName>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="74" name="add_ln53" lineNumber="53" fileName="../gen2/upconv_core_top.cpp" fileDirectory="../." rtlName="add_ln53_fu_445_p2" coreName="Adder" implIndex="fabric" control="no" opType="add" coreId="1" contextFuncName="upconv_core_top" bitwidth="10" opcode="add" m_display="0" m_delay="0.78" m_topoIndex="14" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="../gen2/upconv_core_top.cpp" linenumber="53" fileDirectory="/home/hoinguyen/Documents/Vitis/UpConv_HLS/upconv_core" functionName="upconv_core_top"/>
+      <dataInputObjs>sparsemux</dataInputObjs>
+      <dataOutputObjs>partselect</dataOutputObjs>
+      <constName>empty</constName>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="75" name="ci_words" lineNumber="53" fileName="../gen2/upconv_core_top.cpp" fileDirectory="../." rtlName="ci_words_reg_702" coreId="4294967295" contextFuncName="upconv_core_top" bitwidth="6" opcode="partselect" m_display="0" m_topoIndex="15" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="../gen2/upconv_core_top.cpp" linenumber="53" fileDirectory="/home/hoinguyen/Documents/Vitis/UpConv_HLS/upconv_core" functionName="upconv_core_top"/>
+      <dataInputObjs>add</dataInputObjs>
+      <dataOutputObjs>zext</dataOutputObjs>
+      <dataOutputObjs>call</dataOutputObjs>
+      <dataOutputObjs>call</dataOutputObjs>
+      <dataOutputObjs>call</dataOutputObjs>
+      <dataOutputObjs>call</dataOutputObjs>
+      <constName>empty</constName>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="76" name="zext_ln56" lineNumber="56" fileName="../gen2/upconv_core_top.cpp" fileDirectory="../." rtlName="mul_ln56_fu_487_p00" coreId="4294967295" contextFuncName="upconv_core_top" bitwidth="14" opcode="zext" nodeLabel="1.0" m_display="0" m_topoIndex="19" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="../gen2/upconv_core_top.cpp" linenumber="56" fileDirectory="/home/hoinguyen/Documents/Vitis/UpConv_HLS/upconv_core" functionName="upconv_core_top"/>
+      <dataInputObjs>partselect</dataInputObjs>
+      <dataOutputObjs>mul</dataOutputObjs>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="77" name="zext_ln56_1" lineNumber="56" fileName="../gen2/upconv_core_top.cpp" fileDirectory="../." rtlName="mul_ln56_fu_487_p10" coreId="4294967295" contextFuncName="upconv_core_top" bitwidth="14" opcode="zext" nodeLabel="1.0" m_display="0" m_topoIndex="20" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="../gen2/upconv_core_top.cpp" linenumber="56" fileDirectory="/home/hoinguyen/Documents/Vitis/UpConv_HLS/upconv_core" functionName="upconv_core_top"/>
+      <dataInputObjs>sparsemux</dataInputObjs>
+      <dataOutputObjs>mul</dataOutputObjs>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="78" name="mul_ln56" lineNumber="56" fileName="../gen2/upconv_core_top.cpp" fileDirectory="../." rtlName="mul_6ns_8ns_14_1_1_U731" coreName="Multiplier" implIndex="auto" control="no" opType="mul" coreId="3" contextFuncName="upconv_core_top" bitwidth="14" opcode="mul" nodeLabel="1.0" m_display="0" m_delay="1.65" m_topoIndex="21" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="../gen2/upconv_core_top.cpp" linenumber="56" fileDirectory="/home/hoinguyen/Documents/Vitis/UpConv_HLS/upconv_core" functionName="upconv_core_top"/>
+      <dataInputObjs>zext</dataInputObjs>
+      <dataInputObjs>zext</dataInputObjs>
+      <dataOutputObjs>trunc</dataOutputObjs>
+      <dataOutputObjs>zext</dataOutputObjs>
+      <dataOutputObjs>zext</dataOutputObjs>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="79" name="trunc_ln56" lineNumber="56" fileName="../gen2/upconv_core_top.cpp" fileDirectory="../." rtlName="trunc_ln56_fu_493_p1" coreId="4294967295" contextFuncName="upconv_core_top" bitwidth="13" opcode="trunc" nodeLabel="1.0" m_display="0" m_topoIndex="22" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="../gen2/upconv_core_top.cpp" linenumber="56" fileDirectory="/home/hoinguyen/Documents/Vitis/UpConv_HLS/upconv_core" functionName="upconv_core_top"/>
+      <dataInputObjs>mul</dataInputObjs>
+      <dataOutputObjs>call</dataOutputObjs>
+      <dataOutputObjs>call</dataOutputObjs>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="80" name="zext_ln56_2" lineNumber="56" fileName="../gen2/upconv_core_top.cpp" fileDirectory="../." rtlName="zext_ln56_2_fu_497_p1" coreId="4294967295" contextFuncName="upconv_core_top" bitwidth="64" opcode="zext" nodeLabel="2.0" m_display="0" m_topoIndex="23" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="../gen2/upconv_core_top.cpp" linenumber="56" fileDirectory="/home/hoinguyen/Documents/Vitis/UpConv_HLS/upconv_core" functionName="upconv_core_top"/>
+      <dataInputObjs>mul</dataInputObjs>
+      <dataOutputObjs>readreq</dataOutputObjs>
+      <dataOutputObjs>readreq</dataOutputObjs>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="81" name="zext_ln56_3" lineNumber="56" fileName="../gen2/upconv_core_top.cpp" fileDirectory="../." rtlName="zext_ln56_3_fu_511_p1" coreId="4294967295" contextFuncName="upconv_core_top" bitwidth="20" opcode="zext" nodeLabel="13.0" m_display="0" m_topoIndex="29" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="../gen2/upconv_core_top.cpp" linenumber="56" fileDirectory="/home/hoinguyen/Documents/Vitis/UpConv_HLS/upconv_core" functionName="upconv_core_top"/>
+      <dataInputObjs>mul</dataInputObjs>
+      <dataOutputObjs>mul</dataOutputObjs>
+      <dataOutputObjs>add</dataOutputObjs>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="82" name="trunc_ln" lineNumber="56" fileName="../gen2/upconv_core_top.cpp" fileDirectory="../." rtlName="trunc_ln_reg_711" coreId="4294967295" contextFuncName="upconv_core_top" bitwidth="59" opcode="partselect" m_display="0" m_topoIndex="16" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="../gen2/upconv_core_top.cpp" linenumber="56" fileDirectory="/home/hoinguyen/Documents/Vitis/UpConv_HLS/upconv_core" functionName="upconv_core_top"/>
+      <dataInputObjs>read</dataInputObjs>
+      <dataOutputObjs>sext</dataOutputObjs>
+      <dataOutputObjs>call</dataOutputObjs>
+      <constName>empty</constName>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="83" name="sext_ln56" lineNumber="56" fileName="../gen2/upconv_core_top.cpp" fileDirectory="../." rtlName="sext_ln56_fu_501_p1" coreId="4294967295" contextFuncName="upconv_core_top" bitwidth="64" opcode="sext" nodeLabel="2.0" m_display="0" m_topoIndex="24" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="../gen2/upconv_core_top.cpp" linenumber="56" fileDirectory="/home/hoinguyen/Documents/Vitis/UpConv_HLS/upconv_core" functionName="upconv_core_top"/>
+      <dataInputObjs>partselect</dataInputObjs>
+      <dataOutputObjs>getelementptr</dataOutputObjs>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="84" name="gmem_in_addr" lineNumber="56" fileName="../gen2/upconv_core_top.cpp" fileDirectory="../." coreId="4294967295" contextFuncName="upconv_core_top" bitwidth="256" opcode="getelementptr" nodeLabel="2.0" m_display="0" m_topoIndex="25" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="../gen2/upconv_core_top.cpp" linenumber="56" fileDirectory="/home/hoinguyen/Documents/Vitis/UpConv_HLS/upconv_core" functionName="upconv_core_top"/>
+      <dataInputObjs>gmem_in</dataInputObjs>
+      <dataInputObjs>sext</dataInputObjs>
+      <dataOutputObjs>readreq</dataOutputObjs>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="85" name="empty" lineNumber="56" fileName="../gen2/upconv_core_top.cpp" fileDirectory="../." coreName="m_axi" implIndex="m_axi" control="no" opType="adapter" coreId="119" contextFuncName="upconv_core_top" bitwidth="1" opcode="readreq" nodeLabel="2.0" nodeLatency="7" m_display="0" m_delay="2.43" m_topoIndex="26" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="../gen2/upconv_core_top.cpp" linenumber="56" fileDirectory="/home/hoinguyen/Documents/Vitis/UpConv_HLS/upconv_core" functionName="upconv_core_top"/>
+      <dataInputObjs>getelementptr</dataInputObjs>
+      <dataInputObjs>zext</dataInputObjs>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="86" name="_ln56" lineNumber="56" fileName="../gen2/upconv_core_top.cpp" fileDirectory="../." rtlName="grp_upconv_core_top_Pipeline_LOAD_ROW0_VITIS_LOOP_58_1_fu_288" coreId="4294967295" contextFuncName="upconv_core_top" opcode="call" nodeLabel="10.0" nodeLatency="1" m_display="0" m_delay="1.24" m_topoIndex="27" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="../gen2/upconv_core_top.cpp" linenumber="56" fileDirectory="/home/hoinguyen/Documents/Vitis/UpConv_HLS/upconv_core" functionName="upconv_core_top"/>
+      <dataInputObjs>gmem_in</dataInputObjs>
+      <dataInputObjs>trunc</dataInputObjs>
+      <dataInputObjs>partselect</dataInputObjs>
+      <dataInputObjs>partselect</dataInputObjs>
+      <dataInputObjs>partselect</dataInputObjs>
+      <constName>upconv_core_top_Pipeline_LOAD_ROW0_VITIS_LOOP_58_1</constName>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="87" name="_ln64" lineNumber="64" fileName="../gen2/upconv_core_top.cpp" fileDirectory="../." rtlName="grp_UpConv_Fused_Row_8_s_fu_300" coreId="4294967295" contextFuncName="upconv_core_top" opcode="call" nodeLabel="12.0" nodeLatency="1" m_display="0" m_delay="3.23" m_isOnCriticalPath="true" m_isStartOfPath="true" m_topoIndex="28" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="../gen2/upconv_core_top.cpp" linenumber="64" fileDirectory="/home/hoinguyen/Documents/Vitis/UpConv_HLS/upconv_core" functionName="upconv_core_top"/>
+      <dataInputObjs>gmem_weight</dataInputObjs>
+      <dataInputObjs>read</dataInputObjs>
+      <dataInputObjs>gmem_param</dataInputObjs>
+      <dataInputObjs>read</dataInputObjs>
+      <dataInputObjs>read</dataInputObjs>
+      <dataInputObjs>read</dataInputObjs>
+      <dataInputObjs>read</dataInputObjs>
+      <dataInputObjs>read</dataInputObjs>
+      <dataInputObjs>sparsemux</dataInputObjs>
+      <dataInputObjs>sparsemux</dataInputObjs>
+      <dataInputObjs>sparsemux</dataInputObjs>
+      <dataInputObjs>sparsemux</dataInputObjs>
+      <dataOutputObjs>gmem_out</dataOutputObjs>
+      <constName>UpConv_Fused_Row_8_s</constName>
+      <constName>empty</constName>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="88" name="indvar_write_ln0" coreId="4294967295" opcode="store" m_display="0" m_delay="0.42" m_topoIndex="17" m_clusterGroupNumber="-1">
+      <dataInputObjs>alloca</dataInputObjs>
+      <constName>empty</constName>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="89" name="hi_write_ln67" lineNumber="67" fileName="../gen2/upconv_core_top.cpp" fileDirectory="../." coreId="4294967295" contextFuncName="upconv_core_top" opcode="store" m_display="0" m_delay="0.42" m_topoIndex="18" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="../gen2/upconv_core_top.cpp" linenumber="67" fileDirectory="/home/hoinguyen/Documents/Vitis/UpConv_HLS/upconv_core" functionName="upconv_core_top"/>
+      <dataInputObjs>alloca</dataInputObjs>
+      <constName>empty</constName>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="90" name="br_ln67" lineNumber="67" fileName="../gen2/upconv_core_top.cpp" fileDirectory="../." coreId="4294967295" contextFuncName="upconv_core_top" opcode="br" nodeLabel="13.0" m_display="0" m_topoIndex="30" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="../gen2/upconv_core_top.cpp" linenumber="67" fileDirectory="/home/hoinguyen/Documents/Vitis/UpConv_HLS/upconv_core" functionName="upconv_core_top"/>
+      <controlInputObjs>LOAD_ROW</controlInputObjs>
+    </node_objs>
+    <fileValidLineNumbers fileName="../gen2/upconv_core_top.cpp">
+      <validLinenumbers>67</validLinenumbers>
+      <validLinenumbers>7</validLinenumbers>
+      <validLinenumbers>56</validLinenumbers>
+      <validLinenumbers>53</validLinenumbers>
+      <validLinenumbers>64</validLinenumbers>
+    </fileValidLineNumbers>
+  </blocks>
+  <blocks id="97" name="LOAD_ROW" type="BlockType">
+    <controlInputObjs>entry</controlInputObjs>
+    <controlInputObjs>LOAD_ROW.split</controlInputObjs>
+    <controlOutputObjs>br</controlOutputObjs>
+    <controlOutputObjs>br</controlOutputObjs>
+    <controlOutputObjs>LOAD_ROW.split</controlOutputObjs>
+    <controlOutputObjs>for.end66</controlOutputObjs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="92" name="hi_1" lineNumber="78" originalName="hi" fileName="../gen2/upconv_core_top.cpp" fileDirectory="../." coreId="4294967295" contextFuncName="upconv_core_top" bitwidth="8" opcode="load" nodeLabel="14.0" m_display="0" m_topoIndex="31" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="../gen2/upconv_core_top.cpp" linenumber="78" fileDirectory="/home/hoinguyen/Documents/Vitis/UpConv_HLS/upconv_core" functionName="upconv_core_top"/>
+      <dataInputObjs>alloca</dataInputObjs>
+      <dataOutputObjs>icmp</dataOutputObjs>
+      <dataOutputObjs>trunc</dataOutputObjs>
+      <dataOutputObjs>shl</dataOutputObjs>
+      <dataOutputObjs>add</dataOutputObjs>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="93" name="indvar_load" lineNumber="67" fileName="../gen2/upconv_core_top.cpp" fileDirectory="../." coreId="4294967295" contextFuncName="upconv_core_top" bitwidth="7" opcode="load" nodeLabel="14.0" m_display="0" m_topoIndex="32" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="../gen2/upconv_core_top.cpp" linenumber="67" fileDirectory="/home/hoinguyen/Documents/Vitis/UpConv_HLS/upconv_core" functionName="upconv_core_top"/>
+      <dataInputObjs>alloca</dataInputObjs>
+      <dataOutputObjs>add</dataOutputObjs>
+      <dataOutputObjs>zext</dataOutputObjs>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="94" name="icmp_ln67" lineNumber="67" fileName="../gen2/upconv_core_top.cpp" fileDirectory="../." rtlName="icmp_ln67_fu_520_p2" coreName="Cmp" implIndex="auto" control="no" opType="setlt" coreId="9" contextFuncName="upconv_core_top" bitwidth="1" opcode="icmp" nodeLabel="14.0" m_display="0" m_delay="0.76" m_topoIndex="33" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="../gen2/upconv_core_top.cpp" linenumber="67" fileDirectory="/home/hoinguyen/Documents/Vitis/UpConv_HLS/upconv_core" functionName="upconv_core_top"/>
+      <dataInputObjs>load</dataInputObjs>
+      <dataInputObjs>sparsemux</dataInputObjs>
+      <dataOutputObjs>br</dataOutputObjs>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="95" name="add_ln67_1" lineNumber="67" fileName="../gen2/upconv_core_top.cpp" fileDirectory="../." rtlName="add_ln67_1_fu_525_p2" coreName="Adder" implIndex="fabric" control="no" opType="add" coreId="1" contextFuncName="upconv_core_top" bitwidth="7" opcode="add" nodeLabel="14.0" m_display="0" m_delay="0.77" m_topoIndex="34" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="../gen2/upconv_core_top.cpp" linenumber="67" fileDirectory="/home/hoinguyen/Documents/Vitis/UpConv_HLS/upconv_core" functionName="upconv_core_top"/>
+      <dataInputObjs>load</dataInputObjs>
+      <dataOutputObjs>store</dataOutputObjs>
+      <constName>empty</constName>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="96" name="br_ln67" lineNumber="67" fileName="../gen2/upconv_core_top.cpp" fileDirectory="../." coreId="4294967295" contextFuncName="upconv_core_top" opcode="br" nodeLabel="14.0" m_display="0" m_topoIndex="35" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="../gen2/upconv_core_top.cpp" linenumber="67" fileDirectory="/home/hoinguyen/Documents/Vitis/UpConv_HLS/upconv_core" functionName="upconv_core_top"/>
+      <dataInputObjs>icmp</dataInputObjs>
+      <controlInputObjs>for.end66</controlInputObjs>
+      <controlInputObjs>LOAD_ROW.split</controlInputObjs>
+    </node_objs>
+    <fileValidLineNumbers fileName="../gen2/upconv_core_top.cpp">
+      <validLinenumbers>78</validLinenumbers>
+      <validLinenumbers>67</validLinenumbers>
+    </fileValidLineNumbers>
+  </blocks>
+  <blocks id="122" name="LOAD_ROW.split" type="BlockType">
+    <controlInputObjs>LOAD_ROW</controlInputObjs>
+    <controlOutputObjs>br</controlOutputObjs>
+    <controlOutputObjs>LOAD_ROW</controlOutputObjs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="98" name="zext_ln67" lineNumber="67" fileName="../gen2/upconv_core_top.cpp" fileDirectory="../." rtlName="grp_fu_626_p10" coreId="4294967295" contextFuncName="upconv_core_top" bitwidth="20" opcode="zext" nodeLabel="14.0" m_display="0" m_topoIndex="36" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="../gen2/upconv_core_top.cpp" linenumber="67" fileDirectory="/home/hoinguyen/Documents/Vitis/UpConv_HLS/upconv_core" functionName="upconv_core_top"/>
+      <dataInputObjs>load</dataInputObjs>
+      <dataOutputObjs>mul</dataOutputObjs>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="101" name="mul_ln69" lineNumber="69" fileName="../gen2/upconv_core_top.cpp" fileDirectory="../." rtlName="mac_muladd_14ns_7ns_14ns_20_4_1_U732" coreName="DSP48" implIndex="dsp_slice" control="no" opType="mul" coreId="124" contextFuncName="upconv_core_top" bitwidth="20" opcode="mul" nodeLabel="14.0" nodeLatency="2" m_display="0" m_delay="0.99" m_topoIndex="37" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="../gen2/upconv_core_top.cpp" linenumber="69" fileDirectory="/home/hoinguyen/Documents/Vitis/UpConv_HLS/upconv_core" functionName="upconv_core_top"/>
+      <dataInputObjs>zext</dataInputObjs>
+      <dataInputObjs>zext</dataInputObjs>
+      <dataOutputObjs>add</dataOutputObjs>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="102" name="add_ln69" lineNumber="69" fileName="../gen2/upconv_core_top.cpp" fileDirectory="../." rtlName="mac_muladd_14ns_7ns_14ns_20_4_1_U732" coreName="DSP48" implIndex="dsp_slice" control="no" opType="add" coreId="124" contextFuncName="upconv_core_top" bitwidth="20" opcode="add" nodeLabel="16.0" nodeLatency="1" m_display="0" m_delay="0.64" m_topoIndex="43" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="../gen2/upconv_core_top.cpp" linenumber="69" fileDirectory="/home/hoinguyen/Documents/Vitis/UpConv_HLS/upconv_core" functionName="upconv_core_top"/>
+      <dataInputObjs>mul</dataInputObjs>
+      <dataInputObjs>zext</dataInputObjs>
+      <dataOutputObjs>bitconcatenate</dataOutputObjs>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="103" name="shl_ln" lineNumber="69" fileName="../gen2/upconv_core_top.cpp" fileDirectory="../." rtlName="shl_ln_fu_562_p3" coreId="4294967295" contextFuncName="upconv_core_top" bitwidth="25" opcode="bitconcatenate" nodeLabel="17.0" m_display="0" m_topoIndex="44" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="../gen2/upconv_core_top.cpp" linenumber="69" fileDirectory="/home/hoinguyen/Documents/Vitis/UpConv_HLS/upconv_core" functionName="upconv_core_top"/>
+      <dataInputObjs>add</dataInputObjs>
+      <dataOutputObjs>zext</dataOutputObjs>
+      <constName>empty</constName>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="104" name="zext_ln69" lineNumber="69" fileName="../gen2/upconv_core_top.cpp" fileDirectory="../." rtlName="zext_ln69_fu_569_p1" coreId="4294967295" contextFuncName="upconv_core_top" bitwidth="64" opcode="zext" nodeLabel="17.0" m_display="0" m_topoIndex="45" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="../gen2/upconv_core_top.cpp" linenumber="69" fileDirectory="/home/hoinguyen/Documents/Vitis/UpConv_HLS/upconv_core" functionName="upconv_core_top"/>
+      <dataInputObjs>bitconcatenate</dataInputObjs>
+      <dataOutputObjs>add</dataOutputObjs>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="105" name="add_ln69_1" lineNumber="69" fileName="../gen2/upconv_core_top.cpp" fileDirectory="../." rtlName="add_ln69_1_fu_573_p2" coreName="Adder" implIndex="fabric" control="no" opType="add" coreId="1" contextFuncName="upconv_core_top" bitwidth="64" opcode="add" nodeLabel="17.0" m_display="0" m_delay="1.08" m_topoIndex="46" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="../gen2/upconv_core_top.cpp" linenumber="69" fileDirectory="/home/hoinguyen/Documents/Vitis/UpConv_HLS/upconv_core" functionName="upconv_core_top"/>
+      <dataInputObjs>zext</dataInputObjs>
+      <dataInputObjs>read</dataInputObjs>
+      <dataOutputObjs>partselect</dataOutputObjs>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="106" name="slot" lineNumber="69" originalName="slot" fileName="../gen2/upconv_core_top.cpp" fileDirectory="../." rtlName="slot_fu_598_p1" coreId="4294967295" contextFuncName="upconv_core_top" bitwidth="1" opcode="trunc" nodeLabel="26.0" m_display="0" m_topoIndex="51" m_clusterGroupNumber="1">
+      <inlineStackInfo fileName="../gen2/upconv_core_top.cpp" linenumber="69" fileDirectory="/home/hoinguyen/Documents/Vitis/UpConv_HLS/upconv_core" functionName="upconv_core_top"/>
+      <dataInputObjs>load</dataInputObjs>
+      <dataOutputObjs>select</dataOutputObjs>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="107" name="p_cast" lineNumber="69" fileName="../gen2/upconv_core_top.cpp" fileDirectory="../." rtlName="p_cast_fu_601_p3" coreName="Sel" implIndex="auto_sel" control="no" opType="select" coreId="73" contextFuncName="upconv_core_top" bitwidth="8" opcode="select" nodeLabel="26.0" m_display="0" m_topoIndex="52" m_clusterGroupNumber="1">
+      <inlineStackInfo fileName="../gen2/upconv_core_top.cpp" linenumber="69" fileDirectory="/home/hoinguyen/Documents/Vitis/UpConv_HLS/upconv_core" functionName="upconv_core_top"/>
+      <dataInputObjs>trunc</dataInputObjs>
+      <dataOutputObjs>and</dataOutputObjs>
+      <constName>empty</constName>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="108" name="mul50" lineNumber="56" fileName="../gen2/upconv_core_top.cpp" fileDirectory="../." rtlName="mul50_fu_609_p2" coreName="LogicGate" implIndex="auto" control="no" opType="and" coreId="74" contextFuncName="upconv_core_top" bitwidth="8" opcode="and" nodeLabel="26.0" m_display="0" m_delay="0.33" m_topoIndex="53" m_clusterGroupNumber="1">
+      <inlineStackInfo fileName="../gen2/upconv_core_top.cpp" linenumber="56" fileDirectory="/home/hoinguyen/Documents/Vitis/UpConv_HLS/upconv_core" functionName="upconv_core_top"/>
+      <dataInputObjs>sparsemux</dataInputObjs>
+      <dataInputObjs>select</dataInputObjs>
+      <dataOutputObjs>call</dataOutputObjs>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="109" name="trunc_ln1" lineNumber="70" fileName="../gen2/upconv_core_top.cpp" fileDirectory="../." rtlName="trunc_ln1_reg_765" coreId="4294967295" contextFuncName="upconv_core_top" bitwidth="59" opcode="partselect" nodeLabel="17.0" m_display="0" m_topoIndex="47" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="../gen2/upconv_core_top.cpp" linenumber="70" fileDirectory="/home/hoinguyen/Documents/Vitis/UpConv_HLS/upconv_core" functionName="upconv_core_top"/>
+      <dataInputObjs>add</dataInputObjs>
+      <dataOutputObjs>sext</dataOutputObjs>
+      <dataOutputObjs>call</dataOutputObjs>
+      <constName>empty</constName>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="110" name="sext_ln70" lineNumber="70" fileName="../gen2/upconv_core_top.cpp" fileDirectory="../." rtlName="sext_ln70_fu_588_p1" coreId="4294967295" contextFuncName="upconv_core_top" bitwidth="64" opcode="sext" nodeLabel="18.0" m_display="0" m_topoIndex="48" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="../gen2/upconv_core_top.cpp" linenumber="70" fileDirectory="/home/hoinguyen/Documents/Vitis/UpConv_HLS/upconv_core" functionName="upconv_core_top"/>
+      <dataInputObjs>partselect</dataInputObjs>
+      <dataOutputObjs>getelementptr</dataOutputObjs>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="111" name="gmem_in_addr_1" lineNumber="70" fileName="../gen2/upconv_core_top.cpp" fileDirectory="../." coreId="4294967295" contextFuncName="upconv_core_top" bitwidth="256" opcode="getelementptr" nodeLabel="18.0" m_display="0" m_topoIndex="49" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="../gen2/upconv_core_top.cpp" linenumber="70" fileDirectory="/home/hoinguyen/Documents/Vitis/UpConv_HLS/upconv_core" functionName="upconv_core_top"/>
+      <dataInputObjs>gmem_in</dataInputObjs>
+      <dataInputObjs>sext</dataInputObjs>
+      <dataOutputObjs>readreq</dataOutputObjs>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="112" name="empty_192" lineNumber="70" fileName="../gen2/upconv_core_top.cpp" fileDirectory="../." coreName="m_axi" implIndex="m_axi" control="no" opType="adapter" coreId="119" contextFuncName="upconv_core_top" bitwidth="1" opcode="readreq" nodeLabel="18.0" nodeLatency="7" m_display="0" m_delay="2.43" m_topoIndex="50" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="../gen2/upconv_core_top.cpp" linenumber="70" fileDirectory="/home/hoinguyen/Documents/Vitis/UpConv_HLS/upconv_core" functionName="upconv_core_top"/>
+      <dataInputObjs>getelementptr</dataInputObjs>
+      <dataInputObjs>zext</dataInputObjs>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="113" name="_ln56" lineNumber="56" fileName="../gen2/upconv_core_top.cpp" fileDirectory="../." rtlName="grp_upconv_core_top_Pipeline_LOAD_ROW_VITIS_LOOP_72_2_fu_360" coreId="4294967295" contextFuncName="upconv_core_top" opcode="call" nodeLabel="26.0" nodeLatency="1" m_display="0" m_delay="1.24" m_topoIndex="54" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="../gen2/upconv_core_top.cpp" linenumber="56" fileDirectory="/home/hoinguyen/Documents/Vitis/UpConv_HLS/upconv_core" functionName="upconv_core_top"/>
+      <dataInputObjs>gmem_in</dataInputObjs>
+      <dataInputObjs>trunc</dataInputObjs>
+      <dataInputObjs>partselect</dataInputObjs>
+      <dataInputObjs>partselect</dataInputObjs>
+      <dataInputObjs>and</dataInputObjs>
+      <dataInputObjs>partselect</dataInputObjs>
+      <constName>upconv_core_top_Pipeline_LOAD_ROW_VITIS_LOOP_72_2</constName>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="114" name="shl_ln78" lineNumber="78" fileName="../gen2/upconv_core_top.cpp" fileDirectory="../." rtlName="shl_ln78_fu_615_p2" coreId="4294967295" contextFuncName="upconv_core_top" bitwidth="8" opcode="shl" nodeLabel="27.0" m_display="0" m_topoIndex="55" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="../gen2/upconv_core_top.cpp" linenumber="78" fileDirectory="/home/hoinguyen/Documents/Vitis/UpConv_HLS/upconv_core" functionName="upconv_core_top"/>
+      <dataInputObjs>load</dataInputObjs>
+      <dataOutputObjs>add</dataOutputObjs>
+      <dataOutputObjs>call</dataOutputObjs>
+      <constName>empty</constName>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="115" name="add_ln78" lineNumber="78" fileName="../gen2/upconv_core_top.cpp" fileDirectory="../." rtlName="add_ln78_fu_620_p2" coreName="Adder" implIndex="fabric" control="no" opType="add" coreId="1" contextFuncName="upconv_core_top" bitwidth="8" opcode="add" nodeLabel="27.0" m_display="0" m_delay="0.76" m_topoIndex="56" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="../gen2/upconv_core_top.cpp" linenumber="78" fileDirectory="/home/hoinguyen/Documents/Vitis/UpConv_HLS/upconv_core" functionName="upconv_core_top"/>
+      <dataInputObjs>shl</dataInputObjs>
+      <dataOutputObjs>call</dataOutputObjs>
+      <constName>empty</constName>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="116" name="_ln78" lineNumber="78" fileName="../gen2/upconv_core_top.cpp" fileDirectory="../." rtlName="grp_UpConv_Fused_Row_8_s_fu_300" coreId="4294967295" contextFuncName="upconv_core_top" opcode="call" nodeLabel="28.0" nodeLatency="1" m_display="0" m_delay="3.23" m_topoIndex="57" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="../gen2/upconv_core_top.cpp" linenumber="78" fileDirectory="/home/hoinguyen/Documents/Vitis/UpConv_HLS/upconv_core" functionName="upconv_core_top"/>
+      <dataInputObjs>gmem_weight</dataInputObjs>
+      <dataInputObjs>read</dataInputObjs>
+      <dataInputObjs>gmem_param</dataInputObjs>
+      <dataInputObjs>read</dataInputObjs>
+      <dataInputObjs>read</dataInputObjs>
+      <dataInputObjs>read</dataInputObjs>
+      <dataInputObjs>read</dataInputObjs>
+      <dataInputObjs>read</dataInputObjs>
+      <dataInputObjs>sparsemux</dataInputObjs>
+      <dataInputObjs>sparsemux</dataInputObjs>
+      <dataInputObjs>sparsemux</dataInputObjs>
+      <dataInputObjs>sparsemux</dataInputObjs>
+      <dataInputObjs>add</dataInputObjs>
+      <dataOutputObjs>gmem_out</dataOutputObjs>
+      <constName>UpConv_Fused_Row_8_s</constName>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="117" name="_ln79" lineNumber="79" fileName="../gen2/upconv_core_top.cpp" fileDirectory="../." rtlName="grp_UpConv_Fused_Row_8_s_fu_300" coreId="4294967295" contextFuncName="upconv_core_top" opcode="call" nodeLabel="30.0" nodeLatency="1" m_display="0" m_delay="3.23" m_topoIndex="58" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="../gen2/upconv_core_top.cpp" linenumber="79" fileDirectory="/home/hoinguyen/Documents/Vitis/UpConv_HLS/upconv_core" functionName="upconv_core_top"/>
+      <dataInputObjs>gmem_weight</dataInputObjs>
+      <dataInputObjs>read</dataInputObjs>
+      <dataInputObjs>gmem_param</dataInputObjs>
+      <dataInputObjs>read</dataInputObjs>
+      <dataInputObjs>read</dataInputObjs>
+      <dataInputObjs>read</dataInputObjs>
+      <dataInputObjs>read</dataInputObjs>
+      <dataInputObjs>read</dataInputObjs>
+      <dataInputObjs>sparsemux</dataInputObjs>
+      <dataInputObjs>sparsemux</dataInputObjs>
+      <dataInputObjs>sparsemux</dataInputObjs>
+      <dataInputObjs>sparsemux</dataInputObjs>
+      <dataInputObjs>shl</dataInputObjs>
+      <dataOutputObjs>gmem_out</dataOutputObjs>
+      <constName>UpConv_Fused_Row_8_s</constName>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="118" name="add_ln67" lineNumber="67" fileName="../gen2/upconv_core_top.cpp" fileDirectory="../." rtlName="add_ln67_fu_535_p2" coreName="Adder" implIndex="fabric" control="no" opType="add" coreId="1" contextFuncName="upconv_core_top" bitwidth="8" opcode="add" nodeLabel="14.0" m_display="0" m_delay="0.76" m_topoIndex="38" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="../gen2/upconv_core_top.cpp" linenumber="67" fileDirectory="/home/hoinguyen/Documents/Vitis/UpConv_HLS/upconv_core" functionName="upconv_core_top"/>
+      <dataInputObjs>load</dataInputObjs>
+      <dataOutputObjs>store</dataOutputObjs>
+      <constName>empty</constName>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="119" name="indvar_write_ln67" lineNumber="67" fileName="../gen2/upconv_core_top.cpp" fileDirectory="../." coreId="4294967295" contextFuncName="upconv_core_top" opcode="store" nodeLabel="14.0" m_display="0" m_delay="0.42" m_topoIndex="39" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="../gen2/upconv_core_top.cpp" linenumber="67" fileDirectory="/home/hoinguyen/Documents/Vitis/UpConv_HLS/upconv_core" functionName="upconv_core_top"/>
+      <dataInputObjs>add</dataInputObjs>
+      <dataInputObjs>alloca</dataInputObjs>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="120" name="hi_write_ln67" lineNumber="67" fileName="../gen2/upconv_core_top.cpp" fileDirectory="../." coreId="4294967295" contextFuncName="upconv_core_top" opcode="store" nodeLabel="14.0" m_display="0" m_delay="0.42" m_topoIndex="40" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="../gen2/upconv_core_top.cpp" linenumber="67" fileDirectory="/home/hoinguyen/Documents/Vitis/UpConv_HLS/upconv_core" functionName="upconv_core_top"/>
+      <dataInputObjs>add</dataInputObjs>
+      <dataInputObjs>alloca</dataInputObjs>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="121" name="br_ln67" lineNumber="67" fileName="../gen2/upconv_core_top.cpp" fileDirectory="../." coreId="4294967295" contextFuncName="upconv_core_top" opcode="br" nodeLabel="31.0" m_display="0" m_topoIndex="59" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="../gen2/upconv_core_top.cpp" linenumber="67" fileDirectory="/home/hoinguyen/Documents/Vitis/UpConv_HLS/upconv_core" functionName="upconv_core_top"/>
+      <controlInputObjs>LOAD_ROW</controlInputObjs>
+    </node_objs>
+    <fileValidLineNumbers fileName="../gen2/upconv_core_top.cpp">
+      <validLinenumbers>67</validLinenumbers>
+      <validLinenumbers>69</validLinenumbers>
+      <validLinenumbers>56</validLinenumbers>
+      <validLinenumbers>70</validLinenumbers>
+      <validLinenumbers>78</validLinenumbers>
+      <validLinenumbers>79</validLinenumbers>
+    </fileValidLineNumbers>
+  </blocks>
+  <blocks id="127" name="for.end66" type="BlockType">
+    <controlInputObjs>LOAD_ROW</controlInputObjs>
+    <controlOutputObjs>br</controlOutputObjs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="123" name="shl_ln83" lineNumber="83" fileName="../gen2/upconv_core_top.cpp" fileDirectory="../." rtlName="shl_ln83_fu_551_p2" coreId="4294967295" contextFuncName="upconv_core_top" bitwidth="8" opcode="shl" nodeLabel="14.0" m_display="0" m_topoIndex="41" m_clusterGroupNumber="2">
+      <inlineStackInfo fileName="../gen2/upconv_core_top.cpp" linenumber="83" fileDirectory="/home/hoinguyen/Documents/Vitis/UpConv_HLS/upconv_core" functionName="upconv_core_top"/>
+      <dataInputObjs>sparsemux</dataInputObjs>
+      <dataOutputObjs>add</dataOutputObjs>
+      <constName>empty</constName>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="124" name="add_ln83" lineNumber="83" fileName="../gen2/upconv_core_top.cpp" fileDirectory="../." rtlName="add_ln83_fu_556_p2" coreName="Adder" implIndex="fabric" control="no" opType="add" coreId="1" contextFuncName="upconv_core_top" bitwidth="8" opcode="add" nodeLabel="14.0" m_display="0" m_delay="0.76" m_topoIndex="42" m_clusterGroupNumber="2">
+      <inlineStackInfo fileName="../gen2/upconv_core_top.cpp" linenumber="83" fileDirectory="/home/hoinguyen/Documents/Vitis/UpConv_HLS/upconv_core" functionName="upconv_core_top"/>
+      <dataInputObjs>shl</dataInputObjs>
+      <dataOutputObjs>call</dataOutputObjs>
+      <constName>empty</constName>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="125" name="_ln83" lineNumber="83" fileName="../gen2/upconv_core_top.cpp" fileDirectory="../." rtlName="grp_UpConv_Fused_Row_8_s_fu_300" coreId="4294967295" contextFuncName="upconv_core_top" opcode="call" nodeLabel="32.0" nodeLatency="1" m_display="0" m_delay="3.23" m_topoIndex="60" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="../gen2/upconv_core_top.cpp" linenumber="83" fileDirectory="/home/hoinguyen/Documents/Vitis/UpConv_HLS/upconv_core" functionName="upconv_core_top"/>
+      <dataInputObjs>gmem_weight</dataInputObjs>
+      <dataInputObjs>read</dataInputObjs>
+      <dataInputObjs>gmem_param</dataInputObjs>
+      <dataInputObjs>read</dataInputObjs>
+      <dataInputObjs>read</dataInputObjs>
+      <dataInputObjs>read</dataInputObjs>
+      <dataInputObjs>read</dataInputObjs>
+      <dataInputObjs>read</dataInputObjs>
+      <dataInputObjs>sparsemux</dataInputObjs>
+      <dataInputObjs>sparsemux</dataInputObjs>
+      <dataInputObjs>sparsemux</dataInputObjs>
+      <dataInputObjs>sparsemux</dataInputObjs>
+      <dataInputObjs>add</dataInputObjs>
+      <dataOutputObjs>gmem_out</dataOutputObjs>
+      <constName>UpConv_Fused_Row_8_s</constName>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="126" name="_ln84" lineNumber="84" fileName="../gen2/upconv_core_top.cpp" fileDirectory="../." coreId="4294967295" contextFuncName="upconv_core_top" opcode="ret" nodeLabel="33.0" m_display="0" m_topoIndex="61" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="../gen2/upconv_core_top.cpp" linenumber="84" fileDirectory="/home/hoinguyen/Documents/Vitis/UpConv_HLS/upconv_core" functionName="upconv_core_top"/>
+    </node_objs>
+    <fileValidLineNumbers fileName="../gen2/upconv_core_top.cpp">
+      <validLinenumbers>83</validLinenumbers>
+      <validLinenumbers>84</validLinenumbers>
+    </fileValidLineNumbers>
+  </blocks>
+  <ScheduleInfo time="0"/>
+  <ScheduleInfo time="1"/>
+  <ScheduleInfo time="2"/>
+  <ScheduleInfo time="3"/>
+  <ScheduleInfo time="4"/>
+  <ScheduleInfo time="5"/>
+  <ScheduleInfo time="6"/>
+  <ScheduleInfo time="7"/>
+  <ScheduleInfo time="8"/>
+  <ScheduleInfo time="9"/>
+  <ScheduleInfo time="10"/>
+  <ScheduleInfo time="11"/>
+  <ScheduleInfo time="12"/>
+  <ScheduleInfo time="13"/>
+  <ScheduleInfo time="14"/>
+  <ScheduleInfo time="15"/>
+  <ScheduleInfo time="16"/>
+  <ScheduleInfo time="17"/>
+  <ScheduleInfo time="18"/>
+  <ScheduleInfo time="19"/>
+  <ScheduleInfo time="20"/>
+  <ScheduleInfo time="21"/>
+  <ScheduleInfo time="22"/>
+  <ScheduleInfo time="23"/>
+  <ScheduleInfo time="24"/>
+  <ScheduleInfo time="25"/>
+  <ScheduleInfo time="26"/>
+  <ScheduleInfo time="27"/>
+  <ScheduleInfo time="28"/>
+  <ScheduleInfo time="29"/>
+  <ScheduleInfo time="30"/>
+  <ScheduleInfo time="31"/>
+  <ScheduleInfo time="32"/>
+  <ScheduleInfo time="33"/>
+  <regnodes realName="X_read_reg_677">
+    <nodeIds>69</nodeIds>
+  </regnodes>
+  <regnodes realName="Y_read_reg_652">
+    <nodeIds>64</nodeIds>
+  </regnodes>
+  <regnodes realName="hi_reg_633">
+    <nodeIds>32</nodeIds>
+  </regnodes>
+  <regnodes realName="epsilon_read_reg_647">
+    <nodeIds>63</nodeIds>
+  </regnodes>
+  <regnodes realName="mul_ln56_reg_717">
+    <nodeIds>78</nodeIds>
+  </regnodes>
+  <regnodes realName="zext_ln56_3_reg_740">
+    <nodeIds>81</nodeIds>
+  </regnodes>
+  <regnodes realName="W_read_reg_672">
+    <nodeIds>68</nodeIds>
+  </regnodes>
+  <regnodes realName="mul50_reg_776">
+    <nodeIds>108</nodeIds>
+  </regnodes>
+  <regnodes realName="add_ln83_reg_760">
+    <nodeIds>124</nodeIds>
+  </regnodes>
+  <regnodes realName="trunc_ln_reg_711">
+    <nodeIds>82</nodeIds>
+  </regnodes>
+  <regnodes realName="w_in_reg_692">
+    <nodeIds>73</nodeIds>
+  </regnodes>
+  <regnodes realName="c_in_reg_687">
+    <nodeIds>72</nodeIds>
+  </regnodes>
+  <regnodes realName="trunc_ln56_reg_723">
+    <nodeIds>79</nodeIds>
+  </regnodes>
+  <regnodes realName="indvar_reg_640">
+    <nodeIds>33</nodeIds>
+  </regnodes>
+  <regnodes realName="G_read_reg_662">
+    <nodeIds>66</nodeIds>
+  </regnodes>
+  <regnodes realName="hi_1_reg_746">
+    <nodeIds>92</nodeIds>
+  </regnodes>
+  <regnodes realName="zext_ln67_reg_755">
+    <nodeIds>98</nodeIds>
+  </regnodes>
+  <regnodes realName="gmem_in_addr_1_reg_771">
+    <nodeIds>111</nodeIds>
+  </regnodes>
+  <regnodes realName="c_out_reg_682">
+    <nodeIds>71</nodeIds>
+  </regnodes>
+  <regnodes realName="BE_read_reg_657">
+    <nodeIds>65</nodeIds>
+  </regnodes>
+  <regnodes realName="gmem_in_addr_reg_735">
+    <nodeIds>84</nodeIds>
+  </regnodes>
+  <regnodes realName="shl_ln78_reg_781">
+    <nodeIds>114</nodeIds>
+  </regnodes>
+  <regnodes realName="trunc_ln1_reg_765">
+    <nodeIds>109</nodeIds>
+  </regnodes>
+  <regnodes realName="zext_ln56_2_reg_729">
+    <nodeIds>80</nodeIds>
+  </regnodes>
+  <regnodes realName="ci_words_reg_702">
+    <nodeIds>75</nodeIds>
+  </regnodes>
+  <regnodes realName="add_ln78_reg_786">
+    <nodeIds>115</nodeIds>
+  </regnodes>
+  <regnodes realName="B_read_reg_667">
+    <nodeIds>67</nodeIds>
+  </regnodes>
+  <expressionNodes realName="c_in_fu_397">
+    <nodeIds>72</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="slot_fu_598">
+    <nodeIds>106</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="zext_ln56_2_fu_497">
+    <nodeIds>80</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="shl_ln78_fu_615">
+    <nodeIds>114</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="zext_ln56_3_fu_511">
+    <nodeIds>81</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="trunc_ln1_fu_578">
+    <nodeIds>109</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="mul50_fu_609">
+    <nodeIds>108</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="shl_ln83_fu_551">
+    <nodeIds>123</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="zext_ln67_fu_531">
+    <nodeIds>98</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="ci_words_fu_451">
+    <nodeIds>75</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="trunc_ln56_fu_493">
+    <nodeIds>79</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="add_ln83_fu_556">
+    <nodeIds>124</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="gmem_in_addr_fu_504">
+    <nodeIds>84</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="sext_ln70_fu_588">
+    <nodeIds>110</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="add_ln67_fu_535">
+    <nodeIds>118</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="gmem_in_addr_1_fu_591">
+    <nodeIds>111</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="sext_ln56_fu_501">
+    <nodeIds>83</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="p_cast_fu_601">
+    <nodeIds>107</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="trunc_ln_fu_461">
+    <nodeIds>82</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="c_out_fu_373">
+    <nodeIds>71</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="add_ln67_1_fu_525">
+    <nodeIds>95</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="zext_ln56_1_fu_484">
+    <nodeIds>77</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="add_ln69_1_fu_573">
+    <nodeIds>105</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="zext_ln56_fu_481">
+    <nodeIds>76</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="zext_ln69_fu_569">
+    <nodeIds>104</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="shl_ln_fu_562">
+    <nodeIds>103</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="w_in_fu_421">
+    <nodeIds>73</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="add_ln53_fu_445">
+    <nodeIds>74</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="indvar_fu_224">
+    <nodeIds>33</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="icmp_ln67_fu_520">
+    <nodeIds>94</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="mul_ln56_fu_487">
+    <nodeIds>78</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="add_ln78_fu_620">
+    <nodeIds>115</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="hi_fu_220">
+    <nodeIds>32</nodeIds>
+  </expressionNodes>
+  <moduleNodes realName="grp_fu_626">
+    <nodeIds>101</nodeIds>
+    <nodeIds>102</nodeIds>
+  </moduleNodes>
+  <moduleNodes realName="grp_upconv_core_top_Pipeline_LOAD_ROW0_VITIS_LOOP_58_1_fu_288">
+    <nodeIds>86</nodeIds>
+  </moduleNodes>
+  <moduleNodes realName="grp_upconv_core_top_Pipeline_LOAD_ROW_VITIS_LOOP_72_2_fu_360">
+    <nodeIds>113</nodeIds>
+  </moduleNodes>
+  <moduleNodes realName="grp_UpConv_Fused_Row_8_s_fu_300">
+    <nodeIds>87</nodeIds>
+    <nodeIds>116</nodeIds>
+    <nodeIds>117</nodeIds>
+    <nodeIds>125</nodeIds>
+  </moduleNodes>
+  <ioNodes realName="epsilon_read_read_fu_234">
+    <nodeIds>63</nodeIds>
+  </ioNodes>
+  <ioNodes realName="BE_read_read_fu_246">
+    <nodeIds>65</nodeIds>
+  </ioNodes>
+  <ioNodes realName="mode_read_read_fu_228">
+    <nodeIds>62</nodeIds>
+  </ioNodes>
+  <ioNodes realName="store_ln67_store_fu_541">
+    <nodeIds>119</nodeIds>
+  </ioNodes>
+  <ioNodes realName="store_ln67_store_fu_476">
+    <nodeIds>89</nodeIds>
+  </ioNodes>
+  <ioNodes realName="X_read_read_fu_270">
+    <nodeIds>69</nodeIds>
+  </ioNodes>
+  <ioNodes realName="grp_readreq_fu_282">
+    <nodeIds>112</nodeIds>
+  </ioNodes>
+  <ioNodes realName="G_read_read_fu_252">
+    <nodeIds>66</nodeIds>
+  </ioNodes>
+  <ioNodes realName="grp_readreq_fu_276">
+    <nodeIds>85</nodeIds>
+  </ioNodes>
+  <ioNodes realName="hi_1_load_fu_514">
+    <nodeIds>92</nodeIds>
+  </ioNodes>
+  <ioNodes realName="store_ln67_store_fu_546">
+    <nodeIds>120</nodeIds>
+  </ioNodes>
+  <ioNodes realName="store_ln0_store_fu_471">
+    <nodeIds>88</nodeIds>
+  </ioNodes>
+  <ioNodes realName="indvar_load_load_fu_517">
+    <nodeIds>93</nodeIds>
+  </ioNodes>
+  <ioNodes realName="B_read_read_fu_258">
+    <nodeIds>67</nodeIds>
+  </ioNodes>
+  <ioNodes realName="Y_read_read_fu_240">
+    <nodeIds>64</nodeIds>
+  </ioNodes>
+  <ioNodes realName="W_read_read_fu_264">
+    <nodeIds>68</nodeIds>
+  </ioNodes>
+  <memoryPorts dataString="inv_buf" portID="100">
+    <nodeIds>87</nodeIds>
+    <nodeIds>116</nodeIds>
+    <nodeIds>117</nodeIds>
+    <nodeIds>125</nodeIds>
+  </memoryPorts>
+  <memoryPorts dataString="mean_buf" portID="100">
+    <nodeIds>87</nodeIds>
+    <nodeIds>116</nodeIds>
+    <nodeIds>117</nodeIds>
+    <nodeIds>125</nodeIds>
+  </memoryPorts>
+  <memoryPorts dataString="void_UpConv_Fused_Row_8_ap_uint_256_ap_uint_256_const_ap_uint_256_const_ap_uint_256_const_ap_uint_256_const_ap_uint_256_decimal16_int_int_int_int_int_row_acc" portID="100">
+    <nodeIds>87</nodeIds>
+    <nodeIds>116</nodeIds>
+    <nodeIds>117</nodeIds>
+    <nodeIds>125</nodeIds>
+  </memoryPorts>
+  <memoryPorts dataString="void_UpConv_Fused_Row_8_ap_uint_256_ap_uint_256_const_ap_uint_256_const_ap_uint_256_const_ap_uint_256_const_ap_uint_256_decimal16_int_int_int_int_int_row_acc_0" portID="100">
+    <nodeIds>87</nodeIds>
+    <nodeIds>116</nodeIds>
+    <nodeIds>117</nodeIds>
+    <nodeIds>125</nodeIds>
+  </memoryPorts>
+  <memoryPorts dataString="void_UpConv_Fused_Row_8_ap_uint_256_ap_uint_256_const_ap_uint_256_const_ap_uint_256_const_ap_uint_256_const_ap_uint_256_decimal16_int_int_int_int_int_row_acc_1" portID="100">
+    <nodeIds>87</nodeIds>
+    <nodeIds>116</nodeIds>
+    <nodeIds>117</nodeIds>
+    <nodeIds>125</nodeIds>
+  </memoryPorts>
+  <memoryPorts dataString="void_UpConv_Fused_Row_8_ap_uint_256_ap_uint_256_const_ap_uint_256_const_ap_uint_256_const_ap_uint_256_const_ap_uint_256_decimal16_int_int_int_int_int_row_acc_2" portID="100">
+    <nodeIds>87</nodeIds>
+    <nodeIds>116</nodeIds>
+    <nodeIds>117</nodeIds>
+    <nodeIds>125</nodeIds>
+  </memoryPorts>
+  <memoryPorts dataString="void_UpConv_Fused_Row_8_ap_uint_256_ap_uint_256_const_ap_uint_256_const_ap_uint_256_const_ap_uint_256_const_ap_uint_256_decimal16_int_int_int_int_int_row_acc_3" portID="100">
+    <nodeIds>87</nodeIds>
+    <nodeIds>116</nodeIds>
+    <nodeIds>117</nodeIds>
+    <nodeIds>125</nodeIds>
+  </memoryPorts>
+  <memoryPorts dataString="void_UpConv_Fused_Row_8_ap_uint_256_ap_uint_256_const_ap_uint_256_const_ap_uint_256_const_ap_uint_256_const_ap_uint_256_decimal16_int_int_int_int_int_row_acc_4" portID="100">
+    <nodeIds>87</nodeIds>
+    <nodeIds>116</nodeIds>
+    <nodeIds>117</nodeIds>
+    <nodeIds>125</nodeIds>
+  </memoryPorts>
+  <memoryPorts dataString="void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u" portID="100">
+    <nodeIds>87</nodeIds>
+    <nodeIds>116</nodeIds>
+    <nodeIds>117</nodeIds>
+    <nodeIds>125</nodeIds>
+  </memoryPorts>
+  <memoryPorts dataString="void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_1" portID="100">
+    <nodeIds>87</nodeIds>
+    <nodeIds>116</nodeIds>
+    <nodeIds>117</nodeIds>
+    <nodeIds>125</nodeIds>
+  </memoryPorts>
+  <memoryPorts dataString="void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_2" portID="100">
+    <nodeIds>87</nodeIds>
+    <nodeIds>116</nodeIds>
+    <nodeIds>117</nodeIds>
+    <nodeIds>125</nodeIds>
+  </memoryPorts>
+  <memoryPorts dataString="void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_3" portID="100">
+    <nodeIds>87</nodeIds>
+    <nodeIds>116</nodeIds>
+    <nodeIds>117</nodeIds>
+    <nodeIds>125</nodeIds>
+  </memoryPorts>
+  <memoryPorts dataString="void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_4" portID="100">
+    <nodeIds>87</nodeIds>
+    <nodeIds>116</nodeIds>
+    <nodeIds>117</nodeIds>
+    <nodeIds>125</nodeIds>
+  </memoryPorts>
+  <memoryPorts dataString="void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_5" portID="100">
+    <nodeIds>87</nodeIds>
+    <nodeIds>116</nodeIds>
+    <nodeIds>117</nodeIds>
+    <nodeIds>125</nodeIds>
+  </memoryPorts>
+  <memoryPorts dataString="void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_6" portID="100">
+    <nodeIds>87</nodeIds>
+    <nodeIds>116</nodeIds>
+    <nodeIds>117</nodeIds>
+    <nodeIds>125</nodeIds>
+  </memoryPorts>
+  <memoryPorts dataString="void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_7" portID="100">
+    <nodeIds>87</nodeIds>
+    <nodeIds>116</nodeIds>
+    <nodeIds>117</nodeIds>
+    <nodeIds>125</nodeIds>
+  </memoryPorts>
+  <memoryPorts dataString="void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_8" portID="100">
+    <nodeIds>87</nodeIds>
+    <nodeIds>116</nodeIds>
+    <nodeIds>117</nodeIds>
+    <nodeIds>125</nodeIds>
+  </memoryPorts>
+  <memoryPorts dataString="void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_9" portID="100">
+    <nodeIds>87</nodeIds>
+    <nodeIds>116</nodeIds>
+    <nodeIds>117</nodeIds>
+    <nodeIds>125</nodeIds>
+  </memoryPorts>
+  <memoryPorts dataString="x_buf" portID="100">
+    <nodeIds>86</nodeIds>
+    <nodeIds>87</nodeIds>
+    <nodeIds>113</nodeIds>
+    <nodeIds>116</nodeIds>
+    <nodeIds>117</nodeIds>
+    <nodeIds>125</nodeIds>
+  </memoryPorts>
+  <ioPorts name="B">
+    <contents name="read">
+      <nodeIds>67</nodeIds>
+    </contents>
+  </ioPorts>
+  <ioPorts name="BE">
+    <contents name="read">
+      <nodeIds>65</nodeIds>
+    </contents>
+  </ioPorts>
+  <ioPorts name="G">
+    <contents name="read">
+      <nodeIds>66</nodeIds>
+    </contents>
+  </ioPorts>
+  <ioPorts name="W">
+    <contents name="read">
+      <nodeIds>68</nodeIds>
+    </contents>
+  </ioPorts>
+  <ioPorts name="X">
+    <contents name="read">
+      <nodeIds>69</nodeIds>
+    </contents>
+  </ioPorts>
+  <ioPorts name="Y">
+    <contents name="read">
+      <nodeIds>64</nodeIds>
+    </contents>
+  </ioPorts>
+  <ioPorts name="epsilon">
+    <contents name="read">
+      <nodeIds>63</nodeIds>
+    </contents>
+  </ioPorts>
+  <ioPorts name="gmem_in">
+    <contents name="call">
+      <nodeIds>86</nodeIds>
+      <nodeIds>113</nodeIds>
+    </contents>
+    <contents name="readreq">
+      <nodeIds>85</nodeIds>
+      <nodeIds>112</nodeIds>
+    </contents>
+  </ioPorts>
+  <ioPorts name="gmem_out">
+    <contents name="call">
+      <nodeIds>87</nodeIds>
+      <nodeIds>116</nodeIds>
+      <nodeIds>117</nodeIds>
+      <nodeIds>125</nodeIds>
+    </contents>
+  </ioPorts>
+  <ioPorts name="gmem_param">
+    <contents name="call">
+      <nodeIds>87</nodeIds>
+      <nodeIds>116</nodeIds>
+      <nodeIds>117</nodeIds>
+      <nodeIds>125</nodeIds>
+    </contents>
+  </ioPorts>
+  <ioPorts name="gmem_weight">
+    <contents name="call">
+      <nodeIds>87</nodeIds>
+      <nodeIds>116</nodeIds>
+      <nodeIds>117</nodeIds>
+      <nodeIds>125</nodeIds>
+    </contents>
+  </ioPorts>
+  <ioPorts name="mode">
+    <contents name="read">
+      <nodeIds>62</nodeIds>
+    </contents>
+  </ioPorts>
+  <fsm>
+    <states id="1">
+      <operations id="32" stage="1" latency="1"/>
+      <operations id="33" stage="1" latency="1"/>
+      <operations id="62" stage="1" latency="1"/>
+      <operations id="63" stage="1" latency="1"/>
+      <operations id="64" stage="1" latency="1"/>
+      <operations id="65" stage="1" latency="1"/>
+      <operations id="66" stage="1" latency="1"/>
+      <operations id="67" stage="1" latency="1"/>
+      <operations id="68" stage="1" latency="1"/>
+      <operations id="69" stage="1" latency="1"/>
+      <operations id="71" stage="1" latency="1"/>
+      <operations id="72" stage="1" latency="1"/>
+      <operations id="73" stage="1" latency="1"/>
+      <operations id="74" stage="1" latency="1"/>
+      <operations id="75" stage="1" latency="1"/>
+      <operations id="82" stage="1" latency="1"/>
+      <operations id="88" stage="1" latency="1"/>
+      <operations id="89" stage="1" latency="1"/>
+    </states>
+    <states id="2">
+      <operations id="76" stage="1" latency="1"/>
+      <operations id="77" stage="1" latency="1"/>
+      <operations id="78" stage="1" latency="1"/>
+      <operations id="79" stage="1" latency="1"/>
+    </states>
+    <states id="3">
+      <operations id="80" stage="1" latency="1"/>
+      <operations id="83" stage="1" latency="1"/>
+      <operations id="84" stage="1" latency="1"/>
+      <operations id="85" stage="8" latency="8"/>
+    </states>
+    <states id="4">
+      <operations id="85" stage="7" latency="8"/>
+    </states>
+    <states id="5">
+      <operations id="85" stage="6" latency="8"/>
+    </states>
+    <states id="6">
+      <operations id="85" stage="5" latency="8"/>
+    </states>
+    <states id="7">
+      <operations id="85" stage="4" latency="8"/>
+    </states>
+    <states id="8">
+      <operations id="85" stage="3" latency="8"/>
+    </states>
+    <states id="9">
+      <operations id="85" stage="2" latency="8"/>
+    </states>
+    <states id="10">
+      <operations id="85" stage="1" latency="8"/>
+    </states>
+    <states id="11">
+      <operations id="86" stage="2" latency="2"/>
+    </states>
+    <states id="12">
+      <operations id="86" stage="1" latency="2"/>
+    </states>
+    <states id="13">
+      <operations id="87" stage="2" latency="2"/>
+    </states>
+    <states id="14">
+      <operations id="34" stage="1" latency="1"/>
+      <operations id="35" stage="1" latency="1"/>
+      <operations id="36" stage="1" latency="1"/>
+      <operations id="37" stage="1" latency="1"/>
+      <operations id="38" stage="1" latency="1"/>
+      <operations id="39" stage="1" latency="1"/>
+      <operations id="40" stage="1" latency="1"/>
+      <operations id="41" stage="1" latency="1"/>
+      <operations id="42" stage="1" latency="1"/>
+      <operations id="43" stage="1" latency="1"/>
+      <operations id="44" stage="1" latency="1"/>
+      <operations id="45" stage="1" latency="1"/>
+      <operations id="46" stage="1" latency="1"/>
+      <operations id="47" stage="1" latency="1"/>
+      <operations id="48" stage="1" latency="1"/>
+      <operations id="49" stage="1" latency="1"/>
+      <operations id="50" stage="1" latency="1"/>
+      <operations id="51" stage="1" latency="1"/>
+      <operations id="52" stage="1" latency="1"/>
+      <operations id="53" stage="1" latency="1"/>
+      <operations id="54" stage="1" latency="1"/>
+      <operations id="55" stage="1" latency="1"/>
+      <operations id="56" stage="1" latency="1"/>
+      <operations id="57" stage="1" latency="1"/>
+      <operations id="58" stage="1" latency="1"/>
+      <operations id="59" stage="1" latency="1"/>
+      <operations id="60" stage="1" latency="1"/>
+      <operations id="61" stage="1" latency="1"/>
+      <operations id="70" stage="1" latency="1"/>
+      <operations id="81" stage="1" latency="1"/>
+      <operations id="87" stage="1" latency="2"/>
+      <operations id="90" stage="1" latency="1"/>
+    </states>
+    <states id="15">
+      <operations id="92" stage="1" latency="1"/>
+      <operations id="93" stage="1" latency="1"/>
+      <operations id="94" stage="1" latency="1"/>
+      <operations id="95" stage="1" latency="1"/>
+      <operations id="96" stage="1" latency="1"/>
+      <operations id="98" stage="1" latency="1"/>
+      <operations id="101" stage="3" latency="3"/>
+      <operations id="118" stage="1" latency="1"/>
+      <operations id="119" stage="1" latency="1"/>
+      <operations id="120" stage="1" latency="1"/>
+      <operations id="123" stage="1" latency="1"/>
+      <operations id="124" stage="1" latency="1"/>
+    </states>
+    <states id="16">
+      <operations id="101" stage="2" latency="3"/>
+    </states>
+    <states id="17">
+      <operations id="101" stage="1" latency="3"/>
+      <operations id="102" stage="2" latency="2"/>
+    </states>
+    <states id="18">
+      <operations id="102" stage="1" latency="2"/>
+      <operations id="103" stage="1" latency="1"/>
+      <operations id="104" stage="1" latency="1"/>
+      <operations id="105" stage="1" latency="1"/>
+      <operations id="109" stage="1" latency="1"/>
+    </states>
+    <states id="19">
+      <operations id="110" stage="1" latency="1"/>
+      <operations id="111" stage="1" latency="1"/>
+      <operations id="112" stage="8" latency="8"/>
+    </states>
+    <states id="20">
+      <operations id="112" stage="7" latency="8"/>
+    </states>
+    <states id="21">
+      <operations id="112" stage="6" latency="8"/>
+    </states>
+    <states id="22">
+      <operations id="112" stage="5" latency="8"/>
+    </states>
+    <states id="23">
+      <operations id="112" stage="4" latency="8"/>
+    </states>
+    <states id="24">
+      <operations id="112" stage="3" latency="8"/>
+    </states>
+    <states id="25">
+      <operations id="112" stage="2" latency="8"/>
+    </states>
+    <states id="26">
+      <operations id="112" stage="1" latency="8"/>
+    </states>
+    <states id="27">
+      <operations id="106" stage="1" latency="1"/>
+      <operations id="107" stage="1" latency="1"/>
+      <operations id="108" stage="1" latency="1"/>
+      <operations id="113" stage="2" latency="2"/>
+    </states>
+    <states id="28">
+      <operations id="113" stage="1" latency="2"/>
+      <operations id="114" stage="1" latency="1"/>
+      <operations id="115" stage="1" latency="1"/>
+    </states>
+    <states id="29">
+      <operations id="116" stage="2" latency="2"/>
+    </states>
+    <states id="30">
+      <operations id="116" stage="1" latency="2"/>
+    </states>
+    <states id="31">
+      <operations id="117" stage="2" latency="2"/>
+    </states>
+    <states id="32">
+      <operations id="99" stage="1" latency="1"/>
+      <operations id="100" stage="1" latency="1"/>
+      <operations id="117" stage="1" latency="2"/>
+      <operations id="121" stage="1" latency="1"/>
+    </states>
+    <states id="33">
+      <operations id="125" stage="2" latency="2"/>
+    </states>
+    <states id="34">
+      <operations id="125" stage="1" latency="2"/>
+      <operations id="126" stage="1" latency="1"/>
+    </states>
+    <transitions inState="1" outState="2">
+      <condition id="-1"/>
+    </transitions>
+    <transitions inState="2" outState="3">
+      <condition id="-1"/>
+    </transitions>
+    <transitions inState="3" outState="4">
+      <condition id="-1"/>
+    </transitions>
+    <transitions inState="4" outState="5">
+      <condition id="-1"/>
+    </transitions>
+    <transitions inState="5" outState="6">
+      <condition id="-1"/>
+    </transitions>
+    <transitions inState="6" outState="7">
+      <condition id="-1"/>
+    </transitions>
+    <transitions inState="7" outState="8">
+      <condition id="-1"/>
+    </transitions>
+    <transitions inState="8" outState="9">
+      <condition id="-1"/>
+    </transitions>
+    <transitions inState="9" outState="10">
+      <condition id="-1"/>
+    </transitions>
+    <transitions inState="10" outState="11">
+      <condition id="-1"/>
+    </transitions>
+    <transitions inState="11" outState="12">
+      <condition id="-1"/>
+    </transitions>
+    <transitions inState="12" outState="13">
+      <condition id="-1"/>
+    </transitions>
+    <transitions inState="13" outState="14">
+      <condition id="-1"/>
+    </transitions>
+    <transitions inState="14" outState="15">
+      <condition id="-1"/>
+    </transitions>
+    <transitions inState="15" outState="16">
+      <condition id="-1"/>
+    </transitions>
+    <transitions inState="15" outState="33">
+      <condition id="-1"/>
+    </transitions>
+    <transitions inState="16" outState="17">
+      <condition id="-1"/>
+    </transitions>
+    <transitions inState="17" outState="18">
+      <condition id="-1"/>
+    </transitions>
+    <transitions inState="18" outState="19">
+      <condition id="-1"/>
+    </transitions>
+    <transitions inState="19" outState="20">
+      <condition id="-1"/>
+    </transitions>
+    <transitions inState="20" outState="21">
+      <condition id="-1"/>
+    </transitions>
+    <transitions inState="21" outState="22">
+      <condition id="-1"/>
+    </transitions>
+    <transitions inState="22" outState="23">
+      <condition id="-1"/>
+    </transitions>
+    <transitions inState="23" outState="24">
+      <condition id="-1"/>
+    </transitions>
+    <transitions inState="24" outState="25">
+      <condition id="-1"/>
+    </transitions>
+    <transitions inState="25" outState="26">
+      <condition id="-1"/>
+    </transitions>
+    <transitions inState="26" outState="27">
+      <condition id="-1"/>
+    </transitions>
+    <transitions inState="27" outState="28">
+      <condition id="-1"/>
+    </transitions>
+    <transitions inState="28" outState="29">
+      <condition id="-1"/>
+    </transitions>
+    <transitions inState="29" outState="30">
+      <condition id="-1"/>
+    </transitions>
+    <transitions inState="30" outState="31">
+      <condition id="-1"/>
+    </transitions>
+    <transitions inState="31" outState="32">
+      <condition id="-1"/>
+    </transitions>
+    <transitions inState="32" outState="15">
+      <condition id="-1"/>
+    </transitions>
+    <transitions inState="33" outState="34">
+      <condition id="-1"/>
+    </transitions>
+  </fsm>
+  <CFGRegionsRoot>
+    <cfgRegions mId="1" mTag="upconv_core_top" mII="-1" mDepth="-1" mMinTripCount="-1" mMaxTripCount="-1" mMinLatency="87613" mMaxLatency="737659389">
+      <subRegions>2</subRegions>
+      <subRegions>3</subRegions>
+      <subRegions>4</subRegions>
+      <mDfPipe/>
+    </cfgRegions>
+    <cfgRegions mId="2" mTag="Entry" mII="-1" mDepth="-1" mMinTripCount="-1" mMaxTripCount="-1" mMinLatency="2808" mMaxLatency="2885328">
+      <basicBlocks>91</basicBlocks>
+      <mDfPipe/>
+    </cfgRegions>
+    <cfgRegions mId="3" mTag="ROW_LOOP" mII="-1" mDepth="-1" mMinTripCount="15" mMaxTripCount="127" mMinLatency="82140" mMaxLatency="731896428" mType="1">
+      <basicBlocks>97</basicBlocks>
+      <basicBlocks>122</basicBlocks>
+      <mDfPipe/>
+    </cfgRegions>
+    <cfgRegions mId="4" mTag="Return" mII="-1" mDepth="-1" mMinTripCount="-1" mMaxTripCount="-1" mMinLatency="2664" mMaxLatency="2877632">
+      <basicBlocks>127</basicBlocks>
+      <mDfPipe/>
+    </cfgRegions>
+  </CFGRegionsRoot>
+</cdfg:DBCdfg>

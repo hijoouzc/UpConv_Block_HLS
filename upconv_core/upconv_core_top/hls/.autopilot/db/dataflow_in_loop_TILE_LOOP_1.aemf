@@ -1,0 +1,845 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<cdfg:DBCdfg xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:cdfg="http://www.autoesl.com/DBCdfg" timeStamp="1781756484551">
+  <ports id="1" name="gmem_weight" type="PortType" coreId="4294967295" bitwidth="256" iftype="IfTypeFifo">
+    <dataOutputObjs>call</dataOutputObjs>
+  </ports>
+  <ports id="2" name="W_ptr" type="PortType" coreId="4294967295" bitwidth="64">
+    <dataOutputObjs>read</dataOutputObjs>
+  </ports>
+  <ports id="3" name="tile" type="PortType" coreId="4294967295" bitwidth="6">
+    <dataOutputObjs>read</dataOutputObjs>
+  </ports>
+  <ports id="4" name="C_OUT" type="PortType" coreId="4294967295" bitwidth="9">
+    <dataOutputObjs>read</dataOutputObjs>
+  </ports>
+  <ports id="5" name="C_IN" type="PortType" coreId="4294967295" bitwidth="10">
+    <dataOutputObjs>read</dataOutputObjs>
+  </ports>
+  <ports id="6" name="ho" type="PortType" coreId="4294967295" bitwidth="8">
+    <dataOutputObjs>read</dataOutputObjs>
+  </ports>
+  <ports id="7" name="H_IN" type="PortType" coreId="4294967295" bitwidth="8">
+    <dataOutputObjs>read</dataOutputObjs>
+  </ports>
+  <ports id="8" name="W_IN" type="PortType" coreId="4294967295" bitwidth="8">
+    <dataOutputObjs>read</dataOutputObjs>
+  </ports>
+  <ports id="9" name="x_buf" type="PortType" coreName="RAM_T2P_URAM" coreId="4294967295" bitwidth="256" iftype="IfTypeRegister" arraysize="2048">
+    <dataOutputObjs>call</dataOutputObjs>
+  </ports>
+  <ports id="10" name="void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_9" type="PortType" coreName="RAM_T2P_URAM" coreId="4294967295" bitwidth="16" direction="DirInOut" iftype="IfTypeRegister" arraysize="7680">
+    <dataInputObjs>call</dataInputObjs>
+    <dataOutputObjs>call</dataOutputObjs>
+  </ports>
+  <ports id="11" name="void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_1" type="PortType" coreName="RAM_T2P_URAM" coreId="4294967295" bitwidth="16" direction="DirInOut" iftype="IfTypeRegister" arraysize="7680">
+    <dataInputObjs>call</dataInputObjs>
+    <dataOutputObjs>call</dataOutputObjs>
+  </ports>
+  <ports id="12" name="void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_8" type="PortType" coreName="RAM_T2P_URAM" coreId="4294967295" bitwidth="16" direction="DirInOut" iftype="IfTypeRegister" arraysize="7680">
+    <dataInputObjs>call</dataInputObjs>
+    <dataOutputObjs>call</dataOutputObjs>
+  </ports>
+  <ports id="13" name="void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u" type="PortType" coreName="RAM_T2P_URAM" coreId="4294967295" bitwidth="16" direction="DirInOut" iftype="IfTypeRegister" arraysize="7680">
+    <dataInputObjs>call</dataInputObjs>
+    <dataOutputObjs>call</dataOutputObjs>
+  </ports>
+  <ports id="14" name="void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_7" type="PortType" coreName="RAM_T2P_URAM" coreId="4294967295" bitwidth="16" direction="DirInOut" iftype="IfTypeRegister" arraysize="7680">
+    <dataInputObjs>call</dataInputObjs>
+    <dataOutputObjs>call</dataOutputObjs>
+  </ports>
+  <ports id="15" name="void_UpConv_Fused_Row_8_ap_uint_256_ap_uint_256_const_ap_uint_256_const_ap_uint_256_const_ap_uint_256_const_ap_uint_256_decimal16_int_int_int_int_int_row_acc" type="PortType" coreName="RAM_T2P_URAM" coreId="4294967295" bitwidth="16" direction="DirInOut" iftype="IfTypeRegister" arraysize="7680">
+    <dataInputObjs>call</dataInputObjs>
+    <dataOutputObjs>call</dataOutputObjs>
+  </ports>
+  <ports id="16" name="void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_6" type="PortType" coreName="RAM_T2P_URAM" coreId="4294967295" bitwidth="16" direction="DirInOut" iftype="IfTypeRegister" arraysize="7680">
+    <dataInputObjs>call</dataInputObjs>
+    <dataOutputObjs>call</dataOutputObjs>
+  </ports>
+  <ports id="17" name="void_UpConv_Fused_Row_8_ap_uint_256_ap_uint_256_const_ap_uint_256_const_ap_uint_256_const_ap_uint_256_const_ap_uint_256_decimal16_int_int_int_int_int_row_acc_0" type="PortType" coreName="RAM_T2P_URAM" coreId="4294967295" bitwidth="16" direction="DirInOut" iftype="IfTypeRegister" arraysize="7680">
+    <dataInputObjs>call</dataInputObjs>
+    <dataOutputObjs>call</dataOutputObjs>
+  </ports>
+  <ports id="18" name="void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_5" type="PortType" coreName="RAM_T2P_URAM" coreId="4294967295" bitwidth="16" direction="DirInOut" iftype="IfTypeRegister" arraysize="7680">
+    <dataInputObjs>call</dataInputObjs>
+    <dataOutputObjs>call</dataOutputObjs>
+  </ports>
+  <ports id="19" name="void_UpConv_Fused_Row_8_ap_uint_256_ap_uint_256_const_ap_uint_256_const_ap_uint_256_const_ap_uint_256_const_ap_uint_256_decimal16_int_int_int_int_int_row_acc_1" type="PortType" coreName="RAM_T2P_URAM" coreId="4294967295" bitwidth="16" direction="DirInOut" iftype="IfTypeRegister" arraysize="7680">
+    <dataInputObjs>call</dataInputObjs>
+    <dataOutputObjs>call</dataOutputObjs>
+  </ports>
+  <ports id="20" name="void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_4" type="PortType" coreName="RAM_T2P_URAM" coreId="4294967295" bitwidth="16" direction="DirInOut" iftype="IfTypeRegister" arraysize="7680">
+    <dataInputObjs>call</dataInputObjs>
+    <dataOutputObjs>call</dataOutputObjs>
+  </ports>
+  <ports id="21" name="void_UpConv_Fused_Row_8_ap_uint_256_ap_uint_256_const_ap_uint_256_const_ap_uint_256_const_ap_uint_256_const_ap_uint_256_decimal16_int_int_int_int_int_row_acc_2" type="PortType" coreName="RAM_T2P_URAM" coreId="4294967295" bitwidth="16" direction="DirInOut" iftype="IfTypeRegister" arraysize="7680">
+    <dataInputObjs>call</dataInputObjs>
+    <dataOutputObjs>call</dataOutputObjs>
+  </ports>
+  <ports id="22" name="void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_3" type="PortType" coreName="RAM_T2P_URAM" coreId="4294967295" bitwidth="16" direction="DirInOut" iftype="IfTypeRegister" arraysize="7680">
+    <dataInputObjs>call</dataInputObjs>
+    <dataOutputObjs>call</dataOutputObjs>
+  </ports>
+  <ports id="23" name="void_UpConv_Fused_Row_8_ap_uint_256_ap_uint_256_const_ap_uint_256_const_ap_uint_256_const_ap_uint_256_const_ap_uint_256_decimal16_int_int_int_int_int_row_acc_3" type="PortType" coreName="RAM_T2P_URAM" coreId="4294967295" bitwidth="16" direction="DirInOut" iftype="IfTypeRegister" arraysize="7680">
+    <dataInputObjs>call</dataInputObjs>
+    <dataOutputObjs>call</dataOutputObjs>
+  </ports>
+  <ports id="24" name="void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_2" type="PortType" coreName="RAM_T2P_URAM" coreId="4294967295" bitwidth="16" direction="DirInOut" iftype="IfTypeRegister" arraysize="7680">
+    <dataInputObjs>call</dataInputObjs>
+    <dataOutputObjs>call</dataOutputObjs>
+  </ports>
+  <ports id="25" name="void_UpConv_Fused_Row_8_ap_uint_256_ap_uint_256_const_ap_uint_256_const_ap_uint_256_const_ap_uint_256_const_ap_uint_256_decimal16_int_int_int_int_int_row_acc_4" type="PortType" coreName="RAM_T2P_URAM" coreId="4294967295" bitwidth="16" direction="DirInOut" iftype="IfTypeRegister" arraysize="7680">
+    <dataInputObjs>call</dataInputObjs>
+    <dataOutputObjs>call</dataOutputObjs>
+  </ports>
+  <edges id="70" source_obj="//@ports.7" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.0"/>
+  <edges id="72" source_obj="//@ports.6" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.1"/>
+  <edges id="74" source_obj="//@ports.5" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.2"/>
+  <edges id="77" source_obj="//@ports.4" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.3"/>
+  <edges id="80" source_obj="//@ports.3" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.4"/>
+  <edges id="83" source_obj="//@ports.2" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.5"/>
+  <edges id="86" source_obj="//@ports.1" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.6"/>
+  <edges id="101" source_obj="//@regions.0/@basic_blocks.0/@node_objs.2" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.18"/>
+  <edges id="102" source_obj="//@regions.0/@basic_blocks.0/@node_objs.9" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.18"/>
+  <edges id="103" source_obj="//@regions.0/@basic_blocks.0/@node_objs.1" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.18"/>
+  <edges id="104" source_obj="//@regions.0/@basic_blocks.0/@node_objs.8" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.18"/>
+  <edges id="105" source_obj="//@regions.0/@basic_blocks.0/@node_objs.0" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.18"/>
+  <edges id="106" source_obj="//@regions.0/@basic_blocks.0/@node_objs.7" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.18"/>
+  <edges id="109" source_obj="//@ports.0" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.19"/>
+  <edges id="110" source_obj="//@regions.0/@basic_blocks.0/@node_objs.6" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.19"/>
+  <edges id="111" source_obj="//@regions.0/@basic_blocks.0/@node_objs.5" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.19"/>
+  <edges id="112" source_obj="//@regions.0/@basic_blocks.0/@node_objs.4" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.19"/>
+  <edges id="113" source_obj="//@regions.0/@basic_blocks.0/@node_objs.3" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.19"/>
+  <edges id="114" source_obj="//@regions.0/@basic_blocks.0/@node_objs.17" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.19"/>
+  <edges id="115" source_obj="//@regions.0/@basic_blocks.0/@node_objs.16" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.19"/>
+  <edges id="116" source_obj="//@regions.0/@basic_blocks.0/@node_objs.15" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.19"/>
+  <edges id="117" source_obj="//@regions.0/@basic_blocks.0/@node_objs.14" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.19"/>
+  <edges id="118" source_obj="//@regions.0/@basic_blocks.0/@node_objs.13" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.19"/>
+  <edges id="119" source_obj="//@regions.0/@basic_blocks.0/@node_objs.12" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.19"/>
+  <edges id="120" source_obj="//@regions.0/@basic_blocks.0/@node_objs.11" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.19"/>
+  <edges id="121" source_obj="//@regions.0/@basic_blocks.0/@node_objs.10" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.19"/>
+  <edges id="122" source_obj="//@regions.0/@basic_blocks.0/@node_objs.19" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.20"/>
+  <edges id="123" source_obj="//@regions.0/@basic_blocks.0/@node_objs.19" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.21"/>
+  <edges id="124" source_obj="//@regions.0/@basic_blocks.0/@node_objs.19" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.22"/>
+  <edges id="127" source_obj="//@regions.0/@basic_blocks.0/@node_objs.17" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.23"/>
+  <edges id="128" source_obj="//@regions.0/@basic_blocks.0/@node_objs.16" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.23"/>
+  <edges id="129" source_obj="//@regions.0/@basic_blocks.0/@node_objs.15" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.23"/>
+  <edges id="130" source_obj="//@regions.0/@basic_blocks.0/@node_objs.14" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.23"/>
+  <edges id="131" source_obj="//@regions.0/@basic_blocks.0/@node_objs.13" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.23"/>
+  <edges id="132" source_obj="//@regions.0/@basic_blocks.0/@node_objs.12" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.23"/>
+  <edges id="133" source_obj="//@regions.0/@basic_blocks.0/@node_objs.11" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.23"/>
+  <edges id="134" source_obj="//@regions.0/@basic_blocks.0/@node_objs.10" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.23"/>
+  <edges id="135" source_obj="//@regions.0/@basic_blocks.0/@node_objs.20" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.23"/>
+  <edges id="136" source_obj="//@regions.0/@basic_blocks.0/@node_objs.9" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.23"/>
+  <edges id="137" source_obj="//@regions.0/@basic_blocks.0/@node_objs.8" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.23"/>
+  <edges id="138" source_obj="//@regions.0/@basic_blocks.0/@node_objs.7" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.23"/>
+  <edges id="139" source_obj="//@regions.0/@basic_blocks.0/@node_objs.22" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.23"/>
+  <edges id="140" source_obj="//@regions.0/@basic_blocks.0/@node_objs.21" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.23"/>
+  <edges id="141" source_obj="//@ports.8" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.23"/>
+  <edges id="142" source_obj="//@ports.9" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.23"/>
+  <edges id="143" source_obj="//@ports.10" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.23"/>
+  <edges id="144" source_obj="//@ports.11" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.23"/>
+  <edges id="145" source_obj="//@ports.12" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.23"/>
+  <edges id="146" source_obj="//@ports.13" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.23"/>
+  <edges id="147" source_obj="//@ports.14" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.23"/>
+  <edges id="148" source_obj="//@ports.15" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.23"/>
+  <edges id="149" source_obj="//@ports.16" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.23"/>
+  <edges id="150" source_obj="//@ports.17" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.23"/>
+  <edges id="151" source_obj="//@ports.18" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.23"/>
+  <edges id="152" source_obj="//@ports.19" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.23"/>
+  <edges id="153" source_obj="//@ports.20" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.23"/>
+  <edges id="154" source_obj="//@ports.21" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.23"/>
+  <edges id="155" source_obj="//@ports.22" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.23"/>
+  <edges id="156" source_obj="//@ports.23" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.23"/>
+  <edges id="157" source_obj="//@ports.24" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.23"/>
+  <edges id="332" edge_type="VirtEdge" source_obj="//@regions.0/@basic_blocks.0/@node_objs.19" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.23"/>
+  <edges id="333" edge_type="VirtEdge" source_obj="//@regions.0/@basic_blocks.0/@node_objs.18" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.23"/>
+  <edges id="334" edge_type="VirtEdge" source_obj="//@regions.0/@basic_blocks.0/@node_objs.18" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.23"/>
+  <edges id="-142" source_obj="//@regions.0/@basic_blocks.0/@node_objs.23" sink_obj="//@ports.9"/>
+  <edges id="-143" source_obj="//@regions.0/@basic_blocks.0/@node_objs.23" sink_obj="//@ports.10"/>
+  <edges id="-144" source_obj="//@regions.0/@basic_blocks.0/@node_objs.23" sink_obj="//@ports.11"/>
+  <edges id="-145" source_obj="//@regions.0/@basic_blocks.0/@node_objs.23" sink_obj="//@ports.12"/>
+  <edges id="-146" source_obj="//@regions.0/@basic_blocks.0/@node_objs.23" sink_obj="//@ports.13"/>
+  <edges id="-147" source_obj="//@regions.0/@basic_blocks.0/@node_objs.23" sink_obj="//@ports.14"/>
+  <edges id="-148" source_obj="//@regions.0/@basic_blocks.0/@node_objs.23" sink_obj="//@ports.15"/>
+  <edges id="-149" source_obj="//@regions.0/@basic_blocks.0/@node_objs.23" sink_obj="//@ports.16"/>
+  <edges id="-150" source_obj="//@regions.0/@basic_blocks.0/@node_objs.23" sink_obj="//@ports.17"/>
+  <edges id="-151" source_obj="//@regions.0/@basic_blocks.0/@node_objs.23" sink_obj="//@ports.18"/>
+  <edges id="-152" source_obj="//@regions.0/@basic_blocks.0/@node_objs.23" sink_obj="//@ports.19"/>
+  <edges id="-153" source_obj="//@regions.0/@basic_blocks.0/@node_objs.23" sink_obj="//@ports.20"/>
+  <edges id="-154" source_obj="//@regions.0/@basic_blocks.0/@node_objs.23" sink_obj="//@ports.21"/>
+  <edges id="-155" source_obj="//@regions.0/@basic_blocks.0/@node_objs.23" sink_obj="//@ports.22"/>
+  <edges id="-156" source_obj="//@regions.0/@basic_blocks.0/@node_objs.23" sink_obj="//@ports.23"/>
+  <edges id="-157" source_obj="//@regions.0/@basic_blocks.0/@node_objs.23" sink_obj="//@ports.24"/>
+  <regions anchor_node="-1" region_type="16" typeName="Dataflow" iiViolation="" id="338" RegionName="dataflow_in_loop_TILE_LOOP.1">
+    <basic_blocks id="67" name="dataflow_in_loop_TILE_LOOP.1" type="BlockType">
+      <node_objs xsi:type="cdfg:CdfgNode" id="26" name="W_IN_read" coreId="4294967295" bitwidth="8" opcode="read" nodeLabel="1.0" m_display="0" m_topoIndex="17" m_clusterGroupNumber="-1">
+        <dataInputObjs>W_IN</dataInputObjs>
+        <dataOutputObjs>call</dataOutputObjs>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="27" name="H_IN_read" coreId="4294967295" bitwidth="8" opcode="read" nodeLabel="1.0" m_display="0" m_topoIndex="18" m_clusterGroupNumber="-1">
+        <dataInputObjs>H_IN</dataInputObjs>
+        <dataOutputObjs>call</dataOutputObjs>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="28" name="ho_read" coreId="4294967295" bitwidth="8" opcode="read" nodeLabel="1.0" m_display="0" m_topoIndex="19" m_clusterGroupNumber="-1">
+        <dataInputObjs>ho</dataInputObjs>
+        <dataOutputObjs>call</dataOutputObjs>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="29" name="C_IN_read" coreId="4294967295" bitwidth="10" opcode="read" m_display="0" m_topoIndex="1" m_clusterGroupNumber="-1">
+        <dataInputObjs>C_IN</dataInputObjs>
+        <dataOutputObjs>call</dataOutputObjs>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="30" name="C_OUT_read" coreId="4294967295" bitwidth="9" opcode="read" m_display="0" m_topoIndex="2" m_clusterGroupNumber="-1">
+        <dataInputObjs>C_OUT</dataInputObjs>
+        <dataOutputObjs>call</dataOutputObjs>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="31" name="tile_read" coreId="4294967295" bitwidth="6" opcode="read" m_display="0" m_topoIndex="3" m_clusterGroupNumber="-1">
+        <dataInputObjs>tile</dataInputObjs>
+        <dataOutputObjs>call</dataOutputObjs>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="32" name="W_ptr_read" coreId="4294967295" bitwidth="64" opcode="read" m_display="0" m_topoIndex="4" m_clusterGroupNumber="-1">
+        <dataInputObjs>W_ptr</dataInputObjs>
+        <dataOutputObjs>call</dataOutputObjs>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="33" name="W_IN_c" rtlName="W_IN_c_U" coreName="FIFO_SRL" implIndex="srl" control="no" opType="fifo" coreId="80" bitwidth="8" opcode="alloca" m_display="0" m_topoIndex="5" m_clusterGroupNumber="-1">
+        <dataOutputObjs>call</dataOutputObjs>
+        <dataOutputObjs>call</dataOutputObjs>
+        <constName>empty</constName>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="36" name="H_IN_c" rtlName="H_IN_c_U" coreName="FIFO_SRL" implIndex="srl" control="no" opType="fifo" coreId="80" bitwidth="8" opcode="alloca" m_display="0" m_topoIndex="6" m_clusterGroupNumber="-1">
+        <dataOutputObjs>call</dataOutputObjs>
+        <dataOutputObjs>call</dataOutputObjs>
+        <constName>empty</constName>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="39" name="ho_c" rtlName="ho_c_U" coreName="FIFO_SRL" implIndex="srl" control="no" opType="fifo" coreId="80" bitwidth="8" opcode="alloca" m_display="0" m_topoIndex="7" m_clusterGroupNumber="-1">
+        <dataOutputObjs>call</dataOutputObjs>
+        <dataOutputObjs>call</dataOutputObjs>
+        <constName>empty</constName>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="43" name="wbuf" lineNumber="216" originalName="wbuf" fileName="../gen2/Hls_Layers_UpConv.tpp" fileDirectory="../." rtlName="wbuf_U" coreName="RAM_T2P_URAM" implIndex="uram" control="yes" opType="ram_t2p" coreId="99" contextFuncName="p_Z16UpConv_Fused_RowILi8EEvP7ap_uintILi256EEPKS1_S4_S4_S4_S2_Dhiiiii_for_inc28" bitwidth="256" opcode="alloca" m_display="0" m_topoIndex="8" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="../gen2/Hls_Layers_UpConv.tpp" linenumber="216" fileDirectory="/home/hoinguyen/Documents/Vitis/UpConv_HLS/upconv_core" functionName="UpConv_Fused_Row&amp;lt;8&amp;gt;"/>
+        <inlineStackInfo fileName="../gen2/Hls_Layers_UpConv.tpp" linenumber="216" fileDirectory="/home/hoinguyen/Documents/Vitis/UpConv_HLS/upconv_core" functionName="_Z16UpConv_Fused_RowILi8EEvP7ap_uintILi256EEPKS1_S4_S4_S4_S2_Dhiiiii_for.inc28"/>
+        <dataOutputObjs>call</dataOutputObjs>
+        <dataOutputObjs>call</dataOutputObjs>
+        <constName>empty</constName>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="44" name="wbuf_1" lineNumber="216" originalName="wbuf" fileName="../gen2/Hls_Layers_UpConv.tpp" fileDirectory="../." rtlName="wbuf_1_U" coreName="RAM_T2P_URAM" implIndex="uram" control="yes" opType="ram_t2p" coreId="99" contextFuncName="p_Z16UpConv_Fused_RowILi8EEvP7ap_uintILi256EEPKS1_S4_S4_S4_S2_Dhiiiii_for_inc28" bitwidth="256" opcode="alloca" m_display="0" m_topoIndex="9" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="../gen2/Hls_Layers_UpConv.tpp" linenumber="216" fileDirectory="/home/hoinguyen/Documents/Vitis/UpConv_HLS/upconv_core" functionName="UpConv_Fused_Row&amp;lt;8&amp;gt;"/>
+        <inlineStackInfo fileName="../gen2/Hls_Layers_UpConv.tpp" linenumber="216" fileDirectory="/home/hoinguyen/Documents/Vitis/UpConv_HLS/upconv_core" functionName="_Z16UpConv_Fused_RowILi8EEvP7ap_uintILi256EEPKS1_S4_S4_S4_S2_Dhiiiii_for.inc28"/>
+        <dataOutputObjs>call</dataOutputObjs>
+        <dataOutputObjs>call</dataOutputObjs>
+        <constName>empty</constName>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="45" name="wbuf_2" lineNumber="216" originalName="wbuf" fileName="../gen2/Hls_Layers_UpConv.tpp" fileDirectory="../." rtlName="wbuf_2_U" coreName="RAM_T2P_URAM" implIndex="uram" control="yes" opType="ram_t2p" coreId="99" contextFuncName="p_Z16UpConv_Fused_RowILi8EEvP7ap_uintILi256EEPKS1_S4_S4_S4_S2_Dhiiiii_for_inc28" bitwidth="256" opcode="alloca" m_display="0" m_topoIndex="10" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="../gen2/Hls_Layers_UpConv.tpp" linenumber="216" fileDirectory="/home/hoinguyen/Documents/Vitis/UpConv_HLS/upconv_core" functionName="UpConv_Fused_Row&amp;lt;8&amp;gt;"/>
+        <inlineStackInfo fileName="../gen2/Hls_Layers_UpConv.tpp" linenumber="216" fileDirectory="/home/hoinguyen/Documents/Vitis/UpConv_HLS/upconv_core" functionName="_Z16UpConv_Fused_RowILi8EEvP7ap_uintILi256EEPKS1_S4_S4_S4_S2_Dhiiiii_for.inc28"/>
+        <dataOutputObjs>call</dataOutputObjs>
+        <dataOutputObjs>call</dataOutputObjs>
+        <constName>empty</constName>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="46" name="wbuf_3" lineNumber="216" originalName="wbuf" fileName="../gen2/Hls_Layers_UpConv.tpp" fileDirectory="../." rtlName="wbuf_3_U" coreName="RAM_T2P_URAM" implIndex="uram" control="yes" opType="ram_t2p" coreId="99" contextFuncName="p_Z16UpConv_Fused_RowILi8EEvP7ap_uintILi256EEPKS1_S4_S4_S4_S2_Dhiiiii_for_inc28" bitwidth="256" opcode="alloca" m_display="0" m_topoIndex="11" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="../gen2/Hls_Layers_UpConv.tpp" linenumber="216" fileDirectory="/home/hoinguyen/Documents/Vitis/UpConv_HLS/upconv_core" functionName="UpConv_Fused_Row&amp;lt;8&amp;gt;"/>
+        <inlineStackInfo fileName="../gen2/Hls_Layers_UpConv.tpp" linenumber="216" fileDirectory="/home/hoinguyen/Documents/Vitis/UpConv_HLS/upconv_core" functionName="_Z16UpConv_Fused_RowILi8EEvP7ap_uintILi256EEPKS1_S4_S4_S4_S2_Dhiiiii_for.inc28"/>
+        <dataOutputObjs>call</dataOutputObjs>
+        <dataOutputObjs>call</dataOutputObjs>
+        <constName>empty</constName>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="47" name="wbuf_4" lineNumber="216" originalName="wbuf" fileName="../gen2/Hls_Layers_UpConv.tpp" fileDirectory="../." rtlName="wbuf_4_U" coreName="RAM_T2P_URAM" implIndex="uram" control="yes" opType="ram_t2p" coreId="99" contextFuncName="p_Z16UpConv_Fused_RowILi8EEvP7ap_uintILi256EEPKS1_S4_S4_S4_S2_Dhiiiii_for_inc28" bitwidth="256" opcode="alloca" m_display="0" m_topoIndex="12" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="../gen2/Hls_Layers_UpConv.tpp" linenumber="216" fileDirectory="/home/hoinguyen/Documents/Vitis/UpConv_HLS/upconv_core" functionName="UpConv_Fused_Row&amp;lt;8&amp;gt;"/>
+        <inlineStackInfo fileName="../gen2/Hls_Layers_UpConv.tpp" linenumber="216" fileDirectory="/home/hoinguyen/Documents/Vitis/UpConv_HLS/upconv_core" functionName="_Z16UpConv_Fused_RowILi8EEvP7ap_uintILi256EEPKS1_S4_S4_S4_S2_Dhiiiii_for.inc28"/>
+        <dataOutputObjs>call</dataOutputObjs>
+        <dataOutputObjs>call</dataOutputObjs>
+        <constName>empty</constName>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="48" name="wbuf_5" lineNumber="216" originalName="wbuf" fileName="../gen2/Hls_Layers_UpConv.tpp" fileDirectory="../." rtlName="wbuf_5_U" coreName="RAM_T2P_URAM" implIndex="uram" control="yes" opType="ram_t2p" coreId="99" contextFuncName="p_Z16UpConv_Fused_RowILi8EEvP7ap_uintILi256EEPKS1_S4_S4_S4_S2_Dhiiiii_for_inc28" bitwidth="256" opcode="alloca" m_display="0" m_topoIndex="13" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="../gen2/Hls_Layers_UpConv.tpp" linenumber="216" fileDirectory="/home/hoinguyen/Documents/Vitis/UpConv_HLS/upconv_core" functionName="UpConv_Fused_Row&amp;lt;8&amp;gt;"/>
+        <inlineStackInfo fileName="../gen2/Hls_Layers_UpConv.tpp" linenumber="216" fileDirectory="/home/hoinguyen/Documents/Vitis/UpConv_HLS/upconv_core" functionName="_Z16UpConv_Fused_RowILi8EEvP7ap_uintILi256EEPKS1_S4_S4_S4_S2_Dhiiiii_for.inc28"/>
+        <dataOutputObjs>call</dataOutputObjs>
+        <dataOutputObjs>call</dataOutputObjs>
+        <constName>empty</constName>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="49" name="wbuf_6" lineNumber="216" originalName="wbuf" fileName="../gen2/Hls_Layers_UpConv.tpp" fileDirectory="../." rtlName="wbuf_6_U" coreName="RAM_T2P_URAM" implIndex="uram" control="yes" opType="ram_t2p" coreId="99" contextFuncName="p_Z16UpConv_Fused_RowILi8EEvP7ap_uintILi256EEPKS1_S4_S4_S4_S2_Dhiiiii_for_inc28" bitwidth="256" opcode="alloca" m_display="0" m_topoIndex="14" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="../gen2/Hls_Layers_UpConv.tpp" linenumber="216" fileDirectory="/home/hoinguyen/Documents/Vitis/UpConv_HLS/upconv_core" functionName="UpConv_Fused_Row&amp;lt;8&amp;gt;"/>
+        <inlineStackInfo fileName="../gen2/Hls_Layers_UpConv.tpp" linenumber="216" fileDirectory="/home/hoinguyen/Documents/Vitis/UpConv_HLS/upconv_core" functionName="_Z16UpConv_Fused_RowILi8EEvP7ap_uintILi256EEPKS1_S4_S4_S4_S2_Dhiiiii_for.inc28"/>
+        <dataOutputObjs>call</dataOutputObjs>
+        <dataOutputObjs>call</dataOutputObjs>
+        <constName>empty</constName>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="50" name="wbuf_7" lineNumber="216" originalName="wbuf" fileName="../gen2/Hls_Layers_UpConv.tpp" fileDirectory="../." rtlName="wbuf_7_U" coreName="RAM_T2P_URAM" implIndex="uram" control="yes" opType="ram_t2p" coreId="99" contextFuncName="p_Z16UpConv_Fused_RowILi8EEvP7ap_uintILi256EEPKS1_S4_S4_S4_S2_Dhiiiii_for_inc28" bitwidth="256" opcode="alloca" m_display="0" m_topoIndex="15" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="../gen2/Hls_Layers_UpConv.tpp" linenumber="216" fileDirectory="/home/hoinguyen/Documents/Vitis/UpConv_HLS/upconv_core" functionName="UpConv_Fused_Row&amp;lt;8&amp;gt;"/>
+        <inlineStackInfo fileName="../gen2/Hls_Layers_UpConv.tpp" linenumber="216" fileDirectory="/home/hoinguyen/Documents/Vitis/UpConv_HLS/upconv_core" functionName="_Z16UpConv_Fused_RowILi8EEvP7ap_uintILi256EEPKS1_S4_S4_S4_S2_Dhiiiii_for.inc28"/>
+        <dataOutputObjs>call</dataOutputObjs>
+        <dataOutputObjs>call</dataOutputObjs>
+        <constName>empty</constName>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="60" name="_ln0" rtlName="entry_proc_U0" coreId="4294967295" opcode="call" nodeLabel="1.0" m_display="0" m_delay="1.21" m_topoIndex="20" m_clusterGroupNumber="-1">
+        <dataInputObjs>read</dataInputObjs>
+        <dataInputObjs>alloca</dataInputObjs>
+        <dataInputObjs>read</dataInputObjs>
+        <dataInputObjs>alloca</dataInputObjs>
+        <dataInputObjs>read</dataInputObjs>
+        <dataInputObjs>alloca</dataInputObjs>
+        <constName>entry_proc</constName>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="61" name="call_ret" lineNumber="219" fileName="../gen2/Hls_Layers_UpConv.tpp" fileDirectory="../." rtlName="uc_load_tile_8_2_U0" coreId="4294967295" contextFuncName="p_Z16UpConv_Fused_RowILi8EEvP7ap_uintILi256EEPKS1_S4_S4_S4_S2_Dhiiiii_for_inc28" bitwidth="25" opcode="call" nodeLatency="1" m_display="0" m_delay="1.61" m_topoIndex="16" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="../gen2/Hls_Layers_UpConv.tpp" linenumber="216" fileDirectory="/home/hoinguyen/Documents/Vitis/UpConv_HLS/upconv_core" functionName="UpConv_Fused_Row&amp;lt;8&amp;gt;"/>
+        <inlineStackInfo fileName="../gen2/Hls_Layers_UpConv.tpp" linenumber="219" fileDirectory="/home/hoinguyen/Documents/Vitis/UpConv_HLS/upconv_core" functionName="_Z16UpConv_Fused_RowILi8EEvP7ap_uintILi256EEPKS1_S4_S4_S4_S2_Dhiiiii_for.inc28"/>
+        <dataInputObjs>gmem_weight</dataInputObjs>
+        <dataInputObjs>read</dataInputObjs>
+        <dataInputObjs>read</dataInputObjs>
+        <dataInputObjs>read</dataInputObjs>
+        <dataInputObjs>read</dataInputObjs>
+        <dataInputObjs>alloca</dataInputObjs>
+        <dataInputObjs>alloca</dataInputObjs>
+        <dataInputObjs>alloca</dataInputObjs>
+        <dataInputObjs>alloca</dataInputObjs>
+        <dataInputObjs>alloca</dataInputObjs>
+        <dataInputObjs>alloca</dataInputObjs>
+        <dataInputObjs>alloca</dataInputObjs>
+        <dataInputObjs>alloca</dataInputObjs>
+        <dataOutputObjs>extractvalue</dataOutputObjs>
+        <dataOutputObjs>extractvalue</dataOutputObjs>
+        <dataOutputObjs>extractvalue</dataOutputObjs>
+        <constName>uc_load_tile_8_2</constName>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="62" name="tile_c_channel" lineNumber="219" fileName="../gen2/Hls_Layers_UpConv.tpp" fileDirectory="../." rtlName="tile_c_channel_U" coreName="FIFO_SRL" implIndex="srl" control="no" opType="fifo" coreId="80" contextFuncName="p_Z16UpConv_Fused_RowILi8EEvP7ap_uintILi256EEPKS1_S4_S4_S4_S2_Dhiiiii_for_inc28" bitwidth="6" opcode="extractvalue" nodeLabel="1.0" m_display="0" m_topoIndex="21" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="../gen2/Hls_Layers_UpConv.tpp" linenumber="216" fileDirectory="/home/hoinguyen/Documents/Vitis/UpConv_HLS/upconv_core" functionName="UpConv_Fused_Row&amp;lt;8&amp;gt;"/>
+        <inlineStackInfo fileName="../gen2/Hls_Layers_UpConv.tpp" linenumber="219" fileDirectory="/home/hoinguyen/Documents/Vitis/UpConv_HLS/upconv_core" functionName="_Z16UpConv_Fused_RowILi8EEvP7ap_uintILi256EEPKS1_S4_S4_S4_S2_Dhiiiii_for.inc28"/>
+        <dataInputObjs>call</dataInputObjs>
+        <dataOutputObjs>call</dataOutputObjs>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="63" name="C_OUT_c_channel" lineNumber="219" fileName="../gen2/Hls_Layers_UpConv.tpp" fileDirectory="../." rtlName="C_OUT_c_channel_U" coreName="FIFO_SRL" implIndex="srl" control="no" opType="fifo" coreId="80" contextFuncName="p_Z16UpConv_Fused_RowILi8EEvP7ap_uintILi256EEPKS1_S4_S4_S4_S2_Dhiiiii_for_inc28" bitwidth="9" opcode="extractvalue" nodeLabel="1.0" m_display="0" m_topoIndex="22" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="../gen2/Hls_Layers_UpConv.tpp" linenumber="216" fileDirectory="/home/hoinguyen/Documents/Vitis/UpConv_HLS/upconv_core" functionName="UpConv_Fused_Row&amp;lt;8&amp;gt;"/>
+        <inlineStackInfo fileName="../gen2/Hls_Layers_UpConv.tpp" linenumber="219" fileDirectory="/home/hoinguyen/Documents/Vitis/UpConv_HLS/upconv_core" functionName="_Z16UpConv_Fused_RowILi8EEvP7ap_uintILi256EEPKS1_S4_S4_S4_S2_Dhiiiii_for.inc28"/>
+        <dataInputObjs>call</dataInputObjs>
+        <dataOutputObjs>call</dataOutputObjs>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="64" name="C_IN_c_channel" lineNumber="219" fileName="../gen2/Hls_Layers_UpConv.tpp" fileDirectory="../." rtlName="C_IN_c_channel_U" coreName="FIFO_SRL" implIndex="srl" control="no" opType="fifo" coreId="80" contextFuncName="p_Z16UpConv_Fused_RowILi8EEvP7ap_uintILi256EEPKS1_S4_S4_S4_S2_Dhiiiii_for_inc28" bitwidth="10" opcode="extractvalue" nodeLabel="1.0" m_display="0" m_topoIndex="23" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="../gen2/Hls_Layers_UpConv.tpp" linenumber="216" fileDirectory="/home/hoinguyen/Documents/Vitis/UpConv_HLS/upconv_core" functionName="UpConv_Fused_Row&amp;lt;8&amp;gt;"/>
+        <inlineStackInfo fileName="../gen2/Hls_Layers_UpConv.tpp" linenumber="219" fileDirectory="/home/hoinguyen/Documents/Vitis/UpConv_HLS/upconv_core" functionName="_Z16UpConv_Fused_RowILi8EEvP7ap_uintILi256EEPKS1_S4_S4_S4_S2_Dhiiiii_for.inc28"/>
+        <dataInputObjs>call</dataInputObjs>
+        <dataOutputObjs>call</dataOutputObjs>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="65" name="_ln220" lineNumber="220" fileName="../gen2/Hls_Layers_UpConv.tpp" fileDirectory="../." rtlName="uc_compute_tile_8_3_U0" coreId="4294967295" contextFuncName="p_Z16UpConv_Fused_RowILi8EEvP7ap_uintILi256EEPKS1_S4_S4_S4_S2_Dhiiiii_for_inc28" opcode="call" nodeLabel="2.0" nodeLatency="1" m_display="0" m_delay="2.0" m_topoIndex="24" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="../gen2/Hls_Layers_UpConv.tpp" linenumber="216" fileDirectory="/home/hoinguyen/Documents/Vitis/UpConv_HLS/upconv_core" functionName="UpConv_Fused_Row&amp;lt;8&amp;gt;"/>
+        <inlineStackInfo fileName="../gen2/Hls_Layers_UpConv.tpp" linenumber="220" fileDirectory="/home/hoinguyen/Documents/Vitis/UpConv_HLS/upconv_core" functionName="_Z16UpConv_Fused_RowILi8EEvP7ap_uintILi256EEPKS1_S4_S4_S4_S2_Dhiiiii_for.inc28"/>
+        <dataInputObjs>alloca</dataInputObjs>
+        <dataInputObjs>alloca</dataInputObjs>
+        <dataInputObjs>alloca</dataInputObjs>
+        <dataInputObjs>alloca</dataInputObjs>
+        <dataInputObjs>alloca</dataInputObjs>
+        <dataInputObjs>alloca</dataInputObjs>
+        <dataInputObjs>alloca</dataInputObjs>
+        <dataInputObjs>alloca</dataInputObjs>
+        <dataInputObjs>extractvalue</dataInputObjs>
+        <dataInputObjs>alloca</dataInputObjs>
+        <dataInputObjs>alloca</dataInputObjs>
+        <dataInputObjs>alloca</dataInputObjs>
+        <dataInputObjs>extractvalue</dataInputObjs>
+        <dataInputObjs>extractvalue</dataInputObjs>
+        <dataInputObjs>x_buf</dataInputObjs>
+        <dataInputObjs>void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_9</dataInputObjs>
+        <dataInputObjs>void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_1</dataInputObjs>
+        <dataInputObjs>void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_8</dataInputObjs>
+        <dataInputObjs>void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u</dataInputObjs>
+        <dataInputObjs>void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_7</dataInputObjs>
+        <dataInputObjs>void_UpConv_Fused_Row_8_ap_uint_256_ap_uint_256_const_ap_uint_256_const_ap_uint_256_const_ap_uint_256_const_ap_uint_256_decimal16_int_int_int_int_int_row_acc</dataInputObjs>
+        <dataInputObjs>void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_6</dataInputObjs>
+        <dataInputObjs>void_UpConv_Fused_Row_8_ap_uint_256_ap_uint_256_const_ap_uint_256_const_ap_uint_256_const_ap_uint_256_const_ap_uint_256_decimal16_int_int_int_int_int_row_acc_0</dataInputObjs>
+        <dataInputObjs>void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_5</dataInputObjs>
+        <dataInputObjs>void_UpConv_Fused_Row_8_ap_uint_256_ap_uint_256_const_ap_uint_256_const_ap_uint_256_const_ap_uint_256_const_ap_uint_256_decimal16_int_int_int_int_int_row_acc_1</dataInputObjs>
+        <dataInputObjs>void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_4</dataInputObjs>
+        <dataInputObjs>void_UpConv_Fused_Row_8_ap_uint_256_ap_uint_256_const_ap_uint_256_const_ap_uint_256_const_ap_uint_256_const_ap_uint_256_decimal16_int_int_int_int_int_row_acc_2</dataInputObjs>
+        <dataInputObjs>void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_3</dataInputObjs>
+        <dataInputObjs>void_UpConv_Fused_Row_8_ap_uint_256_ap_uint_256_const_ap_uint_256_const_ap_uint_256_const_ap_uint_256_const_ap_uint_256_decimal16_int_int_int_int_int_row_acc_3</dataInputObjs>
+        <dataInputObjs>void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_2</dataInputObjs>
+        <dataInputObjs>void_UpConv_Fused_Row_8_ap_uint_256_ap_uint_256_const_ap_uint_256_const_ap_uint_256_const_ap_uint_256_const_ap_uint_256_decimal16_int_int_int_int_int_row_acc_4</dataInputObjs>
+        <dataOutputObjs>void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_9</dataOutputObjs>
+        <dataOutputObjs>void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_1</dataOutputObjs>
+        <dataOutputObjs>void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_8</dataOutputObjs>
+        <dataOutputObjs>void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u</dataOutputObjs>
+        <dataOutputObjs>void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_7</dataOutputObjs>
+        <dataOutputObjs>void_UpConv_Fused_Row_8_ap_uint_256_ap_uint_256_const_ap_uint_256_const_ap_uint_256_const_ap_uint_256_const_ap_uint_256_decimal16_int_int_int_int_int_row_acc</dataOutputObjs>
+        <dataOutputObjs>void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_6</dataOutputObjs>
+        <dataOutputObjs>void_UpConv_Fused_Row_8_ap_uint_256_ap_uint_256_const_ap_uint_256_const_ap_uint_256_const_ap_uint_256_const_ap_uint_256_decimal16_int_int_int_int_int_row_acc_0</dataOutputObjs>
+        <dataOutputObjs>void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_5</dataOutputObjs>
+        <dataOutputObjs>void_UpConv_Fused_Row_8_ap_uint_256_ap_uint_256_const_ap_uint_256_const_ap_uint_256_const_ap_uint_256_const_ap_uint_256_decimal16_int_int_int_int_int_row_acc_1</dataOutputObjs>
+        <dataOutputObjs>void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_4</dataOutputObjs>
+        <dataOutputObjs>void_UpConv_Fused_Row_8_ap_uint_256_ap_uint_256_const_ap_uint_256_const_ap_uint_256_const_ap_uint_256_const_ap_uint_256_decimal16_int_int_int_int_int_row_acc_2</dataOutputObjs>
+        <dataOutputObjs>void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_3</dataOutputObjs>
+        <dataOutputObjs>void_UpConv_Fused_Row_8_ap_uint_256_ap_uint_256_const_ap_uint_256_const_ap_uint_256_const_ap_uint_256_const_ap_uint_256_decimal16_int_int_int_int_int_row_acc_3</dataOutputObjs>
+        <dataOutputObjs>void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_2</dataOutputObjs>
+        <dataOutputObjs>void_UpConv_Fused_Row_8_ap_uint_256_ap_uint_256_const_ap_uint_256_const_ap_uint_256_const_ap_uint_256_const_ap_uint_256_decimal16_int_int_int_int_int_row_acc_4</dataOutputObjs>
+        <constName>uc_compute_tile_8_3</constName>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="66" name="_ln216" lineNumber="216" fileName="../gen2/Hls_Layers_UpConv.tpp" fileDirectory="../." coreId="4294967295" contextFuncName="UpConv_Fused_Row_8_s" opcode="ret" nodeLabel="3.0" m_display="0" m_topoIndex="25" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="../gen2/Hls_Layers_UpConv.tpp" linenumber="216" fileDirectory="/home/hoinguyen/Documents/Vitis/UpConv_HLS/upconv_core" functionName="UpConv_Fused_Row&amp;lt;8&amp;gt;"/>
+      </node_objs>
+      <fileValidLineNumbers fileName="../gen2/Hls_Layers_UpConv.tpp">
+        <validLinenumbers>216</validLinenumbers>
+        <validLinenumbers>219</validLinenumbers>
+        <validLinenumbers>220</validLinenumbers>
+      </fileValidLineNumbers>
+    </basic_blocks>
+  </regions>
+  <ScheduleInfo time="0"/>
+  <ScheduleInfo time="1"/>
+  <ScheduleInfo time="2"/>
+  <ScheduleInfo time="3"/>
+  <regnodes realName="W_ptr_read_reg_322">
+    <nodeIds>32</nodeIds>
+  </regnodes>
+  <regnodes realName="C_IN_read_reg_307">
+    <nodeIds>29</nodeIds>
+  </regnodes>
+  <regnodes realName="C_OUT_c_channel_reg_350">
+    <nodeIds>63</nodeIds>
+  </regnodes>
+  <regnodes realName="C_IN_c_channel_reg_355">
+    <nodeIds>64</nodeIds>
+  </regnodes>
+  <regnodes realName="ho_c_reg_339">
+    <nodeIds>39</nodeIds>
+  </regnodes>
+  <regnodes realName="C_OUT_read_reg_312">
+    <nodeIds>30</nodeIds>
+  </regnodes>
+  <regnodes realName="W_IN_c_reg_327">
+    <nodeIds>33</nodeIds>
+  </regnodes>
+  <regnodes realName="H_IN_c_reg_333">
+    <nodeIds>36</nodeIds>
+  </regnodes>
+  <regnodes realName="tile_c_channel_reg_345">
+    <nodeIds>62</nodeIds>
+  </regnodes>
+  <regnodes realName="tile_read_reg_317">
+    <nodeIds>31</nodeIds>
+  </regnodes>
+  <expressionNodes realName="ho_c_fu_122">
+    <nodeIds>39</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="wbuf_2_alloca_fu_134">
+    <nodeIds>45</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="C_IN_c_channel_fu_303">
+    <nodeIds>64</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="wbuf_3_alloca_fu_138">
+    <nodeIds>46</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="wbuf_1_alloca_fu_130">
+    <nodeIds>44</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="W_IN_c_fu_114">
+    <nodeIds>33</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="wbuf_5_alloca_fu_146">
+    <nodeIds>48</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="H_IN_c_fu_118">
+    <nodeIds>36</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="wbuf_6_alloca_fu_150">
+    <nodeIds>49</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="C_OUT_c_channel_fu_299">
+    <nodeIds>63</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="wbuf_7_alloca_fu_154">
+    <nodeIds>50</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="wbuf_4_alloca_fu_142">
+    <nodeIds>47</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="tile_c_channel_fu_295">
+    <nodeIds>62</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="wbuf_alloca_fu_126">
+    <nodeIds>43</nodeIds>
+  </expressionNodes>
+  <moduleNodes realName="grp_uc_load_tile_8_2_fu_200">
+    <nodeIds>61</nodeIds>
+  </moduleNodes>
+  <moduleNodes realName="call_ln0_entry_proc_fu_230">
+    <nodeIds>60</nodeIds>
+  </moduleNodes>
+  <moduleNodes realName="grp_uc_compute_tile_8_3_fu_243">
+    <nodeIds>65</nodeIds>
+  </moduleNodes>
+  <ioNodes realName="C_IN_read_read_fu_158">
+    <nodeIds>29</nodeIds>
+  </ioNodes>
+  <ioNodes realName="W_IN_read_read_fu_182">
+    <nodeIds>26</nodeIds>
+  </ioNodes>
+  <ioNodes realName="W_ptr_read_read_fu_176">
+    <nodeIds>32</nodeIds>
+  </ioNodes>
+  <ioNodes realName="tile_read_read_fu_170">
+    <nodeIds>31</nodeIds>
+  </ioNodes>
+  <ioNodes realName="C_OUT_read_read_fu_164">
+    <nodeIds>30</nodeIds>
+  </ioNodes>
+  <ioNodes realName="H_IN_read_read_fu_188">
+    <nodeIds>27</nodeIds>
+  </ioNodes>
+  <ioNodes realName="ho_read_read_fu_194">
+    <nodeIds>28</nodeIds>
+  </ioNodes>
+  <ioPorts name="C_IN">
+    <contents name="read">
+      <nodeIds>29</nodeIds>
+    </contents>
+  </ioPorts>
+  <ioPorts name="C_OUT">
+    <contents name="read">
+      <nodeIds>30</nodeIds>
+    </contents>
+  </ioPorts>
+  <ioPorts name="H_IN">
+    <contents name="read">
+      <nodeIds>27</nodeIds>
+    </contents>
+  </ioPorts>
+  <ioPorts name="W_IN">
+    <contents name="read">
+      <nodeIds>26</nodeIds>
+    </contents>
+  </ioPorts>
+  <ioPorts name="W_ptr">
+    <contents name="read">
+      <nodeIds>32</nodeIds>
+    </contents>
+  </ioPorts>
+  <ioPorts name="gmem_weight">
+    <contents name="call">
+      <nodeIds>61</nodeIds>
+    </contents>
+  </ioPorts>
+  <ioPorts name="ho">
+    <contents name="read">
+      <nodeIds>28</nodeIds>
+    </contents>
+  </ioPorts>
+  <ioPorts name="tile">
+    <contents name="read">
+      <nodeIds>31</nodeIds>
+    </contents>
+  </ioPorts>
+  <fsm>
+    <states id="1">
+      <operations id="29" stage="1" latency="1"/>
+      <operations id="30" stage="1" latency="1"/>
+      <operations id="31" stage="1" latency="1"/>
+      <operations id="32" stage="1" latency="1"/>
+      <operations id="33" stage="1" latency="1"/>
+      <operations id="36" stage="1" latency="1"/>
+      <operations id="39" stage="1" latency="1"/>
+      <operations id="43" stage="1" latency="1"/>
+      <operations id="44" stage="1" latency="1"/>
+      <operations id="45" stage="1" latency="1"/>
+      <operations id="46" stage="1" latency="1"/>
+      <operations id="47" stage="1" latency="1"/>
+      <operations id="48" stage="1" latency="1"/>
+      <operations id="49" stage="1" latency="1"/>
+      <operations id="50" stage="1" latency="1"/>
+      <operations id="61" stage="2" latency="2"/>
+    </states>
+    <states id="2">
+      <operations id="26" stage="1" latency="1"/>
+      <operations id="27" stage="1" latency="1"/>
+      <operations id="28" stage="1" latency="1"/>
+      <operations id="60" stage="1" latency="1"/>
+      <operations id="61" stage="1" latency="2"/>
+      <operations id="62" stage="1" latency="1"/>
+      <operations id="63" stage="1" latency="1"/>
+      <operations id="64" stage="1" latency="1"/>
+    </states>
+    <states id="3">
+      <operations id="65" stage="2" latency="2"/>
+    </states>
+    <states id="4">
+      <operations id="34" stage="1" latency="1"/>
+      <operations id="35" stage="1" latency="1"/>
+      <operations id="37" stage="1" latency="1"/>
+      <operations id="38" stage="1" latency="1"/>
+      <operations id="40" stage="1" latency="1"/>
+      <operations id="41" stage="1" latency="1"/>
+      <operations id="42" stage="1" latency="1"/>
+      <operations id="51" stage="1" latency="1"/>
+      <operations id="52" stage="1" latency="1"/>
+      <operations id="53" stage="1" latency="1"/>
+      <operations id="54" stage="1" latency="1"/>
+      <operations id="55" stage="1" latency="1"/>
+      <operations id="56" stage="1" latency="1"/>
+      <operations id="57" stage="1" latency="1"/>
+      <operations id="58" stage="1" latency="1"/>
+      <operations id="59" stage="1" latency="1"/>
+      <operations id="65" stage="1" latency="2"/>
+      <operations id="66" stage="1" latency="1"/>
+    </states>
+    <transitions inState="1" outState="2">
+      <condition id="-1"/>
+    </transitions>
+    <transitions inState="2" outState="3">
+      <condition id="-1"/>
+    </transitions>
+    <transitions inState="3" outState="4">
+      <condition id="-1"/>
+    </transitions>
+  </fsm>
+  <CFGRegionsRoot>
+    <cfgRegions mId="1" mTag="dataflow_in_loop_TILE_LOOP_1" mII="-1" mDepth="-1" mMinTripCount="-1" mMaxTripCount="-1" mMinLatency="43" mMaxLatency="73933" mIsDfPipe="true">
+      <basicBlocks>67</basicBlocks>
+      <mDfPipe allPipePinInst="//@CFGRegionsRoot/@cfgRegions.0/@mDfPipe/@processe_list.0/@pins.0/@inst //@CFGRegionsRoot/@cfgRegions.0/@mDfPipe/@processe_list.1/@pins.0/@inst //@CFGRegionsRoot/@cfgRegions.0/@mDfPipe/@processe_list.2/@pins.0/@inst">
+        <processe_list name="entry_proc_U0" ssdmobj_id="60">
+          <pins>
+            <port name="ho" type="SIOType" need_hs="true" top_port_object_id="" top_port_object_id_reference="_140" chan_object_id="" chan_object_id_reference=""/>
+            <inst name="entry_proc_U0" ssdmobj_id="60" object_id="_163"/>
+          </pins>
+          <pins>
+            <port name="H_IN" type="SIOType" need_hs="true" top_port_object_id="" top_port_object_id_reference="_141" chan_object_id="" chan_object_id_reference=""/>
+            <inst name="entry_proc_U0" ssdmobj_id="60" object_id="_163"/>
+          </pins>
+          <pins>
+            <port name="W_IN" type="SIOType" need_hs="true" top_port_object_id="" top_port_object_id_reference="_142" chan_object_id="" chan_object_id_reference=""/>
+            <inst name="entry_proc_U0" ssdmobj_id="60" object_id="_163"/>
+          </pins>
+        </processe_list>
+        <processe_list name="uc_load_tile_8_2_U0" ssdmobj_id="61">
+          <pins>
+            <port name="gmem_weight" type="BUSType" need_hs="true" top_port_object_id="" top_port_object_id_reference="_135" chan_object_id="" chan_object_id_reference=""/>
+            <inst name="uc_load_tile_8_2_U0" ssdmobj_id="61" object_id="_171"/>
+          </pins>
+          <pins>
+            <port name="W_ptr" type="SIOType" need_hs="true" top_port_object_id="" top_port_object_id_reference="_136" chan_object_id="" chan_object_id_reference=""/>
+            <inst name="uc_load_tile_8_2_U0" ssdmobj_id="61" object_id="_171"/>
+          </pins>
+          <pins>
+            <port name="tile" type="SIOType" need_hs="true" top_port_object_id="" top_port_object_id_reference="_137" chan_object_id="" chan_object_id_reference=""/>
+            <inst name="uc_load_tile_8_2_U0" ssdmobj_id="61" object_id="_171"/>
+          </pins>
+          <pins>
+            <port name="C_OUT" type="SIOType" need_hs="true" top_port_object_id="" top_port_object_id_reference="_138" chan_object_id="" chan_object_id_reference=""/>
+            <inst name="uc_load_tile_8_2_U0" ssdmobj_id="61" object_id="_171"/>
+          </pins>
+          <pins>
+            <port name="C_IN" type="SIOType" need_hs="true" top_port_object_id="" top_port_object_id_reference="_139" chan_object_id="" chan_object_id_reference=""/>
+            <inst name="uc_load_tile_8_2_U0" ssdmobj_id="61" object_id="_171"/>
+          </pins>
+        </processe_list>
+        <processe_list name="uc_compute_tile_8_3_U0" ssdmobj_id="65">
+          <pins>
+            <port name="x_buf" type="MEMType" need_hs="true" top_port_object_id="" top_port_object_id_reference="_143" chan_object_id="" chan_object_id_reference=""/>
+            <inst name="uc_compute_tile_8_3_U0" ssdmobj_id="65" object_id="_183"/>
+          </pins>
+          <pins>
+            <port name="void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_9" dir="DirInOut" type="MEMType" need_hs="true" top_port_object_id="" top_port_object_id_reference="_144" chan_object_id="" chan_object_id_reference=""/>
+            <inst name="uc_compute_tile_8_3_U0" ssdmobj_id="65" object_id="_183"/>
+          </pins>
+          <pins>
+            <port name="void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_1" dir="DirInOut" type="MEMType" need_hs="true" top_port_object_id="" top_port_object_id_reference="_145" chan_object_id="" chan_object_id_reference=""/>
+            <inst name="uc_compute_tile_8_3_U0" ssdmobj_id="65" object_id="_183"/>
+          </pins>
+          <pins>
+            <port name="void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_8" dir="DirInOut" type="MEMType" need_hs="true" top_port_object_id="" top_port_object_id_reference="_146" chan_object_id="" chan_object_id_reference=""/>
+            <inst name="uc_compute_tile_8_3_U0" ssdmobj_id="65" object_id="_183"/>
+          </pins>
+          <pins>
+            <port name="void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u" dir="DirInOut" type="MEMType" need_hs="true" top_port_object_id="" top_port_object_id_reference="_147" chan_object_id="" chan_object_id_reference=""/>
+            <inst name="uc_compute_tile_8_3_U0" ssdmobj_id="65" object_id="_183"/>
+          </pins>
+          <pins>
+            <port name="void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_7" dir="DirInOut" type="MEMType" need_hs="true" top_port_object_id="" top_port_object_id_reference="_148" chan_object_id="" chan_object_id_reference=""/>
+            <inst name="uc_compute_tile_8_3_U0" ssdmobj_id="65" object_id="_183"/>
+          </pins>
+          <pins>
+            <port name="void_UpConv_Fused_Row_8_ap_uint_256_ap_uint_256_const_ap_uint_256_const_ap_uint_256_const_ap_uint_256_const_ap_uint_256_decimal16_int_int_int_int_int_row_acc" dir="DirInOut" type="MEMType" need_hs="true" top_port_object_id="" top_port_object_id_reference="_149" chan_object_id="" chan_object_id_reference=""/>
+            <inst name="uc_compute_tile_8_3_U0" ssdmobj_id="65" object_id="_183"/>
+          </pins>
+          <pins>
+            <port name="void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_6" dir="DirInOut" type="MEMType" need_hs="true" top_port_object_id="" top_port_object_id_reference="_150" chan_object_id="" chan_object_id_reference=""/>
+            <inst name="uc_compute_tile_8_3_U0" ssdmobj_id="65" object_id="_183"/>
+          </pins>
+          <pins>
+            <port name="void_UpConv_Fused_Row_8_ap_uint_256_ap_uint_256_const_ap_uint_256_const_ap_uint_256_const_ap_uint_256_const_ap_uint_256_decimal16_int_int_int_int_int_row_acc_0" dir="DirInOut" type="MEMType" need_hs="true" top_port_object_id="" top_port_object_id_reference="_151" chan_object_id="" chan_object_id_reference=""/>
+            <inst name="uc_compute_tile_8_3_U0" ssdmobj_id="65" object_id="_183"/>
+          </pins>
+          <pins>
+            <port name="void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_5" dir="DirInOut" type="MEMType" need_hs="true" top_port_object_id="" top_port_object_id_reference="_152" chan_object_id="" chan_object_id_reference=""/>
+            <inst name="uc_compute_tile_8_3_U0" ssdmobj_id="65" object_id="_183"/>
+          </pins>
+          <pins>
+            <port name="void_UpConv_Fused_Row_8_ap_uint_256_ap_uint_256_const_ap_uint_256_const_ap_uint_256_const_ap_uint_256_const_ap_uint_256_decimal16_int_int_int_int_int_row_acc_1" dir="DirInOut" type="MEMType" need_hs="true" top_port_object_id="" top_port_object_id_reference="_153" chan_object_id="" chan_object_id_reference=""/>
+            <inst name="uc_compute_tile_8_3_U0" ssdmobj_id="65" object_id="_183"/>
+          </pins>
+          <pins>
+            <port name="void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_4" dir="DirInOut" type="MEMType" need_hs="true" top_port_object_id="" top_port_object_id_reference="_154" chan_object_id="" chan_object_id_reference=""/>
+            <inst name="uc_compute_tile_8_3_U0" ssdmobj_id="65" object_id="_183"/>
+          </pins>
+          <pins>
+            <port name="void_UpConv_Fused_Row_8_ap_uint_256_ap_uint_256_const_ap_uint_256_const_ap_uint_256_const_ap_uint_256_const_ap_uint_256_decimal16_int_int_int_int_int_row_acc_2" dir="DirInOut" type="MEMType" need_hs="true" top_port_object_id="" top_port_object_id_reference="_155" chan_object_id="" chan_object_id_reference=""/>
+            <inst name="uc_compute_tile_8_3_U0" ssdmobj_id="65" object_id="_183"/>
+          </pins>
+          <pins>
+            <port name="void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_3" dir="DirInOut" type="MEMType" need_hs="true" top_port_object_id="" top_port_object_id_reference="_156" chan_object_id="" chan_object_id_reference=""/>
+            <inst name="uc_compute_tile_8_3_U0" ssdmobj_id="65" object_id="_183"/>
+          </pins>
+          <pins>
+            <port name="void_UpConv_Fused_Row_8_ap_uint_256_ap_uint_256_const_ap_uint_256_const_ap_uint_256_const_ap_uint_256_const_ap_uint_256_decimal16_int_int_int_int_int_row_acc_3" dir="DirInOut" type="MEMType" need_hs="true" top_port_object_id="" top_port_object_id_reference="_157" chan_object_id="" chan_object_id_reference=""/>
+            <inst name="uc_compute_tile_8_3_U0" ssdmobj_id="65" object_id="_183"/>
+          </pins>
+          <pins>
+            <port name="void_UpConv_Fused_Row_ap_uint_ap_uint_const_ap_uint_const_ap_uint_const_ap_u_2" dir="DirInOut" type="MEMType" need_hs="true" top_port_object_id="" top_port_object_id_reference="_158" chan_object_id="" chan_object_id_reference=""/>
+            <inst name="uc_compute_tile_8_3_U0" ssdmobj_id="65" object_id="_183"/>
+          </pins>
+          <pins>
+            <port name="void_UpConv_Fused_Row_8_ap_uint_256_ap_uint_256_const_ap_uint_256_const_ap_uint_256_const_ap_uint_256_const_ap_uint_256_decimal16_int_int_int_int_int_row_acc_4" dir="DirInOut" type="MEMType" need_hs="true" top_port_object_id="" top_port_object_id_reference="_159" chan_object_id="" chan_object_id_reference=""/>
+            <inst name="uc_compute_tile_8_3_U0" ssdmobj_id="65" object_id="_183"/>
+          </pins>
+        </processe_list>
+        <channel_list depth="3" bitwidth="8" suggested_type="2" suggested_depth="3" name="ho_c" ssdmobj_id="39" bram_cost="0" uram_cost="0" storage_size="8 3 1">
+          <source>
+            <port name="in" type="SIOType" top_port_object_id="" top_port_object_id_reference="" chan_object_id="" chan_object_id_reference=""/>
+            <inst name="entry_proc_U0" ssdmobj_id="60" object_id="_163"/>
+          </source>
+          <sink>
+            <port name="out" dir="DirOut" type="SIOType" top_port_object_id="" top_port_object_id_reference="" chan_object_id="" chan_object_id_reference=""/>
+            <inst name="uc_compute_tile_8_3_U0" ssdmobj_id="65" object_id="_183"/>
+          </sink>
+        </channel_list>
+        <channel_list depth="3" bitwidth="8" suggested_type="2" suggested_depth="3" name="H_IN_c" ssdmobj_id="36" bram_cost="0" uram_cost="0" storage_size="8 3 1">
+          <source>
+            <port name="in" type="SIOType" top_port_object_id="" top_port_object_id_reference="" chan_object_id="" chan_object_id_reference=""/>
+            <inst name="entry_proc_U0" ssdmobj_id="60" object_id="_163"/>
+          </source>
+          <sink>
+            <port name="out" dir="DirOut" type="SIOType" top_port_object_id="" top_port_object_id_reference="" chan_object_id="" chan_object_id_reference=""/>
+            <inst name="uc_compute_tile_8_3_U0" ssdmobj_id="65" object_id="_183"/>
+          </sink>
+        </channel_list>
+        <channel_list depth="3" bitwidth="8" suggested_type="2" suggested_depth="3" name="W_IN_c" ssdmobj_id="33" bram_cost="0" uram_cost="0" storage_size="8 3 1">
+          <source>
+            <port name="in" type="SIOType" top_port_object_id="" top_port_object_id_reference="" chan_object_id="" chan_object_id_reference=""/>
+            <inst name="entry_proc_U0" ssdmobj_id="60" object_id="_163"/>
+          </source>
+          <sink>
+            <port name="out" dir="DirOut" type="SIOType" top_port_object_id="" top_port_object_id_reference="" chan_object_id="" chan_object_id_reference=""/>
+            <inst name="uc_compute_tile_8_3_U0" ssdmobj_id="65" object_id="_183"/>
+          </sink>
+        </channel_list>
+        <channel_list depth="2" bitwidth="0" type="PIPO" suggested_type="0" suggested_depth="2" name="wbuf_7" ssdmobj_id="50" bram_cost="0" uram_cost="4" storage_size="256 540 2">
+          <source>
+            <port name="in" type="SIOType" top_port_object_id="" top_port_object_id_reference="" chan_object_id="" chan_object_id_reference=""/>
+            <inst name="uc_load_tile_8_2_U0" ssdmobj_id="61" object_id="_171"/>
+          </source>
+          <sink>
+            <port name="out" dir="DirOut" type="SIOType" top_port_object_id="" top_port_object_id_reference="" chan_object_id="" chan_object_id_reference=""/>
+            <inst name="uc_compute_tile_8_3_U0" ssdmobj_id="65" object_id="_183"/>
+          </sink>
+        </channel_list>
+        <channel_list depth="2" bitwidth="0" type="PIPO" suggested_type="0" suggested_depth="2" name="wbuf_6" ssdmobj_id="49" bram_cost="0" uram_cost="4" storage_size="256 540 2">
+          <source>
+            <port name="in" type="SIOType" top_port_object_id="" top_port_object_id_reference="" chan_object_id="" chan_object_id_reference=""/>
+            <inst name="uc_load_tile_8_2_U0" ssdmobj_id="61" object_id="_171"/>
+          </source>
+          <sink>
+            <port name="out" dir="DirOut" type="SIOType" top_port_object_id="" top_port_object_id_reference="" chan_object_id="" chan_object_id_reference=""/>
+            <inst name="uc_compute_tile_8_3_U0" ssdmobj_id="65" object_id="_183"/>
+          </sink>
+        </channel_list>
+        <channel_list depth="2" bitwidth="0" type="PIPO" suggested_type="0" suggested_depth="2" name="wbuf_5" ssdmobj_id="48" bram_cost="0" uram_cost="4" storage_size="256 540 2">
+          <source>
+            <port name="in" type="SIOType" top_port_object_id="" top_port_object_id_reference="" chan_object_id="" chan_object_id_reference=""/>
+            <inst name="uc_load_tile_8_2_U0" ssdmobj_id="61" object_id="_171"/>
+          </source>
+          <sink>
+            <port name="out" dir="DirOut" type="SIOType" top_port_object_id="" top_port_object_id_reference="" chan_object_id="" chan_object_id_reference=""/>
+            <inst name="uc_compute_tile_8_3_U0" ssdmobj_id="65" object_id="_183"/>
+          </sink>
+        </channel_list>
+        <channel_list depth="2" bitwidth="0" type="PIPO" suggested_type="0" suggested_depth="2" name="wbuf_4" ssdmobj_id="47" bram_cost="0" uram_cost="4" storage_size="256 540 2">
+          <source>
+            <port name="in" type="SIOType" top_port_object_id="" top_port_object_id_reference="" chan_object_id="" chan_object_id_reference=""/>
+            <inst name="uc_load_tile_8_2_U0" ssdmobj_id="61" object_id="_171"/>
+          </source>
+          <sink>
+            <port name="out" dir="DirOut" type="SIOType" top_port_object_id="" top_port_object_id_reference="" chan_object_id="" chan_object_id_reference=""/>
+            <inst name="uc_compute_tile_8_3_U0" ssdmobj_id="65" object_id="_183"/>
+          </sink>
+        </channel_list>
+        <channel_list depth="2" bitwidth="0" type="PIPO" suggested_type="0" suggested_depth="2" name="wbuf_3" ssdmobj_id="46" bram_cost="0" uram_cost="4" storage_size="256 540 2">
+          <source>
+            <port name="in" type="SIOType" top_port_object_id="" top_port_object_id_reference="" chan_object_id="" chan_object_id_reference=""/>
+            <inst name="uc_load_tile_8_2_U0" ssdmobj_id="61" object_id="_171"/>
+          </source>
+          <sink>
+            <port name="out" dir="DirOut" type="SIOType" top_port_object_id="" top_port_object_id_reference="" chan_object_id="" chan_object_id_reference=""/>
+            <inst name="uc_compute_tile_8_3_U0" ssdmobj_id="65" object_id="_183"/>
+          </sink>
+        </channel_list>
+        <channel_list depth="2" bitwidth="0" type="PIPO" suggested_type="0" suggested_depth="2" name="wbuf_2" ssdmobj_id="45" bram_cost="0" uram_cost="4" storage_size="256 540 2">
+          <source>
+            <port name="in" type="SIOType" top_port_object_id="" top_port_object_id_reference="" chan_object_id="" chan_object_id_reference=""/>
+            <inst name="uc_load_tile_8_2_U0" ssdmobj_id="61" object_id="_171"/>
+          </source>
+          <sink>
+            <port name="out" dir="DirOut" type="SIOType" top_port_object_id="" top_port_object_id_reference="" chan_object_id="" chan_object_id_reference=""/>
+            <inst name="uc_compute_tile_8_3_U0" ssdmobj_id="65" object_id="_183"/>
+          </sink>
+        </channel_list>
+        <channel_list depth="2" bitwidth="0" type="PIPO" suggested_type="0" suggested_depth="2" name="wbuf_1" ssdmobj_id="44" bram_cost="0" uram_cost="4" storage_size="256 540 2">
+          <source>
+            <port name="in" type="SIOType" top_port_object_id="" top_port_object_id_reference="" chan_object_id="" chan_object_id_reference=""/>
+            <inst name="uc_load_tile_8_2_U0" ssdmobj_id="61" object_id="_171"/>
+          </source>
+          <sink>
+            <port name="out" dir="DirOut" type="SIOType" top_port_object_id="" top_port_object_id_reference="" chan_object_id="" chan_object_id_reference=""/>
+            <inst name="uc_compute_tile_8_3_U0" ssdmobj_id="65" object_id="_183"/>
+          </sink>
+        </channel_list>
+        <channel_list depth="2" bitwidth="0" type="PIPO" suggested_type="0" suggested_depth="2" name="wbuf" ssdmobj_id="43" bram_cost="0" uram_cost="4" storage_size="256 540 2">
+          <source>
+            <port name="in" type="SIOType" top_port_object_id="" top_port_object_id_reference="" chan_object_id="" chan_object_id_reference=""/>
+            <inst name="uc_load_tile_8_2_U0" ssdmobj_id="61" object_id="_171"/>
+          </source>
+          <sink>
+            <port name="out" dir="DirOut" type="SIOType" top_port_object_id="" top_port_object_id_reference="" chan_object_id="" chan_object_id_reference=""/>
+            <inst name="uc_compute_tile_8_3_U0" ssdmobj_id="65" object_id="_183"/>
+          </sink>
+        </channel_list>
+        <channel_list depth="2" bitwidth="6" suggested_type="1" suggested_depth="2" name="tile_c_channel" ssdmobj_id="62" bram_cost="0" uram_cost="0" storage_size="6 2 1">
+          <source>
+            <port name="in" type="SIOType" top_port_object_id="" top_port_object_id_reference="" chan_object_id="" chan_object_id_reference=""/>
+            <inst name="uc_load_tile_8_2_U0" ssdmobj_id="61" object_id="_171"/>
+          </source>
+          <sink>
+            <port name="out" dir="DirOut" type="SIOType" top_port_object_id="" top_port_object_id_reference="" chan_object_id="" chan_object_id_reference=""/>
+            <inst name="uc_compute_tile_8_3_U0" ssdmobj_id="65" object_id="_183"/>
+          </sink>
+        </channel_list>
+        <channel_list depth="2" bitwidth="9" suggested_type="1" suggested_depth="2" name="C_OUT_c_channel" ssdmobj_id="63" bram_cost="0" uram_cost="0" storage_size="9 2 1">
+          <source>
+            <port name="in" type="SIOType" top_port_object_id="" top_port_object_id_reference="" chan_object_id="" chan_object_id_reference=""/>
+            <inst name="uc_load_tile_8_2_U0" ssdmobj_id="61" object_id="_171"/>
+          </source>
+          <sink>
+            <port name="out" dir="DirOut" type="SIOType" top_port_object_id="" top_port_object_id_reference="" chan_object_id="" chan_object_id_reference=""/>
+            <inst name="uc_compute_tile_8_3_U0" ssdmobj_id="65" object_id="_183"/>
+          </sink>
+        </channel_list>
+        <channel_list depth="2" bitwidth="10" suggested_type="1" suggested_depth="2" name="C_IN_c_channel" ssdmobj_id="64" bram_cost="0" uram_cost="0" storage_size="10 2 1">
+          <source>
+            <port name="in" type="SIOType" top_port_object_id="" top_port_object_id_reference="" chan_object_id="" chan_object_id_reference=""/>
+            <inst name="uc_load_tile_8_2_U0" ssdmobj_id="61" object_id="_171"/>
+          </source>
+          <sink>
+            <port name="out" dir="DirOut" type="SIOType" top_port_object_id="" top_port_object_id_reference="" chan_object_id="" chan_object_id_reference=""/>
+            <inst name="uc_compute_tile_8_3_U0" ssdmobj_id="65" object_id="_183"/>
+          </sink>
+        </channel_list>
+      </mDfPipe>
+    </cfgRegions>
+  </CFGRegionsRoot>
+</cdfg:DBCdfg>

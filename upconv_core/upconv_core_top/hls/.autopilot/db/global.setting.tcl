@@ -14,7 +14,7 @@ set FftOrFirFlag 0
 set NbRWValue 0
 set intNbAccess 0
 set NewDSPMapping 1
-set HasDSPModule 0
+set HasDSPModule 1
 set ResetLevelFlag 0
 set ResetStyle control
 set ResetSyncFlag 1
@@ -43,7 +43,7 @@ set SCTraceFileName mytrace
 set SCTraceFileFormat vcd
 set SCTraceOption all
 set TargetInfo xczu7ev:-ffvc1156:-2-e
-set SourceFiles {sc {} c ../../../gen/upconv_core_top.cpp}
+set SourceFiles {sc {} c ../../../gen2/upconv_core_top.cpp}
 set SourceFlags {sc {} c {{}}}
 set DirectiveFile {}
 set TBFiles {verilog /home/hoinguyen/Documents/Vitis/UpConv_HLS/test.cpp bc /home/hoinguyen/Documents/Vitis/UpConv_HLS/test.cpp vhdl /home/hoinguyen/Documents/Vitis/UpConv_HLS/test.cpp sc /home/hoinguyen/Documents/Vitis/UpConv_HLS/test.cpp cas /home/hoinguyen/Documents/Vitis/UpConv_HLS/test.cpp c {}}

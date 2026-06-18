@@ -8,9 +8,9 @@
       "-hls-syn-headers-dir=/home/tools/Xilinx/Vitis/2024.2/common/technology/autopilot",
       "-fhlstoplevel=upconv_core_top",
       "-c",
-      "/home/hoinguyen/Documents/Vitis/UpConv_HLS/gen/upconv_core_top.cpp"
+      "/home/hoinguyen/Documents/Vitis/UpConv_HLS/gen2/upconv_core_top.cpp"
     ],
-    "file": "/home/hoinguyen/Documents/Vitis/UpConv_HLS/gen/upconv_core_top.cpp"
+    "file": "/home/hoinguyen/Documents/Vitis/UpConv_HLS/gen2/upconv_core_top.cpp"
   },
   {
     "directory": "/home/hoinguyen/Documents/Vitis/UpConv_HLS/upconv_core",

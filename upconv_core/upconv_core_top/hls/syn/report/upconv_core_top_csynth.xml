@@ -18,44 +18,44 @@
 <PipelineType>no</PipelineType>
 <SummaryOfTimingAnalysis>
 <unit>ns</unit>
-<EstimatedClockPeriod>2.433</EstimatedClockPeriod>
+<EstimatedClockPeriod>3.239</EstimatedClockPeriod>
 </SummaryOfTimingAnalysis>
 <SummaryOfOverallLatency>
 <unit>clock cycles</unit>
-<Best-caseLatency>64515</Best-caseLatency>
-<Average-caseLatency>26552359</Average-caseLatency>
-<Worst-caseLatency>1163580687</Worst-caseLatency>
-<Best-caseRealTimeLatency>0.215 ms</Best-caseRealTimeLatency>
-<Average-caseRealTimeLatency>88.499 ms</Average-caseRealTimeLatency>
-<Worst-caseRealTimeLatency>3.878 sec</Worst-caseRealTimeLatency>
-<Interval-min>64516</Interval-min>
-<Interval-max>1163580688</Interval-max>
+<Best-caseLatency>87613</Best-caseLatency>
+<Average-caseLatency>13782477</Average-caseLatency>
+<Worst-caseLatency>737659389</Worst-caseLatency>
+<Best-caseRealTimeLatency>0.292 ms</Best-caseRealTimeLatency>
+<Average-caseRealTimeLatency>45.937 ms</Average-caseRealTimeLatency>
+<Worst-caseRealTimeLatency>2.459 sec</Worst-caseRealTimeLatency>
+<Interval-min>87614</Interval-min>
+<Interval-max>737659390</Interval-max>
 </SummaryOfOverallLatency>
 <SummaryOfLoopLatency>
 <ROW_LOOP>
 <Slack>2.43</Slack>
 <TripCount>
 <range>
-<min>16</min>
-<max>128</max>
+<min>15</min>
+<max>127</max>
 </range>
 </TripCount>
 <Latency>
 <range>
-<min>60688</min>
-<max>1154555008</max>
+<min>82140</min>
+<max>731896428</max>
 </range>
 </Latency>
 <AbsoluteTimeLatency>
 <range>
-<min>202273</min>
-<max>3848131777</max>
+<min>273772</min>
+<max>2439410754</max>
 </range>
 </AbsoluteTimeLatency>
 <IterationLatency>
 <range>
-<min>3793</min>
-<max>9019961</max>
+<min>5476</min>
+<max>5762964</max>
 </range>
 </IterationLatency>
 <InstanceList>
@@ -63,15 +63,15 @@
 </ROW_LOOP>
 </SummaryOfLoopLatency>
 <SummaryOfViolations>
-<IssueType>-</IssueType>
+<IssueType>Timing Violation</IssueType>
 <ViolationType>-</ViolationType>
-<SourceLocation>../gen/UpConv_Unified.tpp:395~../gen/upconv_core_top.cpp:59</SourceLocation>
+<SourceLocation>../gen2/upconv_core_top.cpp:67</SourceLocation>
 <SummaryOfLoopViolations>
 <ROW_LOOP>
 <Name>ROW_LOOP</Name>
 <IssueType>-</IssueType>
 <ViolationType>-</ViolationType>
-<SourceLocation>../gen/UpConv_Unified.tpp:405~../gen/upconv_core_top.cpp:59</SourceLocation>
+<SourceLocation>../gen2/upconv_core_top.cpp:78</SourceLocation>
 </ROW_LOOP>
 </SummaryOfLoopViolations>
 </SummaryOfViolations>
@@ -79,11 +79,11 @@
 
 <AreaEstimates>
 <Resources>
-<BRAM_18K>204</BRAM_18K>
-<DSP>680</DSP>
-<FF>74972</FF>
-<LUT>53234</LUT>
-<URAM>36</URAM>
+<BRAM_18K>84</BRAM_18K>
+<DSP>516</DSP>
+<FF>82745</FF>
+<LUT>72470</LUT>
+<URAM>68</URAM>
 </Resources>
 <AvailableResources>
 <BRAM_18K>624</BRAM_18K>

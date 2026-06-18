@@ -1,7 +1,7 @@
 {
   "0": {
     "basicblocks": 11,
-    "calls": "1 1 1 1",
+    "calls": "2 2 2 2",
     "file": "upconv_core_top_ucb0.cpp",
     "fileloc": 10,
     "instructions": 73,
@@ -9,23 +9,52 @@
     "stores": {
       "G": 2
     },
-    "total_instructions": 8097
+    "total_instructions": 10077
   },
   "1": {
-    "basicblocks": 134,
+    "basicblocks": 62,
     "calls": "",
     "file": "Hls_Layers_UpConv.tpp",
-    "fileloc": 298,
-    "instructions": 2006,
+    "fileloc": 86,
+    "instructions": 1478,
     "loads": {
-      "G": 51,
-      "L": 107
+      "G": 17,
+      "L": 72
+    },
+    "name": "uc_compute_tile<8, 16, 16, 60, 32, 480, 480>",
+    "stores": {
+      "G": 16,
+      "L": 32
+    },
+    "total_instructions": 1478
+  },
+  "2": {
+    "basicblocks": 94,
+    "calls": "3 1",
+    "file": "Hls_Layers_UpConv.tpp",
+    "fileloc": 153,
+    "instructions": 938,
+    "loads": {
+      "G": 34,
+      "L": 35
     },
     "name": "UpConv_Fused_Row<8, 16, 16, 960, 480>",
     "stores": {
-      "G": 50,
-      "L": 68
+      "G": 34,
+      "L": 28
     },
-    "total_instructions": 2006
+    "total_instructions": 2501
+  },
+  "3": {
+    "basicblocks": 16,
+    "calls": "",
+    "file": "Hls_Layers_UpConv.tpp",
+    "fileloc": 68,
+    "instructions": 85,
+    "name": "uc_load_tile<8, 480, 60>",
+    "stores": {
+      "L": 8
+    },
+    "total_instructions": 85
   }
 }
