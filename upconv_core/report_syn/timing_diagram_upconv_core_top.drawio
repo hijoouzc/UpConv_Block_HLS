@@ -1,0 +1,58 @@
+<mxGraphModel dx="1000" dy="1000" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1700" pageHeight="400" math="0" shadow="0">
+  <root>
+    <mxCell id="0" />
+    <mxCell id="1" parent="0" />
+
+    <!-- LEGEND -->
+    <mxCell id="L0" value="&lt;b&gt;Legend (Exact Proportions: ~6,666 cycles / pixel, MAX latency mode)&lt;/b&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;fontSize=14;" vertex="1" parent="1"><mxGeometry x="20" y="10" width="800" height="20" as="geometry" /></mxCell>
+    <mxCell id="L1" value="" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#DAE8FC;strokeColor=#6c8ebf;" vertex="1" parent="1"><mxGeometry x="20" y="40" width="20" height="20" as="geometry" /></mxCell>
+    <mxCell id="L1t" value="Memory Interface (LOAD_ROW)" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;" vertex="1" parent="1"><mxGeometry x="45" y="40" width="250" height="20" as="geometry" /></mxCell>
+    <mxCell id="L2" value="" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#FFE6CC;strokeColor=#d79b00;" vertex="1" parent="1"><mxGeometry x="320" y="40" width="20" height="20" as="geometry" /></mxCell>
+    <mxCell id="L2t" value="Compute Engine (UpConv_Fused_Row)" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;" vertex="1" parent="1"><mxGeometry x="345" y="40" width="250" height="20" as="geometry" /></mxCell>
+
+    <!-- SWIMLANE TITLES -->
+    <mxCell id="T1" value="LOAD_ROW&lt;br&gt;(DDR to URAM)" style="text;html=1;strokeColor=none;fillColor=none;align=right;verticalAlign=middle;fontStyle=1" vertex="1" parent="1"><mxGeometry x="10" y="115" width="100" height="30" as="geometry" /></mxCell>
+    <mxCell id="T2" value="UpConv_Fused_Row&lt;br&gt;(Compute)" style="text;html=1;strokeColor=none;fillColor=none;align=right;verticalAlign=middle;fontStyle=1" vertex="1" parent="1"><mxGeometry x="10" y="175" width="100" height="30" as="geometry" /></mxCell>
+
+    <!-- DIVIDERS -->
+    <mxCell id="D1" value="" style="endArrow=none;dashed=1;html=1;strokeWidth=2;strokeColor=#B3B3B3;" edge="1" parent="1"><mxGeometry width="50" height="50" relative="1" as="geometry"><mxPoint x="10" y="160" as="sourcePoint" /><mxPoint x="1650" y="160" as="targetPoint" /></mxGeometry></mxCell>
+
+    <!-- BLOCKS -->
+    <!-- Row 0 -->
+    <mxCell id="B_L0" value="" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#DAE8FC;strokeColor=#6c8ebf;" vertex="1" parent="1"><mxGeometry x="120" y="120" width="2" height="20" as="geometry" /></mxCell>
+    <mxCell id="A_L0" value="7,685c" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;fontSize=10;" vertex="1" parent="1"><mxGeometry x="100" y="100" width="40" height="20" as="geometry" /></mxCell>
+    
+    <mxCell id="B_C0" value="" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#FFE6CC;strokeColor=#d79b00;" vertex="1" parent="1"><mxGeometry x="122" y="180" width="430" height="20" as="geometry" /></mxCell>
+    <mxCell id="A_C0" value="2,877,630c" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;fontSize=10;" vertex="1" parent="1"><mxGeometry x="317" y="160" width="40" height="20" as="geometry" /></mxCell>
+
+    <!-- Row 1 -->
+    <mxCell id="B_L1" value="" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#DAE8FC;strokeColor=#6c8ebf;" vertex="1" parent="1"><mxGeometry x="552" y="120" width="2" height="20" as="geometry" /></mxCell>
+    <mxCell id="A_L1" value="7,686c" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;fontSize=10;" vertex="1" parent="1"><mxGeometry x="532" y="100" width="40" height="20" as="geometry" /></mxCell>
+    
+    <mxCell id="B_C1_A" value="" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#FFE6CC;strokeColor=#d79b00;" vertex="1" parent="1"><mxGeometry x="554" y="180" width="430" height="20" as="geometry" /></mxCell>
+    <mxCell id="A_C1_A" value="2,877,630c" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;fontSize=10;" vertex="1" parent="1"><mxGeometry x="749" y="160" width="40" height="20" as="geometry" /></mxCell>
+
+    <mxCell id="B_C1_B" value="" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#FFE6CC;strokeColor=#d79b00;" vertex="1" parent="1"><mxGeometry x="984" y="180" width="430" height="20" as="geometry" /></mxCell>
+    <mxCell id="A_C1_B" value="2,877,630c" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;fontSize=10;" vertex="1" parent="1"><mxGeometry x="1179" y="160" width="40" height="20" as="geometry" /></mxCell>
+
+    <!-- Truncation -->
+    <mxCell id="B_TRUNC" value="... ROW_LOOP (127 Iterations) ..." style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;fontSize=12;fontStyle=1" vertex="1" parent="1"><mxGeometry x="1424" y="150" width="200" height="20" as="geometry" /></mxCell>
+
+    <!-- FLOW EDGES -->
+    <mxCell id="E_L0_C0" value="" style="edgeStyle=orthogonalEdgeStyle;html=1;strokeWidth=1;strokeColor=#000000;endArrow=classic;exitX=1;exitY=0.5;entryX=0;entryY=0.5;rounded=0;" edge="1" parent="1" source="B_L0" target="B_C0"><mxGeometry relative="1" as="geometry" /></mxCell>
+
+    <mxCell id="E_C0_L1" value="" style="edgeStyle=orthogonalEdgeStyle;html=1;strokeWidth=1;strokeColor=#FF0000;dashed=1;endArrow=classic;exitX=1;exitY=0.5;entryX=0;entryY=0.5;rounded=0;" edge="1" parent="1" source="B_C0" target="B_L1"><mxGeometry relative="1" as="geometry"><Array as="points"><mxPoint x="552" y="190" /><mxPoint x="552" y="130" /></Array></mxGeometry></mxCell>
+
+    <mxCell id="E_L1_C1_A" value="" style="edgeStyle=orthogonalEdgeStyle;html=1;strokeWidth=1;strokeColor=#000000;endArrow=classic;exitX=1;exitY=0.5;entryX=0;entryY=0.5;rounded=0;" edge="1" parent="1" source="B_L1" target="B_C1_A"><mxGeometry relative="1" as="geometry" /></mxCell>
+
+    <mxCell id="E_C1_A_C1_B" value="" style="edgeStyle=orthogonalEdgeStyle;html=1;strokeWidth=1;strokeColor=#000000;endArrow=classic;exitX=1;exitY=0.5;entryX=0;entryY=0.5;rounded=0;" edge="1" parent="1" source="B_C1_A" target="B_C1_B"><mxGeometry relative="1" as="geometry" /></mxCell>
+
+    <mxCell id="E_C1_B_TRUNC" value="" style="edgeStyle=orthogonalEdgeStyle;html=1;strokeWidth=1;strokeColor=#FF0000;dashed=1;endArrow=classic;exitX=1;exitY=0.5;entryX=0;entryY=0.5;rounded=0;" edge="1" parent="1" source="B_C1_B" target="B_TRUNC"><mxGeometry relative="1" as="geometry"><Array as="points"><mxPoint x="1419" y="190" /><mxPoint x="1419" y="160" /></Array></mxGeometry></mxCell>
+
+    <!-- ANNOTATION -->
+    <mxCell id="INSIGHT" value="&lt;font color=&quot;#ff0000&quot;&gt;&lt;b&gt;Architecture Bottleneck Insight:&lt;/b&gt;&lt;/font&gt;&lt;br&gt;1. &lt;b&gt;Scale Proportions&lt;/b&gt;: This diagram is drawn to &lt;b&gt;exact scale&lt;/b&gt; (~6,666 cycles/px). Notice how the Memory Interface &lt;i&gt;LOAD_ROW&lt;/i&gt; (7,686 cycles, 2px wide) is completely dwarfed by the Compute Engine &lt;i&gt;UpConv_Fused_Row&lt;/i&gt; (2,877,630 cycles, 430px wide).&lt;br&gt;2. &lt;b&gt;Sequential Stalling&lt;/b&gt;: The &lt;i&gt;ROW_LOOP&lt;/i&gt; has &lt;b&gt;no overlap&lt;/b&gt;. The system wastes its memory bandwidth waiting for the 2.8M cycle compute engine to finish before loading the next row, confirming the need for Macro-Dataflow at the Top-Level." style="text;html=1;strokeColor=#b85450;fillColor=#f8cecc;align=left;verticalAlign=middle;fontSize=12;spacing=5;rounded=1;" vertex="1" parent="1">
+      <mxGeometry x="120" y="240" width="1300" height="60" as="geometry" />
+    </mxCell>
+
+  </root>
+</mxGraphModel>

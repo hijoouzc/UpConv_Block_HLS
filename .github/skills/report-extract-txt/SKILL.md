@@ -45,16 +45,15 @@ dst_count=0
 while IFS= read -r f; do
     ((src_count++))
     
-    # Strip project_root from the path and replace '/' with '_' to avoid collisions
-    rel_path="${f#$project_root/}"
-    safe_name=$(echo "$rel_path" | sed 's|/|_|g')
+    # Extract only the base filename without changing the original name structure
+    base_name=$(basename "$f")
     
-    if [[ "$safe_name" == *.xml ]]; then
-        cp "$f" "$output_dir/$safe_name"
-        echo "Copied XML: $safe_name"
+    if [[ "$base_name" == *.xml ]]; then
+        cp "$f" "$output_dir/$base_name"
+        echo "Copied XML: $base_name"
     else
-        cp "$f" "$output_dir/${safe_name%.rpt}.txt"
-        echo "Copied TXT: ${safe_name%.rpt}.txt"
+        cp "$f" "$output_dir/${base_name%.rpt}.txt"
+        echo "Copied TXT: ${base_name%.rpt}.txt"
     fi
 done < <(find "$project_root" -type f \( -name '*.verbose.rpt' -o -name 'csynth.rpt' -o -name 'csynth.xml' \))
 

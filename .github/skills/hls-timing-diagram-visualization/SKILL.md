@@ -73,12 +73,12 @@ How to connect blocks to depict time dependency (Data Dependency / FSM State tra
 
 * **Ping-Pong / Sliding Window:** Depict by interleaving blocks (e.g., `Compute Row 0` finishes, invoking `Compute Row 1` directly below, alternating).
 
-#### 4. Latency Annotation Rules
+#### 4. Proportional Scaling & Annotation Rules
 
-* **Cycle Measurement Arrow:** Use a bidirectional arrow (`endArrow=classic;startArrow=classic`) placed parallel to the compute blocks.
-* **Cycle Count Text:** Place right above/below the arrow, using small font size (`fontSize=11`), Helvetica font.
-* **Relative Scaling:** * *Strict rule for AI:* Do NOT draw with 100% linear accuracy if there is a massive difference (e.g., Load takes 963 cycles but Compute takes 3.4M cycles).
-* Only draw the Compute block 1.5 to 2 times longer than the Load block to maintain visual aesthetics. The cycle counts on the arrows will provide exact precision.
+* **Proportional Scaling:** Draw block widths strictly proportional to actual latency cycles to highlight bottlenecks. For example, if 1 pixel = ~333 cycles, a 69,483 cycle block is ~208 pixels wide, while a 4,449 cycle block is ~13 pixels wide. Set a minimum width (e.g., `width=5` or `10`) for extremely short setup tasks to keep them visible.
+* **Clean Boxes (No Text):** Do NOT put text inside the task blocks (`value=""`). The boxes must be visually clean to focus purely on timing proportions.
+* **Legend (Chú thích):** Since boxes do not contain text, you MUST create a separate Legend block (usually at the top left or bottom) mapping each color to its task name (e.g., AXI Read, Reset, MAC Engine, Write-back).
+* **Cycle Measurement Annotations:** Place text elements or bidirectional arrows (`endArrow=classic;startArrow=classic`) adjacent to the blocks to show the exact cycle count extracted from the reports.
 
 #### 5. Loop Compression Technique
 
@@ -98,11 +98,12 @@ Below is the optimized **Prompt Suggestion**, which you can embed directly into 
 
 > **OBJECTIVE:** You are an expert Hardware/HLS Visualization Agent. Your task is to generate valid Draw.io XML code for HLS Timing Diagrams based on `verbose.rpt` and `csynth.xml` data.
 > **DESIGN & LAYOUT RULES:**
-> 1. **Block Sizing & Math:** Default height is `25` or `30`. Width should be loosely proportional to latency (min `80`, max `200`). Calculate `x` and `y` systematically: Space swimlanes vertically by `+60` or `+80` `y`-units. Advance `x` horizontally by `width + spacing` for sequential tasks.
-> 2. **Colors:** Use `#DAE8FC` for AXI READ/LOAD, `#FFE6CC` for COMPUTE loops, `#E1D5E7` for PARAMS, and `#D5E8D4` for AXI WRITE/NORM. Only draw phases that ACTUALLY exist in the extracted report.
-> 3. **Time Dependencies (Z-Shape):** Use red dashed vertical lines (`strokeColor=#FF0000; dashed=1`) connecting the bottom edge of a completed task to the start edge of a dependent task in the swimlane below.
-> 4. **Loop Condensation:** NEVER draw more than 3 iterations of a loop. Draw Iteration 0, Iteration 1, then insert a large text block `...` (`fontSize=36`), followed by the final iteration.
-> 5. **Latency Tags:** Always include a bidirectional arrow (`startArrow=classic; endArrow=classic`) with exact cycle counts extracted from the HLS report text placed directly adjacent to the relevant compute blocks.
+> 1. **Proportional Block Sizing & Clean Boxes:** Block width MUST be strictly proportional to latency cycles (e.g., `1 pixel = ~333 cycles`). Enforce a minimum width of `10` for tiny tasks. Do NOT put text inside the boxes (`value=""`).
+> 2. **Legend Requirement:** Always create a standalone Legend mapping block colors to their respective task names.
+> 3. **Colors:** Use `#DAE8FC` for AXI READ/LOAD, `#FFE6CC` for COMPUTE loops, `#E1D5E7` for PARAMS, and `#D5E8D4` for AXI WRITE/NORM. Only draw phases that ACTUALLY exist in the extracted report.
+> 4. **Time Dependencies (Z-Shape):** Use red dashed vertical lines (`strokeColor=#FF0000; dashed=1`) connecting the bottom edge of a completed task to the start edge of a dependent task in the swimlane below.
+> 5. **Loop Condensation:** NEVER draw more than 3 iterations of a loop. Draw Iteration 0, Iteration 1, then insert a large text block `...` (`fontSize=36`), followed by the final iteration.
+> 6. **Latency Tags:** Always include text labels or a bidirectional arrow (`startArrow=classic; endArrow=classic`) with exact cycle counts extracted from the HLS report text placed directly adjacent to the relevant compute blocks.
 > 
 > **CRITICAL XML RULES:**
 > * **UNIQUE IDs:** Every single `<mxCell>` must have a strictly unique, sequentially increasing `id` string (e.g., `id="1"`, `id="2"`, etc.). **NEVER reuse an ID.**
